@@ -29,6 +29,8 @@
 #include <string.h>
 #include <time.h>
 
+/* hack alert --xxx fixme -- we need to configure.in for have_langinfo */
+#define HAVE_LANGINFO_D_FMT
 #ifdef HAVE_LANGINFO_D_FMT
 #include <langinfo.h>
 #endif
@@ -43,7 +45,7 @@
 #else
 #  define GNC_D_FMT "%Y-%m-%d"
 #  define GNC_D_T_FMT "%Y-%m-%d %r"
-#  define GNC_T_FMT "%Y-%m-%d %r"
+#  define GNC_T_FMT "%r"
 #endif
 
 /* ============================================================== */
@@ -202,7 +204,23 @@ print_time (char * buff, size_t len, time_t secs)
   if (!buff) return buff;
   ltm = *localtime (&secs);
   flen = strftime (buff, len, GNC_T_FMT, &ltm);
+
   return buff + flen;
+}
+
+/* ============================================================== */
+
+int
+is_same_day (time_t ta, time_t tb)
+{
+  struct tm lta, ltb;
+  lta = *localtime (&ta);
+  ltb = *localtime (&tb);
+  if (lta.tm_year == ltb.tm_year)
+  {
+    return (ltb.tm_yday - lta.tm_yday);
+  }
+  return (ltb.tm_year - lta.tm_year)*365;  /* very approximate */
 }
 
 /* ===================== END OF FILE ============================ */

@@ -55,4 +55,11 @@ char * print_date (char * buff, size_t len, time_t secs);
 char * print_time (char * buff, size_t len, time_t secs);
 char * print_date_time (char * buff, size_t len, time_t secs);
 
+
+/* The is_same_day() routine returns 0 if both times are in the 
+ * same day.
+ */
+
+int is_same_day (time_t, time_t);
+
 #endif /* __GTT_UTIL_H__ */
