@@ -1,12 +1,13 @@
 # Norwegian (nynorsk) translation of gnome-utils.
-# Copyright (C) 2000 Gaute Hvoslef Kvalnes.
+# Copyright (C) 2001 Roy-Magne Mo 
 # Gaute Hvoslef Kvalnes <ai98ghk@stud.hib.no>, 2000.
 # Kjartan Maraas  <kmaraas@gnome.org>, 2001.
+# Roy-Magne Mo <rmo@sunnmore.net>, 2001
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.3\n"
-"POT-Creation-Date: 2001-11-14 04:58+0100\n"
+"POT-Creation-Date: 2001-11-24 22:49+0100\n"
 "PO-Revision-Date: 2001-11-14 14:46+0100\n"
 "Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
 "Language-Team: Norwegian/Nynorsk <no@li.org>\n"
@@ -635,7 +636,7 @@ msgstr "GDiskFree"
 #: gdiskfree/gdiskfree_app.c:73
 #, c-format
 msgid "Unable to parse the geometry string '%s'"
-msgstr "Klarte ikkje å tolke geometristrengen '%s'"
+msgstr "Klarte ikkje å tolke geometristrengen «%s»"
 
 #: gdiskfree/gdiskfree.c:58
 msgid "Specify the geometry of the window."
@@ -647,7 +648,7 @@ msgstr "GEOMETRY"
 
 #: gdiskfree/gdiskfree_menus.c:111
 msgid "GDiskFree is a GNOME implementation of the shell utility 'df'."
-msgstr "GDiskFree er ein GNOME implementasjon av skalvertyet 'df'."
+msgstr "GDiskFree er ein GNOME implementasjon av skalvertyet «df»."
 
 #: gdiskfree/gdiskfree_options.c:222
 msgid "GDiskFree Properties"
@@ -1178,11 +1179,13 @@ msgid "Unkown Error"
 msgstr "Ukjend feil"
 
 #: gtt/journal.c:168 gtt/plug-in.c:90
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Unable to open the file %s\n"
 "%s"
-msgstr "Kan ikkje opna loggfila!\n"
+msgstr ""
+"Ikkje i stand til å open fila %s\n"
+"%s"
 
 #: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1527 gtt/proj.c:1647
 #: gtt/proj.c:1787
@@ -1190,14 +1193,13 @@ msgid "New Task"
 msgstr "Ny oppgåve"
 
 #: gtt/journal.c:421
-#, fuzzy
 msgid "Save HTML To File"
-msgstr "Vel ein palett"
+msgstr "Lagre HTML til fil"
 
 #: gtt/log.c:55
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot open logfile %s for append"
-msgstr "opna filer"
+msgstr "Kan ikkje legge til data i loggfila %s"
 
 #. Translators: Format to use in the gtt logfile
 #: gtt/log.c:64
@@ -1275,9 +1277,8 @@ msgid "Reload Configuration File"
 msgstr "Last oppsettfila på nytt"
 
 #: gtt/menucmd.c:225
-#, fuzzy
 msgid "Do you really want to reload the configuration file?"
-msgstr "Kunne ikkje lesa oppsettfila"
+msgstr "Vil du verkeleg laste konfigurasjonen på nytt?"
 
 #: gtt/menucmd.c:260
 #, c-format
@@ -1422,14 +1423,13 @@ msgid ""
 msgstr ""
 
 #: gtt/timer.c:125
-#, fuzzy
 msgid "System Idle"
-msgstr "Systemfargar"
+msgstr "System ledig"
 
 #. Note to translators: just skip the `[GTT]'
 #: gtt/toolbar.c:159
 msgid "[GTT]New"
-msgstr ""
+msgstr "[GTT]Ny"
 
 #: gtt/toolbar.c:160
 msgid "Create a New Project..."
@@ -1444,24 +1444,20 @@ msgid "Save"
 msgstr "Lagre"
 
 #: gtt/toolbar.c:171
-#, fuzzy
 msgid "Save Configuration File"
-msgstr "Lagra oppsett"
+msgstr "Lagra oppsettsfil"
 
 #: gtt/toolbar.c:178
-#, fuzzy
 msgid "Cut Selected Project"
-msgstr "Valt brikke"
+msgstr "Klipp ut vald prosjekt"
 
 #: gtt/toolbar.c:182
-#, fuzzy
 msgid "Copy Selected Project"
-msgstr "Valt brikke"
+msgstr "Klipp ut vald prosjekt"
 
 #: gtt/toolbar.c:186
-#, fuzzy
 msgid "Paste Project"
-msgstr "Lagra prosjekt"
+msgstr "Lim inn prosjekt"
 
 #: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
 msgid "Journal"
@@ -1476,9 +1472,8 @@ msgid "Props"
 msgstr ""
 
 #: gtt/toolbar.c:200
-#, fuzzy
 msgid "Edit Project Properties..."
-msgstr "Eigenskapar ..."
+msgstr "Rediger prosjekteigenskapar ..."
 
 #: gtt/toolbar.c:204
 msgid "Timer"
@@ -1497,9 +1492,8 @@ msgid "View Calendar"
 msgstr "Syn kalender"
 
 #: gtt/toolbar.c:225
-#, fuzzy
 msgid "Prefs"
-msgstr "Prefiks"
+msgstr "Brukarval"
 
 #: gtt/toolbar.c:226
 msgid "Edit Preferences..."
@@ -1567,23 +1561,20 @@ msgid "Start Fuzz"
 msgstr "Start"
 
 #: gtt/glade/interval_popup.glade.h:1
-#, fuzzy
 msgid "Delete Interval"
-msgstr "&Repeteringsintervall"
+msgstr "Slett intervall"
 
 #: gtt/glade/interval_popup.glade.h:2
-#, fuzzy
 msgid "Delete This Interval"
-msgstr "&Repeteringsintervall"
+msgstr "Slett dette intervallet"
 
 #: gtt/glade/interval_popup.glade.h:3
 msgid "Edit Interval"
 msgstr "Rediger intervall"
 
 #: gtt/glade/interval_popup.glade.h:4
-#, fuzzy
 msgid "Edit the Start & Stop Times"
-msgstr "Start-tid"
+msgstr "Rediger start og stopptider"
 
 #: gtt/glade/interval_popup.glade.h:5
 msgid "Insert Memo"
@@ -1610,9 +1601,8 @@ msgid "Merge Up"
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:11
-#, fuzzy
 msgid "Paste Memo"
-msgstr "Set inn"
+msgstr "Lim inn notat"
 
 #: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:7
 msgid "Paste a previously cut memo."
@@ -1701,9 +1691,8 @@ msgid "Filename:"
 msgstr "Filnamn:"
 
 #: gtt/glade/prefs.glade.h:12
-#, fuzzy
 msgid "Idle Seconds:"
-msgstr "Vis sekund"
+msgstr "Ledige sekund:"
 
 #: gtt/glade/prefs.glade.h:13
 msgid "Inactivity Timeout"
@@ -1859,7 +1848,7 @@ msgstr "Vis &hjelpelinjer"
 
 #: gtt/glade/prefs.glade.h:47
 msgid "Show `New'"
-msgstr "Vis 'Ny'"
+msgstr "Vis «Ny»"
 
 #: gtt/glade/prefs.glade.h:48
 #, fuzzy
@@ -1920,7 +1909,7 @@ msgstr "Verktøylinjemeny"
 #: gtt/glade/prefs.glade.h:59
 #, fuzzy
 msgid "Use Logfile"
-msgstr "Bruk 'profil'"
+msgstr "Bruk «profil»"
 
 #: gtt/glade/prefs.glade.h:60
 #, fuzzy
@@ -2926,8 +2915,9 @@ msgstr "Gruppe:"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:9
 #: mini-utils/gshutdown/gshutdown.c:398
+#, fuzzy
 msgid "General"
-msgstr "Generelt"
+msgstr "Allment"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:10
 #, fuzzy
@@ -4070,9 +4060,8 @@ msgid "Firmware"
 msgstr "Fram"
 
 #: mini-utils/idetool/idetool.c:312
-#, fuzzy
 msgid "Serial No."
-msgstr "seriell"
+msgstr "Serienr."
 
 #. do config here
 #: mini-utils/idetool/idetool.c:314
@@ -4466,14 +4455,13 @@ msgid "invalid variable identifer: %s"
 msgstr "Ugyldig filnamn: %1"
 
 #: stripchart/eval.c:300
-#, fuzzy
 msgid "number expected"
-msgstr "'brukar@vert' forventa."
+msgstr "tal venta"
 
 #: stripchart/eval.c:371
 #, c-format
 msgid "extra junk at end: \"%s\""
-msgstr ""
+msgstr "søppel på slutten: «%s»"
 
 #: stripchart/params.c:633
 msgid "Parameter"
@@ -4592,9 +4580,8 @@ msgid "Smooth"
 msgstr "Jamn"
 
 #: stripchart/prefs.c:250
-#, fuzzy
 msgid "Ticks"
-msgstr "ichecks"
+msgstr "Tikk"
 
 #: stripchart/prefs.c:255
 msgid "Pen"
@@ -4723,9 +4710,8 @@ msgid "Drag files in to make archives"
 msgstr ""
 
 #: meat-grinder/meat-grinder.c:444 meat-grinder/meat-grinder.c:602
-#, fuzzy
 msgid "No filename selected"
-msgstr "Ingen rektangel valt!"
+msgstr "Ikkje noke filnamn eksisterar"
 
 #: meat-grinder/meat-grinder.c:448
 msgid "File exists, overwrite?"
@@ -4736,9 +4722,8 @@ msgid "No items to archive"
 msgstr ""
 
 #: meat-grinder/meat-grinder.c:605
-#, fuzzy
 msgid "File does not exists"
-msgstr "Arkivmappa finst ikkje."
+msgstr "Fila finst ikkje"
 
 #: meat-grinder/meat-grinder.c:619
 msgid "Add file or folder"
@@ -4762,9 +4747,8 @@ msgid "Create a new archive from the items"
 msgstr "Lagar eit nytt dokument"
 
 #: meat-grinder/meat-grinder.c:703
-#, fuzzy
 msgid "Remove the selected item(s)"
-msgstr "Fjern valt skrivar"
+msgstr "Fjern vald(e) element"
 
 #: meat-grinder/meat-grinder.c:735
 msgid "GNOME Archive Generator"
@@ -4800,7 +4784,7 @@ msgstr "Formatere diskettar"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "gfloppy"
-msgstr ""
+msgstr "gfloppy"
 
 #: gdictsrc/GDict.desktop.in.h:1 gdictsrc/gdict.desktop.in.h:1
 msgid "GDict"
@@ -4815,9 +4799,8 @@ msgid "GNOME client for RFC 2229-compliant dictionary server"
 msgstr ""
 
 #: stripchart/stripchart-applet.desktop.in.h:1
-#, fuzzy
 msgid "Shows a stripchart plot"
-msgstr "Straight"
+msgstr "Viser eit linjediagram-plott"
 
 #: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
 #, fuzzy
@@ -4826,28 +4809,27 @@ msgstr "Utskriftsparametrar"
 
 #: notepad/Notepad.desktop.in.h:1
 msgid "Notepad"
-msgstr ""
+msgstr "Notepad"
 
 #: notepad/Notepad.desktop.in.h:2
 msgid "Simple editor (notepad)"
-msgstr ""
+msgstr "Enkelt redigeringsprogram (notepad)"
 
 #: mini-utils/idetool/idetool.desktop.in.h:1
 msgid "IDE Device Tool"
-msgstr ""
+msgstr "Verkty for IDE-einingar"
 
 #: mini-utils/idetool/idetool.desktop.in.h:2
 msgid "Show and Configure IDE Device Settings"
 msgstr ""
 
 #: mini-utils/gw/gw.desktop.in.h:1
-#, fuzzy
 msgid "User Listing"
-msgstr "Innstillingar for Archie-tenar"
+msgstr "Brukarliste"
 
 #: mini-utils/gw/gw.desktop.in.h:2
 msgid "View users on the system"
-msgstr ""
+msgstr "Vis brukarar på systemet"
 
 #: mini-utils/guname/guname-capplet.desktop.in.h:1
 #, fuzzy
@@ -4974,111 +4956,11 @@ msgstr "Personleg crontab-handsamar"
 #~ msgid "Time tracking tool for GNOME"
 #~ msgstr "GNOME tidtakar-verktøy"
 
-#, fuzzy
-#~ msgid "Could not write the configuration file!"
-#~ msgstr "Kunne ikkje skriva oppsettfila!"
-
-#, fuzzy
-#~ msgid "Min Log Time in secs:"
-#~ msgstr "Tidsgrense %1 sekund"
-
-#, fuzzy
-#~ msgid "Project Time today:"
-#~ msgstr "Prosjektkatalog:"
-
-#, fuzzy
-#~ msgid "Project Time ever:"
-#~ msgstr "Prosjektnamn:"
-
-#, fuzzy
-#~ msgid "Manual..."
-#~ msgstr "Manuell"
-
-#, fuzzy
-#~ msgid "Formatting /dev/floppy"
-#~ msgstr "Formaterar band ..."
-
-#, fuzzy
-#~ msgid "Formatting %s"
-#~ msgstr "Formaterar band ..."
-
 #~ msgid "OK"
 #~ msgstr "OK"
 
-#, fuzzy
-#~ msgid "Calendar                "
-#~ msgstr "Status: klar"
-
-#, fuzzy
-#~ msgid "Log stats               "
-#~ msgstr "Status: klar"
-
-#, fuzzy
-#~ msgid "Preferences...          "
-#~ msgstr "Innstillingar ..."
-
-#, fuzzy
-#~ msgid "window1"
-#~ msgstr "Vindauge"
-
-#, fuzzy
-#~ msgid "Write information to disk"
-#~ msgstr "Videoinformasjon"
-
-#, fuzzy
-#~ msgid "Save not implemented yet\n"
-#~ msgstr "Oops! Ikkje implementert enno."
-
-#, fuzzy
-#~ msgid "New search"
-#~ msgstr "&Nytt søk"
-
-#, fuzzy
-#~ msgid "Open search spec"
-#~ msgstr "Opna 'arkiv'"
-
-#, fuzzy
-#~ msgid "Save search spec"
-#~ msgstr "Stoppa søk"
-
-#, fuzzy
-#~ msgid "Save search spec as..."
-#~ msgstr "Lagrar prosjektet som ..."
-
-#, fuzzy
-#~ msgid "Add condition"
-#~ msgstr "Tredje vilkår"
-
-#, fuzzy
-#~ msgid "Add a search condition"
-#~ msgstr "Andre vilkår"
-
-#, fuzzy
-#~ msgid "Remove condition"
-#~ msgstr "Andre vilkår"
-
-#, fuzzy
-#~ msgid "Remove last search condition"
-#~ msgstr "Repeter siste handling"
-
-#, fuzzy
-#~ msgid "Show advanced options"
-#~ msgstr "Avanserte innstillingar:"
-
-#, fuzzy
-#~ msgid "Start search"
-#~ msgstr "St&art søk"
-
 #~ msgid "New"
 #~ msgstr "Ny"
-
-#, fuzzy
-#~ msgid "Clear the search window"
-#~ msgstr "&Tøm utvindauge"
-
-#, fuzzy
-#~ msgid "Start the current search"
-#~ msgstr "Skriv ut prosjektet"
 
 #~ msgid "Find Files"
 #~ msgstr "Finn filer"
@@ -5086,80 +4968,8 @@ msgstr "Personleg crontab-handsamar"
 #~ msgid "Directory:"
 #~ msgstr "Katalog:"
 
-#, fuzzy
-#~ msgid "Directory to Search"
-#~ msgstr "Katalogsøk"
-
-#, fuzzy
-#~ msgid "rparen expected"
-#~ msgstr "'kommando' forventa.\n"
-
-#, fuzzy
-#~ msgid "%s, line %d: "
-#~ msgstr "Linje %d"
-
-#, fuzzy
-#~ msgid "can't open config file \"%s\""
-#~ msgstr "Kan ikkje gjenoppretta oppsett-filene"
-
-#, fuzzy
-#~ msgid "unrecognized color: %s"
-#~ msgstr "%s: ulovleg flagg -- %c\n"
-
-#, fuzzy
-#~ msgid "no equation found"
-#~ msgstr "ingen lik-teikn funne."
-
-#, fuzzy
-#~ msgid "invalid option: \"%s\""
-#~ msgstr "%s: ulovleg flagg -- %c\n"
-
-#, fuzzy
-#~ msgid "E_xit"
-#~ msgstr "Avslutt"
-
 #~ msgid "Identifier"
 #~ msgstr "Identifikator"
-
-#, fuzzy
-#~ msgid "Expected range"
-#~ msgstr "Eksporter område"
-
-#, fuzzy
-#~ msgid "Displayed range"
-#~ msgstr "Vist namn:"
-
-#, fuzzy
-#~ msgid "Params"
-#~ msgstr "Parametrar"
-
-#, fuzzy
-#~ msgid "Stripchart Viewer"
-#~ msgstr "Kort oversikt"
-
-#, fuzzy
-#~ msgid "invalid display type: %s\n"
-#~ msgstr "Ugyldig filnamn: %1"
-
-#, fuzzy
-#~ msgid "Chart update interval"
-#~ msgstr "&Repeteringsintervall"
-
-#, fuzzy
-#~ msgid "SECS"
-#~ msgstr "SCSI"
-
-#, fuzzy
-#~ msgid "Adds a menubar to the main window"
-#~ msgstr "Legg eit bokmerke til fila i vindauget"
-
-#, fuzzy
-#~ msgid "Omits slider window"
-#~ msgstr "bit-vindauge"
-
-#, fuzzy
-#~ msgid "white"
-#~ msgstr "Stad"
 
 #~ msgid "black"
 #~ msgstr "svart"
@@ -5187,41 +4997,6 @@ msgstr "Personleg crontab-handsamar"
 
 #~ msgid "Swap"
 #~ msgstr "Veksleminne"
-
-#, fuzzy
-#~ msgid "Battery"
-#~ msgstr "Ingen batteri:"
-
-#, fuzzy
-#~ msgid "Net In"
-#~ msgstr "Fram >"
-
-#, fuzzy
-#~ msgid "Net Out"
-#~ msgstr "Neste-knapp"
-
-#, fuzzy
-#~ msgid "%s: unable to load the penguin.\n"
-#~ msgstr "Finn ikkje konto"
-
-#, fuzzy
-#~ msgid "User name to run command as"
-#~ msgstr "Avmonteringskommando"
-
-#, fuzzy
-#~ msgid "File containing interface description"
-#~ msgstr "Skildring av det andre kontoret"
-
-#, fuzzy
-#~ msgid "Target User"
-#~ msgstr "Mål"
-
-#, fuzzy
-#~ msgid ""
-#~ "Failed to execute command:\n"
-#~ "%s\n"
-#~ "%s"
-#~ msgstr "Kunne ikkje køyra førkommando: %1"
 
 #~ msgid "Run"
 #~ msgstr "Køyr"
