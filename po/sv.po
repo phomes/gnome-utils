@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-07-16 10:12+0200\n"
-"PO-Revision-Date: 2002-07-16 10:12+0200\n"
+"POT-Creation-Date: 2002-07-22 17:40+0200\n"
+"PO-Revision-Date: 2002-07-22 17:41+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -578,15 +578,15 @@ msgstr "GDialog-fält"
 msgid "Enter the text"
 msgstr "Ange texten"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Tillbehör"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:270
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Ordboksuppslagning"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Slå upp ord i en online-ordbok"
@@ -626,6 +626,14 @@ msgid ""
 msgstr ""
 "Ett allvarligt fel inträffade. Kontrollera att servern och porten stämmer. "
 "Som referens kan nämnas att standardservern är dict.org och porten är 2628"
+
+#: gdictsrc/gdict-about.c:56
+msgid "GNOME Dictionary"
+msgstr "GNOME-ordbok"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
+msgstr "Copyright 1999 av Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
