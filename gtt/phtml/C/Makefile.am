@@ -5,8 +5,7 @@ gttphtmldir = $(datadir)/gtt/phtml/C
 
 gttphtml_DATA =		\
 	alldata.phtml	\
-	invoice.phtml	\
-	noproject.phtml
+	invoice.phtml	
 
 
 EXTRA_DIST = 		\
