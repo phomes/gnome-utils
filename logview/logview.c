@@ -132,6 +132,7 @@ GnomeUIInfo filter_menu[] = {
 #endif
 
 GnomeUIInfo help_menu[] = {
+	GNOMEUIINFO_HELP("logview"),
         {GNOME_APP_UI_ITEM, N_("About..."), 
 	 N_("Info about logview"), AboutShowWindow,
          NULL, NULL,
