@@ -33,6 +33,7 @@ typedef enum {
 
 	/* task things */
 	MEMO = 1,
+	NOTES,
 	TASK_TIME,
 	BILLSTATUS,
 	BILLABLE,
@@ -219,6 +220,10 @@ do_show_table (GttGhtml *ghtml, GttProject *prj, int show_links, int invoice)
 				TASK_COL_TITLE (_("Diary Entry"));
 				break;
 			}
+			case NOTES:
+				p = stpcpy (p, "<th>");
+				TASK_COL_TITLE (_("Notes"));
+				break;
 			case TASK_TIME:
 				p = stpcpy (p, "<th>");
 				TASK_COL_TITLE (_("Task Time"));
@@ -367,6 +372,13 @@ do_show_table (GttGhtml *ghtml, GttProject *prj, int show_links, int invoice)
 					break;
 				}
 
+				case NOTES:
+					p = stpcpy (p, "<td align=left>");
+					pp = gtt_task_get_notes(tsk);
+					if (!pp || !pp[0]) pp = _("(empty)");
+					p = stpcpy (p, pp);
+					break;
+					
 				case TASK_TIME:
 					p = stpcpy (p, "<td align=right>");
 					p = print_hours_elapsed (p, 40, task_secs, TRUE);
@@ -649,6 +661,11 @@ decode_column (GttGhtml *ghtml, const char * tok)
 	if (0 == strncmp (tok, "$memo", 5))
 	{
 		TASK_COL(MEMO);
+	}
+	else
+	if (0 == strncmp (tok, "$notes", 6))
+	{
+		TASK_COL(NOTES);
 	}
 	else
 	if (0 == strncmp (tok, "$task_time", 10))
