@@ -44,13 +44,19 @@ typedef struct _PropTaskDlg
 
 /* ============================================================== */
 
+#define GET_MENU(WIDGET,NAME) ({				\
+	GtkWidget *menu, *menu_item;				\
+	menu = gtk_option_menu_get_menu (WIDGET);		\
+       	menu_item = gtk_menu_get_active(GTK_MENU(menu));	\
+       	(gtk_object_get_data(GTK_OBJECT(menu_item), NAME));	\
+})
+
 static void 
 task_prop_set(GnomePropertyBox * pb, gint page, PropTaskDlg *dlg)
 {
 	GttBillStatus status;
 	GttBillable able;
 	GttBillRate rate;
-	GtkWidget *menu, *menu_item;
 	int ivl;
 	gchar *str;
 
@@ -75,24 +81,14 @@ task_prop_set(GnomePropertyBox * pb, gint page, PropTaskDlg *dlg)
 		ivl = (int) (60.0 * atof (gtk_entry_get_text(dlg->unit)));
 		gtt_task_set_bill_unit (dlg->task, ivl);
 
-	        menu = gtk_option_menu_get_menu (dlg->billstatus);
-        	menu_item = gtk_menu_get_active(GTK_MENU(menu));
-        	status = (GttBillStatus) (gtk_object_get_data(
-			GTK_OBJECT(menu_item), "billstatus"));
+		status = (GttBillStatus) GET_MENU (dlg->billstatus, "billstatus");
 		gtt_task_set_billstatus (dlg->task, status);
 
-	        menu = gtk_option_menu_get_menu (dlg->billable);
-        	menu_item = gtk_menu_get_active(GTK_MENU(menu));
-        	able = (GttBillable) (gtk_object_get_data(
-			GTK_OBJECT(menu_item), "billable"));
+		able = (GttBillable) GET_MENU (dlg->billable, "billable");
 		gtt_task_set_billable (dlg->task, able);
 
-	        menu = gtk_option_menu_get_menu (dlg->billrate);
-        	menu_item = gtk_menu_get_active(GTK_MENU(menu));
-        	rate = (GttBillRate) (gtk_object_get_data(
-			GTK_OBJECT(menu_item), "billrate"));
+		rate = (GttBillRate) GET_MENU (dlg->billrate, "billrate");
 		gtt_task_set_billrate (dlg->task, rate);
-		gtt_task_thaw (dlg->task);
 	}
 }
 
@@ -161,11 +157,11 @@ do_set_task(GttTask *tsk, PropTaskDlg *dlg)
 
 #define MUGGED(NAME) ({						\
 	GtkWidget *widget, *mw;					\
-        widget = glade_xml_get_widget (gtxml, NAME);		\
-        mw = gtk_option_menu_get_menu (GTK_OPTION_MENU(widget));\
-        gtk_signal_connect_object(GTK_OBJECT(mw), "selection_done", \
-                 GTK_SIGNAL_FUNC(gnome_property_box_changed),	\
-                 GTK_OBJECT(dlg->dlg));				\
+	widget = glade_xml_get_widget (gtxml, NAME);		\
+	mw = gtk_option_menu_get_menu (GTK_OPTION_MENU(widget));\
+	gtk_signal_connect_object(GTK_OBJECT(mw), "selection_done", \
+		 GTK_SIGNAL_FUNC(gnome_property_box_changed),	\
+		 GTK_OBJECT(dlg->dlg));				\
 	GTK_OPTION_MENU(widget);				\
 })
 
@@ -184,7 +180,7 @@ prop_task_dialog_new (void)
 {
 	PropTaskDlg *dlg = NULL;
 	GladeXML *gtxml;
-        static GnomeHelpMenuEntry help_entry = { NULL, "index.html#TASK" };
+	static GnomeHelpMenuEntry help_entry = { NULL, "index.html#TASK" };
 
 	dlg = g_malloc(sizeof(PropTaskDlg));
 

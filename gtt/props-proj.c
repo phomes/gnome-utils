@@ -63,12 +63,21 @@ typedef struct _PropDlg
 
 /* ============================================================== */
 
+#define GET_MENU(WIDGET,NAME) ({				\
+	GtkWidget *menu, *menu_item;				\
+	menu = gtk_option_menu_get_menu (WIDGET);		\
+       	menu_item = gtk_menu_get_active(GTK_MENU(menu));	\
+       	(gtk_object_get_data(GTK_OBJECT(menu_item), NAME));	\
+})
+
+
 static void 
 prop_set(GnomePropertyBox * pb, gint page, PropDlg *dlg)
 {
 	int ivl;
-	double rate;
 	gchar *str;
+	double rate;
+	time_t tval;
 
 	if (!dlg->proj) return;
 
@@ -116,6 +125,34 @@ prop_set(GnomePropertyBox * pb, gint page, PropDlg *dlg)
 		gtt_project_set_auto_merge_gap (dlg->proj, ivl);
 		gtt_project_thaw (dlg->proj);
 	}
+	if (3 == page)
+	{
+		gtt_project_freeze (dlg->proj);
+		
+		ivl = (int) GET_MENU (dlg->urgency, "urgency");
+		gtt_project_set_urgency (dlg->proj, (GttRank) ivl);
+		ivl = (int) GET_MENU (dlg->importance, "importance");
+		gtt_project_set_importance (dlg->proj, (GttRank) ivl);
+
+		ivl = (int) GET_MENU (dlg->status, "status");
+		gtt_project_set_status (dlg->proj, (GttProjectStatus) ivl);
+
+		tval = gnome_date_edit_get_date (dlg->start);
+		gtt_project_set_estimated_start (dlg->proj, tval);
+		tval = gnome_date_edit_get_date (dlg->end);
+		gtt_project_set_estimated_end (dlg->proj, tval);
+		tval = gnome_date_edit_get_date (dlg->due);
+		gtt_project_set_due_date (dlg->proj, tval);
+
+		rate = atof (gtk_entry_get_text(dlg->sizing));
+		ivl = rate * 3600.0;
+		gtt_project_set_sizing (dlg->proj, ivl);
+
+		ivl = atoi (gtk_entry_get_text(dlg->percent));
+		gtt_project_set_percent_complete (dlg->proj, ivl);
+
+		gtt_project_thaw (dlg->proj);
+	}
 }
 
 
@@ -125,6 +162,9 @@ prop_set(GnomePropertyBox * pb, gint page, PropDlg *dlg)
 static void 
 do_set_project(GttProject *proj, PropDlg *dlg)
 {
+	GttProjectStatus status;
+	GttRank rank;
+	time_t tval;
 	char buff[132];
 
 	if (!dlg) return;
@@ -144,6 +184,12 @@ do_set_project(GttProject *proj, PropDlg *dlg)
 		gtk_entry_set_text(dlg->minimum, "0");
 		gtk_entry_set_text(dlg->interval, "0");
 		gtk_entry_set_text(dlg->gap, "0");
+
+		gnome_date_edit_set_time(dlg->start, 0);
+		gnome_date_edit_set_time(dlg->end, 0);
+		gnome_date_edit_set_time(dlg->due, 0);
+		gtk_entry_set_text(dlg->sizing, "0.0");
+		gtk_entry_set_text(dlg->percent, "0");
 		return;
 	}
 
@@ -172,6 +218,37 @@ do_set_project(GttProject *proj, PropDlg *dlg)
 	gtk_entry_set_text(dlg->interval, buff);
 	g_snprintf (buff, 132, "%d", gtt_project_get_auto_merge_gap(proj));
 	gtk_entry_set_text(dlg->gap, buff);
+
+	rank = gtt_project_get_urgency (proj);
+	if (GTT_UNDEFINED   == rank) gtk_option_menu_set_history (dlg->urgency, 0);
+	else if (GTT_LOW    == rank) gtk_option_menu_set_history (dlg->urgency, 1);
+	else if (GTT_MEDIUM == rank) gtk_option_menu_set_history (dlg->urgency, 2);
+	else if (GTT_HIGH   == rank) gtk_option_menu_set_history (dlg->urgency, 3);
+
+	rank = gtt_project_get_importance (proj);
+	if (GTT_UNDEFINED   == rank) gtk_option_menu_set_history (dlg->importance, 0);
+	else if (GTT_LOW    == rank) gtk_option_menu_set_history (dlg->importance, 1);
+	else if (GTT_MEDIUM == rank) gtk_option_menu_set_history (dlg->importance, 2);
+	else if (GTT_HIGH   == rank) gtk_option_menu_set_history (dlg->importance, 3);
+
+	status = gtt_project_get_status (proj);
+	if (GTT_NOT_STARTED      == status) gtk_option_menu_set_history (dlg->status, 0);
+	else if (GTT_IN_PROGRESS == status) gtk_option_menu_set_history (dlg->status, 1);
+	else if (GTT_ON_HOLD     == status) gtk_option_menu_set_history (dlg->status, 2);
+	else if (GTT_CANCELLED   == status) gtk_option_menu_set_history (dlg->status, 3);
+	else if (GTT_COMPLETED   == status) gtk_option_menu_set_history (dlg->status, 4);
+
+	tval = gtt_project_get_estimated_start (proj);
+	gnome_date_edit_set_time (dlg->start, tval);
+	tval = gtt_project_get_estimated_end (proj);
+	gnome_date_edit_set_time (dlg->end, tval);
+	tval = gtt_project_get_due_date (proj);
+	gnome_date_edit_set_time (dlg->due, tval);
+
+	g_snprintf (buff, 132, "%.2f", ((double) gtt_project_get_sizing(proj))/3600.0);
+	gtk_entry_set_text(dlg->sizing, buff);
+	g_snprintf (buff, 132, "%d", gtt_project_get_percent_complete(proj));
+	gtk_entry_set_text(dlg->percent, buff);
 
 	/* set to unmodified as it reflects the current state of the project */
 	gnome_property_box_set_modified(GNOME_PROPERTY_BOX(dlg->dlg),
