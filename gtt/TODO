@@ -35,6 +35,12 @@ to mark that time as email, if I am in emacs to "hacking" etc.
 Support URL format for the data file: e.g.  postgres://some.host.com/some_db
 for sql access.  Have the config file remember the last-accessed URL.
 
+Add support for configurable project states, for example, 
+such as adding cost estimates to the project sizing.
+Allow user to configure additional states for project status,
+in addtion to/instead of the pre-defined ones.  etc.
+This could be hard ...
+
 
 Later:
 ~~~~~~
@@ -53,18 +59,6 @@ http://mrproject.codefactory.se/
 Maybe some sort of integratin with TouxDoux? 
 http://www.gnu.org/software/toutdoux/en/index.html
 
-TODO List features:
--------------------
-estimated start date
-estimated end date
-due date
-importance  low medium high undefined
-urgency   low medium high undefined
-status    notstarted inprogress cancelled completed
-estimated hours
-%complete
-
-color red for overdue
 
 
 Bugs -- High Priority
@@ -86,6 +80,7 @@ over export formats.
 
 Bugs -- Low Priority
 --------------------
+overdue projects should be highlighted in red 
 
 During read of data,  don't destroy old project list until we are sure 
 that read of new project list succeeded.
