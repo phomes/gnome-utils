@@ -73,6 +73,7 @@ struct gtt_project_s
  */
 struct gtt_task_s 
 {
+	GttProject *parent;     /* parent project */
 	char * memo;            /* invoiceable memo (customer sees this) */
 	char * notes;           /* internal notes (office private) */
 	GttBillable  billable;  /* if fees can be collected for this task */

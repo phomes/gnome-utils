@@ -163,12 +163,11 @@ gtt_project_destroy(GttProject *proj)
 
         if (proj->task_list)
 	{
-		GList *node;
-		for (node=proj->task_list; node; node=node->next)
+		while (proj->task_list)
 		{
-			gtt_task_destroy (node->data);
+			/* destroying a task pops it off the list */
+			gtt_task_destroy (proj->task_list->data);
 		}
-		g_list_free (proj->task_list);
 	}
 	proj->task_list = NULL;
 
@@ -594,7 +593,16 @@ void
 gtt_project_add_task (GttProject *proj, GttTask *task)
 {
 	if (!proj || !task) return;
+
+	/* if task has a different parent, then reparent */
+	if (task->parent)
+	{
+		task->parent->task_list =
+			g_list_remove (task->parent->task_list, task);
+	}
+
 	proj->task_list = g_list_append (proj->task_list, task);
+	task->parent = proj;
 }
 
 
@@ -947,6 +955,7 @@ gtt_task_new (void)
 	GttTask *task;
 
 	task = g_new0(GttTask, 1);
+	task->parent = NULL;
 	task->memo = g_strdup ("");
 	task->notes = g_strdup ("");
 	task->billable = GTT_BILLABLE;
@@ -960,6 +969,13 @@ void
 gtt_task_destroy (GttTask *task)
 {
 	if (!task) return;
+	if (task->parent)
+	{
+		task->parent->task_list = 
+			g_list_remove (task->parent->task_list, task);
+		task->parent = NULL;
+	}
+
 	if (task->memo) g_free(task->memo);
 	task->memo = NULL;
 	if (task->notes) g_free(task->notes);
