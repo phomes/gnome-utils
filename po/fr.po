@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-07 10:11-0500\n"
+"POT-Creation-Date: 2005-04-06 09:36-0400\n"
 "PO-Revision-Date: 2005-03-04 22:37+0100\n"
 "Last-Translator: Baptiste Mille-Mathias <bmm80@free.fr>\n"
 "Language-Team: French <gnomefr@traduc.org>\n"
@@ -374,6 +374,11 @@ msgstr "Nom de la base de données"
 #: gdictsrc/gdict-pref-dialog.c:834
 msgid "Default Strategy"
 msgstr "Stratégie par défaut"
+
+#: gdictsrc/gdict-speller.c:114
+#, fuzzy
+msgid "Spellings"
+msgstr "_Orthographes"
 
 #: gdictsrc/gdict-speller.c:234
 msgid "Spell-checking..."
@@ -1071,7 +1076,7 @@ msgid "The file \"%s\" already exists.  Would you like to replace it?"
 msgstr "Le fichier « %s » existe déjà. Voulez-vous le remplacer ?"
 
 #: gnome-screenshot/screenshot-xfer.c:190
-#: gsearchtool/gsearchtool-callbacks.c:1269
+#: gsearchtool/gsearchtool-callbacks.c:1271
 msgid "_Replace"
 msgstr "_Remplacer"
 
@@ -1365,122 +1370,122 @@ msgstr ""
 "Cette clé définie si l'outil de recherche désactive l'utilisation de la "
 "commande locate lors de simple recherche par nom."
 
-#: gsearchtool/gsearchtool-callbacks.c:163
+#: gsearchtool/gsearchtool-callbacks.c:165
 msgid "Could not open help document."
 msgstr "Impossible d'ouvrir le document d'aide."
 
-#: gsearchtool/gsearchtool-callbacks.c:298
+#: gsearchtool/gsearchtool-callbacks.c:300
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "Êtes-vous sûr de vouloir ouvrir %d document ?"
 msgstr[1] "Êtes-vous sûr de vouloir ouvrir %d documents ?"
 
-#: gsearchtool/gsearchtool-callbacks.c:303
-#: gsearchtool/gsearchtool-callbacks.c:460
+#: gsearchtool/gsearchtool-callbacks.c:305
+#: gsearchtool/gsearchtool-callbacks.c:493
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "Cela ouvrira %d fenêtre séparée."
 msgstr[1] "Cela ouvrira %d fenêtres séparées."
 
-#: gsearchtool/gsearchtool-callbacks.c:343
+#: gsearchtool/gsearchtool-callbacks.c:345
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Impossible d'ouvrir le document « %s »"
 
-#: gsearchtool/gsearchtool-callbacks.c:418
-#: gsearchtool/gsearchtool-callbacks.c:761
+#: gsearchtool/gsearchtool-callbacks.c:374
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "Impossible d'ouvrir le dossier « %s »"
+
+#: gsearchtool/gsearchtool-callbacks.c:382
+msgid "The nautilus file manager is not running."
+msgstr ""
+"Le gestionnaire de fichiers Nautilus n'est pas en cours de fonctionnement."
+
+#: gsearchtool/gsearchtool-callbacks.c:449
+#: gsearchtool/gsearchtool-callbacks.c:763
 msgid "The document does not exist."
 msgstr "Le document n'existe pas."
 
-#: gsearchtool/gsearchtool-callbacks.c:431
+#: gsearchtool/gsearchtool-callbacks.c:464
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Il n'y a pas de visionneur installé capable d'afficher le document."
 
-#: gsearchtool/gsearchtool-callbacks.c:455
+#: gsearchtool/gsearchtool-callbacks.c:488
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "Êtes-vous sûr de vouloir ouvrir %d dossier ?"
 msgstr[1] "Êtes-vous sûr de vouloir ouvrir %d dossiers ?"
 
-#: gsearchtool/gsearchtool-callbacks.c:499
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "Impossible d'ouvrir le dossier « %s »"
-
-#: gsearchtool/gsearchtool-callbacks.c:507
-msgid "The nautilus file manager is not running."
-msgstr ""
-"Le gestionnaire de fichiers Nautilus n'est pas en cours de fonctionnement."
-
-#: gsearchtool/gsearchtool-callbacks.c:587
+#: gsearchtool/gsearchtool-callbacks.c:589
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "Impossible de déplacer « %s » à la corbeille."
 
-#: gsearchtool/gsearchtool-callbacks.c:618
+#: gsearchtool/gsearchtool-callbacks.c:620
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Voulez-vous supprimer « %s » définitivement ?"
 
-#: gsearchtool/gsearchtool-callbacks.c:621
+#: gsearchtool/gsearchtool-callbacks.c:623
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr ""
 "La corbeille est indisponible. Impossible de déplacer « %s » à la corbeille."
 
-#: gsearchtool/gsearchtool-callbacks.c:660
+#: gsearchtool/gsearchtool-callbacks.c:662
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "Impossible de supprimer « %s »."
 
-#: gsearchtool/gsearchtool-callbacks.c:780
+#: gsearchtool/gsearchtool-callbacks.c:782
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Le déplacement de « %s » a échoué : %s"
 
-#: gsearchtool/gsearchtool-callbacks.c:812
+#: gsearchtool/gsearchtool-callbacks.c:814
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "La suppression de « %s » a échoué : %s"
 
-#: gsearchtool/gsearchtool-callbacks.c:1158
+#: gsearchtool/gsearchtool-callbacks.c:1160
 msgid "Save Search Results As..."
 msgstr "Enregistrer le résultat de la recherche sous..."
 
-#: gsearchtool/gsearchtool-callbacks.c:1186
+#: gsearchtool/gsearchtool-callbacks.c:1188
 msgid "Could not save document."
 msgstr "Impossible d'enregistrer le document."
 
-#: gsearchtool/gsearchtool-callbacks.c:1187
+#: gsearchtool/gsearchtool-callbacks.c:1189
 msgid "You did not select a document name."
 msgstr "Vous n'avez pas sélectionné de nom de document."
 
-#: gsearchtool/gsearchtool-callbacks.c:1217
+#: gsearchtool/gsearchtool-callbacks.c:1219
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "Impossible d'enregistrer le document « %s » vers « %s »."
 
-#: gsearchtool/gsearchtool-callbacks.c:1250
+#: gsearchtool/gsearchtool-callbacks.c:1252
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Le document « %s » existe déjà. Voulez-vous le remplacer ?"
 
-#: gsearchtool/gsearchtool-callbacks.c:1254
+#: gsearchtool/gsearchtool-callbacks.c:1256
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "Si vous remplacez un fichier existant, son contenu sera écrasé."
 
-#: gsearchtool/gsearchtool-callbacks.c:1318
+#: gsearchtool/gsearchtool-callbacks.c:1320
 msgid "The document name you selected is a folder."
 msgstr "Le nom de document que vous avez sélectionné est un dossier."
 
-#: gsearchtool/gsearchtool-callbacks.c:1369
+#: gsearchtool/gsearchtool-callbacks.c:1371
 msgid "You may not have write permissions to the document."
 msgstr "Vous n'avez pas les permissions en écriture sur le document."
 
-#: gsearchtool/gsearchtool-support.c:70
+#: gsearchtool/gsearchtool-support.c:69
 #, c-format
 msgid ""
 "GConf error:\n"
@@ -1494,23 +1499,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:521
+#: gsearchtool/gsearchtool-support.c:520
 msgid "today at %-I:%M %p"
 msgstr "aujourd'hui à %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:523
+#: gsearchtool/gsearchtool-support.c:522
 msgid "yesterday at %-I:%M %p"
 msgstr "hier à %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:525 gsearchtool/gsearchtool-support.c:527
+#: gsearchtool/gsearchtool-support.c:524 gsearchtool/gsearchtool-support.c:526
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A %-d %B %Y à %-H:%M:%S"
 
-#: gsearchtool/gsearchtool-support.c:711
+#: gsearchtool/gsearchtool-support.c:710
 msgid "link (broken)"
 msgstr "lien (cassé)"
 
-#: gsearchtool/gsearchtool-support.c:717
+#: gsearchtool/gsearchtool-support.c:716
 #, c-format
 msgid "link to %s"
 msgstr "lien vers %s"
@@ -2329,7 +2334,9 @@ msgstr "Ouvrir un nouveau journal"
 msgid "There was an error displaying help."
 msgstr "Il y a eu une erreur lors de l'affichage de l'aide"
 
-#: logview/logview.c:894
+#. For translators : this is the window title that shows the log and
+#. app names : "logname (monitored) - APP_NAME"
+#: logview/logview.c:896
 #, c-format
 msgid "%s (monitored) - %s"
 msgstr "%s (surveillé) - %s"

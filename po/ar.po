@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-07 10:11-0500\n"
+"POT-Creation-Date: 2005-04-06 09:36-0400\n"
 "PO-Revision-Date: 2004-09-04 17:47+0300\n"
 "Last-Translator: Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -388,6 +388,11 @@ msgstr "اسم قاعدة البيانات"
 #: gdictsrc/gdict-pref-dialog.c:834
 msgid "Default Strategy"
 msgstr "استراتيجية افتراضية"
+
+#: gdictsrc/gdict-speller.c:114
+#, fuzzy
+msgid "Spellings"
+msgstr "تدقيق إملائي"
 
 #: gdictsrc/gdict-speller.c:234
 msgid "Spell-checking..."
@@ -1069,7 +1074,7 @@ msgid "The file \"%s\" already exists.  Would you like to replace it?"
 msgstr "المستند \"%s\" موجود.  هل تريد إستبداله؟"
 
 #: gnome-screenshot/screenshot-xfer.c:190
-#: gsearchtool/gsearchtool-callbacks.c:1269
+#: gsearchtool/gsearchtool-callbacks.c:1271
 msgid "_Replace"
 msgstr "إ_ستبدال"
 
@@ -1326,11 +1331,11 @@ msgid ""
 "command when performing simple file name searches."
 msgstr ""
 
-#: gsearchtool/gsearchtool-callbacks.c:163
+#: gsearchtool/gsearchtool-callbacks.c:165
 msgid "Could not open help document."
 msgstr "لا يمكن فتح مستند المساعدة."
 
-#: gsearchtool/gsearchtool-callbacks.c:298
+#: gsearchtool/gsearchtool-callbacks.c:300
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
@@ -1339,8 +1344,8 @@ msgstr[1] "هل أنت متأكّدٌ أنّك تريد فتح مستندين؟"
 msgstr[2] "هل أنت متأكّدٌ أنّك تريد فتح %d مستندات؟"
 msgstr[3] "هل أنت متأكّدٌ أنّك تريد فتح %d مستنداً؟"
 
-#: gsearchtool/gsearchtool-callbacks.c:303
-#: gsearchtool/gsearchtool-callbacks.c:460
+#: gsearchtool/gsearchtool-callbacks.c:305
+#: gsearchtool/gsearchtool-callbacks.c:493
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
@@ -1349,21 +1354,30 @@ msgstr[1] "سيفتح هذا نافذتين منفصلتين."
 msgstr[2] "سيفتح هذا %d نوافذ منفصلة."
 msgstr[3] "سيفتح هذا %d نافذةً منفصلة."
 
-#: gsearchtool/gsearchtool-callbacks.c:343
+#: gsearchtool/gsearchtool-callbacks.c:345
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "لم يمكن فتح المستند \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:418
-#: gsearchtool/gsearchtool-callbacks.c:761
+#: gsearchtool/gsearchtool-callbacks.c:374
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "لايمكن فتح المجلّد \"%s\"."
+
+#: gsearchtool/gsearchtool-callbacks.c:382
+msgid "The nautilus file manager is not running."
+msgstr "مدير الملفّات نوتلس لا يعمل."
+
+#: gsearchtool/gsearchtool-callbacks.c:449
+#: gsearchtool/gsearchtool-callbacks.c:763
 msgid "The document does not exist."
 msgstr "المستند غير موجود."
 
-#: gsearchtool/gsearchtool-callbacks.c:431
+#: gsearchtool/gsearchtool-callbacks.c:464
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "لا يوجد عارض مثبّت قادى على عرض المستند."
 
-#: gsearchtool/gsearchtool-callbacks.c:455
+#: gsearchtool/gsearchtool-callbacks.c:488
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
@@ -1372,80 +1386,71 @@ msgstr[1] "هل أنت متأكدٌ أنّك تريد فتح مجلّدين؟"
 msgstr[2] "هل أنت متأكدٌ أنّك تريد فتح %d مجلّدات؟"
 msgstr[3] "هل أنت متأكدٌ أنّك تريد فتح %d مجلّداً؟"
 
-#: gsearchtool/gsearchtool-callbacks.c:499
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "لايمكن فتح المجلّد \"%s\"."
-
-#: gsearchtool/gsearchtool-callbacks.c:507
-msgid "The nautilus file manager is not running."
-msgstr "مدير الملفّات نوتلس لا يعمل."
-
-#: gsearchtool/gsearchtool-callbacks.c:587
+#: gsearchtool/gsearchtool-callbacks.c:589
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "لم يمكن نقل \"%s\" إلى سلة المهملات."
 
-#: gsearchtool/gsearchtool-callbacks.c:618
+#: gsearchtool/gsearchtool-callbacks.c:620
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "هل تريد حذف \"%s\" نهائيّا؟"
 
-#: gsearchtool/gsearchtool-callbacks.c:621
+#: gsearchtool/gsearchtool-callbacks.c:623
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "سلة المهملات غير متوفّرة.  لم يمكن نقل \"%s\"·إلى سلة المهملات."
 
-#: gsearchtool/gsearchtool-callbacks.c:660
+#: gsearchtool/gsearchtool-callbacks.c:662
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "لم يمكن حذف \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:780
+#: gsearchtool/gsearchtool-callbacks.c:782
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "فشل نقل \"%s\": %s."
 
-#: gsearchtool/gsearchtool-callbacks.c:812
+#: gsearchtool/gsearchtool-callbacks.c:814
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "فشل حذف \"%s\": %s."
 
-#: gsearchtool/gsearchtool-callbacks.c:1158
+#: gsearchtool/gsearchtool-callbacks.c:1160
 msgid "Save Search Results As..."
 msgstr "حفظ نتائج البحث كـ..."
 
-#: gsearchtool/gsearchtool-callbacks.c:1186
+#: gsearchtool/gsearchtool-callbacks.c:1188
 msgid "Could not save document."
 msgstr "لايمكن حفظ المستند."
 
-#: gsearchtool/gsearchtool-callbacks.c:1187
+#: gsearchtool/gsearchtool-callbacks.c:1189
 msgid "You did not select a document name."
 msgstr "لم تنتقي إسم مستند."
 
-#: gsearchtool/gsearchtool-callbacks.c:1217
+#: gsearchtool/gsearchtool-callbacks.c:1219
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "لم يمكن حفظ المستند \"%s\" في \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:1250
+#: gsearchtool/gsearchtool-callbacks.c:1252
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "المستند \"%s\" موجود.  هل تريد إستبداله؟"
 
-#: gsearchtool/gsearchtool-callbacks.c:1254
+#: gsearchtool/gsearchtool-callbacks.c:1256
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "ستنمّق محتويات الملف إذا أستبدلته."
 
-#: gsearchtool/gsearchtool-callbacks.c:1318
+#: gsearchtool/gsearchtool-callbacks.c:1320
 msgid "The document name you selected is a folder."
 msgstr "إسم المستند الدي إنتقيته إسم مجلّد."
 
-#: gsearchtool/gsearchtool-callbacks.c:1369
+#: gsearchtool/gsearchtool-callbacks.c:1371
 msgid "You may not have write permissions to the document."
 msgstr "قد لا تكون لديك تصاريح الكتابة لهذا المستند."
 
-#: gsearchtool/gsearchtool-support.c:70
+#: gsearchtool/gsearchtool-support.c:69
 #, c-format
 msgid ""
 "GConf error:\n"
@@ -1459,23 +1464,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:521
+#: gsearchtool/gsearchtool-support.c:520
 msgid "today at %-I:%M %p"
 msgstr "اليوم عند %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:523
+#: gsearchtool/gsearchtool-support.c:522
 msgid "yesterday at %-I:%M %p"
 msgstr "أمس عند %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:525 gsearchtool/gsearchtool-support.c:527
+#: gsearchtool/gsearchtool-support.c:524 gsearchtool/gsearchtool-support.c:526
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %B %-d %Y عند %-I:%M:%S %p"
 
-#: gsearchtool/gsearchtool-support.c:711
+#: gsearchtool/gsearchtool-support.c:710
 msgid "link (broken)"
 msgstr "الوصلة (مكسورة)"
 
-#: gsearchtool/gsearchtool-support.c:717
+#: gsearchtool/gsearchtool-support.c:716
 #, c-format
 msgid "link to %s"
 msgstr "وصل بـ %s"
@@ -2315,7 +2320,9 @@ msgstr ""
 "حذث خطأ في عرض المساعدة:  \n"
 "%s"
 
-#: logview/logview.c:894
+#. For translators : this is the window title that shows the log and
+#. app names : "logname (monitored) - APP_NAME"
+#: logview/logview.c:896
 #, c-format
 msgid "%s (monitored) - %s"
 msgstr ""
