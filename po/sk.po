@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sk\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
-"PO-Revision-Date: 2002-05-30 09:13+0200\n"
+"POT-Creation-Date: 2002-07-04 17:58+0200\n"
+"PO-Revision-Date: 2002-07-04 17:59+0200\n"
 "Last-Translator: Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -120,165 +120,161 @@ msgstr "1/x"
 msgid "Inverse"
 msgstr "Opačné číslo"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
-msgstr "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
+msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr "Druhá mocnina"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr "Druhá odmocnina"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr "Vyčistiť"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr "Resetovať"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr "Inverzná trigonometrická/logaritmická funkcia"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr "Sínus"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr "Kosínus"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr "Tangens"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid " DEG  "
 msgstr " DEG  "
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr "Prepína stupne/radiány/gradiány"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr "Základ prirodzého logaritmu"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr "Pridá číslicu"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr "Logaritmus o základe 10"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr "Prirodzený logaritmus"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
-msgstr "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
+msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr "Mocnina"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr "Faktoriál"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr "Otvárajúca zátvorka"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr "Zatvárajúca zátvorka"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr "Delenie"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -286,31 +282,31 @@ msgstr ""
 "Uložiť zobrazenú hodnotu\n"
 "do pamäti"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr "Násobenie"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -318,31 +314,31 @@ msgstr ""
 "Zobraziť hodnotu z pamäte\n"
 "na displeji"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr "Rozdiel"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -350,31 +346,31 @@ msgstr ""
 "Pričítať hodnotu z displeja\n"
 "k hodnote v pamäti"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "Pridať"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -382,31 +378,31 @@ msgstr ""
 "Vymeniť hodnotu na displeji\n"
 "s hodnotou v pamäti"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr "Desatinná čiarka"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr "Zmena znamienka"
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr "Vypočítať"
 
@@ -467,28 +463,27 @@ msgid "GNOME Character Map"
 msgstr "Mapa znakov GNOME"
 
 #: gcharmap/src/callbacks.c:67
-msgid ""
-"Select, copy and paste characters from your font into other applications"
+msgid "Select, copy and paste characters from your font into other applications"
 msgstr "Výber, kopírovanie a vkladanie znakov z vášho písma do iných aplikácií"
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:114
 msgid "del"
 msgstr "del"
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:120
 #, c-format
 msgid " %s: Character code %d"
 msgstr "%s: Kód znaku %d"
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:156
 msgid "Text copied to clipboard..."
 msgstr "Text skopírovaný do schránky..."
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:173
 msgid "Text cut to clipboard..."
 msgstr "Text vystrihnutý do schránky..."
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:226
 msgid "Text pasted from clipboard..."
 msgstr "Text vložený zo schránky..."
 
@@ -504,23 +499,23 @@ msgstr "Nástrojový pruh akcií"
 msgid "_Text to copy:"
 msgstr "Kopírovaný _text:"
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 msgid "_Copy"
 msgstr "_Kopírovať"
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 msgid "Text to copy"
 msgstr "Kopírovaný text"
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr "Položka"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopírovať"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 msgid "Copy the text"
 msgstr "Skopíruje text"
 
@@ -1332,8 +1327,7 @@ msgstr "Príkazový riadok"
 
 #: gsearchtool/gsearchtool.c:1064
 msgid "Use this command line to execute the search from console"
-msgstr ""
-"Toto je príkazový riadok, ktorý môže byť použitý pre hľadanie z konzole"
+msgstr "Toto je príkazový riadok, ktorý môže byť použitý pre hľadanie z konzole"
 
 #: gsearchtool/gsearchtool.c:1172
 msgid "No viewer available for this mime type."
@@ -1540,73 +1534,73 @@ msgstr "Zobrazovač systémových záznamov GNOME"
 msgid "Copyright (C) 1998"
 msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr "Databáza akcií"
 
-#: logview/actions.c:81
-msgid "Action options"
-msgstr "Možnosti akcií"
+#: logview/actions.c:85
+msgid "Actions"
+msgstr "Akcie"
 
-#: logview/actions.c:138
-msgid "Add..."
-msgstr "Pridať..."
+#: logview/actions.c:153
+msgid "_Add"
+msgstr "_Pridať"
 
-#: logview/actions.c:144
-msgid "Edit..."
-msgstr "Upraviť..."
+#: logview/actions.c:160
+msgid "_Edit"
+msgstr "_Upraviť"
 
-#: logview/actions.c:150
-msgid "Remove"
-msgstr "Odstrániť"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+msgid "_Remove"
+msgstr "_Odstrániť"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Nepodarilo sa otvoriť databázu <%s>! Otvorenie zlyhalo."
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "Chyba pre spracovaní databáze akcií"
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr "Nepodarilo sa zapisovať do databáze akcií!"
 
-#: logview/actions.c:494
+#: logview/actions.c:493
 msgid "<empty>"
 msgstr "<prázdne>"
 
-#: logview/actions.c:495
+#: logview/actions.c:494
 msgid "log name regexp"
 msgstr "reg výraz pre meno záznamu"
 
-#: logview/actions.c:496
+#: logview/actions.c:495
 msgid "process regexp"
 msgstr "reg. výraz pre proces"
 
-#: logview/actions.c:497
+#: logview/actions.c:496
 msgid "message regexp"
 msgstr "reg. výraz pre správu"
 
-#: logview/actions.c:498
+#: logview/actions.c:497
 msgid "action to execute when regexps are TRUE"
 msgstr "vykonať akciu ak platia reg. výrazy"
 
-#: logview/actions.c:499
+#: logview/actions.c:498
 msgid "description"
 msgstr "popis"
 
-#: logview/actions.c:744
-msgid "description:"
-msgstr "popis:"
+#: logview/actions.c:758
+msgid "_Description:"
+msgstr "_Popis:"
 
-#: logview/actions.c:753
+#: logview/actions.c:767
 msgid "Description of this entry."
 msgstr "Popis tejto položky."
 
-#: logview/actions.c:800
+#: logview/actions.c:791
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1680,8 +1674,7 @@ msgstr "Helvetica Bold 10"
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr ""
-"Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
+msgstr "Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
 
 #: logview/desc_db.c:147
 #, c-format
@@ -1975,8 +1968,7 @@ msgstr "Akcie..."
 
 #: logview/monitor.c:286
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr ""
-"Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
+msgstr "Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
 
 #: logview/monitor.c:294 logview/monitor.c:332
 msgid "tmp_list is NULL\n"
@@ -2129,10 +2121,6 @@ msgstr "_Vytvoriť archív..."
 msgid "Create a new archive from the items"
 msgstr "Vytvorí nový archív z položiek"
 
-#: meat-grinder/meat-grinder.c:941
-msgid "_Remove"
-msgstr "_Odstrániť"
-
 #: meat-grinder/meat-grinder.c:942
 msgid "Remove the selected item"
 msgstr "Odstrániť vybrané položky"
@@ -2174,6 +2162,27 @@ msgstr ""
 "Nepodarilo sa nájsť archivačný program (tar).\n"
 "Tento program sa používa pre vytváranie archívov."
 
+#~ msgid "x^2"
+#~ msgstr "x^2"
+
+#~ msgid "x^y"
+#~ msgstr "x^y"
+
+#~ msgid "Action options"
+#~ msgstr "Možnosti akcií"
+
+#~ msgid "Add..."
+#~ msgstr "Pridať..."
+
+#~ msgid "Edit..."
+#~ msgstr "Upraviť..."
+
+#~ msgid "Remove"
+#~ msgstr "Odstrániť"
+
+#~ msgid "description:"
+#~ msgstr "popis:"
+
 #~ msgid "_Floppy Device:"
 #~ msgstr "Zariadenie _diskety:"
 
@@ -2205,9 +2214,6 @@ msgstr ""
 
 #~ msgid "Close log"
 #~ msgstr "Zatvorí súbor so záznamom"
-
-#~ msgid "Exit"
-#~ msgstr "Koniec"
 
 #~ msgid "Exit program"
 #~ msgstr "Ukončí program"
@@ -2393,3 +2399,4 @@ msgstr ""
 
 #~ msgid "Utility"
 #~ msgstr "Nástroj"
+
