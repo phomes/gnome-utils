@@ -2,17 +2,19 @@
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # David Sauer <davids@penguin.cz>, 1999.
 # George Lebl <jirka@5z.com>, 2000-2001.
+# Michal Bukovjan <bukm@centrum.cz>, 2002
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 1.0.50\n"
-"POT-Creation-Date: 2002-08-20 10:07+0100\n"
-"PO-Revision-Date: 2001-08-21 19:22+0200\n"
-"Last-Translator: David Sauer <davids@penguin.cz>\n"
-"Language-Team: czech <cs@li.org>\n"
+"Project-Id-Version: gnome-utils 2.0.2\n"
+"POT-Creation-Date: 2002-08-26 05:06+0200\n"
+"PO-Revision-Date: 2002-08-26 21:16GMT\n"
+"Last-Translator: Michal Bukovjan <bukm@centrum.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
 
 #: exe-handler/gnome-exe-handler.c:76
 #, c-format
@@ -22,94 +24,96 @@ msgid ""
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
+"SpouÅ¡tÄ›nÃ­ vÅ¡elijakÃ½ch programÅ¯, kterÃ© jste zÃ­skali na Internetu, mÅ¯Å¾e bÃ½t "
+"nebezpeÄnÃ©.\n"
+"\n"
+"Jste si jisti, Å¾e chcete spustit program `%s'?"
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
-msgstr ""
+msgstr "Nelze pÅ™istupovat k oprÃ¡vnÄ›nÃ­m souboru"
 
 #: exe-handler/gnome-exe-handler.c:88
 #, c-format
 msgid "Could not execute the file `%s' due to a permission problem"
-msgstr ""
+msgstr "Nelze spustit soubor `%s' dÃ­ky problÃ©mÅ¯m s oprÃ¡vnÄ›nÃ­m"
 
 #: exe-handler/gnome-exe-handler.c:104
 #, c-format
 msgid "Failure at executing `%s'"
-msgstr ""
+msgstr "Chyba pÅ™i spouÅ¡tÄ›nÃ­ `%s'"
 
 #: exe-handler/gnome-exe-handler.c:123
 #, c-format
 msgid "It was not possible to open the file `%s'"
-msgstr ""
+msgstr "Nebylo moÅ¾nÃ© otevÅ™Ã­t soubor `%s'"
 
 #: exe-handler/gnome-exe-handler.c:132
 #, c-format
 msgid "The file `%s' is empty"
-msgstr "Soubor `%s' je prázdnı"
+msgstr "Soubor `%s' je prÃ¡zdnÃ½"
 
 #: exe-handler/gnome-exe-handler.c:137
-#, fuzzy, c-format
+#, c-format
 msgid "There was an error. `%s' is empty"
-msgstr "Soubor `%s' je prázdnı"
+msgstr "Nastala chyba. Soubor `%s' je prÃ¡zdnÃ½"
 
 #: exe-handler/gnome-exe-handler.c:152
 msgid "This is a library and can not be executed"
-msgstr ""
+msgstr "Toto je knihovna a tu nelze spouÅ¡tÄ›t"
 
 #: exe-handler/gnome-exe-handler.c:158
 msgid "The file is a core file and can not be executed"
-msgstr ""
+msgstr "Tento soubor je soubor core a nelze jej spouÅ¡tÄ›t"
 
 #: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
-msgstr ""
+msgstr "Toto je neznÃ¡mÃ½ typ spustitelnÃ©ho souboru"
 
 #: exe-handler/gnome-exe-handler.c:192
 msgid ""
 "The executable is for a different platform and can not be executed on this "
 "system"
-msgstr ""
+msgstr "Tento spustitelnÃ½ soubor je pro jinou platformu a nelze jej spustit na tomto systÃ©mu"
 
 #. Translator credits
 #: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
-msgstr ""
+msgstr "David Å auer, Jirka LÃ©bl, Michal Bukovjan"
 
 #: gcalc/gcalc.c:60 gcalc/gcalc.c:191
 msgid "GNOME Calculator"
-msgstr "Kalkulátor GNOME"
+msgstr "KalkulÃ¡tor GNOME"
 
 #: gcalc/gcalc.c:61
-#, fuzzy
 msgid "(C) 1998 the Free Software Foundation"
-msgstr "(C) 1998,2000 Nadace free softwéru"
+msgstr "(C) 1998 Nadace pro volnÄ› Å¡iÅ™itelnÃ½ software"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
-msgstr "Jednoduchı kalkulátor s dvojitou pøesností"
+msgstr "JednoduchÃ½ kalkulÃ¡tor s dvojitou pÅ™esnostÃ­ podobnÃ½ kalkulÃ¡toru xcalc"
 
 #: gcalc/gcalc.c:140
 msgid "_Calculator"
-msgstr "_Kalkulátor"
+msgstr "_KalkulÃ¡tor"
 
 #: gcalc/gnome-calc.c:252
-#, fuzzy
 msgid "inf"
-msgstr "sin"
+msgstr "inf"
 
 #: gcalc/gnome-calc.c:475
 msgid "DEG"
-msgstr ""
+msgstr "DEG"
 
 #: gcalc/gnome-calc.c:477
 msgid "RAD"
-msgstr ""
+msgstr "RAD"
 
 #: gcalc/gnome-calc.c:479
 msgid "GRAD"
-msgstr ""
+msgstr "GRAD"
 
 #: gcalc/gnome-calc.c:1252
 msgid "1/x"
@@ -117,11 +121,11 @@ msgstr "1/x"
 
 #: gcalc/gnome-calc.c:1252
 msgid "Inverse"
-msgstr "Obrátit"
+msgstr "ObrÃ¡tit"
 
 #: gcalc/gnome-calc.c:1253
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1253
 msgid "Square"
@@ -133,7 +137,7 @@ msgstr "SQRT"
 
 #: gcalc/gnome-calc.c:1254
 msgid "Square root"
-msgstr "Druhá odmocnina"
+msgstr "DruhÃ¡ odmocnina"
 
 #: gcalc/gnome-calc.c:1255
 msgid "CE/C"
@@ -157,7 +161,7 @@ msgstr "INV"
 
 #: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
-msgstr "Opak trigonometrickıch a logaritmickıch funkcí"
+msgstr "Opak trigonometrickÃ½ch a logaritmickÃ½ch funkcÃ­"
 
 #. inverse button
 #: gcalc/gnome-calc.c:1259
@@ -166,7 +170,7 @@ msgstr "sin"
 
 #: gcalc/gnome-calc.c:1259
 msgid "Sine"
-msgstr "Sínus"
+msgstr "SÃ­nus"
 
 #: gcalc/gnome-calc.c:1260
 msgid "cos"
@@ -174,7 +178,7 @@ msgstr "cos"
 
 #: gcalc/gnome-calc.c:1260
 msgid "Cosine"
-msgstr "Kosínus"
+msgstr "KosÃ­nus"
 
 #: gcalc/gnome-calc.c:1261
 msgid "tan"
@@ -187,11 +191,11 @@ msgstr "Tangenta"
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
 #: gcalc/gnome-calc.c:1263
 msgid " DEG  "
-msgstr ""
+msgstr " DEG  "
 
 #: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
-msgstr "Mìnit mezi stupni, radiany a grad"
+msgstr "PÅ™epÃ­nat mezi stupni, radiÃ¡ny a gradiÃ¡ny"
 
 #: gcalc/gnome-calc.c:1265
 msgid "e"
@@ -199,25 +203,23 @@ msgstr "e"
 
 #: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
-msgstr "Báze pøírodního logaritmu"
+msgstr "BÃ¡ze pÅ™Ã­rodnÃ­ho logaritmu"
 
 #: gcalc/gnome-calc.c:1266
 msgid "EE"
-msgstr ""
+msgstr "EE"
 
 #: gcalc/gnome-calc.c:1266
-#, fuzzy
 msgid "Add digit"
-msgstr "Pøidat podmínku"
+msgstr "PÅ™idat ÄÃ­slici"
 
 #: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
 #: gcalc/gnome-calc.c:1267
-#, fuzzy
 msgid "Base 10 Logarithm"
-msgstr "Logaritmické"
+msgstr "DekadickÃ½ logaritmus"
 
 #: gcalc/gnome-calc.c:1268
 msgid "ln"
@@ -225,11 +227,11 @@ msgstr "ln"
 
 #: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
-msgstr "Pøírodní logaritmus"
+msgstr "PÅ™irozenÃ½ logaritmus"
 
 #: gcalc/gnome-calc.c:1269
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "x<sup>y</sup>"
 
 #: gcalc/gnome-calc.c:1269
 msgid "Power"
@@ -237,7 +239,7 @@ msgstr "Mocnina"
 
 #: gcalc/gnome-calc.c:1271
 msgid "PI"
-msgstr ""
+msgstr "PI"
 
 #: gcalc/gnome-calc.c:1272
 msgid "x!"
@@ -245,7 +247,7 @@ msgstr "x!"
 
 #: gcalc/gnome-calc.c:1272
 msgid "Factorial"
-msgstr "Faktoriál"
+msgstr "FaktoriÃ¡l"
 
 #: gcalc/gnome-calc.c:1273
 msgid "("
@@ -253,16 +255,15 @@ msgstr "("
 
 #: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
-msgstr ""
+msgstr "OtevÃ­rajÃ­cÃ­ zÃ¡vorka"
 
 #: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
 #: gcalc/gnome-calc.c:1274
-#, fuzzy
 msgid "Closing Parenthesis"
-msgstr "oèekáváno èíslo"
+msgstr "UzavÃ­rajÃ­cÃ­ zÃ¡vorka"
 
 #: gcalc/gnome-calc.c:1275
 msgid "/"
@@ -270,17 +271,19 @@ msgstr "/"
 
 #: gcalc/gnome-calc.c:1275
 msgid "Divide by"
-msgstr "Vydìlit"
+msgstr "VydÄ›lit"
 
 #: gcalc/gnome-calc.c:1277
 msgid "STO"
-msgstr ""
+msgstr "STO"
 
 #: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
+"UloÅ¾it hodnotu na\n"
+"displeji do pamÄ›ti"
 
 #: gcalc/gnome-calc.c:1278
 msgid "7"
@@ -300,17 +303,19 @@ msgstr "*"
 
 #: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
-msgstr "Vynásovit"
+msgstr "VynÃ¡sobit"
 
 #: gcalc/gnome-calc.c:1283
 msgid "RCL"
-msgstr ""
+msgstr "RCL"
 
 #: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
+"Zobrazit hodnotu z pamÄ›ti\n"
+"na displeji"
 
 #: gcalc/gnome-calc.c:1284
 msgid "4"
@@ -329,19 +334,20 @@ msgid "-"
 msgstr "-"
 
 #: gcalc/gnome-calc.c:1287
-#, fuzzy
 msgid "Subtract"
-msgstr "Zaèít"
+msgstr "OdeÄÃ­st"
 
 #: gcalc/gnome-calc.c:1289
 msgid "SUM"
-msgstr ""
+msgstr "SUM"
 
 #: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
+"PÅ™idat hodnotu na displeji\n"
+"k hodnotÄ› v pamÄ›ti"
 
 #: gcalc/gnome-calc.c:1290
 msgid "1"
@@ -361,17 +367,19 @@ msgstr "+"
 
 #: gcalc/gnome-calc.c:1293
 msgid "Add"
-msgstr "Pøidat"
+msgstr "PÅ™idat"
 
 #: gcalc/gnome-calc.c:1295
 msgid "EXC"
-msgstr ""
+msgstr "EXC"
 
 #: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
+"VymÄ›nit hodnoty v pamÄ›ti\n"
+"a na displeji"
 
 #: gcalc/gnome-calc.c:1296
 msgid "0"
@@ -382,9 +390,8 @@ msgid "."
 msgstr ","
 
 #: gcalc/gnome-calc.c:1297
-#, fuzzy
 msgid "Decimal Point"
-msgstr "Desítkovì 8 bitù"
+msgstr "DesetinnÃ¡ ÄÃ¡rka"
 
 #: gcalc/gnome-calc.c:1298
 msgid "+/-"
@@ -392,7 +399,7 @@ msgstr "+/-"
 
 #: gcalc/gnome-calc.c:1298
 msgid "Change sign"
-msgstr ""
+msgstr "ZmÄ›nit znamÃ©nko"
 
 #: gcalc/gnome-calc.c:1299
 msgid "="
@@ -400,23 +407,23 @@ msgstr "="
 
 #: gcalc/gnome-calc.c:1299
 msgid "Calculate"
-msgstr "Spoèítat"
+msgstr "SpoÄÃ­tat"
 
 #: gcalc/gnome-calculator.desktop.in.h:1
 msgid "Calculator"
-msgstr "Kalkulátor"
+msgstr "KalkulÃ¡tor"
 
 #: gcalc/gnome-calculator.desktop.in.h:2
 msgid "Perform simple calculations"
-msgstr "Provádìt jednoduché kalkulace"
+msgstr "ProvÃ¡dÄ›t jednoduchÃ© kalkulace"
 
 #: gcharmap/gnome-character-map.desktop.in.h:1
 msgid "Character Map"
-msgstr "Mapa znakù"
+msgstr "Mapa znakÅ¯"
 
 #: gcharmap/gnome-character-map.desktop.in.h:2
 msgid "Insert special characters into documents"
-msgstr ""
+msgstr "VloÅ¾Ã­ do dokumentÅ¯ speciÃ¡lnÃ­ znaky"
 
 #: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
@@ -424,44 +431,39 @@ msgstr "Vyberte znak"
 
 #: gcharmap/src/asciiselect.c:120
 msgid "_Insert"
-msgstr "_Vlo¾it"
+msgstr "_VloÅ¾it"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "Kód znaku:"
+msgstr "_KÃ³d znaku:"
 
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "Znak:"
+msgstr "Zn_ak:"
 
 #: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
-msgstr "Kód znaku"
+msgstr "KÃ³d znaku"
 
 #: gcharmap/src/asciiselect.c:148
 msgid "Select character code"
-msgstr "Vyberte kód znaku"
+msgstr "Vyberte kÃ³d znaku"
 
 #: gcharmap/src/asciiselect.c:149
 msgid "Character"
 msgstr "Znak"
 
 #: gcharmap/src/asciiselect.c:149
-#, fuzzy
 msgid "Character to insert"
-msgstr "Kód znaku:"
+msgstr "Znak pro vloÅ¾enÃ­"
 
 #: gcharmap/src/callbacks.c:63
-#, fuzzy
 msgid "GNOME Character Map"
-msgstr "Mapa znakù Gnome"
+msgstr "Mapa znakÅ¯ GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid ""
-"Select, copy and paste characters from your font into other applications"
-msgstr ""
+msgid "Select, copy and paste characters from your font into other applications"
+msgstr "VybÃ­rejte, kopÃ­rujte a vklÃ¡dejte znaky z vaÅ¡eho pÃ­sma do jinÃ½ch aplikacÃ­"
 
 #: gcharmap/src/callbacks.c:113
 msgid "del"
@@ -470,70 +472,63 @@ msgstr "del"
 #: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
-msgstr " %s: kód znaku %d"
+msgstr " %s: KÃ³d znaku %d"
 
 #: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
-msgstr ""
+msgstr "Text zkopÃ­rovanÃ½ do schrÃ¡nky..."
 
 #: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
-msgstr ""
+msgstr "Text vyjmutÃ½ do schrÃ¡nky..."
 
 #: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
-msgstr ""
+msgstr "Text vloÅ¾enÃ½ ze schrÃ¡nky..."
 
 #: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
-msgstr "Mapa znakù Gnome"
+msgstr "Mapa znakÅ¯ GNOME"
 
 #: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
-msgstr "Li¹ta akcí"
+msgstr "NÃ¡strojovÃ¡ liÅ¡ta akcÃ­"
 
 #: gcharmap/src/interface.c:240
-#, fuzzy
 msgid "_Text to copy:"
-msgstr "Text na zkopírování:"
+msgstr "_Text na zkopÃ­rovÃ¡nÃ­:"
 
 #: gcharmap/src/interface.c:255
-#, fuzzy
 msgid "_Copy"
-msgstr "Zkopírovat"
+msgstr "_KopÃ­rovat"
 
 #: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
-#, fuzzy
 msgid "Text to copy"
-msgstr "Text na zkopírování:"
+msgstr "Text na zkopÃ­rovÃ¡nÃ­"
 
 #: gcharmap/src/interface.c:278
-#, fuzzy
 msgid "Entry"
-msgstr "Polo¾ka Stop:"
+msgstr "PoloÅ¾ka"
 
 #: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
-msgstr "Zkopírovat"
+msgstr "KopÃ­rovat"
 
 #: gcharmap/src/interface.c:279
-#, fuzzy
 msgid "Copy the text"
-msgstr "O této aplikaci"
+msgstr "KopÃ­rovat text"
 
 #: gcharmap/src/menus.c:34
-#, fuzzy
 msgid "_Browse..."
-msgstr "Probírat"
+msgstr "Pro_bÃ­rat..."
 
 #: gcharmap/src/menus.c:35
 msgid "Insert character(s) by choosing character codes."
-msgstr ""
+msgstr "VloÅ¾te znak(y) vÃ½bÄ›rem znakovÃ½ch kÃ³dÅ¯."
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
-msgstr "Znak:"
+msgstr "Zn_aky"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
@@ -543,79 +538,69 @@ msgid "Cut"
 msgstr "Vyjmout"
 
 #: gcharmap/src/menus.c:75
-#, fuzzy
 msgid "Cut the selection"
-msgstr "O této aplikaci"
+msgstr "Vyjmout vÃ½bÄ›r"
 
 #: gcharmap/src/menus.c:77
-#, fuzzy
 msgid "Copy the selection"
-msgstr "O této aplikaci"
+msgstr "KopÃ­rovat vÃ½bÄ›r"
 
 #: gcharmap/src/menus.c:79
 msgid "Paste"
-msgstr "Vlo¾it"
+msgstr "VloÅ¾it"
 
 #: gcharmap/src/menus.c:79
-#, fuzzy
 msgid "Paste the clipboard"
-msgstr "Naèíst font"
+msgstr "VloÅ¾it ze schrÃ¡nky"
 
 #: gdialog/guage.c:78
 msgid "Gdialog progressbar"
-msgstr ""
+msgstr "LiÅ¡ta s prÅ¯bÄ›hem GDialog"
 
 #: gdialog/guage.c:78
 msgid "Indicates the percentage specified at the standard input"
-msgstr ""
+msgstr "Ukazuje procenta stanovenÃ¡ na standardnÃ­m vstupu"
 
 #: gdialog/inputbox.c:90
 msgid "GDialog Entry"
-msgstr ""
+msgstr "PoloÅ¾ka GDialog"
 
 #: gdialog/inputbox.c:90
-#, fuzzy
 msgid "Enter the text"
-msgstr "O této aplikaci"
+msgstr "Zadejte text"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
-msgstr ""
+msgstr "PÅ™Ã­sluÅ¡enstvÃ­"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
-#, fuzzy
 msgid "Dictionary Lookup"
-msgstr "Zaèít v adresáøi:"
+msgstr "VyhledÃ¡nÃ­ ve slovnÃ­ku"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
-#, fuzzy
 msgid "Lookup words in an online dictionary"
-msgstr "Hledat slovo ve slovníku"
+msgstr "VyhledÃ¡vÃ¡nÃ­ slov v on-line slovnÃ­ku"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:1
-#, fuzzy
 msgid "Look Up Selected Text..."
-msgstr "Zkopírovat vybranı projekt"
+msgstr "Vyhledat vybranÃ½ text..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:2
-#, fuzzy
 msgid "_About..."
-msgstr "O programu..."
+msgstr "O _aplikaci..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:3
 msgid "_Help"
-msgstr "_Nápovìda"
+msgstr "_NÃ¡povÄ›da"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:4
-#, fuzzy
 msgid "_Preferences"
-msgstr "Nastavení"
+msgstr "_NastavenÃ­"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:5
-#, fuzzy
 msgid "_Show/Hide Definition Window..."
-msgstr "Ukázat/schovat okno definice..."
+msgstr "UkÃ¡zat/_schovat okno definice..."
 
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
@@ -623,37 +608,39 @@ msgstr "Ukázat/schovat okno definice..."
 #: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
-msgstr ""
+msgstr "Nelze se pÅ™ipojit k serveru"
 
 #: gdictsrc/dict.c:661
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
+"Vyskytla se vÃ¡Å¾nÃ¡ chyba. Zkontrolujte prosÃ­m, Å¾e vaÅ¡e nastavenÃ­ server a portu "
+"je sprÃ¡vnÃ©. Pro vaÅ¡i informaci, vÃ½chozÃ­ server je gdict.org a vÃ½chozÃ­ port je 2628"
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "Slovník"
+msgstr "SlovnÃ­k GNOME"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "Copyright 1999 Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
 "Client for MIT dictionary server.\n"
 "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
 msgstr ""
+"Klient pro server se slovnÃ­kem na MIT.\n"
+"Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
 
 #: gdictsrc/gdict-app.c:128
-#, fuzzy
 msgid "Spell-checking..."
-msgstr "Hledání..."
+msgstr "Kontrola pravopisu..."
 
 #: gdictsrc/gdict-app.c:136
 msgid "Spell check done"
-msgstr ""
+msgstr "Kontrola pravopisu dokonÄena"
 
 #: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
@@ -661,26 +648,24 @@ msgstr "Nic nenalezeno"
 
 #: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
-msgstr "Hledám slovo..."
+msgstr "HledÃ¡m slovo..."
 
 #: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
-msgstr "Hledání hotové"
+msgstr "HledÃ¡nÃ­ hotovo"
 
 #: gdictsrc/gdict-app.c:301
 msgid "String not found"
-msgstr "Øetìzec nenalezen"
+msgstr "Å˜etÄ›zec nenalezen"
 
 #: gdictsrc/gdict-app.c:469
-#, fuzzy
 msgid "Find"
-msgstr "Najít"
+msgstr "NajÃ­t"
 
 #: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
-#, fuzzy
 msgid "_Find"
-msgstr "Najít:"
+msgstr "_NajÃ­t"
 
 #: gdictsrc/gdict-app.c:540
 msgid ""
@@ -688,36 +673,38 @@ msgid ""
 "Either the server you are using is not available \n"
 "or you are not connected to the Internet."
 msgstr ""
+"Nelze provÃ©st poÅ¾adovanou operaci.\n"
+"BuÄ nenÃ­ server, kterÃ½ pouÅ¾Ã­vÃ¡te, k dispozici,\n"
+"nebo nejste pÅ™ipojeni k Internetu."
 
 #: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
-#, fuzzy
 msgid "_Look Up Word"
-msgstr "Hledat"
+msgstr "Vyh_ledat slovo"
 
 #: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
-msgstr "Hledat slovo ve slovníku"
+msgstr "Hledat slovo ve slovnÃ­ku"
 
 #: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
-msgstr ""
+msgstr "Kontrolovat pravopi_s"
 
 #: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
-msgstr ""
+msgstr "Kontrolovat pravopis"
 
 #: gdictsrc/gdict-app.c:749
 msgid "_Dictionary"
-msgstr "_Slovník"
+msgstr "Slo_vnÃ­k"
 
 #: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
-msgstr "Slovník"
+msgstr "SlovnÃ­k"
 
 #: gdictsrc/gdict-app.c:808
 msgid "_Word: "
-msgstr "S_lovo:"
+msgstr "Sl_ovo:"
 
 #: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
@@ -726,38 +713,36 @@ msgstr "Slovo"
 #: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
-msgstr ""
+msgstr "PoloÅ¾ka se slovem"
 
 #: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
-msgstr ""
+msgstr "Zadejte slovo nebo jedno vyberte ze seznamu nÃ­Å¾e"
 
 #: gdictsrc/gdict-app.c:839
-#, fuzzy
 msgid "Look Up for a Word"
-msgstr "Hledat"
+msgstr "Hledat slovo"
 
 #: gdictsrc/gdict-applet.c:263
-#, fuzzy
 msgid "_Lookup"
-msgstr "Hledat"
+msgstr "H_ledat"
 
 #: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
-#, fuzzy, c-format
+#, c-format
 msgid "Error invoking query: %s"
-msgstr "EChyba pøi zavírání zaøízení %s"
+msgstr "Chyba pÅ™i spouÅ¡tÄ›nÃ­ dotazu: %s"
 
 #: gdictsrc/gdict-pref-dialog.c:37
 msgid "Headword:"
-msgstr "Hlavní slovo:"
+msgstr "HlavnÃ­ slovo:"
 
 #: gdictsrc/gdict-pref-dialog.c:38
 msgid "Sub-number:"
-msgstr "Podèíslo:"
+msgstr "PodÄÃ­slo:"
 
 #: gdictsrc/gdict-pref-dialog.c:39
 msgid "Pronunciation:"
-msgstr "Vıslovnost:"
+msgstr "VÃ½slovnost:"
 
 #: gdictsrc/gdict-pref-dialog.c:40
 msgid "Etymology:"
@@ -765,187 +750,172 @@ msgstr "Etymologie:"
 
 #: gdictsrc/gdict-pref-dialog.c:41
 msgid "Part of speech:"
-msgstr "Èást øeèi:"
+msgstr "ÄŒÃ¡st Å™eÄi:"
 
 #: gdictsrc/gdict-pref-dialog.c:42
 msgid "Example:"
-msgstr "Ukázka"
+msgstr "PÅ™Ã­klad:"
 
 #: gdictsrc/gdict-pref-dialog.c:43
 msgid "Main body:"
-msgstr "Hlavní tìlo:"
+msgstr "HlavnÃ­ tÄ›lo:"
 
 #: gdictsrc/gdict-pref-dialog.c:44
 msgid "Cross-reference:"
-msgstr "Køí¾ová reference:"
+msgstr "KÅ™Ã­Å¾ovÃ½ odkaz:"
 
 #: gdictsrc/gdict-pref-dialog.c:186
-#, fuzzy
 msgid "Dictionary Preferences"
-msgstr "Úprava nastavení..."
+msgstr "NastavenÃ­ slovnÃ­ku"
 
 #: gdictsrc/gdict-pref-dialog.c:198
-#, fuzzy
 msgid "Smart _lookup"
-msgstr "Chytré hledání"
+msgstr "ChytrÃ© h_ledÃ¡nÃ­"
 
 #: gdictsrc/gdict-pref-dialog.c:211
-#, fuzzy
 msgid "_Server:"
-msgstr "Server:"
+msgstr "_Server:"
 
 #: gdictsrc/gdict-pref-dialog.c:218
-#, fuzzy
 msgid "De_fault"
-msgstr "Standardní"
+msgstr "_VÃ½chozÃ­"
 
 #: gdictsrc/gdict-pref-dialog.c:224
-#, fuzzy
 msgid "Reset server to default"
-msgstr "Vrátit standardní hodnoty"
+msgstr "VrÃ¡tit vÃ½chozÃ­ hodnoty"
 
 #: gdictsrc/gdict-pref-dialog.c:226
-#, fuzzy
 msgid "_Port:"
-msgstr "Port:"
+msgstr "_Port:"
 
 #: gdictsrc/gdict-pref-dialog.c:240
-#, fuzzy
 msgid "Def_ault"
-msgstr "Standardní"
+msgstr "VÃ½ch_ozÃ­"
 
 #: gdictsrc/gdict-pref-dialog.c:247
-#, fuzzy
 msgid "Reset port to default"
-msgstr "Vrátit standardní hodnoty"
+msgstr "VrÃ¡tit vÃ½chozÃ­ port"
 
 #: gdictsrc/gdict-pref-dialog.c:248
-#, fuzzy
 msgid "Server"
-msgstr "Server:"
+msgstr "Server"
 
 #: gdictsrc/gdict-pref-dialog.c:249
-#, fuzzy
 msgid "Server Entry"
-msgstr "Server:"
+msgstr "PoloÅ¾ka se serverem"
 
 #: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
-msgstr ""
+msgstr "Zadejte nÃ¡zev serveru"
 
 #: gdictsrc/gdict-pref-dialog.c:252
-#, fuzzy
 msgid "Port"
-msgstr "Port:"
+msgstr "Port"
 
 #: gdictsrc/gdict-pref-dialog.c:253
 msgid "Port Entry"
-msgstr ""
+msgstr "PoloÅ¾ka s portem"
 
 #: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
-msgstr ""
+msgstr "Zadejte ÄÃ­slo portu"
 
 #: gdictsrc/gdict-pref-dialog.c:258
-#, fuzzy
 msgid "_Database:"
-msgstr "Databáze:"
+msgstr "_DatabÃ¡ze:"
 
 #: gdictsrc/gdict-pref-dialog.c:265
-#, fuzzy
 msgid "D_efault strategy:"
-msgstr "Implicitní strategie:"
+msgstr "ImplicitnÃ­ strat_egie:"
 
 #: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
-msgstr "Prohledat v¹echny databáze"
+msgstr "Prohledat vÅ¡echny databÃ¡ze"
 
 #: gdictsrc/gdict-pref-dialog.c:623
-#, fuzzy
 msgid "Database"
-msgstr "Databáze:"
+msgstr "DatabÃ¡ze"
 
 #: gdictsrc/gdict-pref-dialog.c:623
-#, fuzzy
 msgid "Database Name"
-msgstr "Databáze:"
+msgstr "NÃ¡zev databÃ¡ze"
 
 #: gdictsrc/gdict-pref-dialog.c:635
-#, fuzzy
 msgid "Default Strategy"
-msgstr "Implicitní strategie:"
+msgstr "ImplicitnÃ­ strategie"
 
 #: gdictsrc/gdict-speller.c:135
-#, fuzzy
 msgid "_Word:"
-msgstr "_Slova"
+msgstr "_Slova:"
 
 #: gdictsrc/gdict-speller.c:148
 msgid "Enter a word to know the spelling"
-msgstr ""
+msgstr "Zadejte slovo a dozvÃ­te se, jak se pÃ­Å¡e"
 
 #: gdictsrc/gdict-speller.c:153
 msgid "Click to do the spell check"
-msgstr ""
+msgstr "KliknÄ›te zde a provedete kontrolu pravopisu"
 
 #: gdictsrc/gdict-speller.c:158
-#, fuzzy
 msgid "Search S_trategy:"
-msgstr "Strategie hledání:"
+msgstr "S_trategie hledÃ¡nÃ­:"
 
 #: gdictsrc/gdict-speller.c:174
-#, fuzzy
 msgid "Search _Results"
-msgstr "Vısledky hledání"
+msgstr "VÃ½sledky _hledÃ¡nÃ­"
 
 #: gdictsrc/gdict-speller.c:236
 msgid "Check Spelling"
-msgstr ""
+msgstr "Kontrolovat pravopis"
 
 #: gdictsrc/gdict-speller.c:654
-#, fuzzy
 msgid "Search Strategy"
-msgstr "Strategie hledání:"
+msgstr "Strategie hledÃ¡nÃ­"
 
 #: gdictsrc/gdict.schemas.in.h:1
-#, fuzzy
 msgid "Dictionary server"
-msgstr "Zaèít v adresáøi:"
+msgstr "Server se slovnÃ­kem"
 
 #: gdictsrc/gdict.schemas.in.h:2
 msgid "Port used to connect to server"
-msgstr ""
+msgstr "Port pro pÅ™ipojenÃ­ se k serveru"
 
 #: gdictsrc/gdict.schemas.in.h:3
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"Zadejte, zda-li se mÃ¡ pouÅ¾Ã­t chytrÃ© hledÃ¡nÃ­. Tato volba zÃ¡visÃ­ na tom, zda-li "
+"ji server se slovnÃ­kem podporuje. VÃ½chozÃ­ hodnota je TRUE."
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "DatabÃ¡ze, kterÃ¡ se mÃ¡ pouÅ¾Ã­t na serveru se slovnÃ­ky."
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"Server se slovnÃ­kem, ke kterÃ©mu by se mÄ›lo pÅ™ipojovat. VÃ½chozÃ­ server je dict.org. "
+"PodrobnÄ›jÅ¡Ã­ informace o dalÅ¡Ã­ch serverech naleznete na adrese http://www.dict.org."
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"NÃ¡zev konkrÃ©tnÃ­ databÃ¡ze, kterÃ¡ se mÃ¡ na serveru se slovnÃ­ky pouÅ¾Ã­t. Znak ! "
+"znamenÃ¡, Å¾e program gnome-dictionary by mÄ›l prohledÃ¡vat vÅ¡echny databÃ¡ze "
+"na danÃ©m serveru."
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "ÄŒÃ­slo portu, ke kterÃ©mu se mÃ¡ pÅ™ipojit. VÃ½chozÃ­ port je 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "Strategie hledání:"
+msgstr "PouÅ¾itÃ¡ strategie hledÃ¡nÃ­"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -953,75 +923,77 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"Strategie hledÃ¡nÃ­, kterÃ¡ se mÃ¡ pouÅ¾Ã­t. ZÃ¡leÅ¾Ã­ na strategiÃ­ch hledÃ¡nÃ­, kterÃ© podporuje "
+"server se slovnÃ­kem. VÃ½chozÃ­ je strategie 'lev' - srovnÃ¡vÃ¡nÃ­ slov pomocÃ­ "
+"LevenÅ¡teinova algoritmu vzdÃ¡lenosti jedna."
 
 #: gdictsrc/gdict.schemas.in.h:10
-#, fuzzy
 msgid "Use smart lookup"
-msgstr "Chytré hledání"
+msgstr "PouÅ¾Ã­t chytrÃ© hledÃ¡nÃ­"
 
 #: gfloppy/gfloppy.desktop.in.h:1
 msgid "Floppy Formatter"
-msgstr "Formátovaè disket"
+msgstr "FormÃ¡tovaÄ disket"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "Format Floppy Disks"
-msgstr "Formátování disket"
+msgstr "FormÃ¡tovÃ¡nÃ­ disket"
 
 #: gfloppy/src/badblocks.c:102
 msgid "MInternal Error: Unable to seek to the correct location."
-msgstr ""
+msgstr "MInternÃ­ chyba: Nelze se pÅ™esunout na sprÃ¡vnÃ© mÃ­sto."
 
 #: gfloppy/src/badblocks.c:111
 #, c-format
 msgid "MInternal Error: Weird value (%ld) in do_test\n"
-msgstr ""
+msgstr "MInternÃ­ chyba: DivnÃ¡ hodnota (%ld) ve funkci do_test\n"
 
 #: gfloppy/src/badblocks.c:166
 #, c-format
 msgid "EBad block at block %lu"
-msgstr ""
+msgstr "EChybnÃ½ blok na bloku: %lu"
 
 #. while (!i)
 #. ;
 #: gfloppy/src/badblocks.c:260
 msgid "MChecking for bad blocks..."
-msgstr ""
+msgstr "MHledÃ¡m chybnÃ© bloky..."
 
 #: gfloppy/src/badblocks.c:272
 #, c-format
 msgid "MFailed to open device %s for badblock checking\n"
-msgstr ""
+msgstr "MSelhalo otevÅ™enÃ­ zaÅ™Ã­zenÃ­ %s pro kontrolu chybnÃ½ch blokÅ¯\n"
 
 #: gfloppy/src/badblocks.c:291 gfloppy/src/gfloppy.c:213
 msgid "MChecking for bad blocks... Done"
-msgstr ""
+msgstr "MHledÃ¡m chybnÃ© bloky... Hotovo"
 
 #: gfloppy/src/fdformat.c:44
 msgid "MFormatting the disk..."
-msgstr "MFormátuji disketu..."
+msgstr "MFormÃ¡tuji disketu..."
 
 #: gfloppy/src/fdformat.c:46
 msgid "EI don't know what this is, but it's very wrong."
-msgstr "ENevím co toto je ale je to velmi ¹patné."
+msgstr "ENevÃ­m, co to je, ale je to velmi Å¡patnÃ©."
 
 #: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
 #, c-format
 msgid "EError formatting track #%d"
-msgstr ""
+msgstr "EChyba pÅ™i formÃ¡tovÃ¡nÃ­ stopy #%d"
 
 #: gfloppy/src/fdformat.c:74
 msgid "EError during completion of formatting"
-msgstr "EChyba pøi ukonèování formátování"
+msgstr "EChyba pÅ™i ukonÄovÃ¡nÃ­ formÃ¡tovÃ¡nÃ­"
 
 #. XXXX - need to tell parent we're finished
 #: gfloppy/src/fdformat.c:78
 msgid "MFormatting the disk... Done"
-msgstr "MFormátuji disketu... Hotovo"
+msgstr "MFormÃ¡tuji disketu... Hotovo"
 
 #. XXXX - tell parent we're starting verify stage
 #: gfloppy/src/fdformat.c:94
 msgid "MVerifying the format..."
-msgstr "MOvìøuji formátování..."
+msgstr "MOvÄ›Å™uji formÃ¡tovÃ¡nÃ­..."
 
 #: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
 msgid ""
@@ -1029,11 +1001,14 @@ msgid ""
 "\n"
 "Please confirm that it is not write-protected."
 msgstr ""
+"ENelze zapisovat na disketu.\n"
+"\n"
+"PÅ™esvÄ›dÄte se prosÃ­m, Å¾e nenÃ­ chrÃ¡nÄ›nÃ¡ proti zÃ¡pisu."
 
 #: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
 #, c-format
 msgid "EInsufficient permissions to open floppy device %s."
-msgstr "ENedostateèné prístupové povolení k otevøení zaøízení %s."
+msgstr "ENedostateÄnÃ© povolenÃ­ pÅ™Ã­stupu pro otevÅ™enÃ­ zaÅ™Ã­zenÃ­ %s."
 
 #: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
 msgid ""
@@ -1042,6 +1017,10 @@ msgid ""
 "Please confirm that it is in the drive\n"
 "with the drive door shut."
 msgstr ""
+"ENelze pÅ™istupovat k disketÄ›.\n"
+"\n"
+"PÅ™esvÄ›dÄte se, Å¾e je vloÅ¾ena do zaÅ™Ã­zenÃ­\n"
+"a Å¾e dvÃ­Å™ka zaÅ™Ã­zenÃ­ jsou zavÅ™ena."
 
 #: gfloppy/src/fdformat.c:109
 #, c-format
@@ -1050,6 +1029,9 @@ msgid ""
 "\n"
 "Error code %s:%d"
 msgstr ""
+"EObecnÃ¡ chyba pÅ™i pÅ™Ã­stupu k zaÅ™Ã­zenÃ­ pruÅ¾nÃ©ho disku %s.\n"
+"\n"
+"ChybovÃ½ kÃ³d %s: %d"
 
 #: gfloppy/src/fdformat.c:129
 #, c-format
@@ -1057,30 +1039,32 @@ msgid ""
 "ERead Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
 msgstr ""
+"EChyba pÅ™i ÄtenÃ­:\n"
+"ProblÃ©m pÅ™i ÄtenÃ­ cylindru %d, oÄekÃ¡vÃ¡no %d, pÅ™eÄteno %d"
 
 #: gfloppy/src/fdformat.c:132
 #, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr ""
+msgstr "EProblÃ©m pÅ™i ÄtenÃ­ cylindru %d, oÄekÃ¡vÃ¡no %d, pÅ™eÄteno %d"
 
 #: gfloppy/src/fdformat.c:141
 #, c-format
 msgid "MBad data in cyl %d.  Continuing... "
-msgstr ""
+msgstr "MChybnÃ¡ data na cylindru %d.  PokraÄuji... "
 
 #: gfloppy/src/fdformat.c:148
 #, c-format
 msgid "EError closing device %s"
-msgstr "EChyba pøi zavírání zaøízení %s"
+msgstr "EChyba pÅ™i zavÃ­rÃ¡nÃ­ zaÅ™Ã­zenÃ­ %s"
 
 #: gfloppy/src/fdformat.c:153
 msgid "MVerifying the format... Done"
-msgstr "MOvìøuji formátování... Hotovo"
+msgstr "MOvÄ›Å™uji formÃ¡tovÃ¡nÃ­... Hotovo"
 
 #: gfloppy/src/fdformat.c:165
 #, c-format
 msgid "EUnable to write to device %s"
-msgstr "ENelze psát na zaøízení %s"
+msgstr "ENelze psÃ¡t na zaÅ™Ã­zenÃ­ %s"
 
 #: gfloppy/src/fdformat.c:184
 #, c-format
@@ -1089,93 +1073,86 @@ msgid ""
 "\n"
 "Error code %s"
 msgstr ""
+"EObecnÃ¡ chyba pÅ™i pÅ™Ã­stupu k zaÅ™Ã­zenÃ­ pruÅ¾nÃ©ho disku %s.\n"
+"\n"
+"ChybovÃ½ kÃ³d %s"
 
 #: gfloppy/src/fdformat.c:194
 msgid "ECould not determine current format type"
-msgstr ""
+msgstr "ENelze urÄit souÄasnÃ½ typ formÃ¡tovÃ¡nÃ­"
 
 #: gfloppy/src/gfloppy.c:164 gfloppy/src/gfloppy.c:197
-#, fuzzy
 msgid "MMaking filesystem on disk..."
-msgstr "MFormátuji disketu..."
+msgstr "MVytvÃ¡Å™Ã­m na disketÄ› souborovÃ½ systÃ©m..."
 
 #: gfloppy/src/gfloppy.c:167
-#, fuzzy
 msgid "EUnable to create filesystem correctly."
-msgstr "K jednotce není pøístup."
+msgstr "ENelze sprÃ¡vnÄ› vytvoÅ™it souborovÃ½ systÃ©m."
 
 #: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
-#, fuzzy
 msgid "MMaking filesystem on disk... Done"
-msgstr "MFormátuji disketu... Hotovo"
+msgstr "MVytvÃ¡Å™Ã­m na disketÄ› souborovÃ½ systÃ©m... Hotovo"
 
 #: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
-#, fuzzy
 msgid "EUnable to create filesystem."
-msgstr "K jednotce není pøístup."
+msgstr "ENelze vytvoÅ™it souborovÃ½ systÃ©m."
 
 #: gfloppy/src/gfloppy.c:209
 msgid "MChecking for bad blocks... (this might take a while)"
-msgstr ""
+msgstr "MHledÃ¡m chybnÃ© bloky... (to mÅ¯Å¾e chvÃ­li trvat)"
 
 #: gfloppy/src/gfloppy2.glade.h:2
 msgid "DOS (fat)"
-msgstr ""
+msgstr "DOS (FAT)"
 
 #: gfloppy/src/gfloppy2.glade.h:3
 msgid "Double Density 3.5\" (720KB)"
-msgstr ""
+msgstr "DvojitÃ¡ hustota 3.5\" (720KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "Double Density 5.25\" (360KB)"
-msgstr ""
+msgstr "DvojitÃ¡ hustota 5.25\" (360KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:5
-#, fuzzy
 msgid "File system _type:"
-msgstr "Typ systému souború:"
+msgstr "_Typ systÃ©mu souborÅ¯:"
 
 #: gfloppy/src/gfloppy2.glade.h:6
-#, fuzzy
 msgid "Floppy _density:"
-msgstr "Hustota diskety:"
+msgstr "Hustota _diskety:"
 
 #: gfloppy/src/gfloppy2.glade.h:7
-#, fuzzy
 msgid "Floppy de_vice:"
-msgstr "Hustota diskety:"
+msgstr "ZaÅ™Ã­zenÃ­ _pruÅ¾nÃ©ho disku:"
 
 #: gfloppy/src/gfloppy2.glade.h:8
-#, fuzzy
 msgid "Format a Floppy"
-msgstr "Formátování disket"
+msgstr "FormÃ¡tovat disketu"
 
 #: gfloppy/src/gfloppy2.glade.h:9
 msgid "High Density 3.5\" (1.44MB)"
-msgstr ""
+msgstr "VysokÃ¡ hustota 3.5\" (1.44MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:10
 msgid "High Density 5.25\" (1.2MB)"
-msgstr ""
+msgstr "VysokÃ¡ hustota 5.25\" (1.2MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:11
 msgid "Linux Native (ext2)"
-msgstr ""
+msgstr "NativnÃ­ Linux (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:12
-#, fuzzy
 msgid "_Format"
-msgstr "Formát"
+msgstr "_FormÃ¡t"
 
 #: gfloppy/src/gfloppy2.glade.h:13
-#, fuzzy
 msgid "_Quick format"
-msgstr "Rychlé zformátování"
+msgstr "_RychlÃ© formÃ¡tovÃ¡nÃ­"
 
 #: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr ""
+msgstr "Nelze otevÅ™Ã­t zaÅ™Ã­zenÃ­ %s, formÃ¡tovÃ¡nÃ­ nemÅ¯Å¾e pokraÄovat."
 
 #: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
@@ -1183,6 +1160,8 @@ msgid ""
 "The device %s is disconnected.\n"
 "Please attach device to continue."
 msgstr ""
+"ZaÅ™Ã­zenÃ­ %s je odpojeno.\n"
+"PÅ™ipojte prosÃ­m zaÅ™Ã­zenÃ­ a pokraÄujte."
 
 #: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
@@ -1191,6 +1170,8 @@ msgid ""
 "be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
+"NemÃ¡te potÅ™ebnÃ¡ prÃ¡va pro zÃ¡pis na %s, formÃ¡tovÃ¡nÃ­ nebude moÅ¾nÃ©.\n"
+"Kontaktujte sprÃ¡vce systÃ©mu a poÅ¾Ã¡dejte jej o prÃ¡va na zÃ¡pis."
 
 #: gfloppy/src/main.c:291
 #, c-format
@@ -1198,26 +1179,28 @@ msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
+"Nelze zobrazit nÃ¡povÄ›du pro formÃ¡tovaÄ disket.\n"
+"%s"
 
 #: gfloppy/src/main.c:359
 msgid "The device to format"
-msgstr "Zaøízení k zformátování"
+msgstr "ZaÅ™Ã­zenÃ­ k formÃ¡tovÃ¡nÃ­"
 
 #: gfloppy/src/main.c:360
 msgid "DEVICE"
-msgstr "ZAØÍZENÍ"
+msgstr "ZAÅ˜ÃZENÃ"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
-msgstr "Disketa ùspì¹nì zformátována."
+msgstr "Disketa ÃºspÄ›Å¡nÄ› zformÃ¡tovÃ¡na."
 
 #: gfloppy/src/progress.c:120
 msgid "Floppy formatting cancelled."
-msgstr "Formátování diskety zru¹eno."
+msgstr "FormÃ¡tovÃ¡nÃ­ diskety zruÅ¡eno."
 
 #: gfloppy/src/progress.c:161
 msgid "Format progress."
-msgstr "Pokrok formátování."
+msgstr "PrÅ¯bÄ›h formÃ¡tovÃ¡nÃ­."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Search for Files"
@@ -1225,97 +1208,87 @@ msgstr "Hledat soubory"
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search your disk for files"
-msgstr "Hledat soubory na Va¹em disku"
+msgstr "Hledat soubory na vaÅ¡em disku"
 
 #: gsearchtool/gsearchtool.c:66
 msgid "File name is"
-msgstr "Jméno souboru je"
+msgstr "NÃ¡zev souboru je"
 
 #: gsearchtool/gsearchtool.c:67
 msgid "File name is not"
-msgstr "Jméno souboru není"
+msgstr "NÃ¡zev souboru nenÃ­"
 
 #: gsearchtool/gsearchtool.c:68
 msgid "Don't search mounted filesystems"
-msgstr "Nehledat na pøipojenıch souborovıch systémech"
+msgstr "Nehledat na pÅ™ipojenÃ½ch souborovÃ½ch systÃ©mech"
 
 #: gsearchtool/gsearchtool.c:69
 msgid "Follow symbolic links"
-msgstr "Sledovat symbolické odkazy"
+msgstr "Sledovat symbolickÃ© odkazy"
 
 #: gsearchtool/gsearchtool.c:70
-#, fuzzy
 msgid "Process folder contents depth first"
-msgstr "Vıchozí adresáø neexistuje"
+msgstr "Zpracovat nejprve hloubku obsahu adresÃ¡Å™e"
 
 #: gsearchtool/gsearchtool.c:71
 msgid "Owned by user"
-msgstr ""
+msgstr "VlastnÄ›no uÅ¾ivatelem"
 
 #: gsearchtool/gsearchtool.c:72
-#, fuzzy
 msgid "Owned by group"
-msgstr "Skupina vlastnící soubor"
+msgstr "VlastnÄ›no skupinou"
 
 #: gsearchtool/gsearchtool.c:73
 msgid "Invalid user or group"
-msgstr "Chybnı u¾ivatel nebo skupina"
+msgstr "ChybnÃ½ uÅ¾ivatel nebo skupina"
 
 #: gsearchtool/gsearchtool.c:74
-#, fuzzy
 msgid "Last time modified"
-msgstr "Èas poslední modifikace"
+msgstr "ÄŒas poslednÃ­ Ãºpravy"
 
 #: gsearchtool/gsearchtool.c:75
-#, fuzzy
 msgid "File is empty"
-msgstr "Soubor `%s' je prázdnı"
+msgstr "Soubor je prÃ¡zdnÃ½"
 
 #: gsearchtool/gsearchtool.c:76
-#, fuzzy
 msgid "Matches regular expression"
-msgstr "Vyhledání podle roz¹íøeného regulárního vırazu"
+msgstr "OdpovÃ­dÃ¡ regulÃ¡rnÃ­mu vÃ½razu"
 
 #: gsearchtool/gsearchtool.c:274 gsearchtool/gsearchtool.c:943
-#, fuzzy
 msgid "Start folder does not exist."
-msgstr "Vıchozí adresáø neexistuje"
+msgstr "PoÄÃ¡teÄnÃ­ adresÃ¡Å™ neexistuje"
 
 #: gsearchtool/gsearchtool.c:499
 msgid "today at %-I:%M %p"
-msgstr ""
+msgstr "dnes v %-I:%M %p"
 
 #: gsearchtool/gsearchtool.c:501
 msgid "yesterday at %-I:%M %p"
-msgstr ""
+msgstr "vÄera v %-I:%M %p"
 
 #: gsearchtool/gsearchtool.c:503 gsearchtool/gsearchtool.c:505
 msgid "%m/%-d/%y, %-I:%M %p"
-msgstr ""
+msgstr "%m/%-d/%y, %-I:%M %p"
 
 #: gsearchtool/gsearchtool.c:518
 msgid "%Y%m%d%H%M%S"
-msgstr ""
+msgstr "%Y%m%d%H%M%S"
 
 #: gsearchtool/gsearchtool.c:533
-#, fuzzy
 msgid "folder"
-msgstr "Plné"
+msgstr "adresÃ¡Å™"
 
 #: gsearchtool/gsearchtool.c:535
-#, fuzzy
 msgid "program"
-msgstr "Uknoèit program"
+msgstr "program"
 
 #: gsearchtool/gsearchtool.c:537
-#, fuzzy
 msgid "symbolic link"
-msgstr "Sledovat symbolické odkazy"
+msgstr "symbolickÃ½ odkaz"
 
 #: gsearchtool/gsearchtool.c:663
-#, fuzzy
 msgid "No Files Found."
-msgstr "Nic nenalezeno"
+msgstr "Nenalezeny Å¾Ã¡dnÃ© soubory."
 
 #: gsearchtool/gsearchtool.c:736
 msgid ""
@@ -1323,10 +1296,13 @@ msgid ""
 "The Bourne shell was not found\n"
 "It is typically installed as /bin/sh or /usr/bin/sh."
 msgstr ""
+"Nelze provÃ©st hledÃ¡nÃ­.\n"
+"Nebyl nalezen Bourne shell.\n"
+"BÄ›Å¾nÄ› bÃ½vÃ¡ nainstalovÃ¡n jako /bin/sh nebo /usr/bin/sh."
 
 #: gsearchtool/gsearchtool.c:752
 msgid "Searching..."
-msgstr "Hledání..."
+msgstr "HledÃ¡nÃ­..."
 
 #: gsearchtool/gsearchtool.c:866
 msgid ""
@@ -1334,42 +1310,42 @@ msgid ""
 "... Too many errors to display ..."
 msgstr ""
 "\n"
-"... Pøíli¹ mnoho chyb ..."
+"... PÅ™Ã­liÅ¡ mnoho chyb k zobrazenÃ­ ..."
 
 #: gsearchtool/gsearchtool.c:877
 msgid "No files found"
-msgstr "Nic nenalezeno"
+msgstr "Nenalezeny Å¾Ã¡dnÃ© soubory"
 
 #: gsearchtool/gsearchtool.c:880
 msgid "One file found"
-msgstr "Jeden soubor nalezen"
+msgstr "Nalezen jeden soubor"
 
 #: gsearchtool/gsearchtool.c:882
 #, c-format
 msgid "%d files found"
-msgstr "%d souborù nalezeno"
+msgstr "Nalezeno %d souborÅ¯"
 
 #: gsearchtool/gsearchtool.c:954 gsearchtool/gsearchtool.c:1671
 msgid "Cannot perform the search. Please specify a search criteria."
-msgstr ""
+msgstr "Nelze provÃ©st hledÃ¡nÃ­. Zadejte prosÃ­m kritÃ©ria hledÃ¡nÃ­."
 
 #: gsearchtool/gsearchtool.c:971 gsearchtool/gsearchtool.c:1692
 msgid ""
 "A search is already running.  Please wait for the search to complete or "
 "cancel it."
-msgstr ""
+msgstr "HledÃ¡nÃ­ jiÅ¾ probÃ­hÃ¡. PoÄkejte prosÃ­m, dokud hledÃ¡nÃ­ neskonÄÃ­, nebo jej zruÅ¡te."
 
 #: gsearchtool/gsearchtool.c:1005
 msgid "Start folder does not exist"
-msgstr "Vıchozí adresáø neexistuje"
+msgstr "PoÄÃ¡teÄnÃ­ adresÃ¡Å™ neexistuje"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
-msgstr ""
+msgstr "Nelze ukÃ¡zat pÅ™Ã­kazovÃ½ Å™Ã¡dek pro hledÃ¡nÃ­. Zadejte prosÃ­m kritÃ©ria hledÃ¡nÃ­."
 
 #: gsearchtool/gsearchtool.c:1024
 msgid "Search Command Line"
-msgstr "Pøíkazová øádka hledání"
+msgstr "PÅ™Ã­kazovÃ¡ Å™Ã¡dka hledÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:1042
 msgid ""
@@ -1378,112 +1354,108 @@ msgid ""
 "\n"
 "C_ommand:"
 msgstr ""
+"Toto je pÅ™Ã­kazovÃ½ Å™Ã¡dek, kterÃ½ lze pouÅ¾Ã­t pro spuÅ¡tÄ›nÃ­ tohoto hledÃ¡nÃ­ \n"
+"z pÅ™Ã­kazovÃ© Å™Ã¡dky konzole.\n"
+"\n"
+"_PÅ™Ã­kaz:"
 
 #: gsearchtool/gsearchtool.c:1063
 msgid "Command"
-msgstr "Pøíkaz"
+msgstr "PÅ™Ã­kaz"
 
 #: gsearchtool/gsearchtool.c:1064
-#, fuzzy
 msgid "Command Line Entry"
-msgstr "Pøíkazová øádka"
+msgstr "PolÃ­Äko pÅ™Ã­kazovÃ© Å™Ã¡dky"
 
 #: gsearchtool/gsearchtool.c:1064
 msgid "Use this command line to execute the search from console"
-msgstr ""
+msgstr "PouÅ¾ijte tento pÅ™Ã­kazovÃ½ Å™Ã¡dek ke spuÅ¡tÄ›nÃ­ hledÃ¡nÃ­ z konzole"
 
 #: gsearchtool/gsearchtool.c:1172
-#, fuzzy
 msgid "No viewer available for this mime type."
-msgstr "Pro tento systém souborù nelze zjistit informace."
+msgstr "Pro tento typ souboru nenÃ­ k dispozici Å¾Ã¡dnÃ½ prohlÃ­Å¾eÄ."
 
 #: gsearchtool/gsearchtool.c:1269
 msgid "Entry changed called for a non entry option!"
-msgstr ""
+msgstr "SignÃ¡l zmÄ›ny polÃ­Äka volÃ¡n pro volbu bez polÃ­Äka!"
 
 #: gsearchtool/gsearchtool.c:1339
 msgid "Search Rule Value Entry"
-msgstr ""
+msgstr "PolÃ­Äko pro hodnotu s vyhledÃ¡vacÃ­m pravidlem"
 
 #: gsearchtool/gsearchtool.c:1339
 msgid "Enter a value for search rule"
-msgstr ""
+msgstr "Zadejte hodnotu pro vyhledÃ¡vacÃ­ pravidlo"
 
 #: gsearchtool/gsearchtool.c:1354
 msgid "Enabled"
-msgstr "Aktivní"
+msgstr "Zapnuto"
 
 #: gsearchtool/gsearchtool.c:1362
 msgid "Toggle On/Off to enable/disable the rule"
-msgstr ""
+msgstr "PÅ™epnÄ›te Zapnuto/Vypnuto, chcete-li zapnout nebo vypnout pravidlo"
 
 #: gsearchtool/gsearchtool.c:1370
 msgid "Click to Remove the Rule"
-msgstr ""
+msgstr "KliknutÃ­m zde odstranÃ­te pravidlo"
 
 #: gsearchtool/gsearchtool.c:1416 gsearchtool/gsearchtool.c:1794
 msgid "S_tarting in folder:"
-msgstr "Zaèí_t v adresáøi:"
+msgstr "ZaÄÃ­_t v adresÃ¡Å™i:"
 
 #: gsearchtool/gsearchtool.c:1420 gsearchtool/gsearchtool.c:1800
 msgid "Browse"
-msgstr "Probírat"
+msgstr "ProbÃ­rat"
 
 #: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
 #: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
-#, fuzzy
 msgid "Starting folder entry"
-msgstr "Øetìzec nenalezen"
+msgstr "PolÃ­Äko poÄÃ¡teÄnÃ­ho adresÃ¡Å™e"
 
 #: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
 #: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
 msgid "Enter the folder name where you want to start the search"
-msgstr ""
+msgstr "Zadejte nÃ¡zev adresÃ¡Å™e, kde chcete zapoÄÃ­t vyhledÃ¡vÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:1450
 msgid "Rules:"
-msgstr ""
+msgstr "Pravidla:"
 
 #: gsearchtool/gsearchtool.c:1470
 msgid "A_dd Rule:"
-msgstr ""
+msgstr "PÅ™i_dat pravidlo:"
 
 #: gsearchtool/gsearchtool.c:1479
-#, fuzzy
 msgid "Search Rules Menu"
-msgstr "Vısledky hledání"
+msgstr "Menu pro vyhledÃ¡vacÃ­ pravidla"
 
 #: gsearchtool/gsearchtool.c:1479
-#, fuzzy
 msgid "Select a search rule from the menu"
-msgstr "Vytvoøit novı archív z polo¾ek"
+msgstr "Vyberte z menu vyhledÃ¡vacÃ­ pravidlo"
 
 #: gsearchtool/gsearchtool.c:1522
 msgid "Click to Add a Rule"
-msgstr ""
+msgstr "KliknutÃ­m zde pÅ™idÃ¡te pravidlo"
 
 #: gsearchtool/gsearchtool.c:1523
-#, fuzzy
 msgid "Click to Start the Search"
-msgstr "Zaèít v adresáøi:"
+msgstr "KliknutÃ­m zde zapoÄnete hledÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:1524
-#, fuzzy
 msgid "Click to Stop the Search"
-msgstr "Zaèít v adresáøi:"
+msgstr "KliknutÃ­m zde zastavÃ­te hledÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:1529 gsearchtool/gsearchtool.c:1861
-#, fuzzy
 msgid "S_earch Results"
-msgstr "Vısledky hledání"
+msgstr "VÃ½sl_edky hledÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:1569 gsearchtool/gsearchtool.c:1901
 msgid "Name"
-msgstr "Jméno"
+msgstr "NÃ¡zev"
 
 #: gsearchtool/gsearchtool.c:1591 gsearchtool/gsearchtool.c:1923
 msgid "Folder"
-msgstr "Adresáø"
+msgstr "AdresÃ¡Å™"
 
 #: gsearchtool/gsearchtool.c:1603 gsearchtool/gsearchtool.c:1935
 msgid "Size"
@@ -1495,95 +1467,89 @@ msgstr "Typ"
 
 #: gsearchtool/gsearchtool.c:1626 gsearchtool/gsearchtool.c:1958
 msgid "Date Modified"
-msgstr "Datum zmìny"
+msgstr "Datum zmÄ›ny"
 
 #: gsearchtool/gsearchtool.c:1770
 msgid "Find files _named:"
-msgstr "Najít soubory _jménem:"
+msgstr "NajÃ­t soubory s _nÃ¡zvem:"
 
 #: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
-#, fuzzy
 msgid "File Name Entry"
-msgstr "Jméno souboru : "
+msgstr "PolÃ­Äko s nÃ¡zvem souboru"
 
 #: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
 msgid "Enter the file name you want to search"
-msgstr ""
+msgstr "Zadejte nÃ¡zev souboru, kterÃ½ chcete hledat"
 
 #: gsearchtool/gsearchtool.c:1855
-#, fuzzy
 msgid "Click to Start the search"
-msgstr "Hledání"
+msgstr "KliknutÃ­m zde zapoÄnete hledÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:1856
-#, fuzzy
 msgid "Click to Stop the search"
-msgstr "Zaèít v adresáøi:"
+msgstr "KliknutÃ­m zde zastavÃ­te hledÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:1978
-#, fuzzy
 msgid "Simple"
-msgstr "Velikost"
+msgstr "JednoduchÃ©"
 
 #: gsearchtool/gsearchtool.c:1980
-#, fuzzy
 msgid "Advanced"
-msgstr "Pokroèilé"
+msgstr "PokroÄilÃ©"
 
 #: gsearchtool/gsearchtool.c:2018
 #: gsearchtool/help/es/gsearchtool.desktop.in.h:1
 msgid "GNOME Search Tool"
-msgstr "Vyhledávací nástroj GNOME"
+msgstr "VyhledÃ¡vacÃ­ nÃ¡stroj GNOME"
 
 #: gsearchtool/gsearchtool.c:2019
 msgid "(C) 1998,2002 the Free Software Foundation"
-msgstr "(C) 1998,2002 Nadace free softwéru"
+msgstr "(C) 1998, 2002 Nadace pro volnÄ› Å¡iÅ™itelnÃ½ software"
 
 #: gsearchtool/gsearchtool.c:2020
 msgid "Frontend to the unix find/locate commands"
-msgstr ""
+msgstr "RozhranÃ­ pro pÅ™Ã­kazy Unixu find a locate"
 
 #: gsearchtool/gsearchtool.c:2060
 #, c-format
 msgid "File %s already exists. Overwrite?"
-msgstr "Soubor %s ji¾ existuje. Pøepsat?"
+msgstr "Soubor %s jiÅ¾ existuje. PÅ™epsat?"
 
 #: gsearchtool/gsearchtool.c:2095
 msgid "Cannot save the results file."
-msgstr "Nelze zapsat soubor vısledkù."
+msgstr "Nelze zapsat soubor vÃ½sledkÅ¯."
 
 #: gsearchtool/gsearchtool.c:2102 meat-grinder/meat-grinder.c:654
 msgid "Save Results"
-msgstr "Ulo¾it vısledky"
+msgstr "UloÅ¾it vÃ½sledky"
 
 #: gsearchtool/gsearchtool.c:2159
 msgid "S_how Command..."
-msgstr "_Ukázat pøíkaz..."
+msgstr "_UkÃ¡zat pÅ™Ã­kaz..."
 
 #: gsearchtool/gsearchtool.c:2160
 msgid "Show the command used to perform the search"
-msgstr ""
+msgstr "UkÃ¡zat pÅ™Ã­kaz, pomocÃ­ kterÃ©ho je provÃ¡dÄ›no vyhledÃ¡vÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:2163
 msgid "Save Results _As..."
-msgstr "Ulo¾it vısledky _jako..."
+msgstr "UloÅ¾it vÃ½sledky j_ako..."
 
 #: gsearchtool/gsearchtool.c:2164
-#, fuzzy
 msgid "Save the search results"
-msgstr "Vısledky hledání"
+msgstr "UloÅ¾Ã­ vÃ½sledky hledÃ¡nÃ­"
 
 #: gsearchtool/gsearchtool.c:2179
 msgid "Sear_ch"
-msgstr "H_ledání"
+msgstr "H_ledat"
 
 #: gsearchtool/gsearchtool.c:2201
 msgid "Cannot initialize bonobo."
-msgstr ""
+msgstr "Nelze inicializovat rozhranÃ­ bonobo."
 
 #: gsearchtool/gsearchtool.c:2205
 msgid "Search Tool"
-msgstr "Vyhledávací nástroj"
+msgstr "VyhledÃ¡vacÃ­ nÃ¡stroj"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -1596,11 +1562,15 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
+"Tento program je souÄÃ¡stÃ­ projektu GNOME pro Linux. Program Logview je "
+"dodÃ¡vÃ¡n ABSOLUTNÄš BEZ ZÃRUK. Toto je volnÄ› Å¡iÅ™itelnÃ½ software, a uvÃ­tÃ¡me, "
+"pokud jej budete Å¡Ã­Å™it za podmÃ­nek licence GNU General Public Licence. Ikona "
+"zÃ¡znamnÃ­ku pochÃ¡zÃ­ od Tuomase Kuosmanena (alias tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:72
 msgid "GNOME System Log Viewer"
-msgstr "GNOME Prohlí¾eè systémovıch souborù záznamù"
+msgstr "ProhlÃ­Å¾eÄ systÃ©movÃ½ch zÃ¡znamÅ¯ GNOME"
 
 #: logview/about.c:73
 msgid "Copyright (C) 1998"
@@ -1608,77 +1578,73 @@ msgstr "Copyright (C) 1998"
 
 #: logview/actions.c:75
 msgid "Action database"
-msgstr "Databáze akcí"
+msgstr "DatabÃ¡ze akcÃ­"
 
 #: logview/actions.c:85
 msgid "Actions"
 msgstr "Akce"
 
 #: logview/actions.c:153
-#, fuzzy
 msgid "_Add"
-msgstr "Pøidat"
+msgstr "PÅ™id_at"
 
 #: logview/actions.c:160
-#, fuzzy
 msgid "_Edit"
-msgstr "Upravit"
+msgstr "U_pravit"
 
 #: logview/actions.c:167 meat-grinder/meat-grinder.c:941
-#, fuzzy
 msgid "_Remove"
-msgstr "Zru¹it"
+msgstr "Odst_ranit"
 
 #: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
-msgstr ""
+msgstr "Nelze otevÅ™Ã­t databÃ¡zi akcÃ­ <%s>! OtevÅ™enÃ­ selhalo."
 
 #: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
 #: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
-msgstr "Chyba pøi zpracování databáze akcí"
+msgstr "Chyba pÅ™i zpracovÃ¡nÃ­ databÃ¡ze akcÃ­"
 
 #: logview/actions.c:386
 msgid "Can't write to actions database!"
-msgstr "Nepodaøilo se zapsat databázi akcí"
+msgstr "Nelze zapsat do databÃ¡ze akcÃ­!"
 
 #: logview/actions.c:486
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "Chyba pÅ™i spuÅ¡tÄ›nÃ­ zadanÃ© akce"
 
 #: logview/actions.c:507
 msgid "<empty>"
-msgstr "<prázdnı>"
+msgstr "<prÃ¡zdnÃ½>"
 
 #: logview/actions.c:508
 msgid "log name regexp"
-msgstr "reg vıraz pro jméno záznamu"
+msgstr "reg. vÃ½raz pro nÃ¡zev zÃ¡znamu"
 
 #: logview/actions.c:509
 msgid "process regexp"
-msgstr "reg vıraz pro proces"
+msgstr "reg. vÃ½raz pro proces"
 
 #: logview/actions.c:510
 msgid "message regexp"
-msgstr "reg vıraz pro zrpávu"
+msgstr "reg. vÃ½raz pro zprÃ¡vu"
 
 #: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
-msgstr "akci kterou vykonat kdyz reg vırazy platí"
+msgstr "akce, kterou provÃ©st kdyÅ¾ reg. vÃ½razy platÃ­"
 
 #: logview/actions.c:512
 msgid "description"
 msgstr "popis"
 
 #: logview/actions.c:772
-#, fuzzy
 msgid "_Description:"
-msgstr "Popis:"
+msgstr "_Popis:"
 
 #: logview/actions.c:781
 msgid "Description of this entry."
-msgstr "Popis tohoto záznamu"
+msgstr "Popis tÃ©to poloÅ¾ky."
 
 #: logview/actions.c:805
 #, c-format
@@ -1690,10 +1656,16 @@ msgid ""
 "description: [%s]\n"
 "action: [%s]\n"
 msgstr ""
+"znaÄka: [%s]\n"
+"nÃ¡zev_zÃ¡znamu: [%s]\n"
+"proces: [%s]\n"
+"zprÃ¡va: [%s]\n"
+"popis: [%s]\n"
+"akce: [%s]\n"
 
 #: logview/calendar.c:112
 msgid "Calendar"
-msgstr "Kalendáø"
+msgstr "KalendÃ¡Å™"
 
 #.
 #. * 	-------------------
@@ -1702,58 +1674,58 @@ msgstr "Kalendáø"
 #.
 #: logview/config.c:34
 msgid "fixed 12"
-msgstr ""
+msgstr "fixed 12"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:36
 msgid "fixed Bold 12"
-msgstr ""
+msgstr "fixed Bold 12"
 
 #: logview/config.c:37
 msgid "fixed 10"
-msgstr ""
+msgstr "fixed 10"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:39
 msgid "fixed Bold 8"
-msgstr ""
+msgstr "fixed Bold 8"
 
 #. Translators: translate to fonts that appear well in the log viewer,
 #. * for example for asian languages, helvetica seems not to work
 #. * well for those
 #: logview/config.c:44
 msgid "Helvetica 14"
-msgstr ""
+msgstr "Helvetica 14"
 
 #: logview/config.c:45
 msgid "Helvetica Bold 14"
-msgstr ""
+msgstr "Helvetica Bold 14"
 
 #: logview/config.c:46
 msgid "Helvetica 12"
-msgstr ""
+msgstr "Helvetica 12"
 
 #: logview/config.c:47
 msgid "Helvetica Bold 12"
-msgstr ""
+msgstr "Helvetica Bold 12"
 
 #: logview/config.c:48
 msgid "Helvetica 10"
-msgstr ""
+msgstr "Helvetica 10"
 
 #: logview/config.c:49
 msgid "Helvetica Bold 10"
-msgstr ""
+msgstr "Helvetica Bold 10"
 
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr ""
+msgstr "Nelze otevÅ™Ã­t databÃ¡zi reg. vÃ½razÅ¯ <%s>! OtevÅ™enÃ­ selhalo."
 
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr ""
+msgstr "Nelze otevÅ™Ã­t databÃ¡zi popisÅ¯ <%s>! OtevÅ™enÃ­ selhalo."
 
 #. ----------------------------------------------------------------------
 #. NAME:
@@ -1761,15 +1733,15 @@ msgstr ""
 #. ----------------------------------------------------------------------
 #: logview/gnome-system-log.desktop.in.h:1
 msgid "System Log"
-msgstr "Systémovı soubor záznamù"
+msgstr "SystÃ©movÃ½ soubor zÃ¡znamÅ¯"
 
 #: logview/gnome-system-log.desktop.in.h:2
 msgid "View the system log file"
-msgstr "Prohlí¾et systémovı soubor záznamù"
+msgstr "ProhlÃ­Å¾et systÃ©movÃ½ soubor zÃ¡znamÅ¯"
 
 #: logview/info.c:80
 msgid "Log stats"
-msgstr "Statistika zaznamù"
+msgstr "Statistika zÃ¡znamÅ¯"
 
 #. Note: we use a real translated string that will appear below to gather
 #. * the length, that way we'll get semi correct results with a lot more
@@ -1781,7 +1753,7 @@ msgstr "Datum:"
 
 #: logview/info.c:204
 msgid "Log information"
-msgstr "Informace o souboru záznamù"
+msgstr "Informace o souboru zÃ¡znamÅ¯"
 
 #: logview/info.c:232
 msgid "Log:"
@@ -1789,28 +1761,28 @@ msgstr "Soubor:"
 
 #: logview/info.c:235
 msgid "Size:"
-msgstr "Velikost"
+msgstr "Velikost:"
 
 #: logview/info.c:238
 msgid "Modified:"
-msgstr "Zmìna:"
+msgstr "ZmÄ›na:"
 
 #: logview/info.c:241
 msgid "Start date:"
-msgstr "Vıchozí datum:"
+msgstr "PoÄÃ¡teÄnÃ­ datum:"
 
 #: logview/info.c:244
 msgid "Last date:"
-msgstr "Koneèné datum:"
+msgstr "KoneÄnÃ© datum:"
 
 #: logview/info.c:247
 msgid "Num. lines:"
-msgstr "Poèet linek:"
+msgstr "PoÄet Å™Ã¡dkÅ¯:"
 
 #: logview/info.c:265
 #, c-format
 msgid "%ld bytes"
-msgstr "%ld bajtù"
+msgstr "%ld bajtÅ¯"
 
 #: logview/log_repaint.c:84
 msgid "January"
@@ -1818,11 +1790,11 @@ msgstr "Leden"
 
 #: logview/log_repaint.c:84
 msgid "February"
-msgstr "Únor"
+msgstr "Ãšnor"
 
 #: logview/log_repaint.c:84
 msgid "March"
-msgstr "Bøezen"
+msgstr "BÅ™ezen"
 
 #: logview/log_repaint.c:84
 msgid "April"
@@ -1830,15 +1802,15 @@ msgstr "Duben"
 
 #: logview/log_repaint.c:84
 msgid "May"
-msgstr "Kvìten"
+msgstr "KvÄ›ten"
 
 #: logview/log_repaint.c:85
 msgid "June"
-msgstr "Èerven"
+msgstr "ÄŒerven"
 
 #: logview/log_repaint.c:85
 msgid "July"
-msgstr "Èervenec"
+msgstr "ÄŒervenec"
 
 #: logview/log_repaint.c:85
 msgid "August"
@@ -1846,11 +1818,11 @@ msgstr "Srpen"
 
 #: logview/log_repaint.c:85
 msgid "September"
-msgstr "Záøí"
+msgstr "ZÃ¡Å™Ã­"
 
 #: logview/log_repaint.c:85
 msgid "October"
-msgstr "Øíjen"
+msgstr "Å˜Ã­jen"
 
 #: logview/log_repaint.c:86
 msgid "November"
@@ -1880,20 +1852,20 @@ msgstr "%e. %B"
 
 #: logview/logrtns.c:206
 msgid "Not enough memory!\n"
-msgstr "Nedostatek pamìti!\n"
+msgstr "Nedostatek pamÄ›ti!\n"
 
 #: logview/logrtns.c:214
 msgid "Out of memory!\n"
-msgstr "Do¹la mi pamìt!\n"
+msgstr "DoÅ¡la pamÄ›Å¥!\n"
 
 #: logview/logrtns.c:240
 msgid "Unable to open logfile!\n"
-msgstr "Soubor záznamù nelze otevøít!\n"
+msgstr "Soubor zÃ¡znamÅ¯ nelze otevÅ™Ã­t!\n"
 
 #: logview/logrtns.c:295
 #, c-format
 msgid "%s is not a regular file."
-msgstr "%s není normální soubor."
+msgstr "%s nenÃ­ normÃ¡lnÃ­ soubor."
 
 #: logview/logrtns.c:303
 #, c-format
@@ -1901,68 +1873,62 @@ msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file."
 msgstr ""
+"Soubor %s nenÃ­ pro uÅ¾ivatele ÄitelnÃ½. BuÄ tento program spusÅ¥te jako uÅ¾ivatel root, "
+"nebo poÅ¾Ã¡dejte sprÃ¡vce systÃ©mu, aby zmÄ›nil pÅ™Ã­stupovÃ¡ prÃ¡va k tomuto souboru."
 
 #: logview/logrtns.c:320
 #, c-format
 msgid "%s could not be opened."
-msgstr "%s nelze otevøít."
+msgstr "Soubor %s nelze otevÅ™Ã­t."
 
 #: logview/logrtns.c:350 logview/logrtns.c:359
 #, c-format
 msgid "%s not a log file."
-msgstr "%s není soubor záznamù."
+msgstr "Soubor %s nenÃ­ souborem zÃ¡znamÅ¯."
 
 #: logview/logrtns.c:792 logview/logrtns.c:823 logview/logrtns.c:954
 msgid "ReadLogStats: out of memory"
-msgstr ""
+msgstr "ReadLogStats: nedostatek pamÄ›ti"
 
 #: logview/logview.c:95
-#, fuzzy
 msgid "S_witch Log"
-msgstr "Pøepnout soubor záznamù"
+msgstr "_PÅ™epnout soubor zÃ¡znamÅ¯"
 
 #: logview/logview.c:96
 msgid "Switch log"
-msgstr "Pøepnout soubor záznamù"
+msgstr "PÅ™epnout soubor zÃ¡znamÅ¯"
 
 #: logview/logview.c:98
-#, fuzzy
 msgid "_Monitor..."
-msgstr "Monitorovat..."
+msgstr "_Sledovat..."
 
 #: logview/logview.c:99
-#, fuzzy
 msgid "Monitor Log"
-msgstr "Monitorovat soubor záznamù"
+msgstr "Sledovat soubor zÃ¡znamÅ¯"
 
 #: logview/logview.c:102
-#, fuzzy
 msgid "_Properties"
-msgstr "Vlastnosti"
+msgstr "_Vlastnosti"
 
 #: logview/logview.c:103
-#, fuzzy
 msgid "Show Log Properties"
-msgstr "Ukazovat 'Vlastnosti'"
+msgstr "UkÃ¡zat vlastnosti souboru se zÃ¡znamy"
 
 #: logview/logview.c:112
-#, fuzzy
 msgid "_Calendar"
-msgstr "Kalendáø"
+msgstr "_KalendÃ¡Å™"
 
 #: logview/logview.c:112
-#, fuzzy
 msgid "Show Calendar Log"
-msgstr "Kalendáø"
+msgstr "UkÃ¡zat zÃ¡znamy z kalendÃ¡Å™e"
 
 #: logview/logview.c:114
-#, fuzzy
 msgid "_Entry Detail"
-msgstr "Polo¾ka Start:"
+msgstr "D_etaily poloÅ¾ky"
 
 #: logview/logview.c:114
 msgid "Show Entry Detail"
-msgstr ""
+msgstr "UkÃ¡zat podrobnosti poloÅ¾ky"
 
 #: logview/logview.c:122
 msgid "About..."
@@ -1970,47 +1936,44 @@ msgstr "O programu..."
 
 #: logview/logview.c:123
 msgid "Info about logview"
-msgstr "Informace o logview"
+msgstr "Informace o programu logview"
 
 #: logview/logview.c:130
-#, fuzzy
 msgid "_Log"
-msgstr "Soubor:"
+msgstr "S_oubor"
 
 #: logview/logview.c:334
-#, fuzzy
 msgid "No log files to open"
-msgstr "Soubor s logem nebyl nalezen"
+msgstr "Å½Ã¡dnÃ© soubory se zÃ¡znamy k otevÅ™enÃ­"
 
 #. Create App
 #: logview/logview.c:354
 msgid "System Log Viewer"
-msgstr "Prohlí¾eè systémovıch souborù záznamù"
+msgstr "ProhlÃ­Å¾eÄ systÃ©movÃ½ch zÃ¡znamÅ¯"
 
 #: logview/logview.c:452
 msgid "Filename: "
-msgstr "Jméno souboru: "
+msgstr "NÃ¡zev souboru: "
 
 #: logview/logview.c:473
-#, fuzzy
 msgid "Last Modified: "
-msgstr "Zmìna:"
+msgstr "PoslednÃ­ zmÄ›na: "
 
 #: logview/logview.c:722 logview/logview.c:788
 msgid "Too many open logs. Close one and try again"
-msgstr ""
+msgstr "PÅ™Ã­liÅ¡ mnoho otevÅ™enÃ½ch souborÅ¯ se zÃ¡znamy. ZavÅ™ete nÄ›jakÃ½ a zkuste to znovu."
 
 #: logview/logview.c:734
 msgid "File already opened"
-msgstr ""
+msgstr "Soubor je jiÅ¾ otevÅ™en"
 
 #: logview/logview.c:801
 msgid "Open new logfile"
-msgstr "Otevøít novı záznam"
+msgstr "OtevÅ™Ã­t novÃ½ soubor"
 
 #: logview/misc.c:56
 msgid "Cannot load required fonts, cannot continue"
-msgstr ""
+msgstr "Nelze nahrÃ¡t poÅ¾adovanÃ¡ pÃ­sma, nelze pokraÄovat"
 
 #: logview/misc.c:91
 #, c-format
@@ -2019,21 +1982,21 @@ msgstr "Chyba: [%s]\n"
 
 #: logview/monitor.c:115
 msgid "Monitor options"
-msgstr "Mo¾nosti monitoru"
+msgstr "MoÅ¾nosti sledovÃ¡nÃ­"
 
 #: logview/monitor.c:125
 msgid "Choose logs to monitor"
-msgstr ""
+msgstr "Vyberte soubory se zÃ¡znamy, kterÃ© chcete sledovat"
 
 #. Arrowed buttons
 #: logview/monitor.c:169
 msgid "Add >>"
-msgstr "Pøidat >>"
+msgstr "PÅ™idat >>"
 
 #. Remove button
 #: logview/monitor.c:177
 msgid "Remove <<"
-msgstr "Zru¹it <<"
+msgstr "Odebrat <<"
 
 #. Check boxes
 #: logview/monitor.c:215
@@ -2052,6 +2015,8 @@ msgstr "Akce..."
 #: logview/monitor.c:286
 msgid "Too many logs to monitor. Remove one and try again"
 msgstr ""
+"PÅ™Ã­liÅ¡ mnoho souborÅ¯ se zÃ¡znamy ke sledovÃ¡nÃ­. Odeberte prosÃ­m nÄ›jakÃ½ a zkuste "
+"to znovu."
 
 #: logview/monitor.c:294 logview/monitor.c:332
 msgid "tmp_list is NULL\n"
@@ -2059,15 +2024,15 @@ msgstr "tmp_list je NULL\n"
 
 #: logview/monitor.c:452
 msgid "Monitoring logs..."
-msgstr "Monitoruji soubory záznamù..."
+msgstr "Sleduji soubory zÃ¡znamÅ¯..."
 
 #: logview/monitor.c:673
 msgid "TOUCHED!!\n"
-msgstr "DOTKNUT!!\n"
+msgstr "DOTÄŒEN!!\n"
 
 #: logview/userprefsdialog.c:65
 msgid "hostname column width ( 0 to hide this column ): "
-msgstr ""
+msgstr "Å¡Ã­Å™ka sloupce s nÃ¡zvem poÄÃ­taÄe (0 sloupec schovÃ¡): "
 
 #: logview/userprefsdialog.c:66
 msgid "Columns"
@@ -2075,16 +2040,16 @@ msgstr "Sloupce"
 
 #: logview/zoom.c:79
 msgid "Zoom view"
-msgstr "Bli¾¹í pohled"
+msgstr "BliÅ¾Å¡Ã­ pohled"
 
 #: logview/zoom.c:233
 #, c-format
 msgid "Log line detail for %s"
-msgstr ""
+msgstr "Podrobnosti Å™Ã¡dku zÃ¡znamu pro %s"
 
 #: logview/zoom.c:236
 msgid "Log line detail for <No log loaded>"
-msgstr ""
+msgstr "Podrobnosti Å™Ã¡dku zÃ¡znamu pro <NenÃ­ naÄten soubor se zÃ¡znamem>"
 
 #: logview/zoom.c:275
 msgid "Process:"
@@ -2092,7 +2057,7 @@ msgstr "Proces:"
 
 #: logview/zoom.c:278
 msgid "Message:"
-msgstr "Zpráva:"
+msgstr "ZprÃ¡va:"
 
 #: logview/zoom.c:281
 msgid "Description:"
@@ -2105,11 +2070,11 @@ msgstr "%e. %B %X"
 
 #: meat-grinder/archive-generator.desktop.in.h:1
 msgid "Archive Generator"
-msgstr "Generátor archívù"
+msgstr "GenerÃ¡tor archÃ­vÅ¯"
 
 #: meat-grinder/archive-generator.desktop.in.h:2
 msgid "Create compressed archives containing many files"
-msgstr "Vytváøení zkompresovanıch archívù mnoha souborù"
+msgstr "VytvÃ¡Å™enÃ­ komprimovanÃ½ch archÃ­vÅ¯ s mnoha soubory"
 
 #: meat-grinder/meat-grinder.c:137
 #, c-format
@@ -2117,24 +2082,26 @@ msgid ""
 "Number of files: %d\n"
 "Number of folders: %d"
 msgstr ""
-"Poèet souborù: %d\n"
-"Poèet adresáøù: %d"
+"PoÄet souborÅ¯: %d\n"
+"PoÄet adresÃ¡Å™Å¯: %d"
 
 #: meat-grinder/meat-grinder.c:143
 msgid ""
 "No files or folders, drop files or folders\n"
 "above to add them to the archive"
 msgstr ""
+"Å½Ã¡dnÃ© adresÃ¡Å™e nebo soubory, pÅ™etÃ¡hnutÃ­m souborÅ¯\n"
+"nebo adresÃ¡Å™Å¯ seshora je pÅ™idÃ¡te do archÃ­vu"
 
 #: meat-grinder/meat-grinder.c:166
 #, c-format
 msgid "%s removed"
-msgstr "%s odstranìn"
+msgstr "%s odstranÄ›n"
 
 #: meat-grinder/meat-grinder.c:328 meat-grinder/meat-grinder.c:333
 #, fuzzy, c-format
 msgid "Failed to create %s"
-msgstr "Nelze vytvoøit %s"
+msgstr "Nelze vytvoÅ™it %s"
 
 #: meat-grinder/meat-grinder.c:373
 msgid "Archive.tar.gz"
@@ -2142,41 +2109,41 @@ msgstr "Archiv.tar.gz"
 
 #: meat-grinder/meat-grinder.c:493 meat-grinder/meat-grinder.c:977
 msgid "GNOME Archive Generator"
-msgstr "Generátor archívù pro GNOME"
+msgstr "GenerÃ¡tor archÃ­vÅ¯ pro GNOME"
 
 #: meat-grinder/meat-grinder.c:495
 msgid "Drag files in to make archives"
-msgstr ""
+msgstr "VytvoÅ™te archÃ­v pÅ™etaÅ¾enÃ­m souborÅ¯ dovnitÅ™"
 
 #: meat-grinder/meat-grinder.c:528
 msgid "All files selected"
-msgstr "V¹echny soubory vybrány"
+msgstr "VÅ¡echny soubory vybrÃ¡ny"
 
 #: meat-grinder/meat-grinder.c:547
 msgid "All files removed"
-msgstr ""
+msgstr "VÅ¡echny soubory odstranÄ›ny"
 
 #: meat-grinder/meat-grinder.c:609 meat-grinder/meat-grinder.c:793
 msgid "No filename selected"
-msgstr "®ádnı soubor nebyl vybrán"
+msgstr "Å½Ã¡dnÃ½ soubor nebyl vybrÃ¡n"
 
 #: meat-grinder/meat-grinder.c:613
 msgid "File exists, overwrite?"
-msgstr "Soubor ji¾ existuje, pøepsat?"
+msgstr "Soubor jiÅ¾ existuje, pÅ™epsat?"
 
 #: meat-grinder/meat-grinder.c:636
 #, c-format
 msgid "%s created"
-msgstr ""
+msgstr "%s vytvoÅ™en"
 
 #: meat-grinder/meat-grinder.c:650
 msgid "No items to archive"
-msgstr "®ádné polo¾ky k archívování"
+msgstr "Å½Ã¡dnÃ© poloÅ¾ky k archÃ­vovÃ¡nÃ­"
 
 #: meat-grinder/meat-grinder.c:777
 #, c-format
 msgid "%s added"
-msgstr ""
+msgstr "%s pÅ™idÃ¡n"
 
 #: meat-grinder/meat-grinder.c:796
 msgid "File does not exists"
@@ -2184,1982 +2151,62 @@ msgstr "Soubor neexistuje"
 
 #: meat-grinder/meat-grinder.c:810
 msgid "Add file or folder"
-msgstr "Pøidat soubor èi adresáø"
+msgstr "PÅ™idat soubor Äi adresÃ¡Å™"
 
 #: meat-grinder/meat-grinder.c:927
-#, fuzzy
 msgid "_Add file or folder..."
-msgstr "Pøidat soubor èi adresáø..."
+msgstr "PÅ™id_at soubor Äi adresÃ¡Å™..."
 
 #: meat-grinder/meat-grinder.c:928
-#, fuzzy
 msgid "Add a file or folder to archive"
-msgstr "Pøidat soubor èi adresáø do archívu"
+msgstr "PÅ™idat soubor nebo adresÃ¡Å™ do archÃ­vu"
 
 #: meat-grinder/meat-grinder.c:931
-#, fuzzy
 msgid "_Create archive..."
-msgstr "Vytvoøit archív..."
+msgstr "VytvoÅ™it ar_chÃ­v..."
 
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
-msgstr "Vytvoøit novı archív z polo¾ek"
+msgstr "VytvoÅ™it novÃ½ archÃ­v z poloÅ¾ek"
 
 #: meat-grinder/meat-grinder.c:942
-#, fuzzy
 msgid "Remove the selected item"
-msgstr "Odstranit vybrané polo¾ky"
+msgstr "Odstranit vybranou poloÅ¾ku"
 
 #: meat-grinder/meat-grinder.c:944
-#, fuzzy
 msgid "R_emove All"
-msgstr "<- Zru¹it v¹e"
+msgstr "Odstranit vÅ¡_e"
 
 #: meat-grinder/meat-grinder.c:945
-#, fuzzy
 msgid "Remove all items"
-msgstr "<- Zru¹it v¹e"
+msgstr "Odstranit vÅ¡echny poloÅ¾ky"
 
 #: meat-grinder/meat-grinder.c:1016
 msgid "Drop files here to add them to the archive."
-msgstr "Pus»te soubory zde k jejich pøidání do archívu."
+msgstr "Soubory pÅ™idÃ¡te do archÃ­vu, kdyÅ¾ je zde pustÃ­te."
 
 #. tarball icon
 #: meat-grinder/meat-grinder.c:1028
-#, fuzzy
 msgid "_Create Archive"
-msgstr "Vytvoøit archív..."
+msgstr "VytvoÅ™it ar_chÃ­v"
 
 #: meat-grinder/meat-grinder.c:1036
 msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
+"PÅ™etÃ¡hnÄ›te toto tlaÄÃ­tko na mÃ­sto, kde chcete vytvoÅ™it archÃ­v, nebo jej stisknÄ›te "
+"a zobrazÃ­ se dialog pro vÃ½bÄ›r souboru."
 
 #: meat-grinder/meat-grinder.c:1174
 msgid "Cannot find proper icons anywhere!"
-msgstr ""
+msgstr "Nelze nikde nalÃ©zt odpovÃ­dajÃ­cÃ­ ikony!"
 
 #: meat-grinder/meat-grinder.c:1182
 msgid ""
 "Cannot find the archive (tar) program!\n"
 "This is the program used for creating archives."
 msgstr ""
+"Nelze nalÃ©zt program pro archivaci (tar)!\n"
+"Tento program se pouÅ¾Ã­vÃ¡ k vytvÃ¡Å™enÃ­ archÃ­vÅ¯."
 
-#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "x^2"
-#~ msgstr "x^2"
-
-#~ msgid "x^y"
-#~ msgstr "x^y"
-
-#, fuzzy
-#~ msgid "Default strategy"
-#~ msgstr "Implicitní strategie:"
-
-#~ msgid "Format another floppy?"
-#~ msgstr "Zformátovat dal¹í disketu?"
-
-#, fuzzy
-#~ msgid "Action options"
-#~ msgstr "Mo¾nosti monitoru"
-
-#~ msgid "Add..."
-#~ msgstr "Pøidat..."
-
-#~ msgid "Edit..."
-#~ msgstr "Upravit..."
-
-#~ msgid "Remove"
-#~ msgstr "Zru¹it"
-
-#~ msgid "description:"
-#~ msgstr "popis:"
-
-#, fuzzy
-#~ msgid "Dictionary Applet"
-#~ msgstr "Zaèít v adresáøi:"
-
-#~ msgid "Find:"
-#~ msgstr "Najít:"
-
-#~ msgid "Help"
-#~ msgstr "Nápovìda"
-
-#, fuzzy
-#~ msgid "GNOME System Log"
-#~ msgstr "Prohlí¾eè systémovıch souborù záznamù"
-
-#~ msgid "Open log..."
-#~ msgstr "Otevøít soubor záznamù..."
-
-#~ msgid "Open log"
-#~ msgstr "Otevøít soubor záznamù"
-
-#~ msgid "Export log..."
-#~ msgstr "Exportovat soubor záznamù..."
-
-#~ msgid "Export log"
-#~ msgstr "Exportovat soubor záznamù"
-
-#~ msgid "Close log"
-#~ msgstr "Zavøít soubor záznamù"
-
-#~ msgid "Exit"
-#~ msgstr "Konec"
-
-#~ msgid "Exit program"
-#~ msgstr "Uknoèit program"
-
-#~ msgid "Show log stats"
-#~ msgstr "Zobrazit stav souboru záznamù"
-
-#~ msgid "Zoom"
-#~ msgstr "Pøiblí¾it"
-
-#~ msgid "Select...               "
-#~ msgstr "Vıbìr...                "
-
-#~ msgid "Filter..                "
-#~ msgstr "Filtr...                "
-
-#~ msgid "Cannot start the archive (tar) program"
-#~ msgstr "Nelze spustit archívovací program (tar)"
-
-#~ msgid "Cannot run tar/gtar"
-#~ msgstr "Nelze spustit tar/gtar"
-
-#, fuzzy
-#~ msgid "The GNOME Calculator"
-#~ msgstr "Kalkulátor Gnome"
-
-#, fuzzy
-#~ msgid "Shift"
-#~ msgstr "bílá"
-
-#, fuzzy
-#~ msgid "Store"
-#~ msgstr "Zastavit"
-
-#, fuzzy
-#~ msgid "Recall"
-#~ msgstr "Desítkovì"
-
-#, fuzzy
-#~ msgid "Exchange"
-#~ msgstr "Oèekávanı rozsah"
-
-#~ msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "About"
-#~ msgstr "O programu"
-
-#~ msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
-#, fuzzy
-#~ msgid "_Browse Characters..."
-#~ msgstr "Vlo¾it znak..."
-
-#, fuzzy
-#~ msgid "_Text Toolbar"
-#~ msgstr "Nástojová li¹ta"
-
-#, fuzzy
-#~ msgid "View or hide the text toolbar"
-#~ msgstr "Zobrazit èi schovat nástrojovou li¹tu"
-
-#~ msgid "_Statusbar"
-#~ msgstr "_Stavovı øádek"
-
-#~ msgid "View or hide the statusbar"
-#~ msgstr "Zobrazit èi schovat stavovı øádek"
-
-#, fuzzy
-#~ msgid "_Insert at end"
-#~ msgstr "Vlo¾it znak"
-
-#~ msgid "Lookup"
-#~ msgstr "Hledat"
-
-#~ msgid "Spell"
-#~ msgstr "Kontrola"
-
-#, fuzzy
-#~ msgid "_Look Up"
-#~ msgstr "Hledat"
-
-#, fuzzy
-#~ msgid "Set _Server"
-#~ msgstr "Server"
-
-#, fuzzy
-#~ msgid "Set _Port"
-#~ msgstr "St_art"
-
-#, fuzzy
-#~ msgid "_Spell"
-#~ msgstr "Kontrola"
-
-#, fuzzy
-#~ msgid "Spell checker"
-#~ msgstr "Hledání..."
-
-#~ msgid "Preferences..."
-#~ msgstr "Nastavení..."
-
-#~ msgid "Don't search subdirectories"
-#~ msgstr "Neprohledávat podadresáøe"
-
-#, fuzzy
-#~ msgid "Results"
-#~ msgstr "Ulo¾it vısledky"
-
-#~ msgid "The Gnome Search Tool"
-#~ msgstr "Vyhledávací program Gnome"
-
-#~ msgid "Logview"
-#~ msgstr "Logview"
-
-#~ msgid "Show user preferences"
-#~ msgstr "Ukazaovat u¾ivatelské natsavení"
-
-#~ msgid "Date: "
-#~ msgstr "Datum: "
-
-#~ msgid "The GNOME Archive Generator"
-#~ msgstr "Generátor archívù pro GNOME"
-
-#~ msgid "Archive"
-#~ msgstr "Archív"
-
-#~ msgid "_Action Toolbar"
-#~ msgstr "Li¹ta _akcí"
-
-#, fuzzy
-#~ msgid "View or hide the action toolbar"
-#~ msgstr "Zobrazit èi schovat nástrojovou li¹tu"
-
-#, fuzzy
-#~ msgid "Cut to Clipboard"
-#~ msgstr "Naèíst font"
-
-#, fuzzy
-#~ msgid "Copy to Clipboard"
-#~ msgstr "Naèíst font"
-
-#~ msgid "Settings"
-#~ msgstr "Nastavení"
-
-#, fuzzy
-#~ msgid "Start in directory "
-#~ msgstr "Zaèít v adresáøi:"
-
-#, fuzzy
-#~ msgid "Show Gnome Character Map's manual"
-#~ msgstr "Kalkulátor Gnome"
-
-#~ msgid "About this application"
-#~ msgstr "O této aplikaci"
-
-#~ msgid "Exit the program"
-#~ msgstr "Uknoèit program"
-
-#~ msgid "Word definition"
-#~ msgstr "Definice slova"
-
-#~ msgid "Cannot create applet!\n"
-#~ msgstr "Nelze vytvoøit aplet!\n"
-
-#~ msgid "Fonts"
-#~ msgstr "Písma"
-
-#~ msgid "Display handle bar"
-#~ msgstr "Zobrazit pruh handle"
-
-#~ msgid "Applet"
-#~ msgstr "Aplet"
-
-#~ msgid "Find Words..."
-#~ msgstr "Najít slova..."
-
-#~ msgid "Lookup Word..."
-#~ msgstr "Vyhledat slovo..."
-
-#~ msgid "GDiskFree"
-#~ msgstr "GDiskFree"
-
-#~ msgid "Unable to parse the geometry string '%s'"
-#~ msgstr "Nelze rozlo¾it øetìzec umístìní '%s'"
-
-#~ msgid "Specify the geometry of the window."
-#~ msgstr "Specifikovat geometrii okna."
-
-#~ msgid "GEOMETRY"
-#~ msgstr "GEOMETRIE"
-
-#~ msgid "GDiskFree is a GNOME implementation of the shell utility 'df'."
-#~ msgstr "GDiskFree je GNOMová implementace konsolového nástroje 'df'."
-
-#~ msgid "GDiskFree Properties"
-#~ msgstr "Vlastnosti GDiskFree"
-
-#~ msgid "Invoke sync before getting usage info"
-#~ msgstr "Spustit sync pøed sbìrem dat pou¾ívání"
-
-#~ msgid "Show drive mount points"
-#~ msgstr "Zobrazit pøípojné body zaøízení"
-
-#~ msgid "Show drive size"
-#~ msgstr "Zobrazit velikost zaøízení"
-
-#~ msgid "Dial Orientation"
-#~ msgstr "Orientace knoflíku"
-
-#~ msgid "Vertical"
-#~ msgstr "Vertikální"
-
-#~ msgid "Horizontal"
-#~ msgstr "Horizontální"
-
-#~ msgid "Update interval (ms)"
-#~ msgstr "Interval obnovení (ms)"
-
-#~ msgid "General Settings"
-#~ msgstr "Obecné nastavení"
-
-#~ msgid "File owner"
-#~ msgstr "Vlastník souboru"
-
-#~ msgid "Empty file"
-#~ msgstr "Prázdnı soubor"
-
-#~ msgid "Filenames except"
-#~ msgstr "Jména kromì"
-
-#~ msgid "Simple substring search"
-#~ msgstr "Jednoduché hledání podøetìzce"
-
-#~ msgid "Regular expression search"
-#~ msgstr "Vyhledání podle regulárního vırazu"
-
-#~ msgid "Search already running on another page"
-#~ msgstr "Vyhledávaní ji¾ probíhá na jiné stránce"
-
-#~ msgid "Enable"
-#~ msgstr "Povolit"
-
-#~ msgid "Nothing to locate"
-#~ msgstr "Nic k hledání"
-
-#~ msgid "Locate file: "
-#~ msgstr "Najít soubor: "
-
-#~ msgid "Full find (find)"
-#~ msgstr "Plné hledání (find)"
-
-#~ msgid "Quick find (locate)"
-#~ msgstr "Rychlé hledání (locate)"
-
-#, fuzzy
-#~ msgid "Command mangled"
-#~ msgstr "Pøíkazová øádka"
-
-#~ msgid "no project selected"
-#~ msgstr "¾ádnı projekt nebyl vybrán"
-
-#~ msgid "00:00"
-#~ msgstr "00:00"
-
-#~ msgid "project %t started"
-#~ msgstr "projekt %t odstartován"
-
-#~ msgid "stopped project %t"
-#~ msgstr "zastaven prjekt %t"
-
-#, fuzzy
-#~ msgid "Cannot open logfile %s for append"
-#~ msgstr "Soubor nelze otevøít pro zápis!"
-
-#~ msgid "program started"
-#~ msgstr "program odstartován"
-
-#~ msgid "no description"
-#~ msgstr "bez popisu"
-
-#~ msgid "program exited"
-#~ msgstr "program ukonèen"
-
-#~ msgid ""
-#~ "There seems to be another GTimeTracker running.\n"
-#~ "Press OK to start GTimeTracker anyway, or press Cancel to quit."
-#~ msgstr ""
-#~ "Pravdìpodobnì ji¾ bì¾í jinı expampláø tohoto programu.\n"
-#~ "Stisknìte OK pro start program nebo Zru¹it k ukonèení."
-
-#, fuzzy
-#~ msgid "Cannot create pid-file!"
-#~ msgstr "Nelze vytvoøit aplet!\n"
-
-#~ msgid "Error"
-#~ msgstr "Chyba"
-
-#~ msgid "Specify geometry"
-#~ msgstr "Specifikovat geometrii"
-
-#~ msgid "Select a project on startup"
-#~ msgstr "Vybrat projekt pøi startu"
-
-#~ msgid "PROJECT"
-#~ msgstr "PROJEKT"
-
-#~ msgid "Warning"
-#~ msgstr "Varování"
-
-#, fuzzy
-#~ msgid "Could not write the configuration file!"
-#~ msgstr "Nelze zapsat konfiguraèní soubor!"
-
-#~ msgid "Time tracking tool for GNOME"
-#~ msgstr "GNOME nástroj na sledování èasu"
-
-#~ msgid "New Project..."
-#~ msgstr "Novı projekt..."
-
-#~ msgid "Project Title"
-#~ msgstr "Název projektu"
-
-#~ msgid "Description"
-#~ msgstr "Popis"
-
-#~ msgid "I could not read the configuration file"
-#~ msgstr "Nelze pøeèíst konfiguraèní soubor"
-
-#~ msgid "Reload Configuration File"
-#~ msgstr "Znovu naèíst konfiguraèní soubor"
-
-#~ msgid "File cannot be written"
-#~ msgstr "Soubor nelze zapsat"
-
-#~ msgid "Export Current State"
-#~ msgstr "Exportovat aktuální stav"
-
-#~ msgid "_New Project..."
-#~ msgstr "_Novı projekt..."
-
-#~ msgid "_Reload Configuration File"
-#~ msgstr "_Znovu naèíst konfiguraèní soubor"
-
-#~ msgid "_Save Configuration File"
-#~ msgstr "_Ulo¾it konfiguraèní soubor"
-
-#~ msgid "_Export Current State"
-#~ msgstr "_Exportovat aktuální stav"
-
-#~ msgid "Clear _Daily Counter"
-#~ msgstr "Smazat _denní poèítadlo"
-
-#~ msgid "Sto_p"
-#~ msgstr "Sto_p"
-
-#~ msgid "_Timer Running"
-#~ msgstr "Èasovaè _bì¾í"
-
-#~ msgid "_Timer"
-#~ msgstr "Èa_sovaè"
-
-#~ msgid "Display"
-#~ msgstr "Zobrazit"
-
-#~ msgid "Show Seconds"
-#~ msgstr "Zobrazit vteøiny"
-
-#~ msgid "Show Status Bar"
-#~ msgstr "Zobrazit statusbar"
-
-#~ msgid "Show Table Header"
-#~ msgstr "Zobrazit hlavièku tabulek"
-
-#, fuzzy
-#~ msgid "Show Sub-Projects"
-#~ msgstr "Ukazovat 'Vlastnosti'"
-
-#~ msgid "Toolbar"
-#~ msgstr "Nástojová li¹ta"
-
-#~ msgid "Show Toolbar Icons"
-#~ msgstr "Ikony nástrojové li¹ty"
-
-#~ msgid "Show Toolbar Texts"
-#~ msgstr "Ukazovat text na nástrojové li¹tì"
-
-#~ msgid "Show Tooltips"
-#~ msgstr "Ukazovat tipy"
-
-#~ msgid "Toolbar Segments"
-#~ msgstr "Segmenty nástrojové li¹ty"
-
-#~ msgid "Show `New'"
-#~ msgstr "Ukazovat 'Novı'"
-
-#~ msgid "Show `Save', `Reload'"
-#~ msgstr "Ukazovat 'Ulo¾it', 'Naèíst znovu'"
-
-#~ msgid "Show `Timer'"
-#~ msgstr "Ukazovat 'Èasovaè'"
-
-#~ msgid "Show `Preferences'"
-#~ msgstr "Ukazaovat 'Natsavení'"
-
-#~ msgid "Show `Help'"
-#~ msgstr "Ukazovat 'Nápovìda'"
-
-#~ msgid "Show `Quit'"
-#~ msgstr "Ukozovat 'Konec'"
-
-#~ msgid "Shell Commands"
-#~ msgstr "Pøíkazy shellu"
-
-#~ msgid "Switch Project Command:"
-#~ msgstr "Pøíkaz pøi zmìnì projektu:"
-
-#~ msgid "Filename:"
-#~ msgstr "Jméno souboru:"
-
-#~ msgid "Misc"
-#~ msgstr "Rùzné"
-
-#~ msgid "[GTT]New"
-#~ msgstr "[GTT]Novı"
-
-#, fuzzy
-#~ msgid "Create a New Project..."
-#~ msgstr "Novı projekt..."
-
-#~ msgid "Reload"
-#~ msgstr "Naèíst"
-
-#~ msgid "Save Configuration File"
-#~ msgstr "Ulo¾it konfiguraèní soubor"
-
-#~ msgid "Cut Selected Project"
-#~ msgstr "Vyjmout vybranı projekt"
-
-#~ msgid "Paste Project"
-#~ msgstr "Vlo¾it projekt"
-
-#~ msgid "Props"
-#~ msgstr "Vlast."
-
-#, fuzzy
-#~ msgid "Edit Project Properties..."
-#~ msgstr "Úprava vlastností..."
-
-#~ msgid "Timer"
-#~ msgstr "Èasovaè"
-
-#~ msgid "Start/Stop Timer"
-#~ msgstr "Spustit/Zastavit èasovaè"
-
-#~ msgid "Prefs"
-#~ msgstr "Nastavení"
-
-#~ msgid "Manual"
-#~ msgstr "Manuál"
-
-#~ msgid "Quit"
-#~ msgstr "Konec"
-
-#~ msgid "Quit GTimeTracker"
-#~ msgstr "Ukonèit GTimeTracker"
-
-#~ msgid "Total"
-#~ msgstr "Celkem"
-
-#~ msgid "Today"
-#~ msgstr "Dnes"
-
-#, fuzzy
-#~ msgid "Start Fuzz"
-#~ msgstr "Zaèít"
-
-#, fuzzy
-#~ msgid "5 Min"
-#~ msgstr "Min"
-
-#, fuzzy
-#~ msgid "10 Min"
-#~ msgstr "Min"
-
-#, fuzzy
-#~ msgid "15 Min"
-#~ msgstr "Min"
-
-#, fuzzy
-#~ msgid "20 Min"
-#~ msgstr "Min"
-
-#, fuzzy
-#~ msgid "30 Min"
-#~ msgstr "Min"
-
-#, fuzzy
-#~ msgid "2 Hours"
-#~ msgstr "hodin"
-
-#, fuzzy
-#~ msgid "3 Hours"
-#~ msgstr "hodin"
-
-#, fuzzy
-#~ msgid "Edit the Start & Stop Times"
-#~ msgstr "Spustit/Zastavit èasovaè"
-
-#, fuzzy
-#~ msgid "Delete This Interval"
-#~ msgstr "Interval obnovení zobrazení"
-
-#~ msgid "Delete"
-#~ msgstr "Smazat"
-
-#, fuzzy
-#~ msgid "New File"
-#~ msgstr "Novı pohled"
-
-#, fuzzy
-#~ msgid "Print"
-#~ msgstr "Bod"
-
-#, fuzzy
-#~ msgid "Open File"
-#~ msgstr "Otevøít soubor záznamù"
-
-#, fuzzy
-#~ msgid "Save File"
-#~ msgstr "Ulo¾it text jako ..."
-
-#~ msgid "Project Title:"
-#~ msgstr "Název projektu"
-
-#~ msgid "Project Description:"
-#~ msgstr "Popis projektu:"
-
-#~ msgid "Project"
-#~ msgstr "Projekt"
-
-#, fuzzy
-#~ msgid "                        "
-#~ msgstr "Zoom                    "
-
-#, fuzzy
-#~ msgid "seconds"
-#~ msgstr "sek."
-
-#, fuzzy
-#~ msgid "Memo:"
-#~ msgstr "Pamì»"
-
-#, fuzzy
-#~ msgid "Billable"
-#~ msgstr "Neaktivní"
-
-#, fuzzy
-#~ msgid "No Charge"
-#~ msgstr "Jméno"
-
-#, fuzzy
-#~ msgid "Regular"
-#~ msgstr "Naèíst"
-
-#, fuzzy
-#~ msgid "OverOver"
-#~ msgstr "Server"
-
-#, fuzzy
-#~ msgid "minutes"
-#~ msgstr "min"
-
-#, fuzzy
-#~ msgid "(empty)"
-#~ msgstr "prázdnı"
-
-#~ msgid "empty"
-#~ msgstr "prázdnı"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-
-#~ msgid "Do nothing"
-#~ msgstr "Nedìlej nic"
-
-#~ msgid "Append it to ->"
-#~ msgstr "Pøidej to k ->"
-
-#~ msgid "Search it in ->"
-#~ msgstr "Hledej to v ->"
-
-#~ msgid "Edit it"
-#~ msgstr "Uprav to"
-
-#~ msgid "List"
-#~ msgstr "Seznam"
-
-#~ msgid "File"
-#~ msgstr "Soubor"
-
-#~ msgid "Search RGB"
-#~ msgstr "RGB hledání"
-
-#, fuzzy
-#~ msgid "Concat"
-#~ msgstr "Font"
-
-#~ msgid "GColorsel"
-#~ msgstr "GColorsel"
-
-#~ msgid "Add ->"
-#~ msgstr "Pøidat ->"
-
-#~ msgid "Add all ->"
-#~ msgstr "Pøidat v¹e ->"
-
-#~ msgid "Available documents"
-#~ msgstr "Dokumenty k dispozii"
-
-#~ msgid "Available views"
-#~ msgstr "Pohledy k dispozici"
-
-#~ msgid "Connect to"
-#~ msgstr "Pøipojit se k"
-
-#~ msgid "Create a document"
-#~ msgstr "Vytvoøit dokument"
-
-#~ msgid "Create views"
-#~ msgstr "Vytvoøit pohledy"
-
-#~ msgid "Description :"
-#~ msgstr "Popis :"
-
-#~ msgid "Select source document"
-#~ msgstr "Vyber zdrojovı dokument"
-
-#~ msgid "Select type"
-#~ msgstr "Vyber typ"
-
-#~ msgid "Short name : "
-#~ msgstr "Krátké jméno : "
-
-#~ msgid "Create a new view"
-#~ msgstr "Vytoøit novı pohled"
-
-#~ msgid "Documents"
-#~ msgstr "Dokumenty"
-
-#, fuzzy
-#~ msgid "Drop:"
-#~ msgstr "èervená"
-
-#~ msgid "General"
-#~ msgstr "Obecné"
-
-#~ msgid "Modal"
-#~ msgstr "Modální"
-
-#~ msgid "Mode:"
-#~ msgstr "Mód:"
-
-#~ msgid "Notebook"
-#~ msgstr "Zálo¾ky"
-
-#~ msgid "On ... execute ..."
-#~ msgstr "Pøi ... spus» ..."
-
-#~ msgid "Save session on exit."
-#~ msgstr "Ulo¾it sezení pøed koncem."
-
-#~ msgid "Session"
-#~ msgstr "Sezení"
-
-#~ msgid "Header :"
-#~ msgstr "Hlavièka :"
-
-#~ msgid "Special properties"
-#~ msgstr "Specialní vlastnosti"
-
-#~ msgid "Common properties"
-#~ msgstr "Bì¾né vlastnosti"
-
-#~ msgid "Name :"
-#~ msgstr "Jméno : "
-
-#~ msgid "Blue :"
-#~ msgstr "Modrá :"
-
-#~ msgid "Green :"
-#~ msgstr "Zelená :"
-
-#~ msgid "Red :"
-#~ msgstr "Èervená :"
-
-#, fuzzy
-#~ msgid "Colors format :"
-#~ msgstr "Jméno barvy:"
-
-#~ msgid "Color height :"
-#~ msgstr "Vı¹ka barvy :"
-
-#~ msgid "Color width :"
-#~ msgstr "©íøka barvy :"
-
-#~ msgid "Draw numbers"
-#~ msgstr "Kreslit èísla"
-
-#~ msgid "New Document"
-#~ msgstr "Novı dokument"
-
-#~ msgid "Create a new document"
-#~ msgstr "Vytvoøit novı dokument"
-
-#~ msgid "New View"
-#~ msgstr "Novı pohled"
-
-#~ msgid "Close document"
-#~ msgstr "Zavøít dokument"
-
-#~ msgid "Close view"
-#~ msgstr "Zavøít pohled"
-
-#, fuzzy
-#~ msgid "Close the current view"
-#~ msgstr "Odstranit aktuální pohled na bufer"
-
-#, fuzzy
-#~ msgid "_Open palette..."
-#~ msgstr "Otevøít kon_vertor..."
-
-#, fuzzy
-#~ msgid "_Save palette"
-#~ msgstr "Ulo¾it text jako ..."
-
-#, fuzzy
-#~ msgid "Save palette _As..."
-#~ msgstr "Ulo¾it text jako ..."
-
-#, fuzzy
-#~ msgid "Edit selected colors ..."
-#~ msgstr "Úprava nastavení..."
-
-#, fuzzy
-#~ msgid "Document/View properties"
-#~ msgstr "Vlastnosti"
-
-#, fuzzy
-#~ msgid "Save Palette as"
-#~ msgstr "Ulo¾it text jako ..."
-
-#, fuzzy
-#~ msgid "File saved ..."
-#~ msgstr "Jméno souboru"
-
-#~ msgid "Gnome Color Browser"
-#~ msgstr "Prohlí¾eè barev Gnome"
-
-#~ msgid "Small utility to browse available X11 colors."
-#~ msgstr "Program k prohlí¾ení dostupnıch barev."
-
-#~ msgid "New Color"
-#~ msgstr "Nová barva"
-
-#~ msgid "View properties"
-#~ msgstr "Prohlí¾et vlastnosti"
-
-#~ msgid "Document properties"
-#~ msgstr "Vlastnosti dokumentu"
-
-#~ msgid "Open"
-#~ msgstr "Otevøít"
-
-#~ msgid "Open a palette"
-#~ msgstr "Otevøít paletu"
-
-#~ msgid "Loading files, please wait ..."
-#~ msgstr "Naèítám soubory, èekejte prosím ..."
-
-#~ msgid "System Colors"
-#~ msgstr "Systémové barvy"
-
-#~ msgid "User Colors"
-#~ msgstr "U¾ivatelské barvy"
-
-#~ msgid "Decimal 16 bits"
-#~ msgstr "Desítkovì 16 bitù"
-
-#~ msgid "Hex 8 bits"
-#~ msgstr "Hexa 8 bitù"
-
-#~ msgid "Hex 16 bits"
-#~ msgstr "Hexa 16 bitù"
-
-#~ msgid "Color"
-#~ msgstr "Barva"
-
-#~ msgid "Value"
-#~ msgstr "Hodnota"
-
-#~ msgid "Tolerance :"
-#~ msgstr "Tolerance :"
-
-#~ msgid "Font Selector"
-#~ msgstr "Vıbìr fontu"
-
-#~ msgid "Selection:"
-#~ msgstr "Vıbìr:"
-
-#~ msgid "Font to load"
-#~ msgstr "Naèíst font"
-
-#~ msgid "FONTSPEC"
-#~ msgstr "FONTSPEC"
-
-#~ msgid "Reason %d\n"
-#~ msgstr "Dùvod %d\n"
-
-#~ msgid "Where to put the window, and its size"
-#~ msgstr "Kde se okno zobrazí a jeho rozmìry"
-
-#~ msgid "Ignore standard input; may be needed in some cases."
-#~ msgstr "Ignorovat standardní vstup; mo¾ná nutné v nìkterıch pøípadech."
-
-#~ msgid "_New Window"
-#~ msgstr "_Nové okno"
-
-#~ msgid "New text viewer window"
-#~ msgstr "Nové okno prohlí¾eèe souborù"
-
-#~ msgid "_Fixed Font"
-#~ msgstr "_Písmo s pevnou ¹íøkou"
-
-#~ msgid "Text File Viewer"
-#~ msgstr "Prohlí¾eè textovıch souborù"
-
-#~ msgid "Copyright 1998, under the GNU General Public License."
-#~ msgstr "Copyright 1998, pod Obecnou veøejnou licencí GNU."
-
-#~ msgid "Find string"
-#~ msgstr "Najít øetìzec"
-
-#~ msgid "Loading..."
-#~ msgstr "Naèítání..."
-
-#~ msgid ""
-#~ "No such file or directory:\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Soubor nebo adresáø neexistuje:\n"
-#~ "%s"
-
-#~ msgid ""
-#~ "Unable to display compressed file.\n"
-#~ "zcat not found in your path."
-#~ msgstr ""
-#~ "Nelze zobrazit komprimovanı soubor.\n"
-#~ "Nelze nalézt program `zcat'."
-
-#~ msgid ""
-#~ "Error loading file:\n"
-#~ "%s\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Chyba pøi naèítání souboru:\n"
-#~ "%s\n"
-#~ "%s"
-
-#~ msgid "Saving..."
-#~ msgstr "Ukládání..."
-
-#~ msgid "Save Text As..."
-#~ msgstr "Ulo¾it text jako ..."
-
-#~ msgid "Open Text File..."
-#~ msgstr "Otevøít textovı soubor..."
-
-#~ msgid "No search string was specified!"
-#~ msgstr "®ádnı hledanı øetìzec nebyl zadán!"
-
-#~ msgid "Shut Down"
-#~ msgstr "Vypnout poèítaè"
-
-#~ msgid "Single User Mode"
-#~ msgstr "Re¾im jednoho u¾ivatele"
-
-#~ msgid "Reboot"
-#~ msgstr "Restart"
-
-#~ msgid "Are you sure you want to shut down the computer?"
-#~ msgstr "Opravdu chcete ukonèit èinnost poèítaèe?"
-
-#~ msgid "Are you sure you want to switch to single user mode?"
-#~ msgstr "Opravdu chcete pøepnou na re¾im jednoho u¾ivatele?"
-
-#~ msgid "Are you sure you want to reboot the system?"
-#~ msgstr "Skuteènì chcete restartovat systém?"
-
-#~ msgid ""
-#~ "You must be the super-user (root) to shut down or restart the computer."
-#~ msgstr ""
-#~ "K provedení restartu nebo ukonèení èinnosti systému musíte bıt "
-#~ "superu¾ivatel."
-
-#~ msgid "Shutdown or Reboot"
-#~ msgstr "Ukonèení nebo restart systému"
-
-#~ msgid "Easy"
-#~ msgstr "Jednoduché"
-
-#~ msgid ""
-#~ "Click OK to shutdown or reboot. You will lose\n"
-#~ "any unsaved information in open applications."
-#~ msgstr ""
-#~ "Stisknìte OK k ukonèení nebo restartu systému.\n"
-#~ "Ztratíte v¹echa neulo¾ená data v otevøenıch \n"
-#~ "aplikacích."
-
-#~ msgid "Commands"
-#~ msgstr "Pøíkazy"
-
-#~ msgid "Confirm before shutdown?"
-#~ msgstr "Potvrzení pøed ukonèením systému?"
-
-#~ msgid ""
-#~ "%s\n"
-#~ "You will lose any unsaved work."
-#~ msgstr ""
-#~ "%s\n"
-#~ "Ztratíte takto v¹echna neulo¾enou práci."
-
-#~ msgid "Don't ask next time."
-#~ msgstr "Pøístì se neptat."
-
-#~ msgid "Command execution failed: fork failed"
-#~ msgstr "Nelze spustit pøíkaz: volání fork() selhalo"
-
-#~ msgid "an initialization error occurred while starting 'guname-capplet'."
-#~ msgstr "chyba inicializace pøi startu konf. apletu 'guname-capplet'."
-
-#~ msgid "System Information"
-#~ msgstr "Informace o systému"
-
-#~ msgid "GNOME contributors:"
-#~ msgstr "Spoluautoøi GNOME:"
-
-#~ msgid "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
-#~ msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
-
-#~ msgid "GNOME: The GNU Network Object Model Environment"
-#~ msgstr "GNOME: The GNU Network Object Model Environment"
-
-#~ msgid "Email Information..."
-#~ msgstr "Poslat informace..."
-
-#~ msgid "Save Information to File..."
-#~ msgstr "Ulo¾it informace do souboru..."
-
-#~ msgid "Detailed Information..."
-#~ msgstr "Detaily..."
-
-#~ msgid "Category"
-#~ msgstr "Kategorie"
-
-#~ msgid "Your System"
-#~ msgstr "Vá¹ systém"
-
-#~ msgid "Save As..."
-#~ msgstr "Ulo¾it jako ..."
-
-#~ msgid "Mail To..."
-#~ msgstr "Odeslat(komu) ..."
-
-#~ msgid ""
-#~ "Error closing file `%s': \n"
-#~ "%s\n"
-#~ "Some or all data may not have been written."
-#~ msgstr ""
-#~ "Chyba pøi uzavøení souboru `%s': \n"
-#~ "%s\n"
-#~ "Nìkterá data nemusí bıt ulo¾ena."
-
-#~ msgid "Couldn't open file `%s': %s"
-#~ msgstr "Nelze otevøít soubor `%s': %s"
-
-#~ msgid "Save System Information As..."
-#~ msgstr "Ulo¾it informace jako..."
-
-#~ msgid "Command failed ` %s ': %s"
-#~ msgstr "Pøíkaz selhal: ` %s ': %s"
-
-#~ msgid "Couldn't run command ` %s ': %s"
-#~ msgstr "Nelze spustit program ` %s ': %s"
-
-#~ msgid ""
-#~ "The following mail will be sent to %s.\n"
-#~ " Are you sure you want to mail this information?"
-#~ msgstr ""
-#~ "Následující dopis bude odeslán na %s.\n"
-#~ " Opravdu chcete tyto informace odeslat?"
-
-#~ msgid "Are you sure?"
-#~ msgstr "Jste si jist?"
-
-#~ msgid "Address to mail to:"
-#~ msgstr "Adresát:"
-
-#~ msgid "Distribution:"
-#~ msgstr "Distribuce:"
-
-#~ msgid "Operating System:"
-#~ msgstr "Operaèní systém:"
-
-#~ msgid "Distribution Version:"
-#~ msgstr "Verze distribuce:"
-
-#~ msgid "Operating System Version:"
-#~ msgstr "Verze operaèního systému:"
-
-#~ msgid "Operating System Release:"
-#~ msgstr "Verze operaèního systému:"
-
-#~ msgid "Processor Type:"
-#~ msgstr "Typ procesoru:"
-
-#~ msgid "Processor Speed:"
-#~ msgstr "Rychlost procesoru:"
-
-#~ msgid "Host Name:"
-#~ msgstr "Jméno poèítaèe:"
-
-#~ msgid "Domain Name:"
-#~ msgstr "Jméno domény:"
-
-#~ msgid "User Name:"
-#~ msgstr "Jméno u¾ivatele:"
-
-#~ msgid "X Display Name:"
-#~ msgstr "Jméno displeje X:"
-
-#~ msgid "System Status:"
-#~ msgstr "Stav systému:"
-
-#~ msgid "Real Memory:"
-#~ msgstr "Reálná pamì»:"
-
-#~ msgid "Swap Space (\"virtual memory\"):"
-#~ msgstr "Odkládací prostor (\"virtualní pamì»\"):"
-
-#~ msgid "Total Memory:"
-#~ msgstr "Celková pamì»"
-
-#~ msgid "Free Memory:"
-#~ msgstr "Volná pamì»"
-
-#~ msgid "Device"
-#~ msgstr "Zaøízení"
-
-#~ msgid "Used space"
-#~ msgstr "Pou¾íté místo"
-
-#~ msgid "Free space"
-#~ msgstr "Volné místo"
-
-#~ msgid "Percent free"
-#~ msgstr "Volno v procentech"
-
-#~ msgid "Mount point"
-#~ msgstr "Pøípojné místo"
-
-#~ msgid "Unknown"
-#~ msgstr "Neznámo"
-
-#~ msgid "Unknown filesystem"
-#~ msgstr "Neznámı systém souborù"
-
-#~ msgid "No information for this filesystem."
-#~ msgstr "Pro tento systém souborù nelze zjistit informace."
-
-#~ msgid "Memory"
-#~ msgstr "Pamì»"
-
-#~ msgid "Kilobytes"
-#~ msgstr "kilobajtù"
-
-#~ msgid "%ld%% memory used."
-#~ msgstr "%ld%% pamìti pou¾ito."
-
-#~ msgid "%ld%% swap used."
-#~ msgstr "%ld%% swapu pou¾ito."
-
-#~ msgid "CPU %d"
-#~ msgstr "Procesor %d"
-
-#~ msgid "Detailed System Information"
-#~ msgstr "Detilní informace o systému"
-
-#~ msgid "Disk Information"
-#~ msgstr "Informace o discích"
-
-#~ msgid "Memory Information"
-#~ msgstr "Informace o pamìti"
-
-#~ msgid "CPU Information"
-#~ msgstr "Informace o procesoru"
-
-#~ msgid "Mount Point: "
-#~ msgstr "Bod pøipojení: "
-
-#~ msgid "    Device: "
-#~ msgstr "  Zaøízení: "
-
-#~ msgid "    Filesystem Type: "
-#~ msgstr "Typ systému souborù: "
-
-#~ msgid "%ld megabytes, %ld free (%ld superuser); %ld inodes, %ld free."
-#~ msgstr "%ld MB, %ld volno (%ld superu¾ivatel); %ld i-uzlù, %ld volnıch."
-
-#~ msgid "%2d%% full "
-#~ msgstr "%2d%% plné "
-
-#~ msgid ""
-#~ "Couldn't find the \"w\" command in your path.\n"
-#~ "This command is needed for the program to work."
-#~ msgstr ""
-#~ "V prohledávanıch adresáøích ($PATH) nelze najít\n"
-#~ "pøíkaz \"w\". Tento pøíkaz je programem pou¾íván\n"
-#~ "a bez nìj nefunguje."
-
-#~ msgid "Active User Listing"
-#~ msgstr "Seznam aktivních u¾ivatelù"
-
-#~ msgid "Update Information"
-#~ msgstr "Obnovit informace"
-
-#~ msgid "Add some defaults"
-#~ msgstr "Pøidat standardní"
-
-#~ msgid "Command Editor"
-#~ msgstr "Editor pøíkazù"
-
-#~ msgid ""
-#~ "You can configure the commands on the popup menus.\n"
-#~ "Just enter the name you want to appear on the \n"
-#~ "menu, and the command to execute.\n"
-#~ "In the command, you can use %u to represent the\n"
-#~ "currently selected username, and %t for the tty."
-#~ msgstr ""
-#~ "Zde mù¾ete konfigurovat pøíkazy, které se zobrazí\n"
-#~ "v kontextovém menu (3. tl. my¹i). Jednodu¹e zadejte\n"
-#~ "název pøíkazu (objeví se v menu) a pøíkaz, kterı\n"
-#~ "se má spustit.\n"
-#~ "V pøíkazu mù¾ete pou¾ít %u pro jméno právì vybraného\n"
-#~ "u¾ivatele a %t pro jméno jeho terminálu."
-
-#~ msgid ""
-#~ "Click this button to add\n"
-#~ "some sample commands."
-#~ msgstr ""
-#~ "Stisknutím tohoto tlaèítka\n"
-#~ "pøidáte nìkteré standardní\n"
-#~ "pøíkazy."
-
-#~ msgid "Menu items"
-#~ msgstr "Polo¾ky menu"
-
-#~ msgid "Running: %s\n"
-#~ msgstr "Bì¾ím: %s\n"
-
-#~ msgid "Default 16-bit"
-#~ msgstr "Implicitní 16-bitovı"
-
-#~ msgid "32-bit"
-#~ msgstr "32-bitù"
-
-#~ msgid "32-bit w/sync"
-#~ msgstr "32-bitù w/sync"
-
-#~ msgid "Sleeping"
-#~ msgstr "Spí"
-
-#~ msgid "Active/Idle"
-#~ msgstr "Aktivní/Neaktivní"
-
-#~ msgid "Standby"
-#~ msgstr "V pohotovosti"
-
-#~ msgid "Unable to access the drive."
-#~ msgstr "K jednotce není pøístup."
-
-#~ msgid "Disabled"
-#~ msgstr "Neaktivní"
-
-#~ msgid "The IRQ unmask setting for this drive cannot be changed."
-#~ msgstr "Odmaskování IRQ pro tuto jednotku nemohlo bıt zmìnìno."
-
-#~ msgid "The drive refused to keep its settings."
-#~ msgstr "Jednotka odmítla zachovávat nastavení."
-
-#~ msgid "Keep settings"
-#~ msgstr "Zachovat nastavení"
-
-#~ msgid "None"
-#~ msgstr "®ádnı"
-
-#~ msgid "(1 Sector)"
-#~ msgstr "(1 Sektor)"
-
-#~ msgid "No"
-#~ msgstr "Ne"
-
-#~ msgid "Yes (%d sector)"
-#~ msgstr "Ano (%d sektor)"
-
-#~ msgid "Yes (%d sectors)"
-#~ msgstr "Ano (%d sektorù)"
-
-#~ msgid "Model"
-#~ msgstr "Model"
-
-#~ msgid "Firmware"
-#~ msgstr "Firmware"
-
-#~ msgid "Serial No."
-#~ msgstr "Seriové èíslo"
-
-#~ msgid "Geometry"
-#~ msgstr "Geometrie"
-
-#~ msgid "Cache"
-#~ msgstr "Ke¹"
-
-#~ msgid "Status"
-#~ msgstr "Stav"
-
-#~ msgid "DMA Mode"
-#~ msgstr "Re¾im DMA"
-
-#~ msgid "IO Mode"
-#~ msgstr "V/V re¾im"
-
-#~ msgid "IRQ Unmask"
-#~ msgstr "IRQ odmaskovat"
-
-#~ msgid "Multisector"
-#~ msgstr "Multisektor"
-
-#~ msgid "IDE Status"
-#~ msgstr "Stav IDE"
-
-#~ msgid "Disk Logo Not Found"
-#~ msgstr "Logo disku nebylo nalezeno"
-
-#~ msgid "Only the superuser can use this tool"
-#~ msgstr "Tento nástroj mù¾e pou¾ívat jen superu¾ivatel"
-
-#~ msgid "You appear to have no IDE drives"
-#~ msgstr "Zdá se, ¾e poèítaè neobsahuje ¾ádné IDE jednotky"
-
-#~ msgid "Param"
-#~ msgstr "Parametr"
-
-#~ msgid "Current"
-#~ msgstr "Aktuální"
-
-#~ msgid "Scale"
-#~ msgstr "©kála"
-
-#~ msgid "Stripchart"
-#~ msgstr "Stripchart"
-
-#~ msgid "Copyright 2000 John Kodis"
-#~ msgstr "Copyright 2000 John Kodis"
-
-#~ msgid "Show values"
-#~ msgstr "Zobrazit hondoty"
-
-#~ msgid "Edit Prefs..."
-#~ msgstr "Úprava nastavení..."
-
-#~ msgid "Edit Params..."
-#~ msgstr "Úprava parametrù..."
-
-#~ msgid "no such field: %d"
-#~ msgstr "¾ádné takové pole: %d"
-
-#~ msgid "number expected"
-#~ msgstr "oèekáváno èíslo"
-
-#~ msgid "Parameter"
-#~ msgstr "Parametr"
-
-#~ msgid "Equation"
-#~ msgstr "Rovnice"
-
-#~ msgid "Filename"
-#~ msgstr "Jméno souboru"
-
-#~ msgid "Pattern"
-#~ msgstr "Vzorek"
-
-#~ msgid "Min"
-#~ msgstr "Min"
-
-#~ msgid "Max"
-#~ msgstr "Max"
-
-#~ msgid "Linear"
-#~ msgstr "Lineární"
-
-#~ msgid "Indicator"
-#~ msgstr "Indikátor"
-
-#~ msgid "Line"
-#~ msgstr "Èára"
-
-#~ msgid "Point"
-#~ msgstr "Bod"
-
-#~ msgid "Solid"
-#~ msgstr "Plné"
-
-#, fuzzy
-#~ msgid "Add Parameter Before"
-#~ msgstr "Parametry"
-
-#, fuzzy
-#~ msgid "Add Parameter After"
-#~ msgstr "Parametry"
-
-#, fuzzy
-#~ msgid "Apply Parameter Changes"
-#~ msgstr "Parametry"
-
-#, fuzzy
-#~ msgid "Delete Parameter"
-#~ msgstr "Parametry"
-
-#, fuzzy
-#~ msgid "Add Color"
-#~ msgstr "Barva"
-
-#, fuzzy
-#~ msgid "Delete Color"
-#~ msgstr "Barva"
-
-#~ msgid "Info"
-#~ msgstr "Info"
-
-#, fuzzy
-#~ msgid "Parameter Editor"
-#~ msgstr "Parametry"
-
-#, fuzzy
-#~ msgid "Parameters"
-#~ msgstr "Parametry"
-
-#, fuzzy
-#~ msgid "Chart"
-#~ msgstr "Zaèít"
-
-#, fuzzy
-#~ msgid "enabled"
-#~ msgstr "Aktivní"
-
-#, fuzzy
-#~ msgid "minor"
-#~ msgstr "min"
-
-#, fuzzy
-#~ msgid "major"
-#~ msgstr "min"
-
-#~ msgid "Update"
-#~ msgstr "Obnovit"
-
-#~ msgid "Smooth"
-#~ msgstr "Jemné"
-
-#, fuzzy
-#~ msgid "Pen"
-#~ msgstr "Vzorek"
-
-#~ msgid "Geometry string: WxH+X+Y"
-#~ msgstr "Øetìzec geometrie: ©xV+X+Y"
-
-#~ msgid "GEO"
-#~ msgstr "GEO"
-
-#~ msgid "Configuration file name"
-#~ msgstr "Jméno konfiguraèního souboru"
-
-#~ msgid "FILE"
-#~ msgstr "SOUBOR"
-
-#~ msgid "Values"
-#~ msgstr "Hodnoty"
-
-#~ msgid "Prefs..."
-#~ msgstr "Nastavení..."
-
-#~ msgid "Params..."
-#~ msgstr "Parametry..."
-
-#~ msgid "Project Time today:"
-#~ msgstr "Èas na projektu dnes:"
-
-#~ msgid "Project Time ever:"
-#~ msgstr "Celkovı èas projektu:"
-
-#~ msgid "Manual..."
-#~ msgstr "Manuál..."
-
-#~ msgid "Formatting /dev/floppy"
-#~ msgstr "Formátuji /dev/floppy"
-
-#~ msgid "Formatting %s"
-#~ msgstr "Formátuji %s"
-
-#~ msgid ""
-#~ "Number of files: 0\n"
-#~ "Number of folders: 0"
-#~ msgstr ""
-#~ "Poèet souborù: 0\n"
-#~ "Poèet adresáøù: 0"
-
-#~ msgid "_Toolbar"
-#~ msgstr "_Nástojová li¹ta"
-
-#, fuzzy
-#~ msgid "Cut the text to clipboard"
-#~ msgstr "Naèíst font"
-
-#, fuzzy
-#~ msgid "Copy the text to clipboard."
-#~ msgstr "Naèíst font"
-
-#~ msgid "Exit the application"
-#~ msgstr "Skonèit tuto aplikaci"
-
-#~ msgid "This sets the overall application settings."
-#~ msgstr "Toto nastavuje vlastnosti aplikace."
-
-#~ msgid "New search"
-#~ msgstr "Nové vyhledání"
-
-#~ msgid "Open search spec"
-#~ msgstr "Otevøít specifikaci hledání"
-
-#~ msgid "Save search spec"
-#~ msgstr "Ulo¾it specifikaci hledání"
-
-#~ msgid "Save search spec as..."
-#~ msgstr "Ulo¾it specifikaci hledání jako..."
-
-#, fuzzy
-#~ msgid "Start search"
-#~ msgstr "Hledání"
-
-#, fuzzy
-#~ msgid "Clear the search window"
-#~ msgstr "Nové okno prohlí¾eèe souborù"
-
-#, fuzzy
-#~ msgid "Find Files"
-#~ msgstr "Najít Dal¹í"
-
-#~ msgid "%s, line %d: "
-#~ msgstr "%s, øádka %d: "
-
-#~ msgid "unrecognized color: %s"
-#~ msgstr "neznámá barva: %s"
-
-#~ msgid "E_xit"
-#~ msgstr "_Konec"
-
-#~ msgid "Terminate the stripchart program"
-#~ msgstr "Skonèit program stripchart"
-
-#~ msgid "_About"
-#~ msgstr "O _programu ..."
-
-#~ msgid "_File"
-#~ msgstr "_Soubor"
-
-#~ msgid "Identifier"
-#~ msgstr "Identifikátor"
-
-#~ msgid "Displayed range"
-#~ msgstr "Zobrazovanı rozsah"
-
-#~ msgid "Stripchart Parameters"
-#~ msgstr "Parametry stripchart"
-
-#~ msgid "Params"
-#~ msgstr "Parametry"
-
-#~ msgid "Stripchart Viewer"
-#~ msgstr "Prohlí¾eè stripchart"
-
-#~ msgid "Chart update interval"
-#~ msgstr "Interval obnovení zobrazení"
-
-#~ msgid "SECS"
-#~ msgstr "SEK."
-
-#~ msgid "Adds a menubar to the main window"
-#~ msgstr "Do hlavního okna pøidat menu"
-
-#, fuzzy
-#~ msgid "TYPE is one of gtk, applet, text, or none"
-#~ msgstr "TYP je jedna hodnota z `gtk', `text', `graph', nebo `none'"
-
-#~ msgid "TYPE"
-#~ msgstr "TYP"
-
-#, fuzzy
-#~ msgid "TYPE is one of gtk, text, or none"
-#~ msgstr "TYP je jedna hodnota z `gtk', `text', `graph', nebo `none'"
-
-#~ msgid "black"
-#~ msgstr "èerná"
-
-#~ msgid "red"
-#~ msgstr "èervená"
-
-#~ msgid "yellow"
-#~ msgstr "¾lutá"
-
-#~ msgid "blue"
-#~ msgstr "modrá"
-
-#~ msgid "green"
-#~ msgstr "zelená"
-
-#~ msgid "Load"
-#~ msgstr "Naèíst"
-
-#~ msgid "Swap"
-#~ msgstr "Prohodit"
-
-#~ msgid "Battery"
-#~ msgstr "Baterka"
-
-#~ msgid "Net In"
-#~ msgstr "Sí» in"
-
-#~ msgid "Net Out"
-#~ msgstr "Sí» out"
-
-#~ msgid "ppp"
-#~ msgstr "ppp"
-
-#~ msgid "Cancel"
-#~ msgstr "Zru¹it"
-
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "Hide calendar"
-#~ msgstr "Schovat kalendáø"
-
-#~ msgid "Exit                   "
-#~ msgstr "Konec                  "
-
-#~ msgid "Calendar                "
-#~ msgstr "Kalendáø                "
-
-#, fuzzy
-#~ msgid "Preferences...          "
-#~ msgstr "Nastavení...            "
-
-#~ msgid "About..                "
-#~ msgstr "O programu...          "
-
-#~ msgid "label2"
-#~ msgstr "label2"
-
-#~ msgid "label13"
-#~ msgstr "label13"
-
-#~ msgid "label14"
-#~ msgstr "label14"
-
-#~ msgid "label15"
-#~ msgstr "label15"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "label4"
-#~ msgstr "label4"
-
-#~ msgid ""
-#~ "Left\n"
-#~ "Right\n"
-#~ "Top\n"
-#~ "Bottom\n"
-#~ msgstr ""
-#~ "Na levo\n"
-#~ "Na pravo\n"
-#~ "Nahoøe\n"
-#~ "Dole\n"
-
-#~ msgid "window1"
-#~ msgstr "widnow1"
-
-#~ msgid "%s: unable to load the penguin.\n"
-#~ msgstr "%s: nelze naèíst tuèòáka.\n"
-
-#, fuzzy
-#~ msgid "Target User"
-#~ msgstr "Hledání"
-
-#~ msgid "USER"
-#~ msgstr "U®IVATEL"
-
-#~ msgid "_Save..."
-#~ msgstr "_Ulo¾it ..."
-
-#~ msgid "Write information to disk"
-#~ msgstr "Zapsat informace na disk"
-
-#~ msgid "Save not implemented yet\n"
-#~ msgstr "Ulo¾ení není zatím implementováno\n"
-
-#, fuzzy
-#~ msgid "ASCII code:"
-#~ msgstr "ASCII"
-
-#~ msgid "Please enter the name of the new project:"
-#~ msgstr "Zadejte prosím jméno nového projektu:"
-
-#~ msgid "16-bit"
-#~ msgstr "16-bitù"
-
-#, fuzzy
-#~ msgid "GOMETRY"
-#~ msgstr "GEOMETRIE"
-
-#, fuzzy
-#~ msgid "Delayed"
-#~ msgstr "Naèíst"
-
-#~ msgid "Search in"
-#~ msgstr "Hledat v"
-
-#, fuzzy
-#~ msgid "Add to favorites"
-#~ msgstr "Pøidat standardní"
-
-#~ msgid "Rename"
-#~ msgstr "Pøejmenovat"
-
-#~ msgid "Parsing Colors"
-#~ msgstr "Zpracování barev"
-
-#~ msgid "Error, cannot find the file 'rgb.txt' on your system!"
-#~ msgstr "Chyba, v systému nelze najít soubor rgb.txt!"
-
-#~ msgid "Run Program"
-#~ msgstr "Spustit program"
-
-#~ msgid "Run"
-#~ msgstr "Spustit"
-
-#~ msgid "Select a program to run"
-#~ msgstr "Vyber spou¹tìnı program"
-
-#~ msgid ""
-#~ "A quick hack to show the amount of space free on mounted file systems "
-#~ "uitilizing a dial."
-#~ msgstr ""
-#~ "Rychle napsanı program zobrazující mno¾ství pamìti na pøipojenıch discích "
-#~ "vyuívající 'tachometr'."
-
-#~ msgid "GHex: Converter"
-#~ msgstr "GHex: Konverze"
-
-#~ msgid "Hex"
-#~ msgstr "Hex"
-
-#~ msgid "Get cursor value"
-#~ msgstr "Naèíst hodnotu pod kurzorem"
-
-#~ msgid "ERROR"
-#~ msgstr "CHYBA"
-
-#~ msgid "GHex (%s): Find Data"
-#~ msgstr "GHex (%s): Najít data"
-
-#~ msgid "Find Previous"
-#~ msgstr "Najít Pøedchozí"
-
-#~ msgid "GHex (%s): Find & Replace Data"
-#~ msgstr "GHex (%s): Nahradit data"
-
-#~ msgid "Replace %s"
-#~ msgstr "Nahradit %s"
-
-#~ msgid "Find next"
-#~ msgstr "Najít dal¹í"
-
-#~ msgid "Replace"
-#~ msgstr "Nahradit"
-
-#~ msgid "Replace All"
-#~ msgstr "Nahradit v¹e"
-
-#~ msgid "GHex (%s): Jump To Byte"
-#~ msgstr "GHex (%s): Jdi na bajt"
-
-#~ msgid "End Of File reached"
-#~ msgstr "Dosa¾eno konce souboru"
-
-#~ msgid "Beginning Of File reached"
-#~ msgstr "Dosa¾eno zaèátku souboru"
-
-#~ msgid "No offset has been specified!"
-#~ msgstr "Posunutí nebylo zadáno"
-
-#~ msgid "The offset must be a positive integer value!"
-#~ msgstr "Posunutí musí bıt celá kladná hodnota!"
-
-#~ msgid "Can not position cursor beyond the End Of File!"
-#~ msgstr "Nelze dát kurzor za konec souboru"
-
-#~ msgid "Both strings must be of the same length!"
-#~ msgstr "Oba øetìzce musí mít stejnou délku!"
-
-#~ msgid "End Of File reached!"
-#~ msgstr "Dosa¾eno konce souboru!"
-
-#~ msgid "Replaced %d occurencies."
-#~ msgstr "Nahrezeno %d vıskytù."
-
-#~ msgid "_Bytes"
-#~ msgstr "_Bajtù"
-
-#~ msgid "Group data by 8 bits"
-#~ msgstr "Data do skupin po 8-mi bitech"
-
-#~ msgid "Group data by 16 bits"
-#~ msgstr "Data do skupin po 16-ti bitech"
-
-#~ msgid "Group data by 32 bits"
-#~ msgstr "Data do skupin po 32-ti bitech"
-
-#~ msgid "Jump to a certain position"
-#~ msgstr "Pøeskoèit na urèitou pozici"
-
-#~ msgid "_Goto Byte..."
-#~ msgstr "_Pøeskoèit na bajt..."
-
-#~ msgid "_Add view"
-#~ msgstr "_Pøidat pohled"
-
-#~ msgid "Add a new view of the buffer"
-#~ msgstr "Pøidat novı pohled na bufer"
-
-#~ msgid "_Remove view"
-#~ msgstr "_Odstranit pohled"
-
-#~ msgid ""
-#~ "File %s has changed since last save.\n"
-#~ "Do you want to save changes?"
-#~ msgstr ""
-#~ "Soubor %s se od posledního ulo¾ení zmìnit.\n"
-#~ "Chceto tyto zmìny ulo¾ít ?"
-
-#~ msgid "Offset: %s"
-#~ msgstr "Posun: %s"
-
-#~ msgid "Maximum number of undo levels"
-#~ msgstr "Maximální poèet vrácenıch akcí"
-
-#~ msgid "Hexadecimal"
-#~ msgstr "Hexadecimálnì"
-
-#~ msgid "Custom"
-#~ msgstr "Vlastní"
-
-#~ msgid "Editing"
-#~ msgstr "Úpravy"
-
-#~ msgid "MDI Mode"
-#~ msgstr "MDI re¾im"
-
-#~ msgid "MDI"
-#~ msgstr "MDI"
-
-#~ msgid "Can not open desired font!"
-#~ msgstr "Nelze otevøít po¾adovanı font!"
-
-#~ msgid "Open base conversion dialog"
-#~ msgstr "Otevøít dialog konverze èísel"
-
-#~ msgid "Bytes"
-#~ msgstr "Bajtù"
-
-#~ msgid "GHex, a binary file editor"
-#~ msgstr "GHex, editor binárních souborù"
-
-#~ msgid "Released under the terms of GNU Public License"
-#~ msgstr "Distribuováno pod Veøejnou licencí GNU"
-
-#~ msgid "Error saving file!"
-#~ msgstr "Chyba ukládání souboru!"
-
-#~ msgid "This is not yet implemented"
-#~ msgstr "Je¹tì není implementováno"
-
-#~ msgid "Color Values:"
-#~ msgstr "Hodnoty barvy:"
-
-#, fuzzy
-#~ msgid ""
-#~ "High Density 3.5\" (1.44 MB)\n"
-#~ "High Density 5.25\" (1.2 MB)\n"
-#~ "Double Density 3.5\" (720 KB)\n"
-#~ "Double Density 5.25\" (360 KB)\n"
-#~ msgstr ""
-#~ "Vysoká hustota 3,5\" (1,44 Ms)\n"
-#~ "Vysoká hustota 5,25\" (1,2 M)\n"
-#~ "Dvojitá hustota 3,5\" (720 K)\n"
-#~ "Dvojitá hustota 5,25\" (360 K)\n"
