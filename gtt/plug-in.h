@@ -20,6 +20,7 @@
 #define __GTT_PLUG_IN_H__
 
 #include <glib.h>
+#include <gtk/gtk.h>
 
 typedef struct GttPlugin_s
 {
@@ -34,6 +35,17 @@ GList * gtt_plugin_get_list (void);
 
 GttPlugin * gtt_plugin_new (const char * name, const char * path);
 
+
+/*-------------------------------------------- */
+/* the gui parts */
+
+typedef struct NewPluginDialog_s NewPluginDialog;
+
+NewPluginDialog * new_plugin_dialog_new (void);
+void new_plugin_dialog_show(NewPluginDialog *dlg);
+void new_plugin_dialog_destroy(NewPluginDialog *dlg);
+
+void new_report(GtkWidget *widget, gpointer data);
 
 
 #endif /* __GTT_PLUG_IN_H__ */

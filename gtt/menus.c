@@ -69,17 +69,19 @@ static GnomeUIInfo menu_main_edit[] = {
 	GNOMEUIINFO_END
 };
 
+static GnomeUIInfo menu_main_settings[] = {
+	GNOMEUIINFO_MENU_PREFERENCES_ITEM(menu_options,NULL),
+	GNOMEUIINFO_END
+};
+
 static GnomeUIInfo menu_main_reports[] = {
 	GNOMEUIINFO_ITEM_STOCK(N_("_Journal..."), NULL,
 			       edit_journal,
 			       GNOME_STOCK_MENU_BLANK),
+	GNOMEUIINFO_ITEM_STOCK(N_("_New Report..."), NULL,
+			       new_report,
+			       GNOME_STOCK_MENU_BLANK),
 	GNOMEUIINFO_SEPARATOR,
-	GNOMEUIINFO_END
-};
-
-
-static GnomeUIInfo menu_main_settings[] = {
-	GNOMEUIINFO_MENU_PREFERENCES_ITEM(menu_options,NULL),
 	GNOMEUIINFO_END
 };
 
@@ -114,8 +116,8 @@ static GnomeUIInfo menu_main_help[] = {
 static GnomeUIInfo menu_main[] = {
 	GNOMEUIINFO_MENU_FILE_TREE(menu_main_file),
 	GNOMEUIINFO_MENU_EDIT_TREE(menu_main_edit),
-	GNOMEUIINFO_SUBTREE(N_("_Reports"), menu_main_reports),
 	GNOMEUIINFO_MENU_SETTINGS_TREE(menu_main_settings),
+	GNOMEUIINFO_SUBTREE(N_("_Reports"), menu_main_reports),
 	GNOMEUIINFO_SUBTREE(N_("_Timer"), menu_main_timer),
 	GNOMEUIINFO_MENU_HELP_TREE(menu_main_help),
 	GNOMEUIINFO_END
@@ -211,7 +213,6 @@ gtt_plugin_new ("bogo","/flase/path");
 	path = g_strdup_printf ("%s/<Separator>", N_("Reports"));
 
 	gnome_app_insert_menus (app, path, plugins);
-printf ("duude add plugins \n");
 }
 
 
