@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.1\n"
 "POT-Creation-Date: 2001-11-10 19:07+0100\n"
-"PO-Revision-Date: 2001-11-10 19:11+0100\n"
+"PO-Revision-Date: 2001-11-11 11:46+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -914,7 +914,7 @@ msgstr "Dette notatet"
 
 #: gtt/ctree.c:520
 msgid "Time spent under the current task memo."
-msgstr ""
+msgstr "Tid brukt på notat under aktiv oppgave."
 
 #: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
@@ -987,7 +987,7 @@ msgstr "Ferdig"
 #: gtt/ctree.c:592
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
-msgstr ""
+msgstr "Ferdigdato: dato når prosjektet absolutt må være ferdig."
 
 #: gtt/ctree.c:599 mini-utils/guname/info.c:61
 msgid "Size"
@@ -995,7 +995,7 @@ msgstr "Størrelse"
 
 #: gtt/ctree.c:601
 msgid "Sizing: How much work it will take to finish this project."
-msgstr ""
+msgstr "Størrelse: Hvor mye arbeid vil kreves for å ferdigstille dette prosjektet."
 
 #: gtt/ctree.c:607
 msgid "Done"
@@ -1003,7 +1003,7 @@ msgstr "Ferdig"
 
 #: gtt/ctree.c:609
 msgid "Percent Complete: How much of this project has been finished till now."
-msgstr ""
+msgstr "Prosent fullført: Hvor mye av dette prosjektet er fullført hittil."
 
 #: gtt/ctree.c:616
 msgid "U"
@@ -1271,7 +1271,7 @@ msgid ""
 "and project manager.  You can measure the amount of time you spend on a "
 "task, associate a memo with it, set a billing rate, print an invoice, as "
 "well as track that status of other projects."
-msgstr ""
+msgstr "GTimeTracker er en kombinasjon av en stoppeklokke, dagbok, faktureringssystem for konsulenter og prosjekthåndterer. Du kan måle mengden tid du bruker på en oppgave, koble et notat til det, sette faktureringsrate, skrive ut faktura, i tillegg til å spore status for andre prosjekter."
 
 #: gtt/menucmd.c:142
 msgid "New Project..."
@@ -1320,7 +1320,7 @@ msgstr "Tøm daglig teller"
 
 #: gtt/menus.c:64 gtt/menus.c:174
 msgid "Zero out todays timer by deleting todays time logs"
-msgstr ""
+msgstr "Null ut dagens klokke ved å slette tidsloggene for i dag"
 
 #: gtt/menus.c:68 gtt/menus.c:87 gtt/menus.c:156
 msgid "_Journal..."
@@ -1328,7 +1328,7 @@ msgstr "_Journal..."
 
 #: gtt/menus.c:69 gtt/menus.c:88 gtt/menus.c:157
 msgid "Show the timesheet journal for this project"
-msgstr ""
+msgstr "Vis timelistejournal for dette prosjektet"
 
 #: gtt/menus.c:72 gtt/menus.c:160
 msgid "New _Task..."
@@ -1426,6 +1426,11 @@ msgid ""
 "has been stopped.\n"
 "Do you want to restart it?"
 msgstr ""
+"Tastaturet og musen har ikke vært brukt\n"
+"på %d minutter. Aktivt prosjekt\n"
+"(%s - %s)\n"
+"er stoppet.\n"
+"Vil du starte det på nytt?"
 
 #: gtt/timer.c:125
 msgid "System Idle"
@@ -1470,7 +1475,7 @@ msgstr "Journal"
 
 #: gtt/toolbar.c:194
 msgid "View and Edit Timestamp Logs"
-msgstr ""
+msgstr "Vis og regider logger for tidmerking"
 
 #: gtt/toolbar.c:199
 msgid "Props"
@@ -1558,11 +1563,11 @@ msgstr "Eksakt tid"
 
 #: gtt/glade/interval_edit.glade.h:10
 msgid "Set how Uncertain the Start Time Is"
-msgstr ""
+msgstr "Set usikkerhet for starttid"
 
 #: gtt/glade/interval_edit.glade.h:12
 msgid "Start Fuzz"
-msgstr ""
+msgstr "Start usikkerhet"
 
 #: gtt/glade/interval_popup.glade.h:1
 msgid "Delete Interval"
@@ -1586,7 +1591,7 @@ msgstr "Sett inn notat"
 
 #: gtt/glade/interval_popup.glade.h:6
 msgid "Insert a new memo above this time interval."
-msgstr ""
+msgstr "Sett inn et nytt notat over dette tidsintervallet."
 
 #: gtt/glade/interval_popup.glade.h:7
 msgid "Merge Down"
@@ -1647,6 +1652,8 @@ msgid ""
 "This function is not yet implemented!\n"
 "Coming Soon, I hope!"
 msgstr ""
+"Denne funksjonen er ikke implementert ennå!\n"
+"Håper den kommer snart!"
 
 #: gtt/glade/prefs.glade.h:1
 msgid "Display"
@@ -1654,11 +1661,11 @@ msgstr "Skjerm"
 
 #: gtt/glade/prefs.glade.h:2
 msgid "Enter a shell command to be executed when no projects are active."
-msgstr ""
+msgstr "Skriv inn en skallkommando som skal kjøres når ingen prosjekter er aktiv."
 
 #: gtt/glade/prefs.glade.h:3
 msgid "Enter a shell command to be executed whenever projects are switched."
-msgstr ""
+msgstr "Skriv inn en skallkommando som skal kjøres når det byttes prosjekt."
 
 #: gtt/glade/prefs.glade.h:4
 msgid "Entry Start:"
@@ -1673,14 +1680,14 @@ msgstr "Innleggets slutt:"
 msgid ""
 "Entry that will be logged when a project starts. Use %t for the project "
 "title, %d for the description, etc. See the manual for more options."
-msgstr ""
+msgstr "Oppføring som blir logget når et prosjekt starter. Bruk %t for prosjektets tittel, %d for beskrivelse, etc. Se håndboken for flere alternativer."
 
 #: gtt/glade/prefs.glade.h:9
 #, no-c-format
 msgid ""
 "Entry that will be logged when the project stops.  Use %t for the porject "
 "title, %d for the project description, etc. See the manual for more options."
-msgstr ""
+msgstr "Oppføring som logges når prosjektet stopper. Bruk %t for prosjektets tittel, %d for beskrivelse, etc. Se håndboken for flere alternativer."
 
 #: gtt/glade/prefs.glade.h:10
 msgid "Fields"
@@ -1696,7 +1703,7 @@ msgstr "Ledig i sekunder:"
 
 #: gtt/glade/prefs.glade.h:13
 msgid "Inactivity Timeout"
-msgstr ""
+msgstr "Tidsavbrudd ved inaktivitet"
 
 #: gtt/glade/prefs.glade.h:14
 msgid "Logfile"
@@ -1858,7 +1865,7 @@ msgstr "Vis `Klokke'"
 msgid ""
 "Show the 'szing', that is, the estimated amount of work that it will take to "
 "perform this project."
-msgstr ""
+msgstr "Vis 'szing', som er estimert arbeidsmengde som kreves for å ferdigstille dette prosjektet."
 
 #: gtt/glade/prefs.glade.h:54
 msgid "Switch Project Command:"
@@ -1868,13 +1875,13 @@ msgstr "Bytt prosjektkommando:"
 msgid ""
 "Switches between projects that happen faster than this will not be logged "
 "(enter the number of seconds)"
-msgstr ""
+msgstr "Bytting mellom prosjekter som skjer raskere enn dette vil ikke logges (skriv inn antall sekunder)"
 
 #: gtt/glade/prefs.glade.h:56
 msgid ""
 "The current active project will be made inactive after there has been no "
 "keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
-msgstr ""
+msgstr "Aktivt prosjekt vil gjøres inaktivt hvis det ikke registreres tastatur-/musaktivitet etter spesifisert antall sekunder. Sett til -1 for å slå av."
 
 #: gtt/glade/prefs.glade.h:57
 msgid "Toolbar"
@@ -1926,11 +1933,11 @@ msgid ""
 "Does this item need immediate attention? Note that some urgent tasks might "
 "not be important.  For example, Bill may want you to answer his email today, "
 "but you may have better things to do today."
-msgstr ""
+msgstr "Trenger denne oppføringen øyeblikkelig tilsyn? Merk at noen hastesaker kanskje ikke er viktige. For eksempel, Bill vil kanskje at du svarer på hans e-post i dag, men du har kanskje viktigere ting å gjøre i dag."
 
 #: gtt/glade/project_properties.glade.h:12
 msgid "Double-Overtime Rate:"
-msgstr ""
+msgstr "Rate for dobbelt overtid:"
 
 #: gtt/glade/project_properties.glade.h:13
 msgid "Due Date:"
@@ -1949,19 +1956,19 @@ msgid ""
 "How important is it to perform this task?  Not everything important is "
 "urgent.  For example, it is important to file a tax return every year, but "
 "you have a lot of time to get ready to do this."
-msgstr ""
+msgstr "Hvor viktig er det å utføre denne oppgaven? Ikke alle viktige oppgaver haster. Eksempel: Det er viktig å sende inn selvangivelsen hvert år, men du har ganske god tid for å utføre denne oppgaven."
 
 #: gtt/glade/project_properties.glade.h:18
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
-msgstr ""
+msgstr "Hvis avstanden mellom intervallene er mindre enn dette så vil de flettes sammen."
 
 #: gtt/glade/project_properties.glade.h:19
 msgid ""
 "If this project is billed for one price no matter how long it takes, enter "
 "the fee here."
-msgstr ""
+msgstr "Hvis dette prosjektet avregnes for en pris uansett hvor lang tid det tar, skriv inn beløpet her."
 
 #: gtt/glade/project_properties.glade.h:20
 msgid "Importance:"
@@ -1971,7 +1978,7 @@ msgstr "Viktighet:"
 msgid ""
 "Internal notes about the project, memos that will not be printed on an "
 "invoice."
-msgstr ""
+msgstr "Interne notater om prosjektet, notater som ikke vil skrives ut på en faktura."
 
 #: gtt/glade/project_properties.glade.h:23
 msgid "Intervals"
@@ -1979,7 +1986,7 @@ msgstr "Intervaller"
 
 #: gtt/glade/project_properties.glade.h:24
 msgid "Intervals smaller than this will be discarded"
-msgstr ""
+msgstr "Intervaller som er mindre en dette vil forkastes"
 
 #: gtt/glade/project_properties.glade.h:26
 msgid "Medium"
@@ -2044,11 +2051,11 @@ msgstr "Kroner i time som påregnes for overtidsarbeid på dette prosjektet."
 
 #: gtt/glade/project_properties.glade.h:43
 msgid "The dollars per hour normally charged for this project."
-msgstr ""
+msgstr "Timepris i kroner som normalt tas for dette prosjektet."
 
 #: gtt/glade/project_properties.glade.h:44
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
-msgstr ""
+msgstr "Rate for 100% overtid (overtid på søndager, etc)"
 
 #: gtt/glade/project_properties.glade.h:45
 msgid "Time below which an interval is merged with its neighbors"
@@ -2092,7 +2099,7 @@ msgstr "Rediger notatet og andre oppgaveegenskaper."
 
 #: gtt/glade/task_popup.glade.h:6
 msgid "Insert a new memo above this one."
-msgstr ""
+msgstr "Sett inn et nytt notat over dette."
 
 #: gtt/glade/task_popup.glade.h:8
 msgid "_Edit Memo"
@@ -2108,31 +2115,31 @@ msgstr "_Lim inn notat"
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
-msgstr ""
+msgstr "Et sett private notater som ikke skrives ut på en faktura."
 
 #: gtt/glade/task_properties.glade.h:2
 msgid "A short description to attach to this block of time."
-msgstr ""
+msgstr "En kort beskrivelse som skal festes til denne tidsblokken."
 
 #: gtt/glade/task_properties.glade.h:5
 msgid "Billable:"
-msgstr ""
+msgstr "Fakturerbar:"
 
 #: gtt/glade/task_properties.glade.h:6
 msgid "Billing Block:"
-msgstr ""
+msgstr "Faktureringsintervall:"
 
 #: gtt/glade/task_properties.glade.h:7
 msgid "Billing Rate:"
-msgstr ""
+msgstr "Faktureringsrate:"
 
 #: gtt/glade/task_properties.glade.h:8
 msgid "Billing Status:"
-msgstr ""
+msgstr "Fakturastatus:"
 
 #: gtt/glade/task_properties.glade.h:9
 msgid "Fee rate to be charged for this task."
-msgstr ""
+msgstr "Fakturarate som tas for denne oppgaven."
 
 #: gtt/glade/task_properties.glade.h:12
 msgid ""
@@ -2140,14 +2147,14 @@ msgid ""
 "the normal fashion.   \"Not Billable\" means we can't ask for money for "
 "this, don't print on the invoice.   \"No Charge\" means print on the invoice "
 "as 'free/no-charge'."
-msgstr ""
+msgstr "Hvordan skal denne oppgaven faktureres? \"Fakturerbar\" betyr at kunden faktureres på vanlig måte. \"Ikke fakturerbar\" betyr at vi ikke kan be om betaling for dette. Kommer ikke på fakturaen. \"Ingen betaling\" betyr at det skal skrives på fakturaen som 'gratis/ingen betaling'."
 
 #: gtt/glade/task_properties.glade.h:13
 msgid ""
 "Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
 "not yet, needs review.   \"Bill\" means print this on the next invoice.   "
 "\"Paid\" means that it should no longer be included on invoices."
-msgstr ""
+msgstr "Er denne oppgaven klar for fakturering for kunden? \"Vent\" betyr kanskje, men ikke ennå. Krever oversyn. \"Fakturer\" betyr skriv dette på neste faktura. \"Betalt\" betyr at denne ikke skal være med på fakturaer."
 
 #: gtt/glade/task_properties.glade.h:14
 msgid "Memo:"
@@ -2155,7 +2162,7 @@ msgstr "Notat:"
 
 #: gtt/glade/task_properties.glade.h:18
 msgid "OverOver"
-msgstr ""
+msgstr "100%"
 
 #: gtt/glade/task_properties.glade.h:22
 msgid "Task Properties"
