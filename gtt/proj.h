@@ -289,11 +289,19 @@ GttBillRate	gtt_task_get_billrate (GttTask *);
 void		gtt_task_set_bill_unit (GttTask *, int);
 int		gtt_task_get_bill_unit (GttTask *);
 
-/* The gtt_task_new_insert() routine creates a new task with the same
+/* The gtt_task_remove() routine will remove teh task from its parent
+ *    project (presumably in preparation for reparenting).
+ *
+ * The gtt_task_new_insert() routine creates a new task with the same
  *    settings as the indicated task. It does *not* copy the intervals.
  *    It inserts the new task above the indicated task.
+ *
+ * The gtt_task_is_first_task() routine returns True if this task
+ *    is the leading task of the project.
  */
+void		gtt_task_remove (GttTask *);
 GttTask *	gtt_task_new_insert (GttTask *);
+gboolean	gtt_task_is_first_task (GttTask *);
 
 
 GList *		gtt_task_get_intervals (GttTask *);

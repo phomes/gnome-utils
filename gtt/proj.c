@@ -28,6 +28,12 @@
 #include "proj.h"
 #include "proj_p.h"
 
+typedef struct notif_s 
+{
+	GttProjectChanged func;
+	gpointer user_data;
+} Notifier;
+
 // hack alert -- should be static
 GList * plist = NULL;
 
@@ -185,6 +191,18 @@ gtt_project_destroy(GttProject *proj)
 		}
 	}
 
+	/* remove notifiers as well */
+	{
+		Notifier * ntf;
+		GList *node;
+	
+		for (node = proj->listeners; node; node=node->next)
+		{
+			ntf = node->data;
+			g_free (ntf);
+		}
+		if (proj->listeners) g_list_free (proj->listeners);
+	}
 	g_free(proj);
 }
 
@@ -936,13 +954,7 @@ gtt_project_list_compute_secs (void)
 }
 
 /* =========================================================== */
-/* even ntificatin subsystem */
-
-typedef struct notif_s 
-{
-	GttProjectChanged func;
-	gpointer user_data;
-} Notifier;
+/* even notification subsystem */
 
 void
 gtt_project_add_notifier (GttProject *prj, 
@@ -1337,6 +1349,19 @@ gtt_task_destroy (GttTask *task)
 	}
 }
 
+void
+gtt_task_remove (GttTask *task)
+{
+	if (!task) return;
+	if (task->parent)
+	{
+		task->parent->task_list = 
+			g_list_remove (task->parent->task_list, task);
+		proj_refresh_time (task->parent);
+		task->parent = NULL;
+	}
+}
+
 
 void
 gtt_task_add_interval (GttTask *tsk, GttInterval *ival)
@@ -1448,6 +1473,15 @@ gtt_task_get_intervals (GttTask *tsk)
 {
 	if (!tsk) return NULL;
 	return tsk->interval_list;
+}
+
+gboolean
+gtt_task_is_first_task (GttTask *tsk)
+{
+	if (!tsk || !tsk->parent || !tsk->parent->task_list) return TRUE;
+	
+	if ((GttTask *) tsk->parent->task_list->data == tsk) return TRUE;
+	return FALSE;
 }
 
 /* =========================================================== */

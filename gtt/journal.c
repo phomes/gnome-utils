@@ -230,6 +230,11 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 }
 
 /* ============================================================== */
+/* global clipboard, allows cut task to be reparented to a different project */
+
+static GttTask * cutted_task = NULL;
+
+/* ============================================================== */
 /* interval popup actions */
 
 static void
@@ -305,13 +310,26 @@ task_delete_memo_clicked_cb(GtkWidget * w, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
 printf ("duuude del mem\n");
+#if 0
+	if (cutted_task)
+	{
+		gtt_task_destroy (cutted_task);
+	}
+	cutted_task = wig->task;
+	gtt_task_remove (cutted_task);
+#endif
 }
 
 static void
 task_delete_times_clicked_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-printf ("duuude del tim\n");
+	if (cutted_task)
+	{
+		gtt_task_destroy (cutted_task);
+	}
+	cutted_task = wig->task;
+	gtt_task_remove (cutted_task);
 }
 
 static void
@@ -319,6 +337,10 @@ task_popup_cb (Wiggy *wig)
 {
 	gtk_menu_popup(GTK_MENU(wig->task_popup), 
 		NULL, NULL, NULL, wig, 1, 0);
+	if (gtt_task_is_first_task (wig->task))
+	{
+printf ("first task\n");
+	}
 }
 
 /* ============================================================== */
