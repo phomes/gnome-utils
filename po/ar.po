@@ -1,19 +1,23 @@
+# translation of gnome-utils.po to
 # translation of gnome-utils.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002
+# Isam Bayazidi <bayazidi@arabeyes.org>, 2002
+# Arafat Medini <lumina@silverpen.de>, 2003
+# Arafat Medini <silverwhale@silverpen.de>, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-05-24 12:39+0100\n"
-"PO-Revision-Date: 2002-05-31 19:09-0300\n"
-"Last-Translator: Isam Bayazidi <bayazidi@arabeyes.org>\n"
-"Language-Team: Arabic <support@arabeyes.org>\n"
+"POT-Creation-Date: 2003-04-27 20:02+0200\n"
+"PO-Revision-Date: 2003-05-28 18:32+0200\n"
+"Last-Translator: Arafat Medini <silverwhale@silverpen.de>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0.1\n"
 
 #: exe-handler/gnome-exe-handler.c:76
 #, c-format
@@ -23,9 +27,9 @@ msgid ""
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
-"إجراء برامج عشوائية قمت بتحميلها من الشبكة قد يكون مجازفة.\n"
+"تشغيل برامج عشوائية قمت بانزالها من الشبكة قد يكون مجازفة.\n"
 "\n"
-"هل أنت متأكد من أنك تريد إجراء `%s'؟ "
+"هل أنت متأكد من أنك تريد إجراء `%s'?"
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
@@ -78,25 +82,23 @@ msgstr "هذا البرنامج لمنصة أخرى ولا يمكن إجراؤه
 #: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: logview/about.c:52
 msgid "translator_credits"
-msgstr "تكريم للمترجمين"
+msgstr "_تكريم للمترجمين"
 
 #: gcalc/gcalc.c:60
 msgid "GNOME Calculator"
-msgstr "آلة جينوم الحاسبة"
+msgstr "آلة جنوم الحاسبة"
 
 #: gcalc/gcalc.c:61
-#, fuzzy
 msgid "(C) 1998 Free Software Foundation, Inc."
-msgstr "(C) 1998،2002 مؤسسة البرامج الحرة"
+msgstr "(C) 1998 مؤسسة البرامج الحرة"
 
 #: gcalc/gcalc.c:62
-#, fuzzy
 msgid "Simple double precision calculator similar to xcalc"
-msgstr "آلة حاسبة بسيطة بدقة مزدوجة شبيهة بـ xcalc"
+msgstr "آلة حاسبة بسيطة بدقة مزدوجة شبيهة لـ xcalc"
 
 #: gcalc/gcalc.c:140
 msgid "_Calculator"
-msgstr "آلة حاسبة"
+msgstr "آ_لة حاسبة"
 
 #: gcalc/gcalc.c:191 gcalc/gnome-calculator.desktop.in.h:1
 msgid "Calculator"
@@ -128,7 +130,7 @@ msgstr "مقلوب"
 
 #: gcalc/gnome-calc.c:1257
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "س<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1257
 msgid "Square"
@@ -136,7 +138,7 @@ msgstr "مربع"
 
 #: gcalc/gnome-calc.c:1258
 msgid "SQRT"
-msgstr "SQRT"
+msgstr "جذر"
 
 #: gcalc/gnome-calc.c:1258
 msgid "Square root"
@@ -169,27 +171,27 @@ msgstr "مقلوب دالة لوغ/المثلثات"
 #. inverse button
 #: gcalc/gnome-calc.c:1263
 msgid "sin"
-msgstr "جا"
+msgstr "sin"
 
 #: gcalc/gnome-calc.c:1263
 msgid "Sine"
-msgstr "جا"
+msgstr "Sine"
 
 #: gcalc/gnome-calc.c:1264
 msgid "cos"
-msgstr "جتا"
+msgstr "cos"
 
 #: gcalc/gnome-calc.c:1264
 msgid "Cosine"
-msgstr "جتا"
+msgstr "Cosine"
 
 #: gcalc/gnome-calc.c:1265
 msgid "tan"
-msgstr "ظا"
+msgstr "tan"
 
 #: gcalc/gnome-calc.c:1265
 msgid "Tangent"
-msgstr "ظا"
+msgstr "Tangent"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
 #: gcalc/gnome-calc.c:1267
@@ -198,7 +200,7 @@ msgstr " DEG  "
 
 #: gcalc/gnome-calc.c:1267
 msgid "Switch degrees / radians / grad"
-msgstr "تحويل الدرجات / اﻷقطار / الميل"
+msgstr "تحويل الدرجات / اﻻقطار / الميل"
 
 #: gcalc/gnome-calc.c:1269
 msgid "e"
@@ -230,19 +232,19 @@ msgstr "ln"
 
 #: gcalc/gnome-calc.c:1272
 msgid "Natural Logarithm"
-msgstr "اللوغاريثمية الطبيعية"
+msgstr "اللوغاريثم الطبيعي"
 
 #: gcalc/gnome-calc.c:1273
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "س<sup>ص</sup>"
 
 #: gcalc/gnome-calc.c:1273
 msgid "Power"
-msgstr "أس"
+msgstr "قوّة"
 
 #: gcalc/gnome-calc.c:1275
 msgid "PI"
-msgstr "باي"
+msgstr "PI"
 
 #: gcalc/gnome-calc.c:1276
 msgid "x!"
@@ -285,8 +287,8 @@ msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
-"خزّن القيمة في حقل\n"
-"العرض بالذاكرة"
+"خزّن القيمة في\n"
+"عرض الحقل في الذاكرة"
 
 #: gcalc/gnome-calc.c:1282
 msgid "7"
@@ -298,7 +300,7 @@ msgstr "8"
 
 #: gcalc/gnome-calc.c:1284
 msgid "9"
-msgstr "٩"
+msgstr "9"
 
 #: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:2
 msgid "*"
@@ -317,7 +319,7 @@ msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
-"اعرض القيمة بالذاكرة\n"
+"اعرض القيمة  فيالذاكرة\n"
 "في حقل العرض"
 
 #: gcalc/gnome-calc.c:1288
@@ -402,7 +404,7 @@ msgstr "+/-"
 
 #: gcalc/gnome-calc.c:1302
 msgid "Change sign"
-msgstr "غير الإشارة"
+msgstr "غيّر الإشارة"
 
 #: gcalc/gnome-calc.c:1303
 msgid "="
@@ -414,11 +416,11 @@ msgstr "احسب"
 
 #: gcalc/gnome-calculator.desktop.in.h:2
 msgid "Perform simple calculations"
-msgstr "القيام بعمليات حسابية بسيطة"
+msgstr "القيام بعمليّات حسابيّة بسيطة"
 
 #: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:159
 msgid "Character Map"
-msgstr "خريطة الرموز"
+msgstr "خريطة الرّموز"
 
 #: gcharmap/gnome-character-map.desktop.in.h:2
 msgid "Insert special characters into documents"
@@ -430,15 +432,13 @@ msgstr "اختر رمزا"
 
 #: gcharmap/src/asciiselect.c:152
 msgid "_Insert"
-msgstr "أدرج"
+msgstr "أ_درج"
 
 #: gcharmap/src/asciiselect.c:155
-#, fuzzy
 msgid "Character c_ode:"
 msgstr "شفرة الرمز:"
 
 #: gcharmap/src/asciiselect.c:178
-#, fuzzy
 msgid "Ch_aracter:"
 msgstr "الرمز:"
 
@@ -460,22 +460,21 @@ msgstr "رمز لإدراجه"
 
 #: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
-msgstr "خريطة رموز جينوم"
+msgstr "خريطة رموز جنوم"
 
 #: gcharmap/src/callbacks.c:66
-msgid ""
-"Select, copy and paste characters from your font into other applications"
-msgstr "اختر ثم انسخ والصق الرموز من خطك إلى التطبيقات اﻷخرى"
+msgid "Select, copy and paste characters from your font into other applications"
+msgstr "اختر ثم انسخ فالصق الرموز من خطك إلى تطبيقات اخرى"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
-#, fuzzy, c-format
+#, c-format
 msgid "Character code: (Unicode) U%04lX"
-msgstr "شفرة الرمز:"
+msgstr "شفرة الرمز: (يونيكود) U%04lX"
 
 #: gcharmap/src/callbacks.c:134
 #, c-format
 msgid "Character code: (Unicode) U%04lX, (%s) 0x%s"
-msgstr ""
+msgstr "شفرة الرمز: (يونيكود) U%04lX، (%s) 0x%s"
 
 #: gcharmap/src/callbacks.c:192
 msgid "Text copied to clipboard..."
@@ -494,23 +493,22 @@ msgid "Action Toolbar"
 msgstr "شريط أدوات الفعل"
 
 #: gcharmap/src/interface.c:193
-#, fuzzy
 msgid "_Font:"
-msgstr "المنفذ:"
+msgstr "ال_خط:"
 
 #. The page selector
 #: gcharmap/src/interface.c:209
 msgid "_Page:"
-msgstr ""
+msgstr "_الصفحة:"
 
 #. end of page selector
 #: gcharmap/src/interface.c:224
 msgid "_Text to copy:"
-msgstr "نص للنسخ:"
+msgstr "_نص للنسخ:"
 
 #: gcharmap/src/interface.c:239
 msgid "_Copy"
-msgstr "انسخ"
+msgstr "ا_نسخ"
 
 #: gcharmap/src/interface.c:263 gcharmap/src/interface.c:264
 msgid "Text to copy"
@@ -530,14 +528,13 @@ msgstr "انسخ النص"
 
 #: gcharmap/src/menus.c:34
 msgid "_Browse..."
-msgstr "تصفح..."
+msgstr "_تصفّح..."
 
 #: gcharmap/src/menus.c:35
 msgid "Insert character(s) by choosing character codes."
 msgstr "أدرج رمزا (رموزا) باختيار شفرة الرمز."
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
 msgstr "الرموز"
 
@@ -570,7 +567,7 @@ msgstr "شريط تقدم Gdialog"
 
 #: gdialog/guage.c:78
 msgid "Indicates the percentage specified at the standard input"
-msgstr "تشير إلى النسبة المئوية المحددة على أداة اﻹدخال القياسية"
+msgstr "تشير إلى النسبة المئوية المحددة على أداة اﻻدخال القياسية"
 
 #: gdialog/inputbox.c:84
 msgid "GDialog Entry"
@@ -599,48 +596,47 @@ msgstr "ابحث في القاموس عن النص المختار..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:2
 msgid "_About..."
-msgstr "حول..."
+msgstr "_حول..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:3
 msgid "_Help"
-msgstr "مساعدة"
+msgstr "_مساعدة"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:4
 msgid "_Preferences"
-msgstr "تفضيلات"
+msgstr "_تفضيلات"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:5
 msgid "_Show/Hide Definition Window..."
-msgstr "أظهر/أخف نافذة التعريف..."
+msgstr "أ_ظهر/أخف نافذة التعريف..."
 
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
-msgstr "تعذر الاتصال بالخادم"
+msgstr "تعذّر الاتصال بالخادم"
 
-#: gdictsrc/dict.c:663
+#: gdictsrc/dict.c:661
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
-"حدث خطأ فادح. رجاء تأكد من كون خادمك والمنفذ صحيين. للعلم، فإن الخادم "
+"حدث خطأ فادح. رجاء تأكد من كون خادمك والمنفذ صحيحين. للعلم، فإن الخادم "
 "الافتراضي هو dict.org بالمنفذ 2628"
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "معجم"
+msgstr "قاموس جنوم"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "حقوق الطبع  1999 لمايك هيوز  "
 
 #: gdictsrc/gdict-about.c:58
 msgid "Client for MIT dictionary server.\n"
-msgstr ""
+msgstr "خادم لنادل MIT للقاموس.\n"
 
 #: gdictsrc/gdict-app.c:128
 msgid "Spell-checking..."
@@ -652,7 +648,7 @@ msgstr "تم التدقيق الإملائي"
 
 #: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
-msgstr "لا توجد متطابقات"
+msgstr "لا توجد مطابقات"
 
 #: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
@@ -672,7 +668,7 @@ msgstr "ابحث"
 
 #: gdictsrc/gdict-app.c:490
 msgid "_Find"
-msgstr "ابحث"
+msgstr "ا_بحث"
 
 #: gdictsrc/gdict-app.c:540
 msgid ""
@@ -682,12 +678,12 @@ msgid ""
 msgstr ""
 "لم أستطع القيام بالعملية المطلوبة.\n"
 "إما أن الخادم الذي تستخدمه غير موجود \n"
-"أو أنك غير متصل باﻹنترنت."
+"أو أنك غير متصل باﻻنترنت."
 
 #: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
-msgstr "ابحث عن كلمة"
+msgstr "ا_بحث عن كلمة"
 
 #: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
@@ -695,7 +691,7 @@ msgstr "ابحث عن كلمة في المعجم"
 
 #: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
-msgstr "تدقيق إملائي"
+msgstr "_تدقيق إملائي"
 
 #: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
@@ -703,7 +699,7 @@ msgstr "افحص إملاء كلمة"
 
 #: gdictsrc/gdict-app.c:749
 msgid "_Dictionary"
-msgstr "المعجم"
+msgstr "_معجم"
 
 #: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
@@ -711,7 +707,7 @@ msgstr "معجم"
 
 #: gdictsrc/gdict-app.c:808
 msgid "_Word: "
-msgstr "الكلمة: "
+msgstr "_كلمة: "
 
 #: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
@@ -724,7 +720,7 @@ msgstr "خانة كلمة"
 
 #: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
-msgstr "أدخل كلمة أو اختر واحدة من القائمة السفلى"
+msgstr "إدخل كلمة أو اختر واحدة من القائمة السفلى"
 
 #: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
@@ -732,7 +728,7 @@ msgstr "ابحث عن كلمة في المعجم"
 
 #: gdictsrc/gdict-applet.c:263
 msgid "_Lookup"
-msgstr "ابحث في المعجم"
+msgstr "ا_بحث في المعجم"
 
 #: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
 #, c-format
@@ -777,16 +773,15 @@ msgstr "تفضيلات المعجم"
 
 #: gdictsrc/gdict-pref-dialog.c:198
 msgid "Smart _lookup"
-msgstr "بحث حاذق"
+msgstr "_بحث حاذق"
 
 #: gdictsrc/gdict-pref-dialog.c:211
 msgid "_Server:"
-msgstr "الخادم:"
+msgstr "ال_خادم:"
 
 #: gdictsrc/gdict-pref-dialog.c:218
-#, fuzzy
 msgid "De_fault Server"
-msgstr "استراتيجية افتراضية"
+msgstr "النادل الافترا_ضي"
 
 #: gdictsrc/gdict-pref-dialog.c:224
 msgid "Reset server to default"
@@ -794,12 +789,11 @@ msgstr "اعادة تعيين الخادم للافتراضيات"
 
 #: gdictsrc/gdict-pref-dialog.c:226
 msgid "_Port:"
-msgstr "المنفذ:"
+msgstr "ال_منفذ:"
 
 #: gdictsrc/gdict-pref-dialog.c:240
-#, fuzzy
 msgid "Def_ault Port"
-msgstr "الافتراضيات"
+msgstr "المنفذ ال_إفتراضي"
 
 #: gdictsrc/gdict-pref-dialog.c:247
 msgid "Reset port to default"
@@ -831,11 +825,11 @@ msgstr "أدخل رقم المنفذ"
 
 #: gdictsrc/gdict-pref-dialog.c:258
 msgid "_Database:"
-msgstr "قاعدة البيانات:"
+msgstr "_قاعدة البيانات:"
 
 #: gdictsrc/gdict-pref-dialog.c:265
 msgid "D_efault strategy:"
-msgstr "الاستراتيجية الافتراضية:"
+msgstr "الا_ستراتيجية الافتراضية:"
 
 #: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
@@ -855,7 +849,7 @@ msgstr "استراتيجية افتراضية"
 
 #: gdictsrc/gdict-speller.c:135
 msgid "_Word:"
-msgstr "الكلمة:"
+msgstr "ال_كلمة:"
 
 #: gdictsrc/gdict-speller.c:148
 msgid "Enter a word to know the spelling"
@@ -867,11 +861,11 @@ msgstr "انقر لتنفيذ التدقيق الإملائي"
 
 #: gdictsrc/gdict-speller.c:158
 msgid "Search S_trategy:"
-msgstr "استراتيجية البحث:"
+msgstr "اس_تراتيجية البحث:"
 
 #: gdictsrc/gdict-speller.c:174
 msgid "Search _Results"
-msgstr "نتائج البحث"
+msgstr "_نتائج البحث"
 
 #: gdictsrc/gdict-speller.c:236
 msgid "Check Spelling"
@@ -882,45 +876,48 @@ msgid "Search Strategy"
 msgstr "استراتيجية البحث"
 
 #: gdictsrc/gdict.schemas.in.h:1
-#, fuzzy
 msgid "Dictionary server"
-msgstr "معجم"
+msgstr "خادم القاموس"
 
 #: gdictsrc/gdict.schemas.in.h:2
-#, fuzzy
 msgid "Port used to connect to server"
-msgstr "تعذر الاتصال بالخادم"
+msgstr "المنْفذ الذي يُستخدم للاتصال مع الخادم"
 
 #: gdictsrc/gdict.schemas.in.h:3
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"خصّص ما اذا كان البحث الذكي سيُستخدم . هذا المفتاح  متعلق بما اذا كان خادم "
+"القاموس يدعم هذا الخيار. الافتراضي هو TRUE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "قاعدة البيانات التي ستسخدم في خادم القاموس"
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"خادم القاموس للاتصال به. الخادم الافتراضي هو dict.org. لمزيد من المعلومات عن "
+"الخادمات الأخرى انظر http://www.dict.org"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"اسم قاعدة البانات المستقلة التي ستستخدم في خادم القاموس. !  يذكر أن قاموس "
+"جنوم ينبغي أن يبحث في كل قواعد البيانات الموجوده في الخادم المُدخل"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "رقم المنفذ للاتصال به . الافتراضي هو 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "استراتيجية البحث"
+msgstr "استراتيجية البحث لاستخدامها"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -928,19 +925,22 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"استراتيجية البحث التي تود  استخدامها . وهذه تعتمد على استراتيجية البحث التي "
+"يدعمها  خادم القاموس. استراتيجية البحث الافتراضية هي 'lev'  أي مطابقة "
+"الكلمات باستخدام منطق Levenshtein  مع مسافة قدرها 1 (أي اختلاف في حرف واحد "
+"فقط سواء بالزيادة أو النقص أو التبديل)"
 
 #: gdictsrc/gdict.schemas.in.h:10
-#, fuzzy
 msgid "Use smart lookup"
-msgstr "بحث حاذق"
+msgstr "استعمل البحث الذكي"
 
 #: gfloppy/gfloppy.desktop.in.h:1
 msgid "Floppy Formatter"
-msgstr "مهيىء الأقراص المرنة"
+msgstr "مهيّىء الأقراص المرنة"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "Format Floppy Disks"
-msgstr "تهيئة اﻷقراص المرنة"
+msgstr "تهيئة الأقراص المرنة"
 
 #: gfloppy/src/badblocks.c:102
 msgid "MInternal Error: Unable to seek to the correct location."
@@ -960,7 +960,7 @@ msgstr "فحص المربعات المعطوبة..."
 #: gfloppy/src/badblocks.c:281
 #, c-format
 msgid "MFailed to open device %s for badblock checking\n"
-msgstr "لقد فشل فتح اﻷداة %s لفحص المربعات المعطوبة\n"
+msgstr "لقد فشل فتح الأداة %s لفحص المربعات المعطوبة\n"
 
 #: gfloppy/src/badblocks.c:301 gfloppy/src/gfloppy.c:536
 msgid "MChecking for bad blocks... Done"
@@ -1037,32 +1037,32 @@ msgid ""
 "ERead Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
 msgstr ""
-"خطأ في القراءة:\n"
-"مشكلة قراءة اﻷسطوانة %d، المتوقع %d، المقروء %d"
+"خطأ قراءة:\n"
+"مشكلة قراءة الإسطوانة %d، المتوقع %d، المقروء %d"
 
 #: gfloppy/src/fdformat.c:132
 #, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr "مشكلة قراءة اﻷسطوانة %d، المتوقع %d، المقروء %d"
+msgstr "مشكلة قراءة الإسطوانة %d، المتوقع %d، المقروء %d"
 
 #: gfloppy/src/fdformat.c:141
 #, c-format
 msgid "MBad data in cyl %d.  Continuing... "
-msgstr "بيانات خاطئة في الأسطوانة %d.  متابعة... "
+msgstr "بيانات خاطئة في الإسطوانة %d.  متابعة... "
 
 #: gfloppy/src/fdformat.c:148
 #, c-format
 msgid "EError closing device %s"
-msgstr "حدث خطأ في غلق اﻷداة %s"
+msgstr "حدث خطأ في غلق الأداة %s"
 
 #: gfloppy/src/fdformat.c:153
 msgid "MVerifying the format... Done"
-msgstr "التأكد من التهيئة... تمت"
+msgstr "التأكد من التهيئة... تمّ"
 
 #: gfloppy/src/fdformat.c:165
 #, c-format
 msgid "EUnable to write to device %s"
-msgstr "تعرت الكتابة في اﻷداة %s"
+msgstr "تعذرت الكتابة في الأداة %s"
 
 #: gfloppy/src/fdformat.c:184
 #, c-format
@@ -1076,26 +1076,25 @@ msgstr ""
 "رمز الخطأ %s"
 
 #: gfloppy/src/fdformat.c:194
-#, fuzzy
 msgid "ECould not determine current floppy geometry."
-msgstr "لم أستطع تحديد نوع التهيئة الحالي"
+msgstr "لم أستطع تحديد هندسة القرس المرن."
 
 #: gfloppy/src/gfloppy.c:229
 msgid "EError while creating a unique filename for the bad blocks list file."
-msgstr ""
+msgstr "خطأ أثناء إنشاء إسم ملف أوحد لملف قائمة ال السيئة."
 
 #: gfloppy/src/gfloppy.c:249
 msgid "EError while filling the bad blocks list file."
-msgstr ""
+msgstr "خطأ عند ملأ ملف القائمة لل السيئة."
 
 #: gfloppy/src/gfloppy.c:308
 #, c-format
 msgid "EError while spawning the (%s) command: %s."
-msgstr ""
+msgstr "خطأ عند قلب الأمر (%s): %s."
 
 #: gfloppy/src/gfloppy.c:332
 msgid "EUnknown mke2fs starting signature, cancelling."
-msgstr ""
+msgstr "إمضاء البدأ لـ mke2fs غير معروف، إلغاء."
 
 #: gfloppy/src/gfloppy.c:346
 #, c-format
@@ -1104,15 +1103,18 @@ msgid ""
 "\n"
 "%s (%d)"
 msgstr ""
+"أدات إنشاء جهاز الملفات (%s) سجل الأخطاء التالية:\n"
+"\n"
+"%s (%d)"
 
 #: gfloppy/src/gfloppy.c:363
 msgid "EAbnormal child process termination."
-msgstr ""
+msgstr "انتهاء غير عادي للعملية الإبنة"
 
 #: gfloppy/src/gfloppy.c:388
 #, c-format
 msgid "EError while spawning the mbadblocks command: %s."
-msgstr ""
+msgstr "خطأ عند قلب أمر mbadblock: %s."
 
 #: gfloppy/src/gfloppy.c:400
 #, c-format
@@ -1121,10 +1123,12 @@ msgid ""
 "errors:\n"
 "%s."
 msgstr ""
+"أدات فحص المربعات المعطوبة (mbadblocks) قرر الأخطاء التالية:\n"
+"%s."
 
 #: gfloppy/src/gfloppy.c:443
 msgid "EAbnormal mbadblocks child process termination."
-msgstr ""
+msgstr "إنتهاء غير عادي للعملية الإبنة للمربعات المعطوبة لالذاكرة."
 
 #. make the filesystem
 #: gfloppy/src/gfloppy.c:470 gfloppy/src/gfloppy.c:510
@@ -1144,113 +1148,105 @@ msgid "MChecking for bad blocks... (this might take a while)"
 msgstr "فحص المربعات المعطوبة... (قد يستغرق هذا وقتا طويلا)"
 
 #: gfloppy/src/gfloppy.c:532
-#, fuzzy
 msgid "EError while checking the bad blocks."
 msgstr "فحص المربعات المعطوبة..."
 
 #: gfloppy/src/gfloppy2.glade.h:1
 msgid "    "
-msgstr ""
+msgstr "...."
 
 #: gfloppy/src/gfloppy2.glade.h:3
 msgid ""
 "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
 "be installed in order to make a thorough DOS (fat) formatting."
 msgstr ""
+"<b> ملاحظة</b>: أدات مربعات الذاكرة المعطوبة ليس مثبتا على نظامك. يجب "
+"أن تثبت الأدات لتمكين تهيئ DOS (fat) "
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "<span weight=\"bold\">Filesystem settings</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">تعيينات جهاز الملفات</span>"
 
 #: gfloppy/src/gfloppy2.glade.h:5
 msgid "<span weight=\"bold\">Formatting mode</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">نمط التهيئة</span>"
 
 #: gfloppy/src/gfloppy2.glade.h:6
 msgid "<span weight=\"bold\">Physical settings</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">التعيينات المادية</span>"
 
 #: gfloppy/src/gfloppy2.glade.h:7
-#, fuzzy
 msgid "DOS (FAT)"
 msgstr "دوس (fat)"
 
 #: gfloppy/src/gfloppy2.glade.h:8
-#, fuzzy
 msgid "Double Density 3.5\" (720KB)"
 msgstr "كثافة مزدوجة 3.5\" (720 KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:9
-#, fuzzy
 msgid "Double Density 5.25\" (360KB)"
 msgstr "كثافة مزدوجة 5.25\" (360 KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:10
 msgid "File system _type:"
-msgstr "نوع نظام الملفات:"
+msgstr "_نوع نظام الملفات:"
 
 #: gfloppy/src/gfloppy2.glade.h:11
-#, fuzzy
 msgid "Floppy _density:"
-msgstr "كثافة القرص المرن:"
+msgstr "_كثافة القرص المرن:"
 
 #: gfloppy/src/gfloppy2.glade.h:12
-#, fuzzy
 msgid "Floppy de_vice:"
-msgstr "أداة القرص المرن:"
+msgstr "_جهاز القرص المرن:"
 
 #: gfloppy/src/gfloppy2.glade.h:13
-#, fuzzy
 msgid "Floppy formatter"
-msgstr "مهيىء الأقراص المرنة"
+msgstr "مهيّىء الأقراص المرنة"
 
 #: gfloppy/src/gfloppy2.glade.h:14
-#, fuzzy
 msgid "High Density 3.5\" (1.44MB)"
 msgstr "كثافة مرتفعة 3.5\" (1.44 MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:15
-#, fuzzy
 msgid "High Density 5.25\" (1.2MB)"
 msgstr "كثافة مرتفعة 5.25\" (1.2 MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:16
 msgid "Linux Native (ext2)"
-msgstr "الطبيعي في لينكس (ext2)"
+msgstr "لينكس (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:17
 msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
 msgstr ""
 
 #: gfloppy/src/gfloppy2.glade.h:18
-#, fuzzy
 msgid "Volume _name:"
-msgstr "اسم الملف:"
+msgstr "_اسم الفضاء:"
 
 #: gfloppy/src/gfloppy2.glade.h:19
-#, fuzzy
 msgid "_Format"
-msgstr "المنفذ:"
+msgstr "_تهيئة"
 
 #: gfloppy/src/gfloppy2.glade.h:20
-#, fuzzy
 msgid "_Quick (only creates the filesystem)"
-msgstr "تعذر إنشاء نظام الملفات."
+msgstr "_سريع (انشاء نظام الملفات فقط)"
 
 #: gfloppy/src/gfloppy2.glade.h:21
+#, fuzzy
 msgid "_Standard (adds a low-level format to the quick mode)"
-msgstr ""
+msgstr "نظام"
 
 #: gfloppy/src/main.c:132
+#, fuzzy
 msgid ""
 "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
 "can't format a floppy without one of them."
-msgstr ""
+msgstr "من."
 
 #: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr "تعذر فتح اﻷداة %s، لن تستمر التهيئة."
+msgstr "تعذر فتح الجهاز %s، لن تستمر التهيئة."
 
 #: gfloppy/src/main.c:158 gfloppy/src/main.c:202
 #, c-format
@@ -1258,8 +1254,8 @@ msgid ""
 "The device %s is disconnected.\n"
 "Please attach device to continue."
 msgstr ""
-"اﻷداة %s غير موصلة.\n"
-"رجاء وصّل اﻷداة ثم تابع."
+"ا?داة %s غير موصلة.\n"
+"رجاء وصّل ا?داة ثم تابع."
 
 #: gfloppy/src/main.c:161 gfloppy/src/main.c:205
 #, c-format
@@ -1277,12 +1273,12 @@ msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
-"تعذر عرض المساعدة لمهيئ اﻷقراص المرنة.\n"
+"تعذر عرض المساعدة لمهيئ ا?قراص المرنة.\n"
 "%s"
 
 #: gfloppy/src/main.c:425
 msgid "The volume name can't contain any blank space."
-msgstr ""
+msgstr "اسم الفصاء لا يمكنه إحتواء فراغ."
 
 #: gfloppy/src/main.c:474
 msgid "The device to format"
@@ -1290,7 +1286,7 @@ msgstr "أداة التهيئة"
 
 #: gfloppy/src/main.c:475
 msgid "DEVICE"
-msgstr "DEVICE"
+msgstr "اﻷداة"
 
 #: gfloppy/src/progress.c:123
 #, c-format
@@ -1298,6 +1294,8 @@ msgid ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
 msgstr ""
+"هيئ القرص المرن، لكن <b>%d كتل سيئة</b> (من %d) وجدت "
+"و علمت."
 
 #: gfloppy/src/progress.c:126
 msgid "Floppy formatted successfully."
@@ -1308,39 +1306,40 @@ msgid "Floppy formatting cancelled."
 msgstr "تم إلغاء تهيئة القرص المرن."
 
 #: gfloppy/src/progress.c:172
-#, fuzzy
 msgid "Format progress"
-msgstr "تقدم التهيئة."
+msgstr "تقدم التهيئة"
 
 #: gfloppy/gfloppy.schemas.in.h:1
 msgid ""
 "0 for the quick format, 1 for a standard one (adds a low-level format) and "
 "finally 2 for a thorough format (adds a bad blocks scan)."
 msgstr ""
+"0 لتهيئة سريعة، 1 لتهيئة عادية (يضيف تهيئة ذات درجة منخفضة) و أخيرا "
+"2 لتهيئة دقيقة (يضيف مسح عن المربعات المعطوبة)."
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr ""
+msgstr "للمستعملين المتفوقين فقط ! - الإفتراضية لتهيئة FAT"
 
 #: gfloppy/gfloppy.schemas.in.h:3
-#, fuzzy
 msgid "Default filesystem type"
-msgstr "نوع نظام الملفات:"
+msgstr "نوع نظام الملفات الإفتراضي"
 
 #: gfloppy/gfloppy.schemas.in.h:4
-#, fuzzy
 msgid "Default formatting mode"
-msgstr "استراتيجية افتراضية"
+msgstr "نمط التهيئةةال افتراضة"
 
 #: gfloppy/gfloppy.schemas.in.h:5
 msgid ""
 "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
 "mtools as the preferred FAT formatting backend."
 msgstr ""
+"صحيح عند ضبط mkdosfs كأدات تهيئة FAT المفضلة. أو خطأ لضبط mtools "
+"كأدات تهيئة FAT المفضلة."
 
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
-msgstr ""
+msgstr "ext2 لجهاز الملفات الأصلي للنكس أو fat لجهاز ملفات DOS."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
@@ -1351,25 +1350,24 @@ msgid "Search your disk for files"
 msgstr "ابحث في قرصك عن ملفات"
 
 #: gsearchtool/gsearchtool.c:63
-#, fuzzy
 msgid "Contains the text"
-msgstr "انسخ النص"
+msgstr "يحتوي النص"
 
 #: gsearchtool/gsearchtool.c:65
 msgid "Date modified less than (days)"
-msgstr ""
+msgstr "عدل التاريخ قبل أقل من (أيام)"
 
 #: gsearchtool/gsearchtool.c:66
 msgid "Date modified more than (days)"
-msgstr ""
+msgstr "عدل التاريخ قبل أكثر من (أيام)"
 
 #: gsearchtool/gsearchtool.c:68
 msgid "Size at least (kilobytes)"
-msgstr ""
+msgstr "الحجم على الأقل (كيلوبايتات)"
 
 #: gsearchtool/gsearchtool.c:69
 msgid "Size at most (kilobytes)"
-msgstr ""
+msgstr "الحجم على الأكثر (كيلوبايتات)"
 
 #: gsearchtool/gsearchtool.c:70
 msgid "File is empty"
@@ -1385,26 +1383,23 @@ msgstr "مملوك بالمجموعة"
 
 #: gsearchtool/gsearchtool.c:74
 msgid "Owner is unrecognized"
-msgstr ""
+msgstr "المالك غير معلوم"
 
 #: gsearchtool/gsearchtool.c:76
-#, fuzzy
 msgid "File is not named"
-msgstr "اسم الملف ليس"
+msgstr "الملف غير مسمى"
 
 #: gsearchtool/gsearchtool.c:77
-#, fuzzy
 msgid "File matches regular expression"
-msgstr "تطابق تعبير انتظامي"
+msgstr ""
 
 #: gsearchtool/gsearchtool.c:79
 msgid "Follow symbolic links"
 msgstr "تتبع الوصلات الرمزية"
 
 #: gsearchtool/gsearchtool.c:80
-#, fuzzy
 msgid "Include other filesystems"
-msgstr "تعذر إنشاء نظام الملفات."
+msgstr "."
 
 #: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:828
 msgid "No files found"
@@ -1416,36 +1411,36 @@ msgstr "تم استدعاء الخانة changed لخيار ليس مدخلة!"
 
 #: gsearchtool/gsearchtool.c:593
 msgid "Set the text of 'file is named'"
-msgstr ""
+msgstr "تحديد نص 'سمي الملف'"
 
 #: gsearchtool/gsearchtool.c:594
 msgid "Set the text of 'look in folder'"
-msgstr ""
+msgstr "تحديد نص 'انظر في الدليل'"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr ""
+msgstr "ترتيب الملفات باعتبار: الإسم، الدليل، الحجم، النوع أو التاريخ"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr ""
+msgstr "ضبط نظام الترتيب لمتصاعد، إفتراظا متنازل."
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
-msgstr ""
+msgstr "بدأ البحث آليا"
 
 #: gsearchtool/gsearchtool.c:601
 #, c-format
 msgid "Select the '%s' constraint"
-msgstr ""
+msgstr "اختر القيد '%s'"
 
 #: gsearchtool/gsearchtool.c:685
 msgid "Invalid option passed to sortby command line argument."
-msgstr ""
+msgstr "خيار غير صحيح مرر لمتغير سطر الأوامر 'الترتيب بـ'."
 
 #: gsearchtool/gsearchtool.c:819
 msgid "(aborted)"
-msgstr ""
+msgstr "(ألغي)"
 
 #: gsearchtool/gsearchtool.c:832
 msgid "One file found"
@@ -1461,6 +1456,8 @@ msgid ""
 "While searching the following errors were reported.\n"
 "\n"
 msgstr ""
+"عند البحث سجلت الأخطاء التالية.\n"
+"\n"
 
 #: gsearchtool/gsearchtool.c:935
 msgid ""
@@ -1468,35 +1465,32 @@ msgid ""
 "... Too many errors to display ..."
 msgstr ""
 "\n"
-"... أخطاء كثيرة على العرض ..."
+"... أخطاء كثيرة جدّا لعرضها ..."
 
 #: gsearchtool/gsearchtool.c:948
-#, fuzzy
 msgid "Search Errors"
-msgstr "ابحث عن ملفات"
+msgstr "أخطاء البحث"
 
 #: gsearchtool/gsearchtool.c:986 gsearchtool/gsearchtool.c:1010
-#, fuzzy
 msgid "Search for Files Error"
-msgstr "ابحث عن ملفات"
+msgstr "بحث عن أخطاء الملفات"
 
 #: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
-msgstr "ابحث خانة قيمة القاعدة"
+msgstr "ابحث خانةَ قيمةِ القاعدة"
 
 #: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
-msgstr "أدخل قيمة لقاعدة البحث"
+msgstr "أدخل قيمةً لقاعدةِ البحث"
 
 #: gsearchtool/gsearchtool.c:1132
-#, fuzzy, c-format
+#, c-format
 msgid "Click to Remove the '%s' Rule"
-msgstr "انقر لحذف القاعدة"
+msgstr "نقر لحذف القاعدة '%s'"
 
 #: gsearchtool/gsearchtool.c:1187
-#, fuzzy
 msgid "A_vailable options:"
-msgstr "خيارات الحدث"
+msgstr "خيارات ال_موجودة:"
 
 #: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
@@ -1508,7 +1502,7 @@ msgstr "اختر قاعدة للبحث من القائمة"
 
 #: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
-msgstr "نتائج البحث"
+msgstr "_نتائج البحث"
 
 #: gsearchtool/gsearchtool.c:1303
 msgid "Name"
@@ -1531,9 +1525,8 @@ msgid "Date Modified"
 msgstr "تاريخ التعديل"
 
 #: gsearchtool/gsearchtool.c:1391
-#, fuzzy
 msgid "File is _named:"
-msgstr "ابحث عن الملفات المسماة:"
+msgstr "الملف _مسمى:"
 
 #: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
@@ -1544,9 +1537,8 @@ msgid "Enter the file name you want to search"
 msgstr "أدخل اسم الملف الذي تريد العثور عليه"
 
 #: gsearchtool/gsearchtool.c:1419
-#, fuzzy
 msgid "_Look in folder:"
-msgstr "بدء في المجلد:"
+msgstr "_نظر في المجلد:"
 
 #: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
@@ -1561,9 +1553,8 @@ msgid "Enter the folder name where you want to start the search"
 msgstr "أدخل اسم المجلد الذي تريد بدء البحث فيه"
 
 #: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
-#, fuzzy
 msgid "Additional Options"
-msgstr "خيارات الحدث"
+msgstr "خيارات إصافية"
 
 #: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
@@ -1578,23 +1569,20 @@ msgid "Cannot initialize bonobo."
 msgstr "تعذرت تهيئة بونوبو"
 
 #: gsearchtool/gsearchtool-callbacks.c:45
-#, fuzzy
 msgid "_Open"
-msgstr "افتح"
+msgstr "_فتح"
 
 #: gsearchtool/gsearchtool-callbacks.c:49
-#, fuzzy
 msgid "O_pen Folder"
-msgstr "المجلد"
+msgstr "_فتح المجلد"
 
 #: gsearchtool/gsearchtool-callbacks.c:54
-#, fuzzy
 msgid "_Save Results As..."
-msgstr "احفظ النتائج باسم..."
+msgstr "_حفظ النتائج باسم..."
 
 #: gsearchtool/gsearchtool-callbacks.c:107
 msgid "Can't Display Help"
-msgstr ""
+msgstr "لا يمكن عرض المساعدة"
 
 #: gsearchtool/gsearchtool-callbacks.c:128
 msgid "Searching..."
@@ -1603,67 +1591,68 @@ msgstr "جاري البحث..."
 #: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
-msgstr ""
+msgstr "سيفتح هذا %d ملفات متفرقة. أ تريد حقا القيام بذلك؟"
 
 #: gsearchtool/gsearchtool-callbacks.c:291
 #, c-format
 msgid "Open %d Files?"
-msgstr ""
+msgstr "فتح %d ملفات؟"
 
 #: gsearchtool/gsearchtool-callbacks.c:348
 #: gsearchtool/gsearchtool-callbacks.c:609
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
-msgstr ""
+msgstr "لا متصفح مثبت يمكنه عرض \"%s\"."
 
 #: gsearchtool/gsearchtool-callbacks.c:355
 #: gsearchtool/gsearchtool-callbacks.c:616
 msgid "Can't Display Location"
-msgstr ""
+msgstr "لا يمكن عرض الموقع"
 
 #: gsearchtool/gsearchtool-callbacks.c:393
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
-msgstr ""
+msgstr "سيفتح هذا %d دلائل متفرقة. أتريد حقا القيام بذلك؟"
 
 #: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
 msgid "Open %d Folders?"
-msgstr ""
+msgstr "فتح %d مجلدات؟"
 
 #: gsearchtool/gsearchtool-callbacks.c:435
 msgid "The nautilus file manager is not running."
-msgstr ""
+msgstr "مدير الملفات ناوتيلس لا يعمل."
 
 #: gsearchtool/gsearchtool-callbacks.c:718
-#, fuzzy
 msgid "Save Search Results As..."
-msgstr "احفظ النتائج باسم..."
+msgstr "حفظ نتائج البحث باسم..."
 
 #: gsearchtool/gsearchtool-callbacks.c:761
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Cannot save search results.\n"
 "\"%s\" is a folder."
-msgstr "تعذر حفظ ملف النتائج."
+msgstr ""
+"لا يمكن حفظ نتائج البحث.\n"
+"\"%s\" دليل."
 
 #: gsearchtool/gsearchtool-callbacks.c:789
-#, fuzzy, c-format
+#, c-format
 msgid "File \"%s\" already exists. Overwrite?"
-msgstr "الملف %s موجود مسبقا. هل تريد الكتابة عليه؟"
+msgstr "الملف \"%s\" موجود. هل تريد تنميقه؟"
 
 #: gsearchtool/gsearchtool-callbacks.c:826
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot save search results to the file \"%s\"."
-msgstr "تعذر حفظ ملف النتائج."
+msgstr "لا يمكن حفظ نتائج البحث لالملف \"%s\"."
 
 #: gsearchtool/gsearchtool-support.c:284
 msgid "Expander Size"
-msgstr ""
+msgstr "حجم الموسع"
 
 #: gsearchtool/gsearchtool-support.c:285
 msgid "Size of the expander arrow"
-msgstr ""
+msgstr "حجم مؤشر الموسع"
 
 #: gsearchtool/gsearchtool-support.c:346
 #, c-format
@@ -1671,6 +1660,8 @@ msgid ""
 "GConf error:\n"
 "  %s"
 msgstr ""
+"خطأ GConf:\n"
+"  %s"
 
 #: gsearchtool/gsearchtool-support.c:524
 msgid "%Y%m%d%H%M%S"
@@ -1690,55 +1681,51 @@ msgstr "%m/%-d/%y, %-I:%M %p"
 
 #: gsearchtool/gsearchtool-support.c:686
 msgid "link (broken)"
-msgstr ""
+msgstr "الرابط (مكسور)"
 
 #: gsearchtool/gsearchtool-support.c:691
 #, c-format
 msgid "link to %s"
-msgstr ""
+msgstr "رابط إلى %s"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
-msgstr "Cesar Miquel (miquel@df.uba.ar)"
+msgstr "زيزار ميكال (miquel@df.uba.ar)"
 
 #: logview/about.c:43
-#, fuzzy
 msgid ""
 "This program is part of the GNOME project. Logview comes with ABSOLUTELY NO "
 "WARRANTY. This is free software, and you are welcome to redistribute it "
 "under the conditions of the GNU General Public Licence. The log icon is a "
 "courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"هذا البرنامج هو جزء من مشروع جينوم للينكس. معين السجلات يأتي دون أي كفالة. "
-"هذا برنامج حر، وإعداة توزيعه مرحب بها تحت شروط رخصة جينو العامة. أيقونة "
-"السجل هي تكرم من توماس كوسمانين (معروف أيضا باسم tigert)."
+"هذا البرنامج جزء من مشروع جنوم للينكس. معايِن السجلات يأتي دون أي كفالة. "
+"هذا برنامج حر، وإعادة توزيعه مرحّب بها تحت شروط رخصة جنو العامة. أيقونة السجل "
+"تكرم من توماس كوسمانين (معروف أيضا باسم tigert)."
 
 #: logview/about.c:61
 msgid "GNOME System Log Viewer"
-msgstr "معاين سجلات نظام جينوم"
+msgstr "معاين سجلات نظام جنوم"
 
 #: logview/about.c:62
 msgid "Copyright (C) 1998"
-msgstr "حقوق النشر (C) 1998"
+msgstr "حقوق النشر (C) 1999"
 
 #: logview/actions.c:74
 msgid "Action database"
 msgstr "قاعدة بيانات الحدث"
 
 #: logview/actions.c:84
-#, fuzzy
 msgid "Actions"
-msgstr "أحداث..."
+msgstr "أحداث"
 
 #: logview/actions.c:152
-#, fuzzy
 msgid "_Add"
-msgstr "جمع"
+msgstr "اضف"
 
 #: logview/actions.c:159
-#, fuzzy
 msgid "_Edit"
-msgstr "حرّر..."
+msgstr "حرّر"
 
 #: logview/actions.c:166
 msgid "_Remove"
@@ -1760,7 +1747,7 @@ msgstr "تعذرت الكتابة في قاعدة بيانات الأحداث!"
 
 #: logview/actions.c:485
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "خطأ أثناء تنفيذ الحدث المذكور"
 
 #: logview/actions.c:506
 msgid "<empty>"
@@ -1787,9 +1774,8 @@ msgid "description"
 msgstr "وصف"
 
 #: logview/actions.c:771
-#, fuzzy
 msgid "_Description:"
-msgstr "الوصف:"
+msgstr "_وصف:"
 
 #: logview/actions.c:780
 msgid "Description of this entry."
@@ -1851,33 +1837,29 @@ msgid "Modified:"
 msgstr "التعديل:"
 
 #: logview/info.c:111
-#, fuzzy
 msgid "Start Date:"
-msgstr "التاريخ الأول:"
+msgstr "تاريخ البداية:"
 
 #: logview/info.c:111
-#, fuzzy
 msgid "Last Date:"
 msgstr "التاريخ الأخير:"
 
 #: logview/info.c:111
-#, fuzzy
 msgid "Number of Lines:"
-msgstr "عدد اﻷسطر:"
+msgstr "عدد السطور:"
 
 #: logview/info.c:137
-#, fuzzy
 msgid "Log Information"
 msgstr "معلومات السجل"
 
 #: logview/info.c:163 logview/zoom.c:157
 msgid "<No log loaded>"
-msgstr ""
+msgstr "<لا سجل محمل>"
 
 #: logview/info.c:186
 #, c-format
 msgid "%ld bytes"
-msgstr "%ld بايت"
+msgstr "%ld بايتس"
 
 #: logview/log_repaint.c:59
 msgid "January"
@@ -1928,98 +1910,94 @@ msgid "December"
 msgstr "ديسمبر"
 
 #. Translators: Date only format, %x should well do really
-#: logview/log_repaint.c:398
+#: logview/log_repaint.c:403
 #, c-format
 msgid "%x"
 msgstr "%x"
 
 #. Translators: Make sure this is only Month and Day format, year
 #. * will be bogus here
-#: logview/log_repaint.c:453
+#: logview/log_repaint.c:458
 msgid "%B %e"
 msgstr "%B %e"
 
 #. Translators: should be only the time, date could be bogus
-#: logview/log_repaint.c:519
+#: logview/log_repaint.c:524
 #, c-format
 msgid "%X"
 msgstr "%X"
 
-#: logview/logrtns.c:194
+#: logview/logrtns.c:191
 msgid "Not enough memory!\n"
 msgstr "لا توجد مساحة كافية في الذاكرة!\n"
 
-#: logview/logrtns.c:205
+#: logview/logrtns.c:202
 msgid "Unable to open logfile!\n"
 msgstr "تعذر فتح ملف السجل!\n"
 
-#: logview/logrtns.c:263
+#: logview/logrtns.c:260
 #, c-format
 msgid "%s is not a regular file."
 msgstr "%s ليس ملفا اعتيادي."
 
-#: logview/logrtns.c:271
+#: logview/logrtns.c:268
 #, c-format
 msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file."
 msgstr ""
-"%s غير قابل للقراءة من قبل المستخدم. شغل البرنامج كالمستخدم الجذري أو اطلب "
-"مدير النظام أن يغير تصاريح الملف."
+"%s غير قابل للقراءة من قبل المستخدم. شغل البرنامج كمستخدم جذري أو اطلب من  "
+"مدير النظام تغيير تصاريح الملف."
 
-#: logview/logrtns.c:288
+#: logview/logrtns.c:285
 #, c-format
 msgid "%s could not be opened."
-msgstr "لايمكن فتح %s."
+msgstr "لا يمكن فتح %s."
 
-#: logview/logrtns.c:318 logview/logrtns.c:327
+#: logview/logrtns.c:315 logview/logrtns.c:324
 #, c-format
 msgid "%s not a log file."
 msgstr "%s ليس ملف سجل."
 
-#: logview/logrtns.c:725 logview/logrtns.c:756 logview/logrtns.c:887
+#: logview/logrtns.c:722 logview/logrtns.c:753 logview/logrtns.c:884
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: لامجال في الذاكرة"
 
 #: logview/logview.c:99
 msgid "S_witch Log"
-msgstr "تغيير السجل"
+msgstr "_تغيير السجل"
 
 #: logview/logview.c:100
-#, fuzzy
 msgid "Switch between already opened logs"
-msgstr "الملف مفتوح مسبقا"
+msgstr "تحول بين السجلات المفتوحة"
 
 #: logview/logview.c:106
 msgid "_Monitor..."
-msgstr "مراقبة..."
+msgstr "_مراقبة..."
 
 #: logview/logview.c:107
-#, fuzzy
 msgid "Monitor Logs"
 msgstr "مراقبة السجلات"
 
 #: logview/logview.c:115
 msgid "_Properties"
-msgstr "خصائص"
+msgstr "_خصائص"
 
 #: logview/logview.c:116
 msgid "Show Log Properties"
 msgstr "أظهر خصائص السجل"
 
 #: logview/logview.c:124
-#, fuzzy
 msgid "Clos_e All"
-msgstr "إغلاق"
+msgstr "_غلق الكل"
 
 #: logview/logview.c:125
-#, fuzzy
 msgid "Close all Log files"
-msgstr "إغلاق"
+msgstr "غلق كل ملفات السجلات"
 
 #: logview/logview.c:137
 msgid "_Calendar"
-msgstr "التقويم"
+msgstr "ال_تقويم"
 
 #: logview/logview.c:138
 msgid "Show Calendar Log"
@@ -2027,7 +2005,7 @@ msgstr "أظهر سجل تقويم"
 
 #: logview/logview.c:144
 msgid "_Entry Detail"
-msgstr "تفاصيل الخانة"
+msgstr "تفاصيل ال_خانة"
 
 #: logview/logview.c:145
 msgid "Show Entry Detail"
@@ -2035,35 +2013,31 @@ msgstr "أظهر تفاصيل الخانة"
 
 #: logview/logview.c:151
 msgid "_Collapse All"
-msgstr ""
+msgstr "ا_نهيار الكل"
 
 #: logview/logview.c:152
 msgid "Collapse all the rows"
-msgstr ""
+msgstr "انهيار جميع الأعمدة"
 
 #: logview/logview.c:365
 msgid "No log files to open"
 msgstr "لا توجد ملفات سجلات للفتح"
 
 #: logview/logview.c:389
-#, fuzzy
 msgid "Date"
-msgstr "التاريخ:"
+msgstr "التاريخ"
 
 #: logview/logview.c:389
-#, fuzzy
 msgid "Host Name"
-msgstr "الاسم"
+msgstr "اسم المضيف"
 
 #: logview/logview.c:390
-#, fuzzy
 msgid "Process"
-msgstr "العملية:"
+msgstr "العملية"
 
 #: logview/logview.c:390
-#, fuzzy
 msgid "Message"
-msgstr "الرسالة:"
+msgstr "الرسالة"
 
 #: logview/logview.c:474
 msgid "Last Modified: "
@@ -2087,43 +2061,37 @@ msgid "Error: [%s]\n"
 msgstr "الخطأ: [%s]\n"
 
 #: logview/monitor.c:109
-#, fuzzy
 msgid "Monitor Options"
 msgstr "خيارات الشاشة"
 
 #: logview/monitor.c:112
-#, fuzzy
 msgid "Ac_tions"
-msgstr "أحداث..."
+msgstr "_عمليات"
 
 #: logview/monitor.c:135
-#, fuzzy
 msgid "Choose logs to monitor:"
-msgstr "اختر سجلات لمراقبتها"
+msgstr "اختيار السجلات لمراقبتها:"
 
 #: logview/monitor.c:140
 msgid "Currently monitored logs:"
-msgstr ""
+msgstr "السجلات المراقبة حاليا:"
 
 #: logview/monitor.c:188
-#, fuzzy
 msgid "Add logs to monitor"
-msgstr "اختر سجلات لمراقبتها"
+msgstr "اضافة سجلات لمراقبتها"
 
 #: logview/monitor.c:197
-#, fuzzy
 msgid "Remove logs from monitor"
-msgstr "اختر سجلات لمراقبتها"
+msgstr "حذف سجلات من المراقب"
 
 #. Check boxes
 #: logview/monitor.c:244
 msgid "_Hide Application"
-msgstr ""
+msgstr "_اخفاء تطبيق"
 
 #: logview/monitor.c:252
-#, fuzzy
 msgid "_Execute Actions"
-msgstr "أحداث تنفيذ"
+msgstr "_تنفيذ العمليات"
 
 #: logview/monitor.c:289
 msgid "Too many logs to monitor. Remove one and try again"
@@ -2162,9 +2130,8 @@ msgid "Description:"
 msgstr "الوصف:"
 
 #: logview/zoom.c:131
-#, fuzzy
 msgid "Log line detail for"
-msgstr "تفاصيل سطر السجل لـ %s"
+msgstr "تفاصيل سطر السجل لـ"
 
 #. Translators: do not include year, it would be bogus
 #: logview/zoom.c:185
@@ -2173,573 +2140,564 @@ msgstr "%B %e %X"
 
 #: logview/logview.schemas.in.h:1
 msgid "Log file to open up on startup"
-msgstr ""
+msgstr "ملف السجل للفتح عند البدأ"
 
 #: logview/logview.schemas.in.h:2
 msgid ""
 "Specifies the log file to open up at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your distribution."
+msgstr "يح"
+
+msgid "GNOME Search Tool"
+msgstr "أداة بحث جنوم"
+
+msgid "x^2"
+msgstr "x^2"
+
+msgid "x^y"
+msgstr "x^y"
+
+msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+
+msgid "del"
+msgstr "del"
+
+msgid " %s: Character code %d"
+msgstr " %s: شفرة الرمز %d"
+
+msgid "Gnome Character Map"
+msgstr "خريطة رموز جنوم"
+
+msgid ""
+"Client for MIT dictionary server.\n"
+"Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
 msgstr ""
+"عميل لخادم معجم MIT.\n"
+"واب: http://gdict.dhs.org/، http://www.psilord.com/code/"
 
-#~ msgid "GNOME Search Tool"
-#~ msgstr "أداة بحث جينوم"
+msgid "De_fault"
+msgstr "الا_فتراض"
 
-#~ msgid "x^2"
-#~ msgstr "x^2"
+msgid "EBad block at block %lu"
+msgstr "يوجد مربّع معطوب عند المربع %lu"
 
-#~ msgid "x^y"
-#~ msgstr "x^y"
+msgid "Format a floppy"
+msgstr "تهيئة قرص مرن"
 
-#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+msgid "_Quick format"
+msgstr "تهيئة _سريعة"
 
-#~ msgid "del"
-#~ msgstr "del"
+msgid "Format another floppy?"
+msgstr "تهيئة قرص مرن آخر؟"
 
-#~ msgid " %s: Character code %d"
-#~ msgstr " %s: شفرة الرمز %d"
+msgid "File name is"
+msgstr "اسم الملف هو"
 
-#~ msgid "Gnome Character Map"
-#~ msgstr "خريطة رموز جينوم"
+msgid "Don't search mounted filesystems"
+msgstr "لا تبحث في أنظمة الملفات المجهزة"
 
-#~ msgid ""
-#~ "Client for MIT dictionary server.\n"
-#~ "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
-#~ msgstr ""
-#~ "عميل لخادم معجم MIT.\n"
-#~ "ويب: http://gdict.dhs.org/، http://www.psilord.com/code/"
+msgid "Process folder contents depth first"
+msgstr "عالج عمق محتويات المجلد أولا"
 
-#~ msgid "De_fault"
-#~ msgstr "الافتراض"
+msgid "Invalid user or group"
+msgstr "مستخدم أو مجموعة غير صحيحين"
 
-#~ msgid "EBad block at block %lu"
-#~ msgstr "يوجد مربع معطوب عند المربع %lu"
+msgid "Last time modified"
+msgstr "وقت التعديل الأخير"
 
-#~ msgid "Format a floppy"
-#~ msgstr "تهيئة قرص مرن"
+msgid "Start folder does not exist."
+msgstr "مجلد البداية غير موجود."
 
-#~ msgid "_Quick format"
-#~ msgstr "تهيئة سريعة"
+msgid "folder"
+msgstr "مجلد"
 
-#~ msgid "Format another floppy?"
-#~ msgstr "تهيئة قرص مرن آخر؟"
+msgid "program"
+msgstr "برنامج"
 
-#~ msgid "File name is"
-#~ msgstr "اسم الملف هو"
+msgid "symbolic link"
+msgstr "وصلة رمزية"
 
-#~ msgid "Don't search mounted filesystems"
-#~ msgstr "لا تبحث في أنظمة الملفات المجهزة"
+msgid "No Files Found."
+msgstr "لم يتم العثور على ملفات."
 
-#~ msgid "Process folder contents depth first"
-#~ msgstr "عالج عمق محتويات المجلد أولا"
+msgid ""
+"Cannot perform the search.\n"
+"The Bourne shell was not found\n"
+"It is typically installed as /bin/sh or /usr/bin/sh."
+msgstr ""
+"تعذر إجراء البحث.\n"
+"لم يتم العثور على غلاف بورن\n"
+"يكون عادة منصبا في /bin/sh أو /usr/bin/sh."
 
-#~ msgid "Invalid user or group"
-#~ msgstr "مستخدم أو مجموعة غير صحيحين"
+msgid "Cannot perform the search. Please specify a search criteria."
+msgstr "تعذر إجراء البحث. رجاءا حدّد مواصفات البحث."
 
-#~ msgid "Last time modified"
-#~ msgstr "وقت التعديل الأخير"
+msgid ""
+"A search is already running.  Please wait for the search to complete or "
+"cancel it."
+msgstr "البحث جار مسبقا. رجاءا انتظر نهاية البحث أو قم بإلغائه."
 
-#~ msgid "Start folder does not exist."
-#~ msgstr "مجلد البداية غير موجود."
+msgid "Start folder does not exist"
+msgstr "مجلد البداية غير موجود"
 
-#~ msgid "folder"
-#~ msgstr "مجلد"
+msgid "Cannot show the search command line. Please specify a search criteria."
+msgstr "تعذر عرض سطر أوامر البحث. رجاءا حدّد مواصفات البحث."
 
-#~ msgid "program"
-#~ msgstr "برنامج"
+msgid "Search Command Line"
+msgstr "سطر أوامر البحث"
 
-#~ msgid "symbolic link"
-#~ msgstr "وصلة رمزية"
+msgid ""
+"This is the command line that can be used to execute this search\n"
+"from the console.\n"
+"\n"
+"C_ommand:"
+msgstr ""
+"هذا هو سطر اﻻمر الذي يتم استخدامه لاجراء البحث من .\n"
+"\n"
+"ا?_مر:"
 
-#~ msgid "No Files Found."
-#~ msgstr "لم يتم العثور على ملفات."
+msgid "Command"
+msgstr "الأمر"
 
-#~ msgid ""
-#~ "Cannot perform the search.\n"
-#~ "The Bourne shell was not found\n"
-#~ "It is typically installed as /bin/sh or /usr/bin/sh."
-#~ msgstr ""
-#~ "تعذر إجراء البحث.\n"
-#~ "لم يتم العثور على غلاف بورن\n"
-#~ "يكون عادة منصبا في /bin/sh أو /usr/bin/sh."
+msgid "Command Line Entry"
+msgstr "خانة سطرالأوامر"
 
-#~ msgid "Cannot perform the search. Please specify a search criteria."
-#~ msgstr "تعذر إجراء البحث. رجاء حدّد مواصفات البحث."
+msgid "Use this command line to execute the search from console"
+msgstr "استخدم سطر اﻻوامر هذا لإجراء البحث من "
 
-#~ msgid ""
-#~ "A search is already running.  Please wait for the search to complete or "
-#~ "cancel it."
-#~ msgstr "البحث جاري مسبقا. رجاء انتظر لنهاية البحث أو قم بإلغائه."
+msgid "No viewer available for this mime type."
+msgstr "لا يوجد معاين لنوع mime هذا."
 
-#~ msgid "Start folder does not exist"
-#~ msgstr "مجلد البداية غير موجود"
+msgid "Enabled"
+msgstr "ممكن"
 
-#~ msgid ""
-#~ "Cannot show the search command line. Please specify a search criteria."
-#~ msgstr "تعذر عرض سطر أوامر البحث. رجاء حدّد مواصفات البحث."
+msgid "Toggle On/Off to enable/disable the rule"
+msgstr "اقفل لتمكين/لتعطيل القاعدة"
 
-#~ msgid "Search Command Line"
-#~ msgstr "سطر أوامر البحث"
+msgid "Rules:"
+msgstr "القواعد:"
 
-#~ msgid ""
-#~ "This is the command line that can be used to execute this search\n"
-#~ "from the console.\n"
-#~ "\n"
-#~ "C_ommand:"
-#~ msgstr ""
-#~ "هذا هو سطر اﻷمر الذي يتم استخدامه ﻹجراء البحث من الكونسول.\n"
-#~ "\n"
-#~ "اﻷمر:"
+msgid "A_dd Rule:"
+msgstr "أ_ضف قاعدة:"
 
-#~ msgid "Command"
-#~ msgstr "الأمر"
+msgid "Click to Add a Rule"
+msgstr "انقر لإضافة قاعدة"
 
-#~ msgid "Command Line Entry"
-#~ msgstr "خانة سطرالأوامر"
+msgid "Click to Start the Search"
+msgstr "انقر لتبدأ البحث"
 
-#~ msgid "Use this command line to execute the search from console"
-#~ msgstr "استخدم سطر اﻷوامر هذا ﻹجراء البحث من الكونسول"
+msgid "Click to Stop the Search"
+msgstr "انقر لتوقف البحث"
 
-#~ msgid "No viewer available for this mime type."
-#~ msgstr "لا يوجد معاين لهذا لنوع mime هذا."
+msgid "Simple"
+msgstr "بسيط"
 
-#~ msgid "Enabled"
-#~ msgstr "ممكن"
+msgid "Advanced"
+msgstr "متقدم"
 
-#~ msgid "Toggle On/Off to enable/disable the rule"
-#~ msgstr "اقفل لتمكين/لتعطيل القاعدة"
+msgid "Frontend to the unix find/locate commands"
+msgstr "واجهة اﻻوامر find/locate في يونيكس"
 
-#~ msgid "Rules:"
-#~ msgstr "القواعد:"
+msgid "Save Results"
+msgstr "احفظ النتائج"
 
-#~ msgid "A_dd Rule:"
-#~ msgstr "أضف قاعدة:"
+msgid "S_how Command..."
+msgstr "أ_ظهر الأمر..."
 
-#~ msgid "Click to Add a Rule"
-#~ msgstr "انقر لإضافة قاعدة"
+msgid "Show the command used to perform the search"
+msgstr "أظهر اﻻمر المستخدم لإجراء البحث"
 
-#~ msgid "Click to Start the Search"
-#~ msgstr "انقر لتبدأ البحث"
+msgid "Save the search results"
+msgstr "احفظ نتائج البحث"
 
-#~ msgid "Click to Stop the Search"
-#~ msgstr "انقر لتوقف البحث"
+msgid "Sear_ch"
+msgstr "_بحث"
 
-#~ msgid "Simple"
-#~ msgstr "بسيط"
+msgid "Search Tool"
+msgstr "أداة البحث"
 
-#~ msgid "Advanced"
-#~ msgstr "متقدم"
+msgid "Add..."
+msgstr "أضف..."
 
-#~ msgid "Frontend to the unix find/locate commands"
-#~ msgstr "واجهة ﻷوامر find/locate في يونيكس"
+msgid "Remove"
+msgstr "احذف"
 
-#~ msgid "Save Results"
-#~ msgstr "احفظ النتائج"
+msgid "description:"
+msgstr "الوصف:"
 
-#~ msgid "S_how Command..."
-#~ msgstr "أظهر الأمر..."
+msgid "fixed 12"
+msgstr "ثابت 12"
 
-#~ msgid "Show the command used to perform the search"
-#~ msgstr "أظهر اﻷمر المستخدم  في إجراء البحث"
+msgid "fixed Bold 12"
+msgstr "ثابت عريض 12"
 
-#~ msgid "Save the search results"
-#~ msgstr "احفظ نتائج البحث"
+msgid "fixed 10"
+msgstr "ثابت 10"
 
-#~ msgid "Sear_ch"
-#~ msgstr "بحث"
+msgid "fixed Bold 8"
+msgstr "ثابت عريض 8"
 
-#~ msgid "Search Tool"
-#~ msgstr "أداة البحث"
+msgid "Helvetica 14"
+msgstr "هيلفيتيكا 14"
 
-#~ msgid "Add..."
-#~ msgstr "أضف..."
+msgid "Helvetica Bold 14"
+msgstr "هيلفيتيكا عريض 14"
 
-#~ msgid "Remove"
-#~ msgstr "احذف"
+msgid "Helvetica 12"
+msgstr "هيلفيتيكا 12"
 
-#~ msgid "description:"
-#~ msgstr "الوصف:"
+msgid "Helvetica Bold 12"
+msgstr "هيلفيتيكا عريض 12"
 
-#~ msgid "fixed 12"
-#~ msgstr "ثابت 12"
+msgid "Helvetica 10"
+msgstr "هيلفيتيكا 10"
 
-#~ msgid "fixed Bold 12"
-#~ msgstr "ثابت عريض 12"
+msgid "Helvetica Bold 10"
+msgstr "هيلفيتيكا عريض 10"
 
-#~ msgid "fixed 10"
-#~ msgstr "ثابت 10"
+msgid "Log:"
+msgstr "السجل:"
 
-#~ msgid "fixed Bold 8"
-#~ msgstr "ثابت عريض 8"
+msgid "Out of memory!\n"
+msgstr "لا توجد ذاكرة كافية!\n"
 
-#~ msgid "Helvetica 14"
-#~ msgstr "هيلفيتيكا 14"
+msgid "Switch log"
+msgstr "تغيير السجل"
 
-#~ msgid "Helvetica Bold 14"
-#~ msgstr "هيلفيتيكا عريض 14"
+msgid "About..."
+msgstr "حول..."
 
-#~ msgid "Helvetica 12"
-#~ msgstr "هيلفيتيكا 12"
+msgid "Info about logview"
+msgstr "معلومات عن عرض السجل"
 
-#~ msgid "Helvetica Bold 12"
-#~ msgstr "هيلفيتيكا عريض 12"
+msgid "_Log"
+msgstr "_سجل"
 
-#~ msgid "Helvetica 10"
-#~ msgstr "هيلفيتيكا 10"
+msgid "System Log Viewer"
+msgstr "معاين سجلات النظام"
 
-#~ msgid "Helvetica Bold 10"
-#~ msgstr "هيلفيتيكا عريض 10"
+msgid "Cannot load required fonts, cannot continue"
+msgstr "تعذر تحميل الخطوط المطلوبة، لا أستطيع المتابعة"
 
-#~ msgid "Log:"
-#~ msgstr "السجل:"
+msgid "Add >>"
+msgstr "أضف >>"
 
-#~ msgid "Out of memory!\n"
-#~ msgstr "لا توجد ذاكرة كافية!\n"
+msgid "Remove <<"
+msgstr "احذف <<"
 
-#~ msgid "Switch log"
-#~ msgstr "تغيير السجل"
+msgid "Hide app"
+msgstr "إخفاء التطبيق"
 
-#~ msgid "About..."
-#~ msgstr "حول..."
+msgid "hostname column width ( 0 to hide this column ): "
+msgstr "عرض عمود اسم المضيف ( 0 لاخفاء هذا العمود ): "
 
-#~ msgid "Info about logview"
-#~ msgstr "معلومات عن عرض السجل"
+msgid "Columns"
+msgstr "أعمدة"
 
-#~ msgid "_Log"
-#~ msgstr "سجل"
+msgid "Log line detail for <No log loaded>"
+msgstr "تفاصيل سطر السجل لـ <لم يتم تحميل سجل>"
 
-#~ msgid "System Log Viewer"
-#~ msgstr "معاين سجلات النظام"
+msgid "Archive Generator"
+msgstr "مولد الرزمة"
 
-#~ msgid "Cannot load required fonts, cannot continue"
-#~ msgstr "تعذر تحميل الخطوط المطلوبة، لا أستطيع المتابعة"
+msgid "Create compressed archives containing many files"
+msgstr "إنشاء رزم مضغوطة تحوي عدة ملفات"
 
-#~ msgid "Add >>"
-#~ msgstr "أضف >>"
+msgid ""
+"Number of files: %d\n"
+"Number of folders: %d"
+msgstr ""
+"عدد الملفات: %d\n"
+"عدد المجلدات: %d"
 
-#~ msgid "Remove <<"
-#~ msgstr "احذف <<"
+msgid ""
+"No files or folders, drop files or folders\n"
+"above to add them to the archive"
+msgstr ""
+"لا يوجد ملف ولا مجلد، ألق بملفات أو مجلدات\n"
+"بالأعلى لإضافتهم للأرشيف"
 
-#~ msgid "Hide app"
-#~ msgstr "إخفاء التطبيق"
+msgid "%s removed"
+msgstr "%s محذوف"
 
-#~ msgid "hostname column width ( 0 to hide this column ): "
-#~ msgstr "عرض عمود اسم المضيف ( 0 ﻹخفاء هذا العمود ): "
+msgid "Failed to create %s"
+msgstr "فشل إنشاء %s"
 
-#~ msgid "Columns"
-#~ msgstr "أعمدة"
+msgid "Archive.tar.gz"
+msgstr "رزمة.tar.gz"
 
-#~ msgid "Log line detail for <No log loaded>"
-#~ msgstr "تفاصيل سطر السجل لـ <لم يتم تحميل سجل>"
+msgid "GNOME Archive Generator"
+msgstr "مولد رزم جنوم"
 
-#~ msgid "Archive Generator"
-#~ msgstr "مولد الأرشيف"
+msgid "Drag files in to make archives"
+msgstr "سحب ملفات لانشاء أرشيفات"
 
-#~ msgid "Create compressed archives containing many files"
-#~ msgstr "إنشاء أرشيفات مضغوطة تحوي عدة ملفات"
+msgid "All files selected"
+msgstr "تم انتقاء كل الملفات"
 
-#~ msgid ""
-#~ "Number of files: %d\n"
-#~ "Number of folders: %d"
-#~ msgstr ""
-#~ "عدد الملفات: %d\n"
-#~ "عدد المجلدات: %d"
+msgid "All files removed"
+msgstr "تم حذف كل الملفات"
 
-#~ msgid ""
-#~ "No files or folders, drop files or folders\n"
-#~ "above to add them to the archive"
-#~ msgstr ""
-#~ "لا يوجد ملف ولا مجلد، ألق بملفات أو مجلدات\n"
-#~ "بالأعلى ﻹضافتهم للأرشيف"
+msgid "No filename selected"
+msgstr "لم يتم تحديد اسم ملف"
 
-#~ msgid "%s removed"
-#~ msgstr "%s محذوف"
+msgid "File exists, overwrite?"
+msgstr "ملف موجود، أكتب عليه؟"
 
-#~ msgid "Failed to create %s"
-#~ msgstr "فشل إنشاء %s"
+msgid "%s created"
+msgstr "أنشأ %s"
 
-#~ msgid "Archive.tar.gz"
-#~ msgstr "Archive.tar.gz"
+msgid "No items to archive"
+msgstr "لا عناصر لرزمها"
 
-#~ msgid "GNOME Archive Generator"
-#~ msgstr "مولد أرشيفات جينوم"
+msgid "%s added"
+msgstr "أضيف %s"
 
-#~ msgid "Drag files in to make archives"
-#~ msgstr "اسحب ملفات للداخل ﻹنشاء أرشيف"
+msgid "File does not exists"
+msgstr "الملف غير موجود"
 
-#~ msgid "All files selected"
-#~ msgstr "تم انتقاء كل الملفات"
+msgid "Add file or folder"
+msgstr "أضف ملفا أو مجلدا"
 
-#~ msgid "All files removed"
-#~ msgstr "تم حذف كل الملفات"
+msgid "_Add file or folder..."
+msgstr "أ_ضف ملفأ أو مجلدا..."
 
-#~ msgid "No filename selected"
-#~ msgstr "لم يتم تحديد اسم ملف"
+msgid "Add a file or folder to archive"
+msgstr "اضف ملفا أو مجلدا للرزمة"
 
-#~ msgid "File exists, overwrite?"
-#~ msgstr "ملف موجود، أكتب عليه؟"
+msgid "_Create archive..."
+msgstr "أ_نشئ رزمة..."
 
-#~ msgid "%s created"
-#~ msgstr "أنشأ %s"
+msgid "Create a new archive from the items"
+msgstr "أنشيء رزمة جديدة من العناصر"
 
-#~ msgid "No items to archive"
-#~ msgstr "لا عناصر لأرشفتها"
+msgid "Remove the selected item"
+msgstr "احذف العنصر المحدّد"
 
-#~ msgid "%s added"
-#~ msgstr "أضيف %s"
+msgid "R_emove All"
+msgstr "ا_حذف الكل"
 
-#~ msgid "File does not exists"
-#~ msgstr "الملف غير موجود"
+msgid "Remove all items"
+msgstr "احذف كل العناصر"
 
-#~ msgid "Add file or folder"
-#~ msgstr "أضف ملفا أو مجلدا"
+msgid "Drop files here to add them to the archive."
+msgstr "اسحب الملفات إلى هنا لإضافتها للرزمة."
 
-#~ msgid "_Add file or folder..."
-#~ msgstr "أضف ملفأ أو مجلدا..."
+msgid "_Create Archive"
+msgstr "أ_نشئ رزمة"
 
-#~ msgid "Add a file or folder to archive"
-#~ msgstr "اضف ملفا أو مجلدا للأرشيف"
+msgid ""
+"Drag this button to the destination where you want the archive to be created "
+"or press it to pop up a file selection dialog."
+msgstr ""
+"اسحب هذا الزر للوجهة التي تريد فيها إنشاء الرزمة أو انقره لعرض مربع حوار "
+"لاختيار الملفات."
 
-#~ msgid "_Create archive..."
-#~ msgstr "أنشيء أرشيفا..."
+msgid "Cannot find proper icons anywhere!"
+msgstr "تعذر العثور على أيقونات صالحة في كل مكان!"
 
-#~ msgid "Create a new archive from the items"
-#~ msgstr "أنشيء أرشيفا جديدا من العناصر"
+msgid ""
+"Cannot find the archive (tar) program!\n"
+"This is the program used for creating archives."
+msgstr ""
+"لم يتم العثور على برنامج اﻻرشفة (tar)!\n"
+"هذا هو البرنامج المستخدم لانشاء رزم."
 
-#~ msgid "Remove the selected item"
-#~ msgstr "احذف العنصر المحدد"
+msgid "The GNOME Calculator"
+msgstr "آلة حاسبة لجنوم"
 
-#~ msgid "R_emove All"
-#~ msgstr "احذف الكل"
+msgid "Run in analog (slide rule) mode"
+msgstr "شغل في وضعية المقارنة analog"
 
-#~ msgid "Remove all items"
-#~ msgstr "احذف كل العناصر"
+msgid "Shift"
+msgstr "Shift"
 
-#~ msgid "Drop files here to add them to the archive."
-#~ msgstr "اسحب الملفات إلى هنا ﻹضافتهم للأرشيف."
+msgid "Sum"
+msgstr "مجموع"
 
-#~ msgid "_Create Archive"
-#~ msgstr "أنشيء أرشيفا"
+msgid ""
+"The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
+"contain bad English."
+msgstr ""
+"بديل جنوم لخريطة المحارف في Microsoft Windows. تحذير: ربما يحتوي انجليزية "
+"سيئة."
 
-#~ msgid ""
-#~ "Drag this button to the destination where you want the archive to be "
-#~ "created or press it to pop up a file selection dialog."
-#~ msgstr ""
-#~ "اسحب هذا الزر للوجهة التي تريد فيها إنشاء الأرشيف أو اكبسه لعرض مربع حوار "
-#~ "لاختيار ملفات."
+msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
+msgstr "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
 
-#~ msgid "Cannot find proper icons anywhere!"
-#~ msgstr "تعذر العثور على أيقونات صالحة في كل مكان!"
+msgid "Exit"
+msgstr "خروجر"
 
-#~ msgid ""
-#~ "Cannot find the archive (tar) program!\n"
-#~ "This is the program used for creating archives."
-#~ msgstr ""
-#~ "لم يتم العثور على برنامج اﻷرشفة (tar)!\n"
-#~ "هذا هو البرنامج المستخدم ﻹنشاء اﻷرشيفات."
+msgid "About"
+msgstr "حول"
 
-#~ msgid "The GNOME Calculator"
-#~ msgstr "آلة حاسبة لجينوم"
+msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+msgstr "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
-#, fuzzy
-#~ msgid "Run in analog (slide rule) mode"
-#~ msgstr "نفّذ"
+msgid "_Browse Characters..."
+msgstr "ا_ستعراض رموز..."
 
-#~ msgid "Shift"
-#~ msgstr "Shift"
+msgid "_Text Toolbar"
+msgstr "شريط أدوات ال_نص"
 
-#~ msgid "Sum"
-#~ msgstr "مجموع"
+msgid "View or hide the text toolbar"
+msgstr "اعرض أو أخف شريط أدوات النص"
 
-#, fuzzy
-#~ msgid ""
-#~ "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
-#~ "contain bad English."
-#~ msgstr "من نوافذ حرف تحذير تحوي على أنجليزي."
+msgid "_Statusbar"
+msgstr "شريط ال_حالة"
 
-#~ msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
+msgid "View or hide the statusbar"
+msgstr "اعرض أو أخف شريط الحالة"
 
-#~ msgid "Exit"
-#~ msgstr "اخرج"
+msgid "_Insert at end"
+msgstr "أ_درج في النهاية"
 
-#~ msgid "About"
-#~ msgstr "حول"
+msgid "Insert every selected character at the end of the text entry"
+msgstr "أدرج كل رمز منتقى في نهاية خانة النص"
 
-#~ msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+msgid "_Focusable Buttons"
+msgstr "أزرار قابلة لل_تركيز عليها"
 
-#~ msgid "_Browse Characters..."
-#~ msgstr "ا_ستعراض رموز..."
+msgid "Set the buttons to be focusable or not"
+msgstr "عيّن الأزرار لتكون قابلة للتركيز عليها أو لا"
 
-#~ msgid "_Text Toolbar"
-#~ msgstr "شريط أدوات ال_نص"
+msgid "There was an error loading config from %s. (%s)\n"
+msgstr "حدث خطأ في تحميل اﻻعدادات من %s. (%s)\n"
 
-#~ msgid "View or hide the text toolbar"
-#~ msgstr "اعرض أو أخف شريط أدوات النص"
+msgid ""
+"There was an error subscribing to notification of statusbar visibility "
+"changes. (%s)\n"
+msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات رؤية شريط الحالة. (%s)\n"
 
-#~ msgid "_Statusbar"
-#~ msgstr "شريط ال_حالة"
+msgid ""
+"There was an error subscribing to notification of textbar visibility "
+"changes. (%s)\n"
+msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات رؤية شريط النص. (%s)\n"
 
-#~ msgid "View or hide the statusbar"
-#~ msgstr "اعرض أو أخف شريط الحالة"
+msgid ""
+"There was an error subscribing to notification of actionbar visibility "
+"changes. (%s)\n"
+msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات رؤية شريط الفعل. (%s)\n"
 
-#~ msgid "_Insert at end"
-#~ msgstr "أ_درج في النهاية"
+msgid ""
+"There was an error subscribing to notification of insertion behaviour "
+"changes. (%s)\n"
+msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات تصرفات اﻻدراج. (%s)\n"
 
-#~ msgid "Insert every selected character at the end of the text entry"
-#~ msgstr "أدرج كل رمز منتقى في نهاية خانة النص"
+msgid ""
+"There was an error subscribing to notification of button focusability "
+"changes. (%s)\n"
+msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات قابلية الزر للتركيز. (%s)\n"
 
-#~ msgid "_Focusable Buttons"
-#~ msgstr "أزرار قابلة لل_تركيز عليها"
+msgid "Spell"
+msgstr "تدقيق إملائي"
 
-#~ msgid "Set the buttons to be focusable or not"
-#~ msgstr "عيّن الأزرار لتكون قابلة للتركيز عليها أو لا"
+msgid "_Look Up"
+msgstr "ا_بحث"
 
-#~ msgid "There was an error loading config from %s. (%s)\n"
-#~ msgstr "حدث خطأ في تحميل اﻹعدادات من %s. (%s)\n"
+msgid "Press button to look up any highlighted text in a dictionary"
+msgstr "اضغط الزر للبحث عن أي نص مظلل في القاموس"
 
-#~ msgid ""
-#~ "There was an error subscribing to notification of statusbar visibility "
-#~ "changes. (%s)\n"
-#~ msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات رؤية شريط الحالة. (%s)\n"
+msgid "_Spell"
+msgstr "_تدقيق إملائي"
 
-#~ msgid ""
-#~ "There was an error subscribing to notification of textbar visibility "
-#~ "changes. (%s)\n"
-#~ msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات رؤية شريط النص. (%s)\n"
+msgid "Spell checker"
+msgstr "المدقق الإملائي"
 
-#~ msgid ""
-#~ "There was an error subscribing to notification of actionbar visibility "
-#~ "changes. (%s)\n"
-#~ msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات رؤية شريط الفعل. (%s)\n"
+msgid "Preferences..."
+msgstr "تفضيلات..."
 
-#~ msgid ""
-#~ "There was an error subscribing to notification of insertion behaviour "
-#~ "changes. (%s)\n"
-#~ msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات تصرفات اﻹدراج. (%s)\n"
+msgid "Results"
+msgstr "النتائج"
 
-#~ msgid ""
-#~ "There was an error subscribing to notification of button focusability "
-#~ "changes. (%s)\n"
-#~ msgstr "حدث خطأ في الاشتراك إلى تنبيه تغييرات قابلية الزر للتركيز. (%s)\n"
+msgid "The Gnome Search Tool"
+msgstr "أداة بحث جنوم"
 
-#~ msgid "Spell"
-#~ msgstr "تدقيق إملائي"
+msgid "Logview"
+msgstr "معين السجلات"
 
-#~ msgid "_Look Up"
-#~ msgstr "ا_بحث"
+msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
 
-#, fuzzy
-#~ msgid "Press button to look up any highlighted text in a dictionary"
-#~ msgstr "الى"
+msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
 
-#~ msgid "_Spell"
-#~ msgstr "_تدقيق إملائي"
+msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
 
-#~ msgid "Spell checker"
-#~ msgstr "المدقق الإملائي"
+msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
 
-#~ msgid "Preferences..."
-#~ msgstr "تفضيلات..."
+msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
 
-#~ msgid "Results"
-#~ msgstr "النتائج"
+msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
 
-#~ msgid "The Gnome Search Tool"
-#~ msgstr "أداة بحث جينوم"
+msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
 
-#~ msgid "Logview"
-#~ msgstr "معين السجلات"
+msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
 
-#, fuzzy
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "س عادي"
+msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
 
-#, fuzzy
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "س عريض عادي"
+msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
 
-#, fuzzy
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "س عادي"
+msgid "Open log..."
+msgstr "افتح السجل..."
 
-#, fuzzy
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "س عريض عادي"
+msgid "Export log..."
+msgstr "صَدّر السجل..."
 
-#, fuzzy
-#~ msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "عادي"
+msgid "Export log"
+msgstr "صَدّر السجل"
 
-#, fuzzy
-#~ msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "عريض عادي"
+msgid "Exit program"
+msgstr "خروج من البرنامج"
 
-#, fuzzy
-#~ msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "عادي"
+msgid "Zoom"
+msgstr "تحجيم"
 
-#, fuzzy
-#~ msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "عريض عادي"
+msgid "Show line info"
+msgstr "أظهر معلومات السطر"
 
-#, fuzzy
-#~ msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "عادي"
+msgid "Select...               "
+msgstr "اختر...               "
 
-#, fuzzy
-#~ msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "عريض عادي"
+msgid "Select log events"
+msgstr "اختر أحداث السجل"
 
-#, fuzzy
-#~ msgid "Open log..."
-#~ msgstr "افتح."
+msgid "Filter..                "
+msgstr "رشح..                "
 
-#, fuzzy
-#~ msgid "Export log..."
-#~ msgstr "صَدّر."
+msgid "Filter log events"
+msgstr "رشح أحداث السجل"
 
-#, fuzzy
-#~ msgid "Export log"
-#~ msgstr "صَدّر"
+msgid "Date: "
+msgstr "التاريخ: "
 
-#, fuzzy
-#~ msgid "Exit program"
-#~ msgstr "خروج"
+msgid "Cannot start the archive (tar) program"
+msgstr "لم يمكن بدء برنامج الأرشفة (tar)"
 
-#, fuzzy
-#~ msgid "Zoom"
-#~ msgstr "تكبير"
+msgid "The GNOME Archive Generator"
+msgstr "أداة جنوم لتكوين الرزم"
 
-#, fuzzy
-#~ msgid "Show line info"
-#~ msgstr "أظهر"
+#~ msgid "(C) 1998,2002 the Free Software Foundation"
+#~ msgstr "(C) 1998،2002 مؤسسة البرامج الحرة"
 
-#, fuzzy
-#~ msgid "Select...               "
-#~ msgstr "اختر "
+#~ msgid "Actions..."
+#~ msgstr "أحداث..."
 
-#, fuzzy
-#~ msgid "Select log events"
-#~ msgstr "اختر"
+#~ msgid "Default database. ! indicates all databases"
+#~ msgstr "قاعدة البيانات التلقائية. ! "
 
-#, fuzzy
-#~ msgid "Filter..                "
-#~ msgstr "مرشح "
+#~ msgid "Default strategy"
+#~ msgstr "الإستراتيجية الافتراضية:"
 
-#, fuzzy
-#~ msgid "Filter log events"
-#~ msgstr "مرشح"
+#~ msgid "Edit..."
+#~ msgstr "حرّر..."
 
-#, fuzzy
-#~ msgid "Date: "
-#~ msgstr "تاريخ: "
-
-#, fuzzy
-#~ msgid "Cannot start the archive (tar) program"
-#~ msgstr "ال أرشيف"
-
-#, fuzzy
-#~ msgid "The GNOME Archive Generator"
-#~ msgstr "جينوم"
