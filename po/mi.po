@@ -1,0 +1,1807 @@
+# translation of gnome-utils.gnome-2-6.po to Maori
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# John C Barstow <jbowtie@amathaine.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.gnome-2-6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-25 18:51+0200\n"
+"PO-Revision-Date: 2004-06-26 19:07+1200\n"
+"Last-Translator: John C Barstow <jbowtie@amathaine.com>\n"
+"Language-Team: Maori <maori@nzlinux.org.nz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr ""
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:151
+msgid "Dictionary Lookup"
+msgstr ""
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
+#: gdictsrc/gnome-dictionary.desktop.in.h:2
+msgid "Lookup words in an online dictionary"
+msgstr ""
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:1
+#, fuzzy
+msgid "_About..."
+msgstr "_Mō..."
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:2
+#, fuzzy
+msgid "_Help"
+msgstr "_Āwhina"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:3
+#, fuzzy
+msgid "_Look Up Selected Text"
+msgstr "Runga Ngā kupu"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:4
+#, fuzzy
+msgid "_Preferences..."
+msgstr "Ngā tina hiahia."
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:5
+msgid "_Show Dictionary"
+msgstr ""
+
+#. Could not look up search strategies, so just display a
+#. * label; FIXME: Memory leak
+#.
+#: gdictsrc/dict.c:664 gdictsrc/gdict-pref-dialog.c:462
+#: gdictsrc/gdict-pref-dialog.c:511 gdictsrc/gdict-speller.c:453
+msgid "Cannot connect to server"
+msgstr ""
+
+#: gdictsrc/dict.c:677
+msgid ""
+"A serious error occured. Please check that your server and port are correct. "
+"For reference the default server is dict.org and the port 2628"
+msgstr ""
+
+#. Translator credits
+#: gdictsrc/gdict-about.c:43 logview/about.c:49
+msgid "translator_credits"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:56 gdictsrc/gdict-app.c:776
+#: gdictsrc/gnome-dictionary.desktop.in.h:1
+msgid "Dictionary"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:58
+msgid "A client for the MIT dictionary server."
+msgstr ""
+
+#: gdictsrc/gdict-app.c:125
+msgid "Spell-checking..."
+msgstr ""
+
+#: gdictsrc/gdict-app.c:133
+msgid "Spell check done"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:141 gdictsrc/gdict-app.c:288
+#, fuzzy
+msgid "No matches found"
+msgstr "Kāo"
+
+#: gdictsrc/gdict-app.c:271
+msgid "Looking up word..."
+msgstr ""
+
+#: gdictsrc/gdict-app.c:279
+msgid "Lookup done"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:301
+msgid "String not found"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:469
+#, fuzzy
+msgid "Find"
+msgstr "Kitea"
+
+#: gdictsrc/gdict-app.c:477
+msgid "_Search for:"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:490
+#, fuzzy
+msgid "_Find"
+msgstr "Kitea"
+
+#: gdictsrc/gdict-app.c:532
+#, fuzzy
+msgid ""
+"Unable to perform requested operation. \n"
+"Either the server you are using is not available \n"
+"or you are not connected to the Internet."
+msgstr "Ipurangi."
+
+#: gdictsrc/gdict-app.c:693 gdictsrc/gdict-app.c:803
+#: gdictsrc/gdict-speller.c:215
+#, fuzzy
+msgid "_Look Up Word"
+msgstr "Runga"
+
+#: gdictsrc/gdict-app.c:694
+msgid "Lookup word in dictionary"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:696 gdictsrc/gdict-speller.c:161
+msgid "Check _Spelling"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:697
+msgid "Check word spelling"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:741
+msgid "_Dictionary"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:799 gdictsrc/gdict-speller.c:134
+msgid "_Word:"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:827 gdictsrc/gdict-speller.c:146
+msgid "Word"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:828 gdictsrc/gdict-app.c:829
+#: gdictsrc/gdict-speller.c:147
+msgid "Word Entry"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:828
+msgid "Enter a Word or select one from the list below"
+msgstr ""
+
+#: gdictsrc/gdict-app.c:831
+#, fuzzy
+msgid "Look Up for a Word"
+msgstr "Runga"
+
+#: gdictsrc/gdict-applet.c:144
+msgid "_Lookup"
+msgstr ""
+
+#: gdictsrc/gdict-defbox.c:650 gdictsrc/gdict-speller.c:478
+#, c-format
+#, fuzzy
+msgid "Error invoking query: %s"
+msgstr "He"
+
+#: gdictsrc/gdict-pref-dialog.c:158
+#, fuzzy
+msgid "Dictionary Preferences"
+msgstr "Ngā tina hiahia"
+
+#: gdictsrc/gdict-pref-dialog.c:171
+msgid "Smart _lookup"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:189
+msgid "_Server:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:196
+msgid "De_fault Server"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:205
+msgid "Reset server to default"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:213
+msgid "_Port:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:229
+msgid "Def_ault Port"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:238
+msgid "Reset port to default"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:239
+msgid "Server"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:240
+msgid "Server Entry"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:240
+#, fuzzy
+msgid "Enter the Server Name"
+msgstr "Ingoa"
+
+#: gdictsrc/gdict-pref-dialog.c:243
+msgid "Port"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:244
+msgid "Port Entry"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:244
+msgid "Enter the Port Number"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:254
+msgid "_Database:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:261
+msgid "D_efault strategy:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:454
+msgid "Search all databases"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:615
+msgid "Database"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:615
+#, fuzzy
+msgid "Database Name"
+msgstr "Ingoa"
+
+#: gdictsrc/gdict-pref-dialog.c:631
+#, fuzzy
+msgid "Default Strategy"
+msgstr "Puta aunoa"
+
+#: gdictsrc/gdict-pref-dialog.c:658
+#, c-format
+#, fuzzy
+msgid ""
+"There was an error displaying help: \n"
+"%s"
+msgstr "āwhina"
+
+#: gdictsrc/gdict-speller.c:147
+msgid "Enter a word to know the spelling"
+msgstr ""
+
+#: gdictsrc/gdict-speller.c:154
+msgid "Search s_trategy:"
+msgstr ""
+
+#: gdictsrc/gdict-speller.c:166
+msgid "Click to do the spell check"
+msgstr ""
+
+#: gdictsrc/gdict-speller.c:170
+msgid "Search _results:"
+msgstr ""
+
+#: gdictsrc/gdict-speller.c:230
+msgid "Check Spelling"
+msgstr ""
+
+#: gdictsrc/gdict-speller.c:644
+msgid "Search Strategy"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:1
+msgid "Dictionary server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:2
+msgid "Port used to connect to server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:8
+msgid "The search strategy to use"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:10
+msgid "Use smart lookup"
+msgstr ""
+
+#: gfloppy/gfloppy.desktop.in.h:1 gfloppy/src/gfloppy2.glade.h:11
+msgid "Floppy Formatter"
+msgstr ""
+
+#: gfloppy/gfloppy.desktop.in.h:2
+msgid "Format Floppy Disks"
+msgstr ""
+
+#: gfloppy/gfloppy.schemas.in.h:1
+msgid ""
+"0 for the quick format, 1 for a standard one (adds a low-level format) and "
+"finally 2 for a thorough format (adds a bad blocks scan)."
+msgstr ""
+
+#: gfloppy/gfloppy.schemas.in.h:2
+#, fuzzy
+msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
+msgstr "Puta aunoa"
+
+#: gfloppy/gfloppy.schemas.in.h:3
+#, fuzzy
+msgid "Default filesystem type"
+msgstr "Puta aunoa"
+
+#: gfloppy/gfloppy.schemas.in.h:4
+#, fuzzy
+msgid "Default formatting mode"
+msgstr "Puta aunoa"
+
+#: gfloppy/gfloppy.schemas.in.h:5
+msgid ""
+"TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
+"mtools as the preferred FAT formatting backend."
+msgstr ""
+
+#: gfloppy/gfloppy.schemas.in.h:6
+msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
+msgstr ""
+
+#: gfloppy/src/badblocks.c:94
+#, fuzzy
+msgid "Internal Error: Unable to seek to the correct location."
+msgstr "He."
+
+#: gfloppy/src/badblocks.c:103
+#, c-format
+#, fuzzy
+msgid "Internal Error: Weird value (%ld) in do_test\n"
+msgstr "He"
+
+#. while (!i)
+#. ;
+#: gfloppy/src/badblocks.c:261
+msgid "Checking for bad blocks..."
+msgstr ""
+
+#: gfloppy/src/badblocks.c:273
+#, c-format
+#, fuzzy
+msgid "Failed to open device %s for badblock checking\n"
+msgstr "huaki"
+
+#: gfloppy/src/badblocks.c:293 gfloppy/src/gfloppy.c:533
+#, fuzzy
+msgid "Checking for bad blocks... Done"
+msgstr "Oti"
+
+#: gfloppy/src/fdformat.c:49
+msgid "Formatting the disk..."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:52
+msgid "I don't know what this is, but it's very wrong."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:60 gfloppy/src/fdformat.c:73
+#, c-format
+#, fuzzy
+msgid "Error formatting track #%d"
+msgstr "He"
+
+#: gfloppy/src/fdformat.c:82
+#, fuzzy
+msgid "Error during completion of formatting"
+msgstr "He"
+
+#. XXXX - need to tell parent we're finished
+#: gfloppy/src/fdformat.c:86
+#, fuzzy
+msgid "Formatting the disk... Done"
+msgstr "Oti"
+
+#. XXXX - tell parent we're starting verify stage
+#: gfloppy/src/fdformat.c:102
+msgid "Verifying the format..."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:107 gfloppy/src/fdformat.c:192
+#, fuzzy
+msgid ""
+"Unable to write to the floppy.\n"
+"\n"
+"Please confirm that it is not write-protected."
+msgstr "kōpae pingore."
+
+#: gfloppy/src/fdformat.c:110 gfloppy/src/fdformat.c:195
+#, c-format
+#, fuzzy
+msgid "Insufficient permissions to open floppy device %s."
+msgstr "huaki kōpae pingore."
+
+#: gfloppy/src/fdformat.c:114 gfloppy/src/fdformat.c:199
+#, fuzzy
+msgid ""
+"Unable to access the floppy disk.\n"
+"\n"
+"Please confirm that it is in the drive\n"
+"with the drive door shut."
+msgstr "kōpae pingore."
+
+#: gfloppy/src/fdformat.c:117
+#, c-format
+#, fuzzy
+msgid ""
+"Generic error accessing floppy device %s.\n"
+"\n"
+"Error code %s:%d"
+msgstr "kōpae pingore"
+
+#: gfloppy/src/fdformat.c:140
+#, c-format
+#, fuzzy
+msgid ""
+"Read Error:\n"
+"Problem reading cylinder %d, expected %d, read %d"
+msgstr "He"
+
+#: gfloppy/src/fdformat.c:143
+#, c-format
+msgid "Problem reading cylinder %d, expected %d, read %d"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:154
+#, c-format
+msgid "Bad data in cyl %d.  Continuing... "
+msgstr ""
+
+#: gfloppy/src/fdformat.c:163
+#, c-format
+#, fuzzy
+msgid "Error closing device %s"
+msgstr "He"
+
+#: gfloppy/src/fdformat.c:170
+#, fuzzy
+msgid "Verifying the format... Done"
+msgstr "Oti"
+
+#: gfloppy/src/fdformat.c:182
+#, c-format
+msgid "Unable to write to device %s"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:202
+#, c-format
+#, fuzzy
+msgid ""
+"Generic error accessing floppy device %s.\n"
+"\n"
+"Error code %s"
+msgstr "kōpae pingore"
+
+#: gfloppy/src/fdformat.c:214
+#, fuzzy
+msgid "Could not determine current floppy geometry."
+msgstr "kōpae pingore."
+
+#: gfloppy/src/gfloppy.c:221
+#, fuzzy
+msgid "Error while creating a unique filename for the bad blocks list file."
+msgstr "He."
+
+#: gfloppy/src/gfloppy.c:241
+#, fuzzy
+msgid "Error while filling the bad blocks list file."
+msgstr "He."
+
+#: gfloppy/src/gfloppy.c:304
+#, c-format
+#, fuzzy
+msgid "Error while spawning the (%s) command: %s."
+msgstr "He."
+
+#: gfloppy/src/gfloppy.c:330
+#, fuzzy
+msgid "Unknown mke2fs starting signature, cancelling."
+msgstr "Kaore e mōhio."
+
+#: gfloppy/src/gfloppy.c:344
+#, c-format
+msgid ""
+"The filesystem creation utility (%s) reported the following errors:\n"
+"\n"
+"%s (%d)"
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:361
+msgid "Abnormal child process termination."
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:386
+#, c-format
+#, fuzzy
+msgid "Error while spawning the mbadblocks command: %s."
+msgstr "He."
+
+#: gfloppy/src/gfloppy.c:398
+#, c-format
+msgid ""
+"The bad blocks checking utility (mbadblocks) reported the following errors:\n"
+"%s."
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:441
+msgid "Abnormal mbadblocks child process termination."
+msgstr ""
+
+#. make the filesystem
+#: gfloppy/src/gfloppy.c:467 gfloppy/src/gfloppy.c:507
+msgid "Making filesystem on disk..."
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:475
+msgid "Unable to create filesystem correctly."
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:480 gfloppy/src/gfloppy.c:519
+#, fuzzy
+msgid "Making filesystem on disk... Done"
+msgstr "Oti"
+
+#: gfloppy/src/gfloppy.c:524
+msgid "Checking for bad blocks... (this might take a while)"
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:529
+#, fuzzy
+msgid "Error while checking the bad blocks."
+msgstr "He."
+
+#: gfloppy/src/gfloppy2.glade.h:1
+#, fuzzy
+msgid "    "
+msgstr "    "
+
+#: gfloppy/src/gfloppy2.glade.h:2
+#, fuzzy
+msgid "*"
+msgstr "*"
+
+#: gfloppy/src/gfloppy2.glade.h:3
+msgid ""
+"<small><i><b>Note</b>: The mbadblocks utility isn't installed on this "
+"system.  It must be installed in order to perform a thorough DOS (fat) "
+"formatting.</i></small>"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:4
+#, fuzzy
+msgid "<span weight=\"bold\">Filesystem Settings</span>"
+msgstr "<span weight=\"bold\">  puarahi</span>"
+
+#: gfloppy/src/gfloppy2.glade.h:5
+msgid "<span weight=\"bold\">Formatting Mode</span>"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:6
+msgid "<span weight=\"bold\">Physical Settings</span>"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:7
+msgid "DOS (FAT)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:8
+msgid "Double Density 3.5\" (720KB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:9
+msgid "Double Density 5.25\" (360KB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:10
+#, fuzzy
+msgid "File system _type:"
+msgstr "Te Kōnae:"
+
+#: gfloppy/src/gfloppy2.glade.h:12
+msgid "Floppy _density:"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:13
+msgid "Floppy de_vice:"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:14
+msgid "High Density 3.5\" (1.44MB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:15
+msgid "High Density 5.25\" (1.2MB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:16
+msgid "Linux Native (ext2)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:17
+msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:18
+msgid "Volume _name:"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:19
+#, fuzzy
+msgid "_Format"
+msgstr "_Whakatakoto"
+
+#: gfloppy/src/gfloppy2.glade.h:20
+msgid "_Quick (only creates the filesystem)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:21
+msgid "_Standard (adds a low-level format to the quick mode)"
+msgstr ""
+
+#: gfloppy/src/main.c:140
+#, fuzzy
+msgid ""
+"Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
+"can't format a floppy without one of them."
+msgstr "kōpae pingore."
+
+#: gfloppy/src/main.c:164
+#, c-format
+#, fuzzy
+msgid "Unable to open the device %s, formatting cannot continue."
+msgstr "huaki."
+
+#: gfloppy/src/main.c:167 gfloppy/src/main.c:219
+#, c-format
+msgid ""
+"The device %s is disconnected.\n"
+"Please attach device to continue."
+msgstr ""
+
+#: gfloppy/src/main.c:170 gfloppy/src/main.c:222
+#, c-format
+#, fuzzy
+msgid ""
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
+"Contact your system administrator about getting write permissions."
+msgstr "mō."
+
+#: gfloppy/src/main.c:216
+#, fuzzy
+msgid "Unable to open any device, formatting cannot continue."
+msgstr "huaki."
+
+#: gfloppy/src/main.c:219 gfloppy/src/main.c:222
+#, fuzzy
+msgid "/dev/floppy/0 or /dev/fd0"
+msgstr "kōpae pingore"
+
+#: gfloppy/src/main.c:394
+#, c-format
+#, fuzzy
+msgid ""
+"Could not display help for the floppy formatter.\n"
+"%s"
+msgstr "āwhina kōpae pingore"
+
+#: gfloppy/src/main.c:427
+msgid "The volume name can't contain any blank space."
+msgstr ""
+
+#: gfloppy/src/main.c:477
+msgid "The device to format"
+msgstr ""
+
+#: gfloppy/src/main.c:478
+msgid "DEVICE"
+msgstr ""
+
+#: gfloppy/src/progress.c:123
+#, c-format
+#, fuzzy
+msgid ""
+"The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been "
+"found and marked."
+msgid_plural ""
+"The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
+"been found and marked."
+msgstr[0] "kōpae pingore<b></b>."
+msgstr[1] "kōpae pingore<b></b>."
+
+#: gfloppy/src/progress.c:126
+msgid "Floppy formatted successfully."
+msgstr ""
+
+#: gfloppy/src/progress.c:132
+msgid "Floppy formatting cancelled."
+msgstr ""
+
+#: gfloppy/src/progress.c:175
+msgid "Format Progress"
+msgstr ""
+
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:577
+#: gsearchtool/gsearchtool.c:831 gsearchtool/gsearchtool.c:915
+#: gsearchtool/gsearchtool.c:2193 gsearchtool/gsearchtool.c:2218
+#, fuzzy
+msgid "Search for Files"
+msgstr "He puarahi"
+
+#: gsearchtool/gnome-search-tool.desktop.in.h:2
+msgid "Search your disk for files"
+msgstr ""
+
+#: gsearchtool/gsearchtool-alert-dialog.c:99
+#, fuzzy
+msgid "Image/label border"
+msgstr "Whakaahua"
+
+#: gsearchtool/gsearchtool-alert-dialog.c:100
+msgid "Width of border around the label and image in the alert dialog"
+msgstr ""
+
+#: gsearchtool/gsearchtool-alert-dialog.c:109
+msgid "Alert Type"
+msgstr ""
+
+#: gsearchtool/gsearchtool-alert-dialog.c:110
+msgid "The type of alert"
+msgstr ""
+
+#: gsearchtool/gsearchtool-alert-dialog.c:118
+msgid "Alert Buttons"
+msgstr ""
+
+#: gsearchtool/gsearchtool-alert-dialog.c:119
+msgid "The buttons shown in the alert dialog"
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:50
+#, fuzzy
+msgid "_Open"
+msgstr "_Huaki"
+
+#: gsearchtool/gsearchtool-callbacks.c:54
+#, fuzzy
+msgid "O_pen Folder"
+msgstr "Kōpaki"
+
+#: gsearchtool/gsearchtool-callbacks.c:59
+#, fuzzy
+msgid "Mo_ve to Trash"
+msgstr "Te Para"
+
+#: gsearchtool/gsearchtool-callbacks.c:64
+#, fuzzy
+msgid "_Save Results As..."
+msgstr "Pupuri."
+
+#: gsearchtool/gsearchtool-callbacks.c:111
+#, fuzzy
+msgid "Could not open help document."
+msgstr "huaki āwhina."
+
+#: gsearchtool/gsearchtool-callbacks.c:318
+#, c-format
+#, fuzzy
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "huaki?"
+msgstr[1] "huaki?"
+
+#: gsearchtool/gsearchtool-callbacks.c:323
+#: gsearchtool/gsearchtool-callbacks.c:449
+#, c-format
+#, fuzzy
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "huaki."
+msgstr[1] "huaki."
+
+#: gsearchtool/gsearchtool-callbacks.c:390
+#: gsearchtool/gsearchtool-callbacks.c:946
+#, c-format
+#, fuzzy
+msgid "Could not open document \"%s\"."
+msgstr "huaki."
+
+#: gsearchtool/gsearchtool-callbacks.c:393
+#: gsearchtool/gsearchtool-callbacks.c:949
+#, fuzzy
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "kāo."
+
+#: gsearchtool/gsearchtool-callbacks.c:444
+#, c-format
+#, fuzzy
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "huaki?"
+msgstr[1] "huaki?"
+
+#: gsearchtool/gsearchtool-callbacks.c:502
+#, c-format
+#, fuzzy
+msgid "Could not open folder \"%s\"."
+msgstr "huaki."
+
+#: gsearchtool/gsearchtool-callbacks.c:509
+msgid "The nautilus file manager is not running."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:612
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:615
+msgid "The document does not exist."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:652
+#, c-format
+msgid "Could not move \"%s\" to the trash."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:655
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:685
+#, c-format
+#, fuzzy
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "porowhiu?"
+
+#: gsearchtool/gsearchtool-callbacks.c:688
+#, c-format
+#, fuzzy
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "Te Para."
+
+#: gsearchtool/gsearchtool-callbacks.c:730
+#, c-format
+#, fuzzy
+msgid "Could not delete \"%s\"."
+msgstr "porowhiu."
+
+#: gsearchtool/gsearchtool-callbacks.c:733
+#, c-format
+#, fuzzy
+msgid "Deleting \"%s\" failed: %s."
+msgstr "E porowhiu ana."
+
+#: gsearchtool/gsearchtool-callbacks.c:1134
+#, fuzzy
+msgid "Save Search Results As..."
+msgstr "Pupuri."
+
+#: gsearchtool/gsearchtool-callbacks.c:1186
+#, fuzzy
+msgid "Could not save document."
+msgstr "pupuri."
+
+#: gsearchtool/gsearchtool-callbacks.c:1188
+msgid "You did not select a document name."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:1214
+#: gsearchtool/gsearchtool-callbacks.c:1309
+#, c-format
+#, fuzzy
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "pupuri."
+
+#: gsearchtool/gsearchtool-callbacks.c:1218
+msgid "The document name you selected is a folder."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:1247
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:1251
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr ""
+
+#: gsearchtool/gsearchtool-callbacks.c:1262
+#, fuzzy
+msgid "_Replace"
+msgstr "_Whakakapia"
+
+#: gsearchtool/gsearchtool-callbacks.c:1312
+msgid "You may not have write permissions to the document."
+msgstr ""
+
+#: gsearchtool/gsearchtool-support.c:66
+#, c-format
+msgid ""
+"GConf error:\n"
+"  %s"
+msgstr ""
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: gsearchtool/gsearchtool-support.c:494
+#, fuzzy
+msgid "today at %-I:%M %p"
+msgstr "ākuni hai %-I:%M %p"
+
+#: gsearchtool/gsearchtool-support.c:496
+#, fuzzy
+msgid "yesterday at %-I:%M %p"
+msgstr "nanahi hai %-I:%M %p"
+
+#: gsearchtool/gsearchtool-support.c:498 gsearchtool/gsearchtool-support.c:500
+msgid "%m/%-d/%y, %-I:%M %p"
+msgstr ""
+
+#: gsearchtool/gsearchtool-support.c:671
+#, fuzzy
+msgid "link (broken)"
+msgstr "he hononga"
+
+#: gsearchtool/gsearchtool-support.c:676
+#, c-format
+#, fuzzy
+msgid "link to %s"
+msgstr "honoga a %s"
+
+#: gsearchtool/gsearchtool.c:73
+msgid "Contains the _text"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:75
+msgid "_Date modified less than (days)"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:76
+msgid "Date modified more than (da_ys)"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:78
+msgid "S_ize at least (kilobytes)"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:79
+msgid "Si_ze at most (kilobytes)"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:80
+#, fuzzy
+msgid "File is empty"
+msgstr "Te Kōnae"
+
+#: gsearchtool/gsearchtool.c:82
+msgid "Owned by _user"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:83
+#, fuzzy
+msgid "Owned by _group"
+msgstr "rōpū"
+
+#: gsearchtool/gsearchtool.c:84
+#, fuzzy
+msgid "Owner is unrecognized"
+msgstr "Rangatira"
+
+#: gsearchtool/gsearchtool.c:86
+msgid "Na_me does not contain"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:87
+#, fuzzy
+msgid "Name matches regular e_xpression"
+msgstr "Ingoa"
+
+#: gsearchtool/gsearchtool.c:89
+msgid "Show hidden and backup files"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:90
+msgid "Follow symbolic links"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:91
+msgid "Include other filesystems"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:524 gsearchtool/gsearchtool.c:552
+#, fuzzy
+msgid "No files found"
+msgstr "Kāo"
+
+#: gsearchtool/gsearchtool.c:545
+msgid "(stopped)"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:551
+#, fuzzy
+msgid "No Files Found"
+msgstr "Kāo He puarahi"
+
+#: gsearchtool/gsearchtool.c:556
+#, c-format
+#, fuzzy
+msgid "%d File Found"
+msgid_plural "%d Files Found"
+msgstr[0] "Te Kōnae"
+msgstr[1] "Te Kōnae"
+
+#: gsearchtool/gsearchtool.c:560
+#, c-format
+msgid "%d file found"
+msgid_plural "%d files found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gsearchtool/gsearchtool.c:666
+msgid "Entry changed called for a non entry option!"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:915
+msgid "Searching..."
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:936
+#, fuzzy
+msgid "Set the text of 'Name contains'"
+msgstr "Ingoa"
+
+#: gsearchtool/gsearchtool.c:937
+msgid "Set the text of 'Look in folder'"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:938
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:939
+msgid "Set sort order to descending, the default is ascending"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:940
+msgid "Automatically start a search"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:945
+#, c-format
+msgid "Select the '%s' constraint"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1051
+msgid "Invalid option passed to sortby command line argument."
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1316
+msgid ""
+"While searching the following errors were reported.\n"
+"\n"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1320
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1327
+#, fuzzy
+msgid "Error while searching for files."
+msgstr "He."
+
+#: gsearchtool/gsearchtool.c:1368
+#, fuzzy
+msgid "Error parsing the search command."
+msgstr "He."
+
+#: gsearchtool/gsearchtool.c:1391
+#, fuzzy
+msgid "Error running the search command."
+msgstr "He."
+
+#: gsearchtool/gsearchtool.c:1487
+msgid "Search Rule Value Entry"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1488
+msgid "Enter a value for search rule"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1524
+#, c-format
+#, fuzzy
+msgid "Click to Remove the '%s' Rule"
+msgstr "Tangohia"
+
+#: gsearchtool/gsearchtool.c:1580
+msgid "A_vailable options:"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1593
+msgid "Search Rules Menu"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1594
+msgid "Select a search rule from the menu"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1625
+msgid "S_earch results:"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1705
+#, fuzzy
+msgid "Name"
+msgstr "Ingoa"
+
+#: gsearchtool/gsearchtool.c:1725
+#, fuzzy
+msgid "Folder"
+msgstr "Kōpaki"
+
+#: gsearchtool/gsearchtool.c:1736
+#, fuzzy
+msgid "Size"
+msgstr "Rahi"
+
+#: gsearchtool/gsearchtool.c:1746
+msgid "Type"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1756
+#, fuzzy
+msgid "Date Modified"
+msgstr "Kua whakarereketia"
+
+#: gsearchtool/gsearchtool.c:1814
+#, fuzzy
+msgid "_Name contains:"
+msgstr "Ingoa:"
+
+#: gsearchtool/gsearchtool.c:1829 gsearchtool/gsearchtool.c:1830
+msgid "Enter the file name you want to search"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1830
+#, fuzzy
+msgid "Name Contains Entry"
+msgstr "Ingoa"
+
+#: gsearchtool/gsearchtool.c:1841
+msgid "_Look in folder:"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1847
+msgid "Browse"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1858 gsearchtool/gsearchtool.c:1859
+msgid "Enter the folder name where you want to start the search"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1859
+#, fuzzy
+msgid "Look in Folder Entry"
+msgstr "Kōpaki"
+
+#: gsearchtool/gsearchtool.c:1877
+msgid "Show more _options"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1887
+msgid "Show more options"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1887
+msgid "Expands or collapses a list of search options."
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1934
+msgid "Click to Start the search"
+msgstr ""
+
+#: gsearchtool/gsearchtool.c:1935
+#, fuzzy
+msgid "Click to Stop the search"
+msgstr "Whakamutua"
+
+#: gsearchtool/gsearchtool.c:2214
+msgid "Cannot initialize bonobo."
+msgstr ""
+
+#. Author needs some sort of dash over the 'e' in Cesar  - U-00E9
+#: logview/about.c:43
+msgid "Cesar Miquel (miquel@df.uba.ar)"
+msgstr ""
+
+#: logview/about.c:44
+#, fuzzy
+msgid "A system log viewer for GNOME."
+msgstr "GNOME."
+
+#: logview/about.c:58
+msgid "System Log Viewer"
+msgstr ""
+
+#: logview/actions.c:74
+msgid "Action Database"
+msgstr ""
+
+#: logview/actions.c:85
+msgid "Actions"
+msgstr ""
+
+#: logview/actions.c:157
+#, fuzzy
+msgid "_Add"
+msgstr "_Tāpiri"
+
+#: logview/actions.c:162
+msgid "Add an action"
+msgstr ""
+
+#: logview/actions.c:164
+#, fuzzy
+msgid "_Edit"
+msgstr "_Whakatika"
+
+#: logview/actions.c:169
+#, fuzzy
+msgid "Edit an action"
+msgstr "Whakatika"
+
+#: logview/actions.c:171
+#, fuzzy
+msgid "_Remove"
+msgstr "_Tangohia"
+
+#: logview/actions.c:176
+#, fuzzy
+msgid "Remove an action"
+msgstr "Tangohia"
+
+#: logview/actions.c:263
+#, c-format
+#, fuzzy
+msgid "Cannot open action data base <%s>! Open failed."
+msgstr "huaki Huaki."
+
+#: logview/actions.c:298 logview/actions.c:311 logview/actions.c:322
+#: logview/actions.c:333 logview/actions.c:344 logview/actions.c:355
+#, fuzzy
+msgid "Error parsing actions data base"
+msgstr "He"
+
+#: logview/actions.c:389
+msgid "Can't write to actions database!"
+msgstr ""
+
+#: logview/actions.c:489
+#, fuzzy
+msgid "Error while executing specified action"
+msgstr "He"
+
+#: logview/actions.c:510
+msgid "<empty>"
+msgstr ""
+
+#: logview/actions.c:511
+msgid "log name regexp"
+msgstr ""
+
+#: logview/actions.c:512
+msgid "process regexp"
+msgstr ""
+
+#: logview/actions.c:513
+msgid "message regexp"
+msgstr ""
+
+#: logview/actions.c:514
+#, fuzzy
+msgid "action to execute when regexps are TRUE"
+msgstr "whakahaerea"
+
+#: logview/actions.c:515
+msgid "description"
+msgstr ""
+
+#: logview/actions.c:651
+#, fuzzy
+msgid "Edit Action"
+msgstr "Whakatika"
+
+#: logview/actions.c:687
+msgid "_Tag:"
+msgstr ""
+
+#: logview/actions.c:696
+msgid "Tag that identifies the log file."
+msgstr ""
+
+#: logview/actions.c:705
+msgid "_Log name:"
+msgstr ""
+
+#: logview/actions.c:714
+msgid "Regular expression that will match the log name."
+msgstr ""
+
+#: logview/actions.c:724
+msgid "_Process:"
+msgstr ""
+
+#: logview/actions.c:733
+msgid "Regular expression that will match process part of message."
+msgstr ""
+
+#: logview/actions.c:743
+msgid "_Message:"
+msgstr ""
+
+#: logview/actions.c:752
+msgid "Regular expression that will match the message."
+msgstr ""
+
+#: logview/actions.c:762
+msgid "_Action:"
+msgstr ""
+
+#: logview/actions.c:771
+msgid ""
+"Action that will be executed if all previous regexps. are matched. This is "
+"executed by a system command: system (action)."
+msgstr ""
+
+#: logview/actions.c:781
+#, fuzzy
+msgid "_Description:"
+msgstr "Whakaaturanga:"
+
+#: logview/actions.c:790
+#, fuzzy
+msgid "Description of this entry."
+msgstr "Whakaaturanga."
+
+#: logview/actions.c:814
+#, c-format
+msgid ""
+"tag: [%s]\n"
+"log_name: [%s]\n"
+"process: [%s]\n"
+"message: [%s]\n"
+"description: [%s]\n"
+"action: [%s]\n"
+msgstr ""
+
+#: logview/calendar.c:110
+msgid "Calendar"
+msgstr ""
+
+#: logview/desc_db.c:37
+#, c-format
+#, fuzzy
+msgid "Cannot open regexp data base <%s>! Open failed."
+msgstr "huaki Huaki."
+
+#: logview/desc_db.c:147
+#, c-format
+#, fuzzy
+msgid "Cannot open description data base <%s>! Open failed."
+msgstr "huaki Huaki."
+
+#. ----------------------------------------------------------------------
+#. NAME:
+#. DESCRIPTION:
+#. ----------------------------------------------------------------------
+#: logview/gnome-system-log.desktop.in.h:1
+msgid "System Log"
+msgstr ""
+
+#: logview/gnome-system-log.desktop.in.h:2
+#, fuzzy
+msgid "View the system log file"
+msgstr "Titiro"
+
+#: logview/info.c:62
+#, fuzzy
+msgid "Properties"
+msgstr "Ngā Āhuatanga"
+
+#: logview/info.c:108
+#, fuzzy
+msgid "Size:"
+msgstr "Rahi:"
+
+#: logview/info.c:108
+#, fuzzy
+msgid "Modified:"
+msgstr "Kua whakarereketia:"
+
+#: logview/info.c:109
+msgid "Start Date:"
+msgstr ""
+
+#: logview/info.c:109
+#, fuzzy
+msgid "Last Date:"
+msgstr "Toenga:"
+
+#: logview/info.c:109
+msgid "Number of Lines:"
+msgstr ""
+
+#: logview/info.c:134
+#, fuzzy
+msgid "Log Information"
+msgstr "Rongo"
+
+#: logview/info.c:160 logview/zoom.c:155
+msgid "<No log loaded>"
+msgstr ""
+
+#: logview/info.c:183
+#, c-format
+msgid "%ld byte"
+msgid_plural "%ld bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: logview/log_repaint.c:59
+msgid "January"
+msgstr ""
+
+#: logview/log_repaint.c:59
+msgid "February"
+msgstr ""
+
+#: logview/log_repaint.c:59
+msgid "March"
+msgstr ""
+
+#: logview/log_repaint.c:59
+msgid "April"
+msgstr ""
+
+#: logview/log_repaint.c:59
+msgid "May"
+msgstr ""
+
+#: logview/log_repaint.c:60
+msgid "June"
+msgstr ""
+
+#: logview/log_repaint.c:60
+msgid "July"
+msgstr ""
+
+#: logview/log_repaint.c:60
+msgid "August"
+msgstr ""
+
+#: logview/log_repaint.c:60
+msgid "September"
+msgstr ""
+
+#: logview/log_repaint.c:60
+msgid "October"
+msgstr ""
+
+#: logview/log_repaint.c:61
+msgid "November"
+msgstr ""
+
+#: logview/log_repaint.c:61
+msgid "December"
+msgstr ""
+
+#. Translators: Date only format, %x should well do really
+#: logview/log_repaint.c:397
+#, c-format
+msgid "%x"
+msgstr ""
+
+#. Translators: Make sure this is only Month and Day format, year
+#. * will be bogus here
+#: logview/log_repaint.c:452
+msgid "%B %e"
+msgstr ""
+
+#. Translators: should be only the time, date could be bogus
+#: logview/log_repaint.c:524
+#, c-format
+msgid "%X"
+msgstr ""
+
+#: logview/logrtns.c:193
+msgid "Not enough memory!\n"
+msgstr ""
+
+#: logview/logrtns.c:204
+#, fuzzy
+msgid "Unable to open logfile!\n"
+msgstr "huaki"
+
+#: logview/logrtns.c:265
+#, c-format
+msgid "%s is not a regular file."
+msgstr ""
+
+#: logview/logrtns.c:273
+#, c-format
+msgid ""
+"%s is not user readable. Either run the program as root or ask the sysadmin "
+"to change the permissions on the file."
+msgstr ""
+
+#: logview/logrtns.c:290
+#, c-format
+msgid "%s could not be opened."
+msgstr ""
+
+#: logview/logrtns.c:320 logview/logrtns.c:329
+#, c-format
+msgid "%s not a log file."
+msgstr ""
+
+#: logview/logrtns.c:727 logview/logrtns.c:758 logview/logrtns.c:889
+msgid "ReadLogStats: out of memory"
+msgstr ""
+
+#: logview/logview.c:97
+msgid "S_witch Log"
+msgstr ""
+
+#: logview/logview.c:98
+msgid "Switch between already opened logs"
+msgstr ""
+
+#: logview/logview.c:104
+msgid "_Monitor..."
+msgstr ""
+
+#: logview/logview.c:105
+msgid "Monitor Logs"
+msgstr ""
+
+#: logview/logview.c:113
+#, fuzzy
+msgid "_Properties"
+msgstr "Ngā _Āhuatanga"
+
+#: logview/logview.c:114
+#, fuzzy
+msgid "Show Log Properties"
+msgstr "Ngā Āhuatanga"
+
+#: logview/logview.c:122
+msgid "Clos_e All"
+msgstr ""
+
+#: logview/logview.c:123
+#, fuzzy
+msgid "Close all Log files"
+msgstr "Kati"
+
+#: logview/logview.c:135
+msgid "_Calendar"
+msgstr ""
+
+#: logview/logview.c:136
+msgid "Show Calendar Log"
+msgstr ""
+
+#: logview/logview.c:142
+msgid "_Entry Detail"
+msgstr ""
+
+#: logview/logview.c:143
+msgid "Show Entry Detail"
+msgstr ""
+
+#: logview/logview.c:149
+msgid "_Collapse All"
+msgstr ""
+
+#: logview/logview.c:150
+msgid "Collapse all the rows"
+msgstr ""
+
+#: logview/logview.c:367
+#, fuzzy
+msgid "No log files to open"
+msgstr "Kāo huaki"
+
+#: logview/logview.c:389
+msgid "Date"
+msgstr ""
+
+#: logview/logview.c:389
+#, fuzzy
+msgid "Host Name"
+msgstr "Ingoa"
+
+#: logview/logview.c:390
+msgid "Process"
+msgstr ""
+
+#: logview/logview.c:390
+msgid "Message"
+msgstr ""
+
+#: logview/logview.c:471
+#, fuzzy
+msgid "Last Modified: "
+msgstr "Toenga Kua whakarereketia "
+
+#: logview/logview.c:570 logview/logview.c:645
+#, fuzzy
+msgid "Too many open logs. Close one and try again"
+msgstr "huaki Kati"
+
+#: logview/logview.c:582
+#, fuzzy
+msgid "File already opened"
+msgstr "Te Kōnae"
+
+#: logview/logview.c:658
+#, fuzzy
+msgid "Open new logfile"
+msgstr "Huaki hou"
+
+#: logview/logview.schemas.in.h:1
+#, fuzzy
+msgid "Log file to open up on startup"
+msgstr "huaki"
+
+#: logview/logview.schemas.in.h:2
+#, fuzzy
+msgid ""
+"Specifies the log file to open up at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr "huaki."
+
+#: logview/misc.c:56
+#, c-format
+#, fuzzy
+msgid "Error: [%s]\n"
+msgstr "He"
+
+#: logview/monitor.c:108
+msgid "Monitor Options"
+msgstr ""
+
+#: logview/monitor.c:111
+msgid "Ac_tions..."
+msgstr ""
+
+#: logview/monitor.c:137
+msgid "_Select logs to monitor:"
+msgstr ""
+
+#: logview/monitor.c:142
+msgid "Currently _monitored logs:"
+msgstr ""
+
+#: logview/monitor.c:190
+msgid "Add logs to monitor"
+msgstr ""
+
+#: logview/monitor.c:199
+#, fuzzy
+msgid "Remove logs from monitor"
+msgstr "Tangohia"
+
+#. Check boxes
+#: logview/monitor.c:246
+msgid "_Hide application"
+msgstr ""
+
+#: logview/monitor.c:254
+msgid "_Execute actions"
+msgstr ""
+
+#: logview/monitor.c:290
+#, fuzzy
+msgid "Too many logs to monitor. Remove one and try again"
+msgstr "Tangohia"
+
+#: logview/monitor.c:298 logview/monitor.c:335
+#, c-format
+msgid "tmp_list is NULL\n"
+msgstr ""
+
+#: logview/monitor.c:457
+msgid "Monitoring Logs..."
+msgstr ""
+
+#: logview/monitor.c:643
+#, c-format
+msgid "TOUCHED!!\n"
+msgstr ""
+
+#: logview/zoom.c:63
+msgid "Entry Detail"
+msgstr ""
+
+#: logview/zoom.c:101
+msgid "Date:"
+msgstr ""
+
+#: logview/zoom.c:101
+msgid "Process:"
+msgstr ""
+
+#: logview/zoom.c:102
+msgid "Message:"
+msgstr ""
+
+#: logview/zoom.c:102
+#, fuzzy
+msgid "Description:"
+msgstr "Whakaaturanga:"
+
+#: logview/zoom.c:129
+msgid "Log Line Details"
+msgstr ""
+
+#. Translators: do not include year, it would be bogus
+#: logview/zoom.c:187
+msgid "%B %e %X"
+msgstr ""
+
