@@ -40,6 +40,7 @@ noinst_HEADERS = 	\
 	gtt.h		\
 	idle-timer.h	\
 	journal.h	\
+	log.h		\
 	menucmd.h	\
 	plug-in.h	\
 	prefs.h		\

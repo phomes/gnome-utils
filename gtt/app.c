@@ -27,6 +27,7 @@
 #include "ctree.h"
 #include "cur-proj.h"
 #include "gtt.h"
+#include "log.h"
 #include "menucmd.h"
 #include "menus.h"
 #include "prefs.h"

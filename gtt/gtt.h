@@ -32,8 +32,6 @@
 #include <time.h>
 #endif /* TIME_WITH_SYS_TIME */
 
-#include "proj.h"
-
 
 #ifdef DEBUG
 #define APP_NAME "GTimeTracker DEBUG"
@@ -56,26 +54,10 @@ gboolean timer_is_running (void);
 extern int config_idle_timeout;
 
 
-/* log.c */
-
-void log_proj(GttProject *proj);
-void log_start(void);
-void log_exit(void);
-void log_endofday(void);
-
-
 /* app.c */
 
 extern GtkWidget *glist, *window;
 extern GtkWidget *status_bar;
-
-extern char *config_command;
-extern char *config_command_null;
-extern char *config_logfile_name;
-extern char *config_logfile_str;
-extern char *config_logfile_stop;
-extern int config_logfile_use;
-extern int config_logfile_min_secs;
 
 /* true if command line over-rides geometry */
 extern gboolean geom_size_override;

@@ -38,6 +38,14 @@ extern int config_show_tb_pref;
 extern int config_show_tb_help;
 extern int config_show_tb_exit;
 
+extern char *config_command;
+extern char *config_command_null;
+extern char *config_logfile_name;
+extern char *config_logfile_start;
+extern char *config_logfile_stop;
+extern int config_logfile_use;
+extern int config_logfile_min_secs;
+
 
 /* pop up a dialog box for setting user preferences */
 void prefs_dialog_show (void);
