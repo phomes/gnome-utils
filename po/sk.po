@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-09-28 20:24-0400\n"
-"PO-Revision-Date: 2001-09-29 19:03CET\n"
+"POT-Creation-Date: 2001-10-14 15:16+0200\n"
+"PO-Revision-Date: 2001-10-14 15:20CET\n"
 "Last-Translator: Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,7 @@ msgstr "CE/C"
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1370
+#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1379
 msgid "INV"
 msgstr "INV"
 
@@ -163,15 +163,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:810
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:809
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:808
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
 msgid "3"
 msgstr "3"
 
@@ -454,11 +454,11 @@ msgstr ""
 
 #: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 #: gdictsrc/gdict-applet.c:313
-msgid "Lookup"
+msgid "Look up"
 msgstr "Hµada»"
 
 #: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
-msgid "Lookup word in dictionary"
+msgid "Look up word in dictionary"
 msgstr "Hµadá slovo v slovníku"
 
 #: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
@@ -493,7 +493,7 @@ msgstr "Pou¾ívaný server, stratégia hµadania, písma"
 msgid "Word definition"
 msgstr "Definícia slova"
 
-#: gdictsrc/gdict-applet.c:280 logview/logview.c:135
+#: gdictsrc/gdict-applet.c:280 logview/logview.c:136
 msgid "About..."
 msgstr "O programe..."
 
@@ -621,7 +621,7 @@ msgid "Find Words..."
 msgstr "Nájs» slová..."
 
 #: gdictsrc/gdict-speller.c:151
-msgid "Lookup Word..."
+msgid "Look up Word..."
 msgstr "Nájs» slovo..."
 
 #: gdictsrc/gdict-speller.c:163
@@ -812,8 +812,8 @@ msgstr "Prida»"
 msgid "Show Command"
 msgstr "Ukáza» príkaz"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ghtml.c:94
-#: gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gtt/ghtml.c:94 gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "©tart"
 
@@ -896,105 +896,164 @@ msgstr ""
 "Nerozumiem umiestneniu (pozícii a veµkosti)\n"
 " uvedenému na príkazovom riadku"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:511
 msgid "Total"
 msgstr "Celkom"
 
-#: gtt/ctree.c:532
+#: gtt/ctree.c:513
+msgid "Total time spent on this project."
+msgstr "Celkový èas pre tento projekt"
+
+#: gtt/ctree.c:518
 msgid "This Memo"
 msgstr "Toto memo"
 
-#: gtt/ctree.c:536 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:520
+msgid "Time spent under the current task memo."
+msgstr "Èas strávený pre aktuálne memo o úlohe."
+
+#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Dnes"
 
-#: gtt/ctree.c:540
+#: gtt/ctree.c:528
+msgid "Time spent on this project today."
+msgstr "Èas strávený dnes pre tento projekt"
+
+#: gtt/ctree.c:533
 msgid "Week"
 msgstr "Tý¾deò"
 
-#: gtt/ctree.c:544
+#: gtt/ctree.c:535
+msgid "Time spent on this project this week."
+msgstr "Èas strávený tento tý¾deò pre tento projekt."
+
+#: gtt/ctree.c:541
 msgid "Month"
 msgstr "Mesiac"
 
-#: gtt/ctree.c:548
+#: gtt/ctree.c:543
+msgid "Time spent on this project this month."
+msgstr "Èas strávený tento mesiac pre tento projekt."
+
+#: gtt/ctree.c:549
 msgid "Year"
 msgstr "Rok"
 
-#: gtt/ctree.c:552 gtt/menucmd.c:144
+#: gtt/ctree.c:551
+msgid "Time spent on this project this year."
+msgstr "Èas strávený tento rok pre tento projekt."
+
+#: gtt/ctree.c:557
+msgid "Title"
+msgstr "Titul"
+
+#: gtt/ctree.c:558 gtt/menucmd.c:144
 msgid "Project Title"
 msgstr "Titulok projektu"
 
-#: gtt/ctree.c:556 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
 msgid "Description"
 msgstr "Popis"
 
-#: gtt/ctree.c:560
+#: gtt/ctree.c:569
 msgid "Task"
 msgstr "Úloha"
 
-#: gtt/ctree.c:564
-msgid "Estimated Start Date"
-msgstr "Predpokladaný termín zaèiatku"
+#: gtt/ctree.c:571
+msgid "The memo for the current task"
+msgstr "Memo pre aktuálnu úlohu"
 
-#: gtt/ctree.c:568
-msgid "Estimated End Date"
-msgstr "Predpokladaný termín konca"
+#: gtt/ctree.c:578
+msgid "Estimated Project Start Date"
+msgstr "Predpokladaný termín zaèiatku projektu"
 
-#: gtt/ctree.c:572
-msgid "Date Due"
+#: gtt/ctree.c:583
+msgid "End"
+msgstr "Koniec"
+
+#: gtt/ctree.c:585
+msgid "Estimated Project Completion Date"
+msgstr "Predpokladaný termín dokonèenia projektu"
+
+#: gtt/ctree.c:590
+msgid "Due"
 msgstr "Termín"
 
-#: gtt/ctree.c:576
-msgid "Sizing"
+#: gtt/ctree.c:592
+msgid "Due Date: the date by which the project absolutely must be completed by."
+msgstr "Termín: dátum, kedy musí by» projekt urèite dokonèený."
+
+#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+msgid "Size"
 msgstr "Veµkos»"
 
-#: gtt/ctree.c:580 gtt/glade/project_properties.glade.h:5
-#, no-c-format
-msgid "% Complete"
-msgstr "% hotových"
+#: gtt/ctree.c:601
+msgid "Sizing: How much work it will take to finish this project."
+msgstr "Veµkos»: Koµko práce bude treba pre dokonèenie tohto projektu."
 
-#: gtt/ctree.c:584
-msgid "Urgency"
-msgstr "Urgentnos»"
+#: gtt/ctree.c:607
+msgid "Done"
+msgstr "Hotovo"
 
-#: gtt/ctree.c:588
-msgid "Importance"
-msgstr "Dôle¾itos»"
+#: gtt/ctree.c:609
+msgid "Percent Complete: How much of this project has been finished till now."
+msgstr "Percentuálna dokonèená èas»: Aká èas» projektu u¾ je dokonèená."
 
-#: gtt/ctree.c:592 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:616
+msgid "U"
+msgstr "U"
+
+#: gtt/ctree.c:618
+msgid "Urgency: Does this project need to be done soon, done quickly?"
+msgstr "Urgentnos»: Musí by» tento projekt dokonèený skoro a rýchlo?"
+
+#: gtt/ctree.c:624
+msgid "Imp"
+msgstr "Dôl"
+
+#: gtt/ctree.c:626
+msgid "Importance: How important is this project?"
+msgstr "Dôle¾itos»: Ako dôle¾itý je tento projekt?"
+
+#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
 msgstr "Stav"
 
-#: gtt/ctree.c:820 gtt/glade/project_properties.glade.h:25
+#: gtt/ctree.c:634
+msgid "The current status of this project."
+msgstr "Aktuálny stav projektu."
+
+#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
 msgid "Low"
 msgstr "Nízka"
 
-#: gtt/ctree.c:821
+#: gtt/ctree.c:970
 msgid "Med"
 msgstr "Stredná"
 
-#: gtt/ctree.c:822 gtt/glade/project_properties.glade.h:15
+#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
 msgid "High"
 msgstr "Veµká"
 
-#: gtt/ctree.c:831 gtt/glade/project_properties.glade.h:29
+#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
 msgid "Not Started"
 msgstr "Nezaèal"
 
-#: gtt/ctree.c:832 gtt/glade/project_properties.glade.h:21
+#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
 msgid "In Progress"
 msgstr "Prebieha"
 
-#: gtt/ctree.c:833 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
 msgstr "Pozdr¾aný"
 
-#: gtt/ctree.c:834 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
 msgstr "Zru¹ený"
 
-#: gtt/ctree.c:835 gtt/glade/project_properties.glade.h:10
+#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
 msgstr "Dokonèený"
 
@@ -1120,7 +1179,7 @@ msgstr "(null)"
 msgid "Unkown Error"
 msgstr "Neznáma chyba"
 
-#: gtt/journal.c:168 gtt/plug-in.c:89
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1198,7 +1257,7 @@ msgstr "Výber projektu pri ¹tarte"
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: gtt/main.c:486 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:487 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
 msgid "Warning"
 msgstr "Varovanie"
 
@@ -1337,7 +1396,7 @@ msgstr "Èaso_vaè"
 msgid "Reports"
 msgstr "Reporty"
 
-#: gtt/plug-in.c:120
+#: gtt/plug-in.c:121
 msgid "Reports/<Separator>"
 msgstr "Reporty/<Separator>"
 
@@ -1854,6 +1913,11 @@ msgstr "            "
 msgid "                        "
 msgstr "                        "
 
+#: gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
+msgstr "% hotových"
+
 #: gtt/glade/project_properties.glade.h:6
 msgid "A title to assign to this project"
 msgstr "Titulok pre tento projekt"
@@ -2138,12 +2202,12 @@ msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:42
 msgid ""
-"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
-"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"This  program  is  part of  the  GNOME  project. Logview comes with "
+"ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Tento  program  je  súèas»ou  projektu GNOME pre Linux. Logview nedáva "
+"Tento  program  je  súèas»ou  projektu GNOME. Logview nedáva "
 "ABSOLÚTNE ®IADNE ZÁRUKY. Je to voµne ¹íriteµný softvér, a budeme radi ak ho "
 "budete distribuova» ïalej podµa pravidiel GNU General Public Licence. Log "
 "ikona je od Tuomasa Kuosmanena (a.k.a tigert)."
@@ -2452,32 +2516,32 @@ msgstr "Filter..                "
 msgid "Filter log events"
 msgstr "Filtruje udalosti záznamu"
 
-#: logview/logview.c:136
+#: logview/logview.c:137
 msgid "Info about logview"
 msgstr "Zobrazí informácie o logview"
 
-#: logview/logview.c:240
+#: logview/logview.c:241
 msgid "No log files to open"
 msgstr "Neotvorené ¾iadne súbory so záznamom"
 
 #. Create App
-#: logview/logview.c:263
+#: logview/logview.c:264
 msgid "System Log Viewer"
 msgstr "Zobrazovaè systémových záznamov"
 
-#: logview/logview.c:367
+#: logview/logview.c:368
 msgid "Filename: "
 msgstr "Meno súboru: "
 
-#: logview/logview.c:383
+#: logview/logview.c:384
 msgid "Date: "
 msgstr "Dátum: "
 
-#: logview/logview.c:618
+#: logview/logview.c:619
 msgid "Too many open logs. Close one and try again"
 msgstr "Príli¹ veµa otvorených záznamov. Zatvorte niektorý a skúste to znovu."
 
-#: logview/logview.c:675
+#: logview/logview.c:676
 msgid "Open new logfile"
 msgstr "Otvori» nový súbor so záznamom"
 
@@ -3695,10 +3759,6 @@ msgstr "Voµná pamä»:"
 #: mini-utils/guname/info.c:60
 msgid "Device"
 msgstr "Zariadenie"
-
-#: mini-utils/guname/info.c:61
-msgid "Size"
-msgstr "Veµkos»"
 
 #: mini-utils/guname/info.c:62
 msgid "Used space"
