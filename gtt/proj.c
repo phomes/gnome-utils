@@ -1482,6 +1482,12 @@ gtt_interval_split (GttInterval *ivl)
 
 	newtask->interval_list = node;
 
+	for (; node; node=node->next)
+	{
+		GttInterval *nivl = node->data;
+		nivl->parent = newtask;
+	}
+
 	proj_refresh_time (prnt->parent);
 	return newtask;
 }
