@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-07-16 08:35+0400\n"
-"PO-Revision-Date: 2002-07-16 08:49+04:00\n"
+"POT-Creation-Date: 2002-07-23 15:50+0400\n"
+"PO-Revision-Date: 2002-07-23 15:52+04:00\n"
 "Last-Translator: Dmitry G. Mastrukov <dmitry@taurussoft.org>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -573,15 +573,15 @@ msgstr "Элемент GDialog"
 msgid "Enter the text"
 msgstr "Введите текст"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Стандартные"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:270
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Поиск в словаре"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Поиск слова в онлайновом словаре"
@@ -621,6 +621,14 @@ msgid ""
 msgstr ""
 "Возникла серьёзная ошибка. Проверьте, что сервер и порт указаны правильно. "
 "Для справки: сервер по умолчанию -- dict.org, порт -- 2628"
+
+#: gdictsrc/gdict-about.c:56
+msgid "GNOME Dictionary"
+msgstr "Словарь среды GNOME"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
+msgstr "Авторские права 1999, Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -882,7 +890,8 @@ msgid ""
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
 "Указать, используется ли интеллектуальный поиск. Ключ зависит от того, "
-"поддерживает ли сервер этот параметр. Исходным значением является ИСТИНА (TRUE)"
+"поддерживает ли сервер этот параметр. Исходным значением является ИСТИНА "
+"(TRUE)"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -893,8 +902,8 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"Сервер словаря для подключения. Исходным сервером является "
-"dict.org. Смотрите http://www.dict.org для подробностей по другим серверам"
+"Сервер словаря для подключения. Исходным сервером является dict.org. "
+"Смотрите http://www.dict.org для подробностей по другим серверам"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
@@ -919,8 +928,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"Используемая стратегия поиска. Зависит от стратегий поиска, поддерживаемых сервером. "
-"Исходной стратегией является \"lev\" - Совпадающие слова по Левенштейну"
+"Используемая стратегия поиска. Зависит от стратегий поиска, поддерживаемых "
+"сервером. Исходной стратегией является \"lev\" - Совпадающие слова по "
+"Левенштейну"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
