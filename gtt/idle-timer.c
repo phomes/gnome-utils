@@ -17,6 +17,7 @@
 
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
+#include <gtk/gtk.h>
 
 #include <stdio.h>
 #include <X11/Xlib.h>
@@ -54,7 +55,7 @@ static Bool proc_interrupts_activity_p (saver_info *si);
 static void check_for_clock_skew (saver_info *si);
 
 
-void
+static gint
 idle_timer (gpointer closure)
 {
   saver_info *si = (saver_info *) closure;
@@ -75,19 +76,18 @@ idle_timer (gpointer closure)
   fake_event.xany.display = si->dpy;
   fake_event.xany.window  = 0;
   XPutBackEvent (si->dpy, &fake_event);
+
+  return 0;
 }
 
 
 static void
-schedule_wakeup_event (saver_info *si, Time when, Bool verbose_p)
+schedule_wakeup_event (saver_info *si, Time when)
 {
   /* Wake up periodically to ask the server if we are idle. */
   si->timer_id = gtk_timeout_add (when, idle_timer,
                                   (gpointer) si);
 }
-
-#if 0
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 static void
 notice_events (saver_info *si, Window window, Bool top_p)
@@ -142,6 +142,9 @@ notice_events (saver_info *si, Window window, Bool top_p)
     }
 }
 
+#if 0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 
 int
 BadWindow_ehandler (Display *dpy, XErrorEvent *error)
@@ -159,14 +162,16 @@ BadWindow_ehandler (Display *dpy, XErrorEvent *error)
     return saver_ehandler (dpy, error);
 }
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#endif 
 
 struct notice_events_timer_arg {
   saver_info *si;
   Window w;
 };
 
-static void
-notice_events_timer (XtPointer closure, XtIntervalId *id)
+static gint
+notice_events_timer (gpointer closure)
 {
   struct notice_events_timer_arg *arg =
     (struct notice_events_timer_arg *) closure;
@@ -180,9 +185,11 @@ notice_events_timer (XtPointer closure, XtIntervalId *id)
   notice_events (si, window, True);
   XSync (si->dpy, False);
   XSetErrorHandler (old_handler);
+  return 0;
 }
 
-void
+
+static void
 start_notice_events_timer (saver_info *si, Window w, Bool verbose_p)
 {
   saver_preferences *p = &si->prefs;
@@ -190,12 +197,9 @@ start_notice_events_timer (saver_info *si, Window w, Bool verbose_p)
     (struct notice_events_timer_arg *) malloc(sizeof(*arg));
   arg->si = si;
   arg->w = w;
-  XtAppAddTimeOut (si->app, p->notice_events_timeout, notice_events_timer,
-		   (XtPointer) arg);
+  gtk_timeout_add (p->notice_events_timeout, notice_events_timer,
+		   (gpointer) arg);
 
-  if (verbose_p)
-    fprintf (stderr, "%s: starting notice_events_timer for 0x%X (%lu)\n",
-             blurb(), (unsigned int) w, p->notice_events_timeout);
 }
 
 
@@ -216,23 +220,22 @@ reset_timers (saver_info *si)
         fprintf (stderr, "%s: killing idle_timer  (%ld, %ld)\n",
                  blurb(), p->timeout, si->timer_id);
 #endif /* DEBUG_TIMERS */
-      XtRemoveTimeOut (si->timer_id);
+      gtk_timeout_remove (si->timer_id);
     }
 
-  schedule_wakeup_event (si, p->timeout, p->verbose_p); /* sets si->timer_id */
-
-  if (si->cycle_id) abort ();	/* no cycle timer when inactive */
+  schedule_wakeup_event (si, p->timeout); /* sets si->timer_id */
 
   si->last_activity_time = time ((time_t *) 0);
 }
+
 
 
 /* When we aren't using a server extension, this timer is used to periodically
    wake up and poll the mouse position, which is possibly more reliable than
    selecting motion events on every window.
  */
-static void
-check_pointer_timer (XtPointer closure, XtIntervalId *id)
+static gint
+check_pointer_timer (gpointer closure)
 {
   int i;
   saver_info *si = (saver_info *) closure;
@@ -249,8 +252,8 @@ check_pointer_timer (XtPointer closure, XtIntervalId *id)
     abort ();
 
   si->check_pointer_timer_id =
-    XtAppAddTimeOut (si->app, p->pointer_timeout, check_pointer_timer,
-		     (XtPointer) si);
+    gtk_timeout_add ( p->pointer_timeout, check_pointer_timer,
+		     (gpointer) si);
 
   for (i = 0; i < si->nscreens; i++)
     {
@@ -318,8 +321,11 @@ check_pointer_timer (XtPointer closure, XtIntervalId *id)
     reset_timers (si);
 
   check_for_clock_skew (si);
+  return 0;
 }
 
+#if 0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 /* An unfortunate situation is this: the saver is not active, because the
    user has been typing.  The machine is a laptop.  The user closes the lid
@@ -453,8 +459,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
    I trust that explains why this function is a big hairy mess.
  */
-void
-sleep_until_idle (saver_info *si, Bool until_idle_p)
+
+/* ex-sleep_until_idle; now returns how long system as been idle */
+
+int
+poll_idle_time (saver_info *si, Bool until_idle_p)
 {
   saver_preferences *p = &si->prefs;
   XEvent event;
@@ -494,17 +503,24 @@ sleep_until_idle (saver_info *si, Bool until_idle_p)
            is economical: for example, if the screensaver should come on in 5
            minutes, and the user has been idle for 2 minutes, then this
            timeout will go off no sooner than 3 minutes from now.  */
-        schedule_wakeup_event (si, p->timeout, p->verbose_p);
+        schedule_wakeup_event (si, p->timeout);
 
       if (polling_mouse_position)
         /* Check to see if the mouse has moved, and set up a repeating timer
            to do so periodically (typically, every 5 seconds.) */
-	check_pointer_timer ((XtPointer) si, 0);
+	check_pointer_timer ((gpointer) si);
     }
 
   while (1)
     {
-      XtAppNextEvent (si->app, &event);
+
+      if (FALSE == gdk_events_pending())
+      {
+printf ("duuuude no events pending\n");
+return 99;
+      }
+
+      event = *((XEvent *) gdk_event_get ());
 
       switch (event.xany.type) {
       case 0:		/* our synthetic "timeout" event has been signalled */
@@ -576,14 +592,12 @@ sleep_until_idle (saver_info *si, Bool until_idle_p)
                    yet been idle for long enough.  So re-signal the event.
                    */
                 if (polling_for_idleness)
-                  schedule_wakeup_event (si, p->timeout - idle, p->verbose_p);
+                  schedule_wakeup_event (si, p->timeout - idle);
               }
 	  }
 	break;
 
       case ClientMessage:
-	if (handle_clientmessage (si, &event, until_idle_p))
-	  goto DONE;
 	break;
 
       case CreateNotify:
@@ -630,15 +644,6 @@ sleep_until_idle (saver_info *si, Bool until_idle_p)
 	 */
 	if (!until_idle_p)
 	  {
-	    if (si->demoing_p &&
-		(event.xany.type == MotionNotify ||
-		 event.xany.type == KeyRelease))
-	      /* When we're demoing a single hack, mouse motion doesn't
-		 cause deactivation.  Only clicks and keypresses do. */
-	      ;
-	    else
-	      /* If we're not demoing, then any activity causes deactivation.
-	       */
 	      goto DONE;
 	  }
 	else

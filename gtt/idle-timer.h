@@ -22,17 +22,15 @@
 
 typedef struct saver_info saver_info;
 typedef struct pref_s saver_preferences;
+typedef struct saver_screen_info saver_screen_info;
 
-void sleep_until_idle (saver_info *si, Bool until_idle_p);
+/* return number of seconds that system has been idle */
+int poll_idle_time (saver_info *si, Bool until_idle_p);
 
 #if 0
 
 extern char *progname;
 extern char *progclass;
-
-typedef struct passwd_dialog_data passwd_dialog_data;
-typedef struct splash_dialog_data splash_dialog_data;
-typedef struct saver_screen_info saver_screen_info;
 
 #undef countof
 #define countof(x) (sizeof((x))/sizeof((*x)))
@@ -41,8 +39,9 @@ typedef struct saver_screen_info saver_screen_info;
 
 struct pref_s
 {
-	int x;
-
+	Time timeout;
+	Time pointer_timeout;
+	Time notice_events_timeout;
 };
 
 
@@ -51,8 +50,7 @@ struct pref_s
  */
 struct saver_info {
   saver_preferences prefs;
-#if 0
-  char *version;
+  // char *version;
 
   int nscreens;
   saver_screen_info *screens;
@@ -63,8 +61,6 @@ struct saver_info {
      global connection info
      ======================================================================= */
 
-  XtAppContext app;
-#endif
   Display *dpy;
 
   /* =======================================================================
@@ -91,42 +87,13 @@ struct saver_info {
      blanking
      ======================================================================= */
 
-  Bool screen_blanked_p;	/* Whether the saver is currently active. */
   Window mouse_grab_window;	/* Window holding our mouse grab */
   Window keyboard_grab_window;	/* Window holding our keyboard grab */
-  Bool fading_possible_p;	/* Whether fading to/from black is possible. */
-  Bool throttled_p;             /* Whether we should temporarily just blank
-                                   the screen, not run hacks. */
-  time_t blank_time;		/* The time at which the screen was blanked
-                                   (if currently blanked) or unblanked (if
-                                   not blanked.) */
 
 
   /* =======================================================================
      locking and runtime privileges
      ======================================================================= */
-
-  Bool locked_p;		/* Whether the screen is currently locked. */
-  Bool dbox_up_p;		/* Whether the demo-mode or passwd dialogs
-				   are currently visible */
-
-  Bool locking_disabled_p;	/* Sometimes locking is impossible. */
-  char *nolock_reason;		/* This is why. */
-
-  char *orig_uid;		/* What uid/gid we had at startup, before
-				   discarding privileges. */
-  char *uid_message;		/* Any diagnostics from our attempt to
-				   discard privileges (printed only in
-				   -verbose mode.) */
-  Bool dangerous_uid_p;		/* Set to true if we're running as a user id
-				   which is known to not be a normal, non-
-				   privileged user. */
-
-  Window passwd_dialog;		/* The password dialog, if its up. */
-  passwd_dialog_data *pw_data;	/* Other info necessary to draw it. */
-
-  int unlock_failures;		/* Counts failed login attempts while the
-				   screen is locked. */
 
   char *unlock_typeahead;	/* If the screen is locked, and the user types
                                    a character, we assume that it is the first
@@ -141,11 +108,8 @@ struct saver_info {
   XtIntervalId lock_id;		/* Timer to implement `prefs.lock_timeout' */
   XtIntervalId cycle_id;	/* Timer to implement `prefs.cycle' */
 #endif
-  guint timer_id;	/* Timer to implement `prefs.timeout' */
-#if 0
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-  XtIntervalId watchdog_id;	/* Timer to implement `prefs.watchdog */
-  XtIntervalId check_pointer_timer_id;	/* `prefs.pointer_timeout' */
+  guint timer_id;		/* Timer to implement `prefs.timeout' */
+  guint check_pointer_timer_id;	/* `prefs.pointer_timeout' */
 
   time_t last_activity_time;		   /* Used only when no server exts. */
   time_t last_wall_clock_time;             /* Used to detect laptop suspend. */
@@ -156,6 +120,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                    need to lock down right away instead of
                                    waiting for the lock timer to go off. */
 
+#if 0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   /* =======================================================================
      remote control
@@ -176,7 +142,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 #endif 
 };
 
-#if 0
 
 /* This structure holds all the data that applies to the screen-specific parts
    of the display connection; if the display has multiple screens, there will
@@ -186,7 +151,7 @@ struct saver_screen_info {
   saver_info *global;
 
   Screen *screen;
-  Widget toplevel_shell;
+  // Widget toplevel_shell;
 
   /* =======================================================================
      blanking
@@ -197,6 +162,7 @@ struct saver_screen_info {
 				   the window stored here may change, as we
 				   destroy and recreate it on different
 				   visuals. */
+#if 0
   Colormap cmap;		/* The colormap that goes with the window. */
   Bool install_cmap_p;		/* Whether this screen should have its own
                                    colormap installed, for whichever of several
@@ -227,15 +193,7 @@ struct saver_screen_info {
   Window server_mit_saver_window;
 # endif
 
-
-  /* =======================================================================
-     demoing
-     ======================================================================= */
-
-  Colormap demo_cmap;		/* The colormap that goes with the dialogs:
-				   this might be the same as `cmap' so care
-				   must be taken not to free it while it's
-				   still in use. */
+#endif
 
   /* =======================================================================
      timers
@@ -247,11 +205,12 @@ struct saver_screen_info {
   unsigned int poll_mouse_last_mask;
 
 
+#if 0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   /* =======================================================================
      subprocs
      ======================================================================= */
 
-  int current_hack;		/* Index into `prefs.screenhacks' */
   pid_t pid;
 
   int stderr_text_x;
@@ -261,10 +220,14 @@ struct saver_screen_info {
   GC stderr_gc;
   Window stderr_overlay_window;    /* Used if the server has overlay planes */
   Colormap stderr_cmap;
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#endif
 };
 
 
 
+#if 0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 /* =======================================================================
    server extensions and virtual roots
