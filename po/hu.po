@@ -5,10 +5,11 @@
 # Gergely Nagy <greg@gnome.hu>, 2000.
 # András Tímár <timar@gnome.hu>, 2001.
 # Andras Timar <timar@gnome.hu>, 2003.
+# Gabor Sari <saga@chello.hu>, 2003.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
-"POT-Creation-Date: 2003-09-26 12:16+0200\n"
+"POT-Creation-Date: 2003-10-07 14:52+0200\n"
 "PO-Revision-Date: 2003-09-26 12:23+0200\n"
 "Last-Translator: Andras Timar <timar@gnome.hu>\n"
 "Language-Team: Hungarian <hu@gnome.hu>\n"
@@ -49,7 +50,7 @@ msgstr "_Beállítások..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:5
 msgid "_Show Dictionary"
-msgstr "_Szótár mehjelenítése"
+msgstr "_Szótár megjelenítése"
 
 # gdictsrc/dict.c:623 gdictsrc/gdict-pref-dialog.c:498
 # gdictsrc/gdict-pref-dialog.c:542 gdictsrc/gdict-speller.c:393
@@ -75,6 +76,7 @@ msgid "translator_credits"
 msgstr ""
 "Bán Szabolcs (Shooby) <shooby@gnome.hu>\n"
 "Nagy Gergely <greg@gnome.hu>\n"
+"Sári Gábor <saga@chello.hu>\n"
 "Tímár András <timar@gnome.hu>"
 
 #: gdictsrc/gdict-about.c:56 gdictsrc/gdict-app.c:773
@@ -765,8 +767,8 @@ msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "ext2 a Linux saját fájlrendszeréhez vagy fat a DOS fájlrendszeréhez."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:785
-#: gsearchtool/gsearchtool.c:931 gsearchtool/gsearchtool.c:1260
-#: gsearchtool/gsearchtool.c:2220 gsearchtool/gsearchtool.c:2240
+#: gsearchtool/gsearchtool.c:931 gsearchtool/gsearchtool.c:1273
+#: gsearchtool/gsearchtool.c:2242 gsearchtool/gsearchtool.c:2262
 msgid "Search for Files"
 msgstr "Fájlok keresése"
 
@@ -830,7 +832,7 @@ msgstr "Szimbolikus linkek követése"
 msgid "Include other filesystems"
 msgstr "Más fájlrendszerek bevonása a keresésbe"
 
-#: gsearchtool/gsearchtool.c:531 gsearchtool/gsearchtool.c:1241
+#: gsearchtool/gsearchtool.c:531 gsearchtool/gsearchtool.c:1254
 msgid "No files found"
 msgstr "Nincs találat"
 
@@ -878,33 +880,33 @@ msgstr "A(z) '%s' feltétel kiválasztása"
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Érvénytelen beállítás lett átadva a sortby parancssori argumentumnak."
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1242
 msgid "(stopped)"
 msgstr "(leállítva)"
 
-#: gsearchtool/gsearchtool.c:1242
+#: gsearchtool/gsearchtool.c:1255
 msgid "No Files Found"
 msgstr "Nincs találat"
 
-#: gsearchtool/gsearchtool.c:1246
+#: gsearchtool/gsearchtool.c:1259
 msgid "One file found"
 msgstr "Egy fájlt találtam"
 
-#: gsearchtool/gsearchtool.c:1247
+#: gsearchtool/gsearchtool.c:1260
 msgid "One File Found"
 msgstr "Egy fájlt találtam"
 
-#: gsearchtool/gsearchtool.c:1250
+#: gsearchtool/gsearchtool.c:1263
 #, c-format
 msgid "%d files found"
 msgstr "%d fájlt találtam"
 
-#: gsearchtool/gsearchtool.c:1251
+#: gsearchtool/gsearchtool.c:1264
 #, c-format
 msgid "%d Files Found"
 msgstr "%d fájlt találtam"
 
-#: gsearchtool/gsearchtool.c:1354
+#: gsearchtool/gsearchtool.c:1376
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -912,7 +914,7 @@ msgstr ""
 "Keresés közben a következő hibák merültek fel.\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:1358
+#: gsearchtool/gsearchtool.c:1380
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -920,108 +922,108 @@ msgstr ""
 "\n"
 "... Túl sok hiba van, nem lehet ennyit megjeleníteni ..."
 
-#: gsearchtool/gsearchtool.c:1364
+#: gsearchtool/gsearchtool.c:1386
 msgid "Error while searching for files"
 msgstr "Hiba a fájlok keresése közben."
 
-#: gsearchtool/gsearchtool.c:1403
+#: gsearchtool/gsearchtool.c:1425
 msgid "Error parsing the search command"
 msgstr "Hiba történt a keresési parancs értelmezése közben"
 
-#: gsearchtool/gsearchtool.c:1423
+#: gsearchtool/gsearchtool.c:1445
 msgid "Error running the search command"
 msgstr "Hiba történt a keresési parancs futtatása közben"
 
-#: gsearchtool/gsearchtool.c:1516
+#: gsearchtool/gsearchtool.c:1538
 msgid "Search Rule Value Entry"
 msgstr "Keresési szabály értékének bevitele"
 
-#: gsearchtool/gsearchtool.c:1517
+#: gsearchtool/gsearchtool.c:1539
 msgid "Enter a value for search rule"
 msgstr "Adja meg a keresési szabály értékét"
 
-#: gsearchtool/gsearchtool.c:1555
+#: gsearchtool/gsearchtool.c:1577
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Kattints ide a(z) '%s' szabály eltávolításához"
 
-#: gsearchtool/gsearchtool.c:1611
+#: gsearchtool/gsearchtool.c:1633
 msgid "A_vailable options:"
 msgstr "_Lehetséges beállítások:"
 
-#: gsearchtool/gsearchtool.c:1624
+#: gsearchtool/gsearchtool.c:1646
 msgid "Search Rules Menu"
 msgstr "Keresi szabályok menü"
 
-#: gsearchtool/gsearchtool.c:1625
+#: gsearchtool/gsearchtool.c:1647
 msgid "Select a search rule from the menu"
 msgstr "Válassz egy keresési szabályt a menüből"
 
-#: gsearchtool/gsearchtool.c:1657
+#: gsearchtool/gsearchtool.c:1679
 msgid "S_earch results:"
 msgstr "_Keresés eredménye:"
 
-#: gsearchtool/gsearchtool.c:1737
+#: gsearchtool/gsearchtool.c:1759
 msgid "Name"
 msgstr "Név"
 
-#: gsearchtool/gsearchtool.c:1757
+#: gsearchtool/gsearchtool.c:1779
 msgid "Folder"
 msgstr "Mappa"
 
-#: gsearchtool/gsearchtool.c:1768
+#: gsearchtool/gsearchtool.c:1790
 msgid "Size"
 msgstr "Méret"
 
-#: gsearchtool/gsearchtool.c:1778
+#: gsearchtool/gsearchtool.c:1800
 msgid "Type"
 msgstr "Típus"
 
-#: gsearchtool/gsearchtool.c:1788
+#: gsearchtool/gsearchtool.c:1810
 msgid "Date Modified"
 msgstr "Módosítás dátuma"
 
-#: gsearchtool/gsearchtool.c:1851
+#: gsearchtool/gsearchtool.c:1873
 msgid "_Name contains:"
 msgstr "_Név tartalmazza:"
 
-#: gsearchtool/gsearchtool.c:1866 gsearchtool/gsearchtool.c:1867
+#: gsearchtool/gsearchtool.c:1888 gsearchtool/gsearchtool.c:1889
 msgid "Name Contains Entry"
 msgstr "A \"Név tartalmazza\" mező"
 
-#: gsearchtool/gsearchtool.c:1866 gsearchtool/gsearchtool.c:1867
+#: gsearchtool/gsearchtool.c:1888 gsearchtool/gsearchtool.c:1889
 msgid "Enter the file name you want to search"
 msgstr "Add meg a keresendő fájl nevét"
 
-#: gsearchtool/gsearchtool.c:1879
+#: gsearchtool/gsearchtool.c:1901
 msgid "_Look in folder:"
 msgstr "_Keresés ebben a  mappában:"
 
-#: gsearchtool/gsearchtool.c:1885
+#: gsearchtool/gsearchtool.c:1907
 msgid "Browse"
 msgstr "Tallózás"
 
-#: gsearchtool/gsearchtool.c:1894 gsearchtool/gsearchtool.c:1895
+#: gsearchtool/gsearchtool.c:1916 gsearchtool/gsearchtool.c:1917
 msgid "Look in Folder Entry"
 msgstr "A \"Keresés ebben a mappában\" mező"
 
-#: gsearchtool/gsearchtool.c:1894 gsearchtool/gsearchtool.c:1895
+#: gsearchtool/gsearchtool.c:1916 gsearchtool/gsearchtool.c:1917
 msgid "Enter the folder name where you want to start the search"
 msgstr "Add meg a keresés kiindulópontjaként szolgáló mappa nevét"
 
-#: gsearchtool/gsearchtool.c:1914
+#: gsearchtool/gsearchtool.c:1936
 msgid "Show more _options"
 msgstr "Több _beállítási lehetőség megjelenítése"
 
-#: gsearchtool/gsearchtool.c:1964
+#: gsearchtool/gsearchtool.c:1986
 msgid "Click to Start the search"
 msgstr "Kattints ide a keresés elkezdéséhez"
 
-#: gsearchtool/gsearchtool.c:1965
+#: gsearchtool/gsearchtool.c:1987
 msgid "Click to Stop the search"
 msgstr "Kattints ide a keresés leállításához"
 
-#: gsearchtool/gsearchtool.c:2236
+#: gsearchtool/gsearchtool.c:2258
 msgid "Cannot initialize bonobo."
 msgstr "A bonobo inicializálása sikertelen."
 
@@ -1098,7 +1100,9 @@ msgstr "Nem sikerült menteni a \"\" dokumentumot: %s"
 msgid ""
 "You did not select a document name or the name selected was a folder.  The "
 "document is not saved."
-msgstr "Nem adtad meg a dokumentum nevét, vagy a megadott név egy mappanév volt. A dokumentum nem lett mentve."
+msgstr ""
+"Nem adtad meg a dokumentum nevét, vagy a megadott név egy mappanév volt. A "
+"dokumentum nem lett mentve."
 
 #: gsearchtool/gsearchtool-callbacks.c:904
 #, c-format
@@ -1118,7 +1122,9 @@ msgstr "Nem sikerült menteni a(z) \"%s\" dokumentumot: %s"
 msgid ""
 "You may not have write permissions to the document.  The document is not "
 "saved."
-msgstr "Lehet, hogy nincs írási jogosultságod a dokumentumhoz. A dokumentum nem lett mentve."
+msgstr ""
+"Lehet, hogy nincs írási jogosultságod a dokumentumhoz. A dokumentum nem lett "
+"mentve."
 
 #: gsearchtool/gsearchtool-support.c:58
 #, c-format
