@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-10-13 06:18-0400\n"
-"PO-Revision-Date: 2001-10-09 02:00+0000\n"
+"POT-Creation-Date: 2001-11-11 06:15-0500\n"
+"PO-Revision-Date: 2001-11-11 22:57+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <none@none.org>\n"
 "MIME-Version: 1.0\n"
@@ -643,7 +643,7 @@ msgstr "Incapaz de parsear a expressão de geometria '%s'"
 msgid "Specify the geometry of the window."
 msgstr "Especifica a geometria da janela."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:445 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:439 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
 msgstr "GEOMETRIA"
 
@@ -951,11 +951,11 @@ msgstr "Tempo dispendido neste projecto este ano."
 msgid "Title"
 msgstr "Título"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:144
+#: gtt/ctree.c:558 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Título do Projecto"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Descrição"
 
@@ -987,7 +987,8 @@ msgstr "Prazo"
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
 msgstr ""
-"Prazo de Entrega: a data na qual o projecto temdefinitivamente de estar completo."
+"Prazo de Entrega: a data na qual o projecto temdefinitivamente de estar "
+"completo."
 
 #: gtt/ctree.c:599 mini-utils/guname/info.c:61
 msgid "Size"
@@ -995,7 +996,8 @@ msgstr "Tamanho"
 
 #: gtt/ctree.c:601
 msgid "Sizing: How much work it will take to finish this project."
-msgstr "Dimensionamento: Quanto trabalho será necessário para terminar este projecto."
+msgstr ""
+"Dimensionamento: Quanto trabalho será necessário para terminar este projecto."
 
 #: gtt/ctree.c:607
 msgid "Done"
@@ -1062,18 +1064,18 @@ msgstr "Cancelada"
 msgid "Completed"
 msgstr "Terminada"
 
-#: gtt/file-io.c:373
+#: gtt/file-io.c:376
 msgid "project %t started"
 msgstr "projecto %t iniciado"
 
-#: gtt/file-io.c:376
+#: gtt/file-io.c:379
 msgid "stopped project %t"
 msgstr "projecto %t parado"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:670
+#: gtt/file-io.c:677
 #, c-format
 msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
@@ -1225,7 +1227,7 @@ msgstr "aplicação iniciada"
 msgid "program exited"
 msgstr "aplicação terminada"
 
-#: gtt/main.c:115
+#: gtt/main.c:114
 msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
@@ -1233,64 +1235,72 @@ msgstr ""
 "Parece haver outro GContadorTempo em execução.\n"
 "Pressione OK para recomeçar o GContadorTempo, ou Cancelar para sair."
 
-#: gtt/main.c:127
+#: gtt/main.c:126
 msgid "Cannot create pid-file!"
 msgstr "Incapaz de criar o ficheiro-pid!"
 
-#: gtt/main.c:220
+#: gtt/main.c:219
 msgid "Do you want to continue?"
 msgstr "Deseja continuar?"
 
-#: gtt/main.c:223 gtt/main.c:282
+#: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
 msgstr "Erro"
 
-#: gtt/main.c:279
+#: gtt/main.c:272
 msgid "Shall I setup a new configuration?"
 msgstr "Deverá ser definida uma nova configuração?"
 
-#: gtt/main.c:445
+#: gtt/main.c:439
 msgid "Specify geometry"
 msgstr "Especificar geometria"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "Select a project on startup"
 msgstr "Seleccione um projecto ao iniciar"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "PROJECT"
 msgstr "PROJECTO"
 
-#: gtt/main.c:487 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Aviso"
 
 #: gtt/menucmd.c:85
-msgid "Time tracking tool for GNOME"
-msgstr "Ferramenta para Contar o Tempo GNOME"
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
+msgstr ""
+"GTimeTracker é uma combinação de cronómetro, diário, sistema de facturação "
+"de consultadoria e gestor de projectos. Pode medir a quantidade de tempo que "
+"dispende numa tarefa, associar-lhe uma nota, definir uma taxa de facturação, "
+"imprimir uma factura, bem como acompanhar o estado dos projectos."
 
-#: gtt/menucmd.c:138
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Novo Projecto..."
 
-#: gtt/menucmd.c:220 gtt/toolbar.c:167
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Reler Ficheiro de Configuração"
 
-#: gtt/menucmd.c:221
+#: gtt/menucmd.c:225
 msgid "Do you really want to reload the configuration file?"
 msgstr "Deseja mesmo reler o ficheiro de configuração"
 
-#: gtt/menucmd.c:256
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr "Ficheiro %s existe, sobrepor?"
 
-#: gtt/menucmd.c:267
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr "Impossível escrever ficheiro"
 
-#: gtt/menucmd.c:287
+#: gtt/menucmd.c:291
 msgid "Export Current State"
 msgstr "Exportar Estado Actual"
 
@@ -4916,6 +4926,9 @@ msgstr "Gestor pessoal do cron"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Gestor pessoal do crontab"
+
+#~ msgid "Time tracking tool for GNOME"
+#~ msgstr "Ferramenta para Contar o Tempo GNOME"
 
 #~ msgid "Estimated End Date"
 #~ msgstr "Data de Final Estimada"
