@@ -21,7 +21,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.4\n"
-"POT-Creation-Date: 2003-03-13 10:21+0000\n"
+"POT-Creation-Date: 2003-05-14 20:16-0700\n"
 "PO-Revision-Date: 2003-02-20 18:05+0200\n"
 "Last-Translator: Kostas Papadimas <pkst@gmx.net>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -636,12 +636,12 @@ msgstr "_Εμφάνιση/Απόκρυψη Παραθύρου Ορισμού..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Αδύνατη η σύνδεση στον εξυπηρετητή"
 
-#: gdictsrc/dict.c:661
+#: gdictsrc/dict.c:663
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
@@ -1376,7 +1376,7 @@ msgstr ""
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "ext2 για το σύστημα αρχείων linux ή fat για το σύστημα αρχείων DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "Αναζήτηση για Αρχεία"
 
@@ -1512,96 +1512,96 @@ msgstr "Σφάλματα κατά την αναζήτηση"
 msgid "Search for Files Error"
 msgstr "Σφάλμα αναζήτησης αρχείων"
 
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "Καταχώρηση Τιμής Κανόνα Αναζήτησης"
 
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "Εισάγετε μια τιμή για τον κανόνα αναζήτησης"
 
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Πατήστε για να Διαγράψετε τον '%s' Κανόνα"
 
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "Δια_θέσιμες επιλογές:"
 
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "Μενού Κανόνων Αναζήτησης"
 
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "Επιλέξτε ένα κανόνα αναζήτησης από το μενού"
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "Απο_τελέσματα Αναζήτησης"
 
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "Όνομα"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "Φάκελος"
 
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "Είδος"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "Ημερομηνία Τροποποίησης"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "Το αρχείο ο_νομάζεται:"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "Καταχώρηση Ονόματος Αρχείου"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "Εισάγετε το όνομα αρχείου που θέλετε να αναζητήσετε"
 
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "_Αναζήτηση στο φάκελο:"
 
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "Εξερεύνηση"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "Καταχώρηση φάκελου έναρξης"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr "Εισάγετε το όνομα του φακέλου από όπου θέλετε να ξεκινήσει η αναζήτηση"
 
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "Πρόσθετες Επιλογές"
 
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "Πατήστε για να Ξεκινήσετε την αναζήτηση"
 
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "Πατήστε για να Διακόψετε την αναζήτηση"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "Αδυναμία αρχικοποίησης bonobo."
 
@@ -1726,10 +1726,6 @@ msgstr "σύνδεσμος (σπασμένος)"
 #, c-format
 msgid "link to %s"
 msgstr "σύνδεσμος στο %s"
-
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "Εργαλείο Εύρεσης Aρχείων"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -2202,6 +2198,9 @@ msgstr ""
 "Καθορίζει το αρχείο καταγραφής που θα ανοίγει κατά την εκκίνηση. Το εξ "
 "ορισμού είναι είτε μηνύματα /var/adm/ ή μηνύματα  /var/log/, ανάλογα με την "
 "διανομή σας."
+
+#~ msgid "GNOME Search Tool"
+#~ msgstr "Εργαλείο Εύρεσης Aρχείων"
 
 #~ msgid "Select the 'Contains the text' constraint"
 #~ msgstr "Επιλογή του περιορισμού 'Περιέχει το κείμενο"

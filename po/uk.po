@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.2.0.3\n"
-"POT-Creation-Date: 2003-03-13 10:21+0000\n"
+"POT-Creation-Date: 2003-05-14 20:16-0700\n"
 "PO-Revision-Date: 2003-02-12 03:11--500\n"
 "Last-Translator: Yuriy Syrota <yuri@renome.rovno.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -613,12 +613,12 @@ msgstr "По_казати/прибрати вікно визначення..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Неможливо з'єднатися з словниковим сервером"
 
-#: gdictsrc/dict.c:661
+#: gdictsrc/dict.c:663
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
@@ -1344,7 +1344,7 @@ msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr ""
 "\"ext2\" - рідна файлова система linux або \"fat\" - файлова система DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "Пошук файлів"
 
@@ -1479,96 +1479,96 @@ msgstr "Помилки пошуку"
 msgid "Search for Files Error"
 msgstr "Помилки пошуку файлів"
 
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "Поле значення правила пошуку"
 
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "Введіть значення для правила пошуку"
 
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Клацніть, щоб видалити \"%s\" правило"
 
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "_Можливі параметри:"
 
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "Меню правил пошуку"
 
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "Створити новий вигляд документу"
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "_Результати пошуку"
 
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "Назва"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "Тека"
 
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "Розмір"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "Тип"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "Дата зміни"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "Файл з _назвою:"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "Назва файла"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "Введіть назву файла, що ви хочете знайти"
 
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "_Шукати у теках:"
 
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "Переглянути"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "Починати з теки"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr "Введіть назву теки, з якої ви хочете розпочати пошук"
 
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "Додаткові параметри"
 
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "Клацніть щоб почати пошук"
 
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "Клацніть щоб зупинити пошук"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "Неможливо ініціалізувати Bonobo."
 
@@ -1691,10 +1691,6 @@ msgstr "посилання (неправильне)"
 #, c-format
 msgid "link to %s"
 msgstr "посилання на %s"
-
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "Пошук файлів"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -2160,3 +2156,6 @@ msgid ""
 msgstr ""
 "Визначає файл журналу що відкриватиметься на початку. Типово або /var/adm/"
 "messages, або /var/log/messages залежно від дистрибутива."
+
+#~ msgid "GNOME Search Tool"
+#~ msgstr "Пошук файлів"

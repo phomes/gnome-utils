@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-03-13 10:21+0000\n"
+"POT-Creation-Date: 2003-05-14 20:16-0700\n"
 "PO-Revision-Date: 2003-01-19 03:07+0100\n"
 "Last-Translator: GNOME PL Team <translators@gnome.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -617,12 +617,12 @@ msgstr "_Przełącz wyświetlanie okna definicji..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Nie można nawiązać połączenia z serwerem"
 
-#: gdictsrc/dict.c:661
+#: gdictsrc/dict.c:663
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
@@ -1356,7 +1356,7 @@ msgstr ""
 "ext2 dla rodzimego systemu plików w Linuksie lub fat dla DOS-owego systemu "
 "plików."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "Wyszukiwanie plików"
 
@@ -1492,96 +1492,96 @@ msgstr "Błędy przy wyszukiwaniu"
 msgid "Search for Files Error"
 msgstr "Błąd przy wyszukiwaniu plików"
 
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "Wejście na wartość reguły wyszukiwania"
 
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "Wprowadź wartość reguły wyszukiwania"
 
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Kliknij, aby usunąć regułę \"%s\""
 
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "_Dostępne opcje:"
 
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "Menu reguł wyszukiwania"
 
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "Wybierz z menu regułę wyszukiwania"
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "_Wyniki wyszukiwania"
 
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "Nazwa"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "Folder"
 
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "Rozmiar"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "Typ"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "Data modyfikacji"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "Plik nosi _nazwę:"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "Wejście nazwy pliku"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "Podaj nazwę pliku, który chcesz odnaleźć"
 
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "_Wyszukiwanie w folderze:"
 
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "Wybór katalogu"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "Wejście na folder początkowy"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr "Wprowadź nazwę folderu, w którym chcesz rozpocząć wyszukiwanie"
 
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "Dodatkowe opcje"
 
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "Kliknij, aby rozpocząć wyszukiwanie"
 
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "Kliknij, aby zatrzymać wyszukiwanie"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "Nie można zainicjować bonobo."
 
@@ -1707,10 +1707,6 @@ msgstr "odnośnik (uszkodzony)"
 #, c-format
 msgid "link to %s"
 msgstr "odnośnik do %s"
-
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "Narzędzie wyszukiwawcze GNOME"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -2182,6 +2178,9 @@ msgid ""
 msgstr ""
 "Określa plik dziennika, otwierany przy uruchamianiu. Domyślnym plikiem jest /"
 "var/adm/messages lub /var/log/messages, zależnie od używanej dystrybucji."
+
+#~ msgid "GNOME Search Tool"
+#~ msgstr "Narzędzie wyszukiwawcze GNOME"
 
 #~ msgid "del"
 #~ msgstr "del"

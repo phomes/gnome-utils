@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-03-13 10:21+0000\n"
+"POT-Creation-Date: 2003-05-14 20:16-0700\n"
 "PO-Revision-Date: 2003-01-29 22:37+0800\n"
 "Last-Translator: Wang Li <charles@linux.net.cn>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
@@ -641,12 +641,12 @@ msgstr "显示/隐藏定义窗口..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "无法连接服务器"
 
-#: gdictsrc/dict.c:661
+#: gdictsrc/dict.c:663
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
@@ -1387,7 +1387,7 @@ msgstr ""
 "统。"
 
 # gsearchtool/gsearchtool.c:610
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "搜索文件"
 
@@ -1529,118 +1529,118 @@ msgid "Search for Files Error"
 msgstr "文件搜索错误"
 
 # SUN NEW TRANSLATION
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "搜索规则值条目"
 
 # SUN NEW TRANSLATION
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "输入搜索规则的值"
 
 # SUN CHANGED MESSAGE
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "单击以删除‘%s’规则"
 
 # mini-utils/guname/info.c:64
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "可用选项(_V)："
 
 # gsearchtool/gsearchtool.c:203
 # SUN CHANGED MESSAGE
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "搜索规则菜单"
 
 # SUN CHANGED MESSAGE
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "从菜单中选择搜索规则"
 
 # gsearchtool/gsearchtool.c:203
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "搜索结果(_E)"
 
 # mini-utils/gcolorsel/gcolorsel.c:157 mini-utils/guname/moreinfo.c:217
 # mini-utils/gw/gw.c:479 mini-utils/gw/gw.c:554
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "名字"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "文件夹"
 
 # mini-utils/guname/info.c:60
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "大小"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "类型"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "修改时间"
 
 # gsearchtool/gsearchtool.c:21
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "文件名为(_N)："
 
 # gsearchtool/gsearchtool.c:21
 # SUN CHANGED MESSAGE
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "文件名条目"
 
 # SUN NEW TRANSLATION
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "输入要搜索的文件名"
 
 # mini-utils/guname/guname.c:506
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "搜索文件夹(_L)："
 
 # ghex/preferences.c:159
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "浏览"
 
 # mini-utils/guname/guname.c:506
 # SUN CHANGED MESSAGE
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "开始文件夹条目"
 
 # SUN NEW TRANSLATION
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr "输入开始进行搜索的文件夹名称"
 
 # mini-utils/guname/info.c:64
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "其它选项"
 
 # SUN CHANGED MESSAGE
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "单击开始搜索"
 
 # SUN CHANGED MESSAGE
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "单击停止搜索"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "无法初始化 bonobo。"
 
@@ -1774,11 +1774,6 @@ msgstr "链接(已断开)"
 #, c-format
 msgid "link to %s"
 msgstr "链接到 %s"
-
-# gsearchtool/gsearchtool.c:610
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "GNOME 搜索工具"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -2280,6 +2275,10 @@ msgid ""
 msgstr ""
 "指定在程序启动时打开的日志文件。根据您使用的发行版，默认是 /var/adm/messages "
 "或者 /var/log/messages。"
+
+# gsearchtool/gsearchtool.c:610
+#~ msgid "GNOME Search Tool"
+#~ msgstr "GNOME 搜索工具"
 
 # gsearchtool/gsearchtool.c:37
 #, fuzzy

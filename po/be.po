@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-2.be\n"
-"POT-Creation-Date: 2003-03-04 05:03+0100\n"
+"POT-Creation-Date: 2003-05-14 20:16-0700\n"
 "PO-Revision-Date: 2003-03-04 10:42+0200\n"
 "Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
 "Language-Team: Belarusian <i18n@tut.by>\n"
@@ -463,7 +463,8 @@ msgid "GNOME Character Map"
 msgstr "Табліца сымбаляў GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Выбраць, скапіяваць і ўставіць сымбалі са шрыфта ў іншыя дастасаваньні"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
@@ -613,12 +614,12 @@ msgstr "_Адлюстраваць/Схаваць акно вызначэньня
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Немагчыма далучыцца да паслужніка"
 
-#: gdictsrc/dict.c:661
+#: gdictsrc/dict.c:663
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
@@ -1221,7 +1222,8 @@ msgstr "Уласна Лінукс (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:17
 msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
-msgstr "_Поўнае (да стандартнага рэжыма дадаецца праверка на пашкоджаныя блёкі)"
+msgstr ""
+"_Поўнае (да стандартнага рэжыма дадаецца праверка на пашкоджаныя блёкі)"
 
 #: gfloppy/src/gfloppy2.glade.h:18
 msgid "Volume _name:"
@@ -1326,7 +1328,8 @@ msgstr ""
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr "ТОЛЬКІ ДЛЯ ДАСЬВЕДЧАНЫХ КАРЫСТАЛЬНІКАЎ - Дапомна для фарматаваньня ў FAT"
+msgstr ""
+"ТОЛЬКІ ДЛЯ ДАСЬВЕДЧАНЫХ КАРЫСТАЛЬНІКАЎ - Дапомна для фарматаваньня ў FAT"
 
 #: gfloppy/gfloppy.schemas.in.h:3
 msgid "Default filesystem type"
@@ -1348,7 +1351,7 @@ msgstr ""
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "ext2 для уласнай файлавай сыстэмы лінукс ці fat для DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "Пошук файлаў"
 
@@ -1432,7 +1435,9 @@ msgstr ""
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr "Усталяваць упарадкаваньне па чарзе ўбываньня, дапомнае значэньне - узрастаньне"
+msgstr ""
+"Усталяваць упарадкаваньне па чарзе ўбываньня, дапомнае значэньне - "
+"узрастаньне"
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
@@ -1484,96 +1489,96 @@ msgstr "Пошук памылак"
 msgid "Search for Files Error"
 msgstr "Пошук для памылак файлаў"
 
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "Поле значэньня правіла пошука"
 
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "Увядзіце значэньні для правіла пошука"
 
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Клікніце тут, каб выдаліць правіла \"%s\""
 
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "_Магчымыя выбары:"
 
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "Мэню правілаў пошука"
 
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "Выбраць правіла пошука са сьпіса"
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "_Вынікі пошука"
 
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "Назва"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "Тэчка"
 
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "Памер"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "Тып"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "Дата мадыфікацыі"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "Файл _мае назву:"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "Поле назвы файла"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "Увядзіце імя файла, які неабходна адшукаць"
 
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "_Глядзець у тэчку:"
 
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "Прагляд"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "Поле пачатковае тэчкі"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr "Увядзіце імя тэчкі, з якой будзе пачынацца пошук"
 
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "Дадатковыя выбары"
 
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "Клікніце тут, каб пачаць пошук"
 
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "Клікніце тут, каб спыніць пошук"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "Немагчыма ініцыялізаваць bonobo."
 
@@ -1600,7 +1605,8 @@ msgstr "Пошук..."
 #: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
-msgstr "Гэта прывядзе да адкрыцьця %d розных файлаў. Вы ўпэўненыя што жадаеце гэтага?"
+msgstr ""
+"Гэта прывядзе да адкрыцьця %d розных файлаў. Вы ўпэўненыя што жадаеце гэтага?"
 
 #: gsearchtool/gsearchtool-callbacks.c:291
 #, c-format
@@ -1621,7 +1627,8 @@ msgstr "Немагчыма адлюстраваць мейсца"
 #: gsearchtool/gsearchtool-callbacks.c:393
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
-msgstr "Гэта прывядзе да адкрыцьця %d розных тэчак. Вы ўпэўненыя што жадаеце гэтага?"
+msgstr ""
+"Гэта прывядзе да адкрыцьця %d розных тэчак. Вы ўпэўненыя што жадаеце гэтага?"
 
 #: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
@@ -1696,10 +1703,6 @@ msgstr "лучыва (пашкоджанае)"
 #, c-format
 msgid "link to %s"
 msgstr "лучыва да %s"
-
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "Інструмэнт пошука Gnome"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -1819,12 +1822,14 @@ msgstr "Каляндар"
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "Немагчыма адкрыць базу даньняў сталых выразаў <%s>! Збой пад час адкрыцьця."
+msgstr ""
+"Немагчыма адкрыць базу даньняў сталых выразаў <%s>! Збой пад час адкрыцьця."
 
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Немагчыма адкрыць базу даньняў апісаньняў <%s>! Збой пад час адкрыцьця."
+msgstr ""
+"Немагчыма адкрыць базу даньняў апісаньняў <%s>! Збой пад час адкрыцьця."
 
 #. ----------------------------------------------------------------------
 #. NAME:
@@ -2165,6 +2170,9 @@ msgstr ""
 "Вызначце файл часопіса які будзе адчыняцца пад час запуска сыстэмы. Дапомна "
 "гэта /var/adm/messages ці /var/log/messages, у залежнасьці ад вашага "
 "дыстрыбютыва."
+
+#~ msgid "GNOME Search Tool"
+#~ msgstr "Інструмэнт пошука Gnome"
 
 #, fuzzy
 #~ msgid "Select the 'File matches regular expression' constraint"
@@ -2742,4 +2750,3 @@ msgstr ""
 
 #~ msgid "Show user preferences"
 #~ msgstr "Показать настройки пользователя"
-

@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-2.sk\n"
-"POT-Creation-Date: 2003-03-11 12:20+0100\n"
+"POT-Creation-Date: 2003-05-14 20:16-0700\n"
 "PO-Revision-Date: 2003-03-11 22:02+0100\n"
 "Last-Translator: Stanislav Visnovsky <visnovsky@kde.org>\n"
 "Language-Team: Slovak <sk-i18n@linux.sk>\n"
@@ -465,7 +465,8 @@ msgid "GNOME Character Map"
 msgstr "Mapa znakov GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Výber, kopírovanie a vkladanie znakov z vášho písma do iných aplikácií"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
@@ -615,12 +616,12 @@ msgstr "_Zobraziť/skryť okno definícií..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Nepodarilo sa spojiť so serverom"
 
-#: gdictsrc/dict.c:661
+#: gdictsrc/dict.c:663
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
@@ -1338,7 +1339,7 @@ msgstr "TRUE, ak sa má pre formátovanie FAT použiť mkdosfs, FALSE pre mtools
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "ext2 pre Linux alebo fat pre DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "Hľadať súbory"
 
@@ -1472,96 +1473,96 @@ msgstr "Chyby počas hľadania"
 msgid "Search for Files Error"
 msgstr "Chyba pri hľadaní súborov"
 
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "Hodnota pravidla hľadania"
 
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "Zadajte hodnotu pre pravidlo hľadanie"
 
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Kliknutím odstránite pravidlo '%s'"
 
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "_Dostupné možnosti:"
 
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "Menu pravidiel hľadania"
 
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "Vyberte pravidlo hľadanie z menu"
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "_Výsledky hľadania"
 
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "Meno"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "Priečinok"
 
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "Veľkosť"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "Typ"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "Čas zmeny"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "Nájsť súbory po_menované:"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "Meno súboru"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "Zadajte meno súboru, ktoré chcete hľadať"
 
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "_Začať v priečinku:"
 
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "Prechádzať"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "Začať v priečinku"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr "Zadajte meno priečinku, kde chcete začať hľadanie"
 
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "Dalšie možnosti"
 
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "Kliknutím spustíte hľadanie"
 
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "Kliknutím zastavíte hľadanie"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "Nepodarilo sa inicializovať Bonobo."
 
@@ -1685,10 +1686,6 @@ msgstr "odkaz (nefunčný)"
 msgid "link to %s"
 msgstr "odkaz na %s"
 
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "GNOME nástroj pre hľadanie"
-
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
@@ -1807,7 +1804,8 @@ msgstr "Kalendár"
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
+msgstr ""
+"Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
 
 #: logview/desc_db.c:147
 #, c-format
@@ -2097,7 +2095,8 @@ msgstr "_Vykonať akcie"
 
 #: logview/monitor.c:289
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
+msgstr ""
+"Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
 
 #: logview/monitor.c:297 logview/monitor.c:335
 msgid "tmp_list is NULL\n"
@@ -2152,3 +2151,5 @@ msgstr ""
 "Určuje súbor so záznamom otvorený po spustení. Štandardne je to /var/adm/"
 "messages alebo /var/log/messages v závislosti na vašej distribúcii."
 
+#~ msgid "GNOME Search Tool"
+#~ msgstr "GNOME nástroj pre hľadanie"
