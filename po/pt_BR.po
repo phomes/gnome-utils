@@ -4,14 +4,15 @@
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000
 # Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>, 2001.
 # Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002.
+# F�bio Rafael da Rosa <f2r@users.sourceforge.net>, 2003.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.0.13\n"
-"POT-Creation-Date: 2003-01-24 17:47+0000\n"
-"PO-Revision-Date: 2002-06-09 20:33-0300\n"
-"Last-Translator: Evandro F. Giovanini <evandrofg@ig.com.br>\n"
-"Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
+"POT-Creation-Date: 2003-01-25 00:32-0200\n"
+"PO-Revision-Date: 2003-01-25 00:43-0200\n"
+"Last-Translator: Fabio Rafael da Rosa <fabio.rafael@terra.com.br>\n"
+"Language-Team: GNOME-BR <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -481,7 +482,7 @@ msgstr "_Código ASCII:"
 #: gcharmap/src/callbacks.c:134
 #, c-format
 msgid "Character code: (Unicode) U%04lX, (%s) 0x%s"
-msgstr ""
+msgstr "_Código ASCII: (Unicode) U%041X, (%s) 0x%s"
 
 #: gcharmap/src/callbacks.c:192
 msgid "Text copied to clipboard..."
@@ -507,7 +508,7 @@ msgstr "_Porta:"
 #. The page selector
 #: gcharmap/src/interface.c:210
 msgid "_Page:"
-msgstr ""
+msgstr "_Página"
 
 #. end of page selector
 #: gcharmap/src/interface.c:225
@@ -641,7 +642,7 @@ msgstr "Dicionário"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "Copyright 1999 por Mike Hugues"
 
 #: gdictsrc/gdict-about.c:58
 #, fuzzy
@@ -1094,19 +1095,20 @@ msgstr "ENão foi possível determinar o tipo de formatação atual"
 #: gfloppy/src/gfloppy.c:229
 msgid "EError while creating a unique filename for the bad blocks list file."
 msgstr ""
+"EErro ao criar um nome de arquivo único para a lista de blocos defeituosos"
 
 #: gfloppy/src/gfloppy.c:249
 msgid "EError while filling the bad blocks list file."
-msgstr ""
+msgstr "EErro ao preencher a lista de blocos defeituosos"
 
 #: gfloppy/src/gfloppy.c:308
 #, c-format
 msgid "EError while spawning the (%s) command: %s."
-msgstr ""
+msgstr "EErro executando o comando (%s): %s."
 
 #: gfloppy/src/gfloppy.c:332
 msgid "EUnknown mke2fs starting signature, cancelling."
-msgstr ""
+msgstr "EAssinatura inicial do mk2fs desconhecida, cancelando."
 
 #: gfloppy/src/gfloppy.c:346
 #, c-format
@@ -1115,15 +1117,18 @@ msgid ""
 "\n"
 "%s (%d)"
 msgstr ""
+"EO utilitário de criação do sistema de arquivos (%s) retornou os seguintes erros:\n"
+"\n"
+"%s (%d)"
 
 #: gfloppy/src/gfloppy.c:363
 msgid "EAbnormal child process termination."
-msgstr ""
+msgstr "EO processo filho terminou de forma anormal"
 
 #: gfloppy/src/gfloppy.c:388
 #, c-format
 msgid "EError while spawning the mbadblocks command: %s."
-msgstr ""
+msgstr "Erro executando o comando mbadblocks: %s."
 
 #: gfloppy/src/gfloppy.c:400
 #, c-format
@@ -1132,10 +1137,13 @@ msgid ""
 "errors:\n"
 "%s."
 msgstr ""
+"EO utilitário de checagem de blocos defeituosos (mbadblocks) retornou os "
+"seguintes erros:\n"
+"%s."
 
 #: gfloppy/src/gfloppy.c:443
 msgid "EAbnormal mbadblocks child process termination."
-msgstr ""
+msgstr "EO processo mbadblocks terminou de forma anormal"
 
 #. make the filesystem
 #: gfloppy/src/gfloppy.c:470 gfloppy/src/gfloppy.c:510
@@ -1157,29 +1165,31 @@ msgstr "Verificando se há bad blocks... (pode demorar um pouco)"
 #: gfloppy/src/gfloppy.c:532
 #, fuzzy
 msgid "EError while checking the bad blocks."
-msgstr "Procurando bad blocks..."
+msgstr "Procurando blocos defeituosos..."
 
 #: gfloppy/src/gfloppy2.glade.h:1
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #: gfloppy/src/gfloppy2.glade.h:3
 msgid ""
 "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
 "be installed in order to make a thorough DOS (fat) formatting."
 msgstr ""
+"<b>Nota</b>: O utilitário mbadblocks não esta instalado no sistema. Ele deve "
+"ser instalado para utilizar formatação DOS (fat) completa."
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "<span weight=\"bold\">Filesystem settings</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">Configurações do Sistema de Arquivos</span>"
 
 #: gfloppy/src/gfloppy2.glade.h:5
 msgid "<span weight=\"bold\">Formatting mode</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">Modo de formatação</span>"
 
 #: gfloppy/src/gfloppy2.glade.h:6
 msgid "<span weight=\"bold\">Physical settings</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">Configurações físicas</span>"
 
 #: gfloppy/src/gfloppy2.glade.h:7
 #, fuzzy
@@ -1225,7 +1235,7 @@ msgstr "Linux Nativo (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:17
 msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
-msgstr ""
+msgstr "Com_pleto (adiciona checagem de blocos defeituosos ao modo padrão)"
 
 #: gfloppy/src/gfloppy2.glade.h:18
 #, fuzzy
@@ -1234,22 +1244,24 @@ msgstr "Nome de arquivo;"
 
 #: gfloppy/src/gfloppy2.glade.h:19
 msgid "_Format"
-msgstr "_Formato"
+msgstr "_Formatar"
 
 #: gfloppy/src/gfloppy2.glade.h:20
 #, fuzzy
 msgid "_Quick (only creates the filesystem)"
-msgstr "Não foi possível criar sistema de arquivos."
+msgstr "_Rápida (cria somente o sistema de arquivos)"
 
 #: gfloppy/src/gfloppy2.glade.h:21
 msgid "_Standard (adds a low-level format to the quick mode)"
-msgstr ""
+msgstr "_Padrão (adiciona formatação de baixo nível ao modo rápido)"
 
 #: gfloppy/src/main.c:132
 msgid ""
 "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
 "can't format a floppy without one of them."
 msgstr ""
+"Não foi possível encontrar nenhum desses aplicativos: mke2fs, mkdosfs/"
+"mformat. Sem nenhum desses aplicativos, não é possível formatar um disquete."
 
 #: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
@@ -1288,7 +1300,7 @@ msgstr ""
 
 #: gfloppy/src/main.c:425
 msgid "The volume name can't contain any blank space."
-msgstr ""
+msgstr "O nome do disquete não pode conter espaços"
 
 #: gfloppy/src/main.c:474
 msgid "The device to format"
@@ -1304,6 +1316,8 @@ msgid ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
 msgstr ""
+"O disquete foi formatado, porém <b>%d blocos defeituosos</b> (de %d) foram "
+"encontrados e marcados."
 
 #: gfloppy/src/progress.c:126
 msgid "Floppy formatted successfully."
@@ -1323,10 +1337,13 @@ msgid ""
 "0 for the quick format, 1 for a standard one (adds a low-level format) and "
 "finally 2 for a thorough format (adds a bad blocks scan)."
 msgstr ""
+"0 para formatação rapida, 1 para formatação padrão (adiciona formatação de "
+"baixo nível) e 2 para formatação completa (adiciona checagem de blocos "
+"defeituosos)."
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr ""
+msgstr "SOMENTE USUÁRIOS AVAÇADOS - Configuração padrão para formatação FAT"
 
 #: gfloppy/gfloppy.schemas.in.h:3
 #, fuzzy
@@ -1343,10 +1360,14 @@ msgid ""
 "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
 "mtools as the preferred FAT formatting backend."
 msgstr ""
+"VERDADEIRO para usar mkdosfs como padrão para formatação FAT ou FALSO para "
+"mtools como padrão para formatação FAT."
 
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr ""
+"ext2 para o sistema de arquivos nativo do linux ou fat para sistema de "
+"arquivos DOS"
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
 msgid "Search for Files"
@@ -1373,11 +1394,11 @@ msgstr "Última Modificação"
 
 #: gsearchtool/gsearchtool.c:68
 msgid "Size at least (kilobytes)"
-msgstr ""
+msgstr "Tamanho mínimo (kilobytes)"
 
 #: gsearchtool/gsearchtool.c:69
 msgid "Size at most (kilobytes)"
-msgstr ""
+msgstr "Tamanho máximo (kilobytes)"
 
 #: gsearchtool/gsearchtool.c:70
 msgid "File is empty"
@@ -1393,7 +1414,7 @@ msgstr "Possuído pelo grupo"
 
 #: gsearchtool/gsearchtool.c:74
 msgid "Owner is unrecognized"
-msgstr ""
+msgstr "Dono não reconhecido"
 
 #: gsearchtool/gsearchtool.c:76
 #, fuzzy
@@ -1424,23 +1445,25 @@ msgstr "Entrada alterada chamada para uma opção de não-entrada!"
 
 #: gsearchtool/gsearchtool.c:593
 msgid "Set the text of 'file is named'"
-msgstr ""
+msgstr "Textp de 'nome do arquivo' "
 
 #: gsearchtool/gsearchtool.c:594
 msgid "Set the text of 'look in folder'"
-msgstr ""
+msgstr "Texto de 'procurar na pasta'"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
+"Ordene os arquivos por uma das seguintes formas: nome, diretório, tamanho, "
+"tipo ou data"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr ""
+msgstr "Configura a ordenação  para decrescente. O padrão é crescente"
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
-msgstr ""
+msgstr "Começar busca automaticamente"
 
 #: gsearchtool/gsearchtool.c:601
 #, fuzzy, c-format
@@ -1449,11 +1472,11 @@ msgstr "Seguir links simbólicos"
 
 #: gsearchtool/gsearchtool.c:686
 msgid "Invalid option passed to sortby command line argument."
-msgstr ""
+msgstr "Opção inválida passada como argumento ao ordenar por"
 
 #: gsearchtool/gsearchtool.c:815
 msgid "(aborted)"
-msgstr ""
+msgstr "(cancelado)"
 
 #: gsearchtool/gsearchtool.c:828
 #, fuzzy
@@ -1469,7 +1492,7 @@ msgstr "%d arquivos encontrados"
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
-msgstr ""
+msgstr "Os seguintes erros foram encontrados durante a procura.\n"
 
 #: gsearchtool/gsearchtool.c:931
 msgid ""
@@ -1504,7 +1527,7 @@ msgstr "Clique para Remover a Regra"
 
 #: gsearchtool/gsearchtool.c:1180
 msgid "A_vailable options:"
-msgstr ""
+msgstr "Opções Disponí_veis:"
 
 #: gsearchtool/gsearchtool.c:1193
 msgid "Search Rules Menu"
@@ -1587,12 +1610,12 @@ msgstr "Não foi possível inicializar o bonobo."
 
 #: gsearchtool/gsearchtool-callbacks.c:45
 msgid "_Open"
-msgstr ""
+msgstr "_Abrir"
 
 #: gsearchtool/gsearchtool-callbacks.c:49
 #, fuzzy
 msgid "O_pen Folder"
-msgstr "Pasta"
+msgstr "_Pasta"
 
 #: gsearchtool/gsearchtool-callbacks.c:54
 #, fuzzy
@@ -1601,7 +1624,7 @@ msgstr "Salvar Resultados _Como..."
 
 #: gsearchtool/gsearchtool-callbacks.c:107
 msgid "Can't Display Help"
-msgstr ""
+msgstr "Não é possível mostrar a Ajuda"
 
 #: gsearchtool/gsearchtool-callbacks.c:128
 msgid "Searching..."
@@ -1611,36 +1634,39 @@ msgstr "Procurando..."
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
 msgstr ""
+"Isso vai abrir %d arquivos separados. Tem certeza que deseja fazer isso?"
 
 #: gsearchtool/gsearchtool-callbacks.c:302
 #, c-format
 msgid "Open %d Files?"
-msgstr ""
+msgstr "Abrir %d Arquivos?"
 
 #: gsearchtool/gsearchtool-callbacks.c:359
 #: gsearchtool/gsearchtool-callbacks.c:620
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
-msgstr ""
+msgstr "Não há um visualizador instalado capaz de mostrar \"%s\"."
 
 #: gsearchtool/gsearchtool-callbacks.c:366
 #: gsearchtool/gsearchtool-callbacks.c:627
 msgid "Can't Display Location"
-msgstr ""
+msgstr "Não é possível mostrar esse local"
 
 #: gsearchtool/gsearchtool-callbacks.c:404
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr ""
+"Isso vai abrir %d pastas separadas. Você tem certeza de que deseja fazer "
+"isso?"
 
 #: gsearchtool/gsearchtool-callbacks.c:407
 #, c-format
 msgid "Open %d Folders?"
-msgstr ""
+msgstr "Abrir %d Pastas?"
 
 #: gsearchtool/gsearchtool-callbacks.c:446
 msgid "The nautilus file manager is not running."
-msgstr ""
+msgstr "Nautilus não está rodando"
 
 #: gsearchtool/gsearchtool-callbacks.c:729
 #, fuzzy
@@ -1666,11 +1692,11 @@ msgstr "Impossível salvar arquivo o arquivo de resultados."
 
 #: gsearchtool/gsearchtool-support.c:284
 msgid "Expander Size"
-msgstr ""
+msgstr "Tamanho do expansor"
 
 #: gsearchtool/gsearchtool-support.c:285
 msgid "Size of the expander arrow"
-msgstr ""
+msgstr "Tamanha da linha de expansão"
 
 #: gsearchtool/gsearchtool-support.c:346
 #, c-format
@@ -1678,6 +1704,8 @@ msgid ""
 "GConf error:\n"
 "  %s"
 msgstr ""
+"Erro no GConf:\n"
+"  %s"
 
 #: gsearchtool/gsearchtool-support.c:507
 msgid "%Y%m%d%H%M%S"
@@ -1697,12 +1725,12 @@ msgstr "%-d/%m/%y, %-I:%M %p"
 
 #: gsearchtool/gsearchtool-support.c:669
 msgid "link (broken)"
-msgstr ""
+msgstr "Ligação (quebrada)"
 
 #: gsearchtool/gsearchtool-support.c:674
 #, c-format
 msgid "link to %s"
-msgstr ""
+msgstr "ligar a %s"
 
 #: gsearchtool/help/es/gsearchtool.desktop.in.h:1
 msgid "GNOME Search Tool"
@@ -2013,11 +2041,11 @@ msgstr "Mostrar Propriedades do Log"
 
 #: logview/logview.c:124
 msgid "Clos_e All"
-msgstr ""
+msgstr "Fechar Todo_s"
 
 #: logview/logview.c:125
 msgid "Close all Log files"
-msgstr ""
+msgstr "Fechar todos os arquivos de Log"
 
 #: logview/logview.c:137
 msgid "_Calendar"
@@ -2037,11 +2065,11 @@ msgstr "Mostrar Detalhes da Entrada"
 
 #: logview/logview.c:151
 msgid "_Collapse All"
-msgstr ""
+msgstr "_Juntar todos"
 
 #: logview/logview.c:152
 msgid "Collapse all the rows"
-msgstr ""
+msgstr "Juntar todas as linhas"
 
 #: logview/logview.c:365
 msgid "No log files to open"
@@ -2095,7 +2123,7 @@ msgstr "Escolher logs para monitorar"
 
 #: logview/monitor.c:140
 msgid "Currently monitored logs:"
-msgstr ""
+msgstr "Logs monitorados atualmente:"
 
 #: logview/monitor.c:188
 msgid "Add logs to monitor"
