@@ -60,9 +60,7 @@ EXTRA_DIST = \
 	$(man_MANS)
 
 install-gconf-schemas:
-	if test -z "$(DESTDIR)" ; then \
-		GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(schema_source_data) ; \
-	fi
+	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(schema_source_data)
 
 install-data-local: gnome-system-log-security install-gconf-schemas
 	
