@@ -1,3 +1,10 @@
+2002-06-26  Glynn Foster  <glynn.foster@sun.com>
+
+	* configure.in: Bump requirements for libgnomeprint.
+	* gdictsrc/gdict-app.c, gdictsrc/gdict-defbox.c,
+	  gdictsrc/gdict-speller.c: Remove bogus libgnomeprint 
+	  headers
+
 2002-02-28  Pablo Saratxaga <pablo@mandrakesoft.com>
 
 	* configure.in, */{doc,help}/eu/ : Added Basque help files.
