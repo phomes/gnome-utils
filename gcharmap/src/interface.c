@@ -291,10 +291,6 @@ main_app_create_ui (MainApp *app)
 
     /* The character table */
     {
-	GdkFont *font;
-
-        gtk_widget_destroy (tmp);
-
         chartable = create_chartable ();
         gtk_box_pack_start (GTK_BOX (hbox2), chartable, TRUE, TRUE, 0);
         app->chartable = chartable;

@@ -1,3 +1,8 @@
+2002-08-05  Muktha  <muktha.narayan@wipro.com>
+
+	* src/interface.c, interface.h, asciiselect.c: Make the 
+	character buttons respect the font change. Fixes #86827.
+
 2002-07-15  Glynn Foster  <glynn.foster@sun.com>
 
 	* src/callbacks.c: Remove dumb stuff which breaks the build.
