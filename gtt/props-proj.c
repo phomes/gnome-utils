@@ -24,8 +24,8 @@
 #include <libgnome/gnome-help.h>
 #include <string.h>
 
-#include "gtt.h"
 #include "proj.h"
+#include "props-proj.h"
 #include "util.h"
 
 
@@ -103,13 +103,16 @@ prop_set(GnomePropertyBox * pb, gint page, PropDlg *dlg)
 
 static PropDlg *dlg = NULL;
 
-void 
-prop_dialog_set_project(GttProject *proj)
+static void 
+do_set_project(GttProject *proj)
 {
 	char buff[132];
 
 	if (!dlg) return;
 
+/* hack alert -- fixme -- we don't really need to do this work
+ * if the thing aint visible. we should check for visibility and defer ...
+ */
 	if (!proj) 
 	{
 		/* We null these out, because old values may be left
@@ -160,21 +163,14 @@ prop_dialog_set_project(GttProject *proj)
 
 /* ============================================================== */
 
-void 
-prop_dialog(GttProject *proj)
+static void 
+prop_dialog_new (void)
 {
 	GladeXML *gtxml;
 	GtkWidget *e;
         static GnomeHelpMenuEntry help_entry = { NULL, "index.html#PROP" };
 
-	if (!proj) return;
-
-	if (dlg) 
-	{
-		prop_dialog_set_project(proj);
-		gtk_widget_show(GTK_WIDGET(dlg->dlg));
-		return;
-	}
+	if (dlg) return;
 
 	dlg = g_malloc(sizeof(PropDlg));
 
@@ -253,11 +249,6 @@ prop_dialog(GttProject *proj)
 				  GTK_OBJECT(dlg->dlg));
 	dlg->gap = GTK_ENTRY(e);
 
-	/* ------------------------------------------------------ */
-	prop_dialog_set_project(proj);
-	gtk_widget_show(GTK_WIDGET(dlg->dlg));
-
-
 	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
 /*
 	gnome_dialog_set_parent(GNOME_DIALOG(dlg->dlg), GTK_WINDOW(window));
@@ -266,3 +257,23 @@ prop_dialog(GttProject *proj)
 }
 
 
+/* ============================================================== */
+
+void 
+prop_dialog_show(GttProject *proj)
+{
+	if (!dlg) prop_dialog_new();
+ 
+	do_set_project(proj);
+	gtk_widget_show(GTK_WIDGET(dlg->dlg));
+}
+
+void 
+prop_dialog_set_project(GttProject *proj)
+{
+	if (!dlg) prop_dialog_new();
+ 
+	do_set_project(proj);
+}
+
+/* ==================== END OF FILE ============================= */

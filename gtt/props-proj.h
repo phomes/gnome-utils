@@ -1,4 +1,4 @@
-/*   Task Properties for GTimeTracker - a time tracker
+/*   Project Properties for GTimeTracker - a time tracker
  *   Copyright (C) 2001 Linas Vepstas <linas@linas.org>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -17,15 +17,17 @@
  */
 
 
-#ifndef __PROPS_TASK_H__
-#define __PROPS_TASK_H__
+#ifndef __PROPS_PROJ_H__
+#define __PROPS_PROJ_H__
 
 #include "proj.h"
 
-/* pop up a dialog box for editing a task */
+/* pop up a dialog box for editing a project */
 /* currently, this uses the same dailog over & over, we should probably
  * change this to use gnome MDI ?? 
  */
-void prop_task_dialog_show(GttTask *task);
+void prop_dialog_set_project(GttProject *proj);
+void prop_dialog_show(GttProject *proj);
 
-#endif /* __PROPS_TASK_H__ */
+
+#endif /* __PROPS_PROJ_H__ */

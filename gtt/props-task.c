@@ -93,13 +93,11 @@ task_prop_set(GnomePropertyBox * pb, gint page, PropTaskDlg *dlg)
 static PropTaskDlg *dlg = NULL;
 
 static void 
-prop_dialog_set_task(GttTask *tsk)
+do_set_task(GttTask *tsk)
 {
 	GttBillable able;
 	GttBillRate rate;
 	char buff[132];
-
-	if (!dlg) return;
 
 	if (!tsk) 
 	{
@@ -140,20 +138,15 @@ prop_dialog_set_task(GttTask *tsk)
 
 /* ============================================================== */
 
-void 
-prop_task_dialog (GttTask *task)
+static void 
+prop_task_dialog_new (void)
 {
 	GladeXML *gtxml;
 	GtkWidget *e;
 	GtkWidget *menu, *menu_item;
         static GnomeHelpMenuEntry help_entry = { NULL, "index.html#TASK" };
 
-	if (dlg) 
-	{
-		prop_dialog_set_task(task);
-		gtk_widget_show(GTK_WIDGET(dlg->dlg));
-		return;
-	}
+	if (dlg) return;
 
 	dlg = g_malloc(sizeof(PropTaskDlg));
 
@@ -251,10 +244,6 @@ prop_task_dialog (GttTask *task)
 	gtk_object_set_data(GTK_OBJECT(menu_item), "billrate",
 		(gpointer) GTT_FLAT_FEE);
 
-	/* ------------------------------------------------------ */
-	prop_dialog_set_task(task);
-	gtk_widget_show(GTK_WIDGET(dlg->dlg));
-
 
 	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
 /*
@@ -263,4 +252,16 @@ prop_task_dialog (GttTask *task)
 */
 }
 
+/* ============================================================== */
 
+void 
+prop_task_dialog_show (GttTask *task)
+{
+	if (!dlg) prop_task_dialog_new();
+
+	do_set_task(task);
+	gtk_widget_show(GTK_WIDGET(dlg->dlg));
+	
+}
+
+/* ================= END OF FILE ================================ */

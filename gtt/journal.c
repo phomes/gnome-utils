@@ -354,8 +354,8 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 	if (0 == strncmp (url, "gtt:task", 8))
 	{
 		wig->task = addr;
-		prop_task_dialog (wig->task);
-// hack alert xxx fixme -- we need to redraw after editing !!!
+		prop_task_dialog_show (wig->task);
+// hack alert xxx fixme -- we need to redraw the journal display after editing !!!
 	}
 	else
 	{

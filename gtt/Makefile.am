@@ -38,6 +38,8 @@ noinst_HEADERS = 	\
 	phtml.h		\
 	proj.h		\
 	proj_p.h	\
+	props-proj.h	\
+	props-task.h	\
 	shorts.h	\
 	toolbar.h	\
 	util.h		\
