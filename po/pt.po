@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.2\n"
-"POT-Creation-Date: 2003-02-01 22:37+0000\n"
+"POT-Creation-Date: 2003-02-01 23:29+0000\n"
 "PO-Revision-Date: 2003-02-01 22:45+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
@@ -1082,8 +1082,8 @@ msgstr "EIncapaz de determinar geometria da disquete actual."
 #: gfloppy/src/gfloppy.c:229
 msgid "EError while creating a unique filename for the bad blocks list file."
 msgstr ""
-"EErro ao criar criar um nome de ficheiro único para o ficheiro de lista "
-"de blocos danificados."
+"EErro ao criar criar um nome de ficheiro único para o ficheiro de lista de "
+"blocos danificados."
 
 #: gfloppy/src/gfloppy.c:249
 msgid "EError while filling the bad blocks list file."
@@ -1105,7 +1105,8 @@ msgid ""
 "\n"
 "%s (%d)"
 msgstr ""
-"EO utilitário de criação de sistema de ficheiros (%s) reportou os seguintes erros:\n"
+"EO utilitário de criação de sistema de ficheiros (%s) reportou os seguintes "
+"erros:\n"
 "\n"
 "%s (%d)"
 
@@ -1125,8 +1126,8 @@ msgid ""
 "errors:\n"
 "%s."
 msgstr ""
-"EO utilitário de verificação de blocos danificados (mbadblocks) relatou "
-"os seguintes erros:\n"
+"EO utilitário de verificação de blocos danificados (mbadblocks) relatou os "
+"seguintes erros:\n"
 "%s."
 
 #: gfloppy/src/gfloppy.c:443
@@ -1220,7 +1221,8 @@ msgstr "Nativo Linux (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:17
 msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
-msgstr "Com_pleto (adiciona ao modo standard uma verificação de blocos danificados)"
+msgstr ""
+"Com_pleto (adiciona ao modo standard uma verificação de blocos danificados)"
 
 #: gfloppy/src/gfloppy2.glade.h:18
 msgid "Volume _name:"
@@ -1318,13 +1320,14 @@ msgid ""
 "0 for the quick format, 1 for a standard one (adds a low-level format) and "
 "finally 2 for a thorough format (adds a bad blocks scan)."
 msgstr ""
-"0 para a formatação rápida, 1 para a formatação standard (adiciona uma formatação "
-"de baixo nível) e finalmente 2 para uma formatação completa (adiciona verificação "
-"de blocos danificados)."
+"0 para a formatação rápida, 1 para a formatação standard (adiciona uma "
+"formatação de baixo nível) e finalmente 2 para uma formatação completa "
+"(adiciona verificação de blocos danificados)."
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr "APENAS UTILIZADORES EXPERIENTES - Backend por omissão para formatação FAT"
+msgstr ""
+"APENAS UTILIZADORES EXPERIENTES - Backend por omissão para formatação FAT"
 
 #: gfloppy/gfloppy.schemas.in.h:3
 msgid "Default filesystem type"
@@ -1345,7 +1348,8 @@ msgstr ""
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr ""
-"ext2 para o sistema de ficheiros nativo de Linux ou fat para sistema de ficheiros DOS."
+"ext2 para o sistema de ficheiros nativo de Linux ou fat para sistema de "
+"ficheiros DOS."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
 msgid "Search for Files"
@@ -1425,7 +1429,8 @@ msgstr "Definir o texto de 'procurar na pasta'"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Ordenar ficheiros por um dos seguintes: nome, pasta, tamanho, tipo ou data"
+msgstr ""
+"Ordenar ficheiros por um dos seguintes: nome, pasta, tamanho, tipo ou data"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
@@ -1597,7 +1602,8 @@ msgstr "A Procurar..."
 #: gsearchtool/gsearchtool-callbacks.c:299
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
-msgstr "Isto irá abrir %d ficheiros diferentes. Deseja mesmo efectuar esta operação?"
+msgstr ""
+"Isto irá abrir %d ficheiros diferentes. Deseja mesmo efectuar esta operação?"
 
 #: gsearchtool/gsearchtool-callbacks.c:302
 #, c-format
@@ -1618,7 +1624,8 @@ msgstr "Incapaz de Mostrar Localização"
 #: gsearchtool/gsearchtool-callbacks.c:404
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
-msgstr "Isto irá abrir %d pastas diferentes. Deseja mesmo efectuar esta operação?"
+msgstr ""
+"Isto irá abrir %d pastas diferentes. Deseja mesmo efectuar esta operação?"
 
 #: gsearchtool/gsearchtool-callbacks.c:407
 #, c-format
@@ -1709,10 +1716,10 @@ msgid ""
 "under the conditions of the GNU General Public Licence. The log icon is a "
 "courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Esta aplicação faz parte do projecto GNOME. O Visualizador de "
-"logs (registos) vem SEM QUALQUER GARANTIA. Esta aplicação é livre, e você "
-"pode redistribui-la sob as condições da Licença Pública Genérica GNU. O "
-"ícone de registo (log) foi uma oferta do Tuomas Kuosmanen (ou tigert)."
+"Esta aplicação faz parte do projecto GNOME. O Visualizador de logs "
+"(registos) vem SEM QUALQUER GARANTIA. Esta aplicação é livre, e você pode "
+"redistribui-la sob as condições da Licença Pública Genérica GNU. O ícone de "
+"registo (log) foi uma oferta do Tuomas Kuosmanen (ou tigert)."
 
 #: logview/about.c:61
 msgid "GNOME System Log Viewer"
@@ -2155,8 +2162,8 @@ msgid ""
 "Specifies the log file to open up at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your distribution."
 msgstr ""
-"Especifica o ficheiro de loga a abrir ao iniciar. Por omissão é /var/adm/messages "
-"ou /var/log/messages, dependendo da sua distribuição."
+"Especifica o ficheiro de loga a abrir ao iniciar. Por omissão é /var/adm/"
+"messages ou /var/log/messages, dependendo da sua distribuição."
 
 #~ msgid "del"
 #~ msgstr "del"
