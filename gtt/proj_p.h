@@ -60,6 +60,8 @@ struct gtt_project_s
 	GList *sub_projects;   /* sub-projects */
 	GttProject *parent;    /* back pointer to parent project */
 
+	GList *listeners;      /* listeners for change events */
+
 	int id;		/* simple id number */
 	int being_destroyed : 1;  /* project is being destroyed */
 	int frozen : 1 ;           /* defer recomputes of time totals */

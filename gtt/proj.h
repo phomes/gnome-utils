@@ -44,6 +44,8 @@ typedef struct gtt_project_s GttProject;
 typedef struct gtt_task_s GttTask;
 typedef struct gtt_interval_s GttInterval;
 
+typedef void (*GttProjectChanged) (GttProject *, gpointer);
+
 /* -------------------------------------------------------- */
 /* project data */
 
@@ -126,6 +128,12 @@ int  		gtt_project_get_id (GttProject *);
 
 /* return a project, given only its id; NULL if not found */
 GttProject * 	gtt_project_locate_from_id (int prj_id);
+
+/* Add a callback to find out that the project has changed */
+void		gtt_project_add_notifier (GttProject *,
+			GttProjectChanged, gpointer);
+void		gtt_project_remove_notifier (GttProject *,
+			GttProjectChanged, gpointer);
 
 /* -------------------------------------------------------- */
 /* project manipulation */

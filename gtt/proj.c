@@ -63,9 +63,10 @@ gtt_project_new(void)
 	proj->task_list = NULL;
 	proj->sub_projects = NULL;
 	proj->parent = NULL;
-        proj->trow = NULL;
+	proj->listeners = NULL;
 	proj->being_destroyed = FALSE;
 	proj->frozen = FALSE;
+        proj->trow = NULL;
 
         proj->id = next_free_id;
 	next_free_id ++;
@@ -827,13 +828,44 @@ gtt_project_list_compute_secs (void)
 }
 
 /* =========================================================== */
+/* even ntificatin subsystem */
+
+typedef struct notif_s 
+{
+	GttProjectChanged func;
+	gpointer user_data;
+} Notifier;
+
+void
+gtt_project_add_notifier (GttProject *prj, 
+                          GttProjectChanged cb, 
+                          gpointer user_stuff)
+{
+	Notifier * ntf;
+
+	if (!prj || !cb) return;
+
+	ntf = g_new0 (Notifier, 1);
+	ntf->func = cb;
+	ntf->user_data = user_stuff;
+	prj->listeners = g_list_append (prj->listeners, ntf);
+}
 
 static void
 proj_refresh_time (GttProject *proj)
 {
+	GList *node;
+
 	if (proj->being_destroyed) return;
 	if (proj->frozen) return;
 	gtt_project_compute_secs (proj);
+
+	/* let listeners know that the times have changed */
+	for (node=proj->listeners; node; node=node->next)
+	{
+		Notifier *ntf = node->data;
+		(ntf->func) (proj, ntf->user_data);
+	}
 }
 
 /* =========================================================== */
