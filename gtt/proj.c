@@ -24,8 +24,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
-#include "ctree.h"
 #include "err-throw.h"
 #include "proj.h"
 #include "proj_p.h"
@@ -1512,7 +1510,7 @@ project_list_time_reset(void)
 	{
 		GttProject *prj = node->data;
 		prj->secs_day = 0;
-		ctree_update_label(prj);
+		proj_modified (prj);
 	}
 }
 

@@ -282,6 +282,8 @@ redraw (GttProject *prj, gpointer data)
 			   gtt_project_get_title(prj));
 	gtk_ctree_node_set_text(GTK_CTREE(glist), treenode, DESC_COL,
 			   gtt_project_get_desc(prj));
+
+	cupdate_label (prj, GTK_CTREE_ROW(treenode)->expanded);
 }
 
 /* ============================================================== */
