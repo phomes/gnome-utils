@@ -155,7 +155,7 @@ UserPrefsStruct user_prefs_struct = {0};
 ConfigData *cfg = NULL;
 GtkWidget *open_file_dialog = NULL;
 
-GConfClient *client;
+GConfClient *client = NULL;
 poptContext poptCon;
 gint next_opt;
 
