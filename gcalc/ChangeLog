@@ -1,3 +1,7 @@
+2003-01-10  Glynn Foster  <glynn.foster@sun.com>
+
+	* gnome-calc.c: (reduce_stack_prec): If the stack is NULL, return.
+
 2002-10-16  Emmanuel Vecchia <emmanuel.vecchia@sun.com>
 
         * gnome-calc.c: Add Page_Up, Page_Down, Home and End to
