@@ -56,7 +56,7 @@ typedef struct wiggy_s {
 /* html i/o routines */
 
 static void
-wiggy_open (GttPhtml *pl, gpointer ud)
+wiggy_open (GttGhtml *pl, gpointer ud)
 {
 	Wiggy *wig = (Wiggy *) ud;
 
@@ -65,7 +65,7 @@ wiggy_open (GttPhtml *pl, gpointer ud)
 }
 
 static void
-wiggy_close (GttPhtml *pl, gpointer ud)
+wiggy_close (GttGhtml *pl, gpointer ud)
 {
 	Wiggy *wig = (Wiggy *) ud;
 
@@ -75,7 +75,7 @@ wiggy_close (GttPhtml *pl, gpointer ud)
 }
 
 static void
-wiggy_write (GttPhtml *pl, const char *str, size_t len, gpointer ud)
+wiggy_write (GttGhtml *pl, const char *str, size_t len, gpointer ud)
 {
 	Wiggy *wig = (Wiggy *) ud;
 
@@ -84,7 +84,7 @@ wiggy_write (GttPhtml *pl, const char *str, size_t len, gpointer ud)
 }
 
 static void
-wiggy_error (GttPhtml *pl, int err, const char * msg, gpointer ud)
+wiggy_error (GttGhtml *pl, int err, const char * msg, gpointer ud)
 {
 	Wiggy *wig = (Wiggy *) ud;
 	GtkHTML *htmlw = wig->htmlw;
