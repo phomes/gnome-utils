@@ -1,3 +1,9 @@
+2003-05-28  Dennis Cranston <dennis_cranston at yahoo com>
+
+	* gsearchtool-callbacks.c (save_results_cb):  Fix bug
+	report #113868 based on patch by hidetoshi.tajima@sun.com 
+	(Hidetoshi Tajima).
+
 2003-03-16  Dennis M. Cranston <dennis_cranston at yahoo.com>
 
 	* gsearchtool.c:  In create_constraint_box() set the 
