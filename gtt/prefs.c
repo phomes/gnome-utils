@@ -162,6 +162,33 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 
 	if (0 == page)
 	{
+		int change = 0;
+
+		SHOW_CHECK (title_importance);
+		SHOW_CHECK (title_urgency);
+		SHOW_CHECK (title_status);
+		SHOW_CHECK (title_ever);
+		SHOW_CHECK (title_year);
+		SHOW_CHECK (title_month);
+		SHOW_CHECK (title_week);
+		SHOW_CHECK (title_day);
+		SHOW_CHECK (title_current);
+		SHOW_CHECK (title_desc);
+		SHOW_CHECK (title_task);
+		SHOW_CHECK (title_estimated_start);
+		SHOW_CHECK (title_estimated_end);
+		SHOW_CHECK (title_due_date);
+		SHOW_CHECK (title_sizing);
+		SHOW_CHECK (title_percent_complete);
+
+		if (change)
+		{
+			ctree_update_column_visibility (global_ptw);
+		}
+	
+	}
+	if (1 == page)
+	{
 
 		/* display options */
 		state = GTK_TOGGLE_BUTTON(odlg->show_secs)->active;
@@ -197,14 +224,14 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 
 	}
 
-	if (1 == page)
+	if (2 == page)
 	{
 		/* shell command options */
 		ENTRY_TO_CHAR(odlg->command, config_command);
 		ENTRY_TO_CHAR(odlg->command_null, config_command_null);
 	}
 
-	if (2 == page)
+	if (3 == page)
 	{
 		/* log file options */
 		config_logfile_use = GTK_TOGGLE_BUTTON(odlg->logfileuse)->active;
@@ -214,7 +241,7 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 		config_logfile_min_secs = atoi (gtk_entry_get_text(odlg->logfileminsecs));
 	}
 
-	if (3 == page)
+	if (4 == page)
 	{
 		int change = 0;
 
@@ -242,36 +269,9 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 		toolbar_set_states();
 	}
 
-	if (4 == page)
-	{
-		config_idle_timeout = atoi(gtk_entry_get_text(GTK_ENTRY(odlg->idle_secs)));
-	}
 	if (5 == page)
 	{
-		int change = 0;
-
-		SHOW_CHECK (title_importance);
-		SHOW_CHECK (title_urgency);
-		SHOW_CHECK (title_status);
-		SHOW_CHECK (title_ever);
-		SHOW_CHECK (title_year);
-		SHOW_CHECK (title_month);
-		SHOW_CHECK (title_week);
-		SHOW_CHECK (title_day);
-		SHOW_CHECK (title_current);
-		SHOW_CHECK (title_desc);
-		SHOW_CHECK (title_task);
-		SHOW_CHECK (title_estimated_start);
-		SHOW_CHECK (title_estimated_end);
-		SHOW_CHECK (title_due_date);
-		SHOW_CHECK (title_sizing);
-		SHOW_CHECK (title_percent_complete);
-
-		if (change)
-		{
-			ctree_update_column_visibility (global_ptw);
-		}
-	
+		config_idle_timeout = atoi(gtk_entry_get_text(GTK_ENTRY(odlg->idle_secs)));
 	}
 }
 
