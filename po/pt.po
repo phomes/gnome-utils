@@ -1,13 +1,13 @@
 # gnome-utils's Portuguese translation
-# Copyright (C) 1999-2001 Free Software Foundation, Inc.
+# Copyright (C) 1999-2002 Free Software Foundation, Inc.
 # Nuno Ferreira <nmrf@rnl.ist.utl.pt>, 1999
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2001
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-12-02 22:48+0000\n"
-"PO-Revision-Date: 2001-12-02 22:49+0000\n"
+"POT-Creation-Date: 2002-01-30 22:32+0000\n"
+"PO-Revision-Date: 2002-01-30 22:49+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <none@none.org>\n"
 "MIME-Version: 1.0\n"
@@ -163,15 +163,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:965
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:964
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:963
 msgid "3"
 msgstr "3"
 
@@ -815,7 +815,7 @@ msgstr "Adicionar"
 msgid "Show Command"
 msgstr "Mostrar Comando"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:582
 #: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Iniciar"
@@ -899,170 +899,241 @@ msgstr ""
 "Incapaz de compreender geometria (posição e tamanho)\n"
 " especificada na linha de comando"
 
-#: gtt/ctree.c:511
+#: gtt/ctree.c:517
 msgid "Total"
 msgstr "Total"
 
-#: gtt/ctree.c:513
+#: gtt/ctree.c:519
 msgid "Total time spent on this project."
 msgstr "Tempo total dispendido neste projecto."
 
-#: gtt/ctree.c:518
+#: gtt/ctree.c:524
 msgid "Entry"
 msgstr "Entrada"
 
-#: gtt/ctree.c:520
+#: gtt/ctree.c:526
 msgid "Time spent under the current diary entry."
 msgstr "Tempo dispendido debaixo da entrada de diário actual."
 
-#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:532 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Hoje"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:534
 msgid "Time spent on this project today."
 msgstr "Tempo dispendido neste projecto hoje."
 
-#: gtt/ctree.c:533
+#: gtt/ctree.c:539
 msgid "Week"
 msgstr "Semana"
 
-#: gtt/ctree.c:535
+#: gtt/ctree.c:541
 msgid "Time spent on this project this week."
 msgstr "Tempo dispendido neste projecto esta semana."
 
-#: gtt/ctree.c:541
+#: gtt/ctree.c:547
 msgid "Month"
 msgstr "Mês"
 
-#: gtt/ctree.c:543
+#: gtt/ctree.c:549
 msgid "Time spent on this project this month."
 msgstr "Tempo dispendido neste projecto este mês."
 
-#: gtt/ctree.c:549
+#: gtt/ctree.c:555
 msgid "Year"
 msgstr "Ano"
 
-#: gtt/ctree.c:551
+#: gtt/ctree.c:557
 msgid "Time spent on this project this year."
 msgstr "Tempo dispendido neste projecto este ano."
 
-#: gtt/ctree.c:557
+#: gtt/ctree.c:563
 msgid "Title"
 msgstr "Título"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:148
+#: gtt/ctree.c:564 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Título do Projecto"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
+#: gtt/ctree.c:569 gtt/ctree.c:570 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Descrição"
 
-#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+#: gtt/ctree.c:575 gtt/ghtml.c:95 gtt/ghtml.c:220
 msgid "Diary Entry"
 msgstr "Entrada de Diário"
 
-#: gtt/ctree.c:571
+#: gtt/ctree.c:577
 msgid "The current diary entry"
 msgstr "A entrada de diário actual"
 
-#: gtt/ctree.c:578
+#: gtt/ctree.c:584
 msgid "Estimated Project Start Date"
 msgstr "Data Estimada de Início do Projecto"
 
-#: gtt/ctree.c:583
+#: gtt/ctree.c:589
 msgid "End"
 msgstr "Final"
 
-#: gtt/ctree.c:585
+#: gtt/ctree.c:591
 msgid "Estimated Project Completion Date"
 msgstr "Data Estimada de Final do Projecto"
 
-#: gtt/ctree.c:590
+#: gtt/ctree.c:596
 msgid "Due"
 msgstr "Prazo"
 
-#: gtt/ctree.c:592
+#: gtt/ctree.c:598
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
 msgstr ""
 "Prazo de Entrega: a data na qual o projecto temdefinitivamente de estar "
 "completo."
 
-#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+#: gtt/ctree.c:605 mini-utils/guname/info.c:61
 msgid "Size"
 msgstr "Tamanho"
 
-#: gtt/ctree.c:601
+#: gtt/ctree.c:607
 msgid "Sizing: How much work it will take to finish this project."
 msgstr ""
 "Dimensionamento: Quanto trabalho será necessário para terminar este projecto."
 
-#: gtt/ctree.c:607
+#: gtt/ctree.c:613
 msgid "Done"
 msgstr "Terminado"
 
-#: gtt/ctree.c:609
+#: gtt/ctree.c:615
 msgid "Percent Complete: How much of this project has been finished till now."
 msgstr "Percentagem Completo: Quanto deste projecto foi realizado até agora."
 
-#: gtt/ctree.c:616
+#: gtt/ctree.c:622
 msgid "U"
 msgstr "U"
 
-#: gtt/ctree.c:618
+#: gtt/ctree.c:624
 msgid "Urgency: Does this project need to be done soon, done quickly?"
 msgstr "Urgência: Este projecto tem de ser feito para breve, rapidamente?"
 
-#: gtt/ctree.c:624
+#: gtt/ctree.c:630
 msgid "Imp"
 msgstr "Imp"
 
-#: gtt/ctree.c:626
+#: gtt/ctree.c:632
 msgid "Importance: How important is this project?"
 msgstr "Importância: Quão importante é este projecto?"
 
-#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:638 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
 msgstr "Estado"
 
-#: gtt/ctree.c:634
+#: gtt/ctree.c:640
 msgid "The current status of this project."
 msgstr "O estado actual deste projecto"
 
-#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
+#: gtt/ctree.c:975 gtt/glade/project_properties.glade.h:25
 msgid "Low"
 msgstr "Baixa"
 
-#: gtt/ctree.c:970
+#: gtt/ctree.c:976
 msgid "Med"
 msgstr "Média"
 
-#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
+#: gtt/ctree.c:977 gtt/glade/project_properties.glade.h:15
 msgid "High"
 msgstr "Alta"
 
-#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
+#: gtt/ctree.c:986 gtt/glade/project_properties.glade.h:29
 msgid "Not Started"
 msgstr "Por Iniciar"
 
-#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
+#: gtt/ctree.c:987 gtt/glade/project_properties.glade.h:21
 msgid "In Progress"
 msgstr "Em Curso"
 
-#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
 msgstr "Em Espera"
 
-#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:989 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
 msgstr "Cancelada"
 
-#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
+#: gtt/ctree.c:990 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
 msgstr "Terminada"
+
+#: gtt/err-throw.c:61
+msgid "No Error"
+msgstr "Nenhum Erro"
+
+#: gtt/err-throw.c:65
+#, c-format
+msgid ""
+"Cannot open the project data file\n"
+"\t%s\n"
+msgstr ""
+"Incapaz de abrir o ficheiro de dados do projecto\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:70
+#, c-format
+msgid ""
+"Cannot write the project data file\n"
+"\t%s\n"
+msgstr ""
+"Incapaz de escrever no ficheiro de dados do projecto\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:75
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"doesn't seem to be a GTT project data file\n"
+msgstr ""
+"O ficheiro\n"
+"\t%s\n"
+"não parece ser um ficheiro de dados de projecto GTT\n"
+
+#: gtt/err-throw.c:81
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"seems to be corrupt\n"
+msgstr ""
+"O ficheiro\n"
+"\t%s\n"
+"parece estar corrompido\n"
+
+#: gtt/err-throw.c:87
+#, c-format
+msgid ""
+"An unknown token was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+"Uma expressão desconhecida foi encontrada ao parsear\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:92
+#, c-format
+msgid ""
+"An unknown value was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+"Um valor desconhecido foi encontrado ao parsear\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:97
+#, c-format
+msgid ""
+"Cannot write the config file\n"
+"\t%s\n"
+msgstr ""
+"Incapaz de escrever ficheiro de configuração\n"
+"\t%s\n"
 
 #: gtt/file-io.c:376
 msgid "project %t started"
@@ -5016,9 +5087,6 @@ msgstr "Gestor pessoal do crontab"
 #~ msgstr ""
 #~ "Ocorreu um erro durante a leitura do ficheiro de configuração.\n"
 #~ "Deverá ser efectuada uma nova configuração?"
-
-#~ msgid "Could not write the configuration file!"
-#~ msgstr "Incapaz de escrever ficheiro de configuração!"
 
 #~ msgid ""
 #~ "This will overwrite your current set of projects.\n"
