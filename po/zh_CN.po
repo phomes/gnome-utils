@@ -4,10 +4,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-0.99.6\n"
-"POT-Creation-Date: 2002-08-28 16:23+0100\n"
-"PO-Revision-Date: 2002-03-25 23:55+0800\n"
-"Last-Translator: Wang Li <charlesw1234@163.com>\n"
-"Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
+"POT-Creation-Date: 2002-05-30 21:17+0100\n"
+"PO-Revision-Date: 2002-05-30 03:34\n"
+"Last-Translator: Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"Language-Team: Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,22 +72,16 @@ msgid ""
 msgstr "该可执行程序运行于其它平台并且不能在该系统中执行"
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
-#: gsearchtool/gsearchtool.c:2002 logview/about.c:52
-#: meat-grinder/meat-grinder.c:475
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
+#: gsearchtool/gsearchtool.c:2001 logview/about.c:52
+#: meat-grinder/meat-grinder.c:474
 msgid "translator_credits"
 msgstr "Wang Li <charlesw1234@163.com>"
 
 # gcalc/gcalc.c:124
-#: gcalc/gcalc.c:60 gcalc/gcalc.c:191
+#: gcalc/gcalc.c:60 gcalc/gcalc.c:190
 msgid "GNOME Calculator"
 msgstr "Gnome 计算器"
-
-# gsearchtool/gsearchtool.c:565
-#: gcalc/gcalc.c:61
-#, fuzzy
-msgid "(C) 1998 the Free Software Foundation"
-msgstr "(C) 1998,2000 自由软件基金会"
 
 # gcalc/gcalc.c:33
 #: gcalc/gcalc.c:62
@@ -95,323 +89,323 @@ msgid "Simple double precision calculator similiar to xcalc"
 msgstr "一个类似 xcalc 的双精准度计算器"
 
 # gcalc/gcalc.c:124
-#: gcalc/gcalc.c:140
+#: gcalc/gcalc.c:139
 #, fuzzy
 msgid "_Calculator"
 msgstr "计算器"
 
-#: gcalc/gnome-calc.c:252
+#: gcalc/gnome-calc.c:253
 #, fuzzy
 msgid "inf"
 msgstr "inf"
 
-#: gcalc/gnome-calc.c:475
+#: gcalc/gnome-calc.c:476
 msgid "DEG"
 msgstr "DEG"
 
-#: gcalc/gnome-calc.c:477
+#: gcalc/gnome-calc.c:478
 msgid "RAD"
 msgstr "RAD"
 
-#: gcalc/gnome-calc.c:479
+#: gcalc/gnome-calc.c:480
 msgid "GRAD"
 msgstr "GRAD"
 
-#: gcalc/gnome-calc.c:1252
+#: gcalc/gnome-calc.c:1249
 msgid "1/x"
 msgstr "1/x"
 
 # mini-utils/gshutdown/gshutdown.c:395
-#: gcalc/gnome-calc.c:1252
+#: gcalc/gnome-calc.c:1249
 msgid "Inverse"
 msgstr "反函数"
 
-#: gcalc/gnome-calc.c:1253
-msgid "x<sup>2</sup>"
-msgstr ""
+#: gcalc/gnome-calc.c:1250
+msgid "x^2"
+msgstr "x^2"
 
 # gtt/toolbar.c:156
-#: gcalc/gnome-calc.c:1253
+#: gcalc/gnome-calc.c:1250
 msgid "Square"
 msgstr "平方"
 
-#: gcalc/gnome-calc.c:1254
+#: gcalc/gnome-calc.c:1251
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1254
+#: gcalc/gnome-calc.c:1251
 msgid "Square root"
 msgstr "平方根"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1252
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1252
 msgid "Clear"
 msgstr "清除"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1253
 msgid "AC"
 msgstr "AC"
 
 # mini-utils/idetool/idetool.c:327
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1253
 msgid "Reset"
 msgstr "重置"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1255 gcalc/gnome-calc.c:1311
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1255
 msgid "Inverse trigonometry/log function"
 msgstr ""
 
 #. inverse button
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1256
 msgid "sin"
 msgstr "sin"
 
 # mini-utils/guname/info.c:60
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1256
 msgid "Sine"
 msgstr "正弦"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1257
 msgid "cos"
 msgstr "cos"
 
 # ghex/converter.c:96 mini-utils/gshutdown/gshutdown.c:152
 # mini-utils/gshutdown/gshutdown.c:596
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1257
 msgid "Cosine"
 msgstr "余弦"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1258
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1258
 msgid "Tangent"
 msgstr "正切"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1260
 #, fuzzy
 msgid " DEG  "
 msgstr "DEG"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1260
 msgid "Switch degrees / radians / grad"
 msgstr "在角度/弧度/梯度间切换"
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1262
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1262
 msgid "Base of Natural Logarithm"
 msgstr "自然对数的底"
 
-#: gcalc/gnome-calc.c:1266
+#: gcalc/gnome-calc.c:1263
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1266
+#: gcalc/gnome-calc.c:1263
 msgid "Add digit"
 msgstr "增加数字"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1264
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1264
 msgid "Base 10 Logarithm"
 msgstr "以10为底的对数"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1265
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1265
 msgid "Natural Logarithm"
 msgstr "自然对数"
 
-#: gcalc/gnome-calc.c:1269
-msgid "x<sup>y</sup>"
-msgstr ""
+#: gcalc/gnome-calc.c:1266
+msgid "x^y"
+msgstr "x^y"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1266
 msgid "Power"
 msgstr "幂"
 
-#: gcalc/gnome-calc.c:1271
+#: gcalc/gnome-calc.c:1268
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1269
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1269
 msgid "Factorial"
 msgstr "阶乘"
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1270
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1270
 msgid "Opening Parenthesis"
 msgstr "左括号"
 
-#: gcalc/gnome-calc.c:1274
+#: gcalc/gnome-calc.c:1271
 msgid ")"
 msgstr ")"
 
 # gstripchart/gstripchart.c:423
-#: gcalc/gnome-calc.c:1274
+#: gcalc/gnome-calc.c:1271
 msgid "Closing Parenthesis"
 msgstr "右括号"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1272
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1272
 msgid "Divide by"
 msgstr "除以"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1274
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1274
 msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1275
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1276
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1280
+#: gcalc/gnome-calc.c:1277
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1278 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1278
 msgid "Multiply by"
 msgstr "乘"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1280
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1280
 msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1281
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1282
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1286
+#: gcalc/gnome-calc.c:1283
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1284
 msgid "-"
 msgstr "-"
 
 # gsearchtool/gsearchtool.c:514
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1284
 msgid "Subtract"
 msgstr "减"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1286
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1286
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1287
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1288
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1292
+#: gcalc/gnome-calc.c:1289
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1290
 msgid "+"
 msgstr "+"
 
 # gsearchtool/gsearchtool.c:503 mini-utils/gw/gw.c:488
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1290
 msgid "Add"
 msgstr "添加"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1292
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1292
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1293
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1294
 msgid "."
 msgstr "."
 
 # mini-utils/gcolorsel/gcolorsel.c:316
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1294
 msgid "Decimal Point"
 msgstr "十进制点"
 
-#: gcalc/gnome-calc.c:1298
+#: gcalc/gnome-calc.c:1295
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1298
+#: gcalc/gnome-calc.c:1295
 msgid "Change sign"
 msgstr "改变符号"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1296
 msgid "="
 msgstr "="
 
 # gcalc/gcalc.c:124
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1296
 msgid "Calculate"
 msgstr "计算器"
 
@@ -434,85 +428,88 @@ msgid "Insert special characters into documents"
 msgstr "将特殊字符插入到文档中"
 
 # ghex/ui.c:206
-#: gcharmap/src/asciiselect.c:117
+#: gcharmap/src/asciiselect.c:116
 msgid "Select Character"
 msgstr "选择字符"
 
-#: gcharmap/src/asciiselect.c:120
+#: gcharmap/src/asciiselect.c:119
 msgid "_Insert"
 msgstr "插入(_I)"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
-msgid "Character c_ode:"
+msgid "Character code:"
 msgstr "字符码："
 
-#: gcharmap/src/asciiselect.c:137
-#, fuzzy
-msgid "Ch_aracter:"
+#: gcharmap/src/asciiselect.c:135
+msgid "Character:"
 msgstr "字符："
 
-#: gcharmap/src/asciiselect.c:148
+#: gcharmap/src/asciiselect.c:143
 msgid "Character Code"
 msgstr "字符码"
 
 # ghex/ui.c:206
-#: gcharmap/src/asciiselect.c:148
+#: gcharmap/src/asciiselect.c:143
 msgid "Select character code"
 msgstr "选择字符码"
 
-#: gcharmap/src/asciiselect.c:149
+#: gcharmap/src/asciiselect.c:144
 msgid "Character"
 msgstr "字符"
 
-#: gcharmap/src/asciiselect.c:149
+#: gcharmap/src/asciiselect.c:144
 msgid "Character to insert"
 msgstr "要插入的字符"
 
+# mini-utils/guname/guname.c:513
+#: gcharmap/src/asciiselect.c:152
+msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+
 # gcalc/gcalc.c:124
-#: gcharmap/src/callbacks.c:63
+#: gcharmap/src/callbacks.c:64
 #, fuzzy
 msgid "GNOME Character Map"
 msgstr "字符映射表"
 
-#: gcharmap/src/callbacks.c:66
+#: gcharmap/src/callbacks.c:67
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr ""
 
 # mini-utils/idetool/idetool.c:310 mini-utils/idetool/idetool.c:320
-#: gcharmap/src/callbacks.c:113
+#: gcharmap/src/callbacks.c:114
 msgid "del"
 msgstr "删除"
 
-#: gcharmap/src/callbacks.c:119
+#: gcharmap/src/callbacks.c:120
 #, c-format
 msgid " %s: Character code %d"
 msgstr " %s：字符码 %d"
 
-#: gcharmap/src/callbacks.c:155
+#: gcharmap/src/callbacks.c:161
 msgid "Text copied to clipboard..."
 msgstr "复制到剪贴板的文本..."
 
-#: gcharmap/src/callbacks.c:172
+#: gcharmap/src/callbacks.c:178
 msgid "Text cut to clipboard..."
 msgstr "剪切到剪贴板的文本..."
 
-#: gcharmap/src/callbacks.c:208
+#: gcharmap/src/callbacks.c:227
 msgid "Text pasted from clipboard..."
 msgstr "从剪贴板粘贴的文本..."
 
 # gcalc/gcalc.c:124
-#: gcharmap/src/interface.c:206
+#: gcharmap/src/interface.c:208
 msgid "Gnome Character Map"
 msgstr "Gnome 字符映射表"
 
 # gtt/options.c:220 gtt/options.c:518
-#: gcharmap/src/interface.c:236
+#: gcharmap/src/interface.c:238
 msgid "Action Toolbar"
 msgstr "动作工具栏"
 
-#: gcharmap/src/interface.c:240
+#: gcharmap/src/interface.c:242
 msgid "_Text to copy:"
 msgstr "要复制的文本(_T)："
 
@@ -551,7 +548,7 @@ msgstr "通过选择字符码插入字符。"
 
 #: gcharmap/src/menus.c:63
 #, fuzzy
-msgid "Ch_aracters"
+msgid "_Characters"
 msgstr "字符"
 
 # gtt/toolbar.c:163
@@ -597,15 +594,15 @@ msgstr "新日记条目"
 msgid "Enter the text"
 msgstr "输入端口编号"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.h:1
 msgid "Accessories"
 msgstr "附件"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
+#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:251
 msgid "Dictionary Lookup"
 msgstr "查字典"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "在在线字典中查询单词"
@@ -641,8 +638,8 @@ msgstr "显示/隐藏定义窗口..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
-#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
+#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "无法连接服务器"
 
@@ -653,15 +650,6 @@ msgid ""
 msgstr ""
 "发生了严重错误。请检查您的服务器和端口是否正确。默认服务器 dict.org，端口 "
 "2628 可以作为参考"
-
-#: gdictsrc/gdict-about.c:56
-#, fuzzy
-msgid "GNOME Dictionary"
-msgstr "字典"
-
-#: gdictsrc/gdict-about.c:57
-msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -680,37 +668,37 @@ msgstr "正在检查拼写..."
 msgid "Spell check done"
 msgstr "拼写检查完成"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
 msgid "No matches found"
 msgstr "找不到匹配"
 
-#: gdictsrc/gdict-app.c:271
+#: gdictsrc/gdict-app.c:257
 msgid "Looking up word..."
 msgstr "正在搜索单词..."
 
-#: gdictsrc/gdict-app.c:279
+#: gdictsrc/gdict-app.c:265
 msgid "Lookup done"
 msgstr "搜索完成"
 
 # mini-utils/guname/guname.c:506
-#: gdictsrc/gdict-app.c:301
+#: gdictsrc/gdict-app.c:287
 msgid "String not found"
 msgstr "找不到字符串"
 
 # mini-utils/gless/gless.c:461
-#: gdictsrc/gdict-app.c:469
+#: gdictsrc/gdict-app.c:455
 #, fuzzy
 msgid "Find"
 msgstr "查找(_I)"
 
 # mini-utils/gless/gless.c:461
-#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
-#: gsearchtool/gsearchtool.c:1840
+#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1506
+#: gsearchtool/gsearchtool.c:1839
 #, fuzzy
 msgid "_Find"
 msgstr "查找："
 
-#: gdictsrc/gdict-app.c:540
+#: gdictsrc/gdict-app.c:526
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
@@ -720,58 +708,58 @@ msgstr ""
 "要么您正使用的服务器不可用\n"
 "要么您没有连接到 Internet。"
 
-#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
+#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "搜索单词(_L)"
 
-#: gdictsrc/gdict-app.c:702
+#: gdictsrc/gdict-app.c:688
 msgid "Lookup word in dictionary"
 msgstr "在字典中搜索单词"
 
-#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
 #, fuzzy
 msgid "Check _Spelling"
 msgstr "检查单词的拼写"
 
-#: gdictsrc/gdict-app.c:705
+#: gdictsrc/gdict-app.c:691
 msgid "Check word spelling"
 msgstr "检查单词的拼写"
 
-#: gdictsrc/gdict-app.c:749
+#: gdictsrc/gdict-app.c:735
 #, fuzzy
 msgid "_Dictionary"
 msgstr "字典"
 
-#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "字典"
 
 # ghex/ui.c:90
-#: gdictsrc/gdict-app.c:808
+#: gdictsrc/gdict-app.c:794
 #, fuzzy
 msgid "_Word: "
 msgstr "单词(_W)："
 
 # ghex/hex-document.c:59
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "单词"
 
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "单词条目"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:822
 msgid "Enter a Word or select one from the list below"
 msgstr "输入一个单词或从下面的列表中选择一个单词"
 
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:825
 msgid "Look Up for a Word"
 msgstr "搜索一个单词"
 
-#: gdictsrc/gdict-applet.c:263
+#: gdictsrc/gdict-applet.c:244
 msgid "_Lookup"
 msgstr "搜索(_L)"
 
@@ -814,96 +802,102 @@ msgid "Cross-reference:"
 msgstr "交叉引用："
 
 # gtt/toolbar.c:194
-#: gdictsrc/gdict-pref-dialog.c:186
+#: gdictsrc/gdict-pref-dialog.c:185
 #, fuzzy
 msgid "Dictionary Preferences"
 msgstr "编辑首选项..."
 
-#: gdictsrc/gdict-pref-dialog.c:198
+#: gdictsrc/gdict-pref-dialog.c:197
 msgid "Smart _lookup"
 msgstr "智能搜索(_L)"
 
-#: gdictsrc/gdict-pref-dialog.c:211
+# SUN CHANGED MESSAGE
+#: gdictsrc/gdict-pref-dialog.c:210
 #, fuzzy
 msgid "_Server:"
-msgstr "服务器："
+msgstr "服务器(_S)："
 
 # ghex/preferences.c:50 mini-utils/idetool/idetool.c:19
 # mini-utils/idetool/idetool.c:142 mini-utils/idetool/idetool.c:327
-#: gdictsrc/gdict-pref-dialog.c:218
+# SUN CHANGED MESSAGE
+#: gdictsrc/gdict-pref-dialog.c:217
 #, fuzzy
 msgid "De_fault"
-msgstr "缺省"
+msgstr "默认(_F)"
 
 # mini-utils/gshutdown/gshutdown.c:368
-#: gdictsrc/gdict-pref-dialog.c:224
+# SUN CHANGED MESSAGE
+#: gdictsrc/gdict-pref-dialog.c:223
 #, fuzzy
 msgid "Reset server to default"
-msgstr "恢复成缺省值"
+msgstr "将服务器复位为默认设置"
 
-#: gdictsrc/gdict-pref-dialog.c:226
+# SUN CHANGED MESSAGE
+#: gdictsrc/gdict-pref-dialog.c:225
 #, fuzzy
 msgid "_Port:"
-msgstr "端口："
+msgstr "端口(_P)："
 
 # ghex/preferences.c:50 mini-utils/idetool/idetool.c:19
 # mini-utils/idetool/idetool.c:142 mini-utils/idetool/idetool.c:327
-#: gdictsrc/gdict-pref-dialog.c:240
+# SUN CHANGED MESSAGE
+#: gdictsrc/gdict-pref-dialog.c:239
 #, fuzzy
 msgid "Def_ault"
-msgstr "缺省"
+msgstr "默认(_A)"
 
 # mini-utils/gshutdown/gshutdown.c:368
-#: gdictsrc/gdict-pref-dialog.c:247
+# SUN CHANGED MESSAGE
+#: gdictsrc/gdict-pref-dialog.c:246
 #, fuzzy
 msgid "Reset port to default"
-msgstr "恢复成缺省值"
+msgstr "将端口复位为默认设置"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:247
 msgid "Server"
 msgstr "服务器"
 
-#: gdictsrc/gdict-pref-dialog.c:249
+#: gdictsrc/gdict-pref-dialog.c:248
 msgid "Server Entry"
 msgstr "服务器条目"
 
-#: gdictsrc/gdict-pref-dialog.c:249
+#: gdictsrc/gdict-pref-dialog.c:248
 msgid "Enter the Server Name"
 msgstr "输入服务器名"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:251
 msgid "Port"
 msgstr "端口"
 
-#: gdictsrc/gdict-pref-dialog.c:253
+#: gdictsrc/gdict-pref-dialog.c:252
 msgid "Port Entry"
 msgstr "端口条目"
 
-#: gdictsrc/gdict-pref-dialog.c:253
+#: gdictsrc/gdict-pref-dialog.c:252
 msgid "Enter the Port Number"
 msgstr "输入端口编号"
 
-#: gdictsrc/gdict-pref-dialog.c:258
+#: gdictsrc/gdict-pref-dialog.c:257
 msgid "_Database:"
 msgstr "数据库(_D)："
 
-#: gdictsrc/gdict-pref-dialog.c:265
+#: gdictsrc/gdict-pref-dialog.c:264
 msgid "D_efault strategy:"
 msgstr "默认策略(_E)："
 
-#: gdictsrc/gdict-pref-dialog.c:458
+#: gdictsrc/gdict-pref-dialog.c:457
 msgid "Search all databases"
 msgstr "搜索所有数据库"
 
-#: gdictsrc/gdict-pref-dialog.c:623
+#: gdictsrc/gdict-pref-dialog.c:622
 msgid "Database"
 msgstr "数据库"
 
-#: gdictsrc/gdict-pref-dialog.c:623
+#: gdictsrc/gdict-pref-dialog.c:622
 msgid "Database Name"
 msgstr "数据库名称"
 
-#: gdictsrc/gdict-pref-dialog.c:635
+#: gdictsrc/gdict-pref-dialog.c:634
 msgid "Default Strategy"
 msgstr "默认策略"
 
@@ -941,54 +935,33 @@ msgid "Search Strategy"
 msgstr "搜索策略"
 
 #: gdictsrc/gdict.schemas.in.h:1
+msgid ""
+"</long> </locale> </schema> <schema> <key>/schemas/apps/gnome-dictionary/"
+"database</key> <applyto>/apps/gnome-dictionary/database</applyto> "
+"<owner>gnome-dictionary</owner> <type>string</type> <default>!</default> "
+"<locale name=\"C\"> <short>Default database. ! indicates all databases</"
+"short> <long>"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:2
+msgid ""
+"</long> </locale> </schema> <schema> <key>/schemas/apps/gnome-dictionary/"
+"port</key> <applyto>/apps/gnome-dictionary/port</applyto> <owner>gnome-"
+"dictionary</owner> <type>int</type> <default>2628</default> <locale name=\"C"
+"\"> <short>Port used to connect to server</short> <long>"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:3
+#, fuzzy
+msgid "Default strategy"
+msgstr "默认策略(_E)："
+
+#: gdictsrc/gdict.schemas.in.h:4
 #, fuzzy
 msgid "Dictionary server"
 msgstr "设定字典服务器"
 
-#: gdictsrc/gdict.schemas.in.h:2
-#, fuzzy
-msgid "Port used to connect to server"
-msgstr "无法连接服务器"
-
-#: gdictsrc/gdict.schemas.in.h:3
-msgid ""
-"Specify whether to use smart lookup. This key is dependant on whether the "
-"dictionary server supports this option. The default is TRUE"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:4
-msgid "The database to use in the dictionary server."
-msgstr ""
-
 #: gdictsrc/gdict.schemas.in.h:5
-msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:6
-msgid ""
-"The name of the individual database to use in the dictionary server. ! "
-"specifies that gnome-dictionary should search all databases in a given server"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:7
-msgid "The port number to connect to. The default port is 2628."
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
-msgid "The search strategy to use"
-msgstr "搜索策略"
-
-#: gdictsrc/gdict.schemas.in.h:9
-msgid ""
-"The search strategy to use. This is dependant on the search strategy that "
-"the dictionary server supports. The default strategy is 'lev' - Match words "
-"within Levenshtein distance one"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:10
 #, fuzzy
 msgid "Use smart lookup"
 msgstr "智能搜索(_L)"
@@ -1221,12 +1194,12 @@ msgstr "格式化"
 msgid "_Quick format"
 msgstr "快速格式化(_Q)"
 
-#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
+#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "无法开启设备 %s，无法继续格式化。"
 
-#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
+#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1235,7 +1208,7 @@ msgstr ""
 "设备 %s 已断开。\n"
 "请连接设备并继续。"
 
-#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
+#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1245,20 +1218,24 @@ msgstr ""
 "您没有适当的权限写入 %s，格式化是不可能的。\n"
 "与您的系统管理员交涉以获得写权限。"
 
-#: gfloppy/src/main.c:291
+#: gfloppy/src/main.c:292
+msgid "The device to format"
+msgstr "要格式化的设备"
+
+#: gfloppy/src/main.c:293
+msgid "DEVICE"
+msgstr "设备"
+
+#: gfloppy/src/main.c:360
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
 
-#: gfloppy/src/main.c:359
-msgid "The device to format"
-msgstr "要格式化的设备"
-
-#: gfloppy/src/main.c:360
-msgid "DEVICE"
-msgstr "设备"
+#: gfloppy/src/main.c:399
+msgid "Format another floppy?"
+msgstr "还要格式化其它的软盘吗?"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
@@ -1334,7 +1311,7 @@ msgstr "文件为空"
 msgid "Matches regular expression"
 msgstr "匹配正则表达式"
 
-#: gsearchtool/gsearchtool.c:274 gsearchtool/gsearchtool.c:943
+#: gsearchtool/gsearchtool.c:274 gsearchtool/gsearchtool.c:942
 #, fuzzy
 msgid "Start folder does not exist."
 msgstr "启动目录不存在。"
@@ -1384,11 +1361,11 @@ msgstr ""
 "它通常被安装为 /bin/sh 或 /usr/bin/sh。"
 
 # mini-utils/gless/gless.c:851
-#: gsearchtool/gsearchtool.c:752
+#: gsearchtool/gsearchtool.c:751
 msgid "Searching..."
 msgstr "正在寻找..."
 
-#: gsearchtool/gsearchtool.c:866
+#: gsearchtool/gsearchtool.c:865
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1396,46 +1373,46 @@ msgstr ""
 "\n"
 "... 需显示太多错误 ..."
 
-#: gsearchtool/gsearchtool.c:877
+#: gsearchtool/gsearchtool.c:876
 #, fuzzy
 msgid "No files found"
 msgstr "找不到匹配"
 
-#: gsearchtool/gsearchtool.c:880
+#: gsearchtool/gsearchtool.c:879
 #, fuzzy
 msgid "One file found"
 msgstr "找不到匹配"
 
-#: gsearchtool/gsearchtool.c:882
+#: gsearchtool/gsearchtool.c:881
 #, fuzzy, c-format
 msgid "%d files found"
 msgstr "找不到匹配"
 
-#: gsearchtool/gsearchtool.c:954 gsearchtool/gsearchtool.c:1671
+#: gsearchtool/gsearchtool.c:953 gsearchtool/gsearchtool.c:1670
 msgid "Cannot perform the search. Please specify a search criteria."
 msgstr "无法执行搜索。请给出搜索条件。"
 
-#: gsearchtool/gsearchtool.c:971 gsearchtool/gsearchtool.c:1692
+#: gsearchtool/gsearchtool.c:970 gsearchtool/gsearchtool.c:1691
 msgid ""
 "A search is already running.  Please wait for the search to complete or "
 "cancel it."
 msgstr "一个搜索已在运行。请等那个搜索完成或取消它。"
 
-#: gsearchtool/gsearchtool.c:1005
+#: gsearchtool/gsearchtool.c:1004
 #, fuzzy
 msgid "Start folder does not exist"
 msgstr "启动目录不存在"
 
-#: gsearchtool/gsearchtool.c:1020
+#: gsearchtool/gsearchtool.c:1019
 msgid "Cannot show the search command line. Please specify a search criteria."
 msgstr "无法显示搜索命令行。请给出搜索条件。"
 
 # mini-utils/gw/gw.c:479
-#: gsearchtool/gsearchtool.c:1024
+#: gsearchtool/gsearchtool.c:1023
 msgid "Search Command Line"
 msgstr "搜索命令行"
 
-#: gsearchtool/gsearchtool.c:1042
+#: gsearchtool/gsearchtool.c:1041
 #, fuzzy
 msgid ""
 "This is the command line that can be used to execute this search\n"
@@ -1448,241 +1425,256 @@ msgstr ""
 "命令："
 
 # mini-utils/gw/gw.c:560
-#: gsearchtool/gsearchtool.c:1063
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1062
 msgid "Command"
-msgstr "指令"
+msgstr "命令"
 
 # mini-utils/gw/gw.c:479
-#: gsearchtool/gsearchtool.c:1064
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1063
 #, fuzzy
 msgid "Command Line Entry"
-msgstr "指令列"
+msgstr "命令行输入"
 
-#: gsearchtool/gsearchtool.c:1064
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1063
 #, fuzzy
 msgid "Use this command line to execute the search from console"
-msgstr ""
-"这是可以从 console 执行该搜索的命令行。\n"
-"\n"
-"命令："
+msgstr "使用此命令行从控制台执行搜索"
 
 # mini-utils/guname/moreinfo.c:104
-#: gsearchtool/gsearchtool.c:1172
+#: gsearchtool/gsearchtool.c:1171
 msgid "No viewer available for this mime type."
 msgstr "没有对该 mime 类型可用的查看器"
 
-#: gsearchtool/gsearchtool.c:1269
+#: gsearchtool/gsearchtool.c:1268
 msgid "Entry changed called for a non entry option!"
 msgstr "已改变的条目呼叫非条目选项！"
 
-#: gsearchtool/gsearchtool.c:1339
+# SUN NEW TRANSLATION
+#: gsearchtool/gsearchtool.c:1338
 msgid "Search Rule Value Entry"
-msgstr ""
+msgstr "搜索规则值输入"
 
-#: gsearchtool/gsearchtool.c:1339
+# SUN NEW TRANSLATION
+#: gsearchtool/gsearchtool.c:1338
 msgid "Enter a value for search rule"
-msgstr ""
+msgstr "输入搜索规则的值"
 
 # gsearchtool/gsearchtool.c:426
-#: gsearchtool/gsearchtool.c:1354
+#: gsearchtool/gsearchtool.c:1353
 msgid "Enabled"
 msgstr "已启用"
 
-#: gsearchtool/gsearchtool.c:1362
+# SUN NEW TRANSLATION
+#: gsearchtool/gsearchtool.c:1361
 msgid "Toggle On/Off to enable/disable the rule"
-msgstr ""
+msgstr "切换开/关以启用/禁用规则"
 
-#: gsearchtool/gsearchtool.c:1370
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1369
 #, fuzzy
 msgid "Click to Remove the Rule"
-msgstr "点击以便进行拼写检查"
+msgstr "单击以删除规则"
 
 # mini-utils/guname/guname.c:506
-#: gsearchtool/gsearchtool.c:1416 gsearchtool/gsearchtool.c:1794
+#: gsearchtool/gsearchtool.c:1415 gsearchtool/gsearchtool.c:1793
 msgid "S_tarting in folder:"
 msgstr "从此文件夹开始(_T)："
 
 # ghex/preferences.c:159
-#: gsearchtool/gsearchtool.c:1420 gsearchtool/gsearchtool.c:1800
+#: gsearchtool/gsearchtool.c:1419 gsearchtool/gsearchtool.c:1799
 msgid "Browse"
 msgstr "浏览"
 
 # mini-utils/guname/guname.c:506
-#: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1427 gsearchtool/gsearchtool.c:1428
+#: gsearchtool/gsearchtool.c:1808 gsearchtool/gsearchtool.c:1809
 #, fuzzy
 msgid "Starting folder entry"
-msgstr "从此文件夹开始(_T)："
+msgstr "开始文件夹输入"
 
-#: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
+# SUN NEW TRANSLATION
+#: gsearchtool/gsearchtool.c:1427 gsearchtool/gsearchtool.c:1428
+#: gsearchtool/gsearchtool.c:1808 gsearchtool/gsearchtool.c:1809
 msgid "Enter the folder name where you want to start the search"
-msgstr ""
+msgstr "输入开始进行搜索的文件夹名称"
 
-#: gsearchtool/gsearchtool.c:1450
+#: gsearchtool/gsearchtool.c:1449
 msgid "Rules:"
 msgstr "规则："
 
-#: gsearchtool/gsearchtool.c:1470
+#: gsearchtool/gsearchtool.c:1469
 msgid "A_dd Rule:"
 msgstr "添加规则(_D)："
 
 # gsearchtool/gsearchtool.c:203
-#: gsearchtool/gsearchtool.c:1479
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1478
 #, fuzzy
 msgid "Search Rules Menu"
-msgstr "搜寻结果"
+msgstr "搜索规则菜单"
 
-#: gsearchtool/gsearchtool.c:1479
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1478
 #, fuzzy
 msgid "Select a search rule from the menu"
-msgstr "从项目创建新归档文件"
+msgstr "从菜单中选择搜索规则"
 
-#: gsearchtool/gsearchtool.c:1522
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1521
 #, fuzzy
 msgid "Click to Add a Rule"
-msgstr "点击以便进行拼写检查"
+msgstr "单击以添加规则"
 
-#: gsearchtool/gsearchtool.c:1523
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1522
 #, fuzzy
 msgid "Click to Start the Search"
-msgstr "点击以便进行拼写检查"
+msgstr "单击开始搜索"
 
-#: gsearchtool/gsearchtool.c:1524
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1523
 #, fuzzy
 msgid "Click to Stop the Search"
-msgstr "点击以便进行拼写检查"
+msgstr "单击停止搜索"
 
 # gsearchtool/gsearchtool.c:203
-#: gsearchtool/gsearchtool.c:1529 gsearchtool/gsearchtool.c:1861
+#: gsearchtool/gsearchtool.c:1528 gsearchtool/gsearchtool.c:1860
 #, fuzzy
 msgid "S_earch Results"
 msgstr "搜寻结果"
 
 # mini-utils/gcolorsel/gcolorsel.c:157 mini-utils/guname/moreinfo.c:217
 # mini-utils/gw/gw.c:479 mini-utils/gw/gw.c:554
-#: gsearchtool/gsearchtool.c:1569 gsearchtool/gsearchtool.c:1901
+#: gsearchtool/gsearchtool.c:1568 gsearchtool/gsearchtool.c:1900
 msgid "Name"
 msgstr "名字"
 
-#: gsearchtool/gsearchtool.c:1591 gsearchtool/gsearchtool.c:1923
+#: gsearchtool/gsearchtool.c:1590 gsearchtool/gsearchtool.c:1922
 msgid "Folder"
 msgstr "文件夹"
 
 # mini-utils/guname/info.c:60
-#: gsearchtool/gsearchtool.c:1603 gsearchtool/gsearchtool.c:1935
+#: gsearchtool/gsearchtool.c:1602 gsearchtool/gsearchtool.c:1934
 msgid "Size"
 msgstr "大小"
 
-#: gsearchtool/gsearchtool.c:1615 gsearchtool/gsearchtool.c:1947
+#: gsearchtool/gsearchtool.c:1614 gsearchtool/gsearchtool.c:1946
 msgid "Type"
 msgstr "类型"
 
-#: gsearchtool/gsearchtool.c:1626 gsearchtool/gsearchtool.c:1958
+#: gsearchtool/gsearchtool.c:1625 gsearchtool/gsearchtool.c:1957
 msgid "Date Modified"
 msgstr "修改时间"
 
 # gsearchtool/gsearchtool.c:21
-#: gsearchtool/gsearchtool.c:1770
+#: gsearchtool/gsearchtool.c:1769
 msgid "Find files _named:"
 msgstr "查找文件名为(_N)："
 
 # gsearchtool/gsearchtool.c:21
-#: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1784 gsearchtool/gsearchtool.c:1785
 #, fuzzy
 msgid "File Name Entry"
-msgstr "文件名不是"
+msgstr "文件名输入"
 
-#: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
+# SUN NEW TRANSLATION
+#: gsearchtool/gsearchtool.c:1784 gsearchtool/gsearchtool.c:1785
 msgid "Enter the file name you want to search"
-msgstr ""
+msgstr "输入要搜索的文件名"
 
-#: gsearchtool/gsearchtool.c:1855
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1854
 #, fuzzy
 msgid "Click to Start the search"
-msgstr "点击以便进行拼写检查"
+msgstr "单击开始搜索"
 
-#: gsearchtool/gsearchtool.c:1856
+# SUN CHANGED MESSAGE
+#: gsearchtool/gsearchtool.c:1855
 #, fuzzy
 msgid "Click to Stop the search"
-msgstr "点击以便进行拼写检查"
+msgstr "单击停止搜索"
 
 # mini-utils/guname/info.c:60
-#: gsearchtool/gsearchtool.c:1978
+#: gsearchtool/gsearchtool.c:1977
 #, fuzzy
 msgid "Simple"
 msgstr "简单(_M)"
 
 # mini-utils/gshutdown/gshutdown.c:208 mini-utils/gshutdown/gshutdown.c:209
-#: gsearchtool/gsearchtool.c:1980
+#: gsearchtool/gsearchtool.c:1979
 #, fuzzy
 msgid "Advanced"
 msgstr "高级(_V)"
 
 # gsearchtool/gsearchtool.c:610
-#: gsearchtool/gsearchtool.c:2018
+#: gsearchtool/gsearchtool.c:2017
 #: gsearchtool/help/es/gsearchtool.desktop.in.h:1
 msgid "GNOME Search Tool"
 msgstr "GNOME 搜索工具"
 
 # gsearchtool/gsearchtool.c:565
-#: gsearchtool/gsearchtool.c:2019
+#: gsearchtool/gsearchtool.c:2018
 #, fuzzy
 msgid "(C) 1998,2002 the Free Software Foundation"
 msgstr "(C) 1998,2000 自由软件基金会"
 
 # gsearchtool/gsearchtool.c:567
-#: gsearchtool/gsearchtool.c:2020
+#: gsearchtool/gsearchtool.c:2019
 msgid "Frontend to the unix find/locate commands"
 msgstr "Unix find/locate 命令前端"
 
-#: gsearchtool/gsearchtool.c:2060
+#: gsearchtool/gsearchtool.c:2058
 #, c-format
 msgid "File %s already exists. Overwrite?"
 msgstr "文件 %s 已存在。覆盖它？"
 
 # ghex/ui.c:305
-#: gsearchtool/gsearchtool.c:2095
+#: gsearchtool/gsearchtool.c:2093
 msgid "Cannot save the results file."
 msgstr "无法保存结果文件。"
 
 # gsearchtool/gsearchtool.c:203
-#: gsearchtool/gsearchtool.c:2102 meat-grinder/meat-grinder.c:654
+#: gsearchtool/gsearchtool.c:2100 meat-grinder/meat-grinder.c:652
 msgid "Save Results"
 msgstr "保存结果"
 
 # gtt/options.c:310
-#: gsearchtool/gsearchtool.c:2159
+#: gsearchtool/gsearchtool.c:2157
 #, fuzzy
 msgid "S_how Command..."
 msgstr "显示命令(_H)"
 
-#: gsearchtool/gsearchtool.c:2160
+#: gsearchtool/gsearchtool.c:2158
 msgid "Show the command used to perform the search"
 msgstr ""
 
 # gsearchtool/gsearchtool.c:203
-#: gsearchtool/gsearchtool.c:2163
+#: gsearchtool/gsearchtool.c:2161
 msgid "Save Results _As..."
 msgstr "结果保存为(_A)..."
 
 # gsearchtool/gsearchtool.c:203
-#: gsearchtool/gsearchtool.c:2164
+#: gsearchtool/gsearchtool.c:2162
 #, fuzzy
 msgid "Save the search results"
 msgstr "搜寻结果"
 
-#: gsearchtool/gsearchtool.c:2179
+#: gsearchtool/gsearchtool.c:2177
 #, fuzzy
 msgid "Sear_ch"
 msgstr "搜寻"
 
-#: gsearchtool/gsearchtool.c:2201
+#: gsearchtool/gsearchtool.c:2199
 msgid "Cannot initialize bonobo."
 msgstr "无法初始化 bonobo。"
 
 # gsearchtool/gsearchtool.c:610
-#: gsearchtool/gsearchtool.c:2205
+#: gsearchtool/gsearchtool.c:2203
 msgid "Search Tool"
 msgstr "搜索工具"
 
@@ -1712,90 +1704,82 @@ msgstr "系统日志查看器"
 msgid "Copyright (C) 1998"
 msgstr "版权所有 (C) 1998"
 
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "动作数据库"
 
-# gstripchart/gstripchart.c:1545
-#: logview/actions.c:85
+# mini-utils/guname/info.c:64
+#: logview/actions.c:81
 #, fuzzy
-msgid "Actions"
-msgstr "工作中"
+msgid "Action options"
+msgstr "加载选项"
 
 # gsearchtool/gsearchtool.c:503 mini-utils/gw/gw.c:488
-#: logview/actions.c:153
-#, fuzzy
-msgid "_Add"
-msgstr "添加"
+#: logview/actions.c:138
+msgid "Add..."
+msgstr "添加..."
 
-#: logview/actions.c:160
-#, fuzzy
-msgid "_Edit"
-msgstr "编辑"
+#: logview/actions.c:144
+msgid "Edit..."
+msgstr "编辑..."
 
 # gsearchtool/gsearchtool.c:433
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
-#, fuzzy
-msgid "_Remove"
+#: logview/actions.c:150
+msgid "Remove"
 msgstr "移除"
 
-#: logview/actions.c:260
+#: logview/actions.c:261
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "无法打开动作数据库 <%s>！打开失败。"
 
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
+#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
 msgid "Error parsing actions data base"
 msgstr "解析动作数据库错误"
 
-#: logview/actions.c:386
+#: logview/actions.c:387
 msgid "Can't write to actions database!"
 msgstr "无法写入动作数据库"
 
-#: logview/actions.c:486
-msgid "Error while executing specified action"
-msgstr ""
-
 # gtt/prop.c:55
-#: logview/actions.c:507
+#: logview/actions.c:494
 msgid "<empty>"
 msgstr "<空>"
 
 # mini-utils/guname/info.c:45
-#: logview/actions.c:508
+#: logview/actions.c:495
 msgid "log name regexp"
 msgstr "日志名正则表达式"
 
 # mini-utils/guname/info.c:45
-#: logview/actions.c:509
+#: logview/actions.c:496
 msgid "process regexp"
 msgstr "进程正则表达式"
 
-#: logview/actions.c:510
+#: logview/actions.c:497
 msgid "message regexp"
 msgstr "消息正则表达式"
 
-#: logview/actions.c:511
+#: logview/actions.c:498
 msgid "action to execute when regexps are TRUE"
 msgstr "当正则表达式为真时执行"
 
 # gtt/clist.c:172
-#: logview/actions.c:512
+#: logview/actions.c:499
 msgid "description"
 msgstr "描述"
 
 # gtt/clist.c:172
-#: logview/actions.c:772
-#, fuzzy
-msgid "_Description:"
+#: logview/actions.c:744
+msgid "description:"
 msgstr "描述："
 
-#: logview/actions.c:781
+#: logview/actions.c:753
 msgid "Description of this entry."
 msgstr "对该条目的描述。"
 
-#: logview/actions.c:805
+#: logview/actions.c:800
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2044,7 +2028,7 @@ msgstr "无法打开 %s。"
 msgid "%s not a log file."
 msgstr "%s 不是日志文件。"
 
-#: logview/logrtns.c:792 logview/logrtns.c:823 logview/logrtns.c:954
+#: logview/logrtns.c:787 logview/logrtns.c:818 logview/logrtns.c:949
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats：内存耗尽"
 
@@ -2158,57 +2142,58 @@ msgid "Error: [%s]\n"
 msgstr "错误：[%s]\n"
 
 # mini-utils/guname/info.c:64
-#: logview/monitor.c:115
+#: logview/monitor.c:114
 msgid "Monitor options"
 msgstr "加载选项"
 
-#: logview/monitor.c:125
+#: logview/monitor.c:128
 msgid "Choose logs to monitor"
 msgstr "选择需监视的日志"
 
 # gsearchtool/gsearchtool.c:503 mini-utils/gw/gw.c:488
 #. Arrowed buttons
-#: logview/monitor.c:169
+#: logview/monitor.c:175
 msgid "Add >>"
 msgstr "添加 >>"
 
 # gsearchtool/gsearchtool.c:433
 #. Remove button
-#: logview/monitor.c:177
+#: logview/monitor.c:183
 msgid "Remove <<"
 msgstr "删除 <<"
 
 #. Check boxes
-#: logview/monitor.c:215
+#: logview/monitor.c:222
 msgid "Hide app"
 msgstr "隐藏应用程序"
 
 # gstripchart/gstripchart.c:1528
-#: logview/monitor.c:223
+#: logview/monitor.c:230
 msgid "Exec actions"
 msgstr "执行动作"
 
 # gstripchart/gstripchart.c:1545
 #. Actions button
-#: logview/monitor.c:235
+#: logview/monitor.c:242
 msgid "Actions..."
 msgstr "动作中..."
 
-#: logview/monitor.c:286
+# SUN CHANGED MESSAGE
+#: logview/monitor.c:293
 #, fuzzy
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "打开的日志太多。关闭一个并重试"
+msgstr "要监视的日志过多。请删除一个，然后重试"
 
-#: logview/monitor.c:294 logview/monitor.c:332
+#: logview/monitor.c:301 logview/monitor.c:339
 msgid "tmp_list is NULL\n"
 msgstr "tmp_list 为 NULL\n"
 
 # mini-utils/gfontsel/gfontsel.c:253
-#: logview/monitor.c:452
+#: logview/monitor.c:459
 msgid "Monitoring logs..."
 msgstr "正在监视日志..."
 
-#: logview/monitor.c:673
+#: logview/monitor.c:672
 msgid "TOUCHED!!\n"
 msgstr "已更新！！\n"
 
@@ -2261,7 +2246,7 @@ msgstr "归档生成器"
 msgid "Create compressed archives containing many files"
 msgstr "创建含有许多文件的归档文件"
 
-#: meat-grinder/meat-grinder.c:137
+#: meat-grinder/meat-grinder.c:136
 #, c-format
 msgid ""
 "Number of files: %d\n"
@@ -2270,7 +2255,7 @@ msgstr ""
 "文件数量：%d\n"
 "文件夹数量：%d"
 
-#: meat-grinder/meat-grinder.c:143
+#: meat-grinder/meat-grinder.c:142
 msgid ""
 "No files or folders, drop files or folders\n"
 "above to add them to the archive"
@@ -2279,13 +2264,13 @@ msgstr ""
 "以便将其添加到归档文件中"
 
 # gsearchtool/gsearchtool.c:433
-#: meat-grinder/meat-grinder.c:166
+#: meat-grinder/meat-grinder.c:165
 #, fuzzy, c-format
 msgid "%s removed"
 msgstr "移除"
 
 # mini-utils/gless/gless.c:610
-#: meat-grinder/meat-grinder.c:328 meat-grinder/meat-grinder.c:333
+#: meat-grinder/meat-grinder.c:327 meat-grinder/meat-grinder.c:332
 #, fuzzy, c-format
 msgid "Failed to create %s"
 msgstr ""
@@ -2293,162 +2278,131 @@ msgstr ""
 "%s\n"
 "%s"
 
-#: meat-grinder/meat-grinder.c:373
+#: meat-grinder/meat-grinder.c:372
 msgid "Archive.tar.gz"
 msgstr "Archive.tar.gz"
 
-#: meat-grinder/meat-grinder.c:493 meat-grinder/meat-grinder.c:977
+#: meat-grinder/meat-grinder.c:492 meat-grinder/meat-grinder.c:971
 msgid "GNOME Archive Generator"
 msgstr "GNOME 归档生成器"
 
-#: meat-grinder/meat-grinder.c:495
+#: meat-grinder/meat-grinder.c:494
 msgid "Drag files in to make archives"
 msgstr "拖放文件以便创建归档文件"
 
 # gtt/app.c:117 gtt/app.c:223
-#: meat-grinder/meat-grinder.c:528
+#: meat-grinder/meat-grinder.c:526
 #, fuzzy
 msgid "All files selected"
 msgstr "未选择文件名"
 
-#: meat-grinder/meat-grinder.c:547
+#: meat-grinder/meat-grinder.c:545
 msgid "All files removed"
 msgstr ""
 
 # gtt/app.c:117 gtt/app.c:223
-#: meat-grinder/meat-grinder.c:609 meat-grinder/meat-grinder.c:793
+#: meat-grinder/meat-grinder.c:607 meat-grinder/meat-grinder.c:787
 msgid "No filename selected"
 msgstr "未选择文件名"
 
-#: meat-grinder/meat-grinder.c:613
+#: meat-grinder/meat-grinder.c:611
 msgid "File exists, overwrite?"
 msgstr "文件已存在，覆盖？"
 
-#: meat-grinder/meat-grinder.c:636
+#: meat-grinder/meat-grinder.c:634
 #, c-format
 msgid "%s created"
 msgstr ""
 
-#: meat-grinder/meat-grinder.c:650
+#: meat-grinder/meat-grinder.c:648
 msgid "No items to archive"
 msgstr "没有要归档的项目"
 
-#: meat-grinder/meat-grinder.c:777
+#: meat-grinder/meat-grinder.c:771
 #, c-format
 msgid "%s added"
 msgstr ""
 
-#: meat-grinder/meat-grinder.c:796
+#: meat-grinder/meat-grinder.c:790
 msgid "File does not exists"
 msgstr "文件不存在"
 
-#: meat-grinder/meat-grinder.c:810
+#: meat-grinder/meat-grinder.c:804
 msgid "Add file or folder"
 msgstr "添加文件或文件夹"
 
-#: meat-grinder/meat-grinder.c:927
+#: meat-grinder/meat-grinder.c:921
 #, fuzzy
 msgid "_Add file or folder..."
 msgstr "添加文件或文件夹..."
 
-#: meat-grinder/meat-grinder.c:928
+#: meat-grinder/meat-grinder.c:922
 #, fuzzy
 msgid "Add a file or folder to archive"
 msgstr "将文件或文件夹添加到归档文件"
 
 # mini-utils/gless/gless.c:851
-#: meat-grinder/meat-grinder.c:931
+#: meat-grinder/meat-grinder.c:925
 #, fuzzy
 msgid "_Create archive..."
 msgstr "创建归档文件..."
 
-#: meat-grinder/meat-grinder.c:931
+#: meat-grinder/meat-grinder.c:925
 msgid "Create a new archive from the items"
 msgstr "从项目创建新归档文件"
 
-#: meat-grinder/meat-grinder.c:942
+# gsearchtool/gsearchtool.c:433
+#: meat-grinder/meat-grinder.c:935
+#, fuzzy
+msgid "_Remove"
+msgstr "移除"
+
+#: meat-grinder/meat-grinder.c:936
 #, fuzzy
 msgid "Remove the selected item"
 msgstr "删除选中的项目"
 
 # gsearchtool/gsearchtool.c:433
-#: meat-grinder/meat-grinder.c:944
+#: meat-grinder/meat-grinder.c:938
 #, fuzzy
 msgid "R_emove All"
 msgstr "移除"
 
 # gsearchtool/gsearchtool.c:433
-#: meat-grinder/meat-grinder.c:945
+#: meat-grinder/meat-grinder.c:939
 #, fuzzy
 msgid "Remove all items"
 msgstr "移除"
 
-#: meat-grinder/meat-grinder.c:1016
+#: meat-grinder/meat-grinder.c:1010
 msgid "Drop files here to add them to the archive."
 msgstr "将文件拖放到此以便将其添加到归档文件中。"
 
 # mini-utils/gless/gless.c:851
 #. tarball icon
-#: meat-grinder/meat-grinder.c:1028
+#: meat-grinder/meat-grinder.c:1022
 #, fuzzy
 msgid "_Create Archive"
 msgstr "创建归档文件..."
 
-#: meat-grinder/meat-grinder.c:1036
+#: meat-grinder/meat-grinder.c:1030
 msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
 "将该按钮拖动到您希望创建归档文件的目标，或点击它以便弹出一个文件选择对话框。"
 
-#: meat-grinder/meat-grinder.c:1174
+#: meat-grinder/meat-grinder.c:1168
 msgid "Cannot find proper icons anywhere!"
 msgstr "无论何处都找不到适当的图标！"
 
-#: meat-grinder/meat-grinder.c:1182
+#: meat-grinder/meat-grinder.c:1176
 msgid ""
 "Cannot find the archive (tar) program!\n"
 "This is the program used for creating archives."
 msgstr ""
 "无法找到归档 (tar) 程序！\n"
 "该程序是用于创建归档文件的。"
-
-# mini-utils/guname/guname.c:513
-#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "x^2"
-#~ msgstr "x^2"
-
-#~ msgid "x^y"
-#~ msgstr "x^y"
-
-#, fuzzy
-#~ msgid "Default strategy"
-#~ msgstr "默认策略(_E)："
-
-#~ msgid "Format another floppy?"
-#~ msgstr "还要格式化其它的软盘吗?"
-
-# mini-utils/guname/info.c:64
-#, fuzzy
-#~ msgid "Action options"
-#~ msgstr "加载选项"
-
-# gsearchtool/gsearchtool.c:503 mini-utils/gw/gw.c:488
-#~ msgid "Add..."
-#~ msgstr "添加..."
-
-#~ msgid "Edit..."
-#~ msgstr "编辑..."
-
-# gsearchtool/gsearchtool.c:433
-#~ msgid "Remove"
-#~ msgstr "移除"
-
-# gtt/clist.c:172
-#~ msgid "description:"
-#~ msgstr "描述："
 
 #~ msgid "_Floppy Device:"
 #~ msgstr "软盘设备(_F)："
@@ -3671,6 +3625,9 @@ msgstr ""
 #~ msgid "Edit the Start & Stop Times"
 #~ msgstr "启动/停止 Timer"
 
+#~ msgid "Edit"
+#~ msgstr "编辑"
+
 # gstripchart/gstripchart.c:1891
 #, fuzzy
 #~ msgid "Delete This Interval"
@@ -3760,6 +3717,11 @@ msgstr ""
 #, fuzzy
 #~ msgid "Short name : "
 #~ msgstr "主机域名:"
+
+# gstripchart/gstripchart.c:1545
+#, fuzzy
+#~ msgid "Actions"
+#~ msgstr "工作中"
 
 # gtt/toolbar.c:178
 #, fuzzy
