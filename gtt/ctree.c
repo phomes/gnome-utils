@@ -21,7 +21,7 @@
 #include <gnome.h>
 
 #include "ctree.h"
-#include "gtt.h"
+#include "cur-proj.h"
 #include "menucmd.h"
 #include "proj_p.h"
 #include "props-proj.h"

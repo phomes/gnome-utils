@@ -851,11 +851,42 @@ gtt_project_add_notifier (GttProject *prj,
 	prj->listeners = g_list_append (prj->listeners, ntf);
 }
 
+void
+gtt_project_freeze (GttProject *prj)
+{
+	if (!prj) return;
+	prj->frozen = TRUE;
+}
+
+void
+gtt_project_thaw (GttProject *prj)
+{
+	if (!prj) return;
+	prj->frozen = FALSE;
+	proj_refresh_time (prj);
+}
+
+void 
+gtt_interval_freeze (GttInterval *ivl)
+{
+	if (!ivl ||!ivl->parent || !ivl->parent->parent) return;
+	ivl->parent->parent->frozen = TRUE;
+}
+
+void 
+gtt_interval_thaw (GttInterval *ivl)
+{
+	if (!ivl ||!ivl->parent || !ivl->parent->parent) return;
+	ivl->parent->parent->frozen = FALSE;
+	proj_refresh_time (ivl->parent->parent);
+}
+
 static void
 proj_refresh_time (GttProject *proj)
 {
 	GList *node;
 
+	if (!proj) return;
 	if (proj->being_destroyed) return;
 	if (proj->frozen) return;
 	gtt_project_compute_secs (proj);

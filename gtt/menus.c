@@ -20,8 +20,8 @@
 #include <gnome.h>
 #include <string.h>
 
+#include "cur-proj.h"
 #include "journal.h"
-#include "gtt.h"
 #include "menucmd.h"
 #include "toolbar.h"
 

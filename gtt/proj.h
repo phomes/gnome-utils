@@ -129,7 +129,21 @@ int  		gtt_project_get_id (GttProject *);
 /* return a project, given only its id; NULL if not found */
 GttProject * 	gtt_project_locate_from_id (int prj_id);
 
-/* Add a callback to find out that the project has changed */
+/* The gtt_project_add_notifier() routine allows anoter component
+ *    (e.g. a GUI) to add a signal that will be called whenever the 
+ *    time associated with a project changes. (except timers ???)
+ *
+ * The gtt_project_freeze() routine prevents notifiers from being
+ *    invoked.
+ *
+ * The gtt_project_thaw() routine causes notifiers to be sent.
+ */ 
+
+void		gtt_project_freeze (GttProject *prj);
+void		gtt_project_thaw (GttProject *prj);
+void		gtt_interval_freeze (GttInterval *prj);
+void		gtt_interval_thaw (GttInterval *prj);
+
 void		gtt_project_add_notifier (GttProject *,
 			GttProjectChanged, gpointer);
 void		gtt_project_remove_notifier (GttProject *,
