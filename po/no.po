@@ -1672,15 +1672,15 @@ msgstr "%d%m%Y%H%M%S"
 
 #: gsearchtool/gsearchtool-support.c:538
 msgid "today at %-I:%M %p"
-msgstr "i dag %-I:%M %p"
+msgstr "i dag %-H.%M"
 
 #: gsearchtool/gsearchtool-support.c:540
 msgid "yesterday at %-I:%M %p"
-msgstr "i går %-I:%M %p"
+msgstr "i går %-H.%M"
 
 #: gsearchtool/gsearchtool-support.c:542 gsearchtool/gsearchtool-support.c:544
 msgid "%m/%-d/%y, %-I:%M %p"
-msgstr "%-d/%m/%y, %-I:%M %p"
+msgstr "%-d.%m.%y, %-H.%M"
 
 #: gsearchtool/gsearchtool-support.c:669
 msgid "link (broken)"
