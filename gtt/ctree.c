@@ -95,7 +95,7 @@ struct ProjTreeWindow_s
 	// int clist_header_width_set;
 };
 
-static void cupdate_label(ProjTreeNode *ptn, gboolean expand);
+static void ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand);
 
 /* ============================================================== */
 
@@ -224,17 +224,30 @@ tree_unselect_row(GtkCTree *ctree, GtkCTreeNode* rownode, gint column)
 	cur_proj_set(NULL);
 }
 
-
 static void 
 tree_expand (GtkCTree *ctree, GtkCTreeNode *row)
 {
-	cupdate_label(gtk_ctree_node_get_row_data(ctree, row), TRUE);
+	int i;
+	ProjTreeNode *ptn = gtk_ctree_node_get_row_data(ctree, row);
+	ctree_col_values (ptn->ptw, ptn->prj, TRUE);
+	for (i=0; i<ptn->ptw->ncols; i++)
+	{
+		gtk_ctree_node_set_text(ptn->ptw->ctree, 
+			ptn->ctnode, i, ptn->ptw->col_values[i]);
+	}
 }
 
 static void 
 tree_collapse (GtkCTree *ctree, GtkCTreeNode *row)
 {
-	cupdate_label(gtk_ctree_node_get_row_data(ctree, row), FALSE);
+	int i;
+	ProjTreeNode *ptn = gtk_ctree_node_get_row_data(ctree, row);
+	ctree_col_values (ptn->ptw, ptn->prj, FALSE);
+	for (i=0; i<ptn->ptw->ncols; i++)
+	{
+		gtk_ctree_node_set_text(ptn->ptw->ctree, 
+			ptn->ctnode, i, ptn->ptw->col_values[i]);
+	}
 }
 
 static void
@@ -1061,6 +1074,7 @@ ctree_add (ProjTreeWindow *ptw, GttProject *p, GtkCTreeNode *parent)
 	ProjTreeNode *ptn;
 	GList *n;
 
+	ctree_col_values (ptw, p, FALSE);
 	ptn = gtt_project_get_private_data (p);
 	if (!ptn)
 	{
@@ -1082,7 +1096,6 @@ ctree_add (ProjTreeWindow *ptw, GttProject *p, GtkCTreeNode *parent)
 		GttProject *sub_prj = n->data;
 		ctree_add (ptw, sub_prj, ptn->ctnode);
 	}
-	ctree_col_values (ptw, p, GTK_CTREE_ROW(ptn->ctnode)->expanded);
 }
 
 /* ============================================================== */
@@ -1094,6 +1107,7 @@ ctree_insert_before (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 	GtkCTreeNode *sibnode=NULL;
 	GtkCTreeNode *parentnode=NULL;
 
+	ctree_col_values (ptw, p, FALSE);
 	if (sibling)
 	{
 		GttProject *parent = gtt_project_get_parent (sibling);
@@ -1121,7 +1135,6 @@ ctree_insert_before (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
-	ctree_col_values (ptw, p, GTK_CTREE_ROW(ptn->ctnode)->expanded);
 }
 
 /* ============================================================== */
@@ -1133,6 +1146,7 @@ ctree_insert_after (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 	GtkCTreeNode *parentnode=NULL;
 	GtkCTreeNode *next_sibling=NULL;
 
+	ctree_col_values (ptw, p, FALSE);
 	if (sibling)
 	{
 		GttProject *parent = gtt_project_get_parent (sibling);
@@ -1167,7 +1181,6 @@ ctree_insert_after (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
-	ctree_col_values (ptw, p, GTK_CTREE_ROW(ptn->ctnode)->expanded);
 }
 
 /* ============================================================== */
@@ -1190,29 +1203,25 @@ ctree_remove(ProjTreeWindow *ptw, GttProject *p)
 	gtt_project_set_private_data (p, NULL);
 }
 
-
-/* ============================================================== */
-
-static void
-cupdate_label(ProjTreeNode *ptn, gboolean expand)
-{
-	GttProject *p = ptn->prj;
-	ProjTreeWindow *ptw = ptn->ptw;
-
-	ctree_col_values (ptw, p, GTK_CTREE_ROW(ptn->ctnode)->expanded);
-	update_status_bar();
-}
-
 /* ============================================================== */
 
 void
 ctree_update_label(ProjTreeWindow *ptw, GttProject *p)
 {
+	int i;
 	ProjTreeNode *ptn;
 	if (!ptw || !p) return;
 	ptn = gtt_project_get_private_data (p);
 	g_return_if_fail (NULL != ptn);
-	cupdate_label (ptn, GTK_CTREE_ROW(ptn->ctnode)->expanded);
+	ctree_col_values (ptw, p, GTK_CTREE_ROW(ptn->ctnode)->expanded);
+
+	for (i=0; i<ptw->ncols; i++)
+	{
+		gtk_ctree_node_set_text(ptw->ctree, 
+			ptn->ctnode, i, ptw->col_values[i]);
+	}
+
+	update_status_bar();
 }
 
 /* ============================================================== */
