@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils HEAD\n"
+"Project-Id-Version: gnome-utils gnome-2-10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-07 10:11-0500\n"
-"PO-Revision-Date: 2005-03-04 12:11+0100\n"
+"POT-Creation-Date: 2005-03-31 12:47+0200\n"
+"PO-Revision-Date: 2005-03-31 19:30+0200\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -362,6 +362,10 @@ msgstr "Emri i databazës"
 msgid "Default Strategy"
 msgstr "Strategjia e prezgjedhur"
 
+#: gdictsrc/gdict-speller.c:114
+msgid "Spellings"
+msgstr "Drejtshkrime"
+
 #: gdictsrc/gdict-speller.c:234
 msgid "Spell-checking..."
 msgstr "Kontrolli i drejtshkrimit..."
@@ -452,8 +456,7 @@ msgstr ""
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr ""
-"VETËM PËR PËRDORUESIT EKSPERTË - backend i prezgjedhur për formatimin FAT"
+msgstr "VETËM PËR PËRDORUESIT EKSPERTË - backend i prezgjedhur për formatimin FAT"
 
 #: gfloppy/gfloppy.schemas.in.h:3
 msgid "Default filesystem type"
@@ -816,8 +819,7 @@ msgstr "E pamundur nisja e dispozitivit"
 
 #: gfloppy/src/main.c:308
 msgid "Unable to open any device, formatting cannot continue."
-msgstr ""
-"E pamundur hapja e çfarëdo dispozitivi, formatimi nuk mund të vazhdojë."
+msgstr "E pamundur hapja e çfarëdo dispozitivi, formatimi nuk mund të vazhdojë."
 
 #: gfloppy/src/main.c:311 gfloppy/src/main.c:314
 msgid "/dev/floppy/0 or /dev/fd0"
@@ -928,8 +930,7 @@ msgstr "PamjaEkranit-%d.png"
 
 #: gnome-screenshot/gnome-panel-screenshot.c:338
 msgid "Unable to take a screenshot of the current desktop."
-msgstr ""
-"E pamundur marrja e pamjes së ekranit për hapësirën e tanishme të punës."
+msgstr "E pamundur marrja e pamjes së ekranit për hapësirën e tanishme të punës."
 
 #: gnome-screenshot/gnome-panel-screenshot.c:410
 msgid "Grab a window instead of the entire screen"
@@ -1047,7 +1048,7 @@ msgid "The file \"%s\" already exists.  Would you like to replace it?"
 msgstr "File \"%s\" ekziston.  Dëshironi t'a zevëndësoni?"
 
 #: gnome-screenshot/screenshot-xfer.c:190
-#: gsearchtool/gsearchtool-callbacks.c:1269
+#: gsearchtool/gsearchtool-callbacks.c:1271
 msgid "_Replace"
 msgstr "_Zëvendëso"
 
@@ -1126,8 +1127,7 @@ msgstr "Zgjidh opcionin e kërkimit \"Emri nuk përmban\""
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:28
 msgid "Select the search option \"Name matches regular expression\""
-msgstr ""
-"Zgjidh opcionin e kërkimit \"Emri korrispondon me shprehjen e rregullt\""
+msgstr "Zgjidh opcionin e kërkimit \"Emri korrispondon me shprehjen e rregullt\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1331,122 +1331,120 @@ msgstr ""
 "Kjo vlerë përcakton nëse instrumenti i kërkimit ç'aktivon përdorimin e "
 "komandës \"locate\" kur kryen kërkime sipas thjeshtë emrit të file."
 
-#: gsearchtool/gsearchtool-callbacks.c:163
+#: gsearchtool/gsearchtool-callbacks.c:165
 msgid "Could not open help document."
 msgstr "E pamundur hapja e dokumentit të ndihmës."
 
-#: gsearchtool/gsearchtool-callbacks.c:298
+#: gsearchtool/gsearchtool-callbacks.c:300
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "Jeni i sigurt që dëshironi të hapni %d dokument?"
 msgstr[1] "Jeni i sigurt që dëshironi të hapni %d dokumente?"
 
-#: gsearchtool/gsearchtool-callbacks.c:303
-#: gsearchtool/gsearchtool-callbacks.c:460
+#: gsearchtool/gsearchtool-callbacks.c:305
+#: gsearchtool/gsearchtool-callbacks.c:493
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "Do të hapë %d dritare të veçantë."
 msgstr[1] "Do të hapë %d dritare të veçanta."
 
-#: gsearchtool/gsearchtool-callbacks.c:343
+#: gsearchtool/gsearchtool-callbacks.c:345
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "E pamundur hapja e dokumentit \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:418
-#: gsearchtool/gsearchtool-callbacks.c:761
+#: gsearchtool/gsearchtool-callbacks.c:374
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "E pamundur hapja e kartelës \"%s\"."
+
+#: gsearchtool/gsearchtool-callbacks.c:382
+msgid "The nautilus file manager is not running."
+msgstr "Organizuesi i file Nautilus nuk është duke u ekzekutuar."
+
+#: gsearchtool/gsearchtool-callbacks.c:449
+#: gsearchtool/gsearchtool-callbacks.c:763
 msgid "The document does not exist."
 msgstr "Dokumenti nuk ekziston."
 
-#: gsearchtool/gsearchtool-callbacks.c:431
+#: gsearchtool/gsearchtool-callbacks.c:464
 msgid "There is no installed viewer capable of displaying the document."
-msgstr ""
-"Asnjë shikues i instaluar aktualisht është në gjendje të shfaqë dokumentin."
+msgstr "Asnjë shikues i instaluar aktualisht është në gjendje të shfaqë dokumentin."
 
-#: gsearchtool/gsearchtool-callbacks.c:455
+#: gsearchtool/gsearchtool-callbacks.c:488
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "Jeni i sigurt që dëshironi të hapni %d kartelë?"
 msgstr[1] "Jeni i sigurt që dëshironi të hapni %d kartela?"
 
-#: gsearchtool/gsearchtool-callbacks.c:499
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "E pamundur hapja e kartelës \"%s\"."
-
-#: gsearchtool/gsearchtool-callbacks.c:507
-msgid "The nautilus file manager is not running."
-msgstr "Organizuesi i file Nautilus nuk është duke u ekzekutuar."
-
-#: gsearchtool/gsearchtool-callbacks.c:587
+#: gsearchtool/gsearchtool-callbacks.c:589
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "E pamundur lëvizja e \"%s\" në kosh."
 
-#: gsearchtool/gsearchtool-callbacks.c:618
+#: gsearchtool/gsearchtool-callbacks.c:620
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Dëshironi t'a eleminoni \"%s\" përgjithmonë?"
 
-#: gsearchtool/gsearchtool-callbacks.c:621
+#: gsearchtool/gsearchtool-callbacks.c:623
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "Koshi nuk ndodhet në dispozicion.  Nuk arrij të çoj \"%s\" në kosh."
 
-#: gsearchtool/gsearchtool-callbacks.c:660
+#: gsearchtool/gsearchtool-callbacks.c:662
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "I pamundur eleminimi i \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:780
+#: gsearchtool/gsearchtool-callbacks.c:782
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Lëvizja e \"%s\" dështoi: %s."
 
-#: gsearchtool/gsearchtool-callbacks.c:812
+#: gsearchtool/gsearchtool-callbacks.c:814
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Fshirja e \"%s\" dështoi: %s."
 
-#: gsearchtool/gsearchtool-callbacks.c:1158
+#: gsearchtool/gsearchtool-callbacks.c:1160
 msgid "Save Search Results As..."
 msgstr "Ruaj rezultatet e kërkimit si..."
 
-#: gsearchtool/gsearchtool-callbacks.c:1186
+#: gsearchtool/gsearchtool-callbacks.c:1188
 msgid "Could not save document."
 msgstr "E pamundur ruajtja e dokumentit."
 
-#: gsearchtool/gsearchtool-callbacks.c:1187
+#: gsearchtool/gsearchtool-callbacks.c:1189
 msgid "You did not select a document name."
 msgstr "Nuk keni zgjedhur emrin e dokumentit."
 
-#: gsearchtool/gsearchtool-callbacks.c:1217
+#: gsearchtool/gsearchtool-callbacks.c:1219
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "E pamundur ruajtja e dokumentit \"%s\" në \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:1250
+#: gsearchtool/gsearchtool-callbacks.c:1252
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Dokumenti \"%s\" ekziston.  Dëshironi t'a zevëndësoni?"
 
-#: gsearchtool/gsearchtool-callbacks.c:1254
+#: gsearchtool/gsearchtool-callbacks.c:1256
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr ""
-"Nëse zevëndësoni një file ekzistues, përmbajtja e tij do të mbishkruhet."
+msgstr "Nëse zevëndësoni një file ekzistues, përmbajtja e tij do të mbishkruhet."
 
-#: gsearchtool/gsearchtool-callbacks.c:1318
+#: gsearchtool/gsearchtool-callbacks.c:1320
 msgid "The document name you selected is a folder."
 msgstr "Emri i dokumentit që keni zgjedhur është një kartelë."
 
-#: gsearchtool/gsearchtool-callbacks.c:1369
+#: gsearchtool/gsearchtool-callbacks.c:1371
 msgid "You may not have write permissions to the document."
 msgstr "Nuk keni të drejtat e shkrimit tek ky dokument."
 
-#: gsearchtool/gsearchtool-support.c:70
+#: gsearchtool/gsearchtool-support.c:69
 #, c-format
 msgid ""
 "GConf error:\n"
@@ -1460,23 +1458,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:521
+#: gsearchtool/gsearchtool-support.c:520
 msgid "today at %-I:%M %p"
 msgstr "sot më %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:523
+#: gsearchtool/gsearchtool-support.c:522
 msgid "yesterday at %-I:%M %p"
 msgstr "dje më %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:525 gsearchtool/gsearchtool-support.c:527
+#: gsearchtool/gsearchtool-support.c:524 gsearchtool/gsearchtool-support.c:526
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %B %-d %Y më %-I:%M:%S %p"
 
-#: gsearchtool/gsearchtool-support.c:711
+#: gsearchtool/gsearchtool-support.c:710
 msgid "link (broken)"
 msgstr "lidhje (e shkëputur)"
 
-#: gsearchtool/gsearchtool-support.c:717
+#: gsearchtool/gsearchtool-support.c:716
 #, c-format
 msgid "link to %s"
 msgstr "lidhje me %s"
@@ -1625,8 +1623,7 @@ msgstr ""
 
 #: gsearchtool/gsearchtool.c:1160
 msgid "Set sort order to descending, the default is ascending"
-msgstr ""
-"Vendos drejtimin e renditjes në zbritje, i prezgjedhur është në ngjitje"
+msgstr "Vendos drejtimin e renditjes në zbritje, i prezgjedhur është në ngjitje"
 
 #: gsearchtool/gsearchtool.c:1161
 msgid "Automatically start a search"
@@ -2287,7 +2284,9 @@ msgstr "Hap një file log të ri"
 msgid "There was an error displaying help."
 msgstr "Gabim gjatë shfaqjes së ndihmës."
 
-#: logview/logview.c:894
+#. For translators : this is the window title that shows the log and
+#. app names : "logname (monitored) - APP_NAME"
+#: logview/logview.c:896
 #, c-format
 msgid "%s (monitored) - %s"
 msgstr "%s (monitoruar) - %s"
@@ -2312,3 +2311,4 @@ msgstr "Hollësi mbi elementin"
 #: logview/zoom.c:135
 msgid "%B %e %X"
 msgstr "%B %e %X"
+
