@@ -38,6 +38,13 @@
 
 int clist_header_width_set = 0;
 
+typedef struct PrjTreeNode_s
+{
+	GtkCTree *ctree;
+	GtkCTreeNode *trow;
+	GttProject *prj;
+} PrjTreeNode;
+
 static void cupdate_label(GttProject *p, gboolean expand);
 
 /* ============================================================== */
@@ -265,7 +272,19 @@ printf ("before sibl %s\n\n", gtt_project_get_desc(
 }
 
 /* ============================================================== */
+/* redraw handler */
 
+static void
+redraw (GttProject *prj, gpointer data)
+{
+	GtkCTreeNode *treenode = data;
+	gtk_ctree_node_set_text(GTK_CTREE(glist), treenode, TITLE_COL,
+			   gtt_project_get_title(prj));
+	gtk_ctree_node_set_text(GTK_CTREE(glist), treenode, DESC_COL,
+			   gtt_project_get_desc(prj));
+}
+
+/* ============================================================== */
 
 GtkWidget *
 create_ctree(void)
@@ -461,6 +480,8 @@ ctree_add (GttProject *p, GtkCTreeNode *parent)
 	gtk_ctree_node_set_row_data(GTK_CTREE(glist), treenode, p);
 	p->trow = treenode;
 
+	gtt_project_add_notifier (p, redraw, treenode);
+
 	for (n=gtt_project_get_children(p); n; n=n->next)
 	{
 		GttProject *sub_prj = n->data;
@@ -500,6 +521,8 @@ ctree_insert_before (GttProject *p, GttProject *sibling)
 	gtk_ctree_node_set_row_data(GTK_CTREE(glist), treenode, p);
 
 	p->trow = treenode;
+	gtt_project_add_notifier (p, redraw, treenode);
+
 }
 
 void
@@ -540,6 +563,8 @@ ctree_insert_after (GttProject *p, GttProject *sibling)
 	gtk_ctree_node_set_row_data(GTK_CTREE(glist), treenode, p);
 
 	p->trow = treenode;
+	gtt_project_add_notifier (p, redraw, treenode);
+
 }
 
 
@@ -547,6 +572,7 @@ ctree_insert_after (GttProject *p, GttProject *sibling)
 void
 ctree_remove(GttProject *p)
 {
+	gtt_project_remove_notifier (p, redraw, p->trow);
 	gtk_ctree_remove_node(GTK_CTREE(glist), p->trow);
 	p->trow = NULL;
 }
@@ -586,23 +612,6 @@ ctree_update_label(GttProject *p)
 {
 	if (!p || !p->trow) return;
 	cupdate_label (p, GTK_CTREE_ROW(p->trow)->expanded);
-}
-
-void
-ctree_update_title(GttProject *p)
-{
-	if (NULL == p->trow) return;
-	gtk_ctree_node_set_text(GTK_CTREE(glist), p->trow, TITLE_COL,
-			   gtt_project_get_title(p));
-}
-
-
-void
-ctree_update_desc(GttProject *p)
-{
-	if (NULL == p->trow) return;
-	gtk_ctree_node_set_text(GTK_CTREE(glist), p->trow, DESC_COL,
-			   gtt_project_get_desc(p));
 }
 
 

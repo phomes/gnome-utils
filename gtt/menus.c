@@ -21,6 +21,7 @@
 #include <string.h>
 
 #include "cur-proj.h"
+#include "gtt.h"
 #include "journal.h"
 #include "menucmd.h"
 #include "toolbar.h"

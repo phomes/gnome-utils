@@ -141,8 +141,10 @@ GttProject * 	gtt_project_locate_from_id (int prj_id);
 
 void		gtt_project_freeze (GttProject *prj);
 void		gtt_project_thaw (GttProject *prj);
-void		gtt_interval_freeze (GttInterval *prj);
-void		gtt_interval_thaw (GttInterval *prj);
+void		gtt_task_freeze (GttTask *tsk);
+void		gtt_task_thaw (GttTask *tsk);
+void		gtt_interval_freeze (GttInterval *ivl);
+void		gtt_interval_thaw (GttInterval *ivl);
 
 void		gtt_project_add_notifier (GttProject *,
 			GttProjectChanged, gpointer);
