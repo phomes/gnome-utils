@@ -126,6 +126,16 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 }
 
 /* ============================================================== */
+/* html events */
+
+static void
+html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data) 
+{
+	printf ("clicked on link duude=%s\n", url);
+}
+
+
+/* ============================================================== */
 
 void
 edit_journal(GtkWidget *widget, gpointer data)
@@ -145,8 +155,10 @@ edit_journal(GtkWidget *widget, gpointer data)
 	jnl_top = glade_xml_get_widget (glxml, "Journal Window");
 	jnl_viewport = glade_xml_get_widget (glxml, "Journal ScrollWin");
 
+	/* ---------------------------------------------------- */
 	/* create browser, plug it into the viewport */
 	jnl_browser = gtk_html_new();
+
 
 	/* FIXME hack alert -- scroled window add causes a hard crash
 	 * #0  0x40260ea5 in gtk_layout_get_type () from /usr/lib/libgtk-1.2.so.0
@@ -159,6 +171,7 @@ edit_journal(GtkWidget *widget, gpointer data)
 	*/
 	gtk_container_add(GTK_CONTAINER(jnl_viewport), jnl_browser);
 
+	/* ---------------------------------------------------- */
 	wig = g_new0 (Wiggy, 1);
 	wig->top = jnl_top;
 	wig->htmlw = GTK_HTML(jnl_browser);
@@ -176,6 +189,9 @@ edit_journal(GtkWidget *widget, gpointer data)
 	glade_xml_signal_connect_data (glxml, "on_print_clicked",
 	        GTK_SIGNAL_FUNC (on_print_clicked_cb), wig);
 	  
+	gtk_signal_connect(jnl_browser, "link_clicked",
+		GTK_SIGNAL_FUNC(html_link_clicked_cb), wig);
+
 
 	gtk_widget_show (jnl_browser);
 	gtk_widget_show (jnl_top);

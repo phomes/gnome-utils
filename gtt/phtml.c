@@ -43,24 +43,28 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 
 	for (node = gtt_project_get_tasks(prj); node; node=node->next)
 	{
+		char prn[232], *p;
 		int prt_date = 1;
 		time_t prev_stop = 0;
 		GList *in;
 		GttTask *tsk = node->data;
 		
-		buf = "<tr><td colspan=4>";
-		(phtml->write_stream) (phtml, buf, strlen(buf));
+		p = prn;
+		p = stpcpy (p, "<tr><td colspan=4>"
+			"<a href=\"gtt://bogus\">");
 
 		buf = gtt_task_get_memo(tsk);
 		buf = buf? buf : _("(null)");
-		(phtml->write_stream) (phtml, buf, strlen(buf));
+		p = stpcpy (p, buf);
+		p = stpcpy (p, "</a>");
+
+		(phtml->write_stream) (phtml, prn, p-prn);
 
 		
 		for (in=gtt_task_get_intervals(tsk); in; in=in->next)
 		{
 			size_t len;
 			GttInterval *ivl = in->data;
-			char prn[232], *p;
 			time_t start, stop, elapsed;
 			start = gtt_interval_get_start (ivl);
 			stop = gtt_interval_get_stop (ivl);
