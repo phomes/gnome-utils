@@ -2,6 +2,7 @@
 %define  ver      @VERSION@
 %define  RELEASE  1
 %define  rel      %{?CUSTOM_RELEASE} %{!?CUSTOM_RELEASE:%RELEASE}
+%define  localstatedir /var/lib
 
 Summary: 	GNOME utility programs
 Name: 		gnome-utils
@@ -10,7 +11,7 @@ Release: 	%rel
 Copyright: 	LGPL
 Group: 		Applications/System
 Source: 	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gnome-utils-%{ver}.tar.gz
-BuildRoot: 	/var/tmp/gnome-utils-%{PACKAGE_VERSION}-root
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 URL: 		http://www.gnome.org
 Requires: 	gnome-libs >= 1.0.59
 BuildRequires:  gnome-libs-devel >= 1.0.59, ORBit, gnome-core-devel
@@ -91,6 +92,9 @@ if which scrollkeeper-update>/dev/null 2>&1; then scrollkeeper-update; fi
 
 
 %changelog
+* Wed Jun 26 2002 <glynn.foster@sun.com>
+- Fixes from Dean Scott #55847
+
 * Sat Oct 20 2001 <jirka@5z.com>
 - Fixes to the damn %files thing
 
