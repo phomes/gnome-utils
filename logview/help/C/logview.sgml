@@ -182,6 +182,15 @@ simultaneously as you want, but only one log appears in the
 <application>logview</application> window at a time. 
 </para>
 
+<figure>
+ <title>Logview</title>
+ <screenshot>
+  <screeninfo>Logview</screeninfo>
+  <graphic format="png" fileref="figures/openLog" srccredit="Bill Day">
+  </graphic>
+ </screenshot>
+</figure>
+
 <para>
 To display each open log in turn, press the <keysym>+</keysym> key to
 	scroll forwards through your logs in the order that you
@@ -201,7 +210,16 @@ To display each open log in turn, press the <keysym>+</keysym> key to
       <variablelist>
 	<varlistentry> 
           <term><guimenu>File</guimenu></term>
-            <listitem>
+	      <listitem>
+           <figure>
+	      <title>File Menu</title>
+	      <screenshot>
+		<screeninfo>The File Menu</screeninfo>
+		<graphic format="png" fileref="figures/fileMenu" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+      
               <para>
                  This menu contains the following commands:
               </para>  
@@ -215,6 +233,7 @@ To display each open log in turn, press the <keysym>+</keysym> key to
 	         <interface>Open new logfile</interface> dialog for
 	         you to select a log to open.
                 </para>
+
                 <para>
 		<menuchoice>
 	         <guimenuitem>Export log</guimenuitem>
@@ -263,6 +282,15 @@ To display each open log in turn, press the <keysym>+</keysym> key to
 	<varlistentry>
 	  <term><guimenu>View</guimenu></term>
           <listitem>
+	    <figure>
+	      <title>View Menu</title>
+	      <screenshot>
+		<screeninfo>The View Menu</screeninfo>
+		<graphic format="png" fileref="figures/viewMenu" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+
 	    <para>
               This menu contains the following commands:
             </para>
@@ -309,6 +337,15 @@ To display each open log in turn, press the <keysym>+</keysym> key to
 	<varlistentry>
 	    <term><guimenu>Help</guimenu></term>
 	      <listitem>
+	    <figure>
+	      <title>File Menu</title>
+	      <screenshot>
+		<screeninfo>The File Menu</screeninfo>
+		<graphic format="png" fileref="figures/helpMenu" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+
                  <para>
                    This menu contains the commands:
                  </para>
@@ -337,6 +374,16 @@ To display each open log in turn, press the <keysym>+</keysym> key to
     <para>
       Logview comes with a few tools to help you make use of your logs.
     </para>
+	    <figure>
+	      <title>Calendar</title>
+	      <screenshot>
+		<screeninfo>Calendar</screeninfo>
+		<graphic format="png" fileref="figures/calendar" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+
+
   
     <para>
       The Calendar displays a monthly calendar, with dates that have log
@@ -344,12 +391,35 @@ To display each open log in turn, press the <keysym>+</keysym> key to
       calendar to display the log entries for that date.
     </para>
 
+            <figure>
+	      <title>Logstats</title>
+	      <screenshot>
+		<screeninfo>Logstats</screeninfo>
+		<graphic format="png" fileref="figures/logstats" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+
+
+
+
     <para>
       The logstats tool displays basic statistics about the log, including
       the log full pathname, the size of the log file in bytes, the date
       the log was last modified, the date the log was started, the date of
       the most recent log entry and the number of lines in the log.
     </para>
+
+            <figure>
+	      <title>Zoom</title>
+	      <screenshot>
+		<screeninfo>Zoom</screeninfo>
+		<graphic format="png" fileref="figures/zoom" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+
+
 
     <para>
       Zoom opens a window with detailed information on the selected log
@@ -378,6 +448,18 @@ To display each open log in turn, press the <keysym>+</keysym> key to
 	<guimenuitem>Monitor</guimenuitem>. Select the log(s) to monitor from
 	the <interface>Monitor options</interface> dialog box and click <guimenuitem>Add</guimenuitem>. 
       </para>
+
+            <figure>
+	      <title>Monitor Options Dialog Box</title>
+	      <screenshot>
+		<screeninfo>Monitor Options Dialog Box</screeninfo>
+		<graphic format="png" fileref="figures/monitor" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+
+
+
       <note>
 	<title>NOTE</title>
 	<para>
@@ -394,6 +476,19 @@ To display each open log in turn, press the <keysym>+</keysym> key to
 	one log is displayed at a time. The other monitored logs are displayed
 	as tabs in the monitor window.
       </para>
+
+   <figure>
+	      <title>Monitor Window</title>
+	      <screenshot>
+		<screeninfo>Monitor Window</screeninfo>
+		<graphic format="png" fileref="figures/monitorDisplay" srccredit="Bill Day">
+                </graphic>
+	      </screenshot>
+	    </figure>
+
+
+
+
     </sect2>
   </sect1>
   
