@@ -30,7 +30,7 @@ DIST_SUBDIRS = po intl macros idl gfloppy logview gcharmap \
 	gtt cromagnon mini-utils splash gdialog \
 	meat-grinder exe-handler omf-install
 
-EXTRA_DIST = gnome-utils.spec.in
+EXTRA_DIST = autogen.sh gnome-utils.spec.in
 
 dist-hook: gnome-utils.spec
 	cp gnome-utils.spec $(distdir)
