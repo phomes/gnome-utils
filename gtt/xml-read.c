@@ -157,10 +157,10 @@ parse_interval (xmlNodePtr interval)
 	ivl = gtt_interval_new ();
 	for (node=interval->childs; node; node=node->next)
 	{
-		GET_TIM (ivl, gtt_interval_set_start, "start");
-		GET_TIM (ivl, gtt_interval_set_stop, "stop");
-		GET_TIM (ivl, gtt_interval_set_fuzz, "fuzz");
-		GET_BOL (ivl, gtt_interval_set_running, "running");
+		GET_TIM (ivl, gtt_interval_set_start, "start")
+		GET_TIM (ivl, gtt_interval_set_stop, "stop")
+		GET_TIM (ivl, gtt_interval_set_fuzz, "fuzz")
+		GET_BOL (ivl, gtt_interval_set_running, "running")
 		{ 
 			gtt_err_set_code (GTT_UNKNOWN_TOKEN);
 		}
@@ -184,16 +184,16 @@ parse_task (xmlNodePtr task)
 	tsk = gtt_task_new ();
 	for (node=task->childs; node; node=node->next)
 	{
-		GET_STR (tsk, gtt_task_set_memo, "memo");
-		GET_STR (tsk, gtt_task_set_notes, "notes");
-		GET_INT (tsk, gtt_task_set_bill_unit, "bill_unit");
+		GET_STR (tsk, gtt_task_set_memo, "memo")
+		GET_STR (tsk, gtt_task_set_notes, "notes")
+		GET_INT (tsk, gtt_task_set_bill_unit, "bill_unit")
 
 		GET_ENUM_3 (tsk, gtt_task_set_billable, "billable", 
-			NOT_BILLABLE, BILLABLE, NO_CHARGE);
+			NOT_BILLABLE, BILLABLE, NO_CHARGE)
 		GET_ENUM_3 (tsk, gtt_task_set_billstatus, "billstatus", 
-			HOLD, BILL, PAID);
+			HOLD, BILL, PAID)
 		GET_ENUM_4 (tsk, gtt_task_set_billrate, "billrate", 
-			REGULAR, OVERTIME, OVEROVER, FLAT_FEE);
+			REGULAR, OVERTIME, OVEROVER, FLAT_FEE)
 		if (0 == strcmp ("interval-list", node->name))
 		{
 			xmlNodePtr tn;
@@ -230,34 +230,34 @@ parse_project (xmlNodePtr project)
 	gtt_project_freeze (prj);
 	for (node=project->childs; node; node=node->next)
 	{
-		GET_STR (prj, gtt_project_set_title, "title");
-		GET_STR (prj, gtt_project_set_desc, "desc");
-		GET_STR (prj, gtt_project_set_notes, "notes");
-		GET_STR (prj, gtt_project_set_custid, "custid");
+		GET_STR (prj, gtt_project_set_title, "title")
+		GET_STR (prj, gtt_project_set_desc, "desc")
+		GET_STR (prj, gtt_project_set_notes, "notes")
+		GET_STR (prj, gtt_project_set_custid, "custid")
 
-		GET_DBL (prj, gtt_project_set_billrate, "billrate");
-		GET_DBL (prj, gtt_project_set_overtime_rate, "overtime_rate");
-		GET_DBL (prj, gtt_project_set_overover_rate, "overover_rate");
-		GET_DBL (prj, gtt_project_set_flat_fee, "flat_fee");
+		GET_DBL (prj, gtt_project_set_billrate, "billrate")
+		GET_DBL (prj, gtt_project_set_overtime_rate, "overtime_rate")
+		GET_DBL (prj, gtt_project_set_overover_rate, "overover_rate")
+		GET_DBL (prj, gtt_project_set_flat_fee, "flat_fee")
 
-		GET_INT (prj, gtt_project_set_min_interval, "min_interval");
-		GET_INT (prj, gtt_project_set_auto_merge_interval, "auto_merge_interval");
-		GET_INT (prj, gtt_project_set_auto_merge_gap, "auto_merge_gap");
+		GET_INT (prj, gtt_project_set_min_interval, "min_interval")
+		GET_INT (prj, gtt_project_set_auto_merge_interval, "auto_merge_interval")
+		GET_INT (prj, gtt_project_set_auto_merge_gap, "auto_merge_gap")
 
-		GET_INT (prj, gtt_project_set_id, "id");
+		GET_INT (prj, gtt_project_set_id, "id")
 
-		GET_TIM (prj, gtt_project_set_estimated_start, "estimated_start");
-		GET_TIM (prj, gtt_project_set_estimated_end, "estimated_end");
-		GET_TIM (prj, gtt_project_set_due_date, "due_date");
-		GET_INT (prj, gtt_project_set_sizing, "sizing");
-		GET_INT (prj, gtt_project_set_percent_complete, "percent_complete");
+		GET_TIM (prj, gtt_project_set_estimated_start, "estimated_start")
+		GET_TIM (prj, gtt_project_set_estimated_end, "estimated_end")
+		GET_TIM (prj, gtt_project_set_due_date, "due_date")
+		GET_INT (prj, gtt_project_set_sizing, "sizing")
+		GET_INT (prj, gtt_project_set_percent_complete, "percent_complete")
 
 		GET_ENUM_4 (prj, gtt_project_set_urgency, "urgency",
-			UNDEFINED, LOW, MEDIUM, HIGH);
+			UNDEFINED, LOW, MEDIUM, HIGH)
 		GET_ENUM_4 (prj, gtt_project_set_importance, "importance",
-			UNDEFINED, LOW, MEDIUM, HIGH);
+			UNDEFINED, LOW, MEDIUM, HIGH)
 		GET_ENUM_5 (prj, gtt_project_set_status, "status",
-			NOT_STARTED, IN_PROGRESS, ON_HOLD, CANCELLED, COMPLETED);
+			NOT_STARTED, IN_PROGRESS, ON_HOLD, CANCELLED, COMPLETED)
 
 		if (0 == strcmp ("task-list", node->name))
 		{
@@ -282,7 +282,7 @@ parse_project (xmlNodePtr project)
 		} 
 		else
 		{ 
-			g_warning ("unexpected node %s\n", node->name);
+			g_warning ("unexpected node %s", node->name);
 			gtt_err_set_code (GTT_UNKNOWN_TOKEN);
 		}
 	}
