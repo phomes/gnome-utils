@@ -37,6 +37,7 @@ typedef struct wiggy_s {
 	GtkHTMLStream *handle;
 	GtkWidget *top;
 	GtkWidget *interval_popup;
+	GttInterval *interval;
 } Wiggy;
 
 /* ============================================================== */
@@ -120,6 +121,9 @@ static void
 on_close_clicked_cb (GtkWidget *w, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
+
+	/* close the main journal window ... everything */
+	gtk_widget_destroy( wig->interval_popup);
 	gtk_widget_destroy( wig->top);
 	g_free (wig);
 }
@@ -128,13 +132,39 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 /* interval edits */
 
 static void
-interval_popup_cb (Wiggy *wig, gpointer data)
+interval_edit_clicked_cb(GtkWidget * w, gpointer data) 
 {
-printf ("duude innvreral=%d\n", data);
-{GttInterval *ivl=data; 
-time_t t=gtt_interval_get_start(ivl);
-printf("duude its %s",ctime(&t));
+	Wiggy *wig = (Wiggy *) data;
+	printf ("duude edit interval\n");
 }
+
+static void
+interval_delete_clicked_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	printf ("duude delete interval\n");
+	gtt_phtml_display (&(wig->ph), "journal.phtml");
+}
+
+static void
+interval_merge_up_clicked_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	printf ("duude merge up interval\n");
+	gtt_phtml_display (&(wig->ph), "journal.phtml");
+}
+
+static void
+interval_merge_down_clicked_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	printf ("duude merge down interval\n");
+	gtt_phtml_display (&(wig->ph), "journal.phtml");
+}
+
+static void
+interval_popup_cb (Wiggy *wig)
+{
 	gtk_menu_popup(GTK_MENU(wig->interval_popup), 
 		NULL, NULL, NULL, wig, 1, 0);
 }
@@ -146,16 +176,20 @@ static void
 html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
+	gpointer addr = NULL;
+	char *str;
+
+	/* decode the address buried in the URL (if its there) */
+	str = strstr (url, "0x");
+	if (str)
+	{
+		addr = (gpointer) strtoul (str, NULL, 16);
+	}
 
 	if (0 == strncmp (url, "gtt:interval", 12))
 	{
-		char *str = strstr (url+12, "0x");
-		if (str)
-		{
-			gpointer data;
-			data = strtoul (str, NULL, 16);
-			interval_popup_cb (wig, data);
-		}
+		wig->interval = addr;
+		if (addr) interval_popup_cb (wig);
 	}
 	else
 	if (0 == strncmp (url, "gtt:memo", 8))
@@ -171,7 +205,7 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 static void
 html_on_url_cb(GtkHTML * html, const gchar * url, gpointer data) 
 {
-	printf ("on the url duude=%s\n", url);
+	printf ("hover over the url show hover help duude=%s\n", url);
 }
 
 
@@ -212,6 +246,8 @@ edit_journal(GtkWidget *widget, gpointer data)
 	gtk_container_add(GTK_CONTAINER(jnl_viewport), jnl_browser);
 
 	/* ---------------------------------------------------- */
+	/* signals for the browser, and the sjournal window */
+
 	wig = g_new0 (Wiggy, 1);
 	wig->top = jnl_top;
 	wig->htmlw = GTK_HTML(jnl_browser);
@@ -239,8 +275,29 @@ edit_journal(GtkWidget *widget, gpointer data)
 	gtk_widget_show (jnl_browser);
 	gtk_widget_show (jnl_top);
 
+	/* ---------------------------------------------------- */
+	/* this is the popup menu that says 'edit/delete/merge' */
+	/* for intervals */
+
 	glxml = glade_xml_new ("glade/interval_popup.glade", "Interval Popup");
 	wig->interval_popup = glade_xml_get_widget (glxml, "Interval Popup");
+	wig->interval=NULL;
+
+	glade_xml_signal_connect_data (glxml, "on_edit_activate",
+	        GTK_SIGNAL_FUNC (interval_edit_clicked_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_delete_activate",
+	        GTK_SIGNAL_FUNC (interval_delete_clicked_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_merg_up_activate",
+	        GTK_SIGNAL_FUNC (interval_merge_up_clicked_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_merg_down_activate",
+	        GTK_SIGNAL_FUNC (interval_merge_down_clicked_cb), wig);
+	  
+
+	/* ---------------------------------------------------- */
+	/* finally ... display the actual journal */
 
 	if (!cur_proj)
 	{
