@@ -8,9 +8,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.2.1\n"
-"POT-Creation-Date: 2003-05-24 12:39+0100\n"
-"PO-Revision-Date: 2003-04-19 08:20+0200\n"
+"Project-Id-Version: gnome-utils 2.2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-05-31 15:41+0200\n"
+"PO-Revision-Date: 2003-05-31 15:36+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -1439,11 +1440,11 @@ msgstr "Définit le texte de « le fichier est nommé »"
 
 #: gsearchtool/gsearchtool.c:594
 msgid "Set the text of 'look in folder'"
-msgstr "Définit le texte de « rechercher dans le répertoire »"
+msgstr "Définit le texte de « rechercher dans le dossier »"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Tri les fichiers suivant : nom, répertoire, taille, type, ou date"
+msgstr "Tri les fichiers suivant : nom, dossier, taille, type, ou date"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
@@ -1534,7 +1535,7 @@ msgstr "Nom"
 
 #: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
-msgstr "Répertoire"
+msgstr "Dossier"
 
 #: gsearchtool/gsearchtool.c:1334
 msgid "Size"
@@ -1562,7 +1563,7 @@ msgstr "Saisissez le nom du fichier que vous voulez rechercher"
 
 #: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
-msgstr "_Rechercher dans le répertoire :"
+msgstr "_Rechercher dans le dossier :"
 
 #: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
@@ -1570,12 +1571,12 @@ msgstr "Parcourir"
 
 #: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
-msgstr "Entrée de répertoire de démarrage"
+msgstr "Entrée de dossier de démarrage"
 
 #: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr ""
-"Saisissez le nom du répertoire dans lequel vous voulez démarrer la recherche"
+"Saisissez le nom du dossier dans lequel vous voulez démarrer la recherche"
 
 #: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
@@ -1599,7 +1600,7 @@ msgstr "_Ouvrir"
 
 #: gsearchtool/gsearchtool-callbacks.c:49
 msgid "O_pen Folder"
-msgstr "Ouvrir le _répertoire"
+msgstr "Ouvrir le _dossier"
 
 #: gsearchtool/gsearchtool-callbacks.c:54
 msgid "_Save Results As..."
@@ -1639,12 +1640,12 @@ msgstr "Ne peut afficher l'emplacement"
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr ""
-"Cela ouvrira %d répertoires séparés. Êtes-vous sûr de vouloir faire cela ?"
+"Cela ouvrira %d dossiers séparés. Êtes-vous sûr de vouloir faire cela ?"
 
 #: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
 msgid "Open %d Folders?"
-msgstr "Ouvrir %d répertoires ?"
+msgstr "Ouvrir %d dossiers ?"
 
 #: gsearchtool/gsearchtool-callbacks.c:435
 msgid "The nautilus file manager is not running."
@@ -1662,14 +1663,14 @@ msgid ""
 "\"%s\" is a folder."
 msgstr ""
 "Ne peut enregistrer le résultat de la recherche.\n"
-"« %s » est un répertoire."
+"« %s » est un dossier."
 
 #: gsearchtool/gsearchtool-callbacks.c:789
 #, c-format
 msgid "File \"%s\" already exists. Overwrite?"
 msgstr "Le fichier « %s » existe déjà. L'écraser ?"
 
-#: gsearchtool/gsearchtool-callbacks.c:826
+#: gsearchtool/gsearchtool-callbacks.c:828
 #, c-format
 msgid "Cannot save search results to the file \"%s\"."
 msgstr "Ne peut enregistrer le résultat de la recherche dans le fichier « %s »"
@@ -2258,8 +2259,8 @@ msgstr ""
 #~ "No files or folders, drop files or folders\n"
 #~ "above to add them to the archive"
 #~ msgstr ""
-#~ "Aucun fichiers ou répertoires. déposez des fichiers\n"
-#~ "ou répertoires au-dessus pour les ajouter à l'archive"
+#~ "Aucun fichiers ou dossiers. déposez des fichiers\n"
+#~ "ou dossiers au-dessus pour les ajouter à l'archive"
 
 #~ msgid "%s removed"
 #~ msgstr "%s enlevé"
@@ -2304,13 +2305,13 @@ msgstr ""
 #~ msgstr "Le fichier n'existe pas"
 
 #~ msgid "Add file or folder"
-#~ msgstr "Ajouter un fichier ou un répertoire"
+#~ msgstr "Ajouter un fichier ou un dossier"
 
 #~ msgid "_Add file or folder..."
-#~ msgstr "A_jouter un fichier ou un répertoire..."
+#~ msgstr "A_jouter un fichier ou un dossier..."
 
 #~ msgid "Add a file or folder to archive"
-#~ msgstr "Ajoute un fichier ou un répertoire à l'archive"
+#~ msgstr "Ajoute un fichier ou un dossier à l'archive"
 
 #~ msgid "_Create archive..."
 #~ msgstr "_Créer une archive..."
