@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.2.0.3\n"
-"POT-Creation-Date: 2003-02-12 14:03+0200\n"
+"POT-Creation-Date: 2003-03-13 10:21+0000\n"
 "PO-Revision-Date: 2003-02-12 03:11--500\n"
 "Last-Translator: Yuriy Syrota <yuri@renome.rovno.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 #: exe-handler/gnome-exe-handler.c:76
 #, c-format
 msgid ""
-"Executing arbitrary programs that you downloaded from the network might be dangerous.\n"
+"Executing arbitrary programs that you downloaded from the network might be "
+"dangerous.\n"
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
@@ -62,22 +63,24 @@ msgstr "Це бібліотека, і тому не може бути викон
 msgid "The file is a core file and can not be executed"
 msgstr "Це файл core, і тому не може бути виконаний"
 
-#: exe-handler/gnome-exe-handler.c:162
-#: exe-handler/gnome-exe-handler.c:196
+#: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
 msgstr "Невідомий тип виконавчого файла"
 
 #: exe-handler/gnome-exe-handler.c:192
-msgid "The executable is for a different platform and can not be executed on this system"
-msgstr "Виконуваний файл призначений для іншої платформи і тому не може виконуватись на цій системі"
+msgid ""
+"The executable is for a different platform and can not be executed on this "
+"system"
+msgstr ""
+"Виконуваний файл призначений для іншої платформи і тому не може виконуватись "
+"на цій системі"
 
 #. Translator credits
-#: gcalc/gcalc.c:42
-#: gcharmap/src/callbacks.c:46
-#: gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: logview/about.c:52
 msgid "translator_credits"
-msgstr "Юрій Сирота <yuriy@beer.com>\n"
+msgstr ""
+"Юрій Сирота <yuriy@beer.com>\n"
 "Максим Дзюманенко <mvd@mylinux.com.ua>"
 
 #: gcalc/gcalc.c:60
@@ -96,8 +99,7 @@ msgstr "Простий калькулятор подібний до xcalc"
 msgid "_Calculator"
 msgstr "_Калькулятор"
 
-#: gcalc/gcalc.c:191
-#: gcalc/gnome-calculator.desktop.in.h:1
+#: gcalc/gcalc.c:191 gcalc/gnome-calculator.desktop.in.h:1
 msgid "Calculator"
 msgstr "Калькулятор"
 
@@ -280,9 +282,11 @@ msgid "STO"
 msgstr "ЗАП"
 
 #: gcalc/gnome-calc.c:1281
-msgid "Store the value in the\n"
+msgid ""
+"Store the value in the\n"
 "display field in memory"
-msgstr "Запам'ятати значення\n"
+msgstr ""
+"Запам'ятати значення\n"
 "дисплея у пам'яті"
 
 #: gcalc/gnome-calc.c:1282
@@ -297,8 +301,7 @@ msgstr "8"
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285
-#: gfloppy/src/gfloppy2.glade.h:2
+#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:2
 msgid "*"
 msgstr "*"
 
@@ -311,9 +314,11 @@ msgid "RCL"
 msgstr "ВИК"
 
 #: gcalc/gnome-calc.c:1287
-msgid "Display the value in memory\n"
+msgid ""
+"Display the value in memory\n"
 "in the display field"
-msgstr "Викликати значення з\n"
+msgstr ""
+"Викликати значення з\n"
 "пам'яті на дисплей"
 
 #: gcalc/gnome-calc.c:1288
@@ -341,9 +346,11 @@ msgid "SUM"
 msgstr "СУМ"
 
 #: gcalc/gnome-calc.c:1293
-msgid "Add the value in the display\n"
+msgid ""
+"Add the value in the display\n"
 "field to the value in memory"
-msgstr "Додати значення дисплея\n"
+msgstr ""
+"Додати значення дисплея\n"
 "до значення у пам'яті"
 
 #: gcalc/gnome-calc.c:1294
@@ -371,9 +378,11 @@ msgid "EXC"
 msgstr "ОБМ"
 
 #: gcalc/gnome-calc.c:1299
-msgid "Exchange the values in the\n"
+msgid ""
+"Exchange the values in the\n"
 "display field and memory"
-msgstr "Обміняти значення дисплея\n"
+msgstr ""
+"Обміняти значення дисплея\n"
 "та у пам'яті"
 
 #: gcalc/gnome-calc.c:1300
@@ -408,8 +417,7 @@ msgstr "Обрахувати"
 msgid "Perform simple calculations"
 msgstr "Здійснення простих обрахунків"
 
-#: gcharmap/gnome-character-map.desktop.in.h:1
-#: gcharmap/src/interface.c:160
+#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:159
 msgid "Character Map"
 msgstr "Мапа символів"
 
@@ -454,11 +462,11 @@ msgid "GNOME Character Map"
 msgstr "Мапа символів"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Вибирання, копіювання та вставляння символів з шрифту у інші програми"
 
-#: gcharmap/src/callbacks.c:130
-#: gcharmap/src/callbacks.c:138
+#: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
 #, c-format
 msgid "Character code: (Unicode) U%04lX"
 msgstr "Код символу: (Юнікод) U%04lX"
@@ -480,43 +488,41 @@ msgstr "Текст вирізано у кишеню..."
 msgid "Text pasted from clipboard..."
 msgstr "Текст вставлений з кишені..."
 
-#: gcharmap/src/interface.c:190
+#: gcharmap/src/interface.c:189
 msgid "Action Toolbar"
 msgstr "Панель дій"
 
-#: gcharmap/src/interface.c:194
+#: gcharmap/src/interface.c:193
 msgid "_Font:"
 msgstr "_Шрифт:"
 
 #. The page selector
-#: gcharmap/src/interface.c:210
+#: gcharmap/src/interface.c:209
 msgid "_Page:"
 msgstr "_Сторінка:"
 
 #. end of page selector
-#: gcharmap/src/interface.c:225
+#: gcharmap/src/interface.c:224
 msgid "_Text to copy:"
 msgstr "_Текст для копіювання:"
 
-#: gcharmap/src/interface.c:240
+#: gcharmap/src/interface.c:239
 msgid "_Copy"
 msgstr "С_копіювати"
 
-#: gcharmap/src/interface.c:262
-#: gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:263 gcharmap/src/interface.c:264
 msgid "Text to copy"
 msgstr "Текст для копіювання"
 
-#: gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:264
 msgid "Entry"
 msgstr "Елемент"
 
-#: gcharmap/src/interface.c:264
-#: gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:265 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Копіювати"
 
-#: gcharmap/src/interface.c:264
+#: gcharmap/src/interface.c:265
 msgid "Copy the text"
 msgstr "Скопіювати текст"
 
@@ -575,8 +581,7 @@ msgstr "Введіть текст"
 msgid "Accessories"
 msgstr "Допоміжні"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2
-#: gdictsrc/gdict-applet.c:270
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Пошук в словнику"
 
@@ -608,16 +613,18 @@ msgstr "По_казати/прибрати вікно визначення..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648
-#: gdictsrc/gdict-pref-dialog.c:466
-#: gdictsrc/gdict-pref-dialog.c:517
-#: gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Неможливо з'єднатися з словниковим сервером"
 
 #: gdictsrc/dict.c:661
-msgid "A serious error occured. Please check that your server and port are correct. For reference the default server is dict.org and the port 2628"
-msgstr "Сталася серйозна помилка. Перевірте що ви правильно вказали сервер та порт.Типові значення: сервер - dict.org, порт - 2628"
+msgid ""
+"A serious error occured. Please check that your server and port are correct. "
+"For reference the default server is dict.org and the port 2628"
+msgstr ""
+"Сталася серйозна помилка. Перевірте що ви правильно вказали сервер та порт."
+"Типові значення: сервер - dict.org, порт - 2628"
 
 #: gdictsrc/gdict-about.c:56
 msgid "GNOME Dictionary"
@@ -639,8 +646,7 @@ msgstr "Перевірка орфоргафії..."
 msgid "Spell check done"
 msgstr "Перевірку орфографії завершено"
 
-#: gdictsrc/gdict-app.c:144
-#: gdictsrc/gdict-app.c:288
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Не знайдено відповідників"
 
@@ -674,8 +680,7 @@ msgstr ""
 "ви використовуєте вимкнено, або тому що ви не під'єднані в\n"
 "Інтернет."
 
-#: gdictsrc/gdict-app.c:701
-#: gdictsrc/gdict-app.c:812
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "По_шук слова"
@@ -684,8 +689,7 @@ msgstr "По_шук слова"
 msgid "Lookup word in dictionary"
 msgstr "Пошук слова в словнику"
 
-#: gdictsrc/gdict-app.c:704
-#: gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "Перевірка _орфографії"
 
@@ -697,8 +701,7 @@ msgstr "Перевірка орфографії"
 msgid "_Dictionary"
 msgstr "_Словник"
 
-#: gdictsrc/gdict-app.c:785
-#: gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Словник"
 
@@ -706,13 +709,11 @@ msgstr "Словник"
 msgid "_Word: "
 msgstr "С_лово:"
 
-#: gdictsrc/gdict-app.c:836
-#: gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Слово"
 
-#: gdictsrc/gdict-app.c:837
-#: gdictsrc/gdict-app.c:838
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Поле слова"
@@ -729,8 +730,7 @@ msgstr "Знайти слово"
 msgid "_Lookup"
 msgstr "_Шукати"
 
-#: gdictsrc/gdict-defbox.c:643
-#: gdictsrc/gdict-speller.c:488
+#: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "Помилка виклику запиту: %s"
@@ -884,20 +884,32 @@ msgid "Port used to connect to server"
 msgstr "Порт для з'єднання з словниковим сервером"
 
 #: gdictsrc/gdict.schemas.in.h:3
-msgid "Specify whether to use smart lookup. This key is dependant on whether the dictionary server supports this option. The default is TRUE"
-msgstr "Визначає чи використовувати розумний пошук. Цей ключ залежить від того, чи підтримує сервер цю можливість. Типове значення TRUE"
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+"Визначає чи використовувати розумний пошук. Цей ключ залежить від того, чи "
+"підтримує сервер цю можливість. Типове значення TRUE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
 msgstr "База даних, що використовується сервером."
 
 #: gdictsrc/gdict.schemas.in.h:5
-msgid "The dictionary server to connect to. The default server is dict.org. See http://www.dict.org for details on other servers"
-msgstr "До якого словникового сервера під'єднуватись. Типово це сервер на dict.org. Докладніше про інші сервери дивіться на http://www.dict.org."
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+"До якого словникового сервера під'єднуватись. Типово це сервер на dict.org. "
+"Докладніше про інші сервери дивіться на http://www.dict.org."
 
 #: gdictsrc/gdict.schemas.in.h:6
-msgid "The name of the individual database to use in the dictionary server. ! specifies that gnome-dictionary should search all databases in a given server"
-msgstr "Назва окремої бази даних на словниковому сервері. ! вказує, що словник Gnome повинен шукати у всіх базах даних сервера"
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+"Назва окремої бази даних на словниковому сервері. ! вказує, що словник Gnome "
+"повинен шукати у всіх базах даних сервера"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -908,8 +920,14 @@ msgid "The search strategy to use"
 msgstr "Яка використовуватиметься стратегія пошуку"
 
 #: gdictsrc/gdict.schemas.in.h:9
-msgid "The search strategy to use. This is dependant on the search strategy that the dictionary server supports. The default strategy is 'lev' - Match words within Levenshtein distance one"
-msgstr "Яку стратегію пошуку використовувати. Це залежить від підтримуваної сервером стратегії пошуку. Типовою стратегією є 'lev' - відповідними є слова з відстанню Лівінштейна, що дорівнює одиниці."
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+"Яку стратегію пошуку використовувати. Це залежить від підтримуваної сервером "
+"стратегії пошуку. Типовою стратегією є 'lev' - відповідними є слова з "
+"відстанню Лівінштейна, що дорівнює одиниці."
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -943,8 +961,7 @@ msgstr "MПеревірка на дефектні блоки..."
 msgid "MFailed to open device %s for badblock checking\n"
 msgstr "MНе вдалося відкрити пристрій %s для перевірки на дефектні блоки\n"
 
-#: gfloppy/src/badblocks.c:301
-#: gfloppy/src/gfloppy.c:536
+#: gfloppy/src/badblocks.c:301 gfloppy/src/gfloppy.c:536
 msgid "MChecking for bad blocks... Done"
 msgstr "MПеревірка на дефектні блоки... Завершено"
 
@@ -956,8 +973,7 @@ msgstr "MФорматування диску..."
 msgid "EI don't know what this is, but it's very wrong."
 msgstr "EНе відомо, що це таке, але це дуже погано."
 
-#: gfloppy/src/fdformat.c:54
-#: gfloppy/src/fdformat.c:66
+#: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
 #, c-format
 msgid "EError formatting track #%d"
 msgstr "EПомилка форматування доріжки #%d"
@@ -976,8 +992,7 @@ msgstr "MФорматування дискети... Завершено"
 msgid "MVerifying the format..."
 msgstr "MПеревірка форматування..."
 
-#: gfloppy/src/fdformat.c:99
-#: gfloppy/src/fdformat.c:174
+#: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
 msgid ""
 "EUnable to write to the floppy.\n"
 "\n"
@@ -987,14 +1002,12 @@ msgstr ""
 "\n"
 "Будь ласка, переконайтесь, що дискета не захищена від запису."
 
-#: gfloppy/src/fdformat.c:102
-#: gfloppy/src/fdformat.c:177
+#: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
 #, c-format
 msgid "EInsufficient permissions to open floppy device %s."
 msgstr "EНе вистачає прав доступу для відкривання пристрою дисковода %s."
 
-#: gfloppy/src/fdformat.c:106
-#: gfloppy/src/fdformat.c:181
+#: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
 msgid ""
 "EUnable to access the floppy disk.\n"
 "\n"
@@ -1018,9 +1031,11 @@ msgstr ""
 
 #: gfloppy/src/fdformat.c:129
 #, c-format
-msgid "ERead Error:\n"
+msgid ""
+"ERead Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
-msgstr "EПомилка зчитування:\n"
+msgstr ""
+"EПомилка зчитування:\n"
 "Проблема із зчитуванням циліндра %d, очікувалось %d, зчитано %d"
 
 #: gfloppy/src/fdformat.c:132
@@ -1064,7 +1079,9 @@ msgstr "EНе вдалося визначити поточну геометрі�
 
 #: gfloppy/src/gfloppy.c:229
 msgid "EError while creating a unique filename for the bad blocks list file."
-msgstr "EПомилка під час створення унікальної назви файла з переліком дефектних блоків."
+msgstr ""
+"EПомилка під час створення унікальної назви файла з переліком дефектних "
+"блоків."
 
 #: gfloppy/src/gfloppy.c:249
 msgid "EError while filling the bad blocks list file."
@@ -1101,9 +1118,13 @@ msgstr "EПомилка виконання команди mbadblocks: %s."
 
 #: gfloppy/src/gfloppy.c:400
 #, c-format
-msgid "EThe bad blocks checking utility (mbadblocks) reported the following errors:\n"
+msgid ""
+"EThe bad blocks checking utility (mbadblocks) reported the following "
+"errors:\n"
 "%s."
-msgstr "EПрограма перевірки дефектних блоків (mbadblocks) повідомляє про такі помилки:\n"
+msgstr ""
+"EПрограма перевірки дефектних блоків (mbadblocks) повідомляє про такі "
+"помилки:\n"
 "%s."
 
 #: gfloppy/src/gfloppy.c:443
@@ -1111,8 +1132,7 @@ msgid "EAbnormal mbadblocks child process termination."
 msgstr "EАварійне завершення породженого процесу mbadblocks."
 
 #. make the filesystem
-#: gfloppy/src/gfloppy.c:470
-#: gfloppy/src/gfloppy.c:510
+#: gfloppy/src/gfloppy.c:470 gfloppy/src/gfloppy.c:510
 msgid "MMaking filesystem on disk..."
 msgstr "MСтворення файлової системи на диску..."
 
@@ -1120,8 +1140,7 @@ msgstr "MСтворення файлової системи на диску..."
 msgid "EUnable to create filesystem correctly."
 msgstr "EНе вдалося створити файлову систему коректно."
 
-#: gfloppy/src/gfloppy.c:482
-#: gfloppy/src/gfloppy.c:522
+#: gfloppy/src/gfloppy.c:482 gfloppy/src/gfloppy.c:522
 msgid "MMaking filesystem on disk... Done"
 msgstr "MСтворення файлової системи на диску... Завершено"
 
@@ -1138,8 +1157,12 @@ msgid "    "
 msgstr "    "
 
 #: gfloppy/src/gfloppy2.glade.h:3
-msgid "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must be installed in order to make a thorough DOS (fat) formatting."
-msgstr "<b>Увага</b>: У вашій системі не встановлено програму mbadblocks. Її необхідно встановити, для повного DOS (fat) форматування."
+msgid ""
+"<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
+"be installed in order to make a thorough DOS (fat) formatting."
+msgstr ""
+"<b>Увага</b>: У вашій системі не встановлено програму mbadblocks. Її "
+"необхідно встановити, для повного DOS (fat) форматування."
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "<span weight=\"bold\">Filesystem settings</span>"
@@ -1214,36 +1237,44 @@ msgid "_Standard (adds a low-level format to the quick mode)"
 msgstr "_Стандартний (також виконується низького рівня форматування)"
 
 #: gfloppy/src/main.c:132
-msgid "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You can't format a floppy without one of them."
-msgstr "Не встановлено ані mke2fs, ані mkdosfs/mformat програм. Ви не можете форматувати дискети без хоча б однієї з них."
+msgid ""
+"Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
+"can't format a floppy without one of them."
+msgstr ""
+"Не встановлено ані mke2fs, ані mkdosfs/mformat програм. Ви не можете "
+"форматувати дискети без хоча б однієї з них."
 
-#: gfloppy/src/main.c:155
-#: gfloppy/src/main.c:199
+#: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "MНе вдалося відкрити пристрій %s, продовжити форматування неможливо."
 
-#: gfloppy/src/main.c:158
-#: gfloppy/src/main.c:202
+#: gfloppy/src/main.c:158 gfloppy/src/main.c:202
 #, c-format
-msgid "The device %s is disconnected.\n"
+msgid ""
+"The device %s is disconnected.\n"
 "Please attach device to continue."
-msgstr "Пристрій %s від'єднаний.\n"
+msgstr ""
+"Пристрій %s від'єднаний.\n"
 "Щоб продовжити, підключіть пристрій."
 
-#: gfloppy/src/main.c:161
-#: gfloppy/src/main.c:205
+#: gfloppy/src/main.c:161 gfloppy/src/main.c:205
 #, c-format
-msgid "You do not have the proper permissions to write to %s, formatting will not be possible.\n"
+msgid ""
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
 "Contact your system administrator about getting write permissions."
-msgstr "Ви не маєте належних прав для запису в %s, форматування неможливе.\n"
+msgstr ""
+"Ви не маєте належних прав для запису в %s, форматування неможливе.\n"
 "Щоб отримати права зв'яжіться з системним адміністратором."
 
 #: gfloppy/src/main.c:391
 #, c-format
-msgid "Could not display help for the floppy formatter.\n"
+msgid ""
+"Could not display help for the floppy formatter.\n"
 "%s"
-msgstr "Не вдається відобразити довідку.\n"
+msgstr ""
+"Не вдається відобразити довідку.\n"
 "%s"
 
 #: gfloppy/src/main.c:425
@@ -1260,8 +1291,12 @@ msgstr "ПРИСТРІЙ"
 
 #: gfloppy/src/progress.c:123
 #, c-format
-msgid "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have been found and marked."
-msgstr "Дискету було відформатовано, але було знайдено та відмічено <b>%d дефектних блоків</b> ( з %d)."
+msgid ""
+"The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
+"been found and marked."
+msgstr ""
+"Дискету було відформатовано, але було знайдено та відмічено <b>%d дефектних "
+"блоків</b> ( з %d)."
 
 #: gfloppy/src/progress.c:126
 msgid "Floppy formatted successfully."
@@ -1276,8 +1311,13 @@ msgid "Format progress"
 msgstr "Поступ форматування"
 
 #: gfloppy/gfloppy.schemas.in.h:1
-msgid "0 for the quick format, 1 for a standard one (adds a low-level format) and finally 2 for a thorough format (adds a bad blocks scan)."
-msgstr "0 - швидке форматування, 1 - стандартне (додається низького рівня форматування) та нарешті 2 - повне форматування (додається перевірка дефектних блоків)."
+msgid ""
+"0 for the quick format, 1 for a standard one (adds a low-level format) and "
+"finally 2 for a thorough format (adds a bad blocks scan)."
+msgstr ""
+"0 - швидке форматування, 1 - стандартне (додається низького рівня "
+"форматування) та нарешті 2 - повне форматування (додається перевірка "
+"дефектних блоків)."
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
@@ -1292,15 +1332,19 @@ msgid "Default formatting mode"
 msgstr "Типовий режим форматування"
 
 #: gfloppy/gfloppy.schemas.in.h:5
-msgid "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set mtools as the preferred FAT formatting backend."
-msgstr "TRUE якщо для форматування FAT використовуватиметься програма mkdosfs або FALSE якщо mtools."
+msgid ""
+"TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
+"mtools as the preferred FAT formatting backend."
+msgstr ""
+"TRUE якщо для форматування FAT використовуватиметься програма mkdosfs або "
+"FALSE якщо mtools."
 
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
-msgstr "\"ext2\" - рідна файлова система linux або \"fat\" - файлова система DOS."
+msgstr ""
+"\"ext2\" - рідна файлова система linux або \"fat\" - файлова система DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1
-#: gsearchtool/gsearchtool.c:1570
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
 msgid "Search for Files"
 msgstr "Пошук файлів"
 
@@ -1360,8 +1404,7 @@ msgstr "Дотримуватись символьних посилань"
 msgid "Include other filesystems"
 msgstr "Охоплювати інші файлові системи"
 
-#: gsearchtool/gsearchtool.c:398
-#: gsearchtool/gsearchtool.c:824
+#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:828
 msgid "No files found"
 msgstr "Файлів не знайдено"
 
@@ -1383,7 +1426,8 @@ msgstr "Сортувати файли по: name, folder, size, type, чи date"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr "Встановлює порядок сортування на низхідний, типовий порядок - висхідний"
+msgstr ""
+"Встановлює порядок сортування на низхідний, типовий порядок - висхідний"
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
@@ -1394,139 +1438,137 @@ msgstr "Автоматично починати пошук"
 msgid "Select the '%s' constraint"
 msgstr "Вибирає '%s' обмеження"
 
-#: gsearchtool/gsearchtool.c:686
+#: gsearchtool/gsearchtool.c:685
 msgid "Invalid option passed to sortby command line argument."
 msgstr "У аргументі sortby передано неправильний параметр."
 
-#: gsearchtool/gsearchtool.c:815
+#: gsearchtool/gsearchtool.c:819
 msgid "(aborted)"
 msgstr "(перервано)"
 
-#: gsearchtool/gsearchtool.c:828
+#: gsearchtool/gsearchtool.c:832
 msgid "One file found"
 msgstr "Знайдено один файл"
 
-#: gsearchtool/gsearchtool.c:831
+#: gsearchtool/gsearchtool.c:835
 #, c-format
 msgid "%d files found"
 msgstr "Знайдено %d файлів"
 
-#: gsearchtool/gsearchtool.c:927
-msgid "While searching the following errors were reported.\n"
+#: gsearchtool/gsearchtool.c:931
+msgid ""
+"While searching the following errors were reported.\n"
 "\n"
-msgstr "При виконанні пошуку виникли наступні помилки.\n"
+msgstr ""
+"При виконанні пошуку виникли наступні помилки.\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:931
-msgid "\n"
+#: gsearchtool/gsearchtool.c:935
+msgid ""
+"\n"
 "... Too many errors to display ..."
-msgstr "\n"
+msgstr ""
+"\n"
 "... Надто багато помилок ..."
 
-#: gsearchtool/gsearchtool.c:944
+#: gsearchtool/gsearchtool.c:948
 msgid "Search Errors"
 msgstr "Помилки пошуку"
 
-#: gsearchtool/gsearchtool.c:982
-#: gsearchtool/gsearchtool.c:1006
+#: gsearchtool/gsearchtool.c:986 gsearchtool/gsearchtool.c:1010
 msgid "Search for Files Error"
 msgstr "Помилки пошуку файлів"
 
-#: gsearchtool/gsearchtool.c:1090
+#: gsearchtool/gsearchtool.c:1094
 msgid "Search Rule Value Entry"
 msgstr "Поле значення правила пошуку"
 
-#: gsearchtool/gsearchtool.c:1091
+#: gsearchtool/gsearchtool.c:1095
 msgid "Enter a value for search rule"
 msgstr "Введіть значення для правила пошуку"
 
-#: gsearchtool/gsearchtool.c:1125
+#: gsearchtool/gsearchtool.c:1129
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Клацніть, щоб видалити \"%s\" правило"
 
-#: gsearchtool/gsearchtool.c:1180
+#: gsearchtool/gsearchtool.c:1184
 msgid "A_vailable options:"
 msgstr "_Можливі параметри:"
 
-#: gsearchtool/gsearchtool.c:1193
+#: gsearchtool/gsearchtool.c:1197
 msgid "Search Rules Menu"
 msgstr "Меню правил пошуку"
 
-#: gsearchtool/gsearchtool.c:1194
+#: gsearchtool/gsearchtool.c:1198
 msgid "Select a search rule from the menu"
 msgstr "Створити новий вигляд документу"
 
-#: gsearchtool/gsearchtool.c:1226
+#: gsearchtool/gsearchtool.c:1229
 msgid "S_earch Results"
 msgstr "_Результати пошуку"
 
-#: gsearchtool/gsearchtool.c:1298
+#: gsearchtool/gsearchtool.c:1300
 msgid "Name"
 msgstr "Назва"
 
-#: gsearchtool/gsearchtool.c:1318
+#: gsearchtool/gsearchtool.c:1320
 msgid "Folder"
 msgstr "Тека"
 
-#: gsearchtool/gsearchtool.c:1329
+#: gsearchtool/gsearchtool.c:1331
 msgid "Size"
 msgstr "Розмір"
 
-#: gsearchtool/gsearchtool.c:1339
+#: gsearchtool/gsearchtool.c:1341
 msgid "Type"
 msgstr "Тип"
 
-#: gsearchtool/gsearchtool.c:1349
+#: gsearchtool/gsearchtool.c:1351
 msgid "Date Modified"
 msgstr "Дата зміни"
 
-#: gsearchtool/gsearchtool.c:1386
+#: gsearchtool/gsearchtool.c:1388
 msgid "File is _named:"
 msgstr "Файл з _назвою:"
 
-#: gsearchtool/gsearchtool.c:1401
-#: gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "File Name Entry"
 msgstr "Назва файла"
 
-#: gsearchtool/gsearchtool.c:1401
-#: gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "Enter the file name you want to search"
 msgstr "Введіть назву файла, що ви хочете знайти"
 
-#: gsearchtool/gsearchtool.c:1414
+#: gsearchtool/gsearchtool.c:1416
 msgid "_Look in folder:"
 msgstr "_Шукати у теках:"
 
-#: gsearchtool/gsearchtool.c:1420
+#: gsearchtool/gsearchtool.c:1422
 msgid "Browse"
 msgstr "Переглянути"
 
-#: gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Starting folder entry"
 msgstr "Починати з теки"
 
-#: gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Enter the folder name where you want to start the search"
 msgstr "Введіть назву теки, з якої ви хочете розпочати пошук"
 
-#: gsearchtool/gsearchtool.c:1446
-#: gsearchtool/gsearchtool.c:1447
+#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
 msgid "Additional Options"
 msgstr "Додаткові параметри"
 
-#: gsearchtool/gsearchtool.c:1492
+#: gsearchtool/gsearchtool.c:1494
 msgid "Click to Start the search"
 msgstr "Клацніть щоб почати пошук"
 
-#: gsearchtool/gsearchtool.c:1493
+#: gsearchtool/gsearchtool.c:1495
 msgid "Click to Stop the search"
 msgstr "Клацніть щоб зупинити пошук"
 
-#: gsearchtool/gsearchtool.c:1566
+#: gsearchtool/gsearchtool.c:1568
 msgid "Cannot initialize bonobo."
 msgstr "Неможливо ініціалізувати Bonobo."
 
@@ -1550,58 +1592,60 @@ msgstr "Неможливо відобразити довідку"
 msgid "Searching..."
 msgstr "Пошук..."
 
-#: gsearchtool/gsearchtool-callbacks.c:299
+#: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
 msgstr "Буде відкрито %d окремих файлів. Чи ви впевнені що хочете це зробити?"
 
-#: gsearchtool/gsearchtool-callbacks.c:302
+#: gsearchtool/gsearchtool-callbacks.c:291
 #, c-format
 msgid "Open %d Files?"
 msgstr "Відкрити %d файлів?"
 
-#: gsearchtool/gsearchtool-callbacks.c:359
-#: gsearchtool/gsearchtool-callbacks.c:620
+#: gsearchtool/gsearchtool-callbacks.c:348
+#: gsearchtool/gsearchtool-callbacks.c:609
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
 msgstr "Немає програми відображення здатної відкрити \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:366
-#: gsearchtool/gsearchtool-callbacks.c:627
+#: gsearchtool/gsearchtool-callbacks.c:355
+#: gsearchtool/gsearchtool-callbacks.c:616
 msgid "Can't Display Location"
 msgstr "Неможливо відобразити розташування"
 
-#: gsearchtool/gsearchtool-callbacks.c:404
+#: gsearchtool/gsearchtool-callbacks.c:393
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr "Буде відкрити %d окремих тек. Чи ви впевнені що хочете це зробити?"
 
-#: gsearchtool/gsearchtool-callbacks.c:407
+#: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
 msgid "Open %d Folders?"
 msgstr "Відкрити %d тек?"
 
-#: gsearchtool/gsearchtool-callbacks.c:446
+#: gsearchtool/gsearchtool-callbacks.c:435
 msgid "The nautilus file manager is not running."
 msgstr "Менеджер файлів Наутілус не запущений."
 
-#: gsearchtool/gsearchtool-callbacks.c:729
+#: gsearchtool/gsearchtool-callbacks.c:718
 msgid "Save Search Results As..."
 msgstr "Зберегти результати пошуку як..."
 
-#: gsearchtool/gsearchtool-callbacks.c:772
+#: gsearchtool/gsearchtool-callbacks.c:761
 #, c-format
-msgid "Cannot save search results.\n"
+msgid ""
+"Cannot save search results.\n"
 "\"%s\" is a folder."
-msgstr "Неможливо зберегти файл результатів.\n"
+msgstr ""
+"Неможливо зберегти файл результатів.\n"
 "\"%s\" є текою."
 
-#: gsearchtool/gsearchtool-callbacks.c:800
+#: gsearchtool/gsearchtool-callbacks.c:789
 #, c-format
 msgid "File \"%s\" already exists. Overwrite?"
 msgstr "Файл \"%s\" вже існує. Переписати?"
 
-#: gsearchtool/gsearchtool-callbacks.c:837
+#: gsearchtool/gsearchtool-callbacks.c:826
 #, c-format
 msgid "Cannot save search results to the file \"%s\"."
 msgstr "Неможливо зберегти файл результатів у файл \"%s\"."
@@ -1616,33 +1660,34 @@ msgstr "Розмір стрілки розширювача"
 
 #: gsearchtool/gsearchtool-support.c:346
 #, c-format
-msgid "GConf error:\n"
+msgid ""
+"GConf error:\n"
 "  %s"
-msgstr "Помилка GConf:\n"
+msgstr ""
+"Помилка GConf:\n"
 "  %s"
 
-#: gsearchtool/gsearchtool-support.c:507
+#: gsearchtool/gsearchtool-support.c:524
 msgid "%Y%m%d%H%M%S"
 msgstr "%Y%m%d%H%M%S"
 
-#: gsearchtool/gsearchtool-support.c:538
+#: gsearchtool/gsearchtool-support.c:555
 msgid "today at %-I:%M %p"
 msgstr "сьогодні о %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:540
+#: gsearchtool/gsearchtool-support.c:557
 msgid "yesterday at %-I:%M %p"
 msgstr "вчора о %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:542
-#: gsearchtool/gsearchtool-support.c:544
+#: gsearchtool/gsearchtool-support.c:559 gsearchtool/gsearchtool-support.c:561
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%d.%-m.%y, %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:669
+#: gsearchtool/gsearchtool-support.c:686
 msgid "link (broken)"
 msgstr "посилання (неправильне)"
 
-#: gsearchtool/gsearchtool-support.c:674
+#: gsearchtool/gsearchtool-support.c:691
 #, c-format
 msgid "link to %s"
 msgstr "посилання на %s"
@@ -1656,8 +1701,16 @@ msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Чезар Міґель (miquel@df.uba.ar)"
 
 #: logview/about.c:43
-msgid "This program is part of the GNOME project. Logview comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it under the conditions of the GNU General Public Licence. The log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
-msgstr "Ця програма - частина проекту GHOME для Linux. Вона надається БЕЗ УСІЛЯКИХ ГАРАНТІЙ. Це вільне програмне забезпечення і ви можете розповсюджувати його на умовах GNU GPL. Піктограму зроблено Tuomas Kuosmanen (ще відомий як tigert)."
+msgid ""
+"This program is part of the GNOME project. Logview comes with ABSOLUTELY NO "
+"WARRANTY. This is free software, and you are welcome to redistribute it "
+"under the conditions of the GNU General Public Licence. The log icon is a "
+"courtesy of Tuomas Kuosmanen (a.k.a tigert)."
+msgstr ""
+"Ця програма - частина проекту GHOME для Linux. Вона надається БЕЗ УСІЛЯКИХ "
+"ГАРАНТІЙ. Це вільне програмне забезпечення і ви можете розповсюджувати його "
+"на умовах GNU GPL. Піктограму зроблено Tuomas Kuosmanen (ще відомий як "
+"tigert)."
 
 #: logview/about.c:61
 msgid "GNOME System Log Viewer"
@@ -1692,12 +1745,8 @@ msgstr "В_идалити"
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Неможливо відкрити базу даних подій <%s>!"
 
-#: logview/actions.c:294
-#: logview/actions.c:307
-#: logview/actions.c:318
-#: logview/actions.c:329
-#: logview/actions.c:340
-#: logview/actions.c:351
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Помилка аналізу бази дій"
 
@@ -1765,7 +1814,8 @@ msgstr "Календар"
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "неможливо відкрити базу даних регулярних виразів <%s>! Збій при відкриванні."
+msgstr ""
+"неможливо відкрити базу даних регулярних виразів <%s>! Збій при відкриванні."
 
 #: logview/desc_db.c:147
 #, c-format
@@ -1812,8 +1862,7 @@ msgstr "Кількість рядків:"
 msgid "Log Information"
 msgstr "Інформація про журнал"
 
-#: logview/info.c:163
-#: logview/zoom.c:157
+#: logview/info.c:163 logview/zoom.c:157
 msgid "<No log loaded>"
 msgstr "<Журналу не завантажено>"
 
@@ -1903,23 +1952,24 @@ msgstr "%s не є звичайним файлом."
 
 #: logview/logrtns.c:268
 #, c-format
-msgid "%s is not user readable. Either run the program as root or ask the sysadmin to change the permissions on the file."
-msgstr "%s не може бути прочитаним. Або запустіть програму як root, або попросіть системного адміністратора змінити права доступу до файла."
+msgid ""
+"%s is not user readable. Either run the program as root or ask the sysadmin "
+"to change the permissions on the file."
+msgstr ""
+"%s не може бути прочитаним. Або запустіть програму як root, або попросіть "
+"системного адміністратора змінити права доступу до файла."
 
 #: logview/logrtns.c:285
 #, c-format
 msgid "%s could not be opened."
 msgstr "%s не може бути відкритим."
 
-#: logview/logrtns.c:315
-#: logview/logrtns.c:324
+#: logview/logrtns.c:315 logview/logrtns.c:324
 #, c-format
 msgid "%s not a log file."
 msgstr "%s не є журналом."
 
-#: logview/logrtns.c:722
-#: logview/logrtns.c:753
-#: logview/logrtns.c:884
+#: logview/logrtns.c:722 logview/logrtns.c:753 logview/logrtns.c:884
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: вихід за межі пам'яті"
 
@@ -2003,8 +2053,7 @@ msgstr "Повідомлення"
 msgid "Last Modified: "
 msgstr "Востаннє змінено:"
 
-#: logview/logview.c:568
-#: logview/logview.c:643
+#: logview/logview.c:568 logview/logview.c:643
 msgid "Too many open logs. Close one and try again"
 msgstr "Надто багато відкритих журналів. Закрийте один та спробуйте знову."
 
@@ -2056,10 +2105,10 @@ msgstr "Ви_конати дії"
 
 #: logview/monitor.c:289
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "Надто багато контрольованих журналів. Видаліть один та спробуйте знову."
+msgstr ""
+"Надто багато контрольованих журналів. Видаліть один та спробуйте знову."
 
-#: logview/monitor.c:297
-#: logview/monitor.c:335
+#: logview/monitor.c:297 logview/monitor.c:335
 msgid "tmp_list is NULL\n"
 msgstr "tmp_list -- NULL\n"
 
@@ -2105,6 +2154,9 @@ msgid "Log file to open up on startup"
 msgstr "Файл журналу, що відкриватиметься на початку"
 
 #: logview/logview.schemas.in.h:2
-msgid "Specifies the log file to open up at startup. The default is either /var/adm/messages or /var/log/messages, depending on your distribution."
-msgstr "Визначає файл журналу що відкриватиметься на початку. Типово або /var/adm/messages, або /var/log/messages залежно від дистрибутива."
-
+msgid ""
+"Specifies the log file to open up at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your distribution."
+msgstr ""
+"Визначає файл журналу що відкриватиметься на початку. Типово або /var/adm/"
+"messages, або /var/log/messages залежно від дистрибутива."

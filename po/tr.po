@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-02-09 12:05+0100\n"
+"POT-Creation-Date: 2003-03-13 10:21+0000\n"
 "PO-Revision-Date: 2003-02-10 18:36+0200\n"
 "Last-Translator: Arman Aksoy (Armish) <armish@linux-sevenler.de>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
@@ -414,7 +414,7 @@ msgstr "Hesapla"
 msgid "Perform simple calculations"
 msgstr "Basit hesaplamalar gerçekleştir"
 
-#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:160
+#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:159
 msgid "Character Map"
 msgstr "Karakter Haritası"
 
@@ -459,8 +459,10 @@ msgid "GNOME Character Map"
 msgstr "GNOME Karakter Haritası"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
-msgstr "Kendi yazıtipinden diğer uygulamalara karakter seç, kopyala ve yapıştır"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
+msgstr ""
+"Kendi yazıtipinden diğer uygulamalara karakter seç, kopyala ve yapıştır"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
 #, c-format
@@ -484,41 +486,41 @@ msgstr "Panoya kesilen metin..."
 msgid "Text pasted from clipboard..."
 msgstr "Panodan yapıştırılan metin"
 
-#: gcharmap/src/interface.c:190
+#: gcharmap/src/interface.c:189
 msgid "Action Toolbar"
 msgstr "Eylem Araç Çubuğu"
 
-#: gcharmap/src/interface.c:194
+#: gcharmap/src/interface.c:193
 msgid "_Font:"
 msgstr "_Yazıtipi:"
 
 #. The page selector
-#: gcharmap/src/interface.c:210
+#: gcharmap/src/interface.c:209
 msgid "_Page:"
 msgstr "_Sayfa:"
 
 #. end of page selector
-#: gcharmap/src/interface.c:225
+#: gcharmap/src/interface.c:224
 msgid "_Text to copy:"
 msgstr "Kopyalanacak _Metin:"
 
-#: gcharmap/src/interface.c:240
+#: gcharmap/src/interface.c:239
 msgid "_Copy"
 msgstr "_Kopyala"
 
-#: gcharmap/src/interface.c:262 gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:263 gcharmap/src/interface.c:264
 msgid "Text to copy"
 msgstr "Kopyalanacak metin"
 
-#: gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:264
 msgid "Entry"
 msgstr "Giriş"
 
-#: gcharmap/src/interface.c:264 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:265 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopyala"
 
-#: gcharmap/src/interface.c:264
+#: gcharmap/src/interface.c:265
 msgid "Copy the text"
 msgstr "Metni kopyala"
 
@@ -1337,7 +1339,7 @@ msgstr ""
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "Linux native dosya sistemi için ext2 ya da DOS dosya sistemi için fat"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
 msgid "Search for Files"
 msgstr "Dosya ara"
 
@@ -1397,7 +1399,7 @@ msgstr "Sembolik bağlantıları takip et"
 msgid "Include other filesystems"
 msgstr "Diğer dosya sistemlerini içer"
 
-#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:824
+#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:828
 msgid "No files found"
 msgstr "Dosya bulunamadı"
 
@@ -1415,11 +1417,13 @@ msgstr "\"Bakılacak dizin\" metnini ayarlayın"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Dosyaları şu ölçütlerden birine göre sırala: ad, dizin, boyut, tür ve tarih"
+msgstr ""
+"Dosyaları şu ölçütlerden birine göre sırala: ad, dizin, boyut, tür ve tarih"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr "Sıralama düzenini \"yükselme\" olarak ayarla, öntanımlı ayar \"alçalma\"dır."
+msgstr ""
+"Sıralama düzenini \"yükselme\" olarak ayarla, öntanımlı ayar \"alçalma\"dır."
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
@@ -1430,24 +1434,24 @@ msgstr "Kendiliğinden aramaya başla"
 msgid "Select the '%s' constraint"
 msgstr "'%s' sınırlamasını seç"
 
-#: gsearchtool/gsearchtool.c:686
+#: gsearchtool/gsearchtool.c:685
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Sırala komur satırı özelliğine bilinmeyen özellik gönderildi."
 
-#: gsearchtool/gsearchtool.c:815
+#: gsearchtool/gsearchtool.c:819
 msgid "(aborted)"
 msgstr "(iptal edildi)"
 
-#: gsearchtool/gsearchtool.c:828
+#: gsearchtool/gsearchtool.c:832
 msgid "One file found"
 msgstr "Bir dosya bulundu"
 
-#: gsearchtool/gsearchtool.c:831
+#: gsearchtool/gsearchtool.c:835
 #, c-format
 msgid "%d files found"
 msgstr "%d dosya bulundu"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:931
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1455,7 +1459,7 @@ msgstr ""
 "Arama yaparken şu hatalarla karşılaşıldı. \n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:931
+#: gsearchtool/gsearchtool.c:935
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1463,104 +1467,104 @@ msgstr ""
 "\n"
 "... Görüntülemek için çok fazla hata var..."
 
-#: gsearchtool/gsearchtool.c:944
+#: gsearchtool/gsearchtool.c:948
 msgid "Search Errors"
 msgstr "Arama Hataları"
 
-#: gsearchtool/gsearchtool.c:982 gsearchtool/gsearchtool.c:1006
+#: gsearchtool/gsearchtool.c:986 gsearchtool/gsearchtool.c:1010
 msgid "Search for Files Error"
 msgstr "Dosya Arama Hatası"
 
-#: gsearchtool/gsearchtool.c:1090
+#: gsearchtool/gsearchtool.c:1094
 msgid "Search Rule Value Entry"
 msgstr "Arama Kuralı: Değer Girişi"
 
-#: gsearchtool/gsearchtool.c:1091
+#: gsearchtool/gsearchtool.c:1095
 msgid "Enter a value for search rule"
 msgstr "Arama kuralı için bir değer girin"
 
-#: gsearchtool/gsearchtool.c:1125
+#: gsearchtool/gsearchtool.c:1129
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "'%s' Kuralını Kaldırmak İçin TIklayınız"
 
-#: gsearchtool/gsearchtool.c:1180
+#: gsearchtool/gsearchtool.c:1184
 msgid "A_vailable options:"
 msgstr "Olası _Seçenekler:"
 
-#: gsearchtool/gsearchtool.c:1193
+#: gsearchtool/gsearchtool.c:1197
 msgid "Search Rules Menu"
 msgstr "Arama Kuralları Menüsü"
 
-#: gsearchtool/gsearchtool.c:1194
+#: gsearchtool/gsearchtool.c:1198
 msgid "Select a search rule from the menu"
 msgstr "Menüden bir arama kuralı seçiniz"
 
-#: gsearchtool/gsearchtool.c:1226
+#: gsearchtool/gsearchtool.c:1229
 msgid "S_earch Results"
 msgstr "Arama _Sonuçları"
 
-#: gsearchtool/gsearchtool.c:1298
+#: gsearchtool/gsearchtool.c:1300
 msgid "Name"
 msgstr "Ad"
 
-#: gsearchtool/gsearchtool.c:1318
+#: gsearchtool/gsearchtool.c:1320
 msgid "Folder"
 msgstr "Dizin"
 
-#: gsearchtool/gsearchtool.c:1329
+#: gsearchtool/gsearchtool.c:1331
 msgid "Size"
 msgstr "Boyut"
 
-#: gsearchtool/gsearchtool.c:1339
+#: gsearchtool/gsearchtool.c:1341
 msgid "Type"
 msgstr "Tür"
 
-#: gsearchtool/gsearchtool.c:1349
+#: gsearchtool/gsearchtool.c:1351
 msgid "Date Modified"
 msgstr "Değiştirildiği Tarih"
 
-#: gsearchtool/gsearchtool.c:1386
+#: gsearchtool/gsearchtool.c:1388
 msgid "File is _named:"
 msgstr "Dosy_a adı:"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "File Name Entry"
 msgstr "Dosya Adı Girişi"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "Enter the file name you want to search"
 msgstr "Aramak istediğiniz dosyanın adını giriniz"
 
-#: gsearchtool/gsearchtool.c:1414
+#: gsearchtool/gsearchtool.c:1416
 msgid "_Look in folder:"
 msgstr "_Şu dizine bak:"
 
-#: gsearchtool/gsearchtool.c:1420
+#: gsearchtool/gsearchtool.c:1422
 msgid "Browse"
 msgstr "Araştır"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Starting folder entry"
 msgstr "Başlama dizini girişi"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Enter the folder name where you want to start the search"
 msgstr "Aramaya başlamak istediğiniz dizinin adını giriniz"
 
-#: gsearchtool/gsearchtool.c:1446 gsearchtool/gsearchtool.c:1447
+#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
 msgid "Additional Options"
 msgstr "Daha Fazla Seçenek"
 
-#: gsearchtool/gsearchtool.c:1492
+#: gsearchtool/gsearchtool.c:1494
 msgid "Click to Start the search"
 msgstr "Aramaya Başlamak İçin Tıklayın"
 
-#: gsearchtool/gsearchtool.c:1493
+#: gsearchtool/gsearchtool.c:1495
 msgid "Click to Stop the search"
 msgstr "Aramayı Durdurmak için Tıklayın"
 
-#: gsearchtool/gsearchtool.c:1566
+#: gsearchtool/gsearchtool.c:1568
 msgid "Cannot initialize bonobo."
 msgstr "Bonobo başlatılamadı"
 
@@ -1584,46 +1588,46 @@ msgstr "Yardım Görüntülenemiyor"
 msgid "Searching..."
 msgstr "Arıyor..."
 
-#: gsearchtool/gsearchtool-callbacks.c:299
+#: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
 msgstr "Bu, %d farklı dosyayı açar. Bunu yapmak istediğinize emin misiniz?"
 
-#: gsearchtool/gsearchtool-callbacks.c:302
+#: gsearchtool/gsearchtool-callbacks.c:291
 #, c-format
 msgid "Open %d Files?"
 msgstr "%d Dosyayı Aç?"
 
-#: gsearchtool/gsearchtool-callbacks.c:359
-#: gsearchtool/gsearchtool-callbacks.c:620
+#: gsearchtool/gsearchtool-callbacks.c:348
+#: gsearchtool/gsearchtool-callbacks.c:609
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
 msgstr "\"%s\" dosyasını gösterebilecek bir görüntüleyici yüklü değil."
 
-#: gsearchtool/gsearchtool-callbacks.c:366
-#: gsearchtool/gsearchtool-callbacks.c:627
+#: gsearchtool/gsearchtool-callbacks.c:355
+#: gsearchtool/gsearchtool-callbacks.c:616
 msgid "Can't Display Location"
 msgstr "Konum Görüntülenemiyor"
 
-#: gsearchtool/gsearchtool-callbacks.c:404
+#: gsearchtool/gsearchtool-callbacks.c:393
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr "Bu, %d farklı dizini açar. Bunu yapmak istediğinize emin misiniz?"
 
-#: gsearchtool/gsearchtool-callbacks.c:407
+#: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
 msgid "Open %d Folders?"
 msgstr "%d Dizini Aç?"
 
-#: gsearchtool/gsearchtool-callbacks.c:446
+#: gsearchtool/gsearchtool-callbacks.c:435
 msgid "The nautilus file manager is not running."
 msgstr "Nautilus dosya yöneticisi çalışmıyor."
 
-#: gsearchtool/gsearchtool-callbacks.c:729
+#: gsearchtool/gsearchtool-callbacks.c:718
 msgid "Save Search Results As..."
 msgstr "Arama Sonuçlarını Farklı Kaydet..."
 
-#: gsearchtool/gsearchtool-callbacks.c:772
+#: gsearchtool/gsearchtool-callbacks.c:761
 #, c-format
 msgid ""
 "Cannot save search results.\n"
@@ -1632,12 +1636,12 @@ msgstr ""
 "Arama sonuçları kaydedilemiyor\n"
 "\"%s\" bir dizin."
 
-#: gsearchtool/gsearchtool-callbacks.c:800
+#: gsearchtool/gsearchtool-callbacks.c:789
 #, c-format
 msgid "File \"%s\" already exists. Overwrite?"
 msgstr "\"%s\" dosyası zaten var. Üzerine yazılsın mı?"
 
-#: gsearchtool/gsearchtool-callbacks.c:837
+#: gsearchtool/gsearchtool-callbacks.c:826
 #, c-format
 msgid "Cannot save search results to the file \"%s\"."
 msgstr "Arama sonuçları \"%s\" dosyasına kaydedilemiyor."
@@ -1659,27 +1663,27 @@ msgstr ""
 "GConf hatası:\n"
 "  %s"
 
-#: gsearchtool/gsearchtool-support.c:507
+#: gsearchtool/gsearchtool-support.c:524
 msgid "%Y%m%d%H%M%S"
 msgstr "%Y%m%d%H%M%S"
 
-#: gsearchtool/gsearchtool-support.c:538
+#: gsearchtool/gsearchtool-support.c:555
 msgid "today at %-I:%M %p"
 msgstr "bugün  %-I:%M %p de"
 
-#: gsearchtool/gsearchtool-support.c:540
+#: gsearchtool/gsearchtool-support.c:557
 msgid "yesterday at %-I:%M %p"
 msgstr "dün %-I:%M %p de"
 
-#: gsearchtool/gsearchtool-support.c:542 gsearchtool/gsearchtool-support.c:544
+#: gsearchtool/gsearchtool-support.c:559 gsearchtool/gsearchtool-support.c:561
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%m/%-d/%y, %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:669
+#: gsearchtool/gsearchtool-support.c:686
 msgid "link (broken)"
 msgstr "bağlantı (kırık)"
 
-#: gsearchtool/gsearchtool-support.c:674
+#: gsearchtool/gsearchtool-support.c:691
 #, c-format
 msgid "link to %s"
 msgstr "%s'e bağlantı"
@@ -2064,6 +2068,11 @@ msgstr "Hata: [%s]\n"
 msgid "Monitor Options"
 msgstr "Görüntüleyici Seçenekleri"
 
+#: logview/monitor.c:112
+#, fuzzy
+msgid "Ac_tions"
+msgstr "Eylemler"
+
 #: logview/monitor.c:135
 msgid "Choose logs to monitor:"
 msgstr "Görüntülenecek günlükleri seçin"
@@ -2145,4 +2154,3 @@ msgid ""
 msgstr ""
 "Başlangıçta açılacak günlük dosyasını belirtir. Öntanımlı değer, ya /var/adm/"
 "messages ya da  /var/log/messages dir. Bu durum, dağıtımınıza bağlıdır."
-

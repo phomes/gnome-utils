@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-2.he\n"
-"POT-Creation-Date: 2003-03-10 12:20+0100\n"
+"POT-Creation-Date: 2003-03-13 10:21+0000\n"
 "PO-Revision-Date: 2003-03-10 15:34+0200\n"
 "Last-Translator: Gil 'Dolfin' Osher <dolfin@rpg.org.il>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -465,7 +465,8 @@ msgid "GNOME Character Map"
 msgstr "מפת התוים של GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "בחר, העתק והדבק תוים מהגופן שלך ליישומים אחרים"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
@@ -890,8 +891,8 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
-"מציין האם להשתמש בחיפוש חכם. מפתח זה תלוי בהאם שרת "
-"המילון תומך באפשרות זו. ברירת המחדל הינה חיובי."
+"מציין האם להשתמש בחיפוש חכם. מפתח זה תלוי בהאם שרת המילון תומך באפשרות זו. "
+"ברירת המחדל הינה חיובי."
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -927,8 +928,8 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"אסטרטגיית החיפוש. זה תלוי באסטרטגיית החיפוש בה שרת המילון תומך. "
-"אסטרטגיית ברירת המחדל הינה 'lev' - התאמת מילים בתוך Levenshtein distance one"
+"אסטרטגיית החיפוש. זה תלוי באסטרטגיית החיפוש בה שרת המילון תומך. אסטרטגיית "
+"ברירת המחדל הינה 'lev' - התאמת מילים בתוך Levenshtein distance one"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1332,8 +1333,8 @@ msgid ""
 "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
 "mtools as the preferred FAT formatting backend."
 msgstr ""
-"חיובי כדי לקבוע את mkdosfs ככלי הרקע המועדף לאתחול FAT או שלילי כדי לקבוע "
-"את mtools ככלי הרקע המועדף לאתחול FAT."
+"חיובי כדי לקבוע את mkdosfs ככלי הרקע המועדף לאתחול FAT או שלילי כדי לקבוע את "
+"mtools ככלי הרקע המועדף לאתחול FAT."
 
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
@@ -2151,4 +2152,3 @@ msgid ""
 msgstr ""
 "מציין את קובץ הדו\"ח לפתיחה בהפעלה. ברירת המחדל היא או /var/adm/messages או /"
 "var/log/messages, תלוי בהפצה שלך."
-

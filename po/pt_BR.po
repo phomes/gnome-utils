@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.0.13\n"
-"POT-Creation-Date: 2003-02-20 04:37-0300\n"
+"POT-Creation-Date: 2003-03-13 10:21+0000\n"
 "PO-Revision-Date: 2003-02-20 02:32-0300\n"
 "Last-Translator: Fabio Rafael da Rosa <fabio.rafael@terra.com.br>\n"
 "Language-Team: GNOME-BR <gnome-l10n-br@listas.cipsga.org.br>\n"
@@ -1355,7 +1355,7 @@ msgstr ""
 "ext2 para o sistema de arquivos nativo do linux ou fat para sistema de "
 "arquivos DOS"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
 msgid "Search for Files"
 msgstr "Procurar Arquivos"
 
@@ -1415,7 +1415,7 @@ msgstr "Seguir links simbólicos"
 msgid "Include other filesystems"
 msgstr "Inluir outros sistemas de arquivos"
 
-#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:824
+#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:828
 msgid "No files found"
 msgstr "Nenhum arquivo encontrado"
 
@@ -1450,30 +1450,30 @@ msgstr "Começar busca automaticamente"
 msgid "Select the '%s' constraint"
 msgstr "Selecionar a limitação '%s'"
 
-#: gsearchtool/gsearchtool.c:686
+#: gsearchtool/gsearchtool.c:685
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Opção inválida passada como argumento ao ordenar por"
 
-#: gsearchtool/gsearchtool.c:815
+#: gsearchtool/gsearchtool.c:819
 msgid "(aborted)"
 msgstr "(cancelado)"
 
-#: gsearchtool/gsearchtool.c:828
+#: gsearchtool/gsearchtool.c:832
 msgid "One file found"
 msgstr "Um arquivo encontrado"
 
-#: gsearchtool/gsearchtool.c:831
+#: gsearchtool/gsearchtool.c:835
 #, c-format
 msgid "%d files found"
 msgstr "%d arquivos encontrados"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:931
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
 msgstr "Os seguintes erros foram encontrados durante a procura.\n"
 
-#: gsearchtool/gsearchtool.c:931
+#: gsearchtool/gsearchtool.c:935
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1481,104 +1481,104 @@ msgstr ""
 "\n"
 "... Muitos erros para serem mostrados..."
 
-#: gsearchtool/gsearchtool.c:944
+#: gsearchtool/gsearchtool.c:948
 msgid "Search Errors"
 msgstr "Erros na Procura"
 
-#: gsearchtool/gsearchtool.c:982 gsearchtool/gsearchtool.c:1006
+#: gsearchtool/gsearchtool.c:986 gsearchtool/gsearchtool.c:1010
 msgid "Search for Files Error"
 msgstr "Erro na Procura por Arquivos"
 
-#: gsearchtool/gsearchtool.c:1090
+#: gsearchtool/gsearchtool.c:1094
 msgid "Search Rule Value Entry"
 msgstr "Entrada de Valor de Regra de Pesquisa"
 
-#: gsearchtool/gsearchtool.c:1091
+#: gsearchtool/gsearchtool.c:1095
 msgid "Enter a value for search rule"
 msgstr "Insira um valor para a regra de pesquisa"
 
-#: gsearchtool/gsearchtool.c:1125
+#: gsearchtool/gsearchtool.c:1129
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Clique para Remover a Regra '%s'"
 
-#: gsearchtool/gsearchtool.c:1180
+#: gsearchtool/gsearchtool.c:1184
 msgid "A_vailable options:"
 msgstr "Opções Disponí_veis:"
 
-#: gsearchtool/gsearchtool.c:1193
+#: gsearchtool/gsearchtool.c:1197
 msgid "Search Rules Menu"
 msgstr "Menu de Regras de Pesquisa"
 
-#: gsearchtool/gsearchtool.c:1194
+#: gsearchtool/gsearchtool.c:1198
 msgid "Select a search rule from the menu"
 msgstr "Selecione uma regra de pesquisa no menu"
 
-#: gsearchtool/gsearchtool.c:1225
+#: gsearchtool/gsearchtool.c:1229
 msgid "S_earch Results"
 msgstr "R_esultados da Pesquisa"
 
-#: gsearchtool/gsearchtool.c:1296
+#: gsearchtool/gsearchtool.c:1300
 msgid "Name"
 msgstr "Nome"
 
-#: gsearchtool/gsearchtool.c:1316
+#: gsearchtool/gsearchtool.c:1320
 msgid "Folder"
 msgstr "Pasta"
 
-#: gsearchtool/gsearchtool.c:1327
+#: gsearchtool/gsearchtool.c:1331
 msgid "Size"
 msgstr "Tamanho"
 
-#: gsearchtool/gsearchtool.c:1337
+#: gsearchtool/gsearchtool.c:1341
 msgid "Type"
 msgstr "Tipo"
 
-#: gsearchtool/gsearchtool.c:1347
+#: gsearchtool/gsearchtool.c:1351
 msgid "Date Modified"
 msgstr "Última Modificação"
 
-#: gsearchtool/gsearchtool.c:1384
+#: gsearchtool/gsearchtool.c:1388
 msgid "File is _named:"
 msgstr "O arquivo tem _nome:"
 
-#: gsearchtool/gsearchtool.c:1399 gsearchtool/gsearchtool.c:1400
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "File Name Entry"
 msgstr "Entrada de Nome de Arquivo"
 
-#: gsearchtool/gsearchtool.c:1399 gsearchtool/gsearchtool.c:1400
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "Enter the file name you want to search"
 msgstr "Insira o nome do arquivo que deseja pesquisar"
 
-#: gsearchtool/gsearchtool.c:1412
+#: gsearchtool/gsearchtool.c:1416
 msgid "_Look in folder:"
 msgstr "P_rocurar na pasta:"
 
-#: gsearchtool/gsearchtool.c:1418
+#: gsearchtool/gsearchtool.c:1422
 msgid "Browse"
 msgstr "Procurar"
 
-#: gsearchtool/gsearchtool.c:1427 gsearchtool/gsearchtool.c:1428
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Starting folder entry"
 msgstr "Entrada da pasta inicial"
 
-#: gsearchtool/gsearchtool.c:1427 gsearchtool/gsearchtool.c:1428
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Enter the folder name where you want to start the search"
 msgstr "Insira o nome da pasta onde deseja iniciar a pesquisa"
 
-#: gsearchtool/gsearchtool.c:1444 gsearchtool/gsearchtool.c:1445
+#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
 msgid "Additional Options"
 msgstr "Opções Adicionais"
 
-#: gsearchtool/gsearchtool.c:1490
+#: gsearchtool/gsearchtool.c:1494
 msgid "Click to Start the search"
 msgstr "Clique para iniciar a pesquisa"
 
-#: gsearchtool/gsearchtool.c:1491
+#: gsearchtool/gsearchtool.c:1495
 msgid "Click to Stop the search"
 msgstr "Clique para interromper a pesquisa"
 
-#: gsearchtool/gsearchtool.c:1564
+#: gsearchtool/gsearchtool.c:1568
 msgid "Cannot initialize bonobo."
 msgstr "Não foi possível inicializar o bonobo."
 
@@ -1602,49 +1602,49 @@ msgstr "Não é possível mostrar a Ajuda"
 msgid "Searching..."
 msgstr "Procurando..."
 
-#: gsearchtool/gsearchtool-callbacks.c:299
+#: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
 msgstr ""
 "Isso vai abrir %d arquivos separados. Tem certeza que deseja fazer isso?"
 
-#: gsearchtool/gsearchtool-callbacks.c:302
+#: gsearchtool/gsearchtool-callbacks.c:291
 #, c-format
 msgid "Open %d Files?"
 msgstr "Abrir %d Arquivos?"
 
-#: gsearchtool/gsearchtool-callbacks.c:359
-#: gsearchtool/gsearchtool-callbacks.c:620
+#: gsearchtool/gsearchtool-callbacks.c:348
+#: gsearchtool/gsearchtool-callbacks.c:609
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
 msgstr "Não há um visualizador instalado capaz de mostrar \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:366
-#: gsearchtool/gsearchtool-callbacks.c:627
+#: gsearchtool/gsearchtool-callbacks.c:355
+#: gsearchtool/gsearchtool-callbacks.c:616
 msgid "Can't Display Location"
 msgstr "Não é possível mostrar esse local"
 
-#: gsearchtool/gsearchtool-callbacks.c:404
+#: gsearchtool/gsearchtool-callbacks.c:393
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr ""
 "Isso vai abrir %d pastas separadas. Você tem certeza de que deseja fazer "
 "isso?"
 
-#: gsearchtool/gsearchtool-callbacks.c:407
+#: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
 msgid "Open %d Folders?"
 msgstr "Abrir %d Pastas?"
 
-#: gsearchtool/gsearchtool-callbacks.c:446
+#: gsearchtool/gsearchtool-callbacks.c:435
 msgid "The nautilus file manager is not running."
 msgstr "Nautilus não está rodando"
 
-#: gsearchtool/gsearchtool-callbacks.c:729
+#: gsearchtool/gsearchtool-callbacks.c:718
 msgid "Save Search Results As..."
 msgstr "Salvar Resultados da Procura Como..."
 
-#: gsearchtool/gsearchtool-callbacks.c:772
+#: gsearchtool/gsearchtool-callbacks.c:761
 #, c-format
 msgid ""
 "Cannot save search results.\n"
@@ -1653,12 +1653,12 @@ msgstr ""
 "Não é possível salvar os resultados da busca.\n"
 "\"%s\" é uma pasta."
 
-#: gsearchtool/gsearchtool-callbacks.c:800
+#: gsearchtool/gsearchtool-callbacks.c:789
 #, c-format
 msgid "File \"%s\" already exists. Overwrite?"
 msgstr "O arquivo \"%s\" já existe. Quer sobrescrevê-lo?"
 
-#: gsearchtool/gsearchtool-callbacks.c:837
+#: gsearchtool/gsearchtool-callbacks.c:826
 #, c-format
 msgid "Cannot save search results to the file \"%s\"."
 msgstr "Não foi possível salvar os resultados da busca para o arquivo \"%s\"."

@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.99\n"
-"POT-Creation-Date: 2003-02-11 19:32+0100\n"
+"POT-Creation-Date: 2003-03-13 10:21+0000\n"
 "PO-Revision-Date: 2003-02-11 19:37+0100\n"
 "Last-Translator: Ole Laursen <olau@hardworking.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -415,7 +415,7 @@ msgstr "Beregn"
 msgid "Perform simple calculations"
 msgstr "Foretag simple beregninger"
 
-#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:160
+#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:159
 msgid "Character Map"
 msgstr "Tegnoversigt"
 
@@ -486,41 +486,41 @@ msgstr "Tekst klippet til klippebordet..."
 msgid "Text pasted from clipboard..."
 msgstr "Tekst indsat fra klippebordet..."
 
-#: gcharmap/src/interface.c:190
+#: gcharmap/src/interface.c:189
 msgid "Action Toolbar"
 msgstr "Handlingsværktøjslinje"
 
-#: gcharmap/src/interface.c:194
+#: gcharmap/src/interface.c:193
 msgid "_Font:"
 msgstr "_Skrifttype:"
 
 #. The page selector
-#: gcharmap/src/interface.c:210
+#: gcharmap/src/interface.c:209
 msgid "_Page:"
 msgstr "_Side:"
 
 #. end of page selector
-#: gcharmap/src/interface.c:225
+#: gcharmap/src/interface.c:224
 msgid "_Text to copy:"
 msgstr "_Tekst:"
 
-#: gcharmap/src/interface.c:240
+#: gcharmap/src/interface.c:239
 msgid "_Copy"
 msgstr "_Kopiér"
 
-#: gcharmap/src/interface.c:262 gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:263 gcharmap/src/interface.c:264
 msgid "Text to copy"
 msgstr "Tekst der skal kopieres"
 
-#: gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:264
 msgid "Entry"
 msgstr "Indtastning"
 
-#: gcharmap/src/interface.c:264 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:265 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopiér"
 
-#: gcharmap/src/interface.c:264
+#: gcharmap/src/interface.c:265
 msgid "Copy the text"
 msgstr "Kopiér teksten"
 
@@ -1345,7 +1345,7 @@ msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr ""
 "Angiv ext2 for det indføde Linux-filsystem eller FAT for filsystemet til DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
 msgid "Search for Files"
 msgstr "Søg efter filer"
 
@@ -1406,7 +1406,7 @@ msgstr "Følg symbolske henvisninger"
 msgid "Include other filesystems"
 msgstr "Medtag andre filsystemer"
 
-#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:824
+#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:828
 msgid "No files found"
 msgstr "Ingen filer fundet"
 
@@ -1442,24 +1442,24 @@ msgstr "Start automatisk en søgning"
 msgid "Select the '%s' constraint"
 msgstr "Vælg begrænsningen '%s'"
 
-#: gsearchtool/gsearchtool.c:686
+#: gsearchtool/gsearchtool.c:685
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Ugyldigt parameter givet til kommandolinjeparameteren 'sortby'."
 
-#: gsearchtool/gsearchtool.c:815
+#: gsearchtool/gsearchtool.c:819
 msgid "(aborted)"
 msgstr "(afbrudt)"
 
-#: gsearchtool/gsearchtool.c:828
+#: gsearchtool/gsearchtool.c:832
 msgid "One file found"
 msgstr "Én fil fundet"
 
-#: gsearchtool/gsearchtool.c:831
+#: gsearchtool/gsearchtool.c:835
 #, c-format
 msgid "%d files found"
 msgstr "%d filer fundet"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:931
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1467,7 +1467,7 @@ msgstr ""
 "Under søgningen bliv de følgende fejl rapporteret.\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:931
+#: gsearchtool/gsearchtool.c:935
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1475,104 +1475,104 @@ msgstr ""
 "\n"
 "... For mange fejl til at vise ..."
 
-#: gsearchtool/gsearchtool.c:944
+#: gsearchtool/gsearchtool.c:948
 msgid "Search Errors"
 msgstr "Søgefejl"
 
-#: gsearchtool/gsearchtool.c:982 gsearchtool/gsearchtool.c:1006
+#: gsearchtool/gsearchtool.c:986 gsearchtool/gsearchtool.c:1010
 msgid "Search for Files Error"
 msgstr "Søg efter filer - fejl"
 
-#: gsearchtool/gsearchtool.c:1090
+#: gsearchtool/gsearchtool.c:1094
 msgid "Search Rule Value Entry"
 msgstr "Søgeregelværdi"
 
-#: gsearchtool/gsearchtool.c:1091
+#: gsearchtool/gsearchtool.c:1095
 msgid "Enter a value for search rule"
 msgstr "Indtast en værdi for søgereglen"
 
-#: gsearchtool/gsearchtool.c:1125
+#: gsearchtool/gsearchtool.c:1129
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Klik for at fjerne reglen '%s'"
 
-#: gsearchtool/gsearchtool.c:1180
+#: gsearchtool/gsearchtool.c:1184
 msgid "A_vailable options:"
 msgstr "T_ilgængelige indstillinger:"
 
-#: gsearchtool/gsearchtool.c:1193
+#: gsearchtool/gsearchtool.c:1197
 msgid "Search Rules Menu"
 msgstr "Søgeregelmenu"
 
-#: gsearchtool/gsearchtool.c:1194
+#: gsearchtool/gsearchtool.c:1198
 msgid "Select a search rule from the menu"
 msgstr "Vælg en søgeregel fra menuen"
 
-#: gsearchtool/gsearchtool.c:1226
+#: gsearchtool/gsearchtool.c:1229
 msgid "S_earch Results"
 msgstr "S_øgeresultater"
 
-#: gsearchtool/gsearchtool.c:1298
+#: gsearchtool/gsearchtool.c:1300
 msgid "Name"
 msgstr "Navn"
 
-#: gsearchtool/gsearchtool.c:1318
+#: gsearchtool/gsearchtool.c:1320
 msgid "Folder"
 msgstr "Mappe"
 
-#: gsearchtool/gsearchtool.c:1329
+#: gsearchtool/gsearchtool.c:1331
 msgid "Size"
 msgstr "Størrelse"
 
-#: gsearchtool/gsearchtool.c:1339
+#: gsearchtool/gsearchtool.c:1341
 msgid "Type"
 msgstr "Type"
 
-#: gsearchtool/gsearchtool.c:1349
+#: gsearchtool/gsearchtool.c:1351
 msgid "Date Modified"
 msgstr "Ændringstidspunkt"
 
-#: gsearchtool/gsearchtool.c:1386
+#: gsearchtool/gsearchtool.c:1388
 msgid "File is _named:"
 msgstr "Fil er _navngivet:"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "File Name Entry"
 msgstr "Filnavnsindtastning"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "Enter the file name you want to search"
 msgstr "Indtast det filnavn du ønsker at søge efter"
 
-#: gsearchtool/gsearchtool.c:1414
+#: gsearchtool/gsearchtool.c:1416
 msgid "_Look in folder:"
 msgstr "_Kig i mappen:"
 
-#: gsearchtool/gsearchtool.c:1420
+#: gsearchtool/gsearchtool.c:1422
 msgid "Browse"
 msgstr "Gennemse"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Starting folder entry"
 msgstr "Startmappe"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Enter the folder name where you want to start the search"
 msgstr "Indtast navnet på mappen hvor du ønsker at begynde søgningen"
 
-#: gsearchtool/gsearchtool.c:1446 gsearchtool/gsearchtool.c:1447
+#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
 msgid "Additional Options"
 msgstr "Ekstra indstillinger"
 
-#: gsearchtool/gsearchtool.c:1492
+#: gsearchtool/gsearchtool.c:1494
 msgid "Click to Start the search"
 msgstr "Klik for at starte søgningen"
 
-#: gsearchtool/gsearchtool.c:1493
+#: gsearchtool/gsearchtool.c:1495
 msgid "Click to Stop the search"
 msgstr "Klik for stoppe søgningen"
 
-#: gsearchtool/gsearchtool.c:1566
+#: gsearchtool/gsearchtool.c:1568
 msgid "Cannot initialize bonobo."
 msgstr "Kan ikke klargøre Bonobo."
 
@@ -1596,48 +1596,48 @@ msgstr "Kan ikke vise hjælp"
 msgid "Searching..."
 msgstr "Søger..."
 
-#: gsearchtool/gsearchtool-callbacks.c:299
+#: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
 msgstr ""
 "Dette vil åbne %d forskellige filer. Er du sikker på at du vil gøre det?"
 
-#: gsearchtool/gsearchtool-callbacks.c:302
+#: gsearchtool/gsearchtool-callbacks.c:291
 #, c-format
 msgid "Open %d Files?"
 msgstr "Åbn %d filer?"
 
-#: gsearchtool/gsearchtool-callbacks.c:359
-#: gsearchtool/gsearchtool-callbacks.c:620
+#: gsearchtool/gsearchtool-callbacks.c:348
+#: gsearchtool/gsearchtool-callbacks.c:609
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
 msgstr "Der er ikke installeret et fremviser der kan vise \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:366
-#: gsearchtool/gsearchtool-callbacks.c:627
+#: gsearchtool/gsearchtool-callbacks.c:355
+#: gsearchtool/gsearchtool-callbacks.c:616
 msgid "Can't Display Location"
 msgstr "Kan ikke vise sted"
 
-#: gsearchtool/gsearchtool-callbacks.c:404
+#: gsearchtool/gsearchtool-callbacks.c:393
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr ""
 "Dette vil åbne %d forskellige mappe. Er du sikker på at du vil gøre det?"
 
-#: gsearchtool/gsearchtool-callbacks.c:407
+#: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
 msgid "Open %d Folders?"
 msgstr "Åbn %d mapper?"
 
-#: gsearchtool/gsearchtool-callbacks.c:446
+#: gsearchtool/gsearchtool-callbacks.c:435
 msgid "The nautilus file manager is not running."
 msgstr "Filhåndteringen Nautilus kører ikke."
 
-#: gsearchtool/gsearchtool-callbacks.c:729
+#: gsearchtool/gsearchtool-callbacks.c:718
 msgid "Save Search Results As..."
 msgstr "Gem søgeresultater som..."
 
-#: gsearchtool/gsearchtool-callbacks.c:772
+#: gsearchtool/gsearchtool-callbacks.c:761
 #, c-format
 msgid ""
 "Cannot save search results.\n"
@@ -1646,12 +1646,12 @@ msgstr ""
 "Kan ikke gemme søgeresultater.\n"
 "\"%s\" er en mappe."
 
-#: gsearchtool/gsearchtool-callbacks.c:800
+#: gsearchtool/gsearchtool-callbacks.c:789
 #, c-format
 msgid "File \"%s\" already exists. Overwrite?"
 msgstr "Filen %s eksisterer allerede. Overskriv den?"
 
-#: gsearchtool/gsearchtool-callbacks.c:837
+#: gsearchtool/gsearchtool-callbacks.c:826
 #, c-format
 msgid "Cannot save search results to the file \"%s\"."
 msgstr "Kan ikke gemme søgeresultater i filen \"%s\"."
@@ -1673,27 +1673,27 @@ msgstr ""
 "GConf-fejl:\n"
 "  %s"
 
-#: gsearchtool/gsearchtool-support.c:507
+#: gsearchtool/gsearchtool-support.c:524
 msgid "%Y%m%d%H%M%S"
 msgstr "%d%m%Y%H%M%S"
 
-#: gsearchtool/gsearchtool-support.c:538
+#: gsearchtool/gsearchtool-support.c:555
 msgid "today at %-I:%M %p"
 msgstr "i dag kl. %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:540
+#: gsearchtool/gsearchtool-support.c:557
 msgid "yesterday at %-I:%M %p"
 msgstr "i går kl. %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:542 gsearchtool/gsearchtool-support.c:544
+#: gsearchtool/gsearchtool-support.c:559 gsearchtool/gsearchtool-support.c:561
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%-d/%m-%Y, %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:669
+#: gsearchtool/gsearchtool-support.c:686
 msgid "link (broken)"
 msgstr "henvisning (ødelagt)"
 
-#: gsearchtool/gsearchtool-support.c:674
+#: gsearchtool/gsearchtool-support.c:691
 #, c-format
 msgid "link to %s"
 msgstr "henvisning til %s"

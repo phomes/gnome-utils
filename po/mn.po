@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.mn\n"
-"POT-Creation-Date: 2003-02-18 04:56+0100\n"
+"POT-Creation-Date: 2003-03-13 10:21+0000\n"
 "PO-Revision-Date: 2003-02-18 15:51+0100\n"
 "Last-Translator: Sanlig Badral <badral@chinggis.com>\n"
 "Language-Team: Mongolian <mn@li.org>\n"
@@ -460,7 +460,8 @@ msgid "GNOME Character Map"
 msgstr "GNOME-тэмдэгтийн хүснэгт"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Бичгээс тэмдэгт сонгоод өөр х.программ руу хуулаад буулгах"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
@@ -1040,7 +1041,8 @@ msgstr ""
 #: gfloppy/src/fdformat.c:132
 #, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr "EАсуудал %d цлиндерийг уншиж байхад гарлаа, %d хүлээгдэж, %d уншигдсан байна "
+msgstr ""
+"EАсуудал %d цлиндерийг уншиж байхад гарлаа, %d хүлээгдэж, %d уншигдсан байна "
 
 #: gfloppy/src/fdformat.c:141
 #, c-format
@@ -1244,7 +1246,8 @@ msgstr ""
 #: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr "%s төхөөрөмж рүү хандаж чадахгүй байна. Форматыг үргэлжилүүлэх боломжгүй."
+msgstr ""
+"%s төхөөрөмж рүү хандаж чадахгүй байна. Форматыг үргэлжилүүлэх боломжгүй."
 
 #: gfloppy/src/main.c:158 gfloppy/src/main.c:202
 #, c-format
@@ -1341,7 +1344,7 @@ msgstr ""
 "Боломжит утгууд »ext2« (native Linux-файлын систем) ба »fat« (DOS-Файлын "
 "систем)."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
 msgid "Search for Files"
 msgstr "Файл хайх"
 
@@ -1401,7 +1404,7 @@ msgstr "Дагалдах символик холбоос "
 msgid "Include other filesystems"
 msgstr "Өөр файлын систем холбох"
 
-#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:824
+#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:828
 msgid "No files found"
 msgstr "Ямарч файл олдсонгүй"
 
@@ -1436,24 +1439,24 @@ msgstr "Автомат хайлт эхлэх"
 msgid "Select the '%s' constraint"
 msgstr "»%s« хязгаарлалт сонгох"
 
-#: gsearchtool/gsearchtool.c:686
+#: gsearchtool/gsearchtool.c:685
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Хүчингүй сонголт »sortby«-тушаалын мөрийн аргументаар дамжигдлаа."
 
-#: gsearchtool/gsearchtool.c:815
+#: gsearchtool/gsearchtool.c:819
 msgid "(aborted)"
 msgstr "(тасарлаа)"
 
-#: gsearchtool/gsearchtool.c:828
+#: gsearchtool/gsearchtool.c:832
 msgid "One file found"
 msgstr "Нэг файл олдов."
 
-#: gsearchtool/gsearchtool.c:831
+#: gsearchtool/gsearchtool.c:835
 #, c-format
 msgid "%d files found"
 msgstr "%d файл олдов"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:931
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1461,7 +1464,7 @@ msgstr ""
 "Хайлт хийж байхад дараах алдаа гарлаа:\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:931
+#: gsearchtool/gsearchtool.c:935
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1469,105 +1472,105 @@ msgstr ""
 "\n"
 "... Харуулаж чадахгүй их алдаа гарлаа ..."
 
-#: gsearchtool/gsearchtool.c:944
+#: gsearchtool/gsearchtool.c:948
 msgid "Search Errors"
 msgstr "Хайлтын алдаа"
 
-#: gsearchtool/gsearchtool.c:982 gsearchtool/gsearchtool.c:1006
+#: gsearchtool/gsearchtool.c:986 gsearchtool/gsearchtool.c:1010
 msgid "Search for Files Error"
 msgstr "Файлын хайлтад алдаа"
 
 # CHECK komisch, oder????
-#: gsearchtool/gsearchtool.c:1090
+#: gsearchtool/gsearchtool.c:1094
 msgid "Search Rule Value Entry"
 msgstr "Утгын бичлэг хайх дүрэм"
 
-#: gsearchtool/gsearchtool.c:1091
+#: gsearchtool/gsearchtool.c:1095
 msgid "Enter a value for search rule"
 msgstr "Та нэгэн утга хайх дүрэмд өгнө үү"
 
-#: gsearchtool/gsearchtool.c:1125
+#: gsearchtool/gsearchtool.c:1129
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "»%s« дүрмийг устгахдаа та энд товшино уу"
 
-#: gsearchtool/gsearchtool.c:1180
+#: gsearchtool/gsearchtool.c:1184
 msgid "A_vailable options:"
 msgstr "_Байгаа сонголтууд:"
 
-#: gsearchtool/gsearchtool.c:1193
+#: gsearchtool/gsearchtool.c:1197
 msgid "Search Rules Menu"
 msgstr "Хайх дүрэм-Цэс"
 
-#: gsearchtool/gsearchtool.c:1194
+#: gsearchtool/gsearchtool.c:1198
 msgid "Select a search rule from the menu"
 msgstr "Та цэснээс нэгэн хайх дүрэм сонгоно уу"
 
-#: gsearchtool/gsearchtool.c:1226
+#: gsearchtool/gsearchtool.c:1229
 msgid "S_earch Results"
 msgstr "Хайлтын үр _дүн"
 
-#: gsearchtool/gsearchtool.c:1298
+#: gsearchtool/gsearchtool.c:1300
 msgid "Name"
 msgstr "Нэр"
 
-#: gsearchtool/gsearchtool.c:1318
+#: gsearchtool/gsearchtool.c:1320
 msgid "Folder"
 msgstr "Лавлах"
 
-#: gsearchtool/gsearchtool.c:1329
+#: gsearchtool/gsearchtool.c:1331
 msgid "Size"
 msgstr "Хэмжээ"
 
-#: gsearchtool/gsearchtool.c:1339
+#: gsearchtool/gsearchtool.c:1341
 msgid "Type"
 msgstr "Төрөл"
 
-#: gsearchtool/gsearchtool.c:1349
+#: gsearchtool/gsearchtool.c:1351
 msgid "Date Modified"
 msgstr "Өөрчилөгдсөн огноо"
 
-#: gsearchtool/gsearchtool.c:1386
+#: gsearchtool/gsearchtool.c:1388
 msgid "File is _named:"
 msgstr "Файлын _нэр нь:"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "File Name Entry"
 msgstr "Файлын нэр бичлэг"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
 msgid "Enter the file name you want to search"
 msgstr "Та олохыг хүсэж байгаа файлын нэрээ өгнө үү"
 
-#: gsearchtool/gsearchtool.c:1414
+#: gsearchtool/gsearchtool.c:1416
 msgid "_Look in folder:"
 msgstr "Лавлах _нэгжих"
 
-#: gsearchtool/gsearchtool.c:1420
+#: gsearchtool/gsearchtool.c:1422
 msgid "Browse"
 msgstr "Сонгох"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Starting folder entry"
 msgstr "Эхлэл лавлах-бичлэг"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Enter the folder name where you want to start the search"
 msgstr "Та хайлт эхлэх лавлахын нэрийг өгнө үү"
 
-#: gsearchtool/gsearchtool.c:1446 gsearchtool/gsearchtool.c:1447
+#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
 msgid "Additional Options"
 msgstr "Нэмэлт сонголтууд"
 
-#: gsearchtool/gsearchtool.c:1492
+#: gsearchtool/gsearchtool.c:1494
 msgid "Click to Start the search"
 msgstr "Хайлтаа эхлэхдээ та энд дарна уу"
 
-#: gsearchtool/gsearchtool.c:1493
+#: gsearchtool/gsearchtool.c:1495
 msgid "Click to Stop the search"
 msgstr "Хайлтаа зосоохдоо та энд дарна уу"
 
-#: gsearchtool/gsearchtool.c:1566
+#: gsearchtool/gsearchtool.c:1568
 msgid "Cannot initialize bonobo."
 msgstr "Bonobo инициацлагдсангүй."
 
@@ -1591,46 +1594,46 @@ msgstr "Тусламж харуулах боломжгүй байна"
 msgid "Searching..."
 msgstr "Хайж байна..."
 
-#: gsearchtool/gsearchtool-callbacks.c:299
+#: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
 msgstr "Энэ %d салангад файлууд нээнэ. Тэгсэн ч гэсэн үргэлжлүүлэх үү?"
 
-#: gsearchtool/gsearchtool-callbacks.c:302
+#: gsearchtool/gsearchtool-callbacks.c:291
 #, c-format
 msgid "Open %d Files?"
 msgstr "%d файл нээх үү?"
 
-#: gsearchtool/gsearchtool-callbacks.c:359
-#: gsearchtool/gsearchtool-callbacks.c:620
+#: gsearchtool/gsearchtool-callbacks.c:348
+#: gsearchtool/gsearchtool-callbacks.c:609
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
 msgstr "»%s« - г харуулчих программ суугаагүй байна."
 
-#: gsearchtool/gsearchtool-callbacks.c:366
-#: gsearchtool/gsearchtool-callbacks.c:627
+#: gsearchtool/gsearchtool-callbacks.c:355
+#: gsearchtool/gsearchtool-callbacks.c:616
 msgid "Can't Display Location"
 msgstr "Хадгалах байрлалыг харуулж чадахгүй байна"
 
-#: gsearchtool/gsearchtool-callbacks.c:404
+#: gsearchtool/gsearchtool-callbacks.c:393
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr "Энэ %d салангид файл нээнэ. Тэгсэн ч гэсэн үргэлжлүүлэх үү?"
 
-#: gsearchtool/gsearchtool-callbacks.c:407
+#: gsearchtool/gsearchtool-callbacks.c:396
 #, c-format
 msgid "Open %d Folders?"
 msgstr "%d лавлахууд нээх үү?"
 
-#: gsearchtool/gsearchtool-callbacks.c:446
+#: gsearchtool/gsearchtool-callbacks.c:435
 msgid "The nautilus file manager is not running."
 msgstr "Nautilus-файлын менежер ажиллахгүй байна."
 
-#: gsearchtool/gsearchtool-callbacks.c:729
+#: gsearchtool/gsearchtool-callbacks.c:718
 msgid "Save Search Results As..."
 msgstr "Хайлтын үр дүнг доош хадгалах..."
 
-#: gsearchtool/gsearchtool-callbacks.c:772
+#: gsearchtool/gsearchtool-callbacks.c:761
 #, c-format
 msgid ""
 "Cannot save search results.\n"
@@ -1639,12 +1642,12 @@ msgstr ""
 "Хайлтын үр дүн хадгалагдахгүй байна.\n"
 "»%s« нь лавлах."
 
-#: gsearchtool/gsearchtool-callbacks.c:800
+#: gsearchtool/gsearchtool-callbacks.c:789
 #, c-format
 msgid "File \"%s\" already exists. Overwrite?"
 msgstr "»%s« файл хэдийнэ оршин байна. Түүнийг дарах уу?"
 
-#: gsearchtool/gsearchtool-callbacks.c:837
+#: gsearchtool/gsearchtool-callbacks.c:826
 #, c-format
 msgid "Cannot save search results to the file \"%s\"."
 msgstr "Хайлтын үр дүн »%s« файлд хадгалагдахгүй байна."
@@ -1666,27 +1669,27 @@ msgstr ""
 "GConf-Алдаа:\n"
 "  %s"
 
-#: gsearchtool/gsearchtool-support.c:507
+#: gsearchtool/gsearchtool-support.c:524
 msgid "%Y%m%d%H%M%S"
 msgstr "%d%m%Y, %H%M%S"
 
-#: gsearchtool/gsearchtool-support.c:538
+#: gsearchtool/gsearchtool-support.c:555
 msgid "today at %-I:%M %p"
 msgstr "Өнөөдөр %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:540
+#: gsearchtool/gsearchtool-support.c:557
 msgid "yesterday at %-I:%M %p"
 msgstr "Өчигдөр %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:542 gsearchtool/gsearchtool-support.c:544
+#: gsearchtool/gsearchtool-support.c:559 gsearchtool/gsearchtool-support.c:561
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%-d.%m.%y, %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:669
+#: gsearchtool/gsearchtool-support.c:686
 msgid "link (broken)"
 msgstr "Холбоос (алдаатай)"
 
-#: gsearchtool/gsearchtool-support.c:674
+#: gsearchtool/gsearchtool-support.c:691
 #, c-format
 msgid "link to %s"
 msgstr "%s -тэй холбох"
@@ -2160,4 +2163,3 @@ msgid ""
 msgstr ""
 "Эхлэлд ямар файл нээхийг өнгө үү. Стандартаар »/var/adm/messages« эсвэл »/"
 "var/log/messages« байдаг. Энэ нь таны хуваарилалтаас хамаарна."
-
