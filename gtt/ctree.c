@@ -381,36 +381,6 @@ printf ("before sibl %s\n\n", gtt_project_get_desc(
 }
 
 /* ============================================================== */
-/* redraw handler */
-
-static void
-redraw (GttProject *prj, gpointer data)
-{
-	ProjTreeNode *ptn = data;
-
-	gtk_ctree_node_set_text(ptn->ptw->ctree, ptn->ctnode, 
-		TITLE_COL,
-		gtt_project_get_title(prj));
-	gtk_ctree_node_set_text(ptn->ptw->ctree, ptn->ctnode,
-		DESC_COL,
-		gtt_project_get_desc(prj));
-
-	if (config_show_title_task)
-	{
-		GList *leadnode;
-		const char * tt;
-		leadnode = gtt_project_get_tasks (prj);
-		tt = gtt_task_get_memo (leadnode->data);
-		gtk_ctree_node_set_text(ptn->ptw->ctree, 
-			ptn->ctnode,
-			TASK_COL,
-			tt);
-	}
-
-	cupdate_label (ptn, GTK_CTREE_ROW(ptn->ctnode)->expanded);
-}
-
-/* ============================================================== */
 /* note about column layout:
  * We have two ways of doing this: create a column-cell object,
  * and program in an object-oriented styles.  The othe way is to
@@ -505,13 +475,38 @@ ctree_col_values (ProjTreeWindow *ptw, GttProject *prj)
 					(char *) gtt_project_get_desc(prj);
 				break;
 			case TASK_COL:
-				ptw->col_values[i] =  "duude";
+			{
+				GList *leadnode;
+				leadnode = gtt_project_get_tasks (prj);
+				ptw->col_values[i] =  
+					(char *) gtt_task_get_memo (leadnode->data);
 				break;
+			}
 			case NULL_COL:
 				ptw->col_values[i] =  "";
 				break;
 		}
 	}
+}
+
+/* ============================================================== */
+/* redraw handler */
+
+static void
+redraw (GttProject *prj, gpointer data)
+{
+	ProjTreeNode *ptn = data;
+	ProjTreeWindow *ptw = ptn->ptw;
+	int i;
+
+	ctree_col_values (ptw, prj);
+	for (i=0; i<ptw->ncols; i++)
+	{
+		gtk_ctree_node_set_text(ptw->ctree, ptn->ctnode, 
+			i, ptw->col_values[i]);
+	}
+
+	cupdate_label (ptn, GTK_CTREE_ROW(ptn->ctnode)->expanded);
 }
 
 /* ============================================================== */
