@@ -16,12 +16,13 @@
 # kostas: 483 messages, 30Oct2002, completed translation for GNOME2.
 # kostas: 26 Dec2002, updated translation for Gnome 2.1x
 # kostas: 468 messages, unfuzzy 3, 07Jan2003, one more update
+# kostas: 20Feb2003, unfuzzy 1
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.4\n"
-"POT-Creation-Date: 2003-01-27 11:32+0000\n"
-"PO-Revision-Date: 2003-01-07 17:43+0200\n"
+"POT-Creation-Date: 2003-02-20 18:02+0200\n"
+"PO-Revision-Date: 2003-02-20 18:05+0200\n"
 "Last-Translator: Kostas Papadimas <pkst@gmx.net>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
@@ -79,8 +80,7 @@ msgstr "Αυτή είναι μια βιβλιοθήκη και δε μπορεί
 
 #: exe-handler/gnome-exe-handler.c:158
 msgid "The file is a core file and can not be executed"
-msgstr ""
-"Το αρχείο είναι αρχείο αποτυπώματος μνήμης (core) και δε μπορεί να εκτελεστεί"
+msgstr "Το αρχείο είναι αρχείο αποτυπώματος μνήμης (core) και δε μπορεί να εκτελεστεί"
 
 #: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
@@ -139,169 +139,169 @@ msgstr "RAD"
 msgid "GRAD"
 msgstr "GRAD"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1256
 msgid "1/x"
 msgstr "1/x"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1256
 msgid "Inverse"
 msgstr "Αντίστροφο"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1257
 msgid "x<sup>2</sup>"
 msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1257
 msgid "Square"
 msgstr "Τετράγωνο"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1258
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1258
 msgid "Square root"
 msgstr "Τετραγωνική ρίζα"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1259
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1259
 msgid "Clear"
 msgstr "Εκκαθάριση"
 
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1260
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1260
 msgid "Reset"
 msgstr "Επαναρχικοποίηση"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1262
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1262
 msgid "Inverse trigonometry/log function"
 msgstr "Αντίστροφη τριγωνομετρική/λογαριθμική συνάρτηση"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1263
 msgid "sin"
 msgstr "ημ"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1263
 msgid "Sine"
 msgstr "Ημίτονο"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1264
 msgid "cos"
 msgstr "συν"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1264
 msgid "Cosine"
 msgstr "Συνημίτονο"
 
-#: gcalc/gnome-calc.c:1264
+#: gcalc/gnome-calc.c:1265
 msgid "tan"
 msgstr "εφ"
 
-#: gcalc/gnome-calc.c:1264
+#: gcalc/gnome-calc.c:1265
 msgid "Tangent"
 msgstr "Εφαπτωμένη"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1266
+#: gcalc/gnome-calc.c:1267
 msgid " DEG  "
 msgstr " DEG  "
 
-#: gcalc/gnome-calc.c:1266
+#: gcalc/gnome-calc.c:1267
 msgid "Switch degrees / radians / grad"
 msgstr "Αλλαγή μποίρες / ακτίνια / βαθμοί"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1269
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1269
 msgid "Base of Natural Logarithm"
 msgstr "Βάση του Φυσικού Λογαριθμικού"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1270
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1270
 msgid "Add digit"
 msgstr "Προσθήκη ψηφίου"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1271
 msgid "log"
 msgstr "λογ"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1271
 msgid "Base 10 Logarithm"
 msgstr "Λογάριθμος Βάσης 10 "
 
-#: gcalc/gnome-calc.c:1271
+#: gcalc/gnome-calc.c:1272
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1271
+#: gcalc/gnome-calc.c:1272
 msgid "Natural Logarithm"
 msgstr "Φυσικός Λογάριθμος"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1273
 msgid "x<sup>y</sup>"
 msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1273
 msgid "Power"
 msgstr "Δύναμη"
 
-#: gcalc/gnome-calc.c:1274
+#: gcalc/gnome-calc.c:1275
 msgid "PI"
 msgstr "π"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1276
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1276
 msgid "Factorial"
 msgstr "Παραγοντικό"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1277
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1277
 msgid "Opening Parenthesis"
 msgstr "Άνοιγμα Παρένθεσης"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1278
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1278
 msgid "Closing Parenthesis"
 msgstr "Κλείσιμο Παρένθεσης"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1279
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1279
 msgid "Divide by"
 msgstr "Διαίρεση με"
 
-#: gcalc/gnome-calc.c:1280
+#: gcalc/gnome-calc.c:1281
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1280
+#: gcalc/gnome-calc.c:1281
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -309,31 +309,31 @@ msgstr ""
 "Αποθήκευση της τιμής του\n"
 "πεδίου της οθόνης στη μνήμη"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1282
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1283
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1284
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1284 gfloppy/src/gfloppy2.glade.h:2
+#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:2
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1285
 msgid "Multiply by"
 msgstr "Πολλαπλασιασμός με"
 
-#: gcalc/gnome-calc.c:1286
+#: gcalc/gnome-calc.c:1287
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1286
+#: gcalc/gnome-calc.c:1287
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -341,31 +341,31 @@ msgstr ""
 "Προβολή της τιμής της μνήμης\n"
 "στο πεδίο της οθόνης"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1288
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1289
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1290
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1291
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1291
 msgid "Subtract"
 msgstr "Αφαίρεση"
 
-#: gcalc/gnome-calc.c:1292
+#: gcalc/gnome-calc.c:1293
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1292
+#: gcalc/gnome-calc.c:1293
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -373,31 +373,31 @@ msgstr ""
 "Προσθήκη της τιμής του πεδίου\n"
 "της οθόνης στην τιμή της μνήμης"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1294
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1295
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1296
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1297
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1297
 msgid "Add"
 msgstr "Πρόσθεση"
 
-#: gcalc/gnome-calc.c:1298
+#: gcalc/gnome-calc.c:1299
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1298
+#: gcalc/gnome-calc.c:1299
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -405,31 +405,31 @@ msgstr ""
 "Ανταλλαγή των τιμών της\n"
 "οθόνης και μνήμης"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1300
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1301
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1301
 msgid "Decimal Point"
 msgstr "Δεκαδικό Σημείο"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1302
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1302
 msgid "Change sign"
 msgstr "Αλλαγή προσήματος"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1303
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1303
 msgid "Calculate"
 msgstr "Υπολογισμός"
 
@@ -437,7 +437,7 @@ msgstr "Υπολογισμός"
 msgid "Perform simple calculations"
 msgstr "Κάνει απλούς υπολογισμούς"
 
-#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:160
+#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:159
 msgid "Character Map"
 msgstr "Πίνακας Χαρακτήρων"
 
@@ -482,8 +482,7 @@ msgid "GNOME Character Map"
 msgstr "Πίνακας Χαρακτήρων του GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid ""
-"Select, copy and paste characters from your font into other applications"
+msgid "Select, copy and paste characters from your font into other applications"
 msgstr ""
 "Επιλέξτε, αντιγράψτε και επικολλήστε χαρακτήρες από τη γραμματοσειρά σας σε "
 "άλλες εφαρμογές"
@@ -510,41 +509,41 @@ msgstr "Κομμένο κείμενο στο τεμάχιο..."
 msgid "Text pasted from clipboard..."
 msgstr "Επικολλημένο κείμενο από το τεμάχιο..."
 
-#: gcharmap/src/interface.c:190
+#: gcharmap/src/interface.c:189
 msgid "Action Toolbar"
 msgstr "Εργαλειοθήκη Ενεργειών"
 
-#: gcharmap/src/interface.c:194
+#: gcharmap/src/interface.c:193
 msgid "_Font:"
 msgstr "_Γραμματοσειρά:"
 
 #. The page selector
-#: gcharmap/src/interface.c:210
+#: gcharmap/src/interface.c:209
 msgid "_Page:"
 msgstr "_Σελίδα:"
 
 #. end of page selector
-#: gcharmap/src/interface.c:225
+#: gcharmap/src/interface.c:224
 msgid "_Text to copy:"
 msgstr "_Κείμενο προς αντιγραφή:"
 
-#: gcharmap/src/interface.c:240
+#: gcharmap/src/interface.c:239
 msgid "_Copy"
 msgstr "_Αντιγραφή"
 
-#: gcharmap/src/interface.c:262 gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:263 gcharmap/src/interface.c:264
 msgid "Text to copy"
 msgstr "Κείμενο προς αντιγραφή"
 
-#: gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:264
 msgid "Entry"
 msgstr "Καταχώρηση"
 
-#: gcharmap/src/interface.c:264 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:265 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Αντιγραφή"
 
-#: gcharmap/src/interface.c:264
+#: gcharmap/src/interface.c:265
 msgid "Copy the text"
 msgstr "Αντιγραφή του κειμένου"
 
@@ -1261,8 +1260,7 @@ msgstr "_Γρήγορη (δημιουργεί μόνο το σύστημα αρ�
 
 #: gfloppy/src/gfloppy2.glade.h:21
 msgid "_Standard (adds a low-level format to the quick mode)"
-msgstr ""
-"_Κανονική (προσθέτει μια μορφοποίηση χαηλού επιπέδου στην γρήγορη λειτουργία)"
+msgstr "_Κανονική (προσθέτει μια μορφοποίηση χαηλού επιπέδου στην γρήγορη λειτουργία)"
 
 #: gfloppy/src/main.c:132
 msgid ""
@@ -1275,8 +1273,7 @@ msgstr ""
 #: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr ""
-"Αποτυχία ανοίγματος της συσκευής %s η μορφοποίηση δε μπορεί να συνεχισθεί."
+msgstr "Αποτυχία ανοίγματος της συσκευής %s η μορφοποίηση δε μπορεί να συνεχισθεί."
 
 #: gfloppy/src/main.c:158 gfloppy/src/main.c:202
 #, c-format
@@ -1352,8 +1349,7 @@ msgstr ""
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr ""
-"ΜΟΝΟ ΓΙΑ ΠΡΟΧΩΡΗΜΕΝΟΥΣ ΧΡΗΣΤΕΣ - Εξ ορισμού backend  για μπορφοποίηση FAT "
+msgstr "ΜΟΝΟ ΓΙΑ ΠΡΟΧΩΡΗΜΕΝΟΥΣ ΧΡΗΣΤΕΣ - Εξ ορισμού backend  για μπορφοποίηση FAT "
 
 #: gfloppy/gfloppy.schemas.in.h:3
 msgid "Default filesystem type"
@@ -1375,7 +1371,7 @@ msgstr ""
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "ext2 για το σύστημα αρχείων linux ή fat για το σύστημα αρχείων DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1568
 msgid "Search for Files"
 msgstr "Αναζήτηση για Αρχεία"
 
@@ -1536,71 +1532,71 @@ msgstr "Μενού Κανόνων Αναζήτησης"
 msgid "Select a search rule from the menu"
 msgstr "Επιλέξτε ένα κανόνα αναζήτησης από το μενού"
 
-#: gsearchtool/gsearchtool.c:1226
+#: gsearchtool/gsearchtool.c:1225
 msgid "S_earch Results"
 msgstr "Απο_τελέσματα Αναζήτησης"
 
-#: gsearchtool/gsearchtool.c:1298
+#: gsearchtool/gsearchtool.c:1296
 msgid "Name"
 msgstr "Όνομα"
 
-#: gsearchtool/gsearchtool.c:1318
+#: gsearchtool/gsearchtool.c:1316
 msgid "Folder"
 msgstr "Φάκελος"
 
-#: gsearchtool/gsearchtool.c:1329
+#: gsearchtool/gsearchtool.c:1327
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: gsearchtool/gsearchtool.c:1339
+#: gsearchtool/gsearchtool.c:1337
 msgid "Type"
 msgstr "Είδος"
 
-#: gsearchtool/gsearchtool.c:1349
+#: gsearchtool/gsearchtool.c:1347
 msgid "Date Modified"
 msgstr "Ημερομηνία Τροποποίησης"
 
-#: gsearchtool/gsearchtool.c:1386
+#: gsearchtool/gsearchtool.c:1384
 msgid "File is _named:"
 msgstr "Το αρχείο ο_νομάζεται:"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1399 gsearchtool/gsearchtool.c:1400
 msgid "File Name Entry"
 msgstr "Καταχώρηση Ονόματος Αρχείου"
 
-#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1399 gsearchtool/gsearchtool.c:1400
 msgid "Enter the file name you want to search"
 msgstr "Εισάγετε το όνομα αρχείου που θέλετε να αναζητήσετε"
 
-#: gsearchtool/gsearchtool.c:1414
+#: gsearchtool/gsearchtool.c:1412
 msgid "_Look in folder:"
 msgstr "_Αναζήτηση στο φάκελο:"
 
-#: gsearchtool/gsearchtool.c:1420
+#: gsearchtool/gsearchtool.c:1418
 msgid "Browse"
 msgstr "Εξερεύνηση"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1427 gsearchtool/gsearchtool.c:1428
 msgid "Starting folder entry"
 msgstr "Καταχώρηση φάκελου έναρξης"
 
-#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1427 gsearchtool/gsearchtool.c:1428
 msgid "Enter the folder name where you want to start the search"
 msgstr "Εισάγετε το όνομα του φακέλου από όπου θέλετε να ξεκινήσει η αναζήτηση"
 
-#: gsearchtool/gsearchtool.c:1446 gsearchtool/gsearchtool.c:1447
+#: gsearchtool/gsearchtool.c:1444 gsearchtool/gsearchtool.c:1445
 msgid "Additional Options"
 msgstr "Πρόσθετες Επιλογές"
 
-#: gsearchtool/gsearchtool.c:1492
+#: gsearchtool/gsearchtool.c:1490
 msgid "Click to Start the search"
 msgstr "Πατήστε για να Ξεκινήσετε την αναζήτηση"
 
-#: gsearchtool/gsearchtool.c:1493
+#: gsearchtool/gsearchtool.c:1491
 msgid "Click to Stop the search"
 msgstr "Πατήστε για να Διακόψετε την αναζήτηση"
 
-#: gsearchtool/gsearchtool.c:1566
+#: gsearchtool/gsearchtool.c:1564
 msgid "Cannot initialize bonobo."
 msgstr "Αδυναμία αρχικοποίησης bonobo."
 
@@ -1638,8 +1634,7 @@ msgstr "Άνοιγμα %d Αρχείων?"
 #: gsearchtool/gsearchtool-callbacks.c:620
 #, c-format
 msgid "There is no installed viewer capable of displaying \"%s\"."
-msgstr ""
-"Δεν υπάρχει εγκατεστημένο πρόγραμμα παρουσίασης για την εμφάνιση του \"%s\"."
+msgstr "Δεν υπάρχει εγκατεστημένο πρόγραμμα παρουσίασης για την εμφάνιση του \"%s\"."
 
 #: gsearchtool/gsearchtool-callbacks.c:366
 #: gsearchtool/gsearchtool-callbacks.c:627
@@ -1649,8 +1644,7 @@ msgstr "Αδύνατη η Εμφάνιση της Τοποθεσίας"
 #: gsearchtool/gsearchtool-callbacks.c:404
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
-msgstr ""
-"Αυτό θα ανοίξει %d διαφορετικούς φάκελους. Πράγματι θέλετε να το κάνετε;"
+msgstr "Αυτό θα ανοίξει %d διαφορετικούς φάκελους. Πράγματι θέλετε να το κάνετε;"
 
 #: gsearchtool/gsearchtool-callbacks.c:407
 #, c-format
@@ -1701,27 +1695,27 @@ msgstr ""
 "Σφάλμα GConf:\n"
 "  %s"
 
-#: gsearchtool/gsearchtool-support.c:507
+#: gsearchtool/gsearchtool-support.c:524
 msgid "%Y%m%d%H%M%S"
 msgstr "%Y%m%d%H%M%S"
 
-#: gsearchtool/gsearchtool-support.c:538
+#: gsearchtool/gsearchtool-support.c:555
 msgid "today at %-I:%M %p"
 msgstr "σήμερα στις %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:540
+#: gsearchtool/gsearchtool-support.c:557
 msgid "yesterday at %-I:%M %p"
 msgstr "χθες στις %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:542 gsearchtool/gsearchtool-support.c:544
+#: gsearchtool/gsearchtool-support.c:559 gsearchtool/gsearchtool-support.c:561
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%m/%-d/%y, %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:669
+#: gsearchtool/gsearchtool-support.c:686
 msgid "link (broken)"
 msgstr "σύνδεσμος (σπασμένος)"
 
-#: gsearchtool/gsearchtool-support.c:674
+#: gsearchtool/gsearchtool-support.c:691
 #, c-format
 msgid "link to %s"
 msgstr "σύνδεσμος στο %s"
@@ -1857,8 +1851,7 @@ msgstr ""
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr ""
-"Αδυναμία ανοίγματος περιγραφής βάσης δεδομένων <%s>! Αποτυχία ανοίγματος."
+msgstr "Αδυναμία ανοίγματος περιγραφής βάσης δεδομένων <%s>! Αποτυχία ανοίγματος."
 
 #. ----------------------------------------------------------------------
 #. NAME:
@@ -2113,6 +2106,11 @@ msgstr "Σφάλμα: [%s]\n"
 #: logview/monitor.c:109
 msgid "Monitor Options"
 msgstr "Επιλογες παρακολούθησης"
+
+# FIX? drop (see also "On Drop" above)
+#: logview/monitor.c:112
+msgid "Ac_tions"
+msgstr "Ε_νέργειες"
 
 #: logview/monitor.c:135
 msgid "Choose logs to monitor:"
@@ -2588,3 +2586,4 @@ msgstr ""
 #~ msgstr ""
 #~ "Δε βρέθηκε το πρόγραμμα αρχειοθέτησης (tar)!\n"
 #~ "Αυτό το πρόγραμμα χρησιμοποιείται για τη δημιουργία αρχειοθετήσεων."
+
