@@ -37,6 +37,8 @@ typedef struct wiggy_s {
 	GtkHTMLStream *handle;
 	GtkWidget *top;
 	GtkWidget *interval_popup;
+
+	GtkWidget *interval_edit;
 	GttInterval *interval;
 } Wiggy;
 
@@ -129,13 +131,52 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 }
 
 /* ============================================================== */
-/* interval edits */
+/* interval dialog edits */
+
+static void
+interval_edit_ok_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	printf ("duude ok edit interval\n");
+}
+
+static void
+interval_edit_apply_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	printf ("duude apply edit interval\n");
+}
+
+static void
+interval_edit_cancel_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	gtk_widget_destroy (wig->interval_edit);
+printf ("duude cacnel edit interval\n");
+}
+
+/* ============================================================== */
+/* interval popup actions */
 
 static void
 interval_edit_clicked_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-	printf ("duude edit interval\n");
+	GladeXML  *glxml;
+
+	glxml = glade_xml_new ("glade/interval_edit.glade", "Interval Edit");
+
+	wig->interval_edit = glade_xml_get_widget (glxml, "Interval Edit");
+
+	glade_xml_signal_connect_data (glxml, "on_ok_button_clicked",
+	        GTK_SIGNAL_FUNC (interval_edit_ok_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_apply_button_clicked",
+	        GTK_SIGNAL_FUNC (interval_edit_apply_cb), wig);
+
+	glade_xml_signal_connect_data (glxml, "on_cancel_button_clicked",
+	        GTK_SIGNAL_FUNC (interval_edit_cancel_cb), wig);
+	  
 }
 
 static void
@@ -175,7 +216,7 @@ interval_popup_cb (Wiggy *wig)
 /* ============================================================== */
 /* memo edits */
 
-void
+static void
 memo_edit_cb (Wiggy *wig)
 {
 	printf ("duude edit the memo !!! \n");
@@ -258,9 +299,10 @@ edit_journal(GtkWidget *widget, gpointer data)
 	gtk_container_add(GTK_CONTAINER(jnl_viewport), jnl_browser);
 
 	/* ---------------------------------------------------- */
-	/* signals for the browser, and the sjournal window */
+	/* signals for the browser, and the journal window */
 
 	wig = g_new0 (Wiggy, 1);
+
 	wig->top = jnl_top;
 	wig->htmlw = GTK_HTML(jnl_browser);
 	wig->ph.open_stream = wiggy_open;
@@ -307,6 +349,9 @@ edit_journal(GtkWidget *widget, gpointer data)
 	glade_xml_signal_connect_data (glxml, "on_merge_down_activate",
 	        GTK_SIGNAL_FUNC (interval_merge_down_clicked_cb), wig);
 	  
+
+	/* ---------------------------------------------------- */
+	/* this is the dialog for editing intervals */
 
 	/* ---------------------------------------------------- */
 	/* finally ... display the actual journal */
