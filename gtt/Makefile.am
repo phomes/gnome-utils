@@ -9,6 +9,7 @@ gtt_SOURCES = 		\
 	err.c		\
 	err-throw.c	\
 	file-io.c	\
+	ghtml.c		\
 	journal.c	\
 	log.c		\
 	main.c		\
@@ -35,6 +36,7 @@ noinst_HEADERS = 	\
 	dialog.h	\
 	err-throw.h	\
 	file-io.h	\
+	ghtml.h		\
 	gtt.h		\
 	journal.h	\
 	menucmd.h	\
