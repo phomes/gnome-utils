@@ -308,16 +308,44 @@ beta_run_or_abort(GtkWidget *w, gint butnum)
 	}
 }
 
-void
+/* save_all() is a bit sloppy, in that if we get two errors in a row,
+ * we'll miss the second one ... but what the hey, who cares.
+ */
+
+const char *
 save_all (void)
 {
+	GttErrCode errcode;
+        const char *errmsg = NULL;
 	const char * xml_filepath;
 
 	xml_filepath = resolve_path (config_data_url);
 
-	gtt_save_config (NULL);
+        /* Try ... */
+        gtt_err_set_code (GTT_NO_ERR);
+        gtt_xml_write_file (xml_filepath);
 
-	gtt_xml_write_file (xml_filepath);
+        /* Catch */
+        errcode = gtt_err_get_code();
+        if (GTT_NO_ERR != errcode)
+        {
+                errmsg = gtt_err_to_string (errcode, xml_filepath);
+        }
+
+        /* Try ... */
+        gtt_err_set_code (GTT_NO_ERR);
+        gtt_save_config (NULL);
+
+        /* Catch */
+        errcode = gtt_err_get_code();
+        if (GTT_NO_ERR != errcode)
+        {
+                const char *fp;
+                fp = gtt_get_config_filepath();
+                errmsg = gtt_err_to_string (errcode, fp);
+        }
+
+	return errmsg;
 }
 
 

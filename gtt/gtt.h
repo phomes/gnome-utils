@@ -36,8 +36,10 @@ void err_init(void);
 
 /* main.c */
 
-/* save_all() will write out all state to files */
-void save_all (void);
+/* The save_all() routine will write out all state to files.  
+ *    If an error occurs, it returns an error message.
+ */
+const char * save_all (void);
 void unlock_gtt(void);
 const char *gtt_gettext(const char *s);
 

@@ -37,64 +37,22 @@
 #include "xml-gtt.h"
 
 
-static void 
-gtt_show_err (GttErrCode code)
-{
-	switch (code)
-	{
-		case GTT_NO_ERR:
-			return;
-
-		case GTT_CANT_OPEN_FILE:
-		case GTT_CANT_WRITE_FILE:
-		{
-			msgbox_ok(_("Warning"),
-			  _("Could not write the data file!"),
-			  GNOME_STOCK_BUTTON_OK,
-			  GTK_SIGNAL_FUNC(gtk_main_quit));
-			return;
-		}
-		case GTT_NOT_A_GTT_FILE:
-		{
-			msgbox_ok(_("Warning"),
-			  _("Could not read the data file!"),
-			  GNOME_STOCK_BUTTON_OK,
-			  GTK_SIGNAL_FUNC(gtk_main_quit));
-			return;
-		}
-		case GTT_CANT_WRITE_CONFIG:
-		{
-			msgbox_ok(_("Warning"),
-			  _("Could not write the configuration file!"),
-			  GNOME_STOCK_BUTTON_OK,
-			  GTK_SIGNAL_FUNC(gtk_main_quit));
-			return;
-		}
-		default:
-		{
-			msgbox_ok(_("Warning"),
-			  _("Unknown error occurred"),
-			  GNOME_STOCK_BUTTON_OK,
-			  GTK_SIGNAL_FUNC(gtk_main_quit));
-			return;
-		}
-	}
-}
-
 void
 quit_app(GtkWidget *w, gpointer data)
 {
-	GttErrCode errcode;
+	const char * errmsg;
 
-	gtt_err_set_code (GTT_NO_ERR);
-	save_all();
-
-	errcode = gtt_err_get_code();
-	if (GTT_NO_ERR != errcode)
+	errmsg = save_all ();
+	if (errmsg)
 	{
-		gtt_show_err (errcode);
+		msgbox_ok(_("Warning"),
+		     errmsg,
+		     GNOME_STOCK_BUTTON_OK,
+		     GTK_SIGNAL_FUNC(gtk_main_quit));
+		g_free ((gchar *) errmsg);
 		return;
 	}
+
 	gtk_main_quit();
 }
 
@@ -130,7 +88,7 @@ about_box(GtkWidget *w, gpointer data)
 	gtk_signal_connect(GTK_OBJECT(about), "destroy",
 			   GTK_SIGNAL_FUNC(gtk_widget_destroyed), &about);
 	gnome_dialog_set_parent(GNOME_DIALOG(about), GTK_WINDOW(window));
-	 gtk_widget_show(about);
+	gtk_widget_show(about);
 }
 
 
@@ -267,24 +225,16 @@ init_project_list(GtkWidget *widget, gpointer data)
 void
 save_project_list(GtkWidget *widget, gpointer data)
 {
-	GttErrCode errcode;
+	const char * errmsg;
 
-	gtt_err_set_code (GTT_NO_ERR);
-	save_all ();
-// xxxxxxxxxx
-	errcode = gtt_err_get_code();
-	if (GTT_NO_ERR != errcode) 
+	errmsg = save_all ();
+	if (errmsg)
 	{
-		GtkWidget *dlg, *t;
-		GtkBox *vbox;
-		
-		new_dialog_ok(_("Warning"), &dlg, &vbox,
-			      GNOME_STOCK_BUTTON_OK, NULL, NULL);
-		t = gtk_label_new(_("Could not write the configuration file!"));
-		gtk_widget_show(t);
-		gtk_box_pack_start(vbox, t, FALSE, FALSE, 2);
-		gtk_widget_show(dlg);
-		return;
+		msgbox_ok(_("Warning"),
+		     errmsg,
+		     GNOME_STOCK_BUTTON_OK,
+		     NULL);
+		g_free ((gchar *) errmsg);
 	}
 }
 
@@ -364,7 +314,7 @@ cut_project(GtkWidget *w, gpointer data)
 	prop_dialog_set_project(NULL);
 	gtt_project_remove(cur_proj);
 	cur_proj_set(NULL);
-	 ctree_remove(global_ptw, cutted_project);
+	ctree_remove(global_ptw, cutted_project);
 }
 
 
@@ -389,7 +339,7 @@ paste_project(GtkWidget *w, gpointer data)
 		  ctree_add(global_ptw, p, NULL);
 		return;
 	}
-	 ctree_insert_before(global_ptw, p, cur_proj);
+	ctree_insert_before(global_ptw, p, cur_proj);
 }
 
 
