@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.109.0\n"
-"POT-Creation-Date: 2002-07-09 20:20+0900\n"
-"PO-Revision-Date: 2002-07-09 20:26+0900\n"
+"POT-Creation-Date: 2002-07-10 10:52+0900\n"
+"PO-Revision-Date: 2002-07-10 10:53+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <gnome-kr-translation@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -869,51 +869,22 @@ msgid "Search Strategy"
 msgstr "기본 전략"
 
 #: gdictsrc/gdict.schemas.in.h:1
+msgid "Default database. ! indicates all databases"
+msgstr "기본 데이타베이스. !는 모든 데이타베이스를 뜻합니다"
+
+#: gdictsrc/gdict.schemas.in.h:2
+msgid "Default strategy"
+msgstr "기본 전략"
+
+#: gdictsrc/gdict.schemas.in.h:3
 msgid "Dictionary server"
 msgstr "사전 서버"
 
-#: gdictsrc/gdict.schemas.in.h:2
+#: gdictsrc/gdict.schemas.in.h:4
 msgid "Port used to connect to server"
 msgstr "서버에 연결할 때 사용할 포트"
 
-#: gdictsrc/gdict.schemas.in.h:3
-msgid ""
-"Specify whether to use smart lookup. This key is dependant on whether the "
-"dictionary server supports this option. The default is TRUE"
-msgstr "똑똑한 찾기 기능을 사용할 지 지정합니다. 이 기능은 해당 사전 서버가 이 옵션을 지원해야 효과가 있습니다. 기본값은 참입니다"
-
-#: gdictsrc/gdict.schemas.in.h:4
-msgid "The database to use in the dictionary server."
-msgstr "사전 서버에서 사용할 데이타베이스."
-
 #: gdictsrc/gdict.schemas.in.h:5
-msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers"
-msgstr "연결할 사전 서버. 기본 서버는 dict.org입니다. 다른 서버에 대한 정보는 http://www.dict.org 를 보십시오"
-
-#: gdictsrc/gdict.schemas.in.h:6
-msgid ""
-"The name of the individual database to use in the dictionary server. ! "
-"specifies that gnome-dictionary should search all databases in a given server"
-msgstr "사전 서버에서 사용할 각 데이타베이스의 이름. !는 주어진 서버의 모든 데이타베이스에서 찾는다는 뜻입니다"
-
-#: gdictsrc/gdict.schemas.in.h:7
-msgid "The port number to connect to. The default port is 2628."
-msgstr "연결할 포트 번호. 기본 포트는 2628입니다."
-
-#: gdictsrc/gdict.schemas.in.h:8
-msgid "The search strategy to use"
-msgstr "사용할 찾기 전략"
-
-#: gdictsrc/gdict.schemas.in.h:9
-msgid ""
-"The search strategy to use. This is dependant on the search strategy that "
-"the dictionary server supports. The default strategy is 'lev' - Match words "
-"within Levenshtein distance one"
-msgstr "사용할 찾기 전략. 이 기능은 주어진 사전 서버가 어떤 찾기 전략을 지원하느냐에 따라 효과가 있습니다. 기본 전략은 'lev'입니다. 'lev'는 한 Levenshtein 거리 내에 있는 단어를 찾습니다."
-
-#: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
 msgstr "똑똑한 찾기"
 
@@ -1135,12 +1106,12 @@ msgstr "포맷(_F)"
 msgid "_Quick format"
 msgstr "빠른 포맷(_Q)"
 
-#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
+#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "%s 장치를 열 수 없습니다. 포맷을 계속할 수 없습니다."
 
-#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
+#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1149,7 +1120,7 @@ msgstr ""
 "%s 장치의 연결이 끊어졌습니다.\n"
 "계속하려면 장치를 연결하십시오."
 
-#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
+#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1159,7 +1130,15 @@ msgstr ""
 "%s에 쓸 수 있는 허가권이 없으므로, 포맷이 불가능합니다.\n"
 "시스템 관리자에게 연락해서 쓰기 허가권을 달라고 하십시오."
 
-#: gfloppy/src/main.c:291
+#: gfloppy/src/main.c:292
+msgid "The device to format"
+msgstr "포맷할 장치"
+
+#: gfloppy/src/main.c:293
+msgid "DEVICE"
+msgstr "장치"
+
+#: gfloppy/src/main.c:360
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
@@ -1168,13 +1147,9 @@ msgstr ""
 "플로피 포맷기에 대한 도움말을 표시할 수 없습니다.\n"
 "%s"
 
-#: gfloppy/src/main.c:359
-msgid "The device to format"
-msgstr "포맷할 장치"
-
-#: gfloppy/src/main.c:360
-msgid "DEVICE"
-msgstr "장치"
+#: gfloppy/src/main.c:399
+msgid "Format another floppy?"
+msgstr "또 다른 플로피를 포맷할까요?"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
