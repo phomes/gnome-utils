@@ -1,16 +1,16 @@
-# Swedish translation of gnome-utils.
-# Copyright (C) 2000, 2001 Free Software Foundation, Inc.
+# Swedish messages for gnome-utils.
+# Copyright (C) 2000, 2001, 2002 Free Software Foundation, Inc.
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Andreas Hyden <a.hyden@cyberpoint.se>.
-# Christian Rose <menthos@menthos.com>, 2001.
+# Christian Rose <menthos@menthos.com>, 2001, 2002.
 #
 # $Id$
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2001-12-01 23:13+0100\n"
-"PO-Revision-Date: 2001-12-01 23:13+0100\n"
+"POT-Creation-Date: 2002-01-31 03:20+0100\n"
+"PO-Revision-Date: 2002-01-31 03:20+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -166,15 +166,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:965
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:964
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:963
 msgid "3"
 msgstr "3"
 
@@ -817,7 +817,7 @@ msgstr "Lägg till"
 msgid "Show Command"
 msgstr "Visa kommando"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:582
 #: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Starta"
@@ -901,170 +901,241 @@ msgstr ""
 "Förstod inte geometrin (position och storlek)\n"
 " som angavs på kommandoraden"
 
-#: gtt/ctree.c:511
+#: gtt/ctree.c:517
 msgid "Total"
 msgstr "Totalt"
 
-#: gtt/ctree.c:513
+#: gtt/ctree.c:519
 msgid "Total time spent on this project."
 msgstr "Total tid spenderad på detta projekt."
 
-#: gtt/ctree.c:518
+#: gtt/ctree.c:524
 msgid "Entry"
 msgstr "Post"
 
-#: gtt/ctree.c:520
+#: gtt/ctree.c:526
 msgid "Time spent under the current diary entry."
 msgstr "Tid spenderad under den aktuella dagboksposten."
 
-#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:532 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Idag"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:534
 msgid "Time spent on this project today."
 msgstr "Tid spenderad på detta projekt idag."
 
-#: gtt/ctree.c:533
+#: gtt/ctree.c:539
 msgid "Week"
 msgstr "Vecka"
 
-#: gtt/ctree.c:535
+#: gtt/ctree.c:541
 msgid "Time spent on this project this week."
 msgstr "Tid spenderad på detta projekt denna vecka."
 
-#: gtt/ctree.c:541
+#: gtt/ctree.c:547
 msgid "Month"
 msgstr "Månad"
 
-#: gtt/ctree.c:543
+#: gtt/ctree.c:549
 msgid "Time spent on this project this month."
 msgstr "Tid spenderad på detta projekt denna månad."
 
-#: gtt/ctree.c:549
+#: gtt/ctree.c:555
 msgid "Year"
 msgstr "År"
 
-#: gtt/ctree.c:551
+#: gtt/ctree.c:557
 msgid "Time spent on this project this year."
 msgstr "Tid spenderad på detta projekt detta år."
 
-#: gtt/ctree.c:557
+#: gtt/ctree.c:563
 msgid "Title"
 msgstr "Titel"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:148
+#: gtt/ctree.c:564 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Projekttitel"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
+#: gtt/ctree.c:569 gtt/ctree.c:570 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Beskrivning"
 
-#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+#: gtt/ctree.c:575 gtt/ghtml.c:95 gtt/ghtml.c:220
 msgid "Diary Entry"
 msgstr "Dagbokspost"
 
-#: gtt/ctree.c:571
+#: gtt/ctree.c:577
 msgid "The current diary entry"
 msgstr "Den aktuella dagboksposten"
 
-#: gtt/ctree.c:578
+#: gtt/ctree.c:584
 msgid "Estimated Project Start Date"
 msgstr "Uppskattat startdatum för projektet"
 
-#: gtt/ctree.c:583
+#: gtt/ctree.c:589
 msgid "End"
 msgstr "Slut"
 
-#: gtt/ctree.c:585
+#: gtt/ctree.c:591
 msgid "Estimated Project Completion Date"
 msgstr "Uppskattat färdigställningsdatum för projektet"
 
-#: gtt/ctree.c:590
+#: gtt/ctree.c:596
 msgid "Due"
 msgstr "Färdigt den"
 
-#: gtt/ctree.c:592
+#: gtt/ctree.c:598
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
 msgstr "Färdigtdatum: det datum då projektet absolut måste vara färdigt."
 
-#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+#: gtt/ctree.c:605 mini-utils/guname/info.c:61
 msgid "Size"
 msgstr "Storlek"
 
-#: gtt/ctree.c:601
+#: gtt/ctree.c:607
 msgid "Sizing: How much work it will take to finish this project."
 msgstr ""
 "Projektstorlek: Hur mycket arbete det kommer att ta att färdigställa detta "
 "projekt."
 
-#: gtt/ctree.c:607
+#: gtt/ctree.c:613
 msgid "Done"
 msgstr "Klart"
 
-#: gtt/ctree.c:609
+#: gtt/ctree.c:615
 msgid "Percent Complete: How much of this project has been finished till now."
 msgstr "Procent färdigt: Hur mycket av detta projekt som är färdigt just nu."
 
-#: gtt/ctree.c:616
+#: gtt/ctree.c:622
 msgid "U"
 msgstr "A"
 
-#: gtt/ctree.c:618
+#: gtt/ctree.c:624
 msgid "Urgency: Does this project need to be done soon, done quickly?"
 msgstr ""
 "Angelägenhet: Måste detta projekt bli färdigt snart, och väldigt snabbt?"
 
-#: gtt/ctree.c:624
+#: gtt/ctree.c:630
 msgid "Imp"
 msgstr "Vikt"
 
-#: gtt/ctree.c:626
+#: gtt/ctree.c:632
 msgid "Importance: How important is this project?"
 msgstr "Viktighet: Hur viktigt är detta projekt?"
 
-#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:638 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
 msgstr "Status"
 
-#: gtt/ctree.c:634
+#: gtt/ctree.c:640
 msgid "The current status of this project."
 msgstr "Den aktuella statusen för detta projekt."
 
-#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
+#: gtt/ctree.c:975 gtt/glade/project_properties.glade.h:25
 msgid "Low"
 msgstr "Låg"
 
-#: gtt/ctree.c:970
+#: gtt/ctree.c:976
 msgid "Med"
 msgstr "Mellan"
 
-#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
+#: gtt/ctree.c:977 gtt/glade/project_properties.glade.h:15
 msgid "High"
 msgstr "Hög"
 
-#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
+#: gtt/ctree.c:986 gtt/glade/project_properties.glade.h:29
 msgid "Not Started"
 msgstr "Inte påbörjad"
 
-#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
+#: gtt/ctree.c:987 gtt/glade/project_properties.glade.h:21
 msgid "In Progress"
 msgstr "Pågår"
 
-#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
 msgstr "Vilande"
 
-#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:989 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
 msgstr "Avbrutet"
 
-#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
+#: gtt/ctree.c:990 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
 msgstr "Färdigställd"
+
+#: gtt/err-throw.c:61
+msgid "No Error"
+msgstr "Inget fel"
+
+#: gtt/err-throw.c:65
+#, c-format
+msgid ""
+"Cannot open the project data file\n"
+"\t%s\n"
+msgstr ""
+"Kan inte öppna projektdatafil\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:70
+#, c-format
+msgid ""
+"Cannot write the project data file\n"
+"\t%s\n"
+msgstr ""
+"Kan inte skriva projektdatafil\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:75
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"doesn't seem to be a GTT project data file\n"
+msgstr ""
+"Filen\n"
+"\t%s\n"
+"verkar inte vara en GTT-projektdatafil\n"
+
+#: gtt/err-throw.c:81
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"seems to be corrupt\n"
+msgstr ""
+"Filen\n"
+"\t%s\n"
+"verkar vara skadad\n"
+
+#: gtt/err-throw.c:87
+#, c-format
+msgid ""
+"An unknown token was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+"Ett okänt element hittades vid tolkningen av\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:92
+#, c-format
+msgid ""
+"An unknown value was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+"Ett okänt värde hittades vid tolkningen av\n"
+"\t%s\n"
+
+#: gtt/err-throw.c:97
+#, c-format
+msgid ""
+"Cannot write the config file\n"
+"\t%s\n"
+msgstr ""
+"Kan inte skriva konfigurationsfilen\n"
+"\t%s\n"
 
 #: gtt/file-io.c:376
 msgid "project %t started"
@@ -5030,9 +5101,6 @@ msgstr "Personlig crontab-hanterare"
 #~ msgstr ""
 #~ "Ett fel uppstod vid läsning av konfigurationsfilen.\n"
 #~ "Ska jag skapa en ny uppsättning inställningar?"
-
-#~ msgid "Could not write the configuration file!"
-#~ msgstr "Kunde inte skriva konfigurationsfilen!"
 
 #~ msgid "Unknown error occurred"
 #~ msgstr "Okänt kommando inträffade"
