@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-07-10 22:02+0400\n"
-"PO-Revision-Date: 2002-07-10 22:06+04:00\n"
+"POT-Creation-Date: 2002-07-16 08:35+0400\n"
+"PO-Revision-Date: 2002-07-16 08:49+04:00\n"
 "Last-Translator: Dmitry G. Mastrukov <dmitry@taurussoft.org>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -77,7 +77,7 @@ msgstr ""
 "на этой системе"
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
@@ -424,69 +424,69 @@ msgstr "Таблица символов"
 msgid "Insert special characters into documents"
 msgstr "Вставить специальные символы в документы"
 
-#: gcharmap/src/asciiselect.c:116
+#: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
 msgstr "Выберите символ"
 
-#: gcharmap/src/asciiselect.c:119
+#: gcharmap/src/asciiselect.c:120
 msgid "_Insert"
 msgstr "Вст_авить"
 
 #: gcharmap/src/asciiselect.c:123
-msgid "Character code:"
-msgstr "Код символа:"
+msgid "Character c_ode:"
+msgstr "К_од символа:"
 
-#: gcharmap/src/asciiselect.c:135
-msgid "Character:"
-msgstr "Символ:"
+#: gcharmap/src/asciiselect.c:137
+msgid "Ch_aracter:"
+msgstr "Си_мвол:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
 msgstr "Код символа"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Select character code"
 msgstr "Выберите код символа"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character"
 msgstr "Символ"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character to insert"
 msgstr "Символ для вставки"
 
-#: gcharmap/src/asciiselect.c:152
+#: gcharmap/src/asciiselect.c:157
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-*-*-koi8-*"
 
-#: gcharmap/src/callbacks.c:64
+#: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "Таблица символов среды GNOME"
 
-#: gcharmap/src/callbacks.c:67
+#: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr "Выбрать, скопировать и вставить символы из шрифта в другие приложения"
 
-#: gcharmap/src/callbacks.c:114
+#: gcharmap/src/callbacks.c:113
 msgid "del"
 msgstr "del"
 
-#: gcharmap/src/callbacks.c:120
+#: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
 msgstr "%s: код символа %d"
 
-#: gcharmap/src/callbacks.c:156
+#: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
 msgstr "Текст скопирован в буфер обмена..."
 
-#: gcharmap/src/callbacks.c:173
+#: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
 msgstr "Текст вырезан в буфер обмена..."
 
-#: gcharmap/src/callbacks.c:226
+#: gcharmap/src/callbacks.c:225
 msgid "Text pasted from clipboard..."
 msgstr "Текст вставлен из буфера обмена..."
 
@@ -531,8 +531,8 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "Вставить символ(ы), выбрав коды."
 
 #: gcharmap/src/menus.c:63
-msgid "_Characters"
-msgstr "_Символы"
+msgid "Ch_aracters"
+msgstr "С_имволы"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
@@ -577,7 +577,7 @@ msgstr "Введите текст"
 msgid "Accessories"
 msgstr "Стандартные"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:250
+#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Поиск в словаре"
 
@@ -609,8 +609,8 @@ msgstr "_Показать/Скрыть окно определения..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
-#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Невозможно подключиться к серверу"
 
@@ -719,7 +719,7 @@ msgstr "Введите слово или выберите одно из спис
 msgid "Look Up for a Word"
 msgstr "Поискать слово"
 
-#: gdictsrc/gdict-applet.c:243
+#: gdictsrc/gdict-applet.c:263
 msgid "_Lookup"
 msgstr "По_искать"
 
@@ -760,83 +760,83 @@ msgstr "Словарная статья:"
 msgid "Cross-reference:"
 msgstr "Перекрёстные ссылки:"
 
-#: gdictsrc/gdict-pref-dialog.c:185
+#: gdictsrc/gdict-pref-dialog.c:186
 msgid "Dictionary Preferences"
 msgstr "Настроить словарь"
 
-#: gdictsrc/gdict-pref-dialog.c:197
+#: gdictsrc/gdict-pref-dialog.c:198
 msgid "Smart _lookup"
 msgstr "Раз_умный поиск"
 
-#: gdictsrc/gdict-pref-dialog.c:210
+#: gdictsrc/gdict-pref-dialog.c:211
 msgid "_Server:"
 msgstr "Сервер:"
 
-#: gdictsrc/gdict-pref-dialog.c:217
+#: gdictsrc/gdict-pref-dialog.c:218
 msgid "De_fault"
 msgstr "С_бросить"
 
-#: gdictsrc/gdict-pref-dialog.c:223
+#: gdictsrc/gdict-pref-dialog.c:224
 msgid "Reset server to default"
 msgstr "Сбросить сервер к исходным настройкам"
 
-#: gdictsrc/gdict-pref-dialog.c:225
+#: gdictsrc/gdict-pref-dialog.c:226
 msgid "_Port:"
 msgstr "По_рт:"
 
-#: gdictsrc/gdict-pref-dialog.c:239
+#: gdictsrc/gdict-pref-dialog.c:240
 msgid "Def_ault"
 msgstr "Сбр_осить"
 
-#: gdictsrc/gdict-pref-dialog.c:246
+#: gdictsrc/gdict-pref-dialog.c:247
 msgid "Reset port to default"
 msgstr "Сбросить порт к исходным установкам"
 
-#: gdictsrc/gdict-pref-dialog.c:247
+#: gdictsrc/gdict-pref-dialog.c:248
 msgid "Server"
 msgstr "Сервер"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Server Entry"
 msgstr "Элемент сервера"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
 msgstr "Введите имя сервера"
 
-#: gdictsrc/gdict-pref-dialog.c:251
+#: gdictsrc/gdict-pref-dialog.c:252
 msgid "Port"
 msgstr "Порт"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Port Entry"
 msgstr "Элемент порта"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
 msgstr "Введите номер порта"
 
-#: gdictsrc/gdict-pref-dialog.c:257
+#: gdictsrc/gdict-pref-dialog.c:258
 msgid "_Database:"
 msgstr "База _данных:"
 
-#: gdictsrc/gdict-pref-dialog.c:264
+#: gdictsrc/gdict-pref-dialog.c:265
 msgid "D_efault strategy:"
 msgstr "Ис_ходная стратегия:"
 
-#: gdictsrc/gdict-pref-dialog.c:457
+#: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
 msgstr "Искать во всех базах данных"
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 msgid "Database"
 msgstr "База данных"
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 msgid "Database Name"
 msgstr "Наименование базы данных"
 
-#: gdictsrc/gdict-pref-dialog.c:634
+#: gdictsrc/gdict-pref-dialog.c:635
 msgid "Default Strategy"
 msgstr "Исходная стратегия"
 
@@ -869,22 +869,60 @@ msgid "Search Strategy"
 msgstr "Стратегия поиска"
 
 #: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr "База данных по умолчанию. \"!\" обозначает все базы данных"
-
-#: gdictsrc/gdict.schemas.in.h:2
-msgid "Default strategy"
-msgstr "Исходная стратегия"
-
-#: gdictsrc/gdict.schemas.in.h:3
 msgid "Dictionary server"
 msgstr "Сервер словаря"
 
-#: gdictsrc/gdict.schemas.in.h:4
+#: gdictsrc/gdict.schemas.in.h:2
 msgid "Port used to connect to server"
 msgstr "Порт, используемый для подключения к серверу"
 
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+"Указать, используется ли интеллектуальный поиск. Ключ зависит от того, "
+"поддерживает ли сервер этот параметр. Исходным значением является ИСТИНА (TRUE)"
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr "База данных на сервере для использования."
+
 #: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+"Сервер словаря для подключения. Исходным сервером является "
+"dict.org. Смотрите http://www.dict.org для подробностей по другим серверам"
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+"Наименование индивидуальной базы данных на сервере для использования. ! "
+"означает, что программе gnome-dictionary следует осуществлять поиск во всех "
+"доступных базах данных не сервере"
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr "Номер порта для подключения. Исходным значением является 2628"
+
+#: gdictsrc/gdict.schemas.in.h:8
+msgid "The search strategy to use"
+msgstr "Используемая стратегия поиска"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+"Используемая стратегия поиска. Зависит от стратегий поиска, поддерживаемых сервером. "
+"Исходной стратегией является \"lev\" - Совпадающие слова по Левенштейну"
+
+#: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
 msgstr "Использовать разумный поиск"
 
@@ -1106,13 +1144,13 @@ msgstr "От_форматировать"
 msgid "_Quick format"
 msgstr "_Быстрое форматирование"
 
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr ""
 "Не удалось открыть устройство %s, невозможно продолжать форматирование."
 
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1121,7 +1159,7 @@ msgstr ""
 "Устройство %s отключено.\n"
 "Для продолжения подключите устройство."
 
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1132,15 +1170,7 @@ msgstr ""
 "возможно.\n"
 "Свяжитесь с системным администратором для получения прав на запись."
 
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr "Устройство для форматирования"
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr "УСТРОЙСТВО"
-
-#: gfloppy/src/main.c:360
+#: gfloppy/src/main.c:291
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
@@ -1149,9 +1179,13 @@ msgstr ""
 "Не удалось отобразить справку.\n"
 "%s"
 
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
-msgstr "Отформатировать другую дискету?"
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr "Устройство для форматирования"
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
+msgstr "УСТРОЙСТВО"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
@@ -1573,39 +1607,43 @@ msgstr "Ошибка синтаксического анализа базы да
 msgid "Can't write to actions database!"
 msgstr "Невозможно записать в базу данных действий!"
 
-#: logview/actions.c:493
+#: logview/actions.c:486
+msgid "Error while executing specified action"
+msgstr "Ошибка при выполнении указанного действия"
+
+#: logview/actions.c:507
 msgid "<empty>"
 msgstr "<пусто>"
 
-#: logview/actions.c:494
+#: logview/actions.c:508
 msgid "log name regexp"
 msgstr "регулярное выражение для журнала"
 
-#: logview/actions.c:495
+#: logview/actions.c:509
 msgid "process regexp"
 msgstr "регулярное выражение для процесса"
 
-#: logview/actions.c:496
+#: logview/actions.c:510
 msgid "message regexp"
 msgstr "регулярное выражение для сообщения"
 
-#: logview/actions.c:497
+#: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
 msgstr "действие, выполняемое когда regexps -- TRUE"
 
-#: logview/actions.c:498
+#: logview/actions.c:512
 msgid "description"
 msgstr "описание"
 
-#: logview/actions.c:758
+#: logview/actions.c:772
 msgid "_Description:"
 msgstr "_Описание:"
 
-#: logview/actions.c:767
+#: logview/actions.c:781
 msgid "Description of this entry."
 msgstr "Описание этой записи."
 
-#: logview/actions.c:791
+#: logview/actions.c:805
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2169,6 +2207,15 @@ msgid ""
 msgstr ""
 "Невозможно найти программу tar!\n"
 "Эта программа используется для создания архивов."
+
+#~ msgid "Default database. ! indicates all databases"
+#~ msgstr "База данных по умолчанию. \"!\" обозначает все базы данных"
+
+#~ msgid "Default strategy"
+#~ msgstr "Исходная стратегия"
+
+#~ msgid "Format another floppy?"
+#~ msgstr "Отформатировать другую дискету?"
 
 #~ msgid "x^2"
 #~ msgstr "x^2"
