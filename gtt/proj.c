@@ -21,7 +21,7 @@
 
 #include <errno.h>
 #include <gnome.h>    /* only needed for definition of _() */
-#include <libintl.h>
+/* #include <libintl.h> conflicts with <libgnome/gnome-i18n.h> on some systems */
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -37,7 +37,7 @@ typedef struct notif_s
 	gpointer user_data;
 } Notifier;
 
-// hack alert -- should be static/private to this file
+// hack alert -- plist should be made static/private to this file
 GList * plist = NULL;
 
 static void proj_refresh_time (GttProject *proj);
