@@ -37,12 +37,13 @@ typedef struct gtt_phtml_s GttPhtml;
 GttPhtml * gtt_phtml_new (void);
 void gtt_phtml_destroy (GttPhtml *p);
 
-typedef void (*GttPhtmlOpenStream) (GttPhtml *);
-typedef void (*GttPhtmlWriteStream) (GttPhtml *, const char *, size_t len);
-typedef void (*GttPhtmlCloseStream) (GttPhtml *);
-typedef void (*GttPhtmlError) (GttPhtml *, int errcode, const char * msg);
+typedef void (*GttPhtmlOpenStream) (GttPhtml *, gpointer);
+typedef void (*GttPhtmlWriteStream) (GttPhtml *, const char *, size_t len, gpointer);
+typedef void (*GttPhtmlCloseStream) (GttPhtml *, gpointer);
+typedef void (*GttPhtmlError) (GttPhtml *, int errcode, const char * msg, gpointer);
 
-void gtt_phtml_set_stream (GttPhtml *, GttPhtmlOpenStream, 
+void gtt_phtml_set_stream (GttPhtml *, gpointer user_data,
+                                       GttPhtmlOpenStream, 
                                        GttPhtmlWriteStream,
                                        GttPhtmlCloseStream, 
                                        GttPhtmlError);

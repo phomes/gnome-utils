@@ -29,7 +29,7 @@
 
 typedef enum {
 	NUL=0,
-	START =1,
+	START_DATIME =1,
 	STOP,
 	ELAPSED,
 	BILLABLE,
@@ -37,18 +37,26 @@ typedef enum {
 
 } TableCol;
 
+#define NCOL 30
+
 struct gtt_phtml_s
 {
-	void (*open_stream) (GttPhtml *);
-	void (*write_stream) (GttPhtml *, const char *, size_t len);
-	void (*close_stream) (GttPhtml *);
-	void (*error) (GttPhtml *, int errcode, const char * msg);
+	/* stream interface for writing */
+	void (*open_stream) (GttPhtml *, gpointer);
+	void (*write_stream) (GttPhtml *, const char *, size_t len, gpointer);
+	void (*close_stream) (GttPhtml *, gpointer);
+	void (*error) (GttPhtml *, int errcode, const char * msg, gpointer);
+	gpointer user_data;
+
+	/* parseing state */
+	int ncols;
+	TableCol cols[NCOL];
 };
 
 /* ============================================================== */
 
 static void
-show_journal (GttPhtml *phtml, GttProject*prj)
+show_table (GttPhtml *phtml, GttProject*prj)
 {
 	GList *node;
 	const char *buf;
@@ -56,7 +64,7 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 	buf = _("<table border=1><caption><em>hey hey hey!</em></caption>"
 		"<tr><th colspan=4>Memo"
 		"<tr><th>&nbsp;<th>Start<th>Stop<th>Elapsed");
-	(phtml->write_stream) (phtml, buf, strlen(buf));
+	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
 
 	for (node = gtt_project_get_tasks(prj); node; node=node->next)
 	{
@@ -76,7 +84,95 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 		p = stpcpy (p, buf);
 		p = stpcpy (p, "</a>");
 
-		(phtml->write_stream) (phtml, prn, p-prn);
+		(phtml->write_stream) (phtml, prn, p-prn, phtml->user_data);
+		
+		for (in=gtt_task_get_intervals(tsk); in; in=in->next)
+		{
+			size_t len;
+			GttInterval *ivl = in->data;
+			time_t start, stop, elapsed;
+			start = gtt_interval_get_start (ivl);
+			stop = gtt_interval_get_stop (ivl);
+			elapsed = stop - start;
+			
+			p = prn;
+			p = stpcpy (p, 
+				"<tr><td>&nbsp;&nbsp;&nbsp;"
+				"<td align=right>&nbsp;&nbsp;"
+				"<a href=\"gtt:interval:");
+			p += sprintf (p, "%p\">", ivl);
+
+			/* print hour only or date too? */
+			if (0 != prev_stop) {
+				prt_date = is_same_day(start, prev_stop);
+			}
+			if (prt_date) {
+				p = print_date_time (p, 100, start);
+			} else {
+				p = print_time (p, 100, start);
+			}
+
+			/* print hour only or date too? */
+			prt_date = is_same_day(start, stop);
+			p = stpcpy (p, 
+				"</a>&nbsp;&nbsp;"
+				"<td>&nbsp;&nbsp;"
+				"<a href=\"gtt:interval:");
+			p += sprintf (p, "%p\">", ivl);
+			if (prt_date) {
+				p = print_date_time (p, 70, stop);
+			} else {
+				p = print_time (p, 70, stop);
+			}
+
+			prev_stop = stop;
+
+			p = stpcpy (p, "</a>&nbsp;&nbsp;<td>&nbsp;&nbsp;");
+			p = print_hours_elapsed (p, 40, elapsed, TRUE);
+			p = stpcpy (p, "&nbsp;&nbsp;");
+			len = p - prn;
+			(phtml->write_stream) (phtml, prn, len, phtml->user_data);
+		}
+
+	}
+	
+	buf = "</table>";
+	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
+
+}
+
+/* ============================================================== */
+
+static void
+show_journal (GttPhtml *phtml, GttProject*prj)
+{
+	GList *node;
+	const char *buf;
+
+	buf = _("<table border=1><caption><em>hey hey hey!</em></caption>"
+		"<tr><th colspan=4>Memo"
+		"<tr><th>&nbsp;<th>Start<th>Stop<th>Elapsed");
+	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
+
+	for (node = gtt_project_get_tasks(prj); node; node=node->next)
+	{
+		char prn[1232], *p;
+		int prt_date = 1;
+		time_t prev_stop = 0;
+		GList *in;
+		GttTask *tsk = node->data;
+		
+		p = prn;
+		p = stpcpy (p, "<tr><td colspan=4>"
+			"<a href=\"gtt:task:");
+		p += sprintf (p, "%p\">", tsk);
+
+		buf = gtt_task_get_memo(tsk);
+		if (!buf || !buf[0]) buf = _("(empty)");
+		p = stpcpy (p, buf);
+		p = stpcpy (p, "</a>");
+
+		(phtml->write_stream) (phtml, prn, p-prn, phtml->user_data);
 
 		
 		for (in=gtt_task_get_intervals(tsk); in; in=in->next)
@@ -124,13 +220,13 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 			p = print_hours_elapsed (p, 40, elapsed, TRUE);
 			p = stpcpy (p, "&nbsp;&nbsp;");
 			len = p - prn;
-			(phtml->write_stream) (phtml, prn, len);
+			(phtml->write_stream) (phtml, prn, len, phtml->user_data);
 		}
 
 	}
 	
 	buf = "</table>";
-	(phtml->write_stream) (phtml, buf, strlen(buf));
+	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
 
 }
 
@@ -147,14 +243,14 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 		{
 			const char * str = gtt_project_get_title(prj);
 			if (!str || !str[0]) str = _("(empty)");
-			(phtml->write_stream) (phtml, str, strlen(str));
+			(phtml->write_stream) (phtml, str, strlen(str), phtml->user_data);
 		}
 		else
 		if (0 == strncmp (tok, "$project_desc", 13))
 		{
 			const char * str = gtt_project_get_desc(prj);
 			str = str? str : "";
-			(phtml->write_stream) (phtml, str, strlen(str));
+			(phtml->write_stream) (phtml, str, strlen(str), phtml->user_data);
 		}
 		else
 		if (0 == strncmp (tok, "$journal", 8))
@@ -162,14 +258,25 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 			show_journal (phtml, prj);
 		}
 		else
+		if (0 == strncmp (tok, "$table", 6))
+		{
+			show_table (phtml, prj);
+		}
+		else
+		if (0 == strncmp (tok, "$start_datime", 13))
+		{
+			phtml->cols[phtml->ncols] = START_DATIME;
+			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+		}
+		else
 		{
 			const char * str;
 			str = _("unknown token: >>>>");
-			(phtml->write_stream) (phtml, str, strlen(str));
+			(phtml->write_stream) (phtml, str, strlen(str), phtml->user_data);
 			str = tok;
-			(phtml->write_stream) (phtml, str, strlen(str));
+			(phtml->write_stream) (phtml, str, strlen(str), phtml->user_data);
 			str = "<<<<";
-			(phtml->write_stream) (phtml, str, strlen(str));
+			(phtml->write_stream) (phtml, str, strlen(str), phtml->user_data);
 		}
 
 		/* find the next one */
@@ -190,7 +297,7 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 		
 	if (!filepath)
 	{
-		(phtml->error) (phtml, 404, NULL);
+		(phtml->error) (phtml, 404, NULL, phtml->user_data);
 		return;
 	}
 
@@ -198,12 +305,12 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 	ph = fopen (filepath, "r");
 	if (!ph)
 	{
-		(phtml->error) (phtml, 404, filepath);
+		(phtml->error) (phtml, 404, filepath, phtml->user_data);
 		return;
 	}
 
 	/* Now open the output stream for writing */
-	(phtml->open_stream) (phtml);
+	(phtml->open_stream) (phtml, phtml->user_data);
 
 	while (!feof (ph))
 	{
@@ -240,7 +347,7 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 			}
 			
 			/* write everything that we got before the markup */
-			(phtml->write_stream) (phtml, start, nr);
+			(phtml->write_stream) (phtml, start, nr, phtml->user_data);
 
 			/* if there is markup, then dispatch */
 			if (tok)
@@ -254,7 +361,7 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 	}
 	fclose (ph);
 
-	(phtml->close_stream) (phtml);
+	(phtml->close_stream) (phtml, phtml->user_data);
 
 }
 
@@ -266,6 +373,7 @@ gtt_phtml_new (void)
 	GttPhtml *p;
 
 	p = g_new0 (GttPhtml, 1);
+	p ->ncols = 0;
 
 	return p;
 }
@@ -277,12 +385,14 @@ gtt_phtml_destroy (GttPhtml *p)
 	g_free (p);
 }
 
-void gtt_phtml_set_stream (GttPhtml *p, GttPhtmlOpenStream op, 
+void gtt_phtml_set_stream (GttPhtml *p, gpointer ud,
+                                        GttPhtmlOpenStream op, 
                                         GttPhtmlWriteStream wr,
                                         GttPhtmlCloseStream cl, 
                                         GttPhtmlError er)
 {
 	if (!p) return;
+	p->user_data = ud;
 	p->open_stream = op;
 	p->write_stream = wr;
 	p->close_stream = cl;

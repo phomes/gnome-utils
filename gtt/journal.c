@@ -51,18 +51,18 @@ typedef struct wiggy_s {
 /* html i/o routines */
 
 static void
-wiggy_open (GttPhtml *pl)
+wiggy_open (GttPhtml *pl, gpointer ud)
 {
-	Wiggy *wig = (Wiggy *) pl;
+	Wiggy *wig = (Wiggy *) ud;
 
 	/* open the browser for writing */
 	wig->handle = gtk_html_begin_content(wig->htmlw, "text/html");
 }
 
 static void
-wiggy_close (GttPhtml *pl)
+wiggy_close (GttPhtml *pl, gpointer ud)
 {
-	Wiggy *wig = (Wiggy *) pl;
+	Wiggy *wig = (Wiggy *) ud;
 
 	/* close the browser stream */
 	gtk_html_end (wig->htmlw, wig->handle, GTK_HTML_STREAM_OK);
@@ -70,18 +70,18 @@ wiggy_close (GttPhtml *pl)
 }
 
 static void
-wiggy_write (GttPhtml *pl, const char *str, size_t len)
+wiggy_write (GttPhtml *pl, const char *str, size_t len, gpointer ud)
 {
-	Wiggy *wig = (Wiggy *) pl;
+	Wiggy *wig = (Wiggy *) ud;
 
 	/* write to the browser stream */
 	gtk_html_write (wig->htmlw, wig->handle, str, len);
 }
 
 static void
-wiggy_error (GttPhtml *pl, int err, const char * msg)
+wiggy_error (GttPhtml *pl, int err, const char * msg, gpointer ud)
 {
-	Wiggy *wig = (Wiggy *) pl;
+	Wiggy *wig = (Wiggy *) ud;
 	GtkHTML *htmlw = wig->htmlw;
 	GtkHTMLStream *han;
 	char * buff;
@@ -340,7 +340,8 @@ do_show_report (const char * report, GttProject *prj)
 	wig->top = jnl_top;
 	wig->htmlw = GTK_HTML(jnl_browser);
 	wig->ph = gtt_phtml_new();
-	gtt_phtml_set_stream (wig->ph, wiggy_open, wiggy_write, wiggy_close, wiggy_error);
+	gtt_phtml_set_stream (wig->ph, wig, wiggy_open, wiggy_write, 
+		wiggy_close, wiggy_error);
 	
 	glade_xml_signal_connect_data (glxml, "on_close_clicked",
 	        GTK_SIGNAL_FUNC (on_close_clicked_cb), wig);
