@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.sk\n"
-"POT-Creation-Date: 2003-01-20 16:55+0100\n"
+"POT-Creation-Date: 2003-01-24 17:47+0000\n"
 "PO-Revision-Date: 2003-01-20 20:20+0100\n"
 "Last-Translator: Stanislav Visnovsky <visnovsky@kde.org>\n"
 "Language-Team: Slovak <sk-i18n@linux.sk>\n"
@@ -464,7 +464,8 @@ msgid "GNOME Character Map"
 msgstr "Mapa znakov GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Výber, kopírovanie a vkladanie znakov z vášho písma do iných aplikácií"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
@@ -888,9 +889,8 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
-"Zadajte, či sa má používať inteligentné hľadanie. Tento "
-"kľúč závisí na tom, či server túto voľbu podporuje. "
-"Štandardne je TRUE."
+"Zadajte, či sa má používať inteligentné hľadanie. Tento kľúč závisí na tom, "
+"či server túto voľbu podporuje. Štandardne je TRUE."
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -901,23 +901,20 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"Slovníkový server. Štandardne je to dick.org. Detaily "
-"o ostatných serveroch nájdete na http://www.dict.org."
+"Slovníkový server. Štandardne je to dick.org. Detaily o ostatných serveroch "
+"nájdete na http://www.dict.org."
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
-"Meno databáze, ktorá sa má na serveri použiť. ! "
-"znamená, že má gnome-dictionary hľadať vo všetkých "
-"databázach na danom serveri."
+"Meno databáze, ktorá sa má na serveri použiť. ! znamená, že má gnome-"
+"dictionary hľadať vo všetkých databázach na danom serveri."
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
-"Číslo portu, ktorý sa má použiť pre pripojenie. Štandardne "
-"je 2628."
+msgstr "Číslo portu, ktorý sa má použiť pre pripojenie. Štandardne je 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
 msgid "The search strategy to use"
@@ -929,9 +926,8 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"Použitá stratégia hľadania. Toto závisí na stratégiách, ktoré "
-"podporuje server. Štandardne je 'lev' - hľadať v "
-"Levenshteinovej vzdialenosti 1."
+"Použitá stratégia hľadania. Toto závisí na stratégiách, ktoré podporuje "
+"server. Štandardne je 'lev' - hľadať v Levenshteinovej vzdialenosti 1."
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1084,15 +1080,11 @@ msgstr "ENie je možné určiť aktuálnu geometriu diskety."
 
 #: gfloppy/src/gfloppy.c:229
 msgid "EError while creating a unique filename for the bad blocks list file."
-msgstr ""
-"EChyba pri vytváraní unikátneho mena pre zoznam "
-"chybných blokov."
+msgstr "EChyba pri vytváraní unikátneho mena pre zoznam chybných blokov."
 
 #: gfloppy/src/gfloppy.c:249
 msgid "EError while filling the bad blocks list file."
-msgstr ""
-"EChyba pri zápise súboru so zoznamom chybných "
-"blokov."
+msgstr "EChyba pri zápise súboru so zoznamom chybných blokov."
 
 #: gfloppy/src/gfloppy.c:308
 #, c-format
@@ -1110,8 +1102,7 @@ msgid ""
 "\n"
 "%s (%d)"
 msgstr ""
-"ENástroj pre vytváranie systému súborov (%s) oznámil "
-"túto chybu:\n"
+"ENástroj pre vytváranie systému súborov (%s) oznámil túto chybu:\n"
 "\n"
 "%s (%d)"
 
@@ -1131,8 +1122,7 @@ msgid ""
 "errors:\n"
 "%s."
 msgstr ""
-"ENástroj pre kontrolu chybných blokov (mbadblocks) oznámil "
-"tieto chyby:\n"
+"ENástroj pre kontrolu chybných blokov (mbadblocks) oznámil tieto chyby:\n"
 "%s."
 
 #: gfloppy/src/gfloppy.c:443
@@ -1169,9 +1159,8 @@ msgid ""
 "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
 "be installed in order to make a thorough DOS (fat) formatting."
 msgstr ""
-"<b>Poznámka:</b> Nástroj mbadblocks nie je na vašom "
-"systéme nainštalovaný. Je nutný pre formátovaní pre "
-"systém DOS (fat)."
+"<b>Poznámka:</b> Nástroj mbadblocks nie je na vašom systéme nainštalovaný. "
+"Je nutný pre formátovaní pre systém DOS (fat)."
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "<span weight=\"bold\">Filesystem settings</span>"
@@ -1250,8 +1239,8 @@ msgid ""
 "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
 "can't format a floppy without one of them."
 msgstr ""
-"Nemáte nainštalovaný ani mkde2fs ani mkdosfs/mformat. Bez "
-"nich nemôžete diskety formátovať."
+"Nemáte nainštalovaný ani mkde2fs ani mkdosfs/mformat. Bez nich nemôžete "
+"diskety formátovať."
 
 #: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
@@ -1290,11 +1279,11 @@ msgstr ""
 msgid "The volume name can't contain any blank space."
 msgstr "Meno diskety nesmie obsahovať medzery."
 
-#: gfloppy/src/main.c:471
+#: gfloppy/src/main.c:474
 msgid "The device to format"
 msgstr "Ktoré zariadenie formátovať"
 
-#: gfloppy/src/main.c:472
+#: gfloppy/src/main.c:475
 msgid "DEVICE"
 msgstr "ZARIADENIE"
 
@@ -1304,8 +1293,8 @@ msgid ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
 msgstr ""
-"Disketa je naformátovaná, ale boli nájdené a označené "
-"<b>chybné bloky</b> (%d z %d)."
+"Disketa je naformátovaná, ale boli nájdené a označené <b>chybné bloky</b> (%"
+"d z %d)."
 
 #: gfloppy/src/progress.c:126
 msgid "Floppy formatted successfully."
@@ -1324,9 +1313,8 @@ msgid ""
 "0 for the quick format, 1 for a standard one (adds a low-level format) and "
 "finally 2 for a thorough format (adds a bad blocks scan)."
 msgstr ""
-"0 pre rýchle formátovanie, 1 pre štandardné (nízkoúrovňové "
-"formátovanie) a 2 pre priebežné formátovanie (pridá "
-"hľadanie chybných blokov)."
+"0 pre rýchle formátovanie, 1 pre štandardné (nízkoúrovňové formátovanie) a 2 "
+"pre priebežné formátovanie (pridá hľadanie chybných blokov)."
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
@@ -1344,9 +1332,7 @@ msgstr "Štandardný režim formátovania"
 msgid ""
 "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
 "mtools as the preferred FAT formatting backend."
-msgstr ""
-"TRUE, ak sa má pre formátovanie FAT použiť mkdosfs, "
-"FALSE pre mtools."
+msgstr "TRUE, ak sa má pre formátovanie FAT použiť mkdosfs, FALSE pre mtools."
 
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
@@ -1821,7 +1807,8 @@ msgstr "Kalendár"
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
+msgstr ""
+"Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
 
 #: logview/desc_db.c:147
 #, c-format
@@ -2107,7 +2094,8 @@ msgstr "_Vykonať akcie"
 
 #: logview/monitor.c:289
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
+msgstr ""
+"Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
 
 #: logview/monitor.c:297 logview/monitor.c:335
 msgid "tmp_list is NULL\n"
@@ -2159,9 +2147,8 @@ msgid ""
 "Specifies the log file to open up at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your distribution."
 msgstr ""
-"Určuje súbor so záznamom otvorený po spustení. Štandardne "
-"je to /var/adm/messages alebo /var/log/messages v závislosti "
-"na vašej distribúcii."
+"Určuje súbor so záznamom otvorený po spustení. Štandardne je to /var/adm/"
+"messages alebo /var/log/messages v závislosti na vašej distribúcii."
 
 #, fuzzy
 #~ msgid "Select the 'Date modified less than (days)' constraint"
@@ -2779,4 +2766,3 @@ msgstr ""
 
 #~ msgid "Utility"
 #~ msgstr "Nástroj"
-

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.1\n"
-"POT-Creation-Date: 2003-01-21 13:01+0100\n"
+"POT-Creation-Date: 2003-01-24 17:47+0000\n"
 "PO-Revision-Date: 2003-01-21 13:07+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -885,7 +885,9 @@ msgstr "Port som brukes for å koble til tjener"
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
-msgstr "Spesifiser om smarte oppslag skal brukes. Denne nøkkelen er avhengig av om ordboktjeneren støtter dette alternativet. Forvalgt verdi er SANN"
+msgstr ""
+"Spesifiser om smarte oppslag skal brukes. Denne nøkkelen er avhengig av om "
+"ordboktjeneren støtter dette alternativet. Forvalgt verdi er SANN"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -895,13 +897,17 @@ msgstr "Database som skal brukes på ordboktjeneren."
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
-msgstr "Ordboktjener som skal brukes. Forvalgt tjener er dict.org. Se http://www.dict.org/ for detaljer om andre tjenere"
+msgstr ""
+"Ordboktjener som skal brukes. Forvalgt tjener er dict.org. Se http://www."
+"dict.org/ for detaljer om andre tjenere"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
-msgstr "Navn på den individuelle databasen som skal brukes på ordboktjeneren. ! spesifiserer at gnome-dictionary skal søke i alle databaser på en gitt tjener"
+msgstr ""
+"Navn på den individuelle databasen som skal brukes på ordboktjeneren. ! "
+"spesifiserer at gnome-dictionary skal søke i alle databaser på en gitt tjener"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -916,7 +922,9 @@ msgid ""
 "The search strategy to use. This is dependant on the search strategy that "
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
-msgstr "Søkestrategi som skal brukes. Dette er avhengig av støtte på tjeneren. Forvalgt strategi er «lev» - Treff på ord innen Levenshtein-avstand en"
+msgstr ""
+"Søkestrategi som skal brukes. Dette er avhengig av støtte på tjeneren. "
+"Forvalgt strategi er «lev» - Treff på ord innen Levenshtein-avstand en"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1271,11 +1279,11 @@ msgstr ""
 msgid "The volume name can't contain any blank space."
 msgstr "Volumnavnet kan ikke inneholde mellomrom."
 
-#: gfloppy/src/main.c:471
+#: gfloppy/src/main.c:474
 msgid "The device to format"
 msgstr "Enheten som skal formateres"
 
-#: gfloppy/src/main.c:472
+#: gfloppy/src/main.c:475
 msgid "DEVICE"
 msgstr "ENHET"
 

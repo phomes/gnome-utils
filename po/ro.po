@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0\n"
-"POT-Creation-Date: 2003-01-20 20:08+0100\n"
+"POT-Creation-Date: 2003-01-24 17:47+0000\n"
 "PO-Revision-Date: 2003-01-21 00:52+0200\n"
 "Last-Translator: Mugurel Tudor <mugurelu@go.ro>\n"
 "Language-Team: română <ro@li.org>\n"
@@ -462,7 +462,8 @@ msgid "GNOME Character Map"
 msgstr "Harta de caractere GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Selectează, copiază şi lipeşte caractere în alte aplicaţii"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
@@ -1083,7 +1084,9 @@ msgstr "ENu am putut determina geometria curentă a unităţii floppy."
 
 #: gfloppy/src/gfloppy.c:229
 msgid "EError while creating a unique filename for the bad blocks list file."
-msgstr "EEroare la creerea unui nume unic pentru fişierul cu lista de sectoare defecte."
+msgstr ""
+"EEroare la creerea unui nume unic pentru fişierul cu lista de sectoare "
+"defecte."
 
 #: gfloppy/src/gfloppy.c:249
 msgid "EError while filling the bad blocks list file."
@@ -1105,7 +1108,8 @@ msgid ""
 "\n"
 "%s (%d)"
 msgstr ""
-"EUtilitarul de creere a sistemului de fişiere (%s) a raportat următoarea eroare:\n"
+"EUtilitarul de creere a sistemului de fişiere (%s) a raportat următoarea "
+"eroare:\n"
 "\n"
 "%s (%d)"
 
@@ -1125,8 +1129,8 @@ msgid ""
 "errors:\n"
 "%s."
 msgstr ""
-"EUtilitarul de verificare a sectoarelor defecte (mbadblocks) a raportat următoarea "
-"eroare:\n"
+"EUtilitarul de verificare a sectoarelor defecte (mbadblocks) a raportat "
+"următoarea eroare:\n"
 "%s."
 
 #: gfloppy/src/gfloppy.c:443
@@ -1163,8 +1167,8 @@ msgid ""
 "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
 "be installed in order to make a thorough DOS (fat) formatting."
 msgstr ""
-"<b>Notă</b>: Utilitarul mbadblocks nu este instalat pe acest sistem. Trebuie să fie "
-"instalat pentru a putea realiza o formatare DOS (fat) completă."
+"<b>Notă</b>: Utilitarul mbadblocks nu este instalat pe acest sistem. Trebuie "
+"să fie instalat pentru a putea realiza o formatare DOS (fat) completă."
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "<span weight=\"bold\">Filesystem settings</span>"
@@ -1220,7 +1224,8 @@ msgstr "Linux nativ (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:17
 msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
-msgstr "C_ompletă (adaugă o verificare a sectoarelor defecte la modul standard)"
+msgstr ""
+"C_ompletă (adaugă o verificare a sectoarelor defecte la modul standard)"
 
 #: gfloppy/src/gfloppy2.glade.h:18
 msgid "Volume _name:"
@@ -1243,8 +1248,8 @@ msgid ""
 "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
 "can't format a floppy without one of them."
 msgstr ""
-"Nici una dintre aplicaţiile mke2fs sau mkdosfs/mformat nu sunt instalate. Nu puteţi "
-"formata o dischetă fără una dintre ele."
+"Nici una dintre aplicaţiile mke2fs sau mkdosfs/mformat nu sunt instalate. Nu "
+"puteţi formata o dischetă fără una dintre ele."
 
 #: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
@@ -1285,11 +1290,11 @@ msgstr ""
 msgid "The volume name can't contain any blank space."
 msgstr "Numele volumului nu poate conţine spaţii goale."
 
-#: gfloppy/src/main.c:471
+#: gfloppy/src/main.c:474
 msgid "The device to format"
 msgstr "Dispozitivul de formatat"
 
-#: gfloppy/src/main.c:472
+#: gfloppy/src/main.c:475
 msgid "DEVICE"
 msgstr "DEVICE"
 
@@ -1299,8 +1304,8 @@ msgid ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
 msgstr ""
-"Discheta a fost formatată, dar <b>%d sectoare defecte</b> (din %d) au fost găsite "
-"şi marcate."
+"Discheta a fost formatată, dar <b>%d sectoare defecte</b> (din %d) au fost "
+"găsite şi marcate."
 
 #: gfloppy/src/progress.c:126
 msgid "Floppy formatted successfully."
@@ -1319,8 +1324,9 @@ msgid ""
 "0 for the quick format, 1 for a standard one (adds a low-level format) and "
 "finally 2 for a thorough format (adds a bad blocks scan)."
 msgstr ""
-"0 pentru formatare rapidă, 1 pentru cea standard (adaugă o formatare de nivel jos) "
-"şi in sfârşit 2 pentru o formatare completă (face şi o scanare pentru sectoare defecte)."
+"0 pentru formatare rapidă, 1 pentru cea standard (adaugă o formatare de "
+"nivel jos) şi in sfârşit 2 pentru o formatare completă (face şi o scanare "
+"pentru sectoare defecte)."
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
@@ -1339,12 +1345,14 @@ msgid ""
 "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
 "mtools as the preferred FAT formatting backend."
 msgstr ""
-"TRUE pentru a seta mkdosfs ca aplicaţie preferată pentru formatare FAT sau FALSE pentru "
-"a seta mtools ca aplicaţie preferată pentru formatare FAT."
+"TRUE pentru a seta mkdosfs ca aplicaţie preferată pentru formatare FAT sau "
+"FALSE pentru a seta mtools ca aplicaţie preferată pentru formatare FAT."
 
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
-msgstr "ext2 pentru sistemul de fişiere nativ linux sau fat pentru sistemul de fişiere DOS."
+msgstr ""
+"ext2 pentru sistemul de fişiere nativ linux sau fat pentru sistemul de "
+"fişiere DOS."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
 msgid "Search for Files"
@@ -1424,11 +1432,14 @@ msgstr "Setează textul lui 'caută în dosar'"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Sortează fişierele după una dintre următoarele: nume, dosar, mărime, tip sau dată"
+msgstr ""
+"Sortează fişierele după una dintre următoarele: nume, dosar, mărime, tip sau "
+"dată"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr "Setează ordinea de sortare la descrescătoare, implicit este crescătoare"
+msgstr ""
+"Setează ordinea de sortare la descrescătoare, implicit este crescătoare"
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
@@ -1596,7 +1607,9 @@ msgstr "Caut..."
 #: gsearchtool/gsearchtool-callbacks.c:299
 #, c-format
 msgid "This will open %d separate files. Are you sure you want to do this?"
-msgstr "Se vor deschide %d de fişiere separate. Sunteţi sigur că doriţi să faceţi asta ?"
+msgstr ""
+"Se vor deschide %d de fişiere separate. Sunteţi sigur că doriţi să faceţi "
+"asta ?"
 
 #: gsearchtool/gsearchtool-callbacks.c:302
 #, c-format
@@ -1617,7 +1630,8 @@ msgstr "Nu pot afişa locaţia"
 #: gsearchtool/gsearchtool-callbacks.c:404
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
-msgstr "Se vor deschide %d de dosare separate. Sunteţi sigur că doriţi acest lucru ?"
+msgstr ""
+"Se vor deschide %d de dosare separate. Sunteţi sigur că doriţi acest lucru ?"
 
 #: gsearchtool/gsearchtool-callbacks.c:407
 #, c-format
@@ -1708,10 +1722,10 @@ msgid ""
 "under the conditions of the GNU General Public Licence. The log icon is a "
 "courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Acest program face parte din proiectul GNOME pentru Linux. Logview vine"
-"cu ABSOLUT NICI O GARANŢIE. Acesta este software gratuit şi sunteţi liber"
-"să îl redistribuiţi sub condiţiile Licenţei Generale Publice GNU (GPL)."
-"Icon-ul log aparţine lui Tuomas Kuosmanen (a.k.a tigert)."
+"Acest program face parte din proiectul GNOME pentru Linux. Logview vinecu "
+"ABSOLUT NICI O GARANŢIE. Acesta este software gratuit şi sunteţi libersă îl "
+"redistribuiţi sub condiţiile Licenţei Generale Publice GNU (GPL).Icon-ul log "
+"aparţine lui Tuomas Kuosmanen (a.k.a tigert)."
 
 #: logview/about.c:61
 msgid "GNOME System Log Viewer"
@@ -1820,7 +1834,8 @@ msgstr "Nu am putut deschide baza de date regexp <%s>! Deschidere eşuată."
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Nu am putut deschide baza de date pentru descrieri <%s>! Deschidere eşuată."
+msgstr ""
+"Nu am putut deschide baza de date pentru descrieri <%s>! Deschidere eşuată."
 
 #. ----------------------------------------------------------------------
 #. NAME:
@@ -2101,7 +2116,8 @@ msgstr "_Execută acţiuni"
 
 #: logview/monitor.c:289
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "Prea multe log-uri pentru monitorizare. Ştergeţi unul şi încercaţi din nou"
+msgstr ""
+"Prea multe log-uri pentru monitorizare. Ştergeţi unul şi încercaţi din nou"
 
 #: logview/monitor.c:297 logview/monitor.c:335
 msgid "tmp_list is NULL\n"
@@ -2153,8 +2169,8 @@ msgid ""
 "Specifies the log file to open up at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your distribution."
 msgstr ""
-"Specifică fişierul de log deschis la pornire. Cel implicit este fie /var/adm/messages "
-"sau /var/log/messages. depinzând de distribuţie."
+"Specifică fişierul de log deschis la pornire. Cel implicit este fie /var/adm/"
+"messages sau /var/log/messages. depinzând de distribuţie."
 
 #, fuzzy
 #~ msgid "Select the 'Date modified less than (days)' constraint"
@@ -4639,4 +4655,3 @@ msgstr ""
 
 #~ msgid "Select a program to run"
 #~ msgstr "Alegeţi un program de executat"
-
