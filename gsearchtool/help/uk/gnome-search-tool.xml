@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "2.1">
+  <!ENTITY manrevision "2.3">
+  <!ENTITY date "Вересень 2002">
+  <!ENTITY app "Пошук файлів">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="uk">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Довідка з програми &app; версії &manrevision;</title>       
+
+    <copyright> 
+      <year>2002</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright> 
+      <year>2000</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright>
+
+  <copyright>
+   <year>2003</year>
+   <holder>Maxim Dziumanenko (Ukrainian translation)</holder>
+  </copyright>
+
+    <publisher> 
+      <publishername> Проект документування GNOME </publishername> 
+    </publisher> 
+
+   &legal;
+
+    <authorgroup> 
+      <author> 
+	<firstname>Sun</firstname> 
+	<surname>Команда документування GNOME</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address> <email>gdocteam@sun.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>Проект документування GNOME</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+      <othercredit role="translator">
+		<firstname>Максим</firstname> 
+		<surname>Дзюманенко</surname> 
+		<affiliation> 
+	  		<orgname>myLinux, Ltd.</orgname> 
+	  		<address> <email>mvd@mylinux.com.ua</email> </address> 
+		</affiliation>
+		<contrib>Переклад українською</contrib>
+      </othercredit>
+    </authorgroup>
+
+ <revhistory>
+ <revision> 
+	<revnumber>Довідка з програми &app; версії &manrevision;</revnumber> 
+	<date>&date;</date> 
+	<revdescription> 
+	  <para role="author">Sun команда документування GNOME
+	    <email>gdocteam@sun.com</email>
+	  </para>
+	  <para role="publisher">Проект документування GNOME</para>
+	</revdescription> 
+ </revision>
+ <revision> 
+			<revnumber>Довідка з програми &app; версії 2.2</revnumber> 
+			<date>Серпень 2002</date> 
+			<revdescription> 
+	  		<para role="author">Sun Команда документування GNOME
+	    		<email>gdocteam@sun.com</email>
+	  		</para>
+	  		<para role="publisher">Проект документування GNOME</para>
+			</revdescription> 
+ </revision> 
+ <revision> 
+			<revnumber>Довідка з програми &app; версії 2.1</revnumber> 
+			<date>Липень 2002</date> 
+			<revdescription> 
+	  		<para role="author">Sun Команда документування GNOME
+	    		<email>gdocteam@sun.com</email>
+	  		</para>
+	  		<para role="publisher">Проект документування GNOME</para>
+			</revdescription> 
+ </revision> 
+ <revision> 
+			<revnumber>Довідка з програми &app; версії 2.0</revnumber> 
+			<date>Травень 2002</date> 
+			<revdescription> 
+	  		<para role="author">Sun Команда документування GNOME
+	    		<email>gdocteam@sun.com</email>
+	  		</para>
+	  		<para role="publisher">Проект документування GNOME</para>
+			</revdescription> 
+ </revision> 
+ <revision> 
+	<revnumber>Довідка з утиліти пошуку для GNOME</revnumber> 
+	<date>2000</date> 
+	<revdescription> 
+	  <para role="author">Alexander Kirillov
+	    <email>kirillov@math.sunysb.edu</email>
+	  </para>
+	  <para role="publisher">Проект документування GNOME</para>
+	</revdescription> 
+ </revision> 
+ </revhistory> 
+
+    <releaseinfo>Цей посібник описує  &app; версії &appversion;.
+    </releaseinfo> 
+    <legalnotice> 
+      <title>Зворотній зв'язок</title> 
+      <para>Щоб сповістити про помилку або внести пропозицію відносно програми &app; або цієї довідки, дотримуйтесь інструкцій на 
+	<ulink url="ghelp:gnome-feedback"
+	  type="help">GNOME Feedback Page</ulink>. 
+      </para>
+	<para>Про помилки перекладу повідомляйте на адресу Максим Дзюманенко <email>mvd@mylinux.com.ua</email>
+	</para>
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm> 
+    <primary>Пошук файлів</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="gsearchtool-introduction"> 
+    <title>Вступ</title> 
+    <para>Програма <application>&app;</application> дозволяє шукати файли у вашій файловій системі. Для виконання базового пошуку ви можете ввести назву файлу або часткову назву файлу з шаблонами. Щоб звузити пошук, виберіть додаткові параметри пошуку.</para>
+    <para><application>&app;</application> використовує UNIX команди <command>find</command>, <command>grep</command>, та <command>locate</command>.</para>
+  </sect1>
+
+  <sect1 id="gsearchtool-getting-started">
+    <title>Початок роботи</title> 
+
+    <para>Програму <application>&app;</application> можна запустити наступними способами: </para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>З меню</term>
+    		<listitem>
+    		<para>Виберіть <guimenuitem>Пошук файлів</guimenuitem>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>З командного рядка</term>
+    		<listitem>
+    		<para>Наберіть <command>gnome-search-tool</command> та натисніть <keycap>Enter</keycap>.</para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>Після запуску програми <application>&app;</application> відобразиться наступне вікно.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>Вікно &app;</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata
+		fileref="figures/gnome-search-tool_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Показує головне вікно програми &app;. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="gsearchtool-usage"> 
+    <title>Використання</title>
+
+    <sect2 id="gsearchtool-simple">
+    <title>Виконання основних операцій</title>
+    
+    <para>Для виконання базового пошуку файлу у файловій системі, виконайте наступні кроки:</para>
+    <orderedlist>
+    <listitem><para>У полі <guilabel>Назва містить</guilabel> введіть:</para>
+    		<itemizedlist>
+    			<listitem><para>Рядок, наприклад <userinput>мійфайл</userinput>. <application>&app;</application>   			шукатиме на файловій системі усі файли, назва яких містить <userinput>мійфайл</userinput>.</para></listitem> 
+    			<listitem><para>Рядок з шаблоном (* або ?), наприклад <userinput>*.txt</userinput>. <application>&app;</application> шукатиме на файловій системі усі файли з розширенням <userinput>.txt</userinput>.</para></listitem>
+    		</itemizedlist>
+    		<para></para>
+     </listitem>
+     <listitem><para>У полі <guilabel>Шукати у теці</guilabel> введіть шлях до теки, у якій ви бажаєте почати пошук.  <application>&app;</application> шукатиме у вказаній теці та її підтеках.</para></listitem>
+     <listitem><para>Для виконання пошуку натисніть <guibutton>Знайти</guibutton>.   <application>&app;</application> відображає результати пошуку у списку <guilabel>Результати пошуку</guilabel>. Якщо <application>&app;</application> не знайде жодного файлу, який вібповідав би критерію пошуку, тоді у списку <guilabel>Результати пошуку</guilabel> програма відобразить повідомлення "Файлів не знайдено".</para>
+     </listitem>
+     </orderedlist>
+     </sect2>
+    
+    <sect2 id="gsearchtool-advanced">
+    <title>Додавання параметрів пошуку</title>
+    
+    <para>Щоб додати параметри пошуку виконайте наступні дії:</para>
+  	<orderedlist>
+    		<listitem><para>Натисніть на <guilabel>Показати додаткові параметри</guilabel>.</para></listitem>
+    		<listitem><para>Натисніть на розкривному списку <guilabel>Можливі параметри</guilabel>.</para></listitem>
+    		<listitem><para>Виберіть параметр, який ви хочете додати.</para></listitem>
+    		<listitem><para>Натисніть <guibutton>Додати</guibutton>, щоб додати параметр пошуку до списку додаткових параметрів.</para></listitem>
+    		<listitem><para>Вкажіть потрібну для правила пошуку інформацію, докладніше дивіться <xref linkend="tbl-search-rules"/>.</para></listitem>
+    		<listitem><para>Повторіть ці кроки для кожного необхідного параметра.</para></listitem>
+    	</orderedlist>	
+    	<para>Щоб видалити параметр пошуку з списку <guilabel>Показати додаткові параметри</guilabel>, натисніть на кнопку <guibutton>Видалити</guibutton> навпроти параметра. </para>
+    	
+    
+    <table id="tbl-search-rules" frame="topbot">
+    <title>Правила пошуку</title> 
+		  <tgroup cols="2" colsep="1" rowsep="1">
+			 <colspec colname="COLSPEC0" colwidth="33*"/>
+			 <colspec colname="COLSPEC1" colwidth="33*"/>
+			 <thead> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Назва правила</para></entry> 
+				  <entry> 
+					 <para>Опис</para></entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Містить текст</para></entry> 
+				  <entry> 
+					 <para>Шукати файли які містять вказаний текст. На більшості систем пошук не чутливий до регістру.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Дата останньої зміни менша за (діб)</para></entry> 
+				  <entry> 
+					 <para>Шукати файли які змінені за період менший вказану кількість діб.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Дата останньої зміни більша за (діб)</para></entry> 
+				  <entry> 
+					 <para>Шукати файли які змінені за період більший ніж вказана кількість діб.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Розмір принаймні (кілобайт)</para></entry> 
+				  <entry> 
+					 <para>Шукати файли розмір яких більший за вказаний розмір.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Розмір не більше (кілобайт)</para></entry> 
+				  <entry> 
+					 <para>Шукати файли розмір яких менший за вказаний розмір.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Файл порожній</para></entry> 
+				  <entry> 
+					 <para>Шукати порожні файли.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Належить користувачу</para></entry> 
+				  <entry> 
+					 <para>Шукати файли власником яких є вказаний користувач. Введіть ім'я користувача у текстовому полі.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Належить групі</para></entry> 
+				  <entry> 
+					 <para>Шукати файли власником яких є вказана група. Введіть ім'я групи у текстовому полі. </para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Власник невідомий</para></entry> 
+				  <entry> 
+					 <para>Шукати файли власником яких є користувач або група які невідомі цій системі.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Назва не містить</para></entry> 
+				  <entry> 
+					 <para>Шукати файли з назвами, які не містять введеного тексту. Цим полем також підтримуються шаблони. Використовуйте * для позначення послідовності символів, та ? для позначення одного символу. Пошук не чутливий до регістру на більшості систем.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Назва відповідає регулярному виразу</para></entry> 
+				  <entry> 
+					 <para>Шукати файли, шлях чи назва яких відповідає вказаному регулярному виразу. Введіть регулярний вираз у текстовому полі. </para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Показувати приховані файли та теки</para></entry> 
+				  <entry> 
+					 <para>Включати у пошук приховані файли та теки.  Файл чи тека вважаються прихованими, якщо їх назва починається з крапки(.).</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Переходити за символьними посиланнями</para></entry> 
+				  <entry> 
+					 <para>Переходити за символьними посиланнями при пошуку файлів.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Охоплювати інші файлові системи</para></entry> 
+				  <entry> 
+					 <para>Також включати у пошук теки, які розташовані на інших файлових системах, ніж файлова система початкової теки.</para></entry>  
+				</row> 
+				 				
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+    
+    </sect2>
+
+    <sect2 id="gsearchtool-stop">
+    <title>Зупинення пошуку</title>
+    <para>Щоб передчасно зупинити процес пошуку натисніть <guibutton>Зупинити</guibutton>. </para>
+    </sect2>
+    
+    <sect2 id="gsearchtool-view">
+    <title>Відкривання знайдених файлів</title>
+    <para>Щоб відкрити файл, що показується у списку <guilabel>Результати пошуку</guilabel>, виконайте одну з наступних дій:</para>
+    <itemizedlist>
+    <listitem><para>Клацніть правою кнопкою на файлі, потім виберіть  <guimenuitem>Відкрити</guimenuitem>. </para></listitem>
+     <listitem><para>Двічі клацніть на файлі. </para></listitem>
+    </itemizedlist>
+    <para>Щоб відкрити теку, яка містить відображуваний у списку <guilabel>Результати пошуку</guilabel> файл, клацніть на ньому правою кнопкою, потім виберіть <guimenuitem>Відкрити теку</guimenuitem>.</para>
+    <para>Щоб скопіювати файл, який відображується у списку <guilabel>Результати пошуку</guilabel> у іншу область стільниці, перетягніть його у цю область.</para>
+    </sect2>
+    
+    <!--
+    <sect2 id="gsearchtool-search-command">
+    <title>To View the Search Command Used by &app;</title>
+    <para>To view the command that <application>&app;</application> used to perform the previous search, choose 
+    <menuchoice>
+    <guimenu>Search</guimenu>
+    <guimenuitem>Show Command</guimenuitem>
+    </menuchoice>. The <guilabel>Search Command Line</guilabel> displays the command. </para>
+    </sect2>
+    -->
+    
+    <sect2 id="gsearchtool-savetofile">
+    <title>Збереження результатів пошуку</title>
+    <para>Щоб зберегти результати останнього пошуку, клацніть правою кнопкою миші у списку <guilabel>Результати пошуку</guilabel>, потім виберіть <guimenuitem>Зберегти результати як</guimenuitem>. Введіть назву файлу, в який зберегти результати, потім натисніть Гаразд.</para>
+    </sect2>
+
+ 
+  </sect1>
+
+
+</article>
