@@ -38,9 +38,12 @@
 
 #ifdef HAVE_LANGINFO_D_FMT
 #  define GNC_D_FMT (nl_langinfo (D_FMT))
+#  define GNC_D_T_FMT (nl_langinfo (D_T_FMT))
+#  define GNC_T_FMT (nl_langinfo (T_FMT))
 #else
 #  define GNC_D_FMT "%Y-%m-%d"
-#  define GNC_DT_FMT "%Y-%m-%d %r"
+#  define GNC_D_T_FMT "%Y-%m-%d %r"
+#  define GNC_T_FMT "%Y-%m-%d %r"
 #endif
 
 /* ============================================================== */
@@ -178,7 +181,7 @@ print_date_time (char * buff, size_t len, time_t secs)
       break;
     case DATE_FORMAT_LOCALE:
       {
-        flen = strftime (buff, len, GNC_D_FMT, &ltm);
+        flen = strftime (buff, len, GNC_D_T_FMT, &ltm);
       }
       break;
 
@@ -187,6 +190,18 @@ print_date_time (char * buff, size_t len, time_t secs)
       flen = g_snprintf (buff, len, "%2d/%2d/%-4d %2d:%02d", month, day, year, hour, min);
       break;
   }
+  return buff + flen;
+}
+
+char * 
+print_time (char * buff, size_t len, time_t secs)
+{
+  int flen;
+  struct tm ltm;
+  
+  if (!buff) return buff;
+  ltm = *localtime (&secs);
+  flen = strftime (buff, len, GNC_T_FMT, &ltm);
   return buff + flen;
 }
 

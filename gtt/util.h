@@ -44,11 +44,15 @@ char * print_hours_elapsed (char * buff, int len, int secs, gboolean show_secs);
  *
  * The print_date() routine converts a date into a localized string
  *    representation.  Returns a pointer to the terminating null byte.
+ *
+ * The print_time() routine prints only the hour-part of the date.
+ *    Thus, if secs is  ...
+ *    Returns a pointer to the terminating null byte.
  */
 
 void set_date_format (DateFormat df);
 char * print_date (char * buff, size_t len, time_t secs);
-	
+char * print_time (char * buff, size_t len, time_t secs);
 char * print_date_time (char * buff, size_t len, time_t secs);
 
 #endif /* __GTT_UTIL_H__ */
