@@ -26,6 +26,7 @@
 
 #include "gtt.h"
 #include "proj.h"
+#include "util.h"
 
 
 typedef struct _PropDlg 
@@ -59,8 +60,6 @@ prop_set(GnomePropertyBox * pb, gint page, PropDlg *dlg)
 
 	if (0 == page)
 	{
-		int len;
-
 		str = gtk_entry_get_text(dlg->title);
 		if (str && str[0]) 
 		{
@@ -73,13 +72,7 @@ prop_set(GnomePropertyBox * pb, gint page, PropDlg *dlg)
 		}
 	
 		gtt_project_set_desc(dlg->proj, gtk_entry_get_text(dlg->desc));
-
-		/* crazy text handling; note this is broken for
-		 * double-byte character sets */
-		len = gtk_text_get_length(dlg->notes);
-		if (len >= dlg->notes->text_len) len = dlg->notes->text_len -1;
-		dlg->notes->text.ch[len] = 0x0;  /* null-erminate */
-		gtt_project_set_notes (dlg->proj, dlg->notes->text.ch);
+		gtt_project_set_notes(dlg->proj, xxxgtk_text_get_text(dlg->notes));
 	}
 
 	if (1 == page)
@@ -114,7 +107,6 @@ void
 prop_dialog_set_project(GttProject *proj)
 {
 	char buff[132];
-	const char * str;
 
 	if (!dlg) return;
 
@@ -142,8 +134,7 @@ prop_dialog_set_project(GttProject *proj)
 
 	gtk_entry_set_text(dlg->title, gtt_project_get_title(proj));
 	gtk_entry_set_text(dlg->desc, gtt_project_get_desc(proj));
-	str = gtt_project_get_notes (proj);
-	gtk_text_insert(dlg->notes, NULL, NULL, NULL, str, strlen (str));
+	xxxgtk_text_set_text(dlg->notes, gtt_project_get_notes (proj));
 
 	/* hack alert should use local currencies for this */
 	g_snprintf (buff, 132, "%.2f", gtt_project_get_billrate(proj));

@@ -25,6 +25,7 @@
 
 #include "proj.h"
 #include "props-task.h"
+#include "util.h"
 
 
 typedef struct _PropTaskDlg 
@@ -52,8 +53,6 @@ task_prop_set(GnomePropertyBox * pb, gint page, PropTaskDlg *dlg)
 
 	if (0 == page)
 	{
-		int len;
-
 		str = gtk_entry_get_text(dlg->memo);
 		if (str && str[0]) 
 		{
@@ -65,12 +64,7 @@ task_prop_set(GnomePropertyBox * pb, gint page, PropTaskDlg *dlg)
 			gtk_entry_set_text(dlg->memo, _("empty"));
 		}
 	
-		/* crazy text handling; note this is broken for
-		 * double-byte character sets */
-		len = gtk_text_get_length(dlg->notes);
-		if (len >= dlg->notes->text_len) len = dlg->notes->text_len -1;
-		dlg->notes->text.ch[len] = 0x0;  /* null-erminate */
-		gtt_task_set_notes (dlg->task, dlg->notes->text.ch);
+		gtt_task_set_notes(dlg->task, xxxgtk_text_get_text(dlg->notes));
 
 		ivl = atof (gtk_entry_get_text(dlg->unit));
 		gtt_task_set_bill_unit (dlg->task, ivl);
@@ -86,7 +80,6 @@ static void
 prop_dialog_set_task(GttTask *tsk)
 {
 	char buff[132];
-	const char * str;
 
 	if (!dlg) return;
 
@@ -105,8 +98,7 @@ prop_dialog_set_task(GttTask *tsk)
 	dlg->task = tsk;
 
 	gtk_entry_set_text(dlg->memo, gtt_task_get_memo(tsk));
-	str = gtt_task_get_notes (tsk);
-	gtk_text_insert(dlg->notes, NULL, NULL, NULL, str, strlen (str));
+	xxxgtk_text_set_text(dlg->notes, gtt_task_get_notes (tsk));
 
 	g_snprintf (buff, 132, "%d", gtt_task_get_bill_unit(tsk));
 	gtk_entry_set_text(dlg->unit, buff);
@@ -162,16 +154,18 @@ prop_task_dialog (GttTask *task)
 	dlg->notes = GTK_TEXT(e);
 
 	e = glade_xml_get_widget (gtxml, "billable menu");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
+	dlg->billable = GTK_OPTION_MENU(e);
+	e = gtk_option_menu_get_menu (GTK_OPTION_MENU(e));
+	gtk_signal_connect_object(GTK_OBJECT(e), "selection_done",
 				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
 				  GTK_OBJECT(dlg->dlg));
-	dlg->billable = GTK_OPTION_MENU(e);
 
 	e = glade_xml_get_widget (gtxml, "billrate menu");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
+	dlg->billrate = GTK_OPTION_MENU(e);
+	e = gtk_option_menu_get_menu (GTK_OPTION_MENU(e));
+	gtk_signal_connect_object(GTK_OBJECT(e), "selection_done",
 				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
 				  GTK_OBJECT(dlg->dlg));
-	dlg->billrate = GTK_OPTION_MENU(e);
 
 	e = glade_xml_get_widget (gtxml, "unit box");
 	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
