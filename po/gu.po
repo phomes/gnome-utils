@@ -1,20 +1,21 @@
+# translation of gnome-utils.gnome-2-10.gu.po to Gujarati
 # translation of gnome-utils.HEAD.gu.po to Gujarati
 # Copyright (C) 2004, 2005 Free Software Foundation, Inc.
 # MagNet <magnet@magnet-i.com>, 2004.
 # Ankit Patel <ankit@redhat.com>, 2004, 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils.HEAD.gu\n"
+"Project-Id-Version: gnome-utils.gnome-2-10.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-07 10:11-0500\n"
-"PO-Revision-Date: 2005-02-24 14:17+0530\n"
+"POT-Creation-Date: 2005-03-08 23:42+0100\n"
+"PO-Revision-Date: 2005-03-09 09:40+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <gu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "<magnet@magnet-i.com>\n"
-"Plural-Forms: Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "X-Generator: KBabel 1.9.1\n"
 
@@ -114,9 +115,8 @@ msgstr "મદદ પ્રદર્શિત કરી શક્યા નહ�
 
 #. Top
 #: gdictsrc/gdict-app.c:626
-#, fuzzy
 msgid "_Dictionary"
-msgstr "શબ્દકોષ"
+msgstr "શબ્દકોષ (_D)"
 
 #. Dictionary menu
 #: gdictsrc/gdict-app.c:632 gdictsrc/gdict-app.c:763
@@ -2270,7 +2270,9 @@ msgstr "નવી લોગ ફાઇલ ખોલો"
 msgid "There was an error displaying help."
 msgstr "મદદ પ્રદર્શિત કરવામાં ભૂલ હતી."
 
-#: logview/logview.c:894
+#. For translators : this is the window title that shows the log and
+#. app names : "logname (monitored) - APP_NAME"
+#: logview/logview.c:896
 #, c-format
 msgid "%s (monitored) - %s"
 msgstr "%s (મોનિટર થયેલ) - %s"
@@ -2295,3 +2297,4 @@ msgstr "પ્રવેશ વિગતો"
 #: logview/zoom.c:135
 msgid "%B %e %X"
 msgstr "%B %e %X"
+
