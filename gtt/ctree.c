@@ -40,6 +40,7 @@
 #define TITLE_COL	2
 #define DESC_COL	3
 #define TASK_COL	4
+#define NCOLS		5
 
 int clist_header_width_set = 0;
 
@@ -336,9 +337,20 @@ redraw (GttProject *prj, gpointer data)
 {
 	GtkCTreeNode *treenode = data;
 	gtk_ctree_node_set_text(GTK_CTREE(glist), treenode, TITLE_COL,
-			   gtt_project_get_title(prj));
+		   gtt_project_get_title(prj));
 	gtk_ctree_node_set_text(GTK_CTREE(glist), treenode, DESC_COL,
-			   gtt_project_get_desc(prj));
+		   gtt_project_get_desc(prj));
+
+	if (config_show_title_task)
+	{
+		GList *leadnode;
+		const char * tt;
+		leadnode = gtt_project_get_tasks (prj);
+		tt = gtt_task_get_memo (leadnode->data);
+		gtk_ctree_node_set_text(GTK_CTREE(glist), treenode, 
+			TASK_COL,
+			tt);
+	}
 
 	cupdate_label (prj, GTK_CTREE_ROW(treenode)->expanded);
 }
@@ -350,19 +362,18 @@ create_ctree(void)
 {
 	GtkWidget *wimg;
 	GtkWidget *w, *sw;
-	char *titles[4] = {
-		N_("Total"),
-		N_("Today"),
-		N_("Project Title"),
-		N_("Description")
-	};
-	char *tmp[4];
+	char *tmp[NCOLS];
+	int ncols = 4;
 
-	tmp[TOTAL_COL] = _(titles[0]);
-	tmp[TIME_COL]  = _(titles[1]);
-	tmp[TITLE_COL] = _(titles[2]);
-	tmp[DESC_COL]  = _(titles[3]);
-	w = gtk_ctree_new_with_titles(4, 2, tmp);
+	tmp[TOTAL_COL] = _("Total");
+	tmp[TIME_COL]  = _("Today");
+	tmp[TITLE_COL] = _("Project Title");
+	tmp[DESC_COL]  = _("Description");
+	tmp[TASK_COL]  = _("Task");
+
+	if (config_show_title_task) ncols = 5;
+
+	w = gtk_ctree_new_with_titles(ncols, 2, tmp);
 
 	gtk_clist_set_selection_mode(GTK_CLIST(w), GTK_SELECTION_SINGLE);
 	gtk_clist_set_column_justification(GTK_CLIST(w), TOTAL_COL, GTK_JUSTIFY_CENTER);
@@ -403,7 +414,7 @@ create_ctree(void)
 	gtk_clist_set_use_drag_icons (GTK_CLIST(w), TRUE);
 	gtk_ctree_set_drag_compare_func (GTK_CTREE(w), ctree_drag);
 
-	/* desperate attempt to clue the user into how the 
+	/* Desperate attempt to clue the user into how the 
 	 * dragged project will be reparented. We show left or
 	 * down arrows, respecitvely.  If anyone can come up with
 	 * something more elegant, then please ...  */
@@ -522,7 +533,7 @@ ctree_add (GttProject *p, GtkCTreeNode *parent)
 	char ever_timestr[24], day_timestr[24];
 	GList *n;
 	GtkCTreeNode *treenode;
-	char *tmp[4];
+	char *tmp[NCOLS];
 
 	print_hours_elapsed (ever_timestr, 24, gtt_project_total_secs_ever(p), 
 			config_show_secs);
@@ -532,6 +543,7 @@ ctree_add (GttProject *p, GtkCTreeNode *parent)
 	tmp[TIME_COL]  = day_timestr;
 	tmp[TITLE_COL] = (char *) gtt_project_get_title(p);
 	tmp[DESC_COL]  = (char *) gtt_project_get_desc(p);
+	tmp[TASK_COL]  = (char *) "duude";
 
 	treenode = gtk_ctree_insert_node (GTK_CTREE(glist),  parent, NULL,
                                tmp, 0, NULL, NULL, NULL, NULL,
@@ -558,7 +570,7 @@ ctree_insert_before (GttProject *p, GttProject *sibling)
 	char ever_timestr[24], day_timestr[24];
 	GtkCTreeNode *treenode, *sibnode=NULL;
 	GtkCTreeNode *parentnode=NULL;
-	char *tmp[4];
+	char *tmp[NCOLS];
 
 	print_hours_elapsed (ever_timestr, 24, gtt_project_total_secs_ever(p), 
 			config_show_secs);
@@ -568,6 +580,7 @@ ctree_insert_before (GttProject *p, GttProject *sibling)
 	tmp[TIME_COL]  = day_timestr;
 	tmp[TITLE_COL] = (char *) gtt_project_get_title(p);
 	tmp[DESC_COL]  = (char *) gtt_project_get_desc(p);
+	tmp[TASK_COL]  = "ultra dude";
 
 	if (sibling)
 	{
@@ -593,7 +606,7 @@ ctree_insert_after (GttProject *p, GttProject *sibling)
 	GtkCTreeNode *treenode;
 	GtkCTreeNode *parentnode=NULL;
 	GtkCTreeNode *next_sibling=NULL;
-	char *tmp[4];
+	char *tmp[NCOLS];
 
 	print_hours_elapsed (ever_timestr, 24, gtt_project_total_secs_ever(p), 
 			config_show_secs);
@@ -603,6 +616,7 @@ ctree_insert_after (GttProject *p, GttProject *sibling)
 	tmp[TIME_COL]  = day_timestr;
 	tmp[TITLE_COL] = (char *) gtt_project_get_title(p);
 	tmp[DESC_COL]  = (char *) gtt_project_get_desc(p);
+	tmp[TASK_COL]  = "very duude";
 
 	if (sibling)
 	{
