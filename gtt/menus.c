@@ -24,6 +24,7 @@
 #include "gtt.h"
 #include "journal.h"
 #include "menucmd.h"
+#include "menus.h"
 #include "toolbar.h"
 
 
@@ -48,12 +49,6 @@ static GnomeUIInfo menu_main_file[] = {
 	GNOMEUIINFO_END
 };
 
-static GnomeUIInfo menu_main_settings[] = {
-	GNOMEUIINFO_MENU_PREFERENCES_ITEM(menu_options,NULL),
-	GNOMEUIINFO_END
-};
-
-
 
 static GnomeUIInfo menu_main_edit[] = {
 #define MENU_EDIT_CUT_POS 0
@@ -68,15 +63,25 @@ static GnomeUIInfo menu_main_edit[] = {
 			       menu_clear_daily_counter,
 			       GNOME_STOCK_MENU_BLANK),
 	GNOMEUIINFO_SEPARATOR,
-#define MENU_EDIT_JNL_POS 6
+#define MENU_EDIT_PROP_POS 6
+	GNOMEUIINFO_MENU_PROPERTIES_ITEM(menu_properties,NULL),
+	GNOMEUIINFO_END
+};
+
+static GnomeUIInfo menu_main_reports[] = {
 	GNOMEUIINFO_ITEM_STOCK(N_("_Journal..."), NULL,
 			       edit_journal,
 			       GNOME_STOCK_MENU_BLANK),
 	GNOMEUIINFO_SEPARATOR,
-#define MENU_EDIT_PROP_POS 8
-	GNOMEUIINFO_MENU_PROPERTIES_ITEM(menu_properties,NULL),
 	GNOMEUIINFO_END
 };
+
+
+static GnomeUIInfo menu_main_settings[] = {
+	GNOMEUIINFO_MENU_PREFERENCES_ITEM(menu_options,NULL),
+	GNOMEUIINFO_END
+};
+
 
 
 static GnomeUIInfo menu_main_timer[] = {
@@ -108,6 +113,7 @@ static GnomeUIInfo menu_main_help[] = {
 static GnomeUIInfo menu_main[] = {
 	GNOMEUIINFO_MENU_FILE_TREE(menu_main_file),
 	GNOMEUIINFO_MENU_EDIT_TREE(menu_main_edit),
+	GNOMEUIINFO_SUBTREE(N_("_Reports"), menu_main_reports),
 	GNOMEUIINFO_MENU_SETTINGS_TREE(menu_main_settings),
 	GNOMEUIINFO_SUBTREE(N_("_Timer"), menu_main_timer),
 	GNOMEUIINFO_MENU_HELP_TREE(menu_main_help),
@@ -159,8 +165,17 @@ menus_create(GnomeApp *app)
 {
 	menus_get_popup(); /* initialize it */
 	gnome_app_create_menus(app, menu_main);
+
 }
 
+void
+menus_add_plugins (GnomeApp *app)
+{
+
+	gnome_app_insert_menus (app, "Reports/<Separator>",
+menu_main_reports);
+printf ("duude add plugins \n");
+}
 
 
 GtkCheckMenuItem *
