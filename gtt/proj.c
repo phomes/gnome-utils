@@ -1161,6 +1161,7 @@ gtt_project_timer_start (GttProject *proj)
 {
 	GttTask *task;
 	GttInterval *ival;
+	time_t now;
 
 	if (!proj) return;
 
@@ -1177,8 +1178,30 @@ gtt_project_timer_start (GttProject *proj)
 		task = proj->task_list->data;
 		g_return_if_fail (task);
 	}
+
+	now = time(0);
+
+	/* only add a new interval if there's been a bit of a gap,
+	 * otherwise, reuse the most recent running interval.  */
+	if (task->interval_list)
+	{
+		int delta;
+		ival = task->interval_list->data;
+		delta = now - ival->stop;
+
+		if (delta <= proj->auto_merge_gap)
+		{
+			
+			ival->start += delta;
+			ival->fuzz += delta;
+			ival->stop = now;
+			ival->running = TRUE;
+			return;
+		}
+	} 
+
 	ival = g_new0 (GttInterval, 1);
-	ival->start = time(0);
+	ival->start = now;
 	ival->stop = ival->start;
 	ival->running = TRUE;
 	task->interval_list = g_list_prepend (task->interval_list, ival);
