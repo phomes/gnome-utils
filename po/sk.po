@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-09-27 16:39+0200\n"
-"PO-Revision-Date: 2001-09-27 16:41CET\n"
+"POT-Creation-Date: 2001-09-28 11:08+0200\n"
+"PO-Revision-Date: 2001-09-28 11:17CET\n"
 "Last-Translator: Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>\n"
-"Language-Team: Slovak <sk-i18n@linux.sk>\n"
+"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -163,15 +163,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:810
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:809
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:808
 msgid "3"
 msgstr "3"
 
@@ -812,13 +812,13 @@ msgstr "Prida»"
 msgid "Show Command"
 msgstr "Ukáza» príkaz"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ghtml.c:93
-#: gtt/ghtml.c:257 gtt/glade/interval_edit.glade.h:11
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ghtml.c:94
+#: gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "©tart"
 
-#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:93
-#: gtt/ghtml.c:260 gtt/glade/interval_edit.glade.h:13
+#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:94
+#: gtt/ghtml.c:265 gtt/glade/interval_edit.glade.h:13
 msgid "Stop"
 msgstr "Stop"
 
@@ -896,116 +896,210 @@ msgstr ""
 "Nerozumiem umiestneniu (pozícii a veµkosti)\n"
 " uvedenému na príkazovom riadku"
 
-#: gtt/ctree.c:442
+#: gtt/ctree.c:528
 msgid "Total"
 msgstr "Celkom"
 
-#: gtt/ctree.c:446 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:532
+msgid "This Memo"
+msgstr "Toto memo"
+
+#: gtt/ctree.c:536 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Dnes"
 
-#: gtt/ctree.c:450 gtt/menucmd.c:144
+#: gtt/ctree.c:540
+msgid "Week"
+msgstr "Tý¾deò"
+
+#: gtt/ctree.c:544
+msgid "Month"
+msgstr "Mesiac"
+
+#: gtt/ctree.c:548
+msgid "Year"
+msgstr "Rok"
+
+#: gtt/ctree.c:552 gtt/menucmd.c:144
 msgid "Project Title"
 msgstr "Titulok projektu"
 
-#: gtt/ctree.c:454 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:556 gtt/menucmd.c:145 stripchart/params.c:654
 msgid "Description"
 msgstr "Popis"
 
-#: gtt/ctree.c:458
+#: gtt/ctree.c:560
 msgid "Task"
 msgstr "Úloha"
 
-#: gtt/file-io.c:358
+#: gtt/ctree.c:564
+msgid "Estimated Start Date"
+msgstr "Predpokladaný termín zaèiatku"
+
+#: gtt/ctree.c:568
+msgid "Estimated End Date"
+msgstr "Predpokladaný termín konca"
+
+#: gtt/ctree.c:572
+msgid "Date Due"
+msgstr "Termín"
+
+#: gtt/ctree.c:576
+msgid "Sizing"
+msgstr "Veµkos»"
+
+#: gtt/ctree.c:580 gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
+msgstr "% hotových"
+
+#: gtt/ctree.c:584
+msgid "Urgency"
+msgstr "Urgentnos»"
+
+#: gtt/ctree.c:588
+msgid "Importance"
+msgstr "Dôle¾itos»"
+
+#: gtt/ctree.c:592 mini-utils/idetool/idetool.c:317
+#: mini-utils/idetool/idetool.c:319
+msgid "Status"
+msgstr "Stav"
+
+#: gtt/ctree.c:820 gtt/glade/project_properties.glade.h:25
+msgid "Low"
+msgstr "Nízka"
+
+#: gtt/ctree.c:821
+msgid "Med"
+msgstr "Stredná"
+
+#: gtt/ctree.c:822 gtt/glade/project_properties.glade.h:15
+msgid "High"
+msgstr "Veµká"
+
+#: gtt/ctree.c:831 gtt/glade/project_properties.glade.h:29
+msgid "Not Started"
+msgstr "Nezaèal"
+
+#: gtt/ctree.c:832 gtt/glade/project_properties.glade.h:21
+msgid "In Progress"
+msgstr "Prebieha"
+
+#: gtt/ctree.c:833 gtt/glade/project_properties.glade.h:31
+msgid "On Hold"
+msgstr "Pozdr¾aný"
+
+#: gtt/ctree.c:834 gtt/glade/project_properties.glade.h:9
+msgid "Cancelled"
+msgstr "Zru¹ený"
+
+#: gtt/ctree.c:835 gtt/glade/project_properties.glade.h:10
+msgid "Completed"
+msgstr "Dokonèený"
+
+#: gtt/file-io.c:373
 msgid "project %t started"
 msgstr "projekt %t spustený"
 
-#: gtt/file-io.c:361
+#: gtt/file-io.c:376
 msgid "stopped project %t"
 msgstr "zastavený projekt %t"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:641
+#: gtt/file-io.c:670
 #, c-format
 msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
 
-#: gtt/ghtml.c:93 gtt/ghtml.c:218
+#: gtt/ghtml.c:94 gtt/ghtml.c:219
 msgid "Memo"
 msgstr "Memo"
 
-#: gtt/ghtml.c:93 gtt/ghtml.c:263
+#: gtt/ghtml.c:94 gtt/ghtml.c:268
 msgid "Elapsed"
 msgstr "Uplynulo"
 
-#: gtt/ghtml.c:111 gtt/ghtml.c:360
+#: gtt/ghtml.c:112 gtt/ghtml.c:364
 msgid "(empty)"
 msgstr "(prázne)"
 
-#: gtt/ghtml.c:223
+#: gtt/ghtml.c:224
 msgid "Task Time"
 msgstr "Èas úlohy"
 
-#: gtt/ghtml.c:227 gtt/ghtml.c:379 gtt/glade/task_properties.glade.h:3
+#: gtt/ghtml.c:228
+msgid "Bill Status"
+msgstr "Stav úètovania"
+
+#: gtt/ghtml.c:232 gtt/ghtml.c:396 gtt/glade/task_properties.glade.h:4
 msgid "Billable"
 msgstr "Vyúètovateµná"
 
-#: gtt/ghtml.c:231
+#: gtt/ghtml.c:236
 msgid "Bill Rate"
 msgstr "Frekvencia úètovania"
 
-#: gtt/ghtml.c:235 mini-utils/gcolorsel/view-color-list.c:197
+#: gtt/ghtml.c:240 mini-utils/gcolorsel/view-color-list.c:197
 #: mini-utils/guname/moreinfo.c:227
 msgid "Value"
 msgstr "Hodnota"
 
-#: gtt/ghtml.c:239
+#: gtt/ghtml.c:244
 msgid "Billable Value"
 msgstr "Vyúètovateµná hodnota"
 
-#: gtt/ghtml.c:243 gtt/ghtml.c:269
+#: gtt/ghtml.c:248 gtt/ghtml.c:274
 msgid "No Default Value"
 msgstr "®iadna ¹tandardná hodnota"
 
-#: gtt/ghtml.c:266
+#: gtt/ghtml.c:271
 msgid "Start Time Fuzziness"
 msgstr "Nepresnos» poèiatoèného èasu"
 
-#: gtt/ghtml.c:376 gtt/glade/task_properties.glade.h:10
+#: gtt/ghtml.c:380 gtt/glade/task_properties.glade.h:11
 msgid "Hold"
 msgstr "Pozdr¾ané"
 
-#: gtt/ghtml.c:382 gtt/glade/task_properties.glade.h:13
+#: gtt/ghtml.c:383 gtt/glade/task_properties.glade.h:3
+msgid "Bill"
+msgstr "Vyúètovateµné"
+
+#: gtt/ghtml.c:386 gtt/glade/task_properties.glade.h:20
+msgid "Paid"
+msgstr "Zaplatené"
+
+#: gtt/ghtml.c:399 gtt/glade/task_properties.glade.h:16
 msgid "Not Billable"
 msgstr "Nevyúètovateµné"
 
-#: gtt/ghtml.c:385 gtt/glade/task_properties.glade.h:12
+#: gtt/ghtml.c:402 gtt/glade/task_properties.glade.h:15
 msgid "No Charge"
 msgstr "Bezplatne"
 
-#: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:17
+#: gtt/ghtml.c:412 gtt/glade/task_properties.glade.h:21
 msgid "Regular"
 msgstr "Normálny"
 
-#: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:16
+#: gtt/ghtml.c:415 gtt/glade/task_properties.glade.h:19
 msgid "Overtime"
 msgstr "Cezèas"
 
-#: gtt/ghtml.c:401
+#: gtt/ghtml.c:418
 msgid "Double Overtime"
 msgstr "Dvojitý cezèas"
 
-#: gtt/ghtml.c:404 gtt/glade/task_properties.glade.h:9
+#: gtt/ghtml.c:421 gtt/glade/task_properties.glade.h:10
 msgid "Flat Fee"
 msgstr "Jednotná mzda"
 
-#: gtt/ghtml.c:424
+#: gtt/ghtml.c:441
 msgid "Error - Unknown"
 msgstr "Chyba - Neznáme"
 
-#: gtt/ghtml.c:664
+#: gtt/ghtml.c:686
 msgid "unknown token: >>>>"
 msgstr "neznámy token: >>>>"
 
@@ -1035,8 +1129,8 @@ msgstr ""
 "Nepodarilo sa otvori» súbor %s\n"
 "%s"
 
-#: gtt/journal.c:247 gtt/proj.c:505 gtt/proj.c:1200 gtt/proj.c:1317
-#: gtt/proj.c:1455
+#: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1527 gtt/proj.c:1647
+#: gtt/proj.c:1787
 msgid "New Task"
 msgstr "Nová úloha"
 
@@ -1247,12 +1341,12 @@ msgstr "Reporty"
 msgid "Reports/<Separator>"
 msgstr "Reporty/<Separator>"
 
-#: gtt/proj.c:486
+#: gtt/proj.c:697
 msgid "Old GTT Tasks"
 msgstr "Staré úlohy GTT"
 
-#: gtt/props-proj.c:71 gtt/props-proj.c:72 gtt/props-task.c:67
-#: gtt/props-task.c:68
+#: gtt/props-proj.c:94 gtt/props-proj.c:95 gtt/props-task.c:75
+#: gtt/props-task.c:76
 msgid "empty"
 msgstr "prázdne"
 
@@ -1484,14 +1578,6 @@ msgstr "Ulo¾i» súbor"
 msgid "Information"
 msgstr "Informácie"
 
-#: gtt/glade/not-implemented.glade.h:2
-msgid ""
-"This function is not yet implemented!\n"
-"Coming Soon, I hope!"
-msgstr ""
-"Táto funkcia e¹te nie je implementovaná.\n"
-"Dúfam, ¾e èoskoro bude."
-
 #: gtt/glade/prefs.glade.h:1
 msgid "Display"
 msgstr "Zobrazi»"
@@ -1533,122 +1619,190 @@ msgstr ""
 "pre jeho popis %d apod. Dal¹ie mo¾nosti nájdete v manuáli."
 
 #: gtt/glade/prefs.glade.h:10
+msgid "Fields"
+msgstr "Polia"
+
+#: gtt/glade/prefs.glade.h:11
 msgid "Filename:"
 msgstr "Meno súboru:"
 
-#: gtt/glade/prefs.glade.h:11
+#: gtt/glade/prefs.glade.h:12
 msgid "Idle Seconds:"
 msgstr "Neèinná doba:"
 
-#: gtt/glade/prefs.glade.h:12
+#: gtt/glade/prefs.glade.h:13
 msgid "Inactivity Timeout"
 msgstr "Èas neèinnosti"
 
-#: gtt/glade/prefs.glade.h:13
+#: gtt/glade/prefs.glade.h:14
 msgid "Logfile"
 msgstr "Súbor so záznamom"
 
-#: gtt/glade/prefs.glade.h:14
+#: gtt/glade/prefs.glade.h:15
 msgid "Min Recorded:"
 msgstr "Zaznamenané minúty:"
 
-#: gtt/glade/prefs.glade.h:15
+#: gtt/glade/prefs.glade.h:16
 msgid "Misc"
 msgstr "Rôzne"
 
-#: gtt/glade/prefs.glade.h:16
+#: gtt/glade/prefs.glade.h:17
 msgid "No Project Command:"
 msgstr "Príkaz pre ¾iadny projekt:"
 
-#: gtt/glade/prefs.glade.h:17
+#: gtt/glade/prefs.glade.h:18
 msgid "Project List Display"
 msgstr "Zobrazenie zoznamu projektov"
 
-#: gtt/glade/prefs.glade.h:18
+#: gtt/glade/prefs.glade.h:19
 msgid "Shell"
 msgstr "Shell"
 
-#: gtt/glade/prefs.glade.h:19
+#: gtt/glade/prefs.glade.h:20
 msgid "Shell Commands"
 msgstr "Príkazy shellu"
 
-#: gtt/glade/prefs.glade.h:20
+#: gtt/glade/prefs.glade.h:21
 msgid "Show Current Task"
 msgstr "Zobrazi» aktuálnu úlohu"
 
-#: gtt/glade/prefs.glade.h:21
+#: gtt/glade/prefs.glade.h:22
+msgid "Show Estimated Effort"
+msgstr "Zobrazi» predpokladanú nároènos»"
+
+#: gtt/glade/prefs.glade.h:23
+msgid "Show Percent Complete"
+msgstr "Zobrazi» dokonèenú èas»"
+
+#: gtt/glade/prefs.glade.h:24
+msgid "Show Planned Project End Date"
+msgstr "Zobrazi» plánovaný koniec projektu"
+
+#: gtt/glade/prefs.glade.h:25
+msgid "Show Planned Project Start Date"
+msgstr "Zobrazi» plánovaný zaèiatok projektu"
+
+#: gtt/glade/prefs.glade.h:26
 msgid "Show Project Description"
 msgstr "Zobrazi» popis projektu"
 
-#: gtt/glade/prefs.glade.h:22
+#: gtt/glade/prefs.glade.h:27
+msgid "Show Project Due Date"
+msgstr "Zobrazi» termín projektu"
+
+#: gtt/glade/prefs.glade.h:28
+msgid "Show Project Importance"
+msgstr "Zobrazi» dôle¾itos» projektu"
+
+#: gtt/glade/prefs.glade.h:29
+msgid "Show Project Status"
+msgstr "Zobrazi» stav projektu"
+
+#: gtt/glade/prefs.glade.h:30
+msgid "Show Project Urgency"
+msgstr "Zobrazi» urgentnos» projektu"
+
+#: gtt/glade/prefs.glade.h:31
 msgid "Show Seconds"
 msgstr "Zobrazi» sekundy"
 
-#: gtt/glade/prefs.glade.h:23
+#: gtt/glade/prefs.glade.h:32
 msgid "Show Status Bar"
 msgstr "Zobrazi» stavový riadok"
 
-#: gtt/glade/prefs.glade.h:24
+#: gtt/glade/prefs.glade.h:33
 msgid "Show Sub-Projects"
 msgstr "Zobrazi» podprojetky"
 
-#: gtt/glade/prefs.glade.h:25
+#: gtt/glade/prefs.glade.h:34
 msgid "Show Table Header"
 msgstr "Zobrazi» hlavièku tabuµky"
 
-#: gtt/glade/prefs.glade.h:26
+#: gtt/glade/prefs.glade.h:35
+msgid "Show Time For The Current Task"
+msgstr "Zobrazi» èas pre aktuálnu úlohu"
+
+#: gtt/glade/prefs.glade.h:36
+msgid "Show Time This Month"
+msgstr "Zobrazi» èas v tomto mesiaci"
+
+#: gtt/glade/prefs.glade.h:37
+msgid "Show Time This Week"
+msgstr "Zobrazi» èas v tomto tý¾dni"
+
+#: gtt/glade/prefs.glade.h:38
+msgid "Show Time This Year"
+msgstr "Zobrazi» èas v tomto roku"
+
+#: gtt/glade/prefs.glade.h:39
+msgid "Show Time Today"
+msgstr "Zobrazi» èas dnes"
+
+#: gtt/glade/prefs.glade.h:40
 msgid "Show Toolbar Icons"
 msgstr "Zobrazi» ikony nástrojového pruhu"
 
-#: gtt/glade/prefs.glade.h:27
+#: gtt/glade/prefs.glade.h:41
 msgid "Show Toolbar Texts"
 msgstr "Zobrazi» texty nástrojového pruhu"
 
-#: gtt/glade/prefs.glade.h:28
+#: gtt/glade/prefs.glade.h:42
 msgid "Show Tooltips"
 msgstr "Zobrazi» tipy"
 
-#: gtt/glade/prefs.glade.h:29
+#: gtt/glade/prefs.glade.h:43
+msgid "Show Total Time Ever"
+msgstr "Zobrazi» celkový èas"
+
+#: gtt/glade/prefs.glade.h:44
 msgid "Show `Cut', `Copy', `Paste'"
 msgstr "Zobrazi» 'Vystrihnú»', 'Kopírova»', 'Vlo¾i»'"
 
-#: gtt/glade/prefs.glade.h:30
+#: gtt/glade/prefs.glade.h:45
 msgid "Show `Help'"
 msgstr "Zobrazi» 'Pomocník'"
 
-#: gtt/glade/prefs.glade.h:31
+#: gtt/glade/prefs.glade.h:46
 msgid "Show `Journal'"
 msgstr "Zobrazi» '®urnál'"
 
-#: gtt/glade/prefs.glade.h:32
+#: gtt/glade/prefs.glade.h:47
 msgid "Show `New'"
 msgstr "Zobrazi» 'Nový'"
 
-#: gtt/glade/prefs.glade.h:33
+#: gtt/glade/prefs.glade.h:48
 msgid "Show `Preferences'"
 msgstr "Zobrazi» 'Nastavenie'"
 
-#: gtt/glade/prefs.glade.h:34
+#: gtt/glade/prefs.glade.h:49
 msgid "Show `Properties'"
 msgstr "Zobrazi» 'Vlastnosti'"
 
-#: gtt/glade/prefs.glade.h:35
+#: gtt/glade/prefs.glade.h:50
 msgid "Show `Quit'"
 msgstr "Zobrazi» 'Koniec'"
 
-#: gtt/glade/prefs.glade.h:36
+#: gtt/glade/prefs.glade.h:51
 msgid "Show `Save', `Reload'"
 msgstr "Zobrazi» 'Ulo¾i»', 'Obnovi»'"
 
-#: gtt/glade/prefs.glade.h:37
+#: gtt/glade/prefs.glade.h:52
 msgid "Show `Timer'"
 msgstr "Zobrazi» 'Èasovaè'"
 
-#: gtt/glade/prefs.glade.h:38
+#: gtt/glade/prefs.glade.h:53
+msgid ""
+"Show the 'szing', that is, the estimated amount of work that it will take to "
+"perform this project."
+msgstr ""
+"Zobrazi» 'veµkos»', èo je oèakávané mno¾stvo práce potrebné pre dokonèenie "
+"tohto projektu."
+
+#: gtt/glade/prefs.glade.h:54
 msgid "Switch Project Command:"
 msgstr "Príkaz pre prepnutie projektu:"
 
-#: gtt/glade/prefs.glade.h:39
+#: gtt/glade/prefs.glade.h:55
 msgid ""
 "Switches between projects that happen faster than this will not be logged "
 "(enter the number of seconds)"
@@ -1656,7 +1810,7 @@ msgstr ""
 "Prepnutia medzi projektmi rýchlej¹ie ako táto doba nebudú zaznamenané v "
 "¾urnáli (zadajte poèet sekúnd)"
 
-#: gtt/glade/prefs.glade.h:40
+#: gtt/glade/prefs.glade.h:56
 msgid ""
 "The current active project will be made inactive after there has been no "
 "keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
@@ -1664,47 +1818,83 @@ msgstr ""
 "Aktívny projekt sa stane neaktívnym, ak nie je ¾iadna aktivita my¹i alebo "
 "klávesnice za túto dobu v sekundách. Vypnete hodnotou -1."
 
-#: gtt/glade/prefs.glade.h:41
+#: gtt/glade/prefs.glade.h:57
 msgid "Toolbar"
 msgstr "Nástrojový pruh"
 
-#: gtt/glade/prefs.glade.h:42
+#: gtt/glade/prefs.glade.h:58
 msgid "Toolbar Segments"
 msgstr "Segmenty nástrojového pruhu"
 
-#: gtt/glade/prefs.glade.h:43
+#: gtt/glade/prefs.glade.h:59
 msgid "Use Logfile"
 msgstr "Pou¾i» súbor so záznamom"
+
+#: gtt/glade/prefs.glade.h:60
+msgid "View Project Fields"
+msgstr "Zobrazi» polia projektu"
 
 #: gtt/glade/project_properties.glade.h:1
 msgid "        "
 msgstr "        "
 
 #: gtt/glade/project_properties.glade.h:2
+msgid "            "
+msgstr "            "
+
+#: gtt/glade/project_properties.glade.h:3
 msgid "                        "
 msgstr "                        "
 
-#: gtt/glade/project_properties.glade.h:3
+#: gtt/glade/project_properties.glade.h:6
 msgid "A title to assign to this project"
 msgstr "Titulok pre tento projekt"
 
-#: gtt/glade/project_properties.glade.h:4
+#: gtt/glade/project_properties.glade.h:7
 msgid "Auto-merge Gap:"
 msgstr "Medzera pre auto-spojenie:"
 
-#: gtt/glade/project_properties.glade.h:5
+#: gtt/glade/project_properties.glade.h:8
 msgid "Auto-merge Interval:"
 msgstr "Interval pre auto-spojenie:"
 
-#: gtt/glade/project_properties.glade.h:6
+#: gtt/glade/project_properties.glade.h:11
+msgid ""
+"Does this item need immediate attention? Note that some urgent tasks might "
+"not be important.  For example, Bill may want you to answer his email today, "
+"but you may have better things to do today."
+msgstr ""
+"Vy¾aduje táto polo¾ka okam¾itú pozornos»? Uvedomte si, ¾e niektoré urgentné "
+"úlohy nemusia by» dôle¾ité. Napríklad, Peter mô¾e chcie» odpoveï na e-mail "
+"dnes, ale vy máte iné veci na práci."
+
+#: gtt/glade/project_properties.glade.h:12
 msgid "Double-Overtime Rate:"
 msgstr "Frekvencia dvojitého cezèasu:"
 
-#: gtt/glade/project_properties.glade.h:7
+#: gtt/glade/project_properties.glade.h:13
+msgid "Due Date:"
+msgstr "Termín:"
+
+#: gtt/glade/project_properties.glade.h:14
 msgid "Flat Fee:"
 msgstr "Jednotná mzda:"
 
-#: gtt/glade/project_properties.glade.h:8
+#: gtt/glade/project_properties.glade.h:16
+msgid "Hours to Finish:"
+msgstr "Hodín na dokonèenie:"
+
+#: gtt/glade/project_properties.glade.h:17
+msgid ""
+"How important is it to perform this task?  Not everything important is "
+"urgent.  For example, it is important to file a tax return every year, but "
+"you have a lot of time to get ready to do this."
+msgstr ""
+"Ako dôle¾ité je vykona» túto úlohu? Nie v¹etko, èo je dôle¾ité, je aj "
+"urgentné. Napríklad, je dôle¾ité vyplni» daòové priznanie, ale "
+"máte na to dos» èasu."
+
+#: gtt/glade/project_properties.glade.h:18
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
@@ -1712,7 +1902,7 @@ msgstr ""
 "Ak je medzera medzi intervalmi men¹ia ako toto, intervali budú spojené do "
 "jedného."
 
-#: gtt/glade/project_properties.glade.h:9
+#: gtt/glade/project_properties.glade.h:19
 msgid ""
 "If this project is billed for one price no matter how long it takes, enter "
 "the fee here."
@@ -1720,74 +1910,110 @@ msgstr ""
 "Ak je projekt platený rovnako bez ohµadu na to, ako dlho trva, zadajte sem "
 "mzdu."
 
-#: gtt/glade/project_properties.glade.h:10
+#: gtt/glade/project_properties.glade.h:20
+msgid "Importance:"
+msgstr "Dôle¾itos»:"
+
+#: gtt/glade/project_properties.glade.h:22
 msgid ""
 "Internal notes about the project, memos that will not be printed on an "
 "invoice."
 msgstr "Súkromné poznámky o projekte, memo, ktoré nebude vytlaèené na faktúre."
 
-#: gtt/glade/project_properties.glade.h:11
+#: gtt/glade/project_properties.glade.h:23
 msgid "Intervals"
 msgstr "Intervaly"
 
-#: gtt/glade/project_properties.glade.h:12
+#: gtt/glade/project_properties.glade.h:24
 msgid "Intervals smaller than this will be discarded"
 msgstr "Intervaly men¹ie ako táto hodnota budú zahodené"
 
-#: gtt/glade/project_properties.glade.h:13
+#: gtt/glade/project_properties.glade.h:26
+msgid "Medium"
+msgstr "Stredná"
+
+#: gtt/glade/project_properties.glade.h:27
 msgid "Minimum Interval: "
 msgstr "Minimálny iterval:"
 
-#: gtt/glade/project_properties.glade.h:14
-#: gtt/glade/task_properties.glade.h:14
+#: gtt/glade/project_properties.glade.h:28
+msgid "Not Set"
+msgstr "Nenastavené"
+
+#: gtt/glade/project_properties.glade.h:30
+#: gtt/glade/task_properties.glade.h:17
 msgid "Notes:"
 msgstr "Poznámky:"
 
-#: gtt/glade/project_properties.glade.h:15
+#: gtt/glade/project_properties.glade.h:32
 msgid "Overtime Rate:"
 msgstr "Mzda pre cezèas:"
 
-#: gtt/glade/project_properties.glade.h:16
+#: gtt/glade/project_properties.glade.h:33
+msgid "Planned Finish:"
+msgstr "Plánovaný koniec:"
+
+#: gtt/glade/project_properties.glade.h:34
+msgid "Planned Start:"
+msgstr "Plánovaný zaèiatok:"
+
+#: gtt/glade/project_properties.glade.h:35
+msgid "Planning"
+msgstr "Plánovanie"
+
+#: gtt/glade/project_properties.glade.h:36
 msgid "Project"
 msgstr "Projekt"
 
-#: gtt/glade/project_properties.glade.h:17
+#: gtt/glade/project_properties.glade.h:37
 msgid "Project Description:"
 msgstr "Popis projektu:"
 
-#: gtt/glade/project_properties.glade.h:18
+#: gtt/glade/project_properties.glade.h:38
 msgid "Project Title:"
 msgstr "Titulok projektu:"
 
-#: gtt/glade/project_properties.glade.h:19
+#: gtt/glade/project_properties.glade.h:39
 msgid "Rates"
 msgstr "Mzdy"
 
-#: gtt/glade/project_properties.glade.h:20
+#: gtt/glade/project_properties.glade.h:40
 msgid "Regular Rate:"
 msgstr "Normálna mzda:"
 
-#: gtt/glade/project_properties.glade.h:21
+#: gtt/glade/project_properties.glade.h:41
+msgid "Status:"
+msgstr "Stav:"
+
+#: gtt/glade/project_properties.glade.h:42
 msgid "The dollars per hour charged for overtime work on this project."
 msgstr "Dolárov za hodinu úètovaných pre cezèasy pre tento projekt."
 
-#: gtt/glade/project_properties.glade.h:22
+#: gtt/glade/project_properties.glade.h:43
 msgid "The dollars per hour normally charged for this project."
 msgstr "Dolárov za hodinu normálne úètovaných pre tento projekt."
 
-#: gtt/glade/project_properties.glade.h:23
+#: gtt/glade/project_properties.glade.h:44
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
 msgstr "Frekvencia pre dvojitý cezèas (nedele apod)"
 
-#: gtt/glade/project_properties.glade.h:24
+#: gtt/glade/project_properties.glade.h:45
 msgid "Time below which an interval is merged with its neighbors"
 msgstr "Doba, pod ktorú je interval spojený so súsediacimi intervalmi"
 
-#: gtt/glade/project_properties.glade.h:25
+#: gtt/glade/project_properties.glade.h:46
+msgid "Urgency:"
+msgstr "Urgentnos»:"
+
+#: gtt/glade/project_properties.glade.h:47
+msgid "What is the status of this project?"
+msgstr "Aký je stav tohto projektu?"
+
+#: gtt/glade/project_properties.glade.h:48
 msgid "a short description that will be printed on the invoice."
 msgstr "krátky popis vytlaèený na faktúre."
 
-#: gtt/glade/project_properties.glade.h:26
+#: gtt/glade/project_properties.glade.h:49
 msgid "seconds"
 msgstr "sekúnd"
 
@@ -1835,49 +2061,64 @@ msgstr "Súkromné poznámky, ktoré nebudú na faktúre."
 msgid "A short description to attach to this block of time."
 msgstr "Krátky popis pridaný k tomuto bloku èasu."
 
-#: gtt/glade/task_properties.glade.h:4
+#: gtt/glade/task_properties.glade.h:5
 msgid "Billable:"
 msgstr "Zúètovateµné:"
 
-#: gtt/glade/task_properties.glade.h:5
+#: gtt/glade/task_properties.glade.h:6
 msgid "Billing Block:"
 msgstr "Zúètovateµný blok:"
 
-#: gtt/glade/task_properties.glade.h:6
+#: gtt/glade/task_properties.glade.h:7
 msgid "Billing Rate:"
 msgstr "Frekvencia úètovania:"
 
-#: gtt/glade/task_properties.glade.h:7
-msgid ""
-"Can this task be billed to the customer?  \"Hold\" means maybe but not yet, "
-"\"Not Billable\" means don't print on the invoice, \"No Charge\" means print "
-"on the invoice as 'free'."
-msgstr ""
-"Mô¾e by» táto úloha úètovaná zákazníkovi? \"Pozdr¾ané\" znamená, ¾e mo¾no, "
-"ale nie teraz, \"Nevyúètovateµné\" znamená, ¾e nemá by» na faktúre a "
-"\"Bezplatne\" zamená, ¾e vytlaèi» na faktúre ako 'zadarmo'."
-
 #: gtt/glade/task_properties.glade.h:8
+msgid "Billing Status:"
+msgstr "Stav úètovania:"
+
+#: gtt/glade/task_properties.glade.h:9
 msgid "Fee rate to be charged for this task."
 msgstr "Mzda úètovaná za túto úlohu."
 
-#: gtt/glade/task_properties.glade.h:11
+#: gtt/glade/task_properties.glade.h:12
+msgid ""
+"How should this task be billed?  \"Billable\" means bill to the customer in "
+"the normal fashion.   \"Not Billable\" means we can't ask for money for "
+"this, don't print on the invoice.   \"No Charge\" means print on the invoice "
+"as 'free/no-charge'."
+msgstr ""
+"Mô¾e by» táto úloha úètovaná zákazníkovi? \"Vyúètovateµné\" znamená, ¾e je "
+"mo¾né úètova» normálne, \"Nevyúètovateµné\" znamená, ¾e to nie je mo¾né "
+"po¾adova» zaplati», \"Bezplatne\" zamená, ¾e vytlaèi» na faktúre ako 'zadarmo'."
+
+#: gtt/glade/task_properties.glade.h:13
+msgid ""
+"Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
+"not yet, needs review.   \"Bill\" means print this on the next invoice.   "
+"\"Paid\" means that it should no longer be included on invoices."
+msgstr ""
+"Mô¾e by» táto úloha úètovaná zákazníkovi? \"Pozdr¾ané\" znamená, ¾e mo¾no, "
+"ale nie teraz, \"Vyúètovateµné\" znamená, ¾e to má by» vytlaèené na nasledujúcej faktúre. "
+"\"Zaplatené\" zamená, ¾e sa u¾ ne ïal¹ích faktúrach nemá objavi»."
+
+#: gtt/glade/task_properties.glade.h:14
 msgid "Memo:"
 msgstr "Memo:"
 
-#: gtt/glade/task_properties.glade.h:15
+#: gtt/glade/task_properties.glade.h:18
 msgid "OverOver"
 msgstr "Dvojitý"
 
-#: gtt/glade/task_properties.glade.h:18
+#: gtt/glade/task_properties.glade.h:22
 msgid "Task Properties"
 msgstr "Vlastnosti úlohy"
 
-#: gtt/glade/task_properties.glade.h:19
+#: gtt/glade/task_properties.glade.h:23
 msgid "The billed unit of time will be rounded to an integer multiple of this time."
 msgstr "Jednotka úètovaného èasu bude zaokrúhlená na celoèíselný násobok tohto èasu."
 
-#: gtt/glade/task_properties.glade.h:20
+#: gtt/glade/task_properties.glade.h:24
 msgid "minutes"
 msgstr "minút"
 
@@ -3714,10 +3955,6 @@ msgstr "Geometria"
 #: mini-utils/idetool/idetool.c:315
 msgid "Cache"
 msgstr "Ke¹"
-
-#: mini-utils/idetool/idetool.c:317 mini-utils/idetool/idetool.c:319
-msgid "Status"
-msgstr "Stav"
 
 #: mini-utils/idetool/idetool.c:323
 msgid "Legacy MFM/RLL drive"
