@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.0\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
-"PO-Revision-Date: 2002-07-07 00:19+0300\n"
+"POT-Creation-Date: 2002-08-04 16:22+0300\n"
+"PO-Revision-Date: 2002-08-04 18:09+0300\n"
 "Last-Translator: Tõivo Leedjärv <toivo@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -25,22 +25,22 @@ msgstr ""
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
-msgstr ""
+msgstr "Ei saa faili õigusi kontrollida"
 
 #: exe-handler/gnome-exe-handler.c:88
 #, c-format
 msgid "Could not execute the file `%s' due to a permission problem"
-msgstr ""
+msgstr "Probleem õigustega ei luba faili `%s' käivitada"
 
 #: exe-handler/gnome-exe-handler.c:104
 #, c-format
 msgid "Failure at executing `%s'"
-msgstr ""
+msgstr "`%s' käivitamine ebaõnnestus"
 
 #: exe-handler/gnome-exe-handler.c:123
 #, c-format
 msgid "It was not possible to open the file `%s'"
-msgstr ""
+msgstr "Faili `%s' avamine ei ole võimalik"
 
 #: exe-handler/gnome-exe-handler.c:132
 #, c-format
@@ -50,11 +50,11 @@ msgstr "Fail `%s' on tühi"
 #: exe-handler/gnome-exe-handler.c:137
 #, c-format
 msgid "There was an error. `%s' is empty"
-msgstr ""
+msgstr "Viga. `%s' on tühi"
 
 #: exe-handler/gnome-exe-handler.c:152
 msgid "This is a library and can not be executed"
-msgstr ""
+msgstr "See fail on teek ning seda ei saa käivitada"
 
 #: exe-handler/gnome-exe-handler.c:158
 msgid "The file is a core file and can not be executed"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
-msgstr ""
+msgstr "See fail on tundmatut tüüpi"
 
 #: exe-handler/gnome-exe-handler.c:192
 msgid ""
@@ -427,14 +427,12 @@ msgid "_Insert"
 msgstr "_Lisa"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "Märgi kood:"
+msgstr "Märgi _kood:"
 
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "Märk:"
+msgstr "_Märk:"
 
 #: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
@@ -527,7 +525,6 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "Lisa märke valides märgi koodi järgi."
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
 msgstr "_Märgid"
 
@@ -616,15 +613,16 @@ msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
+"Tekkis tõsine tõrge. Palun kontrolli, kas su serveri nimi ja port on õiged. "
+"Teadmiseks: vaikimisi server on dict.org ja port 2628"
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "Sõnaraamat"
+msgstr "GNOME sõnaraamat"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "Copyright 1999 Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -642,32 +640,32 @@ msgstr "Õigekirja kontrollimine..."
 msgid "Spell check done"
 msgstr "Õigekirja kontroll valmis"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Ei leia ühtegi vastavust"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "Sõna otsimine..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "Otsing valmis"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "Ei leia stringi"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 msgid "Find"
 msgstr "Otsi"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 msgid "_Find"
 msgstr "_Otsi"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
@@ -677,49 +675,49 @@ msgstr ""
 "Sinu kasutatav server ei ole kättesaadav \n"
 "või ei ole su arvuti Internetti ühendatud."
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "Otsi _sõna"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "Otsi sõna sõnaraamatust"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "Kontrolli _õigekirja"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "Kontrolli sõna õigekirja"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 msgid "_Dictionary"
 msgstr "_Sõnaraamat"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Sõnaraamat"
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 msgid "_Word: "
 msgstr "_Sõna: "
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Sõna"
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Sõna sisestusväli"
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr "Sisesta sõna või vali üks järgnevast nimekirjast"
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 msgid "Look Up for a Word"
 msgstr "Otsi sõna"
 
@@ -885,31 +883,36 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"Määrab, kas kasutada tarka otsingut (smart lookup). See sõltub ka sellest, "
+"kas server toetab seda teenust. Vaikeväärtus on TÕENE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "Sõnaraamatu serveris kasutatav andmebaas."
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"Sõnaraamatu server, kuhu ühenduda. Vaikimisi server on dict.org. Teiste "
+"serverite kohta lisainfo saamiseks vaata http://www.dict.org"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"Sõnaraamatu serveris kasutatava üksiku andmebaasi nimi. ! tähendab, et "
+"gnome-dictionary peaks otsima serveri kõigist andmebaasidest"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "Pordi number, kuhu ühenduda. Vaikimisi port on 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "Otsingustrateegia"
+msgstr "Kasutatav otsingustrateegia"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -924,11 +927,11 @@ msgstr "Kasuta tarka otsingut"
 
 #: gfloppy/gfloppy.desktop.in.h:1
 msgid "Floppy Formatter"
-msgstr ""
+msgstr "Diskettide vormindaja"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "Format Floppy Disks"
-msgstr ""
+msgstr "Vorminda diskette (flopisid)"
 
 #: gfloppy/src/badblocks.c:102
 msgid "MInternal Error: Unable to seek to the correct location."
@@ -961,30 +964,30 @@ msgstr ""
 
 #: gfloppy/src/fdformat.c:44
 msgid "MFormatting the disk..."
-msgstr ""
+msgstr "MKetta vormindamine..."
 
 #: gfloppy/src/fdformat.c:46
 msgid "EI don't know what this is, but it's very wrong."
-msgstr ""
+msgstr "EEi tea, mis see on, aga see on väga vale."
 
 #: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
 #, c-format
 msgid "EError formatting track #%d"
-msgstr ""
+msgstr "EViga raja nr %d vormindamisel"
 
 #: gfloppy/src/fdformat.c:74
 msgid "EError during completion of formatting"
-msgstr ""
+msgstr "EViga vormindamise lõpetamisel"
 
 #. XXXX - need to tell parent we're finished
 #: gfloppy/src/fdformat.c:78
 msgid "MFormatting the disk... Done"
-msgstr ""
+msgstr "MKetta vormindamine... valmis"
 
 #. XXXX - tell parent we're starting verify stage
 #: gfloppy/src/fdformat.c:94
 msgid "MVerifying the format..."
-msgstr ""
+msgstr "MVorminduse kontrollimine..."
 
 #: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
 msgid ""
@@ -992,6 +995,9 @@ msgid ""
 "\n"
 "Please confirm that it is not write-protected."
 msgstr ""
+"EEi saa disketile kirjutada.\n"
+"\n"
+"Palun kontrolli, et kirjutuskaitset ei oleks peal."
 
 #: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
 #, c-format
@@ -1020,30 +1026,32 @@ msgid ""
 "ERead Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
 msgstr ""
+"ELugemisviga:\n"
+"Probleem silindri %d lugemisel, oodatav %d, loetud %d"
 
 #: gfloppy/src/fdformat.c:132
 #, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr ""
+msgstr "EProbleem silindri %d lugemisel, oodatav %d, loetud %d"
 
 #: gfloppy/src/fdformat.c:141
 #, c-format
 msgid "MBad data in cyl %d.  Continuing... "
-msgstr ""
+msgstr "MVigased andmed silindril %d.  Töö jätkub... "
 
 #: gfloppy/src/fdformat.c:148
-#, fuzzy, c-format
+#, c-format
 msgid "EError closing device %s"
-msgstr "Viga päringu täitmisel: %s"
+msgstr "EViga seadme %s sulgemisel"
 
 #: gfloppy/src/fdformat.c:153
 msgid "MVerifying the format... Done"
-msgstr ""
+msgstr "MVorminduse kontrollimine... valmis"
 
 #: gfloppy/src/fdformat.c:165
-#, fuzzy, c-format
+#, c-format
 msgid "EUnable to write to device %s"
-msgstr "Ei suuda draivi kasutada."
+msgstr "EEi saa seadmele %s kirjutada"
 
 #: gfloppy/src/fdformat.c:184
 #, c-format
@@ -1059,21 +1067,19 @@ msgstr ""
 
 #: gfloppy/src/gfloppy.c:164 gfloppy/src/gfloppy.c:197
 msgid "MMaking filesystem on disk..."
-msgstr ""
+msgstr "MKettale failisüsteemi loomine..."
 
 #: gfloppy/src/gfloppy.c:167
-#, fuzzy
 msgid "EUnable to create filesystem correctly."
-msgstr "Ei suuda draivi kasutada."
+msgstr "EEi saa failisüsteemi korralikult luua."
 
 #: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
 msgid "MMaking filesystem on disk... Done"
-msgstr ""
+msgstr "MKettale failisüsteemi loomine... valmis"
 
 #: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
-#, fuzzy
 msgid "EUnable to create filesystem."
-msgstr "Ei suuda draivi kasutada."
+msgstr "EEi saa failisüsteemi luua."
 
 #: gfloppy/src/gfloppy.c:209
 msgid "MChecking for bad blocks... (this might take a while)"
@@ -1081,45 +1087,43 @@ msgstr ""
 
 #: gfloppy/src/gfloppy2.glade.h:2
 msgid "DOS (fat)"
-msgstr ""
+msgstr "DOS (fat)"
 
 #: gfloppy/src/gfloppy2.glade.h:3
 msgid "Double Density 3.5\" (720KB)"
-msgstr ""
+msgstr "Kahekordne tihedus 3.5\" (720KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "Double Density 5.25\" (360KB)"
-msgstr ""
+msgstr "Kahekordne tihedus 5.25\" (360KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:5
 msgid "File system _type:"
 msgstr "Failisüsteemi _tüüp:"
 
 #: gfloppy/src/gfloppy2.glade.h:6
-#, fuzzy
 msgid "Floppy _density:"
-msgstr "    Seade: "
+msgstr "Disketi t_ihedus:"
 
 #: gfloppy/src/gfloppy2.glade.h:7
-#, fuzzy
 msgid "Floppy de_vice:"
-msgstr "    Seade: "
+msgstr "Disketi_seade:"
 
 #: gfloppy/src/gfloppy2.glade.h:8
 msgid "Format a Floppy"
-msgstr ""
+msgstr "Vorminda diskett"
 
 #: gfloppy/src/gfloppy2.glade.h:9
 msgid "High Density 3.5\" (1.44MB)"
-msgstr ""
+msgstr "Kõrgtihedus 3.5\" (1.44MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:10
 msgid "High Density 5.25\" (1.2MB)"
-msgstr ""
+msgstr "Kõrgtihedus 5.25\" (1.2MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:11
 msgid "Linux Native (ext2)"
-msgstr ""
+msgstr "Linux (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:12
 msgid "_Format"
@@ -1158,7 +1162,7 @@ msgstr ""
 
 #: gfloppy/src/main.c:359
 msgid "The device to format"
-msgstr ""
+msgstr "Vormindatav seade"
 
 #: gfloppy/src/main.c:360
 msgid "DEVICE"
@@ -1166,15 +1170,15 @@ msgstr "DEVICE"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
-msgstr ""
+msgstr "Diskett edukalt vormindatud."
 
 #: gfloppy/src/progress.c:120
 msgid "Floppy formatting cancelled."
-msgstr ""
+msgstr "Disketi vormindamine katkestatud."
 
 #: gfloppy/src/progress.c:161
 msgid "Format progress."
-msgstr ""
+msgstr "Vormindamise kulg."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Search for Files"
@@ -1362,7 +1366,7 @@ msgstr "Otsingureegli väärtuse sisestusväli"
 
 #: gsearchtool/gsearchtool.c:1339
 msgid "Enter a value for search rule"
-msgstr ""
+msgstr "Sisesta otsingureegli väärtus"
 
 #: gsearchtool/gsearchtool.c:1354
 msgid "Enabled"
@@ -1370,7 +1374,7 @@ msgstr "Lubatud"
 
 #: gsearchtool/gsearchtool.c:1362
 msgid "Toggle On/Off to enable/disable the rule"
-msgstr ""
+msgstr "Lülita sisse/välja reegli lubamiseks/keelamiseks"
 
 #: gsearchtool/gsearchtool.c:1370
 msgid "Click to Remove the Rule"
@@ -1392,7 +1396,7 @@ msgstr "Alguskataloogi sisestusväli"
 #: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
 #: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
 msgid "Enter the folder name where you want to start the search"
-msgstr ""
+msgstr "Sisesta kataloogi, kust tahad otsingut alustada, nimi"
 
 #: gsearchtool/gsearchtool.c:1450
 msgid "Rules:"
@@ -1456,7 +1460,7 @@ msgstr "Faili nime sisestusväli"
 
 #: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
 msgid "Enter the file name you want to search"
-msgstr ""
+msgstr "Sisesta otsitava faili nimi"
 
 #: gsearchtool/gsearchtool.c:1855
 msgid "Click to Start the search"
@@ -1551,7 +1555,7 @@ msgstr "Copyright (C) 1998"
 
 #: logview/actions.c:75
 msgid "Action database"
-msgstr ""
+msgstr "Tegevuste andmebaas"
 
 #: logview/actions.c:85
 msgid "Actions"
@@ -2039,11 +2043,11 @@ msgstr ""
 
 #: meat-grinder/archive-generator.desktop.in.h:1
 msgid "Archive Generator"
-msgstr ""
+msgstr "Arhiveerija"
 
 #: meat-grinder/archive-generator.desktop.in.h:2
 msgid "Create compressed archives containing many files"
-msgstr ""
+msgstr "Loo pakitud arhiive, mis sisaldavad mitmeid faile"
 
 #: meat-grinder/meat-grinder.c:137
 #, c-format
@@ -2051,12 +2055,16 @@ msgid ""
 "Number of files: %d\n"
 "Number of folders: %d"
 msgstr ""
+"Failide arv: %d\n"
+"Kataloogide arv: %d"
 
 #: meat-grinder/meat-grinder.c:143
 msgid ""
 "No files or folders, drop files or folders\n"
 "above to add them to the archive"
 msgstr ""
+"Pole ühtegi faili või kataloogi, arhiivi\n"
+"lisamiseks tiri failid või kataloogid siia"
 
 #: meat-grinder/meat-grinder.c:166
 #, c-format
@@ -2064,35 +2072,33 @@ msgid "%s removed"
 msgstr "%s eemaldatud"
 
 #: meat-grinder/meat-grinder.c:328 meat-grinder/meat-grinder.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create %s"
-msgstr "Ei suuda draivi kasutada."
+msgstr "%s loomine ebaõnnestus"
 
 #: meat-grinder/meat-grinder.c:373
 msgid "Archive.tar.gz"
-msgstr ""
+msgstr "Arhiiv.tar.gz"
 
 #: meat-grinder/meat-grinder.c:493 meat-grinder/meat-grinder.c:977
 msgid "GNOME Archive Generator"
-msgstr ""
+msgstr "GNOME arhiveerija"
 
 #: meat-grinder/meat-grinder.c:495
 msgid "Drag files in to make archives"
-msgstr ""
+msgstr "Tiri failid kokku ja loo arhiiv"
 
 #: meat-grinder/meat-grinder.c:528
-#, fuzzy
 msgid "All files selected"
-msgstr "projekti ei ole valitud"
+msgstr "Kõik failid valitud"
 
 #: meat-grinder/meat-grinder.c:547
 msgid "All files removed"
-msgstr ""
+msgstr "Kõik failid eemaldatud"
 
 #: meat-grinder/meat-grinder.c:609 meat-grinder/meat-grinder.c:793
-#, fuzzy
 msgid "No filename selected"
-msgstr "projekti ei ole valitud"
+msgstr "Failinime ei ole valitud"
 
 #: meat-grinder/meat-grinder.c:613
 msgid "File exists, overwrite?"
@@ -2105,7 +2111,7 @@ msgstr "%s loodud"
 
 #: meat-grinder/meat-grinder.c:650
 msgid "No items to archive"
-msgstr ""
+msgstr "Pole midagi arhiveerida"
 
 #: meat-grinder/meat-grinder.c:777
 #, c-format
@@ -2113,21 +2119,20 @@ msgid "%s added"
 msgstr "%s lisatud"
 
 #: meat-grinder/meat-grinder.c:796
-#, fuzzy
 msgid "File does not exists"
-msgstr "Alusta kataloogist:"
+msgstr "Faili pole olemas"
 
 #: meat-grinder/meat-grinder.c:810
 msgid "Add file or folder"
-msgstr ""
+msgstr "Lisa fail või kataloog"
 
 #: meat-grinder/meat-grinder.c:927
 msgid "_Add file or folder..."
-msgstr ""
+msgstr "_Lisa fail või kataloog..."
 
 #: meat-grinder/meat-grinder.c:928
 msgid "Add a file or folder to archive"
-msgstr ""
+msgstr "Lisa fail või kataloog arhiivi"
 
 #: meat-grinder/meat-grinder.c:931
 msgid "_Create archive..."
@@ -2135,12 +2140,11 @@ msgstr "_Loo arhiiv..."
 
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
-msgstr ""
+msgstr "Loo elementidest uus arhiiv"
 
 #: meat-grinder/meat-grinder.c:942
-#, fuzzy
 msgid "Remove the selected item"
-msgstr "Kopeeri valik"
+msgstr "Eemalda valitud element"
 
 #: meat-grinder/meat-grinder.c:944
 msgid "R_emove All"
@@ -2148,11 +2152,11 @@ msgstr "Ee_malda kõik"
 
 #: meat-grinder/meat-grinder.c:945
 msgid "Remove all items"
-msgstr ""
+msgstr "Eemalda kõik elemendid"
 
 #: meat-grinder/meat-grinder.c:1016
 msgid "Drop files here to add them to the archive."
-msgstr ""
+msgstr "Arhiivi lisamiseks tiri failid siia."
 
 #. tarball icon
 #: meat-grinder/meat-grinder.c:1028
@@ -2164,6 +2168,8 @@ msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
+"Tiri see nupp sihtkohta, kuhu soovid arhiivi luua või vajuta nuppu, et avada "
+"failide valimise dialoogiaken."
 
 #: meat-grinder/meat-grinder.c:1174
 msgid "Cannot find proper icons anywhere!"
@@ -2181,10 +2187,6 @@ msgstr ""
 #~ msgid "x^y"
 #~ msgstr "x^y"
 
-#, fuzzy
-#~ msgid "Action options"
-#~ msgstr "Mount kataloog"
-
 #~ msgid "Add..."
 #~ msgstr "Lisa..."
 
@@ -2200,10 +2202,6 @@ msgstr ""
 #~ msgid "Date"
 #~ msgstr "Kuupäev"
 
-#, fuzzy
-#~ msgid "Host Name"
-#~ msgstr "Nimi"
-
 #~ msgid "Process"
 #~ msgstr "Protsess"
 
@@ -2216,38 +2214,14 @@ msgstr ""
 #~ msgid "Default strategy"
 #~ msgstr "Vaikestrateegia"
 
-#, fuzzy
-#~ msgid "Dictionary Applet"
-#~ msgstr "Alusta kataloogist:"
-
 #~ msgid "Find:"
 #~ msgstr "Otsi:"
-
-#, fuzzy
-#~ msgid "Open log..."
-#~ msgstr "Ava tekstifail..."
-
-#, fuzzy
-#~ msgid "Close log"
-#~ msgstr "Sulge"
-
-#, fuzzy
-#~ msgid "Exit program"
-#~ msgstr "Käivita programm"
 
 #~ msgid "Zoom"
 #~ msgstr "Suurenda"
 
 #~ msgid "Select...               "
 #~ msgstr "Vali...               "
-
-#, fuzzy
-#~ msgid "Select log events"
-#~ msgstr "Valide fail, mis avada"
-
-#, fuzzy
-#~ msgid "Cannot start the archive (tar) program"
-#~ msgstr "Informatsioon stripchart programmi kohta"
 
 #~ msgid "The GNOME Calculator"
 #~ msgstr "GNOME taskuarvuti"
@@ -2273,28 +2247,8 @@ msgstr ""
 #~ msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 #~ msgstr "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
-#, fuzzy
-#~ msgid "_Browse Characters..."
-#~ msgstr "GNOME taskuarvuti"
-
-#, fuzzy
-#~ msgid "_Text Toolbar"
-#~ msgstr "Nupurida"
-
 #~ msgid "_Statusbar"
 #~ msgstr "_Olekuriba"
-
-#, fuzzy
-#~ msgid "Set _Server"
-#~ msgstr "Salvesta"
-
-#, fuzzy
-#~ msgid "Set _Port"
-#~ msgstr "Käivita"
-
-#, fuzzy
-#~ msgid "Spell checker"
-#~ msgstr "Otsin..."
 
 #~ msgid "Preferences..."
 #~ msgstr "Häälestus..."
@@ -2308,17 +2262,5 @@ msgstr ""
 #~ msgid "The Gnome Search Tool"
 #~ msgstr "GNOME otsingumootor"
 
-#, fuzzy
-#~ msgid "Logview"
-#~ msgstr "Logfail"
-
-#, fuzzy
-#~ msgid "Show user preferences"
-#~ msgstr "Nupp 'Häälestus'"
-
 #~ msgid "Date: "
 #~ msgstr "Kuupäev: "
-
-#, fuzzy
-#~ msgid "Archive"
-#~ msgstr "Aktiivne"
