@@ -9,9 +9,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
-"PO-Revision-Date: 2002-03-15 15:25+0100\n"
-"Last-Translator: Christian Meyer <chrisime@gnome.org>\n"
+"POT-Creation-Date: 2002-07-01 13:49+0200\n"
+"PO-Revision-Date: 2002-07-01 13:49+0200\n"
+"Last-Translator: Manuel Borchers <webmaster@matronix.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,7 +91,8 @@ msgstr ""
 "Christian Meyer <chrisime@gnome.org>\n"
 "Benedikt Roth <Benedikt.Roth@gmx.net>\n"
 "Matthias Warkus <mawarkus@gnome.org>\n"
-"Simon Westhues <westhues@muenster.de>"
+"Simon Westhues <westhues@muenster.de>\n"
+"Manuel Borchers <webmaster@matronix.de>"
 
 #: gcalc/gcalc.c:60 gcalc/gcalc.c:191
 msgid "GNOME Calculator"
@@ -102,9 +103,8 @@ msgid "Simple double precision calculator similiar to xcalc"
 msgstr "Einfacher Taschenrechner mit doppelter Genauigkeit, ähnlich wie xcalc"
 
 #: gcalc/gcalc.c:140
-#, fuzzy
 msgid "_Calculator"
-msgstr "Taschenrechner"
+msgstr "_Taschenrechner"
 
 # CHECK
 #: gcalc/gnome-calc.c:252
@@ -171,7 +171,7 @@ msgstr "INV"
 
 #: gcalc/gnome-calc.c:1260
 msgid "Inverse trigonometry/log function"
-msgstr ""
+msgstr "Inverse trigonometrische/log. Funktion"
 
 #. inverse button
 #: gcalc/gnome-calc.c:1261
@@ -201,9 +201,8 @@ msgstr "Tangens"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
 #: gcalc/gnome-calc.c:1265
-#, fuzzy
 msgid " DEG  "
-msgstr "DEG"
+msgstr " DEG "
 
 #: gcalc/gnome-calc.c:1265
 msgid "Switch degrees / radians / grad"
@@ -297,6 +296,8 @@ msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
+"Den Wert aus der Anzeige\n"
+"im Speicher ablegen"
 
 #: gcalc/gnome-calc.c:1282
 msgid "7"
@@ -327,6 +328,8 @@ msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
+"Den Wert aus dem Speicher\n"
+"in die Anzeige setzen"
 
 #: gcalc/gnome-calc.c:1288
 msgid "4"
@@ -357,6 +360,8 @@ msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
+"Den Wert aus der Anzeige\n"
+"zum Wert im Speicher addieren"
 
 #: gcalc/gnome-calc.c:1294
 msgid "1"
@@ -387,6 +392,8 @@ msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
+"Die Werte aus der Anzeige\n"
+"und dem Speicher tauschen"
 
 #: gcalc/gnome-calc.c:1300
 msgid "0"
@@ -471,14 +478,15 @@ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 #: gcharmap/src/callbacks.c:64
-#, fuzzy
 msgid "GNOME Character Map"
-msgstr "Zeichentabelle"
+msgstr "GNOME-Zeichentabelle"
 
 #: gcharmap/src/callbacks.c:67
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr ""
+"Zeichen aus einer Schriftart auswählen und in andere Applikationen kopieren "
+"und einfügen"
 
 #: gcharmap/src/callbacks.c:115
 msgid "del"
@@ -534,18 +542,16 @@ msgid "Copy the text"
 msgstr "Den Text kopieren"
 
 #: gcharmap/src/menus.c:34
-#, fuzzy
 msgid "_Browse..."
-msgstr "Auswählen"
+msgstr "_Auswählen..."
 
 #: gcharmap/src/menus.c:35
 msgid "Insert character(s) by choosing character codes."
 msgstr "Zeichen durch Auswahl von Zeichencodes einfügen."
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "_Characters"
-msgstr "Zeichen"
+msgstr "_Zeichen"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
@@ -572,21 +578,19 @@ msgstr "Zwischenablage einfügen"
 
 #: gdialog/guage.c:78
 msgid "Gdialog progressbar"
-msgstr ""
+msgstr "GDialog-Fortschrittsanzeige"
 
 #: gdialog/guage.c:78
 msgid "Indicates the percentage specified at the standard input"
-msgstr ""
+msgstr "Zeigt den Prozentwert, der in der Standardeingabe angegeben wurde"
 
 #: gdialog/inputbox.c:90
-#, fuzzy
 msgid "GDialog Entry"
-msgstr "Worteintrag"
+msgstr "GDialog-Eintrag"
 
 #: gdialog/inputbox.c:90
-#, fuzzy
 msgid "Enter the text"
-msgstr "Portnummer eingeben"
+msgstr "Text eingeben"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.h:1
 msgid "Accessories"
@@ -603,27 +607,23 @@ msgstr "Wörter im Online-Wörterbuch nachschlagen"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:1
 msgid "Look Up Selected Text..."
-msgstr ""
+msgstr "Ausgewählten Text nachschlagen..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:2
-#, fuzzy
 msgid "_About..."
-msgstr "Info..."
+msgstr "_Info..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:3
-#, fuzzy
 msgid "_Help"
-msgstr "Hilfe"
+msgstr "_Hilfe"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:4
-#, fuzzy
 msgid "_Preferences"
-msgstr "Vorlieben"
+msgstr "_Vorlieben"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:5
-#, fuzzy
 msgid "_Show/Hide Definition Window..."
-msgstr "Definitionsfenster zeigen/verbergen..."
+msgstr "Definitionsfenster _zeigen/verbergen..."
 
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
@@ -674,15 +674,13 @@ msgid "String not found"
 msgstr "Zeichenkette nicht gefunden"
 
 #: gdictsrc/gdict-app.c:455
-#, fuzzy
 msgid "Find"
 msgstr "Suchen"
 
 #: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
-#, fuzzy
 msgid "_Find"
-msgstr "Suche:"
+msgstr "_Suchen"
 
 #: gdictsrc/gdict-app.c:526
 msgid ""
@@ -704,27 +702,24 @@ msgid "Lookup word in dictionary"
 msgstr "Wort im Wörterbuch nachschlagen"
 
 #: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
-#, fuzzy
 msgid "Check _Spelling"
-msgstr "Rechtschreibung prüfen"
+msgstr "Rechtschreibung _prüfen"
 
 #: gdictsrc/gdict-app.c:691
 msgid "Check word spelling"
 msgstr "Rechtschreibung prüfen"
 
 #: gdictsrc/gdict-app.c:735
-#, fuzzy
 msgid "_Dictionary"
-msgstr "Wörterbuch"
+msgstr "_Wörterbuch"
 
 #: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Wörterbuch"
 
 #: gdictsrc/gdict-app.c:794
-#, fuzzy
 msgid "_Word: "
-msgstr "_Wort : "
+msgstr "_Wort: "
 
 #: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
 msgid "Word"
@@ -744,9 +739,8 @@ msgid "Look Up for a Word"
 msgstr "Ein Wort nachschlagen"
 
 #: gdictsrc/gdict-applet.c:243
-#, fuzzy
 msgid "_Lookup"
-msgstr "Nachschlagen"
+msgstr "_Nachschlagen"
 
 #: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
 #, c-format
@@ -786,9 +780,8 @@ msgid "Cross-reference:"
 msgstr "Querverweis:"
 
 #: gdictsrc/gdict-pref-dialog.c:185
-#, fuzzy
 msgid "Dictionary Preferences"
-msgstr "Vorlieben"
+msgstr "Wörterbuchvorlieben"
 
 #: gdictsrc/gdict-pref-dialog.c:197
 msgid "Smart _lookup"
@@ -867,9 +860,8 @@ msgid "Default Strategy"
 msgstr "Standardvorgehen"
 
 #: gdictsrc/gdict-speller.c:135
-#, fuzzy
 msgid "_Word:"
-msgstr "_Wort : "
+msgstr "_Wort:"
 
 #: gdictsrc/gdict-speller.c:148
 msgid "Enter a word to know the spelling"
@@ -884,12 +876,10 @@ msgid "Search S_trategy:"
 msgstr "Suchs_trategie:"
 
 #: gdictsrc/gdict-speller.c:174
-#, fuzzy
 msgid "Search _Results"
-msgstr "Suchergebnisse"
+msgstr "Such_ergebnisse"
 
 #: gdictsrc/gdict-speller.c:236
-#, fuzzy
 msgid "Check Spelling"
 msgstr "Rechtschreibung prüfen"
 
@@ -899,27 +889,23 @@ msgstr "Suchstrategie"
 
 #: gdictsrc/gdict.schemas.in.h:1
 msgid "Default database. ! indicates all databases"
-msgstr ""
+msgstr "Standarddatenbank. ! bedeutet alle Datenbanken"
 
 #: gdictsrc/gdict.schemas.in.h:2
-#, fuzzy
 msgid "Default strategy"
-msgstr "Standardvorg_ehen:"
+msgstr "Standardvorgehen:"
 
 #: gdictsrc/gdict.schemas.in.h:3
-#, fuzzy
 msgid "Dictionary server"
-msgstr "Wörterbuch"
+msgstr "Wörterbuch-Server"
 
 #: gdictsrc/gdict.schemas.in.h:4
-#, fuzzy
 msgid "Port used to connect to server"
-msgstr "Verbindung zum Server kann nicht hergestellt werden"
+msgstr "Port, der für Verbindung zum Server verwendet wird"
 
 #: gdictsrc/gdict.schemas.in.h:5
-#, fuzzy
 msgid "Use smart lookup"
-msgstr "Inte_lligente Suche"
+msgstr "Intelligente Suche verwenden"
 
 #: gfloppy/gfloppy.desktop.in.h:1
 msgid "Floppy Formatter"
@@ -1082,7 +1068,7 @@ msgstr "EDateisystem konnte nicht korrekt erstellt werden."
 
 #: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
 msgid "MMaking filesystem on disk... Done"
-msgstr "MErstellen des Dateisystem auf der Diskette...fertig"
+msgstr "MErstellen des Dateisystem auf der Diskette... Fertig"
 
 #: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
 msgid "EUnable to create filesystem."
@@ -1094,55 +1080,47 @@ msgstr "MPrüfen auf fehlerhafte Blöcke... (Dies kann eine Weile dauern)"
 
 #: gfloppy/src/gfloppy2.glade.h:2
 msgid "DOS (fat)"
-msgstr ""
+msgstr "DOS (fat)"
 
 #: gfloppy/src/gfloppy2.glade.h:3
-#, fuzzy
 msgid "Double Density 3.5\" (720KB)"
-msgstr "Doppelte Dichte 3.5\" (720 KB)"
+msgstr "Doppelte Dichte 3.5\" (720KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:4
-#, fuzzy
 msgid "Double Density 5.25\" (360KB)"
-msgstr "Doppelte Dichte 5.25\" (360 KB)"
+msgstr "Doppelte Dichte 5.25\" (360KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:5
 msgid "File system _type:"
 msgstr "Dateisystem_typ:"
 
 #: gfloppy/src/gfloppy2.glade.h:6
-#, fuzzy
 msgid "Floppy _density:"
 msgstr "Disketten-_Dichte:"
 
 #: gfloppy/src/gfloppy2.glade.h:7
-#, fuzzy
 msgid "Floppy de_vice:"
-msgstr "Diskettenlaufwerke:"
+msgstr "Disketten_laufwerk:"
 
 #: gfloppy/src/gfloppy2.glade.h:8
-#, fuzzy
 msgid "Format a Floppy"
 msgstr "Eine Diskette formatieren"
 
 #: gfloppy/src/gfloppy2.glade.h:9
-#, fuzzy
 msgid "High Density 3.5\" (1.44MB)"
-msgstr "Hohe Dichte 3.5\" (1.44 MB)"
+msgstr "Hohe Dichte 3.5\" (1.44MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:10
-#, fuzzy
 msgid "High Density 5.25\" (1.2MB)"
-msgstr "Hohe Dichte 5.25\" (1.2 MB)"
+msgstr "Hohe Dichte 5.25\" (1.2MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:11
 msgid "Linux Native (ext2)"
 msgstr "Linux Native (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:12
-#, fuzzy
 msgid "_Format"
-msgstr "_Port:"
+msgstr "_Formatieren"
 
 #: gfloppy/src/gfloppy2.glade.h:13
 msgid "_Quick format"
@@ -1190,6 +1168,8 @@ msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
+"Die Hilfe für das Disketten-Formatierprogramm kann nicht angezeigt werden.\n"
+"%s"
 
 #: gfloppy/src/main.c:399
 msgid "Format another floppy?"
@@ -1232,7 +1212,6 @@ msgid "Follow symbolic links"
 msgstr "Symbolischen Links folgen"
 
 #: gsearchtool/gsearchtool.c:70
-#, fuzzy
 msgid "Process folder contents depth first"
 msgstr "Verzeichnisinhalte zuerst bearbeiten"
 
@@ -1258,12 +1237,11 @@ msgstr "Datei ist leer"
 
 #: gsearchtool/gsearchtool.c:76
 msgid "Matches regular expression"
-msgstr ""
+msgstr "Stimmt mit regulärem Ausdruck überein"
 
 #: gsearchtool/gsearchtool.c:274 gsearchtool/gsearchtool.c:943
-#, fuzzy
 msgid "Start folder does not exist."
-msgstr "Startverzeichnis existiert nicht"
+msgstr "Startverzeichnis existiert nicht."
 
 #: gsearchtool/gsearchtool.c:499
 msgid "today at %-I:%M %p"
@@ -1294,9 +1272,8 @@ msgid "symbolic link"
 msgstr "Symbolischer Link"
 
 #: gsearchtool/gsearchtool.c:663
-#, fuzzy
 msgid "No Files Found."
-msgstr "Keine Übereinstimmung gefunden"
+msgstr "Keine Dateien gefunden."
 
 #: gsearchtool/gsearchtool.c:736
 msgid ""
@@ -1309,9 +1286,8 @@ msgstr ""
 "Sie ist normalerweise als /bin/sh oder /usr/bin/sh installiert."
 
 #: gsearchtool/gsearchtool.c:752
-#, fuzzy
 msgid "Searching..."
-msgstr "Rechtschreibung prüfen..."
+msgstr "Suchen..."
 
 #: gsearchtool/gsearchtool.c:866
 msgid ""
@@ -1322,19 +1298,17 @@ msgstr ""
 "... Zu viele Fehler, die angezeigt werden sollen ..."
 
 #: gsearchtool/gsearchtool.c:877
-#, fuzzy
 msgid "No files found"
-msgstr "Keine Übereinstimmung gefunden"
+msgstr "Keine Dateien gefunden"
 
 #: gsearchtool/gsearchtool.c:880
-#, fuzzy
 msgid "One file found"
-msgstr "Keine Übereinstimmung gefunden"
+msgstr "Eine Datei gefunden"
 
 #: gsearchtool/gsearchtool.c:882
-#, fuzzy, c-format
+#, c-format
 msgid "%d files found"
-msgstr "Keine Übereinstimmung gefunden"
+msgstr "%d Dateien gefunden"
 
 #: gsearchtool/gsearchtool.c:954 gsearchtool/gsearchtool.c:1671
 msgid "Cannot perform the search. Please specify a search criteria."
@@ -1350,7 +1324,6 @@ msgstr ""
 "oder brechen Sie sie ab."
 
 #: gsearchtool/gsearchtool.c:1005
-#, fuzzy
 msgid "Start folder does not exist"
 msgstr "Startverzeichnis existiert nicht"
 
@@ -1365,15 +1338,14 @@ msgid "Search Command Line"
 msgstr "Such-Befehlszeile"
 
 #: gsearchtool/gsearchtool.c:1042
-#, fuzzy
 msgid ""
 "This is the command line that can be used to execute this search\n"
 "from the console.\n"
 "\n"
 "C_ommand:"
 msgstr ""
-"Dies ist die Befehlszeile, die dazu verwendet werden kann, diese Suche von "
-"der Konsole aus auszuführen.\n"
+"Dies ist die Befehlszeile, die dazu verwendet werden kann, diese Suche\n"
+"von der Konsole aus auszuführen.\n"
 "\n"
 "Befehl:"
 
@@ -1388,8 +1360,8 @@ msgstr "Befehlszeilen-Eintrag"
 #: gsearchtool/gsearchtool.c:1064
 msgid "Use this command line to execute the search from console"
 msgstr ""
-"Verwenden Sie diese Befehlszeile, um die Suche von der Konsole "
-"ausdurchzuführen"
+"Verwenden Sie diese Befehlszeile, um die Suche von der Konsole aus "
+"auszuführen"
 
 #: gsearchtool/gsearchtool.c:1172
 msgid "No viewer available for this mime type."
@@ -1467,9 +1439,8 @@ msgid "Click to Stop the Search"
 msgstr "Klicken Sie, um die Suche zu stoppen"
 
 #: gsearchtool/gsearchtool.c:1529 gsearchtool/gsearchtool.c:1861
-#, fuzzy
 msgid "S_earch Results"
-msgstr "Suchergebnisse"
+msgstr "Such_ergebnisse"
 
 #: gsearchtool/gsearchtool.c:1569 gsearchtool/gsearchtool.c:1901
 msgid "Name"
@@ -1511,15 +1482,11 @@ msgstr "Klicken Sie, um die Suche zu starten"
 msgid "Click to Stop the search"
 msgstr "Klicken Sie, um die Suche zu stoppen"
 
-# missing accelerator
 #: gsearchtool/gsearchtool.c:1978
-#, fuzzy
 msgid "Simple"
 msgstr "Einfach"
 
-# missing accelerator
 #: gsearchtool/gsearchtool.c:1980
-#, fuzzy
 msgid "Advanced"
 msgstr "Komplex"
 
@@ -1529,9 +1496,8 @@ msgid "GNOME Search Tool"
 msgstr "GNOME-Suchwerkzeug"
 
 #: gsearchtool/gsearchtool.c:2019
-#, fuzzy
 msgid "(C) 1998,2002 the Free Software Foundation"
-msgstr "(C) 1998, 2000 the Free Software Foundation"
+msgstr "(C) 1998, 2002 bei der Free Software Foundation"
 
 #: gsearchtool/gsearchtool.c:2020
 msgid "Frontend to the unix find/locate commands"
@@ -1551,27 +1517,24 @@ msgid "Save Results"
 msgstr "Ergebnisse speichern"
 
 #: gsearchtool/gsearchtool.c:2159
-#, fuzzy
 msgid "S_how Command..."
-msgstr "Befe_hl zeigen"
+msgstr "Befe_hl zeigen..."
 
 #: gsearchtool/gsearchtool.c:2160
 msgid "Show the command used to perform the search"
-msgstr ""
+msgstr "Zeige den Befehl, mit der die Suche durchgeführt wird"
 
 #: gsearchtool/gsearchtool.c:2163
 msgid "Save Results _As..."
 msgstr "Ergebnisse speichern _als..."
 
 #: gsearchtool/gsearchtool.c:2164
-#, fuzzy
 msgid "Save the search results"
-msgstr "Suchergebnisse"
+msgstr "Die Suchergebnisse speichern"
 
 #: gsearchtool/gsearchtool.c:2179
-#, fuzzy
 msgid "Sear_ch"
-msgstr "Suchwerkzeug"
+msgstr "_Suchen"
 
 #: gsearchtool/gsearchtool.c:2201
 msgid "Cannot initialize bonobo."
@@ -1599,9 +1562,8 @@ msgstr ""
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:72
-#, fuzzy
 msgid "GNOME System Log Viewer"
-msgstr "Systemprotokoll-Betrachter"
+msgstr "GNOME-Systemprotokoll-Betrachter"
 
 #: logview/about.c:73
 msgid "Copyright (C) 1998"
@@ -1612,9 +1574,8 @@ msgid "Action database"
 msgstr "Aktionsdatenbank"
 
 #: logview/actions.c:81
-#, fuzzy
 msgid "Action options"
-msgstr "Überwachungsoptionen"
+msgstr "Aktion-Optionen"
 
 #: logview/actions.c:138
 msgid "Add..."
@@ -1669,7 +1630,7 @@ msgstr "Beschreibung"
 
 #: logview/actions.c:744
 msgid "description:"
-msgstr "Beschreibung:"
+msgstr "Beschreibung"
 
 #: logview/actions.c:753
 msgid "Description of this entry."
@@ -1703,48 +1664,48 @@ msgstr "Kalender"
 #.
 #: logview/config.c:34
 msgid "fixed 12"
-msgstr ""
+msgstr "fixed 12"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:36
 msgid "fixed Bold 12"
-msgstr ""
+msgstr "fixed Bold 12"
 
 #: logview/config.c:37
 msgid "fixed 10"
-msgstr ""
+msgstr "fixed 10"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:39
 msgid "fixed Bold 8"
-msgstr ""
+msgstr "fixed Bold 8"
 
 #. Translators: translate to fonts that appear well in the log viewer,
 #. * for example for asian languages, helvetica seems not to work
 #. * well for those
 #: logview/config.c:44
 msgid "Helvetica 14"
-msgstr ""
+msgstr "Helvetica 14"
 
 #: logview/config.c:45
 msgid "Helvetica Bold 14"
-msgstr ""
+msgstr "Helvetica Bold 14"
 
 #: logview/config.c:46
 msgid "Helvetica 12"
-msgstr ""
+msgstr "Helvetica 12"
 
 #: logview/config.c:47
 msgid "Helvetica Bold 12"
-msgstr ""
+msgstr "Helvetica Bold 12"
 
 #: logview/config.c:48
 msgid "Helvetica 10"
-msgstr ""
+msgstr "Helvetica 10"
 
 #: logview/config.c:49
 msgid "Helvetica Bold 10"
-msgstr ""
+msgstr "Helvetica Bold 10"
 
 #: logview/desc_db.c:37
 #, c-format
@@ -1809,7 +1770,7 @@ msgstr "Letztes Datum:"
 
 #: logview/info.c:247
 msgid "Num. lines:"
-msgstr "Zeilenzahl:"
+msgstr "Zeilenanzahl:"
 
 #: logview/info.c:265
 #, c-format
@@ -1923,50 +1884,44 @@ msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: kein Speicher mehr"
 
 #: logview/logview.c:95
-#, fuzzy
 msgid "S_witch Log"
-msgstr "Protokoll umschalten"
+msgstr "Protokoll _umschalten"
 
 #: logview/logview.c:96
 msgid "Switch log"
 msgstr "Protokoll umschalten"
 
 #: logview/logview.c:98
-#, fuzzy
 msgid "_Monitor..."
-msgstr "Überwachen..."
+msgstr "_Überwachen..."
 
 #: logview/logview.c:99
-#, fuzzy
 msgid "Monitor Log"
 msgstr "Protokoll überwachen"
 
 #: logview/logview.c:102
 msgid "_Properties"
-msgstr ""
+msgstr "_Eigenschaften"
 
 #: logview/logview.c:103
-#, fuzzy
 msgid "Show Log Properties"
-msgstr "Protokoll-Statistiken zeigen"
+msgstr "Protokolleigenschaften zeigen"
 
 #: logview/logview.c:112
-#, fuzzy
 msgid "_Calendar"
-msgstr "Kalender"
+msgstr "_Kalender"
 
 #: logview/logview.c:112
-#, fuzzy
 msgid "Show Calendar Log"
 msgstr "Kalenderprotokoll zeigen"
 
 #: logview/logview.c:114
 msgid "_Entry Detail"
-msgstr ""
+msgstr "_Eintragdetails"
 
 #: logview/logview.c:114
 msgid "Show Entry Detail"
-msgstr ""
+msgstr "Eintragdetails zeigen"
 
 #: logview/logview.c:122
 msgid "About..."
@@ -1977,9 +1932,8 @@ msgid "Info about logview"
 msgstr "Informationen über Logview"
 
 #: logview/logview.c:130
-#, fuzzy
 msgid "_Log"
-msgstr "Protokoll:"
+msgstr "_Protokoll:"
 
 #: logview/logview.c:334
 msgid "No log files to open"
@@ -1995,9 +1949,8 @@ msgid "Filename: "
 msgstr "Dateiname: "
 
 #: logview/logview.c:473
-#, fuzzy
 msgid "Last Modified: "
-msgstr "Geändert am"
+msgstr "Zuletzt geändert: "
 
 #: logview/logview.c:722 logview/logview.c:788
 msgid "Too many open logs. Close one and try again"
@@ -2005,7 +1958,7 @@ msgstr "Zu viele geöffnete Protokolle. Eines schließen und nochmal versuchen."
 
 #: logview/logview.c:734
 msgid "File already opened"
-msgstr ""
+msgstr "Datei ist bereitis geöffnet"
 
 #: logview/logview.c:801
 msgid "Open new logfile"
@@ -2014,6 +1967,8 @@ msgstr "Neue Protokolldatei öffnen"
 #: logview/misc.c:56
 msgid "Cannot load required fonts, cannot continue"
 msgstr ""
+"Benötigte Schriftart konnte nicht geladen werden, es kann nicht fortgefahren "
+"werden"
 
 #: logview/misc.c:91
 #, c-format
@@ -2041,7 +1996,7 @@ msgstr "Entfernen <<"
 #. Check boxes
 #: logview/monitor.c:215
 msgid "Hide app"
-msgstr "Anwendung verbergen"
+msgstr "Anwendung verstecken"
 
 #: logview/monitor.c:223
 msgid "Exec actions"
@@ -2087,7 +2042,7 @@ msgstr "Protokollzeilen-Detail für %s"
 
 #: logview/zoom.c:236
 msgid "Log line detail for <No log loaded>"
-msgstr "Protokollzeilen-Detail für <kein Protokoll geladen>"
+msgstr "Protokollzeilen-Detail für <Kein Protokoll geladen>"
 
 #: logview/zoom.c:275
 msgid "Process:"
@@ -2132,14 +2087,14 @@ msgstr ""
 "Dateien oder Ordner herein, um sie zu dem Archiv hinzuzufügen"
 
 #: meat-grinder/meat-grinder.c:166
-#, fuzzy, c-format
+#, c-format
 msgid "%s removed"
-msgstr "Entfernen"
+msgstr "%s entfernt"
 
 #: meat-grinder/meat-grinder.c:328 meat-grinder/meat-grinder.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create %s"
-msgstr "EDateisystem konnte nicht erstellt werden."
+msgstr "Das Erstellen von %s schlug fehl"
 
 #: meat-grinder/meat-grinder.c:373
 msgid "Archive.tar.gz"
@@ -2154,13 +2109,12 @@ msgid "Drag files in to make archives"
 msgstr "Dateien hereinziehen, um Archive zu erstellen"
 
 #: meat-grinder/meat-grinder.c:528
-#, fuzzy
 msgid "All files selected"
-msgstr "Kein Dateiname ausgewählt"
+msgstr "Alle Dateien ausgewählt"
 
 #: meat-grinder/meat-grinder.c:547
 msgid "All files removed"
-msgstr ""
+msgstr "Alle Dateien entfernt"
 
 #: meat-grinder/meat-grinder.c:609 meat-grinder/meat-grinder.c:793
 msgid "No filename selected"
@@ -2173,7 +2127,7 @@ msgstr "Datei existiert, überschreiben?"
 #: meat-grinder/meat-grinder.c:636
 #, c-format
 msgid "%s created"
-msgstr ""
+msgstr "%s erzeugt"
 
 #: meat-grinder/meat-grinder.c:650
 msgid "No items to archive"
@@ -2182,7 +2136,7 @@ msgstr "Keine Objekte zum Archivieren"
 #: meat-grinder/meat-grinder.c:777
 #, c-format
 msgid "%s added"
-msgstr ""
+msgstr "%s hinzugefügt"
 
 #: meat-grinder/meat-grinder.c:796
 msgid "File does not exists"
@@ -2193,43 +2147,36 @@ msgid "Add file or folder"
 msgstr "Datei oder Ordner hinzufügen"
 
 #: meat-grinder/meat-grinder.c:927
-#, fuzzy
 msgid "_Add file or folder..."
-msgstr "Datei oder Ordner hinzufügen..."
+msgstr "Datei oder Ordner _hinzufügen..."
 
 #: meat-grinder/meat-grinder.c:928
-#, fuzzy
 msgid "Add a file or folder to archive"
-msgstr "Dateien oder Ordner zum Archiv hinzufügen"
+msgstr "Datei oder Ordner zum Archiv hinzufügen"
 
 #: meat-grinder/meat-grinder.c:931
-#, fuzzy
 msgid "_Create archive..."
-msgstr "Archiv erzeugen..."
+msgstr "Archiv _erzeugen..."
 
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
 msgstr "Ein neues Archiv aus den Objekten erzeugen"
 
 #: meat-grinder/meat-grinder.c:941
-#, fuzzy
 msgid "_Remove"
-msgstr "Entfernen"
+msgstr "_Entfernen"
 
 #: meat-grinder/meat-grinder.c:942
-#, fuzzy
 msgid "Remove the selected item"
-msgstr "Das/die ausgewählte(n) Objekt(e) entfernen"
+msgstr "Das ausgewählte Objekt entfernen"
 
 #: meat-grinder/meat-grinder.c:944
-#, fuzzy
 msgid "R_emove All"
-msgstr "Entfernen"
+msgstr "Alle _Entfernen"
 
 #: meat-grinder/meat-grinder.c:945
-#, fuzzy
 msgid "Remove all items"
-msgstr "Das/die ausgewählte(n) Objekt(e) entfernen"
+msgstr "Alle Objekte entfernen"
 
 #: meat-grinder/meat-grinder.c:1016
 msgid "Drop files here to add them to the archive."
@@ -2237,9 +2184,8 @@ msgstr "Dateien hier hereinziehen, um sie dem Archiv hinzuzufügen"
 
 #. tarball icon
 #: meat-grinder/meat-grinder.c:1028
-#, fuzzy
 msgid "_Create Archive"
-msgstr "Archiv erzeugen..."
+msgstr "Archiv _erzeugen"
 
 #: meat-grinder/meat-grinder.c:1036
 msgid ""
@@ -2260,227 +2206,3 @@ msgid ""
 msgstr ""
 "Das Archivprogramm (tar) kann nicht gefunden werden!\n"
 "Dies ist das Programm, das benötigt wird, um Archive zu erzeugen."
-
-#~ msgid "_Floppy Device:"
-#~ msgstr "Disketten_laufwerke:"
-
-#, fuzzy
-#~ msgid "Dictionary Applet"
-#~ msgstr "Wörterbuch"
-
-#~ msgid "Find:"
-#~ msgstr "Suche:"
-
-#~ msgid "Press button to look up any highlighted text in a dictionary"
-#~ msgstr ""
-#~ "Knopf drücken, um beliebigen markierten Text im Wörterbuch nachzuschlagen"
-
-#, fuzzy
-#~ msgid "GNOME System Log"
-#~ msgstr "Systemprotokoll"
-
-#~ msgid "Open log..."
-#~ msgstr "Protokoll öffnen..."
-
-#~ msgid "Open log"
-#~ msgstr "Protokoll öffnen"
-
-#~ msgid "Export log..."
-#~ msgstr "Protokoll exportieren..."
-
-#~ msgid "Export log"
-#~ msgstr "Protokoll exportieren"
-
-#~ msgid "Close log"
-#~ msgstr "Protokoll schließen"
-
-#~ msgid "Exit"
-#~ msgstr "Beenden"
-
-#~ msgid "Exit program"
-#~ msgstr "Programm verlassen"
-
-#~ msgid "Zoom"
-#~ msgstr "Zoom"
-
-#~ msgid "Show line info"
-#~ msgstr "Zeileninformation zeigen"
-
-#~ msgid "Select...               "
-#~ msgstr "Auswählen...            "
-
-#~ msgid "Select log events"
-#~ msgstr "Protokoll-Ereignisse wählen"
-
-#~ msgid "Filter..                "
-#~ msgstr "Filtern...              "
-
-#~ msgid "Filter log events"
-#~ msgstr "Protokoll-Ereignisse filtern"
-
-#~ msgid "Cannot start the archive (tar) program"
-#~ msgstr "Das Archivprogramm (tar) kann nicht gestartet werden"
-
-#~ msgid "Cannot run tar/gtar"
-#~ msgstr "tar/gtar kann nicht ausgeführt werden"
-
-#~ msgid "The GNOME Calculator"
-#~ msgstr "Der GNOME-Taschenrechner"
-
-#~ msgid "Run in analog (slide rule) mode"
-#~ msgstr "In analogem Modus starten"
-
-# CHECK ist Shift-Taste gemeint???
-#~ msgid "Shift"
-#~ msgstr "Umschalten"
-
-#~ msgid "Store"
-#~ msgstr "Speichern"
-
-#~ msgid "Recall"
-#~ msgstr "Abrufen"
-
-#~ msgid "Sum"
-#~ msgstr "Summe"
-
-# CHECK
-#~ msgid "Exchange"
-#~ msgstr "Tauschen"
-
-#~ msgid ""
-#~ "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
-#~ "contain bad English."
-#~ msgstr "Der GNOME-Ersatz für die Zeichentabelle von Microsoft Windows."
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "About"
-#~ msgstr "Info"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-180-*-*-*-*-*-iso8859-1"
-
-# CHECK laut Richtlinie auswählen aber besser vielleicht durchblättern???
-#~ msgid "_Browse Characters..."
-#~ msgstr "Zeichen auswählen..."
-
-#~ msgid "_Text Toolbar"
-#~ msgstr "_Text-Werkzeugleiste"
-
-#~ msgid "View or hide the text toolbar"
-#~ msgstr "Text-Werkzeugleiste anzeigen oder verbergen."
-
-#~ msgid "_Statusbar"
-#~ msgstr "_Statusleiste"
-
-#~ msgid "View or hide the statusbar"
-#~ msgstr "Statusleiste anzeigen oder verbergen."
-
-#~ msgid "_Insert at end"
-#~ msgstr "Am Ende e_infügen"
-
-#~ msgid "Insert every selected character at the end of the text entry"
-#~ msgstr "Jedes gewählte Zeichen am Ende des Textfeldes einfügen"
-
-#~ msgid "_Focusable Buttons"
-#~ msgstr "_Fokusierbare Knöpfe"
-
-#~ msgid "Set the buttons to be focusable or not"
-#~ msgstr "Festlegen ob die Knöpfe fokusierbar sind oder nicht"
-
-#~ msgid "There was an error loading config from %s. (%s)\n"
-#~ msgstr ""
-#~ "Beim Laden der Konfigurationsdatei %s ist ein Fehler aufgetreten. (%s)\n"
-
-#~ msgid "Spell"
-#~ msgstr "Rechtschreibung"
-
-#~ msgid "_Look Up"
-#~ msgstr "Nachsch_lagen"
-
-#~ msgid "_Spell"
-#~ msgstr "Recht_schreibung"
-
-#~ msgid "Spell checker"
-#~ msgstr "Rechtschreibprüfung"
-
-#~ msgid "Preferences..."
-#~ msgstr "Vorlieben..."
-
-#~ msgid "Results"
-#~ msgstr "Ergebnisse"
-
-#~ msgid "The Gnome Search Tool"
-#~ msgstr "Das GNOME-Suchwerkzeug"
-
-#~ msgid "Logview"
-#~ msgstr "Logview"
-
-#~ msgid "Date: "
-#~ msgstr "Datum: "
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-
-# FIXME: why this?
-# Reason: Other languages might prefere other fonts... -ke-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-
-#~ msgid "Dos (FAT)"
-#~ msgstr "DOS (FAT)"
-
-#~ msgid "Floppy Density:"
-#~ msgstr "Disketten-Dichte:"
-
-#~ msgid "File system type:"
-#~ msgstr "Dateisystemtyp:"
-
-#~ msgid "The GNOME Archive Generator"
-#~ msgstr "Der GNOME-Archivierer"
-
-#~ msgid "Archive"
-#~ msgstr "Archiv"
