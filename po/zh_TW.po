@@ -1,15 +1,15 @@
-# traditional chinese translation for gnome-utils
-# Copyright (C) 1999-2001 Free Software Foundation, Inc.
+# traditional Chinese translation of gnome-utils.
+# Copyright (C) 1999-2002 Free Software Foundation, Inc.
 # Ming-Yen Hsu <myhsu@cyberdude.com>, 1999.
-# Abel Cheung <maddog@linux.org.hk>, 2001.
+# Abel Cheung <maddog@linux.org.hk>, 2001-2002
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 1.4.0.3\n"
-"POT-Creation-Date: 2001-11-30 16:14-0600\n"
-"PO-Revision-Date: 2001-08-15 04:11+0800\n"
+"Project-Id-Version: gnome-utils 1.4.1.2\n"
+"POT-Creation-Date: 2002-02-02 06:15-0500\n"
+"PO-Revision-Date: 2002-06-02 21:20+0800\n"
 "Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
-"Language-Team: traditional chinese <zh-l10n@linux.org.tw>\n"
+"Language-Team: traditional Chinese <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=Big5\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -121,7 +121,7 @@ msgstr "÷"
 
 #: gcalc/gnome-calc.c:1199
 msgid "STO"
-msgstr "STO"
+msgstr "儲存"
 
 #: gcalc/gnome-calc.c:1200
 msgid "7"
@@ -141,7 +141,7 @@ msgstr "×"
 
 #: gcalc/gnome-calc.c:1205
 msgid "RCL"
-msgstr "RCL"
+msgstr "載入"
 
 #: gcalc/gnome-calc.c:1206
 msgid "4"
@@ -161,17 +161,17 @@ msgstr "－"
 
 #: gcalc/gnome-calc.c:1211
 msgid "SUM"
-msgstr "SUM"
+msgstr "總和"
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:965
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:964
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:963
 msgid "3"
 msgstr "3"
 
@@ -181,7 +181,7 @@ msgstr "＋"
 
 #: gcalc/gnome-calc.c:1217
 msgid "EXC"
-msgstr "EXC"
+msgstr "交換"
 
 #: gcalc/gnome-calc.c:1218
 msgid "0"
@@ -215,7 +215,7 @@ msgstr "插入"
 
 #: gcharmap/src/asciiselect.c:105
 msgid "Character code:"
-msgstr "字元碼："
+msgstr "字元代碼："
 
 #: gcharmap/src/asciiselect.c:115
 msgid "Character:"
@@ -235,7 +235,7 @@ msgstr "Gnome 字元對應表"
 msgid ""
 "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
 "contain bad English."
-msgstr "和微軟視窗的字元對應表同類的軟件。警告：可能會含有錯的英語。"
+msgstr "和微軟視窗的字元對應表同類的軟件。"
 
 #: gcharmap/src/callbacks.c:63 gcharmap/src/callbacks.c:101
 #: gcharmap/src/interface.c:65
@@ -245,19 +245,19 @@ msgstr "del"
 #: gcharmap/src/callbacks.c:107
 #, c-format
 msgid " %s: Character code %d"
-msgstr " %s：字元碼 %d"
+msgstr " %s：字元代碼 %d"
 
 #: gcharmap/src/callbacks.c:134
 msgid "Text copied to clipboard..."
-msgstr "已將文字複製到剪貼簿..."
+msgstr "複製至剪貼簿的文字..."
 
 #: gcharmap/src/callbacks.c:146
 msgid "Text cut to clipboard..."
-msgstr "已將文字剪到剪貼簿..."
+msgstr "剪下至剪貼簿的文字..."
 
 #: gcharmap/src/callbacks.c:199
 msgid "Text pasted from clipboard..."
-msgstr "已由剪貼簿貼上文字..."
+msgstr "從剪貼簿貼上的文字..."
 
 #: gcharmap/src/interface.c:170
 msgid "Action Toolbar"
@@ -265,7 +265,7 @@ msgstr "行動工具列"
 
 #: gcharmap/src/interface.c:189
 msgid "Text to copy:"
-msgstr "要複製的文字："
+msgstr "準備複製的文字："
 
 #: gcharmap/src/interface.c:215
 msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
@@ -276,7 +276,7 @@ msgstr ""
 #: gcharmap/src/interface.c:238 gcharmap/src/menus.c:114 logview/logview.c:100
 #: mini-utils/gcolorsel/menus.c:921 stripchart/chart-app.c:258
 msgid "Exit"
-msgstr "退出"
+msgstr "離開"
 
 #: gcharmap/src/interface.c:239 gcharmap/src/menus.c:104
 #: gdictsrc/gdict-app.c:519 gtt/toolbar.c:181
@@ -309,7 +309,7 @@ msgstr "插入字元..."
 
 #: gcharmap/src/menus.c:52
 msgid "Insert character(s) by choosing character codes."
-msgstr "選擇字元碼並插入字元。"
+msgstr "以選擇字元代碼的方式插入字元。"
 
 #: gcharmap/src/menus.c:59
 msgid "_Action Toolbar"
@@ -345,7 +345,7 @@ msgstr "設定字元表所用的字型。"
 
 #: gcharmap/src/menus.c:73
 msgid "_Insert at end"
-msgstr "在尾端插入(_I)"
+msgstr "在末端插入(_I)"
 
 #: gcharmap/src/menus.c:73
 msgid "Insert every selected character at the end of the text entry"
@@ -385,7 +385,7 @@ msgstr "貼上剪貼簿的內容"
 
 #: gcharmap/src/menus.c:109
 msgid "Show Gnome Character Map's manual"
-msgstr "顯示 Gnome 字元對應表的手冊"
+msgstr "顯示 GNOME 字元對應表的手冊"
 
 #: gcharmap/src/menus.c:111 mini-utils/gcolorsel/menus.c:919
 msgid "About this application"
@@ -457,12 +457,10 @@ msgstr ""
 
 #: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 #: gdictsrc/gdict-applet.c:313
-#, fuzzy
 msgid "Look up"
 msgstr "檢索"
 
 #: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
-#, fuzzy
 msgid "Look up word in dictionary"
 msgstr "在字典中檢索單字"
 
@@ -476,11 +474,11 @@ msgstr "校對拼字"
 
 #: gdictsrc/gdict-app.c:517
 msgid "Cut to Clipboard"
-msgstr "剪下到剪貼簿"
+msgstr "剪下至剪貼簿"
 
 #: gdictsrc/gdict-app.c:520
 msgid "Copy to Clipboard"
-msgstr "複製到剪貼簿"
+msgstr "複製至剪貼簿"
 
 #: gdictsrc/gdict-app.c:523
 msgid "Paste Clipboard Contents"
@@ -579,7 +577,7 @@ msgstr "資料庫："
 
 #: gdictsrc/gdict-pref-dialog.c:178
 msgid "Default strategy:"
-msgstr "預設查字方法："
+msgstr "預設搜尋方式："
 
 #: gdictsrc/gdict-pref-dialog.c:185
 msgid "Server"
@@ -591,15 +589,15 @@ msgstr "字型"
 
 #: gdictsrc/gdict-pref-dialog.c:252
 msgid "Display handle bar"
-msgstr "顯示操控條"
+msgstr "顯示控制棒"
 
 #: gdictsrc/gdict-pref-dialog.c:256
 msgid ""
 "You have to restart GDict for these\n"
 "settings to become active."
 msgstr ""
-"要令這些設定值生效，\n"
-"你必須重新啟動 GDict。"
+"如要令這些設定值生效，\n"
+"必須重新啟動 GDict。"
 
 #: gdictsrc/gdict-pref-dialog.c:263
 msgid "Applet"
@@ -611,7 +609,7 @@ msgstr "搜尋所有資料庫"
 
 #: gdictsrc/gdict-pref-dialog.c:585
 msgid "The server you specified could not be found."
-msgstr "找不到你指定的伺服器"
+msgstr "找不到指定的伺服器"
 
 #: gdictsrc/gdict-speller.c:118
 msgid "Word:"
@@ -626,7 +624,6 @@ msgid "Find Words..."
 msgstr "尋找單字..."
 
 #: gdictsrc/gdict-speller.c:151
-#, fuzzy
 msgid "Look up Word..."
 msgstr "檢索單字..."
 
@@ -641,7 +638,7 @@ msgstr "Gnome 磁碟空間"
 #: gdiskfree/gdiskfree_app.c:73
 #, c-format
 msgid "Unable to parse the geometry string '%s'"
-msgstr "無法解析指定位置大小的字串 '%s'"
+msgstr "無法解析指定位置大小的字串‘%s’"
 
 #: gdiskfree/gdiskfree.c:58
 msgid "Specify the geometry of the window."
@@ -653,15 +650,15 @@ msgstr "位置大小"
 
 #: gdiskfree/gdiskfree_menus.c:111
 msgid "GDiskFree is a GNOME implementation of the shell utility 'df'."
-msgstr "Gnome 磁碟空間是等同命令殼程式 'df' 的 GNOME 程式"
+msgstr "Gnome 磁碟空間是等同命令殼程式‘df’的 GNOME 程式"
 
 #: gdiskfree/gdiskfree_options.c:222
 msgid "GDiskFree Properties"
-msgstr "Gnome 磁碟空間內容"
+msgstr "Gnome 磁碟空間屬性"
 
 #: gdiskfree/gdiskfree_options.c:227
 msgid "Invoke sync before getting usage info"
-msgstr "取得使用量資訊前先將快取記憶寫入媒體"
+msgstr "取得使用量資訊前先將快取記憶寫入至儲存媒體"
 
 #: gdiskfree/gdiskfree_options.c:239
 msgid "Show drive mount points"
@@ -673,7 +670,7 @@ msgstr "顯示磁碟容量"
 
 #: gdiskfree/gdiskfree_options.c:260
 msgid "Dial Orientation"
-msgstr "計量表排列方式"
+msgstr "測量計的排列方式"
 
 #: gdiskfree/gdiskfree_options.c:265
 msgid "Vertical"
@@ -713,7 +710,7 @@ msgstr "最後更改時間"
 
 #: gsearchtool/gsearchtool.c:40
 msgid "Don't search mounted filesystems"
-msgstr "不搜尋其它掛上的檔案系統"
+msgstr "不搜尋其它已掛載的檔案系統"
 
 #: gsearchtool/gsearchtool.c:41
 msgid "Empty file"
@@ -721,7 +718,7 @@ msgstr "空的檔案"
 
 #: gsearchtool/gsearchtool.c:43
 msgid "Invalid user or group"
-msgstr "無效的使用者或群組"
+msgstr "使用者或群組無效"
 
 #: gsearchtool/gsearchtool.c:44
 msgid "Filenames except"
@@ -786,8 +783,8 @@ msgid ""
 "append \"| tr '\\000' '\\n'\" to the line below)"
 msgstr ""
 "這是執行搜尋所實際使用的指令：\n"
-"（注意：要以新行來代替 null 字元隔開檔案名稱，\n"
-"在以下指令列加入 \"| tr '"
+"（注意：如果要每行列出一個檔案而不是以 null 字元隔開檔案名稱，\n"
+"請在以下指令列末端加上「| tr '\\000' '\\n'」"
 
 #: gsearchtool/gsearchtool.c:502
 msgid "Entry changed called for a non entry option!"
@@ -818,7 +815,7 @@ msgstr "新增"
 msgid "Show Command"
 msgstr "顯示指令"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:582
 #: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "開始"
@@ -875,11 +872,11 @@ msgstr "無法儲存檔案"
 
 #: gsearchtool/outdlg.c:69 meat-grinder/meat-grinder.c:476
 msgid "Save Results"
-msgstr "儲存結果"
+msgstr "儲存搜尋結果"
 
 #: gsearchtool/outdlg.c:130
 msgid "Command mangled"
-msgstr "指令被混淆了"
+msgstr "指令錯誤"
 
 #: gsearchtool/outdlg.c:159
 msgid "No command for this mime type"
@@ -899,188 +896,232 @@ msgid ""
 " specified on command line"
 msgstr "無法識別指令列指定的位置和大小"
 
-#: gtt/ctree.c:511
+#: gtt/ctree.c:517
 msgid "Total"
 msgstr "合計"
 
-#: gtt/ctree.c:513
+#: gtt/ctree.c:519
 msgid "Total time spent on this project."
+msgstr "此計劃總共使用的時間。"
+
+#: gtt/ctree.c:524
+msgid "Entry"
 msgstr ""
 
-#: gtt/ctree.c:518
-#, fuzzy
-msgid "Entry"
-msgstr "結束時的紀錄："
-
-#: gtt/ctree.c:520
+#: gtt/ctree.c:526
 msgid "Time spent under the current diary entry."
 msgstr ""
 
-#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:532 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
-msgstr "今日"
+msgstr "今天"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:534
 msgid "Time spent on this project today."
-msgstr ""
+msgstr "此計劃在今天所佔的時間。"
 
-#: gtt/ctree.c:533
+#: gtt/ctree.c:539
 msgid "Week"
-msgstr ""
-
-#: gtt/ctree.c:535
-msgid "Time spent on this project this week."
-msgstr ""
+msgstr "星期"
 
 #: gtt/ctree.c:541
-#, fuzzy
-msgid "Month"
-msgstr "監視"
+msgid "Time spent on this project this week."
+msgstr "此計劃在今週所佔的時間。"
 
-#: gtt/ctree.c:543
-msgid "Time spent on this project this month."
-msgstr ""
+#: gtt/ctree.c:547
+msgid "Month"
+msgstr "月"
 
 #: gtt/ctree.c:549
-#, fuzzy
-msgid "Year"
-msgstr "線性"
+msgid "Time spent on this project this month."
+msgstr "此計劃今個月所用的時間。"
 
-#: gtt/ctree.c:551
-msgid "Time spent on this project this year."
-msgstr ""
+#: gtt/ctree.c:555
+msgid "Year"
+msgstr "年"
 
 #: gtt/ctree.c:557
-#, fuzzy
-msgid "Title"
-msgstr "檔案"
+msgid "Time spent on this project this year."
+msgstr "此計劃今年所用的時間。"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:148
+#: gtt/ctree.c:563
+msgid "Title"
+msgstr "標題"
+
+#: gtt/ctree.c:564 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "計劃標題"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
+#: gtt/ctree.c:569 gtt/ctree.c:570 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "描述"
 
-#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+#: gtt/ctree.c:575 gtt/ghtml.c:95 gtt/ghtml.c:220
 msgid "Diary Entry"
 msgstr ""
 
-#: gtt/ctree.c:571
-#, fuzzy
+#: gtt/ctree.c:577
 msgid "The current diary entry"
-msgstr "關閉目前的文件"
+msgstr ""
 
-#: gtt/ctree.c:578
+#: gtt/ctree.c:584
 msgid "Estimated Project Start Date"
-msgstr ""
+msgstr "計劃估計開始的日期"
 
-#: gtt/ctree.c:583
-#, fuzzy
+#: gtt/ctree.c:589
 msgid "End"
-msgstr "使用"
+msgstr "結束"
 
-#: gtt/ctree.c:585
-#, fuzzy
+#: gtt/ctree.c:591
 msgid "Estimated Project Completion Date"
-msgstr "編輯內容..."
+msgstr "估計計劃完成時間"
 
-#: gtt/ctree.c:590
+#: gtt/ctree.c:596
 msgid "Due"
-msgstr ""
+msgstr "到期"
 
-#: gtt/ctree.c:592
+#: gtt/ctree.c:598
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
 msgstr ""
 
-#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+#: gtt/ctree.c:605 mini-utils/guname/info.c:61
 msgid "Size"
 msgstr "大小"
 
-#: gtt/ctree.c:601
+#: gtt/ctree.c:607
 msgid "Sizing: How much work it will take to finish this project."
 msgstr ""
 
-#: gtt/ctree.c:607
-#, fuzzy
+#: gtt/ctree.c:613
 msgid "Done"
-msgstr "無"
+msgstr "已完成"
 
-#: gtt/ctree.c:609
+#: gtt/ctree.c:615
 msgid "Percent Complete: How much of this project has been finished till now."
 msgstr ""
 
-#: gtt/ctree.c:616
+#: gtt/ctree.c:622
 msgid "U"
-msgstr ""
+msgstr "U"
 
-#: gtt/ctree.c:618
+#: gtt/ctree.c:624
 msgid "Urgency: Does this project need to be done soon, done quickly?"
 msgstr ""
 
-#: gtt/ctree.c:624
+#: gtt/ctree.c:630
 msgid "Imp"
-msgstr ""
+msgstr "重要"
 
-#: gtt/ctree.c:626
+#: gtt/ctree.c:632
 msgid "Importance: How important is this project?"
-msgstr ""
+msgstr "重要性：此計劃的重要程度為何？"
 
-#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:638 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
-msgstr "狀態"
+msgstr "情況"
 
-#: gtt/ctree.c:634
+#: gtt/ctree.c:640
 msgid "The current status of this project."
-msgstr ""
+msgstr "關於此計劃目前的情況。"
 
-#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
-#, fuzzy
+#: gtt/ctree.c:975 gtt/glade/project_properties.glade.h:25
 msgid "Low"
-msgstr "紀錄檔檢視器"
+msgstr "低"
 
-#: gtt/ctree.c:970
+#: gtt/ctree.c:976
 msgid "Med"
-msgstr ""
+msgstr "中"
 
-#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
-#, fuzzy
+#: gtt/ctree.c:977 gtt/glade/project_properties.glade.h:15
 msgid "High"
-msgstr "右方"
+msgstr "高"
 
-#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
-#, fuzzy
+#: gtt/ctree.c:986 gtt/glade/project_properties.glade.h:29
 msgid "Not Started"
-msgstr "開始"
+msgstr "未開始"
 
-#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
-#, fuzzy
+#: gtt/ctree.c:987 gtt/glade/project_properties.glade.h:21
 msgid "In Progress"
-msgstr "程序："
+msgstr "進行中"
 
-#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
-#, fuzzy
+#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
-msgstr "填色"
+msgstr "暫時擱置"
 
-#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:989 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
+msgstr "已取消"
+
+#: gtt/ctree.c:990 gtt/glade/project_properties.glade.h:10
+msgid "Completed"
+msgstr "已完成"
+
+#: gtt/err-throw.c:61
+msgid "No Error"
+msgstr "沒有錯誤"
+
+#: gtt/err-throw.c:65
+#, c-format
+msgid ""
+"Cannot open the project data file\n"
+"\t%s\n"
 msgstr ""
 
-#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
-msgid "Completed"
+#: gtt/err-throw.c:70
+#, c-format
+msgid ""
+"Cannot write the project data file\n"
+"\t%s\n"
 msgstr ""
+
+#: gtt/err-throw.c:75
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"doesn't seem to be a GTT project data file\n"
+msgstr ""
+
+#: gtt/err-throw.c:81
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"seems to be corrupt\n"
+msgstr ""
+
+#: gtt/err-throw.c:87
+#, c-format
+msgid ""
+"An unknown token was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+
+#: gtt/err-throw.c:92
+#, c-format
+msgid ""
+"An unknown value was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+
+#: gtt/err-throw.c:97
+#, c-format
+msgid ""
+"Cannot write the config file\n"
+"\t%s\n"
+msgstr ""
+"無法寫入組態檔\n"
+"\t%s\n"
 
 #: gtt/file-io.c:376
 msgid "project %t started"
-msgstr "開始計劃 %t"
+msgstr "已開始計劃 %t"
 
 #: gtt/file-io.c:379
 msgid "stopped project %t"
-msgstr "停止計劃 %t"
+msgstr "已停止計劃 %t"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
@@ -1095,33 +1136,28 @@ msgid "Elapsed"
 msgstr ""
 
 #: gtt/ghtml.c:113 gtt/ghtml.c:369 gtt/ghtml.c:378
-#, fuzzy
 msgid "(empty)"
-msgstr "空白"
+msgstr "(空白)"
 
 #: gtt/ghtml.c:225
-#, fuzzy
 msgid "Notes"
-msgstr "無"
+msgstr ""
 
 #: gtt/ghtml.c:229
 msgid "Task Time"
 msgstr ""
 
 #: gtt/ghtml.c:233
-#, fuzzy
 msgid "Bill Status"
-msgstr "狀態"
+msgstr ""
 
 #: gtt/ghtml.c:237 gtt/ghtml.c:408 gtt/glade/task_properties.glade.h:4
-#, fuzzy
 msgid "Billable"
-msgstr "不使用"
+msgstr ""
 
 #: gtt/ghtml.c:241
-#, fuzzy
 msgid "Bill Rate"
-msgstr "不使用"
+msgstr ""
 
 #: gtt/ghtml.c:245 mini-utils/gcolorsel/view-color-list.c:197
 #: mini-utils/guname/moreinfo.c:227
@@ -1129,29 +1165,24 @@ msgid "Value"
 msgstr "數值"
 
 #: gtt/ghtml.c:249
-#, fuzzy
 msgid "Billable Value"
-msgstr "不使用"
+msgstr ""
 
 #: gtt/ghtml.c:253 gtt/ghtml.c:279
-#, fuzzy
 msgid "No Default Value"
-msgstr "預設"
+msgstr "沒有預設值"
 
 #: gtt/ghtml.c:276
-#, fuzzy
 msgid "Start Time Fuzziness"
-msgstr "開始"
+msgstr ""
 
 #: gtt/ghtml.c:392 gtt/glade/task_properties.glade.h:13
-#, fuzzy
 msgid "Hold"
-msgstr "填色"
+msgstr ""
 
 #: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:3
-#, fuzzy
 msgid "Bill"
-msgstr "不使用"
+msgstr ""
 
 #: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:21
 msgid "Paid"
@@ -1166,9 +1197,8 @@ msgid "No Charge"
 msgstr ""
 
 #: gtt/ghtml.c:424 gtt/glade/task_properties.glade.h:22
-#, fuzzy
 msgid "Regular"
-msgstr "重新載入"
+msgstr ""
 
 #: gtt/ghtml.c:427 gtt/glade/task_properties.glade.h:20
 msgid "Overtime"
@@ -1179,53 +1209,51 @@ msgid "Double Overtime"
 msgstr ""
 
 #: gtt/ghtml.c:433 gtt/glade/task_properties.glade.h:12
-#, fuzzy
 msgid "Flat Fee"
-msgstr "浮點數"
+msgstr ""
 
 #: gtt/ghtml.c:453
-#, fuzzy
 msgid "Error - Unknown"
-msgstr "不明"
+msgstr ""
 
 #: gtt/ghtml.c:703
 msgid "unknown token: >>>>"
 msgstr ""
 
-#: gtt/journal.c:108
+#: gtt/journal.c:107
 msgid "Error 404 Not Found"
 msgstr ""
 
-#: gtt/journal.c:110
-#, fuzzy, c-format
+#: gtt/journal.c:109
+#, c-format
 msgid "The file %s was not found."
-msgstr "找不到圖示檔案"
+msgstr "找不到檔案 %s。"
 
-#: gtt/journal.c:111
+#: gtt/journal.c:110
 msgid "(null)"
 msgstr ""
 
-#: gtt/journal.c:120
-#, fuzzy
+#: gtt/journal.c:119
 msgid "Unkown Error"
-msgstr "不明"
+msgstr "不明的錯誤"
 
-#: gtt/journal.c:169 gtt/plug-in.c:90
-#, fuzzy, c-format
+#: gtt/journal.c:168 gtt/plug-in.c:90
+#, c-format
 msgid ""
 "Unable to open the file %s\n"
 "%s"
-msgstr "無法開啟紀錄檔！\n"
+msgstr ""
+"無法開啟檔案 %s\n"
+"%s"
 
-#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/journal.c:259 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
 msgid "New Diary Entry"
 msgstr ""
 
-#: gtt/journal.c:436
-#, fuzzy
+#: gtt/journal.c:447
 msgid "Save HTML To File"
-msgstr "儲存調色盤(_S)"
+msgstr "將 HTML 儲存至檔案"
 
 #: gtt/log.c:55
 #, c-format
@@ -1256,7 +1284,7 @@ msgid ""
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
 msgstr ""
 "似乎有另一個 GTimeTracker 正在執行中。\n"
-"按下 OK 強制啟動 GTimeTracker, 或按下「取消」結束。"
+"按下 OK 強制啟動 GTimeTracker，或按下「取消」結束。"
 
 #: gtt/main.c:126
 msgid "Cannot create pid-file!"
@@ -1264,7 +1292,7 @@ msgstr "無法開啟 pid 檔案！"
 
 #: gtt/main.c:219
 msgid "Do you want to continue?"
-msgstr ""
+msgstr "是否要繼續？"
 
 #: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
@@ -1276,11 +1304,11 @@ msgstr ""
 
 #: gtt/main.c:439
 msgid "Specify geometry"
-msgstr "指定位置和大小"
+msgstr "指定位置及大小"
 
 #: gtt/main.c:441
 msgid "Select a project on startup"
-msgstr "在啟動時選擇計劃"
+msgstr "在啟動程式時選擇計劃"
 
 #: gtt/main.c:441
 msgid "PROJECT"
@@ -1304,12 +1332,11 @@ msgstr "新增計劃..."
 
 #: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
-msgstr "重新載入設定檔"
+msgstr "重新載入組態檔"
 
 #: gtt/menucmd.c:225
-#, fuzzy
 msgid "Do you really want to reload the configuration file?"
-msgstr "無法讀取設定檔"
+msgstr "是否確定要重新讀入組態檔案？"
 
 #: gtt/menucmd.c:260
 #, c-format
@@ -1318,11 +1345,11 @@ msgstr "檔案 %s 已存在，要覆寫？"
 
 #: gtt/menucmd.c:271
 msgid "File cannot be written"
-msgstr "無法覆寫檔案"
+msgstr "無法寫入檔案"
 
 #: gtt/menucmd.c:291
 msgid "Export Current State"
-msgstr "匯出現時的狀態"
+msgstr "匯出目前的狀態"
 
 #: gtt/menus.c:33
 msgid "_New Project..."
@@ -1330,15 +1357,15 @@ msgstr "新增計劃(_N)..."
 
 #: gtt/menus.c:36
 msgid "_Reload Configuration File"
-msgstr "重新載入設定檔(_R)"
+msgstr "重新載入組態檔(_R)"
 
 #: gtt/menus.c:40
 msgid "_Save Configuration File"
-msgstr "儲存設定檔(_S)"
+msgstr "儲存組態檔(_S)"
 
 #: gtt/menus.c:44
 msgid "_Export Current State"
-msgstr "匯出現時的狀態(_E)"
+msgstr "匯出目前的狀態(_E)"
 
 #: gtt/menus.c:63 gtt/menus.c:173
 msgid "Clear _Daily Counter"
@@ -1381,18 +1408,16 @@ msgid "Show a sample invoice for this project"
 msgstr ""
 
 #: gtt/menus.c:99
-#, fuzzy
 msgid "_Primer..."
-msgstr "偏好設定..."
+msgstr ""
 
 #: gtt/menus.c:100
 msgid "Show a sample introductory primer for designing custom reports"
 msgstr ""
 
 #: gtt/menus.c:103
-#, fuzzy
 msgid "_New Report..."
-msgstr "新增計劃(_N)..."
+msgstr "新增報告(_N)..."
 
 #: gtt/menus.c:104
 msgid "Define a path to a new GTT phtml report file"
@@ -1400,7 +1425,7 @@ msgstr ""
 
 #: gtt/menus.c:115
 msgid "St_art"
-msgstr "啟動(_a)"
+msgstr "啟動(_A)"
 
 #: gtt/menus.c:116
 msgid "Start the timer running"
@@ -1408,20 +1433,19 @@ msgstr ""
 
 #: gtt/menus.c:121
 msgid "Sto_p"
-msgstr "停止(_p)"
+msgstr "停止(_P)"
 
 #: gtt/menus.c:122
-#, fuzzy
 msgid "Stop the timer"
-msgstr "九月"
+msgstr "停止計時器"
 
 #: gtt/menus.c:127
 msgid "_Timer Running"
-msgstr "計時器執行中(_T)"
+msgstr ""
 
 #: gtt/menus.c:146
 msgid "_Reports"
-msgstr ""
+msgstr "報告(_R)"
 
 #: gtt/menus.c:147
 msgid "_Timer"
@@ -1430,9 +1454,8 @@ msgstr "計時器(_T)"
 #. deal with the i18n menu path ...
 #. (is this right ??? or is this pre-i18n ???)
 #: gtt/menus.c:244
-#, fuzzy
 msgid "Reports"
-msgstr "重新啟動系統"
+msgstr "報告"
 
 #: gtt/plug-in.c:121
 msgid "Reports/<Separator>"
@@ -1458,9 +1481,8 @@ msgid ""
 msgstr ""
 
 #: gtt/timer.c:125
-#, fuzzy
 msgid "System Idle"
-msgstr "系統色彩"
+msgstr ""
 
 #. Note to translators: just skip the `[GTT]'
 #: gtt/toolbar.c:159
@@ -1468,21 +1490,20 @@ msgid "[GTT]New"
 msgstr "[GTT]新增"
 
 #: gtt/toolbar.c:160
-#, fuzzy
 msgid "Create a New Project..."
-msgstr "新增計劃..."
+msgstr ""
 
 #: gtt/toolbar.c:166
 msgid "Reload"
 msgstr "重新載入"
 
-#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
+#: gtt/toolbar.c:170 gtt/glade/journal.glade.h:7 stripchart/params.c:939
 msgid "Save"
 msgstr "儲存"
 
 #: gtt/toolbar.c:171
 msgid "Save Configuration File"
-msgstr "儲存設定檔"
+msgstr "儲存組態檔"
 
 #: gtt/toolbar.c:178
 msgid "Cut Selected Project"
@@ -1496,7 +1517,7 @@ msgstr "複製被選擇的計劃"
 msgid "Paste Project"
 msgstr "貼上計劃"
 
-#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
+#: gtt/toolbar.c:193 gtt/glade/journal.glade.h:2
 msgid "Journal"
 msgstr ""
 
@@ -1506,12 +1527,11 @@ msgstr ""
 
 #: gtt/toolbar.c:199
 msgid "Props"
-msgstr "內容"
+msgstr ""
 
 #: gtt/toolbar.c:200
-#, fuzzy
 msgid "Edit Project Properties..."
-msgstr "編輯內容..."
+msgstr ""
 
 #: gtt/toolbar.c:204
 msgid "Timer"
@@ -1523,12 +1543,11 @@ msgstr "啟動/停止計時器"
 
 #: gtt/toolbar.c:211 logview/calendar.c:112 logview/logview.c:107
 msgid "Calendar"
-msgstr "日曆"
+msgstr "行事曆"
 
 #: gtt/toolbar.c:212
-#, fuzzy
 msgid "View Calendar"
-msgstr "日曆"
+msgstr "觀看行事曆"
 
 #: gtt/toolbar.c:225
 msgid "Prefs"
@@ -1544,7 +1563,7 @@ msgstr "使用手冊"
 
 #: gtt/toolbar.c:231
 msgid "User's Guide and Manual"
-msgstr ""
+msgstr "使用者指南及手冊"
 
 #: gtt/toolbar.c:236
 msgid "Quit"
@@ -1556,42 +1575,35 @@ msgstr "結束 GTimeTracker"
 
 #: gtt/glade/interval_edit.glade.h:1
 msgid "1 Hour"
-msgstr ""
+msgstr "1 小時"
 
 #: gtt/glade/interval_edit.glade.h:2
-#, fuzzy
 msgid "10 Min"
-msgstr "最小"
+msgstr "10 分鐘"
 
 #: gtt/glade/interval_edit.glade.h:3
-#, fuzzy
 msgid "15 Min"
-msgstr "最小"
+msgstr "15 分鐘"
 
 #: gtt/glade/interval_edit.glade.h:4
-#, fuzzy
 msgid "2 Hours"
-msgstr "時"
+msgstr "2 小時"
 
 #: gtt/glade/interval_edit.glade.h:5
-#, fuzzy
 msgid "20 Min"
-msgstr "最小"
+msgstr "20 分鐘"
 
 #: gtt/glade/interval_edit.glade.h:6
-#, fuzzy
 msgid "3 Hours"
-msgstr "時"
+msgstr "3 小時"
 
 #: gtt/glade/interval_edit.glade.h:7
-#, fuzzy
 msgid "30 Min"
-msgstr "最小"
+msgstr "30 分鐘"
 
 #: gtt/glade/interval_edit.glade.h:8
-#, fuzzy
 msgid "5 Min"
-msgstr "最小"
+msgstr "5 分鐘"
 
 #: gtt/glade/interval_edit.glade.h:9
 msgid "Exact Time"
@@ -1602,59 +1614,62 @@ msgid "Set how Uncertain the Start Time Is"
 msgstr ""
 
 #: gtt/glade/interval_edit.glade.h:12
-#, fuzzy
 msgid "Start Fuzz"
-msgstr "開始"
+msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:1
-#, fuzzy
-msgid "Delete Interval"
-msgstr "一般"
+msgid "Add a new time interval."
+msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:2
-msgid "Delete This Interval"
+msgid "Delete Interval"
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:3
-#, fuzzy
-msgid "Edit Interval"
-msgstr "一般"
+msgid "Delete This Interval"
+msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:4
-#, fuzzy
-msgid "Edit the Start & Stop Times"
-msgstr "啟動/停止計時器"
+msgid "Edit Interval"
+msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:5
-#, fuzzy
-msgid "Insert Diary Entry"
-msgstr "在尾端插入(_I)"
+msgid "Edit the Start & Stop Times"
+msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:6
-msgid "Insert a new diary entry above this time interval."
+msgid "Insert Diary Entry"
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:7
-msgid "Merge Down"
+msgid "Insert a new diary entry above this time interval."
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:8
-msgid "Merge Into Interval Above"
+msgid "Merge Down"
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:9
-msgid "Merge Into Interval Below"
+msgid "Merge Into Interval Above"
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:10
-msgid "Merge Up"
+msgid "Merge Into Interval Below"
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:11
+msgid "Merge Up"
+msgstr ""
+
+#: gtt/glade/interval_popup.glade.h:12
+msgid "New Interval"
+msgstr ""
+
+#: gtt/glade/interval_popup.glade.h:13
 msgid "Paste Diary Entry"
 msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:14 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
 msgstr ""
 
@@ -1665,33 +1680,28 @@ msgid "Close"
 msgstr "關閉"
 
 #: gtt/glade/journal.glade.h:3
-#, fuzzy
 msgid "New File"
-msgstr "新增觀看模式"
+msgstr "新增檔案"
 
 #: gtt/glade/journal.glade.h:4
-#, fuzzy
 msgid "Open File"
-msgstr "開啟紀錄檔"
+msgstr "開啟檔案"
 
 #: gtt/glade/journal.glade.h:5
-#, fuzzy
 msgid "Print"
-msgstr "點"
+msgstr "列印"
 
 #: gtt/glade/journal.glade.h:6
 msgid "Refresh"
-msgstr ""
+msgstr "重新整理"
 
 #: gtt/glade/journal.glade.h:8
-#, fuzzy
 msgid "Save File"
-msgstr "儲存調色盤(_S)"
+msgstr "儲存檔案"
 
 #: gtt/glade/not-implemented.glade.h:1
-#, fuzzy
 msgid "Information"
-msgstr "CPU 資訊"
+msgstr "資訊"
 
 #: gtt/glade/not-implemented.glade.h:2
 msgid ""
@@ -1734,18 +1744,16 @@ msgid ""
 msgstr ""
 
 #: gtt/glade/prefs.glade.h:10
-#, fuzzy
 msgid "Fields"
-msgstr "尋找"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:11
 msgid "Filename:"
 msgstr "檔名："
 
 #: gtt/glade/prefs.glade.h:12
-#, fuzzy
 msgid "Idle Seconds:"
-msgstr "顯示秒數"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:13
 msgid "Inactivity Timeout"
@@ -1756,9 +1764,8 @@ msgid "Logfile"
 msgstr "紀錄檔"
 
 #: gtt/glade/prefs.glade.h:15
-#, fuzzy
 msgid "Min Recorded:"
-msgstr "正文："
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:16
 msgid "Misc"
@@ -1769,14 +1776,12 @@ msgid "No Project Command:"
 msgstr "沒有計劃時執行的指令："
 
 #: gtt/glade/prefs.glade.h:18
-#, fuzzy
 msgid "Project List Display"
-msgstr "計劃標題"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:19
-#, fuzzy
 msgid "Shell"
-msgstr "拼字"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:20
 msgid "Shell Commands"
@@ -1791,9 +1796,8 @@ msgid "Show Estimated Effort"
 msgstr ""
 
 #: gtt/glade/prefs.glade.h:23
-#, fuzzy
 msgid "Show Percent Complete"
-msgstr "顯示「內容」"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:24
 msgid "Show Planned Project End Date"
@@ -1804,29 +1808,24 @@ msgid "Show Planned Project Start Date"
 msgstr ""
 
 #: gtt/glade/prefs.glade.h:26
-#, fuzzy
 msgid "Show Project Description"
-msgstr "計劃描述："
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:27
-#, fuzzy
 msgid "Show Project Due Date"
-msgstr "顯示「內容」"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:28
-#, fuzzy
 msgid "Show Project Importance"
-msgstr "沒有計劃時執行的指令："
+msgstr "顯示計劃的重要性"
 
 #: gtt/glade/prefs.glade.h:29
-#, fuzzy
 msgid "Show Project Status"
-msgstr "顯示「內容」"
+msgstr "顯示計劃的情況"
 
 #: gtt/glade/prefs.glade.h:30
-#, fuzzy
 msgid "Show Project Urgency"
-msgstr "顯示「內容」"
+msgstr "顯示計劃的緊急程度"
 
 #: gtt/glade/prefs.glade.h:31
 msgid "Show Seconds"
@@ -1837,9 +1836,8 @@ msgid "Show Status Bar"
 msgstr "顯示狀態列"
 
 #: gtt/glade/prefs.glade.h:33
-#, fuzzy
 msgid "Show Sub-Projects"
-msgstr "顯示「內容」"
+msgstr "顯示"
 
 #: gtt/glade/prefs.glade.h:34
 msgid "Show Table Header"
@@ -1858,14 +1856,12 @@ msgid "Show Time This Week"
 msgstr ""
 
 #: gtt/glade/prefs.glade.h:38
-#, fuzzy
 msgid "Show Time This Year"
-msgstr "顯示「計時器」"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:39
-#, fuzzy
 msgid "Show Time Today"
-msgstr "顯示「計時器」"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:40
 msgid "Show Toolbar Icons"
@@ -1880,9 +1876,8 @@ msgid "Show Tooltips"
 msgstr "顯示工具列提示"
 
 #: gtt/glade/prefs.glade.h:43
-#, fuzzy
 msgid "Show Total Time Ever"
-msgstr "顯示表格檔頭"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:44
 msgid "Show `Cut', `Copy', `Paste'"
@@ -1893,9 +1888,8 @@ msgid "Show `Help'"
 msgstr "顯示「說明」"
 
 #: gtt/glade/prefs.glade.h:46
-#, fuzzy
 msgid "Show `Journal'"
-msgstr "顯示「說明」"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:47
 msgid "Show `New'"
@@ -1907,7 +1901,7 @@ msgstr "顯示「偏好設定」"
 
 #: gtt/glade/prefs.glade.h:49
 msgid "Show `Properties'"
-msgstr "顯示「內容」"
+msgstr "顯示「屬性」"
 
 #: gtt/glade/prefs.glade.h:50
 msgid "Show `Quit'"
@@ -1956,23 +1950,20 @@ msgid "Use Logfile"
 msgstr "使用紀錄檔"
 
 #: gtt/glade/prefs.glade.h:60
-#, fuzzy
 msgid "View Project Fields"
-msgstr "觀看模式內容"
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:1
 msgid "        "
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:2
-#, fuzzy
 msgid "            "
-msgstr "過濾..                "
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:3
-#, fuzzy
 msgid "                        "
-msgstr "過濾..                "
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:5
 #, no-c-format
@@ -2003,9 +1994,8 @@ msgid "Double-Overtime Rate:"
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:13
-#, fuzzy
 msgid "Due Date:"
-msgstr "日期："
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:14
 msgid "Flat Fee:"
@@ -2035,9 +2025,8 @@ msgid ""
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:20
-#, fuzzy
 msgid "Importance:"
-msgstr "容錯度："
+msgstr "重要性："
 
 #: gtt/glade/project_properties.glade.h:22
 msgid ""
@@ -2045,9 +2034,8 @@ msgid ""
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:23
-#, fuzzy
 msgid "Intervals"
-msgstr "一般"
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:24
 msgid "Intervals smaller than this will be discarded"
@@ -2062,9 +2050,8 @@ msgid "Minimum Interval: "
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:28
-#, fuzzy
 msgid "Not Set"
-msgstr "字型選擇程式"
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:30
 #: gtt/glade/task_properties.glade.h:18
@@ -2080,14 +2067,12 @@ msgid "Planned Finish:"
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:34
-#, fuzzy
 msgid "Planned Start:"
-msgstr "開始時的紀錄："
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:35
-#, fuzzy
 msgid "Planning"
-msgstr "警告"
+msgstr ""
 
 #: gtt/glade/project_properties.glade.h:36
 msgid "Project"
@@ -2110,9 +2095,8 @@ msgid "Regular Rate:"
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:41
-#, fuzzy
 msgid "Status:"
-msgstr "狀態"
+msgstr "情況："
 
 #: gtt/glade/project_properties.glade.h:42
 msgid "The dollars per hour charged for overtime work on this project."
@@ -2132,7 +2116,7 @@ msgstr ""
 
 #: gtt/glade/project_properties.glade.h:46
 msgid "Urgency:"
-msgstr ""
+msgstr "緊急程度："
 
 #: gtt/glade/project_properties.glade.h:47
 msgid "What is the status of this project?"
@@ -2143,19 +2127,16 @@ msgid "a short description that will be printed on the invoice."
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:49
-#, fuzzy
 msgid "seconds"
 msgstr "秒"
 
 #: gtt/glade/task_popup.glade.h:1
-#, fuzzy
 msgid "Add a new time interval"
-msgstr "更新間隔 (ms)"
+msgstr ""
 
 #: gtt/glade/task_popup.glade.h:2
-#, fuzzy
-msgid "Delete _Times"
-msgstr "刪除"
+msgid "Cut Entry & _Times"
+msgstr ""
 
 #: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
@@ -2174,14 +2155,12 @@ msgid "Insert a new diary entry above this one."
 msgstr ""
 
 #: gtt/glade/task_popup.glade.h:7
-#, fuzzy
 msgid "New Time Interval"
-msgstr "一般"
+msgstr ""
 
 #: gtt/glade/task_popup.glade.h:9
-#, fuzzy
-msgid "_Delete Diary Entry"
-msgstr "刪除參數"
+msgid "_Cut Diary Entry"
+msgstr ""
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
@@ -2220,9 +2199,8 @@ msgid "Billing Status:"
 msgstr ""
 
 #: gtt/glade/task_properties.glade.h:9
-#, fuzzy
 msgid "Diary Entry Properties"
-msgstr "Gnome 磁碟空間內容"
+msgstr ""
 
 #: gtt/glade/task_properties.glade.h:10
 msgid "Diary Entry:"
@@ -2248,9 +2226,8 @@ msgid ""
 msgstr ""
 
 #: gtt/glade/task_properties.glade.h:19
-#, fuzzy
 msgid "OverOver"
-msgstr "伺服器"
+msgstr ""
 
 #: gtt/glade/task_properties.glade.h:23
 msgid ""
@@ -2258,7 +2235,6 @@ msgid ""
 msgstr ""
 
 #: gtt/glade/task_properties.glade.h:24
-#, fuzzy
 msgid "minutes"
 msgstr "分"
 
@@ -2267,25 +2243,24 @@ msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:42
-#, fuzzy
 msgid ""
 "This  program  is  part of  the  GNOME  project. Logview comes with "
 "ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"此程式是 Linux 上的 GNOME 計劃其中一員。紀錄檔檢視器是沒有使用保証的。它是自"
-"由軟件，你可以根據 GNU General Public License 的使用條款分發。承蒙 Tuomas "
-"Kuosmanen（即 tigert）提供紀錄檔圖示。"
+"此程式是 GNOME 計劃其中一員。紀錄檔檢視程式是沒有使用保証的。它是自由軟件，"
+"歡迎根據 GNU General Public License 的使用條款分發。承蒙 Tuomas Kuosmanen"
+"（即 tigert）提供紀錄檔圖示。"
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
 msgid "Logview"
-msgstr "紀錄檔檢視器"
+msgstr "紀錄檔檢視程式"
 
 #: logview/about.c:56
 msgid "Copyright (C) 1998"
-msgstr "版權 (C) 1998"
+msgstr "版權所有 (C) 1998"
 
 #: logview/actions.c:92
 msgid "Action database"
@@ -2293,11 +2268,11 @@ msgstr "紀錄行動資料庫"
 
 #: logview/actions.c:97 logview/monitor.c:110
 msgid "Monitor options"
-msgstr "監視選項"
+msgstr "有關監察的選項"
 
 #: logview/actions.c:151
 msgid "Add..."
-msgstr "加入..."
+msgstr "新增..."
 
 #: logview/actions.c:157
 msgid "Edit..."
@@ -2319,7 +2294,7 @@ msgstr "無法寫入紀錄行動的資料庫！"
 
 #: logview/actions.c:511
 msgid "<empty>"
-msgstr "<空>"
+msgstr "<空白>"
 
 #: logview/actions.c:512
 msgid "log name regexp"
@@ -2532,15 +2507,15 @@ msgstr "關閉紀錄檔"
 
 #: logview/logview.c:94 logview/logview.c:95
 msgid "Switch log"
-msgstr "轉換紀錄檔"
+msgstr "切換紀錄檔"
 
 #: logview/logview.c:97
 msgid "Monitor..."
-msgstr "監視..."
+msgstr "監察..."
 
 #: logview/logview.c:98
 msgid "Monitor log"
-msgstr "監視紀錄檔"
+msgstr "監察紀錄檔"
 
 #: logview/logview.c:101
 msgid "Exit program"
@@ -2584,16 +2559,16 @@ msgstr "過濾紀錄事項"
 
 #: logview/logview.c:137
 msgid "Info about logview"
-msgstr "關於紀錄檔檢視器的資訊"
+msgstr "關於紀錄檔檢視程式的資訊"
 
 #: logview/logview.c:241
 msgid "No log files to open"
-msgstr "沒有紀錄檔要開啟"
+msgstr "沒有紀錄檔可開啟"
 
 #. Create App
 #: logview/logview.c:264
 msgid "System Log Viewer"
-msgstr "系統紀錄檔檢視器"
+msgstr "系統紀錄檔檢視程式"
 
 #: logview/logview.c:368
 msgid "Filename: "
@@ -2618,7 +2593,7 @@ msgstr "錯誤：[%s]\n"
 
 #: logview/monitor.c:124
 msgid "Choose logs to monitor"
-msgstr "選擇要監視的紀錄檔"
+msgstr "選擇準備監察的紀錄檔"
 
 #. Arrowed buttons
 #: logview/monitor.c:168
@@ -2650,7 +2625,7 @@ msgstr "tmp_list 是 NULL\n"
 
 #: logview/monitor.c:456
 msgid "Monitoring logs..."
-msgstr "正在監視紀錄檔..."
+msgstr "正在監察紀錄檔..."
 
 #: logview/monitor.c:638
 msgid "TOUCHED!!\n"
@@ -2815,7 +2790,7 @@ msgstr "搜尋 RGB 資料庫"
 
 #: mini-utils/gcolorsel/gcolorsel.c:44
 msgid "Monitor"
-msgstr "監視"
+msgstr "監控"
 
 #: mini-utils/gcolorsel/gcolorsel.c:46
 msgid "Concat"
@@ -2824,7 +2799,7 @@ msgstr "合併"
 #: mini-utils/gcolorsel/gcolorsel.c:96
 #, c-format
 msgid "'%s' document has been modified; do you wish to save it ?"
-msgstr "'%s' 文件已被修改；是否儲存？"
+msgstr "‘%s’文件已被修改；是否儲存？"
 
 #: mini-utils/gcolorsel/gcolorsel.c:206
 msgid "GColorsel was unable to paste colors from the clipboard."
@@ -3057,12 +3032,12 @@ msgstr "標頭："
 #: mini-utils/gcolorsel/glade/view-color-grid-properties.glade.h:3
 #: mini-utils/gcolorsel/glade/view-color-list-properties.glade.h:4
 msgid "Special properties"
-msgstr "特殊內容"
+msgstr "特性"
 
 #: mini-utils/gcolorsel/glade/mdi-color-generic-properties.glade.h:1
 #: mini-utils/gcolorsel/glade/view-color-generic-properties.glade.h:2
 msgid "Common properties"
-msgstr "一般內容"
+msgstr "一般屬性"
 
 #: mini-utils/gcolorsel/glade/mdi-color-generic-properties.glade.h:2
 #: mini-utils/gcolorsel/glade/view-color-edit.glade.h:3
@@ -3176,7 +3151,7 @@ msgstr "編輯所選擇的顏色..."
 
 #: mini-utils/gcolorsel/menus.c:113
 msgid "Document/View properties"
-msgstr "文件/觀看模式內容"
+msgstr "文件/觀看模式屬性"
 
 #: mini-utils/gcolorsel/menus.c:179
 #, c-format
@@ -3308,11 +3283,11 @@ msgstr "新增顏色"
 
 #: mini-utils/gcolorsel/menus.c:863
 msgid "View properties"
-msgstr "觀看模式內容"
+msgstr "觀看模式屬性"
 
 #: mini-utils/gcolorsel/menus.c:878
 msgid "Document properties"
-msgstr "文件內容"
+msgstr "文件屬性"
 
 #: mini-utils/gcolorsel/menus.c:911
 msgid "Open"
@@ -3335,7 +3310,7 @@ msgid ""
 "Your config file is corrupted.\n"
 "Do you want to create a new session ?"
 msgstr ""
-"你的設定檔已損毀。\n"
+"組態檔已損毀。\n"
 "是否建立新的作業階段？"
 
 #: mini-utils/gcolorsel/session.c:358
@@ -3470,7 +3445,7 @@ msgstr "尋找字串"
 
 #: mini-utils/gless/gless.c:468
 msgid "Find"
-msgstr "尋找"
+msgstr "搜尋"
 
 #: mini-utils/gless/gless.c:505
 msgid "Loading..."
@@ -3667,10 +3642,10 @@ msgstr "guname 以控制中心面板程式方式啟動"
 
 #: mini-utils/guname/guname.c:119
 msgid "an initialization error occurred while starting 'guname-capplet'."
-msgstr "啟動 'guname-capplet' 時發生起始錯誤"
+msgstr "啟動‘guname-capplet’時發生起始錯誤"
 
-#: mini-utils/guname/guname-capplet.desktop.in.h:2
 #: mini-utils/guname/guname.c:446
+#: mini-utils/guname/guname-capplet.desktop.in.h:2
 msgid "System Information"
 msgstr "系統資訊"
 
@@ -3736,7 +3711,7 @@ msgstr ""
 #: mini-utils/guname/guname.c:730
 #, c-format
 msgid "Couldn't open file `%s': %s"
-msgstr "無法開啟檔案 `%s'：%s"
+msgstr "無法開啟檔案‘%s’：%s"
 
 #: mini-utils/guname/guname.c:752
 msgid "Save System Information As..."
@@ -3746,12 +3721,12 @@ msgstr "另存系統資訊..."
 #: mini-utils/guname/guname.c:809
 #, c-format
 msgid "Command failed ` %s ': %s"
-msgstr "指令失敗 ` %s '：%s"
+msgstr "指令‘%s’失敗：%s"
 
 #: mini-utils/guname/guname.c:817
 #, c-format
 msgid "Couldn't run command ` %s ': %s"
-msgstr "無法執行指令 ` %s '：%s"
+msgstr "無法執行指令‘%s’：%s"
 
 #: mini-utils/guname/guname.c:841
 #, c-format
@@ -4036,7 +4011,7 @@ msgstr "此磁碟機的 DMA 設定值無法改變。"
 #: mini-utils/idetool/idetool.c:79 mini-utils/idetool/idetool.c:111
 #: mini-utils/idetool/idetool.c:326 mini-utils/idetool/idetool.c:331
 msgid "Enabled"
-msgstr "使用"
+msgstr "啟用"
 
 #: mini-utils/idetool/idetool.c:79 mini-utils/idetool/idetool.c:111
 #: mini-utils/idetool/idetool.c:326 mini-utils/idetool/idetool.c:331
@@ -4091,7 +4066,7 @@ msgstr "型號"
 
 #: mini-utils/idetool/idetool.c:311
 msgid "Firmware"
-msgstr "韌體"
+msgstr "Firmware"
 
 #: mini-utils/idetool/idetool.c:312
 msgid "Serial No."
@@ -4161,7 +4136,7 @@ msgstr "M內部錯誤：do_test 中的值 (%ld) 有誤\n"
 #: gfloppy/src/badblocks.c:166
 #, c-format
 msgid "EBad block at block %lu"
-msgstr "E區域 %lu 已損毀"
+msgstr "E區段 %lu 是壞磁區"
 
 #. while (!i)
 #. ;
@@ -4180,11 +4155,11 @@ msgstr "M檢查壞磁區...完成"
 
 #: gfloppy/src/fdformat.c:45
 msgid "MFormatting the disk..."
-msgstr "M格式化碟片..."
+msgstr "M正在格式化碟片..."
 
 #: gfloppy/src/fdformat.c:47
 msgid "EI don't know what this is, but it's very wrong."
-msgstr "E我不知道這是什麼狀況，不過看來不妙。"
+msgstr "E不清楚發生甚麼事，不過肯定是出了問題。"
 
 #: gfloppy/src/fdformat.c:55 gfloppy/src/fdformat.c:67
 #, c-format
@@ -4198,7 +4173,7 @@ msgstr "E格式化完成時發生錯誤"
 #. XXXX - need to tell parent we're finished
 #: gfloppy/src/fdformat.c:79
 msgid "MFormatting the disk... Done"
-msgstr "M格式化磁片...完成"
+msgstr "M格式化碟片...完成"
 
 #. XXXX - tell parent we're starting verify stage
 #: gfloppy/src/fdformat.c:95
@@ -4211,14 +4186,14 @@ msgid ""
 "\n"
 "Please confirm that it is not write-protected."
 msgstr ""
-"E無法寫入磁碟片。\n"
+"E無法寫入軟碟。\n"
 "\n"
-"請確認碟片沒有防寫保護。"
+"請確認軟碟沒有加上防寫保護。"
 
 #: gfloppy/src/fdformat.c:103 gfloppy/src/fdformat.c:178
 #, c-format
 msgid "EInsufficient permissions to open floppy device %s."
-msgstr "E你沒有足夠權限使用軟碟裝置 %s"
+msgstr "E沒有足夠權限開啟軟碟裝置 %s。"
 
 #: gfloppy/src/fdformat.c:107 gfloppy/src/fdformat.c:182
 msgid ""
@@ -4227,10 +4202,10 @@ msgid ""
 "Please confirm that it is in the drive\n"
 "with the drive door shut."
 msgstr ""
-"E無法存取磁碟片。\n"
+"E無法存取磁軟碟。\n"
 "\n"
-"請確認磁碟片已放進磁碟機中\n"
-"而且開關處已卡緊。"
+"請確認軟碟已放進軟碟機中\n"
+"而且活門已經關閉。"
 
 #: gfloppy/src/fdformat.c:110
 #, c-format
@@ -4289,55 +4264,55 @@ msgstr ""
 
 #: gfloppy/src/fdformat.c:195
 msgid "ECould not determine current format type"
-msgstr "E無法決定目前磁片格式的類型"
+msgstr "E無法決定目前碟片的格式"
 
-#: gfloppy/src/gfloppy-i18n.h:9 gfloppy/src/gfloppy.glade.h:1
+#: gfloppy/src/gfloppy.glade.h:1 gfloppy/src/gfloppy-i18n.h:9
 msgid "Dos (FAT)"
 msgstr "Dos (FAT)"
 
-#: gfloppy/src/gfloppy-i18n.h:15 gfloppy/src/gfloppy.glade.h:2
+#: gfloppy/src/gfloppy.glade.h:2 gfloppy/src/gfloppy-i18n.h:15
 msgid "Double Density 3.5\" (720 KB)"
 msgstr "倍密度 3.5\" (720 KB)"
 
-#: gfloppy/src/gfloppy-i18n.h:16 gfloppy/src/gfloppy.glade.h:3
+#: gfloppy/src/gfloppy.glade.h:3 gfloppy/src/gfloppy-i18n.h:16
 msgid "Double Density 5.25\" (360 KB)"
 msgstr "倍密度 5.25\" (360 KB)"
 
-#: gfloppy/src/gfloppy-i18n.h:12 gfloppy/src/gfloppy.glade.h:4
+#: gfloppy/src/gfloppy.glade.h:4 gfloppy/src/gfloppy-i18n.h:12
 msgid "File system type:"
 msgstr "檔案系統類型："
 
-#: gfloppy/src/gfloppy-i18n.h:11 gfloppy/src/gfloppy.glade.h:5
+#: gfloppy/src/gfloppy.glade.h:5 gfloppy/src/gfloppy-i18n.h:11
 msgid "Floppy Density:"
-msgstr "軟碟片密度："
+msgstr "軟碟密度："
 
-#: gfloppy/src/gfloppy-i18n.h:18 gfloppy/src/gfloppy.glade.h:6
+#: gfloppy/src/gfloppy.glade.h:6 gfloppy/src/gfloppy-i18n.h:18
 msgid "Floppy Device:"
-msgstr "軟碟片裝置："
+msgstr "軟碟裝置："
 
 #.
 #. * Translatable strings file generated by Glade.
 #. * Add this file to your project's POTFILES.in.
 #. * DO NOT compile it as part of your application.
 #.
-#: gfloppy/src/gfloppy-i18n.h:7 gfloppy/src/gfloppy.glade.h:7
+#: gfloppy/src/gfloppy.glade.h:7 gfloppy/src/gfloppy-i18n.h:7
 msgid "Format a floppy"
-msgstr "格式化磁片"
+msgstr "格式化軟碟"
 
-#: gfloppy/src/gfloppy-i18n.h:13 gfloppy/src/gfloppy.glade.h:8
+#: gfloppy/src/gfloppy.glade.h:8 gfloppy/src/gfloppy-i18n.h:13
 msgid "High Density 3.5\" (1.44 MB)"
 msgstr "高密度 3.5\" (1.44 MB)"
 
-#: gfloppy/src/gfloppy-i18n.h:14 gfloppy/src/gfloppy.glade.h:9
+#: gfloppy/src/gfloppy.glade.h:9 gfloppy/src/gfloppy-i18n.h:14
 msgid "High Density 5.25\" (1.2 MB)"
 msgstr "高密度 5.25\" (1.2 MB)"
 
-#: gfloppy/src/gfloppy-i18n.h:8 gfloppy/src/gfloppy-i18n.h:10
-#: gfloppy/src/gfloppy.glade.h:10
+#: gfloppy/src/gfloppy.glade.h:10 gfloppy/src/gfloppy-i18n.h:8
+#: gfloppy/src/gfloppy-i18n.h:10
 msgid "Linux Native (ext2)"
 msgstr "Linux Native (ext2)"
 
-#: gfloppy/src/gfloppy-i18n.h:17 gfloppy/src/gfloppy.glade.h:11
+#: gfloppy/src/gfloppy.glade.h:11 gfloppy/src/gfloppy-i18n.h:17
 msgid "_Quick format"
 msgstr "快速格式化(_Q)"
 
@@ -4372,7 +4347,7 @@ msgid ""
 "The device %s is disconnected.\n"
 "Please attach device to continue."
 msgstr ""
-"裝置 %s 並未連接。\n"
+"並未連接 %s 裝置。\n"
 "請接上裝置並繼續。"
 
 #: gfloppy/src/main.c:141 gfloppy/src/main.c:177
@@ -4382,12 +4357,12 @@ msgid ""
 "be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"你沒有足夠的權限寫入 %s，不可能格式化。\n"
-"若想得到寫入的權限，請聯絡系統管理員。"
+"沒有足夠的權限寫入 %s，不可能格式化。\n"
+"若要獲得寫入的權限，請聯絡系統管理員。"
 
 #: gfloppy/src/main.c:285
 msgid "The device to format"
-msgstr "要格式化的裝置"
+msgstr "準備格式化的裝置"
 
 #: gfloppy/src/main.c:286
 msgid "DEVICE"
@@ -4401,15 +4376,15 @@ msgstr "格式化"
 
 #: gfloppy/src/main.c:360
 msgid "Format another floppy?"
-msgstr "要繼續格式化軟碟片？"
+msgstr "是否繼續格式化其它軟碟？"
 
 #: gfloppy/src/progress.c:117
 msgid "Floppy formatted successfully."
-msgstr "軟碟片格式化成功。"
+msgstr "軟碟格式化成功。"
 
 #: gfloppy/src/progress.c:121
 msgid "Floppy formatting cancelled."
-msgstr "取消格式化軟碟片的動作。"
+msgstr "取消格式化軟碟的動作。"
 
 #: gfloppy/src/progress.c:176
 msgid "Format progress."
@@ -4428,8 +4403,8 @@ msgid "Scale"
 msgstr "比例"
 
 #: stripchart/chart-app.c:197 stripchart/stripchart-applet.c:69
-#: stripchart/stripchart-applet.desktop.in.h:2 stripchart/stripchart.c:92
-#: stripchart/stripchart.c:97
+#: stripchart/stripchart.c:92 stripchart/stripchart.c:97
+#: stripchart/stripchart-applet.desktop.in.h:2
 msgid "Stripchart"
 msgstr "圖表程式"
 
@@ -4444,9 +4419,9 @@ msgid ""
 "such as CPU load, CPU utilization, network traffic levels, and the like.  "
 "Other more ingenious uses are left as an exercise for the interested user."
 msgstr ""
-"GNOME 圖表程式可以將使用者指定的參數對時間繪圖。它主要是用來畫出系統的效能參"
-"數，如 CPU 的使用率、網路負載狀況... 等等。有興趣的使用者可以找出其它巧妙的應"
-"用。"
+"GNOME 圖表程式可以將使用者指定的參數對應時間繪圖。它主要是用來畫出有關系統效"
+"能的參數，如 CPU 的使用率、網路負載狀況... 等等。有興趣的使用者可以找出其它巧"
+"妙的應用方式。"
 
 #: stripchart/chart-app.c:239
 msgid "Show values"
@@ -4458,11 +4433,11 @@ msgstr "修改偏好設定..."
 
 #: stripchart/chart-app.c:251
 msgid "Edit Params..."
-msgstr "編輯參數..."
+msgstr "修改參數..."
 
 #: stripchart/eval.c:252
 msgid "closing parenthesis expected"
-msgstr "預期應該有右括號"
+msgstr "應該使用右括號"
 
 #: stripchart/eval.c:269
 #, c-format
@@ -4471,7 +4446,7 @@ msgstr "沒有此欄位：%d"
 
 #: stripchart/eval.c:294
 msgid "missing variable identifer"
-msgstr "遺漏變數名稱"
+msgstr "缺少了變數名稱"
 
 #: stripchart/eval.c:296
 #, c-format
@@ -4480,12 +4455,12 @@ msgstr "無效的變數名稱：%s"
 
 #: stripchart/eval.c:300
 msgid "number expected"
-msgstr "預期應該有數字"
+msgstr "應該使用數字"
 
 #: stripchart/eval.c:371
 #, c-format
 msgid "extra junk at end: \"%s\""
-msgstr "尾端有多餘的字：\"%s\""
+msgstr "末端有多餘的字串：“%s”"
 
 #: stripchart/params.c:633
 msgid "Parameter"
@@ -4549,7 +4524,7 @@ msgstr "在此參數後增加參數"
 
 #: stripchart/params.c:979
 msgid "Apply Parameter Changes"
-msgstr "套用參數變更"
+msgstr "套用已更改的參數"
 
 #: stripchart/params.c:986
 msgid "Delete Parameter"
@@ -4581,7 +4556,7 @@ msgstr "圖表"
 
 #: stripchart/prefs.c:218 stripchart/prefs.c:277
 msgid "enabled"
-msgstr "使用"
+msgstr "啟用"
 
 #: stripchart/prefs.c:225
 msgid "minor"
@@ -4609,7 +4584,7 @@ msgstr "繪圖筆"
 
 #: stripchart/stripchart-applet.c:44 stripchart/stripchart.c:66
 msgid "Geometry string: WxH+X+Y"
-msgstr "位置大小的字串：WxH+X+Y"
+msgstr "指定位置大小的字串：WxH+X+Y"
 
 #: stripchart/stripchart-applet.c:44 stripchart/stripchart.c:66
 msgid "GEO"
@@ -4617,7 +4592,7 @@ msgstr "GEO"
 
 #: stripchart/stripchart-applet.c:46 stripchart/stripchart.c:68
 msgid "Configuration file name"
-msgstr "設定檔名稱"
+msgstr "組態檔名稱"
 
 #: stripchart/stripchart-applet.c:46 stripchart/stripchart.c:68
 msgid "FILE"
@@ -4643,9 +4618,9 @@ msgid ""
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
-"在網上隨意下載和執行一些來歷不明的程式是很危險的。\n"
+"在網上隨意下載及執行一些來歷不明的程式是很危險的。\n"
 "\n"
-"你是否確定要執行 `%s'？"
+"是否確定要執行‘%s’？"
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
@@ -4654,31 +4629,31 @@ msgstr "無法存取檔案權限"
 #: exe-handler/gnome-exe-handler.c:88
 #, c-format
 msgid "Could not execute the file `%s' due to a permission problem"
-msgstr "無法執行檔案 `%s' 因權限不足"
+msgstr "因權限不足而無法執行檔案‘%s’"
 
 #: exe-handler/gnome-exe-handler.c:104
 #, c-format
 msgid "Failure at executing `%s'"
-msgstr "執行 `%s' 失敗"
+msgstr "執行‘%s’失敗"
 
 #: exe-handler/gnome-exe-handler.c:123
 #, c-format
 msgid "It was not possible to open the file `%s'"
-msgstr "無法開啟檔案 `%s'"
+msgstr "不可能開啟檔案‘%s’"
 
 #: exe-handler/gnome-exe-handler.c:132
 #, c-format
 msgid "The file `%s' is empty"
-msgstr "檔案 `%s' 是空白的"
+msgstr "檔案‘%s’是空白的"
 
 #: exe-handler/gnome-exe-handler.c:137
 #, c-format
 msgid "There was an error. `%s' is empty"
-msgstr "發生錯誤。`%s' 是空白的"
+msgstr "發生錯誤。‘%s’是空白的"
 
 #: exe-handler/gnome-exe-handler.c:152
 msgid "This is a library and can not be executed"
-msgstr "這是一個函式庫，是不可執行的"
+msgstr "這是一個不可執行的函式庫"
 
 #: exe-handler/gnome-exe-handler.c:158
 msgid "The file is a core file and can not be executed"
@@ -4686,7 +4661,7 @@ msgstr "這是一個不可執行的 core 檔"
 
 #: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
-msgstr "這是一個類型不明的可執行檔"
+msgstr "這是一個類型不詳的可執行檔"
 
 #: exe-handler/gnome-exe-handler.c:192
 msgid ""
@@ -4708,8 +4683,8 @@ msgid ""
 "No files or folders, drop files or folders\n"
 "above to add them to the archive"
 msgstr ""
-"沒有任何檔案或目錄，請將檔案\n"
-"或目錄放到這裡來將它們加入保存檔"
+"沒有任何檔案或資料夾，請將檔案\n"
+"或資料夾放到這裡來將它們加入保存檔"
 
 #: meat-grinder/meat-grinder.c:217 meat-grinder/meat-grinder.c:220
 msgid "Cannot start the archive (tar) program"
@@ -4717,7 +4692,7 @@ msgstr "無法啟動保存檔案（tar）程式"
 
 #: meat-grinder/meat-grinder.c:228
 msgid "Cannot run tar/gtar"
-msgstr "不能執行 tar/gtar"
+msgstr "無法執行 tar/gtar"
 
 #: meat-grinder/meat-grinder.c:279
 msgid "Archive.tar.gz"
@@ -4725,11 +4700,11 @@ msgstr "Archive.tar.gz"
 
 #: meat-grinder/meat-grinder.c:379
 msgid "The GNOME Archive Generator"
-msgstr "GNOME 保存檔建立程式"
+msgstr "GNOME 保存檔產生程式"
 
 #: meat-grinder/meat-grinder.c:382
 msgid "Drag files in to make archives"
-msgstr "拖曳檔案到此程式來建立保存檔"
+msgstr "將檔案拖曳至此程式來建立保存檔"
 
 #: meat-grinder/meat-grinder.c:444 meat-grinder/meat-grinder.c:602
 msgid "No filename selected"
@@ -4737,11 +4712,11 @@ msgstr "沒有選擇任何檔案"
 
 #: meat-grinder/meat-grinder.c:448
 msgid "File exists, overwrite?"
-msgstr "檔案已存在。要覆寫？"
+msgstr "檔案已存在。是否覆寫？"
 
 #: meat-grinder/meat-grinder.c:472
 msgid "No items to archive"
-msgstr "沒有項目可供放入保存檔"
+msgstr "未將任何項目加入保存檔"
 
 #: meat-grinder/meat-grinder.c:605
 msgid "File does not exists"
@@ -4749,7 +4724,7 @@ msgstr "檔案不存在"
 
 #: meat-grinder/meat-grinder.c:619
 msgid "Add file or folder"
-msgstr "增加檔案或目錄"
+msgstr "加入檔案或資料夾"
 
 #: meat-grinder/meat-grinder.c:689
 msgid "Add file or folder..."
@@ -4773,15 +4748,15 @@ msgstr "移除所選擇的項目"
 
 #: meat-grinder/meat-grinder.c:735
 msgid "GNOME Archive Generator"
-msgstr "GNOME 保存檔建立程式"
+msgstr "GNOME 保存檔產生程式"
 
 #: meat-grinder/meat-grinder.c:765
 msgid "Drop files here to add them to the archive."
-msgstr "拖曳檔案到這裡來加入保存檔。"
+msgstr "將檔案拖曳至此處來加入保存檔。"
 
 #: meat-grinder/meat-grinder.c:783
 msgid "Archive"
-msgstr "保存檔"
+msgstr "建立保存檔"
 
 #: meat-grinder/meat-grinder.c:790
 msgid ""
@@ -4805,96 +4780,88 @@ msgstr ""
 "它是建立保存檔用的必要程式。"
 
 #: gfloppy/gfloppy.desktop.in.h:1
-#, fuzzy
 msgid "Format Floppy Disks"
-msgstr "格式化磁片"
+msgstr "將軟碟格式化"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "gfloppy"
-msgstr ""
+msgstr "gfloppy"
 
 #: gdictsrc/GDict.desktop.in.h:1 gdictsrc/gdict.desktop.in.h:1
 msgid "GDict"
-msgstr ""
+msgstr "GDict"
 
 #: gdictsrc/GDict.desktop.in.h:2
 msgid "Gnome client for the MIT dictionary server"
-msgstr ""
+msgstr "MIT 字典伺服器的 GNOME 用戶端程式"
 
 #: gdictsrc/gdict.desktop.in.h:2
 msgid "GNOME client for RFC 2229-compliant dictionary server"
-msgstr ""
+msgstr "符合 RFC 2229 標準的字典伺服器的 GNOME 用戶端程式"
 
 #: stripchart/stripchart-applet.desktop.in.h:1
-#, fuzzy
 msgid "Shows a stripchart plot"
-msgstr "圖表程式"
+msgstr ""
 
-#: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
-#, fuzzy
+#: stripchart/stripchart.desktop.in.h:1 gstripchart/gstripchart.desktop.in.h:1
 msgid "Stripchart Plotter"
-msgstr "圖表程式"
+msgstr ""
 
 #: notepad/Notepad.desktop.in.h:1
 msgid "Notepad"
-msgstr ""
+msgstr "記事本"
 
 #: notepad/Notepad.desktop.in.h:2
 msgid "Simple editor (notepad)"
-msgstr ""
+msgstr "小型編輯器（記事本）"
 
 #: mini-utils/idetool/idetool.desktop.in.h:1
 msgid "IDE Device Tool"
-msgstr ""
+msgstr "IDE 裝置工具"
 
 #: mini-utils/idetool/idetool.desktop.in.h:2
 msgid "Show and Configure IDE Device Settings"
-msgstr ""
+msgstr "顯示及設定 IDE 裝置"
 
 #: mini-utils/gw/gw.desktop.in.h:1
-#, fuzzy
 msgid "User Listing"
-msgstr "使用者列表"
+msgstr "列出使用者"
 
 #: mini-utils/gw/gw.desktop.in.h:2
 msgid "View users on the system"
-msgstr ""
+msgstr "顯示系統中的使用者"
 
 #: mini-utils/guname/guname-capplet.desktop.in.h:1
-#, fuzzy
 msgid "Show various system information"
-msgstr "系統資訊"
+msgstr "顯示各種系統資訊"
 
 #: mini-utils/guname/guname.desktop.in.h:1
-#, fuzzy
 msgid "System Info"
 msgstr "系統資訊"
 
 #: mini-utils/guname/guname.desktop.in.h:2
 msgid "Technical information about this computer"
-msgstr ""
+msgstr "關於此電腦的資訊"
 
 #: mini-utils/gshutdown/gshutdown.desktop.in.h:1
-#, fuzzy
 msgid "Shut Down or Reboot"
-msgstr "關閉或重新啟動"
+msgstr "關閉或重新啟動電腦"
 
 #: mini-utils/gshutdown/gshutdown.desktop.in.h:2
 msgid "Turn off or reset the computer"
-msgstr ""
+msgstr "關閉或重新啟動電腦"
 
 #: mini-utils/grun/grun.desktop.in.h:1
 msgid "Ask for a command to execute"
-msgstr ""
+msgstr "詢問準備執行的指令"
 
 #: mini-utils/grun/grun.desktop.in.h:2
-#, fuzzy
 msgid "Run A Command..."
-msgstr "指令"
+msgstr "執行指令..."
 
 #: mini-utils/gpenguin/gpenguin.desktop.in.h:1
 msgid "GNOME Penguin"
-msgstr ""
+msgstr "GNOME 企鵝"
 
 #: mini-utils/gpenguin/gpenguin.desktop.in.h:2
 msgid "Let a cute pinguin chase your pointer"
@@ -4902,144 +4869,85 @@ msgstr ""
 
 #: mini-utils/gnome-run/gnome-run.desktop.in.h:1
 msgid "Prompts the user for a program to run"
-msgstr ""
+msgstr "向使用者詢問準備執行的程式"
 
 #: mini-utils/gnome-run/gnome-run.desktop.in.h:2
-#, fuzzy
 msgid "Run program..."
-msgstr "離開程式"
+msgstr "執行程式..."
 
 #: mini-utils/gless/gless.desktop.in.h:1
 msgid "Page files as with `more' and `less'"
-msgstr ""
+msgstr "以類似‘more’及‘less’的方式逐頁顯示檔案"
 
 #: mini-utils/gfontsel/gfontsel.desktop.in.h:2
-#, fuzzy
 msgid "Select a font for pasting"
-msgstr "在啟動時選擇計劃"
+msgstr ""
 
 #: mini-utils/gcolorsel/gcolorsel.desktop.in.h:1
-#, fuzzy
 msgid "Browse available X11 colors."
-msgstr "一個瀏覽所有在 X11 下可用色彩的小工具程式."
+msgstr "瀏覽在 X11 下可用的色彩。"
 
 #: mini-utils/gcolorsel/gcolorsel.desktop.in.h:2
-#, fuzzy
 msgid "Color Browser"
-msgstr "Gnome 色彩瀏覽器"
+msgstr "色彩瀏覽器"
 
 #: meat-grinder/meat-grinder.desktop.in.h:1
-#, fuzzy
 msgid "Archive Generator"
-msgstr "GNOME 保存檔建立程式"
+msgstr "保存檔產生程式"
 
 #: meat-grinder/meat-grinder.desktop.in.h:2
-#, fuzzy
 msgid "GNOME Archive Generator aka Meat Grinder"
-msgstr "GNOME 保存檔建立程式"
+msgstr "GNOME 保存檔建立程式，即 Meat Grinder"
 
 #: logview/logview.desktop.in.h:1
 msgid "SysLog tool"
-msgstr ""
+msgstr "系統紀錄工具"
 
 #: logview/logview.desktop.in.h:2
-#, fuzzy
 msgid "System log monitor"
-msgstr "選擇要監視的紀錄檔"
+msgstr "選擇準備監察的紀錄檔"
 
 #: gtt/gtt.desktop.in.h:1
-#, fuzzy
 msgid "Time Tracker tool"
-msgstr "結束 GTimeTracker"
+msgstr "時間記錄工具"
 
 #: gtt/gtt.desktop.in.h:2
-#, fuzzy
 msgid "Time tracking tool"
-msgstr "GNOME 的時間追蹤程式"
+msgstr "時間記錄工具"
 
 #: gstripchart/gstripchart_applet.desktop.in.h:1
-#, fuzzy
 msgid "Gstripchart"
-msgstr "圖表程式"
+msgstr "Gstripchart"
 
 #: gstripchart/gstripchart_applet.desktop.in.h:2
-#, fuzzy
 msgid "Shows a stripchart"
-msgstr "圖表程式"
+msgstr ""
 
 #: gsearchtool/gsearchtool.desktop.in.h:1
 #: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-#, fuzzy
 msgid "GNOME Search Tool"
-msgstr "Gnome 搜尋工具"
+msgstr "GNOME 搜尋工具"
 
 #: gdiskfree/gdiskfree.desktop.in.h:1
-#, fuzzy
 msgid "GNOME DiskFree"
-msgstr "Gnome 磁碟空間"
+msgstr "GNOME 磁碟空間"
 
 #: gdiskfree/gdiskfree.desktop.in.h:2
 msgid "Show free space on mounted file systems using dials."
-msgstr ""
+msgstr "以測量計的方式顯示已掛載的檔案系統的空間比例。"
 
 #: gcharmap/gcharmap.desktop.in.h:1
-#, fuzzy
 msgid "GNOME Character Map"
-msgstr "Gnome 字元對應表"
+msgstr "GNOME 字元對應表"
 
 #: gcalc/gcalc.desktop.in.h:1
-#, fuzzy
 msgid "Simple Calculator"
-msgstr "Gnome 計算機"
+msgstr "簡單計算機"
 
 #: cromagnon/Cromagnon.desktop.in.h:1
 msgid "Personal cron manager"
-msgstr ""
+msgstr "個人 cron 管理程式"
 
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
-msgstr ""
-
-#~ msgid ""
-#~ "An error occured while reading the configuration file.\n"
-#~ "Shall I setup a new configuration?"
-#~ msgstr ""
-#~ "讀取設定檔時發生錯誤。\n"
-#~ "是否開始一個新的設定檔？"
-
-#, fuzzy
-#~ msgid "Could not write the configuration file!"
-#~ msgstr "無法寫入設定檔！"
-
-#~ msgid ""
-#~ "This will overwrite your current set of projects.\n"
-#~ "Do you really want to reload the configuration file?"
-#~ msgstr ""
-#~ "將要覆寫現存計劃的設定。\n"
-#~ "是否真的要重新載入設定檔？"
-
-#~ msgid "Timeout in secs:"
-#~ msgstr "逾時時限（秒）："
-
-#, fuzzy
-#~ msgid "Memo:"
-#~ msgstr "記憶體"
-
-#, fuzzy
-#~ msgid "Task Properties"
-#~ msgstr "內容"
-
-#~ msgid "Project Time today:"
-#~ msgstr "今日計劃佔用的時間："
-
-#~ msgid "Project Time ever:"
-#~ msgstr "計劃佔用的整體時間："
-
-#~ msgid "Manual..."
-#~ msgstr "使用手冊..."
-
-#~ msgid "Formatting /dev/floppy"
-#~ msgstr "格式化 /dev/floppy"
-
-#~ msgid "Formatting %s"
-#~ msgstr "格式化 %s"
+msgstr "個人的 crontab 管理程式"
