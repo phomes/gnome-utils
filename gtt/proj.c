@@ -1594,7 +1594,7 @@ gtt_task_merge_up (GttTask *tsk)
 
 	mtask = node->data;
 
-	for (node=mtask->interval_list; node; node=node->next)
+	for (node=tsk->interval_list; node; node=node->next)
 	{
 		GttInterval *ivl = node->data;
 		ivl->parent = mtask;
