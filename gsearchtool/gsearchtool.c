@@ -70,7 +70,7 @@ struct _FindOptionTemplate {
 };
 	
 static FindOptionTemplate templates[] = {
-	{ SEARCH_CONSTRAINT_TEXT, "-exec grep -c '%s' {} \\;", N_("Contains the _text"), FALSE },
+	{ SEARCH_CONSTRAINT_TEXT, "'!' -type p -exec grep -c '%s' {} \\;", N_("Contains the _text"), FALSE },
 	{ SEARCH_CONSTRAINT_SEPARATOR, NULL, NULL, TRUE },
 	{ SEARCH_CONSTRAINT_TIME_LESS, "-mtime -%d", N_("_Date modified less than (days)"), FALSE },
 	{ SEARCH_CONSTRAINT_TIME_MORE, "\\( -mtime +%d -o -mtime %d \\)", N_("Date modified more than (da_ys)"), FALSE },
@@ -199,7 +199,7 @@ setup_case_insensitive_arguments (void)
 	g_spawn_command_line_sync ("grep -i 'string' /dev/null", NULL, &cmd_stderr, NULL, NULL);
 
 	if ((cmd_stderr != NULL) && (strlen (cmd_stderr) == 0)) {
-		templates[SEARCH_CONSTRAINT_CONTAINS_THE_TEXT].option = g_strdup ("-exec grep -i -c '%s' {} \\;");
+		templates[SEARCH_CONSTRAINT_CONTAINS_THE_TEXT].option = g_strdup ("'!' -type p -exec grep -i -c '%s' {} \\;");
 	}
 	g_free (cmd_stderr);
 
@@ -321,7 +321,7 @@ build_search_command (void)
 		gboolean disable_quick_search;
 		
 		locate = g_find_program_in_path ("locate");
-		file_is_named_backslashed = backslash_backslashes (file_is_named_locale);
+		file_is_named_backslashed = backslash_special_characters (file_is_named_locale);
 		file_is_named_escaped = escape_single_quotes (file_is_named_backslashed);
 
 		search_command.file_is_named_pattern = g_strdup(file_is_named_utf8);
@@ -341,7 +341,7 @@ build_search_command (void)
 						file_is_named_escaped);
 		} 
 		else {
-			g_string_append_printf (command, "find \"%s\" '!' -type p %s '%s' -xdev -print", 
+			g_string_append_printf (command, "find \"%s\" %s '%s' -xdev -print", 
 						look_in_folder_locale, 
 						find_command_default_name_option, 
 						file_is_named_escaped);
@@ -353,11 +353,11 @@ build_search_command (void)
 		gboolean disable_mount_argument = FALSE;
 		
 		search_command.regex_matching_enabled = FALSE;
-		file_is_named_backslashed = backslash_backslashes (file_is_named_locale);
+		file_is_named_backslashed = backslash_special_characters (file_is_named_locale);
 		file_is_named_escaped = escape_single_quotes (file_is_named_backslashed);
 		search_command.file_is_named_pattern = g_strdup(file_is_named_utf8);
 		
-		g_string_append_printf (command, "find \"%s\" '!' -type p  %s", 
+		g_string_append_printf (command, "find \"%s\" %s", 
 					look_in_folder_locale,
 					setup_find_name_options (file_is_named_escaped));
 	
@@ -384,7 +384,7 @@ build_search_command (void)
 					gchar *escaped;
 					gchar *regex;
 					
-					escaped = backslash_backslashes (constraint->data.text);
+					escaped = backslash_special_characters (constraint->data.text);
 					regex = escape_single_quotes (escaped);
 					
 					if (regex != NULL) {	
@@ -400,7 +400,7 @@ build_search_command (void)
 					gchar *backslashed;
 					gchar *locale;
 					
-					backslashed = backslash_backslashes (constraint->data.text);
+					backslashed = backslash_special_characters (constraint->data.text);
 					escaped = escape_single_quotes (backslashed);
 					
 					locale = g_locale_from_utf8 (escaped, -1, NULL, NULL, NULL);
@@ -685,10 +685,14 @@ set_constraint_selected_state (gint 		constraint_id,
 			gtk_option_menu_set_history (GTK_OPTION_MENU(interface.constraint_menu), index);
 			interface.selected_constraint = (long)index;
 			gtk_widget_set_sensitive (interface.add_button, TRUE);
+			gtk_widget_set_sensitive (interface.constraint_menu, TRUE);
+			gtk_widget_set_sensitive (interface.constraint_menu_label, TRUE);
 			return;
 		}
 	}
 	gtk_widget_set_sensitive (interface.add_button, FALSE);
+	gtk_widget_set_sensitive (interface.constraint_menu, FALSE);
+	gtk_widget_set_sensitive (interface.constraint_menu_label, FALSE);
 }
 
 void
@@ -1569,7 +1573,6 @@ static GtkWidget *
 create_additional_constraint_section (void)
 {
 	GtkWidget *hbox;
-	GtkWidget *label;
 	gchar *desc;
 
 	interface.constraint = gtk_vbox_new (FALSE, 6);	
@@ -1578,13 +1581,13 @@ create_additional_constraint_section (void)
 	gtk_box_pack_end (GTK_BOX(interface.constraint), hbox, FALSE, FALSE, 0);
 
 	desc = g_strconcat (LEFT_LABEL_SPACING, _("A_vailable options:"), NULL);
-	label = gtk_label_new_with_mnemonic (desc);
+	interface.constraint_menu_label = gtk_label_new_with_mnemonic (desc);
 	g_free (desc);
 
-	gtk_box_pack_start (GTK_BOX(hbox), label, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX(hbox), interface.constraint_menu_label, FALSE, FALSE, 0);
 	
 	interface.constraint_menu = gtk_option_menu_new ();
-	gtk_label_set_mnemonic_widget (GTK_LABEL(label), GTK_WIDGET(interface.constraint_menu));
+	gtk_label_set_mnemonic_widget (GTK_LABEL(interface.constraint_menu_label), GTK_WIDGET(interface.constraint_menu));
 	gtk_option_menu_set_menu (GTK_OPTION_MENU(interface.constraint_menu), make_list_of_templates());
 	gtk_box_pack_start (GTK_BOX(hbox), interface.constraint_menu, TRUE, TRUE, 0);
 

@@ -1,3 +1,20 @@
+2004-07-13  Dennis Cranston <dennis_cranston at yahoo com>
+
+        MERGE FIXES FROM CVS HEAD.
+	Bugzilla #147410 and #147480.
+	
+	* gsearchtool.c:  Removed "'!' -type p" to list the pipes as well.  
+	Add "'!' -type p" to the contains the text searches; otherwise, we 
+	will deadlock when greping a fifo.  Rename backslash_backslashes() 
+	to backslash_special_characters().
+	
+	* gsearchtool-support.[ch]:  Rename backslash_backslashes()
+	to backslash_special_characters().  Escape '-' characters in
+	backslash_special_characters().
+	
+	* gsearchtool.[ch]:  Toggle the sensitivity of the available
+	options menu and its label.
+	
 2004-06-18  Dennis Cranston <dennis_cranston at yahoo com>
 
 	* gsearchtool-callbacks.c: (file_key_press_event_cb)
