@@ -1,3 +1,8 @@
+
+SUBDIRS = man
+
+# the stuff below is used to build the sgml sources
+
 figs = \
 	figures/gtt_mainwin.png  \
 	figures/gtt_prefswin.png
