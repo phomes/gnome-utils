@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.99\n"
-"POT-Creation-Date: 2001-10-20 06:24-0400\n"
-"PO-Revision-Date: 2001-10-20 16:52+02:00\n"
+"POT-Creation-Date: 2001-11-11 06:15-0500\n"
+"PO-Revision-Date: 2001-11-11 16:52+01:00\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Dansk/Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -954,11 +954,11 @@ msgstr "Tid brugt på dette projekt dette år."
 msgid "Title"
 msgstr "Titel"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:144
+#: gtt/ctree.c:558 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Projekttitel"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Beskrivelse"
 
@@ -1006,8 +1006,8 @@ msgstr "Færdig"
 
 #: gtt/ctree.c:609
 msgid "Percent Complete: How much of this project has been finished till now."
-msgstr "Procent færdig: Hvor meget af dette projekt er blevet færdiggjort "
-"indtil nu."
+msgstr ""
+"Procent færdig: Hvor meget af dette projekt er blevet færdiggjort indtil nu."
 
 #: gtt/ctree.c:616
 msgid "U"
@@ -1266,36 +1266,44 @@ msgstr "Vælg projekt ved opstart"
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Advarsel"
 
 #: gtt/menucmd.c:85
-msgid "Time tracking tool for GNOME"
-msgstr "Tidsforbrugsværktøj til Gnome"
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
+msgstr ""
+"GTimeTracker er en kombination af stopur, kalender, faktureringssystem for "
+"konsulenter og projektadministrator. Du kan måle mængden af tid du bruger "
+"på en opgave, tilknytte et notat til det, sette en faktureringspris, udskrive "
+"en faktura, samt følge status for andre projekter."
 
-#: gtt/menucmd.c:138
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Nyt projekt..."
 
-#: gtt/menucmd.c:220 gtt/toolbar.c:167
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Genindlæs konfigurationsfil"
 
-#: gtt/menucmd.c:221
+#: gtt/menucmd.c:225
 msgid "Do you really want to reload the configuration file?"
 msgstr "Vil du virkelig genindlæse konfigurationsfilen?"
 
-#: gtt/menucmd.c:256
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr "Filen %s eksisterer allerede, overskriv den?"
 
-#: gtt/menucmd.c:267
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr "Fil kan ikke skrives"
 
-#: gtt/menucmd.c:287
+#: gtt/menucmd.c:291
 msgid "Export Current State"
 msgstr "Eksportér nuværende tilstand"
 
@@ -2223,10 +2231,10 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Dette program er en del af Gnome-projektet. Logvisning kommer uden "
-"NOGEN SOM HELST GARANTI. Dette er frit programmel, og du er velkommen til at "
-"give det videre under betingelserne angivet i GNU General Public Licence. "
-"Logikonet er udført af Tuomas Kuosmanen (tigert)."
+"Dette program er en del af Gnome-projektet. Logvisning kommer uden NOGEN SOM "
+"HELST GARANTI. Dette er frit programmel, og du er velkommen til at give det "
+"videre under betingelserne angivet i GNU General Public Licence. Logikonet "
+"er udført af Tuomas Kuosmanen (tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
@@ -4915,3 +4923,6 @@ msgstr "Crontabredigering"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Personlig crontabredigering"
+
+#~ msgid "Time tracking tool for GNOME"
+#~ msgstr "Tidsforbrugsværktøj til Gnome"
