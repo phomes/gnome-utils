@@ -31,6 +31,7 @@
 #include "err-throw.h"
 #include "file-io.h"
 #include "plug-in.h"
+#include "prefs.h"
 #include "proj.h"
 #include "proj_p.h"
 #include "toolbar.h"

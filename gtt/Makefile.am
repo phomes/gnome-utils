@@ -17,7 +17,6 @@ gtt_SOURCES = 		\
 	menucmd.c	\
 	menus.c		\
 	menus.h		\
-	options.c	\
 	plug-in.c	\
 	prefs.c		\
 	proj.c		\

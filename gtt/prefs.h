@@ -20,6 +20,25 @@
 #ifndef __GLOBAL_PREFS_H__
 #define __GLOBAL_PREFS_H__
 
+
+extern int config_show_secs;
+extern int config_show_statusbar;
+extern int config_show_clist_titles;
+extern int config_show_subprojects;
+extern int config_show_tb_icons;
+extern int config_show_tb_texts;
+extern int config_show_tb_tips;
+extern int config_show_tb_new;
+extern int config_show_tb_file;
+extern int config_show_tb_ccp;
+extern int config_show_tb_journal;
+extern int config_show_tb_prop;
+extern int config_show_tb_timer;
+extern int config_show_tb_pref;
+extern int config_show_tb_help;
+extern int config_show_tb_exit;
+
+
 /* pop up a dialog box for setting user preferences */
 void prefs_dialog_show (void);
 

@@ -56,27 +56,6 @@ gboolean timer_is_running (void);
 extern int config_idle_timeout;
 
 
-/* options.c */
-
-void options_dialog(void);
-extern int config_show_secs;
-extern int config_show_statusbar;
-extern int config_show_clist_titles;
-extern int config_show_subprojects;
-extern int config_show_tb_icons;
-extern int config_show_tb_texts;
-extern int config_show_tb_tips;
-extern int config_show_tb_new;
-extern int config_show_tb_file;
-extern int config_show_tb_ccp;
-extern int config_show_tb_journal;
-extern int config_show_tb_prop;
-extern int config_show_tb_timer;
-extern int config_show_tb_pref;
-extern int config_show_tb_help;
-extern int config_show_tb_exit;
-
-
 /* log.c */
 
 void log_proj(GttProject *proj);

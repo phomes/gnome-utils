@@ -29,6 +29,7 @@
 #include "gtt.h"
 #include "menucmd.h"
 #include "menus.h"
+#include "prefs.h"
 #include "props-proj.h"
 #include "toolbar.h"
 #include "util.h"
