@@ -1,4 +1,4 @@
-SUBDIRS = doc glade help ghtml
+SUBDIRS = doc glade ghtml
 
 bin_PROGRAMS = gtt
 
