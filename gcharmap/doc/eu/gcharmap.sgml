@@ -1,0 +1,158 @@
+<!DOCTYPE Article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+<!ENTITY version "1.4">
+]>
+
+
+<!-- =============Document Header ============================= -->
+
+<article id="index"> <!-- please do not change the id -->
+
+ <artheader>
+  <title>GNOME karaktere-maparen eskuliburua</title>
+  <copyright><year>2000</year> <holder>Hongli Lai</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+  <!-- do not put authorname in the header except in copyright - use
+  section "authors" below -->
+
+  <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+
+  <!-- this is version of manual, not application --> <releaseinfo>GNOMEren karaktere-mapa eskuliburuaren 1.0 bertsioa duzu hau.</releaseinfo>
+
+ </artheader>
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== --> <sect1 id="intro">
+  <title>Sarrera</title>
+
+  <para><application>GNOMEren karaktere-mapa</application> zure uneko letra-tipoan erabilgarri duzun edozein karaktere hautatzea ahalbidetzen dizun programa da. <application>GNOMEren karaktere-mapa</application>rekin, zure teklatuarekin idatzi ezin diren karaktereak ere erabil ditzakezu (esaterako &quot;ASCII karaktere hedatuak&quot;, edo 127 kode baino gehiago dituzten karaktereak, adibidez, copyright ikurra). Microsoft Windows-eko <application>Karaktere-mapa</application>-ren antzekoa da. Desberdintasuna <application>Gnome-ren karaktere-mapa</application> hobea dela da ;-)</para>
+
+  <para>Zergatik idatzi nuen <application>GNOMEren karaktere-mapa</application>? Orain arte ez baitzegoen horrelako programarik Linux-entzat erabilgarri. Dokumentuak idazten ditudanean, batzuetan karaktere bereziak erabili nahi izaten dut, E-zirkunflexua, esaterako. Horretarako, irteera estandarrean letra-tipoko karaktere guztiak inprimatu (zer puntutaraino zoratu zaitezke? ;-) eta karaktereak arbelean kopiatuko dituen programa bat idatzi behar dut. Windows-eko <application>Karaktere-mapa</application> gustatzen zait, erabiltzeko erraza eta azkarra baita. Horrela, Linux-entzako neuk idatzi nuen beste bat.</para>
+
+   <note>
+    <title>Plataforma-gurutzatuko euskarria</title>
+    <para><application>GNOMEren karaktere-mapa</application> Unix-en beste plataforma batzuetan ere erabil daiteke, esaterako, FreeBSD, Solaris, etab., beti ere Gnome plataformarentzat erabilgarri badago.</para></note>
+
+  <para><application>GNOMEren karaktere-mapa</application> irekitzeko, <guimenuitem>GNOMEren karaktere-mapa</guimenuitem> hautatu <guisubmenu>Utilitateak</guimenuitem> azpimenutik <guimenu>Menu nagusia</guimenu> menuan, edo <command>gcharmap<guisubmenu> idatzi komando-lerroan.</para>
+
+  <para><application>GNOMEren karaktere-mapa</application> <filename>gnome-utils</filename> paketearen barnean dago, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. <para>Dokumentu honek <application>GNOMEren karaktere-mapa</application>ren bertsioa deskribatzen du.</application>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ --> <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>GNOMEren karaktere-maparen erabilera</title>
+
+  <!-- ========= Basic Usage =========================== --> <sect2 id="mainwin">
+   <title>Oinarrizko erabilpena</title>
+   <para><application>GNOMEren karaktere-mapa</application> aplikazioak <interface>Leiho nagusia</interface> irekiko du abiaraztean, atal honetan erakusten den moduan: <xref     linkend="mainwindow-fig">.
+
+    <!-- ==== Figure ==== --> <figure id="mainwindow-fig">
+     <title>GNOMEren karaktere-maparen leiho nagusia</title>
+     GNOMEren karaktere-maparen leiho nagusian
+
+   <para>nahi duzun testua idatzi, karaktere-botoietan klik eginez. Sagua karaktere bakoitzaren gainean jartzean, karakterea <interface>Aurreikustailea</interface> menuan azaltzen dela ohartuko zara (eskuineko kaxa beltza).  Teklatu estandarreko testua ere sar dezakezu teklatuarekin idatziz. (Agian sarreran klik egin beharko duzu kurtsorearen fokua bertan jartzeko.)  Idatzi nahi duzun karaktere bat aurkitzen ez baduzu, bere kodearen bidez zehaztu dezakezu (0 eta 255 arteko zenbaki bat) <interface>Txertatu karakterea elkarrizketa-koadroa</interface> erabiliz <guimenu>Editatu</guimenu> menuan.</para>
+
+   <para>Testua bukatu ondoren, <guibutton>Kopiatu</guibutton> botoiari egin klik testua arbelaren sarreran kopiatzeko.  Txandakatuz, <guibutton>Ebaki</guibutton> botoian egin klik testua arbelean kopiatzeko eta baita sarreratik borratzeko ere.  <guimenu>Editatu</guimenu> menuko elementuak edo menu honetako laster-teklak ere erabil ditzakezu ebaki, kopiatu eta itsasteko.</para>
+
+   <para>Testua itsasteko, lehendabizi zure testu-editorera, testu-prozesadorera edo beste nonbaitera aldatu. Gero saguaren erdiko botoia sakatu (edo ezkerreko eta eskuineko botoiak batera sakatuz emulatu) testua itsasteko.</para>
+
+   <note>
+    <title>Testua noiz ezin den itsatsi</title>
+    <para>Arbeleko testua itsasten saiatzen zarenean, baina testua azaltzen ez denean, hainbat arrazoi egon daitezke horretarako: <itemizedlist>
+
+      <listitem><para><application>GNOMEren karaktere-mapa</application> itxi duzu testua kopiatu ondoren. X ez da Microsoft Windows bezalakoa; aplikazio bat ixten baduzu, aplikazio horren bidez arbelean idatzitako informazio guztia galdu egiten da. Urrezko araua: lehendabizi testua itsatsi, gero itxi <application>Gnome-ren karaktere-mapa</application>.</para></listitem>      
+
+      <listitem><para>Zure editorean/beste nonbaiten okerreko tokian egin duzu klik! Testua editatzeko arean egin behar zenuke klik.</para></listitem>
+     
+      <listitem><para>Ohartu gabe kopiatutako testua beste testu batekin ordezkatu duzu.  X-en, testua nabarmentzen duzun bakoitzean, arbelean kopiatzen da eta itsats daiteke.  Beraz, testua <application>GNOME karaktere-mapan</application> kopiatu ondoren nabarmentzen baduzu, orain nabarmendutako testuak arbeleko testua ordezkatuko du, hau da, <application>GNOMEren karaktere-mapa</application>ko testuarekin. Itzuli <application>GNOMEren karaktere-mapa</application>ra eta testua berriro kopiatu.</para></listitem>
+     
+     </itemizedlist></para></note>
+
+  </sect2>
+
+  <!-- ========= Menus =========================== --> <sect2 id="menubar">
+   <title>Menuak</title>
+   <para><interface>Leiho nagusia</interface>-ren goialdean dagoen menu-barrak ondorengo menuak ditu:</para>
+
+   <variablelist><varlistentry><term><guimenu>Fitxategia</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><menuchoice><shortcut><keysym>Ktrl-Q</keysym></shortcut> <guimenuitem>Irten</guimenuitem></menuchoice><application> GNOMEren karaktere-mapa</application> ixten du.</para></listitem></itemizedlist></para></listitem></varlistentry>
+
+    <varlistentry><term><guimenu>Editatu</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><menuchoice><shortcut><keysym>Ktrl-X</keysym></shortcut> <guimenuitem>Ebaki</guimenuitem></menuchoice>. Testua sarreratik ebakitzen (kentzen) du eta arbelean kokatzen du.</para></listitem> <listitem><para><menuchoice><shortcut><keysym>Ktrl-C</keysym></shortcut> <guimenuitem>Kopiatu</guimenuitem></menuchoice>. Testua sarreratik kopiatzen du eta arbelean kokatzen du, jatorrizko testua sarreran uzten duelarik.</para></listitem> <listitem><para><menuchoice><shortcut><keysym>Ktrl-V</keysym></shortcut> <guimenuitem>Itsatsi</guimenuitem></menuchoice>. Arbeleko edozein testu (aurretik moztu edo kopiaturen bidez bertan kokatua) sarreran itsasten du.</para></listitem> <listitem><para><menuchoice><guimenuitem>Garbitu</guimenuitem></menuchoice>. Sarrerako testu osoa garbitzen du.</para></listitem> <listitem><para><menuchoice><guimenuitem>Hautatu dena</guimenuitem></menuchoice>. Sarrerako testu osoa hautatzen du.</para></listitem> <listitem><para><menuchoice><guimenuitem>Txertatu karakterea</guimenuitem></menuchoice><interface> Txertatu karakterea</interface> elkarrizketa-koadroa irekitzen du (ikus <xref
+          linkend="insertascii-fig"> . Horrek txertatu nahi duzun karakterearen kodea zehazten uzten dizu.</para> <figure id="insertascii-fig">
+          <title>Txertatu ASCII karaktereen elkarrizketa-koadroa</title>
+          Txertatu ASCII karaktereen elkarrizketa-koadroa
+
+    <varlistentry><term><guimenu>Ikusi</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><menuchoice><guimenuitem>Ekintzaren tresna-barra</guimenuitem></menuchoice>. Honakoa zehazten du: goiko menu-barraren azpiko eta testu-sarreraren goiko tresna-barra, ikonoan oinarritua, azaltzen den edo ez.</para></listitem> <listitem><para><menuchoice><guimenuitem>Testuaren tresna-barra</guimenuitem></menuchoice>. Honakoa zehazten du: ekintzaren tresna-barraren azpiko eta karaktere-taularen gaineko tresna-barra azaltzen den edo ez.</para></listitem> <listitem><para><menuchoice><guimenuitem>Egoera-barra</guimenuitem></menuchoice><interface> Egoera-barra</interface> leihoaren azpian erakusten den edo ez zehazten du. <interface>Egoera-barra</interface>k saguaren erakuslearen azpiko karakterea eta dagokion karaktere-kodea erakusten du.</para></listitem></itemizedlist></para></listitem></varlistentry>
+
+    <varlistentry><term><guimenu>Ezarpenak</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><guimenuitem>Karaktere-taularen letra-tipoa...</guimenuitem> karaktere-taularen letra-tipoa ezartzen du.</para></listitem>
+
+        <listitem><para><guimenuitem>Txertatu Amaieran</guimenuitem>. Honek karaktere-taulako botoi batean klik egiten duzunean, karakterea sarreraren amaieran txertatu behar den edo ez ezartzen du.</para></listitem>
+
+        <listitem><para><guimenuitem>Botoi enfokagarriak</guimenuitem>. Honek karaktere-taulako botoiak enfokagarriak diren edo ez ezartzen du. Hau erabilgarria da karaktere-taulako karaktere bat hautatu eta teklatua karaktere bat sarreran txertatzeko erabili nahi duzunean, baina sarreran klik egin gabe botoi batean klik egiten duzun bakoitzean.</para></listitem></itemizedlist>
+
+      </para></listitem></varlistentry>
+
+    <varlistentry><term><guimenu>Laguntza</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><guimenuitem>Eskuliburua</guimenuitem>. Eskuliburu hau erakusten du.</para></listitem>
+
+        <listitem><para><guimenuitem>Honi buruz</guimenuitem>. Elementu honek <application>GNOMEren karaktere-mapa</application>ri buruzko oinarrizko informazioa erakusten du, esaterako egilearen izena eta aplikazioaren bertsio-zenbakia.</para></listitem></itemizedlist>
+
+      </para></listitem></varlistentry></variablelist></sect2></sect1>
+
+
+ <!-- ============= Bugs ================================== --> <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of --> <sect1 id="bugs">
+  <title>Ezagutzen diren akats eta mugak</title>
+  <para>Badakizu zer? Akats guztiak konpondu ditut! :-)</para></sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>GNOMEren karaktere-mapa</application> Hongli Lai-ek idatzia da (<email>hongli@telekabel.nl</email>). <application>GNOMEren karaktere-mapa</application>ri buruzko informazio gehiago eduki nahi baduzu, <ulink
+   url="http://users.telekabel.nl/hongli/eng/software/gcharmap/index.html"
+   type="http">GNOMEren karaktere-maparen web orrialdera</ulink> joan.  Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink url="http://bugzilla.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsei buruzko berriak bidaltzeko argibideak <ulink    url="http://bugs.gnome.org/Reporting.html" type="http">linean</ulink> aurkituko dituzu.) GNOMEren 1.1 bertsioa edo berriagoa erabiltzen ari bazara, akatsen berri emateko <application>Akatsen berri emateko tresna</application>(<command>bug-buddy</command>) ere erabil dezakezu.Ttresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para>
+
+  <para>Eskuliburu hau Hongli Lai-ek idatzia da (<email>hongli@telekabel.nl</email>). DocBook-erako bihurketa eta aldaketak Dan Mueth-ek egin ditu (<email>dan@eazel.com</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink type="http"    url="http://developer.gnome.org/projects/gdp/">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"    url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+<para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <ulink url="gnome-help:gpl"><citetitle>GNU Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"    url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+   <address>
+    Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+   </address>
+  </para>
+
+ </sect1></article>
+
+
+
+

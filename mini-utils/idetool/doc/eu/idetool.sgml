@@ -1,0 +1,153 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+<!ENTITY version "1.2">
+]>
+
+<!-- please do not change the id -->
+
+
+<article id="index"> <!-- please do not change the id -->
+
+ <artheader>
+  <title>IDE Tool-aren eskuliburua</title>
+  <copyright><year>2000</year> <holder>Dan Mueth</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+  <!-- do not put authorname in the header except in copyright - use
+  section "authors" below -->
+
+    <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+  <!-- this is version of manual, not application --> <releaseinfo>Hau IDE Tool-aren eskuliburuaren 1.0 bertsioa da.</releaseinfo>
+
+ </artheader>
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== --> <sect1 id="intro">
+  <title>Sarrera</title>
+
+  <para><application>IDE Tool</application>-a IDE unitateen propietateak eta ezarpenak ikusteko eta doitzeko tresna da, esaterako IDE disko gogorrak eta CD-ROMak.  <application>IDE Tool</application>-ek erakusten dituen disko gogorren propietateek eredua, geometria eta cachea ere hartzen dituzte.  Unitatearen konfigurazioa kontrolatzea ahalbidetzen dizu, esaterako DMA edo IRQ maskararik gabe erabiltzen dituen.</para>
+
+
+<!--
+  <para>
+   To run <application>IDE Tool</application>, select
+   <guimenuitem></guimenuitem> from the
+   <guisubmenu>SUBMENU</guisubmenu> submenu of the <guimenu>Main
+   Menu</guimenu>, or type <command>MYGNOMEAPP</command> on the
+   command line. 
+  </para>
+-->
+
+  <para><application>IDE Tool</application> aplikazioa <filename>gnome-utils</filename> paketearen barnean dago, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek <application>IDE Tool</application> aplikazioaren &version; bertsioa deskribatzen du.</para>
+
+ </sect1>
+
+
+ <!-- ================ Viewing Information ======================= --> <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="viewing">
+  <title>Ikusi IDE gailuari buruzko informazioa</title>
+  <para><application>IDE Tool</application>-ek zure sistemako IDE gailu bakoitzarentzat interfaze-<interface>fitxa</interface> bat bistaratzen du, hemen ikusten den bezala: <xref linkend="mainwindow-fig">.
+
+    <!-- ==== Figure ==== --> <figure id="mainwindow-fig">
+     <title>IDE Tool-en leiho nagusia </title>
+     <screenshot><screeninfo>IDE Tool-en leiho nagusia</screeninfo> <graphic fileref="figures/idetool" format="png"        srccredit="muet"></graphic></screenshot></figure> <!-- ==== End of Figure ==== --></para>
+
+   <para>IDE gailu jakin baten ezarpenak ikusteko, hautatu dagokion <interface>fitxa</interface>.</para>
+
+   <note>
+    <title>IDE gailuen izenak</title>
+    <para>IDE gailuak, orokorrean, honela identifikatzen dira: <guilabel>hda</guilabel>(IDE kontrolatzaile nagusiaren maisua), <guilabel>hdb</guilabel>(IDE kontrolatzaile nagusiaren menpekoa), <guilabel>hdc</guilabel>(bigarren IDE kontrolatzailearen maisua), eta <guilabel>hdd</guilabel>(bigarren IDE kontrolatzailearen menpekoa). (Gehiago egon daitezke, izendatze-hitzarmen berdina jarrituz, bi IDE kontrolatzaile baino gehiago dituzten ordenagailuetan, nahiz eta oso arrunta ez izan.)</para></note>
+
+   <para>Gailu bakoitzean ondorengo informazioa bistaratzen da: <itemizedlist>
+
+     <listitem><para><guimenuitem>Eredua</guimenuitem> &mdash; Gailuaren eredua da.  Normalean, gailuaren fabrikatzailea eta eredu-zenbakia erakusten ditu. Disko gogorrak ez diren beste gailu guztiak, normalean, horrela etiketaturik daude (adib. <quote>TOSHIBA DVD-ROM SD-M1212</quote> edo <quote>HP CD-Writer+ 7100</quote>).</para></listitem>
+
+     <listitem><para><guimenuitem>Firmware</guimenuitem> &mdash; Gailuaren firmware-bertsioaren zenbakia da.  Pertsona gehienek ez dute jakin beharko zer firmware-bertsio erabiltzen ari diren.</para></listitem>
+
+     <listitem><para><guimenuitem>Serie-zenb.</guimenuitem> &mdash; Gailuaren serie-zenbakia da.   Garantiarako edo laguntza teknikorako erabilgarria izan daiteke.</para></listitem>
+
+     <listitem><para><guimenuitem>Geometria</guimenuitem> &mdash; (Disko gogorrentzat bakarrik.) Gailuaren zilindro, buru eta sektoreen zenbakia bistaratzen du.</para></listitem>
+
+<!-- NOTE: idetool states a different geometry from hdparm and the --> <!-- kernel at boot time. -->    
+
+     <listitem><para><guimenuitem>Cachea</guimenuitem> &mdash; Gailuak duen cache-tamaina da.</para></listitem>
+
+     <listitem><para><guimenuitem>Egoera</guimenuitem> &mdash; Energi moduaren egoera erakusten du. Egoera <guilabel>ezezaguna</guilabel>, <guilabel>Aktiboa/Inaktiboa</guilabel>, <guilabel>egonean</guilabel>, edo <guilabel>lotan</guilabel> izan daiteke.</para></listitem>
+
+     <listitem><para><guimenuitem>DMA Modua</guimenuitem> &mdash; DMA <guilabel>Gaitua</guilabel> edo <guilabel>Desgaitua</guilabel> dagoen erakusten du.</para></listitem>
+
+     <listitem><para><guimenuitem>S/I modua</guimenuitem> &mdash; S/I modua <guilabel>16-bit</guilabel> edo <guilabel>32-bit</guilabel>etan ezarria dagoen erakusten du.</para></listitem>
+
+     <listitem><para><guimenuitem>IRQ maskararik gabe</guimenuitem> &mdash; Unitatea maskararik gabe erabiltzeko baimendua dagoen edo eten egiten den erakusten du.</para></listitem>
+
+     <listitem><para><guimenuitem>Sektore anitza</guimenuitem> &mdash; Etendura bakoitzeko, unitatea informazioa sektore anitzetik bidaltzeko baimenduta dagoen erakusten du.</para></listitem>
+
+     <listitem><para><guimenuitem>Aktibatu berrabiarazi</guimenuitem> &mdash; Unitateak ezarpen batzuk mantentzen dituen erakusten du, (<guilabel>DMA modua</guilabel>, <guilabel>Sektore anitza</guilabel>, eta <guilabel>IRQ maskararik gabe</guilabel>), unitatea soft-etik berrezartzen denean.</para></listitem>
+
+    </itemizedlist></para>
+
+ </sect1>
+
+
+ <!-- ============ Configuring IDE Devices ================= --> <sect1 id="configuring">
+  <title>Konfiguratu IDE gailuak </title>
+   <para>IDEren propietate batzuk (DMA modua, IRQ maskararik gabe, eta Aktibatu berrabiarazi) <application>IDE Tool</application> erabiliz konfigura daitezke. Beste edozein propietateren ezarpena aldatzeko, bil aldiz klik egin elementuan. Horrek propietate jakin baten ezarpena txandakatuko du.</para>
+
+   <warning>
+    <title>Kontuz: Erabiltzaile adituek soilik alda ditzakete IDE ezarpenak</title>
+    <para>IDE gailuen konfigurazio okerrak funtzionamendu-arazo ugari sor ditzake sisteman. Egiaztatu konfigurazioko ezarpen bakoitzaren eta zailtasun arrunten erabilera egokia ikasi duzula.  <ulink url="man:hdparm">Eskuliburuko <command>hdparm</command></ulink> komandoari buruzko orrialdeak horri buruz gehiago ikasteko oso lagungarri izan daitezke.  Eskuliburuko orrialdeak goiko loturan klik eginez edo <command>man hdparm</command> idatziz ikus ditzakezu shell-en aginduz.</para></warning>
+
+ </sect1>
+
+
+ <!-- ============= Bugs ================================== --> <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of --> <sect1 id="bugs">
+  <title>Ezagutzen diren akats eta mugak</title>
+  <para>Hainbat propietate ezin daitezke <application>IDE Tool</application>-en bidez konfiguratu. Beraz, propietate horiek ezartzeko, <command>hdparm</command> komandoa erabili behar duzu.</para> <para><application>IDE Tool</application>-ek ez du bere burua eguneratzen ezarpenak <application>IDE Tool</application> hasi ondoren aldatzen badira, adibidez, unitatea berrezarriz edo root-ek <command>hdparm</command> komandoa erabiliz.</para></sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>IDE Tool</application> Alan Cox-ek idatzi du (<email>alan@lxorguk.ukuu.org.uk</email>).  Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink url="http://bugs.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsei buruzko berriak bidaltzeko argibideak <ulink    url="http://bugs.gnome.org/Reporting.html" type="http">linean</ulink> aurkituko dituzu.) GNOMEren 1.1 bertsioa edo berriagoa erabiltzen ari bazara, akatsen berri emateko <application>Akatsen berri emateko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Tresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para>
+
+  <para>Eskuliburu hau Dan Mueth-ek idatzi du (<email>d-mueth@uchicago.edu</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink type="http"       url="http://developer.gnome.org/projects/gdp/">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"       url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <ulink url="gnome-help:gpl"><citetitle>GNU Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"    url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+   <address>
+    Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+   </address>
+  </para></sect1></article>
+
+
+
+

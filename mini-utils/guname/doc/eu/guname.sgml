@@ -1,0 +1,146 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+        
+<!ENTITY version "1.2">
+       
+]>
+
+
+<!-- =============Document Header ============================= -->
+
+
+
+<article id="index">
+
+  <artheader> 
+    <title>Guname-ren eskuliburua</title>
+    <copyright><year>2000</year> <holder>John Fleck</holder></copyright> <!-- translators: uncomment this:         <copyright>       <year>2000</year>       <holder>ME-THE-TRANSLATOR (Latin translation)</holder>     </copyright>     --> <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+  
+
+    <releaseinfo>Hau Guname-ren eskuliburuaren 1.0 bertsioa da.</releaseinfo>
+
+ </artheader>
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== --> <sect1 id="intro">
+  <title>Sarrera</title>
+    <para><application>Guname</application>k zure sistemari buruzko oinarrizko informazio desberdina bistaratzen du.</para>
+ 
+
+  <para><application>Guname</application> exekutatzeko, hautatu <guimenuitem>Sistemari buruzko informazioa...</guimenuitem> <guisubmenu>Sistema</guisubmenu> azpimenuan <guimenu>Menu nagusian</guimenu>, edo idatzi <command>guname</command> komando-lerroan.</para>
+
+  <para><application>Guname</application> <filename>GNOME-utils</filename> paketearekin dator, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek <application>Guname</application> aplikazioaren &version; bertsioa deskribatzen du.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ --> <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Guname-ren erabilpena</title>
+ 
+ <para><application>Guname</application>k zure sistemari buruzko oinarrizko informazioa bistaratzen du.</para> Atal honek <application>Guname</application>-ren oinarrizko erabilpena azaltzen du.</para> <!-- ========= Basic Usage =========================== --> <sect2 id="mainwin">
+   <title>Oinarrizko erabilpena</title>
+   <para><application>Guname</application> aplikazioak <interface>Leiho nagusia</interface> irekiko du abiaraztean, atal honetan adierazten den bezala: <xref     linkend="mainwindow-fig">.
+
+    <!-- ==== Figure ==== --> <figure id="mainwindow-fig">
+     <title>Guname-ren leiho nagusia</title>
+     <screenshot><screeninfo>Guname-ren leiho nagusia</screeninfo> <graphic fileref="figures/gshutdown" format="png"     srccredit="John Fleck"></graphic></screenshot></figure> <!-- ==== End of Figure ==== --></para>
+
+    <para>Leiho nagusian, <application>Guname</application>-k ondorengo informazioa erakusten du: zure ordenagailuak erabiltzen duen sistema eragilearen banaketa, sistema eragilea, banaketa-bertsioa, sistema eragilearen bertsioa, sistema eragilearen edizioa, prozesadore-mota, ostalariaren izena, <application>Guname</application> deitu duen erabiltzailearen izena, X bistaratzearen izena eta sistemaren egoera: tarteko denbora (zure ordenagailua azkeneko aldiz abiarazi zenetik honako denbora), uneko erabiltzaile kopurua eta &quot;karga&quot; adierazten duten hiru zenbaki - azken  minutuan (lehen karga-zenbakia), azken bost minututan eta azken hamabost minututan zure ordenagailuan egin diren prozesuen batezbesteko kopurua.</para>
+
+  
+
+      <para>Leiho nagusiak GNOMEren proiektuko kolaboratzaileen zerrenda arakatzen duen testu-laukia erakusten du. </para>
+
+      <para>Leiho nagusiak beste ekintza batzuk egiten ahalbidetuko dizun hiru botoi dauzka:<link linkend="detailed-information">
+ <guibutton>Informazio zehatza...</guibutton></link>, <link
+      linkend="saveormail"><guibutton>Gorde informazioa fitxategi honetan...</guibutton></link>, eta<link
+      linkend="saveormail"><guibutton>Posta elektronikoari buruzko informazioa </guibutton></link>.</para>
+   
+
+  </sect2>
+
+    <sect2 id="detailed-information">
+      <title>Informazio zehatza</title>
+      <para><guilabel>Informazio zehatzaren leihoa</guilabel>k diskoaren erabilpena, memoria eta zure PUZari buruzko datuak ematen ditu.</para>
+      
+      <sect3 id="diskinfo">
+	<title>Diskoari buruzko informazioa</title>
+	
+
+	<figure id="diskinfo-fig">
+	  <title>Diskoari buruzko informazioa</title>
+	  <screenshot><screeninfo>Diskoari buruzko informazioa</screeninfo> <graphic fileref="figures/guname-diskinfo" format="png"      srccredit="John Fleck"></graphic></screenshot></figure> <para><guilabel>Diskoari buruzko informazioa</guilabel> leihoan, <application>Guname</application> aplikazioak fitxategi-sistema bakoitzean zenbat leku dagoen eta nola kokatuta dauden esango dizu.</para>
+
+	<para>Muntatutako disko-unitate eta/edo disko-partizio bakoitzarentzat lauki bat ikusiko duzu ordenagailuan. Bistaratze-barraren kokalekuak eta bere goialdean eta ezkerraldean dauden zenbakiek diskoan erabilitako eta libre dagoen espazioa eta espazio hori nori esleituta dagoen adierazten dute.</para>
+
+      <para>Lauki bakoitzaren gaineko etiketak neurtzen ari den unitate edo partizioa identifikatzen du. <filename>/dev/hda1</filename> fitxategiak, adibidez, lehen unitate gogorreko (hda) lehen partizioa neurtzen du. <filename>/dev/fd0</filename> fitxategiak, berriz, lehen disketea dela adierazten du. Beste identifikatzaile batzuk <filename>/dev/sda</filename> fitxategia eduki dezakete lehen <acronym>SCSI</acronym> unitate gogorrarentzat, eta <filename>/dev/sga</filename> lehen <acronym>SCSI</acronym> gailu generikoarentzat.</para>
+     
+      </sect3>
+
+      <sect3 id="memory-information">
+	     <title>Memoriari buruzko informazioa </title>
+	     <figure id="memoryinfo-fig">
+	  <title>Memoriari buruzko informazioa </title>
+	<screenshot><screeninfo>Memoriari buruzko informazioa</screeninfo> <graphic fileref="figures/guname-memoryinfo" format="png"    srccredit="John Fleck"></graphic></screenshot></figure> <para><guilabel>Memoriari buruzko informazioa</guilabel> leihoak zure ordenagailu-memoriaren edukiari buruzko informazioa eta nola kokatuta dagoen esango dizu, momentuan erabiltzen ari dena barne.</para>
+
+      </sect3>
+
+      <sect3 id="CPU-information">
+	     <title>PUZari buruzko informazioa</title>
+	     <figure id="cpuinfo-fig">
+	  <title>PUZari buruzko informazioa</title>
+	<screenshot><screeninfo>PUZari buruzko informazioa</screeninfo> <graphic fileref="figures/guname-cpuinfo" format="png"    srccredit="John Fleck"></graphic></screenshot></figure> <para> <guilabel>PUZari buruzko informazioa</guilabel> leihoak zure ordenagailuak duen prozesadore-mota, nork egina den, bere abiadura eta funtzionamenduari buruzko xehetasunak emango dizkizu.</para>
+
+      </sect3>
+
+      <sect3 id="saveormail">
+	<title>Gordetzeari edo postaz bidaltzeari buruzko informazioa</title>
+	<para><application>Guname</application>-ren leiho nagusiak zure informazioa gordetzeko bi aukera ematen dizkizu, gero erabiltzeko aukera edukiz.</para>
+	
+	<para><guibutton>Gorde informazioa fitxategi honetan... </guibutton> botoian klik eginez, segurtasun-leiho estandarra irekiko du, eta gorde nahi duzun fitxategiaren izena eta direktorio-kokalekua eskatuko dizu.  <application>Guname</application>-k ondoren testu-fitxategi bat gordeko du leiho nagusiko aplikazioan dagoen oinarrizko informazio guztiarekin.</para>
+
+	<para>Guname-k sistemari buruzko informazioa posta elektronikoz bidaltzeko aukera ere eskaintzen du. <guibutton>Posta elektronikoari buruzko informazioa...</guibutton> botoiak elkarrizketa-koadro bat irekiko du eta informazioa zein helbide elektronikora bidali nahi duzun eskatuko dizu.</para>
+
+      </sect3>
+
+</sect2></sect1>
+ 
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>Guname</application> Havoc Pennington-ek idatzi du (<email>hp@redhat.com</email>). Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink    url="http://bugs.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. Akatsei buruzko berriak bidaltzeko argibideak linean aurkituko dituzu helbide honetan: <ulink url="http://bugs.gnome.org/Reporting.html"      type="http">http://bugs.gnome.org/Reporting.html</ulink>. GNOMEren 1.1 bertsioa edo berriagoa erabiltzen ari bazara, akatsen berri emateko <application>Akatsen berri emateko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Tresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para>
+
+  <para>Eskuliburu hau John Fleck-ek idatzia da (<email>jfleck@inkstain.net</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink type="http"    url="http://developer.gnome.org/projects/gdp">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"    url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <ulink url="gnome-help:gpl">GNU Lizentzia Publiko Orokorra</ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"    url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+   <address>
+    Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+   </address>
+  </para></sect1></article>
+
+
+
+

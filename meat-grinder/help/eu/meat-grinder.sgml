@@ -1,0 +1,137 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+       
+<!ENTITY version "1.4.0.1"> 
+<!ENTITY date "6/16/2001"> 
+]>
+
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 1.0.4
+  Template last modified April 20, 2001
+-->
+
+
+<!-- =============Document Header ============================= -->
+
+<article id="index" lang="en"> 
+
+
+  <artheader>
+    <title>GNOMEren artxibo-sortzailearen eskuliburua</title>
+    <copyright><year>2001</year> <holder>John Fleck</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+  <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help"      url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+ 
+
+    <releaseinfo>Eskuliburu honek GNOMEren artxibo-sortzailearen &version; bertsioa deskribatzen du. Azken eguneratzea: &date;.</releaseinfo>
+
+  </artheader>
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== --> <sect1 id="intro">
+    <title>Sarrera</title>
+
+    <para><application>GNOMEren artxibo-sortzailea</application>k zintako artxibo-erregistroen (<acronym>tar</acronym>) fitxategi konprimituak egiten ditu. <acronym>tar</acronym> fitxategia fitxategien direktorio edo multzoa duen fitxategi bat da.</para>
+ 
+    <para><application>GNOMEren artxibo-sortzailea</application> exekutatzeko, hautatu <menuchoice><guisubmenu>Utilitateak</guisubmenu> <guimenuitem>Artxibo-sortzailea</guimenuitem></menuchoice> <guimenu>Menu nagusia</guimenu>n, edo idatzi <command>meat-grinder</command> komando-lerroan.</para>
+
+    <para><application>GNOMEren artxibo-sortzailea</application> <filename>gnome-utils</filename> paketearekin dator. Pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek &version; bertsioa deskribatzen du. Bertsio hori <application>GNOMEren artxibo-sortzailea</application>rena da.</para></sect1>
+
+
+ <!-- ================ Usage ================================ --> <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Oinarrizko erabilpena</title>
+    <para>Hasteko, <application>GNOMEren artxibo-sortzailea</application> aplikazioak <interface>leiho nagusia</interface> irekiko du: <xref       linkend="mainwindow-fig">. Leiho hori hasieran hutsik egongo da.
+
+      <!-- ==== Figure ==== --> <figure id="mainwindow-fig">
+	<title>GNOMEren artxibo-sortzailearen leiho nagusia</title>
+	<screenshot><screeninfo>GNOMEren artxibo-sortzailearen leiho nagusia</screeninfo> <graphic fileref="figures/meat-grinder-main" format="png"
+		     srccredit="John Fleck"></graphic></screenshot></figure> <!-- ==== End of Figure ==== --></para> <para>Artxibatu nahi dituzun fitxategi-kudeatzaileko fitxategi edo direktorioen ikonoak <application>GNOMEren artxibo-sortzaileko</application> leiho nagusira arrastatu eta jaregin. Ikono horiek leiho nagusian azalduko dira. <figure id="mainwindow-fig-full">
+	<title>GNOMEren artxibo-sortzailearen leiho nagusia</title>
+	GNOMEren artxibo-sortzailearen leiho nagusia
+
+      <note><para><application>GNOMEren artxibo-sortzaileak</application> zure fitxategi eta direktorioen kopiekin egiten du lan. Jatorrizkoak jatorrizko kokalekuan geldituko dira.</para></note></para> <para>Artxiboa sortzeko, <guimenuitem>Sortu artxiboa</guimenuitem> <guimenu>Fitxategia</guimenu> menuan aukeratu. Fitxategi estandarraren hautapen elkarrizketa-koadroa irekiko du. Artxibo berriaren fitxategia gorde nahi duzun kokalekua aukeratzeko erabili. Artxibo-fitxategiarentzat izena sartu eta egin klik <guibutton>Ados</guibutton> botoian. <application>GNOMEren artxibo-sortzailea</application>k <acronym>tar</acronym> fitxategia sortuko du <application>gzip</application>-en bidez konprimitua.
+
+      <note><para><application>GNOMEren artxibo-sortzaileak</application> ez du inongo murrizketarik ezarriko zuk aukeratutako fitxategi-izenarentzat. Aplikazio gehienak, konprimitutako artxibo-fitxategien izen konprimituak izan ezik <filename>.tar.gz</filename> luzapenaz amaituko dira.</para></note></para>
+
+    <!-- ========= Menus =========================== --> 
+
+    <sect2 id="menubar">
+
+       <!-- Describing the menubar ensures comprehensive feature
+       coverage. Nest itemizedlists inside variablelists so that each
+       menu is easily located by indexing software. Proper indentation
+       makes it easier! -->
+
+      <title>Menuak</title>
+      <para><interface>Leiho nagusia</interface>ren goialdean dagoen menu-barrak ondorengo menuak ditu:</para> <variablelist><varlistentry><term><guimenu>Fitxategia</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><menuchoice><guimenuitem>Sortu artxiboa</guimenuitem></menuchoice> &mdash; Sortu artxibo bat</para></listitem> <listitem><para><menuchoice><shortcut><keycombo><keycap>Ktrl</keycap><keycap>Q</keycap></keycombo></shortcut> <guimenuitem>Irten</guimenuitem></menuchoice> &mdash; Aukera horrek aplikazioa ixten du.</para></listitem></itemizedlist></para></listitem></varlistentry>
+	
+	<varlistentry><term><guimenu>Editatu</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><menuchoice>
+		     
+		      <guimenuitem>Kendu</guimenuitem></menuchoice> &mdash; Elementu honek nabarmendutako fitxategi edo direktorioak leiho nagusitik kentzen ditu. Jatorrizko fitxategia ez du kentzen, <application>GNOMEren artxibo-sortzailea</application>k erabiltzen duen kopia bakarrik kentzen du.</para></listitem> <listitem><para><menuchoice>
+		     
+		      <guimenuitem>Garbitu</guimenuitem></menuchoice> &mdash; Elementu honek leiho nagusiko fitxategi edo direktorio guztiak garbitzen ditu.</para></listitem> <listitem><para><menuchoice>
+		      
+		      <guimenuitem>Hautatu dena</guimenuitem></menuchoice> &mdash; Elementu honek leiho nagusiko fitxategi eta direktorio guztiak hautatzen ditu.</para></listitem></itemizedlist></para></listitem></varlistentry>
+	
+
+	
+	<varlistentry><term><guimenu>Laguntza</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><guimenuitem>Eskuliburua</guimenuitem> &mdash; Elementu honek aurrez ezarritako <application>Laguntza-arakatzailea</application> ireki eta eskuliburu hau bistaratzen du.</para></listitem>
+		
+		<listitem><para><guimenuitem>Honi buruz</guimenuitem> &mdash; Aukera honek <interface>Honi buruz</interface> elkarrizketa-koadroa irekitzen du. Koadro horrek <application>GNOMEren artxibo-sortzailea</application>ri buruzko oinarrizko informazioa erakutsiko du, esaterako egilearen izena eta aplikazioaren bertsio zenbakia.
+    	           
+	          </para></listitem></itemizedlist></para></listitem></varlistentry></variablelist></sect2></sect1>
+
+
+
+ 
+ <sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>GNOMEren artxibo-sortzailea</application> George Lebl-ek idatzia da (<email>jirka@5z.com</email>). <para>Eskuliburu hau John Fleck-ek idatzia da (<email>jfleck@inkstain.net</email>). <para>Aplikazio honi buruzko iruzkin edo iradokizunak badituzu, laguntza behar edo akatsen berri eman nahi baduzu, jarri gurekin harremanetan! Horretarako argibideak <ulink type="help"
+   url="gnome-help:gnome-feedback"><citetitle>GNOMEren akatsak eta bestelako feedbacka</citetitle></ulink> dokumentuan dituzu. Dokumentu hori <application>Nautilus</application> fitxategi-kudeatzaileko <guilabel>Laguntza</guilabel> fitxan aurkituko duzu.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:gpl"><citetitle>GNU Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia bat <citetitle>GNOME erabiltzailearen gida</citetitle>ren eranskinean daukazu.  <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"    url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+   <address>
+    Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+   </address>
+  </para></sect1></article>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[      
+<!ENTITY version "1.2">
+]>
+
+<article id="index">
+
+  <artheader> 
+    <title>Gshutdown-en eskuliburua</title>
+    <copyright><year>2000</year> <holder>Havoc Pennington, John Fleck</holder></copyright>
+
+  <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+    <releaseinfo>Hau Gshutdown-en eskuliburuaren 1.0 bertsioa da.</releaseinfo></artheader>
+
+<!-- =============Document Body ============================= -->
+
+<!-- =============Introduction ============================= --> <sect1 id="intro">
+      <title>Sarrera</title> 
+
+    <para><application>Gshutdown</application> zure ordenagailua itzaltzeko programa bat da. <filename>GNOME-Utils</filename> paketearekin dator, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek <application>Gshutdown</application> aplikazioaren &version; bertsioa deskribatzen du.</para>
+
+    <para><application>Gshutdown</application> hasieratzeko <guimenu>Menu nagusi</guimenu>ko <guisubmenu>Sistema</guisubmenu> azpimenuan <guimenuitem>Itzali eta berrabiaraz</guimenuitem> hautatu, edo komando-lerroan <command>gshutdown</command> komandoa exekutatu.</para> Gshutdown sistema-administratzaileek erabiltzeko egina dago, eta root-en autoritatearekin exekutatu behar da.</para>
+
+     </sect1>
+
+
+<!-- =============New section============================= --> 
+
+  <sect1 id="usage"> 
+    <title>Gshutdown-en erabilpena</title>
+   
+
+   
+
+      <!-- =========Subsection=========================== --> <sect2 id="mainwin">
+      <title>Oinarrizko erabilpena</title>
+      <para><application>Gshutdown</application> abiaraztean, <interface>Leiho nagusia</interface> ikusiko duzu, hemen erakusten den bezala: <xref linkend="mainshot">. <!-- ==============Figure=================================== --> <figure id="mainshot">
+	  <title>Gshutdown-en leiho nagusia</title>
+	  <screenshot><screeninfo>Gshutdown-en leiho nagusia</screeninfo> <graphic fileref="figures/gshutdown" format="png"     srccredit="John Fleck"></graphic></screenshot></figure> <!-- ==============End of Figure=================================== --></para>
+
+ <para> Hau Gnome-ren itzaltzeko leihoa da.  Zure ordenagailua desaktibatu nahi baduzu, aukeratu &quot;Itzali&quot; &quot;Berrabiarazi&quot;-ren ordez, eta sakatu &quot;Ados.&quot; Itxaron momentu bat ordenagailua prest egon arte, eta orduan desaktibatu. &quot;Sistemak alto egin du&quot; ikusten baduzu, sistema desaktibatzea segurua da.  Zure ordenagailuak Energi kudeaketa aurreratua badu, hainbat eramangarri eta mahaigain batzuren moduan, ez duzu itzali eta pizteko botoiaren beharrik izango.</para>
+
+      <para> Berrabiarazteko, aukeratu &quot;Berrabiarazi&quot;, sakatu &quot;Ados&quot; eta itxaron.</para>
+
+
+   
+    </sect2>
+
+      
+    <sect2 id="advanced">
+      <title>Ezaugarri aurreratuak</title>
+    
+
+<!-- ==============Figure=================================== --> <figure id="advance">
+	  <title>Gshutdown-en leiho aurreratua</title>
+	  <screenshot><screeninfo>Gshutdown-en leiho aurreratua</screeninfo> <graphic fileref="figures/gshutdown-advanced" format="png"
+	    srccredit="John Fleck"></graphic></screenshot></figure> <!-- ==============End of Figure=================================== -->
+
+  <para>Aurreratua fitxaren bidez, edozein exekuzio-maila alda dezakezu. </para>
+
+      <para><emphasis>Exekuzio-maila</emphasis> sistemaren software-konfigurazio bat da eta hautatutako prozesu-talde bat bakarrik edukitzea baimentzen dizu.  Exekuzio-maila bakoitzerako <application>hasieratu</application>en bidez abiarazitako prozesuak <filename>/etc/inittab file</filename> fitxategian definiturik daude. Hasieratu zortzi exekuzio-mailetako batean egon daiteke: 0-6 eta S edo s.</para>
+
+      <para>0, 1, eta 6 exekuzio-mailak erreserbatuta daude.  0 exekuzio-maila sistema gelditzeko erabiltzen da, 6 sistema berrabiarazteko eta 1 sistema erabiltzaile bakarreko modua ezartzeko.  S exekuzio-maila ez dago zuzenean erabiltzeko egina. Batez ere, exekuzio-maila 1 sartzean exekutatzen diren script-entzat zuzendua dago.</para>
+
+      <para>Exekuzio-mailei buruzko informazio gehiago eskuliburuko <ulink url="man:init"><application>hasieratu</application>ren orrialdean dago</ulink>.</para>
+
+	</sect2>
+
+    <sect2 id="preferences">
+      <title>Hobespenak</title>
+  <!-- ==============Figure=================================== --> <figure id="advancefigure">
+	  <title>Gshutdown-en hobespenen leihoa</title>
+	  <screenshot><screeninfo>Gshutdown-en hobespenen leihoa</screeninfo> <graphic fileref="figures/gshutdown-preferences" format="png" 	    srccredit="John Fleck"></graphic></screenshot></figure> <!-- ==============End of Figure=================================== -->
+ 
+
+      <para> Hobespenen elkarrizketa-koadroa ere badago, eta itzali komando-lerroa konfiguratzen ahalbidetzen dizu. Exekuzio-malei buruzko xehetasunetarako eta komando-lerroko hainbat itzaltzeko aginduren ondorioetarako, ikus zure ordenagailuaren dokumentazioa.  Gai horiei buruzko xehetasunak ez badituzu ezagutzen, Erraza fitxara joan. Aldiz, ezagutzen badituzu, Aurreratua fitxak lagundu behar lizuke.</para>
+
+    </sect2>
+
+
+  </sect1>    
+
+
+
+
+ 
+
+
+
+<!-- =============New section============================= -->
+
+  <sect1 id="authors">
+    <title>Egileak</title>
+     <para><application>Gshutdown</application> Havoc Pennington-ek idatzi du (<email>hp@redhat.com</email>). Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink url="http://bugs.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. Akatsei buruzko berriak bidaltzeko argibideak linean aurkituko dituzu helbide honetan: <ulink url="http://bugs.gnome.org/Reporting.html"      type="http">http://bugs.gnome.org/Reporting.html</ulink>. GNOMEren 1.1 bertsioa edo bertsio berriagoa baduzu, <command>bug-buddy</command> komandoa ere erabil dezakezu akatsen berri emateko.</para> <para>Eskuliburu hau John Fleck (<email>jfleck@inkstain.net</email>) eta Havoc Pennington-ek (<email>hp@redhat.com</email>) idatzi dute. GNOMEren dokumentazio-proiektuaren eskuliburuari buruzko iruzkin eta iradokizunak helbide honetara bidali: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"       url=" http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+ <para>Programa hau Havoc Pennington-ek idatzi du eta birbana dezakezu Free Software Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+
+    <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus GNU Lizentzia Publiko Orokorra.</para>
+  
+    </sect1>
+
+</article>

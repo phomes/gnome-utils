@@ -1,0 +1,101 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+<!ENTITY version "1.2">
+]>
+ 
+<article id="index">
+  <title>GNOMEren letra-tipoaren hautatzailearen eskuliburua</title>
+
+  <artheader><copyright><year>2000</year> <holder>Alexander Kirillov</holder></copyright> <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help"         url="gnome-help:fdl"><citetitle>GNU Dokumentu Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http" url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz: Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para>
+
+    </legalnotice></artheader> <sect1 id="intro">
+      <title> Sarrera</title>
+      <para><application>GNOMEren letra-tipoaren hautatzailea</application> pantailako (hau da, X Window sistemako) letra-tipoa aukeratzeko utilitate arrunta da . <application>Gnome-utils</application> paketearekin batera dator, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Eskuliburu honek <application>GNOMEren letra-tipoaren hautatzailea</application> aplikazioaren &version; bertsioa deskribatzen du.</para> <para><application>GNOMEren letra-tipoaren hautatzailea</application>, normalean, <interface>Ezarpenak</interface> edo <interface>Hobespenak</interface> elkarrizketa-koadroan aplikazio baten letra-tipoa aldatzerakoan abiarazten da. Menu nagusitik ere abiaraz daiteke <guimenuitem>Letra-tipoaren hautatzailea</guimenuitem> elementua <guimenu>Utilitateak</guimenu> azpimenuan <guimenu>Menu nagusian</guimenu> hautatuz, edo baita komando-lerroan ere <command>gfontsel</command> komandoa exekutatuz.</para> <para> Garrantzitsua da jakitea X Window sisteman letra-tipo bakoitzak atributu-kopuru bat daukala, esaterako familia (Helvetica, Times, Courier&hellip;), tamaina, lodiera, inklinazioa, etab., eta bi letra-tipo desberdintzat hartzen direla, nahiz eta propietate bakarra izan desberdina, adibidez, tamaina edo pisua:  <guilabel>Helvetica 10 puntu</guilabel>, <guilabel>Helvetica 12 puntu</guilabel>, eta <guilabel>Helvetica 10 puntu lodia</guilabel> letra-tipo desberdinak dira.  Letra-tipo bakoitzak izen bakarra dauka (ofizialki <emphasis>X Letra-tipoaren deskribapen logikoa</emphasis>, edo XLFD bezala ezagutua). Izen horrek letra-tipo guztien atributuak barneratzen ditu, eta, ezinbestez, oso luzea da. X Window sistemako letra-tipoen deskribapen zehatza, atributuak eta izenak aurki ditzakezu hemen: <xref linkend="xlfd">.</para></sect1> <sect1 id="mainwin">
+      <title>Leiho nagusia</title>
+      <para>Leiho nagusia (<guilabel>Letra-tipoa</guilabel> etiketa duena) letra-tipoa aukeratzeko leiho nagusia da. Hemen ikus daiteke: <xref linkend="mainshot">.</para> <figure id="mainshot">
+	  <title>GNOMEren letra-tipoaren hautatzailea</title>
+	  <screenshot><screeninfo> GNOMEren letra-tipoaren hautatzailea - Leiho nagusia</screeninfo> <graphic fileref="figures/mainshot" format="png"
+	    srccredit="sasha"></graphic></screenshot></figure>
+
+      <sect2 id="mainwin-basic">
+	<title>Oinarrizko erabilpena</title>
+       <para>Letra-tipoa hautatzeko, letra-tipoaren familia (adibidez, <guilabel>courier</guilabel>) ezkerreko zutabean hautatu, gero letra-tipoaren estiloa &mdash;hau da, lodiera eta inklinazioa (adibidez, <guilabel>bold italic</guilabel>), eta bukatzeko, letra-tipoaren tamaina.</para> <para><guilabel>Aurrebista</guilabel> leihoak aukeratu duzun letra-tipoaren itxura erakutsiko dizu. Lehenespenez, alfabeto latindarra erakusten du; leiho honetan nahi duzun testua idatz dezakezu, eta hautatutako letra-tipoarekin erakutsiko du.</para> <para>Hautatutako letra-tipoari buruzko informazio gehiagorako, leiho honetara joan zaitezke: <link linkend="fontinfo"><guilabel>Letra-tipoa</guilabel></link>.</para> <para>Letra-tipoaren hautatzailea aplikazio batek abiarazi badu, esaterako hobespenen elkarrizketa-koadroak, <guibutton>Ados</guibutton> eta <guibutton>Utzi</guibutton> botoiak edukiko dituzu leihoaren azpian. Hautatutako letra-tipoarekin gustora bazaude, sakatu <guibutton>Ados</guibutton> eta hautatutako letra-tipoaren izena abiarazi duen aplikaziora itzuliko da.</para> <para>Letra-tipoaren hautatzailea menutik edo komando-lerrotik hasi bada, <guibutton>Aplikatu</guibutton> eta <guibutton>Itxi</guibutton> botoiak edukiko dituzu. <guibutton>Aplikatu</guibutton> botoia sakatuz, hautatutako letra-tipoaren izen osoa (XLFD) arbelean kopiatuko du, eta horrela saguaren erdiko botoiarekin sakatuz, pantailako beste area batean itsats daiteke. <guibutton>Aplikatu</guibutton> botoia sakatuz, hautatutako letra-tipoaren izena ere erakutsiko du pantailaren goiko <guilabel>Hautapena</guilabel> eremuan.</para></sect2> <sect2 id="mainwin-fine">
+      <title> Xehetasunak</title>
+      <para> Familia-izen berdina duten letra-tipo asko badaude, letra-tipoaren sortzailea (normalean saltzailearen izena) ere azalduko da ezkerreko eremuan, adibidez: <guilabel>courier(adobe)</guilabel>, <guilabel>courier(bitstream)</guilabel>.</para> <para><guilabel>Letra-tipoaren estiloa</guilabel> eremuak letra-tipoaren lodiera eta inklinazioa baino zerbait gehiago erakusten du.  Letra-tipoaren tartea ere erakusten du. Tarteak hauek izan daitezeke: tarte bakarra (<guilabel>[M]</guilabel>), karaktere-gelaxka (<guilabel>[C]</guilabel>), edo proportzionala (ez du etiketarik). Tarte bakarreko eta karaktere-gelaxka letra-tipoetan, karaktere bakoitzak zabalera berdina du; letra-tipo proportzionalean, berriz, karaktereen zabalera desberdina da, eta normalean itxura politagoa dute.   
+
+	<warning>
+	<title>Kontuz</title> 
+
+	  <para> Tamalez, terminal-emulazioko programek (<application>xterm</application> eta <application>gnome-terminal</application> aplikazioak barne) eta hasiera batean terminal batekin lanean aritzeko diseinaturiko programek (esaterako, <application> emacs</application> editoreak) tarte bakarreko eta karaktere-gelaxka motako letra-tipoak bakarrik bistara ditzakete behar bezala.</para></warning></para> <para>Azkenik, <guilabel>Letra-tipoaren estiloa</guilabel> eremuak letra-tipo jakin batentzat erabilgarri dauden karaktere-multzo posible guztiak ere erakutsiko ditu (bat baino gehiago badago). Karaktere-multzoak letra-tipo jakin batean erabiltzen diren alfabeto-ikurrak deskribatzen ditu. Karaktere-multzo arruntena <literal>iso8859-1</literal> da. Multzo honek Ekialdeko Europako hizkuntza gehienetako hizki latindarrak, puntuazio-ikurrak, zenbakiak eta azentua duten hizkiak hartzen ditu. Informazio gehiago hemen daukazu: <xref linkend="xlfd">.</para>
+
+      <para><guilabel>Tamaina</guilabel> eremuan, letra-tipoaren tamaina batzuk izartxoz markaturik daudela konturatuko zara.  Tamaina horiek eskalatu gabeko bit-map letra-tipoak dira; normalean, beste letra-tipo mota batzuk baino itxura hobea dute (bit-map eskalagarria eta eskalatua) &mdash; ikus <xref linkend="filter">.</para>
+      
+      <para> Letra-tipoaren hautatzailearen elkarrizketa-koadroa konfigura dezakezu irizpide jakin batzuk betetzen dituzten letra-tipoak bakarrik erakusteko.  Hori 
+        <link linkend="filter"><guilabel>Iragazki</guilabel> leihoan egiten da</link>. Ondoren letra-tipo guztiak ikustea nahi duzula erabakitzen baduzu, sakatu <guibutton>Berrezarri iragazkia</guibutton> botoia leiho nagusian edo iragazki leihoan.</para>
+
+
+      </sect2></sect1> <sect1 id="fontinfo">
+      <title>Letra-tipoaren informazio-leihoa</title>
+      <para>Leiho honek hautatutako letra-tipoari buruzko informazioa erakusten du, bai eskatutako balioak eta baita momentu honetako balioak ere. Leiho nagusian zehaztu ezin diren letra-tipoaren parametro batzuen balioa (adibidez, pantaila-bereizmenarena) egiaztatu nahi baduzu, erabilgarria izan daiteke. Leiho horrek letra-tipoaren izen osoa ere erakusten du (<link
+	linkend="xlfd">XLFD</link>), eta honek ere informazio berdina dauka.</para></sect1>
+
+
+    <sect1 id="filter">
+      <title>Iragazkiaren leihoa </title>
+      <para>Leiho honetan, letra-tipoaren hautatzailea irizpide jakin batzuk betetzen dituzten letra-tipoak bakarrik erakusteko ezar dezakezu.  Ondorengo balioak zehatz ditzakezu: letra-tipoaren sortzailea (saltzailea), lodiera, karaktere-multzoa, inklinazioa, zabalera, eta tartea (ikus <xref linkend="xlfd"> letra-tipoaren parametro hauen edo beste batzuen deskribapenerako). <keysym>*</keysym> aukera dezakezu. Honek <quote>edozein balio</quote> esan nahi du; eremu berdinarentzat hainbat balio ere zehatz ditzakezu: saguaren ezkerreko botoiarekin klik egin hainbat balioren gainean (ez duzu <keycap>MAIUS</keycap> edo <keycap>KTRL</keycap> sakatuta mantendu beharrik).</para>
+
+	<figure id="filtershot">
+	  <title>Iragazki leihoa </title>
+	  <screenshot><screeninfo> GNOMEren letra-tipoaren hautatzailea - Iragazki leihoa</screeninfo> <graphic fileref="figures/filterwin" format="png" 	    srccredit="sasha"></graphic></screenshot></figure>
+
+
+
+      <para> Baimendutako letra-tipoen motak ere zehatz ditzakezu leiho honen goiko kontrol-botoiak erabiliz.  Mota posibleak honakoak dira: bitmap letra-tipoak, letra-tipo eskalagarriak eta bit-map eskalatuak. Letra-tipo arruntenak bit-mapak dira; letra-tipo eskalagarriek (TrueType eta Type 1 PostScript), normalean, aurrekoek bezain kalitate ona dute, baina X Window sistemako inplementazio guztiak ez dira haiek erabiltzeko gai.</para> <para>Izenak dioen moduan, letra-tipo eskalagarriak edozein eskalatara egoki daitezke kalitatea galdu gabe. Bit-map letra-tipoak ere eskala daitezke, kaliatea, ordea, oso txarra da. Horregatik, lehenespenez letra-tipoaren hautatzaileak ez ditu eskalatutako bit-map letra-tipoak erakusten.</para> <para>Zure iragazkia ezarri ondoren, itzul zaitezke  <link
+	linkend="mainwin"><interface>leiho nagusira</interface></link>
+	(ez sakatu <guibutton>Ados</guibutton> edo <guibutton>Aplikatu</guibutton> &mdash; <guilabel>Letra-tipoa</guilabel> fitxa soilik aukeratu). Leiho nagusiak orain zure irizpidea betetzen duten letra-tipoak bakarrik erakutsiko ditu.  Honetaz gogoratzeko, leiho nagusiak <guilabel>Iragazkia aplikatuta</guilabel> erakutsiko dizu.</para> <para>Lehenetsitako iragazkira itzultzeko (hau da, letra-tipo posible guztiak erakusteko, eskalatutako bit-mapak izan ezin), sakatu <guibutton>Berrezarri iragazkia</guibutton> <interface>Iragazkiaren leihoan</interface> edo <interface>leiho nagusian</interface>.</para></sect1> <sect1 id="xlfd">
+      <title> Letra-tipoaren atributuak X Window sisteman eta XLFDn</title>
+      <para>Lehen esan bezala, X Window sistemako letra-tipo bakoitzak atributu-kopuru bat eta izen osoa dauka, X Letra-tipoaren Deskribapen Logikoa ere deitua (XLFD). Honek atributu horiek guztiak zerrendatzen ditu eta, beraz, nahiko luzea da. Letra-tipoaren ohiko izenak honako itxura du <programlisting>-adobe-courier-medium-r-normal--12-120-75-75-m-70-iso8859-1</programlisting></para> <para>Izena 14 eremuz osatua dago eta letra-tipoaren 14 parametruren balioak erakusten ditu marratxoz bereizita.</para> <para>Izen horrek letra-tipoaren informazio osoa ematea gehiegizkoa da, batez ere parametro horiek guztiak erabilgarriak ez direnean. Gauzak errazteko, <keysym>*</keysym> komodina erabil dezakezu letra-tipoaren izenean; adibidez, aurreko letra-tipoa modu honetan adieraz daiteke: <programlisting>-adobe-courier-medium-r-*-*-12-*-*-*-*-*-*-*</programlisting> Ohi den bezala, <keysym>*</keysym> komodinak edozein balio ordezkatzen du; izen horrekin bat datozen letra-tipo ugari badaude, sistemak lehenengoa hartuko du.  Aurreko adibidean, ziur asko izen horrekin bat datorren letra-tipo bakarra egongo da, izen hori ez baita anbiguoa.</para> <para>Jarraian, erabilgarri dauden letra-tipoen 14 parametro horiek erakusten dizkizugu: <itemizedlist mark="bull"><listitem><para><guilabel>sortzailea</guilabel> &mdash; letra-tipoaren sortzailea, letra-tipoa sortzen duen enpresa edo pertsona (gure adibidean, <literal>adobe</literal>)</para></listitem>
+
+	  <listitem><para> <guilabel>familia</guilabel> &mdash; letra-tipoaren familia, letra-tipoaren ezizen ezaguna (gure adibidean, <literal>courier</literal>)</para></listitem>
+
+	  <listitem><para><guilabel>lodiera</guilabel> &mdash; letra-tipoaren lodiera (gure adibidean, <literal>medium</literal>). Erabil daitezkeen balioak: lodia, tartekoa, etab.</para></listitem>
+
+	  <listitem><para> <guilabel>inklinazioa</guilabel> &mdash; letra-tipoaren inklinazioa (gure adibidean, <literal>(r)oman</literal>, hau da, inklinaziorik gabe). Erabil daitezkeen balioak: (i)talics, (o)blique, (r)roman, etab.</para></listitem>
+
+	  <listitem><para> <guilabel>pixel-tamaina</guilabel> &mdash; karaktere batean bertikalean dauden pixelen kopurua ( gure adibidean, 12) </para></listitem>
+
+	  <listitem><para> <guilabel>puntu-tamaina</guilabel> &mdash; letra-tipoaren gutxi gorabeherako puntu-tamaina, puntuaren hamarrekotan neurtuta. Goiko adibidean, puntuaren tamaina 120 da, hau da, 12 puntu. Puntu bat hazbete baten 1/72ren berdina da, eta hori idazkera-ezarpen ingeles eta amerikarrean hitzarmen arrunta da.  </para></listitem>
+
+	  <listitem><para><guilabel>bereizmen</guilabel> horizontalaren eta bertikalaren neurria: puntu/hazbeteko  &mdash; goiko adibidean, biak 75 dpi dira.</para> <para>Kontuan hartu puntu-tamaina, pixel-tamaina eta bereizmen bertikala elkarrekin loturik daudela: 75dpi-ko bereizmena duten letra-tipoetan, puntu-tamaina gutxi gorabehera (pixel-tamaina)*10 da; 100dpi-ko bereizmena dutenetan, berriz, (pixel-tamaina)*7 da.</para></listitem>
+
+	  <listitem><para> <guilabel>tartea</guilabel> &mdash; letra-tipoko karaktere-tamainaren aldakuntza deskribatzen du. Baimendutako balioak hauek dira tarte bakarrekoak (m), karaktere-gelaxka tartedunak (c) (bi tarte horietan karaktere guztiek zabalera berdina dute) eta proportzionalak (karaktereek tamaina desberdinak dituzte). Letra-tipo proportzionalak, orokorrean, politagoak dira.</para></listitem>
+
+	  <listitem><para> karaktere-multzoaren <guilabel>erregistroa</guilabel> eta <guilabel>kodeatzea</guilabel> &mdash; bi parametro horiek, normalean <guilabel>karaktere-multzo</guilabel> edo <guilabel>charset</guilabel> laburduraz deituak, letra-tipoak zer ikur (edo alfabeto) mota deskribatzen dituen adierazten dute. Hainbat charset egon daitezke. Ezagunenek hauek dituzte: <itemizedlist><listitem><para><emphasis>iso8859-1</emphasis>, Latin 1 bezala ere ezagutua &mdash; karaktere-multzo honek teklatuan dauden ikur guztiak ditu, hau da, hizki latindarrak, puntuazio-markak, zenbakiak, ikurrak, esaterako @ edo $. Ikur berezi batzuk ere baditu, adibidez, copyright ikurra, eta azentua duten hizki-kopuru bat, eta horrela, ekialdeko Europako hizkuntza gehienak hartzen ditu (zehazki afrikaansa, euskara, katalana, daniera, nederlandera, ingelesa, faeroera, finlandiera, frantsesa, galiziera, alemana, islandiera, irlandera italiera, norvegiera, portugesa, eskoziera, gaztelera, eta suediera).</para></listitem> <listitem><para><emphasis>iso8859-7</emphasis> &mdash; alfabeto latindarra eta grekoa barneratzen ditu</para></listitem> <listitem><para><emphasis>iso8859-8</emphasis> &mdash; alfabeto latindarra eta hebreera hartzen ditu</para></listitem> <listitem><para><emphasis>koi8-r</emphasis> &mdash; alfabeto latindarra eta zirilikoa barneratzen ditu</para></listitem> <listitem><para><emphasis>big5.eten.3.10-1</emphasis> &mdash; txinera (Big5 kodeatzea)</para></listitem>
+
+		<listitem><para> <emphasis>gb2312.1980-0</emphasis> &mdash; Txinera (GB kodeatzea)</para></listitem>
+
+	      <listitem><para><emphasis>jisx0208.1983-0</emphasis> &mdash; Japoniera</para></listitem></itemizedlist>
+
+
+	    </para></listitem></itemizedlist></para> <para>Letra-tipoaren beste atributuak (<guilabel>Ezarri zabalera</guilabel>, <guilabel>Estilo gehigarria</guilabel> eta <guilabel>Batezbesteko zabalera</guilabel>) gutxitan erabiltzen dira eta horregatik, ez dugu beraien azalpena emango.</para> <para>XLFDen zehaztapenak X Window sistemaren dokumentazio teknikoan azaltzen dira eta linean ere aurki ditzakezu helbide honetan: <ulink
+	url="ftp://ftp.x.org/pub/R6.4/xc/doc/hardcopy/XLFD" type="ftp">ftp://ftp.x.org/pub/R6.4/xc/doc/hardcopy/XLFD</ulink>; ziur asko, ez dituzu inoiz behar izango.</para>
+
+  </sect1>
+  
+  <sect1 id="authors">
+    <title>Egileak</title>
+     <para><application>GNOMEren letra-tipoaren hautatzailea</application> Andrew Veliath-ek idatzi du (<email>andrewtv@usa.net</email>) GNOME garatu duten beste hainbat lankideren laguntzaz.  Bidali zure iruzkin, iradokizun eta akatsen berri <ulink       url="http://bugs.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsen berri bidaltzeko argibideak <ulink url="http://bugs.gnome.org/Reporting.html"       type="http">linean</ulink> aurkituko dituzu.) Akatsen berri emateko, <application>Akatsen berri emateko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Tresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para> <para>Eskuliburu hau Alexander Kirillov-ek idatzi du (<email>kirillov@math.sunysb.edu</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink       type="http" url="http://developer.gnome.org/projects/gdp">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezu: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezu <ulink type="http"       url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para></sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:gpl"><citetitle>GNU Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia bat <citetitle>GNOME erabiltzailearen gida</citetitle>ren eranskinean daukazu.  <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"    url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+   <address>
+    Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+   </address>
+  </para></sect1>
+
+  
+</article>
+
+

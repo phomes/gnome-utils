@@ -1,0 +1,142 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN" [
+<!ENTITY version "1.4"> 
+]>
+
+
+<!-- =============Document Header ============================= -->
+
+
+<article id="index"><artheader> 
+    <title>GDiskFree-ren eskuliburua</title> 
+   <copyright><year>2000</year> <holder>John Fleck</holder></copyright>
+          
+     <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+    <releaseinfo>GDiskFree eskuliburuaren 1.2 bertsioa duzu hau.</releaseinfo></artheader>
+
+<!-- =============Document Body ============================= -->
+
+<!-- =============Introduction ============================= --> <sect1 id="intro">
+      <title>Sarrera</title> 
+
+    <para><application>GDiskFree</application> diskoaren erabilera zure pantailan kontrolatzeko programa da. <filename>GNOME-Utils</filename> paketearen barnean dago, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek &version; bertsioa deskribatzen du. Bertsio hori <application>GDiskFree</application> aplikazioarena da.</para>
+
+    <para><application>GDiskFree</application> <guimenuitem>GNOME DiskFree</guimenuitem> <guisubmenu>Utilitateak</guisubmenu> azpimenua <guimenu>Sistema-menua</guimenu>n hautatuz has dezakezu, edo <command>gdiskfree</command> komandoa komando-lerroan exekutatuz.</para>
+
+     </sect1>
+
+
+<!-- =============New section============================= --> 
+
+  <sect1 id="usage"> 
+    <title>GDiskFree-ren erabilpena</title>
+ 
+
+      <!-- =========Subsection=========================== --> <sect2 id="mainwin">
+      <title>Oinarrizko erabilpena</title>
+      <para><application>GDiskFree</application> hasten duzunean, programaren <interface>Leiho nagusia</interface> ikusiko duzu, atal honetan azaltzen den bezala: <xref linkend="mainshot">. <!-- ==============Figure=================================== --> <figure id="mainshot">
+	  <title>GDiskFree-ren leiho nagusia</title>
+	  GDiskFree-ren leiho nagusia
+
+      <para>Muntatutako disko-unitate eta/edo disko-partizio bakoitzarentzat dial bat ikusiko duzu ordenagailuan. Erakuslearen kokalekuak eta bere azpiko zenbakiak, diskoan erabilitako lekua adierazten dute.</para>
+
+      <para>Nahi izanez gero, <application>GDiskFree</application> aplikazioak ere disko-unitatearen tamaina erakusten du.</para>
+
+      <para>Dialaren gaineko etiketak neurtzen ari den unitate edo partizioa identifikatzen du. <filename>/dev/hda1</filename> etiketak, adibidez, lehen unitate gogorreko (hda) lehen partizioa neurtzen du. <filename>/dev/fd0</filename> etiketak lehen disketea adierazten du. Beste identifikadore batzuk <filename>/dev/sda</filename> etiketa eduki dezakete lehen <acronym>SCSI</acronym> unitate gogorrarentzat, eta <filename>/dev/sga</filename>  lehen <acronym>SCSI</acronym> gailu generikoarentzat.</para>
+     
+      <para>Lehenespenez, unitatearen muntatze-puntua (zure fitxategi-sisteman azaltzen den unitatearen direktorioa) dialaren azpian azalduko da.</para>
+  
+    </sect2>
+
+      <!-- =========Subsection=========================== --> <sect2 id="menubar">
+      <title> Menuak</title>
+      <para><interface>Leiho nagusia</interface>-ren goialdean dagoen menu-barrak ondorengo komandoak ditu:</para> <!-- =========List=========================== --> <variablelist><varlistentry> <term><guimenu>Fitxategia</guimenu></term> <listitem><para> Menu honek <menuchoice><shortcut><keysym>Ktrl-q</keysym></shortcut> komandoa dauka <guimenuitem>Irten</guimenuitem></menuchoice> aukerak hitz berak azaltzen du zein den bere funtzioa.</para></listitem></varlistentry> 
+
+	
+	<varlistentry> <term><guimenu>Ezarpenak</guimenu></term> <listitem><para>Menu honen komandoa:
+	       
+		<guimenuitem>Propietateak</guimenuitem></menuchoice> aukera honek ondorengo koadroa irekitzen du:  <link
+		  linkend="prefs"><interface>Ezarpen orokorrak</interface> elkarrizketa-koadroa</link>.</para></listitem></varlistentry> 
+
+	
+
+
+
+	<varlistentry><term><guimenu>Laguntza</guimenu></term> <listitem><para>Menu honek komando hauek ditu: <itemizedlist><listitem><para><guimenuitem>Eskuliburua</guimenuitem> &mdash; eskuliburu hau erakusten du</para></listitem>
+
+		<listitem><para><guimenuitem>Honi buruz</guimenuitem> &mdash;  <application>GDict</application>-i buruzko oinarrizko informazioa erakusten du, esaterako egilearen izena eta bertsio-zenbakia.</para></listitem></itemizedlist>
+
+	      </para></listitem></varlistentry>
+
+	</variablelist> <!-- =========End of list=========================== --></sect2>
+
+  </sect1>   
+
+ <sect1 id="prefs">
+    <title>Pertsonalizazioa</title> 
+     <para>Lehenetsitako ezarpenak aldatzeko, hautatu <guimenuitem>Propietateak</guimenuitem> komandoa <guimenu>Ezarpenak</guimenu> menuan. Horrek <interface>Ezarpen orokorrak</interface>-en elkarrizketa-koadroa abiarazten du, atal honetan erakusten den bezala: <xref       linkend="shot2">.</para> <!-- ==============Figure=================================== --> <figure id="shot2">
+	  <title><interface>Ezarpen orokorrak</interface>-en elkarrizketa koadroa</title>
+	  <screenshot><screeninfo>Propietateen elkarrizketa-koadroa</screeninfo> <graphic fileref="figures/gdiskfree-prefs" format="png"
+	    srccredit="John Fleck"></graphic></screenshot></figure> <!-- ==============End of Figure=================================== -->
+    
+<sect2 id="sync">
+      <title>Sinkronizazioa deitzen</title>
+    <para><guilabel>Sinkronizazioa deitu erabilpen-informazioaren aurretik</guilabel> kontrol-laukiak ondokoa ziurtatzen du: <application>GDiskFree</application> aplikazioak, bere bistaratzea eguneratzen denean, informazio ahalik eta eguneratuena duela. Funtzionamendu baldintza normaletan, nukleoak ez ditu beti fitxategiko datuak disketean berehala idazten, memoriaren buffer-ean gordetzen ditu eta aldizka disketean idazten ditu eragiketak azkartzeko. Koadro hau egiaztatzen duzunean, nukleoa disketeko fitxategiak GDiskFree-ren bistaratzea eguneratu aurretik eguneratzera bultzatuko duzu, informazio eguneratua ziurtatuz. Hori lortzeko performantziaren abiadura zerbait motelagoa da.</para></sect2> <sect2 id="mountpoints">
+      <title>Muntatze-puntuak</title>
+    
+  
+    <para><guilabel>Unitatearen muntatze-puntuak erakutsi</guilabel> kontrol-laukiak muntatze-puntuak bistaratzen ditu unitate bakoitzaren azpian. Hori da zure fitxategi-sistemako direktorioaren baliokidea, non disketearen edukia azaltzen den.</para></sect2>
+
+    <sect2 id="showdrivesize">
+      <title>Unitatearen tamaina erakutsi</title>
+      <para><guilabel>Unitatearen tamaina erakutsi</guilabel> koadroa egiaztatzean, <application>GDiskFree</application> disko unitatearen tamaina osoa bistaratzera bultzatzen da. </para></sect2>
+
+ <sect2 id="orientation">
+      <title>Orientazioa</title>
+    
+    <para><guilabel>Dialaren orientazioa</guilabel> <application>GDiskFree</application>-ren bistaratzearen itxura aldatzeko erabil daiteke dialak horizontalki lerrokatuz edo bertikalki pilatuz.</para></sect2> <sect2 id="updateinterval">
+      <title>Eguneratze-bitartea</title>
+    
+    <para><guilabel>Eguneratze-bitartea</guilabel> etiketak denbora segundotan zehazten du <application>GDiskFree-ren</application> eguneratzeen artean. Zenbakia aldatu saguaren ezkerreko botoiarekin barra graduatzailean klik eginez eta ezkerrera edo eskuinera mugituz. Eguneratze-bitartea barra graduatzailearen goian bistaratzen da segundotan.</para>
+
+    <warning>
+	<title>Abisua</title>
+	<para>Bitarte hori segundo batean ezartzea ez da ideia ona, zure ordenagailuak denbora eta energia dezente beharko baitu <application>GDiskFree</application> eguneratzeko benetako lana egin beharrean.</para></warning></sect2>
+
+    <sect2 id="geometry">
+      <title>Geometria</title>
+      <para><application>GDiskFree</application> komando-lerrotik abiaraztean, bere tamaina eta kokalekua kontrola ditzakezu <command>geometria</command> komando-lerroa aukeraren bidez. <command>gdiskfree --geometria 200x300+30+50</command> komandoak, adibidez, 200 pixeleko zabalera eta 300 pixeleko altuerako <application>GDiskFree</application>-ren leihoa sortuko du, goiko ezkerreko izkina horizontalki 30 pixeletan eta bertikalki 50 pixeletan kokatua zure pantailan.</para></sect2>
+
+  </sect1>
+
+
+
+
+
+  <sect1 id="authors">
+    <title>Egileak</title>
+     <para><application>GDiskFree</application> Gregory McLean-ek idatzia da (<email>gregm@comstar.net</email>). Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink url="http://bugzilla.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsei buruzko berriak bidaltzeko argibideak <ulink url="http://bugs.gnome.org/Reporting.html"      type="http">linean</ulink> aurkituko dituzu.) GNOMEren 1.1 bertsioa edo bertsio berriagoa baduzu, <command>bug-buddy</command> komandoa ere erabil dezakezu akatsen berri emateko.</para> <para>Eskuliburu hau John Fleck-ek idatzia da (<email>jfleck@inkstain.net</email>). GNOMEren dokumentazio-proiektuaren eskuliburuari buruzko iruzkin eta iradokizunak bidali helbide honetara: <email>docs@gnome.org</email>.  Iruzkinak linean ere egin ditzakezue <ulink type="http"       url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+   <para>Programa hau Gregory McLean-ek idatzi du eta birbana daiteke Free Software Foundation-ek argitaratutako <ulink url="gnome-help:gpl">GNU Lizentzia Publiko Orokorra</ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+
+    <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus GNU Lizentzia Publiko Orokorra.</para>
+
+    </sect1>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

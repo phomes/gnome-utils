@@ -1,0 +1,299 @@
+<!DOCTYPE Article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+<!ENTITY version "1.2">
+]>
+
+<article id="index"><artheader> 
+    <title>stripchart</title>
+
+    <copyright><year>2000, 2001</year> <holder>John Kodis</holder></copyright>
+
+    <!-- translators: uncomment this:
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+    -->
+
+    <legalnotice><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para>
+
+      <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+    <releaseinfo>Stripchart eskuliburuaren 1.0 bertsioa duzu hau.</releaseinfo></artheader>
+
+  <sect1 id="intro">
+    <title>Sarrera</title> 
+
+    <para>GNOMEren <application>stripchart</application> programak erabiltzaileak zehaztutako parametroen hainbat diagrama egiten ditu denboraren funtzio moduan. Bere xede nagusia sistemaren performantzia-parametroen diagrama egitea da, esaterako PUZen karga, PUZen erabilpena, sareko trafikoaren mailak eta antzerakoak. Bestelako erabilpen sinpleagoak erabiltzaile interesatuentzat ariketa moduan utzi dira.  <filename>Gnome-utils</filename> paketearekin batera dator, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek <application>stripchart</application>-en &version; bertsioa deskribatzen du.</para>
+
+    <para><application>stripchart</application> programak fitxategi bateko datuak aldizka irakurri, balio bat atera, eta balio horiek formatu batean bistaratzen ditu.  Lehenetsitako formatua bistaratze grafikoa da, stripchart grabagailuaren antzekoa.  Hortik datorkio aplikazioari, <application>stripchart</application> izena.</para>
+
+    <figure id="StripchartPlotterMainWindow">
+      <title>Stripchart marrazlearen leiho nagusia</title>
+    <screenshot><screeninfo>Stripchart marrazlearen leiho nagusia</screeninfo> <graphic fileref="figures/main" format="png" srccredit="John Kodis"></graphic></screenshot></figure>
+
+    <para>Linux-en moduko sistemetan, non parametroak /proc direktorioan dauden gizakiek irakurtzeko moduan, <application>stripchart</application> programa performantziaren kontrol-tresna bikaina da, <application>xload</application>-en antzekoa, baina aldakorragoa.</para>
+
+    <para>Performantzia-parametro estandar batzuetara mugaturik egon beharrean <application>stripchart</application> programak fitxategi edo kanalizazioan irakur daitekeen denboraren araberako edozein parametro marraz dezake.  Informazioa kanalizaziotik irakurtzeko gaitasunak bistaratze pertsonalizatuak ezartzeko metodo aldakor eta erraza eskaintzen du.</para>
+
+    <para> <application>stripchart</application> programa soil moduan eta Gnome-ren paneleko applet moduan dago eskuragarri.  Programa honela has dezakezu: <guimenuitem>Stripchart marrazlea</guimenuitem> elementua <guimenu>Menu nagusi</guimenu>ko <guisubmenu>Utilitateak</guisubmenu> azpimenuan hautatuz, <guimenuitem>Stripchart marrazlea</guimenuitem> elementua Gnome-ren paneleko <guimenu>Applet</guimenu> menuko <guisubmenu>Monitoreak</guisubmenu> azpimenuan hautatuz, edo <command>stripchart</command> edo <command>stripchart-applet</command> komandoak komando-lerroan exekutatuz.</para>
+
+    <figure id="stripchartappletmainwindow">
+      <title>Stripchart marrazlearen applet leihoa</title>
+    <screenshot><screeninfo>Stripchart marrazlearen applet leihoa</screeninfo> <graphic fileref="figures/applet" format="png" srccredit="John Kodis"></graphic></screenshot></figure>
+
+  </sect1>
+
+  <sect1 id="usage"> 
+    <title>Stripchart-en erabilpena</title>
+
+    <para> <application>stripchart</application> programa nahi diren ia parametro guztiak marrazteko erabil daitekeen arren, lehenetsitako konfigurazioak sistemako performantzia-parametroen ikuspegi erabilgarria sortuko du.   Atal honek <application>stripchart</application> programaren oinarrizko erabilpena lehenetsitako konfigurazioarekin deskribatzen du.   Aurrerago marraztutako parametroak nola pertsonaliza daitezkeen azalduko dizugu.</para>
+
+    <para><application>stripchart</application> hasterakoan, <interface>leiho nagusia</interface> ikusiko duzu, hemen erakusten den bezala: <xref linkend="main"> edo <xref linkend="applet">. <figure id="main">
+	<title>Stripchart marrazlearen leiho nagusia</title>
+	<screenshot><screeninfo>Stripchart marrazlearen leiho nagusia</screeninfo> <graphic fileref="figures/main" format="png" srccredit="John Kodis"></graphic></screenshot></figure>
+	<title>Stripchart marrazlearen applet leihoa</title>
+	<screenshot><screeninfo>Stripchart marrazlearen applet leihoa</screeninfo> <graphic fileref="figures/applet" format="png" srccredit="John Kodis"></graphic></screenshot></figure></para>
+
+    <para>Lehenetsitako konfigurazioan <application>stripchart</application> programak bi elementu nagusi dituen 200 x 50 pixeleko leihoa sortzen du &mdash; &quot;zerrenda&quot; korritzailea ezkerrean, eta &quot;arkatz&quot; serie bat eskuinean.   <application>stripchart</application> applet-a antzekoa da, baina bere tamaina paneleko tamainara egokitzen da.  Lehenetsitako konfigurazioa erabiltzean, &quot;arkatza&quot; eta &quot;zerrenda&quot; lerro batek datu hauek erakutsiko ditu kolore desberdinetan: sistemako PUZek erabilitako uneko eta azkeneko balioak urdinez, minutu bateko batezbesteko karga horiz, erabiltzen ari den swap lekuaren ehunekoa zuriz, eta sareko trafikoko sarrera- eta irteera-bolumenak gorriz eta berdez, hurrenez hurren.  PPP interfazea une honetan aktibo badago, leiho nagusiaren goiko ezkerreko izkinan argi-adierazle berde bat bistaratuko da.</para>
+
+    <para> <application>stripchart</application>en <interface>leiho nagusia</interface>n saguaren lehenengo botoiaz klik eginez <interface>zenbakizko balioa</interface>ren leihoa irekiko da.  Aurreko irudian erakutsitako leiho nagusiko <interface>zenbakizko balioa</interface>ren leihoa hemen azaltzen da: <xref     linkend="text">. <figure id="text">
+	<title>Parametroaren zenbakizko balioaren leihoa</title>
+	<screenshot><screeninfo>Parametroaren zenbakizko balioaren leihoa</screeninfo> <graphic fileref="figures/text" format="png" srccredit="John Kodis"></graphic></screenshot></figure> Leiho honek marraztutako parametro bakoitzaren izenaren lerro anitzeko testu bidezko bistaratzea, uneko balioa, eskala osoko balioa, eta eskala (lineala edo logaritmikoa) erakusten du.  Leiho hori itxi daiteke <interface>zenbakizko balioaren</interface> leihoan titulu-barrako <guibutton>Itxi</guibutton> botoian klik eginez, edo <interface>leiho nagusian</interface> bigarren aldiz klik eginez.</para>
+
+    <para><application>stripchart</application>en <interface>leiho nagusia</interface>n saguaren hirugarren botoiarekin klik eginez <guimenu>Aplikazio</guimenu> menua irekiko da elementu hauek dituelarik: <guimenuitem>Laguntza</guimenuitem>, <guimenuitem>Honi buruz</guimenuitem>, <guimenuitem>Erakutsi balioak</guimenuitem>, <guimenuitem>Editatu hobespenak</guimenuitem>, <guimenuitem>Editatu parametroak</guimenuitem>, eta <guimenuitem>Irten</guimenuitem>, hemen erakusten den bezala <xref linkend="menu">. <figure id="menu">
+	<title>Leiho nagusia pop-up menuarekin</title>
+	<screenshot><screeninfo>Leiho nagusia Pop-up menuarekin</screeninfo> <graphic fileref="figures/menu" format="png" srccredit="John Kodis"></graphic></screenshot></figure> <guimenuitem>Laguntza</guimenuitem> eta <guimenuitem>Honi buruz</guimenuitem> menu-elementuek laguntza-informazioa eta ohiko Honi buruz laukia bistaratzen dute, hurrenez hurren, eta <guimenuitem>Irten</guimenuitem> menu-elementuak <application>stripchart</application> programaren exekuzioa amaitzen du.  <guimenuitem>Erakutsi balioak</guimenuitem> menu-elementuak <interface>zenbakizko balioa</interface>ren leihoa irekiko du, goian azaldu den bezala.</para>
+
+    <para><application>stripchart</application> aplikazioaren eragiketa pertsonaliza daiteke aplikazioaren hobespenak eta marraztu diren parametroak editatuz.   <guimenuitem>Editatu hobespenak</guimenuitem> menu-elementuak aplikazioaren hobespenen Editatu leihoa bistaratzen du, hemen erakusten den bezala: <xref     linkend="prefs">.  Hobespenak leihoko ezarpenak hemen deskribatzen dira <xref linkend="preferences">. <figure id="prefs">
+	<title>Hobespenen leihoa</title>
+	<screenshot><screeninfo>Hobespenen leihoa</screeninfo> <graphic fileref="figures/prefs" format="png" srccredit="John Kodis"></graphic></screenshot></figure></para>
+
+    <para><guimenuitem>Editatu parametroak</guimenuitem> menu-elementuak honakoa bistaratzen du: ohar-koaderno bat parametro bakoitzaren xehetasunak dituen orrialdearekin, hemen erakusten den bezala: <xref linkend="param">.  Parametroak hemen erakusten den bezala edita daitezke: <xref linkend="parameters">. <figure id="param">
+	<title>Parametroen leihoa</title>
+	<screenshot><screeninfo>Parametroen leihoa</screeninfo> <graphic fileref="figures/param" format="png" srccredit="John Kodis"></graphic></screenshot></figure></para></sect1>
+
+  <sect1 id="options">
+    <title>Komando-lerroko aukerak</title>
+
+    <para>Programaren erabiltzeko modua aldatzeko erabil daitezkeen komando-lerroko hainbat kommutadore daude.   Laguntza, erabilpena, bertsioa, Gnome, Gtk eta saioaren kudeaketa aukerez gain, stripchart-ek ondorengo aukerak ditu erabilgarri:</para>
+
+    <variablelist><varlistentry><term> --geometria <replaceable>GEOMETRIA-ZEHAZTAPENA</replaceable> </term> <listitem><para><replaceable>WxH&plusmn;X&plusmn;Y</replaceable> formako X11 geometriaren zehaztapen estandarra. </para></listitem></varlistentry>
+
+      <varlistentry><term> --konfigurazio-fitxategia <replaceable>FITXATEGI-IZENA</replaceable> </term> <listitem><para>Konfigurazioari buruzko informazioa zer fitxategitan irakurri zehazten du, konfigurazio-fitxategiaren bilaketa-hurrenkera arrunta kontuan hartu gabe, hemen azaltzen den bezala: <xref linkend="files" />.  Stripchart programak kontrolatuta parametroak alda ditzakezu ordezko konfigurazio-fitxategia zehaztuz.</para></listitem></varlistentry></variablelist></sect1>
+
+  <sect1 id="preferences">
+    <title>Hobespenen ezarpenak</title>
+
+    <para>Hobespenen leihoak ezarpenak doitzeko modu bat eskaintzen du. Ezarpen horiek <application>stripchart</application> programaren eragiketa osoan dute eragina.  Aparteko kontrola eskaintzen da arkatzen eragiketarako eta diagrama nagusiko leihoaren eragiketarako.</para>
+
+    <figure id="stripchartpreferenceswindow">
+      <title>Hobespenen leihoa</title>
+    <screenshot><screeninfo>Hobespenen leihoa</screeninfo> <graphic fileref="figures/prefs" format="png" srccredit="John Kodis"></graphic></screenshot></figure>
+
+    <para>Diagramak eta arkatzek doikuntza propioak dituzte eguneratze-tarterako eta leuntze-mailarako.  Eguneratze-tarteak datu-multzo berri bat zenbateko maiztasunarekin jaso eta bistaratu behar den zehazten du.  Maiztasun hori arkatzentzat segundotik behin eta diagrama lerroentzat 5 segundotik behin lehenesten du.   Leuntze-balioak honakoa zehazten du: datuen balio gordinei zenbateko zehaztasunarekin aplikatu behar zaien pasaldi baxuko iragazkia bistaratu aurretik.   Balio horrek arkatz eta diagrama-lerroentzat 0,5ean lehenesten du.  Leuntzea zeron ezartzeak datu gordinen iragazkia kentzen du, eguneratze egokiagoa, baina nahastu xamarra ager daitekeelarik.  Leuntzea batean ezarriz, uneko balioak dauden tokian izozten ditu. Tarteko balioek marrazte-balio berria sortzen dute azken balioa eta parametroaren balio gordin berriaren arteko diferentzia hartuz. Hori leuntze-konstantearekin biderkatu eta balio hori azkeneko balioari gehitzen zaio.</para>
+
+    <para>Hobespenen leihoko diagramaren zatiak ere kontrol-laukia dauka, marken bistaratzea stripchart-en denbora-ardatzean gaitzeko edo desgaitzeko.  Marken bistaratzea gaitua dagoenean, marka nagusien eta sekundarioen arteko tarteak doi daitezke.  Lehenetsitako ezarpenek hamabi pixeleko marka sekundario bat ezartzen dute eta bost marka sekundarioko marka nagusi bat.  Diagramaren eguneratze-tartea bost segundotik behin lehenetsita dagoela, balio horiek marka sekundarioa minutuero eta marka nagusia bost minututik behin jarriko dute.</para>
+
+    <para>Hobespenen leihoko arkatz-zatiak kontrol-laukia dauka stripchart-eko arkatz-zatiaren bistaratzea gaitzeko edo desgaitzeko.  Arkatzak kontrolatzen ari diren parametroen eguneratze-ikuspegi azkarra eskaintzen du, baina mugimendu konstante horrek arreta galeraz dezake.  Doitu probatzeko.</para>
+
+    <para>&quot;Ados&quot;, &quot;Aplikatu&quot; eta &quot;Utzi&quot; botoi arruntak dituzu eragiketa hauetarako: ezarpen berriak aplikatu eta Hobespenen elkarrizketa-leihoa ixteko, ezarpen berriak Hobespenen elkarrizketa-leihoa itxi gabe aplikatzeko, eta Hobespenen elkarrizketa-leihoa une honetan lehentasuna duten ezarpenak aldatu gabe ixteko.</para>
+
+  </sect1>
+
+  <sect1 id="parameters">
+    <title>Parametroen ezarpenak </title>
+
+    <para><application>Stripchart</application>-en bistaratutako parametroak <interface>Parametro-editorea</interface> leihoa erabiliz aztertu eta edita daitezke. Nahiz eta <application>stripchart</application> programak parametro pertsonalizatuak gehitzeko potentzial handia eskaini, erabiltzaile gehienek nahikoa izango dute aurrez konfiguratutako parametroen zerrendan hautatzea.  Parametro horien gehitzea edo ezabatzea hemen azaltzen da: <xref linkend="param-quickstart">.</para>
+
+    <figure id="stripchartparameterwindow">
+      <title>Parametroen leihoa</title>
+    <screenshot><screeninfo>Parametroen leihoa</screeninfo> <graphic fileref="figures/param" format="png"        srccredit="John Kodis"></graphic></screenshot></figure>
+
+    <sect2 id="param-quickstart">
+      <title>Parametro-editorearen Quickstart gida</title>
+
+      <para>Une honetan aktibo dauden parametroak ezabatzeko: <itemizedlist>
+
+	<listitem><para>Hautatu ezabatu nahi duzun parametroa <interface>Parametro-editorea</interface>ren leihoaren behean dagoen fitxan klik eginez;</para></listitem>
+
+	<listitem><para>Hautatu <guimenu>Editatu</guimenu> menu-elementua;</para></listitem>
+
+	<listitem><para>Hautatu <guimenu>Ezabatu parametroa</guimenu> menu-elementua.</para></listitem>
+
+      </itemizedlist></para>
+
+      <para>Aurrez definitutako parametroetako bat gehitzeko: <itemizedlist>
+
+	<listitem><para>Hautatu <guimenu>Editatu</guimenu> menu-elementua;</para></listitem>
+
+	<listitem><para>Hautatu <guimenu>Gehitu parametroa aurretik</guimenu> edo <guimenu>Gehitu parametroa ondoren</guimenu> menu-elementua parametro-orrialde huts berri bat txertatzeko;</para></listitem>
+
+	<listitem><para>Hautatu aurrez definitutako parametroetako bat parametroen elementu-zerrendan orrialdeko &quot;Parametroa&quot; lerroan.   Horrela orain sortutako eta marrazten ari zaren parametroaren eremua beteko duzu.</para></listitem>
+
+      </itemizedlist></para>
+
+    </sect2>
+
+    <sect2 id="custom">
+      <title>Parametro pertsonalizatuak sortzea</title>
+
+      <para>Parametro pertsonalizatu bat modu desberdinetan sor daiteke: lehendik zegoen parametro bat editatuz, parametro berria gehituz eta editatuz, edo parametro berria gehituz eta parametro-eremua hasieratik betez.   Parametro-eremu asko hutsik utz daitezke.  Nahiz eta dokumentazio-helburuetarako parametro-izena eta deskribapena eman, agintzen duen eremu bakarra marraztu behar den balioa lortzeko erabiltzen den eremua da. Orokorrean, Ekuazio eremuak beteko du funtzio hori.  Eremu bakoitzaren xehetasunak aurrerago azaltzen dira.</para>
+
+      <variablelist>
+
+        <varlistentry><term>Parametroa</term> <listitem>
+
+	    <para>Parametroaren izen labur deskriptiboa. </para>
+
+	  </listitem></varlistentry>
+
+        <varlistentry><term>Deskribapena</term> <listitem>
+
+	    <para>Parametroaren deskribapen luzeagoa.</para>
+
+	  </listitem></varlistentry>
+
+	<varlistentry><term>Fitxategi-izena</term> <listitem>
+
+	    <para>Ekuazio-parametroak lortzeko fitxategi-izena.   Iterazio bakoitzean, fitxategi horretako lerro bat irakurtzen da.  Eredu bat ematen bada, lerroak irakurriko ditu programak eredu hori duen lerroa aurkitu arte.  Lerro hori zuriunez bereiztutako eremu-sailetan banaturik dago. Eremu bakoitza koma mugikorreko zenbaki moduan interpretatzen da.   Lehenengo balioa (edo balio bakarra) $1 ikurrarekin adierazten da, hurrengoa $2-rekin, eta horrela hurrenez hurren.  Aurreko eta uneko iterazioetan eremuetako balioen arteko desberdintasuna ~1, ~2, ... adierazten da.</para>
+
+	    <para>Fitxategi-izena &quot;|&quot; ikurrarekin hasten bada, sarrera-lerroak kanalizaziotik irakurriko dira eta ez fitxategitik. Kanalizaziotik irakurtzen diren lerroak fitxategitik irakurtzean duten modu berean prozesatuko dira, lehen azaldu den bezala.</para>
+
+	    <para>Fitxategi-izena &quot;?&quot; ikurrarekin hasten bada, fitxategiaren egoerak erabakiko du marraztu behar den balioa: -1 lehendik ez dagoen fitxategiarentzat, 0 zero-luzerako fitxategiarentzat, 1 sarbide-ordua aldaketa-ordua baino berriagoa duen fitxategiarentzat, eta 2 aldaketa-ordua sarbide-ordua baino berriagoa duen fitxategiarentzat.  Balio horiek buzoi-fitxategiaren egoera bistaratzeko erabilgarriak dira.</para>
+
+	  </listitem></varlistentry>
+
+        <varlistentry><term>Ekuazioa</term> <listitem>
+
+	    <para>Ekuazio horretatik lortzen da marraztu behar den parametroaren balioa.  Ekuazio hori ohiko eragiketa aritmetikoak erabiliz konbinaturik dauden parametroez osatua dago.</para>
+
+	    <para>Ekuazio-parametroen iturri ugari daude.</para>
+
+            <itemizedlist>
+
+	      <listitem><para>Parametroak fitxategiko lerro bat irakurriz lor daitezke.  Ekuazio-parametroak nola lortu aurreko Fitxategi-izena atalean deskribatzen da.</para></listitem>
+
+	      <listitem><para>Inkorporatutako hainbat parametro daude.  Azkeneko eta uneko iterazioaren artean igarotako denbora segundotan ~t da. Igarotako denbora $t da <application>stripchart</application> programa hasita baitzegoen.</para></listitem>
+
+	      <listitem><para>Libgtop liburutegiak hainbat parametro eskaintzen ditu.  Parametro horiek hemen deskribatzen dira: <xref linkend="libgtop">.</para></listitem>
+
+            </itemizedlist>
+
+	    <para>Ohiko eragiketa aritmetikoak &mdash; batuketa (+), kenketa (-), biderketa (*), zatiketa (/), eta ehunekoak (%) &mdash; erabilgarri daude, azpiadierazpenak elkartzeko parentesiekin eta minus unitatearekin (-) batera.   Elkarketek eta negatibo jartzeak dute lehentasun handiena; bigarren tokian biderketa, zatiketa eta ehunekoak daude; eta lehentasun gutxiena batuketak eta kenketak dute.</para>
+
+	  </listitem></varlistentry>
+
+	<varlistentry><term>Eredua</term> <listitem>
+
+	    <para>Fitxategi-izenaren eremuak lerro bat baino gehiagoko testua duen fitxategia zehazten badu, eredu-eremua ekuazio-parametroaren balioak zer lerrotik lortu nahi diren hautatzeko erabil dezakezu.  Lerroak fitxategian irakurriko dira zehaztutako eredua duen lerroa aurkitu arte, edo fitxategiaren bukaerara iritsi arte.  Eredurik ematen ez bada, fitxategiko lehen lerroa erabiliko da.</para>
+
+	  </listitem></varlistentry>
+
+        <varlistentry><term>Goiko Min</term> <term>Goiko Max</term> <term>Beheko Min</term> <term>Beheko Max</term> <listitem>
+
+	    <para>Balioarentzat erabili behar diren maximo eta minimoak diagramaren goian eta behean.</para>
+
+	  </listitem></varlistentry>
+
+        <varlistentry><term>Eskala</term> <listitem>
+
+	    <para>Parametro-balioei marraztu baino lehen egin behar zaien eskala: lineala edo logaritmikoa.</para>
+
+	  </listitem></varlistentry>
+
+        <varlistentry><term>Mota</term> <listitem>
+
+	    <para>Parametro-balioarentzat sortu behar den marrazki-mota.  Balioa modu askotan marraz daiteke: adierazle moduan, leihoaren goiko ezkerreko lauki txiki moduan; parametro-balio jarraien artean marraztutako lerro moduan; parametro-balio bakoitzaren puntu moduan; edo solido moduan, parametro-balio bakoitzaren behean sendotasunez betetako arearekin.</para>
+
+	  </listitem></varlistentry>
+
+        <varlistentry><term>Kolorea</term> <listitem>
+
+	    <para>Parametro-balioak marrazterakoan erabiliko den kolorea edo koloreak.  Adierazle-marrazle batentzat, kolore-multzo batzuk erabiltzen dira, aurrena parametro balio hauentzako: bat, plus edo minus erdia, bi, plus edo minus erdi erdia, hiru, plus edo minus erdia, eta horrela hurrenez hurren.   Lerro, puntu eta marrazki solidoentzat kolore bakarra erabiltzen da.</para>
+
+	  </listitem></varlistentry>
+
+      </variablelist>
+
+    </sect2>
+
+    <sect2 id="libgtop">
+      <title>libgtop-en balioak</title>
+
+      <para>Normalean, <application>stripchart</application> programak libgtop liburutegirako esteka edukiko du. Libgtop liburutegiak performantzia-parametroen sistema orokorrean sartzeko metodo eramangarri eta ondo estandarizatua eskaintzen du.  Metodo hori marrazteko balioak lortzeko gogokoena da.</para>
+
+      <para>Ondorengo libgtop parametroak daude erabilgarri: </para>
+
+      <itemizedlist><listitem> <para>PUZeko estatistikak &mdash; cpu_total, cpu_user, cpu_nice, cpu_sys, cpu_idle, eta cpu_freq</para> </listitem>
+
+	<listitem> <para>Memoriako estatistikak &mdash; mem_total, mem_used, mem_free, mem_shared, mem_buffer, mem_cached, mem_user, mem_locked </para> </listitem>
+
+	<listitem> <para>Swap-eko estatistikak &mdash; swap_total, swap_used, swap_free, swap_pagein, swap_pageout </para></listitem>
+
+	<listitem> <para>Jardun-denboraren estatistikak &mdash; jardun-denbora, denbora inaktiboa</para> </listitem>
+
+	<listitem> <para>Loadavg estatistikak &mdash; load_running, load_tasks, load_1m, load_5m, load_15m </para> </listitem>
+
+	<listitem> <para>Sareko estatistikak &mdash; net_pkts_in, net_pkts_out, net_pkts_total, net_bytes_in, net_bytes_out, net_bytes_total, net_errs_in, net_errs_out, net_errs_total</para> 
+
+	  <para>Kontuan hartu sareko estatistiken balioetarako ez dela libgtop liburutegia erabiltzen.  Horren ordez, zuzenean /proc/net/dev fitxategian irakurtzen dira, eta horregatik Linux-en bakarrik daude erabilgarri. </para> </listitem></itemizedlist>
+
+      <para>Horiek guztiak osoko zenbaki luze eta zeinudunak dira, jardun-denbora eta denbora inaktiboa, eta bost karga-balio izan ezik, koma mugikorreko balioak baitira. </para>
+
+    </sect2></sect1>
+
+  <sect1 id="files">
+    <title>Konfigurazio eta parametro-fitxategiak</title> 
+
+    <para><application>stripchart</application> programak bistaratzeko parametroak zehazten ditu konfigurazio-fitxategia irakurriz.  <application>stripchart</application> programak konfigurazio-fitxategia hurrenkera honetan bilatuko du: <itemizedlist>
+
+      <listitem> <para>aurrena, komando-lerroan zehaztutako fitxategia, </para> </listitem>
+
+      <listitem> <para>gero uneko direktorioan <filename>stripchart.conf</filename> izeneko fitxategia, </para> </listitem>
+
+      <listitem> <para>ondoren, erabiltzailearen etxeko direktorioan <filename>stripchart.conf</filename> izeneko fitxategia, </para> </para>
+
+      <listitem> <para>jarraian, <filename>/etc/stripchart.conf</filename> izeneko fitxategia, </para> </listitem>
+
+      <listitem> <para>eta azkenik, <replaceable>CONFDIR</replaceable> direktorioan <filename>stripchart.conf</filename> izeneko fitxategia. Direktorio hori normalean <filename       class="directory">/usr/share/stripchart/</filename> edo <filename       class="directory">/usr/local/share/stripchart/</filename> izango da.</para> </listitem>
+
+    </itemizedlist>
+
+    Konfigurazio-fitxategirik aurkitzen ez bada, programak errore-mezua erakutsi eta irten egingo da.</para>
+
+    <para><interface>Parametro-editorea</interface> leihoan bistaratzen diren aurretik gordetako parametroak<filename     class="directory"><replaceable> {prefix}/share/stripchart</replaceable></filename> direktorioko <filename>stripchart.param</filename> fitxategian irakurtzen dira.</para>
+
+  </sect1>
+
+  <sect1 id="bugs">
+    <title>Ezagutzen diren akats eta mugak</title>
+
+    <para> --geometria-aukerak kokapen negatiboko argumentuak ez ditu ondo interpretatzen. </para>
+
+    <para>Sareko trafikoaren parametroak Linux-en bakarrik daude erabilgarri.</para>
+
+  </sect1>
+
+  <sect1 id="authors">
+    <title>Egileak</title>
+
+    <para><application>Stripchart marrazlea</application> John Kodis-ek idatzi du (<email>kodis@jagunet.com</email>). Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink     url="http://bugzilla.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsei buruzko berriak bidaltzeko argibideak <ulink url="http://bugs.gnome.org/Reporting.html"     type="http">linean</ulink> aurkituko dituzu.) GNOME 1.1 edo berriagoa erabiltzen ari bazara, akatsen berri emateko <application>Akatsak biltzeko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Okerrak biltzeko tresna hori <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri, <guimenu>Menu nagusian</guimenu>.</para>
+
+    <para>Eskuliburu hau John Kodis-ek idatzi du (<email>kodis@jagunet.com</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink type="http"     url="http://www.gnome.org/gdp">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"     url="http://www.gnome.org/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+    <!-- For translations: uncomment this:
+    <para>Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>).  Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.</para>
+    --></sect1>
+
+  <sect1 id="license">
+    <title>Lizentzia</title> <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+
+    <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>.
+
+    <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia bat <citetitle>GNOME erabiltzailearen gida</citetitle>ren eranskinean daukazu.  <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"     url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+    <address>Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+    </address></para>
+
+  </sect1></article>

@@ -1,5 +1,3 @@
-SUBDIRS = man
-
 figs = \
 	figures/gtt_mainwin.png  \
 	figures/gtt_prefswin.png

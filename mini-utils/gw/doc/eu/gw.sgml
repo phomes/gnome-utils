@@ -1,0 +1,167 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+
+<!ENTITY version "1.4">
+     
+]>
+
+
+
+<!-- =============Document Header ============================= -->
+
+<article id="index">
+
+ <artheader>
+  <title>Gw-ren eskuliburua </title>
+  <copyright><year>2000</year> <holder>John Fleck</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+ 
+
+    <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+  <releaseinfo>Hau Gw-ren eskuliburuaren 1.1 bertsioa da.</releaseinfo>
+
+ </artheader>
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== --> <sect1 id="intro">
+  <title>Sarrera</title>
+
+  <para><application>Gw</application>k une honetan zure ordenagailuari konektaturik dauden erabiltzaileen zerrenda bistaratzen du, egiten ari direnari buruzko informazioa barne. Beraiekin komunikatzeko gaitasuna ere ematen dizu.</para>
+
+  <para> <application>Gw</application> exekutatzeko, hautatu <guimenuitem>Erabiltzaileen zerrenda</guimenuitem> <guisubmenu>Sistema</guisubmenu> azpimenuan <guimenu>Menu nagusian</guimenu>, edo idatzi <command>gw</command> komando-lerroan.</para>
+
+  <para><application>Gw</application> <filename>GNOME-utils</filename> paketearekin dator, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek <application>Gw</application> aplikazioaren &version; bertsioa deskribatzen du.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+
+ <sect1 id="usage">
+  <title>Gw-ren erabilpena</title>
+  <para><application>Gw</application> zure sistemaren erabiltzaileak kontrolatzeko eta beraiekin komunikatzeko erabil dezakezu.</para>
+
+  <!-- ========= Basic Usage =========================== --> <sect2 id="mainwin">
+   <title>Oinarrizko erabilpena</title>
+   <para><application>Gw</application> aplikazioa hasten duzunean, <interface>Leiho nagusia</interface> irekiko du, atal honetan adierazten den bezala: <xref     linkend="mainwindow-fig">.
+
+    <!-- ==== Figure ==== --> <figure id="mainwindow-fig">
+     <title>Gw-ren leiho nagusia</title>
+     <screenshot><screeninfo>Gw-ren leiho nagusia</screeninfo> <graphic fileref="figures/gless-main" format="png"     srccredit="John Fleck"></graphic></screenshot></figure> <!-- ==== End of Figure ==== --></para>
+
+      <para>Abiaraztean, <application>Gw</application>-k erabiltzaile guztien zerrenda bistaratzen du.</para>
+
+      <para>Datuak eguneratzeko, klik egin <guibutton>Eguneratu informazioa</guibutton> botoian.</para>
+
+      <para>Bistaratutako datuen artean honakoak daude: <itemizedlist>
+
+	  <listitem><para><guilabel>ERABILTZAILEA</guilabel> &mdash; erabiltzailearen saioa hasteko izena.</para></listitem>
+
+          <listitem><para><guilabel>TTY</guilabel> &mdash; erabiltzailea konektaturik dagoen terminala.</para></listitem>
+
+          <listitem><para><guilabel>NONDIK</guilabel> &mdash; Erabiltzailea konektaturik dagoen urruneko ostalaria, edo X bistaratzearen terminala, erabiltzailea lokala bada.</para></listitem> <listitem><para><guilabel>SAIO-HASIERA@</guilabel> &mdash; Erabiltzaileak saioa hasi duen ordua.</para></listitem>
+
+          <listitem><para><guilabel>INAKTIBO</guilabel> &mdash; Saio-hasiera horretan PUZa inaktibo egon den denbora.</para></listitem>
+
+          <listitem><para><guilabel>JCPU</guilabel> &mdash; Saio-hasiera horrekin erlazionaturiko prozesu guztietan PUZak erabilitako denbora.</para></listitem> <listitem><para><guilabel>PCPU</guilabel> &mdash; PUZak <guilabel>ZER</guilabel> eremuan zerrendatutako prozesuetan erabilitako denbora.</para></listitem>
+
+           <listitem><para><guilabel>ZER</guilabel> &mdash; Erabiltzailea une honetan exekutatzen ari den komandoa.</para></listitem>
+
+	</itemizedlist>
+
+</para>
+
+  
+ 
+   <tip>
+    <title>Eguneratu</title>
+    <para><application>Gw</application>-k ez ditu bere estatistikak automatikoki eguneratzen. <guibutton>Eguneratu informazioa</guibutton> botoian klik egin behar duzu programan azken orduko informazioa edukitzeko.</para></tip>
+
+  </sect2>
+
+
+  
+
+  <!-- ========= Menus =========================== --> <sect2 id="menubar">
+   <title>Menuak</title>
+   <para><interface>Leiho nagusia</interface>ren goialdean dagoen menu-barrak ondorengo menuak ditu:</para>
+
+   <variablelist><varlistentry><term><guimenu>Fitxategia</guimenu></term> <listitem><para>Menu honen edukia: <menuchoice><shortcut><keysym>Ktrl-Q</keysym></shortcut> <guimenuitem>Irten</guimenuitem></menuchoice>, programatik irteten da.</para></listitem></varlistentry>
+
+    <varlistentry><term><guimenu>Ezarpenak</guimenu></term> <listitem><para>Menu honen edukia:
+     
+<link linkend="prefs">
+       <menuchoice><shortcut><keysym>Ktrl-P</keysym></shortcut> <guimenuitem>Hobespenak</guimenuitem></menuchoice></link>
+           beste komando batzuk exekutatzeko menu bat irekitzea ahalbidetzen dizun elkarrizketa-koadroa irekitzen du, esaterako <application>hitz egin</application>, <application>Gw</application>-ren interfazearen bidez, ordenagailuari konektaturik dauden beste erabiltzaileekin komunikatzeko. <application>Hitz egin</application> aplikazioari buruzko informazio gehiagorako, ikus eskuliburuko <ulink type="man"       url="man:talk">Hitz egin orrialdea</ulink>.</para></listitem>
+       
+    </varlistentry>
+
+   
+
+    <varlistentry><term><guimenu>Laguntza</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><guimenuitem>Laguntza</guimenuitem> &mdash; eskuliburu hau erakusten du.</para></listitem>
+
+        <listitem><para><guimenuitem>Honi buruz</guimenuitem> &mdash; <application>Gw</application>-ri buruzko oinarrizko informazioa erakusten du, esaterako egilearen izena eta aplikazioaren bertsio-zenbakia.</para></listitem></itemizedlist>
+
+      </para></listitem></varlistentry></variablelist></sect2></sect1>
+
+
+ <!-- ============= Customization ============================= --> <sect1 id="prefs">
+  <title>Pertsonalizazioa</title>
+    <para><application>Gw</application>-ren leiho nagusian saguaren eskuineko botoiarekin klik eginez, pop-up komando-menua ireki dezakezu beste erabiltzaileekin komunikatzeko. Baina hori egin aurretik, programaren hobespenen ezarpenak konfiguratu behar dituzu.</para>
+
+    <para>Horretarako, hautatu <guimenuitem>Hobespenak&hellip;</guimenuitem> <guimenu>Ezarpenak</guimenu> menuan. Horrek <interface>Menu-elementuak</interface> elkarrizketa-koadroa irekitzen du, atal honetan erakusten den bezala: <xref    linkend="preferences-fig">.</para>
+
+  <figure id="preferences-fig">
+   <title>Hobespenen elkarrizketa-koadroa</title>
+   <screenshot><screeninfo>Hobespenen elkarrizketa-koadroa</screeninfo> <graphic fileref="figures/gw-menuitems" format="png"      srccredit="John Fleck"></graphic></screenshot></figure>
+
+    <para><guilabel>Menu-elementuak</guilabel> leihoko leiho nagusiaren panelak, saguaren eskuineko botoiarekin klik eginez irekitzen den menuan ikusiko duzun komandoen zerrenda dauka.  Panela hutsik badago, klik egin <guibutton>Gehitu lehenetsi batzuk </guibutton> botoian, egoera honetarako erabilgarri diren oinarrizko komandoen zerrenda betetzeko.</para>
+
+    <para>Komando bakoitzak <guilabel>Izena</guilabel> eta <guilabel>Komando-lerroa</guilabel> eremuak dauzka. <guilabel>Izena</guilabel> <application>GW</application>ren leiho nagusian saguaren eskuineko botoiarekin klik egitean irekitzen den menuan agertuko den hitza da. <guilabel>Komando-lerroa</guilabel> eremua exekutatuko den komandoa da.</para>
+
+    <para>Adibidez, aurrez definitutako <command>hitz egin</command> komandoa, <guibutton>Gehitu lehenetsi batzuk</guibutton> botoian klik egitean barnean dagoen lehenetsietako bat, honela aritzen da:  <application>Gw</application>-ren leiho nagusian, <application>hitz egin</application> nahi duzun pertsonaren izenean klik egin, gero <application>Gw</application>-ren leiho nagusian saguaren eskuineko botoiarekin klik egin eta <menuchoice><guimenuitem>hitz egin</guimenuitem></menuchoice> menu-elementuan klik egin. <application>Gw</application>-k <command>hitz egin</command> komandoa exekutatuko du, eta horrela <application>xterm</application> ireki eta hizketa saioa hasiko du erabiltzailearekin eta leiho nagusian hautatu duzun terminalarekin.</para>
+
+    <para>Komando bat gehitzeko, klik egin <guibutton>gehitu</guibutton> botoian eta idatzi komandoaren izena eta komandoa leihoaren goiko testu-laukietan. Komando bat ezabatzeko, klik egin komando horren gainean, eta gero <guibutton>ezabatu</guibutton> botoian.</para>
+
+   
+    <para>Nahi dituzun aldaketak egindakoan, klik egin <guibutton>Aplikatu</guibutton> botoian aldaketak aplikatzeko, edo <guibutton>Ados</guibutton> botoian aldaketak aplikatu eta <interface>Propietateak</interface> elkarrizketa ixteko. Aldaketak bertan behera utzi eta aurreko balioetara itzultzeko, klik egin <guibutton>Itxi</guibutton> botoian.</para>
+
+  </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>Gw</application> Havoc Pennington-ek idatzi du (<email>hp@redhat.com</email>). Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink    url="http://bugzilla.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsen berri bidaltzeko argibideak <ulink url="http://bugs.gnome.org/Reporting.html" type="http">linean</ulink> aurkituko dituzu.) GNOMEren 1.1 bertsioa edo berriagoa erabiltzen ari bazara, akatsen berri emateko <application>Akatsen berri emateko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Tresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para>
+
+  <para>Eskuliburu hau John Fleck-ek idatzia da (<email>jfleck@inkstain.net</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink type="http"    url="http://developer.gnome.org/projects/gdp">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"    url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+ 
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <ulink url="gnome-help:gpl">GNU Lizentzia Publiko Orokorra</ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"    url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+   <address>
+    Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+   </address>
+  </para></sect1></article>
+
+
+
+

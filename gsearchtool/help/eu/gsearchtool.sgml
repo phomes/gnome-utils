@@ -1,0 +1,128 @@
+<!DOCTYPE article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+]>
+
+<article id="index">
+
+
+  <artheader> 
+  <title>GNOMEren bilaketa-tresnaren eskuliburua </title>
+    <copyright><year>2000</year> <holder>Alexander Kirillov</holder></copyright> <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help"         url="gnome-help:fdl"><citetitle>GNU Dokumentu Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http" url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz: Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+
+   <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice></artheader>
+
+  <sect1 id="intro">
+    <title>Sarrera</title> 
+
+    <para><application>GNOMEren bilaketa-tresna</application> zure sisteman fitxategiak bilatzeko utilitatea da. Hainbat bilaketa-mota egin ditzake: izenaren arabera, aldaketa-dataren arabera, fitxategien edukien arabera, etab. <filename>gnome-utils</filename> paketearekin dator, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek <application>GNOMEren bilaketa-tresnaren</application> 1.2 bertsioa deskribatzen du.</para>
+
+    <para> Bilaketa-tresna <guimenuitem>GNOMEren bilaketa-tresna</guimenuitem> <guimenu>Utilitateak</guimenu> azpimenutik <guimenu>Menu nagusia</guimenu>n hautatuz has daiteke, edo <command>gsearchtool</command> komandoa komando-lerroan exekutatuz.</para> 
+
+    <para>Kontuan eduki <application>GNOMEren bilaketa-tresna</application> UNIXen <command>bilatu</command>, <command>grep</command>, eta <command>kokatu</command> komandoen interfazea besterik dela. Komando horiek oso indartsuak dira, baina ez oso errazak erabiltzaile berri batentzat. <application>GNOMEren bilaketa-tresna</application>k erabiltzeko erraza den interfazea eskaintzen du komando horien erabilpen arruntenentzat. <application>GNOMEren bilaketa-tresnak</application> egiten ez duen bilaketaren bat egin behar baduzu, komando-lerroan egin dezakezu, <command>bilatu</command> eta <command>grep</command> komandoak erabiliz aukera egokiekin. Kasu horretan, komando horien informazio-orrialdeak irakurtzea komeni da. Hori <application>GNOMEren laguntza-arakatzailea</application> erabiliz egin dezakezu.</para></sect1>
+
+  <sect1 id="usage"> 
+    <title>Erabilpena</title>
+    <para><application>GNOMEren bilaketa-tresna</application>k bi bilaketa-mota eskaintzen ditu: <emphasis>Erabateko bilaketa</emphasis> eta <emphasis>Bilaketa lasterra</emphasis>. Erabateko bilaketa fidagarria da eta aukera ugari ematen ditu, baina motela da. Bilaketa lasterrak teknika berezi bat erabiltzen du bilaketa azkartzeko; askoz ere azkarragoa da, baina fitxategi-izenaren arabera bakarrik egin dezake bilaketa eta ez da erabateko bilaketa bezain zehatza. Atal honek erabateko bilaketa modua deskribatzen du; bilaketa lasterra honako atalean deskribatzen da: <xref     linkend="locate">.</para> <figure id="mainwin">
+ <title>Bilaketaren leiho nagusia</title>
+ Bilaketa-leiho nagusia
+
+    <para>Bilaketa bat hasteko, GNOMEren bilaketa-tresnari bilaketa-irizpidea eta direktorioa eman behar dizkiozu.</para> 
+
+   <para> Lehenespenez, bilaketa unean lanean ari zaren direktorioan hasten du; <application>GNOMEren bilaketa-tresna</application> menutik hasi baduzu, uneko direktorioa zure etxeko direktorioa da. Hasierako direktorioa <guilabel>Hasi direktorio honetan</guilabel> eremuan baliozko bide-izen bat sartuz, edo direktorio bat <guibutton>Arakatu...</guibutton> botoiarekin aukeratuz alda dezakezu.  		           Adibidez, zure sistemako fitxategi guztietan bilaketa egiteko, sartu <filename>/</filename> eremu honetan (abisua: <emphasis> benetan</emphasis> denbora asko pasako du).  </para>
+
+   <para> Lehenespenez, <application>GNOMEren bilaketa-tresna</application>k emandako direktorioaren azpidirektorio guztietan ere bilatzen du; modu hori ken dezakezu <guilabel>Ez bilatu azpidirektorioetan</guilabel> aukera erabiliz. Bilaketa zehatzagoa egiteko, <guilabel>Ez bilatu muntatutako fitxategi-sistemetan</guilabel> aukera gai dezakezu. Aukera horrek bilaketatik kanpo utziko ditu ondoko azpidirektorioak: fisikoki hasierako direktorioa ez den direktorio baten unitateetan edo partizioetan kokatutakoak (muntatutakoak) &mdash; ikus <xref linkend="criteria"> xehetasunetarako.</para>
+
+   <para>Lehenetsitako bilaketa-irizpide bakarra <guilabel>Fitxategi-izena</guilabel> da. Komodinak <keysym>*</keysym> (ikurren edozein sekuentzia, hutsak barne, parekatzen ditu) eta <keysym>?</keysym>  (ikur bakun denak parekatzen ditu) erabil ditzakezu eremu honetan. Adibidez, <filename>txt</filename> luzapena duten fitxategiak aurkitzeko, sartu <userinput>*.txt</userinput> eremu honetan; D hizkiarekin hasten diren fitxategi guztiak aurkitzeko, sartu <userinput>D*</userinput> (abisua: fitxategi-izenek maiuskula/minuskula desberdintzen dute!).  Bilaketa-irizpide konplexuagoak ere zehaztu ditzakezu &mdash; ikus <xref linkend="criteria">.</para>
+   
+   <para> Behin bilaketa-irizpidea eta hasierako direktorioa zehazten dituzunean, sakatu <guibutton>Hasi</guibutton>. Horrek denbora behar du (direktorioaren tamaina eta sistemaren abiaduraren arabera), eta ondoren, zure irizpidearekin bat datozen fitxategi guztien zerrenda duen leiho bat azalduko zaizu (hutsik egon daiteke), hemen erakusten den bezala: <xref linkend="results">. Bilaketarako denbora asko behar badu, abortatu dezakezu <guibutton>Gelditu</guibutton> botoia sakatuz.</para>
+
+<figure id="results">
+ <title>Bilaketaren emaitzen leihoa</title>
+ Bilaketaren emaitzen leihoa
+
+
+   <para> Bilaketaren emaitzen leihoan, edozein fitxategitan klik bikoitza egin dezakezu irekitzeko. Fitxategi-kudeatzailearen leihoan fitxategian klik bikoitza egitearen ondorio berdina edukiko du &mdash; hau da, fitxategia fitxategi-mota horrentzako lehenetsita dagoen ekintzarekin irekiko da. Aurkitutako fitxategien zerrenda disketean gorde dezakezu <guibutton>Gorde</guibutton> botoia sakatuz. Fitxategi-izena eskatuko dizu zerrenda gordetzeko; zerrenda testu arruntaren formatuarekin gordeko du.</para></sect1>
+      
+  <sect1 id="criteria">
+    <title>Bilaketa-irizpidea</title> 
+
+    <para>Goian azaldu den fitxategi-izenaren bilaketa arrunterako, <application>GNOMEren bilaketa-tresna</application>k beste irizpide bat zehazten ahalbidetzen dizu. Horretarako, irizpide-mota egokia hautatu behar duzu goitibehera motako zerrendatik (<guibutton>Gehitu</guibutton> botoiaren ezkerraldean), eta <guibutton>Gehitu</guibutton> sakatu. Horrela irizpide hori gehituko zaio lehendik daudenei. <application>GNOMEren bilaketa-tresna</application>k zehaztutako irizpidea betetzen duten fitxategi <emphasis>guztiak</emphasis> bilatuko ditu. Adibidez, <xref linkend="sample"> (e)k <filename>txt</filename> luzapena duten fitxategi guztien bilaketa, azken 7 egunetan aldatuak eta GNOME hitza dutenak, erakusten du.</para>
+ 
+    <figure id="sample">
+     <title>GNOMEren bilaketa-sesioaren lagina </title>
+     GNOMEren bilaketa-saioaren lagina 
+
+    <para>Lehendik gehitu duzun irizpideren bat kendu dezakezu bere ondoko <guibutton>Kendu</guibutton> botoia sakatuz. Aldizka, irizpide bat desgai dezakezu bere ondoko <guibutton>Gaitu</guibutton> kontrol-botoia desaktibatuz.</para>
+
+    <para>Jarraian, irizpide-mota posibleen zerrenda daukazu: <itemizedlist><listitem><para><emphasis>Fitxategi-izena</emphasis>  &mdash; bilatu fitxategi-izenaren arabera. Ohi bezala, * eta ? komodinak erabil ditzakezu bilaketan. Hemen ere gogoratu UNIX fitxategi-izenak maiuskula-minuskula desberdintzen dutela.</para></listitem>
+
+	<listitem><para> <emphasis>Ez bilatu azpidirektorioetan</emphasis> &mdash; aukera hori hautatzen bada, <application>GNOMEren bilaketa-tresna</application>k ez du hasierako direktorioko azpidirektorioetako fitxategietan bilatuko.</para></listitem>
+
+	<listitem><para><emphasis>Fitxategi-jabea</emphasis>  &mdash; fitxategiaren jabea den erabiltzailearen izenaren arabera bilatzen du.</para></listitem>
+
+	<listitem><para><emphasis>Fitxategi-jabearen taldea</emphasis>  &mdash; fitxategiaren jabea den taldearen izenaren arabera bilatzen du.</para></listitem>
+
+	<listitem><para><emphasis>Azken aldaketaren ordua</emphasis>  &mdash; azken N egunetan aldatutako fitxategiak (zehazki, azken N*24 ordutan) bilatzen ditu.</para></listitem>
+
+	<listitem><para> <emphasis>Muntatutako fitxategi-sistemetan ez bilatu</emphasis> &mdash; aukera hori hautatzen bada, <application>GNOMEren bilaketa-tresna</application>k ondorengo azpidirektorioetan bakarrik bilatuko du: hasierako direktorioaren gailu (diskete) berdinean muntaturik daudenak. Adibidez, hasierako direktorioa <filename>/</filename> bada eta <filename>/dev/hda</filename> fitxategian (lehen disko gogorra) muntaturik badago, eta <filename>/home</filename> azpidirektorioa <filename>/dev/hdb</filename> fitxategian (bigarren disko gogorra) muntatuta badu, orduan ez du <filename>/home</filename> fitxategian bilatuko. Aukera hori erabilgarria izan daiteke euskarri aldagarriko (CD-ROM, disketea) fitxategiak bilaketatik kanpo uzteko.</para></listitem>
+
+	<listitem><para> <emphasis>Fitxategi hutsa</emphasis> &mdash; irizpide hori fitxategi hutsarekin bat dator. Gehien bat sistema-administratzaileek erabilia sistemaren mantenimendurako.</para></listitem>
+
+	<listitem><para><emphasis>Baliogabeko erabiltzaile edo taldea</emphasis> &mdash; sistemarentzat ezezagunak diren jabe edo taldeen fitxategian parekatzen ditu. Aukera hori erabilgarria izan daiteke, sistematik kendu diren erabiltzaileen fitxategiak aurkitzeko. Gehien bat sistema-administratzaileek erabilia sistemaren mantenimendurako.</para></listitem>
+
+	<listitem><para><emphasis>Fitxategi-izenak izan ezik</emphasis> &mdash; fitxategi-izena eman ez den fitxategi guztiak parekatzen ditu. Lehengo moduan, komodinak erabil ditzakezu.  Adibidez, eremu honetan <filename>*~</filename> zehazten baduzu, <application>GNOMEren bilaketa-tresnak</application> bilaketatik kanpo utziko ditu tildearekin (~) amaitzen diren fitxategi guztiak.</para></listitem>
+
+	<listitem><para><emphasis>Azpikateen bilaketa arrunta</emphasis> &mdash; azpikate jakin batzuk <emphasis>dituzten</emphasis> fitxategi guztiak parekatzen ditu. Aukera horrek fitxategi guztien edukia irakurtzea eskatzen duenez, bilaketa motel dezake. Oharrak: Aukera honekin ezin dituzu komodinak erabili.</para></listitem>
+
+	<listitem><para> <emphasis>Adierazpen erregularren bilaketa</emphasis> &mdash; adierazpen erregular jakinak <emphasis>dituzten</emphasis> fitxategi guztiak parekatzen ditu. Aukera horrek fitxategi guztien edukia irakurtzea eskatzen duenez, bilaketa motel dezake.
+
+	<listitem><para><emphasis>Hedatutako adierazpen erregularren bilaketa</emphasis> &mdash; hedatutako adierazpen erregular jakinak <emphasis>dituzten</emphasis> fitxategi guztiak parekatzen ditu. Aukera horrek fitxategi guztien edukia irakurtzea eskatzen duenez, bilaketa motel dezake.
+
+      </itemizedlist>
+
+      Adierazpen erregularren nozioa ezagutzen ez dutenentzat,  gauza bakarra esango dugu: ereduen bat etortzerako sintaxi zeharo malgua eta indartsua dela. Komodinen bat etortze arruntak ez bezala, honek eragiketa logikoak (eta, edo, ez), ikur-zerrendak parekatzea, kate bat lerroaren hasieran egiaztatzea, eta beste hainbat gauza ahalbidetzen ditu. Adierazpen erregularren eta hedatutako adierazpen erregularren deskribapen zehatza eskuliburuko <application>grep</application>-i buruzko orrialdean aurki daiteke. Erabiltzaile berriek konplexuegia aurkituko dute, baina esperientzi gehiagoko erabiltzaileentzat, adierazpen erregularrak oso erabilgarriak izan daitezke.</para></sect1>
+
+  <sect1 id="locate">
+    <title>Bilaketa lasterraren modua</title>
+    <para>Atal honek <application>GNOMEren bilaketa-tresna</application>ren bilaketa lasterraren modua deskribatzen du. Modu hau erabiltzeko, joan <guilabel>Bilaketa (lokalizazio) bizkorra</guilabel> leihora, honakoan erakusten den bezala: <xref
+    linkend="locatewin">.</para>
+
+    <figure id="locatewin">
+     <title>Bilaketa lasterraren leihoa</title>
+     Bilaketa lasterraren leihoa
+
+    <para> Bilaketa lasterra moduan, <application>GNOMEren bilaketa-tresna</application>k ez du disketeko fitxategi bat bilatzen &mdash; horren ordez, sistemako fitxategi guztien izenak dituen datu-base berezi bat erabiltzen du. Bilaketa azkarrago egiten du. Horrek, ordea, egin dezakezun bilaketa-mota bakarra fitxategi-izenaren arabera dela esan nahi du. Bestalde, bilaketa honek ez ditu aurkituko datu-basearen azken eguneratzearen ondoren gehitutako fitxategiak (sistema gehienetan, egunero eguneratzen da, normalean gauean &mdash; ikus ondorengoa informazio gehiagotarako).</para> <para> Bilaketa lasterraren moduarekin fitxategi bat aurkitzeko, fitxategi-izenaren azpikatea sartu <guilabel>Lokalizatu fitxategia</guilabel> eremuan. Adibidez, fitxategi-izenean <quote>searchtool</quote> katea duten fitxategi guztiak aurkitzeko, sartu <userinput>searchtool</userinput> eremu honetan. Bilaketa horrek bide-izen osoan <quote>searchtool</quote> katea duten fitxategi guztiak ere erakutsiko ditu &mdash; batez ere, <filename
+      class="directory">/usr/share/help/gsearchtool</filename>-ko fitxategi guztiak.</para> <para> Bilaketa azpidirektorio batera mugatzeko, direktorio-izena komodinekin batera erabil dezakezu. Adibidez, <filename>txt</filename> luzapena duten fitxategi guztien bilaketa lasterra <filename
+      class="directory">/home/user</filename> direktorioan egiteko, sartu <userinput>/home/user/*.txt</userinput><guilabel>Lokalizatu fitxategia</guilabel> eremuan.</para>
+
+    <para>Hala ere, bilaketa lasterra modua <command>lokalizatu</command> komandoaren interfazea da, beraz xehetasun gehiagotarako, dagokion <ulink type="man"
+	url="man:locate">eskuliburuaren orrialdea</ulink> irakurri.</para> <sect2 id="locatedb">
+      <title> Lokalizaturen datu-basea</title>
+      <para>Atal honetan datu-basearen eguneratzea deskribatuko da bilaketa bizkorrerako. Sistema-administratzailea ez bazara edo kuriositaterik ez baduzu, ez duzu azalpena irakurri beharrik.</para> <para>Sistema gehienetan, <command>lokalizatu</command> komandoarentzat (eta beraz, <application>GNOMEren bilaketa-tresna</application>ren bilaketa lasterraren modurako) erabiltzen den datu-basea, egunero eguneratzen da, normalean gauean. Hori <command>cron</command> eragiketa gisa egiten da &mdash; ikus <ulink type="man"
+	url="man:cron">eskuliburuaren orrialdea</ulink> <command>cron</command> utilitate hori ezagutzen ez baduzu. Kontuan eduki zure ordenagailua gauez normalean itzalita egoten bada, datu-basea ez dela eguneratuko. Kasu horretan, lehenetsitako eguneratze-ordua aldatu behar zenuke <filename>/etc/crontab</filename> fitxategia editatuz edo tresna grafiko bat erabiliz, esaterako <application>cromagnon</application>. Horretarako sistema-administratzailearen (root) pribilegioak beharrezkoak dira.</para>
+
+      <para><quote>Datu-basea orain eguneratu</quote> komandoa ere edita dezakezu <command>updatedb</command> komandoa exekutatuz. Horretarako ere sistema-administratzailearen (root) pribilegioak beharrezkoak dira.</para> Zure sistemako fitxategi guztien datu-base osoa berregiten du batere aukerarik gabe. Hori optimizatzeko komando-lerroko hainbat aukera dituzu (adibidez, direktorio jakin batzuk saltatzeko aginduz). Xehetasun gehiagorako, irakurri <ulink type="man"
+	url="man:updatedb">eskuliburuaren orrialdea</ulink> <command>updatedb</command> komandoari buruz.</para></sect2>
+
+
+    </sect1>
+
+  <sect1 id="authors">
+    <title>Egileak</title>
+     <para><application>GNOMEren bilaketa-tresna</application> George Lebl-ek idatzia da (<email>jirka@5z.com</email>). Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink       url="http://bugs.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>.  (Akatsei buruzko berriak bidaltzeko argibideak <ulink url="http://bugs.gnome.org/Reporting.html"       type="http">linean</ulink> aurkituko dituzu.) GNOMEren 1.1 bertsioan edo berriagoa erabiltzen ari bazara, akatsen berri emateko <application>Akatsen berri emateko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Tresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para> <para>Eskuliburu hau Alexander Kirillov-ek idatzi du (<email>kirillov@math.sunysb.edu</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink       type="http" url="http://developer.gnome.org/projects/gdp/">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"       url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para></sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:gpl"><citetitle>GNU Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia bat <citetitle>GNOMEren gidaliburuaren</citetitle> eranskinean daukazu.  <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"    url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+   <address>
+    Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+   </address>
+  </para></sect1>
+
+
+</article>
+
+
+
+

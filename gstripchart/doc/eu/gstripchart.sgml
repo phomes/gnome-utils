@@ -1,0 +1,233 @@
+<!DOCTYPE Article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+<!ENTITY version "1.6">
+]>
+
+<article id="index"><artheader> 
+    <title>Gstripchart-en eskuliburua</title>
+    <copyright><year>2000</year> <holder>John Kodis</holder></copyright>
+
+    <!-- translators: uncomment this:
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+    --> <legalnotice id="legalnotice"><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:fdl"><citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle></ulink>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe.  Lizentziaren kopia <ulink type="help" url="gnome-help:fdl">hemen</ulink> aurkituko duzu.</para> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+   
+    <releaseinfo>Gstripchart eskuliburuaren 1.0 bertsioa duzu hau.</releaseinfo></artheader>
+
+  <sect1 id="intro">
+    <title>Sarrera</title> 
+
+    <para>GNOMEren <application>gstripchart</application> programak bereziki erabiltzailearentzat diren parametroen hainbat diagrama egiten ditu denboraren funtzio moduan. Bere funtziorik nagusiena sistemaren performantzia-parametroen diagrama egitea da, esaterako PUZen karga, PUZen erabilpena, sareko trafikoaren mailak eta antzerakoak. Bestelako erabilpen sinpleagoak erabiltzaile interesatuentzat ariketa moduan utzi dira.  <filename>Gnome-utils</filename> paketearekin batera dator, eta pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek &version; bertsioa deskribatzen du. Bertsio hori <application>gstripchart</application> programarena da.</para>
+
+    <para><application>Gstripchart</application> programak aldizka fitxategi bateko datuak irakurri, balio bat atera, eta balio horiek formatu batean bistaratzen ditu.  Lehenetsitako formatua bistaratze grafikoa da, stripchart grabagailuaren antzekoa.  Hortik datorkio aplikazioari, <application>gstripchart</application> izena.</para>
+
+    <para>Linux-en moduko sistemetan, non parametroak /proc direktorioan daude gizakiek irakurtzeko moduan, <application>gstripchart</application> programak performantziaren kontrol-tresna bikaina egiten du, <application>xload</application>-en antzekoa, baina aldakorragoa.</para>
+
+    <para>Performantziaren parametro estandar gutxi batzuetara mugatuta egon beharrean, <application>gstripchart</application> programak fitxategi edo kanalizaziotik irakur daitekeen denboraren edozein aldagai-parametro marraztu dezake.  Datuak kanalizaziotik irakurtzeko gaitasunak honakoa eskaintzen du: bistaratze pertsonalizatuak ezartzeko metodo aldagarria eta erabiltzeko erraza.</para>
+
+    <para><application>gstripchart</application> programa <guimenuitem>Stripchart marrazlea</guimenuitem> elementua <guisubmenu>Utilitateak</guisubmenu> azpimenutik <guimenu>Menu nagusia</guimenu>n hautatuz, edo <command>gstripchart</command> komandoa komando-lerroan exekutatuz has dezakezu.</para></sect1>
+
+  <sect1 id="usage"> 
+    <title>gstripchart-en erabilpena</title>
+
+    <para>Nahiz eta <application>gstripchart</application> programak interesgarria den ia edozein paramatro marraz dezakeen, lehenetsitako konfigurazioak erabiltzen ari den sistemako performantziaren parametroen ikuspegi erabilgarria sortuko du.  Atal honek <application>gstripchart</application> programaren oinarrizko erabilpena deskribatzen du lehenetsitako konfigurazioan.  Aurrerago, marraztutako parametroak nola pertsonalizatu azaltzen da.</para>
+
+    <sect2 id="mainwin">
+      <title>Oinarrizko erabilpena</title>
+
+      <para><application>gstripchart</application> programa hastean, <interface>leiho nagusia</interface> ikusiko duzu, hemen azaltzen den bezala: <xref
+      linkend="main"> <figure id="main">
+	<title>Stripchart marrazlearen leiho nagusia</title>
+	Stripchart marrazlearen leiho nagusia
+
+      <para>Lehenetsitako konfigurazioan <application>gstripchart</application>-ek bi elementu nagusi dituen 200 x 50 pixeleko leiho bat sortzen du &mdash; &quot;zerrenda&quot; korritzailea ezkerrean, eta &quot;arkatzen&quot; seriea eskuinean.  Lehenetsitako konfigurazioa erabiltzean, &quot;arkatz&quot; eta &quot;zerrenda&quot; lerro batek sistemaren PUZen erabilpenaren uneko eta orain dela gutxiko balioak erakutsiko ditu urdinez, minutu bateko batezbestekoa horiz, erabiltzen ari den swap lekuaren ehunekoa zuriz, eta sareko trafikoaren sarrera eta irteera-bolumenak gorriz eta berdez, hurrenez hurren.  PPP interfazea aktibatuta badago, argi adierazle berdea piztuko da leiho nagusiko goiko ezkerreko izkinan.</para>
+
+      <para><application>gstripchart</application>en <interface>leiho nagusia</interface>n klik egitean <interface>zenbaki-balioa</interface>ren leihoa irekiko da.  <interface>Zenbaki-balioa</interface>ren leihoa, <xref linkend="main">(a)n erakusten den leiho nagusiari dagokiona, behean azaltzen da <xref linkend="text">. <figure id="text">
+	<title>Parametroaren zenbakizko balioaren leihoa</title>
+	<screenshot><screeninfo>Parametroaren zenbakizko balioaren leihoa</screeninfo> <graphic fileref="figures/text" format="png" srccredit="John Kodis"></graphic></screenshot></figure> Leiho honek marraztutako parametro bakoitzaren izenaren lerro anitzeko testu bidezko bistaratzea, uneko balioa eta eskala osoko balioa erakusten du.  Hori titulu-barrako <guibutton>Itxi</guibutton> botoian, <interface>zenbaki-balioa</interface>ren leihoan, klik eginez, edo bigarren klik bat <interface>leiho nagusia</interface>n  eginez itxi daiteke.</para>
+
+      <para><application>gstripchart</application>en <interface>leiho nagusia</interface>n saguaren hirugarren botoiarekin klik egiten baduzu, <guimenu>Aplikazioa</guimenu> menua irekiko da ondorengo menu-elementuak dituelarik: <guimenuitem>Laguntza</guimenuitem>, <guimenuitem>Honi buruz</guimenuitem>, <guimenuitem>Parametroak</guimenuitem>, eta <guimenuitem>Irten</guimenuitem>, hemen erakusten den bezala: <xref linkend="menu">. <figure id="menu">
+	<title>Pop-up menua duen leiho nagusia</title>
+	<screenshot><screeninfo>Pop-up menua duen leiho nagusia</screeninfo> <graphic fileref="figures/menu" format="png" srccredit="John Kodis"></graphic></screenshot></figure> <guimenuitem>Laguntza</guimenuitem> eta <guimenuitem>Honi buruz</guimenuitem> menu-elementuek laguntza eta ohiko Honi buruz koadroa bistaratzen dute, hurrenez hurren, eta <guimenuitem>Irten</guimenuitem> menu-elementuak <application>stripchart</application> programaren exekuzioa bertan behera uzten du. <guimenuitem>Parametroak</guimenuitem> menu-elementuak ohar-koaderno bat duen leihoa bistaratzen du. Koaderno horrek parametro bakoitzaren xehetasunak deskribatzen dituen orrialdea dauka, hemen erakusten den bezala: <xref linkend="param">. <figure id="param">
+	<title>Parametroen leihoa</title>
+	Parametroen leihoa
+
+  <sect1 id="prefs">
+    <title>Pertsonalizazioa</title> 
+
+    <para><application>gstripchart</application> programak bistaratu behar diren parametroak zehazten ditu konfigurazio-fitxategi bat irakurriz.  <application>gstripchart</application> programak hurrenkera honetan bilatuko du konfigurazio-fitxategi bat: <itemizedlist>
+
+      <listitem> <para>aurrena, komando-lerroan zehaztutako fitxategia, </para> </listitem>
+
+      <listitem> <para>gero, <filename>gstripchart.conf</filename> izeneko fitxategia uneko direktorioan, </para> </listitem>
+
+      <listitem> <para>ondoren, <filename>.gstripchart.conf</filename> izeneko fitxategia erabiltzailearen etxeko direktorioan, </para> </para>
+
+      <listitem> <para>jarraian, <filename>/etc/gstripchart.conf</filename> izeneko fitxategia, </para> </listitem>
+
+      <listitem> <para>eta azkenik, <filename>gstripchart.conf</filename> izeneko fitxategia <replaceable>CONFDIR</replaceable> direktorioan. Normalean <filename       class="directory">/usr/share/gstripchart/</filename> edo <filename       class="directory">/usr/local/share/gstripchart/</filename> fitxategia izango da.</para> </listitem>
+
+    </itemizedlist>
+
+    Konfigurazio-fitxategirik aurkitzen ez badu, programak errore-mezu bat bistaratu eta irten egingo da.</para>
+
+    <sect2 id="options">
+      <title>Aukerak</title>
+
+      <para>Komando-lerroko kommutadore batzuk daude programa erabiltzeko modua aldatzeko.  Ohiko laguntza, erabilpena, bertsioa, Gnome, Gtk, eta Saioaren kudeaketa aukerez gain, ondorengo gstripchart aukerak daude erabilgarri:</para>
+
+      <variablelist><varlistentry><term> &ndash;&ndash;geometria <replaceable>GEOMETRY-SPEC</replaceable> </term> <listitem><para> <replaceable>WxH&plusmn;X&plusmn;Y</replaceable> formaren X11 geometria-zehaztapen estandarra. </para></listitem></varlistentry>
+
+	<varlistentry><term> &ndash;&ndash;konfigurazio-fitxategia <replaceable>FITXATEGI-IZENA</replaceable> </term> <listitem><para>Konfigurazioari buruzko informazioa zer fitxategitan irakurri zehazten du, konfigurazio-fitxategiaren bilaketa-hurrenkera arrunta kontuan hartu gabe, hemen azaltzen den bezala: <xref linkend="prefs" />.</para></listitem></varlistentry>
+
+	<varlistentry><term> &ndash;&ndash;diagrama-tartea <replaceable>EGUNERATZE-TARTEA</replaceable></term> <term> &ndash;&ndash;graduatzaile-tartea <replaceable>EGUNERATZE-TARTEA</replaceable></term> <listitem><para>Segundotan zehazten du denbora-tartea diagrama-leihoaren eta graduatzaile-leihoaren eguneratzeen artean.  Zehazturik ez badago, diagrama-leihoa 5 segunduero eta graduatzaile-leihoa 0,2 segundoz behin eguneratuko dira. </para></listitem></varlistentry>
+
+	<varlistentry><term> &ndash;&ndash;diagrama-iragazkia <replaceable>DENBORA-KONSTANTEA</replaceable></term> <term> &ndash;&ndash;graduatzaile-iragazkia <replaceable>DENBORA-KONSTANTEA</replaceable></term> <listitem><para>Diagrama edo graduatzaile-leihoetako datuak pasaldi baxuan iragazteko behar den denbora-konstantea zehazten du segundotan.  0 segundotako denbora-konstanteak pasaldi baxuko iragazketa desaktibatzen du eta horrek bistaratze asaldatua sor dezake.  Lehen azaldutako tarteko parametroaren maila bereko denbora-konstantea, normalean, aukera ona izaten da.  Balio handiagoek eguneratzeen bistaratze motela sortzen dute.  Zehazturik ez badago, bi leiho horietan ez da pasaldi baxuko iragazketarik egingo. </para></listitem></varlistentry>
+
+	<varlistentry><term> &ndash;&ndash;menu-barra </term> <listitem><para>Leiho nagusiari aplikazioaren menu-barra gehitzen dio. Hori, normalean, kendu egiten da, eta menua diagrama-leihoan saguaren eskuineko botoiarekin klik eginez irekitzen da. </para></listitem></varlistentry>
+
+	<varlistentry><term> &ndash;&ndash;kendu graduatzailea </term> <listitem><para>Aukera horrek graduatzaile-leihoa kentzen du pantailatik. </para></listitem></varlistentry>
+
+	<varlistentry><term> &ndash;&ndash;bistaratze-mota <replaceable>MOTA</replaceable> </term> <listitem><para><replaceable>MOTA</replaceable> aukerak sortu behar den bistaratze-mota zehazten du.  <replaceable>MOTA</replaceable>ren zehaztailea honela osatua egon daiteke:</para> <itemizedlist><listitem> <para>gtk &mdash; lehenetsitako gtk-an oinarrituriko bistaratze grafikoa erabiltzen du; </para></listitem> <listitem> <para>applet &mdash; applet-en moduan exekutatzen da Gnome-ren panelean. </para></listitem></itemizedlist></listitem></varlistentry></variablelist></sect2>
+
+    <sect2 id="config">
+      <title>Konfigurazio-fitxategia</title>
+
+      <para><application>gstripchart</application> programaren erabiltzeko modua abiaraztean irakurtzen duen konfigurazio-fitxategiaren edukiak zehazten du. Fitxategi hau <xref linkend="prefs" />(a)n deskribatzen den bezala kokaturik dago</para>
+
+      <para>Konfigurazio-fitxategi honek aplikazio zabaleko konfigurazio-aukeren aukerako multzo bat du, <xref
+      linkend="app-opts" />(a)n azaltzen dena, parametroen konfigurazio-aukeren serieaz jarraiturik, <xref linkend="param-opts"
+      />(a)n azaltzen dena, marraztu behar den parametro bakoitzarentzat bat.  Konfigurazio-fitxategien lerro horietako bakoitza RFC-822 estiloko &quot;gako-hitza:&nbsp;balioa&quot; bikoteez osatua dago.  Iruzkin bat konfigurazio-fitxategiaren barneko edozein lekutan sar daiteke iruzkin-lerro bakoitzaren lehen zutabean kuxina (#) ipiniz, eta lerro hutsak irakurmena hobetzen duten guztietan erabil daitezke. </para>
+
+      <para>Hemen duzu <application>gstripchart</application> konfigurazio-fitxategi baten hasierako zatiaren adibide bat.  Fitxategiaren helburua azaltzen duen iruzkin batekin hasten da (fitxategi guztiek hasi behar luketen moduan).  Iruzkin horren jarraian aplikazio zabaleko hiru konfigurazio-aukera azaltzen dira.  Lehenengo aukerak diagrama-tartea 5.000-n ezartzen du, horrela bistaratzearen &quot;zerrenda&quot; zatia 5 segundoz behin eguneratuko da.  Ondoren, marka sekundarioaren tartea 12 diagramen eguneratze-tartean ezartzen da, eta horrela pantailan marka sekundario bat azalduko da minutuero.  Azkenik, marka nagusiaren tartea 5 marka sekundarioen tartean ezartzen da, eta horrela pantailan marka nagusi bat azalduko da bost minutuz behin. </para>
+
+<programlisting>
+
+# # gstripchart.conf -- #   konfigurazio-fitxategiaren adibidea #   GNOMEren stripchart programarentzat. #
+
+diagrama-tartea:		5.000
+
+marka_txikiak:		12 marka_nagusi:		5</programlisting>
+
+      <para>Ondorengo aplikazio zabaleko konfigurazio-aukeren gako-hitzak daude erabilgarri.  Batzuk aukerakoak dira; beste batzuk bistaratze-mota jakinekin bakarrik erabiltzen dira; askok lehenetsitako behar adina balio dituzte, jarraian azaltzen den moduan. </para>
+
+      <sect3 id="app-opts">
+	<title>Aplikazio zabaleko konfigurazio-aukerak</title>
+
+	<para>Hitz-gakoen lehen taldeak aurreko atalean deskribatutako komando-lerroko kommuntadoreen funtzio berdinak eskaintzen dituzte. Talde horretako aukerak konfigurazio-fitxategiaren hasieran kokatu behar dira, parametroen definizio-atalaren aurretik. Parametro horientzako balore bat emanez gero, bai konfigurazio-fitxategian eta baita komando-lerroan ere, komando-lerroaren balioak du lehentasuna. </para>
+
+	diagrama-tartea: <replaceable>EGUNERATZE-TARTEA</replaceable></term> <term> graduatzaile-tartea: <replaceable>EGUNERATZE-TARTEA</replaceable></term> <listitem><para>aukerak diagrama-leiho eta graduatzaile-leihoaren eguneratzearen arteko denbora-tartea zehazten du segundotan, lehen atal honetan azaldu den bezala: <xref linkend="options" />. </para></listitem></varlistentry>
+
+	  <varlistentry><term> diagrama-iragazkia: <replaceable>DENBORA-KONSTANTEA</replaceable></term> <term> graduatzaile-iragazkia: <replaceable>DENBORA-KONSTANTEA</replaceable></term> <listitem><para> aukerak diagrama edo graduatzaile-leihoetako datuen pasaldi baxurako iragazterako denbora-konstantea zehazten du segundotan, lehen honako atalean azaldu den bezala: <xref
+	      linkend="options" />. </para></listitem></varlistentry>
+
+	  <varlistentry><term>  menua: <replaceable>BAI-EDO-EZ</replaceable></term> <listitem><para>aukerak aplikazioaren menu-barra gehitzen edo kentzen du leiho nagusitik.</para></listitem></varlistentry>
+
+	  graduatzailea: <replaceable>BAI-EDO-EZ</replaceable></term> <listitem><para>aukerak &quot;arkatza&quot;ren bistaratzea gehitzen edo kentzen du leiho nagusitik.</para></listitem></varlistentry>
+
+	  marka_txikiak: <replaceable>TARTE-KONTAKETA</replaceable></term> <listitem><para>Aukera honek gtk eta applet bistaratzeetako marka sekundarioen arteko pixel-kopurua (eguneratze-tartea) ezartzen du.</para></listitem></varlistentry>
+
+	  marka_nagusiak: <replaceable>TARTE-KONTAKETA</replaceable></term> <listitem><para>Aukera honek gtk eta applet bistaratzeetako marka nagusien arteko pixel-kopurua (eguneratze-tartea) ezartzen du.</para></listitem></varlistentry></variablelist></sect3>
+
+      <sect3 id="param-opts">
+	<title>Parametroen konfigurazio-aukerak</title>
+
+	<para><application>gstripchart</application> konfigurazio-fitxategiaren bigarren zatiak parametroen deskribapen taldeak ditu, talde bat marraztu behar den parametro bakoitzarentzat.  Parametro talde bakoitza &quot;hasi&quot; eta &quot;amaitu&quot; lerro-bikoteez osatua dago, geratzen diren parametroen definizio-lerroak inguratuz.  Parametro-talde bakoitzak, &quot;hasi&quot; eta &quot;amaitu&quot; instrukzioez gain, ekuazio-instrukzioa eduki behar du. Horrek bistaratu behar den balioa eta &quot;kolorea&quot; edo &quot;argiak&quot; instrukzioak zehazten ditu, horrek, aldi berean, parametroaren bistaratze-formatua zehazten du.  </para>
+
+	<para>Adibidez, parametroaren gutxieneko definizioa sistemaren ondorengo kargaren batazbesteko parametroa izango litzateke. </para>
+
+	<para><programlisting>
+
+# Karga --  sistemaren minutuko batezbesteko karga bistaratu 
+
+hasi:		Kargatu kolorea:	instrukzio horia:	amaitu minutu bateko_$karga:		Kargatu</programlisting> </para>
+
+	<para>Ondorengo gako-hitzak erabilgarri dituzu parametro bat bistaratzeko modua definitzeko. </para>
+
+	hasi: <replaceable>[ PARAMETRO-IZENA ]</replaceable></term> <term>identifikatzailea: <replaceable>[ PARAMETRO-IZENA]</replaceable></term> <listitem><para>Aukera honek parametroaren definizioa eman eta parametroari izena ematen dio.  Lerro honek parametro-deskribapenaren lehen lerroa izan <emphasis>behar</emphasis> du.  &quot;hasi&quot; eta &quot;identifikatzailea&quot; gako-hitzak sinonimoak dira. <replaceable>PARAMETRO-IZENA</replaceable> hautazkoa da, baina ematen bada, dagokion &quot;amaitu&quot; instrukzioan erabiltzen den <replaceable>PARAMETRO-IZENA</replaceable>rekin bat etorri behar du. </para></listitem></varlistentry>
+
+	  <varlistentry><term>amaitu: <replaceable>[ PARAMETRO-IZENA ]</replaceable></term> <listitem><para>&quot;hasi&quot; edo &quot;identifikatzailea&quot; gako-hitzekin sartutako parametro-blokea ixten du. <replaceable>PARAMETRO-IZENA</replaceable>K dagokion &quot;hasi&quot; instrukzioan emandako <replaceable>PARAMETRO-IZENA</replaceable>REKIN bat etorri behar du. </para></listitem></varlistentry>
+
+	  <varlistentry><term>ekuazioa: <replaceable>KATEA</replaceable></term> <listitem><para>Parametro hori marrazteko behar den balioa lortzeko ekuazioa. </para>
+
+	      <para>Balioa &quot;ekuazio&quot; lerroa ebaluatuz lortzen da ondorengo balio-eremuak erabiliz.  Lehen balioa (edo balio bakarra) $1-ekin adierazten da, hurrengoa $2-rekin, etab.. Aurreko eta uneko iterazioen arteko balio-eremuen arteko desberdintasuna ~1, ~2, eta abarrez adierazten da.  Aurreko eta uneko iterazioen artean igarotako denbora segundotan ~t da.  Eskatutako eguneratze-tartea $i da, eta delta (beti zero izango da) ~i da.</para>
+
+	      <para>Eragile aritmetikoen ikur arruntak &mdash; batuketa (+), kenketa (-), biderketa (*), zatiketa (/), eta gainerakoak (&percnt;) &mdash; erabilgarri daude azpiadierazpenak multzokatzeko parentesiekin batera. </para></listitem></varlistentry>
+
+	  kolorea: <replaceable>KOLORE-IZENA</replaceable></term> <listitem><para>Honek parametroa bistaratzeko erabiliko den kolorea zehazten du.   Koloreen izenak eta haien RGB baloreak X11/rgb.txt-etik hartzen dira. </para></listitem></varlistentry>
+
+	  fitxategi-izena: <replaceable>FITXATEGI-IZENA</replaceable></term> <listitem>
+
+	      <para>Parametroaren balioa irakurtzeko erabiltzen den fitxategia.  &quot;|&quot;-ekin hasten den fitxategi-izena ematean, sarrerako lerroak kanalizaziotik irakurriko dira. </para>
+
+	      <para>Iterazio bakoitzean, parametro bakoitzarentzat bistaratzeko balioa lortzen da konfigurazio-fitxategian. &quot;fitxategi-izena&quot; lerroan izendatutako fitxategia irekita dago -- kanalizazio moduan, fitxategi-izena kanalizazio karaktere batekin ( | ) hasten bada, edo, bestela,  fitxategi arrunt moduan -- eta lerro bat irakurtzen da. </para>
+
+	      <para>Eredu bat zehazturik badago, lerroak irakurri egingo dira, eredu-kateak dituen lerro bat aurkitu arte.  Lerro hori zuriuneez banandutako eremuetan zatiturik dago, eta horietako bakoitza koma mugikorreko zenbaki moduan interpretatzen da. </para>
+
+	    </listitem></varlistentry>
+
+	  <varlistentry><term>argiak: <replaceable>KOLORE-IZENA [, KOLORE-IZENA...]</replaceable></term> <listitem><para>Parametro-bloke batek &quot;argiak:&quot; lerroa badu:  &quot;kolorea:&quot; lerroaren ordez:  ez du parametroa marraztuko.  Emandako koloreetako batean lauki txiki bat bistaratzen da goiko ezkerreko izkinan.  Erabiltzen den kolorea parametroaren balorean oinarriturik dago.  0,5 baino balio txikiagoak argia atzeko planoaren kolorearekin uzten du; 0,5 eta 1,5 bitarteko balioak argia lehenengo kolorearekin bistaratzen du; 1,5 eta 2,5 bitarteko balioak argia bigarren kolorearekin bistaratzen du; eta horrela etengabe &quot;argiak:&quot; lerroari hainbat kolore emanez . </para></listitem></varlistentry>
+
+	  eredua: <replaceable>KATEA</replaceable></term> <listitem><para>Parametroaren balioa atera behar den lerroa identifikatzen duen eredua.  Eredurik ematen ez bada, fitxategiaren lehen lerroa erabiltzen da. </para></listitem></varlistentry>
+
+	  <varlistentry><term>eskala: <replaceable>LOG-EDO-LINEALA</replaceable></term> <listitem><para>Aukera honek parametroaren balioa marrazterakoan eskala logaritmiko edo linealaren faktorea erabili behar den zehazten du. </para></listitem></varlistentry>
+
+	  <varlistentry><term>maximoa: <replaceable>ZENBAKIA</replaceable></term> <listitem><para>Bistaratu daitekeen baliorik handiena.  Maximoa baino handiagoa den balioa pantailaren goialdean marraztuko da.  Adierazten ez bada, lehenetsitako 1,0 balioa erabiliko da. </para></listitem></varlistentry>
+
+	  <varlistentry><term>minimoa: <replaceable>ZENBAKIA</replaceable></term> <listitem><para>Bistaratu daitekeen baliorik txikiena.  Minimoa baino txikiagoa den balioa pantailaren behealdean marraztuko da.  Adierazten ez bada, lehenetsitako 0,0 balioa erabiliko da.  </para></listitem></varlistentry>
+
+	  <varlistentry><term>aktiboa: <replaceable>BAI-EDO-EZ</replaceable></term> <listitem><para>Parametroa &quot;aktiboa:ez&quot; markaturik badago, ez da bistaratuko.  Horrek parametroa parametro-fitxategitik ezabatu gabe desgaitzeko bide egokia eskaintzen digu. </para></listitem></varlistentry>
+
+	</variablelist></sect3>
+
+      <sect3 id="libgtop">
+	<title>libgtop balioak</title>
+
+	<para>Orokorrean, <application>gstripchart</application> programa libgtop liburutegirako estekarekin osatua egongo da. libgtop liburutegiak sistemako performantzia parametro arruntetara sartzeko metodo eramangarri eta ongi estandarizatua eskaintzen du. Metodo hori da marraztu behar den balioa lortzeko gogokoena.</para>
+
+	<para>Ondorengo libgtop parametroak dituzu erabilgarri: </para>
+
+	<itemizedlist><listitem> <para>PUZ-eko estatistikak &mdash; cpu_total, cpu_user, cpu_nice, cpu_sys, cpu_idle, eta cpu_freq</para> </listitem>
+
+	  <listitem> <para>Memoriako estatistikak &mdash; mem_total, mem_used, mem_free, mem_shared, mem_buffer, mem_cached, mem_user, mem_locked </para> </listitem>
+
+	  <listitem> <para>Swap-eko estatistikak&mdash; swap_total, swap_used, swap_free, swap_pagein, swap_pageout </para></listitem>
+
+	  <listitem> <para>Jardun-denboraren estatistikak &mdash; jardun-denbora, denbora-inaktiboa</para> </listitem>
+
+	  <listitem> <para>Loadavg-en estatistikak &mdash; load_running, load_tasks, load_1m, load_5m, load_15m </para> </listitem>
+
+	  <listitem> <para>Sareko estatistikak &mdash; net_pkts_in, net_pkts_out, net_pkts_total, net_bytes_in, net_bytes_out, net_bytes_total, net_errs_in, net_errs_out, net_errs_total</para> 
+
+	    <para>Kontuan hartu sareko estatistiken balioek ez dutela libgtop liburutegia erabiltzen.  Horren ordez, zuzenean /proc/net/dev fitxategitik irakurtzen dira, eta horren ondorioz Linux-en bakarrik daude erabilgarri. </para> </listitem></itemizedlist>
+
+	<para>Parametro horiek guztiak osoko zenbaki luze eta zeinudunak dira, jardun-denbora, denbora-inaktiboa eta kargaren bost balioak izan ezik, koma mugikorreko balioak baitira. </para></sect3></sect2></sect1>
+
+  <sect1 id="bugs">
+    <title>Ezagutzen diren akats eta mugak</title>
+
+    <para> &ndash;&ndash;Geometria-aukerak ez ditu ongi interpretatzen kokaleku negatiboko argumentuak.</para>
+
+    <para>Sareko trafikoaren parametroak Linux-en bakarrik daude erabilgarri.</para></sect1>
+
+  <sect1 id="authors">
+    <title>Egileak</title>
+    <para><application>Stripchart marrazlea</application> John Kodis-ek idatzia da (<email>kodis@jagunet.com</email>). Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink       url="http://bugzilla.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsen berri bidaltzeko argibideak <ulink url="http://bugs.gnome.org/Reporting.html"       type="http">linean</ulink> aurkituko dituzu.) GNOMEren 1.1 bertsioa edo berriagoa erabiltzen ari bazara, akatsen berri emateko <application>Akatsen berri emateko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Tresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para>
+
+    <para>Eskuliburu hau John Kodis-ek idatzia da (<email>kodis@jagunet.com</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink type="http"       url="http://developer.gnome.org/projects/gdp/">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"       url="http://developer.gnome.org/projects/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para>
+
+    <!-- For translations: uncomment this:
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+    --></sect1>
+
+  <sect1 id="license">
+    <title>Lizentzia</title>
+    <para>Programa hau Gregory McLean-ek idatzi du eta birbana daiteke Free Software Foundation-ek argitaratutako <ulink url="gnome-help:gpl">GNU Lizentzia Publiko Orokorra</ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia bat dokumentu <ulink url="gnome-help:gpl">honekin</ulink> batera dator. <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"       url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+      <address>Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+      </address>
+    </para></sect1></article>

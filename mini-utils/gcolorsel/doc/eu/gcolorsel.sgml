@@ -1,0 +1,312 @@
+<!DOCTYPE Article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.0//EN"[
+<!ENTITY version "1.2.0">
+<!ENTITY gcolor "<application>GNOME Color Browser</application>">
+]>
+
+
+<!-- =============Document Header ============================= -->
+
+<article id="index"> 
+
+ <artheader>
+  <title>GNOMEren kolore arakatzailearen eskuliburua</title>
+  <copyright><year>2000</year> <holder>Alexander Kirillov</holder></copyright>
+
+  <legalnotice><para>Baimena ematen da dokumentu hau kopiatu, banatu edota aldatzeko Free Software Foundation-ek argitaratutako <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren 1.1 bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"     url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz: Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country> <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, GNOMEren dokumentazio-proiektuko kideak marka erregistratuak direla konturatu badira, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para></legalnotice>
+
+
+ </artheader>
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== --> <sect1 id="intro">
+    <title>Sarrera</title>
+    
+    <para>&gcolor; pantailako (hau da, X Window sistemako) kolorea hautatzeko utilitatea da. X Window sistemak aurrez definitutako hainbat kolore ditu, esaterako, Alizia urdina, urre argia, berde horixka. &gcolor;-ek kolore horiek arakatzen eta horietako bat hautatzen uzten dizu aplikazio batean erabiltzeko. Zure kolore gogokoen bilduma ere definitu, edo zuk emandako kolore baten berdintsuena dena aurki dezakezu.</para> <para>&gcolor; exekutatzeko hautatu <guimenuitem>Kolore-arakatzailea</guimenuitem> <guisubmenu>Utilitateak</guisubmenu> azpimenuan <guimenu>Leiho nagusia</guimenu>n, edo idatzi <command>gcolorsel</command> komando-lerroan.</para>
+
+    <para>&gcolor; <filename>gnome-utils</filename> paketearekin dator. Pakete hori GNOMEren mahaigaineko ingurunearen zatia da. Dokumentu honek &version; bertsioa deskribatzen du. Bertsio hori &gcolor;-ena da.</para>
+
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ 
+
+  <sect1 id="usage">
+    <title>GNOMEren kolore-arakatzailearen erabilpena</title>
+    <para>&gcolor; paletak, hau da, pantailako kolore-bildumak manipulatzeko erabiltzen da. Programa honek eragiketa hauek egitea ahalbidetzen dizu: sistemaren paletak (zure sisteman aurrez definiturik datorren kolore-zerrenda) arakatzen, zure paleta definitzen eta editatzen, aplikazio baterako paletatik kolore bat aukeratzen, edo kolore jakin baten antzekoenak aurkitzen.</para> <para>&gcolor; kolore berriak definitzeko ere erabil daiteke; horrek, ordea, ez du merezi, kolore hori sarritan ez baduzu erabili behar. Askotan erabiltzeko asmoa baduzu, &gcolor; erabil dezakezu kolore berri bat definitu eta zure paleta pertsonalari gehitzeko. Kolore bat behin bakarrik erabili nahi baduzu, errazagoa da lehenetsitako GNOMEren kolore-hautatzailea erabiltzea.</para>
+
+    <sect2 id="multdocs">
+      <title>Dokumentu anitzekin lanean</title>
+      <para>&gcolor;-en leiho nagusiak hainbat azpileiho eduki ditzake (&quot;ikuspegiak&quot;). Ikuspegi bakoitzak ondorengo elementuen edukiak erakusten ditu:
+	<link linkend="simple">paletarena</link> (sistemarena edo zeurea) edo <link linkend="search">bilaketa-leihoarena</link>, antzeko koloreak bilatzeko erabilia. Adibidez, lehenetsitako konfigurazioan &gcolor; 4 ikuspegirekin hasten da: horietako biek elementu hauek erakusten dituzte: sistemaren paleta (batek koloreak izenaren arabera zerrendatuz, besteak koloretako lauki txikiak erabiliz koloreak aurkezteko), erabiltzailearen paletaren ikuspegia (jatorriz hutsik), eta bilaketa-leihoa.  Komenigarria izan daiteke ikuspegi ugari edukitzea, aldi berean paleta desberdinekin lan egiteko, koloreak paleta batetik bestera eraman nahi badituzu arrastatu eta jaregin erabiltzeko, etab.</para> <para>Ikuspegi batetik bestera aldatzeko, leihoaren goiko ikuspegien fitxan klik egin (beti ere lehenetsitako GTK gaia erabiltzen ari bazara).  Fitxak ez badira pantailan sartzen ikuspegi gehiegi irekita daudelako, &gcolor;-en leihoaren goian, eskuineko aldean, 2 gezi ikusiko dituzu; gezi horiek fitxetan zehar mugitzen utziko dizute.</para> <para>Leiho berri bat irekitzen duzun bakoitzean, azpileiho berri bat gehituko zaie lehengoei.  Leiho bat ixteko, hautatu <menuchoice><guimenu>Fitxategia</guimenu> <guimenuitem>Itxi</guimenuitem> <guimenuitem>Itxi ikuspegia</guimenuitem></menuchoice> edo tresna-barrako <guibutton>Itxi</guibutton> botoian klik egin. Dokumentu berdina erakusten duten ikuspegi anitz badituzu, denak itxi ditzakezu, menu hauek hautatuz: <menuchoice><guimenu>Fitxategia</guimenu> <guimenuitem>Itxi</guimenuitem> <guimenuitem>Itxi dokumentua</guimenuitem></menuchoice> (ez ahaztu aurretik grabatzea aldaketak egin badituzu). Azkenik, ikuspegi-fitxa bat &gcolor;-en leihotik atera dezakezu; horrek &gcolor;-en leiho berria sortuko du ikuspegi honekin.</para></sect2> 
+
+    <sect2 id="usingforapps">
+      <title>Aplikazio baterako kolorea </title>
+      <para>Gustuko duzun kolore bat aurkitzen duzunean, kolore hori aplikazio batean erabiltzeko bi modu dituzu. Errazena arrastatu eta jaregin erabiltzea da: &gcolor;ren leihoan ikusten dituzun kolore-barra guztiak, kolore konfiguragarriak dituen GNOMEren osagaietako batera arrastatu eta jaregin daitezke. Adibidez, kolore bat GNOMEren <interface>Panel</interface>era arrasta dezakezu Panelaren atzeko planoaren kolorea aldatu nahi baduzu, edo baita <application>GNOMEren Terminal</application>era ere bere atzeko planoa aldatzeko.</para> <para>Kolorea GNOMErekin bateragarriak ez diren X Window-ren hainbat aplikaziorekin erabil dezakezu, adibidez, <application>emacs</application> testu-editorearekin. Xren aplikazio gehienek komando-lerroko <command>-bg <replaceable>KOLOREA</replaceable></command> eta <command>-fg <replaceable>KOLOREA</replaceable></command> aukerak onartzen dituzte atzeko eta aurreko planoaren kolorea zehazteko. <replaceable>KOLOREA</replaceable> sistemako kolorearen izena, &gcolor;-en erakusten den bezala, edo bere deskribapena izan daiteke hiru balioz osatua: Gorria, Berdea eta Urdina (GBU).  Adibidez, <programlisting><command>emacs -bg urdin argia -fg berde iluna</command></programlisting> komandoak <application>emacs</application> aplikazioa atzeko plano urdin argiarekin eta aurreko plano berde ilunarekin hasiko du . Kontuan hartu UNIXen hitzarmen komunek esaten dutenaren kontra, koloreen izenek maiuskulak eta minuskulak bereizten dituztela.  X Window sistemako koloreei, GBU balioei, kolorearen sakonera, eta abarri buruzko informazio gehiago: <xref linkend="xcolors">.</para></sect2>
+      
+  </sect1>
+ 
+
+ <!-- ============= Menus ================================== --> <sect1 id="menus">
+   <title>Menuak eta tresna-barra</title>
+    
+    
+
+    <sect2 id="menubar">
+      <title>Menu-barra</title>
+      <para>Menu-barrak, &gcolor;-en leihoaren goialdean kokatua, ondorengo menuak ditu:</para>
+
+      <variablelist><varlistentry><term><guimenu>Fitxategia</guimenu></term> <listitem><para>Menu honek komando hauek ditu:</para> <itemizedlist> <listitem><para><guimenuitem>Berria</guimenuitem>: komando honen bidez beste leiho batean paleta berri hutsa (ikus <xref
+              linkend="newpalette">) edo paleta baten ikuspegi berria sor dezakezu.</para></listitem>
+
+	      <listitem><para><menuchoice><shortcut> <keysym>F3</keysym></shortcut> <guimenuitem>Ireki</guimenuitem></menuchoice>: komando honek lehendik dagoen paleta bat irekitzen du, eta fitxategi bat hautatzeko eskatzen dizu, hain zuzen ere, paleta hori duena.</para></listitem>
+
+	      <listitem><para><menuchoice><shortcut> <keysym>Ktrl-S</keysym></shortcut> <guimenuitem>Gorde paleta</guimenuitem> </menuchoice>: uneko paleta gordetzen du. Kontuan hartu erabiltzaileak ezin duela sistemako paleta aldatu, horregatik komando honek ez du inongo eraginik edukiko sistemako paletaren ikuspegian. Bilaketa-dokumentuetan ere ez du eraginik.</para></listitem>
+
+	      <listitem><para><menuchoice><guimenuitem>Gorde honela paleta</guimenuitem></menuchoice>: uneko paleta izen berri batekin gordetzen du.  Bilaketa-dokumentuetan ez du eraginik.</para></listitem>
+
+	      <listitem><para><menuchoice><guimenuitem>Itzuli</guimenuitem></menuchoice>: uneko dokumentuan egindako aldaketak baztertzen ditu, paleta jatorrizko egoerara leheneratuz.</para></listitem>
+
+	      <listitem><para><menuchoice><shortcut> <keysym>Ktrl-W</keysym></shortcut> <guimenuitem>Itxi</guimenuitem></menuchoice>: uneko dokumentuaren uneko ikuspegia edo ikuspegi guztiak ixtea ahalbidetzen du.</para></listitem>
+	      
+	      <listitem><para><menuchoice><shortcut> <keysym>Ktrl-Q</keysym></shortcut> <guimenuitem>Irten</guimenuitem></menuchoice>: irten programatik.</para></listitem></itemizedlist></listitem></varlistentry> <!--
+    <varlistentry>
+     <term><guimenu>Settings</guimenu></term>
+     <listitem>
+      <para>
+       This menu contains commands for changing various settings and
+       preferences of &gcolor;: 
+       <itemizedlist>
+        <listitem>
+         <para>
+          <guimenuitem>Format</guimenuitem>
+           &mdash; this option allows you to change the format used by
+           &gcolor; for showing Red, Green and Blue (RGB) values for
+           each color (see details in <xref linkend="xcolors">). Unless
+           you know what you are doing, it is best to use the default
+           format (8-bit decimal). 
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <guimenuitem>Search update</guimenuitem>
+          &mdash;this command is described in <xref linkend="search">.
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <guimenuitem>Search in </guimenuitem>
+          &mdash;this command is described in <xref linkend="search">.
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <guimenuitem>On drop</guimenuitem>
+          &mdash;this command allows you to choose the default action
+          to perform when you drop into &gcolor; window a color from
+          some different source, such as the default GNOME color
+          selector. Possible options are <guilabel>Search
+          it</guilabel>, i.e. automatically switch to
+          <guilabel>Search</guilabel> window and show the best matches
+          to the dropped color among the system colors and favorites,
+          or <guilabel>Add to favorites</guilabel>, i.e. add the
+          dropped color to your list of favorites.  
+         </para>
+        </listitem>
+       </itemizedlist>
+      </para>
+     </listitem>
+    </varlistentry>
+-->
+
+	<varlistentry><term><guimenu>Edizioa</guimenu></term> <listitem><para>Menu honek ondorengo komandoak ditu:</para>
+	    
+	    <itemizedlist><listitem><para><menuchoice><shortcut> <keysym>Ktrl-C</keysym></shortcut> <guimenuitem>Kopiatu</guimenuitem></menuchoice>: orain hautatutako kolorea(k) arbelean kopiatzen ditu</para></listitem>
+
+
+	      <listitem><para><menuchoice><shortcut> <keysym>Ktrl-V</keysym></shortcut> <guimenuitem>Itsatsi</guimenuitem></menuchoice>: arbeleko edukia uneko dokumentuan itsasten du.</para></listitem>
+
+	      <listitem><para><guimenuitem>Txertatu kolorea</guimenuitem>: elementu honek<link linkend="editcolor">edizioa</link> azpileiho berria sortzen du eta honen bidez kolore berri bat definitu eta uneko dokumentuari gehi diezaiokezu.</para></listitem>
+
+
+	      <listitem><para><guimenuitem>Hautatutako koloreak kendu</guimenuitem>: hautatutako koloreak paletatik kentzen ditu.</para></listitem>
+
+
+	      <listitem><para> <guimenuitem>Hautatutako koloreak editatu</guimenuitem>: komando honek azpileiho berri bat abiarazten du eta azpileiho horretan hautatutako koloreen propietateak alda ditzakezu (ikus <xref linkend="editcolor">).</para></listitem>
+
+
+	      <listitem><para> <guimenuitem>Dokumentua/Ikuspegiaren propietateak</guimenuitem>: <interface>Propietateak</interface> elkarrizketa abiarazten du<!--, described
+		  in <xref linkend="properties"> --> </para></listitem>
+
+	      <listitem><para> <guimenuitem>Hobespenak</guimenuitem>: <interface>Hobespenak</interface> elkarrizketa abiarazten du<!--, described
+		  in <xref linkend="prefs">--></para></listitem></itemizedlist>
+	    
+	  </listitem></varlistentry>
+	
+	<varlistentry><term><guimenu>Laguntza</guimenu></term> <listitem><para>Menu honen edukia: <itemizedlist><listitem><para><guimenuitem>Eskuliburua</guimenuitem>: eskuliburu hau erakusten du.</para></listitem>
+
+		<listitem><para><guimenuitem>Honi buruz</guimenuitem>: &gcolor;ri buruzko oinarrizko informazioa erakusten du, esaterako egilearen izena eta aplikazioaren bertsio-zenbakia.</para></listitem></itemizedlist>
+	      
+	    </para></listitem></varlistentry></variablelist></sect2>
+
+
+    <sect2 id="toolbar">
+      <title>Tresna-barra</title> 
+      <para>Tresna-barra hau menu-barraren azpian dago eta botoi hauek ditu:</para> <itemizedlist>
+
+	<listitem><para><guibutton>Irten</guibutton>: programatik irteten da.</para></listitem>
+
+	<listitem><para><guibutton>Ireki</guibutton>: lehendik dagoen paleta bat irekitzen du, eta paleta hori duen fitxategia hautatzeko eskatzen dizu.</para></listitem>
+
+	<listitem><para><guibutton>Itxi</guibutton>: uneko azpileihoaren ikuspegia ixten du.</para></listitem>
+
+	<listitem><para><guibutton>Hartu</guibutton>: botoi honen bidez pantailako edozein lekutan dagoen kolorea hauta dezakezu parekatzeko (ikus<xref
+	    linkend="search"> xehetasunetarako).</para></listitem>
+
+	<listitem><para><guibutton>Honi buruz</guibutton>: &gcolor;ri buruzko oinarrizko informazioa erakusten du, esaterako egilearen izena eta aplikazioaren bertsio-zenbakia.</para></listitem></itemizedlist></sect2> 
+
+
+  </sect1> 
+
+
+
+
+
+<!-- ============================Documents and views ================ --> <sect1 id="documents">
+    <title>Dokumentuak eta ikuspegiak</title> 
+    
+    <para>&gcolor;ek &quot;dokumentua&quot; terminoa kolore-bildumei deitzeko erabiltzen du. Bildumako kolore bakoitzari izen bat ematen zaio. Dokumentu motarik sinpleena paleta da. Paleta fitxategian zerrendatutako kolore-bilduma besterik ez da; hori deskribaturik dago hemen: <xref
+       linkend="simple">. Beste dokumentu mota bat <link
+       linkend="search">bilaketa-dokumentua</link> da, hori paleta desberdinetan aurkitutako kolore-zerrenda baten berdinena den kolore-zerrenda da. Gainera, &gcolor;ek dokumentu berdina erakusteko modu desberdinak edo &quot;ikuspegi-moduak&quot; eskaintzen ditu. Erabilgarri dauden ikuspegi-moduak:</para> <itemizedlist><listitem> <para><guilabel>Zerrenda</guilabel>: modu honetan, &gcolor;k kolore guztiak dokumentu batean zerrendatzen ditu, lagin txiki bat, Gorria, Berdea eta Urdina (GBU) balioak eta kolore bakoitzaren izena erakutsiz (ikus <xref
+                  linkend="xcolors"> GBU balioei buruzko xehetasunetarako).</para> <para>Lehenespenez, koloreak fitxategian azaltzen diren hurrenkera berdinean daude zerrendaturik. Fitxategi hori <guilabel>Kolorea</guilabel> etiketaren ondoan dagoen beheranzko triangelu txiki batean adierazten da.   GNOMEren aplikazio guztietan bezala, hurrenkera <guilabel>Kolorea</guilabel> etiketan behin klik eginez alda dezakezu. Zerrenda <guilabel>Izena</guilabel> etiketan klik eginez alfabetikoki ordena dezakezu.</para>
+	  
+	  <para>Bereizlea saguaren ezkerreko botoiarekin <guilabel>Balioa</guilabel> eta <guilabel>Izena</guilabel> eremuen artera arrastatuz, eremu horien zabalera alda daiteke.</para>
+
+
+
+	  <figure id="bynamefig">
+	    <title>Zerrendaren ikuspegia</title>
+	    <screenshot><screeninfo>Kolore-arakatzaileren Sistemako kolore-zerrendaren ikuspegia </screeninfo> <graphic fileref="figures/list" format="png"
+		       srccredit="sasha"></graphic></screenshot></figure>
+
+            </listitem> 
+       
+             <listitem> <para><guilabel>Sareta</guilabel>: modu honetan, &gcolor;k kolore bakoitzaren lauki txiki lagina erakusten du, lauki horiek saretatan antolatuz.</para>
+
+
+	  <figure id="palettefig">
+	    <title>Saretaren ikuspegia</title>
+	    <screenshot><screeninfo>Kolore-arakatzailearen Sistemako koloreak izenaren arabera </screeninfo> <graphic fileref="figures/grid" format="png" 		       srccredit="sasha"></graphic></screenshot></figure>
+ 
+
+            </listitem> 
+       
+           <listitem> <para><guilabel>Editatu</guilabel> EGITEKOAK</para></listitem> 
+       
+         </itemizedlist>
+
+      <para>Erabiltzen duzun ikuspegia kontuan hartu gabe, koloreen errektangelu-laginak GNOMEren panelera, GNOMEren terminalera, eta GNOMEren beste hainbat aplikazio-leihotara arrasta ditzakezu atzeko planoaren koloreak aldatzeko. </para>
+
+
+        </sect1>
+
+
+
+<!-- ============================Palette documents ================ --> <sect1 id="simple">
+    <title>Paletekin lanean</title> 
+    
+    <para>Paleta kolore-zerrenda bat da, kolore bakoitzak izen bat dauka Adibidez, X Window sistemak aurrez definitutako sistemaren paleta dakar, ehunka kolore dituelarik, sinpleenetatik, &quot;gorria&quot; edo &quot;urdina&quot; bezalakoak, exotikoenetara, esaterako &quot;Labanda Gorria&quot;. Paleta pertsonala edo hainbat paleta defini ditzakezu, jarraian deskribatzen den moduan. Paleta bakoitza aparteko fitxategi moduan gordetzen da; adibidez, sistemako paleta <filename>rgb.txt</filename> fitxategiaren bidez definiturik dago X11 liburutegi-direktorian, normalean <filename
+      class="directory">/usr/lib/X11R6/lib/X11</filename>).</para>
+      
+
+
+   <sect2>
+     <title> Paletak ireki eta itxi</title>
+
+    <para>Lehenespenez, &gcolor;ek sistemako paletaren 2 ikuspegi erakusten ditu: zerrendaren ikuspegia eta saretaren ikuspegia. Lehendik dagoen paleta bat <menuchoice><guimenu>Fitxategia</guimenu> <guimenuitem>Ireki</guimenuitem> </menuchoice> hautatuz edo tresna-barrako <guibutton>Ireki</guibutton> botoiarekin ireki daiteke. Uneko paletaren beste ikuspegi bat duen beste leiho bat <menuchoice><guimenu>Fitxategia</guimenu> <guisubmenu>Berria</guisubmenu> <guimenuitem>Ikuspegi berria</guimenuitem></menuchoice> hautatuz ireki daiteke. 
+
+      </para> <para>  Dokumentu baten uneko ikuspegia ixteko, hautatu <menuchoice><guimenu>Fitxategia</guimenu> <guisubmenu>Itxi</guisubmenu> <guimenuitem>Itxi ikuspegia</guimenuitem></menuchoice>; uneko paletaren ikuspegi guztiak ixteko, aukeratu <menuchoice><guimenu>Fitxategia</guimenu> <guisubmenu>Itxi</guisubmenu> <guimenuitem>Itxi dokumentua</guimenuitem></menuchoice>.</para></sect2>
+
+    <sect2 id="newpalette">
+      <title>Paleta berriak sortu </title>
+      <para>Sistemako koloreez gain, erabiltzaileak aldatu ezin dituenak, zure kolore-zerrendak ere sor ditzakezu. Horretarako, hautatu <menuchoice><guimenu>Fitxategia</guimenu> <guisubmenu>Berria</guisubmenu> <guimenuitem>Dokumentu berria</guimenuitem></menuchoice>. Horrek elkarrizketa bat abiaraziko du, eta dokumentu-mota berri bat (aukeratu <guilabel>Fitxategia</guilabel>), deskribapen laburra, eta izen labur bat (fitxaren etiketarentzat) hauta ditzakezu. Dokumentu berriarentzat ikuspegi-modu bat ere hautatu beharko duzu (nahi izanez gero, gehiago hauta ditzakezu). <guibutton>Bukatu</guibutton> botoian klik egitean, dokumentu berri baten azpileihoa azalduko da &gcolor;ren leiho nagusian.  Jatorriz, leiho hori hutsik egongo da; nahi dituzun koloreak gehi ditzakezu, jarraian azaltzen den bezala.</para></sect2>
+
+
+
+    <sect2 id="editingpalette"> 
+     <title>Paletak editatu eta gorde</title>
+     <para>Behin zure paletak sortzen dituzunean, kolore gehiago gehitu edo kendu, paleten izena aldatu, eta beste hainbeste gauza egin ditzakezu. Kontuan hartu sistema-administratzailearekin (root) konektaturik ez bazaude, ezin duzula sistemako paleta aldatu.</para> <para>Paletari kolore berri bat gehitzeko, saguaren eskuineko botoiarekin klik egin paletan eta hautatu <guimenuitem>Txertatu kolorea</guimenuitem> <guimenu>laster</guimenu>-menuan, edo <guimenuitem>Txertatu kolorea</guimenuitem> <guimenu>Edizioa</guimenu> menuan. Horrek, <link
+	linkend="editcolor">elkarrizketa-koadro</link> berria sortuko du, kolorearentzat izena eta GBU balioak zehazten ahalbidetuz.  </para> <para> Kolore bat paleta batetik bestera kopiatzeko, lehenengo panelean kolorea hautatu, <menuchoice><guimenu>Edizioa</guimenu> <guimenuitem>Kopiatu</guimenuitem></menuchoice> erabiliz arbelean kopiatu, bigarren panelera joan eta <menuchoice><guimenu>Edizioa</guimenu> <guimenuitem>Itsatsi</guimenuitem></menuchoice> hautatu. Teklatuko <keysym>Ktrl-C</keysym> eta <keysym>Ktrl-V</keysym> laster-teklak ere erabil ditzakezu kopiatu eta itsasteko, hurrenez hurren.</para> <para>Kolore bat paletatik kentzeko, kolore hori hautatu gainean klik eginez, eta <menuchoice><guimenu>Edizioa</guimenu> <guimenuitem>Hautatutako koloreak kendu</guimenuitem></menuchoice> hautatu. Kolore bat kentzeko modu errazagoa saguaren eskuineko botoiarekin gainean klik egin eta <guimenuitem>Hautatutako koloreak kendu</guimenuitem> <guimenu>pop-up</guimenu> menuan hautatzea da. Modu berean, hainbat kolore hautatu eta denak ken ditzakezu: horretarako, hautatu nahi dituzun koloreetan klik egin <keycap>KTRL</keycap> tekla sakatzen duzun bitartean. Kolore-bloke jarraia ere hauta dezakezu aurrena blokeko lehenengo kolorean eta gero azkenengo kolorean klik eginez, <keycap>MAIUS</keycap> tekla sakatzen duzun bitartean.</para> <para>Azkenik, dokumentuaren beste propietate batzuk ere alda ditzakezu, esaterako moduaren izena eta ikuspegia, <guimenuitem>Dokumentua/Ikuspegiaren propietateak</guimenuitem> <guimenu>Edizioa</guimenu> edo <guimenu>laster</guimenu>-menua hautatuz. Horrek <interface>Propietateak</interface> elkarrizketa abiaraziko du<!--,
+        described in <xref linkend="properties">-->.</para> <para>Paleta bat aldatzen duzunean, aldaketa horiek <menuchoice><guimenu>Fitxategia</guimenu> <guimenuitem>Gorde paleta</guimenuitem></menuchoice> hautatuz gorde ditzakezu. Aldatutako paleta izen berri batekin ere gorde dezakezu <guimenuitem>Gorde honela paleta...</guimenuitem>  komandoa erabiliz; fitxategi-izen berria eta kokalekua eskatuko dizkizu.</para>
+
+    </sect2>
+
+    <sect2 id="editcolor">
+      <title>Kolorea editatu</title>
+      <para>Paletako kolore bat aldatzeko, kolorearen gainean klik egin eta <menuchoice><guimenu>Edizioa</guimenu> <guimenuitem>Hautatutako kolorea editatu</guimenuitem> </menuchoice> hautatu, edo kolore horretan saguaren eskuineko botoiarekin klik egin eta <guimenuitem>Hautatutako kolorea editatu</guimenuitem> <guimenu>laster</guimenu>-menuan hautatu.</para></sect2></sect1> 
+
+<!-- =================Search windows ==================== --> <sect1 id="search">
+    <title> Bilaketa</title> 
+    <para>Leiho hau, <guilabel>Bilaketa</guilabel> izenaz etiketatua, kolore jakin baten antzekoena dena sisteman aurkitzeko erabiltzen da. Aurkitu beharreko kolorea hainbat modutan zehatz dezakezu: graduatzailearen bidez GBU balioak emanez, kolorea beste kolore-iturri batetik arrastatuz eta jareginez, esaterako, lehenetsitako GNOMEren kolore-hautatzailea (<menuchoice><guisubmenu>Jaregin</guisubmenu> <guimenuitem>Bilatu</guimenuitem> </menuchoice> aukera <guimenu>Ezarpenak</guimenu> menuan hautatu baduzu), edo pantailako pixel baten kolorea hartuz. Azken metodo hori erabiltzeko, tresna-barrako <guibutton>Hartu</guibutton> botoian klik egin. Zure saguaren kurtsorea tantagailu bihurtuko da. Tantagailuaren muturra pantailako edozein puntutan jarri eta egin klik. &gcolor;ek puntu horren kolorea aztertu, GBU balioak determinatu, eta kolore hori eta GBU balioak <guilabel>Bilatu</guilabel> leihoan erakutsiko ditu. Kolore horren antzekoenak diren sistemako kolore guztiak ere erakutsiko ditu.</para>
+    
+
+    <figure id="searchfig">
+      <title>Bilaketa-leihoa</title>
+      <screenshot><screeninfo>Kolore-arakatzailearen bilaketa-leihoa</screeninfo> <graphic fileref="figures/search" format="png"
+		 srccredit="sasha"></graphic></screenshot></figure>
+
+    <para>&gcolor;ek emandako kolorearen &quot;aski antzekoak&quot; diren koloreak bakarrik erakusten ditu, eta duten antzekotasunaren arabera ordenatzen ditu, aurrena parekotasun onenak erakusten direlarik.  Tolerantzia <guilabel>Tolerantzia</guilabel> graduatzailearen bidez doi dezakezu: balio txikiagoek &gcolor;ri hautakorragoa izatera bultzatzen diote, antzekotasun onenak bakarrik erakuts ditzan. Tolerantziaren balioa 0-n ezartzen baduzu, parekotasun zehatzak bakarrik erakutsiko ditu; 100-ean ezarriz, berriz, kolore guztiak erakutsiko ditu.</para> <para>Lehenespenez, &gcolor;ek sistemako koloreen artean bakarrik bilatzen ditu antzekotasunak. EGITEKOAKera alda daiteke</para> <para>Beste aukera konfiguragarri bat eguneratze-modua da. Lehenespenez, &gcolor;ek etengabe eguneratzen ditu parekatzeak kolorea aldatzen duzunean (adibidez, GBU balioak erabiliz) &mdash;. Zure sisteman mantsoa dela ikusten baduzu, <menuchoice><guimenu>Ezarpenak</guimenu> <guimenuitem>Bilatu eguneratzea</guimenuitem></menuchoice> erabil dezakezu eguneratze-modua <guilabel>Etena</guilabel> (&gcolor;ek graduatzailea askatzen duzunean eguneratuko ditu parekatzeak) edo <guilabel>Atzeratua</guilabel> modura aldatzeko ((&gcolor;k segundo erdiko atzerapenarekin eguneratuko ditu parekatzeak).</para></sect1>
+ 
+<!-- ================Properties Dialog =================== --> <!--
+
+  <sect1 id="properties">
+    <title>Properties dialog</title>
+    <para>
+      FIXME
+    </para>
+  </sect1>
+-->
+
+<!-- ================Preferences Dialog =================== --> <!--
+
+  <sect1 id="prefs">
+    <title>Preferences  dialog</title>
+    <para>
+      FIXME
+    </para>
+  </sect1>
+-->
+
+ <!-- ============= Colors and RGB================================== --> <sect1 id="xcolors">
+    <title>X Window sistemako koloreak</title> 
+
+    <para> X Window sisteman, kolore bakoitza 3 baliorekin deskribatzen da, hau da, Gorria, Berdea eta Urdina (denok dakigunez, lehen mailako hiru kolore horien konbinazioaz kolore guztiak lor daitezke). 3 balio horiei, normalean, GBU balioak deitzen zaie. Horietako bakoitzak 0-255 bitartean egon behar du; adibidez, hirukoitza (0,0,0) beltza da, (255,0,0) gorria da, eta (255, 255, 255) zuria da.</para> <para> Kolore posibleen kopuru osoa, beraz, 256&times;256&times;256=2<superscript>24</superscript>=16.777.216 da. Beti ere, kontuan hartu gabe zure sistema hainbat kolore desberdin X Window sistemako konfigurazioaren menpe daudela erakusteko gai den edo ez. Hori zure bideo-txartelaren gaitasunetara mugaturik dago. Bideo-txartel berrienak kolore guzti horiek erakuts ditzakete; zaharragoek, berriz, 2<superscript>16</superscript>=64.536 (kolore-sakontasuna 16) edo 2<superscript>8</superscript>=256 (kolorearen sakonera 8) koloreak bakarrik erabiltzeko gai izango dira. Kasu horretan, X Window sistemak hirukoteak (adibidez, 234, 112, 243) erabiliko ditu GBU balioak deskribatzeko, baina hirukote horietako batzuk kolore berberak sortuko dituzte. Koloreei buruzko informazio gehiago X-en eskuliburu-orrialdean aurkituko duzu.</para></sect1> <!-- ============= Bugs ================================== -->
+
+ <sect1 id="bugs">
+  <title>Ezagutzen diren akats eta mugak</title>
+  <para>Une honetan, zerrendatzeko gehiegi.</para></sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Egileak</title>
+    <para>&gcolor; Tim Gerla eta Eric Brayeur-ek idatzi dute.  Bidali zuen iruzkin, iradokizun eta akatsen berri <ulink       url="http://bugs.gnome.org" type="http">GNOMEren akatsen segimendurako datu-basera</ulink>. (Akatsen berri bidaltzeko argibideak <ulink url="http://bugs.gnome.org/Reporting.html"       type="http">linean</ulink> aurkituko dituzu.) Akatsen berri emateko, <application>akatsen berri emateko tresna</application> (<command>bug-buddy</command>) ere erabil dezakezu. Tresna hori <guimenu>Menu nagusiko</guimenu> <guisubmenu>Utilitateak</guisubmenu> azpimenuan duzu eskuragarri.</para>
+
+    <para>Eskuliburu hau Alexander Kirillov-ek idatzi du (<email>kirillov@math.sunysb.edu</email>). Eskuliburuari dagozkion iruzkinak eta iradokizunak <ulink       type="http" url="http://www.gnome.org/gdp">GNOMEren dokumentazio-proiektura</ulink> bidal ditzakezue: <email>docs@gnome.org</email>. Iruzkinak linean ere egin ditzakezue <ulink type="http"       url="http://www.gnome.org/gdp/doctable/">GNOMEren dokumentazio-egoeraren taula</ulink> erabiliz.</para></sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana edota alda dezakezu, Free Software Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para> <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK gabe; era berean, ez da bermatzen EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle></para>. <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia bat <citetitle>GNOME erabiltzailearen gida</citetitle>ren eranskinean daukazu.  <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia Free Software Foundation-en bidez ere lor dezakezu <ulink type="http"       url="http://www.fsf.org">haren Web gunea</ulink> bisitatuz edo hona idatziz:
+      <address>
+	Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country>
+      </address>
+    </para></sect1></article>
+
+
+
+
