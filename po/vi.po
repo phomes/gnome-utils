@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils VERSION\n"
-"POT-Creation-Date: 2002-08-28 16:23+0100\n"
-"PO-Revision-Date: 2002-06-05 02:49+0700\n"
-"Last-Translator: pclouds <pclouds@gmx.net>\n"
-"Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2002-08-31 05:13+0200\n"
+"PO-Revision-Date: 2002-08-31 18:14+0700\n"
+"Last-Translator: Trinh Minh Thanh <tmthanh@linuxmail.org>\n"
+"Language-Team: Gnome-Vi Team <Gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -88,9 +88,8 @@ msgid "GNOME Calculator"
 msgstr "Máy tính"
 
 #: gcalc/gcalc.c:61
-#, fuzzy
 msgid "(C) 1998 the Free Software Foundation"
-msgstr "(C) 1998,2002 the Free Software Foundation"
+msgstr "(C) 1998 Tổ Chức Phần Mềm Tự Do"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
@@ -126,7 +125,7 @@ msgstr "Đảo"
 
 #: gcalc/gnome-calc.c:1253
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1253
 msgid "Square"
@@ -232,7 +231,7 @@ msgstr "Cơ số e"
 
 #: gcalc/gnome-calc.c:1269
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "x<sup>y</sup>"
 
 #: gcalc/gnome-calc.c:1269
 msgid "Power"
@@ -435,14 +434,12 @@ msgid "_Insert"
 msgstr "_Chèn"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "Mã ký tự:"
+msgstr "_Mã ký tự:"
 
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "Ký tự:"
+msgstr "_Ký tự:"
 
 #: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
@@ -465,8 +462,7 @@ msgid "GNOME Character Map"
 msgstr "Bảng ký tự"
 
 #: gcharmap/src/callbacks.c:66
-msgid ""
-"Select, copy and paste characters from your font into other applications"
+msgid "Select, copy and paste characters from your font into other applications"
 msgstr "Chọn, sao chép và dán các ký tự từ font của bạn vào ứng dụng khác"
 
 #: gcharmap/src/callbacks.c:113
@@ -531,7 +527,6 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "Chèn các ký tự được chọn bởi các mã ký tự."
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
 msgstr "_Ký tự"
 
@@ -624,13 +619,12 @@ msgstr ""
 "chưa. Server mặc định là dict.org và số hiệu cổng là 2628"
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "Từ điển"
+msgstr "Từ điển Gnome"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "Bản quyền 1999 do Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -891,31 +885,36 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"Chỉ định khi dùng tìm kiếm thông minh. Khoá này phụ thuộc vào việc máy chủ "
+"từ điển hỗ trợ tùy chọn này. Mặc định là Đúng (TRUE)"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "Cơ sở dữ liệu dùng trong máy chủ từ điển."
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"Máy chủ từ diển để kết nối đến. Máy chủ mặc định là dict.org. Hãy xem "
+"http://www.dict.org để biết chi tiết về các máy chủ khác"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"Tên của cơ sở dữ liệu cá nhân dùng trong máy chủ từ điển. ! "
+"Chỉ định cho từ điển của Gnome nên tìm mọi cơ sở dữ liệu trong máy chủ được trao"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "Số hiệu cổng (port) để nối đến. Cổng mặc định là 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "Chiến lược tìm kiếm"
+msgstr "Chiến lược tìm kiếm để dùng"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -923,6 +922,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"Chiến lược tìm kiếm để dùng, phụ thuộc vào chiến lược tìm kiếm mà máy "
+"chủ từ điển hỗ trợ. Chiến lược mặc định là 'lev' - Trùng khớp các từ trong "
+"một khoảng của Levenshtein"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1338,8 +1340,7 @@ msgstr "Thư mục bắt đầu không tồn tại"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
-msgstr ""
-"Không thể hiển thị dòng lệnh tìm kiếm. Vui lòng xác định tiêu chuẩn tìm kiếm."
+msgstr "Không thể hiển thị dòng lệnh tìm kiếm. Vui lòng xác định tiêu chuẩn tìm kiếm."
 
 #: gsearchtool/gsearchtool.c:1024
 msgid "Search Command Line"
@@ -1374,7 +1375,7 @@ msgstr "Không có trình hiển thị cho loại MIME này."
 
 #: gsearchtool/gsearchtool.c:1269
 msgid "Entry changed called for a non entry option!"
-msgstr ""
+msgstr "Gọi mục nhập thay đổi cho tùy chọn không có mục nhập!"
 
 #: gsearchtool/gsearchtool.c:1339
 msgid "Search Rule Value Entry"
@@ -1573,81 +1574,77 @@ msgstr "Trình xem log hệ thống"
 msgid "Copyright (C) 1998"
 msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "Cơ sở dữ liệu hành động"
 
-#: logview/actions.c:85
-#, fuzzy
+#: logview/actions.c:84
 msgid "Actions"
-msgstr "Hành động..."
+msgstr "Hành động"
 
-#: logview/actions.c:153
-#, fuzzy
+#: logview/actions.c:152
 msgid "_Add"
-msgstr "Cộng"
+msgstr "T_hêm"
 
-#: logview/actions.c:160
-#, fuzzy
+#: logview/actions.c:159
 msgid "_Edit"
-msgstr "Sửa..."
+msgstr "Biên _Soạn"
 
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#: logview/actions.c:166 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "_Loại bỏ"
 
-#: logview/actions.c:260
+#: logview/actions.c:259
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Không thể mở cơ sở dữ liệu hành động <%s>!"
 
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Lỗi phân tích cơ sở dữ liệu hành động"
 
-#: logview/actions.c:386
+#: logview/actions.c:385
 msgid "Can't write to actions database!"
 msgstr "Không thể ghi vào cơ sở dữ liệu hành động!"
 
-#: logview/actions.c:486
+#: logview/actions.c:485
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "Lỗi khi thực thi hoạt động được chỉ định"
 
-#: logview/actions.c:507
+#: logview/actions.c:506
 msgid "<empty>"
 msgstr "<rỗng>"
 
-#: logview/actions.c:508
+#: logview/actions.c:507
 msgid "log name regexp"
 msgstr "regexp tên log"
 
-#: logview/actions.c:509
+#: logview/actions.c:508
 msgid "process regexp"
 msgstr "regexp tiến trình"
 
-#: logview/actions.c:510
+#: logview/actions.c:509
 msgid "message regexp"
 msgstr "regexp thông điệp"
 
-#: logview/actions.c:511
+#: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
 msgstr "hành động cần thực hiện khi khớp regexp"
 
-#: logview/actions.c:512
+#: logview/actions.c:511
 msgid "description"
 msgstr "mô tả"
 
-#: logview/actions.c:772
-#, fuzzy
+#: logview/actions.c:771
 msgid "_Description:"
-msgstr "Mô tả:"
+msgstr "_Mô tả:"
 
-#: logview/actions.c:781
+#: logview/actions.c:780
 msgid "Description of this entry."
 msgstr "Mô tả của mục này"
 
-#: logview/actions.c:805
+#: logview/actions.c:804
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1970,7 +1967,7 @@ msgstr "Tập tin đã mở rồi"
 
 #: logview/logview.c:801
 msgid "Open new logfile"
-msgstr "Mở log mới"
+msgstr "Mở logfile mới"
 
 #: logview/misc.c:56
 msgid "Cannot load required fonts, cannot continue"
@@ -2027,7 +2024,7 @@ msgstr "Đang theo dõi log..."
 
 #: logview/monitor.c:673
 msgid "TOUCHED!!\n"
-msgstr ""
+msgstr "Đạt Tới!!\n"
 
 #: logview/userprefsdialog.c:65
 msgid "hostname column width ( 0 to hide this column ): "
@@ -2437,3 +2434,4 @@ msgstr ""
 
 #~ msgid "Archive"
 #~ msgstr "Kho lưu"
+
