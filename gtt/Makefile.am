@@ -1,4 +1,5 @@
-SUBDIRS = doc glade help phtml
+# SUBDIRS = doc glade help ghtml
+SUBDIRS = doc glade help 
 
 bin_PROGRAMS = gtt
 
@@ -17,7 +18,6 @@ gtt_SOURCES = 		\
 	menus.c		\
 	menus.h		\
 	options.c	\
-	phtml.c		\
 	plug-in.c	\
 	proj.c		\
 	props-invl.c	\
@@ -40,7 +40,6 @@ noinst_HEADERS = 	\
 	gtt.h		\
 	journal.h	\
 	menucmd.h	\
-	phtml.h		\
 	plug-in.h	\
 	proj.h		\
 	proj_p.h	\

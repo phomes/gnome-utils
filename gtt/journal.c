@@ -30,7 +30,6 @@
 #include "cur-proj.h"
 #include "journal.h"
 #include "ghtml.h"
-#include "phtml.h"
 #include "proj.h"
 #include "props-invl.h"
 #include "props-task.h"
@@ -39,7 +38,6 @@
 /* this struct is a random mish-mash of stuff, not well organized */
 
 typedef struct wiggy_s {
-	GttPhtml *ph;    
 	GttGhtml *gh;    
 	GtkHTML *htmlw;
 	GtkHTMLStream *handle;
@@ -224,7 +222,6 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 	gtt_project_remove_notifier (wig->prj, redraw, wig);
 	edit_interval_dialog_destroy (wig->edit_ivl);
 	gtk_widget_destroy (wig->top);
-	gtt_phtml_destroy (wig->ph);
 	gtt_ghtml_destroy (wig->gh);
 	g_free (wig->filepath);
 	g_free (wig);
@@ -326,7 +323,7 @@ html_on_url_cb(GtkHTML * html, const gchar * url, gpointer data)
 /* ============================================================== */
 
 static void
-do_show_report (const char * report, GttProject *prj, int is_scheme)
+do_show_report (const char * report, GttProject *prj)
 {
 	GtkWidget *jnl_top, *jnl_viewport, *jnl_browser;
 	GladeXML  *glxml;
@@ -350,10 +347,7 @@ do_show_report (const char * report, GttProject *prj, int is_scheme)
 
 	wig->top = jnl_top;
 	wig->htmlw = GTK_HTML(jnl_browser);
-	wig->ph = gtt_phtml_new();
-	gtt_phtml_set_stream (wig->ph, wig, wiggy_open, wiggy_write, 
-		wiggy_close, wiggy_error);
-	
+
 	wig->gh = gtt_ghtml_new();
 	gtt_ghtml_set_stream (wig->gh, wig, wiggy_open, wiggy_write, 
 		wiggy_close, wiggy_error);
@@ -412,14 +406,7 @@ do_show_report (const char * report, GttProject *prj, int is_scheme)
 	else 
 	{
 		gtt_project_add_notifier (prj, redraw, wig);
-		if (is_scheme)
-		{
-			gtt_ghtml_display (wig->gh, report, prj);
-		}
-		else
-		{
-			gtt_phtml_display (wig->ph, report, prj);
-		}
+		gtt_ghtml_display (wig->gh, report, prj);
 	}
 }
 
@@ -447,20 +434,6 @@ resolve_path (char *path_frag)
 		p = stpcpy (p, path_frag);
 		path = gnome_datadir_file (buff);
 	}
-	if (NULL == path)
-	{
-		p = buff;
-		p = stpcpy (p, "phtml/C/");
-		p = stpcpy (p, path_frag);
-		path = gnome_datadir_file (buff);
-	}
-	if (NULL == path)
-	{
-		p = buff;
-		p = stpcpy (p, "gtt/phtml/C/");
-		p = stpcpy (p, path_frag);
-		path = gnome_datadir_file (buff);
-	}
 	return path;
 }
 
@@ -469,7 +442,7 @@ edit_journal(GtkWidget *w, gpointer data)
 {
 	char * path;
 	path = resolve_path ("journal.ghtml");
-	do_show_report (path, cur_proj, 1);
+	do_show_report (path, cur_proj);
 }
 
 void
@@ -477,7 +450,7 @@ edit_alldata(GtkWidget *w, gpointer data)
 {
 	char * path;
 	path = resolve_path ("bigtable.ghtml");
-	do_show_report (path, cur_proj, 1);
+	do_show_report (path, cur_proj);
 }
 
 void
@@ -485,7 +458,7 @@ edit_invoice(GtkWidget *w, gpointer data)
 {
 	char * path;
 	path = resolve_path ("invoice.ghtml");
-	do_show_report (path, cur_proj, 1);
+	do_show_report (path, cur_proj);
 }
 
 void
@@ -494,7 +467,7 @@ invoke_report(GtkWidget *widget, gpointer data)
 	char * filepath = (char *) data;
 
 	/* do not gnome-filepath this, this is for user-defined reports */
-	do_show_report (filepath, cur_proj, 1);
+	do_show_report (filepath, cur_proj);
 }
 
 /* ===================== END OF FILE ==============================  */
