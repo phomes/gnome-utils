@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
-"PO-Revision-Date: 2002-06-05 01:36+0200\n"
+"POT-Creation-Date: 2002-07-04 14:07+0200\n"
+"PO-Revision-Date: 2002-07-04 14:08+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -125,165 +125,161 @@ msgstr "1/x"
 msgid "Inverse"
 msgstr "Invers"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
-msgstr "x²"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
+msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr "Kvadrat"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr "ROT"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr "Kvadratrot"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr "Töm"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr "Nollställ"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr "Inverterad trigonometri-/logfunktion"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr "Sinus"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr "Tangent"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid " DEG  "
 msgstr " GRD  "
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr "Växla grader / radianer / grad"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr "Basen för den naturliga logaritmen"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr "Lägg till siffra"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr "Bas 10-logaritm"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr "Naturliga logaritmen"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
-msgstr "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
+msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr "Upphöj till"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr "Fakultet"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr "Påbörjande parentes"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr "Avslutande parentes"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr "Dividera med"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr "LAGR"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -291,31 +287,31 @@ msgstr ""
 "Lagra värdet i\n"
 "visningsfältet i minne"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "×"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr "Multiplicera med"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr "HÄMT"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -323,31 +319,31 @@ msgstr ""
 "Visa värdet i minnet\n"
 "i visningsfältet"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr "Subtrahera"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -355,32 +351,32 @@ msgstr ""
 "Lägg till värdet i\n"
 "visningsfältet till värdet i minnet"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr "+"
 
 # Detta är räknesättet
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "Addera"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr "VÄXL"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -388,31 +384,31 @@ msgstr ""
 "Byt värdena i\n"
 "visningsfältet och minnet"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr ","
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr "Decimaltecken"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr "Byt tecken"
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr "Beräkna"
 
@@ -478,24 +474,24 @@ msgid ""
 msgstr ""
 "Markera, kopiera och klistra in tecken från ditt typsnitt till andra program"
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:114
 msgid "del"
 msgstr "ta bort"
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:120
 #, c-format
 msgid " %s: Character code %d"
 msgstr " %s: Teckenkod %d"
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:156
 msgid "Text copied to clipboard..."
 msgstr "Text kopierad till urklipp..."
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:173
 msgid "Text cut to clipboard..."
 msgstr "Text urklippt till urklipp..."
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:226
 msgid "Text pasted from clipboard..."
 msgstr "Text inklistrad från urklipp..."
 
@@ -511,23 +507,23 @@ msgstr "Åtgärdsverktygsrad"
 msgid "_Text to copy:"
 msgstr "_Text att kopiera:"
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 msgid "_Copy"
 msgstr "_Kopiera"
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 msgid "Text to copy"
 msgstr "Text att kopiera"
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr "Fält"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopiera"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 msgid "Copy the text"
 msgstr "Kopiera texten"
 
@@ -1595,73 +1591,73 @@ msgstr "GNOME-systemloggvisare"
 msgid "Copyright (C) 1998"
 msgstr "Copyright © 1998"
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr "Åtgärdsdatabas"
 
-#: logview/actions.c:81
-msgid "Action options"
-msgstr "Åtgärdsalternativ"
+#: logview/actions.c:85
+msgid "Actions"
+msgstr "Åtgärder"
 
-#: logview/actions.c:138
-msgid "Add..."
-msgstr "Lägg till..."
+#: logview/actions.c:153
+msgid "_Add"
+msgstr "_Lägg till"
 
-#: logview/actions.c:144
-msgid "Edit..."
-msgstr "Redigera..."
+#: logview/actions.c:160
+msgid "_Edit"
+msgstr "_Redigera"
 
-#: logview/actions.c:150
-msgid "Remove"
-msgstr "Ta bort"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+msgid "_Remove"
+msgstr "_Ta bort"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Kan inte öppna åtgärdsdatabasen <%s>! Öppnande misslyckades."
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "Fel vid tolkning av åtgärdsdatabasen"
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr "Kan inte skriva till åtgärdsdatabasen!"
 
-#: logview/actions.c:494
+#: logview/actions.c:493
 msgid "<empty>"
 msgstr "<tom>"
 
-#: logview/actions.c:495
+#: logview/actions.c:494
 msgid "log name regexp"
 msgstr "reguljärt uttryck för loggnamn"
 
-#: logview/actions.c:496
+#: logview/actions.c:495
 msgid "process regexp"
 msgstr "bearbeta reguljärt uttryck"
 
-#: logview/actions.c:497
+#: logview/actions.c:496
 msgid "message regexp"
 msgstr "reguljärt uttryck för meddelande"
 
-#: logview/actions.c:498
+#: logview/actions.c:497
 msgid "action to execute when regexps are TRUE"
 msgstr "åtgärd att utföra när reguljära uttryck är sanna"
 
-#: logview/actions.c:499
+#: logview/actions.c:498
 msgid "description"
 msgstr "beskrivning"
 
-#: logview/actions.c:744
-msgid "description:"
-msgstr "beskrivning:"
+#: logview/actions.c:758
+msgid "_Description:"
+msgstr "_Beskrivning:"
 
-#: logview/actions.c:753
+#: logview/actions.c:767
 msgid "Description of this entry."
 msgstr "Beskrivning av denna post."
 
-#: logview/actions.c:800
+#: logview/actions.c:791
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2183,10 +2179,6 @@ msgstr "_Skapa arkiv..."
 msgid "Create a new archive from the items"
 msgstr "Skapa ett nytt arkiv utifrån objekten"
 
-#: meat-grinder/meat-grinder.c:941
-msgid "_Remove"
-msgstr "_Ta bort"
-
 #: meat-grinder/meat-grinder.c:942
 msgid "Remove the selected item"
 msgstr "Ta bort det markerade objektet"
@@ -2227,6 +2219,27 @@ msgid ""
 msgstr ""
 "Kan inte hitta arkiveringsprogrammet (tar)!\n"
 "Detta program används för att skapa arkiv."
+
+#~ msgid "x^2"
+#~ msgstr "x²"
+
+#~ msgid "x^y"
+#~ msgstr "x^y"
+
+#~ msgid "Action options"
+#~ msgstr "Åtgärdsalternativ"
+
+#~ msgid "Add..."
+#~ msgstr "Lägg till..."
+
+#~ msgid "Edit..."
+#~ msgstr "Redigera..."
+
+#~ msgid "Remove"
+#~ msgstr "Ta bort"
+
+#~ msgid "description:"
+#~ msgstr "beskrivning:"
 
 #~ msgid ""
 #~ "</long> </locale> </schema> <schema> <key>/schemas/apps/gnome-dictionary/"
@@ -3734,9 +3747,6 @@ msgstr ""
 #~ msgid "Grid"
 #~ msgstr "Rutnät"
 
-#~ msgid "Edit"
-#~ msgstr "Redigera"
-
 #~ msgid "Search RGB"
 #~ msgstr "Sök RGB"
 
@@ -3834,9 +3844,6 @@ msgstr ""
 
 #~ msgid "Please, select the type of view you want to create."
 #~ msgstr "Välj typen av vy du vill skapa."
-
-#~ msgid "Actions"
-#~ msgstr "Åtgärder"
 
 #~ msgid "Bottom"
 #~ msgstr "Botten"
