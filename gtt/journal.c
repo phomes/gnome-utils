@@ -44,6 +44,7 @@ typedef struct wiggy_s {
 	GtkWidget *top;
 	GtkWidget *interval_popup;
 	GtkWidget *task_popup;
+	GtkWidget *task_delete_memo;
 	GtkFileSelection *filesel;
 	EditIntervalDialog *edit_ivl;
 	char * filepath;
@@ -309,15 +310,19 @@ static void
 task_delete_memo_clicked_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-printf ("duuude del mem\n");
-#if 0
+
+	/* its physically impossible to cut just the memo,
+	 * when its the first one */
+	if (gtt_task_is_first_task (wig->task)) return;
+
+	gtt_task_merge_up (wig->task);
+
 	if (cutted_task)
 	{
 		gtt_task_destroy (cutted_task);
 	}
 	cutted_task = wig->task;
 	gtt_task_remove (cutted_task);
-#endif
 }
 
 static void
@@ -339,7 +344,11 @@ task_popup_cb (Wiggy *wig)
 		NULL, NULL, NULL, wig, 1, 0);
 	if (gtt_task_is_first_task (wig->task))
 	{
-printf ("first task\n");
+		gtk_widget_set_sensitive (wig->task_delete_memo, FALSE);
+	}
+	else 
+	{
+		gtk_widget_set_sensitive (wig->task_delete_memo, TRUE);
 	}
 }
 
@@ -464,6 +473,7 @@ do_show_report (const char * report, GttProject *prj)
 
 	glxml = glade_xml_new ("glade/task_popup.glade", "Task Popup");
 	wig->task_popup = glade_xml_get_widget (glxml, "Task Popup");
+	wig->task_delete_memo = glade_xml_get_widget (glxml, "delete_memo");
 	wig->task=NULL;
 
 	glade_xml_signal_connect_data (glxml, "on_new_task_activate",

@@ -296,11 +296,17 @@ int		gtt_task_get_bill_unit (GttTask *);
  *    settings as the indicated task. It does *not* copy the intervals.
  *    It inserts the new task above the indicated task.
  *
+ * The gtt_task_merge_up() routine will take all of the intervals of 
+ *    the indicated task, and move them into the task above, (thus
+ *    gutting this task of its intervals).  It does not actually 
+ *    destroy this task.
+ *
  * The gtt_task_is_first_task() routine returns True if this task
  *    is the leading task of the project.
  */
 void		gtt_task_remove (GttTask *);
 GttTask *	gtt_task_new_insert (GttTask *);
+void		gtt_task_merge_up (GttTask *);
 gboolean	gtt_task_is_first_task (GttTask *);
 
 

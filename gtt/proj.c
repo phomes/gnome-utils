@@ -1486,6 +1486,36 @@ gtt_task_is_first_task (GttTask *tsk)
 
 /* =========================================================== */
 
+void 
+gtt_task_merge_up (GttTask *tsk)
+{
+	GttTask *mtask;
+	GList * node;
+	GttProject *prj;
+	if (!tsk) return;
+
+	prj = tsk->parent;
+	if (!prj || !prj->task_list) return;
+
+	node = g_list_find (prj->task_list, tsk);
+	if (!node) return;
+
+	node = node->prev;
+	if (!node) return;
+
+	mtask = node->data;
+
+	for (node=mtask->interval_list; node; node=node->next)
+	{
+		GttInterval *ivl = node->data;
+		ivl->parent = mtask;
+	}
+	mtask->interval_list = g_list_concat (mtask->interval_list, tsk->interval_list);
+	tsk->interval_list = NULL;
+}
+
+/* =========================================================== */
+
 int
 gtt_task_get_secs_ever (GttTask *tsk)
 {

@@ -64,7 +64,7 @@
   <widget>
     <class>GtkPixmapMenuItem</class>
     <name>delete_times</name>
-    <tooltip>Delete the task, the memo, ad teh time intervals below it.</tooltip>
+    <tooltip>Delete the task, the memo, and the time intervals below it.</tooltip>
     <signal>
       <name>activate</name>
       <handler>on_delete_times_activate</handler>
