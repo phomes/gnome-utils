@@ -304,7 +304,7 @@ task_paste_clicked_cb(GtkWidget * w, gpointer data)
 	task = cutted_task;
 	cutted_task = gtt_task_dup (task);
 	
-	gtt_task_insert (wig->task, cutted_task);
+	gtt_task_insert (wig->task, task);
 }
 
 static void
