@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2001-11-30 16:14-0600\n"
+"POT-Creation-Date: 2002-01-04 06:15-0500\n"
 "PO-Revision-Date: 2000-02-25 16:35+0100\n"
 "Last-Translator: Dennis Smit <area101.penguin.nl>\n"
 "Language-Team: Dutch <NL@li.org>, Dennis Smit <area101.penguin.nl>\n"
@@ -165,15 +165,15 @@ msgstr ""
 msgid "SUM"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:965
 msgid "1"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:964
 msgid "2"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:963
 msgid "3"
 msgstr ""
 
@@ -208,9 +208,8 @@ msgid "calculator-font.png"
 msgstr ""
 
 #: gcharmap/src/asciiselect.c:96
-#, fuzzy
 msgid "Select Character"
-msgstr "Selecteer een ASCII karakter"
+msgstr "Selecteer een ASCII-teken"
 
 #
 #: gcharmap/src/asciiselect.c:97 gcharmap/src/menus.c:99
@@ -219,33 +218,30 @@ msgstr "Invoegen"
 
 #
 #: gcharmap/src/asciiselect.c:105
-#, fuzzy
 msgid "Character code:"
-msgstr "Karakter:"
+msgstr "Tekencode:"
 
 #
 #: gcharmap/src/asciiselect.c:115
 msgid "Character:"
-msgstr "Karakter:"
+msgstr "Teken:"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #
 #: gcharmap/src/callbacks.c:43 gcharmap/src/interface.c:141
 msgid "Gnome Character Map"
-msgstr "Gnome Karakter Map"
+msgstr "Gnome Speciale Tekens"
 
 #: gcharmap/src/callbacks.c:47
-#, fuzzy
 msgid ""
 "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
 "contain bad English."
 msgstr ""
-"De Gnome Equivalent van het Microsoft Windows programma Speciale tekens....\n"
-"let niet op het taalgebruik :-)"
+"De Gnome equivalent van het Microsoft Windows programma Speciale tekens let "
+"niet op het taalgebruik :-)"
 
 #: gcharmap/src/callbacks.c:63 gcharmap/src/callbacks.c:101
 #: gcharmap/src/interface.c:65
@@ -254,19 +250,19 @@ msgid "del"
 msgstr "Model"
 
 #: gcharmap/src/callbacks.c:107
-#, fuzzy, c-format
+#, c-format
 msgid " %s: Character code %d"
-msgstr "%s: ASCII code %d"
+msgstr "%s: Tekencode %d"
 
 #
 #: gcharmap/src/callbacks.c:134
 msgid "Text copied to clipboard..."
-msgstr "Kopiëren naar Klembord..."
+msgstr "Tekst gekopieerd naar klembord..."
 
 #
 #: gcharmap/src/callbacks.c:146
 msgid "Text cut to clipboard..."
-msgstr "Tekst knippen naar Klembord..."
+msgstr "Tekst geknipt naar klembord..."
 
 #: gcharmap/src/callbacks.c:199
 msgid "Text pasted from clipboard..."
@@ -274,16 +270,15 @@ msgstr "Tekst geplakt vanaf het klembord..."
 
 #: gcharmap/src/interface.c:170
 msgid "Action Toolbar"
-msgstr ""
+msgstr "Actiewerkbalk"
 
 #: gcharmap/src/interface.c:189
 msgid "Text to copy:"
 msgstr "Tekst om te kopiëren:"
 
 #: gcharmap/src/interface.c:215
-#, fuzzy
 msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: gcharmap/src/interface.c:238 gcharmap/src/menus.c:114 logview/logview.c:100
 #: mini-utils/gcolorsel/menus.c:921 stripchart/chart-app.c:258
@@ -310,76 +305,71 @@ msgid "Help"
 msgstr "Help"
 
 #: gcharmap/src/interface.c:264
-#, fuzzy
 msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: gcharmap/src/menus.c:51
 msgid "Insert Character..."
-msgstr "Voeg Karakter In..."
+msgstr "Voeg Teken In..."
 
 #: gcharmap/src/menus.c:52
 msgid "Insert character(s) by choosing character codes."
-msgstr ""
+msgstr "Teken(s) invoegen door tekencodes te kiezen."
 
 #
 #: gcharmap/src/menus.c:59
-#, fuzzy
 msgid "_Action Toolbar"
-msgstr "Werkbalk"
+msgstr "_Actiewerkbalk"
 
 #: gcharmap/src/menus.c:59
-#, fuzzy
 msgid "View or hide the action toolbar"
-msgstr "Toon of verberg de werkbalk"
+msgstr "Toon of verberg de actiewerkbalk"
 
 #
 #: gcharmap/src/menus.c:61
-#, fuzzy
 msgid "_Text Toolbar"
-msgstr "Werkbalk"
+msgstr "_Tekstwerkbalk"
 
 #: gcharmap/src/menus.c:61
-#, fuzzy
 msgid "View or hide the text toolbar"
-msgstr "Toon of verberg de werkbalk"
+msgstr "Toon of verberg de tekstwerkbalk"
 
 #
 #: gcharmap/src/menus.c:63
 msgid "_Statusbar"
-msgstr "Status"
+msgstr "_Statusregel"
 
 #: gcharmap/src/menus.c:63
 msgid "View or hide the statusbar"
-msgstr "Toon of verberg de werkbalk"
+msgstr "Toon of verberg de statusregel"
 
 #: gcharmap/src/menus.c:70
 msgid "Character Table's Font..."
-msgstr ""
+msgstr "Tekentabellettertype"
 
 #: gcharmap/src/menus.c:70
 msgid "Set the character table's font."
-msgstr ""
+msgstr "Stel lettertype in voor tekentabel"
 
 #: gcharmap/src/menus.c:73
 msgid "_Insert at end"
-msgstr ""
+msgstr "_Toevoegen aan einde"
 
 #: gcharmap/src/menus.c:73
 msgid "Insert every selected character at the end of the text entry"
-msgstr ""
+msgstr "Voeg elk geselecteerd teken toe aan het einde van de tekstinvoer"
 
 #: gcharmap/src/menus.c:75
 msgid "_Focusable Buttons"
-msgstr ""
+msgstr "_Focusbare knoppen"
 
 #: gcharmap/src/menus.c:75
 msgid "Set the buttons to be focusable or not"
-msgstr ""
+msgstr "Instellen of de knoppen wel of niet focusbaar zijn"
 
 #: gcharmap/src/menus.c:99
 msgid "Insert character(s) by choosing character codes"
-msgstr ""
+msgstr "Invoegen teken(s) door kiezen van tekencodes"
 
 #: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:177
 msgid "Cut"
@@ -387,28 +377,25 @@ msgstr "Knippen"
 
 #
 #: gcharmap/src/menus.c:102
-#, fuzzy
 msgid "Cut the selection"
-msgstr "Sluit het programma af"
+msgstr "De selectie knippen"
 
 #: gcharmap/src/menus.c:104
 msgid "Copy the selection"
-msgstr ""
+msgstr "Kopieer de selectie"
 
 #: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
 msgid "Paste"
 msgstr "Plakken"
 
 #: gcharmap/src/menus.c:106
-#, fuzzy
 msgid "Paste the clipboard"
 msgstr "Plak tekst vanaf het klembord"
 
 #
 #: gcharmap/src/menus.c:109
-#, fuzzy
 msgid "Show Gnome Character Map's manual"
-msgstr "Gnome Speciale tekens"
+msgstr "Gnome Speciale Tekens handleiding"
 
 #: gcharmap/src/menus.c:111 mini-utils/gcolorsel/menus.c:919
 msgid "About this application"
@@ -510,7 +497,7 @@ msgstr "Kopiëren naar Klembord"
 
 #: gdictsrc/gdict-app.c:523
 msgid "Paste Clipboard Contents"
-msgstr "Klembord inhoud plakken"
+msgstr "Klembordinhoud plakken"
 
 #: gdictsrc/gdict-app.c:526
 msgid "Settings"
@@ -635,34 +622,32 @@ msgstr "Applet"
 
 #: gdictsrc/gdict-pref-dialog.c:494
 msgid "Search all databases"
-msgstr ""
+msgstr "Doorzoek alle databases"
 
 #: gdictsrc/gdict-pref-dialog.c:585
 msgid "The server you specified could not be found."
-msgstr "De opgegeven server kon niet worden gevonden"
+msgstr "De opgegeven server kon niet worden gevonden."
 
 #: gdictsrc/gdict-speller.c:118
 msgid "Word:"
-msgstr ""
+msgstr "Woord:"
 
 #: gdictsrc/gdict-speller.c:127
-#, fuzzy
 msgid "Search Strategy:"
-msgstr "Standaard methode:"
+msgstr "Zoekstrategie:"
 
 #: gdictsrc/gdict-speller.c:150
 msgid "Find Words..."
-msgstr ""
+msgstr "Zoek Woorden..."
 
 #: gdictsrc/gdict-speller.c:151
 #, fuzzy
 msgid "Look up Word..."
-msgstr "Woord aan het zoeken..."
+msgstr "Woord Opzoeken..."
 
 #: gdictsrc/gdict-speller.c:163
-#, fuzzy
 msgid "Spell checker"
-msgstr "Spellingscontrole klaar"
+msgstr "Spellingscontrole"
 
 #: gdiskfree/gdiskfree_app.c:53 gdiskfree/gdiskfree_menus.c:108
 msgid "GDiskFree"
@@ -704,7 +689,7 @@ msgstr "Toon schijfruimte"
 
 #: gdiskfree/gdiskfree_options.c:260
 msgid "Dial Orientation"
-msgstr "Wijzer Plaatsing"
+msgstr "Wijzerplaatsing"
 
 #: gdiskfree/gdiskfree_options.c:265
 msgid "Vertical"
@@ -849,7 +834,7 @@ msgstr "Toevoegen"
 msgid "Show Command"
 msgstr "Toon commando"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:582
 #: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Start"
@@ -903,9 +888,8 @@ msgid "Gnome Search Tool"
 msgstr "Gnome Zoekhulpmiddel"
 
 #: gsearchtool/outdlg.c:51
-#, fuzzy
 msgid "Cannot save file"
-msgstr "Kan applet niet maken!\n"
+msgstr "Kan bestand niet bewaren"
 
 #
 #: gsearchtool/outdlg.c:69 meat-grinder/meat-grinder.c:476
@@ -938,181 +922,180 @@ msgstr ""
 "Ik begrijp de afmetingen (positie en grootte) \n"
 "van de commandoregel niet."
 
-#: gtt/ctree.c:511
+#: gtt/ctree.c:517
 msgid "Total"
 msgstr "Totaal"
 
-#: gtt/ctree.c:513
+#: gtt/ctree.c:519
 msgid "Total time spent on this project."
 msgstr ""
 
-#: gtt/ctree.c:518
+#: gtt/ctree.c:524
 #, fuzzy
 msgid "Entry"
 msgstr "Onderdeel Stop:"
 
-#: gtt/ctree.c:520
+#: gtt/ctree.c:526
 msgid "Time spent under the current diary entry."
 msgstr ""
 
-#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:532 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Vandaag"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:534
 msgid "Time spent on this project today."
 msgstr ""
 
-#: gtt/ctree.c:533
+#: gtt/ctree.c:539
 msgid "Week"
 msgstr ""
 
-#: gtt/ctree.c:535
+#: gtt/ctree.c:541
 msgid "Time spent on this project this week."
 msgstr ""
 
-#: gtt/ctree.c:541
+#: gtt/ctree.c:547
 #, fuzzy
 msgid "Month"
 msgstr "Monitor"
 
-#: gtt/ctree.c:543
+#: gtt/ctree.c:549
 msgid "Time spent on this project this month."
 msgstr ""
 
-#
-#: gtt/ctree.c:549
+#: gtt/ctree.c:555
 #, fuzzy
 msgid "Year"
-msgstr "Zoeken"
+msgstr "Lineair"
 
-#: gtt/ctree.c:551
+#: gtt/ctree.c:557
 msgid "Time spent on this project this year."
 msgstr ""
 
 #
-#: gtt/ctree.c:557
+#: gtt/ctree.c:563
 #, fuzzy
 msgid "Title"
 msgstr "Bestand"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:148
+#: gtt/ctree.c:564 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Projecttitel"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
+#: gtt/ctree.c:569 gtt/ctree.c:570 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Omschrijving"
 
-#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+#: gtt/ctree.c:575 gtt/ghtml.c:95 gtt/ghtml.c:220
 msgid "Diary Entry"
 msgstr ""
 
-#: gtt/ctree.c:571
+#: gtt/ctree.c:577
 #, fuzzy
 msgid "The current diary entry"
 msgstr "Sluit het huidige document af"
 
-#: gtt/ctree.c:578
+#: gtt/ctree.c:584
 msgid "Estimated Project Start Date"
 msgstr ""
 
-#: gtt/ctree.c:583
+#: gtt/ctree.c:589
 #, fuzzy
 msgid "End"
 msgstr "Ingeschakeld"
 
-#: gtt/ctree.c:585
+#: gtt/ctree.c:591
 #, fuzzy
 msgid "Estimated Project Completion Date"
 msgstr "Voorkeuren bewerken..."
 
-#: gtt/ctree.c:590
+#: gtt/ctree.c:596
 msgid "Due"
 msgstr ""
 
-#: gtt/ctree.c:592
+#: gtt/ctree.c:598
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
 msgstr ""
 
-#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+#: gtt/ctree.c:605 mini-utils/guname/info.c:61
 msgid "Size"
 msgstr "Grootte"
 
-#: gtt/ctree.c:601
+#: gtt/ctree.c:607
 msgid "Sizing: How much work it will take to finish this project."
 msgstr ""
 
-#: gtt/ctree.c:607
+#: gtt/ctree.c:613
 #, fuzzy
 msgid "Done"
 msgstr "Geen"
 
-#: gtt/ctree.c:609
+#: gtt/ctree.c:615
 msgid "Percent Complete: How much of this project has been finished till now."
 msgstr ""
 
-#: gtt/ctree.c:616
+#: gtt/ctree.c:622
 msgid "U"
 msgstr ""
 
-#: gtt/ctree.c:618
+#: gtt/ctree.c:624
 msgid "Urgency: Does this project need to be done soon, done quickly?"
 msgstr ""
 
-#: gtt/ctree.c:624
+#: gtt/ctree.c:630
 msgid "Imp"
 msgstr ""
 
-#: gtt/ctree.c:626
+#: gtt/ctree.c:632
 msgid "Importance: How important is this project?"
 msgstr ""
 
-#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:638 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
 msgstr "Status"
 
-#: gtt/ctree.c:634
+#: gtt/ctree.c:640
 msgid "The current status of this project."
 msgstr ""
 
 #
-#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
+#: gtt/ctree.c:975 gtt/glade/project_properties.glade.h:25
 #, fuzzy
 msgid "Low"
 msgstr "Logtoner"
 
-#: gtt/ctree.c:970
+#: gtt/ctree.c:976
 #, fuzzy
 msgid "Med"
 msgstr "rood"
 
-#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
+#: gtt/ctree.c:977 gtt/glade/project_properties.glade.h:15
 msgid "High"
 msgstr ""
 
-#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
+#: gtt/ctree.c:986 gtt/glade/project_properties.glade.h:29
 #, fuzzy
 msgid "Not Started"
 msgstr "Start"
 
-#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
+#: gtt/ctree.c:987 gtt/glade/project_properties.glade.h:21
 #, fuzzy
 msgid "In Progress"
 msgstr "Programma uitvoeren"
 
-#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
 msgstr ""
 
-#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:989 gtt/glade/project_properties.glade.h:9
 #, fuzzy
 msgid "Cancelled"
 msgstr "Annuleren"
 
-#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
+#: gtt/ctree.c:990 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
 msgstr ""
 
@@ -1233,39 +1216,39 @@ msgstr "Onbekend"
 msgid "unknown token: >>>>"
 msgstr ""
 
-#: gtt/journal.c:108
+#: gtt/journal.c:107
 msgid "Error 404 Not Found"
 msgstr ""
 
-#: gtt/journal.c:110
+#: gtt/journal.c:109
 #, fuzzy, c-format
 msgid "The file %s was not found."
 msgstr "Logobestand niet gevonden"
 
-#: gtt/journal.c:111
+#: gtt/journal.c:110
 msgid "(null)"
 msgstr ""
 
-#: gtt/journal.c:120
+#: gtt/journal.c:119
 #, fuzzy
 msgid "Unkown Error"
-msgstr "Onbekend"
+msgstr "Onbekende fout opgetreden"
 
 #
-#: gtt/journal.c:169 gtt/plug-in.c:90
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, fuzzy, c-format
 msgid ""
 "Unable to open the file %s\n"
 "%s"
 msgstr "Kan logfile bestand niet openen!\n"
 
-#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/journal.c:259 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
 msgid "New Diary Entry"
 msgstr ""
 
 #
-#: gtt/journal.c:436
+#: gtt/journal.c:447
 #, fuzzy
 msgid "Save HTML To File"
 msgstr "Bewaar een palette op _Schijf"
@@ -1303,9 +1286,8 @@ msgstr ""
 "stoppen."
 
 #: gtt/main.c:126
-#, fuzzy
 msgid "Cannot create pid-file!"
-msgstr "Kan applet niet maken!\n"
+msgstr "Kan PID-bestand niet maken"
 
 #: gtt/main.c:219
 msgid "Do you want to continue?"
@@ -1650,53 +1632,64 @@ msgstr "Start"
 
 #: gtt/glade/interval_popup.glade.h:1
 #, fuzzy
-msgid "Delete Interval"
-msgstr "Wijzerverversingsinterval"
+msgid "Add a new time interval."
+msgstr "Verversingsinterval (ms)"
 
 #: gtt/glade/interval_popup.glade.h:2
 #, fuzzy
-msgid "Delete This Interval"
+msgid "Delete Interval"
 msgstr "Wijzerverversingsinterval"
 
 #: gtt/glade/interval_popup.glade.h:3
 #, fuzzy
+msgid "Delete This Interval"
+msgstr "Wijzerverversingsinterval"
+
+#: gtt/glade/interval_popup.glade.h:4
+#, fuzzy
 msgid "Edit Interval"
 msgstr "Algemeen"
 
-#: gtt/glade/interval_popup.glade.h:4
+#: gtt/glade/interval_popup.glade.h:5
 #, fuzzy
 msgid "Edit the Start & Stop Times"
 msgstr "Start/Stop Tijdmeter"
 
-#: gtt/glade/interval_popup.glade.h:5
-msgid "Insert Diary Entry"
-msgstr ""
-
 #: gtt/glade/interval_popup.glade.h:6
+#, fuzzy
+msgid "Insert Diary Entry"
+msgstr "_Toevoegen aan einde"
+
+#: gtt/glade/interval_popup.glade.h:7
 msgid "Insert a new diary entry above this time interval."
 msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:7
+#: gtt/glade/interval_popup.glade.h:8
 msgid "Merge Down"
 msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:9
 msgid "Merge Into Interval Above"
 msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:9
+#: gtt/glade/interval_popup.glade.h:10
 msgid "Merge Into Interval Below"
 msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:10
+#: gtt/glade/interval_popup.glade.h:11
 msgid "Merge Up"
 msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:11
+#: gtt/glade/interval_popup.glade.h:12
+#, fuzzy
+msgid "New Interval"
+msgstr "Algemeen"
+
+#: gtt/glade/interval_popup.glade.h:13
 msgid "Paste Diary Entry"
 msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:14 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
 msgstr ""
 
@@ -2201,9 +2194,8 @@ msgid "Add a new time interval"
 msgstr "Verversingsinterval (ms)"
 
 #: gtt/glade/task_popup.glade.h:2
-#, fuzzy
-msgid "Delete _Times"
-msgstr "Wissen"
+msgid "Cut Entry & _Times"
+msgstr ""
 
 #: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
@@ -2228,7 +2220,7 @@ msgstr "Wijzerverversingsinterval"
 
 #: gtt/glade/task_popup.glade.h:9
 #, fuzzy
-msgid "_Delete Diary Entry"
+msgid "_Cut Diary Entry"
 msgstr "Wijzerverversingsinterval"
 
 #: gtt/glade/task_popup.glade.h:10
@@ -2377,14 +2369,13 @@ msgid "<empty>"
 msgstr "<leeg>"
 
 #: logview/actions.c:512
-#, fuzzy
 msgid "log name regexp"
-msgstr "Log naam reguliere expressie"
+msgstr "Lognaam reguliere expressie"
 
 #
 #: logview/actions.c:513
 msgid "process regexp"
-msgstr "Verwerk reg. expressie."
+msgstr "Verwerk reg. expressie"
 
 #: logview/actions.c:514
 msgid "message regexp"
@@ -2554,13 +2545,13 @@ msgid "%s is not a regular file."
 msgstr "%s is geen normaal bestand."
 
 #: logview/logrtns.c:296
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file."
 msgstr ""
-"%s is niet te lezen voor de gebruiker. Misschien alleen lezen.Draai dit "
-"programma als root of vraag de sysadmin om de rechten te veranderen."
+"%s is niet te lezen voor de gebruiker. Draai het programma als root of vraag "
+"de beheerder om de rechten te veranderen."
 
 #: logview/logrtns.c:309
 #, c-format
@@ -2578,9 +2569,8 @@ msgstr "ReadLogStats: Geen geheugen meer over!"
 
 #
 #: logview/logview.c:85
-#, fuzzy
 msgid "Open log..."
-msgstr "Open Log"
+msgstr "Open Log..."
 
 #
 #: logview/logview.c:86
@@ -2588,9 +2578,8 @@ msgid "Open log"
 msgstr "Open Log"
 
 #: logview/logview.c:88
-#, fuzzy
 msgid "Export log..."
-msgstr "Exporteer log"
+msgstr "Exporteer log..."
 
 #: logview/logview.c:89
 msgid "Export log"
@@ -2606,9 +2595,8 @@ msgid "Switch log"
 msgstr "Verander van logfile"
 
 #: logview/logview.c:97
-#, fuzzy
 msgid "Monitor..."
-msgstr "Monitor"
+msgstr "Monitor..."
 
 #
 #: logview/logview.c:98
@@ -2630,9 +2618,8 @@ msgid "Show log stats"
 msgstr "Toon log statistieken"
 
 #: logview/logview.c:113
-#, fuzzy
 msgid "Zoom"
-msgstr "In/Uit Zoomen"
+msgstr "In-/UitZoomen"
 
 #: logview/logview.c:114
 msgid "Show line info"
@@ -2705,15 +2692,13 @@ msgstr "Kies logs om te bewaken"
 #
 #. Arrowed buttons
 #: logview/monitor.c:168
-#, fuzzy
 msgid "Add >>"
-msgstr "Toevoegen ->"
+msgstr "Toevoegen >>"
 
 #. Remove button
 #: logview/monitor.c:176
-#, fuzzy
 msgid "Remove <<"
-msgstr "Verwijderen"
+msgstr "Verwijderen <<"
 
 #. Check boxes
 #: logview/monitor.c:207
@@ -2728,18 +2713,16 @@ msgstr "Acties uitvoeren"
 #
 #. Actions button
 #: logview/monitor.c:227
-#, fuzzy
 msgid "Actions..."
-msgstr "Acties"
+msgstr "Acties..."
 
 #: logview/monitor.c:282 logview/monitor.c:329
 msgid "tmp_list is NULL\n"
 msgstr "tmp_list is NULL\n"
 
 #: logview/monitor.c:456
-#, fuzzy
 msgid "Monitoring logs..."
-msgstr "Bezig logs te monitoren..."
+msgstr "Monitoren logs..."
 
 #: logview/monitor.c:638
 msgid "TOUCHED!!\n"
@@ -2750,9 +2733,8 @@ msgid "hostname column width ( 0 to hide this column ): "
 msgstr ""
 
 #: logview/userprefsdialog.c:66
-#, fuzzy
 msgid "Columns"
-msgstr "Opdrachten"
+msgstr "Kolommen"
 
 #: logview/zoom.c:78
 msgid "Zoom view"
@@ -2797,52 +2779,44 @@ msgstr ""
 #. * 	-------------------
 #.
 #: logview/config.c:34
-#, fuzzy
 msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/config.c:35
 msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
 msgstr ""
 
 #: logview/config.c:36
-#, fuzzy
 msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/config.c:37
 msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
 msgstr ""
 
 #: logview/config.c:39
-#, fuzzy
 msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/config.c:40
-#, fuzzy
 msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/config.c:41
-#, fuzzy
 msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/config.c:42
-#, fuzzy
 msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/config.c:43
-#, fuzzy
 msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/config.c:44
-#, fuzzy
 msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
+msgstr ""
 
 #: logview/desc_db.c:37
 #, c-format
@@ -3947,7 +3921,7 @@ msgstr "Systeemstatus:"
 
 #: mini-utils/guname/info.c:52
 msgid "Real Memory:"
-msgstr "Echt geheugen:"
+msgstr "Waar geheugen:"
 
 #: mini-utils/guname/info.c:53
 msgid "Swap Space (\"virtual memory\"):"
@@ -4127,9 +4101,8 @@ msgid "Running: %s\n"
 msgstr "Aan het uitvoeren: %s\n"
 
 #: mini-utils/idetool/idetool.c:19
-#, fuzzy
 msgid "Default 16-bit"
-msgstr "Decimaal 16 bit"
+msgstr "Standaard 16 bit"
 
 #: mini-utils/idetool/idetool.c:20
 msgid "32-bit"
@@ -4440,9 +4413,8 @@ msgid "Floppy Density:"
 msgstr "Diskette Dichtheid:"
 
 #: gfloppy/src/gfloppy-i18n.h:18 gfloppy/src/gfloppy.glade.h:6
-#, fuzzy
 msgid "Floppy Device:"
-msgstr "Diskette Dichtheid:"
+msgstr "Diskette Apparaat:"
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -4584,24 +4556,20 @@ msgstr ""
 
 #
 #: stripchart/chart-app.c:239
-#, fuzzy
 msgid "Show values"
-msgstr "Toon schijfruimte"
+msgstr "Toon waarden"
 
 #: stripchart/chart-app.c:246
-#, fuzzy
 msgid "Edit Prefs..."
 msgstr "Voorkeuren bewerken..."
 
 #: stripchart/chart-app.c:251
-#, fuzzy
 msgid "Edit Params..."
-msgstr "Parameters..."
+msgstr "Parameters bewerken..."
 
 #: stripchart/eval.c:252
-#, fuzzy
 msgid "closing parenthesis expected"
-msgstr "rechter haakje verwacht"
+msgstr "sluithaakje verwacht"
 
 #: stripchart/eval.c:269
 #, c-format
@@ -4622,14 +4590,13 @@ msgid "number expected"
 msgstr "nummer verwacht"
 
 #: stripchart/eval.c:371
-#, fuzzy, c-format
+#, c-format
 msgid "extra junk at end: \"%s\""
-msgstr "extra 'gunk' aan einde: \"%s\""
+msgstr "extra troep aan einde: \"%s\""
 
 #: stripchart/params.c:633
-#, fuzzy
 msgid "Parameter"
-msgstr "Params"
+msgstr "Parameter"
 
 #: stripchart/params.c:671
 msgid "Equation"
@@ -4648,39 +4615,36 @@ msgid "Min"
 msgstr ""
 
 #: stripchart/params.c:723 stripchart/params.c:751
-#, fuzzy
 msgid "Max"
-msgstr "Mei"
+msgstr ""
 
 #: stripchart/params.c:771
 msgid "Linear"
-msgstr ""
+msgstr "Lineair"
 
 #: stripchart/params.c:779
 msgid "Logarithmic"
-msgstr ""
+msgstr "Logaritmisch"
 
 #: stripchart/params.c:784
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: stripchart/params.c:795
-#, fuzzy
 msgid "Indicator"
-msgstr "Monitor"
+msgstr "Indicator"
 
 #: stripchart/params.c:802
 msgid "Line"
-msgstr ""
+msgstr "Lijn"
 
 #: stripchart/params.c:809
-#, fuzzy
 msgid "Point"
-msgstr "Poort:"
+msgstr "Punt"
 
 #: stripchart/params.c:816
 msgid "Solid"
-msgstr ""
+msgstr "Vast"
 
 #: stripchart/params.c:965
 msgid "Add Parameter Before"
@@ -4699,38 +4663,33 @@ msgid "Delete Parameter"
 msgstr ""
 
 #: stripchart/params.c:994
-#, fuzzy
 msgid "Add Color"
-msgstr "Kleur"
+msgstr "Kleur toevoegen"
 
 #
 #: stripchart/params.c:1001
-#, fuzzy
 msgid "Delete Color"
-msgstr "Nieuwe kleur"
+msgstr "Kleur verwijderen"
 
 #: stripchart/params.c:1020
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: stripchart/params.c:1091
 msgid "Parameter Editor"
 msgstr ""
 
 #: stripchart/params.c:1100
-#, fuzzy
 msgid "Parameters"
-msgstr "Params"
+msgstr "Parameters"
 
 #: stripchart/prefs.c:208
-#, fuzzy
 msgid "Chart"
-msgstr "Start"
+msgstr "Kaart"
 
 #: stripchart/prefs.c:218 stripchart/prefs.c:277
-#, fuzzy
 msgid "enabled"
-msgstr "Ingeschakeld"
+msgstr "ingeschakeld"
 
 #: stripchart/prefs.c:225
 #, fuzzy
@@ -5137,511 +5096,514 @@ msgstr "Persoonlijk Crontabbeheer"
 msgid "Personal crontab manager"
 msgstr "Bewerken van de persoonlijke crontab"
 
-#~ msgid ""
-#~ "An error occured while reading the configuration file.\n"
-#~ "Shall I setup a new configuration?"
-#~ msgstr ""
-#~ "Er is een fout opgetreden bij het lezen van het configuratiebestand.\n"
-#~ "Zal ik een nieuwe configuratie opzetten?"
+#, fuzzy
+msgid "Delete _Times"
+msgstr "Wissen"
+
+msgid ""
+"An error occured while reading the configuration file.\n"
+"Shall I setup a new configuration?"
+msgstr ""
+"Er is een fout opgetreden bij het lezen van het configuratiebestand.\n"
+"Zal ik een nieuwe configuratie opzetten?"
+
+msgid "Could not write the configuration file!"
+msgstr "Kon het configuratie-bestand niet schrijven!"
+
+msgid "Time tracking tool for GNOME"
+msgstr "Tijdbestedingshulpmiddel voor Gnome"
+
+msgid ""
+"This will overwrite your current set of projects.\n"
+"Do you really want to reload the configuration file?"
+msgstr ""
+"Dit zal uw huidige set projecten overschrijven.\n"
+"Weet u zeker dat u het configuratiebestand opnieuw wilt laden?"
+
+msgid "Timeout in secs:"
+msgstr "Timeout in seconden:"
 
 #, fuzzy
-#~ msgid "Could not write the configuration file!"
-#~ msgstr "Ik kon het configuratie-bestand niet schrijven!"
-
-#~ msgid "Time tracking tool for GNOME"
-#~ msgstr "Tijdbestedingshulpmiddel voor Gnome"
-
-#~ msgid ""
-#~ "This will overwrite your current set of projects.\n"
-#~ "Do you really want to reload the configuration file?"
-#~ msgstr ""
-#~ "Dit zal uw huidige set projecten overschrijven.\n"
-#~ "Weet u zeker dat u het configuratiebestand opnieuw wilt laden?"
-
-#~ msgid "Timeout in secs:"
-#~ msgstr "Timeout in seconden:"
+msgid "Memo:"
+msgstr "Geheugen"
 
 #, fuzzy
-#~ msgid "Memo:"
-#~ msgstr "Geheugen"
+msgid "Task Properties"
+msgstr "Eigenschappen"
 
-#, fuzzy
-#~ msgid "Task Properties"
-#~ msgstr "Eigenschappen"
+msgid "ASCII code:"
+msgstr "ASCII code:"
 
-#~ msgid "ASCII code:"
-#~ msgstr "ASCII code:"
+msgid "rparen expected"
+msgstr "rechter haakje verwacht"
 
-#~ msgid "rparen expected"
-#~ msgstr "rechter haakje verwacht"
+msgid "extra gunk at end: \"%s\""
+msgstr "extra 'gunk' aan einde: \"%s\""
 
-#~ msgid "extra gunk at end: \"%s\""
-#~ msgstr "extra 'gunk' aan einde: \"%s\""
+msgid "%s, line %d: "
+msgstr "%s, regel %d:"
 
-#~ msgid "%s, line %d: "
-#~ msgstr "%s, regel %d:"
+msgid "can't open config file \"%s\""
+msgstr "kan configuratiebestand \"%s\" niet openen"
 
-#~ msgid "can't open config file \"%s\""
-#~ msgstr "kan configuratiebestand \"%s\" niet openen"
+msgid ""
+"can't open config file \"./gstripchart.conf\", \"%s\", \"%s\", or \"%s\""
+msgstr ""
+"kan bestand \"./gstripchart.conf\", \"%s\", \"%s\", of \"%s\" niet openen"
 
-#~ msgid ""
-#~ "can't open config file \"./gstripchart.conf\", \"%s\", \"%s\", or \"%s\""
-#~ msgstr ""
-#~ "kan bestand \"./gstripchart.conf\", \"%s\", \"%s\", of \"%s\" niet openen"
+msgid "can't open config file \"./gstripchart.conf\", \"%s\", or \"%s\""
+msgstr "kan bestand \"./gstripchart.conf\", \"%s\", of \"%s\" niet openen"
 
-#~ msgid "can't open config file \"./gstripchart.conf\", \"%s\", or \"%s\""
-#~ msgstr "kan bestand \"./gstripchart.conf\", \"%s\", of \"%s\" niet openen"
+msgid "identifier or begin must be first"
+msgstr "identifier of begin moet eerst komen"
 
-#~ msgid "identifier or begin must be first"
-#~ msgstr "identifier of begin moet eerst komen"
+msgid "unrecognized color: %s"
+msgstr "onbekende kleur: %s"
 
-#~ msgid "unrecognized color: %s"
-#~ msgstr "onbekende kleur: %s"
+msgid "scale must be either \"log\" or \"linear\""
+msgstr "schaal moet \"log\" of \"lineair\" zijn"
 
-#~ msgid "scale must be either \"log\" or \"linear\""
-#~ msgstr "schaal moet \"log\" of \"lineair\" zijn"
+msgid "no equation found"
+msgstr "geen vergelijking gevonden"
 
-#~ msgid "no equation found"
-#~ msgstr "geen vergelijking gevonden"
+msgid "invalid option: \"%s\""
+msgstr "ongeldige optie: \"%s\""
 
-#~ msgid "invalid option: \"%s\""
-#~ msgstr "ongeldige optie: \"%s\""
+msgid "E_xit"
+msgstr "_Afsluiten"
 
-#~ msgid "E_xit"
-#~ msgstr "_Afsluiten"
+msgid "Terminate the stripchart program"
+msgstr "Stripchart programma afsluiten"
 
-#~ msgid "Terminate the stripchart program"
-#~ msgstr "Stripchart programma afsluiten"
+msgid "Copyright 1998,99 John Kodis"
+msgstr "Copyright 1998,99 John Kodis"
 
-#~ msgid "Copyright 1998,99 John Kodis"
-#~ msgstr "Copyright 1998,99 John Kodis"
+msgid "Identifier"
+msgstr "Identifier"
 
-#~ msgid "Identifier"
-#~ msgstr "Identifier"
+msgid "Expected range"
+msgstr "Verwacht bereik"
 
-#~ msgid "Expected range"
-#~ msgstr "Verwacht bereik"
+msgid "Displayed range"
+msgstr "Getoond bereik"
 
-#~ msgid "Displayed range"
-#~ msgstr "Getoond bereik"
+msgid "Stripchart Parameters"
+msgstr "Stripchart Opties"
 
-#~ msgid "Stripchart Parameters"
-#~ msgstr "Stripchart Opties"
+msgid "Params"
+msgstr "Params"
 
-#~ msgid "Params"
-#~ msgstr "Params"
+msgid "Stripchart Viewer"
+msgstr "Stripchart Bekijker"
 
-#~ msgid "Stripchart Viewer"
-#~ msgstr "Stripchart Bekijker"
+msgid "invalid display type: %s\n"
+msgstr "Ongeldig toon type: %s\n"
 
-#~ msgid "invalid display type: %s\n"
-#~ msgstr "Ongeldig toon type: %s\n"
+msgid "Chart update interval"
+msgstr "Kaartverversingsinterval"
 
-#~ msgid "Chart update interval"
-#~ msgstr "Kaartverversingsinterval"
+msgid "SECS"
+msgstr "SECS"
 
-#~ msgid "SECS"
-#~ msgstr "SECS"
+msgid "Chart low-pass filter time constant"
+msgstr "Low-pass filter tijdconstante voor de grafiek"
 
-#~ msgid "Chart low-pass filter time constant"
-#~ msgstr "Low-pass filter tijdconstante voor de grafiek"
+msgid "Slider low-pass filter time constant"
+msgstr "Low-pass filter tijdconstante voor de schuiver"
 
-#~ msgid "Slider low-pass filter time constant"
-#~ msgstr "Low-pass filter tijdconstante voor de schuiver"
+msgid "Adds a menubar to the main window"
+msgstr "Voegt een menubalk toe aan het hoofvenster"
 
-#~ msgid "Adds a menubar to the main window"
-#~ msgstr "Voegt een menubalk toe aan het hoofvenster"
+msgid "Omits slider window"
+msgstr "Schuiver venster niet tonen"
 
-#~ msgid "Omits slider window"
-#~ msgstr "Schuiver venster niet tonen"
+msgid "TYPE is one of gtk, applet, text, or none"
+msgstr "TYPE moet gtk, applet, text of none zijn"
 
-#~ msgid "TYPE is one of gtk, applet, text, or none"
-#~ msgstr "TYPE moet gtk, applet, text of none zijn"
+msgid "TYPE"
+msgstr "TYPE"
 
-#~ msgid "TYPE"
-#~ msgstr "TYPE"
+msgid "TYPE is one of gtk, text, or none"
+msgstr "TYPE moet gtk, text of none zijn"
 
-#~ msgid "TYPE is one of gtk, text, or none"
-#~ msgstr "TYPE moet gtk, text of none zijn"
+msgid "white"
+msgstr "wit"
 
-#~ msgid "white"
-#~ msgstr "wit"
+msgid "black"
+msgstr "zwart"
 
-#~ msgid "black"
-#~ msgstr "zwart"
+msgid "yellow"
+msgstr "geel"
 
-#~ msgid "yellow"
-#~ msgstr "geel"
+msgid "blue"
+msgstr "blauw"
 
-#~ msgid "blue"
-#~ msgstr "blauw"
+msgid "green"
+msgstr "groen"
 
-#~ msgid "green"
-#~ msgstr "groen"
+msgid "cyan"
+msgstr "cyaan"
 
-#~ msgid "cyan"
-#~ msgstr "cyaan"
+msgid "magenta"
+msgstr "magenta"
 
-#~ msgid "magenta"
-#~ msgstr "magenta"
+msgid "Busy"
+msgstr "Bezig"
 
-#~ msgid "Busy"
-#~ msgstr "Bezig"
+msgid "Load"
+msgstr "Belasting"
 
-#~ msgid "Load"
-#~ msgstr "Belasting"
+msgid "Swap"
+msgstr "Swap"
 
-#~ msgid "Swap"
-#~ msgstr "Swap"
+msgid "Battery"
+msgstr "Batterij"
 
-#~ msgid "Battery"
-#~ msgstr "Batterij"
+msgid "Net In"
+msgstr "Netwerk In"
 
-#~ msgid "Net In"
-#~ msgstr "Netwerk In"
+msgid "Net Out"
+msgstr "Netwerk Uit"
 
-#~ msgid "Net Out"
-#~ msgstr "Netwerk Uit"
+msgid "ppp"
+msgstr "ppp"
 
-#~ msgid "ppp"
-#~ msgstr "ppp"
+msgid "Project Time today:"
+msgstr "Project Tijd vandaag:"
 
-#~ msgid "Project Time today:"
-#~ msgstr "Project Tijd vandaag:"
+msgid "Project Time ever:"
+msgstr "Project Tijd totaal:"
 
-#~ msgid "Project Time ever:"
-#~ msgstr "Project Tijd totaal:"
+msgid "Manual..."
+msgstr "Handleiding..."
 
-#~ msgid "Manual..."
-#~ msgstr "Handleiding..."
+msgid "OK"
+msgstr "OK"
 
-#~ msgid "OK"
-#~ msgstr "OK"
+msgid "Export log...          "
+msgstr "Exporteer logfile..."
 
-#~ msgid "Export log...          "
-#~ msgstr "Exporteer logfile..."
+msgid "Close log              "
+msgstr "Sluit Log"
 
-#~ msgid "Close log              "
-#~ msgstr "Sluit Log"
+msgid "Switch log             "
+msgstr "Verander van logfile"
 
-#~ msgid "Switch log             "
-#~ msgstr "Verander van logfile"
+msgid "Monitor..              "
+msgstr "Monitor ..."
 
-#~ msgid "Monitor..              "
-#~ msgstr "Monitor ..."
+msgid "Exit                   "
+msgstr "Afsluiten"
 
-#~ msgid "Exit                   "
-#~ msgstr "Afsluiten"
+msgid "Calendar                "
+msgstr "Kalender"
 
-#~ msgid "Calendar                "
-#~ msgstr "Kalender"
-
-#~ msgid "Log stats               "
-#~ msgstr "Log statistieken"
+msgid "Log stats               "
+msgstr "Log statistieken"
 
 #
-#~ msgid "Preferences...          "
-#~ msgstr "Voorkeuren...           "
+msgid "Preferences...          "
+msgstr "Voorkeuren...           "
 
-#~ msgid "About..                "
-#~ msgstr "Over...                "
+msgid "About..                "
+msgstr "Over...                "
 
-#~ msgid ""
-#~ "Notebook\n"
-#~ "Toplevel\n"
-#~ "Modal\n"
-#~ "Default\n"
-#~ msgstr ""
-#~ "Noteboek\n"
-#~ "Toplevel\n"
-#~ "Modaal\n"
-#~ "Standaard\n"
+msgid ""
+"Notebook\n"
+"Toplevel\n"
+"Modal\n"
+"Default\n"
+msgstr ""
+"Noteboek\n"
+"Toplevel\n"
+"Modaal\n"
+"Standaard\n"
 
-#~ msgid ""
-#~ "Left\n"
-#~ "Right\n"
-#~ "Top\n"
-#~ "Bottom\n"
-#~ msgstr ""
-#~ "Links\n"
-#~ "Rechts\n"
-#~ "Boven\n"
-#~ "Beneden\n"
+msgid ""
+"Left\n"
+"Right\n"
+"Top\n"
+"Bottom\n"
+msgstr ""
+"Links\n"
+"Rechts\n"
+"Boven\n"
+"Beneden\n"
 
-#~ msgid "window1"
-#~ msgstr "window1"
+msgid "window1"
+msgstr "window1"
 
-#~ msgid "Write information to disk"
-#~ msgstr "Schrijf informatie naar schijf"
+msgid "Write information to disk"
+msgstr "Schrijf informatie naar schijf"
 
-#~ msgid "Save not implemented yet\n"
-#~ msgstr "Bewaren is nog niet geïmplementeerd\n"
+msgid "Save not implemented yet\n"
+msgstr "Bewaren is nog niet geïmplementeerd\n"
 
-#~ msgid "Formatting /dev/floppy"
-#~ msgstr "Bezig met formatteren van /dev/floppy"
+msgid "Formatting /dev/floppy"
+msgstr "Bezig met formatteren van /dev/floppy"
 
-#~ msgid "Formatting %s"
-#~ msgstr "Formatteren %s"
-
-#
-#~ msgid "Cut the text to clipboard"
-#~ msgstr "Knippen naar Klembord"
+msgid "Formatting %s"
+msgstr "Formatteren %s"
 
 #
-#~ msgid "Copy the text to clipboard."
-#~ msgstr "Kopiëren naar Klembord"
-
-#~ msgid "This sets the overall application settings."
-#~ msgstr "Dit stelt de globale programma eigenschappen in."
-
-#~ msgid "New search"
-#~ msgstr "Opnieuw zoeken"
-
-#~ msgid "Open search spec"
-#~ msgstr "Open zoek specificaties"
-
-#~ msgid "Save search spec"
-#~ msgstr "bewaar zoek spec's"
-
-#~ msgid "Save search spec as..."
-#~ msgstr "Bewaar het zoekpad als..."
-
-#~ msgid "Add condition"
-#~ msgstr "Voeg een voorwaarde toe"
-
-#~ msgid "Add a search condition"
-#~ msgstr "Voeg een zoekvoorwaarde toe"
-
-#~ msgid "Remove condition"
-#~ msgstr "Verwijder een voorwaarde"
-
-#~ msgid "Remove last search condition"
-#~ msgstr "Verwijder de laatste zoekvoorwaarde"
+msgid "Cut the text to clipboard"
+msgstr "Knippen naar Klembord"
 
 #
-#~ msgid "Show advanced options"
-#~ msgstr "Toon geavanceerde opties"
+msgid "Copy the text to clipboard."
+msgstr "Kopiëren naar Klembord"
 
-#~ msgid "Start search"
-#~ msgstr "Start het zoeken"
+msgid "This sets the overall application settings."
+msgstr "Dit stelt de globale programma eigenschappen in."
 
-#~ msgid "About Gnome Find..."
-#~ msgstr "Over Gnome Zoeken...."
+msgid "New search"
+msgstr "Opnieuw zoeken"
 
-#~ msgid "New"
-#~ msgstr "Nieuw"
+msgid "Open search spec"
+msgstr "Open zoek specificaties"
 
-#
-#~ msgid "Clear the search window"
-#~ msgstr "Maakt het huidige venster schoon"
+msgid "Save search spec"
+msgstr "bewaar zoek spec's"
 
-#~ msgid "Start the current search"
-#~ msgstr "Start het zoeken"
+msgid "Save search spec as..."
+msgstr "Bewaar het zoekpad als..."
 
-#~ msgid "Find Files"
-#~ msgstr "Zoek bestanden"
+msgid "Add condition"
+msgstr "Voeg een voorwaarde toe"
 
-#~ msgid "Directory to Search"
-#~ msgstr "Te Zoeken Map"
+msgid "Add a search condition"
+msgstr "Voeg een zoekvoorwaarde toe"
 
-#~ msgid "GNOME Find"
-#~ msgstr "Gnome Zoeken"
+msgid "Remove condition"
+msgstr "Verwijder een voorwaarde"
 
-#
-#~ msgid "(C) 1998 the Free Software Foundation"
-#~ msgstr "(C) 1998, 2000 the Free Software Foundation"
-
-#~ msgid "GNOME Find is a fast, flexible file search tool."
-#~ msgstr "Gnome Zoeken is een snelle en fexible manier om bestanden te zoeken"
-
-#~ msgid "_About"
-#~ msgstr "_Over"
-
-#~ msgid "_File"
-#~ msgstr "_Bestand"
-
-#~ msgid "_Help"
-#~ msgstr "_Help"
+msgid "Remove last search condition"
+msgstr "Verwijder de laatste zoekvoorwaarde"
 
 #
-#~ msgid "F_ilter"
-#~ msgstr "F_ilter"
+msgid "Show advanced options"
+msgstr "Toon geavanceerde opties"
 
-#~ msgid "label2"
-#~ msgstr "label2"
+msgid "Start search"
+msgstr "Start het zoeken"
 
-#~ msgid "label13"
-#~ msgstr "label13"
+msgid "About Gnome Find..."
+msgstr "Over Gnome Zoeken...."
 
-#~ msgid "label14"
-#~ msgstr "label14"
+msgid "New"
+msgstr "Nieuw"
 
-#~ msgid "label15"
-#~ msgstr "label15"
+#
+msgid "Clear the search window"
+msgstr "Maakt het huidige venster schoon"
 
-#~ msgid "label16"
-#~ msgstr "label16"
+msgid "Start the current search"
+msgstr "Start het zoeken"
 
-#~ msgid "label4"
-#~ msgstr "label4"
+msgid "Find Files"
+msgstr "Zoek bestanden"
 
-#~ msgid "16-bit"
-#~ msgstr "16-bit"
+msgid "Directory to Search"
+msgstr "Te Zoeken Map"
 
-#~ msgid "Please enter the name of the new project:"
-#~ msgstr "Geef de naam van het nieuwe project:"
+msgid "GNOME Find"
+msgstr "Gnome Zoeken"
 
-#~ msgid "Position :"
-#~ msgstr "Positie :"
+#
+msgid "(C) 1998 the Free Software Foundation"
+msgstr "(C) 1998, 2000 the Free Software Foundation"
 
-#~ msgid ""
-#~ "A quick hack to show the amount of space free on mounted file systems "
-#~ "uitilizing a dial."
-#~ msgstr ""
-#~ "Een simpel programma om de hoeveelheid vrije ruimte op aangekoppelde "
-#~ "bestandsystemen te tonen met wijzerplaten."
+msgid "GNOME Find is a fast, flexible file search tool."
+msgstr "Gnome Zoeken is een snelle en fexible manier om bestanden te zoeken"
 
-#~ msgid "ERROR"
-#~ msgstr "FOUT"
+msgid "_About"
+msgstr "_Over"
 
-#~ msgid "End Of File reached"
-#~ msgstr "Einde van bestand bereikt"
+msgid "_File"
+msgstr "_Bestand"
 
-#~ msgid "Beginning Of File reached"
-#~ msgstr "Begin van bestand bereikt"
+msgid "_Help"
+msgstr "_Help"
 
-#~ msgid "Group data by 32 bits"
-#~ msgstr "Groepeer gegevens per 32 bits"
+#
+msgid "F_ilter"
+msgstr "F_ilter"
 
-#~ msgid "_Goto Byte..."
-#~ msgstr "_Ga naar Byte..."
+msgid "label2"
+msgstr "label2"
 
-#~ msgid ""
-#~ "File %s has changed since last save.\n"
-#~ "Do you want to save changes?"
-#~ msgstr ""
-#~ "Bestand %s is veranderd sinds laatste opslag.\n"
-#~ "Wilt u de veranderingen bewaren?"
+msgid "label13"
+msgstr "label13"
 
-#~ msgid "Custom"
-#~ msgstr "Aangepast"
+msgid "label14"
+msgstr "label14"
 
-#~ msgid "Editing"
-#~ msgstr "Bewerken"
+msgid "label15"
+msgstr "label15"
 
-#~ msgid "Can not open desired font!"
-#~ msgstr "Kan het gewenste lettertype niet openen!"
+msgid "label16"
+msgstr "label16"
 
-#~ msgid "GHex, a binary file editor"
-#~ msgstr "GHex, een binaire bestandsbewerker"
+msgid "label4"
+msgstr "label4"
 
-#~ msgid "Released under the terms of GNU Public License"
-#~ msgstr "Uitgebracht onder de voorwaarden van de GNU Public License"
+msgid "16-bit"
+msgstr "16-bit"
 
-#~ msgid "Error saving file!"
-#~ msgstr "Fout bij bewaren bestand!"
+msgid "Please enter the name of the new project:"
+msgstr "Geef de naam van het nieuwe project:"
 
-#~ msgid "Saved buffer to file %s"
-#~ msgstr "Buffer naar bestand %s geschreven"
+msgid "Position :"
+msgstr "Positie :"
 
-#~ msgid "Format Style:"
-#~ msgstr "Formaatstijl:"
+msgid ""
+"A quick hack to show the amount of space free on mounted file systems "
+"uitilizing a dial."
+msgstr ""
+"Een simpel programma om de hoeveelheid vrije ruimte op aangekoppelde "
+"bestandsystemen te tonen met wijzerplaten."
 
-#~ msgid "Color Values:"
-#~ msgstr "Kleurwaarden:"
+msgid "ERROR"
+msgstr "FOUT"
 
-#~ msgid "Error, cannot find the file 'rgb.txt' on your system!"
-#~ msgstr "Fout, kan het bestand 'rgb.txt' niet vinden op uw systeem!"
+msgid "End Of File reached"
+msgstr "Einde van bestand bereikt"
 
-#~ msgid "Parsing Colors"
-#~ msgstr "Kleuren verwerken"
+msgid "Beginning Of File reached"
+msgstr "Begin van bestand bereikt"
 
-#~ msgid ""
-#~ "Failed to execute command:\n"
-#~ "%s\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Kon opdracht niet uitvoeren:\n"
-#~ "%s\n"
-#~ "%s"
+msgid "Group data by 32 bits"
+msgstr "Groepeer gegevens per 32 bits"
 
-#~ msgid "Run"
-#~ msgstr "Uitvoeren"
+msgid "_Goto Byte..."
+msgstr "_Ga naar Byte..."
 
-#~ msgid "Select a program to run"
-#~ msgstr "Kies een programma om uit te voeren"
+msgid ""
+"File %s has changed since last save.\n"
+"Do you want to save changes?"
+msgstr ""
+"Bestand %s is veranderd sinds laatste opslag.\n"
+"Wilt u de veranderingen bewaren?"
 
-#~ msgid "Using command:"
-#~ msgstr "Gebruik opdracht"
+msgid "Custom"
+msgstr "Aangepast"
 
-#~ msgid "Examine and adjust parameters"
-#~ msgstr "Bekijken en aanpassen parameters"
+msgid "Editing"
+msgstr "Bewerken"
 
-#~ msgid "geometry"
-#~ msgstr "geometrie"
+msgid "Can not open desired font!"
+msgstr "Kan het gewenste lettertype niet openen!"
 
-#~ msgid "The following mail will be sent to "
-#~ msgstr "Het volgende bericht zal worden gezonden naar "
+msgid "GHex, a binary file editor"
+msgstr "GHex, een binaire bestandsbewerker"
 
-#~ msgid "memory"
-#~ msgstr "geheugen"
+msgid "Released under the terms of GNU Public License"
+msgstr "Uitgebracht onder de voorwaarden van de GNU Public License"
 
-#~ msgid "_Copy"
-#~ msgstr "_Kopiëren"
+msgid "Error saving file!"
+msgstr "Fout bij bewaren bestand!"
 
-#~ msgid "_Calculator"
-#~ msgstr "_Rekenmachine"
+msgid "Saved buffer to file %s"
+msgstr "Buffer naar bestand %s geschreven"
 
-#~ msgid "Search for a string"
-#~ msgstr "Zoek naar tekenreeks"
+msgid "Format Style:"
+msgstr "Formaatstijl:"
 
-#~ msgid "_Replace..."
-#~ msgstr "_Vervang"
+msgid "Color Values:"
+msgstr "Kleurwaarden:"
 
-#~ msgid "Replace a string"
-#~ msgstr "Vervang een tekenreeks"
+msgid "Error, cannot find the file 'rgb.txt' on your system!"
+msgstr "Fout, kan het bestand 'rgb.txt' niet vinden op uw systeem!"
 
-#~ msgid "_Save"
-#~ msgstr "_Opslaan"
+msgid "Parsing Colors"
+msgstr "Kleuren verwerken"
 
-#~ msgid "Save buffer "
-#~ msgstr "Buffer opslaan"
+msgid ""
+"Failed to execute command:\n"
+"%s\n"
+"%s"
+msgstr ""
+"Kon opdracht niet uitvoeren:\n"
+"%s\n"
+"%s"
 
-#~ msgid "Save _As..."
-#~ msgstr "Opslaan _Als..."
+msgid "Run"
+msgstr "Uitvoeren"
 
-#~ msgid "_Close"
-#~ msgstr "_Sluit"
+msgid "Select a program to run"
+msgstr "Kies een programma om uit te voeren"
 
-#~ msgid "_Preferences"
-#~ msgstr "_Voorkeuren"
+msgid "Using command:"
+msgstr "Gebruik opdracht"
 
-#~ msgid "Exit GHex"
-#~ msgstr "GHex afsluiten"
+msgid "Examine and adjust parameters"
+msgstr "Bekijken en aanpassen parameters"
 
-#~ msgid "C_ut"
-#~ msgstr "_Knippen"
+msgid "geometry"
+msgstr "geometrie"
 
-#~ msgid "_Paste"
-#~ msgstr "_Plakken"
+msgid "The following mail will be sent to "
+msgstr "Het volgende bericht zal worden gezonden naar "
 
-#~ msgid "P_roperties..."
-#~ msgstr "_Eigenschappen..."
+msgid "memory"
+msgstr "geheugen"
 
-#~ msgid "Clear Daily Counter"
-#~ msgstr "_Dagteller nulstellen"
+msgid "_Copy"
+msgstr "_Kopiëren"
 
-#~ msgid "Error, cannot open /usr/X11R6/lib/X11/rgb.txt.\n"
-#~ msgstr "Fout, kan /usr/X11R6/lib/X11/rgb.txt niet openen.\n"
+msgid "_Calculator"
+msgstr "_Rekenmachine"
 
-#~ msgid "_Program"
-#~ msgstr "_Bestand"
+msgid "Search for a string"
+msgstr "Zoek naar tekenreeks"
 
-#~ msgid "_Open..."
-#~ msgstr "_Openen..."
+msgid "_Replace..."
+msgstr "_Vervang"
 
-#~ msgid "Open a new file in this window"
-#~ msgstr "Openen in nieuw bestand in dit venster"
+msgid "Replace a string"
+msgstr "Vervang een tekenreeks"
 
-#~ msgid "Change application preferences"
-#~ msgstr "Pas applicatie voorkeuren aan"
+msgid "_Save"
+msgstr "_Opslaan"
+
+msgid "Save buffer "
+msgstr "Buffer opslaan"
+
+msgid "Save _As..."
+msgstr "Opslaan _Als..."
+
+msgid "_Close"
+msgstr "_Sluit"
+
+msgid "_Preferences"
+msgstr "_Voorkeuren"
+
+msgid "Exit GHex"
+msgstr "GHex afsluiten"
+
+msgid "C_ut"
+msgstr "_Knippen"
+
+msgid "_Paste"
+msgstr "_Plakken"
+
+msgid "P_roperties..."
+msgstr "_Eigenschappen..."
+
+msgid "Clear Daily Counter"
+msgstr "_Dagteller nulstellen"
+
+msgid "Error, cannot open /usr/X11R6/lib/X11/rgb.txt.\n"
+msgstr "Fout, kan /usr/X11R6/lib/X11/rgb.txt niet openen.\n"
+
+msgid "_Program"
+msgstr "_Bestand"
+
+msgid "_Open..."
+msgstr "_Openen..."
+
+msgid "Open a new file in this window"
+msgstr "Openen in nieuw bestand in dit venster"
+
+msgid "Change application preferences"
+msgstr "Pas applicatie voorkeuren aan"
