@@ -70,34 +70,6 @@ typedef struct _OptionsDlg {
 } OptionsDlg;
 
 
-#ifdef DEBUG
-int config_show_secs = 1;
-#else
-int config_show_secs = 0;
-#endif
-int config_show_statusbar = 1;
-int config_show_clist_titles = 1;
-int config_show_subprojects = 1;
-
-int config_show_tb_icons = 1;
-int config_show_tb_texts = 1;
-int config_show_tb_tips = 1;
-int config_show_tb_new = 1;
-int config_show_tb_file = 0;
-int config_show_tb_ccp = 0;
-int config_show_tb_prop = 1;
-int config_show_tb_timer = 1;
-int config_show_tb_pref = 1;
-int config_show_tb_help = 1;
-int config_show_tb_exit = 1;
-int config_show_tb_journal = 1;
-
-char *config_logfile_name = NULL;
-char *config_logfile_str = NULL;
-char *config_logfile_stop = NULL;
-int config_logfile_use = 0;
-int config_logfile_min_secs = 0;
-
 
 #define ENTRY_TO_CHAR(a, b) { char *s = gtk_entry_get_text(a); if (s[0]) { if (b) g_free(b); b = g_strdup(s); } else { if (b) g_free(b); b = NULL; } }
 

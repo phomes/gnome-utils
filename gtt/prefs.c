@@ -24,8 +24,35 @@
 #include <libgnome/gnome-help.h>
 #include <string.h>
 
+#include "gtt.h"
 #include "prefs.h"
 #include "util.h"
+
+
+/* globals */
+int config_show_secs = 0;
+int config_show_statusbar = 1;
+int config_show_clist_titles = 1;
+int config_show_subprojects = 1;
+
+int config_show_tb_icons = 1;
+int config_show_tb_texts = 1;
+int config_show_tb_tips = 1;
+int config_show_tb_new = 1;
+int config_show_tb_file = 0;
+int config_show_tb_ccp = 0;
+int config_show_tb_prop = 1;
+int config_show_tb_timer = 1;
+int config_show_tb_pref = 1;
+int config_show_tb_help = 1;
+int config_show_tb_exit = 1;
+int config_show_tb_journal = 1;
+
+char *config_logfile_name = NULL;
+char *config_logfile_str = NULL;
+char *config_logfile_stop = NULL;
+int config_logfile_use = 0;
+int config_logfile_min_secs = 0;
 
 
 typedef struct _PrefsDialog 
@@ -114,43 +141,87 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *dlg)
 
 /* ============================================================== */
 
-
-#if 0
 static void 
-do_set_project(GttProject *proj, PrefsDialog *dlg)
+logfile_sensitive_cb(GtkWidget *w, PrefsDialog *odlg)
 {
-	char buff[132];
-
-	if (!dlg) return;
-
-/* hack alert -- fixme -- we don't really need to do this work
- * if the thing aint visible. we should check for visibility and defer ...
- */
-	if (!proj) 
-	{
-		/* We null these out, because old values may be left
-		 * over from an earlier project */
-		dlg->proj = NULL;
-		gtk_entry_set_text(dlg->title, "");
-		gtk_entry_set_text(dlg->desc, "");
-		return;
-	}
-
-	if (dlg->proj == proj) return;
-
-	dlg->proj = proj;
-
-	gtk_entry_set_text(dlg->title, gtt_project_get_title(proj));
-	gtk_entry_set_text(dlg->desc, gtt_project_get_desc(proj));
-
-	g_snprintf (buff, 132, "%d", gtt_project_get_min_interval(proj));
-	gtk_entry_set_text(dlg->minvl, buff);
-
-	/* set to unmodified as it reflects the current state of the project */
-	gnome_property_box_set_modified(GNOME_PROPERTY_BOX(dlg->dlg),
-					FALSE);
+	int state;
+	
+	state = GTK_TOGGLE_BUTTON(odlg->logfileuse)->active;
+	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfilename), state);
+	gtk_widget_set_sensitive(odlg->logfilename_l, state);
+	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfilestart), state);
+	gtk_widget_set_sensitive(odlg->logfilestart_l, state);
+	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfilestop), state);
+	gtk_widget_set_sensitive(odlg->logfilestop_l, state);
+	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfileminsecs), state);
+	gtk_widget_set_sensitive(odlg->logfileminsecs_l, state);
 }
-#endif
+
+static void 
+options_dialog_set(PrefsDialog *odlg)
+{
+	char s[30];
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_secs), config_show_secs);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_status_bar),
+				    config_show_statusbar);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_clist_titles),
+				    config_show_clist_titles);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_subprojects),
+				    config_show_subprojects);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_icons),
+				    config_show_tb_icons);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_texts),
+				    config_show_tb_texts);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_tips),
+				    config_show_tb_tips);
+
+	if (config_command)
+		gtk_entry_set_text(odlg->command, config_command);
+	else
+		gtk_entry_set_text(odlg->command, "");
+	if (config_command_null)
+		gtk_entry_set_text(odlg->command_null, config_command_null);
+	else
+		gtk_entry_set_text(odlg->command_null, "");
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->logfileuse), config_logfile_use);
+	if (config_logfile_name)
+		gtk_entry_set_text(GTK_ENTRY(gnome_file_entry_gtk_entry(odlg->logfilename)), config_logfile_name);
+	else
+		gtk_entry_set_text(GTK_ENTRY(gnome_file_entry_gtk_entry(odlg->logfilename)), "");
+	if (config_logfile_str)
+		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestart)), config_logfile_str);
+	else
+		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestart)), "");
+	if (config_logfile_stop)
+		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestop)), config_logfile_stop);
+	else
+		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestop)), "");
+	g_snprintf(s, sizeof (s), "%d", config_logfile_min_secs);
+	gtk_entry_set_text(GTK_ENTRY(odlg->logfileminsecs), s);
+
+        /* toolbar sections */
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_new),
+                                    config_show_tb_new);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_file),
+                                    config_show_tb_file);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_ccp),
+                                    config_show_tb_ccp);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_prop),
+                                    config_show_tb_prop);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_timer),
+                                    config_show_tb_timer);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_pref),
+                                    config_show_tb_pref);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_help),
+                                    config_show_tb_help);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_exit),
+                                    config_show_tb_exit);
+
+	logfile_sensitive_cb(NULL, odlg);
+
+	/* set to unmodified as it reflects the current state of the app */
+	gnome_property_box_set_modified(GNOME_PROPERTY_BOX(odlg->dlg), FALSE);
+}
 
 /* ============================================================== */
 
@@ -205,6 +276,9 @@ logfile_options(PrefsDialog *dlg)
 
 	w = GETWID ("use logfile");
 	dlg->logfileuse = GTK_CHECK_BUTTON(w);
+	gtk_signal_connect(GTK_OBJECT(w), "clicked",
+		   GTK_SIGNAL_FUNC(logfile_sensitive_cb),
+		   (gpointer *)dlg);
 
 	w = GETWID ("filename label");
 	dlg->logfilename_l = w;
@@ -281,7 +355,7 @@ misc_options(PrefsDialog *dlg)
 	GladeXML *gtxml = dlg->gtxml;
 
 	w = GETWID ("idle secs");
-	dlg->idle_secs = GTK_CHECK_BUTTON(w);
+	dlg->idle_secs = GTK_ENTRY(w);
 }
 
 /* ============================================================== */
@@ -291,7 +365,6 @@ prefs_dialog_new (void)
 {
         PrefsDialog *dlg;
 	GladeXML *gtxml;
-	GtkWidget *e;
         static GnomeHelpMenuEntry help_entry = { NULL, "preferences.html#PREF" };
 
 	dlg = g_malloc(sizeof(PrefsDialog));
@@ -315,6 +388,7 @@ prefs_dialog_new (void)
 	command_options (dlg);
 	logfile_options (dlg);
 	toolbar_options (dlg);
+	misc_options (dlg);
 
 	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
 /*
@@ -334,7 +408,7 @@ prefs_dialog_show(void)
 {
 	if (!dlog) dlog = prefs_dialog_new();
  
-	// do_set_project(proj, dlog);
+	options_dialog_set (dlog);
 	gtk_widget_show(GTK_WIDGET(dlog->dlg));
 }
 
@@ -345,31 +419,6 @@ prefs_dialog_show(void)
 /* XXX: this is our main window, perhaps it is a bit ugly this way and
  * should be passed around in the data fields */
 extern GtkWidget *window;
-
-
-int config_show_secs = 0;
-int config_show_statusbar = 1;
-int config_show_clist_titles = 1;
-int config_show_subprojects = 1;
-
-int config_show_tb_icons = 1;
-int config_show_tb_texts = 1;
-int config_show_tb_tips = 1;
-int config_show_tb_new = 1;
-int config_show_tb_file = 0;
-int config_show_tb_ccp = 0;
-int config_show_tb_prop = 1;
-int config_show_tb_timer = 1;
-int config_show_tb_pref = 1;
-int config_show_tb_help = 1;
-int config_show_tb_exit = 1;
-int config_show_tb_journal = 1;
-
-char *config_logfile_name = NULL;
-char *config_logfile_str = NULL;
-char *config_logfile_stop = NULL;
-int config_logfile_use = 0;
-int config_logfile_min_secs = 0;
 
 
 #define ENTRY_TO_CHAR(a, b) { char *s = gtk_entry_get_text(a); if (s[0]) { if (b) g_free(b); b = g_strdup(s); } else { if (b) g_free(b); b = NULL; } }
@@ -487,91 +536,6 @@ static void options_apply_cb(GnomePropertyBox *pb, gint page, OptionsDlg *odlg)
 }
 
 
-
-
-
-static void logfile_sigfunc(GtkWidget *w, OptionsDlg *odlg)
-{
-	int state;
-	
-	state = GTK_TOGGLE_BUTTON(odlg->logfileuse)->active;
-	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfilename), state);
-	gtk_widget_set_sensitive(odlg->logfilename_l, state);
-	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfilestr), state);
-	gtk_widget_set_sensitive(odlg->logfilestr_l, state);
-	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfilestop), state);
-	gtk_widget_set_sensitive(odlg->logfilestop_l, state);
-	gtk_widget_set_sensitive(GTK_WIDGET(odlg->logfileminsecs), state);
-	gtk_widget_set_sensitive(odlg->logfileminsecs_l, state);
-}
-
-
-
-
-static void options_dialog_set(OptionsDlg *odlg)
-{
-	char s[20];
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_secs), config_show_secs);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_status_bar),
-				    config_show_statusbar);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_clist_titles),
-				    config_show_clist_titles);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_subprojects),
-				    config_show_subprojects);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_icons),
-				    config_show_tb_icons);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_texts),
-				    config_show_tb_texts);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_tips),
-				    config_show_tb_tips);
-
-	if (config_command)
-		gtk_entry_set_text(odlg->command, config_command);
-	else
-		gtk_entry_set_text(odlg->command, "");
-	if (config_command_null)
-		gtk_entry_set_text(odlg->command_null, config_command_null);
-	else
-		gtk_entry_set_text(odlg->command_null, "");
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->logfileuse), config_logfile_use);
-	if (config_logfile_name)
-		gtk_entry_set_text(GTK_ENTRY(gnome_file_entry_gtk_entry(odlg->logfilename)), config_logfile_name);
-	else
-		gtk_entry_set_text(GTK_ENTRY(gnome_file_entry_gtk_entry(odlg->logfilename)), "");
-	if (config_logfile_str)
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestr)), config_logfile_str);
-	else
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestr)), "");
-	if (config_logfile_stop)
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestop)), config_logfile_stop);
-	else
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestop)), "");
-	g_snprintf(s, sizeof (s), "%d", config_logfile_min_secs);
-	gtk_entry_set_text(odlg->logfileminsecs, s);
-
-        /* toolbar sections */
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_new),
-                                    config_show_tb_new);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_file),
-                                    config_show_tb_file);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_ccp),
-                                    config_show_tb_ccp);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_prop),
-                                    config_show_tb_prop);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_timer),
-                                    config_show_tb_timer);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_pref),
-                                    config_show_tb_pref);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_help),
-                                    config_show_tb_help);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_exit),
-                                    config_show_tb_exit);
-
-	logfile_sigfunc(NULL, odlg);
-
-	/* set to unmodified as it reflects the current state of the app */
-	gnome_property_box_set_modified(GNOME_PROPERTY_BOX(odlg->dlg), FALSE);
-}
 
 
 
