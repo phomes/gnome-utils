@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-08-08 05:28+0200\n"
+"POT-Creation-Date: 2002-08-20 10:07+0100\n"
 "PO-Revision-Date: 2002-05-31 00:51+02:00\n"
 "Last-Translator: Huib Kleinhout <huib@stack.nl>\n"
 "Language-Team: Dutch <NL@li.org>\n"
@@ -89,8 +89,9 @@ msgstr ""
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
-msgstr "Mensen die mee hebben gewerkt aan het vertalen van dit programma"
-"Almer S. Tigelaar <almer@gnome.org>\n"
+msgstr ""
+"Mensen die mee hebben gewerkt aan het vertalen van dit programmaAlmer S. "
+"Tigelaar <almer@gnome.org>\n"
 "André van Dijk <ady@unseen.demon.nl>\n"
 "Dennis Smit <area101.penguin.nl>\n"
 "Huib Kleinhout <huib@stack.nl>\n"
@@ -102,6 +103,11 @@ msgstr "Mensen die mee hebben gewerkt aan het vertalen van dit programma"
 #: gcalc/gcalc.c:60 gcalc/gcalc.c:191
 msgid "GNOME Calculator"
 msgstr "GNOME Rekenmachine"
+
+#: gcalc/gcalc.c:61
+#, fuzzy
+msgid "(C) 1998 the Free Software Foundation"
+msgstr "(C) 1998, 2002 the Free Software Foundation"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
@@ -941,8 +947,9 @@ msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
-"De naam van de individuele database die moet worden gebruikt in de woordenboekserver. ! "
-"geeft aan dat gnome-dictionary moet zoeken in alle databases van een gegeven server"
+"De naam van de individuele database die moet worden gebruikt in de "
+"woordenboekserver. ! geeft aan dat gnome-dictionary moet zoeken in alle "
+"databases van een gegeven server"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -958,9 +965,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"De zoekstrategie die moet worden gebruikt. Dit is afhankelijk van de zoekstrategie "
-"die de woordenboekserver ondersteunt. De standaard strategie is 'lev' - Woorden "
-"overeenkomen binnen Levenshtein afstand één"
+"De zoekstrategie die moet worden gebruikt. Dit is afhankelijk van de "
+"zoekstrategie die de woordenboekserver ondersteunt. De standaard strategie "
+"is 'lev' - Woorden overeenkomen binnen Levenshtein afstand één"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
