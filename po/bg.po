@@ -7,14 +7,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2004-04-29 11:26+1200\n"
-"PO-Revision-Date: 2004-02-29 19:29+0200\n"
-"Last-Translator: Vladimir \"Kaladan\" Petkov <vpetkov@i-space.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-08 02:49+0200\n"
+"PO-Revision-Date: 2004-06-08 13:35+0300\n"
+"Last-Translator: Updated by Peter \"Peshka\" Slavov <pslavov@i-space.org>\n"
 "Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
+"Content-Transfer-Encoding: 8bit"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
@@ -110,9 +110,8 @@ msgid "Find"
 msgstr "Търсене"
 
 #: gdictsrc/gdict-app.c:477
-#, fuzzy
 msgid "_Search for:"
-msgstr "Търсене за Файлове"
+msgstr "Търсене за:"
 
 #: gdictsrc/gdict-app.c:490
 msgid "_Find"
@@ -260,11 +259,13 @@ msgid "Default Strategy"
 msgstr "Подразбираща се Стратегия"
 
 #: gdictsrc/gdict-pref-dialog.c:658
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "There was an error displaying help: \n"
 "%s"
-msgstr "Има грешка. `%s' е празен"
+msgstr ""
+"Имаше грешка при показване на помощта: \n"
+"%s"
 
 #: gdictsrc/gdict-speller.c:147
 msgid "Enter a word to know the spelling"
@@ -722,13 +723,12 @@ msgstr ""
 "Обърнете се към системният администратор за да получите права."
 
 #: gfloppy/src/main.c:216
-#, fuzzy
 msgid "Unable to open any device, formatting cannot continue."
 msgstr "Не мога да отворя устройството %s, форматирането не може да продължи."
 
 #: gfloppy/src/main.c:219 gfloppy/src/main.c:222
 msgid "/dev/floppy/0 or /dev/fd0"
-msgstr ""
+msgstr "/dev/floppy/0 или /dev/fd0"
 
 #: gfloppy/src/main.c:394
 #, c-format
@@ -752,18 +752,16 @@ msgid "DEVICE"
 msgstr "УСТРОЙСТВО"
 
 #: gfloppy/src/progress.c:123
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been "
 "found and marked."
-msgid_plural ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
-msgstr[0] ""
-"Флопи диска беше форматиран, но <b>%d лоши блокове</b> (от %d) бяха намерени "
-"и маркирани."
-msgstr[1] ""
-"Флопи диска беше форматиран, но <b>%d лоши блокове</b> (от %d) бяха намерени "
+msgstr ""
+"Флопито е форматирано, но <b>%d лош сектор</b> (от %d) беше намерен "
+"и маркиран."
+"Флопито е форматирано, но <b>%d лоши сектори</b> (от %d) бяха намерени "
 "и маркирани."
 
 #: gfloppy/src/progress.c:126
@@ -790,27 +788,27 @@ msgstr "Търсене за файлове на вашият диск."
 
 #: gsearchtool/gsearchtool-alert-dialog.c:99
 msgid "Image/label border"
-msgstr ""
+msgstr "Граница на изображение/етикет"
 
 #: gsearchtool/gsearchtool-alert-dialog.c:100
 msgid "Width of border around the label and image in the alert dialog"
-msgstr ""
+msgstr "Ширина на границата около етикета и изображението в прозореца за сигнал"
 
 #: gsearchtool/gsearchtool-alert-dialog.c:109
 msgid "Alert Type"
-msgstr ""
+msgstr "Вид сигнал"
 
 #: gsearchtool/gsearchtool-alert-dialog.c:110
 msgid "The type of alert"
-msgstr ""
+msgstr "Вида на сигнала"
 
 #: gsearchtool/gsearchtool-alert-dialog.c:118
 msgid "Alert Buttons"
-msgstr ""
+msgstr "Бутони за сигнал"
 
 #: gsearchtool/gsearchtool-alert-dialog.c:119
 msgid "The buttons shown in the alert dialog"
-msgstr ""
+msgstr "Бутоните показани в прозореца за сигнал"
 
 #: gsearchtool/gsearchtool-callbacks.c:50
 msgid "_Open"
@@ -822,39 +820,32 @@ msgstr "Отва_ря Папка"
 
 #: gsearchtool/gsearchtool-callbacks.c:59
 msgid "Mo_ve to Trash"
-msgstr ""
+msgstr "Премества в кошчето"
 
 #: gsearchtool/gsearchtool-callbacks.c:64
 msgid "_Save Results As..."
 msgstr "Запазва _Резултата Като..."
 
 #: gsearchtool/gsearchtool-callbacks.c:111
-#, fuzzy
 msgid "Could not open help document."
-msgstr "Не мога да отворя документа с помощ"
+msgstr "Не мога да отворя документа с помощ."
 
 #: gsearchtool/gsearchtool-callbacks.c:318
 #, c-format
 msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr "Сигурни ли сте, че искате да отворите документа %d?"
 
 #: gsearchtool/gsearchtool-callbacks.c:323
 #: gsearchtool/gsearchtool-callbacks.c:449
-#, fuzzy, c-format
+#, c-format
 msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] ""
-"Това ще отвори %d отделни папки. Сигурни ли сте че искате да направите това?"
-msgstr[1] ""
-"Това ще отвори %d отделни папки. Сигурни ли сте че искате да направите това?"
+msgstr "Това ще отвори %d отделен прозорец."
 
 #: gsearchtool/gsearchtool-callbacks.c:390
 #: gsearchtool/gsearchtool-callbacks.c:944
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open document \"%s\"."
-msgstr "Не мога да отворя документа \"%s\""
+msgstr "Документът \"%s\" не може да бъде отворен."
 
 #: gsearchtool/gsearchtool-callbacks.c:393
 #: gsearchtool/gsearchtool-callbacks.c:947
@@ -864,101 +855,94 @@ msgstr "Няма инсталирана програма, която може д
 #: gsearchtool/gsearchtool-callbacks.c:444
 #, c-format
 msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr "Сигурни ли сте, че желаете да отворите папката %d?"
 
 #: gsearchtool/gsearchtool-callbacks.c:502
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open folder \"%s\"."
-msgstr "Не мога да отворя папката \"%s\""
+msgstr "Папката \"%s\" не може да бъде отворена."
 
 #: gsearchtool/gsearchtool-callbacks.c:509
 msgid "The nautilus file manager is not running."
 msgstr "Файловия маниджър Nautilus на е стартиран."
 
 #: gsearchtool/gsearchtool-callbacks.c:612
-#, fuzzy, c-format
+#, c-format
 msgid "Could not move \"%s\" to trash."
-msgstr "Не мога да запазя документа·\"%s\"·в·%s"
+msgstr "Документът \"%s\" не може да бъде преместен в Кошчето."
 
 #: gsearchtool/gsearchtool-callbacks.c:615
-#, fuzzy
 msgid "The document does not exist."
-msgstr "Началната папка не съществува."
+msgstr "Документът не съществува."
 
 #: gsearchtool/gsearchtool-callbacks.c:652
-#, fuzzy, c-format
+#, c-format
 msgid "Could not move \"%s\" to the trash."
-msgstr "Не мога да запазя документа·\"%s\"·в·%s"
+msgstr "Документа·\"%s\" не може ад бъде преместен в Кошчето."
 
 #: gsearchtool/gsearchtool-callbacks.c:655
 #, c-format
 msgid "Moving \"%s\" failed: %s."
-msgstr ""
+msgstr "Преместване на \"%s\" пропадна: %s"
 
 #: gsearchtool/gsearchtool-callbacks.c:685
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
-msgstr ""
+msgstr "Искате ли да изтриете \"%s\" за постоянно?"
 
 #: gsearchtool/gsearchtool-callbacks.c:688
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr ""
+msgstr "Кошчето е недостъпно. Не успях да преместя \"%s\" в кошчето."
 
 #: gsearchtool/gsearchtool-callbacks.c:730
-#, fuzzy, c-format
+#, c-format
 msgid "Could not delete \"%s\"."
-msgstr "Не мога да отворя папката \"%s\""
+msgstr "Не мога да изтрия \"%s\""
 
 #: gsearchtool/gsearchtool-callbacks.c:733
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
-msgstr ""
+msgstr "Изтриване·на·\"%s\"·пропадна:·%s"
 
 #: gsearchtool/gsearchtool-callbacks.c:1132
 msgid "Save Search Results As..."
 msgstr "Запазва _Резултата Като..."
 
 #: gsearchtool/gsearchtool-callbacks.c:1184
-#, fuzzy
 msgid "Could not save document."
-msgstr "Не мога да запиша документа \"\" в %s"
+msgstr "Документът не може да се запише."
 
 #: gsearchtool/gsearchtool-callbacks.c:1186
-#, fuzzy
 msgid "You did not select a document name."
-msgstr "Не мога да отворя документа \"%s\""
+msgstr "Не сте избрали име на документа."
 
 #: gsearchtool/gsearchtool-callbacks.c:1212
 #: gsearchtool/gsearchtool-callbacks.c:1307
-#, fuzzy, c-format
+#, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Не мога да запиша документа \"\" в %s"
+msgstr "Не мога да запиша документа \"%s\" в %s"
 
 #: gsearchtool/gsearchtool-callbacks.c:1216
 msgid "The document name you selected is a folder."
-msgstr ""
+msgstr "Името на документа, което сте избрали е папка."
 
 #: gsearchtool/gsearchtool-callbacks.c:1245
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr ""
+msgstr "Документа \"%s\" вече съществува.  Желаете ли да го презапишете?"
 
 #: gsearchtool/gsearchtool-callbacks.c:1249
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr ""
+msgstr "Ако презапишете съществуващ файл, старото му съдържание ще изчезне."
 
 #: gsearchtool/gsearchtool-callbacks.c:1260
 msgid "_Replace"
-msgstr ""
+msgstr "Заменя"
 
 #: gsearchtool/gsearchtool-callbacks.c:1310
-#, fuzzy
 msgid "You may not have write permissions to the document."
-msgstr ""
-"Може да нямате права за писане в този документ. Дукументът не беше запазен."
+msgstr "Може да нямате права за писане в този документ."
 
 #: gsearchtool/gsearchtool-support.c:66
 #, c-format
@@ -1040,9 +1024,8 @@ msgid "Name matches regular e_xpression"
 msgstr "Съвпадение на регулярни изрази"
 
 #: gsearchtool/gsearchtool.c:89
-#, fuzzy
 msgid "Show hidden and backup files"
-msgstr "Показва скрити файлове и папки"
+msgstr "Показва скрити файлове и резервни копия"
 
 #: gsearchtool/gsearchtool.c:90
 msgid "Follow symbolic links"
@@ -1065,18 +1048,14 @@ msgid "No Files Found"
 msgstr "Не са Намерени Файлове"
 
 #: gsearchtool/gsearchtool.c:556
-#, fuzzy, c-format
+#, c-format
 msgid "%d File Found"
-msgid_plural "%d Files Found"
-msgstr[0] "%d файла са намерени"
-msgstr[1] "%d файла са намерени"
+msgstr "%d файл е намерен"
 
 #: gsearchtool/gsearchtool.c:560
-#, fuzzy, c-format
+#, c-format
 msgid "%d file found"
-msgid_plural "%d files found"
-msgstr[0] "%d файла са намерени"
-msgstr[1] "%d файла са намерени"
+msgstr "%d файл е намерен"
 
 #: gsearchtool/gsearchtool.c:666
 msgid "Entry changed called for a non entry option!"
@@ -1132,19 +1111,16 @@ msgstr ""
 "... Твърде много грешки за показване ..."
 
 #: gsearchtool/gsearchtool.c:1327
-#, fuzzy
 msgid "Error while searching for files."
-msgstr "Грешка при търсене на файловете"
+msgstr "Грешка при търсене на файлове."
 
 #: gsearchtool/gsearchtool.c:1368
-#, fuzzy
 msgid "Error parsing the search command."
 msgstr "Грешка при изпълнение командата за търсене"
 
 #: gsearchtool/gsearchtool.c:1391
-#, fuzzy
 msgid "Error running the search command."
-msgstr "Грешка при изпълнение на командата за търсене"
+msgstr "Грешка при изпълнение на командата за търсене."
 
 #: gsearchtool/gsearchtool.c:1487
 msgid "Search Rule Value Entry"
@@ -1228,13 +1204,12 @@ msgid "Show more _options"
 msgstr "Показва повече настр_ойки"
 
 #: gsearchtool/gsearchtool.c:1887
-#, fuzzy
 msgid "Show more options"
-msgstr "Показва повече настр_ойки"
+msgstr "Показва още опции"
 
 #: gsearchtool/gsearchtool.c:1887
 msgid "Expands or collapses a list of search options."
-msgstr ""
+msgstr "Показва или скрива списък с опции за търсене"
 
 #: gsearchtool/gsearchtool.c:1934
 msgid "Click to Start the search"
@@ -1274,27 +1249,24 @@ msgid "_Add"
 msgstr "Доб_авя"
 
 #: logview/actions.c:162
-#, fuzzy
 msgid "Add an action"
-msgstr "Действия"
+msgstr "Добавя действие"
 
 #: logview/actions.c:164
 msgid "_Edit"
 msgstr "Р_едактира"
 
 #: logview/actions.c:169
-#, fuzzy
 msgid "Edit an action"
-msgstr "Изпълнява д_ействия"
+msgstr "Редактира действие"
 
 #: logview/actions.c:171
 msgid "_Remove"
 msgstr "_Премахва"
 
 #: logview/actions.c:176
-#, fuzzy
 msgid "Remove an action"
-msgstr "Премахва всички обекти"
+msgstr "Премахва действие"
 
 #: logview/actions.c:263
 #, c-format
@@ -1339,55 +1311,52 @@ msgid "description"
 msgstr "описание"
 
 #: logview/actions.c:651
-#, fuzzy
 msgid "Edit Action"
-msgstr "Действия"
+msgstr "Редактира действие"
 
 #: logview/actions.c:687
 msgid "_Tag:"
-msgstr ""
+msgstr "_Етикет"
 
 #: logview/actions.c:696
 msgid "Tag that identifies the log file."
-msgstr ""
+msgstr "Етикет, който идентифицира журналния файл."
 
 #: logview/actions.c:705
-#, fuzzy
 msgid "_Log name:"
-msgstr "Име на дяла:"
+msgstr "Име на журнала:"
 
 #: logview/actions.c:714
 msgid "Regular expression that will match the log name."
-msgstr ""
+msgstr "Правилен израз, който съвпада с името на журнала."
 
 #: logview/actions.c:724
-#, fuzzy
 msgid "_Process:"
 msgstr "Процес:"
 
 #: logview/actions.c:733
 msgid "Regular expression that will match process part of message."
-msgstr ""
+msgstr "Правилен израз, който съвпада с частта за процеса от съощението."
 
 #: logview/actions.c:743
-#, fuzzy
 msgid "_Message:"
 msgstr "Съобщение:"
 
 #: logview/actions.c:752
 msgid "Regular expression that will match the message."
-msgstr ""
+msgstr "Правилен израз, който съвпада със съобщението."
 
 #: logview/actions.c:762
-#, fuzzy
 msgid "_Action:"
-msgstr "Действия"
+msgstr "Действие:"
 
 #: logview/actions.c:771
 msgid ""
 "Action that will be executed if all previous regexps. are matched. This is "
 "executed by a system command: system (action)."
-msgstr ""
+msgstr "Действие, което ще се извърши, ако всички предходни "
+"правилни изрази съвпадна. Това се извършва от система номанда: "
+"system (действие)."
 
 #: logview/actions.c:781
 msgid "_Description:"
@@ -1474,11 +1443,9 @@ msgid "<No log loaded>"
 msgstr "<Журналът не е зареден>"
 
 #: logview/info.c:183
-#, fuzzy, c-format
+#, c-format
 msgid "%ld byte"
-msgid_plural "%ld bytes"
-msgstr[0] "%ld байта"
-msgstr[1] "%ld байта"
+msgstr "%ld байта"
 
 #: logview/log_repaint.c:59
 msgid "January"
@@ -1730,6 +1697,7 @@ msgid "Too many logs to monitor. Remove one and try again"
 msgstr "Твърде много журнали за наблюдение. Премахнете един и опитайте отново"
 
 #: logview/monitor.c:298 logview/monitor.c:335
+#, c-format
 msgid "tmp_list is NULL\n"
 msgstr "tmp_list е NULL\n"
 
@@ -1738,6 +1706,7 @@ msgid "Monitoring Logs..."
 msgstr "Наблюдава журнали..."
 
 #: logview/monitor.c:643
+#, c-format
 msgid "TOUCHED!!\n"
 msgstr "ПРОМЕНЕНО!!\n"
 
