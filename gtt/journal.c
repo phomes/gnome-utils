@@ -43,6 +43,7 @@ typedef struct wiggy_s {
 	GtkWidget *interval_popup;
 	GtkFileSelection *filesel;
 	EditIntervalDialog *edit_ivl;
+	char * filepath;
 	GttInterval * interval;
 	GttProject *prj;
 } Wiggy;
@@ -117,7 +118,8 @@ static void
 redraw (GttProject * prj, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
-	gtt_phtml_display (wig->ph, "journal.phtml", wig->prj);
+
+	gtt_phtml_display (wig->ph, wig->filepath, wig->prj);
 }
 
 /* ============================================================== */
@@ -216,6 +218,7 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 	edit_interval_dialog_destroy (wig->edit_ivl);
 	gtk_widget_destroy (wig->top);
 	gtt_phtml_destroy (wig->ph);
+	g_free (wig->filepath);
 	g_free (wig);
 }
 
@@ -389,6 +392,7 @@ do_show_report (const char * report, GttProject *prj)
 	/* finally ... display the actual journal */
 
 	wig->prj = prj;
+	wig->filepath = g_strdup (report);
 	if (!prj)
 	{
 		gtt_phtml_display (wig->ph, "noproject.phtml", NULL);
