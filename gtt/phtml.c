@@ -30,7 +30,7 @@
 typedef enum {
 	NUL=0,
 	START_DATIME =1,
-	STOP,
+	STOP_DATIME,
 	ELAPSED,
 	BILLABLE,
 	BILLRATE,
@@ -56,107 +56,181 @@ struct gtt_phtml_s
 /* ============================================================== */
 
 static void
-show_table (GttPhtml *phtml, GttProject*prj)
+show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 {
+	int i;
 	GList *node;
-	const char *buf;
+	char *p;
+	char buff[2000];
 
-	buf = _("<table border=1><caption><em>hey hey hey!</em></caption>"
-		"<tr><th colspan=4>Memo"
-		"<tr><th>&nbsp;<th>Start<th>Stop<th>Elapsed");
-	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
+	p = buff;
+	p += sprintf (p, "<table border=1><tr><th colspan=%d>%s<tr>",
+		phtml->ncols, _("Memo"));
+
+
+	/* write out the table header */
+	for (i=0; i<phtml->ncols; i++)
+	{
+		p = stpcpy (p, "<th>");
+		switch (phtml->cols[i]) 
+		{
+			case START_DATIME:
+				p = stpcpy (p, _("Start"));
+				break;
+			case STOP_DATIME:
+				p = stpcpy (p, _("Stop"));
+				break;
+			case ELAPSED:
+				p = stpcpy (p, _("Elapsed"));
+				break;
+			case BILLABLE:
+				p = stpcpy (p, _("Billable"));
+				break;
+			case BILLRATE:
+				p = stpcpy (p, _("Bill Rate"));
+				break;
+			default:
+				p = stpcpy (p, _("Error - Unknown"));
+		}
+	}
+
+
+	(phtml->write_stream) (phtml, buff, p-buff, phtml->user_data);
 
 	for (node = gtt_project_get_tasks(prj); node; node=node->next)
 	{
-		char prn[1232], *p;
-		int prt_date = 1;
+		const char *pp;
 		time_t prev_stop = 0;
 		GList *in;
 		GttTask *tsk = node->data;
 		
-		p = prn;
-		p = stpcpy (p, "<tr><td colspan=4>"
-			"<a href=\"gtt:task:");
-		p += sprintf (p, "%p\">", tsk);
+		/* write the memo message */
+		p = buff;
+		p += sprintf (p, "<tr><td colspan=%d>", phtml->ncols);
+		if (show_links) 
+		{
+			p = stpcpy (p, "<a href=\"gtt:task:");
+			p += sprintf (p, "%p\">", tsk);
+		}
 
-		buf = gtt_task_get_memo(tsk);
-		if (!buf || !buf[0]) buf = _("(empty)");
-		p = stpcpy (p, buf);
-		p = stpcpy (p, "</a>");
+		pp = gtt_task_get_memo(tsk);
+		if (!pp || !pp[0]) pp = _("(empty)");
+		p = stpcpy (p, pp);
+		if (show_links) p = stpcpy (p, "</a>");
 
-		(phtml->write_stream) (phtml, prn, p-prn, phtml->user_data);
+		(phtml->write_stream) (phtml, buff, p-buff, phtml->user_data);
 		
+		/* write out intervals */
 		for (in=gtt_task_get_intervals(tsk); in; in=in->next)
 		{
 			size_t len;
 			GttInterval *ivl = in->data;
 			time_t start, stop, elapsed;
+			int prt_start_date = 1;
+			int prt_stop_date = 1;
+
+			/* data setup */
 			start = gtt_interval_get_start (ivl);
 			stop = gtt_interval_get_stop (ivl);
 			elapsed = stop - start;
-			
-			p = prn;
-			p = stpcpy (p, 
-				"<tr><td>&nbsp;&nbsp;&nbsp;"
-				"<td align=right>&nbsp;&nbsp;"
-				"<a href=\"gtt:interval:");
-			p += sprintf (p, "%p\">", ivl);
 
 			/* print hour only or date too? */
+			prt_stop_date = is_same_day(start, stop);
 			if (0 != prev_stop) {
-				prt_date = is_same_day(start, prev_stop);
+				prt_start_date = is_same_day(start, prev_stop);
 			}
-			if (prt_date) {
-				p = print_date_time (p, 100, start);
-			} else {
-				p = print_time (p, 100, start);
-			}
-
-			/* print hour only or date too? */
-			prt_date = is_same_day(start, stop);
-			p = stpcpy (p, 
-				"</a>&nbsp;&nbsp;"
-				"<td>&nbsp;&nbsp;"
-				"<a href=\"gtt:interval:");
-			p += sprintf (p, "%p\">", ivl);
-			if (prt_date) {
-				p = print_date_time (p, 70, stop);
-			} else {
-				p = print_time (p, 70, stop);
-			}
-
 			prev_stop = stop;
 
-			p = stpcpy (p, "</a>&nbsp;&nbsp;<td>&nbsp;&nbsp;");
-			p = print_hours_elapsed (p, 40, elapsed, TRUE);
-			p = stpcpy (p, "&nbsp;&nbsp;");
-			len = p - prn;
-			(phtml->write_stream) (phtml, prn, len, phtml->user_data);
+			p = buff;
+			p = stpcpy (p, "<tr>");
+			for (i=0; i<phtml->ncols; i++)
+			{
+
+				switch (phtml->cols[i]) 
+				{
+	case START_DATIME:
+	{
+		p = stpcpy (p, "<td align=right>&nbsp;&nbsp;");
+		if (show_links)
+		{
+			p += sprintf (p, "<a href=\"gtt:interval:%p\">", ivl);
+		}
+		if (prt_start_date) {
+			p = print_date_time (p, 100, start);
+		} else {
+			p = print_time (p, 100, start);
+		}
+		if (show_links) p = stpcpy (p, "</a>");
+		p = stpcpy (p, "&nbsp;&nbsp;");
+		break;
+	}
+	case STOP_DATIME:
+	{
+		p = stpcpy (p, "<td align=right>&nbsp;&nbsp;");
+		if (show_links)
+		{
+			p += sprintf (p, "<a href=\"gtt:interval:%p\">", ivl);
+		}
+		if (prt_stop_date) {
+			p = print_date_time (p, 100, stop);
+		} else {
+			p = print_time (p, 100, stop);
+		}
+		if (show_links) p = stpcpy (p, "</a>");
+		p = stpcpy (p, "&nbsp;&nbsp;");
+		break;
+	}
+	case ELAPSED:
+	{
+		p = stpcpy (p, "<td>&nbsp;&nbsp;");
+		p = print_hours_elapsed (p, 40, elapsed, TRUE);
+		p = stpcpy (p, "&nbsp;&nbsp;");
+		break;
+	}
+	case BILLABLE:
+		p = stpcpy (p, "<td>");
+		p = stpcpy (p, _("Billable"));
+		break;
+	case BILLRATE:
+		p = stpcpy (p, "<td>");
+		p = stpcpy (p, _("Bill Rate"));
+		break;
+	default:
+		p = stpcpy (p, "<td>");
+				}
+			}
+
+			len = p - buff;
+			(phtml->write_stream) (phtml, buff, len, phtml->user_data);
 		}
 
 	}
 	
-	buf = "</table>";
-	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
+	p = "</table>";
+	(phtml->write_stream) (phtml, p, strlen(p), phtml->user_data);
 
 }
 
 /* ============================================================== */
+/* a simpler, hard-coded version of show_table */
 
 static void
 show_journal (GttPhtml *phtml, GttProject*prj)
 {
 	GList *node;
-	const char *buf;
+	char *p;
+	char prn[2000];
 
-	buf = _("<table border=1><caption><em>hey hey hey!</em></caption>"
-		"<tr><th colspan=4>Memo"
-		"<tr><th>&nbsp;<th>Start<th>Stop<th>Elapsed");
-	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
+	p = prn;
+	p += sprintf (p, "<table border=1><tr><th colspan=4>%s\n"
+		"<tr><th>&nbsp;<th>%s<th>%s<th>%s",
+		_("Memo"), _("Start"), _("Stop"), _("Elapsed"));
+
+	(phtml->write_stream) (phtml, prn, p-prn, phtml->user_data);
 
 	for (node = gtt_project_get_tasks(prj); node; node=node->next)
 	{
-		char prn[1232], *p;
+		const char *pp;
 		int prt_date = 1;
 		time_t prev_stop = 0;
 		GList *in;
@@ -167,9 +241,9 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 			"<a href=\"gtt:task:");
 		p += sprintf (p, "%p\">", tsk);
 
-		buf = gtt_task_get_memo(tsk);
-		if (!buf || !buf[0]) buf = _("(empty)");
-		p = stpcpy (p, buf);
+		pp = gtt_task_get_memo(tsk);
+		if (!pp || !pp[0]) pp = _("(empty)");
+		p = stpcpy (p, pp);
 		p = stpcpy (p, "</a>");
 
 		(phtml->write_stream) (phtml, prn, p-prn, phtml->user_data);
@@ -225,8 +299,8 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 
 	}
 	
-	buf = "</table>";
-	(phtml->write_stream) (phtml, buf, strlen(buf), phtml->user_data);
+	p = "</table>";
+	(phtml->write_stream) (phtml, p, strlen(p), phtml->user_data);
 
 }
 
@@ -260,12 +334,36 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 		else
 		if (0 == strncmp (tok, "$table", 6))
 		{
-			show_table (phtml, prj);
+			show_table (phtml, prj, 1);
 		}
 		else
 		if (0 == strncmp (tok, "$start_datime", 13))
 		{
 			phtml->cols[phtml->ncols] = START_DATIME;
+			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$stop_datime", 12))
+		{
+			phtml->cols[phtml->ncols] = STOP_DATIME;
+			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$elapsed", 8))
+		{
+			phtml->cols[phtml->ncols] = ELAPSED;
+			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$billable", 9))
+		{
+			phtml->cols[phtml->ncols] = BILLABLE;
+			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$billrate", 9))
+		{
+			phtml->cols[phtml->ncols] = BILLRATE;
 			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
 		}
 		else
