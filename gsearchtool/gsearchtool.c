@@ -706,6 +706,7 @@ handle_search_command_stdout_io (GIOChannel 	*ioc,
 				 gpointer 	data) 
 {
 	struct _SearchStruct *search_data = data;
+	gboolean             broken_pipe = FALSE;
 
 	if ((condition == G_IO_IN) || (condition == G_IO_IN + G_IO_HUP)) { 
 	
@@ -725,12 +726,20 @@ handle_search_command_stdout_io (GIOChannel 	*ioc,
 			gchar *utf8 = NULL;
 			gchar *filename = NULL;
 			
-			if (search_data->running != RUNNING) {
+			if (search_data->running == MAKE_IT_STOP) {
+				broken_pipe = TRUE;
+				break;
+			} 
+			else if (search_data->running != RUNNING) {
 			 	break;
 			}
 			
 			do {
 				status = g_io_channel_read_line_string (ioc, string, NULL, &error);
+				
+				if (status == G_IO_STATUS_EOF) {
+					broken_pipe = TRUE;
+				}
 				
 				while (gtk_events_pending ()) {
 					if (search_data->running == MAKE_IT_QUIT) {
@@ -739,7 +748,11 @@ handle_search_command_stdout_io (GIOChannel 	*ioc,
 					gtk_main_iteration (); 				
 				}
 				
-			} while (status == G_IO_STATUS_AGAIN);
+			} while (status == G_IO_STATUS_AGAIN && broken_pipe == FALSE);
+			
+			if (pipe == TRUE) {
+				break;
+			}
 			
 			if (status != G_IO_STATUS_NORMAL) {
 				if (error != NULL) {
@@ -809,7 +822,7 @@ handle_search_command_stdout_io (GIOChannel 	*ioc,
 		g_string_free (string, TRUE);
 	}
 
-	if (condition != G_IO_IN) { 
+	if (condition != G_IO_IN || broken_pipe == TRUE) { 
 	
 		gint   total_files;
 		gchar *status_bar_string = NULL;
@@ -864,6 +877,7 @@ handle_search_command_stderr_io (GIOChannel 	*ioc,
 	struct _SearchStruct *search_data = data;
 	static GString       *error_msgs = NULL;
 	static gboolean      truncate_error_msgs = FALSE;
+	gboolean             broken_pipe = FALSE;
 	
 	if ((condition == G_IO_IN) || (condition == G_IO_IN + G_IO_HUP)) { 
 	
@@ -885,6 +899,10 @@ handle_search_command_stderr_io (GIOChannel 	*ioc,
 			do {
 				status = g_io_channel_read_line_string (ioc, string, NULL, &error);
 	
+				if (status == G_IO_STATUS_EOF) {
+					broken_pipe = TRUE;
+				}
+	
 				while (gtk_events_pending ()) {
 					if (search_data->running == MAKE_IT_QUIT) {
 						break;
@@ -892,7 +910,11 @@ handle_search_command_stderr_io (GIOChannel 	*ioc,
 					gtk_main_iteration ();
 				}
 					
-			} while (status == G_IO_STATUS_AGAIN);
+			} while (status == G_IO_STATUS_AGAIN && broken_pipe == FALSE);
+			
+			if (broken_pipe == TRUE) {
+				break;
+			}
 			
 			if (status != G_IO_STATUS_NORMAL) {
 				if (error != NULL) {
@@ -919,7 +941,7 @@ handle_search_command_stderr_io (GIOChannel 	*ioc,
 		g_free (utf8);
 	}
 	
-	if (condition != G_IO_IN) { 
+	if (condition != G_IO_IN || broken_pipe == TRUE) { 
 	
 		if (error_msgs != NULL) {
 
