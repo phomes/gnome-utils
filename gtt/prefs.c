@@ -36,11 +36,26 @@ typedef struct _PrefsDialog
 	GtkCheckButton *show_status_bar;
 	GtkCheckButton *show_clist_titles;
 	GtkCheckButton *show_subprojects;
+
+	GtkCheckButton *logfileuse;
+	GnomeFileEntry *logfilename;
+	GtkWidget      *logfilename_l;
+	GtkWidget      *logfilestart_l;
+	GnomeEntry     *logfilestart;
+	GtkWidget      *logfilestop_l;
+	GnomeEntry     *logfilestop;
+	GtkWidget      *logfileminsecs_l;
+	GnomeEntry     *logfileminsecs;
+
+	GtkEntry       *command;
+	GtkEntry       *command_null;
+
 	GtkCheckButton *show_tb_icons;
 	GtkCheckButton *show_tb_texts;
 	GtkCheckButton *show_tb_tips;
         GtkCheckButton *show_tb_new;
         GtkCheckButton *show_tb_ccp;
+        GtkCheckButton *show_tb_journal;
         GtkCheckButton *show_tb_pref;
         GtkCheckButton *show_tb_timer;
         GtkCheckButton *show_tb_prop;
@@ -48,17 +63,7 @@ typedef struct _PrefsDialog
         GtkCheckButton *show_tb_help;
         GtkCheckButton *show_tb_exit;
 
-	GtkEntry       *command;
-	GtkEntry       *command_null;
-	GnomeFileEntry *logfilename;
-	GtkWidget      *logfilename_l;
-	GtkCheckButton *logfileuse;
-	GtkEntry       *logfileminsecs;
-	GtkWidget      *logfileminsecs_l;
-	GtkWidget      *logfilestr_l;
-	GnomeEntry     *logfilestr;
-	GtkWidget      *logfilestop_l;
-	GnomeEntry     *logfilestop;
+	GtkEntry       *idle_secs;
 } PrefsDialog;
 
 
@@ -160,6 +165,26 @@ do_set_project(GttProject *proj, PrefsDialog *dlg)
 })
 
 static void 
+display_options(PrefsDialog *dlg)
+{
+	GtkWidget *w;
+	GladeXML *gtxml = dlg->gtxml;
+
+	w = GETWID ("show secs");
+	dlg->show_secs = GTK_CHECK_BUTTON(w);
+
+	w = GETWID ("show status");
+	dlg->show_status_bar = GTK_CHECK_BUTTON(w);
+
+	w = GETWID ("show head");
+	dlg->show_clist_titles = GTK_CHECK_BUTTON(w);
+
+	w = GETWID ("show sub");
+	dlg->show_subprojects = GTK_CHECK_BUTTON(w);
+}
+
+
+static void 
 command_options (PrefsDialog *dlg)
 {
 	GtkWidget *e;
@@ -170,6 +195,40 @@ command_options (PrefsDialog *dlg)
 
 	e = GETWID ("no project");
 	dlg->command_null = GTK_ENTRY(e);
+}
+
+static void 
+logfile_options(PrefsDialog *dlg)
+{
+	GtkWidget *w;
+	GladeXML *gtxml = dlg->gtxml;
+
+	w = GETWID ("use logfile");
+	dlg->logfileuse = GTK_CHECK_BUTTON(w);
+
+	w = GETWID ("filename label");
+	dlg->logfilename_l = w;
+
+	w = GETWID ("filename combo");
+	dlg->logfilename = GNOME_FILE_ENTRY(w);
+
+	w = GETWID ("fstart label");
+	dlg->logfilestart_l = w;
+
+	w = GETWID ("fstart combo");
+	dlg->logfilestart = GNOME_ENTRY(w);
+
+	w = GETWID ("fstop label");
+	dlg->logfilestop_l = w;
+
+	w = GETWID ("fstop combo");
+	dlg->logfilestop = GNOME_ENTRY(w);
+
+	w = GETWID ("fmin label");
+	dlg->logfileminsecs_l = w;
+
+	w = GETWID ("fmin combo");
+	dlg->logfileminsecs = GNOME_ENTRY(w);
 }
 
 static void 
@@ -187,63 +246,42 @@ toolbar_options(PrefsDialog *dlg)
 	w = GETWID ("show tooltips");
 	dlg->show_tb_tips = GTK_CHECK_BUTTON(w);
 
-#if 0
-	frame = gtk_frame_new(_("Toolbar Segments"));
-	gtk_widget_show(frame);
-	gtk_box_pack_start(vbox, frame, FALSE, FALSE, 2);
+	w = GETWID ("show new");
+	dlg->show_tb_new = GTK_CHECK_BUTTON(w);
 
-	vb = gtk_vbox_new(FALSE, 0);
-	gtk_widget_show(vb);
-	gtk_container_add(GTK_CONTAINER(frame), vb);
+	w = GETWID ("show save");
+	dlg->show_tb_file = GTK_CHECK_BUTTON(w);
 
-	w = gtk_check_button_new_with_label(_("Show `New'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_new = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
+	w = GETWID ("show cut");
+	dlg->show_tb_ccp = GTK_CHECK_BUTTON(w);
 
-	w = gtk_check_button_new_with_label(_("Show `Save', `Reload'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_file = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
+	w = GETWID ("show journal");
+	dlg->show_tb_journal = GTK_CHECK_BUTTON(w);
 
-	w = gtk_check_button_new_with_label(_("Show `Cut', `Copy', `Paste'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_ccp = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
+	w = GETWID ("show props");
+	dlg->show_tb_prop = GTK_CHECK_BUTTON(w);
 
-	w = gtk_check_button_new_with_label(_("Show `Properties'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_prop = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
+	w = GETWID ("show timer");
+	dlg->show_tb_timer = GTK_CHECK_BUTTON(w);
 
-	w = gtk_check_button_new_with_label(_("Show `Timer'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_timer = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
+	w = GETWID ("show prefs");
+	dlg->show_tb_pref = GTK_CHECK_BUTTON(w);
 
-	w = gtk_check_button_new_with_label(_("Show `Preferences'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_pref = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
+	w = GETWID ("show help");
+	dlg->show_tb_help = GTK_CHECK_BUTTON(w);
 
-	w = gtk_check_button_new_with_label(_("Show `Help'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_help = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
+	w = GETWID ("show quit");
+	dlg->show_tb_exit = GTK_CHECK_BUTTON(w);
+}
 
-	w = gtk_check_button_new_with_label(_("Show `Quit'"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_tb_exit = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
-#endif
+static void 
+misc_options(PrefsDialog *dlg)
+{
+	GtkWidget *w;
+	GladeXML *gtxml = dlg->gtxml;
+
+	w = GETWID ("idle secs");
+	dlg->idle_secs = GTK_CHECK_BUTTON(w);
 }
 
 /* ============================================================== */
@@ -273,7 +311,9 @@ prefs_dialog_new (void)
 
 	/* ------------------------------------------------------ */
 	/* grab the various entry boxes and hook them up */
+	display_options (dlg);
 	command_options (dlg);
+	logfile_options (dlg);
 	toolbar_options (dlg);
 
 	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
@@ -446,44 +486,6 @@ static void options_apply_cb(GnomePropertyBox *pb, gint page, OptionsDlg *odlg)
 	toolbar_set_states();
 }
 
-static void display_options(OptionsDlg *odlg, GtkBox *vbox)
-{
-	GtkWidget *w, *frame;
-	GtkWidget *vb;
-
-	frame = gtk_frame_new(_("Display"));
-	gtk_widget_show(frame);
-	gtk_box_pack_start(vbox, frame, FALSE, FALSE, 2);
-
-	vb = gtk_vbox_new(FALSE, 0);
-	gtk_widget_show(vb);
-	gtk_container_add(GTK_CONTAINER(frame), vb);
-
-	w = gtk_check_button_new_with_label(_("Show Seconds"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_secs = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
-
-	w = gtk_check_button_new_with_label(_("Show Status Bar"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_status_bar = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
-
-	w = gtk_check_button_new_with_label(_("Show Table Header"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_clist_titles = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
-
-	w = gtk_check_button_new_with_label(_("Show Sub-Projects"));
-	gtk_widget_show(w);
-	gtk_box_pack_start(GTK_BOX(vb), w, FALSE, FALSE, 0);
-	odlg->show_subprojects = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
-}
-
 
 
 
@@ -503,82 +505,6 @@ static void logfile_sigfunc(GtkWidget *w, OptionsDlg *odlg)
 	gtk_widget_set_sensitive(odlg->logfileminsecs_l, state);
 }
 
-static void logfile_options(OptionsDlg *odlg, GtkBox *vbox)
-{
-	GtkWidget *w, *frame;
-	GtkTable *table;
-
-	frame = gtk_frame_new(_("Logfile"));
-	gtk_widget_show(frame);
-	gtk_box_pack_start(vbox, frame, FALSE, FALSE, 2);
-
-	table = GTK_TABLE(gtk_table_new(4, 2, FALSE));
-	gtk_widget_show(GTK_WIDGET(table));
-	gtk_container_add(GTK_CONTAINER(frame), GTK_WIDGET(table));
-	
-	w = gtk_check_button_new_with_label(_("Use Logfile"));
-	gtk_widget_show(w);
-	gtk_table_attach_defaults(table, w, 0, 3, 0, 1);
-	gtk_signal_connect(GTK_OBJECT(w), "clicked",
-			   GTK_SIGNAL_FUNC(logfile_sigfunc),
-			   (gpointer *)odlg);
-	odlg->logfileuse = GTK_CHECK_BUTTON(w);
-	toggle_changes_property_box(odlg, w);
-
-	w = gtk_label_new(_("Filename:"));
-	gtk_misc_set_alignment(GTK_MISC(w), 1.0, 0.5);
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 0, 1, 1, 2,
-			 GTK_FILL, GTK_EXPAND, 0, 0);
-	odlg->logfilename_l = w;
-	w = gnome_file_entry_new("logfilename", "Logfile");
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 1, 3, 1, 2, GTK_EXPAND | GTK_FILL,
-			 GTK_EXPAND, 3, 0);
-	odlg->logfilename = GNOME_FILE_ENTRY(w);
-	entry_changes_property_box(odlg, 
-				   gnome_file_entry_gtk_entry(GNOME_FILE_ENTRY(w)));
-
-	w = gtk_label_new(_("Entry Start:"));
-	gtk_misc_set_alignment(GTK_MISC(w), 1.0, 0.5);
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 0, 1, 2, 3,
-			 GTK_FILL, GTK_EXPAND, 0, 0);
-	odlg->logfilestr_l = w;
-	w = gnome_entry_new("logfilestr");
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 1, 3, 2, 3,
-			 GTK_EXPAND | GTK_FILL, GTK_EXPAND, 3, 0);
-	odlg->logfilestr = GNOME_ENTRY(w);
-	entry_changes_property_box(odlg,
-				   gnome_entry_gtk_entry(GNOME_ENTRY(w)));
-
-	w = gtk_label_new(_("Entry Stop:"));
-	gtk_misc_set_alignment(GTK_MISC(w), 1.0, 0.5);
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 0, 1, 3, 4,
-			 GTK_FILL, GTK_EXPAND, 0, 0);
-	odlg->logfilestop_l = w;
-	w = gnome_entry_new("logfilestop");
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 1, 3, 3, 4,
-			 GTK_EXPAND | GTK_FILL, GTK_EXPAND, 3, 0);
-	odlg->logfilestop = GNOME_ENTRY(w);
-	entry_changes_property_box(odlg,
-				   gnome_entry_gtk_entry(GNOME_ENTRY(w)));
-
-	w = gtk_label_new(_("Min Log Time in secs:"));
-	gtk_misc_set_alignment(GTK_MISC(w), 1.0, 0.5);
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 0, 1, 4, 5, GTK_FILL,
-			 GTK_EXPAND, 0, 0);
-	odlg->logfileminsecs_l = w;
-	w = gtk_entry_new();
-	gtk_widget_show(w);
-	gtk_table_attach(table, w, 1, 2, 4, 5, GTK_FILL, GTK_EXPAND, 3, 0);
-	odlg->logfileminsecs = GTK_ENTRY(w);
-	entry_changes_property_box(odlg, w);
-}
 
 
 
