@@ -1,6 +1,8 @@
-/* timers.c --- detecting when the user is idle, and other timer-related tasks.
- * xscreensaver, Copyright (c) 1991-1997, 1998
- *  Jamie Zawinski <jwz@jwz.org>
+/* 
+ * idle-timer.c --- detecting when the user is idle, and other timer-related tasks.
+ * Originally comes from xscreensaver:
+ * xscreensaver, Copyright (c) 1991-1997, 1998 aJamie Zawinski <jwz@jwz.org>
+ * hacked up for use with gtt, Copyright (c) 2001 Linas Vepstas <linas@linas.org>
  *
  * Permission to use, copy, modify, distribute, and sell this software and its
  * documentation for any purpose is hereby granted without fee, provided that
@@ -92,15 +94,20 @@ schedule_wakeup_event (saver_info *si, Time when)
 static void
 notice_events (saver_info *si, Window window, Bool top_p)
 {
-  saver_preferences *p = &si->prefs;
   XWindowAttributes attrs;
   unsigned long events;
   Window root, parent, *kids;
   unsigned int nkids;
+  GdkWindow *gwin;
 
-  if (XtWindowToWidget (si->dpy, window))
+  gwin = gdk_window_lookup (window);
+  if (gwin)
+  {
     /* If it's one of ours, don't mess up its event mask. */
+printf ("duuuude our window g=%p xw=0x%x\n",gwin, (int) window);
     return;
+  }
+printf ("duuuude not**** our window g=%p xw=0x%x\n",gwin, (int) window);
 
   if (!XQueryTree (si->dpy, window, &root, &parent, &kids, &nkids))
     return;
@@ -126,10 +133,10 @@ notice_events (saver_info *si, Window window, Bool top_p)
    */
   XSelectInput (si->dpy, window, SubstructureNotifyMask | events);
 
-  if (top_p && p->verbose_p && (events & KeyPressMask))
+  if (top_p && (events & KeyPressMask))
     {
       /* Only mention one window per tree (hack hack). */
-      fprintf (stderr, "%s: selected KeyPress on 0x%lX\n", blurb(),
+      fprintf (stderr, "duude selected KeyPress on 0x%lX\n", 
 	       (unsigned long) window);
       top_p = False;
     }
@@ -142,11 +149,26 @@ notice_events (saver_info *si, Window window, Bool top_p)
     }
 }
 
-#if 0
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+static int
+saver_ehandler (Display *dpy, XErrorEvent *error)
+{
 
+  fprintf (stderr, "\n"
+           "#######################################"
+           "#######################################\n\n"
+           "X Error!  PLEASE REPORT THIS BUG.\n");
 
-int
+  // if (XmuPrintDefaultErrorMessage (dpy, error, stderr))
+    {
+      fprintf (stderr, "\n");
+      exit (1);
+    }
+  // else
+    fprintf (stderr, " (nonfatal.)\n");
+  return 0;
+}
+
+static int
 BadWindow_ehandler (Display *dpy, XErrorEvent *error)
 {
   /* When we notice a window being created, we spawn a timer that waits
@@ -161,9 +183,6 @@ BadWindow_ehandler (Display *dpy, XErrorEvent *error)
   else
     return saver_ehandler (dpy, error);
 }
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-#endif 
 
 struct notice_events_timer_arg {
   saver_info *si;
@@ -262,7 +281,7 @@ check_pointer_timer (gpointer closure)
       int root_x, root_y, x, y;
       unsigned int mask;
 
-      XQueryPointer (si->dpy, ssi->screensaver_window, &root, &child,
+      XQueryPointer (si->dpy, RootWindowOfScreen (ssi->screen), &root, &child,
 		     &root_x, &root_y, &x, &y, &mask);
 
       if (root_x == ssi->poll_mouse_last_root_x &&
@@ -324,21 +343,14 @@ check_pointer_timer (gpointer closure)
   return 0;
 }
 
-#if 0
-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-/* An unfortunate situation is this: the saver is not active, because the
+/* An unfortunate situation is this: the
    user has been typing.  The machine is a laptop.  The user closes the lid
    and suspends it.  The CPU halts.  Some hours later, the user opens the
-   lid.  At this point, Xt's timers will fire, and xscreensaver will blank
-   the screen.
+   lid.  At this point, timers will fire, and etc.
 
    So far so good -- well, not really, but it's the best that we can do,
-   since the OS doesn't send us a signal *before* shutdown -- but if the
-   user had delayed locking (lockTimeout > 0) then we should start off
-   in the locked state, rather than only locking N minutes from when the
-   lid was opened.  Also, eschewing fading is probably a good idea, to
-   clamp down as soon as possible.
+   since the OS doesn't send us a signal *before* shutdown 
 
    We only do this when we'd be polling the mouse position anyway.
    This amounts to an assumption that machines with APM support also
@@ -360,83 +372,23 @@ check_for_clock_skew (saver_info *si)
   if (si->last_wall_clock_time != 0 &&
       shift > (p->timeout / 1000))
     {
-      if (p->verbose_p)
-        fprintf (stderr, "%s: wall clock has jumped by %d:%02d:%02d!\n",
-                 blurb(),
+        fprintf (stderr, "wall clock has jumped by %ld:%02ld:%02ld!\n",
                  (shift / (60 * 60)), ((shift / 60) % 60), (shift % 60));
 
-      idle_timer ((XtPointer) si, 0);
+      idle_timer ((gpointer) si);
     }
 
   si->last_wall_clock_time = now;
 }
 
 
-
 static void
 dispatch_event (saver_info *si, XEvent *event)
 {
-  XtDispatchEvent (event);
+  /* no-op for us */
+  /* XtDispatchEvent (event); */
 }
 
-
-static void
-swallow_unlock_typeahead_events (saver_info *si, XEvent *e)
-{
-  XEvent event;
-  char buf [100];
-  int i = 0;
-
-  memset (buf, 0, sizeof(buf));
-
-  event = *e;
-
-  do
-    {
-      if (event.xany.type == KeyPress)
-        {
-          char s[2];
-          int size = XLookupString ((XKeyEvent *) &event, s, 1, 0, 0);
-          if (size != 1) continue;
-          switch (*s)
-            {
-            case '\010': case '\177':			/* Backspace */
-              if (i > 0) i--;
-              break;
-            case '\025': case '\030':			/* Erase line */
-            case '\012': case '\015':			/* Enter */
-              i = 0;
-              break;
-            case '\040':				/* Space */
-              if (i == 0)
-                break;  /* ignore space at beginning of line */
-              /* else, fall through */
-            default:
-              buf [i++] = *s;
-              break;
-            }
-        }
-
-    } while (i < sizeof(buf)-1 &&
-             XCheckMaskEvent (si->dpy, KeyPressMask, &event));
-
-  buf[i] = 0;
-
-  if (si->unlock_typeahead)
-    {
-      memset (si->unlock_typeahead, 0, strlen(si->unlock_typeahead));
-      free (si->unlock_typeahead);
-    }
-
-  if (i > 0)
-    si->unlock_typeahead = strdup (buf);
-  else
-    si->unlock_typeahead = 0;
-
-  memset (buf, 0, sizeof(buf));
-}
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-#endif 
 
 
 /* methods of detecting idleness:
@@ -666,26 +618,12 @@ return 99;
 	    if (sevent->state == ScreenSaverOn)
 	      {
 		int i = 0;
-		if (p->verbose_p)
-		  fprintf (stderr, "%s: MIT ScreenSaverOn event received.\n",
-			   blurb());
-
-		/* Get the "real" server window(s) out of the way as soon
-		   as possible. */
-		for (i = 0; i < si->nscreens; i++)
-		  {
-		    saver_screen_info *ssi = &si->screens[i];
-		    if (ssi->server_mit_saver_window &&
-			window_exists_p (si->dpy,
-					 ssi->server_mit_saver_window))
-		      XUnmapWindow (si->dpy, ssi->server_mit_saver_window);
-		  }
+	        fprintf (stderr, "MIT ScreenSaverOn event received.\n");
 
 		if (sevent->kind != ScreenSaverExternal)
 		  {
 		    fprintf (stderr,
-			 "%s: ScreenSaverOn event wasn't of type External!\n",
-			     blurb());
+			 "ScreenSaverOn event wasn't of type External!\n");
 		  }
 
 		if (until_idle_p)
@@ -694,15 +632,13 @@ return 99;
 	    else if (sevent->state == ScreenSaverOff)
 	      {
 		if (p->verbose_p)
-		  fprintf (stderr, "%s: MIT ScreenSaverOff event received.\n",
-			   blurb());
+		  fprintf (stderr, "MIT ScreenSaverOff event received.\n");
 		if (!until_idle_p)
 		  goto DONE;
 	      }
 	    else
 	      fprintf (stderr,
-		       "%s: unknown MIT-SCREEN-SAVER event %d received!\n",
-		       blurb(), sevent->state);
+		       "unknown MIT-SCREEN-SAVER event %d received!\n");
 	  }
 	else
 
@@ -742,18 +678,13 @@ return 99;
  DONE:
 
 
-  /* If there's a user event on the queue, swallow it.
-     If we're using a server extension, and the user becomes active, we
+  /* If we're using a server extension, and the user becomes active, we
      get the extension event before the user event -- so the keypress or
-     motion or whatever is still on the queue.  This makes "unfade" not
-     work, because it sees that event, and bugs out.  (This problem
+     motion or whatever is still on the queue.  (This problem
      doesn't exhibit itself without an extension, because in that case,
      there's only one event generated by user activity, not two.)
    */
-  if (!until_idle_p && si->locked_p)
-    swallow_unlock_typeahead_events (si, &event);
-  else
-    while (XCheckMaskEvent (si->dpy,
+   while (XCheckMaskEvent (si->dpy,
                             (KeyPressMask|ButtonPressMask|PointerMotionMask),
                      &event))
       ;
@@ -761,19 +692,18 @@ return 99;
 
   if (si->check_pointer_timer_id)
     {
-      XtRemoveTimeOut (si->check_pointer_timer_id);
+      gtk_timeout_remove (si->check_pointer_timer_id);
       si->check_pointer_timer_id = 0;
     }
   if (si->timer_id)
     {
-      XtRemoveTimeOut (si->timer_id);
+      gtk_timeout_remove (si->timer_id);
       si->timer_id = 0;
     }
 
-  if (until_idle_p && si->cycle_id)	/* no cycle timer when inactive */
-    abort ();
+  if (until_idle_p) abort ();
 
-  return;
+  return 888;
 }
 
 
