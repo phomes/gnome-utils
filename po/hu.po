@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.2.1\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2001-09-03 18:16+0200\n"
 "Last-Translator: András Tímár <timar@gnome.hu>\n"
 "Language-Team: Hungarian <hu@gnome.hu>\n"
@@ -475,10 +475,6 @@ msgstr "Karakter:"
 msgid "Character to insert"
 msgstr "Karakterkód:"
 
-#: gcharmap/src/asciiselect.c:157
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
 #: gcharmap/src/callbacks.c:63
 #, fuzzy
 msgid "GNOME Character Map"
@@ -506,43 +502,43 @@ msgstr "A vágólapra másolt szöveg..."
 msgid "Text cut to clipboard..."
 msgstr "A vágólapra vágott szöveg..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "A vágólapról beillesztett szöveg..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "Gnome karaktertábla"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "Mûvelet eszköztár"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 #, fuzzy
 msgid "_Text to copy:"
 msgstr "Másolandó szöveg:"
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 #, fuzzy
 msgid "_Copy"
 msgstr "Másolás"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 #, fuzzy
 msgid "Text to copy"
 msgstr "Másolandó szöveg:"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 #, fuzzy
 msgid "Entry"
 msgstr "Bejegyzés vége:"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Másolás"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 #, fuzzy
 msgid "Copy the text"
 msgstr "Kijelölés másolása"
@@ -683,34 +679,34 @@ msgstr "Helyesírás-ellenõrzés..."
 msgid "Spell check done"
 msgstr "A helyesírás-ellenõrzés befejezõdött"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Nincs egyezés"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "Keresés szóra..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "A keresés befejezõdött"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "Nincs ilyen karakterlánc"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 #, fuzzy
 msgid "Find"
 msgstr "Keresés"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 #, fuzzy
 msgid "_Find"
 msgstr "Keresés:"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 #, fuzzy
 msgid ""
 "Unable to perform requested operation. \n"
@@ -722,54 +718,54 @@ msgstr ""
 "felkapcsolódva. Ha nem vagy felkapcsolva az Internetre, csatlakozz\n"
 "és próbáld újra."
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 #, fuzzy
 msgid "_Look Up Word"
 msgstr "Keresés"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "Szó keresése a szótárban"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 #, fuzzy
 msgid "Check _Spelling"
 msgstr "Helyesírás-ellenõrzés"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "Helyesírás-ellenõrzés"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 #, fuzzy
 msgid "_Dictionary"
 msgstr "_Mûvelet eszköztár"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 #, fuzzy
 msgid "_Word: "
 msgstr "Szó:"
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 #, fuzzy
 msgid "Word"
 msgstr "Szó:"
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 #, fuzzy
 msgid "Look Up for a Word"
 msgstr "Keresés"
@@ -2368,6 +2364,9 @@ msgid ""
 msgstr ""
 "Nem található a tar program!\n"
 "Ez a program szükséges az archívumkészítéshez."
+
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 #~ msgid "x^2"
 #~ msgstr "x^2"

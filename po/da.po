@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.99\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2002-07-23 11:20+0200\n"
 "Last-Translator: Ole Laursen <olau@hardworking.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -448,10 +448,6 @@ msgstr "Tegn"
 msgid "Character to insert"
 msgstr "Tegn at indsætte"
 
-#: gcharmap/src/asciiselect.c:157
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
 #: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "Tegnoversigt"
@@ -478,39 +474,39 @@ msgstr "Tekst kopieret til klippebordet..."
 msgid "Text cut to clipboard..."
 msgstr "Tekst klippet til klippebordet..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "Tekst indsat fra klippebordet..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "Gnome-tegnoversigt"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "Handlingsværktøjslinje"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 msgid "_Text to copy:"
 msgstr "_Tekst:"
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 msgid "_Copy"
 msgstr "_Kopiér"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 msgid "Text to copy"
 msgstr "Tekst der skal kopieres"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 msgid "Entry"
 msgstr "Indtastning"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopiér"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 msgid "Copy the text"
 msgstr "Kopiér teksten"
 
@@ -638,32 +634,32 @@ msgstr "Kontrollerer stavning..."
 msgid "Spell check done"
 msgstr "Stavekontrol fuldført"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Ingen træf"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "Slår ord op..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "Opslag fuldført"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "Tekst ikke fundet"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 msgid "Find"
 msgstr "Søg"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 msgid "_Find"
 msgstr "_Søg"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
@@ -673,49 +669,49 @@ msgstr ""
 "Enten er serveren du bruger, ikke tilgængelig,\n"
 "eller du er ikke koblet til internettet."
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "_Slå ord op"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "Slå ordet op i ordbog"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "Kontrollér _stavning"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "Kontrollér ordets stavning"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 msgid "_Dictionary"
 msgstr "_Ordbog"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Ordbog"
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 msgid "_Word: "
 msgstr "_Ord: "
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Ord"
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Ordindtastning"
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr "Indtast et ord eller vælg et fra listen nedenfor"
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 msgid "Look Up for a Word"
 msgstr "Slå et ord op"
 
@@ -2214,6 +2210,9 @@ msgid ""
 msgstr ""
 "Kan ikke finde arkivprogrammet (tar)!\n"
 "Dette program skal bruges til at oprette arkiverne."
+
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 #~ msgid "Default database. ! indicates all databases"
 #~ msgstr "Forvalg database. '!' angiver alle databaser."

@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-08-02 16:24+0200\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2002-08-02 16:26+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -460,10 +460,6 @@ msgstr "Tecken"
 msgid "Character to insert"
 msgstr "Tecken att infoga"
 
-#: gcharmap/src/asciiselect.c:157
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
 #: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "Teckenkarta för Gnome"
@@ -491,39 +487,39 @@ msgstr "Text kopierad till urklipp..."
 msgid "Text cut to clipboard..."
 msgstr "Text urklippt till urklipp..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "Text inklistrad från urklipp..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "Gnome-teckenkarta"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "Åtgärdsverktygsrad"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 msgid "_Text to copy:"
 msgstr "_Text att kopiera:"
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 msgid "_Copy"
 msgstr "_Kopiera"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 msgid "Text to copy"
 msgstr "Text att kopiera"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 msgid "Entry"
 msgstr "Fält"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopiera"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 msgid "Copy the text"
 msgstr "Kopiera texten"
 
@@ -2265,6 +2261,9 @@ msgid ""
 msgstr ""
 "Kan inte hitta arkiveringsprogrammet (tar)!\n"
 "Detta program används för att skapa arkiv."
+
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 #~ msgid "Default database. ! indicates all databases"
 #~ msgstr "Standarddatabas. ! betyder alla databaser"

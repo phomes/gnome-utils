@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.109.0\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2002-06-13 18:10+0900\n"
 "Last-Translator: Takayuki KUSNAO <AE5T-KSN@asahi-net.or.jp>\n"
 "Language-Team: Japanese <translation@gnome.gr.jp>\n"
@@ -461,12 +461,6 @@ msgstr "文字"
 msgid "Character to insert"
 msgstr "挿入する文字"
 
-#: gcharmap/src/asciiselect.c:157
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr ""
-"-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*,-misc-fixed-medium-r-"
-"normal-*-10-*-*-*-*-*-*-*,*-r-*"
-
 #: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "GNOME 文字マップ"
@@ -493,39 +487,39 @@ msgstr "コピーしてクリップボードに送ったテキスト..."
 msgid "Text cut to clipboard..."
 msgstr "切り出してクリップボードに送ったテキスト..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "クリップボードから貼り付けられたテキスト..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "GNOME 文字選択"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "アクション・ツールバー"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 msgid "_Text to copy:"
 msgstr "コピーするテキスト(_T):"
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 msgid "_Copy"
 msgstr "コピー(_C)"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 msgid "Text to copy"
 msgstr "コピーするテキスト"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 msgid "Entry"
 msgstr "エントリ"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "コピー"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 msgid "Copy the text"
 msgstr "テキストをコピー"
 
@@ -655,32 +649,32 @@ msgstr "スペルチェック中..."
 msgid "Spell check done"
 msgstr "スペルチェック完了"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "一致するものは見つかりません"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "単語を検索しています..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "検索完了"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "文字が見つかりません"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 msgid "Find"
 msgstr "検索"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 msgid "_Find"
 msgstr "検索(_F)"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
@@ -690,49 +684,49 @@ msgstr ""
 "利用可能な状態でないか、インターネットに接続されて\n"
 "いないのが原因です。"
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "単語を検索(_L)"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "辞書で単語を検索します"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "スペルチェック(_S)"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "単語のスペルチェック"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 msgid "_Dictionary"
 msgstr "辞書(_D)"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "辞書"
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 msgid "_Word: "
 msgstr "単語(_W) : "
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "単語"
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "単語エントリ"
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr "単語を入力するか、下のリストから選択"
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 msgid "Look Up for a Word"
 msgstr "単語を検索"
 
@@ -2214,6 +2208,11 @@ msgid ""
 msgstr ""
 "アーカイブプログラム (tar) を見つけられません!\n"
 "tar はアーカイブを作るのに使われるプログラムです。"
+
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr ""
+#~ "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*,-misc-fixed-medium-r-"
+#~ "normal-*-10-*-*-*-*-*-*-*,*-r-*"
 
 #~ msgid "x^2"
 #~ msgstr "x^2"

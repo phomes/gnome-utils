@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.0\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2002-07-21 10:13+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <christophe@merlet.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -462,10 +462,6 @@ msgstr "Caractère"
 msgid "Character to insert"
 msgstr "Caractère à insérer"
 
-#: gcharmap/src/asciiselect.c:157
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
 #: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "Mappage caractères GNOME"
@@ -494,39 +490,39 @@ msgstr "Texte copié dans le presse-papiers..."
 msgid "Text cut to clipboard..."
 msgstr "Texte coupé dans le presse-papiers..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "Texte collé du presse-papiers..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "Mappage caractère GNOME"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "Barre d'outils d'action"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 msgid "_Text to copy:"
 msgstr "_Texte à copier :"
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 msgid "_Copy"
 msgstr "_Copier"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 msgid "Text to copy"
 msgstr "Texte à copier"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 msgid "Entry"
 msgstr "Entrée"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Copier"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 msgid "Copy the text"
 msgstr "Copier le texte"
 
@@ -656,32 +652,32 @@ msgstr "Vérification orthographique..."
 msgid "Spell check done"
 msgstr "Vérification orthographique effectuée"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Aucune correspondances trouvées"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "Recherche du mot..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "Recherche effectuée"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "Chaîne non trouvée"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 msgid "Find"
 msgstr "Rechercher"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 msgid "_Find"
 msgstr "_Rechercher"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
@@ -691,49 +687,49 @@ msgstr ""
 "Soit parce que le serveur que vous utilisez n'est pas disponible,\n"
 "soit parce que vous n'etes pas connecté sur Internet."
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "_Rechercher un mot"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "Recherche du mot dans le dictionnaire"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "_Vérifier l'orthographe"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "Vérifier l'orthographe du mot"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 msgid "_Dictionary"
 msgstr "_Dictionnaire"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Dictionnaire"
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 msgid "_Word: "
 msgstr "_Mot : "
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Mot"
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Entrée de mot"
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr "Saisissez un mot ou choisissez en un dans la liste ci-dessous"
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 msgid "Look Up for a Word"
 msgstr "Rechercher un mot"
 
@@ -2241,6 +2237,9 @@ msgid ""
 msgstr ""
 "Ne peut trouver le programme d'archive (tar) !\n"
 "Il s'agit du programme utilisé pour la création d'archives."
+
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 #~ msgid "Default database. ! indicates all databases"
 #~ msgstr "Base de données par défaut. ! indique toutes les bases de données"

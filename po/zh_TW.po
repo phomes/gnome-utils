@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.107.0\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2002-06-03 07:56+0800\n"
 "Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
 "Language-Team: traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -446,12 +446,6 @@ msgstr "字元"
 msgid "Character to insert"
 msgstr "準備插入的字元"
 
-#: gcharmap/src/asciiselect.c:157
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr ""
-"-*-*-bold-r-normal-*-*-180-*-*-*-*-big5-0,-adobe-helvetica-bold-r-normal-*-*-"
-"180-*-*-p-*-*-*,*-r-*"
-
 #: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "GNOME 字元對應表"
@@ -478,39 +472,39 @@ msgstr "複製至剪貼簿的文字..."
 msgid "Text cut to clipboard..."
 msgstr "剪下至剪貼簿的文字..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "從剪貼簿貼上的文字..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "Gnome 字元對應表"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "行動工具列"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 msgid "_Text to copy:"
 msgstr "準備複製的文字(_T)："
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 msgid "_Copy"
 msgstr "複製(_C)"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 msgid "Text to copy"
 msgstr "準備複製的文字"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 msgid "Entry"
 msgstr "輸入欄"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "複製"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 msgid "Copy the text"
 msgstr "複製已選取的文字"
 
@@ -640,32 +634,32 @@ msgstr "正在進行拼字檢查..."
 msgid "Spell check done"
 msgstr "拼字檢查完成"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "找不到符合的結果"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "正在檢索單字..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "完成檢索"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "找不到字串"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 msgid "Find"
 msgstr "搜尋"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 msgid "_Find"
 msgstr "搜尋(_F)"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
@@ -675,49 +669,49 @@ msgstr ""
 "原因是無法連接所使用的伺服器，\n"
 "或是根本未接駁至互聯網。"
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "檢索單字(_L)"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "在字典中檢索單字"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "校對拼字(_S)"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "校對拼字"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 msgid "_Dictionary"
 msgstr "字典(_D)"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "字典"
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 msgid "_Word: "
 msgstr "單字(_W)："
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "單字"
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "單字輸入欄"
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr "請輸入單字或在下列的清單中選擇"
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 msgid "Look Up for a Word"
 msgstr "檢索單字"
 
@@ -2199,6 +2193,11 @@ msgid ""
 msgstr ""
 "找不到保存檔案（tar）程式！\n"
 "它是建立保存檔用的必要程式。"
+
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr ""
+#~ "-*-*-bold-r-normal-*-*-180-*-*-*-*-big5-0,-adobe-helvetica-bold-r-normal-"
+#~ "*-*-180-*-*-p-*-*-*,*-r-*"
 
 #~ msgid "x^2"
 #~ msgstr "x^2"

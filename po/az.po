@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.96.0\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2001-12-19 19:34GMT+0200\n"
 "Last-Translator: Vasif İsmayıloğlu MD <azerb_linux@hotmail.com>\n"
 "Language-Team: Azerbaijani Turkic <linuxaz@azerimail.net>\n"
@@ -468,10 +468,6 @@ msgstr "Hərf:"
 msgid "Character to insert"
 msgstr "Hərf kodu:"
 
-#: gcharmap/src/asciiselect.c:157
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
 #: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "Gnome Hərf Xəritəsi"
@@ -498,42 +494,42 @@ msgstr "Mətn ara yaddaşa köçürüldü..."
 msgid "Text cut to clipboard..."
 msgstr "Mətn ara yaddaşa kəsildi ..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "Mətn ara yaddaşdan alındı ..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "Gnome hərf xəritəsi"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "Gedişat Ləvazimat Çubuğu"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 #, fuzzy
 msgid "_Text to copy:"
 msgstr "Köçürüləcək mətn :"
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 #, fuzzy
 msgid "_Copy"
 msgstr "Köçürt"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 #, fuzzy
 msgid "Text to copy"
 msgstr "Köçürüləcək mətn :"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 msgid "Entry"
 msgstr "Giriş"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Köçürt"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 #, fuzzy
 msgid "Copy the text"
 msgstr "Seçili mətni köçürün"
@@ -671,34 +667,34 @@ msgstr "Imla yoxlaması ..."
 msgid "Spell check done"
 msgstr "Imla yoxlaması edildi"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Eynisi tapıla bilmədi"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "Kəlməyi axtarıram..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "Axtarış qurtardı"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "Mətn tapıla bilmədi"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 #, fuzzy
 msgid "Find"
 msgstr "Tap :"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 #, fuzzy
 msgid "_Find"
 msgstr "Tap :"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 #, fuzzy
 msgid ""
 "Unable to perform requested operation. \n"
@@ -710,55 +706,55 @@ msgstr ""
 "ola bilər. Internetə bağlı deyilsən, lütfən indi Internetə bağlan və\n"
 "yenidən sına."
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 #, fuzzy
 msgid "_Look Up Word"
 msgstr "_Axtarış"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "Söz lüğətdə axtarılır"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 #, fuzzy
 msgid "Check _Spelling"
 msgstr "Kəlmənin imlasını yoxla"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "Kəlmənin imlasını yoxla"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 #, fuzzy
 msgid "_Dictionary"
 msgstr "_Gedişat Ləvazimat Çubuğu"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 #, fuzzy
 msgid "_Word: "
 msgstr "Söz:"
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 #, fuzzy
 msgid "Word"
 msgstr "Söz:"
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 #, fuzzy
 msgid "Word Entry"
 msgstr "Giriş"
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 #, fuzzy
 msgid "Look Up for a Word"
 msgstr "_Axtarış"
@@ -2341,6 +2337,9 @@ msgid ""
 msgstr ""
 "Arxiv (tar) proqramı tapıla bilmir!\n"
 "Bu, arxiv yaratmaq üçün işlədilən proqramdır."
+
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 #~ msgid "x^2"
 #~ msgstr "x^2"

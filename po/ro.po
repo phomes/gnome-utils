@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.3.0\n"
-"POT-Creation-Date: 2002-07-25 13:43+0100\n"
+"POT-Creation-Date: 2002-08-05 18:45+0100\n"
 "PO-Revision-Date: 2001-02-14 17:00+0200\n"
 "Last-Translator: Dan Damian <dand@dnttm.ro>\n"
 "Language-Team: Romanian <ro@li.org>\n"
@@ -479,11 +479,6 @@ msgstr "Caracter:"
 msgid "Character to insert"
 msgstr "Caracter:"
 
-#: gcharmap/src/asciiselect.c:157
-#, fuzzy
-msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
-
 #: gcharmap/src/callbacks.c:63
 #, fuzzy
 msgid "GNOME Character Map"
@@ -512,43 +507,43 @@ msgstr "Text copiat în clipboard..."
 msgid "Text cut to clipboard..."
 msgstr "Text tãiat în clipboard..."
 
-#: gcharmap/src/callbacks.c:225
+#: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
 msgstr "Text plasat din clipboard..."
 
-#: gcharmap/src/interface.c:208
+#: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
 msgstr "Harta de caractere Gnome"
 
-#: gcharmap/src/interface.c:238
+#: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
 msgstr "Bara de acþiuni"
 
-#: gcharmap/src/interface.c:242
+#: gcharmap/src/interface.c:240
 #, fuzzy
 msgid "_Text to copy:"
 msgstr "Text de copiat:"
 
-#: gcharmap/src/interface.c:257
+#: gcharmap/src/interface.c:255
 #, fuzzy
 msgid "_Copy"
 msgstr "Copiazã"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 #, fuzzy
 msgid "Text to copy"
 msgstr "Text de copiat:"
 
-#: gcharmap/src/interface.c:280
+#: gcharmap/src/interface.c:278
 #, fuzzy
 msgid "Entry"
 msgstr "Stop intrare:"
 
-#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Copiazã"
 
-#: gcharmap/src/interface.c:281
+#: gcharmap/src/interface.c:279
 #, fuzzy
 msgid "Copy the text"
 msgstr "Copiazã selecþia"
@@ -687,34 +682,34 @@ msgstr "Verificare ortograficã..."
 msgid "Spell check done"
 msgstr "Verificare ortograficã terminatã"
 
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Nu am gãsit nici o potrivire"
 
-#: gdictsrc/gdict-app.c:257
+#: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
 msgstr "Caut cuvântul..."
 
-#: gdictsrc/gdict-app.c:265
+#: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
 msgstr "Cãutare terminatã"
 
-#: gdictsrc/gdict-app.c:287
+#: gdictsrc/gdict-app.c:301
 msgid "String not found"
 msgstr "ªir negãsit"
 
-#: gdictsrc/gdict-app.c:455
+#: gdictsrc/gdict-app.c:469
 #, fuzzy
 msgid "Find"
 msgstr "Caut urmãtorul"
 
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 #, fuzzy
 msgid "_Find"
 msgstr "Cautã:"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:540
 #, fuzzy
 msgid ""
 "Unable to perform requested operation. \n"
@@ -726,52 +721,52 @@ msgstr ""
 "Internet. Dacã nu sunteþi conectat la Internet, vã rog sã o faceþi\n"
 "ºi sã încercaþi din nou."
 
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 #, fuzzy
 msgid "_Look Up Word"
 msgstr "Cãutare"
 
-#: gdictsrc/gdict-app.c:688
+#: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
 msgstr "Cautã cuvântul în dicþionar"
 
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 #, fuzzy
 msgid "Check _Spelling"
 msgstr "Verificã ortografia"
 
-#: gdictsrc/gdict-app.c:691
+#: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
 msgstr "Verificã ortografia"
 
-#: gdictsrc/gdict-app.c:735
+#: gdictsrc/gdict-app.c:749
 #, fuzzy
 msgid "_Dictionary"
 msgstr "Bara de _acþiuni"
 
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:794
+#: gdictsrc/gdict-app.c:808
 msgid "_Word: "
 msgstr ""
 
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:822
+#: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
 msgstr ""
 
-#: gdictsrc/gdict-app.c:825
+#: gdictsrc/gdict-app.c:839
 #, fuzzy
 msgid "Look Up for a Word"
 msgstr "Cãutare"
@@ -2356,6 +2351,10 @@ msgid ""
 "Cannot find the archive (tar) program!\n"
 "This is the program used for creating archives."
 msgstr ""
+
+#, fuzzy
+#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
+#~ msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
 
 #, fuzzy
 #~ msgid "Default strategy"
