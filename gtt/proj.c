@@ -1255,12 +1255,56 @@ gtt_task_new (void)
 
 	task = g_new0(GttTask, 1);
 	task->parent = NULL;
-	task->memo = g_strdup ("");
+	task->memo = g_strdup (_("New Task"));
 	task->notes = g_strdup ("");
 	task->billable = GTT_BILLABLE;
 	task->billrate = GTT_REGULAR;
 	task->bill_unit = 900;
 	task->interval_list = NULL;
+	return task;
+}
+
+GttTask *
+gtt_task_new_insert (GttTask *old)
+{
+	int is_running = 0;
+	GttProject *prj;
+	GttTask *task;
+	int idx;
+
+	task = g_new0(GttTask, 1);
+	task->memo = g_strdup (_("New Task"));
+	task->notes = g_strdup ("");
+
+	/* inherit the properties ... important for user */
+	task->billable = old->billable;
+	task->billrate = old->billrate;
+	task->bill_unit = old->bill_unit;
+	task->interval_list = NULL;
+
+	/* chain into place */
+	prj = old->parent;
+	task->parent = prj;
+	if (!prj) return task;
+
+	/* avoid misplaced running intervals, stop the task */
+	if (old->interval_list)
+	{
+		GttInterval *first_ivl;
+		first_ivl = (GttInterval *) (old->interval_list->data);
+		is_running = first_ivl -> running;
+		if (is_running) 
+		{
+			/* don't call stop here, avoid dispatching redraw events */
+			gtt_project_timer_update (prj);
+			first_ivl->running = FALSE;
+		}
+	}
+
+	idx = g_list_index (prj->task_list, old);
+	prj->task_list = g_list_insert (prj->task_list, task, idx);
+
+	if (is_running) gtt_project_timer_start (prj);
 	return task;
 }
 
@@ -1611,11 +1655,12 @@ gtt_interval_split (GttInterval *ivl)
 	node = g_list_find (prnt->interval_list, ivl);
 	if (!node) return NULL;
 
-	/* avoid mangled intervals, stop the task */
+	/* avoid misplaced running intervals, stop the task */
 	first_ivl = (GttInterval *) (prnt->interval_list->data);
 	is_running = first_ivl -> running;
 	if (is_running) 
 	{
+		/* don't call stop here, avoid dispatching redraw events */
 		gtt_project_timer_update (prj);
 		first_ivl->running = FALSE;
 	}

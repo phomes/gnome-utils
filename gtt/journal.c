@@ -287,8 +287,10 @@ interval_popup_cb (Wiggy *wig)
 static void
 task_new_task_clicked_cb(GtkWidget * w, gpointer data) 
 {
+	GttTask *newtask;
 	Wiggy *wig = (Wiggy *) data;
-printf ("duuude new\n");
+	newtask = gtt_task_new_insert (wig->task);
+	prop_task_dialog_show (newtask);
 }
 
 static void
@@ -344,7 +346,7 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 	else
 	if (0 == strncmp (url, "gtt:task", 8))
 	{
-		wig->interval = addr;
+		wig->task = addr;
 		if (addr) task_popup_cb (wig);
 	}
 	else

@@ -268,7 +268,7 @@ int 		gtt_project_list_total_secs_day (void);
 int 		gtt_project_list_total_secs_ever (void);
 
 /* -------------------------------------------------------- */
-/* tasks */
+/* Tasks */
 GttTask *	gtt_task_new (void);
 void 		gtt_task_destroy (GttTask *);
 
@@ -288,6 +288,13 @@ GttBillRate	gtt_task_get_billrate (GttTask *);
  */
 void		gtt_task_set_bill_unit (GttTask *, int);
 int		gtt_task_get_bill_unit (GttTask *);
+
+/* The gtt_task_new_insert() routine creates a new task with the same
+ *    settings as the indicated task. It does *not* copy the intervals.
+ *    It inserts the new task above the indicated task.
+ */
+GttTask *	gtt_task_new_insert (GttTask *);
+
 
 GList *		gtt_task_get_intervals (GttTask *);
 void		gtt_task_add_interval (GttTask *, GttInterval *);
