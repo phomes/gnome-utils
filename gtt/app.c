@@ -51,8 +51,9 @@
 GttProject *cur_proj = NULL;
 GttProject *prev_proj = NULL;
 
-
+ProjTreeWindow *ptw;
 GtkWidget *glist, *window;
+
 #ifndef GNOME_USE_APP
 GtkBox *window_vbox;
 #endif
@@ -238,7 +239,9 @@ void app_new(int argc, char *argv[], const char *geometry_string)
 	gtk_box_pack_end(GTK_BOX(status_bar), GTK_WIDGET(status_timer),
 			 FALSE, FALSE, 1);
 
-        glist = create_ctree();
+        ptw = ctree_new();
+        glist = ctree_get_widget(ptw);
+
 	gtk_box_pack_end(GTK_BOX(vbox), glist->parent, TRUE, TRUE, 0);
 	gtk_widget_set_usize(glist, -1, 120);
 	gtk_widget_show_all(glist->parent);

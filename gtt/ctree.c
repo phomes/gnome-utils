@@ -51,6 +51,11 @@ typedef struct PrjTreeNode_s
 	GttProject *prj;
 } PrjTreeNode;
 
+struct ProjTreeWindow_s 
+{
+	GtkCTree *ctree;
+};
+
 static void cupdate_label(GttProject *p, gboolean expand);
 
 /* ============================================================== */
@@ -358,12 +363,22 @@ redraw (GttProject *prj, gpointer data)
 /* ============================================================== */
 
 GtkWidget *
-create_ctree(void)
+ctree_get_widget (ProjTreeWindow *ptw)
 {
+	if (!ptw) return NULL;
+	return (GTK_WIDGET (ptw->ctree));
+}
+
+ProjTreeWindow *
+ctree_new(void)
+{
+	ProjTreeWindow *ptw;
 	GtkWidget *wimg;
 	GtkWidget *w, *sw;
 	char *tmp[NCOLS];
 	int ncols = 4;
+
+	ptw = g_new0 (ProjTreeWindow, 1);
 
 	tmp[TOTAL_COL] = _("Total");
 	tmp[TIME_COL]  = _("Today");
@@ -374,6 +389,7 @@ create_ctree(void)
 	if (config_show_title_task) ncols = 5;
 
 	w = gtk_ctree_new_with_titles(ncols, 2, tmp);
+	ptw->ctree = GTK_CTREE(w);
 
 	gtk_clist_set_selection_mode(GTK_CLIST(w), GTK_SELECTION_SINGLE);
 	gtk_clist_set_column_justification(GTK_CLIST(w), TOTAL_COL, GTK_JUSTIFY_CENTER);
@@ -436,7 +452,7 @@ create_ctree(void)
 		gtk_container_add (GTK_CONTAINER(sibling_pixmap), wimg);
 	}
 
-	return w;
+	return ptw;
 }
 
 

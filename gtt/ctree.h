@@ -23,9 +23,13 @@
 #include <gnome.h>
 #include "proj.h"
 
+typedef struct ProjTreeWindow_s ProjTreeWindow;
+
 extern int clist_header_width_set;
 
-GtkWidget *create_ctree(void);
+/* create the window that shows the project tree */
+ProjTreeWindow * ctree_new(void);
+
 void setup_ctree(void);
 void ctree_add(GttProject *p, GtkCTreeNode *parent);
 void ctree_insert_before(GttProject *p, GttProject *insert_before_me);
@@ -37,5 +41,6 @@ void ctree_update_desc(GttProject *p);
 void ctree_unselect(GttProject *p);
 void ctree_select(GttProject *p);
 
+GtkWidget * ctree_get_widget(ProjTreeWindow *);
 
 #endif /* __GTT_CTREE_H__ */

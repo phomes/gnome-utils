@@ -321,7 +321,8 @@ gtt_load_config (const char *fname)
 	config_show_clist_titles = gnome_config_get_bool(GTT"Display/ShowTableHeader=false");
 	config_show_subprojects = gnome_config_get_bool(GTT"Display/ShowSubProjects=true");
 	config_show_statusbar = gnome_config_get_bool(GTT"Display/ShowStatusbar=true");
-	config_show_task = gnome_config_get_bool(GTT"Display/ShowTask=true");
+	config_show_title_desc = gnome_config_get_bool(GTT"Display/ShowDesc=true");
+	config_show_title_task = gnome_config_get_bool(GTT"Display/ShowTask=true");
 
 
 	/* ------------ */
@@ -512,7 +513,8 @@ gtt_save_config(const char *fname)
 	gnome_config_set_bool(GTT"Display/ShowStatusbar", config_show_statusbar);
 	gnome_config_set_bool(GTT"Display/ShowSubProjects", config_show_subprojects);
 	gnome_config_set_bool(GTT"Display/ShowTableHeader", config_show_clist_titles);
-	gnome_config_set_bool(GTT"Display/ShowTask", config_show_task);
+	gnome_config_set_bool(GTT"Display/ShowDesc", config_show_title_desc);
+	gnome_config_set_bool(GTT"Display/ShowTask", config_show_title_task);
 
 	/* ------------- */
 	gnome_config_set_bool(GTT"Toolbar/ShowIcons", config_show_tb_icons);
