@@ -17,7 +17,7 @@
 
 <widget>
   <class>GnomePropertyBox</class>
-  <name>propertybox1</name>
+  <name>Global Preferences</name>
   <position>GTK_WIN_POS_NONE</position>
   <modal>False</modal>
   <allow_shrink>False</allow_shrink>
@@ -257,7 +257,7 @@
 	  <widget>
 	    <class>GtkEntry</class>
 	    <child_name>GnomeEntry:entry</child_name>
-	    <name>combo-entry1</name>
+	    <name>switch project</name>
 	    <tooltip>Enter a shell command to be executed whenever projects are switched.</tooltip>
 	    <can_focus>True</can_focus>
 	    <editable>True</editable>
@@ -289,7 +289,7 @@
 	  <widget>
 	    <class>GtkEntry</class>
 	    <child_name>GnomeEntry:entry</child_name>
-	    <name>combo-entry2</name>
+	    <name>no project</name>
 	    <tooltip>Enter a shell command to be executed when no projects are active.</tooltip>
 	    <can_focus>True</can_focus>
 	    <editable>True</editable>
@@ -629,7 +629,7 @@
 
 	  <widget>
 	    <class>GtkCheckButton</class>
-	    <name>checkbutton5</name>
+	    <name>show icons</name>
 	    <can_focus>True</can_focus>
 	    <label>Show Toolbar Icons</label>
 	    <active>True</active>
@@ -643,7 +643,7 @@
 
 	  <widget>
 	    <class>GtkCheckButton</class>
-	    <name>checkbutton6</name>
+	    <name>show texts</name>
 	    <can_focus>True</can_focus>
 	    <label>Show Toolbar Texts</label>
 	    <active>True</active>
@@ -657,7 +657,7 @@
 
 	  <widget>
 	    <class>GtkCheckButton</class>
-	    <name>checkbutton7</name>
+	    <name>show tooltips</name>
 	    <can_focus>True</can_focus>
 	    <label>Show Tooltips</label>
 	    <active>True</active>
