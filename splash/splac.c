@@ -24,11 +24,14 @@ int main(int argc, char *argv[])
 		strcpy(sm.data, argv[2]);
 		sm.type=SM_TYPE_IMAGE;
 	}
-	else
+	else {
 		fprintf(stderr, "%s: unknown command '%s'.\n", argv[0], argv[1]);
+		exit (1);
+	}
 		
-	if(write(3, &sm, sizeof(sm))!=sizeof(sm))
-		fprintf(stderr, "%s: can't communicate with splash.\n",
-			argv[0]);
+	if(write(3, &sm, sizeof(sm))!=sizeof(sm)) {
+		fprintf(stderr, "%s: can't communicate with splash.\n", argv[0]); 
+		exit (1);
+	}
 }
 
