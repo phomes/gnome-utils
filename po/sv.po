@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2001-10-24 14:48+0200\n"
-"PO-Revision-Date: 2001-10-24 14:49+0200\n"
+"POT-Creation-Date: 2001-11-15 01:31+0100\n"
+"PO-Revision-Date: 2001-11-15 01:35+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -953,11 +953,11 @@ msgstr "Tid spenderad på detta projekt detta år."
 msgid "Title"
 msgstr "Titel"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:144
+#: gtt/ctree.c:558 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Projekttitel"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Beskrivning"
 
@@ -1265,36 +1265,44 @@ msgstr "Välj ett projekt vid uppstart"
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Varning"
 
 #: gtt/menucmd.c:85
-msgid "Time tracking tool for GNOME"
-msgstr "Tidmätningsverktyg för GNOME"
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
+msgstr ""
+"GTimeTracker är ett kombinerat stoppur, dagbok, konsultdebiteringssystem "
+"och projekthanterare. Du kan mäta mängden tid du spenderar på en uppgift, "
+"associera en minnesanteckning med den, ställa in en debiteringstaxa, skriva "
+"ut en räkning, och även spåra statusen på andra projekt."
 
-#: gtt/menucmd.c:138
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Nytt projekt..."
 
-#: gtt/menucmd.c:220 gtt/toolbar.c:167
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Läs om konfigurationsfilen"
 
-#: gtt/menucmd.c:221
+#: gtt/menucmd.c:225
 msgid "Do you really want to reload the configuration file?"
 msgstr "Vill du verkligen läsa om konfigurationsfilen?"
 
-#: gtt/menucmd.c:256
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr "Filen %s finns redan, skriva över?"
 
-#: gtt/menucmd.c:267
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr "Filen kan inte skrivas"
 
-#: gtt/menucmd.c:287
+#: gtt/menucmd.c:291
 msgid "Export Current State"
 msgstr "Exportera aktuellt tillstånd"
 
@@ -4916,6 +4924,9 @@ msgstr "Personlig cron-hanterare"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Personlig crontab-hanterare"
+
+#~ msgid "Time tracking tool for GNOME"
+#~ msgstr "Tidmätningsverktyg för GNOME"
 
 #~ msgid "Estimated End Date"
 #~ msgstr "Uppskattat slutdatum"
