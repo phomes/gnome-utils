@@ -7,6 +7,7 @@
 gchar *s = N_("Start Fuzz");
 gchar *s = N_("Stop");
 gchar *s = N_("Start");
+gchar *s = N_("Set how Uncertain the Start Time Is");
 gchar *s = N_("Exact Time");
 gchar *s = N_("5 Min");
 gchar *s = N_("10 Min");

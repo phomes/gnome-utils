@@ -37,8 +37,10 @@ typedef struct wiggy_s {
 	GtkHTMLStream *handle;
 	GtkWidget *top;
 	GtkWidget *interval_popup;
-
 	GtkWidget *interval_edit;
+	GtkWidget *start_widget;
+	GtkWidget *stop_widget;
+	GtkWidget *fuzz_widget;
 	GttInterval *interval;
 } Wiggy;
 
@@ -125,8 +127,9 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 	Wiggy *wig = (Wiggy *) data;
 
 	/* close the main journal window ... everything */
-	gtk_widget_destroy( wig->interval_popup);
-	gtk_widget_destroy( wig->top);
+	if (wig->interval_edit) gtk_widget_destroy (wig->interval_edit);
+	gtk_widget_destroy (wig->interval_popup);
+	gtk_widget_destroy (wig->top);
 	g_free (wig);
 }
 
@@ -134,17 +137,35 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 /* interval dialog edits */
 
 static void
-interval_edit_ok_cb(GtkWidget * w, gpointer data) 
-{
-	Wiggy *wig = (Wiggy *) data;
-	printf ("duude ok edit interval\n");
-}
-
-static void
 interval_edit_apply_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-	printf ("duude apply edit interval\n");
+	GtkWidget *menu, *menu_item;
+	time_t start, stop;
+	int fuzz;
+
+	start = gnome_date_edit_get_date(GNOME_DATE_EDIT(wig->start_widget));
+	stop = gnome_date_edit_get_date(GNOME_DATE_EDIT(wig->stop_widget));
+
+	gtt_interval_set_start (wig->interval, start);
+	gtt_interval_set_stop (wig->interval, stop);
+
+/* hack alert XXX fixme need to recalce caches */
+	menu = gtk_option_menu_get_menu (GTK_OPTION_MENU(wig->fuzz_widget));
+	menu_item = gtk_menu_get_active(GTK_MENU(menu));
+	fuzz = GPOINTER_TO_INT(gtk_object_get_data(GTK_OBJECT(menu_item),
+                                             "fuzz_factor"));
+
+printf ("duude apply fuuzz %d\n", fuzz);
+}
+
+static void
+interval_edit_ok_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	interval_edit_apply_cb(w, data);
+	gtk_widget_destroy (wig->interval_edit);
+	wig->interval_edit = NULL;
 }
 
 static void
@@ -152,17 +173,20 @@ interval_edit_cancel_cb(GtkWidget * w, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
 	gtk_widget_destroy (wig->interval_edit);
-printf ("duude cacnel edit interval\n");
+	wig->interval_edit = NULL;
 }
 
 /* ============================================================== */
 /* interval popup actions */
 
 static void
-interval_edit_clicked_cb(GtkWidget * w, gpointer data) 
+interval_edit_clicked_cb(GtkWidget * dw, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
 	GladeXML  *glxml;
+	GtkWidget *w, *menu, *menu_item;
+	time_t start, stop;
+	int fuzz;
 
 	glxml = glade_xml_new ("glade/interval_edit.glade", "Interval Edit");
 
@@ -177,6 +201,87 @@ interval_edit_clicked_cb(GtkWidget * w, gpointer data)
 	glade_xml_signal_connect_data (glxml, "on_cancel_button_clicked",
 	        GTK_SIGNAL_FUNC (interval_edit_cancel_cb), wig);
 	  
+	w = glade_xml_get_widget (glxml, "start_date");
+	wig->start_widget = w;
+	start = gtt_interval_get_start (wig->interval);
+	gnome_date_edit_set_time (GNOME_DATE_EDIT(w), start);
+
+	w = glade_xml_get_widget (glxml, "stop_date");
+	wig->stop_widget = w;
+	stop = gtt_interval_get_stop (wig->interval);
+	gnome_date_edit_set_time (GNOME_DATE_EDIT(w), stop);
+
+	w = glade_xml_get_widget (glxml, "fuzz_menu");
+	wig->fuzz_widget = w;
+	fuzz = gtt_interval_get_fuzz (wig->interval);
+
+	/* ----------------------------------------------- */
+	/* install option data by hand ... ugh 
+	 * wish glade did this for us .. */
+	menu = gtk_option_menu_get_menu (GTK_OPTION_MENU(w));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 0);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(0));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 1);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(300));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 2);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(600));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 3);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(900));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 4);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(1200));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 5);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(1800));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 6);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(3600));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 7);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(7200));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 8);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(3*3600));
+
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 9);
+	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
+	gtk_object_set_data(GTK_OBJECT(menu_item), 
+		"fuzz_factor", GINT_TO_POINTER(12*3600));
+
+	/* OK, now set the initial value */
+	gtk_option_menu_set_history(GTK_OPTION_MENU(w), 0);
+	if (90 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 1);
+	if (450 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 2);
+	if (750 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 3);
+	if (1050 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 4);
+	if (1500 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 5);
+	if (2700 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 6);
+	if (5400 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 7);
+	if (9000 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 8);
+	if (6*3600 < fuzz) gtk_option_menu_set_history(GTK_OPTION_MENU(w), 9);
+
 }
 
 static void
@@ -258,7 +363,7 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 static void
 html_on_url_cb(GtkHTML * html, const gchar * url, gpointer data) 
 {
-	printf ("hover over the url show hover help duude=%s\n", url);
+	// printf ("hover over the url show hover help duude=%s\n", url);
 }
 
 
@@ -302,6 +407,7 @@ edit_journal(GtkWidget *widget, gpointer data)
 	/* signals for the browser, and the journal window */
 
 	wig = g_new0 (Wiggy, 1);
+	wig->interval_edit = NULL;
 
 	wig->top = jnl_top;
 	wig->htmlw = GTK_HTML(jnl_browser);
