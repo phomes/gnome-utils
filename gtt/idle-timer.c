@@ -391,6 +391,16 @@ dispatch_event (timeout_info *si, XEvent *event)
 }
 
 
+static Bool
+if_event_predicate (Display *dpy, XEvent *ev, XPointer arg)
+{
+
+printf ("duude event predicate\n");
+
+  return False;
+}
+
+
 
 /* methods of detecting idleness:
 
@@ -473,7 +483,15 @@ printf ("duuuude no events pending\n");
 return 99;
       }
 
-      event = *((XEvent *) gdk_event_get ());
+if (False == XCheckIfEvent (si->dpy, &event, if_event_predicate, (XPointer) si))
+{
+printf ("duuuude no events match\n");
+return 66;
+}
+else
+{
+printf ("duuude match \n");
+}
 
       switch (event.xany.type) {
       case 0:		/* our synthetic "timeout" event has been signalled */
