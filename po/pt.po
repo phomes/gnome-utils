@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-11-25 03:11+0000\n"
+"POT-Creation-Date: 2001-11-30 16:14-0600\n"
 "PO-Revision-Date: 2001-11-25 03:13+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <none@none.org>\n"
@@ -1169,24 +1169,24 @@ msgstr "Erro - Desconhecido"
 msgid "unknown token: >>>>"
 msgstr "dado desconhecido: >>>>"
 
-#: gtt/journal.c:107
+#: gtt/journal.c:108
 msgid "Error 404 Not Found"
 msgstr "Erro 404 Não Encontrado"
 
-#: gtt/journal.c:109
+#: gtt/journal.c:110
 #, c-format
 msgid "The file %s was not found."
 msgstr "O ficheiro %s não foi encontrado."
 
-#: gtt/journal.c:110
+#: gtt/journal.c:111
 msgid "(null)"
 msgstr "(nulo)"
 
-#: gtt/journal.c:119
+#: gtt/journal.c:120
 msgid "Unkown Error"
 msgstr "Erro Desconhecido"
 
-#: gtt/journal.c:168 gtt/plug-in.c:90
+#: gtt/journal.c:169 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1195,12 +1195,12 @@ msgstr ""
 "Incapaz de abrir o ficheiro %s\n"
 "%s"
 
-#: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1527 gtt/proj.c:1647
-#: gtt/proj.c:1787
+#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/proj.c:1807
 msgid "New Diary Entry"
 msgstr "Nova Entrada de Diário"
 
-#: gtt/journal.c:421
+#: gtt/journal.c:436
 msgid "Save HTML To File"
 msgstr "Gravar HTML para Ficheiro"
 
@@ -1619,7 +1619,7 @@ msgstr "Juntar Acima"
 msgid "Paste Diary Entry"
 msgstr "Colar Entrada de Diário"
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:6
+#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
 msgstr "Colar uma entrada de diário previamente cortada."
 
@@ -2112,38 +2112,48 @@ msgid "seconds"
 msgstr "segundos"
 
 #: gtt/glade/task_popup.glade.h:1
+#, fuzzy
+msgid "Add a new time interval"
+msgstr "Adiciona uma nova vista do documento"
+
+#: gtt/glade/task_popup.glade.h:2
 msgid "Delete _Times"
 msgstr "Apagar _Horas"
 
-#: gtt/glade/task_popup.glade.h:2
+#: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
 msgstr "Apagar apenas a entrada de diário, manter os intrevalos de tempo"
 
-#: gtt/glade/task_popup.glade.h:3
+#: gtt/glade/task_popup.glade.h:4
 msgid "Delete the diary entry, and the time intervals below it."
 msgstr "Apagar a entrada de diário, e os intrevalos de tempo abaixo."
 
-#: gtt/glade/task_popup.glade.h:4
+#: gtt/glade/task_popup.glade.h:5
 msgid "Edit the diary entry and other task properties."
 msgstr "Editar a entrada de diário e outras propriedades da tarefa."
 
-#: gtt/glade/task_popup.glade.h:5
+#: gtt/glade/task_popup.glade.h:6
 msgid "Insert a new diary entry above this one."
 msgstr "Inserir uma nova entrada de diário acima desta."
 
 #: gtt/glade/task_popup.glade.h:7
+#, fuzzy
+msgid "New Time Interval"
+msgstr "Remover Este Intrevalo"
+
+#: gtt/glade/task_popup.glade.h:9
 msgid "_Delete Diary Entry"
 msgstr "Apagar Entrada de _Diário"
 
-#: gtt/glade/task_popup.glade.h:8
+#: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
 msgstr "_Editar Entrada de Diário"
 
-#: gtt/glade/task_popup.glade.h:9
+#: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
 msgstr "_Nova Entrada de Diário"
 
-#: gtt/glade/task_popup.glade.h:10
+#: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
 msgstr "Co_lar Entrada de Diário"
 
@@ -5223,9 +5233,6 @@ msgstr "Gestor pessoal do crontab"
 
 #~ msgid "_Add view"
 #~ msgstr "_Adicionar vista"
-
-#~ msgid "Add a new view of the buffer"
-#~ msgstr "Adiciona uma nova vista do documento"
 
 #~ msgid "_Remove view"
 #~ msgstr "_Remover vista"

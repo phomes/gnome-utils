@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.2.1\n"
-"POT-Creation-Date: 2001-09-03 14:55+0200\n"
+"POT-Creation-Date: 2001-11-30 16:14-0600\n"
 "PO-Revision-Date: 2001-09-03 18:16+0200\n"
 "Last-Translator: András Tímár <timar@gnome.hu>\n"
 "Language-Team: Hungarian <hu@gnome.hu>\n"
@@ -62,7 +62,7 @@ msgstr "CE/C"
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1370
+#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1379
 msgid "INV"
 msgstr "INV"
 
@@ -163,15 +163,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
 msgid "3"
 msgstr "3"
 
@@ -275,7 +275,7 @@ msgid "Exit"
 msgstr "Kilépés"
 
 #: gcharmap/src/interface.c:239 gcharmap/src/menus.c:104
-#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:166
+#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:181
 msgid "Copy"
 msgstr "Másolás"
 
@@ -357,7 +357,7 @@ msgstr "A gombok fókuszálhatók legyenek vagy sem"
 msgid "Insert character(s) by choosing character codes"
 msgstr "Karakter(ek) beszúrása karakterkód alapján."
 
-#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:162
+#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:177
 msgid "Cut"
 msgstr "Kivágás"
 
@@ -369,7 +369,7 @@ msgstr "Kijelölés kivágása"
 msgid "Copy the selection"
 msgstr "Kijelölés másolása"
 
-#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:170
+#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
 msgid "Paste"
 msgstr "Beillesztés"
 
@@ -458,11 +458,13 @@ msgstr ""
 
 #: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 #: gdictsrc/gdict-applet.c:313
-msgid "Lookup"
+#, fuzzy
+msgid "Look up"
 msgstr "Keresés"
 
 #: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
-msgid "Lookup word in dictionary"
+#, fuzzy
+msgid "Look up word in dictionary"
 msgstr "Szó keresése a szótárban"
 
 #: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
@@ -497,7 +499,7 @@ msgstr "A kiszolgáló, a keresési stratégia, betûkészletek"
 msgid "Word definition"
 msgstr "Szó definíciója"
 
-#: gdictsrc/gdict-applet.c:280 logview/logview.c:135
+#: gdictsrc/gdict-applet.c:280 logview/logview.c:136
 msgid "About..."
 msgstr "Névjegy..."
 
@@ -556,8 +558,8 @@ msgid "Cross-reference:"
 msgstr "Kereszthivatkozás:"
 
 #. Fixme these should be stock buttons
-#: gdictsrc/gdict-pref-dialog.c:129 gtt/options.c:571
-#: mini-utils/gshutdown/gshutdown.c:316 stripchart/prefs.c:195
+#: gdictsrc/gdict-pref-dialog.c:129 mini-utils/gshutdown/gshutdown.c:316
+#: stripchart/prefs.c:195
 msgid "Preferences"
 msgstr "Tulajdonságok"
 
@@ -630,18 +632,19 @@ msgid "Find Words..."
 msgstr "Szavak keresése..."
 
 #: gdictsrc/gdict-speller.c:151
-msgid "Lookup Word..."
+#, fuzzy
+msgid "Look up Word..."
 msgstr "Szó kikeresése..."
 
 #: gdictsrc/gdict-speller.c:163
 msgid "Spell checker"
 msgstr "Helyesírás-ellenõrzés"
 
-#: gdiskfree/gdiskfree_app.c:52 gdiskfree/gdiskfree_menus.c:108
+#: gdiskfree/gdiskfree_app.c:53 gdiskfree/gdiskfree_menus.c:108
 msgid "GDiskFree"
 msgstr "GDiskFree"
 
-#: gdiskfree/gdiskfree_app.c:72
+#: gdiskfree/gdiskfree_app.c:73
 #, c-format
 msgid "Unable to parse the geometry string '%s'"
 msgstr "Nem tudom értelmezni a '%s' geometriát"
@@ -650,7 +653,7 @@ msgstr "Nem tudom értelmezni a '%s' geometriát"
 msgid "Specify the geometry of the window."
 msgstr "Megadja az ablak geometriáját."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:310 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:439 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
 msgstr "GEOMETRY"
 
@@ -821,13 +824,13 @@ msgstr "Hozzáadás"
 msgid "Show Command"
 msgstr "Mutasd a parancsokat"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759
-#: gtt/glade/interval_edit_strings.c:9
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Indítás"
 
-#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760
-#: gtt/glade/interval_edit_strings.c:8
+#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:95
+#: gtt/ghtml.c:270 gtt/glade/interval_edit.glade.h:13
 msgid "Stop"
 msgstr "Megállítás"
 
@@ -889,15 +892,15 @@ msgstr "Parancs elferdítve"
 msgid "No command for this mime type"
 msgstr "Nincs parancs ehhez mime típushoz"
 
-#: gtt/app.c:107 gtt/app.c:216
+#: gtt/app.c:115 gtt/app.c:227
 msgid "no project selected"
 msgstr "nincs projekt kiválasztva"
 
-#: gtt/app.c:205
+#: gtt/app.c:217
 msgid "00:00"
 msgstr "00:00"
 
-#: gtt/app.c:248 mini-utils/gless/gless.c:423
+#: gtt/app.c:259 mini-utils/gless/gless.c:423
 msgid ""
 "Couldn't understand geometry (position and size)\n"
 " specified on command line"
@@ -905,46 +908,365 @@ msgstr ""
 "Nem értem a geometriát (méretet és pozíciót),\n"
 "amelyet a parancssorban adtál"
 
-#: gtt/file-io.c:334
+#: gtt/ctree.c:511
+msgid "Total"
+msgstr "Összes"
+
+#: gtt/ctree.c:513
+#, fuzzy
+msgid "Total time spent on this project."
+msgstr "A projekthez rendelt cím"
+
+#: gtt/ctree.c:518
+#, fuzzy
+msgid "Entry"
+msgstr "Bejegyzés vége:"
+
+#: gtt/ctree.c:520
+msgid "Time spent under the current diary entry."
+msgstr ""
+
+#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
+msgid "Today"
+msgstr "Ma"
+
+#: gtt/ctree.c:528
+#, fuzzy
+msgid "Time spent on this project today."
+msgstr "A projekthez rendelt cím"
+
+#: gtt/ctree.c:533
+msgid "Week"
+msgstr ""
+
+#: gtt/ctree.c:535
+msgid "Time spent on this project this week."
+msgstr ""
+
+#: gtt/ctree.c:541
+#, fuzzy
+msgid "Month"
+msgstr "Monitor"
+
+#: gtt/ctree.c:543
+msgid "Time spent on this project this month."
+msgstr ""
+
+#: gtt/ctree.c:549
+#, fuzzy
+msgid "Year"
+msgstr "Lineáris"
+
+#: gtt/ctree.c:551
+msgid "Time spent on this project this year."
+msgstr ""
+
+#: gtt/ctree.c:557
+#, fuzzy
+msgid "Title"
+msgstr "Fájl"
+
+#: gtt/ctree.c:558 gtt/menucmd.c:148
+msgid "Project Title"
+msgstr "Projekt neve"
+
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
+msgid "Description"
+msgstr "Leírás"
+
+#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+msgid "Diary Entry"
+msgstr ""
+
+#: gtt/ctree.c:571
+#, fuzzy
+msgid "The current diary entry"
+msgstr "Az aktuális dokumentáció bezárása"
+
+#: gtt/ctree.c:578
+msgid "Estimated Project Start Date"
+msgstr ""
+
+#: gtt/ctree.c:583
+#, fuzzy
+msgid "End"
+msgstr "Engedélyezve"
+
+#: gtt/ctree.c:585
+#, fuzzy
+msgid "Estimated Project Completion Date"
+msgstr "Projekt beállításainak szerkesztése..."
+
+#: gtt/ctree.c:590
+msgid "Due"
+msgstr ""
+
+#: gtt/ctree.c:592
+msgid ""
+"Due Date: the date by which the project absolutely must be completed by."
+msgstr ""
+
+#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+msgid "Size"
+msgstr "Méret"
+
+#: gtt/ctree.c:601
+msgid "Sizing: How much work it will take to finish this project."
+msgstr ""
+
+#: gtt/ctree.c:607
+#, fuzzy
+msgid "Done"
+msgstr "Nincs"
+
+#: gtt/ctree.c:609
+msgid "Percent Complete: How much of this project has been finished till now."
+msgstr ""
+
+#: gtt/ctree.c:616
+msgid "U"
+msgstr ""
+
+#: gtt/ctree.c:618
+msgid "Urgency: Does this project need to be done soon, done quickly?"
+msgstr ""
+
+#: gtt/ctree.c:624
+msgid "Imp"
+msgstr ""
+
+#: gtt/ctree.c:626
+msgid "Importance: How important is this project?"
+msgstr ""
+
+# mini-utils/idetool/idetool.c:311
+#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
+#: mini-utils/idetool/idetool.c:319
+msgid "Status"
+msgstr "Állapot"
+
+#: gtt/ctree.c:634
+#, fuzzy
+msgid "The current status of this project."
+msgstr "A projekthez rendelt cím"
+
+#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
+#, fuzzy
+msgid "Low"
+msgstr "Naplónézõ"
+
+#: gtt/ctree.c:970
+#, fuzzy
+msgid "Med"
+msgstr "vörös"
+
+#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
+#, fuzzy
+msgid "High"
+msgstr "Jobbra"
+
+#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
+#, fuzzy
+msgid "Not Started"
+msgstr "Indítás"
+
+# logview/zoom.c:179
+#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
+#, fuzzy
+msgid "In Progress"
+msgstr "Folyamat:"
+
+#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
+#, fuzzy
+msgid "On Hold"
+msgstr "Tömör"
+
+#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
+#, fuzzy
+msgid "Cancelled"
+msgstr "Mégsem"
+
+#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
+msgid "Completed"
+msgstr ""
+
+#: gtt/file-io.c:376
 msgid "project %t started"
 msgstr "%t projekt elindult"
 
-#: gtt/file-io.c:337
+#: gtt/file-io.c:379
 msgid "stopped project %t"
 msgstr "%t projekt megállt"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:533
+#: gtt/file-io.c:677
 #, c-format
 msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
 
-#: gtt/log.c:53
+#: gtt/ghtml.c:95 gtt/ghtml.c:273
+msgid "Elapsed"
+msgstr ""
+
+#: gtt/ghtml.c:113 gtt/ghtml.c:369 gtt/ghtml.c:378
+msgid "(empty)"
+msgstr "(üres)"
+
+#: gtt/ghtml.c:225
+#, fuzzy
+msgid "Notes"
+msgstr "Megjegyzés:"
+
+#: gtt/ghtml.c:229
+#, fuzzy
+msgid "Task Time"
+msgstr "Pontos idõ"
+
+# mini-utils/idetool/idetool.c:311
+#: gtt/ghtml.c:233
+#, fuzzy
+msgid "Bill Status"
+msgstr "Állapot"
+
+#: gtt/ghtml.c:237 gtt/ghtml.c:408 gtt/glade/task_properties.glade.h:4
+msgid "Billable"
+msgstr "Számlázható"
+
+#: gtt/ghtml.c:241
+#, fuzzy
+msgid "Bill Rate"
+msgstr "Számlázható"
+
+#: gtt/ghtml.c:245 mini-utils/gcolorsel/view-color-list.c:197
+#: mini-utils/guname/moreinfo.c:227
+msgid "Value"
+msgstr "Érték"
+
+#: gtt/ghtml.c:249
+#, fuzzy
+msgid "Billable Value"
+msgstr "Számlázható"
+
+#: gtt/ghtml.c:253 gtt/ghtml.c:279
+#, fuzzy
+msgid "No Default Value"
+msgstr "Alap"
+
+#: gtt/ghtml.c:276
+#, fuzzy
+msgid "Start Time Fuzziness"
+msgstr "Indítás"
+
+#: gtt/ghtml.c:392 gtt/glade/task_properties.glade.h:13
+#, fuzzy
+msgid "Hold"
+msgstr "Tömör"
+
+#: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:3
+#, fuzzy
+msgid "Bill"
+msgstr "Számlázható"
+
+#: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:21
+msgid "Paid"
+msgstr ""
+
+#: gtt/ghtml.c:411 gtt/glade/task_properties.glade.h:17
+msgid "Not Billable"
+msgstr "Nem számlázható"
+
+#: gtt/ghtml.c:414 gtt/glade/task_properties.glade.h:16
+msgid "No Charge"
+msgstr "Ingyenes"
+
+#: gtt/ghtml.c:424 gtt/glade/task_properties.glade.h:22
+#, fuzzy
+msgid "Regular"
+msgstr "Újratöltés"
+
+#: gtt/ghtml.c:427 gtt/glade/task_properties.glade.h:20
+msgid "Overtime"
+msgstr "Túlóra"
+
+#: gtt/ghtml.c:430
+#, fuzzy
+msgid "Double Overtime"
+msgstr "Különleges túlóradíj:"
+
+#: gtt/ghtml.c:433 gtt/glade/task_properties.glade.h:12
+msgid "Flat Fee"
+msgstr "Átalánydíj"
+
+#: gtt/ghtml.c:453
+#, fuzzy
+msgid "Error - Unknown"
+msgstr "Ismeretlen"
+
+#: gtt/ghtml.c:703
+msgid "unknown token: >>>>"
+msgstr ""
+
+#: gtt/journal.c:108
+msgid "Error 404 Not Found"
+msgstr ""
+
+#: gtt/journal.c:110
+#, fuzzy, c-format
+msgid "The file %s was not found."
+msgstr "Nem találom a tappancsot"
+
+#: gtt/journal.c:111
+msgid "(null)"
+msgstr "(null)"
+
+#: gtt/journal.c:120
+#, fuzzy
+msgid "Unkown Error"
+msgstr "Ismeretlen hiba történt"
+
+#: gtt/journal.c:169 gtt/plug-in.c:90
+#, fuzzy, c-format
+msgid ""
+"Unable to open the file %s\n"
+"%s"
+msgstr "Nem lehet megnyitni a naplófájlt!\n"
+
+#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/proj.c:1807
+msgid "New Diary Entry"
+msgstr ""
+
+#: gtt/journal.c:436
+#, fuzzy
+msgid "Save HTML To File"
+msgstr "Fájl mentése"
+
+#: gtt/log.c:55
 #, c-format
 msgid "Cannot open logfile %s for append"
 msgstr "Nem sikerült megnyitni ezt a naplófájlt továbbírásra: %s"
 
 #. Translators: Format to use in the gtt logfile
-#: gtt/log.c:62
+#: gtt/log.c:64
 msgid "%b %d %H:%M:%S"
 msgstr "%b %d %H:%M:%S"
 
-#: gtt/log.c:83 gtt/log.c:244
-msgid "program started"
-msgstr "program elindítva"
-
-#: gtt/log.c:101
+#: gtt/log.c:102
 msgid "no description"
 msgstr "nincs leírás"
 
+#: gtt/log.c:167 gtt/log.c:258
+msgid "program started"
+msgstr "program elindítva"
+
 #. log_if_equal
-#: gtt/log.c:236
+#: gtt/log.c:250
 msgid "program exited"
 msgstr "program kilépett"
 
-#: gtt/main.c:108
+#: gtt/main.c:114
 msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
@@ -952,711 +1274,1015 @@ msgstr ""
 "Úgy néz ki, másik GTimeTracker is fut.\n"
 "Nyomj OK-t a GTimeTracker futtatásához, vagy Mégsem-et a kilépéshez."
 
-#: gtt/main.c:119
+#: gtt/main.c:126
 msgid "Cannot create pid-file!"
 msgstr "Nem sikerült létrehozni a pid fájlt"
 
-#: gtt/main.c:185
+#: gtt/main.c:219
+msgid "Do you want to continue?"
+msgstr ""
+
+#: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
 msgstr "Hiba"
 
-#: gtt/main.c:186
-msgid ""
-"An error occured while reading the configuration file.\n"
-"Shall I setup a new configuration?"
+#: gtt/main.c:272
+msgid "Shall I setup a new configuration?"
 msgstr ""
-"Hiba történt a konfigurációs fájl olvasása közben.\n"
-"Beállíthatok egy új konfigurációt?"
 
-#: gtt/main.c:310
+#: gtt/main.c:439
 msgid "Specify geometry"
 msgstr "Geometria megadása"
 
-#: gtt/main.c:312
+#: gtt/main.c:441
 msgid "Select a project on startup"
 msgstr "Projekt kiválasztása indításnál"
 
-#: gtt/main.c:312
+#: gtt/main.c:441
 msgid "PROJECT"
 msgstr "PROJECT"
 
-#: gtt/main.c:350 gtt/menucmd.c:51 gtt/menucmd.c:59 gtt/menucmd.c:229
-#: gtt/menucmd.c:267
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Figyelem"
 
-#: gtt/menucmd.c:52 gtt/menucmd.c:269
-msgid "Could not write the configuration file!"
-msgstr "Nem sikerült írni a konfigurációs fájlt!"
+#: gtt/menucmd.c:85
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
+msgstr ""
 
-#: gtt/menucmd.c:60
-msgid "Unknown error occurred"
-msgstr "Ismeretlen hiba történt"
-
-#: gtt/menucmd.c:111
-msgid "Time tracking tool for GNOME"
-msgstr "Idõkövetõ a GNOME-hoz"
-
-#: gtt/menucmd.c:161
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Új projekt..."
 
-#: gtt/ctree.c:278 gtt/menucmd.c:167
-msgid "Project Title"
-msgstr "Projekt neve"
-
-#: gtt/ctree.c:279 gtt/menucmd.c:168 stripchart/params.c:654
-msgid "Description"
-msgstr "Leírás"
-
-#: gtt/menucmd.c:231
-msgid "I could not read the configuration file"
-msgstr "Nem sikerült a konfigurációs állományt olvasni"
-
-#: gtt/menucmd.c:245 gtt/toolbar.c:152
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Konfigurációs állomány újratöltése"
 
-#: gtt/menucmd.c:246
-msgid ""
-"This will overwrite your current set of projects.\n"
-"Do you really want to reload the configuration file?"
-msgstr ""
-"Felül fogod írni a jelenlegi projektek listáját.\n"
-"Tényleg újra akarod tölteni a konfigurációs fájlt?"
+#: gtt/menucmd.c:225
+#, fuzzy
+msgid "Do you really want to reload the configuration file?"
+msgstr "Nem sikerült a konfigurációs állományt olvasni"
 
-#: gtt/menucmd.c:289
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr "%s fájl létezik, felülírod?"
 
-#: gtt/menucmd.c:300
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr "A fájl nem írható"
 
-#: gtt/menucmd.c:320
+#: gtt/menucmd.c:291
 msgid "Export Current State"
 msgstr "Jelenlegi állapot exportálása"
 
-#: gtt/menus.c:30
+#: gtt/menus.c:33
 msgid "_New Project..."
 msgstr "_Új projekt"
 
-#: gtt/menus.c:33
+#: gtt/menus.c:36
 msgid "_Reload Configuration File"
 msgstr "_Konfiguráció újraolvasása"
 
-#: gtt/menus.c:37
+#: gtt/menus.c:40
 msgid "_Save Configuration File"
 msgstr "Konfiguráció _mentése"
 
-#: gtt/menus.c:41
+#: gtt/menus.c:44
 msgid "_Export Current State"
 msgstr "_Jelenlegi állapot exportálása"
 
-#: gtt/menus.c:66 gtt/menus.c:127
+#: gtt/menus.c:63 gtt/menus.c:173
 msgid "Clear _Daily Counter"
 msgstr "Napi számláló törlése"
 
-#: gtt/menus.c:71
+#: gtt/menus.c:64 gtt/menus.c:174
+msgid "Zero out todays timer by deleting todays time logs"
+msgstr ""
+
+#: gtt/menus.c:68 gtt/menus.c:87 gtt/menus.c:156
 msgid "_Journal..."
 msgstr "_Napló..."
 
-#: gtt/menus.c:83
+#: gtt/menus.c:69 gtt/menus.c:88 gtt/menus.c:157
+msgid "Show the timesheet journal for this project"
+msgstr ""
+
+#: gtt/menus.c:72 gtt/menus.c:160
+msgid "New Diary _Entry"
+msgstr ""
+
+#: gtt/menus.c:73 gtt/menus.c:161
+#, fuzzy
+msgid "Change the current task for this project"
+msgstr "A projekthez rendelt cím"
+
+#: gtt/menus.c:91
+#, fuzzy
+msgid "_All Journal..."
+msgstr "_Napló..."
+
+#: gtt/menus.c:92
+msgid "Show the verbose timesheet journal for this project"
+msgstr ""
+
+#: gtt/menus.c:95
+#, fuzzy
+msgid "_Invoice..."
+msgstr "_Mentés..."
+
+#: gtt/menus.c:96
+#, fuzzy
+msgid "Show a sample invoice for this project"
+msgstr "Az projekt szokásos óradíja dollárban."
+
+#: gtt/menus.c:99
+#, fuzzy
+msgid "_Primer..."
+msgstr "Tulajdonságok..."
+
+#: gtt/menus.c:100
+msgid "Show a sample introductory primer for designing custom reports"
+msgstr ""
+
+#: gtt/menus.c:103
+#, fuzzy
+msgid "_New Report..."
+msgstr "_Új projekt"
+
+#: gtt/menus.c:104
+msgid "Define a path to a new GTT phtml report file"
+msgstr ""
+
+#: gtt/menus.c:115
 msgid "St_art"
 msgstr "_Indítás"
 
-#: gtt/menus.c:87
+#: gtt/menus.c:116
+msgid "Start the timer running"
+msgstr ""
+
+#: gtt/menus.c:121
 msgid "Sto_p"
 msgstr "Me_gállítás"
 
-#: gtt/menus.c:92
+#: gtt/menus.c:122
+#, fuzzy
+msgid "Stop the timer"
+msgstr "Szeptember"
+
+#: gtt/menus.c:127
 msgid "_Timer Running"
 msgstr "Ó_ra fut"
 
-#: gtt/menus.c:111
+#: gtt/menus.c:146
+msgid "_Reports"
+msgstr ""
+
+#: gtt/menus.c:147
 msgid "_Timer"
 msgstr "Ór_ák"
 
-#: gtt/options.c:234
-msgid "Display"
-msgstr "Képernyõ"
-
-#: gtt/options.c:242
-msgid "Show Seconds"
-msgstr "Másodpercek mutatása"
-
-#: gtt/options.c:248
-msgid "Show Status Bar"
-msgstr "Állapotsor mutatása"
-
-#: gtt/options.c:254
-msgid "Show Table Header"
-msgstr "Táblázat fejlécének mutatása"
-
-#: gtt/options.c:260
+#. deal with the i18n menu path ...
+#. (is this right ??? or is this pre-i18n ???)
+#: gtt/menus.c:244
 #, fuzzy
-msgid "Show Sub-Projects"
-msgstr "Mutasd a 'Beállítás' gombot"
+msgid "Reports"
+msgstr "Újraindítás"
 
-#: gtt/options.c:274 gtt/options.c:591
-msgid "Toolbar"
-msgstr "Eszköztár"
+#: gtt/plug-in.c:121
+msgid "Reports/<Separator>"
+msgstr ""
 
-#: gtt/options.c:282
-msgid "Show Toolbar Icons"
-msgstr "Eszköztárikonok mutatása"
-
-#: gtt/options.c:288
-msgid "Show Toolbar Texts"
-msgstr "Eszköztár szövegek"
-
-#: gtt/options.c:294
-msgid "Show Tooltips"
-msgstr "Segédszövegek mutatása"
-
-#: gtt/options.c:300
-msgid "Toolbar Segments"
-msgstr "Eszköztár elválasztók"
-
-#: gtt/options.c:308
-msgid "Show `New'"
-msgstr "Mutasd az 'Új' gombot"
-
-#: gtt/options.c:314
-msgid "Show `Save', `Reload'"
-msgstr "Mutasd a 'Mentés' és az 'Újratöltés' gombokat"
-
-#: gtt/options.c:320
-msgid "Show `Cut', `Copy', `Paste'"
-msgstr "Mutasd a 'Kivágás', 'Másolás' és 'Beillesztés' gombokat"
-
-#: gtt/options.c:326
-msgid "Show `Properties'"
-msgstr "Mutasd a 'Beállítás' gombot"
-
-#: gtt/options.c:332
-msgid "Show `Timer'"
-msgstr "Mutasd az 'Óra' gombot"
-
-#: gtt/options.c:338
-msgid "Show `Preferences'"
-msgstr "Mutasd a 'Tulajdonságok' gombot"
-
-#: gtt/options.c:344
-msgid "Show `Help'"
-msgstr "Mutasd a 'Súgó' gombot"
-
-#: gtt/options.c:350
-msgid "Show `Quit'"
-msgstr "Mutasd a 'Kilépés' gombot"
-
-#: gtt/options.c:364
-msgid "Shell Commands"
-msgstr "Shell parancsok"
-
-#: gtt/options.c:372
-msgid "Switch Project Command:"
-msgstr "Projektváltás parancs:"
-
-#: gtt/options.c:384
-msgid "No Project Command:"
-msgstr "Nincs projekt parancs:"
-
-#: gtt/options.c:419
-msgid "Logfile"
-msgstr "Naplófájl"
-
-#: gtt/options.c:427
-msgid "Use Logfile"
-msgstr "Napló használata"
-
-#: gtt/options.c:436
-msgid "Filename:"
-msgstr "Fájlnév:"
-
-#: gtt/options.c:450
-msgid "Entry Start:"
-msgstr "Bejegyzés kezdete:"
-
-#: gtt/options.c:464
-msgid "Entry Stop:"
-msgstr "Bejegyzés vége:"
-
-#: gtt/options.c:478
-msgid "Timeout in secs:"
-msgstr "Idõtúllépés másodpercekben:"
-
-#: gtt/options.c:578
-msgid "Misc"
-msgstr "Más"
-
-#: gtt/proj.c:436
+#: gtt/proj.c:697
 msgid "Old GTT Tasks"
 msgstr "Régi GTT feladat"
 
-#: gtt/proj.c:455 gtt/proj.c:858
-msgid "New Task"
-msgstr "Új feladat"
+#: gtt/props-proj.c:94 gtt/props-proj.c:95 gtt/props-task.c:75
+#: gtt/props-task.c:76
+msgid "empty"
+msgstr "üres"
+
+#: gtt/timer.c:117
+#, c-format
+msgid ""
+"The keyboard and mouse have been idle\n"
+"for %d minutes.  The currently running\n"
+"project (%s - %s)\n"
+"has been stopped.\n"
+"Do you want to restart it?"
+msgstr ""
+
+#: gtt/timer.c:125
+#, fuzzy
+msgid "System Idle"
+msgstr "Rendszerinformációk"
 
 #. Note to translators: just skip the `[GTT]'
-#: gtt/toolbar.c:144
+#: gtt/toolbar.c:159
 msgid "[GTT]New"
 msgstr "[GTT]Új"
 
-#: gtt/toolbar.c:145
+#: gtt/toolbar.c:160
 msgid "Create a New Project..."
 msgstr "Új projekt létrehozása..."
 
-#: gtt/toolbar.c:151
+#: gtt/toolbar.c:166
 msgid "Reload"
 msgstr "Újratöltés"
 
-#: gtt/glade/journal_strings.c:11 gtt/toolbar.c:155 stripchart/params.c:939
+#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
 msgid "Save"
 msgstr "Mentés"
 
-#: gtt/toolbar.c:156
+#: gtt/toolbar.c:171
 msgid "Save Configuration File"
 msgstr "Beállítások mentése"
 
-#: gtt/toolbar.c:163
+#: gtt/toolbar.c:178
 msgid "Cut Selected Project"
 msgstr "A kiválasztott projekt kivágása"
 
-#: gtt/toolbar.c:167
+#: gtt/toolbar.c:182
 msgid "Copy Selected Project"
 msgstr "A kiválasztott projekt mentése"
 
-#: gtt/toolbar.c:171
+#: gtt/toolbar.c:186
 msgid "Paste Project"
 msgstr "Projekt beszúrása"
 
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/journal_strings.c:7 gtt/toolbar.c:178
+#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
 msgid "Journal"
 msgstr "Napló"
 
-#: gtt/toolbar.c:179
+#: gtt/toolbar.c:194
 msgid "View and Edit Timestamp Logs"
 msgstr ""
 
-#: gtt/toolbar.c:184
+#: gtt/toolbar.c:199
 msgid "Props"
 msgstr "Beállítások"
 
-#: gtt/toolbar.c:185
+#: gtt/toolbar.c:200
 msgid "Edit Project Properties..."
 msgstr "Projekt beállításainak szerkesztése..."
 
-#: gtt/toolbar.c:189
+#: gtt/toolbar.c:204
 msgid "Timer"
 msgstr "Óra"
 
-#: gtt/toolbar.c:190
+#: gtt/toolbar.c:205
 msgid "Start/Stop Timer"
 msgstr "Órát indít/megállít"
 
-#: gtt/toolbar.c:202
+# logview/calendar.c:118
+#: gtt/toolbar.c:211 logview/calendar.c:112 logview/logview.c:107
+msgid "Calendar"
+msgstr "Naptár"
+
+#: gtt/toolbar.c:212
+#, fuzzy
+msgid "View Calendar"
+msgstr "Naptár elrejtése"
+
+#: gtt/toolbar.c:225
 msgid "Prefs"
 msgstr "Tulajdonságok"
 
-#: gtt/toolbar.c:203
+#: gtt/toolbar.c:226
 msgid "Edit Preferences..."
 msgstr "Tulajdonságok szerkesztése..."
 
-#: gtt/toolbar.c:207
+#: gtt/toolbar.c:230
 msgid "Manual"
 msgstr "Kézikönyv"
 
-#: gtt/toolbar.c:208
+#: gtt/toolbar.c:231
 msgid "User's Guide and Manual"
 msgstr "Felhasználói kézikönyv"
 
-#: gtt/toolbar.c:213
+#: gtt/toolbar.c:236
 msgid "Quit"
 msgstr "Kilépés"
 
-#: gtt/toolbar.c:213
+#: gtt/toolbar.c:236
 msgid "Quit GTimeTracker"
 msgstr "Kilépés a GTimeTracker-bõl"
 
-#: gtt/ctree.c:276
-msgid "Total"
-msgstr "Összes"
+#: gtt/glade/interval_edit.glade.h:1
+msgid "1 Hour"
+msgstr "1 óra"
 
-#: gtt/ctree.c:277 gtt/glade/interval_edit_strings.c:20
-msgid "Today"
-msgstr "Ma"
+#: gtt/glade/interval_edit.glade.h:2
+msgid "10 Min"
+msgstr "10 perc"
 
-#. ===================== END OF FILE ==============================
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/interval_edit_strings.c:7
+#: gtt/glade/interval_edit.glade.h:3
+msgid "15 Min"
+msgstr "15 perc"
+
+#: gtt/glade/interval_edit.glade.h:4
+msgid "2 Hours"
+msgstr "2 óra"
+
+#: gtt/glade/interval_edit.glade.h:5
+msgid "20 Min"
+msgstr "20 perc"
+
+#: gtt/glade/interval_edit.glade.h:6
+msgid "3 Hours"
+msgstr "3 óra"
+
+#: gtt/glade/interval_edit.glade.h:7
+msgid "30 Min"
+msgstr "30 perc"
+
+#: gtt/glade/interval_edit.glade.h:8
+msgid "5 Min"
+msgstr "5 perc"
+
+#: gtt/glade/interval_edit.glade.h:9
+msgid "Exact Time"
+msgstr "Pontos idõ"
+
+#: gtt/glade/interval_edit.glade.h:10
+msgid "Set how Uncertain the Start Time Is"
+msgstr "Mennyire bizonytalan a kezdõ idõpont"
+
+#: gtt/glade/interval_edit.glade.h:12
 #, fuzzy
 msgid "Start Fuzz"
 msgstr "Indítás"
 
-#: gtt/glade/interval_edit_strings.c:10
-msgid "Set how Uncertain the Start Time Is"
-msgstr "Mennyire bizonytalan a kezdõ idõpont"
-
-#: gtt/glade/interval_edit_strings.c:11
-msgid "Exact Time"
-msgstr "Pontos idõ"
-
-#: gtt/glade/interval_edit_strings.c:12
-msgid "5 Min"
-msgstr "5 perc"
-
-#: gtt/glade/interval_edit_strings.c:13
-msgid "10 Min"
-msgstr "10 perc"
-
-#: gtt/glade/interval_edit_strings.c:14
-msgid "15 Min"
-msgstr "15 perc"
-
-#: gtt/glade/interval_edit_strings.c:15
-msgid "20 Min"
-msgstr "20 perc"
-
-#: gtt/glade/interval_edit_strings.c:16
-msgid "30 Min"
-msgstr "30 perc"
-
-#: gtt/glade/interval_edit_strings.c:17
-msgid "1 Hour"
-msgstr "1 óra"
-
-#: gtt/glade/interval_edit_strings.c:18
-msgid "2 Hours"
-msgstr "2 óra"
-
-#: gtt/glade/interval_edit_strings.c:19
-msgid "3 Hours"
-msgstr "3 óra"
-
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/interval_popup_strings.c:7
+#: gtt/glade/interval_popup.glade.h:1
 #, fuzzy
-msgid "Edit the Start & Stop Times"
-msgstr "Órát indít/megállít"
+msgid "Delete Interval"
+msgstr "A görgetõsáv frissítési intervalluma"
 
-#: gtt/glade/interval_popup_strings.c:8 mini-utils/gcolorsel/gcolorsel.c:32
-#: mini-utils/gcolorsel/menus.c:573 mini-utils/gcolorsel/menus.c:660
-#: stripchart/params.c:1041 stripchart/params.c:1044
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#: gtt/glade/interval_popup_strings.c:9
+#: gtt/glade/interval_popup.glade.h:2
 #, fuzzy
 msgid "Delete This Interval"
 msgstr "A görgetõsáv frissítési intervalluma"
 
-#: gtt/glade/interval_popup_strings.c:10 mini-utils/gw/gw.c:495
-msgid "Delete"
-msgstr "Törlés"
+#: gtt/glade/interval_popup.glade.h:3
+#, fuzzy
+msgid "Edit Interval"
+msgstr "Idõtartamok"
 
-#: gtt/glade/interval_popup_strings.c:11
-msgid "Merge Into Interval Above"
+#: gtt/glade/interval_popup.glade.h:4
+#, fuzzy
+msgid "Edit the Start & Stop Times"
+msgstr "Órát indít/megállít"
+
+#: gtt/glade/interval_popup.glade.h:5
+#, fuzzy
+msgid "Insert Diary Entry"
+msgstr "_Beszúrás a végére"
+
+#: gtt/glade/interval_popup.glade.h:6
+msgid "Insert a new diary entry above this time interval."
 msgstr ""
 
-#: gtt/glade/interval_popup_strings.c:12
-msgid "Merge Up"
-msgstr ""
-
-#: gtt/glade/interval_popup_strings.c:13
-msgid "Merege Into Interval Below"
-msgstr ""
-
-#: gtt/glade/interval_popup_strings.c:14
+#: gtt/glade/interval_popup.glade.h:7
 msgid "Merge Down"
 msgstr ""
 
-#: gtt/glade/journal_strings.c:8
-msgid "New File"
-msgstr "Új fájl"
+#: gtt/glade/interval_popup.glade.h:8
+msgid "Merge Into Interval Above"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:9
-msgid "Print"
-msgstr "Nyomtatás"
+#: gtt/glade/interval_popup.glade.h:9
+msgid "Merge Into Interval Below"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:10
-msgid "Open File"
-msgstr "Fájl megnyitása"
+#: gtt/glade/interval_popup.glade.h:10
+msgid "Merge Up"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:12
-msgid "Save File"
-msgstr "Fájl mentése"
+#: gtt/glade/interval_popup.glade.h:11
+msgid "Paste Diary Entry"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:13 mini-utils/gcolorsel/menus.c:89
+#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+msgid "Paste a previously cut diary entry."
+msgstr ""
+
+#: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
 #: mini-utils/gcolorsel/menus.c:913 mini-utils/gshutdown/gshutdown.c:155
 #: mini-utils/gshutdown/gshutdown.c:631 stripchart/params.c:953
 msgid "Close"
 msgstr "Bezárás"
 
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/project_properties_strings.c:7
-msgid "A title to assign to this project"
-msgstr "A projekthez rendelt cím"
+#: gtt/glade/journal.glade.h:3
+msgid "New File"
+msgstr "Új fájl"
 
-#: gtt/glade/project_properties_strings.c:8
-msgid "a short description that will be printed on the invoice."
-msgstr "rövid leírás, amely a számlára lesz nyomtatva."
+#: gtt/glade/journal.glade.h:4
+msgid "Open File"
+msgstr "Fájl megnyitása"
 
-#: gtt/glade/project_properties_strings.c:9
-msgid "Project Title:"
-msgstr "Projekt neve:"
+#: gtt/glade/journal.glade.h:5
+msgid "Print"
+msgstr "Nyomtatás"
 
-#: gtt/glade/project_properties_strings.c:10
-msgid "Project Description:"
+#: gtt/glade/journal.glade.h:6
+msgid "Refresh"
+msgstr ""
+
+#: gtt/glade/journal.glade.h:8
+msgid "Save File"
+msgstr "Fájl mentése"
+
+#: gtt/glade/not-implemented.glade.h:1
+#, fuzzy
+msgid "Information"
+msgstr "CPU információ"
+
+#: gtt/glade/not-implemented.glade.h:2
+msgid ""
+"This function is not yet implemented!\n"
+"Coming Soon, I hope!"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:1
+msgid "Display"
+msgstr "Képernyõ"
+
+#: gtt/glade/prefs.glade.h:2
+msgid "Enter a shell command to be executed when no projects are active."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:3
+msgid "Enter a shell command to be executed whenever projects are switched."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:4
+msgid "Entry Start:"
+msgstr "Bejegyzés kezdete:"
+
+#: gtt/glade/prefs.glade.h:5
+msgid "Entry Stop:"
+msgstr "Bejegyzés vége:"
+
+#: gtt/glade/prefs.glade.h:7
+#, no-c-format
+msgid ""
+"Entry that will be logged when a project starts. Use %t for the project "
+"title, %d for the description, etc. See the manual for more options."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:9
+#, no-c-format
+msgid ""
+"Entry that will be logged when the project stops.  Use %t for the porject "
+"title, %d for the project description, etc. See the manual for more options."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:10
+#, fuzzy
+msgid "Fields"
+msgstr "Keresés"
+
+#: gtt/glade/prefs.glade.h:11
+msgid "Filename:"
+msgstr "Fájlnév:"
+
+#: gtt/glade/prefs.glade.h:12
+#, fuzzy
+msgid "Idle Seconds:"
+msgstr "Másodpercek mutatása"
+
+#: gtt/glade/prefs.glade.h:13
+msgid "Inactivity Timeout"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:14
+msgid "Logfile"
+msgstr "Naplófájl"
+
+#: gtt/glade/prefs.glade.h:15
+#, fuzzy
+msgid "Min Recorded:"
+msgstr "Törzs:"
+
+#: gtt/glade/prefs.glade.h:16
+msgid "Misc"
+msgstr "Más"
+
+#: gtt/glade/prefs.glade.h:17
+msgid "No Project Command:"
+msgstr "Nincs projekt parancs:"
+
+#: gtt/glade/prefs.glade.h:18
+#, fuzzy
+msgid "Project List Display"
+msgstr "Projekt neve"
+
+#: gtt/glade/prefs.glade.h:19
+#, fuzzy
+msgid "Shell"
+msgstr "Helyesírás"
+
+#: gtt/glade/prefs.glade.h:20
+msgid "Shell Commands"
+msgstr "Shell parancsok"
+
+#: gtt/glade/prefs.glade.h:21
+msgid "Show Current Diary Entry"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:22
+msgid "Show Estimated Effort"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:23
+#, fuzzy
+msgid "Show Percent Complete"
+msgstr "Mutasd a 'Beállítás' gombot"
+
+#: gtt/glade/prefs.glade.h:24
+msgid "Show Planned Project End Date"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:25
+msgid "Show Planned Project Start Date"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:26
+#, fuzzy
+msgid "Show Project Description"
 msgstr "Projekt leírása:"
 
-#: gtt/glade/project_properties_strings.c:11
-#: gtt/glade/task_properties_strings.c:8
-msgid "Notes:"
-msgstr "Megjegyzés:"
+#: gtt/glade/prefs.glade.h:27
+#, fuzzy
+msgid "Show Project Due Date"
+msgstr "Mutasd a 'Beállítás' gombot"
 
-#: gtt/glade/project_properties_strings.c:12
+#: gtt/glade/prefs.glade.h:28
+#, fuzzy
+msgid "Show Project Importance"
+msgstr "Nincs projekt parancs:"
+
+#: gtt/glade/prefs.glade.h:29
+#, fuzzy
+msgid "Show Project Status"
+msgstr "Mutasd a 'Beállítás' gombot"
+
+#: gtt/glade/prefs.glade.h:30
+#, fuzzy
+msgid "Show Project Urgency"
+msgstr "Mutasd a 'Beállítás' gombot"
+
+#: gtt/glade/prefs.glade.h:31
+msgid "Show Seconds"
+msgstr "Másodpercek mutatása"
+
+#: gtt/glade/prefs.glade.h:32
+msgid "Show Status Bar"
+msgstr "Állapotsor mutatása"
+
+#: gtt/glade/prefs.glade.h:33
+#, fuzzy
+msgid "Show Sub-Projects"
+msgstr "Mutasd a 'Beállítás' gombot"
+
+#: gtt/glade/prefs.glade.h:34
+msgid "Show Table Header"
+msgstr "Táblázat fejlécének mutatása"
+
+#: gtt/glade/prefs.glade.h:35
+msgid "Show Time For The Current Diary Entry"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:36
+msgid "Show Time This Month"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:37
+msgid "Show Time This Week"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:38
+#, fuzzy
+msgid "Show Time This Year"
+msgstr "Mutasd az 'Óra' gombot"
+
+#: gtt/glade/prefs.glade.h:39
+#, fuzzy
+msgid "Show Time Today"
+msgstr "Mutasd az 'Óra' gombot"
+
+#: gtt/glade/prefs.glade.h:40
+msgid "Show Toolbar Icons"
+msgstr "Eszköztárikonok mutatása"
+
+#: gtt/glade/prefs.glade.h:41
+msgid "Show Toolbar Texts"
+msgstr "Eszköztár szövegek"
+
+#: gtt/glade/prefs.glade.h:42
+msgid "Show Tooltips"
+msgstr "Segédszövegek mutatása"
+
+#: gtt/glade/prefs.glade.h:43
+#, fuzzy
+msgid "Show Total Time Ever"
+msgstr "Táblázat fejlécének mutatása"
+
+#: gtt/glade/prefs.glade.h:44
+msgid "Show `Cut', `Copy', `Paste'"
+msgstr "Mutasd a 'Kivágás', 'Másolás' és 'Beillesztés' gombokat"
+
+#: gtt/glade/prefs.glade.h:45
+msgid "Show `Help'"
+msgstr "Mutasd a 'Súgó' gombot"
+
+#: gtt/glade/prefs.glade.h:46
+#, fuzzy
+msgid "Show `Journal'"
+msgstr "Napló"
+
+#: gtt/glade/prefs.glade.h:47
+msgid "Show `New'"
+msgstr "Mutasd az 'Új' gombot"
+
+#: gtt/glade/prefs.glade.h:48
+msgid "Show `Preferences'"
+msgstr "Mutasd a 'Tulajdonságok' gombot"
+
+#: gtt/glade/prefs.glade.h:49
+msgid "Show `Properties'"
+msgstr "Mutasd a 'Beállítás' gombot"
+
+#: gtt/glade/prefs.glade.h:50
+msgid "Show `Quit'"
+msgstr "Mutasd a 'Kilépés' gombot"
+
+#: gtt/glade/prefs.glade.h:51
+msgid "Show `Save', `Reload'"
+msgstr "Mutasd a 'Mentés' és az 'Újratöltés' gombokat"
+
+#: gtt/glade/prefs.glade.h:52
+msgid "Show `Timer'"
+msgstr "Mutasd az 'Óra' gombot"
+
+#: gtt/glade/prefs.glade.h:53
 msgid ""
-"Internal notes about the project, memos that will not be printed on an "
-"invoice."
-msgstr "Belsõ feljegyzések a projektrõl, emlékeztetõk, amelyek nem lesznek a számlára nyomtatva."
+"Show the 'szing', that is, the estimated amount of work that it will take to "
+"perform this project."
+msgstr ""
 
-#: gtt/glade/project_properties_strings.c:13
-msgid "Project"
-msgstr "Projekt"
+#: gtt/glade/prefs.glade.h:54
+msgid "Switch Project Command:"
+msgstr "Projektváltás parancs:"
 
-#: gtt/glade/project_properties_strings.c:14
-msgid "Regular Rate:"
-msgstr "Szokásos óradíj:"
+#: gtt/glade/prefs.glade.h:55
+msgid ""
+"Switches between projects that happen faster than this will not be logged "
+"(enter the number of seconds)"
+msgstr ""
 
-#: gtt/glade/project_properties_strings.c:15
-msgid "Overtime Rate:"
-msgstr "Túlóradíj:"
+#: gtt/glade/prefs.glade.h:56
+msgid ""
+"The current active project will be made inactive after there has been no "
+"keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
+msgstr ""
 
-#: gtt/glade/project_properties_strings.c:16
-msgid "Double-Overtime Rate:"
-msgstr "Különleges túlóradíj:"
+#: gtt/glade/prefs.glade.h:57
+msgid "Toolbar"
+msgstr "Eszköztár"
 
-#: gtt/glade/project_properties_strings.c:17
-msgid "Flat Fee:"
-msgstr "Átalánydíj:"
+#: gtt/glade/prefs.glade.h:58
+msgid "Toolbar Segments"
+msgstr "Eszköztár elválasztók"
 
-#: gtt/glade/project_properties_strings.c:18
+#: gtt/glade/prefs.glade.h:59
+msgid "Use Logfile"
+msgstr "Napló használata"
+
+#: gtt/glade/prefs.glade.h:60
+#, fuzzy
+msgid "View Project Fields"
+msgstr "Beállítások megtekintése"
+
+#: gtt/glade/project_properties.glade.h:1
 msgid "        "
 msgstr "        "
 
-#: gtt/glade/project_properties_strings.c:19
+#: gtt/glade/project_properties.glade.h:2
+#, fuzzy
+msgid "            "
+msgstr "        "
+
+#: gtt/glade/project_properties.glade.h:3
 msgid "                        "
 msgstr "                        "
 
-#: gtt/glade/project_properties_strings.c:20
-msgid "The dollars per hour normally charged for this project."
-msgstr "Az projekt szokásos óradíja dollárban."
-
-#: gtt/glade/project_properties_strings.c:21
-msgid "The dollars per hour charged for overtime work on this project."
-msgstr "A projekt túlóradíja dollárban."
-
-#: gtt/glade/project_properties_strings.c:22
-msgid "The over-overtime rate (overtime on Sundays, etc.)"
-msgstr "A különleges túlóradíj (vasárnapi munka, stb.)"
-
-#: gtt/glade/project_properties_strings.c:23
-msgid ""
-"If this project is billed for one price no matter how long it takes, enter "
-"the fee here."
-msgstr "Ha a projekt adott árral lesz kiszámlázva, függetlenül a ráfordított idõtõl, akkor ide írd be azt az árat."
-
-#: gtt/glade/project_properties_strings.c:24
-msgid "Rates"
-msgstr "Díjak"
-
-#: gtt/glade/project_properties_strings.c:25
-msgid "Minimum Interval: "
-msgstr "Minimális idõtartam: "
-
-#: gtt/glade/project_properties_strings.c:26
-msgid "Auto-merge Interval:"
+#: gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:27
+#: gtt/glade/project_properties.glade.h:6
+msgid "A title to assign to this project"
+msgstr "A projekthez rendelt cím"
+
+#: gtt/glade/project_properties.glade.h:7
 msgid "Auto-merge Gap:"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:28
-#: gtt/glade/project_properties_strings.c:29
-#: gtt/glade/project_properties_strings.c:30
-msgid "seconds"
-msgstr "másodperc"
-
-#: gtt/glade/project_properties_strings.c:31
-msgid "Intervals smaller than this will be discarded"
-msgstr "Az ennél kisebb idõtartamokat nem vesszük figyelembe"
-
-#: gtt/glade/project_properties_strings.c:32
-msgid "Time below which an interval is merged with its neighbors"
+#: gtt/glade/project_properties.glade.h:8
+msgid "Auto-merge Interval:"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:33
+#: gtt/glade/project_properties.glade.h:11
+msgid ""
+"Does this item need immediate attention? Note that some urgent tasks might "
+"not be important.  For example, Bill may want you to answer his email today, "
+"but you may have better things to do today."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:12
+msgid "Double-Overtime Rate:"
+msgstr "Különleges túlóradíj:"
+
+#: gtt/glade/project_properties.glade.h:13
+#, fuzzy
+msgid "Due Date:"
+msgstr "Dátum:"
+
+#: gtt/glade/project_properties.glade.h:14
+msgid "Flat Fee:"
+msgstr "Átalánydíj:"
+
+#: gtt/glade/project_properties.glade.h:16
+msgid "Hours to Finish:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:17
+msgid ""
+"How important is it to perform this task?  Not everything important is "
+"urgent.  For example, it is important to file a tax return every year, but "
+"you have a lot of time to get ready to do this."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:18
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:34
+#: gtt/glade/project_properties.glade.h:19
+msgid ""
+"If this project is billed for one price no matter how long it takes, enter "
+"the fee here."
+msgstr ""
+"Ha a projekt adott árral lesz kiszámlázva, függetlenül a ráfordított idõtõl, "
+"akkor ide írd be azt az árat."
+
+#: gtt/glade/project_properties.glade.h:20
+#, fuzzy
+msgid "Importance:"
+msgstr "Tolerancia :"
+
+#: gtt/glade/project_properties.glade.h:22
+#, fuzzy
+msgid ""
+"Internal notes about the project that will not be printed on an invoice."
+msgstr ""
+"Belsõ feljegyzések a projektrõl, emlékeztetõk, amelyek nem lesznek a "
+"számlára nyomtatva."
+
+#: gtt/glade/project_properties.glade.h:23
 msgid "Intervals"
 msgstr "Idõtartamok"
 
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/task_properties_strings.c:7
+#: gtt/glade/project_properties.glade.h:24
+msgid "Intervals smaller than this will be discarded"
+msgstr "Az ennél kisebb idõtartamokat nem vesszük figyelembe"
+
+#: gtt/glade/project_properties.glade.h:26
+msgid "Medium"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:27
+msgid "Minimum Interval: "
+msgstr "Minimális idõtartam: "
+
+#: gtt/glade/project_properties.glade.h:28
 #, fuzzy
-msgid "Memo:"
-msgstr "Memória"
+msgid "Not Set"
+msgstr "Megjegyzés:"
 
-#: gtt/glade/task_properties_strings.c:9
-msgid "Billable:"
-msgstr "Számlázható:"
+#: gtt/glade/project_properties.glade.h:30
+#: gtt/glade/task_properties.glade.h:18
+msgid "Notes:"
+msgstr "Megjegyzés:"
 
-#: gtt/glade/task_properties_strings.c:10
-msgid "Billing Rate:"
+#: gtt/glade/project_properties.glade.h:32
+msgid "Overtime Rate:"
+msgstr "Túlóradíj:"
+
+#: gtt/glade/project_properties.glade.h:33
+msgid "Planned Finish:"
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:11
-msgid "Billing Block:"
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:12
-msgid ""
-"Can this task be billed to the customer?  \"Hold\" means maybe but not yet, "
-"\"Not Billable\" means don't print on the invoice, \"No Charge\" means print "
-"on the invoice as 'free'."
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:13
+#: gtt/glade/project_properties.glade.h:34
 #, fuzzy
-msgid "Hold"
-msgstr "Tömör"
+msgid "Planned Start:"
+msgstr "Bejegyzés kezdete:"
 
-#: gtt/glade/task_properties_strings.c:14
-msgid "Billable"
-msgstr "Számlázható"
-
-#: gtt/glade/task_properties_strings.c:15
-msgid "Not Billable"
-msgstr "Nem számlázható"
-
-#: gtt/glade/task_properties_strings.c:16
-msgid "No Charge"
-msgstr "Ingyenes"
-
-#: gtt/glade/task_properties_strings.c:17
-msgid "Fee rate to be charged for this task."
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:18
+#: gtt/glade/project_properties.glade.h:35
 #, fuzzy
-msgid "Regular"
-msgstr "Újratöltés"
+msgid "Planning"
+msgstr "Figyelem"
 
-#: gtt/glade/task_properties_strings.c:19
-msgid "Overtime"
-msgstr "Túlóra"
+#: gtt/glade/project_properties.glade.h:36
+msgid "Project"
+msgstr "Projekt"
 
-# gdictsrc/gdict-pref-dialog.c:185
-#: gtt/glade/task_properties_strings.c:20
-msgid "OverOver"
+#: gtt/glade/project_properties.glade.h:37
+msgid "Project Description:"
+msgstr "Projekt leírása:"
+
+#: gtt/glade/project_properties.glade.h:38
+msgid "Project Title:"
+msgstr "Projekt neve:"
+
+#: gtt/glade/project_properties.glade.h:39
+msgid "Rates"
+msgstr "Díjak"
+
+#: gtt/glade/project_properties.glade.h:40
+msgid "Regular Rate:"
+msgstr "Szokásos óradíj:"
+
+# mini-utils/idetool/idetool.c:311
+#: gtt/glade/project_properties.glade.h:41
+#, fuzzy
+msgid "Status:"
+msgstr "Állapot"
+
+#: gtt/glade/project_properties.glade.h:42
+msgid "The dollars per hour charged for overtime work on this project."
+msgstr "A projekt túlóradíja dollárban."
+
+#: gtt/glade/project_properties.glade.h:43
+msgid "The dollars per hour normally charged for this project."
+msgstr "Az projekt szokásos óradíja dollárban."
+
+#: gtt/glade/project_properties.glade.h:44
+msgid "The over-overtime rate (overtime on Sundays, etc.)"
+msgstr "A különleges túlóradíj (vasárnapi munka, stb.)"
+
+#: gtt/glade/project_properties.glade.h:45
+msgid "Time below which an interval is merged with its neighbors"
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:21
-msgid "Flat Fee"
-msgstr "Átalánydíj"
-
-#: gtt/glade/task_properties_strings.c:22
-msgid ""
-"The billed unit of time wioll be rounded to an integer multiple of this time."
+#: gtt/glade/project_properties.glade.h:46
+msgid "Urgency:"
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:23
+#: gtt/glade/project_properties.glade.h:47
+#, fuzzy
+msgid "What is the status of this project?"
+msgstr "A projekthez rendelt cím"
+
+#: gtt/glade/project_properties.glade.h:48
+msgid "a short description that will be printed on the invoice."
+msgstr "rövid leírás, amely a számlára lesz nyomtatva."
+
+#: gtt/glade/project_properties.glade.h:49
+msgid "seconds"
+msgstr "másodperc"
+
+#: gtt/glade/task_popup.glade.h:1
+#, fuzzy
+msgid "Add a new time interval"
+msgstr "Frissítési intervallum (ezredmp)"
+
+#: gtt/glade/task_popup.glade.h:2
+#, fuzzy
+msgid "Delete _Times"
+msgstr "Törlés"
+
+#: gtt/glade/task_popup.glade.h:3
+msgid "Delete the diary entry only, keep the time intervals"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:4
+msgid "Delete the diary entry, and the time intervals below it."
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:5
+msgid "Edit the diary entry and other task properties."
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:6
+msgid "Insert a new diary entry above this one."
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:7
+#, fuzzy
+msgid "New Time Interval"
+msgstr "A görgetõsáv frissítési intervalluma"
+
+#: gtt/glade/task_popup.glade.h:9
+#, fuzzy
+msgid "_Delete Diary Entry"
+msgstr "Paraméter törlése"
+
+#: gtt/glade/task_popup.glade.h:10
+msgid "_Edit Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:11
+msgid "_New Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:12
+msgid "_Paste Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:24
+#: gtt/glade/task_properties.glade.h:2
 msgid "A short description to attach to this block of time."
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:25
+#: gtt/glade/task_properties.glade.h:5
+msgid "Billable:"
+msgstr "Számlázható:"
+
+#: gtt/glade/task_properties.glade.h:6
+msgid "Billing Block:"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:7
+msgid "Billing Rate:"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:8
+msgid "Billing Status:"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:9
+#, fuzzy
+msgid "Diary Entry Properties"
+msgstr "GDiskFree Beállítások"
+
+#: gtt/glade/task_properties.glade.h:10
+msgid "Diary Entry:"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:11
+msgid "Fee rate to be charged for this task."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:14
+msgid ""
+"How should this task be billed?  \"Billable\" means bill to the customer in "
+"the normal fashion.   \"Not Billable\" means we can't ask for money for "
+"this, don't print on the invoice.   \"No Charge\" means print on the invoice "
+"as 'free/no-charge'."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:15
+msgid ""
+"Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
+"not yet, needs review.   \"Bill\" means print this on the next invoice.   "
+"\"Paid\" means that it should no longer be included on invoices."
+msgstr ""
+
+# gdictsrc/gdict-pref-dialog.c:185
+#: gtt/glade/task_properties.glade.h:19
+msgid "OverOver"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:23
+msgid ""
+"The billed unit of time will be rounded to an integer multiple of this time."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:24
 msgid "minutes"
 msgstr "perc"
-
-#: gtt/glade/task_properties_strings.c:26
-msgid "Task Properties"
-msgstr "Feladat beállításai"
-
-#: gtt/journal.c:91
-msgid "<html><body><h1>Error 404 Not Found</h1>The file "
-msgstr "<html><body><h1>404 hiba: nem található</h1>A fájl "
-
-#: gtt/journal.c:95
-msgid "(null)"
-msgstr "(null)"
-
-#: gtt/journal.c:98
-msgid " was not found. </body></html>"
-msgstr " nem található. </body></html>"
-
-#: gtt/journal.c:103
-msgid "<html><body><h1>Unkown Error</h1>"
-msgstr "<html><body><h1>Ismeretlen hiba</h1>"
-
-#: gtt/phtml.c:39
-msgid ""
-"<table border=1><caption><em>hey hey hey!</em></caption><tr><th "
-"colspan=4>Memo<tr><th>&nbsp;<th>Start<th>Stop<th>Elapsed"
-msgstr ""
-
-#: gtt/phtml.c:58 gtt/phtml.c:132
-msgid "(empty)"
-msgstr "(üres)"
-
-#: gtt/phtml.c:150
-msgid "unknown token: >>>>"
-msgstr ""
-
-#: gtt/props-proj.c:70 gtt/props-proj.c:71 gtt/props-task.c:66
-#: gtt/props-task.c:67
-msgid "empty"
-msgstr "üres"
 
 #: logview/about.c:41
 msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:42
+#, fuzzy
 msgid ""
-"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
-"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"This  program  is  part of  the  GNOME  project. Logview comes with "
+"ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
@@ -1753,11 +2379,6 @@ msgstr ""
 "üzenet: [%s]\n"
 "leírás: [%s]\n"
 "tevékenység: [%s]\n"
-
-# logview/calendar.c:118
-#: logview/calendar.c:112 logview/logview.c:107
-msgid "Calendar"
-msgstr "Naptár"
 
 #: logview/info.c:79 logview/logview.c:110
 msgid "Log stats"
@@ -1975,32 +2596,32 @@ msgstr "Szûrõ...                "
 msgid "Filter log events"
 msgstr "Naplóesemények szûrése"
 
-#: logview/logview.c:136
+#: logview/logview.c:137
 msgid "Info about logview"
 msgstr "A naplónézõrõl"
 
-#: logview/logview.c:240
+#: logview/logview.c:241
 msgid "No log files to open"
 msgstr "Nincs megnyitandó naplófájl"
 
 #. Create App
-#: logview/logview.c:263
+#: logview/logview.c:264
 msgid "System Log Viewer"
 msgstr "Rendszernaplónézõ"
 
-#: logview/logview.c:367
+#: logview/logview.c:368
 msgid "Filename: "
 msgstr "Fájlnév: "
 
-#: logview/logview.c:383
+#: logview/logview.c:384
 msgid "Date: "
 msgstr "Dátum: "
 
-#: logview/logview.c:618
+#: logview/logview.c:619
 msgid "Too many open logs. Close one and try again"
 msgstr "Túl sok napló van megnyitva. Zárj be egyet, és próbáld újra"
 
-#: logview/logview.c:675
+#: logview/logview.c:676
 msgid "Open new logfile"
 msgstr "Napló megnyitása"
 
@@ -2172,6 +2793,12 @@ msgstr "Lista"
 #: mini-utils/gcolorsel/gcolorsel.c:28
 msgid "Grid"
 msgstr "Rács"
+
+#: mini-utils/gcolorsel/gcolorsel.c:32 mini-utils/gcolorsel/menus.c:573
+#: mini-utils/gcolorsel/menus.c:660 stripchart/params.c:1041
+#: stripchart/params.c:1044
+msgid "Edit"
+msgstr "Szerkesztés"
 
 #: mini-utils/gcolorsel/gcolorsel.c:40 stripchart/params.c:1034
 #: stripchart/params.c:1037
@@ -2760,10 +3387,6 @@ msgstr "Lebegõpontos"
 msgid "Color"
 msgstr "Szín"
 
-#: mini-utils/gcolorsel/view-color-list.c:197 mini-utils/guname/moreinfo.c:227
-msgid "Value"
-msgstr "Érték"
-
 #. Create everything.
 #: mini-utils/gcolorsel/view-color-list.c:198 mini-utils/guname/moreinfo.c:225
 #: mini-utils/gw/gw.c:490 mini-utils/gw/gw.c:560
@@ -2775,6 +3398,7 @@ msgid "Tolerance :"
 msgstr "Tolerancia :"
 
 #: mini-utils/gfontsel/gfontsel.c:162
+#: mini-utils/gfontsel/gfontsel.desktop.in.h:1
 msgid "Font Selector"
 msgstr "Betûkészlet-választó"
 
@@ -2834,7 +3458,7 @@ msgstr "_Fix méretû betûtípus"
 msgid "Display text with a fixed font"
 msgstr "Fix méretû (fixed) betûtípussal való megjelenítés"
 
-#: mini-utils/gless/gless.c:351
+#: mini-utils/gless/gless.c:351 mini-utils/gless/gless.desktop.in.h:2
 msgid "Text File Viewer"
 msgstr "Szövegfájl-megjelenítõ"
 
@@ -3052,6 +3676,7 @@ msgstr "A guname vezérlõpult applet legyen"
 msgid "an initialization error occurred while starting 'guname-capplet'."
 msgstr "indítási hiba történt a guname-capplet indításánál"
 
+#: mini-utils/guname/guname-capplet.desktop.in.h:2
 #: mini-utils/guname/guname.c:446
 msgid "System Information"
 msgstr "Rendszerinformációk"
@@ -3224,10 +3849,6 @@ msgstr "Szabad memória:"
 msgid "Device"
 msgstr "Eszköz"
 
-#: mini-utils/guname/info.c:61
-msgid "Size"
-msgstr "Méret"
-
 #: mini-utils/guname/info.c:62
 msgid "Used space"
 msgstr "Használt hely"
@@ -3344,6 +3965,10 @@ msgstr "Parancssor"
 #: mini-utils/gw/gw.c:493
 msgid "Add some defaults"
 msgstr "Alapbeállítás hozzáadása"
+
+#: mini-utils/gw/gw.c:495
+msgid "Delete"
+msgstr "Törlés"
 
 #: mini-utils/gw/gw.c:513
 msgid "Command Editor"
@@ -3492,11 +4117,6 @@ msgstr "Geometria"
 #: mini-utils/idetool/idetool.c:315
 msgid "Cache"
 msgstr "Gyorstár"
-
-# mini-utils/idetool/idetool.c:311
-#: mini-utils/idetool/idetool.c:317 mini-utils/idetool/idetool.c:319
-msgid "Status"
-msgstr "Állapot"
 
 #: mini-utils/idetool/idetool.c:323
 msgid "Legacy MFM/RLL drive"
@@ -3821,7 +4441,8 @@ msgid "Scale"
 msgstr "Skála"
 
 #: stripchart/chart-app.c:197 stripchart/stripchart-applet.c:69
-#: stripchart/stripchart.c:92 stripchart/stripchart.c:97
+#: stripchart/stripchart-applet.desktop.in.h:2 stripchart/stripchart.c:92
+#: stripchart/stripchart.c:97
 msgid "Stripchart"
 msgstr "Stripchart"
 
@@ -4199,6 +4820,231 @@ msgstr ""
 "Nem található a tar program!\n"
 "Ez a program szükséges az archívumkészítéshez."
 
+#: gfloppy/gfloppy.desktop.in.h:1
+#, fuzzy
+msgid "Format Floppy Disks"
+msgstr "Floppy formázása"
+
+#: gfloppy/gfloppy.desktop.in.h:2
+msgid "gfloppy"
+msgstr ""
+
+#: gdictsrc/GDict.desktop.in.h:1 gdictsrc/gdict.desktop.in.h:1
+msgid "GDict"
+msgstr ""
+
+#: gdictsrc/GDict.desktop.in.h:2
+msgid "Gnome client for the MIT dictionary server"
+msgstr ""
+
+#: gdictsrc/gdict.desktop.in.h:2
+msgid "GNOME client for RFC 2229-compliant dictionary server"
+msgstr ""
+
+#: stripchart/stripchart-applet.desktop.in.h:1
+#, fuzzy
+msgid "Shows a stripchart plot"
+msgstr "Statisztika-plotter"
+
+#: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
+msgid "Stripchart Plotter"
+msgstr "Statisztika-plotter"
+
+#: notepad/Notepad.desktop.in.h:1
+msgid "Notepad"
+msgstr "Notesz"
+
+#: notepad/Notepad.desktop.in.h:2
+msgid "Simple editor (notepad)"
+msgstr "GNOME Notesz"
+
+#: mini-utils/idetool/idetool.desktop.in.h:1
+msgid "IDE Device Tool"
+msgstr ""
+
+#: mini-utils/idetool/idetool.desktop.in.h:2
+msgid "Show and Configure IDE Device Settings"
+msgstr ""
+
+#: mini-utils/gw/gw.desktop.in.h:1
+msgid "User Listing"
+msgstr "Felhasználó-listázás"
+
+#: mini-utils/gw/gw.desktop.in.h:2
+msgid "View users on the system"
+msgstr "Kilistázza az éppen bejelentkezett felhasználókat"
+
+#: mini-utils/guname/guname-capplet.desktop.in.h:1
+#, fuzzy
+msgid "Show various system information"
+msgstr "Rendszerinformációk"
+
+#: mini-utils/guname/guname.desktop.in.h:1
+msgid "System Info"
+msgstr "Rendszerinformációk"
+
+#: mini-utils/guname/guname.desktop.in.h:2
+msgid "Technical information about this computer"
+msgstr "A rendszereddel kapcsolatban kaphatsz információt"
+
+#: mini-utils/gshutdown/gshutdown.desktop.in.h:1
+msgid "Shut Down or Reboot"
+msgstr "Kikapcsol vagy újraindít"
+
+#: mini-utils/gshutdown/gshutdown.desktop.in.h:2
+msgid "Turn off or reset the computer"
+msgstr "Alkalmazás a géped lelövéséhez"
+
+#: mini-utils/grun/grun.desktop.in.h:1
+msgid "Ask for a command to execute"
+msgstr "Program futtatása"
+
+#: mini-utils/grun/grun.desktop.in.h:2
+msgid "Run A Command..."
+msgstr "Program futtatása..."
+
+#: mini-utils/gpenguin/gpenguin.desktop.in.h:1
+msgid "GNOME Penguin"
+msgstr "GNOME Pingvin"
+
+#: mini-utils/gpenguin/gpenguin.desktop.in.h:2
+msgid "Let a cute pinguin chase your pointer"
+msgstr "Egy egeredet kergetõ pingvin"
+
+#: mini-utils/gnome-run/gnome-run.desktop.in.h:1
+msgid "Prompts the user for a program to run"
+msgstr "Program futtatása"
+
+#: mini-utils/gnome-run/gnome-run.desktop.in.h:2
+msgid "Run program..."
+msgstr "Program futtatása..."
+
+#: mini-utils/gless/gless.desktop.in.h:1
+msgid "Page files as with `more' and `less'"
+msgstr "A less nevû program GNOME-os változata"
+
+#: mini-utils/gfontsel/gfontsel.desktop.in.h:2
+msgid "Select a font for pasting"
+msgstr "GNOME segédprogram egy betûkészlet kiválasztásához"
+
+#: mini-utils/gcolorsel/gcolorsel.desktop.in.h:1
+msgid "Browse available X11 colors."
+msgstr "GNOME segédprogram egy szín kiválasztásához"
+
+#: mini-utils/gcolorsel/gcolorsel.desktop.in.h:2
+msgid "Color Browser"
+msgstr "GNOME Színválasztó"
+
+#: meat-grinder/meat-grinder.desktop.in.h:1
+#, fuzzy
+msgid "Archive Generator"
+msgstr "GNOME Archívumkészítõ"
+
+#: meat-grinder/meat-grinder.desktop.in.h:2
+#, fuzzy
+msgid "GNOME Archive Generator aka Meat Grinder"
+msgstr "GNOME Archívumkészítõ"
+
+#: logview/logview.desktop.in.h:1
+msgid "SysLog tool"
+msgstr ""
+
+#: logview/logview.desktop.in.h:2
+#, fuzzy
+msgid "System log monitor"
+msgstr "Válassz nézendõ naplót"
+
+#: gtt/gtt.desktop.in.h:1
+msgid "Time Tracker tool"
+msgstr "Gnome projektidõzítõ/idõmérõ"
+
+#: gtt/gtt.desktop.in.h:2
+msgid "Time tracking tool"
+msgstr "Projektidõzítõ"
+
+#: gstripchart/gstripchart_applet.desktop.in.h:1
+#, fuzzy
+msgid "Gstripchart"
+msgstr "gstripchart"
+
+#: gstripchart/gstripchart_applet.desktop.in.h:2
+#, fuzzy
+msgid "Shows a stripchart"
+msgstr "Stripchart"
+
+#: gsearchtool/gsearchtool.desktop.in.h:1
+#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
+msgid "GNOME Search Tool"
+msgstr "GNOME keresõ"
+
+#: gdiskfree/gdiskfree.desktop.in.h:1
+#, fuzzy
+msgid "GNOME DiskFree"
+msgstr "GDiskFree"
+
+#: gdiskfree/gdiskfree.desktop.in.h:2
+msgid "Show free space on mounted file systems using dials."
+msgstr ""
+
+#: gcharmap/gcharmap.desktop.in.h:1
+#, fuzzy
+msgid "GNOME Character Map"
+msgstr "Gnome karaktertábla"
+
+#: gcalc/gcalc.desktop.in.h:1
+msgid "Simple Calculator"
+msgstr "Számológép"
+
+#: cromagnon/Cromagnon.desktop.in.h:1
+msgid "Personal cron manager"
+msgstr "Crontab-szerkesztõ"
+
+#: cromagnon/Cromagnon.desktop.in.h:2
+msgid "Personal crontab manager"
+msgstr "Az egyéni crontab-ot szerkesztheted vele könnyen"
+
+#~ msgid ""
+#~ "An error occured while reading the configuration file.\n"
+#~ "Shall I setup a new configuration?"
+#~ msgstr ""
+#~ "Hiba történt a konfigurációs fájl olvasása közben.\n"
+#~ "Beállíthatok egy új konfigurációt?"
+
+#~ msgid "Could not write the configuration file!"
+#~ msgstr "Nem sikerült írni a konfigurációs fájlt!"
+
+#~ msgid "Time tracking tool for GNOME"
+#~ msgstr "Idõkövetõ a GNOME-hoz"
+
+#~ msgid ""
+#~ "This will overwrite your current set of projects.\n"
+#~ "Do you really want to reload the configuration file?"
+#~ msgstr ""
+#~ "Felül fogod írni a jelenlegi projektek listáját.\n"
+#~ "Tényleg újra akarod tölteni a konfigurációs fájlt?"
+
+#~ msgid "Timeout in secs:"
+#~ msgstr "Idõtúllépés másodpercekben:"
+
+#~ msgid "New Task"
+#~ msgstr "Új feladat"
+
+#, fuzzy
+#~ msgid "Memo:"
+#~ msgstr "Memória"
+
+#~ msgid "Task Properties"
+#~ msgstr "Feladat beállításai"
+
+#~ msgid "<html><body><h1>Error 404 Not Found</h1>The file "
+#~ msgstr "<html><body><h1>404 hiba: nem található</h1>A fájl "
+
+#~ msgid " was not found. </body></html>"
+#~ msgstr " nem található. </body></html>"
+
+#~ msgid "<html><body><h1>Unkown Error</h1>"
+#~ msgstr "<html><body><h1>Ismeretlen hiba</h1>"
+
 #~ msgid "Project Time today:"
 #~ msgstr "Projekt idõ ma:"
 
@@ -4223,9 +5069,6 @@ msgstr ""
 
 #~ msgid "ASCII code:"
 #~ msgstr "ASCII kód:"
-
-#~ msgid "Cancel"
-#~ msgstr "Mégsem"
 
 #~ msgid "OK"
 #~ msgstr "OK"
@@ -4284,9 +5127,6 @@ msgstr ""
 
 #~ msgid "window1"
 #~ msgstr "window1"
-
-#~ msgid "_Save..."
-#~ msgstr "_Mentés..."
 
 #~ msgid "Write information to disk"
 #~ msgstr "Az információk lemezre írása"
@@ -4352,9 +5192,6 @@ msgstr ""
 #~ msgid "Params"
 #~ msgstr "Paraméterek"
 
-#~ msgid "gstripchart"
-#~ msgstr "gstripchart"
-
 #~ msgid "Stripchart Viewer"
 #~ msgstr "Stripchart Nézegetõ"
 
@@ -4394,9 +5231,6 @@ msgstr ""
 #~ msgid "black"
 #~ msgstr "fekete"
 
-#~ msgid "red"
-#~ msgstr "vörös"
-
 #~ msgid "yellow"
 #~ msgstr "sárga"
 
@@ -4433,9 +5267,6 @@ msgstr ""
 #~ msgid "ppp"
 #~ msgstr "ppp"
 
-#~ msgid "Hide calendar"
-#~ msgstr "Naptár elrejtése"
-
 #~ msgid ""
 #~ "Linux Native (ext2)\n"
 #~ "Dos (FAT)\n"
@@ -4453,103 +5284,3 @@ msgstr ""
 #~ "High Density 5.25\" (1.2 MB)\n"
 #~ "Double Density 3.5\" (720 KB)\n"
 #~ "Double Density 5.25\" (360 KB)\n"
-
-#: stripchart/stripchart.desktop.in:3
-msgid "Stripchart Plotter"
-msgstr "Statisztika-plotter"
-
-#: notepad/Notepad.desktop.in:3
-msgid "Notepad"
-msgstr "Notesz"
-
-#: notepad/Notepad.desktop.in:4
-msgid "Simple editor (notepad)"
-msgstr "GNOME Notesz"
-
-#: mini-utils/gw/gw.desktop.in:3
-msgid "User Listing"
-msgstr "Felhasználó-listázás"
-
-#: mini-utils/gw/gw.desktop.in:4
-msgid "View users on the system"
-msgstr "Kilistázza az éppen bejelentkezett felhasználókat"
-
-#: mini-utils/guname/guname.desktop.in:3
-msgid "System Info"
-msgstr "Rendszerinformációk"
-
-#: mini-utils/guname/guname.desktop.in:4
-msgid "Technical information about this computer"
-msgstr "A rendszereddel kapcsolatban kaphatsz információt"
-
-#: mini-utils/gshutdown/gshutdown.desktop.in:3
-msgid "Shut Down or Reboot"
-msgstr "Kikapcsol vagy újraindít"
-
-#: mini-utils/gshutdown/gshutdown.desktop.in:4
-msgid "Turn off or reset the computer"
-msgstr "Alkalmazás a géped lelövéséhez"
-
-#: mini-utils/grun/grun.desktop.in:3
-msgid "Run A Command..."
-msgstr "Program futtatása..."
-
-#: mini-utils/grun/grun.desktop.in:4
-msgid "Ask for a command to execute"
-msgstr "Program futtatása"
-
-#: mini-utils/gpenguin/gpenguin.desktop.in:3
-msgid "GNOME Penguin"
-msgstr "GNOME Pingvin"
-
-#: mini-utils/gpenguin/gpenguin.desktop.in:4
-msgid "Let a cute pinguin chase your pointer"
-msgstr "Egy egeredet kergetõ pingvin"
-
-#: mini-utils/gnome-run/gnome-run.desktop.in:3
-msgid "Run program..."
-msgstr "Program futtatása..."
-
-#: mini-utils/gnome-run/gnome-run.desktop.in:4
-msgid "Prompts the user for a program to run"
-msgstr "Program futtatása"
-
-#: mini-utils/gless/gless.desktop.in:4
-msgid "Page files as with `more' and `less'"
-msgstr "A less nevû program GNOME-os változata"
-
-#: mini-utils/gfontsel/gfontsel.desktop.in:4
-msgid "Select a font for pasting"
-msgstr "GNOME segédprogram egy betûkészlet kiválasztásához"
-
-#: mini-utils/gcolorsel/gcolorsel.desktop.in:3
-msgid "Color Browser"
-msgstr "GNOME Színválasztó"
-
-#: mini-utils/gcolorsel/gcolorsel.desktop.in:4
-msgid "Browse available X11 colors."
-msgstr "GNOME segédprogram egy szín kiválasztásához"
-
-#: gtt/gtt.desktop.in:3
-msgid "Time tracking tool"
-msgstr "Projektidõzítõ"
-
-#: gtt/gtt.desktop.in:4
-msgid "Time Tracker tool"
-msgstr "Gnome projektidõzítõ/idõmérõ"
-
-#: gsearchtool/gsearchtool.desktop.in:3
-msgid "GNOME Search Tool"
-msgstr "GNOME keresõ"
-
-#: gcalc/gcalc.desktop.in:3
-msgid "Simple Calculator"
-msgstr "Számológép"
-
-#: cromagnon/Cromagnon.desktop.in:3
-msgid "Personal cron manager"
-msgstr "Crontab-szerkesztõ"
-
-#: cromagnon/Cromagnon.desktop.in:4
-msgid "Personal crontab manager"
-msgstr "Az egyéni crontab-ot szerkesztheted vele könnyen"

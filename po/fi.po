@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2001-10-27 23:51+0300\n"
+"POT-Creation-Date: 2001-11-30 16:14-0600\n"
 "PO-Revision-Date: 2001-08-13 11:20+0200\n"
 "Last-Translator: Antti Ahvensalmi <aahven@mbnet.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -820,12 +820,12 @@ msgid "Show Command"
 msgstr "Näytä Komento"
 
 #: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
-#: gtt/ghtml.c:94 gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
+#: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Aloita"
 
-#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:94
-#: gtt/ghtml.c:265 gtt/glade/interval_edit.glade.h:13
+#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:95
+#: gtt/ghtml.c:270 gtt/glade/interval_edit.glade.h:13
 msgid "Stop"
 msgstr "Pysäytä"
 
@@ -912,12 +912,14 @@ msgid "Total time spent on this project."
 msgstr "Projektille annettava nimi"
 
 #: gtt/ctree.c:518
-msgid "This Memo"
-msgstr "Tämä huomautus"
+#, fuzzy
+msgid "Entry"
+msgstr "Merkinnän loppu:"
 
 #: gtt/ctree.c:520
-msgid "Time spent under the current task memo."
-msgstr ""
+#, fuzzy
+msgid "Time spent under the current diary entry."
+msgstr "Projektille annettava nimi"
 
 #: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
@@ -957,22 +959,22 @@ msgstr ""
 msgid "Title"
 msgstr "Tiedosto"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:144
+#: gtt/ctree.c:558 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Projektin nimi"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Kuvaus"
 
-#: gtt/ctree.c:569
-msgid "Task"
-msgstr "Tehtävä"
+#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+msgid "Diary Entry"
+msgstr ""
 
 #: gtt/ctree.c:571
 #, fuzzy
-msgid "The memo for the current task"
-msgstr "Näytä tämänhetkisen tehtävän aika"
+msgid "The current diary entry"
+msgstr "Sulje tämänhetkinen dokumentti"
 
 #: gtt/ctree.c:578
 #, fuzzy
@@ -1089,114 +1091,115 @@ msgstr "projekti %t pysäytetty"
 msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
 
-#: gtt/ghtml.c:94 gtt/ghtml.c:219
-msgid "Memo"
-msgstr "Huomautus"
-
-#: gtt/ghtml.c:94 gtt/ghtml.c:268
+#: gtt/ghtml.c:95 gtt/ghtml.c:273
 msgid "Elapsed"
 msgstr "Kulunut"
 
-#: gtt/ghtml.c:112 gtt/ghtml.c:364
+#: gtt/ghtml.c:113 gtt/ghtml.c:369 gtt/ghtml.c:378
 msgid "(empty)"
 msgstr "(tyhjä)"
 
-#: gtt/ghtml.c:224
+#: gtt/ghtml.c:225
+#, fuzzy
+msgid "Notes"
+msgstr "Muistiinpanoja:"
+
+#: gtt/ghtml.c:229
 msgid "Task Time"
 msgstr "Tehtäväaika"
 
-#: gtt/ghtml.c:228
+#: gtt/ghtml.c:233
 msgid "Bill Status"
 msgstr "Laskun tila"
 
-#: gtt/ghtml.c:232 gtt/ghtml.c:396 gtt/glade/task_properties.glade.h:4
+#: gtt/ghtml.c:237 gtt/ghtml.c:408 gtt/glade/task_properties.glade.h:4
 msgid "Billable"
 msgstr "Laskutettava"
 
-#: gtt/ghtml.c:236
+#: gtt/ghtml.c:241
 msgid "Bill Rate"
 msgstr "Laskutustahti"
 
-#: gtt/ghtml.c:240 mini-utils/gcolorsel/view-color-list.c:197
+#: gtt/ghtml.c:245 mini-utils/gcolorsel/view-color-list.c:197
 #: mini-utils/guname/moreinfo.c:227
 msgid "Value"
 msgstr "Arvo"
 
-#: gtt/ghtml.c:244
+#: gtt/ghtml.c:249
 msgid "Billable Value"
 msgstr "Lasku"
 
-#: gtt/ghtml.c:248 gtt/ghtml.c:274
+#: gtt/ghtml.c:253 gtt/ghtml.c:279
 msgid "No Default Value"
 msgstr "Oletus"
 
-#: gtt/ghtml.c:271
+#: gtt/ghtml.c:276
 #, fuzzy
 msgid "Start Time Fuzziness"
 msgstr "Aloita aikasähellys"
 
-#: gtt/ghtml.c:380 gtt/glade/task_properties.glade.h:11
+#: gtt/ghtml.c:392 gtt/glade/task_properties.glade.h:13
 msgid "Hold"
 msgstr "Pysäytä"
 
-#: gtt/ghtml.c:383 gtt/glade/task_properties.glade.h:3
+#: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:3
 msgid "Bill"
 msgstr "Lasku"
 
-#: gtt/ghtml.c:386 gtt/glade/task_properties.glade.h:20
+#: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:21
 msgid "Paid"
 msgstr "Maksettu"
 
-#: gtt/ghtml.c:399 gtt/glade/task_properties.glade.h:16
+#: gtt/ghtml.c:411 gtt/glade/task_properties.glade.h:17
 msgid "Not Billable"
 msgstr "Ei laskutettava"
 
-#: gtt/ghtml.c:402 gtt/glade/task_properties.glade.h:15
+#: gtt/ghtml.c:414 gtt/glade/task_properties.glade.h:16
 msgid "No Charge"
 msgstr "Ei maksua"
 
-#: gtt/ghtml.c:412 gtt/glade/task_properties.glade.h:21
+#: gtt/ghtml.c:424 gtt/glade/task_properties.glade.h:22
 msgid "Regular"
 msgstr "Tavallinen"
 
-#: gtt/ghtml.c:415 gtt/glade/task_properties.glade.h:19
+#: gtt/ghtml.c:427 gtt/glade/task_properties.glade.h:20
 msgid "Overtime"
 msgstr "Yliaika"
 
-#: gtt/ghtml.c:418
+#: gtt/ghtml.c:430
 msgid "Double Overtime"
 msgstr "Tuplayliaika"
 
-#: gtt/ghtml.c:421 gtt/glade/task_properties.glade.h:10
+#: gtt/ghtml.c:433 gtt/glade/task_properties.glade.h:12
 msgid "Flat Fee"
 msgstr "Tasainen"
 
-#: gtt/ghtml.c:441
+#: gtt/ghtml.c:453
 msgid "Error - Unknown"
 msgstr "Virhe - Tuntematon"
 
-#: gtt/ghtml.c:686
+#: gtt/ghtml.c:703
 msgid "unknown token: >>>>"
 msgstr "tuntematon merkki: >>>>"
 
-#: gtt/journal.c:107
+#: gtt/journal.c:108
 msgid "Error 404 Not Found"
 msgstr "Error 404 Not Found"
 
-#: gtt/journal.c:109
+#: gtt/journal.c:110
 #, c-format
 msgid "The file %s was not found."
 msgstr "Tiedostoa %s ei löydy."
 
-#: gtt/journal.c:110
+#: gtt/journal.c:111
 msgid "(null)"
 msgstr "(null)"
 
-#: gtt/journal.c:119
+#: gtt/journal.c:120
 msgid "Unkown Error"
 msgstr "Tuntematon virhe"
 
-#: gtt/journal.c:168 gtt/plug-in.c:90
+#: gtt/journal.c:169 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1205,12 +1208,12 @@ msgstr ""
 "Ei voida avata tiedostoa %s\n"
 "%s"
 
-#: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1527 gtt/proj.c:1647
-#: gtt/proj.c:1787
-msgid "New Task"
-msgstr "Uusi tehtävä"
+#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/proj.c:1807
+msgid "New Diary Entry"
+msgstr ""
 
-#: gtt/journal.c:421
+#: gtt/journal.c:436
 msgid "Save HTML To File"
 msgstr "Tallenna HTML tiedostoon"
 
@@ -1275,38 +1278,40 @@ msgstr "Valitse projekti käynnistettäessä"
 msgid "PROJECT"
 msgstr "PROJEKTI"
 
-#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Varoitus"
 
 #: gtt/menucmd.c:85
-msgid "Time tracking tool for GNOME"
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
 msgstr ""
-"GNOME:n ajanhallintatyökalu.\n"
-"Suomennos: http://gnome-fi.sourceforge.net/"
 
-#: gtt/menucmd.c:138
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Uusi projekti..."
 
-#: gtt/menucmd.c:220 gtt/toolbar.c:167
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Lataa asetustiedosto uudelleen"
 
-#: gtt/menucmd.c:221
+#: gtt/menucmd.c:225
 msgid "Do you really want to reload the configuration file?"
 msgstr "Haluatko todellakin lukea asetustiedoston uudelleen?"
 
-#: gtt/menucmd.c:256
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr "Tiedosto %s on olemassa, korvataan?"
 
-#: gtt/menucmd.c:267
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr "Tiedostoon ei voida kirjoittaa."
 
-#: gtt/menucmd.c:287
+#: gtt/menucmd.c:291
 msgid "Export Current State"
 msgstr "Vie nykyinen tila"
 
@@ -1343,8 +1348,8 @@ msgid "Show the timesheet journal for this project"
 msgstr ""
 
 #: gtt/menus.c:72 gtt/menus.c:160
-msgid "New _Task..."
-msgstr "Uusi _tehtävä..."
+msgid "New Diary _Entry"
+msgstr ""
 
 #: gtt/menus.c:73 gtt/menus.c:161
 msgid "Change the current task for this project"
@@ -1599,11 +1604,13 @@ msgid "Edit the Start & Stop Times"
 msgstr "Muokkaa aloitus- ja lopetusaikoja"
 
 #: gtt/glade/interval_popup.glade.h:5
-msgid "Insert Memo"
-msgstr "Lisää huomautus"
+#, fuzzy
+msgid "Insert Diary Entry"
+msgstr "_Lisää loppuun"
 
 #: gtt/glade/interval_popup.glade.h:6
-msgid "Insert a new memo above this time interval."
+#, fuzzy
+msgid "Insert a new diary entry above this time interval."
 msgstr "Lisää uusi huomautus tämän viiveen yläpuolelle."
 
 #: gtt/glade/interval_popup.glade.h:7
@@ -1623,11 +1630,12 @@ msgid "Merge Up"
 msgstr "Liitä ylös"
 
 #: gtt/glade/interval_popup.glade.h:11
-msgid "Paste Memo"
-msgstr "Liitä huomautus"
+msgid "Paste Diary Entry"
+msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:7
-msgid "Paste a previously cut memo."
+#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+#, fuzzy
+msgid "Paste a previously cut diary entry."
 msgstr "Liitä aikaisemmin leikattu huomautus."
 
 #: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
@@ -1659,6 +1667,12 @@ msgstr "Tallenna tiedosto"
 #: gtt/glade/not-implemented.glade.h:1
 msgid "Information"
 msgstr "Tietoa"
+
+#: gtt/glade/not-implemented.glade.h:2
+msgid ""
+"This function is not yet implemented!\n"
+"Coming Soon, I hope!"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:1
 msgid "Display"
@@ -1695,8 +1709,8 @@ msgid ""
 "Entry that will be logged when the project stops.  Use %t for the porject "
 "title, %d for the project description, etc. See the manual for more options."
 msgstr ""
-"Viesti, joka kirjataan lokiin kun projekti loppuu. Käytä %s:tä otsikkoon, "
-"%d:tä kuvaukseen ja niin edelleen. Katso ohjekirjasta lisätietoja."
+"Viesti, joka kirjataan lokiin kun projekti loppuu. Käytä %s:tä otsikkoon, %d:"
+"tä kuvaukseen ja niin edelleen. Katso ohjekirjasta lisätietoja."
 
 #: gtt/glade/prefs.glade.h:10
 msgid "Fields"
@@ -1743,7 +1757,8 @@ msgid "Shell Commands"
 msgstr "Ajettavat komennot"
 
 #: gtt/glade/prefs.glade.h:21
-msgid "Show Current Task"
+#, fuzzy
+msgid "Show Current Diary Entry"
 msgstr "Näytä nykyinen tehtävä"
 
 #: gtt/glade/prefs.glade.h:22
@@ -1800,7 +1815,8 @@ msgid "Show Table Header"
 msgstr "Näytä taulukon otsake"
 
 #: gtt/glade/prefs.glade.h:35
-msgid "Show Time For The Current Task"
+#, fuzzy
+msgid "Show Time For The Current Diary Entry"
 msgstr "Näytä tämänhetkisen tehtävän aika"
 
 #: gtt/glade/prefs.glade.h:36
@@ -1996,9 +2012,9 @@ msgid "Importance:"
 msgstr "Tärkeys: "
 
 #: gtt/glade/project_properties.glade.h:22
+#, fuzzy
 msgid ""
-"Internal notes about the project, memos that will not be printed on an "
-"invoice."
+"Internal notes about the project that will not be printed on an invoice."
 msgstr "Projektiin liittyviä sisäisiä huomautuksia, mitä ei tulosteta laskuun."
 
 #: gtt/glade/project_properties.glade.h:23
@@ -2022,7 +2038,7 @@ msgid "Not Set"
 msgstr "Ei asetettu"
 
 #: gtt/glade/project_properties.glade.h:30
-#: gtt/glade/task_properties.glade.h:17
+#: gtt/glade/task_properties.glade.h:18
 msgid "Notes:"
 msgstr "Muistiinpanoja:"
 
@@ -2101,40 +2117,55 @@ msgid "seconds"
 msgstr "sekuntia"
 
 #: gtt/glade/task_popup.glade.h:1
-msgid "Delete _Memo"
-msgstr "Poista _huomautus"
+#, fuzzy
+msgid "Add a new time interval"
+msgstr "Lisää uusi huomautus tämän viiveen yläpuolelle."
 
 #: gtt/glade/task_popup.glade.h:2
 msgid "Delete _Times"
 msgstr "Poista _ajat"
 
 #: gtt/glade/task_popup.glade.h:3
-msgid "Delete the memo only, keep the time intervals"
+#, fuzzy
+msgid "Delete the diary entry only, keep the time intervals"
 msgstr "Poista vain huomautus, säilytä viiveet"
 
 #: gtt/glade/task_popup.glade.h:4
-msgid "Delete the memo, and the time intervals below it."
+#, fuzzy
+msgid "Delete the diary entry, and the time intervals below it."
 msgstr "Poista huomautus ja siihen liittyvät viiveet."
 
 #: gtt/glade/task_popup.glade.h:5
-msgid "Edit the memo and othr task properties."
+#, fuzzy
+msgid "Edit the diary entry and other task properties."
 msgstr "Muokkaa huomautusta ja muita tehtävän ominaisuuksia."
 
 #: gtt/glade/task_popup.glade.h:6
-msgid "Insert a new memo above this one."
+#, fuzzy
+msgid "Insert a new diary entry above this one."
 msgstr "Lisää uusi huomautus tämän yläpuolelle."
 
-#: gtt/glade/task_popup.glade.h:8
-msgid "_Edit Memo"
-msgstr "_Muokkaa huomautusta"
+#: gtt/glade/task_popup.glade.h:7
+#, fuzzy
+msgid "New Time Interval"
+msgstr "Poista tämä viive"
 
 #: gtt/glade/task_popup.glade.h:9
-msgid "_New Memo"
-msgstr "_Uusi huomautus"
+#, fuzzy
+msgid "_Delete Diary Entry"
+msgstr "Poista mittari"
 
 #: gtt/glade/task_popup.glade.h:10
-msgid "_Paste Memo"
-msgstr "_Liitä huomautus"
+msgid "_Edit Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:11
+msgid "_New Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:12
+msgid "_Paste Diary Entry"
+msgstr ""
 
 #: gtt/glade/task_properties.glade.h:1
 #, fuzzy
@@ -2162,10 +2193,19 @@ msgid "Billing Status:"
 msgstr "Laskutustila:"
 
 #: gtt/glade/task_properties.glade.h:9
+#, fuzzy
+msgid "Diary Entry Properties"
+msgstr "Ominaisuudet"
+
+#: gtt/glade/task_properties.glade.h:10
+msgid "Diary Entry:"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:11
 msgid "Fee rate to be charged for this task."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:12
+#: gtt/glade/task_properties.glade.h:14
 msgid ""
 "How should this task be billed?  \"Billable\" means bill to the customer in "
 "the normal fashion.   \"Not Billable\" means we can't ask for money for "
@@ -2173,24 +2213,16 @@ msgid ""
 "as 'free/no-charge'."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:13
+#: gtt/glade/task_properties.glade.h:15
 msgid ""
 "Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
 "not yet, needs review.   \"Bill\" means print this on the next invoice.   "
 "\"Paid\" means that it should no longer be included on invoices."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:14
-msgid "Memo:"
-msgstr "Huomautus:"
-
-#: gtt/glade/task_properties.glade.h:18
+#: gtt/glade/task_properties.glade.h:19
 msgid "OverOver"
 msgstr "YliYli"
-
-#: gtt/glade/task_properties.glade.h:22
-msgid "Task Properties"
-msgstr "Tehtävän ominaisuudet"
 
 #: gtt/glade/task_properties.glade.h:23
 msgid ""
@@ -2215,9 +2247,9 @@ msgid ""
 msgstr ""
 "Tämä ohjelma on osa Linuxin GNOME-työpöytäympäristöä. Lokiselaimen käyttö "
 "tapahtuu täysin omalla vastuulla, MINKÄÄNLAISTA takuuta ei ole. Lokiselain "
-"on vapaa ohjelmisto, ja sitä saa levittää GNU General Public "
-"License-lisenssin sääntöjen mukaisesti. Kuvake on Tuomas Kuosmasen (alias "
-"tigert) työtä.\n"
+"on vapaa ohjelmisto, ja sitä saa levittää GNU General Public License-"
+"lisenssin sääntöjen mukaisesti. Kuvake on Tuomas Kuosmasen (alias tigert) "
+"työtä.\n"
 "Suomennos: http://gnome-fi.sourceforge.net/"
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
@@ -2639,6 +2671,51 @@ msgstr "Kuvaus:"
 #: logview/zoom.c:212
 msgid "%B %e %X"
 msgstr "%B %e"
+
+#.
+#. * 	-------------------
+#. * 	     Defines
+#. * 	-------------------
+#.
+#: logview/config.c:34
+msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:35
+msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:36
+msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
+
+#: logview/config.c:37
+msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
+
+#: logview/config.c:39
+msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
+
+#: logview/config.c:40
+msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
+
+#: logview/config.c:41
+msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:42
+msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:43
+msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
+
+#: logview/config.c:44
+msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
 
 #: logview/desc_db.c:37
 #, c-format
@@ -3340,7 +3417,9 @@ msgstr "Näytä tiedosto tasavälisellä kirjasinlajilla"
 msgid "Text File Viewer"
 msgstr "gless"
 
-#: mini-utils/gless/gless.c:446
+#: mini-utils/gless/gless.c:446 mini-utils/gshutdown/gshutdown.c:30
+#: mini-utils/guname/guname.c:43 mini-utils/gw/gw.c:29
+#: mini-utils/idetool/idetool.c:11
 msgid "Copyright 1998, under the GNU General Public License."
 msgstr "Copyright 1998, GNU GPL:n alla."
 
@@ -3648,6 +3727,9 @@ msgstr "Oletko varma?"
 msgid "Address to mail to:"
 msgstr "Osoite johon lähetetään:"
 
+#. ***********************************
+#. Globals
+#. **********************************
 #: mini-utils/guname/info.c:40
 msgid "Distribution:"
 msgstr "Jakelu:"
@@ -3757,10 +3839,12 @@ msgid "Kilobytes"
 msgstr "Kilotavua"
 
 #: mini-utils/guname/moreinfo.c:186
+#, c-format
 msgid "%ld%% memory used."
 msgstr "%ld%% muistia käytössä."
 
 #: mini-utils/guname/moreinfo.c:197
+#, c-format
 msgid "%ld%% swap used."
 msgstr "%ld%% sivutustilaa käytössä"
 
@@ -3804,6 +3888,7 @@ msgstr ""
 "%ld megatavua, %ld vapaana (%ld pääkäyttäjälle); %ld inodea, %ld vapaana."
 
 #: mini-utils/guname/moreinfo.c:353
+#, c-format
 msgid "%2d%% full "
 msgstr "%2d%% täynnä "
 
@@ -4854,6 +4939,54 @@ msgstr "Henkilökohtainen cron-hallinta"
 msgid "Personal crontab manager"
 msgstr "Henkilökohtainen crontab-hallinta"
 
+#~ msgid "This Memo"
+#~ msgstr "Tämä huomautus"
+
+#~ msgid "Task"
+#~ msgstr "Tehtävä"
+
+#, fuzzy
+#~ msgid "The memo for the current task"
+#~ msgstr "Näytä tämänhetkisen tehtävän aika"
+
+#~ msgid "Memo"
+#~ msgstr "Huomautus"
+
+#~ msgid "New Task"
+#~ msgstr "Uusi tehtävä"
+
+#~ msgid "Time tracking tool for GNOME"
+#~ msgstr ""
+#~ "GNOME:n ajanhallintatyökalu.\n"
+#~ "Suomennos: http://gnome-fi.sourceforge.net/"
+
+#~ msgid "New _Task..."
+#~ msgstr "Uusi _tehtävä..."
+
+#~ msgid "Insert Memo"
+#~ msgstr "Lisää huomautus"
+
+#~ msgid "Paste Memo"
+#~ msgstr "Liitä huomautus"
+
+#~ msgid "Delete _Memo"
+#~ msgstr "Poista _huomautus"
+
+#~ msgid "_Edit Memo"
+#~ msgstr "_Muokkaa huomautusta"
+
+#~ msgid "_New Memo"
+#~ msgstr "_Uusi huomautus"
+
+#~ msgid "_Paste Memo"
+#~ msgstr "_Liitä huomautus"
+
+#~ msgid "Memo:"
+#~ msgstr "Huomautus:"
+
+#~ msgid "Task Properties"
+#~ msgstr "Tehtävän ominaisuudet"
+
 #~ msgid "Estimated End Date"
 #~ msgstr "Arvioitu loppupäivä"
 
@@ -4870,33 +5003,3 @@ msgstr "Henkilökohtainen crontab-hallinta"
 
 #~ msgid "Importance"
 #~ msgstr "Tärkeys"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"

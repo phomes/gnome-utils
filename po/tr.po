@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-11-05 06:14-0500\n"
+"POT-Creation-Date: 2001-11-30 16:14-0600\n"
 "PO-Revision-Date: 2001-11-05 19:36+0300\n"
 "Last-Translator: Görkem Çetin <gorkem@gelecek.com.tr>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
@@ -813,12 +813,12 @@ msgid "Show Command"
 msgstr "Komutu Göster"
 
 #: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
-#: gtt/ghtml.c:94 gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
+#: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Baþla"
 
-#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:94
-#: gtt/ghtml.c:265 gtt/glade/interval_edit.glade.h:13
+#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:95
+#: gtt/ghtml.c:270 gtt/glade/interval_edit.glade.h:13
 msgid "Stop"
 msgstr "Dur"
 
@@ -902,12 +902,14 @@ msgid "Total time spent on this project."
 msgstr "Bu projede geçirilen toplam süre"
 
 #: gtt/ctree.c:518
-msgid "This Memo"
-msgstr ""
+#, fuzzy
+msgid "Entry"
+msgstr "Bitiþ birimi:"
 
 #: gtt/ctree.c:520
-msgid "Time spent under the current task memo."
-msgstr ""
+#, fuzzy
+msgid "Time spent under the current diary entry."
+msgstr "Projede bugün geçirilen toplam süre"
 
 #: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
@@ -945,21 +947,22 @@ msgstr ""
 msgid "Title"
 msgstr "Baþlýk"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:144
+#: gtt/ctree.c:558 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Proje ismi"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Açýklama"
 
-#: gtt/ctree.c:569
-msgid "Task"
+#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+msgid "Diary Entry"
 msgstr ""
 
 #: gtt/ctree.c:571
-msgid "The memo for the current task"
-msgstr ""
+#, fuzzy
+msgid "The current diary entry"
+msgstr "Mevcut belgeyi kapat"
 
 #: gtt/ctree.c:578
 msgid "Estimated Project Start Date"
@@ -980,7 +983,8 @@ msgid "Due"
 msgstr ""
 
 #: gtt/ctree.c:592
-msgid "Due Date: the date by which the project absolutely must be completed by."
+msgid ""
+"Due Date: the date by which the project absolutely must be completed by."
 msgstr ""
 
 #: gtt/ctree.c:599 mini-utils/guname/info.c:61
@@ -1074,124 +1078,124 @@ msgstr "proje %t bitirildi"
 msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
 
-#: gtt/ghtml.c:94 gtt/ghtml.c:219
-#, fuzzy
-msgid "Memo"
-msgstr "Bellek"
-
-#: gtt/ghtml.c:94 gtt/ghtml.c:268
+#: gtt/ghtml.c:95 gtt/ghtml.c:273
 msgid "Elapsed"
 msgstr "Tahmini"
 
-#: gtt/ghtml.c:112 gtt/ghtml.c:364
+#: gtt/ghtml.c:113 gtt/ghtml.c:369 gtt/ghtml.c:378
 msgid "(empty)"
 msgstr "(boþ)"
 
-#: gtt/ghtml.c:224
+#: gtt/ghtml.c:225
+#, fuzzy
+msgid "Notes"
+msgstr "Notlar:"
+
+#: gtt/ghtml.c:229
 msgid "Task Time"
 msgstr "Görev Süresi"
 
-#: gtt/ghtml.c:228
+#: gtt/ghtml.c:233
 #, fuzzy
 msgid "Bill Status"
 msgstr "Durum"
 
-#: gtt/ghtml.c:232 gtt/ghtml.c:396 gtt/glade/task_properties.glade.h:4
+#: gtt/ghtml.c:237 gtt/ghtml.c:408 gtt/glade/task_properties.glade.h:4
 #, fuzzy
 msgid "Billable"
 msgstr "Kapalý"
 
-#: gtt/ghtml.c:236
+#: gtt/ghtml.c:241
 #, fuzzy
 msgid "Bill Rate"
 msgstr "Kapalý"
 
-#: gtt/ghtml.c:240 mini-utils/gcolorsel/view-color-list.c:197
+#: gtt/ghtml.c:245 mini-utils/gcolorsel/view-color-list.c:197
 #: mini-utils/guname/moreinfo.c:227
 msgid "Value"
 msgstr "Deðer"
 
-#: gtt/ghtml.c:244
+#: gtt/ghtml.c:249
 #, fuzzy
 msgid "Billable Value"
 msgstr "Kapalý"
 
-#: gtt/ghtml.c:248 gtt/ghtml.c:274
+#: gtt/ghtml.c:253 gtt/ghtml.c:279
 #, fuzzy
 msgid "No Default Value"
 msgstr "Öntanýmlý"
 
-#: gtt/ghtml.c:271
+#: gtt/ghtml.c:276
 #, fuzzy
 msgid "Start Time Fuzziness"
 msgstr "Baþla"
 
-#: gtt/ghtml.c:380 gtt/glade/task_properties.glade.h:11
+#: gtt/ghtml.c:392 gtt/glade/task_properties.glade.h:13
 #, fuzzy
 msgid "Hold"
 msgstr "Katý"
 
-#: gtt/ghtml.c:383 gtt/glade/task_properties.glade.h:3
+#: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:3
 #, fuzzy
 msgid "Bill"
 msgstr "Kapalý"
 
-#: gtt/ghtml.c:386 gtt/glade/task_properties.glade.h:20
+#: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:21
 msgid "Paid"
 msgstr ""
 
-#: gtt/ghtml.c:399 gtt/glade/task_properties.glade.h:16
+#: gtt/ghtml.c:411 gtt/glade/task_properties.glade.h:17
 msgid "Not Billable"
 msgstr ""
 
-#: gtt/ghtml.c:402 gtt/glade/task_properties.glade.h:15
+#: gtt/ghtml.c:414 gtt/glade/task_properties.glade.h:16
 msgid "No Charge"
 msgstr ""
 
-#: gtt/ghtml.c:412 gtt/glade/task_properties.glade.h:21
+#: gtt/ghtml.c:424 gtt/glade/task_properties.glade.h:22
 #, fuzzy
 msgid "Regular"
 msgstr "Yeniden yükle"
 
-#: gtt/ghtml.c:415 gtt/glade/task_properties.glade.h:19
+#: gtt/ghtml.c:427 gtt/glade/task_properties.glade.h:20
 msgid "Overtime"
 msgstr ""
 
-#: gtt/ghtml.c:418
+#: gtt/ghtml.c:430
 msgid "Double Overtime"
 msgstr ""
 
-#: gtt/ghtml.c:421 gtt/glade/task_properties.glade.h:10
+#: gtt/ghtml.c:433 gtt/glade/task_properties.glade.h:12
 #, fuzzy
 msgid "Flat Fee"
 msgstr "Kaygan"
 
-#: gtt/ghtml.c:441
+#: gtt/ghtml.c:453
 msgid "Error - Unknown"
 msgstr "Hata - Bilinmiyor"
 
-#: gtt/ghtml.c:686
+#: gtt/ghtml.c:703
 msgid "unknown token: >>>>"
 msgstr ""
 
-#: gtt/journal.c:107
+#: gtt/journal.c:108
 msgid "Error 404 Not Found"
 msgstr "404 Hatasý: Bulunamadý"
 
-#: gtt/journal.c:109
+#: gtt/journal.c:110
 #, c-format
 msgid "The file %s was not found."
 msgstr "%s dosyasý bulunamadý"
 
-#: gtt/journal.c:110
+#: gtt/journal.c:111
 msgid "(null)"
 msgstr "(boþ)"
 
-#: gtt/journal.c:119
+#: gtt/journal.c:120
 msgid "Unkown Error"
 msgstr "Bilinmeyen Hata"
 
-#: gtt/journal.c:168 gtt/plug-in.c:90
+#: gtt/journal.c:169 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1200,12 +1204,12 @@ msgstr ""
 "%s dosyasý açýlamadý\n"
 "%s"
 
-#: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1527 gtt/proj.c:1647
-#: gtt/proj.c:1787
-msgid "New Task"
-msgstr "Yeni Görev"
+#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/proj.c:1807
+msgid "New Diary Entry"
+msgstr ""
 
-#: gtt/journal.c:421
+#: gtt/journal.c:436
 msgid "Save HTML To File"
 msgstr "HTML'i Dosyaya Kaydet"
 
@@ -1269,36 +1273,40 @@ msgstr "Baþlarken bir proje seçin"
 msgid "PROJECT"
 msgstr "PROJE"
 
-#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Uyarý"
 
 #: gtt/menucmd.c:85
-msgid "Time tracking tool for GNOME"
-msgstr "GNOME için zaman izleme programý"
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
+msgstr ""
 
-#: gtt/menucmd.c:138
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Yeni Proje..."
 
-#: gtt/menucmd.c:220 gtt/toolbar.c:167
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Yapýlandýrma dosyasýný yeniden yükle"
 
-#: gtt/menucmd.c:221
+#: gtt/menucmd.c:225
 msgid "Do you really want to reload the configuration file?"
 msgstr "Gerçekten yapýldýrma dosyasýný yeniden yüklemek istiyor musunuz?"
 
-#: gtt/menucmd.c:256
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr "%s dosyasý zaten var, üzerine yazýlsýn mý?"
 
-#: gtt/menucmd.c:267
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr "Dosyaya yazýlamýyor"
 
-#: gtt/menucmd.c:287
+#: gtt/menucmd.c:291
 msgid "Export Current State"
 msgstr "Mevcut Durumu Aktar"
 
@@ -1335,8 +1343,8 @@ msgid "Show the timesheet journal for this project"
 msgstr ""
 
 #: gtt/menus.c:72 gtt/menus.c:160
-msgid "New _Task..."
-msgstr "Yeni _Görev..."
+msgid "New Diary _Entry"
+msgstr ""
 
 #: gtt/menus.c:73 gtt/menus.c:161
 msgid "Change the current task for this project"
@@ -1589,11 +1597,11 @@ msgstr "Saatý Baþlat/Durdur"
 
 #: gtt/glade/interval_popup.glade.h:5
 #, fuzzy
-msgid "Insert Memo"
-msgstr "Ekle"
+msgid "Insert Diary Entry"
+msgstr "_Sonuna ekle"
 
 #: gtt/glade/interval_popup.glade.h:6
-msgid "Insert a new memo above this time interval."
+msgid "Insert a new diary entry above this time interval."
 msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:7
@@ -1613,12 +1621,11 @@ msgid "Merge Up"
 msgstr "Yukarý Birleþtir"
 
 #: gtt/glade/interval_popup.glade.h:11
-#, fuzzy
-msgid "Paste Memo"
-msgstr "Yapýþtýr"
+msgid "Paste Diary Entry"
+msgstr ""
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:7
-msgid "Paste a previously cut memo."
+#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+msgid "Paste a previously cut diary entry."
 msgstr ""
 
 #: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
@@ -1737,7 +1744,8 @@ msgid "Shell Commands"
 msgstr "Kabuk Komutlarý"
 
 #: gtt/glade/prefs.glade.h:21
-msgid "Show Current Task"
+#, fuzzy
+msgid "Show Current Diary Entry"
 msgstr "Þimdiki Görevi Göster"
 
 #: gtt/glade/prefs.glade.h:22
@@ -1795,7 +1803,8 @@ msgid "Show Table Header"
 msgstr "Çizgiye baþlýðýný göster"
 
 #: gtt/glade/prefs.glade.h:35
-msgid "Show Time For The Current Task"
+#, fuzzy
+msgid "Show Time For The Current Diary Entry"
 msgstr "Þimdiki Görevin Zamanýný Göster"
 
 #: gtt/glade/prefs.glade.h:36
@@ -1985,8 +1994,7 @@ msgstr "Önem:"
 
 #: gtt/glade/project_properties.glade.h:22
 msgid ""
-"Internal notes about the project, memos that will not be printed on an "
-"invoice."
+"Internal notes about the project that will not be printed on an invoice."
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:23
@@ -2010,7 +2018,7 @@ msgid "Not Set"
 msgstr "Ayarlanmadý"
 
 #: gtt/glade/project_properties.glade.h:30
-#: gtt/glade/task_properties.glade.h:17
+#: gtt/glade/task_properties.glade.h:18
 msgid "Notes:"
 msgstr "Notlar:"
 
@@ -2089,8 +2097,8 @@ msgstr "saniye"
 
 #: gtt/glade/task_popup.glade.h:1
 #, fuzzy
-msgid "Delete _Memo"
-msgstr "Renk Sil"
+msgid "Add a new time interval"
+msgstr "Güncelleme aralýðý (ms)"
 
 #: gtt/glade/task_popup.glade.h:2
 #, fuzzy
@@ -2098,34 +2106,42 @@ msgid "Delete _Times"
 msgstr "Sil"
 
 #: gtt/glade/task_popup.glade.h:3
-msgid "Delete the memo only, keep the time intervals"
+msgid "Delete the diary entry only, keep the time intervals"
 msgstr ""
 
 #: gtt/glade/task_popup.glade.h:4
-msgid "Delete the memo, and the time intervals below it."
+msgid "Delete the diary entry, and the time intervals below it."
 msgstr ""
 
 #: gtt/glade/task_popup.glade.h:5
-msgid "Edit the memo and othr task properties."
+msgid "Edit the diary entry and other task properties."
 msgstr ""
 
 #: gtt/glade/task_popup.glade.h:6
-msgid "Insert a new memo above this one."
+msgid "Insert a new diary entry above this one."
 msgstr ""
 
-#: gtt/glade/task_popup.glade.h:8
-msgid "_Edit Memo"
-msgstr ""
+#: gtt/glade/task_popup.glade.h:7
+#, fuzzy
+msgid "New Time Interval"
+msgstr "Bu Aralýðý Sil"
 
 #: gtt/glade/task_popup.glade.h:9
 #, fuzzy
-msgid "_New Memo"
-msgstr "_Yeni Pencere"
+msgid "_Delete Diary Entry"
+msgstr "Parametreyi Sil"
 
 #: gtt/glade/task_popup.glade.h:10
-#, fuzzy
-msgid "_Paste Memo"
-msgstr "Yapýþtýr"
+msgid "_Edit Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:11
+msgid "_New Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:12
+msgid "_Paste Diary Entry"
+msgstr ""
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
@@ -2152,10 +2168,19 @@ msgid "Billing Status:"
 msgstr ""
 
 #: gtt/glade/task_properties.glade.h:9
+#, fuzzy
+msgid "Diary Entry Properties"
+msgstr "GDiskFree Ayarlarý"
+
+#: gtt/glade/task_properties.glade.h:10
+msgid "Diary Entry:"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:11
 msgid "Fee rate to be charged for this task."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:12
+#: gtt/glade/task_properties.glade.h:14
 msgid ""
 "How should this task be billed?  \"Billable\" means bill to the customer in "
 "the normal fashion.   \"Not Billable\" means we can't ask for money for "
@@ -2163,29 +2188,21 @@ msgid ""
 "as 'free/no-charge'."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:13
+#: gtt/glade/task_properties.glade.h:15
 msgid ""
 "Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
 "not yet, needs review.   \"Bill\" means print this on the next invoice.   "
 "\"Paid\" means that it should no longer be included on invoices."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:14
-#, fuzzy
-msgid "Memo:"
-msgstr "Bellek"
-
-#: gtt/glade/task_properties.glade.h:18
+#: gtt/glade/task_properties.glade.h:19
 #, fuzzy
 msgid "OverOver"
 msgstr "Sunucu"
 
-#: gtt/glade/task_properties.glade.h:22
-msgid "Task Properties"
-msgstr "Görev Özellikleri"
-
 #: gtt/glade/task_properties.glade.h:23
-msgid "The billed unit of time will be rounded to an integer multiple of this time."
+msgid ""
+"The billed unit of time will be rounded to an integer multiple of this time."
 msgstr ""
 
 #: gtt/glade/task_properties.glade.h:24
@@ -2204,7 +2221,8 @@ msgid ""
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
 "Bu program Linux için GNOME projesinin bir parçasýdýr ve serbest olarak "
-"daðýtýlmaktadýr. GNU Genel Kamu Lisansý'na uygun olarak yeniden daðýtabilirsiniz."
+"daðýtýlmaktadýr. GNU Genel Kamu Lisansý'na uygun olarak yeniden "
+"daðýtabilirsiniz."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
@@ -3514,7 +3532,8 @@ msgstr "Bilgisayarý yeniden baþlatmak istediðine emin misin ?"
 
 #: mini-utils/gshutdown/gshutdown.c:153 mini-utils/gshutdown/gshutdown.c:628
 msgid "You must be the super-user (root) to shut down or restart the computer."
-msgstr "Bilgisayarý kapatmak ya da yeniden baþlatmak için root olmanýz gereklidir."
+msgstr ""
+"Bilgisayarý kapatmak ya da yeniden baþlatmak için root olmanýz gereklidir."
 
 #. notebook pages
 #: mini-utils/gshutdown/gshutdown.c:189
@@ -4874,3 +4893,42 @@ msgstr "Crontab editörü"
 msgid "Personal crontab manager"
 msgstr "Kiþisel crontab yöneticisi"
 
+#, fuzzy
+#~ msgid "Memo"
+#~ msgstr "Bellek"
+
+#~ msgid "New Task"
+#~ msgstr "Yeni Görev"
+
+#~ msgid "Time tracking tool for GNOME"
+#~ msgstr "GNOME için zaman izleme programý"
+
+#~ msgid "New _Task..."
+#~ msgstr "Yeni _Görev..."
+
+#, fuzzy
+#~ msgid "Insert Memo"
+#~ msgstr "Ekle"
+
+#, fuzzy
+#~ msgid "Paste Memo"
+#~ msgstr "Yapýþtýr"
+
+#, fuzzy
+#~ msgid "Delete _Memo"
+#~ msgstr "Renk Sil"
+
+#, fuzzy
+#~ msgid "_New Memo"
+#~ msgstr "_Yeni Pencere"
+
+#, fuzzy
+#~ msgid "_Paste Memo"
+#~ msgstr "Yapýþtýr"
+
+#, fuzzy
+#~ msgid "Memo:"
+#~ msgstr "Bellek"
+
+#~ msgid "Task Properties"
+#~ msgstr "Görev Özellikleri"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.3\n"
-"POT-Creation-Date: 2001-11-30 04:22+0100\n"
+"POT-Creation-Date: 2001-11-30 16:14-0600\n"
 "PO-Revision-Date: 2001-11-30 03:24+0100\n"
 "Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
 "Language-Team: Norwegian/Nynorsk <no@li.org>\n"
@@ -1166,24 +1166,24 @@ msgstr "Feil - ukjend"
 msgid "unknown token: >>>>"
 msgstr "ukjend token: >>>>"
 
-#: gtt/journal.c:107
+#: gtt/journal.c:108
 msgid "Error 404 Not Found"
 msgstr "Feil 404 Ikkje funne"
 
-#: gtt/journal.c:109
+#: gtt/journal.c:110
 #, c-format
 msgid "The file %s was not found."
 msgstr "Fann ikkje fila %s."
 
-#: gtt/journal.c:110
+#: gtt/journal.c:111
 msgid "(null)"
 msgstr "(null)"
 
-#: gtt/journal.c:119
+#: gtt/journal.c:120
 msgid "Unkown Error"
 msgstr "Ukjend feil"
 
-#: gtt/journal.c:168 gtt/plug-in.c:90
+#: gtt/journal.c:169 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1192,12 +1192,12 @@ msgstr ""
 "Ikkje i stand til å open fila %s\n"
 "%s"
 
-#: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1530 gtt/proj.c:1658
-#: gtt/proj.c:1798
+#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/proj.c:1807
 msgid "New Diary Entry"
 msgstr "Ny dagbokoppføring"
 
-#: gtt/journal.c:421
+#: gtt/journal.c:436
 msgid "Save HTML To File"
 msgstr "Lagre HTML til fil"
 
@@ -1617,7 +1617,7 @@ msgstr "Slå saman oppover"
 msgid "Paste Diary Entry"
 msgstr "Lim inn dagbokoppføring"
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:6
+#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
 msgstr "Lim inn ei dagbokoppføring  utklipt tidlegare."
 
@@ -2107,38 +2107,48 @@ msgid "seconds"
 msgstr "sekund"
 
 #: gtt/glade/task_popup.glade.h:1
+#, fuzzy
+msgid "Add a new time interval"
+msgstr "Oppdateringsintervall (ms)"
+
+#: gtt/glade/task_popup.glade.h:2
 msgid "Delete _Times"
 msgstr "Slett _tider"
 
-#: gtt/glade/task_popup.glade.h:2
+#: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
 msgstr "Slett kun dagbokoppføringa, hald på tidsintervalla"
 
-#: gtt/glade/task_popup.glade.h:3
+#: gtt/glade/task_popup.glade.h:4
 msgid "Delete the diary entry, and the time intervals below it."
 msgstr "Slette denne dagbokoppføringa, og tidsintervalla under det."
 
-#: gtt/glade/task_popup.glade.h:4
+#: gtt/glade/task_popup.glade.h:5
 msgid "Edit the diary entry and other task properties."
 msgstr "Rediger dagbokoppføring og andre oppgåveeigenskapar."
 
-#: gtt/glade/task_popup.glade.h:5
+#: gtt/glade/task_popup.glade.h:6
 msgid "Insert a new diary entry above this one."
 msgstr "Sett inn eit ny dagbokoppføring over denne."
 
 #: gtt/glade/task_popup.glade.h:7
+#, fuzzy
+msgid "New Time Interval"
+msgstr "Slett dette intervallet"
+
+#: gtt/glade/task_popup.glade.h:9
 msgid "_Delete Diary Entry"
 msgstr "_Fjern dagbokoppføring"
 
-#: gtt/glade/task_popup.glade.h:8
+#: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
 msgstr "R_ediger dagbokoppføring"
 
-#: gtt/glade/task_popup.glade.h:9
+#: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
 msgstr "_Ny dagbokoppføring"
 
-#: gtt/glade/task_popup.glade.h:10
+#: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
 msgstr "_Lim inn dagbokoppføring"
 

@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2001-11-27 04:08+0100\n"
+"POT-Creation-Date: 2001-11-30 16:14-0600\n"
 "PO-Revision-Date: 2001-11-27 04:10+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -1171,24 +1171,24 @@ msgstr "Fel - Okänt"
 msgid "unknown token: >>>>"
 msgstr "okänd teckensekvens: >>>>"
 
-#: gtt/journal.c:107
+#: gtt/journal.c:108
 msgid "Error 404 Not Found"
 msgstr "Fel 404 Inte hittad"
 
-#: gtt/journal.c:109
+#: gtt/journal.c:110
 #, c-format
 msgid "The file %s was not found."
 msgstr "Filen %s hittades inte."
 
-#: gtt/journal.c:110
+#: gtt/journal.c:111
 msgid "(null)"
 msgstr "(null)"
 
-#: gtt/journal.c:119
+#: gtt/journal.c:120
 msgid "Unkown Error"
 msgstr "Okänt fel"
 
-#: gtt/journal.c:168 gtt/plug-in.c:90
+#: gtt/journal.c:169 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1197,12 +1197,12 @@ msgstr ""
 "Kunde inte öppna filen %s\n"
 "%s"
 
-#: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1527 gtt/proj.c:1647
-#: gtt/proj.c:1787
+#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/proj.c:1807
 msgid "New Diary Entry"
 msgstr "Ny dagbokspost"
 
-#: gtt/journal.c:421
+#: gtt/journal.c:436
 msgid "Save HTML To File"
 msgstr "Spara HTML till fil"
 
@@ -1620,7 +1620,7 @@ msgstr "Slå samman uppåt"
 msgid "Paste Diary Entry"
 msgstr "Klistra in dagbokspost"
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:6
+#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
 msgstr "Klistra in en tidigare urklippt dagbokspost."
 
@@ -2108,38 +2108,48 @@ msgid "seconds"
 msgstr "sekunder"
 
 #: gtt/glade/task_popup.glade.h:1
+#, fuzzy
+msgid "Add a new time interval"
+msgstr "Updateringsintervall (ms)"
+
+#: gtt/glade/task_popup.glade.h:2
 msgid "Delete _Times"
 msgstr "Ta bort _tider"
 
-#: gtt/glade/task_popup.glade.h:2
+#: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
 msgstr "Ta bort endast dagboksposten, behåll tidsintervallen"
 
-#: gtt/glade/task_popup.glade.h:3
+#: gtt/glade/task_popup.glade.h:4
 msgid "Delete the diary entry, and the time intervals below it."
 msgstr "Ta bort dagboksposten och tidsintervallen nedanför."
 
-#: gtt/glade/task_popup.glade.h:4
+#: gtt/glade/task_popup.glade.h:5
 msgid "Edit the diary entry and other task properties."
 msgstr "Redigera dagboksposten och andra uppgiftsegenskaper."
 
-#: gtt/glade/task_popup.glade.h:5
+#: gtt/glade/task_popup.glade.h:6
 msgid "Insert a new diary entry above this one."
 msgstr "Infoga en ny dagbokspost ovanför denna."
 
 #: gtt/glade/task_popup.glade.h:7
+#, fuzzy
+msgid "New Time Interval"
+msgstr "Ta bort detta intervall"
+
+#: gtt/glade/task_popup.glade.h:9
 msgid "_Delete Diary Entry"
 msgstr "_Ta bort dagbokspost"
 
-#: gtt/glade/task_popup.glade.h:8
+#: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
 msgstr "_Redigera dagbokspost"
 
-#: gtt/glade/task_popup.glade.h:9
+#: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
 msgstr "_Ny dagbokspost"
 
-#: gtt/glade/task_popup.glade.h:10
+#: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
 msgstr "Klistra _in dagbokspost"
 

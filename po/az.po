@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.2.0\n"
-"POT-Creation-Date: 2001-09-03 05:33-0700\n"
+"POT-Creation-Date: 2001-11-30 16:14-0600\n"
 "PO-Revision-Date: 2001-03-13 09:57+0200\n"
 "Last-Translator: Vasif Ismailoglu MD <azerb_linux@hotmail.com>\n"
 "Language-Team: Azerbaijani Turkish \n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "AC"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1370
+#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1379
 msgid "INV"
 msgstr ""
 
@@ -163,15 +163,15 @@ msgstr ""
 msgid "SUM"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1212
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
 msgid "1"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1213
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
 msgid "2"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1214
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
 msgid "3"
 msgstr ""
 
@@ -283,7 +283,7 @@ msgid "Exit"
 msgstr "Çıx"
 
 #: gcharmap/src/interface.c:239 gcharmap/src/menus.c:104
-#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:166
+#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:181
 msgid "Copy"
 msgstr "Köçürt"
 
@@ -368,7 +368,7 @@ msgstr "Düymələrin fokuslanıb fokuslanamayacağını bildirin"
 msgid "Insert character(s) by choosing character codes"
 msgstr "Hərfləri ASCII kodunu seçərək daxil edin"
 
-#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:162
+#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:177
 msgid "Cut"
 msgstr "Kəs"
 
@@ -380,7 +380,7 @@ msgstr "Seçili mətni kəs"
 msgid "Copy the selection"
 msgstr "Seçili mətni köçürün"
 
-#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:170
+#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
 msgid "Paste"
 msgstr "Yapışdır"
 
@@ -464,11 +464,13 @@ msgstr ""
 
 #: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 #: gdictsrc/gdict-applet.c:313
-msgid "Lookup"
+#, fuzzy
+msgid "Look up"
 msgstr "Axtarış"
 
 #: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
-msgid "Lookup word in dictionary"
+#, fuzzy
+msgid "Look up word in dictionary"
 msgstr "Kəliməyi sözlükdə axtar"
 
 #: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
@@ -503,7 +505,7 @@ msgstr "İstifadə Ediləcak verici, əsas axtarma taktikası, yazıtipləri"
 msgid "Word definition"
 msgstr "Kəlimə izahatları"
 
-#: gdictsrc/gdict-applet.c:280 logview/logview.c:135
+#: gdictsrc/gdict-applet.c:280 logview/logview.c:136
 msgid "About..."
 msgstr "Haqqında..."
 
@@ -561,8 +563,8 @@ msgid "Cross-reference:"
 msgstr "Çarpaz Referens:"
 
 #. Fixme these should be stock buttons
-#: gdictsrc/gdict-pref-dialog.c:129 gtt/options.c:571
-#: mini-utils/gshutdown/gshutdown.c:316 stripchart/prefs.c:195
+#: gdictsrc/gdict-pref-dialog.c:129 mini-utils/gshutdown/gshutdown.c:316
+#: stripchart/prefs.c:195
 msgid "Preferences"
 msgstr "Seçənəklər"
 
@@ -633,7 +635,7 @@ msgstr ""
 
 #: gdictsrc/gdict-speller.c:151
 #, fuzzy
-msgid "Lookup Word..."
+msgid "Look up Word..."
 msgstr "Kəliməyi axtarıram..."
 
 #: gdictsrc/gdict-speller.c:163
@@ -641,11 +643,11 @@ msgstr "Kəliməyi axtarıram..."
 msgid "Spell checker"
 msgstr "Imla yoxlaması edildi"
 
-#: gdiskfree/gdiskfree_app.c:52 gdiskfree/gdiskfree_menus.c:108
+#: gdiskfree/gdiskfree_app.c:53 gdiskfree/gdiskfree_menus.c:108
 msgid "GDiskFree"
 msgstr "GDiskFree"
 
-#: gdiskfree/gdiskfree_app.c:72
+#: gdiskfree/gdiskfree_app.c:73
 #, c-format
 msgid "Unable to parse the geometry string '%s'"
 msgstr "Yer verisi olan `%s''yi daraya bilmədim"
@@ -654,7 +656,7 @@ msgstr "Yer verisi olan `%s''yi daraya bilmədim"
 msgid "Specify the geometry of the window."
 msgstr "Pəncərənin yerini göstər ."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:310 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:439 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
 msgstr "GEOMETRY"
 
@@ -823,13 +825,13 @@ msgstr "Əlavə Et"
 msgid "Show Command"
 msgstr "Əmrləri Göstər"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759
-#: gtt/glade/interval_edit_strings.c:9
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gtt/ghtml.c:95 gtt/ghtml.c:267 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Başla"
 
-#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760
-#: gtt/glade/interval_edit_strings.c:8
+#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:95
+#: gtt/ghtml.c:270 gtt/glade/interval_edit.glade.h:13
 msgid "Stop"
 msgstr "Dayan"
 
@@ -893,15 +895,15 @@ msgstr "Əmr qarışdı"
 msgid "No command for this mime type"
 msgstr "Bu MIME növü üçün bağlı bir əmr yoxdur"
 
-#: gtt/app.c:107 gtt/app.c:216
+#: gtt/app.c:115 gtt/app.c:227
 msgid "no project selected"
 msgstr "hiç bir lahiyə seçili deyildir"
 
-#: gtt/app.c:205
+#: gtt/app.c:217
 msgid "00:00"
 msgstr "00:00"
 
-#: gtt/app.c:248 mini-utils/gless/gless.c:423
+#: gtt/app.c:259 mini-utils/gless/gless.c:423
 msgid ""
 "Couldn't understand geometry (position and size)\n"
 " specified on command line"
@@ -909,46 +911,359 @@ msgstr ""
 "Əmrdə göstəilən yerləşim metnini başa düşmədim\n"
 " ( yer və böyüklüyünü )  "
 
-#: gtt/file-io.c:334
+#: gtt/ctree.c:511
+msgid "Total"
+msgstr "Toplam"
+
+#: gtt/ctree.c:513
+msgid "Total time spent on this project."
+msgstr ""
+
+#: gtt/ctree.c:518
+#, fuzzy
+msgid "Entry"
+msgstr "Bitiş Girişi: "
+
+#: gtt/ctree.c:520
+msgid "Time spent under the current diary entry."
+msgstr ""
+
+#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
+msgid "Today"
+msgstr "Bu gün"
+
+#: gtt/ctree.c:528
+msgid "Time spent on this project today."
+msgstr ""
+
+#: gtt/ctree.c:533
+msgid "Week"
+msgstr ""
+
+#: gtt/ctree.c:535
+msgid "Time spent on this project this week."
+msgstr ""
+
+#: gtt/ctree.c:541
+#, fuzzy
+msgid "Month"
+msgstr "Göstər"
+
+#: gtt/ctree.c:543
+msgid "Time spent on this project this month."
+msgstr ""
+
+#: gtt/ctree.c:549
+#, fuzzy
+msgid "Year"
+msgstr "Linear"
+
+#: gtt/ctree.c:551
+msgid "Time spent on this project this year."
+msgstr ""
+
+#: gtt/ctree.c:557
+#, fuzzy
+msgid "Title"
+msgstr "Fayl"
+
+#: gtt/ctree.c:558 gtt/menucmd.c:148
+msgid "Project Title"
+msgstr "Lahiyə adı"
+
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
+msgid "Description"
+msgstr "İzahat"
+
+#: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
+msgid "Diary Entry"
+msgstr ""
+
+#: gtt/ctree.c:571
+#, fuzzy
+msgid "The current diary entry"
+msgstr "Hazırkı sənədi qapat"
+
+#: gtt/ctree.c:578
+msgid "Estimated Project Start Date"
+msgstr ""
+
+#: gtt/ctree.c:583
+#, fuzzy
+msgid "End"
+msgstr "Açıq"
+
+#: gtt/ctree.c:585
+#, fuzzy
+msgid "Estimated Project Completion Date"
+msgstr "Xüsüsiyyətləri dəyişdir ..."
+
+#: gtt/ctree.c:590
+msgid "Due"
+msgstr ""
+
+#: gtt/ctree.c:592
+msgid ""
+"Due Date: the date by which the project absolutely must be completed by."
+msgstr ""
+
+#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+msgid "Size"
+msgstr "Böyüklük"
+
+#: gtt/ctree.c:601
+msgid "Sizing: How much work it will take to finish this project."
+msgstr ""
+
+#: gtt/ctree.c:607
+#, fuzzy
+msgid "Done"
+msgstr "Heç Biri"
+
+#: gtt/ctree.c:609
+msgid "Percent Complete: How much of this project has been finished till now."
+msgstr ""
+
+#: gtt/ctree.c:616
+msgid "U"
+msgstr ""
+
+#: gtt/ctree.c:618
+msgid "Urgency: Does this project need to be done soon, done quickly?"
+msgstr ""
+
+#: gtt/ctree.c:624
+msgid "Imp"
+msgstr ""
+
+#: gtt/ctree.c:626
+msgid "Importance: How important is this project?"
+msgstr ""
+
+#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
+#: mini-utils/idetool/idetool.c:319
+msgid "Status"
+msgstr "Vəziyyət"
+
+#: gtt/ctree.c:634
+msgid "The current status of this project."
+msgstr ""
+
+#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
+#, fuzzy
+msgid "Low"
+msgstr "Logview"
+
+#: gtt/ctree.c:970
+#, fuzzy
+msgid "Med"
+msgstr "qırmızı"
+
+#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
+msgid "High"
+msgstr ""
+
+#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
+#, fuzzy
+msgid "Not Started"
+msgstr "Başla"
+
+#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
+#, fuzzy
+msgid "In Progress"
+msgstr "Gedişat:"
+
+#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
+#, fuzzy
+msgid "On Hold"
+msgstr "Solid"
+
+#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
+#, fuzzy
+msgid "Cancelled"
+msgstr "Ləğv Et"
+
+#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
+msgid "Completed"
+msgstr ""
+
+#: gtt/file-io.c:376
 msgid "project %t started"
 msgstr "lahiyə %t başladıldı"
 
-#: gtt/file-io.c:337
+#: gtt/file-io.c:379
 msgid "stopped project %t"
 msgstr "lahiyə %t dayandırıldı"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:533
+#: gtt/file-io.c:677
 #, c-format
 msgid "%d:%02d:%02d"
 msgstr ""
 
-#: gtt/log.c:53
+#: gtt/ghtml.c:95 gtt/ghtml.c:273
+msgid "Elapsed"
+msgstr ""
+
+#: gtt/ghtml.c:113 gtt/ghtml.c:369 gtt/ghtml.c:378
+#, fuzzy
+msgid "(empty)"
+msgstr "boş"
+
+#: gtt/ghtml.c:225
+#, fuzzy
+msgid "Notes"
+msgstr "Heç Biri"
+
+#: gtt/ghtml.c:229
+msgid "Task Time"
+msgstr ""
+
+#: gtt/ghtml.c:233
+#, fuzzy
+msgid "Bill Status"
+msgstr "Vəziyyət"
+
+#: gtt/ghtml.c:237 gtt/ghtml.c:408 gtt/glade/task_properties.glade.h:4
+#, fuzzy
+msgid "Billable"
+msgstr "Qapalı"
+
+#: gtt/ghtml.c:241
+#, fuzzy
+msgid "Bill Rate"
+msgstr "Qapalı"
+
+#: gtt/ghtml.c:245 mini-utils/gcolorsel/view-color-list.c:197
+#: mini-utils/guname/moreinfo.c:227
+msgid "Value"
+msgstr "Qiymət"
+
+#: gtt/ghtml.c:249
+#, fuzzy
+msgid "Billable Value"
+msgstr "Qapalı"
+
+#: gtt/ghtml.c:253 gtt/ghtml.c:279
+#, fuzzy
+msgid "No Default Value"
+msgstr "Əsas"
+
+#: gtt/ghtml.c:276
+#, fuzzy
+msgid "Start Time Fuzziness"
+msgstr "Başla"
+
+#: gtt/ghtml.c:392 gtt/glade/task_properties.glade.h:13
+#, fuzzy
+msgid "Hold"
+msgstr "Solid"
+
+#: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:3
+#, fuzzy
+msgid "Bill"
+msgstr "Qapalı"
+
+#: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:21
+msgid "Paid"
+msgstr ""
+
+#: gtt/ghtml.c:411 gtt/glade/task_properties.glade.h:17
+msgid "Not Billable"
+msgstr ""
+
+#: gtt/ghtml.c:414 gtt/glade/task_properties.glade.h:16
+msgid "No Charge"
+msgstr ""
+
+#: gtt/ghtml.c:424 gtt/glade/task_properties.glade.h:22
+#, fuzzy
+msgid "Regular"
+msgstr "Yeniden yüklə"
+
+#: gtt/ghtml.c:427 gtt/glade/task_properties.glade.h:20
+msgid "Overtime"
+msgstr ""
+
+#: gtt/ghtml.c:430
+msgid "Double Overtime"
+msgstr ""
+
+#: gtt/ghtml.c:433 gtt/glade/task_properties.glade.h:12
+#, fuzzy
+msgid "Flat Fee"
+msgstr "Sürüşgən"
+
+#: gtt/ghtml.c:453
+#, fuzzy
+msgid "Error - Unknown"
+msgstr "Bilinmir"
+
+#: gtt/ghtml.c:703
+msgid "unknown token: >>>>"
+msgstr ""
+
+#: gtt/journal.c:108
+msgid "Error 404 Not Found"
+msgstr ""
+
+#: gtt/journal.c:110
+#, fuzzy, c-format
+msgid "The file %s was not found."
+msgstr "Logo dosyəsı tapıla bilmədi"
+
+#: gtt/journal.c:111
+msgid "(null)"
+msgstr ""
+
+#: gtt/journal.c:120
+#, fuzzy
+msgid "Unkown Error"
+msgstr "Bilinmir"
+
+#: gtt/journal.c:169 gtt/plug-in.c:90
+#, fuzzy, c-format
+msgid ""
+"Unable to open the file %s\n"
+"%s"
+msgstr "Qeyd faylını aça bilmədim !\n"
+
+#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/proj.c:1807
+msgid "New Diary Entry"
+msgstr ""
+
+#: gtt/journal.c:436
+#, fuzzy
+msgid "Save HTML To File"
+msgstr "Paleti _qeyd et"
+
+#: gtt/log.c:55
 #, fuzzy, c-format
 msgid "Cannot open logfile %s for append"
 msgstr "Açılacaq qeyd faylı yoxdur"
 
 #. Translators: Format to use in the gtt logfile
-#: gtt/log.c:62
+#: gtt/log.c:64
 msgid "%b %d %H:%M:%S"
 msgstr ""
 
-#: gtt/log.c:83 gtt/log.c:244
-msgid "program started"
-msgstr "uyğulama başladıldı"
-
-#: gtt/log.c:101
+#: gtt/log.c:102
 msgid "no description"
 msgstr "izahı yoxdur"
 
+#: gtt/log.c:167 gtt/log.c:258
+msgid "program started"
+msgstr "uyğulama başladıldı"
+
 #. log_if_equal
-#: gtt/log.c:236
+#: gtt/log.c:250
 msgid "program exited"
 msgstr "uyğulama bitdi"
 
-#: gtt/main.c:108
+#: gtt/main.c:114
 msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
@@ -957,735 +1272,1024 @@ msgstr ""
 "GTimeTracker'i yenə də başlatmaq üçün \"Oldu\"'ya bas, yoxsa \"Ləğv Et\"'ə "
 "bas. "
 
-#: gtt/main.c:119
+#: gtt/main.c:126
 #, fuzzy
 msgid "Cannot create pid-file!"
 msgstr "Applet yaradıla bilmədi!\n"
 
-#: gtt/main.c:185
+#: gtt/main.c:219
+msgid "Do you want to continue?"
+msgstr ""
+
+#: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
 msgstr "Xəta"
 
-#: gtt/main.c:186
-msgid ""
-"An error occured while reading the configuration file.\n"
-"Shall I setup a new configuration?"
+#: gtt/main.c:272
+msgid "Shall I setup a new configuration?"
 msgstr ""
-"Quraşdırma faylını oxurkən bir xəta oldu .\n"
-"Yeni bir quraşdırma edim mi?"
 
-#: gtt/main.c:310
+#: gtt/main.c:439
 msgid "Specify geometry"
 msgstr "Geometriyasını göstər"
 
-#: gtt/main.c:312
+#: gtt/main.c:441
 msgid "Select a project on startup"
 msgstr "Başlarkən bir lahiyə seç"
 
-#: gtt/main.c:312
+#: gtt/main.c:441
 msgid "PROJECT"
 msgstr "PROJECT"
 
-#: gtt/main.c:350 gtt/menucmd.c:51 gtt/menucmd.c:59 gtt/menucmd.c:229
-#: gtt/menucmd.c:267
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Diqqət"
 
-#: gtt/menucmd.c:52 gtt/menucmd.c:269
-#, fuzzy
-msgid "Could not write the configuration file!"
-msgstr "Quraşdırma faylını yaza bilmədim !"
-
-#: gtt/menucmd.c:60
-msgid "Unknown error occurred"
+#: gtt/menucmd.c:85
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
 msgstr ""
 
-#: gtt/menucmd.c:111
-msgid "Time tracking tool for GNOME"
-msgstr "GNOME üçün zaman təqib uyğulaması"
-
-#: gtt/menucmd.c:161
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Yeni lahiyə..."
 
-#: gtt/ctree.c:278 gtt/menucmd.c:167
-msgid "Project Title"
-msgstr "Lahiyə adı"
-
-#: gtt/ctree.c:279 gtt/menucmd.c:168 stripchart/params.c:654
-msgid "Description"
-msgstr "İzahat"
-
-#: gtt/menucmd.c:231
-msgid "I could not read the configuration file"
-msgstr "Quraşdırma faylını oxuya bilmədim"
-
-#: gtt/menucmd.c:245 gtt/toolbar.c:152
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Quraşdırma Faylıını Yenidən Yüklə"
 
-#: gtt/menucmd.c:246
-msgid ""
-"This will overwrite your current set of projects.\n"
-"Do you really want to reload the configuration file?"
-msgstr ""
-"Hazırkı lahiyələrin üstünə yazılmaq üzərədir .\n"
-"Həqiqətən də quraşdırma faylının yenidən yüklənməsini istəyirsən?"
+#: gtt/menucmd.c:225
+#, fuzzy
+msgid "Do you really want to reload the configuration file?"
+msgstr "Quraşdırma faylını oxuya bilmədim"
 
-#: gtt/menucmd.c:289
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr ""
 
-#: gtt/menucmd.c:300
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr ""
 
-#: gtt/menucmd.c:320
+#: gtt/menucmd.c:291
 #, fuzzy
 msgid "Export Current State"
 msgstr "Keçərli qiymət"
 
-#: gtt/menus.c:30
+#: gtt/menus.c:33
 msgid "_New Project..."
 msgstr "_Yeni Lahiyə..."
 
-#: gtt/menus.c:33
+#: gtt/menus.c:36
 msgid "_Reload Configuration File"
 msgstr "_Quraşdırma faylını yenidən yüklə"
 
-#: gtt/menus.c:37
+#: gtt/menus.c:40
 msgid "_Save Configuration File"
 msgstr "Quraşdırma faylını _qeyd et"
 
-#: gtt/menus.c:41
+#: gtt/menus.c:44
 msgid "_Export Current State"
 msgstr ""
 
-#: gtt/menus.c:66 gtt/menus.c:127
+#: gtt/menus.c:63 gtt/menus.c:173
 msgid "Clear _Daily Counter"
 msgstr "Günlük _sayğaçı sıfırla"
 
-#: gtt/menus.c:71
+#: gtt/menus.c:64 gtt/menus.c:174
+msgid "Zero out todays timer by deleting todays time logs"
+msgstr ""
+
+#: gtt/menus.c:68 gtt/menus.c:87 gtt/menus.c:156
 msgid "_Journal..."
 msgstr ""
 
-#: gtt/menus.c:83
+#: gtt/menus.c:69 gtt/menus.c:88 gtt/menus.c:157
+msgid "Show the timesheet journal for this project"
+msgstr ""
+
+#: gtt/menus.c:72 gtt/menus.c:160
+msgid "New Diary _Entry"
+msgstr ""
+
+#: gtt/menus.c:73 gtt/menus.c:161
+msgid "Change the current task for this project"
+msgstr ""
+
+#: gtt/menus.c:91
+msgid "_All Journal..."
+msgstr ""
+
+#: gtt/menus.c:92
+msgid "Show the verbose timesheet journal for this project"
+msgstr ""
+
+#: gtt/menus.c:95
+#, fuzzy
+msgid "_Invoice..."
+msgstr "_Qeyd Et ..."
+
+#: gtt/menus.c:96
+msgid "Show a sample invoice for this project"
+msgstr ""
+
+#: gtt/menus.c:99
+#, fuzzy
+msgid "_Primer..."
+msgstr "Seçənəklər.."
+
+#: gtt/menus.c:100
+msgid "Show a sample introductory primer for designing custom reports"
+msgstr ""
+
+#: gtt/menus.c:103
+#, fuzzy
+msgid "_New Report..."
+msgstr "_Yeni Lahiyə..."
+
+#: gtt/menus.c:104
+msgid "Define a path to a new GTT phtml report file"
+msgstr ""
+
+#: gtt/menus.c:115
 msgid "St_art"
 msgstr "_Başla"
 
-#: gtt/menus.c:87
+#: gtt/menus.c:116
+msgid "Start the timer running"
+msgstr ""
+
+#: gtt/menus.c:121
 msgid "Sto_p"
 msgstr "_Dayan"
 
-#: gtt/menus.c:92
+#: gtt/menus.c:122
+#, fuzzy
+msgid "Stop the timer"
+msgstr "Sentyabr"
+
+#: gtt/menus.c:127
 msgid "_Timer Running"
 msgstr "Saat iş_ləyir"
 
-#: gtt/menus.c:111
+#: gtt/menus.c:146
+msgid "_Reports"
+msgstr ""
+
+#: gtt/menus.c:147
 msgid "_Timer"
 msgstr "S_aat"
 
-#: gtt/options.c:234
-msgid "Display"
-msgstr "Ekran"
-
-#: gtt/options.c:242
-msgid "Show Seconds"
-msgstr "Saniyələri göstər"
-
-#: gtt/options.c:248
-msgid "Show Status Bar"
-msgstr "Vəziyyət çubuğunu göstər"
-
-#: gtt/options.c:254
-msgid "Show Table Header"
-msgstr "Cədvəl Başlığını Göstər"
-
-#: gtt/options.c:260
+#. deal with the i18n menu path ...
+#. (is this right ??? or is this pre-i18n ???)
+#: gtt/menus.c:244
 #, fuzzy
-msgid "Show Sub-Projects"
-msgstr "'Xüsüsiyyətləri''i göstər"
+msgid "Reports"
+msgstr "Yeniden başlat"
 
-#: gtt/options.c:274 gtt/options.c:591
-msgid "Toolbar"
-msgstr "Ləvazimat çubuğu"
+#: gtt/plug-in.c:121
+msgid "Reports/<Separator>"
+msgstr ""
 
-#: gtt/options.c:282
-msgid "Show Toolbar Icons"
-msgstr "Ləvazimat Çubuğunda Timsalları Göstər"
-
-#: gtt/options.c:288
-msgid "Show Toolbar Texts"
-msgstr "Ləvazimat Çubuğunda Mətnləri Göstər"
-
-#: gtt/options.c:294
-msgid "Show Tooltips"
-msgstr "Balon köməklərini göstər"
-
-#: gtt/options.c:300
-msgid "Toolbar Segments"
-msgstr "Ləvazimat çubuğu bölmələri"
-
-#: gtt/options.c:308
-msgid "Show `New'"
-msgstr "`Yeni''yi göstər"
-
-#: gtt/options.c:314
-msgid "Show `Save', `Reload'"
-msgstr "'Qeyd Et' və 'Yeniden yüklə''yi göstər"
-
-#: gtt/options.c:320
-msgid "Show `Cut', `Copy', `Paste'"
-msgstr "`Kəs','Köçürt' və 'Yapışdır''ı göstər"
-
-#: gtt/options.c:326
-msgid "Show `Properties'"
-msgstr "'Xüsüsiyyətləri''i göstər"
-
-#: gtt/options.c:332
-msgid "Show `Timer'"
-msgstr "'Saat''ı göstər"
-
-#: gtt/options.c:338
-msgid "Show `Preferences'"
-msgstr "'Seçənəkləri''i göstər"
-
-#: gtt/options.c:344
-msgid "Show `Help'"
-msgstr "'Kömək''ı göstər"
-
-#: gtt/options.c:350
-msgid "Show `Quit'"
-msgstr "'Çıx''ı göstər"
-
-#: gtt/options.c:364
-msgid "Shell Commands"
-msgstr "Qabıq Əmrləri"
-
-#: gtt/options.c:372
-msgid "Switch Project Command:"
-msgstr "Lahiyə Əmrini Dəyişdir : "
-
-#: gtt/options.c:384
-msgid "No Project Command:"
-msgstr "Lahiyə Əmri Yoxdur: "
-
-#: gtt/options.c:419
-msgid "Logfile"
-msgstr "Qeyd faylı"
-
-#: gtt/options.c:427
-msgid "Use Logfile"
-msgstr "Qeyd faylı istifadə et"
-
-#: gtt/options.c:436
-msgid "Filename:"
-msgstr "Fayl adı : "
-
-#: gtt/options.c:450
-msgid "Entry Start:"
-msgstr "Başlama Girişi: "
-
-#: gtt/options.c:464
-msgid "Entry Stop:"
-msgstr "Bitiş Girişi: "
-
-#: gtt/options.c:478
-msgid "Timeout in secs:"
-msgstr "Vaxt arası ( san. ) : "
-
-#: gtt/options.c:578
-msgid "Misc"
-msgstr "Qarışıq"
-
-#: gtt/proj.c:436
+#: gtt/proj.c:697
 msgid "Old GTT Tasks"
 msgstr ""
 
-#: gtt/proj.c:455 gtt/proj.c:858
-msgid "New Task"
+#: gtt/props-proj.c:94 gtt/props-proj.c:95 gtt/props-task.c:75
+#: gtt/props-task.c:76
+msgid "empty"
+msgstr "boş"
+
+#: gtt/timer.c:117
+#, c-format
+msgid ""
+"The keyboard and mouse have been idle\n"
+"for %d minutes.  The currently running\n"
+"project (%s - %s)\n"
+"has been stopped.\n"
+"Do you want to restart it?"
 msgstr ""
 
+#: gtt/timer.c:125
+#, fuzzy
+msgid "System Idle"
+msgstr "Sistem Rəngləri"
+
 #. Note to translators: just skip the `[GTT]'
-#: gtt/toolbar.c:144
+#: gtt/toolbar.c:159
 msgid "[GTT]New"
 msgstr "Yeni"
 
-#: gtt/toolbar.c:145
+#: gtt/toolbar.c:160
 #, fuzzy
 msgid "Create a New Project..."
 msgstr "Yeni lahiyə..."
 
-#: gtt/toolbar.c:151
+#: gtt/toolbar.c:166
 msgid "Reload"
 msgstr "Yeniden yüklə"
 
-#: gtt/glade/journal_strings.c:11 gtt/toolbar.c:155 stripchart/params.c:939
+#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
 msgid "Save"
 msgstr "Qeyd Et"
 
-#: gtt/toolbar.c:156
+#: gtt/toolbar.c:171
 msgid "Save Configuration File"
 msgstr "Quraşdırma faylını qeyd et"
 
-#: gtt/toolbar.c:163
+#: gtt/toolbar.c:178
 msgid "Cut Selected Project"
 msgstr "Seçili lahiyəyi kes"
 
-#: gtt/toolbar.c:167
+#: gtt/toolbar.c:182
 msgid "Copy Selected Project"
 msgstr "Seçili lahiyəyi kopyala"
 
-#: gtt/toolbar.c:171
+#: gtt/toolbar.c:186
 msgid "Paste Project"
 msgstr "Lahiyəyi yapışdır"
 
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/journal_strings.c:7 gtt/toolbar.c:178
+#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
 msgid "Journal"
 msgstr ""
 
-#: gtt/toolbar.c:179
+#: gtt/toolbar.c:194
 msgid "View and Edit Timestamp Logs"
 msgstr ""
 
-#: gtt/toolbar.c:184
+#: gtt/toolbar.c:199
 msgid "Props"
 msgstr "Xüsüsiyyətlər"
 
-#: gtt/toolbar.c:185
+#: gtt/toolbar.c:200
 #, fuzzy
 msgid "Edit Project Properties..."
 msgstr "Xüsüsiyyətləri dəyişdir ..."
 
-#: gtt/toolbar.c:189
+#: gtt/toolbar.c:204
 msgid "Timer"
 msgstr "Saat"
 
-#: gtt/toolbar.c:190
+#: gtt/toolbar.c:205
 msgid "Start/Stop Timer"
 msgstr "Saatı başlat/dayandır"
 
-#: gtt/toolbar.c:202
+#: gtt/toolbar.c:211 logview/calendar.c:112 logview/logview.c:107
+msgid "Calendar"
+msgstr "Təqvim"
+
+#: gtt/toolbar.c:212
+#, fuzzy
+msgid "View Calendar"
+msgstr "Təqvimi gizlət"
+
+#: gtt/toolbar.c:225
 msgid "Prefs"
 msgstr "Seçənəklər"
 
-#: gtt/toolbar.c:203
+#: gtt/toolbar.c:226
 msgid "Edit Preferences..."
 msgstr "Seçənəkləri dəyişdir ..."
 
-#: gtt/toolbar.c:207
+#: gtt/toolbar.c:230
 msgid "Manual"
 msgstr "Bələdçi"
 
-#: gtt/toolbar.c:208
+#: gtt/toolbar.c:231
 msgid "User's Guide and Manual"
 msgstr ""
 
-#: gtt/toolbar.c:213
+#: gtt/toolbar.c:236
 msgid "Quit"
 msgstr "Çıx"
 
-#: gtt/toolbar.c:213
+#: gtt/toolbar.c:236
 msgid "Quit GTimeTracker"
 msgstr "GTimeTracker'dən çıx"
 
-#: gtt/ctree.c:276
-msgid "Total"
-msgstr "Toplam"
-
-#: gtt/ctree.c:277 gtt/glade/interval_edit_strings.c:20
-msgid "Today"
-msgstr "Bu gün"
-
-#. ===================== END OF FILE ==============================
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/interval_edit_strings.c:7
-#, fuzzy
-msgid "Start Fuzz"
-msgstr "Başla"
-
-#: gtt/glade/interval_edit_strings.c:10
-msgid "Set how Uncertain the Start Time Is"
+#: gtt/glade/interval_edit.glade.h:1
+msgid "1 Hour"
 msgstr ""
 
-#: gtt/glade/interval_edit_strings.c:11
-msgid "Exact Time"
-msgstr ""
-
-#: gtt/glade/interval_edit_strings.c:12
-#, fuzzy
-msgid "5 Min"
-msgstr "ƏnAz"
-
-#: gtt/glade/interval_edit_strings.c:13
+#: gtt/glade/interval_edit.glade.h:2
 #, fuzzy
 msgid "10 Min"
 msgstr "ƏnAz"
 
-#: gtt/glade/interval_edit_strings.c:14
+#: gtt/glade/interval_edit.glade.h:3
 #, fuzzy
 msgid "15 Min"
 msgstr "ƏnAz"
 
-#: gtt/glade/interval_edit_strings.c:15
-#, fuzzy
-msgid "20 Min"
-msgstr "ƏnAz"
-
-#: gtt/glade/interval_edit_strings.c:16
-#, fuzzy
-msgid "30 Min"
-msgstr "ƏnAz"
-
-#: gtt/glade/interval_edit_strings.c:17
-msgid "1 Hour"
-msgstr ""
-
-#: gtt/glade/interval_edit_strings.c:18
+#: gtt/glade/interval_edit.glade.h:4
 #, fuzzy
 msgid "2 Hours"
 msgstr "saat"
 
-#: gtt/glade/interval_edit_strings.c:19
+#: gtt/glade/interval_edit.glade.h:5
+#, fuzzy
+msgid "20 Min"
+msgstr "ƏnAz"
+
+#: gtt/glade/interval_edit.glade.h:6
 #, fuzzy
 msgid "3 Hours"
 msgstr "saat"
 
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/interval_popup_strings.c:7
+#: gtt/glade/interval_edit.glade.h:7
 #, fuzzy
-msgid "Edit the Start & Stop Times"
-msgstr "Saatı başlat/dayandır"
+msgid "30 Min"
+msgstr "ƏnAz"
 
-#: gtt/glade/interval_popup_strings.c:8 mini-utils/gcolorsel/gcolorsel.c:32
-#: mini-utils/gcolorsel/menus.c:573 mini-utils/gcolorsel/menus.c:660
-#: stripchart/params.c:1041 stripchart/params.c:1044
-msgid "Edit"
-msgstr "Düzəlt"
+#: gtt/glade/interval_edit.glade.h:8
+#, fuzzy
+msgid "5 Min"
+msgstr "ƏnAz"
 
-#: gtt/glade/interval_popup_strings.c:9
+#: gtt/glade/interval_edit.glade.h:9
+msgid "Exact Time"
+msgstr ""
+
+#: gtt/glade/interval_edit.glade.h:10
+msgid "Set how Uncertain the Start Time Is"
+msgstr ""
+
+#: gtt/glade/interval_edit.glade.h:12
+#, fuzzy
+msgid "Start Fuzz"
+msgstr "Başla"
+
+#: gtt/glade/interval_popup.glade.h:1
+#, fuzzy
+msgid "Delete Interval"
+msgstr "Sürüşdürücü yeniləmə sıxlığı"
+
+#: gtt/glade/interval_popup.glade.h:2
 #, fuzzy
 msgid "Delete This Interval"
 msgstr "Sürüşdürücü yeniləmə sıxlığı"
 
-#: gtt/glade/interval_popup_strings.c:10 mini-utils/gw/gw.c:495
-msgid "Delete"
-msgstr "Sil"
+#: gtt/glade/interval_popup.glade.h:3
+#, fuzzy
+msgid "Edit Interval"
+msgstr "Ümumi"
 
-#: gtt/glade/interval_popup_strings.c:11
-msgid "Merge Into Interval Above"
+#: gtt/glade/interval_popup.glade.h:4
+#, fuzzy
+msgid "Edit the Start & Stop Times"
+msgstr "Saatı başlat/dayandır"
+
+#: gtt/glade/interval_popup.glade.h:5
+#, fuzzy
+msgid "Insert Diary Entry"
+msgstr "Axıra _Daxil et"
+
+#: gtt/glade/interval_popup.glade.h:6
+msgid "Insert a new diary entry above this time interval."
 msgstr ""
 
-#: gtt/glade/interval_popup_strings.c:12
-msgid "Merge Up"
-msgstr ""
-
-#: gtt/glade/interval_popup_strings.c:13
-msgid "Merege Into Interval Below"
-msgstr ""
-
-#: gtt/glade/interval_popup_strings.c:14
+#: gtt/glade/interval_popup.glade.h:7
 msgid "Merge Down"
 msgstr ""
 
-#: gtt/glade/journal_strings.c:8
-#, fuzzy
-msgid "New File"
-msgstr "Yeni Görünüş"
+#: gtt/glade/interval_popup.glade.h:8
+msgid "Merge Into Interval Above"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:9
-#, fuzzy
-msgid "Print"
-msgstr "Nöqtə"
+#: gtt/glade/interval_popup.glade.h:9
+msgid "Merge Into Interval Below"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:10
-#, fuzzy
-msgid "Open File"
-msgstr "Qeydi aç"
+#: gtt/glade/interval_popup.glade.h:10
+msgid "Merge Up"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:12
-#, fuzzy
-msgid "Save File"
-msgstr "Paleti _qeyd et"
+#: gtt/glade/interval_popup.glade.h:11
+msgid "Paste Diary Entry"
+msgstr ""
 
-#: gtt/glade/journal_strings.c:13 mini-utils/gcolorsel/menus.c:89
+#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+msgid "Paste a previously cut diary entry."
+msgstr ""
+
+#: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
 #: mini-utils/gcolorsel/menus.c:913 mini-utils/gshutdown/gshutdown.c:155
 #: mini-utils/gshutdown/gshutdown.c:631 stripchart/params.c:953
 msgid "Close"
 msgstr "Qapat"
 
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/project_properties_strings.c:7
-msgid "A title to assign to this project"
+#: gtt/glade/journal.glade.h:3
+#, fuzzy
+msgid "New File"
+msgstr "Yeni Görünüş"
+
+#: gtt/glade/journal.glade.h:4
+#, fuzzy
+msgid "Open File"
+msgstr "Qeydi aç"
+
+#: gtt/glade/journal.glade.h:5
+#, fuzzy
+msgid "Print"
+msgstr "Nöqtə"
+
+#: gtt/glade/journal.glade.h:6
+msgid "Refresh"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:8
-msgid "a short description that will be printed on the invoice."
+#: gtt/glade/journal.glade.h:8
+#, fuzzy
+msgid "Save File"
+msgstr "Paleti _qeyd et"
+
+#: gtt/glade/not-implemented.glade.h:1
+#, fuzzy
+msgid "Information"
+msgstr "İşlədici Mə'lumatları"
+
+#: gtt/glade/not-implemented.glade.h:2
+msgid ""
+"This function is not yet implemented!\n"
+"Coming Soon, I hope!"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:9
-msgid "Project Title:"
-msgstr "Lahiyə Adı: "
+#: gtt/glade/prefs.glade.h:1
+msgid "Display"
+msgstr "Ekran"
 
-#: gtt/glade/project_properties_strings.c:10
-msgid "Project Description:"
+#: gtt/glade/prefs.glade.h:2
+msgid "Enter a shell command to be executed when no projects are active."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:3
+msgid "Enter a shell command to be executed whenever projects are switched."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:4
+msgid "Entry Start:"
+msgstr "Başlama Girişi: "
+
+#: gtt/glade/prefs.glade.h:5
+msgid "Entry Stop:"
+msgstr "Bitiş Girişi: "
+
+#: gtt/glade/prefs.glade.h:7
+#, no-c-format
+msgid ""
+"Entry that will be logged when a project starts. Use %t for the project "
+"title, %d for the description, etc. See the manual for more options."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:9
+#, no-c-format
+msgid ""
+"Entry that will be logged when the project stops.  Use %t for the porject "
+"title, %d for the project description, etc. See the manual for more options."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:10
+#, fuzzy
+msgid "Fields"
+msgstr "Tap"
+
+#: gtt/glade/prefs.glade.h:11
+msgid "Filename:"
+msgstr "Fayl adı : "
+
+#: gtt/glade/prefs.glade.h:12
+#, fuzzy
+msgid "Idle Seconds:"
+msgstr "Saniyələri göstər"
+
+#: gtt/glade/prefs.glade.h:13
+msgid "Inactivity Timeout"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:14
+msgid "Logfile"
+msgstr "Qeyd faylı"
+
+#: gtt/glade/prefs.glade.h:15
+#, fuzzy
+msgid "Min Recorded:"
+msgstr "Ana mətn :"
+
+#: gtt/glade/prefs.glade.h:16
+msgid "Misc"
+msgstr "Qarışıq"
+
+#: gtt/glade/prefs.glade.h:17
+msgid "No Project Command:"
+msgstr "Lahiyə Əmri Yoxdur: "
+
+#: gtt/glade/prefs.glade.h:18
+#, fuzzy
+msgid "Project List Display"
+msgstr "Lahiyə adı"
+
+#: gtt/glade/prefs.glade.h:19
+#, fuzzy
+msgid "Shell"
+msgstr "Imla"
+
+#: gtt/glade/prefs.glade.h:20
+msgid "Shell Commands"
+msgstr "Qabıq Əmrləri"
+
+#: gtt/glade/prefs.glade.h:21
+msgid "Show Current Diary Entry"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:22
+msgid "Show Estimated Effort"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:23
+#, fuzzy
+msgid "Show Percent Complete"
+msgstr "'Xüsüsiyyətləri''i göstər"
+
+#: gtt/glade/prefs.glade.h:24
+msgid "Show Planned Project End Date"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:25
+msgid "Show Planned Project Start Date"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:26
+#, fuzzy
+msgid "Show Project Description"
 msgstr "Lahiyə İzahı : "
 
-#: gtt/glade/project_properties_strings.c:11
-#: gtt/glade/task_properties_strings.c:8
-msgid "Notes:"
+#: gtt/glade/prefs.glade.h:27
+#, fuzzy
+msgid "Show Project Due Date"
+msgstr "'Xüsüsiyyətləri''i göstər"
+
+#: gtt/glade/prefs.glade.h:28
+#, fuzzy
+msgid "Show Project Importance"
+msgstr "Lahiyə Əmri Yoxdur: "
+
+#: gtt/glade/prefs.glade.h:29
+#, fuzzy
+msgid "Show Project Status"
+msgstr "'Xüsüsiyyətləri''i göstər"
+
+#: gtt/glade/prefs.glade.h:30
+#, fuzzy
+msgid "Show Project Urgency"
+msgstr "'Xüsüsiyyətləri''i göstər"
+
+#: gtt/glade/prefs.glade.h:31
+msgid "Show Seconds"
+msgstr "Saniyələri göstər"
+
+#: gtt/glade/prefs.glade.h:32
+msgid "Show Status Bar"
+msgstr "Vəziyyət çubuğunu göstər"
+
+#: gtt/glade/prefs.glade.h:33
+#, fuzzy
+msgid "Show Sub-Projects"
+msgstr "'Xüsüsiyyətləri''i göstər"
+
+#: gtt/glade/prefs.glade.h:34
+msgid "Show Table Header"
+msgstr "Cədvəl Başlığını Göstər"
+
+#: gtt/glade/prefs.glade.h:35
+msgid "Show Time For The Current Diary Entry"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:12
+#: gtt/glade/prefs.glade.h:36
+msgid "Show Time This Month"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:37
+msgid "Show Time This Week"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:38
+#, fuzzy
+msgid "Show Time This Year"
+msgstr "'Saat''ı göstər"
+
+#: gtt/glade/prefs.glade.h:39
+#, fuzzy
+msgid "Show Time Today"
+msgstr "'Saat''ı göstər"
+
+#: gtt/glade/prefs.glade.h:40
+msgid "Show Toolbar Icons"
+msgstr "Ləvazimat Çubuğunda Timsalları Göstər"
+
+#: gtt/glade/prefs.glade.h:41
+msgid "Show Toolbar Texts"
+msgstr "Ləvazimat Çubuğunda Mətnləri Göstər"
+
+#: gtt/glade/prefs.glade.h:42
+msgid "Show Tooltips"
+msgstr "Balon köməklərini göstər"
+
+#: gtt/glade/prefs.glade.h:43
+#, fuzzy
+msgid "Show Total Time Ever"
+msgstr "Cədvəl Başlığını Göstər"
+
+#: gtt/glade/prefs.glade.h:44
+msgid "Show `Cut', `Copy', `Paste'"
+msgstr "`Kəs','Köçürt' və 'Yapışdır''ı göstər"
+
+#: gtt/glade/prefs.glade.h:45
+msgid "Show `Help'"
+msgstr "'Kömək''ı göstər"
+
+#: gtt/glade/prefs.glade.h:46
+#, fuzzy
+msgid "Show `Journal'"
+msgstr "'Kömək''ı göstər"
+
+#: gtt/glade/prefs.glade.h:47
+msgid "Show `New'"
+msgstr "`Yeni''yi göstər"
+
+#: gtt/glade/prefs.glade.h:48
+msgid "Show `Preferences'"
+msgstr "'Seçənəkləri''i göstər"
+
+#: gtt/glade/prefs.glade.h:49
+msgid "Show `Properties'"
+msgstr "'Xüsüsiyyətləri''i göstər"
+
+#: gtt/glade/prefs.glade.h:50
+msgid "Show `Quit'"
+msgstr "'Çıx''ı göstər"
+
+#: gtt/glade/prefs.glade.h:51
+msgid "Show `Save', `Reload'"
+msgstr "'Qeyd Et' və 'Yeniden yüklə''yi göstər"
+
+#: gtt/glade/prefs.glade.h:52
+msgid "Show `Timer'"
+msgstr "'Saat''ı göstər"
+
+#: gtt/glade/prefs.glade.h:53
 msgid ""
-"Internal notes about the project, memos that will not be printed on an "
-"invoice."
+"Show the 'szing', that is, the estimated amount of work that it will take to "
+"perform this project."
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:13
-msgid "Project"
-msgstr "Lahiyə"
+#: gtt/glade/prefs.glade.h:54
+msgid "Switch Project Command:"
+msgstr "Lahiyə Əmrini Dəyişdir : "
 
-#: gtt/glade/project_properties_strings.c:14
-msgid "Regular Rate:"
+#: gtt/glade/prefs.glade.h:55
+msgid ""
+"Switches between projects that happen faster than this will not be logged "
+"(enter the number of seconds)"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:15
-msgid "Overtime Rate:"
+#: gtt/glade/prefs.glade.h:56
+msgid ""
+"The current active project will be made inactive after there has been no "
+"keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:16
-msgid "Double-Overtime Rate:"
-msgstr ""
+#: gtt/glade/prefs.glade.h:57
+msgid "Toolbar"
+msgstr "Ləvazimat çubuğu"
 
-#: gtt/glade/project_properties_strings.c:17
-msgid "Flat Fee:"
-msgstr ""
+#: gtt/glade/prefs.glade.h:58
+msgid "Toolbar Segments"
+msgstr "Ləvazimat çubuğu bölmələri"
 
-#: gtt/glade/project_properties_strings.c:18
+#: gtt/glade/prefs.glade.h:59
+msgid "Use Logfile"
+msgstr "Qeyd faylı istifadə et"
+
+#: gtt/glade/prefs.glade.h:60
+#, fuzzy
+msgid "View Project Fields"
+msgstr "Görünüş xüsusiyyətləri"
+
+#: gtt/glade/project_properties.glade.h:1
 msgid "        "
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:19
+#: gtt/glade/project_properties.glade.h:2
+#, fuzzy
+msgid "            "
+msgstr "Qeydi aç ...       "
+
+#: gtt/glade/project_properties.glade.h:3
 #, fuzzy
 msgid "                        "
 msgstr "Böyüt                  "
 
-#: gtt/glade/project_properties_strings.c:20
-msgid "The dollars per hour normally charged for this project."
+#: gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:21
-msgid "The dollars per hour charged for overtime work on this project."
+#: gtt/glade/project_properties.glade.h:6
+msgid "A title to assign to this project"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:22
-msgid "The over-overtime rate (overtime on Sundays, etc.)"
-msgstr ""
-
-#: gtt/glade/project_properties_strings.c:23
-msgid ""
-"If this project is billed for one price no matter how long it takes, enter "
-"the fee here."
-msgstr ""
-
-#: gtt/glade/project_properties_strings.c:24
-msgid "Rates"
-msgstr ""
-
-#: gtt/glade/project_properties_strings.c:25
-msgid "Minimum Interval: "
-msgstr ""
-
-#: gtt/glade/project_properties_strings.c:26
-msgid "Auto-merge Interval:"
-msgstr ""
-
-#: gtt/glade/project_properties_strings.c:27
+#: gtt/glade/project_properties.glade.h:7
 msgid "Auto-merge Gap:"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:28
-#: gtt/glade/project_properties_strings.c:29
-#: gtt/glade/project_properties_strings.c:30
+#: gtt/glade/project_properties.glade.h:8
+msgid "Auto-merge Interval:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:11
+msgid ""
+"Does this item need immediate attention? Note that some urgent tasks might "
+"not be important.  For example, Bill may want you to answer his email today, "
+"but you may have better things to do today."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:12
+msgid "Double-Overtime Rate:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:13
 #, fuzzy
-msgid "seconds"
-msgstr "saniye"
+msgid "Due Date:"
+msgstr "Tarix :"
 
-#: gtt/glade/project_properties_strings.c:31
-msgid "Intervals smaller than this will be discarded"
+#: gtt/glade/project_properties.glade.h:14
+msgid "Flat Fee:"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:32
-msgid "Time below which an interval is merged with its neighbors"
+#: gtt/glade/project_properties.glade.h:16
+msgid "Hours to Finish:"
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:33
+#: gtt/glade/project_properties.glade.h:17
+msgid ""
+"How important is it to perform this task?  Not everything important is "
+"urgent.  For example, it is important to file a tax return every year, but "
+"you have a lot of time to get ready to do this."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:18
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
 msgstr ""
 
-#: gtt/glade/project_properties_strings.c:34
+#: gtt/glade/project_properties.glade.h:19
+msgid ""
+"If this project is billed for one price no matter how long it takes, enter "
+"the fee here."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:20
+#, fuzzy
+msgid "Importance:"
+msgstr "Güzəşt sərhədi: "
+
+#: gtt/glade/project_properties.glade.h:22
+msgid ""
+"Internal notes about the project that will not be printed on an invoice."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:23
 #, fuzzy
 msgid "Intervals"
 msgstr "Ümumi"
 
-#.
-#. * Translatable strings file generated by Glade.
-#. * Add this file to your project's POTFILES.in.
-#. * DO NOT compile it as part of your application.
-#.
-#: gtt/glade/task_properties_strings.c:7
-#, fuzzy
-msgid "Memo:"
-msgstr "Yaddaş"
+#: gtt/glade/project_properties.glade.h:24
+msgid "Intervals smaller than this will be discarded"
+msgstr ""
 
-#: gtt/glade/task_properties_strings.c:9
+#: gtt/glade/project_properties.glade.h:26
+msgid "Medium"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:27
+msgid "Minimum Interval: "
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:28
+#, fuzzy
+msgid "Not Set"
+msgstr "Yazı növü Seçicisi"
+
+#: gtt/glade/project_properties.glade.h:30
+#: gtt/glade/task_properties.glade.h:18
+msgid "Notes:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:32
+msgid "Overtime Rate:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:33
+msgid "Planned Finish:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:34
+#, fuzzy
+msgid "Planned Start:"
+msgstr "Başlama Girişi: "
+
+#: gtt/glade/project_properties.glade.h:35
+#, fuzzy
+msgid "Planning"
+msgstr "Diqqət"
+
+#: gtt/glade/project_properties.glade.h:36
+msgid "Project"
+msgstr "Lahiyə"
+
+#: gtt/glade/project_properties.glade.h:37
+msgid "Project Description:"
+msgstr "Lahiyə İzahı : "
+
+#: gtt/glade/project_properties.glade.h:38
+msgid "Project Title:"
+msgstr "Lahiyə Adı: "
+
+#: gtt/glade/project_properties.glade.h:39
+msgid "Rates"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:40
+msgid "Regular Rate:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:41
+#, fuzzy
+msgid "Status:"
+msgstr "Vəziyyət"
+
+#: gtt/glade/project_properties.glade.h:42
+msgid "The dollars per hour charged for overtime work on this project."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:43
+msgid "The dollars per hour normally charged for this project."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:44
+msgid "The over-overtime rate (overtime on Sundays, etc.)"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:45
+msgid "Time below which an interval is merged with its neighbors"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:46
+msgid "Urgency:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:47
+msgid "What is the status of this project?"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:48
+msgid "a short description that will be printed on the invoice."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:49
+#, fuzzy
+msgid "seconds"
+msgstr "saniye"
+
+#: gtt/glade/task_popup.glade.h:1
+#, fuzzy
+msgid "Add a new time interval"
+msgstr "Yeniləmə arası ( ms )"
+
+#: gtt/glade/task_popup.glade.h:2
+#, fuzzy
+msgid "Delete _Times"
+msgstr "Sil"
+
+#: gtt/glade/task_popup.glade.h:3
+msgid "Delete the diary entry only, keep the time intervals"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:4
+msgid "Delete the diary entry, and the time intervals below it."
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:5
+msgid "Edit the diary entry and other task properties."
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:6
+msgid "Insert a new diary entry above this one."
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:7
+#, fuzzy
+msgid "New Time Interval"
+msgstr "Sürüşdürücü yeniləmə sıxlığı"
+
+#: gtt/glade/task_popup.glade.h:9
+#, fuzzy
+msgid "_Delete Diary Entry"
+msgstr "Parametri Sil"
+
+#: gtt/glade/task_popup.glade.h:10
+msgid "_Edit Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:11
+msgid "_New Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_popup.glade.h:12
+msgid "_Paste Diary Entry"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:1
+msgid "A set of private notes that will not be printed on an invoice."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:2
+msgid "A short description to attach to this block of time."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:5
 msgid "Billable:"
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:10
-msgid "Billing Rate:"
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:11
+#: gtt/glade/task_properties.glade.h:6
 msgid "Billing Block:"
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:12
-msgid ""
-"Can this task be billed to the customer?  \"Hold\" means maybe but not yet, "
-"\"Not Billable\" means don't print on the invoice, \"No Charge\" means print "
-"on the invoice as 'free'."
+#: gtt/glade/task_properties.glade.h:7
+msgid "Billing Rate:"
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:13
+#: gtt/glade/task_properties.glade.h:8
+msgid "Billing Status:"
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:9
 #, fuzzy
-msgid "Hold"
-msgstr "Solid"
+msgid "Diary Entry Properties"
+msgstr "GDiskFree Qurğuları"
 
-#: gtt/glade/task_properties_strings.c:14
+#: gtt/glade/task_properties.glade.h:10
 #, fuzzy
-msgid "Billable"
-msgstr "Qapalı"
+msgid "Diary Entry:"
+msgstr "Qovluq :"
 
-#: gtt/glade/task_properties_strings.c:15
-msgid "Not Billable"
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:16
-msgid "No Charge"
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:17
+#: gtt/glade/task_properties.glade.h:11
 msgid "Fee rate to be charged for this task."
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:18
-#, fuzzy
-msgid "Regular"
-msgstr "Yeniden yüklə"
-
-#: gtt/glade/task_properties_strings.c:19
-msgid "Overtime"
+#: gtt/glade/task_properties.glade.h:14
+msgid ""
+"How should this task be billed?  \"Billable\" means bill to the customer in "
+"the normal fashion.   \"Not Billable\" means we can't ask for money for "
+"this, don't print on the invoice.   \"No Charge\" means print on the invoice "
+"as 'free/no-charge'."
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:20
+#: gtt/glade/task_properties.glade.h:15
+msgid ""
+"Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
+"not yet, needs review.   \"Bill\" means print this on the next invoice.   "
+"\"Paid\" means that it should no longer be included on invoices."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:19
 #, fuzzy
 msgid "OverOver"
 msgstr "Verici"
 
-#: gtt/glade/task_properties_strings.c:21
-#, fuzzy
-msgid "Flat Fee"
-msgstr "Sürüşgən"
-
-#: gtt/glade/task_properties_strings.c:22
+#: gtt/glade/task_properties.glade.h:23
 msgid ""
-"The billed unit of time wioll be rounded to an integer multiple of this time."
+"The billed unit of time will be rounded to an integer multiple of this time."
 msgstr ""
 
-#: gtt/glade/task_properties_strings.c:23
-msgid "A set of private notes that will not be printed on an invoice."
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:24
-msgid "A short description to attach to this block of time."
-msgstr ""
-
-#: gtt/glade/task_properties_strings.c:25
+#: gtt/glade/task_properties.glade.h:24
 #, fuzzy
 msgid "minutes"
 msgstr "dakika"
-
-#: gtt/glade/task_properties_strings.c:26
-#, fuzzy
-msgid "Task Properties"
-msgstr "Xüsusiyyətlər"
-
-#: gtt/journal.c:91
-msgid "<html><body><h1>Error 404 Not Found</h1>The file "
-msgstr ""
-
-#: gtt/journal.c:95
-msgid "(null)"
-msgstr ""
-
-#: gtt/journal.c:98
-msgid " was not found. </body></html>"
-msgstr ""
-
-#: gtt/journal.c:103
-msgid "<html><body><h1>Unkown Error</h1>"
-msgstr ""
-
-#: gtt/phtml.c:39
-msgid ""
-"<table border=1><caption><em>hey hey hey!</em></caption><tr><th "
-"colspan=4>Memo<tr><th>&nbsp;<th>Start<th>Stop<th>Elapsed"
-msgstr ""
-
-#: gtt/phtml.c:58 gtt/phtml.c:132
-#, fuzzy
-msgid "(empty)"
-msgstr "boş"
-
-#: gtt/phtml.c:150
-msgid "unknown token: >>>>"
-msgstr ""
-
-#: gtt/props-proj.c:70 gtt/props-proj.c:71 gtt/props-task.c:66
-#: gtt/props-task.c:67
-msgid "empty"
-msgstr "boş"
 
 #: logview/about.c:41
 msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel ( miquel@df.uba.ar )"
 
 #: logview/about.c:42
+#, fuzzy
 msgid ""
-"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
-"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"This  program  is  part of  the  GNOME  project. Logview comes with "
+"ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
@@ -1782,10 +2386,6 @@ msgstr ""
 "xəbər : [%s]\n"
 "izah: [%s]\n"
 "əməliyyat : [%s]\n"
-
-#: logview/calendar.c:112 logview/logview.c:107
-msgid "Calendar"
-msgstr "Təqvim"
 
 #: logview/info.c:79 logview/logview.c:110
 msgid "Log stats"
@@ -2008,33 +2608,33 @@ msgstr "Süzgəc..               "
 msgid "Filter log events"
 msgstr "Qeyd əməliyyatlarını süz"
 
-#: logview/logview.c:136
+#: logview/logview.c:137
 msgid "Info about logview"
 msgstr "logview haqqında mə'lumat"
 
-#: logview/logview.c:240
+#: logview/logview.c:241
 msgid "No log files to open"
 msgstr "Açılacaq qeyd faylı yoxdur"
 
 #. Create App
-#: logview/logview.c:263
+#: logview/logview.c:264
 msgid "System Log Viewer"
 msgstr "Sistem qeydi göstəricisi"
 
-#: logview/logview.c:367
+#: logview/logview.c:368
 msgid "Filename: "
 msgstr "Fayl adı : "
 
-#: logview/logview.c:383
+#: logview/logview.c:384
 msgid "Date: "
 msgstr "Tarix : "
 
-#: logview/logview.c:618
+#: logview/logview.c:619
 msgid "Too many open logs. Close one and try again"
 msgstr ""
 "Çox miqdarda qeyd faylı açıqdır. Lütfən bir dənəsini qapat və yenidən sına"
 
-#: logview/logview.c:675
+#: logview/logview.c:676
 msgid "Open new logfile"
 msgstr "Yeni bir qeyd faylı aç"
 
@@ -2216,6 +2816,12 @@ msgstr "Siyahı"
 #: mini-utils/gcolorsel/gcolorsel.c:28
 msgid "Grid"
 msgstr "Tor"
+
+#: mini-utils/gcolorsel/gcolorsel.c:32 mini-utils/gcolorsel/menus.c:573
+#: mini-utils/gcolorsel/menus.c:660 stripchart/params.c:1041
+#: stripchart/params.c:1044
+msgid "Edit"
+msgstr "Düzəlt"
 
 #: mini-utils/gcolorsel/gcolorsel.c:40 stripchart/params.c:1034
 #: stripchart/params.c:1037
@@ -2803,10 +3409,6 @@ msgstr "Sürüşgən"
 msgid "Color"
 msgstr "Rəng"
 
-#: mini-utils/gcolorsel/view-color-list.c:197 mini-utils/guname/moreinfo.c:227
-msgid "Value"
-msgstr "Qiymət"
-
 #. Create everything.
 #: mini-utils/gcolorsel/view-color-list.c:198 mini-utils/guname/moreinfo.c:225
 #: mini-utils/gw/gw.c:490 mini-utils/gw/gw.c:560
@@ -2818,6 +3420,7 @@ msgid "Tolerance :"
 msgstr "Güzəşt sərhədi: "
 
 #: mini-utils/gfontsel/gfontsel.c:162
+#: mini-utils/gfontsel/gfontsel.desktop.in.h:1
 msgid "Font Selector"
 msgstr "Yazı növü Seçicisi"
 
@@ -2874,7 +3477,7 @@ msgstr "_Sabit Yazı Növü"
 msgid "Display text with a fixed font"
 msgstr "Metni belirli bir yazı növüylə göstər"
 
-#: mini-utils/gless/gless.c:351
+#: mini-utils/gless/gless.c:351 mini-utils/gless/gless.desktop.in.h:2
 msgid "Text File Viewer"
 msgstr "Mətn Göstəricisi"
 
@@ -3091,6 +3694,7 @@ msgstr "guname'i bir idarə mərkəzi appleti kimi hərəkət etdir"
 msgid "an initialization error occurred while starting 'guname-capplet'."
 msgstr "'guname-capplet''i başladılırkən bir ağır xəta oldu ."
 
+#: mini-utils/guname/guname-capplet.desktop.in.h:2
 #: mini-utils/guname/guname.c:446
 msgid "System Information"
 msgstr "Sistem mə'lumatları"
@@ -3260,10 +3864,6 @@ msgstr "Boş Yaddaş : "
 msgid "Device"
 msgstr "Avadanlıq"
 
-#: mini-utils/guname/info.c:61
-msgid "Size"
-msgstr "Böyüklük"
-
 #: mini-utils/guname/info.c:62
 msgid "Used space"
 msgstr "İstifadə Edilən disk sahəsi"
@@ -3380,6 +3980,10 @@ msgstr "Əmr"
 #: mini-utils/gw/gw.c:493
 msgid "Add some defaults"
 msgstr "Bəzi əsas qiymətləri əlavə et"
+
+#: mini-utils/gw/gw.c:495
+msgid "Delete"
+msgstr "Sil"
 
 #: mini-utils/gw/gw.c:513
 msgid "Command Editor"
@@ -3525,10 +4129,6 @@ msgstr "Geometriyası"
 #: mini-utils/idetool/idetool.c:315
 msgid "Cache"
 msgstr "Kaşe"
-
-#: mini-utils/idetool/idetool.c:317 mini-utils/idetool/idetool.c:319
-msgid "Status"
-msgstr "Vəziyyət"
 
 #: mini-utils/idetool/idetool.c:323
 msgid "Legacy MFM/RLL drive"
@@ -3850,7 +4450,8 @@ msgid "Scale"
 msgstr "Miqyas"
 
 #: stripchart/chart-app.c:197 stripchart/stripchart-applet.c:69
-#: stripchart/stripchart.c:92 stripchart/stripchart.c:97
+#: stripchart/stripchart-applet.desktop.in.h:2 stripchart/stripchart.c:92
+#: stripchart/stripchart.c:97
 msgid "Stripchart"
 msgstr "Stripchart"
 
@@ -4225,6 +4826,229 @@ msgid ""
 "This is the program used for creating archives."
 msgstr ""
 
+#: gfloppy/gfloppy.desktop.in.h:1
+msgid "Format Floppy Disks"
+msgstr "Disketləri şəkilləndirər"
+
+#: gfloppy/gfloppy.desktop.in.h:2
+msgid "gfloppy"
+msgstr "Disketləri şəkilləndirər"
+
+#: gdictsrc/GDict.desktop.in.h:1 gdictsrc/gdict.desktop.in.h:1
+msgid "GDict"
+msgstr ""
+
+#: gdictsrc/GDict.desktop.in.h:2
+msgid "Gnome client for the MIT dictionary server"
+msgstr ""
+
+#: gdictsrc/gdict.desktop.in.h:2
+msgid "GNOME client for RFC 2229-compliant dictionary server"
+msgstr ""
+
+#: stripchart/stripchart-applet.desktop.in.h:1
+#, fuzzy
+msgid "Shows a stripchart plot"
+msgstr "Stripchart"
+
+#: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
+#, fuzzy
+msgid "Stripchart Plotter"
+msgstr "Stripchart veriləri"
+
+#: notepad/Notepad.desktop.in.h:1
+msgid "Notepad"
+msgstr ""
+
+#: notepad/Notepad.desktop.in.h:2
+msgid "Simple editor (notepad)"
+msgstr ""
+
+#: mini-utils/idetool/idetool.desktop.in.h:1
+msgid "IDE Device Tool"
+msgstr ""
+
+#: mini-utils/idetool/idetool.desktop.in.h:2
+msgid "Show and Configure IDE Device Settings"
+msgstr ""
+
+#: mini-utils/gw/gw.desktop.in.h:1
+#, fuzzy
+msgid "User Listing"
+msgstr "Fəal İstifadəçi Siyahısı"
+
+#: mini-utils/gw/gw.desktop.in.h:2
+msgid "View users on the system"
+msgstr ""
+
+#: mini-utils/guname/guname-capplet.desktop.in.h:1
+#, fuzzy
+msgid "Show various system information"
+msgstr "Sistem mə'lumatları"
+
+#: mini-utils/guname/guname.desktop.in.h:1
+#, fuzzy
+msgid "System Info"
+msgstr "Sistem mə'lumatları"
+
+#: mini-utils/guname/guname.desktop.in.h:2
+msgid "Technical information about this computer"
+msgstr ""
+
+#: mini-utils/gshutdown/gshutdown.desktop.in.h:1
+#, fuzzy
+msgid "Shut Down or Reboot"
+msgstr "Qapat ya da yenidən başlat"
+
+#: mini-utils/gshutdown/gshutdown.desktop.in.h:2
+msgid "Turn off or reset the computer"
+msgstr ""
+
+#: mini-utils/grun/grun.desktop.in.h:1
+msgid "Ask for a command to execute"
+msgstr ""
+
+#: mini-utils/grun/grun.desktop.in.h:2
+#, fuzzy
+msgid "Run A Command..."
+msgstr "Əmr"
+
+#: mini-utils/gpenguin/gpenguin.desktop.in.h:1
+#, fuzzy
+msgid "GNOME Penguin"
+msgstr "GNOME Find"
+
+#: mini-utils/gpenguin/gpenguin.desktop.in.h:2
+msgid "Let a cute pinguin chase your pointer"
+msgstr ""
+
+#: mini-utils/gnome-run/gnome-run.desktop.in.h:1
+msgid "Prompts the user for a program to run"
+msgstr ""
+
+#: mini-utils/gnome-run/gnome-run.desktop.in.h:2
+#, fuzzy
+msgid "Run program..."
+msgstr "Uyğulamadan çıx"
+
+#: mini-utils/gless/gless.desktop.in.h:1
+msgid "Page files as with `more' and `less'"
+msgstr ""
+
+#: mini-utils/gfontsel/gfontsel.desktop.in.h:2
+#, fuzzy
+msgid "Select a font for pasting"
+msgstr "Başlarkən bir lahiyə seç"
+
+#: mini-utils/gcolorsel/gcolorsel.desktop.in.h:1
+#, fuzzy
+msgid "Browse available X11 colors."
+msgstr "Mövcud X11 rənglərini gəzmək üçün bir proqram tə'minatı ."
+
+#: mini-utils/gcolorsel/gcolorsel.desktop.in.h:2
+#, fuzzy
+msgid "Color Browser"
+msgstr "Gnome Rəng Səyyahı"
+
+#: meat-grinder/meat-grinder.desktop.in.h:1
+msgid "Archive Generator"
+msgstr ""
+
+#: meat-grinder/meat-grinder.desktop.in.h:2
+msgid "GNOME Archive Generator aka Meat Grinder"
+msgstr ""
+
+#: logview/logview.desktop.in.h:1
+msgid "SysLog tool"
+msgstr ""
+
+#: logview/logview.desktop.in.h:2
+#, fuzzy
+msgid "System log monitor"
+msgstr "Təqib ediləcək qeydləri seç"
+
+#: gtt/gtt.desktop.in.h:1
+#, fuzzy
+msgid "Time Tracker tool"
+msgstr "GTimeTracker'dən çıx"
+
+#: gtt/gtt.desktop.in.h:2
+#, fuzzy
+msgid "Time tracking tool"
+msgstr "GNOME üçün zaman təqib uyğulaması"
+
+#: gstripchart/gstripchart_applet.desktop.in.h:1
+#, fuzzy
+msgid "Gstripchart"
+msgstr "Stripchart"
+
+#: gstripchart/gstripchart_applet.desktop.in.h:2
+#, fuzzy
+msgid "Shows a stripchart"
+msgstr "Stripchart"
+
+#: gsearchtool/gsearchtool.desktop.in.h:1
+#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
+#, fuzzy
+msgid "GNOME Search Tool"
+msgstr "Gnome axtarış uyğulaması"
+
+#: gdiskfree/gdiskfree.desktop.in.h:1
+#, fuzzy
+msgid "GNOME DiskFree"
+msgstr "GDiskFree"
+
+#: gdiskfree/gdiskfree.desktop.in.h:2
+msgid "Show free space on mounted file systems using dials."
+msgstr ""
+
+#: gcharmap/gcharmap.desktop.in.h:1
+#, fuzzy
+msgid "GNOME Character Map"
+msgstr "Gnome hərf xəritəsi"
+
+#: gcalc/gcalc.desktop.in.h:1
+#, fuzzy
+msgid "Simple Calculator"
+msgstr "Gnome Hesaplayıcı"
+
+#: cromagnon/Cromagnon.desktop.in.h:1
+msgid "Personal cron manager"
+msgstr ""
+
+#: cromagnon/Cromagnon.desktop.in.h:2
+msgid "Personal crontab manager"
+msgstr ""
+
+#~ msgid ""
+#~ "An error occured while reading the configuration file.\n"
+#~ "Shall I setup a new configuration?"
+#~ msgstr ""
+#~ "Quraşdırma faylını oxurkən bir xəta oldu .\n"
+#~ "Yeni bir quraşdırma edim mi?"
+
+#, fuzzy
+#~ msgid "Could not write the configuration file!"
+#~ msgstr "Quraşdırma faylını yaza bilmədim !"
+
+#~ msgid ""
+#~ "This will overwrite your current set of projects.\n"
+#~ "Do you really want to reload the configuration file?"
+#~ msgstr ""
+#~ "Hazırkı lahiyələrin üstünə yazılmaq üzərədir .\n"
+#~ "Həqiqətən də quraşdırma faylının yenidən yüklənməsini istəyirsən?"
+
+#~ msgid "Timeout in secs:"
+#~ msgstr "Vaxt arası ( san. ) : "
+
+#, fuzzy
+#~ msgid "Memo:"
+#~ msgstr "Yaddaş"
+
+#, fuzzy
+#~ msgid "Task Properties"
+#~ msgstr "Xüsusiyyətlər"
+
 #~ msgid "ASCII code:"
 #~ msgstr "ASCII kodu:"
 
@@ -4237,14 +5061,8 @@ msgstr ""
 #~ msgid "Manual..."
 #~ msgstr "Bələdçi..."
 
-#~ msgid "Cancel"
-#~ msgstr "Ləğv Et"
-
 #~ msgid "OK"
 #~ msgstr "Oldu"
-
-#~ msgid "Open log...            "
-#~ msgstr "Qeydi aç ...       "
 
 #~ msgid "Export log...          "
 #~ msgstr "Qeydi itxal et ...   "
@@ -4297,9 +5115,6 @@ msgstr ""
 
 #~ msgid "window1"
 #~ msgstr "pəncərə 1"
-
-#~ msgid "_Save..."
-#~ msgstr "_Qeyd Et ..."
 
 #~ msgid "Write information to disk"
 #~ msgstr "Mə'lumatları diskə yaz"
@@ -4367,14 +5182,8 @@ msgstr ""
 #~ msgid "Find Files"
 #~ msgstr "Fayl Tap"
 
-#~ msgid "Directory:"
-#~ msgstr "Qovluq :"
-
 #~ msgid "Directory to Search"
 #~ msgstr "Axtarılacaq Qovluq"
-
-#~ msgid "GNOME Find"
-#~ msgstr "GNOME Find"
 
 #~ msgid "(C) 1998 the Free Software Foundation"
 #~ msgstr "Təlif haqqı (C) 1998 the Free Software Foundation"
@@ -4438,9 +5247,6 @@ msgstr ""
 #~ msgid "Displayed range"
 #~ msgstr "Göstərilən sərhəd"
 
-#~ msgid "Stripchart Parameters"
-#~ msgstr "Stripchart veriləri"
-
 #~ msgid "Stripchart Viewer"
 #~ msgstr "Stripchart Göstəricisi"
 
@@ -4480,9 +5286,6 @@ msgstr ""
 #~ msgid "black"
 #~ msgstr "qara"
 
-#~ msgid "red"
-#~ msgstr "qırmızı"
-
 #~ msgid "yellow"
 #~ msgstr "sarı"
 
@@ -4521,9 +5324,6 @@ msgstr ""
 
 #~ msgid "Please enter the name of the new lahiyəct:"
 #~ msgstr "Yeni lahiyəyə ad ver : "
-
-#~ msgid "Hide calendar"
-#~ msgstr "Təqvimi gizlət"
 
 #~ msgid "F_ilter"
 #~ msgstr "_Süzgəc"
@@ -4566,11 +5366,3 @@ msgstr ""
 #~ "Yüksək Sıxlıq 5.25\" (1.2 MB)\n"
 #~ "Cüt Sıxlıq 3.5\" (720 KB)\n"
 #~ "Cüt Sıxlıq 5.25\" (360 KB)\n"
-
-#: gfloppy/gfloppy.desktop.in:3
-msgid "gfloppy"
-msgstr "Disketləri şəkilləndirər"
-
-#: gfloppy/gfloppy.desktop.in:4
-msgid "Format Floppy Disks"
-msgstr "Disketləri şəkilləndirər"
