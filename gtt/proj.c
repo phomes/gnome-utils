@@ -1299,6 +1299,27 @@ gtt_task_new (void)
 	return task;
 }
 
+GttTask *
+gtt_task_dup (GttTask *old)
+{
+	GttTask *task;
+
+	if (!old) return gtt_task_new();
+
+	task = g_new0(GttTask, 1);
+	task->parent = NULL;
+	task->memo = g_strdup (old->memo);
+	task->notes = g_strdup (old->notes);
+
+	/* inherit the properties ... important for user */
+	task->billable = old->billable;
+	task->billrate = old->billrate;
+	task->bill_unit = old->bill_unit;
+	task->interval_list = NULL;
+
+	return task;
+}
+
 static int
 task_suspend (GttTask *tsk)
 {
@@ -1320,39 +1341,6 @@ task_suspend (GttTask *tsk)
 	return is_running;
 }
 
-
-GttTask *
-gtt_task_new_insert (GttTask *old)
-{
-	int is_running = 0;
-	GttProject *prj;
-	GttTask *task;
-	int idx;
-
-	task = g_new0(GttTask, 1);
-	task->memo = g_strdup (_("New Task"));
-	task->notes = g_strdup ("");
-
-	/* inherit the properties ... important for user */
-	task->billable = old->billable;
-	task->billrate = old->billrate;
-	task->bill_unit = old->bill_unit;
-	task->interval_list = NULL;
-
-	/* chain into place */
-	prj = old->parent;
-	task->parent = prj;
-	if (!prj) return task;
-
-	/* avoid misplaced running intervals, stop the task */
-	is_running = task_suspend (old);
-
-	idx = g_list_index (prj->task_list, old);
-	prj->task_list = g_list_insert (prj->task_list, task, idx);
-
-	if (is_running) gtt_project_timer_start (prj);
-	return task;
-}
 
 void
 gtt_task_destroy (GttTask *task)
@@ -1405,6 +1393,64 @@ gtt_task_remove (GttTask *task)
 	}
 }
 
+
+void
+gtt_task_insert (GttTask *where, GttTask *insertee)
+{
+	GttProject *prj;
+	int idx;
+	int is_running = 0;
+
+	if (!where || !insertee) return;
+
+	prj = where->parent;
+	if (!prj) return;
+
+	gtt_task_remove (insertee);
+	is_running = task_suspend (where);
+
+	insertee->parent = prj;
+	idx = g_list_index (prj->task_list, where);
+	prj->task_list = g_list_insert (prj->task_list, insertee, idx);
+
+	if (is_running) gtt_project_timer_start (prj);
+	proj_refresh_time (prj);
+}
+
+GttTask *
+gtt_task_new_insert (GttTask *old)
+{
+	int is_running = 0;
+	GttProject *prj;
+	GttTask *task;
+	int idx;
+
+	if (!old) return NULL;
+
+	task = g_new0(GttTask, 1);
+	task->memo = g_strdup (_("New Task"));
+	task->notes = g_strdup ("");
+
+	/* inherit the properties ... important for user */
+	task->billable = old->billable;
+	task->billrate = old->billrate;
+	task->bill_unit = old->bill_unit;
+	task->interval_list = NULL;
+
+	/* chain into place */
+	prj = old->parent;
+	task->parent = prj;
+	if (!prj) return task;
+
+	/* avoid misplaced running intervals, stop the task */
+	is_running = task_suspend (old);
+
+	idx = g_list_index (prj->task_list, old);
+	prj->task_list = g_list_insert (prj->task_list, task, idx);
+
+	if (is_running) gtt_project_timer_start (prj);
+	return task;
+}
 
 void
 gtt_task_add_interval (GttTask *tsk, GttInterval *ival)

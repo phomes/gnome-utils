@@ -45,6 +45,7 @@ typedef struct wiggy_s {
 	GtkWidget *interval_popup;
 	GtkWidget *task_popup;
 	GtkWidget *task_delete_memo;
+	GtkWidget *task_paste;
 	GtkFileSelection *filesel;
 	EditIntervalDialog *edit_ivl;
 	char * filepath;
@@ -294,6 +295,19 @@ task_delete_times_clicked_cb(GtkWidget * w, gpointer data)
 }
 
 static void
+task_paste_clicked_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	GttTask *task;
+
+	if (!cutted_task || !wig->task) return;
+	task = cutted_task;
+	cutted_task = gtt_task_dup (task);
+	
+	gtt_task_insert (wig->task, cutted_task);
+}
+
+static void
 task_popup_cb (Wiggy *wig)
 {
 	gtk_menu_popup(GTK_MENU(wig->task_popup), 
@@ -306,6 +320,16 @@ task_popup_cb (Wiggy *wig)
 	{
 		gtk_widget_set_sensitive (wig->task_delete_memo, TRUE);
 	}
+
+	if (cutted_task)
+	{
+		gtk_widget_set_sensitive (wig->task_paste, TRUE);
+	}
+	else 
+	{
+		gtk_widget_set_sensitive (wig->task_paste, FALSE);
+	}
+
 }
 
 /* ============================================================== */
@@ -484,6 +508,7 @@ do_show_report (const char * report, GttProject *prj)
 	glxml = glade_xml_new ("glade/task_popup.glade", "Task Popup");
 	wig->task_popup = glade_xml_get_widget (glxml, "Task Popup");
 	wig->task_delete_memo = glade_xml_get_widget (glxml, "delete_memo");
+	wig->task_paste = glade_xml_get_widget (glxml, "paste");
 	wig->task=NULL;
 
 	glade_xml_signal_connect_data (glxml, "on_new_task_activate",
@@ -497,6 +522,9 @@ do_show_report (const char * report, GttProject *prj)
 	  
 	glade_xml_signal_connect_data (glxml, "on_delete_times_activate",
 	        GTK_SIGNAL_FUNC (task_delete_times_clicked_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_paste_activate",
+	        GTK_SIGNAL_FUNC (task_paste_clicked_cb), wig);
 	  
 	/* ---------------------------------------------------- */
 	/* finally ... display the actual journal */

@@ -269,7 +269,13 @@ int 		gtt_project_list_total_secs_ever (void);
 
 /* -------------------------------------------------------- */
 /* Tasks */
+/* The gtt_task_dup() routine makes a copy of the indicated task.
+ *    it copies the memo, notes, adn billing info, but not the 
+ *    intervals, nor the parent.
+ */
+
 GttTask *	gtt_task_new (void);
+GttTask *	gtt_task_dup (GttTask *);
 void 		gtt_task_destroy (GttTask *);
 
 void		gtt_task_set_memo (GttTask *, const char *);
@@ -296,6 +302,8 @@ int		gtt_task_get_bill_unit (GttTask *);
  *    settings as the indicated task. It does *not* copy the intervals.
  *    It inserts the new task above the indicated task.
  *
+ * The gtt_task_insert() routine pastes 'insertee' above 'where'.
+ *
  * The gtt_task_merge_up() routine will take all of the intervals of 
  *    the indicated task, and move them into the task above, (thus
  *    gutting this task of its intervals).  It does not actually 
@@ -306,6 +314,7 @@ int		gtt_task_get_bill_unit (GttTask *);
  */
 void		gtt_task_remove (GttTask *);
 GttTask *	gtt_task_new_insert (GttTask *);
+void		gtt_task_insert (GttTask *where, GttTask *insertee);
 void		gtt_task_merge_up (GttTask *);
 gboolean	gtt_task_is_first_task (GttTask *);
 
