@@ -65,16 +65,9 @@ typedef struct ProjTreeNode_s
 	ProjTreeWindow *ptw;
 	GtkCTreeNode *ctnode;
 	GttProject *prj;
-} ProjTreeNode;
 
-struct ProjTreeWindow_s 
-{
-	GtkCTree *ctree;
-	ColType cols[NCOLS];
-	char * col_titles[NCOLS];
-	char * col_values[NCOLS];
-	GtkJustification col_justify[NCOLS];
-	int ncols;
+	char *col_values[NCOLS];
+
 	char ever_timestr[24];
 	char current_timestr[24];
 	char day_timestr[24];
@@ -86,16 +79,23 @@ struct ProjTreeWindow_s
 	char due_timestr[24];
 	char sizing_str[24];
 	char percent_str[24];
+} ProjTreeNode;
+
+struct ProjTreeWindow_s 
+{
+	GtkCTree *ctree;
+	ColType cols[NCOLS];
+	char * col_titles[NCOLS];
+	GtkJustification col_justify[NCOLS];
+	int ncols;
 
 	GdkDragContext *drag_context;
 	GtkCTreeNode *source_ctree_node;
 	GtkCTreeNode *parent_ctree_node;
 	GtkCTreeNode *sibling_ctree_node;
-
-	// int clist_header_width_set;
 };
 
-static void ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand);
+static void ctree_col_values (ProjTreeNode *ptn, gboolean expand);
 
 /* ============================================================== */
 
@@ -229,11 +229,11 @@ tree_expand (GtkCTree *ctree, GtkCTreeNode *row)
 {
 	int i;
 	ProjTreeNode *ptn = gtk_ctree_node_get_row_data(ctree, row);
-	ctree_col_values (ptn->ptw, ptn->prj, TRUE);
+	ctree_col_values (ptn, TRUE);
 	for (i=0; i<ptn->ptw->ncols; i++)
 	{
 		gtk_ctree_node_set_text(ptn->ptw->ctree, 
-			ptn->ctnode, i, ptn->ptw->col_values[i]);
+			ptn->ctnode, i, ptn->col_values[i]);
 	}
 }
 
@@ -242,11 +242,11 @@ tree_collapse (GtkCTree *ctree, GtkCTreeNode *row)
 {
 	int i;
 	ProjTreeNode *ptn = gtk_ctree_node_get_row_data(ctree, row);
-	ctree_col_values (ptn->ptw, ptn->prj, FALSE);
+	ctree_col_values (ptn, FALSE);
 	for (i=0; i<ptn->ptw->ncols; i++)
 	{
 		gtk_ctree_node_set_text(ptn->ptw->ctree, 
-			ptn->ctnode, i, ptn->ptw->col_values[i]);
+			ptn->ctnode, i, ptn->col_values[i]);
 	}
 }
 
@@ -686,7 +686,7 @@ ctree_update_column_visibility (ProjTreeWindow *ptw)
 /* ============================================================== */
 
 #define PRT_TIME(SLOT) {						\
-	ptw->col_values[i] =  ptw->SLOT##_timestr;			\
+	ptn->col_values[i] =  ptn->SLOT##_timestr;			\
 	if (config_show_title_##SLOT) {					\
 		time_t secs;						\
 		if (expand) {						\
@@ -694,14 +694,16 @@ ctree_update_column_visibility (ProjTreeWindow *ptw)
 		} else {						\
 			secs = gtt_project_total_secs_##SLOT(prj); 	\
 		}							\
-		print_hours_elapsed (ptw->SLOT##_timestr, 24, 		\
+		print_hours_elapsed (ptn->SLOT##_timestr, 24, 		\
 			secs, config_show_secs);			\
 	}								\
 }
 
 static void 
-ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand)
+ctree_col_values (ProjTreeNode *ptn, gboolean expand)
 {
+	GttProject *prj = ptn->prj;
+	ProjTreeWindow *ptw = ptn->ptw;
 	int i;
 
 	/* set column values */
@@ -728,12 +730,12 @@ ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand)
 			PRT_TIME(year);
 			break;
 		case TITLE_COL:
-			ptw->col_values[i] = 
+			ptn->col_values[i] = 
 				(char *) gtt_project_get_title(prj);
 			break;
 		case DESC_COL:
 			if (config_show_title_desc) {
-				ptw->col_values[i] = 
+				ptn->col_values[i] = 
 					(char *) gtt_project_get_desc(prj);
 			}
 			break;
@@ -743,57 +745,57 @@ ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand)
 				leadnode = gtt_project_get_tasks (prj);
 				if (leadnode)
 				{
-					ptw->col_values[i] =  
+					ptn->col_values[i] =  
 					(char *) gtt_task_get_memo (leadnode->data);
 				}
 				else
 				{
-					ptw->col_values[i] = "";
+					ptn->col_values[i] = "";
 				}
 			}
 			break;
 		case START_COL:
-			ptw->col_values[i] =  ptw->start_timestr;
+			ptn->col_values[i] =  ptn->start_timestr;
 			if (config_show_title_estimated_start) {
 				time_t secs;
 				secs = gtt_project_get_estimated_start(prj);
-				print_hours_elapsed (ptw->start_timestr, 24, 
+				print_hours_elapsed (ptn->start_timestr, 24, 
 					secs, config_show_secs);
 			}
 			break;
 		case END_COL:
-			ptw->col_values[i] =  ptw->end_timestr;
+			ptn->col_values[i] =  ptn->end_timestr;
 			if (config_show_title_estimated_end) {
 				time_t secs;
 				secs = gtt_project_get_estimated_end(prj);
-				print_hours_elapsed (ptw->end_timestr, 24, 
+				print_hours_elapsed (ptn->end_timestr, 24, 
 					secs, config_show_secs);
 			}
 			break;
 		case DUE_COL:
-			ptw->col_values[i] =  ptw->due_timestr;
+			ptn->col_values[i] =  ptn->due_timestr;
 			if (config_show_title_due_date) {
 				time_t secs;
 				secs = gtt_project_get_due_date(prj);
-				print_hours_elapsed (ptw->due_timestr, 24, 
+				print_hours_elapsed (ptn->due_timestr, 24, 
 					secs, config_show_secs);
 			}
 			break;
 		case SIZING_COL:
-			ptw->col_values[i] =  ptw->sizing_str;
+			ptn->col_values[i] =  ptn->sizing_str;
 			if (config_show_title_sizing) {
 				int sz;
 				sz = gtt_project_get_sizing(prj);
-				snprintf (ptw->sizing_str, 24, 
+				snprintf (ptn->sizing_str, 24, 
 					"%.2f", (((double)sz)/3600.0));
 			}
 			break;
 		case PERCENT_COL:
-			ptw->col_values[i] =  ptw->percent_str;
+			ptn->col_values[i] =  ptn->percent_str;
 			if (config_show_title_percent_complete) {
 				int sz;
 				sz = gtt_project_get_percent_complete(prj);
-				snprintf (ptw->percent_str, 24, 
+				snprintf (ptn->percent_str, 24, 
 					"%d%%",sz);
 			}
 			break;
@@ -802,10 +804,10 @@ ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand)
 				GttRank rank;
 				rank = gtt_project_get_urgency (prj);
 				switch (rank) {
-			case GTT_UNDEFINED: ptw->col_values[i] = "-"; break;
-			case GTT_LOW:    ptw->col_values[i] = _("3"); break;
-			case GTT_MEDIUM: ptw->col_values[i] = _("2"); break;
-			case GTT_HIGH:   ptw->col_values[i] = _("1"); break;
+			case GTT_UNDEFINED: ptn->col_values[i] = "-"; break;
+			case GTT_LOW:    ptn->col_values[i] = _("3"); break;
+			case GTT_MEDIUM: ptn->col_values[i] = _("2"); break;
+			case GTT_HIGH:   ptn->col_values[i] = _("1"); break;
 				}
 			}
 			break;
@@ -814,10 +816,10 @@ ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand)
 				GttRank rank;
 				rank = gtt_project_get_importance (prj);
 				switch (rank) {
-			case GTT_UNDEFINED: ptw->col_values[i] = "-"; break;
-			case GTT_LOW:    ptw->col_values[i] = _("Low"); break;
-			case GTT_MEDIUM: ptw->col_values[i] = _("Med"); break;
-			case GTT_HIGH:   ptw->col_values[i] = _("High"); break;
+			case GTT_UNDEFINED: ptn->col_values[i] = "-"; break;
+			case GTT_LOW:    ptn->col_values[i] = _("Low"); break;
+			case GTT_MEDIUM: ptn->col_values[i] = _("Med"); break;
+			case GTT_HIGH:   ptn->col_values[i] = _("High"); break;
 				}
 			}
 			break;
@@ -826,16 +828,16 @@ ctree_col_values (ProjTreeWindow *ptw, GttProject *prj, gboolean expand)
 				GttProjectStatus status;
 				status = gtt_project_get_status (prj);
 				switch (status) {
-			case GTT_NOT_STARTED: ptw->col_values[i] = _("Not Started"); break;
-			case GTT_IN_PROGRESS: ptw->col_values[i] = _("In Progress"); break;
-			case GTT_ON_HOLD:     ptw->col_values[i] = _("On Hold"); break;
-			case GTT_CANCELLED:   ptw->col_values[i] = _("Cancelled"); break;
-			case GTT_COMPLETED:   ptw->col_values[i] = _("Completed"); break;
+			case GTT_NOT_STARTED: ptn->col_values[i] = _("Not Started"); break;
+			case GTT_IN_PROGRESS: ptn->col_values[i] = _("In Progress"); break;
+			case GTT_ON_HOLD:     ptn->col_values[i] = _("On Hold"); break;
+			case GTT_CANCELLED:   ptn->col_values[i] = _("Cancelled"); break;
+			case GTT_COMPLETED:   ptn->col_values[i] = _("Completed"); break;
 				}
 			}
 			break;
 		case NULL_COL:
-			ptw->col_values[i] =  "";
+			ptn->col_values[i] =  "";
 			break;
 		}
 	}
@@ -851,11 +853,11 @@ redraw (GttProject *prj, gpointer data)
 	ProjTreeWindow *ptw = ptn->ptw;
 	int i;
 
-	ctree_col_values (ptw, prj, GTK_CTREE_ROW(ptn->ctnode)->expanded);
+	ctree_col_values (ptn, GTK_CTREE_ROW(ptn->ctnode)->expanded);
 	for (i=0; i<ptw->ncols; i++)
 	{
 		gtk_ctree_node_set_text(ptw->ctree, ptn->ctnode, 
-			i, ptw->col_values[i]);
+			i, ptn->col_values[i]);
 	}
 }
 
@@ -1074,7 +1076,6 @@ ctree_add (ProjTreeWindow *ptw, GttProject *p, GtkCTreeNode *parent)
 	ProjTreeNode *ptn;
 	GList *n;
 
-	ctree_col_values (ptw, p, FALSE);
 	ptn = gtt_project_get_private_data (p);
 	if (!ptn)
 	{
@@ -1084,8 +1085,9 @@ ctree_add (ProjTreeWindow *ptw, GttProject *p, GtkCTreeNode *parent)
 		gtt_project_set_private_data (p, ptn);
 		gtt_project_add_notifier (p, redraw, ptn);
 	}
+	ctree_col_values (ptn, FALSE);
 	ptn->ctnode = gtk_ctree_insert_node (ptw->ctree,  parent, NULL,
-                               ptw->col_values, 0, NULL, NULL, NULL, NULL,
+                               ptn->col_values, 0, NULL, NULL, NULL, NULL,
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
@@ -1107,7 +1109,6 @@ ctree_insert_before (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 	GtkCTreeNode *sibnode=NULL;
 	GtkCTreeNode *parentnode=NULL;
 
-	ctree_col_values (ptw, p, FALSE);
 	if (sibling)
 	{
 		GttProject *parent = gtt_project_get_parent (sibling);
@@ -1129,9 +1130,10 @@ ctree_insert_before (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 		gtt_project_set_private_data (p, ptn);
 		gtt_project_add_notifier (p, redraw, ptn);
 	}
+	ctree_col_values (ptn, FALSE);
 	ptn->ctnode = gtk_ctree_insert_node (ptw->ctree,  
                                parentnode, sibnode,
-                               ptw->col_values, 0, NULL, NULL, NULL, NULL,
+                               ptn->col_values, 0, NULL, NULL, NULL, NULL,
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
@@ -1146,7 +1148,6 @@ ctree_insert_after (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 	GtkCTreeNode *parentnode=NULL;
 	GtkCTreeNode *next_sibling=NULL;
 
-	ctree_col_values (ptw, p, FALSE);
 	if (sibling)
 	{
 		GttProject *parent = gtt_project_get_parent (sibling);
@@ -1175,9 +1176,10 @@ ctree_insert_after (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 		gtt_project_set_private_data (p, ptn);
 		gtt_project_add_notifier (p, redraw, ptn);
 	}
+	ctree_col_values (ptn, FALSE);
 	ptn->ctnode = gtk_ctree_insert_node (ptw->ctree,  
                                parentnode, next_sibling,
-                               ptw->col_values, 0, NULL, NULL, NULL, NULL,
+                               ptn->col_values, 0, NULL, NULL, NULL, NULL,
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
@@ -1213,12 +1215,12 @@ ctree_update_label(ProjTreeWindow *ptw, GttProject *p)
 	if (!ptw || !p) return;
 	ptn = gtt_project_get_private_data (p);
 	g_return_if_fail (NULL != ptn);
-	ctree_col_values (ptw, p, GTK_CTREE_ROW(ptn->ctnode)->expanded);
+	ctree_col_values (ptn, GTK_CTREE_ROW(ptn->ctnode)->expanded);
 
 	for (i=0; i<ptw->ncols; i++)
 	{
 		gtk_ctree_node_set_text(ptw->ctree, 
-			ptn->ctnode, i, ptw->col_values[i]);
+			ptn->ctnode, i, ptn->col_values[i]);
 	}
 
 	update_status_bar();
