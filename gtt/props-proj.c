@@ -271,7 +271,7 @@ prop_dialog_show(GttProject *proj)
 void 
 prop_dialog_set_project(GttProject *proj)
 {
-	if (!dlg) prop_dialog_new();
+	if (!dlg) return;
  
 	do_set_project(proj);
 }
