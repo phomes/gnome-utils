@@ -22,13 +22,13 @@
   <widget>
     <class>GtkPixmapMenuItem</class>
     <name>new_task</name>
-    <tooltip>Insert a new task above this one.</tooltip>
+    <tooltip>Insert a new memo above this one.</tooltip>
     <signal>
       <name>activate</name>
       <handler>on_new_task_activate</handler>
       <last_modification_time>Wed, 12 Sep 2001 13:29:35 GMT</last_modification_time>
     </signal>
-    <label>_New Task</label>
+    <label>_New Memo</label>
     <right_justify>False</right_justify>
     <stock_icon>GNOME_STOCK_MENU_NEW</stock_icon>
   </widget>
@@ -42,7 +42,7 @@
       <handler>on_edit_task_activate</handler>
       <last_modification_time>Wed, 12 Sep 2001 13:29:35 GMT</last_modification_time>
     </signal>
-    <label>_Edit Task</label>
+    <label>_Edit Memo</label>
     <right_justify>False</right_justify>
     <stock_icon>GNOME_STOCK_MENU_PROP</stock_icon>
   </widget>
@@ -50,7 +50,7 @@
   <widget>
     <class>GtkPixmapMenuItem</class>
     <name>delete_memo</name>
-    <tooltip>Delete the task only, keep the time intervals</tooltip>
+    <tooltip>Delete the memo only, keep the time intervals</tooltip>
     <signal>
       <name>activate</name>
       <handler>on_delete_memo_activate</handler>
@@ -64,7 +64,7 @@
   <widget>
     <class>GtkPixmapMenuItem</class>
     <name>delete_times</name>
-    <tooltip>Delete the task, the memo, and the time intervals below it.</tooltip>
+    <tooltip>Delete the memo, and the time intervals below it.</tooltip>
     <signal>
       <name>activate</name>
       <handler>on_delete_times_activate</handler>
@@ -78,12 +78,13 @@
   <widget>
     <class>GtkPixmapMenuItem</class>
     <name>paste</name>
+    <tooltip>Paste a previously cut memo.</tooltip>
     <signal>
       <name>activate</name>
       <handler>on_paste_activate</handler>
       <last_modification_time>Wed, 12 Sep 2001 16:37:38 GMT</last_modification_time>
     </signal>
-    <label>paste</label>
+    <label>_Paste Memo</label>
     <right_justify>False</right_justify>
     <stock_icon>GNOME_STOCK_MENU_PASTE</stock_icon>
   </widget>

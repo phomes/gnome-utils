@@ -43,6 +43,7 @@ typedef struct wiggy_s {
 	GtkHTMLStream *handle;
 	GtkWidget *top;
 	GtkWidget *interval_popup;
+	GtkWidget *interval_paste;
 	GtkWidget *task_popup;
 	GtkWidget *task_delete_memo;
 	GtkWidget *task_paste;
@@ -239,10 +240,28 @@ interval_insert_memo_cb(GtkWidget * w, gpointer data)
 }
 
 static void
+interval_paste_memo_cb(GtkWidget * w, gpointer data) 
+{
+	Wiggy *wig = (Wiggy *) data;
+	GttTask *newtask;
+printf ("duude paste\n");
+	// newtask = gtt_interval_split (wig->interval);
+	// prop_task_dialog_show (newtask);
+}
+
+static void
 interval_popup_cb (Wiggy *wig)
 {
 	gtk_menu_popup(GTK_MENU(wig->interval_popup), 
 		NULL, NULL, NULL, wig, 1, 0);
+	if (cutted_task)
+	{
+		gtk_widget_set_sensitive (wig->interval_paste, TRUE);
+	}
+	else 
+	{
+		gtk_widget_set_sensitive (wig->interval_paste, FALSE);
+	}
 }
 
 /* ============================================================== */
@@ -484,6 +503,7 @@ do_show_report (const char * report, GttProject *prj)
 
 	glxml = glade_xml_new ("glade/interval_popup.glade", "Interval Popup");
 	wig->interval_popup = glade_xml_get_widget (glxml, "Interval Popup");
+	wig->interval_paste = glade_xml_get_widget (glxml, "paste_memo");
 	wig->interval=NULL;
 
 	glade_xml_signal_connect_data (glxml, "on_edit_activate",
@@ -500,6 +520,9 @@ do_show_report (const char * report, GttProject *prj)
 	  
 	glade_xml_signal_connect_data (glxml, "on_insert_memo_activate",
 	        GTK_SIGNAL_FUNC (interval_insert_memo_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_paste_memo_activate",
+	        GTK_SIGNAL_FUNC (interval_paste_memo_cb), wig);
 	  
 	/* ---------------------------------------------------- */
 	/* this is the popup menu that says 'edit/delete/merge' */
