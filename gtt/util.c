@@ -46,7 +46,7 @@
 /* ============================================================== */
 
 char *
-print_time (char * buff, int len, int secs, gboolean show_secs)
+print_hours_elapsed (char * buff, int len, int secs, gboolean show_secs)
 {
 	size_t flen;
 	if (0 <= secs)

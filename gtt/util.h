@@ -30,11 +30,13 @@ typedef enum
   DATE_FORMAT_LOCALE    /* Take from locale information */
 } DateFormat;
 
-/* The print_time() routine will print the time as HH:MM, and will 
- *    print the seconds if show_secs is true.  In analogy to the gnu 
- *    stpcpy, returns a pointer to the trailing null
+/* The print_hours_elapsed() routine will print the 'secs' argument
+ *    as HH:MM, and will print the seconds if show_secs is true.  
+ *    Thus, for example, secs=3599 will print as 0:59
+ *    In analogy to the gnu stpcpy, returns a pointer to the trailing 
+ *    null character.
  */
-char * print_time (char * buff, int len, int secs, gboolean show_secs);
+char * print_hours_elapsed (char * buff, int len, int secs, gboolean show_secs);
 
 /* The set_date_format() routine sets date format to one of 
  *    US, UK, CE, OR ISO.  Checks to make sure it's a legal value.

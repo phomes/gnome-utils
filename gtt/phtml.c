@@ -70,7 +70,7 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 			p = stpcpy (p, "<td>");
 			p = print_date_time (p, 70, stop);
 			p = stpcpy (p, "<td>");
-			p = print_time (p, 40, elapsed, TRUE);
+			p = print_hours_elapsed (p, 40, elapsed, TRUE);
 			len = p - prn;
 			(phtml->write_stream) (phtml, prn, len);
 		}
