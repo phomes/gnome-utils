@@ -21,6 +21,7 @@ gcalc_SOURCES = \
 gcalc_LDADD = \
 	$(GNOME_LIBDIR) \
 	$(GNOMEUI_LIBS) \
+	-lX11 \
 	$(INTLLIBS) \
 	@PIXBUF_LIBS@
 
