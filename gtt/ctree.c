@@ -57,7 +57,7 @@ typedef enum {
 	STATUS_COL,
 } ColType;
 
-#define NCOLS		18
+#define NCOLS		20
 
 
 typedef struct ProjTreeNode_s
@@ -243,7 +243,7 @@ click_column(GtkCList *clist, gint col, gpointer data)
 	ProjTreeWindow *ptw = data;
 	ColType ct;
 
-	if ((0 > col) || (NCOLS <= col)) return;
+	if ((0 > col) || (ptw->ncols <= col)) return;
 	ct = ptw->cols[col];
 	switch (ct)
 	{
