@@ -65,7 +65,7 @@ enum {
 const FindOptionTemplate templates[] = {
 	{ FIND_OPTION_TEXT, "-name '%s'", N_("File name is") },
 	{ FIND_OPTION_TEXT, "'!' -name '%s'", N_("File name is not") }, 
-	{ FIND_OPTION_BOOL, "-mount", N_("Don't search mounted filesystems") },
+	{ FIND_OPTION_BOOL, "-xdev", N_("Don't search mounted filesystems") },
 	{ FIND_OPTION_BOOL, "-follow", N_("Follow symbolic links") },	
 	{ FIND_OPTION_BOOL, "-depth", N_("Process folder contents depth first") },
 	{ FIND_OPTION_TEXT, "-user '%s'", N_("Owned by user") },
@@ -288,7 +288,7 @@ make_locate_cmd(void)
 		g_string_append_printf (cmdbuf, "exec %s '%s*%s'", locate_command, locale_locate_path,
 					locale_locate_string);
 	} else {
-		g_string_append_printf (cmdbuf, "exec find \"%s\" -name '%s' -mount", locale_locate_path, 
+		g_string_append_printf (cmdbuf, "exec find \"%s\" -name '%s' -xdev", locale_locate_path, 
 					locale_locate_string);
 	}	
 	g_free (locate_path);
