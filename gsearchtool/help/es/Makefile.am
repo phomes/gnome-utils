@@ -1,12 +1,7 @@
-figs = \
-	figures/gsearch.png  \
-	figures/locate.png  \
-	figures/mainwin.png  \
-	figures/results.png
-
-docname = gsearchtool
+figdir = figures
+docname = gnome-search-tool
 lang = es
-omffile = gsearchtool-es.omf
-sgml_ents =
-include $(top_srcdir)/sgmldocs.make
+omffile = gnome-search-tool-es.omf
+entities = legal.xml
+include $(top_srcdir)/xmldocs.make
 dist-hook: app-dist-hook
