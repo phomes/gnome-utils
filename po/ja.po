@@ -8,9 +8,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 1.109.0\n"
-"POT-Creation-Date: 2002-08-20 10:07+0100\n"
-"PO-Revision-Date: 2002-06-13 18:10+0900\n"
+"Project-Id-Version: gnome-utils 2.0.3\n"
+"POT-Creation-Date: 2002-08-28 19:20+0900\n"
+"PO-Revision-Date: 2002-08-28 19:32+0900\n"
 "Last-Translator: Takayuki KUSNAO <AE5T-KSN@asahi-net.or.jp>\n"
 "Language-Team: Japanese <translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -131,7 +131,7 @@ msgstr "逆数"
 
 #: gcalc/gnome-calc.c:1253
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1253
 msgid "Square"
@@ -167,7 +167,7 @@ msgstr "INV"
 
 #: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
-msgstr ""
+msgstr "逆三角・対数関数"
 
 #. inverse button
 #: gcalc/gnome-calc.c:1259
@@ -237,7 +237,7 @@ msgstr "自然対数"
 
 #: gcalc/gnome-calc.c:1269
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "x<sup>y</sup>"
 
 #: gcalc/gnome-calc.c:1269
 msgid "Power"
@@ -440,14 +440,12 @@ msgid "_Insert"
 msgstr "挿入(_I)"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "文字コード:"
+msgstr "文字コード(_O):"
 
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "文字:"
+msgstr "文字(_A):"
 
 #: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
@@ -536,9 +534,8 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "文字コードを選んで文字を挿入"
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
-msgstr "文字(_C)"
+msgstr "文字(_A)"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
@@ -629,13 +626,12 @@ msgstr ""
 "考のために、デフォルトのサーバは dict.org で、ポートは 2628 です。"
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "辞書"
+msgstr "GNOME 辞書"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "Copyright 1999 by Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -896,31 +892,37 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"スマート検索を使用するかどうかを指定します。辞書サーバがこのオプションをサ"
+"ポートしているかどうかに依存します。デフォルトは TRUE (使用する) です"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "辞書サーバで利用するデータベース"
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"接続する辞書サーバ。デフォルトのサーバは dict.org です。他のサーバについては"
+"詳細は http://www.dict.org/ を参照してください\n"
+"        "
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"辞書サーバで、どの名前のデータベースを利用するのかを指定。! を指定すると、 "
+"gnome-dictionary は対象のサーバですべてのデータベースを検索します"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "接続するポート番号。デフォルトは 2628"
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "検索方法"
+msgstr "利用する検索方法"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -928,6 +930,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"どのような方法で検索するか。辞書サーバがサポートしている検索方法に依存しま"
+"す。デフォルトの検索方法は 'lev' です。Levenshtein 距離を使って単語にマッチさ"
+"せます"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1587,14 +1592,12 @@ msgid "Actions"
 msgstr "アクション"
 
 #: logview/actions.c:153
-#, fuzzy
 msgid "_Add"
-msgstr "追加"
+msgstr "追加(_A)"
 
 #: logview/actions.c:160
-#, fuzzy
 msgid "_Edit"
-msgstr "終了"
+msgstr "編集(_E)"
 
 #: logview/actions.c:167 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
@@ -1616,7 +1619,7 @@ msgstr "アクションデータベースに書き込めません!"
 
 #: logview/actions.c:486
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "指定したアクションの実行でエラー"
 
 #: logview/actions.c:507
 msgid "<empty>"
@@ -1643,9 +1646,8 @@ msgid "description"
 msgstr "説明"
 
 #: logview/actions.c:772
-#, fuzzy
 msgid "_Description:"
-msgstr "説明:"
+msgstr "説明(_D):"
 
 #: logview/actions.c:781
 msgid "Description of this entry."
@@ -1679,48 +1681,48 @@ msgstr "カレンダ"
 #.
 #: logview/config.c:34
 msgid "fixed 12"
-msgstr ""
+msgstr "fixed 12"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:36
 msgid "fixed Bold 12"
-msgstr ""
+msgstr "fixed Bold 12"
 
 #: logview/config.c:37
 msgid "fixed 10"
-msgstr ""
+msgstr "fixed 10"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:39
 msgid "fixed Bold 8"
-msgstr ""
+msgstr "fixed Bold 8"
 
 #. Translators: translate to fonts that appear well in the log viewer,
 #. * for example for asian languages, helvetica seems not to work
 #. * well for those
 #: logview/config.c:44
 msgid "Helvetica 14"
-msgstr ""
+msgstr "Helvetica 14"
 
 #: logview/config.c:45
 msgid "Helvetica Bold 14"
-msgstr ""
+msgstr "Helvetica Bold 14"
 
 #: logview/config.c:46
 msgid "Helvetica 12"
-msgstr ""
+msgstr "Helvetica 12"
 
 #: logview/config.c:47
 msgid "Helvetica Bold 12"
-msgstr ""
+msgstr "Helvetica Bold 12"
 
 #: logview/config.c:48
 msgid "Helvetica 10"
-msgstr ""
+msgstr "Helvetica 10"
 
 #: logview/config.c:49
 msgid "Helvetica Bold 10"
-msgstr ""
+msgstr "Helvetica Bold 10"
 
 #: logview/desc_db.c:37
 #, c-format
