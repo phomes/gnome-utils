@@ -12,7 +12,7 @@ INCLUDES = 						\
 	-DGNOMELOCALEDIR=\""$(datadir)/locale"\" 	\
 	-DLOCALEDIR=\"$(datadir)/locale\"		\
 	-I$(includedir)					\
-	$(GNOME_INCLUDEDIR)
+	$(GNOME_INCLUDEDIR) $(GLADE_CFLAGS)
 
 bin_PROGRAMS = gcolorsel
 
