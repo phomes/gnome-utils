@@ -23,9 +23,9 @@
 #include <string.h>
 #include <stdio.h>
 
-typedef struct saver_info saver_info;
-typedef struct pref_s saver_preferences;
-typedef struct saver_screen_info saver_screen_info;
+typedef struct timeout_info timeout_info;
+typedef struct pref_s timeout_preferences;
+typedef struct timeout_screen_info timeout_screen_info;
 
 struct pref_s
 {
@@ -38,12 +38,12 @@ struct pref_s
 /* This structure holds all the data that applies to the program as a whole,
    or to the non-screen-specific parts of the display connection.
  */
-struct saver_info {
-  saver_preferences prefs;
+struct timeout_info {
+  timeout_preferences prefs;
 
   int nscreens;
-  saver_screen_info *screens;
-  saver_screen_info *default_screen;	/* ...on which dialogs will appear. */
+  timeout_screen_info *screens;
+  timeout_screen_info *default_screen;	/* ...on which dialogs will appear. */
 
   Display *dpy;
 
@@ -66,7 +66,7 @@ struct saver_info {
 
   time_t last_activity_time;		   /* Used only when no server exts. */
   time_t last_wall_clock_time;             /* Used to detect laptop suspend. */
-  saver_screen_info *last_activity_screen;
+  timeout_screen_info *last_activity_screen;
 
   Bool emergency_lock_p;        /* Set when the wall clock has jumped
                                    (presumably due to laptop suspend) and we
@@ -80,8 +80,9 @@ struct saver_info {
    of the display connection; if the display has multiple screens, there will
    be one of these for each screen.
  */
-struct saver_screen_info {
-  saver_info *global;
+struct timeout_screen_info 
+{
+  timeout_info *global;
 
   Screen *screen;
   // Widget toplevel_shell;
@@ -99,20 +100,20 @@ struct saver_screen_info {
    ======================================================================= */
 
 #ifdef HAVE_MIT_SAVER_EXTENSION
-extern Bool query_mit_saver_extension (saver_info *);
+extern Bool query_mit_saver_extension (timeout_info *);
 #endif
 #ifdef HAVE_SGI_SAVER_EXTENSION
-extern Bool query_sgi_saver_extension (saver_info *);
+extern Bool query_sgi_saver_extension (timeout_info *);
 #endif
 #ifdef HAVE_XIDLE_EXTENSION
-extern Bool query_xidle_extension (saver_info *);
+extern Bool query_xidle_extension (timeout_info *);
 #endif
 #ifdef HAVE_PROC_INTERRUPTS
-extern Bool query_proc_interrupts_available (saver_info *, const char **why);
+extern Bool query_proc_interrupts_available (timeout_info *, const char **why);
 #endif
 
 /* return number of seconds that system has been idle */
-int poll_idle_time (saver_info *si, Bool until_idle_p);
+int poll_idle_time (timeout_info *si, Bool until_idle_p);
 
 
 #endif /* __IDLE_TIMER_H__ */
