@@ -329,17 +329,6 @@ interval_popup_cb (Wiggy *wig)
 }
 
 /* ============================================================== */
-/* memo edits */
-
-static void
-memo_edit_cb (Wiggy *wig)
-{
-	printf ("duude edit the memo !!! \n");
-
-	prop_task_dialog (wig->task);
-}
-
-/* ============================================================== */
 /* html events */
 
 static void
@@ -365,7 +354,8 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 	if (0 == strncmp (url, "gtt:task", 8))
 	{
 		wig->task = addr;
-		memo_edit_cb (wig);
+		prop_task_dialog (wig->task);
+// hack alert xxx fixme -- we need to redraw after editing !!!
 	}
 	else
 	{
