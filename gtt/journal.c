@@ -29,7 +29,8 @@
 #include "phtml.h"
 #include "proj.h"
 
-static gboolean glade_inited = FALSE;
+
+/* this struct is a random mish-mash of stuff, not well organized */
 
 typedef struct wiggy_s {
 	GttPhtml  ph;     /* must be first elt for cast to work */
@@ -382,12 +383,6 @@ edit_journal(GtkWidget *widget, gpointer data)
 	GtkWidget *jnl_top, *jnl_viewport, *jnl_browser;
 	GladeXML  *glxml;
 	Wiggy *wig;
-
-	if (!glade_inited)
-	{
-		glade_gnome_init ();
-		glade_inited = TRUE;
-	}
 
 	glxml = glade_xml_new ("glade/journal.glade", "Journal Window");
 

@@ -52,8 +52,8 @@
       <rows>3</rows>
       <columns>2</columns>
       <homogeneous>False</homogeneous>
-      <row_spacing>0</row_spacing>
-      <column_spacing>0</column_spacing>
+      <row_spacing>3</row_spacing>
+      <column_spacing>3</column_spacing>
 
       <widget>
 	<class>GnomeEntry</class>
@@ -463,7 +463,7 @@
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
-	<text_max_length>10</text_max_length>
+	<text_max_length>0</text_max_length>
 	<text></text>
 	<child>
 	  <left_attach>1</left_attach>
@@ -487,7 +487,7 @@
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
-	<text_max_length>10</text_max_length>
+	<text_max_length>0</text_max_length>
 	<text></text>
 	<child>
 	  <left_attach>1</left_attach>
@@ -511,7 +511,7 @@
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
-	<text_max_length>10</text_max_length>
+	<text_max_length>0</text_max_length>
 	<text></text>
 	<child>
 	  <left_attach>1</left_attach>
@@ -535,7 +535,7 @@
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
-	<text_max_length>10</text_max_length>
+	<text_max_length>0</text_max_length>
 	<text></text>
 	<child>
 	  <left_attach>1</left_attach>
@@ -573,8 +573,8 @@
       <rows>3</rows>
       <columns>3</columns>
       <homogeneous>False</homogeneous>
-      <row_spacing>0</row_spacing>
-      <column_spacing>0</column_spacing>
+      <row_spacing>3</row_spacing>
+      <column_spacing>3</column_spacing>
 
       <widget>
 	<class>GtkLabel</class>
@@ -658,7 +658,7 @@
 	<class>GtkLabel</class>
 	<name>label34</name>
 	<label>seconds</label>
-	<justify>GTK_JUSTIFY_LEFT</justify>
+	<justify>GTK_JUSTIFY_RIGHT</justify>
 	<wrap>False</wrap>
 	<xalign>0</xalign>
 	<yalign>0.5</yalign>
