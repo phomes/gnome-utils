@@ -5,11 +5,12 @@
 # Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
 # Christian Meyer <chrisime@gnome.org>, 2001, 2002.
 # Simon Westhues <westhues@muenster.de>, 2002.
-#
+# Christian Neumair <chris@gnome-de.org>, 2002.
+
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.x\n"
-"POT-Creation-Date: 2002-11-18 21:12+0000\n"
+"POT-Creation-Date: 2002-12-11 19:10+0100\n"
 "PO-Revision-Date: 2002-08-13 11:06+0100\n"
 "Last-Translator: Christian Neumair <christian-neumair@web.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -1823,90 +1824,90 @@ msgstr "Zeilenanzahl:"
 msgid "%ld bytes"
 msgstr "%ld Byte"
 
-#: logview/log_repaint.c:84
+#: logview/log_repaint.c:83
 msgid "January"
 msgstr "Januar"
 
-#: logview/log_repaint.c:84
+#: logview/log_repaint.c:83
 msgid "February"
 msgstr "Februar"
 
-#: logview/log_repaint.c:84
+#: logview/log_repaint.c:83
 msgid "March"
 msgstr "März"
 
-#: logview/log_repaint.c:84
+#: logview/log_repaint.c:83
 msgid "April"
 msgstr "April"
 
-#: logview/log_repaint.c:84
+#: logview/log_repaint.c:83
 msgid "May"
 msgstr "Mai"
 
-#: logview/log_repaint.c:85
+#: logview/log_repaint.c:84
 msgid "June"
 msgstr "Juni"
 
-#: logview/log_repaint.c:85
+#: logview/log_repaint.c:84
 msgid "July"
 msgstr "Juli"
 
-#: logview/log_repaint.c:85
+#: logview/log_repaint.c:84
 msgid "August"
 msgstr "August"
 
-#: logview/log_repaint.c:85
+#: logview/log_repaint.c:84
 msgid "September"
 msgstr "September"
 
-#: logview/log_repaint.c:85
+#: logview/log_repaint.c:84
 msgid "October"
 msgstr "Oktober"
 
-#: logview/log_repaint.c:86
+#: logview/log_repaint.c:85
 msgid "November"
 msgstr "November"
 
-#: logview/log_repaint.c:86
+#: logview/log_repaint.c:85
 msgid "December"
 msgstr "Dezember"
 
 #. Translators: Date only format, %x should well do really
-#: logview/log_repaint.c:511
+#: logview/log_repaint.c:510
 #, c-format
 msgid "%x"
 msgstr "%x"
 
 #. Translators: should be only the time, date could be bogus
-#: logview/log_repaint.c:638
+#: logview/log_repaint.c:637
 #, c-format
 msgid "%X"
 msgstr "%X"
 
 #. Translators: Make sure this is only Month and Day format, year
 #. * will be bogus here
-#: logview/log_repaint.c:760
+#: logview/log_repaint.c:759
 msgid "%B %e"
 msgstr "%e. %B"
 
-#: logview/logrtns.c:206
+#: logview/logrtns.c:205
 msgid "Not enough memory!\n"
 msgstr "Nicht genügend Speicher!\n"
 
-#: logview/logrtns.c:214
+#: logview/logrtns.c:213
 msgid "Out of memory!\n"
 msgstr "Kein Speicher mehr!\n"
 
-#: logview/logrtns.c:240
+#: logview/logrtns.c:239
 msgid "Unable to open logfile!\n"
 msgstr "Protokolldatei kann nicht geöffnet werden!\n"
 
-#: logview/logrtns.c:295
+#: logview/logrtns.c:294
 #, c-format
 msgid "%s is not a regular file."
 msgstr "%s ist keine normale Datei."
 
-#: logview/logrtns.c:303
+#: logview/logrtns.c:302
 #, c-format
 msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
@@ -1915,17 +1916,17 @@ msgstr ""
 "%s ist nicht lesbar. Starten Sie das Programm entweder als root oder bitten "
 "Sie Ihren Systemadministrator, die Berechtigungen der Datei zu ändern."
 
-#: logview/logrtns.c:320
+#: logview/logrtns.c:319
 #, c-format
 msgid "%s could not be opened."
 msgstr "%s konnte nicht geöffnet werden."
 
-#: logview/logrtns.c:350 logview/logrtns.c:359
+#: logview/logrtns.c:349 logview/logrtns.c:358
 #, c-format
 msgid "%s not a log file."
 msgstr "%s ist keine Protokolldatei."
 
-#: logview/logrtns.c:792 logview/logrtns.c:823 logview/logrtns.c:954
+#: logview/logrtns.c:791 logview/logrtns.c:822 logview/logrtns.c:953
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: kein Speicher mehr"
 
