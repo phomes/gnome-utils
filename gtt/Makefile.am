@@ -51,15 +51,16 @@ noinst_HEADERS = 	\
 	xml-gtt.h
 	
 
-CFLAGS = @CFLAGS@ \
-	${GCONF_CFLAGS} \
-	${GTKHTML_CFLAGS} \
+CFLAGS = @CFLAGS@ 		\
+	${GCONF_CFLAGS} 	\
+	${GTKHTML_CFLAGS} 	\
 	${GLADE_CFLAGS} 
 
 INCLUDES = 			\
 	-I$(includedir)		\
 	-DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
-	$(GNOME_INCLUDEDIR)
+	$(GNOME_INCLUDEDIR)	\
+	${GUILE_INCS}
 						 
 gtt_LDADD = \
 	$(GLADE_LIBS)           \
@@ -68,6 +69,7 @@ gtt_LDADD = \
 	$(GTKHTML_LIBS)		\
 	$(GNOMEUI_LIBS) 	\
 	$(GCONF_LIBS)	 	\
+	${GUILE_LIBS}		\
 	$(INTLLIBS)
 
 Productivitydir = $(datadir)/gnome/apps/Applications
@@ -75,11 +77,11 @@ Productivity_in_files = gtt.desktop.in
 Productivity_DATA = $(Productivity_in_files:.desktop.in=.desktop)
 @XML_I18N_MERGE_DESKTOP_RULE@
 
-EXTRA_DIST = 		\
-	down.xpm	\
-	left.xpm	\
-	design.txt	\
+EXTRA_DIST = 			\
+	down.xpm		\
+	left.xpm		\
+	design.txt		\
 	$(Productivity_in_files) \
-	$(Productivity_DATA) \
+	$(Productivity_DATA) 	\
 	$(top_srcdir)/sgmldocs.make
 
