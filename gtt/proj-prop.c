@@ -28,7 +28,9 @@
 #include "proj.h"
 
 
-typedef struct _PropDlg {
+typedef struct _PropDlg 
+{
+	GladeXML *gtxml;
 	GnomePropertyBox *dlg;
 	GtkEntry *title;
 	GtkEntry *desc;
@@ -130,6 +132,9 @@ prop_dialog_set_project(GttProject *proj)
 		gtk_entry_set_text(dlg->gap, "0");
 		return;
 	}
+
+	if (dlg->proj == proj) return;
+
 	dlg->proj = proj;
 
 	gtk_entry_set_text(dlg->title, gtt_project_get_title(proj));
@@ -138,13 +143,13 @@ prop_dialog_set_project(GttProject *proj)
 	gtk_text_insert(dlg->notes, NULL, NULL, NULL, str, strlen (str));
 
 	/* hack alert should use local currencies for this */
-	g_snprintf (buff, 132, "%8.2f", gtt_project_get_billrate(proj));
+	g_snprintf (buff, 132, "%.2f", gtt_project_get_billrate(proj));
 	gtk_entry_set_text(dlg->regular, buff);
-	g_snprintf (buff, 132, "%8.2f", gtt_project_get_overtime_rate(proj));
+	g_snprintf (buff, 132, "%.2f", gtt_project_get_overtime_rate(proj));
 	gtk_entry_set_text(dlg->overtime, buff);
-	g_snprintf (buff, 132, "%8.2f", gtt_project_get_overover_rate(proj));
+	g_snprintf (buff, 132, "%.2f", gtt_project_get_overover_rate(proj));
 	gtk_entry_set_text(dlg->overover, buff);
-	g_snprintf (buff, 132, "%9.2f", gtt_project_get_flat_fee(proj));
+	g_snprintf (buff, 132, "%.2f", gtt_project_get_flat_fee(proj));
 	gtk_entry_set_text(dlg->flatfee, buff);
 
 	g_snprintf (buff, 132, "%d", gtt_project_get_min_interval(proj));
@@ -163,18 +168,24 @@ prop_dialog_set_project(GttProject *proj)
 
 void prop_dialog(GttProject *proj)
 {
+	GladeXML *gtxml;
 	GtkWidget *e;
         static GnomeHelpMenuEntry help_entry = { NULL, "index.html#PROP" };
-	GladeXML *gtxml;
 
 	if (!proj) return;
 
-	if (!dlg) 
+	if (dlg) 
 	{
-		dlg = g_malloc(sizeof(PropDlg));
+		prop_dialog_set_project(proj);
+		gtk_widget_show(GTK_WIDGET(dlg->dlg));
+		return;
 	}
 
+	dlg = g_malloc(sizeof(PropDlg));
+
 	gtxml = glade_xml_new ("glade/project_properties.glade", "Project Properties");
+	dlg->gtxml = gtxml;
+
 	dlg->dlg = GNOME_PROPERTY_BOX (glade_xml_get_widget (gtxml,  "Project Properties"));
 
 	help_entry.name = gnome_app_id;
@@ -252,10 +263,9 @@ void prop_dialog(GttProject *proj)
 	gtk_widget_show(GTK_WIDGET(dlg->dlg));
 
 
+	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
 /*
-		gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
-		gnome_dialog_set_parent(GNOME_DIALOG(dlg->dlg),
-					GTK_WINDOW(window));
+	gnome_dialog_set_parent(GNOME_DIALOG(dlg->dlg), GTK_WINDOW(window));
 
 */
 }
