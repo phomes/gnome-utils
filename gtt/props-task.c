@@ -120,8 +120,8 @@ do_set_task(GttTask *tsk, PropTaskDlg *dlg)
 	gtk_entry_set_text(dlg->unit, buff);
 
 	able = gtt_task_get_billable (tsk);
-	if (GTT_HOLD == able) gtk_option_menu_set_history (dlg->billable, 0);
-	else if (GTT_BILLABLE == able) gtk_option_menu_set_history (dlg->billable, 1);
+	// if (GTT_HOLD == able) gtk_option_menu_set_history (dlg->billable, 0);
+	if (GTT_BILLABLE == able) gtk_option_menu_set_history (dlg->billable, 1);
 	else if (GTT_NOT_BILLABLE == able) gtk_option_menu_set_history (dlg->billable, 2);
 	else if (GTT_NO_CHARGE == able) gtk_option_menu_set_history (dlg->billable, 3);
 
