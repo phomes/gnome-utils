@@ -1176,6 +1176,7 @@ add_parenth(GtkWidget *w, gpointer data)
 		gc->_priv->stack = g_list_prepend(gc->_priv->stack,stack);
 	}
 
+	gc->_priv->add_digit = FALSE;
 	unselect_invert(gc);
 }
 
