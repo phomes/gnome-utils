@@ -42,7 +42,6 @@ typedef struct wiggy_s {
 	GtkWidget *interval_popup;
 	EditIntervalDialog *edit_ivl;
 	GttInterval * interval;
-	GttTask *task;
 	GttProject *prj;
 } Wiggy;
 
@@ -191,8 +190,9 @@ static void
 interval_insert_memo_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-	gtt_interval_split (wig->interval);
-printf ("duuude insert memo\n");
+	GttTask *newtask;
+	newtask = gtt_interval_split (wig->interval);
+	prop_task_dialog_show (newtask);
 }
 
 static void
@@ -227,8 +227,7 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 	else
 	if (0 == strncmp (url, "gtt:task", 8))
 	{
-		wig->task = addr;
-		prop_task_dialog_show (wig->task);
+		prop_task_dialog_show (addr);
 	}
 	else
 	{
