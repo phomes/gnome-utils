@@ -89,15 +89,15 @@ typedef struct _PrefsDialog
 	GtkCheckButton *show_tb_icons;
 	GtkCheckButton *show_tb_texts;
 	GtkCheckButton *show_tb_tips;
-        GtkCheckButton *show_tb_new;
-        GtkCheckButton *show_tb_ccp;
-        GtkCheckButton *show_tb_journal;
-        GtkCheckButton *show_tb_pref;
-        GtkCheckButton *show_tb_timer;
-        GtkCheckButton *show_tb_prop;
-        GtkCheckButton *show_tb_file;
-        GtkCheckButton *show_tb_help;
-        GtkCheckButton *show_tb_exit;
+	GtkCheckButton *show_tb_new;
+	GtkCheckButton *show_tb_ccp;
+	GtkCheckButton *show_tb_journal;
+	GtkCheckButton *show_tb_pref;
+	GtkCheckButton *show_tb_timer;
+	GtkCheckButton *show_tb_prop;
+	GtkCheckButton *show_tb_file;
+	GtkCheckButton *show_tb_help;
+	GtkCheckButton *show_tb_exit;
 
 	GtkEntry       *idle_secs;
 } PrefsDialog;
@@ -119,69 +119,75 @@ typedef struct _PrefsDialog
 static void 
 prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 {
-	int state, change;
+	int state;
 
 	if (0 == page)
 	{
+		int change = 0;
+
 		/* display options */
 		state = GTK_TOGGLE_BUTTON(odlg->show_secs)->active;
 		if (state != config_show_secs) {
 			config_show_secs = state;
-                	ctree_setup (global_ptw, window);
+			ctree_setup (global_ptw);
 			update_status_bar();
 			if (status_bar)
 			gtk_widget_queue_resize(status_bar);
 		}
 		if (GTK_TOGGLE_BUTTON(odlg->show_status_bar)->active) {
 			gtk_widget_show(GTK_WIDGET(status_bar));
-                	config_show_statusbar = 1;
+			config_show_statusbar = 1;
 		} else {
 			gtk_widget_hide(GTK_WIDGET(status_bar));
-                	config_show_statusbar = 0;
+			config_show_statusbar = 0;
 		}
-        	if (GTK_TOGGLE_BUTTON(odlg->show_clist_titles)->active) {
-                	gtk_clist_column_titles_show(GTK_CLIST(glist));
-                	config_show_clist_titles = 1;
-        	} else {
-                	gtk_clist_column_titles_hide(GTK_CLIST(glist));
-                	config_show_clist_titles = 0;
-        	}
+		if (GTK_TOGGLE_BUTTON(odlg->show_clist_titles)->active) {
+			config_show_clist_titles = 1;
+			ctree_titles_show (global_ptw);
+		} else {
+			config_show_clist_titles = 0;
+			ctree_titles_hide (global_ptw);
+		}
 	
-        	if (GTK_TOGGLE_BUTTON(odlg->show_subprojects)->active) {
-                	config_show_subprojects = 1;
-			// what in the world is 'show stub' ???
-			// gtk_ctree_set_show_stub(GTK_CTREE(glist), TRUE);
-			gtk_ctree_set_line_style(GTK_CTREE(glist), GTK_CTREE_LINES_SOLID);
-			gtk_ctree_set_expander_style(GTK_CTREE(glist),GTK_CTREE_EXPANDER_SQUARE);
-        	} else {
-			// what in the world is 'show stub' ???
-			// gtk_ctree_set_show_stub(GTK_CTREE(glist), FALSE);
-			gtk_ctree_set_line_style(GTK_CTREE(glist), GTK_CTREE_LINES_NONE);
-			gtk_ctree_set_expander_style(GTK_CTREE(glist),GTK_CTREE_EXPANDER_NONE);
-                	config_show_subprojects = 0;
-        	}
+		if (GTK_TOGGLE_BUTTON(odlg->show_subprojects)->active) {
+			config_show_subprojects = 1;
+			ctree_subproj_show (global_ptw);
+		} else {
+			config_show_subprojects = 0;
+			ctree_subproj_hide (global_ptw);
+		}
 
-        	if (GTK_TOGGLE_BUTTON(odlg->show_desc)->active)
+		if (GTK_TOGGLE_BUTTON(odlg->show_desc)->active)
 		{
-                	config_show_title_desc = 1;
-printf ("duude show desc\n");
-        	}
+			if (1 != config_show_title_desc) change = 1;
+			config_show_title_desc = 1;
+		}
 		else
 		{
-                	config_show_title_desc = 0;
-printf ("duude hide desc\n");
-        	}
+			if (0 != config_show_title_desc) change = 1;
+			config_show_title_desc = 0;
+		}
 
-        	if (GTK_TOGGLE_BUTTON(odlg->show_task)->active) 
+		if (GTK_TOGGLE_BUTTON(odlg->show_task)->active) 
 		{
-                	config_show_title_task = 1;
-printf ("duude show task\n");
-        	}
+			if (1 != config_show_title_task) change = 1;
+			config_show_title_task = 1;
+		}
 		else
 		{
-                	config_show_title_task = 0;
-printf ("duude hide task\n");
-        	}
+			if (0 != config_show_title_task) change = 1;
+			config_show_title_task = 0;
+		}
+		if (change)
+		{
+printf ("duude changed !!\n");
+			ctree_destroy (global_ptw);
+			global_ptw = ctree_new ();
+			glist = ctree_get_widget(global_ptw);
+			gtk_box_pack_end(GTK_BOX(main_vbox), glist->parent, TRUE, TRUE, 0);
+
+			ctree_setup (global_ptw);
+		}
 	
 	}
 
@@ -204,61 +210,62 @@ printf ("duude hide task\n");
 
 	if (3 == page)
 	{
-        	/* toolbar */
+		int change = 0;
+
+		/* toolbar */
 		config_show_tb_icons = GTK_TOGGLE_BUTTON(odlg->show_tb_icons)->active;
 		config_show_tb_texts = GTK_TOGGLE_BUTTON(odlg->show_tb_texts)->active;
-        	config_show_tb_tips = GTK_TOGGLE_BUTTON(odlg->show_tb_tips)->active;
+		config_show_tb_tips = GTK_TOGGLE_BUTTON(odlg->show_tb_tips)->active;
 	
-        	/* toolbar sections */
-        	change = 0;
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_new)->active;
-        	if (config_show_tb_new != state) {
-                	change = 1;
-                	config_show_tb_new = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_file)->active;
-        	if (config_show_tb_file != state) {
-                	change = 1;
-                	config_show_tb_file = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_ccp)->active;
-        	if (config_show_tb_ccp != state) {
-                	change = 1;
-                	config_show_tb_ccp = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_journal)->active;
-        	if (config_show_tb_journal != state) {
-                	change = 1;
-                	config_show_tb_journal = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_prop)->active;
-        	if (config_show_tb_prop != state) {
-                	change = 1;
-                	config_show_tb_prop = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_timer)->active;
-        	if (config_show_tb_timer != state) {
-                	change = 1;
-                	config_show_tb_timer = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_pref)->active;
-        	if (config_show_tb_pref != state) {
-                	change = 1;
-                	config_show_tb_pref = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_help)->active;
-        	if (config_show_tb_help != state) {
-                	change = 1;
-                	config_show_tb_help = state;
-        	}
-        	state = GTK_TOGGLE_BUTTON(odlg->show_tb_exit)->active;
-        	if (config_show_tb_exit != state) {
-                	change = 1;
-                	config_show_tb_exit = state;
-        	}
-        	if (change) {
-                	update_toolbar_sections();
-        	}
+		/* toolbar sections */
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_new)->active;
+		if (config_show_tb_new != state) {
+			change = 1;
+			config_show_tb_new = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_file)->active;
+		if (config_show_tb_file != state) {
+			change = 1;
+			config_show_tb_file = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_ccp)->active;
+		if (config_show_tb_ccp != state) {
+			change = 1;
+			config_show_tb_ccp = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_journal)->active;
+		if (config_show_tb_journal != state) {
+			change = 1;
+			config_show_tb_journal = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_prop)->active;
+		if (config_show_tb_prop != state) {
+			change = 1;
+			config_show_tb_prop = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_timer)->active;
+		if (config_show_tb_timer != state) {
+			change = 1;
+			config_show_tb_timer = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_pref)->active;
+		if (config_show_tb_pref != state) {
+			change = 1;
+			config_show_tb_pref = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_help)->active;
+		if (config_show_tb_help != state) {
+			change = 1;
+			config_show_tb_help = state;
+		}
+		state = GTK_TOGGLE_BUTTON(odlg->show_tb_exit)->active;
+		if (config_show_tb_exit != state) {
+			change = 1;
+			config_show_tb_exit = state;
+		}
+		if (change) {
+			update_toolbar_sections();
+		}
 
 		toolbar_set_states();
 	}
@@ -333,23 +340,23 @@ options_dialog_set(PrefsDialog *odlg)
 	g_snprintf(s, sizeof (s), "%d", config_logfile_min_secs);
 	gtk_entry_set_text(GTK_ENTRY(odlg->logfileminsecs), s);
 
-        /* toolbar sections */
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_new),
-                                    config_show_tb_new);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_file),
-                                    config_show_tb_file);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_ccp),
-                                    config_show_tb_ccp);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_prop),
-                                    config_show_tb_prop);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_timer),
-                                    config_show_tb_timer);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_pref),
-                                    config_show_tb_pref);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_help),
-                                    config_show_tb_help);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_exit),
-                                    config_show_tb_exit);
+	/* toolbar sections */
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_new),
+				    config_show_tb_new);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_file),
+				    config_show_tb_file);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_ccp),
+				    config_show_tb_ccp);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_prop),
+				    config_show_tb_prop);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_timer),
+				    config_show_tb_timer);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_pref),
+				    config_show_tb_pref);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_help),
+				    config_show_tb_help);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_exit),
+				    config_show_tb_exit);
 
 	logfile_sensitive_cb(NULL, odlg);
 
@@ -517,9 +524,9 @@ misc_options(PrefsDialog *dlg)
 static PrefsDialog *
 prefs_dialog_new (void)
 {
-        PrefsDialog *dlg;
+	PrefsDialog *dlg;
 	GladeXML *gtxml;
-        static GnomeHelpMenuEntry help_entry = { NULL, "preferences.html#PREF" };
+	static GnomeHelpMenuEntry help_entry = { NULL, "preferences.html#PREF" };
 
 	dlg = g_malloc(sizeof(PrefsDialog));
 

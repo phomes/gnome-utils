@@ -53,12 +53,9 @@ GttProject *cur_proj = NULL;
 GttProject *prev_proj = NULL;
 
 ProjTreeWindow *global_ptw;
-GtkWidget *glist, *window;
-
-#ifndef GNOME_USE_APP
-GtkBox *window_vbox;
-#endif
-
+GtkWidget *window;
+GtkWidget *glist;
+GtkWidget *main_vbox;
 GtkWidget *status_bar;
 
 #ifdef GTK_USE_STATUSBAR
@@ -242,10 +239,9 @@ void app_new(int argc, char *argv[], const char *geometry_string)
 
         global_ptw = ctree_new();
         glist = ctree_get_widget(global_ptw);
+	main_vbox = vbox;
 
 	gtk_box_pack_end(GTK_BOX(vbox), glist->parent, TRUE, TRUE, 0);
-	gtk_widget_set_usize(glist, -1, 120);
-	gtk_widget_show_all(glist->parent);
 
 	gtk_widget_show(vbox);
 	gnome_app_set_contents(GNOME_APP(window), vbox);
@@ -266,6 +262,15 @@ void app_new(int argc, char *argv[], const char *geometry_string)
 		gnome_app_error(GNOME_APP(window),
 			_("Couldn't understand geometry (position and size)\n"
 				" specified on command line"));
+	}
+}
+
+void 
+app_show (void)
+{
+	if (!GTK_WIDGET_MAPPED(window)) 
+	{
+		gtk_widget_show(window);
 	}
 }
 

@@ -34,9 +34,6 @@
 #include "timer.h"
 #include "xml-gtt.h"
 
-/* XXX: this is our main window, perhaps it is a bit ugly this way and
- * should be passed around in the data fields */
-extern GtkWidget *window;
 
 static void 
 gtt_show_err (GttErrCode code)
@@ -250,7 +247,8 @@ init_project_list_2(GtkWidget *widget, int button)
 		gtk_box_pack_start(vbox, t, TRUE, FALSE, 2);
 		gtk_widget_show(dlg);
 	} else {
-                ctree_setup(global_ptw, window);
+                ctree_setup(global_ptw);
+		app_show();
 	}
 }
 

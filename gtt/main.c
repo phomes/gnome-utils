@@ -143,11 +143,16 @@ static void
 init_list_2(GtkWidget *w, gint butnum)
 {
 	if (butnum == 1)
+	{
 		gtk_main_quit();
+	}
 	else
+	{
 		err_init();
-                ctree_setup(global_ptw, window);
+                ctree_setup(global_ptw);
 		init_timer();
+		app_show();
+	}
 }
 
 static void 
@@ -188,8 +193,9 @@ init_list(void)
                 if (errno == ENOENT) {
                         errno = 0;
 			err_init();
-                        ctree_setup(global_ptw, window);
+                        ctree_setup(global_ptw);
 			init_timer();
+			app_show();
                         return;
                 }
 		msgbox_ok_cancel(_("Error"),
@@ -201,8 +207,9 @@ init_list(void)
 				 GTK_SIGNAL_FUNC(init_list_2));
 	} else {
 		err_init();
-                ctree_setup(global_ptw, window);
+                ctree_setup(global_ptw);
 		init_timer();
+		app_show();
 	}
 
 }

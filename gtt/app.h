@@ -24,7 +24,9 @@
 
 extern ProjTreeWindow *global_ptw;
 
-extern GtkWidget *glist, *window;
+extern GtkWidget *window;
+extern GtkWidget *glist;
+extern GtkWidget *main_vbox;
 extern GtkWidget *status_bar;
 
 /* true if command line over-rides geometry */
@@ -35,6 +37,8 @@ extern char *first_proj_title;	/* command line flag */
 void update_status_bar(void);
 
 void app_new(int argc, char *argv[], const char *geometry_string);
+
+void app_show(void);
 
 
 #endif /* __GTT_APP_H__ */

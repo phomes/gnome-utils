@@ -34,6 +34,7 @@
 /* There is a bug in clist which makes all but the last column headers
  * 0 pixels wide. This hack fixes this. */
 // #define CLIST_HEADER_HACK 1
+int clist_header_width_set = 0;
 
 /* column types */
 typedef enum {
@@ -47,7 +48,6 @@ typedef enum {
 
 #define NCOLS		5
 
-int clist_header_width_set = 0;
 
 typedef struct ProjTreeNode_s
 {
@@ -59,7 +59,6 @@ typedef struct ProjTreeNode_s
 struct ProjTreeWindow_s 
 {
 	GtkCTree *ctree;
-	GtkWidget *parent_widget;
 	ColType cols[NCOLS];
 	char * col_titles[NCOLS];
 	char * col_values[NCOLS];
@@ -215,12 +214,12 @@ click_column(GtkCList *clist, gint col, gpointer data)
 			break;
 	}
 	
-	ctree_setup(ptw, ptw->parent_widget);
+	ctree_setup(ptw);
 }
 
 #ifdef CLIST_HEADER_HACK
 static void
-clist_header_hack(GtkWidget *window, GtkWidget *w)
+clist_header_hack(GtkWidget *w)
 {
 	GtkStyle *style;
 	GdkGCValues vals;
@@ -527,7 +526,6 @@ ctree_new(void)
 	int i;
 
 	ptw = g_new0 (ProjTreeWindow, 1);
-	ptw->parent_widget = NULL;
 
 	ctree_init_cols (ptw);
 
@@ -541,6 +539,8 @@ ctree_new(void)
 	}
 	gtk_clist_column_titles_active(GTK_CLIST(w));
 	gtk_clist_set_selection_mode(GTK_CLIST(w), GTK_SELECTION_SINGLE);
+
+	gtk_widget_set_usize(w, -1, 120);
 
 	/* create the top-level window to hold the c-tree */
 	sw = gtk_scrolled_window_new (NULL, NULL);
@@ -605,13 +605,12 @@ ctree_new(void)
 /* ========================================================= */
 
 void
-ctree_setup (ProjTreeWindow *ptw, GtkWidget *parent_widget)
+ctree_setup (ProjTreeWindow *ptw)
 {
 	GtkCTree *tree_w = ptw->ctree;
 	GList *node, *prjlist;
 	GttProject *running_project = cur_proj;
 
-	ptw->parent_widget = parent_widget;
 	cur_proj_set (NULL);
 
 	/* first, add all projects to the ctree */
@@ -648,12 +647,9 @@ ctree_setup (ProjTreeWindow *ptw, GtkWidget *parent_widget)
 		}
 	}
 
-	if (!GTK_WIDGET_MAPPED(parent_widget)) {
-		gtk_widget_show(parent_widget);
 #ifdef CLIST_HEADER_HACK
-		clist_header_hack(parent_widget, GTK_WIDGET(tree_w));
+	clist_header_hack(GTK_WIDGET(tree_w));
 #endif /* CLIST_HEADER_HACK */
-	}
 
 	menu_set_states();
 
@@ -685,6 +681,28 @@ ctree_setup (ProjTreeWindow *ptw, GtkWidget *parent_widget)
 				 0.5, 0.0);
 	}
 	gtk_widget_queue_draw(GTK_WIDGET(tree_w));
+}
+
+/* ========================================================= */
+
+void
+ctree_destroy (ProjTreeWindow *ptw)
+{
+
+	int i, nrows;
+
+	nrows = GTK_CLIST(ptw->ctree)->rows;
+	for (i=0; i<nrows; i++)
+	{
+		ProjTreeNode *ptn;
+		ptn = gtk_clist_get_row_data (GTK_CLIST(ptw->ctree), i);
+		if (ptn) ctree_remove (ptw, ptn->prj);
+else printf ("duuude no ptn on row %d\n", i);
+	}
+	gtk_widget_destroy (GTK_WIDGET(ptw->ctree));
+	ptw->ctree = NULL;
+	ptw->ncols = 0;
+	g_free (ptw);
 }
 
 /* ============================================================== */
@@ -894,6 +912,36 @@ ctree_select (ProjTreeWindow *ptw, GttProject *p)
 	ptn = gtt_project_get_private_data (p);
 	g_return_if_fail (NULL != ptn);
 	gtk_ctree_select(ptw->ctree, ptn->ctnode);
+}
+
+/* ============================================================== */
+
+void 
+ctree_titles_show (ProjTreeWindow *ptw)
+{
+	gtk_clist_column_titles_show(GTK_CLIST(ptw->ctree));
+}
+
+void 
+ctree_titles_hide (ProjTreeWindow *ptw)
+{
+	gtk_clist_column_titles_hide(GTK_CLIST(ptw->ctree));
+}
+
+void
+ctree_subproj_show (ProjTreeWindow *ptw)
+{
+	gtk_ctree_set_show_stub(ptw->ctree, FALSE);
+	gtk_ctree_set_line_style(ptw->ctree, GTK_CTREE_LINES_SOLID);
+	gtk_ctree_set_expander_style(ptw->ctree,GTK_CTREE_EXPANDER_SQUARE);
+}
+
+void
+ctree_subproj_hide (ProjTreeWindow *ptw)
+{
+	gtk_ctree_set_show_stub(ptw->ctree, FALSE);
+	gtk_ctree_set_line_style(ptw->ctree, GTK_CTREE_LINES_NONE);
+	gtk_ctree_set_expander_style(ptw->ctree,GTK_CTREE_EXPANDER_NONE);
 }
 
 /* ===================== END OF FILE ==============================  */

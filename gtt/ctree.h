@@ -29,8 +29,8 @@ extern int clist_header_width_set;
 
 /* create the window that shows the project tree */
 ProjTreeWindow * ctree_new(void);
-
-void ctree_setup(ProjTreeWindow *ptw, GtkWidget *parent_widget);
+void ctree_setup(ProjTreeWindow *ptw);
+void ctree_destroy(ProjTreeWindow *ptw);
 
 /* The ctree_insert_before() routine inserts the new project p
  *   before the project "before me" 
@@ -45,6 +45,11 @@ void ctree_update_title(ProjTreeWindow *, GttProject *p);
 void ctree_update_desc(ProjTreeWindow *, GttProject *p);
 void ctree_unselect(ProjTreeWindow *, GttProject *p);
 void ctree_select(ProjTreeWindow *, GttProject *p);
+
+void ctree_titles_show (ProjTreeWindow *ptw);
+void ctree_titles_hide (ProjTreeWindow *ptw);
+void ctree_subproj_show (ProjTreeWindow *ptw);
+void ctree_subproj_hide (ProjTreeWindow *ptw);
 
 GtkWidget * ctree_get_widget(ProjTreeWindow *);
 
