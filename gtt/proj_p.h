@@ -73,7 +73,7 @@ struct gtt_task_s {
 	char * memo;            /* invoiceable memo (customer sees this) */
 	char * notes;           /* internal notes (office private) */
 	GttBillable  billable;  /* if fees can be collected for this task */
-	GttBillRate  rate;      /* hourly rate at which to bill */
+	GttBillRate  billrate;  /* hourly rate at which to bill */
 	GList *interval_list;   /* collection of start-stop's */
 };
 

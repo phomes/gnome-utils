@@ -123,6 +123,12 @@ parse_task (xmlNodePtr task)
 			gtt_task_set_memo (tsk, str);
 		} 
 		else
+		if (0 == strcmp ("notes", node->name))
+		{
+			str = GET_TEXT (node);
+			gtt_task_set_notes (tsk, str);
+		} 
+		else
 		if (0 == strcmp ("interval-list", node->name))
 		{
 			xmlNodePtr tn;

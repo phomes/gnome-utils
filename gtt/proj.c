@@ -918,7 +918,7 @@ gtt_task_new (void)
 	task->memo = NULL;
 	task->notes = NULL;
 	task->billable = GTT_BILLABLE;
-	task->rate = GTT_REGULAR;
+	task->billrate = GTT_REGULAR;
 	task->interval_list = NULL;
 	return task;
 }
@@ -972,11 +972,59 @@ gtt_task_set_memo(GttTask *tsk, const char *m)
 	tsk->memo = g_strdup(m);
 }
 
+void 
+gtt_task_set_notes(GttTask *tsk, const char *m)
+{
+	if (!tsk) return;
+	if (tsk->notes) g_free(tsk->notes);
+	if (!m) 
+	{
+		tsk->notes = NULL;
+		return;
+	}
+	tsk->notes = g_strdup(m);
+}
+
 const char * 
 gtt_task_get_memo (GttTask *tsk)
 {
 	if (!tsk) return NULL;
 	return tsk->memo;
+}
+
+const char * 
+gtt_task_get_notes (GttTask *tsk)
+{
+	if (!tsk) return NULL;
+	return tsk->notes;
+}
+
+void
+gtt_task_set_billable (GttTask *tsk, GttBillable b)
+{
+	if (!tsk) return;
+	tsk->billable = b;
+}
+
+GttBillable
+gtt_task_get_billable (GttTask *tsk)
+{
+	if (!tsk) return GTT_HOLD;
+	return tsk->billable;
+}
+
+void
+gtt_task_set_billrate (GttTask *tsk, GttBillRate b)
+{
+	if (!tsk) return;
+	tsk->billrate = b;
+}
+
+GttBillRate
+gtt_task_get_billrate (GttTask *tsk)
+{
+	if (!tsk) return GTT_REGULAR;
+	return tsk->billrate;
 }
 
 GList *

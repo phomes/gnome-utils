@@ -44,6 +44,9 @@ typedef struct gtt_project_s GttProject;
 typedef struct gtt_task_s GttTask;
 typedef struct gtt_interval_s GttInterval;
 
+/* -------------------------------------------------------- */
+/* project data */
+
 /* create, destroy a new project */
 GttProject *	gtt_project_new(void);
 GttProject *	gtt_project_new_title_desc(const char *, const char *);
@@ -122,6 +125,9 @@ int  		gtt_project_get_id (GttProject *);
 /* return a project, given only its id; NULL if not found */
 GttProject * 	gtt_project_locate_from_id (int prj_id);
 
+/* -------------------------------------------------------- */
+/* project manipulation */
+
 /* The project_timer_start() routine logs the time when
  *    a new task interval starts.
  * The project_timer_update() routine updates the end-time
@@ -158,10 +164,7 @@ int 		gtt_project_total_secs_ever (GttProject *proj);
 void gtt_project_compute_secs (GttProject *proj);
 void gtt_project_list_compute_secs (void);
 
-
 void gtt_clear_daily_counter (GttProject *proj);
-
-
 
 /* return a list of the children of this project */
 GList * 	gtt_project_get_children (GttProject *);
@@ -202,6 +205,7 @@ void	gtt_project_insert_after (GttProject *proj, GttProject *after_me);
 void	gtt_project_add_task (GttProject *, GttTask *);
 
 /* -------------------------------------------------------- */
+/* master project list */
 
 /* Return a list of all projects */
 GList * 	gtt_get_project_list (void);
@@ -234,6 +238,14 @@ void 		gtt_task_destroy (GttTask *);
 
 void		gtt_task_set_memo (GttTask *, const char *);
 const char *	gtt_task_get_memo (GttTask *);
+void		gtt_task_set_notes (GttTask *, const char *);
+const char *	gtt_task_get_notes (GttTask *);
+
+void		gtt_task_set_billable (GttTask *, GttBillable);
+GttBillable	gtt_task_get_billable (GttTask *);
+void		gtt_task_set_billrate (GttTask *, GttBillRate);
+GttBillRate	gtt_task_get_billrate (GttTask *);
+
 GList *		gtt_task_get_intervals (GttTask *);
 void		gtt_task_add_interval (GttTask *, GttInterval *);
 void		gtt_task_append_interval (GttTask *, GttInterval *);

@@ -118,6 +118,14 @@ gtt_xml_task_to_dom_tree (GttTask *task)
 		xmlAddChild (topnode, node);
 	}
 
+	str = gtt_task_get_notes(task);
+	if (str)
+	{
+		node = xmlNewNode (NULL, "notes");
+		xmlNodeAddContent(node, str);
+		xmlAddChild (topnode, node);
+	}
+
 	/* add list of intervals */
 	p = gtt_task_get_intervals (task);
 	node = gtt_interval_list_to_dom_tree (p);
