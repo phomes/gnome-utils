@@ -585,6 +585,13 @@ gtt_project_get_children (GttProject *proj)
 	return proj->sub_projects;
 }
 
+GttProject * 
+gtt_project_get_parent (GttProject *proj)
+{
+	if (!proj) return NULL;
+	return proj->parent;
+}
+
 
 GList * 
 gtt_project_get_tasks (GttProject *proj)

@@ -170,6 +170,8 @@ void gtt_clear_daily_counter (GttProject *proj);
 GList * 	gtt_project_get_children (GttProject *);
 GList * 	gtt_project_get_tasks (GttProject *);
 
+GttProject * 	gtt_project_get_parent (GttProject *);
+
 /* 
  * The following routines maintain a heirarchical tree of projects.
  * Note, however, that these routines do not sanity check the tree
