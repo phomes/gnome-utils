@@ -47,9 +47,17 @@ typedef enum {
 	TITLE_COL,
 	DESC_COL,
 	TASK_COL,
+	START_COL,
+	STOP_COL,
+	DUE_COL,
+	SIZING_COL,
+	PERCENT_COL,
+	URGENCY_COL,
+	IMPORTANCE_COL,
+	STATUS_COL,
 } ColType;
 
-#define NCOLS		10
+#define NCOLS		18
 
 
 typedef struct ProjTreeNode_s
@@ -73,6 +81,11 @@ struct ProjTreeWindow_s
 	char week_timestr[24];
 	char month_timestr[24];
 	char year_timestr[24];
+
+	GdkDragContext *drag_context;
+	GtkCTreeNode *source_ctree_node;
+	GtkCTreeNode *parent_ctree_node;
+	GtkCTreeNode *sibling_ctree_node;
 
 	// int clist_header_width_set;
 };
@@ -257,6 +270,22 @@ click_column(GtkCList *clist, gint col, gpointer data)
 			break;
 		case NULL_COL:
 			break;
+		case START_COL:
+			break;
+		case STOP_COL:
+			break;
+		case DUE_COL:
+			break;
+		case SIZING_COL:
+			break;
+		case PERCENT_COL:
+			break;
+		case URGENCY_COL:
+			break;
+		case IMPORTANCE_COL:
+			break;
+		case STATUS_COL:
+			break;
 	}
 	
 	ctree_setup(ptw);
@@ -294,17 +323,13 @@ clist_header_hack(GtkWidget *w)
  */
 static GtkWidget *parent_pixmap = NULL;
 static GtkWidget *sibling_pixmap = NULL;
-static GdkDragContext *drag_context = NULL;
-
-static GtkCTreeNode *source_ctree_node = NULL;
-static GtkCTreeNode *parent_ctree_node = NULL;
-static GtkCTreeNode *sibling_ctree_node = NULL;
 
 /* we need to drag context to flip the pixmaps */
 static void
 drag_begin (GtkWidget *widget, GdkDragContext *context, gpointer data)
 {
-	drag_context = context;
+	ProjTreeWindow *ptw = data;
+	ptw->drag_context = context;
 }
 
 static void 
@@ -317,22 +342,22 @@ drag_drop (GtkWidget *widget, GdkDragContext *context,
 	GttProject *old_parent=NULL;
 	GtkCTree *ctree = GTK_CTREE(widget);
 
-	if (!source_ctree_node) return;
+	if (!ptw->source_ctree_node) return;
 
 	/* sanity check. We expect a source node, and either 
 	 * a parent, or a sibling */
-	ptn = gtk_ctree_node_get_row_data(ctree, source_ctree_node);
+	ptn = gtk_ctree_node_get_row_data(ctree, ptw->source_ctree_node);
 	src_prj = ptn->prj;
 	if (!src_prj) return;
 
-	if (parent_ctree_node)
+	if (ptw->parent_ctree_node)
 	{
-		ptn = gtk_ctree_node_get_row_data(ctree, parent_ctree_node);
+		ptn = gtk_ctree_node_get_row_data(ctree, ptw->parent_ctree_node);
 		par_prj = ptn->prj;
 	}
-	if (sibling_ctree_node)
+	if (ptw->sibling_ctree_node)
 	{
-		ptn = gtk_ctree_node_get_row_data(ctree, sibling_ctree_node);
+		ptn = gtk_ctree_node_get_row_data(ctree, ptw->sibling_ctree_node);
 		sib_prj = ptn->prj;
 	}
 
@@ -357,9 +382,10 @@ drag_drop (GtkWidget *widget, GdkDragContext *context,
 	 * from which we were cutted. */
 	ctree_update_label (ptw, old_parent);
 
-	source_ctree_node = NULL;
-	parent_ctree_node = NULL;
-	sibling_ctree_node = NULL;
+	ptw->source_ctree_node = NULL;
+	ptw->parent_ctree_node = NULL;
+	ptw->sibling_ctree_node = NULL;
+	ptw->drag_context = NULL;
 }
 
 /* ============================================================== */
@@ -369,6 +395,8 @@ ctree_drag (GtkCTree *ctree, GtkCTreeNode *source_node,
                              GtkCTreeNode *new_parent,
                              GtkCTreeNode *new_sibling)
 {
+	ProjTreeWindow *ptw = gtk_object_get_data (GTK_OBJECT(ctree), "ptw");
+
 	if (!source_node) return FALSE;
 
 	if (!parent_pixmap->window) 
@@ -379,9 +407,9 @@ ctree_drag (GtkCTree *ctree, GtkCTreeNode *source_node,
 
 	/* Record the values. We don't actually reparent anything
 	 * until the drag has completed. */
-	source_ctree_node = source_node;
-	parent_ctree_node = new_parent;
-	sibling_ctree_node = new_sibling;
+	ptw->source_ctree_node = source_node;
+	ptw->parent_ctree_node = new_parent;
+	ptw->sibling_ctree_node = new_sibling;
 
 #if 0
 {
@@ -404,20 +432,20 @@ printf ("before sibl %s\n\n", gtt_project_get_desc(
 		if (new_parent && (0 == GTK_CTREE_ROW(new_parent)->expanded)) 
 		{
 			/* down arrow means 'child of parent' */
-			gtk_drag_set_icon_widget (drag_context, parent_pixmap, 10, 10);
+			gtk_drag_set_icon_widget (ptw->drag_context, parent_pixmap, 10, 10);
 			return TRUE;
 		}
 
 		/* left arrow means 'peer' (specifcally, 'insert before
 		 * sibling') */
-		gtk_drag_set_icon_widget (drag_context, sibling_pixmap, 10, 10);
+		gtk_drag_set_icon_widget (ptw->drag_context, sibling_pixmap, 10, 10);
 		return TRUE;
 	}
 
 	if (new_parent) 
 	{
 		/* down arrow means 'child of parent' */
-		gtk_drag_set_icon_widget (drag_context, parent_pixmap, 10, 10);
+		gtk_drag_set_icon_widget (ptw->drag_context, parent_pixmap, 10, 10);
 		return TRUE;
 	}
 
@@ -673,11 +701,17 @@ ctree_new(void)
 	int i;
 
 	ptw = g_new0 (ProjTreeWindow, 1);
+	ptw->source_ctree_node = NULL;
+	ptw->parent_ctree_node = NULL;
+	ptw->sibling_ctree_node = NULL;
+	ptw->drag_context = NULL;
 
 	ctree_init_cols (ptw);
 
 	w = gtk_ctree_new_with_titles(ptw->ncols, 6, ptw->col_titles);
 	ptw->ctree = GTK_CTREE(w);
+
+	gtk_object_set_data (GTK_OBJECT(w), "ptw", ptw);
 
 	for (i=0; i<ptw->ncols; i++)
 	{
