@@ -1,20 +1,20 @@
 # translation of sk.po to Slovak
 # gnome-utils sk.po
 # Copyright (C) 2000,2001,2002 Free Software Foundation, Inc.
-# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000,2001.
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000,2001,2002.
 # Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>, 2002
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: sk\n"
-"POT-Creation-Date: 2002-08-28 16:23+0100\n"
-"PO-Revision-Date: 2002-07-24 14:57+0200\n"
-"Last-Translator: Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>\n"
+"POT-Creation-Date: 2002-11-04 18:16+0100\n"
+"PO-Revision-Date: 2002-11-04 18:16+0100\n"
+"Last-Translator: Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0beta2\n"
+"X-Generator: KBabel 1.0\n"
 
 #: exe-handler/gnome-exe-handler.c:76
 #, c-format
@@ -89,9 +89,8 @@ msgid "GNOME Calculator"
 msgstr "Kalkulačka GNOME"
 
 #: gcalc/gcalc.c:61
-#, fuzzy
 msgid "(C) 1998 the Free Software Foundation"
-msgstr "(C) 1998,2002 the Free Software Foundation"
+msgstr "(C) 1998 the Free Software Foundation"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
@@ -464,8 +463,7 @@ msgid "GNOME Character Map"
 msgstr "Mapa znakov GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid ""
-"Select, copy and paste characters from your font into other applications"
+msgid "Select, copy and paste characters from your font into other applications"
 msgstr "Výber, kopírovanie a vkladanie znakov z vášho písma do iných aplikácií"
 
 #: gcharmap/src/callbacks.c:113
@@ -708,20 +706,20 @@ msgstr "Slovník"
 msgid "_Word: "
 msgstr "_Slovo: "
 
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Slovo"
 
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Položka slova"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
 msgstr "Zadajte slovo alebo vyberte nejaké zo zoznamu"
 
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
 msgstr "Hľadať slovo"
 
@@ -1370,8 +1368,7 @@ msgstr "Príkazový riadok"
 
 #: gsearchtool/gsearchtool.c:1064
 msgid "Use this command line to execute the search from console"
-msgstr ""
-"Toto je príkazový riadok, ktorý môže byť použitý pre hľadanie z konzole"
+msgstr "Toto je príkazový riadok, ktorý môže byť použitý pre hľadanie z konzole"
 
 #: gsearchtool/gsearchtool.c:1172
 msgid "No viewer available for this mime type."
@@ -1578,77 +1575,77 @@ msgstr "Zobrazovač systémových záznamov GNOME"
 msgid "Copyright (C) 1998"
 msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "Databáza akcií"
 
-#: logview/actions.c:85
+#: logview/actions.c:84
 msgid "Actions"
 msgstr "Akcie"
 
-#: logview/actions.c:153
+#: logview/actions.c:152
 msgid "_Add"
 msgstr "_Pridať"
 
-#: logview/actions.c:160
+#: logview/actions.c:159
 msgid "_Edit"
 msgstr "_Upraviť"
 
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#: logview/actions.c:166 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "_Odstrániť"
 
-#: logview/actions.c:260
+#: logview/actions.c:259
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Nepodarilo sa otvoriť databázu <%s>! Otvorenie zlyhalo."
 
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Chyba pre spracovaní databáze akcií"
 
-#: logview/actions.c:386
+#: logview/actions.c:385
 msgid "Can't write to actions database!"
 msgstr "Nepodarilo sa zapisovať do databáze akcií!"
 
-#: logview/actions.c:486
+#: logview/actions.c:485
 msgid "Error while executing specified action"
 msgstr "Chyba pri vykonávaní zadanej akcie"
 
-#: logview/actions.c:507
+#: logview/actions.c:506
 msgid "<empty>"
 msgstr "<prázdne>"
 
-#: logview/actions.c:508
+#: logview/actions.c:507
 msgid "log name regexp"
 msgstr "reg výraz pre meno záznamu"
 
-#: logview/actions.c:509
+#: logview/actions.c:508
 msgid "process regexp"
 msgstr "reg. výraz pre proces"
 
-#: logview/actions.c:510
+#: logview/actions.c:509
 msgid "message regexp"
 msgstr "reg. výraz pre správu"
 
-#: logview/actions.c:511
+#: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
 msgstr "vykonať akciu ak platia reg. výrazy"
 
-#: logview/actions.c:512
+#: logview/actions.c:511
 msgid "description"
 msgstr "popis"
 
-#: logview/actions.c:772
+#: logview/actions.c:771
 msgid "_Description:"
 msgstr "_Popis:"
 
-#: logview/actions.c:781
+#: logview/actions.c:780
 msgid "Description of this entry."
 msgstr "Popis tejto položky."
 
-#: logview/actions.c:805
+#: logview/actions.c:804
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1722,8 +1719,7 @@ msgstr "Helvetica Bold 10"
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr ""
-"Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
+msgstr "Nepodarilo sa otvoriť databázu regulárnych výrazov  <%s>! Otvorenie zlyhalo."
 
 #: logview/desc_db.c:147
 #, c-format
@@ -2017,8 +2013,7 @@ msgstr "Akcie..."
 
 #: logview/monitor.c:286
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr ""
-"Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
+msgstr "Príliš veľa sledovaných záznamov. Odstráňte niektorý a skúste to znovu."
 
 #: logview/monitor.c:294 logview/monitor.c:332
 msgid "tmp_list is NULL\n"
@@ -2212,252 +2207,3 @@ msgstr ""
 "Nepodarilo sa nájsť archivačný program (tar).\n"
 "Tento program sa používa pre vytváranie archívov."
 
-#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "Default database. ! indicates all databases"
-#~ msgstr "Štandardná databáza. ! označuje všetky databáze"
-
-#~ msgid "Default strategy"
-#~ msgstr "Štandardná stratégia"
-
-#~ msgid "Format another floppy?"
-#~ msgstr "Formátovať ďalšiu disketu?"
-
-#~ msgid "x^2"
-#~ msgstr "x^2"
-
-#~ msgid "x^y"
-#~ msgstr "x^y"
-
-#~ msgid "Action options"
-#~ msgstr "Možnosti akcií"
-
-#~ msgid "Add..."
-#~ msgstr "Pridať..."
-
-#~ msgid "Edit..."
-#~ msgstr "Upraviť..."
-
-#~ msgid "Remove"
-#~ msgstr "Odstrániť"
-
-#~ msgid "description:"
-#~ msgstr "popis:"
-
-#~ msgid "_Floppy Device:"
-#~ msgstr "Zariadenie _diskety:"
-
-#, fuzzy
-#~ msgid "Dictionary Applet"
-#~ msgstr "Slovník"
-
-#~ msgid "Find:"
-#~ msgstr "Nájsť:"
-
-#~ msgid "Press button to look up any highlighted text in a dictionary"
-#~ msgstr "Stlačením tlačidla nájdete vybraný text v slovníku"
-
-#, fuzzy
-#~ msgid "GNOME System Log"
-#~ msgstr "Systémové záznamy"
-
-#~ msgid "Open log..."
-#~ msgstr "Otvoriť súbor so záznamom..."
-
-#~ msgid "Open log"
-#~ msgstr "Otvorí súbor so záznamom"
-
-#~ msgid "Export log..."
-#~ msgstr "Exportovať súbor so záznamom..."
-
-#~ msgid "Export log"
-#~ msgstr "Exportuje súbor so záznamom"
-
-#~ msgid "Close log"
-#~ msgstr "Zatvorí súbor so záznamom"
-
-#~ msgid "Exit program"
-#~ msgstr "Ukončí program"
-
-#~ msgid "Zoom"
-#~ msgstr "Lupa"
-
-#~ msgid "Show line info"
-#~ msgstr "Zobraziť informácie o riadku"
-
-#~ msgid "Select...               "
-#~ msgstr "Vybrať..."
-
-#~ msgid "Select log events"
-#~ msgstr "Vyberie udalosti záznamu"
-
-#~ msgid "Filter..                "
-#~ msgstr "Filter..                "
-
-#~ msgid "Filter log events"
-#~ msgstr "Filtruje udalosti záznamu"
-
-#~ msgid "Cannot start the archive (tar) program"
-#~ msgstr "Nepodarilo sa spustiť archivačný program (tar)"
-
-#~ msgid "Cannot run tar/gtar"
-#~ msgstr "Nepodarilo sa spustiť tar/gtar"
-
-#~ msgid "The GNOME Calculator"
-#~ msgstr "Kalkulačka pre GNOME"
-
-#~ msgid "Run in analog (slide rule) mode"
-#~ msgstr "Bežať v analógovom móde"
-
-#~ msgid "Shift"
-#~ msgstr "Shift"
-
-#~ msgid "Store"
-#~ msgstr "Uložiť"
-
-#~ msgid "Recall"
-#~ msgstr "Obnoviť"
-
-#~ msgid "Sum"
-#~ msgstr "Súčet"
-
-#~ msgid "Exchange"
-#~ msgstr "Výmena"
-
-#~ msgid ""
-#~ "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
-#~ "contain bad English."
-#~ msgstr "GNOME ekvivalent pre Mapu znakov z Microsoft Windows."
-
-#~ msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "About"
-#~ msgstr "O programe"
-
-#~ msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "_Browse Characters..."
-#~ msgstr "_Prechádzať znaky..."
-
-#~ msgid "_Text Toolbar"
-#~ msgstr "Panel _textu"
-
-#~ msgid "View or hide the text toolbar"
-#~ msgstr "Ukáže alebo skryje panel nástrojov pre text"
-
-#~ msgid "_Statusbar"
-#~ msgstr "_Stavový riadok"
-
-#~ msgid "View or hide the statusbar"
-#~ msgstr "Ukáže alebo skryje stavový riadok"
-
-#~ msgid "_Insert at end"
-#~ msgstr "Vložiť na konie_c"
-
-#~ msgid "Insert every selected character at the end of the text entry"
-#~ msgstr "Vloží každý vybraný znak na koniec textového poľa"
-
-#~ msgid "_Focusable Buttons"
-#~ msgstr "Tlačidlá s _fokusom"
-
-#~ msgid "Set the buttons to be focusable or not"
-#~ msgstr "Nastaví, či môžu mať tlačidlá fokus"
-
-#~ msgid "Spell"
-#~ msgstr "Kontrola"
-
-#~ msgid "_Look Up"
-#~ msgstr "_Hľadať"
-
-#~ msgid "_Spell"
-#~ msgstr "_Kontrola"
-
-#~ msgid "Spell checker"
-#~ msgstr "Kontrola pravopisu"
-
-#~ msgid "Preferences..."
-#~ msgstr "Nastavenia..."
-
-#~ msgid "Results"
-#~ msgstr "Výsledky"
-
-#~ msgid "The Gnome Search Tool"
-#~ msgstr "GNOME Nástoj pre hľadanie"
-
-#~ msgid "Logview"
-#~ msgstr "Logview"
-
-#~ msgid "Date: "
-#~ msgstr "Dátum: "
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-
-#~ msgid "Dos (FAT)"
-#~ msgstr "Dos (FAT)"
-
-#~ msgid "Floppy Density:"
-#~ msgstr "Hustota záznamu:"
-
-#~ msgid "File system type:"
-#~ msgstr "Typ súborového systému:"
-
-#~ msgid "The GNOME Archive Generator"
-#~ msgstr "Generátor archívov GNOME"
-
-#~ msgid "Archive"
-#~ msgstr "Archív"
-
-#~ msgid "Set _Server"
-#~ msgstr "Nastaviť _server"
-
-#~ msgid "Set _Port"
-#~ msgstr "Nastaviť _port"
-
-#~ msgid "Set the port number"
-#~ msgstr "Nastaví číslo portu"
-
-#~ msgid "Don't search subdirectories"
-#~ msgstr "Nehľadať v podpriečinkoch"
-
-#~ msgid "Show user preferences"
-#~ msgstr "Zobraziť používateľské nastavenia"
-
-#~ msgid "The server you specified could not be found."
-#~ msgstr "Uvedený server nebol nájdený."
-
-#~ msgid "The server could not be found on that port."
-#~ msgstr "Server na zadanom porte nebol nájdený."
-
-#~ msgid "Utility"
-#~ msgstr "Nástroj"
