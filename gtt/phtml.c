@@ -29,11 +29,12 @@
 
 typedef enum {
 	NUL=0,
-	START_DATIME =1,
-	STOP_DATIME,
-	ELAPSED,
+	MEMO = 1,
 	BILLABLE,
 	BILLRATE,
+	START_DATIME =100,
+	STOP_DATIME,
+	ELAPSED,
 
 } TableCol;
 
@@ -49,8 +50,11 @@ struct gtt_phtml_s
 	gpointer user_data;
 
 	/* parseing state */
-	int ncols;
-	TableCol cols[NCOL];
+	int ntask_cols;
+	TableCol task_cols[NCOL];
+
+	int ninvl_cols;
+	TableCol invl_cols[NCOL];
 };
 
 /* ============================================================== */
@@ -64,15 +68,48 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 	char buff[2000];
 
 	p = buff;
-	p += sprintf (p, "<table border=1><tr><th colspan=%d>%s<tr>",
-		phtml->ncols, _("Memo"));
-
+	p = stpcpy (p, "<table border=1>");
 
 	/* write out the table header */
-	for (i=0; i<phtml->ncols; i++)
+	if (0 < phtml->ntask_cols)
+	{
+		p = stpcpy (p, "<tr>");
+	}
+	for (i=0; i<phtml->ntask_cols; i++)
+	{
+		switch (phtml->task_cols[i]) 
+		{
+			case MEMO:
+			{
+				int mcols;
+				mcols = phtml->ninvl_cols - phtml->ntask_cols;
+				if (0 >= mcols) mcols = 1; 
+				p += sprintf (p, "<th colspan=%d>", mcols);
+				p = stpcpy (p, _("Memo"));
+				break;
+			}
+			case BILLABLE:
+				p = stpcpy (p, "<th>");
+				p = stpcpy (p, _("Billable"));
+				break;
+			case BILLRATE:
+				p = stpcpy (p, "<th>");
+				p = stpcpy (p, _("Bill Rate"));
+				break;
+			default:
+				p = stpcpy (p, "<th>");
+				p = stpcpy (p, _("Error - Unknown"));
+		}
+	}
+
+	if (0 < phtml->ninvl_cols)
+	{
+		p = stpcpy (p, "<tr>");
+	}
+	for (i=0; i<phtml->ninvl_cols; i++)
 	{
 		p = stpcpy (p, "<th>");
-		switch (phtml->cols[i]) 
+		switch (phtml->invl_cols[i]) 
 		{
 			case START_DATIME:
 				p = stpcpy (p, _("Start"));
@@ -82,12 +119,6 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 				break;
 			case ELAPSED:
 				p = stpcpy (p, _("Elapsed"));
-				break;
-			case BILLABLE:
-				p = stpcpy (p, _("Billable"));
-				break;
-			case BILLRATE:
-				p = stpcpy (p, _("Bill Rate"));
 				break;
 			default:
 				p = stpcpy (p, _("Error - Unknown"));
@@ -99,24 +130,86 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 
 	for (node = gtt_project_get_tasks(prj); node; node=node->next)
 	{
+		GttBillable billable;
+		GttBillRate billrate;
 		const char *pp;
 		time_t prev_stop = 0;
 		GList *in;
 		GttTask *tsk = node->data;
 		
-		/* write the memo message */
-		p = buff;
-		p += sprintf (p, "<tr><td colspan=%d>", phtml->ncols);
-		if (show_links) 
-		{
-			p = stpcpy (p, "<a href=\"gtt:task:");
-			p += sprintf (p, "%p\">", tsk);
-		}
+		/* set up data */
+		billable = gtt_task_get_billable (tsk);
+		billrate = gtt_task_get_billrate (tsk);
 
-		pp = gtt_task_get_memo(tsk);
-		if (!pp || !pp[0]) pp = _("(empty)");
-		p = stpcpy (p, pp);
-		if (show_links) p = stpcpy (p, "</a>");
+		p = buff;
+
+		/* write the task data */
+		if (0 < phtml->ntask_cols)
+		{
+			p = stpcpy (p, "<tr>");
+		}
+		for (i=0; i<phtml->ntask_cols; i++)
+		{
+			switch (phtml->task_cols[i]) 
+			{
+				case MEMO:
+				{
+					int mcols;
+					mcols = phtml->ninvl_cols - phtml->ntask_cols;
+					if (0 >= mcols) mcols = 1; 
+					p += sprintf (p, "<td colspan=%d>", mcols);
+					if (show_links) 
+					{
+						p = stpcpy (p, "<a href=\"gtt:task:");
+						p += sprintf (p, "%p\">", tsk);
+					}
+					pp = gtt_task_get_memo(tsk);
+					if (!pp || !pp[0]) pp = _("(empty)");
+					p = stpcpy (p, pp);
+					if (show_links) p = stpcpy (p, "</a>");
+					break;
+				}
+				case BILLABLE:
+					p = stpcpy (p, "<td>");
+					switch (billable)
+					{
+						case GTT_HOLD:
+							p = stpcpy (p, _("Hold"));
+							break;
+						case GTT_BILLABLE:
+							p = stpcpy (p, _("Billable"));
+							break;
+						case GTT_NOT_BILLABLE:
+							p = stpcpy (p, _("Not Billable"));
+							break;
+						case GTT_NO_CHARGE:
+							p = stpcpy (p, _("No Charge"));
+							break;
+					}
+					break;
+				case BILLRATE:
+					p = stpcpy (p, "<td>");
+					switch (billrate)
+					{
+						case GTT_REGULAR:
+							p = stpcpy (p, _("Regular"));
+							break;
+						case GTT_OVERTIME:
+							p = stpcpy (p, _("Overtime"));
+							break;
+						case GTT_OVEROVER:
+							p = stpcpy (p, _("Double Overtime"));
+							break;
+						case GTT_FLAT_FEE:
+							p = stpcpy (p, _("Flat Fee"));
+							break;
+					}
+					break;
+				default:
+					p = stpcpy (p, "<th>");
+					p = stpcpy (p, _("Error - Unknown"));
+			}
+		}
 
 		(phtml->write_stream) (phtml, buff, p-buff, phtml->user_data);
 		
@@ -141,12 +234,14 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 			}
 			prev_stop = stop;
 
+
+			/* -------------------------- */
 			p = buff;
 			p = stpcpy (p, "<tr>");
-			for (i=0; i<phtml->ncols; i++)
+			for (i=0; i<phtml->ninvl_cols; i++)
 			{
 
-				switch (phtml->cols[i]) 
+				switch (phtml->invl_cols[i]) 
 				{
 	case START_DATIME:
 	{
@@ -187,14 +282,6 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 		p = stpcpy (p, "&nbsp;&nbsp;");
 		break;
 	}
-	case BILLABLE:
-		p = stpcpy (p, "<td>");
-		p = stpcpy (p, _("Billable"));
-		break;
-	case BILLRATE:
-		p = stpcpy (p, "<td>");
-		p = stpcpy (p, _("Bill Rate"));
-		break;
 	default:
 		p = stpcpy (p, "<td>");
 				}
@@ -339,32 +426,38 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 		else
 		if (0 == strncmp (tok, "$start_datime", 13))
 		{
-			phtml->cols[phtml->ncols] = START_DATIME;
-			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+			phtml->invl_cols[phtml->ninvl_cols] = START_DATIME;
+			if (NCOL-1 > phtml->ninvl_cols) phtml->ninvl_cols ++;
 		}
 		else
 		if (0 == strncmp (tok, "$stop_datime", 12))
 		{
-			phtml->cols[phtml->ncols] = STOP_DATIME;
-			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+			phtml->invl_cols[phtml->ninvl_cols] = STOP_DATIME;
+			if (NCOL-1 > phtml->ninvl_cols) phtml->ninvl_cols ++;
 		}
 		else
 		if (0 == strncmp (tok, "$elapsed", 8))
 		{
-			phtml->cols[phtml->ncols] = ELAPSED;
-			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+			phtml->invl_cols[phtml->ninvl_cols] = ELAPSED;
+			if (NCOL-1 > phtml->ninvl_cols) phtml->ninvl_cols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$memo", 5))
+		{
+			phtml->task_cols[phtml->ntask_cols] = MEMO;
+			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
 		}
 		else
 		if (0 == strncmp (tok, "$billable", 9))
 		{
-			phtml->cols[phtml->ncols] = BILLABLE;
-			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+			phtml->task_cols[phtml->ntask_cols] = BILLABLE;
+			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
 		}
 		else
 		if (0 == strncmp (tok, "$billrate", 9))
 		{
-			phtml->cols[phtml->ncols] = BILLRATE;
-			if (NCOL-1 > phtml->ncols) phtml->ncols ++;
+			phtml->task_cols[phtml->ntask_cols] = BILLRATE;
+			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
 		}
 		else
 		{
@@ -391,7 +484,11 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 {
 	FILE *ph;
 
-	if (!phtml)
+	if (!phtml) return;
+
+	/* reset the parser */
+	phtml->ninvl_cols = 0;
+	phtml->ntask_cols = 0;
 		
 	if (!filepath)
 	{
@@ -471,7 +568,8 @@ gtt_phtml_new (void)
 	GttPhtml *p;
 
 	p = g_new0 (GttPhtml, 1);
-	p ->ncols = 0;
+	p ->ntask_cols = 0;
+	p ->ninvl_cols = 0;
 
 	return p;
 }
