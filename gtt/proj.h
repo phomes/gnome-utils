@@ -63,6 +63,7 @@ typedef struct gtt_task_s GttTask;
 typedef struct gtt_interval_s GttInterval;
 
 typedef void (*GttProjectChanged) (GttProject *, gpointer);
+typedef int (*GttProjectCB) (GttProject *, gpointer);
 
 /* -------------------------------------------------------- */
 /* project data */
@@ -173,6 +174,14 @@ void		gtt_project_remove_notifier (GttProject *,
 gpointer	gtt_project_get_private_data (GttProject *);
 void		gtt_project_set_private_data (GttProject *, gpointer);
 
+/* The gtt_project_foreach() routine calls the indicated function
+ *    on the project and each of the sub-projects.  The recursion is
+ *    stopped if the callback returns zero, otherwise it continues
+ *    until all sub-projects ahve been visited.
+ *    This routine returns the value of the last callback.
+ */ 
+int		gtt_project_foreach (GttProject *,  GttProjectCB, gpointer);
+
 /* -------------------------------------------------------- */
 /* project manipulation */
 
@@ -203,10 +212,18 @@ void 		gtt_project_timer_stop (GttProject *);
  *    including a total of all its sub-projects.
  */
 
+int 		gtt_project_get_secs_current (GttProject *proj);
 int 		gtt_project_get_secs_day (GttProject *proj);
+int 		gtt_project_get_secs_week (GttProject *proj);
+int 		gtt_project_get_secs_month (GttProject *proj);
+int 		gtt_project_get_secs_year (GttProject *proj);
 int 		gtt_project_get_secs_ever (GttProject *proj);
 
+int 		gtt_project_total_secs_current (GttProject *proj);
 int 		gtt_project_total_secs_day (GttProject *proj);
+int 		gtt_project_total_secs_week (GttProject *proj);
+int 		gtt_project_total_secs_month (GttProject *proj);
+int 		gtt_project_total_secs_year (GttProject *proj);
 int 		gtt_project_total_secs_ever (GttProject *proj);
 
 
