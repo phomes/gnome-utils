@@ -34,7 +34,6 @@
 /* There is a bug in clist which makes all but the last column headers
  * 0 pixels wide. This hack fixes this. */
 // #define CLIST_HEADER_HACK 1
-int clist_header_width_set = 0;
 
 /* column types */
 typedef enum {
@@ -66,6 +65,8 @@ struct ProjTreeWindow_s
 	int ncols;
 	char ever_timestr[24];
 	char day_timestr[24];
+
+	// int clist_header_width_set;
 };
 
 static void cupdate_label(ProjTreeNode *ptn, gboolean expand);
@@ -580,7 +581,7 @@ ctree_new(void)
 
 	gtk_widget_set_usize(w, -1, 120);
 	ctree_update_column_visibility (ptw);
-	gtk_ctree_set_show_stub(w, FALSE);
+	gtk_ctree_set_show_stub(GTK_CTREE(w), FALSE);
 
 	/* create the top-level window to hold the c-tree */
 	sw = gtk_scrolled_window_new (NULL, NULL);
@@ -988,6 +989,27 @@ ctree_subproj_hide (ProjTreeWindow *ptw)
 	gtk_ctree_set_show_stub(ptw->ctree, FALSE);
 	gtk_ctree_set_line_style(ptw->ctree, GTK_CTREE_LINES_NONE);
 	gtk_ctree_set_expander_style(ptw->ctree,GTK_CTREE_EXPANDER_NONE);
+}
+
+/* ============================================================== */
+
+void
+ctree_set_col_width (ProjTreeWindow *ptw, int col, int width)
+{
+	if (!ptw) return;
+	gtk_clist_set_column_width(GTK_CLIST(ptw->ctree), col, width);
+	// ptw->clist_header_width_set = 1;
+}
+
+int
+ctree_get_col_width (ProjTreeWindow *ptw, int col)
+{
+	int width;
+	if (!ptw) return -1;
+	if (0 > col) return -1;
+	if (col >= GTK_CLIST(ptw->ctree)->columns) return -1;
+	width = GTK_CLIST(ptw->ctree)->column[col].width;
+	return width;
 }
 
 /* ===================== END OF FILE ==============================  */
