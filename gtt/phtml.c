@@ -480,6 +480,8 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 		if (0 == strncmp (tok, "$table", 6))
 		{
 			show_table (phtml, prj, 1);
+			phtml->ntask_cols = 0;
+			phtml->ninvl_cols = 0;
 		}
 		else
 		if (0 == strncmp (tok, "$start_datime", 13))
@@ -581,7 +583,7 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 	{
 #define BUFF_SIZE 4000
 		size_t nr;
-		char *start, *end, *tok;
+		char *start, *end, *tok, *comstart, *comend;
 		char buff[BUFF_SIZE+1];
 		nr = fread (buff, 1, BUFF_SIZE, ph);
 		if (0 >= nr) break;  /* EOF I presume */
@@ -594,6 +596,29 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 			
 			/* look for special gtt markup */
 			end = strstr (start, "<?gtt");
+
+			/* look for comments, and blow past them. */
+			comstart = strstr (start, "<!--");
+			if (comstart && comstart < end)
+			{
+				comend = strstr (comstart, "-->");
+				if (comend)
+				{
+					nr = comend - start;
+					end = comend;
+				}
+				else
+				{
+					nr = strlen (start);
+					end = NULL;
+				}
+				/* write everything that we got before the markup */
+				(phtml->write_stream) (phtml, start, nr, phtml->user_data);
+				start = end;
+				continue;
+			}
+
+			/* look for  termination of gtt markup */
 			if (end)
 			{
 				nr = end - start;
@@ -638,8 +663,8 @@ gtt_phtml_new (void)
 	GttPhtml *p;
 
 	p = g_new0 (GttPhtml, 1);
-	p ->ntask_cols = 0;
-	p ->ninvl_cols = 0;
+	p->ntask_cols = 0;
+	p->ninvl_cols = 0;
 
 	return p;
 }
