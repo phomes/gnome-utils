@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.109.0\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
-"PO-Revision-Date: 2002-06-13 14:55+0900\n"
+"POT-Creation-Date: 2002-07-09 20:20+0900\n"
+"PO-Revision-Date: 2002-07-09 20:26+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <gnome-kr-translation@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -119,165 +119,161 @@ msgstr "1/x"
 msgid "Inverse"
 msgstr "Inverse"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
-msgstr "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
+msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr "제곱"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr "제곱근"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr "지우기"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "전원"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr "리셋"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr "삼각/로그 함수의 역"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr "사인"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr "코사인"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr "탄젠트"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid " DEG  "
 msgstr " DEG  "
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr "degree / radian / grad 전환"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr "자연 로그 밑"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr "숫자 추가"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr "상용 로그"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr "자연 로그"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
-msgstr "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
+msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr "지수"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr "Factorial"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr "괄호 열기"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr "괄호 닫기"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr "나누기"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -285,31 +281,31 @@ msgstr ""
 "표시 창에 있는 값을 \n"
 "메모리에 저장하기"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr "곱하기"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -317,31 +313,31 @@ msgstr ""
 "메모리에 있는 값을 \n"
 "표시 창에 표시하기"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr "빼기"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -349,31 +345,31 @@ msgstr ""
 "표시 창에 있는 값을\n"
 "메모리에 있는 값에 더하기"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "더하기"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -381,31 +377,31 @@ msgstr ""
 "표시 창의 값과 메모리에\n"
 "있는 값을 뒤 바꾸기"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr "소수점"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr "부호"
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr "계산"
 
@@ -473,24 +469,24 @@ msgid ""
 msgstr ""
 "여러분의 글꼴에서 다른 프로그램으로 문자를 선택, 복사하고 붙여 넣습니다"
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:114
 msgid "del"
 msgstr "del"
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:120
 #, c-format
 msgid " %s: Character code %d"
 msgstr "%s: 문자 코드 %d"
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:156
 msgid "Text copied to clipboard..."
 msgstr "클립보드로 글자 복사..."
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:173
 msgid "Text cut to clipboard..."
 msgstr "클립보드로 글자 자르기..."
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:226
 msgid "Text pasted from clipboard..."
 msgstr "클립보드에서 글자 붙이기..."
 
@@ -506,23 +502,23 @@ msgstr "행동 도구 모음"
 msgid "_Text to copy:"
 msgstr "복사할 텍스트(_T):"
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 msgid "_Copy"
 msgstr "복사(_C)"
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 msgid "Text to copy"
 msgstr "복사할 텍스트"
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr "항목"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "복사"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 msgid "Copy the text"
 msgstr "텍스트 복사"
 
@@ -873,22 +869,51 @@ msgid "Search Strategy"
 msgstr "기본 전략"
 
 #: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr "기본 데이타베이스.  !는 모든 데이타베이스를 뜻합니다"
-
-#: gdictsrc/gdict.schemas.in.h:2
-msgid "Default strategy"
-msgstr "기본 전략"
-
-#: gdictsrc/gdict.schemas.in.h:3
 msgid "Dictionary server"
 msgstr "사전 서버"
 
-#: gdictsrc/gdict.schemas.in.h:4
+#: gdictsrc/gdict.schemas.in.h:2
 msgid "Port used to connect to server"
 msgstr "서버에 연결할 때 사용할 포트"
 
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr "똑똑한 찾기 기능을 사용할 지 지정합니다. 이 기능은 해당 사전 서버가 이 옵션을 지원해야 효과가 있습니다. 기본값은 참입니다"
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr "사전 서버에서 사용할 데이타베이스."
+
 #: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr "연결할 사전 서버. 기본 서버는 dict.org입니다. 다른 서버에 대한 정보는 http://www.dict.org 를 보십시오"
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr "사전 서버에서 사용할 각 데이타베이스의 이름. !는 주어진 서버의 모든 데이타베이스에서 찾는다는 뜻입니다"
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr "연결할 포트 번호. 기본 포트는 2628입니다."
+
+#: gdictsrc/gdict.schemas.in.h:8
+msgid "The search strategy to use"
+msgstr "사용할 찾기 전략"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr "사용할 찾기 전략. 이 기능은 주어진 사전 서버가 어떤 찾기 전략을 지원하느냐에 따라 효과가 있습니다. 기본 전략은 'lev'입니다. 'lev'는 한 Levenshtein 거리 내에 있는 단어를 찾습니다."
+
+#: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
 msgstr "똑똑한 찾기"
 
@@ -1110,12 +1135,12 @@ msgstr "포맷(_F)"
 msgid "_Quick format"
 msgstr "빠른 포맷(_Q)"
 
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "%s 장치를 열 수 없습니다. 포맷을 계속할 수 없습니다."
 
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1124,7 +1149,7 @@ msgstr ""
 "%s 장치의 연결이 끊어졌습니다.\n"
 "계속하려면 장치를 연결하십시오."
 
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1134,15 +1159,7 @@ msgstr ""
 "%s에 쓸 수 있는 허가권이 없으므로, 포맷이 불가능합니다.\n"
 "시스템 관리자에게 연락해서 쓰기 허가권을 달라고 하십시오."
 
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr "포맷할 장치"
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr "장치"
-
-#: gfloppy/src/main.c:360
+#: gfloppy/src/main.c:291
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
@@ -1151,9 +1168,13 @@ msgstr ""
 "플로피 포맷기에 대한 도움말을 표시할 수 없습니다.\n"
 "%s"
 
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
-msgstr "다른 플로피디스크를 포맷하겠습니까?"
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr "포맷할 장치"
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
+msgstr "장치"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
@@ -1540,73 +1561,73 @@ msgstr "GNOME 시스템 로그 보기"
 msgid "Copyright (C) 1998"
 msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr "실행 데이터베이스"
 
-#: logview/actions.c:81
-msgid "Action options"
-msgstr "실행 옵션"
+#: logview/actions.c:85
+msgid "Actions"
+msgstr "동작"
 
-#: logview/actions.c:138
-msgid "Add..."
-msgstr "추가..."
+#: logview/actions.c:153
+msgid "_Add"
+msgstr "추가(_A)"
 
-#: logview/actions.c:144
-msgid "Edit..."
-msgstr "편집..."
+#: logview/actions.c:160
+msgid "_Edit"
+msgstr "편집(_E)"
 
-#: logview/actions.c:150
-msgid "Remove"
-msgstr "지우기"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+msgid "_Remove"
+msgstr "지우기(_R)"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "<%s> 작업 데이타 베이스를 열 수 없습니다! 열기가 실패했습니다."
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "데이터 베이스 파싱 오류"
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr "데이터 베이스에 쓰기를 할수 없습니다!"
 
-#: logview/actions.c:494
+#: logview/actions.c:493
 msgid "<empty>"
 msgstr "<비어있슴>"
 
-#: logview/actions.c:495
+#: logview/actions.c:494
 msgid "log name regexp"
 msgstr "로그 이름 정규식"
 
-#: logview/actions.c:496
+#: logview/actions.c:495
 msgid "process regexp"
 msgstr "프로세스 정규식"
 
-#: logview/actions.c:497
+#: logview/actions.c:496
 msgid "message regexp"
 msgstr "메세지 정규식"
 
-#: logview/actions.c:498
+#: logview/actions.c:497
 msgid "action to execute when regexps are TRUE"
 msgstr "정규식에 맞을 때 실행할 작업"
 
-#: logview/actions.c:499
+#: logview/actions.c:498
 msgid "description"
 msgstr "설명"
 
-#: logview/actions.c:744
-msgid "description:"
-msgstr "설명:"
+#: logview/actions.c:758
+msgid "_Description:"
+msgstr "설명(_D):"
 
-#: logview/actions.c:753
+#: logview/actions.c:767
 msgid "Description of this entry."
 msgstr "이 항목의 설명"
 
-#: logview/actions.c:800
+#: logview/actions.c:791
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2126,10 +2147,6 @@ msgstr "아카이브 만들기(_C)..."
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
 msgstr "항목들에서 새 아카이브를 만듭니다"
-
-#: meat-grinder/meat-grinder.c:941
-msgid "_Remove"
-msgstr "지우기(_R)"
 
 #: meat-grinder/meat-grinder.c:942
 msgid "Remove the selected item"
