@@ -30,16 +30,21 @@ extern int clist_header_width_set;
 /* create the window that shows the project tree */
 ProjTreeWindow * ctree_new(void);
 
-void setup_ctree(void);
+void ctree_setup(ProjTreeWindow *ptw, GtkWidget *parent_widget);
+
+/* The ctree_insert_before() routine inserts the new project p
+ *   before the project "before me" 
+ */
 void ctree_add(ProjTreeWindow *, GttProject *p, GtkCTreeNode *parent);
-void ctree_insert_before(GttProject *p, GttProject *insert_before_me);
-void ctree_insert_after(GttProject *p, GttProject *insert_after_me);
-void ctree_remove(GttProject *p);
-void ctree_update_label(GttProject *p);
-void ctree_update_title(GttProject *p);
-void ctree_update_desc(GttProject *p);
-void ctree_unselect(GttProject *p);
-void ctree_select(GttProject *p);
+void ctree_insert_before(ProjTreeWindow *, GttProject *p, GttProject *insert_before_me);
+void ctree_insert_after(ProjTreeWindow *, GttProject *p, GttProject *insert_after_me);
+
+void ctree_remove(ProjTreeWindow *, GttProject *p);
+void ctree_update_label(ProjTreeWindow *, GttProject *p);
+void ctree_update_title(ProjTreeWindow *, GttProject *p);
+void ctree_update_desc(ProjTreeWindow *, GttProject *p);
+void ctree_unselect(ProjTreeWindow *, GttProject *p);
+void ctree_select(ProjTreeWindow *, GttProject *p);
 
 GtkWidget * ctree_get_widget(ProjTreeWindow *);
 

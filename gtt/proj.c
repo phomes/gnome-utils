@@ -73,7 +73,7 @@ gtt_project_new(void)
 	proj->being_destroyed = FALSE;
 	proj->frozen = FALSE;
 	proj->dirty_time = FALSE;
-        proj->trow = NULL;
+        proj->private_data = NULL;
 
         proj->id = next_free_id;
 	next_free_id ++;
@@ -401,6 +401,20 @@ gtt_project_get_auto_merge_gap (GttProject *proj)
 {
 	if (!proj) return 0.0;
 	return proj->auto_merge_gap;
+}
+
+void
+gtt_project_set_private_data (GttProject *proj, gpointer data)
+{
+	if (!proj) return;
+	proj->private_data = data; 
+}
+
+gpointer
+gtt_project_get_private_data (GttProject *proj)
+{
+	if (!proj) return NULL;
+	return proj->private_data;
 }
 
 /* =========================================================== */

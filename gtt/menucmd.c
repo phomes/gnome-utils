@@ -152,7 +152,7 @@ project_name_desc(GtkWidget *w, GtkEntry **entries)
 	 */
 	proj = gtt_project_new_title_desc(name, desc);
 	gtt_project_insert_after (proj, cur_proj);
-	ctree_insert_after (proj, cur_proj);
+	ctree_insert_after (global_ptw, proj, cur_proj);
 }
 
 static void
@@ -250,7 +250,7 @@ init_project_list_2(GtkWidget *widget, int button)
 		gtk_box_pack_start(vbox, t, TRUE, FALSE, 2);
 		gtk_widget_show(dlg);
 	} else {
-                setup_ctree();
+                ctree_setup(global_ptw, window);
 	}
 }
 
@@ -367,7 +367,7 @@ cut_project(GtkWidget *w, gpointer data)
 	prop_dialog_set_project(NULL);
 	gtt_project_remove(cur_proj);
 	cur_proj_set(NULL);
-        ctree_remove(cutted_project);
+        ctree_remove(global_ptw, cutted_project);
 }
 
 
@@ -392,7 +392,7 @@ paste_project(GtkWidget *w, gpointer data)
                 ctree_add(global_ptw, p, NULL);
 		return;
 	}
-        ctree_insert_before(p, cur_proj);
+        ctree_insert_before(global_ptw, p, cur_proj);
 }
 
 
@@ -465,7 +465,7 @@ menu_clear_daily_counter(GtkWidget *w, gpointer data)
 	g_return_if_fail(cur_proj != NULL);
 
 	gtt_clear_daily_counter (cur_proj);
-        ctree_update_label(cur_proj);
+        ctree_update_label(global_ptw, cur_proj);
 }
 
 /* ============================ END OF FILE ======================= */

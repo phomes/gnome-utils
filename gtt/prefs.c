@@ -127,7 +127,7 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 		state = GTK_TOGGLE_BUTTON(odlg->show_secs)->active;
 		if (state != config_show_secs) {
 			config_show_secs = state;
-                	setup_ctree();
+                	ctree_setup (global_ptw, window);
 			update_status_bar();
 			if (status_bar)
 			gtk_widget_queue_resize(status_bar);

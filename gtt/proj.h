@@ -163,6 +163,10 @@ void		gtt_project_add_notifier (GttProject *,
 void		gtt_project_remove_notifier (GttProject *,
 			GttProjectChanged, gpointer);
 
+/* generic place to hang arbitrary data on the project (used by GUI) */
+gpointer	gtt_project_get_private_data (GttProject *);
+void		gtt_project_set_private_data (GttProject *, gpointer);
+
 /* -------------------------------------------------------- */
 /* project manipulation */
 
