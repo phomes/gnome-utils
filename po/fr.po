@@ -8,9 +8,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.2.0.3\n"
-"POT-Creation-Date: 2003-03-13 10:21+0000\n"
-"PO-Revision-Date: 2003-02-11 19:21+0100\n"
+"Project-Id-Version: gnome-utils 2.2.1\n"
+"POT-Creation-Date: 2003-04-19 08:34+0200\n"
+"PO-Revision-Date: 2003-04-19 08:20+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -618,7 +618,7 @@ msgstr "_Préférences"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:5
 msgid "_Show/Hide Definition Window..."
-msgstr "_Afficher/Cacher la fenêtre de définition..."
+msgstr "_Afficher/Cacher la fenêtre de définitions..."
 
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
@@ -888,7 +888,7 @@ msgstr "Stratégie de recherche"
 
 #: gdictsrc/gdict.schemas.in.h:1
 msgid "Dictionary server"
-msgstr "Serveur de dictionnaire"
+msgstr "Serveur de dictionnaires"
 
 #: gdictsrc/gdict.schemas.in.h:2
 msgid "Port used to connect to server"
@@ -900,19 +900,19 @@ msgid ""
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
 "Spécifie si il faut utiliser une recherche intelligente. Cette clé est "
-"dépendante des possibilité du serveur de dictionnaire. La valeur par défaut "
+"dépendante des possibilité du serveur de dictionnaires. La valeur par défaut "
 "est VRAI"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr "La base de données à utiliser dans le serveur de dictionnaire."
+msgstr "La base de données à utiliser dans le serveur de dictionnaires."
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"Le serveur de dictionnaire auquel se connecter. Le serveur par défaut est "
+"Le serveur de dictionnaires auquel se connecter. Le serveur par défaut est "
 "dict.org. Voir http://www.dict.org/ pour des détails sur d'autres serveurs"
 
 #: gdictsrc/gdict.schemas.in.h:6
@@ -921,7 +921,7 @@ msgid ""
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
 "Le nom de la base de données individuelle à utiliser avec le serveur de "
-"dictionnaire. ! spécifie que gnome-dictionary doit rechercher dans toutes "
+"dictionnaires. ! spécifie que gnome-dictionary doit rechercher dans toutes "
 "les bases de données sur un serveur donné"
 
 #: gdictsrc/gdict.schemas.in.h:7
@@ -939,7 +939,7 @@ msgid ""
 "within Levenshtein distance one"
 msgstr ""
 "La stratégie de recherche à utiliser. C'est dépendant des stratégies de "
-"recherche que supporte le serveur de dictionnaire. La statégie par défaut "
+"recherche que supporte le serveur de dictionnaires. La statégie par défaut "
 "est « lev » - Correspondance des mots dans la distance de Levenshtein"
 
 #: gdictsrc/gdict.schemas.in.h:10
@@ -948,7 +948,7 @@ msgstr "Utiliser la recherche intelligente"
 
 #: gfloppy/gfloppy.desktop.in.h:1
 msgid "Floppy Formatter"
-msgstr "Formateur de disquette"
+msgstr "Formateur de disquettes"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "Format Floppy Disks"
@@ -994,7 +994,7 @@ msgstr "EErreur de formatage de la piste #%d"
 
 #: gfloppy/src/fdformat.c:74
 msgid "EError during completion of formatting"
-msgstr "EErreur durand l'achèvement du formatage"
+msgstr "EErreur durant l'achèvement du formatage"
 
 #. XXXX - need to tell parent we're finished
 #: gfloppy/src/fdformat.c:78
@@ -1105,7 +1105,7 @@ msgstr "EErreur lors du remplissage du fichier de liste de blocs défectueux."
 #: gfloppy/src/gfloppy.c:308
 #, c-format
 msgid "EError while spawning the (%s) command: %s."
-msgstr "EErreur lors de l'exécution dela commande (%s) : %s."
+msgstr "EErreur lors de l'exécution de la commande (%s) : %s."
 
 #: gfloppy/src/gfloppy.c:332
 msgid "EUnknown mke2fs starting signature, cancelling."
@@ -1118,7 +1118,7 @@ msgid ""
 "\n"
 "%s (%d)"
 msgstr ""
-"EL'utilitaire (%s) de création du système de fichier a rapporté les erreurs "
+"EL'utilitaire (%s) de création du système de fichiers a rapporté les erreurs "
 "suivantes :\n"
 "\n"
 "%s (%d)"
@@ -1150,7 +1150,7 @@ msgstr "EFin du processus enfant mbadblocks anormal."
 #. make the filesystem
 #: gfloppy/src/gfloppy.c:470 gfloppy/src/gfloppy.c:510
 msgid "MMaking filesystem on disk..."
-msgstr "MCréation du système de fichier sur le disque..."
+msgstr "MCréation du système de fichiers sur le disque..."
 
 #: gfloppy/src/gfloppy.c:478
 msgid "EUnable to create filesystem correctly."
@@ -1158,7 +1158,7 @@ msgstr "EIncapable de créer le système de fichiers correctement"
 
 #: gfloppy/src/gfloppy.c:482 gfloppy/src/gfloppy.c:522
 msgid "MMaking filesystem on disk... Done"
-msgstr "MCréation du système de fichier sur le disque.. Effectué"
+msgstr "MCréation du système de fichiers sur le disque.. Effectué"
 
 #: gfloppy/src/gfloppy.c:527
 msgid "MChecking for bad blocks... (this might take a while)"
@@ -1218,7 +1218,7 @@ msgstr "_Périphérique disquette :"
 
 #: gfloppy/src/gfloppy2.glade.h:13
 msgid "Floppy formatter"
-msgstr "Formateur de disquette"
+msgstr "Formateur de disquettes"
 
 #: gfloppy/src/gfloppy2.glade.h:14
 msgid "High Density 3.5\" (1.44MB)"
@@ -1259,7 +1259,7 @@ msgid ""
 "can't format a floppy without one of them."
 msgstr ""
 "Ni mke2fs, ni mkdosfs/mformat ne sont installées. Vous ne pouvez formater "
-"une disquette sans un de cela."
+"une disquette sans un de ces utilitaires."
 
 #: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
@@ -1284,7 +1284,7 @@ msgid ""
 msgstr ""
 "Vous n'avez pas les permissions nécessaires pour écrire sur %s, le formatage "
 "ne pourra pas être possible.\n"
-"Contactez votre administrateur systèmeafin d'obtenir les permissions en "
+"Contactez votre administrateur système afin d'obtenir les permissions en "
 "écriture."
 
 #: gfloppy/src/main.c:391
@@ -1293,12 +1293,12 @@ msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
-"Ne peut afficher l'aide du formateur de disquette.\n"
+"Ne peut afficher l'aide du formateur de disquettes.\n"
 "%s"
 
 #: gfloppy/src/main.c:425
 msgid "The volume name can't contain any blank space."
-msgstr "Le nom de volume ne peut contenir d'espaces blancs."
+msgstr "Le nom du volume ne peut pas contenir d'espaces blancs."
 
 #: gfloppy/src/main.c:474
 msgid "The device to format"
@@ -1365,7 +1365,7 @@ msgstr ""
 "ext2 comme système de fichiers natif linux ou fat pour le système de "
 "fichiers DOS."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "Rechercher des fichiers"
 
@@ -1499,97 +1499,97 @@ msgstr "Erreurs de la recherche"
 msgid "Search for Files Error"
 msgstr "Rechercher pour des erreurs de fichiers"
 
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "Entrée de la valeur de la règle de recherche"
 
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "Saisissez une valeur pour cette règle de recherche"
 
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Cliquez pour supprimer la règle « %s »"
 
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "Options _disponibles :"
 
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "Menu de règles de recherche"
 
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "Sélectionnez une règle de recherche depuis le menu"
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "Ré_sultats de la recherche"
 
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "Nom"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "Répertoire"
 
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "Taille"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "Type"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "Date de modification"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "Le fichier est _nommé :"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "Entrée de nom de fichier"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "Saisissez le nom du fichier que vous voulez rechercher"
 
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "_Rechercher dans le répertoire :"
 
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "Parcourir"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "Entrée de répertoire de démarrage"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr ""
 "Saisissez le nom du répertoire dans lequel vous voulez démarrer la recherche"
 
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "Options supplémentaires"
 
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "Cliquez pour démarrer la recherche"
 
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "Cliquez pour arrêter la recherche"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "Impossible d'initialiser bonobo."
 
@@ -1716,10 +1716,6 @@ msgstr "lien (cassé)"
 msgid "link to %s"
 msgstr "lien vers %s"
 
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "Recherche de fichiers"
-
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
@@ -1782,7 +1778,7 @@ msgstr "Ne peut écrire dans la base de données d'actions !"
 
 #: logview/actions.c:485
 msgid "Error while executing specified action"
-msgstr "Erreur lors de l'exécution dela commande spécifiée"
+msgstr "Erreur lors de l'exécution de l'action spécifiée"
 
 #: logview/actions.c:506
 msgid "<empty>"
@@ -2085,7 +2081,7 @@ msgstr "Date de modification : "
 
 #: logview/logview.c:568 logview/logview.c:643
 msgid "Too many open logs. Close one and try again"
-msgstr "Trop de journaux ouverts. Fermez en un et essayer de nouveau"
+msgstr "Trop de journaux ouverts. Fermez en un et essayez de nouveau"
 
 #: logview/logview.c:580
 msgid "File already opened"
@@ -2135,7 +2131,7 @@ msgstr "_Exécuter des actions"
 
 #: logview/monitor.c:289
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "Trop de journaux ouverts. Fermez en un et essayer de nouveau"
+msgstr "Trop de journaux ouverts. Fermez en un et essayez de nouveau"
 
 #: logview/monitor.c:297 logview/monitor.c:335
 msgid "tmp_list is NULL\n"
@@ -2189,6 +2185,9 @@ msgid ""
 msgstr ""
 "Spécifie le fichier journal à ouvrir au démarrage. La valeur par défaut est "
 "soit /var/adm/messages, soit /var/log/messages, suivant votre distribution."
+
+#~ msgid "GNOME Search Tool"
+#~ msgstr "Recherche de fichiers"
 
 #~ msgid "Select the 'Contains the text' constraint"
 #~ msgstr "Sélectionner la contrainte « Contient le texte »"
