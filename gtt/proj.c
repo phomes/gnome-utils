@@ -1683,6 +1683,24 @@ gtt_interval_get_parent (GttInterval * ivl)
 	return ivl->parent;
 }
 
+gboolean
+gtt_interval_is_first_interval (GttInterval *ivl)
+{
+	if (!ivl || !ivl->parent || !ivl->parent->interval_list) return TRUE;
+	
+	if ((GttInterval *) ivl->parent->interval_list->data == ivl) return TRUE;
+	return FALSE;
+}
+
+gboolean
+gtt_interval_is_last_interval (GttInterval *ivl)
+{
+        if (!ivl || !ivl->parent || !ivl->parent->interval_list) return TRUE;
+
+	if ((GttInterval *) ((g_list_last(ivl->parent->interval_list))->data) == ivl) return TRUE;
+	return FALSE;
+}
+
 /* ============================================================= */
 
 GttInterval *

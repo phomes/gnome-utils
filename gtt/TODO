@@ -24,6 +24,11 @@ machines at the same time.
 
 bugs
 ----
+shell commands, set up in the user prefernces start/stop command
+dialog (run by cur_proj_set), might be executed out-of-order by
+the OS. So we should have something that forces the forked proecess 
+to at least start exectuting before we return ...
+
 During read of data,  don't destroy old project list until we are sure 
 that read of new project list succeeded.
 

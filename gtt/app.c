@@ -17,11 +17,11 @@
  */
 #include "config.h"
 
-#include <gnome.h>
-
-#include <stdlib.h>
-#include <stdio.h>
 #include <errno.h>
+#include <gnome.h>
+#include <sched.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include "ctree.h"
@@ -177,6 +177,13 @@ cur_proj_set(GttProject *proj)
 	if (pid < 0) {
 		g_warning("%s: %d: cur_proj_set: couldn't fork\n", __FILE__, __LINE__);
 	}
+
+	/* Note that the forked processes might be scheduled by the operating
+	 * system 'out of order', if we've made rapid successive calls to this
+	 * routine.  So we try to ensure in-order execution by trying to let
+	 * the child process at least start running.  And we can do this by
+	 * yielding our time-slice ... */
+	sched_yield();
 }
 
 
