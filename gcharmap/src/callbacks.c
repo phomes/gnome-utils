@@ -99,7 +99,6 @@ cb_charbtn_click (GtkButton *button, gpointer user_data)
     gtk_editable_insert_text (GTK_EDITABLE (mainapp->entry), text,
 			      strlen (text), &current_pos);
     gtk_editable_set_position (GTK_EDITABLE (mainapp->entry), current_pos + 1);
-    edit_menu_set_sensitivity (TRUE); 
 }
 
 
@@ -136,9 +135,7 @@ cb_charbtn_leave (GtkButton *button, GdkEventFocus *event, gpointer user_data)
 void
 cb_clear_click (GtkWidget *widget, gpointer user_data)
 {
-    edit_menu_set_sensitivity (FALSE);
     gtk_editable_delete_text (GTK_EDITABLE (mainapp->entry), 0, -1);
-    edit_menu_set_sensitivity (FALSE);
 }
 
 
@@ -241,6 +238,19 @@ void
 cb_set_chartable_font (GtkWidget *widget, gpointer user_data)
 {
     gtk_button_clicked (GTK_BUTTON (mainapp->fontpicker));
+}
+void
+cb_entry_changed (GtkWidget *widget, gpointer data)
+{
+    gchar *text;
+
+    text = gtk_editable_get_chars (GTK_EDITABLE (widget), 0, -1);
+    if (strcmp (text, "") == 0) 
+      edit_menu_set_sensitivity (FALSE);
+    else
+      edit_menu_set_sensitivity (TRUE);
+
+    g_free (text);
 }
 
 
