@@ -57,7 +57,7 @@ install-data-local: logview-security
 if CONSOLE_HELPER
 	$(INSTALL_DATA) -D logview-pam $(DESTDIR)$(PAM_PREFIX)/pam.d/logview
 	$(INSTALL_DATA) -D logview-security $(DESTDIR)$(PAM_PREFIX)/security/console.apps/logview
-	$(INSTALL_DATA) -m 755 -d $(sbindir)
-	mv -f $(bindir)/logview $(sbindir)
-	$(LN_S) @CONSOLE_HELPER@ $(bindir)/logview
+	$(INSTALL_DATA) -m 755 -d $(DESTDIR)$(sbindir)
+	mv -f $(DESTDIR)$(bindir)/logview $(DESTDIR)$(sbindir)
+	$(LN_S) @CONSOLE_HELPER@ $(DESTDIR)$(bindir)/logview
 endif
