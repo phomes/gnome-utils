@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-10-11 21:41+0200\n"
+"POT-Creation-Date: 2001-10-13 06:18-0400\n"
 "PO-Revision-Date: 2001-10-09 02:00+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <none@none.org>\n"
@@ -163,15 +163,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:810
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:809
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:808
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
 msgid "3"
 msgstr "3"
 
@@ -815,8 +815,8 @@ msgstr "Adicionar"
 msgid "Show Command"
 msgstr "Mostrar Comando"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ghtml.c:94
-#: gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gtt/ghtml.c:94 gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Iniciar"
 
@@ -899,105 +899,166 @@ msgstr ""
 "Incapaz de compreender geometria (posição e tamanho)\n"
 " especificada na linha de comando"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:511
 msgid "Total"
 msgstr "Total"
 
-#: gtt/ctree.c:532
+#: gtt/ctree.c:513
+msgid "Total time spent on this project."
+msgstr "Tempo total dispendido neste projecto."
+
+#: gtt/ctree.c:518
 msgid "This Memo"
 msgstr "Esta Nota"
 
-#: gtt/ctree.c:536 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:520
+msgid "Time spent under the current task memo."
+msgstr "Tempo dispendido debaixo da nota de tarefa actual."
+
+#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Hoje"
 
-#: gtt/ctree.c:540
+#: gtt/ctree.c:528
+msgid "Time spent on this project today."
+msgstr "Tempo dispendido neste projecto hoje."
+
+#: gtt/ctree.c:533
 msgid "Week"
 msgstr "Semana"
 
-#: gtt/ctree.c:544
+#: gtt/ctree.c:535
+msgid "Time spent on this project this week."
+msgstr "Tempo dispendido neste projecto esta semana."
+
+#: gtt/ctree.c:541
 msgid "Month"
 msgstr "Mês"
 
-#: gtt/ctree.c:548
+#: gtt/ctree.c:543
+msgid "Time spent on this project this month."
+msgstr "Tempo dispendido neste projecto este mês."
+
+#: gtt/ctree.c:549
 msgid "Year"
 msgstr "Ano"
 
-#: gtt/ctree.c:552 gtt/menucmd.c:144
+#: gtt/ctree.c:551
+msgid "Time spent on this project this year."
+msgstr "Tempo dispendido neste projecto este ano."
+
+#: gtt/ctree.c:557
+msgid "Title"
+msgstr "Título"
+
+#: gtt/ctree.c:558 gtt/menucmd.c:144
 msgid "Project Title"
 msgstr "Título do Projecto"
 
-#: gtt/ctree.c:556 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
 msgid "Description"
 msgstr "Descrição"
 
-#: gtt/ctree.c:560
+#: gtt/ctree.c:569
 msgid "Task"
 msgstr "Tarefa"
 
-#: gtt/ctree.c:564
-msgid "Estimated Start Date"
-msgstr "Data de Início Estimada"
+#: gtt/ctree.c:571
+msgid "The memo for the current task"
+msgstr "A nota para a tarefa actual"
 
-#: gtt/ctree.c:568
-msgid "Estimated End Date"
-msgstr "Data de Final Estimada"
+#: gtt/ctree.c:578
+msgid "Estimated Project Start Date"
+msgstr "Data Estimada de Início do Projecto"
 
-#: gtt/ctree.c:572
-msgid "Date Due"
-msgstr "Prazo Final"
+#: gtt/ctree.c:583
+msgid "End"
+msgstr "Final"
 
-#: gtt/ctree.c:576
-msgid "Sizing"
-msgstr "Dimensionamento"
+#: gtt/ctree.c:585
+msgid "Estimated Project Completion Date"
+msgstr "Data Estimada de Final do Projecto"
 
-#: gtt/ctree.c:580 gtt/glade/project_properties.glade.h:5
-#, no-c-format
-msgid "% Complete"
-msgstr "% Completo"
+#: gtt/ctree.c:590
+msgid "Due"
+msgstr "Prazo"
 
-#: gtt/ctree.c:584
-msgid "Urgency"
-msgstr "Urgência"
+#: gtt/ctree.c:592
+msgid ""
+"Due Date: the date by which the project absolutely must be completed by."
+msgstr ""
+"Prazo de Entrega: a data na qual o projecto temdefinitivamente de estar completo."
 
-#: gtt/ctree.c:588
-msgid "Importance"
-msgstr "Importância"
+#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+msgid "Size"
+msgstr "Tamanho"
 
-#: gtt/ctree.c:592 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:601
+msgid "Sizing: How much work it will take to finish this project."
+msgstr "Dimensionamento: Quanto trabalho será necessário para terminar este projecto."
+
+#: gtt/ctree.c:607
+msgid "Done"
+msgstr "Terminado"
+
+#: gtt/ctree.c:609
+msgid "Percent Complete: How much of this project has been finished till now."
+msgstr "Percentagem Completo: Quanto deste projecto foi realizado até agora."
+
+#: gtt/ctree.c:616
+msgid "U"
+msgstr "U"
+
+#: gtt/ctree.c:618
+msgid "Urgency: Does this project need to be done soon, done quickly?"
+msgstr "Urgência: Este projecto tem de ser feito para breve, rapidamente?"
+
+#: gtt/ctree.c:624
+msgid "Imp"
+msgstr "Imp"
+
+#: gtt/ctree.c:626
+msgid "Importance: How important is this project?"
+msgstr "Importância: Quão importante é este projecto?"
+
+#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
 msgstr "Estado"
 
-#: gtt/ctree.c:820 gtt/glade/project_properties.glade.h:25
+#: gtt/ctree.c:634
+msgid "The current status of this project."
+msgstr "O estado actual deste projecto"
+
+#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
 msgid "Low"
 msgstr "Baixa"
 
-#: gtt/ctree.c:821
+#: gtt/ctree.c:970
 msgid "Med"
 msgstr "Média"
 
-#: gtt/ctree.c:822 gtt/glade/project_properties.glade.h:15
+#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
 msgid "High"
 msgstr "Alta"
 
-#: gtt/ctree.c:831 gtt/glade/project_properties.glade.h:29
+#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
 msgid "Not Started"
 msgstr "Por Iniciar"
 
-#: gtt/ctree.c:832 gtt/glade/project_properties.glade.h:21
+#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
 msgid "In Progress"
 msgstr "Em Curso"
 
-#: gtt/ctree.c:833 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
 msgstr "Em Espera"
 
-#: gtt/ctree.c:834 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
 msgstr "Cancelada"
 
-#: gtt/ctree.c:835 gtt/glade/project_properties.glade.h:10
+#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
 msgstr "Terminada"
 
@@ -1123,7 +1184,7 @@ msgstr "(nulo)"
 msgid "Unkown Error"
 msgstr "Erro Desconhecido"
 
-#: gtt/journal.c:168 gtt/plug-in.c:89
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1339,7 +1400,7 @@ msgstr "Con_tador"
 msgid "Reports"
 msgstr "Relatórios"
 
-#: gtt/plug-in.c:120
+#: gtt/plug-in.c:121
 msgid "Reports/<Separator>"
 msgstr "Relatórios/<Separador>"
 
@@ -1863,6 +1924,11 @@ msgstr "            "
 msgid "                        "
 msgstr "                        "
 
+#: gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
+msgstr "% Completo"
+
 #: gtt/glade/project_properties.glade.h:6
 msgid "A title to assign to this project"
 msgstr "Um título a atribuir a este projecto"
@@ -2158,10 +2224,10 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Esta aplicação faz parte do projecto GNOME. O Visualizador de logs"
-"(logview) vem SEM QUALQUER GARANTIA. Esta aplicação é livre, e você "
-"pode redistribui-la sob as condições da Licença Pública Genérica GNU. "
-"O ícon de log foi uma oferta do Tuomas Kuosmanen (ou tigert)."
+"Esta aplicação faz parte do projecto GNOME. O Visualizador de logs(logview) "
+"vem SEM QUALQUER GARANTIA. Esta aplicação é livre, e você pode redistribui-"
+"la sob as condições da Licença Pública Genérica GNU. O ícon de log foi uma "
+"oferta do Tuomas Kuosmanen (ou tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
@@ -3709,10 +3775,6 @@ msgstr "Memória Livre:"
 msgid "Device"
 msgstr "Dispositivo"
 
-#: mini-utils/guname/info.c:61
-msgid "Size"
-msgstr "Tamanho"
-
 #: mini-utils/guname/info.c:62
 msgid "Used space"
 msgstr "Espaço utilizado"
@@ -4854,6 +4916,21 @@ msgstr "Gestor pessoal do cron"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Gestor pessoal do crontab"
+
+#~ msgid "Estimated End Date"
+#~ msgstr "Data de Final Estimada"
+
+#~ msgid "Date Due"
+#~ msgstr "Prazo Final"
+
+#~ msgid "Sizing"
+#~ msgstr "Dimensionamento"
+
+#~ msgid "Urgency"
+#~ msgstr "Urgência"
+
+#~ msgid "Importance"
+#~ msgstr "Importância"
 
 #~ msgid "GNOME Calculator"
 #~ msgstr "Calculadora GNOME"
