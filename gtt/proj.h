@@ -364,10 +364,11 @@ int		gtt_interval_get_fuzz (GttInterval *);
  *
  * The gtt_interval_split() routine splits the list of intervals 
  *    into two pieces, with the indicated interval and everything
- *    following it going into the new task.  It returns the new task.
+ *    following it going after the specified.  
  */
 GttInterval *	gtt_interval_merge_up (GttInterval *);
 GttInterval *	gtt_interval_merge_down (GttInterval *);
-GttTask *	gtt_interval_split (GttInterval *);
+void		gtt_interval_split (GttInterval *, GttTask *);
+GttTask *	gtt_interval_get_parent (GttInterval *);
 
 #endif /* __GTT_PROJ_H__ */

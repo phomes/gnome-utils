@@ -1709,6 +1709,13 @@ gtt_interval_get_running (GttInterval * ivl)
 	return (gboolean) ivl->running;
 }
 
+GttTask *
+gtt_interval_get_parent (GttInterval * ivl)
+{
+	if (!ivl) return NULL;
+	return ivl->parent;
+}
+
 /* ============================================================= */
 
 GttInterval *
@@ -1789,24 +1796,25 @@ gtt_interval_merge_down (GttInterval *ivl)
 	return merge;
 }
 
-GttTask *
-gtt_interval_split (GttInterval *ivl)
+void
+gtt_interval_split (GttInterval *ivl, GttTask *newtask)
 {
 	int is_running = 0;
 	gint idx;
 	GttProject *prj;
 	GttTask *prnt;
-	GttTask *newtask;
 	GList *node;
 	GttInterval *first_ivl;
 
-	if (!ivl) return NULL;
+	if (!ivl || !newtask) return;
 	prnt = ivl->parent;
-	if (!prnt) return NULL;
+	if (!prnt) return;
 	prj = prnt->parent;
-	if (!prj) return NULL;
+	if (!prj) return;
 	node = g_list_find (prnt->interval_list, ivl);
-	if (!node) return NULL;
+	if (!node) return;
+
+	gtt_task_remove (newtask);
 
 	/* avoid misplaced running intervals, stop the task */
 	first_ivl = (GttInterval *) (prnt->interval_list->data);
@@ -1817,8 +1825,6 @@ gtt_interval_split (GttInterval *ivl)
 		gtt_project_timer_update (prj);
 		first_ivl->running = FALSE;
 	}
-
-	newtask = gtt_task_new();
 
 	/* chain the new task into proper order in the parent project */
 	idx = g_list_index (prj->task_list, prnt);
@@ -1849,7 +1855,6 @@ gtt_interval_split (GttInterval *ivl)
 	if (is_running) gtt_project_timer_start (prj);
 
 	proj_refresh_time (prnt->parent);
-	return newtask;
 }
 
 /* ============================================================= */

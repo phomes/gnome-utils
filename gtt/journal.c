@@ -235,7 +235,15 @@ interval_insert_memo_cb(GtkWidget * w, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
 	GttTask *newtask;
-	newtask = gtt_interval_split (wig->interval);
+	if (!wig->interval) return;
+
+	/* try to get billrates consistent across gap */
+	newtask = gtt_interval_get_parent (wig->interval);
+	newtask = gtt_task_dup (newtask);
+	gtt_task_set_memo (newtask, _("New Task"));
+	gtt_task_set_notes (newtask, "");
+
+	gtt_interval_split (wig->interval, newtask);
 	prop_task_dialog_show (newtask);
 }
 
@@ -244,9 +252,12 @@ interval_paste_memo_cb(GtkWidget * w, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
 	GttTask *newtask;
-printf ("duude paste\n");
-	// newtask = gtt_interval_split (wig->interval);
-	// prop_task_dialog_show (newtask);
+
+	if (!cutted_task || !wig->interval) return;
+	newtask = cutted_task;
+	cutted_task = gtt_task_dup (newtask);
+	
+	gtt_interval_split (wig->interval, newtask);
 }
 
 static void
