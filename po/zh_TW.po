@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 1.107.0\n"
-"POT-Creation-Date: 2002-08-28 16:23+0100\n"
-"PO-Revision-Date: 2002-06-03 07:56+0800\n"
+"Project-Id-Version: gnome-utils 2.0.4\n"
+"POT-Creation-Date: 2002-09-21 05:01+0200\n"
+"PO-Revision-Date: 2002-09-26 12:29+0800\n"
 "Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
 "Language-Team: traditional Chinese <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -87,9 +87,8 @@ msgid "GNOME Calculator"
 msgstr "GNOME 計算機"
 
 #: gcalc/gcalc.c:61
-#, fuzzy
 msgid "(C) 1998 the Free Software Foundation"
-msgstr "(C) 1998,2002 the Free Software Foundation"
+msgstr "(C) 1998 the Free Software Foundation"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
@@ -125,7 +124,7 @@ msgstr "倒數"
 
 #: gcalc/gnome-calc.c:1253
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1253
 msgid "Square"
@@ -231,7 +230,7 @@ msgstr "自然對數"
 
 #: gcalc/gnome-calc.c:1269
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "x<sup>y</sup>"
 
 #: gcalc/gnome-calc.c:1269
 msgid "Power"
@@ -426,14 +425,12 @@ msgid "_Insert"
 msgstr "插入(_I)"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "字元代碼："
+msgstr "字元代碼(_O)："
 
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "字元："
+msgstr "字元(_A)："
 
 #: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
@@ -522,9 +519,8 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "以選擇字元代碼的方式插入字元。"
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
-msgstr "字元(_C)"
+msgstr "字元(_A)"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
@@ -615,13 +611,12 @@ msgstr ""
 "org，而預設的連接埠是 2628。"
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "字典"
+msgstr "GNOME 字典"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "版權所有 (C) 1999 Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -703,20 +698,20 @@ msgstr "字典"
 msgid "_Word: "
 msgstr "單字(_W)："
 
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "單字"
 
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "單字輸入欄"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
 msgstr "請輸入單字或在下列的清單中選擇"
 
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
 msgstr "檢索單字"
 
@@ -882,31 +877,35 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"指定是否使用智慧型檢索。此設定鍵取決於字典伺服器是否支援本項選項。預設為 TRUE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "字典伺服器所使用的資料庫。"
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"要連接的字典伺服器。預設的伺服器為 dict.org。如果想知道有關其它伺服器的詳情，"
+"請瀏覽 http://www.dict.org"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"使用字典伺服器中的個別資料庫。“!”表示 gnome-dictionary 會搜尋伺服器中的所有資"
+"料庫。"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "使用的連接埠號碼。預設的連接埠是 2628。"
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "搜尋方法"
+msgstr "搜尋方式"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -914,6 +913,8 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"會使用的搜尋方式。它取決於字典伺服器支援哪些搜尋方式。預設的搜尋方式為‘lev’ "
+"- 所有和準備檢索的字的 Levenshtein distance 為 1 的字"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1560,83 +1561,79 @@ msgstr "系統紀錄檔檢視程式"
 
 #: logview/about.c:73
 msgid "Copyright (C) 1998"
-msgstr "版權 (C) 1998"
+msgstr "版權所有 (C) 1998"
 
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "紀錄行動資料庫"
 
-#: logview/actions.c:85
-#, fuzzy
+#: logview/actions.c:84
 msgid "Actions"
-msgstr "行動..."
+msgstr "行動"
 
-#: logview/actions.c:153
-#, fuzzy
+#: logview/actions.c:152
 msgid "_Add"
-msgstr "加"
+msgstr "新增(_A)"
 
-#: logview/actions.c:160
-#, fuzzy
+#: logview/actions.c:159
 msgid "_Edit"
-msgstr "編輯..."
+msgstr "修改(_E)"
 
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#: logview/actions.c:166 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#: logview/actions.c:260
+#: logview/actions.c:259
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "無法開啟紀錄行動的資料庫 <%s>！開啟失敗。"
 
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "讀入紀錄行動的資料庫時發生錯誤"
 
-#: logview/actions.c:386
+#: logview/actions.c:385
 msgid "Can't write to actions database!"
 msgstr "無法寫入紀錄行動的資料庫！"
 
-#: logview/actions.c:486
+#: logview/actions.c:485
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "進行指定的行動時出現錯誤"
 
-#: logview/actions.c:507
+#: logview/actions.c:506
 msgid "<empty>"
 msgstr "<空白>"
 
-#: logview/actions.c:508
+#: logview/actions.c:507
 msgid "log name regexp"
 msgstr "紀錄名稱的正規表示式"
 
-#: logview/actions.c:509
+#: logview/actions.c:508
 msgid "process regexp"
 msgstr "程序名稱的正規表示式"
 
-#: logview/actions.c:510
+#: logview/actions.c:509
 msgid "message regexp"
 msgstr "訊息的正規表示式"
 
-#: logview/actions.c:511
+#: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
 msgstr "當符合正規表示式時所執行的行動"
 
-#: logview/actions.c:512
+#: logview/actions.c:511
 msgid "description"
 msgstr "描述"
 
-#: logview/actions.c:772
-#, fuzzy
+#: logview/actions.c:771
 msgid "_Description:"
-msgstr "描述："
+msgstr "描述(_D)："
 
-#: logview/actions.c:781
+#: logview/actions.c:780
 msgid "Description of this entry."
-msgstr "此項目的描述。"
+msgstr "有關本項目的描述。"
 
-#: logview/actions.c:805
+#: logview/actions.c:804
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2198,17 +2195,6 @@ msgid ""
 msgstr ""
 "找不到保存檔案（tar）程式！\n"
 "它是建立保存檔用的必要程式。"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr ""
-#~ "-*-*-bold-r-normal-*-*-180-*-*-*-*-big5-0,-adobe-helvetica-bold-r-normal-"
-#~ "*-*-180-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "x^2"
-#~ msgstr "x^2"
-
-#~ msgid "x^y"
-#~ msgstr "x^y"
 
 #~ msgid "Default database. ! indicates all databases"
 #~ msgstr "預設的資料庫。‘!’表示所有資料庫"
