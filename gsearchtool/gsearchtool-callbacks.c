@@ -362,6 +362,35 @@ display_dialog_could_not_open_file (GtkWidget * window,
 	g_free (primary);
 }
 
+static void
+display_dialog_could_not_open_folder (GtkWidget * window,
+                                      const gchar * folder)
+{ 		
+	GtkWidget * dialog;
+	gchar * primary;
+
+	primary = g_strdup_printf (_("Could not open folder \"%s\"."), folder);
+
+	dialog = gtk_message_dialog_new (GTK_WINDOW (window),
+	                                 GTK_DIALOG_DESTROY_WITH_PARENT,
+	                                 GTK_MESSAGE_ERROR,
+	                                 GTK_BUTTONS_OK,
+	                                 primary);
+	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+	                                          _("The nautilus file manager is not running."));
+
+	gtk_window_set_title (GTK_WINDOW (dialog), "");
+	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
+	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+
+	g_signal_connect (G_OBJECT (dialog),
+               		  "response",
+               		  G_CALLBACK (gtk_widget_destroy), NULL);
+
+	gtk_widget_show (dialog);			
+	g_free (primary);
+}
+
 void
 open_file_cb (GtkAction * action,
               gpointer data)
@@ -422,10 +451,15 @@ open_file_cb (GtkAction * action,
 				
 				if (launch_file (locale_file) == FALSE) {
 					
-					if (is_nautilus_running () &&
-					    g_file_test (locale_file, G_FILE_TEST_IS_DIR)) {
-						open_file_with_nautilus (gsearch->window, locale_file);
-					}
+					if (g_file_test (locale_file, G_FILE_TEST_IS_DIR)) {
+					
+						if (is_nautilus_running ()) {
+							open_file_with_nautilus (gsearch->window, locale_file);
+						}
+						else {
+							display_dialog_could_not_open_folder (gsearch->window, utf8_name);
+						}
+					} 
 					else {
 						display_dialog_could_not_open_file (gsearch->window, utf8_name, 
 						                                    _("There is no installed viewer capable "
@@ -487,35 +521,6 @@ display_dialog_folder_open_limit (GtkWidget * window,
 	g_free (secondary);
 
 	return response;
-}
-
-static void
-display_dialog_could_not_open_folder (GtkWidget * window,
-                                      const gchar * folder)
-{ 		
-	GtkWidget * dialog;
-	gchar * primary;
-
-	primary = g_strdup_printf (_("Could not open folder \"%s\"."), folder);
-
-	dialog = gtk_message_dialog_new (GTK_WINDOW (window),
-	                                 GTK_DIALOG_DESTROY_WITH_PARENT,
-	                                 GTK_MESSAGE_ERROR,
-	                                 GTK_BUTTONS_OK,
-	                                 primary);
-	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-	                                          _("The nautilus file manager is not running."));
-
-	gtk_window_set_title (GTK_WINDOW (dialog), "");
-	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
-
-	g_signal_connect (G_OBJECT (dialog),
-               		  "response",
-               		  G_CALLBACK (gtk_widget_destroy), NULL);
-
-	gtk_widget_show (dialog);			
-	g_free (primary);
 }
 	
 void
