@@ -1,5 +1,10 @@
 2005-03-12  Dennis Cranston <dennis_cranston@yahoo.com>
 
+	* gserachtool-support.c: After previous commit, we don't need 
+	to include <bonobo-activation/bonobo-activation.h>.
+	
+2005-03-12  Dennis Cranston <dennis_cranston@yahoo.com>
+
 	* gsearchtool-callbacks.c: (open_file_cb), (open_folder_cb):
 	Remove the is_nautilus_running () function since nautilus 
 	is launched with the '--no-desktop" command line argument.

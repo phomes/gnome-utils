@@ -32,7 +32,6 @@
 #include <glib/gi18n.h>
 #include <regex.h>
 #include <gdk/gdkx.h>
-#include <bonobo-activation/bonobo-activation.h>
 #include <libgnomevfs/gnome-vfs-mime.h>
 #include <libgnomevfs/gnome-vfs-mime-handlers.h>
 #include <libgnomevfs/gnome-vfs-ops.h> 
