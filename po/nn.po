@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.3\n"
-"POT-Creation-Date: 2001-11-30 16:14-0600\n"
+"POT-Creation-Date: 2001-12-04 03:19+0100\n"
 "PO-Revision-Date: 2001-11-30 03:24+0100\n"
 "Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
 "Language-Team: Norwegian/Nynorsk <no@li.org>\n"
@@ -1166,24 +1166,24 @@ msgstr "Feil - ukjend"
 msgid "unknown token: >>>>"
 msgstr "ukjend token: >>>>"
 
-#: gtt/journal.c:108
+#: gtt/journal.c:107
 msgid "Error 404 Not Found"
 msgstr "Feil 404 Ikkje funne"
 
-#: gtt/journal.c:110
+#: gtt/journal.c:109
 #, c-format
 msgid "The file %s was not found."
 msgstr "Fann ikkje fila %s."
 
-#: gtt/journal.c:111
+#: gtt/journal.c:110
 msgid "(null)"
 msgstr "(null)"
 
-#: gtt/journal.c:120
+#: gtt/journal.c:119
 msgid "Unkown Error"
 msgstr "Ukjend feil"
 
-#: gtt/journal.c:169 gtt/plug-in.c:90
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1192,12 +1192,12 @@ msgstr ""
 "Ikkje i stand til å open fila %s\n"
 "%s"
 
-#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/journal.c:259 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
 msgid "New Diary Entry"
 msgstr "Ny dagbokoppføring"
 
-#: gtt/journal.c:436
+#: gtt/journal.c:447
 msgid "Save HTML To File"
 msgstr "Lagre HTML til fil"
 
@@ -1574,50 +1574,58 @@ msgid "Start Fuzz"
 msgstr "Start usikker"
 
 #: gtt/glade/interval_popup.glade.h:1
+msgid "Add a new time interval."
+msgstr "Legg til eit nytt tidsintervall."
+
+#: gtt/glade/interval_popup.glade.h:2
 msgid "Delete Interval"
 msgstr "Slett intervall"
 
-#: gtt/glade/interval_popup.glade.h:2
+#: gtt/glade/interval_popup.glade.h:3
 msgid "Delete This Interval"
 msgstr "Slett dette intervallet"
 
-#: gtt/glade/interval_popup.glade.h:3
+#: gtt/glade/interval_popup.glade.h:4
 msgid "Edit Interval"
 msgstr "Rediger intervall"
 
-#: gtt/glade/interval_popup.glade.h:4
+#: gtt/glade/interval_popup.glade.h:5
 msgid "Edit the Start & Stop Times"
 msgstr "Rediger start og stopptider"
 
-#: gtt/glade/interval_popup.glade.h:5
+#: gtt/glade/interval_popup.glade.h:6
 msgid "Insert Diary Entry"
 msgstr "Sett inn dagbokoppføring"
 
-#: gtt/glade/interval_popup.glade.h:6
+#: gtt/glade/interval_popup.glade.h:7
 msgid "Insert a new diary entry above this time interval."
 msgstr "Set inn eit ny dagbokoppføring over dette tidsintervallet."
 
-#: gtt/glade/interval_popup.glade.h:7
+#: gtt/glade/interval_popup.glade.h:8
 msgid "Merge Down"
 msgstr "Slå saman nedover"
 
-#: gtt/glade/interval_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:9
 msgid "Merge Into Interval Above"
 msgstr "Slå samen med det som står over"
 
-#: gtt/glade/interval_popup.glade.h:9
+#: gtt/glade/interval_popup.glade.h:10
 msgid "Merge Into Interval Below"
 msgstr "Slå saman med intervallet under"
 
-#: gtt/glade/interval_popup.glade.h:10
+#: gtt/glade/interval_popup.glade.h:11
 msgid "Merge Up"
 msgstr "Slå saman oppover"
 
-#: gtt/glade/interval_popup.glade.h:11
+#: gtt/glade/interval_popup.glade.h:12
+msgid "New Interval"
+msgstr "Nytt intervall"
+
+#: gtt/glade/interval_popup.glade.h:13
 msgid "Paste Diary Entry"
 msgstr "Lim inn dagbokoppføring"
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:14 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
 msgstr "Lim inn ei dagbokoppføring  utklipt tidlegare."
 
@@ -2107,13 +2115,12 @@ msgid "seconds"
 msgstr "sekund"
 
 #: gtt/glade/task_popup.glade.h:1
-#, fuzzy
 msgid "Add a new time interval"
-msgstr "Oppdateringsintervall (ms)"
+msgstr "Legg til eit nytt tidsintervall"
 
 #: gtt/glade/task_popup.glade.h:2
-msgid "Delete _Times"
-msgstr "Slett _tider"
+msgid "Cut Entry & _Times"
+msgstr "Klipp ut oppføring og _Tider"
 
 #: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
@@ -2132,13 +2139,12 @@ msgid "Insert a new diary entry above this one."
 msgstr "Sett inn eit ny dagbokoppføring over denne."
 
 #: gtt/glade/task_popup.glade.h:7
-#, fuzzy
 msgid "New Time Interval"
-msgstr "Slett dette intervallet"
+msgstr "Nytt tidsintervall"
 
 #: gtt/glade/task_popup.glade.h:9
-msgid "_Delete Diary Entry"
-msgstr "_Fjern dagbokoppføring"
+msgid "_Cut Diary Entry"
+msgstr "_Klipp ut dagbokoppføring"
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
@@ -4926,6 +4932,12 @@ msgstr "Personleg cron-handsamar"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Personleg crontab-handsamar"
+
+#~ msgid "Delete _Times"
+#~ msgstr "Slett _tider"
+
+#~ msgid "_Delete Diary Entry"
+#~ msgstr "_Fjern dagbokoppføring"
 
 #~ msgid "This Memo"
 #~ msgstr "Dette notatet"
