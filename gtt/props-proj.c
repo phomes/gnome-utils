@@ -188,6 +188,17 @@ do_set_project(GttProject *proj, PropDlg *dlg)
 		GTK_OBJECT(dlg->dlg));				\
 	widget; })
 
+#define DATED(NAME) ({						\
+	GtkWidget *widget;					\
+	widget = glade_xml_get_widget (gtxml, NAME);		\
+	gtk_signal_connect_object(GTK_OBJECT(widget), "date_changed",\
+		GTK_SIGNAL_FUNC(gnome_property_box_changed), 	\
+		GTK_OBJECT(dlg->dlg));				\
+	gtk_signal_connect_object(GTK_OBJECT(widget), "time_changed",\
+		GTK_SIGNAL_FUNC(gnome_property_box_changed), 	\
+		GTK_OBJECT(dlg->dlg));				\
+	GNOME_DATE_EDIT(widget); })
+
 
 #define MUGGED(NAME) ({						\
 	GtkWidget *widget, *mw;					\
@@ -199,6 +210,15 @@ do_set_project(GttProject *proj, PropDlg *dlg)
 	GTK_OPTION_MENU(widget);				\
 })
 
+
+#define MENTRY(WIDGET,NAME,ORDER,VAL) {				\
+	GtkWidget *menu_item;					\
+	GtkMenu *menu = GTK_MENU(gtk_option_menu_get_menu (WIDGET));	\
+	gtk_option_menu_set_history (WIDGET, ORDER);		\
+	menu_item =  gtk_menu_get_active(menu);			\
+	gtk_object_set_data(GTK_OBJECT(menu_item), NAME,	\
+		(gpointer) VAL);				\
+}
 
 
 static PropDlg *
@@ -243,12 +263,31 @@ prop_dialog_new (void)
 	dlg->importance = MUGGED("importance menu");
 	dlg->status     = MUGGED("status menu");
 
-	dlg->start      = GNOME_DATE_EDIT(TAGGED("start date"));
-	dlg->end        = GNOME_DATE_EDIT(TAGGED("end date"));
-	dlg->due        = GNOME_DATE_EDIT(TAGGED("due date"));
+	dlg->start      = DATED("start date");
+	dlg->end        = DATED("end date");
+	dlg->due        = DATED("due date");
 
 	dlg->sizing     = GTK_ENTRY(TAGGED("sizing box"));
 	dlg->percent    = GTK_ENTRY(TAGGED("percent box"));
+
+	/* ------------------------------------------------------ */
+	/* initialize menu values */
+
+	MENTRY (dlg->urgency, "urgency", 0, GTT_UNDEFINED);
+	MENTRY (dlg->urgency, "urgency", 1, GTT_LOW);
+	MENTRY (dlg->urgency, "urgency", 2, GTT_MEDIUM);
+	MENTRY (dlg->urgency, "urgency", 3, GTT_HIGH);
+
+	MENTRY (dlg->importance, "importance", 0, GTT_UNDEFINED);
+	MENTRY (dlg->importance, "importance", 1, GTT_LOW);
+	MENTRY (dlg->importance, "importance", 2, GTT_MEDIUM);
+	MENTRY (dlg->importance, "importance", 3, GTT_HIGH);
+
+	MENTRY (dlg->status, "status", 0, GTT_NOT_STARTED);
+	MENTRY (dlg->status, "status", 1, GTT_IN_PROGRESS);
+	MENTRY (dlg->status, "status", 2, GTT_ON_HOLD);
+	MENTRY (dlg->status, "status", 3, GTT_CANCELLED);
+	MENTRY (dlg->status, "status", 4, GTT_COMPLETED);
 
 	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
 /*

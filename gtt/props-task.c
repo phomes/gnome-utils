@@ -151,13 +151,39 @@ do_set_task(GttTask *tsk, PropTaskDlg *dlg)
 
 /* ============================================================== */
 
+#define TAGGED(NAME) ({						\
+	GtkWidget *widget;					\
+	widget = glade_xml_get_widget (gtxml, NAME);		\
+	gtk_signal_connect_object(GTK_OBJECT(widget), "changed",\
+		GTK_SIGNAL_FUNC(gnome_property_box_changed), 	\
+		GTK_OBJECT(dlg->dlg));				\
+	widget; })
+
+#define MUGGED(NAME) ({						\
+	GtkWidget *widget, *mw;					\
+        widget = glade_xml_get_widget (gtxml, NAME);		\
+        mw = gtk_option_menu_get_menu (GTK_OPTION_MENU(widget));\
+        gtk_signal_connect_object(GTK_OBJECT(mw), "selection_done", \
+                 GTK_SIGNAL_FUNC(gnome_property_box_changed),	\
+                 GTK_OBJECT(dlg->dlg));				\
+	GTK_OPTION_MENU(widget);				\
+})
+
+#define MENTRY(WIDGET,NAME,ORDER,VAL) {				\
+	GtkWidget *menu_item;					\
+	GtkMenu *menu = GTK_MENU(gtk_option_menu_get_menu (WIDGET));	\
+	gtk_option_menu_set_history (WIDGET, ORDER);		\
+	menu_item =  gtk_menu_get_active(menu);			\
+	gtk_object_set_data(GTK_OBJECT(menu_item), NAME,	\
+		(gpointer) VAL);				\
+}
+
+
 static  PropTaskDlg *
 prop_task_dialog_new (void)
 {
 	PropTaskDlg *dlg = NULL;
 	GladeXML *gtxml;
-	GtkWidget *e;
-	GtkWidget *menu, *menu_item;
         static GnomeHelpMenuEntry help_entry = { NULL, "index.html#TASK" };
 
 	dlg = g_malloc(sizeof(PropTaskDlg));
@@ -177,105 +203,29 @@ prop_task_dialog_new (void)
 
 	/* ------------------------------------------------------ */
 	/* grab the various entry boxes and hook them up */
-	e = glade_xml_get_widget (gtxml, "memo box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->memo = GTK_ENTRY(e);
 
-	e = glade_xml_get_widget (gtxml, "notes box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->notes = GTK_TEXT(e);
-
-	e = glade_xml_get_widget (gtxml, "billstatus menu");
-	dlg->billstatus = GTK_OPTION_MENU(e);
-	e = gtk_option_menu_get_menu (GTK_OPTION_MENU(e));
-	gtk_signal_connect_object(GTK_OBJECT(e), "selection_done",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-
-	e = glade_xml_get_widget (gtxml, "billable menu");
-	dlg->billable = GTK_OPTION_MENU(e);
-	e = gtk_option_menu_get_menu (GTK_OPTION_MENU(e));
-	gtk_signal_connect_object(GTK_OBJECT(e), "selection_done",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-
-	e = glade_xml_get_widget (gtxml, "billrate menu");
-	dlg->billrate = GTK_OPTION_MENU(e);
-	e = gtk_option_menu_get_menu (GTK_OPTION_MENU(e));
-	gtk_signal_connect_object(GTK_OBJECT(e), "selection_done",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-
-	e = glade_xml_get_widget (gtxml, "unit box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->unit = GTK_ENTRY(e);
+	dlg->memo       = GTK_ENTRY(TAGGED("memo box"));
+	dlg->notes      = GTK_TEXT(TAGGED("notes box"));
+	dlg->billstatus = MUGGED("billstatus menu");
+	dlg->billable   = MUGGED("billable menu");
+	dlg->billrate   = MUGGED("billrate menu");
+	dlg->unit       = GTK_ENTRY(TAGGED("unit box"));
 
 	/* ------------------------------------------------------ */
-	/* associate values with the two option menus */
-	menu = gtk_option_menu_get_menu (dlg->billstatus);
+	/* associate values with the three option menus */
 
-	gtk_option_menu_set_history (dlg->billstatus, 0);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billstatus",
-		(gpointer) GTT_HOLD);
+	MENTRY (dlg->billstatus, "billstatus", 0, GTT_HOLD);
+	MENTRY (dlg->billstatus, "billstatus", 1, GTT_BILL);
+	MENTRY (dlg->billstatus, "billstatus", 2, GTT_PAID);
 
-	gtk_option_menu_set_history (dlg->billstatus, 1);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billstatus",
-		(gpointer) GTT_BILL);
+	MENTRY (dlg->billable, "billable", 0, GTT_BILLABLE);
+	MENTRY (dlg->billable, "billable", 1, GTT_NOT_BILLABLE);
+	MENTRY (dlg->billable, "billable", 2, GTT_NO_CHARGE);
 
-	gtk_option_menu_set_history (dlg->billstatus, 2);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billstatus",
-		(gpointer) GTT_PAID);
-
-
-	menu = gtk_option_menu_get_menu (dlg->billable);
-
-	gtk_option_menu_set_history (dlg->billable, 0);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billable",
-		(gpointer) GTT_BILLABLE);
-
-	gtk_option_menu_set_history (dlg->billable, 1);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billable",
-		(gpointer) GTT_NOT_BILLABLE);
-
-	gtk_option_menu_set_history (dlg->billable, 2);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billable",
-		(gpointer) GTT_NO_CHARGE);
-
-
-	menu = gtk_option_menu_get_menu (dlg->billrate);
-
-	gtk_option_menu_set_history (dlg->billrate, 0);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billrate",
-		(gpointer) GTT_REGULAR);
-
-	gtk_option_menu_set_history (dlg->billrate, 1);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billrate",
-		(gpointer) GTT_OVERTIME);
-
-	gtk_option_menu_set_history (dlg->billrate, 2);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billrate",
-		(gpointer) GTT_OVEROVER);
-
-	gtk_option_menu_set_history (dlg->billrate, 3);
-	menu_item =  gtk_menu_get_active(GTK_MENU(menu));
-	gtk_object_set_data(GTK_OBJECT(menu_item), "billrate",
-		(gpointer) GTT_FLAT_FEE);
-
+	MENTRY (dlg->billrate, "billrate", 0, GTT_REGULAR);
+	MENTRY (dlg->billrate, "billrate", 1, GTT_OVERTIME);
+	MENTRY (dlg->billrate, "billrate", 2, GTT_OVEROVER);
+	MENTRY (dlg->billrate, "billrate", 3, GTT_FLAT_FEE);
 
 	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
 /*
