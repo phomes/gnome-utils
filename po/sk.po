@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-10-14 15:16+0200\n"
-"PO-Revision-Date: 2001-10-14 15:20CET\n"
+"POT-Creation-Date: 2001-11-11 12:35+0100\n"
+"PO-Revision-Date: 2001-11-11 12:35CET\n"
 "Last-Translator: Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -641,7 +641,7 @@ msgstr "Nepodarilo sa rozlo¾i» re»azec umiestnenia '%s'"
 msgid "Specify the geometry of the window."
 msgstr "Uvádza umiestnenie okna."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:445 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:439 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
 msgstr "GEOMETRY"
 
@@ -948,11 +948,11 @@ msgstr "Èas strávený tento rok pre tento projekt."
 msgid "Title"
 msgstr "Titul"
 
-#: gtt/ctree.c:558 gtt/menucmd.c:144
+#: gtt/ctree.c:558 gtt/menucmd.c:148
 msgid "Project Title"
 msgstr "Titulok projektu"
 
-#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Popis"
 
@@ -1057,18 +1057,18 @@ msgstr "Zru¹ený"
 msgid "Completed"
 msgstr "Dokonèený"
 
-#: gtt/file-io.c:373
+#: gtt/file-io.c:376
 msgid "project %t started"
 msgstr "projekt %t spustený"
 
-#: gtt/file-io.c:376
+#: gtt/file-io.c:379
 msgid "stopped project %t"
 msgstr "zastavený projekt %t"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:670
+#: gtt/file-io.c:677
 #, c-format
 msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
@@ -1220,7 +1220,7 @@ msgstr "program spustený"
 msgid "program exited"
 msgstr "program skonèil"
 
-#: gtt/main.c:115
+#: gtt/main.c:114
 msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
@@ -1229,64 +1229,72 @@ msgstr ""
 "Stlaète OK, ak chcete spusti» GTimeTracker aj tak, inak stlaète Zru¹i» pre "
 "koniec."
 
-#: gtt/main.c:127
+#: gtt/main.c:126
 msgid "Cannot create pid-file!"
 msgstr "Nemô¾em vytvori» súbor pid!"
 
-#: gtt/main.c:220
+#: gtt/main.c:219
 msgid "Do you want to continue?"
 msgstr "Chcete pokraèova»?"
 
-#: gtt/main.c:223 gtt/main.c:282
+#: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
 msgstr "Chyba"
 
-#: gtt/main.c:279
+#: gtt/main.c:272
 msgid "Shall I setup a new configuration?"
 msgstr "Mám nastavi» novú konfiguráciu?"
 
-#: gtt/main.c:445
+#: gtt/main.c:439
 msgid "Specify geometry"
 msgstr "©pecifikuje umiestnenie"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "Select a project on startup"
 msgstr "Výber projektu pri ¹tarte"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: gtt/main.c:487 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
 msgstr "Varovanie"
 
 #: gtt/menucmd.c:85
-msgid "Time tracking tool for GNOME"
-msgstr "GNOME nástroj pre sledovanie èasu"
+msgid ""
+"GTimeTracker is a combination stop-watch, diary, consultant billing system "
+"and project manager.  You can measure the amount of time you spend on a "
+"task, associate a memo with it, set a billing rate, print an invoice, as "
+"well as track that status of other projects."
+msgstr ""
+"GTimeTracker je kombinácia stopiek, denníka, úètovacieho systému "
+"pre konzultantov a správcu projektov. Mô¾ete ním mera» èas, ktorý "
+"ste strávili na nejakej úlohe, pripoji» k nej poznámky, nastavi» "
+"spôsob úètovania, vytlaèi» faktúru a sledova» stav ostatných projektov."
 
-#: gtt/menucmd.c:138
+#: gtt/menucmd.c:142
 msgid "New Project..."
 msgstr "Nový projekt..."
 
-#: gtt/menucmd.c:220 gtt/toolbar.c:167
+#: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Znovu naèíta» konfiguraèný súbor"
 
-#: gtt/menucmd.c:221
+#: gtt/menucmd.c:225
 msgid "Do you really want to reload the configuration file?"
 msgstr "Naozaj chcete znovu naèíta» konfiguraèný súbor?"
 
-#: gtt/menucmd.c:256
+#: gtt/menucmd.c:260
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr "Súbor %s u¾ existuje. Prepísa»?"
 
-#: gtt/menucmd.c:267
+#: gtt/menucmd.c:271
 msgid "File cannot be written"
 msgstr "Súbor nie je mo¾né zapísa»"
 
-#: gtt/menucmd.c:287
+#: gtt/menucmd.c:291
 msgid "Export Current State"
 msgstr "Exportova» aktuálny stav"
 
@@ -2207,10 +2215,10 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Tento  program  je  súèas»ou  projektu GNOME. Logview nedáva "
-"ABSOLÚTNE ®IADNE ZÁRUKY. Je to voµne ¹íriteµný softvér, a budeme radi ak ho "
-"budete distribuova» ïalej podµa pravidiel GNU General Public Licence. Log "
-"ikona je od Tuomasa Kuosmanena (a.k.a tigert)."
+"Tento  program  je  súèas»ou  projektu GNOME. Logview nedáva ABSOLÚTNE "
+"®IADNE ZÁRUKY. Je to voµne ¹íriteµný softvér, a budeme radi ak ho budete "
+"distribuova» ïalej podµa pravidiel GNU General Public Licence. Log ikona je "
+"od Tuomasa Kuosmanena (a.k.a tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
