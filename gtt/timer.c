@@ -24,6 +24,7 @@
 #include "ctree.h"
 #include "cur-proj.h"
 #include "dialog.h"
+#include "gtt.h"
 #include "idle-timer.h"
 #include "log.h"
 #include "prefs.h"
@@ -85,7 +86,16 @@ timer_func(gpointer data)
 
 	/* Even if there is no active project,
 	 * we still have to zero out the counters periodically. */
-	if (0 == now%60) zero_on_rollover (now);
+	if (0 == now%60) 
+	{
+	  zero_on_rollover (now);
+
+	  /* Save all accumulated data to file periodically.
+		* This will help ensure against catastrophic data
+		* loss just in case gtt core dumps (which it is doing,
+		* but I cannot reproduce). */
+	  save_all();
+	}
 
 	if (!cur_proj) return 1;
 

@@ -1,3 +1,10 @@
+
+Tue Dec 24 23:26:47 CST 2002 Linas Vepstas <linas@linas.org>
+
+	* timer.c: save data periodically, automatically, to file,
+	  hopefully minimizing catastrophic data loss in case of 
+	  crash/hang. Merry Christmas!
+
 Sat Dec 21 17:37:26 CST 2002 Linas Vepstas <linas@linas.org>
 
 	* ghtml.c: Printing bugfix for Solaris, as per Derek Atkins
