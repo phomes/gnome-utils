@@ -61,6 +61,8 @@ struct gtt_project_s
 	GttProject *parent;    /* back pointer to parent project */
 
 	int id;		/* simple id number */
+	int being_destroyed : 1;  /* project is being destroyed */
+	int frozen : 1 ;           /* defer recomputes of time totals */
 
         /* miscellaneous -- used bu GUI to display */
         GtkCTreeNode *trow;

@@ -83,7 +83,7 @@ const char * 	gtt_project_get_custid (GttProject *);
  *    backwards-compatible routine for setting the total amount of
  *    time spent on a project.  It does this by creating a new task,
  *    labelling it as 'old gtt data', and putting the time info
- *    into that task.
+ *    into that task.  Depricated. Don't use in new code.
  */
 void		gtt_project_compat_set_secs (GttProject *proj, 
 			int secs_ever, int secs_day, time_t last_update);
