@@ -309,10 +309,6 @@ edit_journal(GtkWidget *widget, gpointer data)
 	glade_xml_signal_connect_data (glxml, "on_merge_down_activate",
 	        GTK_SIGNAL_FUNC (interval_merge_down_clicked_cb), wig);
 	  
-
-	/* ---------------------------------------------------- */
-	/* this is the dialog for editing intervals */
-
 	/* ---------------------------------------------------- */
 	/* finally ... display the actual journal */
 
