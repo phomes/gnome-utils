@@ -29,12 +29,12 @@
 
 struct EditIntervalDialog_s
 {
+	GttInterval *interval;
 	GladeXML *gtxml;
 	GtkWidget *interval_edit;
 	GtkWidget *start_widget;
 	GtkWidget *stop_widget;
 	GtkWidget *fuzz_widget;
-	GttInterval *interval;
 };
 
 /* ============================================================== */
@@ -92,6 +92,21 @@ edit_interval_set_interval (EditIntervalDialog *dlg, GttInterval *ivl)
 	time_t start, stop;
 	int fuzz;
 
+	if (!dlg) return;
+	dlg->interval = ivl;
+
+	if (!ivl) 
+	{
+		w = dlg->start_widget;
+		gnome_date_edit_set_time (GNOME_DATE_EDIT(w), 0);
+		w = dlg->stop_widget;
+		gnome_date_edit_set_time (GNOME_DATE_EDIT(w), 0);
+
+		fw = GTK_OPTION_MENU(dlg->fuzz_widget);
+		gtk_option_menu_set_history(fw, 0);
+		return;
+	}
+
 	w = dlg->start_widget;
 	start = gtt_interval_get_start (ivl);
 	gnome_date_edit_set_time (GNOME_DATE_EDIT(w), start);
@@ -128,6 +143,7 @@ edit_interval_dialog_new (void)
 	GtkWidget *w, *menu, *menu_item;
 
 	dlg = g_malloc (sizeof(EditIntervalDialog));
+	dlg->interval = NULL;
 
 	glxml = glade_xml_new ("glade/interval_edit.glade", "Interval Edit");
 	dlg->gtxml = glxml;
@@ -224,7 +240,7 @@ void
 edit_interval_dialog_destroy(EditIntervalDialog *dlg)
 {
 	if (!dlg) return;
-	gtk_widget_destroy (GTK_WIDGET(dlg->gtxml));
+	gtk_widget_destroy (GTK_WIDGET(dlg->interval_edit));
 	g_free (dlg);
 }
 
