@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 1.108\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
-"PO-Revision-Date: 2002-06-04 20:05+0300\n"
+"Project-Id-Version: gnome-utils 2.0.0\n"
+"POT-Creation-Date: 2002-07-07 00:09+0300\n"
+"PO-Revision-Date: 2002-07-07 00:19+0300\n"
 "Last-Translator: Tõivo Leedjärv <toivo@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -71,9 +71,8 @@ msgid ""
 msgstr ""
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
-#: gsearchtool/gsearchtool.c:2002 logview/about.c:52
-#: meat-grinder/meat-grinder.c:475
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gsearchtool/gsearchtool.c:2002
+#: logview/about.c:52 meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
 msgstr ""
 "Tõlge eesti keelde:\n"
@@ -115,166 +114,162 @@ msgstr "1/x"
 msgid "Inverse"
 msgstr "Pöördväärtus"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
-msgstr "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
+msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr "Ruut"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr "Ruutjuur"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr "Tühjenda"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr "Algväärtusta"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr "Pööra trigonomeetria/logaritmide funktsioonid"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr "Siinus"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr "Koosinus"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr "Tangens"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid " DEG  "
 msgstr " DEG  "
 
 # FIXME: Kuidas on grad tõlge?
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr "Vaheta kraadide / radiaanide / gradide vahel"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr "Naturaallogaritmi alus"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr "Lisa kümne aste"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr "Kümnendlogaritm"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr "Naturaallogaritm"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
-msgstr "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
+msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr "Astendamine"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr "Faktoriaal"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr "Algussulg"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr "Lõpusulg"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr "Jagamine"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -282,31 +277,31 @@ msgstr ""
 "Salvesta ekraanil olev\n"
 "väärtus mällu"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr "Korrutamine"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -314,31 +309,31 @@ msgstr ""
 "Näita mällu salvestatud\n"
 "väärtust ekraanil"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr "Lahutamine"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -346,31 +341,31 @@ msgstr ""
 "Lisa ekraanil olev väärtus\n"
 "mälus olevale väärtusele"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "Liitmine"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -378,31 +373,31 @@ msgstr ""
 "Vaheta ekraanil ja mälus\n"
 "olevad väärtused"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr "Kümnendkoma"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr "Märgi muutmine"
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr "Arvuta"
 
@@ -467,24 +462,24 @@ msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr "Vali, kopeeri ja aseta kirjatüübi märke teistesse rakendustesse"
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:114
 msgid "del"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:120
 #, c-format
 msgid " %s: Character code %d"
 msgstr " %s: Märgi kood %d"
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:156
 msgid "Text copied to clipboard..."
 msgstr "Tekst kopeeritud lõikelauale..."
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:173
 msgid "Text cut to clipboard..."
 msgstr "Tekst lõigatud lõikelauale..."
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:226
 msgid "Text pasted from clipboard..."
 msgstr "Tekst lõikelaualt asetatud..."
 
@@ -493,31 +488,30 @@ msgid "Gnome Character Map"
 msgstr "Gnome märgitabel"
 
 #: gcharmap/src/interface.c:238
-#, fuzzy
 msgid "Action Toolbar"
-msgstr "Nupurida"
+msgstr "Tööriistariba"
 
 #: gcharmap/src/interface.c:242
 msgid "_Text to copy:"
 msgstr "_Kopeeritav tekst:"
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 msgid "_Copy"
 msgstr "_Kopeeri"
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 msgid "Text to copy"
 msgstr "Kopeeritav tekst"
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr "Sisestusväli"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopeeri"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 msgid "Copy the text"
 msgstr "Kopeeri tekst"
 
@@ -571,577 +565,6 @@ msgstr "GDialog sisestusväli"
 #: gdialog/inputbox.c:90
 msgid "Enter the text"
 msgstr "Sisesta tekst"
-
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
-msgid "Accessories"
-msgstr "Tarvikud"
-
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:250
-msgid "Dictionary Lookup"
-msgstr "Otsing sõnaraamatust"
-
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
-#: gdictsrc/gnome-dictionary.desktop.in.h:2
-msgid "Lookup words in an online dictionary"
-msgstr "Otsi sõnu onlain-sõnaraamatust"
-
-#: gdictsrc/GNOME_GDictApplet.xml.h:1
-msgid "Look Up Selected Text..."
-msgstr "Otsi valitud teksti..."
-
-#: gdictsrc/GNOME_GDictApplet.xml.h:2
-msgid "_About..."
-msgstr "_Info..."
-
-#: gdictsrc/GNOME_GDictApplet.xml.h:3
-msgid "_Help"
-msgstr "_Abi"
-
-#: gdictsrc/GNOME_GDictApplet.xml.h:4
-msgid "_Preferences"
-msgstr "_Häälestus"
-
-#: gdictsrc/GNOME_GDictApplet.xml.h:5
-msgid "_Show/Hide Definition Window..."
-msgstr "_Näita/peida definitsiooni aken..."
-
-#. Could not look up search strategies, so just display a
-#. * label; FIXME: Memory leak
-#.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
-#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
-msgid "Cannot connect to server"
-msgstr "Ei saa serveriga ühendust"
-
-#: gdictsrc/dict.c:661
-msgid ""
-"A serious error occured. Please check that your server and port are correct. "
-"For reference the default server is dict.org and the port 2628"
-msgstr ""
-
-#: gdictsrc/gdict-about.c:58
-msgid ""
-"Client for MIT dictionary server.\n"
-"Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
-msgstr ""
-"MIT-i sõnaraamtu serveri klient.\n"
-"Veeb: http://gdict.dhs.org/, http://www.psilord.com/code/"
-
-#: gdictsrc/gdict-app.c:128
-msgid "Spell-checking..."
-msgstr "Õigekirja kontrollimine..."
-
-#: gdictsrc/gdict-app.c:136
-msgid "Spell check done"
-msgstr "Õigekirja kontroll valmis"
-
-#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
-msgid "No matches found"
-msgstr "Ei leia ühtegi vastavust"
-
-#: gdictsrc/gdict-app.c:257
-msgid "Looking up word..."
-msgstr "Sõna otsimine..."
-
-#: gdictsrc/gdict-app.c:265
-msgid "Lookup done"
-msgstr "Otsing valmis"
-
-#: gdictsrc/gdict-app.c:287
-msgid "String not found"
-msgstr "Ei leia stringi"
-
-#: gdictsrc/gdict-app.c:455
-msgid "Find"
-msgstr "Otsi"
-
-#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
-#: gsearchtool/gsearchtool.c:1840
-msgid "_Find"
-msgstr "_Otsi"
-
-#: gdictsrc/gdict-app.c:526
-msgid ""
-"Unable to perform requested operation. \n"
-"Either the server you are using is not available \n"
-"or you are not connected to the Internet."
-msgstr ""
-"Ei saa valitud tegevust täita. \n"
-"Sinu kasutatav server ei ole kättesaadav \n"
-"või ei ole su arvuti Internetti ühendatud."
-
-#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
-#: gdictsrc/gdict-speller.c:221
-msgid "_Look Up Word"
-msgstr "Otsi _sõna"
-
-#: gdictsrc/gdict-app.c:688
-msgid "Lookup word in dictionary"
-msgstr "Otsi sõna sõnaraamatust"
-
-#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
-msgid "Check _Spelling"
-msgstr "Kontrolli _õigekirja"
-
-#: gdictsrc/gdict-app.c:691
-msgid "Check word spelling"
-msgstr "Kontrolli sõna õigekirja"
-
-#: gdictsrc/gdict-app.c:735
-msgid "_Dictionary"
-msgstr "_Sõnaraamat"
-
-#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
-msgid "Dictionary"
-msgstr "Sõnaraamat"
-
-#: gdictsrc/gdict-app.c:794
-msgid "_Word: "
-msgstr "_Sõna: "
-
-#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
-msgid "Word"
-msgstr "Sõna"
-
-#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
-#: gdictsrc/gdict-speller.c:148
-msgid "Word Entry"
-msgstr "Sõna sisestusväli"
-
-#: gdictsrc/gdict-app.c:822
-msgid "Enter a Word or select one from the list below"
-msgstr "Sisesta sõna või vali üks järgnevast nimekirjast"
-
-#: gdictsrc/gdict-app.c:825
-msgid "Look Up for a Word"
-msgstr "Otsi sõna"
-
-#: gdictsrc/gdict-applet.c:243
-msgid "_Lookup"
-msgstr "_Otsing"
-
-#: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
-#, c-format
-msgid "Error invoking query: %s"
-msgstr "Viga päringu täitmisel: %s"
-
-#: gdictsrc/gdict-pref-dialog.c:37
-msgid "Headword:"
-msgstr ""
-
-#: gdictsrc/gdict-pref-dialog.c:38
-msgid "Sub-number:"
-msgstr ""
-
-#: gdictsrc/gdict-pref-dialog.c:39
-msgid "Pronunciation:"
-msgstr "Hääldus:"
-
-#: gdictsrc/gdict-pref-dialog.c:40
-msgid "Etymology:"
-msgstr ""
-
-#: gdictsrc/gdict-pref-dialog.c:41
-msgid "Part of speech:"
-msgstr ""
-
-#: gdictsrc/gdict-pref-dialog.c:42
-msgid "Example:"
-msgstr "Näide:"
-
-#: gdictsrc/gdict-pref-dialog.c:43
-msgid "Main body:"
-msgstr ""
-
-#: gdictsrc/gdict-pref-dialog.c:44
-msgid "Cross-reference:"
-msgstr "Ristviide:"
-
-#: gdictsrc/gdict-pref-dialog.c:185
-msgid "Dictionary Preferences"
-msgstr "Sõnaraamatu häälestus"
-
-#: gdictsrc/gdict-pref-dialog.c:197
-msgid "Smart _lookup"
-msgstr "Tark _otsing"
-
-#: gdictsrc/gdict-pref-dialog.c:210
-msgid "_Server:"
-msgstr "_Server:"
-
-#: gdictsrc/gdict-pref-dialog.c:217
-msgid "De_fault"
-msgstr "_Vaikimisi"
-
-#: gdictsrc/gdict-pref-dialog.c:223
-msgid "Reset server to default"
-msgstr "Taasta vaikeserver"
-
-#: gdictsrc/gdict-pref-dialog.c:225
-msgid "_Port:"
-msgstr "_Port:"
-
-#: gdictsrc/gdict-pref-dialog.c:239
-msgid "Def_ault"
-msgstr "_Vaikimisi"
-
-#: gdictsrc/gdict-pref-dialog.c:246
-msgid "Reset port to default"
-msgstr "Taasta vaikeport"
-
-#: gdictsrc/gdict-pref-dialog.c:247
-msgid "Server"
-msgstr "Server"
-
-#: gdictsrc/gdict-pref-dialog.c:248
-msgid "Server Entry"
-msgstr "Serveri sisestusväli"
-
-#: gdictsrc/gdict-pref-dialog.c:248
-msgid "Enter the Server Name"
-msgstr "Sisesta serveri nimi"
-
-#: gdictsrc/gdict-pref-dialog.c:251
-msgid "Port"
-msgstr "Port"
-
-#: gdictsrc/gdict-pref-dialog.c:252
-msgid "Port Entry"
-msgstr "Pordi sisestusväli"
-
-#: gdictsrc/gdict-pref-dialog.c:252
-msgid "Enter the Port Number"
-msgstr "Sisesta pordi number"
-
-#: gdictsrc/gdict-pref-dialog.c:257
-msgid "_Database:"
-msgstr "_Andmebaas:"
-
-#: gdictsrc/gdict-pref-dialog.c:264
-msgid "D_efault strategy:"
-msgstr "V_aikestrateegia:"
-
-#: gdictsrc/gdict-pref-dialog.c:457
-msgid "Search all databases"
-msgstr "Otsi kõikidest andmebaasidest"
-
-#: gdictsrc/gdict-pref-dialog.c:622
-msgid "Database"
-msgstr "Andmebaas"
-
-#: gdictsrc/gdict-pref-dialog.c:622
-msgid "Database Name"
-msgstr "Andmebaasi nimi"
-
-#: gdictsrc/gdict-pref-dialog.c:634
-msgid "Default Strategy"
-msgstr "Vaikestrateegia"
-
-#: gdictsrc/gdict-speller.c:135
-msgid "_Word:"
-msgstr "_Sõna:"
-
-#: gdictsrc/gdict-speller.c:148
-msgid "Enter a word to know the spelling"
-msgstr "Õigekirja kontrollimiseks sisesta sõna"
-
-#: gdictsrc/gdict-speller.c:153
-msgid "Click to do the spell check"
-msgstr "Klõpsa õigekirja kontrollimiseks"
-
-#: gdictsrc/gdict-speller.c:158
-msgid "Search S_trategy:"
-msgstr "Otsingus_trateegia:"
-
-#: gdictsrc/gdict-speller.c:174
-msgid "Search _Results"
-msgstr "Otsingu _tulemused"
-
-#: gdictsrc/gdict-speller.c:236
-msgid "Check Spelling"
-msgstr "Kontrolli õigekirja"
-
-#: gdictsrc/gdict-speller.c:654
-msgid "Search Strategy"
-msgstr "Otsingustrateegia"
-
-#: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr "Vaikeandmebaas. ! tähistab kõiki andmebaase"
-
-#: gdictsrc/gdict.schemas.in.h:2
-msgid "Default strategy"
-msgstr "Vaikestrateegia"
-
-#: gdictsrc/gdict.schemas.in.h:3
-msgid "Dictionary server"
-msgstr "Sõnaraamatu server"
-
-#: gdictsrc/gdict.schemas.in.h:4
-msgid "Port used to connect to server"
-msgstr "Serveriga ühenduse loomiseks kasutatav port"
-
-#: gdictsrc/gdict.schemas.in.h:5
-msgid "Use smart lookup"
-msgstr "Kasuta tarka otsingut"
-
-#: gfloppy/gfloppy.desktop.in.h:1
-msgid "Floppy Formatter"
-msgstr ""
-
-#: gfloppy/gfloppy.desktop.in.h:2
-msgid "Format Floppy Disks"
-msgstr ""
-
-#: gfloppy/src/badblocks.c:102
-msgid "MInternal Error: Unable to seek to the correct location."
-msgstr ""
-
-#: gfloppy/src/badblocks.c:111
-#, c-format
-msgid "MInternal Error: Weird value (%ld) in do_test\n"
-msgstr ""
-
-#: gfloppy/src/badblocks.c:166
-#, c-format
-msgid "EBad block at block %lu"
-msgstr ""
-
-#. while (!i)
-#. ;
-#: gfloppy/src/badblocks.c:260
-msgid "MChecking for bad blocks..."
-msgstr ""
-
-#: gfloppy/src/badblocks.c:272
-#, c-format
-msgid "MFailed to open device %s for badblock checking\n"
-msgstr ""
-
-#: gfloppy/src/badblocks.c:291 gfloppy/src/gfloppy.c:213
-msgid "MChecking for bad blocks... Done"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:44
-msgid "MFormatting the disk..."
-msgstr ""
-
-#: gfloppy/src/fdformat.c:46
-msgid "EI don't know what this is, but it's very wrong."
-msgstr ""
-
-#: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
-#, c-format
-msgid "EError formatting track #%d"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:74
-msgid "EError during completion of formatting"
-msgstr ""
-
-#. XXXX - need to tell parent we're finished
-#: gfloppy/src/fdformat.c:78
-msgid "MFormatting the disk... Done"
-msgstr ""
-
-#. XXXX - tell parent we're starting verify stage
-#: gfloppy/src/fdformat.c:94
-msgid "MVerifying the format..."
-msgstr ""
-
-#: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
-msgid ""
-"EUnable to write to the floppy.\n"
-"\n"
-"Please confirm that it is not write-protected."
-msgstr ""
-
-#: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
-#, c-format
-msgid "EInsufficient permissions to open floppy device %s."
-msgstr ""
-
-#: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
-msgid ""
-"EUnable to access the floppy disk.\n"
-"\n"
-"Please confirm that it is in the drive\n"
-"with the drive door shut."
-msgstr ""
-
-#: gfloppy/src/fdformat.c:109
-#, c-format
-msgid ""
-"EGeneric error accessing floppy device %s.\n"
-"\n"
-"Error code %s:%d"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:129
-#, c-format
-msgid ""
-"ERead Error:\n"
-"Problem reading cylinder %d, expected %d, read %d"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:132
-#, c-format
-msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:141
-#, c-format
-msgid "MBad data in cyl %d.  Continuing... "
-msgstr ""
-
-#: gfloppy/src/fdformat.c:148
-#, c-format
-msgid "EError closing device %s"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:153
-msgid "MVerifying the format... Done"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:165
-#, c-format
-msgid "EUnable to write to device %s"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:184
-#, c-format
-msgid ""
-"EGeneric error accessing floppy device %s.\n"
-"\n"
-"Error code %s"
-msgstr ""
-
-#: gfloppy/src/fdformat.c:194
-msgid "ECould not determine current format type"
-msgstr ""
-
-#: gfloppy/src/gfloppy.c:164 gfloppy/src/gfloppy.c:197
-msgid "MMaking filesystem on disk..."
-msgstr ""
-
-#: gfloppy/src/gfloppy.c:167
-#, fuzzy
-msgid "EUnable to create filesystem correctly."
-msgstr "Ei suuda draivi kasutada."
-
-#: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
-msgid "MMaking filesystem on disk... Done"
-msgstr ""
-
-#: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
-#, fuzzy
-msgid "EUnable to create filesystem."
-msgstr "Ei suuda draivi kasutada."
-
-#: gfloppy/src/gfloppy.c:209
-msgid "MChecking for bad blocks... (this might take a while)"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:2
-msgid "DOS (fat)"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:3
-msgid "Double Density 3.5\" (720KB)"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:4
-msgid "Double Density 5.25\" (360KB)"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:5
-msgid "File system _type:"
-msgstr "Failisüsteemi _tüüp:"
-
-#: gfloppy/src/gfloppy2.glade.h:6
-#, fuzzy
-msgid "Floppy _density:"
-msgstr "    Seade: "
-
-#: gfloppy/src/gfloppy2.glade.h:7
-#, fuzzy
-msgid "Floppy de_vice:"
-msgstr "    Seade: "
-
-#: gfloppy/src/gfloppy2.glade.h:8
-msgid "Format a Floppy"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:9
-msgid "High Density 3.5\" (1.44MB)"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:10
-msgid "High Density 5.25\" (1.2MB)"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:11
-msgid "Linux Native (ext2)"
-msgstr ""
-
-#: gfloppy/src/gfloppy2.glade.h:12
-msgid "_Format"
-msgstr "_Vorminda"
-
-#: gfloppy/src/gfloppy2.glade.h:13
-msgid "_Quick format"
-msgstr "_Kiire vorming"
-
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
-#, c-format
-msgid "Unable to open the device %s, formatting cannot continue."
-msgstr ""
-
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
-#, c-format
-msgid ""
-"The device %s is disconnected.\n"
-"Please attach device to continue."
-msgstr ""
-
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
-#, c-format
-msgid ""
-"You do not have the proper permissions to write to %s, formatting will not "
-"be possible.\n"
-"Contact your system administrator about getting write permissions."
-msgstr ""
-
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr ""
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr "DEVICE"
-
-#: gfloppy/src/main.c:360
-#, c-format
-msgid ""
-"Could not display help for the floppy formatter.\n"
-"%s"
-msgstr ""
-
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
-msgstr ""
-
-#: gfloppy/src/progress.c:115
-msgid "Floppy formatted successfully."
-msgstr ""
-
-#: gfloppy/src/progress.c:120
-msgid "Floppy formatting cancelled."
-msgstr ""
-
-#: gfloppy/src/progress.c:161
-msgid "Format progress."
-msgstr ""
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Search for Files"
@@ -1377,6 +800,10 @@ msgstr "Otsingu reeglite menüü"
 msgid "Select a search rule from the menu"
 msgstr "Vali otsingureegel menüüst"
 
+#: gsearchtool/gsearchtool.c:1507 gsearchtool/gsearchtool.c:1840
+msgid "_Find"
+msgstr "_Otsi"
+
 #: gsearchtool/gsearchtool.c:1522
 msgid "Click to Add a Rule"
 msgstr "Klõpsa reegli lisamiseks"
@@ -1509,85 +936,80 @@ msgstr ""
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:72
-#, fuzzy
 msgid "GNOME System Log Viewer"
-msgstr "Süsteemiinfo"
+msgstr "GNOME Süsteemilogi näitaja"
 
 #: logview/about.c:73
-#, fuzzy
 msgid "Copyright (C) 1998"
-msgstr "Copyright 1998 John Kodis"
+msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr ""
 
-#: logview/actions.c:81
-#, fuzzy
-msgid "Action options"
-msgstr "Mount kataloog"
+#: logview/actions.c:85
+msgid "Actions"
+msgstr "Tegevused"
 
-#: logview/actions.c:138
-msgid "Add..."
-msgstr "Lisa..."
+#: logview/actions.c:153
+msgid "_Add"
+msgstr "_Lisa"
 
-#: logview/actions.c:144
-msgid "Edit..."
-msgstr ""
+#: logview/actions.c:160
+msgid "_Edit"
+msgstr "_Muuda"
 
-#: logview/actions.c:150
-msgid "Remove"
-msgstr "Eemalda"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+msgid "_Remove"
+msgstr "_Eemalda"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr ""
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr ""
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr ""
 
-#: logview/actions.c:494
+#: logview/actions.c:493
 msgid "<empty>"
 msgstr "<tühi>"
 
-#: logview/actions.c:495
-#, fuzzy
+#: logview/actions.c:494
 msgid "log name regexp"
-msgstr "Protsessori kiirus:"
+msgstr "logi nime regulaaravaldis"
+
+#: logview/actions.c:495
+msgid "process regexp"
+msgstr "protsessi regulaaravaldis"
 
 #: logview/actions.c:496
-#, fuzzy
-msgid "process regexp"
-msgstr "Protsessori kiirus:"
+msgid "message regexp"
+msgstr "sõnumi regulaaravaldis"
 
 #: logview/actions.c:497
-msgid "message regexp"
-msgstr ""
+msgid "action to execute when regexps are TRUE"
+msgstr "tegevus, mis käivitada kui regulaaravaldused on tõesed"
 
 #: logview/actions.c:498
-msgid "action to execute when regexps are TRUE"
-msgstr ""
-
-#: logview/actions.c:499
 msgid "description"
 msgstr "kirjeldus"
 
-#: logview/actions.c:744
-msgid "description:"
-msgstr "kirjeldus:"
+#: logview/actions.c:758
+msgid "_Description:"
+msgstr "_Kirjeldus:"
 
-#: logview/actions.c:753
+#: logview/actions.c:767
 msgid "Description of this entry."
 msgstr ""
 
-#: logview/actions.c:800
+#: logview/actions.c:791
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1597,6 +1019,12 @@ msgid ""
 "description: [%s]\n"
 "action: [%s]\n"
 msgstr ""
+"silt: [%s]\n"
+"logi_nimi: [%s]\n"
+"protsess: [%s]\n"
+"sõnum: [%s]\n"
+"kirjeldus: [%s]\n"
+"tegevus: [%s]\n"
 
 #: logview/calendar.c:112
 msgid "Calendar"
@@ -1667,18 +1095,16 @@ msgstr ""
 #. DESCRIPTION:
 #. ----------------------------------------------------------------------
 #: logview/gnome-system-log.desktop.in.h:1
-#, fuzzy
 msgid "System Log"
-msgstr "Süsteemiinfo"
+msgstr "Süsteemi logiraamat"
 
 #: logview/gnome-system-log.desktop.in.h:2
-#, fuzzy
 msgid "View the system log file"
-msgstr "Näitab süsteemi kasutajaid"
+msgstr "Vaata süsteemi logiraamatut"
 
 #: logview/info.c:80
 msgid "Log stats"
-msgstr ""
+msgstr "Logi statistika"
 
 #. Note: we use a real translated string that will appear below to gather
 #. * the length, that way we'll get semi correct results with a lot more
@@ -1689,41 +1115,37 @@ msgid "Date:"
 msgstr "Kuupäev:"
 
 #: logview/info.c:204
-#, fuzzy
 msgid "Log information"
-msgstr "Protsessor"
+msgstr "Logiraamatu info"
 
 #: logview/info.c:232
 msgid "Log:"
-msgstr ""
+msgstr "Logi:"
 
 #: logview/info.c:235
-#, fuzzy
 msgid "Size:"
-msgstr "Maht"
+msgstr "Maht:"
 
 #: logview/info.c:238
 msgid "Modified:"
-msgstr ""
+msgstr "Muudetud:"
 
 #: logview/info.c:241
-#, fuzzy
 msgid "Start date:"
-msgstr "Otsingu tulemused"
+msgstr "Alguskuupäev:"
 
 #: logview/info.c:244
-#, fuzzy
 msgid "Last date:"
-msgstr "Masina nimi:"
+msgstr "Viimane kuupäev:"
 
 #: logview/info.c:247
 msgid "Num. lines:"
-msgstr ""
+msgstr "Ridade arv:"
 
 #: logview/info.c:265
-#, fuzzy, c-format
+#, c-format
 msgid "%ld bytes"
-msgstr "Kilobaiti"
+msgstr "%ld baiti"
 
 #: logview/log_repaint.c:84
 msgid "January"
@@ -1800,9 +1222,8 @@ msgid "Out of memory!\n"
 msgstr "Mälu otsas!\n"
 
 #: logview/logrtns.c:240
-#, fuzzy
 msgid "Unable to open logfile!\n"
-msgstr "Ei suuda faili avada!"
+msgstr "Ei saa logifaili avada!\n"
 
 #: logview/logrtns.c:295
 #, c-format
@@ -1843,18 +1264,16 @@ msgid "_Monitor..."
 msgstr "_Jälgi..."
 
 #: logview/logview.c:99
-#, fuzzy
 msgid "Monitor Log"
-msgstr "Laadida shrift"
+msgstr "Jälgi logifaili"
 
 #: logview/logview.c:102
 msgid "_Properties"
-msgstr ""
+msgstr "_Omadused"
 
 #: logview/logview.c:103
-#, fuzzy
 msgid "Show Log Properties"
-msgstr "Näita staatuseriba"
+msgstr "Näita logi omadusi"
 
 #: logview/logview.c:112
 msgid "_Calendar"
@@ -1882,39 +1301,36 @@ msgstr ""
 
 #: logview/logview.c:130
 msgid "_Log"
-msgstr ""
+msgstr "_Logi"
 
 #: logview/logview.c:334
-#, fuzzy
 msgid "No log files to open"
-msgstr "Valide fail, mis avada"
+msgstr "Pole ühtegi logifaili, mida avada"
 
 #. Create App
 #: logview/logview.c:354
 msgid "System Log Viewer"
-msgstr ""
+msgstr "Süsteemilogi näitaja"
 
 #: logview/logview.c:452
 msgid "Filename: "
 msgstr "Faili nimi: "
 
 #: logview/logview.c:473
-#, fuzzy
 msgid "Last Modified: "
-msgstr "Viimase muutmise aeg"
+msgstr "Viimati muudetud: "
 
 #: logview/logview.c:722 logview/logview.c:788
 msgid "Too many open logs. Close one and try again"
-msgstr ""
+msgstr "Liiga palju avatud logifaile. Sulge mõni ja proovi uuesti"
 
 #: logview/logview.c:734
 msgid "File already opened"
-msgstr ""
+msgstr "Fail on juba avatud"
 
 #: logview/logview.c:801
-#, fuzzy
 msgid "Open new logfile"
-msgstr "Ava tekstifail..."
+msgstr "Ava uus logifail"
 
 #: logview/misc.c:56
 msgid "Cannot load required fonts, cannot continue"
@@ -1926,13 +1342,12 @@ msgid "Error: [%s]\n"
 msgstr "Viga: [%s]\n"
 
 #: logview/monitor.c:115
-#, fuzzy
 msgid "Monitor options"
-msgstr "Mount kataloog"
+msgstr "Jälgija häälestus"
 
 #: logview/monitor.c:125
 msgid "Choose logs to monitor"
-msgstr ""
+msgstr "Vali logid, mida jälgida"
 
 #. Arrowed buttons
 #: logview/monitor.c:169
@@ -1947,31 +1362,28 @@ msgstr "Eemalda <<"
 #. Check boxes
 #: logview/monitor.c:215
 msgid "Hide app"
-msgstr ""
+msgstr "Peida rakendus"
 
 #: logview/monitor.c:223
-#, fuzzy
 msgid "Exec actions"
-msgstr "Võrrand"
+msgstr "Käivita tegevused"
 
 #. Actions button
 #: logview/monitor.c:235
-#, fuzzy
 msgid "Actions..."
-msgstr "Võrrand"
+msgstr "Tegevused..."
 
 #: logview/monitor.c:286
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr ""
+msgstr "Liiga palju jälgitavaid logifaile. Eemalda üks ja proovi uuesti"
 
 #: logview/monitor.c:294 logview/monitor.c:332
 msgid "tmp_list is NULL\n"
 msgstr ""
 
 #: logview/monitor.c:452
-#, fuzzy
 msgid "Monitoring logs..."
-msgstr "Laadida shrift"
+msgstr "Jälgi logifaile..."
 
 #: logview/monitor.c:673
 msgid "TOUCHED!!\n"
@@ -1982,9 +1394,8 @@ msgid "hostname column width ( 0 to hide this column ): "
 msgstr ""
 
 #: logview/userprefsdialog.c:66
-#, fuzzy
 msgid "Columns"
-msgstr "Käsud"
+msgstr "Veerud"
 
 #: logview/zoom.c:79
 msgid "Zoom view"
@@ -2038,9 +1449,9 @@ msgid ""
 msgstr ""
 
 #: meat-grinder/meat-grinder.c:166
-#, fuzzy, c-format
+#, c-format
 msgid "%s removed"
-msgstr "Eemalda"
+msgstr "%s eemaldatud"
 
 #: meat-grinder/meat-grinder.c:328 meat-grinder/meat-grinder.c:333
 #, fuzzy, c-format
@@ -2075,12 +1486,12 @@ msgstr "projekti ei ole valitud"
 
 #: meat-grinder/meat-grinder.c:613
 msgid "File exists, overwrite?"
-msgstr ""
+msgstr "Fail on juba olemas, kas kirjutada üle?"
 
 #: meat-grinder/meat-grinder.c:636
 #, c-format
 msgid "%s created"
-msgstr ""
+msgstr "%s loodud"
 
 #: meat-grinder/meat-grinder.c:650
 msgid "No items to archive"
@@ -2089,7 +1500,7 @@ msgstr ""
 #: meat-grinder/meat-grinder.c:777
 #, c-format
 msgid "%s added"
-msgstr ""
+msgstr "%s lisatud"
 
 #: meat-grinder/meat-grinder.c:796
 #, fuzzy
@@ -2109,18 +1520,12 @@ msgid "Add a file or folder to archive"
 msgstr ""
 
 #: meat-grinder/meat-grinder.c:931
-#, fuzzy
 msgid "_Create archive..."
-msgstr "Sulge"
+msgstr "_Loo arhiiv..."
 
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
 msgstr ""
-
-#: meat-grinder/meat-grinder.c:941
-#, fuzzy
-msgid "_Remove"
-msgstr "Eemalda"
 
 #: meat-grinder/meat-grinder.c:942
 #, fuzzy
@@ -2128,9 +1533,8 @@ msgid "Remove the selected item"
 msgstr "Kopeeri valik"
 
 #: meat-grinder/meat-grinder.c:944
-#, fuzzy
 msgid "R_emove All"
-msgstr "Eemalda"
+msgstr "Ee_malda kõik"
 
 #: meat-grinder/meat-grinder.c:945
 msgid "Remove all items"
@@ -2142,9 +1546,8 @@ msgstr ""
 
 #. tarball icon
 #: meat-grinder/meat-grinder.c:1028
-#, fuzzy
 msgid "_Create Archive"
-msgstr "Sulge"
+msgstr "_Loo arhiiv"
 
 #: meat-grinder/meat-grinder.c:1036
 msgid ""
@@ -2162,6 +1565,277 @@ msgid ""
 "This is the program used for creating archives."
 msgstr ""
 
+#~ msgid "x^2"
+#~ msgstr "x^2"
+
+#~ msgid "x^y"
+#~ msgstr "x^y"
+
+#, fuzzy
+#~ msgid "Action options"
+#~ msgstr "Mount kataloog"
+
+#~ msgid "Add..."
+#~ msgstr "Lisa..."
+
+#~ msgid "Remove"
+#~ msgstr "Eemalda"
+
+#~ msgid "description:"
+#~ msgstr "kirjeldus:"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Date"
+#~ msgstr "Kuupäev"
+
+#, fuzzy
+#~ msgid "Host Name"
+#~ msgstr "Nimi"
+
+#~ msgid "Process"
+#~ msgstr "Protsess"
+
+#~ msgid "Message"
+#~ msgstr "Sõnum"
+
+#~ msgid "Accessories"
+#~ msgstr "Tarvikud"
+
+#~ msgid "Dictionary Lookup"
+#~ msgstr "Otsing sõnaraamatust"
+
+#~ msgid "Lookup words in an online dictionary"
+#~ msgstr "Otsi sõnu onlain-sõnaraamatust"
+
+#~ msgid "Look Up Selected Text..."
+#~ msgstr "Otsi valitud teksti..."
+
+#~ msgid "_About..."
+#~ msgstr "_Info..."
+
+#~ msgid "_Help"
+#~ msgstr "_Abi"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Häälestus"
+
+#~ msgid "_Show/Hide Definition Window..."
+#~ msgstr "_Näita/peida definitsiooni aken..."
+
+#~ msgid "Cannot connect to server"
+#~ msgstr "Ei saa serveriga ühendust"
+
+#~ msgid ""
+#~ "Client for MIT dictionary server.\n"
+#~ "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
+#~ msgstr ""
+#~ "MIT-i sõnaraamtu serveri klient.\n"
+#~ "Veeb: http://gdict.dhs.org/, http://www.psilord.com/code/"
+
+#~ msgid "Spell-checking..."
+#~ msgstr "Õigekirja kontrollimine..."
+
+#~ msgid "Spell check done"
+#~ msgstr "Õigekirja kontroll valmis"
+
+#~ msgid "No matches found"
+#~ msgstr "Ei leia ühtegi vastavust"
+
+#~ msgid "Looking up word..."
+#~ msgstr "Sõna otsimine..."
+
+#~ msgid "Lookup done"
+#~ msgstr "Otsing valmis"
+
+#~ msgid "String not found"
+#~ msgstr "Ei leia stringi"
+
+#~ msgid "Find"
+#~ msgstr "Otsi"
+
+#~ msgid ""
+#~ "Unable to perform requested operation. \n"
+#~ "Either the server you are using is not available \n"
+#~ "or you are not connected to the Internet."
+#~ msgstr ""
+#~ "Ei saa valitud tegevust täita. \n"
+#~ "Sinu kasutatav server ei ole kättesaadav \n"
+#~ "või ei ole su arvuti Internetti ühendatud."
+
+#~ msgid "_Look Up Word"
+#~ msgstr "Otsi _sõna"
+
+#~ msgid "Lookup word in dictionary"
+#~ msgstr "Otsi sõna sõnaraamatust"
+
+#~ msgid "Check _Spelling"
+#~ msgstr "Kontrolli _õigekirja"
+
+#~ msgid "Check word spelling"
+#~ msgstr "Kontrolli sõna õigekirja"
+
+#~ msgid "_Dictionary"
+#~ msgstr "_Sõnaraamat"
+
+#~ msgid "Dictionary"
+#~ msgstr "Sõnaraamat"
+
+#~ msgid "_Word: "
+#~ msgstr "_Sõna: "
+
+#~ msgid "Word"
+#~ msgstr "Sõna"
+
+#~ msgid "Word Entry"
+#~ msgstr "Sõna sisestusväli"
+
+#~ msgid "Enter a Word or select one from the list below"
+#~ msgstr "Sisesta sõna või vali üks järgnevast nimekirjast"
+
+#~ msgid "Look Up for a Word"
+#~ msgstr "Otsi sõna"
+
+#~ msgid "_Lookup"
+#~ msgstr "_Otsing"
+
+#~ msgid "Error invoking query: %s"
+#~ msgstr "Viga päringu täitmisel: %s"
+
+#~ msgid "Pronunciation:"
+#~ msgstr "Hääldus:"
+
+#~ msgid "Example:"
+#~ msgstr "Näide:"
+
+#~ msgid "Cross-reference:"
+#~ msgstr "Ristviide:"
+
+#~ msgid "Dictionary Preferences"
+#~ msgstr "Sõnaraamatu häälestus"
+
+#~ msgid "Smart _lookup"
+#~ msgstr "Tark _otsing"
+
+#~ msgid "_Server:"
+#~ msgstr "_Server:"
+
+#~ msgid "De_fault"
+#~ msgstr "_Vaikimisi"
+
+#~ msgid "Reset server to default"
+#~ msgstr "Taasta vaikeserver"
+
+#~ msgid "_Port:"
+#~ msgstr "_Port:"
+
+#~ msgid "Def_ault"
+#~ msgstr "_Vaikimisi"
+
+#~ msgid "Reset port to default"
+#~ msgstr "Taasta vaikeport"
+
+#~ msgid "Server"
+#~ msgstr "Server"
+
+#~ msgid "Server Entry"
+#~ msgstr "Serveri sisestusväli"
+
+#~ msgid "Enter the Server Name"
+#~ msgstr "Sisesta serveri nimi"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "Port Entry"
+#~ msgstr "Pordi sisestusväli"
+
+#~ msgid "Enter the Port Number"
+#~ msgstr "Sisesta pordi number"
+
+#~ msgid "_Database:"
+#~ msgstr "_Andmebaas:"
+
+#~ msgid "D_efault strategy:"
+#~ msgstr "V_aikestrateegia:"
+
+#~ msgid "Search all databases"
+#~ msgstr "Otsi kõikidest andmebaasidest"
+
+#~ msgid "Database"
+#~ msgstr "Andmebaas"
+
+#~ msgid "Database Name"
+#~ msgstr "Andmebaasi nimi"
+
+#~ msgid "Default Strategy"
+#~ msgstr "Vaikestrateegia"
+
+#~ msgid "_Word:"
+#~ msgstr "_Sõna:"
+
+#~ msgid "Enter a word to know the spelling"
+#~ msgstr "Õigekirja kontrollimiseks sisesta sõna"
+
+#~ msgid "Click to do the spell check"
+#~ msgstr "Klõpsa õigekirja kontrollimiseks"
+
+#~ msgid "Search S_trategy:"
+#~ msgstr "Otsingus_trateegia:"
+
+#~ msgid "Search _Results"
+#~ msgstr "Otsingu _tulemused"
+
+#~ msgid "Check Spelling"
+#~ msgstr "Kontrolli õigekirja"
+
+#~ msgid "Search Strategy"
+#~ msgstr "Otsingustrateegia"
+
+#~ msgid "Default database. ! indicates all databases"
+#~ msgstr "Vaikeandmebaas. ! tähistab kõiki andmebaase"
+
+#~ msgid "Default strategy"
+#~ msgstr "Vaikestrateegia"
+
+#~ msgid "Dictionary server"
+#~ msgstr "Sõnaraamatu server"
+
+#~ msgid "Port used to connect to server"
+#~ msgstr "Serveriga ühenduse loomiseks kasutatav port"
+
+#~ msgid "Use smart lookup"
+#~ msgstr "Kasuta tarka otsingut"
+
+#, fuzzy
+#~ msgid "EUnable to create filesystem correctly."
+#~ msgstr "Ei suuda draivi kasutada."
+
+#, fuzzy
+#~ msgid "EUnable to create filesystem."
+#~ msgstr "Ei suuda draivi kasutada."
+
+#~ msgid "File system _type:"
+#~ msgstr "Failisüsteemi _tüüp:"
+
+#, fuzzy
+#~ msgid "Floppy _density:"
+#~ msgstr "    Seade: "
+
+#, fuzzy
+#~ msgid "Floppy de_vice:"
+#~ msgstr "    Seade: "
+
+#~ msgid "_Format"
+#~ msgstr "_Vorminda"
+
+#~ msgid "_Quick format"
+#~ msgstr "_Kiire vorming"
+
+#~ msgid "DEVICE"
+#~ msgstr "DEVICE"
+
 #, fuzzy
 #~ msgid "Dictionary Applet"
 #~ msgstr "Alusta kataloogist:"
@@ -2176,9 +1850,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Close log"
 #~ msgstr "Sulge"
-
-#~ msgid "Exit"
-#~ msgstr "Välju"
 
 #, fuzzy
 #~ msgid "Exit program"
