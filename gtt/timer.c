@@ -52,12 +52,12 @@ set_last_reset (time_t last)
 
 
 void
-zero_on_rollover (time_t now)
+zero_on_rollover (time_t when)
 {
 	struct tm *t1;
 
 	/* zero out day counts */
-	t1 = localtime(&now);
+	t1 = localtime(&when);
 	if ((year_last_reset != t1->tm_year) ||
 	    (day_last_reset != t1->tm_yday)) 
 	{
@@ -80,9 +80,11 @@ restart_proj (GtkWidget *w, gpointer data)
 static gint 
 timer_func(gpointer data)
 {
-	log_proj(cur_proj);
+	time_t now = time(0);
 
-	zero_on_rollover (time(0));
+	/* even if there is no active prioject,
+	 * we still ahve to zero out the counters periodically. */
+	if (0 == now%60) zero_on_rollover (now);
 
 	if (!cur_proj) return 1;
 
@@ -100,7 +102,7 @@ timer_func(gpointer data)
 	if (0 < config_idle_timeout) 
 	{
 		int idle_time;
-		idle_time = time(0) - poll_last_activity (idt);
+		idle_time = now - poll_last_activity (idt);
 		if (idle_time > config_idle_timeout) 
 		{
 			char *msg;
