@@ -513,6 +513,13 @@ ctree_insert_after (GttProject *p, GttProject *sibling)
 	{
 		if (sibling->parent) parentnode = sibling->parent->trow;
 		next_sibling = GTK_CTREE_NODE_NEXT(sibling->trow);
+
+		/* weird math: if this is the last leaf on this
+		 * branch, then next_sibling must be null to become 
+		 * the new last leaf. Unfortunately, GTK_CTREE_NODE_NEXT
+		 * doesn't give null, it just gives the next branch */
+		if (next_sibling &&  
+		   (GTK_CTREE_ROW(next_sibling)->parent != parentnode)) next_sibling = NULL;
 	}
 	treenode = gtk_ctree_insert_node (GTK_CTREE(glist),  
                                parentnode, next_sibling,
