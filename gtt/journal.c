@@ -187,50 +187,6 @@ filesel_cancel_clicked_cb (GtkWidget *w, gpointer data)
 }
 
 /* ============================================================== */
-
-static void 
-on_print_clicked_cb (GtkWidget *w, gpointer data)
-{
-	GladeXML  *glxml;
-	glxml = glade_xml_new ("glade/not-implemented.glade", "Not Implemented");
-}
-
-static void 
-on_save_clicked_cb (GtkWidget *w, gpointer data)
-{
-	GtkWidget *fselw;
-	Wiggy *wig = (Wiggy *) data;
-
-	/* don't show dialog more than once */
-	if (wig->filesel) return;
-
-	fselw = gtk_file_selection_new (_("Save HTML To File"));
-	wig->filesel = GTK_FILE_SELECTION(fselw);
-
-	gtk_signal_connect(GTK_OBJECT(GTK_FILE_SELECTION(fselw)->ok_button), 
-		"clicked", GTK_SIGNAL_FUNC(filesel_ok_clicked_cb), wig);
-
-	gtk_signal_connect(GTK_OBJECT(GTK_FILE_SELECTION(fselw)->cancel_button), 
-		"clicked", GTK_SIGNAL_FUNC(filesel_cancel_clicked_cb), wig);
-
-	gtk_widget_show (fselw);
-}
-
-static void 
-on_close_clicked_cb (GtkWidget *w, gpointer data)
-{
-	Wiggy *wig = (Wiggy *) data;
-
-	/* close the main journal window ... everything */
-	gtt_project_remove_notifier (wig->prj, redraw, wig);
-	edit_interval_dialog_destroy (wig->edit_ivl);
-	gtk_widget_destroy (wig->top);
-	gtt_ghtml_destroy (wig->gh);
-	g_free (wig->filepath);
-	g_free (wig);
-}
-
-/* ============================================================== */
 /* global clipboard, allows cut task to be reparented to a different project */
 
 static GttTask * cutted_task = NULL;
@@ -353,6 +309,57 @@ task_popup_cb (Wiggy *wig)
 }
 
 /* ============================================================== */
+
+static void 
+on_print_clicked_cb (GtkWidget *w, gpointer data)
+{
+	GladeXML  *glxml;
+	glxml = glade_xml_new ("glade/not-implemented.glade", "Not Implemented");
+}
+
+static void 
+on_save_clicked_cb (GtkWidget *w, gpointer data)
+{
+	GtkWidget *fselw;
+	Wiggy *wig = (Wiggy *) data;
+
+	/* don't show dialog more than once */
+	if (wig->filesel) return;
+
+	fselw = gtk_file_selection_new (_("Save HTML To File"));
+	wig->filesel = GTK_FILE_SELECTION(fselw);
+
+	gtk_signal_connect(GTK_OBJECT(GTK_FILE_SELECTION(fselw)->ok_button), 
+		"clicked", GTK_SIGNAL_FUNC(filesel_ok_clicked_cb), wig);
+
+	gtk_signal_connect(GTK_OBJECT(GTK_FILE_SELECTION(fselw)->cancel_button), 
+		"clicked", GTK_SIGNAL_FUNC(filesel_cancel_clicked_cb), wig);
+
+	gtk_widget_show (fselw);
+}
+
+static void 
+on_close_clicked_cb (GtkWidget *w, gpointer data)
+{
+	Wiggy *wig = (Wiggy *) data;
+
+	/* close the main journal window ... everything */
+	gtt_project_remove_notifier (wig->prj, redraw, wig);
+	edit_interval_dialog_destroy (wig->edit_ivl);
+	gtk_widget_destroy (wig->top);
+	gtt_ghtml_destroy (wig->gh);
+	g_free (wig->filepath);
+	g_free (wig);
+}
+
+static void 
+on_refresh_clicked_cb (GtkWidget *w, gpointer data)
+{
+	Wiggy *wig = (Wiggy *) data;
+	redraw (wig->prj, data);
+}
+
+/* ============================================================== */
 /* html events */
 
 static void
@@ -433,6 +440,9 @@ do_show_report (const char * report, GttProject *prj)
 	  
 	glade_xml_signal_connect_data (glxml, "on_print_clicked",
 	        GTK_SIGNAL_FUNC (on_print_clicked_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_refresh_clicked",
+	        GTK_SIGNAL_FUNC (on_refresh_clicked_cb), wig);
 	  
 	gtk_signal_connect(GTK_OBJECT(jnl_browser), "link_clicked",
 		GTK_SIGNAL_FUNC(html_link_clicked_cb), wig);
