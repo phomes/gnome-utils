@@ -47,7 +47,6 @@
 
 #define MAX_NUM_DPY_LINES        300
 #define MAX_DPY_NUM_CHARS        200
-#define DEF_NUM_LOGS             1
 
 #define FRMT_HEADING             1
 #define FRMT_NORMAL              2
@@ -855,25 +854,15 @@ log_redrawdetail ()
 int
 InitPages ()
 {
-   int i;
+   if (user_prefs && user_prefs->logfile == NULL)
+        return -1;
 
-   /* Open default logs.            */
-   numlogs = 0;
-   for (i = 0; i < DEF_NUM_LOGS; i++)
-     {
-       curlog = OpenLogFile (user_prefs->logfile);
-       if (curlog == NULL)
-	 continue;
-       loglist[numlogs] = curlog;
-       numlogs++;
-     }
-
-   if (numlogs == 0)
+   curlog = OpenLogFile (user_prefs->logfile);
+   if (curlog == NULL)
       return -1;
-
-   curlognum = numlogs - 1;
-   curlog = loglist[curlognum];
-
+   loglist[0] = curlog;
+   curlognum = 0;
+   numlogs++;
    return TRUE;
 }
 

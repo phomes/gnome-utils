@@ -44,7 +44,6 @@
 #define MAX_NUM_LOGS             10
 #define MAX_NUM_DPY_LINES        300
 #define MAX_DPY_NUM_CHARS        200
-#define DEF_NUM_LOGS             3
 
 #define FRMT_HEADING             1
 #define FRMT_NORMAL              2

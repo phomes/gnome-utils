@@ -1,3 +1,8 @@
+2002-11-20  Glynn Foster  <glynn.foster@sun.com>
+
+	* log_repaint.c: (InitPages), logrtns.c: Crufy code - make
+	less crufty and fix #99047.
+
 2002-11-18  Glynn Foster  <glynn.foster@sun.com>
 
         * logview.c: (SetDefaultUserPrefs): Add /var/log/sys.log to
