@@ -11,16 +11,18 @@
  * implied warranty.
  */
 
-#ifdef HAVE_CONFIG_H
 # include "config.h"
-#endif
 
 /* #define DEBUG_TIMERS */
 
+#include <gdk/gdk.h>
+#include <gdk/gdkx.h>
+
 #include <stdio.h>
 #include <X11/Xlib.h>
-#include <X11/Intrinsic.h>
 #include <X11/Xos.h>
+
+#define HAVE_XMU
 #ifdef HAVE_XMU
 # ifndef VMS
 #  include <X11/Xmu/Error.h>
@@ -43,7 +45,7 @@
 #include <X11/extensions/XScreenSaver.h>
 #endif /* HAVE_SGI_SAVER_EXTENSION */
 
-#include "xscreensaver.h"
+#include "idle-timer.h"
 
 #ifdef HAVE_PROC_INTERRUPTS
 static Bool proc_interrupts_activity_p (saver_info *si);
@@ -53,7 +55,7 @@ static void check_for_clock_skew (saver_info *si);
 
 
 void
-idle_timer (XtPointer closure, XtIntervalId *id)
+idle_timer (gpointer closure)
 {
   saver_info *si = (saver_info *) closure;
 
@@ -80,16 +82,12 @@ static void
 schedule_wakeup_event (saver_info *si, Time when, Bool verbose_p)
 {
   /* Wake up periodically to ask the server if we are idle. */
-  si->timer_id = XtAppAddTimeOut (si->app, when, idle_timer,
-                                  (XtPointer) si);
-
-#ifdef DEBUG_TIMERS
-  if (verbose_p)
-    fprintf (stderr, "%s: starting idle_timer (%ld, %ld)\n",
-             blurb(), when, si->timer_id);
-#endif /* DEBUG_TIMERS */
+  si->timer_id = gtk_timeout_add (when, idle_timer,
+                                  (gpointer) si);
 }
 
+#if 0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 static void
 notice_events (saver_info *si, Window window, Bool top_p)
@@ -200,81 +198,6 @@ start_notice_events_timer (saver_info *si, Window w, Bool verbose_p)
              blurb(), (unsigned int) w, p->notice_events_timeout);
 }
 
-
-/* When the screensaver is active, this timer will periodically change
-   the running program.
- */
-void
-cycle_timer (XtPointer closure, XtIntervalId *id)
-{
-  saver_info *si = (saver_info *) closure;
-  saver_preferences *p = &si->prefs;
-  Time how_long = p->cycle;
-
-  if (si->selection_mode > 0 &&
-      screenhack_running_p (si))
-    /* If we're in "SELECT n" mode, the cycle timer going off will just
-       restart this same hack again.  There's not much point in doing this
-       every 5 or 10 minutes, but on the other hand, leaving one hack running
-       for days is probably not a great idea, since they tend to leak and/or
-       crash.  So, restart the thing once an hour. */
-    how_long = 1000 * 60 * 60;
-
-  if (si->dbox_up_p)
-    {
-      if (p->verbose_p)
-	fprintf (stderr, "%s: dialog box up; delaying hack change.\n",
-		 blurb());
-      how_long = 30000; /* 30 secs */
-    }
-  else
-    {
-      maybe_reload_init_file (si);
-      kill_screenhack (si);
-
-      if (!si->throttled_p)
-        spawn_screenhack (si, False);
-      else
-        {
-          raise_window (si, True, True, False);
-          if (p->verbose_p)
-            fprintf (stderr, "%s: not launching new hack (throttled.)\n",
-                     blurb());
-        }
-    }
-
-  if (how_long > 0)
-    {
-      si->cycle_id = XtAppAddTimeOut (si->app, how_long, cycle_timer,
-                                      (XtPointer) si);
-
-# ifdef DEBUG_TIMERS
-      if (p->verbose_p)
-        fprintf (stderr, "%s: starting cycle_timer (%ld, %ld)\n",
-                 blurb(), how_long, si->cycle_id);
-# endif /* DEBUG_TIMERS */
-    }
-# ifdef DEBUG_TIMERS
-  else
-    {
-      if (p->verbose_p)
-        fprintf (stderr, "%s: not starting cycle_timer: how_long == %d\n",
-                 blurb(), how_long);
-    }
-# endif /* DEBUG_TIMERS */
-}
-
-
-void
-activate_lock_timer (XtPointer closure, XtIntervalId *id)
-{
-  saver_info *si = (saver_info *) closure;
-  saver_preferences *p = &si->prefs;
-
-  if (p->verbose_p)
-    fprintf (stderr, "%s: timed out; activating lock.\n", blurb());
-  set_locked_p (si, True);
-}
 
 
 /* Call this when user activity (or "simulated" activity) has been noticed.
@@ -436,7 +359,6 @@ check_for_clock_skew (saver_info *si)
                  blurb(),
                  (shift / (60 * 60)), ((shift / 60) % 60), (shift % 60));
 
-      si->emergency_lock_p = True;
       idle_timer ((XtPointer) si, 0);
     }
 
@@ -448,13 +370,6 @@ check_for_clock_skew (saver_info *si)
 static void
 dispatch_event (saver_info *si, XEvent *event)
 {
-  /* If this is for the splash dialog, pass it along.
-     Note that the password dialog is handled with its own event loop,
-     so events for that window will never come through here.
-   */
-  if (si->splash_dialog && event->xany.window == si->splash_dialog)
-    handle_splash_event (si, event);
-
   XtDispatchEvent (event);
 }
 
@@ -514,6 +429,8 @@ swallow_unlock_typeahead_events (saver_info *si, XEvent *e)
 
   memset (buf, 0, sizeof(buf));
 }
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#endif 
 
 
 /* methods of detecting idleness:
@@ -1059,104 +976,3 @@ proc_interrupts_activity_p (saver_info *si)
 
 #endif /* HAVE_PROC_INTERRUPTS */
 
-
-/* This timer goes off every few minutes, whether the user is idle or not,
-   to try and clean up anything that has gone wrong.
-
-   It calls disable_builtin_screensaver() so that if xset has been used,
-   or some other program (like xlock) has messed with the XSetScreenSaver()
-   settings, they will be set back to sensible values (if a server extension
-   is in use, messing with xlock can cause xscreensaver to never get a wakeup
-   event, and could cause monitor power-saving to occur, and all manner of
-   heinousness.)
-
-   If the screen is currently blanked, it raises the window, in case some
-   other window has been mapped on top of it.
-
-   If the screen is currently blanked, and there is no hack running, it
-   clears the window, in case there is an error message printed on it (we
-   don't want the error message to burn in.)
- */
-
-static void
-watchdog_timer (XtPointer closure, XtIntervalId *id)
-{
-  saver_info *si = (saver_info *) closure;
-  saver_preferences *p = &si->prefs;
-
-  disable_builtin_screensaver (si, False);
-
-  /* If the DPMS settings on the server have changed, change them back to
-     what ~/.xscreensaver says they should be. */
-  sync_server_dpms_settings (si->dpy, p->dpms_enabled_p,
-                             p->dpms_standby / 1000,
-                             p->dpms_suspend / 1000,
-                             p->dpms_off / 1000,
-                             False);
-
-  if (si->screen_blanked_p)
-    {
-      Bool running_p = screenhack_running_p (si);
-
-      if (si->dbox_up_p)
-        {
-#ifdef DEBUG_TIMERS
-          if (si->prefs.verbose_p)
-            fprintf (stderr, "%s: dialog box is up: not raising screen.\n",
-                     blurb());
-#endif /* DEBUG_TIMERS */
-        }
-      else
-        {
-#ifdef DEBUG_TIMERS
-          if (si->prefs.verbose_p)
-            fprintf (stderr, "%s: watchdog timer raising %sscreen.\n",
-                     blurb(), (running_p ? "" : "and clearing "));
-#endif /* DEBUG_TIMERS */
-
-          raise_window (si, True, True, running_p);
-        }
-
-      if (screenhack_running_p (si) &&
-          !monitor_powered_on_p (si))
-	{
-	  if (si->prefs.verbose_p)
-	    fprintf (stderr,
-		     "%s: X says monitor has powered down; "
-		     "killing running hacks.\n", blurb());
-	  kill_screenhack (si);
-	}
-
-      /* Re-schedule this timer.  The watchdog timer defaults to a bit less
-         than the hack cycle period, but is never longer than one hour.
-       */
-      si->watchdog_id = 0;
-      reset_watchdog_timer (si, True);
-    }
-}
-
-
-void
-reset_watchdog_timer (saver_info *si, Bool on_p)
-{
-  saver_preferences *p = &si->prefs;
-
-  if (si->watchdog_id)
-    {
-      XtRemoveTimeOut (si->watchdog_id);
-      si->watchdog_id = 0;
-    }
-
-  if (on_p && p->watchdog_timeout)
-    {
-      si->watchdog_id = XtAppAddTimeOut (si->app, p->watchdog_timeout,
-					 watchdog_timer, (XtPointer) si);
-
-#ifdef DEBUG_TIMERS
-      if (p->verbose_p)
-	fprintf (stderr, "%s: restarting watchdog_timer (%ld, %ld)\n",
-		 blurb(), p->watchdog_timeout, si->watchdog_id);
-#endif /* DEBUG_TIMERS */
-
-    }
-}

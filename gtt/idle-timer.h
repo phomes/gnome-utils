@@ -9,8 +9,8 @@
  * implied warranty.
  */
 
-#ifndef __XSCREENSAVER_H__
-#define __XSCREENSAVER_H__
+#ifndef __IDLE_TIMER_H__
+#define __IDLE_TIMER_H__
 
 #include <stdlib.h>
 #ifdef HAVE_UNISTD_H
@@ -20,31 +20,39 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "prefs.h"
+typedef struct saver_info saver_info;
+typedef struct pref_s saver_preferences;
+
+void sleep_until_idle (saver_info *si, Bool until_idle_p);
+
+#if 0
 
 extern char *progname;
 extern char *progclass;
 
-typedef struct saver_info saver_info;
-typedef struct saver_screen_info saver_screen_info;
 typedef struct passwd_dialog_data passwd_dialog_data;
 typedef struct splash_dialog_data splash_dialog_data;
+typedef struct saver_screen_info saver_screen_info;
 
 #undef countof
 #define countof(x) (sizeof((x))/sizeof((*x)))
 
+#endif
+
+struct pref_s
+{
+	int x;
+
+};
 
 
 /* This structure holds all the data that applies to the program as a whole,
    or to the non-screen-specific parts of the display connection.
-
-   The saver_preferences structure (prefs.h) holds all the user-specified
-   parameters, read from the command line, the resource database, or entered
-   through a dialog box.
  */
 struct saver_info {
-  char *version;
   saver_preferences prefs;
+#if 0
+  char *version;
 
   int nscreens;
   saver_screen_info *screens;
@@ -56,6 +64,7 @@ struct saver_info {
      ======================================================================= */
 
   XtAppContext app;
+#endif
   Display *dpy;
 
   /* =======================================================================
@@ -77,6 +86,7 @@ struct saver_info {
 # endif
 
 
+#if 0
   /* =======================================================================
      blanking
      ======================================================================= */
@@ -124,25 +134,16 @@ struct saver_info {
                                    for the password dialog to use to populate
                                    itself. */
 
-
-  /* =======================================================================
-     demoing
-     ======================================================================= */
-
-  Bool demoing_p;		/* Whether we are demoing a single hack
-				   (without UI.) */
-
-  Window splash_dialog;		/* The splash dialog, if its up. */
-  splash_dialog_data *sp_data;	/* Other info necessary to draw it. */
-
-
   /* =======================================================================
      timers
      ======================================================================= */
 
   XtIntervalId lock_id;		/* Timer to implement `prefs.lock_timeout' */
   XtIntervalId cycle_id;	/* Timer to implement `prefs.cycle' */
-  XtIntervalId timer_id;	/* Timer to implement `prefs.timeout' */
+#endif
+  guint timer_id;	/* Timer to implement `prefs.timeout' */
+#if 0
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   XtIntervalId watchdog_id;	/* Timer to implement `prefs.watchdog */
   XtIntervalId check_pointer_timer_id;	/* `prefs.pointer_timeout' */
 
@@ -172,8 +173,10 @@ struct saver_info {
 
   XtIntervalId stderr_popup_timer;
 
+#endif 
 };
 
+#if 0
 
 /* This structure holds all the data that applies to the screen-specific parts
    of the display connection; if the display has multiple screens, there will
@@ -413,4 +416,6 @@ extern Atom XA_SCREENSAVER, XA_SCREENSAVER_VERSION, XA_SCREENSAVER_ID;
 extern Atom XA_SCREENSAVER_STATUS, XA_LOCK, XA_BLANK;
 extern Atom XA_DEMO, XA_PREFS;
 
-#endif /* __XSCREENSAVER_H__ */
+#endif
+
+#endif /* __IDLE_TIMER_H__ */

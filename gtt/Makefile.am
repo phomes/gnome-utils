@@ -9,6 +9,7 @@ gtt_SOURCES = 		\
 	err.c		\
 	err-throw.c	\
 	file-io.c	\
+	idle-timer.c	\
 	journal.c	\
 	log.c		\
 	main.c		\
@@ -36,6 +37,7 @@ noinst_HEADERS = 	\
 	err-throw.h	\
 	file-io.h	\
 	gtt.h		\
+	idle-timer.h	\
 	journal.h	\
 	menucmd.h	\
 	phtml.h		\
