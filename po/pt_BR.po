@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.0.13\n"
-"POT-Creation-Date: 2001-10-13 15:03-0200\n"
-"PO-Revision-Date: 2001-10-10 11:03-02:00\n"
+"POT-Creation-Date: 2001-11-05 06:14-0500\n"
+"PO-Revision-Date: 2001-11-20 22:34-0200\n"
 "Last-Translator: Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
 "MIME-Version: 1.0\n"
@@ -24,9 +24,8 @@ msgid "Simple double precision calculator similiar to xcalc"
 msgstr "Calculadora simples de dupla precisão similar ao xcalc"
 
 #: gcalc/gcalc.c:124
-#, fuzzy
 msgid "Run in analog (slide rule) mode"
-msgstr "Executar em modo analógico"
+msgstr "Executar em modo analógico (régua deslizante)"
 
 #: gcalc/gcalc.c:152
 msgid "Gnome Calculator"
@@ -235,9 +234,7 @@ msgstr "Mapa de caracteres do GNOME"
 msgid ""
 "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
 "contain bad English."
-msgstr ""
-"O equivalente no GNOME ao Mapa de Caracteres do MS Windows. Aviso: pode "
-"conter erros quanto ao uso da língua."
+msgstr "O equivalente no GNOME ao Mapa de Caracteres do MS Windows. Aviso: pode conter erros quanto ao uso da língua."
 
 #: gcharmap/src/callbacks.c:63 gcharmap/src/callbacks.c:101
 #: gcharmap/src/interface.c:65
@@ -397,9 +394,7 @@ msgstr "Sair do programa"
 msgid ""
 "Couldn't start the dictionary; most likely, http://www.dict.org could not be "
 "contacted."
-msgstr ""
-"Impossível iniciar o dicionário. Provavelmente não foi possível contactar "
-"http://www.dict.org."
+msgstr "Impossível iniciar o dicionário. Provavelmente não foi possível contactar http://www.dict.org."
 
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
@@ -459,12 +454,10 @@ msgstr ""
 
 #: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 #: gdictsrc/gdict-applet.c:313
-#, fuzzy
 msgid "Look up"
 msgstr "Procurar"
 
 #: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
-#, fuzzy
 msgid "Look up word in dictionary"
 msgstr "Procurar palavra no dicionário"
 
@@ -628,7 +621,6 @@ msgid "Find Words..."
 msgstr "Procurar palavras..."
 
 #: gdictsrc/gdict-speller.c:151
-#, fuzzy
 msgid "Look up Word..."
 msgstr "Procurar palavra..."
 
@@ -649,7 +641,7 @@ msgstr "Impossível analisar a geometria da string '%s'"
 msgid "Specify the geometry of the window."
 msgstr "Especifique a geometria da janela."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:445 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:439 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
 msgstr "GEOMETRIA"
 
@@ -787,8 +779,7 @@ msgid ""
 "(Note: to print one file per line rather then null separated,\n"
 "append \"| tr '\\000' '\\n'\" to the line below)"
 msgstr ""
-"Esta é a linha de comando que pode ser usada para executar esta busca "
-"apartir do console:\n"
+"Esta é a linha de comando que pode ser usada para executar esta busca apartir do console:\n"
 "(Nota: para imprimir um arquivo por linha em vez de separados por espaço,\n"
 "anexar \"| tr '\\000' '\\n'\" na linha abaixo)"
 
@@ -842,10 +833,8 @@ msgid ""
 "in a string with wildcards, it will have to match the full path."
 msgstr ""
 "Esta é uma interface para o \"locate\". Se uma string simples for digitada\n"
-"será combinada como uma subconjunto do caminho completo, e se uma string com "
-"\n"
-"caracteres curinga for digitada, esta terá que combinar com o caminho "
-"completo."
+"será combinada como uma subconjunto do caminho completo, e se uma string com \n"
+"caracteres curinga for digitada, esta terá que combinar com o caminho completo."
 
 #: gsearchtool/gsearchtool.c:744
 msgid "Locate file: "
@@ -912,27 +901,24 @@ msgid "Total"
 msgstr "Total"
 
 #: gtt/ctree.c:513
-#, fuzzy
 msgid "Total time spent on this project."
-msgstr "Um título para este projeto"
+msgstr "Tempo total gasto neste projeto."
 
 #: gtt/ctree.c:518
-#, fuzzy
 msgid "This Memo"
-msgstr "Colar Memorando"
+msgstr "Esta nota"
 
 #: gtt/ctree.c:520
 msgid "Time spent under the current task memo."
-msgstr ""
+msgstr "Tempo gasto na nota da tarefa atual."
 
 #: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Hoje"
 
 #: gtt/ctree.c:528
-#, fuzzy
 msgid "Time spent on this project today."
-msgstr "Um título para este projeto"
+msgstr "Tempo gasto neste projeto hoje."
 
 #: gtt/ctree.c:533
 msgid "Week"
@@ -940,7 +926,7 @@ msgstr "Semana"
 
 #: gtt/ctree.c:535
 msgid "Time spent on this project this week."
-msgstr ""
+msgstr "Tempo gasto neste projeto esta semana."
 
 #: gtt/ctree.c:541
 msgid "Month"
@@ -948,7 +934,7 @@ msgstr "Mês"
 
 #: gtt/ctree.c:543
 msgid "Time spent on this project this month."
-msgstr ""
+msgstr "Tempo gasto neste projeto este mês."
 
 #: gtt/ctree.c:549
 msgid "Year"
@@ -956,12 +942,11 @@ msgstr "Ano"
 
 #: gtt/ctree.c:551
 msgid "Time spent on this project this year."
-msgstr ""
+msgstr "Tempo gasto neste projeto este ano."
 
 #: gtt/ctree.c:557
-#, fuzzy
 msgid "Title"
-msgstr "Arquivo"
+msgstr "Título"
 
 #: gtt/ctree.c:558 gtt/menucmd.c:144
 msgid "Project Title"
@@ -976,33 +961,29 @@ msgid "Task"
 msgstr "Tarefa"
 
 #: gtt/ctree.c:571
-#, fuzzy
 msgid "The memo for the current task"
-msgstr "Mostrar o tempo gasto na tarefa atual"
+msgstr "A nota para a tarefa atual"
 
 #: gtt/ctree.c:578
-#, fuzzy
 msgid "Estimated Project Start Date"
-msgstr "Data de início estimada"
+msgstr "Data aproximada do início do projeto"
 
 #: gtt/ctree.c:583
-#, fuzzy
 msgid "End"
-msgstr "Habilitado"
+msgstr "Final"
 
 #: gtt/ctree.c:585
-#, fuzzy
 msgid "Estimated Project Completion Date"
-msgstr "Data de início estimada"
+msgstr "Data aproximada da conclusão do projeto"
 
 #: gtt/ctree.c:590
 msgid "Due"
-msgstr ""
+msgstr "Prazo"
 
 #: gtt/ctree.c:592
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
-msgstr ""
+msgstr "Prazo de entrega: a data limite para a finalização deste projeto."
 
 #: gtt/ctree.c:599 mini-utils/guname/info.c:61
 msgid "Size"
@@ -1010,32 +991,31 @@ msgstr "Tamanho"
 
 #: gtt/ctree.c:601
 msgid "Sizing: How much work it will take to finish this project."
-msgstr ""
+msgstr "Tamanho: quanto trabalho ainda falta para terminar este projeto."
 
 #: gtt/ctree.c:607
-#, fuzzy
 msgid "Done"
-msgstr "Nenhum"
+msgstr "Pronto"
 
 #: gtt/ctree.c:609
 msgid "Percent Complete: How much of this project has been finished till now."
-msgstr ""
+msgstr "Porcentagem efetuada: quanto já foi feito neste projeto até agora."
 
 #: gtt/ctree.c:616
 msgid "U"
-msgstr ""
+msgstr "U"
 
 #: gtt/ctree.c:618
 msgid "Urgency: Does this project need to be done soon, done quickly?"
-msgstr ""
+msgstr "Urgência: Este projeto precisa ser terminado rapidamente?"
 
 #: gtt/ctree.c:624
 msgid "Imp"
-msgstr ""
+msgstr "Imp"
 
 #: gtt/ctree.c:626
 msgid "Importance: How important is this project?"
-msgstr ""
+msgstr "Importância: Indica o quanto esse projeto é importante."
 
 #: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
@@ -1043,9 +1023,8 @@ msgid "Status"
 msgstr "Status"
 
 #: gtt/ctree.c:634
-#, fuzzy
 msgid "The current status of this project."
-msgstr "Mudar a tarefa atual deste projeto"
+msgstr "O estado atual deste projeto."
 
 #: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
 msgid "Low"
@@ -1069,7 +1048,7 @@ msgstr "Em andamento"
 
 #: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
-msgstr ""
+msgstr "Em espera"
 
 #: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
@@ -1079,25 +1058,25 @@ msgstr "Cancelado"
 msgid "Completed"
 msgstr "Finalizado"
 
-#: gtt/file-io.c:373
+#: gtt/file-io.c:376
 msgid "project %t started"
 msgstr "projeto %t iniciado"
 
-#: gtt/file-io.c:376
+#: gtt/file-io.c:379
 msgid "stopped project %t"
 msgstr "projeto %t parado"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:670
+#: gtt/file-io.c:677
 #, c-format
 msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
 
 #: gtt/ghtml.c:94 gtt/ghtml.c:219
 msgid "Memo"
-msgstr "Memorando"
+msgstr "Nota"
 
 #: gtt/ghtml.c:94 gtt/ghtml.c:268
 msgid "Elapsed"
@@ -1112,9 +1091,8 @@ msgid "Task Time"
 msgstr "Horário da tarefa"
 
 #: gtt/ghtml.c:228
-#, fuzzy
 msgid "Bill Status"
-msgstr "Status"
+msgstr "Status da cobrança"
 
 #: gtt/ghtml.c:232 gtt/ghtml.c:396 gtt/glade/task_properties.glade.h:4
 msgid "Billable"
@@ -1135,20 +1113,19 @@ msgstr "Valor cobrável"
 
 #: gtt/ghtml.c:248 gtt/ghtml.c:274
 msgid "No Default Value"
-msgstr "Nenhum valor padrão"
+msgstr "Sem valor padrão"
 
 #: gtt/ghtml.c:271
 msgid "Start Time Fuzziness"
-msgstr ""
+msgstr "Margem da data de início"
 
 #: gtt/ghtml.c:380 gtt/glade/task_properties.glade.h:11
 msgid "Hold"
-msgstr ""
+msgstr "Espera"
 
 #: gtt/ghtml.c:383 gtt/glade/task_properties.glade.h:3
-#, fuzzy
 msgid "Bill"
-msgstr "Cobrável"
+msgstr "Cobrar"
 
 #: gtt/ghtml.c:386 gtt/glade/task_properties.glade.h:20
 msgid "Paid"
@@ -1244,7 +1221,7 @@ msgstr "programa iniciado"
 msgid "program exited"
 msgstr "programa finalizado"
 
-#: gtt/main.c:115
+#: gtt/main.c:114
 msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
@@ -1252,35 +1229,35 @@ msgstr ""
 "Parece que existe outra instância de GTimeTracker sendo executada.\n"
 "Pressione OK para iniciar o GTimeTracker assim mesmo, ou Cancelar para sair."
 
-#: gtt/main.c:127
+#: gtt/main.c:126
 msgid "Cannot create pid-file!"
 msgstr "Impossível criar arquivo pid!"
 
-#: gtt/main.c:220
+#: gtt/main.c:219
 msgid "Do you want to continue?"
 msgstr "Deseja continuar?"
 
-#: gtt/main.c:223 gtt/main.c:282
+#: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
 msgstr "Erro"
 
-#: gtt/main.c:279
+#: gtt/main.c:272
 msgid "Shall I setup a new configuration?"
 msgstr "Deseja que uma nova configuração seja criada?"
 
-#: gtt/main.c:445
+#: gtt/main.c:439
 msgid "Specify geometry"
 msgstr "Especificar a geometria"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "Select a project on startup"
 msgstr "Escolher um projeto ao iniciar"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "PROJECT"
 msgstr "PROJETO"
 
-#: gtt/main.c:487 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
 msgid "Warning"
 msgstr "Aviso"
 
@@ -1339,11 +1316,11 @@ msgstr "Remover os logs de tempo de hoje"
 
 #: gtt/menus.c:68 gtt/menus.c:87 gtt/menus.c:156
 msgid "_Journal..."
-msgstr ""
+msgstr "Diári_o..."
 
 #: gtt/menus.c:69 gtt/menus.c:88 gtt/menus.c:157
 msgid "Show the timesheet journal for this project"
-msgstr ""
+msgstr "Mostra o diário de cronogramas para este projeto"
 
 #: gtt/menus.c:72 gtt/menus.c:160
 msgid "New _Task..."
@@ -1355,11 +1332,11 @@ msgstr "Mudar a tarefa atual deste projeto"
 
 #: gtt/menus.c:91
 msgid "_All Journal..."
-msgstr ""
+msgstr "_Diário completo..."
 
 #: gtt/menus.c:92
 msgid "Show the verbose timesheet journal for this project"
-msgstr ""
+msgstr "Mostra o diário de cronogramas detalhado para o projeto"
 
 #: gtt/menus.c:95
 msgid "_Invoice..."
@@ -1371,11 +1348,11 @@ msgstr "Mostrar uma amostra de fatura para este projeto"
 
 #: gtt/menus.c:99
 msgid "_Primer..."
-msgstr ""
+msgstr "_Manual..."
 
 #: gtt/menus.c:100
 msgid "Show a sample introductory primer for designing custom reports"
-msgstr ""
+msgstr "Mostrar um exemplo do manual para criar relatórios personalizados"
 
 #: gtt/menus.c:103
 msgid "_New Report..."
@@ -1486,7 +1463,7 @@ msgstr "Colar projeto"
 
 #: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
 msgid "Journal"
-msgstr ""
+msgstr "Diário"
 
 #: gtt/toolbar.c:194
 msgid "View and Edit Timestamp Logs"
@@ -1582,7 +1559,7 @@ msgstr "Definir o quanto incerto é o tempo de início"
 
 #: gtt/glade/interval_edit.glade.h:12
 msgid "Start Fuzz"
-msgstr ""
+msgstr "Imprecisão do início"
 
 #: gtt/glade/interval_popup.glade.h:1
 msgid "Delete Interval"
@@ -1602,11 +1579,11 @@ msgstr "Editar tempo de inicío e término"
 
 #: gtt/glade/interval_popup.glade.h:5
 msgid "Insert Memo"
-msgstr "Inserir memorando"
+msgstr "Inserir nota"
 
 #: gtt/glade/interval_popup.glade.h:6
 msgid "Insert a new memo above this time interval."
-msgstr "Inserir um  novo memorando sobre este intervalo de tempo."
+msgstr "Inserir uma  nova nota acima deste intervalo de tempo."
 
 #: gtt/glade/interval_popup.glade.h:7
 msgid "Merge Down"
@@ -1626,11 +1603,11 @@ msgstr "Mesclar acima"
 
 #: gtt/glade/interval_popup.glade.h:11
 msgid "Paste Memo"
-msgstr "Colar Memorando"
+msgstr "Colar Nota"
 
 #: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:7
 msgid "Paste a previously cut memo."
-msgstr "Colar um memorando recortado anteriormente."
+msgstr "Colar uma nota recortada anteriormente."
 
 #: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
 #: mini-utils/gcolorsel/menus.c:913 mini-utils/gshutdown/gshutdown.c:155
@@ -1699,18 +1676,14 @@ msgstr "Entrada de parada:"
 msgid ""
 "Entry that will be logged when a project starts. Use %t for the project "
 "title, %d for the description, etc. See the manual for more options."
-msgstr ""
-"Entrada que será registrada quando um projeto iniciar. Use %t para o título "
-"do projeto, %d para a descrição, etc. Veja o manual para mais opções."
+msgstr "Entrada que será registrada quando um projeto iniciar. Use %t para o título do projeto, %d para a descrição, etc. Veja o manual para mais opções."
 
 #: gtt/glade/prefs.glade.h:9
 #, no-c-format
 msgid ""
 "Entry that will be logged when the project stops.  Use %t for the porject "
 "title, %d for the project description, etc. See the manual for more options."
-msgstr ""
-"Entrada que será registrada quando um projeto parar. Use %t para o título do "
-"projeto, %d para a descrição, etc. Veja o manual para mais opções."
+msgstr "Entrada que será registrada quando um projeto parar. Use %t para o título do projeto, %d para a descrição, etc. Veja o manual para mais opções."
 
 #: gtt/glade/prefs.glade.h:10
 msgid "Fields"
@@ -1730,20 +1703,19 @@ msgstr "Tempo limite de inatividade"
 
 #: gtt/glade/prefs.glade.h:14
 msgid "Logfile"
-msgstr "Arquivo de registro"
+msgstr "Arquivo de logs"
 
 #: gtt/glade/prefs.glade.h:15
-#, fuzzy
 msgid "Min Recorded:"
-msgstr "Mínimo gravado:"
+msgstr "Min. gravados:"
 
 #: gtt/glade/prefs.glade.h:16
 msgid "Misc"
-msgstr "Misc"
+msgstr "Miscelânea"
 
 #: gtt/glade/prefs.glade.h:17
 msgid "No Project Command:"
-msgstr ""
+msgstr "Comando 'sem projeto':"
 
 #: gtt/glade/prefs.glade.h:18
 msgid "Project List Display"
@@ -1766,9 +1738,8 @@ msgid "Show Estimated Effort"
 msgstr "Mostrar esforço estimado"
 
 #: gtt/glade/prefs.glade.h:23
-#, fuzzy
 msgid "Show Percent Complete"
-msgstr "Mostrar porcentagem do progresso"
+msgstr "Mostrar porcentagem efetuada"
 
 #: gtt/glade/prefs.glade.h:24
 msgid "Show Planned Project End Date"
@@ -1783,9 +1754,8 @@ msgid "Show Project Description"
 msgstr "Mostrar descrição do projeto"
 
 #: gtt/glade/prefs.glade.h:27
-#, fuzzy
 msgid "Show Project Due Date"
-msgstr "Mostrar data de cobrança do projeto"
+msgstr "Mostrar prazo de entrega do projeto"
 
 #: gtt/glade/prefs.glade.h:28
 msgid "Show Project Importance"
@@ -1861,7 +1831,7 @@ msgstr "Mostrar 'Ajuda'"
 
 #: gtt/glade/prefs.glade.h:46
 msgid "Show `Journal'"
-msgstr ""
+msgstr "Mostrar 'Diário'"
 
 #: gtt/glade/prefs.glade.h:47
 msgid "Show `New'"
@@ -1891,9 +1861,7 @@ msgstr "Mostrar 'Contador'"
 msgid ""
 "Show the 'szing', that is, the estimated amount of work that it will take to "
 "perform this project."
-msgstr ""
-"Mostrar o 'tamanho', isto é, a carga de trabalho estimada para executar este "
-"projeto."
+msgstr "Mostrar o 'tamanho', isto é, a carga de trabalho estimada para executar este projeto."
 
 #: gtt/glade/prefs.glade.h:54
 msgid "Switch Project Command:"
@@ -1903,17 +1871,13 @@ msgstr "Comando ao alternar projeto:"
 msgid ""
 "Switches between projects that happen faster than this will not be logged "
 "(enter the number of seconds)"
-msgstr ""
-"Trocas de projetos que ocorrerem mais rápido que isto não serão registradas "
-"(digite o número de segundos)"
+msgstr "Trocas de projetos que ocorrerem mais rápido que isto não serão registradas (digite o número de segundos)"
 
 #: gtt/glade/prefs.glade.h:56
 msgid ""
 "The current active project will be made inactive after there has been no "
 "keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
-msgstr ""
-"O projeto atualmente ativo será marcado como inativo depois deste número de "
-"segundos sem atividade do teclado ou mouse. Digite -1 para desativar."
+msgstr "O projeto atualmente ativo será marcado como inativo depois deste número de segundos sem atividade do teclado ou mouse. Digite -1 para desativar."
 
 #: gtt/glade/prefs.glade.h:57
 msgid "Toolbar"
@@ -1953,40 +1917,35 @@ msgid "A title to assign to this project"
 msgstr "Um título para este projeto"
 
 #: gtt/glade/project_properties.glade.h:7
-#, fuzzy
 msgid "Auto-merge Gap:"
 msgstr "Espaço de auto-mesclagem:"
 
 #: gtt/glade/project_properties.glade.h:8
-#, fuzzy
 msgid "Auto-merge Interval:"
-msgstr "Intervalo de auto-mesclagem:"
+msgstr "Auto-mesclar intervalo:"
 
 #: gtt/glade/project_properties.glade.h:11
 msgid ""
 "Does this item need immediate attention? Note that some urgent tasks might "
 "not be important.  For example, Bill may want you to answer his email today, "
 "but you may have better things to do today."
-msgstr ""
+msgstr "Este item precisa de atenção imediata? Note que algumas tarefas urgentes podem não ser importantes. Por exemplo, João pode querer que você responda seu email hoje, mas você pode ter coisas melhores para fazer hoje."
 
 #: gtt/glade/project_properties.glade.h:12
-#, fuzzy
 msgid "Double-Overtime Rate:"
 msgstr "Taxa de hora extra dupla:"
 
 #: gtt/glade/project_properties.glade.h:13
-#, fuzzy
 msgid "Due Date:"
-msgstr "Data de cobrança:"
+msgstr "Prazo de entrega:"
 
 #: gtt/glade/project_properties.glade.h:14
 msgid "Flat Fee:"
 msgstr "Preço normal:"
 
 #: gtt/glade/project_properties.glade.h:16
-#, fuzzy
 msgid "Hours to Finish:"
-msgstr "Horas para acabar:"
+msgstr "Horas para o final:"
 
 #: gtt/glade/project_properties.glade.h:17
 msgid ""
@@ -1994,22 +1953,21 @@ msgid ""
 "urgent.  For example, it is important to file a tax return every year, but "
 "you have a lot of time to get ready to do this."
 msgstr ""
+"Quão importante é realizar essa tarefa? Nem tudo importante é urgente.\n"
+"Por exemplo, é importante preencher uma declaração anual de imposto,\n"
+"mas você tem bastante tempo para se preparar para o fazer."
 
 #: gtt/glade/project_properties.glade.h:18
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
-msgstr ""
-"Se o espaço de tempo entre intervalos é menor que este, os intervalos serão "
-"mesclados."
+msgstr "Se o espaço de tempo entre intervalos é menor que este, os intervalos serão mesclados."
 
 #: gtt/glade/project_properties.glade.h:19
 msgid ""
 "If this project is billed for one price no matter how long it takes, enter "
 "the fee here."
-msgstr ""
-"Se este projeto é cobrado por um certo preço (não importa quanto), digite a "
-"quantia aqui."
+msgstr "Se este projeto é cobrado por um certo preço (não importa quanto), digite a quantia aqui."
 
 #: gtt/glade/project_properties.glade.h:20
 msgid "Importance:"
@@ -2019,9 +1977,7 @@ msgstr "Importância:"
 msgid ""
 "Internal notes about the project, memos that will not be printed on an "
 "invoice."
-msgstr ""
-"Notas internas sobre o projeto, memorandos que não serão impressos numa "
-"fatura."
+msgstr "Notas internas sobre o projeto que não serão impressas numa fatura."
 
 #: gtt/glade/project_properties.glade.h:23
 msgid "Intervals"
@@ -2049,17 +2005,14 @@ msgid "Notes:"
 msgstr "Notas:"
 
 #: gtt/glade/project_properties.glade.h:32
-#, fuzzy
 msgid "Overtime Rate:"
 msgstr "Taxa de hora extra:"
 
 #: gtt/glade/project_properties.glade.h:33
-#, fuzzy
 msgid "Planned Finish:"
 msgstr "Término planejado:"
 
 #: gtt/glade/project_properties.glade.h:34
-#, fuzzy
 msgid "Planned Start:"
 msgstr "Início planejado:"
 
@@ -2125,117 +2078,99 @@ msgstr "segundos"
 
 #: gtt/glade/task_popup.glade.h:1
 msgid "Delete _Memo"
-msgstr "Remover _memorando"
+msgstr "Remover _nota"
 
 #: gtt/glade/task_popup.glade.h:2
-#, fuzzy
 msgid "Delete _Times"
 msgstr "Remover _horários"
 
 #: gtt/glade/task_popup.glade.h:3
 msgid "Delete the memo only, keep the time intervals"
-msgstr "Remover apenas o memorando, mantendo os intervalos de tempo"
+msgstr "Remover apenas a nota, mantendo os intervalos de tempo"
 
 #: gtt/glade/task_popup.glade.h:4
 msgid "Delete the memo, and the time intervals below it."
-msgstr "Remover o memorando e os intervalos de tempo abaixo dele."
+msgstr "Remover a nota e os intervalos de tempo abaixo dele."
 
 #: gtt/glade/task_popup.glade.h:5
 msgid "Edit the memo and othr task properties."
-msgstr "Editar o memorando e outras propriedades da tarefa."
+msgstr "Editar a nota e outras propriedades da tarefa."
 
 #: gtt/glade/task_popup.glade.h:6
 msgid "Insert a new memo above this one."
-msgstr "Inserir um novo memorando acima deste."
+msgstr "Inserir uma nova nota acima desta."
 
 #: gtt/glade/task_popup.glade.h:8
 msgid "_Edit Memo"
-msgstr "_Editar memorando"
+msgstr "_Editar nota"
 
 #: gtt/glade/task_popup.glade.h:9
 msgid "_New Memo"
-msgstr "_Novo memorando"
+msgstr "_Nova nota"
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Paste Memo"
-msgstr "_Colar memorando"
+msgstr "_Colar nota"
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
-msgstr ""
-"Um conjunto de notas particulares que não serão impressas num relatório."
+msgstr "Um conjunto de notas particulares que não serão impressas num relatório."
 
 #: gtt/glade/task_properties.glade.h:2
 msgid "A short description to attach to this block of time."
 msgstr "Uma pequena descrição para anexar a este bloco de tempo."
 
 #: gtt/glade/task_properties.glade.h:5
-#, fuzzy
 msgid "Billable:"
 msgstr "Cobrável:"
 
 #: gtt/glade/task_properties.glade.h:6
-#, fuzzy
 msgid "Billing Block:"
 msgstr "Bloco cobrável:"
 
 #: gtt/glade/task_properties.glade.h:7
-#, fuzzy
 msgid "Billing Rate:"
 msgstr "Taxa de cobrança:"
 
 #: gtt/glade/task_properties.glade.h:8
-#, fuzzy
 msgid "Billing Status:"
-msgstr "Taxa de cobrança:"
+msgstr "Status de cobrança:"
 
 #: gtt/glade/task_properties.glade.h:9
 msgid "Fee rate to be charged for this task."
 msgstr "Taxa a ser cobrada por esta tarefa."
 
 #: gtt/glade/task_properties.glade.h:12
-#, fuzzy
 msgid ""
 "How should this task be billed?  \"Billable\" means bill to the customer in "
 "the normal fashion.   \"Not Billable\" means we can't ask for money for "
 "this, don't print on the invoice.   \"No Charge\" means print on the invoice "
 "as 'free/no-charge'."
-msgstr ""
-"Esta tarefa pode ser cobrada ao cliente? \"Hold\" quer dizer talvez, mas "
-"ainda não, \"Não cobrável\" quer dizer não imprimir na fatura, \"Sem "
-"cobrança\" significa imprimir na fatura como gratuito."
+msgstr "Como esta tarefa deve ser faturada? \"Cobrável\" quer dizer cobrar ao cliente do modo normal. \"Não cobrável\" quer dizer não imprimir na fatura, \"Sem cobrança\" significa imprimir na fatura como gratuito."
 
 #: gtt/glade/task_properties.glade.h:13
-#, fuzzy
 msgid ""
 "Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
 "not yet, needs review.   \"Bill\" means print this on the next invoice.   "
 "\"Paid\" means that it should no longer be included on invoices."
-msgstr ""
-"Esta tarefa pode ser cobrada ao cliente? \"Hold\" quer dizer talvez, mas "
-"ainda não, \"Não cobrável\" quer dizer não imprimir na fatura, \"Sem "
-"cobrança\" significa imprimir na fatura como gratuito."
+msgstr "Esta tarefa está pronta para ser cobrada ao cliente? \"Espera\" quer dizer talvez, mas ainda não, precisa ser revisada. \"Cobrar\" quer dizer imprimir na próxima fatura, \"Pago\" significa que não deve mais ser encluída em faturas.."
 
 #: gtt/glade/task_properties.glade.h:14
 msgid "Memo:"
-msgstr "Memorando:"
+msgstr "Nota:"
 
 #: gtt/glade/task_properties.glade.h:18
-#, fuzzy
 msgid "OverOver"
-msgstr "Hora extra dupla"
+msgstr "Extra Extra"
 
 #: gtt/glade/task_properties.glade.h:22
 msgid "Task Properties"
 msgstr "Propriedades da tarefa"
 
 #: gtt/glade/task_properties.glade.h:23
-#, fuzzy
 msgid ""
 "The billed unit of time will be rounded to an integer multiple of this time."
-msgstr ""
-"A unidade de tempo cobrada será arredondada para um múltiplo inteiro desta "
-"duração."
+msgstr "A unidade de tempo cobrada será arredondada para um múltiplo desta duração."
 
 #: gtt/glade/task_properties.glade.h:24
 msgid "minutes"
@@ -2246,17 +2181,12 @@ msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:42
-#, fuzzy
 msgid ""
 "This  program  is  part of  the  GNOME  project. Logview comes with "
 "ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
-msgstr ""
-"Este programas é parte do projeto GNOME para Linux. Logview vem "
-"ABSOLUTAMENTE SEM GARANTIA. Este é um software livre, sinta-se a vontade "
-"pararedistribuí-lo sob as condições da licença GNU General Public License. O "
-"ícone de registro é uma cortesia de Tuomas Kuosmanen (a.k.a tigert)."
+msgstr "Este programas é parte do projeto GNOME. Logview vem ABSOLUTAMENTE SEM GARANTIA. Este é um software livre, sinta-se a vontade para redistribuí-lo sob as condições da licença GNU General Public License. O ícone de registro é uma cortesia de Tuomas Kuosmanen (a.k.a tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
@@ -2302,23 +2232,20 @@ msgid "<empty>"
 msgstr "<vazio>"
 
 #: logview/actions.c:512
-#, fuzzy
 msgid "log name regexp"
-msgstr "Expressão regular de nome de log"
+msgstr "Expr. reg. de nome de log"
 
 #: logview/actions.c:513
-#, fuzzy
 msgid "process regexp"
-msgstr "Expressão regular de processo"
+msgstr "Expr. regular de processo"
 
 #: logview/actions.c:514
-#, fuzzy
 msgid "message regexp"
-msgstr "Expressão regular de mensagem"
+msgstr "Expr. regular de mensagem"
 
 #: logview/actions.c:515
 msgid "action to execute when regexps are TRUE"
-msgstr "ação a ser executada quando expressões regulares são VERDADEIRAS"
+msgstr "ação a executar quando expressões regulares forem VERDADEIRAS"
 
 #: logview/actions.c:516
 msgid "description"
@@ -2641,8 +2568,7 @@ msgstr "TOCADI!!\n"
 
 #: logview/userprefsdialog.c:65
 msgid "hostname column width ( 0 to hide this column ): "
-msgstr ""
-"larguara da coluna do nome da máquina ( 0 para esconder esta coluna ): "
+msgstr "larguara da coluna do nome da máquina ( 0 para esconder esta coluna ): "
 
 #: logview/userprefsdialog.c:66
 msgid "Columns"
@@ -2681,6 +2607,51 @@ msgstr "Descrição:"
 #: logview/zoom.c:212
 msgid "%B %e %X"
 msgstr "%B %e %X"
+
+#.
+#. * 	-------------------
+#. * 	     Defines
+#. * 	-------------------
+#.
+#: logview/config.c:34
+msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:35
+msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:36
+msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
+
+#: logview/config.c:37
+msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
+msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
+
+#: logview/config.c:39
+msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
+
+#: logview/config.c:40
+msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
+
+#: logview/config.c:41
+msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:42
+msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
+
+#: logview/config.c:43
+msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
+
+#: logview/config.c:44
+msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
 
 #: logview/desc_db.c:37
 #, c-format
@@ -2839,9 +2810,7 @@ msgstr "Nome curto :"
 msgid ""
 "This document read document from one or more other document. Please, choose "
 "these documents."
-msgstr ""
-"Este documento lê a partir de um ou mais documentos. Favor escolher tais "
-"documentos."
+msgstr "Este documento lê a partir de um ou mais documentos. Favor escolher tais documentos."
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:17
 msgid ""
@@ -3133,8 +3102,7 @@ msgstr ""
 "GColorsel não conseguiu carregar o arquivo:\n"
 "\n"
 "%s\n"
-"Certifique-se de que o caminho fornecido existe,e que você possui as "
-"permissões para abrir o arquivo."
+"Certifique-se de que o caminho fornecido existe,e que você possui as permissões para abrir o arquivo."
 
 #: mini-utils/gcolorsel/menus.c:217
 msgid "Open Palette"
@@ -3378,7 +3346,9 @@ msgstr "Mostra texto com fonte fixa"
 msgid "Text File Viewer"
 msgstr "Visualização de Arquivo de Texto"
 
-#: mini-utils/gless/gless.c:446
+#: mini-utils/gless/gless.c:446 mini-utils/gshutdown/gshutdown.c:30
+#: mini-utils/guname/guname.c:43 mini-utils/gw/gw.c:29
+#: mini-utils/idetool/idetool.c:11
 msgid "Copyright 1998, under the GNU General Public License."
 msgstr "Copyright 1998 sob a Licença Pública Geral GNU"
 
@@ -3526,9 +3496,7 @@ msgstr "Tem certeza que quer reiniciar o sistema?"
 
 #: mini-utils/gshutdown/gshutdown.c:153 mini-utils/gshutdown/gshutdown.c:628
 msgid "You must be the super-user (root) to shut down or restart the computer."
-msgstr ""
-"Você precisa ser o super-usuário (root) para desligar ou reiniciar o "
-"computador."
+msgstr "Você precisa ser o super-usuário (root) para desligar ou reiniciar o computador."
 
 #. notebook pages
 #: mini-utils/gshutdown/gshutdown.c:189
@@ -3688,6 +3656,9 @@ msgstr "Tem Certeza?"
 msgid "Address to mail to:"
 msgstr "Endereço do destinatário:"
 
+#. ***********************************
+#. Globals
+#. **********************************
 #: mini-utils/guname/info.c:40
 msgid "Distribution:"
 msgstr "Distribuição:"
@@ -3797,10 +3768,12 @@ msgid "Kilobytes"
 msgstr "Kilobytes"
 
 #: mini-utils/guname/moreinfo.c:186
+#, c-format
 msgid "%ld%% memory used."
 msgstr "%ld%% memória usada."
 
 #: mini-utils/guname/moreinfo.c:197
+#, c-format
 msgid "%ld%% swap used."
 msgstr "%ld%% memória swap usada."
 
@@ -3843,6 +3816,7 @@ msgid "%ld megabytes, %ld free (%ld superuser); %ld inodes, %ld free."
 msgstr "%ld megabytes, %ld livres (%ld super-usuário), %ld inodes, %ld livres."
 
 #: mini-utils/guname/moreinfo.c:353
+#, c-format
 msgid "%2d%% full "
 msgstr "%2d%% cheia "
 
@@ -4295,10 +4269,8 @@ msgid ""
 "be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"Você não tem permissão para gravar em %s, impossível continuar a "
-"formatação.\n"
-"Contacte o administrador do sistema para saber como obter permissões de "
-"gravação."
+"Você não tem permissão para gravar em %s, impossível continuar a formatação.\n"
+"Contacte o administrador do sistema para saber como obter permissões de gravação."
 
 #: gfloppy/src/main.c:285
 msgid "The device to format"
@@ -4358,12 +4330,7 @@ msgid ""
 "function of time.  Its main use is to chart system performance parameters "
 "such as CPU load, CPU utilization, network traffic levels, and the like.  "
 "Other more ingenious uses are left as an exercise for the interested user."
-msgstr ""
-"O programa GNOME stripchart plota vários parâmetros especificados pelo "
-"usuário como funções do tempo. Seu uso principal é para desenhar parâmetros "
-"de desempenho de sistema como Carga de CPU, Utilização de CPU, níveis de "
-"tráfego de rede e afins. Outros usos mais engenhosos são deixados como um "
-"exercício para o usuário interessado."
+msgstr "O programa GNOME stripchart plota vários parâmetros especificados pelo usuário como funções do tempo. Seu uso principal é para desenhar parâmetros de desempenho de sistema como Carga de CPU, Utilização de CPU, níveis de tráfego de rede e afins. Outros usos mais engenhosos são deixados como um exercício para o usuário interessado."
 
 #: stripchart/chart-app.c:239
 msgid "Show values"
@@ -4518,7 +4485,7 @@ msgstr "Suave"
 
 #: stripchart/prefs.c:250
 msgid "Ticks"
-msgstr ""
+msgstr "Marcas"
 
 #: stripchart/prefs.c:255
 msgid "Pen"
@@ -4609,9 +4576,7 @@ msgstr "Este é um tipo desconlhecido de executável"
 msgid ""
 "The executable is for a different platform and can not be executed on this "
 "system"
-msgstr ""
-"Este executável é para um tipo diferente de plataforma e não pode ser "
-"executado neste sistema"
+msgstr "Este executável é para um tipo diferente de plataforma e não pode ser executado neste sistema"
 
 #: meat-grinder/meat-grinder.c:106
 #, c-format
@@ -4706,9 +4671,7 @@ msgstr "Pacote"
 msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
-msgstr ""
-"Arraste este botão para o local onde você quer criar o pacote ou pressione-o "
-"para abrir uma caixa de diálogo de seleção de arquivo."
+msgstr "Arraste este botão para o local onde você quer criar o pacote ou pressione-o para abrir uma caixa de diálogo de seleção de arquivo."
 
 #: meat-grinder/meat-grinder.c:883
 msgid "Cannot find proper icons anywhere!"
@@ -4812,7 +4775,7 @@ msgstr "Faz um pingüin perseguir seu ponteiro do mouse"
 
 #: mini-utils/gnome-run/gnome-run.desktop.in.h:1
 msgid "Prompts the user for a program to run"
-msgstr "Pede ao usuário um programa para executar"
+msgstr "Executa um programa especificado pelo usuário"
 
 #: mini-utils/gnome-run/gnome-run.desktop.in.h:2
 msgid "Run program..."
@@ -4852,11 +4815,11 @@ msgstr "Monitor de log do sistema"
 
 #: gtt/gtt.desktop.in.h:1
 msgid "Time Tracker tool"
-msgstr "Ferramenta para medir tempo"
+msgstr "Ferramenta de controle de tempo"
 
 #: gtt/gtt.desktop.in.h:2
 msgid "Time tracking tool"
-msgstr "Ferramenta para medir tempo"
+msgstr "Ferramenta de controle de tempo"
 
 #: gstripchart/gstripchart_applet.desktop.in.h:1
 msgid "Gstripchart"
@@ -4877,7 +4840,7 @@ msgstr "GNOME DiskFree"
 
 #: gdiskfree/gdiskfree.desktop.in.h:2
 msgid "Show free space on mounted file systems using dials."
-msgstr "Mostra espaço livre nos sistemas de arquivos montado."
+msgstr "Mostra espaço livre nos sistemas de arquivos montados."
 
 #: gcharmap/gcharmap.desktop.in.h:1
 msgid "GNOME Character Map"
@@ -4894,70 +4857,3 @@ msgstr "Gerenciador do cron"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Gerenciador do crontab"
-
-#~ msgid "Estimated End Date"
-#~ msgstr "Data de término estimada"
-
-#, fuzzy
-#~ msgid "Date Due"
-#~ msgstr "Data da dívida"
-
-#, fuzzy
-#~ msgid "Sizing"
-#~ msgstr "Tamanho"
-
-#~ msgid "Urgency"
-#~ msgstr "Urgência"
-
-#~ msgid "Importance"
-#~ msgstr "Importância"
-
-#~ msgid ""
-#~ "An error occured while reading the configuration file.\n"
-#~ "Shall I setup a new configuration?"
-#~ msgstr ""
-#~ "Ocorreu um erro durante a leitura do arquivo de configuração.\n"
-#~ "Criar uma nova configuração?"
-
-#~ msgid "Could not write the configuration file!"
-#~ msgstr "Impossível escrever no arquivo de configuração!"
-
-#~ msgid "Unknown error occurred"
-#~ msgstr "Ocorreu um erro desconhecido"
-
-#~ msgid ""
-#~ "This will overwrite your current set of projects.\n"
-#~ "Do you really want to reload the configuration file?"
-#~ msgstr ""
-#~ "Isto irá sobrescrever sua lista atual de projetos.\n"
-#~ "Deseja realmente recarregar o arquivo de configuração?"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
