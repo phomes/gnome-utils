@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.109.0\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
-"PO-Revision-Date: 2002-06-12 01:20+0200\n"
+"POT-Creation-Date: 2002-07-04 17:37+0200\n"
+"PO-Revision-Date: 2002-07-04 17:37+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <christophe@merlet.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +38,8 @@ msgstr "Impossible d'accéder aux droits du fichier"
 #, c-format
 msgid "Could not execute the file `%s' due to a permission problem"
 msgstr ""
-"Impossible d'exécuter le fichier « %s » à cause d'un problème de droits"
+"Impossible d'exécuter le fichier « %s » à cause d'un problème de "
+"droits"
 
 #: exe-handler/gnome-exe-handler.c:104
 #, c-format
@@ -128,165 +129,161 @@ msgstr "1/x"
 msgid "Inverse"
 msgstr "Inverse"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
-msgstr "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
+msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr "Carré"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr "Racine carrée"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr "Effacer"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr "Réinitialiser"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr "Fonction trogonométrie/log inverse"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr "Sinus"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr "Tangente"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid " DEG  "
 msgstr " DEG  "
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr "Bascule degrés / radians / grad"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr "Base du logarithme naturel"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr "Ajouter un digit"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr "Logarithme base 10"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr "Logarithme népérien"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
-msgstr "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
+msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr "Puissance"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr "Factorielle"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr "Parenthèse ouvrante"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr "Parenthèse fermante"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr "Diviser par"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -294,31 +291,31 @@ msgstr ""
 "Stocke la valeur du champ\n"
 "d'affichage dans la mémoire"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr "Multiplier par"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -326,31 +323,31 @@ msgstr ""
 "Affiche la valeur de la mémoire\n"
 "dans le champ d'affichage"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr "Soustration"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -358,31 +355,31 @@ msgstr ""
 "Ajoute la valeur du champ d'affichage\n"
 "à la valeur de la mémoire"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "Ajouter"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -390,31 +387,31 @@ msgstr ""
 "Échange la valeur du champ d'affichage\n"
 "avac la valeur de la mémoire"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr "Point décimal"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr "Changer le signe"
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr "Calculer"
 
@@ -481,24 +478,24 @@ msgstr ""
 "Sélectionne, copie et colle les caractères de votre police vers d'autres "
 "applications"
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:114
 msgid "del"
 msgstr "del"
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:120
 #, c-format
 msgid " %s: Character code %d"
 msgstr "%s : code du caractère : %d"
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:156
 msgid "Text copied to clipboard..."
 msgstr "Texte copié dans le presse-papiers..."
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:173
 msgid "Text cut to clipboard..."
 msgstr "Texte coupé dans le presse-papiers..."
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:226
 msgid "Text pasted from clipboard..."
 msgstr "Texte collé du presse-papiers..."
 
@@ -514,23 +511,23 @@ msgstr "Barre d'outils d'action"
 msgid "_Text to copy:"
 msgstr "_Texte à copier :"
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 msgid "_Copy"
 msgstr "_Copier"
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 msgid "Text to copy"
 msgstr "Texte à copier"
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr "Entrée"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Copier"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 msgid "Copy the text"
 msgstr "Copier le texte"
 
@@ -632,8 +629,8 @@ msgid ""
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
 "Une erreur sérieuse est survenue. veuillez vérifier que votre server et "
-"votre port sont corrects. Pour référence, le serveur par défaut est dict.org "
-"et le port 2628"
+"votre port sont corrects. Pour référence, le serveur par défaut est "
+"dict.org et le port 2628"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -1137,12 +1134,12 @@ msgstr ""
 #: gfloppy/src/main.c:136 gfloppy/src/main.c:179
 #, c-format
 msgid ""
-"You do not have the proper permissions to write to %s, formatting will not "
-"be possible.\n"
+"You do not have the proper permissions to write to %s, formatting will not be "
+"possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"Vous n'avez pas les permissions nécessaires pour écrire sur %s, le formatage "
-"ne pourra pas être possible.\n"
+"Vous n'avez pas les permissions nécessaires pour écrire sur %s, le "
+"formatage ne pourra pas être possible.\n"
 "Contactez votre administrateur systèmeafin d'obtenir les permissions en "
 "écriture."
 
@@ -1401,7 +1398,8 @@ msgstr "Entrée de répertoire de démarrage"
 #: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
 msgid "Enter the folder name where you want to start the search"
 msgstr ""
-"Saisissez le nom du répertoire dans lequel vous voulez démarrer la recherche"
+"Saisissez le nom du répertoire dans lequel vous voulez démarrer la "
+"recherche"
 
 #: gsearchtool/gsearchtool.c:1450
 msgid "Rules:"
@@ -1543,16 +1541,16 @@ msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:43
 msgid ""
-"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
-"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"This  program  is  part of  the  GNOME  project for Linux. Logview comes with "
+"ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
 "Ce programme fait partie du projet GNOME pour Linux. Le visualiseur "
 "d'historique est fournit avec ABSOLUMENT AUCUNE GARANTIE. Ceci est un "
-"logiciel libre, et vous êtes encouragé à le redistribuer sous les conditions "
-"de la Licence Publique Générale GNU.  L'icône du journal est un petit cadeau "
-"de Tuomas Kuosmanen (a.k.a tigert)."
+"logiciel libre, et vous êtes encouragé à le redistribuer sous les "
+"conditions de la Licence Publique Générale GNU.  L'icône du journal est un "
+"petit cadeau de Tuomas Kuosmanen (a.k.a tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:72
@@ -1563,74 +1561,74 @@ msgstr "Visionneur de journaux système GNOME"
 msgid "Copyright (C) 1998"
 msgstr "Copyright © 1998"
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr "Base de données d'actions"
 
-#: logview/actions.c:81
-msgid "Action options"
-msgstr "Options d'action"
+#: logview/actions.c:85
+msgid "Actions"
+msgstr "Actions"
 
-#: logview/actions.c:138
-msgid "Add..."
-msgstr "Ajouter..."
+#: logview/actions.c:153
+msgid "_Add"
+msgstr "_Ajouter"
 
-#: logview/actions.c:144
-msgid "Edit..."
-msgstr "Éditer..."
+#: logview/actions.c:160
+msgid "_Edit"
+msgstr "_Édition"
 
-#: logview/actions.c:150
-msgid "Remove"
-msgstr "Enlever"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+msgid "_Remove"
+msgstr "_Supprimer"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr ""
 "Ne peut ouvrir la base de données d'actions <%s> ! Échec de l'ouverture."
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "Erreur d'analyse de la base de données d'actions"
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr "Ne peut écrire dans la base de données d'actions !"
 
-#: logview/actions.c:494
+#: logview/actions.c:493
 msgid "<empty>"
 msgstr "<vide>"
 
-#: logview/actions.c:495
+#: logview/actions.c:494
 msgid "log name regexp"
 msgstr "exp. rég. de nom de journal"
 
-#: logview/actions.c:496
+#: logview/actions.c:495
 msgid "process regexp"
 msgstr "exp. rég. de processus"
 
-#: logview/actions.c:497
+#: logview/actions.c:496
 msgid "message regexp"
 msgstr "exp. rég. de message"
 
-#: logview/actions.c:498
+#: logview/actions.c:497
 msgid "action to execute when regexps are TRUE"
 msgstr "action à exécuter lorsque les exp. rég. sont VRAI"
 
-#: logview/actions.c:499
+#: logview/actions.c:498
 msgid "description"
 msgstr "description"
 
-#: logview/actions.c:744
-msgid "description:"
-msgstr "description :"
+#: logview/actions.c:758
+msgid "_Description:"
+msgstr "_Description :"
 
-#: logview/actions.c:753
+#: logview/actions.c:767
 msgid "Description of this entry."
 msgstr "Description de cette entrée."
 
-#: logview/actions.c:800
+#: logview/actions.c:791
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1705,8 +1703,8 @@ msgstr "Helvetica Bold 10"
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
 msgstr ""
-"Ne peut ouvrir la base de données d'expressions rationnelles <%s> ! Échec de "
-"l'ouverture."
+"Ne peut ouvrir la base de données d'expressions rationnelles <%s> ! Échec "
+"de l'ouverture."
 
 #: logview/desc_db.c:147
 #, c-format
@@ -2156,10 +2154,6 @@ msgstr "_Créer une archive..."
 msgid "Create a new archive from the items"
 msgstr "Crée une nouvelle archive à partir des éléments"
 
-#: meat-grinder/meat-grinder.c:941
-msgid "_Remove"
-msgstr "_Supprimer"
-
 #: meat-grinder/meat-grinder.c:942
 msgid "Remove the selected item"
 msgstr "Supprimer l'élément sélectionné"
@@ -2200,6 +2194,27 @@ msgid ""
 msgstr ""
 "Ne peut trouver le programme d'archive (tar) !\n"
 "Il s'agit du programme utilisé pour la création d'archives."
+
+#~ msgid "x^2"
+#~ msgstr "x^2"
+
+#~ msgid "x^y"
+#~ msgstr "x^y"
+
+#~ msgid "Action options"
+#~ msgstr "Options d'action"
+
+#~ msgid "Add..."
+#~ msgstr "Ajouter..."
+
+#~ msgid "Edit..."
+#~ msgstr "Éditer..."
+
+#~ msgid "Remove"
+#~ msgstr "Enlever"
+
+#~ msgid "description:"
+#~ msgstr "description :"
 
 #~ msgid "_Floppy Device:"
 #~ msgstr "_Périphérique disquette :"
@@ -2889,9 +2904,6 @@ msgstr ""
 #~ msgid "Edit the Start & Stop Times"
 #~ msgstr "Lancer / arrêter le chronomètre"
 
-#~ msgid "Edit"
-#~ msgstr "Édition"
-
 #~ msgid "Delete"
 #~ msgstr "Effacer"
 
@@ -3073,9 +3085,6 @@ msgstr ""
 
 #~ msgid "Please, select the type of view you want to create."
 #~ msgstr "Veuillez sélectionner le type de vue que vous voulez créer."
-
-#~ msgid "Actions"
-#~ msgstr "Actions"
 
 #~ msgid "Bottom"
 #~ msgstr "Bas"
