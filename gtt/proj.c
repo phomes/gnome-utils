@@ -358,6 +358,11 @@ gtt_project_set_id (GttProject *proj, int new_id)
 		g_warning ("a project with id =%d already exists\n", new_id);
 	}
 
+	/* We try to conserve id numbers by seeing if this was a fresh
+	 * project. Conserving numbers is good, since things are less
+	 * confusing when looking at the data */
+	if ((proj->id+1) == next_free_id) next_free_id--;
+
 	proj->id = new_id;
 	if (new_id >= next_free_id) next_free_id = new_id + 1;
 }
