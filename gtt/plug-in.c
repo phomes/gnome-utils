@@ -17,10 +17,12 @@
  */
 
 #include "config.h"
+#include <errno.h>
 #include <glade/glade.h>
 #include <glib.h>
 #include <gnome.h>
 
+#include "journal.h"
 #include "plug-in.h"
 
 struct NewPluginDialog_s
@@ -30,6 +32,7 @@ struct NewPluginDialog_s
 	GtkEntry *plugin_name;
 	GtkEntry *plugin_path;
 	GtkEntry *plugin_tooltip;
+	GnomeApp *app;
 
 };
 
@@ -65,18 +68,62 @@ gtt_plugin_new (const char * nam, const char * pth)
 static void 
 new_plugin_create_cb (GtkWidget * w, gpointer data)
 {
+	FILE *fh;
+	GnomeUIInfo entry[2];
 	char *title, *path, *tip;
 	NewPluginDialog *dlg = data;
 	GttPlugin *plg;
 
+	/* get the dialog contents */
 	title = gtk_entry_get_text (dlg->plugin_name);
 	path = gtk_entry_get_text (dlg->plugin_path);
 	tip = gtk_entry_get_text (dlg->plugin_tooltip);
-printf ("duuude create the thing  !! %s %s\n", title, path);
 
-	plg = gtt_plugin_new (title,path);
-	plg->tooltip = g_strdup (tip);
+	/* do a basic sanity check */
+	fh = fopen (path, "r");
+	if (!fh) 
+	{
+		gchar *msg;
+		GtkWidget *mb;
+		int nerr = errno;
+		msg = g_strdup_printf (_("Unable to open the file %s\n%s"),
+			path, strerror (nerr)); 
+		mb = gnome_message_box_new (msg,
+			GNOME_MESSAGE_BOX_ERROR, 
+			GNOME_STOCK_BUTTON_CLOSE,
+			NULL);
+		gtk_widget_show (mb);
+		// g_free (msg);
+	}
+	else
+	{
+		fclose (fh);
 
+		/* create the plugin */
+		plg = gtt_plugin_new (title,path);
+		plg->tooltip = g_strdup (tip);
+	
+		/* add the thing to the Reports menu */
+		entry[0].type = GNOME_APP_UI_ITEM;
+		entry[0].label = plg->name;
+		entry[0].hint = plg->tooltip;
+		entry[0].moreinfo = invoke_report;
+		entry[0].user_data = plg->path;
+		entry[0].unused_data = NULL;
+		entry[0].pixmap_type = GNOME_APP_PIXMAP_STOCK;
+		entry[0].pixmap_info = GNOME_STOCK_MENU_BLANK;
+		entry[0].accelerator_key = 0;
+		entry[0].ac_mods = (GdkModifierType) 0;
+	
+		entry[1].type = GNOME_APP_UI_ENDOFINFO;
+	
+		gnome_app_insert_menus (dlg->app,  N_("Reports/<Separator>"), entry);
+	
+		/* zero-out entries, so next time user doesn't see them again */
+		gtk_entry_set_text (dlg->plugin_name, "");
+		gtk_entry_set_text (dlg->plugin_path, "");
+		gtk_entry_set_text (dlg->plugin_tooltip, "");
+	}
 	gtk_widget_hide (GTK_WIDGET(dlg->dialog));
 }
 
@@ -89,6 +136,8 @@ new_plugin_cancel_cb (GtkWidget * w, gpointer data)
 
 /* ============================================================ */
 
+extern GtkWidget *window;
+
 NewPluginDialog *
 new_plugin_dialog_new (void)
 {
@@ -97,6 +146,7 @@ new_plugin_dialog_new (void)
         GtkWidget *e;
 
         dlg = g_malloc(sizeof(NewPluginDialog));
+	dlg->app = GNOME_APP (window);
 
         gtxml = glade_xml_new ("glade/plugin.glade", "Plugin New");
         dlg->gtxml = gtxml;

@@ -60,7 +60,8 @@ static GnomeUIInfo menu_main_edit[] = {
 	GNOMEUIINFO_MENU_PASTE_ITEM(paste_project,NULL),
 	GNOMEUIINFO_SEPARATOR,
 #define MENU_EDIT_CDC_POS 4
-	GNOMEUIINFO_ITEM_STOCK(N_("Clear _Daily Counter"), NULL,
+	GNOMEUIINFO_ITEM_STOCK(N_("Clear _Daily Counter"), 
+		N_("Zero out todays timer by deleting todays time logs"),
 			       menu_clear_daily_counter,
 			       GNOME_STOCK_MENU_BLANK),
 	GNOMEUIINFO_SEPARATOR,
@@ -75,10 +76,12 @@ static GnomeUIInfo menu_main_settings[] = {
 };
 
 static GnomeUIInfo menu_main_reports[] = {
-	GNOMEUIINFO_ITEM_STOCK(N_("_Journal..."), NULL,
+	GNOMEUIINFO_ITEM_STOCK(N_("_Journal..."), 
+		N_("Show the timesheet journal for this project"),
 			       edit_journal,
 			       GNOME_STOCK_MENU_BLANK),
-	GNOMEUIINFO_ITEM_STOCK(N_("_New Report..."), NULL,
+	GNOMEUIINFO_ITEM_STOCK(N_("_New Report..."), 
+		N_("Define a path to a new GTT phtml report file"),
 			       new_report,
 			       GNOME_STOCK_MENU_BLANK),
 	GNOMEUIINFO_SEPARATOR,
@@ -89,11 +92,14 @@ static GnomeUIInfo menu_main_reports[] = {
 
 static GnomeUIInfo menu_main_timer[] = {
 #define MENU_TIMER_START_POS 0
-	{GNOME_APP_UI_ITEM, N_("St_art"), NULL, menu_start_timer, NULL,
+	{GNOME_APP_UI_ITEM, N_("St_art"), 
+		N_("Start the timer running"),
+		menu_start_timer, NULL,
 		NULL, GNOME_APP_PIXMAP_STOCK, GNOME_STOCK_MENU_TIMER,
 		'A', GDK_CONTROL_MASK, NULL},
 #define MENU_TIMER_STOP_POS 1
-	{GNOME_APP_UI_ITEM, N_("Sto_p"), NULL,
+	{GNOME_APP_UI_ITEM, N_("Sto_p"), 
+		N_("Stop the timer"),
 		menu_stop_timer, NULL, NULL,
 		GNOME_APP_PIXMAP_STOCK, GNOME_STOCK_MENU_TIMER_STOP,
 		'Z', GDK_CONTROL_MASK, NULL},
@@ -179,7 +185,6 @@ menus_add_plugins (GnomeApp *app)
 	GList *node;
 	int len, i;
 
-gtt_plugin_new ("bogo","/flase/path");
 	node = gtt_plugin_get_list ();
 
 	len = g_list_length (node);
@@ -194,8 +199,8 @@ gtt_plugin_new ("bogo","/flase/path");
 		GttPlugin *plg = node->data;
 
 		plugins[i].type = GNOME_APP_UI_ITEM;
-		plugins[i].label = _(plg->name);
-		plugins[i].hint = _(plg->tooltip);
+		plugins[i].label = plg->name;
+		plugins[i].hint = plg->tooltip;
 		plugins[i].moreinfo = invoke_report;
 		plugins[i].user_data = plg->path;
 		plugins[i].unused_data = NULL;
@@ -210,7 +215,7 @@ gtt_plugin_new ("bogo","/flase/path");
 
 	/* deal with the i18n menu path ...*/
 	/* (is this right ??? or is this pre-i18n ???) */
-	path = g_strdup_printf ("%s/<Separator>", N_("Reports"));
+	path = g_strdup_printf ("%s/<Separator>", _("Reports"));
 
 	gnome_app_insert_menus (app, path, plugins);
 }

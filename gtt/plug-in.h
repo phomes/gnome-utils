@@ -37,7 +37,11 @@ GttPlugin * gtt_plugin_new (const char * name, const char * path);
 
 
 /*-------------------------------------------- */
-/* the gui parts */
+/* A really simple, stupid GUI that allows user to enter in the path
+ * name to a phtml file, and then paste it into a menu.  The idea
+ * here is to make it as easy as possible for new users to create
+ * modified/custom reports.
+ */
 
 typedef struct NewPluginDialog_s NewPluginDialog;
 
