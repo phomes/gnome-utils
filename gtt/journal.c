@@ -126,7 +126,7 @@ redraw (GttProject * prj, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
 
-	gtt_phtml_display (wig->ph, wig->filepath, wig->prj);
+	gtt_ghtml_display (wig->gh, wig->filepath, wig->prj);
 }
 
 /* ============================================================== */
@@ -407,7 +407,7 @@ do_show_report (const char * report, GttProject *prj, int is_scheme)
 	wig->filepath = g_strdup (report);
 	if (!prj)
 	{
-		gtt_ghtml_display (wig->ph, "noproject.ghtml", NULL);
+		gtt_ghtml_display (wig->gh, "noproject.ghtml", NULL);
 	} 
 	else 
 	{
@@ -476,16 +476,16 @@ void
 edit_alldata(GtkWidget *w, gpointer data)
 {
 	char * path;
-	path = resolve_path ("alldata.phtml");
-	do_show_report (path, cur_proj, 0);
+	path = resolve_path ("bigtable.ghtml");
+	do_show_report (path, cur_proj, 1);
 }
 
 void
 edit_invoice(GtkWidget *w, gpointer data)
 {
 	char * path;
-	path = resolve_path ("invoice.phtml");
-	do_show_report (path, cur_proj, 0);
+	path = resolve_path ("invoice.ghtml");
+	do_show_report (path, cur_proj, 1);
 }
 
 void

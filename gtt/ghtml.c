@@ -680,6 +680,17 @@ show_table (SCM col_list)
 	return rc;
 }
 
+static SCM
+show_invoice (SCM col_list)
+{
+	GttGhtml *ghtml = ghtml_global_hack;
+	SCM rc;
+	SCM_ASSERT ( SCM_CONSP (col_list), col_list, SCM_ARG1, "gtt-show-invoice");
+	rc = decode_scm_col_list (ghtml, col_list);
+	do_show_table (ghtml, ghtml->prj, TRUE, TRUE);
+	return rc;
+}
+
 /* ============================================================== */
 
 void
@@ -799,6 +810,7 @@ register_procs (void)
 	gh_new_procedure("gtt-show-project-desc",   project_desc,   0, 0, 0);
 	gh_new_procedure("gtt-show-basic-journal",   show_journal,   0, 0, 0);
 	gh_new_procedure("gtt-show-table",   show_table,   1, 0, 0);
+	gh_new_procedure("gtt-show-invoice",   show_table,   1, 0, 0);
 }
 
 
