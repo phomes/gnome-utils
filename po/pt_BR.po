@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.0.13\n"
-"POT-Creation-Date: 2001-10-10 11:00-0200\n"
+"POT-Creation-Date: 2001-10-13 15:03-0200\n"
 "PO-Revision-Date: 2001-10-10 11:03-02:00\n"
 "Last-Translator: Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
@@ -165,15 +165,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:810
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:809
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:808
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
 msgid "3"
 msgstr "3"
 
@@ -821,8 +821,8 @@ msgstr "Adicionar"
 msgid "Show Command"
 msgstr "Mostrar comando"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ghtml.c:94
-#: gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gtt/ghtml.c:94 gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Iniciar"
 
@@ -907,117 +907,177 @@ msgstr ""
 "Impossível entender a geometria (posição e tamanho)\n"
 " especificada na linha de comando"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:511
 msgid "Total"
 msgstr "Total"
 
-#: gtt/ctree.c:532
+#: gtt/ctree.c:513
+#, fuzzy
+msgid "Total time spent on this project."
+msgstr "Um título para este projeto"
+
+#: gtt/ctree.c:518
 #, fuzzy
 msgid "This Memo"
 msgstr "Colar Memorando"
 
-#: gtt/ctree.c:536 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:520
+msgid "Time spent under the current task memo."
+msgstr ""
+
+#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Hoje"
 
-#: gtt/ctree.c:540
+#: gtt/ctree.c:528
+#, fuzzy
+msgid "Time spent on this project today."
+msgstr "Um título para este projeto"
+
+#: gtt/ctree.c:533
 msgid "Week"
+msgstr "Semana"
+
+#: gtt/ctree.c:535
+msgid "Time spent on this project this week."
 msgstr ""
 
-#: gtt/ctree.c:544
-#, fuzzy
+#: gtt/ctree.c:541
 msgid "Month"
-msgstr "Monitor"
+msgstr "Mês"
 
-#: gtt/ctree.c:548
-#, fuzzy
+#: gtt/ctree.c:543
+msgid "Time spent on this project this month."
+msgstr ""
+
+#: gtt/ctree.c:549
 msgid "Year"
-msgstr "Procura"
+msgstr "Ano"
 
-#: gtt/ctree.c:552 gtt/menucmd.c:144
+#: gtt/ctree.c:551
+msgid "Time spent on this project this year."
+msgstr ""
+
+#: gtt/ctree.c:557
+#, fuzzy
+msgid "Title"
+msgstr "Arquivo"
+
+#: gtt/ctree.c:558 gtt/menucmd.c:144
 msgid "Project Title"
 msgstr "Título do Projeto"
 
-#: gtt/ctree.c:556 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
 msgid "Description"
 msgstr "Descrição"
 
-#: gtt/ctree.c:560
-#, fuzzy
+#: gtt/ctree.c:569
 msgid "Task"
-msgstr "Nova tarefa"
+msgstr "Tarefa"
 
-#: gtt/ctree.c:564
-msgid "Estimated Start Date"
+#: gtt/ctree.c:571
+#, fuzzy
+msgid "The memo for the current task"
+msgstr "Mostrar o tempo gasto na tarefa atual"
+
+#: gtt/ctree.c:578
+#, fuzzy
+msgid "Estimated Project Start Date"
+msgstr "Data de início estimada"
+
+#: gtt/ctree.c:583
+#, fuzzy
+msgid "End"
+msgstr "Habilitado"
+
+#: gtt/ctree.c:585
+#, fuzzy
+msgid "Estimated Project Completion Date"
+msgstr "Data de início estimada"
+
+#: gtt/ctree.c:590
+msgid "Due"
 msgstr ""
 
-#: gtt/ctree.c:568
-msgid "Estimated End Date"
+#: gtt/ctree.c:592
+msgid ""
+"Due Date: the date by which the project absolutely must be completed by."
 msgstr ""
 
-#: gtt/ctree.c:572
-#, fuzzy
-msgid "Date Due"
-msgstr "Data: "
-
-#: gtt/ctree.c:576
-#, fuzzy
-msgid "Sizing"
+#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+msgid "Size"
 msgstr "Tamanho"
 
-#: gtt/ctree.c:580 gtt/glade/project_properties.glade.h:5
-#, no-c-format
-msgid "% Complete"
+#: gtt/ctree.c:601
+msgid "Sizing: How much work it will take to finish this project."
 msgstr ""
 
-#: gtt/ctree.c:584
-msgid "Urgency"
+#: gtt/ctree.c:607
+#, fuzzy
+msgid "Done"
+msgstr "Nenhum"
+
+#: gtt/ctree.c:609
+msgid "Percent Complete: How much of this project has been finished till now."
 msgstr ""
 
-#: gtt/ctree.c:588
-msgid "Importance"
+#: gtt/ctree.c:616
+msgid "U"
 msgstr ""
 
-#: gtt/ctree.c:592 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:618
+msgid "Urgency: Does this project need to be done soon, done quickly?"
+msgstr ""
+
+#: gtt/ctree.c:624
+msgid "Imp"
+msgstr ""
+
+#: gtt/ctree.c:626
+msgid "Importance: How important is this project?"
+msgstr ""
+
+#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
 msgstr "Status"
 
-#: gtt/ctree.c:820 gtt/glade/project_properties.glade.h:25
+#: gtt/ctree.c:634
 #, fuzzy
+msgid "The current status of this project."
+msgstr "Mudar a tarefa atual deste projeto"
+
+#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
 msgid "Low"
-msgstr "Logview"
+msgstr "Baixa"
 
-#: gtt/ctree.c:821
+#: gtt/ctree.c:970
 msgid "Med"
-msgstr ""
+msgstr "Média"
 
-#: gtt/ctree.c:822 gtt/glade/project_properties.glade.h:15
-#, fuzzy
+#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
 msgid "High"
-msgstr "Direita"
+msgstr "Alta"
 
-#: gtt/ctree.c:831 gtt/glade/project_properties.glade.h:29
-#, fuzzy
+#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
 msgid "Not Started"
-msgstr "Iniciar"
+msgstr "Não iniciado"
 
-#: gtt/ctree.c:832 gtt/glade/project_properties.glade.h:21
-#, fuzzy
+#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
 msgid "In Progress"
-msgstr "Processo:"
+msgstr "Em andamento"
 
-#: gtt/ctree.c:833 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
 msgstr ""
 
-#: gtt/ctree.c:834 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
-#: gtt/ctree.c:835 gtt/glade/project_properties.glade.h:10
+#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
-msgstr ""
+msgstr "Finalizado"
 
 #: gtt/file-io.c:373
 msgid "project %t started"
@@ -1092,7 +1152,7 @@ msgstr "Cobrável"
 
 #: gtt/ghtml.c:386 gtt/glade/task_properties.glade.h:20
 msgid "Paid"
-msgstr ""
+msgstr "Pago"
 
 #: gtt/ghtml.c:399 gtt/glade/task_properties.glade.h:16
 msgid "Not Billable"
@@ -1143,7 +1203,7 @@ msgstr "(nulo)"
 msgid "Unkown Error"
 msgstr "Erro Desconhecido"
 
-#: gtt/journal.c:168 gtt/plug-in.c:89
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1198,7 +1258,7 @@ msgstr "Impossível criar arquivo pid!"
 
 #: gtt/main.c:220
 msgid "Do you want to continue?"
-msgstr ""
+msgstr "Deseja continuar?"
 
 #: gtt/main.c:223 gtt/main.c:282
 msgid "Error"
@@ -1206,7 +1266,7 @@ msgstr "Erro"
 
 #: gtt/main.c:279
 msgid "Shall I setup a new configuration?"
-msgstr ""
+msgstr "Deseja que uma nova configuração seja criada?"
 
 #: gtt/main.c:445
 msgid "Specify geometry"
@@ -1237,9 +1297,8 @@ msgid "Reload Configuration File"
 msgstr "Recarregar arquivo de configuração"
 
 #: gtt/menucmd.c:221
-#, fuzzy
 msgid "Do you really want to reload the configuration file?"
-msgstr "Impossível ler o arquivo de configuração"
+msgstr "Deseja realmente recarregar o arquivo de configuração?"
 
 #: gtt/menucmd.c:256
 #, c-format
@@ -1287,14 +1346,12 @@ msgid "Show the timesheet journal for this project"
 msgstr ""
 
 #: gtt/menus.c:72 gtt/menus.c:160
-#, fuzzy
 msgid "New _Task..."
-msgstr "Nova tarefa"
+msgstr "Nova _tarefa"
 
 #: gtt/menus.c:73 gtt/menus.c:161
-#, fuzzy
 msgid "Change the current task for this project"
-msgstr "Um titulo para este projeto"
+msgstr "Mudar a tarefa atual deste projeto"
 
 #: gtt/menus.c:91
 msgid "_All Journal..."
@@ -1362,7 +1419,7 @@ msgstr "Con_tador"
 msgid "Reports"
 msgstr "Relatórios"
 
-#: gtt/plug-in.c:120
+#: gtt/plug-in.c:121
 msgid "Reports/<Separator>"
 msgstr "Relatórios/<Separador>"
 
@@ -1456,9 +1513,8 @@ msgid "Calendar"
 msgstr "Calendário"
 
 #: gtt/toolbar.c:212
-#, fuzzy
 msgid "View Calendar"
-msgstr "Calendário"
+msgstr "Ver calendário"
 
 #: gtt/toolbar.c:225
 msgid "Prefs"
@@ -1621,7 +1677,7 @@ msgstr "Mostrar"
 #: gtt/glade/prefs.glade.h:2
 msgid "Enter a shell command to be executed when no projects are active."
 msgstr ""
-"Digite uma linha de comando para ser executada quando nenhum comando estiver "
+"Digite uma linha de comando para ser executada quando nenhum projeto estiver "
 "ativo."
 
 #: gtt/glade/prefs.glade.h:3
@@ -1657,9 +1713,8 @@ msgstr ""
 "projeto, %d para a descrição, etc. Veja o manual para mais opções."
 
 #: gtt/glade/prefs.glade.h:10
-#, fuzzy
 msgid "Fields"
-msgstr "Arquivo"
+msgstr "Campos"
 
 #: gtt/glade/prefs.glade.h:11
 msgid "Filename:"
@@ -1704,49 +1759,45 @@ msgstr "Comandos do shell"
 
 #: gtt/glade/prefs.glade.h:21
 msgid "Show Current Task"
-msgstr ""
+msgstr "Mostrar tarefa atual"
 
 #: gtt/glade/prefs.glade.h:22
 msgid "Show Estimated Effort"
-msgstr ""
+msgstr "Mostrar esforço estimado"
 
 #: gtt/glade/prefs.glade.h:23
 #, fuzzy
 msgid "Show Percent Complete"
-msgstr "Mostrar 'Propriedades'"
+msgstr "Mostrar porcentagem do progresso"
 
 #: gtt/glade/prefs.glade.h:24
 msgid "Show Planned Project End Date"
-msgstr ""
+msgstr "Mostrar a data de término planejada"
 
 #: gtt/glade/prefs.glade.h:25
 msgid "Show Planned Project Start Date"
-msgstr ""
+msgstr "Mostrar a data de início planejada"
 
 #: gtt/glade/prefs.glade.h:26
-#, fuzzy
 msgid "Show Project Description"
-msgstr "Descrição do projeto:"
+msgstr "Mostrar descrição do projeto"
 
 #: gtt/glade/prefs.glade.h:27
 #, fuzzy
 msgid "Show Project Due Date"
-msgstr "Mostrar sub-projetos"
+msgstr "Mostrar data de cobrança do projeto"
 
 #: gtt/glade/prefs.glade.h:28
-#, fuzzy
 msgid "Show Project Importance"
-msgstr "Comando ao alternar projeto:"
+msgstr "Mostrar a importância do projeto"
 
 #: gtt/glade/prefs.glade.h:29
-#, fuzzy
 msgid "Show Project Status"
-msgstr "Mostrar sub-projetos"
+msgstr "Mostrar status do projeto"
 
 #: gtt/glade/prefs.glade.h:30
-#, fuzzy
 msgid "Show Project Urgency"
-msgstr "Mostrar sub-projetos"
+msgstr "Mostrar urgência do projeto"
 
 #: gtt/glade/prefs.glade.h:31
 msgid "Show Seconds"
@@ -1766,25 +1817,23 @@ msgstr "Mostrar cabeçalho de tabela"
 
 #: gtt/glade/prefs.glade.h:35
 msgid "Show Time For The Current Task"
-msgstr ""
+msgstr "Mostrar o tempo gasto na tarefa atual"
 
 #: gtt/glade/prefs.glade.h:36
 msgid "Show Time This Month"
-msgstr ""
+msgstr "Mostrar o tempo gasto neste mês"
 
 #: gtt/glade/prefs.glade.h:37
 msgid "Show Time This Week"
-msgstr ""
+msgstr "Mostrar o tempo gasto nesta semana"
 
 #: gtt/glade/prefs.glade.h:38
-#, fuzzy
 msgid "Show Time This Year"
-msgstr "Mostrar 'Contador'"
+msgstr "Mostrar o tempo gasto neste ano"
 
 #: gtt/glade/prefs.glade.h:39
-#, fuzzy
 msgid "Show Time Today"
-msgstr "Mostrar 'Contador'"
+msgstr "Mostrar o tempo gasto hoje"
 
 #: gtt/glade/prefs.glade.h:40
 msgid "Show Toolbar Icons"
@@ -1796,12 +1845,11 @@ msgstr "Mostrar textos na barra de ferramentas"
 
 #: gtt/glade/prefs.glade.h:42
 msgid "Show Tooltips"
-msgstr "Mostrar dicas"
+msgstr "Mostrar dicas flutuantes"
 
 #: gtt/glade/prefs.glade.h:43
-#, fuzzy
 msgid "Show Total Time Ever"
-msgstr "Mostrar cabeçalho de tabela"
+msgstr "Mostrar o tempo gasto total"
 
 #: gtt/glade/prefs.glade.h:44
 msgid "Show `Cut', `Copy', `Paste'"
@@ -1844,6 +1892,8 @@ msgid ""
 "Show the 'szing', that is, the estimated amount of work that it will take to "
 "perform this project."
 msgstr ""
+"Mostrar o 'tamanho', isto é, a carga de trabalho estimada para executar este "
+"projeto."
 
 #: gtt/glade/prefs.glade.h:54
 msgid "Switch Project Command:"
@@ -1878,26 +1928,29 @@ msgid "Use Logfile"
 msgstr "Usar arquivo de registro"
 
 #: gtt/glade/prefs.glade.h:60
-#, fuzzy
 msgid "View Project Fields"
-msgstr "Ver propriedades"
+msgstr "Ver campos do projeto"
 
 #: gtt/glade/project_properties.glade.h:1
 msgid "        "
 msgstr "        "
 
 #: gtt/glade/project_properties.glade.h:2
-#, fuzzy
 msgid "            "
-msgstr "        "
+msgstr "            "
 
 #: gtt/glade/project_properties.glade.h:3
 msgid "                        "
 msgstr "                        "
 
+#: gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
+msgstr "% completo"
+
 #: gtt/glade/project_properties.glade.h:6
 msgid "A title to assign to this project"
-msgstr "Um titulo para este projeto"
+msgstr "Um título para este projeto"
 
 #: gtt/glade/project_properties.glade.h:7
 #, fuzzy
@@ -1924,16 +1977,16 @@ msgstr "Taxa de hora extra dupla:"
 #: gtt/glade/project_properties.glade.h:13
 #, fuzzy
 msgid "Due Date:"
-msgstr "Data:"
+msgstr "Data de cobrança:"
 
 #: gtt/glade/project_properties.glade.h:14
-#, fuzzy
 msgid "Flat Fee:"
-msgstr "Taxa básica:"
+msgstr "Preço normal:"
 
 #: gtt/glade/project_properties.glade.h:16
+#, fuzzy
 msgid "Hours to Finish:"
-msgstr ""
+msgstr "Horas para acabar:"
 
 #: gtt/glade/project_properties.glade.h:17
 msgid ""
@@ -1956,12 +2009,11 @@ msgid ""
 "the fee here."
 msgstr ""
 "Se este projeto é cobrado por um certo preço (não importa quanto), digite a "
-"taxa aqui."
+"quantia aqui."
 
 #: gtt/glade/project_properties.glade.h:20
-#, fuzzy
 msgid "Importance:"
-msgstr "Tolerância :"
+msgstr "Importância:"
 
 #: gtt/glade/project_properties.glade.h:22
 msgid ""
@@ -1980,18 +2032,16 @@ msgid "Intervals smaller than this will be discarded"
 msgstr "Intervalos menores que este serão descartados"
 
 #: gtt/glade/project_properties.glade.h:26
-#, fuzzy
 msgid "Medium"
-msgstr "Memorando"
+msgstr "Médio"
 
 #: gtt/glade/project_properties.glade.h:27
 msgid "Minimum Interval: "
 msgstr "Intervalo mínimo: "
 
 #: gtt/glade/project_properties.glade.h:28
-#, fuzzy
 msgid "Not Set"
-msgstr "Notas:"
+msgstr "Não definido"
 
 #: gtt/glade/project_properties.glade.h:30
 #: gtt/glade/task_properties.glade.h:17
@@ -2004,18 +2054,18 @@ msgid "Overtime Rate:"
 msgstr "Taxa de hora extra:"
 
 #: gtt/glade/project_properties.glade.h:33
+#, fuzzy
 msgid "Planned Finish:"
-msgstr ""
+msgstr "Término planejado:"
 
 #: gtt/glade/project_properties.glade.h:34
 #, fuzzy
 msgid "Planned Start:"
-msgstr "Entrada de início:"
+msgstr "Início planejado:"
 
 #: gtt/glade/project_properties.glade.h:35
-#, fuzzy
 msgid "Planning"
-msgstr "Aviso"
+msgstr "Planejamento"
 
 #: gtt/glade/project_properties.glade.h:36
 msgid "Project"
@@ -2038,9 +2088,8 @@ msgid "Regular Rate:"
 msgstr "Taxa padrão:"
 
 #: gtt/glade/project_properties.glade.h:41
-#, fuzzy
 msgid "Status:"
-msgstr "Status"
+msgstr "Status:"
 
 #: gtt/glade/project_properties.glade.h:42
 msgid "The dollars per hour charged for overtime work on this project."
@@ -2052,7 +2101,7 @@ msgstr "O preço por hora normalmente cobrado neste trabalho."
 
 #: gtt/glade/project_properties.glade.h:44
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
-msgstr "A taxa de hora extra dupla (hora extra em domingos, etc.)"
+msgstr "O preço por hora extra dupla (hora extra em domingos, etc.)"
 
 #: gtt/glade/project_properties.glade.h:45
 msgid "Time below which an interval is merged with its neighbors"
@@ -2060,12 +2109,11 @@ msgstr "Duração abaixo da qual um intervalo é mesclado com seus vizinhos"
 
 #: gtt/glade/project_properties.glade.h:46
 msgid "Urgency:"
-msgstr ""
+msgstr "Urgência:"
 
 #: gtt/glade/project_properties.glade.h:47
-#, fuzzy
 msgid "What is the status of this project?"
-msgstr "Um titulo para este projeto"
+msgstr "Qual o status deste projeto?"
 
 #: gtt/glade/project_properties.glade.h:48
 msgid "a short description that will be printed on the invoice."
@@ -2198,9 +2246,10 @@ msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:42
+#, fuzzy
 msgid ""
-"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
-"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"This  program  is  part of  the  GNOME  project. Logview comes with "
+"ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
@@ -2631,7 +2680,7 @@ msgstr "Descrição:"
 #. Translators: do not include year, it would be bogus
 #: logview/zoom.c:212
 msgid "%B %e %X"
-msgstr ""
+msgstr "%B %e %X"
 
 #: logview/desc_db.c:37
 #, c-format
@@ -3370,7 +3419,7 @@ msgid ""
 "Unable to display compressed file.\n"
 "zcat not found in your path."
 msgstr ""
-"Não pude exibir o arquivo compactado.\n"
+"Impossível exibir o arquivo compactado.\n"
 "zcat não foi encontrado no seu ambiente."
 
 #: mini-utils/gless/gless.c:548
@@ -3706,10 +3755,6 @@ msgstr "Memória Livre:"
 #: mini-utils/guname/info.c:60
 msgid "Device"
 msgstr "Dispositivo"
-
-#: mini-utils/guname/info.c:61
-msgid "Size"
-msgstr "Tamanho"
 
 #: mini-utils/guname/info.c:62
 msgid "Used space"
@@ -4079,9 +4124,9 @@ msgid ""
 "\n"
 "Please confirm that it is not write-protected."
 msgstr ""
-"ENão foi possível gravar no disquete.\n"
+"EImpossível gravar no disquete.\n"
 "\n"
-"Por favor verifique se ele está protegido contra gravação."
+"Verifique se ele está protegido contra gravação."
 
 #: gfloppy/src/fdformat.c:103 gfloppy/src/fdformat.c:178
 #, c-format
@@ -4849,6 +4894,23 @@ msgstr "Gerenciador do cron"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Gerenciador do crontab"
+
+#~ msgid "Estimated End Date"
+#~ msgstr "Data de término estimada"
+
+#, fuzzy
+#~ msgid "Date Due"
+#~ msgstr "Data da dívida"
+
+#, fuzzy
+#~ msgid "Sizing"
+#~ msgstr "Tamanho"
+
+#~ msgid "Urgency"
+#~ msgstr "Urgência"
+
+#~ msgid "Importance"
+#~ msgstr "Importância"
 
 #~ msgid ""
 #~ "An error occured while reading the configuration file.\n"
