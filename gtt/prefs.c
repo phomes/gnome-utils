@@ -39,6 +39,11 @@ int config_show_secs = 0;
 int config_show_statusbar = 1;
 int config_show_clist_titles = 1;
 int config_show_subprojects = 1;
+int config_show_title_ever = 1;
+int config_show_title_year = 0;
+int config_show_title_month = 0;
+int config_show_title_week = 0;
+int config_show_title_day = 1;
 int config_show_title_desc = 1;
 int config_show_title_task = 1;
 
