@@ -51,7 +51,7 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 		
 		p = prn;
 		p = stpcpy (p, "<tr><td colspan=4>"
-			"<a href=\"gtt:memo:");
+			"<a href=\"gtt:task:");
 		p += sprintf (p, "%p\">", tsk);
 
 		buf = gtt_task_get_memo(tsk);

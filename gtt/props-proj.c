@@ -118,7 +118,10 @@ prop_dialog_set_project(GttProject *proj)
 
 	if (!dlg) return;
 
-	if (!proj) {
+	if (!proj) 
+	{
+		/* We null these out, because old values may be left
+		 * over from an earlier project */
 		dlg->proj = NULL;
 		gtk_entry_set_text(dlg->title, "");
 		gtk_entry_set_text(dlg->desc, "");
@@ -166,7 +169,8 @@ prop_dialog_set_project(GttProject *proj)
 
 /* ============================================================== */
 
-void prop_dialog(GttProject *proj)
+void 
+prop_dialog(GttProject *proj)
 {
 	GladeXML *gtxml;
 	GtkWidget *e;
