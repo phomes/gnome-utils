@@ -1,15 +1,15 @@
-# Norwegian translation of gfloppy (bokmål dialect).
-# Copyright (C) 1999-2001 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2001.
+# Norwegian translation of gnome-utils (bokmål dialect).
+# Copyright © 1999-2003 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 1.4.0.1\n"
+"Project-Id-Version: gnome-utils 2.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-10-16 14:58+0200\n"
-"PO-Revision-Date: 2003-08-31 18:01+0200\n"
+"POT-Creation-Date: 2003-10-19 12:48+0200\n"
+"PO-Revision-Date: 2003-10-19 12:55+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
-"Language-Team: Norwegian <no@li.org>\n"
+"Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
@@ -745,7 +745,7 @@ msgstr "ext2 for linux' eget filsystem eller fat for DOS-filsystemet."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:790
 #: gsearchtool/gsearchtool.c:937 gsearchtool/gsearchtool.c:1281
-#: gsearchtool/gsearchtool.c:2254 gsearchtool/gsearchtool.c:2274
+#: gsearchtool/gsearchtool.c:2255 gsearchtool/gsearchtool.c:2275
 msgid "Search for Files"
 msgstr "Søk etter filer"
 
@@ -1000,7 +1000,7 @@ msgstr "Klikk for å starte søket"
 msgid "Click to Stop the search"
 msgstr "Klikk for å stoppe søket"
 
-#: gsearchtool/gsearchtool.c:2270
+#: gsearchtool/gsearchtool.c:2271
 msgid "Cannot initialize bonobo."
 msgstr "Kan ikke initiere bonobo."
 
@@ -1020,58 +1020,58 @@ msgstr "Lagre re_sultater som..."
 msgid "Could not open help document"
 msgstr "Kunne ikke åpne hjelpdokumentet"
 
-#: gsearchtool/gsearchtool-callbacks.c:307
+#: gsearchtool/gsearchtool-callbacks.c:308
 #, c-format
 msgid "Open %d documents?"
 msgstr "Åpne %d dokumenter?"
 
-#: gsearchtool/gsearchtool-callbacks.c:308
+#: gsearchtool/gsearchtool-callbacks.c:309
 #, c-format
 msgid "This will open %d separate documents. Are you sure you want to do this?"
 msgstr ""
 "Dette vil åpne %d separate dokumenter. Er du sikker på at du vil gjøre dette?"
 
-#: gsearchtool/gsearchtool-callbacks.c:363
-#: gsearchtool/gsearchtool-callbacks.c:648
+#: gsearchtool/gsearchtool-callbacks.c:364
+#: gsearchtool/gsearchtool-callbacks.c:649
 #, c-format
 msgid "Could not open document \"%s\""
 msgstr "Kunne ikke åpne dokumentet «%s»"
 
-#: gsearchtool/gsearchtool-callbacks.c:365
-#: gsearchtool/gsearchtool-callbacks.c:649
+#: gsearchtool/gsearchtool-callbacks.c:366
+#: gsearchtool/gsearchtool-callbacks.c:650
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Du har ikke installert visningsprogram som kan vise dokumentet."
 
-#: gsearchtool/gsearchtool-callbacks.c:411
+#: gsearchtool/gsearchtool-callbacks.c:412
 #, c-format
 msgid "Open %d folders?"
 msgstr "Åpne %d mapper?"
 
-#: gsearchtool/gsearchtool-callbacks.c:412
+#: gsearchtool/gsearchtool-callbacks.c:413
 #, c-format
 msgid "This will open %d separate folders. Are you sure you want to do this?"
 msgstr ""
 "Dette vil åpne %d separate mapper. Er du sikker på at du vil gjøre dette?"
 
-#: gsearchtool/gsearchtool-callbacks.c:453
+#: gsearchtool/gsearchtool-callbacks.c:454
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Kan ikke åpne mappe «%s»"
 
-#: gsearchtool/gsearchtool-callbacks.c:459
+#: gsearchtool/gsearchtool-callbacks.c:460
 msgid "The nautilus file manager is not running."
 msgstr "Filhåndtereren Nautilus kjører ikke."
 
-#: gsearchtool/gsearchtool-callbacks.c:831
+#: gsearchtool/gsearchtool-callbacks.c:832
 msgid "Save Search Results As..."
 msgstr "Lagre søkeresultater som..."
 
-#: gsearchtool/gsearchtool-callbacks.c:879
+#: gsearchtool/gsearchtool-callbacks.c:880
 #, c-format
 msgid "Could not save document \"\" to %s"
 msgstr "Kunne ikke lagre dokument «» til %s"
 
-#: gsearchtool/gsearchtool-callbacks.c:882
+#: gsearchtool/gsearchtool-callbacks.c:883
 msgid ""
 "You did not select a document name or the name selected was a folder.  The "
 "document is not saved."
@@ -1079,21 +1079,21 @@ msgstr ""
 "Du valgte ikke et dokumentnavn eller navnet du valgte var en mappe. "
 "Dokumentet ble ikke lagret."
 
-#: gsearchtool/gsearchtool-callbacks.c:905
+#: gsearchtool/gsearchtool-callbacks.c:906
 #, c-format
 msgid "The contents of the file \"%s\" will be lost."
 msgstr "Innholdet i filen «%s» vil gå tapt."
 
-#: gsearchtool/gsearchtool-callbacks.c:910
+#: gsearchtool/gsearchtool-callbacks.c:911
 msgid "Overwrite an existing file?"
 msgstr "Overskriv eksisterende fil?"
 
-#: gsearchtool/gsearchtool-callbacks.c:953
+#: gsearchtool/gsearchtool-callbacks.c:954
 #, c-format
 msgid "Could not save document \"%s\" to %s"
 msgstr "Kunne ikke lagre dokument «%s» til %s"
 
-#: gsearchtool/gsearchtool-callbacks.c:957
+#: gsearchtool/gsearchtool-callbacks.c:958
 msgid ""
 "You may not have write permissions to the document.  The document is not "
 "saved."
@@ -1109,17 +1109,22 @@ msgstr ""
 "GConf-feil:\n"
 "  %s"
 
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
 #: gsearchtool/gsearchtool-support.c:325
 msgid "today at %-I:%M %p"
-msgstr "i dag %-I:%M %p"
+msgstr "i dag %-H:%M"
 
 #: gsearchtool/gsearchtool-support.c:327
 msgid "yesterday at %-I:%M %p"
-msgstr "i går %-I:%M %p"
+msgstr "i går %-H:%M"
 
 #: gsearchtool/gsearchtool-support.c:329 gsearchtool/gsearchtool-support.c:331
 msgid "%m/%-d/%y, %-I:%M %p"
-msgstr "%-d/%m/%y, %-I:%M %p"
+msgstr "%-d.%m.%y, %-H:%M"
 
 #: gsearchtool/gsearchtool-support.c:456
 msgid "link (broken)"
