@@ -461,12 +461,10 @@ ctree_update_column_visibility (ProjTreeWindow *ptw)
 		case DESC_COL:
 		gtk_clist_set_column_visibility (GTK_CLIST(ptw->ctree), i, 
 				config_show_title_desc);
-printf ("duuude desc vis=%d\n", config_show_title_desc);
 			break;
 		case TASK_COL:
 		gtk_clist_set_column_visibility (GTK_CLIST(ptw->ctree), i, 
 				config_show_title_task);
-printf ("duuude task vis=%d\n", config_show_title_task);
 			break;
 		case NULL_COL:
 			break;

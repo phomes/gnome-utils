@@ -324,6 +324,7 @@ gtt_load_config (const char *fname)
 	config_show_statusbar = gnome_config_get_bool(GTT"Display/ShowStatusbar=true");
 	config_show_title_desc = gnome_config_get_bool(GTT"Display/ShowDesc=true");
 	config_show_title_task = gnome_config_get_bool(GTT"Display/ShowTask=true");
+	ctree_update_column_visibility (global_ptw);
 
 
 	/* ------------ */
