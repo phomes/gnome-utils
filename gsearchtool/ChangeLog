@@ -1,6 +1,12 @@
+2005-03-13  Dennis Cranston <dennis_cranston@yahoo.com>
+
+	* gsearchtool-callbacks.c: (quit_application), (click_stop_cb):
+	Fix bug #170163, "Build failure with gcc 2.x".  Patch submitted 
+	by jensgr@gmx.net (Jens Granseuer).
+	
 2005-03-12  Dennis Cranston <dennis_cranston@yahoo.com>
 
-	* gserachtool-support.c: After previous commit, we don't need 
+	* gsearchtool-support.c: After previous commit, we don't need 
 	to include <bonobo-activation/bonobo-activation.h>.
 	
 2005-03-12  Dennis Cranston <dennis_cranston@yahoo.com>

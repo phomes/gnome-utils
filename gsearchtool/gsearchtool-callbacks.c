@@ -54,10 +54,11 @@ static void
 quit_application (GSearchCommandDetails * command_details)
 {
 	if (command_details->command_status == RUNNING) {
-		command_details->command_status = MAKE_IT_QUIT;
 #ifdef HAVE_GETPGID
 		pid_t pgid;
-		
+#endif
+		command_details->command_status = MAKE_IT_QUIT;
+#ifdef HAVE_GETPGID
 		pgid = getpgid (command_details->command_pid);
 		
 		if ((pgid > 1) && (pgid != getpid ())) {
@@ -124,11 +125,12 @@ click_stop_cb (GtkWidget * widget,
 	GSearchWindow * gsearch = data;
 
 	if (gsearch->command_details->command_status == RUNNING) {
+#ifdef HAVE_GETPGID
+		pid_t pgid;
+#endif
 		gtk_widget_set_sensitive (gsearch->stop_button, FALSE);
 		gsearch->command_details->command_status = MAKE_IT_STOP;
 #ifdef HAVE_GETPGID
-		pid_t pgid;
-		
 		pgid = getpgid (gsearch->command_details->command_pid);
 		
 		if ((pgid > 1) && (pgid != getpid ())) {
