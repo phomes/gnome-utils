@@ -327,8 +327,23 @@ gtt_load_config (const char *fname)
 	config_show_clist_titles = gnome_config_get_bool(GTT"Display/ShowTableHeader=false");
 	config_show_subprojects = gnome_config_get_bool(GTT"Display/ShowSubProjects=true");
 	config_show_statusbar = gnome_config_get_bool(GTT"Display/ShowStatusbar=true");
+
+	config_show_title_ever = gnome_config_get_bool(GTT"Display/ShowTimeEver=true");
+	config_show_title_day = gnome_config_get_bool(GTT"Display/ShowTimeDay=true");
+	config_show_title_week = gnome_config_get_bool(GTT"Display/ShowTimeWeek=false");
+	config_show_title_month = gnome_config_get_bool(GTT"Display/ShowTimeMonth=false");
+	config_show_title_year = gnome_config_get_bool(GTT"Display/ShowTimeYear=false");
+	config_show_title_current = gnome_config_get_bool(GTT"Display/ShowTimeCurrent=false");
 	config_show_title_desc = gnome_config_get_bool(GTT"Display/ShowDesc=true");
 	config_show_title_task = gnome_config_get_bool(GTT"Display/ShowTask=true");
+	config_show_title_estimated_start = gnome_config_get_bool(GTT"Display/ShowEstimatedStart=false");
+	config_show_title_estimated_end = gnome_config_get_bool(GTT"Display/ShowEstimatedEnd=false");
+	config_show_title_due_date = gnome_config_get_bool(GTT"Display/ShowDueDate=false");
+	config_show_title_sizing = gnome_config_get_bool(GTT"Display/ShowSizing=false");
+	config_show_title_percent_complete = gnome_config_get_bool(GTT"Display/ShowPercentComplete=false");
+	config_show_title_urgency = gnome_config_get_bool(GTT"Display/ShowUrgency=true");
+	config_show_title_importance = gnome_config_get_bool(GTT"Display/ShowImportance=true");
+	config_show_title_status = gnome_config_get_bool(GTT"Display/ShowStatus=false");
 	ctree_update_column_visibility (global_ptw);
 
 
@@ -532,8 +547,22 @@ gtt_save_config(const char *fname)
 	gnome_config_set_bool(GTT"Display/ShowStatusbar", config_show_statusbar);
 	gnome_config_set_bool(GTT"Display/ShowSubProjects", config_show_subprojects);
 	gnome_config_set_bool(GTT"Display/ShowTableHeader", config_show_clist_titles);
+	gnome_config_set_bool(GTT"Display/ShowTimeCurrent", config_show_title_current);
+	gnome_config_set_bool(GTT"Display/ShowTimeDay", config_show_title_day);
+	gnome_config_set_bool(GTT"Display/ShowTimeWeek", config_show_title_week);
+	gnome_config_set_bool(GTT"Display/ShowTimeMonth", config_show_title_month);
+	gnome_config_set_bool(GTT"Display/ShowTimeYear", config_show_title_year);
+	gnome_config_set_bool(GTT"Display/ShowTimeEver", config_show_title_ever);
 	gnome_config_set_bool(GTT"Display/ShowDesc", config_show_title_desc);
 	gnome_config_set_bool(GTT"Display/ShowTask", config_show_title_task);
+	gnome_config_set_bool(GTT"Display/ShowEstimatedStart", config_show_title_estimated_start);
+	gnome_config_set_bool(GTT"Display/ShowEstimatedEnd", config_show_title_estimated_end);
+	gnome_config_set_bool(GTT"Display/ShowDueDate", config_show_title_due_date);
+	gnome_config_set_bool(GTT"Display/ShowSizing", config_show_title_sizing);
+	gnome_config_set_bool(GTT"Display/ShowPercentComplete", config_show_title_percent_complete);
+	gnome_config_set_bool(GTT"Display/ShowUrgency", config_show_title_urgency);
+	gnome_config_set_bool(GTT"Display/ShowImportance", config_show_title_importance);
+	gnome_config_set_bool(GTT"Display/ShowStatus", config_show_title_status);
 
 	/* ------------- */
 	gnome_config_set_bool(GTT"Toolbar/ShowIcons", config_show_tb_icons);

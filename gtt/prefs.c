@@ -39,8 +39,22 @@ int config_show_secs = 0;
 int config_show_statusbar = 1;
 int config_show_clist_titles = 1;
 int config_show_subprojects = 1;
+int config_show_title_ever = 1;
+int config_show_title_year = 0;
+int config_show_title_month = 0;
+int config_show_title_week = 0;
+int config_show_title_day = 1;
+int config_show_title_current = 0;
 int config_show_title_desc = 1;
 int config_show_title_task = 1;
+int config_show_title_estimated_start = 0;
+int config_show_title_estimated_end = 0;
+int config_show_title_due_date = 0;
+int config_show_title_sizing = 0;
+int config_show_title_percent_complete = 0;
+int config_show_title_urgency = 1;
+int config_show_title_importance = 1;
+int config_show_title_status = 0;
 
 int config_show_tb_icons = 1;
 int config_show_tb_texts = 1;
@@ -69,11 +83,26 @@ typedef struct _PrefsDialog
 	GladeXML *gtxml;
 	GnomePropertyBox *dlg;
 	GtkCheckButton *show_secs;
-	GtkCheckButton *show_status_bar;
+	GtkCheckButton *show_statusbar;
 	GtkCheckButton *show_clist_titles;
 	GtkCheckButton *show_subprojects;
-	GtkCheckButton *show_desc;
-	GtkCheckButton *show_task;
+
+	GtkCheckButton *show_title_importance;
+	GtkCheckButton *show_title_urgency;
+	GtkCheckButton *show_title_status;
+	GtkCheckButton *show_title_ever;
+	GtkCheckButton *show_title_year;
+	GtkCheckButton *show_title_month;
+	GtkCheckButton *show_title_week;
+	GtkCheckButton *show_title_day;
+	GtkCheckButton *show_title_current;
+	GtkCheckButton *show_title_desc;
+	GtkCheckButton *show_title_task;
+	GtkCheckButton *show_title_estimated_start;
+	GtkCheckButton *show_title_estimated_end;
+	GtkCheckButton *show_title_due_date;
+	GtkCheckButton *show_title_sizing;
+	GtkCheckButton *show_title_percent_complete;
 
 	GtkCheckButton *logfileuse;
 	GtkWidget      *logfilename_l;
@@ -118,6 +147,14 @@ typedef struct _PrefsDialog
 	} 					\
 }
 
+#define SHOW_CHECK(TOK) {					\
+	int state = GTK_TOGGLE_BUTTON(odlg->show_##TOK)->active;\
+	if (config_show_##TOK != state) {			\
+		change = 1;					\
+		config_show_##TOK = state;			\
+	}							\
+}
+
 static void 
 prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 {
@@ -126,6 +163,32 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 	if (0 == page)
 	{
 		int change = 0;
+
+		SHOW_CHECK (title_importance);
+		SHOW_CHECK (title_urgency);
+		SHOW_CHECK (title_status);
+		SHOW_CHECK (title_ever);
+		SHOW_CHECK (title_year);
+		SHOW_CHECK (title_month);
+		SHOW_CHECK (title_week);
+		SHOW_CHECK (title_day);
+		SHOW_CHECK (title_current);
+		SHOW_CHECK (title_desc);
+		SHOW_CHECK (title_task);
+		SHOW_CHECK (title_estimated_start);
+		SHOW_CHECK (title_estimated_end);
+		SHOW_CHECK (title_due_date);
+		SHOW_CHECK (title_sizing);
+		SHOW_CHECK (title_percent_complete);
+
+		if (change)
+		{
+			ctree_update_column_visibility (global_ptw);
+		}
+	
+	}
+	if (1 == page)
+	{
 
 		/* display options */
 		state = GTK_TOGGLE_BUTTON(odlg->show_secs)->active;
@@ -136,7 +199,7 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 			if (status_bar)
 			gtk_widget_queue_resize(status_bar);
 		}
-		if (GTK_TOGGLE_BUTTON(odlg->show_status_bar)->active) {
+		if (GTK_TOGGLE_BUTTON(odlg->show_statusbar)->active) {
 			gtk_widget_show(GTK_WIDGET(status_bar));
 			config_show_statusbar = 1;
 		} else {
@@ -159,42 +222,16 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 			ctree_subproj_hide (global_ptw);
 		}
 
-		if (GTK_TOGGLE_BUTTON(odlg->show_desc)->active)
-		{
-			if (1 != config_show_title_desc) change = 1;
-			config_show_title_desc = 1;
-		}
-		else
-		{
-			if (0 != config_show_title_desc) change = 1;
-			config_show_title_desc = 0;
-		}
-
-		if (GTK_TOGGLE_BUTTON(odlg->show_task)->active) 
-		{
-			if (1 != config_show_title_task) change = 1;
-			config_show_title_task = 1;
-		}
-		else
-		{
-			if (0 != config_show_title_task) change = 1;
-			config_show_title_task = 0;
-		}
-		if (change)
-		{
-			ctree_update_column_visibility (global_ptw);
-		}
-	
 	}
 
-	if (1 == page)
+	if (2 == page)
 	{
 		/* shell command options */
 		ENTRY_TO_CHAR(odlg->command, config_command);
 		ENTRY_TO_CHAR(odlg->command_null, config_command_null);
 	}
 
-	if (2 == page)
+	if (3 == page)
 	{
 		/* log file options */
 		config_logfile_use = GTK_TOGGLE_BUTTON(odlg->logfileuse)->active;
@@ -204,7 +241,7 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 		config_logfile_min_secs = atoi (gtk_entry_get_text(odlg->logfileminsecs));
 	}
 
-	if (3 == page)
+	if (4 == page)
 	{
 		int change = 0;
 
@@ -214,59 +251,25 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 		config_show_tb_tips = GTK_TOGGLE_BUTTON(odlg->show_tb_tips)->active;
 	
 		/* toolbar sections */
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_new)->active;
-		if (config_show_tb_new != state) {
-			change = 1;
-			config_show_tb_new = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_file)->active;
-		if (config_show_tb_file != state) {
-			change = 1;
-			config_show_tb_file = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_ccp)->active;
-		if (config_show_tb_ccp != state) {
-			change = 1;
-			config_show_tb_ccp = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_journal)->active;
-		if (config_show_tb_journal != state) {
-			change = 1;
-			config_show_tb_journal = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_prop)->active;
-		if (config_show_tb_prop != state) {
-			change = 1;
-			config_show_tb_prop = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_timer)->active;
-		if (config_show_tb_timer != state) {
-			change = 1;
-			config_show_tb_timer = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_pref)->active;
-		if (config_show_tb_pref != state) {
-			change = 1;
-			config_show_tb_pref = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_help)->active;
-		if (config_show_tb_help != state) {
-			change = 1;
-			config_show_tb_help = state;
-		}
-		state = GTK_TOGGLE_BUTTON(odlg->show_tb_exit)->active;
-		if (config_show_tb_exit != state) {
-			change = 1;
-			config_show_tb_exit = state;
-		}
-		if (change) {
+		SHOW_CHECK (tb_new);
+		SHOW_CHECK (tb_file);
+		SHOW_CHECK (tb_ccp);
+		SHOW_CHECK (tb_journal);
+		SHOW_CHECK (tb_prop);
+		SHOW_CHECK (tb_timer);
+		SHOW_CHECK (tb_pref);
+		SHOW_CHECK (tb_help);
+		SHOW_CHECK (tb_exit);
+
+		if (change) 
+		{
 			update_toolbar_sections();
 		}
 
 		toolbar_set_states();
 	}
 
-	if (4 == page)
+	if (5 == page)
 	{
 		config_idle_timeout = atoi(gtk_entry_get_text(GTK_ENTRY(odlg->idle_secs)));
 	}
@@ -290,27 +293,36 @@ logfile_sensitive_cb(GtkWidget *w, PrefsDialog *odlg)
 	gtk_widget_set_sensitive(odlg->logfileminsecs_l, state);
 }
 
+#define SET_ACTIVE(TOK) \
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_##TOK), \
+		config_show_##TOK);
+
 static void 
 options_dialog_set(PrefsDialog *odlg)
 {
 	char s[30];
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_secs), config_show_secs);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_status_bar),
-				    config_show_statusbar);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_clist_titles),
-				    config_show_clist_titles);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_subprojects),
-				    config_show_subprojects);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_desc),
-				    config_show_title_desc);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_task),
-				    config_show_title_task);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_icons),
-				    config_show_tb_icons);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_texts),
-				    config_show_tb_texts);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_tips),
-				    config_show_tb_tips);
+
+	SET_ACTIVE(secs);
+	SET_ACTIVE(statusbar);
+	SET_ACTIVE(clist_titles);
+	SET_ACTIVE(subprojects);
+
+	SET_ACTIVE(title_importance);
+	SET_ACTIVE(title_urgency);
+	SET_ACTIVE(title_status);
+	SET_ACTIVE(title_ever);
+	SET_ACTIVE(title_year);
+	SET_ACTIVE(title_month);
+	SET_ACTIVE(title_week);
+	SET_ACTIVE(title_day);
+	SET_ACTIVE(title_current);
+	SET_ACTIVE(title_desc);
+	SET_ACTIVE(title_task);
+	SET_ACTIVE(title_estimated_start);
+	SET_ACTIVE(title_estimated_end);
+	SET_ACTIVE(title_due_date);
+	SET_ACTIVE(title_sizing);
+	SET_ACTIVE(title_percent_complete);
 
 	if (config_command)
 		gtk_entry_set_text(odlg->command, config_command);
@@ -336,25 +348,20 @@ options_dialog_set(PrefsDialog *odlg)
 	g_snprintf(s, sizeof (s), "%d", config_logfile_min_secs);
 	gtk_entry_set_text(GTK_ENTRY(odlg->logfileminsecs), s);
 
-	/* toolbar sections */
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_new),
-				    config_show_tb_new);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_file),
-				    config_show_tb_file);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_ccp),
-				    config_show_tb_ccp);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_prop),
-				    config_show_tb_prop);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_timer),
-				    config_show_tb_timer);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_pref),
-				    config_show_tb_pref);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_help),
-				    config_show_tb_help);
-	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_exit),
-				    config_show_tb_exit);
-
 	logfile_sensitive_cb(NULL, odlg);
+
+	/* toolbar sections */
+	SET_ACTIVE(tb_icons);
+	SET_ACTIVE(tb_texts);
+	SET_ACTIVE(tb_tips);
+	SET_ACTIVE(tb_new);
+	SET_ACTIVE(tb_file);
+	SET_ACTIVE(tb_ccp);
+	SET_ACTIVE(tb_prop);
+	SET_ACTIVE(tb_timer);
+	SET_ACTIVE(tb_pref);
+	SET_ACTIVE(tb_help);
+	SET_ACTIVE(tb_exit);
 
 	/* misc section */
 	g_snprintf(s, sizeof (s), "%d", config_idle_timeout);
@@ -395,20 +402,43 @@ display_options(PrefsDialog *dlg)
 	w = GETCHWID ("show secs");
 	dlg->show_secs = GTK_CHECK_BUTTON(w);
 
-	w = GETCHWID ("show status");
-	dlg->show_status_bar = GTK_CHECK_BUTTON(w);
+	w = GETCHWID ("show statusbar");
+	dlg->show_statusbar = GTK_CHECK_BUTTON(w);
 
-	w = GETCHWID ("show head");
+	w = GETCHWID ("show header");
 	dlg->show_clist_titles = GTK_CHECK_BUTTON(w);
 
 	w = GETCHWID ("show sub");
 	dlg->show_subprojects = GTK_CHECK_BUTTON(w);
+}
 
-	w = GETCHWID ("show desc");
-	dlg->show_desc = GTK_CHECK_BUTTON(w);
+#define DLGWID(strname)					\
+	w = GETCHWID ("show " #strname);		\
+	dlg->show_title_##strname = GTK_CHECK_BUTTON(w);
 
-	w = GETCHWID ("show task");
-	dlg->show_task = GTK_CHECK_BUTTON(w);
+
+static void 
+field_options(PrefsDialog *dlg)
+{
+	GtkWidget *w;
+	GladeXML *gtxml = dlg->gtxml;
+
+	DLGWID (importance);
+	DLGWID (urgency);
+	DLGWID (status);
+	DLGWID (ever);
+	DLGWID (year);
+	DLGWID (month);
+	DLGWID (week);
+	DLGWID (day);
+	DLGWID (current);
+	DLGWID (desc);
+	DLGWID (task);
+	DLGWID (estimated_start);
+	DLGWID (estimated_end);
+	DLGWID (due_date);
+	DLGWID (sizing);
+	DLGWID (percent_complete);
 }
 
 
@@ -462,47 +492,27 @@ logfile_options(PrefsDialog *dlg)
 	dlg->logfileminsecs = GTK_ENTRY(w);
 }
 
+#define TBWID(strname)					\
+	w = GETCHWID ("show " #strname);		\
+	dlg->show_tb_##strname = GTK_CHECK_BUTTON(w);
+
 static void 
 toolbar_options(PrefsDialog *dlg)
 {
 	GtkWidget *w;
 	GladeXML *gtxml = dlg->gtxml;
 
-	w = GETCHWID ("show icons");
-	dlg->show_tb_icons = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show texts");
-	dlg->show_tb_texts = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show tooltips");
-	dlg->show_tb_tips = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show new");
-	dlg->show_tb_new = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show save");
-	dlg->show_tb_file = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show cut");
-	dlg->show_tb_ccp = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show journal");
-	dlg->show_tb_journal = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show props");
-	dlg->show_tb_prop = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show timer");
-	dlg->show_tb_timer = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show prefs");
-	dlg->show_tb_pref = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show help");
-	dlg->show_tb_help = GTK_CHECK_BUTTON(w);
-
-	w = GETCHWID ("show quit");
-	dlg->show_tb_exit = GTK_CHECK_BUTTON(w);
+	TBWID (icons);
+	TBWID (texts);
+	TBWID (tips);
+	TBWID (new);
+	TBWID (file);
+	TBWID (ccp);
+	TBWID (prop);
+	TBWID (timer);
+	TBWID (pref);
+	TBWID (help);
+	TBWID (exit);
 }
 
 static void 
@@ -542,6 +552,7 @@ prefs_dialog_new (void)
 	/* ------------------------------------------------------ */
 	/* grab the various entry boxes and hook them up */
 	display_options (dlg);
+	field_options (dlg);
 	command_options (dlg);
 	logfile_options (dlg);
 	toolbar_options (dlg);
