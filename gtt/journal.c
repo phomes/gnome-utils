@@ -224,11 +224,10 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 	{
 		wig->task = addr;
 		prop_task_dialog_show (wig->task);
-// hack alert xxx fixme -- we need to redraw the journal display after editing !!!
 	}
 	else
 	{
-		printf ("clicked on link duude=%s\n", url);
+		g_warning ("clicked on unknown link duude=%s\n", url);
 	}
 }
 
