@@ -1,5 +1,6 @@
 /*   GTimeTracker - a time tracker
  *   Copyright (C) 1997,98 Eckehard Berns
+ *   Copyright (C) 2001 Linas Vepstas <linas@linas.org>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -434,18 +435,19 @@ main(int argc, char *argv[])
 			   GTK_SIGNAL_FUNC(session_die), NULL);
 #endif /* USE_SM */
 
+	glade_gnome_init();
+
+	/* gconf init is needed by gtkhtml */
+	gconf_init (argc, argv, NULL);
+
 	signal (SIGCHLD, SIG_IGN);
 	signal (SIGINT, got_signal);
 	signal (SIGTERM, got_signal);
 	lock_gtt();
 	app_new(argc, argv, geometry_string);
 
-	glade_gnome_init();
 	gtk_signal_connect(GTK_OBJECT(window), "delete_event",
 			   GTK_SIGNAL_FUNC(quit_app), NULL);
-
-	/* gconf init is needed by gtkhtml */
-	gconf_init (argc, argv, NULL);
 
 	/*
 	 * Added by SMH 2000-03-22:

@@ -932,7 +932,7 @@ ctree_unselect (ProjTreeWindow *ptw, GttProject *p)
 	ProjTreeNode *ptn;
 	if (!ptw || !p) return;
 	ptn = gtt_project_get_private_data (p);
-	g_return_if_fail (NULL != ptn);
+	if (!ptn) return;
 
 	gtk_ctree_unselect(ptw->ctree, ptn->ctnode);
 }
@@ -943,7 +943,7 @@ ctree_select (ProjTreeWindow *ptw, GttProject *p)
 	ProjTreeNode *ptn;
 	if (!ptw || !p) return;
 	ptn = gtt_project_get_private_data (p);
-	g_return_if_fail (NULL != ptn);
+	if (!ptn) return;
 
 	gtk_ctree_select(ptw->ctree, ptn->ctnode);
 }
