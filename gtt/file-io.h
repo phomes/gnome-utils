@@ -44,6 +44,8 @@ void gtt_load_config (const char *fname);
 
 void gtt_post_data_config (void);
 
+/* returns the 'real path' to the config file that was/would be used */
+const char * gtt_get_config_filepath (void);
 
 /* ??? */
 gboolean project_list_export (const char *fname);

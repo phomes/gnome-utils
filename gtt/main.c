@@ -38,6 +38,7 @@
 #include "log.h"
 #include "menus.h"
 #include "menucmd.h"
+#include "prefs.h"
 #include "shorts.h"		/* SMH 2000-03-22: connect_short_cuts() */
 #include "timer.h"
 #include "xml-gtt.h"
@@ -106,20 +107,20 @@ static void lock_gtt(void)
 		fclose(f);
 	}
 		
-	if (warn) {
+	if (warn) 
+	{
 		GtkWidget *warning;
-#ifdef DEBUG
-		g_warning("GTT PID file exists");
-#else /* not DEBUG */
-		warning = gnome_message_box_new(_("There seems to be another GTimeTracker running.\n"
-						  "Press OK to start GTimeTracker anyway, or press Cancel to quit."),
-						GNOME_MESSAGE_BOX_WARNING,
-						GNOME_STOCK_BUTTON_OK,
-						GNOME_STOCK_BUTTON_CANCEL,
-						NULL);
+		warning = gnome_message_box_new(
+			_("There seems to be another GTimeTracker running.\n"
+			  "Press OK to start GTimeTracker anyway, or press Cancel to quit."),
+			GNOME_MESSAGE_BOX_WARNING,
+			GNOME_STOCK_BUTTON_OK,
+			GNOME_STOCK_BUTTON_CANCEL,
+			NULL);
 		if(gnome_dialog_run_and_close(GNOME_DIALOG(warning))!=0)
+		{
 			exit(0);
-#endif /* not DEBUG */
+		}
 	}
 	if (NULL == (f = fopen(fname, "wt"))) {
 		g_warning(_("Cannot create pid-file!"));
@@ -166,6 +167,26 @@ read_data_err_run_or_abort (GtkWidget *w, gint butnum)
 	}
 }
 
+static const char *
+resolve_path (const char * pathfrag)
+{
+	const char * fullpath;
+
+	if (('~' != pathfrag[0]) &&
+	    ('/' != pathfrag[0]))
+	{
+		/* if not an absolute filepath ..*/
+		fullpath = gnome_config_get_real_path (pathfrag);
+	}
+	else
+	{
+		/* I suppose we should look up $HOME if ~ */
+		fullpath = pathfrag;
+	}
+
+	return fullpath;
+}
+
 
 static void 
 read_data(void)
@@ -173,7 +194,7 @@ read_data(void)
 	GttErrCode xml_errcode;
 	const char * xml_filepath;
 
-	xml_filepath = gnome_config_get_real_path (XML_DATA_FILENAME);
+	xml_filepath = resolve_path (config_data_url);
 
 	/* Try ... */
 	gtt_err_set_code (GTT_NO_ERR);
@@ -192,14 +213,19 @@ read_data(void)
 		gtt_get_project_list())
 	    ))
 	{
-		g_warning ("xml file read bombed, errcode = %d\n", xml_errcode);
+		const char *errmsg, *qmsg;
+		errmsg = gtt_err_to_string (xml_errcode, xml_filepath);
+		qmsg = g_strconcat (errmsg, 
+			_("Do you want to continue?"),
+			NULL);
+
 		msgbox_ok_cancel(_("Error"),
-				 _("An error occured while reading the "
-				   "project data.\n"
-				   "Do you want to continue?"),
-				 GNOME_STOCK_BUTTON_YES, 
-				 GNOME_STOCK_BUTTON_NO,
-				 GTK_SIGNAL_FUNC(read_data_err_run_or_abort));
+			 qmsg,
+			 GNOME_STOCK_BUTTON_YES, 
+			 GNOME_STOCK_BUTTON_NO,
+			 GTK_SIGNAL_FUNC(read_data_err_run_or_abort));
+		g_free ((gchar *) qmsg); 
+		g_free ((gchar *) errmsg);
 	}
 	else
 	{
@@ -239,18 +265,26 @@ read_config(void)
 	conf_errcode = gtt_err_get_code();
 	if (GTT_NO_ERR != conf_errcode) 
 	{
+		const char *fp, *errmsg, *qmsg;
 		if (errno == ENOENT) 
 		{
 			errno = 0;
 			return;
 		}
+
+		fp = gtt_get_config_filepath();
+		errmsg = gtt_err_to_string (conf_errcode, fp);
+		qmsg = g_strconcat (errmsg, 
+			_("Shall I setup a new configuration?"),
+			NULL);
+
 		msgbox_ok_cancel(_("Error"),
-				 _("An error occured while reading the "
-				   "configuration file.\n"
-				   "Shall I setup a new configuration?"),
-				 GNOME_STOCK_BUTTON_YES, 
-				 GNOME_STOCK_BUTTON_NO,
-				 GTK_SIGNAL_FUNC(read_config_err_run_or_abort));
+			 qmsg,
+			 GNOME_STOCK_BUTTON_YES, 
+			 GNOME_STOCK_BUTTON_NO,
+			 GTK_SIGNAL_FUNC(read_config_err_run_or_abort));
+		g_free ((gchar *) qmsg); 
+		g_free ((gchar *) errmsg);
 	}
 	else 
 	{
@@ -277,7 +311,8 @@ void
 save_all (void)
 {
 	const char * xml_filepath;
-	xml_filepath = gnome_config_get_real_path (XML_DATA_FILENAME);
+
+	xml_filepath = resolve_path (config_data_url);
 
 	gtt_save_config (NULL);
 

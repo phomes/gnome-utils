@@ -273,6 +273,7 @@ save_project_list(GtkWidget *widget, gpointer data)
 
 	gtt_err_set_code (GTT_NO_ERR);
 	save_all ();
+// xxxxxxxxxx
 	errcode = gtt_err_get_code();
 	if (GTT_NO_ERR != errcode) 
 	{

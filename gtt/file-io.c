@@ -259,6 +259,7 @@ err:
 }
 
 
+/* ======================================================= */
 
 void
 gtt_load_config (const char *fname)
@@ -359,7 +360,7 @@ gtt_load_config (const char *fname)
 	config_logfile_min_secs = gnome_config_get_int(GTT"LogFile/MinSecs");
 
 	/* ------------ */
-	config_data_url = gnome_config_get_string(GTT"Data/URL=~/.gnome/gtt-xml.gttml");
+	config_data_url = gnome_config_get_string(GTT"Data/URL=" XML_DATA_FILENAME);
 
 	/* ------------ */
 	if (config_show_statusbar)
@@ -449,6 +450,7 @@ gtt_load_config (const char *fname)
 	}
 }
 
+/* ======================================================= */
 
 void 
 gtt_post_data_config (void)
@@ -606,6 +608,14 @@ gtt_save_config(const char *fname)
 	gnome_config_set_int(GTT"Misc/NumReports", i);
 
 	gnome_config_sync();
+}
+
+/* ======================================================= */
+
+const char * 
+gtt_get_config_filepath (void)
+{
+	return gnome_config_get_real_path (GTT);
 }
 
 /* ======================================================= */
