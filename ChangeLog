@@ -1,8 +1,11 @@
+
 Sat Dec 21 17:37:26 CST 2002 Linas Vepstas <linas@linas.org>
 
-	* gtt/ghtml.c: Printing bugfix for Solaris, as per Derek Atkins
+	* ghtml.c: Printing bugfix for Solaris, as per Derek Atkins
 	  <warlord@mit.edu>
-
+	* ghtml.c: buffer overflow pseudofix (ppossible cause of core dump??)
+	* journal.c: avoid hang due to memory management conflict
+		  
 2002-06-26  Glynn Foster  <glynn.foster@sun.com>
 
 	* logview/logview-regexp.db: Patch from Jochen Voss to 
