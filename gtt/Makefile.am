@@ -62,13 +62,14 @@ noinst_HEADERS = 	\
 CFLAGS = @CFLAGS@ 		\
 	${GCONF_CFLAGS} 	\
 	${GTKHTML_CFLAGS} 	\
-	${GLADE_CFLAGS} 
+	${GLADE_CFLAGS}		\
+	${PIXBUF_CFLAGS} 
 
 INCLUDES = 			\
 	-I$(includedir)		\
 	-DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
 	-DGTTGLADEDIR=\""$(datadir)/gtt"\" \
-	$(GNOME_INCLUDEDIR)	\
+	${GNOME_INCLUDEDIR}	\
 	${GUILE_INCS}
 						 
 gtt_LDADD = \
@@ -87,6 +88,12 @@ Productivity_DATA = $(Productivity_in_files:.desktop.in=.desktop)
 @XML_I18N_MERGE_DESKTOP_RULE@
 
 EXTRA_DIST = 			\
+	AUTHORS			\
+	COPYING			\
+	ChangeLog		\
+	NEWS			\
+	README			\
+	TODO			\
 	down.xpm		\
 	left.xpm		\
 	design.txt		\
