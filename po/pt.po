@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2002-08-20 10:07+0100\n"
-"PO-Revision-Date: 2002-08-15 00:25+0000\n"
+"POT-Creation-Date: 2002-08-28 01:35+0100\n"
+"PO-Revision-Date: 2002-08-28 01:45+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Executar aplicações desconhecidas que descarregou da rede poderá ser "
 "perigoso.\n"
 "\n"
-"Tem a certeza que quer executar `%s'?"
+"Tem a certeza que deseja executar `%s'?"
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
@@ -81,7 +81,7 @@ msgstr ""
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
-msgstr "Duarte Loreto (happyguy_pt@hotmail.com)"
+msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
 
 #: gcalc/gcalc.c:60 gcalc/gcalc.c:191
 msgid "GNOME Calculator"
@@ -93,7 +93,7 @@ msgstr "(C) 1998 the Free Software Foundation"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
-msgstr "Calculadora simples de dupla precisão parecida com a xcalc"
+msgstr "Calculadora simples de dupla precisão semelhante à xcalc"
 
 #: gcalc/gcalc.c:140
 msgid "_Calculator"
@@ -346,7 +346,7 @@ msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
-"Adicione o valor no campo de\n"
+"Adicionar o valor no campo de\n"
 "visualização ao valor em memória"
 
 #: gcalc/gnome-calc.c:1290
@@ -378,8 +378,8 @@ msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
-"Troque os valores no campo de\n"
-"visualização e memória"
+"Trocar os valores entre o\n"
+"campo de visualização e memória"
 
 #: gcalc/gnome-calc.c:1296
 msgid "0"
@@ -616,7 +616,7 @@ msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
-"Ocorreu um erro grave. Certifique-se que o seu servidor e porto estão "
+"Ocorreu um erro grave. Certifique-se de que o seu servidor e porto estão "
 "correctos. Como referência, o servidor de defeito é dict.org e o porto 2628"
 
 #: gdictsrc/gdict-about.c:56
@@ -676,7 +676,7 @@ msgid ""
 msgstr ""
 "Incapaz de realizar operação pedida. \n"
 "Ou o servidor que está a utilizar está em baixo \n"
-"ou porque você não está ligado à Internet."
+"ou você não está ligado à Internet."
 
 #: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
@@ -731,7 +731,7 @@ msgstr "_Procurar"
 #: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
 #, c-format
 msgid "Error invoking query: %s"
-msgstr "Erro ao invocar busca: %s"
+msgstr "Erro ao invocar procura: %s"
 
 #: gdictsrc/gdict-pref-dialog.c:37
 msgid "Headword:"
@@ -827,7 +827,7 @@ msgstr "Base de _Dados:"
 
 #: gdictsrc/gdict-pref-dialog.c:265
 msgid "D_efault strategy:"
-msgstr "_Estratégia de defeito:"
+msgstr "_Estratégia por omissão:"
 
 #: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
@@ -843,7 +843,7 @@ msgstr "Nome Base de Dados"
 
 #: gdictsrc/gdict-pref-dialog.c:635
 msgid "Default Strategy"
-msgstr "Estratégia Defeito"
+msgstr "Estratégia Por Omissão"
 
 #: gdictsrc/gdict-speller.c:135
 msgid "_Word:"
@@ -964,7 +964,7 @@ msgstr "À procura de blocos danificados..."
 #: gfloppy/src/badblocks.c:272
 #, c-format
 msgid "MFailed to open device %s for badblock checking\n"
-msgstr "Falha ao aprir dispositivo %s para procurar blocos danificados\n"
+msgstr "Falha ao abrir dispositivo %s para procurar blocos danificados\n"
 
 #: gfloppy/src/badblocks.c:291 gfloppy/src/gfloppy.c:213
 msgid "MChecking for bad blocks... Done"
@@ -1021,8 +1021,8 @@ msgid ""
 msgstr ""
 "Incapaz de aceder ao leitor de disquetes.\n"
 "\n"
-"Confirme que está uma no leitor e este\n"
-"tem a porta fechada."
+"Confirme que existe uma disquete no leitor e\n"
+"este tem a porta fechada."
 
 #: gfloppy/src/fdformat.c:109
 #, c-format
@@ -1101,7 +1101,7 @@ msgstr "Incapaz de criar sistema de ficheiros."
 
 #: gfloppy/src/gfloppy.c:209
 msgid "MChecking for bad blocks... (this might take a while)"
-msgstr "A verificar blocos danificados... (isto pode demorar)"
+msgstr "A verificar blocos danificados... (poderá demorar)"
 
 #: gfloppy/src/gfloppy2.glade.h:2
 msgid "DOS (fat)"
@@ -1125,7 +1125,7 @@ msgstr "_Densidade da disquete:"
 
 #: gfloppy/src/gfloppy2.glade.h:7
 msgid "Floppy de_vice:"
-msgstr "_Leitor de Disquetes:"
+msgstr "_Leitor de disquetes:"
 
 #: gfloppy/src/gfloppy2.glade.h:8
 msgid "Format a Floppy"
@@ -1172,7 +1172,7 @@ msgid ""
 "be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"Tem tem as permissões necessárias para escrever em %s, a formatação não será "
+"Não possui as permissões necessárias para escrever em %s, a formatação não será "
 "possível.\n"
 "Contacte o seu administrador de sistema para obter permissões de escrita."
 
@@ -1231,7 +1231,7 @@ msgstr "Seguir ligações simbólicas"
 
 #: gsearchtool/gsearchtool.c:70
 msgid "Process folder contents depth first"
-msgstr "Processar primeiro conteudo dos directórios"
+msgstr "Processar primeiro conteúdo dos directórios"
 
 #: gsearchtool/gsearchtool.c:71
 msgid "Owned by user"
@@ -1259,7 +1259,7 @@ msgstr "Procura expressão regular"
 
 #: gsearchtool/gsearchtool.c:274 gsearchtool/gsearchtool.c:943
 msgid "Start folder does not exist."
-msgstr "Directório de início não existe."
+msgstr "Directório inicial não existe."
 
 #: gsearchtool/gsearchtool.c:499
 msgid "today at %-I:%M %p"
@@ -1341,7 +1341,7 @@ msgstr ""
 
 #: gsearchtool/gsearchtool.c:1005
 msgid "Start folder does not exist"
-msgstr "Directório de início não existe"
+msgstr "Directório inicial não existe"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
@@ -1454,7 +1454,7 @@ msgstr "Clicar para Parar a Procura"
 
 #: gsearchtool/gsearchtool.c:1529 gsearchtool/gsearchtool.c:1861
 msgid "S_earch Results"
-msgstr "_Resultados da Procura"
+msgstr "R_esultados da Procura"
 
 #: gsearchtool/gsearchtool.c:1569 gsearchtool/gsearchtool.c:1901
 msgid "Name"
@@ -1570,8 +1570,8 @@ msgid ""
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
 "Esta aplicação faz parte do projecto GNOME para Linux. O Visualizador de "
-"registos (logview) vem SEM QUALQUER GARANTIA. Esta aplicação é livre, e você "
-"pode redistribui-la sob as condições da Licença Pública Genérica GNU. O ícon "
+"logs (registos) vem SEM QUALQUER GARANTIA. Esta aplicação é livre, e você "
+"pode redistribui-la sob as condições da Licença Pública Genérica GNU. O ícone "
 "de registo (log) foi uma oferta do Tuomas Kuosmanen (ou tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
@@ -1627,7 +1627,7 @@ msgstr "<vazio>"
 
 #: logview/actions.c:508
 msgid "log name regexp"
-msgstr "exp. reg. do nome ficheiro"
+msgstr "exp. reg. do nome ficheiro log"
 
 #: logview/actions.c:509
 msgid "process regexp"
@@ -1745,7 +1745,7 @@ msgstr "Log do Sistema"
 
 #: logview/gnome-system-log.desktop.in.h:2
 msgid "View the system log file"
-msgstr "Ver o log de sistema"
+msgstr "Ver o ficheiro de log de sistema"
 
 #: logview/info.c:80
 msgid "Log stats"
@@ -1785,7 +1785,7 @@ msgstr "Última data:"
 
 #: logview/info.c:247
 msgid "Num. lines:"
-msgstr "Num. linhas:"
+msgstr "Núm. linhas:"
 
 #: logview/info.c:265
 #, c-format
@@ -1873,7 +1873,7 @@ msgstr "Incapaz de abrir o ficheiro de log!\n"
 #: logview/logrtns.c:295
 #, c-format
 msgid "%s is not a regular file."
-msgstr "%s não é um ficheiro regular."
+msgstr "%s não é um ficheiro normal."
 
 #: logview/logrtns.c:303
 #, c-format
@@ -1882,7 +1882,7 @@ msgid ""
 "to change the permissions on the file."
 msgstr ""
 "%s não é legível pelo utilizador. Ou execute a aplicação como administrador "
-"ou peça ao sysadmin pata modificar as permissões do ficheiro."
+"ou peça ao sysadmin para modificar as permissões do ficheiro."
 
 #: logview/logrtns.c:320
 #, c-format
@@ -1892,7 +1892,7 @@ msgstr "%s não pode ser aberto."
 #: logview/logrtns.c:350 logview/logrtns.c:359
 #, c-format
 msgid "%s not a log file."
-msgstr "%s não é um ficheiro de registo."
+msgstr "%s não é um ficheiro de log."
 
 #: logview/logrtns.c:792 logview/logrtns.c:823 logview/logrtns.c:954
 msgid "ReadLogStats: out of memory"
@@ -2038,7 +2038,7 @@ msgstr "TOCADO!!\n"
 
 #: logview/userprefsdialog.c:65
 msgid "hostname column width ( 0 to hide this column ): "
-msgstr "largura da coluna de nomes de servidores (0 para esconder):"
+msgstr "largura da coluna de nomes de servidores ( 0 para esconder ): "
 
 #: logview/userprefsdialog.c:66
 msgid "Columns"
@@ -2076,11 +2076,11 @@ msgstr "%B %e %X"
 
 #: meat-grinder/archive-generator.desktop.in.h:1
 msgid "Archive Generator"
-msgstr "Gerador de Arquivos"
+msgstr "Gerador de Ficheiros Comprimidos"
 
 #: meat-grinder/archive-generator.desktop.in.h:2
 msgid "Create compressed archives containing many files"
-msgstr "Criar aquivos comprimidos que contenham vários ficheiros"
+msgstr "Criar ficheiros comprimidos que contenham vários ficheiros"
 
 #: meat-grinder/meat-grinder.c:137
 #, c-format
@@ -2097,7 +2097,7 @@ msgid ""
 "above to add them to the archive"
 msgstr ""
 "Nenhuns ficheiros ou pastas, large ficheiros ou pastas\n"
-"acima para adiciona-los ao arquivo"
+"acima para adiciona-los ao ficheiro comprimido"
 
 #: meat-grinder/meat-grinder.c:166
 #, c-format
@@ -2111,19 +2111,19 @@ msgstr "Falha ao criar %s"
 
 #: meat-grinder/meat-grinder.c:373
 msgid "Archive.tar.gz"
-msgstr "Arquivo.tar.gz"
+msgstr "Ficheiro.tar.gz"
 
 #: meat-grinder/meat-grinder.c:493 meat-grinder/meat-grinder.c:977
 msgid "GNOME Archive Generator"
-msgstr "Gerador de Arquivos GNOME"
+msgstr "Gerador de Ficheiros Comprimidos GNOME"
 
 #: meat-grinder/meat-grinder.c:495
 msgid "Drag files in to make archives"
-msgstr "Arraste ficheiros para gerar arquivos"
+msgstr "Arraste ficheiros para gerar ficheiro comprimido"
 
 #: meat-grinder/meat-grinder.c:528
 msgid "All files selected"
-msgstr "Seleccionados todos os ficheiros"
+msgstr "Todos os ficheiros seleccionados"
 
 #: meat-grinder/meat-grinder.c:547
 msgid "All files removed"
@@ -2144,7 +2144,7 @@ msgstr "%s criado"
 
 #: meat-grinder/meat-grinder.c:650
 msgid "No items to archive"
-msgstr "Nenhum item para arquivar"
+msgstr "Nenhum item para criar ficheiro comprimido"
 
 #: meat-grinder/meat-grinder.c:777
 #, c-format
@@ -2169,15 +2169,15 @@ msgstr "Adicionar um ficheiro ou pasta a arquivar"
 
 #: meat-grinder/meat-grinder.c:931
 msgid "_Create archive..."
-msgstr "_Criar arquivo..."
+msgstr "_Criar ficheiro comprimido..."
 
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
-msgstr "Criar um novo arquivo a partir dos itens"
+msgstr "Criar um novo ficheiro comprimido a partir dos itens"
 
 #: meat-grinder/meat-grinder.c:942
 msgid "Remove the selected item"
-msgstr "Remover os itens seleccionados"
+msgstr "Remover o item seleccionado"
 
 #: meat-grinder/meat-grinder.c:944
 msgid "R_emove All"
@@ -2189,32 +2189,32 @@ msgstr "Remover todos os itens"
 
 #: meat-grinder/meat-grinder.c:1016
 msgid "Drop files here to add them to the archive."
-msgstr "Largue os ficheiros aqui para os adicionar ao arquivo."
+msgstr "Largue os ficheiros aqui para os adicionar ao ficheiro comprimido."
 
 #. tarball icon
 #: meat-grinder/meat-grinder.c:1028
 msgid "_Create Archive"
-msgstr "_Criar Arquivo"
+msgstr "_Criar Ficheiro Comprimido"
 
 #: meat-grinder/meat-grinder.c:1036
 msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
-"Arraste este botão para o destino onde deseja que o arquivo seja criado ou "
-"prima-o para fazer aparecer uma janela de selecção de ficheiro."
+"Arraste este botão para o destino onde deseja que o ficheiro comprimido seja "
+"criado ou prima-o para fazer aparecer uma janela de selecção de ficheiro."
 
 #: meat-grinder/meat-grinder.c:1174
 msgid "Cannot find proper icons anywhere!"
-msgstr "Incapaz de encontrar icons apropriados!"
+msgstr "Incapaz de encontrar ícones apropriados!"
 
 #: meat-grinder/meat-grinder.c:1182
 msgid ""
 "Cannot find the archive (tar) program!\n"
 "This is the program used for creating archives."
 msgstr ""
-"Incapaz de encontrar a aplicação de arquivos (tar)!\n"
-"Esta aplicação é utilizada para criar os arquivos."
+"Incapaz de encontrar a aplicação de ficheiros comprimidos (tar)!\n"
+"Esta aplicação é utilizada para criar os ficheiros comprimidos."
 
 #~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 #~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
