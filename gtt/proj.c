@@ -839,6 +839,13 @@ prj_total_secs_ever (GttProject *prj, gpointer data)
 	return 1;
 }
 
+static int
+prj_total_secs_current (GttProject *prj, gpointer data)
+{
+	*((int *) data) += gtt_project_get_secs_current (prj);
+	return 1;
+}
+
 /* this routine adds up total day-secs for this project, and its sub-projects */
 int
 gtt_project_total_secs_day (GttProject *proj)
@@ -886,6 +893,15 @@ gtt_project_total_secs_ever (GttProject *proj)
 }
 
 int
+gtt_project_total_secs_current (GttProject *proj)
+{
+	int total = 0;
+	if (!proj) return 0;
+	gtt_project_foreach (proj, prj_total_secs_current, &total);
+	return total;
+}
+
+int
 gtt_project_get_secs_day (GttProject *proj)
 {
 	if (!proj) return 0;
@@ -918,6 +934,17 @@ gtt_project_get_secs_ever (GttProject *proj)
 {
 	if (!proj) return 0;
 	return proj->secs_ever;
+}
+
+int
+gtt_project_get_secs_current (GttProject *proj)
+{
+	GttTask *tsk;
+	if (!proj) return 0;
+	if (!proj->task_list) return 0;
+	tsk = proj->task_list->data;
+
+	return gtt_task_get_secs_ever(tsk);
 }
 
 /* =========================================================== */
@@ -2196,6 +2223,14 @@ cmp_ever(const void *aa, const void *bb)
 	return (gtt_project_total_secs_ever(b) - gtt_project_total_secs_ever(a));
 }
 
+static int
+cmp_current(const void *aa, const void *bb)
+{
+	GttProject *a = (GttProject *)aa;
+	GttProject *b = (GttProject *)bb;
+	return (gtt_project_total_secs_current(b) - gtt_project_total_secs_current(a));
+}
+
 
 static int
 cmp_title(const void *aa, const void *bb)
@@ -2248,6 +2283,12 @@ void
 project_list_sort_ever(void)
 {
 	plist = project_list_sort(plist, cmp_ever);
+}
+
+void
+project_list_sort_current(void)
+{
+	plist = project_list_sort(plist, cmp_current);
 }
 
 void

@@ -44,6 +44,7 @@ int config_show_title_year = 0;
 int config_show_title_month = 0;
 int config_show_title_week = 0;
 int config_show_title_day = 1;
+int config_show_title_tt = 0;
 int config_show_title_desc = 1;
 int config_show_title_task = 1;
 
