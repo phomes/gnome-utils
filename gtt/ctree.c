@@ -155,6 +155,26 @@ widget_button_event(GtkCList *clist, GdkEvent *event, gpointer data)
 
 /* ============================================================== */
 
+GttProject *
+ctree_get_focus_project (ProjTreeWindow *ptw)
+{
+	GttProject * proj = NULL;
+	GtkCTreeNode *rownode;
+	if (!ptw) return NULL;
+
+	rownode = gtk_ctree_node_nth (ptw->ctree,  GTK_CLIST(ptw->ctree)->focus_row);
+	if (rownode)
+	{
+		ProjTreeNode *ptn;
+		ptn = gtk_ctree_node_get_row_data(ptw->ctree, rownode);
+		if (ptn) proj = ptn->prj;
+	}
+
+	return proj;
+}
+
+/* ============================================================== */
+
 static void
 tree_select_row(GtkCTree *ctree, GtkCTreeNode* rownode, gint column)
 {

@@ -56,4 +56,10 @@ void ctree_subproj_hide (ProjTreeWindow *ptw);
 
 GtkWidget * ctree_get_widget(ProjTreeWindow *);
 
+/* The 'focus project' corresponds to the 'focus row' in the ctree:
+ *    its the project that corresponds to where the keyboard events
+ *    are directed.
+ */
+GttProject *ctree_get_focus_project (ProjTreeWindow *);
+
 #endif /* __GTT_CTREE_H__ */
