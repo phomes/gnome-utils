@@ -36,13 +36,27 @@ typedef struct _PropDlg
 	GtkEntry *title;
 	GtkEntry *desc;
 	GtkText  *notes;
+
 	GtkEntry *regular;
 	GtkEntry *overtime;
 	GtkEntry *overover;
 	GtkEntry *flatfee;
-	GtkEntry *minvl;
-	GtkEntry *ivl;
+
+	GtkEntry *minimum;
+	GtkEntry *interval;
 	GtkEntry *gap;
+
+	GtkOptionMenu *urgency;
+	GtkOptionMenu *importance;
+	GtkOptionMenu *status;
+
+	GnomeDateEdit *start;
+	GnomeDateEdit *end;
+	GnomeDateEdit *due;
+
+	GtkEntry *sizing;
+	GtkEntry *percent;
+
 	GttProject *proj;
 } PropDlg;
 
@@ -94,9 +108,9 @@ prop_set(GnomePropertyBox * pb, gint page, PropDlg *dlg)
 	if (2 == page)
 	{
 		gtt_project_freeze (dlg->proj);
-		ivl = atoi (gtk_entry_get_text(dlg->minvl));
+		ivl = atoi (gtk_entry_get_text(dlg->minimum));
 		gtt_project_set_min_interval (dlg->proj, ivl);
-		ivl = atoi (gtk_entry_get_text(dlg->ivl));
+		ivl = atoi (gtk_entry_get_text(dlg->interval));
 		gtt_project_set_auto_merge_interval (dlg->proj, ivl);
 		ivl = atoi (gtk_entry_get_text(dlg->gap));
 		gtt_project_set_auto_merge_gap (dlg->proj, ivl);
@@ -127,8 +141,8 @@ do_set_project(GttProject *proj, PropDlg *dlg)
 		gtk_entry_set_text(dlg->overtime, "0.0");
 		gtk_entry_set_text(dlg->overover, "0.0");
 		gtk_entry_set_text(dlg->flatfee, "0.0");
-		gtk_entry_set_text(dlg->minvl, "0");
-		gtk_entry_set_text(dlg->ivl, "0");
+		gtk_entry_set_text(dlg->minimum, "0");
+		gtk_entry_set_text(dlg->interval, "0");
 		gtk_entry_set_text(dlg->gap, "0");
 		return;
 	}
@@ -153,9 +167,9 @@ do_set_project(GttProject *proj, PropDlg *dlg)
 	gtk_entry_set_text(dlg->flatfee, buff);
 
 	g_snprintf (buff, 132, "%d", gtt_project_get_min_interval(proj));
-	gtk_entry_set_text(dlg->minvl, buff);
+	gtk_entry_set_text(dlg->minimum, buff);
 	g_snprintf (buff, 132, "%d", gtt_project_get_auto_merge_interval(proj));
-	gtk_entry_set_text(dlg->ivl, buff);
+	gtk_entry_set_text(dlg->interval, buff);
 	g_snprintf (buff, 132, "%d", gtt_project_get_auto_merge_gap(proj));
 	gtk_entry_set_text(dlg->gap, buff);
 
@@ -166,12 +180,32 @@ do_set_project(GttProject *proj, PropDlg *dlg)
 
 /* ============================================================== */
 
+#define TAGGED(NAME) ({						\
+	GtkWidget *widget;					\
+	widget = glade_xml_get_widget (gtxml, NAME);		\
+	gtk_signal_connect_object(GTK_OBJECT(widget), "changed",\
+		GTK_SIGNAL_FUNC(gnome_property_box_changed), 	\
+		GTK_OBJECT(dlg->dlg));				\
+	widget; })
+
+
+#define MUGGED(NAME) ({						\
+	GtkWidget *widget, *mw;					\
+        widget = glade_xml_get_widget (gtxml, NAME);		\
+        mw = gtk_option_menu_get_menu (GTK_OPTION_MENU(widget));\
+        gtk_signal_connect_object(GTK_OBJECT(mw), "selection_done", \
+                 GTK_SIGNAL_FUNC(gnome_property_box_changed),	\
+                 GTK_OBJECT(dlg->dlg));				\
+	GTK_OPTION_MENU(widget);				\
+})
+
+
+
 static PropDlg *
 prop_dialog_new (void)
 {
         PropDlg *dlg;
 	GladeXML *gtxml;
-	GtkWidget *e;
         static GnomeHelpMenuEntry help_entry = { NULL, "index.html#PROP" };
 
 	dlg = g_malloc(sizeof(PropDlg));
@@ -191,65 +225,30 @@ prop_dialog_new (void)
 
 	/* ------------------------------------------------------ */
 	/* grab the various entry boxes and hook them up */
-	e = glade_xml_get_widget (gtxml, "title box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->title = GTK_ENTRY(e);
 
-	e = glade_xml_get_widget (gtxml, "desc box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->desc = GTK_ENTRY(e);
+	dlg->title      = GTK_ENTRY(TAGGED("title box"));
+	dlg->desc       = GTK_ENTRY(TAGGED("desc box"));
+	dlg->notes      = GTK_TEXT(TAGGED("notes box"));
 
-	e = glade_xml_get_widget (gtxml, "notes box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->notes = GTK_TEXT(e);
+	dlg->regular    = GTK_ENTRY(TAGGED("regular box"));
+	dlg->overtime   = GTK_ENTRY(TAGGED("overtime box"));
+	dlg->overover   = GTK_ENTRY(TAGGED("overover box"));
+	dlg->flatfee    = GTK_ENTRY(TAGGED("flatfee box"));
 
-	e = glade_xml_get_widget (gtxml, "regular box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->regular = GTK_ENTRY(e);
+	dlg->minimum    = GTK_ENTRY(TAGGED("minimum box"));
+	dlg->interval   = GTK_ENTRY(TAGGED("interval box"));
+	dlg->gap        = GTK_ENTRY(TAGGED("gap box"));
 
-	e = glade_xml_get_widget (gtxml, "overtime box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->overtime = GTK_ENTRY(e);
+	dlg->urgency    = MUGGED("urgency menu");
+	dlg->importance = MUGGED("importance menu");
+	dlg->status     = MUGGED("status menu");
 
-	e = glade_xml_get_widget (gtxml, "overover box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->overover = GTK_ENTRY(e);
+	dlg->start      = GNOME_DATE_EDIT(TAGGED("start date"));
+	dlg->end        = GNOME_DATE_EDIT(TAGGED("end date"));
+	dlg->due        = GNOME_DATE_EDIT(TAGGED("due date"));
 
-	e = glade_xml_get_widget (gtxml, "flatfee box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->flatfee = GTK_ENTRY(e);
-
-	e = glade_xml_get_widget (gtxml, "minimum box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->minvl = GTK_ENTRY(e);
-
-	e = glade_xml_get_widget (gtxml, "interval box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->ivl = GTK_ENTRY(e);
-
-	e = glade_xml_get_widget (gtxml, "gap box");
-	gtk_signal_connect_object(GTK_OBJECT(e), "changed",
-				  GTK_SIGNAL_FUNC(gnome_property_box_changed), 
-				  GTK_OBJECT(dlg->dlg));
-	dlg->gap = GTK_ENTRY(e);
+	dlg->sizing     = GTK_ENTRY(TAGGED("sizing box"));
+	dlg->percent    = GTK_ENTRY(TAGGED("percent box"));
 
 	gnome_dialog_close_hides(GNOME_DIALOG(dlg->dlg), TRUE);
 /*
