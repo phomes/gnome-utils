@@ -51,7 +51,7 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 		
 		p = prn;
 		p = stpcpy (p, "<tr><td colspan=4>"
-			"<a href=\"gtt://bogus\">");
+			"<a href=\"gtt:memo\">");
 
 		buf = gtt_task_get_memo(tsk);
 		buf = buf? buf : _("(null)");
@@ -72,7 +72,9 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 			
 			p = prn;
 			p = stpcpy (p, 
-		"<tr><td>&nbsp;&nbsp;&nbsp;<td align=right>&nbsp;&nbsp;");
+				"<tr><td>&nbsp;&nbsp;&nbsp;"
+				"<td align=right>&nbsp;&nbsp;"
+				"<a href=\"gtt:interval\">");
 
 			/* print hour only or date too? */
 			if (0 != prev_stop) {
@@ -86,7 +88,10 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 
 			/* print hour only or date too? */
 			prt_date = is_same_day(start, stop);
-			p = stpcpy (p, "&nbsp;&nbsp;<td>&nbsp;&nbsp;");
+			p = stpcpy (p, 
+				"</a>&nbsp;&nbsp;"
+				"<td>&nbsp;&nbsp;"
+				"<a href=\"gtt:interval\">");
 			if (prt_date) {
 				p = print_date_time (p, 70, stop);
 			} else {
@@ -95,7 +100,7 @@ show_journal (GttPhtml *phtml, GttProject*prj)
 
 			prev_stop = stop;
 
-			p = stpcpy (p, "&nbsp;&nbsp;<td>&nbsp;&nbsp;");
+			p = stpcpy (p, "</a>&nbsp;&nbsp;<td>&nbsp;&nbsp;");
 			p = print_hours_elapsed (p, 40, elapsed, TRUE);
 			p = stpcpy (p, "&nbsp;&nbsp;");
 			len = p - prn;

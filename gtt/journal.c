@@ -29,8 +29,6 @@
 #include "phtml.h"
 #include "proj.h"
 
-extern GtkWidget *window;
-
 static gboolean glade_inited = FALSE;
 
 typedef struct wiggy_s {
@@ -38,6 +36,7 @@ typedef struct wiggy_s {
 	GtkHTML *htmlw;
 	GtkHTMLStream *handle;
 	GtkWidget *top;
+	GtkWidget *interval_popup;
 } Wiggy;
 
 /* ============================================================== */
@@ -131,7 +130,17 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 static void
 html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data) 
 {
-	printf ("clicked on link duude=%s\n", url);
+	Wiggy *wig = (Wiggy *) data;
+
+gtk_menu_popup(GTK_MENU(wig->interval_popup), NULL, NULL, NULL, NULL, 1, 0);
+	printf ("clicked on link duude=%s popup=%p\n", url,
+wig->interval_popup);
+}
+
+static void
+html_on_url_cb(GtkHTML * html, const gchar * url, gpointer data) 
+{
+	printf ("on the url duude=%s\n", url);
 }
 
 
@@ -189,12 +198,18 @@ edit_journal(GtkWidget *widget, gpointer data)
 	glade_xml_signal_connect_data (glxml, "on_print_clicked",
 	        GTK_SIGNAL_FUNC (on_print_clicked_cb), wig);
 	  
-	gtk_signal_connect(jnl_browser, "link_clicked",
+	gtk_signal_connect(GTK_OBJECT(jnl_browser), "link_clicked",
 		GTK_SIGNAL_FUNC(html_link_clicked_cb), wig);
+
+	gtk_signal_connect(GTK_OBJECT(jnl_browser), "on_url",
+		GTK_SIGNAL_FUNC(html_on_url_cb), wig);
 
 
 	gtk_widget_show (jnl_browser);
 	gtk_widget_show (jnl_top);
+
+	glxml = glade_xml_new ("glade/interval_popup.glade", "Interval Popup");
+	wig->interval_popup = glade_xml_get_widget (glxml, "Interval Popup");
 
 	if (!cur_proj)
 	{
