@@ -112,13 +112,19 @@ wiggy_error (GttPhtml *pl, int err, const char * msg)
 static void 
 on_print_clicked_cb (GtkWidget *w, gpointer data)
 {
+	GladeXML  *glxml;
 	printf ("duude print!!\n");
+	glxml = glade_xml_new ("glade/not-implemented.glade", "Not Implemented");
+
+	// wig->interval_edit = glade_xml_get_widget (glxml, "Interval Edit");
 }
 
 static void 
 on_save_clicked_cb (GtkWidget *w, gpointer data)
 {
+	GladeXML  *glxml;
 	printf ("duude save!!\n");
+	glxml = glade_xml_new ("glade/not-implemented.glade", "Not Implemented");
 }
 
 static void 
@@ -420,7 +426,16 @@ edit_journal(GtkWidget *widget, gpointer data)
 	glade_xml_signal_connect_data (glxml, "on_close_clicked",
 	        GTK_SIGNAL_FUNC (on_close_clicked_cb), wig);
 	  
+	glade_xml_signal_connect_data (glxml, "on_menu_close_activate",
+	        GTK_SIGNAL_FUNC (on_close_clicked_cb), wig);
+	  
 	glade_xml_signal_connect_data (glxml, "on_save_clicked",
+	        GTK_SIGNAL_FUNC (on_save_clicked_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_menu_save_activate",
+	        GTK_SIGNAL_FUNC (on_save_clicked_cb), wig);
+	  
+	glade_xml_signal_connect_data (glxml, "on_menu_saveas_activate",
 	        GTK_SIGNAL_FUNC (on_save_clicked_cb), wig);
 	  
 	glade_xml_signal_connect_data (glxml, "on_print_clicked",
