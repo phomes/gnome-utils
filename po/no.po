@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.1\n"
 "POT-Creation-Date: 2001-11-30 16:14-0600\n"
-"PO-Revision-Date: 2001-11-11 11:46+0100\n"
+"PO-Revision-Date: 2001-12-01 15:24+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -909,14 +909,12 @@ msgid "Total time spent on this project."
 msgstr "Total tid brukt på dette prosjektet."
 
 #: gtt/ctree.c:518
-#, fuzzy
 msgid "Entry"
-msgstr "Innleggets slutt:"
+msgstr "Oppføring"
 
 #: gtt/ctree.c:520
-#, fuzzy
 msgid "Time spent under the current diary entry."
-msgstr "Tid brukt på notat under aktiv oppgave."
+msgstr "Tid brukt på notat under aktiv dagbokoppføring."
 
 #: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
@@ -964,12 +962,11 @@ msgstr "Beskrivelse"
 
 #: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
 msgid "Diary Entry"
-msgstr ""
+msgstr "Dagbokoppføring"
 
 #: gtt/ctree.c:571
-#, fuzzy
 msgid "The current diary entry"
-msgstr "Lukk aktivt dokument"
+msgstr "Aktiv dagbokoppføring"
 
 #: gtt/ctree.c:578
 msgid "Estimated Project Start Date"
@@ -1091,9 +1088,8 @@ msgid "(empty)"
 msgstr "(tom)"
 
 #: gtt/ghtml.c:225
-#, fuzzy
 msgid "Notes"
-msgstr "Notater:"
+msgstr "Notater"
 
 #: gtt/ghtml.c:229
 msgid "Task Time"
@@ -1201,7 +1197,7 @@ msgstr ""
 #: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
 msgid "New Diary Entry"
-msgstr ""
+msgstr "Ny dagbokoppføring"
 
 #: gtt/journal.c:436
 msgid "Save HTML To File"
@@ -1341,7 +1337,7 @@ msgstr "Vis timelistejournal for dette prosjektet"
 
 #: gtt/menus.c:72 gtt/menus.c:160
 msgid "New Diary _Entry"
-msgstr ""
+msgstr "Ny dagbokopp_føring"
 
 #: gtt/menus.c:73 gtt/menus.c:161
 msgid "Change the current task for this project"
@@ -1595,14 +1591,12 @@ msgid "Edit the Start & Stop Times"
 msgstr "Rediger start- og stopptider"
 
 #: gtt/glade/interval_popup.glade.h:5
-#, fuzzy
 msgid "Insert Diary Entry"
-msgstr "Sett _inn på slutten"
+msgstr "Sett inn dagbokoppføring"
 
 #: gtt/glade/interval_popup.glade.h:6
-#, fuzzy
 msgid "Insert a new diary entry above this time interval."
-msgstr "Sett inn et nytt notat over dette tidsintervallet."
+msgstr "Sett inn en ny dagbokoppføring over dette tidsintervallet."
 
 #: gtt/glade/interval_popup.glade.h:7
 msgid "Merge Down"
@@ -1622,12 +1616,11 @@ msgstr "Flett opp"
 
 #: gtt/glade/interval_popup.glade.h:11
 msgid "Paste Diary Entry"
-msgstr ""
+msgstr "Lim inn dagbokoppføring"
 
 #: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
-#, fuzzy
 msgid "Paste a previously cut diary entry."
-msgstr "Lim inn et tidligere utklippet notat."
+msgstr "Lim inn en tidligere utklippet dagbokoppføring."
 
 #: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
 #: mini-utils/gcolorsel/menus.c:913 mini-utils/gshutdown/gshutdown.c:155
@@ -1751,9 +1744,8 @@ msgid "Shell Commands"
 msgstr "Skallkommandoer"
 
 #: gtt/glade/prefs.glade.h:21
-#, fuzzy
 msgid "Show Current Diary Entry"
-msgstr "Vis aktiv oppgave"
+msgstr "Vis aktiv dagbokoppføring"
 
 #: gtt/glade/prefs.glade.h:22
 msgid "Show Estimated Effort"
@@ -1808,9 +1800,8 @@ msgid "Show Table Header"
 msgstr "Vis tabelloverskrift"
 
 #: gtt/glade/prefs.glade.h:35
-#, fuzzy
 msgid "Show Time For The Current Diary Entry"
-msgstr "Vis tid for aktiv oppgave"
+msgstr "Vis tid for aktiv dagbokoppføring"
 
 #: gtt/glade/prefs.glade.h:36
 msgid "Show Time This Month"
@@ -2010,11 +2001,9 @@ msgid "Importance:"
 msgstr "Viktighet:"
 
 #: gtt/glade/project_properties.glade.h:22
-#, fuzzy
 msgid ""
 "Internal notes about the project that will not be printed on an invoice."
-msgstr ""
-"Interne notater om prosjektet, notater som ikke vil skrives ut på en faktura."
+msgstr "Interne notater om prosjektet som ikke vil skrives ut på en faktura."
 
 #: gtt/glade/project_properties.glade.h:23
 msgid "Intervals"
@@ -2095,7 +2084,7 @@ msgstr "Rate for 100% overtid (overtid på søndager, etc)"
 
 #: gtt/glade/project_properties.glade.h:45
 msgid "Time below which an interval is merged with its neighbors"
-msgstr ""
+msgstr "Mindre tidsintervaller enn dette vil slås sammen med forutgående"
 
 #: gtt/glade/project_properties.glade.h:46
 msgid "Urgency:"
@@ -2114,55 +2103,48 @@ msgid "seconds"
 msgstr "sekunder"
 
 #: gtt/glade/task_popup.glade.h:1
-#, fuzzy
 msgid "Add a new time interval"
-msgstr "Sett inn et nytt notat over dette tidsintervallet."
+msgstr "Legg til et nytt tidsintervall"
 
 #: gtt/glade/task_popup.glade.h:2
 msgid "Delete _Times"
 msgstr "Slett _tider"
 
 #: gtt/glade/task_popup.glade.h:3
-#, fuzzy
 msgid "Delete the diary entry only, keep the time intervals"
-msgstr "Slett kun notatet, behold tidsintervallene"
+msgstr "Slett kun dagbokoppføringen, behold tidsintervallene"
 
 #: gtt/glade/task_popup.glade.h:4
-#, fuzzy
 msgid "Delete the diary entry, and the time intervals below it."
-msgstr "Slett notatet og tidsintervallene under det."
+msgstr "Slett dagbokoppføringen og tidsintervallene under den."
 
 #: gtt/glade/task_popup.glade.h:5
-#, fuzzy
 msgid "Edit the diary entry and other task properties."
-msgstr "Rediger notatet og andre oppgaveegenskaper."
+msgstr "Rediger dagbokoppføringen og andre egenskaper for oppgaven."
 
 #: gtt/glade/task_popup.glade.h:6
-#, fuzzy
 msgid "Insert a new diary entry above this one."
-msgstr "Sett inn et nytt notat over dette."
+msgstr "Sett inn en ny dagbokoppføring over denne."
 
 #: gtt/glade/task_popup.glade.h:7
-#, fuzzy
 msgid "New Time Interval"
-msgstr "Slett dette intervallet"
+msgstr "Nytt tidsintervall"
 
 #: gtt/glade/task_popup.glade.h:9
-#, fuzzy
 msgid "_Delete Diary Entry"
-msgstr "Slett parameter"
+msgstr "Slett _dagbokoppføring"
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
-msgstr ""
+msgstr "R_ediger dagbokoppføring"
 
 #: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
-msgstr ""
+msgstr "_Ny dagbokoppføring"
 
 #: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
-msgstr ""
+msgstr "_Lim inn dagbokoppføring"
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
@@ -2189,14 +2171,12 @@ msgid "Billing Status:"
 msgstr "Fakturastatus:"
 
 #: gtt/glade/task_properties.glade.h:9
-#, fuzzy
 msgid "Diary Entry Properties"
-msgstr "Egenskaper for GDiskFree"
+msgstr "Egenskaper for dagbokoppføring"
 
 #: gtt/glade/task_properties.glade.h:10
-#, fuzzy
 msgid "Diary Entry:"
-msgstr "Katalog:"
+msgstr "Dagbokoppføring:"
 
 #: gtt/glade/task_properties.glade.h:11
 msgid "Fee rate to be charged for this task."
@@ -2231,7 +2211,7 @@ msgstr "100%"
 #: gtt/glade/task_properties.glade.h:23
 msgid ""
 "The billed unit of time will be rounded to an integer multiple of this time."
-msgstr ""
+msgstr "Fakturert tidsenhet vil rundes av til et heltallsmultiplum av denne tiden."
 
 #: gtt/glade/task_properties.glade.h:24
 msgid "minutes"
