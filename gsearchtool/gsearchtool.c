@@ -166,12 +166,12 @@ build_search_command (void)
 	file_is_named_utf8 = (gchar *) gtk_entry_get_text (GTK_ENTRY(gnome_entry_gtk_entry (GNOME_ENTRY(interface.file_is_named_entry))));
 
 	if (!file_is_named_utf8 || !*file_is_named_utf8) {
-		file_is_named_locale = NULL;
+		file_is_named_utf8 = g_strdup ("*");
 	} 
 	else {
-		file_is_named_locale = g_locale_from_utf8 (file_is_named_utf8, -1, NULL, NULL, NULL);
 		gnome_entry_prepend_history (GNOME_ENTRY(interface.file_is_named_entry), TRUE, file_is_named_utf8);
 	}
+	file_is_named_locale = g_locale_from_utf8 (file_is_named_utf8, -1, NULL, NULL, NULL);
 	
 	look_in_folder_utf8 = gnome_file_entry_get_full_path (GNOME_FILE_ENTRY(interface.look_in_folder_entry), FALSE);
 	look_in_folder_locale = g_locale_from_utf8 (look_in_folder_utf8, -1, NULL, NULL, NULL);
@@ -201,7 +201,7 @@ build_search_command (void)
 						file_is_named_escaped);
 		} 
 		else {
-			g_string_append_printf (command, "find \"%s\" '!' -type d '!' -type p -name '%s' -xdev -print", 
+			g_string_append_printf (command, "find \"%s\" '!' -type p -name '%s' -xdev -print", 
 						look_in_folder_locale, 
 						file_is_named_escaped);
 		}
@@ -216,12 +216,12 @@ build_search_command (void)
 		search_command.file_is_named_pattern = g_strdup(file_is_named_utf8);
 		
 		if (file_is_named_escaped == NULL) {
-			g_string_append_printf (command, "find \"%s\" '!' -type d '!' -type p -name '%s' ", 
+			g_string_append_printf (command, "find \"%s\" '!' -type p -name '%s' ", 
 					 	look_in_folder_locale,
 						"*");
 		}
 		else {
-			g_string_append_printf (command, "find \"%s\" '!' -type d '!' -type p -name '%s' ", 
+			g_string_append_printf (command, "find \"%s\" '!' -type p -name '%s' ", 
 					 	look_in_folder_locale,
 						file_is_named_escaped);
 		}
@@ -611,7 +611,6 @@ handle_popt_args (void)
 	if (PoptArgument.name != NULL) {
 		gtk_entry_set_text (GTK_ENTRY(gnome_entry_gtk_entry (GNOME_ENTRY(interface.file_is_named_entry))),
 				    g_locale_to_utf8 (PoptArgument.name, -1, NULL, NULL, NULL));
-		gtk_widget_set_sensitive (interface.find_button, TRUE);
 	}
 	if (PoptArgument.path != NULL) {
 		gtk_entry_set_text (GTK_ENTRY(gnome_file_entry_gtk_entry (GNOME_FILE_ENTRY(interface.look_in_folder_entry))),
@@ -714,8 +713,10 @@ handle_search_command_stdout_io (GIOChannel 	*ioc,
 		GString      *string;
 		GdkRectangle prior_rect;
 		GdkRectangle after_rect;
+		gint	     look_in_folder_string_length;
 		
 		string = g_string_new (NULL);
+		look_in_folder_string_length = strlen (search_data->look_in_folder);
 
 		while (ioc->is_readable != TRUE);
 
@@ -758,25 +759,28 @@ handle_search_command_stdout_io (GIOChannel 	*ioc,
 				continue;
 			}
 			
-			if (strncmp (string->str, search_data->look_in_folder, strlen (search_data->look_in_folder)) == 0) { 
+			if (strncmp (string->str, search_data->look_in_folder, look_in_folder_string_length) == 0) { 
 			
-				filename = g_path_get_basename (utf8);
+				if (strlen (string->str) != look_in_folder_string_length) {
+				
+					filename = g_path_get_basename (utf8);
 			
-				if (fnmatch (search_data->file_is_named_pattern, filename, FNM_NOESCAPE) != FNM_NOMATCH) {
-					if (search_data->show_hidden_files == TRUE) {
-						if (search_data->regex_matching_enabled == FALSE) {
-							add_file_to_search_results (string->str, interface.model, &interface.iter);
-						} 
-						else if (compare_regex (search_data->regex_string, filename) == TRUE) {
-							add_file_to_search_results (string->str, interface.model, &interface.iter);
+					if (fnmatch (search_data->file_is_named_pattern, filename, FNM_NOESCAPE) != FNM_NOMATCH) {
+						if (search_data->show_hidden_files == TRUE) {
+							if (search_data->regex_matching_enabled == FALSE) {
+								add_file_to_search_results (string->str, interface.model, &interface.iter);
+							} 
+							else if (compare_regex (search_data->regex_string, filename) == TRUE) {
+								add_file_to_search_results (string->str, interface.model, &interface.iter);
+							}
 						}
-					}
-					else if (is_path_hidden (string->str) == FALSE) {
-						if (search_data->regex_matching_enabled == FALSE) {
-							add_file_to_search_results (string->str, interface.model, &interface.iter);
-						} 
-						else if (compare_regex (search_data->regex_string, filename) == TRUE) {
-							add_file_to_search_results (string->str, interface.model, &interface.iter);
+						else if (is_path_hidden (string->str) == FALSE) {
+							if (search_data->regex_matching_enabled == FALSE) {
+								add_file_to_search_results (string->str, interface.model, &interface.iter);
+							} 
+							else if (compare_regex (search_data->regex_string, filename) == TRUE) {
+								add_file_to_search_results (string->str, interface.model, &interface.iter);
+							}
 						}
 					}
 				}
@@ -1483,7 +1487,7 @@ create_main_window (void)
 	gtk_box_pack_end (GTK_BOX(hbox), interface.stop_button, FALSE, FALSE, GNOME_PAD_SMALL);
 	gtk_box_pack_end (GTK_BOX(hbox), interface.find_button, FALSE, FALSE, GNOME_PAD_SMALL);
 	gtk_widget_set_sensitive (interface.stop_button, FALSE);
-	gtk_widget_set_sensitive (interface.find_button, FALSE);
+	gtk_widget_set_sensitive (interface.find_button, TRUE);
 	
 	if (interface.is_gail_loaded)
 	{
