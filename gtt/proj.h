@@ -362,6 +362,14 @@ void project_list_sort_year(void);
 void project_list_sort_ever(void);
 void project_list_sort_title(void);
 void project_list_sort_desc(void);
+void project_list_sort_start(void);
+void project_list_sort_end(void);
+void project_list_sort_due(void);
+void project_list_sort_sizing(void);
+void project_list_sort_percent(void);
+void project_list_sort_urgency(void);
+void project_list_sort_importance(void);
+void project_list_sort_status(void);
 
 /* The gtt_project_list_total_secs_day() routine returns the
  *    total number of seconds spent on all projects today,

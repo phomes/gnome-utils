@@ -2396,6 +2396,72 @@ cmp_desc(const void *aa, const void *bb)
 	return strcmp(a->desc, b->desc);
 }
 
+static int
+cmp_start(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->estimated_start - a->estimated_start);
+}
+
+static int
+cmp_end(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->estimated_end - a->estimated_end);
+}
+
+
+static int
+cmp_due(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->due_date - a->due_date);
+}
+
+
+static int
+cmp_sizing(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->sizing - a->sizing);
+}
+
+static int
+cmp_percent(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->percent_complete - a->percent_complete);
+}
+
+static int
+cmp_urgency(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->urgency - a->urgency);
+}
+
+static int
+cmp_importance(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->importance - a->importance);
+}
+
+static int
+cmp_status(const void *aa, const void *bb)
+{
+	const GttProject *a = aa;
+	const GttProject *b = bb;
+	return (b->status - a->status);
+}
+
 
 void
 project_list_sort_day(void)
@@ -2443,6 +2509,54 @@ void
 project_list_sort_desc(void)
 {
 	plist = project_list_sort(plist, cmp_desc);
+}
+
+void
+project_list_sort_start(void)
+{
+	plist = project_list_sort(plist, cmp_start);
+}
+
+void
+project_list_sort_end(void)
+{
+	plist = project_list_sort(plist, cmp_end);
+}
+
+void
+project_list_sort_due(void)
+{
+	plist = project_list_sort(plist, cmp_due);
+}
+
+void
+project_list_sort_sizing(void)
+{
+	plist = project_list_sort(plist, cmp_sizing);
+}
+
+void
+project_list_sort_percent(void)
+{
+	plist = project_list_sort(plist, cmp_percent);
+}
+
+void
+project_list_sort_urgency(void)
+{
+	plist = project_list_sort(plist, cmp_urgency);
+}
+
+void
+project_list_sort_importance(void)
+{
+	plist = project_list_sort(plist, cmp_importance);
+}
+
+void
+project_list_sort_status(void)
+{
+	plist = project_list_sort(plist, cmp_status);
 }
 
 /* =========================== END OF FILE ========================= */
