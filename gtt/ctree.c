@@ -740,6 +740,8 @@ ctree_setup (ProjTreeWindow *ptw)
 		ptn = gtt_project_get_private_data (cur_proj);
 		gtk_ctree_node_moveto(tree_w, ptn->ctnode, -1,
 				 0.5, 0.0);
+		/* hack alert -- we should set the focus row 
+		 * here as well */
 	}
 	gtk_widget_queue_draw(GTK_WIDGET(tree_w));
 }
