@@ -437,9 +437,23 @@ resolve_path (char *path_frag)
 	/* look in the local build dir first (for testing) */
 	
 	p = buff;
-	p = stpcpy (p, "phtml/C/");
+	p = stpcpy (p, "ghtml/C/");
 	p = stpcpy (p, path_frag);
 	path = gnome_datadir_file (buff);
+	if (NULL == path)
+	{
+		p = buff;
+		p = stpcpy (p, "gtt/ghtml/C/");
+		p = stpcpy (p, path_frag);
+		path = gnome_datadir_file (buff);
+	}
+	if (NULL == path)
+	{
+		p = buff;
+		p = stpcpy (p, "phtml/C/");
+		p = stpcpy (p, path_frag);
+		path = gnome_datadir_file (buff);
+	}
 	if (NULL == path)
 	{
 		p = buff;
@@ -454,8 +468,8 @@ void
 edit_journal(GtkWidget *w, gpointer data)
 {
 	char * path;
-	path = resolve_path ("journal.phtml");
-	do_show_report (path, cur_proj, 0);
+	path = resolve_path ("journal.ghtml");
+	do_show_report (path, cur_proj, 1);
 }
 
 void

@@ -37,6 +37,8 @@ struct gtt_ghtml_s
 	void (*close_stream) (GttGhtml *, gpointer);
 	void (*error) (GttGhtml *, int errcode, const char * msg, gpointer);
 	gpointer user_data;
+
+	GttProject *prj;
 };
 
 /* ============================================================== */
@@ -44,16 +46,147 @@ struct gtt_ghtml_s
 static GttGhtml *ghtml_global_hack = NULL;   /* seems like guile screwed the pooch */
 
 /* ============================================================== */
+/* a simple, hard-coded version of show_table */
 
-static
-SCM gtt_hello (void)
+static void
+do_show_journal (GttGhtml *ghtml, GttProject*prj)
+{
+	GList *node;
+	char *p;
+	char prn[2000];
+
+	p = prn;
+	p += sprintf (p, "<table border=1><tr><th colspan=4>%s\n"
+		"<tr><th>&nbsp;<th>%s<th>%s<th>%s",
+		_("Memo"), _("Start"), _("Stop"), _("Elapsed"));
+
+	(ghtml->write_stream) (ghtml, prn, p-prn, ghtml->user_data);
+
+	for (node = gtt_project_get_tasks(prj); node; node=node->next)
+	{
+		const char *pp;
+		int prt_date = 1;
+		time_t prev_stop = 0;
+		GList *in;
+		GttTask *tsk = node->data;
+		
+		p = prn;
+		p = stpcpy (p, "<tr><td colspan=4>"
+			"<a href=\"gtt:task:");
+		p += sprintf (p, "%p\">", tsk);
+
+		pp = gtt_task_get_memo(tsk);
+		if (!pp || !pp[0]) pp = _("(empty)");
+		p = stpcpy (p, pp);
+		p = stpcpy (p, "</a>");
+
+		(ghtml->write_stream) (ghtml, prn, p-prn, ghtml->user_data);
+
+		
+		for (in=gtt_task_get_intervals(tsk); in; in=in->next)
+		{
+			size_t len;
+			GttInterval *ivl = in->data;
+			time_t start, stop, elapsed;
+			start = gtt_interval_get_start (ivl);
+			stop = gtt_interval_get_stop (ivl);
+			elapsed = stop - start;
+			
+			p = prn;
+			p = stpcpy (p, 
+				"<tr><td>&nbsp;&nbsp;&nbsp;"
+				"<td align=right>&nbsp;&nbsp;"
+				"<a href=\"gtt:interval:");
+			p += sprintf (p, "%p\">", ivl);
+
+			/* print hour only or date too? */
+			if (0 != prev_stop) {
+				prt_date = is_same_day(start, prev_stop);
+			}
+			if (prt_date) {
+				p = print_date_time (p, 100, start);
+			} else {
+				p = print_time (p, 100, start);
+			}
+
+			/* print hour only or date too? */
+			prt_date = is_same_day(start, stop);
+			p = stpcpy (p, 
+				"</a>&nbsp;&nbsp;"
+				"<td>&nbsp;&nbsp;"
+				"<a href=\"gtt:interval:");
+			p += sprintf (p, "%p\">", ivl);
+			if (prt_date) {
+				p = print_date_time (p, 70, stop);
+			} else {
+				p = print_time (p, 70, stop);
+			}
+
+			prev_stop = stop;
+
+			p = stpcpy (p, "</a>&nbsp;&nbsp;<td>&nbsp;&nbsp;");
+			p = print_hours_elapsed (p, 40, elapsed, TRUE);
+			p = stpcpy (p, "&nbsp;&nbsp;");
+			len = p - prn;
+			(ghtml->write_stream) (ghtml, prn, len, ghtml->user_data);
+		}
+
+	}
+	
+	p = "</table>";
+	(ghtml->write_stream) (ghtml, p, strlen(p), ghtml->user_data);
+}
+
+/* ============================================================== */
+
+static SCM 
+gtt_hello (void)
 {
 	GttGhtml *ghtml = ghtml_global_hack;
 	char *p;
 
-	p = "Hello World!<br><br>";
+	p = "Hello World!";
 	(ghtml->write_stream) (ghtml, p, strlen(p), ghtml->user_data);
 
+	return SCM_UNSPECIFIED;
+}
+
+/* ============================================================== */
+
+static SCM 
+project_title (void)
+{
+	GttGhtml *ghtml = ghtml_global_hack;
+	const char *p;
+
+	p = gtt_project_get_title (ghtml->prj);
+	(ghtml->write_stream) (ghtml, p, strlen(p), ghtml->user_data);
+
+	return SCM_UNSPECIFIED;
+}
+
+/* ============================================================== */
+
+static SCM 
+project_desc (void)
+{
+	GttGhtml *ghtml = ghtml_global_hack;
+	const char *p;
+
+	p = gtt_project_get_desc (ghtml->prj);
+	(ghtml->write_stream) (ghtml, p, strlen(p), ghtml->user_data);
+
+	return SCM_UNSPECIFIED;
+}
+
+/* ============================================================== */
+
+static SCM 
+show_journal (void)
+{
+	GttGhtml *ghtml = ghtml_global_hack;
+
+	do_show_journal (ghtml, ghtml->prj);
 	return SCM_UNSPECIFIED;
 }
 
@@ -80,6 +213,7 @@ gtt_ghtml_display (GttGhtml *ghtml, const char *filepath,
 		(ghtml->error) (ghtml, 404, filepath, ghtml->user_data);
 		return;
 	}
+	ghtml->prj = prj;
 	
 	/* ugh. gag. choke. puke. */
 	ghtml_global_hack = ghtml;
@@ -171,6 +305,9 @@ static void
 register_procs (void)
 {
 	gh_new_procedure("gtt-hello",   gtt_hello,   0, 0, 0);
+	gh_new_procedure("gtt-project-title",   project_title,   0, 0, 0);
+	gh_new_procedure("gtt-project-desc",   project_desc,   0, 0, 0);
+	gh_new_procedure("gtt-basic-journal",   show_journal,   0, 0, 0);
 }
 
 
@@ -188,6 +325,7 @@ gtt_ghtml_new (void)
 	}
 
 	p = g_new0 (GttGhtml, 1);
+	p->prj = NULL;
 
 	return p;
 }
