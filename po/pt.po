@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2002-08-10 01:21+0100\n"
-"PO-Revision-Date: 2002-08-10 02:35+0000\n"
+"POT-Creation-Date: 2002-08-15 00:20+0100\n"
+"PO-Revision-Date: 2002-08-15 00:25+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -86,6 +86,10 @@ msgstr "Duarte Loreto (happyguy_pt@hotmail.com)"
 #: gcalc/gcalc.c:60 gcalc/gcalc.c:191
 msgid "GNOME Calculator"
 msgstr "Calculadora GNOME"
+
+#: gcalc/gcalc.c:61
+msgid "(C) 1998 the Free Software Foundation"
+msgstr "(C) 1998 the Free Software Foundation"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
@@ -883,7 +887,8 @@ msgid ""
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
 "Especificar se deverá ser utilizada a procura inteligente. Esta chave está "
-"dependende do suporte pelo servidor a esta opção. Por omissão o valor é VERDADE"
+"dependende do suporte pelo servidor a esta opção. Por omissão o valor é "
+"VERDADE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -894,8 +899,8 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"O servidor de dicionário onde se ligar. O servidor por omissão é o dict.org. Veja "
-"http://www.dict.org para detalhes sobre outros servidores"
+"O servidor de dicionário onde se ligar. O servidor por omissão é o dict.org. "
+"Veja http://www.dict.org para detalhes sobre outros servidores"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
@@ -903,7 +908,8 @@ msgid ""
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
 "O nome da base de dados individual a utilizar no servidor de dicionário. ! "
-"especifica que o dicionário-gnome deverá procurar todas as bases de dados no servidor"
+"especifica que o dicionário-gnome deverá procurar todas as bases de dados no "
+"servidor"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
