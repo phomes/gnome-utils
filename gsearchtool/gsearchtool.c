@@ -1159,7 +1159,7 @@ handle_search_command_stdout_io (GIOChannel 	*ioc,
 				
 			} while (status == G_IO_STATUS_AGAIN && broken_pipe == FALSE);
 			
-			if (pipe == TRUE) {
+			if (broken_pipe == TRUE) {
 				break;
 			}
 			
