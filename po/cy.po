@@ -1,0 +1,2197 @@
+# Translation of gnome-utils.po to Cymraeg
+# Gnome yn Gymraeg.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# www.kyfieithu.co.uk <kyfieithu@kyfieithu.co.uk>, 2003.
+# KGyfieithu <kyfieithu@dotmon.com>, 2003
+# Owain Green, Gruffudd Williams, Steve Griffiths, 2003.
+#
+# More terminology. Floppy disc. See around line 640-650 or so.
+# disg llipa ?
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"POT-Creation-Date: 2003-07-20 23:12+0100\n"
+"PO-Revision-Date: 2003-07-20 20:23+0100\n"
+"Last-Translator: Telsa Gwynne <hobbit@aloss.ukuu.org.uk>\n"
+"Language-Team: Cymraeg <gnome-cy@pengwyn.linux.org.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.1\n"
+"\n"
+
+#: exe-handler/gnome-exe-handler.c:76
+msgid ""
+"Executing arbitrary programs that you downloaded from the network might be "
+"dangerous.\n"
+"\n"
+"Are you sure you want to run `%s'?"
+msgstr ""
+"Gall rhedeg rhaglenni a lawrlwythoch oddiar y rhwydwaith fod yn beryglus.\n"
+"\n"
+"Ydych chi'n siwr eich bod eisiau rhedeg `%s'?"
+
+#: exe-handler/gnome-exe-handler.c:83
+msgid "Could not access file permissions"
+msgstr "Ni allwyd cyrchu breintiau'r ffeil"
+
+#: exe-handler/gnome-exe-handler.c:88
+#, c-format
+msgid "Could not execute the file `%s' due to a permission problem"
+msgstr "Ni allwyd rhedeg y ffeil `%s' oherwydd problem braint "
+
+#: exe-handler/gnome-exe-handler.c:104
+#, c-format
+msgid "Failure at executing `%s'"
+msgstr "Methwyd rhedeg `%s'"
+
+#: exe-handler/gnome-exe-handler.c:123
+#, c-format
+msgid "It was not possible to open the file `%s'"
+msgstr "Nid oedd yn bosibl agor y ffeil `%s'"
+
+#: exe-handler/gnome-exe-handler.c:132
+#, c-format
+msgid "The file `%s' is empty"
+msgstr "Mae'r ffeil `%s' yn wag"
+
+#: exe-handler/gnome-exe-handler.c:137
+#, c-format
+msgid "There was an error. `%s' is empty"
+msgstr "'Roedd yna wall. Mae `%s' yn wag"
+
+#: exe-handler/gnome-exe-handler.c:152
+msgid "This is a library and can not be executed"
+msgstr "Rhaglengell yw hon, a ni ellir ei gweithredu"
+
+#: exe-handler/gnome-exe-handler.c:158
+msgid "The file is a core file and can not be executed"
+msgstr "Ffeil craidd yw hon, a ni ellir ei weithredu"
+
+#: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
+msgid "This is an unknown kind of executable"
+msgstr "Gweithredadwyn o fath anhysbys yw hwn"
+
+#: exe-handler/gnome-exe-handler.c:192
+msgid ""
+"The executable is for a different platform and can not be executed on this "
+"system"
+msgstr ""
+"Mae'r gweithredadwyn yma ar gyfer platfform arall, a ni ellir ei weithredu "
+"ar y system yma"
+
+#. Translator credits
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
+#: logview/about.c:52
+msgid "translator_credits"
+msgstr "Owain Green"
+
+#: gcalc/gcalc.c:60
+msgid "GNOME Calculator"
+msgstr "Cyfrifiannell GNOME"
+
+#: gcalc/gcalc.c:61
+msgid "(C) 1998 Free Software Foundation, Inc."
+msgstr "(h)1998 Sefydliad Meddalwedd Rhydd, Inc"
+
+#: gcalc/gcalc.c:62
+msgid "Simple double precision calculator similar to xcalc"
+msgstr "Cyfrifiannell syml o gywirdeb dwbl sy'n debyg i xcalc"
+
+#: gcalc/gcalc.c:140
+msgid "_Calculator"
+msgstr "_Cyfrifiannell"
+
+#: gcalc/gcalc.c:191 gcalc/gnome-calculator.desktop.in.h:1
+msgid "Calculator"
+msgstr "Cyfrifiannell"
+
+#: gcalc/gnome-calc.c:252
+msgid "inf"
+msgstr "inf"
+
+#: gcalc/gnome-calc.c:478
+msgid "DEG"
+msgstr "DEG"
+
+#: gcalc/gnome-calc.c:480
+msgid "RAD"
+msgstr "RAD"
+
+#: gcalc/gnome-calc.c:482
+msgid "GRAD"
+msgstr "GRAD"
+
+#: gcalc/gnome-calc.c:1256
+msgid "1/x"
+msgstr "1/x"
+
+#: gcalc/gnome-calc.c:1256
+msgid "Inverse"
+msgstr "Gwrthdro"
+
+#: gcalc/gnome-calc.c:1257
+msgid "x<sup>2</sup>"
+msgstr "x<sup>2</sup>"
+
+#: gcalc/gnome-calc.c:1257
+msgid "Square"
+msgstr "Sgwâr"
+
+#: gcalc/gnome-calc.c:1258
+msgid "SQRT"
+msgstr "SQRT"
+
+#: gcalc/gnome-calc.c:1258
+msgid "Square root"
+msgstr "Ail isradd"
+
+#: gcalc/gnome-calc.c:1259
+msgid "CE/C"
+msgstr "CE/C"
+
+#: gcalc/gnome-calc.c:1259
+msgid "Clear"
+msgstr "Clirio"
+
+#: gcalc/gnome-calc.c:1260
+msgid "AC"
+msgstr "AC"
+
+#: gcalc/gnome-calc.c:1260
+msgid "Reset"
+msgstr "Ail-osod"
+
+#: gcalc/gnome-calc.c:1262
+msgid "INV"
+msgstr "INV"
+
+#: gcalc/gnome-calc.c:1262
+msgid "Inverse trigonometry/log function"
+msgstr "Ffwythiant trigonometregol/log gwrthdro"
+
+#. inverse button
+#: gcalc/gnome-calc.c:1263
+msgid "sin"
+msgstr "sin"
+
+#: gcalc/gnome-calc.c:1263
+msgid "Sine"
+msgstr "Sin"
+
+#: gcalc/gnome-calc.c:1264
+msgid "cos"
+msgstr "cos"
+
+#: gcalc/gnome-calc.c:1264
+msgid "Cosine"
+msgstr "Cosin"
+
+#: gcalc/gnome-calc.c:1265
+msgid "tan"
+msgstr "tan"
+
+#: gcalc/gnome-calc.c:1265
+msgid "Tangent"
+msgstr "Tanged"
+
+#. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
+#: gcalc/gnome-calc.c:1267
+msgid " DEG  "
+msgstr " DEG  "
+
+#: gcalc/gnome-calc.c:1267
+msgid "Switch degrees / radians / grad"
+msgstr "Newid rhwng graddau / radianau / gradiau"
+
+#: gcalc/gnome-calc.c:1269
+msgid "e"
+msgstr "e"
+
+#: gcalc/gnome-calc.c:1269
+msgid "Base of Natural Logarithm"
+msgstr "Bn Logarithmau Naturiol"
+
+#: gcalc/gnome-calc.c:1270
+msgid "EE"
+msgstr "EE"
+
+#: gcalc/gnome-calc.c:1270
+msgid "Add digit"
+msgstr "Ychwanegu digid"
+
+#: gcalc/gnome-calc.c:1271
+msgid "log"
+msgstr "log"
+
+#: gcalc/gnome-calc.c:1271
+msgid "Base 10 Logarithm"
+msgstr "Logarithm Bn 10"
+
+#: gcalc/gnome-calc.c:1272
+msgid "ln"
+msgstr "ln"
+
+#: gcalc/gnome-calc.c:1272
+msgid "Natural Logarithm"
+msgstr "Logarithm Naturiol"
+
+#: gcalc/gnome-calc.c:1273
+msgid "x<sup>y</sup>"
+msgstr "x<sup>y</sup>"
+
+#: gcalc/gnome-calc.c:1273
+msgid "Power"
+msgstr "Pŵer"
+
+#: gcalc/gnome-calc.c:1275
+msgid "PI"
+msgstr "PI"
+
+#: gcalc/gnome-calc.c:1276
+msgid "x!"
+msgstr "x!"
+
+#: gcalc/gnome-calc.c:1276
+msgid "Factorial"
+msgstr "Ffactorial"
+
+#: gcalc/gnome-calc.c:1277
+msgid "("
+msgstr "("
+
+#: gcalc/gnome-calc.c:1277
+msgid "Opening Parenthesis"
+msgstr "Cromfach Agoriadol"
+
+#: gcalc/gnome-calc.c:1278
+msgid ")"
+msgstr ")"
+
+#: gcalc/gnome-calc.c:1278
+msgid "Closing Parenthesis"
+msgstr "Cromfach Ceuol"
+
+#: gcalc/gnome-calc.c:1279
+msgid "/"
+msgstr "/"
+
+#: gcalc/gnome-calc.c:1279
+msgid "Divide by"
+msgstr "Rhannu gan "
+
+#: gcalc/gnome-calc.c:1281
+msgid "STO"
+msgstr "STO"
+
+#: gcalc/gnome-calc.c:1281
+msgid ""
+"Store the value in the\n"
+"display field in memory"
+msgstr ""
+"Cofio'r gwerth sydd yn cael\n"
+" ei ddangos"
+
+#: gcalc/gnome-calc.c:1282
+msgid "7"
+msgstr "7"
+
+#: gcalc/gnome-calc.c:1283
+msgid "8"
+msgstr "8"
+
+#: gcalc/gnome-calc.c:1284
+msgid "9"
+msgstr "9"
+
+#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:2
+msgid "*"
+msgstr "*"
+
+#: gcalc/gnome-calc.c:1285
+msgid "Multiply by"
+msgstr "Lluosi gyda"
+
+#: gcalc/gnome-calc.c:1287
+msgid "RCL"
+msgstr "RCL"
+
+#: gcalc/gnome-calc.c:1287
+msgid ""
+"Display the value in memory\n"
+"in the display field"
+msgstr ""
+"Dangos y gwerth sydd wedi ei\n"
+"gadw yn y cof"
+
+#: gcalc/gnome-calc.c:1288
+msgid "4"
+msgstr "4"
+
+#: gcalc/gnome-calc.c:1289
+msgid "5"
+msgstr "5"
+
+#: gcalc/gnome-calc.c:1290
+msgid "6"
+msgstr "6"
+
+#: gcalc/gnome-calc.c:1291
+msgid "-"
+msgstr "-"
+
+#: gcalc/gnome-calc.c:1291
+msgid "Subtract"
+msgstr "Tynnu"
+
+#: gcalc/gnome-calc.c:1293
+msgid "SUM"
+msgstr "SUM"
+
+#: gcalc/gnome-calc.c:1293
+msgid ""
+"Add the value in the display\n"
+"field to the value in memory"
+msgstr ""
+"Ychwanegu'r rhif yma i'r rhif\n"
+"yn y cof"
+
+#: gcalc/gnome-calc.c:1294
+msgid "1"
+msgstr "1"
+
+#: gcalc/gnome-calc.c:1295
+msgid "2"
+msgstr "2"
+
+#: gcalc/gnome-calc.c:1296
+msgid "3"
+msgstr "3"
+
+#: gcalc/gnome-calc.c:1297
+msgid "+"
+msgstr "+"
+
+#: gcalc/gnome-calc.c:1297
+msgid "Add"
+msgstr "Ychwanegu"
+
+#: gcalc/gnome-calc.c:1299
+msgid "EXC"
+msgstr "EXC"
+
+#: gcalc/gnome-calc.c:1299
+msgid ""
+"Exchange the values in the\n"
+"display field and memory"
+msgstr ""
+"Cyfnewid y rhif sy'n cael\n"
+"ei ddangos a'r rhif yn y cof"
+
+#: gcalc/gnome-calc.c:1300
+msgid "0"
+msgstr "0"
+
+#: gcalc/gnome-calc.c:1301
+msgid "."
+msgstr "."
+
+#: gcalc/gnome-calc.c:1301
+msgid "Decimal Point"
+msgstr "Pwynt Degol"
+
+#: gcalc/gnome-calc.c:1302
+msgid "+/-"
+msgstr "+/-"
+
+#: gcalc/gnome-calc.c:1302
+msgid "Change sign"
+msgstr "Newid arwydd"
+
+#: gcalc/gnome-calc.c:1303
+msgid "="
+msgstr "="
+
+#: gcalc/gnome-calc.c:1303
+msgid "Calculate"
+msgstr "Cyfrifo"
+
+#: gcalc/gnome-calculator.desktop.in.h:2
+msgid "Perform simple calculations"
+msgstr "Gweithredu cyfrifiadau syml"
+
+#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:159
+msgid "Character Map"
+msgstr "Map Nodau"
+
+#: gcharmap/gnome-character-map.desktop.in.h:2
+msgid "Insert special characters into documents"
+msgstr "Mewnosod nodau arbennig i mewn i ddogfennau"
+
+#: gcharmap/src/asciiselect.c:149
+msgid "Select Character"
+msgstr "Dewis Nod"
+
+#: gcharmap/src/asciiselect.c:152
+msgid "_Insert"
+msgstr "_Mewnosod"
+
+#: gcharmap/src/asciiselect.c:155
+msgid "Character c_ode:"
+msgstr "C_ôd Nod"
+
+#: gcharmap/src/asciiselect.c:178
+msgid "Ch_aracter:"
+msgstr "N_od:"
+
+#: gcharmap/src/asciiselect.c:189
+msgid "Character Code"
+msgstr "Côd Nod"
+
+#: gcharmap/src/asciiselect.c:189
+msgid "Select character code"
+msgstr "Dewis côd nod"
+
+#: gcharmap/src/asciiselect.c:190
+msgid "Character"
+msgstr "Nod"
+
+#: gcharmap/src/asciiselect.c:190
+msgid "Character to insert"
+msgstr "Nod i'w fewnosod"
+
+#: gcharmap/src/callbacks.c:63
+msgid "GNOME Character Map"
+msgstr "Map Nodau GNOME"
+
+#: gcharmap/src/callbacks.c:66
+msgid ""
+"Select, copy and paste characters from your font into other applications"
+msgstr "Dewis, copïo a gludo nodau o'ch ffont i mewn i gymhwysiadau eraill"
+
+#: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
+#, c-format
+msgid "Character code: (Unicode) U%04lX"
+msgstr "Côd nod: (Unicode) U%04lX"
+
+#: gcharmap/src/callbacks.c:134
+#, c-format
+msgid "Character code: (Unicode) U%04lX, (%s) 0x%s"
+msgstr "Côd nod: (Unicode) U%04lX, (%s) 0x%s"
+
+#: gcharmap/src/callbacks.c:192
+msgid "Text copied to clipboard..."
+msgstr "Copïwyd y testun i'r gludfwrdd..."
+
+#: gcharmap/src/callbacks.c:209
+msgid "Text cut to clipboard..."
+msgstr "Torrwyd y testun i'r gludfwrdd..."
+
+#: gcharmap/src/callbacks.c:259
+msgid "Text pasted from clipboard..."
+msgstr "Gludwyd y testun o'r gludfwrdd..."
+
+#: gcharmap/src/interface.c:189
+msgid "Action Toolbar"
+msgstr "Bar Gweithrediadau"
+
+#: gcharmap/src/interface.c:193
+msgid "_Font:"
+msgstr "_Ffont:"
+
+#. The page selector
+#: gcharmap/src/interface.c:209
+msgid "_Page:"
+msgstr "_Tudalen:"
+
+#. end of page selector
+#: gcharmap/src/interface.c:224
+msgid "_Text to copy:"
+msgstr "_Testun i'w gopïo:"
+
+#: gcharmap/src/interface.c:239
+msgid "_Copy"
+msgstr "_Copi"
+
+#: gcharmap/src/interface.c:263 gcharmap/src/interface.c:264
+msgid "Text to copy"
+msgstr "Testun i'w gopïo"
+
+#: gcharmap/src/interface.c:264
+msgid "Entry"
+msgstr "Cofnod"
+
+#: gcharmap/src/interface.c:265 gcharmap/src/menus.c:77
+msgid "Copy"
+msgstr "Copi"
+
+#: gcharmap/src/interface.c:265
+msgid "Copy the text"
+msgstr "Copïo'r testun"
+
+#: gcharmap/src/menus.c:34
+msgid "_Browse..."
+msgstr "_Pori..."
+
+#: gcharmap/src/menus.c:35
+msgid "Insert character(s) by choosing character codes."
+msgstr "Mewnosodwch nod(au) drwy ddewis codau nod."
+
+#: gcharmap/src/menus.c:63
+msgid "Ch_aracters"
+msgstr "_Nod"
+
+#. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
+#. cb_insert_char_click, NULL),
+#. GNOMEUIINFO_SEPARATOR,
+#: gcharmap/src/menus.c:75
+msgid "Cut"
+msgstr "Torri"
+
+#: gcharmap/src/menus.c:75
+msgid "Cut the selection"
+msgstr "Torri'r dewisiad"
+
+#: gcharmap/src/menus.c:77
+msgid "Copy the selection"
+msgstr "Copïo'r dewisiad"
+
+#: gcharmap/src/menus.c:79
+msgid "Paste"
+msgstr "Gludo"
+
+#: gcharmap/src/menus.c:79
+msgid "Paste the clipboard"
+msgstr "Gludo'r gludfwrdd"
+
+#: gdialog/guage.c:78
+msgid "Gdialog progressbar"
+msgstr "Bar cynnydd Gdialog"
+
+#: gdialog/guage.c:78
+msgid "Indicates the percentage specified at the standard input"
+msgstr "Dynodi'r canran a ddewiswyd drwy'r mewnbwn safonol"
+
+#: gdialog/inputbox.c:84
+msgid "GDialog Entry"
+msgstr "Cofnod GDialog"
+
+#: gdialog/inputbox.c:84
+msgid "Enter the text"
+msgstr "Mewnosodwch y testun"
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "Ategolion"
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
+msgid "Dictionary Lookup"
+msgstr "Chwiliad Geiriadur"
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
+#: gdictsrc/gnome-dictionary.desktop.in.h:2
+msgid "Lookup words in an online dictionary"
+msgstr "Chwilio geiriau mewn geiriadur ar-lein"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:1
+msgid "Look Up Selected Text..."
+msgstr "Chwilio am y Testun a Ddewisoch..."
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:2
+msgid "_About..."
+msgstr "_Ynglyn..."
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:3
+msgid "_Help"
+msgstr "_Cymorth"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:4
+msgid "_Preferences"
+msgstr "_Hoffiannau"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:5
+msgid "_Show/Hide Definition Window..."
+msgstr "Dangos/_Cuddio Ffenest Ddiffiniadau..."
+
+#. Could not look up search strategies, so just display a
+#. * label; FIXME: Memory leak
+#.
+#: gdictsrc/dict.c:650 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
+msgid "Cannot connect to server"
+msgstr "Methu cysylltu â'r gweinydd"
+
+#: gdictsrc/dict.c:663
+msgid ""
+"A serious error occured. Please check that your server and port are correct. "
+"For reference the default server is dict.org and the port 2628"
+msgstr ""
+"Bu gwall difrifol. Gwiriwch fod eich gweinydd a'ch porth yn gywir. Fel mater "
+"o ddiddordeb, dict.org yw'r gweinydd rhagosodedig, a 2628 yw'r porth"
+
+#: gdictsrc/gdict-about.c:56
+msgid "GNOME Dictionary"
+msgstr "Geiriadur GNOME"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
+msgstr "Hawlfraint 1999 Mike Hughes"
+
+#: gdictsrc/gdict-about.c:58
+#, fuzzy
+msgid "Client for MIT dictionary server.\n"
+msgstr ""
+"Dibynnydd ar gyfer gweinydd geiriadur MIT.\n"
+
+#: gdictsrc/gdict-app.c:128
+msgid "Spell-checking..."
+msgstr "Cywiro sillafu..."
+
+#: gdictsrc/gdict-app.c:136
+msgid "Spell check done"
+msgstr "Wedi cywiro'r sillafu"
+
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
+msgid "No matches found"
+msgstr "Ni chanfuwyd cydweddiad"
+
+#: gdictsrc/gdict-app.c:271
+msgid "Looking up word..."
+msgstr "Chwilio am y gair..."
+
+#: gdictsrc/gdict-app.c:279
+msgid "Lookup done"
+msgstr "Chwiliad ar ben"
+
+#: gdictsrc/gdict-app.c:301
+msgid "String not found"
+msgstr "Ni allwyd canfod y llinyn"
+
+#: gdictsrc/gdict-app.c:469
+msgid "Find"
+msgstr "Canfod"
+
+#: gdictsrc/gdict-app.c:490
+msgid "_Find"
+msgstr "_Canfod"
+
+#: gdictsrc/gdict-app.c:540
+msgid ""
+"Unable to perform requested operation. \n"
+"Either the server you are using is not available \n"
+"or you are not connected to the Internet."
+msgstr ""
+"Ni allwyd cwblhau'r weithred.\n"
+"Nid yw'r gweinydd ar gael\n"
+"neu nid ydych yn gysylltiedig â'r Rhyngrwyd."
+
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
+#: gdictsrc/gdict-speller.c:221
+msgid "_Look Up Word"
+msgstr "_Chwilio Am Air"
+
+#: gdictsrc/gdict-app.c:702
+msgid "Lookup word in dictionary"
+msgstr "Chwilio am y gair yn y geiriadur"
+
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
+msgid "Check _Spelling"
+msgstr "Cywiro _Sillafu"
+
+#: gdictsrc/gdict-app.c:705
+msgid "Check word spelling"
+msgstr "Cywiro sillafiad gair"
+
+#: gdictsrc/gdict-app.c:749
+msgid "_Dictionary"
+msgstr "_Geiriadur"
+
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
+msgid "Dictionary"
+msgstr "Geiriadur"
+
+#: gdictsrc/gdict-app.c:808
+msgid "_Word: "
+msgstr "_Gair:"
+
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
+msgid "Word"
+msgstr "Gair"
+
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
+#: gdictsrc/gdict-speller.c:148
+msgid "Word Entry"
+msgstr "Mewnosod Gair"
+
+#: gdictsrc/gdict-app.c:837
+msgid "Enter a Word or select one from the list below"
+msgstr "Mewnosodwch Air neu dewiswch un ô'r rhestr isod"
+
+#: gdictsrc/gdict-app.c:840
+msgid "Look Up for a Word"
+msgstr "Chwiliad am Air"
+
+#: gdictsrc/gdict-applet.c:263
+msgid "_Lookup"
+msgstr "_Chwiliad"
+
+#: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
+#, c-format
+msgid "Error invoking query: %s"
+msgstr "Gwall wrth redeg yr ymholiad: %s"
+
+#: gdictsrc/gdict-pref-dialog.c:37
+msgid "Headword:"
+msgstr "Gair pennawd:"
+
+#: gdictsrc/gdict-pref-dialog.c:38
+msgid "Sub-number:"
+msgstr "Is-rif:"
+
+#: gdictsrc/gdict-pref-dialog.c:39
+msgid "Pronunciation:"
+msgstr "Ymganiad:"
+
+#: gdictsrc/gdict-pref-dialog.c:40
+msgid "Etymology:"
+msgstr "Geirdarddiad:"
+
+#: gdictsrc/gdict-pref-dialog.c:41
+msgid "Part of speech:"
+msgstr "Rhan ymadrodd:"
+
+#: gdictsrc/gdict-pref-dialog.c:42
+msgid "Example:"
+msgstr "Enghraifft:"
+
+#: gdictsrc/gdict-pref-dialog.c:43
+msgid "Main body:"
+msgstr "Prif gorff:"
+
+#: gdictsrc/gdict-pref-dialog.c:44
+msgid "Cross-reference:"
+msgstr "Croesgyfeiriad:"
+
+#: gdictsrc/gdict-pref-dialog.c:186
+msgid "Dictionary Preferences"
+msgstr "Hoffiannau Geiriadur"
+
+#: gdictsrc/gdict-pref-dialog.c:198
+msgid "Smart _lookup"
+msgstr "Chwiliad _Clyfar"
+
+#: gdictsrc/gdict-pref-dialog.c:211
+msgid "_Server:"
+msgstr "_Gweinydd:"
+
+#: gdictsrc/gdict-pref-dialog.c:218
+msgid "De_fault Server"
+msgstr "G_weinydd Rhagosodedig"
+
+#: gdictsrc/gdict-pref-dialog.c:224
+msgid "Reset server to default"
+msgstr "Ail-osod y gweinydd i'r rhagosodedig"
+
+#: gdictsrc/gdict-pref-dialog.c:226
+msgid "_Port:"
+msgstr "_Porth:"
+
+#: gdictsrc/gdict-pref-dialog.c:240
+msgid "Def_ault Port"
+msgstr "Porth Rh_agosodedig"
+
+#: gdictsrc/gdict-pref-dialog.c:247
+msgid "Reset port to default"
+msgstr "Ail-osod porth i'r rhagosod"
+
+#: gdictsrc/gdict-pref-dialog.c:248
+msgid "Server"
+msgstr "Gweinydd"
+
+#: gdictsrc/gdict-pref-dialog.c:249
+msgid "Server Entry"
+msgstr "Cofnod Gweinydd"
+
+#: gdictsrc/gdict-pref-dialog.c:249
+msgid "Enter the Server Name"
+msgstr "Mewnosodwch Enw'r Gweinydd"
+
+#: gdictsrc/gdict-pref-dialog.c:252
+msgid "Port"
+msgstr "Porth"
+
+#: gdictsrc/gdict-pref-dialog.c:253
+msgid "Port Entry"
+msgstr "Cofnod Porth"
+
+#: gdictsrc/gdict-pref-dialog.c:253
+msgid "Enter the Port Number"
+msgstr "Mewnosodwch Rif y Porth"
+
+#: gdictsrc/gdict-pref-dialog.c:258
+msgid "_Database:"
+msgstr "_Cronfa ddata:"
+
+#: gdictsrc/gdict-pref-dialog.c:265
+msgid "D_efault strategy:"
+msgstr "Strat_egaeth ragosodedig:"
+
+#: gdictsrc/gdict-pref-dialog.c:458
+msgid "Search all databases"
+msgstr "Chwilio pob cronfa ddata"
+
+#: gdictsrc/gdict-pref-dialog.c:623
+msgid "Database"
+msgstr "Cronfa ddata"
+
+#: gdictsrc/gdict-pref-dialog.c:623
+msgid "Database Name"
+msgstr "Enw'r Cronfa Ddata"
+
+#: gdictsrc/gdict-pref-dialog.c:635
+msgid "Default Strategy"
+msgstr "Strategaeth Ragosodedig"
+
+#: gdictsrc/gdict-speller.c:135
+msgid "_Word:"
+msgstr "_Gair:"
+
+#: gdictsrc/gdict-speller.c:148
+msgid "Enter a word to know the spelling"
+msgstr "Mewnosodwch air i weld y sillafiad"
+
+#: gdictsrc/gdict-speller.c:153
+msgid "Click to do the spell check"
+msgstr "Cliciwch i gywiro'r sillafu"
+
+#: gdictsrc/gdict-speller.c:158
+msgid "Search S_trategy:"
+msgstr "Chwilio S_trategaeth:"
+
+#: gdictsrc/gdict-speller.c:174
+msgid "Search _Results"
+msgstr "_Canlyniad y Chwiliad:"
+
+#: gdictsrc/gdict-speller.c:236
+msgid "Check Spelling"
+msgstr "Cywiro Sillafu"
+
+#: gdictsrc/gdict-speller.c:654
+msgid "Search Strategy"
+msgstr "Chwilio Strategaeth"
+
+#: gdictsrc/gdict.schemas.in.h:1
+msgid "Dictionary server"
+msgstr "Gweinydd geiriadur"
+
+#: gdictsrc/gdict.schemas.in.h:2
+msgid "Port used to connect to server"
+msgstr "Porth a ddefnyddir i gysylltu a'r gweinydd"
+
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+"Nodwch os ydych am ddefnyddio chwiliad clyfar. Mae'r allweddell yn ddibynnol "
+"ar y gweinydd geiriadur yn cefnogi y dewisiad. GWIR yw'r diofyn"
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr "Y gronfa ddata i'w defnyddio yn y gweinydd geiriadur."
+
+#: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+"Y gweinydd geiriadur i gysylltu iddo. Y gweinydd diofyn yw dict.org Gweler "
+"http://www.dict.org am fanylion ar weinyddion eraill"
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+"Enw'r gronfa ddata unigol i'w defnyddio yn y gweinydd geiriadur. Mae ! yn "
+"dynodi y dylai geiriadur-gnome chwilio pop cronfa ddata mewn gweinydd penodol"
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr "Y rhif porth i gysylltu iddo. Y porth diofyn yw 2628."
+
+#: gdictsrc/gdict.schemas.in.h:8
+msgid "The search strategy to use"
+msgstr "Y strategaeth chwilio i'w defnyddio"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+"Y strategaeth chwilio i'w defnyddio. Mae hwn yn ddibynnol ar y strategaeth a "
+"gefnogir gan y gweinydd geiriadur. Y strategaeth diofyn yw 'lev' - Cydweddu "
+"geiriau gyda pellter Levenshtein o un"
+
+#: gdictsrc/gdict.schemas.in.h:10
+msgid "Use smart lookup"
+msgstr "Defnyddio chwiliad clyfar"
+
+#: gfloppy/gfloppy.desktop.in.h:1
+msgid "Floppy Formatter"
+msgstr "Fformatiwr Disg Meddal"
+
+#: gfloppy/gfloppy.desktop.in.h:2
+msgid "Format Floppy Disks"
+msgstr "Fformatio Disgiau Meddal"
+
+#: gfloppy/src/badblocks.c:102
+msgid "MInternal Error: Unable to seek to the correct location."
+msgstr "Gwall Mewnol: Methu chwilio at y man cywir."
+
+#: gfloppy/src/badblocks.c:111
+msgid "MInternal Error: Weird value (%ld) in do_test\n"
+msgstr "Gwall Mewnol: Gwerth anisgwyl (%ld) yn do_test\n"
+
+#. while (!i)
+#. ;
+#: gfloppy/src/badblocks.c:269
+msgid "MChecking for bad blocks..."
+msgstr "Chwilio am flociau drwg..."
+
+#: gfloppy/src/badblocks.c:281
+msgid "MFailed to open device %s for badblock checking\n"
+msgstr "Methu agor y ddyfais %s er mwyn chwilio am flociau drwg\n"
+
+#: gfloppy/src/badblocks.c:301 gfloppy/src/gfloppy.c:536
+msgid "MChecking for bad blocks... Done"
+msgstr "Chwilio am flociau drwg... Wedi gorffen"
+
+#: gfloppy/src/fdformat.c:44
+msgid "MFormatting the disk..."
+msgstr "Fformatio'r disg..."
+
+#: gfloppy/src/fdformat.c:46
+msgid "EI don't know what this is, but it's very wrong."
+msgstr "Dwi'm yn gwybod beth ydi hwn, ond mae'n hollol anghywir."
+
+#: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
+msgid "EError formatting track #%d"
+msgstr "Gwall wrth fformatio trac #%d"
+
+#: gfloppy/src/fdformat.c:74
+msgid "EError during completion of formatting"
+msgstr "Gwall tra'n cwblhau y fformatio"
+
+#. XXXX - need to tell parent we're finished
+#: gfloppy/src/fdformat.c:78
+msgid "MFormatting the disk... Done"
+msgstr "Fformatio'r disg... Wedi gorffen"
+
+#. XXXX - tell parent we're starting verify stage
+#: gfloppy/src/fdformat.c:94
+msgid "MVerifying the format..."
+msgstr "Cadarnhau y fformat..."
+
+#: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
+msgid ""
+"EUnable to write to the floppy.\n"
+"\n"
+"Please confirm that it is not write-protected."
+msgstr ""
+"Methu ysgrifennu ar y disg meddal.\n"
+"\n"
+"Gofalwch nad yw wedi'w amddiffyn rhag ysgrifennu."
+
+#: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
+msgid "EInsufficient permissions to open floppy device %s."
+msgstr "Dim digon o freintiau i agor y ddyfais disg meddal %s."
+
+#: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
+msgid ""
+"EUnable to access the floppy disk.\n"
+"\n"
+"Please confirm that it is in the drive\n"
+"with the drive door shut."
+msgstr ""
+"Methu cyrchu'r disg meddal.\n"
+" \n"
+"Cadarnhewch ei fod yn y gyrrydd\n"
+"a'r drws ar gau."
+
+#: gfloppy/src/fdformat.c:109
+msgid ""
+"EGeneric error accessing floppy device %s.\n"
+"\n"
+"Error code %s:%d"
+msgstr ""
+"Gwall cyffredinol wrth gyrchu'r ddyfais disg meddal %s. \n"
+"\n"
+"Côd gwall %s:%d"
+
+#: gfloppy/src/fdformat.c:129
+msgid ""
+"ERead Error:\n"
+"Problem reading cylinder %d, expected %d, read %d"
+msgstr ""
+"Gwall Darllen:\n"
+"Problem wrth ddarllen silindr %d, disgwyliwyd %d, cafwyd %d"
+
+#: gfloppy/src/fdformat.c:132
+msgid "EProblem reading cylinder %d, expected %d, read %d"
+msgstr "Problem wrth ddarllen silindr %d, disgwyliwyd %d, cafwyd %d"
+
+#: gfloppy/src/fdformat.c:141
+msgid "MBad data in cyl %d.  Continuing... "
+msgstr "Data drwg yn sil %d. Cario 'mlaen..."
+
+#: gfloppy/src/fdformat.c:148
+msgid "EError closing device %s"
+msgstr "Gwall wrth gau dyfais %s"
+
+#: gfloppy/src/fdformat.c:153
+msgid "MVerifying the format... Done"
+msgstr "Cadarnhau y fformat... Wedi gorffen"
+
+#: gfloppy/src/fdformat.c:165
+msgid "EUnable to write to device %s"
+msgstr "Methu ysgrifennu i'r ddyfais %s"
+
+#: gfloppy/src/fdformat.c:184
+msgid ""
+"EGeneric error accessing floppy device %s.\n"
+"\n"
+"Error code %s"
+msgstr ""
+"Gwall cyffredinol wrth gyrchu'r ddyfais disg meddal %s.\n"
+"\n"
+"Côd gwall %s"
+
+#: gfloppy/src/fdformat.c:194
+msgid "ECould not determine current floppy geometry."
+msgstr "Methwyd pennu geometreg y disg meddal cyfredol."
+
+#: gfloppy/src/gfloppy.c:229
+msgid "EError while creating a unique filename for the bad blocks list file."
+msgstr "Gwall wrth greu enw ffeil unigryw ar gyfer y rhestr o flociau drwg"
+
+#: gfloppy/src/gfloppy.c:249
+msgid "EError while filling the bad blocks list file."
+msgstr "Gwall tra'n llenwi'r rhestr o flociau drwg."
+
+#: gfloppy/src/gfloppy.c:308
+msgid "EError while spawning the (%s) command: %s."
+msgstr "Gwall tra'n gweithredu'r gorchymyn (%s): %s."
+
+#: gfloppy/src/gfloppy.c:332
+msgid "EUnknown mke2fs starting signature, cancelling."
+msgstr "Llofnod dechreuol mke2fs anhysbys, diddymu."
+
+#: gfloppy/src/gfloppy.c:346
+msgid ""
+"EThe filesystem creation utility (%s) reported the following errors:\n"
+"\n"
+"%s (%d)"
+msgstr ""
+"Mae'r teclyn creu system ffeil (%s) wedi adrodd y gwallau canlynol:\n"
+"\n"
+"%s (%d)"
+
+#: gfloppy/src/gfloppy.c:363
+msgid "EAbnormal child process termination."
+msgstr "Terfyniad proses blentyn anarferol"
+
+#: gfloppy/src/gfloppy.c:388
+msgid "EError while spawning the mbadblocks command: %s."
+msgstr "Gwall tra'n gweithredu'r gorchymyn mbadblocks: %s."
+
+#: gfloppy/src/gfloppy.c:400
+msgid ""
+"EThe bad blocks checking utility (mbadblocks) reported the following "
+"errors:\n"
+"%s."
+msgstr ""
+"Adroddod y cyfleuster brofi blociau drwg (mbadblocks) y gwallau canlynol:\n"
+" %s"
+
+#: gfloppy/src/gfloppy.c:443
+msgid "EAbnormal mbadblocks child process termination."
+msgstr "Terfyniad proses blentyn mbadblocks anarferol "
+
+#. make the filesystem
+#: gfloppy/src/gfloppy.c:470 gfloppy/src/gfloppy.c:510
+msgid "MMaking filesystem on disk..."
+msgstr "Yn creu cysawd ffeil ar ddisg..."
+
+#: gfloppy/src/gfloppy.c:478
+msgid "EUnable to create filesystem correctly."
+msgstr "Methu creu cysawd ffeil yn gywir."
+
+#: gfloppy/src/gfloppy.c:482 gfloppy/src/gfloppy.c:522
+msgid "MMaking filesystem on disk... Done"
+msgstr "Yn creu cysawd ffeil ar ddisg...Wedi Gorffen"
+
+#: gfloppy/src/gfloppy.c:527
+msgid "MChecking for bad blocks... (this might take a while)"
+msgstr "Yn profi am flociau drwg... (gall hyn gymeryd gryn amser)"
+
+#: gfloppy/src/gfloppy.c:532
+msgid "EError while checking the bad blocks."
+msgstr "Gwall tra'n profi'r blociau drwg"
+
+#: gfloppy/src/gfloppy2.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: gfloppy/src/gfloppy2.glade.h:3
+msgid ""
+"<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
+"be installed in order to make a thorough DOS (fat) formatting."
+msgstr ""
+"<b>Noder</b>: Nid yw'r cyfleuster mbadblocks wedi'i osod ar y "
+"cysawd hwn. Rhaid ei osod er mwyn gwneud fformatiad DOS (fat)trylwyr."
+
+#: gfloppy/src/gfloppy2.glade.h:4
+msgid "<span weight=\"bold\">Filesystem settings</span>"
+msgstr "<span weight=\"bold\">Gosodiadau Cysawd Ffeil</span>"
+
+#: gfloppy/src/gfloppy2.glade.h:5
+msgid "<span weight=\"bold\">Formatting mode</span>"
+msgstr "<span weight=\"bold\">Modd Fformadu</span>"
+
+#: gfloppy/src/gfloppy2.glade.h:6
+msgid "<span weight=\"bold\">Physical settings</span>"
+msgstr "<span weight=\"bold\">Gosodiadau Corfforol</span>"
+
+#: gfloppy/src/gfloppy2.glade.h:7
+msgid "DOS (FAT)"
+msgstr "DOS (FAT)"
+
+#: gfloppy/src/gfloppy2.glade.h:8
+msgid "Double Density 3.5\" (720KB)"
+msgstr "3.5\" Dwysedd Dwbl (720KB)"
+
+#: gfloppy/src/gfloppy2.glade.h:9
+msgid "Double Density 5.25\" (360KB)"
+msgstr "5.25\" Dwysedd Dwbl (360KB)"
+
+#: gfloppy/src/gfloppy2.glade.h:10
+msgid "File system _type:"
+msgstr "_Math cysawd ffeiliau:"
+
+#: gfloppy/src/gfloppy2.glade.h:11
+msgid "Floppy _density:"
+msgstr "_Dwysedd llipa:"
+
+#: gfloppy/src/gfloppy2.glade.h:12
+msgid "Floppy de_vice:"
+msgstr "Dyfais llipa:"
+
+#: gfloppy/src/gfloppy2.glade.h:13
+msgid "Floppy formatter"
+msgstr "Fformadydd llipa"
+
+#: gfloppy/src/gfloppy2.glade.h:14
+msgid "High Density 3.5\" (1.44MB)"
+msgstr "3.5\" Dwysedd Uchel (1.44MB)"
+
+#: gfloppy/src/gfloppy2.glade.h:15
+msgid "High Density 5.25\" (1.2MB)"
+msgstr "5.25\" Dwysedd Uchel (1.2MB)"
+
+#: gfloppy/src/gfloppy2.glade.h:16
+msgid "Linux Native (ext2)"
+msgstr "Brodorol Linux (ext2)"
+
+#: gfloppy/src/gfloppy2.glade.h:17
+msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
+msgstr "Trylw_yr (ychwanega brawf blociau drwg i'r modd safonol)"
+
+#: gfloppy/src/gfloppy2.glade.h:18
+msgid "Volume _name:"
+msgstr "_Enw Cyfrol:"
+
+#: gfloppy/src/gfloppy2.glade.h:19
+msgid "_Format"
+msgstr "_Fformadu"
+
+#: gfloppy/src/gfloppy2.glade.h:20
+msgid "_Quick (only creates the filesystem)"
+msgstr "_Cyflym (creu cysawd ffeiliau yn unig)"
+
+#: gfloppy/src/gfloppy2.glade.h:21
+msgid "_Standard (adds a low-level format to the quick mode)"
+msgstr "_Safonol (ychwanega fformadu lefel-isel i'r modd cyflym)"
+
+#: gfloppy/src/main.c:132
+msgid ""
+"Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
+"can't format a floppy without one of them."
+msgstr ""
+"Nid yw'r un o'r cymhwysiadau mke2fsk na mkdosfs/mformat wedi''u gosod. Ni "
+"ellwch fformadu disg llipa heb un ohonynt."
+
+#: gfloppy/src/main.c:155 gfloppy/src/main.c:199
+#, c-format
+msgid "Unable to open the device %s, formatting cannot continue."
+msgstr "Methu agor y ddyfais %s, ni all fformadu barhau."
+
+#: gfloppy/src/main.c:158 gfloppy/src/main.c:202
+#, c-format
+msgid ""
+"The device %s is disconnected.\n"
+"Please attach device to continue."
+msgstr ""
+"Mae'r ddyfais %s wedi ei datgysylltu.\n"
+"Cysylltwch y ddyfais i barhau, os gwelwch yn dda."
+
+#: gfloppy/src/main.c:161 gfloppy/src/main.c:205
+#, c-format
+msgid ""
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
+"Contact your system administrator about getting write permissions."
+msgstr ""
+"Ymddengys nad oes gennych y caniatadau cywir i ysgrifennu i %s. Ni fydd "
+"fformadu'n bosib.\n"
+"Cysylltwch â'ch rheolwr cysawd am gael caniatadau ysgrifennu."
+
+#: gfloppy/src/main.c:391
+#, c-format
+msgid ""
+"Could not display help for the floppy formatter.\n"
+"%s"
+msgstr ""
+"Methwyd dangos cymorth ar gyfer y fformadydd llipäon.\n"
+"%s"
+
+#: gfloppy/src/main.c:425
+msgid "The volume name can't contain any blank space."
+msgstr "Ni fedr enw'r gyfrol gynnwys unrhyw le gwag."
+
+#: gfloppy/src/main.c:474
+msgid "The device to format"
+msgstr "Y ddyfais i'w fformadu"
+
+#: gfloppy/src/main.c:475
+msgid "DEVICE"
+msgstr "DYFAIS"
+
+#: gfloppy/src/progress.c:123
+#, c-format
+msgid ""
+"The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
+"been found and marked."
+msgstr ""
+"Fformadwyd y ddisg llipa, ond darganfuwyd <b>%d bloc drwg</b> (allan o %d) "
+"ac fe'u nodwyd."
+
+#: gfloppy/src/progress.c:126
+msgid "Floppy formatted successfully."
+msgstr "Fformadwyd y ddisg llipa'n llwyddiannus."
+
+#: gfloppy/src/progress.c:132
+msgid "Floppy formatting cancelled."
+msgstr "Diddymwyd fformadu'r ddisg llipa."
+
+#: gfloppy/src/progress.c:172
+msgid "Format progress"
+msgstr "Cynnydd Fformadu"
+
+#: gfloppy/gfloppy.schemas.in.h:1
+msgid ""
+"0 for the quick format, 1 for a standard one (adds a low-level format) and "
+"finally 2 for a thorough format (adds a bad blocks scan)."
+msgstr ""
+"0 am fformadu cyflym, 1 am un safonol (ychwanega fformadu lefel-isel) ac yn "
+"olaf 2 am fformadu trylwyr (ychwanega chwiliad blociau drwg)."
+
+#: gfloppy/gfloppy.schemas.in.h:2
+msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
+msgstr "DEFNYDDWYR PROFIADOL YN UNIG - Ôl-wyneb rhagosod fformadu FAT"
+
+#: gfloppy/gfloppy.schemas.in.h:3
+msgid "Default filesystem type"
+msgstr "Math cysawd ffeil rhagosod"
+
+#: gfloppy/gfloppy.schemas.in.h:4
+msgid "Default formatting mode"
+msgstr "Modd fformadu rhagosod"
+
+#: gfloppy/gfloppy.schemas.in.h:5
+msgid ""
+"TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
+"mtools as the preferred FAT formatting backend."
+msgstr ""
+"GWIR i osod mkdosfs yn ôl-wyneb dewisol fformadu FAT, neu GAU i osod mtools "
+"yn ôl-wyneb dewisol fformadu FAT"
+
+#: gfloppy/gfloppy.schemas.in.h:6
+msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
+msgstr ""
+"ext2 ar gyfer cysawd ffeil brodorol linux neu fat ar gyfer cysawd ffeil DOS"
+
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
+msgid "Search for Files"
+msgstr "Chwilio am Ffeiliau"
+
+#: gsearchtool/gnome-search-tool.desktop.in.h:2
+msgid "Search your disk for files"
+msgstr "Chwilio'ch disg galed am ffeiliau"
+
+#: gsearchtool/gsearchtool.c:63
+msgid "Contains the text"
+msgstr "Yn cynnwys y testun"
+
+#: gsearchtool/gsearchtool.c:65
+msgid "Date modified less than (days)"
+msgstr "Dyddiad addaswyd _llai na (dydd)"
+
+#: gsearchtool/gsearchtool.c:66
+msgid "Date modified more than (days)"
+msgstr "Dyddiad addaswyd _mwy na (dydd)"
+
+#: gsearchtool/gsearchtool.c:68
+msgid "Size at least (kilobytes)"
+msgstr "Ma_int o leiaf (kb)"
+
+#: gsearchtool/gsearchtool.c:69
+msgid "Size at most (kilobytes)"
+msgstr "Maint _hyd at (kb)"
+
+#: gsearchtool/gsearchtool.c:70
+msgid "File is empty"
+msgstr "Ffeil yn wag"
+
+#: gsearchtool/gsearchtool.c:72
+msgid "Owned by user"
+msgstr "Yn berchen i _ddefnyddiwr"
+
+#: gsearchtool/gsearchtool.c:73
+msgid "Owned by group"
+msgstr "Yn berchen i _grŵp"
+
+#: gsearchtool/gsearchtool.c:74
+msgid "Owner is unrecognized"
+msgstr "Heb berchennog adnabyddedig"
+
+#: gsearchtool/gsearchtool.c:76
+msgid "File is not named"
+msgstr "Ffeil heb enw"
+
+#: gsearchtool/gsearchtool.c:77
+msgid "File matches regular expression"
+msgstr "Ffeil yn cydweddu â mynegiad _rheolaidd"
+
+#: gsearchtool/gsearchtool.c:79
+msgid "Follow symbolic links"
+msgstr "Dilyn cysylltau symbolaidd"
+
+#: gsearchtool/gsearchtool.c:80
+msgid "Include other filesystems"
+msgstr "Cynnwys cysawdau ffeil eraill"
+
+#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:828
+msgid "No files found"
+msgstr "Ni ganfuwyd unrhyw ffeiliau"
+
+#: gsearchtool/gsearchtool.c:483
+msgid "Entry changed called for a non entry option!"
+msgstr "Galwai'r gofnod newidiedig am ddewisiad di-gofnod!"
+
+#: gsearchtool/gsearchtool.c:593
+msgid "Set the text of 'file is named'"
+msgstr "Gosod testun 'ffeil o'r enw'"
+
+#: gsearchtool/gsearchtool.c:594
+msgid "Set the text of 'look in folder'"
+msgstr "Gosod testun 'edrych yn y blygell'"
+
+#: gsearchtool/gsearchtool.c:595
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr ""
+"Didoli ffeiliau yn ôl un o'r canlynol: enw, plygell, maint, math, neu "
+"ddyddiad"
+
+#: gsearchtool/gsearchtool.c:596
+msgid "Set sort order to descending, the default is ascending"
+msgstr "Gosod trefn y dilyniant i ddisgynnol, esgynnol sy'n ragosod"
+
+#: gsearchtool/gsearchtool.c:597
+msgid "Automatically start a search"
+msgstr "Dechrau chwiliad yn ymysgogol"
+
+#: gsearchtool/gsearchtool.c:601
+#, c-format
+msgid "Select the '%s' constraint"
+msgstr "Dewis y cyfyngiad '%s'"
+
+#: gsearchtool/gsearchtool.c:685
+msgid "Invalid option passed to sortby command line argument."
+msgstr "Pasiwyd dewisiad annilys i sort gan ymresymiad llinell orchymyn."
+
+#: gsearchtool/gsearchtool.c:819
+msgid "(aborted)"
+msgstr "(erthylwyd)"
+
+#: gsearchtool/gsearchtool.c:832
+msgid "One file found"
+msgstr "Canfuwyd un ffeil"
+
+#: gsearchtool/gsearchtool.c:835
+#, c-format
+msgid "%d files found"
+msgstr "Canfuwyd %d ffeil"
+
+#: gsearchtool/gsearchtool.c:931
+msgid ""
+"While searching the following errors were reported.\n"
+"\n"
+msgstr ""
+"Tra'n chwilio, adroddwyd y gwallau canlynol.\n"
+"\n"
+
+#: gsearchtool/gsearchtool.c:935
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr ""
+"\n"
+"... Gormod o wallau i'w dangos ..."
+
+#: gsearchtool/gsearchtool.c:948
+msgid "Search Errors"
+msgstr "Gwallau Chwiliad"
+
+#: gsearchtool/gsearchtool.c:986 gsearchtool/gsearchtool.c:1010
+msgid "Search for Files Error"
+msgstr "Gwall Chwilio am Ffeiliau"
+
+#: gsearchtool/gsearchtool.c:1097
+msgid "Search Rule Value Entry"
+msgstr "Cofnod Gwerth Rheol Chwilio"
+
+#: gsearchtool/gsearchtool.c:1098
+msgid "Enter a value for search rule"
+msgstr "Rhowch werth i'r rheol chwilio"
+
+#: gsearchtool/gsearchtool.c:1132
+#, c-format
+msgid "Click to Remove the '%s' Rule"
+msgstr "Cliciwch i Waredu'r rheol '%s'"
+
+#: gsearchtool/gsearchtool.c:1187
+msgid "A_vailable options:"
+msgstr "Dewisiadau a_r gael:"
+
+#: gsearchtool/gsearchtool.c:1200
+msgid "Search Rules Menu"
+msgstr "Dewislen Reolau Chwilio"
+
+#: gsearchtool/gsearchtool.c:1201
+msgid "Select a search rule from the menu"
+msgstr "Dewiswch reol chwilio o'r ddewislen"
+
+#: gsearchtool/gsearchtool.c:1232
+msgid "S_earch Results"
+msgstr "Canlyniadau C_hwilio"
+
+#: gsearchtool/gsearchtool.c:1303
+msgid "Name"
+msgstr "Enw"
+
+#: gsearchtool/gsearchtool.c:1323
+msgid "Folder"
+msgstr "Plygell"
+
+#: gsearchtool/gsearchtool.c:1334
+msgid "Size"
+msgstr "Maint"
+
+#: gsearchtool/gsearchtool.c:1344
+msgid "Type"
+msgstr "Math"
+
+#: gsearchtool/gsearchtool.c:1354
+msgid "Date Modified"
+msgstr "Dyddiad Addaswyd"
+
+#: gsearchtool/gsearchtool.c:1391
+msgid "File is _named:"
+msgstr "Ffeil o'r e_nw:"
+
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
+msgid "File Name Entry"
+msgstr "Cofnod Enw Ffeil"
+
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
+msgid "Enter the file name you want to search"
+msgstr "Rhowch enw'r ffeil rydych am ei chwilio"
+
+#: gsearchtool/gsearchtool.c:1419
+msgid "_Look in folder:"
+msgstr "_Edrych yn y blygell:"
+
+#: gsearchtool/gsearchtool.c:1425
+msgid "Browse"
+msgstr "Pori"
+
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
+msgid "Starting folder entry"
+msgstr "Cofnod blygell cychwynnol"
+
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
+msgid "Enter the folder name where you want to start the search"
+msgstr "Rhowch enw'r blygell o ble'r hoffech ddechrau'r chwiliad"
+
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
+msgid "Additional Options"
+msgstr "Dewisiadau Ychwanegol"
+
+#: gsearchtool/gsearchtool.c:1497
+msgid "Click to Start the search"
+msgstr "Cliciwch i Ddechrau'r chwiliad"
+
+#: gsearchtool/gsearchtool.c:1498
+msgid "Click to Stop the search"
+msgstr "Cliciwch i Ddiweddu'r chwiliad"
+
+#: gsearchtool/gsearchtool.c:1571
+msgid "Cannot initialize bonobo."
+msgstr "Methwyd ymgychwyn bonobo."
+
+#: gsearchtool/gsearchtool-callbacks.c:45
+msgid "_Open"
+msgstr "_Agor"
+
+#: gsearchtool/gsearchtool-callbacks.c:49
+msgid "O_pen Folder"
+msgstr "A_gor Plygell"
+
+#: gsearchtool/gsearchtool-callbacks.c:54
+msgid "_Save Results As..."
+msgstr "_Cadw Canlyniadau Fel..."
+
+#: gsearchtool/gsearchtool-callbacks.c:107
+msgid "Can't Display Help"
+msgstr "Methwyd Dangos Cymorth"
+
+#: gsearchtool/gsearchtool-callbacks.c:128
+msgid "Searching..."
+msgstr "Yn chwilio..."
+
+#: gsearchtool/gsearchtool-callbacks.c:288
+#, c-format
+msgid "This will open %d separate files. Are you sure you want to do this?"
+msgstr "Agora hyn %d ffeil gwahanol. A ydych yn sicr eich bod am wneud hyn?"
+
+#: gsearchtool/gsearchtool-callbacks.c:291
+#, c-format
+msgid "Open %d Files?"
+msgstr "Agor %d Ffeil?"
+
+#: gsearchtool/gsearchtool-callbacks.c:348
+#: gsearchtool/gsearchtool-callbacks.c:609
+msgid "There is no installed viewer capable of displaying \"%s\"."
+msgstr "Nid oes gwelydd gosodedig sy'n medru dangos \"%s\"."
+
+#: gsearchtool/gsearchtool-callbacks.c:355
+#: gsearchtool/gsearchtool-callbacks.c:616
+msgid "Can't Display Location"
+msgstr "Methwyd Dangos Lleoliad"
+
+#: gsearchtool/gsearchtool-callbacks.c:393
+#, c-format
+msgid "This will open %d separate folders. Are you sure you want to do this?"
+msgstr "Agora hyn %d plygell gwahanol. A ydych yn sicr eich bod am wneud hyn?"
+
+#: gsearchtool/gsearchtool-callbacks.c:396
+msgid "Open %d Folders?"
+msgstr "Agor %d Plygell?"
+
+#: gsearchtool/gsearchtool-callbacks.c:435
+msgid "The nautilus file manager is not running."
+msgstr "Nid yw'r trefnydd ffeiliau nautilus yn rhedeg."
+
+#: gsearchtool/gsearchtool-callbacks.c:718
+msgid "Save Search Results As..."
+msgstr "Cadw Canlyniadau Chwiliad Fel..."
+
+#: gsearchtool/gsearchtool-callbacks.c:761
+msgid ""
+"Cannot save search results.\n"
+"\"%s\" is a folder."
+msgstr ""
+"Methwyd cadw canlyniadau'r chwiliad.\n"
+"Mae \"%s\" yn blygell."
+
+#: gsearchtool/gsearchtool-callbacks.c:789
+#, c-format
+msgid "File \"%s\" already exists. Overwrite?"
+msgstr "Mae'r ffeil \"%s\" yn bodoli eisioes. Trosysgrifo?"
+
+#: gsearchtool/gsearchtool-callbacks.c:828
+#, c-format
+msgid "Cannot save search results to the file \"%s\"."
+msgstr "Ni ellir cadw canlyniadau'r chwiliad i'r ffeil \"%s\"."
+
+#: gsearchtool/gsearchtool-support.c:284
+msgid "Expander Size"
+msgstr "Maint Ehangydd"
+
+#: gsearchtool/gsearchtool-support.c:285
+msgid "Size of the expander arrow"
+msgstr "Maint y saeth ehangu"
+
+#: gsearchtool/gsearchtool-support.c:346
+msgid ""
+"GConf error:\n"
+"  %s"
+msgstr ""
+"Gwall GConf:\n"
+"  %s"
+
+#: gsearchtool/gsearchtool-support.c:524
+msgid "%Y%m%d%H%M%S"
+msgstr "%Y%m%d%H%M%S"
+
+#: gsearchtool/gsearchtool-support.c:555
+msgid "today at %-I:%M %p"
+msgstr "heddiw am %-I:%M %p"
+
+#: gsearchtool/gsearchtool-support.c:557
+msgid "yesterday at %-I:%M %p"
+msgstr "ddoe am %-I:%M %p"
+
+#: gsearchtool/gsearchtool-support.c:559 gsearchtool/gsearchtool-support.c:561
+msgid "%m/%-d/%y, %-I:%M %p"
+msgstr "%m/%-d/%y, %-I:%M %p"
+
+#: gsearchtool/gsearchtool-support.c:686
+msgid "link (broken)"
+msgstr "cyswllt (wedi torri)"
+
+#: gsearchtool/gsearchtool-support.c:691
+#, c-format
+msgid "link to %s"
+msgstr "cyswllt i %s"
+
+#: logview/about.c:42
+msgid "Cesar Miquel (miquel@df.uba.ar)"
+msgstr "César Miquel (miquel@df.uba.ar)"
+
+#: logview/about.c:43
+msgid ""
+"This program is part of the GNOME project. Logview comes with ABSOLUTELY NO "
+"WARRANTY. This is free software, and you are welcome to redistribute it "
+"under the conditions of the GNU General Public Licence. The log icon is a "
+"courtesy of Tuomas Kuosmanen (a.k.a tigert)."
+msgstr ""
+"Mae'r raglen hon yn ran o'r cywaith GNOME. Daw Logview heb UNRHYW WARANT O "
+"GWBL. Mae hyn yn feddalwedd rydd, ac mae croeso i chi ei ail-ddosbarthu dan "
+"amodau Trwydded Gyhoeddus Gyffredinol GNU. Daw'r eicon boncyff o "
+"garedigrwydd Tuomas Kuosmanen (neu tigert)."
+
+#: logview/about.c:61
+msgid "GNOME System Log Viewer"
+msgstr "Gwelydd Cofnodion Cysawd GNOME"
+
+#: logview/about.c:62
+msgid "Copyright (C) 1998"
+msgstr "Hawlfraint (h)(C) 1998"
+
+#: logview/actions.c:74
+msgid "Action database"
+msgstr "Cronfa ddata gweithredoedd"
+
+#: logview/actions.c:84
+msgid "Actions"
+msgstr "Gweithredoedd"
+
+#: logview/actions.c:152
+msgid "_Add"
+msgstr "_Ychwanegu"
+
+#: logview/actions.c:159
+msgid "_Edit"
+msgstr "_Golygu"
+
+#: logview/actions.c:166
+msgid "_Remove"
+msgstr "_Gwaredu"
+
+#: logview/actions.c:259
+#, c-format
+msgid "Cannot open action data base <%s>! Open failed."
+msgstr "Methu agor y gronfa ddata gweithredoedd <%s>! Methodd yr agoriad."
+
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
+msgid "Error parsing actions data base"
+msgstr "Gwall tra'n dosrannu'r gronfa ddata gweithredoedd"
+
+#: logview/actions.c:385
+msgid "Can't write to actions database!"
+msgstr "Methu ysgrifennu i'r gronfa ddata gweithredoedd!"
+
+#: logview/actions.c:485
+msgid "Error while executing specified action"
+msgstr "Gwall tra'n gweithredu'r weithred penodol"
+
+#: logview/actions.c:506
+msgid "<empty>"
+msgstr "<gwag>"
+
+#: logview/actions.c:507
+msgid "log name regexp"
+msgstr "myn. rhldd. enw cofnodion"
+
+#: logview/actions.c:508
+msgid "process regexp"
+msgstr "myn. rhldd. proses"
+
+#: logview/actions.c:509
+msgid "message regexp"
+msgstr "myn. rhldd. neges"
+
+#: logview/actions.c:510
+msgid "action to execute when regexps are TRUE"
+msgstr "gweithred i'w gweithredu pan fo mynegiadau rheolaidd yn WIR"
+
+#: logview/actions.c:511
+msgid "description"
+msgstr "disgrifiad"
+
+#: logview/actions.c:771
+msgid "_Description:"
+msgstr "_Disgrifiad"
+
+#: logview/actions.c:780
+msgid "Description of this entry."
+msgstr "Disgrifiad y gofnod hon"
+
+#: logview/actions.c:804
+#, c-format
+msgid ""
+"tag: [%s]\n"
+"log_name: [%s]\n"
+"process: [%s]\n"
+"message: [%s]\n"
+"description: [%s]\n"
+"action: [%s]\n"
+msgstr ""
+"tag: [%s]\n"
+"enw_cofnodion: [%s]\n"
+"proses: [%s]\n"
+"neges: [%s]\n"
+"disgrifiad: [%s]\n"
+"gweithred: [%s]\n"
+
+#: logview/calendar.c:112
+msgid "Calendar"
+msgstr "Calendr"
+
+#: logview/desc_db.c:37
+#, c-format
+msgid "Cannot open regexp data base <%s>! Open failed."
+msgstr "Methu agor cronfa ddata myn. rhldd. <%s>! Methodd yr agor."
+
+#: logview/desc_db.c:147
+#, c-format
+msgid "Cannot open description data base <%s>! Open failed."
+msgstr "Methu agor cronfa ddata disgrifiadau <%s>! Methodd yr agor."
+
+#. ----------------------------------------------------------------------
+#. NAME:
+#. DESCRIPTION:
+#. ----------------------------------------------------------------------
+#: logview/gnome-system-log.desktop.in.h:1
+msgid "System Log"
+msgstr "Cofnodion y Cysawd"
+
+#: logview/gnome-system-log.desktop.in.h:2
+msgid "View the system log file"
+msgstr "Gweld ffeil gofnod y cysawd"
+
+#: logview/info.c:65
+msgid "Log stats"
+msgstr "Ystadegau'r cofnodion"
+
+#: logview/info.c:110
+msgid "Size:"
+msgstr "Maint:"
+
+#: logview/info.c:110
+msgid "Modified:"
+msgstr "Addaswyd:"
+
+#: logview/info.c:111
+msgid "Start Date:"
+msgstr "Dyddiad Cychwyn:"
+
+#: logview/info.c:111
+msgid "Last Date:"
+msgstr "Dyddiad Olaf:"
+
+#: logview/info.c:111
+msgid "Number of Lines:"
+msgstr "Nifer Llinellau:"
+
+#: logview/info.c:137
+msgid "Log Information"
+msgstr "Gwybodaeth Cofnodion"
+
+#: logview/info.c:163 logview/zoom.c:157
+msgid "<No log loaded>"
+msgstr "<Dim cofnodion wedi'u llwytho>"
+
+#: logview/info.c:186
+#, c-format
+msgid "%ld bytes"
+msgstr "%ld beit"
+
+#: logview/log_repaint.c:59
+msgid "January"
+msgstr "Ionawr"
+
+#: logview/log_repaint.c:59
+msgid "February"
+msgstr "Chwefror"
+
+#: logview/log_repaint.c:59
+msgid "March"
+msgstr "Mawrth"
+
+#: logview/log_repaint.c:59
+msgid "April"
+msgstr "Ebrill"
+
+#: logview/log_repaint.c:59
+msgid "May"
+msgstr "Mai"
+
+#: logview/log_repaint.c:60
+msgid "June"
+msgstr "Mehefin"
+
+#: logview/log_repaint.c:60
+msgid "July"
+msgstr "Gorffennaf"
+
+#: logview/log_repaint.c:60
+msgid "August"
+msgstr "Awst"
+
+#: logview/log_repaint.c:60
+msgid "September"
+msgstr "Medi"
+
+#: logview/log_repaint.c:60
+msgid "October"
+msgstr "Hydref"
+
+#: logview/log_repaint.c:61
+msgid "November"
+msgstr "Tachwedd"
+
+#: logview/log_repaint.c:61
+msgid "December"
+msgstr "Rhagfyr"
+
+#. Translators: Date only format, %x should well do really
+#: logview/log_repaint.c:398
+#, c-format
+msgid "%x"
+msgstr "%x"
+
+#. Translators: Make sure this is only Month and Day format, year
+#. * will be bogus here
+#: logview/log_repaint.c:453
+msgid "%B %e"
+msgstr "%B %e"
+
+#. Translators: should be only the time, date could be bogus
+#: logview/log_repaint.c:519
+#, c-format
+msgid "%X"
+msgstr "%X"
+
+#: logview/logrtns.c:194
+msgid "Not enough memory!\n"
+msgstr "Dim digon o gof!\n"
+
+#: logview/logrtns.c:205
+msgid "Unable to open logfile!\n"
+msgstr ""
+"Methwyd agor y ffeil gofnod!\n"
+"\n"
+
+#: logview/logrtns.c:263
+#, c-format
+msgid "%s is not a regular file."
+msgstr "Nid yw %s yn ffeil rheolaidd"
+
+#: logview/logrtns.c:271
+#, c-format
+msgid ""
+"%s is not user readable. Either run the program as root or ask the sysadmin "
+"to change the permissions on the file."
+msgstr ""
+"Nid yw %s yn ddarllenadwy gan ddefnyddwyr. Naill ai rhedwch y rhaglen fel yr "
+"uwchddefnyddiwr (root) neu gofynwch i reolwr y cysawd i newid y caniatadau "
+"ar y ffeil."
+
+#: logview/logrtns.c:288
+#, c-format
+msgid "%s could not be opened."
+msgstr "Nid oedd modd agor %s."
+
+#: logview/logrtns.c:318 logview/logrtns.c:327
+#, c-format
+msgid "%s not a log file."
+msgstr "Nid yw %s yn ffeil gofnod."
+
+#: logview/logrtns.c:725 logview/logrtns.c:756 logview/logrtns.c:887
+msgid "ReadLogStats: out of memory"
+msgstr "ReadLogStats: allan o gof"
+
+#: logview/logview.c:99
+msgid "S_witch Log"
+msgstr "Ne_wid Cofnodion"
+
+#: logview/logview.c:100
+msgid "Switch between already opened logs"
+msgstr "Newid rhwng cofnodion a agorwyd eisioes"
+
+#: logview/logview.c:106
+msgid "_Monitor..."
+msgstr "_Arsylwi..."
+
+#: logview/logview.c:107
+msgid "Monitor Logs"
+msgstr "Cofnodion Arsylwi"
+
+#: logview/logview.c:115
+msgid "_Properties"
+msgstr "_Priodweddau"
+
+#: logview/logview.c:116
+msgid "Show Log Properties"
+msgstr "Dangos Priodweddau Cofnodion"
+
+#: logview/logview.c:124
+msgid "Clos_e All"
+msgstr "Ca_u Popeth"
+
+#: logview/logview.c:125
+msgid "Close all Log files"
+msgstr "Cau pob ffeil gofnod"
+
+#: logview/logview.c:137
+msgid "_Calendar"
+msgstr "_Calendr"
+
+#: logview/logview.c:138
+msgid "Show Calendar Log"
+msgstr "Dangos Cofnodion Calendr"
+
+#: logview/logview.c:144
+msgid "_Entry Detail"
+msgstr "Manylion _Cofnod"
+
+#: logview/logview.c:145
+msgid "Show Entry Detail"
+msgstr "Dangos Manylion Cofnod"
+
+#: logview/logview.c:151
+msgid "_Collapse All"
+msgstr "_Dymchwel Popeth"
+
+#: logview/logview.c:152
+msgid "Collapse all the rows"
+msgstr "Dymchwel pob rhes"
+
+#: logview/logview.c:365
+msgid "No log files to open"
+msgstr "Dim ffeiliau cofnod i'w hagor"
+
+#: logview/logview.c:389
+msgid "Date"
+msgstr "Dyddiad"
+
+#: logview/logview.c:389
+msgid "Host Name"
+msgstr "Enw Gwesteiwr"
+
+#: logview/logview.c:390
+msgid "Process"
+msgstr "Proses"
+
+#: logview/logview.c:390
+msgid "Message"
+msgstr "Neges"
+
+#: logview/logview.c:474
+msgid "Last Modified: "
+msgstr "Addaswyd Ddiwethaf:"
+
+#: logview/logview.c:568 logview/logview.c:643
+msgid "Too many open logs. Close one and try again"
+msgstr "Gormod o gofnodion ar agor. Ceuwch un a cheisiwch eto"
+
+#: logview/logview.c:580
+msgid "File already opened"
+msgstr "Ffeil wedi'i hagor  yn barod"
+
+#: logview/logview.c:656
+msgid "Open new logfile"
+msgstr "Agor ffeil gofnod newydd"
+
+#: logview/misc.c:56
+#, c-format
+msgid "Error: [%s]\n"
+msgstr "Gwall: [%s]\n"
+
+#: logview/monitor.c:109
+msgid "Monitor Options"
+msgstr "Dewisiadau Arsylwi"
+
+#: logview/monitor.c:112
+msgid "Ac_tions"
+msgstr "Gweithredoedd"
+
+#: logview/monitor.c:135
+msgid "Choose logs to monitor:"
+msgstr "Dewiswch gofnodion i'w arsylwi:"
+
+#: logview/monitor.c:140
+msgid "Currently monitored logs:"
+msgstr "Cofnodion arsylwedig cyfredol:"
+
+#: logview/monitor.c:188
+msgid "Add logs to monitor"
+msgstr "Ychwanegu cofnodion i'w arsywi"
+
+#: logview/monitor.c:197
+msgid "Remove logs from monitor"
+msgstr "Gwaredu cofnodion o'r arsylwydd"
+
+#. Check boxes
+#: logview/monitor.c:244
+msgid "_Hide Application"
+msgstr "_Cuddio Cymhwysiad"
+
+#: logview/monitor.c:252
+msgid "_Execute Actions"
+msgstr "_Gweithredu Gweithred"
+
+#: logview/monitor.c:289
+msgid "Too many logs to monitor. Remove one and try again"
+msgstr "Gormod o gofnodion i'w arsylwi. Gwaredwch un a cheisiwch eto"
+
+#: logview/monitor.c:297 logview/monitor.c:335
+msgid "tmp_list is NULL\n"
+msgstr "mae tmp_list yn NWL\n"
+
+#: logview/monitor.c:457
+msgid "Monitoring logs..."
+msgstr "Yn arsylwi cofnodion..."
+
+#: logview/monitor.c:644
+msgid "TOUCHED!!\n"
+msgstr "CYFFYRDDWYD!\n"
+
+#: logview/zoom.c:63
+msgid "Zoom view"
+msgstr "Chwyddo golwg"
+
+#: logview/zoom.c:102
+msgid "Date:"
+msgstr "Dyddiad:"
+
+#: logview/zoom.c:102
+msgid "Process:"
+msgstr "Proses:"
+
+#: logview/zoom.c:103
+msgid "Message:"
+msgstr "Neges:"
+
+#: logview/zoom.c:103
+msgid "Description:"
+msgstr "Disgrifiad:"
+
+#: logview/zoom.c:131
+msgid "Log line detail for"
+msgstr "Manylion llinell gofnod am"
+
+#. Translators: do not include year, it would be bogus
+#: logview/zoom.c:185
+msgid "%B %e %X"
+msgstr "%B %e %X"
+
+#: logview/logview.schemas.in.h:1
+msgid "Log file to open up on startup"
+msgstr "Ffeil gofnod i'w hagor wrth gychwyn"
+
+#: logview/logview.schemas.in.h:2
+msgid ""
+"Specifies the log file to open up at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your distribution."
+msgstr ""
+"Penoda'r ffeil gofnod i'w hagor wrth ymgychwyn. Naill ai /var/adm/messages "
+"neu /var/log/messages sy'n ragosod, yn ddibynnol ar eich dosbarthiad."
+
+#, fuzzy
+#~ msgid "_Show Dictionary"
+#~ msgstr "_Geiriadur"
+
+#~ msgid "No Files Found"
+#~ msgstr "Ni ganfuwyd unrhyw ffeiliau"
+
+#~ msgid "One File Found"
+#~ msgstr "Canfuwyd un ffeil"
+
+#, fuzzy
+#~ msgid "%d Files Found"
+#~ msgstr "Canfuwyd %d ffeil"
+
+#~ msgid "Error while searching for files"
+#~ msgstr "Gwall tra'n chwilio am feiliau"
+
+#, fuzzy
+#~ msgid "Error parsing the search command"
+#~ msgstr "EGwall tra'n rhedeg y gorchymyn (%s): %s."
+
+#, fuzzy
+#~ msgid "Error running the search command"
+#~ msgstr "EGwall tra'n rhedeg y gorchymyn (%s): %s."
+
+#, fuzzy
+#~ msgid "Look in Folder Entry"
+#~ msgstr "_Edrych yn y blygell:"
+
+#~ msgid "Show more _options"
+#~ msgstr "Dangos mwt opsiynnau"
+
+#~ msgid "Open %d documents?"
+#~ msgstr "Agor %d dogfennau?"
+
+#~ msgid ""
+#~ "This will open %d separate documents. Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Agora hyn %d dogfen gwahanol. A ydych yn sicr eich bod am wneud hyn?"
+
+#~ msgid "Properties"
+#~ msgstr "_Priodweddau"
+
+#~ msgid "Ac_tions..."
+#~ msgstr "Gweithre_doedd"
+
+#~ msgid "Entry Detail"
+#~ msgstr "Manylion _Cofnod"
+
+#~ msgid "GNOME Search Tool"
+#~ msgstr "Erfyn Chwilio GNOME"
