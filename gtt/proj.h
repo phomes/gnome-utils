@@ -290,8 +290,11 @@ GList * 	gtt_get_project_list (void);
 void 		gtt_project_list_append(GttProject *p);
 
 void project_list_destroy(void);
-void project_list_sort_time(void);
-void project_list_sort_total_time(void);
+void project_list_sort_day(void);
+void project_list_sort_week(void);
+void project_list_sort_month(void);
+void project_list_sort_year(void);
+void project_list_sort_ever(void);
 void project_list_sort_title(void);
 void project_list_sort_desc(void);
 

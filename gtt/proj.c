@@ -2108,10 +2108,20 @@ project_list_destroy(void)
 	}
 }
 
-static void
-project_list_sort(int (cmp)(const void *, const void *))
+static GList *
+project_list_sort(GList *prjs, int (cmp)(const void *, const void *))
 {
-	plist = g_list_sort (plist, cmp);
+	GList *node;
+	prjs = g_list_sort (prjs, cmp);
+	for (node = prjs; node; node=node->next)
+	{
+		GttProject *prj = node->data;
+		if (prj->sub_projects)
+		{
+			prj->sub_projects = project_list_sort (prj->sub_projects, cmp);
+		}
+	}
+	return prjs;
 }
 
 /* -------------------- */
@@ -2147,7 +2157,7 @@ gtt_project_locate_from_id (int prj_id)
 
 
 static int
-cmp_time_day(const void *aa, const void *bb)
+cmp_day(const void *aa, const void *bb)
 {
 	GttProject *a = (GttProject *)aa;
 	GttProject *b = (GttProject *)bb;
@@ -2155,7 +2165,31 @@ cmp_time_day(const void *aa, const void *bb)
 }
 
 static int
-cmp_total_time(const void *aa, const void *bb)
+cmp_week(const void *aa, const void *bb)
+{
+	GttProject *a = (GttProject *)aa;
+	GttProject *b = (GttProject *)bb;
+	return (gtt_project_total_secs_week(b) - gtt_project_total_secs_week(a));
+}
+
+static int
+cmp_month(const void *aa, const void *bb)
+{
+	GttProject *a = (GttProject *)aa;
+	GttProject *b = (GttProject *)bb;
+	return (gtt_project_total_secs_month(b) - gtt_project_total_secs_month(a));
+}
+
+static int
+cmp_year(const void *aa, const void *bb)
+{
+	GttProject *a = (GttProject *)aa;
+	GttProject *b = (GttProject *)bb;
+	return (gtt_project_total_secs_year(b) - gtt_project_total_secs_year(a));
+}
+
+static int
+cmp_ever(const void *aa, const void *bb)
 {
 	GttProject *a = (GttProject *)aa;
 	GttProject *b = (GttProject *)bb;
@@ -2187,27 +2221,45 @@ cmp_desc(const void *aa, const void *bb)
 
 
 void
-project_list_sort_time(void)
+project_list_sort_day(void)
 {
-	project_list_sort(cmp_time_day);
+	plist = project_list_sort(plist, cmp_day);
 }
 
 void
-project_list_sort_total_time(void)
+project_list_sort_week(void)
 {
-	project_list_sort(cmp_total_time);
+	plist = project_list_sort(plist, cmp_week);
+}
+
+void
+project_list_sort_month(void)
+{
+	plist = project_list_sort(plist, cmp_month);
+}
+
+void
+project_list_sort_year(void)
+{
+	plist = project_list_sort(plist, cmp_year);
+}
+
+void
+project_list_sort_ever(void)
+{
+	plist = project_list_sort(plist, cmp_ever);
 }
 
 void
 project_list_sort_title(void)
 {
-	project_list_sort(cmp_title);
+	plist = project_list_sort(plist, cmp_title);
 }
 
 void
 project_list_sort_desc(void)
 {
-	project_list_sort(cmp_desc);
+	plist = project_list_sort(plist, cmp_desc);
 }
 
 /* =========================== END OF FILE ========================= */
