@@ -2,16 +2,16 @@
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # Szabolcs BAN <shooby@gnome.hu>, 1999, 2000.
 # Gergely Nagy <greg@gnome.hu>, 2000.
-# Andr·s TÌm·r <timar@gnome.hu>, 2001.
+# Andr√°s T√≠m√°r <timar@gnome.hu>, 2001.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.2.1\n"
-"POT-Creation-Date: 2002-08-05 18:45+0100\n"
-"PO-Revision-Date: 2001-09-03 18:16+0200\n"
-"Last-Translator: Andr·s TÌm·r <timar@gnome.hu>\n"
+"POT-Creation-Date: 2002-08-13 10:26+0200\n"
+"PO-Revision-Date: 2002-08-13 14:09+0200\n"
+"Last-Translator: Andr√°s T√≠m√°r <timar@gnome.hu>\n"
 "Language-Team: Hungarian <hu@gnome.hu>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: exe-handler/gnome-exe-handler.c:76
@@ -22,57 +22,57 @@ msgid ""
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
-"A h·lÛzatrÛl letˆltˆtt ismeretlen program futtat·sa veszÈlyes lehet.\n"
+"A h√°l√≥zatr√≥l let√∂lt√∂tt ismeretlen program futtat√°sa vesz√©lyes lehet.\n"
 "\n"
-"Biztos, hogy futtatni szeretnÈd `%s'-t?"
+"Biztos, hogy futtatni szeretn√©d `%s'-t?"
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
-msgstr "A f·jl engedÈlyei nem elÈrhetıek."
+msgstr "A f√°jl enged√©lyei nem el√©rhet≈ëek."
 
 #: exe-handler/gnome-exe-handler.c:88
 #, c-format
 msgid "Could not execute the file `%s' due to a permission problem"
-msgstr "Nem siker¸lt vÈgrehajtani `%s' f·jlt jogosults·gi problÈm·k miatt"
+msgstr "Nem siker√ºlt v√©grehajtani `%s' f√°jlt jogosults√°gi probl√©m√°k miatt"
 
 #: exe-handler/gnome-exe-handler.c:104
 #, c-format
 msgid "Failure at executing `%s'"
-msgstr "Hiba `%s' futtat·sakor"
+msgstr "Hiba `%s' futtat√°sakor"
 
 #: exe-handler/gnome-exe-handler.c:123
 #, c-format
 msgid "It was not possible to open the file `%s'"
-msgstr "Nem lehetett megnyitni ezt a f·jlt: `%s'"
+msgstr "Nem lehetett megnyitni ezt a f√°jlt: `%s'"
 
 #: exe-handler/gnome-exe-handler.c:132
 #, c-format
 msgid "The file `%s' is empty"
-msgstr "A f·jl ¸res: `%s'"
+msgstr "A f√°jl √ºres: `%s'"
 
 #: exe-handler/gnome-exe-handler.c:137
 #, c-format
 msgid "There was an error. `%s' is empty"
-msgstr "Hiba tˆrtÈnt. A f·jl ¸res: `%s'"
+msgstr "Hiba t√∂rt√©nt. A f√°jl √ºres: `%s'"
 
 #: exe-handler/gnome-exe-handler.c:152
 msgid "This is a library and can not be executed"
-msgstr "Ez egy programkˆnyvt·r, amelyet nem lehet vÈgrehajtani"
+msgstr "Ez egy programk√∂nyvt√°r, amelyet nem lehet v√©grehajtani"
 
 #: exe-handler/gnome-exe-handler.c:158
 msgid "The file is a core file and can not be executed"
-msgstr "A f·jl egy core f·jl, amelyet nem lehet vÈgrehajtani"
+msgstr "A f√°jl egy core f√°jl, amelyet nem lehet v√©grehajtani"
 
 #: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
-msgstr "Ez egy ismeretlen vÈgrehajthatÛ tÌpus"
+msgstr "Ez egy ismeretlen v√©grehajthat√≥ t√≠pus"
 
 #: exe-handler/gnome-exe-handler.c:192
 msgid ""
 "The executable is for a different platform and can not be executed on this "
 "system"
 msgstr ""
-"Ez a vÈgrehajthatÛ f·jl egy m·sik platformra kÈsz¸lt, nem futtathatÛ ezen a "
+"Ez a v√©grehajthat√≥ f√°jl egy m√°sik platformra k√©sz√ºlt, nem futtathat√≥ ezen a "
 "rendszeren"
 
 #. Translator credits
@@ -81,25 +81,29 @@ msgstr ""
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
 msgstr ""
+"B√°n Szabolcs (Shooby) <shooby@gnome.hu>\n"
+"Nagy Gergely <greg@gnome.hu>\n"
+"T√≠m√°r Andr√°s <timar@gnome.hu>"
 
 #: gcalc/gcalc.c:60 gcalc/gcalc.c:191
-#, fuzzy
 msgid "GNOME Calculator"
-msgstr "Gnome sz·molÛgÈp"
+msgstr "GNOME Sz√°mol√≥g√©p"
+
+#: gcalc/gcalc.c:61
+msgid "(C) 1998 the Free Software Foundation"
+msgstr "(C) 1998 Free Software Foundation"
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similiar to xcalc"
-msgstr "Az xcalc-hoz hasonlÛ egyszer˚ duplapontoss·g˙ sz·molÛgÈp"
+msgstr "Az xcalc-hoz hasonl√≥ egyszer≈± duplapontoss√°g√∫ sz√°mol√≥g√©p"
 
 #: gcalc/gcalc.c:140
-#, fuzzy
 msgid "_Calculator"
-msgstr "Gnome sz·molÛgÈp"
+msgstr "_Sz√°mol√≥g√©p"
 
 #: gcalc/gnome-calc.c:252
-#, fuzzy
 msgid "inf"
-msgstr "sin"
+msgstr "inf"
 
 #: gcalc/gnome-calc.c:475
 msgid "DEG"
@@ -118,18 +122,16 @@ msgid "1/x"
 msgstr "1/x"
 
 #: gcalc/gnome-calc.c:1252
-#, fuzzy
 msgid "Inverse"
-msgstr "Idıtartamok"
+msgstr "Inverz"
 
 #: gcalc/gnome-calc.c:1253
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1253
-#, fuzzy
 msgid "Square"
-msgstr "MentÈs"
+msgstr "N√©gyzet"
 
 #: gcalc/gnome-calc.c:1254
 msgid "SQRT"
@@ -137,7 +139,7 @@ msgstr "SQRT"
 
 #: gcalc/gnome-calc.c:1254
 msgid "Square root"
-msgstr ""
+msgstr "N√©gyzetgy√∂k"
 
 #: gcalc/gnome-calc.c:1255
 msgid "CE/C"
@@ -145,18 +147,16 @@ msgstr "CE/C"
 
 # logview/calendar.c:118
 #: gcalc/gnome-calc.c:1255
-#, fuzzy
 msgid "Clear"
-msgstr "Napt·r"
+msgstr "T√∂rl√©s"
 
 #: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "AC"
 
 #: gcalc/gnome-calc.c:1256
-#, fuzzy
 msgid "Reset"
-msgstr "Rezetkor"
+msgstr "Alap√°llapot"
 
 #: gcalc/gnome-calc.c:1258
 msgid "INV"
@@ -164,7 +164,7 @@ msgstr "INV"
 
 #: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
-msgstr ""
+msgstr "Inverz trigonometriai/logaritmus f√ºggv√©ny"
 
 #. inverse button
 #: gcalc/gnome-calc.c:1259
@@ -172,37 +172,33 @@ msgid "sin"
 msgstr "sin"
 
 #: gcalc/gnome-calc.c:1259
-#, fuzzy
 msgid "Sine"
-msgstr "MÈret"
+msgstr "Szinusz"
 
 #: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
 #: gcalc/gnome-calc.c:1260
-#, fuzzy
 msgid "Cosine"
-msgstr "Bez·r·s"
+msgstr "Koszinusz"
 
 #: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
 #: gcalc/gnome-calc.c:1261
-#, fuzzy
 msgid "Tangent"
-msgstr "lila"
+msgstr "Tangens"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
 #: gcalc/gnome-calc.c:1263
-#, fuzzy
 msgid " DEG  "
-msgstr "DEG"
+msgstr " DEG  "
 
 #: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
-msgstr ""
+msgstr "V√°lt√°s a fok / radi√°n / grad k√∂z√∂tt"
 
 #: gcalc/gnome-calc.c:1265
 msgid "e"
@@ -210,7 +206,7 @@ msgstr "e"
 
 #: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
-msgstr ""
+msgstr "Term√©szetes logaritmus alapja"
 
 #: gcalc/gnome-calc.c:1266
 msgid "EE"
@@ -218,35 +214,32 @@ msgstr "EE"
 
 #: gcalc/gnome-calc.c:1266
 msgid "Add digit"
-msgstr ""
+msgstr "Sz√°mjegy hozz√°ad√°sa"
 
 #: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
 #: gcalc/gnome-calc.c:1267
-#, fuzzy
 msgid "Base 10 Logarithm"
-msgstr "Logaritmusos"
+msgstr "10-es alap√∫ logaritmus"
 
 #: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
 #: gcalc/gnome-calc.c:1268
-#, fuzzy
 msgid "Natural Logarithm"
-msgstr "Logaritmusos"
+msgstr "Term√©szetes alap√∫ logaritmus"
 
 #: gcalc/gnome-calc.c:1269
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "x<sup>y</sup>"
 
 # gdictsrc/gdict-pref-dialog.c:161
 #: gcalc/gnome-calc.c:1269
-#, fuzzy
 msgid "Power"
-msgstr "Port:"
+msgstr "Hatv√°nyoz√°s"
 
 #: gcalc/gnome-calc.c:1271
 msgid "PI"
@@ -258,25 +251,23 @@ msgstr "x!"
 
 #: gcalc/gnome-calc.c:1272
 msgid "Factorial"
-msgstr ""
+msgstr "Faktori√°lis"
 
 #: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
 #: gcalc/gnome-calc.c:1273
-#, fuzzy
 msgid "Opening Parenthesis"
-msgstr "Paletta megnyit·sa"
+msgstr "Nyit√≥ z√°r√≥jel"
 
 #: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
 #: gcalc/gnome-calc.c:1274
-#, fuzzy
 msgid "Closing Parenthesis"
-msgstr "z·rÛ z·rÛjelet v·rtam"
+msgstr "Z√°r√≥ z√°r√≥jel"
 
 #: gcalc/gnome-calc.c:1275
 msgid "/"
@@ -284,7 +275,7 @@ msgstr "/"
 
 #: gcalc/gnome-calc.c:1275
 msgid "Divide by"
-msgstr ""
+msgstr "Oszt√°s"
 
 #: gcalc/gnome-calc.c:1277
 msgid "STO"
@@ -295,6 +286,8 @@ msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
+"Az √©rt√©k t√°rol√°sa\n"
+"a mem√≥ri√°ban"
 
 #: gcalc/gnome-calc.c:1278
 msgid "7"
@@ -314,7 +307,7 @@ msgstr "*"
 
 #: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
-msgstr ""
+msgstr "Szorz√°s"
 
 #: gcalc/gnome-calc.c:1283
 msgid "RCL"
@@ -325,6 +318,8 @@ msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
+"A mem√≥ria tartalm√°nak\n"
+"megjelen√≠t√©se"
 
 #: gcalc/gnome-calc.c:1284
 msgid "4"
@@ -343,9 +338,8 @@ msgid "-"
 msgstr "-"
 
 #: gcalc/gnome-calc.c:1287
-#, fuzzy
 msgid "Subtract"
-msgstr "IndÌt·s"
+msgstr "Kivon√°s"
 
 #: gcalc/gnome-calc.c:1289
 msgid "SUM"
@@ -356,6 +350,8 @@ msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
+"Az √©rt√©k hozz√°ad√°sa a \n"
+"mem√≥ri√°ban t√°rolt √©rt√©khez"
 
 #: gcalc/gnome-calc.c:1290
 msgid "1"
@@ -375,7 +371,7 @@ msgstr "+"
 
 #: gcalc/gnome-calc.c:1293
 msgid "Add"
-msgstr "Hozz·ad·s"
+msgstr "√ñsszead√°s"
 
 #: gcalc/gnome-calc.c:1295
 msgid "EXC"
@@ -386,6 +382,8 @@ msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
+"Az √©rt√©k kicser√©l√©se a \n"
+"mem√≥ri√°ban t√°rolt √©rt√©kkel"
 
 #: gcalc/gnome-calc.c:1296
 msgid "0"
@@ -396,9 +394,8 @@ msgid "."
 msgstr "."
 
 #: gcalc/gnome-calc.c:1297
-#, fuzzy
 msgid "Decimal Point"
-msgstr "Decim·lis 8 bit"
+msgstr "Tizedespont"
 
 #: gcalc/gnome-calc.c:1298
 msgid "+/-"
@@ -406,84 +403,72 @@ msgstr "+/-"
 
 #: gcalc/gnome-calc.c:1298
 msgid "Change sign"
-msgstr ""
+msgstr "El≈ëjelv√°lt√°s"
 
 #: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
 #: gcalc/gnome-calc.c:1299
-#, fuzzy
 msgid "Calculate"
-msgstr "Gnome sz·molÛgÈp"
+msgstr "Sz√°m√≠t√°s elv√©gz√©se"
 
 #: gcalc/gnome-calculator.desktop.in.h:1
-#, fuzzy
 msgid "Calculator"
-msgstr "Gnome sz·molÛgÈp"
+msgstr "Sz√°mol√≥g√©p"
 
 #: gcalc/gnome-calculator.desktop.in.h:2
-#, fuzzy
 msgid "Perform simple calculations"
-msgstr "Sz·molÛgÈp"
+msgstr "Egyszer≈± sz√°m√≠t√°sok elv√©gz√©se"
 
 #: gcharmap/gnome-character-map.desktop.in.h:1
-#, fuzzy
 msgid "Character Map"
-msgstr "Gnome karaktert·bla"
+msgstr "Karaktert√°bla"
 
 #: gcharmap/gnome-character-map.desktop.in.h:2
 msgid "Insert special characters into documents"
-msgstr ""
+msgstr "K√ºl√∂nleges karakterek beilleszt√©se a dokumentumba"
 
 #: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
-msgstr "Karakter kiv·laszt·sa"
+msgstr "Karakter kiv√°laszt√°sa"
 
 #: gcharmap/src/asciiselect.c:120
-#, fuzzy
 msgid "_Insert"
-msgstr "BeillesztÈs"
+msgstr "_Beilleszt√©s"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "KarakterkÛd:"
+msgstr "_Karakterk√≥d:"
 
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "Karakter:"
+msgstr "K_arakter:"
 
 #: gcharmap/src/asciiselect.c:148
-#, fuzzy
 msgid "Character Code"
-msgstr "KarakterkÛd:"
+msgstr "Karakterk√≥d"
 
 #: gcharmap/src/asciiselect.c:148
-#, fuzzy
 msgid "Select character code"
-msgstr "Karakter kiv·laszt·sa"
+msgstr "Karakterk√≥d kiv√°laszt√°sa"
 
 #: gcharmap/src/asciiselect.c:149
-#, fuzzy
 msgid "Character"
-msgstr "Karakter:"
+msgstr "Karakter"
 
 #: gcharmap/src/asciiselect.c:149
-#, fuzzy
 msgid "Character to insert"
-msgstr "KarakterkÛd:"
+msgstr "Beillesztend≈ë karakter"
 
 #: gcharmap/src/callbacks.c:63
-#, fuzzy
 msgid "GNOME Character Map"
-msgstr "Gnome karaktert·bla"
+msgstr "GNOME Karaktert√°bla"
 
 #: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
-msgstr ""
+msgstr "Karakterek kiv√°laszt√°sa, m√°sol√°sa √©s beilleszt√©se m√°s alkalmaz√°sokba"
 
 #: gcharmap/src/callbacks.c:113
 msgid "del"
@@ -492,149 +477,135 @@ msgstr "del"
 #: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
-msgstr "%s: KarakterkÛd %d"
+msgstr "%s: Karakterk√≥d %d"
 
 #: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
-msgstr "A v·gÛlapra m·solt szˆveg..."
+msgstr "A v√°g√≥lapra m√°solt sz√∂veg..."
 
 #: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
-msgstr "A v·gÛlapra v·gott szˆveg..."
+msgstr "A v√°g√≥lapra v√°gott sz√∂veg..."
 
 #: gcharmap/src/callbacks.c:208
 msgid "Text pasted from clipboard..."
-msgstr "A v·gÛlaprÛl beillesztett szˆveg..."
+msgstr "A v√°g√≥lapr√≥l beillesztett sz√∂veg..."
 
 #: gcharmap/src/interface.c:206
 msgid "Gnome Character Map"
-msgstr "Gnome karaktert·bla"
+msgstr "Gnome karaktert√°bla"
 
 #: gcharmap/src/interface.c:236
 msgid "Action Toolbar"
-msgstr "M˚velet eszkˆzt·r"
+msgstr "M≈±velet eszk√∂zt√°r"
 
 #: gcharmap/src/interface.c:240
-#, fuzzy
 msgid "_Text to copy:"
-msgstr "M·solandÛ szˆveg:"
+msgstr "M√°soland√≥ _sz√∂veg:"
 
 #: gcharmap/src/interface.c:255
-#, fuzzy
 msgid "_Copy"
-msgstr "M·sol·s"
+msgstr "_M√°sol√°s"
 
 #: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
-#, fuzzy
 msgid "Text to copy"
-msgstr "M·solandÛ szˆveg:"
+msgstr "M√°soland√≥ sz√∂veg"
 
 #: gcharmap/src/interface.c:278
-#, fuzzy
 msgid "Entry"
-msgstr "BejegyzÈs vÈge:"
+msgstr "Bejegyz√©s"
 
 #: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
-msgstr "M·sol·s"
+msgstr "M√°sol√°s"
 
 #: gcharmap/src/interface.c:279
-#, fuzzy
 msgid "Copy the text"
-msgstr "KijelˆlÈs m·sol·sa"
+msgstr "Sz√∂veg m√°sol√°sa"
 
 #: gcharmap/src/menus.c:34
-#, fuzzy
 msgid "_Browse..."
-msgstr "KeresÈs"
+msgstr "_Keres√©s..."
 
 #: gcharmap/src/menus.c:35
 msgid "Insert character(s) by choosing character codes."
-msgstr "Karakter(ek) besz˙r·sa karakterkÛd alapj·n."
+msgstr "Karakter(ek) besz√∫r√°sa karakterk√≥d alapj√°n."
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
-msgstr "Karakter:"
+msgstr "_Karakterek"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
 #. GNOMEUIINFO_SEPARATOR,
 #: gcharmap/src/menus.c:75
 msgid "Cut"
-msgstr "Kiv·g·s"
+msgstr "Kiv√°g√°s"
 
 #: gcharmap/src/menus.c:75
 msgid "Cut the selection"
-msgstr "KijelˆlÈs kiv·g·sa"
+msgstr "Kijel√∂l√©s kiv√°g√°sa"
 
 #: gcharmap/src/menus.c:77
 msgid "Copy the selection"
-msgstr "KijelˆlÈs m·sol·sa"
+msgstr "Kijel√∂l√©s m√°sol√°sa"
 
 #: gcharmap/src/menus.c:79
 msgid "Paste"
-msgstr "BeillesztÈs"
+msgstr "Beilleszt√©s"
 
 #: gcharmap/src/menus.c:79
 msgid "Paste the clipboard"
-msgstr "V·gÛlap beillesztÈse"
+msgstr "V√°g√≥lap beilleszt√©se"
 
 #: gdialog/guage.c:78
 msgid "Gdialog progressbar"
-msgstr ""
+msgstr "Gdialog folyamats√°v"
 
 #: gdialog/guage.c:78
 msgid "Indicates the percentage specified at the standard input"
-msgstr ""
+msgstr "Kijelzi a szabv√°nyos bemeneten megadott sz√°zal√©kot"
 
 #: gdialog/inputbox.c:90
 msgid "GDialog Entry"
-msgstr ""
+msgstr "GDialog bejegyz√©s"
 
 #: gdialog/inputbox.c:90
-#, fuzzy
 msgid "Enter the text"
-msgstr "KijelˆlÈs m·sol·sa"
+msgstr "Sz√∂veg bevitele"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
-msgstr ""
+msgstr "Kell√©kek"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
-msgstr ""
+msgstr "Keres√©s a sz√≥t√°rban"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
-#, fuzzy
 msgid "Lookup words in an online dictionary"
-msgstr "SzÛ keresÈse a szÛt·rban"
+msgstr "Sz√≥ keres√©se egy online sz√≥t√°rban"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:1
-#, fuzzy
 msgid "Look Up Selected Text..."
-msgstr "A kiv·lasztott projekt mentÈse"
+msgstr "Kijel√∂lt sz√∂veg kikeres√©se..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:2
-#, fuzzy
 msgid "_About..."
-msgstr "NÈvjegy..."
+msgstr "_N√©vjegy..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:3
-#, fuzzy
 msgid "_Help"
-msgstr "S˙gÛ"
+msgstr "_S√∫g√≥"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:4
-#, fuzzy
 msgid "_Preferences"
-msgstr "Tulajdons·gok"
+msgstr "_Tulajdons√°gok"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:5
-#, fuzzy
 msgid "_Show/Hide Definition Window..."
-msgstr "Mutatja/Elrejti a definÌciÛs ablakot..."
+msgstr "_Megjelen√≠ti/Elrejti a defin√≠ci√≥s ablakot..."
 
 # gdictsrc/dict.c:623 gdictsrc/gdict-pref-dialog.c:498
 # gdictsrc/gdict-pref-dialog.c:542 gdictsrc/gdict-speller.c:393
@@ -644,23 +615,23 @@ msgstr "Mutatja/Elrejti a definÌciÛs ablakot..."
 #: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
 #: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
-msgstr "Nem siker¸lt a kapcsolÛdni a kiszolg·lÛhoz"
+msgstr "Nem siker√ºlt a kapcsol√≥dni a kiszolg√°l√≥hoz"
 
 #: gdictsrc/dict.c:661
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
+"S√∫lyos hiba t√∂rt√©nt. Ellen≈ërizd, hogy a megfelel≈ë kiszolg√°l√≥t √©s portot "
+"haszn√°lod-e. Az alap√©rtelmezett kiszolg√°l√≥ a dict.org √©s a port 2628."
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "_M˚velet eszkˆzt·r"
+msgstr "GNOME Sz√≥t√°r"
 
 #: gdictsrc/gdict-about.c:57
-#, fuzzy
 msgid "Copyright 1999 by Mike Hughes"
-msgstr "Copyright 1998,99 John Kodis"
+msgstr "Copyright 1999 by Mike Hughes"
 
 # gdictsrc/gdict-about.c:40
 #: gdictsrc/gdict-about.c:58
@@ -668,327 +639,301 @@ msgid ""
 "Client for MIT dictionary server.\n"
 "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
 msgstr ""
-"‹gyfÈlprogram az MIT szÛt·rkiszolg·lÛra.\n"
+"√úgyf√©lprogram az MIT sz√≥t√°rkiszolg√°l√≥ra.\n"
 "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
 
 #: gdictsrc/gdict-app.c:128
 msgid "Spell-checking..."
-msgstr "HelyesÌr·s-ellenırzÈs..."
+msgstr "Helyes√≠r√°s-ellen≈ërz√©s..."
 
 #: gdictsrc/gdict-app.c:136
 msgid "Spell check done"
-msgstr "A helyesÌr·s-ellenırzÈs befejezıdˆtt"
+msgstr "A helyes√≠r√°s-ellen≈ërz√©s befejez≈ëd√∂tt"
 
 #: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
-msgstr "Nincs egyezÈs"
+msgstr "Nincs egyez√©s"
 
 #: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
-msgstr "KeresÈs szÛra..."
+msgstr "Keres√©s sz√≥ra..."
 
 #: gdictsrc/gdict-app.c:279
 msgid "Lookup done"
-msgstr "A keresÈs befejezıdˆtt"
+msgstr "A keres√©s befejez≈ëd√∂tt"
 
 #: gdictsrc/gdict-app.c:301
 msgid "String not found"
-msgstr "Nincs ilyen karakterl·nc"
+msgstr "Nincs ilyen karakterl√°nc"
 
 #: gdictsrc/gdict-app.c:469
-#, fuzzy
 msgid "Find"
-msgstr "KeresÈs"
+msgstr "Keres√©s"
 
 #: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
-#, fuzzy
 msgid "_Find"
-msgstr "KeresÈs:"
+msgstr "_Keres√©s"
 
 #: gdictsrc/gdict-app.c:540
-#, fuzzy
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
 "or you are not connected to the Internet."
 msgstr ""
-"Nem siker¸lt teljesÌteni a kÈrÈsedet, mivel a kiszolg·lÛ, amelyet \n"
-"haszn·lsz, Èpp nincs bekapcsolva, vagy nem vagy az Internetre \n"
-"felkapcsolÛdva. Ha nem vagy felkapcsolva az Internetre, csatlakozz\n"
-"Ès prÛb·ld ˙jra."
+"Nem siker√ºlt teljes√≠teni a k√©r√©sedet, \n"
+"mivel a kiszolg√°l√≥, amelyet haszn√°lsz, nem el√©rhet≈ë, \n"
+"vagy nem vagy az internetre felkapcsol√≥dva."
 
 #: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
-#, fuzzy
 msgid "_Look Up Word"
-msgstr "KeresÈs"
+msgstr "_Sz√≥ kikeres√©se"
 
 #: gdictsrc/gdict-app.c:702
 msgid "Lookup word in dictionary"
-msgstr "SzÛ keresÈse a szÛt·rban"
+msgstr "Sz√≥ keres√©se a sz√≥t√°rban"
 
 #: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
-#, fuzzy
 msgid "Check _Spelling"
-msgstr "HelyesÌr·s-ellenırzÈs"
+msgstr "_Helyes√≠r√°s-ellen≈ërz√©s"
 
 #: gdictsrc/gdict-app.c:705
 msgid "Check word spelling"
-msgstr "HelyesÌr·s-ellenırzÈs"
+msgstr "Helyes√≠r√°s-ellen≈ërz√©s"
 
 #: gdictsrc/gdict-app.c:749
-#, fuzzy
 msgid "_Dictionary"
-msgstr "_M˚velet eszkˆzt·r"
+msgstr "_Sz√≥t√°r"
 
 #: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
-msgstr ""
+msgstr "Sz√≥t√°r"
 
 #: gdictsrc/gdict-app.c:808
-#, fuzzy
 msgid "_Word: "
-msgstr "SzÛ:"
+msgstr "_Sz√≥:"
 
 #: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
-#, fuzzy
 msgid "Word"
-msgstr "SzÛ:"
+msgstr "Sz√≥"
 
 #: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
-msgstr ""
+msgstr "Sz√≥ bevitele"
 
 #: gdictsrc/gdict-app.c:836
 msgid "Enter a Word or select one from the list below"
-msgstr ""
+msgstr "Adj meg egy sz√≥t, vagy v√°lassz az al√°bbi list√°b√≥l"
 
 #: gdictsrc/gdict-app.c:839
-#, fuzzy
 msgid "Look Up for a Word"
-msgstr "KeresÈs"
+msgstr "Sz√≥ kikeres√©se"
 
 #: gdictsrc/gdict-applet.c:263
-#, fuzzy
 msgid "_Lookup"
-msgstr "KeresÈs"
+msgstr "_Kikeres√©s"
 
 # mini-utils/gless/gless.c:548
 #: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
 #, c-format
 msgid "Error invoking query: %s"
-msgstr "Hiba a lekÈrdezÈsnÈl: %s"
+msgstr "Hiba a lek√©rdez√©sn√©l: %s"
 
 #: gdictsrc/gdict-pref-dialog.c:37
 msgid "Headword:"
-msgstr "SzÛ:"
+msgstr "Sz√≥:"
 
 #: gdictsrc/gdict-pref-dialog.c:38
 msgid "Sub-number:"
-msgstr "Al-sz·m:"
+msgstr "Al-sz√°m:"
 
 #: gdictsrc/gdict-pref-dialog.c:39
 msgid "Pronunciation:"
-msgstr "KiejtÈs:"
+msgstr "Kiejt√©s:"
 
 #: gdictsrc/gdict-pref-dialog.c:40
 msgid "Etymology:"
-msgstr "EtimolÛgia:"
+msgstr "Etimol√≥gia:"
 
 #: gdictsrc/gdict-pref-dialog.c:41
 msgid "Part of speech:"
-msgstr "BeszÈdrÈszlet:"
+msgstr "Besz√©dr√©szlet:"
 
 #: gdictsrc/gdict-pref-dialog.c:42
 msgid "Example:"
-msgstr "PÈlda:"
+msgstr "P√©lda:"
 
 #: gdictsrc/gdict-pref-dialog.c:43
 msgid "Main body:"
-msgstr "Tˆrzs:"
+msgstr "T√∂rzs:"
 
 #: gdictsrc/gdict-pref-dialog.c:44
 msgid "Cross-reference:"
-msgstr "Kereszthivatkoz·s:"
+msgstr "Kereszthivatkoz√°s:"
 
 #: gdictsrc/gdict-pref-dialog.c:186
-#, fuzzy
 msgid "Dictionary Preferences"
-msgstr "Tulajdons·gok szerkesztÈse..."
+msgstr "Sz√≥t√°r tulajdons√°gai"
 
 #: gdictsrc/gdict-pref-dialog.c:198
-#, fuzzy
 msgid "Smart _lookup"
-msgstr "Gyors lekÈrÈs"
+msgstr "Okos _kikeres√©s"
 
 # gdictsrc/gdict-pref-dialog.c:156
 #: gdictsrc/gdict-pref-dialog.c:211
-#, fuzzy
 msgid "_Server:"
-msgstr "Kiszolg·lÛ:"
+msgstr "_Kiszolg√°l√≥:"
 
 #: gdictsrc/gdict-pref-dialog.c:218
-#, fuzzy
 msgid "De_fault"
-msgstr "Alap"
+msgstr "_Alap√©rtelmezett"
 
 #: gdictsrc/gdict-pref-dialog.c:224
-#, fuzzy
 msgid "Reset server to default"
-msgstr "Alap·llapot vissza·llÌt·sa"
+msgstr "Alap√°llapot vissza√°ll√≠t√°sa"
 
 # gdictsrc/gdict-pref-dialog.c:161
 #: gdictsrc/gdict-pref-dialog.c:226
-#, fuzzy
 msgid "_Port:"
-msgstr "Port:"
+msgstr "_Port:"
 
 #: gdictsrc/gdict-pref-dialog.c:240
-#, fuzzy
 msgid "Def_ault"
-msgstr "Alap"
+msgstr "A_lap√©rtelmezett"
 
 #: gdictsrc/gdict-pref-dialog.c:247
-#, fuzzy
 msgid "Reset port to default"
-msgstr "Alap·llapot vissza·llÌt·sa"
+msgstr "Alap√°llapot vissza√°ll√≠t√°sa"
 
 # gdictsrc/gdict-pref-dialog.c:156
 #: gdictsrc/gdict-pref-dialog.c:248
-#, fuzzy
 msgid "Server"
-msgstr "Kiszolg·lÛ:"
+msgstr "Kiszolg√°l√≥"
 
 # gdictsrc/gdict-pref-dialog.c:156
 #: gdictsrc/gdict-pref-dialog.c:249
-#, fuzzy
 msgid "Server Entry"
-msgstr "Kiszolg·lÛ:"
+msgstr "Kiszolg√°l√≥ bevitele"
 
 #: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
-msgstr ""
+msgstr "Add meg a kiszolg√°l√≥ nev√©t"
 
 # gdictsrc/gdict-pref-dialog.c:161
 #: gdictsrc/gdict-pref-dialog.c:252
-#, fuzzy
 msgid "Port"
-msgstr "Port:"
+msgstr "Port"
 
 #: gdictsrc/gdict-pref-dialog.c:253
 msgid "Port Entry"
-msgstr ""
+msgstr "Port bevitele"
 
 #: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
-msgstr ""
+msgstr "Add meg a port sz√°m√°t"
 
 #: gdictsrc/gdict-pref-dialog.c:258
-#, fuzzy
 msgid "_Database:"
-msgstr "Adatb·zis:"
+msgstr "_Adatb√°zis:"
 
 #: gdictsrc/gdict-pref-dialog.c:265
-#, fuzzy
 msgid "D_efault strategy:"
-msgstr "AlapÈrtelmezett stratÈgia:"
+msgstr "_Alap√©rtelmezett strat√©gia:"
 
 #: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
-msgstr "KeresÈs az ˆsszes adatb·zisban"
+msgstr "Keres√©s az √∂sszes adatb√°zisban"
 
 #: gdictsrc/gdict-pref-dialog.c:623
-#, fuzzy
 msgid "Database"
-msgstr "Adatb·zis:"
+msgstr "Adatb√°zis"
 
 #: gdictsrc/gdict-pref-dialog.c:623
-#, fuzzy
 msgid "Database Name"
-msgstr "Adatb·zis:"
+msgstr "Adatb√°zis neve"
 
 #: gdictsrc/gdict-pref-dialog.c:635
-#, fuzzy
 msgid "Default Strategy"
-msgstr "AlapÈrtelmezett stratÈgia:"
+msgstr "Alap√©rtelmezett strat√©gia"
 
 #: gdictsrc/gdict-speller.c:135
-#, fuzzy
 msgid "_Word:"
-msgstr "SzÛ:"
+msgstr "_Sz√≥:"
 
 #: gdictsrc/gdict-speller.c:148
 msgid "Enter a word to know the spelling"
-msgstr ""
+msgstr "Add meg a sz√≥t, amelynek a helyes√≠r√°s√°ra k√≠v√°ncsi vagy"
 
 #: gdictsrc/gdict-speller.c:153
 msgid "Click to do the spell check"
-msgstr ""
+msgstr "Kattints a helyes√≠r√°s-ellen≈ërz√©shez"
 
 #: gdictsrc/gdict-speller.c:158
-#, fuzzy
 msgid "Search S_trategy:"
-msgstr "KeresÈsi stratÈgia:"
+msgstr "Keres√©si _strat√©gia:"
 
 #: gdictsrc/gdict-speller.c:174
-#, fuzzy
 msgid "Search _Results"
-msgstr "KeresÈs eredmÈnye"
+msgstr "Keres√©s _eredm√©nye"
 
 #: gdictsrc/gdict-speller.c:236
-#, fuzzy
 msgid "Check Spelling"
-msgstr "HelyesÌr·s-ellenırzÈs"
+msgstr "Helyes√≠r√°s-ellen≈ërz√©s"
 
 #: gdictsrc/gdict-speller.c:654
-#, fuzzy
 msgid "Search Strategy"
-msgstr "KeresÈsi stratÈgia:"
+msgstr "Keres√©si strat√©gia"
 
 #: gdictsrc/gdict.schemas.in.h:1
-#, fuzzy
 msgid "Dictionary server"
-msgstr "Tulajdons·gok szerkesztÈse..."
+msgstr "Sz√≥t√°rkiszolg√°l√≥"
 
 # gdictsrc/dict.c:623 gdictsrc/gdict-pref-dialog.c:498
 # gdictsrc/gdict-pref-dialog.c:542 gdictsrc/gdict-speller.c:393
 #: gdictsrc/gdict.schemas.in.h:2
-#, fuzzy
 msgid "Port used to connect to server"
-msgstr "Nem siker¸lt a kapcsolÛdni a kiszolg·lÛhoz"
+msgstr "A kiszolg√°l√≥ portja, amelyen kereszt√ºl kapcsol√≥dsz hozz√°"
 
 #: gdictsrc/gdict.schemas.in.h:3
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"Add meg, hogy haszn√°lod-e az okos kikeres√©st. Ennek a be√°ll√≠t√°snak a "
+"haszn√°lata att√≥l is f√ºgg, hogy a sz√≥t√°rkiszolg√°l√≥ t√°mogatja-e. "
+"Alap√©rtelmez√©sben be van kapcsolva."
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "A sz√≥t√°rkiszolg√°l√≥n haszn√°land√≥ adatb√°zis"
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"A sz√≥t√°rkiszolg√°l√≥, amelyhez kapcsol√≥dsz. Az alap√©rtelmezett kiszolg√°l√≥ a "
+"dict.org. Tov√°bbi kiszolg√°l√≥k adatai√©rt l√°togasd meg a http://www.dict.org "
+"kiszolg√°l√≥t."
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"A sz√≥t√°rkiszolg√°l√≥n haszn√°land√≥ egyedi adatb√°zis neve. A ! azt jelenti, hogy "
+"a Gnome Sz√≥t√°r az adott kiszolg√°l√≥n fellelhet≈ë √∂sszes adatb√°zisban keres."
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
 msgstr ""
+"A port sz√°ma, amelyhez csatlakozol. Az alap√©rtelmezett portsz√°m a 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "KeresÈsi stratÈgia:"
+msgstr "A haszn√°land√≥ keres√©si strat√©gia:"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -996,77 +941,77 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"A haszn√°land√≥ keres√©si strat√©gia. Ez f√ºgg a sz√≥t√°rkiszolg√°l√≥ √°ltal "
+"t√°mogatott keres√©si strat√©gi√°t√≥l. Az alap√©rtelmezett strat√©gia a 'lev' - "
+"azaz azok a szavak illeszkednek, amelyek Levenshtein t√°vols√°ga egyn√©l kisebb."
 
 #: gdictsrc/gdict.schemas.in.h:10
-#, fuzzy
 msgid "Use smart lookup"
-msgstr "Gyors lekÈrÈs"
+msgstr "Okos kikeres√©s haszn√°lata"
 
 #: gfloppy/gfloppy.desktop.in.h:1
-#, fuzzy
 msgid "Floppy Formatter"
-msgstr "A floppy form·z·sa megszakÌtva."
+msgstr "Floppy-form√°z√≥"
 
 #: gfloppy/gfloppy.desktop.in.h:2
-#, fuzzy
 msgid "Format Floppy Disks"
-msgstr "Floppy form·z·sa"
+msgstr "Floppy lemezek form√°z√°sa"
 
 #: gfloppy/src/badblocks.c:102
 msgid "MInternal Error: Unable to seek to the correct location."
-msgstr "Belsı hiba: nem lehet elÈrni a megfelelı helyet."
+msgstr "Bels≈ë hiba: nem lehet el√©rni a megfelel≈ë helyet."
 
 #: gfloppy/src/badblocks.c:111
 #, c-format
 msgid "MInternal Error: Weird value (%ld) in do_test\n"
-msgstr "Belsı hiba: fura ÈrtÈk (%ld) a do_test-ben\n"
+msgstr "Bels≈ë hiba: fura √©rt√©k (%ld) a do_test-ben\n"
 
 #: gfloppy/src/badblocks.c:166
 #, c-format
 msgid "EBad block at block %lu"
-msgstr "Hib·s blokk: %lu"
+msgstr "Hib√°s blokk: %lu"
 
 #. while (!i)
 #. ;
 #: gfloppy/src/badblocks.c:260
 msgid "MChecking for bad blocks..."
-msgstr "Hib·s blokkok keresÈse..."
+msgstr "Hib√°s blokkok keres√©se..."
 
 #: gfloppy/src/badblocks.c:272
 #, c-format
 msgid "MFailed to open device %s for badblock checking\n"
-msgstr "Hiba a %s eszkˆz megnyit·sakor hib·s blokk keresÈsekor\n"
+msgstr "Hiba a %s eszk√∂z megnyit√°sakor hib√°s blokk keres√©sekor\n"
 
 #: gfloppy/src/badblocks.c:291 gfloppy/src/gfloppy.c:213
 msgid "MChecking for bad blocks... Done"
-msgstr "Hib·s blokkok keresÈse... KÈsz"
+msgstr "Hib√°s blokkok keres√©se... K√©sz"
 
 #: gfloppy/src/fdformat.c:44
 msgid "MFormatting the disk..."
-msgstr "A lemez form·z·sa..."
+msgstr "A lemez form√°z√°sa..."
 
 #: gfloppy/src/fdformat.c:46
 msgid "EI don't know what this is, but it's very wrong."
-msgstr "Nem tudom mi ez, de frankÛn nem stimmel."
+msgstr "Nem tudom mi ez, de frank√≥n nem stimmel."
 
 #: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
 #, c-format
 msgid "EError formatting track #%d"
-msgstr "Hiba a %d track form·z·sakor"
+msgstr "Hiba a %d track form√°z√°sakor"
 
 #: gfloppy/src/fdformat.c:74
 msgid "EError during completion of formatting"
-msgstr "Hiba a form·z·s befejezÈsekor"
+msgstr "Hiba a form√°z√°s befejez√©sekor"
 
 #. XXXX - need to tell parent we're finished
 #: gfloppy/src/fdformat.c:78
 msgid "MFormatting the disk... Done"
-msgstr "A lemez form·z·sa... KÈsz"
+msgstr "A lemez form√°z√°sa... K√©sz"
 
 #. XXXX - tell parent we're starting verify stage
 #: gfloppy/src/fdformat.c:94
 msgid "MVerifying the format..."
-msgstr "Form·z·s ellenırzÈse..."
+msgstr "Form√°z√°s ellen≈ërz√©se..."
 
 #: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
 msgid ""
@@ -1074,14 +1019,14 @@ msgid ""
 "\n"
 "Please confirm that it is not write-protected."
 msgstr ""
-"Nem lehet a lemezre Ìrni.\n"
+"Nem lehet a lemezre √≠rni.\n"
 "\n"
-"KÈrlek ellenırizd, hogy nincs-e Ìr·svÈdve."
+"K√©rlek ellen≈ërizd, hogy nincs-e √≠r√°sv√©dve."
 
 #: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
 #, c-format
 msgid "EInsufficient permissions to open floppy device %s."
-msgstr "Nincs elÈg jogosults·g a %s floppy eszkˆz megnyit·s·hoz."
+msgstr "Nincs el√©g jogosults√°g a %s floppy eszk√∂z megnyit√°s√°hoz."
 
 #: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
 msgid ""
@@ -1090,10 +1035,10 @@ msgid ""
 "Please confirm that it is in the drive\n"
 "with the drive door shut."
 msgstr ""
-"Hiba a lemez elÈrÈsekor.\n"
+"Hiba a lemez el√©r√©sekor.\n"
 "\n"
-"Ellenırizd, hogy a lemez a meghajtÛban\n"
-"van, Ès hogy az ajtaja le lett z·rva."
+"Ellen≈ërizd, hogy a lemez a meghajt√≥ban\n"
+"van, √©s hogy az ajtaja le lett z√°rva."
 
 #: gfloppy/src/fdformat.c:109
 #, c-format
@@ -1102,9 +1047,9 @@ msgid ""
 "\n"
 "Error code %s:%d"
 msgstr ""
-"Hiba a %s floppy eszkˆz elÈrÈsekor\n"
+"Hiba a %s floppy eszk√∂z el√©r√©sekor\n"
 "\n"
-"Hiba kÛd %s:%d"
+"Hiba k√≥d %s:%d"
 
 #: gfloppy/src/fdformat.c:129
 #, c-format
@@ -1112,33 +1057,33 @@ msgid ""
 "ERead Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
 msgstr ""
-"Olvas·si hiba:\n"
-"Hiba a %d cylinder olvas·sakor, v·rt adat %d, olvasott adat %d"
+"Olvas√°si hiba:\n"
+"Hiba a %d cylinder olvas√°sakor, v√°rt adat %d, olvasott adat %d"
 
 #: gfloppy/src/fdformat.c:132
 #, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr "Hiba a %d cylinder olvas·sakor, v·rt adat %d, olvasott adat %d"
+msgstr "Hiba a %d cylinder olvas√°sakor, v√°rt adat %d, olvasott adat %d"
 
 #: gfloppy/src/fdformat.c:141
 #, c-format
 msgid "MBad data in cyl %d.  Continuing... "
-msgstr "Hib·s adat a %d cylinderben. Folytat·s..."
+msgstr "Hib√°s adat a %d cylinderben. Folytat√°s..."
 
 # mini-utils/gless/gless.c:548
 #: gfloppy/src/fdformat.c:148
 #, c-format
 msgid "EError closing device %s"
-msgstr "Hiba az eszkˆz bez·r·sakor: %s"
+msgstr "Hiba az eszk√∂z bez√°r√°sakor: %s"
 
 #: gfloppy/src/fdformat.c:153
 msgid "MVerifying the format... Done"
-msgstr "A form·z·s ellenırzÈse... KÈsz"
+msgstr "A form√°z√°s ellen≈ërz√©se... K√©sz"
 
 #: gfloppy/src/fdformat.c:165
 #, c-format
 msgid "EUnable to write to device %s"
-msgstr "Hiba az eszkˆz Ìr·sakor: %s"
+msgstr "Hiba az eszk√∂z √≠r√°sakor: %s"
 
 #: gfloppy/src/fdformat.c:184
 #, c-format
@@ -1147,95 +1092,86 @@ msgid ""
 "\n"
 "Error code %s"
 msgstr ""
-"¡ltal·nos hiba a %s floppy eszkˆz elÈrÈsekor.\n"
+"√Åltal√°nos hiba a %s floppy eszk√∂z el√©r√©sekor.\n"
 "\n"
-"Hoba kÛd %s"
+"Hoba k√≥d %s"
 
 #: gfloppy/src/fdformat.c:194
 msgid "ECould not determine current format type"
-msgstr "Nem tudtam meg·llapÌrani a jelenlegi form·tumot"
+msgstr "Nem tudtam meg√°llap√≠rani a jelenlegi form√°tumot"
 
 #: gfloppy/src/gfloppy.c:164 gfloppy/src/gfloppy.c:197
 msgid "MMaking filesystem on disk..."
-msgstr "F·jlrendszer lÈtrehoz·sa..."
+msgstr "F√°jlrendszer l√©trehoz√°sa..."
 
 #: gfloppy/src/gfloppy.c:167
 msgid "EUnable to create filesystem correctly."
-msgstr "Hiba a f·jlrendszer lÈtrehoz·sakor."
+msgstr "Hiba a f√°jlrendszer l√©trehoz√°sakor."
 
 #: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
 msgid "MMaking filesystem on disk... Done"
-msgstr "F·jlrendszer lÈtrehoz·sa... KÈsz"
+msgstr "F√°jlrendszer l√©trehoz√°sa... K√©sz"
 
 #: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
 msgid "EUnable to create filesystem."
-msgstr "Hiba a f·jlrendszer lÈtrehoz·sa kˆzben."
+msgstr "Hiba a f√°jlrendszer l√©trehoz√°sa k√∂zben."
 
 #: gfloppy/src/gfloppy.c:209
 msgid "MChecking for bad blocks... (this might take a while)"
-msgstr "Hib·s blokkok keresÈse... (ez eltarthat egy darabig)"
+msgstr "Hib√°s blokkok keres√©se... (ez eltarthat egy darabig)"
 
 #: gfloppy/src/gfloppy2.glade.h:2
 msgid "DOS (fat)"
-msgstr ""
+msgstr "DOS (fat)"
 
 #: gfloppy/src/gfloppy2.glade.h:3
-#, fuzzy
 msgid "Double Density 3.5\" (720KB)"
 msgstr "Double Density 3.5\" (720 KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:4
-#, fuzzy
 msgid "Double Density 5.25\" (360KB)"
 msgstr "Double Density 5.25\" (360 KB)"
 
 #: gfloppy/src/gfloppy2.glade.h:5
-#, fuzzy
 msgid "File system _type:"
-msgstr "F·jlrendszer tÌpusa:"
+msgstr "_F√°jlrendszer t√≠pusa:"
 
 #: gfloppy/src/gfloppy2.glade.h:6
-#, fuzzy
 msgid "Floppy _density:"
-msgstr "Floppy tÌpusa:"
+msgstr "Floppy _t√≠pusa:"
 
 #: gfloppy/src/gfloppy2.glade.h:7
-#, fuzzy
 msgid "Floppy de_vice:"
-msgstr "HajlÈkonylemezes egysÈg:"
+msgstr "_Hajl√©konylemezes egys√©g:"
 
 #: gfloppy/src/gfloppy2.glade.h:8
-#, fuzzy
 msgid "Format a Floppy"
-msgstr "Floppy form·z·sa"
+msgstr "Floppy form√°z√°sa"
 
 #: gfloppy/src/gfloppy2.glade.h:9
-#, fuzzy
 msgid "High Density 3.5\" (1.44MB)"
 msgstr "High Density 3.5\" (1.44 MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:10
-#, fuzzy
 msgid "High Density 5.25\" (1.2MB)"
 msgstr "High Density 5.25\" (1.2 MB)"
 
 #: gfloppy/src/gfloppy2.glade.h:11
 msgid "Linux Native (ext2)"
-msgstr "Linux f·jlrendszer (ext2)"
+msgstr "Linux f√°jlrendszer (ext2)"
 
 #: gfloppy/src/gfloppy2.glade.h:12
-#, fuzzy
 msgid "_Format"
-msgstr "Form·z·s"
+msgstr "_Form√°z√°s"
 
 #: gfloppy/src/gfloppy2.glade.h:13
 msgid "_Quick format"
-msgstr "_Gyors form·z·s"
+msgstr "_Gyors form√°z√°s"
 
 #: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr "Nem siker¸lt megnyitni a %s eszkˆzt, a form·z·s nem lehetsÈges."
+msgstr "Nem siker√ºlt megnyitni a %s eszk√∂zt, a form√°z√°s nem lehets√©ges."
 
 #: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
@@ -1243,8 +1179,8 @@ msgid ""
 "The device %s is disconnected.\n"
 "Please attach device to continue."
 msgstr ""
-"A %s eszkˆz nincs csatlakoztatva.\n"
-"Csatlakoztasd az eszkˆzt a folytat·shoz."
+"A %s eszk√∂z nincs csatlakoztatva.\n"
+"Csatlakoztasd az eszk√∂zt a folytat√°shoz."
 
 #: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
@@ -1253,8 +1189,8 @@ msgid ""
 "be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"Nincs megfelelı jogosults·god a %s Ìr·s·hoz, a form·z·s nem lehetsÈges.\n"
-"KÈrj a rendszergazd·tÛl Ìr·si jogot."
+"Nincs megfelel≈ë jogosults√°god a %s √≠r√°s√°hoz, a form√°z√°s nem lehets√©ges.\n"
+"K√©rj a rendszergazd√°t√≥l √≠r√°si jogot."
 
 #: gfloppy/src/main.c:291
 #, c-format
@@ -1262,128 +1198,116 @@ msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
+"Nem siker√ºlt megjelen√≠teni a floppy-form√°z√≥ s√∫g√≥j√°t.\n"
+"%s"
 
 #: gfloppy/src/main.c:359
 msgid "The device to format"
-msgstr "A form·zandÛ eszkˆz"
+msgstr "A form√°zand√≥ eszk√∂z"
 
 #: gfloppy/src/main.c:360
 msgid "DEVICE"
-msgstr "ESZK÷Z"
+msgstr "ESZK√ñZ"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
-msgstr "A floppy sikereresen form·zva."
+msgstr "A floppy sikereresen form√°zva."
 
 #: gfloppy/src/progress.c:120
 msgid "Floppy formatting cancelled."
-msgstr "A floppy form·z·sa megszakÌtva."
+msgstr "A floppy form√°z√°sa megszak√≠tva."
 
 #: gfloppy/src/progress.c:161
 msgid "Format progress."
-msgstr "Form·z·s ·ll·sa."
+msgstr "Form√°z√°s √°ll√°sa."
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1
-#, fuzzy
 msgid "Search for Files"
-msgstr "KeresÈs"
+msgstr "F√°jlok keres√©se"
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search your disk for files"
-msgstr ""
+msgstr "F√°jlok keres√©se a lemezen"
 
 #: gsearchtool/gsearchtool.c:66
-#, fuzzy
 msgid "File name is"
-msgstr "F·jlnÈv :"
+msgstr "A f√°jln√©v"
 
 #: gsearchtool/gsearchtool.c:67
-#, fuzzy
 msgid "File name is not"
-msgstr "F·jlnÈv :"
+msgstr "A f√°jln√©v nem"
 
 #: gsearchtool/gsearchtool.c:68
 msgid "Don't search mounted filesystems"
-msgstr "Nem keres beillesztett f·jlrendszeren"
+msgstr "Nem keres bef≈±z√∂tt f√°jlrendszeren"
 
 #: gsearchtool/gsearchtool.c:69
 msgid "Follow symbolic links"
-msgstr "Szimbolikus linkek kˆvetÈse"
+msgstr "Szimbolikus linkek k√∂vet√©se"
 
 #: gsearchtool/gsearchtool.c:70
-#, fuzzy
 msgid "Process folder contents depth first"
-msgstr "A kezdı kˆnyvt·r nem lÈtezik"
+msgstr "Az almapp√°kat dolgozza fel el≈ëbb"
 
 #: gsearchtool/gsearchtool.c:71
 msgid "Owned by user"
-msgstr ""
+msgstr "Tulajdonos felhaszn√°l√≥"
 
 #: gsearchtool/gsearchtool.c:72
-#, fuzzy
 msgid "Owned by group"
-msgstr "F·jltulajdonos csoportja"
+msgstr "Tulajdonos csoport"
 
 #: gsearchtool/gsearchtool.c:73
 msgid "Invalid user or group"
-msgstr "…rvÈnytelen felhaszn·lÛ vagy csoport"
+msgstr "√ârv√©nytelen felhaszn√°l√≥ vagy csoport"
 
 #: gsearchtool/gsearchtool.c:74
-#, fuzzy
 msgid "Last time modified"
-msgstr "UtolsÛ mÛdosÌt·s idıpontja"
+msgstr "Utols√≥ m√≥dos√≠t√°s id≈ëpontja"
 
 #: gsearchtool/gsearchtool.c:75
-#, fuzzy
 msgid "File is empty"
-msgstr "A f·jl ¸res: `%s'"
+msgstr "A f√°jl √ºres"
 
 #: gsearchtool/gsearchtool.c:76
-#, fuzzy
 msgid "Matches regular expression"
-msgstr "Kiterjesztett regul·ris kifejezÈs"
+msgstr "Illeszkedik a regul√°ris kifejez√©sre"
 
 #: gsearchtool/gsearchtool.c:274 gsearchtool/gsearchtool.c:943
-#, fuzzy
 msgid "Start folder does not exist."
-msgstr "A kezdı kˆnyvt·r nem lÈtezik"
+msgstr "A kezd≈ë mappa nem l√©tezik."
 
 #: gsearchtool/gsearchtool.c:499
 msgid "today at %-I:%M %p"
-msgstr ""
+msgstr "ma %-I:%M %p"
 
 #: gsearchtool/gsearchtool.c:501
 msgid "yesterday at %-I:%M %p"
-msgstr ""
+msgstr "tegnap %-I:%M %p"
 
 #: gsearchtool/gsearchtool.c:503 gsearchtool/gsearchtool.c:505
 msgid "%m/%-d/%y, %-I:%M %p"
-msgstr ""
+msgstr "%y/%-m/%d, %-I:%M %p"
 
 #: gsearchtool/gsearchtool.c:518
-#, fuzzy
 msgid "%Y%m%d%H%M%S"
-msgstr "%b %d %H:%M:%S"
+msgstr "%Y%m%d%H%M%S"
 
 #: gsearchtool/gsearchtool.c:533
-#, fuzzy
 msgid "folder"
-msgstr "Tˆmˆr"
+msgstr "mappa"
 
 #: gsearchtool/gsearchtool.c:535
-#, fuzzy
 msgid "program"
-msgstr "KilÈpÈs a programbÛl"
+msgstr "program"
 
 #: gsearchtool/gsearchtool.c:537
-#, fuzzy
 msgid "symbolic link"
-msgstr "Szimbolikus linkek kˆvetÈse"
+msgstr "szimbolikus link"
 
 #: gsearchtool/gsearchtool.c:663
-#, fuzzy
 msgid "No Files Found."
-msgstr "Nincs egyezÈs"
+msgstr "Nincs tal√°lat."
 
 #: gsearchtool/gsearchtool.c:736
 msgid ""
@@ -1391,10 +1315,13 @@ msgid ""
 "The Bourne shell was not found\n"
 "It is typically installed as /bin/sh or /usr/bin/sh."
 msgstr ""
+"A keres√©s nem v√©grehajthat√≥.\n"
+"A Bourne shell nem tal√°lhat√≥.\n"
+"Ezt √°ltal√°ban a /bin/sh vagy /usr/bin/sh helyre telep√≠tik."
 
 #: gsearchtool/gsearchtool.c:752
 msgid "Searching..."
-msgstr "KeresÈs..."
+msgstr "Keres√©s..."
 
 #: gsearchtool/gsearchtool.c:866
 msgid ""
@@ -1402,276 +1329,248 @@ msgid ""
 "... Too many errors to display ..."
 msgstr ""
 "\n"
-"... T˙l sok hiba van, nem lehet ennyit megjelenÌteni ..."
+"... T√∫l sok hiba van, nem lehet ennyit megjelen√≠teni ..."
 
 #: gsearchtool/gsearchtool.c:877
-#, fuzzy
 msgid "No files found"
-msgstr "Nincs egyezÈs"
+msgstr "Nincs tal√°lat"
 
 #: gsearchtool/gsearchtool.c:880
-#, fuzzy
 msgid "One file found"
-msgstr "Nem tal·lom a tappancsot"
+msgstr "Egy f√°jlt tal√°ltam"
 
 #: gsearchtool/gsearchtool.c:882
-#, fuzzy, c-format
+#, c-format
 msgid "%d files found"
-msgstr "Nincs egyezÈs"
+msgstr "%d f√°jlt tal√°ltam"
 
 #: gsearchtool/gsearchtool.c:954 gsearchtool/gsearchtool.c:1671
 msgid "Cannot perform the search. Please specify a search criteria."
-msgstr ""
+msgstr "Nem lehet v√©grehajtani a keres√©st. Adj meg keres√©si felt√©telt!"
 
 #: gsearchtool/gsearchtool.c:971 gsearchtool/gsearchtool.c:1692
 msgid ""
 "A search is already running.  Please wait for the search to complete or "
 "cancel it."
-msgstr ""
+msgstr "M√°r fut egy keres√©s. V√°rj, am√≠g befejez≈ëdik, vagy szak√≠tsd meg."
 
 #: gsearchtool/gsearchtool.c:1005
-#, fuzzy
 msgid "Start folder does not exist"
-msgstr "A kezdı kˆnyvt·r nem lÈtezik"
+msgstr "A kezd≈ë mappa nem l√©tezik"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
 msgstr ""
+"Nem lehet megjelen√≠teni a keres√©s parancssor√°t. Adj meg keres√©si felt√©telt!"
 
 #: gsearchtool/gsearchtool.c:1024
-#, fuzzy
 msgid "Search Command Line"
-msgstr "Keresı parancssor"
+msgstr "Keres≈ë parancssor"
 
 #: gsearchtool/gsearchtool.c:1042
-#, fuzzy
 msgid ""
 "This is the command line that can be used to execute this search\n"
 "from the console.\n"
 "\n"
 "C_ommand:"
 msgstr ""
-"Ez egy parancssor, amellyel keresÈseket indÌthatsz a konzolrÛl:\n"
-" (MegjegyzÈs: ha egy f·jlt akarsz soronkÈnt, add az al·bbi sorhoz\n"
-" \"| tr '\\000' '\\n'\"-t)"
+"Ez az a parancssor, amellyel ezt a keres√©st a konzolr√≥l is \n"
+"elind√≠thatod.\n"
+"\n"
+"_Parancs:"
 
 #: gsearchtool/gsearchtool.c:1063
 msgid "Command"
 msgstr "Parancs"
 
 #: gsearchtool/gsearchtool.c:1064
-#, fuzzy
 msgid "Command Line Entry"
-msgstr "Parancssor"
+msgstr "Parancssor bevitele"
 
 #: gsearchtool/gsearchtool.c:1064
-#, fuzzy
 msgid "Use this command line to execute the search from console"
 msgstr ""
-"Ez egy parancssor, amellyel keresÈseket indÌthatsz a konzolrÛl:\n"
-" (MegjegyzÈs: ha egy f·jlt akarsz soronkÈnt, add az al·bbi sorhoz\n"
-" \"| tr '\\000' '\\n'\"-t)"
+"Haszn√°ld ezt a parancsot, ha a konzolr√≥l akarod ind√≠tani ezt a keres√©st"
 
 #: gsearchtool/gsearchtool.c:1172
-#, fuzzy
 msgid "No viewer available for this mime type."
-msgstr "Nincs parancs ehhez mime tÌpushoz"
+msgstr "Ehhez MIME-t√≠pushoz nincs megjelen√≠t≈ë"
 
 #: gsearchtool/gsearchtool.c:1269
 msgid "Entry changed called for a non entry option!"
-msgstr "A beviteli mezı v·ltoz·s hÌvÛdott meg egy nem beviteli mezıhˆz!"
+msgstr "A beviteli mez≈ë v√°ltoz√°s h√≠v√≥dott meg egy nem beviteli mez≈ëh√∂z!"
 
 #: gsearchtool/gsearchtool.c:1339
 msgid "Search Rule Value Entry"
-msgstr ""
+msgstr "Keres√©si szab√°ly √©rt√©k√©nek bevitele"
 
 #: gsearchtool/gsearchtool.c:1339
 msgid "Enter a value for search rule"
-msgstr ""
+msgstr "Adja meg a keres√©si szab√°ly √©rt√©k√©t"
 
 #: gsearchtool/gsearchtool.c:1354
 msgid "Enabled"
-msgstr "EngedÈlyezve"
+msgstr "Enged√©lyezve"
 
 #: gsearchtool/gsearchtool.c:1362
 msgid "Toggle On/Off to enable/disable the rule"
-msgstr ""
+msgstr "Ki/be a szab√°ly enged√©lyez√©s√©hez/tilt√°s√°hoz"
 
 #: gsearchtool/gsearchtool.c:1370
 msgid "Click to Remove the Rule"
-msgstr ""
+msgstr "Kattints ide a szab√°ly elt√°vol√≠t√°s√°hoz"
 
 #: gsearchtool/gsearchtool.c:1416 gsearchtool/gsearchtool.c:1794
-#, fuzzy
 msgid "S_tarting in folder:"
-msgstr "Nincs ilyen karakterl·nc"
+msgstr "_Kezdje ebben a mapp√°ban:"
 
 #: gsearchtool/gsearchtool.c:1420 gsearchtool/gsearchtool.c:1800
 msgid "Browse"
-msgstr "KeresÈs"
+msgstr "Keres√©s"
 
 #: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
 #: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
-#, fuzzy
 msgid "Starting folder entry"
-msgstr "Nincs ilyen karakterl·nc"
+msgstr "Kezd≈ëmappa bevitele"
 
 #: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
 #: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
 msgid "Enter the folder name where you want to start the search"
-msgstr ""
+msgstr "Add meg a keres√©s kiindul√≥pontjak√©nt szolg√°l√≥ mappa nev√©t"
 
 #: gsearchtool/gsearchtool.c:1450
 msgid "Rules:"
-msgstr ""
+msgstr "Szab√°lyok:"
 
 #: gsearchtool/gsearchtool.c:1470
 msgid "A_dd Rule:"
-msgstr ""
+msgstr "Szab√°ly _hozz√°ad√°sa:"
 
 #: gsearchtool/gsearchtool.c:1479
-#, fuzzy
 msgid "Search Rules Menu"
-msgstr "KeresÈs eredmÈnye"
+msgstr "Keresi szab√°lyok men√º"
 
 #: gsearchtool/gsearchtool.c:1479
-#, fuzzy
 msgid "Select a search rule from the menu"
-msgstr "⁄j archÌvum kÈszÌtÈse a kijelˆlt elemekbıl"
+msgstr "V√°lassz egy keres√©si szab√°lyt a men√ºb≈ël"
 
 #: gsearchtool/gsearchtool.c:1522
 msgid "Click to Add a Rule"
-msgstr ""
+msgstr "Kattints ide szab√°ly hozz√°ad√°s√°hoz"
 
 #: gsearchtool/gsearchtool.c:1523
 msgid "Click to Start the Search"
-msgstr ""
+msgstr "Kattints ide a keres√©s elkezd√©s√©hez"
 
 #: gsearchtool/gsearchtool.c:1524
 msgid "Click to Stop the Search"
-msgstr ""
+msgstr "Kattints ide a keres√©s le√°ll√≠t√°s√°hoz"
 
 #: gsearchtool/gsearchtool.c:1529 gsearchtool/gsearchtool.c:1861
-#, fuzzy
 msgid "S_earch Results"
-msgstr "KeresÈs eredmÈnye"
+msgstr "_Keres√©s eredm√©nye"
 
 #: gsearchtool/gsearchtool.c:1569 gsearchtool/gsearchtool.c:1901
 msgid "Name"
-msgstr "NÈv"
+msgstr "N√©v"
 
 #: gsearchtool/gsearchtool.c:1591 gsearchtool/gsearchtool.c:1923
-#, fuzzy
 msgid "Folder"
-msgstr "Tˆmˆr"
+msgstr "Mappa"
 
 #: gsearchtool/gsearchtool.c:1603 gsearchtool/gsearchtool.c:1935
-#, fuzzy
 msgid "Size"
-msgstr "MÈret:"
+msgstr "M√©ret"
 
 #: gsearchtool/gsearchtool.c:1615 gsearchtool/gsearchtool.c:1947
 msgid "Type"
-msgstr "TÌpus"
+msgstr "T√≠pus"
 
 #: gsearchtool/gsearchtool.c:1626 gsearchtool/gsearchtool.c:1958
-#, fuzzy
 msgid "Date Modified"
-msgstr "MÛdosÌtva:"
+msgstr "M√≥dos√≠t√°s ideje"
 
 #: gsearchtool/gsearchtool.c:1770
-#, fuzzy
 msgid "Find files _named:"
-msgstr "F·jlnÈv"
+msgstr "Keres√©s _f√°jln√©vre:"
 
 #: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
-#, fuzzy
 msgid "File Name Entry"
-msgstr "F·jlnÈv :"
+msgstr "F√°jln√©v bevitele"
 
 #: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
 msgid "Enter the file name you want to search"
-msgstr ""
+msgstr "Add meg a keresend≈ë f√°jl nev√©t"
 
 #: gsearchtool/gsearchtool.c:1855
 msgid "Click to Start the search"
-msgstr ""
+msgstr "Kattints ide a keres√©s elkezd√©s√©hez"
 
 #: gsearchtool/gsearchtool.c:1856
 msgid "Click to Stop the search"
-msgstr ""
+msgstr "Kattints ide a keres√©s le√°ll√≠t√°s√°hoz"
 
 #: gsearchtool/gsearchtool.c:1978
-#, fuzzy
 msgid "Simple"
-msgstr "F·jl"
+msgstr "Egyszer≈±"
 
 #: gsearchtool/gsearchtool.c:1980
-#, fuzzy
 msgid "Advanced"
-msgstr "HaladÛ"
+msgstr "Halad√≥"
 
 #: gsearchtool/gsearchtool.c:2018
 #: gsearchtool/help/es/gsearchtool.desktop.in.h:1
 msgid "GNOME Search Tool"
-msgstr "GNOME keresı"
+msgstr "GNOME Keres≈ë"
 
 #: gsearchtool/gsearchtool.c:2019
-#, fuzzy
 msgid "(C) 1998,2002 the Free Software Foundation"
-msgstr "(C) 1998,2000 the Free Software Foundation"
+msgstr "(C) 1998,2002 the Free Software Foundation"
 
 #: gsearchtool/gsearchtool.c:2020
-#, fuzzy
 msgid "Frontend to the unix find/locate commands"
-msgstr "Fel¸let a find/grep/locate parancsokhoz"
+msgstr "Fel√ºlet a unixos find/locate parancsokhoz"
 
 #: gsearchtool/gsearchtool.c:2060
-#, fuzzy, c-format
+#, c-format
 msgid "File %s already exists. Overwrite?"
-msgstr "%s f·jl lÈtezik, fel¸lÌrod?"
+msgstr "%s f√°jl m√°r l√©tezik, fel√ºl√≠rod?"
 
 #: gsearchtool/gsearchtool.c:2095
-#, fuzzy
 msgid "Cannot save the results file."
-msgstr "Nem siker¸lt menteni a f·jlt"
+msgstr "Nem siker√ºlt menteni az eredm√©nyf√°jlt."
 
 #: gsearchtool/gsearchtool.c:2102 meat-grinder/meat-grinder.c:654
 msgid "Save Results"
-msgstr "EredmÈny mentÈse"
+msgstr "Eredm√©ny ment√©se"
 
 #: gsearchtool/gsearchtool.c:2159
-#, fuzzy
 msgid "S_how Command..."
-msgstr "Mutasd a parancsokat"
+msgstr "Parancs megjelen√≠t√©se..."
 
 #: gsearchtool/gsearchtool.c:2160
 msgid "Show the command used to perform the search"
-msgstr ""
+msgstr "A keres√©s v√©grehajt√°s√°hoz alkalmazott parancs megjelen√≠t√©se"
 
 #: gsearchtool/gsearchtool.c:2163
-#, fuzzy
 msgid "Save Results _As..."
-msgstr "EredmÈny mentÈse"
+msgstr "_Eredm√©ny ment√©se..."
 
 #: gsearchtool/gsearchtool.c:2164
-#, fuzzy
 msgid "Save the search results"
-msgstr "KeresÈs eredmÈnye"
+msgstr "A keres√©s eredm√©ny√©nek ment√©se"
 
 #: gsearchtool/gsearchtool.c:2179
-#, fuzzy
 msgid "Sear_ch"
-msgstr "RGB KeresÈs"
+msgstr "_Keres√©s"
 
 #: gsearchtool/gsearchtool.c:2201
 msgid "Cannot initialize bonobo."
-msgstr ""
+msgstr "A bonobo inicializ√°l√°sa sikertelen."
 
 #: gsearchtool/gsearchtool.c:2205
-#, fuzzy
 msgid "Search Tool"
-msgstr "Gnome keresı"
+msgstr "Keres≈ë"
 
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -1684,15 +1583,14 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Ez a program a GNOME projekt rÈsze Linuxra. A naplÛnÈzı minden garancia "
-"nÈlk¸l jˆtt ki. Szabad szoftver, Ès nyugodtan forgalmazhatod a GNU GPL "
-"szerint. A naplÛ ikon Tuomas Kuosmanen (a.k.a tigert) munk·ja."
+"Ez a program a GNOME projekt r√©sze Linuxra. A Napl√≥n√©z≈ëre nem vonatkozik "
+"semmilyen garancia. Szabad szoftver, √©s nyugodtan tov√°bbadhatod a GNU GPL "
+"szerint. A napl√≥ ikon Tuomas Kuosmanen (m√°s n√©ven tigert) munk√°ja."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:72
-#, fuzzy
 msgid "GNOME System Log Viewer"
-msgstr "RendszernaplÛnÈzı"
+msgstr "GNOME Rendszernapl√≥n√©z≈ë"
 
 #: logview/about.c:73
 msgid "Copyright (C) 1998"
@@ -1700,79 +1598,75 @@ msgstr "Copyright (C) 1998"
 
 #: logview/actions.c:75
 msgid "Action database"
-msgstr "TevÈkenysÈgadatb·zis"
+msgstr "Tev√©kenys√©g-adatb√°zis"
 
 #: logview/actions.c:85
 msgid "Actions"
-msgstr "TevÈkenysÈgek"
+msgstr "Tev√©kenys√©gek"
 
 #: logview/actions.c:153
-#, fuzzy
 msgid "_Add"
-msgstr "Hozz·ad·s"
+msgstr "_Hozz√°ad√°s"
 
 #: logview/actions.c:160
-#, fuzzy
 msgid "_Edit"
-msgstr "SzerkesztÈs"
+msgstr "S_zerkeszt√©s"
 
 #: logview/actions.c:167 meat-grinder/meat-grinder.c:941
-#, fuzzy
 msgid "_Remove"
-msgstr "Elt·volÌt·s"
+msgstr "_Elt√°vol√≠t√°s"
 
 #: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
-msgstr "Nem siker¸lt megnyitni a tevÈkenysÈgadatb·zist: %s!"
+msgstr "Nem siker√ºlt megnyitni a tev√©kenys√©g-adatb√°zist: %s!"
 
 #: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
 #: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
-msgstr "Hiba a tevÈkenysÈgadatb·zis ÈrtelmezÈse kˆzben"
+msgstr "Hiba a tev√©kenys√©g-adatb√°zis √©rtelmez√©se k√∂zben"
 
 #: logview/actions.c:386
 msgid "Can't write to actions database!"
-msgstr "Nem siker¸lt Ìrni a tevÈkenysÈgadatb·zisba!"
+msgstr "Nem siker√ºlt √≠rni a tev√©kenys√©g-adatb√°zisba!"
 
 #: logview/actions.c:486
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "Hiba t√∂rt√©nt a megadott m≈±velet v√©grehajt√°sa k√∂zben"
 
 #: logview/actions.c:507
 msgid "<empty>"
-msgstr "<¸res>"
+msgstr "<√ºres>"
 
 #: logview/actions.c:508
 msgid "log name regexp"
-msgstr "naplÛnÈv regkif"
+msgstr "napl√≥n√©v regexp"
 
 # logview/actions.c:479
 #: logview/actions.c:509
 msgid "process regexp"
-msgstr "folyamat regkif"
+msgstr "folyamat regexp"
 
 # logview/actions.c:480
 #: logview/actions.c:510
 msgid "message regexp"
-msgstr "¸zenet regkif"
+msgstr "√ºzenet regexp"
 
 #: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
-msgstr "a regexp teljes¸lÈse esetÈn futtatandÛ parancs"
+msgstr "a regexp teljes√ºl√©se eset√©n futtatand√≥ parancs"
 
 #: logview/actions.c:512
 msgid "description"
-msgstr "leÌr·s"
+msgstr "le√≠r√°s"
 
 #: logview/actions.c:772
-#, fuzzy
 msgid "_Description:"
-msgstr "LeÌr·s:"
+msgstr "_Le√≠r√°s:"
 
 #: logview/actions.c:781
 msgid "Description of this entry."
-msgstr "A bejegyzÈs leÌr·sa."
+msgstr "A bejegyz√©s le√≠r√°sa."
 
 #: logview/actions.c:805
 #, c-format
@@ -1784,17 +1678,17 @@ msgid ""
 "description: [%s]\n"
 "action: [%s]\n"
 msgstr ""
-"cÌmke: [%s]\n"
-"naplÛ_nÈv: [%s]\n"
+"c√≠mke: [%s]\n"
+"napl√≥_n√©v: [%s]\n"
 "folyamat: [%s]\n"
-"¸zenet: [%s]\n"
-"leÌr·s: [%s]\n"
-"tevÈkenysÈg: [%s]\n"
+"√ºzenet: [%s]\n"
+"le√≠r√°s: [%s]\n"
+"tev√©kenys√©g: [%s]\n"
 
 # logview/calendar.c:118
 #: logview/calendar.c:112
 msgid "Calendar"
-msgstr "Napt·r"
+msgstr "Napt√°r"
 
 #.
 #. * 	-------------------
@@ -1803,76 +1697,74 @@ msgstr "Napt·r"
 #.
 #: logview/config.c:34
 msgid "fixed 12"
-msgstr ""
+msgstr "fixed 12"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:36
 msgid "fixed Bold 12"
-msgstr ""
+msgstr "fixed Bold 12"
 
 #: logview/config.c:37
 msgid "fixed 10"
-msgstr ""
+msgstr "fixed 10"
 
 #. Translators: It seems for asian languages the Bold seems not to work
 #: logview/config.c:39
 msgid "fixed Bold 8"
-msgstr ""
+msgstr "fixed Bold 8"
 
 #. Translators: translate to fonts that appear well in the log viewer,
 #. * for example for asian languages, helvetica seems not to work
 #. * well for those
 #: logview/config.c:44
 msgid "Helvetica 14"
-msgstr ""
+msgstr "Helvetica 14"
 
 #: logview/config.c:45
 msgid "Helvetica Bold 14"
-msgstr ""
+msgstr "Helvetica Bold 14"
 
 #: logview/config.c:46
 msgid "Helvetica 12"
-msgstr ""
+msgstr "Helvetica 12"
 
 #: logview/config.c:47
 msgid "Helvetica Bold 12"
-msgstr ""
+msgstr "Helvetica Bold 12"
 
 #: logview/config.c:48
 msgid "Helvetica 10"
-msgstr ""
+msgstr "Helvetica 10"
 
 #: logview/config.c:49
 msgid "Helvetica Bold 10"
-msgstr ""
+msgstr "Helvetica Bold 10"
 
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "Nem siker¸lt megnyitni a regul·ris kifejezÈs adatb·zist: %s!"
+msgstr "Nem siker√ºlt megnyitni a regul√°ris kifejez√©sek adatb√°zis√°t: %s!"
 
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Nem siker¸lt megnyitni a leÌrÛadatb·zist: %s!"
+msgstr "Nem siker√ºlt megnyitni a le√≠r√≥adatb√°zist: %s!"
 
 #. ----------------------------------------------------------------------
 #. NAME:
 #. DESCRIPTION:
 #. ----------------------------------------------------------------------
 #: logview/gnome-system-log.desktop.in.h:1
-#, fuzzy
 msgid "System Log"
-msgstr "Rendszerinform·ciÛk"
+msgstr "Rendszernapl√≥"
 
 #: logview/gnome-system-log.desktop.in.h:2
-#, fuzzy
 msgid "View the system log file"
-msgstr "Kilist·zza az Èppen bejelentkezett felhaszn·lÛkat"
+msgstr "A rendszernapl√≥-f√°jl megtekint√©se"
 
 #: logview/info.c:80
 msgid "Log stats"
-msgstr "NaplÛstatisztik·k"
+msgstr "Napl√≥statisztik√°k"
 
 #. Note: we use a real translated string that will appear below to gather
 #. * the length, that way we'll get semi correct results with a lot more
@@ -1880,68 +1772,68 @@ msgstr "NaplÛstatisztik·k"
 #: logview/info.c:193 logview/info.c:195 logview/zoom.c:220 logview/zoom.c:223
 #: logview/zoom.c:271
 msgid "Date:"
-msgstr "D·tum:"
+msgstr "D√°tum:"
 
 #: logview/info.c:204
 msgid "Log information"
-msgstr "NaplÛinform·ciÛ"
+msgstr "Napl√≥inform√°ci√≥"
 
 #: logview/info.c:232
 msgid "Log:"
-msgstr "NaplÛ:"
+msgstr "Napl√≥:"
 
 #: logview/info.c:235
 msgid "Size:"
-msgstr "MÈret:"
+msgstr "M√©ret:"
 
 #: logview/info.c:238
 msgid "Modified:"
-msgstr "MÛdosÌtva:"
+msgstr "M√≥dos√≠tva:"
 
 #: logview/info.c:241
 msgid "Start date:"
-msgstr "KezdÈsi idıpont:"
+msgstr "Kezd√©si id≈ëpont:"
 
 #: logview/info.c:244
 msgid "Last date:"
-msgstr "UtolsÛ idıpont:"
+msgstr "Utols√≥ id≈ëpont:"
 
 #: logview/info.c:247
 msgid "Num. lines:"
-msgstr "Sorok sz·ma"
+msgstr "Sorok sz√°ma"
 
 #: logview/info.c:265
 #, c-format
 msgid "%ld bytes"
-msgstr "%ld b·jt"
+msgstr "%ld b√°jt"
 
 #: logview/log_repaint.c:84
 msgid "January"
-msgstr "Janu·r"
+msgstr "Janu√°r"
 
 #: logview/log_repaint.c:84
 msgid "February"
-msgstr "Febru·r"
+msgstr "Febru√°r"
 
 #: logview/log_repaint.c:84
 msgid "March"
-msgstr "M·rcius"
+msgstr "M√°rcius"
 
 #: logview/log_repaint.c:84
 msgid "April"
-msgstr "¡prilis"
+msgstr "√Åprilis"
 
 #: logview/log_repaint.c:84
 msgid "May"
-msgstr "M·jus"
+msgstr "M√°jus"
 
 #: logview/log_repaint.c:85
 msgid "June"
-msgstr "J˙nius"
+msgstr "J√∫nius"
 
 #: logview/log_repaint.c:85
 msgid "July"
-msgstr "J˙lius"
+msgstr "J√∫lius"
 
 #: logview/log_repaint.c:85
 msgid "August"
@@ -1953,7 +1845,7 @@ msgstr "Szeptember"
 
 #: logview/log_repaint.c:85
 msgid "October"
-msgstr "OktÛber"
+msgstr "Okt√≥ber"
 
 #: logview/log_repaint.c:86
 msgid "November"
@@ -1983,20 +1875,20 @@ msgstr "%B %e"
 
 #: logview/logrtns.c:206
 msgid "Not enough memory!\n"
-msgstr "Nincs elÈg memÛria!\n"
+msgstr "Nincs el√©g mem√≥ria!\n"
 
 #: logview/logrtns.c:214
 msgid "Out of memory!\n"
-msgstr "Elfogyott a memÛria!\n"
+msgstr "Elfogyott a mem√≥ria!\n"
 
 #: logview/logrtns.c:240
 msgid "Unable to open logfile!\n"
-msgstr "Nem lehet megnyitni a naplÛf·jlt!\n"
+msgstr "Nem lehet megnyitni a napl√≥f√°jlt!\n"
 
 #: logview/logrtns.c:295
 #, c-format
 msgid "%s is not a regular file."
-msgstr "a %s nem kˆzˆnsÈges f·jl."
+msgstr "a %s nem k√∂z√∂ns√©ges f√°jl."
 
 #: logview/logrtns.c:303
 #, c-format
@@ -2004,118 +1896,110 @@ msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file."
 msgstr ""
-"%s nem olvashatÛ a felhaszn·lÛk ·ltal. Lehet, hogy csak olvashatÛ. Vagy "
-"futtasd a programot rootkÈnt, vagy kÈrj a rendszergazd·tÛl jogokat a f·jlhoz."
+"%s nem olvashat√≥ a felhaszn√°l√≥k √°ltal. Lehet, hogy csak olvashat√≥. Vagy "
+"futtasd a programot rootk√©nt, vagy k√©rj a rendszergazd√°t√≥l jogokat a f√°jlhoz."
 
 #: logview/logrtns.c:320
 #, c-format
 msgid "%s could not be opened."
-msgstr "%s-t nem tudom megnyitni."
+msgstr "%s-t nem lehet megnyitni."
 
 #: logview/logrtns.c:350 logview/logrtns.c:359
 #, c-format
 msgid "%s not a log file."
-msgstr "%s nem naplÛf·jl."
+msgstr "%s nem napl√≥f√°jl."
 
 #: logview/logrtns.c:792 logview/logrtns.c:823 logview/logrtns.c:954
 msgid "ReadLogStats: out of memory"
-msgstr "ReadLogStats: elfogyott a memÛria"
+msgstr "ReadLogStats: elfogyott a mem√≥ria"
 
 #: logview/logview.c:95
-#, fuzzy
 msgid "S_witch Log"
-msgstr "NaplÛ ·tv·lt·sa"
+msgstr "_Napl√≥ √°tv√°lt√°sa"
 
 #: logview/logview.c:96
 msgid "Switch log"
-msgstr "NaplÛ ·tv·lt·sa"
+msgstr "Napl√≥ √°tv√°lt√°sa"
 
 #: logview/logview.c:98
-#, fuzzy
 msgid "_Monitor..."
-msgstr "MegfigyelÈs..."
+msgstr "_Megfigyel√©s..."
 
 #: logview/logview.c:99
-#, fuzzy
 msgid "Monitor Log"
-msgstr "NaplÛ figyelÈse"
+msgstr "Napl√≥ figyel√©se"
 
 #: logview/logview.c:102
-#, fuzzy
 msgid "_Properties"
-msgstr "Feladat be·llÌt·sai"
+msgstr "_Be√°ll√≠t√°sok"
 
 #: logview/logview.c:103
-#, fuzzy
 msgid "Show Log Properties"
-msgstr "Mutasd a 'Be·llÌt·s' gombot"
+msgstr "Napl√≥ adatainak megjelen√≠t√©se"
 
 # logview/calendar.c:118
 #: logview/logview.c:112
-#, fuzzy
 msgid "_Calendar"
-msgstr "Napt·r"
+msgstr "_Napt√°r"
 
 #: logview/logview.c:112
-#, fuzzy
 msgid "Show Calendar Log"
-msgstr "Napt·r naplÛj·nak mutat·sa"
+msgstr "Napt√°r napl√≥j√°nak megjelen√≠t√©se"
 
 #: logview/logview.c:114
-#, fuzzy
 msgid "_Entry Detail"
-msgstr "BejegyzÈs kezdete:"
+msgstr "_Bejegyz√©s r√©szletei"
 
 #: logview/logview.c:114
 msgid "Show Entry Detail"
-msgstr ""
+msgstr "Bejegyz√©s r√©szleteinek megjelen√≠t√©se"
 
 #: logview/logview.c:122
 msgid "About..."
-msgstr "NÈvjegy..."
+msgstr "N√©vjegy..."
 
 #: logview/logview.c:123
 msgid "Info about logview"
-msgstr "A naplÛnÈzırıl"
+msgstr "A napl√≥n√©z≈ër≈ël"
 
 #: logview/logview.c:130
-#, fuzzy
 msgid "_Log"
-msgstr "NaplÛ:"
+msgstr "_Napl√≥:"
 
 #: logview/logview.c:334
 msgid "No log files to open"
-msgstr "Nincs megnyitandÛ naplÛf·jl"
+msgstr "Nincs megnyitand√≥ napl√≥f√°jl"
 
 #. Create App
 #: logview/logview.c:354
 msgid "System Log Viewer"
-msgstr "RendszernaplÛnÈzı"
+msgstr "Rendszernapl√≥n√©z≈ë"
 
 #: logview/logview.c:452
 msgid "Filename: "
-msgstr "F·jlnÈv: "
+msgstr "F√°jln√©v: "
 
 #: logview/logview.c:473
-#, fuzzy
 msgid "Last Modified: "
-msgstr "MÛdosÌtva:"
+msgstr "Utolj√°ra m√≥dos√≠tva: "
 
 #: logview/logview.c:722 logview/logview.c:788
 msgid "Too many open logs. Close one and try again"
-msgstr "T˙l sok naplÛ van megnyitva. Z·rj be egyet, Ès prÛb·ld ˙jra"
+msgstr "T√∫l sok napl√≥ van megnyitva. Z√°rj be egyet, √©s pr√≥b√°ld √∫jra"
 
 #: logview/logview.c:734
 msgid "File already opened"
-msgstr ""
+msgstr "A f√°jl m√°r meg van nyitva"
 
 #: logview/logview.c:801
 msgid "Open new logfile"
-msgstr "NaplÛ megnyit·sa"
+msgstr "Napl√≥ megnyit√°sa"
 
 #: logview/misc.c:56
 msgid "Cannot load required fonts, cannot continue"
 msgstr ""
+"Nem siker√ºlt bet√∂lteni a sz√ºks√©ges bet≈±k√©szleteket, a folytat√°s nem "
+"lehets√©ges."
 
 #: logview/misc.c:91
 #, c-format
@@ -2128,36 +2012,35 @@ msgstr "Mit figyeljen?"
 
 #: logview/monitor.c:125
 msgid "Choose logs to monitor"
-msgstr "V·lassz nÈzendı naplÛt"
+msgstr "V√°lassz n√©zend≈ë napl√≥t"
 
 #. Arrowed buttons
 #: logview/monitor.c:169
 msgid "Add >>"
-msgstr "Hozz·ad·s >>"
+msgstr "Hozz√°ad√°s >>"
 
 #. Remove button
 #: logview/monitor.c:177
 msgid "Remove <<"
-msgstr "Elt·volÌt·s <<"
+msgstr "Elt√°vol√≠t√°s <<"
 
 #. Check boxes
 #: logview/monitor.c:215
 msgid "Hide app"
-msgstr "Alkalmaz·s elrejtÈse"
+msgstr "Alkalmaz√°s elrejt√©se"
 
 #: logview/monitor.c:223
 msgid "Exec actions"
-msgstr "TevÈkenysÈgek futtat·sa"
+msgstr "Tev√©kenys√©gek futtat√°sa"
 
 #. Actions button
 #: logview/monitor.c:235
 msgid "Actions..."
-msgstr "TevÈkenysÈgek..."
+msgstr "Tev√©kenys√©gek..."
 
 #: logview/monitor.c:286
-#, fuzzy
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "T˙l sok naplÛ van megnyitva. Z·rj be egyet, Ès prÛb·ld ˙jra"
+msgstr "T√∫l sok napl√≥t figyelsz egyszerre. Z√°rj be egyet, √©s pr√≥b√°ld √∫jra"
 
 #: logview/monitor.c:294 logview/monitor.c:332
 msgid "tmp_list is NULL\n"
@@ -2165,15 +2048,15 @@ msgstr "a tmp_list NULL\n"
 
 #: logview/monitor.c:452
 msgid "Monitoring logs..."
-msgstr "NaplÛk megfigyelÈse..."
+msgstr "Napl√≥k megfigyel√©se..."
 
 #: logview/monitor.c:673
 msgid "TOUCHED!!\n"
-msgstr "HOZZ¡…RVE!!\n"
+msgstr "HOZZ√Å√âRVE!!\n"
 
 #: logview/userprefsdialog.c:65
 msgid "hostname column width ( 0 to hide this column ): "
-msgstr "gÈpnÈv oszlop szÈlessÈge (0 szÈlessÈgnÈl rejtve): "
+msgstr "g√©pn√©v oszlop sz√©less√©ge (0 sz√©less√©gn√©l rejtve): "
 
 #: logview/userprefsdialog.c:66
 msgid "Columns"
@@ -2181,16 +2064,16 @@ msgstr "Oszlop"
 
 #: logview/zoom.c:79
 msgid "Zoom view"
-msgstr "NagyÌtott nÈzet"
+msgstr "Nagy√≠tott n√©zet"
 
 #: logview/zoom.c:233
 #, c-format
 msgid "Log line detail for %s"
-msgstr "NaplÛsor rÈszletek %s-re"
+msgstr "Napl√≥sor r√©szletek %s-re"
 
 #: logview/zoom.c:236
 msgid "Log line detail for <No log loaded>"
-msgstr "NaplÛ sor rÈszletek <nincs log betˆltve>-re"
+msgstr "Napl√≥ sor r√©szletek <nincs log bet√∂ltve>-re"
 
 # logview/zoom.c:179
 #: logview/zoom.c:275
@@ -2200,11 +2083,11 @@ msgstr "Folyamat:"
 # logview/zoom.c:181
 #: logview/zoom.c:278
 msgid "Message:"
-msgstr "‹zenet:"
+msgstr "√úzenet:"
 
 #: logview/zoom.c:281
 msgid "Description:"
-msgstr "LeÌr·s:"
+msgstr "Le√≠r√°s:"
 
 #. Translators: do not include year, it would be bogus
 #: logview/zoom.c:306
@@ -2212,158 +2095,146 @@ msgid "%B %e %X"
 msgstr "%B %e %X"
 
 #: meat-grinder/archive-generator.desktop.in.h:1
-#, fuzzy
 msgid "Archive Generator"
-msgstr "GNOME ArchÌvumkÈszÌtı"
+msgstr "Arch√≠vumk√©sz√≠t≈ë"
 
 #: meat-grinder/archive-generator.desktop.in.h:2
 msgid "Create compressed archives containing many files"
-msgstr ""
+msgstr "Sok f√°jlt tartalmaz√≥ t√∂m√∂r√≠tett arch√≠vum l√©trehoz√°sa"
 
 #: meat-grinder/meat-grinder.c:137
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Number of files: %d\n"
 "Number of folders: %d"
 msgstr ""
-"F·jlok sz·ma: %d\n"
-"Mapp·k sz·ma: %d"
+"F√°jlok sz√°ma: %d\n"
+"Mapp√°k sz√°ma: %d"
 
 #: meat-grinder/meat-grinder.c:143
 msgid ""
 "No files or folders, drop files or folders\n"
 "above to add them to the archive"
 msgstr ""
-"Nincsenek f·jlok vagy kˆynvt·rak. H˙zz f·jlokat\n"
-"vagy kˆnyvt·rakat ide, az archÌvumba rak·shoz."
+"Nincsenek f√°jlok vagy mapp√°k. H√∫zz f√°jlokat\n"
+"vagy mapp√°kat ide az arch√≠vumba rak√°shoz."
 
 #: meat-grinder/meat-grinder.c:166
-#, fuzzy, c-format
+#, c-format
 msgid "%s removed"
-msgstr "<- Elt·volÌt·s"
+msgstr "%s elt√°vol√≠tva"
 
 #: meat-grinder/meat-grinder.c:328 meat-grinder/meat-grinder.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create %s"
-msgstr ""
-"Nem lehet Ìrni a f·jlt:\n"
-"%s\n"
-"%s"
+msgstr "Nem siker√ºlt l√©trehozni: %s"
 
 #: meat-grinder/meat-grinder.c:373
 msgid "Archive.tar.gz"
-msgstr "ArchÌvum.tar.gz"
+msgstr "Arch√≠vum.tar.gz"
 
 #: meat-grinder/meat-grinder.c:493 meat-grinder/meat-grinder.c:977
 msgid "GNOME Archive Generator"
-msgstr "GNOME ArchÌvumkÈszÌtı"
+msgstr "GNOME Arch√≠vumk√©sz√≠t≈ë"
 
 #: meat-grinder/meat-grinder.c:495
 msgid "Drag files in to make archives"
-msgstr "H˙zd be az archiv·landÛ f·jlokat"
+msgstr "H√∫zd be az archiv√°land√≥ f√°jlokat"
 
 #: meat-grinder/meat-grinder.c:528
-#, fuzzy
 msgid "All files selected"
-msgstr "Nincs f·jlnÈv kiv·lasztva"
+msgstr "Minden f√°jl kijel√∂lve"
 
 #: meat-grinder/meat-grinder.c:547
 msgid "All files removed"
-msgstr ""
+msgstr "Minden f√°jl elt√°vol√≠tva"
 
 #: meat-grinder/meat-grinder.c:609 meat-grinder/meat-grinder.c:793
 msgid "No filename selected"
-msgstr "Nincs f·jlnÈv kiv·lasztva"
+msgstr "Nincs f√°jln√©v kiv√°lasztva"
 
 #: meat-grinder/meat-grinder.c:613
 msgid "File exists, overwrite?"
-msgstr "A f·jl lÈtezik, fel¸lÌrod?"
+msgstr "A f√°jl l√©tezik, fel√ºl√≠rod?"
 
 #: meat-grinder/meat-grinder.c:636
 #, c-format
 msgid "%s created"
-msgstr ""
+msgstr "%s l√©trehozva"
 
 #: meat-grinder/meat-grinder.c:650
 msgid "No items to archive"
-msgstr "Nincs mit archiv·lni"
+msgstr "Nincs mit archiv√°lni"
 
 #: meat-grinder/meat-grinder.c:777
 #, c-format
 msgid "%s added"
-msgstr ""
+msgstr "%s hozz√°adva"
 
 #: meat-grinder/meat-grinder.c:796
 msgid "File does not exists"
-msgstr "A f·jl nem lÈtezik"
+msgstr "A f√°jl nem l√©tezik"
 
 #: meat-grinder/meat-grinder.c:810
 msgid "Add file or folder"
-msgstr "F·jl vagy kˆnyvt·r hozz·ad·sa"
+msgstr "F√°jl vagy mappa hozz√°ad√°sa"
 
 #: meat-grinder/meat-grinder.c:927
-#, fuzzy
 msgid "_Add file or folder..."
-msgstr "F·jl vagy kˆnyvt·r hozz·ad·sa..."
+msgstr "_F√°jl vagy mappa hozz√°ad√°sa..."
 
 #: meat-grinder/meat-grinder.c:928
-#, fuzzy
 msgid "Add a file or folder to archive"
-msgstr "Add hozz· a f·jlt vagy a kˆnyvt·rat az archÌvumhoz"
+msgstr "F√°jl vagy mappa hozz√°ad√°sa az arch√≠vumhoz"
 
 #: meat-grinder/meat-grinder.c:931
-#, fuzzy
 msgid "_Create archive..."
-msgstr "ArchÌvum kÈszÌtÈse"
+msgstr "_Arch√≠vum k√©sz√≠t√©se..."
 
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
-msgstr "⁄j archÌvum kÈszÌtÈse a kijelˆlt elemekbıl"
+msgstr "√öj arch√≠vum k√©sz√≠t√©se a kijel√∂lt elemekb≈ël"
 
 #: meat-grinder/meat-grinder.c:942
-#, fuzzy
 msgid "Remove the selected item"
-msgstr "A kijelˆlt elemek tˆrlÈse"
+msgstr "A kijel√∂lt elem t√∂rl√©se"
 
 #: meat-grinder/meat-grinder.c:944
-#, fuzzy
 msgid "R_emove All"
-msgstr "<- Mindent elt·volÌt"
+msgstr "_Mindent elt√°vol√≠t"
 
 #: meat-grinder/meat-grinder.c:945
-#, fuzzy
 msgid "Remove all items"
-msgstr "<- Mindent elt·volÌt"
+msgstr "Minden elem elt√°vol√≠t√°sa"
 
 #: meat-grinder/meat-grinder.c:1016
 msgid "Drop files here to add them to the archive."
-msgstr "H˙zd be ide az archiv·landÛ f·jlokat"
+msgstr "H√∫zd be ide az archiv√°land√≥ f√°jlokat"
 
 #. tarball icon
 #: meat-grinder/meat-grinder.c:1028
-#, fuzzy
 msgid "_Create Archive"
-msgstr "ArchÌvum kÈszÌtÈse"
+msgstr "_Arch√≠vum k√©sz√≠t√©se"
 
 #: meat-grinder/meat-grinder.c:1036
 msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
-"H˙zd ezt a gombot oda, ahol az archÌvumot lÈtre szeretnÈd hozni, vagy nyomd "
-"meg a f·jlkiv·lasztÛ p·rbeszÈdablakhoz."
+"H√∫zd ezt a gombot oda, ahol az arch√≠vumot l√©tre szeretn√©d hozni, vagy nyomd "
+"meg a f√°jlkiv√°laszt√≥ p√°rbesz√©dablakhoz."
 
 #: meat-grinder/meat-grinder.c:1174
 msgid "Cannot find proper icons anywhere!"
-msgstr "Sehol sem tal·lhatÛak megfelelı ikonok!"
+msgstr "Sehol sem tal√°lhat√≥ak megfelel≈ë ikonok!"
 
 #: meat-grinder/meat-grinder.c:1182
 msgid ""
 "Cannot find the archive (tar) program!\n"
 "This is the program used for creating archives."
 msgstr ""
-"Nem tal·lhatÛ a tar program!\n"
-"Ez a program sz¸ksÈges az archÌvumkÈszÌtÈshez."
+"Nem tal√°lhat√≥ a tar program!\n"
+"Ez a program sz√ºks√©ges az arch√≠vumk√©sz√≠t√©shez."
 
 #~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 #~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
@@ -2376,358 +2247,358 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Default strategy"
-#~ msgstr "AlapÈrtelmezett stratÈgia:"
+#~ msgstr "Alap√©rtelmezett strat√©gia:"
 
 #~ msgid "Format another floppy?"
-#~ msgstr "MÈg egy floppy form·z·sa?"
+#~ msgstr "M√©g egy floppy form√°z√°sa?"
 
 #, fuzzy
 #~ msgid "Action options"
 #~ msgstr "Mit figyeljen?"
 
 #~ msgid "Add..."
-#~ msgstr "Hozz·ad·s.."
+#~ msgstr "Hozz√°ad√°s.."
 
 #~ msgid "Edit..."
-#~ msgstr "SzerkesztÈs..."
+#~ msgstr "Szerkeszt√©s..."
 
 #~ msgid "Remove"
-#~ msgstr "Elt·volÌt·s"
+#~ msgstr "Elt√°vol√≠t√°s"
 
 #~ msgid "description:"
-#~ msgstr "leÌr·s:"
+#~ msgstr "le√≠r√°s:"
 
 #~ msgid "Find:"
-#~ msgstr "KeresÈs:"
+#~ msgstr "Keres√©s:"
 
 #, fuzzy
 #~ msgid "GNOME System Log"
-#~ msgstr "Rendszerinform·ciÛk"
+#~ msgstr "Rendszerinform√°ci√≥k"
 
 #~ msgid "Open log..."
-#~ msgstr "NaplÛ megnyit·sa..."
+#~ msgstr "Napl√≥ megnyit√°sa..."
 
 #~ msgid "Open log"
-#~ msgstr "NaplÛ megnyit·sa"
+#~ msgstr "Napl√≥ megnyit√°sa"
 
 #~ msgid "Export log..."
-#~ msgstr "NaplÛ export·l·sa..."
+#~ msgstr "Napl√≥ export√°l√°sa..."
 
 #~ msgid "Export log"
-#~ msgstr "NaplÛ export·l·sa"
+#~ msgstr "Napl√≥ export√°l√°sa"
 
 #~ msgid "Close log"
-#~ msgstr "NaplÛ bez·r·sa"
+#~ msgstr "Napl√≥ bez√°r√°sa"
 
 #~ msgid "Exit"
-#~ msgstr "KilÈpÈs"
+#~ msgstr "Kil√©p√©s"
 
 #~ msgid "Exit program"
-#~ msgstr "KilÈpÈs a programbÛl"
+#~ msgstr "Kil√©p√©s a programb√≥l"
 
 #~ msgid "Show log stats"
-#~ msgstr "NaplÛstatisztik·k mutat·sa"
+#~ msgstr "Napl√≥statisztik√°k mutat√°sa"
 
 #~ msgid "Zoom"
-#~ msgstr "NagyÌt·s"
+#~ msgstr "Nagy√≠t√°s"
 
 #~ msgid "Show line info"
-#~ msgstr "Sorok inform·ciÛinak mutat·sa"
+#~ msgstr "Sorok inform√°ci√≥inak mutat√°sa"
 
 #~ msgid "Select...               "
-#~ msgstr "Kiv·laszt·s...          "
+#~ msgstr "Kiv√°laszt√°s...          "
 
 #~ msgid "Select log events"
-#~ msgstr "V·laszd ki a naplÛesemÈnyeket"
+#~ msgstr "V√°laszd ki a napl√≥esem√©nyeket"
 
 #~ msgid "Filter..                "
-#~ msgstr "Sz˚rı...                "
+#~ msgstr "Sz≈±r≈ë...                "
 
 #~ msgid "Filter log events"
-#~ msgstr "NaplÛesemÈnyek sz˚rÈse"
+#~ msgstr "Napl√≥esem√©nyek sz≈±r√©se"
 
 #~ msgid "Cannot start the archive (tar) program"
-#~ msgstr "Nem siker¸lt az archiv·lÛprogram (tar) elindÌt·sa"
+#~ msgstr "Nem siker√ºlt az archiv√°l√≥program (tar) elind√≠t√°sa"
 
 #~ msgid "Cannot run tar/gtar"
-#~ msgstr "Nem siker¸lt a tar/gtar futtat·sa"
+#~ msgstr "Nem siker√ºlt a tar/gtar futtat√°sa"
 
 #, fuzzy
 #~ msgid "The GNOME Calculator"
-#~ msgstr "GNOME sz·molÛgÈp"
+#~ msgstr "GNOME sz√°mol√≥g√©p"
 
 #~ msgid "Run in analog (slide rule) mode"
-#~ msgstr "Futtat·s analÛg (cs˙szka) ¸zemmÛdban"
+#~ msgstr "Futtat√°s anal√≥g (cs√∫szka) √ºzemm√≥dban"
 
 #, fuzzy
 #~ msgid "Shift"
-#~ msgstr "fehÈr"
+#~ msgstr "feh√©r"
 
 #, fuzzy
 #~ msgid "Store"
-#~ msgstr "Meg·llÌt·s"
+#~ msgstr "Meg√°ll√≠t√°s"
 
 #, fuzzy
 #~ msgid "Exchange"
-#~ msgstr "Hib·s tartom·ny"
+#~ msgstr "Hib√°s tartom√°ny"
 
 #~ msgid ""
 #~ "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
 #~ "contain bad English."
 #~ msgstr ""
-#~ "A Gnome charmap ugyan olyan, mint a Microsoft Windows karaktert·bl·ja."
+#~ "A Gnome charmap ugyan olyan, mint a Microsoft Windows karaktert√°bl√°ja."
 
 #~ msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
 #~ msgstr "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
 
 #~ msgid "About"
-#~ msgstr "NÈvjegy"
+#~ msgstr "N√©vjegy"
 
 #~ msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 #~ msgstr "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 #, fuzzy
 #~ msgid "_Browse Characters..."
-#~ msgstr "Karakter besz˙r·sa..."
+#~ msgstr "Karakter besz√∫r√°sa..."
 
 #~ msgid "_Text Toolbar"
-#~ msgstr "_Szˆveg eszkˆzt·r"
+#~ msgstr "_Sz√∂veg eszk√∂zt√°r"
 
 #~ msgid "View or hide the text toolbar"
-#~ msgstr "A Szˆveg eszkˆzt·r mutat·sa vagy elrejtÈse"
+#~ msgstr "A Sz√∂veg eszk√∂zt√°r mutat√°sa vagy elrejt√©se"
 
 #~ msgid "_Statusbar"
-#~ msgstr "_¡llapotsor"
+#~ msgstr "_√Ållapotsor"
 
 #~ msgid "View or hide the statusbar"
-#~ msgstr "¡llapotsor mutat·sa vagy elrejtÈse"
+#~ msgstr "√Ållapotsor mutat√°sa vagy elrejt√©se"
 
 #~ msgid "_Insert at end"
-#~ msgstr "_Besz˙r·s a vÈgÈre"
+#~ msgstr "_Besz√∫r√°s a v√©g√©re"
 
 #~ msgid "Insert every selected character at the end of the text entry"
-#~ msgstr "Minden kiv·lasztott karakter besz˙r·sa a szˆvegmezı vÈgÈre"
+#~ msgstr "Minden kiv√°lasztott karakter besz√∫r√°sa a sz√∂vegmez≈ë v√©g√©re"
 
 #~ msgid "_Focusable Buttons"
-#~ msgstr "_FÛkusz·lhatÛ gombok"
+#~ msgstr "_F√≥kusz√°lhat√≥ gombok"
 
 #~ msgid "Set the buttons to be focusable or not"
-#~ msgstr "A gombok fÛkusz·lhatÛk legyenek vagy sem"
+#~ msgstr "A gombok f√≥kusz√°lhat√≥k legyenek vagy sem"
 
 #~ msgid "Lookup"
-#~ msgstr "KeresÈs"
+#~ msgstr "Keres√©s"
 
 #~ msgid "Spell"
-#~ msgstr "HelyesÌr·s"
+#~ msgstr "Helyes√≠r√°s"
 
 #, fuzzy
 #~ msgid "_Look Up"
-#~ msgstr "KeresÈs"
+#~ msgstr "Keres√©s"
 
 # gdictsrc/gdict-pref-dialog.c:185
 #, fuzzy
 #~ msgid "Set _Server"
-#~ msgstr "Kiszolg·lÛ"
+#~ msgstr "Kiszolg√°l√≥"
 
 #, fuzzy
 #~ msgid "Set _Port"
-#~ msgstr "_IndÌt·s"
+#~ msgstr "_Ind√≠t√°s"
 
 #~ msgid "The server you specified could not be found."
-#~ msgstr "A megadott kiszolg·lÛ nem tal·lhatÛ."
+#~ msgstr "A megadott kiszolg√°l√≥ nem tal√°lhat√≥."
 
 #, fuzzy
 #~ msgid "The server could not be found on that port."
-#~ msgstr "A megadott kiszolg·lÛ nem tal·lhatÛ."
+#~ msgstr "A megadott kiszolg√°l√≥ nem tal√°lhat√≥."
 
 #, fuzzy
 #~ msgid "_Spell"
-#~ msgstr "HelyesÌr·s"
+#~ msgstr "Helyes√≠r√°s"
 
 #~ msgid "Spell checker"
-#~ msgstr "HelyesÌr·s-ellenırzÈs"
+#~ msgstr "Helyes√≠r√°s-ellen≈ërz√©s"
 
 #~ msgid "Preferences..."
-#~ msgstr "Tulajdons·gok..."
+#~ msgstr "Tulajdons√°gok..."
 
 #~ msgid "Don't search subdirectories"
-#~ msgstr "Nem keres alkˆnyvt·rakban"
+#~ msgstr "Nem keres alk√∂nyvt√°rakban"
 
 #, fuzzy
 #~ msgid "Results"
-#~ msgstr "EredmÈny mentÈse"
+#~ msgstr "Eredm√©ny ment√©se"
 
 #~ msgid "The Gnome Search Tool"
-#~ msgstr "Gnome keresı"
+#~ msgstr "Gnome keres≈ë"
 
 #~ msgid "Logview"
-#~ msgstr "NaplÛnÈzı"
+#~ msgstr "Napl√≥n√©z≈ë"
 
 #~ msgid "Show user preferences"
-#~ msgstr "Felhaszn·lÛ be·llÌt·sok mutat·sa"
+#~ msgstr "Felhaszn√°l√≥ be√°ll√≠t√°sok mutat√°sa"
 
 #~ msgid "Date: "
-#~ msgstr "D·tum: "
+#~ msgstr "D√°tum: "
 
 #~ msgid "Dos (FAT)"
 #~ msgstr "Dos (FAT)"
 
 #~ msgid "The GNOME Archive Generator"
-#~ msgstr "A GNOME ArchÌvumgener·tora"
+#~ msgstr "A GNOME Arch√≠vumgener√°tora"
 
 #~ msgid "Archive"
-#~ msgstr "ArchÌvum"
+#~ msgstr "Arch√≠vum"
 
 #~ msgid "View or hide the action toolbar"
-#~ msgstr "A M˚velet eszkˆzt·r mutat·sa vagy elrejtÈse"
+#~ msgstr "A M≈±velet eszk√∂zt√°r mutat√°sa vagy elrejt√©se"
 
 #~ msgid "Cut to Clipboard"
-#~ msgstr "Kiv·g·s a v·gÛlapra"
+#~ msgstr "Kiv√°g√°s a v√°g√≥lapra"
 
 #~ msgid "Copy to Clipboard"
-#~ msgstr "M·sol·s a v·gÛlapra"
+#~ msgstr "M√°sol√°s a v√°g√≥lapra"
 
 #~ msgid "Paste Clipboard Contents"
-#~ msgstr "A v·gÛlap tartalm·nak beillesztÈse"
+#~ msgstr "A v√°g√≥lap tartalm√°nak beilleszt√©se"
 
 #~ msgid "Settings"
-#~ msgstr "Be·llÌt·sok"
+#~ msgstr "Be√°ll√≠t√°sok"
 
 #~ msgid "Server to use, default search strategy, fonts"
-#~ msgstr "A kiszolg·lÛ, a keresÈsi stratÈgia, bet˚kÈszletek"
+#~ msgstr "A kiszolg√°l√≥, a keres√©si strat√©gia, bet≈±k√©szletek"
 
 #, fuzzy
 #~ msgid "Start in directory "
-#~ msgstr "Kezdı kˆnyvt·r:"
+#~ msgstr "Kezd≈ë k√∂nyvt√°r:"
 
 #~ msgid "calculator-font.png"
 #~ msgstr "calculator-font.png"
 
 #~ msgid "Character Table's Font..."
-#~ msgstr "Karaktert·bla bet˚tÌpusa..."
+#~ msgstr "Karaktert√°bla bet≈±t√≠pusa..."
 
 #~ msgid "Set the character table's font."
-#~ msgstr "Karaktert·bla bet˚tÌpus·nak be·llÌt·sa"
+#~ msgstr "Karaktert√°bla bet≈±t√≠pus√°nak be√°ll√≠t√°sa"
 
 #~ msgid "Insert character(s) by choosing character codes"
-#~ msgstr "Karakter(ek) besz˙r·sa karakterkÛd alapj·n."
+#~ msgstr "Karakter(ek) besz√∫r√°sa karakterk√≥d alapj√°n."
 
 #~ msgid "Show Gnome Character Map's manual"
-#~ msgstr "A Gnome karaktert·bla haszn·lati utasÌt·sa"
+#~ msgstr "A Gnome karaktert√°bla haszn√°lati utas√≠t√°sa"
 
 #~ msgid "About this application"
-#~ msgstr "Az alkalmaz·s nÈvjegye"
+#~ msgstr "Az alkalmaz√°s n√©vjegye"
 
 #~ msgid "Exit the program"
-#~ msgstr "KilÈpÈs a programbÛl"
+#~ msgstr "Kil√©p√©s a programb√≥l"
 
 #~ msgid ""
 #~ "Couldn't start the dictionary; most likely, http://www.dict.org could not "
 #~ "be contacted."
 #~ msgstr ""
-#~ "Nem siker¸lt elindÌtani a szÛt·rat. ValÛszÌn˚leg a http://www.dict.org "
-#~ "nem elÈrhetı."
+#~ "Nem siker√ºlt elind√≠tani a sz√≥t√°rat. Val√≥sz√≠n≈±leg a http://www.dict.org "
+#~ "nem el√©rhet≈ë."
 
 #~ msgid "Word definition"
-#~ msgstr "SzÛ definÌciÛja"
+#~ msgstr "Sz√≥ defin√≠ci√≥ja"
 
 #~ msgid "Spell Check..."
-#~ msgstr "HelyesÌr·s-ellenırzÈs..."
+#~ msgstr "Helyes√≠r√°s-ellen≈ërz√©s..."
 
 #~ msgid "Cannot create applet!\n"
-#~ msgstr "Nem siker¸lt lÈtrehozni az appletet!\n"
+#~ msgstr "Nem siker√ºlt l√©trehozni az appletet!\n"
 
 # gdictsrc/gdict-pref-dialog.c:235
 #~ msgid "Fonts"
-#~ msgstr "Bet˚kÈszletek"
+#~ msgstr "Bet≈±k√©szletek"
 
 #~ msgid "Display handle bar"
-#~ msgstr "FogÛs·v mutat·sa"
+#~ msgstr "Fog√≥s√°v mutat√°sa"
 
 #~ msgid ""
 #~ "You have to restart GDict for these\n"
 #~ "settings to become active."
 #~ msgstr ""
-#~ "A be·llÌt·sok aktiviz·l·s·hoz \n"
-#~ "˙jra kell indÌtanod a GDict-et."
+#~ "A be√°ll√≠t√°sok aktiviz√°l√°s√°hoz \n"
+#~ "√∫jra kell ind√≠tanod a GDict-et."
 
 #~ msgid "Applet"
 #~ msgstr "Applet"
 
 #~ msgid "Find Words..."
-#~ msgstr "Szavak keresÈse..."
+#~ msgstr "Szavak keres√©se..."
 
 #~ msgid "Lookup Word..."
-#~ msgstr "SzÛ kikeresÈse..."
+#~ msgstr "Sz√≥ kikeres√©se..."
 
 #~ msgid "GDiskFree"
 #~ msgstr "GDiskFree"
 
 #~ msgid "Unable to parse the geometry string '%s'"
-#~ msgstr "Nem tudom Èrtelmezni a '%s' geometri·t"
+#~ msgstr "Nem tudom √©rtelmezni a '%s' geometri√°t"
 
 #~ msgid "Specify the geometry of the window."
-#~ msgstr "Megadja az ablak geometri·j·t."
+#~ msgstr "Megadja az ablak geometri√°j√°t."
 
 #~ msgid "GEOMETRY"
 #~ msgstr "GEOMETRY"
 
 #~ msgid "GDiskFree is a GNOME implementation of the shell utility 'df'."
-#~ msgstr "A GDiskFree a 'df' shell parancs GNOME-os implement·ciÛja."
+#~ msgstr "A GDiskFree a 'df' shell parancs GNOME-os implement√°ci√≥ja."
 
 #~ msgid "GDiskFree Properties"
-#~ msgstr "GDiskFree Be·llÌt·sok"
+#~ msgstr "GDiskFree Be√°ll√≠t√°sok"
 
 #~ msgid "Invoke sync before getting usage info"
-#~ msgstr "Sync-el mielıtt haszn·lts·gi inform·ciÛt kÈrdez le"
+#~ msgstr "Sync-el miel≈ëtt haszn√°lts√°gi inform√°ci√≥t k√©rdez le"
 
 #~ msgid "Show drive mount points"
-#~ msgstr "BeillesztÈsi pontok mutat·sa"
+#~ msgstr "Beilleszt√©si pontok mutat√°sa"
 
 #~ msgid "Show drive size"
-#~ msgstr "MeghajtÛ mÈretÈt mutasd"
+#~ msgstr "Meghajt√≥ m√©ret√©t mutasd"
 
 #~ msgid "Dial Orientation"
-#~ msgstr "A kijelzık ir·nya"
+#~ msgstr "A kijelz≈ëk ir√°nya"
 
 #~ msgid "Vertical"
-#~ msgstr "VÌzszintes"
+#~ msgstr "V√≠zszintes"
 
 #~ msgid "Horizontal"
-#~ msgstr "F¸ggıleges"
+#~ msgstr "F√ºgg≈ëleges"
 
 #~ msgid "Update interval (ms)"
-#~ msgstr "FrissÌtÈsi intervallum (ezredmp)"
+#~ msgstr "Friss√≠t√©si intervallum (ezredmp)"
 
 #~ msgid "General Settings"
-#~ msgstr "¡ltal·nos be·llÌt·sok"
+#~ msgstr "√Åltal√°nos be√°ll√≠t√°sok"
 
 #~ msgid "File owner"
-#~ msgstr "F·jl tulajdonosa"
+#~ msgstr "F√°jl tulajdonosa"
 
 #~ msgid "Empty file"
-#~ msgstr "‹res f·jl"
+#~ msgstr "√úres f√°jl"
 
 #~ msgid "Filenames except"
-#~ msgstr "Ezen f·jlnevek kivÈtelÈvel"
+#~ msgstr "Ezen f√°jlnevek kiv√©tel√©vel"
 
 #~ msgid "Simple substring search"
-#~ msgstr "Egyszer˚ szˆvegrÈszlet-keresÈs"
+#~ msgstr "Egyszer≈± sz√∂vegr√©szlet-keres√©s"
 
 #~ msgid "Regular expression search"
-#~ msgstr "Regul·ris kifejezÈssel keresÈs"
+#~ msgstr "Regul√°ris kifejez√©ssel keres√©s"
 
 #~ msgid "grep options found in find list bad bad!"
-#~ msgstr "grep opciÛkat tal·ltam a keresÈsi list·ban!"
+#~ msgstr "grep opci√≥kat tal√°ltam a keres√©si list√°ban!"
 
 #~ msgid "non-grep option found in grep list, bad bad!"
-#~ msgstr "nem grep opciÛkat tal·ltam a grep list·ban!"
+#~ msgstr "nem grep opci√≥kat tal√°ltam a grep list√°ban!"
 
 #~ msgid "Search already running on another page"
-#~ msgstr "KeresÈs m·r fut a m·sik lapon"
+#~ msgstr "Keres√©s m√°r fut a m√°sik lapon"
 
 #~ msgid "Enable"
-#~ msgstr "EngedÈlyezÈs"
+#~ msgstr "Enged√©lyez√©s"
 
 #~ msgid "Nothing to locate"
 #~ msgstr "Nincs mit megkeresni"
@@ -2737,24 +2608,24 @@ msgstr ""
 #~ "will be matched as a subset of the full path, and if you type\n"
 #~ "in a string with wildcards, it will have to match the full path."
 #~ msgstr ""
-#~ "Ez egy keresıeszkˆz. Ha beÌrsz egy egyszer˚ szˆveget, az elÈrÈsi\n"
-#~ "˙tvonal rÈszekÈnt fogja tekinteni, ha helyettesÌtı karakterekkel \n"
-#~ "Ìrsz be szˆveget, meg kell egyeznie a teljes elÈrÈssel."
+#~ "Ez egy keres≈ëeszk√∂z. Ha be√≠rsz egy egyszer≈± sz√∂veget, az el√©r√©si\n"
+#~ "√∫tvonal r√©szek√©nt fogja tekinteni, ha helyettes√≠t≈ë karakterekkel \n"
+#~ "√≠rsz be sz√∂veget, meg kell egyeznie a teljes el√©r√©ssel."
 
 #~ msgid "Locate file: "
-#~ msgstr "F·jl keresÈse: "
+#~ msgstr "F√°jl keres√©se: "
 
 #~ msgid "Full find (find)"
-#~ msgstr "Teljes lista (keresÈs)"
+#~ msgstr "Teljes lista (keres√©s)"
 
 #~ msgid "Quick find (locate)"
-#~ msgstr "Gyors keresÈs (locate)"
+#~ msgstr "Gyors keres√©s (locate)"
 
 #~ msgid "Command mangled"
-#~ msgstr "Parancs elferdÌtve"
+#~ msgstr "Parancs elferd√≠tve"
 
 #~ msgid "no project selected"
-#~ msgstr "nincs projekt kiv·lasztva"
+#~ msgstr "nincs projekt kiv√°lasztva"
 
 #~ msgid "00:00"
 #~ msgstr "00:00"
@@ -2763,39 +2634,39 @@ msgstr ""
 #~ "Couldn't understand geometry (position and size)\n"
 #~ " specified on command line"
 #~ msgstr ""
-#~ "Nem Èrtem a geometri·t (mÈretet Ès pozÌciÛt),\n"
-#~ "amelyet a parancssorban adt·l"
+#~ "Nem √©rtem a geometri√°t (m√©retet √©s poz√≠ci√≥t),\n"
+#~ "amelyet a parancssorban adt√°l"
 
 #~ msgid "project %t started"
 #~ msgstr "%t projekt elindult"
 
 #~ msgid "stopped project %t"
-#~ msgstr "%t projekt meg·llt"
+#~ msgstr "%t projekt meg√°llt"
 
 #~ msgid "%d:%02d:%02d"
 #~ msgstr "%d:%02d:%02d"
 
 #~ msgid "Cannot open logfile %s for append"
-#~ msgstr "Nem siker¸lt megnyitni ezt a naplÛf·jlt tov·bbÌr·sra: %s"
+#~ msgstr "Nem siker√ºlt megnyitni ezt a napl√≥f√°jlt tov√°bb√≠r√°sra: %s"
 
 #~ msgid "program started"
-#~ msgstr "program elindÌtva"
+#~ msgstr "program elind√≠tva"
 
 #~ msgid "no description"
-#~ msgstr "nincs leÌr·s"
+#~ msgstr "nincs le√≠r√°s"
 
 #~ msgid "program exited"
-#~ msgstr "program kilÈpett"
+#~ msgstr "program kil√©pett"
 
 #~ msgid ""
 #~ "There seems to be another GTimeTracker running.\n"
 #~ "Press OK to start GTimeTracker anyway, or press Cancel to quit."
 #~ msgstr ""
-#~ "⁄gy nÈz ki, m·sik GTimeTracker is fut.\n"
-#~ "Nyomj OK-t a GTimeTracker futtat·s·hoz, vagy MÈgsem-et a kilÈpÈshez."
+#~ "√ögy n√©z ki, m√°sik GTimeTracker is fut.\n"
+#~ "Nyomj OK-t a GTimeTracker futtat√°s√°hoz, vagy M√©gsem-et a kil√©p√©shez."
 
 #~ msgid "Cannot create pid-file!"
-#~ msgstr "Nem siker¸lt lÈtrehozni a pid f·jlt"
+#~ msgstr "Nem siker√ºlt l√©trehozni a pid f√°jlt"
 
 #~ msgid "Error"
 #~ msgstr "Hiba"
@@ -2804,14 +2675,14 @@ msgstr ""
 #~ "An error occured while reading the configuration file.\n"
 #~ "Shall I setup a new configuration?"
 #~ msgstr ""
-#~ "Hiba tˆrtÈnt a konfigur·ciÛs f·jl olvas·sa kˆzben.\n"
-#~ "Be·llÌthatok egy ˙j konfigur·ciÛt?"
+#~ "Hiba t√∂rt√©nt a konfigur√°ci√≥s f√°jl olvas√°sa k√∂zben.\n"
+#~ "Be√°ll√≠thatok egy √∫j konfigur√°ci√≥t?"
 
 #~ msgid "Specify geometry"
-#~ msgstr "Geometria megad·sa"
+#~ msgstr "Geometria megad√°sa"
 
 #~ msgid "Select a project on startup"
-#~ msgstr "Projekt kiv·laszt·sa indÌt·sn·l"
+#~ msgstr "Projekt kiv√°laszt√°sa ind√≠t√°sn√°l"
 
 #~ msgid "PROJECT"
 #~ msgstr "PROJECT"
@@ -2820,214 +2691,214 @@ msgstr ""
 #~ msgstr "Figyelem"
 
 #~ msgid "Could not write the configuration file!"
-#~ msgstr "Nem siker¸lt Ìrni a konfigur·ciÛs f·jlt!"
+#~ msgstr "Nem siker√ºlt √≠rni a konfigur√°ci√≥s f√°jlt!"
 
 #~ msgid "Unknown error occurred"
-#~ msgstr "Ismeretlen hiba tˆrtÈnt"
+#~ msgstr "Ismeretlen hiba t√∂rt√©nt"
 
 #~ msgid "Time tracking tool for GNOME"
-#~ msgstr "Idıkˆvetı a GNOME-hoz"
+#~ msgstr "Id≈ëk√∂vet≈ë a GNOME-hoz"
 
 #~ msgid "New Project..."
-#~ msgstr "⁄j projekt..."
+#~ msgstr "√öj projekt..."
 
 #~ msgid "Project Title"
 #~ msgstr "Projekt neve"
 
 #~ msgid "Description"
-#~ msgstr "LeÌr·s"
+#~ msgstr "Le√≠r√°s"
 
 #~ msgid "I could not read the configuration file"
-#~ msgstr "Nem siker¸lt a konfigur·ciÛs ·llom·nyt olvasni"
+#~ msgstr "Nem siker√ºlt a konfigur√°ci√≥s √°llom√°nyt olvasni"
 
 #~ msgid "Reload Configuration File"
-#~ msgstr "Konfigur·ciÛs ·llom·ny ˙jratˆltÈse"
+#~ msgstr "Konfigur√°ci√≥s √°llom√°ny √∫jrat√∂lt√©se"
 
 #~ msgid ""
 #~ "This will overwrite your current set of projects.\n"
 #~ "Do you really want to reload the configuration file?"
 #~ msgstr ""
-#~ "Fel¸l fogod Ìrni a jelenlegi projektek list·j·t.\n"
-#~ "TÈnyleg ˙jra akarod tˆlteni a konfigur·ciÛs f·jlt?"
+#~ "Fel√ºl fogod √≠rni a jelenlegi projektek list√°j√°t.\n"
+#~ "T√©nyleg √∫jra akarod t√∂lteni a konfigur√°ci√≥s f√°jlt?"
 
 #~ msgid "File cannot be written"
-#~ msgstr "A f·jl nem ÌrhatÛ"
+#~ msgstr "A f√°jl nem √≠rhat√≥"
 
 #~ msgid "Export Current State"
-#~ msgstr "Jelenlegi ·llapot export·l·sa"
+#~ msgstr "Jelenlegi √°llapot export√°l√°sa"
 
 #~ msgid "_New Project..."
-#~ msgstr "_⁄j projekt"
+#~ msgstr "_√öj projekt"
 
 #~ msgid "_Reload Configuration File"
-#~ msgstr "_Konfigur·ciÛ ˙jraolvas·sa"
+#~ msgstr "_Konfigur√°ci√≥ √∫jraolvas√°sa"
 
 #~ msgid "_Save Configuration File"
-#~ msgstr "Konfigur·ciÛ _mentÈse"
+#~ msgstr "Konfigur√°ci√≥ _ment√©se"
 
 #~ msgid "_Export Current State"
-#~ msgstr "_Jelenlegi ·llapot export·l·sa"
+#~ msgstr "_Jelenlegi √°llapot export√°l√°sa"
 
 #~ msgid "Clear _Daily Counter"
-#~ msgstr "Napi sz·ml·lÛ tˆrlÈse"
+#~ msgstr "Napi sz√°ml√°l√≥ t√∂rl√©se"
 
 #~ msgid "_Journal..."
-#~ msgstr "_NaplÛ..."
+#~ msgstr "_Napl√≥..."
 
 #~ msgid "Sto_p"
-#~ msgstr "Me_g·llÌt·s"
+#~ msgstr "Me_g√°ll√≠t√°s"
 
 #~ msgid "_Timer Running"
-#~ msgstr "”_ra fut"
+#~ msgstr "√ì_ra fut"
 
 #~ msgid "_Timer"
-#~ msgstr "”r_·k"
+#~ msgstr "√ìr_√°k"
 
 #~ msgid "Display"
-#~ msgstr "KÈpernyı"
+#~ msgstr "K√©perny≈ë"
 
 #~ msgid "Show Seconds"
-#~ msgstr "M·sodpercek mutat·sa"
+#~ msgstr "M√°sodpercek mutat√°sa"
 
 #~ msgid "Show Status Bar"
-#~ msgstr "¡llapotsor mutat·sa"
+#~ msgstr "√Ållapotsor mutat√°sa"
 
 #~ msgid "Show Table Header"
-#~ msgstr "T·bl·zat fejlÈcÈnek mutat·sa"
+#~ msgstr "T√°bl√°zat fejl√©c√©nek mutat√°sa"
 
 #, fuzzy
 #~ msgid "Show Sub-Projects"
-#~ msgstr "Mutasd a 'Be·llÌt·s' gombot"
+#~ msgstr "Mutasd a 'Be√°ll√≠t√°s' gombot"
 
 #~ msgid "Toolbar"
-#~ msgstr "Eszkˆzt·r"
+#~ msgstr "Eszk√∂zt√°r"
 
 #~ msgid "Show Toolbar Icons"
-#~ msgstr "Eszkˆzt·rikonok mutat·sa"
+#~ msgstr "Eszk√∂zt√°rikonok mutat√°sa"
 
 #~ msgid "Show Toolbar Texts"
-#~ msgstr "Eszkˆzt·r szˆvegek"
+#~ msgstr "Eszk√∂zt√°r sz√∂vegek"
 
 #~ msgid "Show Tooltips"
-#~ msgstr "SegÈdszˆvegek mutat·sa"
+#~ msgstr "Seg√©dsz√∂vegek mutat√°sa"
 
 #~ msgid "Toolbar Segments"
-#~ msgstr "Eszkˆzt·r elv·lasztÛk"
+#~ msgstr "Eszk√∂zt√°r elv√°laszt√≥k"
 
 #~ msgid "Show `New'"
-#~ msgstr "Mutasd az '⁄j' gombot"
+#~ msgstr "Mutasd az '√öj' gombot"
 
 #~ msgid "Show `Save', `Reload'"
-#~ msgstr "Mutasd a 'MentÈs' Ès az '⁄jratˆltÈs' gombokat"
+#~ msgstr "Mutasd a 'Ment√©s' √©s az '√öjrat√∂lt√©s' gombokat"
 
 #~ msgid "Show `Cut', `Copy', `Paste'"
-#~ msgstr "Mutasd a 'Kiv·g·s', 'M·sol·s' Ès 'BeillesztÈs' gombokat"
+#~ msgstr "Mutasd a 'Kiv√°g√°s', 'M√°sol√°s' √©s 'Beilleszt√©s' gombokat"
 
 #~ msgid "Show `Timer'"
-#~ msgstr "Mutasd az '”ra' gombot"
+#~ msgstr "Mutasd az '√ìra' gombot"
 
 #~ msgid "Show `Preferences'"
-#~ msgstr "Mutasd a 'Tulajdons·gok' gombot"
+#~ msgstr "Mutasd a 'Tulajdons√°gok' gombot"
 
 #~ msgid "Show `Help'"
-#~ msgstr "Mutasd a 'S˙gÛ' gombot"
+#~ msgstr "Mutasd a 'S√∫g√≥' gombot"
 
 #~ msgid "Show `Quit'"
-#~ msgstr "Mutasd a 'KilÈpÈs' gombot"
+#~ msgstr "Mutasd a 'Kil√©p√©s' gombot"
 
 #~ msgid "Shell Commands"
 #~ msgstr "Shell parancsok"
 
 #~ msgid "Switch Project Command:"
-#~ msgstr "Projektv·lt·s parancs:"
+#~ msgstr "Projektv√°lt√°s parancs:"
 
 #~ msgid "No Project Command:"
 #~ msgstr "Nincs projekt parancs:"
 
 #~ msgid "Logfile"
-#~ msgstr "NaplÛf·jl"
+#~ msgstr "Napl√≥f√°jl"
 
 #~ msgid "Use Logfile"
-#~ msgstr "NaplÛ haszn·lata"
+#~ msgstr "Napl√≥ haszn√°lata"
 
 #~ msgid "Filename:"
-#~ msgstr "F·jlnÈv:"
+#~ msgstr "F√°jln√©v:"
 
 #~ msgid "Timeout in secs:"
-#~ msgstr "Idıt˙llÈpÈs m·sodpercekben:"
+#~ msgstr "Id≈ët√∫ll√©p√©s m√°sodpercekben:"
 
 #~ msgid "Misc"
-#~ msgstr "M·s"
+#~ msgstr "M√°s"
 
 #~ msgid "Old GTT Tasks"
-#~ msgstr "RÈgi GTT feladat"
+#~ msgstr "R√©gi GTT feladat"
 
 #~ msgid "New Task"
-#~ msgstr "⁄j feladat"
+#~ msgstr "√öj feladat"
 
 #~ msgid "[GTT]New"
-#~ msgstr "[GTT]⁄j"
+#~ msgstr "[GTT]√öj"
 
 #~ msgid "Create a New Project..."
-#~ msgstr "⁄j projekt lÈtrehoz·sa..."
+#~ msgstr "√öj projekt l√©trehoz√°sa..."
 
 #~ msgid "Reload"
-#~ msgstr "⁄jratˆltÈs"
+#~ msgstr "√öjrat√∂lt√©s"
 
 #~ msgid "Save Configuration File"
-#~ msgstr "Be·llÌt·sok mentÈse"
+#~ msgstr "Be√°ll√≠t√°sok ment√©se"
 
 #~ msgid "Cut Selected Project"
-#~ msgstr "A kiv·lasztott projekt kiv·g·sa"
+#~ msgstr "A kiv√°lasztott projekt kiv√°g√°sa"
 
 #~ msgid "Paste Project"
-#~ msgstr "Projekt besz˙r·sa"
+#~ msgstr "Projekt besz√∫r√°sa"
 
 #~ msgid "Journal"
-#~ msgstr "NaplÛ"
+#~ msgstr "Napl√≥"
 
 #~ msgid "Props"
-#~ msgstr "Be·llÌt·sok"
+#~ msgstr "Be√°ll√≠t√°sok"
 
 #~ msgid "Edit Project Properties..."
-#~ msgstr "Projekt be·llÌt·sainak szerkesztÈse..."
+#~ msgstr "Projekt be√°ll√≠t√°sainak szerkeszt√©se..."
 
 #~ msgid "Timer"
-#~ msgstr "”ra"
+#~ msgstr "√ìra"
 
 #~ msgid "Start/Stop Timer"
-#~ msgstr "”r·t indÌt/meg·llÌt"
+#~ msgstr "√ìr√°t ind√≠t/meg√°ll√≠t"
 
 #~ msgid "Prefs"
-#~ msgstr "Tulajdons·gok"
+#~ msgstr "Tulajdons√°gok"
 
 #~ msgid "Manual"
-#~ msgstr "KÈzikˆnyv"
+#~ msgstr "K√©zik√∂nyv"
 
 #~ msgid "User's Guide and Manual"
-#~ msgstr "Felhaszn·lÛi kÈzikˆnyv"
+#~ msgstr "Felhaszn√°l√≥i k√©zik√∂nyv"
 
 #~ msgid "Quit"
-#~ msgstr "KilÈpÈs"
+#~ msgstr "Kil√©p√©s"
 
 #~ msgid "Quit GTimeTracker"
-#~ msgstr "KilÈpÈs a GTimeTracker-bıl"
+#~ msgstr "Kil√©p√©s a GTimeTracker-b≈ël"
 
 #~ msgid "Total"
-#~ msgstr "÷sszes"
+#~ msgstr "√ñsszes"
 
 #~ msgid "Today"
 #~ msgstr "Ma"
 
 #, fuzzy
 #~ msgid "Start Fuzz"
-#~ msgstr "IndÌt·s"
+#~ msgstr "Ind√≠t√°s"
 
 #~ msgid "Set how Uncertain the Start Time Is"
-#~ msgstr "Mennyire bizonytalan a kezdı idıpont"
+#~ msgstr "Mennyire bizonytalan a kezd≈ë id≈ëpont"
 
 #~ msgid "Exact Time"
-#~ msgstr "Pontos idı"
+#~ msgstr "Pontos id≈ë"
 
 #~ msgid "5 Min"
 #~ msgstr "5 perc"
@@ -3045,73 +2916,73 @@ msgstr ""
 #~ msgstr "30 perc"
 
 #~ msgid "1 Hour"
-#~ msgstr "1 Ûra"
+#~ msgstr "1 √≥ra"
 
 #~ msgid "2 Hours"
-#~ msgstr "2 Ûra"
+#~ msgstr "2 √≥ra"
 
 #~ msgid "3 Hours"
-#~ msgstr "3 Ûra"
+#~ msgstr "3 √≥ra"
 
 #, fuzzy
 #~ msgid "Edit the Start & Stop Times"
-#~ msgstr "”r·t indÌt/meg·llÌt"
+#~ msgstr "√ìr√°t ind√≠t/meg√°ll√≠t"
 
 #, fuzzy
 #~ msgid "Delete This Interval"
-#~ msgstr "A gˆrgetıs·v frissÌtÈsi intervalluma"
+#~ msgstr "A g√∂rget≈ës√°v friss√≠t√©si intervalluma"
 
 #~ msgid "Delete"
-#~ msgstr "TˆrlÈs"
+#~ msgstr "T√∂rl√©s"
 
 #~ msgid "New File"
-#~ msgstr "⁄j f·jl"
+#~ msgstr "√öj f√°jl"
 
 #~ msgid "Print"
-#~ msgstr "Nyomtat·s"
+#~ msgstr "Nyomtat√°s"
 
 #~ msgid "Open File"
-#~ msgstr "F·jl megnyit·sa"
+#~ msgstr "F√°jl megnyit√°sa"
 
 #~ msgid "Save File"
-#~ msgstr "F·jl mentÈse"
+#~ msgstr "F√°jl ment√©se"
 
 #~ msgid "A title to assign to this project"
-#~ msgstr "A projekthez rendelt cÌm"
+#~ msgstr "A projekthez rendelt c√≠m"
 
 #~ msgid "a short description that will be printed on the invoice."
-#~ msgstr "rˆvid leÌr·s, amely a sz·ml·ra lesz nyomtatva."
+#~ msgstr "r√∂vid le√≠r√°s, amely a sz√°ml√°ra lesz nyomtatva."
 
 #~ msgid "Project Title:"
 #~ msgstr "Projekt neve:"
 
 #~ msgid "Project Description:"
-#~ msgstr "Projekt leÌr·sa:"
+#~ msgstr "Projekt le√≠r√°sa:"
 
 #~ msgid "Notes:"
-#~ msgstr "MegjegyzÈs:"
+#~ msgstr "Megjegyz√©s:"
 
 #~ msgid ""
 #~ "Internal notes about the project, memos that will not be printed on an "
 #~ "invoice."
 #~ msgstr ""
-#~ "Belsı feljegyzÈsek a projektrıl, emlÈkeztetık, amelyek nem lesznek a "
-#~ "sz·ml·ra nyomtatva."
+#~ "Bels≈ë feljegyz√©sek a projektr≈ël, eml√©keztet≈ëk, amelyek nem lesznek a "
+#~ "sz√°ml√°ra nyomtatva."
 
 #~ msgid "Project"
 #~ msgstr "Projekt"
 
 #~ msgid "Regular Rate:"
-#~ msgstr "Szok·sos ÛradÌj:"
+#~ msgstr "Szok√°sos √≥rad√≠j:"
 
 #~ msgid "Overtime Rate:"
-#~ msgstr "T˙lÛradÌj:"
+#~ msgstr "T√∫l√≥rad√≠j:"
 
 #~ msgid "Double-Overtime Rate:"
-#~ msgstr "K¸lˆnleges t˙lÛradÌj:"
+#~ msgstr "K√ºl√∂nleges t√∫l√≥rad√≠j:"
 
 #~ msgid "Flat Fee:"
-#~ msgstr "¡tal·nydÌj:"
+#~ msgstr "√Åtal√°nyd√≠j:"
 
 #~ msgid "        "
 #~ msgstr "        "
@@ -3120,79 +2991,79 @@ msgstr ""
 #~ msgstr "                        "
 
 #~ msgid "The dollars per hour normally charged for this project."
-#~ msgstr "Az projekt szok·sos ÛradÌja doll·rban."
+#~ msgstr "Az projekt szok√°sos √≥rad√≠ja doll√°rban."
 
 #~ msgid "The dollars per hour charged for overtime work on this project."
-#~ msgstr "A projekt t˙lÛradÌja doll·rban."
+#~ msgstr "A projekt t√∫l√≥rad√≠ja doll√°rban."
 
 #~ msgid "The over-overtime rate (overtime on Sundays, etc.)"
-#~ msgstr "A k¸lˆnleges t˙lÛradÌj (vas·rnapi munka, stb.)"
+#~ msgstr "A k√ºl√∂nleges t√∫l√≥rad√≠j (vas√°rnapi munka, stb.)"
 
 #~ msgid ""
 #~ "If this project is billed for one price no matter how long it takes, "
 #~ "enter the fee here."
 #~ msgstr ""
-#~ "Ha a projekt adott ·rral lesz kisz·ml·zva, f¸ggetlen¸l a r·fordÌtott "
-#~ "idıtıl, akkor ide Ìrd be azt az ·rat."
+#~ "Ha a projekt adott √°rral lesz kisz√°ml√°zva, f√ºggetlen√ºl a r√°ford√≠tott "
+#~ "id≈ët≈ël, akkor ide √≠rd be azt az √°rat."
 
 #~ msgid "Rates"
-#~ msgstr "DÌjak"
+#~ msgstr "D√≠jak"
 
 #~ msgid "Minimum Interval: "
-#~ msgstr "Minim·lis idıtartam: "
+#~ msgstr "Minim√°lis id≈ëtartam: "
 
 #~ msgid "seconds"
-#~ msgstr "m·sodperc"
+#~ msgstr "m√°sodperc"
 
 #~ msgid "Intervals smaller than this will be discarded"
-#~ msgstr "Az ennÈl kisebb idıtartamokat nem vessz¸k figyelembe"
+#~ msgstr "Az enn√©l kisebb id≈ëtartamokat nem vessz√ºk figyelembe"
 
 #, fuzzy
 #~ msgid "Memo:"
-#~ msgstr "MemÛria"
+#~ msgstr "Mem√≥ria"
 
 #~ msgid "Billable:"
-#~ msgstr "Sz·ml·zhatÛ:"
+#~ msgstr "Sz√°ml√°zhat√≥:"
 
 #~ msgid "Billable"
-#~ msgstr "Sz·ml·zhatÛ"
+#~ msgstr "Sz√°ml√°zhat√≥"
 
 #~ msgid "Not Billable"
-#~ msgstr "Nem sz·ml·zhatÛ"
+#~ msgstr "Nem sz√°ml√°zhat√≥"
 
 #~ msgid "No Charge"
 #~ msgstr "Ingyenes"
 
 #, fuzzy
 #~ msgid "Regular"
-#~ msgstr "⁄jratˆltÈs"
+#~ msgstr "√öjrat√∂lt√©s"
 
 #~ msgid "Overtime"
-#~ msgstr "T˙lÛra"
+#~ msgstr "T√∫l√≥ra"
 
 #~ msgid "Flat Fee"
-#~ msgstr "¡tal·nydÌj"
+#~ msgstr "√Åtal√°nyd√≠j"
 
 #~ msgid "minutes"
 #~ msgstr "perc"
 
 #~ msgid "<html><body><h1>Error 404 Not Found</h1>The file "
-#~ msgstr "<html><body><h1>404 hiba: nem tal·lhatÛ</h1>A f·jl "
+#~ msgstr "<html><body><h1>404 hiba: nem tal√°lhat√≥</h1>A f√°jl "
 
 #~ msgid "(null)"
 #~ msgstr "(null)"
 
 #~ msgid " was not found. </body></html>"
-#~ msgstr " nem tal·lhatÛ. </body></html>"
+#~ msgstr " nem tal√°lhat√≥. </body></html>"
 
 #~ msgid "<html><body><h1>Unkown Error</h1>"
 #~ msgstr "<html><body><h1>Ismeretlen hiba</h1>"
 
 #~ msgid "(empty)"
-#~ msgstr "(¸res)"
+#~ msgstr "(√ºres)"
 
 #~ msgid "empty"
-#~ msgstr "¸res"
+#~ msgstr "√ºres"
 
 #~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
 #~ msgstr "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
@@ -3225,37 +3096,37 @@ msgstr ""
 #~ msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
 
 #~ msgid "Do nothing"
-#~ msgstr "Ne csin·ljon semmit"
+#~ msgstr "Ne csin√°ljon semmit"
 
 #~ msgid "Append it to ->"
-#~ msgstr "Hozz·f˚zÈs ->"
+#~ msgstr "Hozz√°f≈±z√©s ->"
 
 #~ msgid "Search it in ->"
-#~ msgstr "KeresÈs benne ->"
+#~ msgstr "Keres√©s benne ->"
 
 #~ msgid "Edit it"
-#~ msgstr "SzerkesztÈs"
+#~ msgstr "Szerkeszt√©s"
 
 #~ msgid "List"
 #~ msgstr "Lista"
 
 #~ msgid "Grid"
-#~ msgstr "R·cs"
+#~ msgstr "R√°cs"
 
 #~ msgid "Monitor"
 #~ msgstr "Monitor"
 
 #~ msgid "Concat"
-#~ msgstr "L·ncol·s"
+#~ msgstr "L√°ncol√°s"
 
 #~ msgid "'%s' document has been modified; do you wish to save it ?"
-#~ msgstr "'%s'  dokumentum mÛdosult, el akarod menteni?"
+#~ msgstr "'%s'  dokumentum m√≥dosult, el akarod menteni?"
 
 #~ msgid "GColorsel was unable to paste colors from the clipboard."
-#~ msgstr "A GColorsel nem tudta a szÌneket beilleszteni a v·gÛlaprÛl."
+#~ msgstr "A GColorsel nem tudta a sz√≠neket beilleszteni a v√°g√≥lapr√≥l."
 
 #~ msgid "Please select a file document before."
-#~ msgstr "KÈrlek v·laszd ki a f·jlt elıtte."
+#~ msgstr "K√©rlek v√°laszd ki a f√°jlt el≈ëtte."
 
 #~ msgid ""
 #~ "I can't execute this action. Check that :\n"
@@ -3266,100 +3137,100 @@ msgstr ""
 #~ "\n"
 #~ "Go to preferences, in the edit menu."
 #~ msgstr ""
-#~ "Nem tudom az akciÛt futtatni. Ellenırizd :\n"
+#~ "Nem tudom az akci√≥t futtatni. Ellen≈ërizd :\n"
 #~ "\n"
-#~ "1. Van az esemÈnyhez t·rsÌtva akciÛ.\n"
-#~ "2. A t·rsÌtott dokumentum lÈtezik.\n"
-#~ "3. A t·rsÌtott dokumentum tÌpusa.\n"
+#~ "1. Van az esem√©nyhez t√°rs√≠tva akci√≥.\n"
+#~ "2. A t√°rs√≠tott dokumentum l√©tezik.\n"
+#~ "3. A t√°rs√≠tott dokumentum t√≠pusa.\n"
 #~ "\n"
-#~ "A be·llÌt·sokba menj be a szerkesztÈs men¸ben."
+#~ "A be√°ll√≠t√°sokba menj be a szerkeszt√©s men√ºben."
 
 #~ msgid "GColorsel"
 #~ msgstr "GColorsel"
 
 #~ msgid "Add ->"
-#~ msgstr "Hozz·ad·s ->"
+#~ msgstr "Hozz√°ad√°s ->"
 
 #~ msgid "Add all ->"
-#~ msgstr "Mindent hozz·ad ->"
+#~ msgstr "Mindent hozz√°ad ->"
 
 #~ msgid "Available documents"
-#~ msgstr "ElÈrhetı dokumentumok"
+#~ msgstr "El√©rhet≈ë dokumentumok"
 
 #~ msgid "Available views"
-#~ msgstr "ElÈrhetı nÈzetek"
+#~ msgstr "El√©rhet≈ë n√©zetek"
 
 #~ msgid "Connect to"
 #~ msgstr "Csatlakozik"
 
 #~ msgid "Create a document"
-#~ msgstr "Dokumentum lÈtrehoz·sa"
+#~ msgstr "Dokumentum l√©trehoz√°sa"
 
 #~ msgid "Create views"
-#~ msgstr "NÈzetek kÈszÌtÈse"
+#~ msgstr "N√©zetek k√©sz√≠t√©se"
 
 #~ msgid "Description :"
-#~ msgstr "LeÌr·s :"
+#~ msgstr "Le√≠r√°s :"
 
 #~ msgid ""
 #~ "Please, select the type of document to create.\n"
 #~ "You can choose a short name, do not confuse it with the file name."
 #~ msgstr ""
-#~ "KÈrlek v·lassz tÌpust, amit lÈtre szeretnÈl hozni.\n"
-#~ "V·laszthatsz rˆvid nevet, ne keverd ˆssze a f·jlnÈvvel."
+#~ "K√©rlek v√°lassz t√≠pust, amit l√©tre szeretn√©l hozni.\n"
+#~ "V√°laszthatsz r√∂vid nevet, ne keverd √∂ssze a f√°jln√©vvel."
 
 #~ msgid "Select source document"
-#~ msgstr "Forr·sdokumentum kijelˆlÈse"
+#~ msgstr "Forr√°sdokumentum kijel√∂l√©se"
 
 #~ msgid "Select type"
-#~ msgstr "V·lassz tÌpust"
+#~ msgstr "V√°lassz t√≠pust"
 
 #~ msgid "Short name : "
-#~ msgstr "Rˆvid nÈv :"
+#~ msgstr "R√∂vid n√©v :"
 
 #~ msgid ""
 #~ "This document read document from one or more other document. Please, "
 #~ "choose these documents."
 #~ msgstr ""
-#~ "Ez a dokumentum beolvas egy vagy tˆbb m·s dokumentumot. KÈrlek, v·laszd "
+#~ "Ez a dokumentum beolvas egy vagy t√∂bb m√°s dokumentumot. K√©rlek, v√°laszd "
 #~ "ki ezeket."
 
 #~ msgid ""
 #~ "You can create one or more views for this document. Note that you have to "
 #~ "create at least one view."
 #~ msgstr ""
-#~ "LÈtrehozhatsz egy vagy tˆbb nÈzetet a dokumentumhoz. Legal·bb egy nÈzetet "
-#~ "lÈtre kell hoznod."
+#~ "L√©trehozhatsz egy vagy t√∂bb n√©zetet a dokumentumhoz. Legal√°bb egy n√©zetet "
+#~ "l√©tre kell hoznod."
 
 #~ msgid "Create a new view"
-#~ msgstr "⁄j nÈzet kÈszÌtÈse"
+#~ msgstr "√öj n√©zet k√©sz√≠t√©se"
 
 #~ msgid "Please, select the type of view you want to create."
-#~ msgstr "KÈrlek v·laszd ki a lÈtrehozni kÌv·nt nÈzet tÌpus·t."
+#~ msgstr "K√©rlek v√°laszd ki a l√©trehozni k√≠v√°nt n√©zet t√≠pus√°t."
 
 #~ msgid "Bottom"
-#~ msgstr "AlsÛ"
+#~ msgstr "Als√≥"
 
 #~ msgid "Display documents menu (restart required)."
-#~ msgstr "A dokumentum men¸ megjelenÌtÈse (˙jraindÌt·s ut·n)"
+#~ msgstr "A dokumentum men√º megjelen√≠t√©se (√∫jraind√≠t√°s ut√°n)"
 
 #~ msgid "Documents"
 #~ msgstr "Dokumentumok"
 
 #~ msgid "DoubleClick in previews:"
-#~ msgstr "Dupla kattint·s az elınÈzeten:"
+#~ msgstr "Dupla kattint√°s az el≈ën√©zeten:"
 
 #~ msgid "DoubleClick in views:"
-#~ msgstr "Duplakattint·s a nÈzeten:"
+#~ msgstr "Duplakattint√°s a n√©zeten:"
 
 #~ msgid "Drop:"
-#~ msgstr "Eldob·s:"
+#~ msgstr "Eldob√°s:"
 
 #~ msgid "General"
-#~ msgstr "¡ltal·nos"
+#~ msgstr "√Åltal√°nos"
 
 #~ msgid "Grab:"
-#~ msgstr "Elkap·s:"
+#~ msgstr "Elkap√°s:"
 
 #~ msgid "Left"
 #~ msgstr "Balra"
@@ -3368,140 +3239,140 @@ msgstr ""
 #~ msgstr "MDI (Multiple Document Interface)"
 
 #~ msgid "Modal"
-#~ msgstr "Mod·lis"
+#~ msgstr "Mod√°lis"
 
 #~ msgid "Mode:"
-#~ msgstr "MÛd:"
+#~ msgstr "M√≥d:"
 
 #~ msgid "Notebook"
-#~ msgstr "F¸zet"
+#~ msgstr "F√ºzet"
 
 #~ msgid "Notebook Tab position:"
-#~ msgstr "F¸zetlap pozÌciÛja:"
+#~ msgstr "F√ºzetlap poz√≠ci√≥ja:"
 
 #~ msgid "On ... execute ..."
-#~ msgstr "...-kor indÌtsd ..."
+#~ msgstr "...-kor ind√≠tsd ..."
 
 #~ msgid "Right"
 #~ msgstr "Jobbra"
 
 # mini-utils/gcolorsel/glade/dialog-prefs.glade.h:9
 #~ msgid "Save session on exit."
-#~ msgstr "Munkafolyamat mentÈse kilÈpÈsnÈl."
+#~ msgstr "Munkafolyamat ment√©se kil√©p√©sn√©l."
 
 # mini-utils/gcolorsel/glade/dialog-prefs.glade.h:8
 #~ msgid "Session"
 #~ msgstr "Munkafolyamat"
 
 #~ msgid "Top"
-#~ msgstr "Cs˙cs"
+#~ msgstr "Cs√∫cs"
 
 #~ msgid "Toplevel"
-#~ msgstr "Legfelsı szint˚"
+#~ msgstr "Legfels≈ë szint≈±"
 
 #~ msgid ""
 #~ "Begin\n"
 #~ "Comments :"
 #~ msgstr ""
 #~ "Kezdet\n"
-#~ "MegjegyzÈsek:"
+#~ "Megjegyz√©sek:"
 
 #~ msgid ""
 #~ "End\n"
 #~ "Comments :"
 #~ msgstr ""
-#~ "VÈg\n"
-#~ "MegjegyzÈsek :"
+#~ "V√©g\n"
+#~ "Megjegyz√©sek :"
 
 #~ msgid "Header :"
-#~ msgstr "FejlÈc :"
+#~ msgstr "Fejl√©c :"
 
 #~ msgid "Special properties"
-#~ msgstr "K¸lˆnleges be·llÌt·sok"
+#~ msgstr "K√ºl√∂nleges be√°ll√≠t√°sok"
 
 #~ msgid "Common properties"
-#~ msgstr "Kˆzˆs be·llÌt·sok"
+#~ msgstr "K√∂z√∂s be√°ll√≠t√°sok"
 
 #~ msgid "Name :"
-#~ msgstr "NÈv :"
+#~ msgstr "N√©v :"
 
 #~ msgid "Blue :"
-#~ msgstr "KÈk :"
+#~ msgstr "K√©k :"
 
 #~ msgid "Green :"
-#~ msgstr "Zˆld :"
+#~ msgstr "Z√∂ld :"
 
 #~ msgid "Red :"
-#~ msgstr "Vˆrˆs :"
+#~ msgstr "V√∂r√∂s :"
 
 #~ msgid "Colors format :"
-#~ msgstr "SzÌnform·tum :"
+#~ msgstr "Sz√≠nform√°tum :"
 
 #~ msgid "Display document control (if exists)"
-#~ msgstr "A dokumentumvezÈrlÈs megjelenÌtÈse (ha van)"
+#~ msgstr "A dokumentumvez√©rl√©s megjelen√≠t√©se (ha van)"
 
 #~ msgid "Color height :"
-#~ msgstr "SzÌn magass·ga:"
+#~ msgstr "Sz√≠n magass√°ga:"
 
 #~ msgid "Color width :"
-#~ msgstr "SzÌn szÈlessÈge:"
+#~ msgstr "Sz√≠n sz√©less√©ge:"
 
 #~ msgid "Draw numbers"
-#~ msgstr "Sz·mok rajzol·sa"
+#~ msgstr "Sz√°mok rajzol√°sa"
 
 #~ msgid "New Document"
-#~ msgstr "⁄j dokumentum"
+#~ msgstr "√öj dokumentum"
 
 #~ msgid "Create a new document"
-#~ msgstr "⁄j dokumentum kÈszÌtÈse"
+#~ msgstr "√öj dokumentum k√©sz√≠t√©se"
 
 #~ msgid "New View"
-#~ msgstr "⁄j nÈzet"
+#~ msgstr "√öj n√©zet"
 
 #~ msgid "Create a new view for a document"
-#~ msgstr "⁄j nÈzet kÈszÌtÈse a dokumentumhoz"
+#~ msgstr "√öj n√©zet k√©sz√≠t√©se a dokumentumhoz"
 
 #~ msgid "Close document"
-#~ msgstr "Dokumentum bez·r·sa"
+#~ msgstr "Dokumentum bez√°r√°sa"
 
 #~ msgid "Close the current document"
-#~ msgstr "Az aktu·lis dokument·ciÛ bez·r·sa"
+#~ msgstr "Az aktu√°lis dokument√°ci√≥ bez√°r√°sa"
 
 #~ msgid "Close view"
-#~ msgstr "NÈzet bez·r·sa"
+#~ msgstr "N√©zet bez√°r√°sa"
 
 #~ msgid "Close the current view"
-#~ msgstr "Bez·rja az aktu·lis nÈzetet"
+#~ msgstr "Bez√°rja az aktu√°lis n√©zetet"
 
 #~ msgid "_Open palette..."
-#~ msgstr "Palet_ta megnyit·sa..."
+#~ msgstr "Palet_ta megnyit√°sa..."
 
 #~ msgid "Load a palette"
-#~ msgstr "Paletta betˆltÈse"
+#~ msgstr "Paletta bet√∂lt√©se"
 
 #~ msgid "_Save palette"
-#~ msgstr "Paletta mentÈs_e"
+#~ msgstr "Paletta ment√©s_e"
 
 #~ msgid "Save the current palette in a file"
-#~ msgstr "A jelenlegi paletta mentÈse f·jlba"
+#~ msgstr "A jelenlegi paletta ment√©se f√°jlba"
 
 #~ msgid "Save palette _As..."
-#~ msgstr "Palett_a mentÈse mint..."
+#~ msgstr "Palett_a ment√©se mint..."
 
 #~ msgid "Save the current palette with a different name"
-#~ msgstr "A jelenlegi paletta mentÈse f·jlba m·s nÈvvel"
+#~ msgstr "A jelenlegi paletta ment√©se f√°jlba m√°s n√©vvel"
 
 #~ msgid "Insert color"
-#~ msgstr "SzÌn beillesztÈse"
+#~ msgstr "Sz√≠n beilleszt√©se"
 
 #~ msgid "Remove selected colors"
-#~ msgstr "A kiv·lasztott szÌnek tˆrlÈse"
+#~ msgstr "A kiv√°lasztott sz√≠nek t√∂rl√©se"
 
 #~ msgid "Edit selected colors ..."
-#~ msgstr "Kiv·lasztott szÌnek szerkesztÈse..."
+#~ msgstr "Kiv√°lasztott sz√≠nek szerkeszt√©se..."
 
 #~ msgid "Document/View properties"
-#~ msgstr "Dokumentum/nÈzet be·llÌt·sok"
+#~ msgstr "Dokumentum/n√©zet be√°ll√≠t√°sok"
 
 #~ msgid ""
 #~ "GColorsel was unable to save the file :\n"
@@ -3513,14 +3384,14 @@ msgstr ""
 #~ "\n"
 #~ "Do you want to retry ?"
 #~ msgstr ""
-#~ "A GColorsel nem tudta elmenteni a f·jlt :\n"
+#~ "A GColorsel nem tudta elmenteni a f√°jlt :\n"
 #~ "\n"
 #~ "%s\n"
 #~ "\n"
-#~ "NÈzd meg, hogy a megadott kˆnyvt·r lÈtezik-e,\n"
-#~ "Ès van-e oda megfelelı jogod.\n"
+#~ "N√©zd meg, hogy a megadott k√∂nyvt√°r l√©tezik-e,\n"
+#~ "√©s van-e oda megfelel≈ë jogod.\n"
 #~ "\n"
-#~ "Akarod ˙jra prÛb·lni ?"
+#~ "Akarod √∫jra pr√≥b√°lni ?"
 
 #~ msgid ""
 #~ "GColorsel was unable to load the file:\n"
@@ -3530,26 +3401,26 @@ msgstr ""
 #~ "Make sure that the path you provided exists,\n"
 #~ "and that you have permissions for opening the file."
 #~ msgstr ""
-#~ "A GColorsel nem tudta betˆlteni a f·jlt :\n"
+#~ "A GColorsel nem tudta bet√∂lteni a f√°jlt :\n"
 #~ "\n"
 #~ "%s\n"
 #~ "\n"
-#~ "NÈzd meg, hogy a megadott kˆnyvt·r lÈtezik-e,\n"
-#~ "Ès van-e oda megfelelı jogod.\n"
+#~ "N√©zd meg, hogy a megadott k√∂nyvt√°r l√©tezik-e,\n"
+#~ "√©s van-e oda megfelel≈ë jogod.\n"
 #~ "\n"
-#~ "⁄jra akarod prÛb·lni ?"
+#~ "√öjra akarod pr√≥b√°lni ?"
 
 #~ msgid "Loading file, please wait ..."
-#~ msgstr "F·jl betˆltÈse, kÈrlek v·rj..."
+#~ msgstr "F√°jl bet√∂lt√©se, k√©rlek v√°rj..."
 
 #~ msgid "Save Palette as"
-#~ msgstr "Paletta mentÈse mint..."
+#~ msgstr "Paletta ment√©se mint..."
 
 #~ msgid "File not saved ..."
-#~ msgstr "Nincs elmentve a f·jl..."
+#~ msgstr "Nincs elmentve a f√°jl..."
 
 #~ msgid "File saved ..."
-#~ msgstr "F·jl elmentve..."
+#~ msgstr "F√°jl elmentve..."
 
 #~ msgid ""
 #~ "I'm going to close the last view of '%s'.\n"
@@ -3558,11 +3429,11 @@ msgstr ""
 #~ "\n"
 #~ "Please note that %d virtual document use data from this document."
 #~ msgstr ""
-#~ "Be akarom z·rni az ˙j nÈzetÈt a '%s'-nek.\n"
+#~ "Be akarom z√°rni az √∫j n√©zet√©t a '%s'-nek.\n"
 #~ "\n"
-#~ "Ez a dokumentum is be lesz z·rva. Folytassam ?\n"
+#~ "Ez a dokumentum is be lesz z√°rva. Folytassam ?\n"
 #~ "\n"
-#~ "Vedd figyelembe, hogy %d virtu·lis dokumentum haszn·lja ezt a "
+#~ "Vedd figyelembe, hogy %d virtu√°lis dokumentum haszn√°lja ezt a "
 #~ "dokumentumot."
 
 #~ msgid ""
@@ -3570,9 +3441,9 @@ msgstr ""
 #~ "\n"
 #~ "This document will be closed too, continue ?"
 #~ msgstr ""
-#~ "Be akarom z·rni az ˙j nÈzetÈt a '%s'-nek.\n"
+#~ "Be akarom z√°rni az √∫j n√©zet√©t a '%s'-nek.\n"
 #~ "\n"
-#~ "Ez a dokumentum is be lesz z·rva. Folytassam ?"
+#~ "Ez a dokumentum is be lesz z√°rva. Folytassam ?"
 
 #~ msgid ""
 #~ "I'm going to close '%s'.\n"
@@ -3582,10 +3453,10 @@ msgstr ""
 #~ "\n"
 #~ "Do you want to continue ?"
 #~ msgstr ""
-#~ "Be akarom z·rni '%s'-t.\n"
+#~ "Be akarom z√°rni '%s'-t.\n"
 #~ "\n"
-#~ "Vedd figyelembe, hogy a %d nÈzet be lesz z·rva,\n"
-#~ "Ès %d virtu·lis dokumentum haszn·lja ezt a dokumentumot."
+#~ "Vedd figyelembe, hogy a %d n√©zet be lesz z√°rva,\n"
+#~ "√©s %d virtu√°lis dokumentum haszn√°lja ezt a dokumentumot."
 
 #~ msgid ""
 #~ "I'm going to close '%s'.\n"
@@ -3594,64 +3465,64 @@ msgstr ""
 #~ "\n"
 #~ "Do you want to continue ?"
 #~ msgstr ""
-#~ "Be akarom z·rni '%s'-t.\n"
+#~ "Be akarom z√°rni '%s'-t.\n"
 #~ "\n"
-#~ "Vedd figyelembe %d nÈzet be lesz z·rva.\n"
+#~ "Vedd figyelembe %d n√©zet be lesz z√°rva.\n"
 #~ "\n"
 #~ "Folytassam ?"
 
 #~ msgid "Gnome Color Browser"
-#~ msgstr "GNOME szÌnv·lasztÛ"
+#~ msgstr "GNOME sz√≠nv√°laszt√≥"
 
 #~ msgid "Small utility to browse available X11 colors."
-#~ msgstr "Kis program az X11 szÌneinek megtekintÈsÈre."
+#~ msgstr "Kis program az X11 sz√≠neinek megtekint√©s√©re."
 
 #~ msgid "New Color"
-#~ msgstr "⁄j szÌn"
+#~ msgstr "√öj sz√≠n"
 
 #~ msgid "View properties"
-#~ msgstr "Be·llÌt·sok megtekintÈse"
+#~ msgstr "Be√°ll√≠t√°sok megtekint√©se"
 
 #~ msgid "Document properties"
-#~ msgstr "Dokumentum be·llÌt·sai"
+#~ msgstr "Dokumentum be√°ll√≠t√°sai"
 
 #~ msgid "Open"
-#~ msgstr "Megnyit·s"
+#~ msgstr "Megnyit√°s"
 
 #~ msgid "Open a palette"
-#~ msgstr "Paletta megnyit·sa"
+#~ msgstr "Paletta megnyit√°sa"
 
 #~ msgid "Grab"
-#~ msgstr "FelszÌv·s"
+#~ msgstr "Felsz√≠v√°s"
 
 #~ msgid "Grab a color on the screen"
-#~ msgstr "FelszÌv egy szÌnt a kÈpernyırıl"
+#~ msgstr "Felsz√≠v egy sz√≠nt a k√©perny≈ër≈ël"
 
 #~ msgid ""
 #~ "Your config file is corrupted.\n"
 #~ "Do you want to create a new session ?"
 #~ msgstr ""
-#~ "A be·llÌt·s f·jl sÈr¸lt.\n"
-#~ "⁄j folyamatot akarsz kezdeni ?"
+#~ "A be√°ll√≠t√°s f√°jl s√©r√ºlt.\n"
+#~ "√öj folyamatot akarsz kezdeni ?"
 
 #~ msgid "Loading files, please wait ..."
-#~ msgstr "F·jlok tˆltÈse, kÈrlek v·rj..."
+#~ msgstr "F√°jlok t√∂lt√©se, k√©rlek v√°rj..."
 
 #~ msgid ""
 #~ "One or more files can not be restored :\n"
 #~ "\n"
 #~ msgstr ""
-#~ "Egy vagy tˆbb f·jlt nem siker¸lt vissza·llÌtani:\n"
+#~ "Egy vagy t√∂bb f√°jlt nem siker√ºlt vissza√°ll√≠tani:\n"
 #~ "\n"
 
 #~ msgid "System Colors"
-#~ msgstr "RendszerszÌnek"
+#~ msgstr "Rendszersz√≠nek"
 
 #~ msgid "User Colors"
-#~ msgstr "Felhaszn·lÛ szÌnei"
+#~ msgstr "Felhaszn√°l√≥ sz√≠nei"
 
 #~ msgid "Decimal 16 bits"
-#~ msgstr "Decim·lis 16 bit"
+#~ msgstr "Decim√°lis 16 bit"
 
 #~ msgid "Hex 8 bits"
 #~ msgstr "Hexa 8 bit"
@@ -3660,79 +3531,79 @@ msgstr ""
 #~ msgstr "Hexa 16 bit"
 
 #~ msgid "Float"
-#~ msgstr "Lebegıpontos"
+#~ msgstr "Lebeg≈ëpontos"
 
 #~ msgid "Color"
-#~ msgstr "SzÌn"
+#~ msgstr "Sz√≠n"
 
 #~ msgid "Value"
-#~ msgstr "…rtÈk"
+#~ msgstr "√ârt√©k"
 
 #~ msgid "Tolerance :"
 #~ msgstr "Tolerancia :"
 
 #~ msgid "Font Selector"
-#~ msgstr "Bet˚kÈszlet-v·lasztÛ"
+#~ msgstr "Bet≈±k√©szlet-v√°laszt√≥"
 
 #~ msgid "Selection:"
-#~ msgstr "Kiv·lasztva:"
+#~ msgstr "Kiv√°lasztva:"
 
 #~ msgid "Font to load"
-#~ msgstr "Bet˚kÈszlet betˆltÈsre"
+#~ msgstr "Bet≈±k√©szlet bet√∂lt√©sre"
 
 #~ msgid "FONTSPEC"
 #~ msgstr "FONTSPEC"
 
 #~ msgid "Print selected font name on exit"
-#~ msgstr "A kiv·lasztott bet˚kÈszlet nevÈnet kiirat·sa kilÈpÈskor"
+#~ msgstr "A kiv√°lasztott bet≈±k√©szlet nev√©net kiirat√°sa kil√©p√©skor"
 
 #~ msgid "Inhibit remembering selected font for next run"
-#~ msgstr "A kiv·lasztott bet˚kÈszlet megjegyzÈsÈnek tilt·sa"
+#~ msgstr "A kiv√°lasztott bet≈±k√©szlet megjegyz√©s√©nek tilt√°sa"
 
 #~ msgid "Inhibit loading of last font"
-#~ msgstr "Az utolsÛ bet˚kÈszlet betˆltÈsÈnek tilt·sa"
+#~ msgstr "Az utols√≥ bet≈±k√©szlet bet√∂lt√©s√©nek tilt√°sa"
 
 #~ msgid "Reason %d\n"
 #~ msgstr "%d ok\n"
 
 # mini-utils/gless/gless.c:130
 #~ msgid "Where to put the window, and its size"
-#~ msgstr "Hova tegyem az ablakot, Ès milyen mÈretben"
+#~ msgstr "Hova tegyem az ablakot, √©s milyen m√©retben"
 
 # mini-utils/gless/gless.c:131
 #~ msgid "Ignore standard input; may be needed in some cases."
-#~ msgstr "A szabv·nyos bemenet figyelmen kÌv¸l hagy·sa, nÈha kell."
+#~ msgstr "A szabv√°nyos bemenet figyelmen k√≠v√ºl hagy√°sa, n√©ha kell."
 
 # mini-utils/gless/gless.c:293
 #~ msgid "_New Window"
-#~ msgstr "⁄_j ablak"
+#~ msgstr "√ö_j ablak"
 
 #~ msgid "New text viewer window"
-#~ msgstr "⁄j megjelenÌtı ablak"
+#~ msgstr "√öj megjelen√≠t≈ë ablak"
 
 #~ msgid "_Fixed Font"
-#~ msgstr "_Fix mÈret˚ bet˚tÌpus"
+#~ msgstr "_Fix m√©ret≈± bet≈±t√≠pus"
 
 #~ msgid "Display text with a fixed font"
-#~ msgstr "Fix mÈret˚ (fixed) bet˚tÌpussal valÛ megjelenÌtÈs"
+#~ msgstr "Fix m√©ret≈± (fixed) bet≈±t√≠pussal val√≥ megjelen√≠t√©s"
 
 #~ msgid "Text File Viewer"
-#~ msgstr "Szˆvegf·jl-megjelenÌtı"
+#~ msgstr "Sz√∂vegf√°jl-megjelen√≠t≈ë"
 
 #~ msgid "Copyright 1998, under the GNU General Public License."
-#~ msgstr "Copyright 1998, a GNU General Public License feltÈtelei szerint."
+#~ msgstr "Copyright 1998, a GNU General Public License felt√©telei szerint."
 
 #~ msgid "Find string"
-#~ msgstr "Szˆveg keresÈse"
+#~ msgstr "Sz√∂veg keres√©se"
 
 #~ msgid "Loading..."
-#~ msgstr "BetˆltÈs..."
+#~ msgstr "Bet√∂lt√©s..."
 
 #~ msgid ""
 #~ "No such file or directory:\n"
 #~ "%s"
 #~ msgstr ""
-#~ "Nincs ilyen nev˚ f·jl:\n"
+#~ "Nincs ilyen nev≈± f√°jl:\n"
 #~ "%s"
 
 #~ msgid ""
@@ -3740,7 +3611,7 @@ msgstr ""
 #~ "%s\n"
 #~ "%s"
 #~ msgstr ""
-#~ "Nem siker¸lt kicsomagolni Ès megjelenÌteni a f·jlt:\n"
+#~ "Nem siker√ºlt kicsomagolni √©s megjelen√≠teni a f√°jlt:\n"
 #~ "%s\n"
 #~ "%s"
 
@@ -3749,8 +3620,8 @@ msgstr ""
 #~ "Unable to display compressed file.\n"
 #~ "zcat not found in your path."
 #~ msgstr ""
-#~ "Nem siker¸lt a tˆmˆrÌtett f·jl megnyit·sa.\n"
-#~ "A zcat program nem tal·lhatÛ ez elÈrÈsi ˙tban."
+#~ "Nem siker√ºlt a t√∂m√∂r√≠tett f√°jl megnyit√°sa.\n"
+#~ "A zcat program nem tal√°lhat√≥ ez el√©r√©si √∫tban."
 
 # mini-utils/gless/gless.c:548
 #~ msgid ""
@@ -3758,115 +3629,115 @@ msgstr ""
 #~ "%s\n"
 #~ "%s"
 #~ msgstr ""
-#~ "F·jlbetˆltÈsi hiba:\n"
+#~ "F√°jlbet√∂lt√©si hiba:\n"
 #~ "%s\n"
 #~ "%s"
 
 #~ msgid "Saving..."
-#~ msgstr "MentÈs..."
+#~ msgstr "Ment√©s..."
 
 #~ msgid "Save Text As..."
-#~ msgstr "Szˆveg mentÈse mint..."
+#~ msgstr "Sz√∂veg ment√©se mint..."
 
 #~ msgid "Open Text File..."
-#~ msgstr "Szˆvegf·jl megnyit·sa..."
+#~ msgstr "Sz√∂vegf√°jl megnyit√°sa..."
 
 #~ msgid "Sorry, no preferences yet."
-#~ msgstr "Bocs, nincs be·llÌt·s mÈg."
+#~ msgstr "Bocs, nincs be√°ll√≠t√°s m√©g."
 
 #~ msgid "No search string was specified!"
-#~ msgstr "Nincs keresendı szˆveg megadva!"
+#~ msgstr "Nincs keresend≈ë sz√∂veg megadva!"
 
 #~ msgid "Shut Down"
-#~ msgstr "LelˆvÈs"
+#~ msgstr "Lel√∂v√©s"
 
 #~ msgid "Single User Mode"
-#~ msgstr "Egyfelhaszn·lÛs mÛd"
+#~ msgstr "Egyfelhaszn√°l√≥s m√≥d"
 
 #~ msgid "Runlevel 2"
-#~ msgstr "Kettes fut·si szint"
+#~ msgstr "Kettes fut√°si szint"
 
 #~ msgid "Runlevel 3"
-#~ msgstr "H·rmas fut·si szint"
+#~ msgstr "H√°rmas fut√°si szint"
 
 #~ msgid "Runlevel 4"
-#~ msgstr "NÈgyes fut·si szint"
+#~ msgstr "N√©gyes fut√°si szint"
 
 #~ msgid "Runlevel 5"
-#~ msgstr "÷tˆs fut·si szint"
+#~ msgstr "√ñt√∂s fut√°si szint"
 
 #~ msgid "Reboot"
-#~ msgstr "⁄jraindÌt·s"
+#~ msgstr "√öjraind√≠t√°s"
 
 #~ msgid "Are you sure you want to shut down the computer?"
-#~ msgstr "TÈnyleg ki akarod kapcsolni a gÈpet?"
+#~ msgstr "T√©nyleg ki akarod kapcsolni a g√©pet?"
 
 #~ msgid "Are you sure you want to switch to single user mode?"
-#~ msgstr "TÈnyleg egyfelhaszn·lÛs ¸zemmÛdba akarsz kapcsolni?"
+#~ msgstr "T√©nyleg egyfelhaszn√°l√≥s √ºzemm√≥dba akarsz kapcsolni?"
 
 #~ msgid "Are you sure you want to switch to runlevel 2?"
-#~ msgstr "TÈnyleg a kettes fut·si szintre akarsz kapcsolni?"
+#~ msgstr "T√©nyleg a kettes fut√°si szintre akarsz kapcsolni?"
 
 #~ msgid "Are you sure you want to switch to runlevel 3?"
-#~ msgstr "TÈnyleg a h·rmas fut·si szintre akarsz kapcsolni?"
+#~ msgstr "T√©nyleg a h√°rmas fut√°si szintre akarsz kapcsolni?"
 
 #~ msgid "Are you sure you want to switch to runlevel 4?"
-#~ msgstr "TÈnyleg a nÈgyes fut·si szintre akarsz kapcsolni?"
+#~ msgstr "T√©nyleg a n√©gyes fut√°si szintre akarsz kapcsolni?"
 
 #~ msgid "Are you sure you want to switch to runlevel 5?"
-#~ msgstr "TÈnyleg az ˆtˆs fut·si szintre akarsz kapcsolni?"
+#~ msgstr "T√©nyleg az √∂t√∂s fut√°si szintre akarsz kapcsolni?"
 
 #~ msgid "Are you sure you want to reboot the system?"
-#~ msgstr "TÈnyleg ˙jra akarod indÌtani a gÈpet?"
+#~ msgstr "T√©nyleg √∫jra akarod ind√≠tani a g√©pet?"
 
 #~ msgid ""
 #~ "You must be the super-user (root) to shut down or restart the computer."
-#~ msgstr "Csak a rendszergazda indÌthatja ˙jra a gÈpet."
+#~ msgstr "Csak a rendszergazda ind√≠thatja √∫jra a g√©pet."
 
 #~ msgid "Shutdown or Reboot"
-#~ msgstr "Kikapcsol·s vagy ˙jraindÌt·s"
+#~ msgstr "Kikapcsol√°s vagy √∫jraind√≠t√°s"
 
 #~ msgid "Easy"
-#~ msgstr "Kˆnny˚"
+#~ msgstr "K√∂nny≈±"
 
 #~ msgid ""
 #~ "Click OK to shutdown or reboot. You will lose\n"
 #~ "any unsaved information in open applications."
 #~ msgstr ""
-#~ "Nyomd meg az OK gombot, hogy kikapcsold vagy ˙jraindÌtsd a gÈpet\n"
-#~ "A megnyitott alkalmaz·sok minden mentetlen adata elvÈsz."
+#~ "Nyomd meg az OK gombot, hogy kikapcsold vagy √∫jraind√≠tsd a g√©pet\n"
+#~ "A megnyitott alkalmaz√°sok minden mentetlen adata elv√©sz."
 
 #~ msgid "Commands"
 #~ msgstr "Parancsok"
 
 #~ msgid "Confirm before shutdown?"
-#~ msgstr "KÈrdezzen kikapcsol·s elıtt?"
+#~ msgstr "K√©rdezzen kikapcsol√°s el≈ëtt?"
 
 #~ msgid ""
 #~ "%s\n"
 #~ "You will lose any unsaved work."
 #~ msgstr ""
 #~ "%s\n"
-#~ "El fogod veszteni a nem mentett munk·kat."
+#~ "El fogod veszteni a nem mentett munk√°kat."
 
 #~ msgid "Don't ask next time."
-#~ msgstr "Ne kÈrdezzen legkˆzelebb."
+#~ msgstr "Ne k√©rdezzen legk√∂zelebb."
 
 # mini-utils/gshutdown/gshutdown.c:689
 #~ msgid "Command execution failed: fork failed"
-#~ msgstr "A parancs futtat·sa nem siker¸lt: sikertelen fork"
+#~ msgstr "A parancs futtat√°sa nem siker√ºlt: sikertelen fork"
 
 #~ msgid "Make guname act as a control center applet"
-#~ msgstr "A guname vezÈrlıpult applet legyen"
+#~ msgstr "A guname vez√©rl≈ëpult applet legyen"
 
 #~ msgid "an initialization error occurred while starting 'guname-capplet'."
-#~ msgstr "indÌt·si hiba tˆrtÈnt a guname-capplet indÌt·s·n·l"
+#~ msgstr "ind√≠t√°si hiba t√∂rt√©nt a guname-capplet ind√≠t√°s√°n√°l"
 
 #~ msgid "System Information"
-#~ msgstr "Rendszerinform·ciÛk"
+#~ msgstr "Rendszerinform√°ci√≥k"
 
 #~ msgid "GNOME contributors:"
-#~ msgstr "GNOME fejlesztık:"
+#~ msgstr "GNOME fejleszt≈ëk:"
 
 #~ msgid "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
 #~ msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
@@ -3875,46 +3746,46 @@ msgstr ""
 #~ msgstr "GNOME: GNU Network Object Model Environment"
 
 #~ msgid "Email Information..."
-#~ msgstr "Inform·ciÛk elk¸ldÈse..."
+#~ msgstr "Inform√°ci√≥k elk√ºld√©se..."
 
 #~ msgid "Save Information to File..."
-#~ msgstr "Inform·ciÛk elmentÈse..."
+#~ msgstr "Inform√°ci√≥k elment√©se..."
 
 #~ msgid "Detailed Information..."
-#~ msgstr "RÈszletek..."
+#~ msgstr "R√©szletek..."
 
 #~ msgid "Category"
-#~ msgstr "KategÛria"
+#~ msgstr "Kateg√≥ria"
 
 #~ msgid "Your System"
 #~ msgstr "A te rendszered"
 
 #~ msgid "Save As..."
-#~ msgstr "MentÈs m·skÈnt..."
+#~ msgstr "Ment√©s m√°sk√©nt..."
 
 #~ msgid "Mail To..."
-#~ msgstr "LevÈl k¸ldÈse..."
+#~ msgstr "Lev√©l k√ºld√©se..."
 
 #~ msgid ""
 #~ "Error closing file `%s': \n"
 #~ "%s\n"
 #~ "Some or all data may not have been written."
 #~ msgstr ""
-#~ "Nem tudom lez·rni a '%s\n"
-#~ "' f·jlt\n"
+#~ "Nem tudom lez√°rni a '%s\n"
+#~ "' f√°jlt\n"
 #~ "%s\n"
-#~ "NÈh·ny vagy semmi adat nem lett kiÌrva."
+#~ "N√©h√°ny vagy semmi adat nem lett ki√≠rva."
 
 # mini-utils/guname/guname.c:723
 #~ msgid "Couldn't open file `%s': %s"
-#~ msgstr "A f·jlmegnyit·s sikertelen '%s': %s"
+#~ msgstr "A f√°jlmegnyit√°s sikertelen '%s': %s"
 
 # mini-utils/guname/guname.c:745
 #~ msgid "Save System Information As..."
-#~ msgstr "Mentsd el a rendszerinform·ciÛkat mint..."
+#~ msgstr "Mentsd el a rendszerinform√°ci√≥kat mint..."
 
 #~ msgid "Command failed ` %s ': %s"
-#~ msgstr "A parancs nem siker¸lt: '%s' : %s"
+#~ msgstr "A parancs nem siker√ºlt: '%s' : %s"
 
 #~ msgid "Couldn't run command ` %s ': %s"
 #~ msgstr "Nem tudom futtatni a parancsot '%s': %s"
@@ -3923,125 +3794,125 @@ msgstr ""
 #~ "The following mail will be sent to %s.\n"
 #~ " Are you sure you want to mail this information?"
 #~ msgstr ""
-#~ "A kˆvetkezı levÈl el lesz k¸ldve %s-nek.\n"
-#~ "El akarod k¸ldeni az inform·ciÛkat?"
+#~ "A k√∂vetkez≈ë lev√©l el lesz k√ºldve %s-nek.\n"
+#~ "El akarod k√ºldeni az inform√°ci√≥kat?"
 
 #~ msgid "Are you sure?"
-#~ msgstr "TÈnyleg?"
+#~ msgstr "T√©nyleg?"
 
 #~ msgid "Address to mail to:"
-#~ msgstr "CÌm, ahova k¸ldjem:"
+#~ msgstr "C√≠m, ahova k√ºldjem:"
 
 #~ msgid "Distribution:"
-#~ msgstr "Disztrib˙ciÛ:"
+#~ msgstr "Disztrib√∫ci√≥:"
 
 #~ msgid "Operating System:"
-#~ msgstr "Oper·ciÛs rendszer:"
+#~ msgstr "Oper√°ci√≥s rendszer:"
 
 #~ msgid "Distribution Version:"
-#~ msgstr "Disztrib˙ciÛ verziÛja:"
+#~ msgstr "Disztrib√∫ci√≥ verzi√≥ja:"
 
 #~ msgid "Operating System Version:"
-#~ msgstr "Oper·ciÛs rendszer verziÛja:"
+#~ msgstr "Oper√°ci√≥s rendszer verzi√≥ja:"
 
 #~ msgid "Operating System Release:"
-#~ msgstr "Rendszer verziÛja:"
+#~ msgstr "Rendszer verzi√≥ja:"
 
 #~ msgid "Processor Type:"
-#~ msgstr "Processzor tÌpusa:"
+#~ msgstr "Processzor t√≠pusa:"
 
 #~ msgid "Processor Speed:"
-#~ msgstr "Processzor sebessÈge:"
+#~ msgstr "Processzor sebess√©ge:"
 
 #~ msgid "Host Name:"
-#~ msgstr "GÈp neve:"
+#~ msgstr "G√©p neve:"
 
 #~ msgid "Domain Name:"
-#~ msgstr "Tartom·ny neve:"
+#~ msgstr "Tartom√°ny neve:"
 
 #~ msgid "User Name:"
-#~ msgstr "Felhaszn·lÛ neve:"
+#~ msgstr "Felhaszn√°l√≥ neve:"
 
 #~ msgid "X Display Name:"
-#~ msgstr "X kÈpernyı neve:"
+#~ msgstr "X k√©perny≈ë neve:"
 
 #~ msgid "System Status:"
-#~ msgstr "Rendszer·llapot:"
+#~ msgstr "Rendszer√°llapot:"
 
 #~ msgid "Real Memory:"
-#~ msgstr "ValÛs memÛria:"
+#~ msgstr "Val√≥s mem√≥ria:"
 
 #~ msgid "Swap Space (\"virtual memory\"):"
-#~ msgstr "Cseret·r (\"virtu·lis memÛria\"):"
+#~ msgstr "Cseret√°r (\"virtu√°lis mem√≥ria\"):"
 
 #~ msgid "Total Memory:"
-#~ msgstr "Teljes memÛria:"
+#~ msgstr "Teljes mem√≥ria:"
 
 #~ msgid "Free Memory:"
-#~ msgstr "Szabad memÛria:"
+#~ msgstr "Szabad mem√≥ria:"
 
 #~ msgid "Device"
-#~ msgstr "Eszkˆz"
+#~ msgstr "Eszk√∂z"
 
 #~ msgid "Used space"
-#~ msgstr "Haszn·lt hely"
+#~ msgstr "Haszn√°lt hely"
 
 #~ msgid "Free space"
 #~ msgstr "Szabad hely"
 
 #~ msgid "Percent free"
-#~ msgstr "Sz·zalÈk szabad"
+#~ msgstr "Sz√°zal√©k szabad"
 
 #~ msgid "Mount point"
-#~ msgstr "BeillesztÈsi pont"
+#~ msgstr "Beilleszt√©si pont"
 
 #~ msgid "Unknown"
 #~ msgstr "Ismeretlen"
 
 #~ msgid "Unknown filesystem"
-#~ msgstr "Ismeretlen f·jlrendszer"
+#~ msgstr "Ismeretlen f√°jlrendszer"
 
 #~ msgid "No information for this filesystem."
-#~ msgstr "Nincs a f·jlrendszerrıl inform·ciÛ."
+#~ msgstr "Nincs a f√°jlrendszerr≈ël inform√°ci√≥."
 
 #~ msgid "Memory"
-#~ msgstr "MemÛria"
+#~ msgstr "Mem√≥ria"
 
 #~ msgid "Kilobytes"
-#~ msgstr "kilob·jt"
+#~ msgstr "kilob√°jt"
 
 #~ msgid "%ld%% memory used."
-#~ msgstr "%ld%% memÛria haszn·lva."
+#~ msgstr "%ld%% mem√≥ria haszn√°lva."
 
 #~ msgid "%ld%% swap used."
-#~ msgstr "%ld%% swap haszn·lva."
+#~ msgstr "%ld%% swap haszn√°lva."
 
 #~ msgid "CPU %d"
 #~ msgstr "%d CPU"
 
 #~ msgid "Detailed System Information"
-#~ msgstr "RÈszletes rendszer-inform·ciÛk"
+#~ msgstr "R√©szletes rendszer-inform√°ci√≥k"
 
 #~ msgid "Disk Information"
-#~ msgstr "Lemezinform·ciÛ"
+#~ msgstr "Lemezinform√°ci√≥"
 
 #~ msgid "Memory Information"
-#~ msgstr "MemÛriainform·ciÛ"
+#~ msgstr "Mem√≥riainform√°ci√≥"
 
 #~ msgid "CPU Information"
-#~ msgstr "CPU inform·ciÛ"
+#~ msgstr "CPU inform√°ci√≥"
 
 #~ msgid "Mount Point: "
-#~ msgstr "BeillesztÈsi hely"
+#~ msgstr "Beilleszt√©si hely"
 
 #~ msgid "    Device: "
-#~ msgstr "     Eszkˆz: "
+#~ msgstr "     Eszk√∂z: "
 
 #~ msgid "    Filesystem Type: "
-#~ msgstr "    F·jlrendszer tÌpusa:"
+#~ msgstr "    F√°jlrendszer t√≠pusa:"
 
 #~ msgid "%ld megabytes, %ld free (%ld superuser); %ld inodes, %ld free."
-#~ msgstr "%ld megab·jt, %ld szabad (%ld superuser); %ld inode-ok, %ld szabad."
+#~ msgstr "%ld megab√°jt, %ld szabad (%ld superuser); %ld inode-ok, %ld szabad."
 
 #~ msgid "%2d%% full "
 #~ msgstr "%2d%% megtelt"
@@ -4050,20 +3921,20 @@ msgstr ""
 #~ "Couldn't find the \"w\" command in your path.\n"
 #~ "This command is needed for the program to work."
 #~ msgstr ""
-#~ "Nem tal·lom a 'w' parancsot az ˙tvonaladban.\n"
-#~ "Ez a parancs sz¸ksÈges a programnak a m˚kˆdÈshez."
+#~ "Nem tal√°lom a 'w' parancsot az √∫tvonaladban.\n"
+#~ "Ez a parancs sz√ºks√©ges a programnak a m≈±k√∂d√©shez."
 
 #~ msgid "Active User Listing"
-#~ msgstr "Felhaszn·lÛlist·z·s aktiv·l·sa"
+#~ msgstr "Felhaszn√°l√≥list√°z√°s aktiv√°l√°sa"
 
 #~ msgid "Update Information"
-#~ msgstr "Inform·ciÛ frissÌtÈse"
+#~ msgstr "Inform√°ci√≥ friss√≠t√©se"
 
 #~ msgid "Add some defaults"
-#~ msgstr "Alapbe·llÌt·s hozz·ad·sa"
+#~ msgstr "Alapbe√°ll√≠t√°s hozz√°ad√°sa"
 
 #~ msgid "Command Editor"
-#~ msgstr "Parancs szerkesztı"
+#~ msgstr "Parancs szerkeszt≈ë"
 
 #~ msgid ""
 #~ "You can configure the commands on the popup menus.\n"
@@ -4072,10 +3943,10 @@ msgstr ""
 #~ "In the command, you can use %u to represent the\n"
 #~ "currently selected username, and %t for the tty."
 #~ msgstr ""
-#~ "Be·llÌthatod a parancsokat a legˆrd¸lı men¸kˆn.\n"
-#~ "Csak Ìrd be a nevet amit szeretnÈl, hogy megjelenjen \n"
-#~ "a men¸ben, majd add meg a parancsot, amit futtatni szeretnÈl.\n"
-#~ "A parancsban a %u a felhaszn·lÛ, aki ki van v·lasztva, a %t\n"
+#~ "Be√°ll√≠thatod a parancsokat a leg√∂rd√ºl≈ë men√ºk√∂n.\n"
+#~ "Csak √≠rd be a nevet amit szeretn√©l, hogy megjelenjen \n"
+#~ "a men√ºben, majd add meg a parancsot, amit futtatni szeretn√©l.\n"
+#~ "A parancsban a %u a felhaszn√°l√≥, aki ki van v√°lasztva, a %t\n"
 #~ "pedig a tty."
 
 #~ msgid ""
@@ -4083,16 +3954,16 @@ msgstr ""
 #~ "some sample commands."
 #~ msgstr ""
 #~ "Kattints erre a gombra \n"
-#~ "parancsok hozz·ad·s·hoz."
+#~ "parancsok hozz√°ad√°s√°hoz."
 
 #~ msgid "Menu items"
-#~ msgstr "Men¸elemek"
+#~ msgstr "Men√ºelemek"
 
 #~ msgid "Running: %s\n"
 #~ msgstr "Fut: %s\n"
 
 #~ msgid "Default 16-bit"
-#~ msgstr "AlapÈrtelmezett 16 bit"
+#~ msgstr "Alap√©rtelmezett 16 bit"
 
 #~ msgid "32-bit"
 #~ msgstr "32 bit"
@@ -4101,31 +3972,31 @@ msgstr ""
 #~ msgstr "32 bit sync-el"
 
 #~ msgid "Sleeping"
-#~ msgstr "AlvÛ"
+#~ msgstr "Alv√≥"
 
 #~ msgid "Active/Idle"
-#~ msgstr "AktÌv/pihen"
+#~ msgstr "Akt√≠v/pihen"
 
 #~ msgid "Standby"
-#~ msgstr "Le·llÌtva"
+#~ msgstr "Le√°ll√≠tva"
 
 #~ msgid "Unable to access the drive."
-#~ msgstr "Nem tudom elÈrni a lemezt."
+#~ msgstr "Nem tudom el√©rni a lemezt."
 
 #~ msgid "The DMA setting for this drive cannot be changed."
-#~ msgstr "A DMA be·llÌt·sok a lemezhez nem v·ltoztathatÛk."
+#~ msgstr "A DMA be√°ll√≠t√°sok a lemezhez nem v√°ltoztathat√≥k."
 
 #~ msgid "Disabled"
 #~ msgstr "Tiltva"
 
 #~ msgid "The IRQ unmask setting for this drive cannot be changed."
-#~ msgstr "Az IRQ unmask be·llÌt·sok a lemezhez nem v·ltoztathatÛk."
+#~ msgstr "Az IRQ unmask be√°ll√≠t√°sok a lemezhez nem v√°ltoztathat√≥k."
 
 #~ msgid "The drive refused to keep its settings."
-#~ msgstr "A lemez megtagadta ezeknek a be·llÌt·soknak a megtart·s·t."
+#~ msgstr "A lemez megtagadta ezeknek a be√°ll√≠t√°soknak a megtart√°s√°t."
 
 #~ msgid "Keep settings"
-#~ msgstr "Be·llÌt·sok megtart·sa"
+#~ msgstr "Be√°ll√≠t√°sok megtart√°sa"
 
 #~ msgid "None"
 #~ msgstr "Nincs"
@@ -4134,11 +4005,11 @@ msgstr ""
 #~ msgstr "(1 szektor)"
 
 #~ msgid "(Dual Port)"
-#~ msgstr "(kettıs port)"
+#~ msgstr "(kett≈ës port)"
 
 # mini-utils/idetool/idetool.c:210
 #~ msgid "(Dual Port Cache)"
-#~ msgstr "(kettıs port gyorst·r)"
+#~ msgstr "(kett≈ës port gyorst√°r)"
 
 # mini-utils/idetool/idetool.c:238
 #~ msgid "No"
@@ -4157,27 +4028,27 @@ msgstr ""
 #~ msgstr "Firmware"
 
 #~ msgid "Serial No."
-#~ msgstr "Sorozatsz·m"
+#~ msgstr "Sorozatsz√°m"
 
 #~ msgid "Geometry"
 #~ msgstr "Geometria"
 
 # mini-utils/idetool/idetool.c:310
 #~ msgid "Cache"
-#~ msgstr "Gyorst·r"
+#~ msgstr "Gyorst√°r"
 
 # mini-utils/idetool/idetool.c:311
 #~ msgid "Status"
-#~ msgstr "¡llapot"
+#~ msgstr "√Ållapot"
 
 #~ msgid "Legacy MFM/RLL drive"
-#~ msgstr "Szabv·nyos MFM/RLL egysÈg"
+#~ msgstr "Szabv√°nyos MFM/RLL egys√©g"
 
 #~ msgid "DMA Mode"
-#~ msgstr "DMA mÛd"
+#~ msgstr "DMA m√≥d"
 
 #~ msgid "IO Mode"
-#~ msgstr "IO mÛd"
+#~ msgstr "IO m√≥d"
 
 #~ msgid "IRQ Unmask"
 #~ msgstr "IRQ unmask"
@@ -4186,16 +4057,16 @@ msgstr ""
 #~ msgstr "Multisector"
 
 #~ msgid "IDE Status"
-#~ msgstr "IDE st·tusz"
+#~ msgstr "IDE st√°tusz"
 
 #~ msgid "Disk Logo Not Found"
-#~ msgstr "Lemez logo-t nem tal·ltam"
+#~ msgstr "Lemez logo-t nem tal√°ltam"
 
 #~ msgid "Only the superuser can use this tool"
-#~ msgstr "Csak rendszergazda haszn·lhatja ezt az eszkˆzt"
+#~ msgstr "Csak rendszergazda haszn√°lhatja ezt az eszk√∂zt"
 
 #~ msgid "You appear to have no IDE drives"
-#~ msgstr "Nem ˙gy nÈz ki, mintha lenne IDE lemezed"
+#~ msgstr "Nem √∫gy n√©z ki, mintha lenne IDE lemezed"
 
 #~ msgid "Param"
 #~ msgstr "Param"
@@ -4204,7 +4075,7 @@ msgstr ""
 #~ msgstr "Jelenlegi"
 
 #~ msgid "Scale"
-#~ msgstr "Sk·la"
+#~ msgstr "Sk√°la"
 
 #~ msgid "Stripchart"
 #~ msgstr "Stripchart"
@@ -4218,44 +4089,44 @@ msgstr ""
 #~ "such as CPU load, CPU utilization, network traffic levels, and the like.  "
 #~ "Other more ingenious uses are left as an exercise for the interested user."
 #~ msgstr ""
-#~ "A GNOME f¸ggvÈnyrajzolÛ program v·ltozatos felhaszn·lÛ ·ltal defini·lt "
-#~ "paramÈtereket tud megjelenÌteni az idı f¸ggvÈnyÈben. A program a rendszer "
-#~ "minısÈgi paramÈtereinek ·br·zol·s·ra van haszn·lva, mint a CPU load, a "
-#~ "CPU kihaszn·lts·g, h·lÛzati forgalom, Ès egyÈb hasonlÛ dolgokra. EgyÈb "
-#~ "felhaszn·l·si ter¸letek csak a felhaszn·lÛ tapasztalat·tÛl f¸ggnek."
+#~ "A GNOME f√ºggv√©nyrajzol√≥ program v√°ltozatos felhaszn√°l√≥ √°ltal defini√°lt "
+#~ "param√©tereket tud megjelen√≠teni az id≈ë f√ºggv√©ny√©ben. A program a rendszer "
+#~ "min≈ës√©gi param√©tereinek √°br√°zol√°s√°ra van haszn√°lva, mint a CPU load, a "
+#~ "CPU kihaszn√°lts√°g, h√°l√≥zati forgalom, √©s egy√©b hasonl√≥ dolgokra. Egy√©b "
+#~ "felhaszn√°l√°si ter√ºletek csak a felhaszn√°l√≥ tapasztalat√°t√≥l f√ºggnek."
 
 #~ msgid "Show values"
-#~ msgstr "…rtÈkek megjelenÌtÈse"
+#~ msgstr "√ârt√©kek megjelen√≠t√©se"
 
 #~ msgid "Edit Prefs..."
-#~ msgstr "Tulajdons·gok szerkesztÈse..."
+#~ msgstr "Tulajdons√°gok szerkeszt√©se..."
 
 #~ msgid "Edit Params..."
-#~ msgstr "ParamÈterek szerkesztÈse..."
+#~ msgstr "Param√©terek szerkeszt√©se..."
 
 #~ msgid "no such field: %d"
-#~ msgstr "nincs ilyen mezı: %d"
+#~ msgstr "nincs ilyen mez≈ë: %d"
 
 #~ msgid "missing variable identifer"
-#~ msgstr "hi·nyzÛ v·ltozÛ azonosÌtÛ"
+#~ msgstr "hi√°nyz√≥ v√°ltoz√≥ azonos√≠t√≥"
 
 #~ msgid "invalid variable identifer: %s"
-#~ msgstr "rossz v·ltozÛ azonosÌtÛ: %s"
+#~ msgstr "rossz v√°ltoz√≥ azonos√≠t√≥: %s"
 
 #~ msgid "number expected"
-#~ msgstr "sz·m hiba"
+#~ msgstr "sz√°m hiba"
 
 #~ msgid "extra junk at end: \"%s\""
-#~ msgstr "szemÈt a f·jl vÈgÈn: \"%s\""
+#~ msgstr "szem√©t a f√°jl v√©g√©n: \"%s\""
 
 #~ msgid "Parameter"
-#~ msgstr "ParamÈter"
+#~ msgstr "Param√©ter"
 
 #~ msgid "Equation"
 #~ msgstr "Egyenlet"
 
 #~ msgid "Filename"
-#~ msgstr "F·jlnÈv"
+#~ msgstr "F√°jln√©v"
 
 #~ msgid "Pattern"
 #~ msgstr "Minta"
@@ -4267,10 +4138,10 @@ msgstr ""
 #~ msgstr "Max"
 
 #~ msgid "Linear"
-#~ msgstr "Line·ris"
+#~ msgstr "Line√°ris"
 
 #~ msgid "Indicator"
-#~ msgstr "MegjelenÌtı"
+#~ msgstr "Megjelen√≠t≈ë"
 
 #~ msgid "Line"
 #~ msgstr "Vonal"
@@ -4279,40 +4150,40 @@ msgstr ""
 #~ msgstr "Pont"
 
 #~ msgid "Solid"
-#~ msgstr "Tˆmˆr"
+#~ msgstr "T√∂m√∂r"
 
 #~ msgid "Add Parameter Before"
-#~ msgstr "ParamÈter hozz·ad·sa elÈ"
+#~ msgstr "Param√©ter hozz√°ad√°sa el√©"
 
 #~ msgid "Add Parameter After"
-#~ msgstr "ParamÈter hozz·ad·sa ut·n"
+#~ msgstr "Param√©ter hozz√°ad√°sa ut√°n"
 
 #~ msgid "Apply Parameter Changes"
-#~ msgstr "ParamÈter v·ltoz·sok ÈrvÈnyesÌtÈse"
+#~ msgstr "Param√©ter v√°ltoz√°sok √©rv√©nyes√≠t√©se"
 
 #~ msgid "Delete Parameter"
-#~ msgstr "ParamÈter tˆrlÈse"
+#~ msgstr "Param√©ter t√∂rl√©se"
 
 #~ msgid "Add Color"
-#~ msgstr "SzÌn hozz·ad·sa"
+#~ msgstr "Sz√≠n hozz√°ad√°sa"
 
 #~ msgid "Delete Color"
-#~ msgstr "SzÌn tˆrlÈse"
+#~ msgstr "Sz√≠n t√∂rl√©se"
 
 #~ msgid "Info"
-#~ msgstr "InfÛ"
+#~ msgstr "Inf√≥"
 
 #~ msgid "Parameter Editor"
-#~ msgstr "ParamÈter Szerkesztı"
+#~ msgstr "Param√©ter Szerkeszt≈ë"
 
 #~ msgid "Parameters"
-#~ msgstr "ParamÈterek"
+#~ msgstr "Param√©terek"
 
 #~ msgid "Chart"
 #~ msgstr "Grafikon"
 
 #~ msgid "enabled"
-#~ msgstr "engedÈlyezve"
+#~ msgstr "enged√©lyezve"
 
 #~ msgid "minor"
 #~ msgstr "kis"
@@ -4321,13 +4192,13 @@ msgstr ""
 #~ msgstr "nagy"
 
 #~ msgid "Update"
-#~ msgstr "FrissÌtÈs"
+#~ msgstr "Friss√≠t√©s"
 
 #~ msgid "Smooth"
 #~ msgstr "Sima"
 
 #~ msgid "Ticks"
-#~ msgstr "EgysÈgek"
+#~ msgstr "Egys√©gek"
 
 #~ msgid "Pen"
 #~ msgstr "Toll"
@@ -4339,80 +4210,80 @@ msgstr ""
 #~ msgstr "GEO"
 
 #~ msgid "Configuration file name"
-#~ msgstr "Konfigur·ciÛs f·jl neve"
+#~ msgstr "Konfigur√°ci√≥s f√°jl neve"
 
 #~ msgid "FILE"
 #~ msgstr "FILE"
 
 #~ msgid "Values"
-#~ msgstr "…rtÈkek"
+#~ msgstr "√ârt√©kek"
 
 #~ msgid "Prefs..."
-#~ msgstr "Tulajdons·gok..."
+#~ msgstr "Tulajdons√°gok..."
 
 #~ msgid "Params..."
-#~ msgstr "ParamÈterek..."
+#~ msgstr "Param√©terek..."
 
 #~ msgid "Project Time today:"
-#~ msgstr "Projekt idı ma:"
+#~ msgstr "Projekt id≈ë ma:"
 
 #~ msgid "Project Time ever:"
-#~ msgstr "Projektidı ˆsszesen:"
+#~ msgstr "Projektid≈ë √∂sszesen:"
 
 #~ msgid "Manual..."
-#~ msgstr "KÈzikˆnyv..."
+#~ msgstr "K√©zik√∂nyv..."
 
 #~ msgid "Formatting /dev/floppy"
-#~ msgstr "/dev/floppy form·z·sa"
+#~ msgstr "/dev/floppy form√°z√°sa"
 
 #~ msgid "Formatting %s"
-#~ msgstr "%s form·z·sa"
+#~ msgstr "%s form√°z√°sa"
 
 #~ msgid ""
 #~ "Number of files: 0\n"
 #~ "Number of folders: 0"
 #~ msgstr ""
-#~ "F·jlok sz·ma: 0\n"
-#~ "Mapp·k sz·ma: 0"
+#~ "F√°jlok sz√°ma: 0\n"
+#~ "Mapp√°k sz√°ma: 0"
 
 #~ msgid "ASCII code:"
-#~ msgstr "ASCII kÛd:"
+#~ msgstr "ASCII k√≥d:"
 
 #~ msgid "Cancel"
-#~ msgstr "MÈgsem"
+#~ msgstr "M√©gsem"
 
 #~ msgid "OK"
 #~ msgstr "OK"
 
 #~ msgid "Open log...            "
-#~ msgstr "NaplÛ megnyit·sa..."
+#~ msgstr "Napl√≥ megnyit√°sa..."
 
 #~ msgid "Export log...          "
-#~ msgstr "NaplÛ export·l·sa..."
+#~ msgstr "Napl√≥ export√°l√°sa..."
 
 #~ msgid "Close log              "
-#~ msgstr "NaplÛ z·r·sa           "
+#~ msgstr "Napl√≥ z√°r√°sa           "
 
 #~ msgid "Switch log             "
-#~ msgstr "NaplÛ kapcsol·sa       "
+#~ msgstr "Napl√≥ kapcsol√°sa       "
 
 #~ msgid "Monitor..              "
 #~ msgstr "Monitor..."
 
 #~ msgid "Exit                   "
-#~ msgstr "KilÈpÈs                "
+#~ msgstr "Kil√©p√©s                "
 
 #~ msgid "Calendar                "
-#~ msgstr "Napt·r                  "
+#~ msgstr "Napt√°r                  "
 
 #~ msgid "Log stats               "
-#~ msgstr "NaplÛ statisztik·k      "
+#~ msgstr "Napl√≥ statisztik√°k      "
 
 #~ msgid "Preferences...          "
-#~ msgstr "Tulajdons·gok...         "
+#~ msgstr "Tulajdons√°gok...         "
 
 #~ msgid "About..                "
-#~ msgstr "NÈvjegy...             "
+#~ msgstr "N√©vjegy...             "
 
 #~ msgid ""
 #~ "Notebook\n"
@@ -4420,10 +4291,10 @@ msgstr ""
 #~ "Modal\n"
 #~ "Default\n"
 #~ msgstr ""
-#~ "Noteszf¸l\n"
-#~ "Felsı szint\n"
+#~ "Noteszf√ºl\n"
+#~ "Fels≈ë szint\n"
 #~ "Modal\n"
-#~ "AlapÈrtelmezett\n"
+#~ "Alap√©rtelmezett\n"
 
 #~ msgid ""
 #~ "Left\n"
@@ -4440,25 +4311,25 @@ msgstr ""
 #~ msgstr "window1"
 
 #~ msgid "_Save..."
-#~ msgstr "_MentÈs..."
+#~ msgstr "_Ment√©s..."
 
 #~ msgid "Write information to disk"
-#~ msgstr "Az inform·ciÛk lemezre Ìr·sa"
+#~ msgstr "Az inform√°ci√≥k lemezre √≠r√°sa"
 
 #~ msgid "Save not implemented yet\n"
-#~ msgstr "A mentÈs mÈg nincs megÌrva\n"
+#~ msgstr "A ment√©s m√©g nincs meg√≠rva\n"
 
 #~ msgid "rparen expected"
 #~ msgstr "rparen hiba"
 
 #~ msgid "extra gunk at end: \"%s\""
-#~ msgstr "szemÈt a f·jl vÈgÈn: '%s'"
+#~ msgstr "szem√©t a f√°jl v√©g√©n: '%s'"
 
 #~ msgid "%s, line %d: "
 #~ msgstr "%s, %d. sor: "
 
 #~ msgid "can't open config file \"%s\""
-#~ msgstr "nem tudom megnyitni '%s' konfigur·ciÛs f·jlt"
+#~ msgstr "nem tudom megnyitni '%s' konfigur√°ci√≥s f√°jlt"
 
 #~ msgid ""
 #~ "can't open config file \"./gstripchart.conf\", \"%s\", \"%s\", or \"%s\""
@@ -4471,46 +4342,46 @@ msgstr ""
 #~ "nem tudom megnyitni \"./gstripchart.conf\"-t, \"%s\"-t, vagy \"%s\"-t"
 
 #~ msgid "identifier or begin must be first"
-#~ msgstr "azonosÌtÛ vagy begin kell hogy az elsı legyen"
+#~ msgstr "azonos√≠t√≥ vagy begin kell hogy az els≈ë legyen"
 
 #~ msgid "unrecognized color: %s"
-#~ msgstr "ismeretlen szÌn: %s"
+#~ msgstr "ismeretlen sz√≠n: %s"
 
 #~ msgid "scale must be either \"log\" or \"linear\""
-#~ msgstr "a sk·la ÈrtÈk 'log' vagy 'linear' lehet"
+#~ msgstr "a sk√°la √©rt√©k 'log' vagy 'linear' lehet"
 
 #~ msgid "no equation found"
-#~ msgstr "nem tal·ltam egyenletet"
+#~ msgstr "nem tal√°ltam egyenletet"
 
 #~ msgid "invalid option: \"%s\""
-#~ msgstr "rossz paramÈter: '%s'"
+#~ msgstr "rossz param√©ter: '%s'"
 
 #~ msgid "E_xit"
-#~ msgstr "_KilÈp"
+#~ msgstr "_Kil√©p"
 
 #~ msgid "Identifier"
-#~ msgstr "AzonosÌtÛ"
+#~ msgstr "Azonos√≠t√≥"
 
 #~ msgid "Displayed range"
-#~ msgstr "Mutatott tartom·ny"
+#~ msgstr "Mutatott tartom√°ny"
 
 #~ msgid "Stripchart Parameters"
-#~ msgstr "F¸ggvÈnyrajzolÛ paramÈterek"
+#~ msgstr "F√ºggv√©nyrajzol√≥ param√©terek"
 
 #~ msgid "Params"
-#~ msgstr "ParamÈterek"
+#~ msgstr "Param√©terek"
 
 #~ msgid "gstripchart"
 #~ msgstr "gstripchart"
 
 #~ msgid "Stripchart Viewer"
-#~ msgstr "Stripchart NÈzegetı"
+#~ msgstr "Stripchart N√©zeget≈ë"
 
 #~ msgid "invalid display type: %s\n"
-#~ msgstr "rossz kÈpernyı tÌpus: %s\n"
+#~ msgstr "rossz k√©perny≈ë t√≠pus: %s\n"
 
 #~ msgid "Chart update interval"
-#~ msgstr "A chart frissÌtÈsi intervallum"
+#~ msgstr "A chart friss√≠t√©si intervallum"
 
 #~ msgid "SECS"
 #~ msgstr "SECS"
@@ -4519,13 +4390,13 @@ msgstr ""
 #~ msgstr "A Chart"
 
 #~ msgid "Slider low-pass filter time constant"
-#~ msgstr "A gˆrgetıs·v alul·tereszı sz˚rıjÈnek idıkonstansa"
+#~ msgstr "A g√∂rget≈ës√°v alul√°teresz≈ë sz≈±r≈ëj√©nek id≈ëkonstansa"
 
 #~ msgid "Adds a menubar to the main window"
-#~ msgstr "Men¸ megjelenÌtÈse a fıablakon"
+#~ msgstr "Men√º megjelen√≠t√©se a f≈ëablakon"
 
 #~ msgid "Omits slider window"
-#~ msgstr "Gˆrgetıablakot rak ki"
+#~ msgstr "G√∂rget≈ëablakot rak ki"
 
 #~ msgid "TYPE is one of gtk, applet, text, or none"
 #~ msgstr "TYPE lehet gtk, applet, text vagy none"
@@ -4540,19 +4411,19 @@ msgstr ""
 #~ msgstr "fekete"
 
 #~ msgid "red"
-#~ msgstr "vˆrˆs"
+#~ msgstr "v√∂r√∂s"
 
 #~ msgid "yellow"
-#~ msgstr "s·rga"
+#~ msgstr "s√°rga"
 
 #~ msgid "blue"
-#~ msgstr "kÈk"
+#~ msgstr "k√©k"
 
 #~ msgid "green"
-#~ msgstr "zˆld"
+#~ msgstr "z√∂ld"
 
 #~ msgid "cyan"
-#~ msgstr "ci·n"
+#~ msgstr "ci√°n"
 
 #~ msgid "Busy"
 #~ msgstr "Foglalt"
@@ -4567,16 +4438,16 @@ msgstr ""
 #~ msgstr "Telep"
 
 #~ msgid "Net In"
-#~ msgstr "H·lÛ be"
+#~ msgstr "H√°l√≥ be"
 
 #~ msgid "Net Out"
-#~ msgstr "H·lÛ ki"
+#~ msgstr "H√°l√≥ ki"
 
 #~ msgid "ppp"
 #~ msgstr "ppp"
 
 #~ msgid "Hide calendar"
-#~ msgstr "Napt·r elrejtÈse"
+#~ msgstr "Napt√°r elrejt√©se"
 
 #~ msgid ""
 #~ "Linux Native (ext2)\n"
@@ -4606,55 +4477,55 @@ msgstr ""
 #~ msgstr "GNOME Notesz"
 
 #~ msgid "User Listing"
-#~ msgstr "Felhaszn·lÛ-list·z·s"
+#~ msgstr "Felhaszn√°l√≥-list√°z√°s"
 
 #~ msgid "Technical information about this computer"
-#~ msgstr "A rendszereddel kapcsolatban kaphatsz inform·ciÛt"
+#~ msgstr "A rendszereddel kapcsolatban kaphatsz inform√°ci√≥t"
 
 #~ msgid "Shut Down or Reboot"
-#~ msgstr "Kikapcsol vagy ˙jraindÌt"
+#~ msgstr "Kikapcsol vagy √∫jraind√≠t"
 
 #~ msgid "Turn off or reset the computer"
-#~ msgstr "Alkalmaz·s a gÈped lelˆvÈsÈhez"
+#~ msgstr "Alkalmaz√°s a g√©ped lel√∂v√©s√©hez"
 
 #~ msgid "Run A Command..."
-#~ msgstr "Program futtat·sa..."
+#~ msgstr "Program futtat√°sa..."
 
 #~ msgid "Ask for a command to execute"
-#~ msgstr "Program futtat·sa"
+#~ msgstr "Program futtat√°sa"
 
 #~ msgid "GNOME Penguin"
 #~ msgstr "GNOME Pingvin"
 
 #~ msgid "Let a cute pinguin chase your pointer"
-#~ msgstr "Egy egeredet kergetı pingvin"
+#~ msgstr "Egy egeredet kerget≈ë pingvin"
 
 #~ msgid "Run program..."
-#~ msgstr "Program futtat·sa..."
+#~ msgstr "Program futtat√°sa..."
 
 #~ msgid "Prompts the user for a program to run"
-#~ msgstr "Program futtat·sa"
+#~ msgstr "Program futtat√°sa"
 
 #~ msgid "Page files as with `more' and `less'"
-#~ msgstr "A less nev˚ program GNOME-os v·ltozata"
+#~ msgstr "A less nev≈± program GNOME-os v√°ltozata"
 
 #~ msgid "Select a font for pasting"
-#~ msgstr "GNOME segÈdprogram egy bet˚kÈszlet kiv·laszt·s·hoz"
+#~ msgstr "GNOME seg√©dprogram egy bet≈±k√©szlet kiv√°laszt√°s√°hoz"
 
 #~ msgid "Color Browser"
-#~ msgstr "GNOME SzÌnv·lasztÛ"
+#~ msgstr "GNOME Sz√≠nv√°laszt√≥"
 
 #~ msgid "Browse available X11 colors."
-#~ msgstr "GNOME segÈdprogram egy szÌn kiv·laszt·s·hoz"
+#~ msgstr "GNOME seg√©dprogram egy sz√≠n kiv√°laszt√°s√°hoz"
 
 #~ msgid "Time tracking tool"
-#~ msgstr "ProjektidızÌtı"
+#~ msgstr "Projektid≈ëz√≠t≈ë"
 
 #~ msgid "Time Tracker tool"
-#~ msgstr "Gnome projektidızÌtı/idımÈrı"
+#~ msgstr "Gnome projektid≈ëz√≠t≈ë/id≈ëm√©r≈ë"
 
 #~ msgid "Personal cron manager"
-#~ msgstr "Crontab-szerkesztı"
+#~ msgstr "Crontab-szerkeszt≈ë"
 
 #~ msgid "Personal crontab manager"
-#~ msgstr "Az egyÈni crontab-ot szerkesztheted vele kˆnnyen"
+#~ msgstr "Az egy√©ni crontab-ot szerkesztheted vele k√∂nnyen"
