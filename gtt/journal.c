@@ -142,7 +142,8 @@ static void
 interval_delete_clicked_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-	printf ("duude delete interval\n");
+	gtt_interval_destroy (wig->interval);
+	wig->interval = NULL;
 	gtt_phtml_display (&(wig->ph), "journal.phtml");
 }
 
@@ -150,7 +151,8 @@ static void
 interval_merge_up_clicked_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-	printf ("duude merge up interval\n");
+	gtt_interval_merge_up (wig->interval);
+	wig->interval = NULL;
 	gtt_phtml_display (&(wig->ph), "journal.phtml");
 }
 
@@ -158,7 +160,8 @@ static void
 interval_merge_down_clicked_cb(GtkWidget * w, gpointer data) 
 {
 	Wiggy *wig = (Wiggy *) data;
-	printf ("duude merge down interval\n");
+	gtt_interval_merge_down (wig->interval);
+	wig->interval = NULL;
 	gtt_phtml_display (&(wig->ph), "journal.phtml");
 }
 
@@ -167,6 +170,15 @@ interval_popup_cb (Wiggy *wig)
 {
 	gtk_menu_popup(GTK_MENU(wig->interval_popup), 
 		NULL, NULL, NULL, wig, 1, 0);
+}
+
+/* ============================================================== */
+/* memo edits */
+
+void
+memo_edit_cb (Wiggy *wig)
+{
+	printf ("duude edit the memo !!! \n");
 }
 
 /* ============================================================== */
@@ -194,7 +206,7 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 	else
 	if (0 == strncmp (url, "gtt:memo", 8))
 	{
-		// interval_popup_cb (wig);
+		memo_edit_cb (wig);
 	}
 	else
 	{
@@ -289,10 +301,10 @@ edit_journal(GtkWidget *widget, gpointer data)
 	glade_xml_signal_connect_data (glxml, "on_delete_activate",
 	        GTK_SIGNAL_FUNC (interval_delete_clicked_cb), wig);
 	  
-	glade_xml_signal_connect_data (glxml, "on_merg_up_activate",
+	glade_xml_signal_connect_data (glxml, "on_merge_up_activate",
 	        GTK_SIGNAL_FUNC (interval_merge_up_clicked_cb), wig);
 	  
-	glade_xml_signal_connect_data (glxml, "on_merg_down_activate",
+	glade_xml_signal_connect_data (glxml, "on_merge_down_activate",
 	        GTK_SIGNAL_FUNC (interval_merge_down_clicked_cb), wig);
 	  
 
