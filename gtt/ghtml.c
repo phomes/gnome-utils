@@ -87,7 +87,7 @@ do_show_journal (GttGhtml *ghtml, GttProject*prj)
 {
 	GList *node;
 	char *p;
-	char prn[2000];
+	char prn[62000];  /* XXX stack smashing overflow */
 
 	p = prn;
 	p += sprintf (p, "<table border=1><tr><th colspan=4>%s\n"
@@ -197,7 +197,7 @@ do_show_table (GttGhtml *ghtml, GttProject *prj, int show_links, int invoice)
 	int i;
 	GList *node;
 	char *p;
-	char buff[2000];
+	char buff[62000];   /* XXX stack smashing bug */
 
 	p = buff;
 	p = stpcpy (p, "<table border=1>");

@@ -1,3 +1,10 @@
+Sat Dec 21 17:37:26 CST 2002 Linas Vepstas <linas@linas.org>
+
+	* ghtml.c: Printing bugfix for Solaris, as per Derek Atkins
+	  <warlord@mit.edu>
+	* ghtml.c: buffer overflow pseudofix (ppossible cause of core dump??)
+	* journal.c: avoid hang due to memory management conflict
+		  
 2002-06-16  Pablo Saratxaga  <pablo@mandrakesoft.com>
 
 	* glade/journal.glade: added handling of signal "destroy"
