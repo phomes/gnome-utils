@@ -150,13 +150,14 @@ interval_edit_apply_cb(GtkWidget * w, gpointer data)
 	gtt_interval_set_start (wig->interval, start);
 	gtt_interval_set_stop (wig->interval, stop);
 
-/* hack alert XXX fixme need to recalce caches */
+// gtt_project_compute_secs
+/* hack alert XXX fixme need to recalulate caches */
 	menu = gtk_option_menu_get_menu (GTK_OPTION_MENU(wig->fuzz_widget));
 	menu_item = gtk_menu_get_active(GTK_MENU(menu));
 	fuzz = GPOINTER_TO_INT(gtk_object_get_data(GTK_OBJECT(menu_item),
                                              "fuzz_factor"));
 
-printf ("duude apply fuuzz %d\n", fuzz);
+	gtt_interval_set_fuzz ((wig->interval, fuzz);
 }
 
 static void
