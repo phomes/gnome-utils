@@ -47,6 +47,14 @@ int config_show_title_day = 1;
 int config_show_title_current = 0;
 int config_show_title_desc = 1;
 int config_show_title_task = 1;
+int config_show_title_estimated_start = 0;
+int config_show_title_estimated_end = 0;
+int config_show_title_due_date = 0;
+int config_show_title_sizing = 0;
+int config_show_title_percent_complete = 0;
+int config_show_title_urgency = 1;
+int config_show_title_importance = 1;
+int config_show_title_status = 0;
 
 int config_show_tb_icons = 1;
 int config_show_tb_texts = 1;
