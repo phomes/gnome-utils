@@ -25,6 +25,7 @@
 #include "gtt.h"
 #include "journal.h"
 #include "menucmd.h"
+#include "myoaf.h"
 #include "prefs.h"
 #include "timer.h"
 #include "toolbar.h"
@@ -42,6 +43,7 @@ struct _MyToolbar {
         GtkWidget *prop_w;
 	GtkWidget *timer_w;
 	GnomeStock *timer;
+	GtkWidget *calendar_w;
 };
 
 MyToolbar *mytbar = NULL;
@@ -204,8 +206,16 @@ build_toolbar(void)
 				  GNOME_STOCK_PIXMAP_TIMER,
 				  (GtkSignalFunc)menu_toggle_timer,
 				  &(mytbar->timer_w));
+        if (config_show_tb_calendar) {
+                mytbar->calendar_w = add_stock_button(mytbar->tbar, 
+                                 _("Calendar"),
+                                 _("View Calendar"),
+				 GNOME_STOCK_PIXMAP_TEXT_BULLETED_LIST,
+                                 (GtkSignalFunc)edit_calendar);
+        }
         if (((config_show_tb_timer)    || 
 	     (config_show_tb_journal)  ||    
+	     (config_show_tb_calendar)  ||    
 	     (config_show_tb_prop)     ) &&
             ((config_show_tb_pref) || 
 	     (config_show_tb_help) ||
