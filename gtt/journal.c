@@ -110,6 +110,16 @@ wiggy_error (GttPhtml *pl, int err, const char * msg)
 }
 
 /* ============================================================== */
+/* engine callbacks */
+
+static void 
+redraw (GttProject * prj, gpointer data)
+{
+	Wiggy *wig = (Wiggy *) data;
+	gtt_phtml_display (&(wig->ph), "journal.phtml", wig->prj);
+}
+
+/* ============================================================== */
 
 static void 
 on_print_clicked_cb (GtkWidget *w, gpointer data)
@@ -134,6 +144,7 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 	Wiggy *wig = (Wiggy *) data;
 
 	/* close the main journal window ... everything */
+	gtt_project_remove_notifier (wig->prj, redraw, wig);
 	edit_interval_dialog_destroy (wig->edit_ivl);
 	gtk_widget_destroy (wig->top);
 	g_free (wig);
@@ -184,16 +195,6 @@ interval_popup_cb (Wiggy *wig)
 {
 	gtk_menu_popup(GTK_MENU(wig->interval_popup), 
 		NULL, NULL, NULL, wig, 1, 0);
-}
-
-/* ============================================================== */
-/* engine callbacks */
-
-static void 
-redraw (GttProject * prj, gpointer data)
-{
-	Wiggy *wig = (Wiggy *) data;
-	gtt_phtml_display (&(wig->ph), "journal.phtml", wig->prj);
 }
 
 /* ============================================================== */

@@ -852,6 +852,28 @@ gtt_project_add_notifier (GttProject *prj,
 }
 
 void
+gtt_project_remove_notifier (GttProject *prj, 
+                          GttProjectChanged cb, 
+                          gpointer user_stuff)
+{
+	Notifier * ntf;
+	GList *node;
+
+	if (!prj || !cb) return;
+
+	for (node = prj->listeners; node; node=node->next)
+	{
+		ntf = node->data;
+		if ((ntf->func == cb) && (ntf->user_data == user_stuff)) break;
+	}
+
+	if (node)
+	{
+		prj->listeners = g_list_remove (prj->listeners, ntf);
+	}
+}
+
+void
 gtt_project_freeze (GttProject *prj)
 {
 	if (!prj) return;
