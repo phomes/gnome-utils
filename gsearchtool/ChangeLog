@@ -1,3 +1,14 @@
+2004-12-01  Dennis Cranston <dennis_cranston@yahoo.com>
+
+	Backport trivial bug fixes from CVS HEAD:
+
+	* gsearchtool-support.c (open_file_with_application):
+	Do not open folders with default application.  Fixes bug 
+	#160106.
+	
+	* gsearchtool.c (create_additional_constraint_section):
+	Use GTK_SIZE_GROUP_BOTH.  Works around bug #159367.
+	
 2004-10-15  Dennis Cranston <dennis_cranston at yahoo com>
 
 	* gsearchtool-support.c: (compare_regex): Fix a potential

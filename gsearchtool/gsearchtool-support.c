@@ -797,25 +797,27 @@ open_file_with_application (const gchar *filename)
 	const char *mimeType = gnome_vfs_get_file_mime_type (filename, NULL, FALSE);	
 	GnomeVFSMimeApplication *mimeApp = gnome_vfs_mime_get_default_application (mimeType);
 		
-	if (mimeApp) {
-		gint  argc;
-		gchar **argv;
-		gchar *command_line;
+	if (!g_file_test (filename, G_FILE_TEST_IS_DIR)) {
+		if (mimeApp) {
+			gint  argc;
+			gchar **argv;
+			gchar *command_line;
 		
-		command_line = g_strdup_printf("%s '%s'", mimeApp->command, 
-			escape_single_quotes (filename));
+			command_line = g_strdup_printf("%s '%s'", mimeApp->command, 
+				escape_single_quotes (filename));
 		
-		g_shell_parse_argv (command_line, &argc, &argv, NULL); 
+			g_shell_parse_argv (command_line, &argc, &argv, NULL); 
 			
-		if (mimeApp->requires_terminal) {
-			gnome_prepend_terminal_to_vector(&argc, &argv);	
-		}
+			if (mimeApp->requires_terminal) {
+				gnome_prepend_terminal_to_vector(&argc, &argv);	
+			}
 		
-		gnome_execute_async(NULL, argc, argv);	
-		gnome_vfs_mime_application_free(mimeApp);
-		g_free (command_line);	
-		g_strfreev (argv);
-		return TRUE;
+			gnome_execute_async(NULL, argc, argv);	
+			gnome_vfs_mime_application_free(mimeApp);
+			g_free (command_line);	
+			g_strfreev (argv);
+			return TRUE;
+		}
 	}
 	return FALSE;
 }
