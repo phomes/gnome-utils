@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-11-30 16:14-0600\n"
-"PO-Revision-Date: 2001-11-25 03:13+0000\n"
+"POT-Creation-Date: 2001-12-02 22:48+0000\n"
+"PO-Revision-Date: 2001-12-02 22:49+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <none@none.org>\n"
 "MIME-Version: 1.0\n"
@@ -1169,24 +1169,24 @@ msgstr "Erro - Desconhecido"
 msgid "unknown token: >>>>"
 msgstr "dado desconhecido: >>>>"
 
-#: gtt/journal.c:108
+#: gtt/journal.c:107
 msgid "Error 404 Not Found"
 msgstr "Erro 404 Não Encontrado"
 
-#: gtt/journal.c:110
+#: gtt/journal.c:109
 #, c-format
 msgid "The file %s was not found."
 msgstr "O ficheiro %s não foi encontrado."
 
-#: gtt/journal.c:111
+#: gtt/journal.c:110
 msgid "(null)"
 msgstr "(nulo)"
 
-#: gtt/journal.c:120
+#: gtt/journal.c:119
 msgid "Unkown Error"
 msgstr "Erro Desconhecido"
 
-#: gtt/journal.c:169 gtt/plug-in.c:90
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1195,12 +1195,12 @@ msgstr ""
 "Incapaz de abrir o ficheiro %s\n"
 "%s"
 
-#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/journal.c:259 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
 msgid "New Diary Entry"
 msgstr "Nova Entrada de Diário"
 
-#: gtt/journal.c:436
+#: gtt/journal.c:447
 msgid "Save HTML To File"
 msgstr "Gravar HTML para Ficheiro"
 
@@ -1576,50 +1576,58 @@ msgid "Start Fuzz"
 msgstr "Imprecisão de Início"
 
 #: gtt/glade/interval_popup.glade.h:1
+msgid "Add a new time interval."
+msgstr "Adicionar um novo intrevalo de tempo."
+
+#: gtt/glade/interval_popup.glade.h:2
 msgid "Delete Interval"
 msgstr "Remover Intrevalo"
 
-#: gtt/glade/interval_popup.glade.h:2
+#: gtt/glade/interval_popup.glade.h:3
 msgid "Delete This Interval"
 msgstr "Remover Este Intrevalo"
 
-#: gtt/glade/interval_popup.glade.h:3
+#: gtt/glade/interval_popup.glade.h:4
 msgid "Edit Interval"
 msgstr "Editar Intrevalo"
 
-#: gtt/glade/interval_popup.glade.h:4
+#: gtt/glade/interval_popup.glade.h:5
 msgid "Edit the Start & Stop Times"
 msgstr "Editar as Horas de Início & Fim"
 
-#: gtt/glade/interval_popup.glade.h:5
+#: gtt/glade/interval_popup.glade.h:6
 msgid "Insert Diary Entry"
 msgstr "_Inserir Entrada de Diário"
 
-#: gtt/glade/interval_popup.glade.h:6
+#: gtt/glade/interval_popup.glade.h:7
 msgid "Insert a new diary entry above this time interval."
 msgstr "Inserir uma nova entrada de diário sobre este intrevalo de tempo."
 
-#: gtt/glade/interval_popup.glade.h:7
+#: gtt/glade/interval_popup.glade.h:8
 msgid "Merge Down"
 msgstr "Juntar Abaixo"
 
-#: gtt/glade/interval_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:9
 msgid "Merge Into Interval Above"
 msgstr "Juntar com o Intrevalo Acima"
 
-#: gtt/glade/interval_popup.glade.h:9
+#: gtt/glade/interval_popup.glade.h:10
 msgid "Merge Into Interval Below"
 msgstr "Juntar com o Intrevalo Abaixo"
 
-#: gtt/glade/interval_popup.glade.h:10
+#: gtt/glade/interval_popup.glade.h:11
 msgid "Merge Up"
 msgstr "Juntar Acima"
 
-#: gtt/glade/interval_popup.glade.h:11
+#: gtt/glade/interval_popup.glade.h:12
+msgid "New Interval"
+msgstr "Novo Intrevalo"
+
+#: gtt/glade/interval_popup.glade.h:13
 msgid "Paste Diary Entry"
 msgstr "Colar Entrada de Diário"
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:14 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
 msgstr "Colar uma entrada de diário previamente cortada."
 
@@ -2112,13 +2120,12 @@ msgid "seconds"
 msgstr "segundos"
 
 #: gtt/glade/task_popup.glade.h:1
-#, fuzzy
 msgid "Add a new time interval"
-msgstr "Adiciona uma nova vista do documento"
+msgstr "Adicionar um novo intrevalo de tempo"
 
 #: gtt/glade/task_popup.glade.h:2
-msgid "Delete _Times"
-msgstr "Apagar _Horas"
+msgid "Cut Entry & _Times"
+msgstr "Cortar Entrada & _Tempos"
 
 #: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
@@ -2137,13 +2144,12 @@ msgid "Insert a new diary entry above this one."
 msgstr "Inserir uma nova entrada de diário acima desta."
 
 #: gtt/glade/task_popup.glade.h:7
-#, fuzzy
 msgid "New Time Interval"
-msgstr "Remover Este Intrevalo"
+msgstr "Novo Intrevalo de Tempo"
 
 #: gtt/glade/task_popup.glade.h:9
-msgid "_Delete Diary Entry"
-msgstr "Apagar Entrada de _Diário"
+msgid "_Cut Diary Entry"
+msgstr "_Cortar Entrada de Diário"
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
@@ -4934,6 +4940,12 @@ msgstr "Gestor pessoal do cron"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Gestor pessoal do crontab"
+
+#~ msgid "Delete _Times"
+#~ msgstr "Apagar _Horas"
+
+#~ msgid "_Delete Diary Entry"
+#~ msgstr "Apagar Entrada de _Diário"
 
 #~ msgid "This Memo"
 #~ msgstr "Esta Nota"
