@@ -1,4 +1,12 @@
 
+/* NOTE: hack alert XXX FIXME  this code is junk, some attempted
+   fun and games to conect to the evolution calendear server.
+   it didn't wrk the way its supposed to. It shuld probably be
+   eliminated. 
+*/
+
+
+
 
 #include <gtk/gtk.h>
 #include <liboaf/liboaf.h>
