@@ -1,16 +1,16 @@
 # Swedish messages for gnome-utils.
-# Copyright (C) 2000, 2001, 2002 Free Software Foundation, Inc.
+# Copyright (C) 2000, 2001, 2002, 2003 Free Software Foundation, Inc.
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Andreas Hyden <a.hyden@cyberpoint.se>.
-# Christian Rose <menthos@menthos.com>, 2001, 2002.
+# Christian Rose <menthos@menthos.com>, 2001, 2002, 2003.
 #
 # $Id$
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-01-31 03:20+0100\n"
-"PO-Revision-Date: 2002-01-31 03:20+0100\n"
+"POT-Creation-Date: 2003-01-06 12:17+0100\n"
+"PO-Revision-Date: 2003-01-06 12:17+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -278,7 +278,7 @@ msgid "Exit"
 msgstr "Avsluta"
 
 #: gcharmap/src/interface.c:239 gcharmap/src/menus.c:104
-#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:181
+#: gdictsrc/gdict-app.c:518 gtt/toolbar.c:181
 msgid "Copy"
 msgstr "Kopiera"
 
@@ -360,7 +360,7 @@ msgstr "Ange om knapparna ska vara fokuserbara"
 msgid "Insert character(s) by choosing character codes"
 msgstr "Infoga tecken genom att välja teckenkoder"
 
-#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:177
+#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:515 gtt/toolbar.c:177
 msgid "Cut"
 msgstr "Klipp ut"
 
@@ -372,7 +372,7 @@ msgstr "Klipp ut markeringen"
 msgid "Copy the selection"
 msgstr "Kopiera markeringen"
 
-#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
+#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:521 gtt/toolbar.c:185
 msgid "Paste"
 msgstr "Klistra in"
 
@@ -404,7 +404,7 @@ msgstr ""
 #. * label; FIXME: Memory leak
 #.
 #: gdictsrc/dict.c:637 gdictsrc/gdict-pref-dialog.c:502
-#: gdictsrc/gdict-pref-dialog.c:546 gdictsrc/gdict-speller.c:393
+#: gdictsrc/gdict-pref-dialog.c:546 gdictsrc/gdict-speller.c:392
 msgid "Cannot connect to server"
 msgstr "Kan inte ansluta till server"
 
@@ -416,35 +416,35 @@ msgstr ""
 "Klient för MIT-ordboksserver.\n"
 "Webb: http://gdict.dhs.org/, http://www.psilord.com/code/"
 
-#: gdictsrc/gdict-app.c:117
+#: gdictsrc/gdict-app.c:116
 msgid "Spell-checking..."
 msgstr "Kontrollerar stavning..."
 
-#: gdictsrc/gdict-app.c:125
+#: gdictsrc/gdict-app.c:124
 msgid "Spell check done"
 msgstr "Stavningskontroll klar"
 
-#: gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
+#: gdictsrc/gdict-app.c:132 gdictsrc/gdict-app.c:265
 msgid "No matches found"
 msgstr "Inga sökträffar"
 
-#: gdictsrc/gdict-app.c:250
+#: gdictsrc/gdict-app.c:249
 msgid "Looking up word..."
 msgstr "Slår upp ord..."
 
-#: gdictsrc/gdict-app.c:258
+#: gdictsrc/gdict-app.c:257
 msgid "Lookup done"
 msgstr "Uppslagning klar"
 
-#: gdictsrc/gdict-app.c:278
+#: gdictsrc/gdict-app.c:277
 msgid "String not found"
 msgstr "Hittade inte strängen"
 
-#: gdictsrc/gdict-app.c:381
+#: gdictsrc/gdict-app.c:380
 msgid "Find:"
 msgstr "Sök:"
 
-#: gdictsrc/gdict-app.c:413
+#: gdictsrc/gdict-app.c:412
 msgid ""
 "Unable to perform requested operation, either because the server\n"
 "you are using is down or because you are not connected to the\n"
@@ -456,44 +456,44 @@ msgstr ""
 "Internet. Om du inte redan är uppkopplad mot Internet, koppla\n"
 "upp och förök igen."
 
-#: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
+#: gdictsrc/gdict-app.c:451 gdictsrc/gdict-app.c:508
 #: gdictsrc/gdict-applet.c:313
 msgid "Look up"
 msgstr "Slå upp"
 
-#: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
+#: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 msgid "Look up word in dictionary"
 msgstr "Slå upp ord i ordboken"
 
-#: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
+#: gdictsrc/gdict-app.c:454 gdictsrc/gdict-app.c:511
 msgid "Spell"
 msgstr "Stava"
 
-#: gdictsrc/gdict-app.c:456 gdictsrc/gdict-app.c:513
+#: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
 msgid "Check word spelling"
 msgstr "Kontrollera stavning"
 
-#: gdictsrc/gdict-app.c:517
+#: gdictsrc/gdict-app.c:516
 msgid "Cut to Clipboard"
 msgstr "Klipp ut till urklipp"
 
-#: gdictsrc/gdict-app.c:520
+#: gdictsrc/gdict-app.c:519
 msgid "Copy to Clipboard"
 msgstr "Kopiera till urklipp"
 
-#: gdictsrc/gdict-app.c:523
+#: gdictsrc/gdict-app.c:522
 msgid "Paste Clipboard Contents"
 msgstr "Klistra in innehållet i urklipp"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:525
 msgid "Settings"
 msgstr "Inställningar"
 
-#: gdictsrc/gdict-app.c:527
+#: gdictsrc/gdict-app.c:526
 msgid "Server to use, default search strategy, fonts"
 msgstr "Servern som ska användas, sökstrategi, typsnitt"
 
-#: gdictsrc/gdict-app.c:588
+#: gdictsrc/gdict-app.c:587
 msgid "Word definition"
 msgstr "Orddefinition"
 
@@ -517,7 +517,7 @@ msgstr "Stavningskontroll..."
 msgid "Cannot create applet!\n"
 msgstr "Kan inte skapa panelprogram!\n"
 
-#: gdictsrc/gdict-defbox.c:524 gdictsrc/gdict-speller.c:417
+#: gdictsrc/gdict-defbox.c:520 gdictsrc/gdict-speller.c:416
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "Fel vid körning av frågan: %s"
@@ -612,23 +612,23 @@ msgstr "Sök i alla databaser"
 msgid "The server you specified could not be found."
 msgstr "Servern som du angav kunde inte hittas."
 
-#: gdictsrc/gdict-speller.c:118
+#: gdictsrc/gdict-speller.c:117
 msgid "Word:"
 msgstr "Ord:"
 
-#: gdictsrc/gdict-speller.c:127
+#: gdictsrc/gdict-speller.c:126
 msgid "Search Strategy:"
 msgstr "Sökstategi:"
 
-#: gdictsrc/gdict-speller.c:150
+#: gdictsrc/gdict-speller.c:149
 msgid "Find Words..."
 msgstr "Sök ord..."
 
-#: gdictsrc/gdict-speller.c:151
+#: gdictsrc/gdict-speller.c:150
 msgid "Look up Word..."
 msgstr "Slå upp ord..."
 
-#: gdictsrc/gdict-speller.c:163
+#: gdictsrc/gdict-speller.c:162
 msgid "Spell checker"
 msgstr "Stavningskontroll"
 
@@ -1054,7 +1054,7 @@ msgstr "Inte påbörjad"
 msgid "In Progress"
 msgstr "Pågår"
 
-#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:37
 msgid "On Hold"
 msgstr "Vilande"
 
@@ -1496,7 +1496,7 @@ msgstr "Gammal GTT-uppgift"
 msgid "empty"
 msgstr "tom"
 
-#: gtt/timer.c:117
+#: gtt/timer.c:127
 #, c-format
 msgid ""
 "The keyboard and mouse have been idle\n"
@@ -1510,7 +1510,7 @@ msgstr ""
 "(%s - %s) har stoppats.\n"
 "Vill du starta om det?"
 
-#: gtt/timer.c:125
+#: gtt/timer.c:135
 msgid "System Idle"
 msgstr "Systemet oanvänt"
 
@@ -1527,7 +1527,7 @@ msgstr "Skapa ett nytt projekt..."
 msgid "Reload"
 msgstr "Läs om"
 
-#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
+#: gtt/toolbar.c:170 gtt/glade/journal.glade.h:7 stripchart/params.c:939
 msgid "Save"
 msgstr "Spara"
 
@@ -1547,7 +1547,7 @@ msgstr "Kopiera markerat projekt"
 msgid "Paste Project"
 msgstr "Klistra in projekt"
 
-#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
+#: gtt/toolbar.c:193 gtt/glade/journal.glade.h:2
 msgid "Journal"
 msgstr "Dagbok"
 
@@ -2110,79 +2110,90 @@ msgid "Not Set"
 msgstr "Inte angiven"
 
 #: gtt/glade/project_properties.glade.h:30
-#: gtt/glade/task_properties.glade.h:18
-msgid "Notes:"
-msgstr "Anteckningar:"
+msgid ""
+"Notes:\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+msgstr ""
+"Anteckningar:\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
-#: gtt/glade/project_properties.glade.h:32
+#: gtt/glade/project_properties.glade.h:38
 msgid "Overtime Rate:"
 msgstr "Övertidsavgift:"
 
-#: gtt/glade/project_properties.glade.h:33
+#: gtt/glade/project_properties.glade.h:39
 msgid "Planned Finish:"
 msgstr "Planerat slut:"
 
-#: gtt/glade/project_properties.glade.h:34
+#: gtt/glade/project_properties.glade.h:40
 msgid "Planned Start:"
 msgstr "Planerad start:"
 
-#: gtt/glade/project_properties.glade.h:35
+#: gtt/glade/project_properties.glade.h:41
 msgid "Planning"
 msgstr "Planering"
 
-#: gtt/glade/project_properties.glade.h:36
+#: gtt/glade/project_properties.glade.h:42
 msgid "Project"
 msgstr "Projekt"
 
-#: gtt/glade/project_properties.glade.h:37
+#: gtt/glade/project_properties.glade.h:43
 msgid "Project Description:"
 msgstr "Projektbeskrivning:"
 
-#: gtt/glade/project_properties.glade.h:38
+#: gtt/glade/project_properties.glade.h:44
 msgid "Project Title:"
 msgstr "Projekttitel:"
 
-#: gtt/glade/project_properties.glade.h:39
+#: gtt/glade/project_properties.glade.h:45
 msgid "Rates"
 msgstr "Avgifter"
 
-#: gtt/glade/project_properties.glade.h:40
+#: gtt/glade/project_properties.glade.h:46
 msgid "Regular Rate:"
 msgstr "Vanlig avgift:"
 
-#: gtt/glade/project_properties.glade.h:41
+#: gtt/glade/project_properties.glade.h:47
 msgid "Status:"
 msgstr "Status:"
 
-#: gtt/glade/project_properties.glade.h:42
+#: gtt/glade/project_properties.glade.h:48
 msgid "The dollars per hour charged for overtime work on this project."
 msgstr "Kronor per timme som tas för övertidsarbete på detta projekt."
 
-#: gtt/glade/project_properties.glade.h:43
+#: gtt/glade/project_properties.glade.h:49
 msgid "The dollars per hour normally charged for this project."
 msgstr "Kronor per timme som normalt tas för detta projekt."
 
-#: gtt/glade/project_properties.glade.h:44
+#: gtt/glade/project_properties.glade.h:50
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
 msgstr "Övertidsavgiften (övertid på söndagar osv)"
 
-#: gtt/glade/project_properties.glade.h:45
+#: gtt/glade/project_properties.glade.h:51
 msgid "Time below which an interval is merged with its neighbors"
 msgstr "Tid under vilken ett intervall slås samman med dess grannar"
 
-#: gtt/glade/project_properties.glade.h:46
+#: gtt/glade/project_properties.glade.h:52
 msgid "Urgency:"
 msgstr "Angelägenhet"
 
-#: gtt/glade/project_properties.glade.h:47
+#: gtt/glade/project_properties.glade.h:53
 msgid "What is the status of this project?"
 msgstr "Vad är statusen på detta projekt?"
 
-#: gtt/glade/project_properties.glade.h:48
+#: gtt/glade/project_properties.glade.h:54
 msgid "a short description that will be printed on the invoice."
 msgstr "en kort beskrivning som kommer att skrivas ut på räkningen."
 
-#: gtt/glade/project_properties.glade.h:49
+#: gtt/glade/project_properties.glade.h:55
 msgid "seconds"
 msgstr "sekunder"
 
@@ -2289,6 +2300,10 @@ msgstr ""
 "inte än, kräver granskning. \"Räkning\" betyder skriv detta på nästa "
 "räkning. \"Betalat\" betyder att detta inte längre ska inkluderas på "
 "räkningar."
+
+#: gtt/glade/task_properties.glade.h:18
+msgid "Notes:"
+msgstr "Anteckningar:"
 
 #: gtt/glade/task_properties.glade.h:19
 msgid "OverOver"
@@ -3698,8 +3713,8 @@ msgstr "Gör så att guname blir ett kontrollcenterprogram"
 msgid "an initialization error occurred while starting 'guname-capplet'."
 msgstr "ett initieringsfel uppstod vid start av \"guname-capplet\"."
 
-#: mini-utils/guname/guname-capplet.desktop.in.h:2
 #: mini-utils/guname/guname.c:446
+#: mini-utils/guname/guname-capplet.desktop.in.h:2
 msgid "System Information"
 msgstr "Systeminformation"
 
@@ -4320,27 +4335,27 @@ msgstr ""
 msgid "ECould not determine current format type"
 msgstr "EKunde inte bestämma aktuell formateringstyp"
 
-#: gfloppy/src/gfloppy-i18n.h:9 gfloppy/src/gfloppy.glade.h:1
+#: gfloppy/src/gfloppy.glade.h:1 gfloppy/src/gfloppy-i18n.h:9
 msgid "Dos (FAT)"
 msgstr "Dos (FAT)"
 
-#: gfloppy/src/gfloppy-i18n.h:15 gfloppy/src/gfloppy.glade.h:2
+#: gfloppy/src/gfloppy.glade.h:2 gfloppy/src/gfloppy-i18n.h:15
 msgid "Double Density 3.5\" (720 KB)"
 msgstr "Dubbel densitet 3,5\" (720 kB)"
 
-#: gfloppy/src/gfloppy-i18n.h:16 gfloppy/src/gfloppy.glade.h:3
+#: gfloppy/src/gfloppy.glade.h:3 gfloppy/src/gfloppy-i18n.h:16
 msgid "Double Density 5.25\" (360 KB)"
 msgstr "Dubbel densitet 5,25\" (360 kB)"
 
-#: gfloppy/src/gfloppy-i18n.h:12 gfloppy/src/gfloppy.glade.h:4
+#: gfloppy/src/gfloppy.glade.h:4 gfloppy/src/gfloppy-i18n.h:12
 msgid "File system type:"
 msgstr "Filsystemstyp:"
 
-#: gfloppy/src/gfloppy-i18n.h:11 gfloppy/src/gfloppy.glade.h:5
+#: gfloppy/src/gfloppy.glade.h:5 gfloppy/src/gfloppy-i18n.h:11
 msgid "Floppy Density:"
 msgstr "Diskettdensitet:"
 
-#: gfloppy/src/gfloppy-i18n.h:18 gfloppy/src/gfloppy.glade.h:6
+#: gfloppy/src/gfloppy.glade.h:6 gfloppy/src/gfloppy-i18n.h:18
 msgid "Floppy Device:"
 msgstr "Diskettenhet:"
 
@@ -4349,24 +4364,24 @@ msgstr "Diskettenhet:"
 #. * Add this file to your project's POTFILES.in.
 #. * DO NOT compile it as part of your application.
 #.
-#: gfloppy/src/gfloppy-i18n.h:7 gfloppy/src/gfloppy.glade.h:7
+#: gfloppy/src/gfloppy.glade.h:7 gfloppy/src/gfloppy-i18n.h:7
 msgid "Format a floppy"
 msgstr "Formatera en diskett"
 
-#: gfloppy/src/gfloppy-i18n.h:13 gfloppy/src/gfloppy.glade.h:8
+#: gfloppy/src/gfloppy.glade.h:8 gfloppy/src/gfloppy-i18n.h:13
 msgid "High Density 3.5\" (1.44 MB)"
 msgstr "Hög densitet 3,5\" (1,44 MB)"
 
-#: gfloppy/src/gfloppy-i18n.h:14 gfloppy/src/gfloppy.glade.h:9
+#: gfloppy/src/gfloppy.glade.h:9 gfloppy/src/gfloppy-i18n.h:14
 msgid "High Density 5.25\" (1.2 MB)"
 msgstr "Hög densitet 5,25\" (1,2 MB)"
 
-#: gfloppy/src/gfloppy-i18n.h:8 gfloppy/src/gfloppy-i18n.h:10
-#: gfloppy/src/gfloppy.glade.h:10
+#: gfloppy/src/gfloppy.glade.h:10 gfloppy/src/gfloppy-i18n.h:8
+#: gfloppy/src/gfloppy-i18n.h:10
 msgid "Linux Native (ext2)"
 msgstr "Linuxformat (ext2)"
 
-#: gfloppy/src/gfloppy-i18n.h:17 gfloppy/src/gfloppy.glade.h:11
+#: gfloppy/src/gfloppy.glade.h:11 gfloppy/src/gfloppy-i18n.h:17
 msgid "_Quick format"
 msgstr "_Snabbformatera"
 
@@ -4458,8 +4473,8 @@ msgid "Scale"
 msgstr "Skala"
 
 #: stripchart/chart-app.c:197 stripchart/stripchart-applet.c:69
-#: stripchart/stripchart-applet.desktop.in.h:2 stripchart/stripchart.c:92
-#: stripchart/stripchart.c:97
+#: stripchart/stripchart.c:92 stripchart/stripchart.c:97
+#: stripchart/stripchart-applet.desktop.in.h:2
 msgid "Stripchart"
 msgstr "Stripchart"
 
@@ -4861,7 +4876,7 @@ msgstr "GNOME-klient för ordboksservrar som följer RFC 2229-standarden"
 msgid "Shows a stripchart plot"
 msgstr "Visar en graf"
 
-#: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
+#: stripchart/stripchart.desktop.in.h:1 gstripchart/gstripchart.desktop.in.h:1
 msgid "Stripchart Plotter"
 msgstr "Grafritare"
 
