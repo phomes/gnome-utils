@@ -27,6 +27,23 @@
 #include "proj.h"
 #include "util.h"
 
+typedef enum {
+	NUL=0,
+	START =1,
+	STOP,
+	ELAPSED,
+	BILLABLE,
+	BILLRATE,
+
+} TableCol;
+
+struct gtt_phtml_s
+{
+	void (*open_stream) (GttPhtml *);
+	void (*write_stream) (GttPhtml *, const char *, size_t len);
+	void (*close_stream) (GttPhtml *);
+	void (*error) (GttPhtml *, int errcode, const char * msg);
+};
 
 /* ============================================================== */
 
@@ -239,6 +256,37 @@ gtt_phtml_display (GttPhtml *phtml, const char *filepath,
 
 	(phtml->close_stream) (phtml);
 
+}
+
+/* ============================================================== */
+
+GttPhtml *
+gtt_phtml_new (void)
+{
+	GttPhtml *p;
+
+	p = g_new0 (GttPhtml, 1);
+
+	return p;
+}
+
+void 
+gtt_phtml_destroy (GttPhtml *p)
+{
+	if (!p) return;
+	g_free (p);
+}
+
+void gtt_phtml_set_stream (GttPhtml *p, GttPhtmlOpenStream op, 
+                                        GttPhtmlWriteStream wr,
+                                        GttPhtmlCloseStream cl, 
+                                        GttPhtmlError er)
+{
+	if (!p) return;
+	p->open_stream = op;
+	p->write_stream = wr;
+	p->close_stream = cl;
+	p->error = er;
 }
 
 /* ===================== END OF FILE ==============================  */

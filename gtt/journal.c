@@ -36,7 +36,7 @@
 /* this struct is a random mish-mash of stuff, not well organized */
 
 typedef struct wiggy_s {
-	GttPhtml  ph;     /* must be first elt for cast to work */
+	GttPhtml *ph;    
 	GtkHTML *htmlw;
 	GtkHTMLStream *handle;
 	GtkWidget *top;
@@ -117,7 +117,7 @@ static void
 redraw (GttProject * prj, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
-	gtt_phtml_display (&(wig->ph), "journal.phtml", wig->prj);
+	gtt_phtml_display (wig->ph, "journal.phtml", wig->prj);
 }
 
 /* ============================================================== */
@@ -215,6 +215,7 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 	gtt_project_remove_notifier (wig->prj, redraw, wig);
 	edit_interval_dialog_destroy (wig->edit_ivl);
 	gtk_widget_destroy (wig->top);
+	gtt_phtml_destroy (wig->ph);
 	g_free (wig);
 }
 
@@ -338,10 +339,8 @@ do_show_report (const char * report, GttProject *prj)
 
 	wig->top = jnl_top;
 	wig->htmlw = GTK_HTML(jnl_browser);
-	wig->ph.open_stream = wiggy_open;
-	wig->ph.write_stream = wiggy_write;
-	wig->ph.close_stream = wiggy_close;
-	wig->ph.error = wiggy_error;
+	wig->ph = gtt_phtml_new();
+	gtt_phtml_set_stream (wig->ph, wiggy_open, wiggy_write, wiggy_close, wiggy_error);
 	
 	glade_xml_signal_connect_data (glxml, "on_close_clicked",
 	        GTK_SIGNAL_FUNC (on_close_clicked_cb), wig);
@@ -391,12 +390,12 @@ do_show_report (const char * report, GttProject *prj)
 	wig->prj = prj;
 	if (!prj)
 	{
-		gtt_phtml_display (&(wig->ph), "noproject.phtml", NULL);
+		gtt_phtml_display (wig->ph, "noproject.phtml", NULL);
 	} 
 	else 
 	{
 		gtt_project_add_notifier (prj, redraw, wig);
-		gtt_phtml_display (&(wig->ph), report, prj);
+		gtt_phtml_display (wig->ph, report, prj);
 	}
 }
 
