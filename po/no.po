@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.1\n"
-"POT-Creation-Date: 2002-05-01 14:59+0200\n"
+"POT-Creation-Date: 2002-05-18 10:40+0200\n"
 "PO-Revision-Date: 2002-01-29 23:35+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -1525,7 +1525,7 @@ msgstr "Opprett et nytt prosjekt..."
 msgid "Reload"
 msgstr "Les på nytt"
 
-#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
+#: gtt/toolbar.c:170 gtt/glade/journal.glade.h:7 stripchart/params.c:939
 msgid "Save"
 msgstr "Lagre"
 
@@ -1545,7 +1545,7 @@ msgstr "Kopier valgte prosjekt"
 msgid "Paste Project"
 msgstr "Lim inn valgte prosjekt"
 
-#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
+#: gtt/toolbar.c:193 gtt/glade/journal.glade.h:2
 msgid "Journal"
 msgstr "Journal"
 
@@ -3688,8 +3688,8 @@ msgstr "La guname virke som en kontrollsenter applet"
 msgid "an initialization error occurred while starting 'guname-capplet'."
 msgstr "en initialiseringsfeil oppstod under start av 'guname-capplet'."
 
-#: mini-utils/guname/guname-capplet.desktop.in.h:2
 #: mini-utils/guname/guname.c:446
+#: mini-utils/guname/guname-capplet.desktop.in.h:2
 msgid "System Information"
 msgstr "Systeminformasjon"
 
@@ -4309,27 +4309,27 @@ msgstr ""
 msgid "ECould not determine current format type"
 msgstr "EKunne ikke bestemme nåværende formats type"
 
-#: gfloppy/src/gfloppy-i18n.h:9 gfloppy/src/gfloppy.glade.h:1
+#: gfloppy/src/gfloppy.glade.h:1 gfloppy/src/gfloppy-i18n.h:9
 msgid "Dos (FAT)"
 msgstr "DOS (FAT)"
 
-#: gfloppy/src/gfloppy-i18n.h:15 gfloppy/src/gfloppy.glade.h:2
+#: gfloppy/src/gfloppy.glade.h:2 gfloppy/src/gfloppy-i18n.h:15
 msgid "Double Density 3.5\" (720 KB)"
 msgstr "Dobbel tetthet 3.5\" (720 KB)"
 
-#: gfloppy/src/gfloppy-i18n.h:16 gfloppy/src/gfloppy.glade.h:3
+#: gfloppy/src/gfloppy.glade.h:3 gfloppy/src/gfloppy-i18n.h:16
 msgid "Double Density 5.25\" (360 KB)"
 msgstr "Dobbel tetthet 5.25\" (360 KB)"
 
-#: gfloppy/src/gfloppy-i18n.h:12 gfloppy/src/gfloppy.glade.h:4
+#: gfloppy/src/gfloppy.glade.h:4 gfloppy/src/gfloppy-i18n.h:12
 msgid "File system type:"
 msgstr "Type filsystem:"
 
-#: gfloppy/src/gfloppy-i18n.h:11 gfloppy/src/gfloppy.glade.h:5
+#: gfloppy/src/gfloppy.glade.h:5 gfloppy/src/gfloppy-i18n.h:11
 msgid "Floppy Density:"
 msgstr "Diskettens tetthet:"
 
-#: gfloppy/src/gfloppy-i18n.h:18 gfloppy/src/gfloppy.glade.h:6
+#: gfloppy/src/gfloppy.glade.h:6 gfloppy/src/gfloppy-i18n.h:18
 msgid "Floppy Device:"
 msgstr "Diskettenhet:"
 
@@ -4338,24 +4338,24 @@ msgstr "Diskettenhet:"
 #. * Add this file to your project's POTFILES.in.
 #. * DO NOT compile it as part of your application.
 #.
-#: gfloppy/src/gfloppy-i18n.h:7 gfloppy/src/gfloppy.glade.h:7
+#: gfloppy/src/gfloppy.glade.h:7 gfloppy/src/gfloppy-i18n.h:7
 msgid "Format a floppy"
 msgstr "Formatere en diskett"
 
-#: gfloppy/src/gfloppy-i18n.h:13 gfloppy/src/gfloppy.glade.h:8
+#: gfloppy/src/gfloppy.glade.h:8 gfloppy/src/gfloppy-i18n.h:13
 msgid "High Density 3.5\" (1.44 MB)"
 msgstr "Høy tetthet 3.5\" (1.44 MB)"
 
-#: gfloppy/src/gfloppy-i18n.h:14 gfloppy/src/gfloppy.glade.h:9
+#: gfloppy/src/gfloppy.glade.h:9 gfloppy/src/gfloppy-i18n.h:14
 msgid "High Density 5.25\" (1.2 MB)"
 msgstr "Høy tetthet 5.25\" (1.2 MB)"
 
-#: gfloppy/src/gfloppy-i18n.h:8 gfloppy/src/gfloppy-i18n.h:10
-#: gfloppy/src/gfloppy.glade.h:10
+#: gfloppy/src/gfloppy.glade.h:10 gfloppy/src/gfloppy-i18n.h:8
+#: gfloppy/src/gfloppy-i18n.h:10
 msgid "Linux Native (ext2)"
 msgstr "Linux Native (ext2)"
 
-#: gfloppy/src/gfloppy-i18n.h:17 gfloppy/src/gfloppy.glade.h:11
+#: gfloppy/src/gfloppy.glade.h:11 gfloppy/src/gfloppy-i18n.h:17
 msgid "_Quick format"
 msgstr "H_urtigformatering"
 
@@ -4447,8 +4447,8 @@ msgid "Scale"
 msgstr "Skala"
 
 #: stripchart/chart-app.c:197 stripchart/stripchart-applet.c:69
-#: stripchart/stripchart-applet.desktop.in.h:2 stripchart/stripchart.c:92
-#: stripchart/stripchart.c:97
+#: stripchart/stripchart.c:92 stripchart/stripchart.c:97
+#: stripchart/stripchart-applet.desktop.in.h:2
 msgid "Stripchart"
 msgstr "Stripchart"
 
@@ -4851,7 +4851,7 @@ msgstr "GNOME klient for ordboktjenere som følger RFC 2229 standarden"
 msgid "Shows a stripchart plot"
 msgstr "Viser et stripchart-plott"
 
-#: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
+#: stripchart/stripchart.desktop.in.h:1 gstripchart/gstripchart.desktop.in.h:1
 msgid "Stripchart Plotter"
 msgstr "Plotteverktøy"
 
