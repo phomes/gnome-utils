@@ -32,6 +32,7 @@
 #include "menus.h"
 #include "prefs.h"
 #include "props-proj.h"
+#include "timer.h"
 #include "toolbar.h"
 #include "util.h"
 
@@ -142,11 +143,11 @@ cur_proj_set(GttProject *proj)
 	if (cur_proj == proj) return;
 
 	log_proj(NULL);
-	stop_timer();
+	gtt_project_timer_stop (cur_proj);
 	if (proj) 
 	{
 		cur_proj = proj;
-		start_timer(); 
+		gtt_project_timer_start (proj); 
 		ctree_select (proj);
 	}
 	else
