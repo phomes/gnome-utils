@@ -20,6 +20,7 @@
 #include <config.h>
 #include <gnome.h>
 
+#include "app.h"
 #include "ctree.h"
 #include "cur-proj.h"
 #include "gtt.h"
@@ -456,8 +457,7 @@ ctree_new(void)
 }
 
 
-
-/* setup_ctree_w references no widget globals ... */
+/* ========================================================= */
 
 static void
 setup_ctree_w (GtkWidget *top_win, GtkCTree *tree_w)
@@ -475,7 +475,7 @@ setup_ctree_w (GtkWidget *top_win, GtkCTree *tree_w)
 		for (node = prjlist; node; node = node->next) 
 		{
 			GttProject *prj = node->data;
-			ctree_add(prj, NULL);
+			ctree_add(global_ptw, prj, NULL);
 		}
 		gtk_clist_thaw(GTK_CLIST(tree_w));
 	} else {
@@ -544,7 +544,7 @@ setup_ctree(void)
 /* ============================================================== */
 
 void
-ctree_add (GttProject *p, GtkCTreeNode *parent)
+ctree_add (ProjTreeWindow *ptw, GttProject *p, GtkCTreeNode *parent)
 {
 	char ever_timestr[24], day_timestr[24];
 	GList *n;
@@ -561,11 +561,11 @@ ctree_add (GttProject *p, GtkCTreeNode *parent)
 	tmp[DESC_COL]  = (char *) gtt_project_get_desc(p);
 	tmp[TASK_COL]  = (char *) "duude";
 
-	treenode = gtk_ctree_insert_node (GTK_CTREE(glist),  parent, NULL,
+	treenode = gtk_ctree_insert_node (ptw->ctree,  parent, NULL,
                                tmp, 0, NULL, NULL, NULL, NULL,
                                FALSE, FALSE);
 
-	gtk_ctree_node_set_row_data(GTK_CTREE(glist), treenode, p);
+	gtk_ctree_node_set_row_data(ptw->ctree, treenode, p);
 	p->trow = treenode;
 
 	gtt_project_add_notifier (p, redraw, treenode);
@@ -574,7 +574,7 @@ ctree_add (GttProject *p, GtkCTreeNode *parent)
 	for (n=gtt_project_get_children(p); n; n=n->next)
 	{
 		GttProject *sub_prj = n->data;
-		ctree_add (sub_prj, treenode);
+		ctree_add (ptw, sub_prj, treenode);
 	}
 }
 

@@ -20,6 +20,7 @@
 #include <gnome.h>
 #include <string.h>
 
+#include "app.h"
 #include "ctree.h"
 #include "cur-proj.h"
 #include "dialog.h"
@@ -385,9 +386,10 @@ paste_project(GtkWidget *w, gpointer data)
 	/* insert before the current proj */
 	gtt_project_insert_before (p, cur_proj);
 
-	if (!cur_proj) {
+	if (!cur_proj) 
+	{
 		/* top-level insert */
-                ctree_add(p, NULL);
+                ctree_add(global_ptw, p, NULL);
 		return;
 	}
         ctree_insert_before(p, cur_proj);

@@ -24,6 +24,7 @@
 #include <libgnome/gnome-help.h>
 #include <string.h>
 
+#include "app.h"
 #include "ctree.h"
 #include "gtt.h"
 #include "prefs.h"

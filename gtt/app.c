@@ -24,6 +24,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "app.h"
 #include "ctree.h"
 #include "cur-proj.h"
 #include "gtt.h"
@@ -51,7 +52,7 @@
 GttProject *cur_proj = NULL;
 GttProject *prev_proj = NULL;
 
-ProjTreeWindow *ptw;
+ProjTreeWindow *global_ptw;
 GtkWidget *glist, *window;
 
 #ifndef GNOME_USE_APP
@@ -239,8 +240,8 @@ void app_new(int argc, char *argv[], const char *geometry_string)
 	gtk_box_pack_end(GTK_BOX(status_bar), GTK_WIDGET(status_timer),
 			 FALSE, FALSE, 1);
 
-        ptw = ctree_new();
-        glist = ctree_get_widget(ptw);
+        global_ptw = ctree_new();
+        glist = ctree_get_widget(global_ptw);
 
 	gtk_box_pack_end(GTK_BOX(vbox), glist->parent, TRUE, TRUE, 0);
 	gtk_widget_set_usize(glist, -1, 120);

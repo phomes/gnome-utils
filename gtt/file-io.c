@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "app.h"
 #include "ctree.h"
 #include "cur-proj.h"
 #include "err-throw.h"

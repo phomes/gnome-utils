@@ -31,7 +31,7 @@ extern int clist_header_width_set;
 ProjTreeWindow * ctree_new(void);
 
 void setup_ctree(void);
-void ctree_add(GttProject *p, GtkCTreeNode *parent);
+void ctree_add(ProjTreeWindow *, GttProject *p, GtkCTreeNode *parent);
 void ctree_insert_before(GttProject *p, GttProject *insert_before_me);
 void ctree_insert_after(GttProject *p, GttProject *insert_after_me);
 void ctree_remove(GttProject *p);
