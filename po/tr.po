@@ -1,14 +1,15 @@
 # Turkish translation of gnome-utils.
 # Copyright (C) 2003 gnome-utils' COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-utils package.
-# Barbaros Uluta�~_ <tebarul@yahoo.com>, 2003.
+# Barbaros Uluta�_ <tebarul@yahoo.com>, 2003.
+# Arman Aksoy <armish@linux-sevenler.de>, 2003.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-01-27 11:32+0000\n"
-"PO-Revision-Date: 2003-01-27 03:56+0200\n"
-"Last-Translator: Barbaros Ulutaş <tebarul@yahoo.com>\n"
+"POT-Creation-Date: 2003-02-09 12:05+0100\n"
+"PO-Revision-Date: 2003-02-10 18:36+0200\n"
+"Last-Translator: Arman Aksoy (Armish) <armish@linux-sevenler.de>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -115,174 +116,169 @@ msgstr "RAD"
 msgid "GRAD"
 msgstr "GRAD"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1256
 msgid "1/x"
 msgstr "1/x"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1256
 msgid "Inverse"
 msgstr "Ters çevir"
 
-#: gcalc/gnome-calc.c:1256
-#, fuzzy
+#: gcalc/gnome-calc.c:1257
 msgid "x<sup>2</sup>"
 msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1257
 msgid "Square"
 msgstr "Kare"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1258
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1258
 msgid "Square root"
 msgstr "Karekök"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1259
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1259
 msgid "Clear"
 msgstr "Temizle"
 
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1260
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1260
 msgid "Reset"
 msgstr "Sıfırla"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1262
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1261
-#, fuzzy
+#: gcalc/gnome-calc.c:1262
 msgid "Inverse trigonometry/log function"
 msgstr "Trigonometri/log işlevini tersine çevir"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1263
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1263
 msgid "Sine"
 msgstr "Sinüs"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1264
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1264
 msgid "Cosine"
 msgstr "Kosinüs"
 
-#: gcalc/gnome-calc.c:1264
+#: gcalc/gnome-calc.c:1265
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1264
+#: gcalc/gnome-calc.c:1265
 msgid "Tangent"
 msgstr "Tanjant"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1266
+#: gcalc/gnome-calc.c:1267
 msgid " DEG  "
 msgstr " DEG  "
 
-#: gcalc/gnome-calc.c:1266
-#, fuzzy
+#: gcalc/gnome-calc.c:1267
 msgid "Switch degrees / radians / grad"
-msgstr "Derece / radyan / gradyan arasında geçiş yap"
+msgstr "Derece / radyan / grad arasında geçiş yap"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1269
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1269
 msgid "Base of Natural Logarithm"
 msgstr "Doğal Logaritma Tabanı"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1270
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1270
 msgid "Add digit"
 msgstr "Rakam ekle"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1271
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1271
 msgid "Base 10 Logarithm"
 msgstr "Onluk Logaritma Tabanı"
 
-#: gcalc/gnome-calc.c:1271
+#: gcalc/gnome-calc.c:1272
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1271
-#, fuzzy
+#: gcalc/gnome-calc.c:1272
 msgid "Natural Logarithm"
 msgstr "Doğal Logaritma"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1273
 msgid "x<sup>y</sup>"
 msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1273
 msgid "Power"
 msgstr "Güç"
 
-#: gcalc/gnome-calc.c:1274
+#: gcalc/gnome-calc.c:1275
 msgid "PI"
 msgstr "Pi"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1276
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1276
 msgid "Factorial"
 msgstr "Faktoryel"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1277
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1277
 msgid "Opening Parenthesis"
 msgstr "Parantez Aç"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1278
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1278
 msgid "Closing Parenthesis"
 msgstr "Parantezi  Kapa"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1279
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1279
 msgid "Divide by"
 msgstr "Böl:"
 
-#: gcalc/gnome-calc.c:1280
-#, fuzzy
+#: gcalc/gnome-calc.c:1281
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1280
+#: gcalc/gnome-calc.c:1281
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -290,31 +286,31 @@ msgstr ""
 "Görüntü alanındaki değeri\n"
 "belleğe al"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1282
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1283
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1284
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1284 gfloppy/src/gfloppy2.glade.h:2
+#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:2
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1285
 msgid "Multiply by"
 msgstr "Çarp:"
 
-#: gcalc/gnome-calc.c:1286
+#: gcalc/gnome-calc.c:1287
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1286
+#: gcalc/gnome-calc.c:1287
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -322,31 +318,31 @@ msgstr ""
 "Bellekteki değeri\n"
 "görüntü alanında göster"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1288
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1289
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1290
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1291
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1291
 msgid "Subtract"
 msgstr "Çıkar"
 
-#: gcalc/gnome-calc.c:1292
+#: gcalc/gnome-calc.c:1293
 msgid "SUM"
 msgstr "Toplam"
 
-#: gcalc/gnome-calc.c:1292
+#: gcalc/gnome-calc.c:1293
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -354,32 +350,31 @@ msgstr ""
 "Görüntü alanındaki değeri\n"
 "bellekteki değere ekle"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1294
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1295
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1296
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1297
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1297
 msgid "Add"
 msgstr "Add"
 
-#: gcalc/gnome-calc.c:1298
-#, fuzzy
+#: gcalc/gnome-calc.c:1299
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1298
+#: gcalc/gnome-calc.c:1299
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -387,31 +382,31 @@ msgstr ""
 "Görüntü alanındaki ve\n"
 "bellekteki değerleri birbiriyle değiştir "
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1300
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1301
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1301
 msgid "Decimal Point"
 msgstr "Ondalık Noktası"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1302
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1302
 msgid "Change sign"
 msgstr "İmi değiştir"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1303
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1303
 msgid "Calculate"
 msgstr "Hesapla"
 
@@ -464,18 +459,16 @@ msgid "GNOME Character Map"
 msgstr "GNOME Karakter Haritası"
 
 #: gcharmap/src/callbacks.c:66
-msgid ""
-"Select, copy and paste characters from your font into other applications"
-msgstr ""
-"Kendi yazıtipinden diğer uygulamalara karakter seç, kopyala ve yapıştır"
+msgid "Select, copy and paste characters from your font into other applications"
+msgstr "Kendi yazıtipinden diğer uygulamalara karakter seç, kopyala ve yapıştır"
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
-#, fuzzy, c-format
+#, c-format
 msgid "Character code: (Unicode) U%04lX"
 msgstr "Karakter kodu: (Unicode) U%04lX"
 
 #: gcharmap/src/callbacks.c:134
-#, fuzzy, c-format
+#, c-format
 msgid "Character code: (Unicode) U%04lX, (%s) 0x%s"
 msgstr "Karakter kodu: (Unicode) U%04lX, (%s) 0x%s"
 
@@ -755,7 +748,6 @@ msgid "Etymology:"
 msgstr "Etimoloji:"
 
 #: gdictsrc/gdict-pref-dialog.c:41
-#, fuzzy
 msgid "Part of speech:"
 msgstr "Konuşma parçası:"
 
@@ -925,14 +917,14 @@ msgid "The search strategy to use"
 msgstr "Kullanılacak arama stratejisi"
 
 #: gdictsrc/gdict.schemas.in.h:9
-#, fuzzy
 msgid ""
 "The search strategy to use. This is dependant on the search strategy that "
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
 "Kullanılacak arama stratejisi. Bu, sözlük sunucusunun desteklediği arama "
-"stratejilerine bağlıdır. Öntanımlı strateji 'lev'dir. "
+"stratejilerine bağlıdır. Öntanımlı strateji 'lev'dir. Kelimeleri Levinshtein "
+"uzaklığı ile eşleştir"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1036,18 +1028,18 @@ msgstr ""
 "Hata kodu %s%d"
 
 #: gfloppy/src/fdformat.c:129
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "ERead Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
 msgstr ""
 "EOkuma Hatası\n"
-"Silindir %d, beklenen%d, okuma%d sorunu"
+"Silindir %d, beklenen %d, okuma %d sorunu"
 
 #: gfloppy/src/fdformat.c:132
-#, fuzzy, c-format
+#, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr "ESilindir %d okunurken hata oluştu, beklenen%d, okunan%d"
+msgstr "Silindir %d okunurken hata oluştu, beklenen%d, okunan%d"
 
 #: gfloppy/src/fdformat.c:141
 #, c-format
@@ -1092,9 +1084,9 @@ msgid "EError while filling the bad blocks list file."
 msgstr "EBozuk alan listesi doldurulurken hata oluştu."
 
 #: gfloppy/src/gfloppy.c:308
-#, fuzzy, c-format
+#, c-format
 msgid "EError while spawning the (%s) command: %s."
-msgstr "E(%s) komutu çalıştırılırken hata oluştu:%s"
+msgstr "(%s) komutu çalıştırılırken hata oluştu:%s"
 
 #: gfloppy/src/gfloppy.c:332
 msgid "EUnknown mke2fs starting signature, cancelling."
@@ -1112,14 +1104,13 @@ msgstr ""
 "%s(%d)"
 
 #: gfloppy/src/gfloppy.c:363
-#, fuzzy
 msgid "EAbnormal child process termination."
 msgstr "EBilinmeyen alt süreç sonlandırması"
 
 #: gfloppy/src/gfloppy.c:388
-#, fuzzy, c-format
+#, c-format
 msgid "EError while spawning the mbadblocks command: %s."
-msgstr "Embadblocks komutu çalıştırılırken hata oluştu: %s"
+msgstr "mbadblocks komutu çalıştırılırken hata oluştu: %s"
 
 #: gfloppy/src/gfloppy.c:400
 #, c-format
@@ -1132,7 +1123,6 @@ msgstr ""
 "%s."
 
 #: gfloppy/src/gfloppy.c:443
-#, fuzzy
 msgid "EAbnormal mbadblocks child process termination."
 msgstr "EBilinmeyen mbadblocks alt süreç sonlandırması"
 
@@ -1162,7 +1152,6 @@ msgid "    "
 msgstr "     "
 
 #: gfloppy/src/gfloppy2.glade.h:3
-#, fuzzy
 msgid ""
 "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
 "be installed in order to make a thorough DOS (fat) formatting."
@@ -1325,7 +1314,6 @@ msgstr ""
 "biçimlendirme ekler), ve tam biçimlendirme için 2 (bozuk alan denetimi ekler)"
 
 #: gfloppy/gfloppy.schemas.in.h:2
-#, fuzzy
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
 msgstr "SADECE UZMAN KULLANICILAR  FAT biçimlendirme için öntanımlı"
 
@@ -1338,7 +1326,6 @@ msgid "Default formatting mode"
 msgstr "Öntanımlı biçimlendirme kipi"
 
 #: gfloppy/gfloppy.schemas.in.h:5
-#, fuzzy
 msgid ""
 "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
 "mtools as the preferred FAT formatting backend."
@@ -1400,7 +1387,7 @@ msgstr "Dosyanın adı yok"
 
 #: gsearchtool/gsearchtool.c:77
 msgid "File matches regular expression"
-msgstr ""
+msgstr "Dosya düzenli tanımla uyuşuyor"
 
 #: gsearchtool/gsearchtool.c:79
 msgid "Follow symbolic links"
@@ -1416,12 +1403,11 @@ msgstr "Dosya bulunamadı"
 
 #: gsearchtool/gsearchtool.c:483
 msgid "Entry changed called for a non entry option!"
-msgstr ""
+msgstr "Girdi, girdi olmayan bir özellik için değiştirildi!"
 
 #: gsearchtool/gsearchtool.c:593
-#, fuzzy
 msgid "Set the text of 'file is named'"
-msgstr "\"Dosya adı\" metnini ayarlayın"
+msgstr "'Dosya adı' metnini ayarlayın"
 
 #: gsearchtool/gsearchtool.c:594
 msgid "Set the text of 'look in folder'"
@@ -1429,13 +1415,11 @@ msgstr "\"Bakılacak dizin\" metnini ayarlayın"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr ""
-"Dosyaları şu ölçütlerden birine göre sırala: ad, dizin, boyut, tür ve tarih"
+msgstr "Dosyaları şu ölçütlerden birine göre sırala: ad, dizin, boyut, tür ve tarih"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr ""
-"Sıralama düzenini \"yükselme\" olarak ayarla, öntanımlı ayar \"alçalma\"dır."
+msgstr "Sıralama düzenini \"yükselme\" olarak ayarla, öntanımlı ayar \"alçalma\"dır."
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
@@ -1448,7 +1432,7 @@ msgstr "'%s' sınırlamasını seç"
 
 #: gsearchtool/gsearchtool.c:686
 msgid "Invalid option passed to sortby command line argument."
-msgstr ""
+msgstr "Sırala komur satırı özelliğine bilinmeyen özellik gönderildi."
 
 #: gsearchtool/gsearchtool.c:815
 msgid "(aborted)"
@@ -1660,11 +1644,11 @@ msgstr "Arama sonuçları \"%s\" dosyasına kaydedilemiyor."
 
 #: gsearchtool/gsearchtool-support.c:284
 msgid "Expander Size"
-msgstr ""
+msgstr "Genişletici Boyutu"
 
 #: gsearchtool/gsearchtool-support.c:285
 msgid "Size of the expander arrow"
-msgstr ""
+msgstr "Genişletici okunun boyutu"
 
 #: gsearchtool/gsearchtool-support.c:346
 #, c-format
@@ -1672,6 +1656,8 @@ msgid ""
 "GConf error:\n"
 "  %s"
 msgstr ""
+"GConf hatası:\n"
+"  %s"
 
 #: gsearchtool/gsearchtool-support.c:507
 msgid "%Y%m%d%H%M%S"
@@ -1713,6 +1699,9 @@ msgid ""
 "under the conditions of the GNU General Public Licence. The log icon is a "
 "courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
+"Bu program GNOME projesinin parçasıdır. Kayıt gösteriminin HİÇBİR GARANTİSİ "
+"YOKTUR. Serbest bir yazılımdır ve GNU Genereal Public Licence altında "
+"yeniden dağıtılabilir. Kayıt ikonu  Thomas Kuosmanen'e aittir (kaplan)"
 
 #: logview/about.c:61
 msgid "GNOME System Log Viewer"
@@ -1778,7 +1767,7 @@ msgstr "ileti regexp"
 
 #: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
-msgstr ""
+msgstr "regexp ler DOĞRU olduğunda uygulanacak işlem"
 
 #: logview/actions.c:511
 msgid "description"
@@ -1971,7 +1960,6 @@ msgid "%s not a log file."
 msgstr "%s bir günlük dosyası değil."
 
 #: logview/logrtns.c:722 logview/logrtns.c:753 logview/logrtns.c:884
-#, fuzzy
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: bellek yetersiz"
 
@@ -2041,7 +2029,7 @@ msgstr "Tarih"
 
 #: logview/logview.c:389
 msgid "Host Name"
-msgstr ""
+msgstr "Makine Adı"
 
 #: logview/logview.c:390
 msgid "Process"
@@ -2107,7 +2095,7 @@ msgstr "Görüntülenecek çok fazla günlük var. Birini kaldırıp tekrar dene
 
 #: logview/monitor.c:297 logview/monitor.c:335
 msgid "tmp_list is NULL\n"
-msgstr ""
+msgstr "tmp_list BOŞ\n"
 
 #: logview/monitor.c:457
 msgid "Monitoring logs..."
@@ -2115,7 +2103,7 @@ msgstr "Günlükler görüntüleniyor..."
 
 #: logview/monitor.c:644
 msgid "TOUCHED!!\n"
-msgstr ""
+msgstr "YARATILDI!!\n"
 
 #: logview/zoom.c:63
 msgid "Zoom view"
@@ -2157,3 +2145,4 @@ msgid ""
 msgstr ""
 "Başlangıçta açılacak günlük dosyasını belirtir. Öntanımlı değer, ya /var/adm/"
 "messages ya da  /var/log/messages dir. Bu durum, dağıtımınıza bağlıdır."
+
