@@ -367,6 +367,7 @@ save_state(GnomeClient *client, gint phase, GnomeRestartStyle save_style,
 	   gint shutdown, GnomeInteractStyle interact_styyle, gint fast,
 	   gpointer data)
 {
+	const char *errmsg;
 	char *sess_id;
 	char *argv[5];
 	int argc;
@@ -393,11 +394,11 @@ save_state(GnomeClient *client, gint phase, GnomeRestartStyle save_style,
 	gnome_client_set_restart_command(client, argc, argv);
 	g_free(argv[2]);
 
-	/* save both te user preferences/config and the project lists */
-	gtt_err_set_code (GTT_NO_ERR);
-	save_all();
+	/* save both the user preferences/config and the project lists */
+	errmsg = save_all();
 	rc = 0;
-	if (GTT_NO_ERR == gtt_err_get_code()) rc = 1;
+	if (NULL == errmsg) rc = 1;
+	g_free ((gchar *) errmsg);
 
 	return rc;
 }
