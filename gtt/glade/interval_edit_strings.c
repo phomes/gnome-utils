@@ -4,11 +4,16 @@
  * DO NOT compile it as part of your application.
  */
 
-gchar *s = N_("Edit the Start & Stop Times");
-gchar *s = N_("Edit");
-gchar *s = N_("Delete This Interval");
-gchar *s = N_("Delete");
-gchar *s = N_("Merge Into Interval Above");
-gchar *s = N_("Merge Up");
-gchar *s = N_("Merege Into Interval Below");
-gchar *s = N_("Merge Down");
+gchar *s = N_("Start Fuzz");
+gchar *s = N_("Stop");
+gchar *s = N_("Start");
+gchar *s = N_("Exact Time");
+gchar *s = N_("5 Min");
+gchar *s = N_("10 Min");
+gchar *s = N_("15 Min");
+gchar *s = N_("20 Min");
+gchar *s = N_("30 Min");
+gchar *s = N_("1 Hour");
+gchar *s = N_("2 Hours");
+gchar *s = N_("3 Hours");
+gchar *s = N_("Today");
