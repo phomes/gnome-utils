@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-1.4.1.x\n"
-"POT-Creation-Date: 2002-02-16 19:47+0100\n"
-"PO-Revision-Date: 2002-02-15 00:01+0100\n"
+"POT-Creation-Date: 2002-02-25 19:49+0100\n"
+"PO-Revision-Date: 2002-02-17 12:27+0100\n"
 "Last-Translator: Christian Meyer <chrisime@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -989,7 +989,7 @@ msgstr "Geschätztes Abschlussdatum des Projekts"
 
 #: gtt/ctree.c:596
 msgid "Due"
-msgstr ""
+msgstr "Fällig"
 
 #: gtt/ctree.c:598
 msgid ""
@@ -1005,6 +1005,8 @@ msgstr "Programmgröße"
 #: gtt/ctree.c:607
 msgid "Sizing: How much work it will take to finish this project."
 msgstr ""
+"Größenordnung: Wie lange wird es dauern, bis dieses Projekt abgeschlossen "
+"sein wird."
 
 #: gtt/ctree.c:613
 msgid "Done"
@@ -1012,7 +1014,7 @@ msgstr "Erledigt"
 
 #: gtt/ctree.c:615
 msgid "Percent Complete: How much of this project has been finished till now."
-msgstr ""
+msgstr "Prozent fertig: Wieviel vom Projekt wurde bisher fertiggestellt."
 
 #: gtt/ctree.c:622
 msgid "U"
@@ -1172,7 +1174,7 @@ msgstr "Anmerkungen"
 
 #: gtt/ghtml.c:229
 msgid "Task Time"
-msgstr ""
+msgstr "Zeit für Aufgabe"
 
 #: gtt/ghtml.c:233
 msgid "Bill Status"
@@ -1180,11 +1182,11 @@ msgstr "Rechnungsstatus"
 
 #: gtt/ghtml.c:237 gtt/ghtml.c:408 gtt/glade/task_properties.glade.h:4
 msgid "Billable"
-msgstr ""
+msgstr "Berechenbar"
 
 #: gtt/ghtml.c:241
 msgid "Bill Rate"
-msgstr ""
+msgstr "Rechnungstarif"
 
 #: gtt/ghtml.c:245 mini-utils/gcolorsel/view-color-list.c:197
 #: mini-utils/guname/moreinfo.c:227
@@ -1193,7 +1195,7 @@ msgstr "Wert"
 
 #: gtt/ghtml.c:249
 msgid "Billable Value"
-msgstr ""
+msgstr "Berechenbarer Wert"
 
 #: gtt/ghtml.c:253 gtt/ghtml.c:279
 msgid "No Default Value"
@@ -1201,11 +1203,11 @@ msgstr "Kein Vorgabewert"
 
 #: gtt/ghtml.c:276
 msgid "Start Time Fuzziness"
-msgstr ""
+msgstr "Startzeit-Unschärfe"
 
 #: gtt/ghtml.c:392 gtt/glade/task_properties.glade.h:13
 msgid "Hold"
-msgstr ""
+msgstr "Halten"
 
 #: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:3
 msgid "Bill"
@@ -1353,6 +1355,11 @@ msgid ""
 "task, associate a memo with it, set a billing rate, print an invoice, as "
 "well as track that status of other projects."
 msgstr ""
+"GTimeTracker ist eine Kombination aus Stoppuhr, Terminkalender Beratungs-"
+"Fakturierungssystem und Projektmanager. Man kann die Zeit messen, die für "
+"eine Aufgabe aufgewendet wird, eine Notiz dazu vermerken, einen "
+"Rechnungstarif festlegen, eine Rechnung drucken, aber auch den Status "
+"anderer Projekte verfolgen."
 
 #: gtt/menucmd.c:142
 msgid "New Project..."
@@ -1401,7 +1408,7 @@ msgstr "Ta_geszähler löschen"
 
 #: gtt/menus.c:64 gtt/menus.c:174
 msgid "Zero out todays timer by deleting todays time logs"
-msgstr ""
+msgstr "Tageszähler zurücksetzen durch Löschen des heutigen Zeitprotokolls"
 
 #: gtt/menus.c:68 gtt/menus.c:87 gtt/menus.c:156
 msgid "_Journal..."
@@ -1409,7 +1416,7 @@ msgstr "_Journal..."
 
 #: gtt/menus.c:69 gtt/menus.c:88 gtt/menus.c:157
 msgid "Show the timesheet journal for this project"
-msgstr ""
+msgstr "Zeige das Zeitprotokoll für dieses Projekt"
 
 #: gtt/menus.c:72 gtt/menus.c:160
 msgid "New Diary _Entry"
@@ -1421,11 +1428,11 @@ msgstr "Die aktuelle Aufgabe für dieses Projekt ändern"
 
 #: gtt/menus.c:91
 msgid "_All Journal..."
-msgstr ""
+msgstr "_Alle Protokolle..."
 
 #: gtt/menus.c:92
 msgid "Show the verbose timesheet journal for this project"
-msgstr ""
+msgstr "Das gesamte Zeitprotokoll für dieses Projekt zeigen"
 
 #: gtt/menus.c:95
 msgid "_Invoice..."
@@ -1437,11 +1444,11 @@ msgstr "Beipielrechnung für dieses Projekt anzeigen"
 
 #: gtt/menus.c:99
 msgid "_Primer..."
-msgstr ""
+msgstr "Einführung..."
 
 #: gtt/menus.c:100
 msgid "Show a sample introductory primer for designing custom reports"
-msgstr ""
+msgstr "Zeige eine Einführung für das Erstellen angepasster Berichte"
 
 #: gtt/menus.c:103
 msgid "_New Report..."
@@ -1449,7 +1456,7 @@ msgstr "_Neuer Bericht..."
 
 #: gtt/menus.c:104
 msgid "Define a path to a new GTT phtml report file"
-msgstr ""
+msgstr "Gebe einen Pfad zu einer neuen GTT phtml-Datei an"
 
 #: gtt/menus.c:115
 msgid "St_art"
@@ -1457,7 +1464,7 @@ msgstr "St_arten"
 
 #: gtt/menus.c:116
 msgid "Start the timer running"
-msgstr ""
+msgstr "Stoppuhr starten"
 
 #: gtt/menus.c:121
 msgid "Sto_p"
@@ -1507,6 +1514,11 @@ msgid ""
 "has been stopped.\n"
 "Do you want to restart it?"
 msgstr ""
+"Die Tastatur und Maus wurden seit\n"
+"%d Minuten nicht mehr gebraucht. Das\n"
+"aktuell laufende Projekt (%s - %s)\n"
+"wurde angehalten.\n"
+"Möchten Sie es erneut starten?"
 
 #: gtt/timer.c:125
 msgid "System Idle"
@@ -1551,7 +1563,7 @@ msgstr "Journal"
 
 #: gtt/toolbar.c:194
 msgid "View and Edit Timestamp Logs"
-msgstr ""
+msgstr "Zeige und bearbeite Zeitstempel-Protokoll"
 
 #: gtt/toolbar.c:199
 msgid "Props"
@@ -1643,7 +1655,7 @@ msgstr "Setzen, wie unsicher die Startzeit ist"
 
 #: gtt/glade/interval_edit.glade.h:12
 msgid "Start Fuzz"
-msgstr ""
+msgstr "Ungenau starten"
 
 #: gtt/glade/interval_popup.glade.h:1
 msgid "Add a new time interval."
@@ -1671,23 +1683,23 @@ msgstr "Tagebucheintrag einfügen"
 
 #: gtt/glade/interval_popup.glade.h:7
 msgid "Insert a new diary entry above this time interval."
-msgstr ""
+msgstr "Einen neuen Tagebucheintrag oberhalb dieses Intervalls einfügen."
 
 #: gtt/glade/interval_popup.glade.h:8
 msgid "Merge Down"
-msgstr ""
+msgstr "Nach unten verschmelzen"
 
 #: gtt/glade/interval_popup.glade.h:9
 msgid "Merge Into Interval Above"
-msgstr ""
+msgstr "In obiges Intervall einfließen lassen"
 
 #: gtt/glade/interval_popup.glade.h:10
 msgid "Merge Into Interval Below"
-msgstr ""
+msgstr "In unteres Intervall einfließen lassen"
 
 #: gtt/glade/interval_popup.glade.h:11
 msgid "Merge Up"
-msgstr ""
+msgstr "Nach oben verschmelzen"
 
 #: gtt/glade/interval_popup.glade.h:12
 msgid "New Interval"
@@ -1746,10 +1758,13 @@ msgstr "Anzeige"
 #: gtt/glade/prefs.glade.h:2
 msgid "Enter a shell command to be executed when no projects are active."
 msgstr ""
+"Shell-Kommando eingeben, dass ausgeführt wird, wenn kein Projekt läuft."
 
 #: gtt/glade/prefs.glade.h:3
 msgid "Enter a shell command to be executed whenever projects are switched."
 msgstr ""
+"Shell-Kommando eingeben, dass ausgeführt wird, wenn das Projekt gewechselt "
+"wird."
 
 #: gtt/glade/prefs.glade.h:4
 msgid "Entry Start:"
@@ -1765,6 +1780,9 @@ msgid ""
 "Entry that will be logged when a project starts. Use %t for the project "
 "title, %d for the description, etc. See the manual for more options."
 msgstr ""
+"Eintrag, der protokolliert wird, wenn ein Projekt gestartet wird. Benutze %t "
+"für den Projekttitel, %d für die Beschreibung, etc. Siehe Anleitung für mehr "
+"Optionen."
 
 #: gtt/glade/prefs.glade.h:9
 #, no-c-format
@@ -1772,6 +1790,9 @@ msgid ""
 "Entry that will be logged when the project stops.  Use %t for the porject "
 "title, %d for the project description, etc. See the manual for more options."
 msgstr ""
+"Eintrag, der protokolliert wird, wenn ein Projekt gestoppt wird. Benutze %t "
+"für den Projekttitel, %d für die Beschreibung, etc. Siehe Anleitung für mehr "
+"Optionen."
 
 #: gtt/glade/prefs.glade.h:10
 msgid "Fields"
@@ -1787,7 +1808,7 @@ msgstr "Leerlauf-Sekunden"
 
 #: gtt/glade/prefs.glade.h:13
 msgid "Inactivity Timeout"
-msgstr ""
+msgstr "Inaktivität-Timeout"
 
 #: gtt/glade/prefs.glade.h:14
 msgid "Logfile"
@@ -1795,7 +1816,7 @@ msgstr "Protokolldatei"
 
 #: gtt/glade/prefs.glade.h:15
 msgid "Min Recorded:"
-msgstr ""
+msgstr "Min erfasst:"
 
 #: gtt/glade/prefs.glade.h:16
 msgid "Misc"
@@ -1823,19 +1844,19 @@ msgstr "Aktuellen Tagebucheintrag zeigen"
 
 #: gtt/glade/prefs.glade.h:22
 msgid "Show Estimated Effort"
-msgstr ""
+msgstr "Zeige geschätzten Aufwand"
 
 #: gtt/glade/prefs.glade.h:23
 msgid "Show Percent Complete"
-msgstr ""
+msgstr "Zeige Prozent fertiggestellt"
 
 #: gtt/glade/prefs.glade.h:24
 msgid "Show Planned Project End Date"
-msgstr ""
+msgstr "Zeige geplantes Projekt-Enddatum"
 
 #: gtt/glade/prefs.glade.h:25
 msgid "Show Planned Project Start Date"
-msgstr ""
+msgstr "Zeige geplantes Projekt-Startdatum"
 
 #: gtt/glade/prefs.glade.h:26
 msgid "Show Project Description"
@@ -1867,7 +1888,7 @@ msgstr "Statusbalken zeigen"
 
 #: gtt/glade/prefs.glade.h:33
 msgid "Show Sub-Projects"
-msgstr ""
+msgstr "Zeige Unterprojekte"
 
 #: gtt/glade/prefs.glade.h:34
 msgid "Show Table Header"
@@ -1875,23 +1896,23 @@ msgstr "Tabellenkopf zeigen"
 
 #: gtt/glade/prefs.glade.h:35
 msgid "Show Time For The Current Diary Entry"
-msgstr ""
+msgstr "Zeige Zeit für aktuellen Tagebucheintrag"
 
 #: gtt/glade/prefs.glade.h:36
 msgid "Show Time This Month"
-msgstr ""
+msgstr "Zeige Zeit für diesen Monat"
 
 #: gtt/glade/prefs.glade.h:37
 msgid "Show Time This Week"
-msgstr ""
+msgstr "Zeige Zeit für diese Woche"
 
 #: gtt/glade/prefs.glade.h:38
 msgid "Show Time This Year"
-msgstr ""
+msgstr "Zeige Zeit für dieses Jahr"
 
 #: gtt/glade/prefs.glade.h:39
 msgid "Show Time Today"
-msgstr ""
+msgstr "Zeige Zeit für Heute"
 
 #: gtt/glade/prefs.glade.h:40
 msgid "Show Toolbar Icons"
@@ -1907,11 +1928,11 @@ msgstr "Minihilfen zeigen"
 
 #: gtt/glade/prefs.glade.h:43
 msgid "Show Total Time Ever"
-msgstr ""
+msgstr "Zeige gesamte Zeit bisher"
 
 #: gtt/glade/prefs.glade.h:44
 msgid "Show `Cut', `Copy', `Paste'"
-msgstr "`Ausschneiden', `Kopieren' und `Einfügen' anzeigen"
+msgstr "`Ausschneiden', `Kopieren' und `Einfügen' zeigen"
 
 #: gtt/glade/prefs.glade.h:45
 msgid "Show `Help'"
@@ -1950,6 +1971,8 @@ msgid ""
 "Show the 'szing', that is, the estimated amount of work that it will take to "
 "perform this project."
 msgstr ""
+"Zeige die Größe, dass ist der erwartete Aufwand, den es braucht, um dieses "
+"Projekt durchzuführen"
 
 #: gtt/glade/prefs.glade.h:54
 msgid "Switch Project Command:"
@@ -1960,12 +1983,17 @@ msgid ""
 "Switches between projects that happen faster than this will not be logged "
 "(enter the number of seconds)"
 msgstr ""
+"Wechsel zwischen Projekten, die schneller geschehen als heir angegeben, "
+"werden nicht protokolliert (Zeit in Sekunden)"
 
 #: gtt/glade/prefs.glade.h:56
 msgid ""
 "The current active project will be made inactive after there has been no "
 "keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
 msgstr ""
+"Das aktive Projekt wird deaktiviert, wenn keine Tastatur-/Maus-Tätigkeit "
+"innerhalb der hier angebenen Sekunden herrschte. Zum Deaktivieren auf -1 "
+"setzen."
 
 #: gtt/glade/prefs.glade.h:57
 msgid "Toolbar"
@@ -2006,11 +2034,11 @@ msgstr "Ein Titel, der diesem Projekt zugewiesen wird."
 
 #: gtt/glade/project_properties.glade.h:7
 msgid "Auto-merge Gap:"
-msgstr ""
+msgstr "Lücken automatisch zusammenfassen:"
 
 #: gtt/glade/project_properties.glade.h:8
 msgid "Auto-merge Interval:"
-msgstr ""
+msgstr "Intervalle automatisch zusammenfassen:"
 
 #: gtt/glade/project_properties.glade.h:11
 msgid ""
@@ -2018,10 +2046,14 @@ msgid ""
 "not be important.  For example, Bill may want you to answer his email today, "
 "but you may have better things to do today."
 msgstr ""
+"Benötigt dieses Element sofortige Aufmerksamkeit? Beachte, dass andere "
+"dringende Aufgaben vielleicht nicht so wichtig sind. Z.B. Bill möchte, dass "
+"Sie seine E-Mail heute beantworten, aber Sie haben heute evtl. bessere Dinge "
+"zu tun."
 
 #: gtt/glade/project_properties.glade.h:12
 msgid "Double-Overtime Rate:"
-msgstr ""
+msgstr "Doppelter Überstunden-Tarif"
 
 #: gtt/glade/project_properties.glade.h:13
 msgid "Due Date:"
@@ -2033,7 +2065,7 @@ msgstr "Pauschallohn"
 
 #: gtt/glade/project_properties.glade.h:16
 msgid "Hours to Finish:"
-msgstr ""
+msgstr "Stunden bis zum Abschluß:"
 
 #: gtt/glade/project_properties.glade.h:17
 msgid ""
@@ -2041,18 +2073,25 @@ msgid ""
 "urgent.  For example, it is important to file a tax return every year, but "
 "you have a lot of time to get ready to do this."
 msgstr ""
+"Wie wichtig ist es, diese Aufgabe durchzuführen? Nicht alles was wichtig ist "
+"ist auch dringend. Zum Beispiel ist es wichtig, jedes Jahr seine "
+"Steuererklärung zu machen, man hat aber viel Zeit dafür."
 
 #: gtt/glade/project_properties.glade.h:18
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
 msgstr ""
+"Ist der Abstand zwischen zwei Intervallen geringer als hier, werden sie "
+"zusammengefügt."
 
 #: gtt/glade/project_properties.glade.h:19
 msgid ""
 "If this project is billed for one price no matter how long it takes, enter "
 "the fee here."
 msgstr ""
+"Wird dieses Projekt zu einem Festpreis abgerechnet, tragen Sie die Summe "
+"hier ein."
 
 # Erlaubte Abweichung?
 # 2000-05-18 06:04:57 CEST -ke-
@@ -2064,6 +2103,7 @@ msgstr "Wichtigkeit"
 msgid ""
 "Internal notes about the project that will not be printed on an invoice."
 msgstr ""
+"Interne Anmerkungen zum Projekt, die nicht auf der Rechnung gedruckt werden."
 
 #: gtt/glade/project_properties.glade.h:23
 msgid "Intervals"
@@ -2071,7 +2111,7 @@ msgstr "Intervalle"
 
 #: gtt/glade/project_properties.glade.h:24
 msgid "Intervals smaller than this will be discarded"
-msgstr ""
+msgstr "Intervalle kleiner als hier werden entfernt"
 
 #: gtt/glade/project_properties.glade.h:26
 msgid "Medium"
@@ -2096,7 +2136,7 @@ msgstr "Überstundentarif:"
 
 #: gtt/glade/project_properties.glade.h:33
 msgid "Planned Finish:"
-msgstr ""
+msgstr "Geplantes Ende:"
 
 #: gtt/glade/project_properties.glade.h:34
 msgid "Planned Start:"
@@ -2120,7 +2160,7 @@ msgstr "Projekttitel:"
 
 #: gtt/glade/project_properties.glade.h:39
 msgid "Rates"
-msgstr ""
+msgstr "Tarife"
 
 #: gtt/glade/project_properties.glade.h:40
 msgid "Regular Rate:"
@@ -2133,18 +2173,21 @@ msgstr "Status:"
 #: gtt/glade/project_properties.glade.h:42
 msgid "The dollars per hour charged for overtime work on this project."
 msgstr ""
+"Der Betrag pro Stunde, der für Überstunden in diesem Projekt angesetzt wird."
 
 #: gtt/glade/project_properties.glade.h:43
 msgid "The dollars per hour normally charged for this project."
 msgstr ""
+"Der Betrag pro Stunde, der normalerweise in diesem Projekt angesetzt wird"
 
 #: gtt/glade/project_properties.glade.h:44
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
-msgstr ""
+msgstr "Der doppelte Extra-Überstundentarif (z. B. Überstunden an Sonntagen)"
 
 #: gtt/glade/project_properties.glade.h:45
 msgid "Time below which an interval is merged with its neighbors"
 msgstr ""
+"Zeitintervalle unterhalb dieser Grenze werden mit ihren Nachbarn verschmolzen"
 
 #: gtt/glade/project_properties.glade.h:46
 msgid "Urgency:"
@@ -2156,7 +2199,7 @@ msgstr "Was ist der Status dieses Projekts?"
 
 #: gtt/glade/project_properties.glade.h:48
 msgid "a short description that will be printed on the invoice."
-msgstr ""
+msgstr "eine kleine Beschreibung, die auf der Rechnung gedruckt wird."
 
 #: gtt/glade/project_properties.glade.h:49
 msgid "seconds"
@@ -2172,23 +2215,23 @@ msgstr "Eintrag und Zei_t ausschneiden"
 
 #: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
-msgstr ""
+msgstr "Lösche nur den Tagebucheintrag, behalte das Zeitintervall"
 
 #: gtt/glade/task_popup.glade.h:4
 msgid "Delete the diary entry, and the time intervals below it."
-msgstr ""
+msgstr "Lösche den Tagebucheintrag und die Intervalle darunter."
 
 #: gtt/glade/task_popup.glade.h:5
 msgid "Edit the diary entry and other task properties."
-msgstr ""
+msgstr "Bearbeite den Tagebucheintrag und andere Aufgabeneigenschaften."
 
 #: gtt/glade/task_popup.glade.h:6
 msgid "Insert a new diary entry above this one."
-msgstr ""
+msgstr "Füge einen neuen Tagebucheintrag über diesem ein."
 
 #: gtt/glade/task_popup.glade.h:7
 msgid "New Time Interval"
-msgstr "Neuer Zeitintervall"
+msgstr "Neues Zeitintervall"
 
 # missing accelerator
 #: gtt/glade/task_popup.glade.h:9
@@ -2198,7 +2241,7 @@ msgstr "Tagebucheintrag ausschneiden"
 # missing accelerator
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
-msgstr "Tagebucheintrag bearbeiten"
+msgstr "Tag_ebucheintrag bearbeiten"
 
 #: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
@@ -2206,7 +2249,7 @@ msgstr "_Neuer Tagebucheintrag"
 
 #: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
-msgstr ""
+msgstr "Tagebucheintrag einfügen"
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
@@ -2224,15 +2267,15 @@ msgstr "Berechenbar:"
 
 #: gtt/glade/task_properties.glade.h:6
 msgid "Billing Block:"
-msgstr ""
+msgstr "Rechnungsblock:"
 
 #: gtt/glade/task_properties.glade.h:7
 msgid "Billing Rate:"
-msgstr ""
+msgstr "Rechnungstarif:"
 
 #: gtt/glade/task_properties.glade.h:8
 msgid "Billing Status:"
-msgstr ""
+msgstr "Rechnungsstatus:"
 
 #: gtt/glade/task_properties.glade.h:9
 msgid "Diary Entry Properties"
@@ -2244,7 +2287,7 @@ msgstr "Tagebucheintrag: "
 
 #: gtt/glade/task_properties.glade.h:11
 msgid "Fee rate to be charged for this task."
-msgstr ""
+msgstr "Tarif, der für diese Aufgabe berechnet wird."
 
 #: gtt/glade/task_properties.glade.h:14
 msgid ""
@@ -2253,6 +2296,10 @@ msgid ""
 "this, don't print on the invoice.   \"No Charge\" means print on the invoice "
 "as 'free/no-charge'."
 msgstr ""
+"Wie soll diese Aufgabe berechnet werden? \"Berechenbar\" bedeutet, dem "
+"Kunden auf normale Weise in Rechnung stellen. \"Nicht berechenbar\" heisst, "
+"dem Kunden nicht in Rechnung stellen und nicht auf der Rechnung drucken. "
+"\"kostenlos\" meint, als kostenlos/gebührenfrei auf der Rechnung ausgeben."
 
 #: gtt/glade/task_properties.glade.h:15
 msgid ""
@@ -2260,15 +2307,22 @@ msgid ""
 "not yet, needs review.   \"Bill\" means print this on the next invoice.   "
 "\"Paid\" means that it should no longer be included on invoices."
 msgstr ""
+"Kann die Aufgabe dem Kunden in Rechnung gestellt werden? \"Halten\" heisst "
+"jetzt noch nicht, muss noch geprüft werden. \"Rechnung\" meint, wird auf der "
+"nächsten Rechnung ausgegeben. \"Bezahlt\" bedeutet, auf keiner Rechnung mehr "
+"ausgeben."
 
+# CHECK -- wtf is that?!
 #: gtt/glade/task_properties.glade.h:19
 msgid "OverOver"
-msgstr ""
+msgstr "OverOver"
 
 #: gtt/glade/task_properties.glade.h:23
 msgid ""
 "The billed unit of time will be rounded to an integer multiple of this time."
 msgstr ""
+"Die zu berechennden Zeiteinheiten werden auf ein Vielfaches der hier "
+"angegebenen Zeit gerundet."
 
 #: gtt/glade/task_properties.glade.h:24
 msgid "minutes"
@@ -4831,6 +4885,8 @@ msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
+"Ziehen Sie diesen Knopf an die Stelle, an der das Archiv erstellt werden "
+"soll oder drücken Sie ihn, um einen Dateiauswahl-Dialog zu öffnen."
 
 #: meat-grinder/meat-grinder.c:883
 msgid "Cannot find proper icons anywhere!"
@@ -4867,7 +4923,7 @@ msgstr "GNOME-Client für den MIT-Wörterbuchserver"
 
 #: stripchart/stripchart-applet.desktop.in.h:1
 msgid "Shows a stripchart plot"
-msgstr "Zeiht eine Kurvenzeichnung"
+msgstr "Zeigt eine Kurvenzeichnung"
 
 #: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
 msgid "Stripchart Plotter"
@@ -4963,7 +5019,7 @@ msgstr "GNOME-Archivierer"
 
 #: meat-grinder/meat-grinder.desktop.in.h:2
 msgid "GNOME Archive Generator aka Meat Grinder"
-msgstr "GNOME-Archivierer"
+msgstr "GNOME-Archivierer (Meat Grinder)"
 
 #: logview/logview.desktop.in.h:1
 msgid "SysLog tool"
@@ -4987,7 +5043,7 @@ msgstr "Gstripchart"
 
 #: gstripchart/gstripchart_applet.desktop.in.h:2
 msgid "Shows a stripchart"
-msgstr "Eine Kurvenzeichnung anzeigen"
+msgstr "Zeigt eine Kurvenzeichnung"
 
 #: gsearchtool/gsearchtool.desktop.in.h:1
 #: gsearchtool/help/es/gsearchtool.desktop.in.h:1
@@ -5000,7 +5056,8 @@ msgstr "GNOME FreiePlatte"
 
 #: gdiskfree/gdiskfree.desktop.in.h:2
 msgid "Show free space on mounted file systems using dials."
-msgstr "Zeigt freien Platz auf einhängten Dateisystemen mit Rundinstrumenten."
+msgstr ""
+"Freien Platz auf einhängten Dateisystemen mit Rundinstrumenten anzeigen."
 
 #: gcharmap/gcharmap.desktop.in.h:1
 msgid "GNOME Character Map"
