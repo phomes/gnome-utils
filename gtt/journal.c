@@ -29,6 +29,7 @@
 
 #include "cur-proj.h"
 #include "journal.h"
+#include "ghtml.h"
 #include "phtml.h"
 #include "proj.h"
 #include "props-invl.h"
@@ -39,6 +40,7 @@
 
 typedef struct wiggy_s {
 	GttPhtml *ph;    
+	GttGhtml *gh;    
 	GtkHTML *htmlw;
 	GtkHTMLStream *handle;
 	GtkWidget *top;
@@ -223,6 +225,7 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 	edit_interval_dialog_destroy (wig->edit_ivl);
 	gtk_widget_destroy (wig->top);
 	gtt_phtml_destroy (wig->ph);
+	gtt_ghtml_destroy (wig->gh);
 	g_free (wig->filepath);
 	g_free (wig);
 }
@@ -323,7 +326,7 @@ html_on_url_cb(GtkHTML * html, const gchar * url, gpointer data)
 /* ============================================================== */
 
 static void
-do_show_report (const char * report, GttProject *prj)
+do_show_report (const char * report, GttProject *prj, int is_scheme)
 {
 	GtkWidget *jnl_top, *jnl_viewport, *jnl_browser;
 	GladeXML  *glxml;
@@ -349,6 +352,10 @@ do_show_report (const char * report, GttProject *prj)
 	wig->htmlw = GTK_HTML(jnl_browser);
 	wig->ph = gtt_phtml_new();
 	gtt_phtml_set_stream (wig->ph, wig, wiggy_open, wiggy_write, 
+		wiggy_close, wiggy_error);
+	
+	wig->gh = gtt_ghtml_new();
+	gtt_ghtml_set_stream (wig->gh, wig, wiggy_open, wiggy_write, 
 		wiggy_close, wiggy_error);
 	
 	glade_xml_signal_connect_data (glxml, "on_close_clicked",
@@ -405,7 +412,14 @@ do_show_report (const char * report, GttProject *prj)
 	else 
 	{
 		gtt_project_add_notifier (prj, redraw, wig);
-		gtt_phtml_display (wig->ph, report, prj);
+		if (is_scheme)
+		{
+			gtt_ghtml_display (wig->gh, report, prj);
+		}
+		else
+		{
+			gtt_phtml_display (wig->ph, report, prj);
+		}
 	}
 }
 
@@ -441,7 +455,7 @@ edit_journal(GtkWidget *w, gpointer data)
 {
 	char * path;
 	path = resolve_path ("journal.phtml");
-	do_show_report (path, cur_proj);
+	do_show_report (path, cur_proj, 0);
 }
 
 void
@@ -449,7 +463,7 @@ edit_alldata(GtkWidget *w, gpointer data)
 {
 	char * path;
 	path = resolve_path ("alldata.phtml");
-	do_show_report (path, cur_proj);
+	do_show_report (path, cur_proj, 0);
 }
 
 void
@@ -457,7 +471,7 @@ edit_invoice(GtkWidget *w, gpointer data)
 {
 	char * path;
 	path = resolve_path ("invoice.phtml");
-	do_show_report (path, cur_proj);
+	do_show_report (path, cur_proj, 0);
 }
 
 void
@@ -466,7 +480,7 @@ invoke_report(GtkWidget *widget, gpointer data)
 	char * filepath = (char *) data;
 
 	/* do not gnome-filepath this, this is for user-defined reports */
-	do_show_report (filepath, cur_proj);
+	do_show_report (filepath, cur_proj, 1);
 }
 
 /* ===================== END OF FILE ==============================  */
