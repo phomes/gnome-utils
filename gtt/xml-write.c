@@ -125,6 +125,33 @@ gtt_xml_task_to_dom_tree (GttTask *task)
 		xmlNodeAddContent(node, str);
 		xmlAddChild (topnode, node);
 	}
+	{
+		GttBillable billable = gtt_task_get_billable(task);
+		switch (billable)
+		{
+			case GTT_HOLD: str = "HOLD"; break;
+			case GTT_BILLABLE: str = "BILLABLE"; break;
+			case GTT_NOT_BILLABLE: str = "NOT_BILLABLE"; break;
+			case GTT_NO_CHARGE: str = "NO_CHARGE"; break;
+		}
+		node = xmlNewNode (NULL, "billable");
+		xmlNodeAddContent(node, str);
+		xmlAddChild (topnode, node);
+	}
+
+	{
+		GttBillRate billrate = gtt_task_get_billrate(task);
+		switch (billrate)
+		{
+			case GTT_REGULAR: str = "REGULAR"; break;
+			case GTT_OVERTIME: str = "OVERTIME"; break;
+			case GTT_OVEROVER: str = "OVEROVER"; break;
+			case GTT_FLAT_FEE: str = "FLAT_FEE"; break;
+		}
+		node = xmlNewNode (NULL, "billrate");
+		xmlNodeAddContent(node, str);
+		xmlAddChild (topnode, node);
+	}
 
 	/* add list of intervals */
 	p = gtt_task_get_intervals (task);

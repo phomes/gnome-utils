@@ -129,6 +129,28 @@ parse_task (xmlNodePtr task)
 			gtt_task_set_notes (tsk, str);
 		} 
 		else
+		if (0 == strcmp ("billable", node->name))
+		{
+			GttBillable billable = GTT_HOLD;
+			str = GET_TEXT (node);
+			if (!strcmp ("HOLD", str)) billable=GTT_HOLD;
+			else if (!strcmp ("BILLABLE", str)) billable=GTT_BILLABLE;
+			else if (!strcmp ("NOT_BILLABLE", str)) billable=GTT_NOT_BILLABLE;
+			else if (!strcmp ("NO_CHARGE", str)) billable=GTT_NO_CHARGE;
+			gtt_task_set_billable (tsk, billable);
+		} 
+		else
+		if (0 == strcmp ("billrate", node->name))
+		{
+			GttBillRate billrate = GTT_REGULAR;
+			str = GET_TEXT (node);
+			if (!strcmp ("REGULAR", str)) billrate=GTT_REGULAR;
+			else if (!strcmp ("OVERTIME", str)) billrate=GTT_OVERTIME;
+			else if (!strcmp ("OVEROVER", str)) billrate=GTT_OVEROVER;
+			else if (!strcmp ("FLAT_FEE", str)) billrate=GTT_FLAT_FEE;
+			gtt_task_set_billrate (tsk, billrate);
+		} 
+		else
 		if (0 == strcmp ("interval-list", node->name))
 		{
 			xmlNodePtr tn;
