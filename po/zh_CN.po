@@ -8,25 +8,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2004-10-12 12:03+1300\n"
-"PO-Revision-Date: 2004-08-11 23:19+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-12-11 21:08+0100\n"
+"PO-Revision-Date: 2004-12-12 05:23+0800\n"
 "Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "附件"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:144
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:168
 msgid "Dictionary Lookup"
 msgstr "查字典"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3 gdictsrc/gdict-applet.c:160
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3 gdictsrc/gdict-applet.c:38
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "在在线字典中查阅单词"
@@ -74,7 +74,7 @@ msgstr ""
 "Wang Li <charlesw1234@163.com>\n"
 "Funda Wang <fundawang@linux.net.cn>"
 
-#: gdictsrc/gdict-about.c:56 gdictsrc/gdict-app.c:925
+#: gdictsrc/gdict-about.c:56 gdictsrc/gdict-app.c:921
 #: gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "字典"
@@ -91,35 +91,35 @@ msgstr "正在检查拼写..."
 msgid "Spell check done"
 msgstr "拼写检查完成"
 
-#: gdictsrc/gdict-app.c:143 gdictsrc/gdict-app.c:290
+#: gdictsrc/gdict-app.c:143 gdictsrc/gdict-app.c:287
 msgid "No matches found"
 msgstr "找不到匹配"
 
-#: gdictsrc/gdict-app.c:273
+#: gdictsrc/gdict-app.c:270
 msgid "Looking up word..."
 msgstr "正在搜索单词..."
 
-#: gdictsrc/gdict-app.c:281
+#: gdictsrc/gdict-app.c:278
 msgid "Lookup done"
 msgstr "搜索完成"
 
-#: gdictsrc/gdict-app.c:303
+#: gdictsrc/gdict-app.c:300
 msgid "String not found"
 msgstr "找不到字符串"
 
-#: gdictsrc/gdict-app.c:471
+#: gdictsrc/gdict-app.c:467
 msgid "Find"
 msgstr "查找"
 
-#: gdictsrc/gdict-app.c:479
+#: gdictsrc/gdict-app.c:475
 msgid "_Search for:"
 msgstr "搜索(_S)："
 
-#: gdictsrc/gdict-app.c:492
+#: gdictsrc/gdict-app.c:488
 msgid "_Find"
 msgstr "查找(_F)"
 
-#: gdictsrc/gdict-app.c:534
+#: gdictsrc/gdict-app.c:530
 msgid ""
 "Unable to perform requested operation. \n"
 "Either the server you are using is not available \n"
@@ -129,53 +129,53 @@ msgstr ""
 "要么您正使用的服务器不可用\n"
 "要么您没有连接到 Internet。"
 
-#: gdictsrc/gdict-app.c:697 gdictsrc/gdict-app.c:952
+#: gdictsrc/gdict-app.c:693 gdictsrc/gdict-app.c:948
 #: gdictsrc/gdict-speller.c:214
 msgid "_Look Up Word"
 msgstr "查阅单词(_L)"
 
-#: gdictsrc/gdict-app.c:698
+#: gdictsrc/gdict-app.c:694
 msgid "Lookup word in dictionary"
 msgstr "在字典中查阅单词"
 
-#: gdictsrc/gdict-app.c:700 gdictsrc/gdict-speller.c:160
+#: gdictsrc/gdict-app.c:696 gdictsrc/gdict-speller.c:160
 msgid "Check _Spelling"
 msgstr "检查拼写(_S)"
 
-#: gdictsrc/gdict-app.c:701
+#: gdictsrc/gdict-app.c:697
 msgid "Check word spelling"
 msgstr "检查单词的拼写"
 
-#: gdictsrc/gdict-app.c:745
+#: gdictsrc/gdict-app.c:741
 msgid "_Dictionary"
 msgstr "字典(_D)"
 
-#: gdictsrc/gdict-app.c:948 gdictsrc/gdict-speller.c:134
+#: gdictsrc/gdict-app.c:944 gdictsrc/gdict-speller.c:134
 msgid "_Word:"
 msgstr "单词(_W)："
 
-#: gdictsrc/gdict-app.c:976 gdictsrc/gdict-speller.c:146
+#: gdictsrc/gdict-app.c:972 gdictsrc/gdict-speller.c:146
 msgid "Word"
 msgstr "单词"
 
-#: gdictsrc/gdict-app.c:977 gdictsrc/gdict-app.c:978
+#: gdictsrc/gdict-app.c:973 gdictsrc/gdict-app.c:974
 #: gdictsrc/gdict-speller.c:147
 msgid "Word Entry"
 msgstr "单词条目"
 
-#: gdictsrc/gdict-app.c:977
+#: gdictsrc/gdict-app.c:973
 msgid "Enter a Word or select one from the list below"
 msgstr "输入一个单词或从下面的列表中选择一个单词"
 
-#: gdictsrc/gdict-app.c:980
+#: gdictsrc/gdict-app.c:976
 msgid "Look Up for a Word"
 msgstr "搜索一个单词"
 
-#: gdictsrc/gdict-applet.c:137
+#: gdictsrc/gdict-applet.c:159
 msgid "_Lookup"
 msgstr "搜索(_L)"
 
-#: gdictsrc/gdict-applet.c:148
+#: gdictsrc/gdict-applet.c:173
 msgid "Dictionary word entry"
 msgstr "字典单项"
 
@@ -774,9 +774,9 @@ msgstr "格式化进度"
 msgid "Find files, folders, and documents on your computer"
 msgstr "在您的计算机上查找文件、文件夹和文档"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:2 gsearchtool/gsearchtool.c:600
-#: gsearchtool/gsearchtool.c:858 gsearchtool/gsearchtool.c:942
-#: gsearchtool/gsearchtool.c:2288 gsearchtool/gsearchtool.c:2313
+#: gsearchtool/gnome-search-tool.desktop.in.h:2 gsearchtool/gsearchtool.c:629
+#: gsearchtool/gsearchtool.c:887 gsearchtool/gsearchtool.c:971
+#: gsearchtool/gsearchtool.c:2317 gsearchtool/gsearchtool.c:2342
 msgid "Search for Files"
 msgstr "搜索文件"
 
@@ -963,23 +963,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:511
+#: gsearchtool/gsearchtool-support.c:515
 msgid "today at %-I:%M %p"
 msgstr "今天 %H:%M"
 
-#: gsearchtool/gsearchtool-support.c:513
+#: gsearchtool/gsearchtool-support.c:517
 msgid "yesterday at %-I:%M %p"
 msgstr "昨天 %H:%M"
 
-#: gsearchtool/gsearchtool-support.c:515 gsearchtool/gsearchtool-support.c:517
+#: gsearchtool/gsearchtool-support.c:519 gsearchtool/gsearchtool-support.c:521
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%Y年%-m月%-d日 %H:%M:%S"
 
-#: gsearchtool/gsearchtool-support.c:688
+#: gsearchtool/gsearchtool-support.c:692
 msgid "link (broken)"
 msgstr "链接(已断开)"
 
-#: gsearchtool/gsearchtool-support.c:693
+#: gsearchtool/gsearchtool-support.c:697
 #, c-format
 msgid "link to %s"
 msgstr "链接到 %s"
@@ -1034,7 +1034,7 @@ msgstr "名称不包含(_M)"
 
 #: gsearchtool/gsearchtool.c:88
 msgid "Name matches regular e_xpression"
-msgstr "名城匹配正则表达式(_X)"
+msgstr "名称匹配正则表达式(_X)"
 
 #: gsearchtool/gsearchtool.c:90
 msgid "Show hidden and backup files"
@@ -1048,68 +1048,68 @@ msgstr "跟随符号连接"
 msgid "Include other filesystems"
 msgstr "包括其它文件系统"
 
-#: gsearchtool/gsearchtool.c:547 gsearchtool/gsearchtool.c:575
+#: gsearchtool/gsearchtool.c:576 gsearchtool/gsearchtool.c:604
 msgid "No files found"
 msgstr "未找到文件"
 
-#: gsearchtool/gsearchtool.c:568
+#: gsearchtool/gsearchtool.c:597
 msgid "(stopped)"
 msgstr "(已停止)"
 
-#: gsearchtool/gsearchtool.c:574
+#: gsearchtool/gsearchtool.c:603
 msgid "No Files Found"
 msgstr "未找到文件"
 
-#: gsearchtool/gsearchtool.c:579
+#: gsearchtool/gsearchtool.c:608
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "找到了 %d 个文件"
 
-#: gsearchtool/gsearchtool.c:583
+#: gsearchtool/gsearchtool.c:612
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "找到了 %d 个文件"
 
-#: gsearchtool/gsearchtool.c:689
+#: gsearchtool/gsearchtool.c:718
 msgid "Entry changed called for a non entry option!"
 msgstr "已改变的条目调用非条目选项！"
 
-#: gsearchtool/gsearchtool.c:942
+#: gsearchtool/gsearchtool.c:971
 msgid "Searching..."
 msgstr "正在搜索..."
 
-#: gsearchtool/gsearchtool.c:963
+#: gsearchtool/gsearchtool.c:992
 msgid "Set the text of 'Name contains'"
 msgstr "设置“名称包含”的文字"
 
-#: gsearchtool/gsearchtool.c:964
+#: gsearchtool/gsearchtool.c:993
 msgid "Set the text of 'Look in folder'"
 msgstr "设置“搜索文件夹”的文字"
 
-#: gsearchtool/gsearchtool.c:965
+#: gsearchtool/gsearchtool.c:994
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "按下列属性之一排序文件：名称、文件夹、大小、类型或日期"
 
-#: gsearchtool/gsearchtool.c:966
+#: gsearchtool/gsearchtool.c:995
 msgid "Set sort order to descending, the default is ascending"
 msgstr "设置为降序排序，默认值为升序排序"
 
-#: gsearchtool/gsearchtool.c:967
+#: gsearchtool/gsearchtool.c:996
 msgid "Automatically start a search"
 msgstr "自动开始搜索"
 
-#: gsearchtool/gsearchtool.c:972
+#: gsearchtool/gsearchtool.c:1001
 #, c-format
 msgid "Select the '%s' constraint"
 msgstr "选择“%s”约束条件"
 
-#: gsearchtool/gsearchtool.c:1078
+#: gsearchtool/gsearchtool.c:1107
 msgid "Invalid option passed to sortby command line argument."
 msgstr "传递给命令行参数 sortby 的选项无效。"
 
-#: gsearchtool/gsearchtool.c:1350
+#: gsearchtool/gsearchtool.c:1379
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1117,129 +1117,129 @@ msgstr ""
 "\n"
 "... 错误太多无法完全显示 ..."
 
-#: gsearchtool/gsearchtool.c:1359
+#: gsearchtool/gsearchtool.c:1388
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr "搜索结果可能无效，因为在执行本次搜索时发生了错误。"
 
-#: gsearchtool/gsearchtool.c:1380
+#: gsearchtool/gsearchtool.c:1409
 msgid ""
 "The search results may be invalid.  Do you want to disable the quick search "
 "feature?"
 msgstr "搜索结果可能无效。您是否想要禁用快速搜索特性？"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1417
 msgid "Disable _Quick Search"
 msgstr "禁用快速搜索(_Q)"
 
-#: gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1461
 msgid "Error parsing the search command."
 msgstr "处理搜索命令时出错。"
 
-#: gsearchtool/gsearchtool.c:1461
+#: gsearchtool/gsearchtool.c:1490
 msgid "Error running the search command."
 msgstr "运行搜索命令时出错。"
 
-#: gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gsearchtool.c:1601
 #, c-format
 msgid "'%s' entry"
 msgstr "“%s”项"
 
-#: gsearchtool/gsearchtool.c:1573
+#: gsearchtool/gsearchtool.c:1602
 msgid "Enter a value for search rule"
 msgstr "输入搜索规则的值"
 
-#: gsearchtool/gsearchtool.c:1620
+#: gsearchtool/gsearchtool.c:1649
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "单击以删除“%s”规则"
 
-#: gsearchtool/gsearchtool.c:1675
+#: gsearchtool/gsearchtool.c:1704
 msgid "A_vailable options:"
 msgstr "可用选项(_V)："
 
-#: gsearchtool/gsearchtool.c:1688
+#: gsearchtool/gsearchtool.c:1717
 msgid "Search Rules Menu"
 msgstr "搜索规则菜单"
 
-#: gsearchtool/gsearchtool.c:1689
+#: gsearchtool/gsearchtool.c:1718
 msgid "Select a search rule from the menu"
 msgstr "从菜单中选择搜索规则"
 
-#: gsearchtool/gsearchtool.c:1720
+#: gsearchtool/gsearchtool.c:1749
 msgid "S_earch results:"
 msgstr "搜索结果(_E)："
 
-#: gsearchtool/gsearchtool.c:1800
+#: gsearchtool/gsearchtool.c:1829
 msgid "Name"
 msgstr "名称"
 
-#: gsearchtool/gsearchtool.c:1820
+#: gsearchtool/gsearchtool.c:1849
 msgid "Folder"
 msgstr "文件夹"
 
-#: gsearchtool/gsearchtool.c:1831
+#: gsearchtool/gsearchtool.c:1860
 msgid "Size"
 msgstr "大小"
 
-#: gsearchtool/gsearchtool.c:1841
+#: gsearchtool/gsearchtool.c:1870
 msgid "Type"
 msgstr "类型"
 
-#: gsearchtool/gsearchtool.c:1851
+#: gsearchtool/gsearchtool.c:1880
 msgid "Date Modified"
 msgstr "修改时间"
 
-#: gsearchtool/gsearchtool.c:1909
+#: gsearchtool/gsearchtool.c:1938
 msgid "_Name contains:"
 msgstr "名称包含(_N)："
 
-#: gsearchtool/gsearchtool.c:1924 gsearchtool/gsearchtool.c:1925
+#: gsearchtool/gsearchtool.c:1953 gsearchtool/gsearchtool.c:1954
 msgid "Enter the file name you want to search"
 msgstr "输入要搜索的文件名"
 
-#: gsearchtool/gsearchtool.c:1925
+#: gsearchtool/gsearchtool.c:1954
 msgid "Name Contains Entry"
 msgstr "名称包含项"
 
-#: gsearchtool/gsearchtool.c:1936
+#: gsearchtool/gsearchtool.c:1965
 msgid "_Look in folder:"
 msgstr "搜索文件夹(_L)："
 
-#: gsearchtool/gsearchtool.c:1942
+#: gsearchtool/gsearchtool.c:1971
 msgid "Browse"
 msgstr "浏览"
 
-#: gsearchtool/gsearchtool.c:1953 gsearchtool/gsearchtool.c:1954
+#: gsearchtool/gsearchtool.c:1982 gsearchtool/gsearchtool.c:1983
 msgid "Enter the folder name where you want to start the search"
 msgstr "输入开始进行搜索的文件夹名称"
 
-#: gsearchtool/gsearchtool.c:1954
+#: gsearchtool/gsearchtool.c:1983
 msgid "Look in Folder Entry"
 msgstr "在文件夹项中查找"
 
-#: gsearchtool/gsearchtool.c:1972
+#: gsearchtool/gsearchtool.c:2001
 msgid "Show more _options"
 msgstr "显示更多选项(_O)"
 
-#: gsearchtool/gsearchtool.c:1982
+#: gsearchtool/gsearchtool.c:2011
 msgid "Show more options"
 msgstr "显示更多选项"
 
-#: gsearchtool/gsearchtool.c:1982
+#: gsearchtool/gsearchtool.c:2011
 msgid "Expands or collapses a list of search options."
 msgstr "展开或折叠搜索选项列表。"
 
-#: gsearchtool/gsearchtool.c:2029
+#: gsearchtool/gsearchtool.c:2058
 msgid "Click to Start the search"
 msgstr "单击开始搜索"
 
-#: gsearchtool/gsearchtool.c:2030
+#: gsearchtool/gsearchtool.c:2059
 msgid "Click to Stop the search"
 msgstr "单击停止搜索"
 
-#: gsearchtool/gsearchtool.c:2309
+#: gsearchtool/gsearchtool.c:2338
 msgid "Cannot initialize bonobo."
 msgstr "无法初始化 bonobo。"
 
@@ -1517,19 +1517,23 @@ msgid "December"
 msgstr "十二月"
 
 #. Translators: Date only format, %x should well do really
-#: logview/log_repaint.c:394
+#: logview/log_repaint.c:395
 #, c-format
 msgid "%x"
 msgstr "%x"
 
+#: logview/log_repaint.c:419
+msgid "Last Modified: "
+msgstr "上次修改时间："
+
 #. Translators: Make sure this is only Month and Day format, year
 #. * will be bogus here
-#: logview/log_repaint.c:449
+#: logview/log_repaint.c:448
 msgid "%B %e"
 msgstr "%m-%d"
 
 #. Translators: should be only the time, date could be bogus
-#: logview/log_repaint.c:521
+#: logview/log_repaint.c:520
 #, c-format
 msgid "%X"
 msgstr "%X"
@@ -1570,19 +1574,19 @@ msgstr "%s 不是日志文件。"
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats：内存耗尽"
 
-#: logview/logview.c:100
+#: logview/logview.c:101
 msgid "S_witch Log"
 msgstr "切换日志(_W)"
 
-#: logview/logview.c:101
+#: logview/logview.c:102
 msgid "Switch between already opened logs"
 msgstr "在打开的日志之间切换"
 
-#: logview/logview.c:107
+#: logview/logview.c:108
 msgid "_Monitor..."
 msgstr "监视(_M)..."
 
-#: logview/logview.c:108
+#: logview/logview.c:109
 msgid "Monitor Logs"
 msgstr "监视日志"
 
@@ -1646,19 +1650,15 @@ msgstr "进程"
 msgid "Message"
 msgstr "消息"
 
-#: logview/logview.c:474
-msgid "Last Modified: "
-msgstr "上次修改时间："
-
-#: logview/logview.c:573 logview/logview.c:648
+#: logview/logview.c:541 logview/logview.c:604
 msgid "Too many open logs. Close one and try again"
 msgstr "打开的日志太多。关闭一个并重试"
 
-#: logview/logview.c:585
+#: logview/logview.c:553
 msgid "File already opened"
 msgstr "文件已经打开"
 
-#: logview/logview.c:661
+#: logview/logview.c:616
 msgid "Open new logfile"
 msgstr "打开新的日志文件"
 
@@ -1717,6 +1717,7 @@ msgid "Too many logs to monitor. Remove one and try again"
 msgstr "要监视的日志过多。请删除一个，然后重试"
 
 #: logview/monitor.c:301 logview/monitor.c:338
+#, c-format
 msgid "tmp_list is NULL\n"
 msgstr "tmp_list 为 NULL\n"
 
@@ -1725,6 +1726,7 @@ msgid "Monitoring Logs..."
 msgstr "正在监视日志..."
 
 #: logview/monitor.c:667
+#, c-format
 msgid "TOUCHED!!\n"
 msgstr "已更新！！\n"
 
