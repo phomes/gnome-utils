@@ -55,7 +55,6 @@ GttProject *prev_proj = NULL;
 ProjTreeWindow *global_ptw;
 GtkWidget *window;
 GtkWidget *glist;
-GtkWidget *main_vbox;
 GtkWidget *status_bar;
 
 #ifdef GTK_USE_STATUSBAR
@@ -239,7 +238,6 @@ void app_new(int argc, char *argv[], const char *geometry_string)
 
         global_ptw = ctree_new();
         glist = ctree_get_widget(global_ptw);
-	main_vbox = vbox;
 
 	gtk_box_pack_end(GTK_BOX(vbox), glist->parent, TRUE, TRUE, 0);
 

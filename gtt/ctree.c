@@ -386,6 +386,11 @@ printf ("before sibl %s\n\n", gtt_project_get_desc(
  * set a column type, and use a big switch statement.  Beacuse this
  * is a small prioject, we'll just use a switch statement.  Seems
  * easier.
+ *
+ * Note also we have implemented a general system here, that 
+ * allows us to show columns in any order, or the same column
+ * more than once.   However, we do not actually make use of
+ * this anywhere; at the moment, the column locatins are fixed.
  */ 
 
 static void 
@@ -397,17 +402,12 @@ ctree_init_cols (ProjTreeWindow *ptw)
 	i=0; ptw->cols[i] = TIME_EVER_COL;
 	i++; ptw->cols[i] = TIME_TODAY_COL;
 	i++; ptw->cols[i] = TITLE_COL;
-	if (config_show_title_desc) {
-		i++; ptw->cols[i] = DESC_COL;
-	}
-	if (config_show_title_task) {
-		i++; ptw->cols[i] = TASK_COL;
-	}
+	i++; ptw->cols[i] = DESC_COL;
+	i++; ptw->cols[i] = TASK_COL;
 	i++; ptw->cols[i] = NULL_COL;
 	ptw->ncols = i;
 
 	/* set column titles */
-	i=0;
 	for (i=0; NULL_COL != ptw->cols[i]; i++)
 	{
 		switch (ptw->cols[i])
@@ -442,13 +442,46 @@ ctree_init_cols (ProjTreeWindow *ptw)
 
 /* ============================================================== */
 
+void 
+ctree_update_column_visibility (ProjTreeWindow *ptw)
+{
+	int i;
+
+	/* set column visibility */
+	for (i=0; NULL_COL != ptw->cols[i]; i++)
+	{
+		switch (ptw->cols[i])
+		{
+		case TIME_EVER_COL:
+			break;
+		case TIME_TODAY_COL:
+			break;
+		case TITLE_COL:
+			break;
+		case DESC_COL:
+		gtk_clist_set_column_visibility (GTK_CLIST(ptw->ctree), i, 
+				config_show_title_desc);
+printf ("duuude desc vis=%d\n", config_show_title_desc);
+			break;
+		case TASK_COL:
+		gtk_clist_set_column_visibility (GTK_CLIST(ptw->ctree), i, 
+				config_show_title_task);
+printf ("duuude task vis=%d\n", config_show_title_task);
+			break;
+		case NULL_COL:
+			break;
+		}
+	}
+}
+
+/* ============================================================== */
+
 static void 
 ctree_col_values (ProjTreeWindow *ptw, GttProject *prj)
 {
 	int i;
 
 	/* set column values */
-	i=0;
 	for (i=0; NULL_COL != ptw->cols[i]; i++)
 	{
 		switch (ptw->cols[i])
@@ -541,6 +574,7 @@ ctree_new(void)
 	gtk_clist_set_selection_mode(GTK_CLIST(w), GTK_SELECTION_SINGLE);
 
 	gtk_widget_set_usize(w, -1, 120);
+	ctree_update_column_visibility (ptw);
 
 	/* create the top-level window to hold the c-tree */
 	sw = gtk_scrolled_window_new (NULL, NULL);
@@ -689,16 +723,12 @@ void
 ctree_destroy (ProjTreeWindow *ptw)
 {
 
-	int i, nrows;
+	/* hack alert -- this function is not usable in its
+	 * current form */
+	g_warning ("incompletely implemented.  should probably "
+		"traverse and destroy ptn's\n");
+	// ctree_remove (ptw, ptn->prj);
 
-	nrows = GTK_CLIST(ptw->ctree)->rows;
-	for (i=0; i<nrows; i++)
-	{
-		ProjTreeNode *ptn;
-		ptn = gtk_clist_get_row_data (GTK_CLIST(ptw->ctree), i);
-		if (ptn) ctree_remove (ptw, ptn->prj);
-else printf ("duuude no ptn on row %d\n", i);
-	}
 	gtk_widget_destroy (GTK_WIDGET(ptw->ctree));
 	ptw->ctree = NULL;
 	ptw->ncols = 0;
@@ -715,18 +745,20 @@ ctree_add (ProjTreeWindow *ptw, GttProject *p, GtkCTreeNode *parent)
 
 	ctree_col_values (ptw, p);
 
-	ptn = g_new0 (ProjTreeNode, 1);
-
-	ptn->ptw = ptw;
-	ptn->prj = p;
+	ptn = gtt_project_get_private_data (p);
+	if (!ptn)
+	{
+		ptn = g_new0 (ProjTreeNode, 1);
+		ptn->ptw = ptw;
+		ptn->prj = p;
+		gtt_project_set_private_data (p, ptn);
+		gtt_project_add_notifier (p, redraw, ptn);
+	}
 	ptn->ctnode = gtk_ctree_insert_node (ptw->ctree,  parent, NULL,
                                ptw->col_values, 0, NULL, NULL, NULL, NULL,
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
-	gtt_project_set_private_data (p, ptn);
-
-	gtt_project_add_notifier (p, redraw, ptn);
 
 	/* make sure children get moved over also */
 	for (n=gtt_project_get_children(p); n; n=n->next)
@@ -759,20 +791,21 @@ ctree_insert_before (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 		sibnode = ptn->ctnode;
 	}
 
-	ptn = g_new0 (ProjTreeNode, 1);
-
-	ptn->ptw = ptw;
-	ptn->prj = p;
+	ptn = gtt_project_get_private_data (p);
+	if (!ptn)
+	{
+		ptn = g_new0 (ProjTreeNode, 1);
+		ptn->ptw = ptw;
+		ptn->prj = p;
+		gtt_project_set_private_data (p, ptn);
+		gtt_project_add_notifier (p, redraw, ptn);
+	}
 	ptn->ctnode = gtk_ctree_insert_node (ptw->ctree,  
                                parentnode, sibnode,
                                ptw->col_values, 0, NULL, NULL, NULL, NULL,
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
-
-	gtt_project_set_private_data (p, ptn);
-	gtt_project_add_notifier (p, redraw, ptn);
-
 }
 
 /* ============================================================== */
@@ -805,19 +838,21 @@ ctree_insert_after (ProjTreeWindow *ptw, GttProject *p, GttProject *sibling)
 		   (GTK_CTREE_ROW(next_sibling)->parent != parentnode)) next_sibling = NULL;
 	}
 
-	ptn = g_new0 (ProjTreeNode, 1);
-
-	ptn->ptw = ptw;
-	ptn->prj = p;
+	ptn = gtt_project_get_private_data (p);
+	if (!ptn)
+	{
+		ptn = g_new0 (ProjTreeNode, 1);
+		ptn->ptw = ptw;
+		ptn->prj = p;
+		gtt_project_set_private_data (p, ptn);
+		gtt_project_add_notifier (p, redraw, ptn);
+	}
 	ptn->ctnode = gtk_ctree_insert_node (ptw->ctree,  
                                parentnode, next_sibling,
                                ptw->col_values, 0, NULL, NULL, NULL, NULL,
                                FALSE, FALSE);
 
 	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, ptn);
-
-	gtt_project_set_private_data (p, ptn);
-	gtt_project_add_notifier (p, redraw, ptn);
 }
 
 /* ============================================================== */
@@ -911,6 +946,7 @@ ctree_select (ProjTreeWindow *ptw, GttProject *p)
 	if (!ptw || !p) return;
 	ptn = gtt_project_get_private_data (p);
 	g_return_if_fail (NULL != ptn);
+
 	gtk_ctree_select(ptw->ctree, ptn->ctnode);
 }
 

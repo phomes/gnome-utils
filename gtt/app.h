@@ -26,7 +26,6 @@ extern ProjTreeWindow *global_ptw;
 
 extern GtkWidget *window;
 extern GtkWidget *glist;
-extern GtkWidget *main_vbox;
 extern GtkWidget *status_bar;
 
 /* true if command line over-rides geometry */

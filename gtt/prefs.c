@@ -26,6 +26,7 @@
 
 #include "app.h"
 #include "ctree.h"
+#include "cur-proj.h"
 #include "gtt.h"
 #include "prefs.h"
 #include "timer.h"
@@ -180,13 +181,7 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 		}
 		if (change)
 		{
-printf ("duude changed !!\n");
-			ctree_destroy (global_ptw);
-			global_ptw = ctree_new ();
-			glist = ctree_get_widget(global_ptw);
-			gtk_box_pack_end(GTK_BOX(main_vbox), glist->parent, TRUE, TRUE, 0);
-
-			ctree_setup (global_ptw);
+			ctree_update_column_visibility (global_ptw);
 		}
 	
 	}

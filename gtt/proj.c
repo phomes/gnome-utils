@@ -206,6 +206,7 @@ gtt_project_destroy(GttProject *proj)
 		}
 		if (proj->listeners) g_list_free (proj->listeners);
 	}
+	proj->private_data = NULL;
 	g_free(proj);
 }
 

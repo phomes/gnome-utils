@@ -46,6 +46,7 @@ void ctree_update_desc(ProjTreeWindow *, GttProject *p);
 void ctree_unselect(ProjTreeWindow *, GttProject *p);
 void ctree_select(ProjTreeWindow *, GttProject *p);
 
+void ctree_update_column_visibility (ProjTreeWindow *ptw);
 void ctree_titles_show (ProjTreeWindow *ptw);
 void ctree_titles_hide (ProjTreeWindow *ptw);
 void ctree_subproj_show (ProjTreeWindow *ptw);
