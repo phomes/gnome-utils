@@ -1,8 +1,22 @@
+gnome-utils 1.4.1.1 (2001-10-20)
+
+general:
+	* Fixes to configure/makefile setup (Abel Cheung, Adrian Bunk, moi)
+	* spec file file list fixes (moi) 
+	* Translation updates.  (Stanislav Visnovsky, Carlos Perelló Marín,
+	  Duarte Loreto, Gustavo Maciel Dias Vieira)
+
+gtt:
+	* coredump fixes (Jeff Putsch, Linas Vepstas)
+	* column drawing fixes (Linas Vepstas)
+	* fix for printing dates, titles and tooltips (Linas Vepstas)
+	* updated man page (Linas Vepstas)
+
 gnome-utils 1.4.1 (2001-10-04)
 
 general:
-	Translation updates.  (Christian Rose, Stanislav Visnovsky,
-	Kjartan Maraas, Linas Vepstas, Pablo Saratxaga)
+	* Translation updates.  (Christian Rose, Stanislav Visnovsky,
+	  Kjartan Maraas, Linas Vepstas, Pablo Saratxaga)
 
 gtt:
 	* Many new things including: UI for custom reports, Uses guile
