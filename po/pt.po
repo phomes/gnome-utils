@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2002-04-24 02:52+0100\n"
-"PO-Revision-Date: 2002-04-24 02:54+0100\n"
+"POT-Creation-Date: 2002-05-23 03:28+0200\n"
+"PO-Revision-Date: 2002-05-24 04:05+0100\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -1526,7 +1526,7 @@ msgstr "Criar um Novo Projecto..."
 msgid "Reload"
 msgstr "Reler"
 
-#: gtt/toolbar.c:170 gtt/glade/journal.glade.h:7 stripchart/params.c:939
+#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
 msgid "Save"
 msgstr "Gravar"
 
@@ -1546,7 +1546,7 @@ msgstr "Copiar Projecto Seleccionado"
 msgid "Paste Project"
 msgstr "Colar Projecto"
 
-#: gtt/toolbar.c:193 gtt/glade/journal.glade.h:2
+#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
 msgid "Journal"
 msgstr "Diário"
 
@@ -2885,20 +2885,20 @@ msgid "GColorsel"
 msgstr "GSelecçãoCores"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:1
-msgid "&lt;- Remove"
-msgstr "&lt;- Remover"
+msgid "<- Remove"
+msgstr "<- Remover"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:2
-msgid "&lt;- Remove all"
-msgstr "&lt;- Remover todos"
+msgid "<- Remove all"
+msgstr "<- Remover todos"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:3
-msgid "Add -&gt;"
-msgstr "Adicionar -&gt;"
+msgid "Add ->"
+msgstr "Adicionar ->"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:4
-msgid "Add all -&gt;"
-msgstr "Adicionar todos -&gt;"
+msgid "Add all ->"
+msgstr "Adicionar todos ->"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:5
 msgid "Available documents"
@@ -3700,8 +3700,8 @@ msgstr "Fazer guname comportar-se como uma applet de centro de controlo"
 msgid "an initialization error occurred while starting 'guname-capplet'."
 msgstr "um erro de inicialização ocorreu ao iniciar 'guname-capplet'."
 
-#: mini-utils/guname/guname.c:446
 #: mini-utils/guname/guname-capplet.desktop.in.h:2
+#: mini-utils/guname/guname.c:446
 msgid "System Information"
 msgstr "Informação do Sistema"
 
@@ -4321,27 +4321,27 @@ msgstr ""
 msgid "ECould not determine current format type"
 msgstr "Incapaz de determinar tipo de formato actual"
 
-#: gfloppy/src/gfloppy.glade.h:1 gfloppy/src/gfloppy-i18n.h:9
+#: gfloppy/src/gfloppy-i18n.h:9 gfloppy/src/gfloppy.glade.h:1
 msgid "Dos (FAT)"
 msgstr "Dos (FAT)"
 
-#: gfloppy/src/gfloppy.glade.h:2 gfloppy/src/gfloppy-i18n.h:15
+#: gfloppy/src/gfloppy-i18n.h:15 gfloppy/src/gfloppy.glade.h:2
 msgid "Double Density 3.5\" (720 KB)"
 msgstr "Dupla Densidade 3.5\" (720 KB)"
 
-#: gfloppy/src/gfloppy.glade.h:3 gfloppy/src/gfloppy-i18n.h:16
+#: gfloppy/src/gfloppy-i18n.h:16 gfloppy/src/gfloppy.glade.h:3
 msgid "Double Density 5.25\" (360 KB)"
 msgstr "Dupla Densidade 5.25\" (360 KB)"
 
-#: gfloppy/src/gfloppy.glade.h:4 gfloppy/src/gfloppy-i18n.h:12
+#: gfloppy/src/gfloppy-i18n.h:12 gfloppy/src/gfloppy.glade.h:4
 msgid "File system type:"
 msgstr " Tipo de sistema de ficheiros: "
 
-#: gfloppy/src/gfloppy.glade.h:5 gfloppy/src/gfloppy-i18n.h:11
+#: gfloppy/src/gfloppy-i18n.h:11 gfloppy/src/gfloppy.glade.h:5
 msgid "Floppy Density:"
 msgstr "Desidade da Disquete:"
 
-#: gfloppy/src/gfloppy.glade.h:6 gfloppy/src/gfloppy-i18n.h:18
+#: gfloppy/src/gfloppy-i18n.h:18 gfloppy/src/gfloppy.glade.h:6
 msgid "Floppy Device:"
 msgstr "Leitor de Disquetes: "
 
@@ -4350,24 +4350,24 @@ msgstr "Leitor de Disquetes: "
 #. * Add this file to your project's POTFILES.in.
 #. * DO NOT compile it as part of your application.
 #.
-#: gfloppy/src/gfloppy.glade.h:7 gfloppy/src/gfloppy-i18n.h:7
+#: gfloppy/src/gfloppy-i18n.h:7 gfloppy/src/gfloppy.glade.h:7
 msgid "Format a floppy"
 msgstr "Formatar uma disquete"
 
-#: gfloppy/src/gfloppy.glade.h:8 gfloppy/src/gfloppy-i18n.h:13
+#: gfloppy/src/gfloppy-i18n.h:13 gfloppy/src/gfloppy.glade.h:8
 msgid "High Density 3.5\" (1.44 MB)"
 msgstr "Alta Densidade 3.5\" (1.44 MB)"
 
-#: gfloppy/src/gfloppy.glade.h:9 gfloppy/src/gfloppy-i18n.h:14
+#: gfloppy/src/gfloppy-i18n.h:14 gfloppy/src/gfloppy.glade.h:9
 msgid "High Density 5.25\" (1.2 MB)"
 msgstr "Alta Densidade 5.25\" (1.2 MB)"
 
-#: gfloppy/src/gfloppy.glade.h:10 gfloppy/src/gfloppy-i18n.h:8
-#: gfloppy/src/gfloppy-i18n.h:10
+#: gfloppy/src/gfloppy-i18n.h:8 gfloppy/src/gfloppy-i18n.h:10
+#: gfloppy/src/gfloppy.glade.h:10
 msgid "Linux Native (ext2)"
 msgstr "Nativo Linux (ext2)"
 
-#: gfloppy/src/gfloppy.glade.h:11 gfloppy/src/gfloppy-i18n.h:17
+#: gfloppy/src/gfloppy-i18n.h:17 gfloppy/src/gfloppy.glade.h:11
 msgid "_Quick format"
 msgstr "Formatação _Rápida"
 
@@ -4459,8 +4459,8 @@ msgid "Scale"
 msgstr "Escala"
 
 #: stripchart/chart-app.c:197 stripchart/stripchart-applet.c:69
-#: stripchart/stripchart.c:92 stripchart/stripchart.c:97
-#: stripchart/stripchart-applet.desktop.in.h:2
+#: stripchart/stripchart-applet.desktop.in.h:2 stripchart/stripchart.c:92
+#: stripchart/stripchart.c:97
 msgid "Stripchart"
 msgstr "Gráfico Linear"
 
@@ -4863,7 +4863,7 @@ msgstr "Cliente GNOME para servidores de dicionário que respeitem o RFC 2229"
 msgid "Shows a stripchart plot"
 msgstr "Mostrar um gráfico linear"
 
-#: stripchart/stripchart.desktop.in.h:1 gstripchart/gstripchart.desktop.in.h:1
+#: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
 msgid "Stripchart Plotter"
 msgstr "Desenhador de Gráficos Lineares"
 
@@ -5011,6 +5011,12 @@ msgstr "Gestor pessoal do cron"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Gestor pessoal do crontab"
+
+#~ msgid "&lt;- Remove"
+#~ msgstr "&lt;- Remover"
+
+#~ msgid "Add -&gt;"
+#~ msgstr "Adicionar -&gt;"
 
 #~ msgid "Delete _Times"
 #~ msgstr "Apagar _Horas"
