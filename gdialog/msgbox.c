@@ -81,8 +81,7 @@ int dialog_msgbox(const char *title, const char *prompt, int height, int width,
 		}
 
 		gtk_main();
-		return 0;
-	}
+	} else {
 	/* center dialog box on screen */
 	x = (COLS - width) / 2;
 	y = (LINES - height) / 2;
@@ -136,4 +135,5 @@ int dialog_msgbox(const char *title, const char *prompt, int height, int width,
 
 	delwin(dialog);
 	return key == ESC ? -1 : 0;
+        }
 }
