@@ -240,7 +240,7 @@ if gnome-config --libs gtkhtml > /dev/null 2>&1; then
     AC_MSG_RESULT(found)
 else
     AC_MSG_WARN([Cannot find gtkhtml. See config.log for more info.])
-    AC_MSG_WARN([*** gtt will not be built.]),
+    AC_MSG_WARN([*** gtt will not be built.])
     build_gtt=false
 fi
 
@@ -255,6 +255,14 @@ fi
 
 AC_SUBST(GTKHTML_LIBS)
 AC_SUBST(GTKHTML_CFLAGS)
+
+dnl *******************************
+dnl sched.h
+dnl sched.h is needed to build gtt
+dnl *******************************
+
+AC_CHECK_HEADER(sched.h,,build_gtt=false
+                AC_MSG_WARN([*** gtt will not be built.]))
 
 AM_CONDITIONAL(BUILD_GTT, test "$build_gtt" = true)
 
@@ -441,7 +449,6 @@ po/Makefile.in
 intl/Makefile
 macros/Makefile
 idl/Makefile
-cromagnon/Makefile
 gcalc/Makefile
 gcalc/doc/Makefile
 gcalc/doc/C/Makefile

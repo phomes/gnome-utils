@@ -1,3 +1,10 @@
+Sat Oct 20 11:23:03 2001  George Lebl <jirka@5z.com>
+
+	* configure.in: fixes from bunk@fs.tum.de (Adrian Bunk)
+
+	* gnome-utils.spec.in:  Fix the file list so that the rpm
+	  doesn't want to own directories that are not it's own
+
 Sun Oct 14 21:03:16 2001  Abel Cheung <maddog@linux.org.hk>
 
 	* configure.in (GLADE_CFLAGS): Fix typo.
