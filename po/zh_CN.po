@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-07 10:11-0500\n"
+"POT-Creation-Date: 2005-04-04 04:47+0200\n"
 "PO-Revision-Date: 2005-01-29 16:40+0800\n"
 "Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
@@ -365,6 +365,10 @@ msgstr "数据库名称"
 #: gdictsrc/gdict-pref-dialog.c:834
 msgid "Default Strategy"
 msgstr "默认策略"
+
+#: gdictsrc/gdict-speller.c:114
+msgid "Spellings"
+msgstr "拼写"
 
 #: gdictsrc/gdict-speller.c:234
 msgid "Spell-checking..."
@@ -1031,7 +1035,7 @@ msgid "The file \"%s\" already exists.  Would you like to replace it?"
 msgstr "文件“%s”已经存在。您想要替换吗？"
 
 #: gnome-screenshot/screenshot-xfer.c:190
-#: gsearchtool/gsearchtool-callbacks.c:1269
+#: gsearchtool/gsearchtool-callbacks.c:1271
 msgid "_Replace"
 msgstr "替换(_R)"
 
@@ -1277,117 +1281,117 @@ msgid ""
 "command when performing simple file name searches."
 msgstr "此键决定了是否禁止搜索工具在执行简单的文件名搜索时使用 locate 命令。"
 
-#: gsearchtool/gsearchtool-callbacks.c:163
+#: gsearchtool/gsearchtool-callbacks.c:165
 msgid "Could not open help document."
 msgstr "无法打开帮助文档。"
 
-#: gsearchtool/gsearchtool-callbacks.c:298
+#: gsearchtool/gsearchtool-callbacks.c:300
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "您确定想要打开 %d 个文档吗？"
 
-#: gsearchtool/gsearchtool-callbacks.c:303
-#: gsearchtool/gsearchtool-callbacks.c:460
+#: gsearchtool/gsearchtool-callbacks.c:305
+#: gsearchtool/gsearchtool-callbacks.c:493
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "这样将打开 %d 个单独的文件夹。"
 
-#: gsearchtool/gsearchtool-callbacks.c:343
+#: gsearchtool/gsearchtool-callbacks.c:345
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "无法打开文档“%s”。"
 
-#: gsearchtool/gsearchtool-callbacks.c:418
-#: gsearchtool/gsearchtool-callbacks.c:761
+#: gsearchtool/gsearchtool-callbacks.c:374
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "无法打开文件夹“%s”。"
+
+#: gsearchtool/gsearchtool-callbacks.c:382
+msgid "The nautilus file manager is not running."
+msgstr "nautilus 文件管理器没有运行。"
+
+#: gsearchtool/gsearchtool-callbacks.c:449
+#: gsearchtool/gsearchtool-callbacks.c:763
 msgid "The document does not exist."
 msgstr "文档不存在。"
 
-#: gsearchtool/gsearchtool-callbacks.c:431
+#: gsearchtool/gsearchtool-callbacks.c:464
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "没有安装能显示文档的查看器。"
 
-#: gsearchtool/gsearchtool-callbacks.c:455
+#: gsearchtool/gsearchtool-callbacks.c:488
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "您确定想要打开 %d 个文件夹吗？"
 
-#: gsearchtool/gsearchtool-callbacks.c:499
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "无法打开文件夹“%s”。"
-
-#: gsearchtool/gsearchtool-callbacks.c:507
-msgid "The nautilus file manager is not running."
-msgstr "nautilus 文件管理器没有运行。"
-
-#: gsearchtool/gsearchtool-callbacks.c:587
+#: gsearchtool/gsearchtool-callbacks.c:589
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "无法将“%s”移动到回收站。"
 
-#: gsearchtool/gsearchtool-callbacks.c:618
+#: gsearchtool/gsearchtool-callbacks.c:620
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "您想要永久删除“%s”吗？"
 
-#: gsearchtool/gsearchtool-callbacks.c:621
+#: gsearchtool/gsearchtool-callbacks.c:623
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "回收站不可用。无法将“%s”移动到回收站。"
 
-#: gsearchtool/gsearchtool-callbacks.c:660
+#: gsearchtool/gsearchtool-callbacks.c:662
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "无法删除“%s”。"
 
-#: gsearchtool/gsearchtool-callbacks.c:780
+#: gsearchtool/gsearchtool-callbacks.c:782
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "移动“%s”失败：%s。"
 
-#: gsearchtool/gsearchtool-callbacks.c:812
+#: gsearchtool/gsearchtool-callbacks.c:814
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "删除“%s”失败：%s。"
 
-#: gsearchtool/gsearchtool-callbacks.c:1158
+#: gsearchtool/gsearchtool-callbacks.c:1160
 msgid "Save Search Results As..."
 msgstr "搜索结果另存为..."
 
-#: gsearchtool/gsearchtool-callbacks.c:1186
+#: gsearchtool/gsearchtool-callbacks.c:1188
 msgid "Could not save document."
 msgstr "无法保存文档。"
 
-#: gsearchtool/gsearchtool-callbacks.c:1187
+#: gsearchtool/gsearchtool-callbacks.c:1189
 msgid "You did not select a document name."
 msgstr "您没有选择文档名称。"
 
-#: gsearchtool/gsearchtool-callbacks.c:1217
+#: gsearchtool/gsearchtool-callbacks.c:1219
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "无法将文档“%s”保存到 %s。"
 
-#: gsearchtool/gsearchtool-callbacks.c:1250
+#: gsearchtool/gsearchtool-callbacks.c:1252
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "文档“%s”已经存在。您想要替换吗？"
 
-#: gsearchtool/gsearchtool-callbacks.c:1254
+#: gsearchtool/gsearchtool-callbacks.c:1256
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "如果您替换已有文件，该文件中的全部内容都将被覆盖。"
 
-#: gsearchtool/gsearchtool-callbacks.c:1318
+#: gsearchtool/gsearchtool-callbacks.c:1320
 msgid "The document name you selected is a folder."
 msgstr "您选择的文档名是文件夹。"
 
-#: gsearchtool/gsearchtool-callbacks.c:1369
+#: gsearchtool/gsearchtool-callbacks.c:1371
 msgid "You may not have write permissions to the document."
 msgstr "您可能没有对文档的写权限。"
 
-#: gsearchtool/gsearchtool-support.c:70
+#: gsearchtool/gsearchtool-support.c:69
 #, c-format
 msgid ""
 "GConf error:\n"
@@ -1401,23 +1405,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:521
+#: gsearchtool/gsearchtool-support.c:520
 msgid "today at %-I:%M %p"
 msgstr "今天 %H:%M"
 
-#: gsearchtool/gsearchtool-support.c:523
+#: gsearchtool/gsearchtool-support.c:522
 msgid "yesterday at %-I:%M %p"
 msgstr "昨天 %H:%M"
 
-#: gsearchtool/gsearchtool-support.c:525 gsearchtool/gsearchtool-support.c:527
+#: gsearchtool/gsearchtool-support.c:524 gsearchtool/gsearchtool-support.c:526
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%Y年%-m月%-d日 %H:%M:%S"
 
-#: gsearchtool/gsearchtool-support.c:711
+#: gsearchtool/gsearchtool-support.c:710
 msgid "link (broken)"
 msgstr "链接(已断开)"
 
-#: gsearchtool/gsearchtool-support.c:717
+#: gsearchtool/gsearchtool-support.c:716
 #, c-format
 msgid "link to %s"
 msgstr "链接到 %s"
@@ -2217,7 +2221,9 @@ msgstr "打开新的日志文件"
 msgid "There was an error displaying help."
 msgstr "显示帮助时出错。"
 
-#: logview/logview.c:894
+#. For translators : this is the window title that shows the log and
+#. app names : "logname (monitored) - APP_NAME"
+#: logview/logview.c:896
 #, c-format
 msgid "%s (monitored) - %s"
 msgstr "%s (已监视) - %s"
