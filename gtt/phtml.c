@@ -32,6 +32,8 @@ typedef enum {
 	MEMO = 1,
 	BILLABLE,
 	BILLRATE,
+	VALUE,
+	BILLABLE_VALUE,
 	START_DATIME =100,
 	STOP_DATIME,
 	ELAPSED,
@@ -60,7 +62,7 @@ struct gtt_phtml_s
 /* ============================================================== */
 
 static void
-show_table (GttPhtml *phtml, GttProject*prj, int show_links)
+show_table (GttPhtml *phtml, GttProject *prj, int show_links)
 {
 	int i;
 	GList *node;
@@ -95,6 +97,14 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 			case BILLRATE:
 				p = stpcpy (p, "<th>");
 				p = stpcpy (p, _("Bill Rate"));
+				break;
+			case VALUE:
+				p = stpcpy (p, "<th>");
+				p = stpcpy (p, _("Value"));
+				break;
+			case BILLABLE_VALUE:
+				p = stpcpy (p, "<th>");
+				p = stpcpy (p, _("Billable Value"));
 				break;
 			default:
 				p = stpcpy (p, "<th>");
@@ -136,10 +146,47 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 		time_t prev_stop = 0;
 		GList *in;
 		GttTask *tsk = node->data;
+		int secs;
+		double hours, value=0.0, billable_value=0.0;
 		
 		/* set up data */
 		billable = gtt_task_get_billable (tsk);
 		billrate = gtt_task_get_billrate (tsk);
+
+		secs = gtt_task_get_secs_ever(tsk);
+		hours = secs;
+		hours /= 3600;
+		switch (billrate)
+		{
+			case GTT_REGULAR:
+				value = hours * gtt_project_get_billrate (prj);
+				break;
+			case GTT_OVERTIME:
+				value = hours * gtt_project_get_overtime_rate (prj);
+				break;
+			case GTT_OVEROVER:
+				value = hours * gtt_project_get_overover_rate (prj);
+				break;
+			case GTT_FLAT_FEE:
+				value = gtt_project_get_flat_fee (prj);
+				break;
+		}
+
+		switch (billable)
+		{
+			case GTT_HOLD:
+				billable_value = 0.0;
+				break;
+			case GTT_BILLABLE:
+				billable_value = value;
+				break;
+			case GTT_NOT_BILLABLE:
+				billable_value = 0.0;
+				break;
+			case GTT_NO_CHARGE:
+				billable_value = 0.0;
+				break;
+		}
 
 		p = buff;
 
@@ -204,6 +251,17 @@ show_table (GttPhtml *phtml, GttProject*prj, int show_links)
 							p = stpcpy (p, _("Flat Fee"));
 							break;
 					}
+					break;
+				case VALUE:
+					p = stpcpy (p, "<td>");
+					
+					/* hack alert should use i18n currency/monetary printing */
+					p += sprintf (p, "$%.2f", value+0.0049);
+					break;
+				case BILLABLE_VALUE:
+					p = stpcpy (p, "<td>");
+					/* hack alert should use i18n currency/monetary printing */
+					p += sprintf (p, "$%.2f", billable_value+0.0049);
 					break;
 				default:
 					p = stpcpy (p, "<th>");
@@ -457,6 +515,18 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 		if (0 == strncmp (tok, "$billrate", 9))
 		{
 			phtml->task_cols[phtml->ntask_cols] = BILLRATE;
+			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$value", 6))
+		{
+			phtml->task_cols[phtml->ntask_cols] = VALUE;
+			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$bill_value", 11))
+		{
+			phtml->task_cols[phtml->ntask_cols] = BILLABLE_VALUE;
 			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
 		}
 		else

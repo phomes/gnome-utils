@@ -21,21 +21,21 @@ mashines at the same time.
 
 bugs
 ----
-don't destroy old project list until we are sure that read of new
-project list succeeded.
+During read of data,  don't destroy old project list until we are sure 
+that read of new project list succeeded.
 
-export is broken with new heirarchy (shuld be stripped, in favour 
+export is broken with new heirarchy (should be stripped, in favour 
 of 'print'?)
 
 config_show_tb_journal should be configurable/savable
 
-fix annoying curosr shape when dragging projects around
+fix annoying cursor shape when dragging projects around
 
 auto-save every xxx minutes
 
 grep for xxx fixme hack alert for additional todo items ... 
 
-implement hover over url link
+implement tooltips when there is a hover over url link
 
 implement ability to remove task from journal
 
