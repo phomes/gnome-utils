@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1.1\n"
-"POT-Creation-Date: 2002-01-02 19:56+0100\n"
+"POT-Creation-Date: 2002-02-10 14:14+0100\n"
 "PO-Revision-Date: 2001-05-25 13:35+0200\n"
 "Last-Translator: Josu Waliño <josu@elhuyar.com>\n"
 "Language-Team: Euskara\n"
@@ -136,7 +136,7 @@ msgstr "9"
 
 #: gcalc/gnome-calc.c:1203
 msgid "*"
-msgstr "*"
+msgstr "×"
 
 #: gcalc/gnome-calc.c:1205
 msgid "RCL"
@@ -342,15 +342,16 @@ msgstr "T_xertatu amaieran"
 
 #: gcharmap/src/menus.c:73
 msgid "Insert every selected character at the end of the text entry"
-msgstr "Hautatutako karaktere denak testu-sarreraren amaieran txertatu "
+msgstr ""
+"Hautatutako karaktere guztiak testu-sarreraren amaieran txertatzen ditu"
 
 #: gcharmap/src/menus.c:75
 msgid "_Focusable Buttons"
-msgstr "Botoi e_nfokagarriak\t"
+msgstr "Botoi e_nfokagarriak"
 
 #: gcharmap/src/menus.c:75
 msgid "Set the buttons to be focusable or not"
-msgstr "Ezarri botoiak enfokagarri izateko edo ez "
+msgstr "Botoiak enfokagarri izateko edo ez ezartzen du"
 
 #: gcharmap/src/menus.c:99
 msgid "Insert character(s) by choosing character codes"
@@ -362,11 +363,11 @@ msgstr "Ebaki"
 
 #: gcharmap/src/menus.c:102
 msgid "Cut the selection"
-msgstr "Ebaki hautapena"
+msgstr "Hautapena ebakitzen du"
 
 #: gcharmap/src/menus.c:104
 msgid "Copy the selection"
-msgstr "Kopiatu hautapena"
+msgstr "Hautapena kopiatzen du"
 
 #: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
 msgid "Paste"
@@ -374,7 +375,7 @@ msgstr "Itsatsi"
 
 #: gcharmap/src/menus.c:106
 msgid "Paste the clipboard"
-msgstr "Itsatsi arbela "
+msgstr "Arbela itsasten du "
 
 #: gcharmap/src/menus.c:109
 msgid "Show Gnome Character Map's manual"
@@ -393,8 +394,8 @@ msgid ""
 "Couldn't start the dictionary; most likely, http://www.dict.org could not be "
 "contacted."
 msgstr ""
-"Ezin izan du hiztegia hasieratu; segur aski, ezin izan da http://www.dict."
-"orghelbidearekin konektatu."
+"Ezin izan du hiztegia hasieratu; segur aski ezin izan da http://www.dict.org "
+"helbidearekin kontaktatu."
 
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
@@ -448,20 +449,20 @@ msgid ""
 "do so and try again."
 msgstr ""
 "Ezin izan da agindutako eragiketa egin, erabiltzen ari zaren zerbitzaria\n"
-"ez dabilelako edo ez zaudelako Internetera\n"
-"konektatuta. Internetera konektatuta ez bazaude,\n"
+"ez dabilelako edo Internetera\n"
+"konektatuta ez zaudelako. Internetera konektatuta ez bazaude,\n"
 "konektatu eta saiatu berriro."
 
 #: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 #: gdictsrc/gdict-applet.c:313
 #, fuzzy
 msgid "Look up"
-msgstr "Bilaketa"
+msgstr "Bilatu"
 
 #: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
 #, fuzzy
 msgid "Look up word in dictionary"
-msgstr "Bilatu hitza hiztegian "
+msgstr "Hitza hiztegian bilatzen du"
 
 #: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
 msgid "Spell"
@@ -469,11 +470,11 @@ msgstr "Ortografia"
 
 #: gdictsrc/gdict-app.c:456 gdictsrc/gdict-app.c:513
 msgid "Check word spelling"
-msgstr "Egiaztatu ortografia "
+msgstr "Ortografia egiaztatzen du"
 
 #: gdictsrc/gdict-app.c:517
 msgid "Cut to Clipboard"
-msgstr "Ebaki arbelean"
+msgstr "Ebaki arbelera"
 
 #: gdictsrc/gdict-app.c:520
 msgid "Copy to Clipboard"
@@ -490,7 +491,7 @@ msgstr "Ezarpenak"
 #: gdictsrc/gdict-app.c:527
 msgid "Server to use, default search strategy, fonts"
 msgstr ""
-"Erabiltzen den zerbitzaria, lehenetsitako bilaketa-estrategia, letra-tipoak "
+"Erabiltzen den zerbitzaria, lehenetsitako bilaketa-estrategia, letra-tipoak"
 
 #: gdictsrc/gdict-app.c:588
 msgid "Word definition"
@@ -506,7 +507,7 @@ msgstr "Hobespenak..."
 
 #: gdictsrc/gdict-applet.c:293
 msgid "Show/Hide Definition Window..."
-msgstr "Erakutsi/Ezkutatu definizio leihoa..."
+msgstr "Erakutsi/Ezkutatu definizio-leihoa..."
 
 #: gdictsrc/gdict-applet.c:297
 msgid "Spell Check..."
@@ -617,7 +618,7 @@ msgstr "Hitza:"
 
 #: gdictsrc/gdict-speller.c:127
 msgid "Search Strategy:"
-msgstr "Bilatu estrategia:"
+msgstr "Bilaketa-estrategia:"
 
 #: gdictsrc/gdict-speller.c:150
 msgid "Find Words..."
@@ -630,7 +631,7 @@ msgstr "Bilatu hitza..."
 
 #: gdictsrc/gdict-speller.c:163
 msgid "Spell checker"
-msgstr "Ortografia egiaztatzailea"
+msgstr "Ortografi egiaztatzailea"
 
 #: gdiskfree/gdiskfree_app.c:53 gdiskfree/gdiskfree_menus.c:108
 msgid "GDiskFree"
@@ -639,7 +640,7 @@ msgstr "GDiskFree"
 #: gdiskfree/gdiskfree_app.c:73
 #, c-format
 msgid "Unable to parse the geometry string '%s'"
-msgstr "Ezin izan da '%s' geometria-katea analizatu "
+msgstr "Ezin izan da '%s' geometria-katea analizatu"
 
 #: gdiskfree/gdiskfree.c:58
 msgid "Specify the geometry of the window."
@@ -659,7 +660,7 @@ msgstr "GdiskFree-ren propietateak"
 
 #: gdiskfree/gdiskfree_options.c:227
 msgid "Invoke sync before getting usage info"
-msgstr "Deitu sinkronizazioa erabilpen-informazioa lortu aurretik "
+msgstr "Deitu sinkronizazioa erabilpen-informazioa lortu aurretik"
 
 #: gdiskfree/gdiskfree_options.c:239
 msgid "Show drive mount points"
@@ -667,7 +668,7 @@ msgstr "Erakutsi unitatearen muntatze-puntuak "
 
 #: gdiskfree/gdiskfree_options.c:250
 msgid "Show drive size"
-msgstr "Erakutsi unitatearen tamaina "
+msgstr "Erakutsi unitatearen tamaina"
 
 #: gdiskfree/gdiskfree_options.c:260
 msgid "Dial Orientation"
@@ -695,7 +696,7 @@ msgstr "Fitxategi-izena"
 
 #: gsearchtool/gsearchtool.c:35
 msgid "Don't search subdirectories"
-msgstr "Ez bilatu azpidirektorioetan "
+msgstr "Ez bilatu azpidirektorioetan"
 
 #: gsearchtool/gsearchtool.c:36
 msgid "File owner"
@@ -711,7 +712,7 @@ msgstr "Azken aldatze-ordua"
 
 #: gsearchtool/gsearchtool.c:40
 msgid "Don't search mounted filesystems"
-msgstr "Ez bilatu muntatutako fitxategi-sistemetan "
+msgstr "Ez bilatu muntatutako fitxategi-sistemetan"
 
 #: gsearchtool/gsearchtool.c:41
 msgid "Empty file"
@@ -719,15 +720,15 @@ msgstr "Fitxategi hutsa"
 
 #: gsearchtool/gsearchtool.c:43
 msgid "Invalid user or group"
-msgstr "Erabiltzailea edo taldea baliogabekoa"
+msgstr "Erabiltzailea edo taldea baliogabea"
 
 #: gsearchtool/gsearchtool.c:44
 msgid "Filenames except"
-msgstr "Fitxategi-izenak honakoak izan ezik:"
+msgstr "Fitxategi-izenak, honakoak izan ezik:"
 
 #: gsearchtool/gsearchtool.c:45
 msgid "Follow symbolic links"
-msgstr "Jarraitu esteka sinbolikoak"
+msgstr "Jarraitu esteka sinbolikoei"
 
 #: gsearchtool/gsearchtool.c:46
 msgid "Simple substring search"
@@ -743,7 +744,7 @@ msgstr "Hedatutako adierazpen erregularren bilaketa "
 
 #: gsearchtool/gsearchtool.c:151
 msgid "grep options found in find list bad bad!"
-msgstr "Bilaketa-zerrendan grep aukerak aurkitu dira. Gaizki!"
+msgstr "Bilaketa-zerrendan grep aukerak aurkitu dira, ez da baliozkoa!"
 
 #: gsearchtool/gsearchtool.c:165
 msgid "non-grep option found in grep list, bad bad!"
@@ -751,7 +752,7 @@ msgstr "grep zerrendan ez da grep aukerarik aurkitu, ez da baliozkoa!"
 
 #: gsearchtool/gsearchtool.c:219
 msgid "Search already running on another page"
-msgstr "Bilaketa beste orrialde batean ari da egiten "
+msgstr "Bilaketa beste orrialde batean ari da egiten"
 
 #. create the results box
 #. FIXME: add an option to autoclear result box and pass TRUE in that
@@ -774,7 +775,7 @@ msgstr "Ez dago hasierako direktoriorik."
 
 #: gsearchtool/gsearchtool.c:409
 msgid "Search command line"
-msgstr "Bilatu komando-lerroa "
+msgstr "Bilaketaren komando-lerroa "
 
 #: gsearchtool/gsearchtool.c:415
 msgid ""
@@ -784,8 +785,8 @@ msgid ""
 "append \"| tr '\\000' '\\n'\" to the line below)"
 msgstr ""
 "Komando-lerro hau erabil dezakezu bilaketa kontsola honetatik hasteko:\n"
-"(Oharra: Fitxategi bat lerro bakoitzeko eta ez tarte nulu bakoitzeko "
-"inprimatzeko,\n"
+"(Oharra: lerro bakoitzeko fitxategi bat inprimatzeko eta ez tarte "
+"nuluzbereizteko,\n"
 "erantsi \"| tr '\\000' '\\n'\" azpiko lerroari)"
 
 #: gsearchtool/gsearchtool.c:502
@@ -829,7 +830,7 @@ msgstr "Gelditu"
 
 #: gsearchtool/gsearchtool.c:700
 msgid "Nothing to locate"
-msgstr "Ez dago ezer kokatzeko "
+msgstr "Ez dago ezer lokalizatzeko "
 
 #: gsearchtool/gsearchtool.c:735
 msgid ""
@@ -861,13 +862,14 @@ msgstr "Gnome-ren bilaketa-tresna"
 msgid "(C) 1998,2000 the Free Software Foundation"
 msgstr "(C) 1998,2000 Free Software Foundation"
 
+# find/grep/locate are command names, don't translate them
 #: gsearchtool/gsearchtool.c:807
 msgid "Frontend to the unix find/grep/locate commands"
-msgstr "Unixen bilatu/grep/lokalizatu komandoen interfazea "
+msgstr "Unix-en find/grep/locate komandoen interfazea"
 
 #: gsearchtool/gsearchtool.c:865
 msgid "Gnome Search Tool"
-msgstr "Gnome-ren bilaketa-tresna "
+msgstr "Gnome-ren bilaketa-tresna"
 
 #: gsearchtool/outdlg.c:51
 msgid "Cannot save file"
@@ -875,7 +877,7 @@ msgstr "Ezin da fitxategia gorde."
 
 #: gsearchtool/outdlg.c:69 meat-grinder/meat-grinder.c:476
 msgid "Save Results"
-msgstr "Gorde emaitzak "
+msgstr "Gorde emaitzak"
 
 #: gsearchtool/outdlg.c:130
 msgid "Command mangled"
@@ -883,11 +885,11 @@ msgstr "Komandoa hondatuta"
 
 #: gsearchtool/outdlg.c:159
 msgid "No command for this mime type"
-msgstr "Ez dago mime mota honen komandorik"
+msgstr "Ez dago mime-mota honen komandorik"
 
 #: gtt/app.c:115 gtt/app.c:227
 msgid "no project selected"
-msgstr "ez dago proiekturik hautatuta "
+msgstr "ez dago proiekturik hautatuta"
 
 #: gtt/app.c:217
 msgid "00:00"
@@ -907,127 +909,143 @@ msgstr "Guztira"
 
 #: gtt/ctree.c:519
 msgid "Total time spent on this project."
-msgstr ""
+msgstr "Proiektu honetan guztira erabilitako denbora."
 
 #: gtt/ctree.c:524
 #, fuzzy
 msgid "Entry"
-msgstr "Sarreraren amaiera:"
+msgstr "Sarrera"
 
 #: gtt/ctree.c:526
+#, fuzzy
 msgid "Time spent under the current diary entry."
-msgstr ""
+msgstr "Agendako uneko sarreran emandako denbora."
 
 #: gtt/ctree.c:532 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Gaur"
 
 #: gtt/ctree.c:534
+#, fuzzy
 msgid "Time spent on this project today."
-msgstr ""
+msgstr "Proiektu honetan gaur emandako denbora."
 
 #: gtt/ctree.c:539
 msgid "Week"
-msgstr ""
+msgstr "Astea"
 
 #: gtt/ctree.c:541
+#, fuzzy
 msgid "Time spent on this project this week."
-msgstr ""
+msgstr "Proiektuan aste honetan emandako denbora."
 
 #: gtt/ctree.c:547
 #, fuzzy
 msgid "Month"
-msgstr "Monitorea"
+msgstr "Hilabetea"
 
 #: gtt/ctree.c:549
+#, fuzzy
 msgid "Time spent on this project this month."
-msgstr ""
+msgstr "Proiektuan hilabete honetan emandako denbora."
 
 #: gtt/ctree.c:555
 #, fuzzy
 msgid "Year"
-msgstr "Lineala"
+msgstr "Urtea"
 
 #: gtt/ctree.c:557
+#, fuzzy
 msgid "Time spent on this project this year."
-msgstr ""
+msgstr "Proiektuan urte honetan emandako denbora."
 
 #: gtt/ctree.c:563
 #, fuzzy
 msgid "Title"
-msgstr "Fitxategia"
+msgstr "Titulua"
 
 #: gtt/ctree.c:564 gtt/menucmd.c:148
 msgid "Project Title"
-msgstr "Proiektuaren izenburua "
+msgstr "Proiektuaren izenburua"
 
 #: gtt/ctree.c:569 gtt/ctree.c:570 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
 msgstr "Azalpena"
 
 #: gtt/ctree.c:575 gtt/ghtml.c:95 gtt/ghtml.c:220
+#, fuzzy
 msgid "Diary Entry"
-msgstr ""
+msgstr "Agendako sarrera"
 
 #: gtt/ctree.c:577
 #, fuzzy
 msgid "The current diary entry"
-msgstr "Itxi uneko dokumentua"
+msgstr "Agendako uneko sarrera "
 
 #: gtt/ctree.c:584
+#, fuzzy
 msgid "Estimated Project Start Date"
-msgstr ""
+msgstr "Proiektua noiz hasi behar den"
 
 #: gtt/ctree.c:589
 #, fuzzy
 msgid "End"
-msgstr "Gaituta"
+msgstr "Amaitu"
 
 #: gtt/ctree.c:591
+#, fuzzy
 msgid "Estimated Project Completion Date"
-msgstr ""
+msgstr "Proiektua noizko amaitu behar den"
 
 #: gtt/ctree.c:596
+#, fuzzy
 msgid "Due"
-msgstr ""
+msgstr "Noizko"
 
 #: gtt/ctree.c:598
+#, fuzzy
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
-msgstr ""
+msgstr "Epemuga: proiektua guztiz noizko bukatu behar den."
 
 #: gtt/ctree.c:605 mini-utils/guname/info.c:61
 msgid "Size"
 msgstr "Tamaina"
 
 #: gtt/ctree.c:607
+#, fuzzy
 msgid "Sizing: How much work it will take to finish this project."
-msgstr ""
+msgstr "Kalkulatzen: Proiektua burutzeko egin beharreko lanak."
 
 #: gtt/ctree.c:613
 #, fuzzy
 msgid "Done"
-msgstr "Bat ere ez"
+msgstr "Eginda"
 
 #: gtt/ctree.c:615
+#, fuzzy
 msgid "Percent Complete: How much of this project has been finished till now."
-msgstr ""
+msgstr "Egindakoaren ehunekoa: Orain arte zer egin den."
 
 #: gtt/ctree.c:622
+#, fuzzy
 msgid "U"
-msgstr ""
+msgstr "P"
 
 #: gtt/ctree.c:624
+#, fuzzy
 msgid "Urgency: Does this project need to be done soon, done quickly?"
-msgstr ""
+msgstr "Presa: Proiektu hau berehala egin behar da? Azkar egin behar da?"
 
 #: gtt/ctree.c:630
+#, fuzzy
 msgid "Imp"
-msgstr ""
+msgstr "Gar"
 
 #: gtt/ctree.c:632
+#, fuzzy
 msgid "Importance: How important is this project?"
-msgstr ""
+msgstr "Garrantzia: Zenbateko garrantzia du proiektuak?"
 
 #: gtt/ctree.c:638 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
@@ -1035,44 +1053,104 @@ msgid "Status"
 msgstr "Egoera"
 
 #: gtt/ctree.c:640
+#, fuzzy
 msgid "The current status of this project."
-msgstr ""
+msgstr "Proiektu honen uneko egoera."
 
 #: gtt/ctree.c:975 gtt/glade/project_properties.glade.h:25
 #, fuzzy
 msgid "Low"
-msgstr "Egunkari-ikuspegia"
+msgstr "Txikia"
 
 #: gtt/ctree.c:976
+#, fuzzy
 msgid "Med"
-msgstr ""
+msgstr "Ertaina"
 
 #: gtt/ctree.c:977 gtt/glade/project_properties.glade.h:15
 #, fuzzy
 msgid "High"
-msgstr "Eskuinean"
+msgstr "Handia"
 
 #: gtt/ctree.c:986 gtt/glade/project_properties.glade.h:29
 #, fuzzy
 msgid "Not Started"
-msgstr "Hasi"
+msgstr "Hasi gabe"
 
 #: gtt/ctree.c:987 gtt/glade/project_properties.glade.h:21
 #, fuzzy
 msgid "In Progress"
-msgstr "Prozesua:"
+msgstr "Egiten"
 
+# gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31ç
 #: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31
+#, fuzzy
 msgid "On Hold"
-msgstr ""
+msgstr "Kontrolpean "
 
 #: gtt/ctree.c:989 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
-msgstr ""
+msgstr "Bertan behera utzita"
 
 #: gtt/ctree.c:990 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
+msgstr "Egina"
+
+#: gtt/err-throw.c:61
+#, fuzzy
+msgid "No Error"
+msgstr "Errorea"
+
+#: gtt/err-throw.c:65
+#, c-format
+msgid ""
+"Cannot open the project data file\n"
+"\t%s\n"
 msgstr ""
+
+#: gtt/err-throw.c:70
+#, c-format
+msgid ""
+"Cannot write the project data file\n"
+"\t%s\n"
+msgstr ""
+
+#: gtt/err-throw.c:75
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"doesn't seem to be a GTT project data file\n"
+msgstr ""
+
+#: gtt/err-throw.c:81
+#, c-format
+msgid ""
+"The file\n"
+"\t%s\n"
+"seems to be corrupt\n"
+msgstr ""
+
+#: gtt/err-throw.c:87
+#, c-format
+msgid ""
+"An unknown token was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+
+#: gtt/err-throw.c:92
+#, c-format
+msgid ""
+"An unknown value was found during the parsing of\n"
+"\t%s\n"
+msgstr ""
+
+#: gtt/err-throw.c:97
+#, fuzzy, c-format
+msgid ""
+"Cannot write the config file\n"
+"\t%s\n"
+msgstr "Ezin izan dut konfigurazio-fitxategia idatzi!"
 
 #: gtt/file-io.c:376
 msgid "project %t started"
@@ -1091,36 +1169,39 @@ msgid "%d:%02d:%02d"
 msgstr "%d:%02d:%02d"
 
 #: gtt/ghtml.c:95 gtt/ghtml.c:273
+#, fuzzy
 msgid "Elapsed"
-msgstr ""
+msgstr "Igarota"
 
 #: gtt/ghtml.c:113 gtt/ghtml.c:369 gtt/ghtml.c:378
 #, fuzzy
 msgid "(empty)"
-msgstr "hutsik"
+msgstr "(hutsik)"
 
 #: gtt/ghtml.c:225
 #, fuzzy
 msgid "Notes"
-msgstr "Bat ere ez"
+msgstr "Oharrak"
 
 #: gtt/ghtml.c:229
+#, fuzzy
 msgid "Task Time"
-msgstr ""
+msgstr "Ataza egiteko denbora"
 
 #: gtt/ghtml.c:233
 #, fuzzy
 msgid "Bill Status"
-msgstr "Egoera"
+msgstr "Fakturaren egoera"
 
 #: gtt/ghtml.c:237 gtt/ghtml.c:408 gtt/glade/task_properties.glade.h:4
 #, fuzzy
 msgid "Billable"
-msgstr "Desgaituta"
+msgstr "Fakturagarria"
 
 #: gtt/ghtml.c:241
+#, fuzzy
 msgid "Bill Rate"
-msgstr ""
+msgstr "Fakturaren zenbatekoa"
 
 #: gtt/ghtml.c:245 mini-utils/gcolorsel/view-color-list.c:197
 #: mini-utils/guname/moreinfo.c:227
@@ -1128,109 +1209,122 @@ msgid "Value"
 msgstr "Balioa"
 
 #: gtt/ghtml.c:249
+#, fuzzy
 msgid "Billable Value"
-msgstr ""
+msgstr "Balio fakturagarria"
 
 #: gtt/ghtml.c:253 gtt/ghtml.c:279
 #, fuzzy
 msgid "No Default Value"
-msgstr "Lehenetsia"
+msgstr "Balio lehenetsi gabea"
 
 #: gtt/ghtml.c:276
+#, fuzzy
 msgid "Start Time Fuzziness"
-msgstr ""
+msgstr "Hasierako ordua ez dago garbi"
 
 #: gtt/ghtml.c:392 gtt/glade/task_properties.glade.h:13
 #, fuzzy
 msgid "Hold"
-msgstr "Solidoa"
+msgstr "Mantendu"
 
 #: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:3
+#, fuzzy
 msgid "Bill"
-msgstr ""
+msgstr "Faktura"
 
 #: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:21
 msgid "Paid"
-msgstr ""
+msgstr "Ordaindua"
 
 #: gtt/ghtml.c:411 gtt/glade/task_properties.glade.h:17
 msgid "Not Billable"
-msgstr ""
+msgstr "Ez fakturagarria"
 
 #: gtt/ghtml.c:414 gtt/glade/task_properties.glade.h:16
+#, fuzzy
 msgid "No Charge"
-msgstr ""
+msgstr "Kargurik gabe"
 
 #: gtt/ghtml.c:424 gtt/glade/task_properties.glade.h:22
 #, fuzzy
 msgid "Regular"
-msgstr "Birkargatu"
+msgstr "Erregularra"
 
 #: gtt/ghtml.c:427 gtt/glade/task_properties.glade.h:20
+#, fuzzy
 msgid "Overtime"
-msgstr ""
+msgstr "Ordu estrak "
 
 #: gtt/ghtml.c:430
+#, fuzzy
 msgid "Double Overtime"
-msgstr ""
+msgstr "Ordu estra bikoitzak"
 
 #: gtt/ghtml.c:433 gtt/glade/task_properties.glade.h:12
 #, fuzzy
 msgid "Flat Fee"
-msgstr "Mugikorra"
+msgstr "Tarifa laua"
 
 #: gtt/ghtml.c:453
 #, fuzzy
 msgid "Error - Unknown"
-msgstr "Ezezaguna"
+msgstr "Errorea - Ezezaguna"
 
 #: gtt/ghtml.c:703
+#, fuzzy
 msgid "unknown token: >>>>"
-msgstr ""
+msgstr "token ezezaguna: >>>>"
 
 #: gtt/journal.c:107
+#, fuzzy
 msgid "Error 404 Not Found"
-msgstr ""
+msgstr "404 errorera ez da aurkitu "
 
 #: gtt/journal.c:109
 #, fuzzy, c-format
 msgid "The file %s was not found."
-msgstr "Ez da Logo fitxategia aurkitu"
+msgstr "%s fitxategia ez da aurkitu."
 
 #: gtt/journal.c:110
 msgid "(null)"
-msgstr ""
+msgstr "(nulua)"
 
 #: gtt/journal.c:119
 #, fuzzy
 msgid "Unkown Error"
-msgstr "Ezezaguna"
+msgstr "Errore ezezaguna"
 
 #: gtt/journal.c:168 gtt/plug-in.c:90
 #, fuzzy, c-format
 msgid ""
 "Unable to open the file %s\n"
 "%s"
-msgstr "Ezin izan da egunkari-fitxategia ireki!\n"
+msgstr ""
+"Ezin izan da %s fitxategia ireki\n"
+"%s"
 
 #: gtt/journal.c:259 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
+#, fuzzy
 msgid "New Diary Entry"
-msgstr ""
+msgstr "Agendako sarrera berria"
 
 #: gtt/journal.c:447
+#, fuzzy
 msgid "Save HTML To File"
-msgstr ""
+msgstr "Gorde HTML fitxategian"
 
 #: gtt/log.c:55
-#, c-format
+#, fuzzy, c-format
 msgid "Cannot open logfile %s for append"
-msgstr "Ezin da %s egunkari-fitxategia aurkitu eransteko "
+msgstr "Ezin izan da %s egunkari-fitxategia eransteko ireki"
 
 #. Translators: Format to use in the gtt logfile
 #: gtt/log.c:64
+#, fuzzy
 msgid "%b %d %H:%M:%S"
-msgstr ""
+msgstr "%bk %d %H:%M:%S"
 
 #: gtt/log.c:102
 msgid "no description"
@@ -1250,7 +1344,7 @@ msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
 msgstr ""
-"GTimeTracker bat irekita dagoela dirudi.\n"
+"Beste GTimeTracker bat irekita dagoela dirudi.\n"
 "Hala ere GtimeTracker ireki nahi baduzu, sakatu Ados, bestela, sakatu Utzi "
 "irteteko."
 
@@ -1260,7 +1354,7 @@ msgstr "Ezin da pid fitxategia sortu!"
 
 #: gtt/main.c:219
 msgid "Do you want to continue?"
-msgstr ""
+msgstr "Jarraitu nahi duzu?"
 
 #: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
@@ -1268,7 +1362,7 @@ msgstr "Errorea"
 
 #: gtt/main.c:272
 msgid "Shall I setup a new configuration?"
-msgstr ""
+msgstr "Konfigurazio berri bat hasi?"
 
 #: gtt/main.c:439
 msgid "Specify geometry"
@@ -1287,12 +1381,18 @@ msgid "Warning"
 msgstr "Abisua"
 
 #: gtt/menucmd.c:85
+#, fuzzy
 msgid ""
 "GTimeTracker is a combination stop-watch, diary, consultant billing system "
 "and project manager.  You can measure the amount of time you spend on a "
 "task, associate a memo with it, set a billing rate, print an invoice, as "
 "well as track that status of other projects."
 msgstr ""
+"GTimeTracker elementu hauen arteko konbinazio bat da: denbora-"
+"kontrolatzailea,agenda, fakturazio-sistemen aholkularia eta proiektu-"
+"kudeatzailea.  Hainbat gauza egin ditzakezu: zeregin batean zenbat denbora "
+"pasa duzunkalkulatu, memo bat horrekin lotu, fakturazio-tasak zehaztu, "
+"fakturakinprimatu eta beste proiektu batzuen egoera kontrolatu."
 
 #: gtt/menucmd.c:142
 msgid "New Project..."
@@ -1305,7 +1405,7 @@ msgstr "Birkargatu konfigurazio-fitxategia"
 #: gtt/menucmd.c:225
 #, fuzzy
 msgid "Do you really want to reload the configuration file?"
-msgstr "Ezin izan dut konfigurazio-fitxategia irakurri"
+msgstr "Ziur zaude konfigurazio-fitxategia birkargatu nahi duzula?"
 
 #: gtt/menucmd.c:260
 #, c-format
@@ -1341,67 +1441,78 @@ msgid "Clear _Daily Counter"
 msgstr "_Garbitu eguneroko kontagailua"
 
 #: gtt/menus.c:64 gtt/menus.c:174
+#, fuzzy
 msgid "Zero out todays timer by deleting todays time logs"
-msgstr ""
+msgstr "Ezarri kronometroa zeroan gaurko denbora-erregistroak ezabatuz"
 
 #: gtt/menus.c:68 gtt/menus.c:87 gtt/menus.c:156
 #, fuzzy
 msgid "_Journal..."
-msgstr "Eskuliburua..."
+msgstr "_Egunkari-liburua..."
 
 #: gtt/menus.c:69 gtt/menus.c:88 gtt/menus.c:157
+#, fuzzy
 msgid "Show the timesheet journal for this project"
-msgstr ""
+msgstr "Erakutsi proiektu honen denbora-orrien egunkari-liburua"
 
 #: gtt/menus.c:72 gtt/menus.c:160
 msgid "New Diary _Entry"
-msgstr ""
+msgstr "_Agendako sarrera berria"
 
 #: gtt/menus.c:73 gtt/menus.c:161
+#, fuzzy
 msgid "Change the current task for this project"
-msgstr ""
+msgstr "Aldatu uneko zeregina proiektu honetarako"
 
 #: gtt/menus.c:91
+#, fuzzy
 msgid "_All Journal..."
-msgstr ""
+msgstr "_Egunkari-liburu guztia..."
 
 #: gtt/menus.c:92
+#, fuzzy
 msgid "Show the verbose timesheet journal for this project"
-msgstr ""
+msgstr "Erakutsi proiektu honen denbora-orrien egunkari-liburu xehetua"
 
 #: gtt/menus.c:95
+#, fuzzy
 msgid "_Invoice..."
-msgstr ""
+msgstr "_Faktura..."
 
 #: gtt/menus.c:96
+#, fuzzy
 msgid "Show a sample invoice for this project"
-msgstr ""
+msgstr "Erakutsi proiektu honen mostrako faktura"
 
 #: gtt/menus.c:99
 #, fuzzy
 msgid "_Primer..."
-msgstr "Hobespenak..."
+msgstr "_Oinarrizko eredua..."
 
 #: gtt/menus.c:100
+#, fuzzy
 msgid "Show a sample introductory primer for designing custom reports"
 msgstr ""
+"Erakutsi mostrako oinarrizko eredu bat txosten pertsonalizatuak egiteko"
 
 #: gtt/menus.c:103
 #, fuzzy
 msgid "_New Report..."
-msgstr "Proiekt_u berria..."
+msgstr "_Txosten berria..."
 
 #: gtt/menus.c:104
+#, fuzzy
 msgid "Define a path to a new GTT phtml report file"
-msgstr ""
+msgstr "Zehaztu bide-izen bat GTT phtml txosten-fitxategi berriarentzat"
 
 #: gtt/menus.c:115
 msgid "St_art"
 msgstr "_Hasi"
 
 #: gtt/menus.c:116
+#, fuzzy
 msgid "Start the timer running"
-msgstr ""
+msgstr "Kronometroa martxan jartzen du"
 
 #: gtt/menus.c:121
 msgid "Sto_p"
@@ -1410,15 +1521,16 @@ msgstr "Ge_lditu"
 #: gtt/menus.c:122
 #, fuzzy
 msgid "Stop the timer"
-msgstr "irailak"
+msgstr "Kronometroa gelditzen du"
 
 #: gtt/menus.c:127
 msgid "_Timer Running"
 msgstr "Kronometroa mart_xan"
 
 #: gtt/menus.c:146
+#, fuzzy
 msgid "_Reports"
-msgstr ""
+msgstr "_Txostenak"
 
 #: gtt/menus.c:147
 msgid "_Timer"
@@ -1429,15 +1541,16 @@ msgstr "Krono_metroa"
 #: gtt/menus.c:244
 #, fuzzy
 msgid "Reports"
-msgstr "Berrabiarazi"
+msgstr "Txostenak "
 
 #: gtt/plug-in.c:121
 msgid "Reports/<Separator>"
-msgstr ""
+msgstr "Txostenak/<Separator>"
 
 #: gtt/proj.c:697
+#, fuzzy
 msgid "Old GTT Tasks"
-msgstr ""
+msgstr "GTTren ataza zaharkituak "
 
 #: gtt/props-proj.c:94 gtt/props-proj.c:95 gtt/props-task.c:75
 #: gtt/props-task.c:76
@@ -1445,7 +1558,7 @@ msgid "empty"
 msgstr "hutsik"
 
 #: gtt/timer.c:117
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "The keyboard and mouse have been idle\n"
 "for %d minutes.  The currently running\n"
@@ -1453,11 +1566,16 @@ msgid ""
 "has been stopped.\n"
 "Do you want to restart it?"
 msgstr ""
+"Teklatua eta sagua inaktibo egon dira\n"
+"%d minututan.  Une honetan exekutatzen\n"
+"ari den proiektua (%s - %s)\n"
+"gelditu egin da.\n"
+"Berriro hasi nahi duzu?"
 
 #: gtt/timer.c:125
 #, fuzzy
 msgid "System Idle"
-msgstr "Sistemaren koloreak"
+msgstr "Sistema inaktibo"
 
 #. Note to translators: just skip the `[GTT]'
 #: gtt/toolbar.c:159
@@ -1467,7 +1585,7 @@ msgstr "[GTT]Berria"
 #: gtt/toolbar.c:160
 #, fuzzy
 msgid "Create a New Project..."
-msgstr "Proiektu berria..."
+msgstr "Sortu proiektu berria..."
 
 #: gtt/toolbar.c:166
 msgid "Reload"
@@ -1494,12 +1612,14 @@ msgid "Paste Project"
 msgstr "Itsatsi proiektua"
 
 #: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
+#, fuzzy
 msgid "Journal"
-msgstr ""
+msgstr "Egunkari-liburua"
 
 #: gtt/toolbar.c:194
+#, fuzzy
 msgid "View and Edit Timestamp Logs"
-msgstr ""
+msgstr "Ikusi eta editatu denbora-marken erregistroak"
 
 #: gtt/toolbar.c:199
 msgid "Props"
@@ -1508,7 +1628,7 @@ msgstr "Prop."
 #: gtt/toolbar.c:200
 #, fuzzy
 msgid "Edit Project Properties..."
-msgstr "Editatu propietateak..."
+msgstr "Editatu proiektuaren propietateak..."
 
 #: gtt/toolbar.c:204
 msgid "Timer"
@@ -1525,7 +1645,7 @@ msgstr "Egutegia"
 #: gtt/toolbar.c:212
 #, fuzzy
 msgid "View Calendar"
-msgstr "Egutegia"
+msgstr "Ikusi egutegia"
 
 #: gtt/toolbar.c:225
 msgid "Prefs"
@@ -1541,7 +1661,7 @@ msgstr "Eskuliburua"
 
 #: gtt/toolbar.c:231
 msgid "User's Guide and Manual"
-msgstr ""
+msgstr "Erabiltzailearen gida eta eskuliburua "
 
 #: gtt/toolbar.c:236
 msgid "Quit"
@@ -1549,120 +1669,128 @@ msgstr "Irten"
 
 #: gtt/toolbar.c:236
 msgid "Quit GTimeTracker"
-msgstr "Irten GtimeTracker-etik"
+msgstr "Irten GTimeTracker-etik"
 
 #: gtt/glade/interval_edit.glade.h:1
 msgid "1 Hour"
-msgstr ""
+msgstr "ordu bat"
 
 #: gtt/glade/interval_edit.glade.h:2
 #, fuzzy
 msgid "10 Min"
-msgstr "Min"
+msgstr "10 Min"
 
 #: gtt/glade/interval_edit.glade.h:3
 #, fuzzy
 msgid "15 Min"
-msgstr "Min"
+msgstr "15 Min"
 
 #: gtt/glade/interval_edit.glade.h:4
 #, fuzzy
 msgid "2 Hours"
-msgstr "ordu"
+msgstr "2 ordu"
 
 #: gtt/glade/interval_edit.glade.h:5
 #, fuzzy
 msgid "20 Min"
-msgstr "Min"
+msgstr "20 Min"
 
 #: gtt/glade/interval_edit.glade.h:6
 #, fuzzy
 msgid "3 Hours"
-msgstr "ordu"
+msgstr "3 ordu"
 
 #: gtt/glade/interval_edit.glade.h:7
 #, fuzzy
 msgid "30 Min"
-msgstr "Min"
+msgstr "30 Min"
 
 #: gtt/glade/interval_edit.glade.h:8
 #, fuzzy
 msgid "5 Min"
-msgstr "Min"
+msgstr "5 Min"
 
 #: gtt/glade/interval_edit.glade.h:9
+#, fuzzy
 msgid "Exact Time"
-msgstr ""
+msgstr "Denbora zehatza"
 
 #: gtt/glade/interval_edit.glade.h:10
+#, fuzzy
 msgid "Set how Uncertain the Start Time Is"
-msgstr ""
+msgstr "Ezarri hasiera-orduaren ziurtasun eza zenbatekoa den"
 
 #: gtt/glade/interval_edit.glade.h:12
 #, fuzzy
 msgid "Start Fuzz"
-msgstr "Hasi"
+msgstr "Hasi Fuzz"
 
 #: gtt/glade/interval_popup.glade.h:1
 msgid "Add a new time interval."
-msgstr ""
+msgstr "Gehitu denbora-tarte berri bat."
 
 #: gtt/glade/interval_popup.glade.h:2
 #, fuzzy
 msgid "Delete Interval"
-msgstr "Ezabatu parametroa"
+msgstr "Ezabatu tartea"
 
 #: gtt/glade/interval_popup.glade.h:3
 msgid "Delete This Interval"
-msgstr ""
+msgstr "Ezabatu tarte hau"
 
 #: gtt/glade/interval_popup.glade.h:4
 #, fuzzy
 msgid "Edit Interval"
-msgstr "Eguneratze-tartea (ms)"
+msgstr "Editatu tartea"
 
 #: gtt/glade/interval_popup.glade.h:5
 #, fuzzy
 msgid "Edit the Start & Stop Times"
-msgstr "Hasi/Gelditu kronometroa"
+msgstr "Editatu hasteko eta gelditzeko orduak"
 
 #: gtt/glade/interval_popup.glade.h:6
 #, fuzzy
 msgid "Insert Diary Entry"
-msgstr "T_xertatu amaieran"
+msgstr "Txertatu agendako sarrera"
 
 #: gtt/glade/interval_popup.glade.h:7
+#, fuzzy
 msgid "Insert a new diary entry above this time interval."
-msgstr ""
+msgstr "Txertatu agendako sarrera berri bat denbora-tarte horren gainean."
 
 #: gtt/glade/interval_popup.glade.h:8
+#, fuzzy
 msgid "Merge Down"
-msgstr ""
+msgstr "Fusionatu behean"
 
 #: gtt/glade/interval_popup.glade.h:9
+#, fuzzy
 msgid "Merge Into Interval Above"
-msgstr ""
+msgstr "Fusionatu goiko tartearekin"
 
 #: gtt/glade/interval_popup.glade.h:10
+#, fuzzy
 msgid "Merge Into Interval Below"
-msgstr ""
+msgstr "Fusionatu beheko tartearekin"
 
 #: gtt/glade/interval_popup.glade.h:11
+#, fuzzy
 msgid "Merge Up"
-msgstr ""
+msgstr "Fusionatu goian"
 
 #: gtt/glade/interval_popup.glade.h:12
 #, fuzzy
 msgid "New Interval"
-msgstr "Orokorra"
+msgstr "Tarte berria"
 
 #: gtt/glade/interval_popup.glade.h:13
+#, fuzzy
 msgid "Paste Diary Entry"
-msgstr ""
+msgstr "Itsatsi agendako sarrera"
 
 #: gtt/glade/interval_popup.glade.h:14 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
-msgstr ""
+msgstr "Itsatsi lehen ebakitako egunkariko sarrera bat."
 
 #: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
 #: mini-utils/gcolorsel/menus.c:913 mini-utils/gshutdown/gshutdown.c:155
@@ -1673,43 +1801,47 @@ msgstr "Itxi"
 #: gtt/glade/journal.glade.h:3
 #, fuzzy
 msgid "New File"
-msgstr "Ikuspegi berria"
+msgstr "Fitxategi berria"
 
 #: gtt/glade/journal.glade.h:4
 #, fuzzy
 msgid "Open File"
-msgstr "Ireki egunkaria"
+msgstr "Ireki fitxategia"
 
 #: gtt/glade/journal.glade.h:5
 #, fuzzy
 msgid "Print"
-msgstr "Puntua"
+msgstr "Inprimatu"
 
 #: gtt/glade/journal.glade.h:6
 msgid "Refresh"
-msgstr ""
+msgstr "Freskatu"
 
 #: gtt/glade/journal.glade.h:8
 #, fuzzy
 msgid "Save File"
-msgstr "Gor_de paleta"
+msgstr "Gorde fitxategia"
 
 #: gtt/glade/not-implemented.glade.h:1
 #, fuzzy
 msgid "Information"
-msgstr "PUZari buruzko informazioa"
+msgstr "Informazioa"
 
 #: gtt/glade/prefs.glade.h:1
 msgid "Display"
 msgstr "Bistaratzea"
 
 #: gtt/glade/prefs.glade.h:2
+#, fuzzy
 msgid "Enter a shell command to be executed when no projects are active."
 msgstr ""
+"Sartu exekutatu behar den shell komandoa proiekturik aktibatuta ez dagoenean."
 
 #: gtt/glade/prefs.glade.h:3
+#, fuzzy
 msgid "Enter a shell command to be executed whenever projects are switched."
 msgstr ""
+"Sartu exekutatu behar den shell komandoa proiektuak aktibatuta daudenean."
 
 #: gtt/glade/prefs.glade.h:4
 msgid "Entry Start:"
@@ -1720,23 +1852,29 @@ msgid "Entry Stop:"
 msgstr "Sarreraren amaiera:"
 
 #: gtt/glade/prefs.glade.h:7
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "Entry that will be logged when a project starts. Use %t for the project "
 "title, %d for the description, etc. See the manual for more options."
 msgstr ""
+"Proiektu bat hastean erregistratuko den sarrera. Erabili %t proiektuaren "
+"izenburuarentzat, %d azalpenarentzat, etab. Ikus eskuliburua aukera gehiago "
+"lortzeko."
 
 #: gtt/glade/prefs.glade.h:9
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "Entry that will be logged when the project stops.  Use %t for the porject "
 "title, %d for the project description, etc. See the manual for more options."
 msgstr ""
+"Proiektua amaitzean erregistratuko den sarrera.  Erabili %t proiektuaren "
+"izenburuarentzat, %d proiektuaren azalpenarentzat, etab. Ikus eskuliburua "
+"aukera gehiago lortzeko."
 
 #: gtt/glade/prefs.glade.h:10
 #, fuzzy
 msgid "Fields"
-msgstr "Bilatu"
+msgstr "Eremuak"
 
 #: gtt/glade/prefs.glade.h:11
 msgid "Filename:"
@@ -1745,11 +1883,12 @@ msgstr "Fitxategi-izena:"
 #: gtt/glade/prefs.glade.h:12
 #, fuzzy
 msgid "Idle Seconds:"
-msgstr "Erakutsi segundoak"
+msgstr "Inaktibo zenbat segundoz: "
 
 #: gtt/glade/prefs.glade.h:13
+#, fuzzy
 msgid "Inactivity Timeout"
-msgstr ""
+msgstr "Inaktibitate-egoeraren denbora-muga "
 
 #: gtt/glade/prefs.glade.h:14
 msgid "Logfile"
@@ -1758,7 +1897,7 @@ msgstr "Egunkari-fitxategia"
 #: gtt/glade/prefs.glade.h:15
 #, fuzzy
 msgid "Min Recorded:"
-msgstr "Gorputz nagusia:"
+msgstr "Erregistratutako minutuak:"
 
 #: gtt/glade/prefs.glade.h:16
 msgid "Misc"
@@ -1771,62 +1910,65 @@ msgstr "Proiekturik ez dagoenerako komandoa:"
 #: gtt/glade/prefs.glade.h:18
 #, fuzzy
 msgid "Project List Display"
-msgstr "Proiektuaren izenburua "
+msgstr "Proiektu-zerrendaren bistaratzea"
 
 #: gtt/glade/prefs.glade.h:19
 #, fuzzy
 msgid "Shell"
-msgstr "Ortografia"
+msgstr "Shell"
 
 #: gtt/glade/prefs.glade.h:20
 msgid "Shell Commands"
 msgstr "Shell komandoak"
 
 #: gtt/glade/prefs.glade.h:21
+#, fuzzy
 msgid "Show Current Diary Entry"
-msgstr ""
+msgstr "Erakutsi agendaren uneko sarrera "
 
 #: gtt/glade/prefs.glade.h:22
 msgid "Show Estimated Effort"
-msgstr ""
+msgstr "Erakutsi espero den ahalegina"
 
 #: gtt/glade/prefs.glade.h:23
 #, fuzzy
 msgid "Show Percent Complete"
-msgstr "Erakutsi 'Propietateak'"
+msgstr "Erakutsi ehunekoa osoa"
 
 #: gtt/glade/prefs.glade.h:24
+#, fuzzy
 msgid "Show Planned Project End Date"
-msgstr ""
+msgstr "Erakutsi proiektua amaitzeko data "
 
 #: gtt/glade/prefs.glade.h:25
+#, fuzzy
 msgid "Show Planned Project Start Date"
-msgstr ""
+msgstr "Erakutsi proiektua hasteko data"
 
 #: gtt/glade/prefs.glade.h:26
 #, fuzzy
 msgid "Show Project Description"
-msgstr "Proiektuaren azalpena:"
+msgstr "Erakutsi proiektuaren azalpena"
 
 #: gtt/glade/prefs.glade.h:27
 #, fuzzy
 msgid "Show Project Due Date"
-msgstr "ez dago proiekturik hautatuta "
+msgstr "Erakutsi proiektuaren epemuga"
 
 #: gtt/glade/prefs.glade.h:28
 #, fuzzy
 msgid "Show Project Importance"
-msgstr "Proiekturik ez dagoenerako komandoa:"
+msgstr "Erakutsi proiektuaren garrantzia"
 
 #: gtt/glade/prefs.glade.h:29
 #, fuzzy
 msgid "Show Project Status"
-msgstr "Erakutsi egunkariaren egoera "
+msgstr "Erakutsi proiektuaren egoera"
 
 #: gtt/glade/prefs.glade.h:30
 #, fuzzy
 msgid "Show Project Urgency"
-msgstr "Erakutsi 'Hobespenak'"
+msgstr "Erakutsi proiektuaren presa"
 
 #: gtt/glade/prefs.glade.h:31
 msgid "Show Seconds"
@@ -1839,33 +1981,36 @@ msgstr "Erakutsi egoera-barra"
 #: gtt/glade/prefs.glade.h:33
 #, fuzzy
 msgid "Show Sub-Projects"
-msgstr "Erakutsi 'Propietateak'"
+msgstr "Erakutsi azpipropietateak"
 
 #: gtt/glade/prefs.glade.h:34
 msgid "Show Table Header"
 msgstr "Erakutsi taularen goiburukoa"
 
 #: gtt/glade/prefs.glade.h:35
+#, fuzzy
 msgid "Show Time For The Current Diary Entry"
-msgstr ""
+msgstr "Erakutsi agendako uneko sarreraren denbora"
 
 #: gtt/glade/prefs.glade.h:36
+#, fuzzy
 msgid "Show Time This Month"
-msgstr ""
+msgstr "Erakutsi hilabete honetako denbora"
 
 #: gtt/glade/prefs.glade.h:37
+#, fuzzy
 msgid "Show Time This Week"
-msgstr ""
+msgstr "Erakutsi aste honetako denbora"
 
 #: gtt/glade/prefs.glade.h:38
 #, fuzzy
 msgid "Show Time This Year"
-msgstr "Erakutsi 'Kronometroa'"
+msgstr "Erakutsi urte honetako denbora"
 
 #: gtt/glade/prefs.glade.h:39
 #, fuzzy
 msgid "Show Time Today"
-msgstr "Erakutsi 'Kronometroa'"
+msgstr "Erakutsi gaurko denbora"
 
 #: gtt/glade/prefs.glade.h:40
 msgid "Show Toolbar Icons"
@@ -1882,7 +2027,7 @@ msgstr "Erakutsi argibideak"
 #: gtt/glade/prefs.glade.h:43
 #, fuzzy
 msgid "Show Total Time Ever"
-msgstr "Erakutsi taularen goiburukoa"
+msgstr "Erakutsi orain arteko denbora guztira"
 
 #: gtt/glade/prefs.glade.h:44
 msgid "Show `Cut', `Copy', `Paste'"
@@ -1895,7 +2040,7 @@ msgstr "Erakutsi 'Laguntza'"
 #: gtt/glade/prefs.glade.h:46
 #, fuzzy
 msgid "Show `Journal'"
-msgstr "Erakutsi 'Laguntza'"
+msgstr "Erakutsi `Egunkari-liburua'"
 
 #: gtt/glade/prefs.glade.h:47
 msgid "Show `New'"
@@ -1915,33 +2060,42 @@ msgstr "Erakutsi 'Irten'"
 
 #: gtt/glade/prefs.glade.h:51
 msgid "Show `Save', `Reload'"
-msgstr "Erakutsi 'Gorde', 'Berritu'"
+msgstr "Erakutsi 'Gorde', 'Birkargatu'"
 
 #: gtt/glade/prefs.glade.h:52
 msgid "Show `Timer'"
 msgstr "Erakutsi 'Kronometroa'"
 
 #: gtt/glade/prefs.glade.h:53
+#, fuzzy
 msgid ""
 "Show the 'szing', that is, the estimated amount of work that it will take to "
 "perform this project."
 msgstr ""
+"Erakutsi 'szing'-a, hau da, proiektua burutzeko egin behar den "
+"gutxigorabeherako lan-kopurua. "
 
 #: gtt/glade/prefs.glade.h:54
 msgid "Switch Project Command:"
 msgstr "Proiektuz aldatzeko komandoa:"
 
 #: gtt/glade/prefs.glade.h:55
+#, fuzzy
 msgid ""
 "Switches between projects that happen faster than this will not be logged "
 "(enter the number of seconds)"
 msgstr ""
+"Proiektu batetik bestera azkar aldatzen da, erregistratzeko denborarik ere "
+"ez du ematen (sartu denbora segundotan)"
 
 #: gtt/glade/prefs.glade.h:56
+#, fuzzy
 msgid ""
 "The current active project will be made inactive after there has been no "
 "keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
 msgstr ""
+"Uneko proiektu aktiboa inaktibo egotera pasatuko da denbora horretan "
+"teklatuaren/saguaren aktibitaterik ez badago.  Ezarri -1ean desgaitzeko."
 
 #: gtt/glade/prefs.glade.h:57
 msgid "Toolbar"
@@ -1958,137 +2112,157 @@ msgstr "Erabili egunkari-fitxategia"
 #: gtt/glade/prefs.glade.h:60
 #, fuzzy
 msgid "View Project Fields"
-msgstr "Ikusi propietateak"
+msgstr "Ikusi proiektuaren eremuak"
 
 #: gtt/glade/project_properties.glade.h:1
 msgid "        "
-msgstr ""
+msgstr "        "
 
 #: gtt/glade/project_properties.glade.h:2
-#, fuzzy
 msgid "            "
-msgstr "Iragazkia...                "
+msgstr "            "
 
 #: gtt/glade/project_properties.glade.h:3
-#, fuzzy
 msgid "                        "
-msgstr "Iragazkia...                "
+msgstr "                        "
 
 #: gtt/glade/project_properties.glade.h:5
 #, no-c-format
 msgid "% Complete"
-msgstr ""
+msgstr "% osatuta"
 
 #: gtt/glade/project_properties.glade.h:6
+#, fuzzy
 msgid "A title to assign to this project"
-msgstr ""
+msgstr "Proiektu honentzako izenburu bat"
 
+# gtt/glade/project_properties.glade.h:7ç
 #: gtt/glade/project_properties.glade.h:7
+#, fuzzy
 msgid "Auto-merge Gap:"
-msgstr ""
+msgstr "Fusio automatikoaren hutsunea:"
 
 #: gtt/glade/project_properties.glade.h:8
+#, fuzzy
 msgid "Auto-merge Interval:"
-msgstr ""
+msgstr "Fusio automatikoaren tartea:"
 
 #: gtt/glade/project_properties.glade.h:11
+#, fuzzy
 msgid ""
 "Does this item need immediate attention? Note that some urgent tasks might "
 "not be important.  For example, Bill may want you to answer his email today, "
 "but you may have better things to do today."
 msgstr ""
+"Elementu honek berehalako arreta behar du? Kontuan izan presazko zeregin "
+"batzuk ez direla garrantzitsuak izango.  Adibidez, Imanolek bere mezu "
+"elektronikoari gaur erantzun diezaiozun nahi du, baina zuk egiteko hobeak "
+"dituzu gaur."
 
 #: gtt/glade/project_properties.glade.h:12
+#, fuzzy
 msgid "Double-Overtime Rate:"
-msgstr ""
+msgstr "Ordu estra prezio bikoitza:"
 
 #: gtt/glade/project_properties.glade.h:13
 #, fuzzy
 msgid "Due Date:"
-msgstr "Data:"
+msgstr "Epemuga:"
 
 #: gtt/glade/project_properties.glade.h:14
 msgid "Flat Fee:"
-msgstr ""
+msgstr "Tarifa laua:"
 
 #: gtt/glade/project_properties.glade.h:16
 msgid "Hours to Finish:"
-msgstr ""
+msgstr "Amaitzeko falta diren orduak:"
 
 #: gtt/glade/project_properties.glade.h:17
+#, fuzzy
 msgid ""
 "How important is it to perform this task?  Not everything important is "
 "urgent.  For example, it is important to file a tax return every year, but "
 "you have a lot of time to get ready to do this."
 msgstr ""
+"Zenbateko garrantzia du zeregin honek?  Garrantzia duen guztia ez "
+"dapresazkoa.  Adibidez, garrantzitsua da errentaren aitorpena urtero egitea, "
+"baina hori egiteko nahikoa denbora baduzu."
 
 #: gtt/glade/project_properties.glade.h:18
+#, fuzzy
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
 msgstr ""
+"Tarteen arteko hutsunea hori baino txikiagoa bada, tarteak "
+"elkarrekinfusionatuko dira."
 
 #: gtt/glade/project_properties.glade.h:19
+#, fuzzy
 msgid ""
 "If this project is billed for one price no matter how long it takes, enter "
 "the fee here."
 msgstr ""
+"Proiektua prezio jakin batean fakturatu behar bada, beharko duen denbora "
+"kontuanhartu gabe, sartu hemen tarifa."
 
 #: gtt/glade/project_properties.glade.h:20
 #, fuzzy
 msgid "Importance:"
-msgstr "Tolerantzia :"
+msgstr "Garrantzia:"
 
 #: gtt/glade/project_properties.glade.h:22
+#, fuzzy
 msgid ""
 "Internal notes about the project that will not be printed on an invoice."
-msgstr ""
+msgstr "Fakturan agertuko ez diren proiektuari buruzko barne-oharrak."
 
 #: gtt/glade/project_properties.glade.h:23
 #, fuzzy
 msgid "Intervals"
-msgstr "Orokorra"
+msgstr "Tarteak"
 
 #: gtt/glade/project_properties.glade.h:24
 msgid "Intervals smaller than this will be discarded"
-msgstr ""
+msgstr "Hau baino txikiagoak diren tarteak baztertu egingo dira "
 
 #: gtt/glade/project_properties.glade.h:26
 msgid "Medium"
-msgstr ""
+msgstr "Tartekoa"
 
 #: gtt/glade/project_properties.glade.h:27
 msgid "Minimum Interval: "
-msgstr ""
+msgstr "Gutxieneko tartea: "
 
 #: gtt/glade/project_properties.glade.h:28
 #, fuzzy
 msgid "Not Set"
-msgstr "Letra-tipoaren hautatzailea"
+msgstr "Konfiguratu gabe"
 
 #: gtt/glade/project_properties.glade.h:30
 #: gtt/glade/task_properties.glade.h:18
 #, fuzzy
 msgid "Notes:"
-msgstr "Bat ere ez"
+msgstr "Oharrak:"
 
 #: gtt/glade/project_properties.glade.h:32
 msgid "Overtime Rate:"
-msgstr ""
+msgstr "Ordu estren prezioa:"
 
 #: gtt/glade/project_properties.glade.h:33
+#, fuzzy
 msgid "Planned Finish:"
-msgstr ""
+msgstr "Noizko bukatu:"
 
 #: gtt/glade/project_properties.glade.h:34
 #, fuzzy
 msgid "Planned Start:"
-msgstr "Sarreraren hasiera:"
+msgstr "Noiz hasi:"
 
 #: gtt/glade/project_properties.glade.h:35
 #, fuzzy
 msgid "Planning"
-msgstr "Abisua"
+msgstr "Antolaketa"
 
 #: gtt/glade/project_properties.glade.h:36
 msgid "Project"
@@ -2105,139 +2279,158 @@ msgstr "Proiektuaren izenburua:"
 #: gtt/glade/project_properties.glade.h:39
 #, fuzzy
 msgid "Rates"
-msgstr "Data:"
+msgstr "Tasak "
 
 #: gtt/glade/project_properties.glade.h:40
+#, fuzzy
 msgid "Regular Rate:"
-msgstr ""
+msgstr "Tasa erregularra:"
 
 #: gtt/glade/project_properties.glade.h:41
 #, fuzzy
 msgid "Status:"
-msgstr "Egoera"
+msgstr "Egoera:"
 
 #: gtt/glade/project_properties.glade.h:42
+#, fuzzy
 msgid "The dollars per hour charged for overtime work on this project."
-msgstr ""
+msgstr "Proiektu honetan egindako ordu estrengatik kobratutako dolar-kopurua."
 
 #: gtt/glade/project_properties.glade.h:43
+#, fuzzy
 msgid "The dollars per hour normally charged for this project."
-msgstr ""
+msgstr "Normalean proiektu honetan orduko kobratzen den dolar-kopurua."
 
 #: gtt/glade/project_properties.glade.h:44
+#, fuzzy
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
-msgstr ""
+msgstr "Ordu estren prezioa (igandeetako ordu estrak, etab.)"
 
 #: gtt/glade/project_properties.glade.h:45
+#, fuzzy
 msgid "Time below which an interval is merged with its neighbors"
-msgstr ""
+msgstr "Denbora horren azpitik tarte bat bere ingurukoekin fusionatzen da"
 
 #: gtt/glade/project_properties.glade.h:46
 msgid "Urgency:"
-msgstr ""
+msgstr "Presa:"
 
 #: gtt/glade/project_properties.glade.h:47
 msgid "What is the status of this project?"
-msgstr ""
+msgstr "Zein da proiektu honen egoera?"
 
 #: gtt/glade/project_properties.glade.h:48
+#, fuzzy
 msgid "a short description that will be printed on the invoice."
-msgstr ""
+msgstr "fakturan agertuko den azalpen laburra."
 
 #: gtt/glade/project_properties.glade.h:49
 #, fuzzy
 msgid "seconds"
-msgstr "seg"
+msgstr "segundo"
 
 #: gtt/glade/task_popup.glade.h:1
 #, fuzzy
 msgid "Add a new time interval"
-msgstr "Eguneratze-tartea (ms)"
+msgstr "Gehitu denbora-tarte berri bat"
 
 #: gtt/glade/task_popup.glade.h:2
+#, fuzzy
 msgid "Cut Entry & _Times"
-msgstr ""
+msgstr "Ebaki sarrera eta _orduak"
 
 #: gtt/glade/task_popup.glade.h:3
+#, fuzzy
 msgid "Delete the diary entry only, keep the time intervals"
-msgstr ""
+msgstr "Ezabatu agendako sarrera bakarrik, mantendu denbora-tarteak"
 
+# fuzzy
 #: gtt/glade/task_popup.glade.h:4
 msgid "Delete the diary entry, and the time intervals below it."
-msgstr ""
+msgstr "Ezabatu agendako sarrera eta bere azpian dauden denbora-tarteak."
 
 #: gtt/glade/task_popup.glade.h:5
+#, fuzzy
 msgid "Edit the diary entry and other task properties."
-msgstr ""
+msgstr "Editatu agendako sarrera eta zereginen beste propietateak."
 
 #: gtt/glade/task_popup.glade.h:6
+#, fuzzy
 msgid "Insert a new diary entry above this one."
-msgstr ""
+msgstr "Txertatu agendako sarrera berri bat honen gainean."
 
 #: gtt/glade/task_popup.glade.h:7
 msgid "New Time Interval"
-msgstr ""
+msgstr "Denbora-tarte berria"
 
 #: gtt/glade/task_popup.glade.h:9
 msgid "_Cut Diary Entry"
-msgstr ""
+msgstr "_Ebaki agendako sarrera"
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
-msgstr ""
+msgstr "Editatu _agendako sarrera"
 
 #: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
-msgstr ""
+msgstr "_Agendako sarrera berria"
 
 #: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
-msgstr ""
+msgstr "_Itsatsi agendako sarrera"
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
-msgstr ""
+msgstr "Fakturan agertuko ez diren ohar pribatuak."
 
 #: gtt/glade/task_properties.glade.h:2
+#, fuzzy
 msgid "A short description to attach to this block of time."
-msgstr ""
+msgstr "Denbora-bloke honi erantsiko zaion azalpen laburra."
 
 #: gtt/glade/task_properties.glade.h:5
 msgid "Billable:"
-msgstr ""
+msgstr "Fakturagarria: "
 
 #: gtt/glade/task_properties.glade.h:6
 msgid "Billing Block:"
-msgstr ""
+msgstr "Fakturazio-bloka:"
 
 #: gtt/glade/task_properties.glade.h:7
 msgid "Billing Rate:"
-msgstr ""
+msgstr "Fakturazio-tasa:"
 
 #: gtt/glade/task_properties.glade.h:8
 msgid "Billing Status:"
-msgstr ""
+msgstr "Fakturaren egoera:"
 
 #: gtt/glade/task_properties.glade.h:9
 #, fuzzy
 msgid "Diary Entry Properties"
-msgstr "GdiskFree-ren propietateak"
+msgstr "Agendako sarreraren propietateak"
 
 #: gtt/glade/task_properties.glade.h:10
 msgid "Diary Entry:"
-msgstr ""
+msgstr "Agendako sarrera:"
 
 #: gtt/glade/task_properties.glade.h:11
+#, fuzzy
 msgid "Fee rate to be charged for this task."
-msgstr ""
+msgstr "Zeregin honetarako tarifa."
 
 #: gtt/glade/task_properties.glade.h:14
+#, fuzzy
 msgid ""
 "How should this task be billed?  \"Billable\" means bill to the customer in "
 "the normal fashion.   \"Not Billable\" means we can't ask for money for "
 "this, don't print on the invoice.   \"No Charge\" means print on the invoice "
 "as 'free/no-charge'."
 msgstr ""
+"Nola fakturatu behar da zeregin hau?  \"Fakturagarria\" terminoak bezeroari "
+"ohiko  moduan fakturatzea esan nahi du.   \"Ez fakturagarria\" terminoak "
+"zeregin horregatik dirurik eskatu ezin dugula esan nahi du; fakturan ez "
+"ipini.   \"Kargurik gabe\" terminoak fakturan  'kargurik gabe' ipiniko duela "
+"esan nahi du."
 
 #: gtt/glade/task_properties.glade.h:15
 msgid ""
@@ -2245,21 +2438,29 @@ msgid ""
 "not yet, needs review.   \"Bill\" means print this on the next invoice.   "
 "\"Paid\" means that it should no longer be included on invoices."
 msgstr ""
+"Zeregin hori bezeroari fakturatzeko prest al dago? \"Mantendu\" terminoak "
+"'oraindik ez' esan nahi du, berrikusi egin behar dela.   \"Faktura\" "
+"terminoak 'hurrengo fakturan inprimatu' esan nahi du.   \"Ordaindua\" "
+"terminoak fakturan ez dela gehiago ipini behar esan nahi du."
 
 #: gtt/glade/task_properties.glade.h:19
 #, fuzzy
 msgid "OverOver"
-msgstr "Zerbitzaria"
+msgstr "AmaitutaAmaituta"
 
+# gtt/glade/task_properties.glade.h:23ç
 #: gtt/glade/task_properties.glade.h:23
+#, fuzzy
 msgid ""
 "The billed unit of time will be rounded to an integer multiple of this time."
 msgstr ""
+"Fakturatutako denbora-unitatea denbora horren multiplo izango den zenbaki "
+"oso batera biribilduko da."
 
 #: gtt/glade/task_properties.glade.h:24
 #, fuzzy
 msgid "minutes"
-msgstr "min"
+msgstr "minutu"
 
 #: logview/about.c:41
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -2273,10 +2474,10 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Programa hau Linux-en GNOME proiektuaren zatia da. Egunkari-ikuspegiak ez "
-"duINONGO BERMERIK. Software librea da, eta berriro bana daiteke  GNU "
-"Lizentzia Publiko Orokorrak ezarritako baldintzak betez. Egunkariaren ikonoa "
-"Tuomas Kuosman-en (tigert bezala ere ezagutua) kortesia da."
+"Programa hau Linux-en GNOME proiektuaren zatia da. Egunkari-ikuspegiak ez du "
+"INONGO BERMERIK. Software librea da, eta birbana dezakezu  GNU Lizentzia "
+"Publiko Orokorrean jasotako baldintzak betez. Egunkariaren ikonoa Tuomas "
+"Kuosman-en (tigert bezala ere ezagutua) kortesia da."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
@@ -2306,12 +2507,12 @@ msgstr "Editatu..."
 #: logview/actions.c:278
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
-msgstr "Ezin da <%s> ekintzaren datu-basea ireki! Irekitzeak huts egin du."
+msgstr "Ezin da <%s> ekintzaren datu-basea ireki! Huts egin du irekitzean."
 
 #: logview/actions.c:313 logview/actions.c:326 logview/actions.c:337
 #: logview/actions.c:348 logview/actions.c:359 logview/actions.c:370
 msgid "Error parsing actions data base"
-msgstr "Errorea ekintzen datu-basea analizatzean "
+msgstr "Errorea ekintzen datu-basea analizatzean"
 
 #: logview/actions.c:404
 msgid "Can't write to actions database!"
@@ -2335,7 +2536,7 @@ msgstr "regexp mezua"
 
 #: logview/actions.c:515
 msgid "action to execute when regexps are TRUE"
-msgstr "regexps-ak EGIA direnean, ekintza exekutatu  "
+msgstr "regexps-ak EGIA direnean, ekintza exekutatu"
 
 #: logview/actions.c:516
 msgid "description"
@@ -2472,7 +2673,7 @@ msgstr "%B %e"
 
 #: logview/logrtns.c:199
 msgid "Not enough memory!\n"
-msgstr "Ez dago nahiko memoriarik!\n"
+msgstr "Ez dago memoria nahikorik!\n"
 
 #: logview/logrtns.c:207
 msgid "Out of memory!\n"
@@ -2493,8 +2694,8 @@ msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file."
 msgstr ""
-"Erabiltzaileak ezin du %s irakurri. Fitxategiaren baimenak aldatzeko, "
-"programa root gisa exekutatu edo sistemako administratzaileari eskatu."
+"Erabiltzaileak ezin du %s irakurri. Programa root gisa exekutatu edo "
+"sistemako administratzaileari,  fitxategiaren baimenak alda ditzan eskatu."
 
 #: logview/logrtns.c:309
 #, c-format
@@ -2568,7 +2769,7 @@ msgstr "Erakutsi erabiltzailearen hobespenak "
 
 #: logview/logview.c:124
 msgid "Select...               "
-msgstr "Hautatu...               "
+msgstr "Hautatu...              "
 
 #: logview/logview.c:125
 msgid "Select log events"
@@ -2576,7 +2777,7 @@ msgstr "Hautatu egunkari-gertaerak"
 
 #: logview/logview.c:127
 msgid "Filter..                "
-msgstr "Iragazkia...                "
+msgstr "Iragazkia...               "
 
 #: logview/logview.c:128
 msgid "Filter log events"
@@ -2605,7 +2806,7 @@ msgstr "Data: "
 
 #: logview/logview.c:619
 msgid "Too many open logs. Close one and try again"
-msgstr "Egunkari gehiegi dago irekita. Itxi bat eta saiatu berriro "
+msgstr "Egunkari gehiegi dago irekita.Itxi bat eta saiatu berriro "
 
 #: logview/logview.c:676
 msgid "Open new logfile"
@@ -2658,7 +2859,7 @@ msgstr "IKUTUA!!\n"
 
 #: logview/userprefsdialog.c:65
 msgid "hostname column width ( 0 to hide this column ): "
-msgstr "ostalari-izenen zutabearen zabalera ( zutabe hau ezkutatzeko 0 ): "
+msgstr "ostalari-izenen zutabearen zabalera ( zutabe hau ezkutatzeko, 0 ): "
 
 #: logview/userprefsdialog.c:66
 msgid "Columns"
@@ -2666,16 +2867,16 @@ msgstr "Zutabeak"
 
 #: logview/zoom.c:78
 msgid "Zoom view"
-msgstr "Ikusi zooma"
+msgstr "Handitu ikuspegia"
 
 #: logview/zoom.c:154
 #, c-format
 msgid "Log line detail for %s"
-msgstr "Egunkari-lerroko xehetasunak %s(r)entzat "
+msgstr "%s egunkari-lerroko xehetasunak "
 
 #: logview/zoom.c:157
 msgid "Log line detail for <No log loaded>"
-msgstr "Egunkari lerroko xehetasunak <egunkaria ez dago kargatuta>"
+msgstr "<Egunkaria ez dago kargatuta> egunkari-lerroko xehetasunak "
 
 #: logview/zoom.c:180
 msgid "Date:"
@@ -2721,7 +2922,7 @@ msgstr "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
 
 #: logview/config.c:39
 msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-msgstr "-adobe-helvetica-medium-r-normal--*-14-*-*-*-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
 
 #: logview/config.c:40
 msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
@@ -2746,12 +2947,12 @@ msgstr "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
 #: logview/desc_db.c:37
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "Ezin da regexp-en <%s> datu-basea ireki!  Irekitzeak huts egin du."
+msgstr "Ezin da regexp-en <%s> datu-basea ireki!  Irekitzean egin du huts."
 
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Ezin da <%s> datu-basearen azalpena ireki! Huts egin du irekitzeak."
+msgstr "Ezin da <%s> datu-basearen azalpena ireki! Huts egin du irekitzean."
 
 #: mini-utils/gcolorsel/dialog-prefs.c:119
 msgid "Do nothing"
@@ -2804,7 +3005,7 @@ msgstr "Kateatu"
 #: mini-utils/gcolorsel/gcolorsel.c:96
 #, c-format
 msgid "'%s' document has been modified; do you wish to save it ?"
-msgstr "'%s' dokumentua aldatu da; gorde nahi duzu ?"
+msgstr "'%s' dokumentua aldatu egin da; gorde nahi duzu ?"
 
 #: mini-utils/gcolorsel/gcolorsel.c:206
 msgid "GColorsel was unable to paste colors from the clipboard."
@@ -2826,11 +3027,11 @@ msgid ""
 msgstr ""
 "Ezin izan dut ekintza hori exekutatu. Egiaztatu :\n"
 "\n"
-"1. Ekintza bat gertaera honekin asoziatu duzula.\n"
-"2. Asoziatutako dokumentua oraindik badagoela.\n"
-"3. Asoziatutako dokumentu-mota.\n"
+"1. Gertaera honekin ekintza bat asoziatu duzula.\n"
+"2. Asoziatutako dokumentua egon badagoela.\n"
+"3. Asoziatutako dokumentua zein motatakoa den\n"
 "\n"
-"Joan hobespenetara edizioa menuan."
+"Edizioa menuan joan hobespenetara."
 
 #. Init GnomeMDI
 #: mini-utils/gcolorsel/gcolorsel.c:505
@@ -2883,11 +3084,11 @@ msgid ""
 "You can choose a short name, do not confuse it with the file name."
 msgstr ""
 "Hautatu sortu nahi duzun dokumentu-mota.\n"
-"Izen labur bat aukera dezakezu, ez nahastu fitxategi-izenarekin."
+"Izen labur bat aukera dezakezu, eta ez nahastu fitxategi-izenarekin."
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:13
 msgid "Select source document"
-msgstr "Hautatu iturburuko dokumentua"
+msgstr "Hautatu iturburu-dokumentua"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:14
 msgid "Select type"
@@ -2903,7 +3104,7 @@ msgid ""
 "these documents."
 msgstr ""
 "Dokumentu honek dokumentu bateko edo gehiagoko zatiak irakurtzen ditu. "
-"Aukeratu dokumentu horiek."
+"Aukeratu dokumentu horiek. "
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:17
 msgid ""
@@ -2989,7 +3190,7 @@ msgstr "Ohar-koadernoa fitxaren kokalekua:"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:17
 msgid "On ... execute ..."
-msgstr "... , exekutatu ..."
+msgstr "... exekutatu ..."
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:18
 msgid "Right"
@@ -3177,8 +3378,8 @@ msgstr ""
 "\n"
 "%s\n"
 "\n"
-"Egiaztatu eman duzun bide-izena badagoela,\n"
-"eta idazteko dagokion baimena baduzula.\n"
+"Egiaztatu eman duzun bide-izena existitzen dela,\n"
+"eta idazteko baimena baduzula.\n"
 "\n"
 "Berriro saiatu nahi duzu ?"
 
@@ -3196,7 +3397,7 @@ msgstr ""
 "\n"
 "%s\n"
 "\n"
-"Egiaztatu eman duzun bide-izena badagoela,\n"
+"Egiaztatu eman duzun bide-izena existitzen dela,\n"
 "eta fitxategia irekitzeko baimena baduzula."
 
 #: mini-utils/gcolorsel/menus.c:217
@@ -3230,7 +3431,7 @@ msgid ""
 msgstr ""
 "'%s'(r)en azken ikuspegia ixtera noa.\n"
 "\n"
-"Dokumentu hau ere itxi egingo da, jarraitu?\n"
+"Dokumentu hau ere itxi egingo da. Jarraitu?\n"
 "\n"
 "Kontuan hartu %d dokumentu birtualak dokumentu honetako informazioa "
 "erabiltzen duela."
@@ -3244,7 +3445,7 @@ msgid ""
 msgstr ""
 "'%s'(r)en azken ikuspegia ixtera noa.\n"
 "\n"
-"Dokumentu hau ere itxi egingo da, jarraitu ?"
+"Dokumentu hau ere itxi egingo da. Jarraitu ?"
 
 #: mini-utils/gcolorsel/menus.c:444
 #, c-format
@@ -3258,7 +3459,7 @@ msgid ""
 msgstr ""
 "'%s' ixtera noa.\n"
 "\n"
-"Kontuan hartu %d(r)en ikuspegiak hondatuko direla,\n"
+"Kontuan hartu %d(r)en ikuspegiak hondatu egingo direla,\n"
 "eta %d dokumentu birtualak dokumentu honetako informazioa erabiltzen duela.\n"
 "\n"
 "Jarraitu nahi duzu ?"
@@ -3284,7 +3485,7 @@ msgstr "Gnome-ren kolore-arakatzailea"
 
 #: mini-utils/gcolorsel/menus.c:496
 msgid "Small utility to browse available X11 colors."
-msgstr "Utilitate txikia, erabilgarri dauden X11 koloreak arakatzeko."
+msgstr "Erabilgarri dauden X11 koloreak arakatzeko utilitate txikia."
 
 #: mini-utils/gcolorsel/menus.c:606
 msgid "New Color"
@@ -3403,7 +3604,7 @@ msgstr "Hautatutako letra-tipoaren izena irtetean inprimatu"
 
 #: mini-utils/gfontsel/gfontsel.c:275
 msgid "Inhibit remembering selected font for next run"
-msgstr "Hurrengorako ez gogoratu hautatutako letra-tipoaz"
+msgstr "Hurrengoan ez gogoratu hautatutako letra-tipoaz"
 
 #: mini-utils/gfontsel/gfontsel.c:276
 msgid "Inhibit loading of last font"
@@ -3416,13 +3617,13 @@ msgstr "%d arrazoia\n"
 
 #: mini-utils/gless/gless.c:130
 msgid "Where to put the window, and its size"
-msgstr "Leihoa non lokalizatu eta bere tamaina "
+msgstr "Leihoa non lokalizatu, eta bere tamaina "
 
 #: mini-utils/gless/gless.c:131
 msgid "Ignore standard input; may be needed in some cases."
 msgstr ""
 "Jaramonik ez sarrera estandarrari; baliteke kasu batzuetan beharrezkoa "
-"izatea. "
+"izatea."
 
 #: mini-utils/gless/gless.c:293
 msgid "_New Window"
@@ -3546,19 +3747,19 @@ msgstr "Erabiltzaile bakarreko modua"
 
 #: mini-utils/gshutdown/gshutdown.c:89
 msgid "Runlevel 2"
-msgstr "2. Exekuzio-maila "
+msgstr "2. exekuzio-maila"
 
 #: mini-utils/gshutdown/gshutdown.c:90
 msgid "Runlevel 3"
-msgstr "3. Exekuzio-maila "
+msgstr "3. exekuzio-maila"
 
 #: mini-utils/gshutdown/gshutdown.c:91
 msgid "Runlevel 4"
-msgstr "4. Exekuzio-maila "
+msgstr "4. exekuzio-maila"
 
 #: mini-utils/gshutdown/gshutdown.c:92
 msgid "Runlevel 5"
-msgstr "5. Exekuzio-maila "
+msgstr "5. exekuzio-maila"
 
 #: mini-utils/gshutdown/gshutdown.c:93
 msgid "Reboot"
@@ -3616,9 +3817,9 @@ msgid ""
 "Click OK to shutdown or reboot. You will lose\n"
 "any unsaved information in open applications."
 msgstr ""
-"Klik egin Ados botoian itzaltzeko edo berrabiarazteko. Irekita dauden "
+"Egin klik Ados botoian itzaltzeko edo berrabiarazteko. Irekita dauden "
 "aplikazioetan\n"
-"gorde ez duzun informazioa galduko duzu."
+" gorde ez duzun informazioa galduko duzu."
 
 #. Put in a "revert to defaults" button
 #: mini-utils/gshutdown/gshutdown.c:371
@@ -3640,7 +3841,7 @@ msgid ""
 "You will lose any unsaved work."
 msgstr ""
 "%s\n"
-"Gorde ez dituzun lanak galduko dituzu."
+"Gorde ez dituzun lanak galdu egingo dituzu."
 
 #: mini-utils/gshutdown/gshutdown.c:464
 msgid "Don't ask next time."
@@ -3648,11 +3849,11 @@ msgstr "Ez galdetu hurrengoan."
 
 #: mini-utils/gshutdown/gshutdown.c:722
 msgid "Command execution failed: fork failed"
-msgstr "Komandoaren exekuzioak huts egin du: bikoizketak huts egin du"
+msgstr "Komandoaren exekuzioak huts egin du: huts egin du bikoiztean"
 
 #: mini-utils/guname/guname.c:53
 msgid "Make guname act as a control center applet"
-msgstr "Guname kontrol-zentroko applet moduan jarri"
+msgstr "Gunameri kontrol-zentroko applet moduan jokarazi"
 
 #: mini-utils/guname/guname.c:119
 msgid "an initialization error occurred while starting 'guname-capplet'."
@@ -3679,7 +3880,7 @@ msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
 
 #: mini-utils/guname/guname.c:559
 msgid "GNOME: The GNU Network Object Model Environment"
-msgstr "GNOME: GNU sarearen objektu-ereduaren ingurunea"
+msgstr "GNOME: GNUren sarearen objektu-ereduen ingurunea"
 
 #: mini-utils/guname/guname.c:583
 msgid "Email Information..."
@@ -3718,7 +3919,7 @@ msgid ""
 msgstr ""
 "Errorea `%s' fitxategia ixtean: \n"
 "%s\n"
-"Behar bada ezin izan dira datu batzuk edo guztiak idatzi."
+"Baliteke datu batzuk edo denak ezin idatzi ahal izatea."
 
 #: mini-utils/guname/guname.c:730
 #, c-format
@@ -3747,7 +3948,7 @@ msgid ""
 " Are you sure you want to mail this information?"
 msgstr ""
 "Mezu hau %s(r)i bidaliko zaio.\n"
-" Ziur zaude informazio hau bidali nahi duzula?"
+"Ziur zaude informazio hori bidali nahi duzula?"
 
 #: mini-utils/guname/guname.c:852
 msgid "Are you sure?"
@@ -3909,7 +4110,7 @@ msgstr "    Gailua: "
 
 #: mini-utils/guname/moreinfo.c:328
 msgid "    Filesystem Type: "
-msgstr "    Fitxategi-sistemaren mota: "
+msgstr "    Fitxategi-sistema mota: "
 
 #: mini-utils/guname/moreinfo.c:341
 #, c-format
@@ -3978,7 +4179,7 @@ msgstr ""
 
 #: mini-utils/gw/gw.c:538
 msgid "Menu items"
-msgstr "Menuko elementuak"
+msgstr "Menu-elementuak"
 
 #: mini-utils/gw/gw.c:566
 msgid "Command"
@@ -3991,7 +4192,7 @@ msgstr "Exekutatzen: %s\n"
 
 #: mini-utils/idetool/idetool.c:19
 msgid "Default 16-bit"
-msgstr "Lehenetsi 16-bit"
+msgstr "Lehenetsi 16 bit"
 
 #: mini-utils/idetool/idetool.c:20
 msgid "32-bit"
@@ -4000,7 +4201,7 @@ msgstr "32 bit"
 #. there is no 2 apparently
 #: mini-utils/idetool/idetool.c:22
 msgid "32-bit w/sync"
-msgstr "32-bit w/sync"
+msgstr "32 bit w/sync"
 
 #: mini-utils/idetool/idetool.c:27
 msgid "Sleeping"
@@ -4016,7 +4217,7 @@ msgstr "Egonean"
 
 #: mini-utils/idetool/idetool.c:42
 msgid "Unable to access the drive."
-msgstr "Ezin da unitatean sartu."
+msgstr "Ezin da unitatea atzitu."
 
 #: mini-utils/idetool/idetool.c:59 mini-utils/idetool/idetool.c:71
 msgid "The DMA setting for this drive cannot be changed."
@@ -4113,11 +4314,11 @@ msgstr "maskara gabeko IRQa "
 
 #: mini-utils/idetool/idetool.c:332
 msgid "Multisector"
-msgstr "Sektore anitza"
+msgstr "Sektore anitz"
 
 #: mini-utils/idetool/idetool.c:333
 msgid "On Reset"
-msgstr "Aktibatu berrabiarazi"
+msgstr "Berrabiaraztean"
 
 #.
 #. *	Set up the outer display first
@@ -4136,7 +4337,7 @@ msgstr "Tresna hau supererabiltzaileak bakarrik erabil dezake"
 
 #: mini-utils/idetool/idetool.c:457
 msgid "You appear to have no IDE drives"
-msgstr "Badirudi ez duzula IDE diskorik "
+msgstr "Badirudi ez duzula IDE unitaterik"
 
 #: gfloppy/src/badblocks.c:102
 msgid "MInternal Error: Unable to seek to the correct location."
@@ -4161,11 +4362,11 @@ msgstr "MBloke okerrak egiaztatzen..."
 #: gfloppy/src/badblocks.c:272
 #, c-format
 msgid "MFailed to open device %s for badblock checking\n"
-msgstr "MHuts egin du %s gailua irekitzean bloke okerrak egiaztatzeko\n"
+msgstr "MHuts egin du bloke okerrak egiaztatzeko %s gailua irekitzean\n"
 
 #: gfloppy/src/badblocks.c:291 gfloppy/src/gfloppy.c:213
 msgid "MChecking for bad blocks... Done"
-msgstr "MBloke okerrak egiaztatzen... Eginda"
+msgstr "MBloke okerrak egiaztatzen...Eginda"
 
 #: gfloppy/src/fdformat.c:45
 msgid "MFormatting the disk..."
@@ -4187,7 +4388,7 @@ msgstr "EErrorea formateoa amaitzean"
 #. XXXX - need to tell parent we're finished
 #: gfloppy/src/fdformat.c:79
 msgid "MFormatting the disk... Done"
-msgstr "MDiskoa formateatzen... Eginda"
+msgstr "MDiskoa formateatzen...Eginda"
 
 #. XXXX - tell parent we're starting verify stage
 #: gfloppy/src/fdformat.c:95
@@ -4207,7 +4408,7 @@ msgstr ""
 #: gfloppy/src/fdformat.c:103 gfloppy/src/fdformat.c:178
 #, c-format
 msgid "EInsufficient permissions to open floppy device %s."
-msgstr "EEz daude %s disko-gailua irekitzeko behar adina baimen."
+msgstr "EEz dago %s disko-gailua irekitzeko behar adina baimen."
 
 #: gfloppy/src/fdformat.c:107 gfloppy/src/fdformat.c:182
 msgid ""
@@ -4216,9 +4417,9 @@ msgid ""
 "Please confirm that it is in the drive\n"
 "with the drive door shut."
 msgstr ""
-"EEzin da disketean sartu.\n"
+"EEzin da disketean atzi.\n"
 "\n"
-"Egiaztatu unitatean dagoela eta \n"
+"Egiaztatu unitatean badagoela bat eta \n"
 "unitateko atea itxita dagoela."
 
 #: gfloppy/src/fdformat.c:110
@@ -4228,9 +4429,9 @@ msgid ""
 "\n"
 "Error code %s:%d"
 msgstr ""
-"EErrore generikoa %s disko-gailuan sartzerakoan.\n"
+"EErrore generikoa %s disko-gailua atzitzerakoan.\n"
 "\n"
-"Kode-errorea %s:%d"
+"Errore-kodea %s:%d"
 
 #: gfloppy/src/fdformat.c:130
 #, c-format
@@ -4244,12 +4445,12 @@ msgstr ""
 #: gfloppy/src/fdformat.c:133
 #, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
-msgstr "EArazoak %d zilindroa irakurtzean, %d espero zen , %d irakurri du "
+msgstr "EArazoak %d zilindroa irakurtzean, %d espero zen, %d irakurri du "
 
 #: gfloppy/src/fdformat.c:142
 #, c-format
 msgid "MBad data in cyl %d.  Continuing... "
-msgstr "M%d zilindroan datu okerrak. Jarraitzen... "
+msgstr "MDatu okerrak %d zilindroan. Jarraitzen..."
 
 #: gfloppy/src/fdformat.c:149
 #, c-format
@@ -4272,9 +4473,9 @@ msgid ""
 "\n"
 "Error code %s"
 msgstr ""
-"EErrore generikoa %s disko-gailuan sartzerakoan.\n"
+"EErrore generikoa %s disko-gailua atzitzerakoan.\n"
 "\n"
-"%s kode-errorea"
+"%s errore-kodea"
 
 #: gfloppy/src/fdformat.c:195
 msgid "ECould not determine current format type"
@@ -4332,23 +4533,23 @@ msgstr "For_matu bizkorra"
 
 #: gfloppy/src/gfloppy.c:164 gfloppy/src/gfloppy.c:197
 msgid "MMaking filesystem on disk..."
-msgstr "Disketean fitxategi-sistema sortzen..."
+msgstr "MDisketean fitxategi-sistema sortzen..."
 
 #: gfloppy/src/gfloppy.c:167
 msgid "EUnable to create filesystem correctly."
-msgstr "Ezin izan da fitxategi-sistema behar bezala sortu."
+msgstr "EEzin izan da fitxategi-sistema behar bezala sortu."
 
 #: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
 msgid "MMaking filesystem on disk... Done"
-msgstr "Disketean fitxategi-sistema sortzen... Eginda"
+msgstr "MDisketean fitxategi-sistema sortzen... Eginda"
 
 #: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
 msgid "EUnable to create filesystem."
-msgstr "Ezin izan da fitxategi-sistema sortu."
+msgstr "EEzin izan da fitxategi-sistema sortu."
 
 #: gfloppy/src/gfloppy.c:209
 msgid "MChecking for bad blocks... (this might take a while)"
-msgstr "Bloke okerrak egiaztatzen... (denbora dezente iraun dezake)"
+msgstr "MBloke okerrak egiaztatzen...(denbora dezente iraun dezake)"
 
 #: gfloppy/src/main.c:135 gfloppy/src/main.c:171
 #, c-format
@@ -4434,11 +4635,10 @@ msgid ""
 "Other more ingenious uses are left as an exercise for the interested user."
 msgstr ""
 "GNOMEren stripchart programak erabiltzaileak zehaztutako hainbat parametro "
-"marrazten ditu denboraren funtzio moduan.  Bere funtziorik nagusiena "
-"sistemaren performantzia-parametroen diagrama egiteada, esaterako PUZen "
-"karga, PUZen erabilpena, sareko trafikoaren mailak eta antzerakoak.  "
-"Bestelako erabilpen sinpleagoak erabiltzaile interesatuentzat ariketa moduan "
-"utzi dira."
+"marrazten ditu denboraren funtzioan.  Bere funtzio nagusia sistemaren "
+"performantzia-parametroen diagrama  egitea da, esaterako PUZen karga, PUZen "
+"erabilpena, sareko trafikoaren  mailak eta antzerakoak.  Bestelako erabilpen "
+"sinpleagoak ariketa moduan utzi dira erabiltzaile interesatuentzat. "
 
 #: stripchart/chart-app.c:239
 msgid "Show values"
@@ -4477,7 +4677,7 @@ msgstr "espero den zenbakia"
 #: stripchart/eval.c:371
 #, c-format
 msgid "extra junk at end: \"%s\""
-msgstr "junk estra amaieran: \"%s\""
+msgstr "baztertu beharrekoa amaieran: \"%s\""
 
 #: stripchart/params.c:633
 msgid "Parameter"
@@ -4635,19 +4835,19 @@ msgid ""
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
-"Saretik kargatu dituzun programa arbitrarioak exekutatzea arriskutsua izan "
-"daiteke.\n"
+"Saretik deskargatu dituzun programa arbitrarioak exekutatzea arriskutsua "
+"izan daiteke.\n"
 "\n"
 "Ziur zaude `%s' exekutatu nahi duzula?"
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
-msgstr "Ezin izan da fitxategi-baimenetara sartu"
+msgstr "Ezin izan dira fitxategi-baimenak atzitu"
 
 #: exe-handler/gnome-exe-handler.c:88
 #, c-format
 msgid "Could not execute the file `%s' due to a permission problem"
-msgstr "Ezin izan da `%s' fitxategia exekutatu baimen-arazoarengatik"
+msgstr "Ezin izan da `%s' fitxategia exekutatu baimen-arazoak direla eta"
 
 #: exe-handler/gnome-exe-handler.c:104
 #, c-format
@@ -4662,12 +4862,12 @@ msgstr "Ezinezkoa izan da `%s' fitxategia irekitzea"
 #: exe-handler/gnome-exe-handler.c:132
 #, c-format
 msgid "The file `%s' is empty"
-msgstr "`%s' fitxategia hutsik dago "
+msgstr "`%s' fitxategia hutsik dago"
 
 #: exe-handler/gnome-exe-handler.c:137
 #, c-format
 msgid "There was an error. `%s' is empty"
-msgstr "Errore bat gertatu da. `%s' fitxategia hutsik dago "
+msgstr "Errore bat gertatu da.`%s' fitxategia hutsik dago "
 
 #: exe-handler/gnome-exe-handler.c:152
 msgid "This is a library and can not be executed"
@@ -4675,7 +4875,7 @@ msgstr "Hau liburutegi bat da eta ezin da exekutatu"
 
 #: exe-handler/gnome-exe-handler.c:158
 msgid "The file is a core file and can not be executed"
-msgstr "Fitxategi hau core fitxategia da eta ezin da exekutatu "
+msgstr "Fitxategi hau core fitxategia da eta ezin da exekutatu"
 
 #: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
@@ -4704,11 +4904,11 @@ msgid ""
 "above to add them to the archive"
 msgstr ""
 "Ez dago fitxategi edo karpetarik, fitxategiak edo karpetak\n"
-"artxiboari gehitzeko goian jaregin"
+"artxiboari gehitzeko, goian jaregin"
 
 #: meat-grinder/meat-grinder.c:217 meat-grinder/meat-grinder.c:220
 msgid "Cannot start the archive (tar) program"
-msgstr "Ezin da artxibo-programa(tar) hasi"
+msgstr "Ezin da (tar) artxiboaren programa hasi"
 
 #: meat-grinder/meat-grinder.c:228
 msgid "Cannot run tar/gtar"
@@ -4760,7 +4960,7 @@ msgstr "Sortu artxiboa..."
 
 #: meat-grinder/meat-grinder.c:694
 msgid "Create a new archive from the items"
-msgstr "Sortu elementuekin artxibo berri bat"
+msgstr "Sortu artxibo berri bat elementu horiekin"
 
 #: meat-grinder/meat-grinder.c:703
 msgid "Remove the selected item(s)"
@@ -4772,7 +4972,7 @@ msgstr "GNOMEren artxibo-sortzailea "
 
 #: meat-grinder/meat-grinder.c:765
 msgid "Drop files here to add them to the archive."
-msgstr "Hemen jaregin artxiboari gehitzeko fitxategiak."
+msgstr "Artxiboari gehitzeko fitxategiak hemen jaregin."
 
 #: meat-grinder/meat-grinder.c:783
 msgid "Archive"
@@ -4784,89 +4984,94 @@ msgid ""
 "or press it to pop up a file selection dialog."
 msgstr ""
 "Botoi hori artxiboa sortu nahi duzun lekuan jaregin edo fitxategi-"
-"hautapenarenelkarrizketa-koadroa irekitzeko sakatu."
+"hautapenaren elkarrizketa-koadroa irekitzeko sakatu."
 
 #: meat-grinder/meat-grinder.c:883
 msgid "Cannot find proper icons anywhere!"
-msgstr "Ezin dira ikono egokiak aurkitu!"
+msgstr "Ezin da ikono egokirik aurkitu!"
 
 #: meat-grinder/meat-grinder.c:891
 msgid ""
 "Cannot find the archive (tar) program!\n"
 "This is the program used for creating archives."
 msgstr ""
-"Ezin da artxibo-programa (tar) aurkitu!\n"
+"Ezin da (tar) artxiboaren programa aurkitu!\n"
 "Artxiboak sortzeko programa hau erabiltzen da."
 
 #: gfloppy/gfloppy.desktop.in.h:1
 #, fuzzy
 msgid "Format Floppy Disks"
-msgstr "Formateatu disketea "
+msgstr "Formateatu disketeak"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "gfloppy"
-msgstr ""
+msgstr "gfloppy"
 
 #: gdictsrc/GDict.desktop.in.h:1 gdictsrc/gdict.desktop.in.h:1
 msgid "GDict"
-msgstr ""
+msgstr "GDict"
 
 #: gdictsrc/GDict.desktop.in.h:2
+#, fuzzy
 msgid "Gnome client for the MIT dictionary server"
-msgstr ""
+msgstr "MIT hiztegi-zerbitzariaren Gnome bezeroa "
 
 #: gdictsrc/gdict.desktop.in.h:2
+#, fuzzy
 msgid "GNOME client for RFC 2229-compliant dictionary server"
-msgstr ""
+msgstr "RFC 2229rekin bateragarria den hiztegi-zerbitzariaren GNOME bezeroa"
 
 #: stripchart/stripchart-applet.desktop.in.h:1
 #, fuzzy
 msgid "Shows a stripchart plot"
-msgstr "Stripchart"
+msgstr "Stripchart-en marrazki bat erakusten du "
 
 #: gstripchart/gstripchart.desktop.in.h:1 stripchart/stripchart.desktop.in.h:1
 #, fuzzy
 msgid "Stripchart Plotter"
-msgstr "Stripchart"
+msgstr "Stripchart marrazlea"
 
 #: notepad/Notepad.desktop.in.h:1
+#, fuzzy
 msgid "Notepad"
-msgstr ""
+msgstr "Ohar-bloka"
 
 #: notepad/Notepad.desktop.in.h:2
 msgid "Simple editor (notepad)"
-msgstr ""
+msgstr "Editore arrunta (ohar-bloka)"
 
 #: mini-utils/idetool/idetool.desktop.in.h:1
 msgid "IDE Device Tool"
-msgstr ""
+msgstr "IDE gailuaren tresna"
 
 #: mini-utils/idetool/idetool.desktop.in.h:2
+#, fuzzy
 msgid "Show and Configure IDE Device Settings"
-msgstr ""
+msgstr "Erakutsi eta konfiguratu IDE gailuaren ezarpenak "
 
 #: mini-utils/gw/gw.desktop.in.h:1
 #, fuzzy
 msgid "User Listing"
-msgstr "Erabiltzaile aktiboen zerrenda"
+msgstr "Erabiltzaileen zerrenda"
 
 #: mini-utils/gw/gw.desktop.in.h:2
+#, fuzzy
 msgid "View users on the system"
-msgstr ""
+msgstr "Ikusi sistemako erabiltzaileak"
 
 #: mini-utils/guname/guname-capplet.desktop.in.h:1
 #, fuzzy
 msgid "Show various system information"
-msgstr "Sistemaren informazioa"
+msgstr "Sistemari buruzko informazioa erakusten du"
 
 #: mini-utils/guname/guname.desktop.in.h:1
 #, fuzzy
 msgid "System Info"
-msgstr "Sistemaren informazioa"
+msgstr "Sistemari buruzko informazioa"
 
 #: mini-utils/guname/guname.desktop.in.h:2
 msgid "Technical information about this computer"
-msgstr ""
+msgstr "Ordenagailu honi buruzko informazio teknikoa"
 
 #: mini-utils/gshutdown/gshutdown.desktop.in.h:1
 #, fuzzy
@@ -4874,92 +5079,99 @@ msgid "Shut Down or Reboot"
 msgstr "Itzali edo berrabiarazi"
 
 #: mini-utils/gshutdown/gshutdown.desktop.in.h:2
+#, fuzzy
 msgid "Turn off or reset the computer"
-msgstr ""
+msgstr "Ordenagailua desaktibatu edo berrabiarazi"
 
 #: mini-utils/grun/grun.desktop.in.h:1
+#, fuzzy
 msgid "Ask for a command to execute"
-msgstr ""
+msgstr "Exekutatzeko komando bat eskatzen du"
 
 #: mini-utils/grun/grun.desktop.in.h:2
 #, fuzzy
 msgid "Run A Command..."
-msgstr "Komandoa"
+msgstr "Exekutatu komando bat..."
 
 #: mini-utils/gpenguin/gpenguin.desktop.in.h:1
+#, fuzzy
 msgid "GNOME Penguin"
-msgstr ""
+msgstr "GNOME Penguin"
 
 #: mini-utils/gpenguin/gpenguin.desktop.in.h:2
+#, fuzzy
 msgid "Let a cute pinguin chase your pointer"
-msgstr ""
+msgstr "Utzi pinguino polit bati erakusleari jarraitzen"
 
 #: mini-utils/gnome-run/gnome-run.desktop.in.h:1
+#, fuzzy
 msgid "Prompts the user for a program to run"
-msgstr ""
+msgstr "Erabiltzaileari programa bat exekutatzeko eskatzen dio"
 
 #: mini-utils/gnome-run/gnome-run.desktop.in.h:2
 #, fuzzy
 msgid "Run program..."
-msgstr "Irten programatik "
+msgstr "Exekutatu programa..."
 
 #: mini-utils/gless/gless.desktop.in.h:1
+#, fuzzy
 msgid "Page files as with `more' and `less'"
-msgstr ""
+msgstr "Fitxategiak 'gehiago' eta 'gutxiago'-rekin bezala zenbakitzen ditu  "
 
 #: mini-utils/gfontsel/gfontsel.desktop.in.h:2
 #, fuzzy
 msgid "Select a font for pasting"
-msgstr "Hautatu proiektu bat abioan"
+msgstr "Hautatu itsasteko letra-tipo bat"
 
 #: mini-utils/gcolorsel/gcolorsel.desktop.in.h:1
 #, fuzzy
 msgid "Browse available X11 colors."
-msgstr "Utilitate txikia, erabilgarri dauden X11 koloreak arakatzeko."
+msgstr "Erabilgarri dauden X11 koloreak arakatzen ditu."
 
 #: mini-utils/gcolorsel/gcolorsel.desktop.in.h:2
 #, fuzzy
 msgid "Color Browser"
-msgstr "Gnome-ren kolore-arakatzailea"
+msgstr "Kolore-arakatzailea"
 
 #: meat-grinder/meat-grinder.desktop.in.h:1
 #, fuzzy
 msgid "Archive Generator"
-msgstr "GNOMEren artxibo-sortzailea "
+msgstr "Artxibo-sortzailea"
 
 #: meat-grinder/meat-grinder.desktop.in.h:2
 #, fuzzy
 msgid "GNOME Archive Generator aka Meat Grinder"
-msgstr "GNOMEren artxibo-sortzailea "
+msgstr "GNOMEren artxibo-sortzailea, Meat Grinder bezala ere ezagutua"
 
 #: logview/logview.desktop.in.h:1
+#, fuzzy
 msgid "SysLog tool"
-msgstr ""
+msgstr "SysLog-en tresna"
 
 #: logview/logview.desktop.in.h:2
 #, fuzzy
 msgid "System log monitor"
-msgstr "Aukeratu kontrolatzeko egunkariak"
+msgstr "Sistemako egunkariaren monitorea "
 
 #: gtt/gtt.desktop.in.h:1
 #, fuzzy
 msgid "Time Tracker tool"
-msgstr "Irten GtimeTracker-etik"
+msgstr "Time Tracker tresna"
 
 #: gtt/gtt.desktop.in.h:2
 #, fuzzy
 msgid "Time tracking tool"
-msgstr "GNOMEren denbora kontrolatzeko tresna "
+msgstr "Denbora kontrolatzeko tresna"
 
 #: gstripchart/gstripchart_applet.desktop.in.h:1
 #, fuzzy
 msgid "Gstripchart"
-msgstr "Stripchart"
+msgstr "Gstripchart"
 
 #: gstripchart/gstripchart_applet.desktop.in.h:2
 #, fuzzy
 msgid "Shows a stripchart"
-msgstr "Stripchart"
+msgstr "Stripchart erakusten du"
 
 #: gsearchtool/gsearchtool.desktop.in.h:1
 #: gsearchtool/help/es/gsearchtool.desktop.in.h:1
@@ -4970,11 +5182,14 @@ msgstr "Gnome-ren bilaketa-tresna "
 #: gdiskfree/gdiskfree.desktop.in.h:1
 #, fuzzy
 msgid "GNOME DiskFree"
-msgstr "GDiskFree"
+msgstr "GNOME DiskFree"
 
 #: gdiskfree/gdiskfree.desktop.in.h:2
+#, fuzzy
 msgid "Show free space on mounted file systems using dials."
 msgstr ""
+" Erakutsi diala erabiltzen duten muntatutako fitxategi-sistemetan dagoen "
+"leku librea."
 
 #: gcharmap/gcharmap.desktop.in.h:1
 #, fuzzy
@@ -4984,15 +5199,17 @@ msgstr "Gnome-ren karaktere-mapa"
 #: gcalc/gcalc.desktop.in.h:1
 #, fuzzy
 msgid "Simple Calculator"
-msgstr "Gnome kalkulagailua"
+msgstr "Kalkulagailu arrunta"
 
 #: cromagnon/Cromagnon.desktop.in.h:1
+#, fuzzy
 msgid "Personal cron manager"
-msgstr ""
+msgstr "cron kudeatzaile pertsonala"
 
 #: cromagnon/Cromagnon.desktop.in.h:2
+#, fuzzy
 msgid "Personal crontab manager"
-msgstr ""
+msgstr "crontab kudeatzaile pertsonala"
 
 #~ msgid ""
 #~ "An error occured while reading the configuration file.\n"
@@ -5000,9 +5217,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Errorea konfigurazio-fitxategia irakurtzean.\n"
 #~ "Konfigurazio berri bat ezarri?"
-
-#~ msgid "I could not write the configuration file!"
-#~ msgstr "Ezin izan dut konfigurazio-fitxategia idatzi!"
 
 #~ msgid ""
 #~ "This will overwrite your current set of projects.\n"
