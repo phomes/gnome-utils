@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-07-19 17:08+0200\n"
+"POT-Creation-Date: 2002-07-23 21:07+0200\n"
 "PO-Revision-Date: 2002-07-19 16:16GMT-03:00\n"
 "Last-Translator: Pablo del Campo <pablodc@bigfoot.com>\n"
 "Language-Team: Español <traductores@es.gnome.org>\n"
@@ -629,6 +629,14 @@ msgstr ""
 "estén correctos. Como referencia el servidor por omisión es dict.org y el "
 "puerto 2628"
 
+#: gdictsrc/gdict-about.c:56
+msgid "GNOME Dictionary"
+msgstr "Diccionario de GNOME"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
+msgstr "Copyright 1999 by Mike Hughes"
+
 #: gdictsrc/gdict-about.c:58
 msgid ""
 "Client for MIT dictionary server.\n"
@@ -888,8 +896,8 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
-"Especifica como utilizar la búsqueda inteligente. Esta clave depende de que el "
-"servidor de diccionario soporte esta opción. Por omisión es TRUE"
+"Especifica como utilizar la búsqueda inteligente. Esta clave depende de que "
+"el servidor de diccionario soporte esta opción. Por omisión es TRUE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -900,17 +908,18 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"El servidor de diccionario al cual conectarse. El servidor predeterminado es dict.org. "
-"Visite http://www.dict.org para obtener información acerca de otros servidores."
+"El servidor de diccionario al cual conectarse. El servidor predeterminado es "
+"dict.org. Visite http://www.dict.org para obtener información acerca de "
+"otros servidores."
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
-"El nombre de las bases de datos individual a utilizar en el servidor de diccionario. ! "
-"especifica que gnome-dictionary debería buscar en todas las bases de datos en un servidor "
-"dado"
+"El nombre de las bases de datos individual a utilizar en el servidor de "
+"diccionario. ! especifica que gnome-dictionary debería buscar en todas las "
+"bases de datos en un servidor dado"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -926,9 +935,10 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"La estrategia de búsqueda a utilizar. Esto depende de la estrategia de búsqueda que "
-"soporte el servidor de diccionario. La estrategia predeterminada es «lev» - Palabras "
-"que coinciden con la distancia uno de Levenshtein"
+"La estrategia de búsqueda a utilizar. Esto depende de la estrategia de "
+"búsqueda que soporte el servidor de diccionario. La estrategia "
+"predeterminada es «lev» - Palabras que coinciden con la distancia uno de "
+"Levenshtein"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
