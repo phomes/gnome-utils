@@ -10,15 +10,15 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.5.2\n"
-"POT-Creation-Date: 2004-04-29 11:26+1200\n"
-"PO-Revision-Date: 2004-02-28 17:14+0100\n"
+"Project-Id-Version: gnome-utils 2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-02 23:20+0200\n"
+"PO-Revision-Date: 2004-05-02 23:16+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
@@ -193,7 +193,7 @@ msgstr "Préférences du dictionnaire"
 
 #: gdictsrc/gdict-pref-dialog.c:171
 msgid "Smart _lookup"
-msgstr "Recherche _intelligente"
+msgstr "_Recherche intelligente"
 
 #: gdictsrc/gdict-pref-dialog.c:189
 msgid "_Server:"
@@ -201,7 +201,7 @@ msgstr "_Serveur :"
 
 #: gdictsrc/gdict-pref-dialog.c:196
 msgid "De_fault Server"
-msgstr "Serveur par _défaut"
+msgstr "S_erveur par défaut"
 
 #: gdictsrc/gdict-pref-dialog.c:205
 msgid "Reset server to default"
@@ -213,7 +213,7 @@ msgstr "_Port :"
 
 #: gdictsrc/gdict-pref-dialog.c:229
 msgid "Def_ault Port"
-msgstr "Port par dé_faut"
+msgstr "P_ort par défaut"
 
 #: gdictsrc/gdict-pref-dialog.c:238
 msgid "Reset port to default"
@@ -253,7 +253,7 @@ msgstr "S_tratégie par défaut :"
 
 #: gdictsrc/gdict-pref-dialog.c:454
 msgid "Search all databases"
-msgstr "Chercher dans toutes les bases de données"
+msgstr "Rechercher dans toutes les bases de données"
 
 #: gdictsrc/gdict-pref-dialog.c:615
 msgid "Database"
@@ -1740,6 +1740,7 @@ msgid "Too many logs to monitor. Remove one and try again"
 msgstr "Trop de journaux ouverts. Fermez en un et essayez de nouveau"
 
 #: logview/monitor.c:298 logview/monitor.c:335
+#, c-format
 msgid "tmp_list is NULL\n"
 msgstr "tmp_list est NULL\n"
 
@@ -1748,6 +1749,7 @@ msgid "Monitoring Logs..."
 msgstr "Surveillance des journaux..."
 
 #: logview/monitor.c:643
+#, c-format
 msgid "TOUCHED!!\n"
 msgstr "TOUCHÉ !!\n"
 
