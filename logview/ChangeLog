@@ -1,3 +1,8 @@
+2005-03-07  Vincent Noel  <vnoel@cox.net>
+
+	* logview.c (logview_set_window_title): Add a string to
+	translation. Add comment for translators (bug #162589).
+
 2005-03-02  Vincent Noel  <vnoel@cox.net>
 
 	* logrtns.c (OpenLogFile): Free an allocated buffer. Fix bug
