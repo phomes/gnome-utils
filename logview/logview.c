@@ -895,8 +895,7 @@ logview_set_window_title (LogviewWindow *window)
 		     app names : "logname (monitored) - APP_NAME" */
 			window_title = g_strdup_printf (_("%s (monitored) - %s"), logname, APP_NAME);
 		else
-		  /* For translators : this is the window title "logname - APP_NAME" */
-			window_title = g_strdup_printf (_("%s - %s"), logname, APP_NAME);
+			window_title = g_strdup_printf ("%s - %s", logname, APP_NAME);
 	}
 	else
 		window_title = g_strdup_printf (APP_NAME);
