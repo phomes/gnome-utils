@@ -27,7 +27,7 @@ SUBDIRS = po intl macros idl $(gfloppy) logview gcharmap \
 
 DIST_SUBDIRS = po intl macros idl gfloppy logview gcharmap \
 	gcalc gsearchtool gdiskfree stripchart gdictsrc \
-	gtt mini-utils splash gdialog \
+	gtt cromagnon mini-utils splash gdialog \
 	meat-grinder exe-handler omf-install
 
 EXTRA_DIST = gnome-utils.spec.in
