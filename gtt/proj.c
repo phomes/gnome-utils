@@ -1527,7 +1527,7 @@ gtt_interval_merge_down (GttInterval *ivl)
 	ivl_len = ivl->stop - ivl->start;
 	if (more_fuzz > ivl_len) more_fuzz = ivl_len;
 
-	merge->stop -= ivl_len;
+	merge->stop += ivl_len;
 	if (ivl->fuzz > merge->fuzz) merge->fuzz = ivl->fuzz;
 	if (more_fuzz > merge->fuzz) merge->fuzz = more_fuzz;
 	gtt_interval_destroy (ivl);
