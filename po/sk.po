@@ -5,14 +5,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-11-30 16:14-0600\n"
-"PO-Revision-Date: 2001-11-11 12:35CET\n"
+"POT-Creation-Date: 2001-12-11 15:48+0100\n"
+"PO-Revision-Date: 2001-12-07 22:13CET\n"
 "Last-Translator: Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>\n"
-"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"Language-Team: Slovak <sk-i18n@linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: KBabel 0.9.6\n"
 
 #: gcalc/gcalc.c:41
 msgid "The Gnome Calculator"
@@ -905,14 +905,12 @@ msgid "Total time spent on this project."
 msgstr "Celkový èas pre tento projekt"
 
 #: gtt/ctree.c:518
-#, fuzzy
 msgid "Entry"
-msgstr "Koniec polo¾ky:"
+msgstr "Polo¾ka"
 
 #: gtt/ctree.c:520
-#, fuzzy
 msgid "Time spent under the current diary entry."
-msgstr "Èas strávený pre aktuálne memo o úlohe."
+msgstr "Èas strávený pre aktuálnu polo¾ku denníka."
 
 #: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
@@ -960,12 +958,11 @@ msgstr "Popis"
 
 #: gtt/ctree.c:569 gtt/ghtml.c:95 gtt/ghtml.c:220
 msgid "Diary Entry"
-msgstr ""
+msgstr "Polo¾ka denníka"
 
 #: gtt/ctree.c:571
-#, fuzzy
 msgid "The current diary entry"
-msgstr "Zatvorí aktuálny dokument"
+msgstr "Aktuálna polo¾ka denníka"
 
 #: gtt/ctree.c:578
 msgid "Estimated Project Start Date"
@@ -1086,9 +1083,8 @@ msgid "(empty)"
 msgstr "(prázne)"
 
 #: gtt/ghtml.c:225
-#, fuzzy
 msgid "Notes"
-msgstr "Poznámky:"
+msgstr "Poznámky"
 
 #: gtt/ghtml.c:229
 msgid "Task Time"
@@ -1167,24 +1163,24 @@ msgstr "Chyba - Neznáme"
 msgid "unknown token: >>>>"
 msgstr "neznámy token: >>>>"
 
-#: gtt/journal.c:108
+#: gtt/journal.c:107
 msgid "Error 404 Not Found"
 msgstr "Chyba 404 Nenájdené"
 
-#: gtt/journal.c:110
+#: gtt/journal.c:109
 #, c-format
 msgid "The file %s was not found."
 msgstr "Súbor %s nebol nájdený."
 
-#: gtt/journal.c:111
+#: gtt/journal.c:110
 msgid "(null)"
 msgstr "(null)"
 
-#: gtt/journal.c:120
+#: gtt/journal.c:119
 msgid "Unkown Error"
 msgstr "Neznáma chyba"
 
-#: gtt/journal.c:169 gtt/plug-in.c:90
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1193,12 +1189,12 @@ msgstr ""
 "Nepodarilo sa otvori» súbor %s\n"
 "%s"
 
-#: gtt/journal.c:248 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
+#: gtt/journal.c:259 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
 msgid "New Diary Entry"
-msgstr ""
+msgstr "Nová polo¾ka denníka"
 
-#: gtt/journal.c:436
+#: gtt/journal.c:447
 msgid "Save HTML To File"
 msgstr "Ulo¾i» HTML do súboru"
 
@@ -1337,7 +1333,7 @@ msgstr "Zobrazí ¾urnál èasu pre tento projekt"
 
 #: gtt/menus.c:72 gtt/menus.c:160
 msgid "New Diary _Entry"
-msgstr ""
+msgstr "Nová polo¾ka _denníka"
 
 #: gtt/menus.c:73 gtt/menus.c:161
 msgid "Change the current task for this project"
@@ -1573,55 +1569,60 @@ msgid "Start Fuzz"
 msgstr "Nepresnos» ¹tartu"
 
 #: gtt/glade/interval_popup.glade.h:1
+msgid "Add a new time interval."
+msgstr "Pridá nový èasový interval."
+
+#: gtt/glade/interval_popup.glade.h:2
 msgid "Delete Interval"
 msgstr "Odstráni» interval"
 
-#: gtt/glade/interval_popup.glade.h:2
+#: gtt/glade/interval_popup.glade.h:3
 msgid "Delete This Interval"
 msgstr "Odstráni tento interval"
 
-#: gtt/glade/interval_popup.glade.h:3
+#: gtt/glade/interval_popup.glade.h:4
 msgid "Edit Interval"
 msgstr "Upravi» interval"
 
-#: gtt/glade/interval_popup.glade.h:4
+#: gtt/glade/interval_popup.glade.h:5
 msgid "Edit the Start & Stop Times"
 msgstr "Upraví poèiatoèný a koncový èas"
 
-#: gtt/glade/interval_popup.glade.h:5
-#, fuzzy
-msgid "Insert Diary Entry"
-msgstr "Vlo¾i» na konie_c"
-
 #: gtt/glade/interval_popup.glade.h:6
-#, fuzzy
-msgid "Insert a new diary entry above this time interval."
-msgstr "Vlo¾í nové memo nad tento interval."
+msgid "Insert Diary Entry"
+msgstr "Vlo¾i» polo¾ku denníka"
 
 #: gtt/glade/interval_popup.glade.h:7
+msgid "Insert a new diary entry above this time interval."
+msgstr "Vlo¾í novú polo¾ku denníka nad tento interval."
+
+#: gtt/glade/interval_popup.glade.h:8
 msgid "Merge Down"
 msgstr "Spoji» dolu"
 
-#: gtt/glade/interval_popup.glade.h:8
+#: gtt/glade/interval_popup.glade.h:9
 msgid "Merge Into Interval Above"
 msgstr "Spojí s intervalom hore"
 
-#: gtt/glade/interval_popup.glade.h:9
+#: gtt/glade/interval_popup.glade.h:10
 msgid "Merge Into Interval Below"
 msgstr "Spojí s intervalom dole"
 
-#: gtt/glade/interval_popup.glade.h:10
+#: gtt/glade/interval_popup.glade.h:11
 msgid "Merge Up"
 msgstr "Spoji» hore"
 
-#: gtt/glade/interval_popup.glade.h:11
-msgid "Paste Diary Entry"
-msgstr ""
+#: gtt/glade/interval_popup.glade.h:12
+msgid "New Interval"
+msgstr "Nový interval"
 
-#: gtt/glade/interval_popup.glade.h:12 gtt/glade/task_popup.glade.h:8
-#, fuzzy
+#: gtt/glade/interval_popup.glade.h:13
+msgid "Paste Diary Entry"
+msgstr "Vlo¾i» polo¾ku denníka"
+
+#: gtt/glade/interval_popup.glade.h:14 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
-msgstr "Vlo¾í predtým vystrihnuté memo."
+msgstr "Vlo¾í predtým vystrihnutú polo¾ku denníka."
 
 #: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
 #: mini-utils/gcolorsel/menus.c:913 mini-utils/gshutdown/gshutdown.c:155
@@ -1746,9 +1747,8 @@ msgid "Shell Commands"
 msgstr "Príkazy shellu"
 
 #: gtt/glade/prefs.glade.h:21
-#, fuzzy
 msgid "Show Current Diary Entry"
-msgstr "Zobrazi» aktuálnu úlohu"
+msgstr "Zobrazi» aktuálnu polo¾ku denníka"
 
 #: gtt/glade/prefs.glade.h:22
 msgid "Show Estimated Effort"
@@ -1803,9 +1803,8 @@ msgid "Show Table Header"
 msgstr "Zobrazi» hlavièku tabuµky"
 
 #: gtt/glade/prefs.glade.h:35
-#, fuzzy
 msgid "Show Time For The Current Diary Entry"
-msgstr "Zobrazi» èas pre aktuálnu úlohu"
+msgstr "Zobrazi» èas pre aktuálnu polo¾ku denníka"
 
 #: gtt/glade/prefs.glade.h:36
 msgid "Show Time This Month"
@@ -2005,7 +2004,6 @@ msgid "Importance:"
 msgstr "Dôle¾itos»:"
 
 #: gtt/glade/project_properties.glade.h:22
-#, fuzzy
 msgid ""
 "Internal notes about the project that will not be printed on an invoice."
 msgstr "Súkromné poznámky o projekte, memo, ktoré nebude vytlaèené na faktúre."
@@ -2108,55 +2106,48 @@ msgid "seconds"
 msgstr "sekúnd"
 
 #: gtt/glade/task_popup.glade.h:1
-#, fuzzy
 msgid "Add a new time interval"
-msgstr "Vlo¾í nové memo nad tento interval."
+msgstr "Vlo¾í nový èasový interval"
 
 #: gtt/glade/task_popup.glade.h:2
-msgid "Delete _Times"
-msgstr "Odstráni» è_asy"
+msgid "Cut Entry & _Times"
+msgstr "Vystrihnú» polo¾ku a èa_s"
 
 #: gtt/glade/task_popup.glade.h:3
-#, fuzzy
 msgid "Delete the diary entry only, keep the time intervals"
-msgstr "Odstráni iba memo, èasové intervaly zostanú"
+msgstr "Odstráni iba polo¾ku denníka, èasové intervaly zostanú"
 
 #: gtt/glade/task_popup.glade.h:4
-#, fuzzy
 msgid "Delete the diary entry, and the time intervals below it."
-msgstr "Odstráni iba memo a èasové intervaly pod ním."
+msgstr "Odstráni polo¾ku denníka a èasové intervaly pod ním."
 
 #: gtt/glade/task_popup.glade.h:5
-#, fuzzy
 msgid "Edit the diary entry and other task properties."
-msgstr "Upraví memo a ostatné vlastnosti úlohy."
+msgstr "Upraví polo¾ku denníka a ostatné vlastnosti úlohy."
 
 #: gtt/glade/task_popup.glade.h:6
-#, fuzzy
 msgid "Insert a new diary entry above this one."
-msgstr "Vlo¾í nové memo nad aktuálny."
+msgstr "Vlo¾í novú polo¾ku denníka nad aktuálnu polo¾ku."
 
 #: gtt/glade/task_popup.glade.h:7
-#, fuzzy
 msgid "New Time Interval"
-msgstr "Odstráni tento interval"
+msgstr "Nový èasový interval"
 
 #: gtt/glade/task_popup.glade.h:9
-#, fuzzy
-msgid "_Delete Diary Entry"
-msgstr "Odstráni» parameter"
+msgid "_Cut Diary Entry"
+msgstr "_Vystrihnú» polo¾ku denníka"
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
-msgstr ""
+msgstr "_Upravi» polo¾ku denníka"
 
 #: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
-msgstr ""
+msgstr "_Nová polo¾ka denníka"
 
 #: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
-msgstr ""
+msgstr "_Vlo¾i» polo¾ku denníka"
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
@@ -2183,13 +2174,12 @@ msgid "Billing Status:"
 msgstr "Stav úètovania:"
 
 #: gtt/glade/task_properties.glade.h:9
-#, fuzzy
 msgid "Diary Entry Properties"
-msgstr "Vlastnosti GDiskFree"
+msgstr "Vlastnosti polo¾ky denníka"
 
 #: gtt/glade/task_properties.glade.h:10
 msgid "Diary Entry:"
-msgstr ""
+msgstr "Polo¾ka denníka:"
 
 #: gtt/glade/task_properties.glade.h:11
 msgid "Fee rate to be charged for this task."
@@ -4936,45 +4926,3 @@ msgstr "Osobný správca cronu"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Osobný správca cronu"
-
-#~ msgid "This Memo"
-#~ msgstr "Toto memo"
-
-#~ msgid "Task"
-#~ msgstr "Úloha"
-
-#~ msgid "The memo for the current task"
-#~ msgstr "Memo pre aktuálnu úlohu"
-
-#~ msgid "Memo"
-#~ msgstr "Memo"
-
-#~ msgid "New Task"
-#~ msgstr "Nová úloha"
-
-#~ msgid "New _Task..."
-#~ msgstr "Nová ú_loha..."
-
-#~ msgid "Insert Memo"
-#~ msgstr "Vlo¾i» memo"
-
-#~ msgid "Paste Memo"
-#~ msgstr "Vlo¾i» memo"
-
-#~ msgid "Delete _Memo"
-#~ msgstr "Odstráni» _memo"
-
-#~ msgid "_Edit Memo"
-#~ msgstr "_Upravi» memo"
-
-#~ msgid "_New Memo"
-#~ msgstr "_Nové memo"
-
-#~ msgid "_Paste Memo"
-#~ msgstr "_Vlo¾i» memo"
-
-#~ msgid "Memo:"
-#~ msgstr "Memo:"
-
-#~ msgid "Task Properties"
-#~ msgstr "Vlastnosti úlohy"
