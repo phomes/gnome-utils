@@ -52,10 +52,10 @@ char *first_proj_title = NULL;  /* command line over-ride */
 const char *
 gtt_gettext(const char *s)
 {
-        g_return_val_if_fail(s != NULL, NULL);
-        if (0 == strncmp(s, "[GTT]", 5))
-                return &s[5];
-        return s;
+	g_return_val_if_fail(s != NULL, NULL);
+	if (0 == strncmp(s, "[GTT]", 5))
+		return &s[5];
+	return s;
 }
 
 
@@ -109,7 +109,7 @@ static void lock_gtt(void)
 	if (warn) {
 		GtkWidget *warning;
 #ifdef DEBUG
-                g_warning("GTT PID file exists");
+		g_warning("GTT PID file exists");
 #else /* not DEBUG */
 		warning = gnome_message_box_new(_("There seems to be another GTimeTracker running.\n"
 						  "Press OK to start GTimeTracker anyway, or press Cancel to quit."),
@@ -137,10 +137,24 @@ unlock_gtt(void)
 	unlink(build_lock_fname());
 }
 
+static void
+post_read_data(void)
+{
+	gtt_post_data_config();
 
+	err_init();
+	ctree_setup(global_ptw);
+	init_timer();
+
+	/* plugins need to be added to the main menus dynamically,
+	 * after the config file has been read */
+	menus_add_plugins (GNOME_APP(window));
+	log_start();
+	app_show();
+}
 
 static void 
-init_list_2(GtkWidget *w, gint butnum)
+read_data_err_run_or_abort (GtkWidget *w, gint butnum)
 {
 	if (butnum == 1)
 	{
@@ -148,72 +162,116 @@ init_list_2(GtkWidget *w, gint butnum)
 	}
 	else
 	{
-		err_init();
-                ctree_setup(global_ptw);
-		init_timer();
-		app_show();
+		post_read_data();
 	}
 }
 
+
 static void 
-init_list(void)
+read_data(void)
 {
-	GttErrCode xml_errcode, conf_errcode;
+	GttErrCode xml_errcode;
 	const char * xml_filepath;
 
-	/* Read the data file first, and then the config file.
-	 * The config file contains things like the 'current project',
-	 * which are undefined until the projects have been read in.
-	 */
 	xml_filepath = gnome_config_get_real_path (XML_DATA_FILENAME);
-        gtt_err_set_code (GTT_NO_ERR);
-        gtt_xml_read_file (xml_filepath);
 
+	/* Try ... */
+	gtt_err_set_code (GTT_NO_ERR);
+	gtt_xml_read_file (xml_filepath);
+
+	/* Catch ... */
 	xml_errcode = gtt_err_get_code();
-
-        gtt_err_set_code (GTT_NO_ERR);
-	gtt_load_config (NULL);
-	conf_errcode = gtt_err_get_code();
 
 	/* If the xml file read bombed because the file doesn't exist,
 	 * and yet the project list isn't null, that's because we read
 	 * and old-format config file that had the proejcts in it.
-	 * This is not an arror. This is OK.
+	 * This is not an error. This is OK.
 	 */
 	if (!((GTT_NO_ERR == xml_errcode) ||
 	      ((GTT_CANT_OPEN_FILE == xml_errcode) &&
-	        gtt_get_project_list())
+		gtt_get_project_list())
 	    ))
 	{
 		g_warning ("xml file read bombed, errcode = %d\n", xml_errcode);
-	}
-
-	if (GTT_NO_ERR != conf_errcode) 
-	{
-                if (errno == ENOENT) {
-                        errno = 0;
-			err_init();
-                        ctree_setup(global_ptw);
-			init_timer();
-			app_show();
-                        return;
-                }
 		msgbox_ok_cancel(_("Error"),
 				 _("An error occured while reading the "
-                                   "configuration file.\n"
+				   "project data.\n"
+				   "Do you want to continue?"),
+				 GNOME_STOCK_BUTTON_YES, 
+				 GNOME_STOCK_BUTTON_NO,
+				 GTK_SIGNAL_FUNC(read_data_err_run_or_abort));
+	}
+	else
+	{
+		post_read_data ();
+	}
+}
+
+static void
+post_read_config(void)
+{
+	read_data();
+}
+
+static void 
+read_config_err_run_or_abort (GtkWidget *w, gint butnum)
+{
+	if (butnum == 1)
+	{
+		gtk_main_quit();
+	}
+	else
+	{
+		post_read_config();
+	}
+}
+
+static void 
+read_config(void)
+{
+	GttErrCode conf_errcode;
+
+	/* Try ... */
+	gtt_err_set_code (GTT_NO_ERR);
+	gtt_load_config (NULL);
+
+	/* Catch ... */
+	conf_errcode = gtt_err_get_code();
+	if (GTT_NO_ERR != conf_errcode) 
+	{
+		if (errno == ENOENT) 
+		{
+			errno = 0;
+			return;
+		}
+		msgbox_ok_cancel(_("Error"),
+				 _("An error occured while reading the "
+				   "configuration file.\n"
 				   "Shall I setup a new configuration?"),
 				 GNOME_STOCK_BUTTON_YES, 
 				 GNOME_STOCK_BUTTON_NO,
-				 GTK_SIGNAL_FUNC(init_list_2));
-	} else {
-		err_init();
-                ctree_setup(global_ptw);
-		init_timer();
-		app_show();
+				 GTK_SIGNAL_FUNC(read_config_err_run_or_abort));
 	}
-
+	else 
+	{
+		post_read_config();
+	}
 }
 
+
+
+static void 
+beta_run_or_abort(GtkWidget *w, gint butnum)
+{
+	if (butnum == 1)
+	{
+		gtk_main_quit();
+	}
+	else
+	{
+		read_config();
+	}
+}
 
 void
 save_all (void)
@@ -300,23 +358,6 @@ got_signal (int sig)
 	kill (getpid (), sig);
 }
 
-static void 
-beta_run_or_abort(GtkWidget *w, gint butnum)
-{
-	if (butnum == 1)
-	{
-		gtk_main_quit();
-	}
-	else
-	{
-		init_list();
-
-		/* plugins need to be added to he main menus dynamically,
-		 * after the config file has been read */
-		menus_add_plugins (GNOME_APP(window));
-		log_start();
-	}
-}
 
 static void 
 guile_inner_main(int argc, char **argv)
@@ -390,6 +431,7 @@ main(int argc, char *argv[])
 		"cvs checkout -D \"Aug 27 2001\" gnome-utils/gtt\n",
 	     "Continue", "Exit", 
 		GTK_SIGNAL_FUNC(beta_run_or_abort));
+
 
 	gh_enter(argc, argv, guile_inner_main);
 	return 0; /* not reached !? */

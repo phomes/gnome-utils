@@ -48,6 +48,11 @@
 /* FIXME: we should not extern this; but for now its ok */
 extern GList * plist;
 
+static int cur_proj_id = -1;
+static int run_timer = FALSE;
+static time_t last_timer = -1;
+extern char *first_proj_title;	/* command line flag */
+
 /* ============================================================= */
 /* file I/O routines */
 
@@ -103,7 +108,6 @@ project_list_load_old(const char *fname)
 	char s[1024];
 	int i;
 	time_t tmp_time = -1;
-	time_t day_secs, ever_secs;
 	int _n, _f, _c, _p, _t, _o, _h, _e;
 
 	if (fname != NULL)
@@ -203,6 +207,8 @@ project_list_load_old(const char *fname)
 				config_logfile_min_secs = atoi(&s[3]);
 			}
 		} else if ((s[0] >= '0') && (s[0] <='9')) {
+			time_t day_secs, ever_secs;
+
 			/* new project */
 			proj = gtt_project_new();
 			gtt_project_list_append(proj);
@@ -257,14 +263,10 @@ err:
 void
 gtt_load_config (const char *fname)
 {
-	time_t last_timer = -1;
-	time_t ever_secs, day_secs;
 	char s[256];
 	int i, num;
-	GttProject *proj;
 	int _n, _f, _c, _j, _p, _t, _o, _h, _e;
 	gboolean got_default;
-	int cur_proj_id = -1;
 
 	/* The old file type doesn't have numprojets in it */
 	gnome_config_get_int_with_default(GTT"Misc/NumProjects=0", &got_default);
@@ -397,6 +399,7 @@ gtt_load_config (const char *fname)
 	 * in it. Read this data, if present.  The new config file
 	 * format has num-projects set to -1.
 	 */
+	run_timer = gnome_config_get_int(GTT"Misc/TimerRunning=0");
 	last_timer = atol(gnome_config_get_string(GTT"Misc/LastTimer=-1"));
 	num = gnome_config_get_int(GTT"Misc/NumProjects=0");
 	if (0 < num)
@@ -404,7 +407,11 @@ gtt_load_config (const char *fname)
 		/* start with a clean slate */
 		project_list_destroy();
 
-		for (i = 0; i < num; i++) {
+		for (i = 0; i < num; i++) 
+		{
+			GttProject *proj;
+			time_t ever_secs, day_secs;
+
 			proj = gtt_project_new();
 			gtt_project_list_append(proj);
 			g_snprintf(s, sizeof (s), GTT"Project%d/Title", i);
@@ -425,12 +432,30 @@ gtt_load_config (const char *fname)
 		}
 		gtt_project_list_compute_secs();
 	} 
-	else 
+
+	/* redraw the GUI */
+	update_status_bar();
+	if ((_n != config_show_tb_new) ||
+	    (_f != config_show_tb_file) ||
+	    (_c != config_show_tb_ccp) ||
+	    (_j != config_show_tb_journal) ||
+	    (_p != config_show_tb_prop) ||
+	    (_t != config_show_tb_timer) ||
+	    (_o != config_show_tb_pref) ||
+	    (_h != config_show_tb_help) ||
+	    (_e != config_show_tb_exit)) 
 	{
-		/* Assume we've already read the XML data, and just 
-		 * set the current project */
-		cur_proj_set (gtt_project_locate_from_id (cur_proj_id));
+		update_toolbar_sections();
 	}
+}
+
+
+void 
+gtt_post_data_config (void)
+{
+	/* Assume we've already read the XML data, and just 
+	 * set the current project */
+	cur_proj_set (gtt_project_locate_from_id (cur_proj_id));
 
 	/* Over-ride the current project based on the 
 	 * command-line setting */
@@ -452,7 +477,7 @@ gtt_load_config (const char *fname)
 		}
 	}
 
-	/* FIXME: this is a mem leak, depending on usage in main.c*/
+	/* FIXME: this is a mem leak, depending on usage in main.c */
 	first_proj_title = NULL;
 
 	/* reset the clocks, if needed */
@@ -464,28 +489,11 @@ gtt_load_config (const char *fname)
 
 	/* if a project is running, then set it running again,
 	 * otherwise be sure to stop the clock. */
-	if (gnome_config_get_int(GTT"Misc/TimerRunning=1")) {
-		/* no-op setting the current project also runs it */
-	} else {
+	if (FALSE == run_timer) 
+	{
 		cur_proj_set (NULL);
 	}
-
-	/* redraw the GUI */
-	update_status_bar();
-	if ((_n != config_show_tb_new) ||
-	    (_f != config_show_tb_file) ||
-	    (_c != config_show_tb_ccp) ||
-	    (_j != config_show_tb_journal) ||
-	    (_p != config_show_tb_prop) ||
-	    (_t != config_show_tb_timer) ||
-	    (_o != config_show_tb_pref) ||
-	    (_h != config_show_tb_help) ||
-	    (_e != config_show_tb_exit)) 
-	{
-		update_toolbar_sections();
-	}
 }
-
 
 /* ======================================================= */
 /* save only the GUI configuration info, not the actual data */

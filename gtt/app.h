@@ -31,7 +31,6 @@ extern GtkWidget *status_bar;
 /* true if command line over-rides geometry */
 extern gboolean geom_size_override;
 extern gboolean geom_place_override;
-extern char *first_proj_title;	/* command line flag */
 
 void update_status_bar(void);
 

@@ -953,18 +953,21 @@ ctree_select (ProjTreeWindow *ptw, GttProject *p)
 void 
 ctree_titles_show (ProjTreeWindow *ptw)
 {
+	if (!ptw) return;
 	gtk_clist_column_titles_show(GTK_CLIST(ptw->ctree));
 }
 
 void 
 ctree_titles_hide (ProjTreeWindow *ptw)
 {
+	if (!ptw) return;
 	gtk_clist_column_titles_hide(GTK_CLIST(ptw->ctree));
 }
 
 void
 ctree_subproj_show (ProjTreeWindow *ptw)
 {
+	if (!ptw) return;
 	gtk_ctree_set_show_stub(ptw->ctree, FALSE);
 	gtk_ctree_set_line_style(ptw->ctree, GTK_CTREE_LINES_SOLID);
 	gtk_ctree_set_expander_style(ptw->ctree,GTK_CTREE_EXPANDER_SQUARE);
@@ -973,6 +976,7 @@ ctree_subproj_show (ProjTreeWindow *ptw)
 void
 ctree_subproj_hide (ProjTreeWindow *ptw)
 {
+	if (!ptw) return;
 	gtk_ctree_set_show_stub(ptw->ctree, FALSE);
 	gtk_ctree_set_line_style(ptw->ctree, GTK_CTREE_LINES_NONE);
 	gtk_ctree_set_expander_style(ptw->ctree,GTK_CTREE_EXPANDER_NONE);
