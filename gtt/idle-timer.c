@@ -50,16 +50,39 @@
 #include "idle-timer.h"
 
 #ifdef HAVE_PROC_INTERRUPTS
-static Bool proc_interrupts_activity_p (timeout_info *si);
+static Bool proc_interrupts_activity_p (IdleTimeout *si);
 #endif /* HAVE_PROC_INTERRUPTS */
 
-static void check_for_clock_skew (timeout_info *si);
+static void check_for_clock_skew (IdleTimeout *si);
+
+
+IdleTimeout *
+idle_timeout_new (void)
+{
+  IdleTimeout *si;
+
+  si = g_new0 (IdleTimeout, 1);
+  si->dpy = GDK_DISPLAY();
+
+  /* hack alert xxx we should grep all screens */
+  si->nscreens = 1;
+  si->screens = g_new0 (IdleTimeoutScreen, 1);
+  si->screens->global = si;
+  si->screens->screen = DefaultScreenOfDisplay (si->dpy);
+
+  /* bogus preferences */
+  si->prefs.timeout = 5;
+  si->prefs.pointer_timeout = 5;
+  si->prefs.notice_events_timeout = 5;
+
+  return si;
+}
 
 
 static gint
 idle_timer (gpointer closure)
 {
-  timeout_info *si = (timeout_info *) closure;
+  IdleTimeout *si = (IdleTimeout *) closure;
 
   /* What an amazingly shitty design.  Not only does Xt execute timeout
      events from XtAppNextEvent() instead of from XtDispatchEvent(), but
@@ -85,7 +108,7 @@ idle_timer (gpointer closure)
 
 
 static void
-schedule_wakeup_event (timeout_info *si, Time when)
+schedule_wakeup_event (IdleTimeout *si, Time when)
 {
   /* Wake up periodically to ask the server if we are idle. */
   si->timer_id = gtk_timeout_add (when, idle_timer,
@@ -93,7 +116,7 @@ schedule_wakeup_event (timeout_info *si, Time when)
 }
 
 static void
-notice_events (timeout_info *si, Window window, Bool top_p)
+notice_events (IdleTimeout *si, Window window, Bool top_p)
 {
   XWindowAttributes attrs;
   unsigned long events;
@@ -186,7 +209,7 @@ BadWindow_ehandler (Display *dpy, XErrorEvent *error)
 }
 
 struct notice_events_timer_arg {
-  timeout_info *si;
+  IdleTimeout *si;
   Window w;
 };
 
@@ -198,7 +221,7 @@ notice_events_timer (gpointer closure)
 
   XErrorHandler old_handler = XSetErrorHandler (BadWindow_ehandler);
 
-  timeout_info *si = arg->si;
+  IdleTimeout *si = arg->si;
   Window window = arg->w;
 
   free(arg);
@@ -210,9 +233,9 @@ notice_events_timer (gpointer closure)
 
 
 static void
-start_notice_events_timer (timeout_info *si, Window w, Bool verbose_p)
+start_notice_events_timer (IdleTimeout *si, Window w, Bool verbose_p)
 {
-  timeout_preferences *p = &si->prefs;
+  IdleTimeoutPrefs *p = &si->prefs;
   struct notice_events_timer_arg *arg =
     (struct notice_events_timer_arg *) malloc(sizeof(*arg));
   arg->si = si;
@@ -227,9 +250,9 @@ start_notice_events_timer (timeout_info *si, Window w, Bool verbose_p)
 /* Call this when user activity (or "simulated" activity) has been noticed.
  */
 static void
-reset_timers (timeout_info *si)
+reset_timers (IdleTimeout *si)
 {
-  timeout_preferences *p = &si->prefs;
+  IdleTimeoutPrefs *p = &si->prefs;
   if (si->using_mit_saver_extension || si->using_sgi_saver_extension)
     return;
 
@@ -258,8 +281,8 @@ static gint
 check_pointer_timer (gpointer closure)
 {
   int i;
-  timeout_info *si = (timeout_info *) closure;
-  timeout_preferences *p = &si->prefs;
+  IdleTimeout *si = (IdleTimeout *) closure;
+  IdleTimeoutPrefs *p = &si->prefs;
   Bool active_p = False;
 
   if (!si->using_proc_interrupts &&
@@ -277,7 +300,7 @@ check_pointer_timer (gpointer closure)
 
   for (i = 0; i < si->nscreens; i++)
     {
-      timeout_screen_info *ssi = &si->screens[i];
+      IdleTimeoutScreen *ssi = &si->screens[i];
       Window root, child;
       int root_x, root_y, x, y;
       unsigned int mask;
@@ -358,9 +381,9 @@ check_pointer_timer (gpointer closure)
    have /proc/interrupts.
  */
 static void
-check_for_clock_skew (timeout_info *si)
+check_for_clock_skew (IdleTimeout *si)
 {
-  timeout_preferences *p = &si->prefs;
+  IdleTimeoutPrefs *p = &si->prefs;
   time_t now = time ((time_t *) 0);
   long shift = now - si->last_wall_clock_time;
 
@@ -384,7 +407,7 @@ check_for_clock_skew (timeout_info *si)
 
 
 static void
-dispatch_event (timeout_info *si, XEvent *event)
+dispatch_event (IdleTimeout *si, XEvent *event)
 {
   /* no-op for us */
   /* XtDispatchEvent (event); */
@@ -426,9 +449,9 @@ printf ("duude event predicate\n");
 /* ex-sleep_until_idle; now returns how long system as been idle */
 
 int
-poll_idle_time (timeout_info *si, Bool until_idle_p)
+poll_idle_time (IdleTimeout *si, Bool until_idle_p)
 {
-  timeout_preferences *p = &si->prefs;
+  IdleTimeoutPrefs *p = &si->prefs;
   XEvent event;
 
   /* We need to select events on all windows if we're not using any extensions.
@@ -804,7 +827,7 @@ printf ("duuude match \n");
 #define PROC_INTERRUPTS "/proc/interrupts"
 
 Bool
-query_proc_interrupts_available (timeout_info *si, const char **why)
+query_proc_interrupts_available (IdleTimeout *si, const char **why)
 {
   /* We can use /proc/interrupts if $DISPLAY points to :0, and if the
      "/proc/interrupts" file exists and is readable.
@@ -828,7 +851,7 @@ query_proc_interrupts_available (timeout_info *si, const char **why)
 
 
 static Bool
-proc_interrupts_activity_p (timeout_info *si)
+proc_interrupts_activity_p (IdleTimeout *si)
 {
   static FILE *f0 = 0;
   FILE *f1 = 0;
