@@ -140,6 +140,8 @@ cur_proj_set(GttProject *proj)
 	char *cmd;
 	const char *str;
 
+	/* Due to the way the widget callbacks work, 
+	 * we may be called recursively ... */
 	if (cur_proj == proj) return;
 
 	log_proj(NULL);

@@ -678,12 +678,14 @@ ctree_update_label(GttProject *p)
 void 
 ctree_unselect (GttProject *p)
 {
+	if (!p || !p->trow) return;
 	gtk_ctree_unselect(GTK_CTREE(glist), p->trow);
 }
 
 void 
 ctree_select (GttProject *p)
 {
+	if (!p || !p->trow) return;
 	gtk_ctree_select(GTK_CTREE(glist), p->trow);
 }
 
