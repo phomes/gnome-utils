@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2001-09-24 14:25+0200\n"
-"PO-Revision-Date: 2001-09-24 14:26CET\n"
+"POT-Creation-Date: 2001-09-27 16:39+0200\n"
+"PO-Revision-Date: 2001-09-27 16:41CET\n"
 "Last-Translator: Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>\n"
-"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"Language-Team: Slovak <sk-i18n@linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -275,7 +275,7 @@ msgid "Exit"
 msgstr "Koniec"
 
 #: gcharmap/src/interface.c:239 gcharmap/src/menus.c:104
-#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:179
+#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:181
 msgid "Copy"
 msgstr "Kopírova»"
 
@@ -357,7 +357,7 @@ msgstr "Nastaví, èi mô¾u ma» tlaèidlá fokus"
 msgid "Insert character(s) by choosing character codes"
 msgstr "Vlo¾í znak(y) pomocou ich kódov"
 
-#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:175
+#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:177
 msgid "Cut"
 msgstr "Vystrihnú»"
 
@@ -369,7 +369,7 @@ msgstr "Vystrihne výber"
 msgid "Copy the selection"
 msgstr "Skopíruje výber"
 
-#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:183
+#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
 msgid "Paste"
 msgstr "Vlo¾i»"
 
@@ -628,11 +628,11 @@ msgstr "Nájs» slovo..."
 msgid "Spell checker"
 msgstr "Kontrola pravopisu"
 
-#: gdiskfree/gdiskfree_app.c:52 gdiskfree/gdiskfree_menus.c:108
+#: gdiskfree/gdiskfree_app.c:53 gdiskfree/gdiskfree_menus.c:108
 msgid "GDiskFree"
 msgstr "GDiskFree"
 
-#: gdiskfree/gdiskfree_app.c:72
+#: gdiskfree/gdiskfree_app.c:73
 #, c-format
 msgid "Unable to parse the geometry string '%s'"
 msgstr "Nepodarilo sa rozlo¾i» re»azec umiestnenia '%s'"
@@ -641,7 +641,7 @@ msgstr "Nepodarilo sa rozlo¾i» re»azec umiestnenia '%s'"
 msgid "Specify the geometry of the window."
 msgstr "Uvádza umiestnenie okna."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:446 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:445 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
 msgstr "GEOMETRY"
 
@@ -880,15 +880,15 @@ msgstr "Príkaz zamotaný"
 msgid "No command for this mime type"
 msgstr "Pre tento typ MIME nie je príkaz"
 
-#: gtt/app.c:115 gtt/app.c:229
+#: gtt/app.c:115 gtt/app.c:227
 msgid "no project selected"
 msgstr "nevybraný projekt"
 
-#: gtt/app.c:218
+#: gtt/app.c:217
 msgid "00:00"
 msgstr "00:00"
 
-#: gtt/app.c:261 mini-utils/gless/gless.c:423
+#: gtt/app.c:259 mini-utils/gless/gless.c:423
 msgid ""
 "Couldn't understand geometry (position and size)\n"
 " specified on command line"
@@ -1092,19 +1092,19 @@ msgstr "Chyba"
 msgid "Shall I setup a new configuration?"
 msgstr "Mám nastavi» novú konfiguráciu?"
 
-#: gtt/main.c:446
+#: gtt/main.c:445
 msgid "Specify geometry"
 msgstr "©pecifikuje umiestnenie"
 
-#: gtt/main.c:448
+#: gtt/main.c:447
 msgid "Select a project on startup"
 msgstr "Výber projektu pri ¹tarte"
 
-#: gtt/main.c:448
+#: gtt/main.c:447
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: gtt/main.c:487 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:486 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
 msgid "Warning"
 msgstr "Varovanie"
 
@@ -1116,7 +1116,7 @@ msgstr "GNOME nástroj pre sledovanie èasu"
 msgid "New Project..."
 msgstr "Nový projekt..."
 
-#: gtt/menucmd.c:220 gtt/toolbar.c:165
+#: gtt/menucmd.c:220 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Znovu naèíta» konfiguraèný súbor"
 
@@ -1274,83 +1274,91 @@ msgid "System Idle"
 msgstr "Systém nevyu¾itý"
 
 #. Note to translators: just skip the `[GTT]'
-#: gtt/toolbar.c:157
+#: gtt/toolbar.c:159
 msgid "[GTT]New"
 msgstr "[GTT]Nový"
 
-#: gtt/toolbar.c:158
+#: gtt/toolbar.c:160
 msgid "Create a New Project..."
 msgstr "Vytvorí nový projekt..."
 
-#: gtt/toolbar.c:164
+#: gtt/toolbar.c:166
 msgid "Reload"
 msgstr "Obnovi»"
 
-#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:168 stripchart/params.c:939
+#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
 msgid "Save"
 msgstr "Ulo¾i»"
 
-#: gtt/toolbar.c:169
+#: gtt/toolbar.c:171
 msgid "Save Configuration File"
 msgstr "Ulo¾í konfiguraèný súbor"
 
-#: gtt/toolbar.c:176
+#: gtt/toolbar.c:178
 msgid "Cut Selected Project"
 msgstr "Vystrihne vybraný projekt"
 
-#: gtt/toolbar.c:180
+#: gtt/toolbar.c:182
 msgid "Copy Selected Project"
 msgstr "Kopíruje vybraný projekt"
 
-#: gtt/toolbar.c:184
+#: gtt/toolbar.c:186
 msgid "Paste Project"
 msgstr "Vlo¾í projekt"
 
-#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:191
+#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
 msgid "Journal"
 msgstr "®urnál"
 
-#: gtt/toolbar.c:192
+#: gtt/toolbar.c:194
 msgid "View and Edit Timestamp Logs"
 msgstr "Zobrazí a upraví záznamy o èase"
 
-#: gtt/toolbar.c:197
+#: gtt/toolbar.c:199
 msgid "Props"
 msgstr "Vlastnosti"
 
-#: gtt/toolbar.c:198
+#: gtt/toolbar.c:200
 msgid "Edit Project Properties..."
 msgstr "Upraví vlastnosti projektu..."
 
-#: gtt/toolbar.c:202
+#: gtt/toolbar.c:204
 msgid "Timer"
 msgstr "Èasovaè"
 
-#: gtt/toolbar.c:203
+#: gtt/toolbar.c:205
 msgid "Start/Stop Timer"
 msgstr "Zapne/vypne èasovaè"
 
-#: gtt/toolbar.c:215
+#: gtt/toolbar.c:211 logview/calendar.c:112 logview/logview.c:107
+msgid "Calendar"
+msgstr "Kalendár"
+
+#: gtt/toolbar.c:212
+msgid "View Calendar"
+msgstr "Zobrazi» kalendár"
+
+#: gtt/toolbar.c:225
 msgid "Prefs"
 msgstr "Nastavenie"
 
-#: gtt/toolbar.c:216
+#: gtt/toolbar.c:226
 msgid "Edit Preferences..."
 msgstr "Upravi» nastavenie..."
 
-#: gtt/toolbar.c:220
+#: gtt/toolbar.c:230
 msgid "Manual"
 msgstr "Manuál"
 
-#: gtt/toolbar.c:221
+#: gtt/toolbar.c:231
 msgid "User's Guide and Manual"
 msgstr "Pou¾ívateµský manuál"
 
-#: gtt/toolbar.c:226
+#: gtt/toolbar.c:236
 msgid "Quit"
 msgstr "Koniec"
 
-#: gtt/toolbar.c:226
+#: gtt/toolbar.c:236
 msgid "Quit GTimeTracker"
 msgstr "Ukonèí GNOME Sledovaè èasu"
 
@@ -1475,6 +1483,14 @@ msgstr "Ulo¾i» súbor"
 #: gtt/glade/not-implemented.glade.h:1
 msgid "Information"
 msgstr "Informácie"
+
+#: gtt/glade/not-implemented.glade.h:2
+msgid ""
+"This function is not yet implemented!\n"
+"Coming Soon, I hope!"
+msgstr ""
+"Táto funkcia e¹te nie je implementovaná.\n"
+"Dúfam, ¾e èoskoro bude."
 
 #: gtt/glade/prefs.glade.h:1
 msgid "Display"
@@ -1968,10 +1984,6 @@ msgstr ""
 "message: [%s]\n"
 "description: [%s]\n"
 "action: [%s]\n"
-
-#: logview/calendar.c:112 logview/logview.c:107
-msgid "Calendar"
-msgstr "Kalendár"
 
 #: logview/info.c:79 logview/logview.c:110
 msgid "Log stats"
