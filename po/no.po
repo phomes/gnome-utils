@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.1\n"
-"POT-Creation-Date: 2002-07-08 19:17+0200\n"
-"PO-Revision-Date: 2002-07-08 19:26+0200\n"
+"POT-Creation-Date: 2002-07-16 11:14+0200\n"
+"PO-Revision-Date: 2002-07-16 11:18+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +76,7 @@ msgstr ""
 "systemet"
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
@@ -420,69 +420,69 @@ msgstr "Tegnkart"
 msgid "Insert special characters into documents"
 msgstr "Sett inn spesielle tegn i dokumenter"
 
-#: gcharmap/src/asciiselect.c:116
+#: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
 msgstr "Velg tegn"
 
-#: gcharmap/src/asciiselect.c:119
+#: gcharmap/src/asciiselect.c:120
 msgid "_Insert"
 msgstr "Sett _inn"
 
 #: gcharmap/src/asciiselect.c:123
-msgid "Character code:"
-msgstr "Tegnkode:"
+msgid "Character c_ode:"
+msgstr "Tegnk_ode:"
 
-#: gcharmap/src/asciiselect.c:135
-msgid "Character:"
-msgstr "Tegn:"
+#: gcharmap/src/asciiselect.c:137
+msgid "Ch_aracter:"
+msgstr "T_egn:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
 msgstr "Tegnkode"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Select character code"
 msgstr "Velg tegnkode"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character"
 msgstr "Tegn"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character to insert"
 msgstr "Tegn som skal settes inn"
 
-#: gcharmap/src/asciiselect.c:152
+#: gcharmap/src/asciiselect.c:157
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
-#: gcharmap/src/callbacks.c:64
+#: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "Tegnkart"
 
-#: gcharmap/src/callbacks.c:67
+#: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr "Velg, kopier og lim inn tegn fra fra en skrift til andre applikasjoner"
 
-#: gcharmap/src/callbacks.c:114
+#: gcharmap/src/callbacks.c:113
 msgid "del"
 msgstr "del"
 
-#: gcharmap/src/callbacks.c:120
+#: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
 msgstr "%s: Tegnkode %d"
 
-#: gcharmap/src/callbacks.c:156
+#: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
 msgstr "Tekst kopiert til utklippstavlen..."
 
-#: gcharmap/src/callbacks.c:173
+#: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
 msgstr "Tekst klippet ut til utklippstavle..."
 
-#: gcharmap/src/callbacks.c:226
+#: gcharmap/src/callbacks.c:225
 msgid "Text pasted from clipboard..."
 msgstr "Tekst limt inn fra utklippstavlen..."
 
@@ -527,8 +527,8 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "Sett inn tegn ved å velge tegnkoder."
 
 #: gcharmap/src/menus.c:63
-msgid "_Characters"
-msgstr "_Tegn"
+msgid "Ch_aracters"
+msgstr "T_egn"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
@@ -573,7 +573,7 @@ msgstr "Skriv inn teksten"
 msgid "Accessories"
 msgstr "Tilbehør"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:250
+#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Oppslag i ordbok"
 
@@ -605,8 +605,8 @@ msgstr "_Vis/skjul definisjonsvindu..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
-#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Kan ikke koble til tjener"
 
@@ -723,7 +723,7 @@ msgstr "Skriv inn et ord eller velg et fra listen under"
 msgid "Look Up for a Word"
 msgstr "Slå opp et ord"
 
-#: gdictsrc/gdict-applet.c:243
+#: gdictsrc/gdict-applet.c:263
 msgid "_Lookup"
 msgstr "S_lå opp"
 
@@ -764,83 +764,83 @@ msgstr "Hovedkropp:"
 msgid "Cross-reference:"
 msgstr "Kryssreferanse:"
 
-#: gdictsrc/gdict-pref-dialog.c:185
+#: gdictsrc/gdict-pref-dialog.c:186
 msgid "Dictionary Preferences"
 msgstr "Brukervalg for ordbok"
 
-#: gdictsrc/gdict-pref-dialog.c:197
+#: gdictsrc/gdict-pref-dialog.c:198
 msgid "Smart _lookup"
 msgstr "Smart opps_lag"
 
-#: gdictsrc/gdict-pref-dialog.c:210
+#: gdictsrc/gdict-pref-dialog.c:211
 msgid "_Server:"
 msgstr "_Tjener:"
 
-#: gdictsrc/gdict-pref-dialog.c:217
+#: gdictsrc/gdict-pref-dialog.c:218
 msgid "De_fault"
 msgstr "_Forvalg"
 
-#: gdictsrc/gdict-pref-dialog.c:223
+#: gdictsrc/gdict-pref-dialog.c:224
 msgid "Reset server to default"
 msgstr "Sett tjener til forvalgt verdi"
 
-#: gdictsrc/gdict-pref-dialog.c:225
+#: gdictsrc/gdict-pref-dialog.c:226
 msgid "_Port:"
 msgstr "_Port:"
 
-#: gdictsrc/gdict-pref-dialog.c:239
+#: gdictsrc/gdict-pref-dialog.c:240
 msgid "Def_ault"
 msgstr "Forv_alg"
 
-#: gdictsrc/gdict-pref-dialog.c:246
+#: gdictsrc/gdict-pref-dialog.c:247
 msgid "Reset port to default"
 msgstr "Sett port til forvalgt verdi"
 
-#: gdictsrc/gdict-pref-dialog.c:247
+#: gdictsrc/gdict-pref-dialog.c:248
 msgid "Server"
 msgstr "Tjener"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Server Entry"
 msgstr "Tjeneroppføring"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
 msgstr "Skriv inn navn på tjeneren"
 
-#: gdictsrc/gdict-pref-dialog.c:251
+#: gdictsrc/gdict-pref-dialog.c:252
 msgid "Port"
 msgstr "Port"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Port Entry"
 msgstr "Portoppføring"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
 msgstr "Skriv inn portnummeret"
 
-#: gdictsrc/gdict-pref-dialog.c:257
+#: gdictsrc/gdict-pref-dialog.c:258
 msgid "_Database:"
 msgstr "_Database:"
 
-#: gdictsrc/gdict-pref-dialog.c:264
+#: gdictsrc/gdict-pref-dialog.c:265
 msgid "D_efault strategy:"
 msgstr "Forvalgt strat_egi:"
 
-#: gdictsrc/gdict-pref-dialog.c:457
+#: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
 msgstr "Søk i alle databaser"
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 msgid "Database"
 msgstr "Database"
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 msgid "Database Name"
 msgstr "Databasenavn"
 
-#: gdictsrc/gdict-pref-dialog.c:634
+#: gdictsrc/gdict-pref-dialog.c:635
 msgid "Default Strategy"
 msgstr "Forvalgt strategi"
 
@@ -873,22 +873,51 @@ msgid "Search Strategy"
 msgstr "Søkestrategi"
 
 #: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr "Forvalgt database. ! indikerer alle databaser"
-
-#: gdictsrc/gdict.schemas.in.h:2
-msgid "Default strategy"
-msgstr "Forvalgt strategi"
-
-#: gdictsrc/gdict.schemas.in.h:3
 msgid "Dictionary server"
 msgstr "Ordboktjener"
 
-#: gdictsrc/gdict.schemas.in.h:4
+#: gdictsrc/gdict.schemas.in.h:2
 msgid "Port used to connect to server"
 msgstr "Port som brukes for å koble til tjener"
 
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr "Spesifiser om du vil bruke smart oppslag. Denne nøkkelen er avhengig av om ordboken støtter dette alternativet. Forvalgt verdi er TRUE"
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr "Database som skal brukes på ordboktjeneren."
+
 #: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr "Ordboktjener som skal brukes. Forvalgt tjener er dict.org. Se http://www.dict.org for detaljer om andre tjenere"
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr "Navn på individuell database som skal brukes på ordboktjeneren. ! spesifiserer at gnome-dictionary skal søke i alle databaser på en gitt tjener"
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr "Portnummer for tilkobling. Forvalgt port er 2628."
+
+#: gdictsrc/gdict.schemas.in.h:8
+msgid "The search strategy to use"
+msgstr "Søkestrategi som skal brukes"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr "Søkestrategi som skal brukes. Denne avhenger av søkestrategiene som ordboktjeneren støtter. Forvalgt strategi er «lev» - Treff på ord innen Levenshtein avstand en"
+
+#: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
 msgstr "Bruk smart oppslag"
 
@@ -1110,12 +1139,12 @@ msgstr "_Formater"
 msgid "_Quick format"
 msgstr "H_urtigformatering"
 
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "Kan ikke åpne enhet %s, formatering kan ikke fortsette."
 
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1124,7 +1153,7 @@ msgstr ""
 "Enhet %s er koblet fra.\n"
 "Vennligst koble til enheten for å fortsette."
 
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1135,15 +1164,7 @@ msgstr ""
 "mulig.\n"
 "Kontakt din systemadministrator for å få skrivetilgang."
 
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr "Enheten som skal formateres"
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr "ENHET"
-
-#: gfloppy/src/main.c:360
+#: gfloppy/src/main.c:291
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
@@ -1152,9 +1173,13 @@ msgstr ""
 "Kunne ikke vise hjelp for diskettformaterer.\n"
 "%s"
 
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
-msgstr "Formatere enda en diskett?"
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr "Enheten som skal formateres"
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
+msgstr "ENHET"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
@@ -1580,39 +1605,43 @@ msgstr "Feil under tolking av tiltaksdatabasen"
 msgid "Can't write to actions database!"
 msgstr "Kan ikke skrive til tiltaksdatabasen!"
 
-#: logview/actions.c:493
+#: logview/actions.c:486
+msgid "Error while executing specified action"
+msgstr "Feil under kjøring av spesifisert handling"
+
+#: logview/actions.c:507
 msgid "<empty>"
 msgstr "<tom>"
 
-#: logview/actions.c:494
+#: logview/actions.c:508
 msgid "log name regexp"
 msgstr "logg navn regexp"
 
-#: logview/actions.c:495
+#: logview/actions.c:509
 msgid "process regexp"
 msgstr "prosesser regexp"
 
-#: logview/actions.c:496
+#: logview/actions.c:510
 msgid "message regexp"
 msgstr "melding regexp"
 
-#: logview/actions.c:497
+#: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
 msgstr "tiltak som skal gjennomføres når regexps er SANN"
 
-#: logview/actions.c:498
+#: logview/actions.c:512
 msgid "description"
 msgstr "beskrivelse"
 
-#: logview/actions.c:758
+#: logview/actions.c:772
 msgid "_Description:"
 msgstr "_Beskrivelse:"
 
-#: logview/actions.c:767
+#: logview/actions.c:781
 msgid "Description of this entry."
 msgstr "Beskrivelse av denne oppføringen."
 
-#: logview/actions.c:791
+#: logview/actions.c:805
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2174,6 +2203,15 @@ msgid ""
 msgstr ""
 "Kan ikke finne arkivprogrammet (tar)!\n"
 "Dette er programmet som brukes for å lage arkiv."
+
+#~ msgid "Default database. ! indicates all databases"
+#~ msgstr "Forvalgt database. ! indikerer alle databaser"
+
+#~ msgid "Default strategy"
+#~ msgstr "Forvalgt strategi"
+
+#~ msgid "Format another floppy?"
+#~ msgstr "Formatere enda en diskett?"
 
 #~ msgid "x^2"
 #~ msgstr "x^2"
