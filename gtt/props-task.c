@@ -181,7 +181,7 @@ prop_task_dialog_new (void)
 {
 	PropTaskDlg *dlg = NULL;
 	GladeXML *gtxml;
-	static GnomeHelpMenuEntry help_entry = { NULL, "index.html#TASK" };
+	static GnomeHelpMenuEntry help_entry = { NULL, "dialog.html#PROPERTIES" };
 
 	dlg = g_malloc(sizeof(PropTaskDlg));
 

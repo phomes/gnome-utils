@@ -311,7 +311,7 @@ prop_dialog_new (void)
 {
         PropDlg *dlg;
 	GladeXML *gtxml;
-        static GnomeHelpMenuEntry help_entry = { NULL, "index.html#PROP" };
+        static GnomeHelpMenuEntry help_entry = { NULL, "dialogs.html#PROPERTIES" };
 
 	dlg = g_malloc(sizeof(PropDlg));
 
