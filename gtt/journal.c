@@ -142,7 +142,7 @@ redraw (GttProject * prj, gpointer data)
 static gboolean
 raw_html_receiver (gpointer     engine,
                    const gchar *data,
-                   guint        len,
+                   size_t       len,
                    gpointer     user_data) 
 {
 	FILE *fh = (FILE *) user_data;
@@ -503,6 +503,13 @@ do_show_report (const char * report, GttProject *prj)
 
 	glxml = glade_xml_new ("glade/journal.glade", "Journal Window");
 
+	/* FIXME: disable print button for now: */
+	{
+		GtkWidget *w = glade_xml_get_widget (glxml, "print");
+		if (w != NULL)
+			gtk_widget_hide (w);
+	}
+	  
 	jnl_top = glade_xml_get_widget (glxml, "Journal Window");
 	jnl_viewport = glade_xml_get_widget (glxml, "Journal ScrollWin");
 
@@ -529,7 +536,7 @@ do_show_report (const char * report, GttProject *prj)
 	  
 	glade_xml_signal_connect_data (glxml, "on_save_clicked",
 	        GTK_SIGNAL_FUNC (on_save_clicked_cb), wig);
-	  
+
 	glade_xml_signal_connect_data (glxml, "on_print_clicked",
 	        GTK_SIGNAL_FUNC (on_print_clicked_cb), wig);
 	  
@@ -599,7 +606,7 @@ do_show_report (const char * report, GttProject *prj)
 	  
 	glade_xml_signal_connect_data (glxml, "on_paste_activate",
 	        GTK_SIGNAL_FUNC (task_paste_clicked_cb), wig);
-	  
+
 	/* ---------------------------------------------------- */
 	/* finally ... display the actual journal */
 

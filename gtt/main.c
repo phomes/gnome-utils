@@ -483,6 +483,7 @@ main(int argc, char *argv[])
 	 */
 	connect_short_cuts();
 
+#if 0
 	msgbox_ok_cancel(_("Warning"),
 		"WARNING !!! Achtung !!! Avertisment !!!\n"
 		"\n"
@@ -496,6 +497,9 @@ main(int argc, char *argv[])
 		"cvs checkout -D \"Aug 27 2001\" gnome-utils/gtt\n",
 	     "Continue", "Exit", 
 		GTK_SIGNAL_FUNC(beta_run_or_abort));
+#else
+		read_config();
+#endif
 
 
 	gh_enter(argc, argv, guile_inner_main);

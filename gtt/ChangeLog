@@ -1,3 +1,13 @@
+Thu Oct 04 21:23:01 2001  George Lebl <jirka@5z.com>
+
+	* Makefile.am: fix make dist
+
+	* journal.c: fix 64bit issue with saving, and hide the print button
+	  for now since it doesn't work yet
+
+	* main.c: remove the initial warning, this is a stable gnome-utils
+	  release
+
 Wed Sep 26 18:45:32 CDT 2001  Linas Vepstas <linas@linas.org>
 
 	* proj.[ch], proj-props.c, xml-read.c xml-write.c:
