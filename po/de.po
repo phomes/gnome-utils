@@ -10,9 +10,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.2.x\n"
-"POT-Creation-Date: 2003-01-27 11:32+0000\n"
-"PO-Revision-Date: 2003-01-21 20:43+0100\n"
-"Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
+"POT-Creation-Date: 2003-02-15 16:06+0100\n"
+"PO-Revision-Date: 2003-02-15 15:43+0100\n"
+"Last-Translator: Benjamin Greiner <nadaschauher@gmx.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -101,12 +101,13 @@ msgstr "GNOME-Taschenrechner"
 
 #: gcalc/gcalc.c:61
 msgid "(C) 1998 Free Software Foundation, Inc."
-msgstr "Copyright © 1998 Free Software Foundation, Inc."
+msgstr "© 1998 Free Software Foundation, Inc."
 
+# Wen interessiert xcalc?
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similar to xcalc"
 msgstr ""
-"Ein einfacher Taschenrechner mit doppelter Genauigkeit, ähnlich wie xcalc"
+"Ein einfacher Taschenrechner mit doppelter Genauigkeit"
 
 #: gcalc/gcalc.c:140
 msgid "_Calculator"
@@ -117,6 +118,7 @@ msgid "Calculator"
 msgstr "Taschenrechner"
 
 # CHECK
+# Unendlichkeitszeichen? Wie schaut's mit der Anzeigbarkeit aus?
 #: gcalc/gnome-calc.c:252
 msgid "inf"
 msgstr "unendlich"
@@ -133,169 +135,169 @@ msgstr "RAD"
 msgid "GRAD"
 msgstr "GRAD"
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1256
 msgid "1/x"
 msgstr "1/x"
 
-#: gcalc/gnome-calc.c:1255
-msgid "Inverse"
-msgstr "Invers"
-
 #: gcalc/gnome-calc.c:1256
+msgid "Inverse"
+msgstr "Kehrwert"
+
+#: gcalc/gnome-calc.c:1257
 msgid "x<sup>2</sup>"
 msgstr "x<sup>2</sup>"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1257
 msgid "Square"
 msgstr "Quadrat"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1258
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1258
 msgid "Square root"
 msgstr "Quadratwurzel"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1259
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1259
 msgid "Clear"
 msgstr "Löschen"
 
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1260
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1259
+#: gcalc/gnome-calc.c:1260
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1262
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1262
 msgid "Inverse trigonometry/log function"
-msgstr "Inverse trigonometrische/log. Funktion"
+msgstr "Inverse trigonometrische/log. Funktionen"
 
 #. inverse button
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1263
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1263
 msgid "Sine"
 msgstr "Sinus"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1264
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1264
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: gcalc/gnome-calc.c:1264
+#: gcalc/gnome-calc.c:1265
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1264
+#: gcalc/gnome-calc.c:1265
 msgid "Tangent"
 msgstr "Tangens"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1266
+#: gcalc/gnome-calc.c:1267
 msgid " DEG  "
 msgstr " DEG "
 
-#: gcalc/gnome-calc.c:1266
+#: gcalc/gnome-calc.c:1267
 msgid "Switch degrees / radians / grad"
 msgstr "Zwischen Grad, Bogenmaß und Neugrad umschalten"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1269
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1269
 msgid "Base of Natural Logarithm"
 msgstr "Basis des natürlichen Logarithmus"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1270
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1270
 msgid "Add digit"
 msgstr "Stelle hinzufügen"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1271
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1271
 msgid "Base 10 Logarithm"
 msgstr "Logarithmus zur Basis 10"
 
-#: gcalc/gnome-calc.c:1271
+#: gcalc/gnome-calc.c:1272
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1271
+#: gcalc/gnome-calc.c:1272
 msgid "Natural Logarithm"
 msgstr "Natürlicher Logarithmus"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1273
 msgid "x<sup>y</sup>"
 msgstr "x<sup>y</sup>"
 
-#: gcalc/gnome-calc.c:1272
+#: gcalc/gnome-calc.c:1273
 msgid "Power"
 msgstr "Potenz"
 
-#: gcalc/gnome-calc.c:1274
-msgid "PI"
-msgstr "PI"
-
 #: gcalc/gnome-calc.c:1275
+msgid "PI"
+msgstr "Pi"
+
+#: gcalc/gnome-calc.c:1276
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1276
 msgid "Factorial"
 msgstr "Fakultät"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1277
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1277
 msgid "Opening Parenthesis"
 msgstr "Öffnende Klammer"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1278
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1278
 msgid "Closing Parenthesis"
 msgstr "Schließende Klammer"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1279
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1279
 msgid "Divide by"
-msgstr "Teilen durch"
+msgstr "Dividieren durch"
 
-#: gcalc/gnome-calc.c:1280
+#: gcalc/gnome-calc.c:1281
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1280
+#: gcalc/gnome-calc.c:1281
 msgid ""
 "Store the value in the\n"
 "display field in memory"
@@ -303,31 +305,31 @@ msgstr ""
 "Den Wert aus der Anzeige\n"
 "im Speicher ablegen"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1282
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1283
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1284
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1284 gfloppy/src/gfloppy2.glade.h:2
+#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:2
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1285
 msgid "Multiply by"
 msgstr "Multiplizieren mit"
 
-#: gcalc/gnome-calc.c:1286
+#: gcalc/gnome-calc.c:1287
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1286
+#: gcalc/gnome-calc.c:1287
 msgid ""
 "Display the value in memory\n"
 "in the display field"
@@ -335,31 +337,31 @@ msgstr ""
 "Den Wert aus dem Speicher\n"
 "in die Anzeige setzen"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1288
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1289
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1290
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1291
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1291
 msgid "Subtract"
 msgstr "Subtrahieren"
 
-#: gcalc/gnome-calc.c:1292
+#: gcalc/gnome-calc.c:1293
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1292
+#: gcalc/gnome-calc.c:1293
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
@@ -367,31 +369,31 @@ msgstr ""
 "Den Wert aus der Anzeige\n"
 "zum Wert im Speicher addieren"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1294
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1295
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1296
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1297
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1297
 msgid "Add"
 msgstr "Addieren"
 
-#: gcalc/gnome-calc.c:1298
+#: gcalc/gnome-calc.c:1299
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1298
+#: gcalc/gnome-calc.c:1299
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
@@ -399,31 +401,31 @@ msgstr ""
 "Die Werte aus der Anzeige\n"
 "und dem Speicher tauschen"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1300
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1301
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1301
 msgid "Decimal Point"
 msgstr "Dezimalpunkt"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1302
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1302
 msgid "Change sign"
 msgstr "Vorzeichen ändern"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1303
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1303
 msgid "Calculate"
 msgstr "Berechnen"
 
@@ -431,7 +433,7 @@ msgstr "Berechnen"
 msgid "Perform simple calculations"
 msgstr "Einfache Berechnungen durchführen"
 
-#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:160
+#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:159
 msgid "Character Map"
 msgstr "Zeichentabelle"
 
@@ -504,41 +506,41 @@ msgstr "Text ausgeschnitten und in der Zwischenablage abgelegt..."
 msgid "Text pasted from clipboard..."
 msgstr "Text aus der Zwischenablage eingefügt..."
 
-#: gcharmap/src/interface.c:190
+#: gcharmap/src/interface.c:189
 msgid "Action Toolbar"
 msgstr "Aktionswerkzeugleiste"
 
-#: gcharmap/src/interface.c:194
+#: gcharmap/src/interface.c:193
 msgid "_Font:"
 msgstr "_Schrift:"
 
 #. The page selector
-#: gcharmap/src/interface.c:210
+#: gcharmap/src/interface.c:209
 msgid "_Page:"
 msgstr "_Seite:"
 
 #. end of page selector
-#: gcharmap/src/interface.c:225
+#: gcharmap/src/interface.c:224
 msgid "_Text to copy:"
 msgstr "Zu kopierender _Text:"
 
-#: gcharmap/src/interface.c:240
+#: gcharmap/src/interface.c:239
 msgid "_Copy"
 msgstr "_Kopieren"
 
-#: gcharmap/src/interface.c:262 gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:263 gcharmap/src/interface.c:264
 msgid "Text to copy"
 msgstr "Zu kopierender Text"
 
-#: gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:264
 msgid "Entry"
 msgstr "Eintrag"
 
-#: gcharmap/src/interface.c:264 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:265 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopieren"
 
-#: gcharmap/src/interface.c:264
+#: gcharmap/src/interface.c:265
 msgid "Copy the text"
 msgstr "Den Text kopieren"
 
@@ -584,7 +586,7 @@ msgstr "GDialog-Fortschrittsanzeige"
 
 #: gdialog/guage.c:78
 msgid "Indicates the percentage specified at the standard input"
-msgstr "Zeigt den Prozentwert, der in der Standardeingabe angegeben wurde"
+msgstr "Zeigt den Prozentwert an, der in der Standardeingabe angegeben wurde"
 
 #: gdialog/inputbox.c:84
 msgid "GDialog Entry"
@@ -958,7 +960,7 @@ msgstr "Intelligente Suche verwenden"
 # CHECK - nicht perfekt aber Formatierprogramm ist noch grausamer
 #: gfloppy/gfloppy.desktop.in.h:1
 msgid "Floppy Formatter"
-msgstr "Diskette formatieren"
+msgstr "Disketten formatieren"
 
 #: gfloppy/gfloppy.desktop.in.h:2
 msgid "Format Floppy Disks"
@@ -2119,6 +2121,10 @@ msgstr "Fehler: [%s]\n"
 #: logview/monitor.c:109
 msgid "Monitor Options"
 msgstr "Überwachungsoptionen"
+
+#: logview/monitor.c:112
+msgid "Ac_tions"
+msgstr "Ak_tionen"
 
 #: logview/monitor.c:135
 msgid "Choose logs to monitor:"
