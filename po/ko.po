@@ -1,14 +1,13 @@
 # gnome-utils ko.po
-# Changwoo Ryu <cwryu@adam.kaist.ac.kr>, 1998
-# update by Young-Ho, Cha <ganadist@chollian.net>, 2001
-# Changwoo Ryu <cwryu@debian.org>, 2002
+# Young-Ho, Cha <ganadist@chollian.net>, 2001
+# Changwoo Ryu <cwryu@debian.org>, 1998, 2002, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.2.0.1\n"
-"POT-Creation-Date: 2003-03-13 10:21+0000\n"
-"PO-Revision-Date: 2003-01-25 14:47+0900\n"
-"Last-Translator: Young-Ho, Cha <ganadist@chollian.net>\n"
+"Project-Id-Version: gnome-utils 2.2.1\n"
+"POT-Creation-Date: 2003-05-09 01:51+0900\n"
+"PO-Revision-Date: 2003-05-09 01:54+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GTP Korean <gnome-kr-translation@gnome.or.kr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -285,7 +284,7 @@ msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
-"표시 창에 있는 값을 \n"
+"보여주기 창에 있는 값을 \n"
 "메모리에 저장하기"
 
 #: gcalc/gnome-calc.c:1282
@@ -318,7 +317,7 @@ msgid ""
 "in the display field"
 msgstr ""
 "메모리에 있는 값을 \n"
-"표시 창에 보이기"
+"보여주기 창에 보이기"
 
 #: gcalc/gnome-calc.c:1288
 msgid "4"
@@ -349,7 +348,7 @@ msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
-"표시 창에 있는 값을\n"
+"보여주기 창에 있는 값을\n"
 "메모리에 있는 값에 더하기"
 
 #: gcalc/gnome-calc.c:1294
@@ -381,7 +380,7 @@ msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
-"표시 창의 값과 메모리에\n"
+"보여주기 창의 값과 메모리에\n"
 "있는 값을 뒤 바꾸기"
 
 #: gcalc/gnome-calc.c:1300
@@ -490,7 +489,7 @@ msgstr "클립보드에서 글자 붙이기..."
 
 #: gcharmap/src/interface.c:189
 msgid "Action Toolbar"
-msgstr "행동 도구 모음"
+msgstr "액션 도구 모음"
 
 #: gcharmap/src/interface.c:193
 msgid "_Font:"
@@ -1337,7 +1336,7 @@ msgstr "참은 FAT 포맷 백엔드로 mkdosfs로 설정, 거짓은 mtool로 설
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "리눅스 기본 파일시스템인 ext2 또는 도스 파일시스템인 fat"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1575
 msgid "Search for Files"
 msgstr "파일 찾기"
 
@@ -1403,7 +1402,7 @@ msgstr "찾은 파일이 없습니다."
 
 #: gsearchtool/gsearchtool.c:483
 msgid "Entry changed called for a non entry option!"
-msgstr "엔트리가 없는 옵션에 대하여 엔트리 변경 콜백이 실행되었습니다!"
+msgstr "엔트리가 없는 옵션에 대하여 엔트리 바꾸기 콜백이 실행되었습니다!"
 
 #: gsearchtool/gsearchtool.c:593
 msgid "Set the text of 'file is named'"
@@ -1471,96 +1470,96 @@ msgstr "찾기 오류"
 msgid "Search for Files Error"
 msgstr "파일 찾기 오류"
 
-#: gsearchtool/gsearchtool.c:1094
+#: gsearchtool/gsearchtool.c:1097
 msgid "Search Rule Value Entry"
 msgstr "찾기 규칙 값 엔트리"
 
-#: gsearchtool/gsearchtool.c:1095
+#: gsearchtool/gsearchtool.c:1098
 msgid "Enter a value for search rule"
 msgstr "찾기 규칙에 대한 값을 입력하십시오"
 
-#: gsearchtool/gsearchtool.c:1129
+#: gsearchtool/gsearchtool.c:1132
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "'%s' 규칙을 지우려면 클릭하십시오"
 
-#: gsearchtool/gsearchtool.c:1184
+#: gsearchtool/gsearchtool.c:1187
 msgid "A_vailable options:"
 msgstr "쓸 수 있는 규칙(_V):"
 
-#: gsearchtool/gsearchtool.c:1197
+#: gsearchtool/gsearchtool.c:1200
 msgid "Search Rules Menu"
 msgstr "찾기 규칙 메뉴"
 
-#: gsearchtool/gsearchtool.c:1198
+#: gsearchtool/gsearchtool.c:1201
 msgid "Select a search rule from the menu"
 msgstr "메뉴에서 찾기 규칙을 선택합니다"
 
-#: gsearchtool/gsearchtool.c:1229
+#: gsearchtool/gsearchtool.c:1232
 msgid "S_earch Results"
 msgstr "찾은 결과(_E)"
 
-#: gsearchtool/gsearchtool.c:1300
+#: gsearchtool/gsearchtool.c:1303
 msgid "Name"
 msgstr "이름"
 
-#: gsearchtool/gsearchtool.c:1320
+#: gsearchtool/gsearchtool.c:1323
 msgid "Folder"
 msgstr "폴더"
 
-#: gsearchtool/gsearchtool.c:1331
+#: gsearchtool/gsearchtool.c:1334
 msgid "Size"
 msgstr "크기"
 
-#: gsearchtool/gsearchtool.c:1341
+#: gsearchtool/gsearchtool.c:1344
 msgid "Type"
 msgstr "종류"
 
-#: gsearchtool/gsearchtool.c:1351
+#: gsearchtool/gsearchtool.c:1354
 msgid "Date Modified"
 msgstr "바뀐 일자"
 
-#: gsearchtool/gsearchtool.c:1388
+#: gsearchtool/gsearchtool.c:1391
 msgid "File is _named:"
 msgstr "찾을 파일 이름(_N):"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "File Name Entry"
 msgstr "파일 이름 엔트리"
 
-#: gsearchtool/gsearchtool.c:1403 gsearchtool/gsearchtool.c:1404
+#: gsearchtool/gsearchtool.c:1406 gsearchtool/gsearchtool.c:1407
 msgid "Enter the file name you want to search"
 msgstr "찾을 파일 이름을 입력하십시오"
 
-#: gsearchtool/gsearchtool.c:1416
+#: gsearchtool/gsearchtool.c:1419
 msgid "_Look in folder:"
 msgstr "시작할 폴더(_L):"
 
-#: gsearchtool/gsearchtool.c:1422
+#: gsearchtool/gsearchtool.c:1425
 msgid "Browse"
 msgstr "찾아보기"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Starting folder entry"
 msgstr "시작 폴더 엔트리"
 
-#: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
+#: gsearchtool/gsearchtool.c:1434 gsearchtool/gsearchtool.c:1435
 msgid "Enter the folder name where you want to start the search"
 msgstr "찾기를 시작할 폴더 이름을 입력하십시오"
 
-#: gsearchtool/gsearchtool.c:1448 gsearchtool/gsearchtool.c:1449
+#: gsearchtool/gsearchtool.c:1451 gsearchtool/gsearchtool.c:1452
 msgid "Additional Options"
 msgstr "찾기 옵션"
 
-#: gsearchtool/gsearchtool.c:1494
+#: gsearchtool/gsearchtool.c:1497
 msgid "Click to Start the search"
 msgstr "찾기를 시작하려면 클릭하십시오"
 
-#: gsearchtool/gsearchtool.c:1495
+#: gsearchtool/gsearchtool.c:1498
 msgid "Click to Stop the search"
 msgstr "찾기를 중단하려면 클릭하십시오"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1571
 msgid "Cannot initialize bonobo."
 msgstr "보노보를 초기화할 수 없습니다."
 
@@ -1684,10 +1683,6 @@ msgstr "연결 (깨짐)"
 msgid "link to %s"
 msgstr "%s(으)로 연결"
 
-#: gsearchtool/help/es/gsearchtool.desktop.in.h:1
-msgid "GNOME Search Tool"
-msgstr "그놈 찾기 도구"
-
 #: logview/about.c:42
 msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
@@ -1718,7 +1713,7 @@ msgstr "실행 데이터베이스"
 
 #: logview/actions.c:84
 msgid "Actions"
-msgstr "행동"
+msgstr "액션"
 
 #: logview/actions.c:152
 msgid "_Add"
@@ -1748,7 +1743,7 @@ msgstr "데이터 베이스에 쓰기를 할 수 없습니다!"
 
 #: logview/actions.c:485
 msgid "Error while executing specified action"
-msgstr "지정한 행동 실행 오류"
+msgstr "지정한 액션 실행 오류"
 
 #: logview/actions.c:506
 msgid "<empty>"
@@ -2066,9 +2061,8 @@ msgid "Monitor Options"
 msgstr "감시 옵션"
 
 #: logview/monitor.c:112
-#, fuzzy
 msgid "Ac_tions"
-msgstr "행동"
+msgstr "액션(_T)"
 
 #: logview/monitor.c:135
 msgid "Choose logs to monitor:"
@@ -2093,7 +2087,7 @@ msgstr "프로그램 숨기기(_H)"
 
 #: logview/monitor.c:252
 msgid "_Execute Actions"
-msgstr "행동 실행(_E)"
+msgstr "액션 실행(_E)"
 
 #: logview/monitor.c:289
 msgid "Too many logs to monitor. Remove one and try again"
@@ -2151,3 +2145,6 @@ msgid ""
 msgstr ""
 "시작할 때 열 로그파일 지정. 기본값은 /var/adm/messages 또는 /var/log/"
 "messages 입니다. 배포판에 따라 달라집니다."
+
+#~ msgid "GNOME Search Tool"
+#~ msgstr "그놈 찾기 도구"
