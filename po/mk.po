@@ -1,3 +1,4 @@
+# translation of gnome-utils.gnome-2-2.mk.po to Macedonian
 # translation of gnome-utils.HEAD.po to Macedonian
 # translation of gnome-utils.HEAD.po to Македонски
 # This file is distributed under the same license as the PACKAGE package.
@@ -5,18 +6,19 @@
 # Dimitar Indovski <dime@gord.com.mk>, 2002
 # Stojan Pesov <ekofobic@usa.net>, 2002
 # Bozidar Proevski <bobibobi@freemail.com.mk>, 2002
+# Ivan Stojmirov <stojmir@linux.net.mk>, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils.HEAD\n"
+"Project-Id-Version: gnome-utils.gnome-2-2.mk\n"
 "POT-Creation-Date: 2003-03-13 10:21+0000\n"
-"PO-Revision-Date: 2002-12-15 22:45+0100\n"
-"Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
-"Language-Team: Macedonian <en@li.org>\n"
+"PO-Revision-Date: 2003-04-14 16:48+0200\n"
+"Last-Translator: Ivan Stojmirov <stojmir@linux.net.mk>\n"
+"Language-Team: Macedonian <gnomk-main@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0beta2\n"
+"X-Generator: KBabel 1.0.1\n"
 
 #: exe-handler/gnome-exe-handler.c:76
 #, c-format
@@ -28,7 +30,7 @@ msgid ""
 msgstr ""
 "Извршувањето програми преземени од мрежа може да биде опасно.\n"
 "\n"
-"Сигурно сакаш да го истрчаш '%s'?"
+"Сигурно сакаш да го стартуваш '%s'?"
 
 #: exe-handler/gnome-exe-handler.c:83
 msgid "Could not access file permissions"
@@ -83,16 +85,22 @@ msgstr ""
 #: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: logview/about.c:52
 msgid "translator_credits"
-msgstr "преведувачки_кредити"
+msgstr ""
+"Иван Стојмиров (stojmir@linux.net.mk)\n"
+"Димитар Индовски (dime@gord.com.mk)\n"
+"Стојан Пешов (ekofobic@usa.net)\n"
+"Божидар Проевски (bobibobi@freemail.com.mk)\n"
+"\n"
+"Слободен Софтвер Македонија\n"
+"http://www.slobodensoftver.org.mk"
 
 #: gcalc/gcalc.c:60
 msgid "GNOME Calculator"
 msgstr "GNOME калкулатор"
 
 #: gcalc/gcalc.c:61
-#, fuzzy
 msgid "(C) 1998 Free Software Foundation, Inc."
-msgstr "(C) 1998 Free Software Foundation"
+msgstr "(C) 1998 Free Software Foundation, Inc."
 
 #: gcalc/gcalc.c:62
 msgid "Simple double precision calculator similar to xcalc"
@@ -135,12 +143,10 @@ msgid "x<sup>2</sup>"
 msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1257
-#, fuzzy
 msgid "Square"
 msgstr "Квадрат"
 
 #: gcalc/gnome-calc.c:1258
-#, fuzzy
 msgid "SQRT"
 msgstr "SQRT"
 
@@ -153,7 +159,6 @@ msgid "CE/C"
 msgstr "CE/C"
 
 #: gcalc/gnome-calc.c:1259
-#, fuzzy
 msgid "Clear"
 msgstr "Избриши"
 
@@ -162,7 +167,6 @@ msgid "AC"
 msgstr "AC"
 
 #: gcalc/gnome-calc.c:1260
-#, fuzzy
 msgid "Reset"
 msgstr "Ресетирај"
 
@@ -237,9 +241,8 @@ msgid "ln"
 msgstr "ln"
 
 #: gcalc/gnome-calc.c:1272
-#, fuzzy
 msgid "Natural Logarithm"
-msgstr "Природен логаритам"
+msgstr "Природен Логаритам"
 
 #: gcalc/gnome-calc.c:1273
 msgid "x<sup>y</sup>"
@@ -258,12 +261,10 @@ msgid "x!"
 msgstr "x!"
 
 #: gcalc/gnome-calc.c:1276
-#, fuzzy
 msgid "Factorial"
 msgstr "Факториел"
 
 #: gcalc/gnome-calc.c:1277
-#, fuzzy
 msgid "("
 msgstr "("
 
@@ -272,7 +273,6 @@ msgid "Opening Parenthesis"
 msgstr "Отворена заграда"
 
 #: gcalc/gnome-calc.c:1278
-#, fuzzy
 msgid ")"
 msgstr ")"
 
@@ -414,14 +414,13 @@ msgstr ""
 
 #: gcalc/gnome-calc.c:1302
 msgid "Change sign"
-msgstr ""
+msgstr "Промени знак"
 
 #: gcalc/gnome-calc.c:1303
 msgid "="
-msgstr ""
+msgstr "="
 
 #: gcalc/gnome-calc.c:1303
-#, fuzzy
 msgid "Calculate"
 msgstr "Пресметај"
 
@@ -443,7 +442,7 @@ msgstr ""
 
 #: gcharmap/src/asciiselect.c:152
 msgid "_Insert"
-msgstr ""
+msgstr "_Внеси"
 
 #: gcharmap/src/asciiselect.c:155
 msgid "Character c_ode:"
@@ -462,7 +461,6 @@ msgid "Select character code"
 msgstr ""
 
 #: gcharmap/src/asciiselect.c:190
-#, fuzzy
 msgid "Character"
 msgstr "Карактер"
 
@@ -475,8 +473,7 @@ msgid "GNOME Character Map"
 msgstr ""
 
 #: gcharmap/src/callbacks.c:66
-msgid ""
-"Select, copy and paste characters from your font into other applications"
+msgid "Select, copy and paste characters from your font into other applications"
 msgstr ""
 
 #: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
@@ -506,7 +503,6 @@ msgid "Action Toolbar"
 msgstr ""
 
 #: gcharmap/src/interface.c:193
-#, fuzzy
 msgid "_Font:"
 msgstr "_Фонт:"
 
@@ -529,12 +525,10 @@ msgid "Text to copy"
 msgstr ""
 
 #: gcharmap/src/interface.c:264
-#, fuzzy
 msgid "Entry"
 msgstr "Запис"
 
 #: gcharmap/src/interface.c:265 gcharmap/src/menus.c:77
-#, fuzzy
 msgid "Copy"
 msgstr "Копирај"
 
@@ -558,7 +552,6 @@ msgstr ""
 #. cb_insert_char_click, NULL),
 #. GNOMEUIINFO_SEPARATOR,
 #: gcharmap/src/menus.c:75
-#, fuzzy
 msgid "Cut"
 msgstr "Исечи"
 
@@ -571,7 +564,6 @@ msgid "Copy the selection"
 msgstr ""
 
 #: gcharmap/src/menus.c:79
-#, fuzzy
 msgid "Paste"
 msgstr "Вметни"
 
@@ -596,7 +588,6 @@ msgid "Enter the text"
 msgstr ""
 
 #: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
-#, fuzzy
 msgid "Accessories"
 msgstr "Алатки"
 
@@ -614,18 +605,16 @@ msgid "Look Up Selected Text..."
 msgstr ""
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:2
-#, fuzzy
 msgid "_About..."
 msgstr "_За..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:3
-#, fuzzy
 msgid "_Help"
 msgstr "_Помош"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:4
 msgid "_Preferences"
-msgstr ""
+msgstr "_Параметри..."
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:5
 msgid "_Show/Hide Definition Window..."
@@ -667,7 +656,7 @@ msgstr ""
 
 #: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
-msgstr ""
+msgstr "Нема пронајдени резултати"
 
 #: gdictsrc/gdict-app.c:271
 msgid "Looking up word..."
@@ -682,12 +671,10 @@ msgid "String not found"
 msgstr ""
 
 #: gdictsrc/gdict-app.c:469
-#, fuzzy
 msgid "Find"
-msgstr "Пронајди"
+msgstr "Најди"
 
 #: gdictsrc/gdict-app.c:490
-#, fuzzy
 msgid "_Find"
 msgstr "_Најди"
 
@@ -720,7 +707,6 @@ msgid "_Dictionary"
 msgstr ""
 
 #: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
-#, fuzzy
 msgid "Dictionary"
 msgstr "Речник"
 
@@ -776,7 +762,7 @@ msgstr ""
 
 #: gdictsrc/gdict-pref-dialog.c:42
 msgid "Example:"
-msgstr ""
+msgstr "Пример:"
 
 #: gdictsrc/gdict-pref-dialog.c:43
 msgid "Main body:"
@@ -820,7 +806,7 @@ msgstr ""
 
 #: gdictsrc/gdict-pref-dialog.c:248
 msgid "Server"
-msgstr ""
+msgstr "Сервер"
 
 #: gdictsrc/gdict-pref-dialog.c:249
 msgid "Server Entry"
@@ -831,7 +817,6 @@ msgid "Enter the Server Name"
 msgstr ""
 
 #: gdictsrc/gdict-pref-dialog.c:252
-#, fuzzy
 msgid "Port"
 msgstr "Порта"
 
@@ -856,12 +841,10 @@ msgid "Search all databases"
 msgstr ""
 
 #: gdictsrc/gdict-pref-dialog.c:623
-#, fuzzy
 msgid "Database"
-msgstr "База на Податоци"
+msgstr "База на податоци"
 
 #: gdictsrc/gdict-pref-dialog.c:623
-#, fuzzy
 msgid "Database Name"
 msgstr "Име на базата"
 
@@ -1144,7 +1127,6 @@ msgid "EError while checking the bad blocks."
 msgstr ""
 
 #: gfloppy/src/gfloppy2.glade.h:1
-#, fuzzy
 msgid "    "
 msgstr "    "
 
@@ -1320,7 +1302,7 @@ msgstr ""
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1572
 msgid "Search for Files"
-msgstr ""
+msgstr "Барај Датотеки"
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search your disk for files"
@@ -1478,27 +1460,22 @@ msgid "S_earch Results"
 msgstr ""
 
 #: gsearchtool/gsearchtool.c:1300
-#, fuzzy
 msgid "Name"
 msgstr "Име"
 
 #: gsearchtool/gsearchtool.c:1320
-#, fuzzy
 msgid "Folder"
-msgstr "Директориум"
+msgstr "Папка"
 
 #: gsearchtool/gsearchtool.c:1331
-#, fuzzy
 msgid "Size"
 msgstr "Големина"
 
 #: gsearchtool/gsearchtool.c:1341
-#, fuzzy
 msgid "Type"
 msgstr "Тип"
 
 #: gsearchtool/gsearchtool.c:1351
-#, fuzzy
 msgid "Date Modified"
 msgstr "Дата на Модификација"
 
@@ -1519,9 +1496,8 @@ msgid "_Look in folder:"
 msgstr ""
 
 #: gsearchtool/gsearchtool.c:1422
-#, fuzzy
 msgid "Browse"
-msgstr "Прелистај"
+msgstr "Разгледај"
 
 #: gsearchtool/gsearchtool.c:1431 gsearchtool/gsearchtool.c:1432
 msgid "Starting folder entry"
@@ -1548,7 +1524,6 @@ msgid "Cannot initialize bonobo."
 msgstr ""
 
 #: gsearchtool/gsearchtool-callbacks.c:45
-#, fuzzy
 msgid "_Open"
 msgstr "_Отвори"
 
@@ -1566,7 +1541,7 @@ msgstr ""
 
 #: gsearchtool/gsearchtool-callbacks.c:128
 msgid "Searching..."
-msgstr ""
+msgstr "Пребарувам..."
 
 #: gsearchtool/gsearchtool-callbacks.c:288
 #, c-format
@@ -1586,7 +1561,6 @@ msgstr ""
 
 #: gsearchtool/gsearchtool-callbacks.c:355
 #: gsearchtool/gsearchtool-callbacks.c:616
-#, fuzzy
 msgid "Can't Display Location"
 msgstr "Неможам да ја прикажам локацијата"
 
@@ -1626,17 +1600,15 @@ msgid "Cannot save search results to the file \"%s\"."
 msgstr ""
 
 #: gsearchtool/gsearchtool-support.c:284
-#, fuzzy
 msgid "Expander Size"
-msgstr "Големина"
+msgstr ""
 
 #: gsearchtool/gsearchtool-support.c:285
-#, fuzzy
 msgid "Size of the expander arrow"
 msgstr "Големина на стрелката"
 
 #: gsearchtool/gsearchtool-support.c:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "GConf error:\n"
 "  %s"
@@ -1649,27 +1621,23 @@ msgid "%Y%m%d%H%M%S"
 msgstr ""
 
 #: gsearchtool/gsearchtool-support.c:555
-#, fuzzy
 msgid "today at %-I:%M %p"
 msgstr "денес во %-I:%M %p"
 
 #: gsearchtool/gsearchtool-support.c:557
-#, fuzzy
 msgid "yesterday at %-I:%M %p"
 msgstr "вчера во %-I:%M %p"
 
 #: gsearchtool/gsearchtool-support.c:559 gsearchtool/gsearchtool-support.c:561
-#, fuzzy
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%m/%-d/%y, %-I:%M %p"
 
 #: gsearchtool/gsearchtool-support.c:686
-#, fuzzy
 msgid "link (broken)"
-msgstr "поврзување (скршено)"
+msgstr "линк (скршен)"
 
 #: gsearchtool/gsearchtool-support.c:691
-#, fuzzy, c-format
+#, c-format
 msgid "link to %s"
 msgstr "поврзување до %s"
 
@@ -1702,7 +1670,6 @@ msgid "Action database"
 msgstr ""
 
 #: logview/actions.c:84
-#, fuzzy
 msgid "Actions"
 msgstr "Дејствија"
 
@@ -1711,13 +1678,12 @@ msgid "_Add"
 msgstr ""
 
 #: logview/actions.c:159
-#, fuzzy
 msgid "_Edit"
 msgstr "_Уреди"
 
 #: logview/actions.c:166
 msgid "_Remove"
-msgstr ""
+msgstr "_Отстрани"
 
 #: logview/actions.c:259
 #, c-format
@@ -1738,9 +1704,8 @@ msgid "Error while executing specified action"
 msgstr ""
 
 #: logview/actions.c:506
-#, fuzzy
 msgid "<empty>"
-msgstr "<empty>"
+msgstr "<празно>"
 
 #: logview/actions.c:507
 msgid "log name regexp"
@@ -1764,7 +1729,7 @@ msgstr ""
 
 #: logview/actions.c:771
 msgid "_Description:"
-msgstr ""
+msgstr "_Опис:"
 
 #: logview/actions.c:780
 msgid "Description of this entry."
@@ -1782,7 +1747,6 @@ msgid ""
 msgstr ""
 
 #: logview/calendar.c:112
-#, fuzzy
 msgid "Calendar"
 msgstr "Календар"
 
@@ -1813,12 +1777,10 @@ msgid "Log stats"
 msgstr ""
 
 #: logview/info.c:110
-#, fuzzy
 msgid "Size:"
 msgstr "Големина:"
 
 #: logview/info.c:110
-#, fuzzy
 msgid "Modified:"
 msgstr "Променето:"
 
@@ -1831,7 +1793,6 @@ msgid "Last Date:"
 msgstr ""
 
 #: logview/info.c:111
-#, fuzzy
 msgid "Number of Lines:"
 msgstr "Број на линии:"
 
@@ -1849,62 +1810,50 @@ msgid "%ld bytes"
 msgstr ""
 
 #: logview/log_repaint.c:59
-#, fuzzy
 msgid "January"
 msgstr "Јануари"
 
 #: logview/log_repaint.c:59
-#, fuzzy
 msgid "February"
 msgstr "Февруари"
 
 #: logview/log_repaint.c:59
-#, fuzzy
 msgid "March"
 msgstr "Март"
 
 #: logview/log_repaint.c:59
-#, fuzzy
 msgid "April"
 msgstr "Април"
 
 #: logview/log_repaint.c:59
-#, fuzzy
 msgid "May"
 msgstr "Мај"
 
 #: logview/log_repaint.c:60
-#, fuzzy
 msgid "June"
 msgstr "Јуни"
 
 #: logview/log_repaint.c:60
-#, fuzzy
 msgid "July"
 msgstr "Јули"
 
 #: logview/log_repaint.c:60
-#, fuzzy
 msgid "August"
 msgstr "Август"
 
 #: logview/log_repaint.c:60
-#, fuzzy
 msgid "September"
 msgstr "Септември"
 
 #: logview/log_repaint.c:60
-#, fuzzy
 msgid "October"
 msgstr "Октомври"
 
 #: logview/log_repaint.c:61
-#, fuzzy
 msgid "November"
 msgstr "Ноември"
 
 #: logview/log_repaint.c:61
-#, fuzzy
 msgid "December"
 msgstr "Декември"
 
@@ -1977,9 +1926,8 @@ msgid "Monitor Logs"
 msgstr ""
 
 #: logview/logview.c:115
-#, fuzzy
 msgid "_Properties"
-msgstr "Параме_три"
+msgstr "_Параметри"
 
 #: logview/logview.c:116
 msgid "Show Log Properties"
@@ -2022,7 +1970,6 @@ msgid "No log files to open"
 msgstr ""
 
 #: logview/logview.c:389
-#, fuzzy
 msgid "Date"
 msgstr "Датум"
 
@@ -2035,7 +1982,6 @@ msgid "Process"
 msgstr ""
 
 #: logview/logview.c:390
-#, fuzzy
 msgid "Message"
 msgstr "Порака"
 
@@ -2065,9 +2011,8 @@ msgid "Monitor Options"
 msgstr ""
 
 #: logview/monitor.c:112
-#, fuzzy
 msgid "Ac_tions"
-msgstr "Дејствија"
+msgstr "Дејс_твија"
 
 #: logview/monitor.c:135
 msgid "Choose logs to monitor:"
@@ -2116,7 +2061,7 @@ msgstr ""
 
 #: logview/zoom.c:102
 msgid "Date:"
-msgstr ""
+msgstr "Дата:"
 
 #: logview/zoom.c:102
 msgid "Process:"
@@ -2127,7 +2072,6 @@ msgid "Message:"
 msgstr ""
 
 #: logview/zoom.c:103
-#, fuzzy
 msgid "Description:"
 msgstr "Опис:"
 
@@ -2149,3 +2093,4 @@ msgid ""
 "Specifies the log file to open up at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your distribution."
 msgstr ""
+
