@@ -28,8 +28,8 @@
 
 #include "err-throw.h"
 #include "log.h"
-#include "proj.h"
 #include "proj_p.h"
+#include "proj.h"
 
 typedef struct notif_s 
 {
