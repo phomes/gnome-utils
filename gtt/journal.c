@@ -450,6 +450,14 @@ edit_alldata(GtkWidget *w, gpointer data)
 }
 
 void
+edit_invoice(GtkWidget *w, gpointer data)
+{
+	char * path;
+	path = resolve_path ("invoice.phtml");
+	do_show_report (path, cur_proj);
+}
+
+void
 invoke_report(GtkWidget *widget, gpointer data)
 {
 	char * filepath = (char *) data;

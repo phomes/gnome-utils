@@ -21,6 +21,7 @@
 
 void edit_journal(GtkWidget *, gpointer);
 void edit_alldata(GtkWidget *, gpointer);
+void edit_invoice(GtkWidget *, gpointer);
 void invoke_report(GtkWidget *, gpointer);
 
 #endif /* __GTT_JOURNAL_H__ */

@@ -30,6 +30,7 @@
 typedef enum {
 	NUL=0,
 	MEMO = 1,
+	TASK_TIME,
 	BILLABLE,
 	BILLRATE,
 	VALUE,
@@ -62,7 +63,7 @@ struct gtt_phtml_s
 /* ============================================================== */
 
 static void
-show_table (GttPhtml *phtml, GttProject *prj, int show_links)
+show_table (GttPhtml *phtml, GttProject *prj, int show_links, int invoice)
 {
 	int i;
 	GList *node;
@@ -90,6 +91,10 @@ show_table (GttPhtml *phtml, GttProject *prj, int show_links)
 				p = stpcpy (p, _("Memo"));
 				break;
 			}
+			case TASK_TIME:
+				p = stpcpy (p, "<th>");
+				p = stpcpy (p, _("Task Time"));
+				break;
 			case BILLABLE:
 				p = stpcpy (p, "<th>");
 				p = stpcpy (p, _("Billable"));
@@ -146,15 +151,22 @@ show_table (GttPhtml *phtml, GttProject *prj, int show_links)
 		time_t prev_stop = 0;
 		GList *in;
 		GttTask *tsk = node->data;
-		int secs;
+		int task_secs;
 		double hours, value=0.0, billable_value=0.0;
 		
 		/* set up data */
 		billable = gtt_task_get_billable (tsk);
 		billrate = gtt_task_get_billrate (tsk);
 
-		secs = gtt_task_get_secs_ever(tsk);
-		hours = secs;
+		/* if we are in invoice mode, then skip anything not billable */
+		if (invoice)
+		{
+			if ((GTT_HOLD == billable) || 
+			    (GTT_NOT_BILLABLE == billable)) continue;
+		}
+
+		task_secs = gtt_task_get_secs_ever(tsk);
+		hours = task_secs;
 		hours /= 3600;
 		switch (billrate)
 		{
@@ -216,6 +228,12 @@ show_table (GttPhtml *phtml, GttProject *prj, int show_links)
 					if (show_links) p = stpcpy (p, "</a>");
 					break;
 				}
+
+				case TASK_TIME:
+					p = stpcpy (p, "<td align=right>");
+					p = print_hours_elapsed (p, 40, task_secs, TRUE);
+					break;
+
 				case BILLABLE:
 					p = stpcpy (p, "<td>");
 					switch (billable)
@@ -234,6 +252,7 @@ show_table (GttPhtml *phtml, GttProject *prj, int show_links)
 							break;
 					}
 					break;
+
 				case BILLRATE:
 					p = stpcpy (p, "<td>");
 					switch (billrate)
@@ -252,17 +271,20 @@ show_table (GttPhtml *phtml, GttProject *prj, int show_links)
 							break;
 					}
 					break;
+
 				case VALUE:
-					p = stpcpy (p, "<td>");
+					p = stpcpy (p, "<td align=right>");
 					
 					/* hack alert should use i18n currency/monetary printing */
 					p += sprintf (p, "$%.2f", value+0.0049);
 					break;
+
 				case BILLABLE_VALUE:
-					p = stpcpy (p, "<td>");
+					p = stpcpy (p, "<td align=right>");
 					/* hack alert should use i18n currency/monetary printing */
 					p += sprintf (p, "$%.2f", billable_value+0.0049);
 					break;
+
 				default:
 					p = stpcpy (p, "<th>");
 					p = stpcpy (p, _("Error - Unknown"));
@@ -479,7 +501,14 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 		else
 		if (0 == strncmp (tok, "$table", 6))
 		{
-			show_table (phtml, prj, 1);
+			show_table (phtml, prj, 1, 0);
+			phtml->ntask_cols = 0;
+			phtml->ninvl_cols = 0;
+		}
+		else
+		if (0 == strncmp (tok, "$invoice", 8))
+		{
+			show_table (phtml, prj, 1, 1);
 			phtml->ntask_cols = 0;
 			phtml->ninvl_cols = 0;
 		}
@@ -505,6 +534,12 @@ dispatch_phtml (GttPhtml *phtml, char *tok, GttProject*prj)
 		if (0 == strncmp (tok, "$memo", 5))
 		{
 			phtml->task_cols[phtml->ntask_cols] = MEMO;
+			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
+		}
+		else
+		if (0 == strncmp (tok, "$task_time", 10))
+		{
+			phtml->task_cols[phtml->ntask_cols] = TASK_TIME;
 			if (NCOL-1 > phtml->ntask_cols) phtml->ntask_cols ++;
 		}
 		else
