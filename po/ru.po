@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-01-24 16:09+0300\n"
+"POT-Creation-Date: 2003-01-27 11:32+0000\n"
 "PO-Revision-Date: 2003-01-27 10:56+03:00\n"
 "Last-Translator: Dmitry G. Mastrukov <dmitry@taurussoft.org>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
@@ -947,7 +947,8 @@ msgstr "Программа для форматирования гибких ди
 
 #: gfloppy/src/badblocks.c:102
 msgid "MInternal Error: Unable to seek to the correct location."
-msgstr "Произошла внутренняя ошибка: невозможно перейти к правильному местоположению."
+msgstr ""
+"Произошла внутренняя ошибка: невозможно перейти к правильному местоположению."
 
 #: gfloppy/src/badblocks.c:111
 #, c-format
@@ -963,7 +964,8 @@ msgstr "Идёт проверка на плохие блоки..."
 #: gfloppy/src/badblocks.c:281
 #, c-format
 msgid "MFailed to open device %s for badblock checking\n"
-msgstr "Произошёл сбой при открытии устройства \"%s\" для проверки на плохие блоки\n"
+msgstr ""
+"Произошёл сбой при открытии устройства \"%s\" для проверки на плохие блоки\n"
 
 #: gfloppy/src/badblocks.c:301 gfloppy/src/gfloppy.c:536
 msgid "MChecking for bad blocks... Done"
@@ -1084,7 +1086,9 @@ msgstr "Невозможно определить геометрию носит�
 
 #: gfloppy/src/gfloppy.c:229
 msgid "EError while creating a unique filename for the bad blocks list file."
-msgstr "Произошла ошибка при создании уникального имени файлв для списка плохих блоков."
+msgstr ""
+"Произошла ошибка при создании уникального имени файлв для списка плохих "
+"блоков."
 
 #: gfloppy/src/gfloppy.c:249
 msgid "EError while filling the bad blocks list file."
@@ -1126,7 +1130,8 @@ msgid ""
 "errors:\n"
 "%s."
 msgstr ""
-"Программа поиска плохих блоков (\"mbadblocks\") сообщила о следующих ошибках:\n"
+"Программа поиска плохих блоков (\"mbadblocks\") сообщила о следующих "
+"ошибках:\n"
 "%s."
 
 #: gfloppy/src/gfloppy.c:443
@@ -1148,7 +1153,8 @@ msgstr "Создание файловой системы на диске... Вы
 
 #: gfloppy/src/gfloppy.c:527
 msgid "MChecking for bad blocks... (this might take a while)"
-msgstr "Идёт проверка на наличие сбойных блоков... (может занять некоторое время)"
+msgstr ""
+"Идёт проверка на наличие сбойных блоков... (может занять некоторое время)"
 
 #: gfloppy/src/gfloppy.c:532
 msgid "EError while checking the bad blocks."
@@ -1163,8 +1169,9 @@ msgid ""
 "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
 "be installed in order to make a thorough DOS (fat) formatting."
 msgstr ""
-"<b>Замечание</b>: Программа \"mbadblocks\" не установлена в этой системе. Она "
-"должна быть установлена для форматирования дискет для файловой системы DOS (fat)."
+"<b>Замечание</b>: Программа \"mbadblocks\" не установлена в этой системе. "
+"Она должна быть установлена для форматирования дискет для файловой системы "
+"DOS (fat)."
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "<span weight=\"bold\">Filesystem settings</span>"
@@ -1285,11 +1292,11 @@ msgstr ""
 msgid "The volume name can't contain any blank space."
 msgstr ""
 
-#: gfloppy/src/main.c:471
+#: gfloppy/src/main.c:474
 msgid "The device to format"
 msgstr "Устройство для форматирования"
 
-#: gfloppy/src/main.c:472
+#: gfloppy/src/main.c:475
 msgid "DEVICE"
 msgstr "УСТРОЙСТВО"
 

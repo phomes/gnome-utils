@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-01-23 19:58+0100\n"
+"POT-Creation-Date: 2003-01-27 11:32+0000\n"
 "PO-Revision-Date: 2003-01-27 03:56+0200\n"
 "Last-Translator: Barbaros Ulutaş <tebarul@yahoo.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 #: exe-handler/gnome-exe-handler.c:76
 #, c-format
 msgid ""
-"Executing arbitrary programs that you downloaded from the network might be dangerous.\n"
+"Executing arbitrary programs that you downloaded from the network might be "
+"dangerous.\n"
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
@@ -62,19 +63,18 @@ msgstr "Bu bir kütüphane ve çalıştırılamaz"
 msgid "The file is a core file and can not be executed"
 msgstr "Bu bir çekirdek dosyası ve çalıştırılamaz"
 
-#: exe-handler/gnome-exe-handler.c:162
-#: exe-handler/gnome-exe-handler.c:196
+#: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
 msgstr "Bu çalıştırılabilir dosya bilinmeyen bir biçimde"
 
 #: exe-handler/gnome-exe-handler.c:192
-msgid "The executable is for a different platform and can not be executed on this system"
+msgid ""
+"The executable is for a different platform and can not be executed on this "
+"system"
 msgstr "Bu uygulama başka bir platform için ve bu sistemde çalıştırılamaz"
 
 #. Translator credits
-#: gcalc/gcalc.c:42
-#: gcharmap/src/callbacks.c:46
-#: gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: logview/about.c:52
 msgid "translator_credits"
 msgstr "çevirmen ekibi"
@@ -95,8 +95,7 @@ msgstr "xcalc benzeri çift duyarlıklı basit hesap makinesi"
 msgid "_Calculator"
 msgstr "_Hesap Makinesi"
 
-#: gcalc/gcalc.c:191
-#: gcalc/gnome-calculator.desktop.in.h:1
+#: gcalc/gcalc.c:191 gcalc/gnome-calculator.desktop.in.h:1
 msgid "Calculator"
 msgstr "Hesap Makinesi"
 
@@ -303,8 +302,7 @@ msgstr "8"
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1284
-#: gfloppy/src/gfloppy2.glade.h:2
+#: gcalc/gnome-calc.c:1284 gfloppy/src/gfloppy2.glade.h:2
 msgid "*"
 msgstr "*"
 
@@ -421,8 +419,7 @@ msgstr "Hesapla"
 msgid "Perform simple calculations"
 msgstr "Basit hesaplamalar gerçekleştir"
 
-#: gcharmap/gnome-character-map.desktop.in.h:1
-#: gcharmap/src/interface.c:160
+#: gcharmap/gnome-character-map.desktop.in.h:1 gcharmap/src/interface.c:160
 msgid "Character Map"
 msgstr "Karakter Haritası"
 
@@ -467,19 +464,18 @@ msgid "GNOME Character Map"
 msgstr "GNOME Karakter Haritası"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
-msgstr "Kendi yazıtipinden diğer uygulamalara karakter seç, kopyala ve yapıştır"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
+msgstr ""
+"Kendi yazıtipinden diğer uygulamalara karakter seç, kopyala ve yapıştır"
 
-#: gcharmap/src/callbacks.c:130
-#: gcharmap/src/callbacks.c:138
-#, c-format
-#, fuzzy
+#: gcharmap/src/callbacks.c:130 gcharmap/src/callbacks.c:138
+#, fuzzy, c-format
 msgid "Character code: (Unicode) U%04lX"
 msgstr "Karakter kodu: (Unicode) U%04lX"
 
 #: gcharmap/src/callbacks.c:134
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Character code: (Unicode) U%04lX, (%s) 0x%s"
 msgstr "Karakter kodu: (Unicode) U%04lX, (%s) 0x%s"
 
@@ -517,8 +513,7 @@ msgstr "Kopyalanacak _Metin:"
 msgid "_Copy"
 msgstr "_Kopyala"
 
-#: gcharmap/src/interface.c:262
-#: gcharmap/src/interface.c:263
+#: gcharmap/src/interface.c:262 gcharmap/src/interface.c:263
 msgid "Text to copy"
 msgstr "Kopyalanacak metin"
 
@@ -526,8 +521,7 @@ msgstr "Kopyalanacak metin"
 msgid "Entry"
 msgstr "Giriş"
 
-#: gcharmap/src/interface.c:264
-#: gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:264 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopyala"
 
@@ -590,8 +584,7 @@ msgstr "Metni girin"
 msgid "Accessories"
 msgstr "Araçlar"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2
-#: gdictsrc/gdict-applet.c:270
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Sözlükte Ara"
 
@@ -623,16 +616,18 @@ msgstr "Açıklama Penceresini _Göster/Gizle"
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648
-#: gdictsrc/gdict-pref-dialog.c:466
-#: gdictsrc/gdict-pref-dialog.c:517
-#: gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Sunucuya bağlanılamıyor"
 
 #: gdictsrc/dict.c:661
-msgid "A serious error occured. Please check that your server and port are correct. For reference the default server is dict.org and the port 2628"
-msgstr "Ciddi bir hata oluştu. Lütfen sunucu ve portun doğruluğunu kontrol edin. Öntanımlı sunucu dict.org ve port 2628dir."
+msgid ""
+"A serious error occured. Please check that your server and port are correct. "
+"For reference the default server is dict.org and the port 2628"
+msgstr ""
+"Ciddi bir hata oluştu. Lütfen sunucu ve portun doğruluğunu kontrol edin. "
+"Öntanımlı sunucu dict.org ve port 2628dir."
 
 #: gdictsrc/gdict-about.c:56
 msgid "GNOME Dictionary"
@@ -654,8 +649,7 @@ msgstr "Yazım denetimi..."
 msgid "Spell check done"
 msgstr "Yazım denetimi tamamlandı"
 
-#: gdictsrc/gdict-app.c:144
-#: gdictsrc/gdict-app.c:288
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Uyumlu sonuç bulunamadı"
 
@@ -689,8 +683,7 @@ msgstr ""
 "Kullandığınız sunucu devre dışı\n"
 "ya da İnternet'e bağlı değilsiniz."
 
-#: gdictsrc/gdict-app.c:701
-#: gdictsrc/gdict-app.c:812
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "Kelime _Ara"
@@ -699,8 +692,7 @@ msgstr "Kelime _Ara"
 msgid "Lookup word in dictionary"
 msgstr "Sözlükte kelime ara"
 
-#: gdictsrc/gdict-app.c:704
-#: gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "_Yazım Denetimi"
 
@@ -712,8 +704,7 @@ msgstr "Sözcük yazım denetimi"
 msgid "_Dictionary"
 msgstr "_Sözlük"
 
-#: gdictsrc/gdict-app.c:785
-#: gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Sözlük"
 
@@ -721,13 +712,11 @@ msgstr "Sözlük"
 msgid "_Word: "
 msgstr "_Sözcük:"
 
-#: gdictsrc/gdict-app.c:836
-#: gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Sözcük"
 
-#: gdictsrc/gdict-app.c:837
-#: gdictsrc/gdict-app.c:838
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Sözcük Girişi"
@@ -744,8 +733,7 @@ msgstr "Bir Sözcük Ara"
 msgid "_Lookup"
 msgstr "_Ara"
 
-#: gdictsrc/gdict-defbox.c:643
-#: gdictsrc/gdict-speller.c:488
+#: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "Sorgu yapılırken hata oluştu: %s"
@@ -900,20 +888,33 @@ msgid "Port used to connect to server"
 msgstr "Sunucuya bağlanmak için kullanılan port"
 
 #: gdictsrc/gdict.schemas.in.h:3
-msgid "Specify whether to use smart lookup. This key is dependant on whether the dictionary server supports this option. The default is TRUE"
-msgstr "Akıllı aramayı kullanma seçeneğini belirleyin. Bu tuş sözlük sunucusunun bu seçeneği desteklemesine bağlıdır. Öntanımlı değer TRUE."
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+"Akıllı aramayı kullanma seçeneğini belirleyin. Bu tuş sözlük sunucusunun bu "
+"seçeneği desteklemesine bağlıdır. Öntanımlı değer TRUE."
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
 msgstr "Sözlük sunucusunda kullanılacak veritabanı"
 
 #: gdictsrc/gdict.schemas.in.h:5
-msgid "The dictionary server to connect to. The default server is dict.org. See http://www.dict.org for details on other servers"
-msgstr "Bağlanılacak sözlük sunucusu. Öntanımlı sunucu dict.org. Diğer sunucular hakkında ayrıntılı bilgi için http://www.dict.org adresini kullanınız."
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+"Bağlanılacak sözlük sunucusu. Öntanımlı sunucu dict.org. Diğer sunucular "
+"hakkında ayrıntılı bilgi için http://www.dict.org adresini kullanınız."
 
 #: gdictsrc/gdict.schemas.in.h:6
-msgid "The name of the individual database to use in the dictionary server. ! specifies that gnome-dictionary should search all databases in a given server"
-msgstr "Sözlük sunucusunda kullanılacak tekil veritabanının adı. ! gnome-dictionary'nin verili bir sunucudaki tüm veritabanlarını arayacağını belirtir."
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+"Sözlük sunucusunda kullanılacak tekil veritabanının adı. ! gnome-"
+"dictionary'nin verili bir sunucudaki tüm veritabanlarını arayacağını "
+"belirtir."
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -925,8 +926,13 @@ msgstr "Kullanılacak arama stratejisi"
 
 #: gdictsrc/gdict.schemas.in.h:9
 #, fuzzy
-msgid "The search strategy to use. This is dependant on the search strategy that the dictionary server supports. The default strategy is 'lev' - Match words within Levenshtein distance one"
-msgstr "Kullanılacak arama stratejisi. Bu, sözlük sunucusunun desteklediği arama stratejilerine bağlıdır. Öntanımlı strateji 'lev'dir. "
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+"Kullanılacak arama stratejisi. Bu, sözlük sunucusunun desteklediği arama "
+"stratejilerine bağlıdır. Öntanımlı strateji 'lev'dir. "
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -960,8 +966,7 @@ msgstr "MBozuk alanlar denetleniyor..."
 msgid "MFailed to open device %s for badblock checking\n"
 msgstr "MBozuk alan denetimi için aygıt %s açılamadı\n"
 
-#: gfloppy/src/badblocks.c:301
-#: gfloppy/src/gfloppy.c:536
+#: gfloppy/src/badblocks.c:301 gfloppy/src/gfloppy.c:536
 msgid "MChecking for bad blocks... Done"
 msgstr "MBozuk alan denetimi yapılıyor... Yapıldı"
 
@@ -973,8 +978,7 @@ msgstr "MDisket biçimlendiriliyor..."
 msgid "EI don't know what this is, but it's very wrong."
 msgstr "EBunun ne olduğunu bilmiyorum, ama çok yanlış."
 
-#: gfloppy/src/fdformat.c:54
-#: gfloppy/src/fdformat.c:66
+#: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
 #, c-format
 msgid "EError formatting track #%d"
 msgstr "EBölüm biçimlendirilirken hata oluştu #%d"
@@ -993,8 +997,7 @@ msgstr "MDisket biçimlendiriliyor... Yapıldı"
 msgid "MVerifying the format..."
 msgstr "MBiçimlendirme sınanıyor..."
 
-#: gfloppy/src/fdformat.c:99
-#: gfloppy/src/fdformat.c:174
+#: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
 msgid ""
 "EUnable to write to the floppy.\n"
 "\n"
@@ -1004,14 +1007,12 @@ msgstr ""
 "\n"
 "Lütfen yazma korumalı olmadığına emin olun."
 
-#: gfloppy/src/fdformat.c:102
-#: gfloppy/src/fdformat.c:177
+#: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
 #, c-format
 msgid "EInsufficient permissions to open floppy device %s."
 msgstr "EDisketi açmak için yeterli izin yok %s"
 
-#: gfloppy/src/fdformat.c:106
-#: gfloppy/src/fdformat.c:181
+#: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
 msgid ""
 "EUnable to access the floppy disk.\n"
 "\n"
@@ -1035,7 +1036,7 @@ msgstr ""
 "Hata kodu %s%d"
 
 #: gfloppy/src/fdformat.c:129
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "ERead Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
@@ -1044,8 +1045,7 @@ msgstr ""
 "Silindir %d, beklenen%d, okuma%d sorunu"
 
 #: gfloppy/src/fdformat.c:132
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "EProblem reading cylinder %d, expected %d, read %d"
 msgstr "ESilindir %d okunurken hata oluştu, beklenen%d, okunan%d"
 
@@ -1092,8 +1092,7 @@ msgid "EError while filling the bad blocks list file."
 msgstr "EBozuk alan listesi doldurulurken hata oluştu."
 
 #: gfloppy/src/gfloppy.c:308
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "EError while spawning the (%s) command: %s."
 msgstr "E(%s) komutu çalıştırılırken hata oluştu:%s"
 
@@ -1118,15 +1117,15 @@ msgid "EAbnormal child process termination."
 msgstr "EBilinmeyen alt süreç sonlandırması"
 
 #: gfloppy/src/gfloppy.c:388
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "EError while spawning the mbadblocks command: %s."
 msgstr "Embadblocks komutu çalıştırılırken hata oluştu: %s"
 
 #: gfloppy/src/gfloppy.c:400
 #, c-format
 msgid ""
-"EThe bad blocks checking utility (mbadblocks) reported the following errors:\n"
+"EThe bad blocks checking utility (mbadblocks) reported the following "
+"errors:\n"
 "%s."
 msgstr ""
 "EBozuk alan denetim uygulaması (mbozukalan) şu hatayı verdi:\n"
@@ -1138,8 +1137,7 @@ msgid "EAbnormal mbadblocks child process termination."
 msgstr "EBilinmeyen mbadblocks alt süreç sonlandırması"
 
 #. make the filesystem
-#: gfloppy/src/gfloppy.c:470
-#: gfloppy/src/gfloppy.c:510
+#: gfloppy/src/gfloppy.c:470 gfloppy/src/gfloppy.c:510
 msgid "MMaking filesystem on disk..."
 msgstr "MDisk üzerinde dosya sistemi oluşturuluyor..."
 
@@ -1147,8 +1145,7 @@ msgstr "MDisk üzerinde dosya sistemi oluşturuluyor..."
 msgid "EUnable to create filesystem correctly."
 msgstr "EDosya sistemi düzgün bir biçimde oluşturulamadı."
 
-#: gfloppy/src/gfloppy.c:482
-#: gfloppy/src/gfloppy.c:522
+#: gfloppy/src/gfloppy.c:482 gfloppy/src/gfloppy.c:522
 msgid "MMaking filesystem on disk... Done"
 msgstr "MDisk üzerinde dosya sistemi oluşturuluyor... Yapıldı"
 
@@ -1166,8 +1163,12 @@ msgstr "     "
 
 #: gfloppy/src/gfloppy2.glade.h:3
 #, fuzzy
-msgid "<b>Note</b>: The mbadblocks utility isn't installed on this system. It must be installed in order to make a thorough DOS (fat) formatting."
-msgstr "<b>Not</b>: mbadblocks uyguluması sistemde yüklü değil. Tam DOS (fat) biçimlendirmesi için yüklenmesi gerekli."
+msgid ""
+"<b>Note</b>: The mbadblocks utility isn't installed on this system. It must "
+"be installed in order to make a thorough DOS (fat) formatting."
+msgstr ""
+"<b>Not</b>: mbadblocks uyguluması sistemde yüklü değil. Tam DOS (fat) "
+"biçimlendirmesi için yüklenmesi gerekli."
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "<span weight=\"bold\">Filesystem settings</span>"
@@ -1242,17 +1243,19 @@ msgid "_Standard (adds a low-level format to the quick mode)"
 msgstr "_Standart (hızlı kipe düşük seviye biçimlendirme ekler)"
 
 #: gfloppy/src/main.c:132
-msgid "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You can't format a floppy without one of them."
-msgstr "Ne mke2fs uygulaması, ne de mkdosfs/mformat uygulaması yüklenmiş. Bunlardan herhangi biri yüklü olmadan disket biçimlendiremezsiniz."
+msgid ""
+"Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
+"can't format a floppy without one of them."
+msgstr ""
+"Ne mke2fs uygulaması, ne de mkdosfs/mformat uygulaması yüklenmiş. Bunlardan "
+"herhangi biri yüklü olmadan disket biçimlendiremezsiniz."
 
-#: gfloppy/src/main.c:155
-#: gfloppy/src/main.c:199
+#: gfloppy/src/main.c:155 gfloppy/src/main.c:199
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "Aygıt %s açılamıyor, biçimlendirme devam edemez."
 
-#: gfloppy/src/main.c:158
-#: gfloppy/src/main.c:202
+#: gfloppy/src/main.c:158 gfloppy/src/main.c:202
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1261,11 +1264,11 @@ msgstr ""
 "Aygıt %s bağlı değil.\n"
 "Lütfen devam etmek için aygıtı bağlayınız."
 
-#: gfloppy/src/main.c:161
-#: gfloppy/src/main.c:205
+#: gfloppy/src/main.c:161 gfloppy/src/main.c:205
 #, c-format
 msgid ""
-"You do not have the proper permissions to write to %s, formatting will not be possible.\n"
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
 "%s'a yazmak için gerekli izniniz yok, biçimlendirme yapılamaz\n"
@@ -1284,18 +1287,22 @@ msgstr ""
 msgid "The volume name can't contain any blank space."
 msgstr "Etiket boşluk içeremez."
 
-#: gfloppy/src/main.c:471
+#: gfloppy/src/main.c:474
 msgid "The device to format"
 msgstr "Biçimlendirilecek aygıt"
 
-#: gfloppy/src/main.c:472
+#: gfloppy/src/main.c:475
 msgid "DEVICE"
 msgstr "AYGIT"
 
 #: gfloppy/src/progress.c:123
 #, c-format
-msgid "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have been found and marked."
-msgstr "Disket biçimlendirildi, ancak <b>%d bozuk alan</b> (toplam %d) bulundu ve imlendi."
+msgid ""
+"The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
+"been found and marked."
+msgstr ""
+"Disket biçimlendirildi, ancak <b>%d bozuk alan</b> (toplam %d) bulundu ve "
+"imlendi."
 
 #: gfloppy/src/progress.c:126
 msgid "Floppy formatted successfully."
@@ -1310,8 +1317,12 @@ msgid "Format progress"
 msgstr "Biçimlendirme süreci"
 
 #: gfloppy/gfloppy.schemas.in.h:1
-msgid "0 for the quick format, 1 for a standard one (adds a low-level format) and finally 2 for a thorough format (adds a bad blocks scan)."
-msgstr "Hızlı biçimlendirme için 0, standart biçimlendirme için 1(düşük seyive biçimlendirme ekler), ve tam biçimlendirme için 2 (bozuk alan denetimi ekler)"
+msgid ""
+"0 for the quick format, 1 for a standard one (adds a low-level format) and "
+"finally 2 for a thorough format (adds a bad blocks scan)."
+msgstr ""
+"Hızlı biçimlendirme için 0, standart biçimlendirme için 1(düşük seyive "
+"biçimlendirme ekler), ve tam biçimlendirme için 2 (bozuk alan denetimi ekler)"
 
 #: gfloppy/gfloppy.schemas.in.h:2
 #, fuzzy
@@ -1328,15 +1339,18 @@ msgstr "Öntanımlı biçimlendirme kipi"
 
 #: gfloppy/gfloppy.schemas.in.h:5
 #, fuzzy
-msgid "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set mtools as the preferred FAT formatting backend."
-msgstr "mkdosfs 'u tercih etmek için TRUE, mtools'u tercih etmek için FALSE kullanınız."
+msgid ""
+"TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
+"mtools as the preferred FAT formatting backend."
+msgstr ""
+"mkdosfs 'u tercih etmek için TRUE, mtools'u tercih etmek için FALSE "
+"kullanınız."
 
 #: gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "Linux native dosya sistemi için ext2 ya da DOS dosya sistemi için fat"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1
-#: gsearchtool/gsearchtool.c:1570
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:1570
 msgid "Search for Files"
 msgstr "Dosya ara"
 
@@ -1396,8 +1410,7 @@ msgstr "Sembolik bağlantıları takip et"
 msgid "Include other filesystems"
 msgstr "Diğer dosya sistemlerini içer"
 
-#: gsearchtool/gsearchtool.c:398
-#: gsearchtool/gsearchtool.c:824
+#: gsearchtool/gsearchtool.c:398 gsearchtool/gsearchtool.c:824
 msgid "No files found"
 msgstr "Dosya bulunamadı"
 
@@ -1416,11 +1429,13 @@ msgstr "\"Bakılacak dizin\" metnini ayarlayın"
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Dosyaları şu ölçütlerden birine göre sırala: ad, dizin, boyut, tür ve tarih"
+msgstr ""
+"Dosyaları şu ölçütlerden birine göre sırala: ad, dizin, boyut, tür ve tarih"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
-msgstr "Sıralama düzenini \"yükselme\" olarak ayarla, öntanımlı ayar \"alçalma\"dır."
+msgstr ""
+"Sıralama düzenini \"yükselme\" olarak ayarla, öntanımlı ayar \"alçalma\"dır."
 
 #: gsearchtool/gsearchtool.c:597
 msgid "Automatically start a search"
@@ -1468,8 +1483,7 @@ msgstr ""
 msgid "Search Errors"
 msgstr "Arama Hataları"
 
-#: gsearchtool/gsearchtool.c:982
-#: gsearchtool/gsearchtool.c:1006
+#: gsearchtool/gsearchtool.c:982 gsearchtool/gsearchtool.c:1006
 msgid "Search for Files Error"
 msgstr "Dosya Arama Hatası"
 
@@ -1526,13 +1540,11 @@ msgstr "Değiştirildiği Tarih"
 msgid "File is _named:"
 msgstr "Dosy_a adı:"
 
-#: gsearchtool/gsearchtool.c:1401
-#: gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
 msgid "File Name Entry"
 msgstr "Dosya Adı Girişi"
 
-#: gsearchtool/gsearchtool.c:1401
-#: gsearchtool/gsearchtool.c:1402
+#: gsearchtool/gsearchtool.c:1401 gsearchtool/gsearchtool.c:1402
 msgid "Enter the file name you want to search"
 msgstr "Aramak istediğiniz dosyanın adını giriniz"
 
@@ -1544,18 +1556,15 @@ msgstr "_Şu dizine bak:"
 msgid "Browse"
 msgstr "Araştır"
 
-#: gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
 msgid "Starting folder entry"
 msgstr "Başlama dizini girişi"
 
-#: gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1430
+#: gsearchtool/gsearchtool.c:1429 gsearchtool/gsearchtool.c:1430
 msgid "Enter the folder name where you want to start the search"
 msgstr "Aramaya başlamak istediğiniz dizinin adını giriniz"
 
-#: gsearchtool/gsearchtool.c:1446
-#: gsearchtool/gsearchtool.c:1447
+#: gsearchtool/gsearchtool.c:1446 gsearchtool/gsearchtool.c:1447
 msgid "Additional Options"
 msgstr "Daha Fazla Seçenek"
 
@@ -1676,8 +1685,7 @@ msgstr "bugün  %-I:%M %p de"
 msgid "yesterday at %-I:%M %p"
 msgstr "dün %-I:%M %p de"
 
-#: gsearchtool/gsearchtool-support.c:542
-#: gsearchtool/gsearchtool-support.c:544
+#: gsearchtool/gsearchtool-support.c:542 gsearchtool/gsearchtool-support.c:544
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%m/%-d/%y, %-I:%M %p"
 
@@ -1699,7 +1707,11 @@ msgid "Cesar Miquel (miquel@df.uba.ar)"
 msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:43
-msgid "This program is part of the GNOME project. Logview comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it under the conditions of the GNU General Public Licence. The log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
+msgid ""
+"This program is part of the GNOME project. Logview comes with ABSOLUTELY NO "
+"WARRANTY. This is free software, and you are welcome to redistribute it "
+"under the conditions of the GNU General Public Licence. The log icon is a "
+"courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
 
 #: logview/about.c:61
@@ -1735,12 +1747,8 @@ msgstr "_Kaldır"
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "<%s> eylem veritabanı açılamadı! Açarken hata oluştu."
 
-#: logview/actions.c:294
-#: logview/actions.c:307
-#: logview/actions.c:318
-#: logview/actions.c:329
-#: logview/actions.c:340
-#: logview/actions.c:351
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Eylemler veritabanı incelenirken hata oluştu"
 
@@ -1855,8 +1863,7 @@ msgstr "Satır Sayısı:"
 msgid "Log Information"
 msgstr "Günlük Bilgisi"
 
-#: logview/info.c:163
-#: logview/zoom.c:157
+#: logview/info.c:163 logview/zoom.c:157
 msgid "<No log loaded>"
 msgstr "<Hiçbir günlük yüklenmedi>"
 
@@ -1946,23 +1953,24 @@ msgstr "%s kurala uyan bir dosya değil."
 
 #: logview/logrtns.c:268
 #, c-format
-msgid "%s is not user readable. Either run the program as root or ask the sysadmin to change the permissions on the file."
-msgstr "%s kullanıcı tarafından okunabilir değil. Ya programı root olarak çalıştırın ya da sistem yöneticinizden dosya üzerindeki izinleri değiştirmesini isteyin."
+msgid ""
+"%s is not user readable. Either run the program as root or ask the sysadmin "
+"to change the permissions on the file."
+msgstr ""
+"%s kullanıcı tarafından okunabilir değil. Ya programı root olarak çalıştırın "
+"ya da sistem yöneticinizden dosya üzerindeki izinleri değiştirmesini isteyin."
 
 #: logview/logrtns.c:285
 #, c-format
 msgid "%s could not be opened."
 msgstr "%s açılamadı."
 
-#: logview/logrtns.c:315
-#: logview/logrtns.c:324
+#: logview/logrtns.c:315 logview/logrtns.c:324
 #, c-format
 msgid "%s not a log file."
 msgstr "%s bir günlük dosyası değil."
 
-#: logview/logrtns.c:722
-#: logview/logrtns.c:753
-#: logview/logrtns.c:884
+#: logview/logrtns.c:722 logview/logrtns.c:753 logview/logrtns.c:884
 #, fuzzy
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: bellek yetersiz"
@@ -2047,8 +2055,7 @@ msgstr "İleti"
 msgid "Last Modified: "
 msgstr "Son Değiştirilme:"
 
-#: logview/logview.c:568
-#: logview/logview.c:643
+#: logview/logview.c:568 logview/logview.c:643
 msgid "Too many open logs. Close one and try again"
 msgstr "Çok fazla açık günlük var. Bir tanesini kapatıp tekrar deneyin."
 
@@ -2098,8 +2105,7 @@ msgstr "E_ylemleri çalıştır"
 msgid "Too many logs to monitor. Remove one and try again"
 msgstr "Görüntülenecek çok fazla günlük var. Birini kaldırıp tekrar deneyin."
 
-#: logview/monitor.c:297
-#: logview/monitor.c:335
+#: logview/monitor.c:297 logview/monitor.c:335
 msgid "tmp_list is NULL\n"
 msgstr ""
 
@@ -2145,6 +2151,9 @@ msgid "Log file to open up on startup"
 msgstr "Başlangıçta açılacak günlük dosyası"
 
 #: logview/logview.schemas.in.h:2
-msgid "Specifies the log file to open up at startup. The default is either /var/adm/messages or /var/log/messages, depending on your distribution."
-msgstr "Başlangıçta açılacak günlük dosyasını belirtir. Öntanımlı değer, ya /var/adm/messages ya da  /var/log/messages dir. Bu durum, dağıtımınıza bağlıdır."
-
+msgid ""
+"Specifies the log file to open up at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your distribution."
+msgstr ""
+"Başlangıçta açılacak günlük dosyasını belirtir. Öntanımlı değer, ya /var/adm/"
+"messages ya da  /var/log/messages dir. Bu durum, dağıtımınıza bağlıdır."

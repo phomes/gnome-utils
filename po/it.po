@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2003-01-20 22:51+0000\n"
+"POT-Creation-Date: 2003-01-27 11:32+0000\n"
 "PO-Revision-Date: 2003-01-26 23:57+0100\n"
 "Last-Translator: Alessio Frusciante <algol@firenze.linux.it>\n"
 "Language-Team: Italiano <tp@lists.linux.it>\n"
@@ -914,8 +914,8 @@ msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
-"Il nome del singolo database da usare sul server di dizionario. ! "
-"specifica che gnome-dictionary deve cercare in tutti i database sul server"
+"Il nome del singolo database da usare sul server di dizionario. ! specifica "
+"che gnome-dictionary deve cercare in tutti i database sul server"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -963,7 +963,8 @@ msgstr "MRicerca dei blocchi danneggiati... "
 #: gfloppy/src/badblocks.c:281
 #, c-format
 msgid "MFailed to open device %s for badblock checking\n"
-msgstr "MImpossibile aprire il device %s per la ricerca dei blocchi danneggiati\n"
+msgstr ""
+"MImpossibile aprire il device %s per la ricerca dei blocchi danneggiati\n"
 
 #: gfloppy/src/badblocks.c:301 gfloppy/src/gfloppy.c:536
 msgid "MChecking for bad blocks... Done"
@@ -1274,11 +1275,11 @@ msgstr ""
 msgid "The volume name can't contain any blank space."
 msgstr "Il nome del volume non può contenere spazi."
 
-#: gfloppy/src/main.c:471
+#: gfloppy/src/main.c:474
 msgid "The device to format"
 msgstr "Il device da formattare"
 
-#: gfloppy/src/main.c:472
+#: gfloppy/src/main.c:475
 msgid "DEVICE"
 msgstr "DEVICE"
 
@@ -1288,8 +1289,8 @@ msgid ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
 msgstr ""
-"Il dischetto è stato formattato, ma sono stati trovati e segnati "
-"<b>%d blocchi rovinati</b> (su %d)."
+"Il dischetto è stato formattato, ma sono stati trovati e segnati <b>%d "
+"blocchi rovinati</b> (su %d)."
 
 #: gfloppy/src/progress.c:126
 msgid "Floppy formatted successfully."
@@ -1411,7 +1412,9 @@ msgstr ""
 
 #: gsearchtool/gsearchtool.c:595
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Ordina i file per uno dei seguenti criteri: nome, cartella, dimensioni, tipo o data"
+msgstr ""
+"Ordina i file per uno dei seguenti criteri: nome, cartella, dimensioni, tipo "
+"o data"
 
 #: gsearchtool/gsearchtool.c:596
 msgid "Set sort order to descending, the default is ascending"
@@ -1703,10 +1706,10 @@ msgid ""
 "under the conditions of the GNU General Public Licence. The log icon is a "
 "courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Questo programma fa parte del progetto GNOME. Logview è distribuito "
-"SENZA ALCUNA GARANZIA. Questo è software libero e si è invitati a "
-"ridistribuirlo nei termini della GNU General Public Licence. "
-"L'icona del tronco è una cortesia di Tuomas Kuosmanen (a.k.a tigert)."
+"Questo programma fa parte del progetto GNOME. Logview è distribuito SENZA "
+"ALCUNA GARANZIA. Questo è software libero e si è invitati a ridistribuirlo "
+"nei termini della GNU General Public Licence. L'icona del tronco è una "
+"cortesia di Tuomas Kuosmanen (a.k.a tigert)."
 
 #: logview/about.c:61
 msgid "GNOME System Log Viewer"
