@@ -629,7 +629,7 @@ static char *
 resolve_path (char *path_frag)
 {
 	const GList *list;
-	char buff[200], *p, *path;
+	char buff[PATH_MAX], *path;
 
 	list = gnome_i18n_get_language_list ("LC_MESSAGES");
 	for ( ; list; list=list->next) 
@@ -639,19 +639,16 @@ resolve_path (char *path_frag)
 		/* See if gtt/ghtml/<lang>/<path_frag> exists */
 		/* look in the local build dir first (for testing) */
 		
-		p = buff;
-		p = stpcpy (p, "ghtml/");
-		p = stpcpy (p, lang);
-		p = stpcpy (p, "/");
-		p = stpcpy (p, path_frag);
+		snprintf (buff, PATH_MAX, "ghtml/%s/%s", lang, path_frag);
 		path = gnome_datadir_file (buff);
 		if (path) return path;
 
-		p = buff;
-		p = stpcpy (p, "gtt/ghtml/");
-		p = stpcpy (p, lang);
-		p = stpcpy (p, "/");
-		p = stpcpy (p, path_frag);
+		snprintf (buff, PATH_MAX, "gtt/ghtml/%s/%s", lang, path_frag);
+		path = gnome_datadir_file (buff);
+		if (path) return path;
+
+		/* some users compile with path settings that gnome cannot find */
+		snprintf (buff, PATH_MAX, GTTDATADIR "/ghtml/%s/%s", lang, path_frag);
 		path = gnome_datadir_file (buff);
 		if (path) return path;
 	}
