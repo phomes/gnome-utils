@@ -81,7 +81,6 @@ create_chartable (void)
             
             button = gtk_button_new_with_label (buf);
             mainapp->buttons = g_list_append (mainapp->buttons, button);
-            gtk_widget_set_style (GTK_BIN (button)->child, mainapp->btnstyle);
             gtk_table_attach (GTK_TABLE (chartable), button, h, h + 1, v, v + 1,
               (GtkAttachOptions) (GTK_EXPAND | GTK_SHRINK | GTK_FILL),
               (GtkAttachOptions) (GTK_EXPAND | GTK_SHRINK | GTK_FILL),
@@ -120,7 +119,6 @@ create_chartable (void)
 	    
             button = gtk_button_new_with_label (buf);
             mainapp->buttons = g_list_append (mainapp->buttons, button);
-            gtk_widget_set_style (GTK_BIN (button)->child, mainapp->btnstyle);
             gtk_table_attach (GTK_TABLE (chartable), button,
               h, h + 1, v + 4, v + 5,
               (GtkAttachOptions) (GTK_EXPAND | GTK_SHRINK | GTK_FILL),
@@ -293,12 +291,7 @@ main_app_create_ui (MainApp *app)
 
     /* The character table */
     {
-        GtkWidget *tmp;
 	GdkFont *font;
-
-        tmp = gtk_button_new ();
-        gtk_widget_ensure_style(tmp);
-        app->btnstyle = gtk_style_copy (gtk_widget_get_style (tmp));
 
         gtk_widget_destroy (tmp);
 
