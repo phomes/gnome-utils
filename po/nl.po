@@ -9,11 +9,12 @@
 # Patrick Londema <platypus@nerdz.nl>, 2002.
 # Huib Kleinhout <huib@stack.nl>, 2002. 
 # Tino Meinen <a.t.meinen@chello.nl>, 2002.
+# Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-08-05 18:45+0100\n"
+"POT-Creation-Date: 2002-08-08 05:28+0200\n"
 "PO-Revision-Date: 2002-05-31 00:51+02:00\n"
 "Last-Translator: Huib Kleinhout <huib@stack.nl>\n"
 "Language-Team: Dutch <NL@li.org>\n"
@@ -88,7 +89,7 @@ msgstr ""
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
-msgstr ""
+msgstr "Mensen die mee hebben gewerkt aan het vertalen van dit programma"
 "Almer S. Tigelaar <almer@gnome.org>\n"
 "André van Dijk <ady@unseen.demon.nl>\n"
 "Dennis Smit <area101.penguin.nl>\n"
@@ -136,7 +137,7 @@ msgstr "Inverse"
 
 #: gcalc/gnome-calc.c:1253
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1253
 msgid "Square"
@@ -242,7 +243,7 @@ msgstr "Natuurlijk Logaritme"
 
 #: gcalc/gnome-calc.c:1269
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "x<sup>y</sup>"
 
 #: gcalc/gnome-calc.c:1269
 msgid "Power"
@@ -448,15 +449,13 @@ msgstr "_Invoegen"
 
 #
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "Tekencode:"
+msgstr "Teken_code:"
 
 #
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "Teken:"
+msgstr "_Teken:"
 
 #
 #: gcharmap/src/asciiselect.c:148
@@ -522,7 +521,7 @@ msgstr "Actiewerkbalk"
 
 #: gcharmap/src/interface.c:240
 msgid "_Text to copy:"
-msgstr "_Tekst om te kopiëren:"
+msgstr "Tekst om te _kopiëren:"
 
 #: gcharmap/src/interface.c:255
 msgid "_Copy"
@@ -554,7 +553,6 @@ msgstr "Teken(s) invoegen door tekencodes te kiezen."
 
 #
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
 msgstr "_Tekens"
 
@@ -651,13 +649,12 @@ msgstr ""
 
 #
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
 msgstr "Woordenboek"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "Copyright 1999 Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -924,29 +921,34 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"Slim zoeken gebruiken. Deze sleutel is afhankelijk van het feit om het "
+"woordenboek deze optie ondersteunt. De standaardinstelling is WAAR"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "De database die wordt gebruikt in de wordenboekserver."
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"De wordenboekserver waarmee moet worden verbonden. De standaardserver is "
+"dict.org. Zie http://www.dict.org voor informatie over andere servers"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"De naam van de individuele database die moet worden gebruikt in de woordenboekserver. ! "
+"geeft aan dat gnome-dictionary moet zoeken in alle databases van een gegeven server"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "Het poortnummer waarmee moet worden verbonden. Standaard is 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
 msgstr "Zoekstrategie"
 
@@ -956,6 +958,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"De zoekstrategie die moet worden gebruikt. Dit is afhankelijk van de zoekstrategie "
+"die de woordenboekserver ondersteunt. De standaard strategie is 'lev' - Woorden "
+"overeenkomen binnen Levenshtein afstand één"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1626,9 +1631,8 @@ msgstr "Actie-database"
 
 #
 #: logview/actions.c:85
-#, fuzzy
 msgid "Actions"
-msgstr "Acties..."
+msgstr "Acties"
 
 #: logview/actions.c:153
 #, fuzzy
@@ -1660,7 +1664,7 @@ msgstr "Kan niet schrijven naar de actie-database!"
 
 #: logview/actions.c:486
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "Fout bij uitvoeren aangegeven actie"
 
 #: logview/actions.c:507
 msgid "<empty>"
