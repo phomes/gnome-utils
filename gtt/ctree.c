@@ -508,8 +508,15 @@ ctree_col_values (ProjTreeWindow *ptw, GttProject *prj)
 			{
 				GList *leadnode;
 				leadnode = gtt_project_get_tasks (prj);
-				ptw->col_values[i] =  
+				if (leadnode)
+				{
+					ptw->col_values[i] =  
 					(char *) gtt_task_get_memo (leadnode->data);
+				}
+				else
+				{
+					ptw->col_values[i] = "";
+				}
 				break;
 			}
 			case NULL_COL:
