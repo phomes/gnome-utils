@@ -69,7 +69,7 @@ gtt_ghtml_display (GttGhtml *ghtml, const char *filepath,
 	{
 #define BUFF_SIZE 4000
 		size_t nr;
-		char *start, *end, *tok, *comstart, *comend;
+		char *start, *end, *scmstart, *scmend, *comstart, *comend;
 		char buff[BUFF_SIZE+1];
 		nr = fread (buff, 1, BUFF_SIZE, ph);
 		if (0 >= nr) break;  /* EOF I presume */
@@ -78,10 +78,11 @@ gtt_ghtml_display (GttGhtml *ghtml, const char *filepath,
 		start = buff;
 		while (start)
 		{
-			tok = NULL;
+			scmstart = NULL;
+			scmend = NULL;
 			
-			/* look for special gtt markup */
-			end = strstr (start, "<?gtt");
+			/* look for scheme markup */
+			end = strstr (start, "<?scm");
 
 			/* look for comments, and blow past them. */
 			comstart = strstr (start, "<!--");
@@ -104,13 +105,13 @@ gtt_ghtml_display (GttGhtml *ghtml, const char *filepath,
 				continue;
 			}
 
-			/* look for  termination of gtt markup */
+			/* look for  termination of scm markup */
 			if (end)
 			{
 				nr = end - start;
 				*end = 0x0;
-				tok = end+5;
-				end = strstr (tok, "?>");
+				scmstart = end+5;
+				end = strstr (scmstart, "?>");
 				if (end)
 				{
 					*end = 0;
@@ -126,10 +127,9 @@ gtt_ghtml_display (GttGhtml *ghtml, const char *filepath,
 			(ghtml->write_stream) (ghtml, start, nr, ghtml->user_data);
 
 			/* if there is markup, then dispatch */
-			if (tok)
+			if (scmstart)
 			{
-				tok = strchr (tok, '$');
-			//	dispatch_ghtml (ghtml, tok, prj);
+				gh_eval_str_with_standard_handler (scmstart);
 			}
 			start = end;
 		}
