@@ -29,7 +29,6 @@
 #include "interface.h"
 #include "asciiselect.h"
 
-#include <gconf/gconf-client.h>
 #include <gnome.h>
 
 void
@@ -253,5 +252,18 @@ cb_entry_changed (GtkWidget *widget, gpointer data)
     g_free (text);
 }
 
+void
+cb_entry_changed (GtkWidget *widget, gpointer data)
+{
+    gchar *text;
+
+    text = gtk_editable_get_chars (GTK_EDITABLE (widget), 0, -1);
+    if (strcmp (text, "") == 0) 
+      edit_menu_set_sensitivity (FALSE);
+    else
+      edit_menu_set_sensitivity (TRUE);
+
+    g_free (text);
+}
 
 #endif /* _CALLBACKS_C_ */
