@@ -125,6 +125,21 @@ on_close_clicked_cb (GtkWidget *w, gpointer data)
 }
 
 /* ============================================================== */
+/* interval edits */
+
+static void
+interval_popup_cb (Wiggy *wig, gpointer data)
+{
+printf ("duude innvreral=%d\n", data);
+{GttInterval *ivl=data; 
+time_t t=gtt_interval_get_start(ivl);
+printf("duude its %s",ctime(&t));
+}
+	gtk_menu_popup(GTK_MENU(wig->interval_popup), 
+		NULL, NULL, NULL, wig, 1, 0);
+}
+
+/* ============================================================== */
 /* html events */
 
 static void
@@ -132,9 +147,25 @@ html_link_clicked_cb(GtkHTML * html, const gchar * url, gpointer data)
 {
 	Wiggy *wig = (Wiggy *) data;
 
-gtk_menu_popup(GTK_MENU(wig->interval_popup), NULL, NULL, NULL, NULL, 1, 0);
-	printf ("clicked on link duude=%s popup=%p\n", url,
-wig->interval_popup);
+	if (0 == strncmp (url, "gtt:interval", 12))
+	{
+		char *str = strstr (url+12, "0x");
+		if (str)
+		{
+			gpointer data;
+			data = strtoul (str, NULL, 16);
+			interval_popup_cb (wig, data);
+		}
+	}
+	else
+	if (0 == strncmp (url, "gtt:memo", 8))
+	{
+		// interval_popup_cb (wig);
+	}
+	else
+	{
+		printf ("clicked on link duude=%s\n", url);
+	}
 }
 
 static void
