@@ -716,7 +716,12 @@ ctree_remove(ProjTreeWindow *ptw, GttProject *p)
 	ptn = gtt_project_get_private_data (p);
 	g_return_if_fail (NULL != ptn);
 	gtt_project_remove_notifier (p, redraw, ptn);
+	gtk_ctree_node_set_row_data(ptw->ctree, ptn->ctnode, NULL);
 	gtk_ctree_remove_node(ptw->ctree, ptn->ctnode);
+	ptn->prj = NULL;
+	ptn->ctnode = NULL;
+	ptn->ptw = NULL;
+	g_free (ptn);
 	gtt_project_set_private_data (p, NULL);
 }
 
