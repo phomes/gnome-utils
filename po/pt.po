@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2002-08-05 18:45+0100\n"
-"PO-Revision-Date: 2002-06-17 01:45+0000\n"
+"POT-Creation-Date: 2002-08-10 01:21+0100\n"
+"PO-Revision-Date: 2002-08-10 02:35+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -121,7 +121,7 @@ msgstr "Inverter"
 
 #: gcalc/gnome-calc.c:1253
 msgid "x<sup>2</sup>"
-msgstr ""
+msgstr "x<sup>2</sup>"
 
 #: gcalc/gnome-calc.c:1253
 msgid "Square"
@@ -227,7 +227,7 @@ msgstr "Logaritmo Natural"
 
 #: gcalc/gnome-calc.c:1269
 msgid "x<sup>y</sup>"
-msgstr ""
+msgstr "x<sup>y</sup>"
 
 #: gcalc/gnome-calc.c:1269
 msgid "Power"
@@ -430,14 +430,12 @@ msgid "_Insert"
 msgstr "_Inserir"
 
 #: gcharmap/src/asciiselect.c:123
-#, fuzzy
 msgid "Character c_ode:"
-msgstr "Código do caracter:"
+msgstr "Códig_o do caracter:"
 
 #: gcharmap/src/asciiselect.c:137
-#, fuzzy
 msgid "Ch_aracter:"
-msgstr "Caracter:"
+msgstr "C_aracter:"
 
 #: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
@@ -526,9 +524,8 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "Inserir caracter(es) seleccionando os seus códigos."
 
 #: gcharmap/src/menus.c:63
-#, fuzzy
 msgid "Ch_aracters"
-msgstr "_Caracteres"
+msgstr "C_aracteres"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
 #. cb_insert_char_click, NULL),
@@ -619,13 +616,12 @@ msgstr ""
 "correctos. Como referência, o servidor de defeito é dict.org e o porto 2628"
 
 #: gdictsrc/gdict-about.c:56
-#, fuzzy
 msgid "GNOME Dictionary"
-msgstr "Dicionário"
+msgstr "Dicionário GNOME"
 
 #: gdictsrc/gdict-about.c:57
 msgid "Copyright 1999 by Mike Hughes"
-msgstr ""
+msgstr "Copyright 1999 por Mike Hughes"
 
 #: gdictsrc/gdict-about.c:58
 msgid ""
@@ -886,31 +882,36 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
+"Especificar se deverá ser utilizada a procura inteligente. Esta chave está "
+"dependende do suporte pelo servidor a esta opção. Por omissão o valor é VERDADE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr ""
+msgstr "A base de dados a utilizar no servidor de dicionário."
 
 #: gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
+"O servidor de dicionário onde se ligar. O servidor por omissão é o dict.org. Veja "
+"http://www.dict.org para detalhes sobre outros servidores"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
+"O nome da base de dados individual a utilizar no servidor de dicionário. ! "
+"especifica que o dicionário-gnome deverá procurar todas as bases de dados no servidor"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
-msgstr ""
+msgstr "O número do porto onde se ligar. O porto por omissão é 2628."
 
 #: gdictsrc/gdict.schemas.in.h:8
-#, fuzzy
 msgid "The search strategy to use"
-msgstr "Estratégia de Pesquisa"
+msgstr "A estratégia de pesquisa a utilizar"
 
 #: gdictsrc/gdict.schemas.in.h:9
 msgid ""
@@ -918,6 +919,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
+"A estratégia de pesquisa a utilizar. Isto depende da estratégia de pesquisa "
+"que o servidor de dicionário suporta. A estratégia por omissão é 'lev' - "
+"Equipara palavras com distância Levenshtein de um"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1582,14 +1586,12 @@ msgid "Actions"
 msgstr "Acções"
 
 #: logview/actions.c:153
-#, fuzzy
 msgid "_Add"
-msgstr "Adicionar"
+msgstr "_Adicionar"
 
 #: logview/actions.c:160
-#, fuzzy
 msgid "_Edit"
-msgstr "Editar"
+msgstr "_Editar"
 
 #: logview/actions.c:167 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
@@ -1611,7 +1613,7 @@ msgstr "Incapaz de escrever na base de dados de acções!"
 
 #: logview/actions.c:486
 msgid "Error while executing specified action"
-msgstr ""
+msgstr "Erro ao executar a acção especificada"
 
 #: logview/actions.c:507
 msgid "<empty>"
@@ -1638,9 +1640,8 @@ msgid "description"
 msgstr "descrição"
 
 #: logview/actions.c:772
-#, fuzzy
 msgid "_Description:"
-msgstr "Descrição:"
+msgstr "_Descrição:"
 
 #: logview/actions.c:781
 msgid "Description of this entry."
