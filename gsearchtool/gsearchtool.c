@@ -184,9 +184,9 @@ make_find_cmd (const char *start_dir)
 
 	if(start_dir) {
 		escape_dir = g_strescape(start_dir, NULL);
-		g_string_append_printf(cmdbuf, "find \"%s\" %s ", escape_dir, defoptions);
+		g_string_append_printf(cmdbuf, "exec find \"%s\" %s ", escape_dir, defoptions);
 	} else
-		g_string_append_printf(cmdbuf, "find . %s ", defoptions);
+		g_string_append_printf(cmdbuf, "exec find . %s ", defoptions);
 
 	for(list=criteria_find;list!=NULL;list=g_list_next(list)) {
 		FindOption *opt = list->data;
@@ -285,10 +285,10 @@ make_locate_cmd(void)
 
 	if (locate_command != NULL)
 	{
-		g_string_append_printf (cmdbuf, "%s '%s*%s'", locate_command, locale_locate_path,
+		g_string_append_printf (cmdbuf, "exec %s '%s*%s'", locate_command, locale_locate_path,
 					locale_locate_string);
 	} else {
-		g_string_append_printf (cmdbuf, "find \"%s\" -name '%s' -mount", locale_locate_path, 
+		g_string_append_printf (cmdbuf, "exec find \"%s\" -name '%s' -mount", locale_locate_path, 
 					locale_locate_string);
 	}	
 	g_free (locate_path);
@@ -800,7 +800,7 @@ really_run_command(char *cmd, char sepchar, gchar *utf8_pattern_str, RunLevel *r
 			fprintf (stderr, "%s", ret);
 		}
 		
-		if (waitpid (-1, NULL, WNOHANG) != 0)
+		if (waitpid (-1, NULL, WNOHANG) == -1)
 			break;
 		if(gtk_events_pending())
 			gtk_main_iteration_do(TRUE);
@@ -1734,13 +1734,13 @@ stop_search (GtkWidget *w, GdkEventKey *event)
 	{
 		if (locate_running == RUNNING)
 		{
-			buttons = locate_buttons;
-			run_locate_command (buttons[0], buttons);
+			locate_running = MAKE_IT_STOP;
+			return TRUE;
 		}
 		else if (find_running == RUNNING)
 		{
-			buttons = find_buttons;
-			run_command (buttons[0], buttons);
+			find_running = MAKE_IT_STOP;
+			return TRUE;
 		}
 	}
 	return FALSE;
