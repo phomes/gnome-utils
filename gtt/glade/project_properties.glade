@@ -48,7 +48,7 @@
 
     <widget>
       <class>GtkTable</class>
-      <name>table3</name>
+      <name>title table</name>
       <rows>3</rows>
       <columns>2</columns>
       <homogeneous>False</homogeneous>
@@ -77,7 +77,7 @@
 	<widget>
 	  <class>GtkEntry</class>
 	  <child_name>GnomeEntry:entry</child_name>
-	  <name>entry8</name>
+	  <name>title box</name>
 	  <can_focus>True</can_focus>
 	  <editable>True</editable>
 	  <text_visible>True</text_visible>
@@ -108,7 +108,7 @@
 	<widget>
 	  <class>GtkEntry</class>
 	  <child_name>GnomeEntry:entry</child_name>
-	  <name>entry10</name>
+	  <name>desc box</name>
 	  <can_focus>True</can_focus>
 	  <editable>True</editable>
 	  <text_visible>True</text_visible>
@@ -219,7 +219,7 @@
 
 	<widget>
 	  <class>GtkText</class>
-	  <name>text1</name>
+	  <name>notes box</name>
 	  <can_focus>True</can_focus>
 	  <editable>True</editable>
 	  <text></text>
@@ -230,7 +230,7 @@
     <widget>
       <class>GtkLabel</class>
       <child_name>Notebook:tab</child_name>
-      <name>label15</name>
+      <name>lablelala</name>
       <label>Project</label>
       <justify>GTK_JUSTIFY_CENTER</justify>
       <wrap>False</wrap>
@@ -242,12 +242,12 @@
 
     <widget>
       <class>GtkTable</class>
-      <name>table4</name>
+      <name>rate table</name>
       <rows>4</rows>
       <columns>3</columns>
       <homogeneous>False</homogeneous>
-      <row_spacing>0</row_spacing>
-      <column_spacing>0</column_spacing>
+      <row_spacing>3</row_spacing>
+      <column_spacing>3</column_spacing>
 
       <widget>
 	<class>GtkLabel</class>
@@ -459,7 +459,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry11</name>
+	<name>overtime box</name>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
@@ -483,7 +483,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry12</name>
+	<name>overover box</name>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
@@ -507,7 +507,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry13</name>
+	<name>flatfee box</name>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
@@ -531,7 +531,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry14</name>
+	<name>regular box</name>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
@@ -569,7 +569,7 @@
 
     <widget>
       <class>GtkTable</class>
-      <name>table5</name>
+      <name>interval table</name>
       <rows>3</rows>
       <columns>3</columns>
       <homogeneous>False</homogeneous>
@@ -708,7 +708,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry15</name>
+	<name>minimum box</name>
 	<tooltip>Time below which intervals are discarded</tooltip>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
@@ -733,7 +733,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry16</name>
+	<name>interval box</name>
 	<tooltip>Time below which an interval is merged with its neighbors</tooltip>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
@@ -758,7 +758,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry17</name>
+	<name>gap box</name>
 	<tooltip>If the gap between intervals is smaller than tis, the intervals will be merged together</tooltip>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
