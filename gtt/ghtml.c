@@ -19,6 +19,7 @@
 #include "config.h"
 
 #define _GNU_SOURCE
+#include <guile/gh.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -37,6 +38,24 @@ struct gtt_ghtml_s
 	void (*error) (GttGhtml *, int errcode, const char * msg, gpointer);
 	gpointer user_data;
 };
+
+/* ============================================================== */
+
+static GttGhtml *ghtml_global_hack = NULL;   /* seems like guile screwed the pooch */
+
+/* ============================================================== */
+
+static
+SCM gtt_hello (void)
+{
+	GttGhtml *ghtml = ghtml_global_hack;
+	char *p;
+
+	p = "Hello World!<br><br>";
+	(ghtml->write_stream) (ghtml, p, strlen(p), ghtml->user_data);
+
+	return SCM_UNSPECIFIED;
+}
 
 /* ============================================================== */
 
@@ -61,6 +80,9 @@ gtt_ghtml_display (GttGhtml *ghtml, const char *filepath,
 		(ghtml->error) (ghtml, 404, filepath, ghtml->user_data);
 		return;
 	}
+	
+	/* ugh. gag. choke. puke. */
+	ghtml_global_hack = ghtml;
 
 	/* Now open the output stream for writing */
 	(ghtml->open_stream) (ghtml, ghtml->user_data);
@@ -143,10 +165,27 @@ gtt_ghtml_display (GttGhtml *ghtml, const char *filepath,
 
 /* ============================================================== */
 
+static int is_inited = 0;
+
+static void
+register_procs (void)
+{
+	gh_new_procedure("gtt-hello",   gtt_hello,   0, 0, 0);
+}
+
+
+/* ============================================================== */
+
 GttGhtml *
 gtt_ghtml_new (void)
 {
 	GttGhtml *p;
+
+	if (!is_inited)
+	{
+		is_inited = 1;
+		register_procs();
+	}
 
 	p = g_new0 (GttGhtml, 1);
 
