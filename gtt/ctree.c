@@ -525,7 +525,7 @@ ctree_update_column_visibility (ProjTreeWindow *ptw)
 			break;
 		case TIME_CURRENT_COL:
 			gtk_clist_set_column_visibility (GTK_CLIST(ptw->ctree), i, 
-				config_show_title_tt);
+				config_show_title_current);
 			break;
 		case TIME_TODAY_COL:
 			gtk_clist_set_column_visibility (GTK_CLIST(ptw->ctree), i, 

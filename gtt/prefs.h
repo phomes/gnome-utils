@@ -30,7 +30,7 @@ extern int config_show_title_day;
 extern int config_show_title_week;
 extern int config_show_title_month;
 extern int config_show_title_year;
-extern int config_show_title_tt;
+extern int config_show_title_current;
 extern int config_show_title_desc;
 extern int config_show_title_task;
 extern int config_show_tb_icons;
