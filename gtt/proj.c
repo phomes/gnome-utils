@@ -1276,6 +1276,28 @@ gtt_task_new (void)
 	return task;
 }
 
+static int
+task_suspend (GttTask *tsk)
+{
+	int is_running = 0;
+
+	/* avoid misplaced running intervals, stop the task */
+	if (tsk->interval_list)
+	{
+		GttInterval *first_ivl;
+		first_ivl = (GttInterval *) (tsk->interval_list->data);
+		is_running = first_ivl -> running;
+		if (is_running) 
+		{
+			/* don't call stop here, avoid dispatching redraw events */
+			gtt_project_timer_update (tsk->parent);
+			first_ivl->running = FALSE;
+		}
+	}
+	return is_running;
+}
+
+
 GttTask *
 gtt_task_new_insert (GttTask *old)
 {
@@ -1300,18 +1322,7 @@ gtt_task_new_insert (GttTask *old)
 	if (!prj) return task;
 
 	/* avoid misplaced running intervals, stop the task */
-	if (old->interval_list)
-	{
-		GttInterval *first_ivl;
-		first_ivl = (GttInterval *) (old->interval_list->data);
-		is_running = first_ivl -> running;
-		if (is_running) 
-		{
-			/* don't call stop here, avoid dispatching redraw events */
-			gtt_project_timer_update (prj);
-			first_ivl->running = FALSE;
-		}
-	}
+	is_running = task_suspend (old);
 
 	idx = g_list_index (prj->task_list, old);
 	prj->task_list = g_list_insert (prj->task_list, task, idx);
@@ -1323,11 +1334,15 @@ gtt_task_new_insert (GttTask *old)
 void
 gtt_task_destroy (GttTask *task)
 {
+	int is_running;
 	if (!task) return;
+
+	is_running = task_suspend (task);
 	if (task->parent)
 	{
 		task->parent->task_list = 
 			g_list_remove (task->parent->task_list, task);
+		if (is_running) gtt_project_timer_start (task->parent);
 		proj_refresh_time (task->parent);
 		task->parent = NULL;
 	}
@@ -1352,11 +1367,16 @@ gtt_task_destroy (GttTask *task)
 void
 gtt_task_remove (GttTask *task)
 {
+	int is_running;
 	if (!task) return;
+
+	is_running = task_suspend (task);
+
 	if (task->parent)
 	{
 		task->parent->task_list = 
 			g_list_remove (task->parent->task_list, task);
+		if (is_running) gtt_project_timer_start (task->parent);
 		proj_refresh_time (task->parent);
 		task->parent = NULL;
 	}
