@@ -16,6 +16,8 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
+#define _GNU_SOURCE
+
 #include "config.h"
 
 #include <errno.h>
@@ -406,21 +408,44 @@ do_show_report (const char * report, GttProject *prj)
 
 /* ============================================================== */
 
-void
-edit_journal(GtkWidget *w, gpointer data)
+static char *
+resolve_path (char *path_frag)
 {
-	char * path;
+	char buff[200], *p, *path;
 
 	/* xxx hack alert fixme the gnome_datadir gives full
          * path e.g. /usr/share/gtt, but I don't think it gets 
 	 * the i18n path right (subst C for es, fr, de, etc.) */
 
 	/* look in the local build dir first (for testing) */
-	path = gnome_datadir_file ("phtml/C/journal.phtml");
+	
+	p = buff;
+	p = stpcpy (p, "phtml/C/");
+	p = stpcpy (p, path_frag);
+	path = gnome_datadir_file (buff);
 	if (NULL == path)
 	{
-		path = gnome_datadir_file ("gtt/phtml/C/journal.phtml");
+		p = buff;
+		p = stpcpy (p, "gtt/phtml/C/");
+		p = stpcpy (p, path_frag);
+		path = gnome_datadir_file (buff);
 	}
+	return path;
+}
+
+void
+edit_journal(GtkWidget *w, gpointer data)
+{
+	char * path;
+	path = resolve_path ("journal.phtml");
+	do_show_report (path, cur_proj);
+}
+
+void
+edit_alldata(GtkWidget *w, gpointer data)
+{
+	char * path;
+	path = resolve_path ("alldata.phtml");
 	do_show_report (path, cur_proj);
 }
 
