@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.3\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
+"POT-Creation-Date: 2002-07-25 13:43+0100\n"
 "PO-Revision-Date: 2002-01-30 05:20+0100\n"
 "Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
 "Language-Team: Norwegian/Nynorsk <no@li.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 "systemet"
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
@@ -121,286 +121,282 @@ msgstr "1/x"
 msgid "Inverse"
 msgstr "Invers"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
-msgstr "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
+msgstr ""
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr "Kvadrat"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr "Kvadratrot"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr "CE/C"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr "Tøm"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr "Nullstill"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr ""
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr "sin"
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr "Sinus"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr "Tangent"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 #, fuzzy
 msgid " DEG  "
 msgstr "DEG"
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr "Skift grader / radianar / grad"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr "Base av naturleg logaritme"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr "Legg til siffer"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr "Base 10 logaritme"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr "Naturleg logaritme"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
-msgstr "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
+msgstr ""
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr "Straum"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr "Faktor"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr "Opnande parantes"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr "Lukkande parantes"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr "Divider med"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr "Mulplisér med"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr "-"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr "Subtraher"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr "+"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "Legg til"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr "."
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr "Desimalpunkt"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr "Endre teikn"
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr "Kalkuler"
 
@@ -420,73 +416,75 @@ msgstr "Teiknkart"
 msgid "Insert special characters into documents"
 msgstr "Sett inn spesialteikn i dokument"
 
-#: gcharmap/src/asciiselect.c:116
+#: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
 msgstr "Vel teikn"
 
-#: gcharmap/src/asciiselect.c:119
+#: gcharmap/src/asciiselect.c:120
 msgid "_Insert"
 msgstr "Set _inn"
 
 #: gcharmap/src/asciiselect.c:123
-msgid "Character code:"
+#, fuzzy
+msgid "Character c_ode:"
 msgstr "Teiknkode:"
 
-#: gcharmap/src/asciiselect.c:135
-msgid "Character:"
+#: gcharmap/src/asciiselect.c:137
+#, fuzzy
+msgid "Ch_aracter:"
 msgstr "Teikn:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 #, fuzzy
 msgid "Character Code"
 msgstr "Teiknkode:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 #, fuzzy
 msgid "Select character code"
 msgstr "Vel teikn"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 #, fuzzy
 msgid "Character"
 msgstr "Teikn:"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 #, fuzzy
 msgid "Character to insert"
 msgstr "Teiknkode:"
 
-#: gcharmap/src/asciiselect.c:152
+#: gcharmap/src/asciiselect.c:157
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
-#: gcharmap/src/callbacks.c:64
+#: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "GNOME teiknkart"
 
-#: gcharmap/src/callbacks.c:67
+#: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:113
 msgid "del"
 msgstr "slett"
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
 msgstr "%s: Teiknkode %d"
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
 msgstr "Tekst kopiert til utklippstavla..."
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
 msgstr "Tekst klippa ut til utklippstavla..."
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:225
 msgid "Text pasted from clipboard..."
 msgstr "Tekst limd inn frå utklippstavla..."
 
@@ -503,24 +501,24 @@ msgstr "Hendingsverktylinje"
 msgid "_Text to copy:"
 msgstr "Tekst som skal kopierast:"
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 msgid "_Copy"
 msgstr "_Kopiér"
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 #, fuzzy
 msgid "Text to copy"
 msgstr "Tekst som skal kopierast:"
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr "Oppføring"
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopier"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 #, fuzzy
 msgid "Copy the text"
 msgstr "Kopier utval"
@@ -536,7 +534,7 @@ msgstr "Sett inn teikn ved å velje teiknkoder."
 
 #: gcharmap/src/menus.c:63
 #, fuzzy
-msgid "_Characters"
+msgid "Ch_aracters"
 msgstr "Teikn:"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
@@ -580,16 +578,16 @@ msgstr "Dagbokoppføring"
 msgid "Enter the text"
 msgstr "Kopier utval"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr ""
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:250
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 #, fuzzy
 msgid "Dictionary Lookup"
 msgstr "Ordliste"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Slå opp ord i ordliste på nettet"
@@ -622,8 +620,8 @@ msgstr "Vis/gøym definisjonsvindauge ..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
-#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Kan ikkje kople til tenar"
 
@@ -631,6 +629,15 @@ msgstr "Kan ikkje kople til tenar"
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:56
+#, fuzzy
+msgid "GNOME Dictionary"
+msgstr "Ordliste"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
 msgstr ""
 
 #: gdictsrc/gdict-about.c:58
@@ -740,7 +747,7 @@ msgstr ""
 msgid "Look Up for a Word"
 msgstr "S_lå opp"
 
-#: gdictsrc/gdict-applet.c:243
+#: gdictsrc/gdict-applet.c:263
 msgid "_Lookup"
 msgstr "S_lå opp"
 
@@ -781,99 +788,99 @@ msgstr "Hovdudkropp:"
 msgid "Cross-reference:"
 msgstr "Kryssreferanse:"
 
-#: gdictsrc/gdict-pref-dialog.c:185
+#: gdictsrc/gdict-pref-dialog.c:186
 #, fuzzy
 msgid "Dictionary Preferences"
 msgstr "Rediger innstillingar ..."
 
-#: gdictsrc/gdict-pref-dialog.c:197
+#: gdictsrc/gdict-pref-dialog.c:198
 #, fuzzy
 msgid "Smart _lookup"
 msgstr "Smart oppslag"
 
-#: gdictsrc/gdict-pref-dialog.c:210
+#: gdictsrc/gdict-pref-dialog.c:211
 #, fuzzy
 msgid "_Server:"
 msgstr "Tenar:"
 
-#: gdictsrc/gdict-pref-dialog.c:217
+#: gdictsrc/gdict-pref-dialog.c:218
 #, fuzzy
 msgid "De_fault"
 msgstr "Forvald"
 
-#: gdictsrc/gdict-pref-dialog.c:223
+#: gdictsrc/gdict-pref-dialog.c:224
 #, fuzzy
 msgid "Reset server to default"
 msgstr "Gjenopprett standardinnstillingar"
 
-#: gdictsrc/gdict-pref-dialog.c:225
+#: gdictsrc/gdict-pref-dialog.c:226
 #, fuzzy
 msgid "_Port:"
 msgstr "Port:"
 
-#: gdictsrc/gdict-pref-dialog.c:239
+#: gdictsrc/gdict-pref-dialog.c:240
 #, fuzzy
 msgid "Def_ault"
 msgstr "Forvald"
 
-#: gdictsrc/gdict-pref-dialog.c:246
+#: gdictsrc/gdict-pref-dialog.c:247
 #, fuzzy
 msgid "Reset port to default"
 msgstr "Gjenopprett standardinnstillingar"
 
-#: gdictsrc/gdict-pref-dialog.c:247
+#: gdictsrc/gdict-pref-dialog.c:248
 #, fuzzy
 msgid "Server"
 msgstr "Tenar:"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 #, fuzzy
 msgid "Server Entry"
 msgstr "Tenar:"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:251
+#: gdictsrc/gdict-pref-dialog.c:252
 #, fuzzy
 msgid "Port"
 msgstr "Port:"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 #, fuzzy
 msgid "Port Entry"
 msgstr "Oppføring"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:257
+#: gdictsrc/gdict-pref-dialog.c:258
 #, fuzzy
 msgid "_Database:"
 msgstr "Database:"
 
-#: gdictsrc/gdict-pref-dialog.c:264
+#: gdictsrc/gdict-pref-dialog.c:265
 #, fuzzy
 msgid "D_efault strategy:"
 msgstr "Forvald strategi:"
 
-#: gdictsrc/gdict-pref-dialog.c:457
+#: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
 msgstr "Søk i alle databasar"
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 #, fuzzy
 msgid "Database"
 msgstr "Database:"
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 #, fuzzy
 msgid "Database Name"
 msgstr "Database:"
 
-#: gdictsrc/gdict-pref-dialog.c:634
+#: gdictsrc/gdict-pref-dialog.c:635
 #, fuzzy
 msgid "Default Strategy"
 msgstr "Forvald strategi:"
@@ -912,25 +919,55 @@ msgid "Search Strategy"
 msgstr "Søkestrategi:"
 
 #: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:2
-#, fuzzy
-msgid "Default strategy"
-msgstr "Forvald strategi:"
-
-#: gdictsrc/gdict.schemas.in.h:3
 #, fuzzy
 msgid "Dictionary server"
 msgstr "Ordliste"
 
-#: gdictsrc/gdict.schemas.in.h:4
+#: gdictsrc/gdict.schemas.in.h:2
 #, fuzzy
 msgid "Port used to connect to server"
 msgstr "Kan ikkje kople til tenar"
 
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:4
+#, fuzzy
+msgid "The database to use in the dictionary server."
+msgstr "Gnome klient for MIT ordlistetenear"
+
 #: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:8
+#, fuzzy
+msgid "The search strategy to use"
+msgstr "Søkestrategi:"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:10
 #, fuzzy
 msgid "Use smart lookup"
 msgstr "Smart oppslag"
@@ -1162,12 +1199,12 @@ msgstr "Formatere"
 msgid "_Quick format"
 msgstr "_Snøggformatering"
 
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "Ikkje i stand til å opne eininga %s, formatering kan ikkje fortsetje."
 
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1176,7 +1213,7 @@ msgstr ""
 "Eininga %s er fråkopla.\n"
 "Kople til eininga att for å fortsetje."
 
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1187,24 +1224,20 @@ msgstr ""
 "mogleg.\n"
 "Kontakt din adminstrator for å få skriverettar."
 
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr "Eininga som skal formaterast"
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr "DEVICE"
-
-#: gfloppy/src/main.c:360
+#: gfloppy/src/main.c:291
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
 
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
-msgstr "Formatere ein anna diskett?"
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr "Eininga som skal formaterast"
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
+msgstr "DEVICE"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
@@ -1632,74 +1665,81 @@ msgstr "Systemloggvisar"
 msgid "Copyright (C) 1998"
 msgstr "Opphavsrett © 1998"
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr "Handlingsdatabase"
 
-#: logview/actions.c:81
+#: logview/actions.c:85
+msgid "Actions"
+msgstr "Handlingar"
+
+#: logview/actions.c:153
 #, fuzzy
-msgid "Action options"
-msgstr "Val for monitor"
+msgid "_Add"
+msgstr "Legg til"
 
-#: logview/actions.c:138
-msgid "Add..."
-msgstr "Legg til ..."
+#: logview/actions.c:160
+#, fuzzy
+msgid "_Edit"
+msgstr "Rediger"
 
-#: logview/actions.c:144
-msgid "Edit..."
-msgstr "Rediger ..."
-
-#: logview/actions.c:150
-msgid "Remove"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#, fuzzy
+msgid "_Remove"
 msgstr "Fjern"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Klarar ikkje å opne handlingsdatabase <%s>! Opning feila."
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "Feil ved tolking av handlingsdatabase"
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr "Kan ikkje skrive til handlingsdatabase"
 
-#: logview/actions.c:494
+#: logview/actions.c:486
+msgid "Error while executing specified action"
+msgstr ""
+
+#: logview/actions.c:507
 msgid "<empty>"
 msgstr "<tom>"
 
-#: logview/actions.c:495
+#: logview/actions.c:508
 msgid "log name regexp"
 msgstr "regulært uttrykk for logg"
 
-#: logview/actions.c:496
+#: logview/actions.c:509
 msgid "process regexp"
 msgstr "prosess regulær uttrykk"
 
-#: logview/actions.c:497
+#: logview/actions.c:510
 msgid "message regexp"
 msgstr "regulært uttyrkk for melding"
 
-#: logview/actions.c:498
+#: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
 msgstr "handling som skal utførast når det regulære uttrykket er SANT"
 
-#: logview/actions.c:499
+#: logview/actions.c:512
 msgid "description"
 msgstr "skildring"
 
-#: logview/actions.c:744
-msgid "description:"
-msgstr "skildring"
+#: logview/actions.c:772
+#, fuzzy
+msgid "_Description:"
+msgstr "Skildring:"
 
-#: logview/actions.c:753
+#: logview/actions.c:781
 msgid "Description of this entry."
 msgstr "Skildring for denne oppføringa."
 
-#: logview/actions.c:800
+#: logview/actions.c:805
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2240,11 +2280,6 @@ msgstr "Lag arkiv ..."
 msgid "Create a new archive from the items"
 msgstr "Lag eit nytt arkiv frå elementa"
 
-#: meat-grinder/meat-grinder.c:941
-#, fuzzy
-msgid "_Remove"
-msgstr "Fjern"
-
 #: meat-grinder/meat-grinder.c:942
 #, fuzzy
 msgid "Remove the selected item"
@@ -2289,6 +2324,35 @@ msgid ""
 msgstr ""
 "Klarar ikkje å finne arkivprogrammet (tar)\n"
 "Dette er program som blir brukt til å lage arkiv."
+
+#~ msgid "x^2"
+#~ msgstr "x^2"
+
+#~ msgid "x^y"
+#~ msgstr "x^y"
+
+#, fuzzy
+#~ msgid "Default strategy"
+#~ msgstr "Forvald strategi:"
+
+#~ msgid "Format another floppy?"
+#~ msgstr "Formatere ein anna diskett?"
+
+#, fuzzy
+#~ msgid "Action options"
+#~ msgstr "Val for monitor"
+
+#~ msgid "Add..."
+#~ msgstr "Legg til ..."
+
+#~ msgid "Edit..."
+#~ msgstr "Rediger ..."
+
+#~ msgid "Remove"
+#~ msgstr "Fjern"
+
+#~ msgid "description:"
+#~ msgstr "skildring"
 
 #, fuzzy
 #~ msgid "Dictionary Applet"
@@ -3617,9 +3681,6 @@ msgstr ""
 #~ msgid "Grid"
 #~ msgstr "Rutenett"
 
-#~ msgid "Edit"
-#~ msgstr "Rediger"
-
 #~ msgid "File"
 #~ msgstr "Fil"
 
@@ -3721,9 +3782,6 @@ msgstr ""
 
 #~ msgid "Please, select the type of view you want to create."
 #~ msgstr "Vel kva type visning du vil opprette."
-
-#~ msgid "Actions"
-#~ msgstr "Handlingar"
 
 #~ msgid "Bottom"
 #~ msgstr "Nederst"
@@ -4841,9 +4899,6 @@ msgstr ""
 
 #~ msgid "Running: %s\n"
 #~ msgstr "Køyrer: %s\n"
-
-#~ msgid "Gnome client for the MIT dictionary server"
-#~ msgstr "Gnome klient for MIT ordlistetenear"
 
 #~ msgid "Notepad"
 #~ msgstr "Notepad"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils CVS\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
+"POT-Creation-Date: 2002-07-25 13:43+0100\n"
 "PO-Revision-Date: 2000-07-15\n"
 "Last-Translator: Bastien Nocera <hadess@hadess.net>\n"
 "Language-Team: \n"
@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
@@ -112,285 +112,281 @@ msgstr ""
 msgid "Inverse"
 msgstr ""
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr ""
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr ""
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid " DEG  "
 msgstr ""
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr ""
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr ""
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr ""
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr ""
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr ""
 
@@ -410,69 +406,69 @@ msgstr ""
 msgid "Insert special characters into documents"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:116
+#: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:119
+#: gcharmap/src/asciiselect.c:120
 msgid "_Insert"
 msgstr ""
 
 #: gcharmap/src/asciiselect.c:123
-msgid "Character code:"
+msgid "Character c_ode:"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:135
-msgid "Character:"
+#: gcharmap/src/asciiselect.c:137
+msgid "Ch_aracter:"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Select character code"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character to insert"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:152
+#: gcharmap/src/asciiselect.c:157
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:64
+#: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:67
+#: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:113
 msgid "del"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
 msgstr ""
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
 msgstr ""
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:225
 msgid "Text pasted from clipboard..."
 msgstr ""
 
@@ -488,23 +484,23 @@ msgstr ""
 msgid "_Text to copy:"
 msgstr ""
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 msgid "_Copy"
 msgstr ""
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 msgid "Text to copy"
 msgstr ""
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr ""
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr ""
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 msgid "Copy the text"
 msgstr ""
 
@@ -517,7 +513,7 @@ msgid "Insert character(s) by choosing character codes."
 msgstr ""
 
 #: gcharmap/src/menus.c:63
-msgid "_Characters"
+msgid "Ch_aracters"
 msgstr ""
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
@@ -559,15 +555,15 @@ msgstr ""
 msgid "Enter the text"
 msgstr ""
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr ""
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:250
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr ""
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr ""
@@ -595,8 +591,8 @@ msgstr ""
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
-#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr ""
 
@@ -604,6 +600,14 @@ msgstr ""
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:56
+msgid "GNOME Dictionary"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
 msgstr ""
 
 #: gdictsrc/gdict-about.c:58
@@ -699,7 +703,7 @@ msgstr ""
 msgid "Look Up for a Word"
 msgstr ""
 
-#: gdictsrc/gdict-applet.c:243
+#: gdictsrc/gdict-applet.c:263
 msgid "_Lookup"
 msgstr ""
 
@@ -740,83 +744,83 @@ msgstr ""
 msgid "Cross-reference:"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:185
+#: gdictsrc/gdict-pref-dialog.c:186
 msgid "Dictionary Preferences"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:197
+#: gdictsrc/gdict-pref-dialog.c:198
 msgid "Smart _lookup"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:210
+#: gdictsrc/gdict-pref-dialog.c:211
 msgid "_Server:"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:217
+#: gdictsrc/gdict-pref-dialog.c:218
 msgid "De_fault"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:223
+#: gdictsrc/gdict-pref-dialog.c:224
 msgid "Reset server to default"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:225
+#: gdictsrc/gdict-pref-dialog.c:226
 msgid "_Port:"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:239
+#: gdictsrc/gdict-pref-dialog.c:240
 msgid "Def_ault"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:246
+#: gdictsrc/gdict-pref-dialog.c:247
 msgid "Reset port to default"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:247
+#: gdictsrc/gdict-pref-dialog.c:248
 msgid "Server"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Server Entry"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:251
+#: gdictsrc/gdict-pref-dialog.c:252
 msgid "Port"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Port Entry"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:257
+#: gdictsrc/gdict-pref-dialog.c:258
 msgid "_Database:"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:264
+#: gdictsrc/gdict-pref-dialog.c:265
 msgid "D_efault strategy:"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:457
+#: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 msgid "Database"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 msgid "Database Name"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:634
+#: gdictsrc/gdict-pref-dialog.c:635
 msgid "Default Strategy"
 msgstr ""
 
@@ -850,22 +854,51 @@ msgid "Search Strategy"
 msgstr ""
 
 #: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:2
-msgid "Default strategy"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:3
 msgid "Dictionary server"
 msgstr ""
 
-#: gdictsrc/gdict.schemas.in.h:4
+#: gdictsrc/gdict.schemas.in.h:2
 msgid "Port used to connect to server"
 msgstr ""
 
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr ""
+
 #: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:8
+msgid "The search strategy to use"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
 msgstr ""
 
@@ -1072,19 +1105,19 @@ msgstr ""
 msgid "_Quick format"
 msgstr ""
 
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr ""
 
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
 "Please attach device to continue."
 msgstr ""
 
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1092,23 +1125,19 @@ msgid ""
 "Contact your system administrator about getting write permissions."
 msgstr ""
 
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr ""
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr ""
-
-#: gfloppy/src/main.c:360
+#: gfloppy/src/main.c:291
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
 
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr ""
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
 msgstr ""
 
 #: gfloppy/src/progress.c:115
@@ -1484,73 +1513,77 @@ msgstr ""
 msgid "Copyright (C) 1998"
 msgstr ""
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr ""
 
-#: logview/actions.c:81
-msgid "Action options"
+#: logview/actions.c:85
+msgid "Actions"
 msgstr ""
 
-#: logview/actions.c:138
-msgid "Add..."
+#: logview/actions.c:153
+msgid "_Add"
 msgstr ""
 
-#: logview/actions.c:144
-msgid "Edit..."
+#: logview/actions.c:160
+msgid "_Edit"
 msgstr ""
 
-#: logview/actions.c:150
-msgid "Remove"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+msgid "_Remove"
 msgstr ""
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr ""
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "Error parsing actions database"
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr ""
 
-#: logview/actions.c:494
+#: logview/actions.c:486
+msgid "Error while executing specified action"
+msgstr ""
+
+#: logview/actions.c:507
 msgid "<empty>"
 msgstr ""
 
-#: logview/actions.c:495
+#: logview/actions.c:508
 msgid "log name regexp"
 msgstr ""
 
-#: logview/actions.c:496
+#: logview/actions.c:509
 msgid "process regexp"
 msgstr ""
 
-#: logview/actions.c:497
+#: logview/actions.c:510
 msgid "message regexp"
 msgstr ""
 
-#: logview/actions.c:498
+#: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
 msgstr ""
 
-#: logview/actions.c:499
+#: logview/actions.c:512
 msgid "description"
 msgstr ""
 
-#: logview/actions.c:744
-msgid "description:"
+#: logview/actions.c:772
+msgid "_Description:"
 msgstr ""
 
-#: logview/actions.c:753
+#: logview/actions.c:781
 msgid "Description of this entry."
 msgstr ""
 
-#: logview/actions.c:800
+#: logview/actions.c:805
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2057,10 +2090,6 @@ msgstr ""
 
 #: meat-grinder/meat-grinder.c:931
 msgid "Create a new archive from the items"
-msgstr ""
-
-#: meat-grinder/meat-grinder.c:941
-msgid "_Remove"
 msgstr ""
 
 #: meat-grinder/meat-grinder.c:942

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
+"POT-Creation-Date: 2002-07-25 13:43+0100\n"
 "PO-Revision-Date: 2002-01-19 14:01+0200\n"
 "Last-Translator: Artis Trops <hornet@navigators.lv>\n"
 "Language-Team: Latvian <hornet@navigators.lv>\n"
@@ -75,7 +75,7 @@ msgstr ""
 "Izpildāmais fails ir citai platformai un nevar tikt palaists uz šīs sistēmas"
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
@@ -124,301 +124,297 @@ msgstr "1/x"
 msgid "Inverse"
 msgstr "Apgriezti"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
-msgstr "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
+msgstr ""
 
 # gtt/toolbar.c:152
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 msgid "Square"
 msgstr "Kvadrātā"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr "SQRT"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr "Kvadrātsakne"
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr "CE/C"
 
 # logview/calendar.c:118
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "Clear"
 msgstr "Attīrīt"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr "AC"
 
 # mini-utils/idetool/idetool.c:322
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr "Pārstatīt"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr "INV"
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr ""
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr "sin"
 
 # mini-utils/guname/info.c:61
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "Sine"
 msgstr "Sīnuss"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr "cos"
 
 # gcharmap/src/interface.c:190 mini-utils/gcolorsel/menus.c:93
 # mini-utils/gcolorsel/menus.c:954 mini-utils/gshutdown/gshutdown.c:153
 # mini-utils/gshutdown/gshutdown.c:594 mini-utils/gsu/gsu-gui-api.c:39
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "Cosine"
 msgstr "Kosīnuss"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr "tan"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr "Tangenss"
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 #, fuzzy
 msgid " DEG  "
 msgstr "DEG"
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr "Pārslēgt grādus / radiānus / gradiānus"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr "e"
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 #, fuzzy
 msgid "Base of Natural Logarithm"
 msgstr "Parastais Logaritms"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr "EE"
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr "Pievienot skaitli"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr "log"
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr "Decimāllogaritmis"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr "ln"
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr "Parastais Logaritms"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
-msgstr "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
+msgstr ""
 
 # gdictsrc/gdict-pref-dialog.c:161
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 msgid "Power"
 msgstr "Ieslēgt"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr "PI"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr "x!"
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr "Faktoriāls"
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr "("
 
 # mini-utils/gcolorsel/menus.c:221
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr "Atvērtās Iekavas"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ")"
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr "Noslēdzošās Iekavas"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr "/"
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr "Dalīt ar"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr "STO"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr "7"
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr "8"
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr "Reizināt ar"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr "RCL"
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr "4"
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr "5"
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr "6"
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr "-"
 
 # gsearchtool/gsearchtool.c:635 gsearchtool/gsearchtool.c:718
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "Subtract"
 msgstr "Atņemt"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr "3"
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr "+"
 
 # gnome-find/gnome-find.c:100 gsearchtool/gsearchtool.c:619
 # mini-utils/gw/gw.c:505
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "Pievienot"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr "EXC"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr "0"
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr "."
 
 # mini-utils/gcolorsel/view-color-generic.c:16
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr "Decimālpunkts"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr "+/-"
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr "Mainīt zīmi"
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr "="
 
 # gcalc/gcalc.c:133
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "Calculate"
 msgstr "Kalkulēt"
 
@@ -441,88 +437,90 @@ msgstr "Simbolu Karte"
 msgid "Insert special characters into documents"
 msgstr "Ievietot īpašas rakstzīmes dokumentos"
 
-#: gcharmap/src/asciiselect.c:116
+#: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
 msgstr "Izvēlēties Rakstzīmi"
 
 # gcharmap/src/interface.c:67
-#: gcharmap/src/asciiselect.c:119
+#: gcharmap/src/asciiselect.c:120
 #, fuzzy
 msgid "_Insert"
 msgstr "Ievietot"
 
 # gcharmap/src/interface.c:103 gcharmap/src/interface.c:361
 #: gcharmap/src/asciiselect.c:123
-msgid "Character code:"
+#, fuzzy
+msgid "Character c_ode:"
 msgstr "Rakstzīmes kods:"
 
 # gcharmap/src/interface.c:103 gcharmap/src/interface.c:361
-#: gcharmap/src/asciiselect.c:135
-msgid "Character:"
+#: gcharmap/src/asciiselect.c:137
+#, fuzzy
+msgid "Ch_aracter:"
 msgstr "Rakstzīme"
 
 # gcharmap/src/interface.c:103 gcharmap/src/interface.c:361
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 #, fuzzy
 msgid "Character Code"
 msgstr "Rakstzīmes kods:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 #, fuzzy
 msgid "Select character code"
 msgstr "Izvēlēties Rakstzīmi"
 
 # gcharmap/src/interface.c:103 gcharmap/src/interface.c:361
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 #, fuzzy
 msgid "Character"
 msgstr "Rakstzīme"
 
 # gcharmap/src/interface.c:103 gcharmap/src/interface.c:361
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 #, fuzzy
 msgid "Character to insert"
 msgstr "Rakstzīmes kods:"
 
 # mini-utils/guname/guname.c:541
-#: gcharmap/src/asciiselect.c:152
+#: gcharmap/src/asciiselect.c:157
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
 # gcharmap/src/interface.c:103 gcharmap/src/interface.c:361
-#: gcharmap/src/callbacks.c:64
+#: gcharmap/src/callbacks.c:63
 #, fuzzy
 msgid "GNOME Character Map"
 msgstr "Simbolu Karte"
 
-#: gcharmap/src/callbacks.c:67
+#: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr ""
 
 # mini-utils/idetool/idetool.c:305 mini-utils/idetool/idetool.c:315
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:113
 msgid "del"
 msgstr "del"
 
 # gcharmap/src/interface.c:307
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
 msgstr "%s: Rakstzīmes kods %d"
 
 # gcharmap/src/interface.c:335
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
 msgstr "Nokopētais teksts..."
 
 # gcharmap/src/interface.c:326
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
 msgstr "Izgrieztais teksts..."
 
 # gcharmap/src/interface.c:344
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:225
 msgid "Text pasted from clipboard..."
 msgstr "Ielīmētais teksts..."
 
@@ -544,29 +542,29 @@ msgstr "Kopēt Tekstu:"
 
 # gcharmap/src/interface.c:71 gcharmap/src/interface.c:196
 # gdictsrc/gdict-app.c:520 gtt/toolbar.c:163
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 #, fuzzy
 msgid "_Copy"
 msgstr "Kopēt"
 
 # gcharmap/src/interface.c:149
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 #, fuzzy
 msgid "Text to copy"
 msgstr "Kopēt Tekstu:"
 
 # gtt/options.c:413
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr "Ieraksts"
 
 # gcharmap/src/interface.c:71 gcharmap/src/interface.c:196
 # gdictsrc/gdict-app.c:520 gtt/toolbar.c:163
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopēt"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 #, fuzzy
 msgid "Copy the text"
 msgstr "Kopēt izvēlēto"
@@ -584,7 +582,7 @@ msgstr "Ievietot rakstzīmi(es) izvēloties rakstzīmju kodus."
 # gcharmap/src/interface.c:103 gcharmap/src/interface.c:361
 #: gcharmap/src/menus.c:63
 #, fuzzy
-msgid "_Characters"
+msgid "Ch_aracters"
 msgstr "Rakstzīme"
 
 # gcharmap/src/interface.c:69 gdictsrc/gdict-app.c:517 gtt/toolbar.c:159
@@ -632,17 +630,17 @@ msgstr "Dienasgrāmatas Ieraksts"
 msgid "Enter the text"
 msgstr "Kopēt izvēlēto"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr ""
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:250
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 #, fuzzy
 msgid "Dictionary Lookup"
 msgstr "Vārdnīca"
 
 # gdictsrc/gdict-app.c:454 gdictsrc/gdict-app.c:511
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Lūkoties pēc vārda tiešsaites vārdnīcā"
@@ -682,8 +680,8 @@ msgstr ""
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
-#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Nevar savienoties ar serveri"
 
@@ -691,6 +689,15 @@ msgstr "Nevar savienoties ar serveri"
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:56
+#, fuzzy
+msgid "GNOME Dictionary"
+msgstr "Vārdnīca"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
 msgstr ""
 
 # gdictsrc/gdict-about.c:40
@@ -817,7 +824,7 @@ msgstr "_Sameklēt"
 
 # gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
 # gdictsrc/gdict-applet.c:153
-#: gdictsrc/gdict-applet.c:243
+#: gdictsrc/gdict-applet.c:263
 msgid "_Lookup"
 msgstr "_Sameklēt"
 
@@ -868,107 +875,107 @@ msgid "Cross-reference:"
 msgstr "Norāde"
 
 # gtt/toolbar.c:190
-#: gdictsrc/gdict-pref-dialog.c:185
+#: gdictsrc/gdict-pref-dialog.c:186
 #, fuzzy
 msgid "Dictionary Preferences"
 msgstr "Rediģēt Uzstādījumus..."
 
 # gdictsrc/gdict-pref-dialog.c:147
-#: gdictsrc/gdict-pref-dialog.c:197
+#: gdictsrc/gdict-pref-dialog.c:198
 #, fuzzy
 msgid "Smart _lookup"
 msgstr "Gudrā meklēšana"
 
 # gdictsrc/gdict-pref-dialog.c:156
-#: gdictsrc/gdict-pref-dialog.c:210
+#: gdictsrc/gdict-pref-dialog.c:211
 #, fuzzy
 msgid "_Server:"
 msgstr "Serveris:"
 
-#: gdictsrc/gdict-pref-dialog.c:217
+#: gdictsrc/gdict-pref-dialog.c:218
 msgid "De_fault"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:223
+#: gdictsrc/gdict-pref-dialog.c:224
 msgid "Reset server to default"
 msgstr ""
 
 # gdictsrc/gdict-pref-dialog.c:161
-#: gdictsrc/gdict-pref-dialog.c:225
+#: gdictsrc/gdict-pref-dialog.c:226
 #, fuzzy
 msgid "_Port:"
 msgstr "Ports:"
 
-#: gdictsrc/gdict-pref-dialog.c:239
+#: gdictsrc/gdict-pref-dialog.c:240
 msgid "Def_ault"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:246
+#: gdictsrc/gdict-pref-dialog.c:247
 msgid "Reset port to default"
 msgstr ""
 
 # gdictsrc/gdict-pref-dialog.c:156
-#: gdictsrc/gdict-pref-dialog.c:247
+#: gdictsrc/gdict-pref-dialog.c:248
 #, fuzzy
 msgid "Server"
 msgstr "Serveris:"
 
 # gdictsrc/gdict-pref-dialog.c:156
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 #, fuzzy
 msgid "Server Entry"
 msgstr "Serveris:"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
 msgstr ""
 
 # gdictsrc/gdict-pref-dialog.c:161
-#: gdictsrc/gdict-pref-dialog.c:251
+#: gdictsrc/gdict-pref-dialog.c:252
 #, fuzzy
 msgid "Port"
 msgstr "Ports:"
 
 # gtt/options.c:413
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 #, fuzzy
 msgid "Port Entry"
 msgstr "Ieraksts"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
 msgstr ""
 
 # gdictsrc/gdict-pref-dialog.c:171
-#: gdictsrc/gdict-pref-dialog.c:257
+#: gdictsrc/gdict-pref-dialog.c:258
 #, fuzzy
 msgid "_Database:"
 msgstr "Datubāze:"
 
 # gdictsrc/gdict-pref-dialog.c:178
-#: gdictsrc/gdict-pref-dialog.c:264
+#: gdictsrc/gdict-pref-dialog.c:265
 #, fuzzy
 msgid "D_efault strategy:"
 msgstr "Noklusētā stratēģija:"
 
-#: gdictsrc/gdict-pref-dialog.c:457
+#: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
 msgstr "Meklēt visās datubāzēs"
 
 # gdictsrc/gdict-pref-dialog.c:171
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 #, fuzzy
 msgid "Database"
 msgstr "Datubāze:"
 
 # gdictsrc/gdict-pref-dialog.c:171
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 #, fuzzy
 msgid "Database Name"
 msgstr "Datubāze:"
 
 # gdictsrc/gdict-pref-dialog.c:178
-#: gdictsrc/gdict-pref-dialog.c:634
+#: gdictsrc/gdict-pref-dialog.c:635
 #, fuzzy
 msgid "Default Strategy"
 msgstr "Noklusētā stratēģija:"
@@ -1010,29 +1017,58 @@ msgid "Search Strategy"
 msgstr "Meklēšanas Stratēģija:"
 
 #: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr ""
-
-# gdictsrc/gdict-pref-dialog.c:178
-#: gdictsrc/gdict.schemas.in.h:2
-#, fuzzy
-msgid "Default strategy"
-msgstr "Noklusētā stratēģija:"
-
-#: gdictsrc/gdict.schemas.in.h:3
 #, fuzzy
 msgid "Dictionary server"
 msgstr "Vārdnīca"
 
 # gdictsrc/dict.c:623 gdictsrc/gdict-pref-dialog.c:498
 # gdictsrc/gdict-pref-dialog.c:542 gdictsrc/gdict-speller.c:393
-#: gdictsrc/gdict.schemas.in.h:4
+#: gdictsrc/gdict.schemas.in.h:2
 #, fuzzy
 msgid "Port used to connect to server"
 msgstr "Nevar savienoties ar serveri"
 
-# gdictsrc/gdict-pref-dialog.c:147
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr ""
+
 #: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr ""
+
+# gdictsrc/gdict-pref-dialog.c:178
+#: gdictsrc/gdict.schemas.in.h:8
+#, fuzzy
+msgid "The search strategy to use"
+msgstr "Meklēšanas Stratēģija:"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+
+# gdictsrc/gdict-pref-dialog.c:147
+#: gdictsrc/gdict.schemas.in.h:10
 #, fuzzy
 msgid "Use smart lookup"
 msgstr "Gudrā meklēšana"
@@ -1272,12 +1308,12 @@ msgstr "Ports:"
 msgid "_Quick format"
 msgstr "Ā_trā formatēšana"
 
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "Nevarēja atvērt iekārtu %s, formatēšana nevar turpināties."
 
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1286,7 +1322,7 @@ msgstr ""
 "Iekārta %s ir atslēgta.\n"
 "Lūdzu pievieno iekārtu, lai turpinātu."
 
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1297,24 +1333,20 @@ msgstr ""
 "iespējama.\n"
 "Sazinies ar sistēmadministrātoru, lai dabūtu rakstīšanas atļaujas."
 
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr "Formatējamā iekārta"
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr "IEKĀRTA"
-
-#: gfloppy/src/main.c:360
+#: gfloppy/src/main.c:291
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
 
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
-msgstr "Formatēt vēl vinu disketi?"
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr "Formatējamā iekārta"
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
+msgstr "IEKĀRTA"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
@@ -1801,91 +1833,100 @@ msgid "Copyright (C) 1998"
 msgstr "Kopēšanas tiesības (C) 1998"
 
 # logview/actions.c:56
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr "Darbību datubāze"
 
-# logview/actions.c:61 logview/monitor.c:115
-#: logview/actions.c:81
+# mini-utils/gcolorsel/glade/dialog-prefs.glade.h:31
+#: logview/actions.c:85
 #, fuzzy
-msgid "Action options"
-msgstr "Monitringa opcijas"
+msgid "Actions"
+msgstr "Darbības..."
 
-# logview/actions.c:113
-#: logview/actions.c:138
-msgid "Add..."
-msgstr "Pievienot.."
+# gnome-find/gnome-find.c:100 gsearchtool/gsearchtool.c:619
+# mini-utils/gw/gw.c:505
+#: logview/actions.c:153
+#, fuzzy
+msgid "_Add"
+msgstr "Pievienot"
 
 # logview/actions.c:120
-#: logview/actions.c:144
-msgid "Edit..."
+#: logview/actions.c:160
+#, fuzzy
+msgid "_Edit"
 msgstr "Rediģēt"
 
 # gnome-find/gnome-find.c:102 gsearchtool/gsearchtool.c:545
 # logview/actions.c:127
-#: logview/actions.c:150
-msgid "Remove"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#, fuzzy
+msgid "_Remove"
 msgstr "Izņemt"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Nevar atvērt darbību datu bāzi <%s>! Atvēršana neizdevās."
 
 # logview/actions.c:282 logview/actions.c:295 logview/actions.c:306
 # logview/actions.c:317 logview/actions.c:328 logview/actions.c:339
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "Kļūda analizējot darbību datubāzi"
 
 # logview/actions.c:371
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr "Nevar ierakstīt darbības datubāzē!"
 
+#: logview/actions.c:486
+msgid "Error while executing specified action"
+msgstr ""
+
 # logview/actions.c:477
-#: logview/actions.c:494
+#: logview/actions.c:507
 msgid "<empty>"
 msgstr "<tukšs>"
 
 # logview/actions.c:478
-#: logview/actions.c:495
+#: logview/actions.c:508
 msgid "log name regexp"
 msgstr "log vārda regexp"
 
 # logview/actions.c:479
-#: logview/actions.c:496
+#: logview/actions.c:509
 msgid "process regexp"
 msgstr "procesa regexp"
 
 # logview/actions.c:480
-#: logview/actions.c:497
+#: logview/actions.c:510
 msgid "message regexp"
 msgstr "ziņas regexp"
 
 # logview/actions.c:481
-#: logview/actions.c:498
+#: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
 msgstr "darbības, kuras izpildīt, kad regexpi ir TRUE (piepildās)"
 
 # logview/actions.c:482
-#: logview/actions.c:499
+#: logview/actions.c:512
 msgid "description"
 msgstr "apraksts"
 
-# logview/actions.c:639
-#: logview/actions.c:744
-msgid "description:"
-msgstr "apraksts:"
+# logview/zoom.c:183
+#: logview/actions.c:772
+#, fuzzy
+msgid "_Description:"
+msgstr "Apraksts:"
 
 # logview/actions.c:648
-#: logview/actions.c:753
+#: logview/actions.c:781
 msgid "Description of this entry."
 msgstr "Šī ieraksta apraksts."
 
 # logview/actions.c:710
-#: logview/actions.c:800
+#: logview/actions.c:805
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2499,13 +2540,6 @@ msgstr "Izveidot arhīvu..."
 msgid "Create a new archive from the items"
 msgstr "Izveidot jaunu arhīvu no priekšmetiem"
 
-# gnome-find/gnome-find.c:102 gsearchtool/gsearchtool.c:545
-# logview/actions.c:127
-#: meat-grinder/meat-grinder.c:941
-#, fuzzy
-msgid "_Remove"
-msgstr "Izņemt"
-
 # mini-utils/gcolorsel/menus.c:111
 #: meat-grinder/meat-grinder.c:942
 #, fuzzy
@@ -2556,6 +2590,38 @@ msgid ""
 msgstr ""
 "Nevar atrast arhīva (tar) programmu!\n"
 "Šo programmu lieto arhīvu izveidē."
+
+#~ msgid "x^2"
+#~ msgstr "x^2"
+
+#~ msgid "x^y"
+#~ msgstr "x^y"
+
+# gdictsrc/gdict-pref-dialog.c:178
+#, fuzzy
+#~ msgid "Default strategy"
+#~ msgstr "Noklusētā stratēģija:"
+
+#~ msgid "Format another floppy?"
+#~ msgstr "Formatēt vēl vinu disketi?"
+
+# logview/actions.c:61 logview/monitor.c:115
+#, fuzzy
+#~ msgid "Action options"
+#~ msgstr "Monitringa opcijas"
+
+# logview/actions.c:113
+#~ msgid "Add..."
+#~ msgstr "Pievienot.."
+
+# gnome-find/gnome-find.c:102 gsearchtool/gsearchtool.c:545
+# logview/actions.c:127
+#~ msgid "Remove"
+#~ msgstr "Izņemt"
+
+# logview/actions.c:639
+#~ msgid "description:"
+#~ msgstr "apraksts:"
 
 #, fuzzy
 #~ msgid "Dictionary Applet"

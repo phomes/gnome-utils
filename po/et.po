@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.0\n"
-"POT-Creation-Date: 2002-07-07 00:09+0300\n"
+"POT-Creation-Date: 2002-07-25 13:43+0100\n"
 "PO-Revision-Date: 2002-07-07 00:19+0300\n"
 "Last-Translator: Tõivo Leedjärv <toivo@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
@@ -71,8 +71,9 @@ msgid ""
 msgstr ""
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gsearchtool/gsearchtool.c:2002
-#: logview/about.c:52 meat-grinder/meat-grinder.c:475
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
+#: gsearchtool/gsearchtool.c:2002 logview/about.c:52
+#: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
 msgstr ""
 "Tõlge eesti keelde:\n"
@@ -289,7 +290,7 @@ msgstr "8"
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
@@ -417,69 +418,71 @@ msgstr "Märgitabel"
 msgid "Insert special characters into documents"
 msgstr "Lisa dokumentidesse spetsiaalmärke"
 
-#: gcharmap/src/asciiselect.c:116
+#: gcharmap/src/asciiselect.c:117
 msgid "Select Character"
 msgstr "Vali märk"
 
-#: gcharmap/src/asciiselect.c:119
+#: gcharmap/src/asciiselect.c:120
 msgid "_Insert"
 msgstr "_Lisa"
 
 #: gcharmap/src/asciiselect.c:123
-msgid "Character code:"
+#, fuzzy
+msgid "Character c_ode:"
 msgstr "Märgi kood:"
 
-#: gcharmap/src/asciiselect.c:135
-msgid "Character:"
+#: gcharmap/src/asciiselect.c:137
+#, fuzzy
+msgid "Ch_aracter:"
 msgstr "Märk:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Character Code"
 msgstr "Märgi kood"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 msgid "Select character code"
 msgstr "Vali märgi kood"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character"
 msgstr "Märk"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 msgid "Character to insert"
 msgstr "Lisatav märk"
 
-#: gcharmap/src/asciiselect.c:152
+#: gcharmap/src/asciiselect.c:157
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 
-#: gcharmap/src/callbacks.c:64
+#: gcharmap/src/callbacks.c:63
 msgid "GNOME Character Map"
 msgstr "GNOME märgitabel"
 
-#: gcharmap/src/callbacks.c:67
+#: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr "Vali, kopeeri ja aseta kirjatüübi märke teistesse rakendustesse"
 
-#: gcharmap/src/callbacks.c:114
+#: gcharmap/src/callbacks.c:113
 msgid "del"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:120
+#: gcharmap/src/callbacks.c:119
 #, c-format
 msgid " %s: Character code %d"
 msgstr " %s: Märgi kood %d"
 
-#: gcharmap/src/callbacks.c:156
+#: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
 msgstr "Tekst kopeeritud lõikelauale..."
 
-#: gcharmap/src/callbacks.c:173
+#: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
 msgstr "Tekst lõigatud lõikelauale..."
 
-#: gcharmap/src/callbacks.c:226
+#: gcharmap/src/callbacks.c:225
 msgid "Text pasted from clipboard..."
 msgstr "Tekst lõikelaualt asetatud..."
 
@@ -524,7 +527,8 @@ msgid "Insert character(s) by choosing character codes."
 msgstr "Lisa märke valides märgi koodi järgi."
 
 #: gcharmap/src/menus.c:63
-msgid "_Characters"
+#, fuzzy
+msgid "Ch_aracters"
 msgstr "_Märgid"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
@@ -565,6 +569,612 @@ msgstr "GDialog sisestusväli"
 #: gdialog/inputbox.c:90
 msgid "Enter the text"
 msgstr "Sisesta tekst"
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "Tarvikud"
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
+msgid "Dictionary Lookup"
+msgstr "Otsing sõnaraamatust"
+
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
+#: gdictsrc/gnome-dictionary.desktop.in.h:2
+msgid "Lookup words in an online dictionary"
+msgstr "Otsi sõnu onlain-sõnaraamatust"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:1
+msgid "Look Up Selected Text..."
+msgstr "Otsi valitud teksti..."
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:2
+msgid "_About..."
+msgstr "_Info..."
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:3
+msgid "_Help"
+msgstr "_Abi"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:4
+msgid "_Preferences"
+msgstr "_Häälestus"
+
+#: gdictsrc/GNOME_GDictApplet.xml.h:5
+msgid "_Show/Hide Definition Window..."
+msgstr "_Näita/peida definitsiooni aken..."
+
+#. Could not look up search strategies, so just display a
+#. * label; FIXME: Memory leak
+#.
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
+msgid "Cannot connect to server"
+msgstr "Ei saa serveriga ühendust"
+
+#: gdictsrc/dict.c:661
+msgid ""
+"A serious error occured. Please check that your server and port are correct. "
+"For reference the default server is dict.org and the port 2628"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:56
+#, fuzzy
+msgid "GNOME Dictionary"
+msgstr "Sõnaraamat"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:58
+msgid ""
+"Client for MIT dictionary server.\n"
+"Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
+msgstr ""
+"MIT-i sõnaraamtu serveri klient.\n"
+"Veeb: http://gdict.dhs.org/, http://www.psilord.com/code/"
+
+#: gdictsrc/gdict-app.c:128
+msgid "Spell-checking..."
+msgstr "Õigekirja kontrollimine..."
+
+#: gdictsrc/gdict-app.c:136
+msgid "Spell check done"
+msgstr "Õigekirja kontroll valmis"
+
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:274
+msgid "No matches found"
+msgstr "Ei leia ühtegi vastavust"
+
+#: gdictsrc/gdict-app.c:257
+msgid "Looking up word..."
+msgstr "Sõna otsimine..."
+
+#: gdictsrc/gdict-app.c:265
+msgid "Lookup done"
+msgstr "Otsing valmis"
+
+#: gdictsrc/gdict-app.c:287
+msgid "String not found"
+msgstr "Ei leia stringi"
+
+#: gdictsrc/gdict-app.c:455
+msgid "Find"
+msgstr "Otsi"
+
+#: gdictsrc/gdict-app.c:476 gsearchtool/gsearchtool.c:1507
+#: gsearchtool/gsearchtool.c:1840
+msgid "_Find"
+msgstr "_Otsi"
+
+#: gdictsrc/gdict-app.c:526
+msgid ""
+"Unable to perform requested operation. \n"
+"Either the server you are using is not available \n"
+"or you are not connected to the Internet."
+msgstr ""
+"Ei saa valitud tegevust täita. \n"
+"Sinu kasutatav server ei ole kättesaadav \n"
+"või ei ole su arvuti Internetti ühendatud."
+
+#: gdictsrc/gdict-app.c:687 gdictsrc/gdict-app.c:798
+#: gdictsrc/gdict-speller.c:221
+msgid "_Look Up Word"
+msgstr "Otsi _sõna"
+
+#: gdictsrc/gdict-app.c:688
+msgid "Lookup word in dictionary"
+msgstr "Otsi sõna sõnaraamatust"
+
+#: gdictsrc/gdict-app.c:690 gdictsrc/gdict-speller.c:165
+msgid "Check _Spelling"
+msgstr "Kontrolli _õigekirja"
+
+#: gdictsrc/gdict-app.c:691
+msgid "Check word spelling"
+msgstr "Kontrolli sõna õigekirja"
+
+#: gdictsrc/gdict-app.c:735
+msgid "_Dictionary"
+msgstr "_Sõnaraamat"
+
+#: gdictsrc/gdict-app.c:771 gdictsrc/gnome-dictionary.desktop.in.h:1
+msgid "Dictionary"
+msgstr "Sõnaraamat"
+
+#: gdictsrc/gdict-app.c:794
+msgid "_Word: "
+msgstr "_Sõna: "
+
+#: gdictsrc/gdict-app.c:821 gdictsrc/gdict-speller.c:147
+msgid "Word"
+msgstr "Sõna"
+
+#: gdictsrc/gdict-app.c:822 gdictsrc/gdict-app.c:823
+#: gdictsrc/gdict-speller.c:148
+msgid "Word Entry"
+msgstr "Sõna sisestusväli"
+
+#: gdictsrc/gdict-app.c:822
+msgid "Enter a Word or select one from the list below"
+msgstr "Sisesta sõna või vali üks järgnevast nimekirjast"
+
+#: gdictsrc/gdict-app.c:825
+msgid "Look Up for a Word"
+msgstr "Otsi sõna"
+
+#: gdictsrc/gdict-applet.c:263
+msgid "_Lookup"
+msgstr "_Otsing"
+
+#: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
+#, c-format
+msgid "Error invoking query: %s"
+msgstr "Viga päringu täitmisel: %s"
+
+#: gdictsrc/gdict-pref-dialog.c:37
+msgid "Headword:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:38
+msgid "Sub-number:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:39
+msgid "Pronunciation:"
+msgstr "Hääldus:"
+
+#: gdictsrc/gdict-pref-dialog.c:40
+msgid "Etymology:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:41
+msgid "Part of speech:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:42
+msgid "Example:"
+msgstr "Näide:"
+
+#: gdictsrc/gdict-pref-dialog.c:43
+msgid "Main body:"
+msgstr ""
+
+#: gdictsrc/gdict-pref-dialog.c:44
+msgid "Cross-reference:"
+msgstr "Ristviide:"
+
+#: gdictsrc/gdict-pref-dialog.c:186
+msgid "Dictionary Preferences"
+msgstr "Sõnaraamatu häälestus"
+
+#: gdictsrc/gdict-pref-dialog.c:198
+msgid "Smart _lookup"
+msgstr "Tark _otsing"
+
+#: gdictsrc/gdict-pref-dialog.c:211
+msgid "_Server:"
+msgstr "_Server:"
+
+#: gdictsrc/gdict-pref-dialog.c:218
+msgid "De_fault"
+msgstr "_Vaikimisi"
+
+#: gdictsrc/gdict-pref-dialog.c:224
+msgid "Reset server to default"
+msgstr "Taasta vaikeserver"
+
+#: gdictsrc/gdict-pref-dialog.c:226
+msgid "_Port:"
+msgstr "_Port:"
+
+#: gdictsrc/gdict-pref-dialog.c:240
+msgid "Def_ault"
+msgstr "_Vaikimisi"
+
+#: gdictsrc/gdict-pref-dialog.c:247
+msgid "Reset port to default"
+msgstr "Taasta vaikeport"
+
+#: gdictsrc/gdict-pref-dialog.c:248
+msgid "Server"
+msgstr "Server"
+
+#: gdictsrc/gdict-pref-dialog.c:249
+msgid "Server Entry"
+msgstr "Serveri sisestusväli"
+
+#: gdictsrc/gdict-pref-dialog.c:249
+msgid "Enter the Server Name"
+msgstr "Sisesta serveri nimi"
+
+#: gdictsrc/gdict-pref-dialog.c:252
+msgid "Port"
+msgstr "Port"
+
+#: gdictsrc/gdict-pref-dialog.c:253
+msgid "Port Entry"
+msgstr "Pordi sisestusväli"
+
+#: gdictsrc/gdict-pref-dialog.c:253
+msgid "Enter the Port Number"
+msgstr "Sisesta pordi number"
+
+#: gdictsrc/gdict-pref-dialog.c:258
+msgid "_Database:"
+msgstr "_Andmebaas:"
+
+#: gdictsrc/gdict-pref-dialog.c:265
+msgid "D_efault strategy:"
+msgstr "V_aikestrateegia:"
+
+#: gdictsrc/gdict-pref-dialog.c:458
+msgid "Search all databases"
+msgstr "Otsi kõikidest andmebaasidest"
+
+#: gdictsrc/gdict-pref-dialog.c:623
+msgid "Database"
+msgstr "Andmebaas"
+
+#: gdictsrc/gdict-pref-dialog.c:623
+msgid "Database Name"
+msgstr "Andmebaasi nimi"
+
+#: gdictsrc/gdict-pref-dialog.c:635
+msgid "Default Strategy"
+msgstr "Vaikestrateegia"
+
+#: gdictsrc/gdict-speller.c:135
+msgid "_Word:"
+msgstr "_Sõna:"
+
+#: gdictsrc/gdict-speller.c:148
+msgid "Enter a word to know the spelling"
+msgstr "Õigekirja kontrollimiseks sisesta sõna"
+
+#: gdictsrc/gdict-speller.c:153
+msgid "Click to do the spell check"
+msgstr "Klõpsa õigekirja kontrollimiseks"
+
+#: gdictsrc/gdict-speller.c:158
+msgid "Search S_trategy:"
+msgstr "Otsingus_trateegia:"
+
+#: gdictsrc/gdict-speller.c:174
+msgid "Search _Results"
+msgstr "Otsingu _tulemused"
+
+#: gdictsrc/gdict-speller.c:236
+msgid "Check Spelling"
+msgstr "Kontrolli õigekirja"
+
+#: gdictsrc/gdict-speller.c:654
+msgid "Search Strategy"
+msgstr "Otsingustrateegia"
+
+#: gdictsrc/gdict.schemas.in.h:1
+msgid "Dictionary server"
+msgstr "Sõnaraamatu server"
+
+#: gdictsrc/gdict.schemas.in.h:2
+msgid "Port used to connect to server"
+msgstr "Serveriga ühenduse loomiseks kasutatav port"
+
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:8
+#, fuzzy
+msgid "The search strategy to use"
+msgstr "Otsingustrateegia"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:10
+msgid "Use smart lookup"
+msgstr "Kasuta tarka otsingut"
+
+#: gfloppy/gfloppy.desktop.in.h:1
+msgid "Floppy Formatter"
+msgstr ""
+
+#: gfloppy/gfloppy.desktop.in.h:2
+msgid "Format Floppy Disks"
+msgstr ""
+
+#: gfloppy/src/badblocks.c:102
+msgid "MInternal Error: Unable to seek to the correct location."
+msgstr ""
+
+#: gfloppy/src/badblocks.c:111
+#, c-format
+msgid "MInternal Error: Weird value (%ld) in do_test\n"
+msgstr ""
+
+#: gfloppy/src/badblocks.c:166
+#, c-format
+msgid "EBad block at block %lu"
+msgstr ""
+
+#. while (!i)
+#. ;
+#: gfloppy/src/badblocks.c:260
+msgid "MChecking for bad blocks..."
+msgstr ""
+
+#: gfloppy/src/badblocks.c:272
+#, c-format
+msgid "MFailed to open device %s for badblock checking\n"
+msgstr ""
+
+#: gfloppy/src/badblocks.c:291 gfloppy/src/gfloppy.c:213
+msgid "MChecking for bad blocks... Done"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:44
+msgid "MFormatting the disk..."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:46
+msgid "EI don't know what this is, but it's very wrong."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
+#, c-format
+msgid "EError formatting track #%d"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:74
+msgid "EError during completion of formatting"
+msgstr ""
+
+#. XXXX - need to tell parent we're finished
+#: gfloppy/src/fdformat.c:78
+msgid "MFormatting the disk... Done"
+msgstr ""
+
+#. XXXX - tell parent we're starting verify stage
+#: gfloppy/src/fdformat.c:94
+msgid "MVerifying the format..."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
+msgid ""
+"EUnable to write to the floppy.\n"
+"\n"
+"Please confirm that it is not write-protected."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
+#, c-format
+msgid "EInsufficient permissions to open floppy device %s."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
+msgid ""
+"EUnable to access the floppy disk.\n"
+"\n"
+"Please confirm that it is in the drive\n"
+"with the drive door shut."
+msgstr ""
+
+#: gfloppy/src/fdformat.c:109
+#, c-format
+msgid ""
+"EGeneric error accessing floppy device %s.\n"
+"\n"
+"Error code %s:%d"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:129
+#, c-format
+msgid ""
+"ERead Error:\n"
+"Problem reading cylinder %d, expected %d, read %d"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:132
+#, c-format
+msgid "EProblem reading cylinder %d, expected %d, read %d"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:141
+#, c-format
+msgid "MBad data in cyl %d.  Continuing... "
+msgstr ""
+
+#: gfloppy/src/fdformat.c:148
+#, fuzzy, c-format
+msgid "EError closing device %s"
+msgstr "Viga päringu täitmisel: %s"
+
+#: gfloppy/src/fdformat.c:153
+msgid "MVerifying the format... Done"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:165
+#, fuzzy, c-format
+msgid "EUnable to write to device %s"
+msgstr "Ei suuda draivi kasutada."
+
+#: gfloppy/src/fdformat.c:184
+#, c-format
+msgid ""
+"EGeneric error accessing floppy device %s.\n"
+"\n"
+"Error code %s"
+msgstr ""
+
+#: gfloppy/src/fdformat.c:194
+msgid "ECould not determine current format type"
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:164 gfloppy/src/gfloppy.c:197
+msgid "MMaking filesystem on disk..."
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:167
+#, fuzzy
+msgid "EUnable to create filesystem correctly."
+msgstr "Ei suuda draivi kasutada."
+
+#: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
+msgid "MMaking filesystem on disk... Done"
+msgstr ""
+
+#: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
+#, fuzzy
+msgid "EUnable to create filesystem."
+msgstr "Ei suuda draivi kasutada."
+
+#: gfloppy/src/gfloppy.c:209
+msgid "MChecking for bad blocks... (this might take a while)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:2
+msgid "DOS (fat)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:3
+msgid "Double Density 3.5\" (720KB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:4
+msgid "Double Density 5.25\" (360KB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:5
+msgid "File system _type:"
+msgstr "Failisüsteemi _tüüp:"
+
+#: gfloppy/src/gfloppy2.glade.h:6
+#, fuzzy
+msgid "Floppy _density:"
+msgstr "    Seade: "
+
+#: gfloppy/src/gfloppy2.glade.h:7
+#, fuzzy
+msgid "Floppy de_vice:"
+msgstr "    Seade: "
+
+#: gfloppy/src/gfloppy2.glade.h:8
+msgid "Format a Floppy"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:9
+msgid "High Density 3.5\" (1.44MB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:10
+msgid "High Density 5.25\" (1.2MB)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:11
+msgid "Linux Native (ext2)"
+msgstr ""
+
+#: gfloppy/src/gfloppy2.glade.h:12
+msgid "_Format"
+msgstr "_Vorminda"
+
+#: gfloppy/src/gfloppy2.glade.h:13
+msgid "_Quick format"
+msgstr "_Kiire vorming"
+
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
+#, c-format
+msgid "Unable to open the device %s, formatting cannot continue."
+msgstr ""
+
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
+#, c-format
+msgid ""
+"The device %s is disconnected.\n"
+"Please attach device to continue."
+msgstr ""
+
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
+#, c-format
+msgid ""
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
+"Contact your system administrator about getting write permissions."
+msgstr ""
+
+#: gfloppy/src/main.c:291
+#, c-format
+msgid ""
+"Could not display help for the floppy formatter.\n"
+"%s"
+msgstr ""
+
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr ""
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
+msgstr "DEVICE"
+
+#: gfloppy/src/progress.c:115
+msgid "Floppy formatted successfully."
+msgstr ""
+
+#: gfloppy/src/progress.c:120
+msgid "Floppy formatting cancelled."
+msgstr ""
+
+#: gfloppy/src/progress.c:161
+msgid "Format progress."
+msgstr ""
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Search for Files"
@@ -800,10 +1410,6 @@ msgstr "Otsingu reeglite menüü"
 msgid "Select a search rule from the menu"
 msgstr "Vali otsingureegel menüüst"
 
-#: gsearchtool/gsearchtool.c:1507 gsearchtool/gsearchtool.c:1840
-msgid "_Find"
-msgstr "_Otsi"
-
 #: gsearchtool/gsearchtool.c:1522
 msgid "Click to Add a Rule"
 msgstr "Klõpsa reegli lisamiseks"
@@ -977,39 +1583,43 @@ msgstr ""
 msgid "Can't write to actions database!"
 msgstr ""
 
-#: logview/actions.c:493
+#: logview/actions.c:486
+msgid "Error while executing specified action"
+msgstr ""
+
+#: logview/actions.c:507
 msgid "<empty>"
 msgstr "<tühi>"
 
-#: logview/actions.c:494
+#: logview/actions.c:508
 msgid "log name regexp"
 msgstr "logi nime regulaaravaldis"
 
-#: logview/actions.c:495
+#: logview/actions.c:509
 msgid "process regexp"
 msgstr "protsessi regulaaravaldis"
 
-#: logview/actions.c:496
+#: logview/actions.c:510
 msgid "message regexp"
 msgstr "sõnumi regulaaravaldis"
 
-#: logview/actions.c:497
+#: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
 msgstr "tegevus, mis käivitada kui regulaaravaldused on tõesed"
 
-#: logview/actions.c:498
+#: logview/actions.c:512
 msgid "description"
 msgstr "kirjeldus"
 
-#: logview/actions.c:758
+#: logview/actions.c:772
 msgid "_Description:"
 msgstr "_Kirjeldus:"
 
-#: logview/actions.c:767
+#: logview/actions.c:781
 msgid "Description of this entry."
 msgstr ""
 
-#: logview/actions.c:791
+#: logview/actions.c:805
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1600,241 +2210,11 @@ msgstr ""
 #~ msgid "Message"
 #~ msgstr "Sõnum"
 
-#~ msgid "Accessories"
-#~ msgstr "Tarvikud"
-
-#~ msgid "Dictionary Lookup"
-#~ msgstr "Otsing sõnaraamatust"
-
-#~ msgid "Lookup words in an online dictionary"
-#~ msgstr "Otsi sõnu onlain-sõnaraamatust"
-
-#~ msgid "Look Up Selected Text..."
-#~ msgstr "Otsi valitud teksti..."
-
-#~ msgid "_About..."
-#~ msgstr "_Info..."
-
-#~ msgid "_Help"
-#~ msgstr "_Abi"
-
-#~ msgid "_Preferences"
-#~ msgstr "_Häälestus"
-
-#~ msgid "_Show/Hide Definition Window..."
-#~ msgstr "_Näita/peida definitsiooni aken..."
-
-#~ msgid "Cannot connect to server"
-#~ msgstr "Ei saa serveriga ühendust"
-
-#~ msgid ""
-#~ "Client for MIT dictionary server.\n"
-#~ "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
-#~ msgstr ""
-#~ "MIT-i sõnaraamtu serveri klient.\n"
-#~ "Veeb: http://gdict.dhs.org/, http://www.psilord.com/code/"
-
-#~ msgid "Spell-checking..."
-#~ msgstr "Õigekirja kontrollimine..."
-
-#~ msgid "Spell check done"
-#~ msgstr "Õigekirja kontroll valmis"
-
-#~ msgid "No matches found"
-#~ msgstr "Ei leia ühtegi vastavust"
-
-#~ msgid "Looking up word..."
-#~ msgstr "Sõna otsimine..."
-
-#~ msgid "Lookup done"
-#~ msgstr "Otsing valmis"
-
-#~ msgid "String not found"
-#~ msgstr "Ei leia stringi"
-
-#~ msgid "Find"
-#~ msgstr "Otsi"
-
-#~ msgid ""
-#~ "Unable to perform requested operation. \n"
-#~ "Either the server you are using is not available \n"
-#~ "or you are not connected to the Internet."
-#~ msgstr ""
-#~ "Ei saa valitud tegevust täita. \n"
-#~ "Sinu kasutatav server ei ole kättesaadav \n"
-#~ "või ei ole su arvuti Internetti ühendatud."
-
-#~ msgid "_Look Up Word"
-#~ msgstr "Otsi _sõna"
-
-#~ msgid "Lookup word in dictionary"
-#~ msgstr "Otsi sõna sõnaraamatust"
-
-#~ msgid "Check _Spelling"
-#~ msgstr "Kontrolli _õigekirja"
-
-#~ msgid "Check word spelling"
-#~ msgstr "Kontrolli sõna õigekirja"
-
-#~ msgid "_Dictionary"
-#~ msgstr "_Sõnaraamat"
-
-#~ msgid "Dictionary"
-#~ msgstr "Sõnaraamat"
-
-#~ msgid "_Word: "
-#~ msgstr "_Sõna: "
-
-#~ msgid "Word"
-#~ msgstr "Sõna"
-
-#~ msgid "Word Entry"
-#~ msgstr "Sõna sisestusväli"
-
-#~ msgid "Enter a Word or select one from the list below"
-#~ msgstr "Sisesta sõna või vali üks järgnevast nimekirjast"
-
-#~ msgid "Look Up for a Word"
-#~ msgstr "Otsi sõna"
-
-#~ msgid "_Lookup"
-#~ msgstr "_Otsing"
-
-#~ msgid "Error invoking query: %s"
-#~ msgstr "Viga päringu täitmisel: %s"
-
-#~ msgid "Pronunciation:"
-#~ msgstr "Hääldus:"
-
-#~ msgid "Example:"
-#~ msgstr "Näide:"
-
-#~ msgid "Cross-reference:"
-#~ msgstr "Ristviide:"
-
-#~ msgid "Dictionary Preferences"
-#~ msgstr "Sõnaraamatu häälestus"
-
-#~ msgid "Smart _lookup"
-#~ msgstr "Tark _otsing"
-
-#~ msgid "_Server:"
-#~ msgstr "_Server:"
-
-#~ msgid "De_fault"
-#~ msgstr "_Vaikimisi"
-
-#~ msgid "Reset server to default"
-#~ msgstr "Taasta vaikeserver"
-
-#~ msgid "_Port:"
-#~ msgstr "_Port:"
-
-#~ msgid "Def_ault"
-#~ msgstr "_Vaikimisi"
-
-#~ msgid "Reset port to default"
-#~ msgstr "Taasta vaikeport"
-
-#~ msgid "Server"
-#~ msgstr "Server"
-
-#~ msgid "Server Entry"
-#~ msgstr "Serveri sisestusväli"
-
-#~ msgid "Enter the Server Name"
-#~ msgstr "Sisesta serveri nimi"
-
-#~ msgid "Port"
-#~ msgstr "Port"
-
-#~ msgid "Port Entry"
-#~ msgstr "Pordi sisestusväli"
-
-#~ msgid "Enter the Port Number"
-#~ msgstr "Sisesta pordi number"
-
-#~ msgid "_Database:"
-#~ msgstr "_Andmebaas:"
-
-#~ msgid "D_efault strategy:"
-#~ msgstr "V_aikestrateegia:"
-
-#~ msgid "Search all databases"
-#~ msgstr "Otsi kõikidest andmebaasidest"
-
-#~ msgid "Database"
-#~ msgstr "Andmebaas"
-
-#~ msgid "Database Name"
-#~ msgstr "Andmebaasi nimi"
-
-#~ msgid "Default Strategy"
-#~ msgstr "Vaikestrateegia"
-
-#~ msgid "_Word:"
-#~ msgstr "_Sõna:"
-
-#~ msgid "Enter a word to know the spelling"
-#~ msgstr "Õigekirja kontrollimiseks sisesta sõna"
-
-#~ msgid "Click to do the spell check"
-#~ msgstr "Klõpsa õigekirja kontrollimiseks"
-
-#~ msgid "Search S_trategy:"
-#~ msgstr "Otsingus_trateegia:"
-
-#~ msgid "Search _Results"
-#~ msgstr "Otsingu _tulemused"
-
-#~ msgid "Check Spelling"
-#~ msgstr "Kontrolli õigekirja"
-
-#~ msgid "Search Strategy"
-#~ msgstr "Otsingustrateegia"
-
 #~ msgid "Default database. ! indicates all databases"
 #~ msgstr "Vaikeandmebaas. ! tähistab kõiki andmebaase"
 
 #~ msgid "Default strategy"
 #~ msgstr "Vaikestrateegia"
-
-#~ msgid "Dictionary server"
-#~ msgstr "Sõnaraamatu server"
-
-#~ msgid "Port used to connect to server"
-#~ msgstr "Serveriga ühenduse loomiseks kasutatav port"
-
-#~ msgid "Use smart lookup"
-#~ msgstr "Kasuta tarka otsingut"
-
-#, fuzzy
-#~ msgid "EUnable to create filesystem correctly."
-#~ msgstr "Ei suuda draivi kasutada."
-
-#, fuzzy
-#~ msgid "EUnable to create filesystem."
-#~ msgstr "Ei suuda draivi kasutada."
-
-#~ msgid "File system _type:"
-#~ msgstr "Failisüsteemi _tüüp:"
-
-#, fuzzy
-#~ msgid "Floppy _density:"
-#~ msgstr "    Seade: "
-
-#, fuzzy
-#~ msgid "Floppy de_vice:"
-#~ msgstr "    Seade: "
-
-#~ msgid "_Format"
-#~ msgstr "_Vorminda"
-
-#~ msgid "_Quick format"
-#~ msgstr "_Kiire vorming"
-
-#~ msgid "DEVICE"
-#~ msgstr "DEVICE"
 
 #, fuzzy
 #~ msgid "Dictionary Applet"

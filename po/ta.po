@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tamil-gnome-utils 1.4.1\n"
-"POT-Creation-Date: 2002-06-17 09:34+0100\n"
+"POT-Creation-Date: 2002-07-25 13:43+0100\n"
 "PO-Revision-Date: 2001-06-14 20:38-0500\n"
 "Last-Translator: Dinesh Nadarajah <n_dinesh@yahoo.com>\n"
 "Language-Team: Tamil\n"
@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 #. Translator credits
-#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:47 gdictsrc/gdict-about.c:43
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
 #: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
@@ -115,291 +115,287 @@ msgstr ""
 msgid "Inverse"
 msgstr "¦À¡Ð"
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>2</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1255
-msgid "x^2"
+#: gcalc/gnome-calc.c:1253
+msgid "x<sup>2</sup>"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1255
+#: gcalc/gnome-calc.c:1253
 #, fuzzy
 msgid "Square"
 msgstr "§ºÁ¢"
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "SQRT"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1256
+#: gcalc/gnome-calc.c:1254
 msgid "Square root"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 msgid "CE/C"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1257
+#: gcalc/gnome-calc.c:1255
 #, fuzzy
 msgid "Clear"
 msgstr "Àïº¡í¸õ"
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "AC"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1258
+#: gcalc/gnome-calc.c:1256
 msgid "Reset"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "INV"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1260
+#: gcalc/gnome-calc.c:1258
 msgid "Inverse trigonometry/log function"
 msgstr ""
 
 #. inverse button
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 msgid "sin"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1261
+#: gcalc/gnome-calc.c:1259
 #, fuzzy
 msgid "Sine"
 msgstr "«Ç×"
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 msgid "cos"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1262
+#: gcalc/gnome-calc.c:1260
 #, fuzzy
 msgid "Cosine"
 msgstr "ãÎ"
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "tan"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1263
+#: gcalc/gnome-calc.c:1261
 msgid "Tangent"
 msgstr ""
 
 #. Ugly hack so that window won't resize when selecting GRAD - there should be a better fix that this
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid " DEG  "
 msgstr ""
 
-#: gcalc/gnome-calc.c:1265
+#: gcalc/gnome-calc.c:1263
 msgid "Switch degrees / radians / grad"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "e"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1267
+#: gcalc/gnome-calc.c:1265
 msgid "Base of Natural Logarithm"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "EE"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1268
+#: gcalc/gnome-calc.c:1266
 msgid "Add digit"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "log"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1269
+#: gcalc/gnome-calc.c:1267
 msgid "Base 10 Logarithm"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "ln"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1270
+#: gcalc/gnome-calc.c:1268
 msgid "Natural Logarithm"
 msgstr ""
 
-#. FIXME: XXXX when we can break strings again change
-#. * this to x<sup>y</sup> and turn on markup (search for XXXX)
-#: gcalc/gnome-calc.c:1273
-msgid "x^y"
+#: gcalc/gnome-calc.c:1269
+msgid "x<sup>y</sup>"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1273
+#: gcalc/gnome-calc.c:1269
 #, fuzzy
 msgid "Power"
 msgstr "?¨È:"
 
-#: gcalc/gnome-calc.c:1275
+#: gcalc/gnome-calc.c:1271
 msgid "PI"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "x!"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1276
+#: gcalc/gnome-calc.c:1272
 msgid "Factorial"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "("
 msgstr ""
 
-#: gcalc/gnome-calc.c:1277
+#: gcalc/gnome-calc.c:1273
 msgid "Opening Parenthesis"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid ")"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1278
+#: gcalc/gnome-calc.c:1274
 msgid "Closing Parenthesis"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "/"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1279
+#: gcalc/gnome-calc.c:1275
 msgid "Divide by"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid "STO"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1281
+#: gcalc/gnome-calc.c:1277
 msgid ""
 "Store the value in the\n"
 "display field in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1282
+#: gcalc/gnome-calc.c:1278
 msgid "7"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1283
+#: gcalc/gnome-calc.c:1279
 msgid "8"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1284
+#: gcalc/gnome-calc.c:1280
 msgid "9"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1285 gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1285
+#: gcalc/gnome-calc.c:1281
 msgid "Multiply by"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid "RCL"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1287
+#: gcalc/gnome-calc.c:1283
 msgid ""
 "Display the value in memory\n"
 "in the display field"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1288
+#: gcalc/gnome-calc.c:1284
 msgid "4"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1289
+#: gcalc/gnome-calc.c:1285
 msgid "5"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1290
+#: gcalc/gnome-calc.c:1286
 msgid "6"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 msgid "-"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1291
+#: gcalc/gnome-calc.c:1287
 #, fuzzy
 msgid "Subtract"
 msgstr "¦¾¡¼íÌ"
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid "SUM"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1293
+#: gcalc/gnome-calc.c:1289
 msgid ""
 "Add the value in the display\n"
 "field to the value in memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1294
+#: gcalc/gnome-calc.c:1290
 msgid "1"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1295
+#: gcalc/gnome-calc.c:1291
 msgid "2"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1296
+#: gcalc/gnome-calc.c:1292
 msgid "3"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "+"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1297
+#: gcalc/gnome-calc.c:1293
 msgid "Add"
 msgstr "§º÷"
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid "EXC"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1299
+#: gcalc/gnome-calc.c:1295
 msgid ""
 "Exchange the values in the\n"
 "display field and memory"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1300
+#: gcalc/gnome-calc.c:1296
 msgid "0"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "."
 msgstr ""
 
-#: gcalc/gnome-calc.c:1301
+#: gcalc/gnome-calc.c:1297
 msgid "Decimal Point"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "+/-"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1302
+#: gcalc/gnome-calc.c:1298
 msgid "Change sign"
 msgstr ""
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 msgid "="
 msgstr ""
 
-#: gcalc/gnome-calc.c:1303
+#: gcalc/gnome-calc.c:1299
 #, fuzzy
 msgid "Calculate"
 msgstr "¸§É¡õ ¸½¢ôÀ¡ý"
@@ -422,77 +418,78 @@ msgstr "¸§É¡õ ¯Õ À¼õ"
 msgid "Insert special characters into documents"
 msgstr ""
 
-#: gcharmap/src/asciiselect.c:116
+#: gcharmap/src/asciiselect.c:117
 #, fuzzy
 msgid "Select Character"
 msgstr "TSCII ¯Õ¨Å §¾÷× ¦ºöÂ×õ"
 
-#: gcharmap/src/asciiselect.c:119
+#: gcharmap/src/asciiselect.c:120
 #, fuzzy
 msgid "_Insert"
 msgstr "¦ºÕÌ"
 
 #: gcharmap/src/asciiselect.c:123
 #, fuzzy
-msgid "Character code:"
+msgid "Character c_ode:"
 msgstr "¯Õ:"
 
-#: gcharmap/src/asciiselect.c:135
-msgid "Character:"
+#: gcharmap/src/asciiselect.c:137
+#, fuzzy
+msgid "Ch_aracter:"
 msgstr "¯Õ:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 #, fuzzy
 msgid "Character Code"
 msgstr "¯Õ:"
 
-#: gcharmap/src/asciiselect.c:143
+#: gcharmap/src/asciiselect.c:148
 #, fuzzy
 msgid "Select character code"
 msgstr "TSCII ¯Õ¨Å §¾÷× ¦ºöÂ×õ"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 #, fuzzy
 msgid "Character"
 msgstr "¯Õ:"
 
-#: gcharmap/src/asciiselect.c:144
+#: gcharmap/src/asciiselect.c:149
 #, fuzzy
 msgid "Character to insert"
 msgstr "¯Õ:"
 
-#: gcharmap/src/asciiselect.c:152
+#: gcharmap/src/asciiselect.c:157
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:64
+#: gcharmap/src/callbacks.c:63
 #, fuzzy
 msgid "GNOME Character Map"
 msgstr "¸§É¡õ ¯Õ À¼õ"
 
-#: gcharmap/src/callbacks.c:67
+#: gcharmap/src/callbacks.c:66
 msgid ""
 "Select, copy and paste characters from your font into other applications"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:115
+#: gcharmap/src/callbacks.c:113
 msgid "del"
 msgstr ""
 
-#: gcharmap/src/callbacks.c:121
+#: gcharmap/src/callbacks.c:119
 #, fuzzy, c-format
 msgid " %s: Character code %d"
 msgstr "%s: TSCII ÌÈ¢Ó¨È %d"
 
-#: gcharmap/src/callbacks.c:159
+#: gcharmap/src/callbacks.c:155
 msgid "Text copied to clipboard..."
 msgstr "À¢ÊôÒô ÀÄ¨¸ìÌ ¿¸Ä §ÅñÊÂ ¯¨Ã..."
 
-#: gcharmap/src/callbacks.c:176
+#: gcharmap/src/callbacks.c:172
 msgid "Text cut to clipboard..."
 msgstr "À¢ÊôÒô ÀÄ¨¸ìÌ ¦ÅðÊÂ ¯¨Ã.."
 
-#: gcharmap/src/callbacks.c:229
+#: gcharmap/src/callbacks.c:225
 msgid "Text pasted from clipboard..."
 msgstr "À¢ÊôÒô ÀÄ¨¸Â¢ø ­ÕóÐ ´ðÊÂ ¯¨Ã.."
 
@@ -509,25 +506,25 @@ msgstr "¦ºÂø ¸ÕÅ¢ôÀð¨¼"
 msgid "_Text to copy:"
 msgstr "¿¸Ä §ÅñÊÂ ¯¨Ã:"
 
-#: gcharmap/src/interface.c:255
+#: gcharmap/src/interface.c:257
 #, fuzzy
 msgid "_Copy"
 msgstr "¿¸ø ±Î"
 
-#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:279 gcharmap/src/interface.c:280
 #, fuzzy
 msgid "Text to copy"
 msgstr "¿¸Ä §ÅñÊÂ ¯¨Ã:"
 
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:280
 msgid "Entry"
 msgstr ""
 
-#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:281 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "¿¸ø ±Î"
 
-#: gcharmap/src/interface.c:279
+#: gcharmap/src/interface.c:281
 #, fuzzy
 msgid "Copy the text"
 msgstr "§¾÷× ¦ºö¾¨¾ ¿¸ø"
@@ -544,7 +541,7 @@ msgstr "TSCII ÌÈ¢Ó¨È¸¨Ç §¾÷× ¦ºöÐ ¯Õ(¸¨Ç) ­¨¼î ¦ºÕ¸×õ."
 
 #: gcharmap/src/menus.c:63
 #, fuzzy
-msgid "_Characters"
+msgid "Ch_aracters"
 msgstr "¯Õ:"
 
 #. GNOMEUIINFO_ITEM(N_("Insert"), N_("Insert character(s) by choosing character codes"),
@@ -587,15 +584,15 @@ msgstr ""
 msgid "Enter the text"
 msgstr "§¾÷× ¦ºö¾¨¾ ¿¸ø"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr ""
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:250
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr ""
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 #, fuzzy
 msgid "Lookup words in an online dictionary"
@@ -628,8 +625,8 @@ msgstr "Å¨ÃÂ¨È º¡ÇÃò¨¾ ¸¡ñÀ¢/Á¨È..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:465
-#: gdictsrc/gdict-pref-dialog.c:516 gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "§º¨ÅÂ¸òÐ¼ý ­¨½ì¸ ÓÊÂÅ¢ø¨Ä"
 
@@ -637,6 +634,15 @@ msgstr "§º¨ÅÂ¸òÐ¼ý ­¨½ì¸ ÓÊÂÅ¢ø¨Ä"
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
+msgstr ""
+
+#: gdictsrc/gdict-about.c:56
+#, fuzzy
+msgid "GNOME Dictionary"
+msgstr "_¦ºÂø ¸ÕÅ¢ôÀð¨¼"
+
+#: gdictsrc/gdict-about.c:57
+msgid "Copyright 1999 by Mike Hughes"
 msgstr ""
 
 #: gdictsrc/gdict-about.c:58
@@ -738,7 +744,7 @@ msgstr ""
 msgid "Look Up for a Word"
 msgstr "§¾ÊôÀ¡÷"
 
-#: gdictsrc/gdict-applet.c:243
+#: gdictsrc/gdict-applet.c:263
 #, fuzzy
 msgid "_Lookup"
 msgstr "§¾ÊôÀ¡÷"
@@ -780,95 +786,95 @@ msgstr ""
 msgid "Cross-reference:"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:185
+#: gdictsrc/gdict-pref-dialog.c:186
 #, fuzzy
 msgid "Dictionary Preferences"
 msgstr "Å¢ÕôÀí¸û"
 
-#: gdictsrc/gdict-pref-dialog.c:197
+#: gdictsrc/gdict-pref-dialog.c:198
 msgid "Smart _lookup"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:210
+#: gdictsrc/gdict-pref-dialog.c:211
 #, fuzzy
 msgid "_Server:"
 msgstr "§º¨ÅÂ¸õ:"
 
-#: gdictsrc/gdict-pref-dialog.c:217
+#: gdictsrc/gdict-pref-dialog.c:218
 #, fuzzy
 msgid "De_fault"
 msgstr "¦¸¡¼¡¿¢¨Ä"
 
-#: gdictsrc/gdict-pref-dialog.c:223
+#: gdictsrc/gdict-pref-dialog.c:224
 msgid "Reset server to default"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:225
+#: gdictsrc/gdict-pref-dialog.c:226
 #, fuzzy
 msgid "_Port:"
 msgstr "?¨È:"
 
-#: gdictsrc/gdict-pref-dialog.c:239
+#: gdictsrc/gdict-pref-dialog.c:240
 #, fuzzy
 msgid "Def_ault"
 msgstr "¦¸¡¼¡¿¢¨Ä"
 
-#: gdictsrc/gdict-pref-dialog.c:246
+#: gdictsrc/gdict-pref-dialog.c:247
 msgid "Reset port to default"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:247
+#: gdictsrc/gdict-pref-dialog.c:248
 #, fuzzy
 msgid "Server"
 msgstr "§º¨ÅÂ¸õ:"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 #, fuzzy
 msgid "Server Entry"
 msgstr "§º¨ÅÂ¸õ:"
 
-#: gdictsrc/gdict-pref-dialog.c:248
+#: gdictsrc/gdict-pref-dialog.c:249
 msgid "Enter the Server Name"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:251
+#: gdictsrc/gdict-pref-dialog.c:252
 #, fuzzy
 msgid "Port"
 msgstr "?¨È:"
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Port Entry"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:252
+#: gdictsrc/gdict-pref-dialog.c:253
 msgid "Enter the Port Number"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:257
+#: gdictsrc/gdict-pref-dialog.c:258
 #, fuzzy
 msgid "_Database:"
 msgstr "¾Ã×ò ¾Çõ:"
 
-#: gdictsrc/gdict-pref-dialog.c:264
+#: gdictsrc/gdict-pref-dialog.c:265
 #, fuzzy
 msgid "D_efault strategy:"
 msgstr "¦¸¡¼¡¿¢¨Ä ¾¢ð¼õ:"
 
-#: gdictsrc/gdict-pref-dialog.c:457
+#: gdictsrc/gdict-pref-dialog.c:458
 msgid "Search all databases"
 msgstr ""
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 #, fuzzy
 msgid "Database"
 msgstr "¾Ã×ò ¾Çõ:"
 
-#: gdictsrc/gdict-pref-dialog.c:622
+#: gdictsrc/gdict-pref-dialog.c:623
 #, fuzzy
 msgid "Database Name"
 msgstr "¾Ã×ò ¾Çõ:"
 
-#: gdictsrc/gdict-pref-dialog.c:634
+#: gdictsrc/gdict-pref-dialog.c:635
 #, fuzzy
 msgid "Default Strategy"
 msgstr "¦¸¡¼¡¿¢¨Ä ¾¢ð¼õ:"
@@ -905,25 +911,54 @@ msgid "Search Strategy"
 msgstr "¦¸¡¼¡¿¢¨Ä ¾¢ð¼õ:"
 
 #: gdictsrc/gdict.schemas.in.h:1
-msgid "Default database. ! indicates all databases"
-msgstr ""
-
-#: gdictsrc/gdict.schemas.in.h:2
-#, fuzzy
-msgid "Default strategy"
-msgstr "¦¸¡¼¡¿¢¨Ä ¾¢ð¼õ:"
-
-#: gdictsrc/gdict.schemas.in.h:3
 #, fuzzy
 msgid "Dictionary server"
 msgstr "Å¢ÕôÀí¸û"
 
-#: gdictsrc/gdict.schemas.in.h:4
+#: gdictsrc/gdict.schemas.in.h:2
 #, fuzzy
 msgid "Port used to connect to server"
 msgstr "§º¨ÅÂ¸òÐ¼ý ­¨½ì¸ ÓÊÂÅ¢ø¨Ä"
 
+#: gdictsrc/gdict.schemas.in.h:3
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:4
+msgid "The database to use in the dictionary server."
+msgstr ""
+
 #: gdictsrc/gdict.schemas.in.h:5
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:6
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:7
+msgid "The port number to connect to. The default port is 2628."
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:8
+#, fuzzy
+msgid "The search strategy to use"
+msgstr "¦¸¡¼¡¿¢¨Ä ¾¢ð¼õ:"
+
+#: gdictsrc/gdict.schemas.in.h:9
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+
+#: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
 msgstr ""
 
@@ -1153,19 +1188,19 @@ msgstr "·À¡÷Á¡ð"
 msgid "_Quick format"
 msgstr "Å¢¨Ã× ·À¡÷Á¡ð"
 
-#: gfloppy/src/main.c:130 gfloppy/src/main.c:173
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr ""
 
-#: gfloppy/src/main.c:133 gfloppy/src/main.c:176
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
 "Please attach device to continue."
 msgstr ""
 
-#: gfloppy/src/main.c:136 gfloppy/src/main.c:179
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
@@ -1173,24 +1208,20 @@ msgid ""
 "Contact your system administrator about getting write permissions."
 msgstr ""
 
-#: gfloppy/src/main.c:292
-msgid "The device to format"
-msgstr "·À¡÷Á¡ð ¦ºöÂ §ÅñÊÂ º¡¾Éõ"
-
-#: gfloppy/src/main.c:293
-msgid "DEVICE"
-msgstr "º¡¾Éõ"
-
-#: gfloppy/src/main.c:360
+#: gfloppy/src/main.c:291
 #, c-format
 msgid ""
 "Could not display help for the floppy formatter.\n"
 "%s"
 msgstr ""
 
-#: gfloppy/src/main.c:399
-msgid "Format another floppy?"
-msgstr "­ýÛ¦Á¡Õ ·À¢Ç¡ôÀ¢¨Â ·À¡÷Á¡ð ¦ºöÂðÎÁ¡?"
+#: gfloppy/src/main.c:359
+msgid "The device to format"
+msgstr "·À¡÷Á¡ð ¦ºöÂ §ÅñÊÂ º¡¾Éõ"
+
+#: gfloppy/src/main.c:360
+msgid "DEVICE"
+msgstr "º¡¾Éõ"
 
 #: gfloppy/src/progress.c:115
 msgid "Floppy formatted successfully."
@@ -1597,74 +1628,82 @@ msgstr "§¾Î"
 msgid "Copyright (C) 1998"
 msgstr ""
 
-#: logview/actions.c:74
+#: logview/actions.c:75
 msgid "Action database"
 msgstr ""
 
-#: logview/actions.c:81
+#: logview/actions.c:85
 #, fuzzy
-msgid "Action options"
+msgid "Actions"
 msgstr "¦ºÂø ¸ÕÅ¢ôÀð¨¼"
 
-#: logview/actions.c:138
-msgid "Add..."
-msgstr ""
+#: logview/actions.c:153
+#, fuzzy
+msgid "_Add"
+msgstr "§º÷"
 
-#: logview/actions.c:144
-msgid "Edit..."
-msgstr ""
+#: logview/actions.c:160
+#, fuzzy
+msgid "_Edit"
+msgstr "À¾¢ôÒ"
 
-#: logview/actions.c:150
-msgid "Remove"
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#, fuzzy
+msgid "_Remove"
 msgstr "¿£ìÌ"
 
-#: logview/actions.c:261
+#: logview/actions.c:260
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr ""
 
-#: logview/actions.c:296 logview/actions.c:309 logview/actions.c:320
-#: logview/actions.c:331 logview/actions.c:342 logview/actions.c:353
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr ""
 
-#: logview/actions.c:387
+#: logview/actions.c:386
 msgid "Can't write to actions database!"
 msgstr ""
 
-#: logview/actions.c:494
+#: logview/actions.c:486
+msgid "Error while executing specified action"
+msgstr ""
+
+#: logview/actions.c:507
 msgid "<empty>"
 msgstr ""
 
-#: logview/actions.c:495
+#: logview/actions.c:508
 msgid "log name regexp"
 msgstr ""
 
-#: logview/actions.c:496
+#: logview/actions.c:509
 msgid "process regexp"
 msgstr ""
 
-#: logview/actions.c:497
+#: logview/actions.c:510
 msgid "message regexp"
 msgstr ""
 
-#: logview/actions.c:498
+#: logview/actions.c:511
 msgid "action to execute when regexps are TRUE"
 msgstr ""
 
-#: logview/actions.c:499
+#: logview/actions.c:512
 msgid "description"
 msgstr ""
 
-#: logview/actions.c:744
-msgid "description:"
-msgstr ""
+#: logview/actions.c:772
+#, fuzzy
+msgid "_Description:"
+msgstr "Å¢ÅÃ¢ôÒ :"
 
-#: logview/actions.c:753
+#: logview/actions.c:781
 msgid "Description of this entry."
 msgstr ""
 
-#: logview/actions.c:800
+#: logview/actions.c:805
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2182,11 +2221,6 @@ msgstr ""
 msgid "Create a new archive from the items"
 msgstr ""
 
-#: meat-grinder/meat-grinder.c:941
-#, fuzzy
-msgid "_Remove"
-msgstr "¿£ìÌ"
-
 #: meat-grinder/meat-grinder.c:942
 #, fuzzy
 msgid "Remove the selected item"
@@ -2225,6 +2259,16 @@ msgid ""
 "Cannot find the archive (tar) program!\n"
 "This is the program used for creating archives."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Default strategy"
+#~ msgstr "¦¸¡¼¡¿¢¨Ä ¾¢ð¼õ:"
+
+#~ msgid "Format another floppy?"
+#~ msgstr "­ýÛ¦Á¡Õ ·À¢Ç¡ôÀ¢¨Â ·À¡÷Á¡ð ¦ºöÂðÎÁ¡?"
+
+#~ msgid "Remove"
+#~ msgstr "¿£ìÌ"
 
 #~ msgid "Find:"
 #~ msgstr "§¾Î:"
@@ -2466,9 +2510,6 @@ msgstr ""
 #~ msgid "Start Fuzz"
 #~ msgstr "¦¾¡¼íÌ"
 
-#~ msgid "Edit"
-#~ msgstr "À¾¢ôÒ"
-
 #~ msgid "Delete"
 #~ msgstr "¿£ìÌ"
 
@@ -2505,9 +2546,6 @@ msgstr ""
 
 #~ msgid "Add all ->"
 #~ msgstr "§º÷/ÜðÎ"
-
-#~ msgid "Description :"
-#~ msgstr "Å¢ÅÃ¢ôÒ :"
 
 #~ msgid "Bottom"
 #~ msgstr "«ÊôÀ¨¼"

@@ -1,3 +1,63 @@
+GNOME Utilities 2.0.1		" Will you take me where I want to go? "
+
+GNOME Calculator -
+
+	Add power labels (George)
+	s/DocPath/X-GNOME-DocPath to conform to spec (Glynn)
+		
+GNOME Search Tool -
+
+	Exec the search command  (Aruna)	
+	s/DocPath/X-GNOME-DocPath to conform to spec (Glynn)
+
+GNOME Dictionary -
+	
+	Install applet to libexec (Mark)
+	Move server.in to server.in.in (Mark)
+	Mark strings for translation (Kjartan)
+	Clear the applet entry after lookup (Glynn)
+	
+GNOME System Log Monitor -
+
+	Use dialogs a little bit more (Deepa)
+	s/DocPath/X-GNOME-DocPath to conform to spec (Glynn)
+	Action now uses fork and execlp instead of system (Laavanya)
+	Pass the command to execute twice for execlp (Deepa)
+
+GNOME Floppy - 
+	
+	Restructure the code to use new help button (Glynn)
+
+GNOME Archive Generator -
+	
+	s/DocPath/X-GNOME-DocPath to conform to spec (Glynn)
+	
+GNOME Dialog -
+	
+	Accept --seperate-output now (Sam)
+
+Documentation -
+
+	New calculator screenshot (John)
+	New gfloppy screenshots (John)
+	Updates on omf and documentation (John, Irene)
+	
+Translations -
+
+	Kjartan, Zbigniew, Ole, Pablo, Christophe, Changwoo, Christian, 
+	Yanko, Dmitry and Stanislav.
+
+Build -
+
+	POTFILES.in updates (Mark)
+	Add X checks (Glynn)
+
+Miscellaneous -
+
+	README, HACKING, THANKS, NEWS (Glynn)
+
+===================================================================
+
 GNOME Utilities 2.0.0 			"Zivot je jinde"
 
 Bedroom, Dublin, Ireland -- June 17, 2002 -- the GNOME project today 

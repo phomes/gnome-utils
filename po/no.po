@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.0.1\n"
-"POT-Creation-Date: 2002-07-16 11:14+0200\n"
+"POT-Creation-Date: 2002-07-25 13:43+0100\n"
 "PO-Revision-Date: 2002-07-16 11:18+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -569,15 +569,15 @@ msgstr "GDialog-oppføring"
 msgid "Enter the text"
 msgstr "Skriv inn teksten"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:1
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Tilbehør"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:2 gdictsrc/gdict-applet.c:270
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Oppslag i ordbok"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.h:3
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:3
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Slå opp ord i en ordbok på nett"
@@ -884,7 +884,9 @@ msgstr "Port som brukes for å koble til tjener"
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
-msgstr "Spesifiser om du vil bruke smart oppslag. Denne nøkkelen er avhengig av om ordboken støtter dette alternativet. Forvalgt verdi er TRUE"
+msgstr ""
+"Spesifiser om du vil bruke smart oppslag. Denne nøkkelen er avhengig av om "
+"ordboken støtter dette alternativet. Forvalgt verdi er TRUE"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -894,13 +896,17 @@ msgstr "Database som skal brukes på ordboktjeneren."
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
-msgstr "Ordboktjener som skal brukes. Forvalgt tjener er dict.org. Se http://www.dict.org for detaljer om andre tjenere"
+msgstr ""
+"Ordboktjener som skal brukes. Forvalgt tjener er dict.org. Se http://www."
+"dict.org for detaljer om andre tjenere"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
-msgstr "Navn på individuell database som skal brukes på ordboktjeneren. ! spesifiserer at gnome-dictionary skal søke i alle databaser på en gitt tjener"
+msgstr ""
+"Navn på individuell database som skal brukes på ordboktjeneren. ! "
+"spesifiserer at gnome-dictionary skal søke i alle databaser på en gitt tjener"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -915,7 +921,10 @@ msgid ""
 "The search strategy to use. This is dependant on the search strategy that "
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
-msgstr "Søkestrategi som skal brukes. Denne avhenger av søkestrategiene som ordboktjeneren støtter. Forvalgt strategi er «lev» - Treff på ord innen Levenshtein avstand en"
+msgstr ""
+"Søkestrategi som skal brukes. Denne avhenger av søkestrategiene som "
+"ordboktjeneren støtter. Forvalgt strategi er «lev» - Treff på ord innen "
+"Levenshtein avstand en"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
