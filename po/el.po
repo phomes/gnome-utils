@@ -18,7 +18,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.4\n"
-"POT-Creation-Date: 2002-10-31 00:24+0000\n"
+"POT-Creation-Date: 2002-11-07 12:12+0000\n"
 "PO-Revision-Date: 2002-10-31 01:13+0000\n"
 "Last-Translator: Simos Xenitellis <simos74@gmx.net>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -77,7 +77,8 @@ msgstr "Αυτή είναι μια βιβλιοθήκη και δε μπορεί
 
 #: exe-handler/gnome-exe-handler.c:158
 msgid "The file is a core file and can not be executed"
-msgstr "Το αρχείο είναι αρχείο αποτυπώματος μνήμης (core) και δε μπορεί να εκτελεστεί"
+msgstr ""
+"Το αρχείο είναι αρχείο αποτυπώματος μνήμης (core) και δε μπορεί να εκτελεστεί"
 
 #: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
@@ -88,8 +89,8 @@ msgid ""
 "The executable is for a different platform and can not be executed on this "
 "system"
 msgstr ""
-"Το εκτελέσιμο είναι από διαφορετική πλατφόρμα και δε μπορεί να εκτελεστεί "
-"σε αυτό το σύστημα"
+"Το εκτελέσιμο είναι από διαφορετική πλατφόρμα και δε μπορεί να εκτελεστεί σε "
+"αυτό το σύστημα"
 
 #. Translator credits
 #: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
@@ -480,7 +481,8 @@ msgid "GNOME Character Map"
 msgstr "Πίνακας Χαρακτήρων του GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr ""
 "Επιλέξτε, αντιγράψτε και επικολλήστε χαρακτήρες από τη γραμματοσειρά σας σε "
 "άλλες εφαρμογές"
@@ -635,8 +637,8 @@ msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
-"Συνέβει ένα σοβαρό σφάλμα. Ελέξτε αν είναι σωστοί ο εξυπηρετητής και η "
-"θύρα. Για αναφορά ο εξ ορισμού εξυπηρετητής είναι dict.org και η θύρα 2628"
+"Συνέβει ένα σοβαρό σφάλμα. Ελέξτε αν είναι σωστοί ο εξυπηρετητής και η θύρα. "
+"Για αναφορά ο εξ ορισμού εξυπηρετητής είναι dict.org και η θύρα 2628"
 
 #: gdictsrc/gdict-about.c:56
 msgid "GNOME Dictionary"
@@ -906,8 +908,8 @@ msgid ""
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
 "Καθορίστε αν θα χρησιμοποιήσετε την έξυπνη αναζήτηση. Αυτό το κλειδί "
-"εξαρτάται αν ο εξυπηρετητής λεξικού υποστηρίζει αυτήν την επιλογή. Το "
-"εξ ορισμού είναι ΑΛΗΘΈΣ"
+"εξαρτάται αν ο εξυπηρετητής λεξικού υποστηρίζει αυτήν την επιλογή. Το εξ "
+"ορισμού είναι ΑΛΗΘΈΣ"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -1173,7 +1175,8 @@ msgstr "_Γρήγορη μορφοποίηση"
 #: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr "Αποτυχία ανοίγματος της συσκευής %s η μορφοποίηση δε μπορεί να συνεχισθεί."
+msgstr ""
+"Αποτυχία ανοίγματος της συσκευής %s η μορφοποίηση δε μπορεί να συνεχισθεί."
 
 #: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
@@ -1396,7 +1399,8 @@ msgstr "Καταχώρηση Γραμμής Εντολών"
 
 #: gsearchtool/gsearchtool.c:1064
 msgid "Use this command line to execute the search from console"
-msgstr "Χρήση της γραμμής εντολών για την εκτέλεση της αναζήτησης από την κονσόλα"
+msgstr ""
+"Χρήση της γραμμής εντολών για την εκτέλεση της αναζήτησης από την κονσόλα"
 
 #: gsearchtool/gsearchtool.c:1172
 msgid "No viewer available for this mime type."
@@ -1756,7 +1760,8 @@ msgstr ""
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Αδυναμία ανοίγματος περιγραφής βάσης δεδομένων <%s>! Αποτυχία ανοίγματος."
+msgstr ""
+"Αδυναμία ανοίγματος περιγραφής βάσης δεδομένων <%s>! Αποτυχία ανοίγματος."
 
 #. ----------------------------------------------------------------------
 #. NAME:
@@ -2006,7 +2011,8 @@ msgstr "Άνοιγμα νέου αρχείου καταγραφών"
 
 #: logview/misc.c:56
 msgid "Cannot load required fonts, cannot continue"
-msgstr "Αδυναμία φόρτωσης απαιτούμενων γραμματοσειρών, δεν είναι δυνατή η συνέχεια"
+msgstr ""
+"Αδυναμία φόρτωσης απαιτούμενων γραμματοσειρών, δεν είναι δυνατή η συνέχεια"
 
 #: logview/misc.c:91
 #, c-format
@@ -2241,4 +2247,3 @@ msgid ""
 msgstr ""
 "Δε βρέθηκε το πρόγραμμα αρχειοθέτησης (tar)!\n"
 "Αυτό το πρόγραμμα χρησιμοποιείται για τη δημιουργία αρχειοθετήσεων."
-

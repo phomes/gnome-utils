@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils for latvian\n"
-"POT-Creation-Date: 2002-08-26 05:06+0200\n"
+"POT-Creation-Date: 2002-11-07 12:12+0000\n"
 "PO-Revision-Date: 2002-08-27 01:00GMT+0020\n"
 "Last-Translator: Pēteris Krišjānis <peteris.krisjanis@os.lv>\n"
 "Language-Team: Latvian <ll10nt@os.lv>\n"
@@ -72,7 +72,8 @@ msgstr "Šī ir nezināma veida izpildāmā fails"
 msgid ""
 "The executable is for a different platform and can not be executed on this "
 "system"
-msgstr "Izpildāmais fails ir citai platformai un nevar tikt palaists uz šīs sistēmas"
+msgstr ""
+"Izpildāmais fails ir citai platformai un nevar tikt palaists uz šīs sistēmas"
 
 #. Translator credits
 #: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
@@ -490,7 +491,8 @@ msgid "GNOME Character Map"
 msgstr "GNOME Rakstzīmju Karte"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Izvēlies, kopē un ievieto rakstzīmes no sava fonta citās aplikācijās"
 
 # mini-utils/idetool/idetool.c:305 mini-utils/idetool/idetool.c:315
@@ -778,23 +780,23 @@ msgstr "Vārdnīca"
 msgid "_Word: "
 msgstr "_Vārds: "
 
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Vārds"
 
 # gtt/options.c:413
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Vārda Ieraksts"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
 msgstr "Ievadi Vārdu vai izvēlies vienu no zemākesošā saraksta"
 
 # gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
 # gdictsrc/gdict-applet.c:153
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
 msgstr "Sameklēt Vardu"
 
@@ -1476,7 +1478,8 @@ msgstr "Sākuma direktorija neeksistē"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
-msgstr "Nevaru parādīt meklēšanas komandrinu. Lūdzu norādi meklēšanas kritēriju."
+msgstr ""
+"Nevaru parādīt meklēšanas komandrinu. Lūdzu norādi meklēšanas kritēriju."
 
 # gsearchtool/gsearchtool.c:378
 #: gsearchtool/gsearchtool.c:1024
@@ -1746,95 +1749,95 @@ msgid "Copyright (C) 1998"
 msgstr "Autortiesības (C) 1998"
 
 # logview/actions.c:56
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "Darbību datubāze"
 
 # mini-utils/gcolorsel/glade/dialog-prefs.glade.h:31
-#: logview/actions.c:85
+#: logview/actions.c:84
 msgid "Actions"
 msgstr "Darbības"
 
 # gnome-find/gnome-find.c:100 gsearchtool/gsearchtool.c:619
 # mini-utils/gw/gw.c:505
-#: logview/actions.c:153
+#: logview/actions.c:152
 msgid "_Add"
 msgstr "_Pievienot"
 
 # logview/actions.c:120
-#: logview/actions.c:160
+#: logview/actions.c:159
 msgid "_Edit"
 msgstr "_Rediģēt"
 
 # gnome-find/gnome-find.c:102 gsearchtool/gsearchtool.c:545
 # logview/actions.c:127
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#: logview/actions.c:166 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "_Izņemt"
 
-#: logview/actions.c:260
+#: logview/actions.c:259
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Nevar atvērt darbību datu bāzi <%s>! Atvēršana neizdevās."
 
 # logview/actions.c:282 logview/actions.c:295 logview/actions.c:306
 # logview/actions.c:317 logview/actions.c:328 logview/actions.c:339
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Kļūda analizējot darbību datubāzi"
 
 # logview/actions.c:371
-#: logview/actions.c:386
+#: logview/actions.c:385
 msgid "Can't write to actions database!"
 msgstr "Nevar ierakstīt darbības datubāzē!"
 
-#: logview/actions.c:486
+#: logview/actions.c:485
 msgid "Error while executing specified action"
 msgstr "Kļūda izpildot norādīto darbību"
 
 # logview/actions.c:477
-#: logview/actions.c:507
+#: logview/actions.c:506
 msgid "<empty>"
 msgstr "<tukšs>"
 
 # logview/actions.c:478
-#: logview/actions.c:508
+#: logview/actions.c:507
 msgid "log name regexp"
 msgstr "log vārda regexp"
 
 # logview/actions.c:479
-#: logview/actions.c:509
+#: logview/actions.c:508
 msgid "process regexp"
 msgstr "procesa regexp"
 
 # logview/actions.c:480
-#: logview/actions.c:510
+#: logview/actions.c:509
 msgid "message regexp"
 msgstr "ziņas regexp"
 
 # logview/actions.c:481
-#: logview/actions.c:511
+#: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
 msgstr "darbības, kuras izpildīt, kad regexpi ir TRUE (piepildās)"
 
 # logview/actions.c:482
-#: logview/actions.c:512
+#: logview/actions.c:511
 msgid "description"
 msgstr "apraksts"
 
 # logview/zoom.c:183
-#: logview/actions.c:772
+#: logview/actions.c:771
 msgid "_Description:"
 msgstr "_Apraksts:"
 
 # logview/actions.c:648
-#: logview/actions.c:781
+#: logview/actions.c:780
 msgid "Description of this entry."
 msgstr "Šī ieraksta apraksts."
 
 # logview/actions.c:710
-#: logview/actions.c:805
+#: logview/actions.c:804
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -2480,4 +2483,3 @@ msgid ""
 msgstr ""
 "Nevar atrast arhīva (tar) programmu!\n"
 "Šo programmu lieto arhīvu izveidē."
-

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils VERSION\n"
-"POT-Creation-Date: 2002-08-31 05:13+0200\n"
+"POT-Creation-Date: 2002-11-07 12:12+0000\n"
 "PO-Revision-Date: 2002-08-31 18:14+0700\n"
 "Last-Translator: Trinh Minh Thanh <tmthanh@linuxmail.org>\n"
 "Language-Team: Gnome-Vi Team <Gnomevi-list@lists.sourceforge.net>\n"
@@ -462,7 +462,8 @@ msgid "GNOME Character Map"
 msgstr "Bảng ký tự"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Chọn, sao chép và dán các ký tự từ font của bạn vào ứng dụng khác"
 
 #: gcharmap/src/callbacks.c:113
@@ -706,20 +707,20 @@ msgstr "Từ điển"
 msgid "_Word: "
 msgstr "_Từ: "
 
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Từ"
 
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Mục nhập từ"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
 msgstr "Nhập từ hoặc chọn một từ từ danh sách bên dưới"
 
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
 msgstr "Tìm từ"
 
@@ -897,16 +898,16 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"Máy chủ từ diển để kết nối đến. Máy chủ mặc định là dict.org. Hãy xem "
-"http://www.dict.org để biết chi tiết về các máy chủ khác"
+"Máy chủ từ diển để kết nối đến. Máy chủ mặc định là dict.org. Hãy xem http://"
+"www.dict.org để biết chi tiết về các máy chủ khác"
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
-"Tên của cơ sở dữ liệu cá nhân dùng trong máy chủ từ điển. ! "
-"Chỉ định cho từ điển của Gnome nên tìm mọi cơ sở dữ liệu trong máy chủ được trao"
+"Tên của cơ sở dữ liệu cá nhân dùng trong máy chủ từ điển. ! Chỉ định cho từ "
+"điển của Gnome nên tìm mọi cơ sở dữ liệu trong máy chủ được trao"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -922,9 +923,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"Chiến lược tìm kiếm để dùng, phụ thuộc vào chiến lược tìm kiếm mà máy "
-"chủ từ điển hỗ trợ. Chiến lược mặc định là 'lev' - Trùng khớp các từ trong "
-"một khoảng của Levenshtein"
+"Chiến lược tìm kiếm để dùng, phụ thuộc vào chiến lược tìm kiếm mà máy chủ từ "
+"điển hỗ trợ. Chiến lược mặc định là 'lev' - Trùng khớp các từ trong một "
+"khoảng của Levenshtein"
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1340,7 +1341,8 @@ msgstr "Thư mục bắt đầu không tồn tại"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
-msgstr "Không thể hiển thị dòng lệnh tìm kiếm. Vui lòng xác định tiêu chuẩn tìm kiếm."
+msgstr ""
+"Không thể hiển thị dòng lệnh tìm kiếm. Vui lòng xác định tiêu chuẩn tìm kiếm."
 
 #: gsearchtool/gsearchtool.c:1024
 msgid "Search Command Line"
@@ -2434,4 +2436,3 @@ msgstr ""
 
 #~ msgid "Archive"
 #~ msgstr "Kho lưu"
-

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0\n"
-"POT-Creation-Date: 2002-08-28 16:23+0100\n"
+"POT-Creation-Date: 2002-11-07 12:12+0000\n"
 "PO-Revision-Date: 2002-09-08 16:31+0300\n"
 "Last-Translator: Mugurel Tudor <mugurelu@go.ro>\n"
 "Language-Team: română <ro@li.org>\n"
@@ -463,7 +463,8 @@ msgid "GNOME Character Map"
 msgstr "Harta de caractere GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Selectează, copiază şi lipeşte caractere în alte aplicaţii"
 
 #: gcharmap/src/callbacks.c:113
@@ -616,9 +617,9 @@ msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
-"O eroare gravă a intervenit. Vă rugăm verificaţi că serverul şi portul au fost "
-"specificate corect. Pentru referinţă serverul implicit este dict.org iar portul "
-"este 2628"
+"O eroare gravă a intervenit. Vă rugăm verificaţi că serverul şi portul au "
+"fost specificate corect. Pentru referinţă serverul implicit este dict.org "
+"iar portul este 2628"
 
 #: gdictsrc/gdict-about.c:56
 msgid "GNOME Dictionary"
@@ -708,20 +709,20 @@ msgstr "Dicţionar"
 msgid "_Word: "
 msgstr "_Cuvânt:"
 
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Cuvânt"
 
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Intrare cuvânt"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
 msgstr "Introduceţi un cuvânt sau selectaţi unul din lista de mai jos"
 
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
 msgstr "Caută un cuvânt"
 
@@ -1333,13 +1334,15 @@ msgstr "%d fişiere găsite"
 
 #: gsearchtool/gsearchtool.c:954 gsearchtool/gsearchtool.c:1671
 msgid "Cannot perform the search. Please specify a search criteria."
-msgstr "Nu am putut efectua căutarea. Vă rugăm specificaţi un criteriu de căutare."
+msgstr ""
+"Nu am putut efectua căutarea. Vă rugăm specificaţi un criteriu de căutare."
 
 #: gsearchtool/gsearchtool.c:971 gsearchtool/gsearchtool.c:1692
 msgid ""
 "A search is already running.  Please wait for the search to complete or "
 "cancel it."
-msgstr "O căutare rulează deja. Vă rugăm aşteptaţi terminarea ei sau anulaţi-o."
+msgstr ""
+"O căutare rulează deja. Vă rugăm aşteptaţi terminarea ei sau anulaţi-o."
 
 #: gsearchtool/gsearchtool.c:1005
 msgid "Start folder does not exist"
@@ -1348,8 +1351,7 @@ msgstr "Directorul de start nu există"
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
 msgstr ""
-"Nu pot afişa comanda de căutare. Vă rugăm specificaţi un criteriu de "
-"căutare."
+"Nu pot afişa comanda de căutare. Vă rugăm specificaţi un criteriu de căutare."
 
 #: gsearchtool/gsearchtool.c:1024
 msgid "Search Command Line"
@@ -1377,7 +1379,8 @@ msgstr "Linie de comandă"
 
 #: gsearchtool/gsearchtool.c:1064
 msgid "Use this command line to execute the search from console"
-msgstr "Folosiţi această linie de comandă pentru a efectua căutarea din consolă"
+msgstr ""
+"Folosiţi această linie de comandă pentru a efectua căutarea din consolă"
 
 #: gsearchtool/gsearchtool.c:1172
 msgid "No viewer available for this mime type."
@@ -1584,77 +1587,77 @@ msgstr "Vizualizator GNOME pentru fişiere log "
 msgid "Copyright (C) 1998"
 msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "Baza de date cu acţiuni"
 
-#: logview/actions.c:85
+#: logview/actions.c:84
 msgid "Actions"
 msgstr "Acţiuni"
 
-#: logview/actions.c:153
+#: logview/actions.c:152
 msgid "_Add"
 msgstr "_Adaugă"
 
-#: logview/actions.c:160
+#: logview/actions.c:159
 msgid "_Edit"
 msgstr "_Editare"
 
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#: logview/actions.c:166 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "_Şterge"
 
-#: logview/actions.c:260
+#: logview/actions.c:259
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Nu am putut deschide baza de date cu acţiuni <%s>! Deschidere eşuată."
 
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Eroare la parsarea bazei de date cu acţiuni"
 
-#: logview/actions.c:386
+#: logview/actions.c:385
 msgid "Can't write to actions database!"
 msgstr "Nu pot scrie în baza de date cu acţiuni!"
 
-#: logview/actions.c:486
+#: logview/actions.c:485
 msgid "Error while executing specified action"
 msgstr "Eroare la executarea acţiunii specificate"
 
-#: logview/actions.c:507
+#: logview/actions.c:506
 msgid "<empty>"
 msgstr "<gol>"
 
-#: logview/actions.c:508
+#: logview/actions.c:507
 msgid "log name regexp"
 msgstr "expr.reg. nume log"
 
-#: logview/actions.c:509
+#: logview/actions.c:508
 msgid "process regexp"
 msgstr "procesează expr. reg."
 
-#: logview/actions.c:510
+#: logview/actions.c:509
 msgid "message regexp"
 msgstr "expr. reg. mesaj"
 
-#: logview/actions.c:511
+#: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
 msgstr "acţiune de executat când expr. reg. sunt adevărate"
 
-#: logview/actions.c:512
+#: logview/actions.c:511
 msgid "description"
 msgstr "descriere"
 
-#: logview/actions.c:772
+#: logview/actions.c:771
 msgid "_Description:"
 msgstr "_Descriere:"
 
-#: logview/actions.c:781
+#: logview/actions.c:780
 msgid "Description of this entry."
 msgstr "Descrierea acestei intrări."
 
-#: logview/actions.c:805
+#: logview/actions.c:804
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1733,7 +1736,8 @@ msgstr "Nu am putut deschide baza de date regexp <%s>! Deschidere eşuată."
 #: logview/desc_db.c:147
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Nu am putut deschide baza de date pentru descrieri <%s>! Deschidere eşuată."
+msgstr ""
+"Nu am putut deschide baza de date pentru descrieri <%s>! Deschidere eşuată."
 
 #. ----------------------------------------------------------------------
 #. NAME:
@@ -2022,7 +2026,8 @@ msgstr "Acţiuni..."
 
 #: logview/monitor.c:286
 msgid "Too many logs to monitor. Remove one and try again"
-msgstr "Prea multe log-uri pentru monitorizare. Ştergeţi unul şi încercaţi din nou"
+msgstr ""
+"Prea multe log-uri pentru monitorizare. Ştergeţi unul şi încercaţi din nou"
 
 #: logview/monitor.c:294 logview/monitor.c:332
 msgid "tmp_list is NULL\n"
@@ -2201,8 +2206,8 @@ msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
-"Trageţi acest buton în locul în care doriţi să creaţi arhiva sau apăsaţi-l pentru "
-"a deschide un dialog de selectare a fişierelor."
+"Trageţi acest buton în locul în care doriţi să creaţi arhiva sau apăsaţi-l "
+"pentru a deschide un dialog de selectare a fişierelor."
 
 #: meat-grinder/meat-grinder.c:1174
 msgid "Cannot find proper icons anywhere!"
@@ -4356,4 +4361,3 @@ msgstr ""
 
 #~ msgid "Select a program to run"
 #~ msgstr "Alegeţi un program de executat"
-

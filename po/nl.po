@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2002-08-25 05:09+0200\n"
+"POT-Creation-Date: 2002-11-07 12:12+0000\n"
 "PO-Revision-Date: 2002-05-31 00:51+02:00\n"
 "Last-Translator: Reinout van Schouwen <reinout@cs.vu.nl>\n"
 "Language-Team: Dutch <NL@li.org>\n"
@@ -747,20 +747,20 @@ msgstr "Woordenboek"
 msgid "_Word: "
 msgstr "_Woord:"
 
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Woord"
 
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Woord-invoer"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
 msgstr "Voer een Woord in of selecteer het van de onderstaande lijst"
 
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
 msgstr "Zoek een Woord op"
 
@@ -1419,7 +1419,8 @@ msgstr "Opdrachtregel-invoer"
 #: gsearchtool/gsearchtool.c:1064
 msgid "Use this command line to execute the search from console"
 msgstr ""
-"Gebruik deze opdrachtregel om de zoekactie vanuit een terminalvenster uit te voeren"
+"Gebruik deze opdrachtregel om de zoekactie vanuit een terminalvenster uit te "
+"voeren"
 
 #
 #: gsearchtool/gsearchtool.c:1172
@@ -1619,10 +1620,10 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Dit programma is onderdeel van het GNOME-project. Logview komt "
-"ZONDER ENIGE GARANTIE. Dit is Vrije Software en u wordt aangemodigd om het te "
-"verspreiden onder de voorwaarden van de GNU General Public Licence. Het log-"
-"pictogram is bijgedragen door Tuomas Kuosmanen (alias tigert)."
+"Dit programma is onderdeel van het GNOME-project. Logview komt ZONDER ENIGE "
+"GARANTIE. Dit is Vrije Software en u wordt aangemodigd om het te verspreiden "
+"onder de voorwaarden van de GNU General Public Licence. Het log-pictogram is "
+"bijgedragen door Tuomas Kuosmanen (alias tigert)."
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:72
@@ -1634,81 +1635,81 @@ msgstr "GNOME Systeemlogboek-bekijker"
 msgid "Copyright (C) 1998"
 msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "Actie-database"
 
 #
-#: logview/actions.c:85
+#: logview/actions.c:84
 msgid "Actions"
 msgstr "Acties"
 
-#: logview/actions.c:153
+#: logview/actions.c:152
 msgid "_Add"
 msgstr "_Toevoegen"
 
-#: logview/actions.c:160
+#: logview/actions.c:159
 msgid "_Edit"
 msgstr "Be_werken..."
 
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#: logview/actions.c:166 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "_Verwijderen"
 
-#: logview/actions.c:260
+#: logview/actions.c:259
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Kan actie-database <%s> niet openen! Openen mislukt."
 
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Er is een fout opgetreden bij het doorzoeken van de database"
 
-#: logview/actions.c:386
+#: logview/actions.c:385
 msgid "Can't write to actions database!"
 msgstr "Kan niet schrijven naar de actie-database!"
 
-#: logview/actions.c:486
+#: logview/actions.c:485
 msgid "Error while executing specified action"
 msgstr "Er is een fout opgetreden bij het uitvoeren van de aangegeven actie"
 
-#: logview/actions.c:507
+#: logview/actions.c:506
 msgid "<empty>"
 msgstr "<leeg>"
 
-#: logview/actions.c:508
+#: logview/actions.c:507
 msgid "log name regexp"
 msgstr "logboeknaam reg. expressie"
 
 #
-#: logview/actions.c:509
+#: logview/actions.c:508
 msgid "process regexp"
 msgstr "proces reg. expressie"
 
-#: logview/actions.c:510
+#: logview/actions.c:509
 msgid "message regexp"
 msgstr "bericht reg. expressie"
 
-#: logview/actions.c:511
+#: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
 msgstr "actie die moet worden uitgevoerd als de expressie klopt"
 
 #
-#: logview/actions.c:512
+#: logview/actions.c:511
 msgid "description"
 msgstr "beschrijving"
 
 #
-#: logview/actions.c:772
+#: logview/actions.c:771
 msgid "_Description:"
 msgstr "Be_schrijving:"
 
-#: logview/actions.c:781
+#: logview/actions.c:780
 msgid "Description of this entry."
 msgstr "Omschrijving van deze invoer."
 
-#: logview/actions.c:805
+#: logview/actions.c:804
 #, c-format
 msgid ""
 "tag: [%s]\n"

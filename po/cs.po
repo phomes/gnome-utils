@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.2\n"
-"POT-Creation-Date: 2002-08-27 05:07+0200\n"
+"POT-Creation-Date: 2002-11-07 12:12+0000\n"
 "PO-Revision-Date: 2002-08-27 09:49GMT\n"
 "Last-Translator: Michal Bukovjan <bukm@centrum.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -464,8 +464,10 @@ msgid "GNOME Character Map"
 msgstr "Mapa znaků GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
-msgstr "Vybírejte, kopírujte a vkládejte znaky z vašeho písma do jiných aplikací"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
+msgstr ""
+"Vybírejte, kopírujte a vkládejte znaky z vašeho písma do jiných aplikací"
 
 #: gcharmap/src/callbacks.c:113
 msgid "del"
@@ -709,20 +711,20 @@ msgstr "Slovník"
 msgid "_Word: "
 msgstr "Sl_ovo:"
 
-#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Slovo"
 
-#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:837 gdictsrc/gdict-app.c:838
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Položka se slovem"
 
-#: gdictsrc/gdict-app.c:836
+#: gdictsrc/gdict-app.c:837
 msgid "Enter a Word or select one from the list below"
 msgstr "Zadejte slovo nebo jedno vyberte ze seznamu níže"
 
-#: gdictsrc/gdict-app.c:839
+#: gdictsrc/gdict-app.c:840
 msgid "Look Up for a Word"
 msgstr "Hledat slovo"
 
@@ -1347,7 +1349,8 @@ msgstr "Počáteční adresář neexistuje"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
-msgstr "Nelze ukázat příkazový řádek pro hledání. Zadejte prosím kritéria hledání."
+msgstr ""
+"Nelze ukázat příkazový řádek pro hledání. Zadejte prosím kritéria hledání."
 
 #: gsearchtool/gsearchtool.c:1024
 msgid "Search Command Line"
@@ -1582,77 +1585,77 @@ msgstr "Prohlížeč systémových záznamů GNOME"
 msgid "Copyright (C) 1998"
 msgstr "Copyright (C) 1998"
 
-#: logview/actions.c:75
+#: logview/actions.c:74
 msgid "Action database"
 msgstr "Databáze akcí"
 
-#: logview/actions.c:85
+#: logview/actions.c:84
 msgid "Actions"
 msgstr "Akce"
 
-#: logview/actions.c:153
+#: logview/actions.c:152
 msgid "_Add"
 msgstr "Přid_at"
 
-#: logview/actions.c:160
+#: logview/actions.c:159
 msgid "_Edit"
 msgstr "U_pravit"
 
-#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
+#: logview/actions.c:166 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "Odst_ranit"
 
-#: logview/actions.c:260
+#: logview/actions.c:259
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Nelze otevřít databázi akcí <%s>! Otevření selhalo."
 
-#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
-#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
+#: logview/actions.c:294 logview/actions.c:307 logview/actions.c:318
+#: logview/actions.c:329 logview/actions.c:340 logview/actions.c:351
 msgid "Error parsing actions data base"
 msgstr "Chyba při zpracování databáze akcí"
 
-#: logview/actions.c:386
+#: logview/actions.c:385
 msgid "Can't write to actions database!"
 msgstr "Nelze zapsat do databáze akcí!"
 
-#: logview/actions.c:486
+#: logview/actions.c:485
 msgid "Error while executing specified action"
 msgstr "Chyba při spuštění zadané akce"
 
-#: logview/actions.c:507
+#: logview/actions.c:506
 msgid "<empty>"
 msgstr "<prázdný>"
 
-#: logview/actions.c:508
+#: logview/actions.c:507
 msgid "log name regexp"
 msgstr "reg. výraz pro název záznamu"
 
-#: logview/actions.c:509
+#: logview/actions.c:508
 msgid "process regexp"
 msgstr "reg. výraz pro proces"
 
-#: logview/actions.c:510
+#: logview/actions.c:509
 msgid "message regexp"
 msgstr "reg. výraz pro zprávu"
 
-#: logview/actions.c:511
+#: logview/actions.c:510
 msgid "action to execute when regexps are TRUE"
 msgstr "akce, kterou provést když reg. výrazy platí"
 
-#: logview/actions.c:512
+#: logview/actions.c:511
 msgid "description"
 msgstr "popis"
 
-#: logview/actions.c:772
+#: logview/actions.c:771
 msgid "_Description:"
 msgstr "_Popis:"
 
-#: logview/actions.c:781
+#: logview/actions.c:780
 msgid "Description of this entry."
 msgstr "Popis této položky."
 
-#: logview/actions.c:805
+#: logview/actions.c:804
 #, c-format
 msgid ""
 "tag: [%s]\n"
@@ -1968,7 +1971,8 @@ msgstr "Poslední změna: "
 
 #: logview/logview.c:722 logview/logview.c:788
 msgid "Too many open logs. Close one and try again"
-msgstr "Příliš mnoho otevřených souborů se záznamy. Zavřete nějaký a zkuste to znovu."
+msgstr ""
+"Příliš mnoho otevřených souborů se záznamy. Zavřete nějaký a zkuste to znovu."
 
 #: logview/logview.c:734
 msgid "File already opened"
@@ -2216,4 +2220,3 @@ msgid ""
 msgstr ""
 "Nelze nalézt program pro archivaci (tar)!\n"
 "Tento program se používá k vytváření archívů."
-
