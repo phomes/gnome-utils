@@ -1,13 +1,13 @@
 # traditional Chinese translation of gnome-utils.
-# Copyright (C) 1999-2002 Free Software Foundation, Inc.
+# Copyright (C) 1999-2003 Free Software Foundation, Inc.
 # Ming-Yen Hsu <myhsu@cyberdude.com>, 1999.
-# Abel Cheung <maddog@linux.org.hk>, 2001-2002
+# Abel Cheung <maddog@linux.org.hk>, 2001-2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.4.1.2\n"
-"POT-Creation-Date: 2002-02-02 06:15-0500\n"
-"PO-Revision-Date: 2002-06-02 21:20+0800\n"
+"POT-Creation-Date: 2003-01-13 12:24+0100\n"
+"PO-Revision-Date: 2003-01-14 04:23+0800\n"
 "Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
 "Language-Team: traditional Chinese <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -224,7 +224,7 @@ msgstr "字元："
 #: gcharmap/src/asciiselect.c:123
 msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
 msgstr ""
-"-*-*-bold-r-normal-*-*-180-*-*-*-*-big5-0,-adobe-helvetica-bold-r-normal-*-*-"
+"-*-*-*-r-normal-*-*-180-*-*-*-*-big5-0,-adobe-helvetica-bold-r-normal-*-*-"
 "180-*-*-p-*-*-*,*-r-*"
 
 #: gcharmap/src/callbacks.c:43 gcharmap/src/interface.c:141
@@ -270,8 +270,8 @@ msgstr "準備複製的文字："
 #: gcharmap/src/interface.c:215
 msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
 msgstr ""
-"-*-*-medium-r-normal-*-12-*-*-*-*-*-big5-0,-*-helvetica-medium-r-normal-*-12-"
-"*-*-*-p-*-*-*,*-r-*"
+"-*-*-medium-r-normal-*-12-*-*-*-*-*-big5-0,"
+"-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
 
 #: gcharmap/src/interface.c:238 gcharmap/src/menus.c:114 logview/logview.c:100
 #: mini-utils/gcolorsel/menus.c:921 stripchart/chart-app.c:258
@@ -279,7 +279,7 @@ msgid "Exit"
 msgstr "離開"
 
 #: gcharmap/src/interface.c:239 gcharmap/src/menus.c:104
-#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:181
+#: gdictsrc/gdict-app.c:518 gtt/toolbar.c:181
 msgid "Copy"
 msgstr "複製"
 
@@ -363,7 +363,7 @@ msgstr "設定按鈕可否獲得焦點"
 msgid "Insert character(s) by choosing character codes"
 msgstr "選擇字元碼並插入字元"
 
-#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:177
+#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:515 gtt/toolbar.c:177
 msgid "Cut"
 msgstr "剪下"
 
@@ -375,7 +375,7 @@ msgstr "剪下所選擇的範圍"
 msgid "Copy the selection"
 msgstr "複製所選擇的範圍"
 
-#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
+#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:521 gtt/toolbar.c:185
 msgid "Paste"
 msgstr "貼上"
 
@@ -405,7 +405,7 @@ msgstr "無法啟動字典程式；很可能是因為無法連接 http://www.dict.org。"
 #. * label; FIXME: Memory leak
 #.
 #: gdictsrc/dict.c:637 gdictsrc/gdict-pref-dialog.c:502
-#: gdictsrc/gdict-pref-dialog.c:546 gdictsrc/gdict-speller.c:393
+#: gdictsrc/gdict-pref-dialog.c:546 gdictsrc/gdict-speller.c:392
 msgid "Cannot connect to server"
 msgstr "無法連接伺服器"
 
@@ -417,35 +417,35 @@ msgstr ""
 "MIT 字典伺服器的用戶端程式。\n"
 "網站：http://gdict.dhs.org/，http://www.psilord.com/code/"
 
-#: gdictsrc/gdict-app.c:117
+#: gdictsrc/gdict-app.c:116
 msgid "Spell-checking..."
 msgstr "正在進行拼字檢查..."
 
-#: gdictsrc/gdict-app.c:125
+#: gdictsrc/gdict-app.c:124
 msgid "Spell check done"
 msgstr "拼字檢查完成"
 
-#: gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
+#: gdictsrc/gdict-app.c:132 gdictsrc/gdict-app.c:265
 msgid "No matches found"
 msgstr "找不到符合的結果"
 
-#: gdictsrc/gdict-app.c:250
+#: gdictsrc/gdict-app.c:249
 msgid "Looking up word..."
 msgstr "正在檢索單字..."
 
-#: gdictsrc/gdict-app.c:258
+#: gdictsrc/gdict-app.c:257
 msgid "Lookup done"
 msgstr "完成檢索"
 
-#: gdictsrc/gdict-app.c:278
+#: gdictsrc/gdict-app.c:277
 msgid "String not found"
 msgstr "找不到字串"
 
-#: gdictsrc/gdict-app.c:381
+#: gdictsrc/gdict-app.c:380
 msgid "Find:"
 msgstr "搜尋："
 
-#: gdictsrc/gdict-app.c:413
+#: gdictsrc/gdict-app.c:412
 msgid ""
 "Unable to perform requested operation, either because the server\n"
 "you are using is down or because you are not connected to the\n"
@@ -455,44 +455,44 @@ msgstr ""
 "無法進行所要求的動作，這是因為你使用的伺服器已離線或是你根本未接駁\n"
 "互聯網。如果是後者，請接駁並再嘗試。"
 
-#: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
+#: gdictsrc/gdict-app.c:451 gdictsrc/gdict-app.c:508
 #: gdictsrc/gdict-applet.c:313
 msgid "Look up"
 msgstr "檢索"
 
-#: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
+#: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 msgid "Look up word in dictionary"
 msgstr "在字典中檢索單字"
 
-#: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
+#: gdictsrc/gdict-app.c:454 gdictsrc/gdict-app.c:511
 msgid "Spell"
 msgstr "拼字"
 
-#: gdictsrc/gdict-app.c:456 gdictsrc/gdict-app.c:513
+#: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
 msgid "Check word spelling"
 msgstr "校對拼字"
 
-#: gdictsrc/gdict-app.c:517
+#: gdictsrc/gdict-app.c:516
 msgid "Cut to Clipboard"
 msgstr "剪下至剪貼簿"
 
-#: gdictsrc/gdict-app.c:520
+#: gdictsrc/gdict-app.c:519
 msgid "Copy to Clipboard"
 msgstr "複製至剪貼簿"
 
-#: gdictsrc/gdict-app.c:523
+#: gdictsrc/gdict-app.c:522
 msgid "Paste Clipboard Contents"
 msgstr "貼上剪貼簿的內容"
 
-#: gdictsrc/gdict-app.c:526
+#: gdictsrc/gdict-app.c:525
 msgid "Settings"
 msgstr "設定"
 
-#: gdictsrc/gdict-app.c:527
+#: gdictsrc/gdict-app.c:526
 msgid "Server to use, default search strategy, fonts"
 msgstr "使用的伺服器、預設搜尋方法、字型"
 
-#: gdictsrc/gdict-app.c:588
+#: gdictsrc/gdict-app.c:587
 msgid "Word definition"
 msgstr "字詞的定義"
 
@@ -516,7 +516,7 @@ msgstr "校對拼字..."
 msgid "Cannot create applet!\n"
 msgstr "無法開啟面板程式！\n"
 
-#: gdictsrc/gdict-defbox.c:524 gdictsrc/gdict-speller.c:417
+#: gdictsrc/gdict-defbox.c:520 gdictsrc/gdict-speller.c:416
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "詢問時出現錯誤：%s"
@@ -611,23 +611,23 @@ msgstr "搜尋所有資料庫"
 msgid "The server you specified could not be found."
 msgstr "找不到指定的伺服器"
 
-#: gdictsrc/gdict-speller.c:118
+#: gdictsrc/gdict-speller.c:117
 msgid "Word:"
 msgstr "單字："
 
-#: gdictsrc/gdict-speller.c:127
+#: gdictsrc/gdict-speller.c:126
 msgid "Search Strategy:"
 msgstr "搜尋方法："
 
-#: gdictsrc/gdict-speller.c:150
+#: gdictsrc/gdict-speller.c:149
 msgid "Find Words..."
 msgstr "尋找單字..."
 
-#: gdictsrc/gdict-speller.c:151
+#: gdictsrc/gdict-speller.c:150
 msgid "Look up Word..."
 msgstr "檢索單字..."
 
-#: gdictsrc/gdict-speller.c:163
+#: gdictsrc/gdict-speller.c:162
 msgid "Spell checker"
 msgstr "拼字校對程式"
 
@@ -884,7 +884,7 @@ msgstr "沒有這個 mime 類型可使用的指令"
 
 #: gtt/app.c:115 gtt/app.c:227
 msgid "no project selected"
-msgstr "沒有選擇任何計劃"
+msgstr "沒有選擇任何專案"
 
 #: gtt/app.c:217
 msgid "00:00"
@@ -902,7 +902,7 @@ msgstr "合計"
 
 #: gtt/ctree.c:519
 msgid "Total time spent on this project."
-msgstr "此計劃總共使用的時間。"
+msgstr "本專案總共使用的時間。"
 
 #: gtt/ctree.c:524
 msgid "Entry"
@@ -910,7 +910,7 @@ msgstr ""
 
 #: gtt/ctree.c:526
 msgid "Time spent under the current diary entry."
-msgstr ""
+msgstr "工作日誌中目前的項目所使用的時間。"
 
 #: gtt/ctree.c:532 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
@@ -918,7 +918,7 @@ msgstr "今天"
 
 #: gtt/ctree.c:534
 msgid "Time spent on this project today."
-msgstr "此計劃在今天所佔的時間。"
+msgstr "本專案在今天所佔的時間。"
 
 #: gtt/ctree.c:539
 msgid "Week"
@@ -926,7 +926,7 @@ msgstr "星期"
 
 #: gtt/ctree.c:541
 msgid "Time spent on this project this week."
-msgstr "此計劃在今週所佔的時間。"
+msgstr "本專案在今週所佔的時間。"
 
 #: gtt/ctree.c:547
 msgid "Month"
@@ -934,7 +934,7 @@ msgstr "月"
 
 #: gtt/ctree.c:549
 msgid "Time spent on this project this month."
-msgstr "此計劃今個月所用的時間。"
+msgstr "本專案今個月所用的時間。"
 
 #: gtt/ctree.c:555
 msgid "Year"
@@ -942,7 +942,7 @@ msgstr "年"
 
 #: gtt/ctree.c:557
 msgid "Time spent on this project this year."
-msgstr "此計劃今年所用的時間。"
+msgstr "本專案今年所用的時間。"
 
 #: gtt/ctree.c:563
 msgid "Title"
@@ -950,7 +950,7 @@ msgstr "標題"
 
 #: gtt/ctree.c:564 gtt/menucmd.c:148
 msgid "Project Title"
-msgstr "計劃標題"
+msgstr "專案標題"
 
 #: gtt/ctree.c:569 gtt/ctree.c:570 gtt/menucmd.c:149 stripchart/params.c:654
 msgid "Description"
@@ -958,15 +958,15 @@ msgstr "描述"
 
 #: gtt/ctree.c:575 gtt/ghtml.c:95 gtt/ghtml.c:220
 msgid "Diary Entry"
-msgstr ""
+msgstr "工作日誌項目"
 
 #: gtt/ctree.c:577
 msgid "The current diary entry"
-msgstr ""
+msgstr "工作日誌目前的項目"
 
 #: gtt/ctree.c:584
 msgid "Estimated Project Start Date"
-msgstr "計劃估計開始的日期"
+msgstr "估計專案開始的時間"
 
 #: gtt/ctree.c:589
 msgid "End"
@@ -974,7 +974,7 @@ msgstr "結束"
 
 #: gtt/ctree.c:591
 msgid "Estimated Project Completion Date"
-msgstr "估計計劃完成時間"
+msgstr "估計專案完成的時間"
 
 #: gtt/ctree.c:596
 msgid "Due"
@@ -983,7 +983,7 @@ msgstr "到期"
 #: gtt/ctree.c:598
 msgid ""
 "Due Date: the date by which the project absolutely must be completed by."
-msgstr ""
+msgstr "到期日：專案必須完成的日期。"
 
 #: gtt/ctree.c:605 mini-utils/guname/info.c:61
 msgid "Size"
@@ -991,7 +991,7 @@ msgstr "大小"
 
 #: gtt/ctree.c:607
 msgid "Sizing: How much work it will take to finish this project."
-msgstr ""
+msgstr "大小：完成本專案需要多少工作量。"
 
 #: gtt/ctree.c:613
 msgid "Done"
@@ -999,7 +999,7 @@ msgstr "已完成"
 
 #: gtt/ctree.c:615
 msgid "Percent Complete: How much of this project has been finished till now."
-msgstr ""
+msgstr "完成百分比：到目前為止，專案究竟完成了多少。"
 
 #: gtt/ctree.c:622
 msgid "U"
@@ -1007,7 +1007,7 @@ msgstr "U"
 
 #: gtt/ctree.c:624
 msgid "Urgency: Does this project need to be done soon, done quickly?"
-msgstr ""
+msgstr "緊急：本專案是否逼切？"
 
 #: gtt/ctree.c:630
 msgid "Imp"
@@ -1015,7 +1015,7 @@ msgstr "重要"
 
 #: gtt/ctree.c:632
 msgid "Importance: How important is this project?"
-msgstr "重要性：此計劃的重要程度為何？"
+msgstr "重要性：本專案的重要程度為何？"
 
 #: gtt/ctree.c:638 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
@@ -1024,7 +1024,7 @@ msgstr "情況"
 
 #: gtt/ctree.c:640
 msgid "The current status of this project."
-msgstr "關於此計劃目前的情況。"
+msgstr "關於本專案目前的情況。"
 
 #: gtt/ctree.c:975 gtt/glade/project_properties.glade.h:25
 msgid "Low"
@@ -1046,7 +1046,7 @@ msgstr "未開始"
 msgid "In Progress"
 msgstr "進行中"
 
-#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:988 gtt/glade/project_properties.glade.h:37
 msgid "On Hold"
 msgstr "暫時擱置"
 
@@ -1068,6 +1068,8 @@ msgid ""
 "Cannot open the project data file\n"
 "\t%s\n"
 msgstr ""
+"無法開啟專案資料檔\n"
+"\t%s\n"
 
 #: gtt/err-throw.c:70
 #, c-format
@@ -1075,6 +1077,8 @@ msgid ""
 "Cannot write the project data file\n"
 "\t%s\n"
 msgstr ""
+"無法寫入專案資料檔\n"
+"\t%s\n"
 
 #: gtt/err-throw.c:75
 #, c-format
@@ -1083,6 +1087,9 @@ msgid ""
 "\t%s\n"
 "doesn't seem to be a GTT project data file\n"
 msgstr ""
+"檔案\n"
+"\t%s\n"
+"不像是 GTT 專案資料檔\n"
 
 #: gtt/err-throw.c:81
 #, c-format
@@ -1091,6 +1098,9 @@ msgid ""
 "\t%s\n"
 "seems to be corrupt\n"
 msgstr ""
+"檔案\n"
+"\t%s\n"
+"可能損壞了\n"
 
 #: gtt/err-throw.c:87
 #, c-format
@@ -1117,11 +1127,11 @@ msgstr ""
 
 #: gtt/file-io.c:376
 msgid "project %t started"
-msgstr "已開始計劃 %t"
+msgstr "已開始專案 %t"
 
 #: gtt/file-io.c:379
 msgid "stopped project %t"
-msgstr "已停止計劃 %t"
+msgstr "已停止專案 %t"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
@@ -1202,11 +1212,11 @@ msgstr ""
 
 #: gtt/ghtml.c:427 gtt/glade/task_properties.glade.h:20
 msgid "Overtime"
-msgstr ""
+msgstr "逾時"
 
 #: gtt/ghtml.c:430
 msgid "Double Overtime"
-msgstr ""
+msgstr "過量逾時"
 
 #: gtt/ghtml.c:433 gtt/glade/task_properties.glade.h:12
 msgid "Flat Fee"
@@ -1214,7 +1224,7 @@ msgstr ""
 
 #: gtt/ghtml.c:453
 msgid "Error - Unknown"
-msgstr ""
+msgstr "錯誤 - 原因不明"
 
 #: gtt/ghtml.c:703
 msgid "unknown token: >>>>"
@@ -1231,7 +1241,7 @@ msgstr "找不到檔案 %s。"
 
 #: gtt/journal.c:110
 msgid "(null)"
-msgstr ""
+msgstr "(無)"
 
 #: gtt/journal.c:119
 msgid "Unkown Error"
@@ -1249,7 +1259,7 @@ msgstr ""
 #: gtt/journal.c:259 gtt/proj.c:716 gtt/proj.c:1539 gtt/proj.c:1667
 #: gtt/proj.c:1807
 msgid "New Diary Entry"
-msgstr ""
+msgstr "新增工作日誌項目"
 
 #: gtt/journal.c:447
 msgid "Save HTML To File"
@@ -1284,7 +1294,7 @@ msgid ""
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
 msgstr ""
 "似乎有另一個 GTimeTracker 正在執行中。\n"
-"按下 OK 強制啟動 GTimeTracker，或按下「取消」結束。"
+"按下 OK 強行啟動 GTimeTracker，或按下「取消」結束。"
 
 #: gtt/main.c:126
 msgid "Cannot create pid-file!"
@@ -1300,7 +1310,7 @@ msgstr "錯誤"
 
 #: gtt/main.c:272
 msgid "Shall I setup a new configuration?"
-msgstr ""
+msgstr "應否使用新的組態？"
 
 #: gtt/main.c:439
 msgid "Specify geometry"
@@ -1308,11 +1318,11 @@ msgstr "指定位置及大小"
 
 #: gtt/main.c:441
 msgid "Select a project on startup"
-msgstr "在啟動程式時選擇計劃"
+msgstr "在啟動程式時選擇專案"
 
 #: gtt/main.c:441
 msgid "PROJECT"
-msgstr "計劃"
+msgstr "專案"
 
 #: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:204 gtt/menucmd.c:240
 msgid "Warning"
@@ -1328,7 +1338,7 @@ msgstr ""
 
 #: gtt/menucmd.c:142
 msgid "New Project..."
-msgstr "新增計劃..."
+msgstr "新增專案..."
 
 #: gtt/menucmd.c:224 gtt/toolbar.c:167
 msgid "Reload Configuration File"
@@ -1353,7 +1363,7 @@ msgstr "匯出目前的狀態"
 
 #: gtt/menus.c:33
 msgid "_New Project..."
-msgstr "新增計劃(_N)..."
+msgstr "新增專案(_N)..."
 
 #: gtt/menus.c:36
 msgid "_Reload Configuration File"
@@ -1385,7 +1395,7 @@ msgstr ""
 
 #: gtt/menus.c:72 gtt/menus.c:160
 msgid "New Diary _Entry"
-msgstr ""
+msgstr "新增工作日誌項目(_E)"
 
 #: gtt/menus.c:73 gtt/menus.c:161
 msgid "Change the current task for this project"
@@ -1429,7 +1439,7 @@ msgstr "啟動(_A)"
 
 #: gtt/menus.c:116
 msgid "Start the timer running"
-msgstr ""
+msgstr "啟動計時器"
 
 #: gtt/menus.c:121
 msgid "Sto_p"
@@ -1463,14 +1473,14 @@ msgstr ""
 
 #: gtt/proj.c:697
 msgid "Old GTT Tasks"
-msgstr ""
+msgstr "舊格式 GTT 工作"
 
 #: gtt/props-proj.c:94 gtt/props-proj.c:95 gtt/props-task.c:75
 #: gtt/props-task.c:76
 msgid "empty"
 msgstr "空白"
 
-#: gtt/timer.c:117
+#: gtt/timer.c:127
 #, c-format
 msgid ""
 "The keyboard and mouse have been idle\n"
@@ -1480,7 +1490,7 @@ msgid ""
 "Do you want to restart it?"
 msgstr ""
 
-#: gtt/timer.c:125
+#: gtt/timer.c:135
 msgid "System Idle"
 msgstr ""
 
@@ -1491,7 +1501,7 @@ msgstr "[GTT]新增"
 
 #: gtt/toolbar.c:160
 msgid "Create a New Project..."
-msgstr ""
+msgstr "建立新的專案..."
 
 #: gtt/toolbar.c:166
 msgid "Reload"
@@ -1507,15 +1517,15 @@ msgstr "儲存組態檔"
 
 #: gtt/toolbar.c:178
 msgid "Cut Selected Project"
-msgstr "剪下被選擇的計劃"
+msgstr "剪下被選擇的專案"
 
 #: gtt/toolbar.c:182
 msgid "Copy Selected Project"
-msgstr "複製被選擇的計劃"
+msgstr "複製被選擇的專案"
 
 #: gtt/toolbar.c:186
 msgid "Paste Project"
-msgstr "貼上計劃"
+msgstr "貼上專案"
 
 #: gtt/toolbar.c:193 gtt/glade/journal.glade.h:2
 msgid "Journal"
@@ -1527,11 +1537,11 @@ msgstr ""
 
 #: gtt/toolbar.c:199
 msgid "Props"
-msgstr ""
+msgstr "屬性"
 
 #: gtt/toolbar.c:200
 msgid "Edit Project Properties..."
-msgstr ""
+msgstr "修改專案的屬性..."
 
 #: gtt/toolbar.c:204
 msgid "Timer"
@@ -1547,7 +1557,7 @@ msgstr "行事曆"
 
 #: gtt/toolbar.c:212
 msgid "View Calendar"
-msgstr "觀看行事曆"
+msgstr "檢視行事曆"
 
 #: gtt/toolbar.c:225
 msgid "Prefs"
@@ -1555,7 +1565,7 @@ msgstr "偏好設定"
 
 #: gtt/toolbar.c:226
 msgid "Edit Preferences..."
-msgstr "編輯偏好設定..."
+msgstr "修改偏好設定..."
 
 #: gtt/toolbar.c:230
 msgid "Manual"
@@ -1639,39 +1649,39 @@ msgstr ""
 
 #: gtt/glade/interval_popup.glade.h:6
 msgid "Insert Diary Entry"
-msgstr ""
+msgstr "插入新的工作日誌項目"
 
 #: gtt/glade/interval_popup.glade.h:7
 msgid "Insert a new diary entry above this time interval."
-msgstr ""
+msgstr "在本時段上插入新的工作日誌項目。"
 
 #: gtt/glade/interval_popup.glade.h:8
 msgid "Merge Down"
-msgstr ""
+msgstr "向下合併"
 
 #: gtt/glade/interval_popup.glade.h:9
 msgid "Merge Into Interval Above"
-msgstr ""
+msgstr "和上面的時段合併"
 
 #: gtt/glade/interval_popup.glade.h:10
 msgid "Merge Into Interval Below"
-msgstr ""
+msgstr "和下面的時段合併"
 
 #: gtt/glade/interval_popup.glade.h:11
 msgid "Merge Up"
-msgstr ""
+msgstr "向上合併"
 
 #: gtt/glade/interval_popup.glade.h:12
 msgid "New Interval"
-msgstr ""
+msgstr "新增時段"
 
 #: gtt/glade/interval_popup.glade.h:13
 msgid "Paste Diary Entry"
-msgstr ""
+msgstr "貼上工作日誌項目"
 
 #: gtt/glade/interval_popup.glade.h:14 gtt/glade/task_popup.glade.h:8
 msgid "Paste a previously cut diary entry."
-msgstr ""
+msgstr "貼上以往剪下的工作日誌項目"
 
 #: gtt/glade/journal.glade.h:1 mini-utils/gcolorsel/menus.c:89
 #: mini-utils/gcolorsel/menus.c:913 mini-utils/gshutdown/gshutdown.c:155
@@ -1708,6 +1718,8 @@ msgid ""
 "This function is not yet implemented!\n"
 "Coming Soon, I hope!"
 msgstr ""
+"本功能仍未完成！\n"
+"希望日後可以使用！"
 
 #: gtt/glade/prefs.glade.h:1
 msgid "Display"
@@ -1735,6 +1747,8 @@ msgid ""
 "Entry that will be logged when a project starts. Use %t for the project "
 "title, %d for the description, etc. See the manual for more options."
 msgstr ""
+"當專案開始時寫入的紀錄。使用 %t 作為專案標題，%d 作為描述等等。詳情請參考手冊"
+"。"
 
 #: gtt/glade/prefs.glade.h:9
 #, no-c-format
@@ -1742,6 +1756,8 @@ msgid ""
 "Entry that will be logged when the project stops.  Use %t for the porject "
 "title, %d for the project description, etc. See the manual for more options."
 msgstr ""
+"當專案停止時寫入的紀錄。使用 %t 作為專案標題，%d 作為描述等等。詳情請參考手冊"
+"。"
 
 #: gtt/glade/prefs.glade.h:10
 msgid "Fields"
@@ -1773,7 +1789,7 @@ msgstr "其它"
 
 #: gtt/glade/prefs.glade.h:17
 msgid "No Project Command:"
-msgstr "沒有計劃時執行的指令："
+msgstr "沒有專案時執行的指令："
 
 #: gtt/glade/prefs.glade.h:18
 msgid "Project List Display"
@@ -1789,7 +1805,7 @@ msgstr "命令殼指令"
 
 #: gtt/glade/prefs.glade.h:21
 msgid "Show Current Diary Entry"
-msgstr ""
+msgstr "顯示目前的工作日誌項目"
 
 #: gtt/glade/prefs.glade.h:22
 msgid "Show Estimated Effort"
@@ -1797,35 +1813,35 @@ msgstr ""
 
 #: gtt/glade/prefs.glade.h:23
 msgid "Show Percent Complete"
-msgstr ""
+msgstr "顯示完成百分比"
 
 #: gtt/glade/prefs.glade.h:24
 msgid "Show Planned Project End Date"
-msgstr ""
+msgstr "顯示預計專案完成日期"
 
 #: gtt/glade/prefs.glade.h:25
 msgid "Show Planned Project Start Date"
-msgstr ""
+msgstr "顯示預計專案開始日期"
 
 #: gtt/glade/prefs.glade.h:26
 msgid "Show Project Description"
-msgstr ""
+msgstr "顯示有關專案的描述"
 
 #: gtt/glade/prefs.glade.h:27
 msgid "Show Project Due Date"
-msgstr ""
+msgstr "顯示預計專案的到期日"
 
 #: gtt/glade/prefs.glade.h:28
 msgid "Show Project Importance"
-msgstr "顯示計劃的重要性"
+msgstr "顯示專案的重要性"
 
 #: gtt/glade/prefs.glade.h:29
 msgid "Show Project Status"
-msgstr "顯示計劃的情況"
+msgstr "顯示專案的情況"
 
 #: gtt/glade/prefs.glade.h:30
 msgid "Show Project Urgency"
-msgstr "顯示計劃的緊急程度"
+msgstr "顯示專案的緊急程度"
 
 #: gtt/glade/prefs.glade.h:31
 msgid "Show Seconds"
@@ -1837,7 +1853,7 @@ msgstr "顯示狀態列"
 
 #: gtt/glade/prefs.glade.h:33
 msgid "Show Sub-Projects"
-msgstr "顯示"
+msgstr ""
 
 #: gtt/glade/prefs.glade.h:34
 msgid "Show Table Header"
@@ -1919,11 +1935,11 @@ msgstr "顯示「計時器」"
 msgid ""
 "Show the 'szing', that is, the estimated amount of work that it will take to "
 "perform this project."
-msgstr ""
+msgstr "顯示「大小」，即是估計完成本專案所需的工作量。"
 
 #: gtt/glade/prefs.glade.h:54
 msgid "Switch Project Command:"
-msgstr "切換計劃時執行的指令："
+msgstr "切換專案時執行的指令："
 
 #: gtt/glade/prefs.glade.h:55
 msgid ""
@@ -1955,24 +1971,24 @@ msgstr ""
 
 #: gtt/glade/project_properties.glade.h:1
 msgid "        "
-msgstr ""
+msgstr "        "
 
 #: gtt/glade/project_properties.glade.h:2
 msgid "            "
-msgstr ""
+msgstr "            "
 
 #: gtt/glade/project_properties.glade.h:3
 msgid "                        "
-msgstr ""
+msgstr "                        "
 
 #: gtt/glade/project_properties.glade.h:5
 #, no-c-format
 msgid "% Complete"
-msgstr ""
+msgstr "完成百分比"
 
 #: gtt/glade/project_properties.glade.h:6
 msgid "A title to assign to this project"
-msgstr ""
+msgstr "適合本專案的標題"
 
 #: gtt/glade/project_properties.glade.h:7
 msgid "Auto-merge Gap:"
@@ -1995,7 +2011,7 @@ msgstr ""
 
 #: gtt/glade/project_properties.glade.h:13
 msgid "Due Date:"
-msgstr ""
+msgstr "到期日："
 
 #: gtt/glade/project_properties.glade.h:14
 msgid "Flat Fee:"
@@ -2054,89 +2070,94 @@ msgid "Not Set"
 msgstr ""
 
 #: gtt/glade/project_properties.glade.h:30
-#: gtt/glade/task_properties.glade.h:18
-msgid "Notes:"
+msgid ""
+"Notes:\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:32
+#: gtt/glade/project_properties.glade.h:38
 msgid "Overtime Rate:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:33
+#: gtt/glade/project_properties.glade.h:39
 msgid "Planned Finish:"
-msgstr ""
+msgstr "預算完成時間："
 
-#: gtt/glade/project_properties.glade.h:34
+#: gtt/glade/project_properties.glade.h:40
 msgid "Planned Start:"
-msgstr ""
+msgstr "預算開始時間："
 
-#: gtt/glade/project_properties.glade.h:35
+#: gtt/glade/project_properties.glade.h:41
 msgid "Planning"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:36
+#: gtt/glade/project_properties.glade.h:42
 msgid "Project"
-msgstr "計劃"
+msgstr "專案"
 
-#: gtt/glade/project_properties.glade.h:37
+#: gtt/glade/project_properties.glade.h:43
 msgid "Project Description:"
-msgstr "計劃描述："
+msgstr "專案描述："
 
-#: gtt/glade/project_properties.glade.h:38
+#: gtt/glade/project_properties.glade.h:44
 msgid "Project Title:"
-msgstr "計劃標題："
+msgstr "專案標題："
 
-#: gtt/glade/project_properties.glade.h:39
+#: gtt/glade/project_properties.glade.h:45
 msgid "Rates"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:40
+#: gtt/glade/project_properties.glade.h:46
 msgid "Regular Rate:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:41
+#: gtt/glade/project_properties.glade.h:47
 msgid "Status:"
 msgstr "情況："
 
-#: gtt/glade/project_properties.glade.h:42
+#: gtt/glade/project_properties.glade.h:48
 msgid "The dollars per hour charged for overtime work on this project."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:43
+#: gtt/glade/project_properties.glade.h:49
 msgid "The dollars per hour normally charged for this project."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:44
+#: gtt/glade/project_properties.glade.h:50
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:45
+#: gtt/glade/project_properties.glade.h:51
 msgid "Time below which an interval is merged with its neighbors"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:46
+#: gtt/glade/project_properties.glade.h:52
 msgid "Urgency:"
 msgstr "緊急程度："
 
-#: gtt/glade/project_properties.glade.h:47
+#: gtt/glade/project_properties.glade.h:53
 msgid "What is the status of this project?"
-msgstr ""
+msgstr "本專案的情況如何？"
 
-#: gtt/glade/project_properties.glade.h:48
+#: gtt/glade/project_properties.glade.h:54
 msgid "a short description that will be printed on the invoice."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:49
+#: gtt/glade/project_properties.glade.h:55
 msgid "seconds"
 msgstr "秒"
 
 #: gtt/glade/task_popup.glade.h:1
 msgid "Add a new time interval"
-msgstr ""
+msgstr "新增時段"
 
 #: gtt/glade/task_popup.glade.h:2
 msgid "Cut Entry & _Times"
-msgstr ""
+msgstr "剪下項目及時間(_T)"
 
 #: gtt/glade/task_popup.glade.h:3
 msgid "Delete the diary entry only, keep the time intervals"
@@ -2156,23 +2177,23 @@ msgstr ""
 
 #: gtt/glade/task_popup.glade.h:7
 msgid "New Time Interval"
-msgstr ""
+msgstr "新增時段"
 
 #: gtt/glade/task_popup.glade.h:9
 msgid "_Cut Diary Entry"
-msgstr ""
+msgstr "剪下工作日誌項目(_C)"
 
 #: gtt/glade/task_popup.glade.h:10
 msgid "_Edit Diary Entry"
-msgstr ""
+msgstr "修改工作日誌項目(_E)"
 
 #: gtt/glade/task_popup.glade.h:11
 msgid "_New Diary Entry"
-msgstr ""
+msgstr "新增工作日誌項目(_N)"
 
 #: gtt/glade/task_popup.glade.h:12
 msgid "_Paste Diary Entry"
-msgstr ""
+msgstr "貼上工作日誌項目(_P)"
 
 #: gtt/glade/task_properties.glade.h:1
 msgid "A set of private notes that will not be printed on an invoice."
@@ -2200,11 +2221,11 @@ msgstr ""
 
 #: gtt/glade/task_properties.glade.h:9
 msgid "Diary Entry Properties"
-msgstr ""
+msgstr "工作日誌項目屬性"
 
 #: gtt/glade/task_properties.glade.h:10
 msgid "Diary Entry:"
-msgstr ""
+msgstr "工作日誌項目："
 
 #: gtt/glade/task_properties.glade.h:11
 msgid "Fee rate to be charged for this task."
@@ -2225,9 +2246,13 @@ msgid ""
 "\"Paid\" means that it should no longer be included on invoices."
 msgstr ""
 
+#: gtt/glade/task_properties.glade.h:18
+msgid "Notes:"
+msgstr ""
+
 #: gtt/glade/task_properties.glade.h:19
 msgid "OverOver"
-msgstr ""
+msgstr "過量逾時"
 
 #: gtt/glade/task_properties.glade.h:23
 msgid ""
@@ -2249,9 +2274,9 @@ msgid ""
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"此程式是 GNOME 計劃其中一員。紀錄檔檢視程式是沒有使用保証的。它是自由軟件，"
-"歡迎根據 GNU General Public License 的使用條款分發。承蒙 Tuomas Kuosmanen"
-"（即 tigert）提供紀錄檔圖示。"
+"此程式是 GNOME 專案其中一員。紀錄檔檢視程式是沒有使用保証的。它是自由軟件，歡"
+"迎根據 GNU General Public License 的使用條款分發。承蒙 Tuomas Kuosmanen（即 "
+"tigert）提供紀錄檔圖示。"
 
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
 #: logview/about.c:55
@@ -4865,7 +4890,7 @@ msgstr "GNOME 企鵝"
 
 #: mini-utils/gpenguin/gpenguin.desktop.in.h:2
 msgid "Let a cute pinguin chase your pointer"
-msgstr ""
+msgstr "讓可愛的小企鵝追趕鼠標"
 
 #: mini-utils/gnome-run/gnome-run.desktop.in.h:1
 msgid "Prompts the user for a program to run"
@@ -4881,7 +4906,7 @@ msgstr "以類似‘more’及‘less’的方式逐頁顯示檔案"
 
 #: mini-utils/gfontsel/gfontsel.desktop.in.h:2
 msgid "Select a font for pasting"
-msgstr ""
+msgstr "選取字型名稱並將之加入剪貼簿內"
 
 #: mini-utils/gcolorsel/gcolorsel.desktop.in.h:1
 msgid "Browse available X11 colors."
