@@ -1,587 +1,965 @@
 # gnome-utils hungarian po 
 # Copyright (C) 1999 Free Software Foundation, Inc.
-# Shooby Ban <bansz@szif.hu>, 1999.
+# Szabolcs Ban <shooby@gnome.hu>, 1999.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 1.0.0\n"
-"POT-Creation-Date: 2000-03-08 16:44+0100\n"
-"PO-Revision-Date: 1999-02-20 18:37+01:00\n"
-"Last-Translator: Shooby Ban <bansz@szif.hu>\n"
+"POT-Creation-Date: 2000-10-03 10:56+0200\n"
+"PO-Revision-Date: 2000-10-03 13:22+0200\n"
+"Last-Translator: Szabolcs Ban <shooby@gnome.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gcalc/gcalc.c:36
+#: gcalc/gcalc.c:37
 msgid "The Gnome Calculator"
 msgstr "GNOME számológép"
 
-#: gcalc/gcalc.c:39
+#: gcalc/gcalc.c:40
 msgid "Simple double precision calculator similiar to xcalc"
 msgstr "Egyszerû duplapontosságú számológép, xcalc-hoz hasonló"
 
-#: gcalc/gcalc.c:132
+#: gcalc/gcalc.c:133
 msgid "Gnome Calculator"
 msgstr "Gnome számológép"
 
-#: gdiskfree/gdiskfree.c:57
-msgid "Specifiy the geometry of the window."
+#: gnome-find/gnome-find.c:42
+msgid "New search"
+msgstr "Új keresés"
+
+#: gnome-find/gnome-find.c:43
+msgid "Open search spec"
+msgstr "Keresési feltétel megnyitása"
+
+#: gnome-find/gnome-find.c:44
+msgid "Save search spec"
+msgstr "Keresés megadásának mentése"
+
+#: gnome-find/gnome-find.c:45
+msgid "Save search spec as..."
+msgstr "Keresési feltétel mentése mint..."
+
+#: gcharmap/src/interface.c:73
+#: gnome-find/gnome-find.c:49
+#: gstripchart/gstripchart.c:1802
+#: mini-utils/gcolorsel/menus.c:902
+msgid "Exit"
+msgstr "Kilépés"
+
+#: gdictsrc/gdict-applet.c:134
+#: gnome-find/gnome-find.c:55
+msgid "Preferences..."
+msgstr "Tulajdonságok..."
+
+#: gnome-find/gnome-find.c:61
+msgid "Add condition"
+msgstr "Feltétel hozzáadása"
+
+#: gnome-find/gnome-find.c:61
+#: gnome-find/gnome-find.c:100
+msgid "Add a search condition"
+msgstr "Keresési feltétel hozzáadása"
+
+#: gnome-find/gnome-find.c:62
+msgid "Remove condition"
+msgstr "Feltétel törlése"
+
+#: gnome-find/gnome-find.c:62
+#: gnome-find/gnome-find.c:102
+msgid "Remove last search condition"
+msgstr "Az utolsó feltétel törlése"
+
+#: gnome-find/gnome-find.c:64
+#: gnome-find/gnome-find.c:65
+#: gnome-find/gnome-find.c:103
+msgid "Show advanced options"
+msgstr "Mutasd a haladó opciókat"
+
+#: gnome-find/gnome-find.c:70
+msgid "Start search"
+msgstr "Keresés indítása"
+
+#: gnome-find/gnome-find.c:77
+msgid "About Gnome Find..."
+msgstr "Gnome Find névjegy..."
+
+#: gnome-find/gnome-find.c:86
+#: mini-utils/gcolorsel/gcolorsel.c:40
+msgid "File"
+msgstr "Fájl"
+
+#: gnome-find/gnome-find.c:87
+#: mini-utils/gcolorsel/gcolorsel.c:32
+#: mini-utils/gcolorsel/menus.c:566
+msgid "Edit"
+msgstr "Szerkeszt"
+
+#: gnome-find/gnome-find.c:88
+#: gnome-find/gnome-find.c:109
+msgid "Search"
+msgstr "Keresés"
+
+#: gnome-find/gnome-find.c:89
+#: gstripchart/gstripchart.c:1784
+#: gstripchart/gstripchart.c:2071
+msgid "Help"
+msgstr "Súgó"
+
+#: gnome-find/gnome-find.c:95
+msgid "New"
+msgstr "Új"
+
+#: gnome-find/gnome-find.c:95
+msgid "Clear the search window"
+msgstr "Keresõ ablak törlése"
+
+#: gnome-find/gnome-find.c:100
+#: gsearchtool/gsearchtool.c:565
+#: mini-utils/gw/gw.c:508
+msgid "Add"
+msgstr "Hozzáad"
+
+#: gnome-find/gnome-find.c:102
+#: gsearchtool/gsearchtool.c:491
+#: logview/actions.c:127
+msgid "Remove"
+msgstr "Töröl"
+
+#: gnome-find/gnome-find.c:103
+#: mini-utils/gshutdown/gshutdown.c:209
+#: mini-utils/gshutdown/gshutdown.c:210
+msgid "Advanced"
+msgstr "Haladó"
+
+#: gnome-find/gnome-find.c:109
+msgid "Start the current search"
+msgstr "A jelenlegi keresés elindítása"
+
+#: gnome-find/gnome-find.c:180
+msgid "Find Files"
+msgstr "Fájlok keresése"
+
+#: gnome-find/gnome-find.c:182
+msgid "Directory:"
+msgstr "Könyvtár:"
+
+#: gnome-find/gnome-find.c:184
+msgid "Directory to Search"
+msgstr "Könyvtár a kereséshez"
+
+#: gnome-find/gnome-find.c:426
+msgid "GNOME Find"
+msgstr "GNOME Find"
+
+#: gnome-find/gnome-find.c:428
+msgid "(C) 1998 the Free Software Foundation"
+msgstr "(C) 1998 the Free Software Foundation"
+
+#: gnome-find/gnome-find.c:431
+msgid "GNOME Find is a fast, flexible file search tool."
+msgstr "A GNOME Find egy gyors, konfigurálható fájlkeresõ eszköz."
+
+#: gsearchtool/outdlg.c:69
+msgid "Save Results"
+msgstr "Keresés eredménye"
+
+#: gsearchtool/outdlg.c:130
+msgid "Command mangeled"
 msgstr ""
+
+#: gsearchtool/outdlg.c:159
+msgid "No command for this mime type"
+msgstr "Nincs parancs ehhez a mime típushoz"
+
+#: gdictsrc/gdict-about.c:40
+msgid "Client for MIT dictionary server.\nWeb: http://gdict.dhs.org/, http://www.psilord.com/code/"
+msgstr "Kliens az MIT szótár szerveréhez.\nWeb: http://gdict.dhs.org/, http://www.psilord.com/code/"
+
+#: gdictsrc/gdict-app.c:117
+msgid "Spell-checking..."
+msgstr "Helyesírás ellenõrzés..."
+
+#: gdictsrc/gdict-app.c:125
+msgid "Spell check done"
+msgstr "A helyesírásellenõrzés befejezõdött."
+
+#: gdictsrc/gdict-app.c:133
+#: gdictsrc/gdict-app.c:266
+msgid "No matches found"
+msgstr "Nincs találat"
+
+#: gdictsrc/gdict-app.c:250
+msgid "Looking up word..."
+msgstr "Szó keresése..."
+
+#: gdictsrc/gdict-app.c:258
+msgid "Lookup done"
+msgstr "Keresés vége"
+
+#: gdictsrc/gdict-app.c:278
+msgid "String not found"
+msgstr "Nem találom a szöveget"
+
+#: gdictsrc/gdict-app.c:381
+msgid "Find:"
+msgstr "Keresés:"
+
+#: gdictsrc/gdict-app.c:414
+msgid "Unable to perform requested operation, either because the server\nyou are using is down or because you are not connected to the\nInternet. If you are not already connected to the Internet, please\ndo so and try again."
+msgstr "Nem tudom elvégezni a kért mûveletet, mert a szerver\namit használsz ki van kapcsolva, vagy mert nem kapcsolódtál az Internetre. Ha nem vagy felkapcsolódva az internetre, kérlek\ntedd azt, majd próbáld újra."
+
+#: gdictsrc/gdict-app.c:453
+#: gdictsrc/gdict-app.c:510
+#: gdictsrc/gdict-applet.c:153
+msgid "Lookup"
+msgstr "Keresés"
+
+#: gdictsrc/gdict-app.c:454
+#: gdictsrc/gdict-app.c:511
+msgid "Lookup word in dictionary"
+msgstr "Szó keresése a szótárban "
+
+#: gdictsrc/gdict-app.c:456
+#: gdictsrc/gdict-app.c:513
+msgid "Spell"
+msgstr "Helyesírás"
+
+#: gdictsrc/gdict-app.c:457
+#: gdictsrc/gdict-app.c:514
+msgid "Check word spelling"
+msgstr "Helyesírás ellenõrzés"
+
+#: gcharmap/src/interface.c:66
+#: gdictsrc/gdict-app.c:517
+#: gtt/toolbar.c:159
+msgid "Cut"
+msgstr "Kivágás"
+
+#: gdictsrc/gdict-app.c:518
+msgid "Cut to Clipboard"
+msgstr "Vágólapra vágás"
+
+#: gcharmap/src/interface.c:68
+#: gdictsrc/gdict-app.c:520
+#: gtt/toolbar.c:163
+msgid "Copy"
+msgstr "Másolás"
+
+#: gdictsrc/gdict-app.c:521
+msgid "Copy to Clipboard"
+msgstr "Vágólapra másolás"
+
+#: gcharmap/src/interface.c:70
+#: gdictsrc/gdict-app.c:523
+#: gtt/toolbar.c:167
+msgid "Paste"
+msgstr "Beilleszt"
+
+#: gdictsrc/gdict-app.c:524
+msgid "Paste Clipboard Contents"
+msgstr "A vágólap tartalmának beillesztése"
+
+#: gdictsrc/gdict-app.c:527
+msgid "Settings"
+msgstr "Beállítások"
+
+#: gdictsrc/gdict-app.c:528
+msgid "Server to use, default search strategy, fonts"
+msgstr "A használandó szerver, az alapértelmezett keresési stratégia, betûtípusok"
+
+#: gdictsrc/gdict-app.c:589
+msgid "Word definition"
+msgstr "Szó meghatározás"
+
+#: gdictsrc/gdict-applet.c:120
+msgid "Cannot create applet!\n"
+msgstr "Nem tudom az appletet elkészíteni!\n"
+
+#: gdictsrc/gdict-applet.c:130
+msgid "About..."
+msgstr "Névjegy..."
+
+#: gdictsrc/gdict-applet.c:138
+msgid "Show/Hide Definition Window..."
+msgstr "Mutasd/Rejtsd a definíció ablakot..."
+
+#: gdictsrc/gdict-applet.c:142
+msgid "Spell Check..."
+msgstr "Helyesírás ellenõrzés..."
+
+#: gdictsrc/gdict-pref-dialog.c:38
+msgid "Headword:"
+msgstr "Címszó:"
+
+#: gdictsrc/gdict-pref-dialog.c:39
+msgid "Pronunciation:"
+msgstr "Kiejtés:"
+
+#: gdictsrc/gdict-pref-dialog.c:40
+msgid "Etymology:"
+msgstr "Etimológia:"
+
+#: gdictsrc/gdict-pref-dialog.c:41
+msgid "Example:"
+msgstr "Példa:"
+
+#: gdictsrc/gdict-pref-dialog.c:42
+msgid "Main body:"
+msgstr "Szövegtörzs:"
+
+#: gdictsrc/gdict-pref-dialog.c:43
+msgid "Sub-number:"
+msgstr "Alszám:"
+
+#: gdictsrc/gdict-pref-dialog.c:44
+msgid "Part of speech:"
+msgstr "Beszéd töredék:"
+
+#: gdictsrc/gdict-pref-dialog.c:45
+msgid "Cross-reference:"
+msgstr "Keresztreferencia:"
+
+#: gdictsrc/gdict-pref-dialog.c:129
+#: gtt/options.c:495
+#: mini-utils/gshutdown/gshutdown.c:314
+msgid "Preferences"
+msgstr "Tulajdonságok"
+
+#: gdictsrc/gdict-pref-dialog.c:147
+msgid "Smart lookup"
+msgstr "Gyors keresés"
+
+#: gdictsrc/gdict-pref-dialog.c:156
+msgid "Server:"
+msgstr "Szerver:"
+
+#: gdictsrc/gdict-pref-dialog.c:161
+msgid "Port:"
+msgstr "Port:"
+
+#: gdictsrc/gdict-pref-dialog.c:171
+msgid "Database:"
+msgstr "Adatbázis:"
+
+#: gdictsrc/gdict-pref-dialog.c:178
+msgid "Default strategy:"
+msgstr "Alapértelmezett stratégia:"
+
+#: gdictsrc/gdict-pref-dialog.c:185
+msgid "Server"
+msgstr "Szerver"
+
+#: gdictsrc/gdict-pref-dialog.c:235
+msgid "Fonts"
+msgstr "Betûtípusok"
+
+#: gdictsrc/gdict-pref-dialog.c:251
+msgid "Display handle bar"
+msgstr "Fogantyú mutatása"
+
+#: gdictsrc/gdict-pref-dialog.c:255
+msgid "You have to restart GDict for these\nsettings to become active."
+msgstr "Újra kell indítanod a GDict-et hogy\nezek a változtatások életbe lépjenek."
+
+#: gdictsrc/gdict-pref-dialog.c:262
+msgid "Applet"
+msgstr "Applet"
+
+#: gdictsrc/gdict-pref-dialog.c:498
+#: gdictsrc/gdict-pref-dialog.c:542
+msgid "Cannot connect to server"
+msgstr "Nem tudok a szerverre kapcsolódni"
+
+#: gdictsrc/gdict-pref-dialog.c:577
+msgid "The server you specified could not be found."
+msgstr "A szervert nem találom"
+
+#: gcharmap/src/interface.c:44
+msgid "_Toolbar"
+msgstr "_Eszközsor"
+
+#: gcharmap/src/interface.c:44
+msgid "View or hide the toolbar"
+msgstr "Az eszközsor mutatása vagy elrejtése"
+
+#: gcharmap/src/interface.c:46
+msgid "_Statusbar"
+msgstr "Á_llapotsor"
+
+#: gcharmap/src/interface.c:46
+msgid "View or hide the statusbar"
+msgstr "A státuszsor mutatása vagy elrejtése"
+
+#: gcharmap/src/interface.c:66
+msgid "Cut the text to clipboard"
+msgstr "A szöveg kivágása vágólapra"
+
+#: gcharmap/src/interface.c:68
+msgid "Copy the text to clipboard."
+msgstr "A szöveg kimásolása vágólapra"
+
+#: gcharmap/src/interface.c:70
+msgid "Paste the text from clipboard."
+msgstr "A vágólapon lévõ szöveg beillesztése"
+
+#: gcharmap/src/interface.c:73
+msgid "Exit the application"
+msgstr "Kilépés az alkalmazásból"
+
+#: gcharmap/src/interface.c:100
+#: gcharmap/src/interface.c:355
+msgid "Gnome Character Map"
+msgstr "Gnome Karaktertábla"
+
+#: gcharmap/src/interface.c:146
+msgid "Text to Copy:"
+msgstr "Másolandó szöveg:"
+
+#: gcharmap/src/interface.c:303
+#, c-format
+msgid "%s: ASCII character %d"
+msgstr "%s: %d ASCII karakter"
+
+#: gcharmap/src/interface.c:320
+msgid "Text cut to clipboard..."
+msgstr "A szöveg vágólapra vágása..."
+
+#: gcharmap/src/interface.c:329
+msgid "Text copied to clipboard..."
+msgstr "A szöveg vágólapra másolása..."
+
+#: gcharmap/src/interface.c:338
+msgid "Text pasted from clipboard..."
+msgstr "A vágólapon lévõ szöveg beillesztése..."
+
+#: gcharmap/src/interface.c:356
+msgid "The Gnome equalivant of the Microsoft Windows' Character Map. Warning: might contain bad English.\nhttp://users.telekabel.nl/hongli/"
+msgstr "A Microsoft Windows-ban megtalálható Karaktertábla GNOME-os megfelelõje. \nhttp://users.telekabel.nl/hongli/"
 
 #: gdiskfree/gdiskfree.c:58
-msgid "GOMETRY"
-msgstr ""
+msgid "Specify the geometry of the window."
+msgstr "Az ablak geometriáját adja meg."
 
-#: gdiskfree/gdiskfree_app.c:53 gdiskfree/gdiskfree_menus.c:110
+#: gdiskfree/gdiskfree.c:59
+#: gtt/main.c:207
+#: mini-utils/gless/gless.c:130
+msgid "GEOMETRY"
+msgstr "GEOMETRY"
+
+#: gdiskfree/gdiskfree_app.c:53
+#: gdiskfree/gdiskfree_menus.c:110
 msgid "GDiskFree"
-msgstr ""
+msgstr "GDiskFree"
 
 #: gdiskfree/gdiskfree_app.c:73
 #, c-format
 msgid "Unable to parse the geometry string '%s'"
-msgstr ""
+msgstr "Nem sikerült '%s'-re állítani az ablak geometriáját."
 
-#: gdiskfree/gdiskfree_menus.c:45 gtt/prop.c:171
+#: gdiskfree/gdiskfree_menus.c:45
+#: gtt/prop.c:160
 msgid "Properties"
 msgstr "Beállítások"
 
 #: gdiskfree/gdiskfree_menus.c:46
 msgid "This sets the overall application settings."
-msgstr ""
+msgstr "Ez az alkalmazás beállításait teszi meg."
 
 #: gdiskfree/gdiskfree_menus.c:113
 msgid "GDiskFree is a GNOME implementation of the shell utility 'df'."
-msgstr ""
+msgstr "GDiskFree egy GNOME implementációja a 'df' parancsnak."
 
 #: gdiskfree/gdiskfree_options.c:191
-#, fuzzy
 msgid "GDiskFree Properties"
-msgstr "Beállítások"
+msgstr "GDiskFree Beállítások"
 
 #: gdiskfree/gdiskfree_options.c:196
 msgid "Invoke sync before getting usage info"
-msgstr ""
+msgstr "Sync-el mielõtt információkat olvasna"
 
 #: gdiskfree/gdiskfree_options.c:207
 msgid "Show drive mount points"
-msgstr ""
+msgstr "Mutasd a meghajtók beillesztési pontját"
 
 #: gdiskfree/gdiskfree_options.c:216
 msgid "Dial Orientation"
-msgstr ""
+msgstr "Tárcsa elhelyezkedés"
 
 #: gdiskfree/gdiskfree_options.c:221
 msgid "Vertical"
-msgstr ""
+msgstr "Függõleges"
 
 #: gdiskfree/gdiskfree_options.c:234
 msgid "Horizontal"
-msgstr ""
+msgstr "Vízszintes"
 
 #: gdiskfree/gdiskfree_options.c:253
 msgid "Update interval (ms)"
-msgstr ""
+msgstr "Frissítési intervallum (ms)"
 
 #: gdiskfree/gdiskfree_options.c:264
-#, fuzzy
 msgid "General Settings"
-msgstr "Beállítások megtartása"
+msgstr "Alap beállítások"
 
-#: gsearchtool/gsearchtool.c:26
+#: gsearchtool/gsearchtool.c:27
 msgid "File name"
 msgstr "Fájlnév"
 
-#: gsearchtool/gsearchtool.c:28
+#: gsearchtool/gsearchtool.c:29
 msgid "Don't search subdirectories"
 msgstr "Ne keress alkönyvtárakat"
 
-#: gsearchtool/gsearchtool.c:29
+#: gsearchtool/gsearchtool.c:30
 msgid "File owner"
 msgstr "Fájl tulajdonos"
 
-#: gsearchtool/gsearchtool.c:30
+#: gsearchtool/gsearchtool.c:31
 msgid "File owner group"
 msgstr "Fájl tulaj csoport"
 
-#: gsearchtool/gsearchtool.c:31
+#: gsearchtool/gsearchtool.c:32
 msgid "Last modification time"
 msgstr "Utolsó módosítás idõpontja"
 
-#: gsearchtool/gsearchtool.c:33
+#: gsearchtool/gsearchtool.c:34
 msgid "Don't search mounted filesystems"
 msgstr "Ne keress beillesztett fájlrendszeren"
 
-#: gsearchtool/gsearchtool.c:34
+#: gsearchtool/gsearchtool.c:35
 msgid "Empty file"
 msgstr "Üres fájl"
 
-#: gsearchtool/gsearchtool.c:36
+#: gsearchtool/gsearchtool.c:37
 msgid "Invalid user or group"
 msgstr "Nem valós fájl vagy csoport"
 
-#: gsearchtool/gsearchtool.c:37
+#: gsearchtool/gsearchtool.c:38
 msgid "Filenames except"
 msgstr "Ezen fájlnevek kivételével"
 
-#: gsearchtool/gsearchtool.c:38
-msgid "Follow symbolic links"
-msgstr ""
-
 #: gsearchtool/gsearchtool.c:39
+msgid "Follow symbolic links"
+msgstr "A szimbolikus linkek követése"
+
+#: gsearchtool/gsearchtool.c:40
 msgid "Simple substring search"
 msgstr "Egyszerû szövegrészlet-keresés"
 
-#: gsearchtool/gsearchtool.c:40
+#: gsearchtool/gsearchtool.c:41
 msgid "Regular expression search"
 msgstr "Reguláris kifejezéssel keresés"
 
-#: gsearchtool/gsearchtool.c:42
+#: gsearchtool/gsearchtool.c:43
 msgid "Extended regular expression search"
 msgstr "Kiterjesztett reguláris kifejezés"
 
-#: gsearchtool/gsearchtool.c:141
+#: gsearchtool/gsearchtool.c:145
 msgid "grep options found in find list bad bad!"
 msgstr "grep opciókat találtam a keresési listában!"
 
-#: gsearchtool/gsearchtool.c:155
+#: gsearchtool/gsearchtool.c:159
 msgid "non-grep option found in grep list, bad bad!"
 msgstr "nem grep opciókat találtam a grep listában!"
 
-#: gsearchtool/gsearchtool.c:192
+#: gsearchtool/gsearchtool.c:196
 msgid "Search already running on another page"
-msgstr ""
+msgstr "Másik lapon most is fut keresés"
 
-#. create the results box
-#. FIXME: add an option to autoclear result box and pass TRUE in that
-#. case
-#: gsearchtool/gsearchtool.c:204
+#: gsearchtool/gsearchtool.c:208
 msgid "Search Results"
 msgstr "Keresés eredménye"
 
-#: gsearchtool/gsearchtool.c:326
-#, fuzzy
+#: gsearchtool/gsearchtool.c:329
 msgid "Start directory does not exist"
-msgstr "Kezdõ könyvtár:"
+msgstr "A kezdõ könyvtár nem létezik"
 
-#: gsearchtool/gsearchtool.c:480
+#: gsearchtool/gsearchtool.c:483
 msgid "Enable"
 msgstr "Engedélyez"
 
-#: gsearchtool/gsearchtool.c:488 mini-utils/gcolorsel/gcolorsel.c:147
-msgid "Remove"
-msgstr "Töröl"
-
-#: gsearchtool/gsearchtool.c:540
+#: gsearchtool/gsearchtool.c:543
 msgid "Start in directory:"
 msgstr "Kezdõ könyvtár:"
 
-#: gsearchtool/gsearchtool.c:542
-#, fuzzy
+#: gsearchtool/gsearchtool.c:545
 msgid "Browse"
 msgstr "Keres..."
 
-#: gsearchtool/gsearchtool.c:562 mini-utils/gw/gw.c:490
-msgid "Add"
-msgstr "Hozzáad"
-
-#: gsearchtool/gsearchtool.c:573 gsearchtool/gsearchtool.c:656
+#: gsearchtool/gsearchtool.c:576
+#: gsearchtool/gsearchtool.c:659
 msgid "Start"
 msgstr "Indít"
 
-#: gsearchtool/gsearchtool.c:574 gsearchtool/gsearchtool.c:657
+#: gsearchtool/gsearchtool.c:577
+#: gsearchtool/gsearchtool.c:660
 msgid "Stop"
 msgstr "Megállít"
 
-#: gsearchtool/gsearchtool.c:608
-#, fuzzy
+#: gsearchtool/gsearchtool.c:610
 msgid "Nothing to locate"
-msgstr "Betûkészlet betöltésre"
+msgstr "Nincs mit keresni"
 
-#: gsearchtool/gsearchtool.c:635
-msgid ""
-"This is an interface to locate.  If you type in a simple string it\n"
-"will be matched as a subset of the full path, and if you type\n"
-"in a string with wildcards, it will have to match the full path"
-msgstr ""
+#: gsearchtool/gsearchtool.c:638
+msgid "This is an interface to locate.  If you type in a simple string it\nwill be matched as a subset of the full path, and if you type\nin a string with wildcards, it will have to match the full path."
+msgstr "Ez egy interfész a locate parancshoz. Ha beütsz egy sima szöveget,\na teljes útvonal részeként lesz összehasonlítva. Ha jokerezve írod be a szöveget, a teljes útvonallal lesz összehasonlítva."
 
-#: gsearchtool/gsearchtool.c:644
-#, fuzzy
+#: gsearchtool/gsearchtool.c:647
 msgid "Locate file: "
-msgstr "Betöltve %s"
+msgstr "Fájl keresése:"
 
-#: gsearchtool/gsearchtool.c:678
+#: gsearchtool/gsearchtool.c:681
 msgid "Full find (find)"
 msgstr "Teljes lista (keresés)"
 
-#: gsearchtool/gsearchtool.c:680
+#: gsearchtool/gsearchtool.c:683
 msgid "Quick find (locate)"
 msgstr "Gyors keresés (locate)"
 
-#: gsearchtool/gsearchtool.c:701
+#: gsearchtool/gsearchtool.c:704
 msgid "The Gnome Search Tool"
 msgstr "Gnome keresõ"
 
-#: gsearchtool/gsearchtool.c:702
+#: gsearchtool/gsearchtool.c:705
 msgid "(C) 1998,2000 the Free Software Foundation"
-msgstr ""
+msgstr "(C) 1998,2000 the Free Software Foundation"
 
-#: gsearchtool/gsearchtool.c:704
+#: gsearchtool/gsearchtool.c:707
 msgid "Frontend to the unix find/grep/locate commands"
 msgstr "Felület a find/grep/locate parancsokhoz"
 
-#: gsearchtool/gsearchtool.c:748
+#: gsearchtool/gsearchtool.c:765
 msgid "Gnome Search Tool"
 msgstr "Gnome keresõ"
 
-#: gstripchart/gstripchart.c:440
+#: gstripchart/gstripchart.c:441
 msgid "rparen expected"
-msgstr ""
+msgstr "rparen expected"
 
-#: gstripchart/gstripchart.c:457
+#: gstripchart/gstripchart.c:458
 #, c-format
 msgid "no such field: %d"
-msgstr ""
+msgstr "nincs ilyen elem: %d"
 
-#: gstripchart/gstripchart.c:485
+#: gstripchart/gstripchart.c:486
 msgid "missing variable identifer"
-msgstr ""
+msgstr "hiányzó változó azonosító"
 
-#: gstripchart/gstripchart.c:487
+#: gstripchart/gstripchart.c:488
 #, c-format
 msgid "invalid variable identifer: %s"
-msgstr ""
+msgstr "hiányzó változó azonosító: %s"
 
-#: gstripchart/gstripchart.c:491
+#: gstripchart/gstripchart.c:492
 msgid "number expected"
-msgstr ""
+msgstr "number expected"
 
-#: gstripchart/gstripchart.c:569
+#: gstripchart/gstripchart.c:570
 #, c-format
 msgid "extra gunk at end: \"%s\""
 msgstr ""
 
-#: gstripchart/gstripchart.c:651
+#: gstripchart/gstripchart.c:652
 #, c-format
 msgid "%s, line %d: "
-msgstr ""
+msgstr "%s, %d. sor: "
 
-#: gstripchart/gstripchart.c:732
+#: gstripchart/gstripchart.c:733
 #, c-format
 msgid "can't open config file \"%s\""
-msgstr ""
+msgstr "nem tudom megnyitni a konfigurációs fájlt: %s"
 
-#: gstripchart/gstripchart.c:759
+#: gstripchart/gstripchart.c:760
 #, c-format
-msgid ""
-"can't open config file \"./gstripchart.conf\", \"%s\", \"%s\", or \"%s\""
-msgstr ""
+msgid "can't open config file \"./gstripchart.conf\", \"%s\", \"%s\", or \"%s\""
+msgstr "nem tudom megnyitni a gstripchart.conf, %s, %s vagy %s  konfigurációs fájlt"
 
-#: gstripchart/gstripchart.c:764
+#: gstripchart/gstripchart.c:765
 #, c-format
 msgid "can't open config file \"./gstripchart.conf\", \"%s\", or \"%s\""
-msgstr ""
+msgstr "nem tudom megnyitni a gstripchart.conf, %s vagy %s  konfigurációs fájlt"
 
-#: gstripchart/gstripchart.c:842
+#: gstripchart/gstripchart.c:843
 msgid "identifier or begin must be first"
-msgstr ""
+msgstr "identifier vagy begin legyen az elsõ"
 
-#: gstripchart/gstripchart.c:850 gstripchart/gstripchart.c:867
+#: gstripchart/gstripchart.c:851
+#: gstripchart/gstripchart.c:868
 #, c-format
 msgid "unrecognized color: %s"
-msgstr ""
+msgstr "nem ismert szín: %s"
 
-#: gstripchart/gstripchart.c:882
+#: gstripchart/gstripchart.c:883
 msgid "scale must be either \"log\" or \"linear\""
-msgstr ""
+msgstr "a skálázás log vagy linear lehet"
 
-#: gstripchart/gstripchart.c:897
+#: gstripchart/gstripchart.c:898
 msgid "no equation found"
-msgstr ""
+msgstr "nem találtam egyenletet"
 
-#: gstripchart/gstripchart.c:914
+#: gstripchart/gstripchart.c:915
 #, c-format
 msgid "invalid option: \"%s\""
-msgstr ""
+msgstr "nem ismert opció: %s"
 
-#: gstripchart/gstripchart.c:1477
+#: gstripchart/gstripchart.c:1498
 msgid "E_xit"
 msgstr "_Kilép"
 
-#: gstripchart/gstripchart.c:1477
+#: gstripchart/gstripchart.c:1498
 msgid "Terminate the stripchart program"
-msgstr ""
+msgstr "A stripcart program leállítása"
 
-#: gstripchart/gstripchart.c:1493
+#: gstripchart/gstripchart.c:1514
 msgid "Copyright 1998,99 John Kodis"
+msgstr "Copyright 1998,99 John Kodis"
+
+#: gstripchart/gstripchart.c:1516
+msgid "The GNOME stripchart program plots various user-specified parameters as a function of time.  Its main use is to chart system performance parameters such as CPU load, CPU utilization, network traffic levels, and the like.  Other more ingenious uses are left as an exercise for the interested user."
 msgstr ""
 
-#: gstripchart/gstripchart.c:1495
-msgid ""
-"The GNOME stripchart program plots various user-specified parameters as a "
-"function of time.  Its main use is to chart system performance parameters "
-"such as CPU load, CPU utilization, network traffic levels, and the like.  "
-"Other more ingenious uses are left as an exercise for the interested user."
-msgstr ""
-
-#: gstripchart/gstripchart.c:1508
+#: gstripchart/gstripchart.c:1529
 msgid "_About"
 msgstr "_Megszakít"
 
-#: gstripchart/gstripchart.c:1508
+#: gstripchart/gstripchart.c:1529
 msgid "Info about the striphart program"
-msgstr ""
+msgstr "A striphart programról"
 
-#: gstripchart/gstripchart.c:1519
+#: gstripchart/gstripchart.c:1540
 msgid "_File"
 msgstr "_Fájl"
 
-#: gstripchart/gstripchart.c:1520
+#: gstripchart/gstripchart.c:1541
 msgid "_Help"
 msgstr "_Súgó"
 
-#: gstripchart/gstripchart.c:1584 gstripchart/gstripchart.c:1722
-#, fuzzy
+#: gstripchart/gstripchart.c:1605
+#: gstripchart/gstripchart.c:1744
 msgid "Param"
-msgstr "Paraméterek"
+msgstr "Paraméter"
 
-#: gstripchart/gstripchart.c:1584 mini-utils/gcolorsel/gcolorsel.c:601
+#: gstripchart/gstripchart.c:1605
+#: mini-utils/gcolorsel/view-color-list.c:196
 #: mini-utils/guname/moreinfo.c:227
 msgid "Value"
 msgstr "Érték"
 
-#: gstripchart/gstripchart.c:1588
+#: gstripchart/gstripchart.c:1609
 msgid "Identifier"
-msgstr ""
+msgstr "Azonosító"
 
-#: gstripchart/gstripchart.c:1590 mini-utils/gcolorsel/gcolorsel.c:598
+#: gstripchart/gstripchart.c:1611
+#: mini-utils/gcolorsel/view-color-list.c:195
 msgid "Color"
 msgstr "Szín"
 
-#: gstripchart/gstripchart.c:1592
-#, fuzzy
+#: gstripchart/gstripchart.c:1613
 msgid "Filename"
 msgstr "Fájlnév"
 
-#: gstripchart/gstripchart.c:1594
-#, fuzzy
+#: gstripchart/gstripchart.c:1615
 msgid "Pattern"
-msgstr "Beilleszt"
+msgstr "Minta"
 
-#: gstripchart/gstripchart.c:1596
+#: gstripchart/gstripchart.c:1617
 msgid "Equation"
-msgstr ""
+msgstr "Egyenlet"
 
-#: gstripchart/gstripchart.c:1598
+#: gstripchart/gstripchart.c:1619
 msgid "Expected range"
-msgstr ""
+msgstr "Sértett határérték"
 
-#: gstripchart/gstripchart.c:1602
-#, fuzzy
+#: gstripchart/gstripchart.c:1623
 msgid "Displayed range"
-msgstr "X képernyõ neve:"
+msgstr "Mutatott tartomány"
 
-#: gstripchart/gstripchart.c:1606
+#: gstripchart/gstripchart.c:1627
 msgid "Current value"
-msgstr ""
+msgstr "Jelenlegi érték"
 
-#: gstripchart/gstripchart.c:1613
+#: gstripchart/gstripchart.c:1634
 msgid "Active"
-msgstr ""
+msgstr "Aktív"
 
-#: gstripchart/gstripchart.c:1629
+#: gstripchart/gstripchart.c:1651
 msgid "Stripchart Parameters"
-msgstr ""
+msgstr "Stripchart Paraméterek"
 
-#: gstripchart/gstripchart.c:1723
-#, fuzzy
+#: gstripchart/gstripchart.c:1745
 msgid "Current"
-msgstr "Kivágás"
+msgstr "Jelenlegi"
 
-#: gstripchart/gstripchart.c:1724
+#: gstripchart/gstripchart.c:1746
 msgid "Top"
-msgstr ""
+msgstr "Top"
 
-#: gstripchart/gstripchart.c:1725
-#, fuzzy
+#: gstripchart/gstripchart.c:1747
 msgid "Scale"
-msgstr "Ment"
+msgstr "Skáláz"
 
-#: gstripchart/gstripchart.c:1762 gstripchart/gstripchart.c:2049
-#, fuzzy
-msgid "Help"
-msgstr "_Súgó"
-
-#: gstripchart/gstripchart.c:1768 gstripchart/gstripchart.c:2052
-#: mini-utils/gcolorsel/gcolorsel.c:166 mini-utils/gshutdown/gshutdown.c:318
-#, fuzzy
+#: gstripchart/gstripchart.c:1790
+#: gstripchart/gstripchart.c:2074
+#: mini-utils/gcolorsel/menus.c:912
+#: mini-utils/gshutdown/gshutdown.c:319
 msgid "About"
-msgstr "_Megszakít"
+msgstr "Névjegy"
 
-#: gstripchart/gstripchart.c:1774
+#: gstripchart/gstripchart.c:1796
 msgid "Params"
 msgstr "Paraméterek"
 
-#: gstripchart/gstripchart.c:1780 mini-utils/gcolorsel/gcolorsel.c:160
-#, fuzzy
-msgid "Exit"
-msgstr "_Kilép"
-
-#. Create a top-level application window. Set minimum size (_usize),
-#. initial size (_default_size), and establish delete and destroy
-#. event handlers.
-#: gstripchart/gstripchart.c:1886
+#: gstripchart/gstripchart.c:1908
 msgid "gstripchart"
-msgstr ""
+msgstr "gstripchart"
 
-#: gstripchart/gstripchart.c:1886
+#: gstripchart/gstripchart.c:1908
 msgid "Stripchart Viewer"
-msgstr ""
+msgstr "Stripchart Viewer"
 
-#: gstripchart/gstripchart.c:2055
-#, fuzzy
+#: gstripchart/gstripchart.c:2077
 msgid "Params..."
 msgstr "Paraméterek"
 
-#: gstripchart/gstripchart.c:2100
+#: gstripchart/gstripchart.c:2122
 #, c-format
 msgid "invalid display type: %s\n"
-msgstr ""
+msgstr "nem jó képernyõ típus: %s\n"
 
-#: gstripchart/gstripchart.c:2125
+#: gstripchart/gstripchart.c:2147
 msgid "Geometry string: WxH+X+Y"
-msgstr ""
+msgstr "Geometria: WxH+X+Y"
 
-#: gstripchart/gstripchart.c:2125
+#: gstripchart/gstripchart.c:2147
 msgid "GEO"
-msgstr ""
+msgstr "GEO"
 
-#: gstripchart/gstripchart.c:2127
-#, fuzzy
+#: gstripchart/gstripchart.c:2149
 msgid "Configuration file name"
-msgstr "Beállítások mentése"
+msgstr "Konfigurációs fájl neve"
 
-#: gstripchart/gstripchart.c:2127
+#: gstripchart/gstripchart.c:2149
 msgid "FILE"
-msgstr ""
+msgstr "FILE"
 
-#: gstripchart/gstripchart.c:2129
+#: gstripchart/gstripchart.c:2151
 msgid "Chart update interval"
 msgstr ""
 
-#: gstripchart/gstripchart.c:2129 gstripchart/gstripchart.c:2131
-#: gstripchart/gstripchart.c:2133 gstripchart/gstripchart.c:2135
+#: gstripchart/gstripchart.c:2151
+#: gstripchart/gstripchart.c:2153
+#: gstripchart/gstripchart.c:2155
+#: gstripchart/gstripchart.c:2157
 msgid "SECS"
-msgstr ""
+msgstr "SECS"
 
-#: gstripchart/gstripchart.c:2131
+#: gstripchart/gstripchart.c:2153
 msgid "Chart low-pass filter time constant"
 msgstr ""
 
-#: gstripchart/gstripchart.c:2133
+#: gstripchart/gstripchart.c:2155
 msgid "Slider update interval"
-msgstr ""
+msgstr "Csúszka frissítési intervallum"
 
-#: gstripchart/gstripchart.c:2135
+#: gstripchart/gstripchart.c:2157
 msgid "Slider low-pass filter time constant"
 msgstr ""
 
-#: gstripchart/gstripchart.c:2137
+#: gstripchart/gstripchart.c:2159
 msgid "Adds a menubar to the main window"
-msgstr ""
+msgstr "Menüsor hozzáadása a fõablakhoz"
 
-#: gstripchart/gstripchart.c:2139
+#: gstripchart/gstripchart.c:2161
 msgid "Omits slider window"
 msgstr ""
 
-#: gstripchart/gstripchart.c:2142
+#: gstripchart/gstripchart.c:2164
 msgid "TYPE is one of gtk, applet, text, or none"
-msgstr ""
+msgstr "A TYPE gtk, applet, text vagy none"
 
-#: gstripchart/gstripchart.c:2142 gstripchart/gstripchart.c:2144
+#: gstripchart/gstripchart.c:2164
+#: gstripchart/gstripchart.c:2166
 msgid "TYPE"
-msgstr ""
+msgstr "TYPE"
 
-#: gstripchart/gstripchart.c:2144
+#: gstripchart/gstripchart.c:2166
 msgid "TYPE is one of gtk, text, or none"
-msgstr ""
+msgstr "A TYPE gtk, text vagy none lehet"
 
-#: gstripchart/gstripchart.c:2295
+#: gstripchart/gstripchart.c:2318
 msgid "white"
-msgstr ""
+msgstr "fehér"
 
-#: gstripchart/gstripchart.c:2295
+#: gstripchart/gstripchart.c:2318
 msgid "black"
-msgstr ""
+msgstr "fekete"
 
-#: gstripchart/gstripchart.c:2295
+#: gstripchart/gstripchart.c:2318
 msgid "red"
-msgstr ""
+msgstr "vörös"
 
-#: gstripchart/gstripchart.c:2295
+#: gstripchart/gstripchart.c:2318
 msgid "yellow"
-msgstr ""
+msgstr "sárga"
 
-#: gstripchart/gstripchart.c:2296
-#, fuzzy
+#: gstripchart/gstripchart.c:2319
 msgid "blue"
-msgstr "Érték"
+msgstr "kék"
 
-#: gstripchart/gstripchart.c:2296
+#: gstripchart/gstripchart.c:2319
 msgid "green"
-msgstr ""
+msgstr "zöld"
 
-#: gstripchart/gstripchart.c:2296
+#: gstripchart/gstripchart.c:2319
 msgid "cyan"
-msgstr ""
+msgstr "encián"
 
-#: gstripchart/gstripchart.c:2296
+#: gstripchart/gstripchart.c:2319
 msgid "magenta"
-msgstr ""
+msgstr "lila"
 
-#: gstripchart/gstripchart.c:2297
+#: gstripchart/gstripchart.c:2320
 msgid "Busy"
-msgstr ""
+msgstr "Foglalt"
 
-#: gstripchart/gstripchart.c:2297
-#, fuzzy
+#: gstripchart/gstripchart.c:2320
 msgid "Load"
-msgstr "Újratölt"
+msgstr "Töltés"
 
-#: gstripchart/gstripchart.c:2297
+#: gstripchart/gstripchart.c:2320
 msgid "Swap"
-msgstr ""
+msgstr "Swap"
 
-#: gstripchart/gstripchart.c:2297
-#, fuzzy
+#: gstripchart/gstripchart.c:2320
 msgid "Battery"
-msgstr "Beilleszt"
+msgstr "Telep"
 
-#: gstripchart/gstripchart.c:2298
+#: gstripchart/gstripchart.c:2321
 msgid "Net In"
-msgstr ""
+msgstr "Net Be"
 
-#: gstripchart/gstripchart.c:2298
+#: gstripchart/gstripchart.c:2321
 msgid "Net Out"
-msgstr ""
+msgstr "Net Ki"
 
-#: gstripchart/gstripchart.c:2298
+#: gstripchart/gstripchart.c:2321
 msgid "ppp"
-msgstr ""
+msgstr "ppp"
 
-#: gtt/app.c:117 gtt/app.c:223
+#: gtt/app.c:117
+#: gtt/app.c:223
 msgid "no project selected"
-msgstr ""
+msgstr "nincs projekt kiválasztva"
 
 #: gtt/app.c:212
 msgid "00:00"
-msgstr ""
+msgstr "00:00"
 
-#: gtt/app.c:251 mini-utils/gless/gless.c:423
-msgid ""
-"Couldn't understand geometry (position and size)\n"
-" specified on command line"
-msgstr ""
+#: gtt/app.c:251
+#: mini-utils/gless/gless.c:423
+msgid "Couldn't understand geometry (position and size)\n specified on command line"
+msgstr "Nem tudom értelmezni  a parancssorban megadott \n geometriát(pozíció és méret)"
 
 #: gtt/clist.c:169
 msgid "Total"
@@ -599,7 +977,8 @@ msgstr "Projekt neve"
 msgid "Description"
 msgstr "Leírás"
 
-#: gtt/log.c:64 gtt/log.c:216
+#: gtt/log.c:64
+#: gtt/log.c:216
 msgid "program started"
 msgstr "program elindítva"
 
@@ -611,47 +990,47 @@ msgstr "nincs leírás"
 msgid "program exited"
 msgstr "program kilépett"
 
-#: gtt/main.c:77
-msgid ""
-"There seems to be another GTimeTracker running.\n"
-"Press OK to start GTimeTracker anyway, or press Cancel to quit."
-msgstr ""
+#: gtt/main.c:80
+msgid "There seems to be another GTimeTracker running.\nPress OK to start GTimeTracker anyway, or press Cancel to quit."
+msgstr "Úgy néz ki, másik GTimeTracker fut.\nNyomj OK-t, ha el szeretnéd indítani ezt a processzt is, vagy Mégsem-et, ha kilépsz."
 
-#: gtt/main.c:121
+#: gtt/main.c:124
 msgid "Error"
 msgstr "Hiba"
 
-#: gtt/main.c:122
-msgid ""
-"An error occured while reading the configuration file.\n"
-"Shall I setup a new configuration?"
-msgstr ""
+#: gtt/main.c:125
+msgid "An error occured while reading the configuration file.\nShall I setup a new configuration?"
+msgstr "Hiba lépett fel a konfigurációs fájl olvasása közben.\nBeállíthatok új konfigurációt?"
 
-#: gtt/main.c:204
+#: gtt/main.c:207
 msgid "Specify geometry"
-msgstr ""
+msgstr "A geometria megadása"
 
-#: gtt/main.c:204 mini-utils/gless/gless.c:130
-msgid "GEOMETRY"
-msgstr ""
-
-#: gtt/main.c:206
+#: gtt/main.c:209
 msgid "Select a project on startup"
-msgstr ""
+msgstr "Válassz egy projektet indításkor"
 
-#: gtt/main.c:206
+#: gtt/main.c:209
 msgid "PROJECT"
-msgstr ""
+msgstr "PROJECT"
 
-#: gtt/menucmd.c:31 gtt/menucmd.c:129 gtt/menucmd.c:161
+#: gtt/menucmd.c:31
+#: gtt/menucmd.c:129
+#: gtt/menucmd.c:161
 msgid "Warning"
 msgstr "Figyelem"
 
-#: gtt/menucmd.c:32 gtt/menucmd.c:163
+#: gtt/menucmd.c:32
+#: gtt/menucmd.c:163
 msgid "I could not write the configuration file!"
-msgstr ""
+msgstr "Nem tudom írni a konfigurációs fájlt!"
 
-#: gtt/menucmd.c:93 gtt/toolbar.c:146
+#: gtt/menucmd.c:63
+msgid "Time tracking tool for GNOME"
+msgstr "Idõ követõ eszköz GNOME-hoz"
+
+#: gtt/menucmd.c:93
+#: gtt/toolbar.c:142
 msgid "New Project..."
 msgstr "Új projekt..."
 
@@ -663,15 +1042,14 @@ msgstr "Kérlek írd be az új projekt nevét:"
 msgid "I could not read the configuration file"
 msgstr "Nem tudom a konfigurációs állományt olvasni"
 
-#: gtt/menucmd.c:145 gtt/toolbar.c:153
+#: gtt/menucmd.c:145
+#: gtt/toolbar.c:149
 msgid "Reload Configuration File"
 msgstr "Konfigurációs állomány újratöltése"
 
 #: gtt/menucmd.c:146
-msgid ""
-"This will overwrite your current set of projects.\n"
-"Do you really want to reload the configuration file?"
-msgstr ""
+msgid "This will overwrite your current set of projects.\nDo you really want to reload the configuration file?"
+msgstr "Felül fogja írni a jelenlegi projektjeidet.\nTényleg újra be akarod tölteni a konfigurációs fájlt?"
 
 #: gtt/menus.c:27
 msgid "_New Project..."
@@ -685,7 +1063,8 @@ msgstr "_Konfiguráció újraolvasása"
 msgid "_Save Configuration File"
 msgstr "Konfiguráció _mentése"
 
-#: gtt/menus.c:59 gtt/menus.c:115
+#: gtt/menus.c:59
+#: gtt/menus.c:115
 msgid "Clear _Daily Counter"
 msgstr "Napi számláló törlése"
 
@@ -721,7 +1100,8 @@ msgstr "Állapotsor mutatása"
 msgid "Show Table Header"
 msgstr "Táblázat fejléc mutatása"
 
-#: gtt/options.c:220 gtt/options.c:518
+#: gtt/options.c:220
+#: gtt/options.c:514
 msgid "Toolbar"
 msgstr "Eszközsor"
 
@@ -779,19 +1159,19 @@ msgstr "Shell parancsok"
 
 #: gtt/options.c:318
 msgid "Switch Project Command:"
-msgstr ""
+msgstr "Projekt kapcsolás parancs:"
 
 #: gtt/options.c:329
 msgid "No Project Command:"
-msgstr ""
+msgstr "Nem projekt parancs:"
 
 #: gtt/options.c:363
 msgid "Logfile"
-msgstr ""
+msgstr "Naplófájl"
 
 #: gtt/options.c:371
 msgid "Use Logfile"
-msgstr ""
+msgstr "Naplófájl használata"
 
 #: gtt/options.c:380
 msgid "Filename:"
@@ -809,12 +1189,7 @@ msgstr "Bejegyzés vége:"
 msgid "Timeout in secs:"
 msgstr "Idõtúllépés másodpercekben:"
 
-#. Fixme these should be stock buttons
-#: gtt/options.c:499 mini-utils/gshutdown/gshutdown.c:313
-msgid "Preferences"
-msgstr "Tulajdonságok"
-
-#: gtt/options.c:505
+#: gtt/options.c:501
 msgid "Misc"
 msgstr "Más"
 
@@ -830,281 +1205,824 @@ msgstr "%t projekt megállt"
 msgid "empty"
 msgstr "üres"
 
-#: gtt/prop.c:178
+#: gtt/prop.c:167
 msgid "Project"
 msgstr "Projekt"
 
-#: gtt/prop.c:197
+#: gtt/prop.c:186
 msgid "Project Title:"
 msgstr "Projekt neve:"
 
-#: gtt/prop.c:209
+#: gtt/prop.c:198
 msgid "Project Description:"
 msgstr "Projekt leírása:"
 
-#: gtt/prop.c:221
+#: gtt/prop.c:210
 msgid "Project Time today:"
 msgstr "Projekt idõ ma:"
 
-#: gtt/prop.c:237 gtt/prop.c:275
+#: gtt/prop.c:226
+#: gtt/prop.c:264
 msgid "hours"
 msgstr "órák"
 
-#: gtt/prop.c:248 gtt/prop.c:286
+#: gtt/prop.c:237
+#: gtt/prop.c:275
 msgid "mins"
 msgstr "percek"
 
-#: gtt/prop.c:259 gtt/prop.c:297
+#: gtt/prop.c:248
+#: gtt/prop.c:286
 msgid "secs"
 msgstr "másodpercek"
 
-#: gtt/prop.c:263
+#: gtt/prop.c:252
 msgid "Project Time ever:"
 msgstr "Projekt idõ összesen:"
 
-#. Note to translators: just skip the `[GTT]'
-#: gtt/toolbar.c:145
+#: gtt/toolbar.c:141
 msgid "[GTT]New"
-msgstr ""
+msgstr "[GTT]Új"
 
-#: gtt/toolbar.c:152
+#: gtt/toolbar.c:148
 msgid "Reload"
 msgstr "Újratölt"
 
-#: gtt/toolbar.c:156
+#: gtt/toolbar.c:152
 msgid "Save"
 msgstr "Ment"
 
-#: gtt/toolbar.c:157
+#: gtt/toolbar.c:153
 msgid "Save Configuration File"
 msgstr "Beállítások mentése"
 
-#: gtt/toolbar.c:163
-msgid "Cut"
-msgstr "Kivágás"
-
-#: gtt/toolbar.c:164
+#: gtt/toolbar.c:160
 msgid "Cut Selected Project"
 msgstr "A kiválasztott projekt kivágása"
 
-#: gtt/toolbar.c:167
-msgid "Copy"
-msgstr "Másolás"
-
-#: gtt/toolbar.c:168
+#: gtt/toolbar.c:164
 msgid "Copy Selected Project"
 msgstr "A kiválasztott projekt mentése"
 
-#: gtt/toolbar.c:171
-msgid "Paste"
-msgstr "Beilleszt"
-
-#: gtt/toolbar.c:172
+#: gtt/toolbar.c:168
 msgid "Paste Project"
 msgstr "Projekt beszúrása"
 
-#: gtt/toolbar.c:178
+#: gtt/toolbar.c:174
 msgid "Props"
 msgstr "Beállít"
 
-#: gtt/toolbar.c:179
+#: gtt/toolbar.c:175
 msgid "Edit Properties..."
 msgstr "Beállítások szerkesztése..."
 
-#: gtt/toolbar.c:183
+#: gtt/toolbar.c:179
 msgid "Timer"
 msgstr "Óra"
 
-#: gtt/toolbar.c:184
+#: gtt/toolbar.c:180
 msgid "Start/Stop Timer"
 msgstr "Órát indít/megállít"
 
-#: gtt/toolbar.c:193
+#: gtt/toolbar.c:189
 msgid "Prefs"
 msgstr "Tulaj"
 
-#: gtt/toolbar.c:194
+#: gtt/toolbar.c:190
 msgid "Edit Preferences..."
 msgstr "Tulajdonságok szerkesztése..."
 
-#: gtt/toolbar.c:198
+#: gtt/toolbar.c:194
 msgid "Manual"
 msgstr "Kézikönyv"
 
-#: gtt/toolbar.c:198
+#: gtt/toolbar.c:194
 msgid "Manual..."
 msgstr "Kézikönyv..."
 
-#: gtt/toolbar.c:203
+#: gtt/toolbar.c:199
 msgid "Quit"
 msgstr "Kilép"
 
-#: gtt/toolbar.c:203
+#: gtt/toolbar.c:199
 msgid "Quit GTimeTracker"
 msgstr "GTimeTracker-bõl való kilépés"
 
-#: mini-utils/gcolorsel/gcolorsel.c:58
-msgid "Decimal (8 bit)"
-msgstr "Decimális (8 bit)"
+#: logview/about.c:40
+msgid "Cesar Miquel (miquel@df.uba.ar)"
+msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
-#: mini-utils/gcolorsel/gcolorsel.c:60
-msgid "Decimal (16 bit)"
-msgstr "Decimális (16 bit)"
+#: logview/about.c:41
+msgid "This  program  is  part of  the  GNOME  project for Linux. Logview comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it under the conditions of the GNU General Public Licence. The log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
+msgstr "Ez a GNOME projekt része Linuxhoz. A Naplófigyelõ teljesen GARANCIA NÉLKÜL jelenik meg. Ez egy szabad szoftver, és nyugodtan megjelentetheted a GNU Általános Közengedély alapján. A napló ikonok Tuomas Kuosmanen (tigert) hozzájárulásai."
 
-#: mini-utils/gcolorsel/gcolorsel.c:62
-msgid "Hex (8 bit)"
-msgstr "Hexa (8 bit)"
+#: logview/about.c:48
+msgid "Logview"
+msgstr "Logview"
 
-#: mini-utils/gcolorsel/gcolorsel.c:64
-msgid "Hex (16 bit)"
-msgstr "Hexa (16 bit)"
+#: logview/about.c:49
+msgid "Copyright (C) 1998"
+msgstr "Copyright (C) 1998"
 
-#: mini-utils/gcolorsel/gcolorsel.c:66
-msgid "Float"
-msgstr "Lebegõpontos"
+#: logview/actions.c:56
+msgid "Action database"
+msgstr "Események adatbázisa"
 
-#: mini-utils/gcolorsel/gcolorsel.c:77
-msgid "Continuous (Slow)"
+#: logview/actions.c:61
+#: logview/monitor.c:114
+msgid "Monitor options"
+msgstr "Figyelési beállítások"
+
+#: logview/actions.c:113
+msgid "Add..."
+msgstr "Hozzáad..."
+
+#: logview/actions.c:120
+msgid "Edit..."
+msgstr "Szerkeszt..."
+
+#: logview/actions.c:141
+#: logview/actions.c:662
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: logview/actions.c:146
+#: logview/actions.c:667
+msgid "OK"
+msgstr "OK"
+
+#: logview/actions.c:281
+#: logview/actions.c:294
+#: logview/actions.c:305
+#: logview/actions.c:316
+#: logview/actions.c:327
+#: logview/actions.c:338
+msgid "Error parsing actions data base"
+msgstr "Nem tudom az események adatbázisát értelmezni"
+
+#: logview/actions.c:370
+msgid "Can't write to actions database!"
+msgstr "Nem tudok az események adatbázisába írni!"
+
+#: logview/actions.c:476
+msgid "<empty>"
+msgstr "<üres>"
+
+#: logview/actions.c:477
+msgid "log. name regexp"
+msgstr "log. name regexp"
+
+#: logview/actions.c:478
+msgid "process regexp"
+msgstr "processz regexp"
+
+#: logview/actions.c:479
+msgid "message regexp"
+msgstr "message regexp"
+
+#: logview/actions.c:480
+msgid "action to execute when regexps are TRUE"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:81
-#, fuzzy
-msgid "Delayed"
-msgstr "Újratölt"
+#: logview/actions.c:481
+msgid "description"
+msgstr "leírás"
 
-#: mini-utils/gcolorsel/gcolorsel.c:85
-msgid "Discontinuous"
+#: logview/actions.c:638
+msgid "description:"
+msgstr "leírás:"
+
+#: logview/actions.c:647
+msgid "Description of this entry."
+msgstr "Az elem leírása."
+
+#: logview/actions.c:709
+#, c-format
+msgid "tag: [%s]\nlog_name: [%s]\nprocess: [%s]\nmessage: [%s]\ndescription: [%s]\naction: [%s]\n"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:98 mini-utils/gcolorsel/gcolorsel.c:461
-#, fuzzy
-msgid "Simple"
-msgstr "Méret"
+#: logview/calendar.c:118
+msgid "Calendar"
+msgstr "Naptár"
 
-#: mini-utils/gcolorsel/gcolorsel.c:101 mini-utils/gcolorsel/gcolorsel.c:479
-msgid "Favorites"
+#: logview/calendar.c:139
+msgid "Hide calendar"
+msgstr "Naptár elrejtése"
+
+#: logview/info.c:80
+msgid "Log stats"
+msgstr "Napló statisztikák"
+
+#: logview/info.c:140
+msgid "Log information"
+msgstr "Napló információ"
+
+#: logview/info.c:157
+msgid "Log:"
+msgstr "Napló:"
+
+#: logview/info.c:159
+msgid "Size:"
+msgstr "Méret:"
+
+#: logview/info.c:161
+msgid "Modified:"
+msgstr "Módosítva:"
+
+#: logview/info.c:163
+msgid "Start date:"
+msgstr "Kezdõ dátum:"
+
+#: logview/info.c:165
+msgid "Last date:"
+msgstr "Végdátum:"
+
+#: logview/info.c:167
+msgid "Num. lines:"
+msgstr "Sorok száma:"
+
+#: logview/info.c:183
+#, c-format
+msgid "%ld bytes"
+msgstr "%ld bájt"
+
+#: logview/log_repaint.c:87
+msgid "January"
+msgstr "Január"
+
+#: logview/log_repaint.c:87
+msgid "February"
+msgstr "Február"
+
+#: logview/log_repaint.c:87
+msgid "March"
+msgstr "Március"
+
+#: logview/log_repaint.c:87
+msgid "April"
+msgstr "Április"
+
+#: logview/log_repaint.c:87
+msgid "May"
+msgstr "Május"
+
+#: logview/log_repaint.c:88
+msgid "June"
+msgstr "Június"
+
+#: logview/log_repaint.c:88
+msgid "July"
+msgstr "Július"
+
+#: logview/log_repaint.c:88
+msgid "August"
+msgstr "Augusztus"
+
+#: logview/log_repaint.c:88
+msgid "September"
+msgstr "Szeptember"
+
+#: logview/log_repaint.c:88
+msgid "October"
+msgstr "Október"
+
+#: logview/log_repaint.c:89
+msgid "November"
+msgstr "November"
+
+#: logview/log_repaint.c:89
+msgid "December"
+msgstr "December"
+
+#: logview/logrtns.c:96
+msgid "Not enough memory!\n"
+msgstr "Nincs elég memória!\n"
+
+#: logview/logrtns.c:104
+msgid "Out of memory!\n"
+msgstr "Elfogyott a memória!\n"
+
+#: logview/logrtns.c:129
+msgid "Unable to open logfile!\n"
+msgstr "Nem tudom megnyitni a naplófájlt!\n"
+
+#: logview/logrtns.c:183
+#, c-format
+msgid "%s is not a regular file."
+msgstr "%s nem sima fájl."
+
+#: logview/logrtns.c:190
+#, c-format
+msgid "%s is not user readable. Probably has read-only permission. Either run the program as root or ask the sysadmin to change the permissions on the file."
+msgstr "%s nem olvasható. Lehet, hogy csak olvasható jogok vannak rajta. Ekkor futtasd a programot root-ként, vagy kérd meg a rendszergazdádat, hogy adjon jogokat a fájlra."
+
+#: logview/logrtns.c:202
+#, c-format
+msgid "%s could not be opened."
+msgstr "%s-t nem lehet megnyitni."
+
+#: logview/logrtns.c:211
+#: logview/logrtns.c:221
+#, c-format
+msgid "%s not a log file."
+msgstr "%s nem naplófájl."
+
+#: logview/logrtns.c:614
+#: logview/logrtns.c:645
+#: logview/logrtns.c:776
+msgid "ReadLogStats: out of memory"
+msgstr "ReadLogStats: elfogyott a memória"
+
+#: logview/logview.c:84
+msgid "Open log...            "
+msgstr "Napló megnyitása..."
+
+#: logview/logview.c:85
+msgid "Open log"
+msgstr "Napló megnyitása"
+
+#: logview/logview.c:87
+msgid "Export log...          "
+msgstr "Napló exportálása..."
+
+#: logview/logview.c:88
+msgid "Export log"
+msgstr "Napló exportálása"
+
+#: logview/logview.c:90
+msgid "Close log              "
+msgstr "Napló lezárása"
+
+#: logview/logview.c:91
+msgid "Close log"
+msgstr "Napló bezárása"
+
+#: logview/logview.c:93
+msgid "Switch log             "
+msgstr "Naplózás kapcsolása"
+
+#: logview/logview.c:94
+msgid "Switch log"
+msgstr "Naplózás kapcsolása"
+
+#: logview/logview.c:96
+msgid "Monitor..              "
+msgstr "Monitor..              "
+
+#: logview/logview.c:97
+msgid "Monitor log"
+msgstr "Napló figyelése"
+
+#: logview/logview.c:99
+msgid "Exit                   "
+msgstr "Kilép"
+
+#: logview/logview.c:100
+msgid "Exit program"
+msgstr "Kilépés a programból"
+
+#: logview/logview.c:106
+msgid "Calendar                "
+msgstr "Natár"
+
+#: logview/logview.c:107
+msgid "Show calendar log"
+msgstr "Mutasd a naptár naplót"
+
+#: logview/logview.c:109
+msgid "Log stats               "
+msgstr "Napló statisztikák"
+
+#: logview/logview.c:110
+msgid "Show log stats"
+msgstr "Mutass napló statisztikákat"
+
+#: logview/logview.c:112
+msgid "Zoom                    "
+msgstr "Nagyítás"
+
+#: logview/logview.c:113
+msgid "Show line info"
+msgstr "Sorinformáció mutatása"
+
+#: logview/logview.c:119
+msgid "Select...               "
+msgstr "Kiválaszt..."
+
+#: logview/logview.c:120
+msgid "Select log events"
+msgstr "Válaszd ki a napló eseményeket"
+
+#: logview/logview.c:122
+msgid "Filter..                "
+msgstr "Szûrõ..."
+
+#: logview/logview.c:123
+msgid "Filter log events"
+msgstr "Napló események szûrése"
+
+#: logview/logview.c:129
+msgid "About..                "
+msgstr "Névjegy..."
+
+#: logview/logview.c:130
+msgid "Info about logview"
+msgstr "Információk a logview-ról"
+
+#: logview/logview.c:139
+msgid "F_ilter"
+msgstr "Szû_rõ"
+
+#: logview/logview.c:230
+msgid "No log files to open"
+msgstr "Nincs megnyitandó naplófájl"
+
+#: logview/logview.c:259
+msgid "System Log Viewer"
+msgstr "System Log Viewer"
+
+#: logview/logview.c:360
+msgid "Filename: "
+msgstr "Fájlnév:"
+
+#: logview/logview.c:376
+msgid "Date: "
+msgstr "Dátum:"
+
+#: logview/logview.c:611
+msgid "Too many open logs. Close one and try again"
+msgstr "Túl sok megnyitott napló. Zárj be egyet, majd próbáld újra"
+
+#: logview/logview.c:664
+msgid "Open new logfile"
+msgstr "Új naplófájl megnyitása"
+
+#: logview/misc.c:78
+#, c-format
+msgid "Error: [%s]\n"
+msgstr "Hiba: [%s]\n"
+
+#: logview/monitor.c:131
+msgid "Choose logs to monitor"
+msgstr "Napló kiválasztása figyelésre"
+
+#: logview/monitor.c:210
+msgid "Hide app"
+msgstr "Alkalmazás rejtése"
+
+#: logview/monitor.c:218
+msgid "Exec actions"
+msgstr "Esemény indítása"
+
+#: logview/monitor.c:282
+#: logview/monitor.c:329
+msgid "tmp_list is NULL\n"
+msgstr "a tmp_list NULL\n"
+
+#: logview/monitor.c:456
+msgid "Monitoring logs.."
+msgstr "Napló figyelése..."
+
+#: logview/monitor.c:634
+msgid "TOUCHED!!\n"
+msgstr "TOUCHED!!\n"
+
+#: logview/zoom.c:77
+msgid "Zoom view"
+msgstr "Nagyított nézet"
+
+#: logview/zoom.c:151
+#, c-format
+msgid "Log line detail for %s"
+msgstr "Részletes naplósor a %s-hez"
+
+#: logview/zoom.c:153
+msgid "Log line detail for <No log loaded>"
+msgstr "Részletes naplósor a <nincs napló betöltve>-hez"
+
+#: logview/zoom.c:176
+msgid "Date:"
+msgstr "Dátum:"
+
+#: logview/zoom.c:178
+msgid "Process:"
+msgstr "Processz:"
+
+#: logview/zoom.c:180
+msgid "Message:"
+msgstr "Üzenet:"
+
+#: logview/zoom.c:182
+msgid "Description:"
+msgstr "Leírás:"
+
+#: mini-utils/gcolorsel/gcolorsel.c:24
+msgid "List"
+msgstr "Lista"
+
+#: mini-utils/gcolorsel/gcolorsel.c:28
+msgid "Grid"
+msgstr "Rács"
+
+#: mini-utils/gcolorsel/gcolorsel.c:42
+msgid "Search RGB"
+msgstr "RGB keresése..."
+
+#: mini-utils/gcolorsel/gcolorsel.c:44
+msgid "Monitor"
+msgstr "Monitor"
+
+#: mini-utils/gcolorsel/gcolorsel.c:46
+msgid "Concat"
+msgstr "Láncol"
+
+#: mini-utils/gcolorsel/gcolorsel.c:94
+#, c-format
+msgid "'%s' document has been modified; do you wish to save it ?"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:108
-#, fuzzy
-msgid "Search it"
-msgstr "Keresés eredménye"
-
-#: mini-utils/gcolorsel/gcolorsel.c:111
-msgid "Add it to favorites"
+#: mini-utils/gcolorsel/gcolorsel.c:204
+msgid "GColorsel was unable to paste colors from the clipboard."
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:123
-#, fuzzy
-msgid "Format"
-msgstr "Lebegõpontos"
+#: mini-utils/gcolorsel/gcolorsel.c:218
+msgid "Please select a file document before."
+msgstr "Kérlek válassz egy fájl dokumentumot elõbb."
 
-#: mini-utils/gcolorsel/gcolorsel.c:124
-#, fuzzy
-msgid "Search update"
-msgstr "Keresés eredménye"
-
-#: mini-utils/gcolorsel/gcolorsel.c:125
-#, fuzzy
-msgid "Search in"
-msgstr "Mentés..."
-
-#: mini-utils/gcolorsel/gcolorsel.c:126
-msgid "On drop"
+#: mini-utils/gcolorsel/gcolorsel.c:390
+msgid "I can't execute this action. Check that :\n\n1. You have associated an action with this event.\n2. The associated document still exits.\n3. The type of the associated document.\n\nGo to preferences, in the edit menu."
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:140
-#, fuzzy
-msgid "Add to favorites"
-msgstr "Alapbeállítás hozzáadása"
+#: mini-utils/gcolorsel/gcolorsel.c:508
+msgid "GColorsel"
+msgstr "GColorsel"
 
-#: mini-utils/gcolorsel/gcolorsel.c:150
-#, fuzzy
-msgid "Rename"
-msgstr "Fájlnév"
+#: mini-utils/gcolorsel/menus.c:52
+msgid "New Document"
+msgstr "Új dokumentum"
 
-#: mini-utils/gcolorsel/gcolorsel.c:160
-msgid "Exit the program"
+#: mini-utils/gcolorsel/menus.c:53
+msgid "Create a new document"
+msgstr "Új dokumentum készítése"
+
+#: mini-utils/gcolorsel/menus.c:55
+msgid "New View"
+msgstr "Új nézet"
+
+#: mini-utils/gcolorsel/menus.c:56
+msgid "Create a new view for a document"
+msgstr "Új dokumentum készítése"
+
+#: mini-utils/gcolorsel/menus.c:62
+msgid "Close document"
+msgstr "Dokumentum bezárása"
+
+#: mini-utils/gcolorsel/menus.c:63
+msgid "Close the current document"
+msgstr "Az aktuális dokumentum bezárása"
+
+#: mini-utils/gcolorsel/menus.c:65
+msgid "Close view"
+msgstr "Nézet bezárása"
+
+#: mini-utils/gcolorsel/menus.c:66
+#: mini-utils/gcolorsel/menus.c:906
+msgid "Close the current view"
+msgstr "Bezárja az aktuális nézetet"
+
+#: mini-utils/gcolorsel/menus.c:83
+#: mini-utils/gcolorsel/menus.c:906
+#: mini-utils/gshutdown/gshutdown.c:153
+#: mini-utils/gshutdown/gshutdown.c:594
+msgid "Close"
+msgstr "Bezár"
+
+#: mini-utils/gcolorsel/menus.c:99
+msgid "Insert color"
+msgstr "Szín beszúrása"
+
+#: mini-utils/gcolorsel/menus.c:101
+msgid "Remove selected colors"
+msgstr "A kijelölt színek törlése"
+
+#: mini-utils/gcolorsel/menus.c:103
+msgid "Edit selected colors ..."
+msgstr "Kilelölt színek szerkesztése..."
+
+#: mini-utils/gcolorsel/menus.c:172
+#, c-format
+msgid "GColorsel was unable to save the file :\n\n%s\n\nMake sure that the path you provided exits,\nand that you have the approprate write permissions.\n\nDo you want to retry ?"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:163
-msgid "Grab"
+#: mini-utils/gcolorsel/menus.c:191
+#, c-format
+msgid "GColorsel was unable to load the file:\n\n%s\n\nMake sure that the path you provided exists,\nand that you have permissions for opening the file."
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:163
-msgid "Grab a color on the screen"
+#: mini-utils/gcolorsel/menus.c:210
+msgid "Open Palette"
+msgstr "Paletta megnyitása"
+
+#: mini-utils/gcolorsel/menus.c:235
+msgid "Loading file, please wait ..."
+msgstr "Töltöm a fájlt, várj..."
+
+#: mini-utils/gcolorsel/menus.c:266
+msgid "Save Palette as"
+msgstr "Paletta mentése mint..."
+
+#: mini-utils/gcolorsel/menus.c:313
+msgid "File not saved ..."
+msgstr "A fájlt nem mentettem el..."
+
+#: mini-utils/gcolorsel/menus.c:323
+msgid "File saved ..."
+msgstr "Fájl elmentve..."
+
+#: mini-utils/gcolorsel/menus.c:401
+#, c-format
+msgid "I'm going to close the last view of '%s'.\n\nThis document will be closed too, continue ?\n\nPlease note that %d virtual document use data from this document."
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:166
-msgid "About this application"
+#: mini-utils/gcolorsel/menus.c:403
+#, c-format
+msgid "I'm going to close the last view of '%s'.\n\nThis document will be closed too, continue ?"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:268
-msgid "Error, cannot save favorites !"
+#: mini-utils/gcolorsel/menus.c:437
+#, c-format
+msgid "I'm going to close '%s'.\n\nPlease note that %d views will be destroyed,\nand that %d virtual document use data from this document.\n\nDo you want to continue ?"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:338
-msgid "Red :"
+#: mini-utils/gcolorsel/menus.c:439
+#, c-format
+msgid "I'm going to close '%s'.\n\nPlease note that %d views will be destroyed.\n\nDo you want to continue ?"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:342
-msgid "Green : "
-msgstr ""
-
-#: mini-utils/gcolorsel/gcolorsel.c:346
-msgid "Blue : "
-msgstr ""
-
-#: mini-utils/gcolorsel/gcolorsel.c:350
-msgid "Tolerance (%) : "
-msgstr ""
-
-#: mini-utils/gcolorsel/gcolorsel.c:421 mini-utils/gcolorsel/gcolorsel.c:424
-#: mini-utils/gcolorsel/gcolorsel.c:995
+#: mini-utils/gcolorsel/menus.c:487
 msgid "Gnome Color Browser"
 msgstr "GNOME színválasztó"
 
-#. Page 2
-#: mini-utils/gcolorsel/gcolorsel.c:466
-#, fuzzy
-msgid "Search"
-msgstr "Mentés..."
-
-#. Create progress bar
-#: mini-utils/gcolorsel/gcolorsel.c:484
-msgid "Parsing Colors"
-msgstr "Színek értelmezése"
-
-#: mini-utils/gcolorsel/gcolorsel.c:528
-msgid "Error, cannot find the file 'rgb.txt' on your system!"
-msgstr "Nem találom az rgb.txt-t a rendszereden!"
-
-#. Create everything.
-#: mini-utils/gcolorsel/gcolorsel.c:604 mini-utils/guname/moreinfo.c:225
-#: mini-utils/gw/gw.c:486 mini-utils/gw/gw.c:556
-msgid "Name"
-msgstr "Név"
-
-#: mini-utils/gcolorsel/gcolorsel.c:609
-msgid "Match"
-msgstr ""
-
-#: mini-utils/gcolorsel/gcolorsel.c:999
+#: mini-utils/gcolorsel/menus.c:490
 msgid "Small utility to browse available X11 colors."
 msgstr "Kis program az X11 szineinek megtekintésére."
 
-#: mini-utils/gcolorsel/gcolorsel.c:1072
-#, fuzzy
-msgid "No Name"
+#: mini-utils/gcolorsel/menus.c:599
+msgid "New Color"
+msgstr "Új szín"
+
+#: mini-utils/gcolorsel/menus.c:854
+msgid "View properties"
+msgstr "Beállítások megtekintése"
+
+#: mini-utils/gcolorsel/menus.c:869
+msgid "Document properties"
+msgstr "Dokumentum beállítások"
+
+#: mini-utils/gcolorsel/menus.c:902
+msgid "Exit the program"
+msgstr "Kilépés a programból"
+
+#: mini-utils/gcolorsel/menus.c:904
+msgid "Open"
+msgstr "Megnyit"
+
+#: mini-utils/gcolorsel/menus.c:904
+msgid "Open a palette"
+msgstr "Paletta megnyitása"
+
+#: mini-utils/gcolorsel/menus.c:909
+msgid "Grab"
+msgstr "Pipetta"
+
+#: mini-utils/gcolorsel/menus.c:909
+msgid "Grab a color on the screen"
+msgstr "Szín elkapása a képernyõn"
+
+#: mini-utils/gcolorsel/menus.c:912
+msgid "About this application"
+msgstr "Az alkalmazásról"
+
+#: mini-utils/gcolorsel/session.c:303
+msgid "Your config file is corrupted.\nDo you want to create a new session ?"
+msgstr "A konfigurációs fájlod sérült.\nSzeretnél egy új munkafolyamatot indítani?"
+
+#: mini-utils/gcolorsel/session.c:356
+msgid "Loading files, please wait ..."
+msgstr "Töltöm a fájlokat, várj..."
+
+#: mini-utils/gcolorsel/session.c:381
+msgid "One or more files can not be restored :\n\n"
+msgstr "Egy vagy több fájl nem visszatölthetõ:\n\n"
+
+#: mini-utils/gcolorsel/glade/view-color-edit.glade.h:9
+#: mini-utils/gcolorsel/widget-control-virtual-rgb.c:97
+msgid "Red :"
+msgstr "Vörös :"
+
+#: mini-utils/gcolorsel/glade/view-color-edit.glade.h:10
+#: mini-utils/gcolorsel/widget-control-virtual-rgb.c:101
+msgid "Green :"
+msgstr "Zöld :"
+
+#: mini-utils/gcolorsel/glade/view-color-edit.glade.h:11
+#: mini-utils/gcolorsel/widget-control-virtual-rgb.c:105
+msgid "Blue :"
+msgstr "Kék :"
+
+#: mini-utils/gcolorsel/widget-control-virtual-rgb.c:109
+msgid "Tolerance :"
+msgstr "Tolerancia :"
+
+#: mini-utils/gcolorsel/view-color-generic.c:15
+msgid "Decimal 8 bits"
+msgstr "Decimális 8 bit"
+
+#: mini-utils/gcolorsel/view-color-generic.c:16
+msgid "Decimal 16 bits"
+msgstr "Decimális 16 bit"
+
+#: mini-utils/gcolorsel/view-color-generic.c:17
+msgid "Hex 8 bits"
+msgstr "Hexa 8 bit"
+
+#: mini-utils/gcolorsel/view-color-generic.c:18
+msgid "Hex 16 bits"
+msgstr "Hexa 16 bit"
+
+#: mini-utils/gcolorsel/view-color-generic.c:19
+msgid "Float"
+msgstr "Lebegõpontos"
+
+#: mini-utils/gcolorsel/view-color-list.c:197
+#: mini-utils/guname/moreinfo.c:225
+#: mini-utils/gw/gw.c:504
+#: mini-utils/gw/gw.c:574
+msgid "Name"
 msgstr "Név"
 
-#: mini-utils/gcolorsel/gcolorsel.c:1141
-msgid "Enter new name for : "
+#: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:8
+#: mini-utils/gcolorsel/glade/mdi-color-generic-properties.glade.h:8
+#: mini-utils/gcolorsel/glade/view-color-edit.glade.h:8
+#: mini-utils/gcolorsel/glade/view-color-generic-properties.glade.h:8
+#: mini-utils/gcolorsel/glade/view-color-grid-properties.glade.h:8
+#: mini-utils/gcolorsel/glade/view-color-list-properties.glade.h:8
+msgid "window1"
+msgstr "1. ablak"
+
+#: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:9
+#: mini-utils/gcolorsel/glade/view-color-grid-properties.glade.h:9
+#: mini-utils/gcolorsel/glade/view-color-list-properties.glade.h:9
+msgid "Special properties"
+msgstr "Speciális beállítások"
+
+#: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:10
+msgid "File name :"
+msgstr "Fájlnév :"
+
+#: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:11
+msgid "End\nComments :"
+msgstr "Vég\nMegjegyzések:"
+
+#: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:13
+msgid "Begin\nComments :"
+msgstr "Kezdõ\nMegjegyzések:"
+
+#: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:15
+msgid "Header :"
+msgstr "Fejléc :"
+
+#: mini-utils/gcolorsel/glade/mdi-color-generic-properties.glade.h:9
+#: mini-utils/gcolorsel/glade/view-color-generic-properties.glade.h:9
+msgid "Common properties"
+msgstr "Közös beállítások"
+
+#: mini-utils/gcolorsel/glade/mdi-color-generic-properties.glade.h:10
+#: mini-utils/gcolorsel/glade/view-color-edit.glade.h:12
+msgid "Name :"
+msgstr "Név :"
+
+#: mini-utils/gcolorsel/glade/view-color-generic-properties.glade.h:10
+msgid "Colors format :"
+msgstr "Szín formátuma :"
+
+#: mini-utils/gcolorsel/glade/view-color-generic-properties.glade.h:11
+msgid "Display document control (if exists)"
 msgstr ""
 
-#: mini-utils/gcolorsel/gcolorsel.c:1400
-msgid "Dropped"
-msgstr ""
+#: mini-utils/gcolorsel/glade/view-color-grid-properties.glade.h:10
+#: mini-utils/gcolorsel/glade/view-color-list-properties.glade.h:11
+msgid "Color width :"
+msgstr "Szín szélessége :"
+
+#: mini-utils/gcolorsel/glade/view-color-grid-properties.glade.h:11
+#: mini-utils/gcolorsel/glade/view-color-list-properties.glade.h:12
+msgid "Color height :"
+msgstr "Szín magasság:"
+
+#: mini-utils/gcolorsel/glade/view-color-list-properties.glade.h:10
+msgid "Draw numbers"
+msgstr "Rajzolj számokat"
 
 #: mini-utils/gfontsel/gfontsel.c:157
 msgid "Font Selector"
@@ -1120,7 +2038,7 @@ msgstr "Betûkészlet betöltésre"
 
 #: mini-utils/gfontsel/gfontsel.c:268
 msgid "FONTSPEC"
-msgstr ""
+msgstr "FONTSPEC"
 
 #: mini-utils/gfontsel/gfontsel.c:269
 msgid "Print selected font name on exit"
@@ -1137,7 +2055,7 @@ msgstr "Az utolsó betûkészlet betöltésének tiltása"
 #: mini-utils/gless/gless.c:115
 #, c-format
 msgid "Reason %d\n"
-msgstr ""
+msgstr "%d ok\n"
 
 #: mini-utils/gless/gless.c:130
 msgid "Where to put the window, and its size"
@@ -1169,62 +2087,47 @@ msgstr "Szövegfájl-megjelenítõ"
 
 #: mini-utils/gless/gless.c:446
 msgid "Copyright 1998, under the GNU General Public License."
-msgstr ""
+msgstr "Copyright 1998, under the GNU General Public License."
 
 #: mini-utils/gless/gless.c:467
-#, fuzzy
 msgid "Find string"
-msgstr "Következõ keresése"
+msgstr "Szöveg keresése"
 
 #: mini-utils/gless/gless.c:468
-#, fuzzy
 msgid "Find"
-msgstr "Következõ keresése"
+msgstr "Keresés"
 
 #: mini-utils/gless/gless.c:505
 msgid "Loading..."
 msgstr "Töltök..."
 
 #: mini-utils/gless/gless.c:509
-#, fuzzy, c-format
-msgid ""
-"No such file or directory:\n"
-"%s"
-msgstr "Nincs ilyen nevû fájl:\n"
+#, c-format
+msgid "No such file or directory:\n%s"
+msgstr "Nincs ilyen nevû fájl vagy könyvtár:\n%s"
 
 #: mini-utils/gless/gless.c:527
-#, fuzzy, c-format
-msgid ""
-"Failed to decompress and display the file:\n"
-"%s\n"
-"%s"
-msgstr "Nem tudom kicsomagolni és megjeleníteni a fájlt:\n"
+#, c-format
+msgid "Failed to decompress and display the file:\n%s\n%s"
+msgstr "Nem tudom kicsomagolni és megjeleníteni a fájlt:\n%s\n%s"
 
 #: mini-utils/gless/gless.c:540
-msgid ""
-"Unable to display compressed file.\n"
-"zcat not found in your path."
-msgstr ""
+msgid "Unable to display compressed file.\nzcat not found in your path."
+msgstr "Nem tudok tömörített fájlt betölteni.\na zcat parancsot nem találom."
 
 #: mini-utils/gless/gless.c:548
-#, fuzzy, c-format
-msgid ""
-"Error loading file:\n"
-"%s\n"
-"%s"
-msgstr "Fájl zárási hiba `"
+#, c-format
+msgid "Error loading file:\n%s\n%s"
+msgstr "Fájl nyitási hiba:\n%s\n%s"
 
 #: mini-utils/gless/gless.c:606
 msgid "Saving..."
 msgstr "Mentés..."
 
 #: mini-utils/gless/gless.c:617
-#, fuzzy, c-format
-msgid ""
-"Failed to write file:\n"
-"%s\n"
-"%s"
-msgstr "Nem tudom kicsomagolni és megjeleníteni a fájlt:\n"
+#, c-format
+msgid "Failed to write file:\n%s\n%s"
+msgstr "Nem tudom írni a fájlt:\n%s\n%s"
 
 #: mini-utils/gless/gless.c:667
 msgid "Save Text As..."
@@ -1236,259 +2139,210 @@ msgstr "Megnyitás..."
 
 #: mini-utils/gless/gless.c:771
 msgid "Sorry, no preferences yet."
-msgstr ""
+msgstr "Bocs, nincs még beállítási lehetõség."
 
 #: mini-utils/gless/gless.c:858
-#, fuzzy
 msgid "Searching..."
-msgstr "Mentés..."
+msgstr "Keresés..."
 
 #: mini-utils/gless/gless.c:869
-#, fuzzy
 msgid "No search string was specified!"
-msgstr "Nincs eltolás megadva!"
+msgstr "Nincs keresendõ szöveg megadva!"
 
-#: mini-utils/gnome-run/gnome-run.c:48
-#, c-format
-msgid ""
-"Failed to execute command:\n"
-"%s\n"
-"%s"
-msgstr ""
-
-#: mini-utils/gnome-run/gnome-run.c:69
-msgid "Run Program"
-msgstr "Program futtatása"
-
-#: mini-utils/gnome-run/gnome-run.c:70
-msgid "Run"
-msgstr "Futtat"
-
-#: mini-utils/gnome-run/gnome-run.c:70
-msgid "Cancel"
-msgstr "Mégsem"
-
-#: mini-utils/gnome-run/gnome-run.c:81
-msgid "Select a program to run"
-msgstr "Válassz ki egy programot futtatásra"
-
-#: mini-utils/gshutdown/gshutdown.c:86
+#: mini-utils/gshutdown/gshutdown.c:87
 msgid "Shut Down"
 msgstr "Lelövés"
 
-#: mini-utils/gshutdown/gshutdown.c:87
+#: mini-utils/gshutdown/gshutdown.c:88
 msgid "Single User Mode"
 msgstr "Egyfelhasználós mód"
 
-#: mini-utils/gshutdown/gshutdown.c:88
+#: mini-utils/gshutdown/gshutdown.c:89
 msgid "Runlevel 2"
 msgstr "kettes futási szint"
 
-#: mini-utils/gshutdown/gshutdown.c:89
+#: mini-utils/gshutdown/gshutdown.c:90
 msgid "Runlevel 3"
 msgstr "hármas futási szint"
 
-#: mini-utils/gshutdown/gshutdown.c:90
+#: mini-utils/gshutdown/gshutdown.c:91
 msgid "Runlevel 4"
 msgstr "négyes futási szint"
 
-#: mini-utils/gshutdown/gshutdown.c:91
+#: mini-utils/gshutdown/gshutdown.c:92
 msgid "Runlevel 5"
 msgstr "ötös futási szint"
 
-#: mini-utils/gshutdown/gshutdown.c:92
+#: mini-utils/gshutdown/gshutdown.c:93
 msgid "Reboot"
 msgstr "Újraindítás"
 
-#: mini-utils/gshutdown/gshutdown.c:98
+#: mini-utils/gshutdown/gshutdown.c:99
 msgid "Are you sure you want to shut down the computer?"
 msgstr "Tényleg ki akarod kapcsolni a gépet?"
 
-#: mini-utils/gshutdown/gshutdown.c:99
+#: mini-utils/gshutdown/gshutdown.c:100
 msgid "Are you sure you want to switch to single user mode?"
 msgstr "Tényleg egyfelhasználós üzemmódba akarsz kapcsolni?"
 
-#: mini-utils/gshutdown/gshutdown.c:100
+#: mini-utils/gshutdown/gshutdown.c:101
 msgid "Are you sure you want to switch to runlevel 2?"
 msgstr "Tényleg a kettes futási szintre akarsz kapcsolni?"
 
-#: mini-utils/gshutdown/gshutdown.c:101
+#: mini-utils/gshutdown/gshutdown.c:102
 msgid "Are you sure you want to switch to runlevel 3?"
 msgstr "Tényleg a hármas futási szintre akarsz kapcsolni?"
 
-#: mini-utils/gshutdown/gshutdown.c:102
+#: mini-utils/gshutdown/gshutdown.c:103
 msgid "Are you sure you want to switch to runlevel 4?"
 msgstr "Tényleg a négyes futási szintre akarsz kapcsolni?"
 
-#: mini-utils/gshutdown/gshutdown.c:103
+#: mini-utils/gshutdown/gshutdown.c:104
 msgid "Are you sure you want to switch to runlevel 5?"
 msgstr "Tényleg a ötös futási szintre akarsz kapcsolni?"
 
-#: mini-utils/gshutdown/gshutdown.c:104
+#: mini-utils/gshutdown/gshutdown.c:105
 msgid "Are you sure you want to reboot the system?"
 msgstr "Tényleg újra akarod indítani a gépet?"
 
-#: mini-utils/gshutdown/gshutdown.c:150 mini-utils/gshutdown/gshutdown.c:593
+#: mini-utils/gshutdown/gshutdown.c:151
+#: mini-utils/gshutdown/gshutdown.c:591
 msgid "You must be the super-user (root) to shut down or restart the computer."
 msgstr "Rendszergazda indíthatja csak újra a gépet."
 
-#: mini-utils/gshutdown/gshutdown.c:152 mini-utils/gshutdown/gshutdown.c:596
-msgid "Close"
-msgstr "Bezár"
-
-#. notebook pages
-#: mini-utils/gshutdown/gshutdown.c:186
+#: mini-utils/gshutdown/gshutdown.c:187
 msgid "Shutdown or Reboot"
 msgstr "Kikapcsolás vagy újraindítás"
 
-#: mini-utils/gshutdown/gshutdown.c:203 mini-utils/gshutdown/gshutdown.c:204
+#: mini-utils/gshutdown/gshutdown.c:204
+#: mini-utils/gshutdown/gshutdown.c:205
 msgid "Easy"
 msgstr "Könnyû"
 
-#: mini-utils/gshutdown/gshutdown.c:208 mini-utils/gshutdown/gshutdown.c:209
-msgid "Advanced"
-msgstr "Haladó"
+#: mini-utils/gshutdown/gshutdown.c:242
+msgid "Click OK to shutdown or reboot. You will lose\nany unsaved information in open applications."
+msgstr "Nyomd meg az OK gombot, hogy kikapcsold vagy újraindítsd a gépet.\nA nem elmentett fájlokból az újonnan bevitt adatok el fognak veszni."
 
-#: mini-utils/gshutdown/gshutdown.c:241
-msgid ""
-"Click OK to shutdown or reboot. You will lose\n"
-"any unsaved information in open applications."
-msgstr ""
-"Nyomd meg az OK gombot, hogy kikapcsold vagy újraindítsd a gépet.\n"
-"A nem elmentett fájlokból az újonnan bevitt adatok el fognak veszni."
-
-#. Put in a "revert to defaults" button
-#: mini-utils/gshutdown/gshutdown.c:368
+#: mini-utils/gshutdown/gshutdown.c:369
 msgid "Revert to Defaults"
 msgstr "Alapállapot visszaállítása"
 
-#: mini-utils/gshutdown/gshutdown.c:378
+#: mini-utils/gshutdown/gshutdown.c:379
 msgid "Commands"
 msgstr "Parancsok"
 
-#: mini-utils/gshutdown/gshutdown.c:383
+#: mini-utils/gshutdown/gshutdown.c:384
 msgid "Confirm before shutdown?"
 msgstr "Kérdezzen kikapcsolás elõtt?"
 
-#: mini-utils/gshutdown/gshutdown.c:395
+#: mini-utils/gshutdown/gshutdown.c:396
 msgid "General"
 msgstr "Mégsem"
 
-#: mini-utils/gshutdown/gshutdown.c:448
+#: mini-utils/gshutdown/gshutdown.c:449
 #, c-format
-msgid ""
-"%s\n"
-"You will lose any unsaved work."
-msgstr ""
+msgid "%s\nYou will lose any unsaved work."
+msgstr "%s\nNem mentett munkád el fog veszni."
 
-#: mini-utils/gshutdown/gshutdown.c:458
+#: mini-utils/gshutdown/gshutdown.c:459
 msgid "Don't ask next time."
 msgstr "Ne kérdezzen legközelebb."
 
-#: mini-utils/gshutdown/gshutdown.c:691
+#: mini-utils/gshutdown/gshutdown.c:689
 msgid "Command execution failed: fork failed"
-msgstr ""
+msgstr "A parancs futtatása nem sikerült, nem tudtam forkolni"
 
-#: mini-utils/guname/guname.c:51
+#: mini-utils/guname/guname.c:52
 msgid "Make guname act as a control center applet"
 msgstr ""
 
-#: mini-utils/guname/guname.c:117
+#: mini-utils/guname/guname.c:118
 msgid "an initialization error occurred while starting 'guname-capplet'."
-msgstr ""
+msgstr "indítási hiva a 'guname-capplet' futtatása közben."
 
-#: mini-utils/guname/guname.c:427
+#: mini-utils/guname/guname.c:445
 msgid "System Information"
 msgstr "Rendszer információk"
 
-#: mini-utils/guname/guname.c:509
+#: mini-utils/guname/guname.c:532
 msgid "Logo file not found"
 msgstr "Nem találom a tappancsot"
 
-#. Up here so it uses the default font
-#: mini-utils/guname/guname.c:513
+#: mini-utils/guname/guname.c:536
 msgid "GNOME contributors:"
 msgstr "GNOME fejlesztõk:"
 
-#. fontset used by guname; adapt it if your language requires it
-#: mini-utils/guname/guname.c:517
+#: mini-utils/guname/guname.c:540
 msgid "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
-msgstr ""
+msgstr "-Adobe-Helvetica-Medium-R-Normal--*-180-*-*-*-*-*-*"
 
-#: mini-utils/guname/guname.c:528
+#: mini-utils/guname/guname.c:551
 msgid "GNOME: The GNU Network Object Model Environment"
 msgstr "GNOME: GNU Network Object Model Environment"
 
-#: mini-utils/guname/guname.c:552
+#: mini-utils/guname/guname.c:575
 msgid "Email Information..."
 msgstr "Információk elküldése..."
 
-#: mini-utils/guname/guname.c:565
+#: mini-utils/guname/guname.c:588
 msgid "Save Information to File..."
 msgstr "Információk elmentése..."
 
-#: mini-utils/guname/guname.c:577 mini-utils/guname/guname.c:647
+#: mini-utils/guname/guname.c:600
+#: mini-utils/guname/guname.c:670
 msgid "Detailed Information..."
 msgstr "Részletek..."
 
-#: mini-utils/guname/guname.c:592
+#: mini-utils/guname/guname.c:615
 msgid "Category"
 msgstr "Kategória"
 
-#: mini-utils/guname/guname.c:592
+#: mini-utils/guname/guname.c:615
 msgid "Your System"
 msgstr "A te rendszered"
 
-#: mini-utils/guname/guname.c:633
+#: mini-utils/guname/guname.c:656
 msgid "Save As..."
 msgstr "Mentés mint..."
 
-#: mini-utils/guname/guname.c:639
+#: mini-utils/guname/guname.c:662
 msgid "Mail To..."
 msgstr "Levél küldése..."
 
-#: mini-utils/guname/guname.c:687
-#, fuzzy, c-format
-msgid ""
-"Error closing file `%s': \n"
-"%s\n"
-"Some or all data may not have been written."
-msgstr ""
-"\n"
-"Néhány vagy semmi adat nem lett kiírva."
+#: mini-utils/guname/guname.c:710
+#, c-format
+msgid "Error closing file `%s': \n%s\nSome or all data may not have been written."
+msgstr "A %s fájl zárásánál hiba történt:\n%s\nAz adatok vagy egy részük nem lett kiírva."
 
-#: mini-utils/guname/guname.c:699
-#, fuzzy, c-format
+#: mini-utils/guname/guname.c:722
+#, c-format
 msgid "Couldn't open file `%s': %s"
-msgstr "Nem tudom megnyitni a fájlt: `"
+msgstr "Nem tudom megnyitni a %s fájlt:%s"
 
-#: mini-utils/guname/guname.c:714
+#: mini-utils/guname/guname.c:744
 msgid "Save System Information As..."
 msgstr "Mentsd el a rendszerinformációkat mint..."
 
-#. I don't think the error_string() will reliably mean anything.
-#: mini-utils/guname/guname.c:760
-#, fuzzy, c-format
+#: mini-utils/guname/guname.c:793
+#, c-format
 msgid "Command failed ` %s ': %s"
-msgstr "A parancs nem sikerült: ` "
+msgstr "A %s parancs nem sikerült:  %s"
 
-#: mini-utils/guname/guname.c:768
-#, fuzzy, c-format
+#: mini-utils/guname/guname.c:801
+#, c-format
 msgid "Couldn't run command ` %s ': %s"
-msgstr "Nem tudom futtatni a parancsot ` "
+msgstr "Nem tudom futtatni a %s parancsot: %s"
 
-#: mini-utils/guname/guname.c:792
-#, fuzzy, c-format
-msgid ""
-"The following mail will be sent to %s.\n"
-" Are you sure you want to mail this information?"
-msgstr "El akarod küldeni az információkat?"
+#: mini-utils/guname/guname.c:825
+#, c-format
+msgid "The following mail will be sent to %s.\n Are you sure you want to mail this information?"
+msgstr "A következõ levelet küldöd %s-nek.\n Tényleg szeretnéd elküldeni az információkat?"
 
-#: mini-utils/guname/guname.c:803
+#: mini-utils/guname/guname.c:836
 msgid "Are you sure?"
 msgstr "Tényleg?"
 
-#: mini-utils/guname/guname.c:837
+#: mini-utils/guname/guname.c:878
 msgid "Address to mail to:"
 msgstr "Cím, ahova küldjem:"
 
@@ -1580,9 +2434,8 @@ msgstr "Százalék szabad"
 msgid "Mount point"
 msgstr "Beillesztési pont"
 
-#. This is about the only case where we'll put Unknown instead
-#. of simply not showing the info.
-#: mini-utils/guname/info.c:207 mini-utils/idetool/idetool.c:26
+#: mini-utils/guname/info.c:207
+#: mini-utils/idetool/idetool.c:26
 msgid "Unknown"
 msgstr "Nem ismert"
 
@@ -1603,19 +2456,17 @@ msgid "Kilobytes"
 msgstr "kilobájt"
 
 #: mini-utils/guname/moreinfo.c:186
-#, fuzzy
 msgid "%ld%% memory used."
-msgstr "%ld%% %s használva."
+msgstr "%ld%% memória használva."
 
 #: mini-utils/guname/moreinfo.c:197
-#, fuzzy
 msgid "%ld%% swap used."
-msgstr "%ld%% %s használva."
+msgstr "%ld%% swap használva."
 
 #: mini-utils/guname/moreinfo.c:222
 #, c-format
 msgid "CPU %d"
-msgstr ""
+msgstr "CPU %d"
 
 #: mini-utils/guname/moreinfo.c:276
 msgid "Detailed System Information"
@@ -1623,15 +2474,15 @@ msgstr "Részletes rendszer-információk"
 
 #: mini-utils/guname/moreinfo.c:289
 msgid "Disk Information"
-msgstr ""
+msgstr "Lemez informáió"
 
 #: mini-utils/guname/moreinfo.c:291
 msgid "Memory Information"
-msgstr ""
+msgstr "Memória információ"
 
 #: mini-utils/guname/moreinfo.c:294
 msgid "CPU Information"
-msgstr ""
+msgstr "CPU információ"
 
 #: mini-utils/guname/moreinfo.c:326
 msgid "Mount Point: "
@@ -1648,476 +2499,233 @@ msgstr "    Fájlrendszer típusa:"
 #: mini-utils/guname/moreinfo.c:341
 #, c-format
 msgid "%ld megabytes, %ld free (%ld superuser); %ld inodes, %ld free."
-msgstr ""
+msgstr "%ld megabájt, %ld szabad (%ld rendszergazda); %ld inode-ok, %ld szabad."
 
 #: mini-utils/guname/moreinfo.c:353
 msgid "%2d%% full "
 msgstr "%2d%% megtelt"
 
-#: mini-utils/gw/gw.c:141
-msgid ""
-"Couldn't find the \"w\" command in your path.\n"
-"This command is needed for the program to work."
-msgstr ""
+#: mini-utils/gw/gw.c:143
+msgid "Couldn't find the \"w\" command in your path.\nThis command is needed for the program to work."
+msgstr "Nem találom a 'w' parancsot az útvonaladban.\nEz a parancs kell a program mûködéséhez."
 
-#: mini-utils/gw/gw.c:174
+#: mini-utils/gw/gw.c:176
 msgid "_Save..."
 msgstr "_Mentés..."
 
-#: mini-utils/gw/gw.c:174
+#: mini-utils/gw/gw.c:176
 msgid "Write information to disk"
-msgstr ""
+msgstr "Az információk lemezre írása"
 
-#: mini-utils/gw/gw.c:202
+#: mini-utils/gw/gw.c:204
 msgid "Active User Listing"
 msgstr "Felhasználó listázás aktiválása"
 
-#: mini-utils/gw/gw.c:219
+#: mini-utils/gw/gw.c:221
 msgid "Update Information"
 msgstr "Információ frissítése"
 
-#: mini-utils/gw/gw.c:466
-#, fuzzy
+#: mini-utils/gw/gw.c:476
 msgid "Save not implemented yet\n"
-msgstr "Ez még nincs megírva..."
+msgstr "A mentés még nincs megírva\n"
 
-#: mini-utils/gw/gw.c:487
+#: mini-utils/gw/gw.c:505
 msgid "Command Line"
 msgstr "Parancssor"
 
-#: mini-utils/gw/gw.c:489
+#: mini-utils/gw/gw.c:507
 msgid "Add some defaults"
 msgstr "Alapbeállítás hozzáadása"
 
-#: mini-utils/gw/gw.c:491
+#: mini-utils/gw/gw.c:509
 msgid "Delete"
 msgstr "Törlés"
 
-#: mini-utils/gw/gw.c:509
+#: mini-utils/gw/gw.c:527
 msgid "Command Editor"
 msgstr "Parancs szerkesztõ"
 
-#: mini-utils/gw/gw.c:519
-msgid ""
-"You can configure the commands on the popup menus.\n"
-"Just enter the name you want to appear on the \n"
-"menu, and the command to execute.\n"
-"In the command, you can use %u to represent the\n"
-"currently selected username, and %t for the tty."
+#: mini-utils/gw/gw.c:537
+msgid "You can configure the commands on the popup menus.\nJust enter the name you want to appear on the \nmenu, and the command to execute.\nIn the command, you can use %u to represent the\ncurrently selected username, and %t for the tty."
 msgstr ""
 
-#: mini-utils/gw/gw.c:526
-msgid ""
-"Click this button to add\n"
-"some sample commands."
-msgstr ""
+#: mini-utils/gw/gw.c:544
+msgid "Click this button to add\nsome sample commands."
+msgstr "Nyomd meg ezt a gombot\nnéhány példa parancs megadásához."
 
-#: mini-utils/gw/gw.c:534
+#: mini-utils/gw/gw.c:552
 msgid "Menu items"
 msgstr "Menüelemek"
 
-#: mini-utils/gw/gw.c:562
+#: mini-utils/gw/gw.c:580
 msgid "Command"
 msgstr "Parancs"
 
-#: mini-utils/gw/gw.c:949
+#: mini-utils/gw/gw.c:970
 #, c-format
 msgid "Running: %s\n"
-msgstr ""
+msgstr "Fut: %s\n"
 
-#: mini-utils/idetool/idetool.c:19 mini-utils/idetool/idetool.c:142
+#: mini-utils/idetool/idetool.c:19
+#: mini-utils/idetool/idetool.c:142
 #: mini-utils/idetool/idetool.c:327
 msgid "Default"
 msgstr "Alap"
 
 #: mini-utils/idetool/idetool.c:20
 msgid "16-bit"
-msgstr ""
+msgstr "16-bit"
 
 #: mini-utils/idetool/idetool.c:21
 msgid "32-bit"
-msgstr ""
+msgstr "32-bit"
 
 #: mini-utils/idetool/idetool.c:22
 msgid "32-bit w/sync"
-msgstr ""
+msgstr "32-bit w/sync"
 
 #: mini-utils/idetool/idetool.c:27
 msgid "Sleeping"
-msgstr ""
+msgstr "Sleeping"
 
 #: mini-utils/idetool/idetool.c:28
 msgid "Active/Idle"
-msgstr ""
+msgstr "Aktív/Várakozik"
 
 #: mini-utils/idetool/idetool.c:29
 msgid "Standby"
-msgstr ""
+msgstr "Standby"
 
 #: mini-utils/idetool/idetool.c:42
 msgid "Unable to access the drive."
-msgstr ""
+msgstr "Nem érem el a lemezt."
 
-#: mini-utils/idetool/idetool.c:59 mini-utils/idetool/idetool.c:71
+#: mini-utils/idetool/idetool.c:59
+#: mini-utils/idetool/idetool.c:71
 msgid "The DMA setting for this drive cannot be changed."
-msgstr ""
+msgstr "A DMA beállítás a lemezre nem változtatható."
 
-#: mini-utils/idetool/idetool.c:79 mini-utils/idetool/idetool.c:111
-#: mini-utils/idetool/idetool.c:323 mini-utils/idetool/idetool.c:325
+#: mini-utils/idetool/idetool.c:79
+#: mini-utils/idetool/idetool.c:111
+#: mini-utils/idetool/idetool.c:323
+#: mini-utils/idetool/idetool.c:325
 msgid "Enabled"
 msgstr "Engedélyezve"
 
-#: mini-utils/idetool/idetool.c:79 mini-utils/idetool/idetool.c:111
-#: mini-utils/idetool/idetool.c:323 mini-utils/idetool/idetool.c:325
+#: mini-utils/idetool/idetool.c:79
+#: mini-utils/idetool/idetool.c:111
+#: mini-utils/idetool/idetool.c:323
+#: mini-utils/idetool/idetool.c:325
 msgid "Disabled"
 msgstr "Tiltva"
 
-#: mini-utils/idetool/idetool.c:91 mini-utils/idetool/idetool.c:103
+#: mini-utils/idetool/idetool.c:91
+#: mini-utils/idetool/idetool.c:103
 msgid "The IRQ unmask setting for this drive cannot be changed."
-msgstr ""
+msgstr "Az IRQ unmask beállítás a lemezre nem változtatható."
 
-#: mini-utils/idetool/idetool.c:122 mini-utils/idetool/idetool.c:134
+#: mini-utils/idetool/idetool.c:122
+#: mini-utils/idetool/idetool.c:134
 msgid "The drive refused to keep its settings."
-msgstr ""
+msgstr "A lemez visszautasítja a beállítások megtartását."
 
-#: mini-utils/idetool/idetool.c:142 mini-utils/idetool/idetool.c:327
+#: mini-utils/idetool/idetool.c:142
+#: mini-utils/idetool/idetool.c:327
 msgid "Keep settings"
 msgstr "Beállítások megtartása"
 
 #: mini-utils/idetool/idetool.c:207
 msgid "None"
-msgstr ""
+msgstr "Nincs"
 
 #: mini-utils/idetool/idetool.c:211
 msgid "(1 Sector)"
-msgstr ""
+msgstr "(1 Sector)"
 
 #: mini-utils/idetool/idetool.c:213
 msgid "(Dual Port)"
-msgstr ""
+msgstr "(Dual Port)"
 
 #: mini-utils/idetool/idetool.c:215
 msgid "(Dual Port Cache)"
-msgstr ""
+msgstr "(Dual Port Cache)"
 
 #: mini-utils/idetool/idetool.c:243
 msgid "No"
-msgstr ""
+msgstr "Nem"
 
 #: mini-utils/idetool/idetool.c:245
 #, c-format
 msgid "Yes (%d sector)"
-msgstr ""
+msgstr "Igen (%d szektor)"
 
 #: mini-utils/idetool/idetool.c:247
 #, c-format
 msgid "Yes (%d sectors)"
-msgstr ""
+msgstr "Igen (%d szektor)"
 
-#: mini-utils/idetool/idetool.c:310 mini-utils/idetool/idetool.c:320
+#: mini-utils/idetool/idetool.c:310
+#: mini-utils/idetool/idetool.c:320
 msgid "Model"
-msgstr ""
+msgstr "Modell"
 
 #: mini-utils/idetool/idetool.c:311
 msgid "Firmware"
-msgstr ""
+msgstr "Firmware"
 
 #: mini-utils/idetool/idetool.c:312
 msgid "Serial No."
-msgstr ""
+msgstr "Sorozatszám"
 
-#. do config here
 #: mini-utils/idetool/idetool.c:314
 msgid "Geometry"
-msgstr ""
+msgstr "Geometria"
 
 #: mini-utils/idetool/idetool.c:315
 msgid "Cache"
-msgstr ""
+msgstr "Cache"
 
 #: mini-utils/idetool/idetool.c:316
 msgid "Status"
-msgstr ""
+msgstr "Státusz"
 
 #: mini-utils/idetool/idetool.c:320
 msgid "Legacy MFM/RLL drive"
-msgstr ""
+msgstr "MFM/RLL lemez"
 
 #: mini-utils/idetool/idetool.c:323
 msgid "DMA Mode"
-msgstr ""
+msgstr "DMA Mód"
 
 #: mini-utils/idetool/idetool.c:324
 msgid "IO Mode"
-msgstr ""
+msgstr "IO Mód"
 
 #: mini-utils/idetool/idetool.c:325
 msgid "IRQ Unmask"
-msgstr ""
+msgstr "IRQ Unmask"
 
 #: mini-utils/idetool/idetool.c:326
 msgid "Multisector"
-msgstr ""
+msgstr "Több szektoros"
 
 #: mini-utils/idetool/idetool.c:327
 msgid "On Reset"
-msgstr ""
+msgstr "Rezetkor"
 
-#.
-#. *	Set up the outer display first
-#.
-#: mini-utils/idetool/idetool.c:353
+#: mini-utils/idetool/idetool.c:367
 msgid "IDE Status"
-msgstr ""
+msgstr "IDE Státusz"
 
-#: mini-utils/idetool/idetool.c:366
+#: mini-utils/idetool/idetool.c:389
 msgid "Disk Logo Not Found"
-msgstr ""
+msgstr "Nincs lemez logo"
 
-#: mini-utils/idetool/idetool.c:417
+#: mini-utils/idetool/idetool.c:440
 msgid "Only the superuser can use this tool"
-msgstr ""
+msgstr "Csak a rendszergazda használhatja ezt az eszközt"
 
-#: mini-utils/idetool/idetool.c:428
+#: mini-utils/idetool/idetool.c:451
 msgid "You appear to have no IDE drives"
-msgstr ""
+msgstr "Úgy néz ki, nincs IDE lemezed"
 
-#~ msgid "GHex: Converter"
-#~ msgstr "GHex: konvertáló"
-
-#~ msgid "Binary"
-#~ msgstr "Bináris"
-
-#~ msgid "Decimal"
-#~ msgstr "Tízes"
-
-#~ msgid "Hex"
-#~ msgstr "Tizenhatos"
-
-#~ msgid "ASCII"
-#~ msgstr "ACSII"
-
-#~ msgid "GHex (%s): Find Data"
-#~ msgstr "GHex (%s): Adat keresése"
-
-#~ msgid "Search for %s"
-#~ msgstr "Keresés %s-re"
-
-#~ msgid "Find Next"
-#~ msgstr "Következõ keresése"
-
-#~ msgid "Find Previous"
-#~ msgstr "Elõzõ keresése"
-
-#~ msgid "GHex (%s): Find & Replace Data"
-#~ msgstr "GHex (%s): Keresés és csere"
-
-#~ msgid "Replace %s"
-#~ msgstr "%s cseréje"
-
-#~ msgid "Find next"
-#~ msgstr "Következõ keresése"
-
-#~ msgid "Replace"
-#~ msgstr "Csere"
-
-#~ msgid "Replace All"
-#~ msgstr "Mindent cserél"
-
-#~ msgid "GHex (%s): Jump To Byte"
-#~ msgstr "GHex (%s): Bájtra ugrás"
-
-#~ msgid "There is no active buffer to search!"
-#~ msgstr "Nincs aktív menteni való puffer!"
-
-#~ msgid "There seems to be no string to search for!"
-#~ msgstr "Nem úgy néz ki, mintha keresni volna mit!"
-
-#~ msgid "End Of File reached"
-#~ msgstr "A fájl végén vagyok"
-
-#~ msgid "Beginning Of File reached"
-#~ msgstr "A fájl elején vagyok"
-
-#~ msgid "There is no active buffer to move the cursor in!"
-#~ msgstr "Nincs aktív puffer, amibe az egeret lehetne mozgatni!"
-
-#~ msgid "No offset has been specified!"
-#~ msgstr "Nincs eltolás megadva!"
-
-#~ msgid "The offset must be a positive integer value!"
-#~ msgstr "Az eltolás egész szám kell hogy legyen!"
-
-#~ msgid "Can not position cursor beyond the End Of File!"
-#~ msgstr "Nem lehet a kurzort pozícionálni, mivel ez a fájl vége!"
-
-#~ msgid "There is no active buffer to replace data in!"
-#~ msgstr "Nincs cserélendõ puffer"
-
-#~ msgid "Strange find or replace string!"
-#~ msgstr "Nehéz megtalálni vagy cserélni a szöveget!"
-
-#~ msgid "Both strings must be of the same length!"
-#~ msgstr "Mind a két szövegnek ugyanolyan hosszúnak kell lenni!"
-
-#~ msgid "End Of File reached!"
-#~ msgstr "Fájl vége!"
-
-#~ msgid "Replaced %d occurencies."
-#~ msgstr "Kicserélve %d helyen."
-
-#~ msgid "_Bytes"
-#~ msgstr "_Bájtok"
-
-#~ msgid "Group data by 8 bits"
-#~ msgstr "8 bitenként csoportosítja az adatokat"
-
-#~ msgid "_Words"
-#~ msgstr "_Szavak"
-
-#~ msgid "Group data by 16 bits"
-#~ msgstr "16 bitenként csoportosít"
-
-#~ msgid "_Longwords"
-#~ msgstr "_Hosszúszavak"
-
-#~ msgid "Group data by 32 bits"
-#~ msgstr "32 bitenként csoportosít"
-
-#~ msgid "Jump to a certain position"
-#~ msgstr "Ugrás a megadott pozícióra"
-
-#~ msgid "_Goto Byte..."
-#~ msgstr "_Ugrás bájtra..."
-
-#~ msgid "_Group Data As"
-#~ msgstr "_Adatok csoportosítása..."
-
-#~ msgid "_Add view"
-#~ msgstr "_Nézet hozzáadása"
-
-#~ msgid "Add a new view of the buffer"
-#~ msgstr "Új nézet az új pufferhez"
-
-#~ msgid "_Remove view"
-#~ msgstr "_Nézet törlése"
-
-#~ msgid "Remove the current view of the buffer"
-#~ msgstr "Törli az aktuális nézetet"
-
-#~ msgid ""
-#~ "File %s has changed since last save.\n"
-#~ "Do you want to save changes?"
-#~ msgstr ""
-#~ "A %s fájl változott, de nincs elmentve.\n"
-#~ "Szeretnéd menteni?"
-
-#~ msgid "Notebook"
-#~ msgstr "Notesz"
-
-#~ msgid "Toplevel"
-#~ msgstr "Felsõ szint"
-
-#~ msgid "Modal"
-#~ msgstr "Kizárólagos"
-
-#~ msgid "Maximum number of undo levels"
-#~ msgstr "Visszavonások maximális száma"
-
-#, fuzzy
-#~ msgid "Hexadecimal"
-#~ msgstr "Tízes"
-
-#, fuzzy
-#~ msgid "Custom"
-#~ msgstr "Kivágás"
-
-#~ msgid "Editing"
-#~ msgstr "Szerkesztés"
-
-#~ msgid "Font"
-#~ msgstr "Betûtípus"
-
-#~ msgid "Default Group Type"
-#~ msgstr "Alap csoport típus"
-
-#~ msgid "MDI Mode"
-#~ msgstr "MDI mód"
-
-#~ msgid "Can not open desired font!"
-#~ msgstr "Nem tudom a meghatározott betûkészletet megnyitni!"
-
-#~ msgid "Open Con_verter..."
-#~ msgstr "_Konvertáló nyitása"
-
-#~ msgid "Open base conversion dialog"
-#~ msgstr "Konverziós párbeszédablak nyitása"
-
-#~ msgid "Bytes"
-#~ msgstr "Bájtok"
-
-#~ msgid "Words"
-#~ msgstr "Szavak"
-
-#~ msgid "Longwords"
-#~ msgstr "Hosszúszavak"
-
-#~ msgid "hex data"
-#~ msgstr "hexa adat"
-
-#~ msgid "ASCII data"
-#~ msgstr "ASCII adat"
-
-#~ msgid "GHex, a binary file editor"
-#~ msgstr "GHex, egy bináris fájlszerkesztõ"
-
-#~ msgid "Released under the terms of GNU Public License"
-#~ msgstr "GNU közengedély alatt jelent meg"
-
-#~ msgid "Error saving file!"
-#~ msgstr "Fájl mentési hiba!"
-
-#~ msgid "Saved buffer to file %s"
-#~ msgstr "Elmentve %s néven"
-
-#~ msgid "Select a file to open"
-#~ msgstr "Válaszd ki a megnyitandó fájlt"
-
-#~ msgid "Select a file to save buffer as"
-#~ msgstr "Válassz ki egy fáljt a mentéshez"
-
-#~ msgid "Really revert file %s?"
-#~ msgstr "Téynleg visszaállítod a %s fájlt?"
-
-#~ msgid "Reverted buffer from file %s"
-#~ msgstr "Viszzaállítva %-ból"
-
-#~ msgid "Can not open file!"
-#~ msgstr "Nem tudom megnyitni!"
-
-#~ msgid "Can't open file for writing!"
-#~ msgstr "Nem tudom megnyitni írásra!"
-
-#~ msgid "This is not yet implemented"
-#~ msgstr "Ez még nincs megírva..."
-
-#~ msgid "Format Style:"
-#~ msgstr "Formátum stílus:"
-
-#~ msgid "Color Name:"
-#~ msgstr "Szín neve:"
-
-#~ msgid "Color Values:"
-#~ msgstr "Szín értékek:"
-
-#~ msgid " ': "
-#~ msgstr " ': "
-
-#~ msgid "The following mail will be sent to "
-#~ msgstr "A következõ levél címzettje "
-
-#~ msgid "memory"
-#~ msgstr "memória"
-
-#~ msgid "Using command:"
-#~ msgstr "Parancs használata:"
