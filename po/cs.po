@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.0.2\n"
-"POT-Creation-Date: 2002-08-26 05:06+0200\n"
+"POT-Creation-Date: 2002-08-28 16:23+0100\n"
 "PO-Revision-Date: 2002-08-26 21:16GMT\n"
 "Last-Translator: Michal Bukovjan <bukm@centrum.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -74,7 +74,9 @@ msgstr "Toto je neznámý typ spustitelného souboru"
 msgid ""
 "The executable is for a different platform and can not be executed on this "
 "system"
-msgstr "Tento spustitelný soubor je pro jinou platformu a nelze jej spustit na tomto systému"
+msgstr ""
+"Tento spustitelný soubor je pro jinou platformu a nelze jej spustit na tomto "
+"systému"
 
 #. Translator credits
 #: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
@@ -462,8 +464,10 @@ msgid "GNOME Character Map"
 msgstr "Mapa znaků GNOME"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
-msgstr "Vybírejte, kopírujte a vkládejte znaky z vašeho písma do jiných aplikací"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
+msgstr ""
+"Vybírejte, kopírujte a vkládejte znaky z vašeho písma do jiných aplikací"
 
 #: gcharmap/src/callbacks.c:113
 msgid "del"
@@ -615,8 +619,9 @@ msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
-"Vyskytla se vážná chyba. Zkontrolujte prosím, že vaše nastavení server a portu "
-"je správné. Pro vaši informaci, výchozí server je gdict.org a výchozí port je 2628"
+"Vyskytla se vážná chyba. Zkontrolujte prosím, že vaše nastavení server a "
+"portu je správné. Pro vaši informaci, výchozí server je gdict.org a výchozí "
+"port je 2628"
 
 #: gdictsrc/gdict-about.c:56
 msgid "GNOME Dictionary"
@@ -885,8 +890,8 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
-"Zadejte, zda-li se má použít chytré hledání. Tato volba závisí na tom, zda-li "
-"ji server se slovníkem podporuje. Výchozí hodnota je TRUE."
+"Zadejte, zda-li se má použít chytré hledání. Tato volba závisí na tom, zda-"
+"li ji server se slovníkem podporuje. Výchozí hodnota je TRUE."
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
@@ -897,8 +902,9 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"Server se slovníkem, ke kterému by se mělo připojovat. Výchozí server je dict.org. "
-"Podrobnější informace o dalších serverech naleznete na adrese http://www.dict.org."
+"Server se slovníkem, ke kterému by se mělo připojovat. Výchozí server je "
+"dict.org. Podrobnější informace o dalších serverech naleznete na adrese "
+"http://www.dict.org."
 
 #: gdictsrc/gdict.schemas.in.h:6
 msgid ""
@@ -906,8 +912,8 @@ msgid ""
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
 "Název konkrétní databáze, která se má na serveru se slovníky použít. Znak ! "
-"znamená, že program gnome-dictionary by měl prohledávat všechny databáze "
-"na daném serveru."
+"znamená, že program gnome-dictionary by měl prohledávat všechny databáze na "
+"daném serveru."
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -923,9 +929,9 @@ msgid ""
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"Strategie hledání, která se má použít. Záleží na strategiích hledání, které podporuje "
-"server se slovníkem. Výchozí je strategie 'lev' - srovnávání slov pomocí "
-"Levenšteinova algoritmu vzdálenosti jedna."
+"Strategie hledání, která se má použít. Záleží na strategiích hledání, které "
+"podporuje server se slovníkem. Výchozí je strategie 'lev' - srovnávání slov "
+"pomocí Levenšteinova algoritmu vzdálenosti jedna."
 
 #: gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
@@ -1333,7 +1339,9 @@ msgstr "Nelze provést hledání. Zadejte prosím kritéria hledání."
 msgid ""
 "A search is already running.  Please wait for the search to complete or "
 "cancel it."
-msgstr "Hledání již probíhá. Počkejte prosím, dokud hledání neskončí, nebo jej zrušte."
+msgstr ""
+"Hledání již probíhá. Počkejte prosím, dokud hledání neskončí, nebo jej "
+"zrušte."
 
 #: gsearchtool/gsearchtool.c:1005
 msgid "Start folder does not exist"
@@ -1341,7 +1349,8 @@ msgstr "Počáteční adresář neexistuje"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
-msgstr "Nelze ukázat příkazový řádek pro hledání. Zadejte prosím kritéria hledání."
+msgstr ""
+"Nelze ukázat příkazový řádek pro hledání. Zadejte prosím kritéria hledání."
 
 #: gsearchtool/gsearchtool.c:1024
 msgid "Search Command Line"
@@ -1873,8 +1882,9 @@ msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file."
 msgstr ""
-"Soubor %s není pro uživatele čitelný. Buď tento program spusťte jako uživatel root, "
-"nebo požádejte správce systému, aby změnil přístupová práva k tomuto souboru."
+"Soubor %s není pro uživatele čitelný. Buď tento program spusťte jako "
+"uživatel root, nebo požádejte správce systému, aby změnil přístupová práva k "
+"tomuto souboru."
 
 #: logview/logrtns.c:320
 #, c-format
@@ -1961,7 +1971,8 @@ msgstr "Poslední změna: "
 
 #: logview/logview.c:722 logview/logview.c:788
 msgid "Too many open logs. Close one and try again"
-msgstr "Příliš mnoho otevřených souborů se záznamy. Zavřete nějaký a zkuste to znovu."
+msgstr ""
+"Příliš mnoho otevřených souborů se záznamy. Zavřete nějaký a zkuste to znovu."
 
 #: logview/logview.c:734
 msgid "File already opened"
@@ -2015,8 +2026,8 @@ msgstr "Akce..."
 #: logview/monitor.c:286
 msgid "Too many logs to monitor. Remove one and try again"
 msgstr ""
-"Příliš mnoho souborů se záznamy ke sledování. Odeberte prosím nějaký a zkuste "
-"to znovu."
+"Příliš mnoho souborů se záznamy ke sledování. Odeberte prosím nějaký a "
+"zkuste to znovu."
 
 #: logview/monitor.c:294 logview/monitor.c:332
 msgid "tmp_list is NULL\n"
@@ -2195,8 +2206,8 @@ msgid ""
 "Drag this button to the destination where you want the archive to be created "
 "or press it to pop up a file selection dialog."
 msgstr ""
-"Přetáhněte toto tlačítko na místo, kde chcete vytvořit archív, nebo jej stiskněte "
-"a zobrazí se dialog pro výběr souboru."
+"Přetáhněte toto tlačítko na místo, kde chcete vytvořit archív, nebo jej "
+"stiskněte a zobrazí se dialog pro výběr souboru."
 
 #: meat-grinder/meat-grinder.c:1174
 msgid "Cannot find proper icons anywhere!"
@@ -2209,4 +2220,3 @@ msgid ""
 msgstr ""
 "Nelze nalézt program pro archivaci (tar)!\n"
 "Tento program se používá k vytváření archívů."
-

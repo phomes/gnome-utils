@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils for latvian\n"
-"POT-Creation-Date: 2002-08-07 09:20+0200\n"
+"POT-Creation-Date: 2002-08-28 16:23+0100\n"
 "PO-Revision-Date: 2002-08-15 13:35+0200\n"
 "Last-Translator: Artis Trops <hornet@navigators.lv>\n"
 "Language-Team: Latvian <hornet@navigators.lv>\n"
@@ -16,7 +16,8 @@ msgstr ""
 #: exe-handler/gnome-exe-handler.c:76
 #, c-format
 msgid ""
-"Executing arbitrary programs that you downloaded from the network might be dangerous.\n"
+"Executing arbitrary programs that you downloaded from the network might be "
+"dangerous.\n"
 "\n"
 "Are you sure you want to run `%s'?"
 msgstr ""
@@ -62,30 +63,34 @@ msgstr "Šī ir bibliotēka un nevar tikt palaista"
 msgid "The file is a core file and can not be executed"
 msgstr "Šis fails ir core fails un nevar tikt palaists"
 
-#: exe-handler/gnome-exe-handler.c:162
-#: exe-handler/gnome-exe-handler.c:196
+#: exe-handler/gnome-exe-handler.c:162 exe-handler/gnome-exe-handler.c:196
 msgid "This is an unknown kind of executable"
 msgstr "Šī ir nezināma veida izpildāmā fails"
 
 #: exe-handler/gnome-exe-handler.c:192
-msgid "The executable is for a different platform and can not be executed on this system"
-msgstr "Izpildāmais fails ir citai platformai un nevar tikt palaists uz šīs sistēmas"
+msgid ""
+"The executable is for a different platform and can not be executed on this "
+"system"
+msgstr ""
+"Izpildāmais fails ir citai platformai un nevar tikt palaists uz šīs sistēmas"
 
 #. Translator credits
-#: gcalc/gcalc.c:42
-#: gcharmap/src/callbacks.c:46
-#: gdictsrc/gdict-about.c:43
-#: gsearchtool/gsearchtool.c:2002
-#: logview/about.c:52
+#: gcalc/gcalc.c:42 gcharmap/src/callbacks.c:46 gdictsrc/gdict-about.c:43
+#: gsearchtool/gsearchtool.c:2002 logview/about.c:52
 #: meat-grinder/meat-grinder.c:475
 msgid "translator_credits"
 msgstr "Artis Trops <hornet@navigators.lv>"
 
 # gcalc/gcalc.c:133
-#: gcalc/gcalc.c:60
-#: gcalc/gcalc.c:191
+#: gcalc/gcalc.c:60 gcalc/gcalc.c:191
 msgid "GNOME Calculator"
 msgstr "GNOME Kalkulators"
+
+# gsearchtool/gsearchtool.c:764
+#: gcalc/gcalc.c:61
+#, fuzzy
+msgid "(C) 1998 the Free Software Foundation"
+msgstr "(C) 1998,2002 Brīvās Programmatūras Fonds (Free Software Foundation)"
 
 # gcalc/gcalc.c:40
 #: gcalc/gcalc.c:62
@@ -306,8 +311,7 @@ msgstr "8"
 msgid "9"
 msgstr "9"
 
-#: gcalc/gnome-calc.c:1281
-#: gfloppy/src/gfloppy2.glade.h:1
+#: gcalc/gnome-calc.c:1281 gfloppy/src/gfloppy2.glade.h:1
 msgid "*"
 msgstr "*"
 
@@ -487,7 +491,8 @@ msgid "GNOME Character Map"
 msgstr "GNOME Rakstzīmju Karte"
 
 #: gcharmap/src/callbacks.c:66
-msgid "Select, copy and paste characters from your font into other applications"
+msgid ""
+"Select, copy and paste characters from your font into other applications"
 msgstr "Izvēlies, kopē un ievieto rakstzīmes no sava fonta citās aplikācijās"
 
 # mini-utils/idetool/idetool.c:305 mini-utils/idetool/idetool.c:315
@@ -538,8 +543,7 @@ msgid "_Copy"
 msgstr "_Kopēt"
 
 # gcharmap/src/interface.c:149
-#: gcharmap/src/interface.c:277
-#: gcharmap/src/interface.c:278
+#: gcharmap/src/interface.c:277 gcharmap/src/interface.c:278
 msgid "Text to copy"
 msgstr "Kopējamais teksts"
 
@@ -550,8 +554,7 @@ msgstr "Ieraksts"
 
 # gcharmap/src/interface.c:71 gcharmap/src/interface.c:196
 # gdictsrc/gdict-app.c:520 gtt/toolbar.c:163
-#: gcharmap/src/interface.c:279
-#: gcharmap/src/menus.c:77
+#: gcharmap/src/interface.c:279 gcharmap/src/menus.c:77
 msgid "Copy"
 msgstr "Kopēt"
 
@@ -620,8 +623,7 @@ msgstr "Ievadi tekstu"
 msgid "Accessories"
 msgstr "Aksesuāri"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2
-#: gdictsrc/gdict-applet.c:270
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:270
 msgid "Dictionary Lookup"
 msgstr "Vārdnīcas Meklēšana"
 
@@ -662,16 +664,18 @@ msgstr "_Parādīt/Slēpt Definīciju Logu..."
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:648
-#: gdictsrc/gdict-pref-dialog.c:466
-#: gdictsrc/gdict-pref-dialog.c:517
-#: gdictsrc/gdict-speller.c:463
+#: gdictsrc/dict.c:648 gdictsrc/gdict-pref-dialog.c:466
+#: gdictsrc/gdict-pref-dialog.c:517 gdictsrc/gdict-speller.c:463
 msgid "Cannot connect to server"
 msgstr "Nevar savienoties ar serveri"
 
 #: gdictsrc/dict.c:661
-msgid "A serious error occured. Please check that your server and port are correct. For reference the default server is dict.org and the port 2628"
-msgstr "Atgadījusies nopietna kļūda. Lūdzu pārliecinies, vai serveris un ports norādīts pareizi. Attiecīgi noklusētais serveris ir dict.org un ports 2628"
+msgid ""
+"A serious error occured. Please check that your server and port are correct. "
+"For reference the default server is dict.org and the port 2628"
+msgstr ""
+"Atgadījusies nopietna kļūda. Lūdzu pārliecinies, vai serveris un ports "
+"norādīts pareizi. Attiecīgi noklusētais serveris ir dict.org un ports 2628"
 
 #: gdictsrc/gdict-about.c:56
 msgid "GNOME Dictionary"
@@ -701,8 +705,7 @@ msgid "Spell check done"
 msgstr "Pareizrakstības parbaude veikta"
 
 # gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
-#: gdictsrc/gdict-app.c:144
-#: gdictsrc/gdict-app.c:288
+#: gdictsrc/gdict-app.c:144 gdictsrc/gdict-app.c:288
 msgid "No matches found"
 msgstr "Nav nevienas sakrišanas"
 
@@ -727,8 +730,7 @@ msgid "Find"
 msgstr "Meklēt"
 
 # gdictsrc/gdict-app.c:381
-#: gdictsrc/gdict-app.c:490
-#: gsearchtool/gsearchtool.c:1507
+#: gdictsrc/gdict-app.c:490 gsearchtool/gsearchtool.c:1507
 #: gsearchtool/gsearchtool.c:1840
 msgid "_Find"
 msgstr "_Meklēt"
@@ -746,8 +748,7 @@ msgstr ""
 
 # gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
 # gdictsrc/gdict-applet.c:153
-#: gdictsrc/gdict-app.c:701
-#: gdictsrc/gdict-app.c:812
+#: gdictsrc/gdict-app.c:701 gdictsrc/gdict-app.c:812
 #: gdictsrc/gdict-speller.c:221
 msgid "_Look Up Word"
 msgstr "_Sameklēt Vārdu"
@@ -758,8 +759,7 @@ msgid "Lookup word in dictionary"
 msgstr "Sameklēt vārdu vārdnīcā"
 
 # gdictsrc/gdict-app.c:457 gdictsrc/gdict-app.c:514
-#: gdictsrc/gdict-app.c:704
-#: gdictsrc/gdict-speller.c:165
+#: gdictsrc/gdict-app.c:704 gdictsrc/gdict-speller.c:165
 msgid "Check _Spelling"
 msgstr "Pārbaudīt _Pareizrakstību"
 
@@ -772,8 +772,7 @@ msgstr "Pārbaudīt vārda pareizrakstību"
 msgid "_Dictionary"
 msgstr "_Vārdnīca"
 
-#: gdictsrc/gdict-app.c:785
-#: gdictsrc/gnome-dictionary.desktop.in.h:1
+#: gdictsrc/gdict-app.c:785 gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Vārdnīca"
 
@@ -781,14 +780,12 @@ msgstr "Vārdnīca"
 msgid "_Word: "
 msgstr "_Vārds: "
 
-#: gdictsrc/gdict-app.c:835
-#: gdictsrc/gdict-speller.c:147
+#: gdictsrc/gdict-app.c:835 gdictsrc/gdict-speller.c:147
 msgid "Word"
 msgstr "Vārds"
 
 # gtt/options.c:413
-#: gdictsrc/gdict-app.c:836
-#: gdictsrc/gdict-app.c:837
+#: gdictsrc/gdict-app.c:836 gdictsrc/gdict-app.c:837
 #: gdictsrc/gdict-speller.c:148
 msgid "Word Entry"
 msgstr "Vārda Ieraksts"
@@ -810,8 +807,7 @@ msgid "_Lookup"
 msgstr "_Sameklēt"
 
 # mini-utils/gless/gless.c:548
-#: gdictsrc/gdict-defbox.c:643
-#: gdictsrc/gdict-speller.c:488
+#: gdictsrc/gdict-defbox.c:643 gdictsrc/gdict-speller.c:488
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "Kļūda izpildot pieprasījumu: %s"
@@ -992,20 +988,32 @@ msgid "Port used to connect to server"
 msgstr "Lietojamais ports, lai pieslēgtos serverim"
 
 #: gdictsrc/gdict.schemas.in.h:3
-msgid "Specify whether to use smart lookup. This key is dependant on whether the dictionary server supports this option. The default is TRUE"
-msgstr "Norādi, vai lietot gudro meklēšanu. Šī iespēja ir atkarīga no tā, vai vārdnīcas serveris atbalsta šo opciju. Noklusējumā ir PATIESS"
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
+msgstr ""
+"Norādi, vai lietot gudro meklēšanu. Šī iespēja ir atkarīga no tā, vai "
+"vārdnīcas serveris atbalsta šo opciju. Noklusējumā ir PATIESS"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
 msgstr "Lietojamā datubāze vārdnīcas serverī."
 
 #: gdictsrc/gdict.schemas.in.h:5
-msgid "The dictionary server to connect to. The default server is dict.org. See http://www.dict.org for details on other servers"
-msgstr "Vārdnīcas serveris, kuram pieslēgties. Noklusētais serveris ir dict.org. Apskati http://www.dict.org, lai uzzinātu par citiem serveriem"
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+"Vārdnīcas serveris, kuram pieslēgties. Noklusētais serveris ir dict.org. "
+"Apskati http://www.dict.org, lai uzzinātu par citiem serveriem"
 
 #: gdictsrc/gdict.schemas.in.h:6
-msgid "The name of the individual database to use in the dictionary server. ! specifies that gnome-dictionary should search all databases in a given server"
-msgstr "Individuālas datubāzes nosaukums, kuru lietot vārdnīcas serverī. ! norāda, ka gnome-vārdnīcai jālieto visas datubāzes dotajā serverī"
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+"Individuālas datubāzes nosaukums, kuru lietot vārdnīcas serverī. ! norāda, "
+"ka gnome-vārdnīcai jālieto visas datubāzes dotajā serverī"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -1017,8 +1025,14 @@ msgid "The search strategy to use"
 msgstr "Meklēšanas stratēģija, kuru lietot"
 
 #: gdictsrc/gdict.schemas.in.h:9
-msgid "The search strategy to use. This is dependant on the search strategy that the dictionary server supports. The default strategy is 'lev' - Match words within Levenshtein distance one"
-msgstr "Meklēšanas stratēģija, kuru lietot. Šis ir atkarīgs no tā, kādu meklēšanas stratēģiju atbalsta serveris. Noklusētā stratēģija ir 'lev' - Atbilst vārdi vienas Levenšeina distances robežās"
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
+msgstr ""
+"Meklēšanas stratēģija, kuru lietot. Šis ir atkarīgs no tā, kādu meklēšanas "
+"stratēģiju atbalsta serveris. Noklusētā stratēģija ir 'lev' - Atbilst vārdi "
+"vienas Levenšeina distances robežās"
 
 # gdictsrc/gdict-pref-dialog.c:147
 #: gdictsrc/gdict.schemas.in.h:10
@@ -1039,12 +1053,8 @@ msgstr "MIekšējā Kļūda: Neiespējami sameklēt līdz pareizai lokācijai."
 
 #: gfloppy/src/badblocks.c:111
 #, c-format
-msgid ""
-"MInternal Error: Weird value (%ld) in do_test\n"
-""
-msgstr ""
-"MIekšējā Kļūda: Savāda vērtība (%ld) iekš do_test\n"
-""
+msgid "MInternal Error: Weird value (%ld) in do_test\n"
+msgstr "MIekšējā Kļūda: Savāda vērtība (%ld) iekš do_test\n"
 
 #: gfloppy/src/badblocks.c:166
 #, c-format
@@ -1059,15 +1069,10 @@ msgstr "MSlikto sektoru pārbaude..."
 
 #: gfloppy/src/badblocks.c:272
 #, c-format
-msgid ""
-"MFailed to open device %s for badblock checking\n"
-""
-msgstr ""
-"MNevarēja atvērt iekārtu %s, lai varētu pārbaudīt sliktos sektorus\n"
-""
+msgid "MFailed to open device %s for badblock checking\n"
+msgstr "MNevarēja atvērt iekārtu %s, lai varētu pārbaudīt sliktos sektorus\n"
 
-#: gfloppy/src/badblocks.c:291
-#: gfloppy/src/gfloppy.c:213
+#: gfloppy/src/badblocks.c:291 gfloppy/src/gfloppy.c:213
 msgid "MChecking for bad blocks... Done"
 msgstr "MSlikto sektoru pārbaude... Izdarīts"
 
@@ -1079,8 +1084,7 @@ msgstr "MFormatēju disku..."
 msgid "EI don't know what this is, but it's very wrong."
 msgstr "EEs nezinu, kas tas ir, bet tas ir ļoti nepareizi."
 
-#: gfloppy/src/fdformat.c:54
-#: gfloppy/src/fdformat.c:66
+#: gfloppy/src/fdformat.c:54 gfloppy/src/fdformat.c:66
 #, c-format
 msgid "EError formatting track #%d"
 msgstr "EKļūda formatējot celiņu #%d"
@@ -1099,8 +1103,7 @@ msgstr "MFormatēju disku... Izdarīts"
 msgid "MVerifying the format..."
 msgstr "MPārbaudu formātu"
 
-#: gfloppy/src/fdformat.c:99
-#: gfloppy/src/fdformat.c:174
+#: gfloppy/src/fdformat.c:99 gfloppy/src/fdformat.c:174
 msgid ""
 "EUnable to write to the floppy.\n"
 "\n"
@@ -1110,14 +1113,12 @@ msgstr ""
 "\n"
 "Lūdzu pārliecinies, vai tā nav aizsargāta pret rakstīšanu."
 
-#: gfloppy/src/fdformat.c:102
-#: gfloppy/src/fdformat.c:177
+#: gfloppy/src/fdformat.c:102 gfloppy/src/fdformat.c:177
 #, c-format
 msgid "EInsufficient permissions to open floppy device %s."
 msgstr "ENepietiekamas atļaujas, lai avērtu disketes iekārtu %s."
 
-#: gfloppy/src/fdformat.c:106
-#: gfloppy/src/fdformat.c:181
+#: gfloppy/src/fdformat.c:106 gfloppy/src/fdformat.c:181
 msgid ""
 "EUnable to access the floppy disk.\n"
 "\n"
@@ -1190,8 +1191,7 @@ msgstr ""
 msgid "ECould not determine current format type"
 msgstr "ENevarēja noteikt pašreizējā formāta tipu"
 
-#: gfloppy/src/gfloppy.c:164
-#: gfloppy/src/gfloppy.c:197
+#: gfloppy/src/gfloppy.c:164 gfloppy/src/gfloppy.c:197
 msgid "MMaking filesystem on disk..."
 msgstr "MVeidoju failsistēmu uz diska..."
 
@@ -1200,14 +1200,12 @@ msgstr "MVeidoju failsistēmu uz diska..."
 msgid "EUnable to create filesystem correctly."
 msgstr "ENevarēja pareizi izveidot failsistēmu."
 
-#: gfloppy/src/gfloppy.c:171
-#: gfloppy/src/gfloppy.c:203
+#: gfloppy/src/gfloppy.c:171 gfloppy/src/gfloppy.c:203
 msgid "MMaking filesystem on disk... Done"
 msgstr "MVeidoju failsistēmu uz diska... Izdarīts"
 
 # mini-utils/idetool/idetool.c:41
-#: gfloppy/src/gfloppy.c:200
-#: gfloppy/src/gfloppy.c:215
+#: gfloppy/src/gfloppy.c:200 gfloppy/src/gfloppy.c:215
 msgid "EUnable to create filesystem."
 msgstr "ENevar izveidot failsistēmu."
 
@@ -1266,14 +1264,12 @@ msgstr "_Formatēt"
 msgid "_Quick format"
 msgstr "Ā_trā formatēšana"
 
-#: gfloppy/src/main.c:131
-#: gfloppy/src/main.c:174
+#: gfloppy/src/main.c:131 gfloppy/src/main.c:174
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "Nevarēja atvērt iekārtu %s, formatēšana nevar turpināties."
 
-#: gfloppy/src/main.c:134
-#: gfloppy/src/main.c:177
+#: gfloppy/src/main.c:134 gfloppy/src/main.c:177
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -1282,14 +1278,15 @@ msgstr ""
 "Iekārta %s ir atslēgta.\n"
 "Lūdzu pievieno iekārtu, lai turpinātu."
 
-#: gfloppy/src/main.c:137
-#: gfloppy/src/main.c:180
+#: gfloppy/src/main.c:137 gfloppy/src/main.c:180
 #, c-format
 msgid ""
-"You do not have the proper permissions to write to %s, formatting will not be possible.\n"
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"Tev nav pietiekamas atļaujas, lai rakstītu uz %s, formatēšana nebūs iespējama.\n"
+"Tev nav pietiekamas atļaujas, lai rakstītu uz %s, formatēšana nebūs "
+"iespējama.\n"
 "Sazinies ar sistēmadministrātoru, lai dabūtu rakstīšanas atļaujas."
 
 #: gfloppy/src/main.c:291
@@ -1384,8 +1381,7 @@ msgid "Matches regular expression"
 msgstr "Atbilst regulāram iztecienam"
 
 # gsearchtool/gsearchtool.c:338 gsearchtool/gsearchtool.c:369
-#: gsearchtool/gsearchtool.c:274
-#: gsearchtool/gsearchtool.c:943
+#: gsearchtool/gsearchtool.c:274 gsearchtool/gsearchtool.c:943
 msgid "Start folder does not exist."
 msgstr "Sākuma direktorija neeksistē."
 
@@ -1397,8 +1393,7 @@ msgstr "šodien %-I:%M %p"
 msgid "yesterday at %-I:%M %p"
 msgstr "vakardien %-I:%M %p"
 
-#: gsearchtool/gsearchtool.c:503
-#: gsearchtool/gsearchtool.c:505
+#: gsearchtool/gsearchtool.c:503 gsearchtool/gsearchtool.c:505
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%-d/%m/%y, %-I:%M %p"
 
@@ -1464,15 +1459,17 @@ msgstr "Atrasts viens fails"
 msgid "%d files found"
 msgstr "Atrasti %d faili"
 
-#: gsearchtool/gsearchtool.c:954
-#: gsearchtool/gsearchtool.c:1671
+#: gsearchtool/gsearchtool.c:954 gsearchtool/gsearchtool.c:1671
 msgid "Cannot perform the search. Please specify a search criteria."
 msgstr "Nevaru veikt meklēšanu. Lūdzu norādi meklēšanas kritērijus."
 
-#: gsearchtool/gsearchtool.c:971
-#: gsearchtool/gsearchtool.c:1692
-msgid "A search is already running.  Please wait for the search to complete or cancel it."
-msgstr "Meklēšana jau ir palaista.  Lūdzu uzgaidi līdz meklēšana beidzas vai atsauc to."
+#: gsearchtool/gsearchtool.c:971 gsearchtool/gsearchtool.c:1692
+msgid ""
+"A search is already running.  Please wait for the search to complete or "
+"cancel it."
+msgstr ""
+"Meklēšana jau ir palaista.  Lūdzu uzgaidi līdz meklēšana beidzas vai atsauc "
+"to."
 
 # gsearchtool/gsearchtool.c:338 gsearchtool/gsearchtool.c:369
 #: gsearchtool/gsearchtool.c:1005
@@ -1481,7 +1478,8 @@ msgstr "Sākuma direktorija neeksistē"
 
 #: gsearchtool/gsearchtool.c:1020
 msgid "Cannot show the search command line. Please specify a search criteria."
-msgstr "Nevaru parādīt meklēšanas komandrinu. Lūdzu norādi meklēšanas kritēriju."
+msgstr ""
+"Nevaru parādīt meklēšanas komandrinu. Lūdzu norādi meklēšanas kritēriju."
 
 # gsearchtool/gsearchtool.c:378
 #: gsearchtool/gsearchtool.c:1024
@@ -1548,29 +1546,23 @@ msgid "Click to Remove the Rule"
 msgstr "Klikšķis, lai Izņemtu Nosacījumu"
 
 # gdictsrc/gdict-app.c:278
-#: gsearchtool/gsearchtool.c:1416
-#: gsearchtool/gsearchtool.c:1794
+#: gsearchtool/gsearchtool.c:1416 gsearchtool/gsearchtool.c:1794
 msgid "S_tarting in folder:"
 msgstr "Sā_ku direktorijā:"
 
 # gsearchtool/gsearchtool.c:599
-#: gsearchtool/gsearchtool.c:1420
-#: gsearchtool/gsearchtool.c:1800
+#: gsearchtool/gsearchtool.c:1420 gsearchtool/gsearchtool.c:1800
 msgid "Browse"
 msgstr "Lūkties"
 
 # gdictsrc/gdict-app.c:278
-#: gsearchtool/gsearchtool.c:1428
-#: gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1809
-#: gsearchtool/gsearchtool.c:1810
+#: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
+#: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
 msgid "Starting folder entry"
 msgstr "Sākuma direktorija ieraksts"
 
-#: gsearchtool/gsearchtool.c:1428
-#: gsearchtool/gsearchtool.c:1429
-#: gsearchtool/gsearchtool.c:1809
-#: gsearchtool/gsearchtool.c:1810
+#: gsearchtool/gsearchtool.c:1428 gsearchtool/gsearchtool.c:1429
+#: gsearchtool/gsearchtool.c:1809 gsearchtool/gsearchtool.c:1810
 msgid "Enter the folder name where you want to start the search"
 msgstr "Ievadi direktorijas nosaukumu, kurā vēlies sākt meklēšanu"
 
@@ -1605,35 +1597,29 @@ msgid "Click to Stop the Search"
 msgstr "Klikšķis, lai Apstādinātu Meklēšanu"
 
 # gsearchtool/gsearchtool.c:211
-#: gsearchtool/gsearchtool.c:1529
-#: gsearchtool/gsearchtool.c:1861
+#: gsearchtool/gsearchtool.c:1529 gsearchtool/gsearchtool.c:1861
 msgid "S_earch Results"
 msgstr "M_eklēšanas Rezultāti"
 
-#: gsearchtool/gsearchtool.c:1569
-#: gsearchtool/gsearchtool.c:1901
+#: gsearchtool/gsearchtool.c:1569 gsearchtool/gsearchtool.c:1901
 msgid "Name"
 msgstr "Nosaukums"
 
-#: gsearchtool/gsearchtool.c:1591
-#: gsearchtool/gsearchtool.c:1923
+#: gsearchtool/gsearchtool.c:1591 gsearchtool/gsearchtool.c:1923
 msgid "Folder"
 msgstr "Direktorija"
 
 # mini-utils/guname/info.c:61
-#: gsearchtool/gsearchtool.c:1603
-#: gsearchtool/gsearchtool.c:1935
+#: gsearchtool/gsearchtool.c:1603 gsearchtool/gsearchtool.c:1935
 msgid "Size"
 msgstr "Lielums"
 
-#: gsearchtool/gsearchtool.c:1615
-#: gsearchtool/gsearchtool.c:1947
+#: gsearchtool/gsearchtool.c:1615 gsearchtool/gsearchtool.c:1947
 msgid "Type"
 msgstr "Tips"
 
 # logview/info.c:161
-#: gsearchtool/gsearchtool.c:1626
-#: gsearchtool/gsearchtool.c:1958
+#: gsearchtool/gsearchtool.c:1626 gsearchtool/gsearchtool.c:1958
 msgid "Date Modified"
 msgstr "Modificēšanas Datums"
 
@@ -1643,13 +1629,11 @@ msgid "Find files _named:"
 msgstr "Meklēt failus ar _nosaukumu:"
 
 # gsearchtool/gsearchtool.c:33
-#: gsearchtool/gsearchtool.c:1785
-#: gsearchtool/gsearchtool.c:1786
+#: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
 msgid "File Name Entry"
 msgstr "Faila Nosaukuma Ieraksts"
 
-#: gsearchtool/gsearchtool.c:1785
-#: gsearchtool/gsearchtool.c:1786
+#: gsearchtool/gsearchtool.c:1785 gsearchtool/gsearchtool.c:1786
 msgid "Enter the file name you want to search"
 msgstr "Ievadi faila nosaukumu, kuru vēlies atrast"
 
@@ -1697,8 +1681,7 @@ msgid "Cannot save the results file."
 msgstr "Nevaru saglabāt rezultātu failu."
 
 # gsearchtool/outdlg.c:69
-#: gsearchtool/gsearchtool.c:2102
-#: meat-grinder/meat-grinder.c:654
+#: gsearchtool/gsearchtool.c:2102 meat-grinder/meat-grinder.c:654
 msgid "Save Results"
 msgstr "Saglabāt Rezultātus"
 
@@ -1742,8 +1725,17 @@ msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 # logview/about.c:45
 #: logview/about.c:43
-msgid "This  program  is  part of  the  GNOME  project for Linux. Logview comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it under the conditions of the GNU General Public Licence. The log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
-msgstr "Šī programma ir daļa no GNOMEs Linux projekta. Sistēmas Žurnālu Skatītājs NEGARANTĒ PILNĪGI NEKO. Šī ir brīvā prgrammatūra, un tu esi laipni aicināts to izplatīt saskaņā ar GNU Vispārējās Publiskās Licences nosacījumiem. Sistēmas Žurnālu Skatītāja ikona ir Tuomas Kuosmanen (pazīstams arī  kā tigert) laipni dāvāta."
+msgid ""
+"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
+"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"redistribute it under the conditions of the GNU General Public Licence. The "
+"log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
+msgstr ""
+"Šī programma ir daļa no GNOMEs Linux projekta. Sistēmas Žurnālu Skatītājs "
+"NEGARANTĒ PILNĪGI NEKO. Šī ir brīvā prgrammatūra, un tu esi laipni aicināts "
+"to izplatīt saskaņā ar GNU Vispārējās Publiskās Licences nosacījumiem. "
+"Sistēmas Žurnālu Skatītāja ikona ir Tuomas Kuosmanen (pazīstams arī  kā "
+"tigert) laipni dāvāta."
 
 # logview/logview.c:268
 #. go get logview.xpm in $(prefix)/share/pixmaps/logview
@@ -1779,8 +1771,7 @@ msgstr "_Rediģēt"
 
 # gnome-find/gnome-find.c:102 gsearchtool/gsearchtool.c:545
 # logview/actions.c:127
-#: logview/actions.c:167
-#: meat-grinder/meat-grinder.c:941
+#: logview/actions.c:167 meat-grinder/meat-grinder.c:941
 msgid "_Remove"
 msgstr "_Izņemt"
 
@@ -1791,12 +1782,8 @@ msgstr "Nevar atvērt darbību datu bāzi <%s>! Atvēršana neizdevās."
 
 # logview/actions.c:282 logview/actions.c:295 logview/actions.c:306
 # logview/actions.c:317 logview/actions.c:328 logview/actions.c:339
-#: logview/actions.c:295
-#: logview/actions.c:308
-#: logview/actions.c:319
-#: logview/actions.c:330
-#: logview/actions.c:341
-#: logview/actions.c:352
+#: logview/actions.c:295 logview/actions.c:308 logview/actions.c:319
+#: logview/actions.c:330 logview/actions.c:341 logview/actions.c:352
 msgid "Error parsing actions data base"
 msgstr "Kļūda analizējot darbību datubāzi"
 
@@ -1859,7 +1846,6 @@ msgid ""
 "message: [%s]\n"
 "description: [%s]\n"
 "action: [%s]\n"
-""
 msgstr ""
 "tag: [%s]\n"
 "log_vārds: [%s]\n"
@@ -1867,7 +1853,6 @@ msgstr ""
 "ziņa: [%s]\n"
 "apraksts: [%s]\n"
 "darbība: [%s]\n"
-""
 
 # logview/calendar.c:118
 #: logview/calendar.c:112
@@ -1956,10 +1941,7 @@ msgstr "Žurnāla statistika"
 #. Note: we use a real translated string that will appear below to gather
 #. * the length, that way we'll get semi correct results with a lot more
 #. * fonts
-#: logview/info.c:193
-#: logview/info.c:195
-#: logview/zoom.c:220
-#: logview/zoom.c:223
+#: logview/info.c:193 logview/info.c:195 logview/zoom.c:220 logview/zoom.c:223
 #: logview/zoom.c:271
 msgid "Date:"
 msgstr "Datums:"
@@ -2085,30 +2067,18 @@ msgstr "%B %e"
 
 # logview/logrtns.c:96
 #: logview/logrtns.c:206
-msgid ""
-"Not enough memory!\n"
-""
-msgstr ""
-"Par maz atmiņas!\n"
-""
+msgid "Not enough memory!\n"
+msgstr "Par maz atmiņas!\n"
 
 # logview/logrtns.c:104
 #: logview/logrtns.c:214
-msgid ""
-"Out of memory!\n"
-""
-msgstr ""
-"Nav vairs atmiņas!\n"
-""
+msgid "Out of memory!\n"
+msgstr "Nav vairs atmiņas!\n"
 
 # logview/logrtns.c:129
 #: logview/logrtns.c:240
-msgid ""
-"Unable to open logfile!\n"
-""
-msgstr ""
-"Nevar atvērt žurnālfailu!\n"
-""
+msgid "Unable to open logfile!\n"
+msgstr "Nevar atvērt žurnālfailu!\n"
 
 # logview/logrtns.c:183
 #: logview/logrtns.c:295
@@ -2119,8 +2089,12 @@ msgstr "%s nav parasts fails."
 # logview/logrtns.c:190
 #: logview/logrtns.c:303
 #, c-format
-msgid "%s is not user readable. Either run the program as root or ask the sysadmin to change the permissions on the file."
-msgstr "%s nav lietotājam nolasāms. Vai nu palaid programmu kā root, vai arī palūdz sistēmas administratoam nomainīt šī faila atļaujas."
+msgid ""
+"%s is not user readable. Either run the program as root or ask the sysadmin "
+"to change the permissions on the file."
+msgstr ""
+"%s nav lietotājam nolasāms. Vai nu palaid programmu kā root, vai arī palūdz "
+"sistēmas administratoam nomainīt šī faila atļaujas."
 
 # logview/logrtns.c:202
 #: logview/logrtns.c:320
@@ -2129,16 +2103,13 @@ msgid "%s could not be opened."
 msgstr "%s nevar tikt atvērts."
 
 # logview/logrtns.c:211 logview/logrtns.c:221
-#: logview/logrtns.c:350
-#: logview/logrtns.c:359
+#: logview/logrtns.c:350 logview/logrtns.c:359
 #, c-format
 msgid "%s not a log file."
 msgstr "%s nav žurnālfails."
 
 # logview/logrtns.c:633 logview/logrtns.c:664 logview/logrtns.c:795
-#: logview/logrtns.c:792
-#: logview/logrtns.c:823
-#: logview/logrtns.c:954
+#: logview/logrtns.c:792 logview/logrtns.c:823 logview/logrtns.c:954
 msgid "ReadLogStats: out of memory"
 msgstr "Lasīt Žurnāla Statistiku: nav vairs atmiņas"
 
@@ -2226,8 +2197,7 @@ msgid "Last Modified: "
 msgstr "Pēdējoriez Izmainīts: "
 
 # logview/logview.c:621
-#: logview/logview.c:722
-#: logview/logview.c:788
+#: logview/logview.c:722 logview/logview.c:788
 msgid "Too many open logs. Close one and try again"
 msgstr "Par daudz atvērtu žurnālu."
 
@@ -2247,12 +2217,8 @@ msgstr "Nevaru ielādēt nepieciešamos fontus, nevaru turpināt"
 # logview/misc.c:78
 #: logview/misc.c:91
 #, c-format
-msgid ""
-"Error: [%s]\n"
-""
-msgstr ""
-"Kļūda: [%s]\n"
-""
+msgid "Error: [%s]\n"
+msgstr "Kļūda: [%s]\n"
 
 # logview/actions.c:61 logview/monitor.c:115
 #: logview/monitor.c:115
@@ -2301,14 +2267,9 @@ msgid "Too many logs to monitor. Remove one and try again"
 msgstr "Par daudz noverojamo žurnālu. Izņemiet vienu un mēģiniet vēlreiz"
 
 # logview/monitor.c:283 logview/monitor.c:330
-#: logview/monitor.c:294
-#: logview/monitor.c:332
-msgid ""
-"tmp_list is NULL\n"
-""
-msgstr ""
-"tmp_list ir NULL\n"
-""
+#: logview/monitor.c:294 logview/monitor.c:332
+msgid "tmp_list is NULL\n"
+msgstr "tmp_list ir NULL\n"
 
 # logview/monitor.c:457
 #: logview/monitor.c:452
@@ -2317,12 +2278,8 @@ msgstr "Novērojam žurnālus..."
 
 # logview/monitor.c:635
 #: logview/monitor.c:673
-msgid ""
-"TOUCHED!!\n"
-""
-msgstr ""
-"AIZTIKTS!!\n"
-""
+msgid "TOUCHED!!\n"
+msgstr "AIZTIKTS!!\n"
 
 # logview/userprefsdialog.c:65
 #: logview/userprefsdialog.c:65
@@ -2403,8 +2360,7 @@ msgid "%s removed"
 msgstr "%s izņemts"
 
 # mini-utils/idetool/idetool.c:41
-#: meat-grinder/meat-grinder.c:328
-#: meat-grinder/meat-grinder.c:333
+#: meat-grinder/meat-grinder.c:328 meat-grinder/meat-grinder.c:333
 #, c-format
 msgid "Failed to create %s"
 msgstr "Nevarēju izveidot %s"
@@ -2413,8 +2369,7 @@ msgstr "Nevarēju izveidot %s"
 msgid "Archive.tar.gz"
 msgstr "Arhīvs.tar.gz"
 
-#: meat-grinder/meat-grinder.c:493
-#: meat-grinder/meat-grinder.c:977
+#: meat-grinder/meat-grinder.c:493 meat-grinder/meat-grinder.c:977
 msgid "GNOME Archive Generator"
 msgstr "GNOME Arhīva Ģenerātors"
 
@@ -2432,8 +2387,7 @@ msgid "All files removed"
 msgstr "Visi faili izņemti"
 
 # gtt/app.c:117 gtt/app.c:223
-#: meat-grinder/meat-grinder.c:609
-#: meat-grinder/meat-grinder.c:793
+#: meat-grinder/meat-grinder.c:609 meat-grinder/meat-grinder.c:793
 msgid "No filename selected"
 msgstr "Neviens faila vārds nav izvēlēts"
 
@@ -2511,8 +2465,12 @@ msgid "_Create Archive"
 msgstr "_Izveidot Arhīvu"
 
 #: meat-grinder/meat-grinder.c:1036
-msgid "Drag this button to the destination where you want the archive to be created or press it to pop up a file selection dialog."
-msgstr "Velc šo pogu uz turieni, kur tu vēlies, lai arhīvs tiktu izveidots, vai arī piespied to, lai dabūtu failu izvēles dialogu."
+msgid ""
+"Drag this button to the destination where you want the archive to be created "
+"or press it to pop up a file selection dialog."
+msgstr ""
+"Velc šo pogu uz turieni, kur tu vēlies, lai arhīvs tiktu izveidots, vai arī "
+"piespied to, lai dabūtu failu izvēles dialogu."
 
 #: meat-grinder/meat-grinder.c:1174
 msgid "Cannot find proper icons anywhere!"
@@ -2525,4 +2483,3 @@ msgid ""
 msgstr ""
 "Nevar atrast arhīva (tar) programmu!\n"
 "Šo programmu lieto arhīvu izveidē."
-
