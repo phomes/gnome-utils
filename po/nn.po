@@ -2,13 +2,14 @@
 # Copyright (C) 2000 Gaute Hvoslef Kvalnes.
 # Gaute Hvoslef Kvalnes <ai98ghk@stud.hib.no>, 2000.
 # Kjartan Maraas  <kmaraas@gnome.org>, 2001.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils-1.4.0.3\n"
-"POT-Creation-Date: 2001-09-16 17:42+0200\n"
-"PO-Revision-Date: 2001-08-19 20:39+0200\n"
-"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
-"Language-Team: Norwegian (Nynorsk)\n"
+"Project-Id-Version: gnome-utils 1.4.0.3\n"
+"POT-Creation-Date: 2001-11-07 09:51+0100\n"
+"PO-Revision-Date: 2001-11-07 14:46+0100\n"
+"Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
+"Language-Team: Norwegian/Nynorsk <no@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,7 +62,7 @@ msgstr "CE/C"
 msgid "AC"
 msgstr "AC"
 
-#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1370
+#: gcalc/gnome-calc.c:1181 gcalc/gnome-calc.c:1379
 msgid "INV"
 msgstr "INV"
 
@@ -162,15 +163,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
 msgid "3"
 msgstr "3"
 
@@ -276,7 +277,7 @@ msgid "Exit"
 msgstr "Avslutt"
 
 #: gcharmap/src/interface.c:239 gcharmap/src/menus.c:104
-#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:170
+#: gdictsrc/gdict-app.c:519 gtt/toolbar.c:181
 msgid "Copy"
 msgstr "Kopier"
 
@@ -329,7 +330,7 @@ msgstr ""
 #: gcharmap/src/menus.c:63
 #, fuzzy
 msgid "_Statusbar"
-msgstr "Statuslinje"
+msgstr "_Statuslinje"
 
 #: gcharmap/src/menus.c:63
 #, fuzzy
@@ -368,42 +369,38 @@ msgstr ""
 msgid "Insert character(s) by choosing character codes"
 msgstr ""
 
-#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:166
+#: gcharmap/src/menus.c:102 gdictsrc/gdict-app.c:516 gtt/toolbar.c:177
 msgid "Cut"
 msgstr "Klipp ut"
 
 #: gcharmap/src/menus.c:102
-#, fuzzy
 msgid "Cut the selection"
-msgstr "Klipper ut utval ..."
+msgstr "Klipp ut valde område"
 
 #: gcharmap/src/menus.c:104
-#, fuzzy
 msgid "Copy the selection"
 msgstr "Kopier utval"
 
-#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:174
+#: gcharmap/src/menus.c:106 gdictsrc/gdict-app.c:522 gtt/toolbar.c:185
 msgid "Paste"
 msgstr "Lim inn"
 
 #: gcharmap/src/menus.c:106
 #, fuzzy
 msgid "Paste the clipboard"
-msgstr "Limer inn frå utklippstavla"
+msgstr "Lim inn frå utklippstavla"
 
 #: gcharmap/src/menus.c:109
 msgid "Show Gnome Character Map's manual"
 msgstr ""
 
 #: gcharmap/src/menus.c:111 mini-utils/gcolorsel/menus.c:919
-#, fuzzy
 msgid "About this application"
-msgstr "Avsluttar programmet"
+msgstr "Om dette programmet"
 
 #: gcharmap/src/menus.c:114 mini-utils/gcolorsel/menus.c:921
-#, fuzzy
 msgid "Exit the program"
-msgstr "Avsluttar programmet"
+msgstr "Avslutt programmet"
 
 #: gdictsrc/main.c:93
 msgid ""
@@ -470,17 +467,17 @@ msgstr ""
 #: gdictsrc/gdict-app.c:452 gdictsrc/gdict-app.c:509
 #: gdictsrc/gdict-applet.c:313
 #, fuzzy
-msgid "Lookup"
+msgid "Look up"
 msgstr "Repeter"
 
 #: gdictsrc/gdict-app.c:453 gdictsrc/gdict-app.c:510
-msgid "Lookup word in dictionary"
+msgid "Look up word in dictionary"
 msgstr ""
 
 #: gdictsrc/gdict-app.c:455 gdictsrc/gdict-app.c:512
 #, fuzzy
 msgid "Spell"
-msgstr "Skal"
+msgstr "Stav"
 
 #: gdictsrc/gdict-app.c:456 gdictsrc/gdict-app.c:513
 #, fuzzy
@@ -493,7 +490,6 @@ msgid "Cut to Clipboard"
 msgstr "Kopier til utklippstavla"
 
 #: gdictsrc/gdict-app.c:520
-#, fuzzy
 msgid "Copy to Clipboard"
 msgstr "Kopier til utklippstavla"
 
@@ -514,13 +510,14 @@ msgstr ""
 msgid "Word definition"
 msgstr "Ord-definisjon"
 
-#: gdictsrc/gdict-applet.c:280 logview/logview.c:135
+#: gdictsrc/gdict-applet.c:280 logview/logview.c:136
 msgid "About..."
 msgstr "Om ..."
 
 #: gdictsrc/gdict-applet.c:289 logview/logview.c:116
+#, fuzzy
 msgid "Preferences..."
-msgstr "Innstillingar ..."
+msgstr "Brukarval ..."
 
 #: gdictsrc/gdict-applet.c:293
 #, fuzzy
@@ -584,7 +581,7 @@ msgstr "Føretrekt"
 #: gdictsrc/gdict-pref-dialog.c:129 mini-utils/gshutdown/gshutdown.c:316
 #: stripchart/prefs.c:195
 msgid "Preferences"
-msgstr "Innstillingar"
+msgstr "Brukarval"
 
 #: gdictsrc/gdict-pref-dialog.c:147
 #, fuzzy
@@ -600,9 +597,8 @@ msgid "Port:"
 msgstr "Port:"
 
 #: gdictsrc/gdict-pref-dialog.c:171
-#, fuzzy
 msgid "Database:"
-msgstr "&Database:"
+msgstr "Database:"
 
 #: gdictsrc/gdict-pref-dialog.c:178
 #, fuzzy
@@ -642,9 +638,8 @@ msgid "The server you specified could not be found."
 msgstr "Fann ikkje strukturen '%1'."
 
 #: gdictsrc/gdict-speller.c:118
-#, fuzzy
 msgid "Word:"
-msgstr "Modus:"
+msgstr "Ord:"
 
 #: gdictsrc/gdict-speller.c:127
 #, fuzzy
@@ -657,20 +652,20 @@ msgstr ""
 
 #: gdictsrc/gdict-speller.c:151
 #, fuzzy
-msgid "Lookup Word..."
+msgid "Look up Word..."
 msgstr "Ser etter modem ..."
 
 #: gdictsrc/gdict-speller.c:163
 #, fuzzy
 msgid "Spell checker"
-msgstr "Stavekontroll ..."
+msgstr "Stavekontroll"
 
-#: gdiskfree/gdiskfree_app.c:52 gdiskfree/gdiskfree_menus.c:108
+#: gdiskfree/gdiskfree_app.c:53 gdiskfree/gdiskfree_menus.c:108
 #, fuzzy
 msgid "GDiskFree"
 msgstr "KDiskFree"
 
-#: gdiskfree/gdiskfree_app.c:72
+#: gdiskfree/gdiskfree_app.c:73
 #, fuzzy, c-format
 msgid "Unable to parse the geometry string '%s'"
 msgstr "Kan ikkje lesa gruppelistefila"
@@ -680,9 +675,9 @@ msgstr "Kan ikkje lesa gruppelistefila"
 msgid "Specify the geometry of the window."
 msgstr "set klientgeometrien til hovudelementet."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:332 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:439 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
-msgstr ""
+msgstr "GEOMETRY"
 
 #: gdiskfree/gdiskfree_menus.c:111
 msgid "GDiskFree is a GNOME implementation of the shell utility 'df'."
@@ -714,11 +709,11 @@ msgstr "Retning"
 
 #: gdiskfree/gdiskfree_options.c:265
 msgid "Vertical"
-msgstr "Vertikalt"
+msgstr "Loddrett"
 
 #: gdiskfree/gdiskfree_options.c:278
 msgid "Horizontal"
-msgstr "Horisontalt"
+msgstr "Vassrett"
 
 #: gdiskfree/gdiskfree_options.c:297
 #, fuzzy
@@ -730,9 +725,8 @@ msgid "General Settings"
 msgstr "Generelt oppsett"
 
 #: gsearchtool/gsearchtool.c:33
-#, fuzzy
 msgid "File name"
-msgstr "Filnamn:"
+msgstr "Filnamn"
 
 #: gsearchtool/gsearchtool.c:35
 #, fuzzy
@@ -846,8 +840,9 @@ msgid "Entry changed called for a non entry option!"
 msgstr ""
 
 #: gsearchtool/gsearchtool.c:568
+#, fuzzy
 msgid "Enable"
-msgstr "På"
+msgstr "Skru på"
 
 #: gsearchtool/gsearchtool.c:576 logview/actions.c:163
 #: meat-grinder/meat-grinder.c:702
@@ -872,13 +867,13 @@ msgstr "Legg til"
 msgid "Show Command"
 msgstr "Skal-kommando"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ghtml.c:93
-#: gtt/ghtml.c:257 gtt/glade/interval_edit.glade.h:11
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gtt/ghtml.c:94 gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Start"
 
-#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:93
-#: gtt/ghtml.c:260 gtt/glade/interval_edit.glade.h:13
+#: gsearchtool/gsearchtool.c:667 gsearchtool/gsearchtool.c:760 gtt/ghtml.c:94
+#: gtt/ghtml.c:265 gtt/glade/interval_edit.glade.h:13
 msgid "Stop"
 msgstr "Stopp"
 
@@ -943,46 +938,190 @@ msgstr "Kommandolinje"
 msgid "No command for this mime type"
 msgstr "Ingen kommando eller vert oppgitt."
 
-#: gtt/app.c:118 gtt/app.c:231
+#: gtt/app.c:115 gtt/app.c:227
 #, fuzzy
 msgid "no project selected"
 msgstr "Ingen rektangel valt!"
 
-#: gtt/app.c:220
-#, fuzzy
+#: gtt/app.c:217
 msgid "00:00"
-msgstr "00:00:00"
+msgstr "00:00"
 
-#: gtt/app.c:263 mini-utils/gless/gless.c:423
+#: gtt/app.c:259 mini-utils/gless/gless.c:423
 msgid ""
 "Couldn't understand geometry (position and size)\n"
 " specified on command line"
 msgstr ""
 
-#: gtt/ctree.c:353
+#: gtt/ctree.c:511
 msgid "Total"
 msgstr "Totalt"
 
-#: gtt/ctree.c:354 gtt/glade/interval_edit.glade.h:14
-#, fuzzy
-msgid "Today"
-msgstr "i dag"
+#: gtt/ctree.c:513
+msgid "Total time spent on this project."
+msgstr ""
 
-#: gtt/ctree.c:355 gtt/menucmd.c:169
+#: gtt/ctree.c:518
 #, fuzzy
+msgid "This Memo"
+msgstr "Set inn"
+
+#: gtt/ctree.c:520
+msgid "Time spent under the current task memo."
+msgstr ""
+
+#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
+msgid "Today"
+msgstr "I dag"
+
+#: gtt/ctree.c:528
+msgid "Time spent on this project today."
+msgstr ""
+
+#: gtt/ctree.c:533
+msgid "Week"
+msgstr "Veke"
+
+#: gtt/ctree.c:535
+msgid "Time spent on this project this week."
+msgstr ""
+
+#: gtt/ctree.c:541
+msgid "Month"
+msgstr "Månad"
+
+#: gtt/ctree.c:543
+msgid "Time spent on this project this month."
+msgstr ""
+
+#: gtt/ctree.c:549
+msgid "Year"
+msgstr "År"
+
+#: gtt/ctree.c:551
+msgid "Time spent on this project this year."
+msgstr ""
+
+#: gtt/ctree.c:557
+msgid "Title"
+msgstr "Tittel"
+
+#: gtt/ctree.c:558 gtt/menucmd.c:144
 msgid "Project Title"
 msgstr "Prosjektnamn"
 
-#: gtt/ctree.c:356 gtt/menucmd.c:170 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
 msgid "Description"
 msgstr "Skildring"
 
-#: gtt/file-io.c:342
+#: gtt/ctree.c:569
+msgid "Task"
+msgstr "Oppgåve"
+
+#: gtt/ctree.c:571
+msgid "The memo for the current task"
+msgstr ""
+
+#: gtt/ctree.c:578
+msgid "Estimated Project Start Date"
+msgstr ""
+
+#: gtt/ctree.c:583
+msgid "End"
+msgstr "Slutt"
+
+#: gtt/ctree.c:585
+msgid "Estimated Project Completion Date"
+msgstr ""
+
+#: gtt/ctree.c:590
+msgid "Due"
+msgstr ""
+
+#: gtt/ctree.c:592
+msgid ""
+"Due Date: the date by which the project absolutely must be completed by."
+msgstr ""
+
+#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+msgid "Size"
+msgstr "Storleik"
+
+#: gtt/ctree.c:601
+msgid "Sizing: How much work it will take to finish this project."
+msgstr ""
+
+#: gtt/ctree.c:607
+msgid "Done"
+msgstr "Ferdig"
+
+#: gtt/ctree.c:609
+msgid "Percent Complete: How much of this project has been finished till now."
+msgstr ""
+
+#: gtt/ctree.c:616
+msgid "U"
+msgstr "U"
+
+#: gtt/ctree.c:618
+msgid "Urgency: Does this project need to be done soon, done quickly?"
+msgstr ""
+
+#: gtt/ctree.c:624
+msgid "Imp"
+msgstr ""
+
+#: gtt/ctree.c:626
+msgid "Importance: How important is this project?"
+msgstr ""
+
+#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
+#: mini-utils/idetool/idetool.c:319
+msgid "Status"
+msgstr "Status"
+
+#: gtt/ctree.c:634
+msgid "The current status of this project."
+msgstr ""
+
+#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
+msgid "Low"
+msgstr "Låg"
+
+#: gtt/ctree.c:970
+msgid "Med"
+msgstr ""
+
+#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
+msgid "High"
+msgstr "Høg"
+
+#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
+msgid "Not Started"
+msgstr "Ikkje starta"
+
+#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
+msgid "In Progress"
+msgstr "Under arbeid"
+
+#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
+msgid "On Hold"
+msgstr "På vent"
+
+#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
+msgid "Cancelled"
+msgstr "Avbroten"
+
+#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
+msgid "Completed"
+msgstr "Ferdig"
+
+#: gtt/file-io.c:376
 #, fuzzy
 msgid "project %t started"
 msgstr "Trykk %1 for å starta"
 
-#: gtt/file-io.c:345
+#: gtt/file-io.c:379
 #, fuzzy
 msgid "stopped project %t"
 msgstr "tilpassa prosjekt"
@@ -990,130 +1129,142 @@ msgstr "tilpassa prosjekt"
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:580
+#: gtt/file-io.c:677
 #, c-format
 msgid "%d:%02d:%02d"
-msgstr ""
+msgstr "%d:%02d:%02d"
 
-#: gtt/ghtml.c:93 gtt/ghtml.c:218
+#: gtt/ghtml.c:94 gtt/ghtml.c:219
 #, fuzzy
 msgid "Memo"
 msgstr "Minne"
 
-#: gtt/ghtml.c:93 gtt/ghtml.c:263
+#: gtt/ghtml.c:94 gtt/ghtml.c:268
 msgid "Elapsed"
 msgstr ""
 
-#: gtt/ghtml.c:111 gtt/ghtml.c:360
+#: gtt/ghtml.c:112 gtt/ghtml.c:364
 #, fuzzy
 msgid "(empty)"
 msgstr "Tom"
 
-#: gtt/ghtml.c:223
+#: gtt/ghtml.c:224
 msgid "Task Time"
 msgstr ""
 
-#: gtt/ghtml.c:227 gtt/ghtml.c:379 gtt/glade/task_properties.glade.h:3
+#: gtt/ghtml.c:228
+#, fuzzy
+msgid "Bill Status"
+msgstr "Status"
+
+#: gtt/ghtml.c:232 gtt/ghtml.c:396 gtt/glade/task_properties.glade.h:4
 #, fuzzy
 msgid "Billable"
 msgstr "Deaktivert"
 
-#: gtt/ghtml.c:231
+#: gtt/ghtml.c:236
 #, fuzzy
 msgid "Bill Rate"
 msgstr "Deaktivert"
 
-#: gtt/ghtml.c:235 mini-utils/gcolorsel/view-color-list.c:197
+#: gtt/ghtml.c:240 mini-utils/gcolorsel/view-color-list.c:197
 #: mini-utils/guname/moreinfo.c:227
 msgid "Value"
 msgstr "Verdi"
 
-#: gtt/ghtml.c:239
+#: gtt/ghtml.c:244
 #, fuzzy
 msgid "Billable Value"
 msgstr "Deaktivert"
 
-#: gtt/ghtml.c:243 gtt/ghtml.c:269
+#: gtt/ghtml.c:248 gtt/ghtml.c:274
 #, fuzzy
 msgid "No Default Value"
 msgstr "Standard"
 
-#: gtt/ghtml.c:266
+#: gtt/ghtml.c:271
 #, fuzzy
 msgid "Start Time Fuzziness"
 msgstr "Start"
 
-#: gtt/ghtml.c:376 gtt/glade/task_properties.glade.h:10
-#, fuzzy
+#: gtt/ghtml.c:380 gtt/glade/task_properties.glade.h:11
 msgid "Hold"
-msgstr "Einsfarga"
+msgstr "Vent"
 
-#: gtt/ghtml.c:382 gtt/glade/task_properties.glade.h:13
+#: gtt/ghtml.c:383 gtt/glade/task_properties.glade.h:3
+#, fuzzy
+msgid "Bill"
+msgstr "Deaktivert"
+
+#: gtt/ghtml.c:386 gtt/glade/task_properties.glade.h:20
+msgid "Paid"
+msgstr ""
+
+#: gtt/ghtml.c:399 gtt/glade/task_properties.glade.h:16
 msgid "Not Billable"
 msgstr ""
 
-#: gtt/ghtml.c:385 gtt/glade/task_properties.glade.h:12
+#: gtt/ghtml.c:402 gtt/glade/task_properties.glade.h:15
 msgid "No Charge"
 msgstr ""
 
-#: gtt/ghtml.c:395 gtt/glade/task_properties.glade.h:17
-#, fuzzy
+#: gtt/ghtml.c:412 gtt/glade/task_properties.glade.h:21
 msgid "Regular"
-msgstr "Last om att"
+msgstr "Normal"
 
-#: gtt/ghtml.c:398 gtt/glade/task_properties.glade.h:16
+#: gtt/ghtml.c:415 gtt/glade/task_properties.glade.h:19
 msgid "Overtime"
 msgstr ""
 
-#: gtt/ghtml.c:401
+#: gtt/ghtml.c:418
 msgid "Double Overtime"
 msgstr ""
 
-#: gtt/ghtml.c:404 gtt/glade/task_properties.glade.h:9
+#: gtt/ghtml.c:421 gtt/glade/task_properties.glade.h:10
 #, fuzzy
 msgid "Flat Fee"
 msgstr "Flyttal"
 
-#: gtt/ghtml.c:424
+#: gtt/ghtml.c:441
 #, fuzzy
 msgid "Error - Unknown"
 msgstr "Ukjend"
 
-#: gtt/ghtml.c:664
+#: gtt/ghtml.c:686
 msgid "unknown token: >>>>"
 msgstr ""
 
-#: gtt/journal.c:106
+#: gtt/journal.c:107
 msgid "Error 404 Not Found"
 msgstr ""
 
-#: gtt/journal.c:108
+#: gtt/journal.c:109
 #, fuzzy, c-format
 msgid "The file %s was not found."
 msgstr "Fann ikkje fil"
 
-#: gtt/journal.c:109
+#: gtt/journal.c:110
 msgid "(null)"
-msgstr ""
+msgstr "(null)"
 
-#: gtt/journal.c:118
+#: gtt/journal.c:119
 #, fuzzy
 msgid "Unkown Error"
 msgstr "Ukjend"
 
-#: gtt/journal.c:167 gtt/plug-in.c:89
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, fuzzy, c-format
 msgid ""
 "Unable to open the file %s\n"
 "%s"
 msgstr "Kan ikkje opna loggfila!\n"
 
-#: gtt/journal.c:246 gtt/proj.c:489 gtt/proj.c:1143 gtt/proj.c:1260
-#: gtt/proj.c:1398
+#: gtt/journal.c:247 gtt/proj.c:716 gtt/proj.c:1527 gtt/proj.c:1647
+#: gtt/proj.c:1787
 msgid "New Task"
-msgstr ""
+msgstr "Ny oppgåve"
 
-#: gtt/journal.c:404
+#: gtt/journal.c:421
 #, fuzzy
 msgid "Save HTML To File"
 msgstr "Vel ein palett"
@@ -1126,7 +1277,7 @@ msgstr "opna filer"
 #. Translators: Format to use in the gtt logfile
 #: gtt/log.c:64
 msgid "%b %d %H:%M:%S"
-msgstr ""
+msgstr "%b %d %H:%M:%S"
 
 #: gtt/log.c:102
 #, fuzzy
@@ -1144,215 +1295,210 @@ msgstr "Ingen program valt"
 msgid "program exited"
 msgstr "Ingen program valt"
 
-#: gtt/main.c:113
+#: gtt/main.c:114
 msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
 msgstr ""
 
-#: gtt/main.c:124
+#: gtt/main.c:126
 #, fuzzy
 msgid "Cannot create pid-file!"
 msgstr "Kan ikkje laga mappe "
 
-#: gtt/main.c:194
+#: gtt/main.c:219
+msgid "Do you want to continue?"
+msgstr ""
+
+#: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
 msgstr "Feil"
 
-#: gtt/main.c:195
-msgid ""
-"An error occured while reading the configuration file.\n"
-"Shall I setup a new configuration?"
+#: gtt/main.c:272
+msgid "Shall I setup a new configuration?"
 msgstr ""
 
-#: gtt/main.c:332
+#: gtt/main.c:439
 #, fuzzy
 msgid "Specify geometry"
 msgstr "Oppgi redigerar:"
 
-#: gtt/main.c:334
+#: gtt/main.c:441
 #, fuzzy
 msgid "Select a project on startup"
 msgstr "Velg ein katalog"
 
-#: gtt/main.c:334
+#: gtt/main.c:441
 msgid "PROJECT"
 msgstr "PROSJEKT"
 
-#: gtt/main.c:372 gtt/menucmd.c:53 gtt/menucmd.c:61 gtt/menucmd.c:231
-#: gtt/menucmd.c:269
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
 msgid "Warning"
 msgstr "Åtvaring"
 
-#: gtt/menucmd.c:54 gtt/menucmd.c:271
-#, fuzzy
-msgid "Could not write the configuration file!"
-msgstr "Kunne ikkje skriva oppsettfila!"
-
-#: gtt/menucmd.c:62
-msgid "Unknown error occurred"
-msgstr ""
-
-#: gtt/menucmd.c:113
+#: gtt/menucmd.c:85
 msgid "Time tracking tool for GNOME"
 msgstr "GNOME tidtakar-verktøy"
 
-#: gtt/menucmd.c:163
+#: gtt/menucmd.c:138
 msgid "New Project..."
 msgstr "Nytt prosjekt..."
 
-#: gtt/menucmd.c:233
-msgid "I could not read the configuration file"
-msgstr "Kunne ikkje lesa oppsettfila"
-
-#: gtt/menucmd.c:247 gtt/toolbar.c:156
+#: gtt/menucmd.c:220 gtt/toolbar.c:167
 msgid "Reload Configuration File"
 msgstr "Last oppsettfila på nytt"
 
-#: gtt/menucmd.c:248
-msgid ""
-"This will overwrite your current set of projects.\n"
-"Do you really want to reload the configuration file?"
-msgstr ""
+#: gtt/menucmd.c:221
+#, fuzzy
+msgid "Do you really want to reload the configuration file?"
+msgstr "Kunne ikkje lesa oppsettfila"
 
-#: gtt/menucmd.c:291
+#: gtt/menucmd.c:256
 #, c-format
 msgid "File %s exists, overwrite?"
 msgstr ""
 
-#: gtt/menucmd.c:302
+#: gtt/menucmd.c:267
 msgid "File cannot be written"
 msgstr ""
 
-#: gtt/menucmd.c:322
+#: gtt/menucmd.c:287
 #, fuzzy
 msgid "Export Current State"
 msgstr "Dato no"
 
-#: gtt/menus.c:34
+#: gtt/menus.c:33
 msgid "_New Project..."
 msgstr "_Nytt prosjekt..."
 
-#: gtt/menus.c:37
+#: gtt/menus.c:36
 #, fuzzy
 msgid "_Reload Configuration File"
 msgstr "Kan ikkje lasta oppsettfila på nytt."
 
-#: gtt/menus.c:41
+#: gtt/menus.c:40
 #, fuzzy
 msgid "_Save Configuration File"
 msgstr "Lagra oppsett"
 
-#: gtt/menus.c:45
+#: gtt/menus.c:44
 msgid "_Export Current State"
 msgstr ""
 
-#: gtt/menus.c:64 gtt/menus.c:156
+#: gtt/menus.c:63 gtt/menus.c:173
 msgid "Clear _Daily Counter"
 msgstr ""
 
-#: gtt/menus.c:65
+#: gtt/menus.c:64 gtt/menus.c:174
 msgid "Zero out todays timer by deleting todays time logs"
 msgstr ""
 
-#: gtt/menus.c:80 gtt/menus.c:160
+#: gtt/menus.c:68 gtt/menus.c:87 gtt/menus.c:156
 msgid "_Journal..."
 msgstr ""
 
-#: gtt/menus.c:81
+#: gtt/menus.c:69 gtt/menus.c:88 gtt/menus.c:157
 msgid "Show the timesheet journal for this project"
 msgstr ""
 
-#: gtt/menus.c:84
+#: gtt/menus.c:72 gtt/menus.c:160
+msgid "New _Task..."
+msgstr ""
+
+#: gtt/menus.c:73 gtt/menus.c:161
+msgid "Change the current task for this project"
+msgstr ""
+
+#: gtt/menus.c:91
 msgid "_All Journal..."
 msgstr ""
 
-#: gtt/menus.c:85
+#: gtt/menus.c:92
 msgid "Show the verbose timesheet journal for this project"
 msgstr ""
 
-#: gtt/menus.c:88
+#: gtt/menus.c:95
 #, fuzzy
 msgid "_Invoice..."
 msgstr "Lagra ..."
 
-#: gtt/menus.c:89
+#: gtt/menus.c:96
 msgid "Show a sample invoice for this project"
 msgstr ""
 
-#: gtt/menus.c:92
+#: gtt/menus.c:99
 #, fuzzy
 msgid "_Primer..."
 msgstr "&Proxy ..."
 
-#: gtt/menus.c:93
+#: gtt/menus.c:100
 msgid "Show a sample introductory primer for designing custom reports"
 msgstr ""
 
-#: gtt/menus.c:96
+#: gtt/menus.c:103
 #, fuzzy
 msgid "_New Report..."
 msgstr "_Nytt prosjekt..."
 
-#: gtt/menus.c:97
+#: gtt/menus.c:104
 msgid "Define a path to a new GTT phtml report file"
 msgstr ""
 
-#: gtt/menus.c:108
+#: gtt/menus.c:115
 #, fuzzy
 msgid "St_art"
 msgstr "Start"
 
-#: gtt/menus.c:109
+#: gtt/menus.c:116
 msgid "Start the timer running"
 msgstr ""
 
-#: gtt/menus.c:114
+#: gtt/menus.c:121
 #, fuzzy
 msgid "Sto_p"
 msgstr "Stopp"
 
-#: gtt/menus.c:115
+#: gtt/menus.c:122
 #, fuzzy
 msgid "Stop the timer"
 msgstr "September"
 
-#: gtt/menus.c:120
+#: gtt/menus.c:127
 #, fuzzy
 msgid "_Timer Running"
 msgstr "Spørjing køyrer"
 
-#: gtt/menus.c:139
+#: gtt/menus.c:146
 msgid "_Reports"
 msgstr ""
 
-#: gtt/menus.c:140
+#: gtt/menus.c:147
 #, fuzzy
 msgid "_Timer"
 msgstr "Tidtakar"
 
 #. deal with the i18n menu path ...
 #. (is this right ??? or is this pre-i18n ???)
-#: gtt/menus.c:231
+#: gtt/menus.c:244
 #, fuzzy
 msgid "Reports"
-msgstr "Omstart"
+msgstr "Rapportar"
 
-#: gtt/plug-in.c:120
+#: gtt/plug-in.c:121
 msgid "Reports/<Separator>"
 msgstr ""
 
-#: gtt/proj.c:470
+#: gtt/proj.c:697
 msgid "Old GTT Tasks"
 msgstr ""
 
-#: gtt/props-proj.c:71 gtt/props-proj.c:72 gtt/props-task.c:67
-#: gtt/props-task.c:68
+#: gtt/props-proj.c:94 gtt/props-proj.c:95 gtt/props-task.c:75
+#: gtt/props-task.c:76
 #, fuzzy
 msgid "empty"
 msgstr "Tom"
 
-#: gtt/timer.c:116
+#: gtt/timer.c:117
 #, c-format
 msgid ""
 "The keyboard and mouse have been idle\n"
@@ -1362,99 +1508,108 @@ msgid ""
 "Do you want to restart it?"
 msgstr ""
 
-#: gtt/timer.c:124
+#: gtt/timer.c:125
 #, fuzzy
 msgid "System Idle"
 msgstr "Systemfargar"
 
 #. Note to translators: just skip the `[GTT]'
-#: gtt/toolbar.c:148
+#: gtt/toolbar.c:159
 msgid "[GTT]New"
 msgstr ""
 
-#: gtt/toolbar.c:149
+#: gtt/toolbar.c:160
 #, fuzzy
 msgid "Create a New Project..."
 msgstr "Nytt prosjekt..."
 
-#: gtt/toolbar.c:155
+#: gtt/toolbar.c:166
 msgid "Reload"
 msgstr "Last om att"
 
-#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:159 stripchart/params.c:939
+#: gtt/glade/journal.glade.h:7 gtt/toolbar.c:170 stripchart/params.c:939
 msgid "Save"
-msgstr "Lagra"
+msgstr "Lagre"
 
-#: gtt/toolbar.c:160
+#: gtt/toolbar.c:171
 #, fuzzy
 msgid "Save Configuration File"
 msgstr "Lagra oppsett"
 
-#: gtt/toolbar.c:167
+#: gtt/toolbar.c:178
 #, fuzzy
 msgid "Cut Selected Project"
 msgstr "Valt brikke"
 
-#: gtt/toolbar.c:171
+#: gtt/toolbar.c:182
 #, fuzzy
 msgid "Copy Selected Project"
 msgstr "Valt brikke"
 
-#: gtt/toolbar.c:175
+#: gtt/toolbar.c:186
 #, fuzzy
 msgid "Paste Project"
 msgstr "Lagra prosjekt"
 
-#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:182
+#: gtt/glade/journal.glade.h:2 gtt/toolbar.c:193
 msgid "Journal"
 msgstr ""
 
-#: gtt/toolbar.c:183
+#: gtt/toolbar.c:194
 msgid "View and Edit Timestamp Logs"
 msgstr ""
 
-#: gtt/toolbar.c:188
+#: gtt/toolbar.c:199
 #, fuzzy
 msgid "Props"
 msgstr "Pos"
 
-#: gtt/toolbar.c:189
+#: gtt/toolbar.c:200
 #, fuzzy
 msgid "Edit Project Properties..."
 msgstr "Eigenskapar ..."
 
-#: gtt/toolbar.c:193
+#: gtt/toolbar.c:204
 msgid "Timer"
 msgstr "Tidtakar"
 
-#: gtt/toolbar.c:194
+#: gtt/toolbar.c:205
 #, fuzzy
 msgid "Start/Stop Timer"
 msgstr "Start-tid"
 
-#: gtt/toolbar.c:206
+#: gtt/toolbar.c:211 logview/calendar.c:112 logview/logview.c:107
+msgid "Calendar"
+msgstr "Kalender"
+
+#: gtt/toolbar.c:212
+#, fuzzy
+msgid "View Calendar"
+msgstr "Ny kalender"
+
+#: gtt/toolbar.c:225
 #, fuzzy
 msgid "Prefs"
 msgstr "Prefiks"
 
-#: gtt/toolbar.c:207
+#: gtt/toolbar.c:226
 #, fuzzy
 msgid "Edit Preferences..."
 msgstr "Innstillingar ..."
 
-#: gtt/toolbar.c:211
+#: gtt/toolbar.c:230
 msgid "Manual"
 msgstr "Manuell"
 
-#: gtt/toolbar.c:212
+#: gtt/toolbar.c:231
 msgid "User's Guide and Manual"
 msgstr ""
 
-#: gtt/toolbar.c:217
+#: gtt/toolbar.c:236
 msgid "Quit"
 msgstr "Avslutt"
 
-#: gtt/toolbar.c:217
+#: gtt/toolbar.c:236
 msgid "Quit GTimeTracker"
 msgstr ""
 
@@ -1571,31 +1726,26 @@ msgid "Close"
 msgstr "Lukk"
 
 #: gtt/glade/journal.glade.h:3
-#, fuzzy
 msgid "New File"
-msgstr "Ny &vising"
+msgstr "Ny fil"
 
 #: gtt/glade/journal.glade.h:4
-#, fuzzy
 msgid "Open File"
-msgstr "Opna katalog"
+msgstr "Opne fil"
 
 #: gtt/glade/journal.glade.h:5
-#, fuzzy
 msgid "Print"
-msgstr "Punkt"
+msgstr "Skriv ut"
 
 #: gtt/glade/journal.glade.h:6
 msgid "Refresh"
-msgstr ""
+msgstr "Oppfrisk"
 
 #: gtt/glade/journal.glade.h:8
-#, fuzzy
 msgid "Save File"
-msgstr "Vel ein palett"
+msgstr "Lagre fil"
 
 #: gtt/glade/not-implemented.glade.h:1
-#, fuzzy
 msgid "Information"
 msgstr "Informasjon"
 
@@ -1642,273 +1792,424 @@ msgid ""
 msgstr ""
 
 #: gtt/glade/prefs.glade.h:10
+msgid "Fields"
+msgstr "Felt"
+
+#: gtt/glade/prefs.glade.h:11
 msgid "Filename:"
 msgstr "Filnamn:"
 
-#: gtt/glade/prefs.glade.h:11
+#: gtt/glade/prefs.glade.h:12
 #, fuzzy
 msgid "Idle Seconds:"
 msgstr "Vis sekund"
 
-#: gtt/glade/prefs.glade.h:12
+#: gtt/glade/prefs.glade.h:13
 msgid "Inactivity Timeout"
 msgstr ""
 
-#: gtt/glade/prefs.glade.h:13
-#, fuzzy
-msgid "Logfile"
-msgstr "Loggfil:"
-
 #: gtt/glade/prefs.glade.h:14
+msgid "Logfile"
+msgstr "Loggfil"
+
+#: gtt/glade/prefs.glade.h:15
 #, fuzzy
 msgid "Min Recorded:"
 msgstr "Postkasse:"
 
-#: gtt/glade/prefs.glade.h:15
+#: gtt/glade/prefs.glade.h:16
 msgid "Misc"
 msgstr "Ymse"
 
-#: gtt/glade/prefs.glade.h:16
+#: gtt/glade/prefs.glade.h:17
 #, fuzzy
 msgid "No Project Command:"
 msgstr "Førkommando:"
 
-#: gtt/glade/prefs.glade.h:17
+#: gtt/glade/prefs.glade.h:18
 #, fuzzy
 msgid "Project List Display"
 msgstr "Prosjektnamn"
 
-#: gtt/glade/prefs.glade.h:18
-#, fuzzy
+#: gtt/glade/prefs.glade.h:19
 msgid "Shell"
 msgstr "Skal"
 
-#: gtt/glade/prefs.glade.h:19
-#, fuzzy
+#: gtt/glade/prefs.glade.h:20
 msgid "Shell Commands"
 msgstr "Skal-kommando"
 
-#: gtt/glade/prefs.glade.h:20
+#: gtt/glade/prefs.glade.h:21
+msgid "Show Current Task"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:22
+msgid "Show Estimated Effort"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:23
+msgid "Show Percent Complete"
+msgstr "Vis prosent ferdig"
+
+#: gtt/glade/prefs.glade.h:24
+msgid "Show Planned Project End Date"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:25
+msgid "Show Planned Project Start Date"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:26
 #, fuzzy
+msgid "Show Project Description"
+msgstr "Portskildring: "
+
+#: gtt/glade/prefs.glade.h:27
+#, fuzzy
+msgid "Show Project Due Date"
+msgstr "Eigenskapar"
+
+#: gtt/glade/prefs.glade.h:28
+#, fuzzy
+msgid "Show Project Importance"
+msgstr "Førkommando:"
+
+#: gtt/glade/prefs.glade.h:29
+#, fuzzy
+msgid "Show Project Status"
+msgstr "Eigenskapar"
+
+#: gtt/glade/prefs.glade.h:30
+#, fuzzy
+msgid "Show Project Urgency"
+msgstr "Eigenskapar"
+
+#: gtt/glade/prefs.glade.h:31
 msgid "Show Seconds"
 msgstr "Vis sekund"
 
-#: gtt/glade/prefs.glade.h:21
+#: gtt/glade/prefs.glade.h:32
 #, fuzzy
 msgid "Show Status Bar"
 msgstr "Vis &statuslinje"
 
-#: gtt/glade/prefs.glade.h:22
+#: gtt/glade/prefs.glade.h:33
 #, fuzzy
 msgid "Show Sub-Projects"
 msgstr "Eigenskapar"
 
-#: gtt/glade/prefs.glade.h:23
+#: gtt/glade/prefs.glade.h:34
 #, fuzzy
 msgid "Show Table Header"
 msgstr "Vis topptekst"
 
-#: gtt/glade/prefs.glade.h:24
+#: gtt/glade/prefs.glade.h:35
+msgid "Show Time For The Current Task"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:36
+msgid "Show Time This Month"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:37
+msgid "Show Time This Week"
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:38
+#, fuzzy
+msgid "Show Time This Year"
+msgstr "Vis tid som:"
+
+#: gtt/glade/prefs.glade.h:39
+#, fuzzy
+msgid "Show Time Today"
+msgstr "Vis tid som:"
+
+#: gtt/glade/prefs.glade.h:40
 msgid "Show Toolbar Icons"
 msgstr "Vis ikoner på verktøylinje"
 
-#: gtt/glade/prefs.glade.h:25
+#: gtt/glade/prefs.glade.h:41
 msgid "Show Toolbar Texts"
 msgstr "Vis tekst på verktøylinje"
 
-#: gtt/glade/prefs.glade.h:26
+#: gtt/glade/prefs.glade.h:42
 msgid "Show Tooltips"
 msgstr "Vis verktøytips"
 
-#: gtt/glade/prefs.glade.h:27
+#: gtt/glade/prefs.glade.h:43
+#, fuzzy
+msgid "Show Total Time Ever"
+msgstr "Vis topptekst"
+
+#: gtt/glade/prefs.glade.h:44
 msgid "Show `Cut', `Copy', `Paste'"
 msgstr ""
 
-#: gtt/glade/prefs.glade.h:28
+#: gtt/glade/prefs.glade.h:45
 #, fuzzy
 msgid "Show `Help'"
 msgstr "Vis &hjelpelinjer"
 
-#: gtt/glade/prefs.glade.h:29
+#: gtt/glade/prefs.glade.h:46
 #, fuzzy
 msgid "Show `Journal'"
 msgstr "Vis &hjelpelinjer"
 
-#: gtt/glade/prefs.glade.h:30
+#: gtt/glade/prefs.glade.h:47
 #, fuzzy
 msgid "Show `New'"
 msgstr "Vis namn"
 
-#: gtt/glade/prefs.glade.h:31
+#: gtt/glade/prefs.glade.h:48
 #, fuzzy
 msgid "Show `Preferences'"
 msgstr "ingen referansar"
 
-#: gtt/glade/prefs.glade.h:32
+#: gtt/glade/prefs.glade.h:49
 #, fuzzy
 msgid "Show `Properties'"
 msgstr "Eigenskapar"
 
-#: gtt/glade/prefs.glade.h:33
+#: gtt/glade/prefs.glade.h:50
 #, fuzzy
 msgid "Show `Quit'"
 msgstr "Vis eining"
 
-#: gtt/glade/prefs.glade.h:34
+#: gtt/glade/prefs.glade.h:51
 msgid "Show `Save', `Reload'"
 msgstr ""
 
-#: gtt/glade/prefs.glade.h:35
+#: gtt/glade/prefs.glade.h:52
 #, fuzzy
 msgid "Show `Timer'"
 msgstr "Vis tid som:"
 
-#: gtt/glade/prefs.glade.h:36
+#: gtt/glade/prefs.glade.h:53
+msgid ""
+"Show the 'szing', that is, the estimated amount of work that it will take to "
+"perform this project."
+msgstr ""
+
+#: gtt/glade/prefs.glade.h:54
 #, fuzzy
 msgid "Switch Project Command:"
 msgstr "Fråkoplings-kommando :"
 
-#: gtt/glade/prefs.glade.h:37
+#: gtt/glade/prefs.glade.h:55
 msgid ""
 "Switches between projects that happen faster than this will not be logged "
 "(enter the number of seconds)"
 msgstr ""
 
-#: gtt/glade/prefs.glade.h:38
+#: gtt/glade/prefs.glade.h:56
 msgid ""
 "The current active project will be made inactive after there has been no "
 "keyboard/mouse activity after this number of seconds.  Set to -1 to disable."
 msgstr ""
 
-#: gtt/glade/prefs.glade.h:39
+#: gtt/glade/prefs.glade.h:57
 msgid "Toolbar"
 msgstr "Verktøylinje"
 
-#: gtt/glade/prefs.glade.h:40
+#: gtt/glade/prefs.glade.h:58
 #, fuzzy
 msgid "Toolbar Segments"
 msgstr "Verktøylinjemeny"
 
-#: gtt/glade/prefs.glade.h:41
+#: gtt/glade/prefs.glade.h:59
 #, fuzzy
 msgid "Use Logfile"
 msgstr "Bruk 'profil'"
 
+#: gtt/glade/prefs.glade.h:60
+#, fuzzy
+msgid "View Project Fields"
+msgstr "Fileigenskapar"
+
 #: gtt/glade/project_properties.glade.h:1
 msgid "        "
-msgstr ""
+msgstr "        "
 
-#: gtt/glade/project_properties.glade.h:2
-#, fuzzy
-msgid "                        "
-msgstr "Vert: ingen"
+msgid "            "
+msgstr "            "
 
 #: gtt/glade/project_properties.glade.h:3
+msgid "                        "
+msgstr "                        "
+
+#: gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
+msgstr "prosent ferdig"
+
+#: gtt/glade/project_properties.glade.h:6
 msgid "A title to assign to this project"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:4
+#: gtt/glade/project_properties.glade.h:7
 msgid "Auto-merge Gap:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:5
+#: gtt/glade/project_properties.glade.h:8
 msgid "Auto-merge Interval:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:6
+#: gtt/glade/project_properties.glade.h:11
+msgid ""
+"Does this item need immediate attention? Note that some urgent tasks might "
+"not be important.  For example, Bill may want you to answer his email today, "
+"but you may have better things to do today."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:12
 msgid "Double-Overtime Rate:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:7
+#: gtt/glade/project_properties.glade.h:13
+#, fuzzy
+msgid "Due Date:"
+msgstr "Forfallsdato:"
+
+#: gtt/glade/project_properties.glade.h:14
 msgid "Flat Fee:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:8
+#: gtt/glade/project_properties.glade.h:16
+msgid "Hours to Finish:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:17
+msgid ""
+"How important is it to perform this task?  Not everything important is "
+"urgent.  For example, it is important to file a tax return every year, but "
+"you have a lot of time to get ready to do this."
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:18
 msgid ""
 "If the gap between intervals is smaller than this, the intervals will be "
 "merged together."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:9
+#: gtt/glade/project_properties.glade.h:19
 msgid ""
 "If this project is billed for one price no matter how long it takes, enter "
 "the fee here."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:10
+#: gtt/glade/project_properties.glade.h:20
+#, fuzzy
+msgid "Importance:"
+msgstr "Telefon:"
+
+#: gtt/glade/project_properties.glade.h:22
 msgid ""
 "Internal notes about the project, memos that will not be printed on an "
 "invoice."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:11
+#: gtt/glade/project_properties.glade.h:23
 #, fuzzy
 msgid "Intervals"
 msgstr "Generelt"
 
-#: gtt/glade/project_properties.glade.h:12
+#: gtt/glade/project_properties.glade.h:24
 msgid "Intervals smaller than this will be discarded"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:13
+#: gtt/glade/project_properties.glade.h:26
+msgid "Medium"
+msgstr "Middels"
+
+#: gtt/glade/project_properties.glade.h:27
 msgid "Minimum Interval: "
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:14
-#: gtt/glade/task_properties.glade.h:14
-msgid "Notes:"
-msgstr ""
+#: gtt/glade/project_properties.glade.h:28
+#, fuzzy
+msgid "Not Set"
+msgstr "Ved veljing"
 
-#: gtt/glade/project_properties.glade.h:15
+#: gtt/glade/project_properties.glade.h:30
+#: gtt/glade/task_properties.glade.h:17
+msgid "Notes:"
+msgstr "Notat:"
+
+#: gtt/glade/project_properties.glade.h:32
 msgid "Overtime Rate:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:16
+#: gtt/glade/project_properties.glade.h:33
+msgid "Planned Finish:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:34
+#, fuzzy
+msgid "Planned Start:"
+msgstr "Start:"
+
+#: gtt/glade/project_properties.glade.h:35
+#, fuzzy
+msgid "Planning"
+msgstr "Åtvaring"
+
+#: gtt/glade/project_properties.glade.h:36
 msgid "Project"
 msgstr "Prosjekt"
 
-#: gtt/glade/project_properties.glade.h:17
+#: gtt/glade/project_properties.glade.h:37
 #, fuzzy
 msgid "Project Description:"
 msgstr "Portskildring: "
 
-#: gtt/glade/project_properties.glade.h:18
-#, fuzzy
+#: gtt/glade/project_properties.glade.h:38
 msgid "Project Title:"
 msgstr "Prosjektnamn:"
 
-#: gtt/glade/project_properties.glade.h:19
+#: gtt/glade/project_properties.glade.h:39
 msgid "Rates"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:20
+#: gtt/glade/project_properties.glade.h:40
 msgid "Regular Rate:"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:21
+#: gtt/glade/project_properties.glade.h:41
+msgid "Status:"
+msgstr "Status:"
+
+#: gtt/glade/project_properties.glade.h:42
 msgid "The dollars per hour charged for overtime work on this project."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:22
+#: gtt/glade/project_properties.glade.h:43
 msgid "The dollars per hour normally charged for this project."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:23
+#: gtt/glade/project_properties.glade.h:44
 msgid "The over-overtime rate (overtime on Sundays, etc.)"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:24
+#: gtt/glade/project_properties.glade.h:45
 msgid "Time below which an interval is merged with its neighbors"
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:25
+#: gtt/glade/project_properties.glade.h:46
+msgid "Urgency:"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:47
+msgid "What is the status of this project?"
+msgstr ""
+
+#: gtt/glade/project_properties.glade.h:48
 msgid "a short description that will be printed on the invoice."
 msgstr ""
 
-#: gtt/glade/project_properties.glade.h:26
-#, fuzzy
+#: gtt/glade/project_properties.glade.h:49
 msgid "seconds"
-msgstr " sek"
+msgstr "sekund"
 
 #: gtt/glade/task_popup.glade.h:1
 #, fuzzy
@@ -1958,53 +2259,64 @@ msgstr ""
 msgid "A short description to attach to this block of time."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:4
+#: gtt/glade/task_properties.glade.h:5
 msgid "Billable:"
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:5
+#: gtt/glade/task_properties.glade.h:6
 msgid "Billing Block:"
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:6
+#: gtt/glade/task_properties.glade.h:7
 msgid "Billing Rate:"
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:7
-msgid ""
-"Can this task be billed to the customer?  \"Hold\" means maybe but not yet, "
-"\"Not Billable\" means don't print on the invoice, \"No Charge\" means print "
-"on the invoice as 'free'."
+#: gtt/glade/task_properties.glade.h:8
+msgid "Billing Status:"
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:8
+#: gtt/glade/task_properties.glade.h:9
 msgid "Fee rate to be charged for this task."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:11
+#: gtt/glade/task_properties.glade.h:12
+msgid ""
+"How should this task be billed?  \"Billable\" means bill to the customer in "
+"the normal fashion.   \"Not Billable\" means we can't ask for money for this, "
+"don't print on the invoice.   \"No Charge\" means print on the invoice as "
+"'free/no-charge'."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:13
+msgid ""
+"Is this task ready to be billed to the customer? \"Hold\" means maybe, but "
+"not yet, needs review.   \"Bill\" means print this on the next invoice.   "
+"\"Paid\" means that it should no longer be included on invoices."
+msgstr ""
+
+#: gtt/glade/task_properties.glade.h:14
 #, fuzzy
 msgid "Memo:"
 msgstr "Minne"
 
-#: gtt/glade/task_properties.glade.h:15
+#: gtt/glade/task_properties.glade.h:18
 #, fuzzy
 msgid "OverOver"
 msgstr "Tenar"
 
-#: gtt/glade/task_properties.glade.h:18
+#: gtt/glade/task_properties.glade.h:22
 #, fuzzy
 msgid "Task Properties"
 msgstr "Eigenskapar"
 
-#: gtt/glade/task_properties.glade.h:19
+#: gtt/glade/task_properties.glade.h:23
 msgid ""
 "The billed unit of time will be rounded to an integer multiple of this time."
 msgstr ""
 
-#: gtt/glade/task_properties.glade.h:20
-#, fuzzy
+#: gtt/glade/task_properties.glade.h:24
 msgid "minutes"
-msgstr " min"
+msgstr "minutt"
 
 #: logview/about.c:41
 msgid "Cesar Miquel (miquel@df.uba.ar)"
@@ -2012,8 +2324,8 @@ msgstr ""
 
 #: logview/about.c:42
 msgid ""
-"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
-"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"This  program  is  part of  the  GNOME  project. Logview comes with "
+"ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
@@ -2025,9 +2337,8 @@ msgid "Logview"
 msgstr "Brukarnamn"
 
 #: logview/about.c:56
-#, fuzzy
 msgid "Copyright (C) 1998"
-msgstr "Opphavsrett (c), %1 1997-2000"
+msgstr "Opphavsrett © 1998"
 
 #: logview/actions.c:92
 #, fuzzy
@@ -2045,7 +2356,7 @@ msgstr "Legg til ..."
 
 #: logview/actions.c:157
 msgid "Edit..."
-msgstr "Endra ..."
+msgstr "Rediger ..."
 
 #: logview/actions.c:278
 #, c-format
@@ -2064,9 +2375,8 @@ msgid "Can't write to actions database!"
 msgstr "Kan ikkje finna"
 
 #: logview/actions.c:511
-#, fuzzy
 msgid "<empty>"
-msgstr "<Tom>"
+msgstr "<tom>"
 
 #: logview/actions.c:512
 #, fuzzy
@@ -2092,7 +2402,6 @@ msgid "description"
 msgstr "skildring"
 
 #: logview/actions.c:746
-#, fuzzy
 msgid "description:"
 msgstr "skildring"
 
@@ -2111,10 +2420,6 @@ msgid ""
 "description: [%s]\n"
 "action: [%s]\n"
 msgstr ""
-
-#: logview/calendar.c:112 logview/logview.c:107
-msgid "Calendar"
-msgstr "Kalender"
 
 #: logview/info.c:79 logview/logview.c:110
 msgid "Log stats"
@@ -2205,20 +2510,20 @@ msgstr "Desember"
 #: logview/log_repaint.c:477
 #, c-format
 msgid "%x"
-msgstr ""
+msgstr "%x"
 
 #. Translators: should be only the time, date could be bogus
 #: logview/log_repaint.c:587
 #, c-format
 msgid "%X"
-msgstr ""
+msgstr "%X"
 
 #. bogus
 #. Translators: Make sure this is only Month and Day format, year
 #. * will be bogus here
 #: logview/log_repaint.c:671
 msgid "%B %e"
-msgstr ""
+msgstr "%B %e"
 
 #: logview/logrtns.c:199
 msgid "Not enough memory!\n"
@@ -2300,9 +2605,8 @@ msgid "Monitor log"
 msgstr "Månadleg logg"
 
 #: logview/logview.c:101
-#, fuzzy
 msgid "Exit program"
-msgstr "Avsluttar programmet"
+msgstr "Avslutt program"
 
 #: logview/logview.c:108
 #, fuzzy
@@ -2315,9 +2619,8 @@ msgid "Show log stats"
 msgstr "Vis statuslinje"
 
 #: logview/logview.c:113
-#, fuzzy
 msgid "Zoom"
-msgstr "Forstørr"
+msgstr "Forstørring"
 
 #: logview/logview.c:114
 #, fuzzy
@@ -2347,34 +2650,34 @@ msgstr ""
 msgid "Filter log events"
 msgstr "Slett gamle hendingar"
 
-#: logview/logview.c:136
+#: logview/logview.c:137
 msgid "Info about logview"
 msgstr ""
 
-#: logview/logview.c:240
+#: logview/logview.c:241
 #, fuzzy
 msgid "No log files to open"
 msgstr "opna filer"
 
 #. Create App
-#: logview/logview.c:263
+#: logview/logview.c:264
 #, fuzzy
 msgid "System Log Viewer"
 msgstr "Systempip"
 
-#: logview/logview.c:367
+#: logview/logview.c:368
 msgid "Filename: "
 msgstr "Filnamn:"
 
-#: logview/logview.c:383
+#: logview/logview.c:384
 msgid "Date: "
 msgstr "Dato:"
 
-#: logview/logview.c:618
+#: logview/logview.c:619
 msgid "Too many open logs. Close one and try again"
 msgstr ""
 
-#: logview/logview.c:675
+#: logview/logview.c:676
 #, fuzzy
 msgid "Open new logfile"
 msgstr "Opna ei fil"
@@ -2391,9 +2694,8 @@ msgstr "Lukk alarmovervakar"
 
 #. Arrowed buttons
 #: logview/monitor.c:168
-#, fuzzy
 msgid "Add >>"
-msgstr "&Legg til >>"
+msgstr "Legg til >>"
 
 #. Remove button
 #: logview/monitor.c:176
@@ -2414,9 +2716,8 @@ msgstr "Aktiver &handlingar"
 
 #. Actions button
 #: logview/monitor.c:227
-#, fuzzy
 msgid "Actions..."
-msgstr "Handlingar"
+msgstr "Handlingar ..."
 
 #: logview/monitor.c:282 logview/monitor.c:329
 msgid "tmp_list is NULL\n"
@@ -2437,7 +2738,7 @@ msgstr ""
 
 #: logview/userprefsdialog.c:66
 msgid "Columns"
-msgstr "Kolonnar"
+msgstr "Kolonner"
 
 #: logview/zoom.c:78
 #, fuzzy
@@ -2473,7 +2774,7 @@ msgstr "Skildring:"
 #. Translators: do not include year, it would be bogus
 #: logview/zoom.c:212
 msgid "%B %e %X"
-msgstr ""
+msgstr "%B %e %X"
 
 #.
 #. * 	-------------------
@@ -2531,9 +2832,8 @@ msgid "Cannot open description data base <%s>! Open failed."
 msgstr ""
 
 #: mini-utils/gcolorsel/dialog-prefs.c:119
-#, fuzzy
 msgid "Do nothing"
-msgstr "Ikkje gjer &noko"
+msgstr "Ikkje gjer noko"
 
 #: mini-utils/gcolorsel/dialog-prefs.c:124
 msgid "Append it to ->"
@@ -2549,9 +2849,8 @@ msgstr "Rediger den"
 
 #. First view is considered as the default view ...
 #: mini-utils/gcolorsel/gcolorsel.c:24
-#, fuzzy
 msgid "List"
-msgstr "&Liste"
+msgstr "Liste"
 
 #: mini-utils/gcolorsel/gcolorsel.c:28
 msgid "Grid"
@@ -2615,24 +2914,20 @@ msgid "GColorsel"
 msgstr "Fargar"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:1
-#, fuzzy
 msgid "<- Remove"
-msgstr "<< &Fjern"
+msgstr "<- Fjern"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:2
-#, fuzzy
 msgid "<- Remove all"
-msgstr "Fjer&n alle"
+msgstr "<- Fjern alle"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:3
-#, fuzzy
 msgid "Add ->"
-msgstr "&Legg til >>"
+msgstr "Legg til ->"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:4
-#, fuzzy
 msgid "Add all ->"
-msgstr "Legg til tabell"
+msgstr "Legg til alle ->"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:5
 #, fuzzy
@@ -2649,9 +2944,8 @@ msgid "Connect to"
 msgstr "Kopla til  ..."
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:8
-#, fuzzy
 msgid "Create a document"
-msgstr "Lagar eit nytt dokument"
+msgstr "Lagar eit dokument"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:9
 #, fuzzy
@@ -2659,9 +2953,8 @@ msgid "Create views"
 msgstr "Lag &ny"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:10
-#, fuzzy
 msgid "Description :"
-msgstr "Skildring:"
+msgstr "Skildring :"
 
 #: mini-utils/gcolorsel/glade/dialog-new-doc.glade.h:11
 msgid ""
@@ -2712,12 +3005,12 @@ msgstr "Handlingar"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:2 stripchart/params.c:732
 msgid "Bottom"
-msgstr "Botn"
+msgstr "Nederst"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:3
 #: mini-utils/idetool/idetool.c:142 mini-utils/idetool/idetool.c:333
 msgid "Default"
-msgstr "Standard"
+msgstr "Forvald"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:4
 msgid "Display documents menu (restart required)."
@@ -2754,16 +3047,15 @@ msgstr "&Ta bilete"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:11
 msgid "Left"
-msgstr ""
+msgstr "Venstre"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:12
 msgid "MDI (Multiple Document Interface)"
 msgstr ""
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:13
-#, fuzzy
 msgid "Modal"
-msgstr "Modell"
+msgstr "Modalt"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:14
 msgid "Mode:"
@@ -2771,7 +3063,7 @@ msgstr "Modus:"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:15
 msgid "Notebook"
-msgstr ""
+msgstr "Notatblokk"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:16
 msgid "Notebook Tab position:"
@@ -2783,7 +3075,7 @@ msgstr ""
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:18
 msgid "Right"
-msgstr ""
+msgstr "Høgre"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:19
 #, fuzzy
@@ -2797,11 +3089,11 @@ msgstr "Økt"
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:21
 #: stripchart/chart-app.c:162 stripchart/params.c:704
 msgid "Top"
-msgstr "Topp"
+msgstr "Øverst"
 
 #: mini-utils/gcolorsel/glade/dialog-prefs.glade.h:22
 msgid "Toplevel"
-msgstr ""
+msgstr "Toppnivå"
 
 #: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:1
 #, fuzzy
@@ -2818,9 +3110,8 @@ msgid ""
 msgstr "Kommentar:"
 
 #: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:5
-#, fuzzy
 msgid "File name :"
-msgstr "Filnamn:"
+msgstr "Filnamn :"
 
 #: mini-utils/gcolorsel/glade/mdi-color-file-properties.glade.h:6
 #, fuzzy
@@ -2890,14 +3181,12 @@ msgid "New Document"
 msgstr "Nytt dokument"
 
 #: mini-utils/gcolorsel/menus.c:53
-#, fuzzy
 msgid "Create a new document"
 msgstr "Lagar eit nytt dokument"
 
 #: mini-utils/gcolorsel/menus.c:55
-#, fuzzy
 msgid "New View"
-msgstr "Ny &vising"
+msgstr "Ny vising"
 
 #: mini-utils/gcolorsel/menus.c:56
 #, fuzzy
@@ -2930,9 +3219,8 @@ msgid "_Open palette..."
 msgstr "Opna fil ..."
 
 #: mini-utils/gcolorsel/menus.c:77
-#, fuzzy
 msgid "Load a palette"
-msgstr "Last palett"
+msgstr "Last ein palett"
 
 #: mini-utils/gcolorsel/menus.c:79
 #, fuzzy
@@ -3024,9 +3312,8 @@ msgid "File not saved ..."
 msgstr "Fil lagra."
 
 #: mini-utils/gcolorsel/menus.c:330
-#, fuzzy
 msgid "File saved ..."
-msgstr "Fil lagra."
+msgstr "Fil lagra ..."
 
 #: mini-utils/gcolorsel/menus.c:408
 #, c-format
@@ -3095,7 +3382,7 @@ msgstr "Vedleggseigenskapar"
 
 #: mini-utils/gcolorsel/menus.c:911
 msgid "Open"
-msgstr "Opna"
+msgstr "Opne"
 
 #: mini-utils/gcolorsel/menus.c:911
 #, fuzzy
@@ -3231,7 +3518,7 @@ msgstr ""
 #: mini-utils/gless/gless.c:293
 #, fuzzy
 msgid "_New Window"
-msgstr "Nytt vindauge"
+msgstr "_Nytt vindauge"
 
 #: mini-utils/gless/gless.c:294
 #, fuzzy
@@ -3259,13 +3546,12 @@ msgid "Copyright 1998, under the GNU General Public License."
 msgstr ""
 
 #: mini-utils/gless/gless.c:467
-#, fuzzy
 msgid "Find string"
 msgstr "Finn tekst"
 
 #: mini-utils/gless/gless.c:468
 msgid "Find"
-msgstr "Finn"
+msgstr "Søk etter"
 
 #: mini-utils/gless/gless.c:505
 msgid "Loading..."
@@ -3336,7 +3622,7 @@ msgstr "Feil ved lagring av innstillingar."
 
 #: mini-utils/gless/gless.c:858
 msgid "Searching..."
-msgstr "Søkjer..."
+msgstr "Søkjer ..."
 
 #: mini-utils/gless/gless.c:869
 #, fuzzy
@@ -3344,8 +3630,9 @@ msgid "No search string was specified!"
 msgstr "Ingen tastar definert"
 
 #: mini-utils/gshutdown/gshutdown.c:87
+#, fuzzy
 msgid "Shut Down"
-msgstr "Skru av maskina"
+msgstr "Slå av"
 
 #: mini-utils/gshutdown/gshutdown.c:88
 msgid "Single User Mode"
@@ -3369,7 +3656,7 @@ msgstr "Køyrenivå 5"
 
 #: mini-utils/gshutdown/gshutdown.c:93
 msgid "Reboot"
-msgstr "Omstart"
+msgstr "Start om"
 
 #: mini-utils/gshutdown/gshutdown.c:99
 #, fuzzy
@@ -3407,7 +3694,8 @@ msgid "Are you sure you want to reboot the system?"
 msgstr "Er du sikker på at du vil sletta denne klassen?"
 
 #: mini-utils/gshutdown/gshutdown.c:153 mini-utils/gshutdown/gshutdown.c:628
-msgid "You must be the super-user (root) to shut down or restart the computer."
+msgid ""
+"You must be the super-user (root) to shut down or restart the computer."
 msgstr ""
 
 #. notebook pages
@@ -3521,9 +3809,8 @@ msgid "Your System"
 msgstr "System"
 
 #: mini-utils/guname/guname.c:664 stripchart/params.c:946
-#, fuzzy
 msgid "Save As..."
-msgstr "Lagra &som ..."
+msgstr "Lagre som ..."
 
 #: mini-utils/guname/guname.c:670
 #, fuzzy
@@ -3571,7 +3858,6 @@ msgstr ""
 "Er du sikker på at du vil gjera dette?"
 
 #: mini-utils/guname/guname.c:852
-#, fuzzy
 msgid "Are you sure?"
 msgstr "Er du sikker?!"
 
@@ -3584,19 +3870,18 @@ msgstr "Adresse-detaljar"
 #. Globals
 #. **********************************
 #: mini-utils/guname/info.c:40
-#, fuzzy
 msgid "Distribution:"
-msgstr "Distribusjon"
+msgstr "Distribusjon:"
 
 #: mini-utils/guname/info.c:41
 #, fuzzy
 msgid "Operating System:"
-msgstr "Operasjonar"
+msgstr "Operativsystem:"
 
 #: mini-utils/guname/info.c:42
 #, fuzzy
 msgid "Distribution Version:"
-msgstr "Distribusjon"
+msgstr "Distribusjon versjon:"
 
 #: mini-utils/guname/info.c:43
 #, fuzzy
@@ -3610,7 +3895,7 @@ msgstr ""
 #: mini-utils/guname/info.c:45
 #, fuzzy
 msgid "Processor Type:"
-msgstr "Type økt:"
+msgstr "Prosessortype:"
 
 #: mini-utils/guname/info.c:46
 #, fuzzy
@@ -3618,9 +3903,8 @@ msgid "Processor Speed:"
 msgstr "Prosessor(ar)"
 
 #: mini-utils/guname/info.c:47
-#, fuzzy
 msgid "Host Name:"
-msgstr "&Vertsnamn:"
+msgstr "Vertsnamn:"
 
 #: mini-utils/guname/info.c:48
 msgid "Domain Name:"
@@ -3655,17 +3939,12 @@ msgid "Total Memory:"
 msgstr "Totalt minne"
 
 #: mini-utils/guname/info.c:55
-#, fuzzy
 msgid "Free Memory:"
-msgstr "Ledig minne"
+msgstr "Ledig minne:"
 
 #: mini-utils/guname/info.c:60
 msgid "Device"
 msgstr "Eining"
-
-#: mini-utils/guname/info.c:61
-msgid "Size"
-msgstr "Storleik"
 
 #: mini-utils/guname/info.c:62
 #, fuzzy
@@ -3724,9 +4003,9 @@ msgid "%ld%% swap used."
 msgstr ""
 
 #: mini-utils/guname/moreinfo.c:222
-#, fuzzy, c-format
+#, c-format
 msgid "CPU %d"
-msgstr "CPU%1"
+msgstr "CPU %d"
 
 #: mini-utils/guname/moreinfo.c:276
 #, fuzzy
@@ -3753,14 +4032,12 @@ msgid "Mount Point: "
 msgstr "Monteringspunkt:"
 
 #: mini-utils/guname/moreinfo.c:327
-#, fuzzy
 msgid "    Device: "
-msgstr "Eining:"
+msgstr "     Eining:"
 
 #: mini-utils/guname/moreinfo.c:328
-#, fuzzy
 msgid "    Filesystem Type: "
-msgstr "Filsystemtype:"
+msgstr "      Filsystemtype:"
 
 #: mini-utils/guname/moreinfo.c:341
 #, c-format
@@ -3883,7 +4160,7 @@ msgstr "På"
 #: mini-utils/idetool/idetool.c:79 mini-utils/idetool/idetool.c:111
 #: mini-utils/idetool/idetool.c:326 mini-utils/idetool/idetool.c:331
 msgid "Disabled"
-msgstr "Deaktivert"
+msgstr "Av"
 
 #: mini-utils/idetool/idetool.c:91 mini-utils/idetool/idetool.c:103
 msgid "The IRQ unmask setting for this drive cannot be changed."
@@ -3949,13 +4226,8 @@ msgid "Geometry"
 msgstr "Geometri"
 
 #: mini-utils/idetool/idetool.c:315
-#, fuzzy
 msgid "Cache"
-msgstr "Lagra"
-
-#: mini-utils/idetool/idetool.c:317 mini-utils/idetool/idetool.c:319
-msgid "Status"
-msgstr "Status"
+msgstr "Mellomlager"
 
 #: mini-utils/idetool/idetool.c:323
 msgid "Legacy MFM/RLL drive"
@@ -4240,8 +4512,8 @@ msgstr ""
 #: gfloppy/src/main.c:141 gfloppy/src/main.c:177
 #, c-format
 msgid ""
-"You do not have the proper permissions to write to %s, formatting will not "
-"be possible.\n"
+"You do not have the proper permissions to write to %s, formatting will not be "
+"possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
 
@@ -4251,9 +4523,8 @@ msgid "The device to format"
 msgstr "Tilpass vising til skjema"
 
 #: gfloppy/src/main.c:286
-#, fuzzy
 msgid "DEVICE"
-msgstr "KDVI"
+msgstr "DEVICE"
 
 #. We do this to get around a bug in libglade.  Ideally we won't need
 #. * to do this in the future.
@@ -4288,7 +4559,7 @@ msgstr "Panama"
 
 #: stripchart/chart-app.c:161
 msgid "Current"
-msgstr "Gjeldande"
+msgstr "Noverande"
 
 #: stripchart/chart-app.c:163 stripchart/params.c:760
 msgid "Scale"
@@ -4299,12 +4570,11 @@ msgstr "Skaler"
 #: stripchart/stripchart.c:97
 #, fuzzy
 msgid "Stripchart"
-msgstr "Straight"
+msgstr "Stripchart"
 
 #: stripchart/chart-app.c:198
-#, fuzzy
 msgid "Copyright 2000 John Kodis"
-msgstr "Opphavsrett (c), %1 1997-2000"
+msgstr "Opphavsrett 2000 John Kodis"
 
 #: stripchart/chart-app.c:200
 msgid ""
@@ -4454,8 +4724,9 @@ msgid "Chart"
 msgstr "Diagram"
 
 #: stripchart/prefs.c:218 stripchart/prefs.c:277
+#, fuzzy
 msgid "enabled"
-msgstr "aktivert"
+msgstr "på"
 
 #: stripchart/prefs.c:225
 #, fuzzy
@@ -4490,7 +4761,7 @@ msgstr ""
 
 #: stripchart/stripchart-applet.c:44 stripchart/stripchart.c:66
 msgid "GEO"
-msgstr ""
+msgstr "GEO"
 
 #: stripchart/stripchart-applet.c:46 stripchart/stripchart.c:68
 #, fuzzy
@@ -4499,12 +4770,11 @@ msgstr "Oppsettfil lasta på nytt."
 
 #: stripchart/stripchart-applet.c:46 stripchart/stripchart.c:68
 msgid "FILE"
-msgstr ""
+msgstr "FILE"
 
 #: stripchart/stripchart-applet.c:92
-#, fuzzy
 msgid "Values"
-msgstr "Verdi"
+msgstr "Verdiar"
 
 #: stripchart/stripchart-applet.c:95
 #, fuzzy
@@ -4614,7 +4884,7 @@ msgstr "Ingen rektangel valt!"
 
 #: meat-grinder/meat-grinder.c:448
 msgid "File exists, overwrite?"
-msgstr ""
+msgstr "Fila eksisterar, skriv over?"
 
 #: meat-grinder/meat-grinder.c:472
 msgid "No items to archive"
@@ -4692,7 +4962,7 @@ msgstr ""
 
 #: gdictsrc/GDict.desktop.in.h:1 gdictsrc/gdict.desktop.in.h:1
 msgid "GDict"
-msgstr ""
+msgstr "GDict"
 
 #: gdictsrc/GDict.desktop.in.h:2
 msgid "Gnome client for the MIT dictionary server"
@@ -4835,7 +5105,7 @@ msgstr "GNOME tidtakar-verktøy"
 #: gstripchart/gstripchart_applet.desktop.in.h:1
 #, fuzzy
 msgid "Gstripchart"
-msgstr "Straight"
+msgstr "Gstripchart"
 
 #: gstripchart/gstripchart_applet.desktop.in.h:2
 #, fuzzy
@@ -4875,6 +5145,10 @@ msgid "Personal crontab manager"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Could not write the configuration file!"
+#~ msgstr "Kunne ikkje skriva oppsettfila!"
+
+#, fuzzy
 #~ msgid "Min Log Time in secs:"
 #~ msgstr "Tidsgrense %1 sekund"
 
@@ -4898,15 +5172,8 @@ msgstr ""
 #~ msgid "Formatting %s"
 #~ msgstr "Formaterar band ..."
 
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-
 #~ msgid "OK"
 #~ msgstr "OK"
-
-#, fuzzy
-#~ msgid "Exit                   "
-#~ msgstr "Status: klar"
 
 #, fuzzy
 #~ msgid "Calendar                "
@@ -5067,9 +5334,6 @@ msgstr ""
 #~ msgid "black"
 #~ msgstr "svart"
 
-#~ msgid "red"
-#~ msgstr "raud"
-
 #~ msgid "yellow"
 #~ msgstr "gul"
 
@@ -5105,10 +5369,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Net Out"
 #~ msgstr "Neste-knapp"
-
-#, fuzzy
-#~ msgid "Hide calendar"
-#~ msgstr "Ny kalender"
 
 #, fuzzy
 #~ msgid "%s: unable to load the penguin.\n"
