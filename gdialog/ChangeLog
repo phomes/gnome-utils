@@ -1,3 +1,17 @@
+2002-08-20  Archit Baweja  <bighead@users.sourceforge.net>
+
+	* menubox.c (dialog_menu): semi-fix for #2467 only in Gnome mode.
+
+	* textbox.c (dialog_textbox): put the GtkTextView in a Scrolled Window,
+	so we don't get broken output. Fixes #78038 in bugzilla.
+
+	* inputbox.c (okayed): exit with proper error code.
+	(dialog_inputbox): likewise.
+
+	* yesno.c (callback_yn): exit with the proper return code.
+	Fixes #87032 in bugzilla.
+	(dialog_yesno_with_default): likewise, if in curses mode.
+
 2002-07-24  Samuel Stringham <sams@e-sa.com>
 
 	* checklist.c: accepts --seperate-output now. Fixes 

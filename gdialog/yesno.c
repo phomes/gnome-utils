@@ -27,8 +27,14 @@ int dialog_yesno_with_default(const char *title, const char *prompt,
 
 static void callback_yn(GtkWidget *w, gint button, gpointer *unused)
 {
-	/* yes = GTK_RESPONSE_YES no = GTK_RESPONSE_NO */
-	exit(button);
+	/*
+	 * We have to do this, because GTK_RESPONSE_[YES/NO] enums are -8 and
+	 * -9, respectively.
+	 */
+	if (button == GTK_RESPONSE_YES)
+		exit (0);
+	else if (button == GTK_RESPONSE_NO)
+		exit (1);
 }
 
 static void callback_err(GtkWidget *w, gpointer *unused)
@@ -184,7 +190,10 @@ int dialog_yesno_with_default(const char *title, const char *prompt, int height,
 		case ' ':
 		case '\n':
 			delwin(dialog);
-			return button;
+			if (button == GTK_RESPONSE_YES)
+				return 0;
+			else if (button == GTK_RESPONSE_NO)
+				return 1;
 		case ESC:
 			break;
 		}
