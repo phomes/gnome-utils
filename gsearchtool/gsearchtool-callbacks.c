@@ -453,10 +453,7 @@ open_file_cb (GtkAction * action,
 					
 					if (g_file_test (locale_file, G_FILE_TEST_IS_DIR)) {
 					
-						if (is_nautilus_running ()) {
-							open_file_with_nautilus (gsearch->window, locale_file);
-						}
-						else {
+						if (open_file_with_nautilus (gsearch->window, locale_file) == FALSE) {
 							display_dialog_could_not_open_folder (gsearch->window, utf8_name);
 						}
 					} 
@@ -564,10 +561,8 @@ open_folder_cb (GtkAction * action,
 			    							
 		folder_locale = g_filename_from_utf8 (folder_utf8, -1, NULL, NULL, NULL);
 		
-		if (is_nautilus_running ()) {
-			open_file_with_nautilus (gsearch->window, folder_locale);
-		}
-		else {
+		if (open_file_with_nautilus (gsearch->window, folder_locale) == FALSE) {
+		
 			display_dialog_could_not_open_folder (gsearch->window, folder_utf8);
 			
 			g_list_free (list);

@@ -764,25 +764,6 @@ get_file_pixbuf_for_mime_type (GHashTable * hash,
 }
 
 gboolean
-is_nautilus_running (void)
-{
-	CORBA_Environment ev;
-	CORBA_Object obj;
-	gboolean ret;
-	
-	CORBA_exception_init (&ev); 
-	obj = bonobo_activation_activate_from_id ("OAFIID:Nautilus_Factory",
-		Bonobo_ACTIVATION_FLAG_EXISTING_ONLY, NULL, &ev);
-		
-	ret = !CORBA_Object_is_nil (obj, &ev);
-	
-	CORBA_Object_release (obj, &ev);	
-	CORBA_exception_free (&ev);
-	
-	return ret;
-}
-
-gboolean
 open_file_with_nautilus (GtkWidget * window,
                          const gchar * file)
 {
