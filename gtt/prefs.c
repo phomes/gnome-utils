@@ -67,14 +67,14 @@ typedef struct _PrefsDialog
 	GtkCheckButton *show_subprojects;
 
 	GtkCheckButton *logfileuse;
-	GnomeFileEntry *logfilename;
 	GtkWidget      *logfilename_l;
+	GtkEntry       *logfilename;
 	GtkWidget      *logfilestart_l;
-	GnomeEntry     *logfilestart;
+	GtkEntry       *logfilestart;
 	GtkWidget      *logfilestop_l;
-	GnomeEntry     *logfilestop;
+	GtkEntry       *logfilestop;
 	GtkWidget      *logfileminsecs_l;
-	GnomeEntry     *logfileminsecs;
+	GtkEntry       *logfileminsecs;
 
 	GtkEntry       *command;
 	GtkEntry       *command_null;
@@ -166,13 +166,10 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 	{
 		/* log file options */
 		config_logfile_use = GTK_TOGGLE_BUTTON(odlg->logfileuse)->active;
-		ENTRY_TO_CHAR(GTK_ENTRY(gnome_file_entry_gtk_entry(odlg->logfilename)),
-		      	config_logfile_name);
-		ENTRY_TO_CHAR(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestart)),
-		      	config_logfile_start);
-		ENTRY_TO_CHAR(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestop)),
-		      	config_logfile_stop);
-		config_logfile_min_secs = atoi(gtk_entry_get_text(GTK_ENTRY(odlg->logfileminsecs)));
+		ENTRY_TO_CHAR(odlg->logfilename, config_logfile_name);
+		ENTRY_TO_CHAR(odlg->logfilestart, config_logfile_start);
+		ENTRY_TO_CHAR(odlg->logfilestop, config_logfile_stop);
+		config_logfile_min_secs = atoi (gtk_entry_get_text(odlg->logfileminsecs));
 	}
 
 	if (3 == page)
@@ -288,17 +285,17 @@ options_dialog_set(PrefsDialog *odlg)
 		gtk_entry_set_text(odlg->command_null, "");
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->logfileuse), config_logfile_use);
 	if (config_logfile_name)
-		gtk_entry_set_text(GTK_ENTRY(gnome_file_entry_gtk_entry(odlg->logfilename)), config_logfile_name);
+		gtk_entry_set_text(odlg->logfilename, config_logfile_name);
 	else
-		gtk_entry_set_text(GTK_ENTRY(gnome_file_entry_gtk_entry(odlg->logfilename)), "");
+		gtk_entry_set_text(odlg->logfilename, "");
 	if (config_logfile_start)
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestart)), config_logfile_start);
+		gtk_entry_set_text(odlg->logfilestart, config_logfile_start);
 	else
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestart)), "");
+		gtk_entry_set_text(odlg->logfilestart, "");
 	if (config_logfile_stop)
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestop)), config_logfile_stop);
+		gtk_entry_set_text(odlg->logfilestop, config_logfile_stop);
 	else
-		gtk_entry_set_text(GTK_ENTRY(gnome_entry_gtk_entry(odlg->logfilestop)), "");
+		gtk_entry_set_text(odlg->logfilestop, "");
 	g_snprintf(s, sizeof (s), "%d", config_logfile_min_secs);
 	gtk_entry_set_text(GTK_ENTRY(odlg->logfileminsecs), s);
 
@@ -342,22 +339,32 @@ options_dialog_set(PrefsDialog *odlg)
 	e;								\
 })
 
+#define GETCHWID(strname) 						\
+({									\
+	GtkWidget *e;							\
+	e = glade_xml_get_widget (gtxml, strname);			\
+	gtk_signal_connect_object(GTK_OBJECT(e), "toggled",		\
+			  GTK_SIGNAL_FUNC(gnome_property_box_changed), 	\
+			  GTK_OBJECT(dlg->dlg));			\
+	e;								\
+})
+
 static void 
 display_options(PrefsDialog *dlg)
 {
 	GtkWidget *w;
 	GladeXML *gtxml = dlg->gtxml;
 
-	w = GETWID ("show secs");
+	w = GETCHWID ("show secs");
 	dlg->show_secs = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show status");
+	w = GETCHWID ("show status");
 	dlg->show_status_bar = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show head");
+	w = GETCHWID ("show head");
 	dlg->show_clist_titles = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show sub");
+	w = GETCHWID ("show sub");
 	dlg->show_subprojects = GTK_CHECK_BUTTON(w);
 }
 
@@ -381,35 +388,35 @@ logfile_options(PrefsDialog *dlg)
 	GtkWidget *w;
 	GladeXML *gtxml = dlg->gtxml;
 
-	w = GETWID ("use logfile");
+	w = GETCHWID ("use logfile");
 	dlg->logfileuse = GTK_CHECK_BUTTON(w);
 	gtk_signal_connect(GTK_OBJECT(w), "clicked",
 		   GTK_SIGNAL_FUNC(logfile_sensitive_cb),
 		   (gpointer *)dlg);
 
-	w = GETWID ("filename label");
+	w = glade_xml_get_widget (gtxml, "filename label");
 	dlg->logfilename_l = w;
 
 	w = GETWID ("filename combo");
-	dlg->logfilename = GNOME_FILE_ENTRY(w);
+	dlg->logfilename = GTK_ENTRY(w);
 
-	w = GETWID ("fstart label");
+	w = glade_xml_get_widget (gtxml, "fstart label");
 	dlg->logfilestart_l = w;
 
 	w = GETWID ("fstart combo");
-	dlg->logfilestart = GNOME_ENTRY(w);
+	dlg->logfilestart = GTK_ENTRY(w);
 
-	w = GETWID ("fstop label");
+	w = glade_xml_get_widget (gtxml, "fstop label");
 	dlg->logfilestop_l = w;
 
 	w = GETWID ("fstop combo");
-	dlg->logfilestop = GNOME_ENTRY(w);
+	dlg->logfilestop = GTK_ENTRY(w);
 
-	w = GETWID ("fmin label");
+	w = glade_xml_get_widget (gtxml, "fmin label");
 	dlg->logfileminsecs_l = w;
 
 	w = GETWID ("fmin combo");
-	dlg->logfileminsecs = GNOME_ENTRY(w);
+	dlg->logfileminsecs = GTK_ENTRY(w);
 }
 
 static void 
@@ -418,40 +425,40 @@ toolbar_options(PrefsDialog *dlg)
 	GtkWidget *w;
 	GladeXML *gtxml = dlg->gtxml;
 
-	w = GETWID ("show icons");
+	w = GETCHWID ("show icons");
 	dlg->show_tb_icons = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show texts");
+	w = GETCHWID ("show texts");
 	dlg->show_tb_texts = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show tooltips");
+	w = GETCHWID ("show tooltips");
 	dlg->show_tb_tips = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show new");
+	w = GETCHWID ("show new");
 	dlg->show_tb_new = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show save");
+	w = GETCHWID ("show save");
 	dlg->show_tb_file = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show cut");
+	w = GETCHWID ("show cut");
 	dlg->show_tb_ccp = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show journal");
+	w = GETCHWID ("show journal");
 	dlg->show_tb_journal = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show props");
+	w = GETCHWID ("show props");
 	dlg->show_tb_prop = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show timer");
+	w = GETCHWID ("show timer");
 	dlg->show_tb_timer = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show prefs");
+	w = GETCHWID ("show prefs");
 	dlg->show_tb_pref = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show help");
+	w = GETCHWID ("show help");
 	dlg->show_tb_help = GTK_CHECK_BUTTON(w);
 
-	w = GETWID ("show quit");
+	w = GETCHWID ("show quit");
 	dlg->show_tb_exit = GTK_CHECK_BUTTON(w);
 }
 
