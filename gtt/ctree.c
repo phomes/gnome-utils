@@ -33,12 +33,13 @@
 
 /* There is a bug in clist which makes all but the last column headers
  * 0 pixels wide. This hack fixes this. */
-#define CLIST_HEADER_HACK
+#define CLIST_HEADER_HACK 1
 
 #define TOTAL_COL	0
 #define TIME_COL	1
 #define TITLE_COL	2
 #define DESC_COL	3
+#define TASK_COL	4
 
 int clist_header_width_set = 0;
 

@@ -37,6 +37,7 @@ int config_show_secs = 0;
 int config_show_statusbar = 1;
 int config_show_clist_titles = 1;
 int config_show_subprojects = 1;
+int config_show_task = 1;
 
 int config_show_tb_icons = 1;
 int config_show_tb_texts = 1;
@@ -47,7 +48,7 @@ int config_show_tb_ccp = 0;
 int config_show_tb_journal = 1;
 int config_show_tb_prop = 1;
 int config_show_tb_timer = 1;
-int config_show_tb_pref = 1;
+int config_show_tb_pref = 0;
 int config_show_tb_help = 1;
 int config_show_tb_exit = 1;
 
@@ -57,6 +58,7 @@ char *config_logfile_stop = NULL;
 int config_logfile_use = 0;
 int config_logfile_min_secs = 0;
 
+char * config_data_url = NULL;
 
 typedef struct _PrefsDialog 
 {
@@ -66,6 +68,7 @@ typedef struct _PrefsDialog
 	GtkCheckButton *show_status_bar;
 	GtkCheckButton *show_clist_titles;
 	GtkCheckButton *show_subprojects;
+	GtkCheckButton *show_task;
 
 	GtkCheckButton *logfileuse;
 	GtkWidget      *logfilename_l;
@@ -154,6 +157,14 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 			gtk_ctree_set_expander_style(GTK_CTREE(glist),GTK_CTREE_EXPANDER_NONE);
                 	config_show_subprojects = 0;
         	}
+        	if (GTK_TOGGLE_BUTTON(odlg->show_task)->active) {
+                	config_show_task = 1;
+printf ("duude show task\n");
+        	} else {
+                	config_show_task = 0;
+printf ("duude hide task\n");
+        	}
+	
 	}
 
 	if (1 == page)
@@ -269,6 +280,8 @@ options_dialog_set(PrefsDialog *odlg)
 				    config_show_clist_titles);
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_subprojects),
 				    config_show_subprojects);
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_task),
+				    config_show_task);
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_icons),
 				    config_show_tb_icons);
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(odlg->show_tb_texts),
@@ -367,6 +380,9 @@ display_options(PrefsDialog *dlg)
 
 	w = GETCHWID ("show sub");
 	dlg->show_subprojects = GTK_CHECK_BUTTON(w);
+
+	w = GETCHWID ("show task");
+	dlg->show_task = GTK_CHECK_BUTTON(w);
 }
 
 
