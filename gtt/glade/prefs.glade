@@ -888,8 +888,8 @@
 
 	  <widget>
 	    <class>GtkEntry</class>
-	    <name>entry3</name>
-	    <tooltip>The current active project will be made inactive after there has been no keyboard/mouse activity after this number of seconds.</tooltip>
+	    <name>idle secs</name>
+	    <tooltip>The current active project will be made inactive after there has been no keyboard/mouse activity after this number of seconds.  Set to -1 to disable.</tooltip>
 	    <can_focus>True</can_focus>
 	    <editable>True</editable>
 	    <text_visible>True</text_visible>

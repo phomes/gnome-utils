@@ -238,6 +238,7 @@ prefs_set(GnomePropertyBox * pb, gint page, PrefsDialog *odlg)
 
 	if (4 == page)
 	{
+		config_idle_timeout = atoi(gtk_entry_get_text(GTK_ENTRY(odlg->idle_secs)));
 	}
 }
 
@@ -320,6 +321,10 @@ options_dialog_set(PrefsDialog *odlg)
                                     config_show_tb_exit);
 
 	logfile_sensitive_cb(NULL, odlg);
+
+	/* misc section */
+	g_snprintf(s, sizeof (s), "%d", config_idle_timeout);
+	gtk_entry_set_text(GTK_ENTRY(odlg->idle_secs), s);
 
 	/* set to unmodified as it reflects the current state of the app */
 	gnome_property_box_set_modified(GNOME_PROPERTY_BOX(odlg->dlg), FALSE);
