@@ -1,3 +1,13 @@
+Thu Oct 04 21:21:53 2001  George Lebl <jirka@5z.com>
+
+	* Release 1.4.1
+
+	* logview/doc/C/Makefile.am: fix figures distribution
+
+	* Makefile.am, configure.in: gtkhtml is optional, if
+	  not found gtt will not be built.  Also make all the optional
+	  directories always dist
+
 Wed Oct 03 20:34:01 2001  George Lebl <jirka@5z.com>
 
 	* logview/logview.c, logview/doc/C/topic.dat: add help menu

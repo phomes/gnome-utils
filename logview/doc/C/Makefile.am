@@ -1,6 +1,6 @@
 figs = \
 	figures/calendar.png \
-	figures/ helpMenu.png  \
+	figures/helpMenu.png  \
 	figures/monitorDisplay.png  \
 	figures/openLog.png   \
 	figures/zoom.png  \

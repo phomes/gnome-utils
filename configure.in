@@ -21,7 +21,7 @@ OAF_REQUIRED=0.6.5
 AM_CONFIG_HEADER(config.h)
 AC_CANONICAL_SYSTEM
 
-AM_INIT_AUTOMAKE(gnome-utils, 1.4.0.99)
+AM_INIT_AUTOMAKE(gnome-utils, 1.4.1)
 
 dnl 
 dnl only useful for maintainers
@@ -206,6 +206,8 @@ if test "x$enable_gnome_print" = "xyes"; then
   AC_DEFINE(HAVE_GNOME_PRINT)
 fi
 
+build_gtt=true
+
 dnl *******************************
 dnl LibGlade
 dnl glade is needed to build gtt
@@ -233,16 +235,28 @@ dnl *******************************
 GTKHTML_LIBS=`$GNOME_CONFIG --libs gtkhtml`
 GTKHTML_CFLAGS=`$GNOME_CONFIG --cflags gtkhtml`
 
+AC_MSG_CHECKING(for GtkHTML)
+if gnome-config --libs gtkhtml > /dev/null 2>&1; then
+    AC_MSG_RESULT(found)
+else
+    AC_MSG_WARN([Cannot find gtkhtml. See config.log for more info.])
+    AC_MSG_WARN([*** gtt will not be built.]),
+    build_gtt=false
+fi
+
 # check for gtkhtml and enable it via HAVE_LIBGTKHTML
 # if found
-AC_CHECK_LIB(gtkhtml, gtk_html_new,
-             GNOMEBUILDLIBS="${GNOMEBUILDLIBS} gtkhtml"
-             AC_DEFINE(HAVE_LIBGTKHTML),
-             AC_MSG_ERROR([Cannot find gtkhtml. See config.log for more info.]),
-             $GTKHTML_LIBS)
+# AC_CHECK_LIB(gtkhtml, gtk_html_new,
+#             GNOMEBUILDLIBS="${GNOMEBUILDLIBS} gtkhtml"
+#             AC_DEFINE(HAVE_LIBGTKHTML),
+#             AC_MSG_WARN([Cannot find gtkhtml. See config.log for more info.])
+#	     AC_MSG_WARN([*** gtt will not be built.]),
+#             $GTKHTML_LIBS)
 
 AC_SUBST(GTKHTML_LIBS)
 AC_SUBST(GTKHTML_CFLAGS)
+
+AM_CONDITIONAL(BUILD_GTT, test "$build_gtt" = true)
 
 dnl ******************** 
 dnl libxml
@@ -556,6 +570,13 @@ if test "x$build_gfloppy" = "xtrue"; then
 	echo "Build gfloppy                     : YES"
 else
 	echo "Build gfloppy                     : NO"
+fi
+
+dnl <= gfloppy =>
+if test "x$build_gtt" = "xtrue"; then
+	echo "Build gtt                         : YES"
+else
+	echo "Build gtt                         : NO"
 fi
 
 dnl <= idetool =>

@@ -1,12 +1,12 @@
-if OBJECTIVE_C
-objc_DIRS = 
+if BUILD_GTT
+gtt = gtt
 endif
 
 if GUILE
 if FALSE
 guile_extra_DIRS = cromagnon
 endif
-guile_DIRS = gtt $(guile_extra_DIRS)
+guile_DIRS = $(gtt) $(guile_extra_DIRS)
 endif
 
 if HAVE_LIBGTOP
@@ -22,7 +22,12 @@ endif
 
 SUBDIRS = po intl macros idl $(gfloppy) logview gcharmap \
 	gcalc gsearchtool $(gdiskfree) $(stripchart) gdictsrc \
-	$(guile_DIRS) $(objc_DIRS) mini-utils splash gdialog \
+	$(guile_DIRS) mini-utils splash gdialog \
+	meat-grinder exe-handler omf-install
+
+DIST_SUBDIRS = po intl macros idl gfloppy logview gcharmap \
+	gcalc gsearchtool gdiskfree stripchart gdictsrc \
+	gtt mini-utils splash gdialog \
 	meat-grinder exe-handler omf-install
 
 EXTRA_DIST = gnome-utils.spec.in
