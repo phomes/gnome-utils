@@ -407,7 +407,7 @@ do_show_report (const char * report, GttProject *prj, int is_scheme)
 	wig->filepath = g_strdup (report);
 	if (!prj)
 	{
-		gtt_phtml_display (wig->ph, "noproject.phtml", NULL);
+		gtt_ghtml_display (wig->ph, "noproject.ghtml", NULL);
 	} 
 	else 
 	{
