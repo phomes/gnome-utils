@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2004-04-20 22:54+1200\n"
+"POT-Creation-Date: 2004-04-29 11:26+1200\n"
 "PO-Revision-Date: 2004-03-06 02:36+0100\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nognu.org>\n"
@@ -179,7 +179,7 @@ msgstr "Потражи реч"
 msgid "_Lookup"
 msgstr "_Претрага"
 
-#: gdictsrc/gdict-defbox.c:639 gdictsrc/gdict-speller.c:478
+#: gdictsrc/gdict-defbox.c:650 gdictsrc/gdict-speller.c:478
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "Грешка приликом упита: %s"
@@ -786,9 +786,9 @@ msgstr "Форматирање дискете је отказано."
 msgid "Format Progress"
 msgstr "Ток форматирања"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:565
-#: gsearchtool/gsearchtool.c:819 gsearchtool/gsearchtool.c:903
-#: gsearchtool/gsearchtool.c:2181 gsearchtool/gsearchtool.c:2206
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:577
+#: gsearchtool/gsearchtool.c:831 gsearchtool/gsearchtool.c:915
+#: gsearchtool/gsearchtool.c:2193 gsearchtool/gsearchtool.c:2218
 msgid "Search for Files"
 msgstr "Потражи датотеке"
 
@@ -978,23 +978,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:470
+#: gsearchtool/gsearchtool-support.c:494
 msgid "today at %-I:%M %p"
 msgstr "данас у %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:472
+#: gsearchtool/gsearchtool-support.c:496
 msgid "yesterday at %-I:%M %p"
 msgstr "јуче у %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:474 gsearchtool/gsearchtool-support.c:476
+#: gsearchtool/gsearchtool-support.c:498 gsearchtool/gsearchtool-support.c:500
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%d.%m.%y. %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:647
+#: gsearchtool/gsearchtool-support.c:671
 msgid "link (broken)"
 msgstr "веза (неисправна)"
 
-#: gsearchtool/gsearchtool-support.c:652
+#: gsearchtool/gsearchtool-support.c:676
 #, c-format
 msgid "link to %s"
 msgstr "веза на %s"
@@ -1055,19 +1055,19 @@ msgstr "Прати симболичке везе"
 msgid "Include other filesystems"
 msgstr "Претражуј и остале системе датотека"
 
-#: gsearchtool/gsearchtool.c:512 gsearchtool/gsearchtool.c:540
+#: gsearchtool/gsearchtool.c:524 gsearchtool/gsearchtool.c:552
 msgid "No files found"
 msgstr "Ниједна датотека није нађена"
 
-#: gsearchtool/gsearchtool.c:533
+#: gsearchtool/gsearchtool.c:545
 msgid "(stopped)"
 msgstr "(заустављен)"
 
-#: gsearchtool/gsearchtool.c:539
+#: gsearchtool/gsearchtool.c:551
 msgid "No Files Found"
 msgstr "Ниједна датотека није нађена"
 
-#: gsearchtool/gsearchtool.c:544
+#: gsearchtool/gsearchtool.c:556
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
@@ -1075,7 +1075,7 @@ msgstr[0] "Нађена је %d датотека"
 msgstr[1] "Нађене су %d датотеке"
 msgstr[2] "Нађено је %d датотека"
 
-#: gsearchtool/gsearchtool.c:548
+#: gsearchtool/gsearchtool.c:560
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
@@ -1084,46 +1084,46 @@ msgstr[1] "Нађене су %d датотеке"
 msgstr[2] "Нађено је %d датотека"
 
 # bug: this is probably something about wrong signal
-#: gsearchtool/gsearchtool.c:654
+#: gsearchtool/gsearchtool.c:666
 msgid "Entry changed called for a non entry option!"
 msgstr "Позвана је промена уноса за опцију која се не тиче уноса!"
 
-#: gsearchtool/gsearchtool.c:903
+#: gsearchtool/gsearchtool.c:915
 msgid "Searching..."
 msgstr "Тражим..."
 
-#: gsearchtool/gsearchtool.c:924
+#: gsearchtool/gsearchtool.c:936
 msgid "Set the text of 'Name contains'"
 msgstr "Постави текст за „име садржи“"
 
-#: gsearchtool/gsearchtool.c:925
+#: gsearchtool/gsearchtool.c:937
 msgid "Set the text of 'Look in folder'"
 msgstr "Постави текст за „тражи у директоријуму“"
 
-#: gsearchtool/gsearchtool.c:926
+#: gsearchtool/gsearchtool.c:938
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 "Поређај датотеке према неком од следећих: по имену, директоријуму, величини, "
 "врсти, или датуму"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:939
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Користи опадајући поредак, уобичајено је растући"
 
-#: gsearchtool/gsearchtool.c:928
+#: gsearchtool/gsearchtool.c:940
 msgid "Automatically start a search"
 msgstr "Сам започни претрагу"
 
-#: gsearchtool/gsearchtool.c:933
+#: gsearchtool/gsearchtool.c:945
 #, c-format
 msgid "Select the '%s' constraint"
 msgstr "Изабери ограничење „%s“"
 
-#: gsearchtool/gsearchtool.c:1039
+#: gsearchtool/gsearchtool.c:1051
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Предата је неисправна опција аргументу наредбе „sortby“."
 
-#: gsearchtool/gsearchtool.c:1304
+#: gsearchtool/gsearchtool.c:1316
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1131,7 +1131,7 @@ msgstr ""
 "За време претраге, пријављене су следеће грешке.\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:1308
+#: gsearchtool/gsearchtool.c:1320
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1139,117 +1139,117 @@ msgstr ""
 "\n"
 "... Превише грешака за приказ ..."
 
-#: gsearchtool/gsearchtool.c:1315
+#: gsearchtool/gsearchtool.c:1327
 msgid "Error while searching for files."
 msgstr "Грешка приликом тражења датотека."
 
-#: gsearchtool/gsearchtool.c:1356
+#: gsearchtool/gsearchtool.c:1368
 msgid "Error parsing the search command."
 msgstr "Грешка приликом обраде наредбе за претрагу."
 
-#: gsearchtool/gsearchtool.c:1379
+#: gsearchtool/gsearchtool.c:1391
 msgid "Error running the search command."
 msgstr "Грешка приликом покретања наредбе за претрагу."
 
-#: gsearchtool/gsearchtool.c:1475
+#: gsearchtool/gsearchtool.c:1487
 msgid "Search Rule Value Entry"
 msgstr "Унос вредности за правило претраге"
 
-#: gsearchtool/gsearchtool.c:1476
+#: gsearchtool/gsearchtool.c:1488
 msgid "Enter a value for search rule"
 msgstr "Унесите вредност за правило претраге"
 
-#: gsearchtool/gsearchtool.c:1512
+#: gsearchtool/gsearchtool.c:1524
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Кликните да уклоните правило „%s“"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1580
 msgid "A_vailable options:"
 msgstr "Доступне _опције:"
 
-#: gsearchtool/gsearchtool.c:1581
+#: gsearchtool/gsearchtool.c:1593
 msgid "Search Rules Menu"
 msgstr "Мени правила претраге"
 
-#: gsearchtool/gsearchtool.c:1582
+#: gsearchtool/gsearchtool.c:1594
 msgid "Select a search rule from the menu"
 msgstr "Изаберите правило претраге из менија"
 
-#: gsearchtool/gsearchtool.c:1613
+#: gsearchtool/gsearchtool.c:1625
 msgid "S_earch results:"
 msgstr "Р_езултати претраге:"
 
-#: gsearchtool/gsearchtool.c:1693
+#: gsearchtool/gsearchtool.c:1705
 msgid "Name"
 msgstr "Име"
 
-#: gsearchtool/gsearchtool.c:1713
+#: gsearchtool/gsearchtool.c:1725
 msgid "Folder"
 msgstr "Директоријум"
 
-#: gsearchtool/gsearchtool.c:1724
+#: gsearchtool/gsearchtool.c:1736
 msgid "Size"
 msgstr "Величина"
 
-#: gsearchtool/gsearchtool.c:1734
+#: gsearchtool/gsearchtool.c:1746
 msgid "Type"
 msgstr "Тип"
 
-#: gsearchtool/gsearchtool.c:1744
+#: gsearchtool/gsearchtool.c:1756
 msgid "Date Modified"
 msgstr "Датум и време измене"
 
-#: gsearchtool/gsearchtool.c:1802
+#: gsearchtool/gsearchtool.c:1814
 msgid "_Name contains:"
 msgstr "_Име садржи:"
 
-#: gsearchtool/gsearchtool.c:1817 gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1829 gsearchtool/gsearchtool.c:1830
 msgid "Enter the file name you want to search"
 msgstr "Унесите име датотеке коју желите пронаћи"
 
 # bug: this is probably "Entry for 'name contains' field", and this is not very clear
-#: gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1830
 msgid "Name Contains Entry"
 msgstr "Унос за „име садржи“"
 
-#: gsearchtool/gsearchtool.c:1829
+#: gsearchtool/gsearchtool.c:1841
 msgid "_Look in folder:"
 msgstr "_Тражите у директоријуму:"
 
-#: gsearchtool/gsearchtool.c:1835
+#: gsearchtool/gsearchtool.c:1847
 msgid "Browse"
 msgstr "Прегледај"
 
-#: gsearchtool/gsearchtool.c:1846 gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1858 gsearchtool/gsearchtool.c:1859
 msgid "Enter the folder name where you want to start the search"
 msgstr "Унесите име директоријума од којег желите почети претрагу"
 
-#: gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1859
 msgid "Look in Folder Entry"
 msgstr "Унос за „тражите у директоријуму“"
 
-#: gsearchtool/gsearchtool.c:1865
+#: gsearchtool/gsearchtool.c:1877
 msgid "Show more _options"
 msgstr "Прикажи додатне _опције"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Show more options"
 msgstr "Прикажи још опција"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Expands or collapses a list of search options."
 msgstr "Разгранава или скупља списак опција претраге."
 
-#: gsearchtool/gsearchtool.c:1922
+#: gsearchtool/gsearchtool.c:1934
 msgid "Click to Start the search"
 msgstr "Кликните да започнете претрагу"
 
-#: gsearchtool/gsearchtool.c:1923
+#: gsearchtool/gsearchtool.c:1935
 msgid "Click to Stop the search"
 msgstr "Кликните да зауставите претрагу"
 
-#: gsearchtool/gsearchtool.c:2202
+#: gsearchtool/gsearchtool.c:2214
 msgid "Cannot initialize bonobo."
 msgstr "Не могу да покренем бонобо."
 

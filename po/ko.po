@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.5.2\n"
-"POT-Creation-Date: 2004-04-20 22:54+1200\n"
+"POT-Creation-Date: 2004-04-29 11:26+1200\n"
 "PO-Revision-Date: 2004-02-25 00:50+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
@@ -172,7 +172,7 @@ msgstr "단어 찾아 보기"
 msgid "_Lookup"
 msgstr "찾기(_L)"
 
-#: gdictsrc/gdict-defbox.c:639 gdictsrc/gdict-speller.c:478
+#: gdictsrc/gdict-defbox.c:650 gdictsrc/gdict-speller.c:478
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "질의를 실행하는 데 오류: %s"
@@ -766,9 +766,9 @@ msgstr "플로피디스크의 포맷이 취소되었습니다."
 msgid "Format Progress"
 msgstr "포맷 진행"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:565
-#: gsearchtool/gsearchtool.c:819 gsearchtool/gsearchtool.c:903
-#: gsearchtool/gsearchtool.c:2181 gsearchtool/gsearchtool.c:2206
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:577
+#: gsearchtool/gsearchtool.c:831 gsearchtool/gsearchtool.c:915
+#: gsearchtool/gsearchtool.c:2193 gsearchtool/gsearchtool.c:2218
 msgid "Search for Files"
 msgstr "파일 찾기"
 
@@ -952,23 +952,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:470
+#: gsearchtool/gsearchtool-support.c:494
 msgid "today at %-I:%M %p"
 msgstr "오늘 %p %-I:%M"
 
-#: gsearchtool/gsearchtool-support.c:472
+#: gsearchtool/gsearchtool-support.c:496
 msgid "yesterday at %-I:%M %p"
 msgstr "어제 %p %-I:%M"
 
-#: gsearchtool/gsearchtool-support.c:474 gsearchtool/gsearchtool-support.c:476
+#: gsearchtool/gsearchtool-support.c:498 gsearchtool/gsearchtool-support.c:500
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%y/%m/%-d, %p %-I:%M"
 
-#: gsearchtool/gsearchtool-support.c:647
+#: gsearchtool/gsearchtool-support.c:671
 msgid "link (broken)"
 msgstr "바로 가기 (깨짐)"
 
-#: gsearchtool/gsearchtool-support.c:652
+#: gsearchtool/gsearchtool-support.c:676
 #, c-format
 msgid "link to %s"
 msgstr "%s에 바로 가기"
@@ -1029,68 +1029,68 @@ msgstr "심볼릭 링크 따라가기"
 msgid "Include other filesystems"
 msgstr "다른 파일 시스템 포함"
 
-#: gsearchtool/gsearchtool.c:512 gsearchtool/gsearchtool.c:540
+#: gsearchtool/gsearchtool.c:524 gsearchtool/gsearchtool.c:552
 msgid "No files found"
 msgstr "찾은 파일이 없습니다."
 
-#: gsearchtool/gsearchtool.c:533
+#: gsearchtool/gsearchtool.c:545
 msgid "(stopped)"
 msgstr "(멈춤)"
 
-#: gsearchtool/gsearchtool.c:539
+#: gsearchtool/gsearchtool.c:551
 msgid "No Files Found"
 msgstr "파일이 없습니다"
 
-#: gsearchtool/gsearchtool.c:544
+#: gsearchtool/gsearchtool.c:556
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "%d개의 파일을 찾았습니다"
 
-#: gsearchtool/gsearchtool.c:548
+#: gsearchtool/gsearchtool.c:560
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "%d개의 파일을 찾았습니다"
 
-#: gsearchtool/gsearchtool.c:654
+#: gsearchtool/gsearchtool.c:666
 msgid "Entry changed called for a non entry option!"
 msgstr "엔트리가 없는 옵션에 대하여 엔트리 바뀜 콜백이 실행되었습니다!"
 
-#: gsearchtool/gsearchtool.c:903
+#: gsearchtool/gsearchtool.c:915
 msgid "Searching..."
 msgstr "찾는 중입니다..."
 
-#: gsearchtool/gsearchtool.c:924
+#: gsearchtool/gsearchtool.c:936
 msgid "Set the text of 'Name contains'"
 msgstr "'이름에 포함'의 텍스트 지정"
 
-#: gsearchtool/gsearchtool.c:925
+#: gsearchtool/gsearchtool.c:937
 msgid "Set the text of 'Look in folder'"
 msgstr "'폴더 안에 찾기'의 텍스트 지정"
 
-#: gsearchtool/gsearchtool.c:926
+#: gsearchtool/gsearchtool.c:938
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "파일을 다음 중 하나로 정렬: 이름, 폴더, 크기, 타입, 날짜"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:939
 msgid "Set sort order to descending, the default is ascending"
 msgstr "정렬 순서를 내림차순으로 합니다. 기본값은 오름차순입니다"
 
-#: gsearchtool/gsearchtool.c:928
+#: gsearchtool/gsearchtool.c:940
 msgid "Automatically start a search"
 msgstr "자동으로 찾기 시작"
 
-#: gsearchtool/gsearchtool.c:933
+#: gsearchtool/gsearchtool.c:945
 #, c-format
 msgid "Select the '%s' constraint"
 msgstr "'%s' 제한점 선택"
 
-#: gsearchtool/gsearchtool.c:1039
+#: gsearchtool/gsearchtool.c:1051
 msgid "Invalid option passed to sortby command line argument."
 msgstr "명령행 인자 sortby에 전달된 옵션이 잘못되었습니다."
 
-#: gsearchtool/gsearchtool.c:1304
+#: gsearchtool/gsearchtool.c:1316
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1098,7 +1098,7 @@ msgstr ""
 "찾기 실행중에 다음의 오류가 보고되었습니다.\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:1308
+#: gsearchtool/gsearchtool.c:1320
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1106,116 +1106,116 @@ msgstr ""
 "\n"
 "... 너무 오류가 많아서 보여 줄 수 없습니다  ..."
 
-#: gsearchtool/gsearchtool.c:1315
+#: gsearchtool/gsearchtool.c:1327
 msgid "Error while searching for files."
 msgstr "파일을 찾는 중 오류가 발생했습니다."
 
-#: gsearchtool/gsearchtool.c:1356
+#: gsearchtool/gsearchtool.c:1368
 msgid "Error parsing the search command."
 msgstr "찾기 명령어를 파싱하는 데 오류가 발생했습니다."
 
-#: gsearchtool/gsearchtool.c:1379
+#: gsearchtool/gsearchtool.c:1391
 msgid "Error running the search command."
 msgstr "찾기 명령어를 실행하는 데 오류가 발생했습니다."
 
-#: gsearchtool/gsearchtool.c:1475
+#: gsearchtool/gsearchtool.c:1487
 msgid "Search Rule Value Entry"
 msgstr "찾기 규칙 값 입력란"
 
-#: gsearchtool/gsearchtool.c:1476
+#: gsearchtool/gsearchtool.c:1488
 msgid "Enter a value for search rule"
 msgstr "찾기 규칙에 대한 값을 입력하십시오"
 
-#: gsearchtool/gsearchtool.c:1512
+#: gsearchtool/gsearchtool.c:1524
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "'%s' 규칙을 지우려면 클릭하십시오"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1580
 msgid "A_vailable options:"
 msgstr "사용 가능한 옵션(_V):"
 
-#: gsearchtool/gsearchtool.c:1581
+#: gsearchtool/gsearchtool.c:1593
 msgid "Search Rules Menu"
 msgstr "찾기 규칙 메뉴"
 
-#: gsearchtool/gsearchtool.c:1582
+#: gsearchtool/gsearchtool.c:1594
 msgid "Select a search rule from the menu"
 msgstr "메뉴에서 찾기 규칙을 선택합니다"
 
-#: gsearchtool/gsearchtool.c:1613
+#: gsearchtool/gsearchtool.c:1625
 msgid "S_earch results:"
 msgstr "찾은 결과(_E):"
 
-#: gsearchtool/gsearchtool.c:1693
+#: gsearchtool/gsearchtool.c:1705
 msgid "Name"
 msgstr "이름"
 
-#: gsearchtool/gsearchtool.c:1713
+#: gsearchtool/gsearchtool.c:1725
 msgid "Folder"
 msgstr "폴더"
 
-#: gsearchtool/gsearchtool.c:1724
+#: gsearchtool/gsearchtool.c:1736
 msgid "Size"
 msgstr "크기"
 
-#: gsearchtool/gsearchtool.c:1734
+#: gsearchtool/gsearchtool.c:1746
 msgid "Type"
 msgstr "종류"
 
-#: gsearchtool/gsearchtool.c:1744
+#: gsearchtool/gsearchtool.c:1756
 msgid "Date Modified"
 msgstr "고친 날짜"
 
-#: gsearchtool/gsearchtool.c:1802
+#: gsearchtool/gsearchtool.c:1814
 msgid "_Name contains:"
 msgstr "이름에 포함(_N):"
 
-#: gsearchtool/gsearchtool.c:1817 gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1829 gsearchtool/gsearchtool.c:1830
 msgid "Enter the file name you want to search"
 msgstr "찾을 파일 이름을 입력하십시오"
 
-#: gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1830
 msgid "Name Contains Entry"
 msgstr "이름에 포함 입력란"
 
-#: gsearchtool/gsearchtool.c:1829
+#: gsearchtool/gsearchtool.c:1841
 msgid "_Look in folder:"
 msgstr "폴더 안에 찾기(_L):"
 
-#: gsearchtool/gsearchtool.c:1835
+#: gsearchtool/gsearchtool.c:1847
 msgid "Browse"
 msgstr "찾아보기"
 
-#: gsearchtool/gsearchtool.c:1846 gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1858 gsearchtool/gsearchtool.c:1859
 msgid "Enter the folder name where you want to start the search"
 msgstr "찾기를 시작할 폴더 이름을 입력하십시오"
 
-#: gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1859
 msgid "Look in Folder Entry"
 msgstr "폴더 안에 찾기 입력란"
 
-#: gsearchtool/gsearchtool.c:1865
+#: gsearchtool/gsearchtool.c:1877
 msgid "Show more _options"
 msgstr "기타 옵션 보기(_O)"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Show more options"
 msgstr "다른 옵션 보기"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Expands or collapses a list of search options."
 msgstr "찾기 옵션 목록을 늘리거나 줄입니다."
 
-#: gsearchtool/gsearchtool.c:1922
+#: gsearchtool/gsearchtool.c:1934
 msgid "Click to Start the search"
 msgstr "찾기를 시작하려면 클릭하십시오"
 
-#: gsearchtool/gsearchtool.c:1923
+#: gsearchtool/gsearchtool.c:1935
 msgid "Click to Stop the search"
 msgstr "찾기를 중단하려면 클릭하십시오"
 
-#: gsearchtool/gsearchtool.c:2202
+#: gsearchtool/gsearchtool.c:2214
 msgid "Cannot initialize bonobo."
 msgstr "보노보를 초기화할 수 없습니다."
 

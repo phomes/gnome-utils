@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-2.6\n"
-"POT-Creation-Date: 2004-04-20 22:54+1200\n"
+"POT-Creation-Date: 2004-04-29 11:26+1200\n"
 "PO-Revision-Date: 2004-02-29 20:47+0530\n"
 "Last-Translator: Nirav, Ankit, Ankur, Atit, Bhavin, Kartik, Khushbu, Sweta. "
 "<magnet@magnet-i.com>\n"
@@ -178,7 +178,7 @@ msgstr "શબ્દ માટે જુઓ"
 msgid "_Lookup"
 msgstr "જુઓ (_L)"
 
-#: gdictsrc/gdict-defbox.c:639 gdictsrc/gdict-speller.c:478
+#: gdictsrc/gdict-defbox.c:650 gdictsrc/gdict-speller.c:478
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "પ્રશ્ર્ન લાવવામંા ભૂલ: %s"
@@ -775,9 +775,9 @@ msgstr "ફ્લોપી ફોર્મેટ કરવાનુ રદ ક�
 msgid "Format Progress"
 msgstr "ફોર્મેટ પ્રગતિ"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:565
-#: gsearchtool/gsearchtool.c:819 gsearchtool/gsearchtool.c:903
-#: gsearchtool/gsearchtool.c:2181 gsearchtool/gsearchtool.c:2206
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:577
+#: gsearchtool/gsearchtool.c:831 gsearchtool/gsearchtool.c:915
+#: gsearchtool/gsearchtool.c:2193 gsearchtool/gsearchtool.c:2218
 msgid "Search for Files"
 msgstr "ફાઇલો માટે શોધ"
 
@@ -963,23 +963,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:470
+#: gsearchtool/gsearchtool-support.c:494
 msgid "today at %-I:%M %p"
 msgstr "આજે %-I:%M %p વાગ્યે"
 
-#: gsearchtool/gsearchtool-support.c:472
+#: gsearchtool/gsearchtool-support.c:496
 msgid "yesterday at %-I:%M %p"
 msgstr "ગઈકાલે %-I:%M%p વાગ્યે"
 
-#: gsearchtool/gsearchtool-support.c:474 gsearchtool/gsearchtool-support.c:476
+#: gsearchtool/gsearchtool-support.c:498 gsearchtool/gsearchtool-support.c:500
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%m/%-d/%y, %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:647
+#: gsearchtool/gsearchtool-support.c:671
 msgid "link (broken)"
 msgstr "કડી (તૂટેલી)"
 
-#: gsearchtool/gsearchtool-support.c:652
+#: gsearchtool/gsearchtool-support.c:676
 #, c-format
 msgid "link to %s"
 msgstr "%s ની કડી"
@@ -1040,70 +1040,70 @@ msgstr "સાંકેતિક કડીઓને અનુસરો"
 msgid "Include other filesystems"
 msgstr "અન્ય ફાઇલસિસ્ટમ ઉમેરો"
 
-#: gsearchtool/gsearchtool.c:512 gsearchtool/gsearchtool.c:540
+#: gsearchtool/gsearchtool.c:524 gsearchtool/gsearchtool.c:552
 msgid "No files found"
 msgstr "કોઈ ફાઇલ મળતી નથી"
 
-#: gsearchtool/gsearchtool.c:533
+#: gsearchtool/gsearchtool.c:545
 msgid "(stopped)"
 msgstr "(અટકી ગયેલ છે)"
 
-#: gsearchtool/gsearchtool.c:539
+#: gsearchtool/gsearchtool.c:551
 msgid "No Files Found"
 msgstr "કોઈ ફાઇલ મળતી નથી."
 
-#: gsearchtool/gsearchtool.c:544
+#: gsearchtool/gsearchtool.c:556
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "%d ફાઇલ મળી છે"
 msgstr[1] "%d ફાઇલો મળી છે"
 
-#: gsearchtool/gsearchtool.c:548
+#: gsearchtool/gsearchtool.c:560
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "%d ફાઇલ મળી છે"
 msgstr[1] "%d ફાઇલો મળી છે"
 
-#: gsearchtool/gsearchtool.c:654
+#: gsearchtool/gsearchtool.c:666
 msgid "Entry changed called for a non entry option!"
 msgstr "પ્રવેશ બદલાય છે પ્રવેશ વિકલ્પ ન હોય તે માટે બોલાવાય છે!"
 
-#: gsearchtool/gsearchtool.c:903
+#: gsearchtool/gsearchtool.c:915
 msgid "Searching..."
 msgstr "શોધે છે..."
 
-#: gsearchtool/gsearchtool.c:924
+#: gsearchtool/gsearchtool.c:936
 msgid "Set the text of 'Name contains'"
 msgstr "'નામવાળુ' લખાણ સુયોજિત કરો"
 
-#: gsearchtool/gsearchtool.c:925
+#: gsearchtool/gsearchtool.c:937
 msgid "Set the text of 'Look in folder'"
 msgstr "'ફોલ્ડરમાં જુઓ' લખાણ સુયોજિત કરો"
 
-#: gsearchtool/gsearchtool.c:926
+#: gsearchtool/gsearchtool.c:938
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "ફાઈલો નીચે પ્રમાણે ક્રમમાં ગોઠવોઃ  નામ, ફોલ્ડર, માપ, પ્રકાર, અથવા તારીખ"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:939
 msgid "Set sort order to descending, the default is ascending"
 msgstr "ક્રમમાં ગોઠવવાનું ઉતરતું સુયોજિત કર, ચઢતો મૂળભુત છે"
 
-#: gsearchtool/gsearchtool.c:928
+#: gsearchtool/gsearchtool.c:940
 msgid "Automatically start a search"
 msgstr "આપોઆપ શોધવાનું શરુ કરો"
 
-#: gsearchtool/gsearchtool.c:933
+#: gsearchtool/gsearchtool.c:945
 #, c-format
 msgid "Select the '%s' constraint"
 msgstr "'%s' બંધન પસંદ કરો"
 
-#: gsearchtool/gsearchtool.c:1039
+#: gsearchtool/gsearchtool.c:1051
 msgid "Invalid option passed to sortby command line argument."
 msgstr "ક્રમમાં ગોઠવો આદેશ વાક્ય દલીલને અપાયેલ વિકલ્પ અમાન્ય છે."
 
-#: gsearchtool/gsearchtool.c:1304
+#: gsearchtool/gsearchtool.c:1316
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1111,7 +1111,7 @@ msgstr ""
 "શોધતી વખતે નીચેની ભૂલોનો અહેવાલ મોકલાયો હતો.\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:1308
+#: gsearchtool/gsearchtool.c:1320
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1119,116 +1119,116 @@ msgstr ""
 "\n"
 "... ઘણી બધી ભૂલો દેખાડવા માટે ..."
 
-#: gsearchtool/gsearchtool.c:1315
+#: gsearchtool/gsearchtool.c:1327
 msgid "Error while searching for files."
 msgstr "ફાઈલો માટે શોધતી વખતે ભૂલ."
 
-#: gsearchtool/gsearchtool.c:1356
+#: gsearchtool/gsearchtool.c:1368
 msgid "Error parsing the search command."
 msgstr "શોધ આદેશ માટે પદચ્છેદ કરવામાં ભૂલ."
 
-#: gsearchtool/gsearchtool.c:1379
+#: gsearchtool/gsearchtool.c:1391
 msgid "Error running the search command."
 msgstr "શોધ આદેશ ચલાવવામાં ભૂલ."
 
-#: gsearchtool/gsearchtool.c:1475
+#: gsearchtool/gsearchtool.c:1487
 msgid "Search Rule Value Entry"
 msgstr "શોધના નિયમ માટેનો પ્રવેશ"
 
-#: gsearchtool/gsearchtool.c:1476
+#: gsearchtool/gsearchtool.c:1488
 msgid "Enter a value for search rule"
 msgstr "શોધના નિયમ માટે કિંમત દાખલ કરો"
 
-#: gsearchtool/gsearchtool.c:1512
+#: gsearchtool/gsearchtool.c:1524
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "'%s' નિયમ દૂર કરવા ક્લિક કરો"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1580
 msgid "A_vailable options:"
 msgstr "પ્રાપ્ત વિકલ્પોઃ  (_v)"
 
-#: gsearchtool/gsearchtool.c:1581
+#: gsearchtool/gsearchtool.c:1593
 msgid "Search Rules Menu"
 msgstr "નિયમ મેનુ શોધો"
 
-#: gsearchtool/gsearchtool.c:1582
+#: gsearchtool/gsearchtool.c:1594
 msgid "Select a search rule from the menu"
 msgstr "મેનુમાંથી શોધ નિયમ પસંદ કરો"
 
-#: gsearchtool/gsearchtool.c:1613
+#: gsearchtool/gsearchtool.c:1625
 msgid "S_earch results:"
 msgstr "શોધ પરિણામોઃ  (_e)"
 
-#: gsearchtool/gsearchtool.c:1693
+#: gsearchtool/gsearchtool.c:1705
 msgid "Name"
 msgstr "નામ"
 
-#: gsearchtool/gsearchtool.c:1713
+#: gsearchtool/gsearchtool.c:1725
 msgid "Folder"
 msgstr "ફોલ્ડર"
 
-#: gsearchtool/gsearchtool.c:1724
+#: gsearchtool/gsearchtool.c:1736
 msgid "Size"
 msgstr "માપ"
 
-#: gsearchtool/gsearchtool.c:1734
+#: gsearchtool/gsearchtool.c:1746
 msgid "Type"
 msgstr "પ્રકાર"
 
-#: gsearchtool/gsearchtool.c:1744
+#: gsearchtool/gsearchtool.c:1756
 msgid "Date Modified"
 msgstr "તારીખ દલાયેલી છે"
 
-#: gsearchtool/gsearchtool.c:1802
+#: gsearchtool/gsearchtool.c:1814
 msgid "_Name contains:"
 msgstr "નામ આ ધરાવે છેઃ  (_N)"
 
-#: gsearchtool/gsearchtool.c:1817 gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1829 gsearchtool/gsearchtool.c:1830
 msgid "Enter the file name you want to search"
 msgstr "શોધવી હોય તે ફાઇલનું નામ દાખલ કરો"
 
-#: gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1830
 msgid "Name Contains Entry"
 msgstr "નામ પ્રવેશ ધરાવે છે"
 
-#: gsearchtool/gsearchtool.c:1829
+#: gsearchtool/gsearchtool.c:1841
 msgid "_Look in folder:"
 msgstr "ફોલ્ડરમાં જુઓઃ  (_L)"
 
-#: gsearchtool/gsearchtool.c:1835
+#: gsearchtool/gsearchtool.c:1847
 msgid "Browse"
 msgstr "શોધો"
 
-#: gsearchtool/gsearchtool.c:1846 gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1858 gsearchtool/gsearchtool.c:1859
 msgid "Enter the folder name where you want to start the search"
 msgstr "જ્યાંથી તમે શોધ શરૂ કરવા માગતા હોય ત્યાં ફોલ્ડરનું નામ ઉમેરો"
 
-#: gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1859
 msgid "Look in Folder Entry"
 msgstr "ફોલ્ડર પ્રવેશમાં જુઓ"
 
-#: gsearchtool/gsearchtool.c:1865
+#: gsearchtool/gsearchtool.c:1877
 msgid "Show more _options"
 msgstr "ઘણા વિકલ્પો બતાવો (_o)"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Show more options"
 msgstr "ઘણા વિકલ્પો બતાવો"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Expands or collapses a list of search options."
 msgstr "શોધ વિકલ્પોની યાદીને વિસ્તારો અથવા ભેગુ કરો."
 
-#: gsearchtool/gsearchtool.c:1922
+#: gsearchtool/gsearchtool.c:1934
 msgid "Click to Start the search"
 msgstr "શોધ શરૂ કરવા ક્લિક કરો"
 
-#: gsearchtool/gsearchtool.c:1923
+#: gsearchtool/gsearchtool.c:1935
 msgid "Click to Stop the search"
 msgstr "શોધ બંધ કરવા ક્લિક કરો"
 
-#: gsearchtool/gsearchtool.c:2202
+#: gsearchtool/gsearchtool.c:2214
 msgid "Cannot initialize bonobo."
 msgstr "બોનોબોનો પ્રારંભ કરી શકાતો નથી."
 

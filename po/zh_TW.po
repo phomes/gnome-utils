@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.6.1\n"
-"POT-Creation-Date: 2004-04-20 22:54+1200\n"
+"POT-Creation-Date: 2004-04-29 11:26+1200\n"
 "PO-Revision-Date: 2004-03-22 20:30+0800\n"
 "Last-Translator: Roy Hiu-yeung Chan <roy.chan@debian.org.hk>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -178,7 +178,7 @@ msgstr "查字"
 msgid "_Lookup"
 msgstr "檢索(_L)"
 
-#: gdictsrc/gdict-defbox.c:639 gdictsrc/gdict-speller.c:478
+#: gdictsrc/gdict-defbox.c:650 gdictsrc/gdict-speller.c:478
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "詢問時出現錯誤：%s"
@@ -771,9 +771,9 @@ msgstr "取消格式化軟碟的動作。"
 msgid "Format Progress"
 msgstr "格式化進度"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:565
-#: gsearchtool/gsearchtool.c:819 gsearchtool/gsearchtool.c:903
-#: gsearchtool/gsearchtool.c:2181 gsearchtool/gsearchtool.c:2206
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:577
+#: gsearchtool/gsearchtool.c:831 gsearchtool/gsearchtool.c:915
+#: gsearchtool/gsearchtool.c:2193 gsearchtool/gsearchtool.c:2218
 msgid "Search for Files"
 msgstr "搜尋檔案"
 
@@ -960,23 +960,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:470
+#: gsearchtool/gsearchtool-support.c:494
 msgid "today at %-I:%M %p"
 msgstr "今天%p %-I:%M"
 
-#: gsearchtool/gsearchtool-support.c:472
+#: gsearchtool/gsearchtool-support.c:496
 msgid "yesterday at %-I:%M %p"
 msgstr "昨天%p %-I:%M"
 
-#: gsearchtool/gsearchtool-support.c:474 gsearchtool/gsearchtool-support.c:476
+#: gsearchtool/gsearchtool-support.c:498 gsearchtool/gsearchtool-support.c:500
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%Y-%m-%d %p %-I:%M"
 
-#: gsearchtool/gsearchtool-support.c:647
+#: gsearchtool/gsearchtool-support.c:671
 msgid "link (broken)"
 msgstr "鏈結 (目標不存在)"
 
-#: gsearchtool/gsearchtool-support.c:652
+#: gsearchtool/gsearchtool-support.c:676
 #, c-format
 msgid "link to %s"
 msgstr "%s 的鏈結"
@@ -1037,68 +1037,68 @@ msgstr "跟隨符號連結"
 msgid "Include other filesystems"
 msgstr "包括其它檔案系統"
 
-#: gsearchtool/gsearchtool.c:512 gsearchtool/gsearchtool.c:540
+#: gsearchtool/gsearchtool.c:524 gsearchtool/gsearchtool.c:552
 msgid "No files found"
 msgstr "找不到符合條件的檔案"
 
-#: gsearchtool/gsearchtool.c:533
+#: gsearchtool/gsearchtool.c:545
 msgid "(stopped)"
 msgstr "(已停止)"
 
-#: gsearchtool/gsearchtool.c:539
+#: gsearchtool/gsearchtool.c:551
 msgid "No Files Found"
 msgstr "找不到任何檔案"
 
-#: gsearchtool/gsearchtool.c:544
+#: gsearchtool/gsearchtool.c:556
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "找到 %d 個檔案"
 
-#: gsearchtool/gsearchtool.c:548
+#: gsearchtool/gsearchtool.c:560
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "找到 %d 個檔案"
 
-#: gsearchtool/gsearchtool.c:654
+#: gsearchtool/gsearchtool.c:666
 msgid "Entry changed called for a non entry option!"
 msgstr "已更改的欄位使用了無效的欄位選項！"
 
-#: gsearchtool/gsearchtool.c:903
+#: gsearchtool/gsearchtool.c:915
 msgid "Searching..."
 msgstr "搜尋中..."
 
-#: gsearchtool/gsearchtool.c:924
+#: gsearchtool/gsearchtool.c:936
 msgid "Set the text of 'Name contains'"
 msgstr "預先填上準備搜尋的檔案名稱"
 
-#: gsearchtool/gsearchtool.c:925
+#: gsearchtool/gsearchtool.c:937
 msgid "Set the text of 'Look in folder'"
 msgstr "預先填上會搜尋的資料夾"
 
-#: gsearchtool/gsearchtool.c:926
+#: gsearchtool/gsearchtool.c:938
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "根據以下其中一種屬性排列檔案：名稱、資料夾、大小、類型或日期"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:939
 msgid "Set sort order to descending, the default is ascending"
 msgstr "設定為相反次序排列 (預設為順序排列)"
 
-#: gsearchtool/gsearchtool.c:928
+#: gsearchtool/gsearchtool.c:940
 msgid "Automatically start a search"
 msgstr "自動開始搜尋"
 
-#: gsearchtool/gsearchtool.c:933
+#: gsearchtool/gsearchtool.c:945
 #, c-format
 msgid "Select the '%s' constraint"
 msgstr "指定「%s」條件"
 
-#: gsearchtool/gsearchtool.c:1039
+#: gsearchtool/gsearchtool.c:1051
 msgid "Invalid option passed to sortby command line argument."
 msgstr "sortby 參數中的選項無效。"
 
-#: gsearchtool/gsearchtool.c:1304
+#: gsearchtool/gsearchtool.c:1316
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1106,7 +1106,7 @@ msgstr ""
 "當搜尋時發生以下的錯誤。\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:1308
+#: gsearchtool/gsearchtool.c:1320
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1114,116 +1114,116 @@ msgstr ""
 "\n"
 "... 錯誤過多，無法顯示 ..."
 
-#: gsearchtool/gsearchtool.c:1315
+#: gsearchtool/gsearchtool.c:1327
 msgid "Error while searching for files."
 msgstr "搜尋檔案時出現錯誤。"
 
-#: gsearchtool/gsearchtool.c:1356
+#: gsearchtool/gsearchtool.c:1368
 msgid "Error parsing the search command."
 msgstr "分析搜尋指令時發生錯誤"
 
-#: gsearchtool/gsearchtool.c:1379
+#: gsearchtool/gsearchtool.c:1391
 msgid "Error running the search command."
 msgstr "執行搜尋指令時發生錯誤"
 
-#: gsearchtool/gsearchtool.c:1475
+#: gsearchtool/gsearchtool.c:1487
 msgid "Search Rule Value Entry"
 msgstr "搜尋條件輸入欄"
 
-#: gsearchtool/gsearchtool.c:1476
+#: gsearchtool/gsearchtool.c:1488
 msgid "Enter a value for search rule"
 msgstr "請輸入有關該搜尋條件的值"
 
-#: gsearchtool/gsearchtool.c:1512
+#: gsearchtool/gsearchtool.c:1524
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "按下本按鈕後會移除‘%s’條件"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1580
 msgid "A_vailable options:"
 msgstr "目前提供的選項(_V)："
 
-#: gsearchtool/gsearchtool.c:1581
+#: gsearchtool/gsearchtool.c:1593
 msgid "Search Rules Menu"
 msgstr "搜尋條件選單"
 
-#: gsearchtool/gsearchtool.c:1582
+#: gsearchtool/gsearchtool.c:1594
 msgid "Select a search rule from the menu"
 msgstr "在選單中選擇搜尋條件"
 
-#: gsearchtool/gsearchtool.c:1613
+#: gsearchtool/gsearchtool.c:1625
 msgid "S_earch results:"
 msgstr "搜尋結果(_E)："
 
-#: gsearchtool/gsearchtool.c:1693
+#: gsearchtool/gsearchtool.c:1705
 msgid "Name"
 msgstr "名稱"
 
-#: gsearchtool/gsearchtool.c:1713
+#: gsearchtool/gsearchtool.c:1725
 msgid "Folder"
 msgstr "資料夾"
 
-#: gsearchtool/gsearchtool.c:1724
+#: gsearchtool/gsearchtool.c:1736
 msgid "Size"
 msgstr "大小"
 
-#: gsearchtool/gsearchtool.c:1734
+#: gsearchtool/gsearchtool.c:1746
 msgid "Type"
 msgstr "類型"
 
-#: gsearchtool/gsearchtool.c:1744
+#: gsearchtool/gsearchtool.c:1756
 msgid "Date Modified"
 msgstr "最後修改時間"
 
-#: gsearchtool/gsearchtool.c:1802
+#: gsearchtool/gsearchtool.c:1814
 msgid "_Name contains:"
 msgstr "檔名中含有(_N)："
 
-#: gsearchtool/gsearchtool.c:1817 gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1829 gsearchtool/gsearchtool.c:1830
 msgid "Enter the file name you want to search"
 msgstr "請輸入想搜尋的檔案名稱"
 
-#: gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1830
 msgid "Name Contains Entry"
 msgstr "這個欄位指定檔名中含有甚麼"
 
-#: gsearchtool/gsearchtool.c:1829
+#: gsearchtool/gsearchtool.c:1841
 msgid "_Look in folder:"
 msgstr "在指定資料夾開始搜尋(_L)："
 
-#: gsearchtool/gsearchtool.c:1835
+#: gsearchtool/gsearchtool.c:1847
 msgid "Browse"
 msgstr "瀏覽"
 
-#: gsearchtool/gsearchtool.c:1846 gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1858 gsearchtool/gsearchtool.c:1859
 msgid "Enter the folder name where you want to start the search"
 msgstr "請輸入準備搜尋的資料夾"
 
-#: gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1859
 msgid "Look in Folder Entry"
 msgstr "這個欄位指定在哪個資料夾開始搜尋"
 
-#: gsearchtool/gsearchtool.c:1865
+#: gsearchtool/gsearchtool.c:1877
 msgid "Show more _options"
 msgstr "顯示進階選項(_O)"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Show more options"
 msgstr "顯示進階選項"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Expands or collapses a list of search options."
 msgstr "展開或收起一系列搜尋選項。"
 
-#: gsearchtool/gsearchtool.c:1922
+#: gsearchtool/gsearchtool.c:1934
 msgid "Click to Start the search"
 msgstr "按下本按鈕後會開始搜尋"
 
-#: gsearchtool/gsearchtool.c:1923
+#: gsearchtool/gsearchtool.c:1935
 msgid "Click to Stop the search"
 msgstr "按下本按鈕後會停止搜尋"
 
-#: gsearchtool/gsearchtool.c:2202
+#: gsearchtool/gsearchtool.c:2214
 msgid "Cannot initialize bonobo."
 msgstr "無法初始化 bonobo。"
 

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2004-04-20 22:54+1200\n"
+"POT-Creation-Date: 2004-04-29 11:26+1200\n"
 "PO-Revision-Date: 2003-01-03 21:59+0200\n"
 "Last-Translator: Artis Trops <hornet@navigator.lv>\n"
 "Language-Team: Latvian <ll10nt@os.lv>\n"
@@ -204,7 +204,7 @@ msgid "_Lookup"
 msgstr "_Sameklēt"
 
 # mini-utils/gless/gless.c:548
-#: gdictsrc/gdict-defbox.c:639 gdictsrc/gdict-speller.c:478
+#: gdictsrc/gdict-defbox.c:650 gdictsrc/gdict-speller.c:478
 #, c-format
 msgid "Error invoking query: %s"
 msgstr "Kļūda izpildot pieprasījumu: %s"
@@ -865,9 +865,9 @@ msgid "Format Progress"
 msgstr "Formatēšanas progress"
 
 # gsearchtool/gsearchtool.c:824
-#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:565
-#: gsearchtool/gsearchtool.c:819 gsearchtool/gsearchtool.c:903
-#: gsearchtool/gsearchtool.c:2181 gsearchtool/gsearchtool.c:2206
+#: gsearchtool/gnome-search-tool.desktop.in.h:1 gsearchtool/gsearchtool.c:577
+#: gsearchtool/gsearchtool.c:831 gsearchtool/gsearchtool.c:915
+#: gsearchtool/gsearchtool.c:2193 gsearchtool/gsearchtool.c:2218
 msgid "Search for Files"
 msgstr "Meklēt Failus"
 
@@ -1063,23 +1063,23 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:470
+#: gsearchtool/gsearchtool-support.c:494
 msgid "today at %-I:%M %p"
 msgstr "šodien %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:472
+#: gsearchtool/gsearchtool-support.c:496
 msgid "yesterday at %-I:%M %p"
 msgstr "vakardien %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:474 gsearchtool/gsearchtool-support.c:476
+#: gsearchtool/gsearchtool-support.c:498 gsearchtool/gsearchtool-support.c:500
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%-d/%m/%y, %-I:%M %p"
 
-#: gsearchtool/gsearchtool-support.c:647
+#: gsearchtool/gsearchtool-support.c:671
 msgid "link (broken)"
 msgstr "saite (nedarbojas)"
 
-#: gsearchtool/gsearchtool-support.c:652
+#: gsearchtool/gsearchtool-support.c:676
 #, c-format
 msgid "link to %s"
 msgstr "saite uz %s"
@@ -1153,22 +1153,22 @@ msgid "Include other filesystems"
 msgstr "Iekļaut citas failsistēmas"
 
 # gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
-#: gsearchtool/gsearchtool.c:512 gsearchtool/gsearchtool.c:540
+#: gsearchtool/gsearchtool.c:524 gsearchtool/gsearchtool.c:552
 msgid "No files found"
 msgstr "Neviens fails nav atrasts"
 
-#: gsearchtool/gsearchtool.c:533
+#: gsearchtool/gsearchtool.c:545
 msgid "(stopped)"
 msgstr ""
 
 # gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
-#: gsearchtool/gsearchtool.c:539
+#: gsearchtool/gsearchtool.c:551
 #, fuzzy
 msgid "No Files Found"
 msgstr "Neviens fails nav atrasts"
 
 # gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
-#: gsearchtool/gsearchtool.c:544
+#: gsearchtool/gsearchtool.c:556
 #, fuzzy, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
@@ -1176,7 +1176,7 @@ msgstr[0] "Atrasti %d faili"
 msgstr[1] "Atrasti %d faili"
 
 # gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
-#: gsearchtool/gsearchtool.c:548
+#: gsearchtool/gsearchtool.c:560
 #, fuzzy, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
@@ -1184,49 +1184,49 @@ msgstr[0] "Atrasti %d faili"
 msgstr[1] "Atrasti %d faili"
 
 # gsearchtool/gsearchtool.c:471
-#: gsearchtool/gsearchtool.c:654
+#: gsearchtool/gsearchtool.c:666
 msgid "Entry changed called for a non entry option!"
 msgstr "Ieraksta maiņu izsauca ne-ieraksta opcija!"
 
 # gdictsrc/gdict-app.c:117
-#: gsearchtool/gsearchtool.c:903
+#: gsearchtool/gsearchtool.c:915
 msgid "Searching..."
 msgstr "Meklēju..."
 
-#: gsearchtool/gsearchtool.c:924
+#: gsearchtool/gsearchtool.c:936
 #, fuzzy
 msgid "Set the text of 'Name contains'"
 msgstr "Iestati 'fails ar nosaukumu' tekstu"
 
-#: gsearchtool/gsearchtool.c:925
+#: gsearchtool/gsearchtool.c:937
 #, fuzzy
 msgid "Set the text of 'Look in folder'"
 msgstr "Iestati 'meklēt mapē' tekstu"
 
-#: gsearchtool/gsearchtool.c:926
+#: gsearchtool/gsearchtool.c:938
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 "Kārtot failus pēc viena no sekojošajiem: nosaukums, mape, izmērs, tips, vai "
 "datums"
 
-#: gsearchtool/gsearchtool.c:927
+#: gsearchtool/gsearchtool.c:939
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Iestatīt kārtošanas kārtību uz dilstošu, noklusētā ir augoša"
 
-#: gsearchtool/gsearchtool.c:928
+#: gsearchtool/gsearchtool.c:940
 msgid "Automatically start a search"
 msgstr "Automātiski sākt meklēšanu"
 
-#: gsearchtool/gsearchtool.c:933
+#: gsearchtool/gsearchtool.c:945
 #, c-format
 msgid "Select the '%s' constraint"
 msgstr "Izvēlieties '%s' piespiešanu"
 
-#: gsearchtool/gsearchtool.c:1039
+#: gsearchtool/gsearchtool.c:1051
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Nederīga opcija piespēlēta sortby komandrindas argumentam."
 
-#: gsearchtool/gsearchtool.c:1304
+#: gsearchtool/gsearchtool.c:1316
 msgid ""
 "While searching the following errors were reported.\n"
 "\n"
@@ -1234,7 +1234,7 @@ msgstr ""
 "Meklēšanas laikā tika paziņotas sekojošās kļūdas.\n"
 "\n"
 
-#: gsearchtool/gsearchtool.c:1308
+#: gsearchtool/gsearchtool.c:1320
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1242,133 +1242,133 @@ msgstr ""
 "\n"
 "... Pārāk daudz kļūdu uz ekrāna ..."
 
-#: gsearchtool/gsearchtool.c:1315
+#: gsearchtool/gsearchtool.c:1327
 #, fuzzy
 msgid "Error while searching for files."
 msgstr "EKļuda pārbaudot sliktos sektorus."
 
-#: gsearchtool/gsearchtool.c:1356
+#: gsearchtool/gsearchtool.c:1368
 #, fuzzy
 msgid "Error parsing the search command."
 msgstr "EKļūda pavairojot (%s) komandu: %s."
 
-#: gsearchtool/gsearchtool.c:1379
+#: gsearchtool/gsearchtool.c:1391
 #, fuzzy
 msgid "Error running the search command."
 msgstr "EKļūda pavairojot (%s) komandu: %s."
 
-#: gsearchtool/gsearchtool.c:1475
+#: gsearchtool/gsearchtool.c:1487
 msgid "Search Rule Value Entry"
 msgstr "Meklēšanas Nosacījuma Vērtības Ieraksts"
 
-#: gsearchtool/gsearchtool.c:1476
+#: gsearchtool/gsearchtool.c:1488
 msgid "Enter a value for search rule"
 msgstr "Ievadi vērtību meklēšanas nosacījumam"
 
-#: gsearchtool/gsearchtool.c:1512
+#: gsearchtool/gsearchtool.c:1524
 #, c-format
 msgid "Click to Remove the '%s' Rule"
 msgstr "Klikšķis, lai Izņemtu '%s' Nosacījumu"
 
-#: gsearchtool/gsearchtool.c:1568
+#: gsearchtool/gsearchtool.c:1580
 msgid "A_vailable options:"
 msgstr "P_ieejamās opcijas:"
 
 # gsearchtool/gsearchtool.c:211
-#: gsearchtool/gsearchtool.c:1581
+#: gsearchtool/gsearchtool.c:1593
 msgid "Search Rules Menu"
 msgstr "Meklēšanas Nosacījumu Izvēlne"
 
 # mini-utils/gcolorsel/menus.c:60
-#: gsearchtool/gsearchtool.c:1582
+#: gsearchtool/gsearchtool.c:1594
 msgid "Select a search rule from the menu"
 msgstr "Izvēlies meklēšanas nosacījumu no izvēlnes"
 
 # gsearchtool/gsearchtool.c:211
-#: gsearchtool/gsearchtool.c:1613
+#: gsearchtool/gsearchtool.c:1625
 #, fuzzy
 msgid "S_earch results:"
 msgstr "M_eklēšanas Rezultāti"
 
-#: gsearchtool/gsearchtool.c:1693
+#: gsearchtool/gsearchtool.c:1705
 msgid "Name"
 msgstr "Nosaukums"
 
-#: gsearchtool/gsearchtool.c:1713
+#: gsearchtool/gsearchtool.c:1725
 msgid "Folder"
 msgstr "Direktorija"
 
 # mini-utils/guname/info.c:61
-#: gsearchtool/gsearchtool.c:1724
+#: gsearchtool/gsearchtool.c:1736
 msgid "Size"
 msgstr "Lielums"
 
-#: gsearchtool/gsearchtool.c:1734
+#: gsearchtool/gsearchtool.c:1746
 msgid "Type"
 msgstr "Tips"
 
 # logview/info.c:161
-#: gsearchtool/gsearchtool.c:1744
+#: gsearchtool/gsearchtool.c:1756
 msgid "Date Modified"
 msgstr "Modificēšanas Datums"
 
-#: gsearchtool/gsearchtool.c:1802
+#: gsearchtool/gsearchtool.c:1814
 msgid "_Name contains:"
 msgstr ""
 
-#: gsearchtool/gsearchtool.c:1817 gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1829 gsearchtool/gsearchtool.c:1830
 msgid "Enter the file name you want to search"
 msgstr "Ievadi faila nosaukumu, kuru vēlies atrast"
 
-#: gsearchtool/gsearchtool.c:1818
+#: gsearchtool/gsearchtool.c:1830
 msgid "Name Contains Entry"
 msgstr ""
 
 # gdictsrc/gdict-app.c:278
-#: gsearchtool/gsearchtool.c:1829
+#: gsearchtool/gsearchtool.c:1841
 msgid "_Look in folder:"
 msgstr "_Skatīties mapē:"
 
 # gsearchtool/gsearchtool.c:599
-#: gsearchtool/gsearchtool.c:1835
+#: gsearchtool/gsearchtool.c:1847
 msgid "Browse"
 msgstr "Lūkties"
 
-#: gsearchtool/gsearchtool.c:1846 gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1858 gsearchtool/gsearchtool.c:1859
 msgid "Enter the folder name where you want to start the search"
 msgstr "Ievadi direktorijas nosaukumu, kurā vēlies sākt meklēšanu"
 
 # gdictsrc/gdict-app.c:278
-#: gsearchtool/gsearchtool.c:1847
+#: gsearchtool/gsearchtool.c:1859
 #, fuzzy
 msgid "Look in Folder Entry"
 msgstr "_Skatīties mapē:"
 
 # logview/logview.c:113
-#: gsearchtool/gsearchtool.c:1865
+#: gsearchtool/gsearchtool.c:1877
 #, fuzzy
 msgid "Show more _options"
 msgstr "Parādīt Žurnāla Rekvizītus"
 
 # logview/logview.c:113
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 #, fuzzy
 msgid "Show more options"
 msgstr "Parādīt Žurnāla Rekvizītus"
 
-#: gsearchtool/gsearchtool.c:1875
+#: gsearchtool/gsearchtool.c:1887
 msgid "Expands or collapses a list of search options."
 msgstr ""
 
-#: gsearchtool/gsearchtool.c:1922
+#: gsearchtool/gsearchtool.c:1934
 msgid "Click to Start the search"
 msgstr "Klikšķis, lai Sāktu meklēšanu"
 
-#: gsearchtool/gsearchtool.c:1923
+#: gsearchtool/gsearchtool.c:1935
 msgid "Click to Stop the search"
 msgstr "Klikšķis, lai Apstādinātu meklēšanu"
 
-#: gsearchtool/gsearchtool.c:2202
+#: gsearchtool/gsearchtool.c:2214
 msgid "Cannot initialize bonobo."
 msgstr "Nevaru inicializēt bonabo."
 
