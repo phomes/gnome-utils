@@ -25,6 +25,7 @@
 #include "journal.h"
 #include "menucmd.h"
 #include "menus.h"
+#include "plug-in.h"
 #include "toolbar.h"
 
 
@@ -171,9 +172,45 @@ menus_create(GnomeApp *app)
 void
 menus_add_plugins (GnomeApp *app)
 {
+        GnomeUIInfo *plugins;
+	char * path;
+	GList *node;
+	int len, i;
 
-	gnome_app_insert_menus (app, "Reports/<Separator>",
-menu_main_reports);
+gtt_plugin_new ("bogo","/flase/path");
+	node = gtt_plugin_get_list ();
+
+	len = g_list_length (node);
+	if (0 >= len) return;
+
+	len ++;
+	plugins = g_new0 (GnomeUIInfo, len);
+
+	i = 0;
+	for (node = gtt_plugin_get_list(); node; node=node->next)
+	{
+		GttPlugin *plg = node->data;
+
+		plugins[i].type = GNOME_APP_UI_ITEM;
+		plugins[i].label = _(plg->name);
+		plugins[i].hint = _(plg->tooltip);
+		plugins[i].moreinfo = invoke_report;
+		plugins[i].user_data = plg->path;
+		plugins[i].unused_data = NULL;
+		plugins[i].pixmap_type = GNOME_APP_PIXMAP_STOCK;
+		plugins[i].pixmap_info = GNOME_STOCK_MENU_BLANK;
+		plugins[i].accelerator_key = 0;
+		plugins[i].ac_mods = (GdkModifierType) 0;
+
+		i++;
+	}
+	plugins[i].type = GNOME_APP_UI_ENDOFINFO;
+
+	/* deal with the i18n menu path ...*/
+	/* (is this right ??? or is this pre-i18n ???) */
+	path = g_strdup_printf ("%s/<Separator>", N_("Reports"));
+
+	gnome_app_insert_menus (app, path, plugins);
 printf ("duude add plugins \n");
 }
 

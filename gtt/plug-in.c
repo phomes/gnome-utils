@@ -42,6 +42,7 @@ gtt_plugin_new (const char * nam, const char * pth)
 	plg = g_new (GttPlugin, 1);
 	plg->name = g_strdup(nam);
 	plg->path = g_strdup(pth);
+	plg->tooltip = NULL;
 
 	plugin_list = g_list_append (plugin_list, plg);
 

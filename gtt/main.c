@@ -293,6 +293,9 @@ beta_run_or_abort(GtkWidget *w, gint butnum)
 	else
 	{
 		init_list();
+
+		/* plugins need to be added to he main menus dynamically,
+		 * after the config file has been read */
 		menus_add_plugins (GNOME_APP(window));
 		log_start();
 	}

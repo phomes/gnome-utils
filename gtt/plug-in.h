@@ -24,6 +24,7 @@
 typedef struct GttPlugin_s
 {
 	char * name;
+	char * tooltip;
 	char * path;
 
 } GttPlugin;

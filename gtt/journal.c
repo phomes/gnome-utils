@@ -314,6 +314,15 @@ html_on_url_cb(GtkHTML * html, const gchar * url, gpointer data)
 /* ============================================================== */
 
 void
+invoke_report(GtkWidget *widget, gpointer data)
+{
+printf ("duuude report were here\n");
+printf ("duuude its %s\n", (char *) data);
+}
+
+/* ============================================================== */
+
+void
 edit_journal(GtkWidget *widget, gpointer data)
 {
 	GtkWidget *jnl_top, *jnl_viewport, *jnl_browser;
