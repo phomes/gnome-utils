@@ -210,6 +210,30 @@ gtt_project_set_desc(GttProject *proj, const char *d)
 	ctree_update_desc(proj);
 }
 
+void 
+gtt_project_set_notes(GttProject *proj, const char *d)
+{
+	if (!proj) return;
+	if (proj->notes) g_free(proj->notes);
+	if (!d) {
+		proj->notes = NULL;
+		return;
+	}
+	proj->notes = g_strdup(d);
+}
+
+void 
+gtt_project_set_custid(GttProject *proj, const char *d)
+{
+	if (!proj) return;
+	if (proj->custid) g_free(proj->custid);
+	if (!d) {
+		proj->custid = NULL;
+		return;
+	}
+	proj->custid = g_strdup(d);
+}
+
 const char * 
 gtt_project_get_title (GttProject *proj)
 {
@@ -224,6 +248,20 @@ gtt_project_get_desc (GttProject *proj)
 	return (proj->desc);
 }
 
+const char * 
+gtt_project_get_notes (GttProject *proj)
+{
+	if (!proj) return NULL;
+	return (proj->notes);
+}
+
+const char * 
+gtt_project_get_custid (GttProject *proj)
+{
+	if (!proj) return NULL;
+	return (proj->custid);
+}
+
 void
 gtt_project_set_billrate (GttProject *proj, double r)
 {
@@ -236,6 +274,76 @@ gtt_project_get_billrate (GttProject *proj)
 {
 	if (!proj) return 0.0;
 	return proj->billrate;
+}
+
+void
+gtt_project_set_overtime_rate (GttProject *proj, double r)
+{
+	if (!proj) return;
+	proj->overtime_rate = r;
+}
+
+double
+gtt_project_get_overtime_rate (GttProject *proj)
+{
+	if (!proj) return 0.0;
+	return proj->overtime_rate;
+}
+
+void
+gtt_project_set_overover_rate (GttProject *proj, double r)
+{
+	if (!proj) return;
+	proj->overover_rate = r;
+}
+
+double
+gtt_project_get_overover_rate (GttProject *proj)
+{
+	if (!proj) return 0.0;
+	return proj->overover_rate;
+}
+
+void
+gtt_project_set_flat_fee (GttProject *proj, double r)
+{
+	if (!proj) return;
+	proj->flat_fee = r;
+}
+
+double
+gtt_project_get_flat_fee (GttProject *proj)
+{
+	if (!proj) return 0.0;
+	return proj->flat_fee;
+}
+
+void
+gtt_project_set_min_interval (GttProject *proj, int r)
+{
+	if (!proj) return;
+	proj->min_interval = r;
+}
+
+int
+gtt_project_get_min_interval (GttProject *proj)
+{
+	if (!proj) return 0.0;
+	return proj->min_interval;
+}
+
+void
+gtt_project_set_auto_merge_interval (GttProject *proj, int r)
+{
+	if (!proj) return;
+	proj->auto_merge_interval = r;
+}
+
+int
+gtt_project_get_auto_merge_interval (GttProject *proj)
+{
+	if (!proj) return 0.0;
+	return proj->auto_merge_interval;
 }
 
 /* =========================================================== */

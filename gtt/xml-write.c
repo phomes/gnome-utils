@@ -174,6 +174,22 @@ gtt_xml_project_to_dom_tree (GttProject *prj)
 		xmlAddChild (topnode, node);	
 	}
 
+	str = gtt_project_get_notes(prj);
+	if (str && 0 != str[0])
+	{
+		node = xmlNewNode (NULL, "notes");
+		xmlNodeAddContent(node, str);
+		xmlAddChild (topnode, node);	
+	}
+
+	str = gtt_project_get_custid(prj);
+	if (str && 0 != str[0])
+	{
+		node = xmlNewNode (NULL, "custid");
+		xmlNodeAddContent(node, str);
+		xmlAddChild (topnode, node);	
+	}
+
 	/* store id */
 	g_snprintf (buff, sizeof(buff), "%d",
                     gtt_project_get_id(prj));
@@ -188,6 +204,40 @@ gtt_xml_project_to_dom_tree (GttProject *prj)
 	xmlNodeAddContent(node, buff);
 	xmlAddChild (topnode, node);
 
+	/* store price */
+	g_snprintf (buff, sizeof(buff), "%.18g",
+                    gtt_project_get_overtime_rate(prj));
+	node = xmlNewNode (NULL, "overtime_rate");
+	xmlNodeAddContent(node, buff);
+	xmlAddChild (topnode, node);
+
+	/* store price */
+	g_snprintf (buff, sizeof(buff), "%.18g",
+                    gtt_project_get_overover_rate(prj));
+	node = xmlNewNode (NULL, "overover_rate");
+	xmlNodeAddContent(node, buff);
+	xmlAddChild (topnode, node);
+
+	/* store price */
+	g_snprintf (buff, sizeof(buff), "%.18g",
+                    gtt_project_get_flat_fee(prj));
+	node = xmlNewNode (NULL, "flat_fee");
+	xmlNodeAddContent(node, buff);
+	xmlAddChild (topnode, node);
+
+	/* store min_interval */
+	g_snprintf (buff, sizeof(buff), "%d",
+                    gtt_project_get_min_interval(prj));
+	node = xmlNewNode (NULL, "min_interval");
+	xmlNodeAddContent(node, buff);
+	xmlAddChild (topnode, node);
+
+	/* store auto_merge_interval */
+	g_snprintf (buff, sizeof(buff), "%d",
+                    gtt_project_get_auto_merge_interval(prj));
+	node = xmlNewNode (NULL, "auto_merge_interval");
+	xmlNodeAddContent(node, buff);
+	xmlAddChild (topnode, node);
 
 	/* handle tasks */
 	tasks = gtt_project_get_tasks(prj);

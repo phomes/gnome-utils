@@ -170,12 +170,64 @@ parse_project (xmlNodePtr project)
 			gtt_project_set_desc (prj, str);
 		} 
 		else
+		if (0 == strcmp ("notes", node->name))
+		{
+			str = GET_TEXT (node);
+			gtt_project_set_notes (prj, str);
+		} 
+		else
+		if (0 == strcmp ("custid", node->name))
+		{
+			str = GET_TEXT (node);
+			gtt_project_set_custid (prj, str);
+		} 
+		else
 		if (0 == strcmp ("billrate", node->name))
 		{
 			double rate;
 			str = GET_TEXT (node);
 			rate = atof (str);
 			gtt_project_set_billrate (prj, rate);
+		} 
+		else
+		if (0 == strcmp ("overtime_rate", node->name))
+		{
+			double rate;
+			str = GET_TEXT (node);
+			rate = atof (str);
+			gtt_project_set_overtime_rate (prj, rate);
+		} 
+		else
+		if (0 == strcmp ("overover_rate", node->name))
+		{
+			double rate;
+			str = GET_TEXT (node);
+			rate = atof (str);
+			gtt_project_set_overover_rate (prj, rate);
+		} 
+		else
+		if (0 == strcmp ("flat_fee", node->name))
+		{
+			double rate;
+			str = GET_TEXT (node);
+			rate = atof (str);
+			gtt_project_set_flat_fee (prj, rate);
+		} 
+		else
+		if (0 == strcmp ("min_interval", node->name))
+		{
+			int ivl;
+			str = GET_TEXT (node);
+			ivl = atoi (str);
+			gtt_project_set_min_interval (prj, ivl);
+		} 
+		else
+		if (0 == strcmp ("auto_merge_interval", node->name))
+		{
+			int ivl;
+			str = GET_TEXT (node);
+			ivl = atoi (str);
+			gtt_project_set_auto_merge_interval (prj, ivl);
 		} 
 		else
 		if (0 == strcmp ("id", node->name))

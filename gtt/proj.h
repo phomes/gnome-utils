@@ -65,12 +65,16 @@ void 		gtt_project_remove(GttProject *p);
 
 void 		gtt_project_set_title(GttProject *, const char *);
 void 		gtt_project_set_desc(GttProject *, const char *);
+void 		gtt_project_set_notes(GttProject *, const char *);
+void 		gtt_project_set_custid(GttProject *, const char *);
 
 /* These two routines return the title & desc strings.
  * Do *not* free these strings when done.  Note that 
  * are freed when project is deleted. */
 const char * 	gtt_project_get_title (GttProject *);
 const char * 	gtt_project_get_desc (GttProject *);
+const char * 	gtt_project_get_notes (GttProject *);
+const char * 	gtt_project_get_custid (GttProject *);
 
 /* The gtt_project_compat_set_secs() routine provides a
  *    backwards-compatible routine for setting the total amount of
@@ -82,9 +86,34 @@ void		gtt_project_compat_set_secs (GttProject *proj,
 			int secs_ever, int secs_day, time_t last_update);
 
 
-/* Billrate is currency amount to charge for work */
+/* The billrate is the currency amount to charge for an hour's work.
+ *     overtime_rate is the over-time rate (usually 1.5x billrate)
+ *     overover_rate is the double over-time rate (usually 2x billrate)
+ *     flat_fee is charged, independent of the length of time.
+ */
 void 		gtt_project_set_billrate (GttProject *, double);
 double 		gtt_project_get_billrate (GttProject *);
+void 		gtt_project_set_overtime_rate (GttProject *, double);
+double 		gtt_project_get_overtime_rate (GttProject *);
+void 		gtt_project_set_overover_rate (GttProject *, double);
+double 		gtt_project_get_overover_rate (GttProject *);
+void 		gtt_project_set_flat_fee (GttProject *, double);
+double 		gtt_project_get_flat_fee (GttProject *);
+
+/* The gtt_project_set_min_interval() routine sets the smallest
+ *    time unit, below which work intervals will not be recorded
+ *    (and will instead be discarded).   Default is 3 seconds, 
+ *    but it should be 60 seconds.
+ *
+ * The gtt_project_auto_merge_interval() routine sets the smallest
+ *    time unit, below which work intervals will be merged into 
+ *    prior work intervals rather than being counted as seperate.
+ *    Default is 1 minute, but should be 5 minutes.
+ */
+void		gtt_project_set_min_interval (GttProject *, int);
+int		gtt_project_get_min_interval (GttProject *);
+void		gtt_project_set_auto_merge_interval (GttProject *, int);
+int		gtt_project_get_auto_merge_interval (GttProject *);
 
 /* The id is a simple id, handy for .. stuff */
 void 		gtt_project_set_id (GttProject *, int id);
