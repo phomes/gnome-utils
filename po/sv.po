@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"POT-Creation-Date: 2001-10-03 15:13+0200\n"
-"PO-Revision-Date: 2001-10-03 15:14+0200\n"
+"POT-Creation-Date: 2001-10-21 13:37+0200\n"
+"PO-Revision-Date: 2001-10-21 13:48+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -166,15 +166,15 @@ msgstr "-"
 msgid "SUM"
 msgstr "SUM"
 
-#: gcalc/gnome-calc.c:1212 gtt/ctree.c:810
+#: gcalc/gnome-calc.c:1212 gtt/ctree.c:959
 msgid "1"
 msgstr "1"
 
-#: gcalc/gnome-calc.c:1213 gtt/ctree.c:809
+#: gcalc/gnome-calc.c:1213 gtt/ctree.c:958
 msgid "2"
 msgstr "2"
 
-#: gcalc/gnome-calc.c:1214 gtt/ctree.c:808
+#: gcalc/gnome-calc.c:1214 gtt/ctree.c:957
 msgid "3"
 msgstr "3"
 
@@ -497,7 +497,7 @@ msgstr "Servern som ska användas, sökstrategi, typsnitt"
 msgid "Word definition"
 msgstr "Orddefinition"
 
-#: gdictsrc/gdict-applet.c:280 logview/logview.c:135
+#: gdictsrc/gdict-applet.c:280 logview/logview.c:136
 msgid "About..."
 msgstr "Om..."
 
@@ -645,7 +645,7 @@ msgstr "Kunde inte tolka geometristrängen \"%s\""
 msgid "Specify the geometry of the window."
 msgstr "Ange fönstrets geometri."
 
-#: gdiskfree/gdiskfree.c:59 gtt/main.c:445 mini-utils/gless/gless.c:130
+#: gdiskfree/gdiskfree.c:59 gtt/main.c:439 mini-utils/gless/gless.c:130
 msgid "GEOMETRY"
 msgstr "GEOMETRI"
 
@@ -817,8 +817,8 @@ msgstr "Lägg till"
 msgid "Show Command"
 msgstr "Visa kommando"
 
-#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ghtml.c:94
-#: gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
+#: gsearchtool/gsearchtool.c:666 gsearchtool/gsearchtool.c:759 gtt/ctree.c:576
+#: gtt/ghtml.c:94 gtt/ghtml.c:262 gtt/glade/interval_edit.glade.h:11
 msgid "Start"
 msgstr "Starta"
 
@@ -901,120 +901,184 @@ msgstr ""
 "Förstod inte geometrin (position och storlek)\n"
 " som angavs på kommandoraden"
 
-#: gtt/ctree.c:528
+#: gtt/ctree.c:511
 msgid "Total"
 msgstr "Totalt"
 
-#: gtt/ctree.c:532
+#: gtt/ctree.c:513
+msgid "Total time spent on this project."
+msgstr "Total tid spenderad på detta projekt."
+
+#: gtt/ctree.c:518
 msgid "This Memo"
 msgstr "Denna anteckning"
 
-#: gtt/ctree.c:536 gtt/glade/interval_edit.glade.h:14
+#: gtt/ctree.c:520
+msgid "Time spent under the current task memo."
+msgstr "Tid spenderad under aktuell uppgiftsanteckning."
+
+#: gtt/ctree.c:526 gtt/glade/interval_edit.glade.h:14
 msgid "Today"
 msgstr "Idag"
 
-#: gtt/ctree.c:540
+#: gtt/ctree.c:528
+msgid "Time spent on this project today."
+msgstr "Tid spenderad på detta projekt idag."
+
+#: gtt/ctree.c:533
 msgid "Week"
 msgstr "Vecka"
 
-#: gtt/ctree.c:544
+#: gtt/ctree.c:535
+msgid "Time spent on this project this week."
+msgstr "Tid spenderad på detta projekt denna vecka."
+
+#: gtt/ctree.c:541
 msgid "Month"
 msgstr "Månad"
 
-#: gtt/ctree.c:548
+#: gtt/ctree.c:543
+msgid "Time spent on this project this month."
+msgstr "Tid spenderad på detta projekt denna månad."
+
+#: gtt/ctree.c:549
 msgid "Year"
 msgstr "År"
 
-#: gtt/ctree.c:552 gtt/menucmd.c:144
+#: gtt/ctree.c:551
+msgid "Time spent on this project this year."
+msgstr "Tid spenderad på detta projekt detta år."
+
+#: gtt/ctree.c:557
+msgid "Title"
+msgstr "Titel"
+
+#: gtt/ctree.c:558 gtt/menucmd.c:144
 msgid "Project Title"
 msgstr "Projekttitel"
 
-#: gtt/ctree.c:556 gtt/menucmd.c:145 stripchart/params.c:654
+#: gtt/ctree.c:563 gtt/ctree.c:564 gtt/menucmd.c:145 stripchart/params.c:654
 msgid "Description"
 msgstr "Beskrivning"
 
-#: gtt/ctree.c:560
+#: gtt/ctree.c:569
 msgid "Task"
 msgstr "Uppgift"
 
-#: gtt/ctree.c:564
-msgid "Estimated Start Date"
-msgstr "Uppskattat startdatum"
+#: gtt/ctree.c:571
+msgid "The memo for the current task"
+msgstr "Anteckningen för den aktuella uppgiften"
 
-#: gtt/ctree.c:568
-msgid "Estimated End Date"
-msgstr "Uppskattat slutdatum"
+#: gtt/ctree.c:578
+msgid "Estimated Project Start Date"
+msgstr "Uppskattat startdatum för projektet"
 
-#: gtt/ctree.c:572
-msgid "Date Due"
-msgstr "Färdigdatum"
+#: gtt/ctree.c:583
+msgid "End"
+msgstr "Slut"
 
-#: gtt/ctree.c:576
-msgid "Sizing"
+#: gtt/ctree.c:585
+msgid "Estimated Project Completion Date"
+msgstr "Uppskattat färdigställningsdatum för projektet"
+
+#: gtt/ctree.c:590
+msgid "Due"
+msgstr "Färdigt den"
+
+#: gtt/ctree.c:592
+msgid ""
+"Due Date: the date by which the project absolutely must be completed by."
+msgstr ""
+"Färdigtdatum: det datum då projektet absolut måste vara färdigt."
+
+#: gtt/ctree.c:599 mini-utils/guname/info.c:61
+msgid "Size"
 msgstr "Storlek"
 
-#: gtt/ctree.c:580 gtt/glade/project_properties.glade.h:5
-#, no-c-format
-msgid "% Complete"
-msgstr "% färdigt"
+#: gtt/ctree.c:601
+msgid "Sizing: How much work it will take to finish this project."
+msgstr ""
+"Projektstorlek: Hur mycket arbete det kommer att ta att färdigställa detta "
+"projekt."
 
-#: gtt/ctree.c:584
-msgid "Urgency"
-msgstr "Angelägenhet"
+#: gtt/ctree.c:607
+msgid "Done"
+msgstr "Klart"
 
-#: gtt/ctree.c:588
-msgid "Importance"
-msgstr "Viktighet"
+#: gtt/ctree.c:609
+msgid "Percent Complete: How much of this project has been finished till now."
+msgstr "Procent färdigt: Hur mycket av detta projekt som är färdigt just nu."
 
-#: gtt/ctree.c:592 mini-utils/idetool/idetool.c:317
+#: gtt/ctree.c:616
+msgid "U"
+msgstr "A"
+
+#: gtt/ctree.c:618
+msgid "Urgency: Does this project need to be done soon, done quickly?"
+msgstr ""
+"Angelägenhet: Måste detta projekt bli färdigt snart, och väldigt snabbt?"
+
+#: gtt/ctree.c:624
+msgid "Imp"
+msgstr "Vikt"
+
+#: gtt/ctree.c:626
+msgid "Importance: How important is this project?"
+msgstr "Viktighet: Hur viktigt är detta projekt?"
+
+#: gtt/ctree.c:632 mini-utils/idetool/idetool.c:317
 #: mini-utils/idetool/idetool.c:319
 msgid "Status"
 msgstr "Status"
 
-#: gtt/ctree.c:820 gtt/glade/project_properties.glade.h:25
+#: gtt/ctree.c:634
+msgid "The current status of this project."
+msgstr "Den aktuella statusen för detta projekt."
+
+#: gtt/ctree.c:969 gtt/glade/project_properties.glade.h:25
 msgid "Low"
 msgstr "Låg"
 
-#: gtt/ctree.c:821
+#: gtt/ctree.c:970
 msgid "Med"
 msgstr "Mellan"
 
-#: gtt/ctree.c:822 gtt/glade/project_properties.glade.h:15
+#: gtt/ctree.c:971 gtt/glade/project_properties.glade.h:15
 msgid "High"
 msgstr "Hög"
 
-#: gtt/ctree.c:831 gtt/glade/project_properties.glade.h:29
+#: gtt/ctree.c:980 gtt/glade/project_properties.glade.h:29
 msgid "Not Started"
 msgstr "Inte påbörjad"
 
-#: gtt/ctree.c:832 gtt/glade/project_properties.glade.h:21
+#: gtt/ctree.c:981 gtt/glade/project_properties.glade.h:21
 msgid "In Progress"
 msgstr "Pågår"
 
-#: gtt/ctree.c:833 gtt/glade/project_properties.glade.h:31
+#: gtt/ctree.c:982 gtt/glade/project_properties.glade.h:31
 msgid "On Hold"
 msgstr "Vilande"
 
-#: gtt/ctree.c:834 gtt/glade/project_properties.glade.h:9
+#: gtt/ctree.c:983 gtt/glade/project_properties.glade.h:9
 msgid "Cancelled"
 msgstr "Avbrutet"
 
-#: gtt/ctree.c:835 gtt/glade/project_properties.glade.h:10
+#: gtt/ctree.c:984 gtt/glade/project_properties.glade.h:10
 msgid "Completed"
 msgstr "Färdigställd"
 
-#: gtt/file-io.c:373
+#: gtt/file-io.c:376
 msgid "project %t started"
 msgstr "projektet %t startade"
 
-#: gtt/file-io.c:376
+#: gtt/file-io.c:379
 msgid "stopped project %t"
 msgstr "stoppade projektet %t"
 
 #. Translators: This is a "time format", that is
 #. * format on how to print the elapsed time with
 #. * hours:minutes:seconds.
-#: gtt/file-io.c:670
+#: gtt/file-io.c:677
 #, c-format
 msgid "%d:%02d:%02d"
 msgstr "%d.%02d.%02d"
@@ -1125,7 +1189,7 @@ msgstr "(null)"
 msgid "Unkown Error"
 msgstr "Okänt fel"
 
-#: gtt/journal.c:168 gtt/plug-in.c:89
+#: gtt/journal.c:168 gtt/plug-in.c:90
 #, c-format
 msgid ""
 "Unable to open the file %s\n"
@@ -1166,7 +1230,7 @@ msgstr "programmet startades"
 msgid "program exited"
 msgstr "programmet avslutades"
 
-#: gtt/main.c:115
+#: gtt/main.c:114
 msgid ""
 "There seems to be another GTimeTracker running.\n"
 "Press OK to start GTimeTracker anyway, or press Cancel to quit."
@@ -1174,35 +1238,35 @@ msgstr ""
 "Du verkar redan köra en GTimeTracker.\n"
 "Klicka på OK för att starta ändå eller tryck Avbryt för att hoppa ur."
 
-#: gtt/main.c:127
+#: gtt/main.c:126
 msgid "Cannot create pid-file!"
 msgstr "Kan inte skapa pid-fil!"
 
-#: gtt/main.c:220
+#: gtt/main.c:219
 msgid "Do you want to continue?"
 msgstr "Vill du fortsätta?"
 
-#: gtt/main.c:223 gtt/main.c:282
+#: gtt/main.c:222 gtt/main.c:275
 msgid "Error"
 msgstr "Fel"
 
-#: gtt/main.c:279
+#: gtt/main.c:272
 msgid "Shall I setup a new configuration?"
 msgstr "Ska jag ställa in en ny konfiguration?"
 
-#: gtt/main.c:445
+#: gtt/main.c:439
 msgid "Specify geometry"
 msgstr "Ange geometri"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "Select a project on startup"
 msgstr "Välj ett projekt vid uppstart"
 
-#: gtt/main.c:447
+#: gtt/main.c:441
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: gtt/main.c:486 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
+#: gtt/main.c:481 gtt/menucmd.c:48 gtt/menucmd.c:200 gtt/menucmd.c:236
 msgid "Warning"
 msgstr "Varning"
 
@@ -1341,7 +1405,7 @@ msgstr "_Klocka"
 msgid "Reports"
 msgstr "Rapporter"
 
-#: gtt/plug-in.c:120
+#: gtt/plug-in.c:121
 msgid "Reports/<Separator>"
 msgstr "Rapporter/<Avskiljare>"
 
@@ -1852,6 +1916,11 @@ msgstr "            "
 msgid "                        "
 msgstr "                        "
 
+#: gtt/glade/project_properties.glade.h:5
+#, no-c-format
+msgid "% Complete"
+msgstr "% färdigt"
+
 #: gtt/glade/project_properties.glade.h:6
 msgid "A title to assign to this project"
 msgstr "En titel att tilldela detta projekt"
@@ -2142,12 +2211,12 @@ msgstr "Cesar Miquel (miquel@df.uba.ar)"
 
 #: logview/about.c:42
 msgid ""
-"This  program  is  part of  the  GNOME  project for Linux. Logview comes "
-"with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
+"This  program  is  part of  the  GNOME  project. Logview comes with "
+"ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to "
 "redistribute it under the conditions of the GNU General Public Licence. The "
 "log icon is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
 msgstr ""
-"Detta program är en del av GNOME-projektet för Linux. Logview kommer med "
+"Detta program är en del av GNOME-projektet. Logview kommer med "
 "INGEN SOM HELST GARANTI. Detta är fri programvara, och du får gärna "
 "distribuera det under villkoren i GNU General Public Licence. Loggikonen är "
 "gjord av Tuomas Kuosmanen (också känd som tigert)."
@@ -2456,32 +2525,32 @@ msgstr "Filtrera...             "
 msgid "Filter log events"
 msgstr "Filtrera logghändelser"
 
-#: logview/logview.c:136
+#: logview/logview.c:137
 msgid "Info about logview"
 msgstr "Information om logview"
 
-#: logview/logview.c:240
+#: logview/logview.c:241
 msgid "No log files to open"
 msgstr "Inga loggfiler att öppna"
 
 #. Create App
-#: logview/logview.c:263
+#: logview/logview.c:264
 msgid "System Log Viewer"
 msgstr "Systemloggvisare"
 
-#: logview/logview.c:367
+#: logview/logview.c:368
 msgid "Filename: "
 msgstr "Filnamn: "
 
-#: logview/logview.c:383
+#: logview/logview.c:384
 msgid "Date: "
 msgstr "Datum: "
 
-#: logview/logview.c:618
+#: logview/logview.c:619
 msgid "Too many open logs. Close one and try again"
 msgstr "För många loggar öppnade. Stäng en och försök igen"
 
-#: logview/logview.c:675
+#: logview/logview.c:676
 msgid "Open new logfile"
 msgstr "Öppna ny loggfil"
 
@@ -3105,7 +3174,7 @@ msgid ""
 msgstr ""
 "Jag kommer att stänga den sista vyn av \"%s\".\n"
 "\n"
-"Detta dokument kommer också att stängas, fortsätt?\n"
+"Detta dokument kommer också att stängas, fortsätta?\n"
 "\n"
 "Observera att %d virtuella dokument använder data från detta dokument."
 
@@ -3118,7 +3187,7 @@ msgid ""
 msgstr ""
 "Jag kommer att stänga den sista vyn av \"%s\".\n"
 "\n"
-"Detta dokument kommer också att stängas, fortsätt?"
+"Detta dokument kommer också att stängas, fortsätta?"
 
 #: mini-utils/gcolorsel/menus.c:444
 #, c-format
@@ -3698,10 +3767,6 @@ msgstr "Ledigt minne:"
 #: mini-utils/guname/info.c:60
 msgid "Device"
 msgstr "Enhet"
-
-#: mini-utils/guname/info.c:61
-msgid "Size"
-msgstr "Storlek"
 
 #: mini-utils/guname/info.c:62
 msgid "Used space"
@@ -4844,6 +4909,21 @@ msgstr "Personlig cron-hanterare"
 #: cromagnon/Cromagnon.desktop.in.h:2
 msgid "Personal crontab manager"
 msgstr "Personlig crontab-hanterare"
+
+#~ msgid "Estimated End Date"
+#~ msgstr "Uppskattat slutdatum"
+
+#~ msgid "Date Due"
+#~ msgstr "Färdigdatum"
+
+#~ msgid "Sizing"
+#~ msgstr "Storlek"
+
+#~ msgid "Urgency"
+#~ msgstr "Angelägenhet"
+
+#~ msgid "Importance"
+#~ msgstr "Viktighet"
 
 #~ msgid ""
 #~ "Entry that will be logged when the project stops.  Use %t for the project "
