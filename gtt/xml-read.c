@@ -170,12 +170,12 @@ parse_project (xmlNodePtr project)
 			gtt_project_set_desc (prj, str);
 		} 
 		else
-		if (0 == strcmp ("rate", node->name))
+		if (0 == strcmp ("billrate", node->name))
 		{
 			double rate;
 			str = GET_TEXT (node);
 			rate = atof (str);
-			gtt_project_set_rate (prj, rate);
+			gtt_project_set_billrate (prj, rate);
 		} 
 		else
 		if (0 == strcmp ("id", node->name))

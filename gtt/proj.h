@@ -1,5 +1,6 @@
-/*   GTimeTracker - a time tracker
+/*   Project data manipulation for GTimeTracker - a time tracker
  *   Copyright (C) 1997,98 Eckehard Berns
+ *   Copyright (C) 2001 Linas Vepstas <linas@linas.org>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,6 +21,23 @@
 #define __GTT_PROJ_H__
 
 #include <glib.h>
+
+typedef enum 
+{
+	GTT_HOLD = 0,	    /* will not appear on invoice */
+	GTT_BILLABLE = 1,   /* billable time */
+	GTT_NOT_BILLABLE,   /* not billable to customer, internal only */
+	GTT_NO_CHARGE       /* no charge */
+} GttBillable;
+
+typedef enum 
+{
+	GTT_REGULAR = 0,
+	GTT_OVERTIME,
+	GTT_OVEROVER,
+	GTT_FLAT_FEE
+} GttBillRate;
+		
 
 /* The three basic structures */
 typedef struct gtt_project_s GttProject;
@@ -64,9 +82,9 @@ void		gtt_project_compat_set_secs (GttProject *proj,
 			int secs_ever, int secs_day, time_t last_update);
 
 
-/* rate is currency amount to charge for work */
-void 		gtt_project_set_rate (GttProject *, double);
-double 		gtt_project_get_rate (GttProject *);
+/* Billrate is currency amount to charge for work */
+void 		gtt_project_set_billrate (GttProject *, double);
+double 		gtt_project_get_billrate (GttProject *);
 
 /* The id is a simple id, handy for .. stuff */
 void 		gtt_project_set_id (GttProject *, int id);

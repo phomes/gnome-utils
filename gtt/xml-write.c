@@ -183,8 +183,8 @@ gtt_xml_project_to_dom_tree (GttProject *prj)
 
 	/* store price */
 	g_snprintf (buff, sizeof(buff), "%.18g",
-                    gtt_project_get_rate(prj));
-	node = xmlNewNode (NULL, "rate");
+                    gtt_project_get_billrate(prj));
+	node = xmlNewNode (NULL, "billrate");
 	xmlNodeAddContent(node, buff);
 	xmlAddChild (topnode, node);
 

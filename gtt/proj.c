@@ -47,11 +47,16 @@ gtt_project_new(void)
 	proj = g_new0(GttProject, 1);
 	proj->title = NULL;
 	proj->desc = NULL;
+	proj->notes = NULL;
+	proj->custid = NULL;
 	proj->min_interval = 3;
 	proj->auto_merge_interval = 60;
 	proj->secs_ever = 0;
 	proj->secs_day = 0;
-	proj->rate = 1.0;
+	proj->billrate = 1.0;
+	proj->overtime_rate = 1.5;
+	proj->overover_rate = 2.0;
+	proj->flat_fee = 1.0;
 	proj->task_list = NULL;
 	proj->sub_projects = NULL;
 	proj->parent = NULL;
@@ -90,16 +95,15 @@ gtt_project_dup(GttProject *proj)
 	p->auto_merge_interval = proj->auto_merge_interval;
 	p->secs_ever = proj->secs_ever;
 	p->secs_day = proj->secs_day;
-	if (proj->title)
-		p->title = g_strdup(proj->title);
-	else
-		p->title = NULL;
-	if (proj->desc)
-		p->desc = g_strdup(proj->desc);
-	else
-		p->desc = NULL;
+	if (proj->title) p->title = g_strdup(proj->title);
+	if (proj->desc) p->desc = g_strdup(proj->desc);
+	if (proj->notes) p->notes = g_strdup(proj->notes);
+	if (proj->custid) p->custid = g_strdup(proj->custid);
 
-	p->rate = proj->rate;
+	p->billrate = proj->billrate;
+	p->overtime_rate = proj->overtime_rate;
+	p->overover_rate = proj->overover_rate;
+	p->flat_fee = proj->flat_fee;
 
 	/* Don't copy the tasks.  Do copy the sub-projects */
 	for (node=proj->sub_projects; node; node=node->next)
@@ -144,6 +148,12 @@ gtt_project_destroy(GttProject *proj)
 
 	if (proj->desc) g_free(proj->desc);
 	proj->desc = NULL;
+
+	if (proj->notes) g_free(proj->desc);
+	proj->notes = NULL;
+
+	if (proj->custid) g_free(proj->custid);
+	proj->custid = NULL;
 
         if (proj->task_list)
 	{
@@ -215,17 +225,17 @@ gtt_project_get_desc (GttProject *proj)
 }
 
 void
-gtt_project_set_rate (GttProject *proj, double r)
+gtt_project_set_billrate (GttProject *proj, double r)
 {
 	if (!proj) return;
-	proj->rate = r;
+	proj->billrate = r;
 }
 
 double
-gtt_project_get_rate (GttProject *proj)
+gtt_project_get_billrate (GttProject *proj)
 {
 	if (!proj) return 0.0;
-	return proj->rate;
+	return proj->billrate;
 }
 
 /* =========================================================== */
@@ -798,6 +808,9 @@ gtt_task_new (void)
 
 	task = g_new0(GttTask, 1);
 	task->memo = NULL;
+	task->notes = NULL;
+	task->billable = GTT_BILLABLE;
+	task->rate = GTT_REGULAR;
 	task->interval_list = NULL;
 	return task;
 }
@@ -808,6 +821,8 @@ gtt_task_destroy (GttTask *task)
 	if (!task) return;
 	if (task->memo) g_free(task->memo);
 	task->memo = NULL;
+	if (task->notes) g_free(task->notes);
+	task->notes = NULL;
 	if (task->interval_list)
 	{
 		GList *node;
