@@ -286,8 +286,8 @@ read_config(void)
 	}
 }
 
-
-
+#if 0
+/* used only to display development version warning messsage */
 static void 
 beta_run_or_abort(GtkWidget *w, gint butnum)
 {
@@ -300,6 +300,7 @@ beta_run_or_abort(GtkWidget *w, gint butnum)
 		read_config();
 	}
 }
+#endif
 
 /* save_all() is a bit sloppy, in that if we get two errors in a row,
  * we'll miss the second one ... but what the hey, who cares.
