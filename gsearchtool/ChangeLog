@@ -1,3 +1,23 @@
+2005-04-16  Dennis Cranston <dennis_cranston@yahoo.com>
+
+	* gsearchtool-support.c: (is_quick_search_excluded_path),
+	(is_second_scan_excluded_path):  Free the temporary GSList.
+
+2005-04-16  Dennis Cranston <dennis_cranston@yahoo.com>
+
+	* gsearchtool-support.c: (get_file_pixbuf_for_mime_type): Do
+	not free the key values after inserting them into the hash. 
+	* gsearchtool.c: (spawn_search_command):  Free the key values
+	on destroy.
+
+2005-04-14  Dennis Cranston <dennis_cranston@yahoo.com>
+
+	* gsearchtool-support.[ch]: (get_file_type_for_mime_type):
+	Fix memory leaks reported by Kjartan Maraas in bug 300634.
+	* gsearchtool.c:  (add_file_to_search_results), 
+	(handle_search_command_stdout_io), (spawn_search_command):
+	Fix memory leaks reported by Kjartan Maraas in bug 300638.
+	
 2005-04-01  Dennis Cranston <dennis_cranston@yahoo.com>
 
 	* gsearchtool-support.c: (open_file_with_application):

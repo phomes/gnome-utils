@@ -251,6 +251,7 @@ is_quick_search_excluded_path (const gchar * path)
 			if (g_pattern_match_simple (dir, path) == TRUE) {
 
 				g_slist_free (exclude_path_list);
+				g_slist_free (tmp_list);
 				g_free (dir);			
 
 				return TRUE;
@@ -271,6 +272,7 @@ is_quick_search_excluded_path (const gchar * path)
 			if (strcmp (path, dir) == 0) {
 				
 				g_slist_free (exclude_path_list);
+				g_slist_free (tmp_list);
 				g_free (dir);
 				
 				return TRUE;
@@ -279,6 +281,7 @@ is_quick_search_excluded_path (const gchar * path)
 		g_free (dir);
 	}
 	g_slist_free (exclude_path_list);
+	g_slist_free (tmp_list);
 	
 	return FALSE;
 }
@@ -325,6 +328,7 @@ is_second_scan_excluded_path (const gchar * path)
 			if (g_pattern_match_simple (dir, path) == TRUE) {
 
 				g_slist_free (exclude_path_list);
+				g_slist_free (tmp_list);
 				g_free (dir);			
 
 				return TRUE;
@@ -345,6 +349,7 @@ is_second_scan_excluded_path (const gchar * path)
 			if (strcmp (path, dir) == 0) {
 				
 				g_slist_free (exclude_path_list);
+				g_slist_free (tmp_list);
 				g_free (dir);
 				
 				return TRUE;
@@ -353,6 +358,7 @@ is_second_scan_excluded_path (const gchar * path)
 		g_free (dir);
 	}
 	g_slist_free (exclude_path_list);
+	g_slist_free (tmp_list);
 	
 	return FALSE;
 }
@@ -669,17 +675,17 @@ gsearchtool_strdup_strftime (const gchar * format,
 	return result;
 }
 
-const char *
+gchar *
 get_file_type_for_mime_type (const gchar * file, 
                              const gchar * mime)
 {
-	const char * desc;
+	gchar * desc;
 	
 	if (file == NULL || mime == NULL) {
-		return gnome_vfs_mime_get_description (GNOME_VFS_MIME_TYPE_UNKNOWN);
+		return g_strdup (gnome_vfs_mime_get_description (GNOME_VFS_MIME_TYPE_UNKNOWN));
 	}
 
-	desc = gnome_vfs_mime_get_description (mime);
+	desc = g_strdup (gnome_vfs_mime_get_description (mime));
 
 	if (g_file_test (file, G_FILE_TEST_IS_SYMLINK)) {
 	
@@ -707,7 +713,7 @@ get_file_type_for_mime_type (const gchar * file,
                            (g_ascii_strcasecmp (mime, "x-special/fifo") != 0)) {
 				gnome_vfs_file_info_unref (file_info);
 				g_free (absolute_symlink);
-				return _("link (broken)");
+				return g_strdup (_("link (broken)"));
 			}
 		}
 			
@@ -755,10 +761,17 @@ get_file_pixbuf_for_mime_type (GHashTable * hash,
 	if (pixbuf == NULL) {
 		pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default (), icon_name, 
 		                                   ICON_SIZE, 0, NULL);
-		g_hash_table_insert (hash, &icon_name, pixbuf);
+		if (pixbuf != NULL) {
+			g_hash_table_insert (hash, icon_name, pixbuf);
+		}
+		else {
+			g_free (icon_name);
+		}
 	}
-						  
-	g_free (icon_name);
+	else {
+		g_free (icon_name);
+	}					  
+
 	return pixbuf;
 }
 
