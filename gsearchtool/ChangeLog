@@ -1,3 +1,10 @@
+2005-04-27  Dennis Cranston <dennis_cranston@yahoo.com>
+
+	* gsearchtool.c: (add_file_to_search_results): 
+	Call gnome-vfs_escape_path_string() prior to using 
+	gnome_vfs_get_file_info() to correct possible 
+	GNOME_VFS_ERROR_NOT_FOUND errors.
+
 2005-04-16  Dennis Cranston <dennis_cranston@yahoo.com>
 
 	* gsearchtool-support.c: (is_second_scan_excluded_path),

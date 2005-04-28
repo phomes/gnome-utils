@@ -645,6 +645,7 @@ add_file_to_search_results (const gchar * file,
 	gchar * dir_name;
 	gchar * relative_dir_name;
 	gchar * look_in_folder;
+	gchar * escape_path_string;
 	
 	if (g_hash_table_lookup_extended (gsearch->search_results_filename_hash_table, file, NULL, NULL) == TRUE) {
 		return;
@@ -666,7 +667,8 @@ add_file_to_search_results (const gchar * file,
 	}
 	
 	vfs_file_info = gnome_vfs_file_info_new ();
-	gnome_vfs_get_file_info (file, vfs_file_info, GNOME_VFS_FILE_INFO_DEFAULT);
+	escape_path_string = gnome_vfs_escape_path_string (file);
+	gnome_vfs_get_file_info (escape_path_string, vfs_file_info, GNOME_VFS_FILE_INFO_DEFAULT);
 	readable_size = gnome_vfs_format_file_size_for_display (vfs_file_info->size);
 	readable_date = get_readable_date (gsearch->search_results_date_format_string, vfs_file_info->mtime);
 	
@@ -714,6 +716,7 @@ add_file_to_search_results (const gchar * file,
 	g_free (utf8_dir_name);
 	g_free (utf8_relative_dir_name);
 	g_free (look_in_folder);
+	g_free (escape_path_string);
 	g_free (description);
 	g_free (readable_size);
 	g_free (readable_date);
