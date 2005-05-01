@@ -651,7 +651,8 @@ add_file_to_search_results (const gchar * file,
 		return;
 	}
 	
-	if (g_file_test (file, G_FILE_TEST_EXISTS) != TRUE) {
+	if ((g_file_test (file, G_FILE_TEST_EXISTS) != TRUE) && 
+	    (g_file_test (file, G_FILE_TEST_IS_SYMLINK) != TRUE)) {
 		return;
 	}
 	
