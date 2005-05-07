@@ -68,15 +68,11 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Tõivo Leedjärv <toivo@linux.ee>, 2002.\n"
-"Ivar Smolin <okul@linux.ee>, 2005.\n"
-"\n"
-"GNOME Translation Project Eesti meeskond.\n"
-"http://et-gnome.sourceforge.net\n"
-"Veateated, parandused: <gnome-et@linux.ee>"
+"Ivar Smolin <okul@linux.ee>, 2005."
 
 #: gdictsrc/gdict-about.c:44
 msgid "A client for the MIT dictionary server."
-msgstr "Klient MIT sõnaraamatuserverile"
+msgstr "MIT sõnaraamatuserveri klientprogramm."
 
 #: gdictsrc/gdict-about.c:47 gdictsrc/gdict-defbox.c:82
 #: gdictsrc/gdict-defbox.c:94 gdictsrc/gdict-pref-dialog.c:470
@@ -182,11 +178,11 @@ msgstr "Rakendusest lähemalt"
 
 #: gdictsrc/gdict-app.c:657
 msgid "On a Dictionary Server"
-msgstr "Sõnaraamatuserveris"
+msgstr "Sõnaraamatuserverist"
 
 #: gdictsrc/gdict-app.c:659
 msgid "On a Web Site"
-msgstr "Veebisaidis"
+msgstr "Veebisaidist"
 
 #: gdictsrc/gdict-app.c:665
 msgid "Cu_t"
@@ -210,7 +206,7 @@ msgstr "_Aseta"
 
 #: gdictsrc/gdict-app.c:670
 msgid "Paste clipboard"
-msgstr "Kleebib lõikepuhvri"
+msgstr "Asetab lõikepuhvri"
 
 #: gdictsrc/gdict-app.c:671
 msgid "Select _All"
@@ -337,9 +333,8 @@ msgid "Web Site"
 msgstr "Veebisait"
 
 #: gdictsrc/gdict-pref-dialog.c:342
-#, fuzzy
 msgid "Search Address"
-msgstr "Aadressiotsing"
+msgstr "Otsingu aadress"
 
 #: gdictsrc/gdict-pref-dialog.c:462
 msgid "Dictionary Preferences"
@@ -934,7 +929,7 @@ msgstr "Kuvatõmmise võtmine peale määratud viivitust [sekundites]"
 
 #: gnome-screenshot/gnome-panel-screenshot.c:413
 msgid "Effect to add to the window border"
-msgstr "Efekt, mida lisada aknaraamile"
+msgstr "Aknaraamile lisatav efekt"
 
 #: gnome-screenshot/gnome-panel-screenshot.glade.h:2
 msgid "<b>Options</b>"
@@ -947,11 +942,11 @@ msgstr "<b>Eelvaade</b>"
 #: gnome-screenshot/gnome-panel-screenshot.glade.h:4
 #: gnome-screenshot/gnome-screenshot.glade.h:2
 msgid "Save Screenshot"
-msgstr "Salvesta ekraanitõmmis"
+msgstr "Kuvatõmmise salvestamine"
 
 #: gnome-screenshot/gnome-screenshot.glade.h:3
 msgid "Save in _folder:"
-msgstr "Salvesta _kataloogi:"
+msgstr "Salvestada _kataloogi:"
 
 #: gnome-screenshot/gnome-screenshot.glade.h:4
 msgid "_Name:"
@@ -991,7 +986,7 @@ msgstr ""
 
 #: gnome-screenshot/screenshot-dialog.c:213
 msgid "Select a directory"
-msgstr ""
+msgstr "Kataloogi valimine"
 
 #: gnome-screenshot/screenshot-save.c:40
 #, c-format
@@ -1067,21 +1062,19 @@ msgstr ""
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:7
 msgid "Select the search option \"Contains the text\""
-msgstr ""
+msgstr "Otsinguvaliku \"Sisaldab teksti\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:10
-#, fuzzy
 msgid "Select the search option \"Date modified less than\""
-msgstr "_Muutmise kuupäev on vanem kui"
+msgstr "Otsinguvaliku \"Muutmise kuupäev on vanem kui\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:13
-#, fuzzy
 msgid "Select the search option \"Date modified more than\""
-msgstr "Muutmise kuupäev on _uuem kui"
+msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1092,30 +1085,26 @@ msgstr ""
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:19
-#, fuzzy
 msgid "Select the search option \"Follow symbolic links\""
-msgstr "Järgida nimeviiteid (symlinks)"
+msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:22
-#, fuzzy
 msgid "Select the search option \"Include other filesystems\""
-msgstr "Kaasata teised failisüsteemid"
+msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:25
-#, fuzzy
 msgid "Select the search option \"Name does not contain\""
-msgstr "Nimi ei _sisalda"
+msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:28
-#, fuzzy
 msgid "Select the search option \"Name matches regular expression\""
-msgstr "Vastab _regulaaravaldisele"
+msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1132,9 +1121,8 @@ msgstr ""
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:37
-#, fuzzy
 msgid "Select the search option \"Owner is unrecognized\""
-msgstr "Omanik on tundmatu"
+msgstr "Otsinguvaliku \"Omanik on tundmatu\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1155,7 +1143,6 @@ msgid "Select the search option \"Size at most\""
 msgstr ""
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:47
-#, fuzzy
 msgid "Show Additional Options"
 msgstr "Näita rohkem valikuid"
 
@@ -1301,7 +1288,7 @@ msgstr[1] ""
 #: gsearchtool/gsearchtool-callbacks.c:343
 #, c-format
 msgid "Could not open document \"%s\"."
-msgstr ""
+msgstr "Dokumenti \"%s\" pole võimalik avada."
 
 #: gsearchtool/gsearchtool-callbacks.c:418
 #: gsearchtool/gsearchtool-callbacks.c:761
@@ -1322,26 +1309,26 @@ msgstr[1] ""
 #: gsearchtool/gsearchtool-callbacks.c:499
 #, c-format
 msgid "Could not open folder \"%s\"."
-msgstr ""
+msgstr "Kataloogi \"%s\" pole võimalik avada"
 
 #: gsearchtool/gsearchtool-callbacks.c:507
 msgid "The nautilus file manager is not running."
-msgstr ""
+msgstr "Nautilus failihaldurit pole käivitatud."
 
 #: gsearchtool/gsearchtool-callbacks.c:587
 #, c-format
 msgid "Could not move \"%s\" to trash."
-msgstr ""
+msgstr "\"%s\" pole võimalik prügikasti tõsta."
 
 #: gsearchtool/gsearchtool-callbacks.c:618
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
-msgstr ""
+msgstr "Soovid sa tõesti jäädavalt kustutada \"%s\"?"
 
 #: gsearchtool/gsearchtool-callbacks.c:621
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr ""
+msgstr "Prügikasti pole saadaval.  \"%s\" pole võimalik prügikasti tõsta."
 
 #: gsearchtool/gsearchtool-callbacks.c:660
 #, c-format
@@ -1360,7 +1347,7 @@ msgstr "Tõrge \"%s\" kustutamisel: %s."
 
 #: gsearchtool/gsearchtool-callbacks.c:1156
 msgid "Save Search Results As..."
-msgstr "Salvesta tulemused _kui..."
+msgstr "Otsingutulemuste salvestamine..."
 
 #: gsearchtool/gsearchtool-callbacks.c:1184
 msgid "Could not save document."
@@ -1386,7 +1373,7 @@ msgstr ""
 
 #: gsearchtool/gsearchtool-callbacks.c:1316
 msgid "The document name you selected is a folder."
-msgstr ""
+msgstr "Sinu poolt valitud dokumendinimi on kataloog."
 
 #: gsearchtool/gsearchtool-callbacks.c:1367
 msgid "You may not have write permissions to the document."
@@ -1509,12 +1496,12 @@ msgstr "Salvesta tulemused _kui..."
 
 #: gsearchtool/gsearchtool.c:245 gsearchtool/gsearchtool.c:262
 msgid "A locate database has probably not been created."
-msgstr ""
+msgstr "Otsingu andmebaasi pole arvatavasti loodud"
 
 #: gsearchtool/gsearchtool.c:358
 #, c-format
 msgid "Character set conversion failed for \"%s\""
-msgstr ""
+msgstr "Tõrge \"%s\" kooditabeli teisendamisel"
 
 #: gsearchtool/gsearchtool.c:724 gsearchtool/gsearchtool.c:753
 msgid "No files found"
@@ -1557,11 +1544,11 @@ msgstr "Otsimine..."
 
 #: gsearchtool/gsearchtool.c:1146
 msgid "Set the text of \"Name contains\" search option"
-msgstr ""
+msgstr "Otsinguvaliku \"Nimi sisaldab\" valimine"
 
 #: gsearchtool/gsearchtool.c:1147
 msgid "Set the text of \"Look in folder\" search option"
-msgstr ""
+msgstr "Otsinguvaliku \"Alustada kataloogist\" valimine"
 
 #: gsearchtool/gsearchtool.c:1148
 msgid "Sort files by one of the following: name, folder, size, type, or date"
@@ -1569,21 +1556,21 @@ msgstr ""
 
 #: gsearchtool/gsearchtool.c:1149
 msgid "Set sort order to descending, the default is ascending"
-msgstr ""
+msgstr "Sortimisjärjestuse määramine vähenevaks, vaikimisi on see suurenev"
 
 #: gsearchtool/gsearchtool.c:1150
 msgid "Automatically start a search"
 msgstr "Otsingu automaatne alustamine"
 
 #: gsearchtool/gsearchtool.c:1156
-#, fuzzy, c-format
+#, c-format
 msgid "Select the \"%s\" search option"
-msgstr "Vali piirang '%s'"
+msgstr "Otsinguvaliku \"%s\" valimine"
 
 #: gsearchtool/gsearchtool.c:1159
-#, fuzzy, c-format
+#, c-format
 msgid "Select and set the \"%s\" search option"
-msgstr "Vali piirang '%s'"
+msgstr ""
 
 #: gsearchtool/gsearchtool.c:1266
 msgid "Invalid option passed to sortby command line argument."
@@ -1632,9 +1619,9 @@ msgid "Error running the search command."
 msgstr "Viga otsingukäsu täitmisel."
 
 #: gsearchtool/gsearchtool.c:1873
-#, fuzzy, c-format
+#, c-format
 msgid "Enter a text value for the \"%s\" search option."
-msgstr "Sisesta otsingureegli väärtus"
+msgstr ""
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
@@ -1644,9 +1631,9 @@ msgid "\"%s\" in %s"
 msgstr ""
 
 #: gsearchtool/gsearchtool.c:1880
-#, fuzzy, c-format
+#, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Sisesta otsingureegli väärtus"
+msgstr ""
 
 #: gsearchtool/gsearchtool.c:1939
 #, c-format
@@ -1667,9 +1654,8 @@ msgid "Available options"
 msgstr "Võimalikud valikud"
 
 #: gsearchtool/gsearchtool.c:2063
-#, fuzzy
 msgid "Select a search option from the drop-down list."
-msgstr "Vali otsingureegel menüüst"
+msgstr ""
 
 #: gsearchtool/gsearchtool.c:2075
 msgid "Add search option"
@@ -1725,11 +1711,11 @@ msgstr "_Alustada kataloogist:"
 
 #: gsearchtool/gsearchtool.c:2629
 msgid "Browse"
-msgstr "Lehitsemine"
+msgstr "Sirvimine"
 
 #: gsearchtool/gsearchtool.c:2634
 msgid "Look in folder"
-msgstr "Vaata kataloogi"
+msgstr "Alustada kataloogist"
 
 #: gsearchtool/gsearchtool.c:2634
 msgid "Select the folder or device from which you want to begin the search."
