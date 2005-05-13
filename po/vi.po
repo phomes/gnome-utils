@@ -1,456 +1,450 @@
-# Copyright (C) 2002 Free Software Foundation, Inc.
+# Vietnamese Translation for gnome-utils.
+# Copyright © 2005 Gnome i18n Project for Vietnamese.
 # This file is distributed under the same license as the gnome-utils package.
-# pclouds <pclouds@gmx.net>, 2002..
-#
+# pclouds <pclouds@gmx.net>, 2002.
+# Clytie Siddall <clytie@riverland.net.au>, 2005.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils VERSION\n"
+"Project-Id-Version: gnome-utils Gnome 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-04-06 09:36-0400\n"
-"PO-Revision-Date: 2004-12-20 20:59+0700\n"
-"Last-Translator: pclouds <pclouds@gmx.net>\n"
-"Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2005-05-13 04:54+0000\n"
+"PO-Revision-Date: 2005-05-13 19:30+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1 gdictsrc/gdict-applet.c:146
+#:../gdictsrc/GNOME_GDictApplet.server.in.in.h:1
+#:../gdictsrc/gdict-applet.c:146
 msgid "Dictionary Lookup"
-msgstr "Tìm từ điển"
+msgstr "Tìm tra trong từ điển"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:27
-#: gdictsrc/gnome-dictionary.desktop.in.h:2
+#:../gdictsrc/GNOME_GDictApplet.server.in.in.h:2
+#:../gdictsrc/gdict-applet.c:27 ../gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Tìm từ trong từ điển trực tuyến"
 
-#: gdictsrc/GNOME_GDictApplet.xml.h:1 gdictsrc/gdict-app.c:650
-#: logview/logview.c:111
+#:../gdictsrc/GNOME_GDictApplet.xml.h:1 ../gdictsrc/gdict-app.c:650
+#:../logview/logview.c:111
 msgid "_About"
 msgstr "_Giới thiệu"
 
-#: gdictsrc/GNOME_GDictApplet.xml.h:2 logview/logview.c:88
+#:../gdictsrc/GNOME_GDictApplet.xml.h:2 ../logview/logview.c:88
 msgid "_Help"
 msgstr "_Trợ giúp"
 
-#: gdictsrc/GNOME_GDictApplet.xml.h:3
+#:../gdictsrc/GNOME_GDictApplet.xml.h:3
 msgid "_Look Up Selected Text"
-msgstr "_Tìm chữ được chọn..."
+msgstr "_Tìm đoạn được chọn..."
 
-#: gdictsrc/GNOME_GDictApplet.xml.h:4
+#:../gdictsrc/GNOME_GDictApplet.xml.h:4
 msgid "_Preferences"
-msgstr "_Thông số"
+msgstr "_Sở thích"
 
-#. Could not look up search strategies, so just display a
-#. * label; FIXME: Memory leak
+#.Could not look up search strategies, so just display a
+#.* label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:676 gdictsrc/gdict-pref-dialog.c:664
-#: gdictsrc/gdict-pref-dialog.c:713
+#:../gdictsrc/dict.c:676 ../gdictsrc/gdict-pref-dialog.c:664
+#:../gdictsrc/gdict-pref-dialog.c:713
 msgid "Cannot connect to server"
-msgstr "Không thể kết nối đến server"
+msgstr "Không thể kết nối đến máy chủ"
 
-#: gdictsrc/dict.c:689
+#:../gdictsrc/dict.c:689
 msgid "Server Error"
 msgstr "Lỗi máy chủ"
 
-#: gdictsrc/dict.c:690
+#:../gdictsrc/dict.c:690
 msgid ""
 "A serious error occured. Please check that your server and port are correct. "
 "For reference the default server is dict.org and the port 2628"
 msgstr ""
-"Xảy ra lỗi nghiêm trọng. Vui lòng kiểm tra server và số hiệu cổng có đúng "
-"chưa. Server mặc định là dict.org và số hiệu cổng là 2628"
+"Xảy ra lỗi nghiêm trọng. Vui lòng kiểm tra máy chủ và số hiệu cổng có đúng "
+"chưa. Máy chủ mặc định là dict.org và số hiệu cổng là 2628."
 
-#. Translator credits
-#: gdictsrc/gdict-about.c:42 logview/about.c:43
+#.Translator credits
+#:../gdictsrc/gdict-about.c:42 ../logview/about.c:43
 msgid "translator-credits"
-msgstr "Nguyễn Thái Ngọc Duy"
+msgstr "Nhóm Việt hoá GNOME (http://gnomevi.sourceforge.net)"
 
-#: gdictsrc/gdict-about.c:44
+#:../gdictsrc/gdict-about.c:44
 msgid "A client for the MIT dictionary server."
-msgstr "Client cho server từ điển MIT."
+msgstr "Trình khách cho máy chủ từ điển MIT."
 
-#: gdictsrc/gdict-about.c:47 gdictsrc/gdict-defbox.c:82
-#: gdictsrc/gdict-defbox.c:94 gdictsrc/gdict-pref-dialog.c:470
-#: gdictsrc/gnome-dictionary.desktop.in.h:1
+#:../gdictsrc/gdict-about.c:47 ../gdictsrc/gdict-defbox.c:82
+#:../gdictsrc/gdict-defbox.c:94 ../gdictsrc/gdict-pref-dialog.c:470
+#:../gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Từ điển"
 
-#: gdictsrc/gdict-app.c:87
-#, fuzzy
+#:../gdictsrc/gdict-app.c:87
 msgid "Connection error"
 msgstr "Lỗi kết nối"
 
-#: gdictsrc/gdict-app.c:134
+#:../gdictsrc/gdict-app.c:134
 msgid "Unable to perform requested operation."
 msgstr "Không thể thực hiện thao tác yêu cầu."
 
-#: gdictsrc/gdict-app.c:135
+#:../gdictsrc/gdict-app.c:135
 msgid ""
 "Either the server you are using is not available \n"
 "or you are not connected to the Internet."
 msgstr ""
-"Hoặc là server không hoạt động, hoặc\n"
-"là bạn không có kết nối Internet."
+"Hoặc là máy chủ không công bố, hoặc\n"
+"là bạn không có kết nối đến Mạng."
 
-#: gdictsrc/gdict-app.c:301
-#, fuzzy
+#:../gdictsrc/gdict-app.c:301
 msgid "Print Word Definition"
-msgstr "In định nghĩa hiện thời"
+msgstr "In lời định nghĩa từ"
 
-#: gdictsrc/gdict-app.c:416
+#:../gdictsrc/gdict-app.c:416
 msgid "Find"
 msgstr "Tìm"
 
-#: gdictsrc/gdict-app.c:426
+#:../gdictsrc/gdict-app.c:426
 msgid "_Search for:"
-msgstr "_Tìm:"
+msgstr "Tìm _kiếm:"
 
-#: gdictsrc/gdict-app.c:496 gdictsrc/gdict-applet.c:314
-#: gdictsrc/gdict-pref-dialog.c:863
+#:../gdictsrc/gdict-app.c:496 ../gdictsrc/gdict-applet.c:314
+#:../gdictsrc/gdict-pref-dialog.c:863
 msgid "Could not display help"
 msgstr "Không thể hiển thị trợ giúp"
 
-#. Top
-#: gdictsrc/gdict-app.c:626
+#.Top
+#:../gdictsrc/gdict-app.c:626
 msgid "_Dictionary"
 msgstr "_Từ điển"
 
-#. Dictionary menu
-#: gdictsrc/gdict-app.c:632 gdictsrc/gdict-app.c:763
+#.Dictionary menu
+#:../gdictsrc/gdict-app.c:632 ../gdictsrc/gdict-app.c:763
 msgid "_Look Up Word"
 msgstr "_Tìm từ"
 
-#: gdictsrc/gdict-app.c:633
+#:../gdictsrc/gdict-app.c:633
 msgid "Lookup word in dictionary"
-msgstr "Tra từ trong từ điển"
+msgstr "Tìm tra từ trong từ điển"
 
-#: gdictsrc/gdict-app.c:634
+#:../gdictsrc/gdict-app.c:634
 msgid "_Print"
 msgstr "_In"
 
-#: gdictsrc/gdict-app.c:635
+#:../gdictsrc/gdict-app.c:635
 msgid "Print the current definition"
-msgstr "In định nghĩa hiện thời"
+msgstr "In lời định nghĩa hiện thời"
 
-#: gdictsrc/gdict-app.c:636
+#:../gdictsrc/gdict-app.c:636
 msgid "_Close"
-msgstr "Đón_g"
+msgstr "_Đóng"
 
-#: gdictsrc/gdict-app.c:637
+#:../gdictsrc/gdict-app.c:637
 msgid "Close the application"
 msgstr "Đóng ứng dụng"
 
-#. Edit menu, see below for cut, paste etc.
-#: gdictsrc/gdict-app.c:640 logview/logview.c:103
+#.Edit menu, see below for cut, paste etc.
+#:../gdictsrc/gdict-app.c:640 ../logview/logview.c:103
 msgid "_Find..."
 msgstr "_Tìm..."
 
-#: gdictsrc/gdict-app.c:641
+#:../gdictsrc/gdict-app.c:641
 msgid "Find a word in the text"
-msgstr "Tìm chữ trong văn bản"
+msgstr "Tìm từ trong văn bản"
 
-#: gdictsrc/gdict-app.c:642
+#:../gdictsrc/gdict-app.c:642
 msgid "Find Ne_xt"
 msgstr "Tìm tiế_p"
 
-#: gdictsrc/gdict-app.c:643
+#:../gdictsrc/gdict-app.c:643
 msgid "Find next occurrence of the word"
 msgstr "Tìm lần xuất hiện từ kế tiếp"
 
-#: gdictsrc/gdict-app.c:644
+#:../gdictsrc/gdict-app.c:644
 msgid "P_references"
-msgstr "T_hông số"
+msgstr "_Sở thích"
 
-#: gdictsrc/gdict-app.c:645
+#:../gdictsrc/gdict-app.c:645
 msgid "Configure the application"
 msgstr "Cấu hình ứng dụng"
 
-#. Help menu
-#: gdictsrc/gdict-app.c:648 logview/logview.c:109
+#.Help menu
+#:../gdictsrc/gdict-app.c:648 ../logview/logview.c:109
 msgid "_Contents"
 msgstr "_Nội dung"
 
-#: gdictsrc/gdict-app.c:649
+#:../gdictsrc/gdict-app.c:649
 msgid "View help for this application"
-msgstr "Xem trợ giúp cho ứng dụng"
+msgstr "Xem trợ giúp cho ứng dụng này"
 
-#: gdictsrc/gdict-app.c:651
+#:../gdictsrc/gdict-app.c:651
 msgid "About this application"
 msgstr "Giới thiệu ứng dụng này"
 
-#: gdictsrc/gdict-app.c:657
-#, fuzzy
+#:../gdictsrc/gdict-app.c:657
 msgid "On a Dictionary Server"
-msgstr "Server từ điển"
+msgstr "Trong máy chủ từ điển"
 
-#: gdictsrc/gdict-app.c:659
+#:../gdictsrc/gdict-app.c:659
 msgid "On a Web Site"
-msgstr ""
+msgstr "Trong nơi Mạng"
 
-#: gdictsrc/gdict-app.c:665
+#:../gdictsrc/gdict-app.c:665
 msgid "Cu_t"
 msgstr "_Cắt"
 
-#: gdictsrc/gdict-app.c:666
+#:../gdictsrc/gdict-app.c:666
 msgid "Cut the selection"
 msgstr "Cắt vùng chọn"
 
-#: gdictsrc/gdict-app.c:667
+#:../gdictsrc/gdict-app.c:667
 msgid "_Copy"
 msgstr "_Chép"
 
-#: gdictsrc/gdict-app.c:668 logview/logview.c:99
+#:../gdictsrc/gdict-app.c:668 ../logview/logview.c:99
 msgid "Copy the selection"
 msgstr "Chép vùng chọn"
 
-#: gdictsrc/gdict-app.c:669
+#:../gdictsrc/gdict-app.c:669
 msgid "_Paste"
 msgstr "_Dán"
 
-#: gdictsrc/gdict-app.c:670
+#:../gdictsrc/gdict-app.c:670
 msgid "Paste clipboard"
-msgstr "Dán từ clipboard"
+msgstr "Dán từ khay"
 
-#: gdictsrc/gdict-app.c:671
+#:../gdictsrc/gdict-app.c:671
 msgid "Select _All"
 msgstr "Chọn _tất cả"
 
-#: gdictsrc/gdict-app.c:672
+#:../gdictsrc/gdict-app.c:672
 msgid "Select everything"
 msgstr "Chọn mọi thứ"
 
-#: gdictsrc/gdict-app.c:677
-#, fuzzy
+#:../gdictsrc/gdict-app.c:677
 msgid "_Spellings"
-msgstr "_Kiểm tra chính tả"
+msgstr "_Cách chính tả"
 
-#: gdictsrc/gdict-app.c:678
+#:../gdictsrc/gdict-app.c:678
 msgid "View alternate spellings"
-msgstr ""
+msgstr "Xem các cách chính tả thay thế"
 
-#: gdictsrc/gdict-app.c:760
+#:../gdictsrc/gdict-app.c:760
 msgid "_Word:"
 msgstr "_Từ:"
 
-#: gdictsrc/gdict-app.c:788
+#:../gdictsrc/gdict-app.c:788
 msgid "Word"
 msgstr "Từ"
 
-#: gdictsrc/gdict-app.c:789 gdictsrc/gdict-app.c:791
+#:../gdictsrc/gdict-app.c:789 ../gdictsrc/gdict-app.c:791
 msgid "Word Entry"
-msgstr "Mục nhập từ"
+msgstr "Nhập từ"
 
-#: gdictsrc/gdict-app.c:790
+#:../gdictsrc/gdict-app.c:790
 msgid "Enter a Word or select one from the list below"
-msgstr "Nhập từ hoặc chọn một từ từ danh sách bên dưới"
+msgstr "Hãy nhập từ hoặc chọn một từ từ danh sách bên dưới"
 
-#: gdictsrc/gdict-app.c:794
+#:../gdictsrc/gdict-app.c:794
 msgid "Look Up for a Word"
-msgstr "Tìm từ"
+msgstr "Tìm tra từ"
 
-#: gdictsrc/gdict-applet.c:152
+#:../gdictsrc/gdict-applet.c:152
 msgid "Dictionary word entry"
-msgstr "Mục từ từ điển"
+msgstr "Nhập từ vào từ điển"
 
-#: gdictsrc/gdict-defbox.c:83
+#:../gdictsrc/gdict-defbox.c:83
 msgid "Looking up word..."
-msgstr "Đang tra từ..."
+msgstr "Đang tìm tra từ..."
 
-#: gdictsrc/gdict-defbox.c:100
+#:../gdictsrc/gdict-defbox.c:100
 msgid "Lookup done"
 msgstr "Tìm xong"
 
-#: gdictsrc/gdict-defbox.c:112 gdictsrc/gdict-speller.c:253
+#:../gdictsrc/gdict-defbox.c:112 ../gdictsrc/gdict-speller.c:253
 msgid "No matches found"
 msgstr "Không tìm thấy"
 
-#: gdictsrc/gdict-defbox.c:122
+#:../gdictsrc/gdict-defbox.c:122
 msgid "String not found"
 msgstr "Không thấy chuỗi"
 
-#: gdictsrc/gdict-defbox.c:542
+#:../gdictsrc/gdict-defbox.c:542
 msgid "Definition preview"
-msgstr ""
+msgstr "Xem lời định nghĩa trước"
 
-#: gdictsrc/gdict-defbox.c:902 gdictsrc/gdict-speller.c:293
+#:../gdictsrc/gdict-defbox.c:902 ../gdictsrc/gdict-speller.c:293
 msgid "Error invoking query"
-msgstr "Lỗi truy vấn"
+msgstr "Lỗi gọi truy vấn"
 
-#: gdictsrc/gdict-pref-dialog.c:254
+#:../gdictsrc/gdict-pref-dialog.c:254
 msgid "De_fault Server"
-msgstr "_Server mặc định"
+msgstr "Máy chủ _mặc định"
 
-#: gdictsrc/gdict-pref-dialog.c:265
+#:../gdictsrc/gdict-pref-dialog.c:265
 msgid "_Server:"
-msgstr "_Server:"
+msgstr "_Máy chủ:"
 
-#: gdictsrc/gdict-pref-dialog.c:273
+#:../gdictsrc/gdict-pref-dialog.c:273
 msgid "Reset server to default"
-msgstr "Đặt lại server về mặc định"
+msgstr "Đặt lại máy chủ về mặc định"
 
-#: gdictsrc/gdict-pref-dialog.c:275
+#:../gdictsrc/gdict-pref-dialog.c:275
 msgid "_Port:"
 msgstr "_Cổng:"
 
-#: gdictsrc/gdict-pref-dialog.c:285
+#:../gdictsrc/gdict-pref-dialog.c:285
 msgid "Def_ault Port"
 msgstr "_Cổng mặc định"
 
-#: gdictsrc/gdict-pref-dialog.c:300
+#:../gdictsrc/gdict-pref-dialog.c:300
 msgid "Reset port to default"
 msgstr "Đặt lại cổng về mặc định"
 
-#: gdictsrc/gdict-pref-dialog.c:301
+#:../gdictsrc/gdict-pref-dialog.c:301
 msgid "Server"
-msgstr "Server"
+msgstr "Máy chủ"
 
-#: gdictsrc/gdict-pref-dialog.c:303
+#:../gdictsrc/gdict-pref-dialog.c:303
 msgid "Server Entry"
-msgstr "Mục nhập server"
+msgstr "Nhập máy chủ"
 
-#: gdictsrc/gdict-pref-dialog.c:303
+#:../gdictsrc/gdict-pref-dialog.c:303
 msgid "Enter the Server Name"
-msgstr "Tên server"
+msgstr "Hãy nhập tên máy chủ"
 
-#: gdictsrc/gdict-pref-dialog.c:304
+#:../gdictsrc/gdict-pref-dialog.c:304
 msgid "Port"
 msgstr "Cổng"
 
-#: gdictsrc/gdict-pref-dialog.c:306
+#:../gdictsrc/gdict-pref-dialog.c:306
 msgid "Port Entry"
-msgstr "Mục nhập cổng"
+msgstr "Nhập cổng"
 
-#: gdictsrc/gdict-pref-dialog.c:306
+#:../gdictsrc/gdict-pref-dialog.c:306
 msgid "Enter the Port Number"
-msgstr "Nhập vào số hiệu cổng"
+msgstr "Hãy nhập vào số hiệu cổng"
 
-#: gdictsrc/gdict-pref-dialog.c:309
+#:../gdictsrc/gdict-pref-dialog.c:309
 msgid "_Database:"
-msgstr "_Từ điển:"
+msgstr "_Cơ sử dữ liệu"
 
-#: gdictsrc/gdict-pref-dialog.c:316
-#, fuzzy
+#:../gdictsrc/gdict-pref-dialog.c:316
 msgid "Strat_egy:"
-msgstr "Chiến lược _tìm:"
+msgstr "_Chiến lược:"
 
-#: gdictsrc/gdict-pref-dialog.c:342
+#:../gdictsrc/gdict-pref-dialog.c:342
 msgid "Web Site"
-msgstr ""
+msgstr "Nơi Mạng"
 
-#: gdictsrc/gdict-pref-dialog.c:342
-#, fuzzy
+#:../gdictsrc/gdict-pref-dialog.c:342
 msgid "Search Address"
-msgstr "_Kết quả tìm:"
+msgstr "Địa chỉ tìm kiếm"
 
-#: gdictsrc/gdict-pref-dialog.c:462
+#:../gdictsrc/gdict-pref-dialog.c:462
 msgid "Dictionary Preferences"
 msgstr "Thông số từ điển"
 
-#: gdictsrc/gdict-pref-dialog.c:474
+#:../gdictsrc/gdict-pref-dialog.c:474
 msgid "Web Sites"
-msgstr ""
+msgstr "Nơi Mạng"
 
-#: gdictsrc/gdict-pref-dialog.c:656
+#:../gdictsrc/gdict-pref-dialog.c:656
 msgid "Search all databases"
-msgstr "Tìm mọi từ trong từ điển"
+msgstr "Tìm trong mọi cơ sở dữ liệu"
 
-#: gdictsrc/gdict-pref-dialog.c:817
+#:../gdictsrc/gdict-pref-dialog.c:817
 msgid "Database"
-msgstr "Từ điển"
+msgstr "Cơ sở dữ liệu"
 
-#: gdictsrc/gdict-pref-dialog.c:817
+#:../gdictsrc/gdict-pref-dialog.c:817
 msgid "Database Name"
-msgstr "Tên từ điển"
+msgstr "Tên cơ sở dữ liệu"
 
-#: gdictsrc/gdict-pref-dialog.c:834
+#:../gdictsrc/gdict-pref-dialog.c:834
 msgid "Default Strategy"
 msgstr "Chiến lược mặc định"
 
-#: gdictsrc/gdict-speller.c:114
-#, fuzzy
+#:../gdictsrc/gdict-speller.c:114
 msgid "Spellings"
-msgstr "_Kiểm tra chính tả"
+msgstr "Cách chính tả"
 
-#: gdictsrc/gdict-speller.c:234
+#:../gdictsrc/gdict-speller.c:234
 msgid "Spell-checking..."
-msgstr "Đang kiểm tra chính tả..."
+msgstr "Kiểm tra chính tả..."
 
-#: gdictsrc/gdict-speller.c:243
+#:../gdictsrc/gdict-speller.c:243
 msgid "Spell check done"
 msgstr "Kiểm tra chính tả xong"
 
-#: gdictsrc/gdict.schemas.in.h:1
+#:../gdictsrc/gdict.schemas.in.h:1
 msgid "Dictionary server"
-msgstr "Server từ điển"
+msgstr "Máy chủ từ điển"
 
-#: gdictsrc/gdict.schemas.in.h:2
+#:../gdictsrc/gdict.schemas.in.h:2
 msgid "Port used to connect to server"
-msgstr "Cổng được dùng để kết nối tới server"
+msgstr "Cổng được dùng để kết nối tới máy chủ"
 
-#: gdictsrc/gdict.schemas.in.h:3
+#:../gdictsrc/gdict.schemas.in.h:3
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE"
 msgstr ""
 "Xác định có dùng tìm kiếm thông minh hay không. Khóa này phụ thuộc vào việc "
-"server từ điển có hỗ trợ hay không. Mặc định là TRUE"
+"máy chủ từ điển có hỗ trợ hay không. Mặc định là TRUE (đúng)."
 
-#: gdictsrc/gdict.schemas.in.h:4
+#:../gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
-msgstr "Cơ sở dữ liệu dùng trong Server từ điển."
+msgstr "Cơ sở dữ liệu dùng trong máy chủ từ điển."
 
-#: gdictsrc/gdict.schemas.in.h:5
+#:../gdictsrc/gdict.schemas.in.h:5
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers"
 msgstr ""
-"Server từ điển cần kết nối. Server mặc định là dict.org. Xem http://www.dict."
-"org để biết chi tiết các từ điển khác"
+"Máy chủ từ điển cần kết nối. Máy chủ mặc định là dict.org. Xem http://www.dict.org để biết chi tiết các máy chủ từ điển khác."
 
-#: gdictsrc/gdict.schemas.in.h:6
+#:../gdictsrc/gdict.schemas.in.h:6
 msgid ""
 "The name of the individual database to use in the dictionary server. ! "
 "specifies that gnome-dictionary should search all databases in a given server"
 msgstr ""
-"Tên cơ sở dữ liệu cá nhân được dùng trong server từ điển. ! là tìm mọi từ "
-"điển trong server."
+"Tên cơ sở dữ liệu riêng được dùng trong máy chủ từ điển. ! báo trình Từ điển Gnome tìm trong mọi cơ sở dữ liệu trong máy chủ đựa ra."
 
-#: gdictsrc/gdict.schemas.in.h:7
+#:../gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
 msgstr "Cổng cần kết nối. Mặc định là 2628."
 
-#: gdictsrc/gdict.schemas.in.h:8
+#:../gdictsrc/gdict.schemas.in.h:8
 msgid "The search strategy to use"
 msgstr "Chiến lược tìm kiếm cần dùng"
 
-#: gdictsrc/gdict.schemas.in.h:9
+#:../gdictsrc/gdict.schemas.in.h:9
 msgid ""
 "The search strategy to use. This is dependant on the search strategy that "
 "the dictionary server supports. The default strategy is 'lev' - Match words "
 "within Levenshtein distance one"
 msgstr ""
-"Chiến lược tìm kiếm cần dùng. Tùy thuộc vào chiến lược tìm kiếm được server "
+"Chiến lược tìm kiếm cần dùng. Tùy thuộc vào chiến lược tìm kiếm được máy chủ "
 "từ điển hỗ trợ. Chiến lược mặc định là 'lev' - So khớp từ theo khoản cách "
-"Levenshtein"
+"Levenshtein 1."
 
-#: gdictsrc/gdict.schemas.in.h:10
+#:../gdictsrc/gdict.schemas.in.h:10
 msgid "Use smart lookup"
 msgstr "Tìm thông minh"
 
-#: gdictsrc/main.c:90
+#:../gdictsrc/main.c:90
 msgid "Gnome Dictionary"
 msgstr "Từ điển Gnome"
 
-#: gfloppy/gfloppy.desktop.in.h:1 gfloppy/src/gfloppy2.glade.h:9
+#:../gfloppy/gfloppy.desktop.in.h:1 ../gfloppy/src/gfloppy2.glade.h:9
 msgid "Floppy Formatter"
 msgstr "Trình định dạng đĩa mềm"
 
-#: gfloppy/gfloppy.desktop.in.h:2
+#:../gfloppy/gfloppy.desktop.in.h:2
 msgid "Format Floppy Disks"
 msgstr "Định dạng đĩa mềm"
 
-#: gfloppy/gfloppy.schemas.in.h:1
+#:../gfloppy/gfloppy.schemas.in.h:1
 msgid ""
 "0 for the quick format, 1 for a standard one (adds a low-level format) and "
 "finally 2 for a thorough format (adds a bad blocks scan)."
@@ -458,84 +452,83 @@ msgstr ""
 "0 là định dạng nhanh. 1 là định dạng chuẩn (thêm phần định dạng cấp thấp) và "
 "cuối cùng là 2 cho định dạng đầy đủ (thêm phần kiểm tra khối hư)."
 
-#: gfloppy/gfloppy.schemas.in.h:2
+#:../gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr "CHỈ VỚI NGƯỜI DÙNG NÂNG CAO - Backend mặc định cho định dạng FAT"
+msgstr "CHỈ VỚI NGƯỜI DÙNG NÂNG CAO - hậu phương mặc định cho định dạng FAT"
 
-#: gfloppy/gfloppy.schemas.in.h:3
+#:../gfloppy/gfloppy.schemas.in.h:3
 msgid "Default filesystem type"
 msgstr "Loại hệ thống tập tin mặc định"
 
-#: gfloppy/gfloppy.schemas.in.h:4
+#:../gfloppy/gfloppy.schemas.in.h:4
 msgid "Default formatting mode"
 msgstr "Chế độ định dạng mặc định"
 
-#: gfloppy/gfloppy.schemas.in.h:5
+#:../gfloppy/gfloppy.schemas.in.h:5
 msgid ""
 "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
 "mtools as the preferred FAT formatting backend."
 msgstr ""
-"TRUE là dùng mkdosfs để định dạng FAT hoặc FALSE là dùng mtools để định dạng "
-"FAT."
+"TRUE (đúng) là dùng mkdosfs để định dạng FAT hoặc FALSE (không đúng) là dùng mtools để định dạng FAT."
 
-#: gfloppy/gfloppy.schemas.in.h:6
+#:../gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr ""
-"Ext2 cho hệ thống tập tin chuẩn của Linux hoặc FAt cho hệ thống tập tin của "
+"ext2 cho hệ thống tập tin chuẩn của Linux hoặc FAt cho hệ thống tập tin của "
 "DOS"
 
-#: gfloppy/src/badblocks.c:84
+#:../gfloppy/src/badblocks.c:84
 msgid "Internal Error: Unable to seek to the correct location."
-msgstr "Lỗi nội tại: Không thể tìm vị trí đúng."
+msgstr "Lỗi nội tại: không thể tìm với vị trí đúng."
 
-#: gfloppy/src/badblocks.c:93
-#, c-format
+#:../gfloppy/src/badblocks.c:93
+#,c-format
 msgid "Internal Error: Weird value (%ld) in do_test\n"
-msgstr "Lỗi nội tại: Giá trị lạ (%ld) trong do_test\n"
+msgstr "Lỗi nội tại: giá trị lạ (%ld) trong do_test\n"
 
-#. while (!i)
-#. ;
-#: gfloppy/src/badblocks.c:251
+#.while (!i)
+#.;
+#:../gfloppy/src/badblocks.c:251
 msgid "Checking for bad blocks..."
 msgstr "Đang kiểm tra tìm khối hỏng..."
 
-#: gfloppy/src/badblocks.c:263
-#, c-format
+#:../gfloppy/src/badblocks.c:263
+#,c-format
 msgid "Failed to open device %s for badblock checking\n"
 msgstr "Lỗi khi mở thiết bị %s để tìm khối hỏng\n"
 
-#: gfloppy/src/badblocks.c:283 gfloppy/src/gfloppy.c:527
+#:../gfloppy/src/badblocks.c:283 ../gfloppy/src/gfloppy.c:527
 msgid "Checking for bad blocks... Done"
-msgstr "Đang kiểm tra tìm khối hỏng... Xong"
+msgstr "Đang kiểm tra tìm khối hỏng... Xong rồi."
 
-#: gfloppy/src/fdformat.c:42
+#:../gfloppy/src/fdformat.c:42
 msgid "Formatting the disk..."
 msgstr "Đang định dạng đĩa..."
 
-#: gfloppy/src/fdformat.c:45
+#:../gfloppy/src/fdformat.c:45
 msgid "I don't know what this is, but it's very wrong."
 msgstr "Không biết đây là cái gì, nhưng chắc chắn là sai."
 
-#: gfloppy/src/fdformat.c:53 gfloppy/src/fdformat.c:66
-#, c-format
+#:../gfloppy/src/fdformat.c:53 ../gfloppy/src/fdformat.c:66
+#,c-format
 msgid "Error formatting track #%d"
-msgstr "Lỗi khi định dạng track #%d"
+msgstr "Lỗi khi định dạng rãnh #%d"
 
-#: gfloppy/src/fdformat.c:75
+#:../gfloppy/src/fdformat.c:75
 msgid "Error during completion of formatting"
 msgstr "Lỗi khi đang hoàn tất việc định dạng"
 
-#. XXXX - need to tell parent we're finished
-#: gfloppy/src/fdformat.c:79
+#.XXXX - need to tell parent we're finished
+#:../gfloppy/src/fdformat.c:79
 msgid "Formatting the disk... Done"
-msgstr "Đang định dạng đĩa... Xong"
+msgstr "Đang định dạng đĩa... Xong rồi."
 
-#. XXXX - tell parent we're starting verify stage
-#: gfloppy/src/fdformat.c:95
+#.XXXX - tell parent we're starting verify stage
+#:../gfloppy/src/fdformat.c:95
 msgid "Verifying the format..."
 msgstr "Đang kiểm tra định dạng..."
 
-#: gfloppy/src/fdformat.c:100 gfloppy/src/fdformat.c:185
+#:../gfloppy/src/fdformat.c:100 ../gfloppy/src/fdformat.c:185
 msgid ""
 "Unable to write to the floppy.\n"
 "\n"
@@ -545,12 +538,12 @@ msgstr ""
 "\n"
 "Vui lòng kiểm tra xem đĩa có chống ghi hay không."
 
-#: gfloppy/src/fdformat.c:103 gfloppy/src/fdformat.c:188
-#, c-format
+#:../gfloppy/src/fdformat.c:103 ../gfloppy/src/fdformat.c:188
+#,c-format
 msgid "Insufficient permissions to open floppy device %s."
-msgstr "Không đủ quyền truy cập để mở thiết bị điều khiển đĩa mềm %s."
+msgstr "Không đủ quyền truy cập để mở thiết bị đĩa mềm %s."
 
-#: gfloppy/src/fdformat.c:107 gfloppy/src/fdformat.c:192
+#:../gfloppy/src/fdformat.c:107 ../gfloppy/src/fdformat.c:192
 msgid ""
 "Unable to access the floppy disk.\n"
 "\n"
@@ -559,85 +552,87 @@ msgid ""
 msgstr ""
 "Không thể truy cập đĩa mềm.\n"
 "\n"
-"Vui lòng kiểm tra xem có đĩa trong ổ đĩa hay chưa."
+"Vui lòng kiểm tra xem có đĩa trong\n"
+" ổ đĩa với cửa ổ đóng hay chưa."
 
-#: gfloppy/src/fdformat.c:110
-#, c-format
+#:../gfloppy/src/fdformat.c:110
+#,c-format
 msgid ""
 "Generic error accessing floppy device %s.\n"
 "\n"
 "Error code %s:%d"
 msgstr ""
-"Lỗi truy cập chung của đĩa mềm %s.\n"
+"Lỗi chung khi truy cập của đĩa mềm %s.\n"
 "\n"
 "Mã lỗi %s:%d"
 
-#: gfloppy/src/fdformat.c:133
-#, c-format
+#:../gfloppy/src/fdformat.c:133
+#,c-format
 msgid ""
 "Read Error:\n"
 "Problem reading cylinder %d, expected %d, read %d"
 msgstr ""
 "Lỗi đọc:\n"
-"Gặp vấn đề ở cylinder %d, yêu cầu %d, đọc được %d"
+"Gặp lỗi khi đọc trụ %d, yêu cầu %d, đọc được %d"
 
-#: gfloppy/src/fdformat.c:136
-#, c-format
+#:../gfloppy/src/fdformat.c:136
+#,c-format
 msgid "Problem reading cylinder %d, expected %d, read %d"
-msgstr "Lỗi đọc ở cylinder %d, yêu cầu %d, đọc được %d"
+msgstr "Gặp lỗi khi đọc trụ %d, yêu cầu %d, đọc được %d"
 
-#: gfloppy/src/fdformat.c:147
-#, c-format
+#:../gfloppy/src/fdformat.c:147
+#,c-format
 msgid "Bad data in cyl %d.  Continuing... "
-msgstr "Dữ liệu hỏng ở cylinder %d. Tiếp tục..."
+msgstr "Dữ liệu hỏng ở trụ %d. Tiếp tục..."
 
-#: gfloppy/src/fdformat.c:156
-#, c-format
+#:../gfloppy/src/fdformat.c:156
+#,c-format
 msgid "Error closing device %s"
 msgstr "Lỗi khi đóng thiết bị %s"
 
-#: gfloppy/src/fdformat.c:163
+#:../gfloppy/src/fdformat.c:163
 msgid "Verifying the format... Done"
-msgstr "Đang kiểm tra định dạng... Xong"
+msgstr "Đang kiểm tra định dạng... Xong rồi."
 
-#: gfloppy/src/fdformat.c:175
-#, c-format
+#:../gfloppy/src/fdformat.c:175
+#,c-format
 msgid "Unable to write to device %s"
-msgstr "Không thể ghi vào thiết bị %s"
+msgstr "Không ghi được vào thiết bị %s"
 
-#: gfloppy/src/fdformat.c:195
-#, c-format
+#:../gfloppy/src/fdformat.c:195
+#,c-format
 msgid ""
 "Generic error accessing floppy device %s.\n"
 "\n"
 "Error code %s"
 msgstr ""
-"Lỗi chung khi truy cập thiết bị %s.\n"
+"Lỗi chung khi truy cập thiết bị đĩa mềm %s.\n"
+"\n"
 "Mã lỗi %s"
 
-#: gfloppy/src/fdformat.c:207
+#:../gfloppy/src/fdformat.c:207
 msgid "Could not determine current floppy geometry."
-msgstr "Không thể xác định geometry hiện thời của đĩa mềm."
+msgstr "Không thể xác định vị trí và kích thước hiện thời của đĩa mềm."
 
-#: gfloppy/src/gfloppy.c:215
+#:../gfloppy/src/gfloppy.c:215
 msgid "Error while creating a unique filename for the bad blocks list file."
-msgstr "Lỗi tạo tên tập tin duy nhất cho tập tin danh sách bad block."
+msgstr "Gặp lỗi khi tạo tên tập tin duy nhất cho tập tin danh sách các khối hư."
 
-#: gfloppy/src/gfloppy.c:235
+#:../gfloppy/src/gfloppy.c:235
 msgid "Error while filling the bad blocks list file."
-msgstr "Lỗi khi điền tập tin danh sách bad block."
+msgstr "Gặp lỗi khi điền tập tin danh sách các khối hư."
 
-#: gfloppy/src/gfloppy.c:298
-#, c-format
+#:../gfloppy/src/gfloppy.c:298
+#,c-format
 msgid "Error while spawning the (%s) command: %s."
-msgstr "Lỗi khi thực hiện lệnh (%s): %s."
+msgstr "Gặp lỗi khi tạo và thực hiện lệnh (%s): %s."
 
-#: gfloppy/src/gfloppy.c:324
+#:../gfloppy/src/gfloppy.c:324
 msgid "Unknown mke2fs starting signature, cancelling."
-msgstr "Ký hiệu bắt đầu mke2fs không biết, hủy bỏ."
+msgstr "Ký hiệu bắt đầu mke2fs không biết, nên hủy bỏ."
 
-#: gfloppy/src/gfloppy.c:338
-#, c-format
+#:../gfloppy/src/gfloppy.c:338
+#,c-format
 msgid ""
 "The filesystem creation utility (%s) reported the following errors:\n"
 "\n"
@@ -647,142 +642,141 @@ msgstr ""
 "\n"
 "%s (%d)"
 
-#: gfloppy/src/gfloppy.c:355
+#:../gfloppy/src/gfloppy.c:355
 msgid "Abnormal child process termination."
 msgstr "Kết thúc tiến trình con bất thường."
 
-#: gfloppy/src/gfloppy.c:380
-#, c-format
+#:../gfloppy/src/gfloppy.c:380
+#,c-format
 msgid "Error while spawning the mbadblocks command: %s."
-msgstr "Lỗi thực hiện lệnh mbadblocks: %s."
+msgstr "Gặp lỗi khi thực hiện lệnh mbadblocks: %s."
 
-#: gfloppy/src/gfloppy.c:392
-#, c-format
+#:../gfloppy/src/gfloppy.c:392
+#,c-format
 msgid ""
 "The bad blocks checking utility (mbadblocks) reported the following errors:\n"
 "%s."
 msgstr ""
-"Tiện ích kiểm tra bad block (mbadblocks) gặp những lỗi sau:\n"
+"Tiện ích kiểm tra khối hư (mbadblocks) gặp những lỗi sau:\n"
 "%s."
 
-#: gfloppy/src/gfloppy.c:435
+#:../gfloppy/src/gfloppy.c:435
 msgid "Abnormal mbadblocks child process termination."
 msgstr "Kết thúc tiến trình con mbadblocks bất thường."
 
-#. make the filesystem
-#: gfloppy/src/gfloppy.c:461 gfloppy/src/gfloppy.c:501
+#.make the filesystem
+#:../gfloppy/src/gfloppy.c:461 ../gfloppy/src/gfloppy.c:501
 msgid "Making filesystem on disk..."
 msgstr "Đang tạo hệ thống tập tin trên đĩa..."
 
-#: gfloppy/src/gfloppy.c:469
+#:../gfloppy/src/gfloppy.c:469
 msgid "Unable to create filesystem correctly."
 msgstr "Không thể tạo hệ thống tập tin đúng."
 
-#: gfloppy/src/gfloppy.c:474 gfloppy/src/gfloppy.c:513
+#:../gfloppy/src/gfloppy.c:474 ../gfloppy/src/gfloppy.c:513
 msgid "Making filesystem on disk... Done"
-msgstr "Đang tạo hệ thống tập tin trên đĩa... Xong"
+msgstr "Đang tạo hệ thống tập tin trên đĩa... Xong rồi."
 
-#: gfloppy/src/gfloppy.c:518
+#:../gfloppy/src/gfloppy.c:518
 msgid "Checking for bad blocks... (this might take a while)"
 msgstr "Đang kiểm tra tìm khối hỏng... (có thể hơi lâu)"
 
-#: gfloppy/src/gfloppy.c:523
+#:../gfloppy/src/gfloppy.c:523
 msgid "Error while checking the bad blocks."
-msgstr "Lỗi khi kiểm tra tìm khối hỏng."
+msgstr "Gă p lỗi khi kiểm tra tìm khối hỏng."
 
-#: gfloppy/src/gfloppy2.glade.h:1
-#: gnome-screenshot/gnome-panel-screenshot.glade.h:1
+#:../gfloppy/src/gfloppy2.glade.h:1
+#:../gnome-screenshot/gnome-panel-screenshot.glade.h:1
 msgid "    "
 msgstr "    "
 
-#: gfloppy/src/gfloppy2.glade.h:2 gnome-screenshot/gnome-screenshot.glade.h:1
+#:../gfloppy/src/gfloppy2.glade.h:2
+#:../gnome-screenshot/gnome-screenshot.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: gfloppy/src/gfloppy2.glade.h:3
+#:../gfloppy/src/gfloppy2.glade.h:3
 msgid ""
 "<small><i><b>Note</b>: The mbadblocks utility isn't installed on this "
 "system.  It must be installed in order to perform a thorough DOS (fat) "
 "formatting.</i></small>"
 msgstr ""
-"<small><i><b>Chú ý</b>: Tiện ích mbadblocks chưa được cài đặt. Nó phải được "
-"cài đặt để có thể tiến hành định dạng DOS (FAT) hoàn chỉnh.</i></small>"
+"<small><i><b>Chú ý</b>: Tiện ích mbadblocks chưa được cài đặt vào hệ thống này. Nó phải được cài đặt để có thể tiến hành định dạng DOS (FAT) hoàn chỉnh.</i></small>"
 
-#: gfloppy/src/gfloppy2.glade.h:4
+#:../gfloppy/src/gfloppy2.glade.h:4
+# Name: do not translate/ tên: đừng dịch
 msgid "DOS (FAT)"
 msgstr "DOS (FAT)"
 
-#: gfloppy/src/gfloppy2.glade.h:5
+#:../gfloppy/src/gfloppy2.glade.h:5
 msgid "Double Density 3.5\" (720KB)"
 msgstr "Mật độ đôi (DD) 3.5\" (720KB)"
 
-#: gfloppy/src/gfloppy2.glade.h:6
+#:../gfloppy/src/gfloppy2.glade.h:6
 msgid "Double Density 5.25\" (360KB)"
 msgstr "Mật độ đôi (DD) 5.25\" (360KB)"
 
-#: gfloppy/src/gfloppy2.glade.h:7
+#:../gfloppy/src/gfloppy2.glade.h:7
 msgid "File system _type:"
 msgstr "_Loại hệ thống tập tin:"
 
-#: gfloppy/src/gfloppy2.glade.h:8
-#, fuzzy
+#:../gfloppy/src/gfloppy2.glade.h:8
 msgid "Filesystem Settings"
-msgstr "_Loại hệ thống tập tin:"
+msgstr "Thiết lập hệ thống tập tin"
 
-#: gfloppy/src/gfloppy2.glade.h:10
+#:../gfloppy/src/gfloppy2.glade.h:10
 msgid "Floppy _density:"
 msgstr "_Mật độ đĩa mềm:"
 
-#: gfloppy/src/gfloppy2.glade.h:11
+#:../gfloppy/src/gfloppy2.glade.h:11
 msgid "Floppy de_vice:"
 msgstr "_Thiết bị đĩa mềm:"
 
-#: gfloppy/src/gfloppy2.glade.h:12
-#, fuzzy
+#:../gfloppy/src/gfloppy2.glade.h:12
 msgid "Formatting Mode"
-msgstr "Chế độ định dạng mặc định"
+msgstr "Chế độ định dạng"
 
-#: gfloppy/src/gfloppy2.glade.h:13
+#:../gfloppy/src/gfloppy2.glade.h:13
 msgid "High Density 3.5\" (1.44MB)"
 msgstr "Mật độ cao (HD) 3.5\" (1.44MB)"
 
-#: gfloppy/src/gfloppy2.glade.h:14
+#:../gfloppy/src/gfloppy2.glade.h:14
 msgid "High Density 5.25\" (1.2MB)"
 msgstr "Mật độ cao (HD) 5.25\" (1.2MB)"
 
-#: gfloppy/src/gfloppy2.glade.h:15
+#:../gfloppy/src/gfloppy2.glade.h:15
 msgid "Linux Native (ext2)"
-msgstr "Linux Native (ext2)"
+msgstr "Linux nguyên sản (ext2)"
 
-#: gfloppy/src/gfloppy2.glade.h:16
+#:../gfloppy/src/gfloppy2.glade.h:16
 msgid "Physical Settings"
-msgstr ""
+msgstr "Thiết lập vật lý"
 
-#: gfloppy/src/gfloppy2.glade.h:17
+#:../gfloppy/src/gfloppy2.glade.h:17
 msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
 msgstr "Đầ_y đủ (thêm kiểm tra khối hư vào chế độ chuẩn)"
 
-#: gfloppy/src/gfloppy2.glade.h:18
+#:../gfloppy/src/gfloppy2.glade.h:18
 msgid "Volume _name:"
-msgstr "Tên _volume:"
+msgstr "Tên _bộ đĩa:"
 
-#: gfloppy/src/gfloppy2.glade.h:19
+#:../gfloppy/src/gfloppy2.glade.h:19
 msgid "_Format"
 msgstr "Định _dạng"
 
-#: gfloppy/src/gfloppy2.glade.h:20
+#:../gfloppy/src/gfloppy2.glade.h:20
 msgid "_Quick (only creates the filesystem)"
-msgstr "_Nhanh (chỉ tạp hệ thống tập tin)"
+msgstr "_Nhanh (chỉ tạo hệ thống tập tin)"
 
-#: gfloppy/src/gfloppy2.glade.h:21
+#:../gfloppy/src/gfloppy2.glade.h:21
 msgid "_Standard (adds a low-level format to the quick mode)"
-msgstr "_Chuẩn (thêm định dạng cấp thấp vào Chế độ Nhanh)"
+msgstr "_Chuẩn (thêm định dạng cấp thấp vào chế độ Nhanh)"
 
-#: gfloppy/src/main.c:224
+#:../gfloppy/src/main.c:224
 msgid "Cannot Format"
 msgstr "Không thể định dạng"
 
-#: gfloppy/src/main.c:225
+#:../gfloppy/src/main.c:225
 msgid ""
 "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
 "can't format a floppy without one of them."
@@ -790,63 +784,63 @@ msgstr ""
 "Cả tiện ích mke2fs và mkdosfs/mformat đều chưa được cài đặt. Bạn không thể "
 "định dạng đĩa mềm nếu thiếu một trong số chúng."
 
-#: gfloppy/src/main.c:245
-#, c-format
+#:../gfloppy/src/main.c:245
+#,c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr "Không thể mở thiết bị %s, không thể tiếp tục định dạng."
+msgstr "Không mở được thiết bị %s, nên không thể tiếp tục định dạng."
 
-#: gfloppy/src/main.c:248 gfloppy/src/main.c:311
-#, c-format
+#:../gfloppy/src/main.c:248 ../gfloppy/src/main.c:311
+#,c-format
 msgid ""
 "The device %s is disconnected.\n"
 "Please attach device to continue."
 msgstr ""
 "Thiết bị %s bị ngắt kết nối.\n"
-"Vui lòng gắn thiết bị vào để tiếp tục."
+"Hãy gắn thiết bị vào để tiếp tục."
 
-#: gfloppy/src/main.c:251 gfloppy/src/main.c:314
-#, c-format
+#:../gfloppy/src/main.c:251 ../gfloppy/src/main.c:314
+#,c-format
 msgid ""
 "You do not have the proper permissions to write to %s, formatting will not "
 "be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
 "Bạn không có quyền ghi vào %s, nên không thể định dạng.\n"
-"Liên hệ system administrator để có quyền ghi."
+"Liên hệ quản trị hệ thống về phương pháp được quyền ghi."
 
-#: gfloppy/src/main.c:258 gfloppy/src/main.c:322
+#:../gfloppy/src/main.c:258 ../gfloppy/src/main.c:322
 msgid "Cannot initialize device"
 msgstr "Không thể khởi động thiết bị"
 
-#: gfloppy/src/main.c:308
+#:../gfloppy/src/main.c:308
 msgid "Unable to open any device, formatting cannot continue."
-msgstr "Không thể mở bất kỳ thiết bị nào, không thể tiếp tục định dạng."
+msgstr "Không mở được bất kỳ thiết bị nào, nên không thể tiếp tục định dạng."
 
-#: gfloppy/src/main.c:311 gfloppy/src/main.c:314
+#:../gfloppy/src/main.c:311 ../gfloppy/src/main.c:314
 msgid "/dev/floppy/0 or /dev/fd0"
 msgstr "/dev/floppy/0 hoặc /dev/fd0"
 
-#: gfloppy/src/main.c:475
+#:../gfloppy/src/main.c:475
 msgid "Could not display help for the floppy formatter."
 msgstr "Không thể hiển thị trợ giúp cho bộ định dạng đĩa mềm."
 
-#: gfloppy/src/main.c:494
+#:../gfloppy/src/main.c:494
 msgid "Incorrect volume name"
-msgstr "Tên volume không đúng"
+msgstr "Tên bộ đĩa không đúng"
 
-#: gfloppy/src/main.c:495
+#:../gfloppy/src/main.c:495
 msgid "The volume name can't contain any blank space."
-msgstr "Tên volume không thể chứa khoảng trắng."
+msgstr "Tên bộ đĩa không thể chứa khoảng trắng."
 
-#: gfloppy/src/main.c:544
+#:../gfloppy/src/main.c:544
 msgid "The device to format"
 msgstr "Thiết bị cần định dạng"
 
-#: gfloppy/src/main.c:545
+#:../gfloppy/src/main.c:545
 msgid "DEVICE"
 msgstr "THIẾT BỊ"
 
-#: gfloppy/src/progress.c:122
+#: ../gfloppy/src/progress.c:122
 #, c-format
 msgid ""
 "The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been "
@@ -854,161 +848,159 @@ msgid ""
 msgid_plural ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
-msgstr[0] ""
-"Đĩa mềm đã được định dạng, nhưng đã tìm thấy và đánh dấu <b>%d khối hư</b> "
-"(trên tổng số %d)."
-msgstr[1] ""
-"Đĩa mềm đã được định dạng, nhưng đã tìm thấy và đánh dấu <b>%d khối hư</b> "
-"(trên tổng số %d)."
+msgstr[0] "Đĩa mềm đã được định dạng, nhưng đã tìm thấy và đánh dấu <b>%d khối hư</b> (trên tổng số %d)."
 
-#: gfloppy/src/progress.c:125
+#:../gfloppy/src/progress.c:125
 msgid "Floppy formatted successfully."
 msgstr "Định dạng đĩa mềm thành công."
 
-#: gfloppy/src/progress.c:131
+#:../gfloppy/src/progress.c:131
 msgid "Floppy formatting cancelled."
 msgstr "Định dạng đĩa mềm bị hủy."
 
-#: gfloppy/src/progress.c:174
+#:../gfloppy/src/progress.c:174
 msgid "Format Progress"
 msgstr "Tiến trình định dạng"
 
-#: gnome-screenshot/gnome-egg-xfer-dialog.c:191
+#:../gnome-screenshot/gnome-egg-xfer-dialog.c:191
 msgid " (invalid Unicode)"
 msgstr " (Unicode không hợp lệ)"
 
-#: gnome-screenshot/gnome-egg-xfer-dialog.c:471
-#, c-format
+#:../gnome-screenshot/gnome-egg-xfer-dialog.c:471
+#,c-format
 msgid "(%d:%02d:%d Remaining)"
 msgstr "(Còn lại %d:%02d:%d)"
 
-#: gnome-screenshot/gnome-egg-xfer-dialog.c:476
-#, c-format
+#:../gnome-screenshot/gnome-egg-xfer-dialog.c:476
+#,c-format
 msgid "(%d:%02d Remaining)"
 msgstr "(Còn lại %d:%02d)"
 
-#: gnome-screenshot/gnome-egg-xfer-dialog.c:587
-#, c-format
+#:../gnome-screenshot/gnome-egg-xfer-dialog.c:587
+#,c-format
 msgid "%ld of %ld"
 msgstr "%ld trên %ld"
 
-#: gnome-screenshot/gnome-panel-screenshot.c:86
+#:../gnome-screenshot/gnome-panel-screenshot.c:86
 msgid "Error loading help"
-msgstr "Lỗi nạp trợ giúp"
+msgstr "Lỗi tải trợ giúp"
 
-#: gnome-screenshot/gnome-panel-screenshot.c:87
+#:../gnome-screenshot/gnome-panel-screenshot.c:87
 msgid "There was an error displaying the help pages for this dialog:"
-msgstr ""
+msgstr "Gặp lỗi khi hiển thị những trang trợ giúp cho hộp thoại này:"
 
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if a specific window is taken
-#: gnome-screenshot/gnome-panel-screenshot.c:111
-#, c-format
+#.translators: this is the name of the file that gets made up
+#.* with the screenshot if a specific window is taken
+#:../gnome-screenshot/gnome-panel-screenshot.c:111
+#,c-format
+# Name: do not translate/ tên: đừng dịch
 msgid "Screenshot-%s.png"
 msgstr "Screenshot-%s.png"
 
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: gnome-screenshot/gnome-panel-screenshot.c:117
+#.translators: this is the name of the file that gets made up
+#.* with the screenshot if the entire screen is taken
+#:../gnome-screenshot/gnome-panel-screenshot.c:117
+# Name: do not translate/ tên: đừng dịch
 msgid "Screenshot.png"
 msgstr "Screenshot.png"
 
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: gnome-screenshot/gnome-panel-screenshot.c:155
-#, c-format
+#.translators: this is the name of the file that gets
+#.* made up with the screenshot if a specific window is
+#.* taken
+#:../gnome-screenshot/gnome-panel-screenshot.c:155
+#,c-format
+# Name: do not translate/ tên: đừng dịch
 msgid "Screenshot-%s-%d.png"
 msgstr "Screenshot-%s-%d.png"
 
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: gnome-screenshot/gnome-panel-screenshot.c:163
-#, c-format
+#.translators: this is the name of the file that gets
+#.* made up with the screenshot if the entire screen is
+#.* taken
+#:../gnome-screenshot/gnome-panel-screenshot.c:163
+#,c-format
+# Name: do not translate/ tên: đừng dịch
 msgid "Screenshot-%d.png"
 msgstr "Screenshot-%d.png"
 
-#: gnome-screenshot/gnome-panel-screenshot.c:338
+#:../gnome-screenshot/gnome-panel-screenshot.c:338
 msgid "Unable to take a screenshot of the current desktop."
-msgstr ""
+msgstr "Không thể chụp hình của màn hình nền hiện có."
 
-#: gnome-screenshot/gnome-panel-screenshot.c:410
+#:../gnome-screenshot/gnome-panel-screenshot.c:410
 msgid "Grab a window instead of the entire screen"
-msgstr ""
+msgstr "Lấy một cửa sổ riêng thay thế toàn bộ màn hình"
 
-#: gnome-screenshot/gnome-panel-screenshot.c:411
+#:../gnome-screenshot/gnome-panel-screenshot.c:411
 msgid "Include the window border with the screenshot"
-msgstr ""
+msgstr "Gồm viền cửa sổ khi chụp hình màn hình."
 
-#: gnome-screenshot/gnome-panel-screenshot.c:412
+#:../gnome-screenshot/gnome-panel-screenshot.c:412
 msgid "Take screenshot after specified delay [in seconds]"
-msgstr ""
+msgstr "Chụp hình màn hình sau thời gian đã ghi rõ [theo giây]."
 
-#: gnome-screenshot/gnome-panel-screenshot.c:413
+#:../gnome-screenshot/gnome-panel-screenshot.c:413
 msgid "Effect to add to the window border"
-msgstr ""
+msgstr "Tác dụng cần thêm vào viền cửa sổ"
 
-#: gnome-screenshot/gnome-panel-screenshot.glade.h:2
+#:../gnome-screenshot/gnome-panel-screenshot.glade.h:2
 msgid "<b>Options</b>"
-msgstr ""
+msgstr "<b>Tùy chọn</b>"
 
-#: gnome-screenshot/gnome-panel-screenshot.glade.h:3
+#:../gnome-screenshot/gnome-panel-screenshot.glade.h:3
 msgid "<b>Preview</b>"
-msgstr ""
+msgstr "<b>Xem trước</b>"
 
-#: gnome-screenshot/gnome-panel-screenshot.glade.h:4
-#: gnome-screenshot/gnome-screenshot.glade.h:2
+#:../gnome-screenshot/gnome-panel-screenshot.glade.h:4
+#:../gnome-screenshot/gnome-screenshot.glade.h:2
 msgid "Save Screenshot"
-msgstr "Lưu screenshot"
+msgstr "Lưu chụp hình màn hình"
 
-#: gnome-screenshot/gnome-screenshot.glade.h:3
+#:../gnome-screenshot/gnome-screenshot.glade.h:3
 msgid "Save in _folder:"
 msgstr "Lưu trong _thư mục:"
 
-#: gnome-screenshot/gnome-screenshot.glade.h:4
+#:../gnome-screenshot/gnome-screenshot.glade.h:4
 msgid "_Name:"
 msgstr "_Tên"
 
-#: gnome-screenshot/gnome-screenshot.schemas.in.h:1
+#:../gnome-screenshot/gnome-screenshot.schemas.in.h:1
 msgid "Border Effect"
-msgstr ""
+msgstr "Tác dụng viền"
 
-#: gnome-screenshot/gnome-screenshot.schemas.in.h:2
+#:../gnome-screenshot/gnome-screenshot.schemas.in.h:2
 msgid "Directory that the screenshooter last used to save in"
-msgstr ""
+msgstr "Thư mục nơi trình chụp hình màn hình đã lưu trong nó lần cuối cùng"
 
-#: gnome-screenshot/gnome-screenshot.schemas.in.h:3
+#:../gnome-screenshot/gnome-screenshot.schemas.in.h:3
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"black-line\"."
-msgstr ""
+msgstr "Tác dụng cần thêm vào cạnh ở ngoại viền. Giá trị có thể là «bóng» «không có» và «dòng màu đen»."
 
-#: gnome-screenshot/gnome-screenshot.schemas.in.h:4
+#:../gnome-screenshot/gnome-screenshot.schemas.in.h:4
 msgid "Include Border"
-msgstr ""
+msgstr "Gồm viền"
 
-#: gnome-screenshot/gnome-screenshot.schemas.in.h:5
+#:../gnome-screenshot/gnome-screenshot.schemas.in.h:5
 msgid "Include the window manager border along with the screenshot"
-msgstr ""
+msgstr "Bao gồm viền của trình quản lý cửa sổ, trong chụp hình màn hình."
 
-#: gnome-screenshot/gnome-screenshot.schemas.in.h:6
+#:../gnome-screenshot/gnome-screenshot.schemas.in.h:6
 msgid "Web directory"
-msgstr ""
+msgstr "Thư mục Mạng"
 
-#: gnome-screenshot/screenshot-dialog.c:194
+#:../gnome-screenshot/screenshot-dialog.c:194
 msgid ""
 "Glade file for the screenshot program is missing.\n"
 "Please check your installation of gnome-panel"
-msgstr ""
+msgstr "Thiếu tập tin Glade cho chương trình chụp hình màn hình. Hãy kiểm tra đã cài đặt trình gnome-panel cho đúng."
 
-#: gnome-screenshot/screenshot-dialog.c:213
-#, fuzzy
+#:../gnome-screenshot/screenshot-dialog.c:213
 msgid "Select a directory"
-msgstr "Chọn ký tự"
+msgstr "Chọn thư mục"
 
-#: gnome-screenshot/screenshot-save.c:40
-#, c-format
+#:../gnome-screenshot/screenshot-save.c:40
+#,c-format
 msgid ""
 "Unable to clear the temporary directory:\n"
 "%s"
@@ -1016,404 +1008,387 @@ msgstr ""
 "Không thể xóa thư mục tạm:\n"
 "%s"
 
-#: gnome-screenshot/screenshot-save.c:78
+#:../gnome-screenshot/screenshot-save.c:78
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr ""
+msgstr "Tiến trình con lưu đã thoát bất ngờ. Như thế thì không ghi được chụp hình màn hình vào đĩa."
 
-#: gnome-screenshot/screenshot-save.c:188
+#:../gnome-screenshot/screenshot-save.c:188
 msgid "Unknown error saving screenshot to disk"
-msgstr ""
+msgstr "Gặp lỗi lạ khi lưu chụp hình màn hình vào đĩa."
 
-#: gnome-screenshot/screenshot-utils.c:611
+#:../gnome-screenshot/screenshot-utils.c:611
 msgid "Untitled Window"
-msgstr "Cửa sổ vô danh"
+msgstr "Cửa sổ không tên"
 
-#: gnome-screenshot/screenshot-xfer.c:103
+#:../gnome-screenshot/screenshot-xfer.c:103
 msgid "Preparing to copy"
 msgstr "Đang chuẩn bị sao chép"
 
-#: gnome-screenshot/screenshot-xfer.c:181
+#:../gnome-screenshot/screenshot-xfer.c:181
 msgid "File already exists"
 msgstr "Tập tin đã có rồi"
 
-#: gnome-screenshot/screenshot-xfer.c:184
-#, c-format
+#:../gnome-screenshot/screenshot-xfer.c:184
+#,c-format
 msgid "The file \"%s\" already exists.  Would you like to replace it?"
 msgstr "Tập tin \"%s\" đã có rồi. Bạn có muốn thay thế nó không?"
 
-#: gnome-screenshot/screenshot-xfer.c:190
-#: gsearchtool/gsearchtool-callbacks.c:1271
+#:../gnome-screenshot/screenshot-xfer.c:190
+#:../gsearchtool/gsearchtool-callbacks.c:1271
 msgid "_Replace"
 msgstr "_Thay thế"
 
-#: gnome-screenshot/screenshot-xfer.c:230
-#, c-format
+#:../gnome-screenshot/screenshot-xfer.c:230
+#,c-format
 msgid "Unknown GnomeVFSXferProgressStatus %d"
-msgstr ""
+msgstr "Không biết GnomeVFSXferProgressStatus %d"
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:1
+#:../gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Find files, folders, and documents on your computer"
 msgstr "Tìm tập tin, thư mục và tài liệu trên máy tính."
 
-#: gsearchtool/gnome-search-tool.desktop.in.h:2
-#, fuzzy
+#:../gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search for Files..."
-msgstr "Tìm tập tin"
+msgstr "Tìm kiếm tập tin..."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:1
+#:../gsearchtool/gnome-search-tool.schemas.in.h:1
 msgid "Disable Quick Search"
 msgstr "Tắt Tìm nhanh"
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:2
+#:../gsearchtool/gnome-search-tool.schemas.in.h:2
 msgid "Disable Quick Search Second Scan"
 msgstr "Tắt Tìm nhanh hai lần"
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:3
+#:../gsearchtool/gnome-search-tool.schemas.in.h:3
 msgid "Quick Search Excluded Paths"
-msgstr ""
+msgstr "Đường dẫn Tìm nhanh bị loại trừ"
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:4
+#:../gsearchtool/gnome-search-tool.schemas.in.h:4
 msgid "Quick Search Second Scan Excluded Paths"
-msgstr ""
+msgstr "Đường dẫn Tìm nhanh hai lần bị loại trừ"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:7
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:7
 msgid "Select the search option \"Contains the text\""
-msgstr "Chọn Chứa chữ"
+msgstr "Chọn tùy chọn tìm kiếm «Chứa đọan»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:10
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:10
 msgid "Select the search option \"Date modified less than\""
-msgstr "Chọn ngày thay đổi nhỏ hơn"
+msgstr "Chọn tùy chọn tìm kiếm «Có ngày sửa đổi nhỏ hơn»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:13
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:13
 msgid "Select the search option \"Date modified more than\""
-msgstr "Ngày thay đổi lớn hơn"
+msgstr "Chọn tùy chọn tìm kiếm «Có ngày sửa đổi lớn hơn»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:16
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:16
 msgid "Select the search option \"File is empty\""
-msgstr "Chọn tập tin rỗng"
+msgstr "Chọn tùy chọn tìm kiếm «Tập tin rỗng»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:19
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:19
 msgid "Select the search option \"Follow symbolic links\""
-msgstr "Chọn Theo các liên kết biểu tượng"
+msgstr "Chọn tùy chọn tìm kiếm «Theo liên kết biểu tượng»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:22
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:22
 msgid "Select the search option \"Include other filesystems\""
-msgstr "Chọn bao gồm các hệ thống tập tin khác"
+msgstr "Chọn tùy chọn tìm kiếm «Gồm hệ thống tập tin khác»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:25
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:25
 msgid "Select the search option \"Name does not contain\""
-msgstr "Chọn Tên không chứa"
+msgstr "Chọn tùy chọn tìm kiếm «Tên không chứá»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:28
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:28
 msgid "Select the search option \"Name matches regular expression\""
-msgstr "Chọn Tập tin khớp biểu thức chính quy"
+msgstr "Chọn tùy chọn tìm kiếm «Tên khớp biểu thức chính quy»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:31
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:31
 msgid "Select the search option \"Owned by group\""
-msgstr "Chọn sở hữu bởi nhóm"
+msgstr "Chọn tùy chọn tìm kiếm «Sở hữu bởi nhóm»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:34
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:34
 msgid "Select the search option \"Owned by user\""
-msgstr "Chọn sở hữu bởi người dùng"
+msgstr "Chọn tùy chọn tìm kiếm «Sở hữu bởi người dùng»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:37
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:37
 msgid "Select the search option \"Owner is unrecognized\""
-msgstr "Chọn người dùng không nhận diện được"
+msgstr "Chọn tùy chọn tìm kiếm «Người sở hữu không nhận diện được»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:40
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:40
 msgid "Select the search option \"Show hidden files and folders\""
-msgstr "Chọn Hiện tập tin và thư mục ẩn"
+msgstr "Chọn tùy chọn tìm kiếm «Hiển thị các tập tin và thư mục bị ẩn»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:43
-#, fuzzy
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:43
 msgid "Select the search option \"Size at least\""
-msgstr "Chọn Kích thước ít nhất"
+msgstr "Chọn tùy chọn tìm kiếm «Kích thước ít nhất»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:46
+#.Translators: The quoted text is the label of an available
+#.search option that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:46
 msgid "Select the search option \"Size at most\""
-msgstr ""
+msgstr "Chọn tùy chọn tìm kiếm «Kích thước lớn nhất»"
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:47
+#:../gsearchtool/gnome-search-tool.schemas.in.h:47
 msgid "Show Additional Options"
 msgstr "Hiện Tùy chọn bổ sung"
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:48
+#:../gsearchtool/gnome-search-tool.schemas.in.h:48
 msgid ""
 "This key defines the paths the search tool will exclude from a quick search. "
 "The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
 "media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr ""
+msgstr "Khóa này định nghĩa các đường dẫn mà công cụ tìm kiếm sẽ loại trừ ra việc Tìm nhanh. Hỗ trợ hai ký tự đại diện «*» (dấu sao) và «?» (dấu hỏi). Giá trị mặc định là /mnt/* (gắn), /media/* (môi giơi), /dev/* (phát hiện), /tmp/* (tạm thơi), /proc/* (tiến trình), and /var/* (biến)."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:49
+#:../gsearchtool/gnome-search-tool.schemas.in.h:49
 msgid ""
 "This key defines the paths the search tool will exclude from a second scan "
 "when performing a quick search. The second scan uses the find command to "
 "search for files. The purpose of the second scan is to find files that have "
 "not been indexed. The wildcards '*' and '?' are supported. The default value "
 "is /."
-msgstr ""
+msgstr "Khóa này định nghĩa các đường dẫn mà công cụ tìm kiếm sẽ loại trừ ra lần thứ hai của Tìm nhanh hai lần. Tìm thứ hai sử dụng lệnh «Find» (Tìm) để tim kiếm tập tin; đích của tìm thứ hai này là tìm tập tin chưa trong chỉ mục. Hỗ trợ hai ký tự đại diện «*» (dấu sao) và «?» (dấu hỏi). Giá trị mặc định là /."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:50
+#:../gsearchtool/gnome-search-tool.schemas.in.h:50
 msgid ""
 "This key determines if the \"Contains the text\" search option is selected "
 "when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Chứa đọan» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:51
+#:../gsearchtool/gnome-search-tool.schemas.in.h:51
 msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Có ngày sửa đổi nhỏ hơn» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:52
+#:../gsearchtool/gnome-search-tool.schemas.in.h:52
 msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Có ngày sửa đổi lớn hơn» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:53
+#:../gsearchtool/gnome-search-tool.schemas.in.h:53
 msgid ""
 "This key determines if the \"File is empty\" search option is selected when "
 "the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Tập tin rỗng» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:54
+#:../gsearchtool/gnome-search-tool.schemas.in.h:54
 msgid ""
 "This key determines if the \"Follow symbolic links\" search option is "
 "selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Theo liên kết biểu tượng» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:55
+#:../gsearchtool/gnome-search-tool.schemas.in.h:55
 msgid ""
 "This key determines if the \"Include other filesystems\" search option is "
 "selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Gồm hệ thống tập tin khác» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:56
+#:../gsearchtool/gnome-search-tool.schemas.in.h:56
 msgid ""
 "This key determines if the \"Name does not contain\" search option is "
 "selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Tên không chứa» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:57
+#:../gsearchtool/gnome-search-tool.schemas.in.h:57
 msgid ""
 "This key determines if the \"Name matches regular expression\" search option "
 "is selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Tên khớp biểu thức chính quy» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:58
+#:../gsearchtool/gnome-search-tool.schemas.in.h:58
 msgid ""
 "This key determines if the \"Owned by group\" search option is selected when "
 "the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Sở hữu bởi nhóm» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:59
+#:../gsearchtool/gnome-search-tool.schemas.in.h:59
 msgid ""
 "This key determines if the \"Owned by user\" search option is selected when "
 "the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Sở hữu bởi người dùng» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:60
+#:../gsearchtool/gnome-search-tool.schemas.in.h:60
 msgid ""
 "This key determines if the \"Owner is unrecognized\" search option is "
 "selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Người sở hữu không nhận diện được» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:61
+#:../gsearchtool/gnome-search-tool.schemas.in.h:61
 msgid ""
 "This key determines if the \"Show hidden files and folders\" search option "
 "is selected when the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Hiển thị các tập tin và thư mục bị ẩn» được chọn chưa."
 
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
-#: gsearchtool/gnome-search-tool.schemas.in.h:64
+#.Translators: The quoted text is the label of the additional
+#.options expander that is translated elsewhere.
+#:../gsearchtool/gnome-search-tool.schemas.in.h:64
 msgid ""
 "This key determines if the \"Show more options\" section is expanded when "
 "the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Hiển thị tùy chọn bổ sung» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:65
+#:../gsearchtool/gnome-search-tool.schemas.in.h:65
 msgid ""
 "This key determines if the \"Size at least\" search option is selected when "
 "the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Kích thước ít nhất» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:66
+#:../gsearchtool/gnome-search-tool.schemas.in.h:66
 msgid ""
 "This key determines if the \"Size at most\" search option is selected when "
 "the search tool is started."
-msgstr ""
+msgstr "Khi công cụ tìm kiếm được khởi chạy, khóa này định nghĩa nếu tùy chọn tìm kiếm «Kích thước lớn nhất» được chọn chưa."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:67
+#:../gsearchtool/gnome-search-tool.schemas.in.h:67
 msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
-msgstr ""
+msgstr "Khóa này định nghĩa nếu công cụ tìm kiếm vô hiệu hóa sử dụng lệnh «Find» (tìm) sau khi Tìm nhanh."
 
-#: gsearchtool/gnome-search-tool.schemas.in.h:68
+#:../gsearchtool/gnome-search-tool.schemas.in.h:68
 msgid ""
 "This key determines if the search tool disables the use of the locate "
 "command when performing simple file name searches."
-msgstr ""
+msgstr "Khóa này định nghĩa nếu công cụ tìm kiếm vô hiệu hóa sử dụng lệnh «Locate» (định vị) sau khi tìm kiếm tên tập tin cách đơn giản."
 
-#: gsearchtool/gsearchtool-callbacks.c:165
+#:../gsearchtool/gsearchtool-callbacks.c:165
 msgid "Could not open help document."
-msgstr "Không thể mở tài liệu trợ giúp"
+msgstr "Không mở được tài liệu trợ giúp"
 
-#: gsearchtool/gsearchtool-callbacks.c:300
+#: ../gsearchtool/gsearchtool-callbacks.c:300
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "Bạn có chắc muốn mở %d tài liệu không?"
-msgstr[1] "Bạn có chắc muốn mở %d tài liệu không?"
 
-#: gsearchtool/gsearchtool-callbacks.c:305
-#: gsearchtool/gsearchtool-callbacks.c:493
+#: ../gsearchtool/gsearchtool-callbacks.c:305
+#: ../gsearchtool/gsearchtool-callbacks.c:493
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Hành động này sẽ mở %d tập tin riêng rẽ."
-msgstr[1] "Hành động này sẽ mở %d tập tin riêng rẽ."
+msgstr[0] "Hành động này sẽ mở %d cửa sổ riêng."
 
-#: gsearchtool/gsearchtool-callbacks.c:345
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:345
+#,c-format
 msgid "Could not open document \"%s\"."
-msgstr "Không thể mở tài liệu \"%s\"."
+msgstr "Không mở được tài liệu \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:374
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:374
+#,c-format
 msgid "Could not open folder \"%s\"."
-msgstr "Không thể mở thư muc \"%s\"."
+msgstr "Không mở được thư muc \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:382
+#:../gsearchtool/gsearchtool-callbacks.c:382
 msgid "The nautilus file manager is not running."
 msgstr "Trình quản lý tập tin Nautilus chưa chạy."
 
-#: gsearchtool/gsearchtool-callbacks.c:449
-#: gsearchtool/gsearchtool-callbacks.c:763
+#:../gsearchtool/gsearchtool-callbacks.c:449
+#:../gsearchtool/gsearchtool-callbacks.c:763
 msgid "The document does not exist."
-msgstr "Thư mục không tồn tại."
+msgstr "Không có tài liệu ấy."
 
-#: gsearchtool/gsearchtool-callbacks.c:464
+#:../gsearchtool/gsearchtool-callbacks.c:464
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Chưa cài đặt chương trình nào có khả năng hiển thị tài liệu này."
 
-#: gsearchtool/gsearchtool-callbacks.c:488
+#: ../gsearchtool/gsearchtool-callbacks.c:488
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bạn có chắc muốn mở %d danh mục không?"
 
-#: gsearchtool/gsearchtool-callbacks.c:589
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:589
+#,c-format
 msgid "Could not move \"%s\" to trash."
-msgstr "Không thể chuyển \"%s\" vào Sọt rác."
+msgstr "Không chuyển được \"%s\" vào Sọt rác."
 
-#: gsearchtool/gsearchtool-callbacks.c:620
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:620
+#,c-format
 msgid "Do you want to delete \"%s\" permanently?"
-msgstr "Bạn có muốn xóa vĩnh viễn \"%s\" không?"
+msgstr "Bạn có muốn xóa bỏ vĩnh viễn \"%s\" không?"
 
-#: gsearchtool/gsearchtool-callbacks.c:623
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:623
+#,c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Sọt rác không có. Không thể chuyển \"%s\" vào Sọt rác."
+msgstr "Sọt rác không sẵn sàng nên không thể chuyển \"%s\" vào Sọt rác."
 
-#: gsearchtool/gsearchtool-callbacks.c:662
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:662
+#,c-format
 msgid "Could not delete \"%s\"."
-msgstr "Không thể xóa \"%s\"."
+msgstr "Không thể xóa bỏ \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:782
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:782
+#,c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Di chuyển \"%s\" thất bại: %s."
 
-#: gsearchtool/gsearchtool-callbacks.c:814
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:814
+#,c-format
 msgid "Deleting \"%s\" failed: %s."
-msgstr "Xóa \"%s\" thất bại: %s."
+msgstr "Xóa bỏ \"%s\" thất bại: %s."
 
-#: gsearchtool/gsearchtool-callbacks.c:1160
+#:../gsearchtool/gsearchtool-callbacks.c:1160
 msgid "Save Search Results As..."
 msgstr "Lư_u kết quả tìm kiếm là..."
 
-#: gsearchtool/gsearchtool-callbacks.c:1188
+#:../gsearchtool/gsearchtool-callbacks.c:1188
 msgid "Could not save document."
-msgstr "Không thể lưu tài liệu."
+msgstr "Không lưu được tài liệu."
 
-#: gsearchtool/gsearchtool-callbacks.c:1189
+#:../gsearchtool/gsearchtool-callbacks.c:1189
 msgid "You did not select a document name."
 msgstr "Bạn chưa chọn tên tài liệu."
 
-#: gsearchtool/gsearchtool-callbacks.c:1219
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:1219
+#,c-format
 msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Không thể lưu tài liệu \"%s\" vào \"%s\"."
+msgstr "Không lưu được tài liệu \"%s\" vào \"%s\"."
 
-#: gsearchtool/gsearchtool-callbacks.c:1252
-#, c-format
+#:../gsearchtool/gsearchtool-callbacks.c:1252
+#,c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Tài liệu \"%s\" đã có rồi. Bạn có muốn thay thế nó không?"
 
-#: gsearchtool/gsearchtool-callbacks.c:1256
+#:../gsearchtool/gsearchtool-callbacks.c:1256
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Tài liệu \"%s\" đã có rồi. Bạn có muốn thay thế nó không?"
+msgstr "Tài liệu \"%s\" đã có rồi. Sẽ ghi đè lên nội dung nó."
 
-#: gsearchtool/gsearchtool-callbacks.c:1320
+#:../gsearchtool/gsearchtool-callbacks.c:1320
 msgid "The document name you selected is a folder."
 msgstr "Tên tài liệu bạn chọn là một thư mục."
 
-#: gsearchtool/gsearchtool-callbacks.c:1371
+#:../gsearchtool/gsearchtool-callbacks.c:1371
 msgid "You may not have write permissions to the document."
 msgstr "Bạn không có quyền ghi vào tài liệu này."
 
-#: gsearchtool/gsearchtool-support.c:69
-#, c-format
+#:../gsearchtool/gsearchtool-support.c:69
+#,c-format
 msgid ""
 "GConf error:\n"
 "  %s"
@@ -1421,197 +1396,195 @@ msgstr ""
 "Lỗi GConf:\n"
 "  %s"
 
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/gsearchtool-support.c:520
+#.Translators:  Below are the strings displayed in the 'Date Modified'
+#.column of the list view.  The format of this string can vary depending
+#.on age of a file.  Please modify the format of the timestamp to match
+#.your locale.  For example, to display 24 hour time replace the '%-I'
+#.with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#:../gsearchtool/gsearchtool-support.c:526
 msgid "today at %-I:%M %p"
-msgstr "hôm nay là %-I:%M:%p"
+msgstr "hôm nay lúc %-I:%M:%p"
 
-#: gsearchtool/gsearchtool-support.c:522
+#:../gsearchtool/gsearchtool-support.c:528
 msgid "yesterday at %-I:%M %p"
-msgstr "hôm qua là %-I:%M:%p"
+msgstr "hôm qua lúc %-I:%M:%p"
 
-#: gsearchtool/gsearchtool-support.c:524 gsearchtool/gsearchtool-support.c:526
+#:../gsearchtool/gsearchtool-support.c:530
+#:../gsearchtool/gsearchtool-support.c:532
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %B %-d %Y lúc %-I:%M:%S %p"
 
-#: gsearchtool/gsearchtool-support.c:710
+#:../gsearchtool/gsearchtool-support.c:718
 msgid "link (broken)"
 msgstr "liên kết (hỏng)"
 
-#: gsearchtool/gsearchtool-support.c:716
-#, c-format
+#:../gsearchtool/gsearchtool-support.c:722
+#,c-format
 msgid "link to %s"
 msgstr "liên kết tới %s"
 
-#: gsearchtool/gsearchtool.c:81
+#:../gsearchtool/gsearchtool.c:81
 msgid "Contains the _text"
-msgstr "Chứa _chữ"
+msgstr "Chứa _đoạn"
 
-#: gsearchtool/gsearchtool.c:83
+#:../gsearchtool/gsearchtool.c:83
 msgid "_Date modified less than"
-msgstr "_Ngày sửa đổi nhỏ hơn"
+msgstr "_Có ngày sửa đổi nhỏ hơn"
 
-#: gsearchtool/gsearchtool.c:83 gsearchtool/gsearchtool.c:84
+#:../gsearchtool/gsearchtool.c:83 ../gsearchtool/gsearchtool.c:84
 msgid "days"
 msgstr "ngày"
 
-#: gsearchtool/gsearchtool.c:84
+#:../gsearchtool/gsearchtool.c:84
 msgid "Date modified more than"
-msgstr "Ngày sửa đổi lớn hơn"
+msgstr "Có ngày sửa đổi lớn hơn"
 
-#: gsearchtool/gsearchtool.c:86
+#:../gsearchtool/gsearchtool.c:86
 msgid "S_ize at least"
 msgstr "_Kích thước ít nhất"
 
-#: gsearchtool/gsearchtool.c:86 gsearchtool/gsearchtool.c:87
+#:../gsearchtool/gsearchtool.c:86 ../gsearchtool/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "kilobyte"
 
-#: gsearchtool/gsearchtool.c:87
+#:../gsearchtool/gsearchtool.c:87
 msgid "Si_ze at most"
 msgstr "Kích thước _lớn nhất"
 
-#: gsearchtool/gsearchtool.c:88
+#:../gsearchtool/gsearchtool.c:88
 msgid "File is empty"
 msgstr "Tập tin rỗng"
 
-#: gsearchtool/gsearchtool.c:90
+#:../gsearchtool/gsearchtool.c:90
 msgid "Owned by _user"
-msgstr "Được sở hữu bởi người _dùng"
+msgstr "Sở hữu bởi người _dùng"
 
-#: gsearchtool/gsearchtool.c:91
+#:../gsearchtool/gsearchtool.c:91
 msgid "Owned by _group"
-msgstr "Được sở hữu bởi _nhóm"
+msgstr "Sở hữu bởi _nhóm"
 
-#: gsearchtool/gsearchtool.c:92
+#:../gsearchtool/gsearchtool.c:92
 msgid "Owner is unrecognized"
-msgstr "Không nhận ra chủ sở hữu"
+msgstr "Người sở hữu không nhận diện được."
 
-#: gsearchtool/gsearchtool.c:94
+#:../gsearchtool/gsearchtool.c:94
 msgid "Na_me does not contain"
 msgstr "Tên _không chứa"
 
-#: gsearchtool/gsearchtool.c:95
+#:../gsearchtool/gsearchtool.c:95
 msgid "Name matches regular e_xpression"
-msgstr "Tập tin khớp biểu thức chính quy"
+msgstr "Tập tin khớp _biểu thức chính quy"
 
-#: gsearchtool/gsearchtool.c:97
+#:../gsearchtool/gsearchtool.c:97
 msgid "Show hidden and backup files"
-msgstr "Hiện tập tin ẩn và tập tin sao lưu"
+msgstr "Hiển thị các tập tin bị ẩn và tập tin sao lưu"
 
-#: gsearchtool/gsearchtool.c:98
+#:../gsearchtool/gsearchtool.c:98
 msgid "Follow symbolic links"
-msgstr "Theo các liên kết"
+msgstr "Theo liên kết biểu tượng"
 
-#: gsearchtool/gsearchtool.c:99
+#:../gsearchtool/gsearchtool.c:99
 msgid "Include other filesystems"
-msgstr "Bao gồm các hệ thống tập tin khác"
+msgstr "Gồm hệ thống tập tin khác"
 
-#: gsearchtool/gsearchtool.c:180
+#:../gsearchtool/gsearchtool.c:180
 msgid "_Open"
 msgstr "_Mở"
 
-#: gsearchtool/gsearchtool.c:181
+#:../gsearchtool/gsearchtool.c:181
 msgid "O_pen Folder"
 msgstr "Mở _thư mục"
 
-#: gsearchtool/gsearchtool.c:182
+#:../gsearchtool/gsearchtool.c:182
 msgid "Mo_ve to Trash"
 msgstr "_Chuyển vào Sọt rác"
 
-#: gsearchtool/gsearchtool.c:183
+#:../gsearchtool/gsearchtool.c:183
 msgid "_Save Results As..."
 msgstr "Lư_u kết quả là..."
 
-#: gsearchtool/gsearchtool.c:249 gsearchtool/gsearchtool.c:266
+#:../gsearchtool/gsearchtool.c:249 ../gsearchtool/gsearchtool.c:266
 msgid "A locate database has probably not been created."
-msgstr ""
+msgstr "Rất có thể là chưa tạo cơ sở dữ liệu locate (định vi)."
 
-#: gsearchtool/gsearchtool.c:369
-#, c-format
+#:../gsearchtool/gsearchtool.c:369
+#,c-format
 msgid "Character set conversion failed for \"%s\""
-msgstr ""
+msgstr "Không chuyển đổi bộ ký tự được cho \"%s\""
 
-#: gsearchtool/gsearchtool.c:735 gsearchtool/gsearchtool.c:764
+#:../gsearchtool/gsearchtool.c:740 ../gsearchtool/gsearchtool.c:769
 msgid "No files found"
 msgstr "Không tìm thấy"
 
-#: gsearchtool/gsearchtool.c:757
+#:../gsearchtool/gsearchtool.c:762
 msgid "(stopped)"
 msgstr "(dừng)"
 
-#: gsearchtool/gsearchtool.c:763
+#:../gsearchtool/gsearchtool.c:768
 msgid "No Files Found"
 msgstr "Không tìm thấy"
 
-#: gsearchtool/gsearchtool.c:768
+#: ../gsearchtool/gsearchtool.c:773
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "Tìm thấy %d tập tin"
-msgstr[1] "Tìm thấy %d tập tin"
 
-#: gsearchtool/gsearchtool.c:772 gsearchtool/gsearchtool.c:810
+#: ../gsearchtool/gsearchtool.c:777 ../gsearchtool/gsearchtool.c:815
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "Tìm thấy %d tập tin"
-msgstr[1] "Tìm thấy %d tập tin"
 
-#: gsearchtool/gsearchtool.c:789 gsearchtool/gsearchtool.c:1048
-#: gsearchtool/gsearchtool.c:1134 gsearchtool/gsearchtool.c:2804
+#:../gsearchtool/gsearchtool.c:794 ../gsearchtool/gsearchtool.c:1053
+#:../gsearchtool/gsearchtool.c:1139 ../gsearchtool/gsearchtool.c:2815
 msgid "Search for Files"
 msgstr "Tìm tập tin"
 
-#: gsearchtool/gsearchtool.c:882
+#:../gsearchtool/gsearchtool.c:887
 msgid "Entry changed called for a non entry option!"
-msgstr ""
+msgstr "Mục ghi đã thay đổi gọi tùy chọn không mục ghi."
 
-#: gsearchtool/gsearchtool.c:1134
+#:../gsearchtool/gsearchtool.c:1139
 msgid "Searching..."
 msgstr "Đang tìm..."
 
-#: gsearchtool/gsearchtool.c:1157
+#:../gsearchtool/gsearchtool.c:1162
 msgid "Set the text of \"Name contains\" search option"
-msgstr ""
+msgstr "Lập chữ trong tùy chọn «Tên chứa»"
 
-#: gsearchtool/gsearchtool.c:1158
+#:../gsearchtool/gsearchtool.c:1163
 msgid "Set the text of \"Look in folder\" search option"
-msgstr ""
+msgstr "Lập chữ trong tùy chọn «Tìm trong danh mục»"
 
-#: gsearchtool/gsearchtool.c:1159
+#:../gsearchtool/gsearchtool.c:1164
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr ""
-"Sắp tập tin theo một trong những chỉ tiêu sau: tên, thư mục, kích thước, "
+msgstr "Sắp xếp tập tin theo một trong những chỉ tiêu sau: tên, danh mục, kích thước, "
 "loại, hoặc ngày tháng"
 
-#: gsearchtool/gsearchtool.c:1160
+#:../gsearchtool/gsearchtool.c:1165
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Sắp thứ tự ngược. Mặc định là thứ tự xuôi"
 
-#: gsearchtool/gsearchtool.c:1161
+#:../gsearchtool/gsearchtool.c:1166
 msgid "Automatically start a search"
 msgstr "Tự động khởi động tìm kiếm"
 
-#: gsearchtool/gsearchtool.c:1167
-#, fuzzy, c-format
+#:../gsearchtool/gsearchtool.c:1172
+#,c-format
 msgid "Select the \"%s\" search option"
-msgstr "Chọn ràng buộc '%s'"
+msgstr "Chọn tùy chọn tìm kiếm \"%s\""
 
-#: gsearchtool/gsearchtool.c:1170
-#, fuzzy, c-format
+#:../gsearchtool/gsearchtool.c:1175
+#,c-format
 msgid "Select and set the \"%s\" search option"
-msgstr "Chọn Tập tin khớp biểu thức chính quy"
+msgstr "Chọn và lập tùy chọn \"%s\""
 
-#: gsearchtool/gsearchtool.c:1277
+#:../gsearchtool/gsearchtool.c:1282
 msgid "Invalid option passed to sortby command line argument."
-msgstr "Chuyển tùy chọn không hợp lệ cho lệnh sortby."
+msgstr "Chuyển tùy chọn không hợp lệ cho lệnh sortby (sắp xếp theo)."
 
-#: gsearchtool/gsearchtool.c:1573
+#:../gsearchtool/gsearchtool.c:1584
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1619,323 +1592,313 @@ msgstr ""
 "\n"
 "... Quá nhiều lỗi, không thể hiển thị hết ..."
 
-#: gsearchtool/gsearchtool.c:1587
+#:../gsearchtool/gsearchtool.c:1598
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
-msgstr ""
+msgstr "Có lẽ kết quả tìm kiếm không hợp lệ. Gặp lỗi khi thực hiện tìm kiếm này."
 
-#: gsearchtool/gsearchtool.c:1599 gsearchtool/gsearchtool.c:1639
+#:../gsearchtool/gsearchtool.c:1610 ../gsearchtool/gsearchtool.c:1650
 msgid "Show more _details"
 msgstr "Hiện chi tiết _hơn"
 
-#: gsearchtool/gsearchtool.c:1627
+#:../gsearchtool/gsearchtool.c:1638
 msgid ""
 "The search results may be invalid.  Do you want to disable the quick search "
 "feature?"
-msgstr ""
+msgstr "Có lẽ kết quả tìm kiếm không hợp lệ. Bạn có muốn vô hiệu hóa tính năng Tìm nhanh không?"
 
-#: gsearchtool/gsearchtool.c:1650
+#:../gsearchtool/gsearchtool.c:1661
 msgid "Disable _Quick Search"
 msgstr "Tắt _Tìm nhanh"
 
-#: gsearchtool/gsearchtool.c:1677
-#, c-format
+#:../gsearchtool/gsearchtool.c:1688
+#,c-format
 msgid "Failed to set process group id of child %d: %s.\n"
-msgstr ""
+msgstr "Không lập ID nhóm tiến trình được cho tiến trình con %d: %s.\n"
 
-#: gsearchtool/gsearchtool.c:1704
+#:../gsearchtool/gsearchtool.c:1715
 msgid "Error parsing the search command."
-msgstr "Lỗi phân tích lệnh tìm kiếm."
+msgstr "Lỗi phân tách lệnh tìm kiếm."
 
-#: gsearchtool/gsearchtool.c:1737
+#:../gsearchtool/gsearchtool.c:1748
 msgid "Error running the search command."
 msgstr "Lỗi thực hiện lệnh tìm kiếm."
 
-#: gsearchtool/gsearchtool.c:1884
-#, fuzzy, c-format
+#:../gsearchtool/gsearchtool.c:1895
+#,c-format
 msgid "Enter a text value for the \"%s\" search option."
-msgstr "Chọn Tập tin khớp biểu thức chính quy"
+msgstr "Hãy nhập giá trị chữ cho tùy chọn \"%s\"."
 
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: gsearchtool/gsearchtool.c:1889
-#, c-format
+#.Translators:  Below is a string displaying the search options name
+#.and unit value.  For example, "\"Date modified less than\" in days".
+#:../gsearchtool/gsearchtool.c:1900
+#,c-format
 msgid "\"%s\" in %s"
-msgstr ""
+msgstr "\"%s\" theo %s"
 
-#: gsearchtool/gsearchtool.c:1891
-#, fuzzy, c-format
+#:../gsearchtool/gsearchtool.c:1902
+#,c-format
 msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Chọn Tập tin khớp biểu thức chính quy"
+msgstr "Hãy nhâp giá trị theo %s cho tùy chọn \"%s\""
 
-#: gsearchtool/gsearchtool.c:1950
-#, fuzzy, c-format
+#:../gsearchtool/gsearchtool.c:1961
+#,c-format
 msgid "Remove \"%s\""
-msgstr "Loại bỏ"
+msgstr "Loại bỏ \"%s\""
 
-#: gsearchtool/gsearchtool.c:1951
-#, fuzzy, c-format
+#:../gsearchtool/gsearchtool.c:1962
+#,c-format
 msgid "Click to remove the \"%s\" search option."
-msgstr "Chọn ràng buộc '%s'"
+msgstr "Nhắp để loại bỏ tùy chọn tìm kiếm  \"%s\"."
 
-#: gsearchtool/gsearchtool.c:2044
+#:../gsearchtool/gsearchtool.c:2055
 msgid "A_vailable options:"
 msgstr "Tùy chọn _hiện có:"
 
-#: gsearchtool/gsearchtool.c:2073
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2084
 msgid "Available options"
-msgstr "Tùy chọn _hiện có:"
+msgstr "Tùy chọn hiện có"
 
-#: gsearchtool/gsearchtool.c:2074
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2085
 msgid "Select a search option from the drop-down list."
-msgstr "Chọn một quy tắc tìm từ menu"
+msgstr "Hãy chọn một tùy chọn tìm kiếm trong danh sách liệt kê thả."
 
-#: gsearchtool/gsearchtool.c:2086
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2097
 msgid "Add search option"
-msgstr "Thêm hành động"
+msgstr "Thêm tùy chọn tìm kiếm"
 
-#: gsearchtool/gsearchtool.c:2087
+#:../gsearchtool/gsearchtool.c:2098
 msgid "Click to add the selected available search option."
-msgstr ""
+msgstr "Nhắp để thêm tùy chọn hiện thời đã chọn."
 
-#: gsearchtool/gsearchtool.c:2108
+#:../gsearchtool/gsearchtool.c:2119
 msgid "S_earch results:"
 msgstr "_Kết quả tìm:"
 
-#: gsearchtool/gsearchtool.c:2144
+#:../gsearchtool/gsearchtool.c:2155
 msgid "List View"
-msgstr ""
+msgstr "Khung xem danh sách"
 
-#: gsearchtool/gsearchtool.c:2194
+#:../gsearchtool/gsearchtool.c:2205
 msgid "Name"
 msgstr "Tên"
 
-#: gsearchtool/gsearchtool.c:2214
+#:../gsearchtool/gsearchtool.c:2225
 msgid "Folder"
-msgstr "Thư mục"
+msgstr "Danh mục"
 
-#: gsearchtool/gsearchtool.c:2225
+#:../gsearchtool/gsearchtool.c:2236
 msgid "Size"
-msgstr "Kích thước"
+msgstr "Cỡ"
 
-#: gsearchtool/gsearchtool.c:2235
+#:../gsearchtool/gsearchtool.c:2246
 msgid "Type"
 msgstr "Loại"
 
-#: gsearchtool/gsearchtool.c:2245
+#:../gsearchtool/gsearchtool.c:2256
 msgid "Date Modified"
 msgstr "Ngày sửa đổi"
 
-#: gsearchtool/gsearchtool.c:2613
+#:../gsearchtool/gsearchtool.c:2624
 msgid "_Name contains:"
 msgstr "_Tên chứa:"
 
-#: gsearchtool/gsearchtool.c:2627 gsearchtool/gsearchtool.c:2628
+#:../gsearchtool/gsearchtool.c:2638 ../gsearchtool/gsearchtool.c:2639
 msgid "Enter a filename or partial filename with or without wildcards."
-msgstr ""
+msgstr "Hãy nhập một tên tập tin hay tên tập tin cục bộ, có ký tự đại diện hay không có chúng"
 
-#: gsearchtool/gsearchtool.c:2628
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2639
 msgid "Name contains"
-msgstr "_Tên chứa:"
+msgstr "Tên chứa"
 
-#: gsearchtool/gsearchtool.c:2634
+#:../gsearchtool/gsearchtool.c:2645
 msgid "_Look in folder:"
-msgstr "_Tìm trong thư mục:"
+msgstr "_Tìm trong danh mục:"
 
-#: gsearchtool/gsearchtool.c:2640
+#:../gsearchtool/gsearchtool.c:2651
 msgid "Browse"
 msgstr "Duyệt"
 
-#: gsearchtool/gsearchtool.c:2645
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2656
 msgid "Look in folder"
-msgstr "_Tìm trong thư mục:"
+msgstr "Tìm trong danh mục"
 
-#: gsearchtool/gsearchtool.c:2645
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2656
 msgid "Select the folder or device from which you want to begin the search."
-msgstr "Nhập tên thư mục, nơi bạn muốn bắt đầu tìm."
+msgstr "Hãy chọn danh mục hay thiết bị, nơi bạn muốn bắt đầu tìm kiếm."
 
-#: gsearchtool/gsearchtool.c:2656
+#:../gsearchtool/gsearchtool.c:2667
 msgid "Show more _options"
 msgstr "Hiện nhiều _tùy chọn hơn"
 
-#: gsearchtool/gsearchtool.c:2665
+#:../gsearchtool/gsearchtool.c:2676
 msgid "Show more options"
 msgstr "Hiện nhiều tùy chọn hơn"
 
-#: gsearchtool/gsearchtool.c:2665
+#:../gsearchtool/gsearchtool.c:2676
 msgid "Click to expand or collapse the list of available options."
-msgstr ""
+msgstr "Nhắp để mở rộng hay co lại danh sách các tùy chọn hiện có."
 
-#: gsearchtool/gsearchtool.c:2689
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2700
 msgid "Click to display the help manual."
-msgstr "Không thể hiển thị trợ giúp"
+msgstr "Nhắp để hiển thị tập tin hướng dẫn trợ giúp."
 
-#: gsearchtool/gsearchtool.c:2697
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2708
 msgid "Click to close \"Search for Files\"."
-msgstr "Tìm tập tin"
+msgstr "Nhấn để đóng «Tìm tập tin»."
 
-#: gsearchtool/gsearchtool.c:2723
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2734
 msgid "Click to perform a search."
-msgstr "Nhấn để chấm dứt tìm"
+msgstr "Nhấn để tìm kiếm."
 
-#: gsearchtool/gsearchtool.c:2724
-#, fuzzy
+#:../gsearchtool/gsearchtool.c:2735
 msgid "Click to stop a search."
-msgstr "Nhấn để chấm dứt tìm"
+msgstr "Nhấn để ngừng tìm."
 
-#: gsearchtool/gsearchtool.c:2824
+#:../gsearchtool/gsearchtool.c:2835
 msgid "Cannot initialize bonobo."
 msgstr "Không thể khởi động Bonobo."
 
-#: logview/about.c:47 logview/logview.c:47
+#:../logview/about.c:47 ../logview/logview.c:47
 msgid "System Log Viewer"
-msgstr "Trình xem log hệ thống"
+msgstr "Bộ xem bản ghi hệ thống"
 
-#: logview/about.c:50
+#:../logview/about.c:50
 msgid "A system log viewer for GNOME."
-msgstr "Bộ xem log hệ thống của GNOME."
+msgstr "Bộ xem bản ghi hệ thống của GNOME."
 
-#: logview/actions.c:85
+#:../logview/actions.c:85
 msgid "Action Database"
 msgstr "Cơ sở dữ liệu hành động"
 
-#: logview/actions.c:96
+#:../logview/actions.c:96
 msgid "Actions"
 msgstr "Hành động"
 
-#: logview/actions.c:168
+#:../logview/actions.c:168
 msgid "_Add"
 msgstr "_Thêm"
 
-#: logview/actions.c:173
+#:../logview/actions.c:173
 msgid "Add an action"
 msgstr "Thêm hành động"
 
-#: logview/actions.c:175 logview/logview.c:86
+#:../logview/actions.c:175 ../logview/logview.c:86
 msgid "_Edit"
-msgstr "_Sửa"
+msgstr "_Sửa đổi"
 
-#: logview/actions.c:180
+#:../logview/actions.c:180
 msgid "Edit an action"
 msgstr "Hiệu chỉnh hành động"
 
-#: logview/actions.c:182
+#:../logview/actions.c:182
 msgid "_Remove"
 msgstr "_Loại bỏ"
 
-#: logview/actions.c:187
+#:../logview/actions.c:187
 msgid "Remove an action"
 msgstr "Loại bỏ hành động"
 
-#: logview/actions.c:274
-#, c-format
+#:../logview/actions.c:274
+#,c-format
 msgid "Cannot open action data base <%s>! Open failed."
-msgstr "Không thể mở cơ sở dữ liệu hành động <%s>!"
+msgstr "Không mở được cơ sở dữ liệu hành động <%s>."
 
-#: logview/actions.c:309 logview/actions.c:322 logview/actions.c:333
-#: logview/actions.c:344 logview/actions.c:355 logview/actions.c:366
+#:../logview/actions.c:309 ../logview/actions.c:322 ../logview/actions.c:333
+#:../logview/actions.c:344 ../logview/actions.c:355 ../logview/actions.c:366
 msgid "Error parsing actions data base"
-msgstr "Lỗi phân tích cơ sở dữ liệu hành động"
+msgstr "Lỗi phân tách cơ sở dữ liệu hành động."
 
-#: logview/actions.c:400
+#:../logview/actions.c:400
 msgid "Can't write to actions database!"
-msgstr "Không thể ghi vào cơ sở dữ liệu hành động!"
+msgstr "Không ghi được vào cơ sở dữ liệu hành động."
 
-#: logview/actions.c:498
-#, c-format
+#:../logview/actions.c:498
+#,c-format
 msgid "Error while executing specified action: %s"
-msgstr "Lỗi thực hiện hành động xác định: %s"
+msgstr "Gặp lỗi khi thực hiện hành động xác định: %s"
 
-#: logview/actions.c:521
+#:../logview/actions.c:521
 msgid "<empty>"
 msgstr "<rỗng>"
 
-#: logview/actions.c:522
+#:../logview/actions.c:522
 msgid "log name regexp"
-msgstr "regexp tên log"
+msgstr "biểu thức chính quy tên bản ghi"
 
-#: logview/actions.c:523
+#:../logview/actions.c:523
 msgid "process regexp"
-msgstr "regexp tiến trình"
+msgstr "biểu thức chính quy tiến trình"
 
-#: logview/actions.c:524
+#:../logview/actions.c:524
 msgid "message regexp"
-msgstr "regexp thông điệp"
+msgstr "biểu thức chính quy thông điệp"
 
-#: logview/actions.c:525
+#:../logview/actions.c:525
 msgid "action to execute when regexps are TRUE"
-msgstr "hành động cần thực hiện khi khớp regexp"
+msgstr "hành động cần thực hiện khi khớp biểu thức chính quy"
 
-#: logview/actions.c:526
+#:../logview/actions.c:526
 msgid "description"
 msgstr "mô tả"
 
-#: logview/actions.c:662
+#:../logview/actions.c:662
 msgid "Edit Action"
-msgstr "Hiệu chỉnh Hành động"
+msgstr "Sửa đổi hành động"
 
-#: logview/actions.c:698
+#:../logview/actions.c:698
 msgid "_Tag:"
-msgstr ""
+msgstr "_Thẻ:"
 
-#: logview/actions.c:707
+#:../logview/actions.c:707
 msgid "Tag that identifies the log file."
-msgstr ""
+msgstr "Thẻ nhận biết tập tin bản ghi."
 
-#: logview/actions.c:716
+#:../logview/actions.c:716
 msgid "_Log name:"
-msgstr ""
+msgstr "Tên _bản ghi:"
 
-#: logview/actions.c:725
+#:../logview/actions.c:725
 msgid "Regular expression that will match the log name."
-msgstr ""
+msgstr "Biểu thức chính quy sẽ khớp tên bản ghi."
 
-#: logview/actions.c:735
+#:../logview/actions.c:735
 msgid "_Process:"
 msgstr "_Tiến trình:"
 
-#: logview/actions.c:744
+#:../logview/actions.c:744
 msgid "Regular expression that will match process part of message."
-msgstr ""
+msgstr "Biểu thức chính quy sẽ khớp phần tiến trình của thông điệp."
 
-#: logview/actions.c:754
+#:../logview/actions.c:754
 msgid "_Message:"
 msgstr "_Thông điệp:"
 
-#: logview/actions.c:763
+#:../logview/actions.c:763
 msgid "Regular expression that will match the message."
-msgstr ""
+msgstr "Biểu thức chính quy sẽ khớp thông điệp."
 
-#: logview/actions.c:773
+#:../logview/actions.c:773
 msgid "_Action:"
 msgstr "_Hành động:"
 
-#: logview/actions.c:782
+#:../logview/actions.c:782
 msgid ""
 "Action that will be executed if all previous regexps. are matched. This is "
 "executed by a system command: system (action)."
-msgstr ""
+msgstr "Hành động sẽ thực hiện nếu mọi biểu thức chính quy trước đã được khớp. Hành động này được thưc hiện bởi một lệnh hệ thống: system (hành_động)"
 
-#: logview/actions.c:792
+#:../logview/actions.c:792
 msgid "_Description:"
 msgstr "_Mô tả:"
 
-#: logview/actions.c:801
+#:../logview/actions.c:801
 msgid "Description of this entry."
-msgstr "Mô tả của mục này"
+msgstr "Mô tả của mục ghi này"
 
-#: logview/actions.c:825
-#, c-format
+#:../logview/actions.c:825
+#,c-format
 msgid ""
 "tag: [%s]\n"
 "log_name: [%s]\n"
@@ -1944,345 +1907,340 @@ msgid ""
 "description: [%s]\n"
 "action: [%s]\n"
 msgstr ""
-"đuôi: [%s]\n"
-"tên log: [%s]\n"
-"tiến trình: [%s]\n"
-"thông điệp: [%s]\n"
-"mô tả: [%s]\n"
-"hành động: [%s]\n"
+"thẻ: 			[%s]\n"
+"tên_bản_ghi: 	[%s]\n"
+"tiến_trình: 	[%s]\n"
+"thông_điệp: 	[%s]\n"
+"mô_tả: 		[%s]\n"
+"hành_động: 	[%s]\n"
 
-#: logview/calendar.c:55
+#:../logview/calendar.c:55
 msgid "Calendar"
 msgstr "Lịch"
 
-#: logview/desc_db.c:66
-#, c-format
+#:../logview/desc_db.c:66
+#,c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "Không thể mở cơ sở dữ liệu regexp <%s>!"
+msgstr "Không mở được cơ sở dữ liệu biểu thức chính quy <%s>."
 
-#: logview/desc_db.c:176
-#, c-format
+#:../logview/desc_db.c:176
+#,c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Không thể mở cơ sở dữ liệu mô tả <%s>!"
+msgstr "Không mở được cơ sở dữ liệu mô tả <%s>."
 
-#. ----------------------------------------------------------------------
-#. NAME:
-#. DESCRIPTION:
-#. ----------------------------------------------------------------------
-#: logview/gnome-system-log.desktop.in.h:1
+#.----------------------------------------------------------------------
+#.NAME:
+#.DESCRIPTION:
+#.----------------------------------------------------------------------
+#:../logview/gnome-system-log.desktop.in.h:1
 msgid "System Log"
-msgstr "Log hệ thống"
+msgstr "Bản ghi hệ thống"
 
-#: logview/gnome-system-log.desktop.in.h:2
+#:../logview/gnome-system-log.desktop.in.h:2
 msgid "View the system log file"
-msgstr "Xem tập tin log hệ thống"
+msgstr "Xem tập tin bản ghi hệ thống"
 
-#: logview/info.c:47
+#:../logview/info.c:47
 msgid "Properties"
 msgstr "Thuộc tính"
 
-#: logview/info.c:95
+#: ../logview/info.c:95
 #, c-format
 msgid "%ld byte"
 msgid_plural "%ld bytes"
 msgstr[0] "%ld byte"
-msgstr[1] "%ld byte"
 
-#: logview/info.c:97
-#, fuzzy, c-format
+#:../logview/info.c:97
+#,c-format
 msgid "<b>Size</b>: %s"
-msgstr "<b>Kích thước</b>: %ld byte"
+msgstr "<b>Kích thước</b>: %s"
 
-#: logview/info.c:102
-#, c-format
+#:../logview/info.c:102
+#,c-format
 msgid "<b>Modified</b>: %s"
-msgstr "<b>Thay đổi lúc</b>: %s"
+msgstr "<b>Sửa đổi lúc</b>: %s"
 
-#: logview/info.c:106
-#, c-format
+#:../logview/info.c:106
+#,c-format
 msgid "<b>Start Date</b>: %s"
 msgstr "<b>Ngày bắt đầu</b>: %s"
 
-#: logview/info.c:110
-#, c-format
+#:../logview/info.c:110
+#,c-format
 msgid "<b>Last Date</b>: %s"
 msgstr "<b>Ngày cuối cùng</b>: %s"
 
-#: logview/info.c:114
-#, c-format
+#:../logview/info.c:114
+#,c-format
 msgid "<b>Number of Lines</b>: %ld"
 msgstr "<b>Số dòng</b>: %ld"
 
-#: logview/log_repaint.c:36
+#:../logview/log_repaint.c:36
 msgid "January"
 msgstr "Tháng Giêng"
 
-#: logview/log_repaint.c:36
+#:../logview/log_repaint.c:36
 msgid "February"
 msgstr "Tháng Hai"
 
-#: logview/log_repaint.c:36
+#:../logview/log_repaint.c:36
 msgid "March"
 msgstr "Tháng Ba"
 
-#: logview/log_repaint.c:36
+#:../logview/log_repaint.c:36
 msgid "April"
 msgstr "Tháng Tư"
 
-#: logview/log_repaint.c:36
+#:../logview/log_repaint.c:36
 msgid "May"
 msgstr "Tháng Năm"
 
-#: logview/log_repaint.c:37
+#:../logview/log_repaint.c:37
 msgid "June"
 msgstr "Tháng Sáu"
 
-#: logview/log_repaint.c:37
+#:../logview/log_repaint.c:37
 msgid "July"
 msgstr "Tháng Bảy"
 
-#: logview/log_repaint.c:37
+#:../logview/log_repaint.c:37
 msgid "August"
 msgstr "Tháng Tám"
 
-#: logview/log_repaint.c:37
+#:../logview/log_repaint.c:37
 msgid "September"
 msgstr "Tháng Chín"
 
-#: logview/log_repaint.c:37
+#:../logview/log_repaint.c:37
 msgid "October"
 msgstr "Tháng Mười"
 
-#: logview/log_repaint.c:38
+#:../logview/log_repaint.c:38
 msgid "November"
 msgstr "Tháng Mười Một"
 
-#: logview/log_repaint.c:38
+#:../logview/log_repaint.c:38
 msgid "December"
 msgstr "Tháng Mười Hai"
 
-#. Translators: Date only format, %x should well do really
-#: logview/log_repaint.c:278
-#, c-format
+#.Translators: Date only format, %x should well do really
+#:../logview/log_repaint.c:278
+#,c-format
+# Variable: do not translate/ biến: đừng dịch
 msgid "%x"
 msgstr "%x"
 
-#: logview/log_repaint.c:297
-#, fuzzy
+#:../logview/log_repaint.c:297
 msgid "Last Modified:"
-msgstr "Ngày sửa đổi: "
+msgstr "Ngày sửa đổi trước: "
 
-#. Translators: Make sure this is only Month and Day format, year
-#. * will be bogus here
-#: logview/log_repaint.c:326
+#.Translators: Make sure this is only Month and Day format, year
+#.* will be bogus here
+#:../logview/log_repaint.c:326
 msgid "%B %e"
 msgstr "%e %B"
 
-#. Translators: should be only the time, date could be bogus
-#: logview/log_repaint.c:398
-#, c-format
+#.Translators: should be only the time, date could be bogus
+#:../logview/log_repaint.c:398
+#,c-format
 msgid "%X"
 msgstr "%X"
 
-#: logview/logrtns.c:50
-#, fuzzy
+#:../logview/logrtns.c:50
 msgid "The file could not be opened"
-msgstr "Không thể mở tập tin."
+msgstr "Không mở được tập tin."
 
-#: logview/logrtns.c:216
+#:../logview/logrtns.c:216
 msgid "Unable to open logfile!\n"
-msgstr "Không thể mở logfile!\n"
+msgstr "Không mở được tập tin bản ghi.\n"
 
-#: logview/logrtns.c:223
+#:../logview/logrtns.c:223
 msgid "Not enough memory!\n"
-msgstr "Không đủ bộ nhớ!\n"
+msgstr "Không đủ bộ nhớ.\n"
 
-#: logview/logrtns.c:276
-#, c-format
+#:../logview/logrtns.c:276
+#,c-format
 msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file."
 msgstr ""
-"%s không phải là tập tin người dùng có thể xem. Hoặc là chạy chương trình "
-"với tư cách root, hoặc yêu cầu sysadmin thay đổi quyền truy cập của tập tin."
+"%s không phải là tập tin người dùng có thể đọc. Hoặc là chạy chương trình với tư cách người chu (root), hoặc yêu cầu quản trị hệ thống thay đổi quyền truy cập của tập tin ấy."
 
-#: logview/logrtns.c:281
-#, c-format
+#:../logview/logrtns.c:281
+#,c-format
 msgid "%s is too big."
-msgstr ""
+msgstr "%s quá lớn."
 
-#: logview/logrtns.c:285
-#, c-format
+#:../logview/logrtns.c:285
+#,c-format
 msgid "%s could not be opened."
-msgstr "Không thể mở tập tin %s."
+msgstr "Không mở được tập tin %s."
 
-#: logview/logrtns.c:326 logview/logrtns.c:337
-#, c-format
+#:../logview/logrtns.c:326 ../logview/logrtns.c:337
+#,c-format
 msgid "%s not a log file."
-msgstr "%s không phải là log file."
+msgstr "%s không phải là tập tin bản ghi."
 
-#: logview/logrtns.c:588 logview/logrtns.c:612
+#:../logview/logrtns.c:588 ../logview/logrtns.c:612
 msgid "ReadLogStats: out of memory"
-msgstr "ReadLogStats: hết bộ nhớ"
+msgstr "ReadLogStats (đọc thống kê bản ghi): hết bộ nhớ"
 
-#: logview/logview-findbar.c:265
-#, fuzzy
+#:../logview/logview-findbar.c:265
 msgid "Fin_d:"
 msgstr "_Tìm: "
 
-#: logview/logview-findbar.c:283
+#:../logview/logview-findbar.c:283
 msgid "Find Next"
 msgstr "Tìm tiếp"
 
-#: logview/logview-findbar.c:293
+#:../logview/logview-findbar.c:293
 msgid "Find Previous"
-msgstr "Tìm ngược"
+msgstr "Tìm trước"
 
-#: logview/logview.c:85
+#:../logview/logview.c:85
 msgid "_Log"
-msgstr "_Log"
+msgstr "_Bản ghi"
 
-#: logview/logview.c:87
+#:../logview/logview.c:87
 msgid "_View"
 msgstr "_Xem"
 
-#: logview/logview.c:90
+#:../logview/logview.c:90
 msgid "_Open..."
 msgstr "_Mở..."
 
-#: logview/logview.c:90
+#:../logview/logview.c:90
 msgid "Open a log from file"
-msgstr "Mở log từ tập tin"
+msgstr "Mở bản ghi từ tập tin"
 
-#: logview/logview.c:92
+#:../logview/logview.c:92
 msgid "_Properties"
 msgstr "_Thuộc tính"
 
-#: logview/logview.c:92
+#:../logview/logview.c:92
 msgid "Show Log Properties"
-msgstr "Hiện thuộc tính log"
+msgstr "Hiện thuộc tính bản ghi"
 
-#: logview/logview.c:94
+#:../logview/logview.c:94
 msgid "Close"
 msgstr "Đóng"
 
-#: logview/logview.c:94
+#:../logview/logview.c:94
 msgid "Close this log"
-msgstr "Đóng log này"
+msgstr "Đóng bản ghi này"
 
-#: logview/logview.c:96
+#:../logview/logview.c:96
 msgid "_Quit"
-msgstr "T_hoát"
+msgstr "_Thoát"
 
-#: logview/logview.c:96
+#:../logview/logview.c:96
 msgid "Quit the log viewer"
-msgstr "Thoát Trình xem log"
+msgstr "Thoát bộ xem bản ghi"
 
-#: logview/logview.c:99
+#:../logview/logview.c:99
 msgid "Copy"
 msgstr "Chép"
 
-#: logview/logview.c:101
+#:../logview/logview.c:101
 msgid "Select All"
-msgstr "Chọn _tất cả"
+msgstr "Chọn tất cả"
 
-#: logview/logview.c:101
+#:../logview/logview.c:101
 msgid "Select the entire log"
-msgstr "Chọn toàn bộ log"
+msgstr "Chọn toàn bộ bản ghi"
 
-#: logview/logview.c:103
+#:../logview/logview.c:103
 msgid "Find pattern in logs"
-msgstr ""
+msgstr "Tìm mẫu trong mọi bản ghi"
 
-#: logview/logview.c:106
+#:../logview/logview.c:106
 msgid "Collapse _All"
-msgstr "_Co tất cả"
+msgstr "_Co lại tất cả"
 
-#: logview/logview.c:106
+#:../logview/logview.c:106
 msgid "Collapse all the rows"
-msgstr "Co mọi dòng"
+msgstr "Co lại mọi dòng"
 
-#: logview/logview.c:109
+#:../logview/logview.c:109
 msgid "Open the help contents for the log viewer"
-msgstr ""
+msgstr "Mở nội dung trợ giúp cho bộ xem bản ghi"
 
-#: logview/logview.c:111
+#:../logview/logview.c:111
 msgid "Show the about dialog for the log viewer"
-msgstr ""
+msgstr "Hiển thị hộp giới thiệu cho bộ xem bản ghi"
 
-#: logview/logview.c:117
+#:../logview/logview.c:117
 msgid "_Monitor"
 msgstr "Theo _dõi"
 
-#: logview/logview.c:117
+#:../logview/logview.c:117
 msgid "Monitor Current Log"
-msgstr ""
+msgstr "Theo dõi bản ghi hiện có"
 
-#: logview/logview.c:119
+#:../logview/logview.c:119
 msgid "Ca_lendar"
 msgstr "_Lịch"
 
-#: logview/logview.c:119
+#:../logview/logview.c:119
 msgid "Show Calendar Log"
-msgstr "Hiện log lịch"
+msgstr "Hiện bản ghi lịch"
 
-#: logview/logview.c:121
+#:../logview/logview.c:121
 msgid "_Entry Detail"
 msgstr "Chi tiết _mục nhập"
 
-#: logview/logview.c:121
+#:../logview/logview.c:121
 msgid "Show Entry Detail"
 msgstr "Hiện chi tiết mục nhập"
 
-#: logview/logview.c:386
+#:../logview/logview.c:386
 msgid "Date"
 msgstr "Ngày"
 
-#: logview/logview.c:386
+#:../logview/logview.c:386
 msgid "Host Name"
 msgstr "Tên máy"
 
-#: logview/logview.c:387
+#:../logview/logview.c:387
 msgid "Process"
 msgstr "Tiến trình"
 
-#: logview/logview.c:387
+#:../logview/logview.c:387
 msgid "Message"
 msgstr "Thông điệp"
 
-#: logview/logview.c:580
+#:../logview/logview.c:580
 msgid "Open new logfile"
-msgstr "Mở log mới"
+msgstr "Mở bản ghi mới"
 
-#: logview/logview.c:876
+#:../logview/logview.c:876
 msgid "There was an error displaying help."
-msgstr "Lỗi hiển thị trợ giúp."
+msgstr "Gặp lỗi khi hiển thị trợ giúp."
 
-#. For translators : this is the window title that shows the log and
-#. app names : "logname (monitored) - APP_NAME"
-#: logview/logview.c:896
-#, c-format
+#.For translators : this is the window title that shows the log and
+#.app names : "logname (monitored) - APP_NAME"
+#:../logview/logview.c:896
+#,c-format
 msgid "%s (monitored) - %s"
-msgstr ""
+msgstr "%s (đã theo dõi) - %s"
 
-#: logview/logview.schemas.in.h:1
+#:../logview/logview.schemas.in.h:1
 msgid "Log file to open up on startup"
-msgstr "Tập tin log cần mở lúc khởi động"
+msgstr "Bản ghi cần mở lúc khởi động"
 
-#: logview/logview.schemas.in.h:2
+#:../logview/logview.schemas.in.h:2
 msgid ""
 "Specifies the log file to open up at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
 msgstr ""
-"Xác định tập tin log cần mở lúc khởi động. Mặc định hoặc là /var/adm/"
-"messages hoặc là /var/log/messages, tùy thuộc vào bản phân phối."
+"Xác định tập tin bản ghi cần mở lúc khởi động. Mặc định hoặc là /var/adm/messages hoặc là /var/log/messages, tùy thuộc vào hệ điều hành bạn."
 
-#: logview/zoom.c:71
+#:../logview/zoom.c:71
 msgid "Entry Detail"
 msgstr "Chi tiết _mục nhập"
 
-#. Translators: do not include year, it would be bogus
-#: logview/zoom.c:135
+#.Translators: do not include year, it would be bogus
+#:../logview/zoom.c:135
 msgid "%B %e %X"
 msgstr "%e %B %X"
 
@@ -2374,7 +2332,6 @@ msgstr "%e %B %X"
 #~ "Lỗi hiển thị trợ giúp: \n"
 #~ "%s"
 
-#, fuzzy
 #~ msgid "Copy selected lines"
 #~ msgstr "Chép vùng chọn"
 
