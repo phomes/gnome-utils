@@ -86,7 +86,7 @@ msgstr "Ühenduse viga"
 
 #: gdictsrc/gdict-app.c:134
 msgid "Unable to perform requested operation."
-msgstr "Soovitud toimingut ei saa teostada."
+msgstr "Soovitud toimingut pole võimalik teostada."
 
 #: gdictsrc/gdict-app.c:135
 msgid ""
@@ -111,7 +111,7 @@ msgstr "_Otsi stringi:"
 #: gdictsrc/gdict-app.c:496 gdictsrc/gdict-applet.c:313
 #: gdictsrc/gdict-pref-dialog.c:863
 msgid "Could not display help"
-msgstr "Abiteavet ei saa kuvada"
+msgstr "Abiteavet pole võimalik kuvada"
 
 #. Dictionary menu
 #: gdictsrc/gdict-app.c:632 gdictsrc/gdict-app.c:763
@@ -481,7 +481,7 @@ msgstr "Vigaste blokkide kontrollimine..."
 #: gfloppy/src/badblocks.c:263
 #, c-format
 msgid "Failed to open device %s for badblock checking\n"
-msgstr "Seadet %s ei saa avada vigaste blokkide kontrolliks\n"
+msgstr "Seadet %s pole võimalik vigaste blokkide kontrolliks avada\n"
 
 #: gfloppy/src/badblocks.c:283 gfloppy/src/gfloppy.c:527
 msgid "Checking for bad blocks... Done"
@@ -520,7 +520,7 @@ msgid ""
 "\n"
 "Please confirm that it is not write-protected."
 msgstr ""
-"Kettale ei saa kirjutada.\n"
+"Kettale pole võimalik kirjutada.\n"
 "\n"
 "Palun kontrolli, et kirjutuskaitset ei oleks peal."
 
@@ -536,7 +536,7 @@ msgid ""
 "Please confirm that it is in the drive\n"
 "with the drive door shut."
 msgstr ""
-"Kettale ei saa kirjutada.\n"
+"Kettale pole võimalik kirjutada.\n"
 "\n"
 "Palun kontrolli, et ketas oleks\n"
 "seadmes ja seadmeluuk oleks suletud."
@@ -583,7 +583,7 @@ msgstr "Vorminduse kontroll... valmis"
 #: gfloppy/src/fdformat.c:175
 #, c-format
 msgid "Unable to write to device %s"
-msgstr "Seadmele %s ei saa kirjutada"
+msgstr "Seadmele %s pole võimalik kirjutada"
 
 #: gfloppy/src/fdformat.c:195
 #, c-format
@@ -658,7 +658,7 @@ msgstr "Failisüsteemi loomine kettale..."
 
 #: gfloppy/src/gfloppy.c:469
 msgid "Unable to create filesystem correctly."
-msgstr "Failisüsteemi ei saa korralikult luua."
+msgstr "Failisüsteemi pole võimalik korralikult luua."
 
 #: gfloppy/src/gfloppy.c:474 gfloppy/src/gfloppy.c:513
 msgid "Making filesystem on disk... Done"
@@ -768,13 +768,13 @@ msgid ""
 "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
 "can't format a floppy without one of them."
 msgstr ""
-"Rakendusi mke2fs ja mkdosfs/mformat ei ole paigaldatud. Ilma nendeta ei saa "
-"floppykettaid vormindada."
+"Rakendusi mke2fs ja mkdosfs/mformat ei ole paigaldatud. Ilma nendeta pole "
+"võimalik floppykettaid vormindada."
 
 #: gfloppy/src/main.c:245
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr "Seadet %s ei saa avada, vormindamist ei saa jätkata."
+msgstr "Seadet %s pole võimalik avada, vormindamist ei saa jätkata."
 
 #: gfloppy/src/main.c:248 gfloppy/src/main.c:311
 #, c-format
@@ -798,11 +798,11 @@ msgstr ""
 
 #: gfloppy/src/main.c:258 gfloppy/src/main.c:322
 msgid "Cannot initialize device"
-msgstr "Seadet ei saa lähtestada"
+msgstr "Seadet pole võimalik lähtestada"
 
 #: gfloppy/src/main.c:308
 msgid "Unable to open any device, formatting cannot continue."
-msgstr "Ühtegi seadet ei saa avada, vormindamist ei saa jätkata."
+msgstr "Ühtegi seadet pole võimalik avada, vormindamist ei saa jätkata."
 
 #: gfloppy/src/main.c:311 gfloppy/src/main.c:314
 msgid "/dev/floppy/0 or /dev/fd0"
@@ -810,11 +810,11 @@ msgstr "/dev/floppy/0 või /dev/fd0"
 
 #: gfloppy/src/main.c:475
 msgid "Could not display help for the floppy formatter."
-msgstr "Kettavormindaja abiteavet ei saa kuvada."
+msgstr "Kettavormindaja abiteavet pole võimalik kuvada."
 
 #: gfloppy/src/main.c:494
 msgid "Incorrect volume name"
-msgstr ""
+msgstr "Vigane ketta nimi"
 
 #: gfloppy/src/main.c:495
 msgid "The volume name can't contain any blank space."
@@ -880,7 +880,7 @@ msgstr "Abiteabe laadimise viga"
 
 #: gnome-screenshot/gnome-panel-screenshot.c:87
 msgid "There was an error displaying the help pages for this dialog:"
-msgstr ""
+msgstr "Selle dialoogi abiteabe lehtede kuvamisel tekkis viga:"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if a specific window is taken
@@ -913,7 +913,7 @@ msgstr "Kuvatõmmis-%d.png"
 
 #: gnome-screenshot/gnome-panel-screenshot.c:338
 msgid "Unable to take a screenshot of the current desktop."
-msgstr "Käesoleva töölaua kuvatõmmist ei saa võtta."
+msgstr "Käesoleva töölaua kuvatõmmist pole võimalik võtta."
 
 #: gnome-screenshot/gnome-panel-screenshot.c:410
 msgid "Grab a window instead of the entire screen"
@@ -976,7 +976,7 @@ msgstr ""
 
 #: gnome-screenshot/gnome-screenshot.schemas.in.h:6
 msgid "Web directory"
-msgstr ""
+msgstr "Veebikataloog"
 
 #: gnome-screenshot/screenshot-dialog.c:194
 msgid ""
@@ -994,7 +994,7 @@ msgid ""
 "Unable to clear the temporary directory:\n"
 "%s"
 msgstr ""
-"Ajutist kataloogi ei saa puhastada:\n"
+"Ajutist kataloogi pole võimalik puhastada:\n"
 "%s"
 
 #: gnome-screenshot/screenshot-save.c:78
@@ -1005,11 +1005,11 @@ msgstr ""
 
 #: gnome-screenshot/screenshot-save.c:188
 msgid "Unknown error saving screenshot to disk"
-msgstr ""
+msgstr "Kuvatõmmise salvestamisel tekkis tundmatu viga"
 
 #: gnome-screenshot/screenshot-utils.c:611
 msgid "Untitled Window"
-msgstr ""
+msgstr "Pealkirjata aken"
 
 #: gnome-screenshot/screenshot-xfer.c:103
 msgid "Preparing to copy"
@@ -1036,7 +1036,7 @@ msgstr "Tundmatu GnomeVFSXferProgressStatus %d"
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Find files, folders, and documents on your computer"
-msgstr ""
+msgstr "Failide, kataloogide ja dokumentide otsimine"
 
 #: gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search for Files..."
@@ -1074,49 +1074,49 @@ msgstr "Otsinguvaliku \"Muutmise kuupäev on vanem kui\" valimine"
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:13
 msgid "Select the search option \"Date modified more than\""
-msgstr ""
+msgstr "Otsinguvaliku \"Muutmise kuupäev on uuem kui\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:16
 msgid "Select the search option \"File is empty\""
-msgstr ""
+msgstr "Otsinguvaliku \"Fail on tühi\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:19
 msgid "Select the search option \"Follow symbolic links\""
-msgstr ""
+msgstr "Otsinguvaliku \"Järgida nimeviiteid\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:22
 msgid "Select the search option \"Include other filesystems\""
-msgstr ""
+msgstr "Otsinguvaliku \"Kaasata teised failisüsteemid\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:25
 msgid "Select the search option \"Name does not contain\""
-msgstr ""
+msgstr "Otsinguvaliku \"Nimi ei sisalda\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:28
 msgid "Select the search option \"Name matches regular expression\""
-msgstr ""
+msgstr "Otsinguvaliku \"Nimi vastab regulaaravaldisele\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:31
 msgid "Select the search option \"Owned by group\""
-msgstr ""
+msgstr "Otsinguvaliku \"Omanik on grupp\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:34
 msgid "Select the search option \"Owned by user\""
-msgstr ""
+msgstr "Otsinguvaliku \"Omanik on kasutaja\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1128,19 +1128,19 @@ msgstr "Otsinguvaliku \"Omanik on tundmatu\" valimine"
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:40
 msgid "Select the search option \"Show hidden files and folders\""
-msgstr ""
+msgstr "Otsinguvaliku \"Näidata peidetud ja varufaile\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:43
 msgid "Select the search option \"Size at least\""
-msgstr ""
+msgstr "Otsinguvaliku \"Suurus vähemalt\" valimine"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:46
 msgid "Select the search option \"Size at most\""
-msgstr ""
+msgstr "Otsinguvaliku \"Suurus maksimaalselt\" valimine"
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:47
 msgid "Show Additional Options"
@@ -1268,7 +1268,7 @@ msgstr ""
 
 #: gsearchtool/gsearchtool-callbacks.c:163
 msgid "Could not open help document."
-msgstr "Abidokumenti ei saa avada."
+msgstr "Abidokumenti pole võimalik avada."
 
 #: gsearchtool/gsearchtool-callbacks.c:298
 #, c-format
@@ -1333,7 +1333,7 @@ msgstr "Prügikasti pole saadaval.  \"%s\" pole võimalik prügikasti tõsta."
 #: gsearchtool/gsearchtool-callbacks.c:660
 #, c-format
 msgid "Could not delete \"%s\"."
-msgstr "\"%s\" ei saa kustutada."
+msgstr "\"%s\" pole võimalik kustutada."
 
 #: gsearchtool/gsearchtool-callbacks.c:780
 #, c-format
@@ -1351,7 +1351,7 @@ msgstr "Otsingutulemuste salvestamine..."
 
 #: gsearchtool/gsearchtool-callbacks.c:1184
 msgid "Could not save document."
-msgstr "Dokumenti ei saa salvestada."
+msgstr "Dokumenti pole võimalik salvestada."
 
 #: gsearchtool/gsearchtool-callbacks.c:1185
 msgid "You did not select a document name."
@@ -1369,7 +1369,7 @@ msgstr "Dokument \"%s\" on juba olemas.  Kas sa soovid seda üle kirjutada?"
 
 #: gsearchtool/gsearchtool-callbacks.c:1252
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr ""
+msgstr "Olemasolevat faili üle kirjutades kirjutatakse üle ka faili sisu."
 
 #: gsearchtool/gsearchtool-callbacks.c:1316
 msgid "The document name you selected is a folder."
@@ -1464,7 +1464,7 @@ msgstr "Nimi ei _sisalda"
 
 #: gsearchtool/gsearchtool.c:95
 msgid "Name matches regular e_xpression"
-msgstr "Vastab _regulaaravaldisele"
+msgstr "Nimi vastab _regulaaravaldisele"
 
 #: gsearchtool/gsearchtool.c:97
 msgid "Show hidden and backup files"
@@ -1751,7 +1751,7 @@ msgstr "Klõpsa otsingu peatamiseks"
 
 #: gsearchtool/gsearchtool.c:2813
 msgid "Cannot initialize bonobo."
-msgstr "Bonobo't ei saa lähtestada."
+msgstr "Bonobo't pole võimalik lähtestada."
 
 #: logview/about.c:47 logview/logview.c:47
 msgid "System Log Viewer"
@@ -1796,7 +1796,7 @@ msgstr "Tegevuse eemaldamine"
 #: logview/actions.c:275
 #, c-format
 msgid "Cannot open action data base <%s>! Open failed."
-msgstr "Tegevuste andmebaasi <%s> ei saa avada! Tõrge avamisel."
+msgstr "Tegevuste andmebaasi <%s> pole võimalik avada! Tõrge avamisel."
 
 #: logview/actions.c:310 logview/actions.c:323 logview/actions.c:334
 #: logview/actions.c:345 logview/actions.c:356 logview/actions.c:367
@@ -1805,7 +1805,7 @@ msgstr "Viga tegevuste andmebaasi analüüsl"
 
 #: logview/actions.c:401
 msgid "Can't write to actions database!"
-msgstr "Tegevuste andmebaasi ei saa kirjutada!"
+msgstr "Tegevuste andmebaasi pole võimalik kirjutada!"
 
 #: logview/actions.c:499
 #, c-format
@@ -1916,12 +1916,12 @@ msgstr "Kalender"
 #: logview/desc_db.c:66
 #, c-format
 msgid "Cannot open regexp data base <%s>! Open failed."
-msgstr "Regulaaravaldise andmebaasi <%s> ei saa avada! Tõrge avamisel."
+msgstr "Regulaaravaldise andmebaasi <%s> pole võimalik avada! Tõrge avamisel."
 
 #: logview/desc_db.c:176
 #, c-format
 msgid "Cannot open description data base <%s>! Open failed."
-msgstr "Kirjelduste andmebaasi <%s> ei saa avada! Tõrge avamisel."
+msgstr "Kirjelduste andmebaasi <%s> pole võimalik avada! Tõrge avamisel."
 
 #. ----------------------------------------------------------------------
 #. NAME:
@@ -2068,7 +2068,7 @@ msgstr "%s on liiga suur."
 #: logview/logrtns.c:284
 #, c-format
 msgid "%s could not be opened."
-msgstr "%s ei saa avada."
+msgstr "%s pole võimalik avada."
 
 #: logview/logrtns.c:325 logview/logrtns.c:336
 #, c-format
