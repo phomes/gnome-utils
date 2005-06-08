@@ -1,12 +1,16 @@
-# Gnome-utils Estonian tranlation
-# Copyright (C) 1999-2002 Free Software Foundation, Inc.
+# Gnome utiliitide eesti keele tõlge.
+# Estonian translation of Gnome-utils
+# 
+# Copyright (C) 1999, 2002, 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# 
 # Lauris Kaplinski <lauris@ariman.ee>, 1999.
 # Tõivo Leedjärv <toivo@linux.ee>, 2002.
 # Ivar Smolin <okul@linux.ee>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.1.3\n"
+"Project-Id-Version: gnome-utils 2.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-08 15:11+0100\n"
 "PO-Revision-Date: 2005-02-20 09:38+0200\n"
@@ -1167,72 +1171,89 @@ msgid ""
 "This key determines if the \"Contains the text\" search option is selected "
 "when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Sisaldab teksti\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:51
 msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Muutmise kuupäev on vanem kui\" "
+"valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:52
 msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Muutmise kuupäev on uuem kui\" "
+"valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:53
 msgid ""
 "This key determines if the \"File is empty\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Fail on tühi\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:54
 msgid ""
 "This key determines if the \"Follow symbolic links\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Järgida nimeviiteid\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:55
 msgid ""
 "This key determines if the \"Include other filesystems\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Kaasata teised failisüsteemid\" "
+"valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:56
 msgid ""
 "This key determines if the \"Name does not contain\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Nimi ei sisalda\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:57
 msgid ""
 "This key determines if the \"Name matches regular expression\" search option "
 "is selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Nimi vastab "
+"regulaaravaldisele\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:58
 msgid ""
 "This key determines if the \"Owned by group\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Kuulub grupile\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:59
 msgid ""
 "This key determines if the \"Owned by user\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Kuulub kasutajale\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:60
 msgid ""
 "This key determines if the \"Owner is unrecognized\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Omanik on tundmatu\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:61
 msgid ""
 "This key determines if the \"Show hidden files and folders\" search option "
 "is selected when the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Näidata peidetud ja varufaile\" "
+"valituks."
 
 #. Translators: The quoted text is the label of the additional
 #. options expander that is translated elsewhere.
@@ -1247,12 +1268,14 @@ msgid ""
 "This key determines if the \"Size at least\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Suurus vähemalt\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:66
 msgid ""
 "This key determines if the \"Size at most\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Suurus maksimaalselt\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:67
 msgid ""
@@ -2225,6 +2248,9 @@ msgid ""
 "Specifies the log file to open up at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
 msgstr ""
+"Käivitamisel avatava logifaili määramine. Sõltuvalt sinu "
+"operatsioonisüsteemist on selleks vaikimisi kas /var/adm/messages või "
+"/var/log/messages."
 
 #: logview/zoom.c:71
 msgid "Entry Detail"
