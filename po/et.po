@@ -1,9 +1,9 @@
 # Gnome utiliitide eesti keele tõlge.
 # Estonian translation of Gnome-utils
-# 
+#
 # Copyright (C) 1999, 2002, 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-utils package.
-# 
+#
 # Lauris Kaplinski <lauris@ariman.ee>, 1999.
 # Tõivo Leedjärv <toivo@linux.ee>, 2002.
 # Ivar Smolin <okul@linux.ee>, 2005.
@@ -606,7 +606,7 @@ msgstr "Käesoleva ketta geomeetriat ei õnnestu tuvastada."
 
 #: gfloppy/src/gfloppy.c:215
 msgid "Error while creating a unique filename for the bad blocks list file."
-msgstr ""
+msgstr "Viga halbade blokkide loendi jaoks unikaalse failinime loomisel."
 
 #: gfloppy/src/gfloppy.c:235
 msgid "Error while filling the bad blocks list file."
@@ -972,11 +972,11 @@ msgstr ""
 
 #: gnome-screenshot/gnome-screenshot.schemas.in.h:4
 msgid "Include Border"
-msgstr ""
+msgstr "Raami kaasamine"
 
 #: gnome-screenshot/gnome-screenshot.schemas.in.h:5
 msgid "Include the window manager border along with the screenshot"
-msgstr ""
+msgstr "Akna raami kaasamine ekraanitõmmisele"
 
 #: gnome-screenshot/gnome-screenshot.schemas.in.h:6
 msgid "Web directory"
@@ -1006,6 +1006,8 @@ msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr ""
+"Lapsprotsess lõpetas ootamatult, seetõttu pole võimalik ekraanitõmmist "
+"kettale salvestada."
 
 #: gnome-screenshot/screenshot-save.c:188
 msgid "Unknown error saving screenshot to disk"
@@ -1017,7 +1019,7 @@ msgstr "Pealkirjata aken"
 
 #: gnome-screenshot/screenshot-xfer.c:103
 msgid "Preparing to copy"
-msgstr ""
+msgstr "Ettevalmistus kopeerimiseks"
 
 #: gnome-screenshot/screenshot-xfer.c:181
 msgid "File already exists"
@@ -1193,8 +1195,7 @@ msgstr ""
 msgid ""
 "This key determines if the \"File is empty\" search option is selected when "
 "the search tool is started."
-msgstr ""
-"See võti määrab käivitamisel otsinguvaliku \"Fail on tühi\" valituks."
+msgstr "See võti määrab käivitamisel otsinguvaliku \"Fail on tühi\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:54
 msgid ""
@@ -1223,8 +1224,8 @@ msgid ""
 "This key determines if the \"Name matches regular expression\" search option "
 "is selected when the search tool is started."
 msgstr ""
-"See võti määrab käivitamisel otsinguvaliku \"Nimi vastab "
-"regulaaravaldisele\" valituks."
+"See võti määrab käivitamisel otsinguvaliku \"Nimi vastab regulaaravaldisele"
+"\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:58
 msgid ""
@@ -1383,7 +1384,7 @@ msgstr "Sa ei valinud dokumendi nime."
 #: gsearchtool/gsearchtool-callbacks.c:1215
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
-msgstr ""
+msgstr "Dokumenti \"%s\" pole võimalik \"%s\" alla salvestada."
 
 #: gsearchtool/gsearchtool-callbacks.c:1248
 #, c-format
@@ -1694,7 +1695,7 @@ msgstr "O_tsingutulemused:"
 
 #: gsearchtool/gsearchtool.c:2133
 msgid "List View"
-msgstr ""
+msgstr "Nimekirjavaade"
 
 #: gsearchtool/gsearchtool.c:2183
 msgid "Name"
@@ -2249,8 +2250,8 @@ msgid ""
 "messages or /var/log/messages, depending on your operating system."
 msgstr ""
 "Käivitamisel avatava logifaili määramine. Sõltuvalt sinu "
-"operatsioonisüsteemist on selleks vaikimisi kas /var/adm/messages või "
-"/var/log/messages."
+"operatsioonisüsteemist on selleks vaikimisi kas /var/adm/messages või /var/"
+"log/messages."
 
 #: logview/zoom.c:71
 msgid "Entry Detail"
