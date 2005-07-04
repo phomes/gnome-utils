@@ -13,33 +13,29 @@ msgstr ""
 "Project-Id-Version: gnome-utils 2.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-08 15:11+0100\n"
-"PO-Revision-Date: 2005-06-18 21:09+0300\n"
-"Last-Translator: Priit Laes <amd@store20.com>\n"
+"PO-Revision-Date: 2005-02-20 09:38+0200\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee> \n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1
-#: gdictsrc/gdict-applet.c:146
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:1 gdictsrc/gdict-applet.c:146
 msgid "Dictionary Lookup"
 msgstr "Otsing sõnaraamatust"
 
-#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2
-#: gdictsrc/gdict-applet.c:27
+#: gdictsrc/GNOME_GDictApplet.server.in.in.h:2 gdictsrc/gdict-applet.c:27
 #: gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Otsi sõnu onlain-sõnaraamatust"
 
-#: gdictsrc/GNOME_GDictApplet.xml.h:1
-#: gdictsrc/gdict-app.c:650
+#: gdictsrc/GNOME_GDictApplet.xml.h:1 gdictsrc/gdict-app.c:650
 #: logview/logview.c:111
 msgid "_About"
 msgstr "_Programmist lähemalt"
 
-#: gdictsrc/GNOME_GDictApplet.xml.h:2
-#: logview/logview.c:88
+#: gdictsrc/GNOME_GDictApplet.xml.h:2 logview/logview.c:88
 msgid "_Help"
 msgstr "_Abi"
 
@@ -49,41 +45,42 @@ msgstr "_Otsi valitud teksti"
 
 #: gdictsrc/GNOME_GDictApplet.xml.h:4
 msgid "_Preferences"
-msgstr "_Eelustused"
+msgstr "_Eelistused"
 
 #. Could not look up search strategies, so just display a
 #. * label; FIXME: Memory leak
 #.
-#: gdictsrc/dict.c:676
-#: gdictsrc/gdict-pref-dialog.c:664
+#: gdictsrc/dict.c:676 gdictsrc/gdict-pref-dialog.c:664
 #: gdictsrc/gdict-pref-dialog.c:713
 msgid "Cannot connect to server"
-msgstr "Ei saa serveriga ühendust"
+msgstr "Serveriga pole võimalik ühenduda"
 
 #: gdictsrc/dict.c:689
 msgid "Server Error"
 msgstr "Serveri viga"
 
 #: gdictsrc/dict.c:690
-msgid "A serious error occured. Please check that your server and port are correct. For reference the default server is dict.org and the port 2628"
-msgstr "Tekkis tõsine tõrge. Palun kontrolli, kas su serveri nimi ja port on õiged. Teadmiseks: vaikimisi server on dict.org ja port 2628"
+msgid ""
+"A serious error occured. Please check that your server and port are correct. "
+"For reference the default server is dict.org and the port 2628"
+msgstr ""
+"Tekkis tõsine tõrge. Palun kontrolli, kas su serveri nimi ja port on õiged. "
+"Teadmiseks: vaikimisi server on dict.org ja port 2628"
 
 #. Translator credits
-#: gdictsrc/gdict-about.c:42
-#: logview/about.c:43
+#: gdictsrc/gdict-about.c:42 logview/about.c:43
 msgid "translator-credits"
 msgstr ""
 "Tõivo Leedjärv <toivo@linux.ee>, 2002.\n"
-"Ivar Smolin <okul@linux.ee>, 2005."
+"Ivar Smolin <okul@linux.ee>, 2005.\n"
+"Priit Laes <amd@store20.com>, 2005."
 
 #: gdictsrc/gdict-about.c:44
 msgid "A client for the MIT dictionary server."
 msgstr "MIT sõnaraamatuserveri klientprogramm."
 
-#: gdictsrc/gdict-about.c:47
-#: gdictsrc/gdict-defbox.c:82
-#: gdictsrc/gdict-defbox.c:94
-#: gdictsrc/gdict-pref-dialog.c:470
+#: gdictsrc/gdict-about.c:47 gdictsrc/gdict-defbox.c:82
+#: gdictsrc/gdict-defbox.c:94 gdictsrc/gdict-pref-dialog.c:470
 #: gdictsrc/gnome-dictionary.desktop.in.h:1
 msgid "Dictionary"
 msgstr "Sõnaraamat"
@@ -116,15 +113,13 @@ msgstr "Otsing"
 msgid "_Search for:"
 msgstr "_Otsi stringi:"
 
-#: gdictsrc/gdict-app.c:496
-#: gdictsrc/gdict-applet.c:313
+#: gdictsrc/gdict-app.c:496 gdictsrc/gdict-applet.c:313
 #: gdictsrc/gdict-pref-dialog.c:863
 msgid "Could not display help"
 msgstr "Abiteavet pole võimalik kuvada"
 
 #. Dictionary menu
-#: gdictsrc/gdict-app.c:632
-#: gdictsrc/gdict-app.c:763
+#: gdictsrc/gdict-app.c:632 gdictsrc/gdict-app.c:763
 msgid "_Look Up Word"
 msgstr "Otsi _sõna"
 
@@ -149,8 +144,7 @@ msgid "Close the application"
 msgstr "Sulgeb rakenduse"
 
 #. Edit menu, see below for cut, paste etc.
-#: gdictsrc/gdict-app.c:640
-#: logview/logview.c:103
+#: gdictsrc/gdict-app.c:640 logview/logview.c:103
 msgid "_Find..."
 msgstr "_Otsi..."
 
@@ -175,8 +169,7 @@ msgid "Configure the application"
 msgstr "Rakenduse seadistamine"
 
 #. Help menu
-#: gdictsrc/gdict-app.c:648
-#: logview/logview.c:109
+#: gdictsrc/gdict-app.c:648 logview/logview.c:109
 msgid "_Contents"
 msgstr "_Sisu"
 
@@ -208,8 +201,7 @@ msgstr "Lõikab valiku"
 msgid "_Copy"
 msgstr "_Kopeeri"
 
-#: gdictsrc/gdict-app.c:668
-#: logview/logview.c:99
+#: gdictsrc/gdict-app.c:668 logview/logview.c:99
 msgid "Copy the selection"
 msgstr "Kopeerib valiku"
 
@@ -245,8 +237,7 @@ msgstr "_Sõna:"
 msgid "Word"
 msgstr "Sõna"
 
-#: gdictsrc/gdict-app.c:789
-#: gdictsrc/gdict-app.c:791
+#: gdictsrc/gdict-app.c:789 gdictsrc/gdict-app.c:791
 msgid "Word Entry"
 msgstr "Sõna sisestusväli"
 
@@ -270,8 +261,7 @@ msgstr "Sõna otsimine..."
 msgid "Lookup done"
 msgstr "Otsing valmis"
 
-#: gdictsrc/gdict-defbox.c:112
-#: gdictsrc/gdict-speller.c:253
+#: gdictsrc/gdict-defbox.c:112 gdictsrc/gdict-speller.c:253
 msgid "No matches found"
 msgstr "Ühtegi vastavust ei leitud"
 
@@ -283,8 +273,7 @@ msgstr "Stringi ei leitud"
 msgid "Definition preview"
 msgstr "Kirjelduse eelvaade"
 
-#: gdictsrc/gdict-defbox.c:902
-#: gdictsrc/gdict-speller.c:293
+#: gdictsrc/gdict-defbox.c:902 gdictsrc/gdict-speller.c:293
 msgid "Error invoking query"
 msgstr "Viga päringu täitmisel"
 
@@ -393,20 +382,32 @@ msgid "Port used to connect to server"
 msgstr "Serveriga ühenduse loomiseks kasutatav port"
 
 #: gdictsrc/gdict.schemas.in.h:3
-msgid "Specify whether to use smart lookup. This key is dependant on whether the dictionary server supports this option. The default is TRUE"
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE"
 msgstr ""
+"Targa otsingu kasutamise määramine. Selle võtme toimimine sõltub sellest, "
+"kas sõnastikuserver seda võtit toetab. Vaikimisi on see võti valitud"
 
 #: gdictsrc/gdict.schemas.in.h:4
 msgid "The database to use in the dictionary server."
 msgstr "Sõnaraamatu serveris kasutatav andmebaas."
 
 #: gdictsrc/gdict.schemas.in.h:5
-msgid "The dictionary server to connect to. The default server is dict.org. See http://www.dict.org for details on other servers"
-msgstr "Sõnaraamatu server, kuhu ühenduda. Vaikimisi server on dict.org. Teiste serverite kohta lisainfo saamiseks vaata http://www.dict.org"
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers"
+msgstr ""
+"Sõnaraamatu server, kuhu ühenduda. Vaikimisi server on dict.org. Teiste "
+"serverite kohta lisainfo saamiseks vaata http://www.dict.org"
 
 #: gdictsrc/gdict.schemas.in.h:6
-msgid "The name of the individual database to use in the dictionary server. ! specifies that gnome-dictionary should search all databases in a given server"
-msgstr "Sõnaraamatu serveris kasutatava üksiku andmebaasi nimi. ! tähendab, et gnome-dictionary peaks otsima serveri kõigist andmebaasidest"
+msgid ""
+"The name of the individual database to use in the dictionary server. ! "
+"specifies that gnome-dictionary should search all databases in a given server"
+msgstr ""
+"Sõnaraamatu serveris kasutatava üksiku andmebaasi nimi. ! tähendab, et gnome-"
+"dictionary peaks otsima serveri kõigist andmebaasidest"
 
 #: gdictsrc/gdict.schemas.in.h:7
 msgid "The port number to connect to. The default port is 2628."
@@ -417,7 +418,10 @@ msgid "The search strategy to use"
 msgstr "Kasutatav otsingustrateegia"
 
 #: gdictsrc/gdict.schemas.in.h:9
-msgid "The search strategy to use. This is dependant on the search strategy that the dictionary server supports. The default strategy is 'lev' - Match words within Levenshtein distance one"
+msgid ""
+"The search strategy to use. This is dependant on the search strategy that "
+"the dictionary server supports. The default strategy is 'lev' - Match words "
+"within Levenshtein distance one"
 msgstr ""
 
 #: gdictsrc/gdict.schemas.in.h:10
@@ -428,8 +432,7 @@ msgstr "Kasuta tarka otsingut"
 msgid "Gnome Dictionary"
 msgstr "Gnome Sõnaraamat"
 
-#: gfloppy/gfloppy.desktop.in.h:1
-#: gfloppy/src/gfloppy2.glade.h:9
+#: gfloppy/gfloppy.desktop.in.h:1 gfloppy/src/gfloppy2.glade.h:9
 msgid "Floppy Formatter"
 msgstr "Diskettide vormindaja"
 
@@ -438,8 +441,12 @@ msgid "Format Floppy Disks"
 msgstr "Vorminda diskette (flopisid)"
 
 #: gfloppy/gfloppy.schemas.in.h:1
-msgid "0 for the quick format, 1 for a standard one (adds a low-level format) and finally 2 for a thorough format (adds a bad blocks scan)."
-msgstr "0 - kiire vormindamine, 1 - tavaline (lisab madaltaseme vormindamise), 2 - põhjalik (lisab vigaste blokkide otsingu)."
+msgid ""
+"0 for the quick format, 1 for a standard one (adds a low-level format) and "
+"finally 2 for a thorough format (adds a bad blocks scan)."
+msgstr ""
+"0 - kiire vormindamine, 1 - tavaline (lisab madaltaseme vormindamise), 2 - "
+"põhjalik (lisab vigaste blokkide otsingu)."
 
 #: gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
@@ -454,7 +461,9 @@ msgid "Default formatting mode"
 msgstr "Vormindamise vaikeresiim"
 
 #: gfloppy/gfloppy.schemas.in.h:5
-msgid "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set mtools as the preferred FAT formatting backend."
+msgid ""
+"TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
+"mtools as the preferred FAT formatting backend."
 msgstr ""
 
 #: gfloppy/gfloppy.schemas.in.h:6
@@ -463,7 +472,7 @@ msgstr "ext2 - linuxi failisüsteem, fat - DOSi failisüsteem."
 
 #: gfloppy/src/badblocks.c:84
 msgid "Internal Error: Unable to seek to the correct location."
-msgstr "Sisemine viga: Ei saa positsioneerida õigele asukohale."
+msgstr "Sisemine viga: Õigele asukohale pole võimalik positsioneerida."
 
 #: gfloppy/src/badblocks.c:93
 #, c-format
@@ -481,8 +490,7 @@ msgstr "Vigaste blokkide kontrollimine..."
 msgid "Failed to open device %s for badblock checking\n"
 msgstr "Seadet %s pole võimalik vigaste blokkide kontrolliks avada\n"
 
-#: gfloppy/src/badblocks.c:283
-#: gfloppy/src/gfloppy.c:527
+#: gfloppy/src/badblocks.c:283 gfloppy/src/gfloppy.c:527
 msgid "Checking for bad blocks... Done"
 msgstr "Vigaste blokkide kontrollimine... Valmis"
 
@@ -494,8 +502,7 @@ msgstr "Ketta vormindamine..."
 msgid "I don't know what this is, but it's very wrong."
 msgstr "Ma ei tea, mis see on, aga see on väga vale."
 
-#: gfloppy/src/fdformat.c:53
-#: gfloppy/src/fdformat.c:66
+#: gfloppy/src/fdformat.c:53 gfloppy/src/fdformat.c:66
 #, c-format
 msgid "Error formatting track #%d"
 msgstr "Viga raja nr %d vormindamisel"
@@ -514,8 +521,7 @@ msgstr "Ketta vormindamine... valmis"
 msgid "Verifying the format..."
 msgstr "Vorminduse kontrollimine..."
 
-#: gfloppy/src/fdformat.c:100
-#: gfloppy/src/fdformat.c:185
+#: gfloppy/src/fdformat.c:100 gfloppy/src/fdformat.c:185
 msgid ""
 "Unable to write to the floppy.\n"
 "\n"
@@ -525,14 +531,12 @@ msgstr ""
 "\n"
 "Palun kontrolli, et kirjutuskaitset ei oleks peal."
 
-#: gfloppy/src/fdformat.c:103
-#: gfloppy/src/fdformat.c:188
+#: gfloppy/src/fdformat.c:103 gfloppy/src/fdformat.c:188
 #, c-format
 msgid "Insufficient permissions to open floppy device %s."
 msgstr "Kettaseadme %s avamiseks ei ole piisavalt õiguseid."
 
-#: gfloppy/src/fdformat.c:107
-#: gfloppy/src/fdformat.c:192
+#: gfloppy/src/fdformat.c:107 gfloppy/src/fdformat.c:192
 msgid ""
 "Unable to access the floppy disk.\n"
 "\n"
@@ -646,7 +650,8 @@ msgid ""
 "The bad blocks checking utility (mbadblocks) reported the following errors:\n"
 "%s."
 msgstr ""
-"Pahade blokkide kontrollimise utiliit (mbadblocks) teatas järgnevatest vigadest:\n"
+"Pahade blokkide kontrollimise utiliit (mbadblocks) teatas järgnevatest "
+"vigadest:\n"
 "%s."
 
 #: gfloppy/src/gfloppy.c:435
@@ -654,8 +659,7 @@ msgid "Abnormal mbadblocks child process termination."
 msgstr "Ebanormaalne mbadblocks lapsprotsessi katkestamine."
 
 #. make the filesystem
-#: gfloppy/src/gfloppy.c:461
-#: gfloppy/src/gfloppy.c:501
+#: gfloppy/src/gfloppy.c:461 gfloppy/src/gfloppy.c:501
 msgid "Making filesystem on disk..."
 msgstr "Failisüsteemi loomine kettale..."
 
@@ -663,8 +667,7 @@ msgstr "Failisüsteemi loomine kettale..."
 msgid "Unable to create filesystem correctly."
 msgstr "Failisüsteemi pole võimalik korralikult luua."
 
-#: gfloppy/src/gfloppy.c:474
-#: gfloppy/src/gfloppy.c:513
+#: gfloppy/src/gfloppy.c:474 gfloppy/src/gfloppy.c:513
 msgid "Making filesystem on disk... Done"
 msgstr "Failisüsteemi loomine kettale... valmis"
 
@@ -681,14 +684,19 @@ msgstr "Viga vigaste blokkide kontrollimisel."
 msgid "    "
 msgstr "    "
 
-#: gfloppy/src/gfloppy2.glade.h:2
-#: gnome-screenshot/gnome-screenshot.glade.h:1
+#: gfloppy/src/gfloppy2.glade.h:2 gnome-screenshot/gnome-screenshot.glade.h:1
 msgid "*"
 msgstr "*"
 
 #: gfloppy/src/gfloppy2.glade.h:3
-msgid "<small><i><b>Note</b>: The mbadblocks utility isn't installed on this system.  It must be installed in order to perform a thorough DOS (fat) formatting.</i></small>"
-msgstr "<small><i><b>Märkus</b>: Utiliiti mbadblocks ei ole sellesse süsteemi paigaldatud.  DOS (fat) vormingus vormindamiseks peab see olema paigaldatud.</i></small>"
+msgid ""
+"<small><i><b>Note</b>: The mbadblocks utility isn't installed on this "
+"system.  It must be installed in order to perform a thorough DOS (fat) "
+"formatting.</i></small>"
+msgstr ""
+"<small><i><b>Märkus</b>: Utiliiti mbadblocks ei ole sellesse süsteemi "
+"paigaldatud.  DOS (fat) vormingus vormindamiseks peab see olema paigaldatud."
+"</i></small>"
 
 #: gfloppy/src/gfloppy2.glade.h:4
 msgid "DOS (FAT)"
@@ -763,16 +771,19 @@ msgid "Cannot Format"
 msgstr "Vormindamine pole võimalik"
 
 #: gfloppy/src/main.c:225
-msgid "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You can't format a floppy without one of them."
-msgstr "Rakendusi mke2fs ja mkdosfs/mformat ei ole paigaldatud. Ilma nendeta pole võimalik floppykettaid vormindada."
+msgid ""
+"Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
+"can't format a floppy without one of them."
+msgstr ""
+"Rakendusi mke2fs ja mkdosfs/mformat ei ole paigaldatud. Ilma nendeta pole "
+"võimalik floppykettaid vormindada."
 
 #: gfloppy/src/main.c:245
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
-msgstr "Seadet %s pole võimalik avada, vormindamist ei saa jätkata."
+msgstr "Seadet %s pole võimalik avada, vormindamist pole võimalik jätkata."
 
-#: gfloppy/src/main.c:248
-#: gfloppy/src/main.c:311
+#: gfloppy/src/main.c:248 gfloppy/src/main.c:311
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -781,27 +792,26 @@ msgstr ""
 "Seade %s ei ole ühendatud.\n"
 "Jätkamiseks ühenda palun seade."
 
-#: gfloppy/src/main.c:251
-#: gfloppy/src/main.c:314
+#: gfloppy/src/main.c:251 gfloppy/src/main.c:314
 #, c-format
 msgid ""
-"You do not have the proper permissions to write to %s, formatting will not be possible.\n"
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"Sul ei ole õiguseid %s seadmele kirjutamiseks ja seetõttu pole vormindamine võimalik.\n"
+"Sul ei ole õiguseid %s seadmele kirjutamiseks ja seetõttu pole vormindamine "
+"võimalik.\n"
 "Kirjutusõiguste saamiseks võta ühendust oma süsteemiülemaga."
 
-#: gfloppy/src/main.c:258
-#: gfloppy/src/main.c:322
+#: gfloppy/src/main.c:258 gfloppy/src/main.c:322
 msgid "Cannot initialize device"
 msgstr "Seadet pole võimalik lähtestada"
 
 #: gfloppy/src/main.c:308
 msgid "Unable to open any device, formatting cannot continue."
-msgstr "Ühtegi seadet pole võimalik avada, vormindamist ei saa jätkata."
+msgstr "Ühtegi seadet pole võimalik avada, vormindamist pole võimalik jätkata."
 
-#: gfloppy/src/main.c:311
-#: gfloppy/src/main.c:314
+#: gfloppy/src/main.c:311 gfloppy/src/main.c:314
 msgid "/dev/floppy/0 or /dev/fd0"
 msgstr "/dev/floppy/0 või /dev/fd0"
 
@@ -827,10 +837,18 @@ msgstr "SEADE"
 
 #: gfloppy/src/progress.c:122
 #, c-format
-msgid "The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been found and marked."
-msgid_plural "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have been found and marked."
-msgstr[0] "Ketas on vormingatud kuid selle käigus leiti ja märgiti <b>1 paha blokk</b> (%d'st)."
-msgstr[1] "Ketas on vormingatud kuid selle käigus leiti ja märgiti <b>1 paha blokki</b> (%d'st)."
+msgid ""
+"The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been "
+"found and marked."
+msgid_plural ""
+"The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
+"been found and marked."
+msgstr[0] ""
+"Ketas on vormingatud kuid selle käigus leiti ja märgiti <b>1 paha blokk</b> "
+"(%d'st)."
+msgstr[1] ""
+"Ketas on vormingatud kuid selle käigus leiti ja märgiti <b>1 paha blokki</b> "
+"(%d'st)."
 
 #: gfloppy/src/progress.c:125
 msgid "Floppy formatted successfully."
@@ -865,7 +883,7 @@ msgstr "%ld / %ld'st"
 
 #: gnome-screenshot/gnome-panel-screenshot.c:86
 msgid "Error loading help"
-msgstr "Abiteabe laadimise viga"
+msgstr "Viga abiteabe laadimisel"
 
 #: gnome-screenshot/gnome-panel-screenshot.c:87
 msgid "There was an error displaying the help pages for this dialog:"
@@ -950,7 +968,9 @@ msgid "Directory that the screenshooter last used to save in"
 msgstr ""
 
 #: gnome-screenshot/gnome-screenshot.schemas.in.h:3
-msgid "Effect to add to the outside of a border. Possible values are \"shadow\", \"none\", and \"black-line\"."
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"black-line\"."
 msgstr ""
 
 #: gnome-screenshot/gnome-screenshot.schemas.in.h:4
@@ -970,6 +990,8 @@ msgid ""
 "Glade file for the screenshot program is missing.\n"
 "Please check your installation of gnome-panel"
 msgstr ""
+"Ekraanitõmmiste tegemise programmi Glade' faili ei leitud.\n"
+"Palun kontrolli gnome-panel'i paigaldust"
 
 #: gnome-screenshot/screenshot-dialog.c:213
 msgid "Select a directory"
@@ -985,8 +1007,12 @@ msgstr ""
 "%s"
 
 #: gnome-screenshot/screenshot-save.c:78
-msgid "The child save process unexpectedly exited.  We are unable to write the screenshot to disk."
-msgstr "Lapsprotsess lõpetas ootamatult, seetõttu pole võimalik ekraanitõmmist kettale salvestada."
+msgid ""
+"The child save process unexpectedly exited.  We are unable to write the "
+"screenshot to disk."
+msgstr ""
+"Lapsprotsess lõpetas ootamatult, seetõttu pole võimalik ekraanitõmmist "
+"kettale salvestada."
 
 #: gnome-screenshot/screenshot-save.c:188
 msgid "Unknown error saving screenshot to disk"
@@ -1037,11 +1063,11 @@ msgstr "Keela kiirotsingu teine skanneerimine"
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:3
 msgid "Quick Search Excluded Paths"
-msgstr ""
+msgstr "Kiirotsinugu vahelejäetavad rajad"
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:4
 msgid "Quick Search Second Scan Excluded Paths"
-msgstr ""
+msgstr "Kiirotsinugu teisel skanneerimisel vahelejäetavad rajad"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1132,81 +1158,148 @@ msgid "Show Additional Options"
 msgstr "Näita rohkem valikuid"
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:48
-msgid "This key defines the paths the search tool will exclude from a quick search. The wildcards '*' and '?' are supported. The default values are /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search. "
+"The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
+"media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
 msgstr ""
+"Selle võtme abil kirjeldatakse rajad, mida otsinguprogramm kiirotsingu "
+"käigus vahele jätab. Toetatavad metasümbolid on '*' ja '?'. Vaikimisi on "
+"väärtusteks /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, ja /var/*."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:49
-msgid "This key defines the paths the search tool will exclude from a second scan when performing a quick search. The second scan uses the find command to search for files. The purpose of the second scan is to find files that have not been indexed. The wildcards '*' and '?' are supported. The default value is /."
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value "
+"is /."
 msgstr ""
+"Selle võtme abil kirjeldatakse rajad, mida otsinguprogramm kiirotsingu teise "
+"skanneerimise käigus vahele jätab. Teine skanneerimine kasutab failide "
+"otsimiseks find käsku. Teise skanneerimise eesmärk on indekseerimata failide "
+"leidmine. Toetatavad metasümbolid on '*' ja '?'. Vaikimisi on väärtuseks /."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:50
-msgid "This key determines if the \"Contains the text\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Sisaldab teksti\" valituks."
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Sisaldab teksti\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:51
-msgid "This key determines if the \"Date modified less than\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Muutmise kuupäev on vanem kui\" valituks."
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Muutmise kuupäev on vanem kui\" "
+"valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:52
-msgid "This key determines if the \"Date modified more than\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Muutmise kuupäev on uuem kui\" valituks."
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Muutmise kuupäev on uuem kui\" "
+"valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:53
-msgid "This key determines if the \"File is empty\" search option is selected when the search tool is started."
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
 msgstr "See võti määrab käivitamisel otsinguvaliku \"Fail on tühi\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:54
-msgid "This key determines if the \"Follow symbolic links\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Järgida nimeviiteid\" valituks."
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Järgida nimeviiteid\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:55
-msgid "This key determines if the \"Include other filesystems\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Kaasata teised failisüsteemid\" valituks."
+msgid ""
+"This key determines if the \"Include other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Kaasata teised failisüsteemid\" "
+"valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:56
-msgid "This key determines if the \"Name does not contain\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Nimi ei sisalda\" valituks."
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Nimi ei sisalda\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:57
-msgid "This key determines if the \"Name matches regular expression\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Nimi vastab regulaaravaldisele\" valituks."
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option "
+"is selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Nimi vastab regulaaravaldisele"
+"\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:58
-msgid "This key determines if the \"Owned by group\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Kuulub grupile\" valituks."
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Kuulub grupile\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:59
-msgid "This key determines if the \"Owned by user\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Kuulub kasutajale\" valituks."
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Kuulub kasutajale\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:60
-msgid "This key determines if the \"Owner is unrecognized\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Omanik on tundmatu\" valituks."
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Omanik on tundmatu\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:61
-msgid "This key determines if the \"Show hidden files and folders\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Näidata peidetud ja varufaile\" valituks."
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Näidata peidetud ja varufaile\" "
+"valituks."
 
 #. Translators: The quoted text is the label of the additional
 #. options expander that is translated elsewhere.
 #: gsearchtool/gnome-search-tool.schemas.in.h:64
-msgid "This key determines if the \"Show more options\" section is expanded when the search tool is started."
+msgid ""
+"This key determines if the \"Show more options\" section is expanded when "
+"the search tool is started."
 msgstr ""
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:65
-msgid "This key determines if the \"Size at least\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Suurus vähemalt\" valituks."
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Suurus vähemalt\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:66
-msgid "This key determines if the \"Size at most\" search option is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Suurus maksimaalselt\" valituks."
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"See võti määrab käivitamisel otsinguvaliku \"Suurus maksimaalselt\" valituks."
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:67
-msgid "This key determines if the search tool disables the use of the find command after performing a quick search."
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
 msgstr ""
 
 #: gsearchtool/gnome-search-tool.schemas.in.h:68
-msgid "This key determines if the search tool disables the use of the locate command when performing simple file name searches."
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
 msgstr ""
 
 #: gsearchtool/gsearchtool-callbacks.c:163
@@ -1240,7 +1333,7 @@ msgstr "Dokumenti pole olemas"
 
 #: gsearchtool/gsearchtool-callbacks.c:431
 msgid "There is no installed viewer capable of displaying the document."
-msgstr ""
+msgstr "Selle dokumendi jaoks pole vaaturit paigaldatud."
 
 #: gsearchtool/gsearchtool-callbacks.c:455
 #, c-format
@@ -1344,8 +1437,7 @@ msgstr "täna kell %-H:%M"
 msgid "yesterday at %-I:%M %p"
 msgstr "eile kell %-H:%M"
 
-#: gsearchtool/gsearchtool-support.c:525
-#: gsearchtool/gsearchtool-support.c:527
+#: gsearchtool/gsearchtool-support.c:525 gsearchtool/gsearchtool-support.c:527
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %-d. %B %Y kell %-I:%M:%S %p"
 
@@ -1366,8 +1458,7 @@ msgstr "Sisaldab _teksti"
 msgid "_Date modified less than"
 msgstr "_Muutmise kuupäev on vanem kui"
 
-#: gsearchtool/gsearchtool.c:83
-#: gsearchtool/gsearchtool.c:84
+#: gsearchtool/gsearchtool.c:83 gsearchtool/gsearchtool.c:84
 msgid "days"
 msgstr "päeva"
 
@@ -1379,8 +1470,7 @@ msgstr "Muutmise kuupäev on _uuem kui"
 msgid "S_ize at least"
 msgstr "Suurus _vähemalt"
 
-#: gsearchtool/gsearchtool.c:86
-#: gsearchtool/gsearchtool.c:87
+#: gsearchtool/gsearchtool.c:86 gsearchtool/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "kilobaiti"
 
@@ -1440,8 +1530,7 @@ msgstr "Tõsta _prügikasti"
 msgid "_Save Results As..."
 msgstr "Salvesta tulemused _kui..."
 
-#: gsearchtool/gsearchtool.c:245
-#: gsearchtool/gsearchtool.c:262
+#: gsearchtool/gsearchtool.c:245 gsearchtool/gsearchtool.c:262
 msgid "A locate database has probably not been created."
 msgstr "Otsingu andmebaasi pole arvatavasti loodud"
 
@@ -1450,8 +1539,7 @@ msgstr "Otsingu andmebaasi pole arvatavasti loodud"
 msgid "Character set conversion failed for \"%s\""
 msgstr "Tõrge \"%s\" kooditabeli teisendamisel"
 
-#: gsearchtool/gsearchtool.c:724
-#: gsearchtool/gsearchtool.c:753
+#: gsearchtool/gsearchtool.c:724 gsearchtool/gsearchtool.c:753
 msgid "No files found"
 msgstr "Ühtegi faili ei leitud"
 
@@ -1470,18 +1558,15 @@ msgid_plural "%d Files Found"
 msgstr[0] "%d fail leitud"
 msgstr[1] "%d faili leitud"
 
-#: gsearchtool/gsearchtool.c:761
-#: gsearchtool/gsearchtool.c:799
+#: gsearchtool/gsearchtool.c:761 gsearchtool/gsearchtool.c:799
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "%d fail leitud"
 msgstr[1] "%d faili leitud"
 
-#: gsearchtool/gsearchtool.c:778
-#: gsearchtool/gsearchtool.c:1037
-#: gsearchtool/gsearchtool.c:1123
-#: gsearchtool/gsearchtool.c:2793
+#: gsearchtool/gsearchtool.c:778 gsearchtool/gsearchtool.c:1037
+#: gsearchtool/gsearchtool.c:1123 gsearchtool/gsearchtool.c:2793
 msgid "Search for Files"
 msgstr "Failiotsing"
 
@@ -1504,6 +1589,8 @@ msgstr "Otsinguvaliku \"Alustada kataloogist\" valimine"
 #: gsearchtool/gsearchtool.c:1148
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
+"Sordi faile järgnevate kriteeriumite alusel: nimi, kaust, suurus, tüüp või "
+"kuupäev"
 
 #: gsearchtool/gsearchtool.c:1149
 msgid "Set sort order to descending, the default is ascending"
@@ -1521,9 +1608,12 @@ msgstr "Otsinguvaliku \"%s\" valimine"
 #: gsearchtool/gsearchtool.c:1159
 #, c-format
 msgid "Select and set the \"%s\" search option"
-msgstr ""
+msgstr "\"%s\" võtme valimine ja määramine"
 
 #: gsearchtool/gsearchtool.c:1266
+msgid "Invalid option passed to sortby command line argument."
+msgstr ""
+
 #: gsearchtool/gsearchtool.c:1562
 msgid ""
 "\n"
@@ -1533,16 +1623,19 @@ msgstr ""
 "... Liiga palju veateateid kuvamiseks ..."
 
 #: gsearchtool/gsearchtool.c:1576
-msgid "The search results may be invalid.  There were errors while performing this search."
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
 msgstr "Otsingutulemused võivad olla vigased.  Otsingu käigus tekkis viga."
 
-#: gsearchtool/gsearchtool.c:1588
-#: gsearchtool/gsearchtool.c:1628
+#: gsearchtool/gsearchtool.c:1588 gsearchtool/gsearchtool.c:1628
 msgid "Show more _details"
 msgstr "Näita _põhjalikumalt"
 
 #: gsearchtool/gsearchtool.c:1616
-msgid "The search results may be invalid.  Do you want to disable the quick search feature?"
+msgid ""
+"The search results may be invalid.  Do you want to disable the quick search "
+"feature?"
 msgstr "Otsingutulemused võivad olla vigased.  Kas sa soovid kiirotsingu keelata?."
 
 #: gsearchtool/gsearchtool.c:1639
@@ -1565,14 +1658,14 @@ msgstr "Viga otsingukäsu täitmisel."
 #: gsearchtool/gsearchtool.c:1873
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
-msgstr ""
+msgstr "Sisesta väärtus otsinguvõtme \"%s\"  jaoks."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
 #: gsearchtool/gsearchtool.c:1878
 #, c-format
 msgid "\"%s\" in %s"
-msgstr ""
+msgstr "\"%s\" on %s"
 
 #: gsearchtool/gsearchtool.c:1880
 #, c-format
@@ -1599,7 +1692,7 @@ msgstr "Võimalikud valikud"
 
 #: gsearchtool/gsearchtool.c:2063
 msgid "Select a search option from the drop-down list."
-msgstr ""
+msgstr "Otsinguvaliku valimine rippnimekirjast."
 
 #: gsearchtool/gsearchtool.c:2075
 msgid "Add search option"
@@ -1641,8 +1734,7 @@ msgstr "Viimase muutmise aeg"
 msgid "_Name contains:"
 msgstr "_Nimi sisaldab:"
 
-#: gsearchtool/gsearchtool.c:2616
-#: gsearchtool/gsearchtool.c:2617
+#: gsearchtool/gsearchtool.c:2616 gsearchtool/gsearchtool.c:2617
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "Sisesta failinimi või failinime osa koos metasümbolitega või ilma."
 
@@ -1676,7 +1768,7 @@ msgstr "Näita rohkem valikuid"
 
 #: gsearchtool/gsearchtool.c:2654
 msgid "Click to expand or collapse the list of available options."
-msgstr ""
+msgstr "Klõpsa võimalike valikute nimekirja laiendamiseks või ahendamiseks"
 
 #: gsearchtool/gsearchtool.c:2678
 msgid "Click to display the help manual."
@@ -1698,8 +1790,7 @@ msgstr "Klõpsa otsingu peatamiseks"
 msgid "Cannot initialize bonobo."
 msgstr "Bonobo't pole võimalik lähtestada."
 
-#: logview/about.c:47
-#: logview/logview.c:47
+#: logview/about.c:47 logview/logview.c:47
 msgid "System Log Viewer"
 msgstr "Süsteemilogi vaataja"
 
@@ -1723,8 +1814,7 @@ msgstr "_Lisa"
 msgid "Add an action"
 msgstr "Tegevuse lisamine"
 
-#: logview/actions.c:176
-#: logview/logview.c:86
+#: logview/actions.c:176 logview/logview.c:86
 msgid "_Edit"
 msgstr "_Muuda"
 
@@ -1745,12 +1835,8 @@ msgstr "Tegevuse eemaldamine"
 msgid "Cannot open action data base <%s>! Open failed."
 msgstr "Tegevuste andmebaasi <%s> pole võimalik avada! Tõrge avamisel."
 
-#: logview/actions.c:310
-#: logview/actions.c:323
-#: logview/actions.c:334
-#: logview/actions.c:345
-#: logview/actions.c:356
-#: logview/actions.c:367
+#: logview/actions.c:310 logview/actions.c:323 logview/actions.c:334
+#: logview/actions.c:345 logview/actions.c:356 logview/actions.c:367
 msgid "Error parsing actions data base"
 msgstr "Viga tegevuste andmebaasi analüüsl"
 
@@ -1825,11 +1911,15 @@ msgstr "Regulaaravaldis, mis vastab logiteatele."
 
 #: logview/actions.c:774
 msgid "_Action:"
-msgstr "_Tegevused"
+msgstr "_Tegevus:"
 
 #: logview/actions.c:783
-msgid "Action that will be executed if all previous regexps. are matched. This is executed by a system command: system (action)."
-msgstr "Tegevus, mis käivitatakse juhul, kui kõik eelnevad regulaaravaldised klapivad. See korraldus käivitatakse süsteemse käsu system() abil."
+msgid ""
+"Action that will be executed if all previous regexps. are matched. This is "
+"executed by a system command: system (action)."
+msgstr ""
+"Tegevus, mis käivitatakse juhul, kui kõik eelnevad regulaaravaldised "
+"klapivad. See korraldus käivitatakse süsteemse käsu system() abil."
 
 #: logview/actions.c:793
 msgid "_Description:"
@@ -1994,7 +2084,7 @@ msgstr "Faili ei saa avada"
 
 #: logview/logrtns.c:216
 msgid "Unable to open logfile!\n"
-msgstr "Ei saa logifaili avada!\n"
+msgstr "Logifaili pole võimalik avada!\n"
 
 #: logview/logrtns.c:223
 msgid "Not enough memory!\n"
@@ -2002,7 +2092,9 @@ msgstr "Pole piisavalt mälu!\n"
 
 #: logview/logrtns.c:275
 #, c-format
-msgid "%s is not user readable. Either run the program as root or ask the sysadmin to change the permissions on the file."
+msgid ""
+"%s is not user readable. Either run the program as root or ask the sysadmin "
+"to change the permissions on the file."
 msgstr ""
 
 #: logview/logrtns.c:280
@@ -2015,14 +2107,12 @@ msgstr "%s on liiga suur."
 msgid "%s could not be opened."
 msgstr "%s pole võimalik avada."
 
-#: logview/logrtns.c:325
-#: logview/logrtns.c:336
+#: logview/logrtns.c:325 logview/logrtns.c:336
 #, c-format
 msgid "%s not a log file."
 msgstr "%s ei ole logifail."
 
-#: logview/logrtns.c:587
-#: logview/logrtns.c:611
+#: logview/logrtns.c:587 logview/logrtns.c:611
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: mälu lõppes"
 
@@ -2168,8 +2258,13 @@ msgid "Log file to open up on startup"
 msgstr "Logifail, mis tuleb käivitamisel avada"
 
 #: logview/logview.schemas.in.h:2
-msgid "Specifies the log file to open up at startup. The default is either /var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "Käivitamisel avatava logifaili määramine. Sõltuvalt sinu operatsioonisüsteemist on selleks vaikimisi kas /var/adm/messages või /var/log/messages."
+msgid ""
+"Specifies the log file to open up at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Käivitamisel avatava logifaili määramine. Sõltuvalt sinu "
+"operatsioonisüsteemist on selleks vaikimisi kas /var/adm/messages või /var/"
+"log/messages."
 
 #: logview/zoom.c:71
 msgid "Entry Detail"
@@ -2179,4 +2274,3 @@ msgstr "Kirje üksikasjad"
 #: logview/zoom.c:135
 msgid "%B %e %X"
 msgstr "%B %e %X"
-
