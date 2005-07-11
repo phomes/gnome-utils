@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils 2.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-07-07 13:11+0000\n"
-"PO-Revision-Date: 2005-07-08 00:04+0200\n"
+"PO-Revision-Date: 2005-07-10 00:27+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee> \n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -972,11 +972,11 @@ msgstr "_Nimi:"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:1
 msgid "Border Effect"
-msgstr ""
+msgstr "Raamiefekt"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:2
 msgid "Directory that the screenshooter last used to save in"
-msgstr "Kataloog, kuhu ekraanitõmmiste võtja viimati salvestas"
+msgstr "Kataloog, kuhu ekraanitõmmiseid viimati salvestati"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
 msgid ""
@@ -1306,12 +1306,16 @@ msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
 msgstr ""
+"Selle võtme abil määratakse, kas otsinguvahend keelab peale kiirotsingu "
+"teostamist find käsu kasutamise."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:68
 msgid ""
 "This key determines if the search tool disables the use of the locate "
 "command when performing simple file name searches."
 msgstr ""
+"Selle võtme abil määratakse, kas otsinguvahend keelab lihtsa "
+"failinimeotsingu teostamiseks locate käsu kasutamise."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:165
 msgid "Could not open help document."
@@ -1624,7 +1628,7 @@ msgstr "\"%s\" võtme valimine ja määramine"
 
 #: ../gsearchtool/gsearchtool.c:1287
 msgid "Invalid option passed to sortby command line argument."
-msgstr "sortby käsureaargumendile on antud vigane võti."
+msgstr "Sortby käsureavõtmele on määratud vigane argument."
 
 #: ../gsearchtool/gsearchtool.c:1589
 msgid ""
