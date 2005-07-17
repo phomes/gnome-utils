@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.10.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-12 18:19+0200\n"
-"PO-Revision-Date: 2005-06-12 18:19+0200\n"
+"POT-Creation-Date: 2005-07-17 20:34+0200\n"
+"PO-Revision-Date: 2005-07-17 20:33+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -1465,7 +1465,7 @@ msgstr "Vous n'avez pas sélectionné de nom de document."
 #: gsearchtool/gsearchtool-callbacks.c:1219
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Impossible d'enregistrer le document « %s » vers « %s »."
+msgstr "Impossible d'enregistrer le document « %s » dans « %s »."
 
 #: gsearchtool/gsearchtool-callbacks.c:1252
 #, c-format
@@ -1608,81 +1608,81 @@ msgstr "Une base locate n'a vraisemblablement pas été créée."
 msgid "Character set conversion failed for \"%s\""
 msgstr "Échec de conversion de caractère pour « %s »"
 
-#: gsearchtool/gsearchtool.c:740 gsearchtool/gsearchtool.c:769
+#: gsearchtool/gsearchtool.c:745 gsearchtool/gsearchtool.c:774
 msgid "No files found"
 msgstr "Aucun fichier trouvé"
 
-#: gsearchtool/gsearchtool.c:762
+#: gsearchtool/gsearchtool.c:767
 msgid "(stopped)"
 msgstr "(arrêté)"
 
-#: gsearchtool/gsearchtool.c:768
+#: gsearchtool/gsearchtool.c:773
 msgid "No Files Found"
 msgstr "Aucun fichier trouvé"
 
-#: gsearchtool/gsearchtool.c:773
+#: gsearchtool/gsearchtool.c:778
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "%d fichier trouvé"
 msgstr[1] "%d fichiers trouvés"
 
-#: gsearchtool/gsearchtool.c:777 gsearchtool/gsearchtool.c:815
+#: gsearchtool/gsearchtool.c:782 gsearchtool/gsearchtool.c:820
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "%d fichier trouvé"
 msgstr[1] "%d fichiers trouvés"
 
-#: gsearchtool/gsearchtool.c:794 gsearchtool/gsearchtool.c:1053
-#: gsearchtool/gsearchtool.c:1139 gsearchtool/gsearchtool.c:2815
+#: gsearchtool/gsearchtool.c:799 gsearchtool/gsearchtool.c:1058
+#: gsearchtool/gsearchtool.c:1144 gsearchtool/gsearchtool.c:2820
 msgid "Search for Files"
 msgstr "Rechercher des fichiers"
 
-#: gsearchtool/gsearchtool.c:887
+#: gsearchtool/gsearchtool.c:892
 msgid "Entry changed called for a non entry option!"
 msgstr "Entrée changée appelée pour une non-option d'entrée !"
 
-#: gsearchtool/gsearchtool.c:1139
+#: gsearchtool/gsearchtool.c:1144
 msgid "Searching..."
 msgstr "Recherche en cours..."
 
-#: gsearchtool/gsearchtool.c:1162
+#: gsearchtool/gsearchtool.c:1167
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Définir le texte de « Le nom contient » de l'option de recherche"
 
-#: gsearchtool/gsearchtool.c:1163
+#: gsearchtool/gsearchtool.c:1168
 msgid "Set the text of \"Look in folder\" search option"
 msgstr ""
-"Définir le texte de « Rechercher dans le dossier » pour·la·règle·de·recherche"
+"Définir le texte de « Rechercher dans le dossier » pour la règle de recherche"
 
-#: gsearchtool/gsearchtool.c:1164
+#: gsearchtool/gsearchtool.c:1169
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "Tri les fichiers suivant : nom, dossier, taille, type, ou date"
 
-#: gsearchtool/gsearchtool.c:1165
+#: gsearchtool/gsearchtool.c:1170
 msgid "Set sort order to descending, the default is ascending"
-msgstr "Défini l'ordre de tri à descendant, ascendant par défaut"
+msgstr "Définit l'ordre de tri à descendant, ascendant par défaut"
 
-#: gsearchtool/gsearchtool.c:1166
+#: gsearchtool/gsearchtool.c:1171
 msgid "Automatically start a search"
 msgstr "Démarrer automatiquement une recherche"
 
-#: gsearchtool/gsearchtool.c:1172
+#: gsearchtool/gsearchtool.c:1177
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Sélectionner l'option de recherche « %s »"
 
-#: gsearchtool/gsearchtool.c:1175
+#: gsearchtool/gsearchtool.c:1180
 #, c-format
 msgid "Select and set the \"%s\" search option"
-msgstr "Sélectionner et définir l'option de recherche ·« %s »"
+msgstr "Sélectionner et définir l'option de recherche « %s »"
 
-#: gsearchtool/gsearchtool.c:1282
+#: gsearchtool/gsearchtool.c:1287
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Option non valide passé en argument de la ligne de commande."
 
-#: gsearchtool/gsearchtool.c:1584
+#: gsearchtool/gsearchtool.c:1589
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1690,7 +1690,7 @@ msgstr ""
 "\n"
 "... Trop d'erreurs à afficher ..."
 
-#: gsearchtool/gsearchtool.c:1598
+#: gsearchtool/gsearchtool.c:1603
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
@@ -1698,11 +1698,11 @@ msgstr ""
 "Les résultats de la recherche peuvent être non valide. Il y a eu des erreurs "
 "lors de cette recherche."
 
-#: gsearchtool/gsearchtool.c:1610 gsearchtool/gsearchtool.c:1650
+#: gsearchtool/gsearchtool.c:1615 gsearchtool/gsearchtool.c:1655
 msgid "Show more _details"
 msgstr "Afficher plus de _détails"
 
-#: gsearchtool/gsearchtool.c:1638
+#: gsearchtool/gsearchtool.c:1643
 msgid ""
 "The search results may be invalid.  Do you want to disable the quick search "
 "feature?"
@@ -1710,160 +1710,160 @@ msgstr ""
 "Les résultats de la recherche peuvent être non valide. Voulez-vous "
 "désactiver la fonctionnalité recherche rapide ?"
 
-#: gsearchtool/gsearchtool.c:1661
+#: gsearchtool/gsearchtool.c:1666
 msgid "Disable _Quick Search"
 msgstr "Désactiver la _recherche rapide"
 
-#: gsearchtool/gsearchtool.c:1688
+#: gsearchtool/gsearchtool.c:1693
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr ""
 "Échec de définition de l'identifiant du groupe de processus pour le fils %"
 "d : %s.\n"
 
-#: gsearchtool/gsearchtool.c:1715
+#: gsearchtool/gsearchtool.c:1720
 msgid "Error parsing the search command."
 msgstr "Erreur lors de l'analyse de la commande de recherche."
 
-#: gsearchtool/gsearchtool.c:1748
+#: gsearchtool/gsearchtool.c:1753
 msgid "Error running the search command."
 msgstr "Erreur lors de l'exécution de la commande de recherche."
 
-#: gsearchtool/gsearchtool.c:1895
+#: gsearchtool/gsearchtool.c:1900
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Saisir une valeur texte pour l'option de recherche « %s »."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: gsearchtool/gsearchtool.c:1900
+#: gsearchtool/gsearchtool.c:1905
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "« %s » sur %s"
 
-#: gsearchtool/gsearchtool.c:1902
+#: gsearchtool/gsearchtool.c:1907
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Saisir une valeur dans %s pour l'option de recherche « %s »."
 
-#: gsearchtool/gsearchtool.c:1961
+#: gsearchtool/gsearchtool.c:1966
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Supprimer \"%s\""
 
-#: gsearchtool/gsearchtool.c:1962
+#: gsearchtool/gsearchtool.c:1967
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Cliquer pour supprimer l'option de recherche « %s »."
 
-#: gsearchtool/gsearchtool.c:2055
+#: gsearchtool/gsearchtool.c:2060
 msgid "A_vailable options:"
 msgstr "Options _disponibles :"
 
-#: gsearchtool/gsearchtool.c:2084
+#: gsearchtool/gsearchtool.c:2089
 msgid "Available options"
 msgstr "Options disponibles"
 
-#: gsearchtool/gsearchtool.c:2085
+#: gsearchtool/gsearchtool.c:2090
 msgid "Select a search option from the drop-down list."
 msgstr "Sélectionnez une règle de recherche depuis le menu déroulant."
 
-#: gsearchtool/gsearchtool.c:2097
+#: gsearchtool/gsearchtool.c:2102
 msgid "Add search option"
 msgstr "Ajouter une action de recherche"
 
-#: gsearchtool/gsearchtool.c:2098
+#: gsearchtool/gsearchtool.c:2103
 msgid "Click to add the selected available search option."
 msgstr "Cliquer pour ajouter l'option de recherche disponible sélectionnée."
 
-#: gsearchtool/gsearchtool.c:2119
+#: gsearchtool/gsearchtool.c:2124
 msgid "S_earch results:"
 msgstr "Ré_sultats de la recherche :"
 
-#: gsearchtool/gsearchtool.c:2155
+#: gsearchtool/gsearchtool.c:2160
 msgid "List View"
 msgstr "Vue en liste"
 
-#: gsearchtool/gsearchtool.c:2205
+#: gsearchtool/gsearchtool.c:2210
 msgid "Name"
 msgstr "Nom"
 
-#: gsearchtool/gsearchtool.c:2225
+#: gsearchtool/gsearchtool.c:2230
 msgid "Folder"
 msgstr "Dossier"
 
-#: gsearchtool/gsearchtool.c:2236
+#: gsearchtool/gsearchtool.c:2241
 msgid "Size"
 msgstr "Taille"
 
-#: gsearchtool/gsearchtool.c:2246
+#: gsearchtool/gsearchtool.c:2251
 msgid "Type"
 msgstr "Type"
 
-#: gsearchtool/gsearchtool.c:2256
+#: gsearchtool/gsearchtool.c:2261
 msgid "Date Modified"
 msgstr "Date de modification"
 
-#: gsearchtool/gsearchtool.c:2624
+#: gsearchtool/gsearchtool.c:2629
 msgid "_Name contains:"
 msgstr "Le _nom contient :"
 
-#: gsearchtool/gsearchtool.c:2638 gsearchtool/gsearchtool.c:2639
+#: gsearchtool/gsearchtool.c:2643 gsearchtool/gsearchtool.c:2644
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 "Saisissez un nom de fichier ou un nom de fichier partiel avec ou sans "
 "caractères génériques."
 
-#: gsearchtool/gsearchtool.c:2639
+#: gsearchtool/gsearchtool.c:2644
 msgid "Name contains"
 msgstr "Le nom contient"
 
-#: gsearchtool/gsearchtool.c:2645
+#: gsearchtool/gsearchtool.c:2650
 msgid "_Look in folder:"
 msgstr "_Rechercher dans le dossier :"
 
-#: gsearchtool/gsearchtool.c:2651
+#: gsearchtool/gsearchtool.c:2656
 msgid "Browse"
 msgstr "Parcourir"
 
-#: gsearchtool/gsearchtool.c:2656
+#: gsearchtool/gsearchtool.c:2661
 msgid "Look in folder"
 msgstr "Rechercher dans le dossier"
 
-#: gsearchtool/gsearchtool.c:2656
+#: gsearchtool/gsearchtool.c:2661
 msgid "Select the folder or device from which you want to begin the search."
 msgstr ""
 "Choisissez le nom du dossier dans lequel vous voulez démarrer la recherche."
 
-#: gsearchtool/gsearchtool.c:2667
+#: gsearchtool/gsearchtool.c:2672
 msgid "Show more _options"
 msgstr "Afficher plus d'_options"
 
-#: gsearchtool/gsearchtool.c:2676
+#: gsearchtool/gsearchtool.c:2681
 msgid "Show more options"
 msgstr "Afficher plus d'options"
 
-#: gsearchtool/gsearchtool.c:2676
+#: gsearchtool/gsearchtool.c:2681
 msgid "Click to expand or collapse the list of available options."
 msgstr "Cliquer pour étendre ou réduire la liste d'options disponibles."
 
-#: gsearchtool/gsearchtool.c:2700
+#: gsearchtool/gsearchtool.c:2705
 msgid "Click to display the help manual."
 msgstr "Cliquez pour ouvrir le manuel d'aide."
 
-#: gsearchtool/gsearchtool.c:2708
+#: gsearchtool/gsearchtool.c:2713
 msgid "Click to close \"Search for Files\"."
 msgstr "Cliquez pour fermer \"Rechercher des fichiers\"."
 
-#: gsearchtool/gsearchtool.c:2734
+#: gsearchtool/gsearchtool.c:2739
 msgid "Click to perform a search."
 msgstr "Cliquez pour effectuer une recherche."
 
-#: gsearchtool/gsearchtool.c:2735
+#: gsearchtool/gsearchtool.c:2740
 msgid "Click to stop a search."
 msgstr "Cliquez pour arrêter une recherche."
 
-#: gsearchtool/gsearchtool.c:2835
+#: gsearchtool/gsearchtool.c:2840
 msgid "Cannot initialize bonobo."
 msgstr "Impossible d'initialiser bonobo."
 
@@ -2088,7 +2088,7 @@ msgstr "<b>Date de fin</b> : %s"
 #: logview/info.c:114
 #, c-format
 msgid "<b>Number of Lines</b>: %ld"
-msgstr "<b>Nombre de lignes : </b>:·%ld"
+msgstr "<b>Nombre de lignes : </b>: %ld"
 
 #: logview/log_repaint.c:36
 msgid "January"
