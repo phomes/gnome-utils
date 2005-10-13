@@ -1,3 +1,9 @@
+2005-10-12  Frederic Crozat  <fcrozat@mandriva.com>
+
+	* logrtns.c: (isLogFile): Only accept regular file as
+	logfile, prevent freeze when /dev/tty* is in syslog.conf.
+	Bug #318689.
+
 2005-10-06  noel  <vnoel@cox.net>
 
 	* log_repaint.c (logview_draw_log_lines): Prevent cast
