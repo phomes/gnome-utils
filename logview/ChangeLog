@@ -1,3 +1,10 @@
+2005-10-13  Vincent Noel <vnoel@cox.net>
+
+	* logview.c: (save_session), (main), (logview_count_logs):
+	Correctly parse the command line option when started from session
+	manager. Correctly save the opened log when saving the
+	session. Fix part of bug #156507.
+
 2005-10-12  Frederic Crozat  <fcrozat@mandriva.com>
 
 	* logrtns.c: (isLogFile): Only accept regular file as

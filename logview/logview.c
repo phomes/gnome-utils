@@ -185,9 +185,15 @@ static const char *ui_description =
 GList *regexp_db = NULL, *descript_db = NULL, *actions_db = NULL;
 ConfigData *cfg = NULL;
 gchar *file_to_open;
+static gchar *config_prefix = NULL;
+static gchar *sm_client_id = NULL;
+static int screen = 0;
 
 GOptionContext *context;
 GOptionEntry options[] = {
+    { "sm-config-prefix", 0, 0, G_OPTION_ARG_STRING, &config_prefix, "", NULL},
+    { "sm-client-id", 0, 0, G_OPTION_ARG_STRING, &sm_client_id, "", NULL},
+    { "screen", 0, 0, G_OPTION_ARG_INT, &screen, "", NULL},
 	{ NULL }
 };
 
@@ -238,8 +244,10 @@ save_session (GnomeClient *gnome_client, gint phase,
               gpointer client_data)
 {
    gchar **argv;
-   gint numlogs, i=0;
+   gint numlogs, i=1;
    GSList *list;
+   GList *logs;
+   Log *log;
 
    numlogs = logview_count_logs ();
 
@@ -248,14 +256,14 @@ save_session (GnomeClient *gnome_client, gint phase,
 
    for (list = logview_windows; list != NULL; list = g_slist_next (list)) {
 	   LogviewWindow *w = list->data;
-	   if (w->curlog) {
-		   argv[i++] = g_strdup_printf ("%s", w->curlog->name);
+       for (logs = w->logs; logs != NULL; logs = g_list_next (logs)) {
+           log = logs->data;
+		   argv[i++] = g_strdup_printf ("%s", log->name);
 	   }
    }
    
    gnome_client_set_clone_command (gnome_client, numlogs+1, argv);
    gnome_client_set_restart_command (gnome_client, numlogs+1, argv);
-
    g_free (argv);
 
    return TRUE;
@@ -376,10 +384,11 @@ main (int argc, char *argv[])
 
    /* Open regular logs and add each log passed as a parameter */
 
-	 logview = LOGVIEW_WINDOW(logview_create_window ());
-	 logview_add_logs_from_names (logview, user_prefs->logs);
-	 loglist_select_log_from_name (logview, user_prefs->logfile);
-   if (argc > 1) {
+   logview = LOGVIEW_WINDOW(logview_create_window ());
+   if (argc == 1) {
+       logview_add_logs_from_names (logview, user_prefs->logs);
+       loglist_select_log_from_name (logview, user_prefs->logfile);
+   } else {
 	   for (i=1; i<argc; i++) {
 		   file_to_open = argv[i];
 			 logview_add_log_from_name (logview, file_to_open);
@@ -1194,11 +1203,12 @@ static int
 logview_count_logs (void)
 {
 	GSList *list;
+    GList *logs;
 	LogviewWindow *window;
 	int numlogs = 0;
 	for (list = logview_windows; list != NULL; list = g_slist_next (list)) {
 		window = list->data;
-		if (window->curlog != NULL)
+        for (logs = window->logs; logs != NULL; logs = g_list_next (logs))
 			numlogs ++;
 	}
 	return numlogs;
