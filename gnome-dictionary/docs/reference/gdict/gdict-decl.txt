@@ -1,0 +1,430 @@
+<MACRO>
+<NAME>GDICT_DEFAULT_CLIENT</NAME>
+#define GDICT_DEFAULT_CLIENT	"GNOME Dictionary (" VERSION ")"
+</MACRO>
+<MACRO>
+<NAME>GDICT_DEFAULT_HOSTNAME</NAME>
+#define GDICT_DEFAULT_HOSTNAME	"dict.org"
+</MACRO>
+<MACRO>
+<NAME>GDICT_DEFAULT_PORT</NAME>
+#define GDICT_DEFAULT_PORT	2628
+</MACRO>
+<MACRO>
+<NAME>GDICT_DEFAULT_DATABASE</NAME>
+#define GDICT_DEFAULT_DATABASE	"*"
+</MACRO>
+<MACRO>
+<NAME>GDICT_DEFAULT_STRATEGY</NAME>
+#define GDICT_DEFAULT_STRATEGY	"."
+</MACRO>
+<ENUM>
+<NAME>GdictStatusCode</NAME>
+typedef enum {
+  GDICT_STATUS_INVALID                   = 0,
+    
+  GDICT_STATUS_N_DATABASES_PRESENT       = 110,
+  GDICT_STATUS_N_STRATEGIES_PRESENT      = 111,
+  GDICT_STATUS_DATABASE_INFO             = 112,
+  GDICT_STATUS_HELP_TEXT                 = 113,
+  GDICT_STATUS_SERVER_INFO               = 114,
+  GDICT_STATUS_CHALLENGE                 = 130,
+  GDICT_STATUS_N_DEFINITIONS_RETRIEVED   = 150,
+  GDICT_STATUS_WORD_DB_NAME              = 151,
+  GDICT_STATUS_N_MATCHES_FOUND           = 152,
+  GDICT_STATUS_CONNECT                   = 220,
+  GDICT_STATUS_QUIT                      = 221,
+  GDICT_STATUS_AUTH_OK                   = 230,
+  GDICT_STATUS_OK                        = 250,
+  GDICT_STATUS_SEND_RESPONSE             = 330,
+  /* Connect response codes */
+  GDICT_STATUS_SERVER_DOWN               = 420,
+  GDICT_STATUS_SHUTDOWN                  = 421,
+  /* Error codes */
+  GDICT_STATUS_BAD_COMMAND               = 500,
+  GDICT_STATUS_BAD_PARAMETERS            = 501,
+  GDICT_STATUS_COMMAND_NOT_IMPLEMENTED   = 502,
+  GDICT_STATUS_PARAMETER_NOT_IMPLEMENTED = 503,
+  GDICT_STATUS_NO_ACCESS                 = 530,
+  GDICT_STATUS_USE_SHOW_INFO             = 531,
+  GDICT_STATUS_UNKNOWN_MECHANISM         = 532,
+  GDICT_STATUS_BAD_DATABASE              = 550,
+  GDICT_STATUS_BAD_STRATEGY              = 551,
+  GDICT_STATUS_NO_MATCH                  = 552,
+  GDICT_STATUS_NO_DATABASES_PRESENT      = 554,
+  GDICT_STATUS_NO_STRATEGIES_PRESENT     = 555
+} GdictStatusCode;
+</ENUM>
+<MACRO>
+<NAME>GDICT_IS_VALID_STATUS_CODE</NAME>
+#define GDICT_IS_VALID_STATUS_CODE(x)	(((x) > GDICT_STATUS_INVALID) && \
+                                         ((x) <= GDICT_STATUS_NO_STRATEGIES_PRESENT))
+</MACRO>
+<FUNCTION>
+<NAME>gdict_debug</NAME>
+<RETURNS>void </RETURNS>
+const gchar *fmt, ...
+</FUNCTION>
+<MACRO>
+<NAME>gdict_debug</NAME>
+#define gdict_debug(...)
+</MACRO>
+<FUNCTION>
+<NAME>gdict_has_ipv6</NAME>
+<RETURNS>gboolean </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>GDICT_CONTEXT_ERROR</NAME>
+#define GDICT_CONTEXT_ERROR	(gdict_context_error_get_quark ())
+</MACRO>
+<ENUM>
+<NAME>GdictContextError</NAME>
+typedef enum {
+  GDICT_CONTEXT_SUCCESS,
+  
+  GDICT_CONTEXT_ERROR_SOCKET,
+  GDICT_CONTEXT_ERROR_LOOKUP,
+  GDICT_CONTEXT_ERROR_NO_CONNECTION,
+  GDICT_CONTEXT_ERROR_PARSE,
+  GDICT_CONTEXT_ERROR_SERVER_DOWN,
+  GDICT_CONTEXT_ERROR_NO_ACCESS,
+  GDICT_CONTEXT_ERROR_NOT_IMPLEMENTED,
+  GDICT_CONTEXT_ERROR_INVALID_DATABASE,
+  GDICT_CONTEXT_ERROR_INVALID_STRATEGY,
+  GDICT_CONTEXT_ERROR_INVALID_COMMAND,
+  GDICT_CONTEXT_ERROR_NO_MATCH,
+  GDICT_CONTEXT_ERROR_NO_DATABASES,
+  GDICT_CONTEXT_ERROR_NO_STRATEGIES
+} GdictContextError;
+</ENUM>
+<FUNCTION>
+<NAME>gdict_context_error_get_quark</NAME>
+<RETURNS>GQuark </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>GDICT_TYPE_ENTRY</NAME>
+#define GDICT_TYPE_ENTRY		(gdict_entry_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDICT_ENTRY</NAME>
+#define GDICT_ENTRY(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_ENTRY, GdictEntry))
+</MACRO>
+<MACRO>
+<NAME>GDICT_IS_ENTRY</NAME>
+#define GDICT_IS_ENTRY(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_ENTRY))
+</MACRO>
+<MACRO>
+<NAME>GDICT_ENTRY_CLASS</NAME>
+#define GDICT_ENTRY_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_ENTRY, GdictEntryClass))
+</MACRO>
+<MACRO>
+<NAME>GDICT_IS_ENTRY_CLASS</NAME>
+#define GDICT_IS_ENTRY_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), GDICT_TYPE_ENTRY))
+</MACRO>
+<MACRO>
+<NAME>GDICT_ENTRY_GET_CLASS</NAME>
+#define GDICT_ENTRY_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_ENTRY, GdictEntryClass))
+</MACRO>
+<STRUCT>
+<NAME>GdictEntry</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictEntryClass</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictEntryPrivate</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictEntry</NAME>
+struct _GdictEntry
+{
+  /*< private >*/
+  GtkEntry parent_instance;
+  
+  GdictEntryPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdictEntryClass</NAME>
+struct _GdictEntryClass
+{
+  GtkEntryClass parent_class;
+  
+  /* padding for future expansion */
+  void (*_gdict_entry_1) (void);
+  void (*_gdict_entry_2) (void);
+  void (*_gdict_entry_3) (void);
+  void (*_gdict_entry_4) (void);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdict_entry_get_type</NAME>
+<RETURNS>GType         </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_entry_new</NAME>
+<RETURNS>GtkWidget *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_entry_new_with_context</NAME>
+<RETURNS>GtkWidget *</RETURNS>
+GdictContext *context
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_entry_set_context</NAME>
+<RETURNS>void          </RETURNS>
+GdictEntry   *entry,GdictContext *context
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_entry_get_context</NAME>
+<RETURNS>GdictContext *</RETURNS>
+GdictEntry   *entry
+</FUNCTION>
+<MACRO>
+<NAME>GDICT_TYPE_MATCH</NAME>
+#define GDICT_TYPE_MATCH		(gdict_match_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDICT_TYPE_DEFINITION</NAME>
+#define GDICT_TYPE_DEFINITION		(gdict_definition_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDICT_TYPE_DATABASE</NAME>
+#define GDICT_TYPE_DATABASE		(gdict_database_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDICT_TYPE_STRATEGY</NAME>
+#define GDICT_TYPE_STRATEGY		(gdict_strategy_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDICT_TYPE_CONTEXT</NAME>
+#define GDICT_TYPE_CONTEXT		(gdict_context_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDICT_CONTEXT</NAME>
+#define GDICT_CONTEXT(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_CONTEXT, GdictContext))
+</MACRO>
+<MACRO>
+<NAME>GDICT_IS_CONTEXT</NAME>
+#define GDICT_IS_CONTEXT(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_CONTEXT))
+</MACRO>
+<MACRO>
+<NAME>GDICT_CONTEXT_CLASS</NAME>
+#define GDICT_CONTEXT_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_CONTEXT, GdictContextClass))
+</MACRO>
+<MACRO>
+<NAME>GDICT_IS_CONTEXT_CLASS</NAME>
+#define GDICT_IS_CONTEXT_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), GDICT_TYPE_CONTEXT))
+</MACRO>
+<MACRO>
+<NAME>GDICT_CONTEXT_GET_CLASS</NAME>
+#define GDICT_CONTEXT_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_CONTEXT, GdictContextClass))
+</MACRO>
+<STRUCT>
+<NAME>GdictMatch</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictDefinition</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictDatabase</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictStrategy</NAME>
+</STRUCT>
+<FUNCTION>
+<NAME>gdict_match_get_type</NAME>
+<RETURNS>GType                 </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_match_get_word</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictMatch      *match
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_match_get_database</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictMatch      *match
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_definition_get_type</NAME>
+<RETURNS>GType                 </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_definition_get_word</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictDefinition *definition
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_definition_get_database</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictDefinition *definition
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_definition_get_definition</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictDefinition *definition
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_database_get_type</NAME>
+<RETURNS>GType                 </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_database_get_name</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictDatabase   *database
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_database_get_full_name</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictDatabase   *database
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_strategy_get_type</NAME>
+<RETURNS>GType                 </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_strategy_get_name</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictStrategy   *strategy
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_strategy_get_full_name</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictStrategy   *strategy
+</FUNCTION>
+<STRUCT>
+<NAME>GdictContext</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictContextClass</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictContextPrivate</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdictContext</NAME>
+struct _GdictContext
+{
+  /*< private >*/
+  GObject parent_instance;
+  
+  GdictContextPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdictContextClass</NAME>
+struct _GdictContextClass
+{
+  GObjectClass parent_class;
+  
+  /* These signals are used to monitor the lifetime of the
+   * connection to the dictionary server used by the context
+   */
+  void (*connected)        (GdictContext    *context);
+  void (*disconnected)     (GdictContext    *context);
+  
+  /* These signals are fired when a server reply comes 
+   * along the wire
+   */
+  void (*database_found)   (GdictContext    *context,
+  			    GdictDatabase   *database);
+  void (*strategy_found)   (GdictContext    *context,
+  			    GdictStrategy   *strategy);
+  void (*match_found)      (GdictContext    *context,
+  		            GdictMatch      *match);
+  void (*definition_found) (GdictContext    *context,
+  			    GdictDefinition *definition);
+  
+  /* This signal is fired when an error occurs on the wire,
+   * after our command to the dictionary server has been sent.
+   * Errors happening before that point are handled by the
+   * GdictContext functions
+   */
+  void (*error)            (GdictContext    *context,
+  			    GError          *error);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdict_context_get_type</NAME>
+<RETURNS>GType                 </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_new</NAME>
+<RETURNS>GdictContext *</RETURNS>
+const gchar *hostname,gint         port
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_set_client</NAME>
+<RETURNS>void                  </RETURNS>
+GdictContext *context,const gchar  *client
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_get_client</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictContext *context
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_set_hostname</NAME>
+<RETURNS>void                  </RETURNS>
+GdictContext *context,const gchar  *hostname
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_get_hostname</NAME>
+<RETURNS>G_CONST_RETURN gchar *</RETURNS>
+GdictContext *context
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_set_port</NAME>
+<RETURNS>void                  </RETURNS>
+GdictContext *context,gint          port
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_get_port</NAME>
+<RETURNS>guint                 </RETURNS>
+GdictContext *context
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_connect</NAME>
+<RETURNS>gboolean              </RETURNS>
+GdictContext  *context,GError       **error
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_disconnect</NAME>
+<RETURNS>void                  </RETURNS>
+GdictContext  *context
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_is_connected</NAME>
+<RETURNS>gboolean              </RETURNS>
+GdictContext  *context
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_get_databases</NAME>
+<RETURNS>gboolean              </RETURNS>
+GdictContext  *context,GError       **error
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_get_strategies</NAME>
+<RETURNS>gboolean              </RETURNS>
+GdictContext  *context,GError       **error
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_define</NAME>
+<RETURNS>gboolean              </RETURNS>
+GdictContext  *context,const gchar   *database,const gchar   *word,GError       **error
+</FUNCTION>
+<FUNCTION>
+<NAME>gdict_context_match</NAME>
+<RETURNS>gboolean              </RETURNS>
+GdictContext  *context,const gchar   *database,const gchar   *strategy,const gchar   *word,GError       **error
+</FUNCTION>

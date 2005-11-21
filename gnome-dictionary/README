@@ -1,0 +1,31 @@
+This is the development branch of the new GNOME Dictionary.
+
+The old code resides in gnome-utils/gdictsrc, and should be considered
+deprecated as soon as this code reaches HEAD.
+
++++
+
+Source tree:
+
+data/
+	contains Glade files for the UI; the .server file and menu description
+	file for the applet; GConf schemas; the .desktop for the application.
+
+docs/
+  reference/
+	gtk-doc magic needed for the Gdict reference guide.
+
+help/
+	the help for the application and the applet.
+
+libgdict/ 
+	contains the Gdict library, which is the engine upon which both the
+	application and the applet are built;
+
+src/
+	contains the application and the applet sources.
+
+CAVEAT: This code is still in a state of flux; please, mail me before working
+or committing to this branch.
+
+2005-11-21 09:58 (+0100) ebassi <ebassi (AT) gmail (DOT) com>

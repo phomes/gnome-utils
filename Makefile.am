@@ -15,6 +15,9 @@
 # distuninstallcheck_listfiles = find . -type f -print | grep -v 'scrollkeeper' | grep -v 'omf' | grep -v 'figures'
 distuninstallcheck:
 	@:
+
+# list terminator
+NULL =
                                                                                                                                                              
 distcleancheck_listfiles = find . -type f -print | grep -v 'omf\.out' | grep -v 'legal.xml'
 
@@ -22,31 +25,35 @@ if BUILD_GFLOPPY
 gfloppy = gfloppy
 endif
 
-always_built_SUBDIRS = \
-	po 		\
-	logview 	\
-	gsearchtool	\
-	gdictsrc	\
-	gnome-screenshot
+always_built_SUBDIRS =   	\
+	po 			\
+	logview 		\
+	gsearchtool 		\
+	gnome-dictionary 	\
+	gnome-screenshot 	\
+	$(NULL)
 
-SUBDIRS = \
+SUBDIRS = 			\
 	$(always_built_SUBDIRS)	\
 	$(gfloppy)
 
-DIST_SUBDIRS = \
+DIST_SUBDIRS = 			\
 	$(always_built_SUBDIRS)	\
-	gfloppy
+	gfloppy			\
+	$(NULL)
 
-EXTRA_DIST = \
-	gnome-utils.spec.in \
-	gnome-utils.spec \
-	omf.make \
-	xmldocs.make \
-	intltool-extract.in \
-	intltool-merge.in \
-	intltool-update.in
+EXTRA_DIST = 			\
+	gnome-utils.spec.in 	\
+	gnome-utils.spec 	\
+	omf.make 		\
+	xmldocs.make 		\
+	intltool-extract.in 	\
+	intltool-merge.in 	\
+	intltool-update.in	\
+	$(NULL)
 
 DISTCLEANFILES =                \
 	intltool-extract        \
 	intltool-merge          \
-	intltool-update
+	intltool-update 	\
+	$(NULL)

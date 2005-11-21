@@ -1,0 +1,179 @@
+<!-- ##### SECTION Title ##### -->
+GdictEntry
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT GdictEntry ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GdictEntry:context ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT GdictEntryClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@_gdict_entry_1: 
+@_gdict_entry_2: 
+@_gdict_entry_3: 
+@_gdict_entry_4: 
+
+<!-- ##### FUNCTION gdict_context_new ##### -->
+<para>
+
+</para>
+
+@hostname: 
+@port: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_set_client ##### -->
+<para>
+
+</para>
+
+@context: 
+@client: 
+
+
+<!-- ##### FUNCTION gdict_context_get_client ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_set_hostname ##### -->
+<para>
+
+</para>
+
+@context: 
+@hostname: 
+
+
+<!-- ##### FUNCTION gdict_context_get_hostname ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_set_port ##### -->
+<para>
+
+</para>
+
+@context: 
+@port: 
+
+
+<!-- ##### FUNCTION gdict_context_get_port ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_connect ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_disconnect ##### -->
+<para>
+
+</para>
+
+@context: 
+
+
+<!-- ##### FUNCTION gdict_context_is_connected ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_get_databases ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_get_strategies ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_define ##### -->
+<para>
+
+</para>
+
+@context: 
+@database: 
+@word: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_match ##### -->
+<para>
+
+</para>
+
+@context: 
+@database: 
+@strategy: 
+@word: 
+@error: 
+@Returns: 
+
+

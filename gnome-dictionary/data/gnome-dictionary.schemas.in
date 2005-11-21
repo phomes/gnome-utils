@@ -1,0 +1,79 @@
+<gconfschemafile>
+
+  <schemalist>
+      <schema>
+      <key>/schemas/apps/gnome-dictionary/server</key>
+      <applyto>/apps/gnome-dictionary/server</applyto>
+      <owner>gnome-dictionary</owner>
+      <type>string</type>
+      <default>dict.org</default>
+      <locale name="C">
+        <short>Dictionary server</short>
+        <long>The dictionary server to connect to. The default 
+	      server is dict.org. See http://www.dict.org for 
+	      details on other servers
+       </long>
+      </locale>
+      </schema>
+      
+      <schema>
+      <key>/schemas/apps/gnome-dictionary/port</key>
+      <applyto>/apps/gnome-dictionary/port</applyto>
+      <owner>gnome-dictionary</owner>
+      <type>int</type>
+      <default>2628</default>
+      <locale name="C">
+        <short>Port used to connect to server</short>
+        <long>The port number to connect to. The default
+	      port is 2628.
+        </long>
+      </locale>
+      </schema>
+      
+      <schema>
+      <key>/schemas/apps/gnome-dictionary/smart</key>
+      <applyto>/apps/gnome-dictionary/smart</applyto>
+      <owner>gnome-dictionary</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Use smart lookup</short>
+        <long>Specify whether to use smart lookup. This key is dependant
+	      on whether the dictionary server supports this option. The	
+	      default is TRUE</long>
+      </locale>
+      </schema>
+      
+      <schema>
+      <key>/schemas/apps/gnome-dictionary/database</key>
+      <applyto>/apps/gnome-dictionary/database</applyto>
+      <owner>gnome-dictionary</owner>
+      <type>string</type>
+      <default>!</default>
+      <locale name="C">
+        <short>The database to use in the dictionary server.</short>
+        <long>The name of the individual database to use in the 
+	      dictionary server. ! specifies that gnome-dictionary should
+	      search all databases in a given server
+	</long>
+      </locale>
+      </schema>
+      
+      <schema>
+      <key>/schemas/apps/gnome-dictionary/strategy</key>
+      <applyto>/apps/gnome-dictionary/strategy</applyto>
+      <owner>gnome-dictionary</owner>
+      <type>string</type>
+      <default>lev</default>
+      <locale name="C">
+        <short>The search strategy to use</short>
+        <long>The search strategy to use. This is dependant on the search
+	      strategy that the dictionary server supports. The default
+	      strategy is 'lev' - Match words within Levenshtein distance 
+	      one
+	</long>
+      </locale>
+      </schema>
+  </schemalist>
+  
+</gconfschemafile>

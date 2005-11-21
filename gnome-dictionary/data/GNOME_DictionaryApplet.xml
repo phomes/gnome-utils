@@ -1,0 +1,15 @@
+<Root>
+  <popups>
+    <popup name="button3">
+       <menuitem name="LookupItem" verb="sel" _label="_Look Up Selected Text"
+                 pixtype="stock" pixname="gtk-find"/>
+       <separator/>
+       <menuitem name="PreferencesItem" verb="prefs" _label="_Preferences"
+                 pixtype="stock" pixname="gtk-properties"/>
+       <menuitem name="HelpItem" verb="help" _label="_Help"
+                 pixtype="stock" pixname="gtk-help"/>
+       <menuitem name="AboutItem" verb="about" _label="_About"
+                 pixtype="stock" pixname="gnome-stock-about"/>
+    </popup>
+  </popups>
+</Root>

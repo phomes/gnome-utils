@@ -1,0 +1,7 @@
+2005-11-21  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	Initial import of gnome-dictionary.
+
+	* libgdict/*: the GdictContext interface and GdictClientContext class
+	are basically done; GdictClientContext implements a RFC2229-compliant
+	client for a dictionary server using the dictionary protocol.

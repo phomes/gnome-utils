@@ -1,0 +1,51 @@
+NULL =
+
+man_MANS = gnome-dictionary.1
+
+gdictappdir = $(datadir)/applications
+gdictapp_in_files = gnome-dictionary.desktop.in
+gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
+
+uidir		= $(datadir)/gnome-2.0/ui
+ui_DATA		= GNOME_DictionaryApplet.xml
+
+serverdir       = $(libdir)/bonobo/servers
+server_in_files = GNOME_DictionaryApplet.server.in
+server_DATA     = $(server_in_files:.server.in=.server)
+
+$(server_in_files): $(server_in_files:.server.in=.server.in.in)
+	sed -e "s|\@LIBEXECDIR\@|$(libexecdir)|" $< > $@
+
+@INTLTOOL_SERVER_RULE@
+
+schemadir   = $(GCONF_SCHEMA_FILE_DIR)
+schemas_in_file = gdict.schemas.in
+schema_DATA = $(schemas_in_file:.schemas.in=.schemas)
+@INTLTOOL_SCHEMAS_RULE@
+
+EXTRA_DIST = \
+	GNOME_GnomeDictionaryApplet.server.in.in \
+	$(gdictapp_in_files) 			 \
+	$(gdictapp_DATA) 			 \
+	$(man_MANS) 				 \
+	$(schemas_in_file) 			 \
+	$(schema_DATA) 				 \
+	$(ui_DATA)				 \
+	$(NULL)
+
+CLEANFILES = 				\
+	$(server_in_files) 		\
+	$(server_DATA) 			\
+	$(gdictapp_DATA) 		\
+	gnome-dictionary.schemas	\
+	$(NULL)
+
+if GCONF_SCHEMAS_INSTALL
+install-data-local:
+	if test -z "$(DESTDIR)" ; then \
+		GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(schema_DATA) ; \
+	fi
+else
+install-data-local:
+endif

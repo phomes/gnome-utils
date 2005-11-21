@@ -1,0 +1,371 @@
+<!-- ##### SECTION Title ##### -->
+GdictContext
+
+<!-- ##### SECTION Short_Description ##### -->
+The Gdict Context
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+The #GdictContext object is an object which implements a RFC2229 compliant
+dictionary protocol client.
+</para>
+
+<para>
+You should use a #GdictContext object when implementing an application which
+interfaces to a dictionary server using the dictionary protocol.  Once you
+connect to the server, you can query it for definitions of words.  This object
+will mask all the complexity of the network connection, protocol implementation
+and response parsing.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT GdictContext ##### -->
+<para>
+The #GdictContext struct contains private data only.
+</para>
+
+<!-- ##### SIGNAL GdictContext::connected ##### -->
+<para>
+Emitted when the #GdictContext is connected to a dictionary server.
+</para>
+
+@context: The object which received the signal.
+
+<!-- ##### SIGNAL GdictContext::database-found ##### -->
+<para>
+Emitted when the #GdictContext has received a database definition from the
+dictionary server, after requesting it using gdict_context_get_databases().
+</para>
+
+@context: The object which received the signal
+@database: a #GdictDatabase containing the database definition
+
+<!-- ##### SIGNAL GdictContext::definition-found ##### -->
+<para>
+Emitted when a definition is found after using the
+<functionname>gdict_context_define()</functionname> function.
+</para>
+
+@context: The object which received the signal
+@definition: a #GdictDefinition containing the definition
+
+<!-- ##### SIGNAL GdictContext::disconnected ##### -->
+<para>
+Emitted when the #GdictContext is disconnected from a dictionary server.
+</para>
+
+@context: The object which received the signal
+
+<!-- ##### SIGNAL GdictContext::error ##### -->
+<para>
+Emitted when an error occurs while communicating with the dictionary server.
+</para>
+
+@context: the object which received the signal.
+@error: a #GError containing the error
+
+<!-- ##### SIGNAL GdictContext::match-found ##### -->
+<para>
+Emitted when a match is found after using the
+<functionname>gdict_context_match()</functionname> function.
+</para>
+
+@context: The object which received the signal
+@match: a #GdictMatch containing the match
+
+<!-- ##### SIGNAL GdictContext::strategy-found ##### -->
+<para>
+Emitted when a strategy definition is found after using the
+<functionname>gdict_context_get_strategies()</functionname> function.
+</para>
+
+@context: The object which received the signal
+@strategy: a #GdictStrategy containing the strategy definition
+
+<!-- ##### ARG GdictContext:client-name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG GdictContext:hostname ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG GdictContext:port ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG GdictContext:status ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT GdictContextClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@connected: 
+@disconnected: 
+@database_found: 
+@strategy_found: 
+@match_found: 
+@definition_found: 
+@error: 
+
+<!-- ##### STRUCT GdictDatabase ##### -->
+<para>
+A <structname>GdictDatabase</structname> represents a database stored inside
+a dictionary server.
+</para>
+
+
+<!-- ##### STRUCT GdictStrategy ##### -->
+<para>
+A <structname>GdictStrategy</structname> represents a strategy stored inside a
+dictionary server.  Strategies are used in order to match words.  See
+gdict_context_match().
+</para>
+
+
+<!-- ##### STRUCT GdictMatch ##### -->
+<para>
+A <structname>GdictMatch</structname> represents a match for a word searched
+using the gdict_context_match() function.
+</para>
+
+
+<!-- ##### STRUCT GdictDefinition ##### -->
+<para>
+A <structname>GdictDefinition</structname> represents a definition of a word
+searched using the gdict_context_define() function.
+</para>
+
+
+<!-- ##### FUNCTION gdict_context_new ##### -->
+<para>
+
+</para>
+
+@hostname: 
+@port: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_set_client ##### -->
+<para>
+
+</para>
+
+@context: 
+@client: 
+
+
+<!-- ##### FUNCTION gdict_context_get_client ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_set_hostname ##### -->
+<para>
+
+</para>
+
+@context: 
+@hostname: 
+
+
+<!-- ##### FUNCTION gdict_context_get_hostname ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_set_port ##### -->
+<para>
+
+</para>
+
+@context: 
+@port: 
+
+
+<!-- ##### FUNCTION gdict_context_get_port ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_connect ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_disconnect ##### -->
+<para>
+
+</para>
+
+@context: 
+
+
+<!-- ##### FUNCTION gdict_context_is_connected ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_get_databases ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_get_strategies ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_define ##### -->
+<para>
+
+</para>
+
+@context: 
+@database: 
+@word: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_context_match ##### -->
+<para>
+
+</para>
+
+@context: 
+@database: 
+@strategy: 
+@word: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_database_get_name ##### -->
+<para>
+
+</para>
+
+@database: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_database_get_full_name ##### -->
+<para>
+
+</para>
+
+@database: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_strategy_get_name ##### -->
+<para>
+
+</para>
+
+@strategy: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_strategy_get_full_name ##### -->
+<para>
+
+</para>
+
+@strategy: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_match_get_word ##### -->
+<para>
+
+</para>
+
+@match: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_match_get_database ##### -->
+<para>
+
+</para>
+
+@match: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_definition_get_word ##### -->
+<para>
+
+</para>
+
+@definition: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_definition_get_database ##### -->
+<para>
+
+</para>
+
+@definition: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_definition_get_definition ##### -->
+<para>
+
+</para>
+
+@definition: 
+@Returns: 
+
+
