@@ -27,6 +27,13 @@ disconnected_cb (GdictClientContext *context,
 }
 
 static void
+lookup_cb (GdictContext *context,
+           gpointer      user_data)
+{
+  g_print ("* Lookup '%s'...\n", (gchar *) user_data);
+}
+
+static void
 database_found_cb (GdictContext  *context,
 		   GdictDatabase *database,
 		   gpointer       user_data)
@@ -49,9 +56,13 @@ int main (int argc, char *argv[])
   
   context = gdict_client_context_new ("localhost", 2628);
   g_signal_connect (context, "connected",
-                    G_CALLBACK (connected_cb), NULL);
+		    G_CALLBACK (connected_cb), NULL);
   g_signal_connect (context, "disconnected",
-                    G_CALLBACK (disconnected_cb), NULL);
+		    G_CALLBACK (disconnected_cb), NULL);
+  g_signal_connect (context, "lookup-start",
+                    G_CALLBACK (lookup_cb), "start");
+  g_signal_connect (context, "lookup-end",
+                    G_CALLBACK (lookup_cb), "stop");
   g_signal_connect (context, "database-found",
 		    G_CALLBACK (database_found_cb), NULL);
                     

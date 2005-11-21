@@ -837,9 +837,9 @@ gdict_client_context_real_connected (GdictClientContext *context)
   cmd->state = S_FINISH;
   
   /* the CLIENT command should be the first one in our queue, so we place
-   * it above all other commands the user might have issued between calling
-   * gdict_client_context_connect() and the emission of the "connected" signal, by
-   * calling it directely.
+   * it above all other commands the user might have issued between the
+   * first and the emission of the "connected" signal, by calling it
+   * directely.
    */
   gdict_client_context_run_command (context, cmd, NULL);
 }
@@ -849,11 +849,6 @@ static void
 gdict_client_context_force_disconnect (GdictClientContext *context)
 {
   GdictClientContextPrivate *priv = context->priv;
-  
-  /* clear the commands queue */
-  g_queue_foreach (priv->commands_queue,
-                   (GFunc) gdict_command_free,
-                   NULL);
   
   if (priv->source_id)
     {
@@ -868,6 +863,11 @@ gdict_client_context_force_disconnect (GdictClientContext *context)
           
       priv->channel = NULL;
     }
+
+  /* clear the commands queue */
+  g_queue_foreach (priv->commands_queue,
+                   (GFunc) gdict_command_free,
+                   NULL);
 }
 
 static void
@@ -932,7 +932,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
     {
       struct addrinfo hints, *res;
       
-      gdict_debug ("Using IPv6 extensions\n");
+      gdict_debug ("Hostname '%s' look-up (using IPv6)\n", priv->hostname);
       
       memset (&hints, 0, sizeof (hints));
       hints.ai_socktype = SOCK_STREAM;
@@ -966,7 +966,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
 
 	      priv->sockaddr.ss_family = res->ai_family;
 	      
-	      gdict_debug ("Hostname '%s' found\n", priv->hostname);
+	      gdict_debug ("Hostname '%s' found (using IPv6)\n", priv->hostname);
 
 	      return TRUE;
 	    }
@@ -987,7 +987,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
 #endif /* ENABLE_IPV6 */
       /* if we don't support IPv6, fallback to usual IPv4 lookup */
       
-      gdict_debug ("Using IPv4\n");
+      gdict_debug ("Hostname '%s' look-up (using IPv4)\n", priv->hostname);
       
       ((struct sockaddr_in *) &priv->sockaddr)->sin_family = AF_INET;
 	
@@ -998,7 +998,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
                   priv->hostinfo->h_addr,
                   priv->hostinfo->h_length);
           
-          gdict_debug ("Hostname '%s' found\n", priv->hostname);
+          gdict_debug ("Hostname '%s' found (using IPv4)\n", priv->hostname);
           
           return TRUE;
         }
@@ -1115,14 +1115,18 @@ gdict_client_context_parse_line (GdictClientContext *context,
       
       gdict_command_free (priv->command);
       priv->command = NULL;
-      
-      if ((last_cmd != CMD_CLIENT) || (last_cmd != CMD_QUIT))
+
+      /* notify the end of a command - ignore CLIENT command, since we
+       * issue it ourselves
+       */
+      if (last_cmd != CMD_CLIENT)
         g_signal_emit_by_name (context, "lookup-end");
       
-      /* pop the commands queue tail */
+      /* pop the next command from the queue */
       new_command = gdict_client_context_pop_command (context);
       if (!new_command)
         {
+          /* if the queue is empty, quit */
           gdict_client_context_disconnect (context);
           new_command = gdict_client_context_pop_command (context);
         }
