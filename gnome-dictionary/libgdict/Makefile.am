@@ -16,7 +16,7 @@ INCLUDES = -DG_LOG_DOMAIN=\"Gdict\" 				\
 
 lib_LTLIBRARIES = libgdict-1.0.la
 
-noinst_PROGRAMS = test-client test-entry test-defbox
+noinst_PROGRAMS = test-client test-entry test-defbox test-source
 
 # GNOME Dictionary shared library
 libgdict_1_0_la_SOURCES =	\
@@ -131,6 +131,10 @@ test_defbox_SOURCES = test-defbox.c
 test_defbox_CFLAGS = -O2 -ggdb $(LIBGDICT_CFLAGS)
 test_defbox_LDADD = libgdict-1.0.la $(LIBGDICT_LIBS)
 
+test_source_SOURCES = test-source.c
+test_source_CFLAGS = -O2 -ggdb $(LIBGDICT_CFLAGS)
+test_source_LDADD = libgdict-1.0.la $(LIBGDICT_LIBS)
+
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gdict-1.0.pc
 
@@ -142,6 +146,13 @@ EXTRA_DIST = 				\
 
 CLEANFILES = 			\
 	$(BUILT_SOURCES) 	\
+	$(NULL)
+
+DISTCLEANFILES = 		\
+	$(CLEANFILES)		\
+	gdict-version.h 	\
+	gdict-1.0.pc		\
+	gdict-1.0-uninstalled.pc \
 	$(NULL)
 
 dist-hook:

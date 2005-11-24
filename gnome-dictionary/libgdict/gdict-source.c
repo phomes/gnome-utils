@@ -262,6 +262,7 @@ gdict_source_init (GdictSource *source)
   GdictSourcePrivate *priv;
   
   priv = GDICT_SOURCE_GET_PRIVATE (source);
+  source->priv = priv;
   
   priv->filename = NULL;
   priv->keyfile = g_key_file_new ();
@@ -411,11 +412,11 @@ gdict_source_load_from_file (GdictSource  *source,
     }
   
   /* fetch the localized name for the dictionary source definition */
-  priv->name = g_key_file_get_locale_string (priv->keyfile,
-  					     SOURCE_GROUP,
-  					     SOURCE_KEY_NAME,
-  					     NULL,
-  					     &parse_error);
+  parse_error = NULL;
+  priv->name = g_key_file_get_string (priv->keyfile,
+  				      SOURCE_GROUP,
+  				      SOURCE_KEY_NAME,
+  				      &parse_error);
   if (parse_error)
     {
       g_set_error (error, GDICT_SOURCE_ERROR,

@@ -1,3 +1,23 @@
+2005-11-24  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	* data/default-dictionary.desktop.in: remove translatable mark to
+	the Name key: this is the default, and should always be accessed using
+	the "Default" name.
+
+	* libgdict/Makefile.am: fix CLEANFILES and DISTCLEANFILES.
+
+	* libgdict/gdict-source.c, libgdict/gdict-source-loader.c: fix stupid
+	bugs.
+
+	* libgdict/test-source.c: add test suite for GdictSource and
+	GdictSourceLoader.
+
+	* libgdict/Makefile.am: add test-source.c
+
+	* libgdict/.cvsignore: add test-source.
+
+	* libgdict/gdict-preferences.[ch]: remove these files.
+
 2005-11-22  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
 	* libgdict/.cvsignore: add .cvsignore

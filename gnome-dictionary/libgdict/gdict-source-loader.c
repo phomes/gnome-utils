@@ -253,7 +253,7 @@ gdict_source_loader_add_search_path (GdictSourceLoader *loader,
 
   g_return_if_fail (GDICT_IS_SOURCE_LOADER (loader));
   g_return_if_fail (path != NULL);
-  
+ 
   /* avoid duplications */
   for (l = loader->priv->paths; l != NULL; l = l->next)
     if (strcmp (path, (gchar *) l->data) == 0)
@@ -306,7 +306,7 @@ build_source_filenames (GdictSourceLoader *loader)
       
       dir = g_dir_open (path, 0, NULL);
       if (!dir)
-        return g_slist_reverse (retval);
+        continue;
       
       do
         {
@@ -320,7 +320,9 @@ build_source_filenames (GdictSourceLoader *loader)
               
               full_path = g_build_filename (path, filename, NULL);
               if (g_file_test (full_path, G_FILE_TEST_IS_REGULAR))
-                retval = g_slist_prepend (retval, full_path);
+                {
+		  retval = g_slist_prepend (retval, full_path);
+		}
             }
         }
       while (filename != NULL);
