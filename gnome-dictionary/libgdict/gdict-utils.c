@@ -36,6 +36,7 @@
 
 #include <glib.h>
 
+#include "gdict-context-private.h"
 #include "gdict-utils.h"
 
 #ifdef GDICT_ENABLE_DEBUG

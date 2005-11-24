@@ -20,12 +20,20 @@
 #ifndef __GDICT_PRIVATE_H__
 #define __GDICT_PRIVATE_H__
 
+#ifndef GDICT_ENABLE_INTERNALS
+#error "You are trying to access Gdict's internals outside Gdict.  The API of these internal functions is not fixed."
+#endif
+
 #include <glib-object.h>
 
 #include "gdict-context.h"
 
 G_BEGIN_DECLS
 
+/* boilerplate code, similar to G_DEFINE_TYPE in spirit, used to define
+ * our boxed types and their ref/unref functions; you still have to
+ * implement your own ref/unref functions!
+ */
 #define GDICT_DEFINE_BOXED_TYPE(TypeName,type_name)	\
 \
 static gpointer type_name##_intern_ref (gpointer self) \
@@ -45,6 +53,10 @@ type_name##_get_type (void) \
     gdict_define_boxed_type = g_boxed_type_register_static (#TypeName, (GBoxedCopyFunc) type_name##_intern_ref, (GBoxedFreeFunc) type_name##_intern_unref); \
   return gdict_define_boxed_type; \
 }
+
+/* Never, _ever_ access the members of these structures, unless you
+ * know what you are doing.
+ */
 
 struct _GdictDatabase
 {

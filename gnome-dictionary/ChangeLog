@@ -1,3 +1,31 @@
+2005-11-22  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	* libgdict/.cvsignore: add .cvsignore
+
+	* libgdict/test-defbox.c: add (empty) test suite for GdictDefbox.
+
+	* libgdict/test-entry.c: add test suite for GdictEntry.
+
+	* libgdict/gdict-source-loader.[hc]: add GdictSourceLoader, an object
+	for loading all the dictionary source files.
+
+	* libgdict/gdict-source.[hc]: add GdictSource, an object for loading
+	the right GdictContext based on .desktop files.
+
+	* libgdict/Makefile.am: add new files to the build.
+
+	* data/default-dictionary.desktop.in: default dictionary source for
+	dict.org.
+
+	* data/Makefile.am: add default-dictionary.desktop.in and i18n rule for
+	translation support.
+
+	* libgdict/gdict-version.h.in: add versioning to libgdict
+	
+	* libgdict/gdict.h: include gdict-version.h
+
+	* TODO: update list
+
 2005-11-21  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
 	* libgdict/gdict-client-context.c

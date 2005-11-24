@@ -54,7 +54,7 @@ int main (int argc, char *argv[])
   
   main_loop = g_main_loop_new (NULL, FALSE);
   
-  context = gdict_client_context_new ("localhost", 2628);
+  context = gdict_client_context_new ("localhost", -1);
   g_signal_connect (context, "connected",
 		    G_CALLBACK (connected_cb), NULL);
   g_signal_connect (context, "disconnected",

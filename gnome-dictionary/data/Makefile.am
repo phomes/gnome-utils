@@ -7,6 +7,16 @@ gdictapp_in_files = gnome-dictionary.desktop.in
 gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+# dictionary sources definitions
+dictsourcedir = $(datadir)/gdict-1.0/sources
+dictsource_in_files = default-dictionary.desktop.in
+dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
+
+gladedir        = $(datadir)/gnome-dictionary
+glade_DATA      = gnome-dictionary-preferences.glade
+
+# applet menu definition
 uidir		= $(datadir)/gnome-2.0/ui
 ui_DATA		= GNOME_DictionaryApplet.xml
 
@@ -20,7 +30,7 @@ $(server_in_files): $(server_in_files:.server.in=.server.in.in)
 @INTLTOOL_SERVER_RULE@
 
 schemadir   = $(GCONF_SCHEMA_FILE_DIR)
-schemas_in_file = gdict.schemas.in
+schemas_in_file = gnome-dictionary.schemas.in
 schema_DATA = $(schemas_in_file:.schemas.in=.schemas)
 @INTLTOOL_SCHEMAS_RULE@
 

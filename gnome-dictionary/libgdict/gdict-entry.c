@@ -41,24 +41,28 @@
 struct _GdictEntryPrivate
 {
   GdictContext *context;
+  gchar *database;
 
-  guint lookup_start_id;  
-  guint match_id;
-  guint error_id;
-  guint lookup_end_id;
-  
+  guint changed_id;
+    
   GtkEntryCompletion *completion;
 
   gchar *word;
   
   GList *results;
+  
+  guint lookup_start_id;
+  guint lookup_end_id;
+  guint match_id;
+  guint error_id;
 };
 
 enum
 {
   PROP_0,
   
-  PROP_CONTEXT
+  PROP_CONTEXT,
+  PROP_DATABASE
 };
 
 G_DEFINE_TYPE (GdictEntry, gdict_entry, GTK_TYPE_ENTRY);
@@ -81,8 +85,6 @@ static void
 gdict_entry_class_init (GdictEntryClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
-  GtkEntryClass *entry_class = GTK_ENTRY_CLASS (klass);
   
   gobject_class->set_property = gdict_entry_set_property;
   gobject_class->get_property = gdict_entry_get_property;
@@ -102,6 +104,20 @@ gdict_entry_class_init (GdictEntryClass *klass)
   				   			_("The GdictContext object bound to this entry"),
   				   			GDICT_TYPE_CONTEXT,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
+  /**
+   * GdictEntry:database
+   *
+   * The database to be used for generating the completion list.
+   *
+   * Since: 1.0
+   */
+  g_object_class_install_property (gobject_class,
+  				   PROP_DATABASE,
+  				   g_param_spec_string ("database",
+  				   			_("Database"),
+  				   			_("The database to be used for generating the completion list"),
+  				   			NULL,
+  				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   
   g_type_class_add_private (gobject_class, sizeof (GdictEntryPrivate));
 }
@@ -118,6 +134,8 @@ gdict_entry_init (GdictEntry *entry)
   priv->results = NULL;
   priv->word = NULL;
   
+  priv->database = g_strdup (GDICT_DEFAULT_DATABASE);
+  
   priv->completion = gtk_entry_completion_new ();
   
   store = gtk_list_store_new (1, G_TYPE_STRING);
@@ -126,12 +144,13 @@ gdict_entry_init (GdictEntry *entry)
   
   gtk_entry_completion_set_text_column (priv->completion, 0);
   gtk_entry_completion_set_popup_completion (priv->completion, TRUE);
-  gtk_entry_completion_set_minimum_key_length (priv->completion, 5);
+  gtk_entry_completion_set_minimum_key_length (priv->completion, 3);
   gtk_entry_completion_set_inline_completion (priv->completion, TRUE);
   
   gtk_entry_set_completion (GTK_ENTRY (entry), priv->completion);
 
-  g_signal_connect (entry, "changed", G_CALLBACK (gdict_entry_changed), NULL);
+  priv->changed_id = g_signal_connect (entry, "changed",
+                                       G_CALLBACK (gdict_entry_changed), NULL);
 }
 
 static void
@@ -150,6 +169,10 @@ gdict_entry_set_property (GObject      *object,
         g_object_unref (G_OBJECT (priv->context));
       priv->context = g_value_get_object (value);
       g_object_ref (priv->context);
+      break;
+    case PROP_DATABASE:
+      g_free (priv->database);
+      priv->database = g_strdup (g_value_get_string (value));
       break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -171,6 +194,9 @@ gdict_entry_get_property (GObject    *object,
     case PROP_CONTEXT:
       g_value_set_object (value, priv->context);
       break;
+    case PROP_DATABASE:
+      g_value_set_string (value, priv->database);
+      break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
@@ -183,13 +209,28 @@ gdict_entry_finalize (GObject *object)
   GdictEntry *entry = GDICT_ENTRY (object);
   GdictEntryPrivate *priv = entry->priv;
   
+  if (priv->database)
+    g_free (priv->database);
+  
   if (priv->word)
     g_free (priv->word);
+
+  if (priv->changed_id)
+    g_signal_handler_disconnect (entry, priv->changed_id);
   
   if (priv->match_id)
     {
       g_signal_handler_disconnect (priv->context, priv->match_id);
       priv->match_id = 0;
+      
+      g_signal_handler_disconnect (priv->context, priv->lookup_start_id);
+      priv->lookup_start_id = 0;
+      
+      g_signal_handler_disconnect (priv->context, priv->lookup_end_id);
+      priv->lookup_end_id = 0;
+      
+      g_signal_handler_disconnect (priv->context, priv->error_id);
+      priv->error_id = 0;
     }
   
   if (priv->context)
@@ -277,8 +318,6 @@ lookup_start_cb (GdictContext *context,
 {
   GdictEntryPrivate *priv;
   GtkTreeModel *model;
-  GtkTreeIter iter;
-  GError *match_error;
   
   g_assert (GDICT_IS_CONTEXT (context));
   g_assert (GDICT_IS_ENTRY (entry));
@@ -287,8 +326,6 @@ lookup_start_cb (GdictContext *context,
  
   model = gtk_entry_completion_get_model (priv->completion);
   gtk_list_store_clear (GTK_LIST_STORE (model));
-  gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-  gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0, _("Loading matches..."), -1);
   
   priv = entry->priv;
   
@@ -310,7 +347,9 @@ match_found_cb (GdictContext *context,
 {
   GdictEntryPrivate *priv = entry->priv;
 
-  g_message ("(in %s) MATCH: '%s'\n", G_STRFUNC, gdict_match_get_word (match));
+  g_message ("(in %s) MATCH: '%s'\n",
+  	     G_STRFUNC,
+  	     gdict_match_get_word (match));
   
   /* we must increase the reference count of the match object, since it
    * will be unreferenced as soon as the callback is finished.
@@ -328,26 +367,23 @@ lookup_end_cb (GdictContext *context,
   GList *l;
 
   model = gtk_entry_completion_get_model (priv->completion);
-  gtk_list_store_clear (GTK_LIST_STORE (model));
   
   /* no match found */
   if (!priv->results)
-    {
-      gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-      
-      gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0, _("No match found"), -1);
-      
-      return;
-    }
+    return;
   
   /* walk the list in _reverse_ order */
   for (l = g_list_last (priv->results); l; l = l->prev)
     {
       GdictMatch *match = (GdictMatch *) l->data;
       
+      g_assert (match != NULL);
+      
       gtk_list_store_append (GTK_LIST_STORE (model), &iter);
       
-      gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0, g_strdup (match->word), -1);
+      gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                          0, g_strdup (gdict_match_get_word (match)),
+                          -1);
     }
   
   /* destroy the results list */
@@ -399,16 +435,19 @@ gdict_entry_lookup (GdictEntry *entry)
   text = gtk_entry_get_text (GTK_ENTRY (entry));
   if (!text)
     return;
-  
-  if (g_str_has_prefix (text, priv->word))
-    {
-      g_free (priv->word);
-      priv->word = g_strdup (text);
 
-      return;
+  if (!priv->word)
+    priv->word = g_strdup (text);
+  else
+    {
+      if (g_str_has_prefix (text, priv->word))
+        {
+          g_free (priv->word);
+          priv->word = g_strdup (text);
+          
+          return;
+        }
     }
-  
-  priv->word = g_strdup (text);
   
   g_signal_connect (priv->context, "lookup-start",
     		    G_CALLBACK (lookup_start_cb), entry);
@@ -421,8 +460,8 @@ gdict_entry_lookup (GdictEntry *entry)
 
   match_error = NULL;
   gdict_context_match_word (priv->context,
-		            GDICT_DEFAULT_DATABASE,
-		            GDICT_DEFAULT_STRATEGY,
+		            priv->database,
+		            "prefix",
 		            priv->word,
 		            &match_error);
   if (match_error)

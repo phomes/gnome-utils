@@ -2,19 +2,21 @@
 
 NULL =
 
-INCLUDES = -DG_LOG_DOMAIN=\"Gdict\"			\
-	-DDATADIR=\""$(datadir)"\"			\
-	-DLIBDIR=\""$(libdir)"\"			\
-	-DSYSCONFDIR=\""$(sysconfdir)"\"		\
-	-DPREFIX=\""$(prefix)"\"			\
-	-DGNOMELOCALEDIR=\""$(gnomeutilslocaledir)"\"	\
-	$(DISABLE_DEPRECATED_CFLAGS)			\
-	$(WARN_CFLAGS)					\
+INCLUDES = -DG_LOG_DOMAIN=\"Gdict\" 				\
+	-DDATADIR=\""$(datadir)"\" 				\
+	-DLIBDIR=\""$(libdir)"\" 				\
+	-DSYSCONFDIR=\""$(sysconfdir)"\" 			\
+	-DPREFIX=\""$(prefix)"\" 				\
+	-DGNOMELOCALEDIR=\""$(gnomeutilslocaledir)"\" 		\
+	-DGDICTSOURCESDIR=\""$(datadir)/gdict-1.0/sources"\" 	\
+	-DGDICT_ENABLE_INTERNALS=1 				\
+	$(DISABLE_DEPRECATED_CFLAGS) 				\
+	$(WARN_CFLAGS) 						\
 	$(NULL)
 
 lib_LTLIBRARIES = libgdict-1.0.la
 
-noinst_PROGRAMS = test-client
+noinst_PROGRAMS = test-client test-entry test-defbox
 
 # GNOME Dictionary shared library
 libgdict_1_0_la_SOURCES =	\
@@ -23,12 +25,18 @@ libgdict_1_0_la_SOURCES =	\
 	gdict-context-private.h	\
 	gdict-client-context.c	\
 	gdict-client-context.h	\
+	gdict-defbox.c 		\
+	gdict-defbox.h 		\
 	gdict-entry.c		\
 	gdict-entry.h		\
 	gdict-enum-types.c	\
 	gdict-enum-types.h	\
 	gdict-marshal.c		\
 	gdict-marshal.h		\
+	gdict-source.c		\
+	gdict-source.h		\
+	gdict-source-loader.c	\
+	gdict-source-loader.h	\
 	gdict-utils.c		\
 	gdict-utils.h		\
 	$(NULL)
@@ -44,13 +52,16 @@ libgdict_includedir = $(includedir)/gdict-1.0/gdict
 libgdict_include_HEADERS = 	\
 	gdict-context.h		\
 	gdict-client-context.h	\
+	gdict-defbox.h 		\
 	gdict-entry.h		\
 	gdict-enum-types.h	\
+	gdict-source.h		\
+	gdict-source-loader.h	\
 	gdict-utils.h		\
 	gdict.h			\
 	$(NULL)
 
-BUILT_SOURCES = \
+BUILT_SOURCES = 		\
 	gdict-enum-types.h 	\
 	gdict-enum-types.c 	\
 	gdict-marshal.h		\
@@ -69,7 +80,10 @@ gdict-marshal.c: gdict-marshal.list $(GLIB_GENMARSHAL)
 libgdict_enum_headers = \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-context.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-client-context.h \
+	$(top_srcdir)/gnome-dictionary/libgdict/gdict-defbox.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-entry.h \
+	$(top_srcdir)/gnome-dictionary/libgdict/gdict-source.h \
+	$(top_srcdir)/gnome-dictionary/libgdict/gdict-source-loader.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-utils.h \
 	$(NULL)
 
@@ -108,6 +122,14 @@ gdict-enum-types.c: $(libgdict_enum_headers)
 test_client_SOURCES = test-client.c
 test_client_CFLAGS = -O2 -ggdb $(LIBGDICT_CFLAGS)
 test_client_LDADD = libgdict-1.0.la $(LIBGDICT_LIBS)
+
+test_entry_SOURCES = test-entry.c
+test_entry_CFLAGS = -O2 -ggdb $(LIBGDICT_CFLAGS)
+test_entry_LDADD = libgdict-1.0.la $(LIBGDICT_LIBS)
+
+test_defbox_SOURCES = test-defbox.c
+test_defbox_CFLAGS = -O2 -ggdb $(LIBGDICT_CFLAGS)
+test_defbox_LDADD = libgdict-1.0.la $(LIBGDICT_LIBS)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gdict-1.0.pc

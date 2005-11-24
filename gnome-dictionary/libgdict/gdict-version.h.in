@@ -1,4 +1,4 @@
-/* gdict.h - convenience header for libgdict
+/* gdict-version.h - convenience version header for libgdict
  *
  * Copyright (C) 2005  Emmanuele Bassi <ebassi@gmail.com>
  *
@@ -17,13 +17,18 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  */
 
-#ifndef __GDICT_H__
-#define __GDICT_H__
+#ifndef __GDICT_VERSION_H__
+#define __GDICT_VERSION_H__
 
-#include "gdict-context.h"
-#include "gdict-client-context.h"
-#include "gdict-utils.h"
-#include "gdict-enum-types.h"
-#include "gdict-version.h"
+#define GDICT_MAJOR_VERSION	@GDICT_MAJOR_VERSION@
+#define GDICT_MINOR_VERSION	@GDICT_MINOR_VERSION@
+#define GDICT_MICRO_VERSION	@GDICT_MICRO_VERSION@
 
-#endif /* __GDICT_H__ */
+#define GDICT_CHECK_VERSION(major,minor,micro)	(((major) >= GDICT_MAJOR_VERSION) || \
+						 (((major) == GDICT_MAJOR_VERSION) && \
+						  ((minor) >= GDICT_MINOR_VERSION)) || \
+						 (((major) == GDICT_MAJOR_VERSION) && \
+						  ((minor) == GDICT_MINOR_VERSION) && \
+						  ((micro) >= GDICT_MICRO_VERSION)))
+
+#endif /* __GDICT_VERSION_H__ */

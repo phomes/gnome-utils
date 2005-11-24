@@ -22,8 +22,6 @@
 
 #include <glib-object.h>
 
-#include "gdict-context-private.h"
-
 G_BEGIN_DECLS
 
 /* The default string to be passed to the CLIENT command */

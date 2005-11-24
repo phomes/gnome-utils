@@ -43,10 +43,9 @@ typedef struct _GdictDefinition   GdictDefinition;
 typedef struct _GdictContext      GdictContext; /* dummy typedef */
 typedef struct _GdictContextIface GdictContextIface;
 
-
 #define GDICT_CONTEXT_ERROR	(gdict_context_error_quark ())
 
-typedef enum { /*< prefix=GDICT >*/
+typedef enum {
   GDICT_CONTEXT_ERROR_PARSE,
   GDICT_CONTEXT_ERROR_NOT_IMPLEMENTED,
   GDICT_CONTEXT_ERROR_INVALID_DATABASE,
