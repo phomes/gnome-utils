@@ -108,11 +108,18 @@ AC_SUBST(LIBGNOMEPRINT_CFLAGS)
 AC_SUBST(LIBGNOMEPRINT_LIBS)
 
 dnl *****************************************
-dnl libgdict requires just gtk+ and gconf
+dnl libgdict requires just gtk+
 dnl *****************************************
-PKG_CHECK_MODULES(LIBGDICT, gtk+-2.0 >= $GTK_REQUIRED gconf-2.0 >= $GCONF_REQUIRED)
+PKG_CHECK_MODULES(LIBGDICT, gtk+-2.0 >= $GTK_REQUIRED)
 AC_SUBST(LIBGDICT_CFLAGS)
 AC_SUBST(LIBGDICT_LIBS)
+
+GDICT_MAJOR_VERSION=0
+GDICT_MINOR_VERSION=1
+GDICT_MICRO_VERSION=0
+AC_SUBST(GDICT_MAJOR_VERSION)
+AC_SUBST(GDICT_MINOR_VERSION)
+AC_SUBST(GDICT_MICRO_VERSION)
 
 dnl *****************************************
 dnl screenshot modules
@@ -473,6 +480,7 @@ gsearchtool/help/zh_HK/Makefile
 gsearchtool/help/zh_TW/Makefile
 gnome-dictionary/Makefile
 gnome-dictionary/libgdict/Makefile
+gnome-dictionary/libgdict/gdict-version.h
 gnome-dictionary/libgdict/gdict-1.0.pc
 gnome-dictionary/libgdict/gdict-1.0-uninstalled.pc
 gnome-dictionary/docs/Makefile
@@ -534,6 +542,9 @@ if test "x$build_gfloppy" = "xtrue"; then
 else
 	echo "Build gfloppy                     : NO"
 fi
+
+dnl <= libgdict =>
+echo "Gdict version                     : "$GDICT_MAJOR_VERSION"."$GDICT_MINOR_VERSION"."$GDICT_MICRO_VERSION
 
 echo ""
 dnl <= End of configuration summary =>
