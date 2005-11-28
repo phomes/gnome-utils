@@ -1,4 +1,34 @@
 ===================================================================
+GNOME Utilities 2.12.2 (November 28th 2005)
+
+GNOME Search Tool
+
+  No change
+
+GNOME Dictionary
+
+  * Fix missing includes - bug #318095 [Stanislav Brabec]
+
+GNOME Floppy
+
+  * Fix missing includes - bug #318095 [Stanislav Brabec]
+
+GNOME Screenshot
+
+  No change
+
+GNOME Log Viewer
+
+  * Prevent cast warning - bug #318095 [Stanislav Brabec]
+  * Only accept regular files - bug #318689 [Frederic Crozat]
+  * Correctly parse the command line option when started from session
+	manager - bug #156507 [Vincent]
+
+Translation updates :
+
+  * et [Priit Laes], sv [Christian Rose]
+
+===================================================================
 GNOME Utilities 2.12.1 (October 4th 2005)
 
 GNOME Search Tool
