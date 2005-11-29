@@ -208,10 +208,6 @@ set_gdict_context (GdictDefbox  *defbox,
     
   priv->context = context;
   g_object_ref (G_OBJECT (priv->context));
-  g_message ("(in %s) setting context (type %s)[%p]\n",
-  	     G_STRFUNC,
-  	     g_type_name (G_OBJECT_TYPE (priv->context)),
-      	     priv->context);
 }
 
 static void
@@ -277,7 +273,7 @@ gdict_defbox_find_backward (GdictDefbox *defbox,
   gtk_text_buffer_get_bounds (priv->buffer, &start_iter, &end_iter);
   
   /* if there already has been another result, begin from there */
-  last_search = gtk_text_buffer_get_mark (priv->buffer, "last-search");
+  last_search = gtk_text_buffer_get_mark (priv->buffer, "last-search-prev");
   if (last_search)
     gtk_text_buffer_get_iter_at_mark (priv->buffer, &iter, last_search);
   else
@@ -299,7 +295,8 @@ gdict_defbox_find_backward (GdictDefbox *defbox,
       gtk_text_buffer_move_mark (priv->buffer,
       				 gtk_text_buffer_get_mark (priv->buffer, "selection_bound"),
       				 &match_start);
-      gtk_text_buffer_create_mark (priv->buffer, "last-search", &match_start, FALSE);
+      gtk_text_buffer_create_mark (priv->buffer, "last-search-prev", &match_start, FALSE);
+      gtk_text_buffer_create_mark (priv->buffer, "last-search-next", &match_end, FALSE);
       
       return TRUE;
     }
@@ -315,6 +312,8 @@ find_prev_clicked_cb (GtkWidget *widget,
   GdictDefboxPrivate *priv = defbox->priv;
   const gchar *text;
   gboolean res;
+
+  gtk_label_set_text (GTK_LABEL (priv->find_label), "");
   
   text = gtk_entry_get_text (GTK_ENTRY (priv->find_entry));
   if (!text)
@@ -341,7 +340,7 @@ gdict_defbox_find_forward (GdictDefbox *defbox,
   gtk_text_buffer_get_bounds (priv->buffer, &start_iter, &end_iter);
   
   /* if there already has been another result, begin from there */
-  last_search = gtk_text_buffer_get_mark (priv->buffer, "last-search");
+  last_search = gtk_text_buffer_get_mark (priv->buffer, "last-search-next");
   if (last_search)
     gtk_text_buffer_get_iter_at_mark (priv->buffer, &iter, last_search);
   else
@@ -363,7 +362,8 @@ gdict_defbox_find_forward (GdictDefbox *defbox,
       gtk_text_buffer_move_mark (priv->buffer,
       				 gtk_text_buffer_get_mark (priv->buffer, "selection_bound"),
       				 &match_start);
-      gtk_text_buffer_create_mark (priv->buffer, "last-search", &match_end, FALSE);
+      gtk_text_buffer_create_mark (priv->buffer, "last-search-prev", &match_start, FALSE);
+      gtk_text_buffer_create_mark (priv->buffer, "last-search-next", &match_end, FALSE);
       
       return TRUE;
     }
@@ -379,6 +379,8 @@ find_next_clicked_cb (GtkWidget *widget,
   GdictDefboxPrivate *priv = defbox->priv;
   const gchar *text;
   gboolean res;
+  
+  gtk_label_set_text (GTK_LABEL (priv->find_label), "");
   
   text = gtk_entry_get_text (GTK_ENTRY (priv->find_entry));
   if (!text)
@@ -396,24 +398,17 @@ find_entry_changed_cb (GtkWidget *widget,
   GdictDefbox *defbox = GDICT_DEFBOX (user_data);
   GdictDefboxPrivate *priv = defbox->priv;
   const gchar *text;
+  gboolean found;
+
+  gtk_label_set_text (GTK_LABEL (priv->find_label), "");
   
   text = gtk_entry_get_text (GTK_ENTRY (widget));
   if (strlen (text) == 0)
-    {
-      gtk_label_set_text (GTK_LABEL (priv->find_label), "");
-      
-      return;
-    }
-  else
-    {
-      gboolean found;
-      
-      found = gdict_defbox_find_forward (defbox, text);
-      if (!found)
-        gtk_label_set_text (GTK_LABEL (priv->find_label), _("Not found"));
-      else
-        gtk_label_set_text (GTK_LABEL (priv->find_label), "");
-    }
+    return;
+
+  found = gdict_defbox_find_forward (defbox, text);
+  if (!found)
+    gtk_label_set_text (GTK_LABEL (priv->find_label), _("Not found"));
 }
 
 static void
