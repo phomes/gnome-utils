@@ -35,6 +35,8 @@
 #endif
 
 #include <glib.h>
+#include <glib/gi18n.h>
+#include <gtk/gtk.h>
 
 #include "gdict-context-private.h"
 #include "gdict-utils.h"
@@ -73,4 +75,90 @@ gdict_has_ipv6 (void)
 #endif
 
   return FALSE;
+}
+
+/* shows an error dialog making it transient for @parent */
+static void
+show_error_dialog (GtkWindow   *parent,
+		   const gchar *message,
+		   const gchar *detail)
+{
+  GtkWidget *dialog;
+  
+  dialog = gtk_message_dialog_new (parent,
+  				   GTK_DIALOG_DESTROY_WITH_PARENT,
+  				   GTK_MESSAGE_ERROR,
+  				   GTK_BUTTONS_OK,
+  				   "%s", message);
+  
+  if (detail)
+    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+  					      "%s", detail);
+  
+  if (parent->group)
+    gtk_window_group_add_window (parent->group, GTK_WINDOW (dialog));
+  
+  gtk_dialog_run (GTK_DIALOG (dialog));
+  
+  gtk_widget_destroy (dialog);
+}
+
+/* find the toplevel widget for @widget */
+static GtkWindow *
+get_toplevel_window (GtkWidget *widget)
+{
+  GtkWidget *toplevel;
+  
+  toplevel = gtk_widget_get_toplevel (widget);
+  if (!GTK_WIDGET_TOPLEVEL (toplevel))
+    return NULL;
+  else
+    return GTK_WINDOW (widget);
+}
+
+/**
+ * gdict_show_error_dialog:
+ * @widget: the widget that emits the error
+ * @title: the primary error message
+ * @message: the secondary error message or %NULL
+ *
+ * Creates and shows an error dialog bound to @widget.
+ *
+ * Since: 1.0
+ */
+void
+gdict_show_error_dialog (GtkWidget   *widget,
+			 const gchar *title,
+			 const gchar *detail)
+{
+  g_return_if_fail (GTK_IS_WIDGET (widget));
+  g_return_if_fail (title != NULL);
+  
+  show_error_dialog (get_toplevel_window (widget), title, detail);
+}
+
+/**
+ * gdict_show_gerror_dialog:
+ * @widget: the widget that emits the error
+ * @title: the primary error message
+ * @error: a #GError
+ *
+ * Creates and shows an error dialog bound to @widget, using @error
+ * to fill the secondary text of the message dialog with the error
+ * message.  Also takes care of freeing @error.
+ *
+ * Since: 1.0
+ */
+void
+gdict_show_gerror_dialog (GtkWidget   *widget,
+			  const gchar *title,
+			  GError      *error)
+{
+  g_return_if_fail (GTK_IS_WIDGET (widget));
+  g_return_if_fail (title != NULL);
+  g_return_if_fail (error != NULL);
+  
+  show_error_dialog (get_toplevel_window (widget), title, error->message);
+      
+  g_error_free (error);
 }

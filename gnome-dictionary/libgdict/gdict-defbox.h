@@ -48,6 +48,11 @@ struct _GdictDefboxClass
 {
   GtkVBoxClass parent_class;
   
+  /* these are all RUN_ACTION signals for key bindings */
+  void (*show_find) (GdictDefbox *defbox);
+  void (*hide_find) (GdictDefbox *defbox);
+  void (*find_next) (GdictDefbox *defbox);
+  
   /* padding for future expansion */
   void (*_gdict_defbox_1) (void);
   void (*_gdict_defbox_2) (void);
@@ -57,14 +62,23 @@ struct _GdictDefboxClass
 
 GType         gdict_defbox_get_type    (void) G_GNUC_CONST;
 
-GtkWidget *   gdict_defbox_new         (GdictContext *context);
-void          gdict_defbox_set_context (GdictDefbox  *defbox,
-					GdictContext *context);
-GdictContext *gdict_defbox_get_context (GdictDefbox  *defbox);
+GtkWidget *   gdict_defbox_new                (GdictContext *context);
+void          gdict_defbox_set_context        (GdictDefbox  *defbox,
+					       GdictContext *context);
+GdictContext *gdict_defbox_get_context        (GdictDefbox  *defbox);
 
-void          gdict_defbox_clear       (GdictDefbox  *defbox);
-void          gdict_defbox_lookup      (GdictDefbox  *defbox,
-					const gchar  *word);
+void          gdict_defbox_clear              (GdictDefbox  *defbox);
+void          gdict_defbox_lookup             (GdictDefbox  *defbox,
+					       const gchar  *word);
+					       
+gint          gdict_defbox_count_definitions  (GdictDefbox  *defbox);
+void          gdict_defbox_jump_to_definition (GdictDefbox  *defbox,
+					       gint          number);
+					       
+void          gdict_defbox_set_show_find      (GdictDefbox  *defbox,
+					       gboolean      show_find);
+gboolean      gdict_defbox_get_show_find      (GdictDefbox  *defbox);
+
 
 G_END_DECLS
 

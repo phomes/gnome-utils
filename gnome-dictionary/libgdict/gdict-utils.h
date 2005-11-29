@@ -21,6 +21,7 @@
 #define __GDICT_UTILS_H__
 
 #include <glib-object.h>
+#include <gtk/gtkwidget.h>
 
 G_BEGIN_DECLS
 
@@ -87,6 +88,13 @@ void gdict_debug (const gchar *fmt, ...);
 #endif
 
 gboolean gdict_has_ipv6 (void);
+
+void gdict_show_error_dialog  (GtkWidget   *widget,
+			       const gchar *title,
+			       const gchar *detail);
+void gdict_show_gerror_dialog (GtkWidget   *widget,
+			       const gchar *title,
+			       GError      *error);
 
 G_END_DECLS
 

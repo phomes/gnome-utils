@@ -1,3 +1,17 @@
+2005-11-29  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	* libgdict/Makefile.am: add LIBGLADE_* macros to the application and
+	applet CFLAGS
+
+	* libgdict/gdict-utils.[ch]: add gdict_show_error_dialog() and the
+	gdict_show_gerror_dialog() functions for showing error message dialogs.
+
+	* libgdict/gdict-defbox.[ch]: begin re-implementation of the
+	GdictDefbox widget.  This widget is used to show the definitions
+	retrieved by a GdictContext implementation.
+
+	* libgdict/test-defbox.c: test case for GdictDefbox.
+
 2005-11-24  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
 	* data/default-dictionary.desktop.in: remove translatable mark to
