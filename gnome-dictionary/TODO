@@ -2,7 +2,7 @@
 
 * Great UI rework: port the old UI to the new infrastructure
   [ ] Gdict::Entry
-  [ ] Gdict::Defbox
+  [+] Gdict::Defbox
   [ ] Gdict::Speller
 
 * UI additions
@@ -10,7 +10,7 @@
       a GdictContext);
   [ ] Gdict::StrategyChooser (combo with all the strategies available on
       a GdictContext);
-  [ ] add a "find bottom pane" to Gdict::Defbox;
+  [x] add a "find bottom pane" to Gdict::Defbox;
 
 * Add preferences support
   [x] Implement the .desktop file prototype for selecting the preferred
@@ -27,6 +27,6 @@
 [GNOME Dictionary Applet]
 
 * UI updates
-  [ ] Use GtkAlignedWindow as the container for the Gdict::Defbox;
+  [+] Use GtkAlignedWindow as the container for the Gdict::Defbox;
 
-$ Last updated: 2005-11-21 10:03 (+0100) ebassi $
+$ Last updated: 2005-12-07 21:55 (+0100) ebassi $
