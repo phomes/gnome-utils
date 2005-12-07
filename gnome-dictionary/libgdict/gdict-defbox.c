@@ -93,6 +93,7 @@ enum
   SHOW_FIND,
   HIDE_FIND,
   FIND_NEXT,
+  FIND_PREVIOUS,
   
   LAST_SIGNAL
 };
@@ -179,6 +180,9 @@ set_gdict_context (GdictDefbox  *defbox,
   GdictDefboxPrivate *priv;
   
   g_assert (GDICT_IS_DEFBOX (defbox));
+  
+  if (!context)
+    return;
 
   if (!GDICT_IS_CONTEXT (context))
     {
@@ -559,7 +563,7 @@ gdict_defbox_show_all (GtkWidget *widget)
 }
 
 static void
-gdict_defbox_show_find (GdictDefbox *defbox)
+gdict_defbox_real_show_find (GdictDefbox *defbox)
 {
   gtk_widget_show_all (defbox->priv->find_pane);
   defbox->priv->show_find = TRUE;
@@ -568,14 +572,21 @@ gdict_defbox_show_find (GdictDefbox *defbox)
 }
 
 static void
-gdict_defbox_find_next (GdictDefbox *defbox)
+gdict_defbox_real_find_next (GdictDefbox *defbox)
 {
   /* synthetize a "clicked" signal to the "next" button */
   gtk_button_clicked (GTK_BUTTON (defbox->priv->find_next));
 }
 
 static void
-gdict_defbox_hide_find (GdictDefbox *defbox)
+gdict_defbox_real_find_previous (GdictDefbox *defbox)
+{
+  /* synthetize a "clicked" signal to the "prev" button */
+  gtk_button_clicked (GTK_BUTTON (defbox->priv->find_prev));
+}
+
+static void
+gdict_defbox_real_hide_find (GdictDefbox *defbox)
 {
   gtk_widget_hide (defbox->priv->find_pane);
   defbox->priv->show_find = FALSE;
@@ -638,6 +649,14 @@ gdict_defbox_class_init (GdictDefboxClass *klass)
 		  NULL, NULL,
 		  gdict_marshal_VOID__VOID,
 		  G_TYPE_NONE, 0);
+  gdict_defbox_signals[FIND_PREVIOUS] =
+    g_signal_new ("find-previous",
+                  G_OBJECT_CLASS_TYPE (gobject_class),
+                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,
+                  G_STRUCT_OFFSET (GdictDefboxClass, find_previous),
+                  NULL, NULL,
+                  gdict_marshal_VOID__VOID,
+                  G_TYPE_NONE, 0);
   gdict_defbox_signals[FIND_NEXT] =
     g_signal_new ("find-next",
 		  G_OBJECT_CLASS_TYPE (gobject_class),
@@ -655,9 +674,10 @@ gdict_defbox_class_init (GdictDefboxClass *klass)
 		  gdict_marshal_VOID__VOID,
 		  G_TYPE_NONE, 0);
   
-  klass->show_find = gdict_defbox_show_find;
-  klass->hide_find = gdict_defbox_hide_find;
-  klass->find_next = gdict_defbox_find_next;
+  klass->show_find = gdict_defbox_real_show_find;
+  klass->hide_find = gdict_defbox_real_hide_find;
+  klass->find_next = gdict_defbox_real_find_next;
+  klass->find_previous = gdict_defbox_real_find_previous;
   
   binding_set = gtk_binding_set_by_class (klass);
   gtk_binding_entry_add_signal (binding_set,
@@ -668,6 +688,10 @@ gdict_defbox_class_init (GdictDefboxClass *klass)
   			        GDK_g, GDK_CONTROL_MASK,
   			        "find-next",
   			        0);
+  gtk_binding_entry_add_signal (binding_set,
+  				GDK_g, GDK_SHIFT_MASK | GDK_CONTROL_MASK,
+  				"find-previous",
+  				0);
   gtk_binding_entry_add_signal (binding_set,
   			        GDK_Escape, 0,
   			        "hide-find",
@@ -704,21 +728,84 @@ gdict_defbox_init (GdictDefbox *defbox)
 
 /**
  * gdict_defbox_new:
+ *
+ * Creates a new #GdictDefbox widget.  Use this widget to search for
+ * a word using a #GdictContext, and to show the resulting definition(s).
+ * You must set a #GdictContext for this widget using gdict_defbox_set_context().
+ *
+ * Return value: a new #GdictDefbox widget.
+ *
+ * Since: 1.0
+ */
+GtkWidget *
+gdict_defbox_new (void)
+{
+  return g_object_new (GDICT_TYPE_DEFBOX, NULL);
+}
+
+/**
+ * gdict_defbox_new_with_context:
  * @context: a #GdictContext
  *
- * Creates a new text definition widget. Use this widget to search for
+ * Creates a new #GdictDefbox widget. Use this widget to search for
  * a word using @context, and to show the resulting definition.
  *
  * Return value: a new #GdictDefbox widget.
+ *
+ * Since: 1.0
  */
 GtkWidget *
-gdict_defbox_new (GdictContext *context)
+gdict_defbox_new_with_context (GdictContext *context)
 {
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), NULL);
   
   return g_object_new (GDICT_TYPE_DEFBOX,
                        "context", context,
                        NULL);
+}
+
+/**
+ * gdict_defbox_set_context:
+ * @defbox: a #GdictDefbox
+ * @context: a #GdictContext
+ *
+ * Sets @context as the #GdictContext to be used by @defbox in order
+ * to retrieve the definitions of a word.
+ *
+ * Since: 1.0
+ */
+void
+gdict_defbox_set_context (GdictDefbox  *defbox,
+			  GdictContext *context)
+{
+  g_return_if_fail (GDICT_IS_DEFBOX (defbox));
+  g_return_if_fail (GDICT_IS_CONTEXT (context));
+  
+  g_object_set (defbox, "context", context, NULL);
+}
+
+/**
+ * gdict_defbox_get_context:
+ * @defbox: a #GdictDefbox
+ *
+ * Gets the #GdictContext used by @defbox.
+ *
+ * Return value: a #GdictContext.
+ *
+ * Since: 1.0
+ */
+GdictContext *
+gdict_defbox_get_context (GdictDefbox *defbox)
+{
+  GdictContext *context;
+  
+  g_return_val_if_fail (GDICT_IS_DEFBOX (defbox), NULL);
+  
+  g_object_get (defbox, "context", &context, NULL);
+  if (context)
+    g_object_unref (context);
+  
+  return context;
 }
 
 /**
@@ -873,7 +960,7 @@ gdict_defbox_insert_from (GdictDefbox *defbox,
   
   g_assert (GTK_IS_TEXT_BUFFER (priv->buffer));
   
-  text = g_strdup_printf ("%s\n\n", database);
+  text = g_strdup_printf ("\t-- From %s\n\n", database);
   gtk_text_buffer_insert_with_tags_by_name (priv->buffer,
   					    iter,
   					    text, strlen (text),
@@ -926,6 +1013,11 @@ error_cb (GdictContext *context,
   gdict_show_error_dialog (GTK_WIDGET (defbox),
   			   _("Error while looking up definition"),
   			   error->message);
+
+  g_free (defbox->priv->word);
+  defbox->priv->word = NULL;
+  
+  defbox->priv->is_searching = FALSE;
 }
 
 /**
@@ -1024,4 +1116,188 @@ gdict_defbox_clear (GdictDefbox *defbox)
   
   gtk_text_buffer_get_bounds (priv->buffer, &start, &end);
   gtk_text_buffer_delete (priv->buffer, &start, &end);
+}
+
+/**
+ * gdict_defbox_find_next:
+ * @defbox: a #GdictDefbox
+ * 
+ * Emits the "find-next" signal.
+ * 
+ * Since: 1.0
+ */
+void
+gdict_defbox_find_next (GdictDefbox *defbox)
+{
+  g_return_if_fail (GDICT_IS_DEFBOX (defbox));
+
+  g_signal_emit (defbox, gdict_defbox_signals[FIND_NEXT], 0);
+}
+
+/**
+ * gdict_defbox_find_previous:
+ * @defbox: a #GdictDefbox
+ * 
+ * Emits the "find-previous" signal.
+ * 
+ * Since: 1.0
+ */
+void
+gdict_defbox_find_previous (GdictDefbox *defbox)
+{
+  g_return_if_fail (GDICT_IS_DEFBOX (defbox));
+
+  g_signal_emit (defbox, gdict_defbox_signals[FIND_PREVIOUS], 0);
+}
+
+/**
+ * gdict_defbox_select_all:
+ * @defbox: a #GdictDefbox
+ *
+ * Selects all the text displayed by @defbox
+ * 
+ * Since: 1.0
+ */
+void
+gdict_defbox_select_all (GdictDefbox *defbox)
+{
+  GdictDefboxPrivate *priv;
+  GtkTextBuffer *buffer;
+  GtkTextIter start, end;
+  
+  g_return_if_fail (GDICT_IS_DEFBOX (defbox));
+  
+  priv = defbox->priv;
+  buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->text_view));
+  
+  gtk_text_buffer_get_bounds (buffer, &start, &end);
+  gtk_text_buffer_select_range (buffer, &start, &end);
+}
+
+/**
+ * gdict_defbox_copy_to_clipboard:
+ * @defbox: a #GdictDefbox
+ * @clipboard: a #GtkClipboard
+ *
+ * Copies the selected text inside @defbox into @clipboard.
+ *
+ * Since: 1.0
+ */
+void
+gdict_defbox_copy_to_clipboard (GdictDefbox  *defbox,
+				GtkClipboard *clipboard)
+{
+  GdictDefboxPrivate *priv;
+  GtkTextBuffer *buffer;
+  
+  g_return_if_fail (GDICT_IS_DEFBOX (defbox));
+  g_return_if_fail (GTK_IS_CLIPBOARD (clipboard));
+
+  priv = defbox->priv;
+  buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->text_view));
+
+  gtk_text_buffer_copy_clipboard (buffer, clipboard);
+}
+
+/**
+ * gdict_defbox_count_definitions:
+ * @defbox: a #GdictDefbox
+ *
+ * Gets the number of definitions displayed by @defbox
+ *
+ * Return value: the number of definitions.
+ *
+ * Since: 1.0
+ */
+gint
+gdict_defbox_count_definitions (GdictDefbox *defbox)
+{
+  GdictDefboxPrivate *priv;
+  
+  g_return_val_if_fail (GDICT_IS_DEFBOX (defbox), -1);
+  
+  priv = defbox->priv;
+  if (!priv->definitions)
+    return -1;
+  
+  return g_slist_length (priv->definitions);
+}
+
+/**
+ * gdict_defbox_jump_to_definition:
+ * @defbox: a #GdictDefbox
+ * @number: the definition to jump to
+ *
+ * Scrolls to the definition identified by @number.  If @number is -1,
+ * jumps to the last definition.
+ *
+ * Since: 1.0
+ */
+void
+gdict_defbox_jump_to_definition (GdictDefbox *defbox,
+				 gint         number)
+{
+  GdictDefboxPrivate *priv;
+  gint count;
+  Definition *def;
+  GtkTextBuffer *buffer;
+  GtkTextIter def_start;
+  
+  g_return_if_fail (GDICT_IS_DEFBOX (defbox));
+  
+  count = gdict_defbox_count_definitions (defbox) - 1;
+  if (count == -1)
+    return;
+  
+  if ((number == -1) || (number > count))
+    number = count;
+  
+  priv = defbox->priv;
+  def = (Definition *) g_slist_nth_data (priv->definitions, number);
+  if (!def)
+    return;
+  
+  buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->text_view));
+  gtk_text_buffer_get_iter_at_offset (buffer, &def_start, def->begin);
+  gtk_text_view_scroll_to_iter (GTK_TEXT_VIEW (priv->text_view),
+      				&def_start,
+      				0.0,
+      				TRUE,
+      				0.5, 0.5);
+}
+
+/**
+ * gdict_defbox_get_text:
+ * @defbox: a #GdictDefbox
+ * @length: return location for the text length or %NULL
+ *
+ * Gets the full contents of @defbox.
+ *
+ * Return value: a newly allocated string containing the text displayed by
+ *   @defbox.
+ *
+ * Since: 1.0
+ */
+gchar *
+gdict_defbox_get_text (GdictDefbox *defbox,
+		       gsize       *length)
+{
+  GdictDefboxPrivate *priv;
+  GtkTextBuffer *buffer;
+  GtkTextIter start, end;
+  gchar *retval;
+  
+  g_return_val_if_fail (GDICT_IS_DEFBOX (defbox), NULL);
+  
+  priv = defbox->priv;
+  buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->text_view));
+  
+  gtk_text_buffer_get_bounds (buffer, &start, &end);
+  
+  retval = gtk_text_buffer_get_text (buffer, &start, &end, FALSE);
+  
+  if (length)
+    *length = strlen (retval);
+  
+  return retval;
 }

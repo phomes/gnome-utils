@@ -27,8 +27,16 @@ it may be localized.
 An optional description of the dictionary source is specified by the
 "Description" key; also this may be localized.
 
-The type of back-end to use is specified by the "Transport" key; at this
-moment, only the "dictd" value is permitted.
+The type of back-end to use is specified by the mandatory "Transport" key; at
+this moment, only the "dictd" value is permitted.
+
+An optional default database to be used with the dictionary source is specified
+by the "Database" key; if no default database is specified, assume the default
+database for the transport.
+
+An option default match strategy to be used with the dictionary source is
+specified by the "Strategy" key; if no default strategy is specified, assume
+the default strategy for the transport.
 
 ** Transport-specific keys
 ==========================
@@ -54,4 +62,4 @@ Dictionary source for dict.org:
 	Hostname: dict.org
 	Port: 2628
 
-$ Last updated: 2005-11-21 10:23 (+0100) ebassi $
+$ Last updated: 2005-12-07 19:00 (+0100) ebassi $

@@ -1,4 +1,4 @@
-/* gdict-app.h - main application singleton
+/* gdict-app.h - main application class
  *
  * This file is part of GNOME Dictionary
  *
@@ -23,30 +23,88 @@
 #ifndef __GDICT_APP_H__
 #define __GDICT_APP_H__
 
-#include <glib-object.h>
+#include <gtk/gtk.h>
+#include <glade/glade.h>
+#include <libgnomeui/gnome-ui-init.h>
+#include <libgnomeui/gnome-client.h>
+#include <libgnomeprint/gnome-print-job.h>
+
+#include "gdict.h"
 
 G_BEGIN_DECLS
+
+#define GDICT_TYPE_WINDOW	(gdict_window_get_type ())
+#define GDICT_WINDOW(obj)	(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_WINDOW, GdictWindow))
+#define GDICT_IS_WINDOW(obj)	(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_WINDOW))
 
 #define GDICT_TYPE_APP		(gdict_app_get_type ())
 #define GDICT_APP(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_APP, GdictApp))
 #define GDICT_IS_APP(obj)	(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_APP))
 
-typedef struct _GdictApp        GdictApp;
-typedef struct _GdictAppClass   GdictAppClass;
-typedef struct _GdictAppPrivate GdictAppPrivate;
+typedef struct _GdictWindow      GdictWindow;
+typedef struct _GdictWindowClass GdictWindowClass;
+typedef struct _GdictApp         GdictApp;
+typedef struct _GdictAppClass    GdictAppClass;
+
+struct _GdictWindow
+{
+  GtkWindow parent_instance;
+  
+  GdictApp *app;
+  
+  GtkWidget *main_box;
+  GtkWidget *menubar;
+  GtkWidget *entry;
+  GtkWidget *defbox;
+  GtkWidget *status;
+  
+  GtkUIManager *ui_manager;
+  GtkActionGroup *action_group;
+  
+  gchar *word;
+  gint max_definition;
+  gint last_definition;
+  
+  GdictSourceLoader *loader;
+  GdictContext *context;
+  
+  GnomePrintJob *print_job;
+  GtkWidget *print_dialog;
+  
+  gulong window_id;
+};
 
 struct _GdictApp
 {
   GObject parent_instance;
+
+  GnomeProgram *program;
+  GnomeClient *client;
   
-  GdictAppPrivate *priv;
+  GdictSourceLoader *loader;
+
+  GdictWindow *current_window;
+  GSList *windows;  
+};
+
+struct _GdictAppClass
+{
+  GObjectClass parent_class;
+  
+  void (*window_closed) (GdictApp    *application,
+  			 GdictWindow *window);
 };
 
 
-GType     gdict_app_get_type (void) G_GNUC_CONST;
-GdictApp *gdict_app_new      (void);
+GType      gdict_window_get_type (void) G_GNUC_CONST;
+GtkWidget *gdict_window_new      (GdictSourceLoader *loader);
 
-void      gdict_app_run      (GdictApp *app);
+
+GType      gdict_app_get_type    (void) G_GNUC_CONST;
+
+void       gdict_init            (int *argc, char ***argv);
+void       gdict_main            (void);
+void       gdict_cleanup         (void);
 
 G_END_DECLS
 

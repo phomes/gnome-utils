@@ -37,7 +37,8 @@ int main (int argc, char *argv[])
   gtk_container_add (GTK_CONTAINER (window), vbox);
   gtk_widget_show (vbox);
   
-  defbox = gdict_defbox_new (context);
+  defbox = gdict_defbox_new ();
+  gdict_defbox_set_context (GDICT_DEFBOX (defbox), context);
   gtk_box_pack_start (GTK_BOX (vbox), defbox, TRUE, TRUE, 0);
   gtk_widget_show (defbox);
   

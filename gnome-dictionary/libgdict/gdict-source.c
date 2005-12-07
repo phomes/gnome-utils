@@ -356,75 +356,40 @@ gdict_source_create_context (GdictSource  *source,
   priv->context = context;
 }
 
-/**
- * gdict_source_load_from_file:
- * @source: an empty #GdictSource
- * @filename: path to a dictionary source file
- * @error: return location for a #GError or %NULL
- *
- * Loads a dictionary source definition file into an empty #GdictSource
- * object.
- *
- * Return value: %TRUE if @filename was loaded successfully.
- *
- * Since: 1.0
- */
-gboolean
-gdict_source_load_from_file (GdictSource  *source,
-			     const gchar  *filename,
-			     GError      **error)
+static gboolean
+gdict_source_parse (GdictSource  *source,
+		    GError      **error)
 {
   GdictSourcePrivate *priv;
-  GError *read_error;
   GError *parse_error;
   gchar *transport;
   
-  g_return_val_if_fail (GDICT_IS_SOURCE (source), FALSE);
-  g_return_val_if_fail (filename != NULL, FALSE);
-  
   priv = source->priv;
-  
-  if (!priv->keyfile)
-    priv->keyfile = g_key_file_new ();
-  
-  read_error = NULL;
-  g_key_file_load_from_file (priv->keyfile,
-                             filename,
-                             G_KEY_FILE_KEEP_TRANSLATIONS,
-                             &read_error);
-  if (read_error)
-    {
-      g_propagate_error (error, read_error);
-      
-      return FALSE;
-    }
-  
+
   if (!g_key_file_has_group (priv->keyfile, SOURCE_GROUP))
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
-                   _("No '%s' group found inside the dictionary source "
-                     "definition in '%s'"),
-                   SOURCE_GROUP,
-                   filename);
+                   _("No '%s' group found inside the dictionary source definition"),
+                   SOURCE_GROUP);
       
       return FALSE;
     }
   
   /* fetch the localized name for the dictionary source definition */
   parse_error = NULL;
-  priv->name = g_key_file_get_string (priv->keyfile,
-  				      SOURCE_GROUP,
-  				      SOURCE_KEY_NAME,
-  				      &parse_error);
+  priv->name = g_key_file_get_locale_string (priv->keyfile,
+		  			     SOURCE_GROUP,
+					     SOURCE_KEY_NAME,
+					     NULL,
+					     &parse_error);
   if (parse_error)
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
                    _("Unable to get the '%s' key inside the dictionary "
-                     "source definition file '%s': %s"),
+                     "source definition: %s"),
                    SOURCE_KEY_NAME,
-                   filename,
                    parse_error->message);
       g_error_free (parse_error);
       
@@ -447,9 +412,8 @@ gdict_source_load_from_file (GdictSource  *source,
           g_set_error (error, GDICT_SOURCE_ERROR,
                        GDICT_SOURCE_ERROR_PARSE,
                        _("Unable to get the '%s' key inside the dictionary "
-                         "source definition file '%s': %s"),
+                         "source definition: %s"),
                        SOURCE_KEY_DESCRIPTION,
-                       filename,
                        parse_error->message);
                        
           g_error_free (parse_error);
@@ -470,9 +434,8 @@ gdict_source_load_from_file (GdictSource  *source,
       g_set_error (error, GDICT_SOURCE_ERROR,
       		   GDICT_SOURCE_ERROR_PARSE,
       		   _("Unable to get the '%s' key inside the dictionary "
-      		     "source definition file '%s': %s"),
+      		     "source definition file: %s"),
       		   SOURCE_KEY_TRANSPORT,
-      		   filename,
       		   parse_error->message);
       
       g_error_free (parse_error);
@@ -500,19 +463,135 @@ gdict_source_load_from_file (GdictSource  *source,
       return FALSE;
     }
   
-  g_assert (priv->context != NULL);
-  
-  priv->filename = g_strdup (filename);
-  
   g_free (transport);
   
   return TRUE;
 }
 
 /**
- * gdict_source_to_file:
+ * gdict_source_load_from_file:
+ * @source: an empty #GdictSource
+ * @filename: path to a dictionary source file
+ * @error: return location for a #GError or %NULL
+ *
+ * Loads a dictionary source definition file into an empty #GdictSource
+ * object.
+ *
+ * Return value: %TRUE if @filename was loaded successfully.
+ *
+ * Since: 1.0
+ */
+gboolean
+gdict_source_load_from_file (GdictSource  *source,
+			     const gchar  *filename,
+			     GError      **error)
+{
+  GdictSourcePrivate *priv;
+  GError *read_error;
+  GError *parse_error;
+  
+  g_return_val_if_fail (GDICT_IS_SOURCE (source), FALSE);
+  g_return_val_if_fail (filename != NULL, FALSE);
+  
+  priv = source->priv;
+  
+  if (!priv->keyfile)
+    priv->keyfile = g_key_file_new ();
+  
+  read_error = NULL;
+  g_key_file_load_from_file (priv->keyfile,
+                             filename,
+                             G_KEY_FILE_KEEP_TRANSLATIONS,
+                             &read_error);
+  if (read_error)
+    {
+      g_propagate_error (error, read_error);
+      
+      return FALSE;
+    }
+  
+  parse_error = NULL;
+  gdict_source_parse (source, &parse_error);
+  if (parse_error)
+    {
+      g_propagate_error (error, parse_error);
+      
+      return FALSE;
+    }
+  
+  g_assert (priv->context != NULL);
+  
+  priv->filename = g_strdup (filename);
+  
+  return TRUE;
+}
+
+/**
+ * gdict_source_load_from_data:
  * @source: a #GdictSource
- * @filename: FIXME
+ * @data: string containing a dictionary source
+ * @length: length of @data
+ * @error: return location for a #GError or %NULL
+ *
+ * Loads a dictionary source definition from @data inside an empty
+ * #GdictSource object.
+ *
+ * Return value: %TRUE if @filename was loaded successfully.
+ *
+ * Since: 1.0
+ */
+gboolean
+gdict_source_load_from_data (GdictSource  *source,
+			     const gchar  *data,
+			     gsize         length,
+			     GError      **error)
+{
+  GdictSourcePrivate *priv;
+  GError *read_error;
+  GError *parse_error;
+  
+  g_return_val_if_fail (GDICT_IS_SOURCE (source), FALSE);
+  g_return_val_if_fail (data != NULL, FALSE);
+  
+  priv = source->priv;
+  
+  if (!priv->keyfile)
+    priv->keyfile = g_key_file_new ();
+  
+  read_error = NULL;
+  g_key_file_load_from_data (priv->keyfile,
+                             data,
+                             length,
+                             G_KEY_FILE_KEEP_TRANSLATIONS,
+                             &read_error);
+  if (read_error)
+    {
+      g_propagate_error (error, read_error);
+      
+      return FALSE;
+    }
+  
+  parse_error = NULL;
+  gdict_source_parse (source, &parse_error);
+  if (parse_error)
+    {
+      g_propagate_error (error, parse_error);
+      
+      return FALSE;
+    }
+  
+  g_assert (priv->context != NULL);
+  
+  g_free (priv->filename);
+  priv->filename = NULL;
+  
+  return TRUE;
+}
+
+/**
+ * gdict_source_to_data:
+ * @source: a #GdictSource
+ * @length: FIXME
  * @error: return location for a #GError or %NULL
  *
  * FIXME
@@ -521,9 +600,9 @@ gdict_source_load_from_file (GdictSource  *source,
  *
  * Since: 1.0
  */
-gboolean
-gdict_source_to_file (GdictSource  *source,
-		      const gchar  *filename,
+gchar *
+gdict_source_to_data (GdictSource  *source,
+		      gsize        *length,
 		      GError      **error)
 {
   g_warning ("%s not yet implemented\n", G_STRFUNC);

@@ -90,6 +90,7 @@ show_error_dialog (GtkWindow   *parent,
   				   GTK_MESSAGE_ERROR,
   				   GTK_BUTTONS_OK,
   				   "%s", message);
+  gtk_window_set_title (GTK_WINDOW (dialog), "");
   
   if (detail)
     gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
@@ -113,7 +114,7 @@ get_toplevel_window (GtkWidget *widget)
   if (!GTK_WIDGET_TOPLEVEL (toplevel))
     return NULL;
   else
-    return GTK_WINDOW (widget);
+    return GTK_WINDOW (toplevel);
 }
 
 /**

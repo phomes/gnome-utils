@@ -71,9 +71,13 @@ GdictSource *         gdict_source_new             (void);
 gboolean              gdict_source_load_from_file  (GdictSource           *source,
 						    const gchar           *filename,
 						    GError               **error);
-gboolean              gdict_source_to_file         (GdictSource           *source,
-						    const gchar           *filename,
+gboolean              gdict_source_load_from_data  (GdictSource           *source,
+						    const gchar           *data,
+						    gsize                  length,
 						    GError               **error);
+gchar *               gdict_source_to_data         (GdictSource           *source,
+						    gsize                 *length,
+						    GError               **error) G_GNUC_MALLOC;
 						    
 void                  gdict_source_set_name        (GdictSource           *source,
 						    const gchar           *name);

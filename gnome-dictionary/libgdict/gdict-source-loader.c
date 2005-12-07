@@ -32,7 +32,7 @@
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
 
-#define GDICT_SOURCE_FILE_SUFFIX	".desktop"
+#define GDICT_SOURCE_FILE_SUFFIX	 	".desktop"
 
 #define GDICT_SOURCE_LOADER_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_SOURCE_LOADER, GdictSourceLoaderPrivate))
 
@@ -210,10 +210,12 @@ gdict_source_loader_init (GdictSourceLoader *loader)
   
   priv->paths = NULL;
   /* add the default, system-wide path */
-  priv->paths = g_slist_prepend (priv->paths, GDICTSOURCESDIR);
+  priv->paths = g_slist_prepend (priv->paths, g_strdup (GDICTSOURCESDIR));
   
   priv->sources = NULL;
-  priv->sources_by_name = g_hash_table_new (g_str_hash, g_str_equal);
+  priv->sources_by_name = g_hash_table_new_full (g_str_hash, g_str_equal,
+		  				 (GDestroyNotify) g_free,
+						 NULL);
   
   /* ensure that the sources list will be updated */
   priv->paths_dirty = TRUE;
@@ -370,7 +372,7 @@ gdict_source_loader_update_sources (GdictSourceLoader *loader)
       loader->priv->sources = g_slist_append (loader->priv->sources,
                                               source);
       g_hash_table_replace (loader->priv->sources_by_name,
-                            gdict_source_get_name (source),
+                            g_strdup (gdict_source_get_name (source)),
                             source);
 
       g_signal_emit (loader, loader_signals[SOURCE_LOADED], 0, source);

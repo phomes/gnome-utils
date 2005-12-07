@@ -1,3 +1,22 @@
+/* gdict-client-context.c - 
+ *
+ * Copyright (C) 2005  Emmanuele Bassi <ebassi@gmail.com>
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Library General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Library General Public License for more details.
+ *
+ * You should have received a copy of the GNU Library General Public
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ */
+
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -29,7 +48,7 @@ typedef enum {
   CMD_CLIENT,
   CMD_SHOW_DB,
   CMD_SHOW_STRAT,
-  CMD_SHOW_INFO,	/* not implemented */
+  CMD_SHOW_INFO, 	/* not implemented */
   CMD_SHOW_SERVER,	/* not implemented */
   CMD_MATCH,
   CMD_DEFINE,
@@ -1312,6 +1331,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case CMD_DEFINE:
       if (priv->status_code == GDICT_STATUS_N_DEFINITIONS_RETRIEVED)
         {
+          GdictDefinition *def;
           gchar *p;
           
           priv->command->state = S_STATUS;
@@ -1321,6 +1341,12 @@ gdict_client_context_parse_line (GdictClientContext *context,
             p = g_utf8_next_char (p);
           
           gdict_debug ("server replied: %d definitions found\n", atoi (p));
+          
+          def = _gdict_definition_new ();
+          def->total = atoi (p);
+          
+          priv->command->data = def;
+          priv->command->data_destroy = (GDestroyNotify) gdict_definition_unref;
 
           g_signal_emit_by_name (context, "lookup-start");
         }
@@ -1363,15 +1389,14 @@ gdict_client_context_parse_line (GdictClientContext *context,
           if (p)
             *p = '\0';
           
-          def = _gdict_definition_new (word);
+          def = (GdictDefinition *) priv->command->data;
+          
+          def->word = g_strdup (word);
           def->database_name = g_strdup (db_name);
           def->database_full = g_strdup (db_full);
           def->definition = NULL;
 
           g_strfreev (tokens);
-          
-          priv->command->data = def;
-          priv->command->data_destroy = (GDestroyNotify) gdict_definition_unref;
           
           priv->command->state = S_DATA;
         }
@@ -1423,8 +1448,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
           gdict_definition_unref (def);
           
           priv->command->buffer = NULL;
-          priv->command->data = NULL;
-          priv->command->data_destroy = NULL;
+          priv->command->data = _gdict_definition_new ();
           
           priv->command->state = S_STATUS;
         }
@@ -1437,7 +1461,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
           
           /* TODO - collapse '..' to '.' */
           
-          g_string_append_printf (priv->command->buffer, "%s ", buffer);
+          g_string_append_printf (priv->command->buffer, "%s\n", buffer);
         }
       break;
     case CMD_MATCH:

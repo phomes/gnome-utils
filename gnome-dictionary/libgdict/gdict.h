@@ -22,6 +22,9 @@
 
 #include "gdict-context.h"
 #include "gdict-client-context.h"
+#include "gdict-source.h"
+#include "gdict-source-loader.h"
+#include "gdict-defbox.h"
 #include "gdict-utils.h"
 #include "gdict-enum-types.h"
 #include "gdict-version.h"

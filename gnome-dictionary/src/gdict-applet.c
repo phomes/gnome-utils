@@ -12,9 +12,12 @@
 #include <libgnome/gnome-help.h>
 
 #include "gdict-context.h"
-#include "gdict-client-context.h"
 #include "gdict-utils.h"
 #include "gdict-enum-types.h"
+
+#include "gdict-applet.h"
+#include "gdict-about.h"
+#include "gdict-pref-dialog.h"
 
 #define GDICT_APPLET_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_APPLET, GdictAppletClass))
 #define GDICT_APPLET_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_APPLET, GdictAppletClass))

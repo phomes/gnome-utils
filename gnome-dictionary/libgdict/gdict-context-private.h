@@ -84,6 +84,8 @@ struct _GdictMatch
 
 struct _GdictDefinition
 {
+  gint total;
+  
   gchar *word;
   gchar *database_name;
   gchar *database_full;
@@ -98,7 +100,7 @@ struct _GdictDefinition
 GdictDatabase *   _gdict_database_new   (const gchar *name);
 GdictStrategy *   _gdict_strategy_new   (const gchar *name);
 GdictMatch *      _gdict_match_new      (const gchar *word);
-GdictDefinition * _gdict_definition_new (const gchar *word);
+GdictDefinition * _gdict_definition_new (void);
 
 G_END_DECLS
 

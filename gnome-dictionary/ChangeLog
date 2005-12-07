@@ -1,3 +1,42 @@
+2005-12-07  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	* data/Makefile.am: add gnome-dictionary-ui.xml, the GtkUIManager
+	definitions of the menu bar and accelerators.
+
+	* docs/source-configuration.txt: add Database and Strategy keys.
+
+	* libgdict/gdict-client-context.c: add "total" property support for
+	GdictDefinition.
+
+	* libgdict/gdict-context-private.h,
+	libgdict/gdict-context.c,
+	libgdict/gdict-context.h: add "total" property, and change
+	GdictDefintion ctor (we don't need a word).
+
+	* libgdict/gdict-defbox.h, libgdict/gdict-defbox.h: add
+	gdict_defbox_new_with_context() ctor; add new API to wrap around
+	GtkTextView/GtkTextBuffer.
+
+	* libgdict/gdict-source.c, libgdict/gdict-source-loader.c: fix bugs
+	inside the GdictSource and GdictSourceLoader.
+
+	* libgdict/gdict-source.h: add gdict_source_load_from_data().
+
+	* libgdict/gdict-utils.c: remove title from the error dialog, as per
+	HIG; fix a stupid bug in get_toplevel_window().
+
+	* src/Makefile.am: remove the applet data, since we don't have any code
+	for it, yet.
+
+	* src/gdict-app.h, src/gdict-app.c: begin Dictionary UI; GdictWindow is
+	a GtkWindow subclass; GdictApp is a singleton object, holding all the
+	windows.
+
+	* src/gdict-about.h, src/gdict-about.c: add a simple wrapper around
+	GtkAboutDialog.
+
+	* src/main.c: main application launcher.
+
 2005-11-29  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
 	* libgdict/gdict-defbox.c: fix forward/backward searching.

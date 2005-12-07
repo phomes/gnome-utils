@@ -9,16 +9,19 @@ gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
 
 # dictionary sources definitions
 dictsourcedir = $(datadir)/gdict-1.0/sources
-dictsource_in_files = default-dictionary.desktop.in
+dictsource_in_files = default.desktop.in
 dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 gladedir        = $(datadir)/gnome-dictionary
 glade_DATA      = gnome-dictionary-preferences.glade
 
+uidir           = $(datadir)/gnome-dictionary
+ui_DATA         = gnome-dictionary-ui.xml
+
 # applet menu definition
-uidir		= $(datadir)/gnome-2.0/ui
-ui_DATA		= GNOME_DictionaryApplet.xml
+appletuidir	= $(datadir)/gnome-2.0/ui
+appletui_DATA	= GNOME_DictionaryApplet.xml
 
 serverdir       = $(libdir)/bonobo/servers
 server_in_files = GNOME_DictionaryApplet.server.in
@@ -36,15 +39,18 @@ schema_DATA = $(schemas_in_file:.schemas.in=.schemas)
 
 EXTRA_DIST = \
 	GNOME_GnomeDictionaryApplet.server.in.in \
+	$(dictsource_in_files)			 \
 	$(gdictapp_in_files) 			 \
 	$(gdictapp_DATA) 			 \
 	$(man_MANS) 				 \
 	$(schemas_in_file) 			 \
 	$(schema_DATA) 				 \
 	$(ui_DATA)				 \
+	$(appletui_DATA)			 \
 	$(NULL)
 
 CLEANFILES = 				\
+	$(dictsource_DATA)		\
 	$(server_in_files) 		\
 	$(server_DATA) 			\
 	$(gdictapp_DATA) 		\

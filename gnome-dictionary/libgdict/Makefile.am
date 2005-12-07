@@ -14,7 +14,7 @@ INCLUDES = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	$(WARN_CFLAGS) 						\
 	$(NULL)
 
-lib_LTLIBRARIES = libgdict-1.0.la
+noinst_LTLIBRARIES = libgdict-1.0.la
 
 noinst_PROGRAMS = test-client test-entry test-defbox test-source
 

@@ -80,6 +80,7 @@ G_CONST_RETURN gchar *gdict_match_get_database       (GdictMatch      *match);
 GType                 gdict_definition_get_type      (void) G_GNUC_CONST;
 GdictDefinition *     gdict_definition_ref           (GdictDefinition *def);
 void                  gdict_definition_unref         (GdictDefinition *def);
+gint                  gdict_definition_get_total     (GdictDefinition *def);
 G_CONST_RETURN gchar *gdict_definition_get_word      (GdictDefinition *def);
 G_CONST_RETURN gchar *gdict_definition_get_database  (GdictDefinition *def);
 G_CONST_RETURN gchar *gdict_definition_get_text      (GdictDefinition *def);

@@ -1,4 +1,4 @@
-/* gdict-context.h - Abstract class for dictionary contexts
+/* gdict-context.c - Abstract class for dictionary contexts
  *
  * Copyright (C) 2005  Emmanuele Bassi <ebassi@gmail.com>
  *
@@ -624,14 +624,14 @@ gdict_match_get_database (GdictMatch *match)
 GDICT_DEFINE_BOXED_TYPE (GdictDefinition, gdict_definition);
 
 GdictDefinition *
-_gdict_definition_new (const gchar *word)
+_gdict_definition_new (void)
 {
   GdictDefinition *def;
   
-  g_return_val_if_fail (word != NULL, NULL);
-  
   def = g_new0 (GdictDefinition, 1);
-  def->word = g_strdup (word);
+  
+  def->total = 0;
+  def->word = NULL;
   def->database_name = NULL;
   def->database_full = NULL;
   def->ref_count = 1;
@@ -667,6 +667,14 @@ gdict_definition_unref (GdictDefinition *def)
       
       g_free (def);
     }
+}
+
+gint
+gdict_definition_get_total (GdictDefinition *def)
+{
+  g_return_val_if_fail (def != NULL, -1);
+
+  return def->total;
 }
 
 G_CONST_RETURN gchar *
