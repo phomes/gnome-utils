@@ -83,16 +83,25 @@ gdict_window_finalize (GObject *object)
 {
   GdictWindow *window = GDICT_WINDOW (object);
   
-  g_object_unref (window->loader);
+  if (window->context)
+    {
+      g_signal_handler_disconnect (window->context, window->lookup_start_id);
+      g_signal_handler_disconnect (window->context, window->lookup_end_id);
+      g_signal_handler_disconnect (window->context, window->error_id);
+
+      g_object_unref (window->context);
+    }
   
-  g_object_unref (window->ui_manager);
+  if (window->loader)
+    g_object_unref (window->loader);
+  
+  if (window->ui_manager)
+    g_object_unref (window->ui_manager);
+  
   g_object_unref (window->action_group);
   
   g_free (window->print_font);
   g_free (window->word);
-  
-  if (window->print_dialog)
-    gtk_widget_destroy (window->print_dialog);
   
   G_OBJECT_CLASS (gdict_window_parent_class)->finalize (object);
 }
@@ -570,6 +579,15 @@ gdict_window_cmd_help_about (GtkAction   *action,
 }
 
 static void
+gdict_window_cmd_lookup (GtkAction   *action,
+			 GdictWindow *window)
+{
+  g_assert (GDICT_IS_WINDOW (window));
+
+  gtk_widget_grab_focus (window->entry);
+}
+
+static void
 gdict_window_cmd_escape (GtkAction   *action,
 			 GdictWindow *window)
 {
@@ -627,17 +645,64 @@ static const GtkActionEntry entries[] =
     G_CALLBACK (gdict_window_cmd_help_about) },
   
   /* Accellerators */
+  { "Lookup", NULL, "", "<control>L", NULL, G_CALLBACK (gdict_window_cmd_lookup) },
   { "Escape", NULL, "", "Escape", "", G_CALLBACK (gdict_window_cmd_escape) },
   { "Slash", GTK_STOCK_FIND, NULL, "slash", NULL, G_CALLBACK (gdict_window_cmd_edit_find) },
 };
 
+static void
+gdict_window_lookup_start_cb (GdictContext *context,
+			      GdictWindow  *window)
+{
+  gchar *message;
+
+  if (!window->word)
+    return;
+
+  message = g_strdup_printf (_("Searching for '%s'..."), window->word);
+  
+  if (window->status)
+    gtk_statusbar_push (GTK_STATUSBAR (window->status), 0, message);
+
+  g_free (message);
+}
+
+static void
+gdict_window_lookup_end_cb (GdictContext *context,
+			    GdictWindow  *window)
+{
+  gchar *message;
+  gint count;
+
+  count = gdict_defbox_count_definitions (GDICT_DEFBOX (window->defbox));
+
+  if (window->max_definition == -1)
+    window->max_definition = count;
+
+  message = g_strdup_printf (_("%d definitions found"), count);
+
+  if (window->status)
+    gtk_statusbar_push (GTK_STATUSBAR (window->status), 0, message);
+
+  g_free (message);
+}
+
+static void
+gdict_window_error_cb (GdictContext *context,
+		       GError       *error,
+		       GdictWindow  *window)
+{
+  if (window->word)
+    g_free (window->word);
+}
+
 static GdictContext *
-get_context_from_loader (GdictSourceLoader *loader)
+get_context_from_loader (GdictWindow *window)
 {
   GdictSource *source;
   GdictContext *retval;
   
-  source = gdict_source_loader_get_source (loader, _("Default"));
+  source = gdict_source_loader_get_source (window->loader, _("Default"));
   if (!source)
     {
       g_warning ("Unable to find a dictionary source");
@@ -645,6 +710,18 @@ get_context_from_loader (GdictSourceLoader *loader)
     }
   
   retval = gdict_source_get_context (source);
+
+  /* attach our callbacks */
+  window->lookup_start_id = g_signal_connect (retval, "lookup-start",
+		  			      G_CALLBACK (gdict_window_lookup_start_cb),
+					      window);
+  window->lookup_end_id = g_signal_connect (retval, "lookup-end",
+		  			    G_CALLBACK (gdict_window_lookup_end_cb),
+					    window);
+  window->error_id = g_signal_connect (retval, "error",
+		  		       G_CALLBACK (gdict_window_error_cb),
+				       window);
+  
   g_object_unref (source);
   
   return retval;
@@ -740,7 +817,7 @@ gdict_window_constructor (GType                  type,
   gtk_box_pack_start (GTK_BOX (window->main_box), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
   
-  label = gtk_label_new (_("Find:"));
+  label = gtk_label_new_with_mnemonic (_("F_ind:"));
   gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
   gtk_widget_show (label);
   
@@ -749,7 +826,9 @@ gdict_window_constructor (GType                  type,
   gtk_box_pack_start (GTK_BOX (hbox), window->entry, TRUE, TRUE, 0);
   gtk_widget_show (window->entry);
 
-  window->context = get_context_from_loader (window->loader);
+  gtk_label_set_mnemonic_widget (GTK_LABEL (label), window->entry);
+
+  window->context = get_context_from_loader (window);
   
   window->defbox = gdict_defbox_new ();
   if (window->context)

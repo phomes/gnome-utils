@@ -347,10 +347,6 @@ match_found_cb (GdictContext *context,
 {
   GdictEntryPrivate *priv = entry->priv;
 
-  g_message ("(in %s) MATCH: '%s'\n",
-  	     G_STRFUNC,
-  	     gdict_match_get_word (match));
-  
   /* we must increase the reference count of the match object, since it
    * will be unreferenced as soon as the callback is finished.
    */

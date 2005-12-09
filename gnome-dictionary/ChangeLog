@@ -1,3 +1,18 @@
+2005-12-10  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	* libgdict/gdict-client-context.c (gdict_client_context_parse_line):
+	avoid emission of spurious "lookup-end" signals; rework the server
+	error response parsing.
+
+	* libgdict/gdict-defbox.c: grab focus on the find entry when showing
+	the find pane; add a progress dialog for showing the state of the
+	definition lookup.
+
+	* data/gnome-dictionary-ui.xml, src/gdict-window.h, src/gdict-window.c:
+	add support for a <control>L accelerator, used to highlight the "Find"
+	entry; add a mnemonic for the "Find" entry; add a status bar; link the
+	GdictContext signals; various bug fixes.
+
 2005-12-09  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
 	* libgdict/gdict-source.h: add gdict_source_peek_context() and

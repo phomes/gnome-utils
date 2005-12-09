@@ -57,8 +57,10 @@ struct _GdictWindow
   
   GdictSourceLoader *loader;
   GdictContext *context;
+  guint lookup_start_id;
+  guint lookup_end_id;
+  guint error_id;
   
-  GtkWidget *print_dialog;
   gchar *print_font;
   
   GConfClient *client;

@@ -56,6 +56,8 @@ struct _GdictDefboxPrivate
   GtkWidget *find_next;
   GtkWidget *find_prev;
   GtkWidget *find_label;
+
+  GtkWidget *progress_dialog;
   
   GtkTextBuffer *buffer;
 
@@ -832,7 +834,10 @@ gdict_defbox_set_show_find (GdictDefbox *defbox,
   
   priv->show_find = show_find;
   if (priv->show_find)
-    gtk_widget_show_all (priv->find_pane);
+    {
+      gtk_widget_show_all (priv->find_pane);
+      gtk_widget_grab_focus (priv->find_entry);
+    }
   else
     gtk_widget_hide (priv->find_pane);
 }
@@ -855,6 +860,80 @@ gdict_defbox_get_show_find (GdictDefbox *defbox)
   return (defbox->priv->show_find == TRUE);
 }
 
+/* find the toplevel widget for @widget */
+static GtkWindow *
+get_toplevel_window (GtkWidget *widget)
+{
+  GtkWidget *toplevel;
+  
+  toplevel = gtk_widget_get_toplevel (widget);
+  if (!GTK_WIDGET_TOPLEVEL (toplevel))
+    return NULL;
+  else
+    return GTK_WINDOW (toplevel);
+}
+
+static GtkWidget *
+create_progress_dialog (GdictDefbox *defbox)
+{
+  GtkWidget *dialog;
+  GtkWidget *vbox;
+  GtkWidget *label;
+  GtkWidget *progress;
+
+  dialog = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+  gtk_window_set_transient_for (GTK_WINDOW (dialog),
+		                get_toplevel_window (GTK_WIDGET (defbox)));
+  gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+  gtk_window_set_position (GTK_WINDOW (dialog), GTK_WIN_POS_CENTER_ON_PARENT);
+  
+  vbox = gtk_vbox_new (FALSE, 12);
+  gtk_container_add (GTK_CONTAINER (dialog), vbox);
+  gtk_widget_show (vbox);
+
+  label = gtk_label_new (NULL);
+  g_object_set_data (G_OBJECT (dialog), "progress-label", label);
+  gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+  gtk_widget_show (label);
+  
+  progress = gtk_progress_bar_new ();
+  g_object_set_data (G_OBJECT (dialog), "progress-bar", progress);
+  gtk_box_pack_end (GTK_BOX (vbox), progress, FALSE, FALSE, 0);
+  gtk_widget_show (progress);
+
+  return dialog;
+}
+
+static void
+update_progress_dialog (GdictDefbox     *defbox,
+			GdictDefinition *definition)
+{
+  GdictDefboxPrivate *priv;
+  GtkWidget *progress, *label;
+  gchar *text;
+  gint total, current;
+  gdouble fraction;
+
+  priv = defbox->priv;
+
+  total = gdict_definition_get_total (definition);
+  current = g_slist_length (priv->definitions);
+  
+  text = g_strdup_printf (_("Definition for '%s' (%d/%d)"),
+			  gdict_definition_get_word (definition),
+			  current,
+			  total);
+  
+  label = g_object_get_data (G_OBJECT (priv->progress_dialog), "progress-label");
+  gtk_label_set_text (GTK_LABEL (label), text);
+  g_free (text);
+
+  fraction = ((gdouble) current / (gdouble) total);
+  progress = g_object_get_data (G_OBJECT (priv->progress_dialog), "progress-bar");
+  gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (progress),
+		  		 MIN (fraction, 1.0));
+}
+
 static void
 lookup_start_cb (GdictContext *context,
 		 gpointer      user_data)
@@ -862,7 +941,7 @@ lookup_start_cb (GdictContext *context,
   GdictDefbox *defbox = GDICT_DEFBOX (user_data);
   GdictDefboxPrivate *priv = defbox->priv;
   GdkWindow *window;
-  
+
   priv->is_searching = TRUE;
   
   gdict_defbox_clear (defbox);
@@ -874,6 +953,11 @@ lookup_start_cb (GdictContext *context,
   				     GTK_TEXT_WINDOW_WIDGET);
   
   gdk_window_set_cursor (window, priv->busy_cursor);
+
+  g_assert (priv->progress_dialog == NULL);
+  
+  priv->progress_dialog = create_progress_dialog (defbox);
+  gtk_widget_show_all (priv->progress_dialog);
 }
 
 static void
@@ -883,6 +967,12 @@ lookup_end_cb (GdictContext *context,
   GdictDefbox *defbox = GDICT_DEFBOX (user_data);
   GdictDefboxPrivate *priv = defbox->priv;
   GdkWindow *window;
+  
+  if (priv->progress_dialog)
+    {
+      gtk_widget_destroy (priv->progress_dialog);
+      priv->progress_dialog = NULL;
+    }
   
   window = gtk_text_view_get_window (GTK_TEXT_VIEW (priv->text_view),
   				     GTK_TEXT_WINDOW_WIDGET);
@@ -1000,6 +1090,10 @@ definition_found_cb (GdictContext    *context,
   def->definition = gdict_definition_ref (definition);
   
   priv->definitions = g_slist_append (priv->definitions, def);
+
+  g_assert (priv->progress_dialog != NULL);
+  
+  update_progress_dialog (defbox, definition);
 }
 
 static void
@@ -1008,6 +1102,13 @@ error_cb (GdictContext *context,
 	  gpointer      user_data)
 {
   GdictDefbox *defbox = GDICT_DEFBOX (user_data);
+  GdictDefboxPrivate *priv = defbox->priv;
+
+  if (priv->progress_dialog)
+    {
+      gtk_widget_destroy (priv->progress_dialog);
+      priv->progress_dialog = NULL;
+    }
   
   /* the error must not be freed */
   gdict_show_error_dialog (GTK_WIDGET (defbox),
@@ -1016,8 +1117,19 @@ error_cb (GdictContext *context,
 
   gdict_defbox_clear (defbox);
   
-  g_free (defbox->priv->word);
-  defbox->priv->word = NULL;
+  g_free (priv->word);
+  priv->word = NULL;
+
+  if (priv->start_id)
+    {
+      g_signal_handler_disconnect (priv->context, priv->start_id);
+      g_signal_handler_disconnect (priv->context, priv->define_id);
+      g_signal_handler_disconnect (priv->context, priv->end_id);
+      g_signal_handler_disconnect (priv->context, priv->error_id);
+
+      priv->start_id = priv->define_id = priv->end_id = 0;
+      priv->error_id = 0;
+    }
   
   defbox->priv->is_searching = FALSE;
 }

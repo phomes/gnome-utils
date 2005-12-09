@@ -67,4 +67,3 @@ libgtkalignedwindow_la_LIBADD = $(GNOME_UTILS_LIBS)
 #	$(LIBGNOMEPRINT_LIBS) \
 #	$(APPLET_LIBS) \
 #	$(NULL)
-

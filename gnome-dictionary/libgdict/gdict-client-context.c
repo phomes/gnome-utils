@@ -643,7 +643,6 @@ gdict_command_free (GdictCommand *cmd)
       g_free (cmd->word);
       break;
     default:
-      g_assert_not_reached ();
       break;
     }
   
@@ -756,8 +755,9 @@ gdict_client_context_send_command (GdictClientContext  *context,
   return TRUE;
 }  
 
-/* gdict_client_context_run_command: runs @command inside @context; this function
- * builds the command string and then passes it to the dictionary server.
+/* gdict_client_context_run_command: runs @command inside @context; this
+ * function builds the command string and then passes it to the dictionary
+ * server.
  */
 static gboolean
 gdict_client_context_run_command (GdictClientContext  *context,
@@ -1049,6 +1049,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
 			         const gchar        *buffer)
 {
   GdictClientContextPrivate *priv;
+  GError *server_error = NULL;
   
   g_assert (GDICT_IS_CLIENT_CONTEXT (context));
   g_assert (buffer != NULL);
@@ -1074,8 +1075,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
       else if ((priv->status_code == GDICT_STATUS_SERVER_DOWN) ||
                (priv->status_code == GDICT_STATUS_SHUTDOWN))
         {
-          GError *server_error = NULL;
-          
           /* the server is shutting down or is not available */          
           g_set_error (&server_error, GDICT_CLIENT_CONTEXT_ERROR,
                        GDICT_CLIENT_CONTEXT_ERROR_SERVER_DOWN,
@@ -1120,6 +1119,92 @@ gdict_client_context_parse_line (GdictClientContext *context,
       return TRUE;
     }
 
+  /* here we catch all the errors codes that the server might give us */
+  switch (priv->status_code)
+    {
+    case GDICT_STATUS_NO_MATCH:
+      g_set_error (&server_error, GDICT_CONTEXT_ERROR,
+                   GDICT_CONTEXT_ERROR_NO_MATCH,
+                   _("Word '%s' not found"),
+                   priv->command->word);
+      
+      g_signal_emit_by_name (context, "error", server_error);
+          
+      g_error_free (server_error);
+      server_error = NULL;
+
+      priv->command->state = S_FINISH;
+      break;
+    case GDICT_STATUS_BAD_DATABASE:
+      g_set_error (&server_error, GDICT_CONTEXT_ERROR,
+                   GDICT_CONTEXT_ERROR_INVALID_DATABASE,
+                   _("Invalid database '%s'"),
+                   priv->command->database);
+          
+      g_signal_emit_by_name (context, "error", server_error);
+          
+      g_error_free (server_error);
+      server_error = NULL;
+          
+      priv->command->state = S_FINISH;
+      break;
+    case GDICT_STATUS_BAD_STRATEGY:
+      g_set_error (&server_error, GDICT_CONTEXT_ERROR,
+                   GDICT_CONTEXT_ERROR_INVALID_STRATEGY,
+                   _("Invalid strategy '%s'"),
+                   priv->command->strategy);
+          
+      g_signal_emit_by_name (context, "error", server_error);
+          
+      g_error_free (server_error);
+      server_error = NULL;
+          
+      priv->command->state = S_FINISH;
+      break;
+    case GDICT_STATUS_BAD_COMMAND:
+    case GDICT_STATUS_BAD_PARAMETERS:
+      g_set_error (&server_error, GDICT_CONTEXT_ERROR,
+                   GDICT_CONTEXT_ERROR_INVALID_COMMAND,
+                   _("Bad command or parameters (%d)"),
+                   priv->status_code);
+      
+      g_signal_emit_by_name (context, "error", server_error);
+      
+      g_error_free (server_error);
+      server_error = NULL;
+      
+      priv->command->state = S_FINISH;
+      break;
+    case GDICT_STATUS_NO_DATABASES_PRESENT:
+      g_set_error (&server_error, GDICT_CONTEXT_ERROR,
+                   GDICT_CONTEXT_ERROR_NO_DATABASES,
+                   _("No databases found on dictionary server at '%s'"),
+                   priv->hostname);
+          
+      g_signal_emit_by_name (context, "error", server_error);
+          
+      g_error_free (server_error);
+      server_error = NULL;
+
+      priv->command->state = S_FINISH;
+      break;
+    case GDICT_STATUS_NO_STRATEGIES_PRESENT:
+      g_set_error (&server_error, GDICT_CONTEXT_ERROR,
+                   GDICT_CONTEXT_ERROR_NO_STRATEGIES,
+                   _("No strategies found on dictionary server at '%s'"),
+                   priv->hostname);
+          
+      g_signal_emit_by_name (context, "error", server_error);
+          
+      g_error_free (server_error);
+      server_error = NULL;
+
+      priv->command->state = S_FINISH;
+      break;
+    default:
+      break;
+    }
+
   /* server replied with 'ok' or the command has reached its FINISH state,
    * so now we are clear for destroying the current command and check if
    * there are other commands on the queue, and run them.
@@ -1136,10 +1221,10 @@ gdict_client_context_parse_line (GdictClientContext *context,
       gdict_command_free (priv->command);
       priv->command = NULL;
 
-      /* notify the end of a command - ignore CLIENT command, since we
-       * issue it ourselves
+      /* notify the end of a command - ignore CLIENT and QUIT commands, as
+       * we issue them ourselves
        */
-      if (last_cmd != CMD_CLIENT)
+      if ((last_cmd != CMD_CLIENT) && (last_cmd != CMD_QUIT))
         g_signal_emit_by_name (context, "lookup-end");
       
       /* pop the next command from the queue */
@@ -1159,28 +1244,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           g_error_free (run_error);
         }
      
-      return TRUE;
-    }
-  
-  /* these are generic command-related errors, so we treat them outside the
-   * command type check
-   */
-  if ((priv->status_code == GDICT_STATUS_BAD_COMMAND) ||
-      (priv->status_code == GDICT_STATUS_BAD_PARAMETERS))
-    {
-      GError *error = NULL;
- 
-      priv->command->state = S_FINISH;
-      
-      g_set_error (&error, GDICT_CONTEXT_ERROR,
-                   GDICT_CONTEXT_ERROR_INVALID_COMMAND,
-                   _("Server replied with status code %d: bad command or parameters"),
-                   priv->status_code);
-      
-      g_signal_emit_by_name (context, "error", error);
-      
-      g_error_free (error);
-      
       return TRUE;
     }
 
@@ -1204,21 +1267,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           gdict_debug ("server replied: %d databases found\n", atoi (p));
           
           g_signal_emit_by_name (context, "lookup-start");
-        }
-      else if (priv->status_code == GDICT_STATUS_NO_DATABASES_PRESENT)
-        {
-          GError *no_db_error = NULL;
-          
-          g_set_error (&no_db_error, GDICT_CONTEXT_ERROR,
-                       GDICT_CONTEXT_ERROR_NO_DATABASES,
-                       _("No databases found on dictionary server at '%s'"),
-                       priv->hostname);
-          
-          g_signal_emit_by_name (context, "error", no_db_error);
-          
-          g_error_free (no_db_error);
-
-          priv->command->state = S_FINISH;
         }
       else if (0 == strcmp (buffer, "."))
         priv->command->state = S_FINISH;
@@ -1273,21 +1321,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           gdict_debug ("server replied: %d strategies found\n", atoi (p));
           
           g_signal_emit_by_name (context, "lookup-start");
-        }
-      else if (priv->status_code == GDICT_STATUS_NO_STRATEGIES_PRESENT)
-        {
-          GError *no_strat_error = NULL;
-          
-          g_set_error (&no_strat_error, GDICT_CONTEXT_ERROR,
-                       GDICT_CONTEXT_ERROR_NO_STRATEGIES,
-                       _("No strategies found on dictionary server at '%s'"),
-                       priv->hostname);
-          
-          g_signal_emit_by_name (context, "error", no_strat_error);
-          
-          g_error_free (no_strat_error);
-
-          priv->command->state = S_FINISH;
         }
       else if (0 == strcmp (buffer, "."))
         priv->command->state = S_FINISH;
@@ -1400,36 +1433,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           
           priv->command->state = S_DATA;
         }
-      else if (priv->status_code == GDICT_STATUS_NO_MATCH)
-        {
-          GError *no_match_error = NULL;
-          
-          g_set_error (&no_match_error, GDICT_CONTEXT_ERROR,
-                       GDICT_CONTEXT_ERROR_NO_MATCH,
-                       _("No definitions found for word '%s'"),
-                       priv->command->word);
-          
-          g_signal_emit_by_name (context, "error", no_match_error);
-          
-          g_error_free (no_match_error);
-          
-          priv->command->state = S_FINISH;
-        }
-      else if (priv->status_code == GDICT_STATUS_BAD_DATABASE)
-        {
-          GError *bad_db_error = NULL;
-          
-          g_set_error (&bad_db_error, GDICT_CONTEXT_ERROR,
-                       GDICT_CONTEXT_ERROR_INVALID_DATABASE,
-                       _("Invalid database '%s'"),
-                       priv->command->database);
-          
-          g_signal_emit_by_name (context, "error", bad_db_error);
-          
-          g_error_free (bad_db_error);
-          
-          priv->command->state = S_FINISH;
-        }
       else if (strcmp (buffer, ".") == 0)
         {
           GdictDefinition *def;
@@ -1479,51 +1482,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
 
           g_signal_emit_by_name (context, "lookup-start");
         }
-      else if (priv->status_code == GDICT_STATUS_NO_MATCH)
-        {
-          GError *no_match_error = NULL;
-          
-          g_set_error (&no_match_error, GDICT_CONTEXT_ERROR,
-                       GDICT_CONTEXT_ERROR_NO_MATCH,
-                       _("No matches found for word '%s'"),
-                       priv->command->word);
-          
-          g_signal_emit_by_name (context, "error", no_match_error);
-          
-          g_error_free (no_match_error);
-
-          priv->command->state = S_FINISH;
-        }
-      else if (priv->status_code == GDICT_STATUS_BAD_DATABASE)
-        {
-          GError *bad_db_error = NULL;
-          
-          g_set_error (&bad_db_error, GDICT_CONTEXT_ERROR,
-                       GDICT_CONTEXT_ERROR_INVALID_DATABASE,
-                       _("Invalid database '%s'"),
-                       priv->command->database);
-          
-          g_signal_emit_by_name (context, "error", bad_db_error);
-          
-          g_error_free (bad_db_error);
-          
-          priv->command->state = S_FINISH;
-        }
-      else if (priv->status_code == GDICT_STATUS_BAD_STRATEGY)
-        {
-          GError *bad_strat_error = NULL;
-          
-          g_set_error (&bad_strat_error, GDICT_CONTEXT_ERROR,
-                       GDICT_CONTEXT_ERROR_INVALID_STRATEGY,
-                       _("Invalid strategy '%s'"),
-                       priv->command->strategy);
-          
-          g_signal_emit_by_name (context, "error", bad_strat_error);
-          
-          g_error_free (bad_strat_error);
-          
-          priv->command->state = S_FINISH;
-        }
       else if (0 == strcmp (buffer, "."))
         priv->command->state = S_FINISH;
       else
@@ -1564,7 +1522,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
       g_assert_not_reached ();
       break;
     }
-  
+
   return TRUE;
 }
 
