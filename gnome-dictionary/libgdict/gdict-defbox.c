@@ -1014,6 +1014,8 @@ error_cb (GdictContext *context,
   			   _("Error while looking up definition"),
   			   error->message);
 
+  gdict_defbox_clear (defbox);
+  
   g_free (defbox->priv->word);
   defbox->priv->word = NULL;
   

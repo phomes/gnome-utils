@@ -18,6 +18,8 @@ gnome_dictionary_SOURCES = \
 	gdict-app.h		\
 	gdict-pref-dialog.c	\
 	gdict-pref-dialog.h	\
+	gdict-window.c 		\
+	gdict-window.h 		\
 	main.c			\
 	$(NULL)
 gnome_dictionary_CFLAGS = \

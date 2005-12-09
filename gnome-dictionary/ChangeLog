@@ -1,3 +1,14 @@
+2005-12-09  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	* src/gdict-window.h, src/gdict-window.c: move GdictWindow into its own
+	file; add printing support (still experimental).
+
+	* src/gdict-app.h, src/gdict-app.c: remove GdictWindow
+
+	* .cvsignore, data/.cvsignore, src/.cvsignore: add cvs ignore files.
+
+	* libgdict/gdict-defbox.c: clear content on error.
+
 2005-12-07  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
 	* README: add a visible warning on the experimental nature of this
