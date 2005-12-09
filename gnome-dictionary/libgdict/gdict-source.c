@@ -302,7 +302,7 @@ gdict_source_resolve_transport (const gchar *transport)
   g_assert_not_reached ();
 }
 
-static void
+static GdictContext *
 gdict_source_create_context (GdictSource  *source,
 			     const gchar  *transport,
 			     GError      **error)
@@ -347,13 +347,14 @@ gdict_source_create_context (GdictSource  *source,
                    GDICT_SOURCE_ERROR_PARSE,
                    _("Invalid transport type '%s'"),
                    transport);
-      return;
+      return NULL;
     }
 
   g_assert (context != NULL);
   
   priv->transport = t;
-  priv->context = context;
+
+  return context;
 }
 
 static gboolean
@@ -447,7 +448,7 @@ gdict_source_parse (GdictSource  *source,
       return FALSE;
     }
   
-  gdict_source_create_context (source, transport, &parse_error);
+  priv->context = gdict_source_create_context (source, transport, &parse_error);
   if (parse_error)
     {
       g_propagate_error (error, parse_error);
@@ -725,12 +726,37 @@ gdict_source_get_transport (GdictSource *source)
  *
  * Gets the #GdictContext bound to @source.
  *
- * Return value: a #GdictContext with its reference count increased by one.
+ * Return value: a #GdictContext for @source.  Use g_object_unref()
+ *   when you don't need it anymore.
  *
  * Since: 1.0
  */
 GdictContext *
 gdict_source_get_context (GdictSource *source)
+{
+  GdictContext *retval;
+  
+  g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
+
+  retval = gdict_source_create_context (source,
+		  			valid_transports[source->priv->transport],
+					NULL);
+
+  return retval;
+}
+
+/**
+ * gdict_source_peek_context:
+ * @source: a #GdictSource
+ *
+ * FIXME
+ *
+ * Return value: a #GdictContext
+ *
+ * Since: 1.0
+ */
+GdictContext *
+gdict_source_peek_context (GdictSource *source)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
 

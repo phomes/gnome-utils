@@ -71,7 +71,8 @@ struct _GdictWindowClass
 {
   GtkWindowClass parent_class;
   
-  void (*created) (GdictWindow *window);
+  void (*created) (GdictWindow *parent_window,
+  		   GdictWindow *new_window);
 };
 
 GType      gdict_window_get_type (void) G_GNUC_CONST;

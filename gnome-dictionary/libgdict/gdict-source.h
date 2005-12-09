@@ -89,7 +89,10 @@ void                  gdict_source_set_transport   (GdictSource           *sourc
 						    GdictSourceTransport   transport);
 GdictSourceTransport  gdict_source_get_transport   (GdictSource           *source);
 GdictContext *        gdict_source_get_context     (GdictSource           *source);
+GdictContext *        gdict_source_peek_context    (GdictSource           *source);
 void                  gdict_source_set_context     (GdictSource           *source,
+						    GdictContext          *context);
+void                  gdict_source_steal_context   (GdictSource           *source,
 						    GdictContext          *context);
 
 G_END_DECLS

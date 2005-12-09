@@ -145,7 +145,12 @@ static void
 gdict_window_cmd_file_new (GtkAction   *action,
 			   GdictWindow *window)
 {
-
+  GtkWidget *new_window;
+  
+  new_window = gdict_window_new (window->loader);
+  gtk_widget_show (new_window);
+  
+  g_signal_emit (window, gdict_window_signals[CREATED], 0, new_window);
 }
 
 static void
@@ -752,6 +757,11 @@ gdict_window_constructor (GType                  type,
   
   gtk_box_pack_start (GTK_BOX (window->main_box), window->defbox, TRUE, TRUE, 0);
   gtk_widget_show_all (window->defbox);
+
+  window->status = gtk_statusbar_new ();
+  gtk_statusbar_set_has_resize_grip (GTK_STATUSBAR (window->status), TRUE);
+  gtk_box_pack_end (GTK_BOX (window->main_box), window->status, FALSE, FALSE, 0);
+  gtk_widget_show (window->status);
   
   gtk_widget_pop_composite_child ();
   
@@ -784,6 +794,16 @@ gdict_window_class_init (GdictWindowClass *klass)
   				   		      G_MAXUINT,
   				   		      0,
   				   		      G_PARAM_READABLE));
+
+  gdict_window_signals[CREATED] =
+    g_signal_new ("created",
+                  G_OBJECT_CLASS_TYPE (gobject_class),
+                  G_SIGNAL_RUN_LAST,
+                  G_STRUCT_OFFSET (GdictWindowClass, created),
+                  NULL, NULL,
+                  g_cclosure_marshal_VOID__OBJECT,
+                  G_TYPE_NONE, 1,
+                  GDICT_TYPE_WINDOW);
 }
 
 static void

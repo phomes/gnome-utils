@@ -103,17 +103,6 @@ save_yourself_cb (GnomeClient        *client,
 }
 
 static void
-gdict_window_create_cb (GdictWindow *parent,
-			GdictWindow *new_window,
-			gpointer     user_data)
-{
-  GdictApp *app = GDICT_APP (user_data);
- 
-  app->windows = g_slist_prepend (app->windows, new_window);
-  app->current_window = new_window;
-}
-
-static void
 gdict_window_destroy_cb (GtkWidget *widget,
 		         gpointer   user_data)
 {
@@ -141,6 +130,20 @@ gdict_window_destroy_cb (GtkWidget *widget,
 }
 
 static void
+gdict_window_created_cb (GdictWindow *parent,
+			 GdictWindow *new_window,
+			 gpointer     user_data)
+{
+  GdictApp *app = GDICT_APP (user_data);
+  
+  g_signal_connect (new_window, "destroy",
+  		    G_CALLBACK (gdict_window_destroy_cb), app);
+  
+  app->windows = g_slist_prepend (app->windows, new_window);
+  app->current_window = new_window;
+}
+
+static void
 gdict_create_window (GdictApp *app)
 {
   GtkWidget *window;
@@ -148,6 +151,8 @@ gdict_create_window (GdictApp *app)
   window = gdict_window_new (singleton->loader);
   GDICT_WINDOW (window)->client = app->gconf_client;
   
+  g_signal_connect (window, "created",
+  		    G_CALLBACK (gdict_window_created_cb), app);
   g_signal_connect (window, "destroy",
                     G_CALLBACK (gdict_window_destroy_cb), app);
   

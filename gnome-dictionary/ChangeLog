@@ -1,5 +1,25 @@
 2005-12-09  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
+	* libgdict/gdict-source.h: add gdict_source_peek_context() and
+	gdict_source_steal_context().
+
+	* libgdict/gdict-source.c (gdict_source_get_context): create a new
+	context each time; the old behaviour has been shifted to the
+	gdict_source_peek_context() function.
+
+	* src/gdict-window.h, src/gdict-window.c: add the "created" signal,
+	which is fired each time a new GdictWindow has been created by another
+	GdictWindow.
+
+	* src/gdict-window.c (gdict_window_cmd_file_new): create a new
+	GdictWindow instance, and fire the "created" signal.
+
+	* src/gdict-app.c: use the GdictWindow::created signal to add the newly
+	created window to the windows list, like we use the GtkWidget::destroy
+	signal to remove GdictWindow instances from the list.
+
+2005-12-09  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
 	* help/C/gnome-dictionary.xml: fix manual stub, so that make check
 	passes.
 
