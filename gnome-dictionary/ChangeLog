@@ -1,5 +1,10 @@
 2005-12-09  Emmanuele Bassi  <ebassi@cvs.gnome.org>
 
+	* help/C/gnome-dictionary.xml: fix manual stub, so that make check
+	passes.
+
+2005-12-09  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
 	* src/gdict-window.h, src/gdict-window.c: move GdictWindow into its own
 	file; add printing support (still experimental).
 
