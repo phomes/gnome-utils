@@ -2,25 +2,26 @@
 GdictContext
 
 <!-- ##### SECTION Short_Description ##### -->
-The Gdict Context
+The dictionary abstract interface used by the widgets
 
 <!-- ##### SECTION Long_Description ##### -->
 <para>
-The #GdictContext object is an object which implements a RFC2229 compliant
-dictionary protocol client.
+The #GdictContext interface defines a generic dictionary query interface to be
+used by the Dictionary widgets such as the #GdictDefbox widget.  It is an
+abstract interface, and is designed to be used with any dictionary source.  The
+programmer just has to implement this interface on their own dictionary source 
+handling system for it to be viewable by a #GdictDefbox widget.
 </para>
 
 <para>
-You should use a #GdictContext object when implementing an application which
-interfaces to a dictionary server using the dictionary protocol.  Once you
-connect to the server, you can query it for definitions of words.  This object
-will mask all the complexity of the network connection, protocol implementation
-and response parsing.
+There is a dictionary source implementation provided by the Dictionary Library
+&mdash; a RFC2229 compliant dictionary protocol client called
+#GdictClientContext.
 </para>
 
 <!-- ##### SECTION See_Also ##### -->
 <para>
-
+#GdictClientContext, #GdictDefbox, #GdictEntry, #GdictSource
 </para>
 
 <!-- ##### SECTION Stability_Level ##### -->
@@ -32,147 +33,86 @@ The #GdictContext struct contains private data only.
 </para>
 
 
-<!-- ##### SIGNAL GdictContext::connected ##### -->
-<para>
-Emitted when the #GdictContext is connected to a dictionary server.
-</para>
-
-@context: The object which received the signal.
-
-<!-- ##### SIGNAL GdictContext::database-found ##### -->
-<para>
-Emitted when the #GdictContext has received a database definition from the
-dictionary server, after requesting it using gdict_context_get_databases().
-</para>
-
-@context: The object which received the signal
-@database: a #GdictDatabase containing the database definition
-
-<!-- ##### SIGNAL GdictContext::definition-found ##### -->
-<para>
-Emitted when a definition is found after using the
-<functionname>gdict_context_define()</functionname> function.
-</para>
-
-@context: The object which received the signal
-@definition: a #GdictDefinition containing the definition
-
-<!-- ##### SIGNAL GdictContext::disconnected ##### -->
-<para>
-Emitted when the #GdictContext is disconnected from a dictionary server.
-</para>
-
-@context: The object which received the signal
-
-<!-- ##### SIGNAL GdictContext::error ##### -->
-<para>
-Emitted when an error occurs while communicating with the dictionary server.
-</para>
-
-@context: the object which received the signal.
-@error: a #GError containing the error
-
-<!-- ##### SIGNAL GdictContext::match-found ##### -->
-<para>
-Emitted when a match is found after using the
-<functionname>gdict_context_match()</functionname> function.
-</para>
-
-@context: The object which received the signal
-@match: a #GdictMatch containing the match
-
-<!-- ##### SIGNAL GdictContext::strategy-found ##### -->
-<para>
-Emitted when a strategy definition is found after using the
-<functionname>gdict_context_get_strategies()</functionname> function.
-</para>
-
-@context: The object which received the signal
-@strategy: a #GdictStrategy containing the strategy definition
-
-<!-- ##### ARG GdictContext:client-name ##### -->
+<!-- ##### ARG GdictContext:local-only ##### -->
 <para>
 
 </para>
 
-<!-- ##### ARG GdictContext:hostname ##### -->
+<!-- ##### STRUCT GdictContextIface ##### -->
 <para>
 
 </para>
 
-<!-- ##### ARG GdictContext:port ##### -->
-<para>
-
-</para>
-
-<!-- ##### ARG GdictContext:status ##### -->
-<para>
-
-</para>
-
-<!-- ##### STRUCT GdictContextClass ##### -->
-<para>
-
-</para>
-
-@parent_class: 
-@connected: 
-@disconnected: 
+@base_iface: 
+@get_databases: 
+@get_strategies: 
+@match_word: 
+@define_word: 
+@lookup_start: 
+@lookup_end: 
 @database_found: 
 @strategy_found: 
 @match_found: 
 @definition_found: 
 @error: 
+@_gdict_context_1: 
+@_gdict_context_2: 
+@_gdict_context_3: 
+@_gdict_context_4: 
+
+<!-- ##### ENUM GdictContextError ##### -->
+<para>
+These identify the various errors that can occur while calling #GdictContext
+functions.  The error messages depend on the particular #GdictContext
+implementation.
+</para>
+
+@GDICT_CONTEXT_ERROR_PARSE: Indicates that the context is unable to parse the dictionary data.
+@GDICT_CONTEXT_ERROR_NOT_IMPLEMENTED: Indicates that a command is not
+implemented.
+@GDICT_CONTEXT_ERROR_INVALID_DATABASE: Indicates that the supplied database
+name is not valid.
+@GDICT_CONTEXT_ERROR_INVALID_STRATEGY: Indicates that the supplied strategy
+name is not valid.
+@GDICT_CONTEXT_ERROR_INVALID_COMMAND: Indicates that the supplied command is
+not valid.
+@GDICT_CONTEXT_ERROR_NO_MATCH: Indicates that no matches were found for a given
+word.
+@GDICT_CONTEXT_ERROR_NO_DATABASES: Indicates that no databases are present on a
+dictionary source.
+@GDICT_CONTEXT_ERROR_NO_STRATEGIES: Indicates that no strategies are present on
+a dictionary source.
 
 <!-- ##### STRUCT GdictDatabase ##### -->
 <para>
 A <structname>GdictDatabase</structname> represents a database stored inside
-a dictionary server.
+a dictionary source.
 </para>
 
 
 <!-- ##### STRUCT GdictStrategy ##### -->
 <para>
 A <structname>GdictStrategy</structname> represents a strategy stored inside a
-dictionary server.  Strategies are used in order to match words.  See
-gdict_context_match().
+dictionary source.  Strategies are used in order to match words.  See
+gdict_context_match_word().
 </para>
 
 
 <!-- ##### STRUCT GdictMatch ##### -->
 <para>
 A <structname>GdictMatch</structname> represents a match for a word searched
-using the gdict_context_match() function.
+using the gdict_context_match_word() function.
 </para>
 
 
 <!-- ##### STRUCT GdictDefinition ##### -->
 <para>
 A <structname>GdictDefinition</structname> represents a definition of a word
-searched using the gdict_context_define() function.
+searched using the gdict_context_define_word() function.
 </para>
 
 
-<!-- ##### FUNCTION gdict_context_new ##### -->
-<para>
-
-</para>
-
-@hostname: 
-@port: 
-@Returns: 
-
-
-<!-- ##### FUNCTION gdict_context_set_client ##### -->
-<para>
-
-</para>
-
-@context: 
-@client: 
-
-
-<!-- ##### FUNCTION gdict_context_get_client ##### -->
+<!-- ##### FUNCTION gdict_context_get_local_only ##### -->
 <para>
 
 </para>
@@ -181,43 +121,16 @@ searched using the gdict_context_define() function.
 @Returns: 
 
 
-<!-- ##### FUNCTION gdict_context_set_hostname ##### -->
+<!-- ##### FUNCTION gdict_context_set_local_only ##### -->
 <para>
 
 </para>
 
 @context: 
-@hostname: 
+@local_only: 
 
 
-<!-- ##### FUNCTION gdict_context_get_hostname ##### -->
-<para>
-
-</para>
-
-@context: 
-@Returns: 
-
-
-<!-- ##### FUNCTION gdict_context_set_port ##### -->
-<para>
-
-</para>
-
-@context: 
-@port: 
-
-
-<!-- ##### FUNCTION gdict_context_get_port ##### -->
-<para>
-
-</para>
-
-@context: 
-@Returns: 
-
-
-<!-- ##### FUNCTION gdict_context_connect ##### -->
+<!-- ##### FUNCTION gdict_context_lookup_databases ##### -->
 <para>
 
 </para>
@@ -227,24 +140,7 @@ searched using the gdict_context_define() function.
 @Returns: 
 
 
-<!-- ##### FUNCTION gdict_context_disconnect ##### -->
-<para>
-
-</para>
-
-@context: 
-
-
-<!-- ##### FUNCTION gdict_context_is_connected ##### -->
-<para>
-
-</para>
-
-@context: 
-@Returns: 
-
-
-<!-- ##### FUNCTION gdict_context_get_databases ##### -->
+<!-- ##### FUNCTION gdict_context_lookup_strategies ##### -->
 <para>
 
 </para>
@@ -254,17 +150,7 @@ searched using the gdict_context_define() function.
 @Returns: 
 
 
-<!-- ##### FUNCTION gdict_context_get_strategies ##### -->
-<para>
-
-</para>
-
-@context: 
-@error: 
-@Returns: 
-
-
-<!-- ##### FUNCTION gdict_context_define ##### -->
+<!-- ##### FUNCTION gdict_context_define_word ##### -->
 <para>
 
 </para>
@@ -276,7 +162,7 @@ searched using the gdict_context_define() function.
 @Returns: 
 
 
-<!-- ##### FUNCTION gdict_context_match ##### -->
+<!-- ##### FUNCTION gdict_context_match_word ##### -->
 <para>
 
 </para>
@@ -287,6 +173,23 @@ searched using the gdict_context_define() function.
 @word: 
 @error: 
 @Returns: 
+
+
+<!-- ##### FUNCTION gdict_database_ref ##### -->
+<para>
+
+</para>
+
+@db: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_database_unref ##### -->
+<para>
+
+</para>
+
+@db: 
 
 
 <!-- ##### FUNCTION gdict_database_get_name ##### -->
@@ -294,8 +197,10 @@ searched using the gdict_context_define() function.
 
 </para>
 
-@database: 
+@db: 
 @Returns: 
+<!-- # Unused Parameters # -->
+@database: 
 
 
 <!-- ##### FUNCTION gdict_database_get_full_name ##### -->
@@ -303,8 +208,27 @@ searched using the gdict_context_define() function.
 
 </para>
 
-@database: 
+@db: 
 @Returns: 
+<!-- # Unused Parameters # -->
+@database: 
+
+
+<!-- ##### FUNCTION gdict_strategy_ref ##### -->
+<para>
+
+</para>
+
+@strat: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_strategy_unref ##### -->
+<para>
+
+</para>
+
+@strat: 
 
 
 <!-- ##### FUNCTION gdict_strategy_get_name ##### -->
@@ -312,17 +236,36 @@ searched using the gdict_context_define() function.
 
 </para>
 
-@strategy: 
+@strat: 
 @Returns: 
+<!-- # Unused Parameters # -->
+@strategy: 
 
 
-<!-- ##### FUNCTION gdict_strategy_get_full_name ##### -->
+<!-- ##### FUNCTION gdict_strategy_get_description ##### -->
 <para>
 
 </para>
 
-@strategy: 
+@strat: 
 @Returns: 
+
+
+<!-- ##### FUNCTION gdict_match_ref ##### -->
+<para>
+
+</para>
+
+@match: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_match_unref ##### -->
+<para>
+
+</para>
+
+@match: 
 
 
 <!-- ##### FUNCTION gdict_match_get_word ##### -->
@@ -343,13 +286,41 @@ searched using the gdict_context_define() function.
 @Returns: 
 
 
+<!-- ##### FUNCTION gdict_definition_ref ##### -->
+<para>
+
+</para>
+
+@def: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gdict_definition_unref ##### -->
+<para>
+
+</para>
+
+@def: 
+
+
+<!-- ##### FUNCTION gdict_definition_get_total ##### -->
+<para>
+
+</para>
+
+@def: 
+@Returns: 
+
+
 <!-- ##### FUNCTION gdict_definition_get_word ##### -->
 <para>
 
 </para>
 
-@definition: 
+@def: 
 @Returns: 
+<!-- # Unused Parameters # -->
+@definition: 
 
 
 <!-- ##### FUNCTION gdict_definition_get_database ##### -->
@@ -357,16 +328,18 @@ searched using the gdict_context_define() function.
 
 </para>
 
-@definition: 
+@def: 
 @Returns: 
+<!-- # Unused Parameters # -->
+@definition: 
 
 
-<!-- ##### FUNCTION gdict_definition_get_definition ##### -->
+<!-- ##### FUNCTION gdict_definition_get_text ##### -->
 <para>
 
 </para>
 
-@definition: 
+@def: 
 @Returns: 
 
 

@@ -28,16 +28,15 @@ GdictEntry
 
 </para>
 
-<!-- ##### STRUCT GdictEntryClass ##### -->
+<!-- ##### ARG GdictEntry:database ##### -->
 <para>
 
 </para>
 
-@parent_class: 
-@_gdict_entry_1: 
-@_gdict_entry_2: 
-@_gdict_entry_3: 
-@_gdict_entry_4: 
+<!-- ##### ARG GdictEntry:strategy ##### -->
+<para>
+
+</para>
 
 <!-- ##### FUNCTION gdict_entry_new ##### -->
 <para>
@@ -45,6 +44,8 @@ GdictEntry
 </para>
 
 @Returns: 
+<!-- # Unused Parameters # -->
+@context: 
 
 
 <!-- ##### FUNCTION gdict_entry_new_with_context ##### -->
