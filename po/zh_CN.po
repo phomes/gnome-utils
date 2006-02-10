@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-07 12:48+0800\n"
-"PO-Revision-Date: 2006-02-07 12:56+0800\n"
+"POT-Creation-Date: 2006-02-10 00:02+0100\n"
+"PO-Revision-Date: 2006-02-11 03:37+0800\n"
 "Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
@@ -586,8 +586,8 @@ msgid ""
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a height based on the font size."
 msgstr ""
-"此键定义了窗口高度，用于在不同的会话间记忆字典窗口的大小。将其设置为 -1 将使得"
-"字典窗口使用基于字体大小的高度。"
+"此键定义了窗口高度，用于在不同的会话间记忆字典窗口的大小。将其设置为 -1 将使"
+"得字典窗口使用基于字体大小的高度。"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:17
 msgid ""
@@ -595,8 +595,8 @@ msgid ""
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a width based on the font size."
 msgstr ""
-"此键定义了窗口宽度，用于在不同的会话间记忆字典窗口的大小。将其设置为 -1 将使得"
-"字典窗口使用基于字体大小的宽度。"
+"此键定义了窗口宽度，用于在不同的会话间记忆字典窗口的大小。将其设置为 -1 将使"
+"得字典窗口使用基于字体大小的宽度。"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:18
 msgid ""
@@ -604,8 +604,8 @@ msgid ""
 "remember the state of the dictionary window across sessions. Setting it to "
 "TRUE will make the window always appear as maximized."
 msgstr ""
-"此键定义了窗口是否应最大化，用于在不同的会话间记忆字典窗口的状态。将其设置为 TRUE 将使得"
-"字典窗口以最大化显示。"
+"此键定义了窗口是否应最大化，用于在不同的会话间记忆字典窗口的状态。将其设置为 "
+"TRUE 将使得字典窗口以最大化显示。"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:19
 msgid "Use smart lookup (Deprecated)"
@@ -1068,7 +1068,9 @@ msgstr "无法打开应用程序图标：%s"
 msgid ""
 "Unable to create the data directory '%s': there already is a file with the "
 "same name.  You should move the file and re-run gnome-dictionary."
-msgstr "无法创建数据目录“%s”：已经存在同名文件。您应该将该文件移出，然后重新运行 gnome-dictionary。"
+msgstr ""
+"无法创建数据目录“%s”：已经存在同名文件。您应该将该文件移出，然后重新运行 "
+"gnome-dictionary。"
 
 #. Translators: the first is the file name, the second is
 #. * the error message
@@ -1087,7 +1089,11 @@ msgid ""
 "  From '%s':\n"
 "\n"
 "%s\n"
-msgstr "“%s”的定义\n  来自“%s”：\n\n%s\n"
+msgstr ""
+"“%s”的定义\n"
+"  来自“%s”：\n"
+"\n"
+"%s\n"
 
 #: ../gnome-dictionary/src/gdict-app.c:263
 #, c-format
@@ -1269,7 +1275,9 @@ msgid ""
 "You should move the file and re-run the\n"
 "Dictionary applet"
 msgstr ""
-"路径中已经有同名文件。\n您应该将该文件移出，\n然后重新运行字典小程序"
+"路径中已经有同名文件。\n"
+"您应该将该文件移出，\n"
+"然后重新运行字典小程序"
 
 #: ../gnome-dictionary/src/gdict-applet.c:1252
 msgid "Unable to load the applet icon"
@@ -1521,21 +1529,41 @@ msgstr "Screenshot-%d.png"
 msgid "Unable to take a screenshot of the current desktop."
 msgstr "无法对当前桌面抓图。"
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:438
+#: ../gnome-screenshot/gnome-panel-screenshot.c:439
 msgid "Grab a window instead of the entire screen"
 msgstr "抓取窗口，而不是整个屏幕"
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:439
+#: ../gnome-screenshot/gnome-panel-screenshot.c:440
 msgid "Include the window border with the screenshot"
 msgstr "抓图中包含窗口边框"
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:440
+#: ../gnome-screenshot/gnome-panel-screenshot.c:441
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "在指定延迟后抓图[以秒计]"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:441
-msgid "Effect to add to the window border"
-msgstr "添加窗口边框的效果"
+msgid "seconds"
+msgstr "秒"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:442
+msgid "Effect to add to the border"
+msgstr "添加到边框的效果"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:442
+msgid "effect"
+msgstr "效果"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:452
+msgid "Options for Screenshot"
+msgstr "抓图选项"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:453
+msgid "Show Screenshot options"
+msgstr "显示抓图选项"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:457
+msgid "Take a picture of the screen"
+msgstr "抓取屏幕的图片"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:2
 msgid "<b>Options</b>"
@@ -1811,8 +1839,8 @@ msgid ""
 "the search tool between sessions. Setting it to -1 will make the search tool "
 "use the default height."
 msgstr ""
-"此键定义了窗口高度，用于在不同的会话间记忆搜索工具的大小。将其设置为 -1 将使得"
-"搜索工具使用默认高度。"
+"此键定义了窗口高度，用于在不同的会话间记忆搜索工具的大小。将其设置为 -1 将使"
+"得搜索工具使用默认高度。"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:56
 msgid ""
@@ -1820,8 +1848,8 @@ msgid ""
 "search tool between sessions. Setting it to -1 will make the search tool use "
 "the default width."
 msgstr ""
-"此键定义了窗口宽度，用于在不同的会话间记忆搜索工具的大小。将其设置为 -1 将使得"
-"搜索工具使用默认宽度。"
+"此键定义了窗口宽度，用于在不同的会话间记忆搜索工具的大小。将其设置为 -1 将使"
+"得搜索工具使用默认宽度。"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:57
 msgid ""
@@ -2758,4 +2786,3 @@ msgstr "不支持对此文件系统进行监视。\n"
 #: ../logview/monitor.c:88
 msgid "Gnome-VFS Error.\n"
 msgstr "Gnome-VFS 错误。\n"
-
