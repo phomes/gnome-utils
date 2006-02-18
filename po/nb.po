@@ -1,14 +1,14 @@
 # Norwegian translation of gnome-utils (bokmål dialect).
 # Copyright (C) 1999-2005 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2005.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2006.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.13.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-05 18:43+0100\n"
-"PO-Revision-Date: 2006-02-05 18:58+0100\n"
+"POT-Creation-Date: 2006-02-18 13:30+0100\n"
+"PO-Revision-Date: 2006-02-18 13:41+0100\n"
 "Last-Translator: Øivind Hoel <oivind.hoel@gmail.com>\n"
 "Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../gfloppy/gfloppy.desktop.in.h:1
-#: ../gfloppy/src/gfloppy2.glade.h:9
+#: ../gfloppy/gfloppy.desktop.in.h:1 ../gfloppy/src/gfloppy2.glade.h:9
 msgid "Floppy Formatter"
 msgstr "Formatering av diskett"
 
@@ -26,8 +25,12 @@ msgid "Format Floppy Disks"
 msgstr "Formater disketter"
 
 #: ../gfloppy/gfloppy.schemas.in.h:1
-msgid "0 for the quick format, 1 for a standard one (adds a low-level format) and finally 2 for a thorough format (adds a bad blocks scan)."
-msgstr "0 for hurtigformatering, 1 for standard formatering (lavnivåformat) og 2 for grundig formatering (sjekk etter dårlige blokker)."
+msgid ""
+"0 for the quick format, 1 for a standard one (adds a low-level format) and "
+"finally 2 for a thorough format (adds a bad blocks scan)."
+msgstr ""
+"0 for hurtigformatering, 1 for standard formatering (lavnivåformat) og 2 for "
+"grundig formatering (sjekk etter dårlige blokker)."
 
 #: ../gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
@@ -42,8 +45,12 @@ msgid "Default formatting mode"
 msgstr "Forvalgt formateringsmodus"
 
 #: ../gfloppy/gfloppy.schemas.in.h:5
-msgid "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set mtools as the preferred FAT formatting backend."
-msgstr "SANN for å sette mkdosfs som foretrukket system for formatering av FAT eller USANN for å bruke mtools."
+msgid ""
+"TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
+"mtools as the preferred FAT formatting backend."
+msgstr ""
+"SANN for å sette mkdosfs som foretrukket system for formatering av FAT eller "
+"USANN for å bruke mtools."
 
 #: ../gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
@@ -69,8 +76,7 @@ msgstr "Sjekker etter dårlige blokker..."
 msgid "Failed to open device %s for badblock checking\n"
 msgstr "Feil under åpning av enhet %s for sjekking av dårlige blokker\n"
 
-#: ../gfloppy/src/badblocks.c:288
-#: ../gfloppy/src/gfloppy.c:531
+#: ../gfloppy/src/badblocks.c:288 ../gfloppy/src/gfloppy.c:531
 msgid "Checking for bad blocks... Done"
 msgstr "Sjekker etter dårlige blokker... Ferdig"
 
@@ -82,8 +88,7 @@ msgstr "Formaterer disketten..."
 msgid "I don't know what this is, but it's very wrong."
 msgstr "Jeg vet ikke hva dette er, men det er veldig feil."
 
-#: ../gfloppy/src/fdformat.c:57
-#: ../gfloppy/src/fdformat.c:70
+#: ../gfloppy/src/fdformat.c:57 ../gfloppy/src/fdformat.c:70
 #, c-format
 msgid "Error formatting track #%d"
 msgstr "Feil under formatering av spor #%d"
@@ -102,8 +107,7 @@ msgstr "Formaterer disken... Ferdig"
 msgid "Verifying the format..."
 msgstr "Verifiserer formatet..."
 
-#: ../gfloppy/src/fdformat.c:104
-#: ../gfloppy/src/fdformat.c:189
+#: ../gfloppy/src/fdformat.c:104 ../gfloppy/src/fdformat.c:189
 msgid ""
 "Unable to write to the floppy.\n"
 "\n"
@@ -113,14 +117,12 @@ msgstr ""
 "\n"
 "Vennligst forsikre deg om at den ikke er skrivebeskyttet."
 
-#: ../gfloppy/src/fdformat.c:107
-#: ../gfloppy/src/fdformat.c:192
+#: ../gfloppy/src/fdformat.c:107 ../gfloppy/src/fdformat.c:192
 #, c-format
 msgid "Insufficient permissions to open floppy device %s."
 msgstr "Ikke tilstrekkelige rettigheter til å åpne diskettenheten %s."
 
-#: ../gfloppy/src/fdformat.c:111
-#: ../gfloppy/src/fdformat.c:196
+#: ../gfloppy/src/fdformat.c:111 ../gfloppy/src/fdformat.c:196
 msgid ""
 "Unable to access the floppy disk.\n"
 "\n"
@@ -193,7 +195,8 @@ msgstr "Kunne ikke bestemme nåværende geometri for diskett."
 
 #: ../gfloppy/src/gfloppy.c:219
 msgid "Error while creating a unique filename for the bad blocks list file."
-msgstr "Feil under oppretting av unikt filnavn for listen over dårlige blokker."
+msgstr ""
+"Feil under oppretting av unikt filnavn for listen over dårlige blokker."
 
 #: ../gfloppy/src/gfloppy.c:239
 msgid "Error while filling the bad blocks list file."
@@ -234,7 +237,8 @@ msgid ""
 "The bad blocks checking utility (mbadblocks) reported the following errors:\n"
 "%s."
 msgstr ""
-"Verktøyet som ser etter dårlige blokker (mbadblocks) rapporterte følgende feil:\n"
+"Verktøyet som ser etter dårlige blokker (mbadblocks) rapporterte følgende "
+"feil:\n"
 "%s."
 
 #: ../gfloppy/src/gfloppy.c:439
@@ -242,8 +246,7 @@ msgid "Abnormal mbadblocks child process termination."
 msgstr "Unormal terminering av underprosess av mbadblocks."
 
 #. make the filesystem
-#: ../gfloppy/src/gfloppy.c:465
-#: ../gfloppy/src/gfloppy.c:505
+#: ../gfloppy/src/gfloppy.c:465 ../gfloppy/src/gfloppy.c:505
 msgid "Making filesystem on disk..."
 msgstr "Lager filsystem på disken..."
 
@@ -251,8 +254,7 @@ msgstr "Lager filsystem på disken..."
 msgid "Unable to create filesystem correctly."
 msgstr "Kunne ikke opprette filsystem."
 
-#: ../gfloppy/src/gfloppy.c:478
-#: ../gfloppy/src/gfloppy.c:517
+#: ../gfloppy/src/gfloppy.c:478 ../gfloppy/src/gfloppy.c:517
 msgid "Making filesystem on disk... Done"
 msgstr "Oppretter filsystem på disken... Ferdig"
 
@@ -275,8 +277,14 @@ msgid "*"
 msgstr "*"
 
 #: ../gfloppy/src/gfloppy2.glade.h:3
-msgid "<small><i><b>Note</b>: The mbadblocks utility isn't installed on this system.  It must be installed in order to perform a thorough DOS (fat) formatting.</i></small>"
-msgstr "<small><i><b>Merk</b>: Verktøyet mbadblocks er ikke installert på dette systemet. Det må vøre installert for å kunne utføre en grundig DOS formatering (fat).</i></small>"
+msgid ""
+"<small><i><b>Note</b>: The mbadblocks utility isn't installed on this "
+"system.  It must be installed in order to perform a thorough DOS (fat) "
+"formatting.</i></small>"
+msgstr ""
+"<small><i><b>Merk</b>: Verktøyet mbadblocks er ikke installert på dette "
+"systemet. Det må vøre installert for å kunne utføre en grundig DOS "
+"formatering (fat).</i></small>"
 
 #: ../gfloppy/src/gfloppy2.glade.h:4
 msgid "DOS (FAT)"
@@ -352,16 +360,19 @@ msgid "Cannot Format"
 msgstr "Kan ikke formatere"
 
 #: ../gfloppy/src/main.c:260
-msgid "Neither the mke2fs nor the mkdosfs/mformat applications are installed. You can't format a floppy without one of them."
-msgstr "Verken mke2fs eller mkdosfs/mformat er installert. Du kan ikke formatere en diskett uten en av disse."
+msgid ""
+"Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
+"can't format a floppy without one of them."
+msgstr ""
+"Verken mke2fs eller mkdosfs/mformat er installert. Du kan ikke formatere en "
+"diskett uten en av disse."
 
 #: ../gfloppy/src/main.c:280
 #, c-format
 msgid "Unable to open the device %s, formatting cannot continue."
 msgstr "Kan ikke åpne enhet %s, formatering kan ikke fortsette."
 
-#: ../gfloppy/src/main.c:283
-#: ../gfloppy/src/main.c:345
+#: ../gfloppy/src/main.c:283 ../gfloppy/src/main.c:345
 #, c-format
 msgid ""
 "The device %s is disconnected.\n"
@@ -370,18 +381,18 @@ msgstr ""
 "Enhet %s er koblet fra.\n"
 "Vennligst koble til enheten for å fortsette."
 
-#: ../gfloppy/src/main.c:286
-#: ../gfloppy/src/main.c:348
+#: ../gfloppy/src/main.c:286 ../gfloppy/src/main.c:348
 #, c-format
 msgid ""
-"You do not have the proper permissions to write to %s, formatting will not be possible.\n"
+"You do not have the proper permissions to write to %s, formatting will not "
+"be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
-"Du har ikke rettigheter til å skrive til %s. Formatering er derfor ikke mulig.\n"
+"Du har ikke rettigheter til å skrive til %s. Formatering er derfor ikke "
+"mulig.\n"
 "Kontakt din systemadministrator for å få skrivetilgang."
 
-#: ../gfloppy/src/main.c:293
-#: ../gfloppy/src/main.c:356
+#: ../gfloppy/src/main.c:293 ../gfloppy/src/main.c:356
 msgid "Cannot initialize device"
 msgstr "Kan ikke initiere enheten"
 
@@ -389,8 +400,7 @@ msgstr "Kan ikke initiere enheten"
 msgid "Unable to open any device, formatting cannot continue."
 msgstr "Kan ikke åpne en enhet. Formattering kan ikke fortsette."
 
-#: ../gfloppy/src/main.c:345
-#: ../gfloppy/src/main.c:348
+#: ../gfloppy/src/main.c:345 ../gfloppy/src/main.c:348
 msgid "/dev/floppy/0 or /dev/fd0"
 msgstr "/dev/floppy/0 eller /dev/fd0"
 
@@ -416,10 +426,18 @@ msgstr "ENHET"
 
 #: ../gfloppy/src/progress.c:126
 #, c-format
-msgid "The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been found and marked."
-msgid_plural "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have been found and marked."
-msgstr[0] "Disketten er formatert, men <b>%d dårlig blokk</b> (av %d) ble funnet og merket."
-msgstr[1] "Disketten er formatert, men <b>%d dårlige blokker</b> (av %d) ble funnet og merket."
+msgid ""
+"The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been "
+"found and marked."
+msgid_plural ""
+"The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
+"been found and marked."
+msgstr[0] ""
+"Disketten er formatert, men <b>%d dårlig blokk</b> (av %d) ble funnet og "
+"merket."
+msgstr[1] ""
+"Disketten er formatert, men <b>%d dårlige blokker</b> (av %d) ble funnet og "
+"merket."
 
 #: ../gfloppy/src/progress.c:129
 msgid "Floppy formatted successfully."
@@ -450,14 +468,12 @@ msgid "Cl_ear"
 msgstr "_Tøm"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:2
-#: ../gnome-dictionary/src/gdict-window.c:838
-#: ../logview/logview.c:116
+#: ../gnome-dictionary/src/gdict-window.c:838 ../logview/logview.c:116
 msgid "_About"
 msgstr "_Om"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:3
-#: ../gnome-dictionary/src/gdict-window.c:798
-#: ../logview/logview.c:88
+#: ../gnome-dictionary/src/gdict-window.c:798 ../logview/logview.c:88
 msgid "_Help"
 msgstr "_Hjelp"
 
@@ -498,9 +514,11 @@ msgid "Port used to connect to server (Deprecated)"
 msgstr "Port som brukes for å koble til tjener (Fases ut)"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:3
-#, fuzzy
-msgid "Specify whether to use smart lookup. This key is dependant on whether the dictionary server supports this option. The default is TRUE. This key is deprecated and no longer in use."
-msgstr "Oppgi om smarte oppslag skal brukes. Denne nøkkelen er avhengig av om ordboktjeneren støtter valget. Forvalg er TRUE"
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE. This key is "
+"deprecated and no longer in use."
+msgstr "Oppgi om smarte oppslag skal brukes. Denne nøkkelen er avhengig av om ordboktjeneren støtter valget. Forvalg er TRUE. Denne nøkkelen fases ut og brukes ikke lenger."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:4
 msgid "The default database to use"
@@ -519,9 +537,11 @@ msgid "The default width of the application window"
 msgstr "Forvalgt bredde på programvinduet"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:8
-#, fuzzy
-msgid "The dictionary server to connect to. The default server is dict.org. See http://www.dict.org for details on other servers. This key is deprecated and no longer in use."
-msgstr "Ordboktjener som skal brukes. Forvalgt tjener er dict.org. Se http://www.dict.org for detaljer om andre tjenere"
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers. This key is deprecated and "
+"no longer in use."
+msgstr "Ordboktjener som skal brukes. Forvalgt tjener er dict.org. Se http://www.dict.org for detaljer om andre tjenere. Denne nøkkelen fases ut og brukes ikke lenger."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
 msgid "The font to be used when printing"
@@ -532,37 +552,55 @@ msgid "The font to be used when printing a definition."
 msgstr "Skrift til bruk for utskrift av en definisjon."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:11
-#, fuzzy
-msgid "The name of the default individual database or meta-database to use on a dictionary source. An exclamation mark (\"!\") means that all the databases present in a dictionary source should be searched"
-msgstr "Navn på individuell database som skal brukes i ordboktjeneren. ! spesifiserer at programmet skal søke i alle databaser på en gitt tjener."
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr "Navn på forvalgt individuell database eller meta-database som skal brukes på en ordkilde. Utropstegn («!») betyr at programmet skal søke i alle databaser på en gitt ordbokkilde"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:12
-msgid "The name of the default search strategy to use on a dictionary source, if available. The default strategy is 'exact', that is match exact words."
-msgstr ""
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr "Navn på forvalgt søkestrategi som skal brukes på en ordbokkilde, hvis tilgjengelig. Forvalgt strategi er «exact» som gir eksakte treff på ord."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
 msgstr "Navn på brukt ordbokskilde"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:14
-msgid "The name of the dictionary source used to retrieve the definitions of words."
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
 msgstr "Navn på ordbokskilden for henting av orddefinisjoner"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:15
-msgid "The port number to connect to. The default port is 2628. This key is deprecated and no longer in use."
-msgstr "Portnummer for tilkoblingen. Forvalgt port er 2628. Denne innstillingen er ikke lenger i bruk."
+msgid ""
+"The port number to connect to. The default port is 2628. This key is "
+"deprecated and no longer in use."
+msgstr ""
+"Portnummer for tilkoblingen. Forvalgt port er 2628. Denne innstillingen er "
+"ikke lenger i bruk."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:16
-msgid "This key defines the window height and it's used to remember the size of the dictionary window across sessions. Setting it to -1 will make the dictionary window use a height based on the font size."
-msgstr ""
+msgid ""
+"This key defines the window height and it's used to remember the size of the "
+"dictionary window across sessions. Setting it to -1 will make the dictionary "
+"window use a height based on the font size."
+msgstr "Denne nøkkelen definierer vinduets høyde og brukes for å huske størrelsen på ordbokvinduet mellom sesjoner. Hvis den settes til -1 vil forvalgt størrelse brukes."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:17
-msgid "This key defines the window width and it's used to remember the size of the dictionary window across sessions. Setting it to -1 will make the dictionary window use a width based on the font size."
-msgstr ""
+msgid ""
+"This key defines the window width and it's used to remember the size of the "
+"dictionary window across sessions. Setting it to -1 will make the dictionary "
+"window use a width based on the font size."
+msgstr "Denne nøkkelen definierer vinduets bredde og brukes for å huske størrelsen på ordbokvinduet mellom sesjoner. Hvis den settes til -1 vil forvalgt størrelse brukes."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:18
-msgid "This key defines whether the window should be maximized and it's used to remember the state of the dictionary window across sessions. Setting it to TRUE will make the window always appear as maximized."
-msgstr ""
+msgid ""
+"This key defines whether the window should be maximized and it's used to "
+"remember the state of the dictionary window across sessions. Setting it to "
+"TRUE will make the window always appear as maximized."
+msgstr "Denne nøkkelen definerer om vinduet skal maksimerers og brukes til å huske tilstanden for ordbokvinduet mellom sesjoner. Hvis den settes til TRUE vil vinduet alltid vises i maksimert tilstand."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:19
 msgid "Use smart lookup (Deprecated)"
@@ -694,8 +732,12 @@ msgstr "Oppslag feilet for vert «%s»: vert ikke funnet"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1140
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'. The server replied with code %d (server down)"
-msgstr "Kan ikke koble til ordboktjener på «%s:%d». Tjeneren svarte med kode %d (tjener nede)"
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"Kan ikke koble til ordboktjener på «%s:%d». Tjeneren svarte med kode %d "
+"(tjener nede)"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1159
 #, c-format
@@ -741,12 +783,12 @@ msgstr "Ingen databaser funnet på ordboktjener «%s»"
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "Ingen strategier funnet på ordboktjener «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1664
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1679
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Tilkobling feilet for ordboktjener «%s:%d»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1703
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1718
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -755,21 +797,21 @@ msgstr ""
 "Feil under lesing av svar fra tjener:\n"
 "%s"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1774
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1791
 msgid "No hostname defined for the dictionary server"
 msgstr "Ingen vertsnavn definert for ordboktjener"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1810
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1825
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1827
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1842
 msgid "Unable to create socket"
 msgstr "Kunne ikke opprette plugg"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1851
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1868
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Kunne ikke sette kanal som ikke-blokkerende: %s"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1866
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1883
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "Kan ikke koble til ordboktjener «%s:%d»"
@@ -905,7 +947,7 @@ msgstr "Strategi"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:135
 msgid "The matching strategy to be used to generate the completion list"
-msgstr ""
+msgstr "Strategi som skal brukes for å generere liste for automatisk fullføring"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:218
 msgid "Filename"
@@ -968,12 +1010,13 @@ msgstr "Ingen gruppe \"%s\" funnet i ordbokskildens definisjon"
 #: ../gnome-dictionary/libgdict/gdict-source.c:516
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr ""
+msgstr "Kan ikke finne nøkkel «%s» i definisjonen for ordbokkilde: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:541
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr ""
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr "Kan ikke finne nøkkel «%s» i definisjonsfilen for ordbokkilde: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:727
 msgid "Dictionary source does not have name"
@@ -982,7 +1025,7 @@ msgstr "Ordbokskilde har ikke et navn"
 #: ../gnome-dictionary/libgdict/gdict-source.c:736
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr ""
+msgstr "Ordbokkilde «%s» har ugyldig transport «%s»"
 
 #: ../gnome-dictionary/libgdict/gdict-source-loader.c:162
 msgid "Paths"
@@ -1001,8 +1044,7 @@ msgid "Dictionary sources found"
 msgstr "Ordbokkilder funnet"
 
 #. Translator credits
-#: ../gnome-dictionary/src/gdict-about.c:59
-#: ../logview/about.c:47
+#: ../gnome-dictionary/src/gdict-about.c:59 ../logview/about.c:47
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
@@ -1018,8 +1060,12 @@ msgstr "Kan ikke åpne ikon for programmet: %s"
 
 #: ../gnome-dictionary/src/gdict-app.c:118
 #, c-format
-msgid "Unable to create the data directory '%s': there already is a file with the same name.  You should move the file and re-run gnome-dictionary."
-msgstr "Kan ikke opprette datamappen \"%s\": det finnes allerede en fil med samme navn. Du bør flytte denne mappen og starte ordboken på nytt."
+msgid ""
+"Unable to create the data directory '%s': there already is a file with the "
+"same name.  You should move the file and re-run gnome-dictionary."
+msgstr ""
+"Kan ikke opprette datamappen \"%s\": det finnes allerede en fil med samme "
+"navn. Du bør flytte denne mappen og starte ordboken på nytt."
 
 #. Translators: the first is the file name, the second is
 #. * the error message
@@ -1229,9 +1275,8 @@ msgstr ""
 "Ordboken på nytt."
 
 #: ../gnome-dictionary/src/gdict-applet.c:1252
-#, fuzzy
 msgid "Unable to load the applet icon"
-msgstr "Kan ikke laste programikonet"
+msgstr "Kan ikke laste ikon for panelprogram"
 
 #: ../gnome-dictionary/src/gdict-applet.c:1281
 #: ../gnome-dictionary/src/gdict-window.c:1312
@@ -1241,12 +1286,12 @@ msgstr "Kan ikke koble til GConf"
 #: ../gnome-dictionary/src/gdict-applet.c:1296
 #: ../gnome-dictionary/src/gdict-window.c:1328
 msgid "Unable to get notification for preferences"
-msgstr ""
+msgstr "Kan ikke hente varsling for brukervalg"
 
 #: ../gnome-dictionary/src/gdict-applet.c:1311
 #: ../gnome-dictionary/src/gdict-window.c:1344
 msgid "Unable to get notification for the document font"
-msgstr ""
+msgstr "Kan ikke hente varsel for dokumentskrift"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:272
 msgid "Add Dictionary Source"
@@ -1327,8 +1372,7 @@ msgstr "Brukervalg for ordbok"
 msgid "_File"
 msgstr "_Fil"
 
-#: ../gnome-dictionary/src/gdict-window.c:796
-#: ../logview/logview.c:86
+#: ../gnome-dictionary/src/gdict-window.c:796 ../logview/logview.c:86
 msgid "_Edit"
 msgstr "R_ediger"
 
@@ -1357,8 +1401,7 @@ msgstr "S_kriv ut..."
 msgid "Print this document"
 msgstr "Skriv ut dette dokumentet"
 
-#: ../gnome-dictionary/src/gdict-window.c:813
-#: ../logview/logview.c:99
+#: ../gnome-dictionary/src/gdict-window.c:813 ../logview/logview.c:99
 msgid "Select _All"
 msgstr "Velg _alt"
 
@@ -1408,8 +1451,7 @@ msgid "Go to the last definition"
 msgstr "Gå til den siste definisjonen"
 
 #. Help menu
-#: ../gnome-dictionary/src/gdict-window.c:836
-#: ../logview/logview.c:114
+#: ../gnome-dictionary/src/gdict-window.c:836 ../logview/logview.c:114
 msgid "_Contents"
 msgstr "_Innhold"
 
@@ -1482,21 +1524,41 @@ msgstr "Skjermdump-%d.png"
 msgid "Unable to take a screenshot of the current desktop."
 msgstr "Kan ikke ta skjermdump av dette skrivebordet."
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:438
+#: ../gnome-screenshot/gnome-panel-screenshot.c:439
 msgid "Grab a window instead of the entire screen"
 msgstr "Dump et vindu i stedet for hele skjermen"
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:439
+#: ../gnome-screenshot/gnome-panel-screenshot.c:440
 msgid "Include the window border with the screenshot"
 msgstr "Ta med vinduskant i skjermdumpet"
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:440
+#: ../gnome-screenshot/gnome-panel-screenshot.c:441
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Ta skjermdump etter oppgitt pause [i sekunder]"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:441
-msgid "Effect to add to the window border"
+msgid "seconds"
+msgstr "sekunder"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:442
+msgid "Effect to add to the border"
 msgstr "Effekt som skal legges til vinduskanten"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:442
+msgid "effect"
+msgstr "effekt"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:452
+msgid "Options for Screenshot"
+msgstr "Alternativer for skjermdump"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:453
+msgid "Show Screenshot options"
+msgstr "Vis alternativer for skjermdump"
+
+#: ../gnome-screenshot/gnome-panel-screenshot.c:457
+msgid "Take a picture of the screen"
+msgstr "Ta et bilde av skjermen"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:2
 msgid "<b>Options</b>"
@@ -1532,8 +1594,12 @@ msgid "Border Effect"
 msgstr "Effekt for kant"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:2
-msgid "Effect to add to the outside of a border. Possible values are \"shadow\", \"none\", and \"black-line\"."
-msgstr "Effekt som skal legges til på utsiden av kanten. Mulige verdier er «shadow», «none» og «black-line»."
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"black-line\"."
+msgstr ""
+"Effekt som skal legges til på utsiden av kanten. Mulige verdier er «shadow», "
+"«none» og «black-line»."
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
 msgid "Include Border"
@@ -1573,8 +1639,12 @@ msgstr ""
 "%s"
 
 #: ../gnome-screenshot/screenshot-save.c:79
-msgid "The child save process unexpectedly exited.  We are unable to write the screenshot to disk."
-msgstr "Underprosessen for lagring avsluttet uventet. Kan ikke skrive skjermdumpet til disk."
+msgid ""
+"The child save process unexpectedly exited.  We are unable to write the "
+"screenshot to disk."
+msgstr ""
+"Underprosessen for lagring avsluttet uventet. Kan ikke skrive skjermdumpet "
+"til disk."
 
 #: ../gnome-screenshot/screenshot-save.c:191
 msgid "Unknown error saving screenshot to disk"
@@ -1621,7 +1691,7 @@ msgstr "Standard vindushøyde"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:2
 msgid "Default Window Maximized"
-msgstr ""
+msgstr "Forvalgt vindu maksimert"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:3
 msgid "Default Window Width"
@@ -1736,99 +1806,190 @@ msgid "Show Additional Options"
 msgstr "Vis flere alternativer"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:52
-msgid "This key defines the order of the columns in the search results. This key should not be modified by the user."
-msgstr ""
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Denne nøkkelen definerer rekkefølgen for kolonnene i søkeresultatet. Den skal ikke redigeres av brukere."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:53
-msgid "This key defines the paths the search tool will exclude from a quick search. The wildcards '*' and '?' are supported. The default values are /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Denne nøkkelen definerer stiene som søkeverktøyet vil ekskludere i et raskt søk. Jokertegnene «*» og «?» er støttet. De forvalgte verdiene er /mnt/*, / media/*, /dev/*, /tmp/*, /proc/*, og /var/*."
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search. "
+"The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
+"media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr ""
+"Denne nøkkelen definerer stiene som søkeverktøyet vil ekskludere i et raskt "
+"søk. Jokertegnene «*» og «?» er støttet. De forvalgte verdiene er /mnt/*, / "
+"media/*, /dev/*, /tmp/*, /proc/*, og /var/*."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:54
-msgid "This key defines the paths the search tool will exclude from a second scan when performing a quick search. The second scan uses the find command to search for files. The purpose of the second scan is to find files that have not been indexed. The wildcards '*' and '?' are supported. The default value is /."
-msgstr "Denne nøkkelen definerer stiene som søkeverktøyet vil ekskludere fra det neste raske søket. Det neste søket bruker «find»-kommandoen til å søke etter filer. Hensikten med det neste søket er å finne filer som ikke har blitt indeksert. Jokertegnene «*» og «?» er støttet. Den forvalgte verdien er /."
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value "
+"is /."
+msgstr ""
+"Denne nøkkelen definerer stiene som søkeverktøyet vil ekskludere fra det "
+"neste raske søket. Det neste søket bruker «find»-kommandoen til å søke etter "
+"filer. Hensikten med det neste søket er å finne filer som ikke har blitt "
+"indeksert. Jokertegnene «*» og «?» er støttet. Den forvalgte verdien er /."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:55
-msgid "This key defines the window height, and it's used to remember the size of the search tool between sessions. Setting it to -1 will make the search tool use the default height."
-msgstr ""
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool "
+"use the default height."
+msgstr "Denne nøkkelen definierer vinduets høyde og brukes for å huske størrelsen på søkeverktøyet mellom sesjoner. Hvis den settes til -1 vil forvalgt størrelse brukes."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:56
-msgid "This key defines the window width, and it's used to remember the size of the search tool between sessions. Setting it to -1 will make the search tool use the default width."
-msgstr ""
+msgid ""
+"This key defines the window width, and it's used to remember the size of the "
+"search tool between sessions. Setting it to -1 will make the search tool use "
+"the default width."
+msgstr "Denne nøkkelen definierer vinduets bredde og brukes for å huske størrelsen på søkeverktøyet mellom sesjoner. Hvis den settes til -1 vil forvalgt størrelse brukes"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:57
-msgid "This key determines if the \"Contains the text\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Inneholder teksten» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Inneholder teksten» alternativet skal gjelde "
+"når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:58
-msgid "This key determines if the \"Date modified less than\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Endringsdato mindre enn» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Endringsdato mindre enn» alternativet skal "
+"gjelde når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:59
-msgid "This key determines if the \"Date modified more than\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Endringsdato mer enn» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Endringsdato mer enn» alternativet skal gjelde "
+"når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:60
-msgid "This key determines if the \"File is empty\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Filen er tom» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Filen er tom» alternativet skal gjelde når "
+"søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:61
-msgid "This key determines if the \"Follow symbolic links\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Følg symbolske lenker» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Følg symbolske lenker» alternativet skal gjelde "
+"når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:62
-msgid "This key determines if the \"Include other filesystems\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Ta med andre filsystemer» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Include other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Ta med andre filsystemer» alternativet skal "
+"gjelde når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:63
-msgid "This key determines if the \"Name does not contain\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Navn inneholder ikke» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Navn inneholder ikke» alternativet skal gjelde "
+"når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:64
-msgid "This key determines if the \"Name matches regular expression\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Navn har treff på vanlig uttrykk» skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option "
+"is selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Navn har treff på vanlig uttrykk» skal gjelde "
+"når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:65
-msgid "This key determines if the \"Owned by group\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Eies av gruppe» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Eies av gruppe» alternativet skal gjelde når "
+"søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:66
-msgid "This key determines if the \"Owned by user\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Eies av bruker» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Eies av bruker» alternativet skal gjelde når "
+"søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:67
-msgid "This key determines if the \"Owner is unrecognized\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Eier gjenkjennes ikke» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Eier gjenkjennes ikke» alternativet skal gjelde "
+"når søkeverktøyet starter."
 
 #. Translators: The quoted text is the label of the additional
 #. options expander that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:70
-msgid "This key determines if the \"Select more options\" section is expanded when the search tool is started."
-msgstr "Denne nøkklen bestemmer om alle søkealternativene skal vises når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Select more options\" section is expanded when "
+"the search tool is started."
+msgstr ""
+"Denne nøkklen bestemmer om alle søkealternativene skal vises når "
+"søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:71
-msgid "This key determines if the \"Show hidden files and folders\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Vis skjulte filer og mapper» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Vis skjulte filer og mapper» alternativet skal "
+"gjelde når søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:72
-msgid "This key determines if the \"Size at least\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Minste størrelse» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Minste størrelse» alternativet skal gjelde når "
+"søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:73
-msgid "This key determines if the \"Size at most\" search option is selected when the search tool is started."
-msgstr "Denne nøkkelen bestemmer om «Ikke større enn» alternativet skal gjelde når søkeverktøyet starter."
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Denne nøkkelen bestemmer om «Ikke større enn» alternativet skal gjelde når "
+"søkeverktøyet starter."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:74
-msgid "This key determines if the search tool disables the use of the find command after performing a quick search."
-msgstr "Denne nøkkelen bestemmer om søkeverktøyet slår av bruken av «find»-kommandoen etter å ha utført et raskt søk."
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr ""
+"Denne nøkkelen bestemmer om søkeverktøyet slår av bruken av «find»-"
+"kommandoen etter å ha utført et raskt søk."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:75
-msgid "This key determines if the search tool disables the use of the locate command when performing simple file name searches."
-msgstr "Denne nøkkelen bestemmer om søkeverktøyet deaktiverer bruken av «locate»-kommandoen under enkle filnavnsøk."
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr ""
+"Denne nøkkelen bestemmer om søkeverktøyet deaktiverer bruken av «locate»-"
+"kommandoen under enkle filnavnsøk."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
-#, fuzzy
-msgid "This key determines if the search tool window starts in a maximized state."
-msgstr "Denne nøkkelen bestemmer om søkeverktøyet slår av bruken av «find»-kommandoen etter å ha utført et raskt søk."
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Denne nøkkelen bestemmer om vinduet for søkeverktøyet startes i maksimert tilstand."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:186
 msgid "Could not open help document."
@@ -1892,7 +2053,8 @@ msgstr "Vil du slette «%s» permanent?"
 #: ../gsearchtool/gsearchtool-callbacks.c:671
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Papirkurven er ikke tilgjengelig. Kunne ikke flytte «%s» til papirkurven."
+msgstr ""
+"Papirkurven er ikke tilgjengelig. Kunne ikke flytte «%s» til papirkurven."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:710
 #, c-format
@@ -1933,7 +2095,8 @@ msgstr "Dokument «%s» eksisterer allerede. Vil du erstatte den?"
 
 #: ../gsearchtool/gsearchtool-callbacks.c:1397
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Hvis du erstatter en eksisterende fil vil innholdet i denne bli overskrevet."
+msgstr ""
+"Hvis du erstatter en eksisterende fil vil innholdet i denne bli overskrevet."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:1462
 msgid "The document name you selected is a folder."
@@ -1987,8 +2150,7 @@ msgstr "Innholder _teksten"
 msgid "_Date modified less than"
 msgstr "_Endringsdato mindre enn"
 
-#: ../gsearchtool/gsearchtool.c:83
-#: ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:83 ../gsearchtool/gsearchtool.c:84
 msgid "days"
 msgstr "dager"
 
@@ -2000,8 +2162,7 @@ msgstr "Endringsdato mer enn"
 msgid "S_ize at least"
 msgstr "M_inste størrelse"
 
-#: ../gsearchtool/gsearchtool.c:86
-#: ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:86 ../gsearchtool/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "kilobyte"
 
@@ -2061,8 +2222,7 @@ msgstr "Fl_ytt til papirkurven"
 msgid "_Save Results As..."
 msgstr "Lagre re_sultater som..."
 
-#: ../gsearchtool/gsearchtool.c:255
-#: ../gsearchtool/gsearchtool.c:272
+#: ../gsearchtool/gsearchtool.c:255 ../gsearchtool/gsearchtool.c:272
 msgid "A locate database has probably not been created."
 msgstr "Det finnes ingen database for programmet locate."
 
@@ -2071,8 +2231,7 @@ msgstr "Det finnes ingen database for programmet locate."
 msgid "Character set conversion failed for \"%s\""
 msgstr "Konvertering av tegnsett feilet for «%s»"
 
-#: ../gsearchtool/gsearchtool.c:796
-#: ../gsearchtool/gsearchtool.c:825
+#: ../gsearchtool/gsearchtool.c:796 ../gsearchtool/gsearchtool.c:825
 msgid "No files found"
 msgstr "Ingen filer funnet"
 
@@ -2091,24 +2250,22 @@ msgid_plural "%d Files Found"
 msgstr[0] "%d fil funnet"
 msgstr[1] "%d filer funnet"
 
-#: ../gsearchtool/gsearchtool.c:833
-#: ../gsearchtool/gsearchtool.c:871
+#: ../gsearchtool/gsearchtool.c:833 ../gsearchtool/gsearchtool.c:871
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "%d fil funnet"
 msgstr[1] "%d filer funnet"
 
-#: ../gsearchtool/gsearchtool.c:850
-#: ../gsearchtool/gsearchtool.c:1128
-#: ../gsearchtool/gsearchtool.c:1214
-#: ../gsearchtool/gsearchtool.c:3026
+#: ../gsearchtool/gsearchtool.c:850 ../gsearchtool/gsearchtool.c:1128
+#: ../gsearchtool/gsearchtool.c:1214 ../gsearchtool/gsearchtool.c:3026
 msgid "Search for Files"
 msgstr "Søk etter filer"
 
 #: ../gsearchtool/gsearchtool.c:962
 msgid "Entry changed called for a non entry option!"
-msgstr "Oppføring endret ble kalt for et alternativ som ikke gjaldt oppføringen!"
+msgstr ""
+"Oppføring endret ble kalt for et alternativ som ikke gjaldt oppføringen!"
 
 #: ../gsearchtool/gsearchtool.c:1214
 msgid "Searching..."
@@ -2124,7 +2281,8 @@ msgstr "Sett teksten for søkealternativet «Se i mappe»"
 
 #: ../gsearchtool/gsearchtool.c:1239
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Sorter filer på en av førlgende: navn, mappe, størrelse, type eller dato"
+msgstr ""
+"Sorter filer på en av førlgende: navn, mappe, størrelse, type eller dato"
 
 #: ../gsearchtool/gsearchtool.c:1240
 msgid "Set sort order to descending, the default is ascending"
@@ -2157,17 +2315,24 @@ msgstr ""
 "... For mange feil å vise..."
 
 #: ../gsearchtool/gsearchtool.c:1682
-msgid "The search results may be invalid.  There were errors while performing this search."
-msgstr "Søkeresultatet kan være ugyldig. Det ble funnet feil under utføring av dette søket."
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr ""
+"Søkeresultatet kan være ugyldig. Det ble funnet feil under utføring av dette "
+"søket."
 
-#: ../gsearchtool/gsearchtool.c:1694
-#: ../gsearchtool/gsearchtool.c:1738
+#: ../gsearchtool/gsearchtool.c:1694 ../gsearchtool/gsearchtool.c:1738
 msgid "Show more _details"
 msgstr "Vis flere _detaljer"
 
 #: ../gsearchtool/gsearchtool.c:1724
-msgid "The search results may be out of date or invalid.  Do you want to disable the quick search feature?"
-msgstr "Søkeresultatet kan være utdatert eller ugyldig. Vil du deaktivere hurtigsøkfunksjonen?"
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr ""
+"Søkeresultatet kan være utdatert eller ugyldig. Vil du deaktivere "
+"hurtigsøkfunksjonen?"
 
 #: ../gsearchtool/gsearchtool.c:1749
 msgid "Disable _Quick Search"
@@ -2261,8 +2426,7 @@ msgstr "Dato endret"
 msgid "_Name contains:"
 msgstr "_Navnet inneholder:"
 
-#: ../gsearchtool/gsearchtool.c:2829
-#: ../gsearchtool/gsearchtool.c:2830
+#: ../gsearchtool/gsearchtool.c:2829 ../gsearchtool/gsearchtool.c:2830
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "Oppgi et filnavn eller en del av et filnavn med eller uten jokertegn."
 
@@ -2314,9 +2478,7 @@ msgstr "Klikk for å utføre et søk."
 msgid "Click to stop a search."
 msgstr "Klikk for å stoppe et søk."
 
-#: ../logview/about.c:51
-#: ../logview/logview.c:37
-#: ../logview/main.c:54
+#: ../logview/about.c:51 ../logview/logview.c:37 ../logview/main.c:54
 msgid "System Log Viewer"
 msgstr "Visning av systemlogg"
 
@@ -2352,8 +2514,12 @@ msgstr "En eller flere filer kunne ikke åpnes"
 
 #: ../logview/logrtns.c:59
 #, c-format
-msgid "%s is not user readable. Either run the program as root or ask the sysadmin to change the permissions on the file.\n"
-msgstr "%s er ikke leselig for din bruker. Du kan enten kjøre programmet som root eller spørre systemadministratoren din om å endre rettighetene på filen.\n"
+msgid ""
+"%s is not user readable. Either run the program as root or ask the sysadmin "
+"to change the permissions on the file.\n"
+msgstr ""
+"%s er ikke leselig for din bruker. Du kan enten kjøre programmet som root "
+"eller spørre systemadministratoren din om å endre rettighetene på filen.\n"
 
 #: ../logview/logrtns.c:64
 #, c-format
@@ -2508,19 +2674,19 @@ msgstr "%s (overvåket) - %s"
 msgid "Open Log"
 msgstr "Åpne logg"
 
-#: ../logview/logview.c:749
+#: ../logview/logview.c:774
 msgid "There was an error displaying help."
 msgstr "Det oppsto en feil under visning av hjelp."
 
-#: ../logview/logview.c:883
+#: ../logview/logview.c:907
 msgid "Version: "
 msgstr "Versjon: "
 
-#: ../logview/logview.c:952
+#: ../logview/logview.c:976
 msgid "Days"
 msgstr "Dager"
 
-#: ../logview/logview.c:953
+#: ../logview/logview.c:977
 msgid "Pointer towards a GSList of days for the current log."
 msgstr "Peker til en GSList med dager for aktiv logg."
 
@@ -2541,22 +2707,26 @@ msgid "Size of the font used to display the log"
 msgstr "Størrelse på skrift som brukes for å vise loggen"
 
 #: ../logview/logview.schemas.in.h:5
-#, fuzzy
-msgid "Specifies a list of log files to open up at startup. A default list is created by reading /etc/syslog.conf."
-msgstr "Spesifiserer loggfilen som skal åpnes ved oppstart. Forvalg er enten /var/adm/messages eller /var/log/messages avhengig av ditt operativsystem."
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "Spesifiserer en liste med loggfiler som skal åpnes ved oppstart. Forvalgt liste opprettes ved å lese /etc/syslog.conf."
 
 #: ../logview/logview.schemas.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
 msgstr "Angir høyden på loggvisningsvinduet i piksler."
 
 #: ../logview/logview.schemas.in.h:7
-#, fuzzy
-msgid "Specifies the log file displayed at startup. The default is either /var/adm/messages or /var/log/messages, depending on your operating system."
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
 msgstr "Spesifiserer loggfilen som skal åpnes ved oppstart. Forvalg er enten /var/adm/messages eller /var/log/messages avhengig av ditt operativsystem."
 
 #: ../logview/logview.schemas.in.h:8
-msgid "Specifies the size of the fixed-width font used to display the log in the main tree view. The default is taken from the default terminal font size."
-msgstr ""
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "Oppgir størrelsen på skriften som brukes for å vise loggen i hovedvinduet. Forvalg tas fra forvalgt skrift med fast bredde."
 
 #: ../logview/logview.schemas.in.h:9
 msgid "Specifies the width of the log viewer main window in pixels."
@@ -2655,17 +2825,3 @@ msgstr "Filovervåking er ikke støttet på dette filsystemet.\n"
 #: ../logview/monitor.c:88
 msgid "Gnome-VFS Error.\n"
 msgstr "Gnome-VFS-feil.\n"
-
-#~ msgid ""
-#~ "Definitions for \"%s\":\n"
-#~ "\n"
-#~ msgstr ""
-#~ "Definisjoner for «%s»:\n"
-#~ "\n"
-#~ msgid ""
-#~ "From %s:\n"
-#~ "%s\n"
-#~ msgstr ""
-#~ "Fra %s:\n"
-#~ "%s\n"
-
