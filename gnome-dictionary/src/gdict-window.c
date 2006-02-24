@@ -197,10 +197,11 @@ gdict_window_lookup_end_cb (GdictContext *context,
 
   if (count == -1)
     message = g_strdup (_("No definitions found"));
-  else if (count == 1)
-    message = g_strdup (_("A definition found"));
-  else
-    message = g_strdup_printf (_("%d definitions found"), count);
+  else 
+    message = g_strdup_printf (ngettext("A definition found",
+					"%d definitions found",
+					count),
+			       count);
 
   if (window->status)
     gtk_statusbar_push (GTK_STATUSBAR (window->status), 0, message);
