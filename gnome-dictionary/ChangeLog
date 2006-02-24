@@ -2,6 +2,20 @@
 
 	Backport from HEAD.
 
+	* src/gdict-app.c (gdict_app_init), (gdict_app_create_data_dir),
+	(gdict_init): if a file with the same name of the data directory
+	has been found, rename it (by appending '.pre-2-14' to its name)
+	before creating the data directory; the file usually is a remnant
+	of the time when the old dictionary used bonobo, and it hasn't
+	been used in a while (closes bug #331031).
+
+	* src/gdict-applet.c (gdict_applet_init), (gdict_applet_factory),
+	(gdict_applet_create_data_dir): ditto.
+
+2006-02-24  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	Backport from HEAD.
+
 	* src/gdict-window.c (gdict_window_lookup_end_cb): use ngettext to
 	use the correct localized plural form (patch by Gabor Kelemen,
 	closes bug #332383).
