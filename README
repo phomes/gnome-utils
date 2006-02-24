@@ -1,10 +1,10 @@
-GNOME Utilities - 
+GNOME Utilities
 =================
-Version: 2.13.92
+Version: 2.13.93
 
 Warning ! This is an unstable version.
 
-GNOME Utilities for the GNOME 2.13 Desktop contains the following -
+GNOME Utilities for the GNOME 2.13 Desktop contains the following:
 
 	gnome-system-log	[logview]
 	gnome-search-tool	[gseachtool]
@@ -12,7 +12,7 @@ GNOME Utilities for the GNOME 2.13 Desktop contains the following -
 	gfloppy			[gfloppy]
 	gnome-screenshot	[gnome-screenshot]
 
-Requirements -
+Requirements:
 
 	intltool	>= 0.29
 	gnome-common	>= 2.3.0
@@ -28,17 +28,17 @@ Requirements -
 	libgnomeprintui >= 2.8.0
 
 	
-The following configure flags can be used -
+The following configure flags can be used:
 
   --enable-console-helper=no/yes  Enable PAM console helper [default=no]
   --enable-hal=yes/no             Enable HAL support for gfloppy [default=yes]	
   --with-grep                     Specify the path to the grep
                                   command [default=find it ourselves]
 
-Installation -
+Installation:
 
 	See the file 'INSTALL'
 
-How to report bugs -
+How to report bugs:
 
 	See the file 'BUGS'
