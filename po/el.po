@@ -2,41 +2,41 @@
 # gnome-utils Greek translation.
 # Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
 #
+#    385 translated messages, 127 fuzzy translations, 188 untranslated messages.
+#    Finished! now, 700 messages fully translated.
+# simos: 780 messages, visual verification, 14Feb2001 (sgpbea).
+# simos: 483 messages, 30Oct2002, translation review.
+# kostas: 483 messages, 30Oct2002, completed translation for GNOME2.
+# kostas: 468 messages, unfuzzy 3, 07Jan2003, one more update.
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 2000.
+# Simos Xenitellis <simos@hellug.gr>, 2000, 2001, 2002.
+# Nikos Charonitakis <frolix68@yahoo.gr>, 2003, 2004.
+# Kostas Papadimas <pkst@gnome.org>, 2002, 2003, 2004, 2005, 2006.
 # spyros:
 #    translated around 500 messages, in 2000.
 # simos:
 #    updated this:
-#    385 translated messages, 127 fuzzy translations, 188 untranslated messages.
-#    Finished! now, 700 messages fully translated.
 #    One more update, now 701 total messages.
-# simos: 780 messages, visual verification, 14Feb2001 (sgpbea)
-# simos: 483 messages, 30Oct2002, translation review.
-# kostas: 483 messages, 30Oct2002, completed translation for GNOME2.
 # kostas: 26 Dec2002, updated translation for Gnome 2.1x
-# kostas: 468 messages, unfuzzy 3, 07Jan2003, one more update
 # kostas: 03Aug2003, update translation for 2.4
 # Nikos: 13Oct2003, review translation for 2.4
 # Nikos: 17Nov2003, update translation for 2.6
 # kostas: 25Jan2004, updates and fixes
 # Nikos: 19Feb2004 update translation
 # Kostas: 14Jan2006 update for 2.14
-# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 2000.
-# Simos Xenitellis <simos@hellug.gr>, 2000, 2001, 2002.
-# Nikos Charonitakis <frolix68@yahoo.gr>, 2003, 2004.
-# Kostas Papadimas <pkst@gnome.org>, 2002, 2003, 2004, 2005, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-17 12:05+0200\n"
-"PO-Revision-Date: 2006-02-17 12:05+0200\n"
+"POT-Creation-Date: 2006-02-24 18:03+0200\n"
+"PO-Revision-Date: 2006-02-24 18:03+0200\n"
 "Last-Translator: Kostas Papadimas <pkst@gnome.org>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.1\n"
 
 #: ../gfloppy/gfloppy.desktop.in.h:1 ../gfloppy/src/gfloppy2.glade.h:9
 msgid "Floppy Formatter"
@@ -498,12 +498,12 @@ msgid "Cl_ear"
 msgstr "Ε_κκαθάριση"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:2
-#: ../gnome-dictionary/src/gdict-window.c:838 ../logview/logview.c:116
+#: ../gnome-dictionary/src/gdict-window.c:839 ../logview/logview.c:116
 msgid "_About"
 msgstr "_Περί"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:3
-#: ../gnome-dictionary/src/gdict-window.c:798 ../logview/logview.c:88
+#: ../gnome-dictionary/src/gdict-window.c:799 ../logview/logview.c:88
 msgid "_Help"
 msgstr "_Βοήθεια"
 
@@ -512,7 +512,7 @@ msgid "_Look Up Selected Text"
 msgstr "Αναζήτηση Επι_λεγμένου Κειμένου"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:5
-#: ../gnome-dictionary/src/gdict-window.c:822
+#: ../gnome-dictionary/src/gdict-window.c:823
 msgid "_Preferences"
 msgstr "_Προτιμήσεις"
 
@@ -526,8 +526,8 @@ msgstr "Απο_θήκευση"
 
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.h:1
 #: ../gnome-dictionary/src/gdict-about.c:98
-#: ../gnome-dictionary/src/gdict-app.c:409
-#: ../gnome-dictionary/src/gdict-window.c:1203
+#: ../gnome-dictionary/src/gdict-app.c:468
+#: ../gnome-dictionary/src/gdict-window.c:1204
 msgid "Dictionary"
 msgstr "Λεξικό"
 
@@ -686,7 +686,7 @@ msgstr "Όνομα _συστήματος"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
 #: ../gnome-dictionary/src/gdict-applet.c:230
-#: ../gnome-dictionary/src/gdict-window.c:594
+#: ../gnome-dictionary/src/gdict-window.c:595
 msgid "Print"
 msgstr "Εκτύπωση"
 
@@ -1024,7 +1024,7 @@ msgid "The filename used by this dictionary source"
 msgstr "Το όνομα αρχείου που χρησιμοποιείται από αυτή τη πηγή λεξικού."
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:232
-#: ../gsearchtool/gsearchtool.c:2355
+#: ../gsearchtool/gsearchtool.c:2475
 msgid "Name"
 msgstr "Όνομα"
 
@@ -1129,27 +1129,10 @@ msgstr "Αναζήτηση λέξεων στα λεξικά"
 msgid "Unable to open the application icon: %s"
 msgstr "Αδυναμία ανοίγματος του εικονιδίου της εφαρμογής: %s"
 
-#: ../gnome-dictionary/src/gdict-app.c:118
-#, c-format
-msgid ""
-"Unable to create the data directory '%s': there already is a file with the "
-"same name.  You should move the file and re-run gnome-dictionary."
-msgstr ""
-"Αδυναμία δημιουργίας του καταλόγου δεδομένων '%s' υπάρχει ήδη ένα αρχείο με "
-"το ίδιο όνομα.  Θα πρέπει να μετακινήσετε το αρχείο και να εκτελέσετε ξανά "
-"το gnome-dictionary."
-
-#. Translators: the first is the file name, the second is
-#. * the error message
-#: ../gnome-dictionary/src/gdict-app.c:130
-#, c-format
-msgid "Unable to create the data directory '%s': %s"
-msgstr "Αδυναμία δημιουργίας του καταλόγου δεδομένων '%s': %s"
-
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: ../gnome-dictionary/src/gdict-app.c:249
+#: ../gnome-dictionary/src/gdict-app.c:213
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -1162,20 +1145,20 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:263
+#: ../gnome-dictionary/src/gdict-app.c:227
 #, c-format
 msgid "Error: %s\n"
 msgstr "Σφάλμα: %s\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:289
+#: ../gnome-dictionary/src/gdict-app.c:253
 msgid "See gnome-dictionary --help for usage\n"
 msgstr "Βλέπε gnome-dictionary --help για χρήση\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:302
+#: ../gnome-dictionary/src/gdict-app.c:266
 msgid "Unable to find a suitable dictionary source"
 msgstr "Αδυναμία εύρεσης μια κατάλληλης πηγής λεξικού"
 
-#: ../gnome-dictionary/src/gdict-app.c:336
+#: ../gnome-dictionary/src/gdict-app.c:300
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
@@ -1184,59 +1167,73 @@ msgstr ""
 "Σφάλμα κατά την αναζήτηση του ορισμού του \"%s\":\n"
 "%s"
 
-#: ../gnome-dictionary/src/gdict-app.c:368
+#: ../gnome-dictionary/src/gdict-app.c:345
+#: ../gnome-dictionary/src/gdict-applet.c:1398
+#, c-format
+msgid "Unable to rename file '%s' to '%s': %s"
+msgstr "Αδυναμία μετονομασίας αρχείου '%s' σε '%s': %s"
+
+#: ../gnome-dictionary/src/gdict-app.c:369
+#: ../gnome-dictionary/src/gdict-app.c:392
+#: ../gnome-dictionary/src/gdict-applet.c:1422
+#: ../gnome-dictionary/src/gdict-applet.c:1445
+#, c-format
+msgid "Unable to create the data directory '%s': %s"
+msgstr "Αδυναμία δημιουργίας του καταλόγου δεδομένων '%s': %s"
+
+#: ../gnome-dictionary/src/gdict-app.c:427
 msgid "Words to look up"
 msgstr "Λέξεις για αναζήτηση"
 
-#: ../gnome-dictionary/src/gdict-app.c:368
+#: ../gnome-dictionary/src/gdict-app.c:427
 msgid "word"
 msgstr "λέξη"
 
-#: ../gnome-dictionary/src/gdict-app.c:370
+#: ../gnome-dictionary/src/gdict-app.c:429
 msgid "Dictionary source to use"
 msgstr "Η πηγή λεξικού που θα χρησιμοποιηθεί"
 
-#: ../gnome-dictionary/src/gdict-app.c:370
+#: ../gnome-dictionary/src/gdict-app.c:429
 msgid "source"
 msgstr "πηγή"
 
-#: ../gnome-dictionary/src/gdict-app.c:372
+#: ../gnome-dictionary/src/gdict-app.c:431
 msgid "Show available dictionary sources"
 msgstr "Προβολή διαθέσιμων πηγών λεξικού"
 
-#: ../gnome-dictionary/src/gdict-app.c:374
+#: ../gnome-dictionary/src/gdict-app.c:433
 msgid "Print result to the console"
 msgstr "Εκτύπωση αποτελέσματος στη κονσόλα"
 
-#: ../gnome-dictionary/src/gdict-app.c:376
+#: ../gnome-dictionary/src/gdict-app.c:435
 msgid "Database to use"
 msgstr "Βάση δεδομένων που θα χρησιμοποιηθεί"
 
 #. create the new option context
-#: ../gnome-dictionary/src/gdict-app.c:392
+#: ../gnome-dictionary/src/gdict-app.c:451
 msgid " - Look up words in dictionaries"
 msgstr "- Αναζήτηση λέξης στα λεξικά"
 
-#: ../gnome-dictionary/src/gdict-app.c:396
+#: ../gnome-dictionary/src/gdict-app.c:455
 msgid "Dictionary and spelling tool"
 msgstr "Εργαλείο λεξικού και ορθογραφίας"
 
-#: ../gnome-dictionary/src/gdict-app.c:397
+#: ../gnome-dictionary/src/gdict-app.c:456
 msgid "Show Dictionary options"
 msgstr "Εμφάνιση επιλογών λεξικού"
 
 #: ../gnome-dictionary/src/gdict-applet.c:244
-#: ../gnome-dictionary/src/gdict-window.c:539
+#: ../gnome-dictionary/src/gdict-window.c:540
 msgid "Save a Copy"
 msgstr "Αποθήκευση ενός αντιγράφου"
 
 #: ../gnome-dictionary/src/gdict-applet.c:254
-#: ../gnome-dictionary/src/gdict-window.c:549
+#: ../gnome-dictionary/src/gdict-window.c:550
 msgid "Untitled document"
 msgstr "Ανώνυμο έγγραφο"
 
 #: ../gnome-dictionary/src/gdict-applet.c:275
-#: ../gnome-dictionary/src/gdict-window.c:570
+#: ../gnome-dictionary/src/gdict-window.c:571
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Σφάλμα κατά την εγγραφή στο '%s'"
@@ -1304,64 +1301,48 @@ msgstr "Προτιμήσεις"
 #: ../gnome-dictionary/src/gdict-applet.c:758
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:471
 #: ../gnome-dictionary/src/gdict-source-dialog.c:324
-#: ../gnome-dictionary/src/gdict-window.c:760
+#: ../gnome-dictionary/src/gdict-window.c:761
 msgid "There was an error while displaying help"
 msgstr "Υπήρξε σφάλμα κατά την εμφάνιση της βοήθειας"
 
 #: ../gnome-dictionary/src/gdict-applet.c:917
-#: ../gnome-dictionary/src/gdict-window.c:269
+#: ../gnome-dictionary/src/gdict-window.c:270
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Δεν βρέθηκε διαθέσιμη πηγή λεξικού με το όνομα  '%s'"
 
 #: ../gnome-dictionary/src/gdict-applet.c:921
-#: ../gnome-dictionary/src/gdict-window.c:273
+#: ../gnome-dictionary/src/gdict-window.c:274
 msgid "Unable to find dictionary source"
 msgstr "Αδυναμία εύρεσης πηγής λεξικού."
 
 #: ../gnome-dictionary/src/gdict-applet.c:937
-#: ../gnome-dictionary/src/gdict-window.c:289
+#: ../gnome-dictionary/src/gdict-window.c:290
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Δεν υπάρχει διαθέσιμο περιεχόμενο για τη πηγή '%s'"
 
 #: ../gnome-dictionary/src/gdict-applet.c:941
-#: ../gnome-dictionary/src/gdict-window.c:293
+#: ../gnome-dictionary/src/gdict-window.c:294
 msgid "Unable to create a context"
 msgstr "Αδύνατη η δημιουργία περιεχομένου"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1215
-#: ../gnome-dictionary/src/gdict-applet.c:1232
-#, c-format
-msgid "Unable to create the data directory '%s'"
-msgstr "Αδυναμία δημιουργίας του καταλόγου δεδομένων  '%s'"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1216
-msgid ""
-"There is a file with the same name in the path.\n"
-"You should move the file and re-run the\n"
-"Dictionary applet"
-msgstr ""
-"Υπάρχει ένα αρχείο με το ίδιο όνομα στη διαδρομή.\n"
-"Θα πρέπει α απομακρύνετε το αρχείο και να εκτελέσετε ξανά\n"
-"τη μικροεφαρμογή του λεξικού"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1252
+#: ../gnome-dictionary/src/gdict-applet.c:1210
 msgid "Unable to load the applet icon"
 msgstr "Αδυναμία φόρτωσης του εικονιδίου της μικροεφαρμογής"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1281
-#: ../gnome-dictionary/src/gdict-window.c:1312
+#: ../gnome-dictionary/src/gdict-applet.c:1239
+#: ../gnome-dictionary/src/gdict-window.c:1313
 msgid "Unable to connect to GConf"
 msgstr "Αδύνατη η σύνδεση στο GConf"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1296
-#: ../gnome-dictionary/src/gdict-window.c:1328
+#: ../gnome-dictionary/src/gdict-applet.c:1254
+#: ../gnome-dictionary/src/gdict-window.c:1329
 msgid "Unable to get notification for preferences"
 msgstr "Αδυναμία λήψης ειδοποίησης για τις προτιμήσεις"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1311
-#: ../gnome-dictionary/src/gdict-window.c:1344
+#: ../gnome-dictionary/src/gdict-applet.c:1269
+#: ../gnome-dictionary/src/gdict-window.c:1345
 msgid "Unable to get notification for the document font"
 msgstr "Αδυναμία λήψης ειδοποίησης για τη γραμματοσειρά εγγράφου"
 
@@ -1419,120 +1400,118 @@ msgid "Searching for '%s'..."
 msgstr "Αναζήτηση για '%s'..."
 
 #: ../gnome-dictionary/src/gdict-window.c:199
-#: ../gnome-dictionary/src/gdict-window.c:220
+#: ../gnome-dictionary/src/gdict-window.c:221
 msgid "No definitions found"
 msgstr "Δε βρέθηκαν ορισμοί"
 
 #: ../gnome-dictionary/src/gdict-window.c:201
-msgid "A definition found"
-msgstr "Βρέθηκε ένας ορισμός"
-
-#: ../gnome-dictionary/src/gdict-window.c:203
 #, c-format
-msgid "%d definitions found"
-msgstr "Βρέθηκαν %d ορισμοί"
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "Βρέθηκε ένας ορισμός"
+msgstr[1] "Βρέθηκε %d ορισμοί"
 
-#: ../gnome-dictionary/src/gdict-window.c:361
+#: ../gnome-dictionary/src/gdict-window.c:362
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Λεξικό"
 
-#: ../gnome-dictionary/src/gdict-window.c:679
+#: ../gnome-dictionary/src/gdict-window.c:680
 msgid "Dictionary Preferences"
 msgstr "Προτιμήσεις Λεξικού"
 
-#: ../gnome-dictionary/src/gdict-window.c:795
+#: ../gnome-dictionary/src/gdict-window.c:796
 msgid "_File"
 msgstr "Α_ρχείο"
 
-#: ../gnome-dictionary/src/gdict-window.c:796 ../logview/logview.c:86
+#: ../gnome-dictionary/src/gdict-window.c:797 ../logview/logview.c:86
 msgid "_Edit"
 msgstr "_Επεξεργασία"
 
-#: ../gnome-dictionary/src/gdict-window.c:797
+#: ../gnome-dictionary/src/gdict-window.c:798
 msgid "_Go"
 msgstr "_Μετάβαση"
 
 #. File menu
-#: ../gnome-dictionary/src/gdict-window.c:801
+#: ../gnome-dictionary/src/gdict-window.c:802
 msgid "_New"
 msgstr "_Νέο"
 
-#: ../gnome-dictionary/src/gdict-window.c:802
+#: ../gnome-dictionary/src/gdict-window.c:803
 msgid "New look up"
 msgstr "Νέα αναζήτηση"
 
-#: ../gnome-dictionary/src/gdict-window.c:803
+#: ../gnome-dictionary/src/gdict-window.c:804
 msgid "_Save a Copy..."
 msgstr "Απο_θήκευση ενός αντιγράφου..."
 
-#: ../gnome-dictionary/src/gdict-window.c:805
+#: ../gnome-dictionary/src/gdict-window.c:806
 msgid "_Print..."
 msgstr "Εκτύ_πωση..."
 
-#: ../gnome-dictionary/src/gdict-window.c:806
+#: ../gnome-dictionary/src/gdict-window.c:807
 msgid "Print this document"
 msgstr "Εκτύπωση του εγγράφου"
 
-#: ../gnome-dictionary/src/gdict-window.c:813 ../logview/logview.c:99
+#: ../gnome-dictionary/src/gdict-window.c:814 ../logview/logview.c:99
 msgid "Select _All"
 msgstr "Επιλογή ό_λων"
 
-#: ../gnome-dictionary/src/gdict-window.c:816
+#: ../gnome-dictionary/src/gdict-window.c:817
 msgid "Find a word or phrase in the document"
 msgstr "Εύρεση μια λέξης ή φράσης στο κείμενο"
 
-#: ../gnome-dictionary/src/gdict-window.c:818
+#: ../gnome-dictionary/src/gdict-window.c:819
 msgid "Find Ne_xt"
 msgstr "Εύρεση επο_μένου"
 
-#: ../gnome-dictionary/src/gdict-window.c:820
+#: ../gnome-dictionary/src/gdict-window.c:821
 msgid "Find Pre_vious"
 msgstr "Εύρεση _προηγουμένου"
 
 #. Go menu
-#: ../gnome-dictionary/src/gdict-window.c:826
+#: ../gnome-dictionary/src/gdict-window.c:827
 msgid "_Previous Definition"
 msgstr "_Προηγούμενος ορισμός"
 
-#: ../gnome-dictionary/src/gdict-window.c:827
+#: ../gnome-dictionary/src/gdict-window.c:828
 msgid "Go to the previous definition"
 msgstr "Μετάβαση στο προηγούμενο ορισμό"
 
-#: ../gnome-dictionary/src/gdict-window.c:828
+#: ../gnome-dictionary/src/gdict-window.c:829
 msgid "_Next Definition"
 msgstr "Επόμε_νος ορισμός"
 
-#: ../gnome-dictionary/src/gdict-window.c:829
+#: ../gnome-dictionary/src/gdict-window.c:830
 msgid "Go to the next definition"
 msgstr "Μετάβαση στον επόμενο ορισμό"
 
-#: ../gnome-dictionary/src/gdict-window.c:830
+#: ../gnome-dictionary/src/gdict-window.c:831
 msgid "_First Definition"
 msgstr "Π_ρώτος ορισμός"
 
-#: ../gnome-dictionary/src/gdict-window.c:831
+#: ../gnome-dictionary/src/gdict-window.c:832
 msgid "Go to the first definition"
 msgstr "Μετάβαση στο πρώτο ορισμό"
 
-#: ../gnome-dictionary/src/gdict-window.c:832
+#: ../gnome-dictionary/src/gdict-window.c:833
 msgid "_Last Definition"
 msgstr "_Τελευταίος ορισμός"
 
-#: ../gnome-dictionary/src/gdict-window.c:833
+#: ../gnome-dictionary/src/gdict-window.c:834
 msgid "Go to the last definition"
 msgstr "Μετάβαση στον τελευταίο ορισμό"
 
 #. Help menu
-#: ../gnome-dictionary/src/gdict-window.c:836 ../logview/logview.c:114
+#: ../gnome-dictionary/src/gdict-window.c:837 ../logview/logview.c:114
 msgid "_Contents"
 msgstr "_Περιεχόμενα"
 
-#: ../gnome-dictionary/src/gdict-window.c:1125
+#: ../gnome-dictionary/src/gdict-window.c:1126
 msgid "Look _up:"
 msgstr "_Αναζήτηση:"
 
-#: ../gnome-dictionary/src/gdict-window.c:1368
+#: ../gnome-dictionary/src/gdict-window.c:1369
 msgid "Unable to load the application icon"
 msgstr "Αδυναμία φόρτωσης του εικονιδίου της εφαρμογής"
 
@@ -2243,171 +2222,171 @@ msgstr "σύνδεσμος (σπασμένος)"
 msgid "link to %s"
 msgstr "σύνδεσμος στο %s"
 
-#: ../gsearchtool/gsearchtool.c:81
+#: ../gsearchtool/gsearchtool.c:82
 msgid "Contains the _text"
 msgstr "Περιέχει το _κείμενο"
 
-#: ../gsearchtool/gsearchtool.c:83
+#: ../gsearchtool/gsearchtool.c:84
 msgid "_Date modified less than"
 msgstr "Ημερομηνία τ_ροποποίησης μικρότερη από"
 
-#: ../gsearchtool/gsearchtool.c:83 ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
 msgid "days"
 msgstr "ημέρες"
 
-#: ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:85
 msgid "Date modified more than"
 msgstr "Ημερομηνία τροποποίησης μεγαλύτερη από"
 
-#: ../gsearchtool/gsearchtool.c:86
+#: ../gsearchtool/gsearchtool.c:87
 msgid "S_ize at least"
 msgstr "Μέ_γεθος τουλάχιστον"
 
-#: ../gsearchtool/gsearchtool.c:86 ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
 msgid "kilobytes"
 msgstr "kilobytes"
 
-#: ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:88
 msgid "Si_ze at most"
 msgstr "Μέ_γεθος το μέγιστο"
 
-#: ../gsearchtool/gsearchtool.c:88
+#: ../gsearchtool/gsearchtool.c:89
 msgid "File is empty"
 msgstr "Το αρχείο είναι κενό"
 
-#: ../gsearchtool/gsearchtool.c:90
+#: ../gsearchtool/gsearchtool.c:91
 msgid "Owned by _user"
 msgstr "Ανήκει σε _χρήστη"
 
-#: ../gsearchtool/gsearchtool.c:91
+#: ../gsearchtool/gsearchtool.c:92
 msgid "Owned by _group"
 msgstr "Ανήκει σε ο_μάδα"
 
-#: ../gsearchtool/gsearchtool.c:92
+#: ../gsearchtool/gsearchtool.c:93
 msgid "Owner is unrecognized"
 msgstr "Μη αναγνωρίσιμος ιδιοκτήτης"
 
-#: ../gsearchtool/gsearchtool.c:94
+#: ../gsearchtool/gsearchtool.c:95
 msgid "Na_me does not contain"
 msgstr "Το ό_νομα δεν περιέχει"
 
-#: ../gsearchtool/gsearchtool.c:95
+#: ../gsearchtool/gsearchtool.c:96
 msgid "Name matches regular e_xpression"
 msgstr "Ταίριασμα κανονικής έ_κφρασης"
 
-#: ../gsearchtool/gsearchtool.c:97
+#: ../gsearchtool/gsearchtool.c:98
 msgid "Show hidden and backup files"
 msgstr "Εμφάνιση κρυφών αρχείων και αρχείων ασφαλείας."
 
-#: ../gsearchtool/gsearchtool.c:98
+#: ../gsearchtool/gsearchtool.c:99
 msgid "Follow symbolic links"
 msgstr "Ακολούθηση συμβολικών συνδέσμων"
 
-#: ../gsearchtool/gsearchtool.c:99
+#: ../gsearchtool/gsearchtool.c:100
 msgid "Include other filesystems"
 msgstr "Συμπεριλαμβάνει και άλλα συστήματα αρχείων."
 
-#: ../gsearchtool/gsearchtool.c:180
+#: ../gsearchtool/gsearchtool.c:181
 msgid "_Open"
 msgstr "_Άνοιγμα"
 
-#: ../gsearchtool/gsearchtool.c:181
+#: ../gsearchtool/gsearchtool.c:182
 msgid "O_pen Folder"
 msgstr "Ά_νοιγμα Φακέλου "
 
-#: ../gsearchtool/gsearchtool.c:182
+#: ../gsearchtool/gsearchtool.c:183
 msgid "Mo_ve to Trash"
 msgstr "_Μετακίνηση στα απορρίμματα"
 
-#: ../gsearchtool/gsearchtool.c:183
+#: ../gsearchtool/gsearchtool.c:184
 msgid "_Save Results As..."
 msgstr "Αποθήκευ_ση αποτελεσμάτων ως..."
 
-#: ../gsearchtool/gsearchtool.c:255 ../gsearchtool/gsearchtool.c:272
+#: ../gsearchtool/gsearchtool.c:391
 msgid "A locate database has probably not been created."
 msgstr "Πιθανόν να μην έχει δημιουργηθεί μια βάση δεδομένων locate."
 
-#: ../gsearchtool/gsearchtool.c:376
+#: ../gsearchtool/gsearchtool.c:493
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "Αποτυχία μετατροπής κωδικοποίησης χαρακτήρων για \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:796 ../gsearchtool/gsearchtool.c:825
+#: ../gsearchtool/gsearchtool.c:517
+msgid "Searching..."
+msgstr "Αναζήτηση..."
+
+#: ../gsearchtool/gsearchtool.c:517 ../gsearchtool/gsearchtool.c:1022
+#: ../gsearchtool/gsearchtool.c:1300 ../gsearchtool/gsearchtool.c:3151
+msgid "Search for Files"
+msgstr "Αναζήτηση για αρχεία"
+
+#: ../gsearchtool/gsearchtool.c:968 ../gsearchtool/gsearchtool.c:997
 msgid "No files found"
 msgstr "Δε βρέθηκαν αρχεία"
 
-#: ../gsearchtool/gsearchtool.c:818
+#: ../gsearchtool/gsearchtool.c:990
 msgid "(stopped)"
 msgstr "(διακόπηκε)"
 
-#: ../gsearchtool/gsearchtool.c:824
+#: ../gsearchtool/gsearchtool.c:996
 msgid "No Files Found"
 msgstr "Δε Βρέθηκαν Αρχεία"
 
-#: ../gsearchtool/gsearchtool.c:829
+#: ../gsearchtool/gsearchtool.c:1001
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "Βρέθηκε %d αρχείο"
 msgstr[1] "Βρέθηκαν %d αρχεία"
 
-#: ../gsearchtool/gsearchtool.c:833 ../gsearchtool/gsearchtool.c:871
+#: ../gsearchtool/gsearchtool.c:1005 ../gsearchtool/gsearchtool.c:1043
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "Βρέθηκε %d αρχείο"
 msgstr[1] "Βρέθηκαν %d αρχεία"
 
-#: ../gsearchtool/gsearchtool.c:850 ../gsearchtool/gsearchtool.c:1128
-#: ../gsearchtool/gsearchtool.c:1214 ../gsearchtool/gsearchtool.c:3026
-msgid "Search for Files"
-msgstr "Αναζήτηση για αρχεία"
-
-#: ../gsearchtool/gsearchtool.c:962
+#: ../gsearchtool/gsearchtool.c:1134
 msgid "Entry changed called for a non entry option!"
 msgstr "Η αλλαγή εισαγωγής καλέστηκε για επιλογή που δεν επιτρέπει εισαγωγή!"
 
-#: ../gsearchtool/gsearchtool.c:1214
-msgid "Searching..."
-msgstr "Αναζήτηση..."
-
-#: ../gsearchtool/gsearchtool.c:1237
+#: ../gsearchtool/gsearchtool.c:1385
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Ορισμός του κειμένου της επιλογής αναζήτησης \"'Όνομα περιέχει'\""
 
-#: ../gsearchtool/gsearchtool.c:1238
+#: ../gsearchtool/gsearchtool.c:1386
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "Ορισμός του κειμένου της επιλογής αναζήτησης \"αναζήτηση στο φάκελο\" "
 
-#: ../gsearchtool/gsearchtool.c:1239
+#: ../gsearchtool/gsearchtool.c:1387
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 "Ταξινόμηση αρχείων σύμφωνα με τα ακόλουθα: όνομα, φάκελος. μέγεθος, τύπος, ή "
 "ημερομηνία"
 
-#: ../gsearchtool/gsearchtool.c:1240
+#: ../gsearchtool/gsearchtool.c:1388
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Καθορισμός σειράς ταξινόμησης σε φθίνουσα, η εξ ορισμού είναι αύξουσα"
 
-#: ../gsearchtool/gsearchtool.c:1241
+#: ../gsearchtool/gsearchtool.c:1389
 msgid "Automatically start a search"
 msgstr "Αυτόματη έναρξη μιας αναζήτησης"
 
-#: ../gsearchtool/gsearchtool.c:1247
+#: ../gsearchtool/gsearchtool.c:1395
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Επιλογή της επιλογής αναζήτησης \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1250
+#: ../gsearchtool/gsearchtool.c:1398
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Επιλογή και ορισμός της επιλογής αναζήτησης \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1357
+#: ../gsearchtool/gsearchtool.c:1505
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Πέρασε μη έγκυρη επιλογή στην εντολή ταξινόμησης κατά."
 
-#: ../gsearchtool/gsearchtool.c:1668
+#: ../gsearchtool/gsearchtool.c:1803
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -2415,7 +2394,7 @@ msgstr ""
 "\n"
 "...Πάρα πολλά λάθη για εμφάνιση..."
 
-#: ../gsearchtool/gsearchtool.c:1682
+#: ../gsearchtool/gsearchtool.c:1817
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
@@ -2423,11 +2402,11 @@ msgstr ""
 "Τα αποτελέσματα αναζήτησης μπορεί να μην είναι έγκυρα. Υπήρξαν σφάλματα κατα "
 "την εκτέλεση αυτής της αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:1694 ../gsearchtool/gsearchtool.c:1738
+#: ../gsearchtool/gsearchtool.c:1829 ../gsearchtool/gsearchtool.c:1873
 msgid "Show more _details"
 msgstr "Εμφάνισης περισσότερων _λεπτομερειών"
 
-#: ../gsearchtool/gsearchtool.c:1724
+#: ../gsearchtool/gsearchtool.c:1859
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -2435,150 +2414,150 @@ msgstr ""
 "Τα αποτελέσματα αναζήτησης μπορεί να μην είναι έγκυρα. Θέλετε να "
 "απενεργοποιήσετε την λειτουργία της γρήγορης αναζήτησης;"
 
-#: ../gsearchtool/gsearchtool.c:1749
+#: ../gsearchtool/gsearchtool.c:1884
 msgid "Disable _Quick Search"
 msgstr "Απενεργοποίηση _γρήγορης αναζήτησης"
 
-#: ../gsearchtool/gsearchtool.c:1776
+#: ../gsearchtool/gsearchtool.c:1911
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "Αποτυχία ορισμού process group id of child %d: %s.\n"
 
-#: ../gsearchtool/gsearchtool.c:1803
+#: ../gsearchtool/gsearchtool.c:1936
 msgid "Error parsing the search command."
 msgstr "Σφάλμα κατά την ανάλυση της εντολής αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:1836
+#: ../gsearchtool/gsearchtool.c:1969
 msgid "Error running the search command."
 msgstr "Σφάλμα κατά την εκτέλεση της εντολής αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:1964
+#: ../gsearchtool/gsearchtool.c:2084
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Εισάγετε μια τιμή κειμένου για την επιλογή αναζήτησης \"%s\"."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:1969
+#: ../gsearchtool/gsearchtool.c:2089
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\" σε %s"
 
-#: ../gsearchtool/gsearchtool.c:1971
+#: ../gsearchtool/gsearchtool.c:2091
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Εισάγετε μια τιμή σε %s για την επιλογή αναζήτησης  \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:2030
+#: ../gsearchtool/gsearchtool.c:2150
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Διαγραφή  \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:2031
+#: ../gsearchtool/gsearchtool.c:2151
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Πατήστε για αφαίρεση της  επιλογή αναζήτησης  \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:2124
+#: ../gsearchtool/gsearchtool.c:2244
 msgid "A_vailable options:"
 msgstr "Δια_θέσιμες επιλογές:"
 
-#: ../gsearchtool/gsearchtool.c:2153
+#: ../gsearchtool/gsearchtool.c:2273
 msgid "Available options"
 msgstr "Διαθέσιμες επιλογές:"
 
-#: ../gsearchtool/gsearchtool.c:2154
+#: ../gsearchtool/gsearchtool.c:2274
 msgid "Select a search option from the drop-down list."
 msgstr "Επιλέξτε μια επιλογή αναζήτησης από την κυλιόμενη λίστα"
 
 # FIX? drop (see also "On Drop" above)
-#: ../gsearchtool/gsearchtool.c:2166
+#: ../gsearchtool/gsearchtool.c:2286
 msgid "Add search option"
 msgstr "Προσθήκη επιλογής αναζήτησης"
 
-#: ../gsearchtool/gsearchtool.c:2167
+#: ../gsearchtool/gsearchtool.c:2287
 msgid "Click to add the selected available search option."
 msgstr "Πατήστε για προσθήκη της επιλεγμένης διαθέσιμης επιλογής αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2256
+#: ../gsearchtool/gsearchtool.c:2376
 msgid "S_earch results:"
 msgstr "Απο_τελέσματα αναζήτησης:"
 
-#: ../gsearchtool/gsearchtool.c:2295
+#: ../gsearchtool/gsearchtool.c:2415
 msgid "List View"
 msgstr "Προβολή λίστας"
 
-#: ../gsearchtool/gsearchtool.c:2379
+#: ../gsearchtool/gsearchtool.c:2499
 msgid "Folder"
 msgstr "Φάκελος"
 
-#: ../gsearchtool/gsearchtool.c:2391
+#: ../gsearchtool/gsearchtool.c:2511
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: ../gsearchtool/gsearchtool.c:2402
+#: ../gsearchtool/gsearchtool.c:2522
 msgid "Type"
 msgstr "Τύπος"
 
-#: ../gsearchtool/gsearchtool.c:2413
+#: ../gsearchtool/gsearchtool.c:2533
 msgid "Date Modified"
 msgstr "Ημερομηνία Τροποποίησης"
 
-#: ../gsearchtool/gsearchtool.c:2815
+#: ../gsearchtool/gsearchtool.c:2935
 msgid "_Name contains:"
 msgstr "Ό_νομα περιέχει:"
 
-#: ../gsearchtool/gsearchtool.c:2829 ../gsearchtool/gsearchtool.c:2830
+#: ../gsearchtool/gsearchtool.c:2949 ../gsearchtool/gsearchtool.c:2950
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 "Εισάγετε ένα όνομα αρχείου ή ένα μερικό όνομα αρχείου με ή χωρίς wildcards."
 
-#: ../gsearchtool/gsearchtool.c:2830
+#: ../gsearchtool/gsearchtool.c:2950
 msgid "Name contains"
 msgstr "Όνομα περιέχει"
 
-#: ../gsearchtool/gsearchtool.c:2836
+#: ../gsearchtool/gsearchtool.c:2956
 msgid "_Look in folder:"
 msgstr "_Αναζήτηση στο φάκελο:"
 
-#: ../gsearchtool/gsearchtool.c:2842
+#: ../gsearchtool/gsearchtool.c:2962
 msgid "Browse"
 msgstr "Περιήγηση"
 
-#: ../gsearchtool/gsearchtool.c:2847
+#: ../gsearchtool/gsearchtool.c:2967
 msgid "Look in folder"
 msgstr "Αναζήτηση σε φάκελο"
 
-#: ../gsearchtool/gsearchtool.c:2847
+#: ../gsearchtool/gsearchtool.c:2967
 msgid "Select the folder or device from which you want to begin the search."
 msgstr ""
 "Επιλέξτε το φάκελο ή τη συσκευή  από όπου θέλετε να ξεκινήσει η αναζήτηση"
 
-#: ../gsearchtool/gsearchtool.c:2858
+#: ../gsearchtool/gsearchtool.c:2978
 msgid "Select more _options"
 msgstr "Επιλογή περισσότερων ε_πιλογών"
 
-#: ../gsearchtool/gsearchtool.c:2867
+#: ../gsearchtool/gsearchtool.c:2987
 msgid "Select more options"
 msgstr "Επιλογή περισσότερων επιλογών"
 
-#: ../gsearchtool/gsearchtool.c:2867
+#: ../gsearchtool/gsearchtool.c:2987
 msgid "Click to expand or collapse the list of available options."
 msgstr "Πατήστε για ανάπτυξη η σύμπτυξη μιας λίστας των διαθέσιμων επιλογών."
 
-#: ../gsearchtool/gsearchtool.c:2891
+#: ../gsearchtool/gsearchtool.c:3011
 msgid "Click to display the help manual."
 msgstr "Πατήστε για εμφάνιση του εγχειριδίου βοήθειας."
 
-#: ../gsearchtool/gsearchtool.c:2899
+#: ../gsearchtool/gsearchtool.c:3019
 msgid "Click to close \"Search for Files\"."
 msgstr "Πατήστε για κλείσιμο του \"Αναζήτηση για αρχεία\"."
 
-#: ../gsearchtool/gsearchtool.c:2925
+#: ../gsearchtool/gsearchtool.c:3045
 msgid "Click to perform a search."
 msgstr "Πατήστε για αναζήτηση."
 
-#: ../gsearchtool/gsearchtool.c:2926
+#: ../gsearchtool/gsearchtool.c:3046
 msgid "Click to stop a search."
 msgstr "Πατήστε για να διακόψετε την αναζήτηση"
 
