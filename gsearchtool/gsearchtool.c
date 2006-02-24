@@ -253,9 +253,8 @@ handle_locate_command_stdout_io (GIOChannel * ioc,
 			
 		} while (g_io_channel_get_buffer_condition (ioc) == G_IO_IN);
 		
+		waitpid (locate_database_check_command_pid, NULL, 0);
 		g_string_free (string, TRUE);
-		kill (locate_database_check_command_pid, SIGKILL);
-		wait (NULL);
 	}
 
 	if (condition != G_IO_IN || broken_pipe == TRUE) {
@@ -3109,6 +3108,11 @@ gsearchtool_setup_gconf_notifications (GSearchWindow * gsearch)
 		return;
 	}
 	
+	if (click_to_activate_pref == NULL) {
+		gsearch->is_search_results_single_click_to_activate = FALSE;
+		return;
+	}
+
 	gsearch->is_search_results_single_click_to_activate = 
 		(strncmp (click_to_activate_pref, "single", 6) == 0) ? TRUE : FALSE;	
 
