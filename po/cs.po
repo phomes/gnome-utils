@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-13 08:21+0100\n"
+"POT-Creation-Date: 2006-02-25 23:20+0100\n"
 "PO-Revision-Date: 2006-02-14 05:35+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -475,12 +475,12 @@ msgid "Cl_ear"
 msgstr "_Vymazat"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:2
-#: ../gnome-dictionary/src/gdict-window.c:838 ../logview/logview.c:116
+#: ../gnome-dictionary/src/gdict-window.c:839 ../logview/logview.c:116
 msgid "_About"
 msgstr "O _aplikaci"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:3
-#: ../gnome-dictionary/src/gdict-window.c:798 ../logview/logview.c:88
+#: ../gnome-dictionary/src/gdict-window.c:799 ../logview/logview.c:88
 msgid "_Help"
 msgstr "_Nápověda"
 
@@ -489,7 +489,7 @@ msgid "_Look Up Selected Text"
 msgstr "_Hledat vybraný text"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:5
-#: ../gnome-dictionary/src/gdict-window.c:822
+#: ../gnome-dictionary/src/gdict-window.c:823
 msgid "_Preferences"
 msgstr "_Nastavení"
 
@@ -503,8 +503,8 @@ msgstr "_Uložit"
 
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.h:1
 #: ../gnome-dictionary/src/gdict-about.c:98
-#: ../gnome-dictionary/src/gdict-app.c:409
-#: ../gnome-dictionary/src/gdict-window.c:1203
+#: ../gnome-dictionary/src/gdict-app.c:468
+#: ../gnome-dictionary/src/gdict-window.c:1204
 msgid "Dictionary"
 msgstr "Slovník"
 
@@ -525,7 +525,10 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE. This key is "
 "deprecated and no longer in use."
-msgstr "Zadejte, jestli se používat chytré hledání. Tento klíč závisí na tom, jestli server se slovníkem podporuje tuto možnost. Implicitní hodnota je TRUE. Tento klíč je zastaralý a už se nepoužívá."
+msgstr ""
+"Zadejte, jestli se používat chytré hledání. Tento klíč závisí na tom, jestli "
+"server se slovníkem podporuje tuto možnost. Implicitní hodnota je TRUE. "
+"Tento klíč je zastaralý a už se nepoužívá."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:4
 msgid "The default database to use"
@@ -548,7 +551,10 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers. This key is deprecated and "
 "no longer in use."
-msgstr "Server se slovníkem, ke kterému se připojovat. Implicitní server je dict.org. Podrobnosti o dalších serverech naleznete na http://www.dict.org. Tento klíč je zastarlý a už se nepoužívá."
+msgstr ""
+"Server se slovníkem, ke kterému se připojovat. Implicitní server je dict."
+"org. Podrobnosti o dalších serverech naleznete na http://www.dict.org. Tento "
+"klíč je zastarlý a už se nepoužívá."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
 msgid "The font to be used when printing"
@@ -563,13 +569,18 @@ msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr "Název implicitní konkrétní databáze nebo metadatabáze, kterou poutívat ve zdroji slovníku. Vykřičník (\"!\") znamená, že se má hledat ve všech databázích ve zdroji slovníku."
+msgstr ""
+"Název implicitní konkrétní databáze nebo metadatabáze, kterou poutívat ve "
+"zdroji slovníku. Vykřičník (\"!\") znamená, že se má hledat ve všech "
+"databázích ve zdroji slovníku."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:12
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr "Název implicitního typu hledání, které používat ve zdroji slovníku, je-li k dispozici. Implicitní typ je 'exact', to je hledat přesně slova."
+msgstr ""
+"Název implicitního typu hledání, které používat ve zdroji slovníku, je-li k "
+"dispozici. Implicitní typ je 'exact', to je hledat přesně slova."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -584,28 +595,39 @@ msgstr "Název zdroje slovníku používaného pro získávání definic slov."
 msgid ""
 "The port number to connect to. The default port is 2628. This key is "
 "deprecated and no longer in use."
-msgstr "Číslo portu, ke kterému se má připojit. Implicitní port je 2628. Tento klíč je zastaralý a už se nepoužívá."
+msgstr ""
+"Číslo portu, ke kterému se má připojit. Implicitní port je 2628. Tento klíč "
+"je zastaralý a už se nepoužívá."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:16
 msgid ""
 "This key defines the window height and it's used to remember the size of the "
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a height based on the font size."
-msgstr "Tento klíč definuje výšku okna a používá se pro zapamatování velikosti okna slovníku mezi sezeními. Jeho nastavení na -1 způsobí, že okno slovníku bude používat výšku založenou na velikosti písma."
+msgstr ""
+"Tento klíč definuje výšku okna a používá se pro zapamatování velikosti okna "
+"slovníku mezi sezeními. Jeho nastavení na -1 způsobí, že okno slovníku bude "
+"používat výšku založenou na velikosti písma."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:17
 msgid ""
 "This key defines the window width and it's used to remember the size of the "
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a width based on the font size."
-msgstr "Tento klíč definuje šířku okna a používá se pro zapamatování velikosti okna slovníku mezi sezeními. Jeho nastavení na -1 způsobí, že okno slovníku bude používat šířku založenou na velikosti písma."
+msgstr ""
+"Tento klíč definuje šířku okna a používá se pro zapamatování velikosti okna "
+"slovníku mezi sezeními. Jeho nastavení na -1 způsobí, že okno slovníku bude "
+"používat šířku založenou na velikosti písma."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:18
 msgid ""
 "This key defines whether the window should be maximized and it's used to "
 "remember the state of the dictionary window across sessions. Setting it to "
 "TRUE will make the window always appear as maximized."
-msgstr "Tento klíč definuje, jestli má být okno maximalizováno, a používá se pro zapamatování stavu okna slovníku mezi sezeními. Jeho nastavení na TRUE způsobí, že okno bude vždy maximalixováno."
+msgstr ""
+"Tento klíč definuje, jestli má být okno maximalizováno, a používá se pro "
+"zapamatování stavu okna slovníku mezi sezeními. Jeho nastavení na TRUE "
+"způsobí, že okno bude vždy maximalixováno."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:19
 msgid "Use smart lookup (Deprecated)"
@@ -635,7 +657,7 @@ msgstr "_Název počítače"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
 #: ../gnome-dictionary/src/gdict-applet.c:230
-#: ../gnome-dictionary/src/gdict-window.c:594
+#: ../gnome-dictionary/src/gdict-window.c:595
 msgid "Print"
 msgstr "Vytisknout"
 
@@ -740,7 +762,9 @@ msgstr "Vyhledávání počítače '%s' selhalo: počítač nenalezen"
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr "Nemohu se připojit k serveru slovníku na '%s:%d'. Server odpověděl s kódem %d (server neběží)"
+msgstr ""
+"Nemohu se připojit k serveru slovníku na '%s:%d'. Server odpověděl s kódem %"
+"d (server neběží)"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1159
 #, c-format
@@ -951,7 +975,8 @@ msgstr "Metoda"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:135
 msgid "The matching strategy to be used to generate the completion list"
-msgstr "Metoda porovnávání, kterou používat pro vygenerování seznamu pro doplnění"
+msgstr ""
+"Metoda porovnávání, kterou používat pro vygenerování seznamu pro doplnění"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:218
 msgid "Filename"
@@ -962,7 +987,7 @@ msgid "The filename used by this dictionary source"
 msgstr "Název souboru používaného tímto zdrojem slovníku"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:232
-#: ../gsearchtool/gsearchtool.c:2355
+#: ../gsearchtool/gsearchtool.c:2474
 msgid "Name"
 msgstr "Název"
 
@@ -1066,24 +1091,10 @@ msgstr "Hledat slova ve slovnících"
 msgid "Unable to open the application icon: %s"
 msgstr "Nemohu otevřít ikonu aplikace: %s"
 
-#: ../gnome-dictionary/src/gdict-app.c:118
-#, c-format
-msgid ""
-"Unable to create the data directory '%s': there already is a file with the "
-"same name.  You should move the file and re-run gnome-dictionary."
-msgstr "Nemohu vytvořit adresář dat '%s': již existuje soubor se stejným názvem. Měli byste tento soubor přesunout a spustit gnome-dictionary znovu."
-
-#. Translators: the first is the file name, the second is
-#. * the error message
-#: ../gnome-dictionary/src/gdict-app.c:130
-#, c-format
-msgid "Unable to create the data directory '%s': %s"
-msgstr "Nemohu vymazat adresář dat '%s': %s"
-
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: ../gnome-dictionary/src/gdict-app.c:249
+#: ../gnome-dictionary/src/gdict-app.c:213
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -1096,20 +1107,20 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:263
+#: ../gnome-dictionary/src/gdict-app.c:227
 #, c-format
 msgid "Error: %s\n"
 msgstr "Chyba: %s\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:289
+#: ../gnome-dictionary/src/gdict-app.c:253
 msgid "See gnome-dictionary --help for usage\n"
 msgstr "Pro použití viz gnome-dictionary --help\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:302
+#: ../gnome-dictionary/src/gdict-app.c:266
 msgid "Unable to find a suitable dictionary source"
 msgstr "Nemohu najít vhodný zdroj slovníku"
 
-#: ../gnome-dictionary/src/gdict-app.c:336
+#: ../gnome-dictionary/src/gdict-app.c:300
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
@@ -1118,59 +1129,73 @@ msgstr ""
 "Chyba při vyhledávání definice \"%s\":\n"
 "%s"
 
-#: ../gnome-dictionary/src/gdict-app.c:368
+#: ../gnome-dictionary/src/gdict-app.c:345
+#: ../gnome-dictionary/src/gdict-applet.c:1398
+#, c-format
+msgid "Unable to rename file '%s' to '%s': %s"
+msgstr "Nemohu přejmenovat soubor '%s' na '%s': %s"
+
+#: ../gnome-dictionary/src/gdict-app.c:369
+#: ../gnome-dictionary/src/gdict-app.c:392
+#: ../gnome-dictionary/src/gdict-applet.c:1422
+#: ../gnome-dictionary/src/gdict-applet.c:1445
+#, c-format
+msgid "Unable to create the data directory '%s': %s"
+msgstr "Nemohu vymazat adresář dat '%s': %s"
+
+#: ../gnome-dictionary/src/gdict-app.c:427
 msgid "Words to look up"
 msgstr "Slova, která hledat"
 
-#: ../gnome-dictionary/src/gdict-app.c:368
+#: ../gnome-dictionary/src/gdict-app.c:427
 msgid "word"
 msgstr "slovo"
 
-#: ../gnome-dictionary/src/gdict-app.c:370
+#: ../gnome-dictionary/src/gdict-app.c:429
 msgid "Dictionary source to use"
 msgstr "Zdroj slovníku, který používat"
 
-#: ../gnome-dictionary/src/gdict-app.c:370
+#: ../gnome-dictionary/src/gdict-app.c:429
 msgid "source"
 msgstr "zdroj"
 
-#: ../gnome-dictionary/src/gdict-app.c:372
+#: ../gnome-dictionary/src/gdict-app.c:431
 msgid "Show available dictionary sources"
 msgstr "Zobrazit dostupné zdroje slovníků"
 
-#: ../gnome-dictionary/src/gdict-app.c:374
+#: ../gnome-dictionary/src/gdict-app.c:433
 msgid "Print result to the console"
 msgstr "Vypsat výsledek na konzolu"
 
-#: ../gnome-dictionary/src/gdict-app.c:376
+#: ../gnome-dictionary/src/gdict-app.c:435
 msgid "Database to use"
 msgstr "Databáze, kterou používat"
 
 #. create the new option context
-#: ../gnome-dictionary/src/gdict-app.c:392
+#: ../gnome-dictionary/src/gdict-app.c:451
 msgid " - Look up words in dictionaries"
 msgstr " - Hledat slova ve slovnících"
 
-#: ../gnome-dictionary/src/gdict-app.c:396
+#: ../gnome-dictionary/src/gdict-app.c:455
 msgid "Dictionary and spelling tool"
 msgstr "Nástroj pro slovník a pravopis"
 
-#: ../gnome-dictionary/src/gdict-app.c:397
+#: ../gnome-dictionary/src/gdict-app.c:456
 msgid "Show Dictionary options"
 msgstr "Zobrazit možnosti slovníku"
 
 #: ../gnome-dictionary/src/gdict-applet.c:244
-#: ../gnome-dictionary/src/gdict-window.c:539
+#: ../gnome-dictionary/src/gdict-window.c:540
 msgid "Save a Copy"
 msgstr "Uložit kopii"
 
 #: ../gnome-dictionary/src/gdict-applet.c:254
-#: ../gnome-dictionary/src/gdict-window.c:549
+#: ../gnome-dictionary/src/gdict-window.c:550
 msgid "Untitled document"
 msgstr "Nepojmenovaný dokument"
 
 #: ../gnome-dictionary/src/gdict-applet.c:275
-#: ../gnome-dictionary/src/gdict-window.c:570
+#: ../gnome-dictionary/src/gdict-window.c:571
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Chyba při zápisu do '%s'"
@@ -1238,64 +1263,48 @@ msgstr "Nastavení"
 #: ../gnome-dictionary/src/gdict-applet.c:758
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:471
 #: ../gnome-dictionary/src/gdict-source-dialog.c:324
-#: ../gnome-dictionary/src/gdict-window.c:760
+#: ../gnome-dictionary/src/gdict-window.c:761
 msgid "There was an error while displaying help"
 msgstr "Při zobrazování nápovědy došlo k chybě"
 
 #: ../gnome-dictionary/src/gdict-applet.c:917
-#: ../gnome-dictionary/src/gdict-window.c:269
+#: ../gnome-dictionary/src/gdict-window.c:270
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Zdroj slovníku s názvem '%s' není k dispozici"
 
 #: ../gnome-dictionary/src/gdict-applet.c:921
-#: ../gnome-dictionary/src/gdict-window.c:273
+#: ../gnome-dictionary/src/gdict-window.c:274
 msgid "Unable to find dictionary source"
 msgstr "Nemohu najít zdroj slovníku"
 
 #: ../gnome-dictionary/src/gdict-applet.c:937
-#: ../gnome-dictionary/src/gdict-window.c:289
+#: ../gnome-dictionary/src/gdict-window.c:290
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Pro zdroj '%s' není k dispozici kontext"
 
 #: ../gnome-dictionary/src/gdict-applet.c:941
-#: ../gnome-dictionary/src/gdict-window.c:293
+#: ../gnome-dictionary/src/gdict-window.c:294
 msgid "Unable to create a context"
 msgstr "Nemohu vytvořit kontext"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1215
-#: ../gnome-dictionary/src/gdict-applet.c:1232
-#, c-format
-msgid "Unable to create the data directory '%s'"
-msgstr "Nemohu vytvořit adresář dat '%s'"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1216
-msgid ""
-"There is a file with the same name in the path.\n"
-"You should move the file and re-run the\n"
-"Dictionary applet"
-msgstr ""
-"V cestě existuje soubor se stejným názvem.\n"
-"Měli byste soubor přesunout a spusti aplet\n"
-"Slovník znovu"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1252
+#: ../gnome-dictionary/src/gdict-applet.c:1210
 msgid "Unable to load the applet icon"
 msgstr "Nemohu načíst ikonu apletu"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1281
-#: ../gnome-dictionary/src/gdict-window.c:1312
+#: ../gnome-dictionary/src/gdict-applet.c:1239
+#: ../gnome-dictionary/src/gdict-window.c:1313
 msgid "Unable to connect to GConf"
 msgstr "Nemohu se připojit k GConf"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1296
-#: ../gnome-dictionary/src/gdict-window.c:1328
+#: ../gnome-dictionary/src/gdict-applet.c:1254
+#: ../gnome-dictionary/src/gdict-window.c:1329
 msgid "Unable to get notification for preferences"
 msgstr "Nemohu získat upozornění na nastavení"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1311
-#: ../gnome-dictionary/src/gdict-window.c:1344
+#: ../gnome-dictionary/src/gdict-applet.c:1269
+#: ../gnome-dictionary/src/gdict-window.c:1345
 msgid "Unable to get notification for the document font"
 msgstr "Nemohu získat upozornění na písmo dokumentu"
 
@@ -1352,120 +1361,119 @@ msgid "Searching for '%s'..."
 msgstr "Hledám '%s'..."
 
 #: ../gnome-dictionary/src/gdict-window.c:199
-#: ../gnome-dictionary/src/gdict-window.c:220
+#: ../gnome-dictionary/src/gdict-window.c:221
 msgid "No definitions found"
 msgstr "Nenalezeny žádné definice"
 
 #: ../gnome-dictionary/src/gdict-window.c:201
-msgid "A definition found"
-msgstr "Nalezena definice"
-
-#: ../gnome-dictionary/src/gdict-window.c:203
 #, c-format
-msgid "%d definitions found"
-msgstr "Nalezeno %d definic"
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "Nalezena definice"
+msgstr[1] "Nalezeny %d definice"
+msgstr[2] "Nalezeno %d definic"
 
-#: ../gnome-dictionary/src/gdict-window.c:361
+#: ../gnome-dictionary/src/gdict-window.c:362
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Slovník"
 
-#: ../gnome-dictionary/src/gdict-window.c:679
+#: ../gnome-dictionary/src/gdict-window.c:680
 msgid "Dictionary Preferences"
 msgstr "Nastavení slovníku"
 
-#: ../gnome-dictionary/src/gdict-window.c:795
+#: ../gnome-dictionary/src/gdict-window.c:796
 msgid "_File"
 msgstr "_Soubor"
 
-#: ../gnome-dictionary/src/gdict-window.c:796 ../logview/logview.c:86
+#: ../gnome-dictionary/src/gdict-window.c:797 ../logview/logview.c:86
 msgid "_Edit"
 msgstr "_Upravit"
 
-#: ../gnome-dictionary/src/gdict-window.c:797
+#: ../gnome-dictionary/src/gdict-window.c:798
 msgid "_Go"
 msgstr "Pře_jít"
 
 #. File menu
-#: ../gnome-dictionary/src/gdict-window.c:801
+#: ../gnome-dictionary/src/gdict-window.c:802
 msgid "_New"
 msgstr "_Nový"
 
-#: ../gnome-dictionary/src/gdict-window.c:802
+#: ../gnome-dictionary/src/gdict-window.c:803
 msgid "New look up"
 msgstr "Nové hledání"
 
-#: ../gnome-dictionary/src/gdict-window.c:803
+#: ../gnome-dictionary/src/gdict-window.c:804
 msgid "_Save a Copy..."
 msgstr "_Uložit kopii..."
 
-#: ../gnome-dictionary/src/gdict-window.c:805
+#: ../gnome-dictionary/src/gdict-window.c:806
 msgid "_Print..."
 msgstr "Vy_tisknout..."
 
-#: ../gnome-dictionary/src/gdict-window.c:806
+#: ../gnome-dictionary/src/gdict-window.c:807
 msgid "Print this document"
 msgstr "Vytisknout tento dokument"
 
-#: ../gnome-dictionary/src/gdict-window.c:813 ../logview/logview.c:99
+#: ../gnome-dictionary/src/gdict-window.c:814 ../logview/logview.c:99
 msgid "Select _All"
 msgstr "Vybrat vš_e"
 
-#: ../gnome-dictionary/src/gdict-window.c:816
+#: ../gnome-dictionary/src/gdict-window.c:817
 msgid "Find a word or phrase in the document"
 msgstr "Hledat v dokumentu slovo nebo frázi"
 
-#: ../gnome-dictionary/src/gdict-window.c:818
+#: ../gnome-dictionary/src/gdict-window.c:819
 msgid "Find Ne_xt"
 msgstr "Hledat _následující"
 
-#: ../gnome-dictionary/src/gdict-window.c:820
+#: ../gnome-dictionary/src/gdict-window.c:821
 msgid "Find Pre_vious"
 msgstr "Hledat _předchozí"
 
 #. Go menu
-#: ../gnome-dictionary/src/gdict-window.c:826
+#: ../gnome-dictionary/src/gdict-window.c:827
 msgid "_Previous Definition"
 msgstr "_Předchozí definice"
 
-#: ../gnome-dictionary/src/gdict-window.c:827
+#: ../gnome-dictionary/src/gdict-window.c:828
 msgid "Go to the previous definition"
 msgstr "Jít na předchozí definici"
 
-#: ../gnome-dictionary/src/gdict-window.c:828
+#: ../gnome-dictionary/src/gdict-window.c:829
 msgid "_Next Definition"
 msgstr "_Následující definice"
 
-#: ../gnome-dictionary/src/gdict-window.c:829
+#: ../gnome-dictionary/src/gdict-window.c:830
 msgid "Go to the next definition"
 msgstr "Jít na následující definici"
 
-#: ../gnome-dictionary/src/gdict-window.c:830
+#: ../gnome-dictionary/src/gdict-window.c:831
 msgid "_First Definition"
 msgstr "_První definice"
 
-#: ../gnome-dictionary/src/gdict-window.c:831
+#: ../gnome-dictionary/src/gdict-window.c:832
 msgid "Go to the first definition"
 msgstr "Jít na první definici"
 
-#: ../gnome-dictionary/src/gdict-window.c:832
+#: ../gnome-dictionary/src/gdict-window.c:833
 msgid "_Last Definition"
 msgstr "Po_slední definice"
 
-#: ../gnome-dictionary/src/gdict-window.c:833
+#: ../gnome-dictionary/src/gdict-window.c:834
 msgid "Go to the last definition"
 msgstr "Jít na poslední definici"
 
 #. Help menu
-#: ../gnome-dictionary/src/gdict-window.c:836 ../logview/logview.c:114
+#: ../gnome-dictionary/src/gdict-window.c:837 ../logview/logview.c:114
 msgid "_Contents"
 msgstr "_Obsah"
 
-#: ../gnome-dictionary/src/gdict-window.c:1125
+#: ../gnome-dictionary/src/gdict-window.c:1126
 msgid "Look _up:"
 msgstr "_Hledat:"
 
-#: ../gnome-dictionary/src/gdict-window.c:1368
+#: ../gnome-dictionary/src/gdict-window.c:1369
 msgid "Unable to load the application icon"
 msgstr "Nemohu načíst ikonu aplikace"
 
@@ -1847,14 +1855,20 @@ msgid ""
 "This key defines the window height, and it's used to remember the size of "
 "the search tool between sessions. Setting it to -1 will make the search tool "
 "use the default height."
-msgstr "Tento klíč definuje výšku okna a používá se pro zapamatování velikosti nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj pro hledání bude používat implicitní výšku."
+msgstr ""
+"Tento klíč definuje výšku okna a používá se pro zapamatování velikosti "
+"nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj "
+"pro hledání bude používat implicitní výšku."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:56
 msgid ""
 "This key defines the window width, and it's used to remember the size of the "
 "search tool between sessions. Setting it to -1 will make the search tool use "
 "the default width."
-msgstr "Tento klíč definuje šířku okna a používá se pro zapamatování velikosti nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj pro hledání bude používat implicitní šířku."
+msgstr ""
+"Tento klíč definuje šířku okna a používá se pro zapamatování velikosti "
+"nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj "
+"pro hledání bude používat implicitní šířku."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:57
 msgid ""
@@ -1997,7 +2011,8 @@ msgstr ""
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
-msgstr "Tento klíč určuje, jestli se nástroj hledání spouští v maximalizovaném stavu."
+msgstr ""
+"Tento klíč určuje, jestli se nástroj hledání spouští v maximalizovaném stavu."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:186
 msgid "Could not open help document."
@@ -2151,108 +2166,117 @@ msgstr "odkaz (chybný)"
 msgid "link to %s"
 msgstr "odkaz na %s"
 
-#: ../gsearchtool/gsearchtool.c:81
+#: ../gsearchtool/gsearchtool.c:82
 msgid "Contains the _text"
 msgstr "_Obsahuje text"
 
-#: ../gsearchtool/gsearchtool.c:83
+#: ../gsearchtool/gsearchtool.c:84
 msgid "_Date modified less than"
 msgstr "_Datum úpravy méně než"
 
-#: ../gsearchtool/gsearchtool.c:83 ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
 msgid "days"
 msgstr "dní"
 
-#: ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:85
 msgid "Date modified more than"
 msgstr "Datum úpravy více než"
 
-#: ../gsearchtool/gsearchtool.c:86
+#: ../gsearchtool/gsearchtool.c:87
 msgid "S_ize at least"
 msgstr "Veliko_st alespoň"
 
-#: ../gsearchtool/gsearchtool.c:86 ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
 msgid "kilobytes"
 msgstr "kilobajtů"
 
-#: ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:88
 msgid "Si_ze at most"
 msgstr "Velikost nejví_ce"
 
-#: ../gsearchtool/gsearchtool.c:88
+#: ../gsearchtool/gsearchtool.c:89
 msgid "File is empty"
 msgstr "Soubor je prázdný"
 
-#: ../gsearchtool/gsearchtool.c:90
+#: ../gsearchtool/gsearchtool.c:91
 msgid "Owned by _user"
 msgstr "Vlastněno _uživatelem"
 
-#: ../gsearchtool/gsearchtool.c:91
+#: ../gsearchtool/gsearchtool.c:92
 msgid "Owned by _group"
 msgstr "Vlastněno s_kupinou"
 
-#: ../gsearchtool/gsearchtool.c:92
+#: ../gsearchtool/gsearchtool.c:93
 msgid "Owner is unrecognized"
 msgstr "Vlastníka nelze rozpoznat"
 
-#: ../gsearchtool/gsearchtool.c:94
+#: ../gsearchtool/gsearchtool.c:95
 msgid "Na_me does not contain"
 msgstr "Náze_v neobsahuje"
 
-#: ../gsearchtool/gsearchtool.c:95
+#: ../gsearchtool/gsearchtool.c:96
 msgid "Name matches regular e_xpression"
 msgstr "Název odpovídá re_gulárnímu výrazu"
 
-#: ../gsearchtool/gsearchtool.c:97
+#: ../gsearchtool/gsearchtool.c:98
 msgid "Show hidden and backup files"
 msgstr "Zobrazovat skryté a záložní soubory"
 
-#: ../gsearchtool/gsearchtool.c:98
+#: ../gsearchtool/gsearchtool.c:99
 msgid "Follow symbolic links"
 msgstr "Sledovat symbolické odkazy"
 
-#: ../gsearchtool/gsearchtool.c:99
+#: ../gsearchtool/gsearchtool.c:100
 msgid "Include other filesystems"
 msgstr "Zahrnout jiné systémy souborů"
 
-#: ../gsearchtool/gsearchtool.c:180
+#: ../gsearchtool/gsearchtool.c:181
 msgid "_Open"
 msgstr "_Otevřít"
 
-#: ../gsearchtool/gsearchtool.c:181
+#: ../gsearchtool/gsearchtool.c:182
 msgid "O_pen Folder"
 msgstr "O_tevřít adresář"
 
-#: ../gsearchtool/gsearchtool.c:182
+#: ../gsearchtool/gsearchtool.c:183
 msgid "Mo_ve to Trash"
 msgstr "_Přesunout do koše"
 
-#: ../gsearchtool/gsearchtool.c:183
+#: ../gsearchtool/gsearchtool.c:184
 msgid "_Save Results As..."
 msgstr "Uložit výsledky j_ako..."
 
-#: ../gsearchtool/gsearchtool.c:255 ../gsearchtool/gsearchtool.c:272
+#: ../gsearchtool/gsearchtool.c:390
 msgid "A locate database has probably not been created."
 msgstr "Pravděpodobně nebyla vytvořena databáze locate."
 
-#: ../gsearchtool/gsearchtool.c:376
+#: ../gsearchtool/gsearchtool.c:492
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "Převod znakové sady selhal pro \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:796 ../gsearchtool/gsearchtool.c:825
+#: ../gsearchtool/gsearchtool.c:516
+msgid "Searching..."
+msgstr "Hledání..."
+
+#: ../gsearchtool/gsearchtool.c:516 ../gsearchtool/gsearchtool.c:1021
+#: ../gsearchtool/gsearchtool.c:1299 ../gsearchtool/gsearchtool.c:3155
+msgid "Search for Files"
+msgstr "Hledat soubory"
+
+#: ../gsearchtool/gsearchtool.c:967 ../gsearchtool/gsearchtool.c:996
 msgid "No files found"
 msgstr "Nenalezeny žádné soubory"
 
-#: ../gsearchtool/gsearchtool.c:818
+#: ../gsearchtool/gsearchtool.c:989
 msgid "(stopped)"
 msgstr "(zastaveno)"
 
-#: ../gsearchtool/gsearchtool.c:824
+#: ../gsearchtool/gsearchtool.c:995
 msgid "No Files Found"
 msgstr "Nenalezeny žádné soubory"
 
-#: ../gsearchtool/gsearchtool.c:829
+#: ../gsearchtool/gsearchtool.c:1000
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
@@ -2260,7 +2284,7 @@ msgstr[0] "Nalezen %d soubor"
 msgstr[1] "Nalezeny %d soubory"
 msgstr[2] "Nalezeno %d souborů"
 
-#: ../gsearchtool/gsearchtool.c:833 ../gsearchtool/gsearchtool.c:871
+#: ../gsearchtool/gsearchtool.c:1004 ../gsearchtool/gsearchtool.c:1042
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
@@ -2268,55 +2292,46 @@ msgstr[0] "Nalezen %d soubor"
 msgstr[1] "Nalezeny %d soubory"
 msgstr[2] "Nalezeno %d souborů"
 
-#: ../gsearchtool/gsearchtool.c:850 ../gsearchtool/gsearchtool.c:1128
-#: ../gsearchtool/gsearchtool.c:1214 ../gsearchtool/gsearchtool.c:3026
-msgid "Search for Files"
-msgstr "Hledat soubory"
-
-#: ../gsearchtool/gsearchtool.c:962
+#: ../gsearchtool/gsearchtool.c:1133
 msgid "Entry changed called for a non entry option!"
 msgstr "Signál změny políčka volán pro volbu bez políčka!"
 
-#: ../gsearchtool/gsearchtool.c:1214
-msgid "Searching..."
-msgstr "Hledání..."
-
-#: ../gsearchtool/gsearchtool.c:1237
+#: ../gsearchtool/gsearchtool.c:1384
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Nastavit text možnosti hledání \"Název obsahuje\""
 
-#: ../gsearchtool/gsearchtool.c:1238
+#: ../gsearchtool/gsearchtool.c:1385
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "Nastavit text možnosti hledání \"Hledat v adresáři\""
 
-#: ../gsearchtool/gsearchtool.c:1239
+#: ../gsearchtool/gsearchtool.c:1386
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 "Třídit soubory podle jednoho z následujícího: název, adresář, typ nebo datum"
 
-#: ../gsearchtool/gsearchtool.c:1240
+#: ../gsearchtool/gsearchtool.c:1387
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Nastavit pořadí třídění na sestupné, implicitní je vzestupné"
 
-#: ../gsearchtool/gsearchtool.c:1241
+#: ../gsearchtool/gsearchtool.c:1388
 msgid "Automatically start a search"
 msgstr "Automaticky začít vyhledávat"
 
-#: ../gsearchtool/gsearchtool.c:1247
+#: ../gsearchtool/gsearchtool.c:1394
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Zvolit možnost hledání \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1250
+#: ../gsearchtool/gsearchtool.c:1397
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Zvolit a nastavit možnost hledání \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1357
+#: ../gsearchtool/gsearchtool.c:1504
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Parametru příkazové řádky sortby byla předána neplatná volba."
 
-#: ../gsearchtool/gsearchtool.c:1668
+#: ../gsearchtool/gsearchtool.c:1802
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -2324,17 +2339,17 @@ msgstr ""
 "\n"
 "... Příliš mnoho chyb k zobrazení ..."
 
-#: ../gsearchtool/gsearchtool.c:1682
+#: ../gsearchtool/gsearchtool.c:1816
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr "Výsledky hledání možná nejsou platné. Při hledání došlo k chybám."
 
-#: ../gsearchtool/gsearchtool.c:1694 ../gsearchtool/gsearchtool.c:1738
+#: ../gsearchtool/gsearchtool.c:1828 ../gsearchtool/gsearchtool.c:1872
 msgid "Show more _details"
 msgstr "Zobrazit více _podrobností"
 
-#: ../gsearchtool/gsearchtool.c:1724
+#: ../gsearchtool/gsearchtool.c:1858
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -2342,149 +2357,149 @@ msgstr ""
 "Výsledky hledání jsou možná zastaralé nebo neplatné. Chcete zakázat funkci "
 "rychlého hledání?"
 
-#: ../gsearchtool/gsearchtool.c:1749
+#: ../gsearchtool/gsearchtool.c:1883
 msgid "Disable _Quick Search"
 msgstr "Zakázat _rychlé hledání"
 
-#: ../gsearchtool/gsearchtool.c:1776
+#: ../gsearchtool/gsearchtool.c:1910
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "Nemohu nastavit id skupiny procesů potomka %d: %s.\n"
 
-#: ../gsearchtool/gsearchtool.c:1803
+#: ../gsearchtool/gsearchtool.c:1935
 msgid "Error parsing the search command."
 msgstr "Chyba při zpracovávání příkazu hledání."
 
-#: ../gsearchtool/gsearchtool.c:1836
+#: ../gsearchtool/gsearchtool.c:1968
 msgid "Error running the search command."
 msgstr "Chyba při spouštění příkazu hledání."
 
-#: ../gsearchtool/gsearchtool.c:1964
+#: ../gsearchtool/gsearchtool.c:2083
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Zadejte textovou hodnotu možnosti hledání \"%s\"."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:1969
+#: ../gsearchtool/gsearchtool.c:2088
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\", jednotky %s"
 
-#: ../gsearchtool/gsearchtool.c:1971
+#: ../gsearchtool/gsearchtool.c:2090
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Zadejte hodnotu v %s pro možnost hledání \"%s\"."
 
-#: ../gsearchtool/gsearchtool.c:2030
+#: ../gsearchtool/gsearchtool.c:2149
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Odstranit \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:2031
+#: ../gsearchtool/gsearchtool.c:2150
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Kliknutím odstraňte možnost hledání \"%s\"."
 
-#: ../gsearchtool/gsearchtool.c:2124
+#: ../gsearchtool/gsearchtool.c:2243
 msgid "A_vailable options:"
 msgstr "Dostupné _volby:"
 
-#: ../gsearchtool/gsearchtool.c:2153
+#: ../gsearchtool/gsearchtool.c:2272
 msgid "Available options"
 msgstr "Dostupné možnosti"
 
-#: ../gsearchtool/gsearchtool.c:2154
+#: ../gsearchtool/gsearchtool.c:2273
 msgid "Select a search option from the drop-down list."
 msgstr "Vyberte možnost hledání z rozbalovacího seznamu."
 
-#: ../gsearchtool/gsearchtool.c:2166
+#: ../gsearchtool/gsearchtool.c:2285
 msgid "Add search option"
 msgstr "Přidat možnost hledání"
 
-#: ../gsearchtool/gsearchtool.c:2167
+#: ../gsearchtool/gsearchtool.c:2286
 msgid "Click to add the selected available search option."
 msgstr "Kliknutím přidáte vybranou možnost hledání"
 
-#: ../gsearchtool/gsearchtool.c:2256
+#: ../gsearchtool/gsearchtool.c:2375
 msgid "S_earch results:"
 msgstr "Výsl_edky hledání:"
 
-#: ../gsearchtool/gsearchtool.c:2295
+#: ../gsearchtool/gsearchtool.c:2414
 msgid "List View"
 msgstr "Seznamový pohled"
 
-#: ../gsearchtool/gsearchtool.c:2379
+#: ../gsearchtool/gsearchtool.c:2498
 msgid "Folder"
 msgstr "Adresář"
 
-#: ../gsearchtool/gsearchtool.c:2391
+#: ../gsearchtool/gsearchtool.c:2510
 msgid "Size"
 msgstr "Velikost"
 
-#: ../gsearchtool/gsearchtool.c:2402
+#: ../gsearchtool/gsearchtool.c:2521
 msgid "Type"
 msgstr "Typ"
 
-#: ../gsearchtool/gsearchtool.c:2413
+#: ../gsearchtool/gsearchtool.c:2532
 msgid "Date Modified"
 msgstr "Datum změny"
 
-#: ../gsearchtool/gsearchtool.c:2815
+#: ../gsearchtool/gsearchtool.c:2934
 msgid "_Name contains:"
 msgstr "_Název obsahuje:"
 
-#: ../gsearchtool/gsearchtool.c:2829 ../gsearchtool/gsearchtool.c:2830
+#: ../gsearchtool/gsearchtool.c:2948 ../gsearchtool/gsearchtool.c:2949
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 "Zadejte název souboru nebo část názvu souboru, se zástupnými znaky nebo nez "
 "nich."
 
-#: ../gsearchtool/gsearchtool.c:2830
+#: ../gsearchtool/gsearchtool.c:2949
 msgid "Name contains"
 msgstr "Název obsahuje"
 
-#: ../gsearchtool/gsearchtool.c:2836
+#: ../gsearchtool/gsearchtool.c:2955
 msgid "_Look in folder:"
 msgstr "Hledat v _adresáři:"
 
-#: ../gsearchtool/gsearchtool.c:2842
+#: ../gsearchtool/gsearchtool.c:2961
 msgid "Browse"
 msgstr "Probírat"
 
-#: ../gsearchtool/gsearchtool.c:2847
+#: ../gsearchtool/gsearchtool.c:2966
 msgid "Look in folder"
 msgstr "Hledat v adresáři"
 
-#: ../gsearchtool/gsearchtool.c:2847
+#: ../gsearchtool/gsearchtool.c:2966
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "Zvolte adresář nebo zařízení, kde chcete začít hledat."
 
-#: ../gsearchtool/gsearchtool.c:2858
+#: ../gsearchtool/gsearchtool.c:2977
 msgid "Select more _options"
 msgstr "Vybrat další _možnosti"
 
-#: ../gsearchtool/gsearchtool.c:2867
+#: ../gsearchtool/gsearchtool.c:2986
 msgid "Select more options"
 msgstr "Vybrat další možnosti"
 
-#: ../gsearchtool/gsearchtool.c:2867
+#: ../gsearchtool/gsearchtool.c:2986
 msgid "Click to expand or collapse the list of available options."
 msgstr "Kliknutím rozbalte nebo sbalte seznam dostupných možností."
 
-#: ../gsearchtool/gsearchtool.c:2891
+#: ../gsearchtool/gsearchtool.c:3010
 msgid "Click to display the help manual."
 msgstr "Kliknutím zobrazte příručku."
 
-#: ../gsearchtool/gsearchtool.c:2899
+#: ../gsearchtool/gsearchtool.c:3018
 msgid "Click to close \"Search for Files\"."
 msgstr "Kliknutím zavřete \"Hledat soubory\"."
 
-#: ../gsearchtool/gsearchtool.c:2925
+#: ../gsearchtool/gsearchtool.c:3044
 msgid "Click to perform a search."
 msgstr "Kliknutím začněte hledat."
 
-#: ../gsearchtool/gsearchtool.c:2926
+#: ../gsearchtool/gsearchtool.c:3045
 msgid "Click to stop a search."
 msgstr "Kliknutím zastavte hledání."
 
@@ -2720,7 +2735,9 @@ msgstr "Velikost písma používaného pro zobrazování záznamu"
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
-msgstr "Určuje seznam souborů se záznamy, které otevřít při startu. Implicitní seznam je vytvořen čtením /etc/syslog.conf."
+msgstr ""
+"Určuje seznam souborů se záznamy, které otevřít při startu. Implicitní "
+"seznam je vytvořen čtením /etc/syslog.conf."
 
 #: ../logview/logview.schemas.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
@@ -2738,7 +2755,10 @@ msgstr ""
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
-msgstr "Určuje velikost neproporcionálního písma používaného pro zobrazování záznamů v hlavním stromovém pohledu. Implicitní hodnota je převzata z implicitní velikosti písma terminálu."
+msgstr ""
+"Určuje velikost neproporcionálního písma používaného pro zobrazování záznamů "
+"v hlavním stromovém pohledu. Implicitní hodnota je převzata z implicitní "
+"velikosti písma terminálu."
 
 #: ../logview/logview.schemas.in.h:9
 msgid "Specifies the width of the log viewer main window in pixels."
@@ -2837,3 +2857,25 @@ msgstr "Sledování souborů není v tomto systému souborů podporováno.\n"
 #: ../logview/monitor.c:88
 msgid "Gnome-VFS Error.\n"
 msgstr "Chyba Gnome-VFS.\n"
+
+#~ msgid ""
+#~ "Unable to create the data directory '%s': there already is a file with "
+#~ "the same name.  You should move the file and re-run gnome-dictionary."
+#~ msgstr ""
+#~ "Nemohu vytvořit adresář dat '%s': již existuje soubor se stejným názvem. "
+#~ "Měli byste tento soubor přesunout a spustit gnome-dictionary znovu."
+
+#~ msgid "Unable to create the data directory '%s'"
+#~ msgstr "Nemohu vytvořit adresář dat '%s'"
+
+#~ msgid ""
+#~ "There is a file with the same name in the path.\n"
+#~ "You should move the file and re-run the\n"
+#~ "Dictionary applet"
+#~ msgstr ""
+#~ "V cestě existuje soubor se stejným názvem.\n"
+#~ "Měli byste soubor přesunout a spusti aplet\n"
+#~ "Slovník znovu"
+
+#~ msgid "%d definitions found"
+#~ msgstr "Nalezeno %d definic"
