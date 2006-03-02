@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-21 02:05+0100\n"
-"PO-Revision-Date: 2006-02-21 02:26+0100\n"
+"POT-Creation-Date: 2006-03-02 06:58+0100\n"
+"PO-Revision-Date: 2006-03-02 14:09+0100\n"
 "Last-Translator: Слободан Д. Средојевић <slobo@akrep.be>\n"
 "Language-Team: Serbian (sr) <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
@@ -479,12 +479,12 @@ msgid "Cl_ear"
 msgstr "Очи_сти"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:2
-#: ../gnome-dictionary/src/gdict-window.c:838 ../logview/logview.c:116
+#: ../gnome-dictionary/src/gdict-window.c:839 ../logview/logview.c:116
 msgid "_About"
 msgstr "_О програму"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:3
-#: ../gnome-dictionary/src/gdict-window.c:798 ../logview/logview.c:88
+#: ../gnome-dictionary/src/gdict-window.c:799 ../logview/logview.c:88
 msgid "_Help"
 msgstr "_Помоћ"
 
@@ -493,7 +493,7 @@ msgid "_Look Up Selected Text"
 msgstr "_Пронађи одабрани текст..."
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:5
-#: ../gnome-dictionary/src/gdict-window.c:822
+#: ../gnome-dictionary/src/gdict-window.c:823
 msgid "_Preferences"
 msgstr "По_ставке"
 
@@ -507,8 +507,8 @@ msgstr "_Сачувај"
 
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.h:1
 #: ../gnome-dictionary/src/gdict-about.c:98
-#: ../gnome-dictionary/src/gdict-app.c:409
-#: ../gnome-dictionary/src/gdict-window.c:1203
+#: ../gnome-dictionary/src/gdict-app.c:468
+#: ../gnome-dictionary/src/gdict-window.c:1204
 msgid "Dictionary"
 msgstr "Речник"
 
@@ -663,7 +663,7 @@ msgstr "И_ме рачунара:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
 #: ../gnome-dictionary/src/gdict-applet.c:230
-#: ../gnome-dictionary/src/gdict-window.c:594
+#: ../gnome-dictionary/src/gdict-window.c:595
 msgid "Print"
 msgstr "Штампај"
 
@@ -991,7 +991,7 @@ msgid "The filename used by this dictionary source"
 msgstr "Датотека коју користи овај извор речи"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:232
-#: ../gsearchtool/gsearchtool.c:2475
+#: ../gsearchtool/gsearchtool.c:2474
 msgid "Name"
 msgstr "Име"
 
@@ -1097,26 +1097,11 @@ msgstr "Пронађи речи у речницима"
 msgid "Unable to open the application icon: %s"
 msgstr "Не могу да отворим икону програма: %s"
 
-#: ../gnome-dictionary/src/gdict-app.c:118
-#, c-format
-msgid ""
-"Unable to create the data directory '%s': there already is a file with the "
-"same name.  You should move the file and re-run gnome-dictionary."
-msgstr ""
-"Не могу да направим директоријум са подацима „%s“ јер већ постоји нека датотека "
-"са истим именом. Треба да уклоните ту датотеку и поново покренете Гномов "
-"речник."
-
-#. Translators: the first is the file name, the second is
-#. * the error message
-#: ../gnome-dictionary/src/gdict-app.c:130
-msgid "Unable to create the data directory '%s': %s"
-msgstr "Не могу да направим директоријум „%s“ за податке: %s"
-
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: ../gnome-dictionary/src/gdict-app.c:249
+#: ../gnome-dictionary/src/gdict-app.c:213
+#, c-format
 msgid ""
 "Definition for '%s'\n"
 "  From '%s':\n"
@@ -1128,20 +1113,20 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:263
+#: ../gnome-dictionary/src/gdict-app.c:227
 #, c-format
 msgid "Error: %s\n"
 msgstr "Грешка: %s\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:289
+#: ../gnome-dictionary/src/gdict-app.c:253
 msgid "See gnome-dictionary --help for usage\n"
 msgstr "За употребу погледати gnome-dictionary --help\n"
 
-#: ../gnome-dictionary/src/gdict-app.c:302
+#: ../gnome-dictionary/src/gdict-app.c:266
 msgid "Unable to find a suitable dictionary source"
 msgstr "Не могу да пронађем подесан извор речи"
 
-#: ../gnome-dictionary/src/gdict-app.c:336
+#: ../gnome-dictionary/src/gdict-app.c:300
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
@@ -1150,59 +1135,73 @@ msgstr ""
 "Грешка при претрази дефиниције за „%s“:\n"
 "%s"
 
-#: ../gnome-dictionary/src/gdict-app.c:368
+#: ../gnome-dictionary/src/gdict-app.c:345
+#: ../gnome-dictionary/src/gdict-applet.c:1398
+#, c-format
+msgid "Unable to rename file '%s' to '%s': %s"
+msgstr "Не могу да преименујем датотеку „%s“ у „%s“: %s"
+
+#: ../gnome-dictionary/src/gdict-app.c:369
+#: ../gnome-dictionary/src/gdict-app.c:392
+#: ../gnome-dictionary/src/gdict-applet.c:1422
+#: ../gnome-dictionary/src/gdict-applet.c:1445
+#, c-format
+msgid "Unable to create the data directory '%s': %s"
+msgstr "Не могу да направим директоријум „%s“ за податке: %s"
+
+#: ../gnome-dictionary/src/gdict-app.c:427
 msgid "Words to look up"
 msgstr "Речи које тражите"
 
-#: ../gnome-dictionary/src/gdict-app.c:368
+#: ../gnome-dictionary/src/gdict-app.c:427
 msgid "word"
 msgstr "реч"
 
-#: ../gnome-dictionary/src/gdict-app.c:370
+#: ../gnome-dictionary/src/gdict-app.c:429
 msgid "Dictionary source to use"
 msgstr "Извор речи који се користи"
 
-#: ../gnome-dictionary/src/gdict-app.c:370
+#: ../gnome-dictionary/src/gdict-app.c:429
 msgid "source"
 msgstr "извор"
 
-#: ../gnome-dictionary/src/gdict-app.c:372
+#: ../gnome-dictionary/src/gdict-app.c:431
 msgid "Show available dictionary sources"
 msgstr "Прикажи доступне изворе речи"
 
-#: ../gnome-dictionary/src/gdict-app.c:374
+#: ../gnome-dictionary/src/gdict-app.c:433
 msgid "Print result to the console"
 msgstr "Одштампај резултат у конзоли"
 
-#: ../gnome-dictionary/src/gdict-app.c:376
+#: ../gnome-dictionary/src/gdict-app.c:435
 msgid "Database to use"
 msgstr "База података која се користи"
 
 #. create the new option context
-#: ../gnome-dictionary/src/gdict-app.c:392
+#: ../gnome-dictionary/src/gdict-app.c:451
 msgid " - Look up words in dictionaries"
 msgstr " - Претрага речи у речницима"
 
-#: ../gnome-dictionary/src/gdict-app.c:396
+#: ../gnome-dictionary/src/gdict-app.c:455
 msgid "Dictionary and spelling tool"
 msgstr "Речник и алат за срицање речи"
 
-#: ../gnome-dictionary/src/gdict-app.c:397
+#: ../gnome-dictionary/src/gdict-app.c:456
 msgid "Show Dictionary options"
 msgstr "Прикажи додатне могућности речника"
 
 #: ../gnome-dictionary/src/gdict-applet.c:244
-#: ../gnome-dictionary/src/gdict-window.c:539
+#: ../gnome-dictionary/src/gdict-window.c:540
 msgid "Save a Copy"
 msgstr "Сачувај један примерак"
 
 #: ../gnome-dictionary/src/gdict-applet.c:254
-#: ../gnome-dictionary/src/gdict-window.c:549
+#: ../gnome-dictionary/src/gdict-window.c:550
 msgid "Untitled document"
 msgstr "Неименован документ"
 
 #: ../gnome-dictionary/src/gdict-applet.c:275
-#: ../gnome-dictionary/src/gdict-window.c:570
+#: ../gnome-dictionary/src/gdict-window.c:571
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Грешка приликом уписа на „%s“"
@@ -1271,64 +1270,48 @@ msgstr "Поставке"
 #: ../gnome-dictionary/src/gdict-applet.c:758
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:471
 #: ../gnome-dictionary/src/gdict-source-dialog.c:324
-#: ../gnome-dictionary/src/gdict-window.c:760
+#: ../gnome-dictionary/src/gdict-window.c:761
 msgid "There was an error while displaying help"
 msgstr "Дошло је до грешке при приказивању помоћи"
 
 #: ../gnome-dictionary/src/gdict-applet.c:917
-#: ../gnome-dictionary/src/gdict-window.c:269
+#: ../gnome-dictionary/src/gdict-window.c:270
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Није доступан извор речи по имену „%s“"
 
 #: ../gnome-dictionary/src/gdict-applet.c:921
-#: ../gnome-dictionary/src/gdict-window.c:273
+#: ../gnome-dictionary/src/gdict-window.c:274
 msgid "Unable to find dictionary source"
 msgstr "Не могу да пронађем извор речника"
 
 #: ../gnome-dictionary/src/gdict-applet.c:937
-#: ../gnome-dictionary/src/gdict-window.c:289
+#: ../gnome-dictionary/src/gdict-window.c:290
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Није доступан контекст за извор „%s“"
 
 #: ../gnome-dictionary/src/gdict-applet.c:941
-#: ../gnome-dictionary/src/gdict-window.c:293
+#: ../gnome-dictionary/src/gdict-window.c:294
 msgid "Unable to create a context"
 msgstr "Не могу да образујем контекст"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1215
-#: ../gnome-dictionary/src/gdict-applet.c:1232
-#, c-format
-msgid "Unable to create the data directory '%s'"
-msgstr "Не могу да направим директоријум за податке „%s“"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1216
-msgid ""
-"There is a file with the same name in the path.\n"
-"You should move the file and re-run the\n"
-"Dictionary applet"
-msgstr ""
-"На тој путањи постоји датотека са истим именом.\n"
-"Треба да уклоните ту датотеку и поново покренете\n"
-"програмче Речника."
-
-#: ../gnome-dictionary/src/gdict-applet.c:1252
+#: ../gnome-dictionary/src/gdict-applet.c:1210
 msgid "Unable to load the applet icon"
 msgstr "Не могу да учитам икону програмчета"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1281
-#: ../gnome-dictionary/src/gdict-window.c:1312
+#: ../gnome-dictionary/src/gdict-applet.c:1239
+#: ../gnome-dictionary/src/gdict-window.c:1313
 msgid "Unable to connect to GConf"
 msgstr "Не могу да се повежем са базом подешавања"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1296
-#: ../gnome-dictionary/src/gdict-window.c:1328
+#: ../gnome-dictionary/src/gdict-applet.c:1254
+#: ../gnome-dictionary/src/gdict-window.c:1329
 msgid "Unable to get notification for preferences"
 msgstr "Не могу добити обавештење за поставке"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1311
-#: ../gnome-dictionary/src/gdict-window.c:1344
+#: ../gnome-dictionary/src/gdict-applet.c:1269
+#: ../gnome-dictionary/src/gdict-window.c:1345
 msgid "Unable to get notification for the document font"
 msgstr "Не могу добити обавештење за словни лик за документа"
 
@@ -1385,121 +1368,119 @@ msgid "Searching for '%s'..."
 msgstr "Тражим „%s“..."
 
 #: ../gnome-dictionary/src/gdict-window.c:199
-#: ../gnome-dictionary/src/gdict-window.c:220
+#: ../gnome-dictionary/src/gdict-window.c:221
 msgid "No definitions found"
 msgstr "Није пронађена ниједна дефиниција"
 
 #: ../gnome-dictionary/src/gdict-window.c:201
-msgid "A definition found"
-msgstr "Пронађена је дефиниција"
-
-# bug(slobo): plural-form
-#: ../gnome-dictionary/src/gdict-window.c:203
 #, c-format
-msgid "%d definitions found"
-msgstr "Број пронађених дефиниција: %d"
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "Пронађена је %d дефиниција"
+msgstr[1] "Пронађене су %d дефиниције"
+msgstr[2] "Пронађено је %d дефиниција"
 
-#: ../gnome-dictionary/src/gdict-window.c:361
+#: ../gnome-dictionary/src/gdict-window.c:362
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Речник"
 
-#: ../gnome-dictionary/src/gdict-window.c:679
+#: ../gnome-dictionary/src/gdict-window.c:680
 msgid "Dictionary Preferences"
 msgstr "Поставке речника"
 
-#: ../gnome-dictionary/src/gdict-window.c:795
+#: ../gnome-dictionary/src/gdict-window.c:796
 msgid "_File"
 msgstr "_Датотека"
 
-#: ../gnome-dictionary/src/gdict-window.c:796 ../logview/logview.c:86
+#: ../gnome-dictionary/src/gdict-window.c:797 ../logview/logview.c:86
 msgid "_Edit"
 msgstr "_Уређивање"
 
-#: ../gnome-dictionary/src/gdict-window.c:797
+#: ../gnome-dictionary/src/gdict-window.c:798
 msgid "_Go"
 msgstr "_Иди"
 
 #. File menu
-#: ../gnome-dictionary/src/gdict-window.c:801
+#: ../gnome-dictionary/src/gdict-window.c:802
 msgid "_New"
 msgstr "_Нова"
 
-#: ../gnome-dictionary/src/gdict-window.c:802
+#: ../gnome-dictionary/src/gdict-window.c:803
 msgid "New look up"
 msgstr "Нова претрага"
 
-#: ../gnome-dictionary/src/gdict-window.c:803
+#: ../gnome-dictionary/src/gdict-window.c:804
 msgid "_Save a Copy..."
 msgstr "Сачу_вај примерак..."
 
-#: ../gnome-dictionary/src/gdict-window.c:805
+#: ../gnome-dictionary/src/gdict-window.c:806
 msgid "_Print..."
 msgstr "_Штампај..."
 
-#: ../gnome-dictionary/src/gdict-window.c:806
+#: ../gnome-dictionary/src/gdict-window.c:807
 msgid "Print this document"
 msgstr "Штампај овај документ"
 
-#: ../gnome-dictionary/src/gdict-window.c:813 ../logview/logview.c:99
+#: ../gnome-dictionary/src/gdict-window.c:814 ../logview/logview.c:99
 msgid "Select _All"
 msgstr "И_забери све"
 
-#: ../gnome-dictionary/src/gdict-window.c:816
+#: ../gnome-dictionary/src/gdict-window.c:817
 msgid "Find a word or phrase in the document"
 msgstr "Пронађи реч или фразу у документу"
 
-#: ../gnome-dictionary/src/gdict-window.c:818
+#: ../gnome-dictionary/src/gdict-window.c:819
 msgid "Find Ne_xt"
 msgstr "Тражи _следеће"
 
-#: ../gnome-dictionary/src/gdict-window.c:820
+#: ../gnome-dictionary/src/gdict-window.c:821
 msgid "Find Pre_vious"
 msgstr "Тражи прет_ходни"
 
 #. Go menu
-#: ../gnome-dictionary/src/gdict-window.c:826
+#: ../gnome-dictionary/src/gdict-window.c:827
 msgid "_Previous Definition"
 msgstr "Претхо_дна дефиниција"
 
-#: ../gnome-dictionary/src/gdict-window.c:827
+#: ../gnome-dictionary/src/gdict-window.c:828
 msgid "Go to the previous definition"
 msgstr "Иди на претходну дефиницију"
 
-#: ../gnome-dictionary/src/gdict-window.c:828
+#: ../gnome-dictionary/src/gdict-window.c:829
 msgid "_Next Definition"
 msgstr "С_ледећа дефиниција"
 
-#: ../gnome-dictionary/src/gdict-window.c:829
+#: ../gnome-dictionary/src/gdict-window.c:830
 msgid "Go to the next definition"
 msgstr "Иди на следећу дефиницију"
 
-#: ../gnome-dictionary/src/gdict-window.c:830
+#: ../gnome-dictionary/src/gdict-window.c:831
 msgid "_First Definition"
 msgstr "_Прва дефиниција"
 
-#: ../gnome-dictionary/src/gdict-window.c:831
+#: ../gnome-dictionary/src/gdict-window.c:832
 msgid "Go to the first definition"
 msgstr "Иди на прву дефиницију"
 
-#: ../gnome-dictionary/src/gdict-window.c:832
+#: ../gnome-dictionary/src/gdict-window.c:833
 msgid "_Last Definition"
 msgstr "Пос_ледња дефиниција"
 
-#: ../gnome-dictionary/src/gdict-window.c:833
+#: ../gnome-dictionary/src/gdict-window.c:834
 msgid "Go to the last definition"
 msgstr "Иди на последњу дефиницију"
 
 #. Help menu
-#: ../gnome-dictionary/src/gdict-window.c:836 ../logview/logview.c:114
+#: ../gnome-dictionary/src/gdict-window.c:837 ../logview/logview.c:114
 msgid "_Contents"
 msgstr "_Садржај"
 
-#: ../gnome-dictionary/src/gdict-window.c:1125
+#: ../gnome-dictionary/src/gdict-window.c:1126
 msgid "Look _up:"
 msgstr "_Пронађи:"
 
-#: ../gnome-dictionary/src/gdict-window.c:1368
+#: ../gnome-dictionary/src/gdict-window.c:1369
 msgid "Unable to load the application icon"
 msgstr "Не могу да учитам икону програма"
 
@@ -2276,37 +2257,37 @@ msgstr "Ба_ци у смеће"
 msgid "_Save Results As..."
 msgstr "_Сачувај резултате као..."
 
-#: ../gsearchtool/gsearchtool.c:391
+#: ../gsearchtool/gsearchtool.c:390
 msgid "A locate database has probably not been created."
 msgstr "База за тражење вероватно није направљена."
 
-#: ../gsearchtool/gsearchtool.c:493
+#: ../gsearchtool/gsearchtool.c:492
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "Неуспешно претварање скупа знакова за „%s“"
 
-#: ../gsearchtool/gsearchtool.c:517
+#: ../gsearchtool/gsearchtool.c:516
 msgid "Searching..."
 msgstr "Тражим..."
 
-#: ../gsearchtool/gsearchtool.c:517 ../gsearchtool/gsearchtool.c:1022
-#: ../gsearchtool/gsearchtool.c:1300 ../gsearchtool/gsearchtool.c:3146
+#: ../gsearchtool/gsearchtool.c:516 ../gsearchtool/gsearchtool.c:1021
+#: ../gsearchtool/gsearchtool.c:1299 ../gsearchtool/gsearchtool.c:3155
 msgid "Search for Files"
 msgstr "Потражи датотеке"
 
-#: ../gsearchtool/gsearchtool.c:968 ../gsearchtool/gsearchtool.c:997
+#: ../gsearchtool/gsearchtool.c:967 ../gsearchtool/gsearchtool.c:996
 msgid "No files found"
 msgstr "Ниједна датотека није нађена"
 
-#: ../gsearchtool/gsearchtool.c:990
+#: ../gsearchtool/gsearchtool.c:989
 msgid "(stopped)"
 msgstr "(заустављен)"
 
-#: ../gsearchtool/gsearchtool.c:996
+#: ../gsearchtool/gsearchtool.c:995
 msgid "No Files Found"
 msgstr "Ниједна датотека није нађена"
 
-#: ../gsearchtool/gsearchtool.c:1001
+#: ../gsearchtool/gsearchtool.c:1000
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
@@ -2314,7 +2295,7 @@ msgstr[0] "Нађена је %d датотека"
 msgstr[1] "Нађене су %d датотеке"
 msgstr[2] "Нађено је %d датотека"
 
-#: ../gsearchtool/gsearchtool.c:1005 ../gsearchtool/gsearchtool.c:1043
+#: ../gsearchtool/gsearchtool.c:1004 ../gsearchtool/gsearchtool.c:1042
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
@@ -2323,47 +2304,47 @@ msgstr[1] "Нађене су %d датотеке"
 msgstr[2] "Нађено је %d датотека"
 
 # bug: this is probably something about wrong signal
-#: ../gsearchtool/gsearchtool.c:1134
+#: ../gsearchtool/gsearchtool.c:1133
 msgid "Entry changed called for a non entry option!"
 msgstr "Позвана је промена уноса за опцију која се не тиче уноса!"
 
-#: ../gsearchtool/gsearchtool.c:1385
+#: ../gsearchtool/gsearchtool.c:1384
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Постави текст за опцију „име садржи“"
 
-#: ../gsearchtool/gsearchtool.c:1386
+#: ../gsearchtool/gsearchtool.c:1385
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "Постави текст за опцију „тражи у фасцикли“"
 
-#: ../gsearchtool/gsearchtool.c:1387
+#: ../gsearchtool/gsearchtool.c:1386
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 "Поређај датотеке према неком од следећих: по имену, фасцикли, величини, "
 "врсти, или датуму"
 
-#: ../gsearchtool/gsearchtool.c:1388
+#: ../gsearchtool/gsearchtool.c:1387
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Користи опадајући поредак, уобичајено је растући"
 
-#: ../gsearchtool/gsearchtool.c:1389
+#: ../gsearchtool/gsearchtool.c:1388
 msgid "Automatically start a search"
 msgstr "Сам започни претрагу"
 
-#: ../gsearchtool/gsearchtool.c:1395
+#: ../gsearchtool/gsearchtool.c:1394
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Изабери правило претраге „%s“"
 
-#: ../gsearchtool/gsearchtool.c:1398
+#: ../gsearchtool/gsearchtool.c:1397
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Изабери и постави правило претраге „%s“"
 
-#: ../gsearchtool/gsearchtool.c:1505
+#: ../gsearchtool/gsearchtool.c:1504
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Предата је неисправна опција аргументу наредбе „sortby“."
 
-#: ../gsearchtool/gsearchtool.c:1803
+#: ../gsearchtool/gsearchtool.c:1802
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -2371,7 +2352,7 @@ msgstr ""
 "\n"
 "... Превише грешака за приказ ..."
 
-#: ../gsearchtool/gsearchtool.c:1817
+#: ../gsearchtool/gsearchtool.c:1816
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
@@ -2379,11 +2360,11 @@ msgstr ""
 "Резултати претраге могу бити неисправни.  Дошло је до грешака при овој "
 "претрази."
 
-#: ../gsearchtool/gsearchtool.c:1829 ../gsearchtool/gsearchtool.c:1873
+#: ../gsearchtool/gsearchtool.c:1828 ../gsearchtool/gsearchtool.c:1872
 msgid "Show more _details"
 msgstr "Прикажи још _детаља"
 
-#: ../gsearchtool/gsearchtool.c:1859
+#: ../gsearchtool/gsearchtool.c:1858
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -2391,24 +2372,24 @@ msgstr ""
 "Резултати претраге могу бити застарели или неисправни.  Желите ли да "
 "искључите могућност брзе претраге?"
 
-#: ../gsearchtool/gsearchtool.c:1884
+#: ../gsearchtool/gsearchtool.c:1883
 msgid "Disable _Quick Search"
 msgstr "Искључи _брзу претрагу"
 
-#: ../gsearchtool/gsearchtool.c:1911
+#: ../gsearchtool/gsearchtool.c:1910
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "Неуспешно постављање групног ИБ-а процеса садржаног %d: %s.\n"
 
-#: ../gsearchtool/gsearchtool.c:1936
+#: ../gsearchtool/gsearchtool.c:1935
 msgid "Error parsing the search command."
 msgstr "Грешка приликом обраде наредбе за претрагу."
 
-#: ../gsearchtool/gsearchtool.c:1969
+#: ../gsearchtool/gsearchtool.c:1968
 msgid "Error running the search command."
 msgstr "Грешка приликом покретања наредбе за претрагу."
 
-#: ../gsearchtool/gsearchtool.c:2084
+#: ../gsearchtool/gsearchtool.c:2083
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Унесите текстуалну вредност за правило претраге „%s“."
@@ -2416,124 +2397,124 @@ msgstr "Унесите текстуалну вредност за правило
 # bug: this won't work
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2089
+#: ../gsearchtool/gsearchtool.c:2088
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "„%s“ као %s"
 
 # bug: this won't work because of declensions
-#: ../gsearchtool/gsearchtool.c:2091
+#: ../gsearchtool/gsearchtool.c:2090
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Унесите вредност као %s за правило претраге „%s“."
 
-#: ../gsearchtool/gsearchtool.c:2150
+#: ../gsearchtool/gsearchtool.c:2149
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Уклони „%s“"
 
-#: ../gsearchtool/gsearchtool.c:2151
+#: ../gsearchtool/gsearchtool.c:2150
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Притисните да уклоните правило претраге „%s“."
 
-#: ../gsearchtool/gsearchtool.c:2244
+#: ../gsearchtool/gsearchtool.c:2243
 msgid "A_vailable options:"
 msgstr "Доступна _правила:"
 
-#: ../gsearchtool/gsearchtool.c:2273
+#: ../gsearchtool/gsearchtool.c:2272
 msgid "Available options"
 msgstr "Доступна правила"
 
-#: ../gsearchtool/gsearchtool.c:2274
+#: ../gsearchtool/gsearchtool.c:2273
 msgid "Select a search option from the drop-down list."
 msgstr "Изаберите правило претраге из падајућег списка."
 
-#: ../gsearchtool/gsearchtool.c:2286
+#: ../gsearchtool/gsearchtool.c:2285
 msgid "Add search option"
 msgstr "Додај правило претраге"
 
-#: ../gsearchtool/gsearchtool.c:2287
+#: ../gsearchtool/gsearchtool.c:2286
 msgid "Click to add the selected available search option."
 msgstr "Притисните да додате изабрано доступно правило претраге."
 
-#: ../gsearchtool/gsearchtool.c:2376
+#: ../gsearchtool/gsearchtool.c:2375
 msgid "S_earch results:"
 msgstr "Р_езултати претраге:"
 
-#: ../gsearchtool/gsearchtool.c:2415
+#: ../gsearchtool/gsearchtool.c:2414
 msgid "List View"
 msgstr "Преглед у списку"
 
-#: ../gsearchtool/gsearchtool.c:2499
+#: ../gsearchtool/gsearchtool.c:2498
 msgid "Folder"
 msgstr "Фасцикла"
 
-#: ../gsearchtool/gsearchtool.c:2511
+#: ../gsearchtool/gsearchtool.c:2510
 msgid "Size"
 msgstr "Величина"
 
-#: ../gsearchtool/gsearchtool.c:2522
+#: ../gsearchtool/gsearchtool.c:2521
 msgid "Type"
 msgstr "Тип"
 
-#: ../gsearchtool/gsearchtool.c:2533
+#: ../gsearchtool/gsearchtool.c:2532
 msgid "Date Modified"
 msgstr "Датум и време измене"
 
-#: ../gsearchtool/gsearchtool.c:2935
+#: ../gsearchtool/gsearchtool.c:2934
 msgid "_Name contains:"
 msgstr "_Име садржи:"
 
-#: ../gsearchtool/gsearchtool.c:2949 ../gsearchtool/gsearchtool.c:2950
+#: ../gsearchtool/gsearchtool.c:2948 ../gsearchtool/gsearchtool.c:2949
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "Унесите име или део имена датотеке са или без пречица."
 
-#: ../gsearchtool/gsearchtool.c:2950
+#: ../gsearchtool/gsearchtool.c:2949
 msgid "Name contains"
 msgstr "Име садржи"
 
-#: ../gsearchtool/gsearchtool.c:2956
+#: ../gsearchtool/gsearchtool.c:2955
 msgid "_Look in folder:"
 msgstr "_Тражите у фасцикли:"
 
-#: ../gsearchtool/gsearchtool.c:2962
+#: ../gsearchtool/gsearchtool.c:2961
 msgid "Browse"
 msgstr "Разгледај"
 
-#: ../gsearchtool/gsearchtool.c:2967
+#: ../gsearchtool/gsearchtool.c:2966
 msgid "Look in folder"
 msgstr "Тражи у фасцикли"
 
-#: ../gsearchtool/gsearchtool.c:2967
+#: ../gsearchtool/gsearchtool.c:2966
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "Изаберите фасциклу или уређај од којег желите почети претрагу."
 
-#: ../gsearchtool/gsearchtool.c:2978
+#: ../gsearchtool/gsearchtool.c:2977
 msgid "Select more _options"
 msgstr "Прикажи још _опција"
 
-#: ../gsearchtool/gsearchtool.c:2987
+#: ../gsearchtool/gsearchtool.c:2986
 msgid "Select more options"
 msgstr "Прикажи још опција"
 
-#: ../gsearchtool/gsearchtool.c:2987
+#: ../gsearchtool/gsearchtool.c:2986
 msgid "Click to expand or collapse the list of available options."
 msgstr "Притисните да разгранате или скупите списак доступних правила."
 
-#: ../gsearchtool/gsearchtool.c:3011
+#: ../gsearchtool/gsearchtool.c:3010
 msgid "Click to display the help manual."
 msgstr "Притисните да прикажете упутство."
 
-#: ../gsearchtool/gsearchtool.c:3019
+#: ../gsearchtool/gsearchtool.c:3018
 msgid "Click to close \"Search for Files\"."
 msgstr "Притисните да затворите „Тражење датотека“."
 
-#: ../gsearchtool/gsearchtool.c:3045
+#: ../gsearchtool/gsearchtool.c:3044
 msgid "Click to perform a search."
 msgstr "Притисните да почнете претрагу."
 
-#: ../gsearchtool/gsearchtool.c:3046
+#: ../gsearchtool/gsearchtool.c:3045
 msgid "Click to stop a search."
 msgstr "Притисните да зауставите претрагу."
 
@@ -2893,6 +2874,30 @@ msgstr "Надзор датотека није подржан на овом си
 #: ../logview/monitor.c:88
 msgid "Gnome-VFS Error.\n"
 msgstr "Gnome-VFS грешка.\n"
+
+#~ msgid ""
+#~ "Unable to create the data directory '%s': there already is a file with "
+#~ "the same name.  You should move the file and re-run gnome-dictionary."
+#~ msgstr ""
+#~ "Не могу да направим директоријум са подацима „%s“ јер већ постоји нека "
+#~ "датотека са истим именом. Треба да уклоните ту датотеку и поново "
+#~ "покренете Гномов речник."
+
+#~ msgid "Unable to create the data directory '%s'"
+#~ msgstr "Не могу да направим директоријум за податке „%s“"
+
+#~ msgid ""
+#~ "There is a file with the same name in the path.\n"
+#~ "You should move the file and re-run the\n"
+#~ "Dictionary applet"
+#~ msgstr ""
+#~ "На тој путањи постоји датотека са истим именом.\n"
+#~ "Треба да уклоните ту датотеку и поново покренете\n"
+#~ "програмче Речника."
+
+# bug(slobo): plural-form
+#~ msgid "%d definitions found"
+#~ msgstr "Број пронађених дефиниција: %d"
 
 #~ msgid ""
 #~ "Definitions for \"%s\":\n"
