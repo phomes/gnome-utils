@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils 2.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-04 15:01+0100\n"
-"PO-Revision-Date: 2006-03-02 23:14+0200\n"
+"PO-Revision-Date: 2006-03-10 22:47+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -882,11 +882,11 @@ msgstr "Definitsioonikasti jaoks kasutatav kirjatüüp"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:731
 msgid "Emphasys Color"
-msgstr ""
+msgstr "Rõhutamise värvus"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:732
 msgid "Color of emphasised text"
-msgstr ""
+msgstr "Rõhutatud teksti värvus"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:737
 msgid "Link Color"
@@ -1107,12 +1107,14 @@ msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
 msgstr ""
+"Viga \"%s\" definitsiooni otsimisel:\n"
+"%s"
 
 #: ../gnome-dictionary/src/gdict-app.c:345
 #: ../gnome-dictionary/src/gdict-applet.c:1422
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to rename file '%s' to '%s': %s"
-msgstr "Seadmele %s pole võimalik kirjutada"
+msgstr "Faili '%s' pole võimalik nimega '%s' nimetada: %s"
 
 #: ../gnome-dictionary/src/gdict-app.c:369
 #: ../gnome-dictionary/src/gdict-app.c:392
@@ -1311,7 +1313,7 @@ msgstr "Uue sõnaraamatuallika lisamine"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:646
 msgid "Remove the currently selected dictionary source"
-msgstr ""
+msgstr "Käesolevalt valitud sõnaraamatuallika eemaldamine"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:661
 msgid "Set the font used for printing the definitions"
@@ -1530,31 +1532,27 @@ msgstr "Kuvatõmmise võtmine peale määratud viivitust [sekundites]"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:441
 msgid "seconds"
-msgstr ""
+msgstr "sekundit"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:442
-#, fuzzy
 msgid "Effect to add to the border"
-msgstr "Aknaraamile lisatav efekt"
+msgstr "Raamile lisatav efekt"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:442
-#, fuzzy
 msgid "effect"
-msgstr "Raamiefekt"
+msgstr "efekt"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:452
 msgid "Options for Screenshot"
-msgstr ""
+msgstr "Kuvatõmmise valikud"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:453
-#, fuzzy
 msgid "Show Screenshot options"
-msgstr "Kuvatõmmis.png"
+msgstr "Kuvatõmmise valikute näitamine"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:457
-#, fuzzy
 msgid "Take a picture of the screen"
-msgstr "Tõmmise tegemine aknast, mitte tervest töölauast"
+msgstr "Tõmmise tegemine ekraanist"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:2
 msgid "<b>Options</b>"
