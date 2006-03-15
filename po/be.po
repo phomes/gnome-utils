@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-13 14:53+0100\n"
-"PO-Revision-Date: 2006-03-14 11:18+0200\n"
+"POT-Creation-Date: 2006-03-15 06:53+0100\n"
+"PO-Revision-Date: 2006-03-15 14:01+0200\n"
 "Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../gfloppy/gfloppy.desktop.in.h:1 ../gfloppy/src/gfloppy2.glade.h:9
 msgid "Floppy Formatter"
@@ -438,10 +438,8 @@ msgid ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
 msgstr ""
-"Гнуткі дыск быў адфарматаваны, але быў адшуканы і пазначаны <b>%d пашкоджаны "
-"блёк</b> (з %d)."
-"Гнуткі дыск быў адфарматаваны, але былі адшуканы і пазначаны <b>%d "
-"пашкоджаных блёка</b> (з %d)."
+"Гнуткі дыск быў адфарматаваны, але быў адшуканы і пазначаны <b>%d пашкоджаны блёк</b> (з %d)."
+"Гнуткі дыск быў адфарматаваны, але былі адшуканы і пазначаны <b>%d пашкоджаных блёка</b> (з %d)"
 
 #: ../gfloppy/src/progress.c:129
 msgid "Floppy formatted successfully."
@@ -518,15 +516,14 @@ msgid "Port used to connect to server (Deprecated)"
 msgstr "Порт, які для далучэньня да паслужніка (асуджаны)"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:3
-#, fuzzy
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE. This key is "
 "deprecated and no longer in use."
 msgstr ""
-"Пазначыць, ці выкарыстоўваецца інтэлектуальны пошук. Ключ залежыць ад таго, "
-"ці падтрымлівае паслужнік гэты парамэтар. Зыходным значэньнем зьяўляецца "
-"ІСЬЦІНА (TRUE)"
+"Вызначае выкарыстаньне разумнага пошуку. Ключ залежыць ад таго, "
+"ці падтрымлівае паслужнік гэты парамэтар. Прадвызначане значэньне - TRUE (ісьціна). "
+"Гэты ключ асуджаны і больш не выкарыстоўваецца."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:4
 msgid "The default database to use"
@@ -545,14 +542,13 @@ msgid "The default width of the application window"
 msgstr "Прадвызначаная шырыня вакна дастасаваньня"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:8
-#, fuzzy
 msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers. This key is deprecated and "
 "no longer in use."
 msgstr ""
-"Паслужнік слоўніка для далучэньня. Зыходным паслужнікам зьяўляюцца dict.org. "
-"Глядзіце http://www.dict.org для падрабязнасьцяў па іншых паслужніках."
+"Назва вузла да якога далучацца. Прадвызначаны вузел - dict.org. Гл. "
+"http://www.dict.org·для больш падрабязных зьвестак. Гэты ключ асуджаны і больш не ўжваецца."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
 msgid "The font to be used when printing"
@@ -563,15 +559,12 @@ msgid "The font to be used when printing a definition."
 msgstr "Шрыфт, які будзе ўжыты пад час друку вызначэньня."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:11
-#, fuzzy
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
-"Назва індывідуальнае базы даньняў на паслужніку. ! значыць што праграма "
-"gnome-dictionary мусіць зьдзяйсьняць пошук ува ўсіх даступных базах даньняў "
-"на паслужніку"
+"Назва індывідуальнае базы даных ці мэта-базы даных на паслужніку. Выклічнік \"!\" азначае, што праграма пошук мусіць адбывацца па ўсіх базах на паслужніку."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:12
 msgid ""
@@ -592,7 +585,9 @@ msgstr ""
 msgid ""
 "The port number to connect to. The default port is 2628. This key is "
 "deprecated and no longer in use."
-msgstr "Нумар парта для далучэньня. Прадвызначаны порт - 2628. Гэты ключ асуджаны і больш не выкарыстоўваецца."
+msgstr ""
+"Нумар парта для далучэньня. Прадвызначаны порт - 2628. Гэты ключ асуджаны і "
+"больш не выкарыстоўваецца."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:16
 msgid ""
@@ -724,9 +719,9 @@ msgid "The status code as returned by the dictionary server"
 msgstr "Код стану, які вярнуў паслужнік слоўнікаў"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:763
-#, fuzzy, c-format
+#, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Кліент да паслужніка слоўнікаў MIT."
+msgstr "Адсутнічае далучэньне да паслужніка слоўнікаў \"%s:%d\""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1025
 #, c-format
@@ -751,16 +746,18 @@ msgid ""
 msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1159
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr ""
+"Немагчыма зрабіць разбор адказа паслужніка слоўнікаў\n"
+": \"%s\""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1188
-#, fuzzy, c-format
+#, c-format
 msgid "No definitions found for '%s'"
-msgstr "Файлы ня адшуканы"
+msgstr "Вызначэньне слова \"%s\" ня знойдзена"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1203
 #, c-format
@@ -768,9 +765,9 @@ msgid "Invalid database '%s'"
 msgstr "Нерэчаісная база даных \"%s\""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1218
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid strategy '%s'"
-msgstr "Немагчыма стварыць %s"
+msgstr "Нерэчаісная стратэгія \"%s\""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1233
 #, c-format
@@ -783,9 +780,9 @@ msgid "Bad parameters for command '%s'"
 msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1263
-#, fuzzy, c-format
+#, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Базы даных на паслужніке \"%s\" ня знойдзены"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1278
 #, c-format
@@ -793,27 +790,27 @@ msgid "No strategies found on dictionary server at '%s'"
 msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1679
-#, fuzzy, c-format
+#, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "Кліент да паслужніка слоўнікаў MIT."
+msgstr "Збой далучэньня да паслужніка слоўнікаў %s:%d"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1718
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error while reading reply from server:\n"
 "%s"
-msgstr "Памылка пошуку файлаў."
+msgstr ""
+"Памылка чытаньна адказу паслужніка:\n"
+"%s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1791
-#, fuzzy
 msgid "No hostname defined for the dictionary server"
-msgstr "Кліент да паслужніка слоўнікаў MIT."
+msgstr "Ня вызначаны вузел з паслужнікам слоўнікаў"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1827
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1842
-#, fuzzy
 msgid "Unable to create socket"
-msgstr "Немагчыма стварыць %s"
+msgstr "Немагчыма стварыць сокет"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1868
 #, c-format
@@ -821,9 +818,9 @@ msgid "Unable to set the channel as non-blocking: %s"
 msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1883
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Немагчыма далучыцца да паслужніка \"%s:%d\""
 
 #: ../gnome-dictionary/libgdict/gdict-context.c:196
 msgid "Local Only"
@@ -868,9 +865,8 @@ msgid "Database"
 msgstr "База даньняў"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:710
-#, fuzzy
 msgid "The database used to query the GdictContext"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "База даных ужываецца для запытаў GdictContext"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:724
 msgid "Font Name"
@@ -897,29 +893,24 @@ msgid "Color of hyperlinks"
 msgstr "Колер спасылак"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:743
-#, fuzzy
 msgid "Word Color"
-msgstr "Элемэнт слова"
+msgstr "Колер слова"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:744
-#, fuzzy
 msgid "Color of the dictionary word"
-msgstr "Пошук слова ў слоўніку"
+msgstr "Колер слова з слоўніка"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:749
-#, fuzzy
 msgid "Source Color"
-msgstr "Атрымаць квадратны корань"
+msgstr "Колер крыніцы"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:750
-#, fuzzy
 msgid "Color of the dictionary source"
-msgstr "Кліент да паслужніка слоўнікаў MIT."
+msgstr "Колер крыніцы слоўніка"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1041
-#, fuzzy
 msgid "Progress"
-msgstr "Працэс"
+msgstr "Посьпех"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1078
 #, c-format
@@ -944,38 +935,33 @@ msgid "Please wait until the current search ends."
 msgstr "Калі ласка, пачакайце, покуль не завершыцца бягучы пошук."
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1364
-#, fuzzy
 msgid "Error while retrieving the definition"
-msgstr "Памылка пад час выкананьня пазначанага дзеяньня"
+msgstr "Памылка цягам атрыманьня вызначэньня"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:105
 msgid "The GdictContext object bound to this entry"
 msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:120
-#, fuzzy
 msgid "The database to be used to generate the completion list"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "База даных, якая ўжываецца для сьпісу дапаўненьня"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:134
 #: ../gnome-dictionary/libgdict/gdict-source.c:274
-#, fuzzy
 msgid "Strategy"
-msgstr "Стра_тэгія пошуку:"
+msgstr "Стратэгія"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:135
 msgid "The matching strategy to be used to generate the completion list"
 msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:218
-#, fuzzy
 msgid "Filename"
-msgstr "Назва файлу"
+msgstr "Назва файла"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:219
-#, fuzzy
 msgid "The filename used by this dictionary source"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Назва файла, які ўжываецца слоўнікавай крыніцай"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:232
 #: ../gsearchtool/gsearchtool.c:2474
@@ -983,38 +969,32 @@ msgid "Name"
 msgstr "Назва"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:233
-#, fuzzy
 msgid "The display name of this dictonary source"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Бачная назва гэтай слоўнікавай крыніцы"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:246
-#, fuzzy
 msgid "Description"
-msgstr "Апісаньне:"
+msgstr "Апісаньне"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:247
-#, fuzzy
 msgid "The description of this dictionary source"
-msgstr "Апісаньне гэтага запіса."
+msgstr "Апісаньне гэтай слоўнікавай крыніцы"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:261
-#, fuzzy
 msgid "The default database of this dictonary source"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Прадвызначаная база даных гэтай слоўнікавай крыніцы"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:275
-#, fuzzy
 msgid "The default strategy of this dictonary source"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Прадвызначаная стратэгія гэтай слоўнікавай крыніцы"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:288
 msgid "Transport"
 msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:289
-#, fuzzy
 msgid "The transport mechanism used by this dictionary source"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Транспарт, які ўжывае гэтая слоўнікавая крыніца"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:304
 msgid "The GdictContext bound to this source"
@@ -1066,26 +1046,25 @@ msgid "Sources"
 msgstr "Крыніцы"
 
 #: ../gnome-dictionary/libgdict/gdict-source-loader.c:176
-#, fuzzy
 msgid "Dictionary sources found"
-msgstr "Пошук у слоўніку"
+msgstr "Знойдзены крыніцы слоўнікаў"
 
 #. Translator credits
 #: ../gnome-dictionary/src/gdict-about.c:59 ../logview/about.c:47
 msgid "translator-credits"
-msgstr "Vital Khilko <dojlid@mova.org>, 2003."
-"Ales Nyakhaychyk <nab@mail.by>, 2003, 2004, 2006"
+msgstr ""
+"Vital Khilko <dojlid@mova.org>, 2003.Ales Nyakhaychyk <nab@mail.by>, 2003, "
+"2004, 2006"
 
 #: ../gnome-dictionary/src/gdict-about.c:61
 #: ../gnome-dictionary/src/gdict-applet.c:610
-#, fuzzy
 msgid "Look up words in dictionaries"
-msgstr "Пошук слова ў слоўніку"
+msgstr "Пошук слоў у слоўніках"
 
 #: ../gnome-dictionary/src/gdict-about.c:87
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open the application icon: %s"
-msgstr "С_хаваць дастасаваньне"
+msgstr "Немагчыма адчыніць значку дастасаваньня: %s"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -1109,9 +1088,8 @@ msgid "See gnome-dictionary --help for usage\n"
 msgstr ""
 
 #: ../gnome-dictionary/src/gdict-app.c:266
-#, fuzzy
 msgid "Unable to find a suitable dictionary source"
-msgstr "База даньняў на паслужніку, якая мусіць выкарыстоўвацца."
+msgstr "Немагчыма адшукаць крыніцу слоўнікаў, якая падыходзіць"
 
 #: ../gnome-dictionary/src/gdict-app.c:300
 #, c-format
@@ -1122,17 +1100,17 @@ msgstr ""
 
 #: ../gnome-dictionary/src/gdict-app.c:345
 #: ../gnome-dictionary/src/gdict-applet.c:1422
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to rename file '%s' to '%s': %s"
-msgstr "Немагчыма запісаць на прыладу %s"
+msgstr "Немагчыма перайменаваць \"%s\" у \"%s\": %s"
 
 #: ../gnome-dictionary/src/gdict-app.c:369
 #: ../gnome-dictionary/src/gdict-app.c:392
 #: ../gnome-dictionary/src/gdict-applet.c:1446
 #: ../gnome-dictionary/src/gdict-applet.c:1469
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to create the data directory '%s': %s"
-msgstr "Немагчыма правільна стварыць файлавую сыстэму."
+msgstr "Немагчыма стварыць тэчку для даных \"%s\": %s"
 
 #: ../gnome-dictionary/src/gdict-app.c:427
 msgid "Words to look up"
@@ -1277,20 +1255,17 @@ msgstr ""
 
 #: ../gnome-dictionary/src/gdict-applet.c:962
 #: ../gnome-dictionary/src/gdict-window.c:294
-#, fuzzy
 msgid "Unable to create a context"
-msgstr "Немагчыма правільна стварыць файлавую сыстэму."
+msgstr "Немагчыма стварыць кантэкст"
 
 #: ../gnome-dictionary/src/gdict-applet.c:1231
-#, fuzzy
 msgid "Unable to load the applet icon"
-msgstr "Немагчыма правільна стварыць файлавую сыстэму."
+msgstr "Немагчыма загрузіць значку аплета"
 
 #: ../gnome-dictionary/src/gdict-applet.c:1260
 #: ../gnome-dictionary/src/gdict-window.c:1316
-#, fuzzy
 msgid "Unable to connect to GConf"
-msgstr "Немагчыма адкрыць файл часопіса!\n"
+msgstr "Немагчыма далучыцца да GConf"
 
 #: ../gnome-dictionary/src/gdict-applet.c:1275
 #: ../gnome-dictionary/src/gdict-window.c:1332
@@ -1303,9 +1278,8 @@ msgid "Unable to get notification for the document font"
 msgstr ""
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:272
-#, fuzzy
 msgid "Add Dictionary Source"
-msgstr "Паслужнік слоўніка"
+msgstr "Дадаць крыніцу слоўнікаў"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:318
 #, c-format
@@ -1317,19 +1291,17 @@ msgid "This will permanently remove the dictionary source from the list."
 msgstr ""
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:350
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to remove source '%s'"
-msgstr "Немагчыма запісаць на прыладу %s"
+msgstr "Немагчыма выдаліць крыніцу \"%s\""
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:638
-#, fuzzy
 msgid "Add a new dictionary source"
-msgstr "Паслужнік слоўніка"
+msgstr "Даданьне новай крыніцы слоўнікаў"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:646
-#, fuzzy
 msgid "Remove the currently selected dictionary source"
-msgstr "Выдаліць вылучаныя элемэнты"
+msgstr "Выдаленьне вылучанай крыніцы слоўнікаў"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:661
 msgid "Set the font used for printing the definitions"
@@ -1345,25 +1317,22 @@ msgid "Print Preview"
 msgstr ""
 
 #: ../gnome-dictionary/src/gdict-source-dialog.c:276
-#, fuzzy
 msgid "Unable to create a source file"
-msgstr "Немагчыма правільна стварыць файлавую сыстэму."
+msgstr "Немагчыма стварыць зыхоны файл"
 
 #: ../gnome-dictionary/src/gdict-source-dialog.c:295
-#, fuzzy
 msgid "Unable to save source file"
-msgstr "Немагчыма адкрыць файл часопіса!\n"
+msgstr "Немагчыма захаваць зыходны файл"
 
 #: ../gnome-dictionary/src/gdict-window.c:175
-#, fuzzy, c-format
+#, c-format
 msgid "Searching for '%s'..."
-msgstr "Пошук файлаў"
+msgstr "Пошук \"%s\"..."
 
 #: ../gnome-dictionary/src/gdict-window.c:199
 #: ../gnome-dictionary/src/gdict-window.c:221
-#, fuzzy
 msgid "No definitions found"
-msgstr "Файлы ня знойдзены"
+msgstr "Вызначэньне ня знойдзена"
 
 #: ../gnome-dictionary/src/gdict-window.c:201
 #, c-format
@@ -1498,11 +1467,8 @@ msgid "Error loading help"
 msgstr "Памылка загрузкі даведкі"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:87
-#, fuzzy
 msgid "There was an error displaying the help pages for this dialog:"
-msgstr ""
-"Узьнікла памылка адлюстраваньня даведкі: \n"
-"%s"
+msgstr "Узьнікла памылка адлюстраваньня старонак даведкі для гэтага дыялёгу:"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if a specific window is taken
@@ -1576,24 +1542,24 @@ msgstr ""
 
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:2
 msgid "<b>Options</b>"
-msgstr ""
+msgstr "<b>Парамэтры</b>"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:3
 msgid "<b>Preview</b>"
-msgstr ""
+msgstr "<b>Перадпрагляд</b>"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:4
 #: ../gnome-screenshot/gnome-screenshot.glade.h:2
 msgid "Save Screenshot"
-msgstr ""
+msgstr "Захаваньне здымка"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Атрымаць здымак"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Take a screenshot of your desktop"
-msgstr ""
+msgstr "Атрымаць здымак вашага стальца"
 
 #: ../gnome-screenshot/gnome-screenshot.glade.h:3
 msgid "Save in _folder:"
@@ -1605,7 +1571,7 @@ msgstr "_Назва:"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:1
 msgid "Border Effect"
-msgstr ""
+msgstr "Эфэкт межаў"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:2
 msgid ""
@@ -1615,16 +1581,15 @@ msgstr ""
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
 msgid "Include Border"
-msgstr ""
+msgstr "Уключыць межы"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:4
 msgid "Include the window manager border along with the screenshot"
 msgstr ""
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:5
-#, fuzzy
 msgid "Screenshot directory"
-msgstr "Выбярыце сымбаль"
+msgstr "Тэчка здымкаў экрана"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:6
 msgid "The directory the last screenshot was saved in."
@@ -1661,7 +1626,7 @@ msgstr ""
 
 #: ../gnome-screenshot/screenshot-utils.c:610
 msgid "Untitled Window"
-msgstr ""
+msgstr "Безназоўнае вакно"
 
 #: ../gnome-screenshot/screenshot-xfer.c:103
 msgid "Preparing to copy"
@@ -1684,11 +1649,11 @@ msgstr "За_мяніць"
 #: ../gnome-screenshot/screenshot-xfer.c:230
 #, c-format
 msgid "Unknown GnomeVFSXferProgressStatus %d"
-msgstr ""
+msgstr "Невядомы GnomeVFSXferProgressStatus %d"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Find files, folders, and documents on your computer"
-msgstr ""
+msgstr "Шукае файлы, тэчкі і дакумэнты ў вашым кампутары"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search for Files..."
@@ -1696,11 +1661,11 @@ msgstr "Пошук файлаў..."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:1
 msgid "Default Window Height"
-msgstr ""
+msgstr "Прадвызначаная вышыня вакна"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:2
 msgid "Default Window Maximized"
-msgstr ""
+msgstr "Прадвызначане найбольшаньне вакна"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:3
 msgid "Default Window Width"
@@ -1708,7 +1673,7 @@ msgstr "Прадвызначаная шырыня вакна"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:4
 msgid "Disable Quick Search"
-msgstr ""
+msgstr "Адлючыць хуткі пошук"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:5
 msgid "Disable Quick Search Second Scan"
@@ -1747,58 +1712,50 @@ msgstr "Вылучыце магчымасьць пошуку \"Зьменены 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:20
-#, fuzzy
 msgid "Select the search option \"File is empty\""
-msgstr "Файл пусты"
+msgstr "Вылучыце парамэтар пошуку \"Пустыя файлы\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:23
-#, fuzzy
 msgid "Select the search option \"Follow symbolic links\""
-msgstr "Улічваць сымбалічныя спасылкі"
+msgstr "Вылучыце парамэтар пошуку \"Крочыць за спасылкамі\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:26
-#, fuzzy
 msgid "Select the search option \"Include other filesystems\""
-msgstr "Уключае іншыя файлавыя сыстэмы"
+msgstr "Вылучыце парамэтар пошуку \"Уключыць іншыя файлавыя сыстэмы\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:29
-#, fuzzy
 msgid "Select the search option \"Name does not contain\""
-msgstr "_Назва не зьмяшчае"
+msgstr "Вылучыце парамэтар пошуку \"Назва не ўтрымлівае\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:32
-#, fuzzy
 msgid "Select the search option \"Name matches regular expression\""
-msgstr "Файл супадае са сталым вы_разам"
+msgstr "Вылучыце парамэтар пошуку \"Назва супадае з сталым выразам\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:35
-#, fuzzy
 msgid "Select the search option \"Owned by group\""
-msgstr "Належыць _групе"
+msgstr "Вылучыце парамэтар пошуку \"Належыць групе\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:38
-#, fuzzy
 msgid "Select the search option \"Owned by user\""
-msgstr "Належыць _карыстальніку"
+msgstr "Вылучыце парамэтар пошуку \"Належык карыстальніку\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:41
-#, fuzzy
 msgid "Select the search option \"Owner is unrecognized\""
-msgstr "Уладальнік ня вызначаны"
+msgstr "Вылучыце парамэтар пошуку \"Невядомы карыстальнік\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1809,9 +1766,8 @@ msgstr ""
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:47
-#, fuzzy
 msgid "Select the search option \"Size at least\""
-msgstr "П_амер ня меньшы за (кб)"
+msgstr "Вылучыце парамэтар пошуку \"Памер ня меншы за\""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1820,9 +1776,8 @@ msgid "Select the search option \"Size at most\""
 msgstr ""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:51
-#, fuzzy
 msgid "Show Additional Options"
-msgstr "Дадатковыя выбары"
+msgstr "Паказаць дадатковыя парамэтры"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:52
 msgid ""
@@ -2109,9 +2064,8 @@ msgstr "учора ў %-I:%M %p"
 
 #: ../gsearchtool/gsearchtool-support.c:644
 #: ../gsearchtool/gsearchtool-support.c:646
-#, fuzzy
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%m/%-d/%y, %-I:%M %p"
+msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
 
 #: ../gsearchtool/gsearchtool-support.c:825
 msgid "link (broken)"
@@ -2127,32 +2081,28 @@ msgid "Contains the _text"
 msgstr "Утрымлівае _тэкст"
 
 #: ../gsearchtool/gsearchtool.c:84
-#, fuzzy
 msgid "_Date modified less than"
-msgstr "Дата зьмяненьня _меней за (дзён)"
+msgstr "_Дата зьмяненьня меньш чым"
 
 #: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
 msgid "days"
 msgstr ""
 
 #: ../gsearchtool/gsearchtool.c:85
-#, fuzzy
 msgid "Date modified more than"
-msgstr "Дата зьмяненьня _болей за (дзён)"
+msgstr "Дата зьмяненьня больш чым"
 
 #: ../gsearchtool/gsearchtool.c:87
-#, fuzzy
 msgid "S_ize at least"
-msgstr "П_амер ня меньшы за (кб)"
+msgstr "П_амер ня менш чым"
 
 #: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
 msgid "kilobytes"
 msgstr ""
 
 #: ../gsearchtool/gsearchtool.c:88
-#, fuzzy
 msgid "Si_ze at most"
-msgstr "Пам_ер ня большы за (кб)"
+msgstr "Пам_ер ня больш"
 
 #: ../gsearchtool/gsearchtool.c:89
 msgid "File is empty"
@@ -2257,14 +2207,12 @@ msgid "Entry changed called for a non entry option!"
 msgstr "Выклікана зьмяненьнем запісу для парамэтра які ня зьяўляецца запісам!"
 
 #: ../gsearchtool/gsearchtool.c:1384
-#, fuzzy
 msgid "Set the text of \"Name contains\" search option"
-msgstr "Усталяваць тэкст \"Назва ўтрымлівае\""
+msgstr ""
 
 #: ../gsearchtool/gsearchtool.c:1385
-#, fuzzy
 msgid "Set the text of \"Look in folder\" search option"
-msgstr "Усталяваць тэкст \"Шукаць у тэчке\""
+msgstr "Задайце тэкст для парамэтра пошуку \"Пошук у тэчцы\""
 
 #: ../gsearchtool/gsearchtool.c:1386
 msgid "Sort files by one of the following: name, folder, size, type, or date"
@@ -2281,14 +2229,14 @@ msgid "Automatically start a search"
 msgstr "Аўтаматычна пачынаць пошук"
 
 #: ../gsearchtool/gsearchtool.c:1394
-#, fuzzy, c-format
+#, c-format
 msgid "Select the \"%s\" search option"
-msgstr "Вылучыце \"%s\" прымус"
+msgstr "Вылучыце парамэтар пошуку \"%s\""
 
 #: ../gsearchtool/gsearchtool.c:1397
-#, fuzzy, c-format
+#, c-format
 msgid "Select and set the \"%s\" search option"
-msgstr "Файл супадае са сталым вы_разам"
+msgstr "Вылучыце і задайце парамэтар пошуку \"%s\""
 
 #: ../gsearchtool/gsearchtool.c:1504
 msgid "Invalid option passed to sortby command line argument."
@@ -2309,9 +2257,8 @@ msgid ""
 msgstr ""
 
 #: ../gsearchtool/gsearchtool.c:1828 ../gsearchtool/gsearchtool.c:1872
-#, fuzzy
 msgid "Show more _details"
-msgstr "Паказаць больш _акалічнасьцяў"
+msgstr "Больш _падрабязна"
 
 #: ../gsearchtool/gsearchtool.c:1858
 msgid ""
@@ -2321,12 +2268,12 @@ msgstr ""
 
 #: ../gsearchtool/gsearchtool.c:1883
 msgid "Disable _Quick Search"
-msgstr ""
+msgstr "Адключыць _хуткі пошук"
 
 #: ../gsearchtool/gsearchtool.c:1910
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
-msgstr ""
+msgstr "Немагчыма ўсталяваць ідэнтыфікатар групы працэса-нашчадка %d: %s.\n"
 
 #: ../gsearchtool/gsearchtool.c:1935
 msgid "Error parsing the search command."
@@ -2337,54 +2284,51 @@ msgid "Error running the search command."
 msgstr "Памылка выкананьня загада пошуку."
 
 #: ../gsearchtool/gsearchtool.c:2083
-#, fuzzy, c-format
+#, c-format
 msgid "Enter a text value for the \"%s\" search option."
-msgstr "Файл супадае са сталым вы_разам"
+msgstr "Увядзіце тэкставае значэньне для парамэтра \"%s\""
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
 #: ../gsearchtool/gsearchtool.c:2088
 #, c-format
 msgid "\"%s\" in %s"
-msgstr ""
+msgstr "\"%s\" у %s"
 
 #: ../gsearchtool/gsearchtool.c:2090
-#, fuzzy, c-format
+#, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Файл супадае са сталым вы_разам"
+msgstr "Увядзіце значэньне ў %s для парамэтра пошуку \"%s\"."
 
 #: ../gsearchtool/gsearchtool.c:2149
-#, fuzzy, c-format
+#, c-format
 msgid "Remove \"%s\""
-msgstr "Убрать"
+msgstr "Выдаліць \"%s\""
 
 #: ../gsearchtool/gsearchtool.c:2150
-#, fuzzy, c-format
+#, c-format
 msgid "Click to remove the \"%s\" search option."
-msgstr "Вылучыце \"%s\" прымус"
+msgstr "Пстрыкніце, каб выдаліць парамэтар пошуку \"%s\"."
 
 #: ../gsearchtool/gsearchtool.c:2243
 msgid "A_vailable options:"
 msgstr "_Магчымыя выбары:"
 
 #: ../gsearchtool/gsearchtool.c:2272
-#, fuzzy
 msgid "Available options"
-msgstr "_Магчымыя выбары:"
+msgstr "Наяўныя парамэтры"
 
 #: ../gsearchtool/gsearchtool.c:2273
-#, fuzzy
 msgid "Select a search option from the drop-down list."
-msgstr "Выбраць правіла пошука са сьпіса"
+msgstr "Вылучыце парамэтар пошуку з узьніклага сьпісу."
 
 #: ../gsearchtool/gsearchtool.c:2285
-#, fuzzy
 msgid "Add search option"
-msgstr "Дадаць дзеяньне"
+msgstr "Дадаць парамэтар пошуку"
 
 #: ../gsearchtool/gsearchtool.c:2286
 msgid "Click to add the selected available search option."
-msgstr ""
+msgstr "Пстрыкніце, каб дадаць вылучаныя наяўны парамэтар пошуку."
 
 #: ../gsearchtool/gsearchtool.c:2375
 msgid "S_earch results:"
@@ -2392,7 +2336,7 @@ msgstr "_Вынікі пошуку:"
 
 #: ../gsearchtool/gsearchtool.c:2414
 msgid "List View"
-msgstr ""
+msgstr "У выглядзе сьпісу"
 
 #: ../gsearchtool/gsearchtool.c:2498
 msgid "Folder"
@@ -2416,12 +2360,11 @@ msgstr "_Назва ўтрымлівае:"
 
 #: ../gsearchtool/gsearchtool.c:2948 ../gsearchtool/gsearchtool.c:2949
 msgid "Enter a filename or partial filename with or without wildcards."
-msgstr ""
+msgstr "Увядзіце назву файла ці частку назвы (з узорам ці безь яго)."
 
 #: ../gsearchtool/gsearchtool.c:2949
-#, fuzzy
 msgid "Name contains"
-msgstr "_Назва ўтрымлівае:"
+msgstr "Назва ўтрымлівае"
 
 #: ../gsearchtool/gsearchtool.c:2955
 msgid "_Look in folder:"
@@ -2432,49 +2375,40 @@ msgid "Browse"
 msgstr "Прагляд"
 
 #: ../gsearchtool/gsearchtool.c:2966
-#, fuzzy
 msgid "Look in folder"
-msgstr "_Глядзець у тэчку:"
+msgstr "Шукаць у тэчцы"
 
 #: ../gsearchtool/gsearchtool.c:2966
-#, fuzzy
 msgid "Select the folder or device from which you want to begin the search."
-msgstr "Увядзіце назву тэчкі, дзе вы жадаеце пачаць пошук"
+msgstr "Вылучыце тэчу альбо прыладу зь якой вы жадаеце пачаць пошук."
 
 #: ../gsearchtool/gsearchtool.c:2977
-#, fuzzy
 msgid "Select more _options"
-msgstr "Паказаць больш _акалічнасьцяў"
+msgstr "Вылучыць больш _парамэтраў"
 
 #: ../gsearchtool/gsearchtool.c:2986
-#, fuzzy
 msgid "Select more options"
-msgstr "Паказаць больш акалічнасьцяў"
+msgstr "Вылучыць больш парамэтраў"
 
 #: ../gsearchtool/gsearchtool.c:2986
-#, fuzzy
 msgid "Click to expand or collapse the list of available options."
-msgstr "Разгарнуць ці згарнуць сьпіс усіх акалічнасьцяў пошуку."
+msgstr "Пстрыкніце, каб разгарнуць ці згарнуць сьпіс наяўных парамэтраў."
 
 #: ../gsearchtool/gsearchtool.c:3010
-#, fuzzy
 msgid "Click to display the help manual."
-msgstr "Немагчыма адлюстраваць дапамогу"
+msgstr "Пстрыкніце, каб адлюстраваць даведку."
 
 #: ../gsearchtool/gsearchtool.c:3018
-#, fuzzy
 msgid "Click to close \"Search for Files\"."
-msgstr "Пошук файлаў"
+msgstr "Пстрыкніце, каб зачыніць \"Пошук файлаў\"."
 
 #: ../gsearchtool/gsearchtool.c:3044
-#, fuzzy
 msgid "Click to perform a search."
-msgstr "Клікніце тут, каб спыніць пошук"
+msgstr "Пстрыкніце, каб выканаць пошук."
 
 #: ../gsearchtool/gsearchtool.c:3045
-#, fuzzy
 msgid "Click to stop a search."
-msgstr "Клікніце тут, каб спыніць пошук"
+msgstr "Пстрыкніце, каб спыніць пошук."
 
 #: ../logview/about.c:51 ../logview/logview.c:37 ../logview/main.c:54
 msgid "System Log Viewer"
@@ -2493,33 +2427,29 @@ msgid "View the system log file"
 msgstr "Прагледзіць файлы сыстэмных часопісаў"
 
 #: ../logview/log_repaint.c:179
-#, fuzzy, c-format
+#, c-format
 msgid "last update : %s"
-msgstr "Апошняя дата:"
+msgstr "апошняе абнаўленьне: %s"
 
 #: ../logview/log_repaint.c:181
 #, c-format
 msgid "%d lines (%s) - %s"
-msgstr ""
+msgstr "%d радоў (%s) - %s"
 
 #: ../logview/log_repaint.c:219
 msgid "Current"
-msgstr ""
+msgstr "Бягучы"
 
 #: ../logview/logrtns.c:37
-#, fuzzy
 msgid "One file or more could not be opened"
-msgstr "%s ня можа быць адкрыты."
+msgstr "Немагчма адчыніць адзін ці больш файлаў"
 
 #: ../logview/logrtns.c:59
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file.\n"
 msgstr ""
-"%s ня можа быць прачытаны. Магчыма, у вас недастаткова правоў доступа. Ці "
-"запусьціце праграму як root, ці папрасіце сыстэмнага адміністратара зьмяніць "
-"правы доступа да файла. "
 
 #: ../logview/logrtns.c:64
 #, c-format
@@ -2532,19 +2462,18 @@ msgid "%s could not be opened."
 msgstr "%s ня можа быць адкрыты."
 
 #: ../logview/logrtns.c:378
-#, fuzzy, c-format
+#, c-format
 msgid "%s is not a log file."
 msgstr "%s не зьяўляецца часопісам."
 
 #: ../logview/logrtns.c:384
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Недастаткова памяці!\n"
+msgstr "Бракуе памяці."
 
 #: ../logview/logrtns.c:398
-#, fuzzy, c-format
+#, c-format
 msgid "%s cannot be opened."
-msgstr "%s ня можа быць адкрыты."
+msgstr "немагчыма адчыніць %s."
 
 #: ../logview/logview-findbar.c:152
 msgid "_Filter:"
@@ -2567,9 +2496,8 @@ msgid "_Open..."
 msgstr "_Адчыніць..."
 
 #: ../logview/logview.c:90
-#, fuzzy
 msgid "Open a log from file"
-msgstr "Адкрыць новы файл часопіса"
+msgstr "Адчыніць часопіс з файла"
 
 #: ../logview/logview.c:92
 msgid "_Close"
@@ -2584,18 +2512,16 @@ msgid "_Quit"
 msgstr "Вы_йсьці"
 
 #: ../logview/logview.c:94
-#, fuzzy
 msgid "Quit the log viewer"
-msgstr "Праглядальнік сыстэмных часопісаў"
+msgstr "Выйсьці з праглядальніка часопісаў"
 
 #: ../logview/logview.c:97
 msgid "_Copy"
 msgstr "_Капіяваць"
 
 #: ../logview/logview.c:97
-#, fuzzy
 msgid "Copy the selection"
-msgstr "Выразаць вылучаньне"
+msgstr "Скапіяваць вылучэньне"
 
 #: ../logview/logview.c:99
 msgid "Select the entire log"
@@ -2606,9 +2532,8 @@ msgid "_Filter..."
 msgstr "_Цэдла..."
 
 #: ../logview/logview.c:101
-#, fuzzy
 msgid "Filter log"
-msgstr "Фильтрация событий в рег.файле"
+msgstr "Цэдла часопіса"
 
 #: ../logview/logview.c:104
 msgid "Bigger text size"
@@ -2648,7 +2573,7 @@ msgstr "Паказваць радок стану"
 
 #: ../logview/logview.c:124
 msgid "Side _Pane"
-msgstr ""
+msgstr "Бакавая _панэля"
 
 #: ../logview/logview.c:124
 msgid "Show Side Pane"
@@ -2712,28 +2637,20 @@ msgid "Size of the font used to display the log"
 msgstr "Памер шрыфту, які адлюстроўвае часопіс"
 
 #: ../logview/logview.schemas.in.h:5
-#, fuzzy
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
 msgstr ""
-"Вызначце файл часопіса які будзе адчыняцца пад час запуску сыстэмы. Дапомна "
-"гэта /var/adm/messages ці /var/log/messages, у залежнасьці ад вашае "
-"апэрацыйнае сыстэмы."
 
 #: ../logview/logview.schemas.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
 msgstr "Задае вышыню асноўнага вакна праглядальніка часопісаў у піксалях."
 
 #: ../logview/logview.schemas.in.h:7
-#, fuzzy
 msgid ""
 "Specifies the log file displayed at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
 msgstr ""
-"Вызначце файл часопіса які будзе адчыняцца пад час запуску сыстэмы. Дапомна "
-"гэта /var/adm/messages ці /var/log/messages, у залежнасьці ад вашае "
-"апэрацыйнае сыстэмы."
 
 #: ../logview/logview.schemas.in.h:8
 msgid ""
@@ -2839,1550 +2756,3 @@ msgstr "Назіраньне за файламі не падтрымліваец
 msgid "Gnome-VFS Error.\n"
 msgstr "Памылка Gnome-VFS.\n"
 
-#~ msgid "Cannot connect to server"
-#~ msgstr "Немагчыма далучыцца да паслужніка"
-
-#, fuzzy
-#~ msgid "Server Error"
-#~ msgstr "Элемэнт паслужніка"
-
-#, fuzzy
-#~ msgid ""
-#~ "A serious error occurred. Please check that your server and port are "
-#~ "correct. For reference the default server is dict.org and the port 2628"
-#~ msgstr ""
-#~ "Узьнікла сур'ёзная памылка. Праверце, што паслужнік і порт пазначаны "
-#~ "правільна. Для даведкі: дапомны паслужнік -- dict.org, порт -- 2628"
-
-#, fuzzy
-#~ msgid "Connection error"
-#~ msgstr "Немагчыма далучыцца да паслужніка"
-
-#, fuzzy
-#~ msgid ""
-#~ "Either the server you are using is not available \n"
-#~ "or you are not connected to the Internet."
-#~ msgstr ""
-#~ "Немагчыма выканаць запытанае дзеяньне.\n"
-#~ "Альбо адключаны паслужнік, які вы выкарыстоўваеце,\n"
-#~ "ці вы ня далучаны да Інтарнета."
-
-#~ msgid "Find"
-#~ msgstr "Шукаць"
-
-#~ msgid "_Search for:"
-#~ msgstr "П_ошук:"
-
-#, fuzzy
-#~ msgid "Could not display help"
-#~ msgstr "Немагчыма адлюстраваць дапамогу"
-
-#~ msgid "_Dictionary"
-#~ msgstr "С_лоўнік"
-
-#~ msgid "_Look Up Word"
-#~ msgstr "_Шукаць слова"
-
-#, fuzzy
-#~ msgid "P_references"
-#~ msgstr "_Усталяваньні"
-
-#, fuzzy
-#~ msgid "Configure the application"
-#~ msgstr "С_хаваць дастасаваньне"
-
-#, fuzzy
-#~ msgid "About this application"
-#~ msgstr "С_хаваць дастасаваньне"
-
-#, fuzzy
-#~ msgid "Cu_t"
-#~ msgstr "Выразаць"
-
-#~ msgid "Cut the selection"
-#~ msgstr "Выразаць вылучаньне"
-
-#, fuzzy
-#~ msgid "_Paste"
-#~ msgstr "Уставіць"
-
-#, fuzzy
-#~ msgid "Paste clipboard"
-#~ msgstr "Уставіць з буфэра абмена"
-
-#, fuzzy
-#~ msgid "Select everything"
-#~ msgstr "Выбрать события из журнала"
-
-#, fuzzy
-#~ msgid "_Spellings"
-#~ msgstr "Проверить правописание"
-
-#~ msgid "_Look Up"
-#~ msgstr "Поискать"
-
-#, fuzzy
-#~ msgid "In Dictionary"
-#~ msgstr "Слоўнік"
-
-#~ msgid "Enter a Word or select one from the list below"
-#~ msgstr "Увядзіце слова ці выбярыце адно са сьпіса"
-
-#~ msgid "Look Up for a Word"
-#~ msgstr "Шукаць слова"
-
-#~ msgid "Looking up word..."
-#~ msgstr "Пошук слова..."
-
-#~ msgid "String not found"
-#~ msgstr "Радка няма"
-
-#, fuzzy
-#~ msgid "Error invoking query"
-#~ msgstr "Памылка выкананьня запыта: %s"
-
-#, fuzzy
-#~ msgid "Looking up entry..."
-#~ msgstr "Пошук слова..."
-
-#~ msgid "De_fault Server"
-#~ msgstr "Да_помны паслужнік"
-
-#~ msgid "Reset server to default"
-#~ msgstr "Скінуць паслужнік да дапомных наладак"
-
-#~ msgid "Reset port to default"
-#~ msgstr "Скінуць порт да дапомных наладак"
-
-#~ msgid "Server"
-#~ msgstr "Паслужнік"
-
-#~ msgid "Server Entry"
-#~ msgstr "Элемэнт паслужніка"
-
-#~ msgid "Enter the Server Name"
-#~ msgstr "Увядзіце імя паслужніка"
-
-#~ msgid "Port Entry"
-#~ msgstr "Элемэнт парта"
-
-#~ msgid "Enter the Port Number"
-#~ msgstr "Увядзіце нумар парта"
-
-#, fuzzy
-#~ msgid "F_ont:"
-#~ msgstr "_Шрыфт:"
-
-#, fuzzy
-#~ msgid "Search Address"
-#~ msgstr "_Вынікі пошуку:"
-
-#~ msgid "Search all databases"
-#~ msgstr "Шукаць ува ўсіх базах даньняў"
-
-#~ msgid "Default Strategy"
-#~ msgstr "Дапомная стратэгія"
-
-#, fuzzy
-#~ msgid "Spellings"
-#~ msgstr "Проверить правописание"
-
-#~ msgid "Spell-checking..."
-#~ msgstr "Праверка правапісу..."
-
-#~ msgid ""
-#~ "The search strategy to use. This is dependant on the search strategy that "
-#~ "the dictionary server supports. The default strategy is 'lev' - Match "
-#~ "words within Levenshtein distance one"
-#~ msgstr ""
-#~ "Стратэгія пошуку для выкарыстаньня. Залежыць ад стратэгіяў пошуку, якія "
-#~ "падтрымліваюцца паслужнікам. Зыходнай стратэгіяй зьяўляецца \"lev\" - "
-#~ "Супаўшыя словы па Левенштэйну"
-
-#~ msgid "Action Database"
-#~ msgstr "База даньняў дзеяньняў"
-
-#~ msgid "Actions"
-#~ msgstr "Дзеяньні"
-
-#~ msgid "_Add"
-#~ msgstr "_Дадаць"
-
-#~ msgid "Add an action"
-#~ msgstr "Дадаць дзеяньне"
-
-#~ msgid "Edit an action"
-#~ msgstr "Рэдагаваць дзеяньне"
-
-#~ msgid "_Remove"
-#~ msgstr "_Выдаліць"
-
-#~ msgid "Remove an action"
-#~ msgstr "Выдаліць дзеяньне"
-
-#~ msgid "Cannot open action data base <%s>! Open failed."
-#~ msgstr ""
-#~ "Немагчыма адкрыць базу даньняў дзеяньняў <%s>! Збой пад час адкрыцьця."
-
-#~ msgid "Error parsing actions data base"
-#~ msgstr "Памылка сынтаксічнага аналізу базы даньняў дзеяньняў"
-
-#~ msgid "Can't write to actions database!"
-#~ msgstr "Немагчыма запісаць у базу даньняў дзеяньняў!"
-
-#~ msgid "<empty>"
-#~ msgstr "<пуста>"
-
-#~ msgid "log name regexp"
-#~ msgstr "сталы выраз для часопіса"
-
-#~ msgid "process regexp"
-#~ msgstr "сталы выраз для працэса"
-
-#~ msgid "message regexp"
-#~ msgstr "сталы выраз для паведамленьня"
-
-#~ msgid "action to execute when regexps are TRUE"
-#~ msgstr "дзеяньне, якое выконваецца калі regexps -- TRUE"
-
-#~ msgid "description"
-#~ msgstr "апісаньне"
-
-#~ msgid "Edit Action"
-#~ msgstr "Рэдагаваць дзеяньне"
-
-#~ msgid "_Tag:"
-#~ msgstr "_Таг:"
-
-#~ msgid "Tag that identifies the log file."
-#~ msgstr "Таг, які атаесамляе файл часопіса."
-
-#~ msgid "_Log name:"
-#~ msgstr "Назва _часопіса:"
-
-#~ msgid "Regular expression that will match the log name."
-#~ msgstr "Сталы выраз, які супадае з назвай часопіса."
-
-#~ msgid "_Process:"
-#~ msgstr "_Працэс:"
-
-#~ msgid "_Message:"
-#~ msgstr "Па_ведамленьне:"
-
-#~ msgid "Regular expression that will match the message."
-#~ msgstr "Сталы выраз, які супадае з паведамленьнем."
-
-#~ msgid "_Action:"
-#~ msgstr "Дз_еяньне:"
-
-#~ msgid ""
-#~ "tag: [%s]\n"
-#~ "log_name: [%s]\n"
-#~ "process: [%s]\n"
-#~ "message: [%s]\n"
-#~ "description: [%s]\n"
-#~ "action: [%s]\n"
-#~ msgstr ""
-#~ "тэг:[%s]\n"
-#~ "імя_часопіса: [%s]\n"
-#~ "працэс: [%s]\n"
-#~ "паведамленьне: [%s]\n"
-#~ "апісаньне: [%s]\n"
-#~ "дзеяньне: [%s]\n"
-
-#~ msgid "Cannot open regexp data base <%s>! Open failed."
-#~ msgstr ""
-#~ "Немагчыма адкрыць базу даньняў сталых выразаў <%s>! Збой пад час "
-#~ "адкрыцьця."
-
-#~ msgid "Cannot open description data base <%s>! Open failed."
-#~ msgstr ""
-#~ "Немагчыма адкрыць базу даньняў апісаньняў <%s>! Збой пад час адкрыцьця."
-
-#~ msgid "Properties"
-#~ msgstr "Уласьцівасьці"
-
-#~ msgid "%ld byte"
-#~ msgid_plural "%ld bytes"
-#~ msgstr[0] "%ld байт"
-#~ msgstr[1] "%ld байты"
-#~ msgstr[2] "%ld байтаў"
-
-#, fuzzy
-#~ msgid "<b>Size</b>: %s"
-#~ msgstr "Зьменены:"
-
-#, fuzzy
-#~ msgid "<b>Modified</b>: %s"
-#~ msgstr "Зьменены:"
-
-#, fuzzy
-#~ msgid "<b>Start Date</b>: %s"
-#~ msgstr "Пачатковая дата:"
-
-#, fuzzy
-#~ msgid "<b>Number of Lines</b>: %ld"
-#~ msgstr "Колькасьць радкоў:"
-
-#, fuzzy
-#~ msgid "Last Modified: %s, %d lines"
-#~ msgstr "Дата мадыфікаваньня: "
-
-#~ msgid "%B %e"
-#~ msgstr "%e %B"
-
-#~ msgid "%X"
-#~ msgstr "%X"
-
-#~ msgid "ReadLogStats: out of memory"
-#~ msgstr "ReadLogStats: недахоп памяці"
-
-#~ msgid "_Properties"
-#~ msgstr "_Уласьцівасьці"
-
-#~ msgid "Show Log Properties"
-#~ msgstr "Адлюстраваць уласьцівасьці часопіса"
-
-#, fuzzy
-#~ msgid "Close"
-#~ msgstr "Вылічыць косінус"
-
-#~ msgid "Copy"
-#~ msgstr "Капіяваць"
-
-#, fuzzy
-#~ msgid "Select All"
-#~ msgstr "За_крыть усё"
-
-#~ msgid "Date"
-#~ msgstr "Дата"
-
-#~ msgid "Message"
-#~ msgstr "Паведамленьне"
-
-#~ msgid "Open new logfile"
-#~ msgstr "Адкрыць новы файл часопіса"
-
-#~ msgid "Entry Detail"
-#~ msgstr "Падрабязнасьці запіса"
-
-#~ msgid "%B %e %X"
-#~ msgstr "%B %e %X"
-
-#~ msgid "_Word:"
-#~ msgstr "Сло_ва: "
-
-#~ msgid "Cannot initialize bonobo."
-#~ msgstr "Немагчыма ініцыялізаваць bonobo."
-
-#~ msgid "Lookup done"
-#~ msgstr "Пошук скончаны"
-
-#~ msgid "Spell check done"
-#~ msgstr "Праверка правапіса скончана"
-
-#~ msgid "Calendar"
-#~ msgstr "Каляндар"
-
-#, fuzzy
-#~ msgid "Find Next"
-#~ msgstr "Шукаць"
-
-#~ msgid "_Entry Detail"
-#~ msgstr "_Дэталі элемэнта"
-
-#~ msgid "Show Entry Detail"
-#~ msgstr "Адлюстраваць дэталі элемэнта"
-
-#~ msgid "Enter a value for search rule"
-#~ msgstr "Увядзіце значэньні для правіла пошука"
-
-#~ msgid "Click to Remove the '%s' Rule"
-#~ msgstr "Клікніце тут, каб выдаліць правіла \"%s\""
-
-#~ msgid "Search Rules Menu"
-#~ msgstr "Мэню правілаў пошука"
-
-#, fuzzy
-#~ msgid "Enter the file name you want to search."
-#~ msgstr "Увядзіце назву файла, які неабходна адшукаць"
-
-#~ msgid "Name Contains Entry"
-#~ msgstr "Навза ўтрымлівае запіс"
-
-#~ msgid "Click to Start the search"
-#~ msgstr "Клікніце тут, каб пачаць пошук"
-
-#~ msgid "<span weight=\"bold\">Filesystem Settings</span>"
-#~ msgstr "<span weight=\"bold\">Усталёўкі файлавае сыстэмы</span>"
-
-#~ msgid "<span weight=\"bold\">Formatting Mode</span>"
-#~ msgstr "<span weight=\"bold\">Рэжым фарматаваньня</span>"
-
-#~ msgid "<span weight=\"bold\">Physical Settings</span>"
-#~ msgstr "<span weight=\"bold\">Фізычныя усталёўкі</span>"
-
-#~ msgid "Check _Spelling"
-#~ msgstr "Пра_верыць правапіс"
-
-#~ msgid "Check word spelling"
-#~ msgstr "Праверыць правапіс слова"
-
-#~ msgid "Smart _lookup"
-#~ msgstr "Раз_умны пошук"
-
-#~ msgid "D_efault strategy:"
-#~ msgstr "Дапомная стратэгія:"
-
-#~ msgid "Enter a word to know the spelling"
-#~ msgstr "Увядзіце слова, для якога трэба даведацца напісаньне"
-
-#~ msgid "Click to do the spell check"
-#~ msgstr "Націсьніце тутака для праверкі правапісу"
-
-#~ msgid "Check Spelling"
-#~ msgstr "Праверыць правапіс"
-
-#~ msgid "Search Strategy"
-#~ msgstr "Стратэгія пошуку"
-
-#, fuzzy
-#~ msgid "Select Size At Most"
-#~ msgstr "Пам_ер ня большы за (кб)"
-
-#~ msgid "Image/label border"
-#~ msgstr "Мяжа відарыса/адмеціны"
-
-#~ msgid "Width of border around the label and image in the alert dialog"
-#~ msgstr "Шырыня мяжы вакол адмеціны й відарыса ў дыялёгу перасьцярогі"
-
-#~ msgid "Alert Type"
-#~ msgstr "Тып перасьцярогі"
-
-#~ msgid "The type of alert"
-#~ msgstr "Тып перасьцярогі"
-
-#~ msgid "Alert Buttons"
-#~ msgstr "Кнопкі перасьцярогі"
-
-#~ msgid "The buttons shown in the alert dialog"
-#~ msgstr "Кнопкі, бачныя ў дыялёгу перасьцярогі"
-
-#~ msgid "Could not move \"%s\" to the trash."
-#~ msgstr "Немагчыма перамясьціць \"%s\" у сьметніцу."
-
-#~ msgid ""
-#~ "There was an error displaying help: \n"
-#~ "%s"
-#~ msgstr ""
-#~ "Узьнікла памылка адлюстраваньня даведкі: \n"
-#~ "%s"
-
-#, fuzzy
-#~ msgid "Copy selected lines"
-#~ msgstr "Скапіяваць вылучэньне"
-
-#~ msgid "Size:"
-#~ msgstr "Памер:"
-
-#~ msgid "Log Information"
-#~ msgstr "Інфармацыя часопіса"
-
-#~ msgid "<No log loaded>"
-#~ msgstr "<Няма загружаных часопісаў>"
-
-#~ msgid "%s is not a regular file."
-#~ msgstr "%s не звычайны файл."
-
-#~ msgid "_Calendar"
-#~ msgstr "_Каляндар"
-
-#~ msgid "No log files to open"
-#~ msgstr "Няма часопісаў для адкрыцьця"
-
-#~ msgid "Date:"
-#~ msgstr "Дата:"
-
-#~ msgid "Process:"
-#~ msgstr "Працэс:"
-
-#~ msgid "Message:"
-#~ msgstr "Паведамленьне:"
-
-#~ msgid "Log Line Details"
-#~ msgstr "Падрабязнасьці радка часопіса"
-
-#~ msgid "Accessories"
-#~ msgstr "Зручнасьці"
-
-#~ msgid "Look in Folder Entry"
-#~ msgstr "Шукаць у тэчцы"
-
-#~ msgid "Cesar Miquel (miquel@df.uba.ar)"
-#~ msgstr "Cesar Miquel (miquel@df.uba.ar)"
-
-#~ msgid "S_witch Log"
-#~ msgstr "Пераключыць _часопіс"
-
-#~ msgid "Switch between already opened logs"
-#~ msgstr "Пераключэньне між адкрытымі файламі"
-
-#~ msgid "Close all Log files"
-#~ msgstr "Закрыть усе файлы часопісаў"
-
-#~ msgid "Too many open logs. Close one and try again"
-#~ msgstr "Зашмат адкрытых часопісаў. Закрыйце адзін і паспрабуйце нанова."
-
-#~ msgid "Monitor Options"
-#~ msgstr "Парамэтры манітора"
-
-#~ msgid "Ac_tions..."
-#~ msgstr "Дз_еяньні..."
-
-#~ msgid "_Select logs to monitor:"
-#~ msgstr "_Вылучыць часопісы для назіраньня:"
-
-#~ msgid "Add logs to monitor"
-#~ msgstr "Дадаць часопісы да назіраньня"
-
-#~ msgid "Remove logs from monitor"
-#~ msgstr "Зьняць часопісы з назіраньня"
-
-#~ msgid "_Execute actions"
-#~ msgstr "Вы_канаць дзеяньні"
-
-#~ msgid "Too many logs to monitor. Remove one and try again"
-#~ msgstr "Зашмат часопісаў для назіраньня. Здыміце адзін і паспрабуйце нанова"
-
-#~ msgid "tmp_list is NULL\n"
-#~ msgstr "tmp_list -- NULL\n"
-
-#~ msgid "Monitoring Logs..."
-#~ msgstr "Назіраньне за часопісамі..."
-
-#~ msgid "TOUCHED!!\n"
-#~ msgstr "ЗЬМЕНЕНЫ!\n"
-
-#~ msgid "_About..."
-#~ msgstr "_Пра праграму..."
-
-#~ msgid "_Preferences..."
-#~ msgstr "_Перавагі..."
-
-#~ msgid "Search your disk for files"
-#~ msgstr "Адшукаць файлы на дыску"
-
-#~ msgid ""
-#~ "While searching the following errors were reported.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "Пад час пошука былі вернутыя наступныя памылкі.\n"
-#~ "\n"
-
-#~ msgid "Search Rule Value Entry"
-#~ msgstr "Поле значэньня правіла пошуку"
-
-#~ msgid "The animation file is missing or invalid: %s"
-#~ msgstr "Прапушчаны ці нерэчаінсы файл з анімацыяй: %s"
-
-#~ msgid "One File Found"
-#~ msgstr "Знойдзен адзін файл"
-
-#~ msgid "One file found"
-#~ msgstr "Зноёдзен адзін файл"
-
-#~ msgid ""
-#~ "This will open %d separate documents. Are you sure you want to do this?"
-#~ msgstr ""
-#~ "Гэта прывядзе да адчыненьня %d асобных дакумэнтаў. Вы ўпэўненыя што "
-#~ "жадаеце зрабіць гэта?"
-
-#~ msgid "Could not open document \"%s\""
-#~ msgstr "Немагчыма адчыніць дакумэнт \"%s\""
-
-#~ msgid "Open %d folders?"
-#~ msgstr "Адчыніць %d тэчкі?"
-
-#~ msgid ""
-#~ "This will open %d separate folders. Are you sure you want to do this?"
-#~ msgstr ""
-#~ "Гэта прывядзе да адкрыцьця %d розных тэчак. Вы ўпэўненыя што жадаеце "
-#~ "гэтага?"
-
-#~ msgid ""
-#~ "You did not select a document name or the name selected was a folder.  "
-#~ "The document is not saved."
-#~ msgstr ""
-#~ "Вы ня вылучылі назву дакумэнта ці вылучаная назва - тэчка.  Дакумэнт не "
-#~ "захаваны."
-
-#~ msgid "The contents of the file \"%s\" will be lost."
-#~ msgstr "Зьмест файла \"%s\" будзе згублены."
-
-#~ msgid "Overwrite an existing file?"
-#~ msgstr "Перазапісаць існуючы файл?"
-
-#~ msgid "Could not save document \"%s\" to %s"
-#~ msgstr "Немагчыма захаваць дакумэнт \"%s\" у %s"
-
-#~ msgid "GNOME Dictionary"
-#~ msgstr "Слоўнік GNOME"
-
-#~ msgid "GNOME System Log Viewer"
-#~ msgstr "Праглядальнік сыстэмных часопісаў"
-
-#~ msgid "Gdialog progressbar"
-#~ msgstr "Індыкатар GDisalog"
-
-#~ msgid "Indicates the percentage specified at the standard input"
-#~ msgstr "Адлюстроўвае адсотку, якая пазначаецца на стандартным уводзе"
-
-#~ msgid "GDialog Entry"
-#~ msgstr "Элемэнт GDialog"
-
-#~ msgid "Enter the text"
-#~ msgstr "Увядзіце тэкст"
-
-#~ msgid "Copyright 1999 by Mike Hughes"
-#~ msgstr "Аўтарскія правы 1999, Mike Hughes"
-
-#~ msgid "_Word: "
-#~ msgstr "Сло_ва: "
-
-#~ msgid "Headword:"
-#~ msgstr "Заглаўнае слова:"
-
-#~ msgid "Sub-number:"
-#~ msgstr "Дад. нумар:"
-
-#~ msgid "Etymology:"
-#~ msgstr "Этымалёгія:"
-
-#~ msgid "Part of speech:"
-#~ msgstr "Часьціна мовы:"
-
-#~ msgid "Example:"
-#~ msgstr "Прыклад:"
-
-#~ msgid "Main body:"
-#~ msgstr "Артыкул:"
-
-#~ msgid "Cross-reference:"
-#~ msgstr "Перакрыжаваныя спасылкі:"
-
-#~ msgid "Floppy formatter"
-#~ msgstr "Фарматавальнік гнуткіх дыскаў"
-
-#~ msgid "(aborted)"
-#~ msgstr "(аваспын)"
-
-#~ msgid "Search for Files Error"
-#~ msgstr "Пошук для памылак файлаў"
-
-#~ msgid "File Name Entry"
-#~ msgstr "Поле назвы файла"
-
-#~ msgid "Starting folder entry"
-#~ msgstr "Поле пачатковае тэчкі"
-
-#~ msgid "Open %d Files?"
-#~ msgstr "Адкрыць %d файлаў?"
-
-#~ msgid "Can't Display Location"
-#~ msgstr "Немагчыма адлюстраваць мейсца"
-
-#~ msgid ""
-#~ "Cannot save search results.\n"
-#~ "\"%s\" is a folder."
-#~ msgstr ""
-#~ "Немагчыма захаваць файл вынікаў.\n"
-#~ "\"%s\" зьяўляецца тэчкай."
-
-#~ msgid "File \"%s\" already exists. Overwrite?"
-#~ msgstr "Файл \"%s\" ужо існуе. Перазапісаць?"
-
-#~ msgid "Cannot save search results to the file \"%s\"."
-#~ msgstr "Немагчыма захаваць файл вынікаў у файл \"%s\"."
-
-#~ msgid "Expander Size"
-#~ msgstr "Памер пашыральніка"
-
-#~ msgid "Size of the expander arrow"
-#~ msgstr "Памер плошчы пашыральніка"
-
-#~ msgid "%Y%m%d%H%M%S"
-#~ msgstr "%d%m%Y%H%M%S"
-
-#~ msgid ""
-#~ "This program is part of the GNOME project. Logview comes with ABSOLUTELY "
-#~ "NO WARRANTY. This is free software, and you are welcome to redistribute "
-#~ "it under the conditions of the GNU General Public Licence. The log icon "
-#~ "is a courtesy of Tuomas Kuosmanen (a.k.a tigert)."
-#~ msgstr ""
-#~ "Гэтая праграма - частка праекту Gnome для Linux. Яна дастаўляецца "
-#~ "АБСАЛЮТНА БЕЗ УСЯКІХ ГАРАНТЫЯЎ. Гэта вольнае праграмовае забесьпячэньне й "
-#~ "вы можаце распаўсюджваць яго на умовах GNU GPL. Значка зроблена Tuomas "
-#~ "Kuosmanen (a.k.a tigert)."
-
-#~ msgid "Copyright (C) 1998"
-#~ msgstr "Аўтарскія правы (C) 1998"
-
-#~ msgid "Log stats"
-#~ msgstr "Стан часопіса"
-
-#~ msgid "Ac_tions"
-#~ msgstr "Дз_еяньні"
-
-#~ msgid "Zoom view"
-#~ msgstr "Маштаб прагляду"
-
-#~ msgid "GNOME Calculator"
-#~ msgstr "Калькулятар GNOME"
-
-#~ msgid "(C) 1998 Free Software Foundation, Inc."
-#~ msgstr "(C) 1998 Фонд Вольнага Праграмнага Забесьпячэньня"
-
-#~ msgid "Simple double precision calculator similar to xcalc"
-#~ msgstr "Просты калькулятар з падвойнай дакладнасьцю кшталту xcalc"
-
-#~ msgid "_Calculator"
-#~ msgstr "_Калькулятар"
-
-#~ msgid "Calculator"
-#~ msgstr "Калькулятар"
-
-#~ msgid "inf"
-#~ msgstr "інф"
-
-#~ msgid "DEG"
-#~ msgstr "ГР"
-
-#~ msgid "RAD"
-#~ msgstr "РАД"
-
-#~ msgid "GRAD"
-#~ msgstr "ГРАД"
-
-#~ msgid "1/x"
-#~ msgstr "1/x"
-
-#~ msgid "Inverse"
-#~ msgstr "Івэртаваць"
-
-#~ msgid "x<sup>2</sup>"
-#~ msgstr "x<sup>2</sup>"
-
-#~ msgid "Square"
-#~ msgstr "Узьвесьці ў квадрат"
-
-#~ msgid "SQRT"
-#~ msgstr "КВ.КОР"
-
-#~ msgid "CE/C"
-#~ msgstr "CE/C"
-
-#~ msgid "AC"
-#~ msgstr "AC"
-
-#~ msgid "Reset"
-#~ msgstr "Скінуць"
-
-#~ msgid "INV"
-#~ msgstr "СДВ"
-
-#~ msgid "Inverse trigonometry/log function"
-#~ msgstr "Івэртаваць трыганамэтрычную функцыю ці лягарыфм"
-
-#~ msgid "sin"
-#~ msgstr "sin"
-
-#~ msgid "Sine"
-#~ msgstr "Вылічыць сінус"
-
-#~ msgid "tan"
-#~ msgstr "tg"
-
-#~ msgid "Tangent"
-#~ msgstr "Вылічыць тангенс"
-
-#~ msgid " DEG  "
-#~ msgstr "  ГР  "
-
-#~ msgid "Switch degrees / radians / grad"
-#~ msgstr "Пераключыць градусы / радыяны / грады"
-
-#~ msgid "e"
-#~ msgstr "e"
-
-#~ msgid "Base of Natural Logarithm"
-#~ msgstr "База натуральнага лягарыфма"
-
-#~ msgid "EE"
-#~ msgstr "EE"
-
-#~ msgid "Add digit"
-#~ msgstr "Дадаць лічбу"
-
-#~ msgid "log"
-#~ msgstr "log"
-
-#~ msgid "Base 10 Logarithm"
-#~ msgstr "База дзесяткавага лягарыфма"
-
-#~ msgid "ln"
-#~ msgstr "ln"
-
-#~ msgid "Natural Logarithm"
-#~ msgstr "Натуральны лягарыфм"
-
-#~ msgid "x<sup>y</sup>"
-#~ msgstr "x<sup>y</sup>"
-
-#~ msgid "Power"
-#~ msgstr "Узьвесьці ў ступень"
-
-#~ msgid "PI"
-#~ msgstr "Пі"
-
-#~ msgid "x!"
-#~ msgstr "x!"
-
-#~ msgid "Factorial"
-#~ msgstr "Фактарыял"
-
-#~ msgid "("
-#~ msgstr "("
-
-#~ msgid "Opening Parenthesis"
-#~ msgstr "Дужка, якая адчыняе"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "Closing Parenthesis"
-#~ msgstr "Дужка, якая зачыняе"
-
-#~ msgid "/"
-#~ msgstr "/"
-
-#~ msgid "Divide by"
-#~ msgstr "Падзяліць на"
-
-#~ msgid "STO"
-#~ msgstr "ЗАХ"
-
-#~ msgid ""
-#~ "Store the value in the\n"
-#~ "display field in memory"
-#~ msgstr ""
-#~ "Захаваць значэньне\n"
-#~ "на дысплэі ў памяці"
-
-#~ msgid "7"
-#~ msgstr "7"
-
-#~ msgid "8"
-#~ msgstr "8"
-
-#~ msgid "9"
-#~ msgstr "9"
-
-#~ msgid "Multiply by"
-#~ msgstr "Памножыць на"
-
-#~ msgid "RCL"
-#~ msgstr "ВЫК"
-
-#~ msgid ""
-#~ "Display the value in memory\n"
-#~ "in the display field"
-#~ msgstr ""
-#~ "Выклікаць значэньне\n"
-#~ "з памяці на дысплэй"
-
-#~ msgid "4"
-#~ msgstr "4"
-
-#~ msgid "5"
-#~ msgstr "5"
-
-#~ msgid "6"
-#~ msgstr "6"
-
-#~ msgid "-"
-#~ msgstr "-"
-
-#~ msgid "Subtract"
-#~ msgstr "Вылічыць"
-
-#~ msgid "SUM"
-#~ msgstr "СУМ"
-
-#~ msgid ""
-#~ "Add the value in the display\n"
-#~ "field to the value in memory"
-#~ msgstr ""
-#~ "Дадаць значэньне на дысплэі\n"
-#~ "да захаванага ў памяці"
-
-#~ msgid "1"
-#~ msgstr "1"
-
-#~ msgid "2"
-#~ msgstr "2"
-
-#~ msgid "3"
-#~ msgstr "3"
-
-#~ msgid "+"
-#~ msgstr "+"
-
-#~ msgid "Add"
-#~ msgstr "Скласьці"
-
-#~ msgid "EXC"
-#~ msgstr "АБМ"
-
-#~ msgid ""
-#~ "Exchange the values in the\n"
-#~ "display field and memory"
-#~ msgstr ""
-#~ "Абмяняць значэньні\n"
-#~ "на дысплэі й ў памяці"
-
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "."
-#~ msgstr ","
-
-#~ msgid "Decimal Point"
-#~ msgstr "Дзесяткавая коска"
-
-#~ msgid "+/-"
-#~ msgstr "+/-"
-
-#~ msgid "Change sign"
-#~ msgstr "Зьмяніць знак"
-
-#~ msgid "="
-#~ msgstr "="
-
-#~ msgid "Calculate"
-#~ msgstr "Вылічыць"
-
-#~ msgid "Perform simple calculations"
-#~ msgstr "Выканаць простыя вылічэньні"
-
-#~ msgid "Character Map"
-#~ msgstr "Табліца сымбаляў"
-
-#~ msgid "Insert special characters into documents"
-#~ msgstr "Уставіць адмысловыя сымбалі ў дакумэнты"
-
-#~ msgid "_Insert"
-#~ msgstr "_Уставіць"
-
-#~ msgid "Character c_ode:"
-#~ msgstr "К_од сымбалю:"
-
-#~ msgid "Ch_aracter:"
-#~ msgstr "Сы_мбаль:"
-
-#~ msgid "Character Code"
-#~ msgstr "Код сымбалю"
-
-#~ msgid "Select character code"
-#~ msgstr "Выбярыце код сымбалю"
-
-#~ msgid "Character"
-#~ msgstr "Сымбаль"
-
-#~ msgid "Character to insert"
-#~ msgstr "Сымбаль для ўстаўкі"
-
-#~ msgid "GNOME Character Map"
-#~ msgstr "Табліца сымбаляў GNOME"
-
-#~ msgid ""
-#~ "Select, copy and paste characters from your font into other applications"
-#~ msgstr ""
-#~ "Выбраць, скапіяваць і ўставіць сымбалі са шрыфта ў іншыя дастасаваньні"
-
-#, fuzzy
-#~ msgid "Character code: (Unicode) U+%04lX"
-#~ msgstr "Код сымбалю: (Юнікод) U%04lX"
-
-#, fuzzy
-#~ msgid "Character code: (Unicode) U+%04lX, (%s) 0x%s"
-#~ msgstr "Код сымбалю: (Юнікод) U%04lX, (%s) 0x%s"
-
-#~ msgid "Text copied to clipboard..."
-#~ msgstr "Тэкст скапіяваны ў буфэр абмена..."
-
-#~ msgid "Text cut to clipboard..."
-#~ msgstr "Тэкст выразаны ў буфэр абмена..."
-
-#~ msgid "Text pasted from clipboard..."
-#~ msgstr "Тэкст устаўлены з буфэра абмена..."
-
-#~ msgid "Action Toolbar"
-#~ msgstr "Панэль дзеяньняў"
-
-#~ msgid "_Text to copy:"
-#~ msgstr "_Тэкст для капіяваньня:"
-
-#~ msgid "Entry"
-#~ msgstr "Элемэнт"
-
-#~ msgid "_Browse..."
-#~ msgstr "Пра_гледзіць..."
-
-#~ msgid "Insert character(s) by choosing character codes."
-#~ msgstr "Уставіць сымбаль(і), выбраўшы коды."
-
-#~ msgid "Ch_aracters"
-#~ msgstr "_Сымбалі"
-
-#~ msgid "GNOME Search Tool"
-#~ msgstr "Інструмэнт пошука Gnome"
-
-#~ msgid ""
-#~ "Executing arbitrary programs that you downloaded from the network might "
-#~ "be dangerous.\n"
-#~ "\n"
-#~ "Are you sure you want to run `%s'?"
-#~ msgstr ""
-#~ "Выкананьне звычайных праграмаў, якія вы запампавалі з сеціва, можа быць "
-#~ "небясьпечным\n"
-#~ "\n"
-#~ "Вы упэўненыя ў тым, што жадаеце выканаць \"%s\"?"
-
-#~ msgid "Could not access file permissions"
-#~ msgstr "Ня атрымалася атрымаць правы доступу да файла"
-
-#~ msgid "Could not execute the file `%s' due to a permission problem"
-#~ msgstr "Ня атрымалася выканаць файл \"%s\" з-за праблем з правамі доступу"
-
-#~ msgid "Failure at executing `%s'"
-#~ msgstr "Збой пад час выкананьня \"%s\""
-
-#~ msgid "It was not possible to open the file `%s'"
-#~ msgstr "Немагчыма адчыніць файл \"%s\""
-
-#~ msgid "The file `%s' is empty"
-#~ msgstr "Файл \"%s\" пусты"
-
-#~ msgid "This is a library and can not be executed"
-#~ msgstr "Гэта бібліятэка, яна ня можа быць выканана"
-
-#~ msgid "The file is a core file and can not be executed"
-#~ msgstr "Гэты файл зьяўляецца файлам core і ня можа быць выкананы"
-
-#~ msgid "This is an unknown kind of executable"
-#~ msgstr "Невядомы тып файла"
-
-#~ msgid ""
-#~ "The executable is for a different platform and can not be executed on "
-#~ "this system"
-#~ msgstr ""
-#~ "Запускны файл прызначаны для іншай плятформы й ня можа быць выкананы на "
-#~ "гэтае сыстэме"
-
-#~ msgid "File is not named"
-#~ msgstr "Файл ня мае назвы"
-
-#~ msgid "File is _named:"
-#~ msgstr "Файл _мае назву:"
-
-#, fuzzy
-#~ msgid "Select the 'File matches regular expression' constraint"
-#~ msgstr "Супадае са сталым выразам"
-
-#~ msgid ""
-#~ "Client for MIT dictionary server.\n"
-#~ "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
-#~ msgstr ""
-#~ "Кліент для паслужніку слоўнікаў MIT.\n"
-#~ "Web: http://gdict.dhs.org/, http://www.psilord.com/code/"
-
-#~ msgid "Archive Generator"
-#~ msgstr "Генератар архіваў"
-
-#~ msgid "Create compressed archives containing many files"
-#~ msgstr "Стварыце сьціснутыя архівы, якія утрымліваюць шмат файлаў"
-
-#~ msgid ""
-#~ "Number of files: %d\n"
-#~ "Number of folders: %d"
-#~ msgstr ""
-#~ "Колькасьць файлаў: %d\n"
-#~ "Колькасьць каталёгаў: %d"
-
-#~ msgid ""
-#~ "No files or folders, drop files or folders\n"
-#~ "above to add them to the archive"
-#~ msgstr ""
-#~ "Няма файлаў ці каталёгаў. Перацягніце файлы ці\n"
-#~ "каталёгі, каб дадаць іх у архіў"
-
-#~ msgid "%s removed"
-#~ msgstr "%s выдалена"
-
-#~ msgid "Archive.tar.gz"
-#~ msgstr "Archive.tar.gz"
-
-#~ msgid "GNOME Archive Generator"
-#~ msgstr "Генератар архіваў GNOME"
-
-#~ msgid "Drag files in to make archives"
-#~ msgstr "Перацягніце файлы, каб стварыць архівы"
-
-#~ msgid "All files selected"
-#~ msgstr "Усе файлы вылучаны"
-
-#~ msgid "All files removed"
-#~ msgstr "Усе файлы выдалены"
-
-#~ msgid "No filename selected"
-#~ msgstr "Назва файлу ня выбрана"
-
-#~ msgid "File exists, overwrite?"
-#~ msgstr "Файл існуе, перапісаць?"
-
-#~ msgid "%s created"
-#~ msgstr "%s створаны"
-
-#~ msgid "No items to archive"
-#~ msgstr "Няма элемэнтаў для архіваваньня"
-
-#~ msgid "Save Results"
-#~ msgstr "Захаваць вынікі"
-
-#~ msgid "File does not exists"
-#~ msgstr "Файл ня існуе"
-
-#~ msgid "_Add file or folder..."
-#~ msgstr "Да_даць файл ці каталёг..."
-
-#~ msgid "Add a file or folder to archive"
-#~ msgstr "Дадаць файл ці каталёг да архіву"
-
-#~ msgid "_Create archive..."
-#~ msgstr "_Стварыць архіў..."
-
-#~ msgid "Create a new archive from the items"
-#~ msgstr "Стварыць новы архіў з элемэнтаў"
-
-#~ msgid "R_emove All"
-#~ msgstr "Выдаліць _усе"
-
-#~ msgid "Drop files here to add them to the archive."
-#~ msgstr "Кіньце файлы сюды, каб дадаць іх да архіву."
-
-#~ msgid "_Create Archive"
-#~ msgstr "_Стварыць архіў"
-
-#~ msgid ""
-#~ "Drag this button to the destination where you want the archive to be "
-#~ "created or press it to pop up a file selection dialog."
-#~ msgstr ""
-#~ "Перанясіце гэтую кнопку на мейсца, дзе вы жадаеце, каб архіў быў "
-#~ "створаны, ці націсьніце яе для выкліку дыялёгу выбару файлаў."
-
-#~ msgid "Cannot find proper icons anywhere!"
-#~ msgstr "Немагчыма адшукаць патрэбныя значкі!"
-
-#~ msgid ""
-#~ "Cannot find the archive (tar) program!\n"
-#~ "This is the program used for creating archives."
-#~ msgstr ""
-#~ "Немагчыма адшукаць праграму tar!\n"
-#~ "Гэтая праграма выкарыстоўваецца для стварэньня архіваў."
-
-#~ msgid "del"
-#~ msgstr "del"
-
-#~ msgid " %s: Character code %d"
-#~ msgstr "%s: код сымбалю %d"
-
-#~ msgid "Gnome Character Map"
-#~ msgstr "Табліца сымбаляў Gnome"
-
-#~ msgid "De_fault"
-#~ msgstr "Дапомна"
-
-#~ msgid "EBad block at block %lu"
-#~ msgstr "Пашкоджаны блёк у блёке %lu"
-
-#~ msgid "DOS (fat)"
-#~ msgstr "DOS (fat)"
-
-#~ msgid "Format a Floppy"
-#~ msgstr "Фарматаваць дыскету"
-
-#~ msgid "_Quick format"
-#~ msgstr "_Хуткае фарматаваньне"
-
-#~ msgid "Don't search mounted filesystems"
-#~ msgstr "Не шукаць на далучаных файлавых сыстэмах"
-
-#~ msgid "Process folder contents depth first"
-#~ msgstr "Апрацоўваць зьмест каталёгаў сьпярша ўглыбь"
-
-#~ msgid "Invalid user or group"
-#~ msgstr "Карыстальнік ці група ня йснуе"
-
-#~ msgid "Last time modified"
-#~ msgstr "Час апошняе зьмены"
-
-#~ msgid "folder"
-#~ msgstr "тэчка"
-
-#~ msgid "program"
-#~ msgstr "праграма"
-
-#~ msgid "symbolic link"
-#~ msgstr "сымбалічнае лучыва"
-
-#~ msgid ""
-#~ "Cannot perform the search.\n"
-#~ "The Bourne shell was not found\n"
-#~ "It is typically installed as /bin/sh or /usr/bin/sh."
-#~ msgstr ""
-#~ "Ня атрымалася выканаць пошук.\n"
-#~ "Ня адшукана абалонка Борну.\n"
-#~ "Звычайна яна ўсталявана як /bin/sh ці /usr/bin/sh."
-
-#~ msgid "Cannot perform the search. Please specify a search criteria."
-#~ msgstr "Немагчыма выканаць пошук. Укажыце крытэр пошуку."
-
-#~ msgid ""
-#~ "A search is already running.  Please wait for the search to complete or "
-#~ "cancel it."
-#~ msgstr "Пошук ужо працуе. Паяакайце покуль ён скончыцца ці адмяніце яго."
-
-#~ msgid "Start folder does not exist"
-#~ msgstr "Пачатковы каталёг ня існуе"
-
-#~ msgid ""
-#~ "Cannot show the search command line. Please specify a search criteria."
-#~ msgstr "Немагчыма паказаць камандны радок пошуку. Укажыце крытэр пошуку."
-
-#~ msgid "Search Command Line"
-#~ msgstr "Камандны радок пошуку"
-
-#~ msgid ""
-#~ "This is the command line that can be used to execute this search\n"
-#~ "from the console.\n"
-#~ "\n"
-#~ "C_ommand:"
-#~ msgstr ""
-#~ "Гэта камандны радок, які можа быць выкарыстаны для выкананьня гэтага "
-#~ "пошуку ў кансолі:\n"
-#~ "\n"
-#~ "Ка_манда:"
-
-#~ msgid "Command"
-#~ msgstr "Каманда"
-
-#~ msgid "Command Line Entry"
-#~ msgstr "Камандны радок"
-
-#~ msgid "Use this command line to execute the search from console"
-#~ msgstr "Выкарыстоўваць гэтую каманду для выкананьня пошуку з кансолі"
-
-#~ msgid "No viewer available for this mime type."
-#~ msgstr "Няма праграмы прагляду для файлаў с гэткім тыпам MIME."
-
-#~ msgid "Enabled"
-#~ msgstr "Уключана"
-
-#~ msgid "Toggle On/Off to enable/disable the rule"
-#~ msgstr "Дазваляе/Забараняе выкарыстаньне правіла"
-
-#~ msgid "Rules:"
-#~ msgstr "Правілы:"
-
-#~ msgid "A_dd Rule:"
-#~ msgstr "Дадаць _правіла:"
-
-#~ msgid "Click to Add a Rule"
-#~ msgstr "Клікніце тут, каб дадаць умову"
-
-#~ msgid "Click to Start the Search"
-#~ msgstr "Клікніце тут, каб пачаць пошук"
-
-#~ msgid "Click to Stop the Search"
-#~ msgstr "Клікніце тут, каб спыніць пошук"
-
-#~ msgid "Simple"
-#~ msgstr "Просты"
-
-#~ msgid "(C) 1998,2002 the Free Software Foundation"
-#~ msgstr "(C) 1998, 2002 Фонд Вольнага Праграмнага Забясьпячэньня"
-
-#~ msgid "Frontend to the unix find/locate commands"
-#~ msgstr "Абалонка для камандаў UNIX find/locate"
-
-#~ msgid "S_how Command..."
-#~ msgstr "_Паказаць каманду..."
-
-#~ msgid "Show the command used to perform the search"
-#~ msgstr "Адлюстраваць каманду, якая выкарыстоўваецца для выкананьня пошуку"
-
-#~ msgid "Save the search results"
-#~ msgstr "Захаваць вынікі пошуку"
-
-#~ msgid "Sear_ch"
-#~ msgstr "По_шук"
-
-#~ msgid "Search Tool"
-#~ msgstr "Інструмэнт пошуку"
-
-#~ msgid "fixed 12"
-#~ msgstr "fixed 12"
-
-#~ msgid "fixed Bold 12"
-#~ msgstr "fixed Bold 12"
-
-#~ msgid "fixed 10"
-#~ msgstr "fixed 10"
-
-#~ msgid "fixed Bold 8"
-#~ msgstr "fixed Bold 8"
-
-#~ msgid "Helvetica 14"
-#~ msgstr "Helvetica 14"
-
-#~ msgid "Helvetica Bold 14"
-#~ msgstr "Helvetica Bold 14"
-
-#~ msgid "Helvetica 12"
-#~ msgstr "Helvetica 12"
-
-#~ msgid "Helvetica Bold 12"
-#~ msgstr "Helvetica Bold 12"
-
-#~ msgid "Helvetica 10"
-#~ msgstr "Helvetica 10"
-
-#~ msgid "Helvetica Bold 10"
-#~ msgstr "Helvetica Bold 10"
-
-#~ msgid "Log:"
-#~ msgstr "Часопіс:"
-
-#~ msgid "Out of memory!\n"
-#~ msgstr "Недахоп памяці!\n"
-
-#~ msgid "Switch log"
-#~ msgstr "Пераключыць часопіс"
-
-#~ msgid "About..."
-#~ msgstr "Пра праграму..."
-
-#~ msgid "Info about logview"
-#~ msgstr "Інфармацыя пра праграму logview"
-
-#~ msgid "Cannot load required fonts, cannot continue"
-#~ msgstr "Немагчыма загрузіць патрэбны шрыфт, далейшае выкананьне немагчыма"
-
-#~ msgid "Add >>"
-#~ msgstr "Дадаць >>"
-
-#~ msgid "Remove <<"
-#~ msgstr "<< Прыбраць"
-
-#~ msgid "Hide app"
-#~ msgstr "Схаваць дастасаваньне"
-
-#~ msgid "hostname column width ( 0 to hide this column ): "
-#~ msgstr "шырыня слупку імя хосту (0 каб схаваць гэты слупок): "
-
-#~ msgid "Columns"
-#~ msgstr "Слупкі"
-
-#~ msgid "Log line detail for <No log loaded>"
-#~ msgstr "Падрабязны радок логу для <Лог не загружаны>"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-
-#~ msgid "Default database. ! indicates all databases"
-#~ msgstr "База данных по умолчанию. \"!\" обозначает все базы данных"
-
-#~ msgid "Default strategy"
-#~ msgstr "Исходная стратегия"
-
-#~ msgid "Format another floppy?"
-#~ msgstr "Отформатировать другую дискету?"
-
-#~ msgid "x^2"
-#~ msgstr "x^2"
-
-#~ msgid "x^y"
-#~ msgstr "x^y"
-
-#~ msgid "Add..."
-#~ msgstr "Добавить..."
-
-#~ msgid "Edit..."
-#~ msgstr "Изменить..."
-
-#~ msgid "description:"
-#~ msgstr "описание:"
-
-#~ msgid "_Floppy Device:"
-#~ msgstr "_Дисковод:"
-
-#~ msgid "Dictionary Applet"
-#~ msgstr "Словарь"
-
-#~ msgid "Press button to look up any highlighted text in a dictionary"
-#~ msgstr "Нажмите кнопку, чтобы поискать выделенный текст в словаре"
-
-#~ msgid "Cannot start the archive (tar) program"
-#~ msgstr "Невозможно запустить программу архивации (tar)"
-
-#~ msgid "The GNOME Calculator"
-#~ msgstr "Калькулятор Gnome"
-
-#~ msgid "Run in analog (slide rule) mode"
-#~ msgstr "Запускать в аналоговом режиме"
-
-#~ msgid "Shift"
-#~ msgstr "Сдвинуть"
-
-#~ msgid "Recall"
-#~ msgstr "Вызвать из памяти"
-
-#~ msgid "Sum"
-#~ msgstr "Сложить с содержимым памяти"
-
-#~ msgid "Exchange"
-#~ msgstr "Обменять с содержимым памяти"
-
-#~ msgid ""
-#~ "The Gnome equalivant of Microsoft Windows' Character Map. Warning: might "
-#~ "contain bad English."
-#~ msgstr ""
-#~ "Эквивалент MS Win Charmap для GNOME. Внимание: может содержать "
-#~ "неправильный английский."
-
-#~ msgid "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-12-*-*-*-p-*-koi8-*"
-
-#~ msgid "-*-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*,*-r-*"
-#~ msgstr "-*-helvetica-bold-r-normal-*-*-180-*-*-*-*-koi8-*"
-
-#~ msgid "_Browse Characters..."
-#~ msgstr "Просмотреть символы..."
-
-#~ msgid "_Text Toolbar"
-#~ msgstr "Показывать панель текста"
-
-#~ msgid "View or hide the text toolbar"
-#~ msgstr "Показывать или скрывать панель текста"
-
-#~ msgid "View or hide the statusbar"
-#~ msgstr "Показывать или скрывать строку состояния"
-
-#~ msgid "_Insert at end"
-#~ msgstr "Вставлять в конце"
-
-#~ msgid "Insert every selected character at the end of the text entry"
-#~ msgstr "Вставлять каждый выделенный символ в конце текстовой записи"
-
-#~ msgid "Set the buttons to be focusable or not"
-#~ msgstr "Установить, будут ли кнопки фокусирумыми или нет"
-
-#~ msgid "Spell"
-#~ msgstr "Проверить"
-
-#~ msgid "Spell checker"
-#~ msgstr "Проверка правописания"
-
-#~ msgid "Results"
-#~ msgstr "Результаты"
-
-#~ msgid "The Gnome Search Tool"
-#~ msgstr "Поисковик Gnome"
-
-#~ msgid "Logview"
-#~ msgstr "Просмотр журнала"
-
-#~ msgid "Export log..."
-#~ msgstr "Экспортировать журнал..."
-
-#~ msgid "Export log"
-#~ msgstr "Экспортировать журнал"
-
-#~ msgid "Exit program"
-#~ msgstr "Выйти из программы"
-
-#~ msgid "Zoom"
-#~ msgstr "Масштаб"
-
-#~ msgid "Select...               "
-#~ msgstr "Выбрать...              "
-
-#~ msgid "Filter..                "
-#~ msgstr "Фильтр...               "
-
-#~ msgid "Date: "
-#~ msgstr "Дата:"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-*-*-medium-r-normal--*-180-*-*-*-*-koi8-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-bold-r-normal--*-180-*-*-*-*-koi8-*"
-
-#~ msgid "-b&h-lucidatypewriter-medium-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-medium-r-normal--*-180-*-*-*-*-koi8-*"
-
-#~ msgid "-b&h-lucidatypewriter-bold-r-normal-sans-10-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-bold-r-normal--*-180-*-*-*-*-koi8-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-14-*-*-*-*-*-koi8-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-bold-r-normal-*-14-*-*-*-*-*-koi8-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-14-*-*-*-*-*-koi8-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-14-*-*-*-*-*-koi8-*"
-
-#~ msgid "-adobe-helvetica-medium-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-medium-r-normal-*-14-*-*-*-*-*-koi8-*"
-
-#~ msgid "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
-#~ msgstr "-*-helvetica-bold-r-normal-*-14-*-*-*-*-*-koi8-"
-
-#~ msgid "Floppy Density:"
-#~ msgstr "Плотность дискеты:"
-
-#~ msgid "The GNOME Archive Generator"
-#~ msgstr "Генератор архивов GNOME"
-
-#~ msgid "Archive"
-#~ msgstr "Архив"
-
-#~ msgid "Set _Server"
-#~ msgstr "Установить сервер"
-
-#~ msgid "Set _Port"
-#~ msgstr "Установить порт"
-
-#~ msgid "The server you specified could not be found."
-#~ msgstr "Не удалось найти сервер, который вы указали."
-
-#~ msgid "The server could not be found on that port."
-#~ msgstr "Не удалось найти сервер на этом порту."
-
-#~ msgid "Show user preferences"
-#~ msgstr "Показать настройки пользователя"
