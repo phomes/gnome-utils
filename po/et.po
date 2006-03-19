@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils 2.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-04 15:01+0100\n"
-"PO-Revision-Date: 2006-03-10 22:47+0200\n"
+"PO-Revision-Date: 2006-03-19 16:11+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -626,7 +626,7 @@ msgstr "Millal tuleb rakenduse akent maksimeerida"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:1
 msgid "Data_base:"
-msgstr "_Andmebaas:"
+msgstr "Andme_baas:"
 
 #. Transport methods
 #. Translators: this is the same string used in the file
@@ -646,7 +646,7 @@ msgstr "H_osti nimi:"
 #: ../gnome-dictionary/src/gdict-applet.c:231
 #: ../gnome-dictionary/src/gdict-window.c:595
 msgid "Print"
-msgstr "Trükkimine"
+msgstr "Printimine"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:6
 msgid "Source"
@@ -658,7 +658,7 @@ msgstr "Allika nimi"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:8
 msgid "_Advanced settings"
-msgstr "L_aiendatud sätted"
+msgstr "Laie_ndatud sätted"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:9
 msgid "_Description:"
@@ -674,7 +674,7 @@ msgstr "_Printimise kirjatüüp:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:12
 msgid "_Select a dictionary source for looking up words:"
-msgstr ""
+msgstr "_Vali sõnaraamat, millest sõnu otsida:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
 msgid "_Strategy:"
@@ -1350,8 +1350,8 @@ msgstr "Definitsioone ei leitud"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Leiti üks definitsioon"
+msgstr[1] "Leiti %d definitsiooni"
 
 #: ../gnome-dictionary/src/gdict-window.c:362
 #, c-format
@@ -1368,11 +1368,11 @@ msgstr "_Fail"
 
 #: ../gnome-dictionary/src/gdict-window.c:797 ../logview/logview.c:86
 msgid "_Edit"
-msgstr "_Redigeerimine"
+msgstr "_Redaktor"
 
 #: ../gnome-dictionary/src/gdict-window.c:798
 msgid "_Go"
-msgstr "_Mine"
+msgstr "_Liikumine"
 
 #. File menu
 #: ../gnome-dictionary/src/gdict-window.c:802
@@ -1409,7 +1409,7 @@ msgstr "Otsi _järgmist"
 
 #: ../gnome-dictionary/src/gdict-window.c:821
 msgid "Find Pre_vious"
-msgstr "Otsi _eelmist"
+msgstr "Otsi ee_lmist"
 
 #. Go menu
 #: ../gnome-dictionary/src/gdict-window.c:827
