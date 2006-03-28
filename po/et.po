@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils 2.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-04 15:01+0100\n"
-"PO-Revision-Date: 2006-03-19 16:11+0200\n"
+"PO-Revision-Date: 2006-03-27 22:30+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -577,6 +577,9 @@ msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
 msgstr ""
+"Sõnaraamatuallika puhul vaikimisi kasutatav otsingustrateegia (võimaluse "
+"korral). Vaikimisi strateegia on 'exact', mis tähendab täpsete vastete "
+"otsingut."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -586,6 +589,7 @@ msgstr "Kasutuseloleva sõnaraamatu allika nimi"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
+"Sõnadefinitsioonide hankimiseks kasutatav sõnaraamatuallikas."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:15
 msgid ""
@@ -882,11 +886,11 @@ msgstr "Definitsioonikasti jaoks kasutatav kirjatüüp"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:731
 msgid "Emphasys Color"
-msgstr "Rõhutamise värvus"
+msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:732
 msgid "Color of emphasised text"
-msgstr "Rõhutatud teksti värvus"
+msgstr ""
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:737
 msgid "Link Color"
@@ -919,7 +923,7 @@ msgstr "Edenemine"
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1078
 #, c-format
 msgid "Definition for '%s' (%d/%d)"
-msgstr ""
+msgstr "'%s' definitsioon (%d/%d)"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1280
 msgid "Error while looking up definition"
@@ -1313,7 +1317,7 @@ msgstr "Uue sõnaraamatuallika lisamine"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:646
 msgid "Remove the currently selected dictionary source"
-msgstr "Käesolevalt valitud sõnaraamatuallika eemaldamine"
+msgstr ""
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:661
 msgid "Set the font used for printing the definitions"
@@ -2476,7 +2480,7 @@ msgstr "Süsteemi logiraamat"
 
 #: ../logview/gnome-system-log.desktop.in.h:2
 msgid "View the system log file"
-msgstr "Vaata süsteemi logiraamatut"
+msgstr "Süsteemi logiraamatu vaatamine"
 
 #: ../logview/log_repaint.c:179
 #, c-format
@@ -2816,4 +2820,3 @@ msgstr "Selle failisüsteemi puhul pole failimonitooring toetatud.\n"
 #: ../logview/monitor.c:88
 msgid "Gnome-VFS Error.\n"
 msgstr "Gnome-VFS viga.\n"
-
