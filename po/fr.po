@@ -9,14 +9,15 @@
 # Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
 # Baptiste Mille-Mathias <bmm80@free.fr>, 2005.
 # Cyprien Le Pannérer <cyplp@free.fr>, 2006.
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.13.96\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-12 09:46+0100\n"
-"PO-Revision-Date: 2006-02-26 15:45+0100\n"
-"Last-Translator: Cyprien Le Pannérer <cyprien@placenet.fr>\n"
+"POT-Creation-Date: 2006-05-21 12:03+0200\n"
+"PO-Revision-Date: 2006-04-29 13:46+0100\n"
+"Last-Translator: Jonathan Ernst <jonathan@ernstfamily.ch>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +60,7 @@ msgid ""
 "mtools as the preferred FAT formatting backend."
 msgstr ""
 "VRAI pour définir mkdosfs comme utilitaire préféré de formatage FAT ou FAUX "
-"pour définir mtools comme utilitaire préféré de formatage FAT"
+"pour définir mtools comme utilitaire préféré de formatage FAT."
 
 #: ../gfloppy/gfloppy.schemas.in.h:6
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
@@ -134,7 +135,7 @@ msgstr ""
 msgid "Insufficient permissions to open floppy device %s."
 msgstr ""
 "Permissions insuffisantes pour ouvrir le périphérique du lecteur de "
-"disquettes %s"
+"disquettes %s."
 
 #: ../gfloppy/src/fdformat.c:111 ../gfloppy/src/fdformat.c:196
 msgid ""
@@ -280,7 +281,7 @@ msgstr "Vérification des mauvais blocs... (cela peut prendre du temps)"
 
 #: ../gfloppy/src/gfloppy.c:527
 msgid "Error while checking the bad blocks."
-msgstr "Erreur lors de la vérification des blocs défectueux..."
+msgstr "Erreur lors de la vérification des blocs défectueux."
 
 #: ../gfloppy/src/gfloppy2.glade.h:1
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:1
@@ -445,7 +446,7 @@ msgid "DEVICE"
 msgstr "PÉRIPHÉRIQUE"
 
 #: ../gfloppy/src/progress.c:126
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been "
 "found and marked."
@@ -454,12 +455,10 @@ msgid_plural ""
 "been found and marked."
 msgstr[0] ""
 "La disquette a été formaté, mais <b>%d bloc défectueux</b> (sur %d) a été "
-"trouvé et marqué.La disquette a été formaté, mais <b>%d blocs défectueux</b> "
-"(sur %d) ont été trouvés et marqués."
+"trouvé et marqué."
 msgstr[1] ""
-"La disquette a été formaté, mais <b>%d bloc défectueux</b> (sur %d) a été "
-"trouvé et marqué.La disquette a été formaté, mais <b>%d blocs défectueux</b> "
-"(sur %d) ont été trouvés et marqués."
+"La disquette a été formatée, mais <b>%d blocs défectueux</b> (sur %d) ont "
+"été trouvés et marqués."
 
 #: ../gfloppy/src/progress.c:129
 msgid "Floppy formatted successfully."
@@ -497,7 +496,7 @@ msgstr "À _propos"
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:3
 #: ../gnome-dictionary/src/gdict-window.c:799 ../logview/logview.c:88
 msgid "_Help"
-msgstr "_Aide"
+msgstr "Aid_e"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:4
 msgid "_Look Up Selected Text"
@@ -572,7 +571,6 @@ msgstr ""
 "Cette clé est déprécié et est inutilisée."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
-#, fuzzy
 msgid "The font to be used when printing"
 msgstr "La police utilisée lors de l'impression"
 
@@ -592,14 +590,13 @@ msgstr ""
 "données sur un serveur donné"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:12
-#, fuzzy
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
 msgstr ""
 "Le nom de la stratégie de recherche par défaut à utiliser sur une source de "
-"dictionnaire, si elle est possible. La stratégie par défaut est 'exacte' qui "
-"signifie une correspondance exacte entre les mots."
+"dictionnaire, si elle est possible. La stratégie par défaut est « exacte », "
+"ce qui signifie une correspondance exacte entre les mots."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -610,7 +607,7 @@ msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
 "Le nom de la source de dictionnaire utilisée pour rechercher les définitions "
-"des mots. "
+"des mots."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:15
 msgid ""
@@ -705,22 +702,20 @@ msgid "_Port:"
 msgstr "_Port :"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:11
-#, fuzzy
 msgid "_Print font:"
-msgstr "_Police d'impression : "
+msgstr "_Police d'impression :"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:12
 msgid "_Select a dictionary source for looking up words:"
-msgstr "_Sélectionnez une source de dictionnaire pour rechercher des mots : "
+msgstr "_Sélectionnez une source de dictionnaire pour rechercher des mots :"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
 msgid "_Strategy:"
 msgstr "Stratégi_e :"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:14
-#, fuzzy
 msgid "_Transport:"
-msgstr "_Transport : "
+msgstr "_Transport :"
 
 #: ../gnome-dictionary/data/french.desktop.in.h:1
 msgid "French Dictionaries from Wikipedia"
@@ -771,18 +766,18 @@ msgstr "Connection impossible au serveur de dictionnaire « %s:%d'"
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr ""
-"Échec de la recherche pour l'hôte « %s' : pas de ressources convenables "
+"Échec de la recherche pour l'hôte « %s » : pas de ressources convenables "
 "trouvées"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1055
 #, c-format
 msgid "Lookup failed for host '%s': %s"
-msgstr "Échec de la recherche pour l'hôte « %s':%s"
+msgstr "Échec de la recherche pour l'hôte « %s »:%s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1088
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr "Échec de la recherche pour l'hôte « %s' : hôte non trouvé"
+msgstr "Échec de la recherche pour l'hôte « %s » : hôte non trouvé"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1140
 #, c-format
@@ -800,42 +795,43 @@ msgid ""
 ": '%s'"
 msgstr ""
 "Impossible d'analyser la réponse du serveur de dictionnaire\n"
-": « %s'"
+": « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1188
 #, c-format
 msgid "No definitions found for '%s'"
-msgstr "Pas de définitions trouvées pour « %s'"
+msgstr "Pas de définitions trouvées pour « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1203
 #, c-format
 msgid "Invalid database '%s'"
-msgstr "Base de données invalide « %s'"
+msgstr "Base de données invalide « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1218
 #, c-format
 msgid "Invalid strategy '%s'"
-msgstr "Stratégie invalide « %s'"
+msgstr "Stratégie invalide « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1233
 #, c-format
 msgid "Bad command '%s'"
-msgstr "Mauvaise commande « %s'"
+msgstr "Mauvaise commande « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1248
 #, c-format
 msgid "Bad parameters for command '%s'"
-msgstr "Mauvais paramêtres pour la commande « %s'"
+msgstr "Mauvais paramêtres pour la commande « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1263
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr "Pas de bases de données trouvées sur le serveur de dictionnaire  « %s'"
+msgstr ""
+"Pas de bases de données trouvées sur le serveur de dictionnaire  « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1278
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "Pas de stratégies trouvées pour le serveur de dictionnaire « %s'"
+msgstr "Pas de stratégies trouvées pour le serveur de dictionnaire « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1679
 #, c-format
@@ -848,8 +844,8 @@ msgid ""
 "Error while reading reply from server:\n"
 "%s"
 msgstr ""
-"Érreur lors de la lecture de la réponse du serveur :\n"
-"%s "
+"Erreur lors de la lecture de la réponse du serveur :\n"
+"%s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1791
 msgid "No hostname defined for the dictionary server"
@@ -863,12 +859,12 @@ msgstr "Impossible d'ouvrir une socket"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1868
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
-msgstr "Impossible de mettre le canal en non-bloquant : %s"
+msgstr "Impossible de mettre le canal en non-bloquant : %s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1883
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Impossible de se connecter au serveur de dictionnaire « %s:%d'"
+msgstr "Impossible de se connecter au serveur de dictionnaire « %s:%d »"
 
 #: ../gnome-dictionary/libgdict/gdict-context.c:196
 msgid "Local Only"
@@ -886,7 +882,7 @@ msgstr "Non trouvé"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:500
 msgid "F_ind:"
-msgstr "Re_chercher :"
+msgstr "Re_chercher :"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:513
 msgid "_Previous"
@@ -925,14 +921,12 @@ msgid "The font to be used by the defbox"
 msgstr "La police utilisée par la defbox"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:731
-#, fuzzy
 msgid "Emphasys Color"
-msgstr "Couleur d'insistance"
+msgstr "Couleur de mise en évidence"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:732
-#, fuzzy
 msgid "Color of emphasised text"
-msgstr "Couleur du texte insité"
+msgstr "Couleur du texte mis en évidence"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:737
 msgid "Link Color"
@@ -959,24 +953,23 @@ msgid "Color of the dictionary source"
 msgstr "Couleur pour le dictionnaire source"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1041
-#, fuzzy
 msgid "Progress"
 msgstr "Progression"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1078
 #, c-format
 msgid "Definition for '%s' (%d/%d)"
-msgstr "Défintion de « %s' (%d/%d)"
+msgstr "Défintion de « %s » (%d/%d)"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1280
-#, fuzzy
 msgid "Error while looking up definition"
-msgstr "Erreur lors de la recherche de définition"
+msgstr "Erreur lors de la recherche de la définition"
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1324
 #, c-format
 msgid "Attempting to look up '%s' but no GdictContext defined.  Aborting."
-msgstr "Tentative de recherche de « %s' mais GdictContext non défini. Abandon"
+msgstr ""
+"Tentative de recherche de « %s » mais GdictContext non défini. Abandon."
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1332
 msgid "Another search is in progress"
@@ -987,9 +980,8 @@ msgid "Please wait until the current search ends."
 msgstr "Veuillez patientez jusqu'a la fin des recherches courantes."
 
 #: ../gnome-dictionary/libgdict/gdict-defbox.c:1364
-#, fuzzy
 msgid "Error while retrieving the definition"
-msgstr "Erreur lors de la recherche de définition"
+msgstr "Erreur lors de la récupération de la définition"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:105
 msgid "The GdictContext object bound to this entry"
@@ -1005,10 +997,10 @@ msgid "Strategy"
 msgstr "Stratégie"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:135
-#, fuzzy
 msgid "The matching strategy to be used to generate the completion list"
 msgstr ""
-"La stratégie correspondante utilisée pour générer la la liste de complétion"
+"La stratégie de correspondance utilisée pour générer la la liste de "
+"complétion"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:218
 msgid "Filename"
@@ -1048,7 +1040,6 @@ msgid "Transport"
 msgstr "Transport"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:289
-#, fuzzy
 msgid "The transport mechanism used by this dictionary source"
 msgstr "Le mécanisme de transport utilisé par cette source de dictionnaire"
 
@@ -1062,45 +1053,44 @@ msgid "Invalid transport type '%d'"
 msgstr "Type de transport invalide « %d »"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:427
-#, fuzzy, c-format
+#, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr ""
-"Le groupe « %s' n'a pas été trouvé à l'intérieur de la définition de la "
+"Le groupe « %s » n'a pas été trouvé à l'intérieur de la définition de la "
 "source de dictionnaire"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:443
 #: ../gnome-dictionary/libgdict/gdict-source.c:467
 #: ../gnome-dictionary/libgdict/gdict-source.c:491
 #: ../gnome-dictionary/libgdict/gdict-source.c:516
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr ""
-"Impossible d'obtenir la clé « %s' a l'intérieur de la source de "
-"définition : %s"
+"Impossible d'obtenir la clé « %s » a l'intérieur de la source de "
+"définition : %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:541
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
-"Impossible d'obtenir la clé « %s' à l'intérieur du fichier définition de "
-"source de dictionnaire : %s"
+"Impossible d'obtenir la clé « %s » à l'intérieur du fichier définition de "
+"source de dictionnaire : %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:727
 msgid "Dictionary source does not have name"
 msgstr "la source de dictionnaire n'a pas de nom"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:736
-#, fuzzy, c-format
+#, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr "La source de dictionnaire « %s' n'a pas de transport valide « %s'"
+msgstr "La source de dictionnaire « %s » n'a pas de transport valide « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-source-loader.c:162
 msgid "Paths"
 msgstr "Chemins"
 
 #: ../gnome-dictionary/libgdict/gdict-source-loader.c:163
-#, fuzzy
 msgid "Search paths used by this object"
 msgstr "Chemins de recherche utilisés par cet objet"
 
@@ -1122,7 +1112,8 @@ msgstr ""
 "Contributeurs :\n"
 "Christophe Fergeau <teuf@users.sourceforge.net>\n"
 "Baptiste Mille-Mathias <bmm80@free.fr>\n"
-"Cyprien Le Pannérer <cyplp@free.fr>"
+"Cyprien Le Pannérer <cyplp@free.fr>\n"
+"Jonathan Ernst <jonathan@ernstfamily.ch>"
 
 #: ../gnome-dictionary/src/gdict-about.c:61
 #: ../gnome-dictionary/src/gdict-applet.c:610
@@ -1132,7 +1123,7 @@ msgstr "Recherche les mots dans les dictionnaires"
 #: ../gnome-dictionary/src/gdict-about.c:87
 #, c-format
 msgid "Unable to open the application icon: %s"
-msgstr "Impossible d'ouvrir l'icône de l'application : %s"
+msgstr "Impossible d'ouvrir l'icône de l'application : %s"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -1145,20 +1136,19 @@ msgid ""
 "\n"
 "%s\n"
 msgstr ""
-"Définition de « %s'\n"
-"  venant de « %s' : \n"
+"Définition de « %s »\n"
+"  venant de « %s » : \n"
 "\n"
 "%s\n"
 
 #: ../gnome-dictionary/src/gdict-app.c:227
 #, c-format
 msgid "Error: %s\n"
-msgstr "Erreur : %s\n"
+msgstr "Erreur : %s\n"
 
 #: ../gnome-dictionary/src/gdict-app.c:253
-#, fuzzy
 msgid "See gnome-dictionary --help for usage\n"
-msgstr "Voir gnome-dictionary --help pour l'usage\n"
+msgstr "Voir gnome-dictionary --help pour la syntaxe d'utilisation\n"
 
 #: ../gnome-dictionary/src/gdict-app.c:266
 msgid "Unable to find a suitable dictionary source"
@@ -1170,14 +1160,14 @@ msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
 msgstr ""
-"Erreur durant la recherche de la définition de «%s » : \n"
+"Erreur durant la recherche de la définition de « %s » : \n"
 "%s"
 
 #: ../gnome-dictionary/src/gdict-app.c:345
 #: ../gnome-dictionary/src/gdict-applet.c:1422
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to rename file '%s' to '%s': %s"
-msgstr "Impossible de créer le répertoire de données « %s' : %s"
+msgstr "Impossible de renommer le fichier « %s » vers « %s » : %s"
 
 #: ../gnome-dictionary/src/gdict-app.c:369
 #: ../gnome-dictionary/src/gdict-app.c:392
@@ -1185,10 +1175,9 @@ msgstr "Impossible de créer le répertoire de données « %s' : %s"
 #: ../gnome-dictionary/src/gdict-applet.c:1469
 #, c-format
 msgid "Unable to create the data directory '%s': %s"
-msgstr "Impossible de créer le répertoire de données « %s' : %s"
+msgstr "Impossible de créer le répertoire de données « %s » : %s"
 
 #: ../gnome-dictionary/src/gdict-app.c:427
-#, fuzzy
 msgid "Words to look up"
 msgstr "Mots à rechercher"
 
@@ -1206,7 +1195,7 @@ msgstr "source"
 
 #: ../gnome-dictionary/src/gdict-app.c:431
 msgid "Show available dictionary sources"
-msgstr "Montrer les sources de dictionnaire disponibles"
+msgstr "Afficher les sources de dictionnaire disponibles"
 
 #: ../gnome-dictionary/src/gdict-app.c:433
 msgid "Print result to the console"
@@ -1222,9 +1211,8 @@ msgid " - Look up words in dictionaries"
 msgstr "Recherche des mots dans le dictionnaire"
 
 #: ../gnome-dictionary/src/gdict-app.c:455
-#, fuzzy
 msgid "Dictionary and spelling tool"
-msgstr "Dictionnaire et outil de vérification orthographique"
+msgstr "Dictionnaire et outil orthographique"
 
 #: ../gnome-dictionary/src/gdict-app.c:456
 msgid "Show Dictionary options"
@@ -1244,7 +1232,7 @@ msgstr "Document sans titre"
 #: ../gnome-dictionary/src/gdict-window.c:571
 #, c-format
 msgid "Error while writing to '%s'"
-msgstr "Erreur lors de l'écriture de « %s'"
+msgstr "Erreur lors de l'écriture de « %s »"
 
 #: ../gnome-dictionary/src/gdict-applet.c:384
 msgid "Clear the definitions found"
@@ -1259,19 +1247,16 @@ msgid "Clear the text of the definition"
 msgstr "Éffacer le texte de la définition"
 
 #: ../gnome-dictionary/src/gdict-applet.c:398
-#, fuzzy
 msgid "Print the definitions found"
 msgstr "Imprimer les définitions trouvées"
 
 #: ../gnome-dictionary/src/gdict-applet.c:401
-#, fuzzy
 msgid "Print definition"
-msgstr "Afficher la définition du mot"
+msgstr "Imprimer la définition"
 
 #: ../gnome-dictionary/src/gdict-applet.c:402
-#, fuzzy
 msgid "Print the text of the definition"
-msgstr "Imprime la définition courante"
+msgstr "Imprimer le texte de la définition"
 
 #: ../gnome-dictionary/src/gdict-applet.c:412
 msgid "Save the definitions found"
@@ -1287,7 +1272,7 @@ msgstr "Sauver le texte de la définition dans un fichier"
 
 #: ../gnome-dictionary/src/gdict-applet.c:550
 msgid "Toggle dictionary window"
-msgstr ""
+msgstr "Affiche/cache la fenêtre du dictionnaire"
 
 #: ../gnome-dictionary/src/gdict-applet.c:551
 msgid "Show or hide the definition window"
@@ -1298,9 +1283,8 @@ msgid "Click to view the dictionary window"
 msgstr "Cliquez pour voir la fenêtre du dictionnaire"
 
 #: ../gnome-dictionary/src/gdict-applet.c:609
-#, fuzzy
 msgid "Dictionary entry"
-msgstr "Entrée de mot du dictionnaire"
+msgstr "Entrée de dictionnaire"
 
 #: ../gnome-dictionary/src/gdict-applet.c:613
 msgid "Type the word you want to look up"
@@ -1315,7 +1299,7 @@ msgstr "_Préférences"
 #: ../gnome-dictionary/src/gdict-source-dialog.c:324
 #: ../gnome-dictionary/src/gdict-window.c:761
 msgid "There was an error while displaying help"
-msgstr "Il y a eu une erreur lors de l'affichage de l'aide."
+msgstr "Il y a eu une erreur lors de l'affichage de l'aide"
 
 #: ../gnome-dictionary/src/gdict-applet.c:938
 #: ../gnome-dictionary/src/gdict-window.c:270
@@ -1363,9 +1347,9 @@ msgid "Add Dictionary Source"
 msgstr "Ajouter une source de dictionnaire"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:318
-#, fuzzy, c-format
+#, c-format
 msgid "Remove \"%s\"?"
-msgstr "Supprimer « %s » ?"
+msgstr "Enlever « %s » ?"
 
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:320
 msgid "This will permanently remove the dictionary source from the list."
@@ -1441,7 +1425,7 @@ msgstr "É_dition"
 
 #: ../gnome-dictionary/src/gdict-window.c:798
 msgid "_Go"
-msgstr "_Aller"
+msgstr "A_ller à"
 
 #. File menu
 #: ../gnome-dictionary/src/gdict-window.c:802
@@ -1457,9 +1441,8 @@ msgid "_Save a Copy..."
 msgstr "_Enregistrer une copie..."
 
 #: ../gnome-dictionary/src/gdict-window.c:806
-#, fuzzy
 msgid "_Print..."
-msgstr "_Imprimer"
+msgstr "_Imprimer..."
 
 #: ../gnome-dictionary/src/gdict-window.c:807
 msgid "Print this document"
@@ -1478,9 +1461,8 @@ msgid "Find Ne_xt"
 msgstr "Rechercher le _suivant"
 
 #: ../gnome-dictionary/src/gdict-window.c:821
-#, fuzzy
 msgid "Find Pre_vious"
-msgstr "Rechercher _précédent"
+msgstr "Rechercher le _précédent"
 
 #. Go menu
 #: ../gnome-dictionary/src/gdict-window.c:827
@@ -1522,7 +1504,7 @@ msgstr "_Sommaire"
 
 #: ../gnome-dictionary/src/gdict-window.c:1129
 msgid "Look _up:"
-msgstr "_Rechercher"
+msgstr "_Rechercher :"
 
 #: ../gnome-dictionary/src/gdict-window.c:1372
 msgid "Unable to load the application icon"
@@ -1611,7 +1593,7 @@ msgstr "L'effet à ajouter au bord de la fenêtre"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:442
 msgid "effect"
-msgstr "Effet"
+msgstr "effet"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:452
 msgid "Options for Screenshot"
@@ -1619,10 +1601,9 @@ msgstr "Options pour la capture d'écran"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:453
 msgid "Show Screenshot options"
-msgstr "Monter les options de la capture d'écran"
+msgstr "Afficher les options de la capture d'écran"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:457
-#, fuzzy
 msgid "Take a picture of the screen"
 msgstr "Prendre une image de l'écran"
 
@@ -1640,7 +1621,6 @@ msgid "Save Screenshot"
 msgstr "Sauvegarder la copie"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
-#, fuzzy
 msgid "Take Screenshot"
 msgstr "Prendre une capture d'écran"
 
@@ -1674,26 +1654,23 @@ msgstr "Inclure le bord"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:4
 msgid "Include the window manager border along with the screenshot"
-msgstr "Inclure les bords du gestionnaire de fenêtre avec la copie d'écran."
+msgstr "Inclure les bords du gestionnaire de fenêtre avec la capture d'écran"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:5
 msgid "Screenshot directory"
 msgstr "Dossier des captures d'écran"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:6
-#, fuzzy
 msgid "The directory the last screenshot was saved in."
-msgstr ""
-"Répertoire utilisé lors de la dernière sauvegarde par l'outil de capture"
+msgstr "Dossier vers lequel a été enregistré la dernière capture d'écran."
 
 #: ../gnome-screenshot/screenshot-dialog.c:195
-#, fuzzy
 msgid ""
 "Glade file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
 msgstr ""
 "Le fichier Glade du programme de capture est manquant.\n"
-"Vérifier l'installation de gnome-panel"
+"Vérifier l'installation de gnome-utils"
 
 #: ../gnome-screenshot/screenshot-dialog.c:214
 msgid "Select a directory"
@@ -1786,9 +1763,8 @@ msgid "Quick Search Second Scan Excluded Paths"
 msgstr "Chemins exclus du second balayage de la recherche rapide"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:8
-#, fuzzy
 msgid "Search Result Columns Order"
-msgstr "Ordre des colonnes des résultat de la recherche"
+msgstr "Ordre des colonnes des résultats de la recherche"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -2435,7 +2411,7 @@ msgstr "Désactiver la _recherche rapide"
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr ""
 "Échec de définition de l'identifiant du groupe de processus pour le fils %"
-"d : %s.\n"
+"d : %s.\n"
 
 #: ../gsearchtool/gsearchtool.c:1935
 msgid "Error parsing the search command."
@@ -2592,9 +2568,9 @@ msgid "View the system log file"
 msgstr "Affiche les journaux système"
 
 #: ../logview/log_repaint.c:179
-#, fuzzy, c-format
+#, c-format
 msgid "last update : %s"
-msgstr "Dernière mise à jour : %s"
+msgstr "Dernière mise à jour : %s"
 
 #: ../logview/log_repaint.c:181
 #, c-format
@@ -2645,11 +2621,11 @@ msgstr "%s ne peut pas être ouvert."
 
 #: ../logview/logview-findbar.c:152
 msgid "_Filter:"
-msgstr "_Filtre : "
+msgstr "_Filtre :"
 
 #: ../logview/logview-findbar.c:157
 msgid "_Clear"
-msgstr "_Éffacer"
+msgstr "_Effacer"
 
 #: ../logview/logview.c:85
 msgid "_Log"
@@ -2657,7 +2633,7 @@ msgstr "_Journal"
 
 #: ../logview/logview.c:87
 msgid "_View"
-msgstr "Afficha_ge"
+msgstr "_Affichage"
 
 #: ../logview/logview.c:90
 msgid "_Open..."
@@ -2697,12 +2673,11 @@ msgstr "Sélectionner le journal entier"
 
 #: ../logview/logview.c:101
 msgid "_Filter..."
-msgstr "_Filtrer"
+msgstr "_Filtrer..."
 
 #: ../logview/logview.c:101
-#, fuzzy
 msgid "Filter log"
-msgstr "Filtrer les journaux"
+msgstr "Filtrer le journal"
 
 #: ../logview/logview.c:104
 msgid "Bigger text size"
@@ -2730,7 +2705,8 @@ msgstr "Ouvre le sommaire de l'aide du visionneur de journaux système"
 
 #: ../logview/logview.c:116
 msgid "Show the about dialog for the log viewer"
-msgstr "Affiche le dialogue « À propos » du visionneur de journaux système"
+msgstr ""
+"Affiche la boîte de dialogue « À propos » du visionneur de journaux système"
 
 #: ../logview/logview.c:122
 msgid "_Statusbar"
@@ -2742,7 +2718,7 @@ msgstr "Monter la barre de statut"
 
 #: ../logview/logview.c:124
 msgid "Side _Pane"
-msgstr ""
+msgstr "Panneau _latéral"
 
 #: ../logview/logview.c:124
 msgid "Show Side Pane"
@@ -2787,7 +2763,7 @@ msgstr "jours"
 
 #: ../logview/logview.c:977
 msgid "Pointer towards a GSList of days for the current log."
-msgstr ""
+msgstr "Pointeur vers une GSList de jours pour le journal en cours."
 
 #: ../logview/logview.schemas.in.h:1
 msgid "Height of the main window in pixels"
@@ -2803,7 +2779,7 @@ msgstr "Journaux à ouvrir au démarrage"
 
 #: ../logview/logview.schemas.in.h:4
 msgid "Size of the font used to display the log"
-msgstr "La taille de la police utilisée pour afficher les logs"
+msgstr "La taille de la police utilisée pour afficher le journal"
 
 #: ../logview/logview.schemas.in.h:5
 msgid ""
@@ -2828,14 +2804,13 @@ msgstr ""
 "d'exploitation."
 
 #: ../logview/logview.schemas.in.h:8
-#, fuzzy
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
 msgstr ""
-"Spécifies la taille de la police à chasse fixe utilisée pour afficher les "
-"logs dans le tree view prinicpale. La valeur par défaut est celle de la "
-"taille de la police du terminal."
+"Spécifie la taille de la police à chasse fixe utilisée pour afficher le "
+"journal dans la vue en arbre principale. La valeur par défaut est celle de "
+"la taille de la police du terminal."
 
 #: ../logview/logview.schemas.in.h:9
 msgid "Specifies the width of the log viewer main window in pixels."
@@ -2848,15 +2823,15 @@ msgstr "La largeur de la fenêtre principale en pixels"
 
 #: ../logview/main.c:49
 msgid "Show the application's version"
-msgstr "Monter la version de l'application"
+msgstr "Afficher la version de l'application"
 
 #: ../logview/main.c:55
 msgid "Show System Log Viewer options"
-msgstr "monter les options du visionneur de journaux système"
+msgstr "Afficher les options du visionneur de journaux système"
 
 #: ../logview/main.c:59
 msgid " - Browse and monitor logs"
-msgstr " -Parcourt et surveille les logs"
+msgstr " -Parcourt et surveille les journaux"
 
 #: ../logview/main.c:153
 msgid "Log Viewer"
@@ -2935,359 +2910,4 @@ msgstr ""
 
 #: ../logview/monitor.c:88
 msgid "Gnome-VFS Error.\n"
-msgstr "Érreur de Gnome-VFS.\n"
-
-#~ msgid ""
-#~ "Unable to create the data directory '%s': there already is a file with "
-#~ "the same name.  You should move the file and re-run gnome-dictionary."
-#~ msgstr ""
-#~ "Impossible de créer le répoertoire de données « %s' : il y a déja un "
-#~ "fichier avec le même nom. Vous devez déplacer ce fichier et relancer "
-#~ "gnome-dictionary "
-
-#~ msgid "Unable to create the data directory '%s'"
-#~ msgstr "Impossible de créer le répertoire « %s »"
-
-#~ msgid ""
-#~ "There is a file with the same name in the path.\n"
-#~ "You should move the file and re-run the\n"
-#~ "Dictionary applet"
-#~ msgstr ""
-#~ "Il y a un fichier avec le même nom dans le répertoire.\n"
-#~ "Vous devez déplacer ce fichier et relancer\n"
-#~ "l'applet du dictionnaire"
-
-#~ msgid "%d definitions found"
-#~ msgstr "%d définitions trouvées"
-
-#~ msgid "Cannot connect to server"
-#~ msgstr "Impossible de se connecter au serveur"
-
-#~ msgid "Server Error"
-#~ msgstr "Erreur de serveur"
-
-#~ msgid ""
-#~ "A serious error occurred. Please check that your server and port are "
-#~ "correct. For reference the default server is dict.org and the port 2628"
-#~ msgstr ""
-#~ "Une erreur sérieuse est survenue. Veuillez vérifier que votre serveur et "
-#~ "votre port sont corrects. Pour référence, le serveur par défaut est dict."
-#~ "org et le port 2628"
-
-#~ msgid "Connection error"
-#~ msgstr "Erreur de connexion"
-
-#~ msgid ""
-#~ "Either the server you are using is not available \n"
-#~ "or you are not connected to the Internet."
-#~ msgstr ""
-#~ "Soit le serveur que vous utilisez n'est pas disponible,\n"
-#~ "soit vous n'êtes pas connecté à Internet."
-
-#~ msgid "Find"
-#~ msgstr "Rechercher"
-
-#~ msgid "_Search for:"
-#~ msgstr "_Rechercher :"
-
-#~ msgid "Could not display help"
-#~ msgstr "Impossible d'afficher l'aide"
-
-#~ msgid "_Dictionary"
-#~ msgstr "_Dictionnaire"
-
-#~ msgid "_Look Up Word"
-#~ msgstr "_Rechercher un mot"
-
-#~ msgid "Find next occurrence of the word"
-#~ msgstr "Recherche l'occurrence suivante du mot"
-
-#~ msgid "P_references"
-#~ msgstr "_Préférences"
-
-#~ msgid "Configure the application"
-#~ msgstr "Configure l'application"
-
-#~ msgid "View help for this application"
-#~ msgstr "Voir l'aide concernant l'application"
-
-#~ msgid "About this application"
-#~ msgstr "À propos de l'application"
-
-#~ msgid "Cu_t"
-#~ msgstr "Cou_per"
-
-#~ msgid "Cut the selection"
-#~ msgstr "Couper la sélection"
-
-#~ msgid "_Paste"
-#~ msgstr "Co_ller"
-
-#~ msgid "Paste clipboard"
-#~ msgstr "Coller le presse-papiers"
-
-#~ msgid "Select everything"
-#~ msgstr "Tout sélectionner"
-
-#~ msgid "_Spellings"
-#~ msgstr "_Orthographes"
-
-#~ msgid "View alternate spellings"
-#~ msgstr "Voir les orthographes différentes"
-
-#~ msgid "On a Web Site"
-#~ msgstr "Sur un site web"
-
-#~ msgid "Enter a Word or select one from the list below"
-#~ msgstr "Saisissez un mot ou choisissez en un dans la liste ci-dessous"
-
-#~ msgid "Look Up for a Word"
-#~ msgstr "Rechercher un mot"
-
-#~ msgid "Looking up word..."
-#~ msgstr "Recherche du mot..."
-
-#~ msgid "String not found"
-#~ msgstr "Chaîne non trouvée"
-
-#~ msgid "Error invoking query"
-#~ msgstr "Erreur à l'exécution de la requête"
-
-#~ msgid "Looking up entry..."
-#~ msgstr "Recherche une entrée..."
-
-#~ msgid "De_fault Server"
-#~ msgstr "S_erveur par défaut"
-
-#~ msgid "Reset server to default"
-#~ msgstr "Revenir au serveur par défaut"
-
-#~ msgid "Reset port to default"
-#~ msgstr "Revenir au port par défaut"
-
-#~ msgid "Server"
-#~ msgstr "Serveur"
-
-#~ msgid "Server Entry"
-#~ msgstr "Entrée de serveur"
-
-#~ msgid "Enter the Server Name"
-#~ msgstr "Saisissez le nom du serveur"
-
-#~ msgid "Port Entry"
-#~ msgstr "Entrée de port"
-
-#~ msgid "Enter the Port Number"
-#~ msgstr "Saisissez le numéro du port"
-
-#~ msgid "F_ont:"
-#~ msgstr "_Police :"
-
-#~ msgid "Web Site"
-#~ msgstr "Site web"
-
-#~ msgid "Search Address"
-#~ msgstr "Adresse de recherche"
-
-#~ msgid "Web Sites"
-#~ msgstr "Sites web"
-
-#~ msgid "Search all databases"
-#~ msgstr "Rechercher dans toutes les bases de données"
-
-#~ msgid "Default Strategy"
-#~ msgstr "Stratégie par défaut"
-
-#~ msgid "Spellings"
-#~ msgstr "Orthographes"
-
-#~ msgid "Spell-checking..."
-#~ msgstr "Vérification orthographique..."
-
-#~ msgid ""
-#~ "The search strategy to use. This is dependant on the search strategy that "
-#~ "the dictionary server supports. The default strategy is 'lev' - Match "
-#~ "words within Levenshtein distance one"
-#~ msgstr ""
-#~ "La stratégie de recherche à utiliser. C'est dépendant des stratégies de "
-#~ "recherche que supporte le serveur de dictionnaire. La stratégie par "
-#~ "défaut est « lev » - Correspondance des mots dans la distance de "
-#~ "Levenshtein"
-
-#~ msgid "Web directory"
-#~ msgstr "Répertoire Web"
-
-#~ msgid "Action Database"
-#~ msgstr "Base de données d'actions"
-
-#~ msgid "Actions"
-#~ msgstr "Actions"
-
-#~ msgid "_Add"
-#~ msgstr "A_jouter"
-
-#~ msgid "Edit an action"
-#~ msgstr "Édite une action"
-
-#~ msgid "_Remove"
-#~ msgstr "_Supprimer"
-
-#~ msgid "Remove an action"
-#~ msgstr "Supprime une action"
-
-#~ msgid "Cannot open action data base <%s>! Open failed."
-#~ msgstr ""
-#~ "Impossible d'ouvrir la base de données d'actions <%s> ! Échec de "
-#~ "l'ouverture."
-
-#~ msgid "Error parsing actions data base"
-#~ msgstr "Erreur d'analyse de la base de données d'actions"
-
-#~ msgid "Can't write to actions database!"
-#~ msgstr "Impossible d'écrire dans la base de données d'actions !"
-
-#~ msgid "<empty>"
-#~ msgstr "<vide>"
-
-#~ msgid "log name regexp"
-#~ msgstr "exp. rég. de nom de journal"
-
-#~ msgid "process regexp"
-#~ msgstr "exp. rég. de processus"
-
-#~ msgid "message regexp"
-#~ msgstr "exp. rég. de message"
-
-#~ msgid "action to execute when regexps are TRUE"
-#~ msgstr "action à exécuter lorsque les exp. rég. sont VRAI"
-
-#~ msgid "description"
-#~ msgstr "description"
-
-#~ msgid "Edit Action"
-#~ msgstr "Éditez l'action"
-
-#~ msgid "_Tag:"
-#~ msgstr "_Balise :"
-
-#~ msgid "Tag that identifies the log file."
-#~ msgstr "Balise qui identifie le fichier journal."
-
-#~ msgid "_Log name:"
-#~ msgstr "_Nom du journal :"
-
-#~ msgid "Regular expression that will match the log name."
-#~ msgstr "Expression régulière qui correspond au nom du journal."
-
-#~ msgid "_Process:"
-#~ msgstr "_Processus :"
-
-#~ msgid "Regular expression that will match process part of message."
-#~ msgstr ""
-#~ "Expression régulière qui correspond à la partie processus du message."
-
-#~ msgid "_Message:"
-#~ msgstr "_Message :"
-
-#~ msgid "Regular expression that will match the message."
-#~ msgstr "Expression régulière qui correspond au message."
-
-#~ msgid "_Action:"
-#~ msgstr "_Action :"
-
-#~ msgid ""
-#~ "Action that will be executed if all previous regexps. are matched. This "
-#~ "is executed by a system command: system (action)."
-#~ msgstr ""
-#~ "Action qui sera exécuté si tous les exp. rég. précédentes correspondent. "
-#~ "Ceci est exécuté par une commande système : system (action)."
-
-#~ msgid ""
-#~ "tag: [%s]\n"
-#~ "log_name: [%s]\n"
-#~ "process: [%s]\n"
-#~ "message: [%s]\n"
-#~ "description: [%s]\n"
-#~ "action: [%s]\n"
-#~ msgstr ""
-#~ "balise : [%s]\n"
-#~ "nom d'hist. : [%s]\n"
-#~ "processus : [%s]\n"
-#~ "message : [%s]\n"
-#~ "description : [%s]\n"
-#~ "action : [%s]\n"
-
-#~ msgid "Cannot open regexp data base <%s>! Open failed."
-#~ msgstr ""
-#~ "Impossible d'ouvrir la base de données d'expressions rationnelles <%s> ! "
-#~ "Échec de l'ouverture."
-
-#~ msgid "Cannot open description data base <%s>! Open failed."
-#~ msgstr ""
-#~ "Impossible d'ouvrir la base de données des descriptions <%s> ! Échec de "
-#~ "l'ouverture."
-
-#~ msgid "Properties"
-#~ msgstr "Propriétés"
-
-#~ msgid "%ld byte"
-#~ msgid_plural "%ld bytes"
-#~ msgstr[0] "%ld octet"
-#~ msgstr[1] "%ld octets"
-
-#~ msgid "<b>Size</b>: %s"
-#~ msgstr "<b>Taille</b> : %s"
-
-#~ msgid "<b>Modified</b>: %s"
-#~ msgstr "<b>Modifié</b> : %s"
-
-#~ msgid "<b>Start Date</b>: %s"
-#~ msgstr "<b>Date de début</b> : %s"
-
-#~ msgid "<b>Number of Lines</b>: %ld"
-#~ msgstr "<b>Nombre de lignes : </b>: %ld"
-
-#~ msgid "Last Modified: %s, %d lines"
-#~ msgstr "Dernière modification : %s, %d lignes"
-
-#~ msgid "%B %e"
-#~ msgstr "%e %B"
-
-#~ msgid "%X"
-#~ msgstr "%X"
-
-#~ msgid "ReadLogStats: out of memory"
-#~ msgstr "ReadLogStats : plus de mémoire"
-
-#~ msgid "_Properties"
-#~ msgstr "_Propriétés"
-
-#~ msgid "Show Log Properties"
-#~ msgstr "Affiche les propriétés du journal"
-
-#~ msgid "Close"
-#~ msgstr "Fermer"
-
-#~ msgid "Copy"
-#~ msgstr "Copier"
-
-#~ msgid "Select All"
-#~ msgstr "Tout sélectionner"
-
-#~ msgid "Sidebar"
-#~ msgstr "Barre latérale"
-
-#~ msgid "Date"
-#~ msgstr "Date"
-
-#~ msgid "Message"
-#~ msgstr "Message"
-
-#~ msgid "Open new logfile"
-#~ msgstr "Ouvrir un nouveau journal"
-
-#~ msgid "Entry Detail"
-#~ msgstr "Détails de l'entrée"
-
-#~ msgid "%B %e %X"
-#~ msgstr "%e %B %X"
+msgstr "Erreur de Gnome-VFS.\n"
