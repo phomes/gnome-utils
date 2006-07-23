@@ -4,7 +4,7 @@
 #
 # Vincent Renardias <vincent@ldsol.com>, 1998-2000.
 # Thibaut Cousin <cousin@clermont.in2p3.fr>, 1999.
-# maintainer: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2000-2005.
+# maintainer: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2000-2006.
 # Bretin Didier <didier@bretin.net>, 2001.
 # Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
 # Baptiste Mille-Mathias <bmm80@free.fr>, 2005.
@@ -13,11 +13,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.13.96\n"
+"Project-Id-Version: gnome-utils 2.14.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-21 12:03+0200\n"
-"PO-Revision-Date: 2006-04-29 13:46+0100\n"
-"Last-Translator: Jonathan Ernst <jonathan@ernstfamily.ch>\n"
+"POT-Creation-Date: 2006-07-23 14:05+0200\n"
+"PO-Revision-Date: 2006-07-23 14:05+0200\n"
+"Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,7 +87,7 @@ msgstr "Vérification des blocs défectueux..."
 #, c-format
 msgid "Failed to open device %s for badblock checking\n"
 msgstr ""
-"Impossible d'ouvrir le périphérique %s pour vérifier les mauvais blocs\n"
+"L'ouverture du périphérique %s pour vérifier les mauvais blocs a échoué\n"
 
 #: ../gfloppy/src/badblocks.c:288 ../gfloppy/src/gfloppy.c:531
 msgid "Checking for bad blocks... Done"
@@ -496,7 +496,7 @@ msgstr "À _propos"
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:3
 #: ../gnome-dictionary/src/gdict-window.c:799 ../logview/logview.c:88
 msgid "_Help"
-msgstr "Aid_e"
+msgstr "_Aide"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:4
 msgid "_Look Up Selected Text"
@@ -751,33 +751,33 @@ msgstr "Le port du serveur de dictionnaire auquel se connecter"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:314
 msgid "Status"
-msgstr "Statut"
+msgstr "État"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:315
 msgid "The status code as returned by the dictionary server"
-msgstr "Le code du statut retourné par le serveur de dictionnaire"
+msgstr "Le code d'état retourné par le serveur de dictionnaire"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:763
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Connection impossible au serveur de dictionnaire « %s:%d'"
+msgstr "Aucune connexion au serveur de dictionnaire « %s:%d »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1025
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr ""
-"Échec de la recherche pour l'hôte « %s » : pas de ressources convenables "
+"La recherche de l'hôte « %s » a échoué : aucune ressources convenables "
 "trouvées"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1055
 #, c-format
 msgid "Lookup failed for host '%s': %s"
-msgstr "Échec de la recherche pour l'hôte « %s »:%s"
+msgstr "La recherche de l'hôte « %s » a échoué : %s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1088
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr "Échec de la recherche pour l'hôte « %s » : hôte non trouvé"
+msgstr "La recherche de l'hôte « %s » a échoué : hôte non trouvé"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1140
 #, c-format
@@ -785,7 +785,7 @@ msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr ""
-"Impossible de se connecter au serveur de dictionnaire « %s:%d'. Le serveur a "
+"Impossible de se connecter au serveur de dictionnaire « %s:%d ». Le serveur a "
 "retourné le code %d (serveur en panne )"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1159
@@ -800,17 +800,17 @@ msgstr ""
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1188
 #, c-format
 msgid "No definitions found for '%s'"
-msgstr "Pas de définitions trouvées pour « %s »"
+msgstr "Aucune définition trouvée pour « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1203
 #, c-format
 msgid "Invalid database '%s'"
-msgstr "Base de données invalide « %s »"
+msgstr "Base de données non valide « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1218
 #, c-format
 msgid "Invalid strategy '%s'"
-msgstr "Stratégie invalide « %s »"
+msgstr "Stratégie non valide « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1233
 #, c-format
@@ -826,17 +826,17 @@ msgstr "Mauvais paramêtres pour la commande « %s »"
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr ""
-"Pas de bases de données trouvées sur le serveur de dictionnaire  « %s »"
+"Aucune bases de données trouvées sur le serveur de dictionnaire  « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1278
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "Pas de stratégies trouvées pour le serveur de dictionnaire « %s »"
+msgstr "Aucune stratégies trouvées pour le serveur de dictionnaire « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1679
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "Échec de la connection au serveur de dictionnaires  %s:%d"
+msgstr "La connexion au serveur de dictionnaires %s:%d a échoué"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1718
 #, c-format
@@ -1050,7 +1050,7 @@ msgstr "L'objet GdictContext est relié à cette source"
 #: ../gnome-dictionary/libgdict/gdict-source.c:399
 #, c-format
 msgid "Invalid transport type '%d'"
-msgstr "Type de transport invalide « %d »"
+msgstr "Type de transport non valide « %d »"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:427
 #, c-format
@@ -1670,7 +1670,7 @@ msgid ""
 "Please check your installation of gnome-utils"
 msgstr ""
 "Le fichier Glade du programme de capture est manquant.\n"
-"Vérifier l'installation de gnome-utils"
+"Veuillez vérifier l'installation de gnome-utils"
 
 #: ../gnome-screenshot/screenshot-dialog.c:214
 msgid "Select a directory"
@@ -2134,12 +2134,12 @@ msgstr "Impossible de supprimer « %s »."
 #: ../gsearchtool/gsearchtool-callbacks.c:832
 #, c-format
 msgid "Moving \"%s\" failed: %s."
-msgstr "Le déplacement de « %s » a échoué : %s"
+msgstr "Le déplacement de « %s » a échoué : %s."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:866
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
-msgstr "La suppression de « %s » a échoué : %s"
+msgstr "La suppression de « %s » a échoué : %s."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:1297
 msgid "Save Search Results As..."
@@ -2298,7 +2298,7 @@ msgstr "Une base locate n'a vraisemblablement pas été créée."
 #: ../gsearchtool/gsearchtool.c:492
 #, c-format
 msgid "Character set conversion failed for \"%s\""
-msgstr "Échec de conversion de caractère pour « %s »"
+msgstr "La conversion du jeu de caractères pour « %s » a échoué"
 
 #: ../gsearchtool/gsearchtool.c:516
 msgid "Searching..."
@@ -2410,8 +2410,8 @@ msgstr "Désactiver la _recherche rapide"
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr ""
-"Échec de définition de l'identifiant du groupe de processus pour le fils %"
-"d : %s.\n"
+"La définition de l'identifiant du groupe de processus pour le fils %d a "
+"échoué : %s.\n"
 
 #: ../gsearchtool/gsearchtool.c:1935
 msgid "Error parsing the search command."
@@ -2633,7 +2633,7 @@ msgstr "_Journal"
 
 #: ../logview/logview.c:87
 msgid "_View"
-msgstr "_Affichage"
+msgstr "Afficha_ge"
 
 #: ../logview/logview.c:90
 msgid "_Open..."
@@ -2657,7 +2657,7 @@ msgstr "_Quitter"
 
 #: ../logview/logview.c:94
 msgid "Quit the log viewer"
-msgstr "Quitter le visionneur de journaux système"
+msgstr "Quitte le visionneur de journaux système"
 
 #: ../logview/logview.c:97
 msgid "_Copy"
@@ -2665,11 +2665,11 @@ msgstr "_Copier"
 
 #: ../logview/logview.c:97
 msgid "Copy the selection"
-msgstr "Copier la sélection"
+msgstr "Copie la sélection"
 
 #: ../logview/logview.c:99
 msgid "Select the entire log"
-msgstr "Sélectionner le journal entier"
+msgstr "Sélectionne le journal entier"
 
 #: ../logview/logview.c:101
 msgid "_Filter..."
@@ -2677,7 +2677,7 @@ msgstr "_Filtrer..."
 
 #: ../logview/logview.c:101
 msgid "Filter log"
-msgstr "Filtrer le journal"
+msgstr "Filtre le journal"
 
 #: ../logview/logview.c:104
 msgid "Bigger text size"
@@ -2710,11 +2710,11 @@ msgstr ""
 
 #: ../logview/logview.c:122
 msgid "_Statusbar"
-msgstr "_Barre de statut"
+msgstr "Barre d'é_tat"
 
 #: ../logview/logview.c:122
 msgid "Show Status Bar"
-msgstr "Monter la barre de statut"
+msgstr "Affiche la barre d'état"
 
 #: ../logview/logview.c:124
 msgid "Side _Pane"
@@ -2722,7 +2722,7 @@ msgstr "Panneau _latéral"
 
 #: ../logview/logview.c:124
 msgid "Show Side Pane"
-msgstr "Affiche la barre latérale"
+msgstr "Affiche le panneau latéral"
 
 #: ../logview/logview.c:126
 msgid "_Monitor"
@@ -2831,7 +2831,7 @@ msgstr "Afficher les options du visionneur de journaux système"
 
 #: ../logview/main.c:59
 msgid " - Browse and monitor logs"
-msgstr " -Parcourt et surveille les journaux"
+msgstr " - Parcourt et surveille les journaux"
 
 #: ../logview/main.c:153
 msgid "Log Viewer"
@@ -2891,7 +2891,7 @@ msgstr "Décembre"
 
 #: ../logview/misc.c:162
 msgid "Invalid date"
-msgstr "Date invalide"
+msgstr "Date non valide"
 
 #. Translators: Only date format, time will be bogus
 #: ../logview/misc.c:167
@@ -2901,7 +2901,7 @@ msgstr "%x"
 
 #: ../logview/monitor.c:83
 msgid "This file cannot be monitored."
-msgstr "Ce fichier ne peut être surveillé."
+msgstr "Ce fichier ne peut pas être surveillé."
 
 #: ../logview/monitor.c:86
 msgid "File monitoring is not supported on this file system.\n"
