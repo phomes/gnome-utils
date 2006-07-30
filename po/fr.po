@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.14.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 10:28+0200\n"
-"PO-Revision-Date: 2006-07-29 10:28+0200\n"
+"POT-Creation-Date: 2006-07-30 13:58+0200\n"
+"PO-Revision-Date: 2006-07-30 13:58+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -1292,7 +1292,7 @@ msgstr "Type du mot que vous recherchez"
 
 #: ../gnome-dictionary/src/gdict-applet.c:747
 msgid "Preferences"
-msgstr "_Préférences"
+msgstr "Préférences"
 
 #: ../gnome-dictionary/src/gdict-applet.c:779
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:471
@@ -1618,7 +1618,7 @@ msgstr "<b>Aperçu</b>"
 #: ../gnome-screenshot/gnome-panel-screenshot.glade.h:4
 #: ../gnome-screenshot/gnome-screenshot.glade.h:2
 msgid "Save Screenshot"
-msgstr "Sauvegarder la copie"
+msgstr "Enregistrer la capture d'écran"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
 msgid "Take Screenshot"
@@ -1630,7 +1630,7 @@ msgstr "Prendre une capture d'écran de votre bureau"
 
 #: ../gnome-screenshot/gnome-screenshot.glade.h:3
 msgid "Save in _folder:"
-msgstr "Sauvegarder dans le _dossier :"
+msgstr "Enregistrer dans le _dossier :"
 
 #: ../gnome-screenshot/gnome-screenshot.glade.h:4
 msgid "_Name:"
@@ -1690,13 +1690,13 @@ msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr ""
-"Le processus fils de sauvegarde a quitté inopinément. Impossible d'écrire la "
-"copie d'écran sur le disque."
+"Le processus fils d'enregistrement a quitté inopinément. Impossible d'écrire "
+"la copie d'écran sur le disque."
 
 #: ../gnome-screenshot/screenshot-save.c:191
 msgid "Unknown error saving screenshot to disk"
 msgstr ""
-"Erreur inconnue lors de la sauvegarde de la capture d'écran sur le disque"
+"Erreur inconnue lors de l'enregistrement de la capture d'écran sur le disque"
 
 #: ../gnome-screenshot/screenshot-utils.c:610
 msgid "Untitled Window"
@@ -1718,12 +1718,12 @@ msgstr "Le fichier « %s » existe déjà. Voulez-vous le remplacer ?"
 #: ../gnome-screenshot/screenshot-xfer.c:190
 #: ../gsearchtool/gsearchtool-callbacks.c:1412
 msgid "_Replace"
-msgstr "_Remplacer"
+msgstr "Re_mplacer"
 
 #: ../gnome-screenshot/screenshot-xfer.c:230
 #, c-format
 msgid "Unknown GnomeVFSXferProgressStatus %d"
-msgstr "GnomeVFSXferProgressStatus inconnu %d"
+msgstr "GnomeVFSXferProgressStatus %d inconnu"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Find files, folders, and documents on your computer"
@@ -2759,7 +2759,7 @@ msgstr "Version : "
 
 #: ../logview/logview.c:976
 msgid "Days"
-msgstr "jours"
+msgstr "Jours"
 
 #: ../logview/logview.c:977
 msgid "Pointer towards a GSList of days for the current log."
