@@ -1,5 +1,4 @@
-# translation of eu.po to Basque
-# translation of gnome-utils.gnome-2-4.po to basque
+# translation of gnome-utils.po to basque
 # Copyright (C) 2001, 2004, 2006 Free Software Foundation, Inc.
 # Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2004.
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2004, 2005, 2006.
@@ -8,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-24 17:52+0100\n"
-"PO-Revision-Date: 2006-02-24 17:48+0100\n"
-"Last-Translator: Iñaki Larrañaga <dooteo@euskalgnu.org>\n"
+"POT-Creation-Date: 2006-08-09 17:55+0000\n"
+"PO-Revision-Date: 2006-08-09 17:56+0000\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -549,7 +548,7 @@ msgstr "_Gorde"
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.h:1
 #: ../gnome-dictionary/src/gdict-about.c:98
 #: ../gnome-dictionary/src/gdict-app.c:468
-#: ../gnome-dictionary/src/gdict-window.c:1204
+#: ../gnome-dictionary/src/gdict-window.c:1207
 msgid "Dictionary"
 msgstr "Hiztegia"
 
@@ -640,8 +639,7 @@ msgid "The name of the dictionary source used"
 msgstr "Erabilitako hiztegi-iturburuaren izena."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:14
-msgid ""
-"The name of the dictionary source used to retrieve the definitions of words."
+msgid "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "Erabili den hiztegi-iturburaren izena hitzen definizioak eskuratzeko."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:15
@@ -713,7 +711,7 @@ msgid "H_ostname:"
 msgstr "_Ostalari-izena:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
-#: ../gnome-dictionary/src/gdict-applet.c:230
+#: ../gnome-dictionary/src/gdict-applet.c:231
 #: ../gnome-dictionary/src/gdict-window.c:595
 msgid "Print"
 msgstr "Inprimatu"
@@ -760,7 +758,7 @@ msgstr "_Garraioa:"
 
 #: ../gnome-dictionary/data/french.desktop.in.h:1
 msgid "French Dictionaries from Wikipedia"
-msgstr "Fratses hiztegiak (Wikipedia)"
+msgstr "Frantses hiztegiak (Wikipedia)"
 
 #: ../gnome-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -812,8 +810,7 @@ msgstr "Ez dago hiztegi-zerbitzariarekin '%s:%d' konexiorik"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1025
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
-"'%s' ostalariaren bilaketak huts egin du: ez da baliabide egokirik aurkitu"
+msgstr "'%s' ostalariaren bilaketak huts egin du: ez da baliabide egokirik aurkitu"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1055
 #, c-format
@@ -1068,7 +1065,7 @@ msgid "The filename used by this dictionary source"
 msgstr "Hiztegi-iturburuak erabiltzen duen fitxategi-izena"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:232
-#: ../gsearchtool/gsearchtool.c:2475
+#: ../gsearchtool/gsearchtool.c:2474
 msgid "Name"
 msgstr "Izena"
 
@@ -1128,10 +1125,8 @@ msgstr "Ezin da '%s' gakoa hiztegi-iturburuko definizio barrukoa lortu: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:541
 #, c-format
-msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr ""
-"Ezin da '%s' gakoa hiztegi-iturburuko definizio barruko fixtategiko lortu: %s"
+msgid "Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr "Ezin da '%s' gakoa hiztegi-iturburuko definizio barruko fixtategiko lortu: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:727
 msgid "Dictionary source does not have name"
@@ -1162,14 +1157,12 @@ msgstr "Hiztegi-iturburuen bilaketa"
 #: ../gnome-dictionary/src/gdict-about.c:59 ../logview/about.c:47
 msgid "translator-credits"
 msgstr ""
-"Hizkuntza Politikarako Sailburuordetza \n"
-"<hizkpol@ej-gv.es>\n"
-"Iñaki Larrañaga  Murgoitio \n"
-"<dooteo@euskalgnu.org>"
+"Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>\n"
+"Iñaki Larrañaga  Murgoitio <dooteo@euskalgnu.org>"
 
 #
 #: ../gnome-dictionary/src/gdict-about.c:61
-#: ../gnome-dictionary/src/gdict-applet.c:589
+#: ../gnome-dictionary/src/gdict-applet.c:610
 msgid "Look up words in dictionaries"
 msgstr "Bilatu hitza hiztegietan"
 
@@ -1218,7 +1211,7 @@ msgstr ""
 "%s"
 
 #: ../gnome-dictionary/src/gdict-app.c:345
-#: ../gnome-dictionary/src/gdict-applet.c:1398
+#: ../gnome-dictionary/src/gdict-applet.c:1422
 #, c-format
 msgid "Unable to rename file '%s' to '%s': %s"
 msgstr "Ezin da '%s' fitxategia '%s' gisa izendatu: %s"
@@ -1226,8 +1219,8 @@ msgstr "Ezin da '%s' fitxategia '%s' gisa izendatu: %s"
 #
 #: ../gnome-dictionary/src/gdict-app.c:369
 #: ../gnome-dictionary/src/gdict-app.c:392
-#: ../gnome-dictionary/src/gdict-applet.c:1422
-#: ../gnome-dictionary/src/gdict-applet.c:1445
+#: ../gnome-dictionary/src/gdict-applet.c:1446
+#: ../gnome-dictionary/src/gdict-applet.c:1469
 #, c-format
 msgid "Unable to create the data directory '%s': %s"
 msgstr "Ezin da '%s' datuen direktorioa sortu: %s"
@@ -1279,132 +1272,132 @@ msgstr "Hiztegia eta ortografia zuzentzeko tresna"
 msgid "Show Dictionary options"
 msgstr "Erakutsi hiztegiaren aukerak"
 
-#: ../gnome-dictionary/src/gdict-applet.c:244
+#: ../gnome-dictionary/src/gdict-applet.c:245
 #: ../gnome-dictionary/src/gdict-window.c:540
 msgid "Save a Copy"
 msgstr "Gorde kopia bat"
 
-#: ../gnome-dictionary/src/gdict-applet.c:254
+#: ../gnome-dictionary/src/gdict-applet.c:255
 #: ../gnome-dictionary/src/gdict-window.c:550
 msgid "Untitled document"
 msgstr "Izenik gabeko dokumentua"
 
 #
-#: ../gnome-dictionary/src/gdict-applet.c:275
+#: ../gnome-dictionary/src/gdict-applet.c:276
 #: ../gnome-dictionary/src/gdict-window.c:571
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Errorea '%s' fitxategian idaztean"
 
-#: ../gnome-dictionary/src/gdict-applet.c:363
+#: ../gnome-dictionary/src/gdict-applet.c:384
 msgid "Clear the definitions found"
 msgstr "Garbitu aurkitutako definizioak"
 
-#: ../gnome-dictionary/src/gdict-applet.c:366
+#: ../gnome-dictionary/src/gdict-applet.c:387
 msgid "Clear definition"
 msgstr "Garbitu definizioa"
 
-#: ../gnome-dictionary/src/gdict-applet.c:367
+#: ../gnome-dictionary/src/gdict-applet.c:388
 msgid "Clear the text of the definition"
 msgstr "Garbitu testuaren definizioa"
 
-#: ../gnome-dictionary/src/gdict-applet.c:377
+#: ../gnome-dictionary/src/gdict-applet.c:398
 msgid "Print the definitions found"
 msgstr "Inprimatu aurkitutako definizioak"
 
-#: ../gnome-dictionary/src/gdict-applet.c:380
+#: ../gnome-dictionary/src/gdict-applet.c:401
 msgid "Print definition"
 msgstr "Inprimatu definizioa"
 
-#: ../gnome-dictionary/src/gdict-applet.c:381
+#: ../gnome-dictionary/src/gdict-applet.c:402
 msgid "Print the text of the definition"
 msgstr "Inprimatu testuaren definizioa"
 
-#: ../gnome-dictionary/src/gdict-applet.c:391
+#: ../gnome-dictionary/src/gdict-applet.c:412
 msgid "Save the definitions found"
 msgstr "Gorde aurkitutako definizioak"
 
-#: ../gnome-dictionary/src/gdict-applet.c:394
+#: ../gnome-dictionary/src/gdict-applet.c:415
 msgid "Save definition"
 msgstr "Gorde definizioa"
 
-#: ../gnome-dictionary/src/gdict-applet.c:395
+#: ../gnome-dictionary/src/gdict-applet.c:416
 msgid "Save the text of the definition to a file"
 msgstr "Gorde testuaren definizioa fitxategi batean"
 
-#: ../gnome-dictionary/src/gdict-applet.c:529
+#: ../gnome-dictionary/src/gdict-applet.c:550
 msgid "Toggle dictionary window"
 msgstr "Txandakatu hiztegiaren leihoa"
 
 #
-#: ../gnome-dictionary/src/gdict-applet.c:530
+#: ../gnome-dictionary/src/gdict-applet.c:551
 msgid "Show or hide the definition window"
 msgstr "Erakutsi edo ezkutatu definizio-leihoa"
 
-#: ../gnome-dictionary/src/gdict-applet.c:533
+#: ../gnome-dictionary/src/gdict-applet.c:554
 msgid "Click to view the dictionary window"
 msgstr "Egin klik hiztegiaren leihoa ikusteko"
 
 #
-#: ../gnome-dictionary/src/gdict-applet.c:588
+#: ../gnome-dictionary/src/gdict-applet.c:609
 msgid "Dictionary entry"
 msgstr "Hiztegiko sarrera"
 
-#: ../gnome-dictionary/src/gdict-applet.c:592
+#: ../gnome-dictionary/src/gdict-applet.c:613
 msgid "Type the word you want to look up"
 msgstr "Idatzi bilatzea nahi duzun i¡hitza"
 
 #
-#: ../gnome-dictionary/src/gdict-applet.c:726
+#: ../gnome-dictionary/src/gdict-applet.c:747
 msgid "Preferences"
 msgstr "Hobespenak"
 
-#: ../gnome-dictionary/src/gdict-applet.c:758
+#: ../gnome-dictionary/src/gdict-applet.c:779
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:471
 #: ../gnome-dictionary/src/gdict-source-dialog.c:324
 #: ../gnome-dictionary/src/gdict-window.c:761
 msgid "There was an error while displaying help"
 msgstr "Errorea gertatu da laguntza bistaratzean."
 
-#: ../gnome-dictionary/src/gdict-applet.c:917
+#: ../gnome-dictionary/src/gdict-applet.c:938
 #: ../gnome-dictionary/src/gdict-window.c:270
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Ez dago '%s' izeneko hiztegi-iturbururik eskuragarri"
 
 #
-#: ../gnome-dictionary/src/gdict-applet.c:921
+#: ../gnome-dictionary/src/gdict-applet.c:942
 #: ../gnome-dictionary/src/gdict-window.c:274
 msgid "Unable to find dictionary source"
 msgstr "Ezin da hiztegi-iturburua aurkitu"
 
-#: ../gnome-dictionary/src/gdict-applet.c:937
+#: ../gnome-dictionary/src/gdict-applet.c:958
 #: ../gnome-dictionary/src/gdict-window.c:290
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Ez dago '%s' iturburuaren testuningururik eskuragarri"
 
-#: ../gnome-dictionary/src/gdict-applet.c:941
+#: ../gnome-dictionary/src/gdict-applet.c:962
 #: ../gnome-dictionary/src/gdict-window.c:294
 msgid "Unable to create a context"
 msgstr "Ezin izan da fitxategi-sistema sortu."
 
-#: ../gnome-dictionary/src/gdict-applet.c:1210
+#: ../gnome-dictionary/src/gdict-applet.c:1231
 msgid "Unable to load the applet icon"
 msgstr "Ezin da applet-aren ikonoa kargatu"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1239
-#: ../gnome-dictionary/src/gdict-window.c:1313
+#: ../gnome-dictionary/src/gdict-applet.c:1260
+#: ../gnome-dictionary/src/gdict-window.c:1316
 msgid "Unable to connect to GConf"
 msgstr "Ezin da GConf-ekin konektatu"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1254
-#: ../gnome-dictionary/src/gdict-window.c:1329
+#: ../gnome-dictionary/src/gdict-applet.c:1275
+#: ../gnome-dictionary/src/gdict-window.c:1332
 msgid "Unable to get notification for preferences"
 msgstr "Ezin da hobespenen jakinarazpenik lortu"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1269
-#: ../gnome-dictionary/src/gdict-window.c:1345
+#: ../gnome-dictionary/src/gdict-applet.c:1290
+#: ../gnome-dictionary/src/gdict-window.c:1348
 msgid "Unable to get notification for the document font"
 msgstr "Ezin da dokumentuaren letra-tipoaren jakinarazpenik lortu"
 
@@ -1579,12 +1572,12 @@ msgid "_Contents"
 msgstr "_Edukia"
 
 #
-#: ../gnome-dictionary/src/gdict-window.c:1126
+#: ../gnome-dictionary/src/gdict-window.c:1129
 msgid "Look _up:"
 msgstr "_Bilatu:"
 
 #
-#: ../gnome-dictionary/src/gdict-window.c:1369
+#: ../gnome-dictionary/src/gdict-window.c:1372
 msgid "Unable to load the application icon"
 msgstr "Ezin da aplikazioaren ikonoa kargatu"
 
@@ -1613,8 +1606,7 @@ msgstr "Errorea laguntza kargatzean"
 
 #: ../gnome-screenshot/gnome-panel-screenshot.c:87
 msgid "There was an error displaying the help pages for this dialog:"
-msgstr ""
-"Errorea gertatu da elkarrizketa-koadroan laguntzako orrialdeak bistaratzean:"
+msgstr "Errorea gertatu da elkarrizketa-koadroan laguntzako orrialdeak bistaratzean:"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if a specific window is taken
@@ -1901,8 +1893,7 @@ msgstr "Hautatu \"Izenak ez dauka\" bilaketa-aukera"
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:32
 msgid "Select the search option \"Name matches regular expression\""
-msgstr ""
-"Hautatu \"Izena bat dator adierazpen erregularrarekin\" bilaketa-aukera"
+msgstr "Hautatu \"Izena bat dator adierazpen erregularrarekin\" bilaketa-aukera"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -2138,10 +2129,8 @@ msgstr ""
 "zehazten du, fitxategi-izenen bilaketa bakuna lantzen denean."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr ""
-"Gako honek bilaketa-tresnaren leihoa maximizatuta hasten den zehazten du."
+msgid "This key determines if the search tool window starts in a maximized state."
+msgstr "Gako honek bilaketa-tresnaren leihoa maximizatuta hasten den zehazten du."
 
 #
 #: ../gsearchtool/gsearchtool-callbacks.c:186
@@ -2208,8 +2197,7 @@ msgstr "\"%s\" betirako ezabatzea nahi duzu?"
 #: ../gsearchtool/gsearchtool-callbacks.c:671
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr ""
-"Zakarrontzia ez dago eskuragarri. Ezin izan da \"%s\" zakarrontzira bota."
+msgstr "Zakarrontzia ez dago eskuragarri. Ezin izan da \"%s\" zakarrontzira bota."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:710
 #, c-format
@@ -2389,95 +2377,93 @@ msgstr "_Bota zakarrontzira"
 msgid "_Save Results As..."
 msgstr "_Gorde emaitzak honela..."
 
-#: ../gsearchtool/gsearchtool.c:391
+#: ../gsearchtool/gsearchtool.c:390
 msgid "A locate database has probably not been created."
 msgstr "Baliteke 'locate'ren datu-basea sortu gabe egotea."
 
-#: ../gsearchtool/gsearchtool.c:493
+#: ../gsearchtool/gsearchtool.c:492
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "\"%s\"(r)en karaktere-multzoaren bihurketak huts egin du."
 
-#: ../gsearchtool/gsearchtool.c:517
+#: ../gsearchtool/gsearchtool.c:516
 msgid "Searching..."
 msgstr "Bilatzen..."
 
 #
-#: ../gsearchtool/gsearchtool.c:517 ../gsearchtool/gsearchtool.c:1022
-#: ../gsearchtool/gsearchtool.c:1300 ../gsearchtool/gsearchtool.c:3151
+#: ../gsearchtool/gsearchtool.c:516 ../gsearchtool/gsearchtool.c:1021
+#: ../gsearchtool/gsearchtool.c:1299 ../gsearchtool/gsearchtool.c:3155
 msgid "Search for Files"
 msgstr "Bilatu fitxategiak"
 
 #
-#: ../gsearchtool/gsearchtool.c:968 ../gsearchtool/gsearchtool.c:997
+#: ../gsearchtool/gsearchtool.c:967 ../gsearchtool/gsearchtool.c:996
 msgid "No files found"
 msgstr "Ez da fitxategirik aurkitu"
 
-#: ../gsearchtool/gsearchtool.c:990
+#: ../gsearchtool/gsearchtool.c:989
 msgid "(stopped)"
 msgstr "(geldituta)"
 
 #
-#: ../gsearchtool/gsearchtool.c:996
+#: ../gsearchtool/gsearchtool.c:995
 msgid "No Files Found"
 msgstr "Ez da fitxategirik aurkitu"
 
-#: ../gsearchtool/gsearchtool.c:1001
+#: ../gsearchtool/gsearchtool.c:1000
 #, c-format
 msgid "%d File Found"
 msgid_plural "%d Files Found"
 msgstr[0] "Fitxategi %d aurkitu da"
 msgstr[1] "%d fitxategi aurkitu dira"
 
-#: ../gsearchtool/gsearchtool.c:1005 ../gsearchtool/gsearchtool.c:1043
+#: ../gsearchtool/gsearchtool.c:1004 ../gsearchtool/gsearchtool.c:1042
 #, c-format
 msgid "%d file found"
 msgid_plural "%d files found"
 msgstr[0] "Fitxategi %d aurkitu da"
 msgstr[1] "%d fitxategi aurkitu dira"
 
-#: ../gsearchtool/gsearchtool.c:1134
+#: ../gsearchtool/gsearchtool.c:1133
 msgid "Entry changed called for a non entry option!"
 msgstr "Aukerarik ez duen sarrerarako aldaketa eskatu da!"
 
-#: ../gsearchtool/gsearchtool.c:1385
+#: ../gsearchtool/gsearchtool.c:1384
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Ezarri \"Izenak hau dauka\" bilaketa-aukeraren testua"
 
-#: ../gsearchtool/gsearchtool.c:1386
+#: ../gsearchtool/gsearchtool.c:1385
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "Ezarri \"Begiratu karpetan\" bilaketa-aukeraren testua"
 
-#: ../gsearchtool/gsearchtool.c:1387
+#: ../gsearchtool/gsearchtool.c:1386
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr ""
-"Antolatu fitxategiak hauen arabera: izena, karpeta, tamaina, mota edo data"
+msgstr "Antolatu fitxategiak hauen arabera: izena, karpeta, tamaina, mota edo data"
+
+#: ../gsearchtool/gsearchtool.c:1387
+msgid "Set sort order to descending, the default is ascending"
+msgstr "Antolatzeko ordena goitik behera ezartzen du, lehenetsia behetik gora da"
 
 #: ../gsearchtool/gsearchtool.c:1388
-msgid "Set sort order to descending, the default is ascending"
-msgstr ""
-"Antolatzeko ordena goitik behera ezartzen du, lehenetsia behetik gora da"
-
-#: ../gsearchtool/gsearchtool.c:1389
 msgid "Automatically start a search"
 msgstr "Automatikoki bilaketa abiarazten du"
 
-#: ../gsearchtool/gsearchtool.c:1395
+#: ../gsearchtool/gsearchtool.c:1394
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Hautatu \"%s\" bilaketa-aukera"
 
 #
-#: ../gsearchtool/gsearchtool.c:1398
+#: ../gsearchtool/gsearchtool.c:1397
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Hautatu eta ezarri \"%s\" bilaketa-aukera"
 
-#: ../gsearchtool/gsearchtool.c:1505
+#: ../gsearchtool/gsearchtool.c:1504
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Aukera baliogabea sortby komando-lerroaren argumentura pasa da."
 
-#: ../gsearchtool/gsearchtool.c:1803
+#: ../gsearchtool/gsearchtool.c:1802
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -2485,7 +2471,7 @@ msgstr ""
 "\n"
 "... Errore gehiegi bistaratzeko..."
 
-#: ../gsearchtool/gsearchtool.c:1817
+#: ../gsearchtool/gsearchtool.c:1816
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
@@ -2494,11 +2480,11 @@ msgstr ""
 "gertatu baitira."
 
 #
-#: ../gsearchtool/gsearchtool.c:1829 ../gsearchtool/gsearchtool.c:1873
+#: ../gsearchtool/gsearchtool.c:1828 ../gsearchtool/gsearchtool.c:1872
 msgid "Show more _details"
 msgstr "Erakutsi _xehetasun gehiago"
 
-#: ../gsearchtool/gsearchtool.c:1859
+#: ../gsearchtool/gsearchtool.c:1858
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -2506,162 +2492,162 @@ msgstr ""
 "Bilaketaren emaitza zaharkitua edo baliogabea izan daiteke. Nahi duzu "
 "bilaketa azkarraren funtzioa desgaitzea?"
 
-#: ../gsearchtool/gsearchtool.c:1884
+#: ../gsearchtool/gsearchtool.c:1883
 msgid "Disable _Quick Search"
 msgstr "Desgaitu bilaketa _azkarra"
 
-#: ../gsearchtool/gsearchtool.c:1911
+#: ../gsearchtool/gsearchtool.c:1910
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "Huts egin du %d umearen prozesuaren talde-IDa ezartzean: %s\n"
 
 #
-#: ../gsearchtool/gsearchtool.c:1936
+#: ../gsearchtool/gsearchtool.c:1935
 msgid "Error parsing the search command."
 msgstr "Errorea bilaketa-komandoa analizatzean"
 
 #
-#: ../gsearchtool/gsearchtool.c:1969
+#: ../gsearchtool/gsearchtool.c:1968
 msgid "Error running the search command."
 msgstr "Errorea bilaketa-komandoa exekutatzean"
 
 #
-#: ../gsearchtool/gsearchtool.c:2084
+#: ../gsearchtool/gsearchtool.c:2083
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Idatzi testuaren balioa \"%s\" bilaketa-aukerako"
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2089
+#: ../gsearchtool/gsearchtool.c:2088
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\" %s"
 
 #
-#: ../gsearchtool/gsearchtool.c:2091
+#: ../gsearchtool/gsearchtool.c:2090
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Idatzi %s(e)n balioa \"%s\" bilaketa-aukerako"
 
-#: ../gsearchtool/gsearchtool.c:2150
+#: ../gsearchtool/gsearchtool.c:2149
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Kendu \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:2151
+#: ../gsearchtool/gsearchtool.c:2150
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Egin klik \"%s\" bilaketa-aukera kentzeko."
 
 #
-#: ../gsearchtool/gsearchtool.c:2244
+#: ../gsearchtool/gsearchtool.c:2243
 msgid "A_vailable options:"
 msgstr "A_ukera erabilgarriak:"
 
 #
-#: ../gsearchtool/gsearchtool.c:2273
+#: ../gsearchtool/gsearchtool.c:2272
 msgid "Available options"
 msgstr "Aukera erabilgarriak"
 
 #
-#: ../gsearchtool/gsearchtool.c:2274
+#: ../gsearchtool/gsearchtool.c:2273
 msgid "Select a search option from the drop-down list."
 msgstr "Hautatu bilaketa-aukera zerrendan."
 
-#: ../gsearchtool/gsearchtool.c:2286
+#: ../gsearchtool/gsearchtool.c:2285
 msgid "Add search option"
 msgstr "Gehitu bilaketa-aukera"
 
-#: ../gsearchtool/gsearchtool.c:2287
+#: ../gsearchtool/gsearchtool.c:2286
 msgid "Click to add the selected available search option."
 msgstr "Egin klik hautatutako bilaketa-aukera gehitzeko."
 
 #
-#: ../gsearchtool/gsearchtool.c:2376
+#: ../gsearchtool/gsearchtool.c:2375
 msgid "S_earch results:"
 msgstr "Bi_laketaren emaitzak:"
 
-#: ../gsearchtool/gsearchtool.c:2415
+#: ../gsearchtool/gsearchtool.c:2414
 msgid "List View"
 msgstr "Ikusi zerrendan"
 
-#: ../gsearchtool/gsearchtool.c:2499
+#: ../gsearchtool/gsearchtool.c:2498
 msgid "Folder"
 msgstr "Karpeta"
 
-#: ../gsearchtool/gsearchtool.c:2511
+#: ../gsearchtool/gsearchtool.c:2510
 msgid "Size"
 msgstr "Tamaina"
 
-#: ../gsearchtool/gsearchtool.c:2522
+#: ../gsearchtool/gsearchtool.c:2521
 msgid "Type"
 msgstr "Mota"
 
 #
-#: ../gsearchtool/gsearchtool.c:2533
+#: ../gsearchtool/gsearchtool.c:2532
 msgid "Date Modified"
 msgstr "Aldatze-data"
 
-#: ../gsearchtool/gsearchtool.c:2935
+#: ../gsearchtool/gsearchtool.c:2934
 msgid "_Name contains:"
 msgstr "_Izenak hau dauka:"
 
-#: ../gsearchtool/gsearchtool.c:2949 ../gsearchtool/gsearchtool.c:2950
+#: ../gsearchtool/gsearchtool.c:2948 ../gsearchtool/gsearchtool.c:2949
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "Idatzi fitxategi-izena edo izen partziala (komodinekin edo gabe)."
 
-#: ../gsearchtool/gsearchtool.c:2950
+#: ../gsearchtool/gsearchtool.c:2949
 msgid "Name contains"
 msgstr "Izenak hau dauka"
 
 #
-#: ../gsearchtool/gsearchtool.c:2956
+#: ../gsearchtool/gsearchtool.c:2955
 msgid "_Look in folder:"
 msgstr "_Bilatu karpetan:"
 
-#: ../gsearchtool/gsearchtool.c:2962
+#: ../gsearchtool/gsearchtool.c:2961
 msgid "Browse"
 msgstr "Arakatu"
 
 #
-#: ../gsearchtool/gsearchtool.c:2967
+#: ../gsearchtool/gsearchtool.c:2966
 msgid "Look in folder"
 msgstr "Bilatu karpetan"
 
-#: ../gsearchtool/gsearchtool.c:2967
+#: ../gsearchtool/gsearchtool.c:2966
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "Hautatu karpeta edo gailua, bilaketa bertatik hasteko."
 
 #
-#: ../gsearchtool/gsearchtool.c:2978
+#: ../gsearchtool/gsearchtool.c:2977
 msgid "Select more _options"
 msgstr "Hautatu _aukera gehiago"
 
 #
-#: ../gsearchtool/gsearchtool.c:2987
+#: ../gsearchtool/gsearchtool.c:2986
 msgid "Select more options"
 msgstr "Hautatu aukera gehiago"
 
-#: ../gsearchtool/gsearchtool.c:2987
+#: ../gsearchtool/gsearchtool.c:2986
 msgid "Click to expand or collapse the list of available options."
 msgstr "Egin klik bilaketaren aukera-zerrenda zabaltzeko edo tolesteko."
 
 #
-#: ../gsearchtool/gsearchtool.c:3011
+#: ../gsearchtool/gsearchtool.c:3010
 msgid "Click to display the help manual."
 msgstr "Egin klik laguntzako eskuliburua bistaratzeko."
 
 #
-#: ../gsearchtool/gsearchtool.c:3019
+#: ../gsearchtool/gsearchtool.c:3018
 msgid "Click to close \"Search for Files\"."
 msgstr "Egin klik \"Bilatu fitxategiak\" ixteko."
 
-#: ../gsearchtool/gsearchtool.c:3045
+#: ../gsearchtool/gsearchtool.c:3044
 msgid "Click to perform a search."
 msgstr "Egin klik bilaketa egiteko."
 
-#: ../gsearchtool/gsearchtool.c:3046
+#: ../gsearchtool/gsearchtool.c:3045
 msgid "Click to stop a search."
 msgstr "Egin klik bilaketa geldiarazteko"
 
@@ -2914,8 +2900,7 @@ msgstr ""
 
 #: ../logview/logview.schemas.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
-msgstr ""
-"Egunkari-ikustailearen leiho nagusiaren altuera zehazten du (pixeletan)."
+msgstr "Egunkari-ikustailearen leiho nagusiaren altuera zehazten du (pixeletan)."
 
 #: ../logview/logview.schemas.in.h:7
 msgid ""
@@ -2936,8 +2921,7 @@ msgstr ""
 
 #: ../logview/logview.schemas.in.h:9
 msgid "Specifies the width of the log viewer main window in pixels."
-msgstr ""
-"Egunkari-ikustailearen leiho nagusiaren zabalera zehazten du (pixeletan)"
+msgstr "Egunkari-ikustailearen leiho nagusiaren zabalera zehazten du (pixeletan)"
 
 #: ../logview/logview.schemas.in.h:10
 msgid "Width of the main window in pixels"
@@ -3034,44 +3018,3 @@ msgstr "Fitxategi-sistema honek ez du onartzen fitxategiak monitorizatzea.\n"
 msgid "Gnome-VFS Error.\n"
 msgstr "Gnome-VFS errorea.\n"
 
-#
-#~ msgid "Unable to create Dictionary data directory '%s'"
-#~ msgstr "Ezin da hiztegiko datuen '%s' direktorioa sortu"
-
-#~ msgid ""
-#~ "There already is a file with the same name.\n"
-#~ "\n"
-#~ "If you did not create the file yourself, you can safely remove it. If you "
-#~ "want to move the file and check its contents later, you can make a copy. "
-#~ "If you are not sure, you should close this dialog, check the contents of "
-#~ "the file and then remove it manually before launching Dictionary again."
-#~ msgstr ""
-#~ "Izen berdineko fitxategia bdago lehendik ere.\n"
-#~ "\n"
-#~ "Ez baduzu nahi fitxategia sortzerik nahi, lasai ezaba dezakezu. "
-#~ "Fitxategia lekuz aldatzea eta bere edukia beranduago egiaztatzea nahi "
-#~ "baduzu, kopia bat egin dezakezu. Ziur ez bazaude itxi elkarrizketa-koadro "
-#~ "hau, egiaztatu fitxategiaren edukia eta gero ezabatu fitxategia eskuz "
-#~ "Hiztegia berriro abiarazi aurretik."
-
-#
-#~ msgid "Remove the file"
-#~ msgstr "Ezabatu fitxategia"
-
-#~ msgid "Make a copy"
-#~ msgstr "Egin kopia bat"
-
-#~ msgid "Unable to remove file '%s': %s"
-#~ msgstr "Ezin da '%s' fitxategia ezabatu: %s"
-
-#
-#~ msgid "Unable to create the data directory '%s'"
-#~ msgstr "Ezin da '%s' datuen direktorioa sortu"
-
-#~ msgid ""
-#~ "There is a file with the same name in the path.\n"
-#~ "You should move the file and re-run the\n"
-#~ "Dictionary applet"
-#~ msgstr ""
-#~ "Izen berdineko fitxategi bat badago jadanik leku horretan.\n"
-#~ "Aldatu lekuz fitxategia eta berrabiarazi hiztegiaren applet-a"
