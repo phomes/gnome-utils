@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-08 10:26-0400\n"
+"POT-Creation-Date: 2006-04-06 21:17+0200\n"
 "PO-Revision-Date: 2004-03-06 23:32+0200\n"
 "Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -19,16 +19,16 @@ msgstr ""
 "Generator: KBabel 1.0.2\n"
 
 #: ../gdictsrc/GNOME_GDictApplet.server.in.in.h:1
-#: ../gdictsrc/gdict-applet.c:149
+#: ../gdictsrc/gdict-applet.c:150
 msgid "Dictionary Lookup"
 msgstr "Пошук у слоўніку"
 
 #: ../gdictsrc/GNOME_GDictApplet.server.in.in.h:2
-#: ../gdictsrc/gdict-applet.c:27 ../gdictsrc/gnome-dictionary.desktop.in.h:2
+#: ../gdictsrc/gdict-applet.c:28 ../gdictsrc/gnome-dictionary.desktop.in.h:2
 msgid "Lookup words in an online dictionary"
 msgstr "Пошук слова ў аддаленым слоўніку"
 
-#: ../gdictsrc/GNOME_GDictApplet.xml.h:1 ../gdictsrc/gdict-app.c:619
+#: ../gdictsrc/GNOME_GDictApplet.xml.h:1 ../gdictsrc/gdict-app.c:595
 #: ../logview/logview.c:129
 #, fuzzy
 msgid "_About"
@@ -46,8 +46,8 @@ msgstr "_Шукаць вылучаны тэкст"
 msgid "_Preferences"
 msgstr "_Усталяваньні"
 
-#: ../gdictsrc/dict.c:676 ../gdictsrc/gdict-pref-dialog.c:700
-#: ../gdictsrc/gdict-pref-dialog.c:747
+#: ../gdictsrc/dict.c:676 ../gdictsrc/gdict-pref-dialog.c:697
+#: ../gdictsrc/gdict-pref-dialog.c:744
 msgid "Cannot connect to server"
 msgstr "Немагчыма далучыцца да паслужніка"
 
@@ -66,7 +66,7 @@ msgstr ""
 "правільна. Для даведкі: дапомны паслужнік -- dict.org, порт -- 2628"
 
 #. Translator credits
-#: ../gdictsrc/gdict-about.c:40 ../logview/about.c:43
+#: ../gdictsrc/gdict-about.c:40 ../logview/about.c:44
 #, fuzzy
 msgid "translator-credits"
 msgstr ""
@@ -77,9 +77,9 @@ msgstr ""
 msgid "A client for the MIT dictionary server."
 msgstr "Кліент да паслужніка слоўнікаў MIT."
 
-#: ../gdictsrc/gdict-about.c:45 ../gdictsrc/gdict-applet.c:351
+#: ../gdictsrc/gdict-about.c:45 ../gdictsrc/gdict-applet.c:352
 #: ../gdictsrc/gdict-defbox.c:101 ../gdictsrc/gdict-defbox.c:114
-#: ../gdictsrc/gdict-pref-dialog.c:499
+#: ../gdictsrc/gdict-pref-dialog.c:500
 #: ../gdictsrc/gnome-dictionary.desktop.in.h:1 ../gdictsrc/main.c:87
 msgid "Dictionary"
 msgstr "Слоўнік"
@@ -115,174 +115,161 @@ msgstr "Шукаць"
 msgid "_Search for:"
 msgstr "П_ошук:"
 
-#: ../gdictsrc/gdict-app.c:500 ../gdictsrc/gdict-applet.c:299
-#: ../gdictsrc/gdict-pref-dialog.c:901
+#: ../gdictsrc/gdict-app.c:486 ../gdictsrc/gdict-applet.c:300
+#: ../gdictsrc/gdict-pref-dialog.c:898
 #, fuzzy
 msgid "Could not display help"
 msgstr "Немагчыма адлюстраваць дапамогу"
 
 #. Top
-#: ../gdictsrc/gdict-app.c:589
+#: ../gdictsrc/gdict-app.c:571
 msgid "_Dictionary"
 msgstr "С_лоўнік"
 
 #. Dictionary menu
-#: ../gdictsrc/gdict-app.c:595
+#: ../gdictsrc/gdict-app.c:577
 msgid "_Look Up Word"
 msgstr "_Шукаць слова"
 
-#: ../gdictsrc/gdict-app.c:596
+#: ../gdictsrc/gdict-app.c:578
 msgid "Lookup word in dictionary"
 msgstr "Пошук слова ў слоўніку"
 
-#: ../gdictsrc/gdict-app.c:597
+#: ../gdictsrc/gdict-app.c:579
 #, fuzzy
 msgid "_Print"
 msgstr "По_рт:"
 
-#: ../gdictsrc/gdict-app.c:598
+#: ../gdictsrc/gdict-app.c:580
 msgid "Print the current definition"
 msgstr ""
 
-#: ../gdictsrc/gdict-app.c:599
+#: ../gdictsrc/gdict-app.c:581
 #, fuzzy
 msgid "_Close"
 msgstr "Вылічыць косінус"
 
-#: ../gdictsrc/gdict-app.c:600
+#: ../gdictsrc/gdict-app.c:582
 #, fuzzy
 msgid "Close the application"
 msgstr "С_хаваць дастасаваньне"
 
 #. Edit menu, see below for cut, paste etc.
-#: ../gdictsrc/gdict-app.c:603 ../logview/logview.c:114
+#: ../gdictsrc/gdict-app.c:585 ../logview/logview.c:114
 #, fuzzy
 msgid "_Find..."
 msgstr "_Шукаць"
 
-#: ../gdictsrc/gdict-app.c:604
+#: ../gdictsrc/gdict-app.c:586
 #, fuzzy
 msgid "Find a word in the text"
 msgstr "Утрымлівае _тэкст"
 
-#: ../gdictsrc/gdict-app.c:605
+#: ../gdictsrc/gdict-app.c:587
 #, fuzzy
 msgid "Find Ne_xt"
 msgstr "Шукаць"
 
-#: ../gdictsrc/gdict-app.c:606
+#: ../gdictsrc/gdict-app.c:588
 msgid "Find next occurrence of the word"
 msgstr ""
 
-#: ../gdictsrc/gdict-app.c:607
+#: ../gdictsrc/gdict-app.c:589
 #, fuzzy
 msgid "P_references"
 msgstr "_Усталяваньні"
 
-#: ../gdictsrc/gdict-app.c:608
+#: ../gdictsrc/gdict-app.c:590
 #, fuzzy
 msgid "Configure the application"
 msgstr "С_хаваць дастасаваньне"
 
-#. View menu
-#: ../gdictsrc/gdict-app.c:611 ../logview/logview.c:117
-msgid "Bigger text size"
-msgstr ""
-
-#: ../gdictsrc/gdict-app.c:613 ../logview/logview.c:119
-msgid "Smaller text size"
-msgstr ""
-
 #. Help menu
-#: ../gdictsrc/gdict-app.c:617 ../logview/logview.c:127
+#: ../gdictsrc/gdict-app.c:593 ../logview/logview.c:127
 msgid "_Contents"
 msgstr ""
 
-#: ../gdictsrc/gdict-app.c:618
+#: ../gdictsrc/gdict-app.c:594
 msgid "View help for this application"
 msgstr ""
 
-#: ../gdictsrc/gdict-app.c:620
+#: ../gdictsrc/gdict-app.c:596
 #, fuzzy
 msgid "About this application"
 msgstr "С_хаваць дастасаваньне"
 
-#: ../gdictsrc/gdict-app.c:625
+#: ../gdictsrc/gdict-app.c:601
 #, fuzzy
 msgid "Cu_t"
 msgstr "Выразаць"
 
-#: ../gdictsrc/gdict-app.c:626
+#: ../gdictsrc/gdict-app.c:602
 msgid "Cut the selection"
 msgstr "Выразаць вылучаньне"
 
-#: ../gdictsrc/gdict-app.c:627
+#: ../gdictsrc/gdict-app.c:603
 msgid "_Copy"
 msgstr "_Капіяваць"
 
-#: ../gdictsrc/gdict-app.c:628 ../logview/logview.c:110
+#: ../gdictsrc/gdict-app.c:604 ../logview/logview.c:110
 #, fuzzy
 msgid "Copy the selection"
 msgstr "Выразаць вылучаньне"
 
-#: ../gdictsrc/gdict-app.c:629
-#, fuzzy
+#: ../gdictsrc/gdict-app.c:605
 msgid "_Paste"
-msgstr "Уставіць"
+msgstr "Ус_тавіць"
 
-#: ../gdictsrc/gdict-app.c:630
+#: ../gdictsrc/gdict-app.c:606
 #, fuzzy
 msgid "Paste clipboard"
 msgstr "Уставіць з буфэра абмена"
 
-#: ../gdictsrc/gdict-app.c:631
+#: ../gdictsrc/gdict-app.c:607
 msgid "Select _All"
-msgstr ""
+msgstr "Вылучыць _усё"
 
-#: ../gdictsrc/gdict-app.c:632
-#, fuzzy
+#: ../gdictsrc/gdict-app.c:608
 msgid "Select everything"
-msgstr "Выбрать события из журнала"
+msgstr "Вылучыць усё"
 
-#: ../gdictsrc/gdict-app.c:637
-#, fuzzy
+#: ../gdictsrc/gdict-app.c:613
 msgid "_Spellings"
-msgstr "Проверить правописание"
+msgstr "С_правіць правапіс"
 
-#: ../gdictsrc/gdict-app.c:638
+#: ../gdictsrc/gdict-app.c:614
 msgid "View alternate spellings"
 msgstr ""
 
-#: ../gdictsrc/gdict-app.c:748
+#: ../gdictsrc/gdict-app.c:724
 msgid "_Look Up"
-msgstr "Поискать"
+msgstr "_Шукаць"
 
-#: ../gdictsrc/gdict-app.c:757
-#, fuzzy
+#: ../gdictsrc/gdict-app.c:733
 msgid "In Dictionary"
-msgstr "Слоўнік"
+msgstr "У слоўніку"
 
-#: ../gdictsrc/gdict-app.c:758
+#: ../gdictsrc/gdict-app.c:734
 msgid "On a Web Site"
-msgstr ""
+msgstr "На сайце"
 
-#: ../gdictsrc/gdict-app.c:774
+#: ../gdictsrc/gdict-app.c:750
 msgid "Word"
 msgstr "Слова"
 
-#: ../gdictsrc/gdict-app.c:775
+#: ../gdictsrc/gdict-app.c:751
 msgid "Word Entry"
 msgstr "Элемэнт слова"
 
-#: ../gdictsrc/gdict-app.c:776
+#: ../gdictsrc/gdict-app.c:752
 msgid "Enter a Word or select one from the list below"
 msgstr "Увядзіце слова ці выбярыце адно са сьпіса"
 
-#: ../gdictsrc/gdict-app.c:779
+#: ../gdictsrc/gdict-app.c:755
 msgid "Look Up for a Word"
 msgstr "Шукаць слова"
 
-#: ../gdictsrc/gdict-applet.c:155
+#: ../gdictsrc/gdict-applet.c:156
 #, fuzzy
 msgid "Dictionary word entry"
 msgstr "Паслужнік слоўніка"
@@ -300,11 +287,11 @@ msgstr "Супадзеньні ня знойдзены"
 msgid "String not found"
 msgstr "Радка няма"
 
-#: ../gdictsrc/gdict-defbox.c:618
+#: ../gdictsrc/gdict-defbox.c:590
 msgid "Definition preview"
 msgstr ""
 
-#: ../gdictsrc/gdict-defbox.c:947 ../gdictsrc/gdict-entry.c:132
+#: ../gdictsrc/gdict-defbox.c:919 ../gdictsrc/gdict-entry.c:132
 #: ../gdictsrc/gdict-speller.c:295
 #, fuzzy
 msgid "Error invoking query"
@@ -315,98 +302,98 @@ msgstr "Памылка выкананьня запыта: %s"
 msgid "Looking up entry..."
 msgstr "Пошук слова..."
 
-#: ../gdictsrc/gdict-pref-dialog.c:267
+#: ../gdictsrc/gdict-pref-dialog.c:268
 msgid "De_fault Server"
 msgstr "Да_помны паслужнік"
 
-#: ../gdictsrc/gdict-pref-dialog.c:278
+#: ../gdictsrc/gdict-pref-dialog.c:279
 msgid "_Server:"
 msgstr "Паслужнік:"
 
-#: ../gdictsrc/gdict-pref-dialog.c:286
+#: ../gdictsrc/gdict-pref-dialog.c:287
 msgid "Reset server to default"
 msgstr "Скінуць паслужнік да дапомных наладак"
 
-#: ../gdictsrc/gdict-pref-dialog.c:288
+#: ../gdictsrc/gdict-pref-dialog.c:289
 msgid "_Port:"
 msgstr "По_рт:"
 
-#: ../gdictsrc/gdict-pref-dialog.c:298
+#: ../gdictsrc/gdict-pref-dialog.c:299
 msgid "Def_ault Port"
 msgstr "Да_помны порт"
 
-#: ../gdictsrc/gdict-pref-dialog.c:313
+#: ../gdictsrc/gdict-pref-dialog.c:314
 msgid "Reset port to default"
 msgstr "Скінуць порт да дапомных наладак"
 
-#: ../gdictsrc/gdict-pref-dialog.c:314
+#: ../gdictsrc/gdict-pref-dialog.c:315
 msgid "Server"
 msgstr "Паслужнік"
 
-#: ../gdictsrc/gdict-pref-dialog.c:316
+#: ../gdictsrc/gdict-pref-dialog.c:317
 msgid "Server Entry"
 msgstr "Элемэнт паслужніка"
 
-#: ../gdictsrc/gdict-pref-dialog.c:316
+#: ../gdictsrc/gdict-pref-dialog.c:317
 msgid "Enter the Server Name"
 msgstr "Увядзіце імя паслужніка"
 
-#: ../gdictsrc/gdict-pref-dialog.c:317
+#: ../gdictsrc/gdict-pref-dialog.c:318
 msgid "Port"
 msgstr "Порт"
 
-#: ../gdictsrc/gdict-pref-dialog.c:319
+#: ../gdictsrc/gdict-pref-dialog.c:320
 msgid "Port Entry"
 msgstr "Элемэнт парта"
 
-#: ../gdictsrc/gdict-pref-dialog.c:319
+#: ../gdictsrc/gdict-pref-dialog.c:320
 msgid "Enter the Port Number"
 msgstr "Увядзіце нумар парта"
 
-#: ../gdictsrc/gdict-pref-dialog.c:322
+#: ../gdictsrc/gdict-pref-dialog.c:323
 msgid "_Database:"
 msgstr "База _даньняў:"
 
-#: ../gdictsrc/gdict-pref-dialog.c:332
+#: ../gdictsrc/gdict-pref-dialog.c:333
 #, fuzzy
 msgid "Strat_egy:"
 msgstr "Стра_тэгія пошуку:"
 
-#: ../gdictsrc/gdict-pref-dialog.c:342
+#: ../gdictsrc/gdict-pref-dialog.c:343
 #, fuzzy
 msgid "F_ont:"
 msgstr "_Шрыфт:"
 
-#: ../gdictsrc/gdict-pref-dialog.c:372
+#: ../gdictsrc/gdict-pref-dialog.c:373
 msgid "Web Site"
 msgstr ""
 
-#: ../gdictsrc/gdict-pref-dialog.c:372
+#: ../gdictsrc/gdict-pref-dialog.c:373
 #, fuzzy
 msgid "Search Address"
 msgstr "_Вынікі пошуку:"
 
-#: ../gdictsrc/gdict-pref-dialog.c:491
+#: ../gdictsrc/gdict-pref-dialog.c:492
 msgid "Dictionary Preferences"
 msgstr "Уласьцівасьці слоўніка"
 
-#: ../gdictsrc/gdict-pref-dialog.c:503
+#: ../gdictsrc/gdict-pref-dialog.c:504
 msgid "Web Sites"
 msgstr ""
 
-#: ../gdictsrc/gdict-pref-dialog.c:690
+#: ../gdictsrc/gdict-pref-dialog.c:687
 msgid "Search all databases"
 msgstr "Шукаць ува ўсіх базах даньняў"
 
-#: ../gdictsrc/gdict-pref-dialog.c:855
+#: ../gdictsrc/gdict-pref-dialog.c:852
 msgid "Database"
 msgstr "База даньняў"
 
-#: ../gdictsrc/gdict-pref-dialog.c:855
+#: ../gdictsrc/gdict-pref-dialog.c:852
 msgid "Database Name"
 msgstr "Назоў базы даньняў"
 
-#: ../gdictsrc/gdict-pref-dialog.c:872
+#: ../gdictsrc/gdict-pref-dialog.c:869
 msgid "Default Strategy"
 msgstr "Дапомная стратэгія"
 
@@ -521,58 +508,58 @@ msgstr ""
 msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
 msgstr "ext2 для уласнай файлавай сыстэмы лінукс ці fat для DOS."
 
-#: ../gfloppy/src/badblocks.c:85
+#: ../gfloppy/src/badblocks.c:88
 msgid "Internal Error: Unable to seek to the correct location."
 msgstr "Нутраная памылка: немагчыма перайсьці да правільнага знаходжаньня."
 
-#: ../gfloppy/src/badblocks.c:94
+#: ../gfloppy/src/badblocks.c:97
 #, c-format
 msgid "Internal Error: Weird value (%ld) in do_test\n"
 msgstr "Нутраная памылка: дзіўнае значэньне (%ld) у do_test\n"
 
 #. while (!i)
 #. ;
-#: ../gfloppy/src/badblocks.c:252
+#: ../gfloppy/src/badblocks.c:255
 msgid "Checking for bad blocks..."
 msgstr "Праверка на пашкоджаныя блёкі..."
 
-#: ../gfloppy/src/badblocks.c:264
+#: ../gfloppy/src/badblocks.c:267
 #, c-format
 msgid "Failed to open device %s for badblock checking\n"
 msgstr "Немагчыма адчыніць прыладу %s для праверкі на пашкоджаныя блёкі\n"
 
-#: ../gfloppy/src/badblocks.c:284 ../gfloppy/src/gfloppy.c:530
+#: ../gfloppy/src/badblocks.c:287 ../gfloppy/src/gfloppy.c:530
 msgid "Checking for bad blocks... Done"
 msgstr "Праверка на пашкоджаныя блёкі... скончана"
 
-#: ../gfloppy/src/fdformat.c:43
+#: ../gfloppy/src/fdformat.c:46
 msgid "Formatting the disk..."
 msgstr "Фарматаваньне дыска..."
 
-#: ../gfloppy/src/fdformat.c:46
+#: ../gfloppy/src/fdformat.c:49
 msgid "I don't know what this is, but it's very wrong."
 msgstr "Невядома што гэта, але гэта вельмі кепска."
 
-#: ../gfloppy/src/fdformat.c:54 ../gfloppy/src/fdformat.c:67
+#: ../gfloppy/src/fdformat.c:57 ../gfloppy/src/fdformat.c:70
 #, c-format
 msgid "Error formatting track #%d"
 msgstr "Памылка фарматаваньня дарожкі #%d"
 
-#: ../gfloppy/src/fdformat.c:76
+#: ../gfloppy/src/fdformat.c:79
 msgid "Error during completion of formatting"
 msgstr "Памылка пад час завяршэньня фарматаваньня"
 
 #. XXXX - need to tell parent we're finished
-#: ../gfloppy/src/fdformat.c:80
+#: ../gfloppy/src/fdformat.c:83
 msgid "Formatting the disk... Done"
 msgstr "Фарматаваньне дыска... скончана"
 
 #. XXXX - tell parent we're starting verify stage
-#: ../gfloppy/src/fdformat.c:96
+#: ../gfloppy/src/fdformat.c:99
 msgid "Verifying the format..."
 msgstr "Праверка фарматаваньня..."
 
-#: ../gfloppy/src/fdformat.c:101 ../gfloppy/src/fdformat.c:186
+#: ../gfloppy/src/fdformat.c:104 ../gfloppy/src/fdformat.c:189
 msgid ""
 "Unable to write to the floppy.\n"
 "\n"
@@ -582,12 +569,12 @@ msgstr ""
 "\n"
 "Упэўніцеся, што яна не абаронена ад запісу."
 
-#: ../gfloppy/src/fdformat.c:104 ../gfloppy/src/fdformat.c:189
+#: ../gfloppy/src/fdformat.c:107 ../gfloppy/src/fdformat.c:192
 #, c-format
 msgid "Insufficient permissions to open floppy device %s."
 msgstr "Нестае правоў на доступ да прылады дыскавода %s."
 
-#: ../gfloppy/src/fdformat.c:108 ../gfloppy/src/fdformat.c:193
+#: ../gfloppy/src/fdformat.c:111 ../gfloppy/src/fdformat.c:196
 msgid ""
 "Unable to access the floppy disk.\n"
 "\n"
@@ -599,7 +586,7 @@ msgstr ""
 "Упэўніцеся, што яна ў дыскаводзе й\n"
 "устаўлена правільна."
 
-#: ../gfloppy/src/fdformat.c:111
+#: ../gfloppy/src/fdformat.c:114
 #, c-format
 msgid ""
 "Generic error accessing floppy device %s.\n"
@@ -610,7 +597,7 @@ msgstr ""
 "\n"
 "Код памылкі %s:%d"
 
-#: ../gfloppy/src/fdformat.c:134
+#: ../gfloppy/src/fdformat.c:137
 #, c-format
 msgid ""
 "Read Error:\n"
@@ -619,31 +606,31 @@ msgstr ""
 "Памылка чытаньня:\n"
 "Цяжкасьці з чытаньнем цыліндра %d, чакалася %d, прачытана %d"
 
-#: ../gfloppy/src/fdformat.c:137
+#: ../gfloppy/src/fdformat.c:140
 #, c-format
 msgid "Problem reading cylinder %d, expected %d, read %d"
 msgstr "Цяжкасьці з чытаньнем цыліндра %d, чакалася %d, прачытана %d"
 
-#: ../gfloppy/src/fdformat.c:148
+#: ../gfloppy/src/fdformat.c:151
 #, c-format
 msgid "Bad data in cyl %d.  Continuing... "
 msgstr "Кепскія даньні на цыліндры %d.  Працяг..."
 
-#: ../gfloppy/src/fdformat.c:157
+#: ../gfloppy/src/fdformat.c:160
 #, c-format
 msgid "Error closing device %s"
 msgstr "Памылка зачыненьня прылады %s"
 
-#: ../gfloppy/src/fdformat.c:164
+#: ../gfloppy/src/fdformat.c:167
 msgid "Verifying the format... Done"
 msgstr "Праверка фарматаваньня... скончана"
 
-#: ../gfloppy/src/fdformat.c:176
+#: ../gfloppy/src/fdformat.c:179
 #, c-format
 msgid "Unable to write to device %s"
 msgstr "Немагчыма запісаць на прыладу %s"
 
-#: ../gfloppy/src/fdformat.c:196
+#: ../gfloppy/src/fdformat.c:199
 #, c-format
 msgid ""
 "Generic error accessing floppy device %s.\n"
@@ -654,7 +641,7 @@ msgstr ""
 "\n"
 "Код памылкі %s"
 
-#: ../gfloppy/src/fdformat.c:208
+#: ../gfloppy/src/fdformat.c:211
 msgid "Could not determine current floppy geometry."
 msgstr "Немагчыма вызначыць гэамэтрыю бягучага гнуткага дыска."
 
@@ -949,12 +936,12 @@ msgstr ""
 msgid "%ld of %ld"
 msgstr ""
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:85
+#: ../gnome-screenshot/gnome-panel-screenshot.c:86
 #, fuzzy
 msgid "Error loading help"
 msgstr "Памылка зачыненьня прылады %s"
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:86
+#: ../gnome-screenshot/gnome-panel-screenshot.c:87
 #, fuzzy
 msgid "There was an error displaying the help pages for this dialog:"
 msgstr ""
@@ -977,7 +964,7 @@ msgstr ""
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../gnome-screenshot/gnome-panel-screenshot.c:154
+#: ../gnome-screenshot/gnome-panel-screenshot.c:152
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr ""
@@ -985,28 +972,28 @@ msgstr ""
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../gnome-screenshot/gnome-panel-screenshot.c:162
+#: ../gnome-screenshot/gnome-panel-screenshot.c:160
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr ""
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:341
+#: ../gnome-screenshot/gnome-panel-screenshot.c:337
 msgid "Unable to take a screenshot of the current desktop."
 msgstr ""
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:414
+#: ../gnome-screenshot/gnome-panel-screenshot.c:438
 msgid "Grab a window instead of the entire screen"
 msgstr ""
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:415
+#: ../gnome-screenshot/gnome-panel-screenshot.c:439
 msgid "Include the window border with the screenshot"
 msgstr ""
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:416
+#: ../gnome-screenshot/gnome-panel-screenshot.c:440
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr ""
 
-#: ../gnome-screenshot/gnome-panel-screenshot.c:417
+#: ../gnome-screenshot/gnome-panel-screenshot.c:441
 msgid "Effect to add to the window border"
 msgstr ""
 
@@ -1873,11 +1860,11 @@ msgstr "Клікніце тут, каб спыніць пошук"
 msgid "Click to stop a search."
 msgstr "Клікніце тут, каб спыніць пошук"
 
-#: ../logview/about.c:47 ../logview/logview.c:49
+#: ../logview/about.c:48 ../logview/logview.c:49
 msgid "System Log Viewer"
 msgstr "Праглядальнік сыстэмных часопісаў"
 
-#: ../logview/about.c:50
+#: ../logview/about.c:51
 msgid "A system log viewer for GNOME."
 msgstr "Праглядальнік сыстэмных часопісаў для GNOME."
 
@@ -2201,12 +2188,12 @@ msgstr ""
 msgid "%s could not be opened."
 msgstr "%s ня можа быць адкрыты."
 
-#: ../logview/logrtns.c:351
+#: ../logview/logrtns.c:358
 #, c-format
 msgid "%s not a log file."
 msgstr "%s не зьяўляецца часопісам."
 
-#: ../logview/logrtns.c:556 ../logview/logrtns.c:580
+#: ../logview/logrtns.c:563 ../logview/logrtns.c:587
 msgid "ReadLogStats: out of memory"
 msgstr "ReadLogStats: недахоп памяці"
 
@@ -2286,6 +2273,14 @@ msgstr ""
 msgid "Find pattern in logs"
 msgstr ""
 
+#: ../logview/logview.c:117
+msgid "Bigger text size"
+msgstr ""
+
+#: ../logview/logview.c:119
+msgid "Smaller text size"
+msgstr ""
+
 #: ../logview/logview.c:121
 msgid "Normal text size"
 msgstr ""
@@ -2334,38 +2329,38 @@ msgstr "Каляндар"
 msgid "Show Calendar Log"
 msgstr "Адлюстраваць каляндарны файл часопіса"
 
-#: ../logview/logview.c:668
+#: ../logview/logview.c:678
 msgid "Date"
 msgstr "Дата"
 
-#: ../logview/logview.c:668
+#: ../logview/logview.c:678
 msgid "Host Name"
 msgstr "Назва вузла"
 
-#: ../logview/logview.c:669
+#: ../logview/logview.c:679
 msgid "Process"
 msgstr "Працэс"
 
-#: ../logview/logview.c:669
+#: ../logview/logview.c:679
 msgid "Message"
 msgstr "Паведамленьне"
 
-#: ../logview/logview.c:745
+#: ../logview/logview.c:755
 msgid "Version : "
 msgstr ""
 
-#: ../logview/logview.c:857
+#: ../logview/logview.c:866
 msgid "Open new logfile"
 msgstr "Адкрыць новы файл часопіса"
 
-#: ../logview/logview.c:1214
+#: ../logview/logview.c:1224
 #, fuzzy
 msgid "There was an error displaying help."
 msgstr ""
 "Узьнікла памылка адлюстраваньня даведкі: \n"
 "%s"
 
-#: ../logview/logview.c:1232
+#: ../logview/logview.c:1242
 #, c-format
 msgid "%s (monitored) - %s"
 msgstr ""
