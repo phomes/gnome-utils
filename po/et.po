@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-13 08:02+0200\n"
-"PO-Revision-Date: 2006-09-10 23:25+0300\n"
+"PO-Revision-Date: 2006-09-14 12:32+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -1243,6 +1243,9 @@ msgid ""
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a height based on the font size."
 msgstr ""
+"See võti sisaldab sõnaraamatu akna kõrgust ja on mõeldud kõrguse "
+"meelespidamiseks seansside vahel. Väärtus -1 tähendab, et sõnaraamatu aken "
+"kasutab kirjatüübi suurusest tuletatud kõrgust."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:20
 msgid ""
@@ -1250,6 +1253,9 @@ msgid ""
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a width based on the font size."
 msgstr ""
+"See võti sisaldab sõnaraamatu akna laiust ja on mõeldud laiuse "
+"meelespidamiseks seansside vahel. Väärtus -1 tähendab, et sõnaraamatu aken "
+"kasutab kirjatüübi suurusest tuletatud laiust."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:21
 msgid ""
@@ -1388,12 +1394,12 @@ msgstr "Sõnaraamatuserverist tagastatud olekukood"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:759
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
-msgstr ""
+msgstr "Sõnaraamatuserveriga asukohas '%s:%d' pole ühendust"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1021
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
+msgstr "Tõrge hostimine '%s' lahendamisel: sobivat ressurssi ei leitud"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1052
 #, c-format
@@ -1411,6 +1417,8 @@ msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr ""
+"Sõnaraamatuserveriga asukohas '%s:%d' pole võimalik ühenduda. Server andis "
+"vastuseks koodi %d (teenus ei tööta)"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1158
 #, c-format
@@ -1454,7 +1462,7 @@ msgstr "Sõnaraamatuserveris '%s' ei leitud ühtegi andmebaasi"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1277
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr ""
+msgstr "Sõnaraamatuserverist asukohaga '%s' ei leitud strateegiaid"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1707
 #, c-format
@@ -3080,7 +3088,7 @@ msgstr "Nimi sisaldab"
 
 #: ../gsearchtool/gsearchtool.c:2954
 msgid "_Look in folder:"
-msgstr "_Alustada kataloogist:"
+msgstr "_Alustatakse kataloogist:"
 
 #: ../gsearchtool/gsearchtool.c:2960
 msgid "Browse"
