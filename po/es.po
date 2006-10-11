@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-07 18:54+0200\n"
-"PO-Revision-Date: 2006-08-07 18:54+0200\n"
+"PO-Revision-Date: 2006-10-11 08:46+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -1114,7 +1114,7 @@ msgstr "_Limpiar"
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:2
 #: ../gnome-dictionary/src/gdict-window.c:1038 ../logview/logview.c:116
 msgid "_About"
-msgstr "A_cerca de"
+msgstr "_Acerca de"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:4
 msgid "_Look Up Selected Text"
@@ -1127,7 +1127,7 @@ msgstr "_Preferencias"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:6
 msgid "_Print"
-msgstr "Im_primir"
+msgstr "_Imprimir"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:7
 msgid "_Save"
@@ -3187,19 +3187,19 @@ msgstr "Pulse para detener una búsqueda."
 
 #: ../logview/about.c:51 ../logview/logview.c:37 ../logview/main.c:54
 msgid "System Log Viewer"
-msgstr "Visor de registros de actividad del sistema"
+msgstr "Visor de sucesos del sistema"
 
 #: ../logview/about.c:54
 msgid "A system log viewer for GNOME."
-msgstr "Un visor de archivos de registros de actividad del sistema para GNOME."
+msgstr "Un visor de sucesos del sistema para GNOME."
 
 #: ../logview/gnome-system-log.desktop.in.in.h:1
 msgid "System Log"
-msgstr "Registro de actividad del sistema"
+msgstr "Sucesos del sistema"
 
 #: ../logview/gnome-system-log.desktop.in.in.h:2
 msgid "View or monitor system log files"
-msgstr "Ver o monitorizar archivos del registro de actividad del sistema"
+msgstr "Vea o monitorice sucesos del sistema"
 
 #: ../logview/log_repaint.c:187
 #, c-format
@@ -3242,7 +3242,7 @@ msgstr "No se pudo abrir %s."
 #: ../logview/logrtns.c:378
 #, c-format
 msgid "%s is not a log file."
-msgstr "%s no es un archivo de registro de actividad."
+msgstr "%s no es un archivo de sucesos."
 
 #: ../logview/logrtns.c:384
 msgid "Not enough memory."
@@ -3267,7 +3267,7 @@ msgstr "_Abrir…"
 
 #: ../logview/logview.c:90
 msgid "Open a log from file"
-msgstr "Abre un registro de actividad desde un archivo"
+msgstr "Abre un archivo de sucesos"
 
 #: ../logview/logview.c:92
 msgid "_Close"
@@ -3275,7 +3275,7 @@ msgstr "_Cerrar"
 
 #: ../logview/logview.c:92
 msgid "Close this log"
-msgstr "Cierra este registro de actividad"
+msgstr "Cierra este archivo de sucesos"
 
 #: ../logview/logview.c:94
 msgid "_Quit"
@@ -3283,7 +3283,7 @@ msgstr "_Salir"
 
 #: ../logview/logview.c:94
 msgid "Quit the log viewer"
-msgstr "Sale del visor de registros de actividad"
+msgstr "Sale del visor de sucesos"
 
 #: ../logview/logview.c:97
 msgid "_Copy"
@@ -3295,7 +3295,7 @@ msgstr "Copia la selección"
 
 #: ../logview/logview.c:99
 msgid "Select the entire log"
-msgstr "Selecciona el registro de actividad completo"
+msgstr "Selecciona el registro de sucesos completo"
 
 #: ../logview/logview.c:101
 msgid "_Filter..."
@@ -3303,7 +3303,7 @@ msgstr "_Filtro…"
 
 #: ../logview/logview.c:101
 msgid "Filter log"
-msgstr "Filtro del registro de actividad"
+msgstr "Filtro del registro de sucesos"
 
 #: ../logview/logview.c:104
 msgid "Bigger text size"
@@ -3327,12 +3327,11 @@ msgstr "Contrae todas las filas"
 
 #: ../logview/logview.c:114
 msgid "Open the help contents for the log viewer"
-msgstr "Abre el índice de la ayuda para el visor de registros de actividad"
+msgstr "Abre el contenido de la ayuda del visor de sucesos"
 
 #: ../logview/logview.c:116
 msgid "Show the about dialog for the log viewer"
-msgstr ""
-"Muestra el diálogo «Acerca de» para el visor de registros de actividades"
+msgstr "Muestra el diálogo «Acerca de» del visor de sucesos"
 
 #: ../logview/logview.c:122
 msgid "Show Status Bar"
@@ -3369,11 +3368,11 @@ msgstr "%s (monitorizado) - %s"
 
 #: ../logview/logview.c:518
 msgid "Open Log"
-msgstr "Abre el registro"
+msgstr "Abrir registro de sucesos"
 
 #: ../logview/logview.c:906
 msgid "Version: "
-msgstr "Versión:"
+msgstr "Versión: "
 
 #: ../logview/logview.c:975
 msgid "Days"
@@ -3389,53 +3388,41 @@ msgstr "Altura de la ventana principal en píxeles"
 
 #: ../logview/logview.schemas.in.h:2
 msgid "Log file to open up on startup"
-msgstr "Archivo de registro de actividad que abrir al iniciar"
+msgstr "Registro de sucesos que abrir al inicio"
 
 #: ../logview/logview.schemas.in.h:3
 msgid "Log files to open up on startup"
-msgstr "Archivos de registro que abrir al iniciar"
+msgstr "Archivos de sucesos que abrir al inicio"
 
 #: ../logview/logview.schemas.in.h:4
 msgid "Size of the font used to display the log"
-msgstr "Tamaño de la tipografía usada para mostrar el archivo de registro"
+msgstr "Tamaño de la tipografía usada para mostrar el registro de sucesos"
 
 #: ../logview/logview.schemas.in.h:5
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
-msgstr ""
-"Especifica una lista de archivos de registro que abrir al inicio. Se crea "
-"una lista predeterminada leyendo /etc/syslog.conf."
+msgstr "Especifica una lista de registros de sucesos que abrir al inicio. Se crea una lista predeterminada leyendo /etc/syslog.conf."
 
 #: ../logview/logview.schemas.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
-msgstr ""
-"Especifica la altura en píxeles de la ventana principal del visor de "
-"archivos de registro "
+msgstr "Especifica la altura en píxeles de la ventana principal del visor de sucesos."
 
 #: ../logview/logview.schemas.in.h:7
 msgid ""
 "Specifies the log file displayed at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
-msgstr ""
-"Especifica el archivo registro de actividad mostrado al inicio. Los "
-"predeterminados son «/var/adm/messages» o «/var/log/messages», dependiendo "
-"de su sistema operativo."
+msgstr "Especifica el registro de sucesos mostrado al inicio. Los predeterminados son «/var/adm/messages» o «/var/log/messages», dependiendo de su sistema operativo."
 
 #: ../logview/logview.schemas.in.h:8
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
-msgstr ""
-"Especifica el tamaño de la tipografía de anchura fija usada para mostrar el "
-"registro de actividad en la vista del árbol principal. Lo predeterminado es "
-"tomar el tamaño de la tipografía predeterminado del terminal."
+msgstr "Especifica el tamaño de la tipografía de anchura fija usada para mostrar el registro de sucesos en la vista del árbol principal. Lo predeterminado es tomar el tamaño de la tipografía predeterminada del terminal."
 
 #: ../logview/logview.schemas.in.h:9
 msgid "Specifies the width of the log viewer main window in pixels."
-msgstr ""
-"Especifica la anchura de la ventana principal del visor de registros en "
-"píxeles."
+msgstr "Especifica la anchura de la ventana principal del visor de sucesos en píxeles."
 
 #: ../logview/logview.schemas.in.h:10
 msgid "Width of the main window in pixels"
@@ -3447,15 +3434,15 @@ msgstr "Mostrar la versión de la aplicación"
 
 #: ../logview/main.c:55
 msgid "Show System Log Viewer options"
-msgstr "Muestra las opciones del visor de registros de actividad del sistema"
+msgstr "Muestra las opciones del visor de sucesos del sistema"
 
 #: ../logview/main.c:59
 msgid " - Browse and monitor logs"
-msgstr " - Vea y monitorice los registros"
+msgstr " - Examinar y monitorizar sucesos"
 
 #: ../logview/main.c:153
 msgid "Log Viewer"
-msgstr "Visor de registros de actividad"
+msgstr "Visor de sucesos"
 
 #: ../logview/main.c:162
 msgid "Unable to create user interface."
