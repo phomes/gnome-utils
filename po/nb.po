@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.16.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-10 21:03+0200\n"
-"PO-Revision-Date: 2006-09-10 21:05+0200\n"
+"POT-Creation-Date: 2006-10-17 16:08+0200\n"
+"PO-Revision-Date: 2006-10-17 16:09+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -292,14 +292,12 @@ msgid "Whether any change to the home directory should be monitored."
 msgstr "Om endringer i hjemmekatalogen skal overvåkes."
 
 #: ../baobab/data/baobab.schemas.in.h:7
-#, fuzzy
 msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr "Hvorvidt programmet skal være maksimert"
+msgstr "Hvorvidt statuslinjen nederst i hovedvinduet skal være synlig."
 
 #: ../baobab/data/baobab.schemas.in.h:8
-#, fuzzy
 msgid "Whether the toolbar should be visible in main window."
-msgstr "Hvorvidt programmet skal være maksimert"
+msgstr "Hvorvidt verktøylinjen skal være synlig i hovedvinduet."
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:164 ../baobab/src/baobab-utils.c:263
@@ -626,7 +624,7 @@ msgid "A graphical tool to analyse disk usage."
 msgstr "Et grafisk verktøy for å analysere diskbruk."
 
 #. Translator credits
-#: ../baobab/src/callbacks.c:85 ../gnome-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:85 ../gnome-dictionary/src/gdict-about.c:57
 #: ../logview/about.c:47
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
@@ -1117,7 +1115,7 @@ msgid "Check word definitions and spellings in an online dictionary"
 msgstr "Sjekk orddefinisjoner og staving i en ordbok på nettet"
 
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:2
-#: ../gnome-dictionary/src/gdict-about.c:76
+#: ../gnome-dictionary/src/gdict-about.c:78
 #: ../gnome-dictionary/src/gdict-app.c:406
 #: ../gnome-dictionary/src/gdict-window.c:451
 #: ../gnome-dictionary/src/gdict-window.c:1581
@@ -1676,8 +1674,8 @@ msgstr "Database som brukes for spørring mot GdictContext"
 msgid "The strategy used to query the GdictContext"
 msgstr "Database som brukes for spørring mot GdictContext"
 
-#: ../gnome-dictionary/src/gdict-about.c:57
-#: ../gnome-dictionary/src/gdict-applet.c:611
+#: ../gnome-dictionary/src/gdict-about.c:59
+#: ../gnome-dictionary/src/gdict-applet.c:613
 msgid "Look up words in dictionaries"
 msgstr "Slå opp ord i ordbøker"
 
@@ -1831,71 +1829,71 @@ msgstr "Lagre definisjon"
 msgid "Save the text of the definition to a file"
 msgstr "Lagre definisjonsteksten som fil"
 
-#: ../gnome-dictionary/src/gdict-applet.c:551
+#: ../gnome-dictionary/src/gdict-applet.c:553
 msgid "Toggle dictionary window"
 msgstr "Veksle ordbokvinduet"
 
-#: ../gnome-dictionary/src/gdict-applet.c:552
+#: ../gnome-dictionary/src/gdict-applet.c:554
 msgid "Show or hide the definition window"
 msgstr "Vis eller skjul definisjonsvinduet"
 
-#: ../gnome-dictionary/src/gdict-applet.c:555
+#: ../gnome-dictionary/src/gdict-applet.c:557
 msgid "Click to view the dictionary window"
 msgstr "Klikk for å vise ordbokvinduet"
 
-#: ../gnome-dictionary/src/gdict-applet.c:610
+#: ../gnome-dictionary/src/gdict-applet.c:612
 msgid "Dictionary entry"
 msgstr "Oppføring i ordbok"
 
-#: ../gnome-dictionary/src/gdict-applet.c:614
+#: ../gnome-dictionary/src/gdict-applet.c:616
 msgid "Type the word you want to look up"
 msgstr "Skriv ordet du ønsker å slå opp"
 
-#: ../gnome-dictionary/src/gdict-applet.c:748
+#: ../gnome-dictionary/src/gdict-applet.c:750
 #: ../gnome-dictionary/src/gdict-window.c:808
 msgid "Dictionary Preferences"
 msgstr "Brukervalg for ordbok"
 
-#: ../gnome-dictionary/src/gdict-applet.c:776
+#: ../gnome-dictionary/src/gdict-applet.c:778
 #: ../gnome-dictionary/src/gdict-pref-dialog.c:511
 #: ../gnome-dictionary/src/gdict-source-dialog.c:438
 #: ../gnome-dictionary/src/gdict-window.c:931
 msgid "There was an error while displaying help"
 msgstr "Det oppstod en feil under visning av hjelp."
 
-#: ../gnome-dictionary/src/gdict-applet.c:928
+#: ../gnome-dictionary/src/gdict-applet.c:930
 #: ../gnome-dictionary/src/gdict-window.c:360
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Ingen ordbokkilde ved navnet \"%s\" tilgjengelig"
 
-#: ../gnome-dictionary/src/gdict-applet.c:932
+#: ../gnome-dictionary/src/gdict-applet.c:934
 #: ../gnome-dictionary/src/gdict-window.c:364
 msgid "Unable to find dictionary source"
 msgstr "Kan ikke finne ordbokkilde"
 
-#: ../gnome-dictionary/src/gdict-applet.c:948
+#: ../gnome-dictionary/src/gdict-applet.c:950
 #: ../gnome-dictionary/src/gdict-window.c:380
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Ingen kontekst tilgjengelig for kilden \"%s\""
 
-#: ../gnome-dictionary/src/gdict-applet.c:952
+#: ../gnome-dictionary/src/gdict-applet.c:954
 #: ../gnome-dictionary/src/gdict-window.c:384
 msgid "Unable to create a context"
 msgstr "Kan ikke opprette en kontekst"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1220
+#: ../gnome-dictionary/src/gdict-applet.c:1222
 #: ../gnome-dictionary/src/gdict-window.c:1707
 msgid "Unable to connect to GConf"
 msgstr "Kan ikke koble til GConf"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1233
+#: ../gnome-dictionary/src/gdict-applet.c:1235
 #: ../gnome-dictionary/src/gdict-window.c:1720
 msgid "Unable to get notification for preferences"
 msgstr "Kan ikke motta varsling for brukervalg"
 
-#: ../gnome-dictionary/src/gdict-applet.c:1247
+#: ../gnome-dictionary/src/gdict-applet.c:1249
 #: ../gnome-dictionary/src/gdict-window.c:1733
 msgid "Unable to get notification for the document font"
 msgstr "Kan ikke motta varsling for dokumentets skrift"
@@ -2267,7 +2265,7 @@ msgstr "Mappe for skjermdump"
 msgid "The directory the last screenshot was saved in."
 msgstr "Katalog hvor forrige skjermdump ble lagret."
 
-#: ../gnome-screenshot/screenshot-dialog.c:203
+#: ../gnome-screenshot/screenshot-dialog.c:213
 msgid ""
 "Glade file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
@@ -2275,7 +2273,7 @@ msgstr ""
 "Glade-fil for skjermdumpprogrammet mangler.\n"
 "Vennligst sjekk gnome-utils-installasjonen."
 
-#: ../gnome-screenshot/screenshot-dialog.c:222
+#: ../gnome-screenshot/screenshot-dialog.c:232
 msgid "Select a folder"
 msgstr "Velg en mappe"
 
@@ -2318,7 +2316,7 @@ msgid "The file \"%s\" already exists.  Would you like to replace it?"
 msgstr "Filen «%s» eksisterer allerede. Vil du erstatte den?"
 
 #: ../gnome-screenshot/screenshot-xfer.c:191
-#: ../gsearchtool/gsearchtool-callbacks.c:1427
+#: ../gsearchtool/gsearchtool-callbacks.c:1429
 msgid "_Replace"
 msgstr "E_rstatt"
 
@@ -2713,38 +2711,38 @@ msgstr "Flytting av «%s» feilet: %s."
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Sletting av «%s» feilet: %s."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1312
+#: ../gsearchtool/gsearchtool-callbacks.c:1314
 msgid "Save Search Results As..."
 msgstr "Lagre søkeresultater som..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1343
+#: ../gsearchtool/gsearchtool-callbacks.c:1345
 msgid "Could not save document."
 msgstr "Kunne ikke lagre dokument."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1344
+#: ../gsearchtool/gsearchtool-callbacks.c:1346
 msgid "You did not select a document name."
 msgstr "Kunne valgte ikke et dokumentnavn."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1374
+#: ../gsearchtool/gsearchtool-callbacks.c:1376
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "Kunne ikke lagre dokument «%s» til «%s»."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1408
+#: ../gsearchtool/gsearchtool-callbacks.c:1410
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Dokument «%s» eksisterer allerede. Vil du erstatte den?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1412
+#: ../gsearchtool/gsearchtool-callbacks.c:1414
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr ""
 "Hvis du erstatter en eksisterende fil vil innholdet i denne bli overskrevet."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1477
+#: ../gsearchtool/gsearchtool-callbacks.c:1479
 msgid "The document name you selected is a folder."
 msgstr "Dokumentnavnet du valgte er en mappe."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1526
+#: ../gsearchtool/gsearchtool-callbacks.c:1528
 msgid "You may not have write permissions to the document."
 msgstr "Du har ikke skriverettigheter til dokumentet."
 
