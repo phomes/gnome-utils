@@ -233,6 +233,19 @@ loopdir (GnomeVFSURI *vfs_uri_dir,
 	if (strcmp (gnome_vfs_uri_get_path (vfs_uri_dir), "/proc") == 0)
 		goto exit;
 
+	/* get the directory-entry sizes */
+	dir_info = gnome_vfs_file_info_new ();
+	gnome_vfs_get_file_info (dir, dir_info,
+				 GNOME_VFS_FILE_INFO_DEFAULT);
+	if ((dir_info->valid_fields & GNOME_VFS_FILE_INFO_FIELDS_TYPE) == 0)
+		goto exit;				 
+	if ((dir_info->valid_fields & GNOME_VFS_FILE_INFO_FIELDS_SIZE) != 0)
+		retloop.size = dir_info->size;
+	if ((dir_info->valid_fields & GNOME_VFS_FILE_INFO_FIELDS_BLOCK_COUNT) != 0)
+		retloop.alloc_size = dir_info->block_count * dir_info->io_block_size;
+	gnome_vfs_file_info_unref (dir_info);
+
+
 	/* prefill the model */
 	data.size = 1;
 	data.alloc_size = 1;
@@ -242,15 +255,6 @@ loopdir (GnomeVFSURI *vfs_uri_dir,
 	data.tempHLsize = tempHLsize;
 	fill_model (&data);
 
-	/* get the directory-entry sizes */
-	dir_info = gnome_vfs_file_info_new ();
-	gnome_vfs_get_file_info (dir, dir_info,
-				 GNOME_VFS_FILE_INFO_DEFAULT);
-	if ((dir_info->valid_fields & GNOME_VFS_FILE_INFO_FIELDS_SIZE) != 0)
-		retloop.size = dir_info->size;
-	if ((dir_info->valid_fields & GNOME_VFS_FILE_INFO_FIELDS_BLOCK_COUNT) != 0)
-		retloop.alloc_size = dir_info->block_count * dir_info->io_block_size;
-	gnome_vfs_file_info_unref (dir_info);
 
 	/* get the GnomeVFSFileInfo stuct for every directory entry */
 	result = gnome_vfs_directory_list_load (&file_list,
@@ -269,11 +273,6 @@ loopdir (GnomeVFSURI *vfs_uri_dir,
 			if (strcmp (info->name, ".") == 0 ||
 			    strcmp (info->name, "..") == 0)
 				continue;
-
-			if ((info->valid_fields & GNOME_VFS_FILE_INFO_FIELDS_TYPE) == 0) {
-				gnome_vfs_file_info_list_free (file_list);
-				goto exit;
-			}
 
 			/* is a symlink? */
 			if (info->type == GNOME_VFS_FILE_TYPE_SYMBOLIC_LINK)

@@ -1,3 +1,10 @@
+2006-11-06  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+
+	Backport from HEAD.
+
+	* src/baobab-scan.c: Check if a subdirectory is accessible before
+	walking it. (#351987, Fabio Marzocca)
+
 2006-08-27  Paolo Borelli  <pborelli@katamail.com>
 
 	* src/baobab.c:
