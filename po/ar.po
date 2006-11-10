@@ -1,28 +1,31 @@
-# translation of gnome-utils.po to Arabic
+# translation of gnome-utils.gnome-2-16.ar.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+#
 # Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
 # Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
 # Djihed Afifi <djihed@gmail.com>, 2006.
-#
+# Khaled Hosny <khaledhosny@eglug.org>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils\n"
+"Project-Id-Version: gnome-utils.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-30 00:53+0000\n"
-"PO-Revision-Date: 2006-10-22 12:24-0000\n"
-"Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
+"PO-Revision-Date: 2006-11-10 09:45+0200\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : "
-"3\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : 3\n"
+"\n"
+"\n"
+"\n"
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
 msgid "A graphical tool to analyze disk usage"
-msgstr "أداة رسميّة لتحليل استعمال القرص"
+msgstr "أداة رسوميّة لتحليل استعمال القرص"
 
 #: ../baobab/data/baobab.desktop.in.in.h:2 ../baobab/data/baobab.glade.h:9
 msgid "Disk Usage Analyzer"
@@ -416,7 +419,7 @@ msgstr "الرجاء التأكد من التهجأة ثم الإعادة مرة
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:160
 msgid "You must enter a name for the server."
-msgstr "يجب إدخال اسم للنادل."
+msgstr "يجب إدخال اسم للخادم."
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:163
 msgid "Please enter a name and try again."
@@ -482,7 +485,7 @@ msgstr "FTP (مع تسجيل دخول)"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:652
 msgid "Windows share"
-msgstr "مشاركة ونداوس"
+msgstr "مشاركة ويندوز"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:654
 msgid "WebDAV (HTTP)"
@@ -1075,7 +1078,7 @@ msgstr "تقدّم التهيئة"
 
 #: ../gnome-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
-msgstr "نادل القاموس الإفتراضي"
+msgstr "خادم القاموس الإفتراضي"
 
 #: ../gnome-dictionary/data/GNOME_DictionaryApplet.server.in.in.h:1
 msgid "Dictionary Look up"
@@ -1125,11 +1128,11 @@ msgstr "معجم"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:1
 msgid "Dictionary server (Deprecated)"
-msgstr "نادل قاموس (مستنكر)"
+msgstr "خادم قاموس (مستنكر)"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:2
 msgid "Port used to connect to server (Deprecated)"
-msgstr "المنفذ المستخدم للإتصال بالنادل (مستنكر)"
+msgstr "المنفذ المستخدم للإتصال بالخادم (مستنكر)"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:3
 msgid ""
@@ -1137,7 +1140,7 @@ msgid ""
 "dictionary server supports this option. The default is TRUE. This key is "
 "deprecated and no longer in use."
 msgstr ""
-"يحدّد فيما ﻹذا سيستخدم البحث الحاذق. يتوقّف هذا على دعم نادل القاموس لهذا "
+"يحدّد فيما ﻹذا سيستخدم البحث الحاذق. يتوقّف هذا على دعم خادم القاموس لهذا "
 "الخيار. الإفتراض هو TRUE (مستنكر)"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:4
@@ -1162,8 +1165,8 @@ msgid ""
 "http://www.dict.org for details on other servers. This key is deprecated and "
 "no longer in use."
 msgstr ""
-"نادل القاموس الذي سيتّصل به. النادل الإفتراضي هو dict.org. راجع http://www."
-"dict.org لتفاصيل عن نوادل آخرين (مستنكر)"
+"خادم القاموس الذي سيتّصل به. الخادم الإفتراضي هو dict.org. راجع http://www."
+"dict.org لتفاصيل عن خوادم آخرين (مستنكر)"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
 msgid "The font to be used when printing"
@@ -1179,8 +1182,8 @@ msgid ""
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
-"إسم قاعدة البيانات الفرديّة لإستعمال نادل القاموس. ! يحدّد أن يبحث قاموس-جنوم "
-"جميع قواعد البيانات في نادل معيّن"
+"إسم قاعدة البيانات الفرديّة لإستعمال خادم القاموس. ! يحدّد أن يبحث قاموس-جنوم "
+"جميع قواعد البيانات في خادم معيّن"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:12
 msgid ""
@@ -1195,8 +1198,7 @@ msgid "The name of the dictionary source used"
 msgstr "اسم مصدر القاموس المستعمل"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:14
-msgid ""
-"The name of the dictionary source used to retrieve the definitions of words."
+msgid "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "اسم مصدر القاموس المستعمل للحصول على تعاريف الكلمات."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:15
@@ -1217,8 +1219,7 @@ msgstr "عرض العمود العرضي"
 msgid ""
 "This key defines the width of the sidebar and it's used to remember the "
 "setting across sessions."
-msgstr ""
-"يحدّد هذا المفتاح عرض الشّريط الجانبي, يستعمل أيضا لتذكّر القيمة بين الجلسات."
+msgstr "يحدّد هذا المفتاح عرض الشّريط الجانبي, يستعمل أيضا لتذكّر القيمة بين الجلسات."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:19
 msgid ""
@@ -1297,7 +1298,7 @@ msgstr "قاعدة ال_بيانات:"
 #. Transport methods
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:3
 msgid "Dictionary Server"
-msgstr "نادل القاموس"
+msgstr "خادم القاموس"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:4
 msgid "H_ostname:"
@@ -1359,7 +1360,7 @@ msgstr "اسم المضيف"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:281
 msgid "The hostname of the dictionary server to connect to"
-msgstr "اسم نادل القاموس الذي سيتّصل به"
+msgstr "اسم خادم القاموس الذي سيتّصل به"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:294
 msgid "Port"
@@ -1367,7 +1368,7 @@ msgstr "منفذ"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:295
 msgid "The port of the dictionary server to connect to"
-msgstr "ميناء نادل القاموس الذي سيتّصل به"
+msgstr "ميناء خادم القاموس الذي سيتّصل به"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:310
 msgid "Status"
@@ -1375,27 +1376,27 @@ msgstr "الحالة"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:311
 msgid "The status code as returned by the dictionary server"
-msgstr "رمز الحالة المرجع من نادل القاموس"
+msgstr "رمز الحالة المرجع من خادم القاموس"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:759
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "لا اتّصال بنادل القاموس على '%s:%d'"
+msgstr "لا اتّصال بخادم القاموس على '%s:%d'"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1021
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "فشل إيجاد اسم النادل '%s': لا موارد مناسبة موجودة"
+msgstr "فشل إيجاد اسم الخادم '%s': لا موارد مناسبة موجودة"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1052
 #, c-format
 msgid "Lookup failed for host '%s': %s"
-msgstr "فشل الاتصال بالنادل '%s': %s "
+msgstr "فشل الاتصال بالخادم '%s': %s "
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1087
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr "فشل إيجاد اسم النادل '%s': نلدل غير موجود"
+msgstr "فشل إيجاد اسم الخادم '%s': نلدل غير موجود"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1139
 #, c-format
@@ -1403,7 +1404,7 @@ msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr ""
-"لا يمكن الإتصال بنادل القاموس على '%s:%d'. أجاب النادل بالرمز %d (نادل غير "
+"لا يمكن الإتصال بخادم القاموس على '%s:%d'. أجاب الخادم بالرمز %d (خادم غير "
 "مشتغل)"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1158
@@ -1412,7 +1413,7 @@ msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
 msgstr ""
-"لم يمكن إعراب إجابة نادل القاموس\n"
+"لم يمكن إعراب إجابة خادم القاموس\n"
 ": '%s'"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1187
@@ -1443,17 +1444,17 @@ msgstr "خيارات سيّئة للأمر '%s'"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1262
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr "لا قاعدة بيانات موجودة في نادل القاموس '%s'"
+msgstr "لا قاعدة بيانات موجودة في خادم القاموس '%s'"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1277
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "لا استراتيحيات موجودة على نادل القاموس في  '%s'"
+msgstr "لا استراتيحيات موجودة على خادم القاموس في  '%s'"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1707
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "فشل الاتصال بنادل القواميس %s:%d"
+msgstr "فشل الاتصال بخادم القواميس %s:%d"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1746
 #, c-format
@@ -1461,12 +1462,12 @@ msgid ""
 "Error while reading reply from server:\n"
 "%s"
 msgstr ""
-"خطأ عند قراءة الإجابة من النادل:\n"
+"خطأ عند قراءة الإجابة من الخادم:\n"
 "%s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1819
 msgid "No hostname defined for the dictionary server"
-msgstr "لا اسم نادل محدّد لنادل قواميس"
+msgstr "لا اسم خادم محدّد لخادم قواميس"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1855
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1870
@@ -1481,7 +1482,7 @@ msgstr "لم يمكن تحديد القناة كغير مسدِّدة: %s "
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1911
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "لا يمكن الاتصال بنادل القواميس %s:%d"
+msgstr "لا يمكن الاتصال بخادم القواميس %s:%d"
 
 #: ../gnome-dictionary/libgdict/gdict-context.c:199
 msgid "Local Only"
@@ -1637,8 +1638,7 @@ msgstr "لا يمكن أخذ مفتاح '%s' داخل تعريف مصدر الق
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:542
 #, c-format
-msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgid "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr "لا يمكن أخذ مفتاح '%s' داخل ملف تعريف مصدر القاموس: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:728
@@ -2300,8 +2300,7 @@ msgstr ""
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr ""
-"عملية الحفظ الإبن انتهت بصورة غير متوقّعة. لم يمكن كتابة صورة الشاشة للقرص."
+msgstr "عملية الحفظ الإبن انتهت بصورة غير متوقّعة. لم يمكن كتابة صورة الشاشة للقرص."
 
 #: ../gnome-screenshot/screenshot-save.c:192
 msgid "Unknown error saving screenshot to disk"
@@ -2650,8 +2649,7 @@ msgstr ""
 "سريع."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
+msgid "This key determines if the search tool window starts in a maximized state."
 msgstr "يحدّد هذا المفتاح إذا كانت نافذة أداة البحث تبدأ موسّعة."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:186
@@ -3470,482 +3468,3 @@ msgstr "مراقبة الملفات غير ممكنة على نظام الملف
 msgid "Gnome-VFS Error.\n"
 msgstr "خطأ Gnome-VFS .\n"
 
-#, fuzzy
-#~ msgid "Baobab - Disk Usage Analyser"
-#~ msgstr "حد تنبيه المستخدم بقلة المساحة المتوفرة على القرص"
-
-#~ msgid "Cannot connect to server"
-#~ msgstr "تعذر الاتصال بالخادم"
-
-#, fuzzy
-#~ msgid "Server Error"
-#~ msgstr "خانة خادم"
-
-#, fuzzy
-#~ msgid ""
-#~ "A serious error occurred. Please check that your server and port are "
-#~ "correct. For reference the default server is dict.org and the port 2628"
-#~ msgstr ""
-#~ "حدث خطأ فادح. رجاء تأكد من كون خادمك والمنفذ صحيين. للعلم، فإن الخادم "
-#~ "الافتراضي هو dict.org بالمنفذ 2628"
-
-#, fuzzy
-#~ msgid "Connection error"
-#~ msgstr "تعذر الاتصال بالخادم"
-
-#, fuzzy
-#~ msgid ""
-#~ "Either the server you are using is not available \n"
-#~ "or you are not connected to the Internet."
-#~ msgstr ""
-#~ "لم أستطع القيام بالعملية المطلوبة.\n"
-#~ "إما أن الخادم الذي تستخدمه غير موجود \n"
-#~ "أو أنك غير متصل باﻹنترنت."
-
-#~ msgid "Find"
-#~ msgstr "ابحث"
-
-#~ msgid "_Search for:"
-#~ msgstr "_بحث عن:"
-
-#, fuzzy
-#~ msgid "Could not display help"
-#~ msgstr "لا يمكن فتح مستند المساعدة."
-
-#~ msgid "_Dictionary"
-#~ msgstr "المعجم"
-
-#~ msgid "_Look Up Word"
-#~ msgstr "ابحث عن كلمة"
-
-#, fuzzy
-#~ msgid "P_references"
-#~ msgstr "تفضيلات"
-
-#, fuzzy
-#~ msgid "Configure the application"
-#~ msgstr "إ_خفاء تطبيق"
-
-#, fuzzy
-#~ msgid "About this application"
-#~ msgstr "إ_خفاء تطبيق"
-
-#, fuzzy
-#~ msgid "_Paste"
-#~ msgstr "التاريخ"
-
-#, fuzzy
-#~ msgid "_Spellings"
-#~ msgstr "تدقيق إملائي"
-
-#, fuzzy
-#~ msgid "In Dictionary"
-#~ msgstr "معجم"
-
-#~ msgid "Word Entry"
-#~ msgstr "خانة كلمة"
-
-#~ msgid "Enter a Word or select one from the list below"
-#~ msgstr "أدخل كلمة أو اختر واحدة من القائمة السفلى"
-
-#~ msgid "Look Up for a Word"
-#~ msgstr "ابحث عن كلمة في المعجم"
-
-#~ msgid "Looking up word..."
-#~ msgstr "بحث عن كلمة..."
-
-#~ msgid "String not found"
-#~ msgstr "لم يتم العثور على النص"
-
-#, fuzzy
-#~ msgid "Error invoking query"
-#~ msgstr "خطأ تنفيذ الاستعلام: %s"
-
-#, fuzzy
-#~ msgid "Looking up entry..."
-#~ msgstr "بحث عن كلمة..."
-
-#~ msgid "De_fault Server"
-#~ msgstr "النادل الإ_فتراضي"
-
-#~ msgid "Reset server to default"
-#~ msgstr "اعادة تعيين الخادم للافتراضيات"
-
-#~ msgid "Reset port to default"
-#~ msgstr "اعادة تعيين المنفذ للافتراضيات"
-
-#~ msgid "Server"
-#~ msgstr "خادم"
-
-#~ msgid "Enter the Server Name"
-#~ msgstr "أدخل اسم الخادم"
-
-#~ msgid "Port Entry"
-#~ msgstr "خانة منفذ"
-
-#~ msgid "Enter the Port Number"
-#~ msgstr "أدخل رقم المنفذ"
-
-#, fuzzy
-#~ msgid "F_ont:"
-#~ msgstr "المنفذ:"
-
-#, fuzzy
-#~ msgid "Search Address"
-#~ msgstr "_نتائج البحث:"
-
-#~ msgid "Default Strategy"
-#~ msgstr "استراتيجية افتراضية"
-
-#, fuzzy
-#~ msgid "Spellings"
-#~ msgstr "تدقيق إملائي"
-
-#~ msgid "Spell-checking..."
-#~ msgstr "تدقيق إملائي..."
-
-#~ msgid ""
-#~ "The search strategy to use. This is dependant on the search strategy that "
-#~ "the dictionary server supports. The default strategy is 'lev' - Match "
-#~ "words within Levenshtein distance one"
-#~ msgstr ""
-#~ "إستراتيجية البحث للإستخدام. يتوقّف هذا على إستراتيجيّة البحث التي يدعمها "
-#~ "نادل القاموس. الإستراتيجيّة الإفتراضيّة هي 'lev' - مطابقة الكلمات بمسافة "
-#~ "ليفنشتاين الأوليّة"
-
-#~ msgid "Find files, folders, and documents on your computer"
-#~ msgstr "إيجاد ملفّات و مجلّدات و مستندات على حاسوبك"
-
-#~ msgid "Action Database"
-#~ msgstr "قاعدة بيانات الأحداث"
-
-#~ msgid "Actions"
-#~ msgstr "أحداث"
-
-#~ msgid "_Add"
-#~ msgstr "إ_ضافة"
-
-#~ msgid "Add an action"
-#~ msgstr "إضافة حدث"
-
-#~ msgid "Edit an action"
-#~ msgstr "تحرير حدث"
-
-#~ msgid "_Remove"
-#~ msgstr "احذف"
-
-#~ msgid "Remove an action"
-#~ msgstr "حذف حدث"
-
-#~ msgid "Cannot open action data base <%s>! Open failed."
-#~ msgstr "تعذر فتح قاعدة بيانات الحدث <%s>! فشل الفتح."
-
-#~ msgid "Error parsing actions data base"
-#~ msgstr "حدث خطأ في ترجمة قاعدة بيانات الأحداث"
-
-#~ msgid "Can't write to actions database!"
-#~ msgstr "تعذرت الكتابة في قاعدة بيانات الأحداث!"
-
-#~ msgid "<empty>"
-#~ msgstr "<فارغ>"
-
-#~ msgid "log name regexp"
-#~ msgstr "التعبير الانتظامي لاسم السجل"
-
-#~ msgid "process regexp"
-#~ msgstr "معالجة التعبير الانتظامي"
-
-#~ msgid "message regexp"
-#~ msgstr "التعبير الانتظامي للرسالة"
-
-#~ msgid "action to execute when regexps are TRUE"
-#~ msgstr "الفعل المنفذ حينما تكون التعابير الانتظامية صحيحة"
-
-#~ msgid "description"
-#~ msgstr "وصف"
-
-#~ msgid "Edit Action"
-#~ msgstr "تحرير حدث"
-
-#~ msgid "_Tag:"
-#~ msgstr "_شارة:"
-
-#~ msgid "Tag that identifies the log file."
-#~ msgstr "شارة تحدّد ملف التسجيل."
-
-#~ msgid "_Log name:"
-#~ msgstr "إسم ال_تسجيل:"
-
-#~ msgid "Regular expression that will match the log name."
-#~ msgstr "التعبير·الإنتظامي·الديس·سيطابق·إسم السجّل."
-
-#~ msgid "_Process:"
-#~ msgstr "ال_عملية:"
-
-#~ msgid "Regular expression that will match process part of message."
-#~ msgstr "التعبير·الإنتظامي·الديس·سيطابق الجزء العملي من·الرسالة."
-
-#~ msgid "_Message:"
-#~ msgstr "ال_رسالة:"
-
-#~ msgid "Regular expression that will match the message."
-#~ msgstr "التعبير الإنتظامي الديس سيطابق الرسالة."
-
-#~ msgid "_Action:"
-#~ msgstr "ال_حدث:"
-
-#~ msgid ""
-#~ "Action that will be executed if all previous regexps. are matched. This "
-#~ "is executed by a system command: system (action)."
-#~ msgstr ""
-#~ "الحدث الذي سينفذّ عند تقابل جميع regexps السابقة. ينفذّ هذا من قبل نظام "
-#~ "نظام الملفّات (حدث)."
-
-#~ msgid ""
-#~ "tag: [%s]\n"
-#~ "log_name: [%s]\n"
-#~ "process: [%s]\n"
-#~ "message: [%s]\n"
-#~ "description: [%s]\n"
-#~ "action: [%s]\n"
-#~ msgstr ""
-#~ "العلامة: [%s]\n"
-#~ "اسم_السجل: [%s]\n"
-#~ "العملية: [%s]\n"
-#~ "الرسالة: [%s]\n"
-#~ "الوصف: [%s]\n"
-#~ "الحدث: [%s]\n"
-
-#~ msgid "Cannot open regexp data base <%s>! Open failed."
-#~ msgstr "تعذر فتح قاعدة بيانات التعبير الانتظامي <%s>! فشل الفتح."
-
-#~ msgid "Cannot open description data base <%s>! Open failed."
-#~ msgstr "تعذر فتح قاعدة بيانات الوصف <%s>! فشل الفتح."
-
-#~ msgid "Properties"
-#~ msgstr "خصائص"
-
-#~ msgid "%ld byte"
-#~ msgid_plural "%ld bytes"
-#~ msgstr[0] "بايت واحد"
-#~ msgstr[1] "بايتان"
-#~ msgstr[2] "%ld بايتات"
-#~ msgstr[3] "%ld بايت"
-
-#, fuzzy
-#~ msgid "<b>Start Date</b>: %s"
-#~ msgstr "تاريخ البدأ:"
-
-#, fuzzy
-#~ msgid "<b>Number of Lines</b>: %ld"
-#~ msgstr "عدد السطور:"
-
-#, fuzzy
-#~ msgid "Last Modified: %s, %d lines"
-#~ msgstr "آخر تعديل:"
-
-#~ msgid "%B %e"
-#~ msgstr "%B %e"
-
-#~ msgid "%X"
-#~ msgstr "%X"
-
-#~ msgid "ReadLogStats: out of memory"
-#~ msgstr "ReadLogStats: لامجال في الذاكرة"
-
-#~ msgid "_Properties"
-#~ msgstr "خصائص"
-
-#~ msgid "Show Log Properties"
-#~ msgstr "أظهر خصائص السجل"
-
-#, fuzzy
-#~ msgid "Close"
-#~ msgstr "_غلق الكل"
-
-#~ msgid "Process"
-#~ msgstr "العملية"
-
-#~ msgid "Message"
-#~ msgstr "الرسالة"
-
-#~ msgid "Open new logfile"
-#~ msgstr "افتح ملف سجل جديد"
-
-#~ msgid "Entry Detail"
-#~ msgstr "تفاصيل الخانة"
-
-#~ msgid "%B %e %X"
-#~ msgstr "%B %e %X"
-
-#~ msgid "_Word:"
-#~ msgstr "الكلمة:"
-
-#~ msgid "Cannot initialize bonobo."
-#~ msgstr "تعذرت تهيئة بونوبو"
-
-#~ msgid "Lookup done"
-#~ msgstr "تم البحث"
-
-#~ msgid "Spell check done"
-#~ msgstr "تم التدقيق الإملائي"
-
-#, fuzzy
-#~ msgid "Find Next"
-#~ msgstr "ابحث"
-
-#~ msgid "_Entry Detail"
-#~ msgstr "تفاصيل الخانة"
-
-#~ msgid "Show Entry Detail"
-#~ msgstr "أظهر تفاصيل الخانة"
-
-#~ msgid "'%s' entry"
-#~ msgstr "إدخال '%s'"
-
-#~ msgid "Enter a value for search rule"
-#~ msgstr "أدخل قيمة لقاعدة البحث"
-
-#~ msgid "Click to Remove the '%s' Rule"
-#~ msgstr "نقر لحذف القاعدة '%s'"
-
-#~ msgid "Search Rules Menu"
-#~ msgstr "قائمة قواعد البحث"
-
-#, fuzzy
-#~ msgid "Enter the file name you want to search."
-#~ msgstr "أدخل اسم الملف الذي تريد العثور عليه"
-
-#~ msgid "Name Contains Entry"
-#~ msgstr "يحوي الإسم الخانة"
-
-#~ msgid "Click to Start the search"
-#~ msgstr "انقر لتبدأ البحث"
-
-#~ msgid "<span weight=\"bold\">Filesystem Settings</span>"
-#~ msgstr "<span weight=\"bold\">تعيينات نظام الملفّات</span>"
-
-#~ msgid "<span weight=\"bold\">Formatting Mode</span>"
-#~ msgstr "<span weight=\"bold\">نسق التهيئة</span>"
-
-#~ msgid "<span weight=\"bold\">Physical Settings</span>"
-#~ msgstr "<span weight=\"bold\">التعيينات المادّية</span>"
-
-#~ msgid "Check word spelling"
-#~ msgstr "افحص إملاء كلمة"
-
-#~ msgid "Smart _lookup"
-#~ msgstr "بحث حاذق"
-
-#~ msgid "D_efault strategy:"
-#~ msgstr "الاستراتيجية الافتراضية:"
-
-#~ msgid "Enter a word to know the spelling"
-#~ msgstr "أدخل كلمة لمعرفة الإملاء"
-
-#~ msgid "Click to do the spell check"
-#~ msgstr "انقر لتنفيذ التدقيق الإملائي"
-
-#~ msgid "Check Spelling"
-#~ msgstr "تدقيق إملائي"
-
-#~ msgid "Search Strategy"
-#~ msgstr "استراتيجية البحث"
-
-#, fuzzy
-#~ msgid "Select Size At Most"
-#~ msgstr "الح_جم على الأكثر"
-
-#~ msgid "Image/label border"
-#~ msgstr "حدّ الصورة/العلامة"
-
-#~ msgid "Width of border around the label and image in the alert dialog"
-#~ msgstr "رض الحدّ حول العلامة و الصورة في حوار التنبيه"
-
-#~ msgid "Alert Type"
-#~ msgstr "نوع التنبيه"
-
-#~ msgid "The type of alert"
-#~ msgstr "نوع التنبيه"
-
-#~ msgid "Alert Buttons"
-#~ msgstr "أزرار التنبيه"
-
-#~ msgid "The buttons shown in the alert dialog"
-#~ msgstr "الأزرار المعروضة في حوار التنبيه"
-
-#~ msgid "Could not move \"%s\" to the trash."
-#~ msgstr "لم يمكن نقل \"%s\" إلى سلة المهملات."
-
-#~ msgid ""
-#~ "There was an error displaying help: \n"
-#~ "%s"
-#~ msgstr ""
-#~ "حذث خطأ في عرض المساعدة:  \n"
-#~ "%s"
-
-#~ msgid "Size:"
-#~ msgstr "الحجم:"
-
-#~ msgid "<No log loaded>"
-#~ msgstr "<لا سجلّ محمّل>"
-
-#~ msgid "No log files to open"
-#~ msgstr "لا توجد ملفات سجلات للفتح"
-
-#~ msgid "Date:"
-#~ msgstr "التاريخ:"
-
-#~ msgid "Process:"
-#~ msgstr "العملية:"
-
-#~ msgid "Message:"
-#~ msgstr "الرسالة:"
-
-#~ msgid "Log Line Details"
-#~ msgstr "تفاصيل سطر السجل"
-
-#~ msgid "Accessories"
-#~ msgstr "إكسسوارات"
-
-#~ msgid "Look in Folder Entry"
-#~ msgstr "مراجعة خانة المجلد"
-
-#~ msgid "Cesar Miquel (miquel@df.uba.ar)"
-#~ msgstr "Cesar Miquel (miquel@df.uba.ar)"
-
-#~ msgid "S_witch Log"
-#~ msgstr "تغيير السجل"
-
-#~ msgid "Switch between already opened logs"
-#~ msgstr "التحوّل بين سجلّات مفتوحة مسبقا"
-
-#~ msgid "Close all Log files"
-#~ msgstr "غلق كل ملفات التسجيل"
-
-#~ msgid "Too many open logs. Close one and try again"
-#~ msgstr "سجلات مفتوحة كثيرة. أغلق واحدا منها وعاود المحاولة"
-
-#~ msgid "Ac_tions..."
-#~ msgstr "أ_حداث..."
-
-#~ msgid "_Select logs to monitor:"
-#~ msgstr "ا_ختيار سجلات لمراقبتها:"
-
-#~ msgid "Add logs to monitor"
-#~ msgstr "إضافة سجلّات لمراقبتها"
-
-#~ msgid "Remove logs from monitor"
-#~ msgstr "حذف سجلّات من المراقبة"
-
-#~ msgid "Too many logs to monitor. Remove one and try again"
-#~ msgstr "سجلات كثير لمراقبتها. احذف واحدا منها وعاود المحاولة"
-
-#~ msgid "tmp_list is NULL\n"
-#~ msgstr "tmp_list هو NULL\n"
-
-#~ msgid "Monitoring Logs..."
-#~ msgstr "جاري مراقبة السجلّات..."
-
-#~ msgid "TOUCHED!!\n"
-#~ msgstr "ملموس!!\n"
