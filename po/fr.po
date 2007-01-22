@@ -4,20 +4,21 @@
 #
 # Vincent Renardias <vincent@ldsol.com>, 1998-2000.
 # Thibaut Cousin <cousin@clermont.in2p3.fr>, 1999.
-# maintainer: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2000-2006.
+# Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2000-2006.
 # Bretin Didier <didier@bretin.net>, 2001.
 # Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
 # Baptiste Mille-Mathias <bmm80@free.fr>, 2005.
 # Cyprien Le Pannérer <cyplp@free.fr>, 2006.
 # Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
 # Robert-André Mauchin <zebob.m@gmail.com>, 2005-2007.
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.15.94\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-22 19:21+0100\n"
-"PO-Revision-Date: 2007-01-22 22:14+0100\n"
+"POT-Creation-Date: 2007-01-23 00:11+0100\n"
+"PO-Revision-Date: 2007-01-23 00:09+0100\n"
 "Last-Translator: Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -1196,7 +1197,10 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers. This key is deprecated and "
 "no longer in use."
-msgstr "Le serveur de dictionnaire auquel se connecter. Le serveur par défaut est dict.org. Voir http://www.dict.org/ pour des détails sur d'autres serveurs. Cette clé est dépréciée et inutilisée."
+msgstr ""
+"Le serveur de dictionnaire auquel se connecter. Le serveur par défaut est "
+"dict.org. Voir http://www.dict.org/ pour des détails sur d'autres serveurs. "
+"Cette clé est dépréciée et inutilisée."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
 msgid "The font to be used when printing"
@@ -1221,7 +1225,10 @@ msgstr ""
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr "Si disponible, le nom de la stratégie de recherche par défaut à utiliser sur une source de dictionnaires. La stratégie par défaut est « exacte », ce qui signifie une correspondance exacte entre les mots."
+msgstr ""
+"Si disponible, le nom de la stratégie de recherche par défaut à utiliser sur "
+"une source de dictionnaires. La stratégie par défaut est « exacte », ce qui "
+"signifie une correspondance exacte entre les mots."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -1230,7 +1237,9 @@ msgstr "Le nom de la source de dictionnaires à utiliser"
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:14
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
-msgstr "Le nom de la source de dictionnaires utilisée pour rechercher les définitions des mots."
+msgstr ""
+"Le nom de la source de dictionnaires utilisée pour rechercher les "
+"définitions des mots."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:15
 msgid "The page of the sidebar to show"
@@ -1424,7 +1433,7 @@ msgstr "Le code d'état retourné par le serveur de dictionnaire"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:759
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Aucune connexion au serveur de dictionnaire « %s : %d »"
+msgstr "Aucune connexion au serveur de dictionnaire « %s:%d »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1021
 #, c-format
@@ -1448,7 +1457,9 @@ msgstr "La recherche de l'hôte « %s » a échoué : hôte non trouvé"
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr "Impossible de se connecter au serveur de dictionnaire « %s : %d'. Le serveur a retourné le code %d (serveur en panne)"
+msgstr ""
+"Impossible de se connecter au serveur de dictionnaire « %s:%d ». Le serveur "
+"a retourné le code %d (serveur en panne)"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1158
 #, c-format
@@ -1482,7 +1493,7 @@ msgstr "Commande incorrecte « %s »"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1247
 #, c-format
 msgid "Bad parameters for command '%s'"
-msgstr "Paramêtres incorrects pour la commande « %s »"
+msgstr "Paramètres invalides pour la commande « %s »"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1262
 #, c-format
@@ -1497,7 +1508,7 @@ msgstr "Aucune stratégie trouvée pour le serveur de dictionnaires « %s »"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1707
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "La connexion au serveur de dictionnaires %s : %d a échoué"
+msgstr "La connexion au serveur de dictionnaires %s:%d a échoué"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1746
 #, c-format
@@ -1525,7 +1536,7 @@ msgstr "Impossible de définir le canal comme non-bloquant : %s"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1911
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Impossible de se connecter au serveur de dictionnaires « %s : %d »"
+msgstr "Impossible de se connecter au serveur de dictionnaires « %s:%d »"
 
 #: ../gnome-dictionary/libgdict/gdict-context.c:199
 msgid "Local Only"
@@ -1672,7 +1683,9 @@ msgstr "Type de transport non valide « %d »"
 #: ../gnome-dictionary/libgdict/gdict-source.c:428
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
-msgstr "Aucun groupe « %s » n'a pas été trouvé à l'intérieur de la définition de la source de dictionnaires"
+msgstr ""
+"Aucun groupe « %s » n'a pas été trouvé à l'intérieur de la définition de la "
+"source de dictionnaires"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:444
 #: ../gnome-dictionary/libgdict/gdict-source.c:468
@@ -1680,13 +1693,17 @@ msgstr "Aucun groupe « %s » n'a pas été trouvé à l'intérieur de la déf
 #: ../gnome-dictionary/libgdict/gdict-source.c:517
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "Impossible d'obtenir la clé « %s » à l'intérieur de la source de définitions : %s"
+msgstr ""
+"Impossible d'obtenir la clé « %s » à l'intérieur de la source de "
+"définitions : %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:542
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr "Impossible d'obtenir la clé « %s » à l'intérieur du fichier de la source de définitions : %s"
+msgstr ""
+"Impossible d'obtenir la clé « %s » à l'intérieur du fichier de la source de "
+"définitions : %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:728
 msgid "Dictionary source does not have name"
@@ -2534,7 +2551,7 @@ msgid ""
 "The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
 "media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
 msgstr ""
-"Cette clé définie les chemins que l'outil de recherche exclura de la "
+"Cette clé définit les chemins que l'outil de recherche exclura de la "
 "recherche rapide. les caractères génériques '*' et '?' sont supportés. Les "
 "valeurs par défaut sont mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, et /var/*."
 
@@ -2546,7 +2563,7 @@ msgid ""
 "not been indexed. The wildcards '*' and '?' are supported. The default value "
 "is /."
 msgstr ""
-"La clé définie les chemins que l'outil de recherche exclura du second "
+"La clé définit les chemins que l'outil de recherche exclura du second "
 "balayage lors d'une recherche rapide. Le second balayage utilise la commande "
 "find pour rechercher les fichiers. Le but du second balayage est de chercher "
 "les fichiers qui n'ont pas été indexés. Les caractères génériques « * » et "
@@ -2577,7 +2594,7 @@ msgid ""
 "This key determines if the \"Contains the text\" search option is selected "
 "when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Contient le texte » est "
+"Cette clé définit si l'option de recherche « Contient le texte » est "
 "sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:58
@@ -2585,7 +2602,7 @@ msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Date de modification antérieure "
+"Cette clé définit si l'option de recherche « Date de modification antérieure "
 "à » est sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:59
@@ -2593,7 +2610,7 @@ msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Date de modification "
+"Cette clé définit si l'option de recherche « Date de modification "
 "postérieure à » est sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:60
@@ -2601,7 +2618,7 @@ msgid ""
 "This key determines if the \"File is empty\" search option is selected when "
 "the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Le fichier est vide » est "
+"Cette clé définit si l'option de recherche « Le fichier est vide » est "
 "sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:61
@@ -2609,7 +2626,7 @@ msgid ""
 "This key determines if the \"Follow symbolic links\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Suivre les liens symboliques » "
+"Cette clé définit si l'option de recherche « Suivre les liens symboliques » "
 "est sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:62
@@ -2617,7 +2634,7 @@ msgid ""
 "This key determines if the \"Include other filesystems\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Inclure les autres systèmes de "
+"Cette clé définit si l'option de recherche « Inclure les autres systèmes de "
 "fichier » est sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:63
@@ -2625,7 +2642,7 @@ msgid ""
 "This key determines if the \"Name does not contain\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Le nom ne contient pas » est "
+"Cette clé définit si l'option de recherche « Le nom ne contient pas » est "
 "sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:64
@@ -2633,7 +2650,7 @@ msgid ""
 "This key determines if the \"Name matches regular expression\" search option "
 "is selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « le nom correspond à "
+"Cette clé définit si l'option de recherche « le nom correspond à "
 "l'expression régulière » est sélectionnée quand l'outil de recherche est "
 "démarré."
 
@@ -2642,7 +2659,7 @@ msgid ""
 "This key determines if the \"Owned by group\" search option is selected when "
 "the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Appartient au groupe » est "
+"Cette clé définit si l'option de recherche « Appartient au groupe » est "
 "sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:66
@@ -2650,7 +2667,7 @@ msgid ""
 "This key determines if the \"Owned by user\" search option is selected when "
 "the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Appartient à l'utilisateur » "
+"Cette clé définit si l'option de recherche « Appartient à l'utilisateur » "
 "est sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:67
@@ -2658,7 +2675,7 @@ msgid ""
 "This key determines if the \"Owner is unrecognized\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Le propriétaire n'est pas "
+"Cette clé définit si l'option de recherche « Le propriétaire n'est pas "
 "reconnu » est sélectionnée quand l'outil de recherche est démarré."
 
 #. Translators: The quoted text is the label of the additional
@@ -2668,7 +2685,7 @@ msgid ""
 "This key determines if the \"Select more options\" section is expanded when "
 "the search tool is started."
 msgstr ""
-"Cette clé définie si la section « Sélectionner plus d'options » est étendue "
+"Cette clé définit si la section « Sélectionner plus d'options » est étendue "
 "quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:71
@@ -2676,7 +2693,7 @@ msgid ""
 "This key determines if the \"Show hidden files and folders\" search option "
 "is selected when the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Afficher les répertoires et "
+"Cette clé définit si l'option de recherche « Afficher les répertoires et "
 "fichiers cachés » est sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:72
@@ -2684,7 +2701,7 @@ msgid ""
 "This key determines if the \"Size at least\" search option is selected when "
 "the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Taille d'au moins » est "
+"Cette clé définit si l'option de recherche « Taille d'au moins » est "
 "sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:73
@@ -2692,7 +2709,7 @@ msgid ""
 "This key determines if the \"Size at most\" search option is selected when "
 "the search tool is started."
 msgstr ""
-"Cette clé définie si l'option de recherche « Taille d'au plus » est "
+"Cette clé définit si l'option de recherche « Taille d'au plus » est "
 "sélectionnée quand l'outil de recherche est démarré."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:74
@@ -2700,7 +2717,7 @@ msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
 msgstr ""
-"Cette clé définie si l'outil de recherche désactive l'utilisation de la "
+"Cette clé définit si l'outil de recherche désactive l'utilisation de la "
 "commande find après avoir effectué une recherche rapide."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:75
@@ -2708,14 +2725,14 @@ msgid ""
 "This key determines if the search tool disables the use of the locate "
 "command when performing simple file name searches."
 msgstr ""
-"Cette clé définie si l'outil de recherche désactive l'utilisation de la "
+"Cette clé définit si l'outil de recherche désactive l'utilisation de la "
 "commande locate lors de simple recherche par nom."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
 msgstr ""
-"Cette clé définie si la fenêtre de l'outil de recherche démarre maximisée."
+"Cette clé définit si la fenêtre de l'outil de recherche démarre maximisée."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:186
 msgid "Could not open help document."
@@ -3094,7 +3111,7 @@ msgstr "Supprimer « %s »"
 #: ../gsearchtool/gsearchtool.c:2149
 #, c-format
 msgid "Click to remove the \"%s\" search option."
-msgstr "Cliquer pour supprimer l'option de recherche « %s »."
+msgstr "Cliquez pour supprimer l'option de recherche « %s »."
 
 #: ../gsearchtool/gsearchtool.c:2242
 msgid "A_vailable options:"
@@ -3114,7 +3131,7 @@ msgstr "Ajouter une action de recherche"
 
 #: ../gsearchtool/gsearchtool.c:2285
 msgid "Click to add the selected available search option."
-msgstr "Cliquer pour ajouter l'option de recherche disponible sélectionnée."
+msgstr "Cliquez pour ajouter l'option de recherche disponible sélectionnée."
 
 #: ../gsearchtool/gsearchtool.c:2374
 msgid "S_earch results:"
@@ -3177,7 +3194,7 @@ msgstr "Sélectionner plus d'options"
 
 #: ../gsearchtool/gsearchtool.c:2985
 msgid "Click to expand or collapse the list of available options."
-msgstr "Cliquer pour étendre ou réduire la liste d'options disponibles."
+msgstr "Cliquez pour étendre ou réduire la liste d'options disponibles."
 
 #: ../gsearchtool/gsearchtool.c:3009
 msgid "Click to display the help manual."
