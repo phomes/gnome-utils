@@ -190,6 +190,11 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   GtkWidget *preview_darea;
   GtkWidget *aspect_frame;
   GtkWidget *file_chooser_box;
+  GtkWidget *chooser_label;
+  AtkObject *a11y_but;
+  AtkObject *a11y_lab;
+  AtkRelation *relation;
+  AtkRelationSet *set;
   gint width, height;
   char *current_folder;
   char *current_name;
@@ -235,8 +240,17 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   preview_darea = glade_xml_get_widget (dialog->xml, "preview_darea");
   dialog->filename_entry = glade_xml_get_widget (dialog->xml, "filename_entry");
   file_chooser_box = glade_xml_get_widget (dialog->xml, "file_chooser_box");
+  chooser_label = glade_xml_get_widget (dialog->xml, "label3");
 
   dialog->save_widget = gtk_file_chooser_button_new (_("Select a folder"), GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER);
+  a11y_but = gtk_widget_get_accessible (dialog->save_widget);
+  a11y_lab = gtk_widget_get_accessible (chooser_label);
+  relation = atk_relation_new (&a11y_lab, 1, ATK_RELATION_LABELLED_BY);
+  set = atk_object_ref_relation_set (a11y_but);
+  atk_relation_set_add (set, relation);
+  relation = atk_relation_new (&a11y_but, 1, ATK_RELATION_LABEL_FOR);
+  set = atk_object_ref_relation_set (a11y_lab);
+  atk_relation_set_add (set, relation);
   gtk_file_chooser_set_local_only (GTK_FILE_CHOOSER (dialog->save_widget), FALSE);
   gtk_file_chooser_set_current_folder_uri (GTK_FILE_CHOOSER (dialog->save_widget), current_folder);
   gtk_entry_set_text (GTK_ENTRY (dialog->filename_entry), current_name);
