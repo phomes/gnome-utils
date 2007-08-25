@@ -22,6 +22,7 @@
 #include <glib/gi18n.h>
 #include "logview.h"
 #include "logview-findbar.h"
+#include "log_repaint.h"
 
 struct LogviewFindBarPriv
 {
@@ -55,9 +56,15 @@ logview_findbar_clear (GtkWidget *widget, gpointer data)
 {
 	LogviewFindBar *findbar = LOGVIEW_FINDBAR (data);
 	LogviewWindow *logview = LOGVIEW_WINDOW (findbar->priv->logview);
+	GtkTreeModelFilter *filter;
 	Log *log = logview->curlog;
 
-	if (log==NULL || log->filter == NULL)
+	if (log==NULL)
+ 		return;
+	g_object_get (G_OBJECT (log),
+		      "filter", &filter,
+		      NULL);
+	if (filter == NULL)
  		return;
 
 	gtk_entry_set_text (GTK_ENTRY (findbar->priv->entry), "");
@@ -70,21 +77,28 @@ logview_findbar_entry_timeout (gpointer data)
 	LogviewFindBar *findbar = LOGVIEW_FINDBAR (data);
 	LogviewWindow *logview = LOGVIEW_WINDOW (findbar->priv->logview);
 	Log *log = logview->curlog;
+	GtkTreeModel *model;
+	GtkTreeModelFilter *filter;
 	GdkCursor *cursor;
 
+	g_object_get (G_OBJECT (log),
+		      "model", &model,
+		      "filter", &filter,
+		      NULL);
 	cursor = gdk_cursor_new (GDK_WATCH);
 	gdk_window_set_cursor (GTK_WIDGET (logview)->window, cursor);
 	gdk_cursor_unref (cursor);
 	gdk_display_flush (gtk_widget_get_display (GTK_WIDGET (logview)));
 	
-	if (log->filter == NULL) {
+	if (filter == NULL) {
 
-		log->filter = GTK_TREE_MODEL_FILTER (gtk_tree_model_filter_new (log->model, NULL));
-		gtk_tree_model_filter_set_visible_func (log->filter, iter_is_visible, findbar, NULL);
-		gtk_tree_view_set_model (GTK_TREE_VIEW (logview->view), GTK_TREE_MODEL (log->filter));
+		filter = GTK_TREE_MODEL_FILTER (gtk_tree_model_filter_new (model, NULL));
+		gtk_tree_model_filter_set_visible_func (filter, iter_is_visible, findbar, NULL);
+		gtk_tree_view_set_model (GTK_TREE_VIEW (logview->view), GTK_TREE_MODEL (filter));
+		g_object_set (G_OBJECT (log), "filter", filter, NULL);
 
 	} else {
-		gtk_tree_model_filter_refilter (log->filter);
+		gtk_tree_model_filter_refilter (filter);
 	}
 
 	gtk_tree_view_expand_all (GTK_TREE_VIEW (logview->view));
@@ -103,13 +117,19 @@ logview_findbar_entry_changed_cb (GtkEditable *editable,
 	LogviewFindBar *findbar = LOGVIEW_FINDBAR (data);
 	LogviewWindow *logview = LOGVIEW_WINDOW (findbar->priv->logview);
 	Log *log = logview->curlog;
+	GtkTreeModelFilter *filter;
 	gchar *search_string;    
 
 	search_string = g_strdup (gtk_entry_get_text (GTK_ENTRY (findbar->priv->entry)));
+	g_object_get (G_OBJECT (log),
+		      "filter", &filter,
+		      NULL);
 	
-	if (strlen (search_string) == 0 && log->filter != NULL) {
-		g_object_unref (log->filter);
-		log->filter = NULL;
+	if (strlen (search_string) == 0 && filter != NULL) {
+		g_object_unref (filter);
+		g_object_set (G_OBJECT (log),
+			      "filter", NULL,
+			      NULL);
 		logview_repaint (logview);
 		return;
 	}
@@ -143,7 +163,7 @@ logview_findbar_connect (LogviewFindBar *findbar, LogviewWindow *logview)
 static void 
 logview_findbar_init (LogviewFindBar *findbar)
 {
-	GtkWidget *label, *button;
+	GtkWidget *label;
 	
 	findbar->priv = g_new0 (LogviewFindBarPriv, 1);
 

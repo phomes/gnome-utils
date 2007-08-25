@@ -1,6 +1,6 @@
 .\" gnome-system-log.1 - GNOME logfile viewer
 .\" Copyright 2001  Jochen Voss
-.TH gnome-system-log 1 "Aug 09 2002" "gnome-utils 2.0.0"
+.TH gnome-system-log 1 "Aug 09 2002" "gnome-utils 2.16.0"
 .SH NAME
 gnome-system-log \- the GNOME System Log Viewer
 .SH SYNOPSIS
@@ -19,9 +19,80 @@ The
 .B GNOME System Log Viewer
 was written by Cesar Miquel <miquel@df.uba.ar>.
 .PP
+.B GNOME System Log Viewer Plugin Interface
+was written by Lin Ma <lin.ma@sun.com>.
+.PP
 This manual page was written by Jochen Voss
 <voss@mathematik.uni-kl.de>.
+.TP
+.B Plugin Service Provider Interface (SPI)
+We have provided an SPI for adding plugins into Gnome Log Viewer. The SPI 
+mainly includes three parts:
+.RS
+.TP
+.B I/O (LogviewIFaceIO)
+This defines the main input interface. This is used by Log Viewer to
+read a logs content into memory, whether the logs source is text or
+binary, the data returned here should be text - most likely in the
+current locale. It also provides methods to allow the main application
+to get other information about the log such as whether the log has
+changed.
+
+It's the reposibility of the plugin to maintain information about the
+log file(s) such as the current location in the file, the size of the
+file, etc.
+.TP
+.B Views (LogviewIFaceView)
+This interface defines a mechanism to enable the formatting of log
+data, dividing it into lines. The current implementation defines how to
+group lines by date and the conversion of the log from the current
+locale to UTF-8.
+.TP
+.B Collectors (LogviewIFaceCollector)
+This interface is used to gather the list of logs. New types of logs
+may be added using this interface.
+.RE
+
+For the detail information, please see /usr/share/gtk-doc/html/logview/index.html.
+.TP
+.B Plugin Priority
+A priority list is maintained for each category of plugin - this defines
+the order in which plugins will be used - higher priority plugins override
+lower priority plugins. Priorities are categorised as:
+
+.br
+Priority 0-9: Used by the delivered default plugins
+.br
+Priority 10+: End Users plugins. 
+.TP
+.B Plugin Search Path
+Log Viewer will search in the following directories for plugins:
+
+.br
+$HOME/.gnome2/gnome-system-log/plugins/`uname -p`
+.br
+/lib/gnome-system-log/plugins
+.TP
+.B Plugin Security
+Both libgrablogs and libpipelog only recognize the configure file which has the
+same owner ship to the user, otherwise they will back to the system default
+ones. In Solaris, they will use a fork/exec/pfsh to run the commands within the
+configure files; in Linux, they will use popen(3).
+.TP
+.B Default Plugins
+Three plugins are available for the end-users. They are libgrablogs.so,
+libplainlog.so and libpipelog.so.
 .SH FILES
+.TP
+.I /usr/lib/gnome-system-log/plugins/libgrablogs.so
+A default plugin - collecting some log files from system. See grablogs.conf (4).
+.TP
+.I /usr/lib/gnome-system-log/plugins/libplainlog.so
+A default plugin - view ASCII log files.
+.TP
+.I /usr/lib/gnome-system-log/plugins/libpipelog.so
+A default plugin - has a higher priority than libplainlog.so, view the output 
+of a command. See pipelog.conf (4).
 .TP
 .I /var/log/messages
 The system's main logfile.
@@ -34,4 +105,6 @@ for exact information.
 .BR syslogd (8),
 .BR sysklogd (8),
 .BR syslog.conf (5),
-.BR syslogd-listfiles (8)
+.BR syslogd-listfiles (8),
+.BR grablogs.conf (4),
+.BR pipelog.conf (4)

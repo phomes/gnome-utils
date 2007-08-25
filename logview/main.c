@@ -36,6 +36,8 @@
 #include "logview.h"
 #include "misc.h"
 #include "userprefs.h"
+#include "logview-plugin-manager.h"
+#include "logview-debug.h"
 
 static gboolean show_version = FALSE;
 
@@ -86,7 +88,6 @@ save_session_cb (GnomeClient        *gnome_client,
 	gchar **argv;
 	gint numlogs;
 	GSList *logs;
-	Log *log;
 	gint i;
 
 	g_assert (LOGVIEW_IS_WINDOW (logview));
@@ -98,12 +99,11 @@ save_session_cb (GnomeClient        *gnome_client,
 	argv = g_new0 (gchar *, numlogs + 2);
 	argv[0] = g_get_prgname();
 
-	for (logs = logview->logs; logs != NULL; logs = logs->next) {
+	for (i = 1, logs = logview->logs; logs != NULL; logs = logs->next) {
 		Log *log = (Log *) logs->data;
 
 		g_assert (log != NULL);
-
-		argv[i++] = g_strdup (log->name);
+		g_object_get (G_OBJECT (log), "path", &argv[i++], NULL);
 	}
 	argv[i] = NULL;
 
@@ -115,20 +115,10 @@ save_session_cb (GnomeClient        *gnome_client,
 	return TRUE;
 }
 
-static gint
-die_cb (GnomeClient *gnome_client,
-	gpointer     client_data)
-{
-    gtk_main_quit ();
-    
-    return 0;
-}
-
 int
 main (int argc, char *argv[])
 {
 	GnomeClient *gnome_client;
-	GError *error;
 	GnomeProgram *program;
 	GOptionContext *context;
 	LogviewWindow *logview;
@@ -137,10 +127,6 @@ main (int argc, char *argv[])
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
 
-	error_dialog_queue (TRUE);
-	
-	gnome_vfs_init ();
-	prefs_init ();
 	context = logview_init_options ();
 	
 	program = gnome_program_init ("gnome-system-log", VERSION,
@@ -148,20 +134,42 @@ main (int argc, char *argv[])
 				      argc, argv,
 				      GNOME_PARAM_APP_DATADIR, DATADIR,
 				      GNOME_PARAM_GOPTION_CONTEXT, context,
-				      NULL);
+				      GNOME_PARAM_NONE);
 	
 	g_set_application_name (_("Log Viewer"));
 
 	if (show_version)
 		logview_show_version_and_quit ();
-	
+
+	error_dialog_queue (TRUE);
+
+	g_type_init ();
+	if (! g_thread_supported ())
+		g_thread_init (NULL);
+
+	if (!create_home_dir ()) {
+		g_printf (_("Fatal error! Can't open $HOME/%s.\n"),
+			  LOGVIEW_HOME_SUFFIX);
+		exit (1);
+	}
+
+	gnome_vfs_init ();
+	logview_debug_init ();
+	pluginmgr_init ();
+	if (!pluginmgr_load_modules ()) {
+		error_dialog_show (NULL,
+				   _("Unable to load modules."),
+				   NULL);
+		exit (1);
+	}
+	prefs_init ();
+
 	/* Open regular logs and add each log passed as a parameter */
 	logview = LOGVIEW_WINDOW (logview_window_new ());
 	if (!logview) {
 		error_dialog_show (NULL,
 				   _("Unable to create user interface."),
 				   NULL);
-		
 		exit (0);
 	}
 
@@ -182,7 +190,7 @@ main (int argc, char *argv[])
 	} else {
 		gint i;
 		
-		for (i = 1; i < argc; i++)
+ 		for (i = 1; i < argc; i++) 
 			logview_add_log_from_name (logview, argv[i]);
 	}
 
@@ -196,11 +204,13 @@ main (int argc, char *argv[])
 	if (gnome_client) {
 		g_signal_connect (gnome_client, "save_yourself",
 				  G_CALLBACK (save_session_cb), logview);
-		g_signal_connect (gnome_client, "die",
-				  G_CALLBACK (die_cb), NULL);
 	}
 
 	gtk_main ();
-   
+
+	pluginmgr_destroy ();
+	logview_debug_destroy ();
+	gnome_vfs_shutdown ();
 	return EXIT_SUCCESS;
 }
+

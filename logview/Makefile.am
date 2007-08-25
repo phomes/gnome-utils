@@ -1,6 +1,17 @@
 # Process this file with automake to produce Makefile.in
 
-SUBDIRS = help
+SUBDIRS = plugins help docs 
+
+gnome_system_log_includedir = $(includedir)/gnome-system-log
+gnome_system_log_include_HEADERS = \
+	logview-log.h		\
+	logview-plugin.h	\
+	logview-iface.h		\
+	logview-iface-io.h	\
+	logview-iface-collector.h	\
+	logview-iface-view.h	\
+	logview-debug.h		\
+	$(NULL)
 
 Utilitiesdir = $(datadir)/applications
 additionaldir  = $(datadir)/gnome-system-log
@@ -10,7 +21,8 @@ INCLUDES = \
 	-DG_LOG_DOMAIN=\"gnome-system-log\"			\
 	-DGNOMELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
 	-DDATADIR=\""$(datadir)"\"				\
-	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/\""			\
+	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/"\"			\
+	-DLOGVIEWPLUGINDIR=\""$(libdir)/gnome-system-log/plugins"\"	\
 	$(SUN_OS)						\
 	$(NULL)
 
@@ -37,12 +49,35 @@ gnome_system_log_SOURCES = 	\
 	logview-findbar.c	\
 	logview-findbar.h   \
 	loglist.c       \
-	loglist.h
+	loglist.h	\
+	logview-plugin.c		\
+	logview-plugin.h		\
+	logview-module.c	\
+	logview-module.h	\
+	logview-plugin-manager.c	\
+	logview-plugin-manager.h	\
+	logview-plugin-list.c	\
+	logview-plugin-list.h	\
+	logview-iface.c		\
+	logview-iface.h		\
+	logview-iface-io.c		\
+	logview-iface-io.h		\
+	logview-iface-collector.c	\
+	logview-iface-collector.h	\
+	logview-iface-view.c	\
+	logview-iface-view.h	\
+	logview-debug.c			\
+	logview-debug.h			\
+	logview-log.h		\
+	$(NULL)
 
 gnome_system_log_LDADD = \
-	$(GNOME_UTILS_LIBS)
+	$(GNOME_UTILS_LIBS)	\
+	$(GMODULE_LIBS)
 
-man_MANS = gnome-system-log.1
+man_MANS = gnome-system-log.1	\
+	pipelog.conf.4		\
+	grablogs.conf.4
 
 Utilities_in_files = gnome-system-log.desktop.in
 Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
@@ -97,4 +132,5 @@ CLEANFILES = 				\
 
 dist-hook:
 	cd $(distdir) ; rm -f $(CLEANFILES)
+
 

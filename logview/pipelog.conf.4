@@ -1,0 +1,48 @@
+'\" te
+.\" gnome-system-log.1 - GNOME logfile viewer
+.\" Copyright 1989 AT
+.\"|[amp   ]
+.\"|T
+.\" Copyright 2006 Lin Ma
+.TH pipelog.conf 4 "13 Oct 2006" "gnome-utils 2.16.0" "File Formats"
+.SH "NAME"
+pipelog.conf \- pipelog configuration for libpipelog.so of the plugins of 
+gnome-system-log
+file
+.SH "SYNOPSIS"
+.PP
+.nf
+/usr/lib/gnome-system-log/plugins/pipelog.conf
+.fi
+.SH "DESCRIPTION"
+.PP
+The libpipelog.so is a plugin for gnome-system-log(1), it runs commands through
+ pipes and get the output of the individual pipe as a log content. Users can
+ copy the file into $HOME/.gnome2/gnome-system-log/plugins/`uname -p` to
+ overwrite the system default one.
+.PP
+The syntax of pipelog.conf file is:
+.br
+.RS .5i
+<log path><whitespace><command>
+
+.RE
+<command> may be a simple program name (which will be found in $PATH)
+or an absolute path of a binary with arguments list. "%s" can be included in
+<command> zero or one time, will be replaced by <log path> in runtime.
+.SH "FILES"
+.TP
+.I /usr/lib/gnome-system-log/plugins/pipelog.conf
+The system default configuration file for the plugin libpipelog.so
+.TP
+.I "$HOME/.gnome2/gnome\-system\-log/plugins/`uname \-p`/pipelog.conf"
+The user specific configuration file for the plugin libpipelog.so
+.SH "EMAMPLE"
+.IR "/var/adm/wtmpx  last"
+.br
+.IR "/var/adm/utmpx  /bin/last -f %s"
+.SH "SEE ALSO"
+.PP
+.BR gnome-system-log (1),
+.BR grablogs.conf (4)
+.PP

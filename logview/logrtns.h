@@ -21,72 +21,19 @@
 #ifndef __LOGRTNS_H__
 #define __LOGRTNS_H__
 
-#include <time.h>
 #include <libgnomevfs/gnome-vfs.h>
+#include "logview-log.h"
 
-typedef struct
-{
-    GDate *date;
-    long first_line, last_line; /* First and last line for this day in the log */
-    gboolean expand;
-    GtkTreePath *path;
-} Day;
+G_BEGIN_DECLS
 
-typedef struct
-{
-    time_t file_time;
-    GnomeVFSFileSize file_size;
-} LogStats;
+/* call by log_repaint */
+Day * log_find_day (Log *self, const GDate* date);
 
-typedef struct TreePathRange
-{
-  GtkTreePath *first;
-  GtkTreePath *last;
-}TreePathRange;
+/* log utilities base on the plugin interfaces */
+void log_extract_filepath (Log* self, gchar** dirname, gchar** filename);
+gboolean log_has_been_modified (Log* self);
+gboolean log_run (Log* self);
 
-typedef struct _log Log;
-struct _log
-{
-	char *name;
-	char *display_name;
-	LogStats *stats;
-
-    GSList *days;
-    gchar **lines;
-	gint selected_line_first;
-	gint selected_line_last;
-	gint total_lines; /* no of lines in the file */
-    gint displayed_lines; /* no of lines displayed now */
-
-	/* Monitor info */
-	GnomeVFSFileSize mon_offset;
-	GnomeVFSMonitorHandle *mon_handle;
-    GnomeVFSHandle *mon_file_handle;
-	gboolean monitored;
-    gboolean needs_refresh;
-
-	gboolean first_time;
-    GtkTreeModel *model;
-    GtkTreeModelFilter *filter;
-    GList *bold_rows_list;
-	TreePathRange selected_range;
-    GtkTreePath *visible_first;
-
-	int versions;
-	int current_version;
-	/* older_logs[0] should not be used */
-	Log *older_logs[5];
-	Log *parent_log;
-	
-    gpointer window;
-};
-
-gboolean file_is_log (char *filename, gboolean show_error);
-Log *log_open (char *filename, gboolean show_error);
-gboolean log_read_new_lines (Log *log);
-gboolean log_unbold (gpointer data);
-void log_close (Log * log);
-gchar *log_extract_filename (Log *log);
-gchar *log_extract_dirname (Log *log);
+G_END_DECLS
 
 #endif /* __LOGRTNS_H__ */

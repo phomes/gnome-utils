@@ -20,6 +20,13 @@
 #ifndef __LOG_REPAINT_H__
 #define __LOG_REPAINT_H__
 
+enum {
+	MESSAGE = 0,
+	DAY_POINTER,
+	LOG_LINE_WEIGHT,
+	LOG_LINE_WEIGHT_SET
+};
+
 void logview_repaint (LogviewWindow *window);
 void selection_changed_cb (GtkTreeSelection *selection, gpointer data);
 void row_toggled_cb (GtkTreeView *treeview, GtkTreeIter *iter, 

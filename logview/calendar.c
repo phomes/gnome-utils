@@ -64,7 +64,7 @@ calendar_init_data (Calendar *calendar, LogviewWindow *logview)
     g_return_if_fail (IS_CALENDAR (calendar));
 	g_return_if_fail (LOGVIEW_IS_WINDOW (logview));
 
-	g_object_get (G_OBJECT (logview), "days", &(calendar->priv->days), NULL);
+	g_object_get (G_OBJECT (logview->curlog), "days", &(calendar->priv->days), NULL);
     calendar->priv->first_pass = TRUE;
 
     calendar_mark_dates (calendar);
@@ -77,23 +77,6 @@ calendar_month_changed (GtkWidget *widget, gpointer data)
     calendar_mark_dates (CALENDAR (widget));
 }
 
-static Day *
-log_find_day (Log *log, int d, int m, int y)
-{
-    GDate *date;
-    GSList *days;
-    Day *day, *found_day = NULL;
-    
-    date = g_date_new_dmy (d, m+1, y);
-    for (days = log->days; days!=NULL; days=g_slist_next(days)) {
-        day = days->data;
-        if (g_date_compare (day->date, date) == 0) {
-            found_day = day;
-        }
-    }
-    return found_day;
-}
-
 static void
 calendar_day_selected (GtkWidget *widget, LogviewWindow *logview)
 {
@@ -101,6 +84,9 @@ calendar_day_selected (GtkWidget *widget, LogviewWindow *logview)
     guint day, month, year;
     Day *found_day;
     GtkTreePath *path;
+    GList *selected_paths;
+    GtkTreePath *select_first;
+    GDate *date;    
 
     calendar = CALENDAR (widget);
 
@@ -113,11 +99,20 @@ calendar_day_selected (GtkWidget *widget, LogviewWindow *logview)
     }
   
     gtk_calendar_get_date (GTK_CALENDAR (calendar), &year, &month, &day);    
-    found_day = log_find_day (logview->curlog, day, month, year);
+
+    date = g_date_new_dmy (day, month+1, year);
+    found_day = log_find_day (logview->curlog, date);
+    g_date_free (date);
+
+    g_object_get (G_OBJECT (logview->curlog),
+		  "selected-paths", &selected_paths,
+		  NULL);
+    g_assert (selected_paths);
+    select_first = g_list_first (selected_paths)->data;
     if (found_day != NULL) {
         path = found_day->path;
-        if ((gtk_tree_path_compare (path, logview->curlog->selected_range.first) != 0) &&
-            (!gtk_tree_path_is_descendant (logview->curlog->selected_range.first, path)))
+        if ((gtk_tree_path_compare (path, select_first) != 0) &&
+            (!gtk_tree_path_is_descendant (select_first, path)))
             gtk_tree_view_set_cursor (GTK_TREE_VIEW(logview->view), path, NULL, FALSE);
     }
 }

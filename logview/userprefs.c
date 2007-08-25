@@ -27,9 +27,11 @@
 #include <gtk/gtk.h>
 #include <gconf/gconf-client.h>
 #include <libgnomevfs/gnome-vfs.h>
-#include "userprefs.h"
 #include <sys/stat.h>
+#include "userprefs.h"
 #include "logview.h"
+#include "logview-plugin-manager.h"
+#include "logview-debug.h"
 
 #define LOGVIEW_DEFAULT_HEIGHT 400
 #define LOGVIEW_DEFAULT_WIDTH 600
@@ -49,94 +51,18 @@
 static GConfClient *gconf_client = NULL;
 static UserPrefs *prefs;
 
-static GSList*
-parse_syslog(gchar *syslog_file) {
-
-	/* Most of this stolen from sysklogd sources */
-
-	char *logfile = NULL;
-	char cbuf[BUFSIZ];
-	char *cline, *p;
-	FILE *cf;
-	GSList *logfiles = NULL;
-	if ((cf = fopen(syslog_file, "r")) == NULL) {
-		return NULL;
-	}
-	cline = cbuf;
-	while (fgets(cline, sizeof(cbuf) - (cline - cbuf), cf) != NULL) {
-		gchar **list;
-		gint i;
-		for (p = cline; g_ascii_isspace(*p); ++p);
-		if (*p == '\0' || *p == '#' || *p == '\n')
-			continue;
-		list = g_strsplit_set (p, ", -\t()\n", 0);
-		for (i = 0; list[i]; ++i) {
-			if (*list[i] == '/' &&
-				g_slist_find_custom(logfiles, list[i],
-				(GCompareFunc)g_ascii_strcasecmp) == NULL) {
-					logfiles = g_slist_insert (logfiles,
-						g_strdup(list[i]), 0);
-			}
-		}
-		g_strfreev(list);
-	}
-	fclose(cf);
-	return logfiles;
-}
-
 static void
 prefs_create_defaults (UserPrefs *p)
 {
-	int i;
-	gchar *logfiles[] = {
-		"/var/log/sys.log",
-#ifndef ON_SUN_OS
-		"/var/log/messages",
-		"/var/log/secure",
-		"/var/log/maillog",
-		"/var/log/cron",
-		"/var/log/Xorg.0.log",
-		"/var/log/XFree86.0.log",
-		"/var/log/auth.log",
-		"/var/log/cups/error_log",
-#else
-		"/var/adm/messages",
-		"/var/adm/sulog",
-		"/var/log/authlog",
-		"/var/log/brlog",
-		"/var/log/postrun.log",
-		"/var/log/scrollkeeper.log",
-		"/var/log/snmpd.log",
-		"/var/log/sysidconfig.log",
-		"/var/log/swupas/swupas.log",
-		"/var/log/swupas/swupas.error.log",
-#endif
-	NULL};
-	struct stat filestat;
-	GSList *logs = NULL;
-	GnomeVFSResult result;
-	GnomeVFSHandle *handle;
+	GSList* idx;
 
-	g_assert (p != NULL);
-	
-	/* For first time running, try parsing various logfiles */
-	/* Try to parse syslog.conf to get logfile names */
+	LV_MARK;
+	g_assert (p->logs == NULL);
+	p->logfile = NULL;
+	p->logs = pluginmgr_get_all_logs ();
 
-	result = gnome_vfs_open (&handle, "/etc/syslog.conf", GNOME_VFS_OPEN_READ);
-	if (result == GNOME_VFS_OK) {
-		gnome_vfs_close (handle);
-		logs = parse_syslog ("/etc/syslog.conf");
-	}
-	
-	for (i=0; logfiles[i]; i++) {
-	    if (g_slist_find_custom(logs, logfiles[i], (GCompareFunc)g_ascii_strcasecmp) == NULL &&
-		file_is_log (logfiles[i], FALSE))
-		logs = g_slist_insert (logs, g_strdup(logfiles[i]), 0);
-	}
-
-	if (logs != NULL) {
-		p->logs = logs;
-		p->logfile = logs->data;
+	for (idx = p->logs; idx != NULL; idx = idx->next) {
+		LV_ERR ("add|log: %s", (gchar*) idx->data);
 	}
 }
 
@@ -159,22 +85,23 @@ prefs_load (void)
 					 &err);
 	if (p->logs == NULL)
 		prefs_create_defaults (p);
+	if (p->logs)
+		p->logfile = p->logs->data;
 	
 	logfile = NULL;
 	logfile = gconf_client_get_string (gconf_client, GCONF_LOGFILE, NULL);
-	if (logfile && logfile[0] != '\0' && file_is_log (logfile, FALSE)) {
-		gboolean found;
+	if (logfile && logfile[0] != '\0') {
 		GSList *iter;
 		
-		p->logfile = g_strdup (logfile);
-		g_free (logfile);
-	
-		for (found = FALSE, iter = p->logs;
-		     iter != NULL;
+		for (iter = p->logs; iter != NULL; 
 		     iter = g_slist_next (iter)) {
-			if (g_ascii_strncasecmp (iter->data, p->logfile, 255) == 0)
-				found = TRUE;
+			if (g_ascii_strncasecmp (iter->data, 
+						 logfile, 255) == 0) {
+				p->logfile = iter->data;
+				break;
+			}
 		}
+		g_free (logfile);
 	}
 
 	width = gconf_client_get_int (gconf_client, GCONF_WIDTH_KEY, NULL);
@@ -184,6 +111,7 @@ prefs_load (void)
 	p->width = (width == 0 ? LOGVIEW_DEFAULT_WIDTH : width);
 	p->height = (height == 0 ? LOGVIEW_DEFAULT_HEIGHT : height);
 	p->fontsize = fontsize;
+	p->logfile = g_strdup (p->logfile);
 
 	return p;
 }
@@ -260,22 +188,38 @@ prefs_get_height (void)
 void
 prefs_free_loglist ()
 {
-	g_slist_free (prefs->logs);
-	prefs->logs = NULL;
+	GSList *idx;
+	if (prefs->logs) {
+		for (idx = prefs->logs; idx; idx = g_slist_next(idx)) {
+			g_free ((gchar*)idx->data);
+		}
+		g_slist_free (prefs->logs);
+		prefs->logs = NULL;
+	}
+	if (prefs->logfile) {
+		g_free (prefs->logfile);
+		prefs->logfile = NULL;
+	}
 }
 
 void
-prefs_store_log (gchar *name)
+prefs_store_log (const gchar *name)
 {
+	LV_INFO ("[Prefs Store] %s", name);
 	if (name && name[0] != '\0')
-		prefs->logs = g_slist_append (prefs->logs, name);
+		prefs->logs = g_slist_append (prefs->logs, g_strdup (name));
 }
 
 void
-prefs_store_active_log (gchar *name)
+prefs_store_active_log (const gchar *name)
 {
 	/* name can be NULL if no active log */
-	prefs->logfile = name;
+	if (prefs->logfile)
+		g_free (prefs->logfile);
+	if (name)
+		prefs->logfile = g_strdup(name);
+	else
+		prefs->logfile = NULL;
 }
 
 void
@@ -287,8 +231,6 @@ prefs_store_fontsize (int fontsize)
 void
 prefs_save (void)
 {
-	GSList *logs;
-
 	g_assert (gconf_client != NULL);
 
 	if (prefs->logfile) {

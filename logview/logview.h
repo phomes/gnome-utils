@@ -23,6 +23,7 @@
 #define __LOGVIEW_H__
 
 #include "logrtns.h"
+#include "logview-plugin-list.h"
 
 #define MAX_VERSIONS             5
 
@@ -39,19 +40,20 @@ typedef struct _LogviewWindowClass LogviewWindowClass;
 struct _LogviewWindow {
 	GtkWindow parent_instance;
 
-	GtkWidget *view;		
+	GtkWidget *view;
 	GtkWidget *statusbar;
 	GtkUIManager *ui_manager;
 
 	GtkWidget *calendar;
 	GtkWidget *find_bar;
 	GtkWidget *loglist;
-	GtkWidget *sidebar; 
+	GtkWidget *sidebar;
 	GtkWidget *version_bar;
 	GtkWidget *version_selector;
-        GtkWidget *hpaned;
-    
-        GSList *logs;
+	GtkWidget *hpaned;
+	LogviewPluginList *plugin_list;
+	
+	GSList *logs;
 	Log *curlog;
 
 	int original_fontsize, fontsize;

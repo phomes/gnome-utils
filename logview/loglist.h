@@ -17,6 +17,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
+
+/* loglist is the left choice panel */
+
 #ifndef __LOG_LIST_H__
 #define __LOG_LIST_H__
 
@@ -30,8 +33,8 @@
 typedef struct LogListPriv LogListPriv;
 typedef struct LogList
 {	
-    GtkTreeView parent_instance;
-    LogListPriv *priv;
+	GtkTreeView parent_instance;
+	LogListPriv *priv;
 }LogList;
 
 typedef struct LogListClass

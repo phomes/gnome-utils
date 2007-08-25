@@ -1,0 +1,79 @@
+'\" te
+.\" gnome-system-log.1 - GNOME logfile viewer
+.\" Copyright 1989 AT
+.\"|[amp   ]
+.\"|T
+.\" Copyright 2006 Lin Ma
+.TH grablogs.conf 4 "13 Oct 2006" "gnome-utils 2.16.0" "File Formats"
+.SH "NAME"
+grablogs.conf \- grablogs configuration for libgrablogs.so of the plugins of
+ gnome-system-log
+file
+.SH "SYNOPSIS"
+.PP
+.nf
+/usr/lib/gnome-system-log/plugins/grablogs.conf
+.fi
+.SH "DESCRIPTION"
+.PP
+The libgrablogs.so is a plugin for gnome-system-log(1), it colloct the log 
+files from the system as many as possible. grablogs.conf is a configuration 
+file that contains a set of lines mixed with sh(1) syntax codes and individual
+ log files. libgrablogs.so will read the file try to get a log files list for
+ gnome-system-log(1). Users can copy the file into $HOME/.gnome2/gnome-system-log/plugins/`uname -p` to overwrite the system default one.
+.PP
+The grablogs.conf file contains the following configuration categories:
+.RS
+.TP
+.B [configs]
+Each line under this category is interpreted as a config file of
+System. The plugin will open the config file and try to find all
+system paths of the logs.
+.TP
+.B [commands]
+Each line under this category is interpreted as a shell command and
+will be execute through a pipe. And each line of the output of the
+command will be interpreted as a log path.
+.TP
+.B [logs]
+Each line under this category is interpreted as a log path.
+.RE
+.SH "FILES"
+.TP
+.I /usr/lib/gnome-system-log/plugins/grablogs.conf
+The system default configuration file for the plugin libgrablogs.so
+.TP
+.I "$HOME/.gnome2/gnome\-system\-log/plugins/`uname \-p`/grablogs.conf"
+The user specific configuration file for the plugin libgrablogs.so
+.SH "EMAMPLE"
+.br
+.B [configs]
+.br
+.IR /etc/syslog.conf
+.br
+.B [commands]
+.br
+.IR "for i in `svcs -aH -o FMRI | grep -v lrc `; do svcprop -p restarter/logfile $i 2>/dev/null || svcprop -q -p restarter/alt_logfile $i 2>/dev/null ; done"
+.br
+.B [logs]
+.br
+.IR /var/log/messages
+.br
+.IR /var/log/secure
+.br
+.IR /var/log/maillog
+.br
+.IR /var/log/cron
+.br
+.IR /var/log/Xorg.0.log
+.br
+.IR /var/log/XFree86.0.log
+.br
+.IR /var/log/auth.log
+.br
+.IR /var/log/cups/error_log
+.SH "SEE ALSO"
+.PP
+.BR gnome-system-log (1),
+.BR pipelog.conf (1)
+.PP
