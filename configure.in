@@ -70,6 +70,7 @@ LIBGNOMEPRINT_REQUIRED=2.8.0
 LIBGNOMEPRINTUI_REQUIRED=2.8.0
 LIBGTOP_REQUIRED=2.12.0
 GNOMECANVAS_REQUIRED=2.10.2
+GMODULE_REQUIRED=2.10.2
 
 dnl *****************************************
 dnl libgnome, libgnomeui needed for all utils
@@ -415,6 +416,9 @@ AC_SUBST(GREP_COMMAND)
 dnl ********************
 dnl logview checks
 dnl ********************
+PKG_CHECK_MODULES(GMODULE, gmodule-2.0 >= $GMODULE_REQUIRED)
+AC_SUBST(GMODULE_CFLAGS)
+AC_SUBST(GMODULE_LIBS)
 
 dnl This is where the binary actually resides,
 dnl not the console helper link
@@ -425,7 +429,8 @@ else
 fi
 EXPANDED_LOGVIEWDIR=`eval echo $LOGVIEWDIR_TMP`
 AC_SUBST(EXPANDED_LOGVIEWDIR)
-
+PLUGIN_LIBTOOL_FLAGS="-module -avoid-version"
+AC_SUBST(PLUGIN_LIBTOOL_FLAGS)
 
 dnl ********************
 dnl scrollkeeper checks 
@@ -474,6 +479,10 @@ baobab/help/Makefile
 logview/Makefile
 logview/gnome-system-log-security
 logview/help/Makefile
+logview/plugins/Makefile
+logview/docs/Makefile
+logview/docs/reference/Makefile
+logview/docs/reference/logview/Makefile
 gsearchtool/Makefile
 gsearchtool/data/Makefile
 gsearchtool/help/Makefile
