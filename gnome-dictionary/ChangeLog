@@ -1,3 +1,118 @@
+2007-08-29  Lin Ma  <Lin.Ma@Sun.COM>
+
+	reviewed by: <delete if not using a buddy>
+
+	* data/Makefile.am:
+	* data/gnome-dictionary.desktop.in.in:
+	* src/gdict-about.c: (gdict_show_about_dialog):
+	* src/gdict-app.c: (gdict_init):
+	* src/gdict-applet.c: (gdict_applet_init):
+
+2007-08-28  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-about.c:
+	* src/gdict-app.c:
+	* src/gdict-applet.c:
+	* data/gnome-dictionary.desktop.in.in:
+	* data/Makefile.am: Use the gnome-icon-theme icon for the dictionary
+	instead of our own. (#470287, Michael Monreal)
+
+2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-client-context.c: Use g_shell_quote() to escape
+	the words to look up. (#432968)
+
+2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-window.c (lookup_word): Remove leading and trailing
+	whitespace from the content of the lookup entry before feeding
+	it to the GdictContext. (#432968)
+
+2007-08-18  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-client-context.c: Handle decomposed strings
+	when querying the dictionary server. (#419894, Denis Jacquerye)
+
+2007-08-18  Emmanuele Bassi  <ebassi@gnome.org>
+
+	Out of tree build cleanups. (#414013, Loic Minier)
+
+	* src/Makefile.am: Add missing -I flag for out of tree builds.
+
+	* libgdict/gdict.h: Full include.
+
+	* libgdict/gdict-version.h.in: Protect expanded version numbers.
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-client-context.c: Destroy the current command,
+	if present, when we are forcing a disconnection. (should fix
+	#406119 and duplicates, when we get garbage from the server)
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-window.c: Set the page of the sidebar only if we
+	have one coming from GConf.
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-applet.c: Hide the find pane when hiding the
+	window.
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/*.[ch]: Add more documentation.
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/*.[ch]: Use the sources to write the documentation,
+	as it should be.
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-defbox.c: Add case-insensitive search, using
+	gtksourceview search code. (#466180)
+	
+	(hide_find_pane),
+	(find_prev_clicked_cb), (find_next_clicked_cb),
+	(find_entry_changed_cb),
+	(gdict_defbox_real_show_find), (gdict_defbox_real_hide_find),
+	(gdict_defbox_set_show_find): Automatically hide the find pane
+	widget after 5 seconds since the last change in the entry or the
+	last clicked event on the find next/prev buttons.
+	
+	(gdict_defbox_init), (gdict_defbox_dispose): Remove the unused
+	GtkTooltips object.
+
+2007-08-10  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-defbox.c (gdict_defbox_insert_body): Add
+	more strict validation when highlighting the links. (#465336)
+
+2007-08-09  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-window.c (gdict_window_lookup_end): Perform a
+	match of the similar words even if we have found a valid
+	definition. (#464991)
+
+2007-08-05  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-window.c (sidebar_closed_cb): Use the right
+	function to set the sidebar as invisible instead of directly
+	accessing the data. (#436542, Iain Nicol)
+
+2007-02-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* Makefile.am:
+	* AUTHORS: Add authors file.
+
+	* TODO: Update.
+
+2007-01-31  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-about.c: Fix C99-ism. (#376937, Jens Granseuer)
+
+>>>>>>> .merge-right.r7603
 2007-01-12  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* libgdict/gdict-client-context.c: Add a timeout or 30 seconds
