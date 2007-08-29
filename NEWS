@@ -1,9 +1,269 @@
 ===================================================================
-GNOME Utilities 2.17.2 () - ""
+GNOME Utilities 2.19.91 (27th August 2007) - "I Missed the Point"
+
+    * Second unstable release of the 2.19 cycle
+    * Requires GLib >= 2.13.3 and GTK+ >= 2.10.0
+    * Remove invalid "Application" category from every desktop
+      entry file [Christian Kirbach]
+
+Baobab
+
+    * Nothing
+
+Dictionary
+
+    * Fix bug #414013 - Fix out of tree builds [Loic Minier]
+    * Fix bug #419894 - Handle decomposed strings [Denis Jacquerye]
+
+Floppy
+
+    * Nothing
+
+Screenshot
+
+    * Fix bug #455204 - Use XDG User Directories API to find the
+      Desktop directory [Luca Ferretti, Frederic Crozat]
+
+Search Tool
+
+    * Nothing
+
+System Log Viewer
+
+    * Fix bug #413498 - Fix a memory leak [Sebastien Bacher]
+    * Fix bug #442846 - Do not crash when saving the session
+
+Translations updated by:
+
+    * Ivar Smolin (et)
+    * Stéphane Raimbault (fr)
+    * Takeshi AIHANA (ja)
+    * Tomasz Dominikowski (pl)
+
+===================================================================
+GNOME Utilities 2.19.90 (13th August 2007) - "Someone Something"
+
+    * First unstable release of the 2.19 cycle
+
+Baobab
+
+    * Added filesystem total and available size for each mount
+      point in the Preferences dialog. [Fabio]
+    * Fix bug #421922 - Cryptic license tab
+    * Fix bug #425530 - Better tooltip required
+    * Fix bug #427126 - Use the widget allocation area and avoid
+      unneeded redraws [Alejandro G. Castro, Philippe Gauthier]
+    * Fix bug #453742 - Should display a dialog when there is no
+      disk mounted
+    * Fix bug #462424 - Includes unconditionally monetary.h
+
+Dictionary
+
+    * Fix bug #436542 - sidebar closing causes crash [Iain Nicol]
+    * Fix bug #464991 - perform a similar words lookup even when
+      we have found a valid definition
+    * Fix bug #465336 - perform stricter checks when highlighting
+      links; this avoids a crash when looking up "hominid" on
+      WordNet (broken dictionary entry)
+    * Fix bug #466180 - perform case insensitive search on the
+      definitions text
+    * Automatically hide the find pane after 5 seconds of inactivity.
+
+Floppy
+
+    * Nothing
+
+Screenshot
+
+    * Fix bug #427870 - Screenshot breaks in multi-user setups
+
+Search Tool
+
+    * Nothing
+
+System Log Viewer
+
+    * Fix bug #364106 - Avoid crashing in log_read_dates [Jan Arne Petersen]
+
+Translations updated by:
+
+    * Djihed Afifi (ar)
+    * Josep Puigdemont (ca)
+    * Hendrik Richter (de)
+    * David Lodge (en_GB)
+    * Jorge González (es)
+    * Ivar Smolin (et)
+    * Iñaki Larrañaga Murgoitio (eu)
+    * Ilkka Tuohela (fi)
+    * Ignacio Casal Quinteiro (gl)
+    * Ankit Patel (gu)
+    * Espen Stefansen (nb)
+    * Wouter Bolsterlee (nl)
+    * Og Maciel (pt_BR)
+    * Nickolay V. Shmyrev (ru)
+    * Danishka Navin (si)
+    * Daniel Nylander (sv)
+    * Dr.T.Vasudevan (ta)
+    * Pramod (te)
+    * Theppitak Karoonboonyanan (th)
+    * Clytie Siddall (vi)
+
+===================================================================
+GNOME Utilities 2.18.0 (11th March 2007) - "Don't Get Lost in Heaven"
+
+    * First stable release of the 2.18 cycle
+
+Baobab
+
+    * Fix bug #411867 - baobab crashed with SIGSEGV in
+      pango_fc_font_lock_face()
+    * Resort when toggling "allocated space".
+
+Dictionary
+
+    * Nothing
+
+Floppy
+
+    * Nothing
+
+Screenshot
+
+    * Fix bug #413019 - The effects in theinteractive dialog are not
+      fully translated
+    * Fix bug #411050 - With some window name, the screenshot tool
+      will propose to replace ~/Desktop with the image
+
+Search Tool
+
+    * Nothing
+
+System Log Viewer
+
+    * Nothing
+
+Translations Updated By:
+
+    Djihed Afifi (ar)
+    Alexander Shopov (bg)
+    Josep Puigdemont (ca)
+    Hendrik Richter (de)
+    norbu (dz)
+    David Lodge (en_GB)
+    Ivar Smolin (et)
+    Ilkka Tuohela (fi)
+    Claude Paroz (fr)
+    Ankit Patel (gu)
+    Gabor Kelemen (hu)
+    Andrea Zagli (it)
+    Takeshi AIHANA (ja)
+    Changwoo Ryu (ko)
+    Erdal Ronahi (ku)
+    Gintautas Miliauskas (lt)
+    Jovan Naumovski (mk)
+    Kjartan Maraas (nb)
+    wadim dziedzic (pl)
+    Duarte Loreto (pt)
+    Leonardo Ferreira Fontenelle (pt_BR)
+    Leonid Kanter (ru)
+    Daniel Nylander (sv)
+    Theppitak Karoonboonyanan (th)
+    Maxim Dziumanenko (uk)
+    Clytie Siddall (vi)
+    Funda Wang (zh_CN)
+    Woodman Tuen (zh_HK, zh_TW)
+
+===================================================================
+GNOME Utilities 2.17.92 (12th February 2007) - "You'll not feel the drowning"
+
+    * Fifth unstable release of the 2.17 cycle.
+    * Fix bug #404236 - GFloppy should not be build on systems
+      without a floppy drive.
+
+Baobab
+
+    * Nothing
+
+Dictionary
+
+    * Fix bug #376937 - Fix build with gcc 2.95
+
+Floppy
+    
+    * Nothing
+
+Screenshot
+
+    * Clean up the interactive dialog code.
+    * Hide the interactive dialog as soon as possible and avoid
+      errors when grabbing a window without a delay.
+    * Use a better interpolation algorithm for the border
+      effect.
+    * Fix bug #400200 - Do not leak the GnomeProgram instance
+      when quitting. [Christian Persch]
+    * Fix part of bug #400203 - HIG fixes for the interactive
+      dialog. [Christian Persch]
+
+Search Tool
+
+    * Fix bug #397945 - Cursor goes away from results list when
+      deleting a file.
+    * Fix bug #395381 - Cannot delete filenames containing %21
+      from the search window.
+    * Fix bug #404158 - Do not overwrite files in the trash folder.
+      Use same file renaming logic as nautilus.
+
+System Log Viewer
+
+    * Nothing.
+
+Translations Updated By:
+
+    * Khaled Hosny (ar)
+    * Josep Puigdemont i Casamajó (ca)
+    * David Lodge (en_GB)
+    * Priit Laes,  Ivar Smolin (et)
+    * Ilkka Tuohela (fi)
+    * Stéphane Raimbault, Jonathan Ernst (fr)
+    * Changwoo Ryu (ko)
+    * Kjartan Maraas (nb)
+    * Leonardo Ferreira Fontenelle, Luiz Fernando S. Armesto (pt_BR)
+    * Daniel Nylander (sv)
+    * Theppitak Karoonboonyanan (th)
+    * Nguyễn Thái Ngọc Duy (vi)
+
+===================================================================
+GNOME Utilities 2.17.91 (23rd January 2007) - "The Small Print"
+
+    * Fourth unstable release of the 2.17 cycle.
+    * Fix an assertion failure in the Screenshot utility.
+
+Baobab
+Dictionary
+Floppy
+Search Tool
+System Log Viewer
+    
+    * Nothing
+
+Screenshot
+
+    * Fix bug #399859 - crash in Take Screenshot
+
+Translations Updates By:
+
+    * Stéphane Raimbault, Robert-André Mauchin (fr)
+    * Daniel Nylander (sv)
+    * Theppitak Karoonboonyanan (th)
+
+===================================================================
+GNOME Utilities 2.17.90 (22nd January 2007) - "Small Stakes"
 
     * Third unstable release of the 2.17 cycle.
 
 Baobab
+
+    * Fix an assertion failure. [Paolo Borelli]
 
 Dictionary
 
@@ -14,13 +274,28 @@ Dictionary
 
 Floppy
 
+    * Nothing.
+
 Screenshot
+
+    * Add the available effects to the interactive dialog.
+    * Show the screenshot icon. [Dennis Cranston]
 
 Search Tool
 
+    * Nothing.
+
 System Log Viewer
 
+    * Fix bug #399544 - Typo in message string
+
 Translation Updates By:
+
+    * Djihed Afifi (ar)
+    * Hendrik Richter (de)
+    * David Lodge (en_GB)
+    * Daniel Nylander (sv)
+    * Theppitak Karoonboonyanan (th)
 
 ===================================================================
 GNOME Utilities 2.17.1 (8th January 2007) - "Cast no shadow"

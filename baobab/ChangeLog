@@ -1,3 +1,65 @@
+2007-08-01  Fabio Marzocca  <thesaltydog@gmail.com>
+
+	* src/baobab-utils.c:
+	BUGZILLA #462424 - baobab-utils.c unconditionally includes monetary.h
+
+2007-07-17  Fabio Marzocca  <thesaltydog@gmail.com>
+
+	* src/baobab.c: (main):
+	BUGZILLA #453742 - should display a dialog when there is no disk mounted
+
+2007-07-16 Alejandro G. Castro <acastro@igalia.com>
+
+	Patch cotributed by Philippe Gauthier <philippe.gauthier@deuxpi.ca>
+	
+	* src/baobab-ringschart.c (bug #427126):
+	(baobab_ringschart_expose): Fixed a problem with the draw of the
+	frozen status of the ringschart widget, we were using the event
+	information instead of the widget allocation. Added a cairo_clip
+	to avoid uneeded redraws.
+	
+2007-06-03  Paolo Borelli  <pborelli@katamail.com>
+
+	* src/baobab-utils.c: make sure that file chooser pointer
+	is nullified upon destruction.
+
+2007-04-02  Fabio Marzocca  <thesaltydog@gmail.com>
+
+	* data/baobab.desktop.in.in:
+	BUGZILLA #425530 - Better tooltip required
+
+2007-03-28  Fabio Marzocca  <thesaltydog@gmail.com>
+
+	* src/callbacks.c: (on_about_activate):
+        BUGZILLA: #421922 - cryptic license tab 
+
+2007-03-12  Fabio Marzocca  <thesaltydog@gmail.com>
+
+	* src/baobab-prefs.c: (create_props_model), (create_tree_props),
+	(fill_props_model):
+	* src/baobab-prefs.h:
+
+	Added filesystem total/available size for each mount point in
+        preferences window
+
+2007-02-26  Paolo Borelli  <pborelli@katamail.com>
+
+	* src/baoab-treeview.c:
+	* src/callbacks.c:
+
+	Resort when toggling "allocated space".
+
+2007-02-26  Fabio Marzocca  <thesaltydog@gmail.com>
+
+	* src/baobab.c: (start_proc_on_dir):
+
+	BUGZILLA: #411867 - baobab crashed with SIGSEGV 
+	in pango_fc_font_lock_face()
+
+2007-02-08  Dennis Cranston  <dennis_cranston@yahoo.com>
+
+	* data/baobab.glade: Add tooltip to refresh toolbar button.
+
 2007-01-09  Paolo Borelli  <pborelli@katamail.com>
 
 	* src/baobab-ringschart.c: do not assert that percentage

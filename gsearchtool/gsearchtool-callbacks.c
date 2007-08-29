@@ -770,6 +770,7 @@ move_to_trash_cb (GtkAction * action,
                   gpointer data)
 {
 	GSearchWindow * gsearch = data;
+	GtkTreePath * last_selected_path = NULL;
 	gint total;
 	gint index;
 
@@ -807,6 +808,10 @@ move_to_trash_cb (GtkAction * action,
 			g_free (utf8_basepath);
 			return;
 		}
+		
+		if (index + 1 == total) {
+			last_selected_path = gtk_tree_model_get_path (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter);
+		}
 
 		utf8_filename = g_build_filename (utf8_basepath, utf8_basename, NULL);
 		locale_filename = g_locale_from_utf8 (utf8_filename, -1, NULL, NULL, NULL);
@@ -820,13 +825,32 @@ move_to_trash_cb (GtkAction * action,
 		}
 		else if (trash_path != NULL) {
 			GnomeVFSResult result;
-			gchar * destination;
 			gchar * basename;
+			gchar * destination;
+			gchar * destination_uri;
+			gchar * source_uri;
 
 			basename = g_locale_from_utf8 (utf8_basename, -1, NULL, NULL, NULL);
 			destination = g_build_filename (trash_path, basename, NULL);
 
-			result = gnome_vfs_move (locale_filename, destination, TRUE);
+			/* Bugzilla #404158: Do not overwrite existing files in the trash folder */
+			while (g_file_test (destination, G_FILE_TEST_EXISTS)) {
+				gchar * temp;
+
+				temp = g_strdup (basename);
+				g_free (basename);
+
+				basename = gsearchtool_get_next_duplicate_name (temp);
+				g_free (destination);
+				g_free (temp);
+
+				destination = g_build_filename (trash_path, basename, NULL);
+			}
+			
+			destination_uri = g_filename_to_uri (destination, NULL, NULL);
+			source_uri = g_filename_to_uri (locale_filename, NULL, NULL);
+
+			result = gnome_vfs_move (source_uri, destination_uri, TRUE);
 			gtk_tree_selection_unselect_iter (GTK_TREE_SELECTION (gsearch->search_results_selection), &iter);
 
 			if (result == GNOME_VFS_OK) {
@@ -846,6 +870,8 @@ move_to_trash_cb (GtkAction * action,
 			}
 			g_free (basename);
 			g_free (destination);
+			g_free (destination_uri);
+			g_free (source_uri);			
 		}
 		else {
 			gint response;
@@ -889,6 +915,20 @@ move_to_trash_cb (GtkAction * action,
 		g_free (trash_path);
 	}
 
+	/* Bugzilla #397945: Select next row in the search results list */
+	if (last_selected_path != NULL) {
+		if (gtk_tree_selection_count_selected_rows (GTK_TREE_SELECTION (gsearch->search_results_selection)) == 0) {
+			gtk_tree_selection_select_path (GTK_TREE_SELECTION (gsearch->search_results_selection), 
+			                                last_selected_path);
+			if (gtk_tree_selection_count_selected_rows (GTK_TREE_SELECTION (gsearch->search_results_selection)) == 0) {
+				gtk_tree_path_prev (last_selected_path);
+				gtk_tree_selection_select_path (GTK_TREE_SELECTION (gsearch->search_results_selection), 
+				                                last_selected_path);
+			}
+		}
+		gtk_tree_path_free (last_selected_path);
+	}
+	
 	if (gsearch->command_details->command_status != RUNNING) {
 		update_search_counts (gsearch);
 	}

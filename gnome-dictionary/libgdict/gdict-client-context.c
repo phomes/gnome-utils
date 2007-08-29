@@ -17,6 +17,18 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  */
 
+/**
+ * SECTION:gdict-client-context
+ * @short_description: DICT client transport
+ *
+ * #GdictClientContext is an implementation of the #GdictContext interface.
+ * It implements the Dictionary Protocol as defined by the RFC 2229 in order
+ * to connect to a dictionary server.
+ *
+ * You should rarely instantiate this object directely: use an appropriate
+ * #GdictSource instead.
+ */
+
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -931,6 +943,12 @@ gdict_client_context_force_disconnect (GdictClientContext *context)
       g_io_channel_unref (priv->channel);
           
       priv->channel = NULL;
+    }
+
+  if (priv->command)
+    {
+      gdict_command_free (priv->command);
+      priv->command = NULL;
     }
   
   clear_command_queue (context);
@@ -2092,7 +2110,7 @@ gdict_client_context_define_word (GdictContext  *context,
   
   cmd = gdict_command_new (CMD_DEFINE);
   cmd->database = g_strdup ((database != NULL ? database : GDICT_DEFAULT_DATABASE));
-  cmd->word = g_strdup (word);
+  cmd->word = g_utf8_normalize (word, -1, G_NORMALIZE_NFC);
   
   return gdict_client_context_push_command (client_ctx, cmd);
 }
@@ -2127,7 +2145,7 @@ gdict_client_context_match_word (GdictContext  *context,
   cmd = gdict_command_new (CMD_MATCH);
   cmd->database = g_strdup ((database != NULL ? database : GDICT_DEFAULT_DATABASE));
   cmd->strategy = g_strdup ((strategy != NULL ? strategy : GDICT_DEFAULT_STRATEGY));
-  cmd->word = g_strdup (word);
+  cmd->word = g_utf8_normalize (word, -1, G_NORMALIZE_NFC);
   
   return gdict_client_context_push_command (client_ctx, cmd);
 }

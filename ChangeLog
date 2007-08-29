@@ -1,3 +1,98 @@
+2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* README:
+	* NEWS: Release 2.19.91.
+
+2007-08-23  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* README: Bump up the required GLib version to 2.13.3, for
+	g_get_user_special_dir().
+
+2007-08-18  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* README: Bump up the required GTK+ version to 2.10.0, for
+	gtk_text_buffer_get_has_selection(). (#421927, Loic Moinier)
+
+2007-08-17  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* baobab/data/baobab.desktop.in.in:
+	* gfloppy/gfloppy.desktop.in:
+	* gnome-dictionary/data/gnome-dictionary.desktop.in.in:
+	* gnome-screenshot/gnome-screenshot.desktop.in:
+	* gsearchtool/gnome-search-tool.desktop.in:
+	* logview/gnome-system-log.desktop.in.in: Remove invalid .desktop
+	category "Application". (#417654, Christian Kirbach)
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in: Post-release bump to 2.19.91
+
+2007-08-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* README:
+	* NEWS: Release 2.19.90.
+
+2007-08-05  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* README: Post-release bump to 2.19.0
+
+2007-03-11  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: Stable release, 2.18.0.
+
+2007-02-13  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in: Post release bump to 2.17.93.
+
+2007-02-12  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: Release 2.17.92.
+
+2007-02-11  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in: More clean-ups.
+
+2007-02-04  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in: Add a configure switch for enabling or disabling
+	building GFloppy: you can force disabling it even if the requirements
+	were met. (#404236)
+
+	While we are at it, fix some of the enable/with help strings and
+	checks; I should really clean up configure.in one of these days.
+
+2007-01-24  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in: Post release bump to 2.17.92.
+
+2007-01-24  Emmanuele Bassi  <ebassi@gnome.org>
+
+	Brown paper bag release, fixing an assertion
+	failure in gnome-screenshot.
+
+	* NEWS:
+	* README:
+	* configure.in: Release 2.17.91.
+
+2007-01-22  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in: Post release bump to 2.17.91.
+
+2007-01-22  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* NEWS:
+	* README:
+	* configure.in: Release 2.17.90.
+
 2007-01-08  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* configure.in: Post release bump to 2.17.2.

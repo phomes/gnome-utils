@@ -309,6 +309,8 @@ gdict_window_lookup_end_cb (GdictContext *context,
   gchar *message;
   gint count;
   GtkTreeIter iter;
+  GdictSource *source;
+  GdictContext *speller_context;
 
   count = window->current_definition;
 
@@ -327,6 +329,20 @@ gdict_window_lookup_end_cb (GdictContext *context,
 
   if (window->progress)
     gtk_widget_hide (window->progress);
+
+  /* we clone the context, so that the signals that it
+   * fires do not get caught by the signal handlers we
+   * use for getting the definitions.
+   */
+  source = gdict_source_loader_get_source (window->loader, window->source_name);
+  speller_context = gdict_source_get_context (source);
+  gdict_speller_set_context (GDICT_SPELLER (window->speller), speller_context);
+  g_object_unref (speller_context);
+  g_object_unref (source);
+
+  /* search for similar words */
+  gdict_speller_set_strategy (GDICT_SPELLER (window->speller), window->strategy);
+  gdict_speller_match (GDICT_SPELLER (window->speller), window->word);
 
   gtk_list_store_append (window->completion_model, &iter);
   gtk_list_store_set (window->completion_model, &iter,
@@ -1337,8 +1353,7 @@ static void
 sidebar_closed_cb (GdictSidebar *sidebar,
 		   GdictWindow  *window)
 {
-  gtk_widget_hide (window->sidebar_frame);
-  window->sidebar_visible = FALSE;
+  gdict_window_set_sidebar_visible (window, FALSE); 
 }
 
 static void
@@ -1796,9 +1811,11 @@ gdict_window_constructor (GType                  type,
 
   gtk_paned_set_position (GTK_PANED (handle),
 		          GTK_WIDGET (window)->allocation.width - sidebar_width);
-  gdict_sidebar_view_page (GDICT_SIDEBAR (window->sidebar), sidebar_page);
-
-  g_free (sidebar_page);
+  if (sidebar_page)
+    {
+      gdict_sidebar_view_page (GDICT_SIDEBAR (window->sidebar), sidebar_page);
+      g_free (sidebar_page);
+    }
 
   g_signal_connect (window, "delete-event",
 		    G_CALLBACK (gdict_window_delete_event_cb),

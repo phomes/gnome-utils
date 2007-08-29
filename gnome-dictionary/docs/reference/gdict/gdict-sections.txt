@@ -1,11 +1,9 @@
 <SECTION>
 <FILE>gdict-client-context</FILE>
-GdictClientContextPrivate
-GDICT_CLIENT_CONTEXT_ERROR
-GdictClientContextError
-gdict_client_context_error_quark
 <TITLE>GdictClientContext</TITLE>
 GdictClientContext
+GdictClientContextClass
+GdictClientContextError
 gdict_client_context_new
 gdict_client_context_set_hostname
 gdict_client_context_get_hostname
@@ -14,70 +12,79 @@ gdict_client_context_get_port
 gdict_client_context_set_client
 gdict_client_context_get_client
 <SUBSECTION Standard>
+GdictContext
 GDICT_CLIENT_CONTEXT
 GDICT_IS_CLIENT_CONTEXT
 GDICT_TYPE_CLIENT_CONTEXT
 gdict_client_context_get_type
 GDICT_CLIENT_CONTEXT_CLASS
 GDICT_CLIENT_CONTEXT_GET_CLASS
+GDICT_CLIENT_CONTEXT_ERROR
+gdict_client_context_error_quark
+<SUBSECTION Private>
+GdictClientContextPrivate
 </SECTION>
 
 <SECTION>
 <FILE>gdict-context</FILE>
-GDICT_TYPE_DATABASE
-GDICT_TYPE_STRATEGY
-GDICT_TYPE_MATCH
-GDICT_TYPE_DEFINITION
-GdictDatabase
-GdictStrategy
-GdictMatch
-GdictDefinition
-GdictContext
+<TITLE>GdictContext</TITLE>
 GdictContextIface
-GDICT_CONTEXT_ERROR
 GdictContextError
-gdict_context_error_quark
-gdict_database_ref
-gdict_database_unref
-gdict_database_get_name
-gdict_database_get_full_name
-gdict_strategy_get_type
-gdict_strategy_ref
-gdict_strategy_unref
-gdict_strategy_get_name
-gdict_strategy_get_description
-gdict_match_get_type
-gdict_match_ref
-gdict_match_unref
-gdict_match_get_word
-gdict_match_get_database
-gdict_definition_get_type
-gdict_definition_ref
-gdict_definition_unref
-gdict_definition_get_total
-gdict_definition_get_word
-gdict_definition_get_database
-gdict_definition_get_text
-gdict_context_get_type
 gdict_context_set_local_only
 gdict_context_get_local_only
 gdict_context_lookup_databases
 gdict_context_lookup_strategies
 gdict_context_match_word
 gdict_context_define_word
+<SUBSECTION>
+GdictDatabase
+gdict_database_ref
+gdict_database_unref
+gdict_database_get_name
+gdict_database_get_full_name
+<SUBSECTION>
+GdictStrategy
+gdict_strategy_ref
+gdict_strategy_unref
+gdict_strategy_get_name
+gdict_strategy_get_description
+<SUBSECTION>
+GdictMatch
+gdict_match_ref
+gdict_match_unref
+gdict_match_get_word
+gdict_match_get_database
+<SUBSECTION>
+GdictDefinition
+gdict_definition_ref
+gdict_definition_unref
+gdict_definition_get_total
+gdict_definition_get_word
+gdict_definition_get_database
+gdict_definition_get_text
 <SUBSECTION Standard>
+GDICT_TYPE_DATABASE
+GDICT_TYPE_STRATEGY
+GDICT_TYPE_MATCH
+GDICT_TYPE_DEFINITION
 GDICT_CONTEXT
 GDICT_IS_CONTEXT
 GDICT_TYPE_CONTEXT
+gdict_context_get_type
 gdict_database_get_type
+gdict_definition_get_type
+gdict_match_get_type
+gdict_strategy_get_type
 GDICT_CONTEXT_GET_IFACE
+GDICT_CONTEXT_ERROR
+gdict_context_error_quark
 </SECTION>
 
 <SECTION>
 <FILE>gdict-database-chooser</FILE>
-GdictDatabaseChooserPrivate
 <TITLE>GdictDatabaseChooser</TITLE>
 GdictDatabaseChooser
+GdictDatabaseChooserClass
 gdict_database_chooser_new
 gdict_database_chooser_new_with_context
 gdict_database_chooser_get_context
@@ -87,6 +94,11 @@ gdict_database_chooser_count_databases
 gdict_database_chooser_has_database
 gdict_database_chooser_refresh
 gdict_database_chooser_clear
+gdict_database_chooser_add_button
+gdict_database_chooser_get_current_database
+gdict_database_chooser_select_database
+gdict_database_chooser_set_current_database
+gdict_database_chooser_unselect_database
 <SUBSECTION Standard>
 GDICT_DATABASE_CHOOSER
 GDICT_IS_DATABASE_CHOOSER
@@ -95,13 +107,15 @@ gdict_database_chooser_get_type
 GDICT_DATABASE_CHOOSER_CLASS
 GDICT_IS_DATABASE_CHOOSER_CLASS
 GDICT_DATABASE_CHOOSER_GET_CLASS
+<SUBSECTION Private>
+GdictDatabaseChooserPrivate
 </SECTION>
 
 <SECTION>
 <FILE>gdict-defbox</FILE>
-GdictDefboxPrivate
 <TITLE>GdictDefbox</TITLE>
 GdictDefbox
+GdictDefboxClass
 gdict_defbox_new
 gdict_defbox_new_with_context
 gdict_defbox_set_context
@@ -121,6 +135,7 @@ gdict_defbox_find_next
 gdict_defbox_find_previous
 gdict_defbox_set_font_name
 gdict_defbox_get_font_name
+gdict_defbox_get_selected_word
 <SUBSECTION Standard>
 GDICT_DEFBOX
 GDICT_IS_DEFBOX
@@ -129,32 +144,15 @@ gdict_defbox_get_type
 GDICT_DEFBOX_CLASS
 GDICT_IS_DEFBOX_CLASS
 GDICT_DEFBOX_GET_CLASS
-</SECTION>
-
-<SECTION>
-<FILE>gdict-entry</FILE>
-GdictEntryPrivate
-<TITLE>GdictEntry</TITLE>
-GdictEntry
-gdict_entry_new
-gdict_entry_new_with_context
-gdict_entry_set_context
-gdict_entry_get_context
-<SUBSECTION Standard>
-GDICT_ENTRY
-GDICT_IS_ENTRY
-GDICT_TYPE_ENTRY
-gdict_entry_get_type
-GDICT_ENTRY_CLASS
-GDICT_IS_ENTRY_CLASS
-GDICT_ENTRY_GET_CLASS
+<SUBSECTION Private>
+GdictDefboxPrivate
 </SECTION>
 
 <SECTION>
 <FILE>gdict-source-loader</FILE>
-GdictSourceLoaderPrivate
 <TITLE>GdictSourceLoader</TITLE>
 GdictSourceLoader
+GdictSourceLoaderClass
 gdict_source_loader_new
 gdict_source_loader_update
 gdict_source_loader_add_search_path
@@ -171,17 +169,16 @@ gdict_source_loader_get_type
 GDICT_SOURCE_LOADER_CLASS
 GDICT_IS_SOURCE_LOADER_CLASS
 GDICT_SOURCE_LOADER_GET_CLASS
+<SUBSECTION Private>
+GdictSourceLoaderPrivate
 </SECTION>
 
 <SECTION>
 <FILE>gdict-source</FILE>
-GdictSourcePrivate
-GdictSourceTransport
-GDICT_SOURCE_ERROR
-GdictSourceError
-gdict_source_error_quark
 <TITLE>GdictSource</TITLE>
+GdictSourceError
 GdictSource
+GdictSourceClass
 gdict_source_new
 gdict_source_load_from_file
 gdict_source_load_from_data
@@ -194,6 +191,7 @@ gdict_source_set_database
 gdict_source_get_database
 gdict_source_set_strategy
 gdict_source_get_strategy
+GdictSourceTransport
 gdict_source_set_transport
 gdict_source_set_transportv
 gdict_source_get_transport
@@ -207,13 +205,17 @@ gdict_source_get_type
 GDICT_SOURCE_CLASS
 GDICT_IS_SOURCE_CLASS
 GDICT_SOURCE_GET_CLASS
+GDICT_SOURCE_ERROR
+gdict_source_error_quark
+<SUBSECTION Private>
+GdictSourcePrivate
 </SECTION>
 
 <SECTION>
 <FILE>gdict-speller</FILE>
-GdictSpellerPrivate
 <TITLE>GdictSpeller</TITLE>
 GdictSpeller
+GdictSpellerClass
 gdict_speller_new
 gdict_speller_new_with_context
 gdict_speller_set_context
@@ -234,21 +236,29 @@ gdict_speller_get_type
 GDICT_SPELLER_CLASS
 GDICT_IS_SPELLER_CLASS
 GDICT_SPELLER_GET_CLASS
+<SUBSECTION Private>
+GdictSpellerPrivate
 </SECTION>
 
 <SECTION>
 <FILE>gdict-strategy-chooser</FILE>
-GdictStrategyChooserPrivate
 <TITLE>GdictStrategyChooser</TITLE>
 GdictStrategyChooser
+GdictStrategyChooserClass
 gdict_strategy_chooser_new
 gdict_strategy_chooser_new_with_context
 gdict_strategy_chooser_get_context
 gdict_strategy_chooser_set_context
 gdict_strategy_chooser_get_strategies
 gdict_strategy_chooser_has_strategy
-gdict_strategy_chooser_set_strategy
-gdict_strategy_chooser_get_strategy
+gdict_strategy_chooser_add_button
+gdict_strategy_chooser_clear
+gdict_strategy_chooser_count_strategies
+gdict_strategy_chooser_get_current_strategy
+gdict_strategy_chooser_refresh
+gdict_strategy_chooser_select_strategy
+gdict_strategy_chooser_set_current_strategy
+gdict_strategy_chooser_unselect_strategy
 <SUBSECTION Standard>
 GDICT_STRATEGY_CHOOSER
 GDICT_IS_STRATEGY_CHOOSER
@@ -257,10 +267,13 @@ gdict_strategy_chooser_get_type
 GDICT_STRATEGY_CHOOSER_CLASS
 GDICT_IS_STRATEGY_CHOOSER_CLASS
 GDICT_STRATEGY_CHOOSER_GET_CLASS
+<SUBSECTION Private>
+GdictStrategyChooserPrivate
 </SECTION>
 
 <SECTION>
 <FILE>gdict-utils</FILE>
+<TITLE>Gdict Utilities</TITLE>
 GDICT_DEFAULT_DATABASE
 GDICT_DEFAULT_STRATEGY
 GDICT_DEFAULT_FONT_NAME
@@ -271,19 +284,8 @@ GDICT_IS_VALID_STATUS_CODE
 </SECTION>
 
 <SECTION>
-<FILE>gdict-debug</FILE>
-</SECTION>
-
-<SECTION>
-<FILE>gdict-private</FILE>
-</SECTION>
-
-<SECTION>
-<FILE>gdict</FILE>
-</SECTION>
-
-<SECTION>
 <FILE>gdict-version</FILE>
+<TITLE>Gdict Version Checking</TITLE>
 GDICT_MAJOR_VERSION
 GDICT_MINOR_VERSION
 GDICT_MICRO_VERSION

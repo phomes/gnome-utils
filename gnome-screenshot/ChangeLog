@@ -1,6 +1,85 @@
-2007-01-09  Dennis Cranston <dennis_cranston@yahoo.com>
+2007-08-23  Emmanuele Bassi  <ebassi@gnome.org>
 
-	* gnome-screenshoot.c:  Register "applets-screenshooter" in
+	* gnome-screenshot.c: Use g_get_user_special_dir() to find
+	out the Desktop directory. Use the temp directory as a final
+	fallback, instead of / (which won't be writable in most cases
+	and will utterly fail). (#455204, Luca Ferretti, Frederic Crozat)
+
+2007-08-04  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* screenshot-save.c: Make the temporary directory work on
+	multi-user setups by using a unique name. (#427870)
+
+2007-03-10  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* screenshot-dialog.c: Warn (in console) if g_filename_from_utf8()
+	fails to convert the screenshot file name in case we are not in
+	a utf8 locale, and fall back to the default screenshot file name,
+	to avoid eating the user's folders. (#411050, thanks to
+	Pascal Terjan for his detective work)
+
+2007-03-04  Emmanuele Bassi  <ebassi@gnome.org>
+	
+	* gnome-screenshot.c: Add call to gettext() in order to
+	translate the user visible name of the effect. (#413019,
+	reported by Funda Wang, based on a patch by Gabor Kelemen).
+
+2007-02-11  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* screenshot-shadow.c: Clean up some of the indentation;
+	use BILINEAR instead of NEAREST as the interpolation
+	algorithm, for better results.
+
+2007-01-25  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* gnome-screenshot.c: Another set of HIG fixes for the
+	interactive dialog: make the dialog not resizable; add more
+	spacing; add/update the mnemonics. (#400203, Christian Persch)
+
+2007-01-25  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* gnome-screenshot.c: Use an array of structures to hold the
+	border effects informations (id, nick, label) and iterate on
+	the array to fill up the model fed to the effects combo.
+
+2007-01-25  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* gnome-screenshot.c: Unref the GnomeProgram instance if you
+	cancel the screenshot in interactive mode; hide the dialog
+	inside the response callback, while the main loop is still
+	running, so that the screenshot functions can grab the desired
+	window instead of the (non-existing) interactive dialog.
+
+	* screenshot-save.[ch]:
+	* screenshot-utils.[ch]: Add license and copyright notice on
+	these files.
+
+2007-01-24  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* gnome-screenshot.c: Do not leak GnomeProgram instance
+	and don't free the GOptionContext we pass to
+	gnome_program_init(). (#400200, Christian Persch)
+
+2007-01-23  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* gnome-screenshot.c: Add a value for the "no effect" value
+	of the border_effect GConf key; add it to the effects combo
+	box.  (#399859)
+
+	* gnome-screenshot.schemas.in: Fix the description of the
+	border-effect key.
+
+2007-01-22  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* gnome-screenshot.c: Use symbolic names for the GConf keys;
+	move the frame creation of the interactive dialog into its
+	own function; add an "effects" frame containing a check button
+	for the "include window border" option and a combo box for
+	the effects on the screenshot.
+
+2007-01-09  Dennis Cranston  <dennis_cranston@yahoo.com>
+
+	* gnome-screenshot.c:  Register "applets-screenshooter" in
 	the icon factory so gtk_image_new_from_stock() works.  HIG
 	fixes for interactive dialog. (#394941)
 

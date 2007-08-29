@@ -1,33 +1,3 @@
-2007-08-29  Lin Ma  <Lin.Ma@Sun.COM>
-
-	reviewed by: <delete if not using a buddy>
-
-	* data/Makefile.am:
-	* data/gnome-dictionary.desktop.in.in:
-	* src/gdict-about.c: (gdict_show_about_dialog):
-	* src/gdict-app.c: (gdict_init):
-	* src/gdict-applet.c: (gdict_applet_init):
-
-2007-08-28  Emmanuele Bassi  <ebassi@gnome.org>
-
-	* src/gdict-about.c:
-	* src/gdict-app.c:
-	* src/gdict-applet.c:
-	* data/gnome-dictionary.desktop.in.in:
-	* data/Makefile.am: Use the gnome-icon-theme icon for the dictionary
-	instead of our own. (#470287, Michael Monreal)
-
-2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
-
-	* libgdict/gdict-client-context.c: Use g_shell_quote() to escape
-	the words to look up. (#432968)
-
-2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
-
-	* src/gdict-window.c (lookup_word): Remove leading and trailing
-	whitespace from the content of the lookup entry before feeding
-	it to the GdictContext. (#432968)
-
 2007-08-18  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* libgdict/gdict-client-context.c: Handle decomposed strings
@@ -112,7 +82,6 @@
 
 	* src/gdict-about.c: Fix C99-ism. (#376937, Jens Granseuer)
 
->>>>>>> .merge-right.r7603
 2007-01-12  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* libgdict/gdict-client-context.c: Add a timeout or 30 seconds

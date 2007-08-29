@@ -105,7 +105,10 @@ start_proc_on_dir (const gchar *dir)
 
 	if (!baobab_check_dir (dir))
 		return;
-
+		
+	if (iterstack !=NULL)
+		return;
+		
 	g_string_assign (baobab.last_scan_command, dir);
 	baobab.STOP_SCANNING = FALSE;
 	set_busy (TRUE);
@@ -154,6 +157,7 @@ start_proc_on_dir (const gchar *dir)
 	gtk_tree_view_columns_autosize (GTK_TREE_VIEW (baobab.tree_view));
 	baobab.STOP_SCANNING = TRUE;
 	g_queue_free (iterstack);
+	iterstack = NULL;
 	baobab.CONTENTS_CHANGED_DELAYED = FALSE;
 }
 
@@ -724,7 +728,16 @@ main (int argc, char *argv[])
 
 	baobab_get_filesystem (&g_fs);
 	if (g_fs.total == 0) {
-		g_print("No mount points detected! Aborting...\n");
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+                                  GTK_DIALOG_DESTROY_WITH_PARENT,
+                                  GTK_MESSAGE_ERROR,
+                                  GTK_BUTTONS_CLOSE,
+                                  "Could not detect any mount point.");
+                gtk_message_dialog_format_secondary_text
+                                                        (GTK_MESSAGE_DIALOG(dialog),
+                                                         "Without mount points disk usage cannot be analyzed.");
+ 		gtk_dialog_run (GTK_DIALOG (dialog));
+ 		gtk_widget_destroy (dialog);
 		goto closing;
 	}
 

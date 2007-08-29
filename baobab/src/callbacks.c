@@ -75,6 +75,23 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 		"Igalia (rings-chart widget) <www.igalia.com>",
 		NULL
 	};
+	
+	const gchar *license =
+    	"This program is free software; you can redistribute it and/or "
+    	"modify it under the terms of the GNU General Public License as "
+    	"published by the Free Software Foundation; either version 2 of "
+    	"the License, or (at your option) any later version.\n"
+    	"\n"
+    	"This program is distributed in the hope that it will be useful, "
+    	"but WITHOUT ANY WARRANTY; without even the implied warranty of "
+    	"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU "
+    	"General Public License for more details.\n"
+    	"\n"
+    	"You should have received a copy of the GNU General Public License "
+    	"along with this program; if not, write to the Free Software "
+    	"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA "
+    	"02111-1307, USA.\n";
+
 
 	static const gchar copyright[] = "Fabio Marzocca <thesaltydog@gmail.com> \xc2\xa9 2005-2006";
 
@@ -85,10 +102,12 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 			       "version", VERSION,
 			       "copyright", copyright,
 			       "logo-icon-name", "baobab",
-			       "license", "GPL",
+			       "license", license,
 			       "authors", authors, 
 			       "translator-credits",
-			       _("translator-credits"), NULL);
+			       _("translator-credits"), 
+			       "wrap-license", TRUE,
+			        NULL);
 }
 
 void
@@ -299,6 +318,9 @@ on_ck_allocated_activate (GtkCheckMenuItem *checkmenuitem,
 		cursor = gdk_cursor_new (GDK_WATCH);
 		gdk_window_set_cursor (baobab.window->window, cursor);
 	}
+
+	baobab_treeview_show_allocated_size (baobab.tree_view,
+					     baobab.show_allocated);
 
 	set_busy (TRUE);
 	set_statusbar (_("Calculating percentage bars..."));

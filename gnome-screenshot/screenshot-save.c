@@ -1,3 +1,22 @@
+/* screenshot-save.c - image saving functions for GNOME Screenshot
+ *
+ * Copyright (C) 2001-2006  Jonathan Blandford <jrb@alum.mit.edu>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this program; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ */
+
 #include <config.h>
 #include <gnome.h>
 #include <errno.h>
@@ -123,17 +142,16 @@ make_temp_directory (void)
   i = 0;
   do
     {
-      gchar *tmp_dir = g_strdup_printf ("%u-%d",
+      gchar *tmp_dir = g_strdup_printf ("gnome-screenshot.%u.%d",
                                         (unsigned int) getpid (),
                                         i++);
       
       dir_name = g_build_filename (g_get_tmp_dir (),
-                                   "gnome-screenshot",
                                    tmp_dir,
                                    NULL);
       g_free (tmp_dir);
 
-      result = g_mkdir_with_parents (dir_name, 0700);
+      result = g_mkdir_with_parents (dir_name, 0777);
       if (result < 0)
         {
           g_free (dir_name);
