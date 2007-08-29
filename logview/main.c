@@ -88,7 +88,7 @@ save_session_cb (GnomeClient        *gnome_client,
 	gchar **argv;
 	gint numlogs;
 	GSList *logs;
-	gint i;
+	gint i = 0;
 
 	g_assert (LOGVIEW_IS_WINDOW (logview));
 	numlogs = logview_count_logs (logview);
@@ -97,7 +97,7 @@ save_session_cb (GnomeClient        *gnome_client,
 	 * and a NULL pointer to end the list
 	 */
 	argv = g_new0 (gchar *, numlogs + 2);
-	argv[0] = g_get_prgname();
+	argv[i++] = g_get_prgname();
 
 	for (i = 1, logs = logview->logs; logs != NULL; logs = logs->next) {
 		Log *log = (Log *) logs->data;
