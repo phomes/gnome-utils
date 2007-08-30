@@ -36,7 +36,8 @@ additional_DATA  = \
 	grablogs.conf	\
 	pipelog.conf
 
-#EXTRA_DIST = 
+EXTRA_DIST = \
+	$(additional_DATA)
 
 #
 # This part allows people to build their own plugins in here.

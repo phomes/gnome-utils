@@ -20,6 +20,8 @@
 #ifndef __LOG_REPAINT_H__
 #define __LOG_REPAINT_H__
 
+#include "logview.h"
+
 enum {
 	MESSAGE = 0,
 	DAY_POINTER,

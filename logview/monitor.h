@@ -20,6 +20,7 @@
 #ifndef __LOG_MONITOR_H__
 #define __LOG_MONITOR_H__
 
+void monitor_set_window (gpointer win);
 void monitor_start (Log *log);
 void monitor_stop (Log *log);
 

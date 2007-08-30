@@ -42,19 +42,19 @@ struct _LogviewIFaceIO {
 
 };
 
-GType logview_iface_io_get_type (void);
+extern GType logview_iface_io_get_type (void) G_GNUC_CONST;
 
 /* for logview application internal usage */
-gboolean logi_can_monitor (LogviewIIO *self);
-void logi_extract_filepath (LogviewIIO *self,
+extern gboolean logi_can_monitor (LogviewIIO *self);
+extern void logi_extract_filepath (LogviewIIO *self,
 			    gchar** dirname, gchar** filename);
-gboolean logi_has_updated (LogviewIIO *self);
-void logi_update (LogviewIIO *self);
-size_t logi_read (LogviewIIO *self, void* buffer, size_t size);
-off_t logi_seek (LogviewIIO *self, off_t offset, int whence);
-off_t logi_tell (LogviewIIO *self);
-off_t logi_get_size (LogviewIIO* self);
-time_t logi_get_modified_time (LogviewIIO* self);
+extern gboolean logi_has_updated (LogviewIIO *self);
+extern void logi_update (LogviewIIO *self);
+extern size_t logi_read (LogviewIIO *self, void* buffer, size_t size);
+extern off_t logi_seek (LogviewIIO *self, off_t offset, int whence);
+extern off_t logi_tell (LogviewIIO *self);
+extern off_t logi_get_size (LogviewIIO* self);
+extern time_t logi_get_modified_time (LogviewIIO* self);
 
 G_END_DECLS
 

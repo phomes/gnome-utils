@@ -1,3 +1,47 @@
+2007-08-30  Lin Ma  <Lin.Ma@Sun.COM>
+
+	* Makefile.am:
+	Build a noinst lib for buiding docs.
+	* docs/reference/logview/Makefile.am:
+	* docs/reference/logview/logview-docs.sgml:
+	* docs/reference/logview/logview.types:
+	Fixed doc problems.
+	* log_repaint.h:
+	* loglist.c: (loglist_find_directory), (loglist_find_log),
+	(loglist_get_log_iter), (loglist_unbold), (loglist_bold_log),
+	(loglist_remove_log), (loglist_add_directory), (loglist_add_log),
+	(loglist_selection_changed), (loglist_init), (loglist_finalize),
+	(loglist_class_init), (loglist_set_property), (loglist_new):
+	* loglist.h:
+	* logrtns.c: (log_set_property), (log_get_property),
+	(log_class_init), (log_get_type), (log_unbold_rows):
+	* logview-iface-collector.c: (logview_iface_base_init),
+	(logview_iface_class_init), (logview_iface_collector_get_type):
+	* logview-iface-collector.h:
+	* logview-iface-io.c: (logview_iface_base_init),
+	(logview_iface_class_init), (logview_iface_io_get_type):
+	* logview-iface-io.h:
+	* logview-iface-view.c: (logview_iface_base_init),
+	(logview_iface_class_init), (logview_iface_view_get_type):
+	* logview-iface-view.h:
+	* logview-iface.c: (logview_iface_base_init),
+	(logview_iface_class_init), (logview_iface_get_type):
+	* logview-log.h:
+	* logview-plugin-manager.c: (pluginmgr_instance_init),
+	(load_modules), (pluginmgr_class_init),
+	(pluginmgr_new_log_from_path), (pluginmgr_plugin_amount):
+	* logview-plugin-manager.h:
+	* logview.c: (logview_store_visible_range), (logview_add_log),
+	(logview_init):
+	* misc.c: (error_dialog_run), (error_dialog_show),
+	(get_plugin_paths):
+	* misc.h:
+	* monitor.c: (monitor_callback), (monitor_set_window):
+	* monitor.h:
+	Refactor for building the noinst lib.
+	* plugins/Makefile.am:
+	Added default configures in extra_dist.
+
 2007-08-29  Lin Ma  <Lin.Ma@Sun.COM>
 
 	* Merged trunk r7595.

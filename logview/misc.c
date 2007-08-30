@@ -53,6 +53,9 @@
 #include "logview-debug.h"
 #include "misc.h"
 
+#define LOGVIEW_DATA_PLUGIN_PATH LOGVIEWPLUGINDIR
+#define LOGVIEW_USER_PLUGIN_PATH_SUFFIX LOGVIEW_HOME_SUFFIX"/plugins"
+
 char *error_main = N_("One file or more could not be opened");
 static gboolean queue_err_messages = FALSE;
 static GSList *msg_queue_main = NULL, *msg_queue_sec = NULL;
@@ -62,7 +65,7 @@ const char *month[12] =
  N_("November"), N_("December")};
 
 static void
-error_dialog_run (GtkWidget *window, const char *main, char *secondary)
+error_dialog_run (GtkWidget *window, const char *main, const char *secondary)
 {
 	GtkWidget *dialog;
 	dialog = gtk_message_dialog_new_with_markup (GTK_WINDOW (window),
@@ -78,7 +81,7 @@ error_dialog_run (GtkWidget *window, const char *main, char *secondary)
 }
 
 void
-error_dialog_show (GtkWidget *window, char *main, char *secondary)
+error_dialog_show (GtkWidget *window, const char *main, const char *secondary)
 {
 	if (queue_err_messages) {
 		msg_queue_main = g_slist_append (msg_queue_main, g_strdup (main));
@@ -422,7 +425,46 @@ processor_arch (void)
 G_CONST_RETURN GSList*
 get_plugin_paths()
 {
-	return pluginmgr_get_plugin_paths ();
+	static GSList *plugin_paths = NULL;
+	struct stat buf;
+	gchar* user_plugin_path = NULL;
+
+	if (plugin_paths)
+		return plugin_paths;
+
+	/* get user plugin path */
+	user_plugin_path = g_build_path (G_DIR_SEPARATOR_S,
+					 (gchar*)g_get_home_dir (),
+					 LOGVIEW_USER_PLUGIN_PATH_SUFFIX,
+					 processor_arch (),
+					 NULL);
+	if (stat (user_plugin_path, &buf) == 0) {
+		if (S_ISDIR (buf.st_mode)) {
+			plugin_paths = g_slist_append (plugin_paths,
+						       user_plugin_path);
+		} else {
+			g_free (user_plugin_path);
+		}
+	}
+	else if (errno == ENOENT &&
+		 g_mkdir_with_parents (user_plugin_path, get_umask()) == 0) {
+			plugin_paths = g_slist_append (plugin_paths,
+						       user_plugin_path);
+	}
+	else {
+		LV_ERR ("err|create user plugin path: %s", user_plugin_path);
+		g_free (user_plugin_path);
+		return NULL;
+	}
+	
+	/* get default plugin path */
+	if (stat (LOGVIEW_DATA_PLUGIN_PATH, &buf) == 0) {
+		if (S_ISDIR (buf.st_mode)) {
+			plugin_paths = g_slist_append(plugin_paths,
+						      (gpointer*)g_strdup (LOGVIEW_DATA_PLUGIN_PATH));
+		}
+	}
+	return plugin_paths;
 }
 
 /*

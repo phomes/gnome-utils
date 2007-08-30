@@ -200,7 +200,7 @@ void log_write_lines_range (Log *self, gchar **lines, gint start, gint end);
 void log_write_date (Log *self, GDate *date);
 void log_write_day (Log *self, Day *day);
 
-GType log_get_type (void);
+extern GType log_get_type (void) G_GNUC_CONST;
 
 G_END_DECLS
 

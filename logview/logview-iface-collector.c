@@ -5,14 +5,12 @@
 
 #include "logview-iface.h"
 #include "logview-iface-collector.h"
-#include "logview-plugin-manager.h"
 #include "logview-debug.h"
 
 static void
 logview_iface_base_init (gpointer gclass)
 {
 	static gboolean initialized = FALSE;
-	//LV_MARK;
 	if (!initialized) {
 		initialized = TRUE;
 	}
@@ -22,7 +20,6 @@ static void
 logview_iface_class_init (gpointer g_class, gpointer g_class_data)
 {
 	LogviewIFaceCollector *self = (LogviewIFaceCollector *)g_class;
-	LV_MARK;
 	self->config_log = NULL;
 	self->config_log_from_path = NULL;
 	self->config_log = NULL;
@@ -32,7 +29,6 @@ GType
 logview_iface_collector_get_type (void)
 {
 	static GType type = 0;
-	LV_MARK;
 	if (type == 0) {
 		static const GTypeInfo info = {
 			/* You fill this structure. */
@@ -49,7 +45,6 @@ logview_iface_collector_get_type (void)
 		type = g_type_register_static (G_TYPE_INTERFACE,
 					       g_intern_static_string ("LogviewIFaceCollectorType"),
 					       &info, 0);
-		PluginInterface_register (PF_LOG_COLLECTOR, type);
 		g_type_interface_add_prerequisite (type, LOGVIEW_TYPE_IFACE);
 	}
 	return type;

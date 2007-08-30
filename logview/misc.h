@@ -24,7 +24,7 @@
 
 #define LOGVIEW_HOME_SUFFIX ".gnome2/gnome-system-log"
 
-void error_dialog_show (GtkWidget *window, char *main, char *secondary);
+void error_dialog_show (GtkWidget *window, const char *main, const char *secondary);
 void error_dialog_queue (gboolean do_queue);
 void error_dialog_show_queued (void);
 char* error_system_string (void);

@@ -1,6 +1,6 @@
 # Process this file with automake to produce Makefile.in
 
-SUBDIRS = plugins help docs 
+SUBDIRS = . plugins help docs 
 
 gnome_system_log_includedir = $(includedir)/gnome-system-log
 gnome_system_log_include_HEADERS = \
@@ -36,12 +36,8 @@ gnome_system_log_SOURCES = 	\
 	calendar.h		\
 	log_repaint.c		\
 	log_repaint.h		\
-	logrtns.c		\
-	logrtns.h		\
 	logview.c		\
 	logview.h		\
-	misc.c			\
-	misc.h			\
 	monitor.c       	\
 	monitor.h		\
 	userprefs.c             \
@@ -50,14 +46,27 @@ gnome_system_log_SOURCES = 	\
 	logview-findbar.h   \
 	loglist.c       \
 	loglist.h	\
-	logview-plugin.c		\
-	logview-plugin.h		\
 	logview-module.c	\
 	logview-module.h	\
-	logview-plugin-manager.c	\
-	logview-plugin-manager.h	\
 	logview-plugin-list.c	\
 	logview-plugin-list.h	\
+	logview-plugin.c		\
+	logview-plugin.h		\
+	logview-plugin-manager.c	\
+	logview-plugin-manager.h	\
+	$(NULL)
+
+gnome_system_log_LDADD = \
+	$(GNOME_UTILS_LIBS)	\
+	$(GMODULE_LIBS)		\
+	libgnome-system-log.la
+
+noinst_LTLIBRARIES = libgnome-system-log.la
+libgnome_system_log_la_SOURCES = \
+	logrtns.c		\
+	logrtns.h		\
+	misc.c			\
+	misc.h			\
 	logview-iface.c		\
 	logview-iface.h		\
 	logview-iface-io.c		\
@@ -71,7 +80,7 @@ gnome_system_log_SOURCES = 	\
 	logview-log.h		\
 	$(NULL)
 
-gnome_system_log_LDADD = \
+libgnome_system_log_la_LIBADD = \
 	$(GNOME_UTILS_LIBS)	\
 	$(GMODULE_LIBS)
 

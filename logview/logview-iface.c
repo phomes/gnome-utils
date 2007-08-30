@@ -11,7 +11,6 @@ static void
 logview_iface_base_init (gpointer gclass)
 {
 	static gboolean initialized = FALSE;
-	//LV_MARK;
 	if (!initialized) {
 		initialized = TRUE;
 	}
@@ -21,7 +20,6 @@ static void
 logview_iface_class_init (gpointer g_class, gpointer g_class_data)
 {
 	LogviewInterface *self = (LogviewInterface *)g_class;
-	//LV_MARK;
 	self->can_handle = NULL;
 }
 
@@ -29,7 +27,6 @@ GType
 logview_iface_get_type (void)
 {
 	static GType type = 0;
-	//LV_MARK;
 	if (type == 0) {
 		static const GTypeInfo info = {
 			/* You fill this structure. */

@@ -27,12 +27,11 @@
 
 #define BOLD_LOG_TIME	5000
 
-struct LogListPriv {
+struct LogListPrv {
 	GtkTreeStore *model;
+	gpointer window;
+	guint unbold_event;
 };
-
-static GObjectClass *parent_class;
-GType loglist_get_type (void);
 
 enum {
 	LOG_NAME = 0,
@@ -40,6 +39,18 @@ enum {
 	LOG_WEIGHT,
 	LOG_WEIGHT_SET
 };
+
+enum {
+	PROP_0 = 0,
+	PROP_WINDOW
+};
+
+static void loglist_set_property (GObject      *object,
+				  guint         property_id,
+				  const GValue *value,
+				  GParamSpec   *pspec);
+
+G_DEFINE_TYPE (LogList, loglist, GTK_TYPE_TREE_VIEW)
 
 static GtkTreePath *
 loglist_find_directory (LogList *list, gchar *dir)
@@ -51,7 +62,7 @@ loglist_find_directory (LogList *list, gchar *dir)
 	
 	g_assert (LOG_IS_LIST (list));
 
-	model = GTK_TREE_MODEL (list->priv->model);
+	model = GTK_TREE_MODEL (list->prv->model);
 	if (!gtk_tree_model_get_iter_first (model, &iter))
 		return NULL;
 	
@@ -85,7 +96,7 @@ loglist_find_log (LogList *list, Log *log)
 	g_assert (log != NULL);
 	LV_MARK;
 
-	model = GTK_TREE_MODEL (list->priv->model);
+	model = GTK_TREE_MODEL (list->prv->model);
 	if (!gtk_tree_model_get_iter_first (model, &iter))
 		return NULL;
 	
@@ -112,48 +123,30 @@ loglist_get_log_iter (LogList *list, Log *log, GtkTreeIter *logiter)
 
     path = loglist_find_log (list, log);
     if (path) {
-	    model = GTK_TREE_MODEL (list->priv->model);
+	    model = GTK_TREE_MODEL (list->prv->model);
 	    gtk_tree_model_get_iter (model, logiter, path);
 	    gtk_tree_path_free (path);
     }
 }
 
-void
-loglist_unbold_log (LogList *list, Log *log)
-{
-    GtkTreeModel *model;
-    GtkTreeIter iter;
-    LV_MARK;
-
-    g_return_if_fail (LOG_IS_LIST (list));
-    g_return_if_fail (log != NULL);
-
-    model = GTK_TREE_MODEL (list->priv->model);
-
-    loglist_get_log_iter (list, log, &iter);
-    gtk_tree_store_set (GTK_TREE_STORE (model), &iter,
-			LOG_WEIGHT_SET, FALSE, -1);
-}
-
 static gboolean
-loglist_unbold (Log *self)
+loglist_unbold (LogList *self)
 {
-	LogviewWindow *logview;
-	LogList *list;
+	LogviewWindow *logview = LOGVIEW_WINDOW(self->prv->window);
+	GtkTreeModel *model;
+	GtkTreeIter iter;
 	LV_MARK;
 
 	g_return_val_if_fail (self != NULL, FALSE);
 
-	g_object_get (G_OBJECT (self),
-		      "window", &logview,
-		      NULL);
+	model = GTK_TREE_MODEL (self->prv->model);
 
-	/* If the log to unbold is not displayed, still wait */
-	if (logview_get_active_log (logview) != self)
-		return TRUE;
+	loglist_get_log_iter (self, logview_get_active_log (logview),
+			      &iter);
+	gtk_tree_store_set (GTK_TREE_STORE (model), &iter,
+			    LOG_WEIGHT_SET, FALSE, -1);
 
-	list = logview_get_loglist (logview);
-	loglist_unbold_log (list, self);
+	self->prv->unbold_event = 0;
 	return FALSE;
 }
 
@@ -162,16 +155,13 @@ loglist_bold_log (LogList *list, Log *log)
 {
     GtkTreeModel *model;
     GtkTreeIter iter;
-    LogviewWindow *logview;
+    LogviewWindow *logview = LOGVIEW_WINDOW(list->prv->window);
     LV_MARK;
     
     g_return_if_fail (LOG_IS_LIST (list));
     g_return_if_fail (log != NULL);
 
-    g_object_get (G_OBJECT (log),
-		  "window", &logview,
-		  NULL);
-    model = GTK_TREE_MODEL (list->priv->model);
+    model = GTK_TREE_MODEL (list->prv->model);
 
     loglist_get_log_iter (list, log, &iter);
     gtk_tree_store_set (GTK_TREE_STORE (model), &iter, 
@@ -212,15 +202,15 @@ loglist_remove_log (LogList *list, Log *log)
 
 	g_object_get (G_OBJECT (log), "path", &name, NULL);
 	loglist_get_log_iter (list, log, &iter);
-	gtk_tree_model_iter_parent (GTK_TREE_MODEL (list->priv->model), &parent, &iter);
+	gtk_tree_model_iter_parent (GTK_TREE_MODEL (list->prv->model), &parent, &iter);
 
-	if (gtk_tree_store_remove (list->priv->model, &iter)) {
+	if (gtk_tree_store_remove (list->prv->model, &iter)) {
 		GtkTreeSelection *selection;
 		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (list));
 		gtk_tree_selection_select_iter (selection, &iter);
 	} else {
-		if (!gtk_tree_model_iter_has_child (GTK_TREE_MODEL (list->priv->model), &parent)) {
-			if (gtk_tree_store_remove (list->priv->model, &parent)) {
+		if (!gtk_tree_model_iter_has_child (GTK_TREE_MODEL (list->prv->model), &parent)) {
+			if (gtk_tree_store_remove (list->prv->model, &parent)) {
 				GtkTreeSelection *selection;
 				selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (list));
 				gtk_tree_selection_select_iter (selection, &parent);
@@ -233,8 +223,8 @@ loglist_remove_log (LogList *list, Log *log)
 void
 loglist_add_directory (LogList *list, gchar *dirname, GtkTreeIter *iter)
 {
-	gtk_tree_store_append (list->priv->model, iter, NULL);
-	gtk_tree_store_set (list->priv->model, iter,
+	gtk_tree_store_append (list->prv->model, iter, NULL);
+	gtk_tree_store_set (list->prv->model, iter,
 			    LOG_NAME, dirname, LOG_POINTER, NULL, -1);
 }
 
@@ -251,13 +241,13 @@ loglist_add_log (LogList *list, Log *log)
 	log_extract_filepath (log, &dirname, &filename);
 	path = loglist_find_directory (list, dirname);
 	if (path) {
-		gtk_tree_model_get_iter (GTK_TREE_MODEL (list->priv->model), &iter, path);
+		gtk_tree_model_get_iter (GTK_TREE_MODEL (list->prv->model), &iter, path);
 		gtk_tree_path_free (path);
 	} else
 		loglist_add_directory (list, dirname, &iter);
 
-	gtk_tree_store_append (list->priv->model, &child_iter, &iter);
-	gtk_tree_store_set (list->priv->model, &child_iter, 
+	gtk_tree_store_append (list->prv->model, &child_iter, &iter);
+	gtk_tree_store_set (list->prv->model, &child_iter, 
                         LOG_NAME, filename, LOG_POINTER, log, -1);
 
 	if (GTK_WIDGET_VISIBLE (GTK_WIDGET (list)))
@@ -268,15 +258,15 @@ loglist_add_log (LogList *list, Log *log)
 }
 
 static void
-loglist_selection_changed (GtkTreeSelection *selection, LogviewWindow *logview)
+loglist_selection_changed (GtkTreeSelection *selection, LogList *self)
 {
+	LogviewWindow *logview = LOGVIEW_WINDOW(self->prv->window);
 	GtkTreeModel *model;
 	GtkTreeIter iter;
 	gboolean bold;
 	Log *log;
 
 	LV_MARK;
-	g_assert (LOGVIEW_IS_WINDOW (logview));
 	g_assert (GTK_IS_TREE_SELECTION (selection));
 
 	if (!gtk_tree_selection_get_selected (selection, &model, &iter)) {
@@ -287,22 +277,22 @@ loglist_selection_changed (GtkTreeSelection *selection, LogviewWindow *logview)
 	gtk_tree_model_get (model, &iter, 
 			    LOG_POINTER, &log, 
 			    LOG_WEIGHT_SET, &bold, -1);
+	/* there is a differnt selection before,
+	   check if there is a pending loglist_unbold */
+	if (logview_get_active_log (logview) != log) {
+		if (self->prv->unbold_event > 0) {
+			gboolean ret = FALSE;
+			ret = g_source_remove (self->prv->unbold_event);
+			g_assert (ret);
+			self->prv->unbold_event = 0;
+		}
+	}
 	logview_select_log (logview, log);
-	if (bold)
-		g_timeout_add (BOLD_LOG_TIME, (GSourceFunc) loglist_unbold, log);
-}
-
-void
-loglist_connect (LogList *list, LogviewWindow *logview)
-{
-	GtkTreeSelection *selection;
-
-	g_return_if_fail (LOG_IS_LIST (list));
-	g_return_if_fail (LOGVIEW_IS_WINDOW (logview));
-
-	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (list));
-	g_signal_connect (G_OBJECT (selection), "changed",
-		G_CALLBACK (loglist_selection_changed), logview);
+	if (bold) {
+		self->prv->unbold_event = 
+			g_timeout_add (BOLD_LOG_TIME,
+				       (GSourceFunc) loglist_unbold, self);
+	}
 }
 
 static void 
@@ -313,16 +303,18 @@ loglist_init (LogList *list)
 	GtkTreeSelection *selection;
 	GtkCellRenderer *cell;
 
-	list->priv = g_new0 (LogListPriv, 1);
+	list->prv = g_new0 (LogListPrv, 1);
 
 	model = gtk_tree_store_new (4, G_TYPE_STRING, G_TYPE_POINTER, G_TYPE_INT, G_TYPE_BOOLEAN);
 	gtk_tree_view_set_model (GTK_TREE_VIEW (list), GTK_TREE_MODEL (model));
-	list->priv->model = model;
+	list->prv->model = model;
 	gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (list), FALSE);
 	g_object_unref (G_OBJECT (model));
 
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (list));
 	gtk_tree_selection_set_mode (selection, GTK_SELECTION_BROWSE);
+	g_signal_connect (G_OBJECT (selection), "changed",
+			  G_CALLBACK (loglist_selection_changed), list);
     
 	cell = gtk_cell_renderer_text_new ();
 	column = gtk_tree_view_column_new ();
@@ -333,7 +325,7 @@ loglist_init (LogList *list)
 					     "weight", LOG_WEIGHT,
 					     NULL);
 
-	gtk_tree_sortable_set_sort_column_id (GTK_TREE_SORTABLE(list->priv->model), 0, GTK_SORT_ASCENDING);
+	gtk_tree_sortable_set_sort_column_id (GTK_TREE_SORTABLE(list->prv->model), 0, GTK_SORT_ASCENDING);
 	gtk_tree_view_append_column (GTK_TREE_VIEW (list), column);
 	gtk_tree_view_set_search_column (GTK_TREE_VIEW (list), -1);
 }
@@ -342,46 +334,52 @@ static void
 loglist_finalize (GObject *object)
 {
 	LogList *list = LOG_LIST (object);
-	g_free (list->priv);
-	parent_class->finalize (object);
+	g_free (list->prv);
+	(*G_OBJECT_CLASS(loglist_parent_class)->finalize) (object); 
 }
 
 static void
 loglist_class_init (LogListClass *klass)
 {
 	GObjectClass *object_class = (GObjectClass *) klass;
-	parent_class = g_type_class_peek_parent (klass);
+	GParamSpec *pspec;
+
 	object_class->finalize = loglist_finalize;
+        object_class->set_property = loglist_set_property;
+
+	pspec = g_param_spec_pointer ("window",
+				      "LogviewWindow pointer",
+				      "Set LogviewWindow pointer",
+				      G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY);
+	g_object_class_install_property (object_class,
+					 PROP_WINDOW,
+					 pspec);
 }
 
-GType
-loglist_get_type (void)
+static void
+loglist_set_property (GObject      *object,
+		      guint         property_id,
+		      const GValue *value,
+		      GParamSpec   *pspec)
 {
-	static GType object_type = 0;
-	
-	if (!object_type) {
-		static const GTypeInfo object_info = {
-			sizeof (LogListClass),
-			NULL,		/* base_init */
-			NULL,		/* base_finalize */
-			(GClassInitFunc) loglist_class_init,
-			NULL,/* class_finalize */
-			NULL,		/* class_data */
-			sizeof (LogList),
-			0,              /* n_preallocs */
-			(GInstanceInitFunc) loglist_init
-		};
+	LogList *self = LOG_LIST (object);
 
-		object_type = g_type_register_static (GTK_TYPE_TREE_VIEW, "LogList", &object_info, 0);
+	switch (property_id) {
+	case PROP_WINDOW:
+		self->prv->window = g_value_get_pointer (value);
+		g_assert (LOGVIEW_IS_WINDOW(self->prv->window));
+		break;
+	default:
+		/* We don't have any other property... */
+		G_OBJECT_WARN_INVALID_PROPERTY_ID(object,property_id,pspec);
+		break;
 	}
-
-	return object_type;
 }
 
 GtkWidget *
-loglist_new (void)
+loglist_new (gpointer window)
 {
     GtkWidget *widget;
-    widget = g_object_new (LOG_LIST_TYPE, NULL);
+    widget = g_object_new (LOG_LIST_TYPE, "window", window, NULL);
     return widget;
 }

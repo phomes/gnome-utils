@@ -29,7 +29,6 @@
 #include <strings.h>
 #include <stdlib.h>
 #include <libgnomevfs/gnome-vfs-mime-utils.h>
-#include "logview.h"
 #include "logview-log.h"
 #include "logrtns.h"
 #include "log_repaint.h"
@@ -78,7 +77,7 @@ enum {
 	PROP_CURRENT_VERSION,
 	PROP_ARCHIVES,
 	PROP_DAYS,
-	PROP_WINDOW,
+	PROP_VIEW,
 	PROP_VISIBLE_FIRST,
 	PROP_BOLD_FIRST,
 	PROP_BOLD_LAST,
@@ -113,10 +112,11 @@ struct _LogPrivate {
 	/* isolated calendar */
 	GList *selected_paths;
 
-	/* isolataed repaint */
+	/* isolateed repaint */
 	GtkTreePath *first_bold_row;
 	GtkTreePath *last_bold_row;
 	GtkTreeModel *model;
+	GtkWidget *view; /* pointer to the only logview treeview */
 	gint current_version;
 	GtkTreeModelFilter *filter;
 	GSList *days;
@@ -132,8 +132,6 @@ struct _LogPrivate {
 	gboolean monitored;
 	GnomeVFSMonitorHandle *mon_handle;
 
-	/* other informations */
-	gpointer window;
 	/* plugin */
 	LogviewPlugin* ext_data[LOG_PF_NUM];
 
@@ -218,10 +216,12 @@ log_set_property (GObject      *object,
 		}
 	}
 		break;
-	case PROP_WINDOW:
+	case PROP_VIEW:
 		/* can be set only once */
-		g_assert (self->prv->window == NULL);
-		self->prv->window = g_value_get_pointer (value);
+		g_assert (self->prv->view == NULL);
+		self->prv->view = g_value_get_pointer (value);
+		if (self->prv->view)
+			g_assert (GTK_IS_TREE_VIEW(self->prv->view));
 		break;
 	case PROP_MONITOR_HANDLE:
 		self->prv->mon_handle = g_value_get_pointer (value);
@@ -306,8 +306,8 @@ log_get_property (GObject      *object,
 	case PROP_DAYS:
 		g_value_set_pointer (value, self->prv->days);
 		break;
-	case PROP_WINDOW:
-		g_value_set_pointer (value, self->prv->window);
+	case PROP_VIEW:
+		g_value_set_pointer (value, self->prv->view);
 		break;
 	case PROP_SELECTED_PATHS:
 		g_value_set_pointer (value, self->prv->selected_paths);
@@ -503,12 +503,12 @@ log_class_init (gpointer g_class, gpointer g_class_data)
 					 PROP_DAYS,
 					 pspec);
 
-	pspec = g_param_spec_pointer ("window",
-				      "Point to the main window",
+	pspec = g_param_spec_pointer ("view",
+				      "Point to the only treeview of the main window",
 				      "Get and set window",
 				      G_PARAM_READWRITE | G_PARAM_CONSTRUCT);
 	g_object_class_install_property (object_class,
-					 PROP_WINDOW,
+					 PROP_VIEW,
 					 pspec);
 
 	pspec = g_param_spec_pointer ("visible-first",
@@ -558,7 +558,6 @@ GType
 log_get_type (void)
 {
 	static GType type = 0;
-	LV_MARK;
 	if (type == 0) {
 		static const GTypeInfo info = {
 			/* You fill this structure. */
@@ -1242,15 +1241,15 @@ log_write_line (Log *self, gchar *line)
 static gboolean
 log_unbold_rows (Log *self)
 {
-	LogviewWindow *logview;
 	GtkTreeModel *model;
 	GtkTreeIter iter;
 	GtkTreePath *path;
 
 	LOG_IS_VALID(self);
 
-	logview = LOGVIEW_WINDOW (self->prv->window);
-	if (logview->curlog != self)
+	g_assert (self->prv->view);
+	if (self->prv->model != 
+	    gtk_tree_view_get_model (GTK_TREE_VIEW(self->prv->view)))
 		return TRUE;
 
 	g_assert (self->prv->first_bold_row && self->prv->last_bold_row);

@@ -17,7 +17,7 @@ DOC_SOURCE_DIR=$(top_srcdir)/logview
 SCAN_OPTIONS=
 
 # Extra options to pass to gtkdoc-scangobj
-SCANGOBJ_OPTIONS=--types=$(DOC_MODULE)-sections.txt
+SCANGOBJ_OPTIONS=
 
 # Extra options to supply to gtkdoc-mkdb.
 MKDB_OPTIONS=--sgml-mode --output-format=xml
@@ -44,6 +44,7 @@ IGNORE_HFILES =			\
 	logview-findbar.h	\
 	loglist.h		\
 	logview-module.h	\
+	logview-plugin.h	\
 	logview-plugin-manager.h	\
 	logview-plugin-list.h
 
@@ -68,12 +69,12 @@ INCLUDES=				\
 	$(CPPFLAGS)			\
 	$(GNOME_UTILS_CFLAGS)		\
 	-I$(top_srcdir)/logview		\
-	-I$(top_builddir)		\
 	-I$(top_builddir)/logview
 
 GTKDOC_LIBS=			\
 	$(LDFLAGS)		\
-	$(GNOME_UTILS_LIBS)
+	$(GNOME_UTILS_LIBS)	\
+	$(top_builddir)/logview/libgnome-system-log.la
 
 # This includes the standard gtk-doc make rules, copied by gtkdocize.
 include $(top_srcdir)/gtk-doc.make

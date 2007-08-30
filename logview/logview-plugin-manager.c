@@ -12,12 +12,11 @@
 #include <sys/utsname.h>
 #include "logview-module.h"
 #include "logview-plugin-manager.h"
+#include "logview-iface-io.h"
+#include "logview-iface-view.h"
 #include "logview-iface-collector.h"
 #include "logview-debug.h"
 #include "misc.h"
-
-#define LOGVIEW_USER_PLUGIN_PATH_SUFFIX LOGVIEW_HOME_SUFFIX"/plugins"
-#define LOGVIEW_DATA_PLUGIN_PATH LOGVIEWPLUGINDIR
 
 #define LOGVIEW_TYPE_PLUGINMGR		(logview_pluginmgr_get_type ())
 #define LOGVIEW_PLUGINMGR(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), LOGVIEW_TYPE_PLUGINMGR, LogviewPluginMgr))
@@ -34,7 +33,6 @@ static gboolean load_module(LogviewPluginMgr *self, const gchar* module_path);
 static void unload_module (LogviewPluginMgr *self, LogviewModule* plugin_info);
 static gboolean load_modules (LogviewPluginMgr *self);
 static void unload_modules (LogviewPluginMgr *self);
-static GSList* compose_search_plugin_paths (LogviewPluginMgr *self);
 
 static gboolean register_module (LogviewPluginMgr *self, LogviewModule* plugin_info);
 static gboolean is_plugin_file (const gchar* filepath);
@@ -82,6 +80,9 @@ pluginmgr_instance_init (GTypeInstance *instance, gpointer g_class)
 {
 	LogviewPluginMgr *self = LOGVIEW_PLUGINMGR (instance);
 	self->prv = g_new0 (LogviewPluginMgrPrivate,1);
+	self->prv->typehash[PF_LOG_IO] = LOGVIEW_TYPE_IFACE_IO;
+	self->prv->typehash[PF_LOG_VIEW] = LOGVIEW_TYPE_IFACE_VIEW;
+	self->prv->typehash[PF_LOG_COLLECTOR] = LOGVIEW_TYPE_IFACE_COLLECTOR;
 }
 
 static void
@@ -105,48 +106,6 @@ pluginmgr_finalize (LogviewPluginMgr *self)
 	parent_class->finalize (G_OBJECT (self));
 }
 
-static GSList*
-compose_search_plugin_paths(LogviewPluginMgr *self)
-{
-	struct stat buf;
-	gchar* user_plugin_path = NULL;
-
-	if (self->prv->plugin_full_paths)
-		return self->prv->plugin_full_paths;
-
-	/* get user plugin path */
-	user_plugin_path = g_build_path (G_DIR_SEPARATOR_S,
-					 (gchar*)g_get_home_dir (),
-					 LOGVIEW_USER_PLUGIN_PATH_SUFFIX,
-					 processor_arch (),
-					 NULL);
-	if (stat (user_plugin_path, &buf) == 0) {
-		if (S_ISDIR (buf.st_mode)) {
-			self->prv->plugin_full_paths =
-				g_slist_append (self->prv->plugin_full_paths,
-						user_plugin_path);
-		}
-	}
-	else if (errno == ENOENT &&
-		 g_mkdir_with_parents (user_plugin_path, get_umask()) == 0) {
-			self->prv->plugin_full_paths =
-				g_slist_append (self->prv->plugin_full_paths,
-						user_plugin_path);
-	}
-	else {
-		LV_ERR ("err|create user plugin path: %s", user_plugin_path);
-		return NULL;
-	}
-	
-	/* get default plugin path */
-	if (stat (LOGVIEW_DATA_PLUGIN_PATH, &buf) == 0) {
-		if (S_ISDIR (buf.st_mode)) {
-			self->prv->plugin_full_paths = g_slist_append(self->prv->plugin_full_paths, (gpointer*)g_strdup (LOGVIEW_DATA_PLUGIN_PATH));
-		}
-	}
-	return self->prv->plugin_full_paths;
-}
-
 static gboolean
 load_modules (LogviewPluginMgr *self)
 {
@@ -159,7 +118,7 @@ load_modules (LogviewPluginMgr *self)
 		return FALSE;
 	
 	klass = LOGVIEW_PLUGINMGR_GET_CLASS(self);
-	plugin_paths = klass->compose_search_plugin_paths(self);
+	plugin_paths = get_plugin_paths();
 
 	g_return_val_if_fail (plugin_paths != NULL, FALSE);
 
@@ -354,7 +313,6 @@ pluginmgr_class_init (gpointer g_class, gpointer g_class_data)
 	self->unload_module = unload_module;
 	self->load_modules = load_modules;
 	self->unload_modules = unload_modules;
-	self->compose_search_plugin_paths = compose_search_plugin_paths;
 	self->iterate = iterate;
 
 }
@@ -467,13 +425,8 @@ pluginmgr_new_log_from_path (const gchar* log_path)
 {
 	Log *log = NULL;
 	GSList *idx = NULL;
-	gchar *utf8_path = NULL;
-
 	LV_MARK;
-	if (log_path)
-		utf8_path = locale_to_utf8 (log_path);
-	log_error_init (utf8_path ? utf8_path : log_path);
-	g_free (utf8_path);
+	log_error_init (log_path);
 	for (idx = pluginmgr_instance->prv->modules[PF_LOG_COLLECTOR]; 
 	     idx != NULL; idx = idx->next) {
 		LogviewPlugin *plugin;
@@ -558,12 +511,6 @@ pluginmgr_init()
 	}
 }
 
-const GSList*
-pluginmgr_get_plugin_paths()
-{
-	return LOGVIEW_PLUGINMGR_GET_CLASS (pluginmgr_instance)->compose_search_plugin_paths (pluginmgr_instance);
-}
-
 void
 pluginmgr_modules_iterate (ModuleHandleCB cb, gpointer data)
 {
@@ -580,14 +527,3 @@ pluginmgr_plugin_amount ()
 	}
 	return n;
 }
-
-void
-PluginInterface_register (PluginFunc func, GType type)
-{
-	g_assert (pluginmgr_instance);
-	g_assert (func >= 0 && func < MGR_PF_NUM);
-	g_assert (pluginmgr_instance->prv->typehash[func] == 0);
-	pluginmgr_instance->prv->typehash[func] = type;
-	LV_INFO ("[Interface type] %s registered, type = %d", g_type_name (type), type);
-}
-

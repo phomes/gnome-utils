@@ -50,18 +50,15 @@ struct _LogviewPluginMgrClass {
 //void logview_plugins_detect (const gchar* plugin_patchs);
 
 
-void pluginmgr_init ();
-void pluginmgr_destroy ();
-gboolean pluginmgr_load_modules ();
-void pluginmgr_unload_modules ();
-gint pluginmgr_plugin_amount();
+extern void pluginmgr_init ();
+extern void pluginmgr_destroy ();
+extern gboolean pluginmgr_load_modules ();
+extern void pluginmgr_unload_modules ();
+extern gint pluginmgr_plugin_amount();
 
-GSList* pluginmgr_get_all_logs ();
-Log* pluginmgr_new_log_from_path (const gchar* log_path);
-const GSList* pluginmgr_get_plugin_paths ();
-void pluginmgr_modules_iterate (ModuleHandleCB cb, gpointer data);
-
-void PluginInterface_register (PluginFunc func, GType type);
+extern GSList* pluginmgr_get_all_logs ();
+extern Log* pluginmgr_new_log_from_path (const gchar* log_path);
+extern void pluginmgr_modules_iterate (ModuleHandleCB cb, gpointer data);
 
 /* routines provided for internal usage */
 

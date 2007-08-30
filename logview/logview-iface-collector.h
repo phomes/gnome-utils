@@ -39,13 +39,13 @@ struct _LogviewIFaceCollector {
 	gboolean (*config_log) (LogviewICollector *self, Log *log);
 };
 
-GType logview_iface_collector_get_type (void);
+extern GType logview_iface_collector_get_type (void) G_GNUC_CONST;
 
 /* for logview application internal usage */
-GSList* logi_get_logs (LogviewICollector *self);
-Log* logi_config_log_from_path (LogviewICollector *self,
+extern GSList* logi_get_logs (LogviewICollector *self);
+extern Log* logi_config_log_from_path (LogviewICollector *self,
 				const gchar *log_name);
-gboolean logi_config_log (LogviewICollector *self, Log *log);
+extern gboolean logi_config_log (LogviewICollector *self, Log *log);
 
 G_END_DECLS
 

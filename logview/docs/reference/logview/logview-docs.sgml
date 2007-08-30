@@ -14,63 +14,31 @@
 <book id="logview">
   <bookinfo>
     <title>GNOME System Log Plugin Interfaces Reference Manual</title>
-    <authorgroup>
-      <author>
-        <firstname>Lin</firstname>
-        <surname>Ma</surname>
-        <affiliation>
-          <address>
-            <email>lin.ma@sun.com</email>
-          </address>
-        </affiliation>
-      </author>
-    </authorgroup>
-    
-    <copyright>
-      <year>2006</year>
-      <holder>Lin Ma</holder>
-    </copyright>
-    
     <abstract>
       <para>This manual documents the Gnome System Log Plugin Interfaces.</para>
     </abstract>
-  
   </bookinfo>
   
-  <chapter id="Introduction">
+  <preface>
     <title>Introduction</title>
-    
     <para>The Gnome System Log Plugin Interfaces enable endusers to implement
     plugins to display non-ASCII formatted log files.</para>
-    
     <para>It was created for the GNOME System Log application, but it has been
     made available for each developer whom wishes to implement plugins for
     fun.</para>
-    
-  </chapter>
+  </preface>
   
-  <chapter id="LogAPIs">
+  <reference label="I">
     <title>API reference</title>
-    
-    <sect1 id="LogObjects">
-      <title>Logview Objects</title>
-      &LogviewPlugin;
-      &LogviewLog;
-    </sect1>
-    
-    <sect1 id="LogInterfaces">
-      <title>Logview Interfaces</title>
-      &LogviewIface;
-      &LogviewIfaceIO;
-      &LogviewIfaceView;
-      &LogviewIfaceCollector;
-    </sect1>
-    
-    <sect1 id="LogTools">
-      <title>Logview Tools</title>
-      &LogviewMisc;
-    </sect1>
-    
-  </chapter>
-  
+    &LogviewLog;
+    &LogviewIface;
+    &LogviewIfaceIO;
+    &LogviewIfaceView;
+    &LogviewIfaceCollector;
+  </reference>
+
+  <reference label="II">
+    <title>Miscellaneous Utility Functions</title>
+    &LogviewMisc;
+  </reference>
 </book>

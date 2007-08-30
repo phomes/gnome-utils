@@ -42,11 +42,11 @@ struct _LogviewIFaceView {
 	gchar* (*to_utf8) (LogviewIView *self, gchar *str, gssize size);
 };
 
-GType logview_iface_view_get_type (void);
+extern GType logview_iface_view_get_type (void) G_GNUC_CONST;
 
 /* for logview application internal usage */
-GSList* logi_group_lines (LogviewIView *self, const gchar **lines);
-gchar* logi_to_utf8 (LogviewIView *self, gchar *str, gssize size);
+extern GSList* logi_group_lines (LogviewIView *self, const gchar **lines);
+extern gchar* logi_to_utf8 (LogviewIView *self, gchar *str, gssize size);
 
 G_END_DECLS
 

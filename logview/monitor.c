@@ -31,6 +31,8 @@ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 #define CHECK_FILE_PERIOD	10000
 
+static gpointer window = NULL;
+
 void
 monitor_stop (Log *log)
 {
@@ -55,15 +57,12 @@ monitor_callback (GnomeVFSMonitorHandle *handle, const gchar *monitor_uri,
 		  const gchar *info_uri, GnomeVFSMonitorEventType event_type,
 		  gpointer data)
 {
-	LogviewWindow *logview;
+	LogviewWindow *logview = LOGVIEW_WINDOW(window);
 	Log *log = data;
 	
 	LV_MARK;
 	g_assert (LOGVIEW_IS_LOG (log));
 	
-	g_object_get (G_OBJECT (log),
-		      "window", &logview,
-		      NULL);
 	loglist_bold_log (LOG_LIST (logview->loglist), log);
 	if (logview->curlog == log)
 		logview_repaint (logview);
@@ -153,4 +152,11 @@ gnome_vfs_err:
 	g_free (second);
 	g_free (name);
 	g_object_unref (log);
+}
+
+void
+monitor_set_window (gpointer win)
+{
+	g_assert (window == NULL);
+	window = win;
 }

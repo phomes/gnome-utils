@@ -193,7 +193,7 @@ logview_count_logs (LogviewWindow *logview)
 static void
 logview_store_visible_range (LogviewWindow *logview)
 {
-	GtkTreePath *first;
+	GtkTreePath *first = NULL;
 	Log *log = logview->curlog;
 	if (log == NULL)
 		return;
@@ -484,7 +484,7 @@ logview_add_log (LogviewWindow *logview, Log *log)
 
 	logview->logs = g_slist_append (logview->logs, log);
 	loglist_add_log (LOG_LIST(logview->loglist), log);
-	g_object_set (G_OBJECT (log), "window", logview, NULL);
+	g_object_set (G_OBJECT (log), "view", logview->view, NULL);
 	monitor_start (log);
 	logview_select_log (logview, log);
 }
@@ -999,11 +999,10 @@ logview_init (LogviewWindow *logview)
 					GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
 	gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (loglist_scrolled),
 					     GTK_SHADOW_ETCHED_IN);
-	logview->loglist = loglist_new ();
+	logview->loglist = loglist_new ((gpointer)logview);
 	gtk_container_add (GTK_CONTAINER (loglist_scrolled), logview->loglist);
 	gtk_box_pack_start (GTK_BOX (logview->sidebar), loglist_scrolled, TRUE, TRUE, 0);
 	gtk_paned_pack1 (GTK_PANED (hpaned), logview->sidebar, FALSE, FALSE);
-	loglist_connect (LOG_LIST(logview->loglist), logview);
 
 	/* Second pane : log */
 	main_view = gtk_vbox_new (FALSE, 0);
@@ -1084,6 +1083,9 @@ logview_init (LogviewWindow *logview)
 	gtk_widget_show (vbox);
 	logview->hpaned = hpaned;
 	logview->plugin_list = logview_plugin_list_new ();
+
+	/* set logview pointer */
+	monitor_set_window ((gpointer)logview);
 }
 
 static void
