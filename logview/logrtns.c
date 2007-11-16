@@ -1027,11 +1027,11 @@ log_thread_fill_content (Log *self)
 						self->prv->line_iter);
 	}
 
+	DATA_LOCK (self);
 	if (self->prv->update_status) {
 		/* update */
 		/* Remember the last bold lines in the model to 
 		   unset them later */
-		DATA_LOCK (self);
 		if (self->prv->last_bold_row)
 			gtk_tree_path_free (self->prv->last_bold_row);
 		self->prv->last_bold_row =
@@ -1039,21 +1039,19 @@ log_thread_fill_content (Log *self)
 						 self->prv->line_iter);
 		g_timeout_add (BOLD_ROWS_TIME,
 			       (GSourceFunc) log_unbold_rows,
-			       self);
-		DATA_UNLOCK (self);
+			       g_object_ref (self));
 	}
 	else {
 		/* initial, remember the first visible line
 		   and selected lines */
-		DATA_LOCK (self);
 		self->prv->selected_paths =
 			g_list_append (self->prv->selected_paths,
 				       gtk_tree_path_copy (path));
 		if (self->prv->visible_first)
 			gtk_tree_path_free (self->prv->visible_first);
 		self->prv->visible_first = gtk_tree_path_copy (path);
-		DATA_UNLOCK (self);
 	}
+	DATA_UNLOCK (self);
 	gtk_tree_path_free (path);
 }
     
@@ -1249,26 +1247,31 @@ log_unbold_rows (Log *self)
 
 	g_assert (self->prv->view);
 	if (self->prv->model != 
-	    gtk_tree_view_get_model (GTK_TREE_VIEW(self->prv->view)))
+	    gtk_tree_view_get_model (GTK_TREE_VIEW(self->prv->view))) {
+		g_object_unref (self);
 		return TRUE;
-
-	g_assert (self->prv->first_bold_row && self->prv->last_bold_row);
-
-	for (path = self->prv->first_bold_row; 
-	     gtk_tree_path_compare (path, self->prv->last_bold_row)<=0;
-	     gtk_tree_path_next (path)) {
-		gtk_tree_model_get_iter (self->prv->model, &iter, path);
-		gtk_tree_store_set (GTK_TREE_STORE (self->prv->model), &iter,
-				    LOG_LINE_WEIGHT, PANGO_WEIGHT_NORMAL,
-				    LOG_LINE_WEIGHT_SET, TRUE,
-				    -1);
-		log_thread_idle (self);
 	}
+
+	DATA_LOCK (self);
+	if (self->prv->first_bold_row != NULL &&
+	    self->prv->last_bold_row != NULL) {
+		for (path = self->prv->first_bold_row; 
+		     gtk_tree_path_compare (path, self->prv->last_bold_row)<=0;
+		     gtk_tree_path_next (path)) {
+			gtk_tree_model_get_iter (self->prv->model, &iter, path);
+			gtk_tree_store_set (GTK_TREE_STORE (self->prv->model), &iter,
+					    LOG_LINE_WEIGHT, PANGO_WEIGHT_NORMAL,
+					    LOG_LINE_WEIGHT_SET, TRUE,
+					    -1);
+		}
   
-	gtk_tree_path_free (self->prv->first_bold_row);
-	gtk_tree_path_free (self->prv->last_bold_row);
-	self->prv->first_bold_row = NULL;
-	self->prv->last_bold_row = NULL;
+		gtk_tree_path_free (self->prv->first_bold_row);
+		gtk_tree_path_free (self->prv->last_bold_row);
+		self->prv->first_bold_row = NULL;
+		self->prv->last_bold_row = NULL;
+	}
+	DATA_UNLOCK (self);
+	g_object_unref (self);
 	return FALSE;
 }
 

@@ -1,3 +1,12 @@
+2007-11-16  Lin Ma  <Lin.Ma@Sun.COM>
+
+	* loglist.c: (loglist_unbold), (loglist_bold_log),
+	(loglist_selection_changed):
+	* logrtns.c: (log_thread_fill_content), (log_unbold_rows):
+	* monitor.c: (monitor_log_was_modified):
+	Fix a bug crashing log viewer when unbolding the new added lines of a
+	log.
+
 2007-08-30  Lin Ma  <Lin.Ma@Sun.COM>
 
 	* Makefile.am:

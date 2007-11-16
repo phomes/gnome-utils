@@ -137,8 +137,6 @@ loglist_unbold (LogList *self)
 	GtkTreeIter iter;
 	LV_MARK;
 
-	g_return_val_if_fail (self != NULL, FALSE);
-
 	model = GTK_TREE_MODEL (self->prv->model);
 
 	loglist_get_log_iter (self, logview_get_active_log (logview),
@@ -147,6 +145,7 @@ loglist_unbold (LogList *self)
 			    LOG_WEIGHT_SET, FALSE, -1);
 
 	self->prv->unbold_event = 0;
+	g_object_unref (self);
 	return FALSE;
 }
 
@@ -170,7 +169,9 @@ loglist_bold_log (LogList *list, Log *log)
 
     /* if the log is currently shown, put up a timer to unbold it */
     if (logview_get_active_log (logview) == log)
-	    g_timeout_add (BOLD_LOG_TIME, (GSourceFunc) loglist_unbold, log);
+	    g_timeout_add (BOLD_LOG_TIME,
+			   (GSourceFunc) loglist_unbold,
+			   g_object_ref (list));
 }
 
 void
@@ -291,7 +292,8 @@ loglist_selection_changed (GtkTreeSelection *selection, LogList *self)
 	if (bold) {
 		self->prv->unbold_event = 
 			g_timeout_add (BOLD_LOG_TIME,
-				       (GSourceFunc) loglist_unbold, self);
+				       (GSourceFunc) loglist_unbold,
+				       g_object_ref (self));
 	}
 }
 

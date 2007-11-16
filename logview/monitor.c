@@ -90,6 +90,7 @@ monitor_log_was_modified (Log *log)
 	if (log_has_been_modified (log)) {
 		monitor_callback(NULL, NULL, NULL, 0, log);
 	}
+	g_object_unref (log);
 	return TRUE;
 }
 
