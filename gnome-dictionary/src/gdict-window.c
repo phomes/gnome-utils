@@ -34,11 +34,6 @@
 #include <glib/gi18n.h>
 #include <libgnome/libgnome.h>
 #include <libgnomeui/gnome-help.h>
-#include <libgnomeprint/gnome-print.h>
-#include <libgnomeprint/gnome-print-job.h>
-#include <libgnomeprint/gnome-print-pango.h>
-#include <libgnomeprintui/gnome-print-dialog.h>
-#include <libgnomeprintui/gnome-print-job-preview.h>
 
 #include <libgdict/gdict.h>
 
@@ -59,6 +54,7 @@
 #define GDICT_SIDEBAR_SPELLER_PAGE      "speller"
 #define GDICT_SIDEBAR_DATABASES_PAGE    "db-chooser"
 #define GDICT_SIDEBAR_STRATEGIES_PAGE   "strat-chooser"
+#define GDICT_SIDEBAR_SOURCES_PAGE      "source-chooser"
 
 enum
 {
@@ -204,6 +200,34 @@ gdict_window_dispose (GObject *gobject)
   G_OBJECT_CLASS (gdict_window_parent_class)->dispose (gobject);
 }
 
+static const gchar *toggle_state[] = {
+  "/MainMenu/FileMenu/SaveAsMenu",
+  "/MainMenu/FileMenu/FilePreviewMenu",
+  "/MainMenu/FileMenu/FilePrintMenu",
+  "/MainMenu/GoMenu",
+};
+
+static gint n_toggle_state = G_N_ELEMENTS (toggle_state);
+
+static void
+gdict_window_ensure_menu_state (GdictWindow *window)
+{
+  GtkWidget *item;
+  gint i;
+  gboolean is_sensitive;
+
+  g_assert (GDICT_IS_WINDOW (window));
+
+  is_sensitive = !!(window->word != NULL);
+  for (i = 0; i < n_toggle_state; i++)
+    {
+      GtkWidget *item;
+
+      item = gtk_ui_manager_get_widget (window->ui_manager, toggle_state[i]);
+      gtk_widget_set_sensitive (item, is_sensitive);
+    }
+}
+
 static void
 gdict_window_set_sidebar_visible (GdictWindow *window,
 				  gboolean     is_visible)
@@ -287,7 +311,7 @@ gdict_window_lookup_start_cb (GdictContext *context,
 
   message = g_strdup_printf (_("Searching for '%s'..."), window->word);
   
-  if (window->status)
+  if (window->status && window->statusbar_visible)
     gtk_statusbar_push (GTK_STATUSBAR (window->status), 0, message);
 
   if (window->progress)
@@ -297,8 +321,8 @@ gdict_window_lookup_start_cb (GdictContext *context,
   window->last_definition = 0;
   window->current_definition = 0;
 
-  gdk_window_set_cursor (GTK_WIDGET (window)->window,
-		         window->busy_cursor);
+  gdk_window_set_cursor (GTK_WIDGET (window)->window, window->busy_cursor);
+
   g_free (message);
 }
 
@@ -311,7 +335,7 @@ gdict_window_lookup_end_cb (GdictContext *context,
   GtkTreeIter iter;
   GdictSource *source;
   GdictContext *speller_context;
-
+  
   count = window->current_definition;
 
   window->max_definition = count - 1;
@@ -324,7 +348,7 @@ gdict_window_lookup_end_cb (GdictContext *context,
 					count),
 		    	       count);
 
-  if (window->status)
+  if (window->status && window->statusbar_visible)
     gtk_statusbar_push (GTK_STATUSBAR (window->status), 0, message);
 
   if (window->progress)
@@ -340,17 +364,29 @@ gdict_window_lookup_end_cb (GdictContext *context,
   g_object_unref (speller_context);
   g_object_unref (source);
 
-  /* search for similar words */
-  gdict_speller_set_strategy (GDICT_SPELLER (window->speller), window->strategy);
-  gdict_speller_match (GDICT_SPELLER (window->speller), window->word);
-
-  gtk_list_store_append (window->completion_model, &iter);
-  gtk_list_store_set (window->completion_model, &iter,
-		      COMPLETION_TEXT_COLUMN, window->word,
-		      -1);
+  /* search for similar words; if we have a no-match we already started
+   * looking in the error signal handler
+   */
+  if (count != 0 && window->word)
+    {
+      gdict_speller_set_strategy (GDICT_SPELLER (window->speller), window->strategy);
+      gdict_speller_match (GDICT_SPELLER (window->speller), window->word);
+      gtk_list_store_append (window->completion_model, &iter);
+      gtk_list_store_set (window->completion_model, &iter,
+                          COMPLETION_TEXT_COLUMN, window->word,
+                          -1);
+    }
 
   gdk_window_set_cursor (GTK_WIDGET (window)->window, NULL);
   g_free (message);
+
+  if (count == 0)
+    {
+      g_free (window->word);
+      window->word = NULL;
+    }
+
+  gdict_window_ensure_menu_state (window);
 }
 
 static void
@@ -362,8 +398,9 @@ gdict_window_error_cb (GdictContext *context,
   
   gdk_window_set_cursor (GTK_WIDGET (window)->window, NULL);
   
-  gtk_statusbar_push (GTK_STATUSBAR (window->status), 0,
-		      _("No definitions found"));
+  if (window->status && window->statusbar_visible)
+    gtk_statusbar_push (GTK_STATUSBAR (window->status), 0,
+                        _("No definitions found"));
 
   gtk_widget_hide (window->progress);
 
@@ -396,6 +433,12 @@ gdict_window_error_cb (GdictContext *context,
       gdict_speller_match (GDICT_SPELLER (window->speller),
 		           window->word);
     }
+
+  /* unset the word and update the UI */
+  g_free (window->word);
+  window->word = NULL;
+
+  gdict_window_ensure_menu_state (window);
 }
 
 static void
@@ -414,16 +457,32 @@ gdict_window_set_database (GdictWindow *window,
   if (window->defbox)
     gdict_defbox_set_database (GDICT_DEFBOX (window->defbox),
 			       window->database);
+
+  if (window->db_chooser)
+    gdict_database_chooser_set_current_database (GDICT_DATABASE_CHOOSER (window->db_chooser),
+                                                 window->database);
 }
 
 static void
 gdict_window_set_strategy (GdictWindow *window,
 			   const gchar *strategy)
 {
-  if (window->strategy)
-    g_free (window->strategy);
+  g_free (window->strategy);
 
-  window->strategy = g_strdup (strategy);
+  if (strategy && strategy[0] != '\0')
+    window->strategy = g_strdup (strategy);
+  else
+    window->strategy = gdict_gconf_get_string_with_default (window->gconf_client,
+							    GDICT_GCONF_STRATEGY_KEY,
+							    GDICT_DEFAULT_STRATEGY);
+
+  if (window->speller)
+    gdict_speller_set_strategy (GDICT_SPELLER (window->speller),
+                                window->strategy);
+
+  if (window->strat_chooser)
+    gdict_strategy_chooser_set_current_strategy (GDICT_STRATEGY_CHOOSER (window->strat_chooser),
+                                                 window->strategy);
 }
 
 static GdictContext *
@@ -456,7 +515,7 @@ get_context_from_loader (GdictWindow *window)
 
       gdict_show_error_dialog (GTK_WINDOW (window),
                                _("Unable to find dictionary source"),
-                               NULL);
+                               detail);
       
       g_free (detail);
 
@@ -577,6 +636,12 @@ gdict_window_set_context (GdictWindow  *window,
   if (window->defbox)
     gdict_defbox_set_context (GDICT_DEFBOX (window->defbox), context);
 
+  if (window->db_chooser)
+    gdict_database_chooser_set_context (GDICT_DATABASE_CHOOSER (window->db_chooser), context);
+
+  if (window->strat_chooser)
+    gdict_strategy_chooser_set_context (GDICT_STRATEGY_CHOOSER (window->strat_chooser), context);
+
   if (!context)
     return;
   
@@ -603,6 +668,10 @@ gdict_window_set_source_name (GdictWindow *window,
 {
   GdictContext *context;
 
+  if (window->source_name && source_name &&
+      strcmp (window->source_name, source_name) == 0)
+    return;
+
   g_free (window->source_name);
 
   if (source_name)
@@ -614,6 +683,12 @@ gdict_window_set_source_name (GdictWindow *window,
 
   context = get_context_from_loader (window);
   gdict_window_set_context (window, context);
+
+  if (window->source_chooser)
+    gdict_source_chooser_set_current_source (GDICT_SOURCE_CHOOSER (window->source_chooser),
+                                             window->source_name);
+
+  g_object_notify (G_OBJECT (window), "source-name");
 }
 
 static void
@@ -803,13 +878,22 @@ gdict_window_cmd_save_as (GtkAction   *action,
 }
 
 static void
+gdict_window_cmd_file_preview (GtkAction   *action,
+                               GdictWindow *window)
+{
+  g_assert (GDICT_IS_WINDOW (window));
+
+  gdict_show_print_preview (GTK_WINDOW (window),
+                            GDICT_DEFBOX (window->defbox));
+}
+
+static void
 gdict_window_cmd_file_print (GtkAction   *action,
 			     GdictWindow *window)
 {
   g_assert (GDICT_IS_WINDOW (window));
   
   gdict_show_print_dialog (GTK_WINDOW (window),
-  			   _("Print"),
   			   GDICT_DEFBOX (window->defbox));
 }
 
@@ -974,6 +1058,17 @@ gdict_window_cmd_view_strategies (GtkAction   *action,
 }
 
 static void
+gdict_window_cmd_view_sources (GtkAction   *action,
+                               GdictWindow *window)
+{
+  g_assert (GDICT_IS_WINDOW (window));
+
+  gdict_sidebar_view_page (GDICT_SIDEBAR (window->sidebar),
+                           GDICT_SIDEBAR_SOURCES_PAGE);
+  gdict_window_set_sidebar_visible (window, TRUE);
+}
+
+static void
 gdict_window_cmd_go_first_def (GtkAction   *action,
 			       GdictWindow *window)
 {
@@ -1091,6 +1186,8 @@ static const GtkActionEntry entries[] =
     N_("New look up"), G_CALLBACK (gdict_window_cmd_file_new) },
   { "FileSaveAs", GTK_STOCK_SAVE_AS, N_("_Save a Copy..."), NULL, NULL,
     G_CALLBACK (gdict_window_cmd_save_as) },
+  { "FilePreview", NULL, N_("P_review..."), "<control><shift>P",
+    N_("Preview this document"), G_CALLBACK (gdict_window_cmd_file_preview) },
   { "FilePrint", GTK_STOCK_PRINT, N_("_Print..."), "<control>P",
     N_("Print this document"), G_CALLBACK (gdict_window_cmd_file_print) },
   { "FileCloseWindow", GTK_STOCK_CLOSE, NULL, "<control>W", NULL,
@@ -1124,6 +1221,8 @@ static const GtkActionEntry entries[] =
   /* View menu */
   { "ViewSpeller", NULL, N_("Similar _Words"), "<control>T", NULL,
     G_CALLBACK (gdict_window_cmd_view_speller), },
+  { "ViewSource", NULL, N_("Dictionary Sources"), "<control>D", NULL,
+    G_CALLBACK (gdict_window_cmd_view_sources), },
   { "ViewDB", NULL, N_("Available _Databases"), "<control>B", NULL,
     G_CALLBACK (gdict_window_cmd_view_databases), },
   { "ViewStrat", NULL, N_("Available St_rategies"), "<control>R", NULL,
@@ -1234,18 +1333,43 @@ static void
 lookup_word (GdictWindow *window,
              gpointer     dummy)
 {
-  const gchar *word;
+  const gchar *entry_text;
+  gchar *word;
   
   g_assert (GDICT_IS_WINDOW (window));
   
   if (!window->context)
     return;
   
-  word = gtk_entry_get_text (GTK_ENTRY (window->entry));
-  if (!word || *word == '\0')
+  entry_text = gtk_entry_get_text (GTK_ENTRY (window->entry));
+  if (!entry_text || *entry_text == '\0')
     return;
 
-  gdict_window_set_word (window, word, NULL);
+  word = g_strdup (entry_text);
+  gdict_window_set_word (window, g_strstrip (word), NULL);
+
+  g_free (word);
+}
+
+static void
+source_activated_cb (GdictSourceChooser *chooser,
+                     const gchar        *source_name,
+                     GdictSource        *source,
+                     GdictWindow        *window)
+{
+  g_signal_handlers_block_by_func (chooser, source_activated_cb, window);
+  gdict_window_set_source_name (window, source_name);
+  g_signal_handlers_unblock_by_func (chooser, source_activated_cb, window);
+
+  if (window->status && window->statusbar_visible)
+    {
+      gchar *message;
+
+      message = g_strdup_printf (_("Dictionary source `%s' selected"),
+                                 gdict_source_get_description (source));
+      gtk_statusbar_push (GTK_STATUSBAR (window->status), 0, message);
+      g_free (message);
+    }
 }
 
 static void
@@ -1254,9 +1378,11 @@ strategy_activated_cb (GdictStrategyChooser *chooser,
                        const gchar          *strat_desc,
                        GdictWindow          *window)
 {
+  g_signal_handlers_block_by_func (chooser, strategy_activated_cb, window);
   gdict_window_set_strategy (window, strat_name);
+  g_signal_handlers_unblock_by_func (chooser, strategy_activated_cb, window);
 
-  if (window->status)
+  if (window->status && window->statusbar_visible)
     {
       gchar *message;
 
@@ -1272,9 +1398,11 @@ database_activated_cb (GdictDatabaseChooser *chooser,
 		       const gchar          *db_desc,
 		       GdictWindow          *window)
 {
+  g_signal_handlers_block_by_func (chooser, database_activated_cb, window);
   gdict_window_set_database (window, db_name);
+  g_signal_handlers_unblock_by_func (chooser, database_activated_cb, window);
 
-  if (window->status)
+  if (window->status && window->statusbar_visible)
     {
       gchar *message;
 
@@ -1294,7 +1422,7 @@ speller_word_activated_cb (GdictSpeller *speller,
   
   gdict_window_set_word (window, word, db_name);
 
-  if (window->status)
+  if (window->status && window->statusbar_visible)
     {
       gchar *message;
 
@@ -1330,6 +1458,10 @@ sidebar_page_changed_cb (GdictSidebar *sidebar,
           
           gdict_strategy_chooser_refresh (GDICT_STRATEGY_CHOOSER (window->strat_chooser));
           break;
+        case 'o': /* source-chooser */
+          message = _("Double-click on the source to use");
+          gdict_source_chooser_refresh (GDICT_SOURCE_CHOOSER (window->source_chooser));
+          break;
         default:
           message = NULL;
         }
@@ -1345,7 +1477,7 @@ sidebar_page_changed_cb (GdictSidebar *sidebar,
       break;
     }
 
-  if (message && window->status)
+  if (message && window->status && window->statusbar_visible)
     gtk_statusbar_push (GTK_STATUSBAR (window->status), 0, message);
 }
 
@@ -1611,6 +1743,8 @@ gdict_window_constructor (GType                  type,
       
       gtk_box_pack_start (GTK_BOX (window->main_box), window->menubar, FALSE, FALSE, 0);
       gtk_widget_show (window->menubar);
+
+      gdict_window_ensure_menu_state (window);
     }
   
   vbox = gtk_vbox_new (FALSE, 6);
@@ -1677,6 +1811,7 @@ gdict_window_constructor (GType                  type,
   gtk_container_add (GTK_CONTAINER (frame1), window->defbox);
   gtk_widget_show (window->defbox);
 
+  /* Sidebar */
   window->sidebar = gdict_sidebar_new ();
   g_signal_connect (window->sidebar, "page-changed",
 		    G_CALLBACK (sidebar_page_changed_cb),
@@ -1685,6 +1820,7 @@ gdict_window_constructor (GType                  type,
 		    G_CALLBACK (sidebar_closed_cb),
 		    window);
   
+  /* Speller */
   window->speller = gdict_speller_new ();
   if (window->context)
     gdict_speller_set_context (GDICT_SPELLER (window->speller),
@@ -1692,14 +1828,13 @@ gdict_window_constructor (GType                  type,
   g_signal_connect (window->speller, "word-activated",
 		    G_CALLBACK (speller_word_activated_cb),
 		    window);
-  
   gdict_sidebar_add_page (GDICT_SIDEBAR (window->sidebar),
 		          GDICT_SIDEBAR_SPELLER_PAGE,
 			  _("Similar words"),
 			  window->speller);
   gtk_widget_show (window->speller);
 
-  window->db_chooser = gdict_database_chooser_new ();
+  /* Database chooser */
   if (window->context)
     gdict_database_chooser_set_context (GDICT_DATABASE_CHOOSER (window->db_chooser),
 			    		window->context);
@@ -1712,7 +1847,7 @@ gdict_window_constructor (GType                  type,
 			  window->db_chooser);
   gtk_widget_show (window->db_chooser);
 
-  window->strat_chooser = gdict_strategy_chooser_new ();
+  /* Strategy chooser */
   if (window->context)
     gdict_strategy_chooser_set_context (GDICT_STRATEGY_CHOOSER (window->strat_chooser),
                                         window->context);
@@ -1724,6 +1859,17 @@ gdict_window_constructor (GType                  type,
                           _("Available strategies"),
                           window->strat_chooser);
   gtk_widget_show (window->strat_chooser);
+
+  /* Source chooser */
+  window->source_chooser = gdict_source_chooser_new_with_loader (window->loader);
+  g_signal_connect (window->source_chooser, "source-activated",
+                    G_CALLBACK (source_activated_cb),
+                    window);
+  gdict_sidebar_add_page (GDICT_SIDEBAR (window->sidebar),
+                          GDICT_SIDEBAR_SOURCES_PAGE,
+                          _("Dictionary sources"),
+                          window->source_chooser);
+  gtk_widget_show (window->source_chooser);
 
   gtk_container_add (GTK_CONTAINER (frame2), window->sidebar);
   gtk_widget_show (window->sidebar);
@@ -1870,28 +2016,28 @@ gdict_window_class_init (GdictWindowClass *klass)
 					   		"Source Name",
 							"The name of the GdictSource to be used",
 							GDICT_DEFAULT_SOURCE_NAME,
-							(G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT)));
+							(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   g_object_class_install_property (gobject_class,
   				   PROP_PRINT_FONT,
   				   g_param_spec_string ("print-font",
   				   			"Print Font",
   				   			"The font name to be used when printing",
   				   			GDICT_DEFAULT_PRINT_FONT,
-  				   			(G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT)));
+  				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   g_object_class_install_property (gobject_class,
 		  		   PROP_DEFBOX_FONT,
 				   g_param_spec_string ("defbox-font",
 					   		"Defbox Font",
 							"The font name to be used by the defbox widget",
 							GDICT_DEFAULT_DEFBOX_FONT,
-							(G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT)));
+							(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   g_object_class_install_property (gobject_class,
 		  		   PROP_WORD,
 				   g_param_spec_string ("word",
 					   		"Word",
 							"The word to search",
 							NULL,
-							(G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT)));
+							(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   g_object_class_install_property (gobject_class,
   				   PROP_WINDOW_ID,
   				   g_param_spec_uint ("window-id",
@@ -1976,6 +2122,12 @@ gdict_window_init (GdictWindow *window)
   window->is_maximized = FALSE;
   
   window->window_id = (gulong) time (NULL);
+
+  /* we need to create the chooser widgets for the sidebar before
+   * we set the construction properties
+   */
+  window->db_chooser = gdict_database_chooser_new ();
+  window->strat_chooser = gdict_strategy_chooser_new ();
 }
 
 GtkWidget *

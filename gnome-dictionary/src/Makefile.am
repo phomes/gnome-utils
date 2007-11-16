@@ -38,27 +38,18 @@ gnome_dictionary_CFLAGS = \
 	-I$(top_srcdir)/gnome-dictionary \
 	$(GNOME_UTILS_CFLAGS) \
 	$(LIBGLADE_CFLAGS) \
-	$(LIBGNOMEPRINT_CFLAGS) \
 	$(NULL)
 gnome_dictionary_LDADD = \
 	$(top_builddir)/gnome-dictionary/libgdict/libgdict-1.0.la \
 	$(GNOME_UTILS_LIBS) \
 	$(LIBGLADE_LIBS) \
-	$(LIBGNOMEPRINT_LIBS) \
 	$(NULL)
-
-# the applet container widget
-noinst_LTLIBRARIES = libgtkalignedwindow.la
-libgtkalignedwindow_la_SOURCES = \
-	gtkalignedwindow.h \
-	gtkalignedwindow.c \
-	$(NULL)
-libgtkalignedwindow_la_CFLAGS = $(GNOME_UTILS_CFLAGS)
-libgtkalignedwindow_la_LIBADD = $(GNOME_UTILS_LIBS)
 
 gnome_dictionary_applet_SOURCES = \
 	gdict-about.c 		\
 	gdict-about.h		\
+	gdict-aligned-window.c	\
+	gdict-aligned-window.h	\
 	gdict-applet.c		\
 	gdict-applet.h		\
 	gdict-common.c		\
@@ -77,14 +68,11 @@ gnome_dictionary_applet_CFLAGS = \
 	-I$(top_srcdir)/gnome-dictionary \
 	$(GNOME_UTILS_CFLAGS) \
 	$(LIBGLADE_CFLAGS) \
-	$(LIBGNOMEPRINT_CFLAGS) \
 	$(APPLET_CFLAGS) \
 	$(NULL)
 gnome_dictionary_applet_LDADD = \
 	$(top_builddir)/gnome-dictionary/libgdict/libgdict-1.0.la \
-	libgtkalignedwindow.la \
 	$(GNOME_UTILS_LIBS) \
 	$(LIBGLADE_LIBS) \
-	$(LIBGNOMEPRINT_LIBS) \
 	$(APPLET_LIBS) \
 	$(NULL)

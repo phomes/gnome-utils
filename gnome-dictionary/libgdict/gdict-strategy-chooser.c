@@ -38,10 +38,11 @@
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 #include <gtk/gtkbindings.h>
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 
 #include "gdict-strategy-chooser.h"
 #include "gdict-utils.h"
+#include "gdict-debug.h"
 #include "gdict-private.h"
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
@@ -61,8 +62,6 @@ struct _GdictStrategyChooserPrivate
   GdictContext *context;
   gint results;
 
-  GtkTooltips *tips;
-  
   guint start_id;
   guint match_id;
   guint end_id;
@@ -79,15 +78,16 @@ enum
 {
   STRATEGY_NAME,
   STRATEGY_ERROR
-} DBType;
+} StratType;
 
 enum
 {
-  DB_COLUMN_TYPE,
-  DB_COLUMN_NAME,
-  DB_COLUMN_DESCRIPTION,
+  STRAT_COLUMN_TYPE,
+  STRAT_COLUMN_NAME,
+  STRAT_COLUMN_DESCRIPTION,
+  STRAT_COLUMN_CURRENT,
 
-  DB_N_COLUMNS
+  STRAT_N_COLUMNS
 };
 
 enum
@@ -126,7 +126,7 @@ set_gdict_context (GdictStrategyChooser *chooser,
     {
       if (priv->start_id)
         {
-          _gdict_debug ("Removing old context handlers\n");
+          GDICT_NOTE (CHOOSER, "Removing old context handlers");
           
           g_signal_handler_disconnect (priv->context, priv->start_id);
           g_signal_handler_disconnect (priv->context, priv->match_id);
@@ -144,9 +144,12 @@ set_gdict_context (GdictStrategyChooser *chooser,
           priv->error_id = 0;
         }
 
-      _gdict_debug ("Removing old context\n");
+      GDICT_NOTE (CHOOSER, "Removing old context");
       
       g_object_unref (G_OBJECT (priv->context));
+      
+      priv->context = NULL;
+      priv->results = -1;
     }
 
   if (!context)
@@ -159,10 +162,33 @@ set_gdict_context (GdictStrategyChooser *chooser,
       return;
     }
 
-  _gdict_debug ("Setting new context\n");
+  GDICT_NOTE (CHOOSER, "Setting new context");
     
-  priv->context = context;
-  g_object_ref (G_OBJECT (priv->context));
+  priv->context = g_object_ref (context);
+  priv->results = 0;
+}
+
+static void
+gdict_strategy_chooser_dispose (GObject *gobject)
+{
+  GdictStrategyChooser *chooser = GDICT_STRATEGY_CHOOSER (gobject);
+  GdictStrategyChooserPrivate *priv = chooser->priv;
+
+  set_gdict_context (chooser, NULL);
+
+  if (priv->busy_cursor)
+    {
+      gdk_cursor_unref (priv->busy_cursor);
+      priv->busy_cursor = NULL;
+    }
+
+  if (priv->store)
+    {
+      g_object_unref (priv->store);
+      priv->store = NULL;
+    }
+
+  G_OBJECT_CLASS (gdict_strategy_chooser_parent_class)->dispose (gobject);
 }
 
 static void
@@ -171,17 +197,8 @@ gdict_strategy_chooser_finalize (GObject *gobject)
   GdictStrategyChooser *chooser = GDICT_STRATEGY_CHOOSER (gobject);
   GdictStrategyChooserPrivate *priv = chooser->priv;
 
-  if (priv->context)
-    set_gdict_context (chooser, NULL);
+  g_free (priv->current_strat);
 
-  if (priv->busy_cursor)
-    gdk_cursor_unref (priv->busy_cursor);
-
-  g_object_unref (priv->store);
-
-  if (priv->tips)
-    g_object_unref (priv->tips);
-  
   G_OBJECT_CLASS (gdict_strategy_chooser_parent_class)->finalize (gobject);
 }
 
@@ -248,8 +265,8 @@ row_activated_cb (GtkTreeView       *treeview,
     }
 
   gtk_tree_model_get (GTK_TREE_MODEL (priv->store), &iter,
-		      DB_COLUMN_NAME, &db_name,
-		      DB_COLUMN_DESCRIPTION, &db_desc,
+		      STRAT_COLUMN_NAME, &db_name,
+		      STRAT_COLUMN_DESCRIPTION, &db_desc,
 		      -1);
   if (db_name && db_desc)
     {
@@ -321,7 +338,8 @@ gdict_strategy_chooser_constructor (GType                  type,
   renderer = gtk_cell_renderer_text_new ();
   column = gtk_tree_view_column_new_with_attributes ("strategies",
 		  				     renderer,
-						     "text", DB_COLUMN_DESCRIPTION,
+						     "text", STRAT_COLUMN_DESCRIPTION,
+                                                     "weight", STRAT_COLUMN_CURRENT,
 						     NULL);
   priv->treeview = gtk_tree_view_new ();
   gtk_widget_set_composite_name (priv->treeview, "gdict-strategy-chooser-treeview");
@@ -345,9 +363,8 @@ gdict_strategy_chooser_constructor (GType                  type,
 		    chooser);
   gtk_box_pack_start (GTK_BOX (hbox), priv->refresh_button, FALSE, FALSE, 0);
   gtk_widget_show (priv->refresh_button);
-  gtk_tooltips_set_tip (priv->tips, priv->refresh_button,
-		  	_("Reload the list of available strategies"),
-			NULL);
+  gtk_widget_set_tooltip_text (priv->refresh_button,
+                               _("Reload the list of available strategies"));
 
   priv->clear_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->clear_button),
@@ -358,9 +375,8 @@ gdict_strategy_chooser_constructor (GType                  type,
 		    chooser);
   gtk_box_pack_start (GTK_BOX (hbox), priv->clear_button, FALSE, FALSE, 0);
   gtk_widget_show (priv->clear_button);
-  gtk_tooltips_set_tip (priv->tips, priv->clear_button,
-		        _("Clear the list of available strategies"),
-			NULL);
+  gtk_widget_set_tooltip_text (priv->clear_button,
+                               _("Clear the list of available strategies"));
 
   gtk_box_pack_end (GTK_BOX (chooser), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
@@ -376,10 +392,16 @@ gdict_strategy_chooser_class_init (GdictStrategyChooserClass *klass)
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
   
   gobject_class->finalize = gdict_strategy_chooser_finalize;
+  gobject_class->dispose = gdict_strategy_chooser_dispose;
   gobject_class->set_property = gdict_strategy_chooser_set_property;
   gobject_class->get_property = gdict_strategy_chooser_get_property;
   gobject_class->constructor = gdict_strategy_chooser_constructor;
   
+  /**
+   * GdictStrategyChooser:context:
+   *
+   * The #GdictContext object used to retrieve the list of strategies.
+   */
   g_object_class_install_property (gobject_class,
   				   PROP_CONTEXT,
   				   g_param_spec_object ("context",
@@ -388,6 +410,16 @@ gdict_strategy_chooser_class_init (GdictStrategyChooserClass *klass)
   				   			GDICT_TYPE_CONTEXT,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT)));
 
+  /**
+   * GdictStrategyChooser::strategy-activated:
+   * @chooser: the widget that received the signal
+   * @name: the name of the activated strategy
+   * @description: the description of the activate strategy
+   *
+   * The ::strategy-activated signal is emitted each time the user
+   * activates a strategy in the @chooser, either by double click or
+   * using the keyboard.
+   */
   db_chooser_signals[STRATEGY_ACTIVATED] =
     g_signal_new ("strategy-activated",
 		  G_OBJECT_CLASS_TYPE (gobject_class),
@@ -412,13 +444,11 @@ gdict_strategy_chooser_init (GdictStrategyChooser *chooser)
   priv->results = -1;
   priv->context = NULL;
 
-  priv->store = gtk_list_store_new (DB_N_COLUMNS,
-		                    G_TYPE_INT,    /* DBType */
-		                    G_TYPE_STRING, /* db_name */
-				    G_TYPE_STRING  /* db_desc */);
-
-  priv->tips = gtk_tooltips_new ();
-  g_object_ref_sink (G_OBJECT (priv->tips));
+  priv->store = gtk_list_store_new (STRAT_N_COLUMNS,
+		                    G_TYPE_INT,    /* strat_type */
+		                    G_TYPE_STRING, /* strat_name */
+				    G_TYPE_STRING, /* strat_desc */
+                                    G_TYPE_INT     /* strat_current */);
 
   priv->start_id = 0;
   priv->end_id = 0;
@@ -429,9 +459,11 @@ gdict_strategy_chooser_init (GdictStrategyChooser *chooser)
 /**
  * gdict_strategy_chooser_new:
  *
- * FIXME
+ * Creates a new #GdictStrategyChooser. Use this widget to show a list
+ * of matching strategies available on a dictionary source represented
+ * by a #GdictContext, set with gdict_strategy_chooser_set_context().
  *
- * Return value: FIXME
+ * Return value: the newly created #GdictStrategyChooser widget
  *
  * Since: 0.9
  */
@@ -445,9 +477,10 @@ gdict_strategy_chooser_new (void)
  * gdict_strategy_chooser_new_with_context:
  * @context: a #GdictContext
  *
- * FIXME
+ * Creates a new #GdictStrategyChooser widget, using @context as the
+ * representation of a dictionary source.
  *
- * Return value: FIXME
+ * Return value: the newly created #GdictStrategyChooser widget
  *
  * Since: 0.9
  */
@@ -465,7 +498,7 @@ gdict_strategy_chooser_new_with_context (GdictContext *context)
  * gdict_strategy_chooser_get_context:
  * @chooser: a #GdictStrategyChooser
  *
- * FIXME
+ * Retrieves the #GdictContext used by @chooser.
  *
  * Return value: a #GdictContext
  *
@@ -482,11 +515,12 @@ gdict_strategy_chooser_get_context (GdictStrategyChooser *chooser)
 /**
  * gdict_strategy_chooser_set_context:
  * @chooser: a #GdictStrategyChooser
- * @context: a #GdictContext
+ * @context: a #GdictContext, or %NULL to unset the context
  *
- * FIXME
+ * Sets the #GdictContext to be used by @chooser to retrieve the
+ * list of matching strategies.
  *
- * Since:
+ * Since: 0.9
  */
 void
 gdict_strategy_chooser_set_context (GdictStrategyChooser *chooser,
@@ -503,46 +537,108 @@ gdict_strategy_chooser_set_context (GdictStrategyChooser *chooser,
 /**
  * gdict_strategy_chooser_get_strategies:
  * @chooser: a #GdictStrategyChooser
- * @length: FIXME
+ * @length: return location for the length of the returned string list
  *
- * FIXME
+ * Retrieves the list of matching strategies available.
  *
- * Return value: FIXME
+ * Return value: a string vector containing the names of the matching
+ *   strategies. Use g_strfreev() to deallocate the memory when done
  *
- * Since:
+ * Since:0.9
  */
 gchar **
 gdict_strategy_chooser_get_strategies (GdictStrategyChooser  *chooser,
-				      gsize                  length)
+                                       gsize                 *length)
 {
+  GdictStrategyChooserPrivate *priv;
+  GtkTreeIter iter;
+  gchar **retval;
+  gsize i;
+
   g_return_val_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser), NULL);
 
-  return NULL;
+  priv = chooser->priv;
+
+  if (!gtk_tree_model_get_iter_first (GTK_TREE_MODEL (priv->store), &iter))
+    return NULL;
+
+  i = 0;
+  retval = g_new (gchar*, priv->results);
+
+  do
+    {
+      gchar *strat_name;
+
+      gtk_tree_model_get (GTK_TREE_MODEL (priv->store), &iter,
+                          STRAT_COLUMN_NAME, &strat_name,
+                          -1);
+
+      retval[i++] = strat_name;
+    }
+  while (gtk_tree_model_iter_next (GTK_TREE_MODEL (priv->store), &iter));
+
+  retval[i] = NULL;
+
+  if (length)
+    *length = i;
+
+  return retval;
 }
 
 /**
  * gdict_strategy_chooser_has_strategy:
  * @chooser: a #GdictStrategyChooser
- * @strategy: FIXME
+ * @strategy: a strategy name
  *
- * FIXME
+ * Checks whether @strategy is available in the list of matching
+ * strategies displayed by @chooser.
  *
- * Return value: FIXME
+ * Return value: %TRUE if the strategy was found, %FALSE otherwise
  *
- * Since:
+ * Since: 0.9
  */
 gboolean
 gdict_strategy_chooser_has_strategy (GdictStrategyChooser *chooser,
 				     const gchar          *strategy)
 {
+  GdictStrategyChooserPrivate *priv;
+  GtkTreeIter iter;
+  gboolean retval;
+
   g_return_val_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser), FALSE);
   g_return_val_if_fail (strategy != NULL, FALSE);
 
-  return FALSE;
+  priv = chooser->priv;
+
+  if (!gtk_tree_model_get_iter_first (GTK_TREE_MODEL (priv->store), &iter))
+    return FALSE;
+
+  retval = FALSE;
+
+  do
+    {
+      gchar *strat_name;
+
+      gtk_tree_model_get (GTK_TREE_MODEL (priv->store), &iter,
+                          STRAT_COLUMN_NAME, &strat_name,
+                          -1);
+      
+      if (strcmp (strat_name, strategy) == 0)
+        {
+          retval = TRUE;
+          g_free (strat_name);
+          break;
+        }
+
+      g_free (strat_name);
+    }
+  while (gtk_tree_model_iter_next (GTK_TREE_MODEL (priv->store), &iter));
+
+  return retval;
 }
 
 /**
- * gdict_strategy_chooser_count_dayabases:
+ * gdict_strategy_chooser_count_strategies:
  * @chooser: a #GdictStrategyChooser
  *
  * Returns the number of strategies found.
@@ -595,23 +691,29 @@ strategy_found_cb (GdictContext  *context,
 {
   GdictStrategyChooser *chooser = GDICT_STRATEGY_CHOOSER (user_data);
   GdictStrategyChooserPrivate *priv = chooser->priv;
+  const gchar *name, *description;
   GtkTreeIter iter;
+  gint weight = PANGO_WEIGHT_NORMAL;
 
-  _gdict_debug ("STRATEGY: `%s' (`%s')\n",
-		gdict_strategy_get_name (strategy),
-		gdict_strategy_get_description (strategy));
+  name = gdict_strategy_get_name (strategy);
+  description = gdict_strategy_get_description (strategy);
+
+  GDICT_NOTE (CHOOSER, "STRATEGY: `%s' (`%s')",
+              name,
+              description);
+
+  if (priv->current_strat && !strcmp (priv->current_strat, name))
+    weight = PANGO_WEIGHT_BOLD;
 
   gtk_list_store_append (priv->store, &iter);
   gtk_list_store_set (priv->store, &iter,
-		      DB_COLUMN_TYPE, STRATEGY_NAME,
-		      DB_COLUMN_NAME, gdict_strategy_get_name (strategy),
-		      DB_COLUMN_DESCRIPTION, gdict_strategy_get_description (strategy),
+		      STRAT_COLUMN_TYPE, STRATEGY_NAME,
+		      STRAT_COLUMN_NAME, name,
+		      STRAT_COLUMN_DESCRIPTION, description,
+                      STRAT_COLUMN_CURRENT, weight,
 		      -1);
 
-  if (priv->results == -1)
-    priv->results = 1;
-  else
-    priv->results += 1;
+  priv->results += 1;
 }
 
 static void
@@ -625,6 +727,7 @@ error_cb (GdictContext *context,
     gdk_window_set_cursor (GTK_WIDGET (chooser)->window, NULL);
 
   chooser->priv->is_searching = FALSE;
+  chooser->priv->results = 0;
 }
 
 /**
@@ -633,7 +736,7 @@ error_cb (GdictContext *context,
  *
  * Reloads the list of available strategies.
  *
- * Since:
+ * Since: 0.10
  */
 void
 gdict_strategy_chooser_refresh (GdictStrategyChooser *chooser)
@@ -654,12 +757,7 @@ gdict_strategy_chooser_refresh (GdictStrategyChooser *chooser)
     }
 
   if (priv->is_searching)
-    {
-      _gdict_show_error_dialog (NULL,
-				_("Another search is in progress"),
-				_("Please wait until the current search ends."));
-      return;
-    }
+    return;
 
   gdict_strategy_chooser_clear (chooser);
 
@@ -689,12 +787,14 @@ gdict_strategy_chooser_refresh (GdictStrategyChooser *chooser)
 
       gtk_list_store_append (priv->store, &iter);
       gtk_list_store_set (priv->store, &iter,
-		      	  DB_COLUMN_TYPE, STRATEGY_ERROR,
-			  DB_COLUMN_NAME, _("Error while matching"),
-			  DB_COLUMN_DESCRIPTION, NULL,
+		      	  STRAT_COLUMN_TYPE, STRATEGY_ERROR,
+			  STRAT_COLUMN_NAME, _("Error while matching"),
+			  STRAT_COLUMN_DESCRIPTION, NULL,
 			  -1);
 
-      _gdict_debug ("Error while searching: %s", db_error->message);
+      g_warning ("Error while retrieving strategies: %s",
+                 db_error->message);
+
       g_error_free (db_error);
     }
 }
@@ -705,7 +805,7 @@ gdict_strategy_chooser_refresh (GdictStrategyChooser *chooser)
  *
  * Clears @chooser.
  *
- * Since:
+ * Since: 0.10
  */
 void
 gdict_strategy_chooser_clear (GdictStrategyChooser *chooser)
@@ -719,7 +819,7 @@ gdict_strategy_chooser_clear (GdictStrategyChooser *chooser)
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview), NULL);
 
   gtk_list_store_clear (priv->store);
-  priv->results = -1;
+  priv->results = 0;
 
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
 		  	   GTK_TREE_MODEL (priv->store));
@@ -747,10 +847,7 @@ scan_for_strat_name (GtkTreeModel *model,
   if (!select_data)
     return TRUE;
 
-  if (select_data->found)
-    return TRUE;
-
-  gtk_tree_model_get (model, iter, DB_COLUMN_NAME, &strat_name, -1);
+  gtk_tree_model_get (model, iter, STRAT_COLUMN_NAME, &strat_name, -1);
   if (!strat_name)
     return FALSE;
 
@@ -763,8 +860,16 @@ scan_for_strat_name (GtkTreeModel *model,
 
       tree_view = GTK_TREE_VIEW (select_data->chooser->priv->treeview);
       if (select_data->do_activate)
-        gtk_tree_view_row_activated (tree_view, path,
-                                     gtk_tree_view_get_column (tree_view, 2));
+        {
+          GtkTreeViewColumn *column;
+
+          gtk_list_store_set (GTK_LIST_STORE (model), iter,
+                              STRAT_COLUMN_CURRENT, PANGO_WEIGHT_BOLD,
+                              -1);
+
+          column = gtk_tree_view_get_column (tree_view, 2);
+          gtk_tree_view_row_activated (tree_view, path, column);
+        }
 
       selection = gtk_tree_view_get_selection (tree_view);
       if (select_data->do_select)
@@ -772,18 +877,35 @@ scan_for_strat_name (GtkTreeModel *model,
       else
         gtk_tree_selection_unselect_path (selection, path);
     }
+  else
+    {
+      gtk_list_store_set (GTK_LIST_STORE (model), iter,
+                          STRAT_COLUMN_CURRENT, PANGO_WEIGHT_NORMAL,
+                          -1);
+    }
 
   g_free (strat_name);
 
-  return select_data->found;
+  return FALSE;
 }
 
+/**
+ * gdict_strategy_chooser_select_strategy:
+ * @chooser: a #GdictStrategyChooser
+ * @strat_name: the name of the strategy to select
+ *
+ * Selects @strat_name, if available.
+ *
+ * Return value: %TRUE if the matching strategy was found and selected
+ *
+ * Since: 0.10
+ */
 gboolean
 gdict_strategy_chooser_select_strategy (GdictStrategyChooser *chooser,
                                         const gchar          *strat_name)
 {
   GdictStrategyChooserPrivate *priv;
-  SelectData *data;
+  SelectData data;
   gboolean retval;
 
   g_return_val_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser), FALSE);
@@ -791,31 +913,41 @@ gdict_strategy_chooser_select_strategy (GdictStrategyChooser *chooser,
 
   priv = chooser->priv;
 
-  data = g_slice_new0 (SelectData);
-  data->strat_name = g_strdup (strat_name);
-  data->chooser = chooser;
-  data->found = FALSE;
-  data->do_select = TRUE;
-  data->do_activate = FALSE;
+  data.strat_name = g_strdup (strat_name);
+  data.chooser = chooser;
+  data.found = FALSE;
+  data.do_select = TRUE;
+  data.do_activate = FALSE;
 
   gtk_tree_model_foreach (GTK_TREE_MODEL (priv->store),
                           scan_for_strat_name,
-                          data);
+                          &data);
 
-  retval = data->found;
+  retval = data.found;
 
-  g_free (data->strat_name);
-  g_slice_free (SelectData, data);
+  g_free (data.strat_name);
 
   return retval;
 }
 
+/**
+ * gdict_strategy_chooser_unselect_strategy:
+ * @chooser: a #GdictStrategyChooser
+ * @strat_name: the name of the strategy to unselect
+ *
+ * Unselects @strat_name from the list.
+ *
+ * Return value: %TRUE if the matching strategy was found and successfully
+ *   unselected
+ *
+ * Since: 0.10
+ */
 gboolean
 gdict_strategy_chooser_unselect_strategy (GdictStrategyChooser *chooser,
                                           const gchar          *strat_name)
 {
   GdictStrategyChooserPrivate *priv;
-  SelectData *data;
+  SelectData data;
   gboolean retval;
 
   g_return_val_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser), FALSE);
@@ -823,31 +955,40 @@ gdict_strategy_chooser_unselect_strategy (GdictStrategyChooser *chooser,
 
   priv = chooser->priv;
 
-  data = g_slice_new0 (SelectData);
-  data->strat_name = g_strdup (strat_name);
-  data->chooser = chooser;
-  data->found = FALSE;
-  data->do_select = FALSE;
-  data->do_activate = FALSE;
+  data.strat_name = g_strdup (strat_name);
+  data.chooser = chooser;
+  data.found = FALSE;
+  data.do_select = FALSE;
+  data.do_activate = FALSE;
 
   gtk_tree_model_foreach (GTK_TREE_MODEL (priv->store),
                           scan_for_strat_name,
-                          data);
+                          &data);
 
-  retval = data->found;
+  retval = data.found;
 
-  g_free (data->strat_name);
-  g_slice_free (SelectData, data);
+  g_free (data.strat_name);
 
   return retval;
 }
 
+/**
+ * gdict_strategy_chooser_set_current_strategy:
+ * @chooser: a #GdictStrategyChooser
+ * @strat_name: the name of the matching strategy
+ *
+ * Sets @strat_name as the current matching strategy.
+ *
+ * Return value: %TRUE if the matching strategy was found
+ *
+ * Since: 0.10
+ */
 gboolean
 gdict_strategy_chooser_set_current_strategy (GdictStrategyChooser *chooser,
                                              const gchar          *strat_name)
 {
   GdictStrategyChooserPrivate *priv;
-  SelectData *data;
+  SelectData data;
   gboolean retval;
 
   g_return_val_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser), FALSE);
@@ -855,25 +996,43 @@ gdict_strategy_chooser_set_current_strategy (GdictStrategyChooser *chooser,
 
   priv = chooser->priv;
 
-  data = g_slice_new0 (SelectData);
-  data->strat_name = g_strdup (strat_name);
-  data->chooser = chooser;
-  data->found = FALSE;
-  data->do_select = TRUE;
-  data->do_activate = TRUE;
+  if (priv->current_strat && !strcmp (priv->current_strat, strat_name))
+    return TRUE;
+
+  data.strat_name = g_strdup (strat_name);
+  data.chooser = chooser;
+  data.found = FALSE;
+  data.do_select = TRUE;
+  data.do_activate = TRUE;
 
   gtk_tree_model_foreach (GTK_TREE_MODEL (priv->store),
                           scan_for_strat_name,
-                          data);
+                          &data);
 
-  retval = data->found;
+  retval = data.found;
 
-  g_free (data->strat_name);
-  g_slice_free (SelectData, data);
+  if (data.found)
+    {
+      g_free (priv->current_strat);
+      priv->current_strat = data.strat_name;
+    }
+  else
+    g_free (data.strat_name);
 
   return retval;
 }
 
+/**
+ * gdict_strategy_chooser_get_current_strategy:
+ * @chooser: a #GdictStrategyChooser
+ *
+ * Retrieves the current matching strategy.
+ *
+ * Return value: a newly allocated string containing the name of
+ *   the current matching strategy
+ *
+ * Since: 0.10
+ */
 gchar *
 gdict_strategy_chooser_get_current_strategy (GdictStrategyChooser *chooser)
 {
@@ -891,7 +1050,7 @@ gdict_strategy_chooser_get_current_strategy (GdictStrategyChooser *chooser)
   if (!gtk_tree_selection_get_selected (selection, &model, &iter))
     return NULL;
 
-  gtk_tree_model_get (model, &iter, DB_COLUMN_NAME, &retval, -1);
+  gtk_tree_model_get (model, &iter, STRAT_COLUMN_NAME, &retval, -1);
   
   g_free (priv->current_strat);
   priv->current_strat = g_strdup (retval);
@@ -899,6 +1058,18 @@ gdict_strategy_chooser_get_current_strategy (GdictStrategyChooser *chooser)
   return retval;
 }
 
+/**
+ * gdict_strategy_chooser_add_button:
+ * @chooser: a #GdictStrategyChooser
+ * @button_text: text of the button (can be a stock id)
+ *
+ * Creates a new button and packs it into the #GdictStrategyChooser
+ * "action area".
+ *
+ * Return value: the packed #GtkButton
+ *
+ * Since: 0.10
+ */
 GtkWidget *
 gdict_strategy_chooser_add_button (GdictStrategyChooser *chooser,
                                    const gchar          *button_text)

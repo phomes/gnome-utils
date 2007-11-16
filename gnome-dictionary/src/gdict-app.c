@@ -34,11 +34,6 @@
 #include <glib/goption.h>
 #include <glib/gi18n.h>
 #include <libgnome/libgnome.h>
-#include <libgnomeprint/gnome-print.h>
-#include <libgnomeprint/gnome-print-job.h>
-#include <libgnomeprint/gnome-print-pango.h>
-#include <libgnomeprintui/gnome-print-dialog.h>
-#include <libgnomeprintui/gnome-print-job-preview.h>
 
 #include "gdict-common.h"
 #include "gdict-pref-dialog.h"
@@ -395,6 +390,7 @@ gdict_init (int *argc, char ***argv)
 			      NULL, NULL);
   g_option_group_add_entries (group, gdict_app_goptions);
   g_option_context_set_main_group (context, group);
+  g_option_context_add_group (context, gdict_get_option_group ());
   
   singleton->program = gnome_program_init ("gnome-dictionary",
 					   VERSION,

@@ -32,19 +32,13 @@
 #include <gconf/gconf-client.h>
 #include <libgnomeui/gnome-authentication-manager.h>
 #include <libgnomeui/gnome-help.h>
-#include <libgnomeprint/gnome-print.h>
-#include <libgnomeprint/gnome-print-job.h>
-#include <libgnomeprint/gnome-print-pango.h>
-#include <libgnomeprintui/gnome-print-dialog.h>
-#include <libgnomeprintui/gnome-print-job-preview.h>
 
 #include "gdict-applet.h"
 #include "gdict-about.h"
 #include "gdict-pref-dialog.h"
 #include "gdict-print.h"
 #include "gdict-common.h"
-
-#include "gtkalignedwindow.h"
+#include "gdict-aligned-window.h"
 
 #define GDICT_APPLET_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_APPLET, GdictAppletClass))
 #define GDICT_APPLET_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_APPLET, GdictAppletClass))
@@ -60,8 +54,6 @@ struct _GdictAppletPrivate
 {
   guint size;
   GtkOrientation orient;
-  
-  GtkTooltips *tooltips;
   
   GConfClient *gconf_client;
   guint notify_id;
@@ -199,7 +191,6 @@ print_cb (GtkWidget   *widget,
     return;
   
   gdict_show_print_dialog (GTK_WINDOW (priv->window),
-  			   _("Print"),
   			   GDICT_DEFBOX (priv->defbox));
 }
 
@@ -334,7 +325,7 @@ gdict_applet_build_window (GdictApplet *applet)
       return;
     }
   
-  window = gtk_aligned_window_new (priv->toggle);
+  window = gdict_aligned_window_new (priv->toggle);
   g_signal_connect (window, "key-press-event",
 		    G_CALLBACK (window_key_press_event_cb),
 		    applet);
@@ -369,11 +360,7 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_widget_show (bbox);
   
   button = gtk_button_new_from_stock (GTK_STOCK_CLEAR);
-
-  gtk_tooltips_set_tip (priv->tooltips,
-		  	button,
-		  	_("Clear the definitions found"),
-			NULL);
+  gtk_widget_set_tooltip_text (button, _("Clear the definitions found"));
   set_atk_name_description (button,
 		  	    _("Clear definition"),
 			    _("Clear the text of the definition"));
@@ -383,11 +370,7 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_widget_show (button);
 
   button = gtk_button_new_from_stock (GTK_STOCK_PRINT);
-
-  gtk_tooltips_set_tip (priv->tooltips,
-		  	button,
-			_("Print the definitions found"),
-			NULL);
+  gtk_widget_set_tooltip_text (button, _("Print the definitions found"));
   set_atk_name_description (button,
 		  	    _("Print definition"),
 			    _("Print the text of the definition"));
@@ -397,11 +380,7 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_widget_show (button);
 
   button = gtk_button_new_from_stock (GTK_STOCK_SAVE);
-  
-  gtk_tooltips_set_tip (priv->tooltips,
-		  	button,
-			_("Save the definitions found"),
-			NULL);
+  gtk_widget_set_tooltip_text (button, _("Save the definitions found"));
   set_atk_name_description (button,
 		  	    _("Save definition"),
 			    _("Save the text of the definition to a file"));
@@ -551,14 +530,10 @@ gdict_applet_draw (GdictApplet *applet)
 
   /* toggle button */
   priv->toggle = gtk_toggle_button_new ();
-  
+  gtk_widget_set_tooltip_text (priv->toggle, _("Click to view the dictionary window"));
   set_atk_name_description (priv->toggle,
 			    _("Toggle dictionary window"),
 		  	    _("Show or hide the definition window"));
-  gtk_tooltips_set_tip (priv->tooltips,
-		  	priv->toggle,
-		  	_("Click to view the dictionary window"),
-			NULL);
   
   gtk_button_set_relief (GTK_BUTTON (priv->toggle),
 		  	 GTK_RELIEF_NONE);
@@ -610,14 +585,10 @@ gdict_applet_draw (GdictApplet *applet)
 
   /* entry */
   priv->entry = gtk_entry_new ();
-  
+  gtk_widget_set_tooltip_text (priv->entry, _("Type the word you want to look up"));
   set_atk_name_description (priv->entry,
 		  	    _("Dictionary entry"),
 			    _("Look up words in dictionaries"));
-  gtk_tooltips_set_tip (priv->tooltips,
-		  	priv->entry,
-			_("Type the word you want to look up"),
-			NULL);
   
   gtk_entry_set_editable (GTK_ENTRY (priv->entry), TRUE);
   gtk_entry_set_width_chars (GTK_ENTRY (priv->entry), 12);
@@ -1155,9 +1126,6 @@ gdict_applet_finalize (GObject *object)
   if (priv->loader)
     g_object_unref (priv->loader);
   
-  if (priv->tooltips)
-    g_object_unref (priv->tooltips);
-
   if (priv->icon)
     g_object_unref (priv->icon);
   
@@ -1287,10 +1255,6 @@ gdict_applet_init (GdictApplet *applet)
 					 0,
 					 NULL);
   
-  priv->tooltips = gtk_tooltips_new ();
-  g_object_ref (priv->tooltips);
-  gtk_object_sink (GTK_OBJECT (priv->tooltips));
-
   /* force first draw */
   gdict_applet_draw (applet);
 

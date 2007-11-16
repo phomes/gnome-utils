@@ -41,10 +41,11 @@
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 #include <gtk/gtkbindings.h>
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 
 #include "gdict-defbox.h"
 #include "gdict-utils.h"
+#include "gdict-debug.h"
 #include "gdict-private.h"
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
@@ -152,52 +153,79 @@ definition_free (Definition *def)
 }
 
 static void
-gdict_defbox_finalize (GObject *object)
+gdict_defbox_dispose (GObject *gobject)
 {
-  GdictDefbox *defbox = GDICT_DEFBOX (object);
+  GdictDefbox *defbox = GDICT_DEFBOX (gobject);
   GdictDefboxPrivate *priv = defbox->priv;
-  
+
   if (priv->start_id)
     {
       g_signal_handler_disconnect (priv->context, priv->start_id);
       g_signal_handler_disconnect (priv->context, priv->end_id);
       g_signal_handler_disconnect (priv->context, priv->define_id);
-    }
-  
-  if (priv->error_id)
-    g_signal_handler_disconnect (priv->context, priv->error_id);
-      
-  if (priv->context)
-    g_object_unref (priv->context);
-  
-  if (priv->database)
-    g_free (priv->database);
-  
-  if (priv->word)
-    g_free (priv->word);
 
-  if (priv->font_name)
-    g_free (priv->font_name);
-  
+      priv->start_id = 0;
+      priv->end_id = 0;
+      priv->define_id = 0;
+    }
+
+  if (priv->error_id)
+    {
+      g_signal_handler_disconnect (priv->context, priv->error_id);
+      priv->error_id = 0;
+    }
+
+  if (priv->context)
+    {
+      g_object_unref (priv->context);
+      priv->context = NULL;
+    }
+
+  if (priv->buffer)
+    {
+      g_object_unref (priv->buffer);
+      priv->buffer = NULL;
+    }
+
+  if (priv->busy_cursor)
+    {
+      gdk_cursor_unref (priv->busy_cursor);
+      priv->busy_cursor = NULL;
+    }
+
+  if (priv->hand_cursor)
+    {
+      gdk_cursor_unref (priv->hand_cursor);
+      priv->hand_cursor = NULL;
+    }
+
+  if (priv->regular_cursor)
+    {
+      gdk_cursor_unref (priv->regular_cursor);
+      priv->regular_cursor = NULL;
+    }
+
+  G_OBJECT_CLASS (gdict_defbox_parent_class)->dispose (gobject);
+}
+
+static void
+gdict_defbox_finalize (GObject *object)
+{
+  GdictDefbox *defbox = GDICT_DEFBOX (object);
+  GdictDefboxPrivate *priv = defbox->priv;
+
+  g_free (priv->database);
+  g_free (priv->word);
+  g_free (priv->font_name);
+
   if (priv->definitions)
     {
       g_slist_foreach (priv->definitions, (GFunc) definition_free, NULL);
       g_slist_free (priv->definitions);
-      
+
       priv->definitions = NULL;
     }
-  
-  g_object_unref (priv->buffer);
-  
-  if (priv->busy_cursor)
-    gdk_cursor_unref (priv->busy_cursor);
 
-  if (priv->hand_cursor)
-    gdk_cursor_unref (priv->hand_cursor);
-
-  if (priv->regular_cursor)
-    gdk_cursor_unref (priv->regular_cursor);
-  
   G_OBJECT_CLASS (gdict_defbox_parent_class)->finalize (object);
 }
 
@@ -214,7 +242,7 @@ set_gdict_context (GdictDefbox  *defbox,
     {
       if (priv->start_id)
         {
-          _gdict_debug ("Removing old context handlers\n");
+          GDICT_NOTE (DEFBOX, "Removing old context handlers");
           
           g_signal_handler_disconnect (priv->context, priv->start_id);
           g_signal_handler_disconnect (priv->context, priv->define_id);
@@ -232,7 +260,7 @@ set_gdict_context (GdictDefbox  *defbox,
           priv->error_id = 0;
         }
 
-      _gdict_debug ("Removing old context\n");
+      GDICT_NOTE (DEFBOX, "Removing old context");
       
       g_object_unref (G_OBJECT (priv->context));
     }
@@ -247,7 +275,7 @@ set_gdict_context (GdictDefbox  *defbox,
       return;
     }
 
-  _gdict_debug ("Setting new context\n");
+  GDICT_NOTE (DEFBOX, "Setting new context");
     
   priv->context = context;
   g_object_ref (G_OBJECT (priv->context));
@@ -264,6 +292,9 @@ gdict_defbox_set_property (GObject      *object,
   
   switch (prop_id)
     {
+    case PROP_WORD:
+      gdict_defbox_lookup (defbox, g_value_get_string (value));
+      break;
     case PROP_CONTEXT:
       set_gdict_context (defbox, g_value_get_object (value));
       break;
@@ -291,6 +322,9 @@ gdict_defbox_get_property (GObject    *object,
   
   switch (prop_id)
     {
+    case PROP_WORD:
+      g_value_set_string (value, priv->word);
+      break;
     case PROP_CONTEXT:
       g_value_set_object (value, priv->context);
       break;
@@ -1239,6 +1273,18 @@ find_entry_changed_cb (GtkWidget *widget,
     }
 }
 
+static void
+close_button_clicked (GtkButton *button,
+                      gpointer   data)
+{
+  GdictDefboxPrivate *priv = GDICT_DEFBOX (data)->priv;
+
+  if (priv->hide_timeout)
+    g_source_remove (priv->hide_timeout);
+
+  (void) hide_find_pane (data);
+}
+
 static GtkWidget *
 create_find_pane (GdictDefbox *defbox)
 {
@@ -1247,6 +1293,7 @@ create_find_pane (GdictDefbox *defbox)
   GtkWidget *label;
   GtkWidget *sep;
   GtkWidget *hbox1, *hbox2;
+  GtkWidget *button;
  
   priv = defbox->priv;
   
@@ -1256,6 +1303,16 @@ create_find_pane (GdictDefbox *defbox)
   hbox1 = gtk_hbox_new (FALSE, 6);
   gtk_box_pack_start (GTK_BOX (find_pane), hbox1, TRUE, TRUE, 0);
   gtk_widget_show (hbox1);
+
+  button = gtk_button_new ();
+  gtk_button_set_relief (GTK_BUTTON (button), GTK_RELIEF_NONE);
+  gtk_button_set_image (GTK_BUTTON (button),
+                        gtk_image_new_from_stock (GTK_STOCK_CLOSE,
+                                                  GTK_ICON_SIZE_BUTTON));
+  g_signal_connect (button, "clicked",
+                    G_CALLBACK (close_button_clicked), defbox);
+  gtk_box_pack_start (GTK_BOX (hbox1), button, FALSE, FALSE, 0);
+  gtk_widget_show (button);
 
   hbox2 = gtk_hbox_new (FALSE, 12);
   gtk_box_pack_start (GTK_BOX (hbox1), hbox2, TRUE, TRUE, 0);
@@ -1691,13 +1748,28 @@ gdict_defbox_class_init (GdictDefboxClass *klass)
   gobject_class->constructor = gdict_defbox_constructor;
   gobject_class->set_property = gdict_defbox_set_property;
   gobject_class->get_property = gdict_defbox_get_property;
+  gobject_class->dispose = gdict_defbox_dispose;
   gobject_class->finalize = gdict_defbox_finalize;
   
   widget_class->show_all = gdict_defbox_show_all;
   widget_class->style_set = gdict_defbox_style_set;
-  
+
   /**
-   * GdictDefbox:context
+   * GdictDefbox:word:
+   *
+   * The word to look up.
+   *
+   * Since: 0.10
+   */
+  g_object_class_install_property (gobject_class,
+                                   PROP_WORD,
+                                   g_param_spec_string ("word",
+                                                        "Word",
+                                                        "The word to look up",
+                                                        NULL,
+                                                        G_PARAM_READWRITE));
+  /**
+   * GdictDefbox:context:
    *
    * The #GdictContext object used to get the word definition.
    *
@@ -1871,9 +1943,7 @@ gdict_defbox_new_with_context (GdictContext *context)
 {
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), NULL);
   
-  return g_object_new (GDICT_TYPE_DEFBOX,
-                       "context", context,
-                       NULL);
+  return g_object_new (GDICT_TYPE_DEFBOX, "context", context, NULL);
 }
 
 /**
@@ -1909,15 +1979,9 @@ gdict_defbox_set_context (GdictDefbox  *defbox,
 GdictContext *
 gdict_defbox_get_context (GdictDefbox *defbox)
 {
-  GdictContext *context;
-  
   g_return_val_if_fail (GDICT_IS_DEFBOX (defbox), NULL);
-  
-  g_object_get (defbox, "context", &context, NULL);
-  if (context)
-    g_object_unref (context);
-  
-  return context;
+
+  return defbox->priv->context;
 }
 
 /**
@@ -1925,8 +1989,8 @@ gdict_defbox_get_context (GdictDefbox *defbox)
  * @defbox: a #GdictDefbox
  * @database: a database
  *
- * Sets @database as the database used by the #GdictContext bound to @defbox to
- * query for word definitions.
+ * Sets @database as the database used by the #GdictContext bound to @defbox
+ * to query for word definitions.
  *
  * Since: 0.1
  */
@@ -1934,9 +1998,16 @@ void
 gdict_defbox_set_database (GdictDefbox *defbox,
 			   const gchar *database)
 {
+  GdictDefboxPrivate *priv;
+
   g_return_if_fail (GDICT_IS_DEFBOX (defbox));
 
-  g_object_set (G_OBJECT (defbox), "database", database, NULL);
+  priv = defbox->priv;
+
+  g_free (priv->database);
+  priv->database = g_strdup (database);
+
+  g_object_notify (G_OBJECT (defbox), "database");
 }
 
 /**
@@ -1945,21 +2016,37 @@ gdict_defbox_set_database (GdictDefbox *defbox,
  *
  * Gets the database used by @defbox.  See gdict_defbox_set_database().
  *
- * Return value: the name of a database.  The string is owned by the
- * #GdictDefbox and should not be modified or freed.
+ * Return value: the name of a database. The return string is owned by
+ *   the #GdictDefbox widget and should not be modified or freed.
  *
  * Since: 0.1
  */
 G_CONST_RETURN gchar *
 gdict_defbox_get_database (GdictDefbox *defbox)
 {
-  gchar *database;
-  
   g_return_val_if_fail (GDICT_IS_DEFBOX (defbox), NULL);
 
-  g_object_get (G_OBJECT (defbox), "database", &database, NULL);
+  return defbox->priv->database;
+}
 
-  return database;
+/**
+ * gdict_defbox_get_word:
+ * @defbox: a #GdictDefbox
+ *
+ * Retrieves the word being looked up.
+ *
+ * Return value: the word looked up, or %NULL. The returned string is
+ *   owned by the #GdictDefbox widget and should never be modified or
+ *   freed.
+ *
+ * Since: 0.12
+ */
+G_CONST_RETURN gchar *
+gdict_defbox_get_word (GdictDefbox *defbox)
+{
+  g_return_val_if_fail (GDICT_IS_DEFBOX (defbox), NULL);
+
+  return defbox->priv->word;
 }
 
 /**
@@ -2061,9 +2148,6 @@ lookup_end_cb (GdictContext *context,
   				     GTK_TEXT_WINDOW_WIDGET);
   
   gdk_window_set_cursor (window, NULL);
-  
-  g_free (priv->word);
-  priv->word = NULL;
 
   priv->is_searching = FALSE;
 }
@@ -2475,6 +2559,7 @@ gdict_defbox_lookup (GdictDefbox *defbox,
   				       defbox);
   
   priv->word = g_strdup (word);
+  g_object_notify (G_OBJECT (defbox), "word");
   
   define_error = NULL;
   gdict_context_define_word (priv->context,
@@ -2774,7 +2859,12 @@ gdict_defbox_get_font_name (GdictDefbox *defbox)
  * gdict_defbox_get_selected_word:
  * @defbox: a #GdictDefbox
  *
- * Since: 0.11
+ * Retrieves the selected word from the defbox widget
+ *
+ * Return value: a newly allocated string containing the selected
+ *   word. Use g_free() when done using it.
+ *
+ * Since: 0.12
  */
 gchar *
 gdict_defbox_get_selected_word (GdictDefbox *defbox)

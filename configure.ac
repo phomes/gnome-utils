@@ -1,4 +1,4 @@
-AC_INIT([gnome-utils], [2.19.91],
+AC_INIT([gnome-utils], [2.21.0],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-utils])
 AM_CONFIG_HEADER(config.h)
 AM_INIT_AUTOMAKE
@@ -6,7 +6,7 @@ AM_INIT_AUTOMAKE
 AC_CONFIG_MACRO_DIR([m4])
 GNOME_COMMON_INIT
 
-AM_MAINTAINER_MODE
+dnl AM_MAINTAINER_MODE
 GNOME_MAINTAINER_MODE_DEFINES
 
 IT_PROG_INTLTOOL([0.35.0])
@@ -53,7 +53,7 @@ AC_CHECK_FUNCS(getcwd gettimeofday getwd putenv strdup strtoul uname logf getpgi
 #   change to C+1:0:0
 # - If the interface is the same as the previous version, change to C:R+1:A
 
-LIBGDICT_LT_VERSION=5:13:0
+LIBGDICT_LT_VERSION=6:0:0
 AC_SUBST(LIBGDICT_LT_VERSION)
 
 dnl *****************************************
@@ -73,8 +73,8 @@ dnl *****************************************
 dnl pkg-config check time
 dnl *****************************************
 
-GLIB_REQUIRED=2.13.3
-GTK_REQUIRED=2.10.0
+GLIB_REQUIRED=2.14.0
+GTK_REQUIRED=2.11.6
 LIBGNOME_DESKTOP_REQUIRED=2.9.91
 LIBGNOME_REQUIRED=2.13.2
 LIBGNOMEUI_REQUIRED=2.13.7
@@ -82,8 +82,6 @@ LIBGLADE_REQUIRED=2.3.0
 LIBBONOBOUI_REQUIRED=2.1.0
 GNOMEVFS_REQUIRED=2.8.4
 LIBPANEL_APPLET_REQUIRED=2.13.4
-LIBGNOMEPRINT_REQUIRED=2.8.0
-LIBGNOMEPRINTUI_REQUIRED=2.8.0
 LIBGTOP_REQUIRED=2.12.0
 GNOMECANVAS_REQUIRED=2.10.2
 GMODULE_REQUIRED=2.10.2
@@ -107,13 +105,6 @@ AC_SUBST(LIBGLADE_CFLAGS)
 AC_SUBST(LIBGLADE_LIBS)
 
 dnl *****************************************
-dnl gnome-dictionary needs libgnomeprint and libgnomeprintui
-dnl *****************************************
-PKG_CHECK_MODULES(LIBGNOMEPRINT, libgnomeprintui-2.2 >= $LIBGNOMEPRINTUI_REQUIRED)
-AC_SUBST(LIBGNOMEPRINT_CFLAGS)
-AC_SUBST(LIBGNOMEPRINT_LIBS)
-
-dnl *****************************************
 dnl libgdict requires just gtk+
 dnl *****************************************
 PKG_CHECK_MODULES(LIBGDICT, glib-2.0 >= $GLIB_REQUIRED dnl
@@ -129,8 +120,8 @@ AC_SUBST(LIBGDICT_LIBS)
 # follow the same rules: no ABI breakage (unless unavoidable) and
 # no API breakage past the API freeze.
 m4_define([gdict_major_version], [0])
-m4_define([gdict_minor_version], [10])
-m4_define([gdict_micro_version], [9])
+m4_define([gdict_minor_version], [11])
+m4_define([gdict_micro_version], [0])
 m4_define([gdict_version],
 	  [gdict_major_version().gdict_minor_version().gdict_micro_version()])
 
@@ -250,17 +241,18 @@ if test "x$CONSOLE_HELPER" = "xno" -a "x$enable_console_helper" = "xyes" ; then
 fi
 
 dnl Enable debug messages
+m4_define([debug_default],
+          m4_if(m4_eval(gdict_minor_version % 2), [1], [yes], [no]))
 AC_ARG_ENABLE(debug,
               AC_HELP_STRING([--enable-debug=@<:@no/yes@:>@],
-                             [Enable debug messages @<:@default=no@:>@]),,
-              enable_debug=no)
+                             [Enable debug messages @<:@default=debug_default@:>@]),,
+              enable_debug=debug_default)
 
 if test "x$enable_debug" = "xyes"; then
-	AM_CONDITIONAL(ENABLE_DEBUG, true)
-else
-	AM_CONDITIONAL(ENABLE_DEBUG, false)
+  GDICT_DEBUG_CFLAGS="-DGDICT_ENABLE_DEBUG"
 fi
 
+AC_SUBST(GDICT_DEBUG_CFLAGS)
 
 dnl IPv6 support
 AC_MSG_CHECKING([whether to enable IPv6])
@@ -447,6 +439,7 @@ else
 fi
 EXPANDED_LOGVIEWDIR=`eval echo $LOGVIEWDIR_TMP`
 AC_SUBST(EXPANDED_LOGVIEWDIR)
+
 PLUGIN_LIBTOOL_FLAGS="-module -avoid-version"
 AC_SUBST(PLUGIN_LIBTOOL_FLAGS)
 
@@ -504,11 +497,11 @@ gnome-dictionary/Makefile
 gnome-dictionary/libgdict/Makefile
 gnome-dictionary/libgdict/gdict-version.h
 gnome-dictionary/libgdict/gdict-1.0.pc
-gnome-dictionary/libgdict/gdict-1.0-uninstalled.pc
 gnome-dictionary/data/Makefile
 gnome-dictionary/docs/Makefile
 gnome-dictionary/docs/reference/Makefile
 gnome-dictionary/docs/reference/gdict/Makefile
+gnome-dictionary/docs/reference/gdict/version.xml
 gnome-dictionary/help/Makefile
 gnome-dictionary/src/Makefile
 gfloppy/Makefile

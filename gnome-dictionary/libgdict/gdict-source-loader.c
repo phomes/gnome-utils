@@ -38,7 +38,7 @@
 
 #include <glib.h>
 #include <glib/gstdio.h>
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 
 #include "gdict-source-loader.h"
 #include "gdict-utils.h"
@@ -573,4 +573,28 @@ gdict_source_loader_remove_source (GdictSourceLoader *loader,
     }
   
   return FALSE;
+}
+
+/**
+ * gdict_source_loader_has_source:
+ * @loader: a #GdictSourceLoader
+ * @source_name: the name of a dictionary source
+ *
+ * Checks whether @loader has a dictionary source with name @source_name.
+ *
+ * Return value: %TRUE if the dictionary source is known
+ *
+ * Since: 0.12
+ */
+gboolean
+gdict_source_loader_has_source (GdictSourceLoader *loader,
+                                const gchar       *source_name)
+{
+  g_return_val_if_fail (GDICT_IS_SOURCE_LOADER (loader), FALSE);
+  g_return_val_if_fail (source_name != NULL, FALSE);
+
+  if (loader->priv->paths_dirty)
+    gdict_source_loader_update_sources (loader);
+
+  return (g_hash_table_lookup (loader->priv->sources_by_name, source_name) != NULL);
 }

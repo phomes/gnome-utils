@@ -37,12 +37,13 @@
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 #include <gtk/gtkbindings.h>
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 
 #include "gdict-speller.h"
 #include "gdict-utils.h"
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
+#include "gdict-debug.h"
 #include "gdict-private.h"
 
 #define GDICT_SPELLER_GET_PRIVATE(obj) \
@@ -64,8 +65,6 @@ struct _GdictSpellerPrivate
   GtkListStore *store;
   gint results;
 
-  GtkTooltips *tips;
-  
   guint start_id;
   guint end_id;
   guint match_id;
@@ -126,7 +125,7 @@ set_gdict_context (GdictSpeller *speller,
     {
       if (priv->start_id)
         {
-          _gdict_debug ("Removing old context handlers\n");
+          GDICT_NOTE (SPELLER, "Removing old context handlers");
           
           g_signal_handler_disconnect (priv->context, priv->start_id);
           g_signal_handler_disconnect (priv->context, priv->match_id);
@@ -144,7 +143,7 @@ set_gdict_context (GdictSpeller *speller,
           priv->error_id = 0;
         }
 
-      _gdict_debug ("Removing old context\n");
+      GDICT_NOTE (SPELLER, "Removing old context");
       
       g_object_unref (G_OBJECT (priv->context));
     }
@@ -159,7 +158,7 @@ set_gdict_context (GdictSpeller *speller,
       return;
     }
 
-  _gdict_debug ("Setting new context\n");
+  GDICT_NOTE (SPELLER, "Setting new context\n");
     
   priv->context = context;
   g_object_ref (G_OBJECT (priv->context));
@@ -176,9 +175,6 @@ gdict_speller_finalize (GObject *gobject)
 
   if (priv->busy_cursor)
     gdk_cursor_unref (priv->busy_cursor);
-
-  if (priv->tips)
-    g_object_unref (priv->tips);
 
   g_free (priv->strategy);
   g_free (priv->database);
@@ -355,9 +351,8 @@ gdict_speller_constructor (GType                  type,
 		    speller);
   gtk_box_pack_start (GTK_BOX (hbox), priv->clear_button, FALSE, FALSE, 0);
   gtk_widget_show (priv->clear_button);
-  gtk_tooltips_set_tip (priv->tips, priv->clear_button,
-		        _("Clear the list of similar words"),
-			NULL);
+  gtk_widget_set_tooltip_text (priv->clear_button,
+                               _("Clear the list of similar words"));
 
   gtk_box_pack_end (GTK_BOX (speller), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
@@ -432,9 +427,6 @@ gdict_speller_init (GdictSpeller *speller)
 		                    G_TYPE_STRING, /* db_name */
 				    G_TYPE_STRING  /* word */);
 
-  priv->tips = gtk_tooltips_new ();
-  g_object_ref_sink (G_OBJECT (priv->tips));
-  
   priv->start_id = 0;
   priv->end_id = 0;
   priv->match_id = 0;
@@ -673,9 +665,9 @@ match_found_cb (GdictContext *context,
   GdictSpellerPrivate *priv = speller->priv;
   GtkTreeIter iter;
   
-  _gdict_debug ("MATCH: `%s' (from `%s')\n",
-		gdict_match_get_word (match),
-		gdict_match_get_database (match));
+  GDICT_NOTE (SPELLER, "MATCH: `%s' (from `%s')",
+              gdict_match_get_word (match),
+              gdict_match_get_database (match));
 
   gtk_list_store_append (priv->store, &iter);
   gtk_list_store_set (priv->store, &iter,
@@ -789,7 +781,10 @@ gdict_speller_match (GdictSpeller *speller,
 			  MATCH_COLUMN_WORD, NULL,
 			  -1);
       
-      _gdict_debug ("Error while matching: %s", match_error->message);
+      g_warning ("Error while matching `%s': %s",
+                 priv->word,
+                 match_error->message);
+
       g_error_free (match_error);
     }
 }

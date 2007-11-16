@@ -48,13 +48,14 @@
 #endif
 
 #include <glib.h>
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 
 #include "gdict-context-private.h"
 #include "gdict-context.h"
 #include "gdict-client-context.h"
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
+#include "gdict-debug.h"
 #include "gdict-utils.h"
 #include "gdict-private.h"
 
@@ -723,8 +724,9 @@ gdict_client_context_push_command (GdictClientContext *context,
       return FALSE;
     }
   
-  _gdict_debug ("Pushing command ('%s') into the queue...\n",
-               dict_command_strings[command->cmd_type]);
+  GDICT_NOTE (DICT, "Pushing command ('%s') into the queue...",
+              dict_command_strings[command->cmd_type]);
+
   g_queue_push_head (priv->commands_queue, command);
   
   return TRUE;
@@ -744,8 +746,8 @@ gdict_client_context_pop_command (GdictClientContext *context)
   if (!retval)
     return NULL;
   
-  _gdict_debug ("Getting command ('%s') from the queue...\n",
-               dict_command_strings[retval->cmd_type]);
+  GDICT_NOTE (DICT, "Getting command ('%s') from the queue...",
+              dict_command_strings[retval->cmd_type]);
   
   return retval;
 }
@@ -768,7 +770,7 @@ gdict_client_context_send_command (GdictClientContext  *context,
   
   if (!priv->channel)
     {
-      _gdict_debug ("No connection established\n");
+      GDICT_NOTE (DICT, "No connection established");
       
       g_set_error (error, GDICT_CLIENT_CONTEXT_ERROR,
                    GDICT_CLIENT_CONTEXT_ERROR_NO_CONNECTION,
@@ -795,8 +797,7 @@ gdict_client_context_send_command (GdictClientContext  *context,
   /* force flushing of the write buffer */
   g_io_channel_flush (priv->channel, NULL);
   
-  _gdict_debug ("Wrote (%d bytes) to the channel\n",
-               written_bytes);
+  GDICT_NOTE (DICT, "Wrote %d bytes to the channel", written_bytes);
   
   return TRUE;
 }  
@@ -811,6 +812,7 @@ gdict_client_context_run_command (GdictClientContext  *context,
                                   GError             **error)
 {
   GdictClientContextPrivate *priv;
+  gchar *payload;
   GError *send_error;
   gboolean res;
   
@@ -818,17 +820,17 @@ gdict_client_context_run_command (GdictClientContext  *context,
   g_assert (command != NULL);
   g_assert (IS_VALID_CMD (command->cmd_type));
   
-  _gdict_debug ("GdictCommand command =\n"
-               "{\n"
-               "  .cmd_type = '%02d' ('%s');\n"
-               "  .database = '%s';\n"
-               "  .strategy = '%s';\n"
-               "  .word     = '%s';\n"
-               "}\n",
-               command->cmd_type, dict_command_strings[command->cmd_type],
-               command->database ? command->database : "<none>",
-               command->strategy ? command->strategy : "<none>",
-               command->word ? command->word : "<none>");
+  GDICT_NOTE (DICT, "GdictCommand command =\n"
+                    "{\n"
+                    "  .cmd_type = '%02d' ('%s');\n"
+                    "  .database = '%s';\n"
+                    "  .strategy = '%s';\n"
+                    "  .word     = '%s';\n"
+                    "}\n",
+              command->cmd_type, dict_command_strings[command->cmd_type],
+              command->database ? command->database : "<none>",
+              command->strategy ? command->strategy : "<none>",
+              command->word ? command->word : "<none>");
   
   priv = context->priv;
 
@@ -840,9 +842,11 @@ gdict_client_context_run_command (GdictClientContext  *context,
   switch (command->cmd_type)
     {
     case CMD_CLIENT:
-      command->cmd_string = g_strdup_printf ("%s \"%s\"\r\n",
+      payload = g_shell_quote (priv->client_name);
+      command->cmd_string = g_strdup_printf ("%s %s\r\n",
                                              dict_command_strings[CMD_CLIENT],
-                                             priv->client_name);
+                                             payload);
+      g_free (payload);
       break;
     case CMD_QUIT:
       command->cmd_string = g_strdup_printf ("%s\r\n",
@@ -858,18 +862,22 @@ gdict_client_context_run_command (GdictClientContext  *context,
       break;
     case CMD_MATCH:
       g_assert (command->word);
-      command->cmd_string = g_strdup_printf ("%s %s %s \"%s\"\r\n",
+      payload = g_shell_quote (command->word);
+      command->cmd_string = g_strdup_printf ("%s %s %s %s\r\n",
                                              dict_command_strings[CMD_MATCH],
                                              (command->database != NULL ? command->database : "!"),
                                              (command->strategy != NULL ? command->strategy : "*"),
-                                             command->word);
+                                             payload);
+      g_free (payload);
       break;
     case CMD_DEFINE:
       g_assert (command->word);
-      command->cmd_string = g_strdup_printf ("%s %s \"%s\"\r\n",
+      payload = g_shell_quote (command->word);
+      command->cmd_string = g_strdup_printf ("%s %s %s\r\n",
                                              dict_command_strings[CMD_DEFINE],
                                              (command->database != NULL ? command->database : "!"),
-                                             command->word);
+                                             payload);
+      g_free (payload);
       break;
     default:
       g_assert_not_reached ();
@@ -878,8 +886,8 @@ gdict_client_context_run_command (GdictClientContext  *context,
   
   g_assert (command->cmd_string);
 
-  _gdict_debug ("Sending command ('%s') to the server\n",
-               dict_command_strings[command->cmd_type]);
+  GDICT_NOTE (DICT, "Sending command ('%s') to the server",
+              dict_command_strings[command->cmd_type]);
 
   send_error = NULL;
   res = gdict_client_context_send_command (context, command, &send_error);
@@ -915,11 +923,14 @@ clear_command_queue (GdictClientContext *context)
 {
   GdictClientContextPrivate *priv = context->priv;
 
-  g_queue_foreach (priv->commands_queue,
-                   (GFunc) gdict_command_free,
-                   NULL);
+  if (priv->commands_queue)
+    {
+      g_queue_foreach (priv->commands_queue,
+                       (GFunc) gdict_command_free,
+                       NULL);
   
-  g_queue_free (priv->commands_queue);
+      g_queue_free (priv->commands_queue);
+    }
   
   /* renew */
   priv->commands_queue = g_queue_new ();
@@ -1018,14 +1029,14 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
   /* clear any previously acquired lookup data */
   gdict_client_context_clear_hostinfo (context);
   
-  _gdict_debug ("Looking up hostname '%s'\n", priv->hostname);
+  GDICT_NOTE (DICT, "Looking up hostname '%s'", priv->hostname);
   
 #ifdef ENABLE_IPV6
   if (_gdict_has_ipv6 ())
     {
       struct addrinfo hints, *res;
       
-      _gdict_debug ("Hostname '%s' look-up (using IPv6)\n", priv->hostname);
+      GDICT_NOTE (DICT, "Hostname '%s' look-up (using IPv6)", priv->hostname);
       
       memset (&hints, 0, sizeof (hints));
       hints.ai_socktype = SOCK_STREAM;
@@ -1059,8 +1070,8 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
 
 	      priv->sockaddr.ss_family = res->ai_family;
 	      
-	      _gdict_debug ("Hostname '%s' found (using IPv6)\n",
-			    priv->hostname);
+	      GDICT_NOTE (DICT, "Hostname '%s' found (using IPv6)",
+                          priv->hostname);
 	      
 	      priv->last_lookup = time (NULL);
 
@@ -1083,8 +1094,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
 #endif /* ENABLE_IPV6 */
       /* if we don't support IPv6, fallback to usual IPv4 lookup */
       
-      _gdict_debug ("Hostname '%s' look-up (using IPv4)\n",
-		    priv->hostname);
+      GDICT_NOTE (DICT, "Hostname '%s' look-up (using IPv4)", priv->hostname);
       
       ((struct sockaddr_in *) &priv->sockaddr)->sin_family = AF_INET;
 	
@@ -1095,8 +1105,8 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
                   priv->hostinfo->h_addr,
                   priv->hostinfo->h_length);
           
-          _gdict_debug ("Hostname '%s' found (using IPv4)\n",
-			priv->hostname);
+          GDICT_NOTE (DICT, "Hostname '%s' found (using IPv4)",
+		      priv->hostname);
 
 	  priv->last_lookup = time (NULL);
           
@@ -1136,7 +1146,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
   
   priv = context->priv;
   
-  _gdict_debug ("parse buffer: '%s'\n", buffer);
+  GDICT_NOTE (DICT, "parse buffer: '%s'", buffer);
   
   /* connection is a special case: we don't have a command, so we just
    * make sure that the server replied with the correct code. WARNING:
@@ -1209,7 +1219,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
                    _("No definitions found for '%s'"),
                    priv->command->word);
 
-      _gdict_debug ("error: %s\n", server_error->message);
+      GDICT_NOTE (DICT, "No match: %s", server_error->message);
       
       g_signal_emit_by_name (context, "error", server_error);
           
@@ -1224,7 +1234,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
                    _("Invalid database '%s'"),
                    priv->command->database);
 
-      _gdict_debug ("error: %s\n", server_error->message);
+      GDICT_NOTE (DICT, "Bad DB: %s", server_error->message);
       
       g_signal_emit_by_name (context, "error", server_error);
           
@@ -1239,7 +1249,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
                    _("Invalid strategy '%s'"),
                    priv->command->strategy);
       
-      _gdict_debug ("error: %s\n", server_error->message);
+      GDICT_NOTE (DICT, "Bad strategy: %s", server_error->message);
           
       g_signal_emit_by_name (context, "error", server_error);
           
@@ -1254,7 +1264,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
                    _("Bad command '%s'"),
                    dict_command_strings[priv->command->cmd_type]);
       
-      _gdict_debug ("error: %s\n", server_error->message);
+      GDICT_NOTE (DICT, "Bad command: %s", server_error->message);
       
       g_signal_emit_by_name (context, "error", server_error);
       
@@ -1269,7 +1279,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
 		   _("Bad parameters for command '%s'"),
 		   dict_command_strings[priv->command->cmd_type]);
 
-      _gdict_debug ("error: %s\n", server_error->message);
+      GDICT_NOTE (DICT, "Bad params: %s", server_error->message);
       
       g_signal_emit_by_name (context, "error", server_error);
 
@@ -1284,7 +1294,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
                    _("No databases found on dictionary server at '%s'"),
                    priv->hostname);
           
-      _gdict_debug ("error: %s\n", server_error->message);
+      GDICT_NOTE (DICT, "No DB: %s", server_error->message);
       
       g_signal_emit_by_name (context, "error", server_error);
       
@@ -1299,7 +1309,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
                    _("No strategies found on dictionary server at '%s'"),
                    priv->hostname);
           
-      _gdict_debug ("error: %s\n", server_error->message);
+      GDICT_NOTE (DICT, "No strategies: %s", server_error->message);
       
       g_signal_emit_by_name (context, "error", server_error);
           
@@ -1309,7 +1319,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
       priv->command->state = S_FINISH;
       break;
     default:
-      _gdict_debug ("non error code: %d\n", priv->status_code);
+      GDICT_NOTE (DICT, "non-error code: %d", priv->status_code);
       break;
     }
 
@@ -1356,10 +1366,10 @@ gdict_client_context_parse_line (GdictClientContext *context,
       return TRUE;
     }
 
-  _gdict_debug ("check command %d ('%s')[state:%d]\n",
-	       priv->command->cmd_type,
-	       dict_command_strings[priv->command->cmd_type],
-	       priv->command->state);
+  GDICT_NOTE (DICT, "check command %d ('%s')[state:%d]",
+	      priv->command->cmd_type,
+	      dict_command_strings[priv->command->cmd_type],
+	      priv->command->state);
 
   /* check command type */
   switch (priv->command->cmd_type)
@@ -1378,9 +1388,8 @@ gdict_client_context_parse_line (GdictClientContext *context,
           if (p)
             p = g_utf8_next_char (p);
           
-          _gdict_debug ("server replied: %d databases found\n", atoi (p));
+          GDICT_NOTE (DICT, "server replied: %d databases found", atoi (p));
           
-	  _gdict_debug ("emitting lookup-start\n");
           g_signal_emit_by_name (context, "lookup-start");
         }
       else if (0 == strcmp (buffer, "."))
@@ -1415,7 +1424,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           db = _gdict_database_new (name);
           db->full_name = g_strdup (full);
           
-	  _gdict_debug ("emitting database-found\n");
           g_signal_emit_by_name (context, "database-found", db);
           
           gdict_database_unref (db);
@@ -1432,9 +1440,8 @@ gdict_client_context_parse_line (GdictClientContext *context,
           if (p)
             p = g_utf8_next_char (p);
           
-          _gdict_debug ("server replied: %d strategies found\n", atoi (p));
+          GDICT_NOTE (DICT, "server replied: %d strategies found", atoi (p));
           
-	  _gdict_debug ("emitting lookup-start\n");
           g_signal_emit_by_name (context, "lookup-start");
         }
       else if (0 == strcmp (buffer, "."))
@@ -1466,7 +1473,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           strat = _gdict_strategy_new (name);
           strat->description = g_strdup (desc);
           
-	  _gdict_debug ("emitting strategy-found\n");
           g_signal_emit_by_name (context, "strategy-found", strat);
           
           gdict_strategy_unref (strat);
@@ -1484,14 +1490,13 @@ gdict_client_context_parse_line (GdictClientContext *context,
           if (p)
             p = g_utf8_next_char (p);
           
-          _gdict_debug ("server replied: %d definitions found\n", atoi (p));
-          
+          GDICT_NOTE (DICT, "server replied: %d definitions found", atoi (p));
+
           def = _gdict_definition_new (atoi (p));
           
           priv->command->data = def;
           priv->command->data_destroy = (GDestroyNotify) gdict_definition_unref;
 
-	  _gdict_debug ("emitting lookup-start\n");
           g_signal_emit_by_name (context, "lookup-start");
         }
       else if (priv->status_code == GDICT_STATUS_WORD_DB_NAME)
@@ -1538,11 +1543,11 @@ gdict_client_context_parse_line (GdictClientContext *context,
           
           def = (GdictDefinition *) priv->command->data;
 
-	  _gdict_debug ("{ word .= '%s', db_name .= '%s', db_full .= '%s' }\n",
-		       word,
-		       db_name,
-		       db_full);
-          
+	  GDICT_NOTE (DICT, "{ word = '%s', db_name = '%s', db_full = '%s' }",
+		      word,
+		      db_name,
+		      db_full);
+
           def->word = g_strdup (word);
           def->database_name = g_strdup (db_name);
           def->database_full = g_strdup (db_full);
@@ -1565,8 +1570,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
 	
 	  /* store the numer of definitions */
 	  num = def->total;
-          
-	  _gdict_debug ("emitting definition-found\n");
+
           g_signal_emit_by_name (context, "definition-found", def);
           
           gdict_definition_unref (def);
@@ -1583,7 +1587,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
           if (!priv->command->buffer)
             priv->command->buffer = g_string_new (NULL);
           
-	  _gdict_debug ("appending line:\n %s\n", buffer);
+	  GDICT_NOTE (DICT, "appending to buffer:\n %s", buffer);
           
           /* TODO - collapse '..' to '.' */
           g_string_append_printf (priv->command->buffer, "%s\n", buffer);
@@ -1600,9 +1604,8 @@ gdict_client_context_parse_line (GdictClientContext *context,
           if (p)
             p = g_utf8_next_char (p);
           
-          _gdict_debug ("server replied: %d matches found\n", atoi (p));
+          GDICT_NOTE (DICT, "server replied: %d matches found", atoi (p));
 
-	  _gdict_debug ("emitting lookup-start\n");
           g_signal_emit_by_name (context, "lookup-start");
         }
       else if (0 == strcmp (buffer, "."))
@@ -1634,7 +1637,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           match = _gdict_match_new (word);
           match->database = g_strdup (db_name);
           
-	  _gdict_debug ("emitting match-found\n");
           g_signal_emit_by_name (context, "match-found", match);
           
           gdict_match_unref (match);
@@ -1801,7 +1803,7 @@ gdict_client_context_io_watch_cb (GIOChannel         *channel,
         {
           priv->status_code = status_code;
           
-          _gdict_debug ("new status = '%d'\n", priv->status_code);
+          GDICT_NOTE (DICT, "new status = '%d'", priv->status_code);
         }
       else
         priv->status_code = GDICT_STATUS_INVALID;
@@ -1815,14 +1817,12 @@ gdict_client_context_io_watch_cb (GIOChannel         *channel,
         {
           g_free (line);
           
-          _gdict_debug ("Parse failed\n");
+          g_warning ("Parsing failed");
           
           gdict_client_context_force_disconnect (context);
           
           return FALSE;
         }
-      
-      _gdict_debug ("Line parsed\n");
       
       g_free (line);
     }
@@ -1835,14 +1835,16 @@ check_for_connection (gpointer data)
 {
   GdictClientContext *context = data;
 
+#if 0
   g_debug (G_STRLOC ": checking for connection (is connecting:%s)",
            context->priv->is_connecting ? "true" : "false");
+#endif
 
   if (context->priv->is_connecting)
     {
       GError *err = NULL;
               
-      _gdict_debug ("Forcing a disconnection due to timeout");
+      GDICT_NOTE (DICT, "Forcing a disconnection due to timeout");
       
       g_set_error (&err, GDICT_CLIENT_CONTEXT_ERROR,
                    GDICT_CLIENT_CONTEXT_ERROR_SOCKET,

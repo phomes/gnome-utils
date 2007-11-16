@@ -1,3 +1,41 @@
+2007-09-18  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.ac: Drop the last gnomeprint references.
+
+2007-09-06  Emmanuele Bassi  <ebassi@gnome.org>
+
+	Merge the dictionary-work/git-svn branch
+
+	* configure.ac: Bump up to 2.21.0 and begin the development
+	cycle of gnome-utils.
+
+	* ChangeLog.dictionary-work: Detailed ChangeLog for the
+	merged dictionary-work/git-svn branch.
+
+2007-09-06  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in:
+	* README:
+	* NEWS: Release 2.19.92
+
+2007-09-04  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* gnome-screenshot/gnome-screenshot.desktop.in:
+	* baobab/data/baobab.desktop.in.in:
+	* gnome-dictionary/data/gnome-dictionary.desktop.in.in:
+	* gsearchtool/gnome-search-tool.desktop.in:
+	* logview/gnome-system-log.desktop.in.in:
+	* gfloppy/gfloppy.desktop.in: Only show the GNOME Utilities
+	in GNOME menus. (#431117, Sven Arvidsson)
+
+2007-09-01  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* configure.in: Post-release bump to 2.19.92. Bump up
+	the required GTK+ version to 2.11.6 for the new tooltips
+	API.
+
+	* README: Update the requirements.
+
 2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* configure.in:

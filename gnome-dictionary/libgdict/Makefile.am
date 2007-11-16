@@ -2,12 +2,6 @@
 
 NULL =
 
-if ENABLE_DEBUG
-GDICT_ENABLE_DEBUG=-DGDICT_ENABLE_DEBUG=1
-else
-GDICT_ENABLE_DEBUG=
-endif
-
 INCLUDES = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	-DDATADIR=\""$(datadir)"\" 				\
 	-DLIBDIR=\""$(libdir)"\" 				\
@@ -16,7 +10,7 @@ INCLUDES = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	-DGNOMELOCALEDIR=\""$(gnomeutilslocaledir)"\" 		\
 	-DGDICTSOURCESDIR=\""$(datadir)/gdict-1.0/sources"\" 	\
 	-DGDICT_ENABLE_INTERNALS=1 				\
-	$(GDICT_ENABLE_DEBUG)					\
+	$(GDICT_DEBUG_CFLAGS)					\
 	$(DISABLE_DEPRECATED_CFLAGS) 				\
 	$(WARN_CFLAGS) 						\
 	$(NULL)
@@ -26,7 +20,6 @@ lib_LTLIBRARIES = libgdict-1.0.la
 # GNOME Dictionary shared library
 libgdict_1_0_la_SOURCES =	\
 	gdict-private.h		\
-	gdict-debug.c		\
 	gdict-debug.h		\
 	gdict-context.c		\
 	gdict-context.h		\
@@ -37,14 +30,14 @@ libgdict_1_0_la_SOURCES =	\
 	gdict-database-chooser.c \
 	gdict-defbox.c 		\
 	gdict-defbox.h 		\
-	gdict-entry.c		\
-	gdict-entry.h		\
 	gdict-enum-types.c	\
 	gdict-enum-types.h	\
 	gdict-marshal.c		\
 	gdict-marshal.h		\
 	gdict-source.c		\
 	gdict-source.h		\
+	gdict-source-chooser.c	\
+	gdict-source-chooser.h	\
 	gdict-source-loader.c	\
 	gdict-source-loader.h	\
 	gdict-speller.c		\
@@ -68,9 +61,9 @@ libgdict_include_HEADERS = 	\
 	gdict-client-context.h	\
 	gdict-database-chooser.h \
 	gdict-defbox.h 		\
-	gdict-entry.h		\
 	gdict-enum-types.h	\
 	gdict-source.h		\
+	gdict-source-chooser.h	\
 	gdict-source-loader.h	\
 	gdict-speller.h		\
 	gdict-strategy-chooser.h \
@@ -95,9 +88,10 @@ MAINTAINERCLEANFILES = $(stamp_files) $(gdict_built_files)
 
 EXTRA_DIST = 				\
 	gdict-version.h.in 		\
+	gdict-enum-types.h.in		\
+	gdict-enum-types.c.in		\
 	gdict-marshal.list		\
 	gdict-1.0.pc.in			\
-	gdict-1.0-uninstalled.pc.in	\
 	$(NULL)
 
 BUILT_SOURCES = $(gdict_built_files) 
@@ -121,8 +115,8 @@ libgdict_enum_headers = \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-client-context.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-database-chooser.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-defbox.h \
-	$(top_srcdir)/gnome-dictionary/libgdict/gdict-entry.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-source.h \
+	$(top_srcdir)/gnome-dictionary/libgdict/gdict-source-chooser.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-source-loader.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-speller.h \
 	$(top_srcdir)/gnome-dictionary/libgdict/gdict-strategy-chooser.h \
@@ -132,38 +126,21 @@ libgdict_enum_headers = \
 gdict-enum-types.h: stamp-gdict-enum-types.h
 	@true
 stamp-gdict-enum-types.h: $(libgdict_enum_headers) Makefile
-	$(GLIB_MKENUMS) \
-		--fhead "#ifndef __GDICT_ENUM_TYPES_H__\n" \
-		--fhead "#define __GDICT_ENUM_TYPES_H__\n\n" \
-		--fhead "G_BEGIN_DECLS\n\n" \
-		--ftail "G_END_DECLS\n\n" \
-		--ftail "#endif\n" \
-		--fprod "/* --- @filename@ --- */\n" \
-		--eprod "#define GDICT_TYPE_@ENUMSHORT@ @enum_name@_get_type()\n" \
-		--eprod "GType @enum_name@_get_type (void);\n\n" \
-	$(libgdict_enum_headers) >> xgen-geth \
-	&& (cmp xgen-geth gdict-enum-types.h || cp xgen-geth gdict-enum-types.h) \
-	&& rm -f xgen-geth \
-	&& echo timestamp > $(@F)
+	( cd $(srcdir) && \
+	  $(GLIB_MKENUMS) \
+	  	--template $(srcdir)/gdict-enum-types.h.in \
+	  $(libgdict_enum_headers) ) >> xgen-ceth && \
+	(cmp -s xgen-ceth gdict-enum-types.h || cp xgen-ceth gdict-enum-types.h) && \
+	rm -f xgen-ceth && \
+	echo timestamp > $(@F)
 
 gdict-enum-types.c: $(libgdict_enum_headers) Makefile
-	$(GLIB_MKENUMS) \
-		--fhead "#include <glib-object.h>\n" \
-		--fhead "#include \"gdict-enum-types.h\"\n" \
-		--fprod "\n/* enumerations from \"@filename@\" */" \
-		--fprod "\n#include \"@filename@\"" \
-		--vhead "static const G@Type@Value _@enum_name@_values[] = {" \
-		--vprod "  { @VALUENAME@, \"@VALUENAME@\", \"@valuenick@\" }," \
-		--vtail "  { 0, NULL, NULL }\n};\n\n" \
-		--vtail "GType\n@enum_name@_get_type (void)\n{\n" \
-		--vtail "  static GType type = 0;\n\n" \
-		--vtail "  if (!type)\n" \
-		--vtail "    type = g_@type@_register_static (\"@EnumName@\", _@enum_name@_values);\n\n" \
-		--vtail "  return type;\n}\n\n" \
-	$(libgdict_enum_headers) >> xgen-getc \
-	&& cp xgen-getc gdict-enum-types.c \
-	&& rm -f xgen-getc
-	
+	( cd $(srcdir) && \
+	  $(GLIB_MKENUMS) \
+	  	--template $(srcdir)/gdict-enum-types.c.in \
+	  $(libgdict_enum_headers) ) >> xgen-cetc && \
+	cp xgen-cetc gdict-enum-types.c && \
+	rm -f xgen-cetc
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gdict-1.0.pc

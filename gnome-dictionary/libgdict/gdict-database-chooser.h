@@ -43,6 +43,7 @@ typedef struct _GdictDatabaseChooserClass	GdictDatabaseChooserClass;
 
 struct _GdictDatabaseChooser
 {
+  /*< private >*/
   GtkVBox parent_instance;
   
   GdictDatabaseChooserPrivate *priv;
@@ -50,13 +51,17 @@ struct _GdictDatabaseChooser
 
 struct _GdictDatabaseChooserClass
 {
+  /*< private >*/
   GtkVBoxClass parent_class;
 
+  /*< public >*/
   void (*database_activated) (GdictDatabaseChooser *chooser,
 		  	      const gchar          *name,
 			      const gchar          *description);
-  
-  void (*_gdict_padding1) (void);
+  void (*selection_changed)  (GdictDatabaseChooser *chooser);
+
+  /*< private >*/
+  /* padding for future expansion */
   void (*_gdict_padding2) (void);
   void (*_gdict_padding3) (void);
   void (*_gdict_padding4) (void);
@@ -80,7 +85,7 @@ gboolean      gdict_database_chooser_set_current_database (GdictDatabaseChooser 
                                                            const gchar          *db_name);
 gchar *       gdict_database_chooser_get_current_database (GdictDatabaseChooser *chooser) G_GNUC_MALLOC;
 gchar **      gdict_database_chooser_get_databases        (GdictDatabaseChooser *chooser,
-						           gsize                 length) G_GNUC_MALLOC;
+						           gsize                *length) G_GNUC_MALLOC;
 gint          gdict_database_chooser_count_databases      (GdictDatabaseChooser *chooser);
 gboolean      gdict_database_chooser_has_database         (GdictDatabaseChooser *chooser,
 						           const gchar          *database);

@@ -1,3 +1,86 @@
+2007-10-23  Stéphane Loeuillet  <sloeuille@svn.gnome.org>
+
+	* data/gnome-dictionary.desktop.in.in: Trivial fix to .desktop file
+	to conform to latest fd.o .desktop specs.
+	Spoted by desktop-file-validate. Fixes #481721
+
+2007-09-18  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* data/GNOME_DictionaryApplet.server.in.in: Fix the name of the
+	icon that should be used by the applet (#477960)
+
+2007-09-09  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-source-chooser.c: Display the current source
+	in bold inside the source chooser widget.
+
+	* libgdict/gdict-strategy-chooser.[ch]: Fix a typo in the API;
+	implement the missing methods of the strategy chooser widget;
+	display the current strategy in bold.
+
+	* libgdict/gdict-database-chooser.c: Display the current database
+	in bold inside the source chooser widget.
+
+	* src/gdict-window.c: Rework how the sources and contexts are
+	loaded when constructing a new GdictWindow; do not update the
+	statusbar if it's not visible.
+
+2007-09-06  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/Makefile.am: Install gdict-source-loader.h.
+
+2007-09-06  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-source-loader.c:
+	(gdict_source_loader_has_source): Reload the sources if the
+	loader has the dirty bit set.
+
+2007-09-04  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-window.c: Make sure that the word to match is not
+	empty when disptaching the speller widget.
+
+2007-09-04  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-strategy-chooser.c: Rename some symbols to work
+	around libtool and ld braindeadness on OSX. (#425120)
+
+2007-09-03  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict.h: Fix the general header inclusions: we install
+	into ${includedir}/gdict-1.0/gdict, not libgdict.
+
+2007-09-01  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-database-chooser.c:
+	* libgdict/gdict-strategy-chooser.c:
+	* libgdict/gdict-speller.c: Use the new GtkTooltip API in place
+	of the old GtkTooltips one.
+
+	* src/gdict-applet.c:
+	* src/gdict-source-dialog.c:
+	* src/gdict-pref-dialoc.c: Ditto as above.
+
+2007-08-28  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-about.c:
+	* src/gdict-app.c:
+	* src/gdict-applet.c:
+	* data/gnome-dictionary.desktop.in.in:
+	* data/Makefile.am: Use the gnome-icon-theme icon for the dictionary
+	instead of our own. (#470287, Michael Monreal)
+
+2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* libgdict/gdict-client-context.c: Use g_shell_quote() to escape
+	the words to look up. (#432968)
+
+2007-08-27  Emmanuele Bassi  <ebassi@gnome.org>
+
+	* src/gdict-window.c (lookup_word): Remove leading and trailing
+	whitespace from the content of the lookup entry before feeding
+	it to the GdictContext. (#432968)
+
 2007-08-18  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* libgdict/gdict-client-context.c: Handle decomposed strings
