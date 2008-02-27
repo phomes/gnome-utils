@@ -1,19 +1,19 @@
 # Italian traslation of gnome-utils
 # Released under the terms of GPL-2.1 license
-# Copyright (C) 1998-2007 Free Software Foundation, Inc.
+# Copyright (C) 1998-2008 Free Software Foundation, Inc.
 # Alessio Frusciante <algol@firenze.linux.it>, 2003, 2005.
 # Lapo Calamandrei <lapo@it.gnome.org>, 2003.
 # Luca Ferretti <elle.uca@infinito.it>, 2004.
-# Andrea Zagli <azagli@inwind.it>, 2005-2007.
+# Andrea Zagli <azagli@inwind.it>, 2005-2008.
 # Fabio Marzocca <thesaltydog@gmail.com>, 2007.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.20\n"
+"Project-Id-Version: gnome-utils 2.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-10 22:29+0200\n"
-"PO-Revision-Date: 2007-09-08 10:14+0200\n"
+"POT-Creation-Date: 2008-02-27 22:37+0100\n"
+"PO-Revision-Date: 2008-02-24 11:38+0100\n"
 "Last-Translator: Andrea Zagli <azagli@inwind.it>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,7 @@ msgstr ""
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
 msgid "Check folder sizes and available disk space"
-msgstr ""
-"Controlla la dimensione delle cartelle e lo spazio disponibile su disco"
+msgstr "Controlla la dimensione delle cartelle e lo spazio disco disponibile"
 
 #: ../baobab/data/baobab.desktop.in.in.h:2 ../baobab/data/baobab.glade.h:2
 msgid "Disk Usage Analyzer"
@@ -110,7 +109,7 @@ msgstr "Interrompi la scansione"
 
 #: ../baobab/data/baobab.glade.h:21
 msgid "Take a snapshot"
-msgstr "Cattura schermata"
+msgstr "Cattura una schermata"
 
 #: ../baobab/data/baobab.glade.h:23
 #, no-c-format
@@ -164,7 +163,7 @@ msgstr "A_iuto"
 
 #: ../baobab/data/baobab.glade.h:34
 msgid "_Monitor changes to your home folder"
-msgstr "_Monitora cambiamenti alla propria cartella home"
+msgstr "_Monitorare i cambiamenti alla propria cartella home"
 
 #: ../baobab/data/baobab.glade.h:35
 msgid "_Toolbar"
@@ -181,7 +180,7 @@ msgstr "_Visualizza"
 
 #: ../baobab/data/baobab.schemas.in.h:1
 msgid "A list of partitions to be excluded from scanning."
-msgstr "Una lista di partizioni da escludere dalla scansione"
+msgstr "Un elenco di partizioni da escludere dalla scansione."
 
 #: ../baobab/data/baobab.schemas.in.h:2
 msgid "Enable monitoring of home directory"
@@ -201,8 +200,7 @@ msgstr "La barra degli strumenti è visibile"
 
 #: ../baobab/data/baobab.schemas.in.h:6
 msgid "Whether any change to the home directory should be monitored."
-msgstr ""
-"Indica se ogni modifica della home directory debba essere monitorizzata."
+msgstr "Indica se ogni modifica della directory home debba essere monitorata."
 
 #: ../baobab/data/baobab.schemas.in.h:7
 msgid "Whether the status bar at the bottom of main window should be visible."
@@ -251,7 +249,7 @@ msgstr "Caratteri UTF-8 non validi"
 
 #: ../baobab/src/baobab.c:639
 msgid "Could not initialize GNOME VFS monitoring"
-msgstr "Impossibile inizializzare la monitorizzazione GNOME VFS"
+msgstr "Impossibile inizializzare il monitoraggio GNOME VFS"
 
 #: ../baobab/src/baobab.c:640
 msgid "Changes to your home folder will not be monitored."
@@ -259,7 +257,7 @@ msgstr "I cambiamenti alla propria cartella home non saranno monitorati."
 
 #: ../baobab/src/baobab-graphwin.c:157
 msgid "Cannot create pixbuf image!"
-msgstr "Impossibile creare l'immagine pixbuf!"
+msgstr "Impossibile creare l'immagine pixbuf."
 
 #: ../baobab/src/baobab-graphwin.c:163
 msgid "Save Snapshot"
@@ -275,7 +273,7 @@ msgstr "Illimitato"
 
 #: ../baobab/src/baobab-graphwin.c:279
 msgid "Cannot allocate memory for graphical window!"
-msgstr "Impossibile allocare memoria per la finestra grafica!"
+msgstr "Impossibile allocare memoria per la finestra grafica."
 
 #. Main treemap window
 #: ../baobab/src/baobab-graphwin.c:307
@@ -600,8 +598,7 @@ msgstr ""
 
 #: ../gfloppy/gfloppy.schemas.in.h:2
 msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr ""
-"Backend predefinito per la formattazione FAT - SOLO PER UTENTI ESPERTI!"
+msgstr "SOLO PER UTENTI ESPERTI - Backend predefinito per la formattazione FAT"
 
 #: ../gfloppy/gfloppy.schemas.in.h:3
 msgid "Default filesystem type"
@@ -642,7 +639,8 @@ msgstr "Verifica di blocchi danneggiati in corso..."
 #: ../gfloppy/src/badblocks.c:268
 #, c-format
 msgid "Failed to open device %s for badblock checking\n"
-msgstr "Apertura del device %s dalla ricerca dei blocchi danneggiati fallita\n"
+msgstr ""
+"Apertura del device %s per la ricerca dei blocchi danneggiati fallita\n"
 
 #: ../gfloppy/src/badblocks.c:288 ../gfloppy/src/gfloppy.c:531
 msgid "Checking for bad blocks... Done"
@@ -734,7 +732,7 @@ msgstr "Problema nel leggere il cilindro %d: atteso %d, letto %d"
 #: ../gfloppy/src/fdformat.c:151
 #, c-format
 msgid "Bad data in cyl %d.  Continuing... "
-msgstr "Dati errati nel cilindro %d.  L'operazione continua... "
+msgstr "Dati errati nel cilindro %d. L'operazione continua... "
 
 #: ../gfloppy/src/fdformat.c:160
 #, c-format
@@ -836,8 +834,7 @@ msgstr "Creazione del file system sul disco... Fatto"
 
 #: ../gfloppy/src/gfloppy.c:522
 msgid "Checking for bad blocks... (this might take a while)"
-msgstr ""
-"Verifica di blocchi danneggiati in corso... (può durare un po' di tempo)"
+msgstr "Verifica di blocchi danneggiati in corso... (può richiedere del tempo)"
 
 #: ../gfloppy/src/gfloppy.c:527
 msgid "Error while checking the bad blocks."
@@ -1365,8 +1362,7 @@ msgstr "Nessuna connessione al server di dizionario a «%s:%d»"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1053
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
-"Ricerca fallita per il nome host «%s»: nessuna risorsa adeguata trovata"
+msgstr "Ricerca fallita per il nome host «%s»: nessuna risorsa adeguata trovata"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1084
 #, c-format
@@ -1481,7 +1477,7 @@ msgstr "Indica se il contesto utilizza solo dizionari locali o no"
 
 #: ../gnome-dictionary/libgdict/gdict-database-chooser.c:350
 msgid "Reload the list of available databases"
-msgstr "Ricarica la lista di database disponibili"
+msgstr "Ricarica l'elenco dei database disponibili"
 
 #: ../gnome-dictionary/libgdict/gdict-database-chooser.c:362
 msgid "Clear the list of available databases"
@@ -1540,8 +1536,9 @@ msgid "Context"
 msgstr "Contesto"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:106
+#, fuzzy
 msgid "The GdictContext object bound to this entry"
-msgstr "Oggetto GdictContext associato a questo campo"
+msgstr "GdictContext associato a questa sorgente"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:120
 #: ../gnome-dictionary/libgdict/gdict-source.c:274
@@ -1550,8 +1547,9 @@ msgid "Database"
 msgstr "Database"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:121
+#, fuzzy
 msgid "The database to be used to generate the completion list"
-msgstr "Database da utilizzare per generare la lista di completamento"
+msgstr "Database utilizzato per interrogare il GdictContext"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:135
 #: ../gnome-dictionary/libgdict/gdict-source.c:288
@@ -1560,10 +1558,9 @@ msgid "Strategy"
 msgstr "Strategia"
 
 #: ../gnome-dictionary/libgdict/gdict-entry.c:136
+#, fuzzy
 msgid "The matching strategy to be used to generate the completion list"
-msgstr ""
-"Strategia di corrispondenza da utilizzare per generare la lista di "
-"completamento"
+msgstr "La strategia utilizzata per interrogare il GdictContext"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:232
 msgid "Filename"
@@ -1635,8 +1632,8 @@ msgstr ""
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
-"Impossibile ottenere la chiave «%s» all'interno del file di definizione "
-"della sorgente di dizionario: %s"
+"Impossibile ottenere la chiave «%s» all'interno del file di definizione della "
+"sorgente di dizionario: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:741
 #, c-format
@@ -1683,7 +1680,7 @@ msgstr "La strategia utilizzata per interrogare il GdictContext"
 
 #: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:344
 msgid "Reload the list of available strategies"
-msgstr "Ricarica la lista di strategie disponibili"
+msgstr "Ricarica l'elenco delle strategie disponibili"
 
 #: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:356
 msgid "Clear the list of available strategies"
@@ -1964,11 +1961,11 @@ msgstr ""
 #: ../gnome-dictionary/src/gdict-print.c:187
 #, c-format
 msgid "%s (page %d)"
-msgstr "%s (pagina %d)"
+msgstr ""
 
 #: ../gnome-dictionary/src/gdict-print.c:246
 msgid "Print Preview"
-msgstr "Anteprima di stampa"
+msgstr ""
 
 #: ../gnome-dictionary/src/gdict-source-dialog.c:358
 #: ../gnome-dictionary/src/gdict-source-dialog.c:451
@@ -2025,7 +2022,7 @@ msgstr "_Salva una copia..."
 
 #: ../gnome-dictionary/src/gdict-window.c:1095
 msgid "_Print..."
-msgstr "_Stampa..."
+msgstr "Stam_pa..."
 
 #: ../gnome-dictionary/src/gdict-window.c:1096
 msgid "Print this document"
@@ -2434,7 +2431,7 @@ msgstr "Disabilita secondo passaggio di ricerca veloce"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:6
 msgid "Quick Search Excluded Paths"
-msgstr "Percorsi esclusi dalla ricerca rapida"
+msgstr "Percorsi esclusi per la ricerca rapida"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:7
 msgid "Quick Search Second Scan Excluded Paths"
@@ -2577,7 +2574,7 @@ msgid ""
 "use the default height."
 msgstr ""
 "Questa chiave definisce l'altezza della finestra ed è utilizzata per "
-"memorizzare la grandezza dello strumento di ricerca tra le sessioni. "
+"memorizzare la dimensione dello strumento di ricerca tra le sessioni. "
 "Impostandola a -1 farà sì che lo strumento di ricerca usi l'altezza "
 "predefinita."
 
@@ -2588,7 +2585,7 @@ msgid ""
 "the default width."
 msgstr ""
 "Questa chiave definisce la larghezza della finestra ed è utilizzata per "
-"memorizzare la larghezza dello strumento di ricerca tra le sessioni. "
+"memorizzare la dimensione dello strumento di ricerca tra le sessioni. "
 "Impostandola a -1 farà sì che lo strumento di ricerca utilizzi la larghezza "
 "predefinita."
 
@@ -3133,7 +3130,7 @@ msgstr "Seleziona e imposta l'opzione di ricerca «%s»"
 
 #: ../gsearchtool/gsearchtool.c:1504
 msgid "Invalid option passed to sortby command line argument."
-msgstr "Opzione non valida passata all'argomento di riga comando «sortby»."
+msgstr "Opzione non valida passata all'argomento di riga di comando «sortby»."
 
 #: ../gsearchtool/gsearchtool.c:1802
 msgid ""
@@ -3340,8 +3337,8 @@ msgid ""
 "%s is not user readable. Either run the program as root or ask the sysadmin "
 "to change the permissions on the file.\n"
 msgstr ""
-"«%s» non è leggibile dall'utente. Provare a lanciare il programma come root "
-"o chiedere all'amministratore di sistema di cambiare i permessi sul file.\n"
+"«%s» non è leggibile dall'utente. Provare a lanciare il programma come root o "
+"chiedere all'amministratore di sistema di cambiare i permessi sul file.\n"
 
 #: ../logview/logrtns.c:64
 #, c-format
@@ -3514,7 +3511,7 @@ msgstr "File di registro da aprire all'avvio"
 
 #: ../logview/logview.schemas.in.h:4
 msgid "Size of the font used to display the log"
-msgstr "Grandezza del carattere utilizzato per visualizzare il registro"
+msgstr "Dimensione del carattere utilizzato per visualizzare il registro"
 
 #
 #: ../logview/logview.schemas.in.h:5
@@ -3546,9 +3543,9 @@ msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
 msgstr ""
-"Specifica la grandezza del font a larghezza fissa utilizzato per "
+"Specifica la dimensione del carattere a larghezza fissa utilizzato per "
 "visualizzare il registro nella vista ad albero principale. Il valore "
-"predefinito è la grandezza predefinita del carattere per terminale."
+"predefinito è la dimensione predefinita del carattere per terminale."
 
 #: ../logview/logview.schemas.in.h:9
 msgid "Specifies the width of the log viewer main window in pixels."
@@ -3582,51 +3579,51 @@ msgstr "Impossibile creare l'interfaccia utente."
 
 #: ../logview/misc.c:42
 msgid "January"
-msgstr "Gennaio"
+msgstr "gennaio"
 
 #: ../logview/misc.c:42
 msgid "February"
-msgstr "Febbraio"
+msgstr "febbraio"
 
 #: ../logview/misc.c:42
 msgid "March"
-msgstr "Marzo"
+msgstr "marzo"
 
 #: ../logview/misc.c:42
 msgid "April"
-msgstr "Aprile"
+msgstr "aprile"
 
 #: ../logview/misc.c:42
 msgid "May"
-msgstr "Maggio"
+msgstr "maggio"
 
 #: ../logview/misc.c:43
 msgid "June"
-msgstr "Giugno"
+msgstr "giugno"
 
 #: ../logview/misc.c:43
 msgid "July"
-msgstr "Luglio"
+msgstr "luglio"
 
 #: ../logview/misc.c:43
 msgid "August"
-msgstr "Agosto"
+msgstr "agosto"
 
 #: ../logview/misc.c:43
 msgid "September"
-msgstr "Settembre"
+msgstr "settembre"
 
 #: ../logview/misc.c:43
 msgid "October"
-msgstr "Ottobre"
+msgstr "ottobre"
 
 #: ../logview/misc.c:44
 msgid "November"
-msgstr "Novembre"
+msgstr "novembre"
 
 #: ../logview/misc.c:44
 msgid "December"
-msgstr "Dicembre"
+msgstr "dicembre"
 
 #: ../logview/misc.c:164
 msgid "Invalid date"
@@ -3650,3 +3647,60 @@ msgstr "Il monitoraggio dei file non è supportato in questo file system.\n"
 #: ../logview/monitor.c:88
 msgid "Gnome-VFS Error.\n"
 msgstr "Errore Gnome-VFS.\n"
+
+#~ msgid "Reload the list of available sources"
+#~ msgstr "Ricarica l'elenco delle sorgenti disponibili"
+
+#~ msgid "GDict Options"
+#~ msgstr "Opzioni GDict"
+
+#~ msgid "Show GDict Options"
+#~ msgstr "Mostra opzioni GDict"
+
+#~ msgid "Unable to display the preview: %s"
+#~ msgstr "Impossibile visualizzare l'anteprima: %s"
+
+#~ msgid "P_review..."
+#~ msgstr "Antepri_ma..."
+
+#~ msgid "Preview this document"
+#~ msgstr "Anteprima di questo documento"
+
+#~ msgid "Dictionary Sources"
+#~ msgstr "Sorgenti dizionario"
+
+#~ msgid "Dictionary source `%s' selected"
+#~ msgstr "Sorgente dizionario «%s» selezionato"
+
+#~ msgid "Double-click on the source to use"
+#~ msgstr "Fare doppio clic sul sorgente da utilizzare"
+
+#~ msgid "Dictionary sources"
+#~ msgstr "Sorgenti dizionario"
+
+#~ msgid "STRING"
+#~ msgstr "STRINGA"
+
+#~ msgid "PATH"
+#~ msgstr "PERCORSO"
+
+#~ msgid "VALUE"
+#~ msgstr "VALORE"
+
+#~ msgid "DAYS"
+#~ msgstr "GIORNI"
+
+#~ msgid "KILOBYTES"
+#~ msgstr "KILOBYTE"
+
+#~ msgid "USER"
+#~ msgstr "UTENTE"
+
+#~ msgid "GROUP"
+#~ msgstr "GRUPPO"
+
+#~ msgid "PATTERN"
+#~ msgstr "MODELLO"
+
+#~ msgid "- the GNOME Search Tool"
+#~ msgstr "- lo strumento di ricerca di GNOME"
