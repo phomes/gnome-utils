@@ -2,7 +2,7 @@
 
 	Merge from trunk:
 
-	Bug 562149 – gnome-screenshot does not remember include_border setting
+	Bug 562149 – gnome-screenshot does not remember include_pointer setting
 
 	* gnome-screenshot.c: (save_options): Save the include-pointer
 	setting to GConf.
