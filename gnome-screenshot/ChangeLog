@@ -1,7 +1,16 @@
+2008-11-24  Emmanuele Bassi  <ebassi@gnome.org>
+
+	Merge from trunk:
+
+	Bug 562149 – gnome-screenshot does not remember include_border setting
+
+	* gnome-screenshot.c: (save_options): Save the include-pointer
+	setting to GConf.
+
 2008-10-20  Emmanuele Bassi  <ebassi@gnome.org>
 
-	Bug 553085 – After doing gnome-screenshot -w (grab a window), "grab the entire
-	screen" works to grab a window.
+	Bug 553085 – After doing gnome-screenshot -w (grab a window), "grab
+	the entire screen" works to grab a window.
 
 	* gnome-screenshot.c:
 	(load_options), (save_options): Ignore the take_window_shot GConf key
