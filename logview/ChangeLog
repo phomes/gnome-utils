@@ -1,5 +1,10 @@
 2009-04-02  Cosimo Cecchi  <cosimoc@gnome.org>
 
+	* logview-window.c: automatically scroll to the bottom of the view
+	when new lines are added to the active log (#576414).
+
+2009-04-02  Cosimo Cecchi  <cosimoc@gnome.org>
+
 	* logview-main.c (create_option_context): translate the short
 	description message.
 	Patch by Gabor Kelemen (#577718).

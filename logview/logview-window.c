@@ -839,6 +839,9 @@ read_new_lines_cb (LogviewLog *log,
     gtk_text_buffer_delete_mark (buffer, mark);
   }
 
+  gtk_text_view_scroll_to_iter (GTK_TEXT_VIEW (window->priv->text_view),
+                                &iter, 0.0, FALSE, 0.0, 0.0);
+
   paint_timestamps (buffer, old_line_count, new_days);
 
   if (window->priv->monitor_id == 0) {
