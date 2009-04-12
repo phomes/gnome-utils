@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&component=general\n"
-"POT-Creation-Date: 2009-02-27 13:40+0000\n"
-"PO-Revision-Date: 2009-02-27 19:57+0100\n"
+"POT-Creation-Date: 2009-03-17 07:05+0000\n"
+"PO-Revision-Date: 2009-04-12 16:43+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "Inspeccionar carpeta _remota…"
 
 #: ../baobab/data/baobab.glade.h:6
 msgid "Scan F_older..."
-msgstr "Inspeccionar _carpeta..."
+msgstr "Inspeccionar _carpeta…"
 
 #: ../baobab/data/baobab.glade.h:7
 msgid "Scan Filesystem"
@@ -119,7 +119,7 @@ msgstr "_Contraer todo"
 #: ../baobab/data/baobab.glade.h:22
 #: ../gnome-dictionary/src/gdict-window.c:1234 ../logview/logview-window.c:663
 msgid "_Contents"
-msgstr "_Índice"
+msgstr "Índ_ice"
 
 #: ../baobab/data/baobab.glade.h:23
 #: ../gnome-dictionary/src/gdict-window.c:1181 ../logview/logview-window.c:638
@@ -306,27 +306,27 @@ msgstr "Guardar captura"
 msgid "_Image type:"
 msgstr "Tipo de _imagen:"
 
-#: ../baobab/src/baobab-prefs.c:171
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "Inspeccionar"
 
-#: ../baobab/src/baobab-prefs.c:178
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "Dispositivo"
 
-#: ../baobab/src/baobab-prefs.c:186
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr "Punto de montaje"
 
-#: ../baobab/src/baobab-prefs.c:194
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr "Tipo de sistema de archivos"
 
-#: ../baobab/src/baobab-prefs.c:202
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr "Tamaño total"
 
-#: ../baobab/src/baobab-prefs.c:211
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr "Disponible"
 
@@ -2121,82 +2121,82 @@ msgstr "Estrategias disponibles"
 msgid "Dictionary sources"
 msgstr "Fuentes de diccionario"
 
-#: ../gnome-screenshot/gnome-screenshot.c:130
+#: ../gnome-screenshot/gnome-screenshot.c:131
 msgid "Error loading the help page"
 msgstr "Error al cargar la página de ayuda"
 
-#: ../gnome-screenshot/gnome-screenshot.c:239
+#: ../gnome-screenshot/gnome-screenshot.c:242
 msgid "None"
 msgstr "Ninguno"
 
-#: ../gnome-screenshot/gnome-screenshot.c:240
+#: ../gnome-screenshot/gnome-screenshot.c:243
 msgid "Drop shadow"
 msgstr "Sombra base"
 
-#: ../gnome-screenshot/gnome-screenshot.c:241
+#: ../gnome-screenshot/gnome-screenshot.c:244
 msgid "Border"
 msgstr "Borde"
 
 #. * Include pointer *
-#: ../gnome-screenshot/gnome-screenshot.c:344
+#: ../gnome-screenshot/gnome-screenshot.c:347
 msgid "Include _pointer"
 msgstr "Incluir _puntero"
 
 #. * Include window border *
-#: ../gnome-screenshot/gnome-screenshot.c:353
+#: ../gnome-screenshot/gnome-screenshot.c:356
 msgid "Include the window _border"
 msgstr "Incluir el _borde de ventana"
 
-#: ../gnome-screenshot/gnome-screenshot.c:368
+#: ../gnome-screenshot/gnome-screenshot.c:371
 msgid "Apply _effect:"
 msgstr "Aplicar _efecto:"
 
-#: ../gnome-screenshot/gnome-screenshot.c:430
+#: ../gnome-screenshot/gnome-screenshot.c:433
 msgid "Grab the whole _desktop"
 msgstr "Capturar todo el _escritorio"
 
-#: ../gnome-screenshot/gnome-screenshot.c:442
+#: ../gnome-screenshot/gnome-screenshot.c:445
 msgid "Grab the current _window"
 msgstr "Capturar la _ventana actual"
 
-#: ../gnome-screenshot/gnome-screenshot.c:454
+#: ../gnome-screenshot/gnome-screenshot.c:457
 msgid "Grab a selected _area"
 msgstr "Capturar el _área seleccionada"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:471
+#: ../gnome-screenshot/gnome-screenshot.c:474
 msgid "Grab _after a delay of"
 msgstr "Capturar con un _retraso de"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:491
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:494
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "seconds"
 msgstr "segundos"
 
-#: ../gnome-screenshot/gnome-screenshot.c:507
-#: ../gnome-screenshot/gnome-screenshot.c:517
+#: ../gnome-screenshot/gnome-screenshot.c:510
+#: ../gnome-screenshot/gnome-screenshot.c:520
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Take Screenshot"
 msgstr "Capturar pantalla"
 
-#: ../gnome-screenshot/gnome-screenshot.c:518
+#: ../gnome-screenshot/gnome-screenshot.c:521
 msgid "Effects"
 msgstr "Efectos"
 
-#: ../gnome-screenshot/gnome-screenshot.c:524
+#: ../gnome-screenshot/gnome-screenshot.c:527
 msgid "Take _Screenshot"
 msgstr "Cap_turar pantalla"
 
-#: ../gnome-screenshot/gnome-screenshot.c:650
+#: ../gnome-screenshot/gnome-screenshot.c:653
 msgid "Error while saving screenshot"
 msgstr "Error al guardar la captura de pantalla"
 
-#: ../gnome-screenshot/gnome-screenshot.c:654
+#: ../gnome-screenshot/gnome-screenshot.c:657
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -2207,11 +2207,11 @@ msgstr ""
 " El error fue %s.\n"
 " Elija otra ubicación e inténtelo de nuevo."
 
-#: ../gnome-screenshot/gnome-screenshot.c:801
+#: ../gnome-screenshot/gnome-screenshot.c:804
 msgid "Unable to take a screenshot of the current window"
 msgstr "No se puede tomar una captura de pantalla de la ventana actual"
 
-#: ../gnome-screenshot/gnome-screenshot.c:849
+#: ../gnome-screenshot/gnome-screenshot.c:852
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "Pantallazo-%s.png"
@@ -2219,14 +2219,14 @@ msgstr "Pantallazo-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:856
+#: ../gnome-screenshot/gnome-screenshot.c:859
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "Pantallazo-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:866
+#: ../gnome-screenshot/gnome-screenshot.c:869
 #: ../gnome-screenshot/screenshot-dialog.c:356
 #: ../gnome-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
@@ -2235,49 +2235,48 @@ msgstr "Pantallazo.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:873
+#: ../gnome-screenshot/gnome-screenshot.c:876
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "Pantallazo-%d.png"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1239
+#: ../gnome-screenshot/gnome-screenshot.c:1242
 msgid "Grab a window instead of the entire screen"
 msgstr "Capturar una ventana en vez de la pantalla entera"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1240
-#| msgid "Grab a window instead of the entire screen"
+#: ../gnome-screenshot/gnome-screenshot.c:1243
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Capturar un área de la pantalla en lugar de la pantalla entera"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1241
+#: ../gnome-screenshot/gnome-screenshot.c:1244
 msgid "Include the window border with the screenshot"
 msgstr "Incluir el borde de la ventana en la captura de pantalla"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1242
+#: ../gnome-screenshot/gnome-screenshot.c:1245
 msgid "Remove the window border from the screenshot"
 msgstr "Quitar el borde de la ventana de la captura de pantalla"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Capturar la pantalla después del retardo especificado [en segundos]"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Efecto para añadir al borde (sombra, borde o ninguno)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "effect"
 msgstr "efecto"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1245
+#: ../gnome-screenshot/gnome-screenshot.c:1248
 msgid "Interactively set options"
 msgstr "Establecer las opciones interactivamente"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1256
+#: ../gnome-screenshot/gnome-screenshot.c:1259
 msgid "Take a picture of the screen"
 msgstr "Capturar imagen de la pantalla"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1274
+#: ../gnome-screenshot/gnome-screenshot.c:1277
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -3454,7 +3453,7 @@ msgstr ""
 "Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-"
 "1301 EE. UU."
 
-#: ../logview/logview-app.c:179
+#: ../logview/logview-app.c:375
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "No se pudo abrir el archivo %s"
@@ -3513,7 +3512,7 @@ msgstr "Mostrar la versión de la aplicación"
 
 #: ../logview/logview-main.c:64
 msgid "[LOGFILE...]"
-msgstr "[ARCHIVO DE SUCESOS...]"
+msgstr "[ARCHIVO DE SUCESOS…]"
 
 #: ../logview/logview-main.c:68
 msgid " - Browse and monitor logs"
