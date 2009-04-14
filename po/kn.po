@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-26.kn\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-utils&component=general\n"
 "POT-Creation-Date: 2009-03-17 07:05+0000\n"
-"PO-Revision-Date: 2009-03-24 14:13+0530\n"
+"PO-Revision-Date: 2009-04-14 16:46+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -173,7 +173,7 @@ msgstr "ಮುಖ್ಯ ವಿಂಡೋದ ಅಡಿ ಭಾಗದಲ್ಲಿ �
 
 #: ../baobab/data/baobab.schemas.in.h:9
 msgid "Whether the subfolders tooltips of the selected folder are drawn."
-msgstr ""
+msgstr "ಆಯ್ದ ಕಡತಕೋಶಗಳಲ್ಲಿನ ಉಪಕಡತಕೋಶಗಳ ಸಲಹೆ ಉಪಕರಣಗಳನ್ನು ಎಳೆಯಲಾಗಿದೆಯೆ."
 
 #: ../baobab/data/baobab.schemas.in.h:10
 msgid "Whether the toolbar should be visible in main window."
@@ -200,7 +200,7 @@ msgstr "ಕಡತ ವ್ಯವಸ್ಥೆಯ ಒಟ್ಟು ಬಳಕೆ:"
 
 #: ../baobab/src/baobab.c:377
 msgid "contains hardlinks for:"
-msgstr "ಇವುಗಳಿಗೆ ಹಾರ್ಡ್-ಲಿಂಕ್‌ಗಳನ್ನು ಹೊಂದಿದೆ: "
+msgstr "ಇವುಗಳಿಗೆ ಹಾರ್ಡ್-ಲಿಂಕ್‌ಗಳನ್ನು ಹೊಂದಿದೆ:"
 
 #: ../baobab/src/baobab.c:386
 #, c-format
@@ -243,7 +243,7 @@ msgstr "ಟ್ರೀಮ್ಯಾಪ್‌ ಚಾರ್ಟಾಗಿ ನೋಡು"
 
 #: ../baobab/src/baobab.c:917
 msgid "Cannot check an excluded folder!"
-msgstr ""
+msgstr "ಹೊರತು ಪಡಿಸಲಾದ ಕಡತಕೋಶವನ್ನು ಪರೀಕ್ಷಿಸಲಾಗಿಲ್ಲ!"
 
 #: ../baobab/src/baobab.c:968
 msgid "Could not detect any mount point."
@@ -713,7 +713,7 @@ msgstr "ಸರಿಯಲ್ಲದ ಖಂಡಗಳ ಪಟ್ಟಿಗಳ ಕಡತ
 #: ../gfloppy/src/gfloppy.c:302
 #, c-format
 msgid "Error while spawning the (%s) command: %s."
-msgstr ""
+msgstr "ಆಜ್ಞೆಯನ್ನು ಹೆಚ್ಚಿಸುವಲ್ಲಿ (%s) ದೋಷ: %s."
 
 #: ../gfloppy/src/gfloppy.c:328
 msgid "Unknown mke2fs starting signature, cancelling."
@@ -737,7 +737,7 @@ msgstr "ಉಪ ಪ್ರಕ್ರಿಯೆಯು ಅಸಹಜವಾದ ರೀತ
 #: ../gfloppy/src/gfloppy.c:384
 #, c-format
 msgid "Error while spawning the mbadblocks command: %s."
-msgstr ""
+msgstr "mbadblocks ಆಜ್ಞೆಯನ್ನು ಹೆಚ್ಚಿಸುವಲ್ಲಿ ದೋಷ: %s."
 
 #: ../gfloppy/src/gfloppy.c:396
 #, c-format
@@ -750,7 +750,7 @@ msgstr ""
 
 #: ../gfloppy/src/gfloppy.c:439
 msgid "Abnormal mbadblocks child process termination."
-msgstr ""
+msgstr "ಸರಿಯಲ್ಲದ mbadblocks ಉಪಪ್ರಕ್ರಿಯೆಯ ಅಂತ್ಯಗೊಳಿಕೆ."
 
 #. make the filesystem
 #: ../gfloppy/src/gfloppy.c:465 ../gfloppy/src/gfloppy.c:505
@@ -788,6 +788,8 @@ msgid ""
 "system.  It must be installed in order to perform a thorough DOS (fat) "
 "formatting.</i></small>"
 msgstr ""
+"<small><i><b>ಸೂಚನೆ</b>: mbadblocks ಸವಲತ್ತನ್ನು ಈ ಗಣಕದಲ್ಲಿ ಅನುಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ.  ಸಂಪೂರ್ಣವಾದ DOS (fat) "
+"ಫಾರ್ಮಾಟುಗೊಳಿಕೆಯನ್ನು ನಿರ್ವಹಿಸಲು ಅದನ್ನು ಅನುಸ್ಥಾಪಿಸುವುದು ಅಗತ್ಯವಾಗುತ್ತದೆ.</i></small>"
 
 #: ../gfloppy/src/gfloppy2.glade.h:4
 msgid "DOS (FAT)"
@@ -839,7 +841,7 @@ msgstr "ಭೌತಿಕ ಸಂಯೋಜನೆಗಳು"
 
 #: ../gfloppy/src/gfloppy2.glade.h:17
 msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
-msgstr ""
+msgstr "ಸಂಪೂರ್ಣವಾದ(_g) (ಶಿಷ್ಟ ಕ್ರಮಕ್ಕೆ ಸರಿಯಲ್ಲದ ಖಂಡಗಳನ್ನು ಪರಿಶೀಲಿಸುವ ಸೌಕರ್ಯವನ್ನು ಸೇರಿಸುತ್ತದೆ)"
 
 #: ../gfloppy/src/gfloppy2.glade.h:18
 msgid "Volume _name:"
@@ -893,6 +895,8 @@ msgid ""
 "be possible.\n"
 "Contact your system administrator about getting write permissions."
 msgstr ""
+"%s ಕ್ಕೆ ಬರೆಯಲು ನಿಮ್ಮಲ್ಲಿ ಸೂಕ್ತ ಅನುಮತಿಗಳಿಲ್ಲ, ಫಾರ್ಮಾಟು ಮಾಡುವುದು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ.\n"
+"ಬರೆಯುವ ಅನುಮತಿಗಳನ್ನು ಪಡೆಯಲು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ../gfloppy/src/main.c:291 ../gfloppy/src/main.c:354
 msgid "Cannot initialize device"
@@ -939,8 +943,8 @@ msgid ""
 msgid_plural ""
 "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
 "been found and marked."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ಫ್ಲಾಪಿಯನ್ನು ಫಾರ್ಮಾಟುಗೊಳಿಸಲಾಗಿದೆ, ಆದರೆ <b>%d ಸರಿಯಲ್ಲದ ಖಂಡ</b>ವು (ಒಟ್ಟು %d ರಲ್ಲಿ) ಕಂಡುಬಂದಿವೆ ಹಾಗು ಗುರುತು ಹಾಕಲಾಗಿದೆ."
+msgstr[1] "ಫ್ಲಾಪಿಯನ್ನು ಫಾರ್ಮಾಟುಗೊಳಿಸಲಾಗಿದೆ, ಆದರೆ <b>%d ಸರಿಯಲ್ಲದ ಖಂಡಗಳು</b> (ಒಟ್ಟು %d ರಲ್ಲಿ) ಕಂಡುಬಂದಿವೆ ಹಾಗು ಗುರುತು ಹಾಕಲಾಗಿದೆ."
 
 #: ../gfloppy/src/progress.c:129
 msgid "Floppy formatted successfully."
@@ -1017,7 +1021,7 @@ msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE. This key is "
 "deprecated and no longer in use."
-msgstr ""
+msgstr "ಚತುರ ಹುಡುಕಾಟವನ್ನು ಬಳಸಬೇಕೆ ಎಂದು ಸೂಚಿಸಿ. ಶಬ್ಧಕೋಶ ಪರಿಚಾರಕವು ಇದನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆಯೆ ಎನ್ನುವುದರ ಮೇಲೆ ಈ ಕೀಲಿಯು ಆಧರಿತವಾಗಿರುತ್ಯದೆ. ಪೂರ್ವನಿಯೋಜಿತವು TRUE ಆಗಿರುತ್ತದೆ. ಈ ಕೀಲಿಯು ಪ್ರಚಲಿತದಲ್ಲಿ ಇಲ್ಲ ಹಾಗು ಬಳಸಲಾಗುತ್ತಿಲ್ಲ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:4
 msgid "The default database to use"
@@ -1041,6 +1045,8 @@ msgid ""
 "http://www.dict.org for details on other servers. This key is deprecated and "
 "no longer in use."
 msgstr ""
+"ಸಂಪರ್ಕ ಸಾಧಿಸಬೇಕಿರುವ ಶಬ್ಧಕೋಶ ಪರಿಚಾರಕ. ಪೂರ್ವನಿಯೋಜಿತ ಪರಿಚಾರಕವು dict.org ಆಗಿರುತ್ತದೆ. ಇತರೆ ಪರಿಚಾರಕಗಳ ಬಗೆಗಿನ ವಿವರಗಳಿಗಾಗಿ "
+"http://www.dict.org ಅನ್ನು ನೋಡಿ. ಈ ಕೀಲಿಯು ಪ್ರಚಲಿತದಲ್ಲಿ ಇಲ್ಲ ಹಾಗು ಬಳಸಲಾಗುತ್ತಿಲ್ಲ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
 msgid "The font to be used when printing"
@@ -1055,13 +1061,13 @@ msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr ""
+msgstr "ಶಬ್ಧಕೋಶ ಆಕರದಲ್ಲಿ ಬಳಸಲು ಪೂರ್ವನಿಯೋಜಿತ ಪ್ರತ್ಯೇಕ ದತ್ತಸಂಚಯದ ಅಥವ ಮೆಟಾ-ದತ್ತಸಂಚಯದ ಹೆಸರು. ಒಂದು ಆಶ್ಚರ್ಯ ಸೂಚಕ ಚಿಹ್ನೆಯು (\"!\") ಶಬ್ಧಕೋಶ ಆಕರದಲ್ಲಿ ನೀಡಲಾದ ಎಲ್ಲಾ ದತ್ತಸಂಚಯವನ್ನು ಹುಡುಕಬೇಕು ಎನ್ನುವುದನ್ನು ಸೂಚಿಸುತ್ತದೆ"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:12
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr ""
+msgstr "ಒಂದು ಶಬ್ಧಕೋಶ ಆಕರದಲ್ಲಿ ಬಳಸಬೇಕಿರುವ ಹುಡುಕು ತಂತ್ರವು ಲಭ್ಯವಿದ್ದಲ್ಲಿ ಅದರ ಪೂರ್ವನಿಯೋಜಿತ ಹೆಸರು. ಪದಗಳು ನಿಖರವಾಗಿ ತಾಳೆಯಾದಲ್ಲಿ ಪೂರ್ವನಿಯೋಜಿತ ತಂತ್ರವು 'exact' ಆಗಿರುತ್ತದೆ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -1089,7 +1095,7 @@ msgstr "ಬದಿಯಪಟ್ಟಿಯ ಅಗಲ"
 msgid ""
 "This key defines the width of the sidebar and it's used to remember the "
 "setting across sessions."
-msgstr ""
+msgstr "ಈ ಕೀಲಿಯು ಬದಿ ಪಟ್ಟಿಕೆಯ ಅಗಲವನ್ನು ಸೂಚಿಸುತ್ತದೆ ಹಾಗು ಇದನ್ನು ಅಧಿವೇಶನಗಳ ನಡುವಿನ ಸಿದ್ಧತೆಗಳನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಬಳಸಲಾಗುತ್ತದೆ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:19
 msgid ""
@@ -1097,6 +1103,9 @@ msgid ""
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a height based on the font size."
 msgstr ""
+"ಈ ಕೀಲಿಯು ವಿಂಡೋದ ಎತ್ತರವನ್ನು ಸೂಚಿಸುತ್ತದೆ ಹಾಗು ಇದನ್ನು ಅಧಿವೇಶನಗಳ ನಡುವೆ  ಶಬ್ಧಕೋಶದ ವಿಂಡೋ "
+"ಗಾತ್ರವನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಬಳಸಲಾಗುತ್ತದೆ. ಇದನ್ನು -1 ಗೆ ಬದಲಾಯಿಸಿದಾಗ ಅಕ್ಷರಶೈಲಿಯ ಗಾತ್ರಕ್ಕೆ ಅನುಗುಣವಾಗಿ "
+"ವಿಂಡೋವು ಎತ್ತರವನ್ನು ಬಳಸುವಂತೆ ಮಾಡುತ್ತದೆ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:20
 msgid ""
@@ -1104,6 +1113,9 @@ msgid ""
 "dictionary window across sessions. Setting it to -1 will make the dictionary "
 "window use a width based on the font size."
 msgstr ""
+"ಈ ಕೀಲಿಯು ವಿಂಡೋದ ಅಗಲವನ್ನು ಸೂಚಿಸುತ್ತದೆ ಹಾಗು ಇದನ್ನು ಅಧಿವೇಶನಗಳ ನಡುವೆ  ಶಬ್ಧಕೋಶದ ವಿಂಡೋ "
+"ಗಾತ್ರವನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಬಳಸಲಾಗುತ್ತದೆ. ಇದನ್ನು -1 ಗೆ ಬದಲಾಯಿಸಿದಾಗ ಅಕ್ಷರಶೈಲಿಯ ಗಾತ್ರಕ್ಕೆ ಅನುಗುಣವಾಗಿ "
+"ವಿಂಡೋವು ಅಗಲವನ್ನು ಬಳಸುವಂತೆ ಮಾಡುತ್ತದೆ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:21
 msgid ""
@@ -1111,6 +1123,9 @@ msgid ""
 "remember the state of the sidebar across sessions. Setting it to TRUE will "
 "make the sidebar always be displayed."
 msgstr ""
+"ಈ ಕೀಲಿಯು ಬದಿ ಪಟ್ಟಿಕೆಯು ಗೋಚರಿಸುತ್ತಿರಬೇಕೆ ಹಾಗು ಅಧಿವೇಶನಗಳ ನಡುವೆ ಬದಿಪಟ್ಟಿಕೆಯ ಸ್ಥಿತಿಯನ್ನು "
+"ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಇದನ್ನು ಬಳಸಬೇಕೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ. ಇದನ್ನು TRUE ಗೆ ಬದಲಾಯಿಸಿದಾಗ "
+"ಬದಿಪಟ್ಟಿಕೆಯು ಯಾವಾಗಲೂ ಕಾಣುತ್ತಿರುವಂತೆ ಮಾಡುತ್ತದೆ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:22
 msgid ""
@@ -1118,6 +1133,9 @@ msgid ""
 "remember the state of the statusbar across sessions. Setting it to TRUE will "
 "make the statusbar always be displayed."
 msgstr ""
+"ಈ ಕೀಲಿಯು ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯು ಗೋಚರಿಸುತ್ತಿರಬೇಕೆ ಹಾಗು ಅಧಿವೇಶನಗಳ ನಡುವೆ ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯ ಸ್ಥಿತಿಯನ್ನು "
+"ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಇದನ್ನು ಬಳಸಬೇಕೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ. ಇದನ್ನು TRUE ಗೆ ಬದಲಾಯಿಸಿದಾಗ "
+"ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯು ಯಾವಾಗಲೂ ಕಾಣುತ್ತಿರುವಂತೆ ಮಾಡುತ್ತದೆ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:23
 msgid ""
@@ -1125,6 +1143,9 @@ msgid ""
 "remember the state of the dictionary window across sessions. Setting it to "
 "TRUE will make the window always appear as maximized."
 msgstr ""
+"ಈ ಕೀಲಿಯು ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸಬೇಕೆ ಹಾಗು ಅಧಿವೇಶನಗಳ ನಡುವೆ ಶಬ್ಧಕೋಶ ವಿಂಡೋದ ಸ್ಥಿತಿಯನ್ನು "
+"ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಇದನ್ನು ಬಳಸಬೇಕೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ. ಇದನ್ನು TRUE ಗೆ ಬದಲಾಯಿಸಿದಾಗ "
+"ವಿಂಡೋವು ಯಾವಾಗಲೂ ಹಿಗ್ಗಿಸಲಾಗಿರುವಂತೆ ಕಾಣುವಂತೆ ಮಾಡುತ್ತದೆ."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:24
 msgid ""
@@ -1132,10 +1153,13 @@ msgid ""
 "to remember the setting across sessions.. It can be \"speller\" or "
 "\"databases\"."
 msgstr ""
+"ಈ ಕೀಲಿಯು ಬದಿಪಟ್ಟಿಕೆಯ ಯಾವ ಪುಟವನ್ನು ತೋರಿಸಬೇಕು ಹಾಗು ಅಧಿವೇಶನಗಳ ನಡುವೆ ಸಿದ್ಧತೆಯನ್ನು "
+"ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಇದನ್ನು ಬಳಸಬೇಕೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ.ಇದು \"speller\" ಅಥವ "
+"\"databases\" ಆಗಿರಬಹುದು."
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:25
 msgid "Use smart lookup (Deprecated)"
-msgstr ""
+msgstr "ಚತುರ ಹುಡುಕುವಿಕೆಯನ್ನು ಬಳಸು (ತೆಗೆದು ಹಾಕಲಾಗಿದೆ)"
 
 #: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:26
 msgid "Whether the application window should be maximized"
@@ -1208,7 +1232,7 @@ msgstr "ಕ್ಲೈಂಟ್ ಹೆಸರು"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:284
 msgid "The name of the client of the context object"
-msgstr ""
+msgstr "ಸನ್ನಿವೇಶ ವಸ್ತುವಿನ ಕ್ಲೈಂಟಿನ ಹೆಸರು"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:297
 msgid "Hostname"
@@ -1242,17 +1266,17 @@ msgstr "'%s:%d' ನಲ್ಲಿ ಶಬ್ಧಕೋಶ ಪರಿಚಾರಕಕ�
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1054
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
+msgstr "ಅತಿಥೇಯ ಹೆಸರು '%s' ಗಾಗಿ ಹುಡುಕುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ: ಯಾವುದೆ ಸೂಕ್ತವಾದ ಸಂಪನ್ಮೂಲಗಳು ಕಂಡುಬಂದಿಲ್ಲ"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1085
 #, c-format
 msgid "Lookup failed for host '%s': %s"
-msgstr ""
+msgstr "ಅತಿಥೇಯ '%s' ಗಾಗಿ ಹುಡುಕುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1119
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr ""
+msgstr "ಅತಿಥೇಯ '%s' ಗಾಗಿ ಹುಡುಕುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ: ಅತಿಥೇಯವು ಕಂಡುಬಂದಿಲ್ಲ"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1171
 #, c-format
@@ -1310,7 +1334,7 @@ msgstr "'%s' ಯಲ್ಲಿನ ಶಬ್ಧಕೋಶ ಪರಿಚಾರಕಕ�
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1742
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr ""
+msgstr "%s:%d ನಲ್ಲಿನ ಶಬ್ಧಕೋಶ ಪರಿಚಾರಕದೊಂದಿಗಿನ ಸಂಪರ್ಕವು ಕಡಿದುಹೋಗಿದೆ"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1781
 #, c-format
@@ -1324,7 +1348,7 @@ msgstr ""
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1851
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr ""
+msgstr "'%s:%d' ನಲ್ಲಿನ ಶಬ್ಧಕೋಶ ಪರಿಚಾರಕದೊಂದಿಗಿನ ಸಂಪರ್ಕದ ಕಾಲಾವಧಿಯು ಮೀರಿದೆ"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1885
 #, c-format
@@ -1340,12 +1364,12 @@ msgstr "ಸಾಕೆಟನ್ನು ನಿರ್ಮಿಸಲು ಸಾಧ್ಯ�
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1962
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
-msgstr ""
+msgstr "ತಡೆ-ಹಿಡಿಯದೆ ಚಾನಲ್ ಆಗಿ ಸಿದ್ಧಗೊಳಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1977
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr ""
+msgstr "'%s:%d' ನಲ್ಲಿನ ಶಬ್ಧಕೋಶ ಪರಿಚಾರಕದೊಂದಿಗೆ ಸಂಪರ್ಕಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 
 #: ../gnome-dictionary/libgdict/gdict-context.c:218
 msgid "Local Only"
@@ -1353,7 +1377,7 @@ msgstr "ಸ್ಥಳೀಯ ಮಾತ್ರ"
 
 #: ../gnome-dictionary/libgdict/gdict-context.c:219
 msgid "Whether the context uses only local dictionaries or not"
-msgstr ""
+msgstr "ಸನ್ನಿವೇಶಗಳು ಕೇವಲ ಸ್ಥಳೀಯ ಶಬ್ಧಕೋಶಗಳನ್ನು ಬಳಸುತ್ತವೆಯೆ ಅಥವ ಇಲ್ಲವೆ"
 
 #: ../gnome-dictionary/libgdict/gdict-database-chooser.c:382
 msgid "Reload the list of available databases"
@@ -1455,7 +1479,7 @@ msgstr "ವರ್ಗಾವಣೆ"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:303
 msgid "The transport mechanism used by this dictionary source"
-msgstr ""
+msgstr "ಈ ಶಬ್ಧಕೋಶ ಆಕರದಿಂದ ಬಳಸಲಾಗುವ ವರ್ಗಾವಣೆ ವಿನ್ಯಾಸ"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:317
 #: ../gnome-dictionary/libgdict/gdict-speller.c:377
@@ -1464,7 +1488,7 @@ msgstr "ಸಂದರ್ಭ"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:318
 msgid "The GdictContext bound to this source"
-msgstr ""
+msgstr "ಈ ಆಕರಕ್ಕೆ ಬದ್ಧವಾಗಿರುವ GdictContext"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:413
 #, c-format
@@ -1474,7 +1498,7 @@ msgstr "ಅಮಾನ್ಯವಾದ ವರ್ಗಾವಣೆ ಬಗೆ '%d'"
 #: ../gnome-dictionary/libgdict/gdict-source.c:441
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
-msgstr ""
+msgstr "ಶಬ್ಧಕೋಶ ಆಕರದ ವಿವರಣೆಯಲ್ಲಿ ಯಾವುದೆ '%s' ಗುಂಪು ಕಂಡು ಬಂದಿಲ್ಲ"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:457
 #: ../gnome-dictionary/libgdict/gdict-source.c:481
@@ -1482,12 +1506,12 @@ msgstr ""
 #: ../gnome-dictionary/libgdict/gdict-source.c:530
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr ""
+msgstr "ಶಬ್ಧಕೋಶ ಆಕರದ ವಿವರಣೆಯಲ್ಲಿ '%s' ಕೀಲಿಯನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:555
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr ""
+msgstr "ಶಬ್ಧಕೋಶ ಆಕರದ ವಿವರಣೆ ಕಡತದಲ್ಲಿ '%s' ಕೀಲಿಯನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:741
 #, c-format
@@ -1497,7 +1521,7 @@ msgstr "ಶಬ್ಧಕೋಶದ ಆಕರವು ಯಾವುದೆ ಹೆಸರ
 #: ../gnome-dictionary/libgdict/gdict-source.c:750
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr ""
+msgstr "ಶಬ್ಧಕೋಶ ಆಕರ '%s' ದ ಅಮಾನ್ಯವಾದ ವರ್ಗಾವಣೆ '%s'"
 
 #: ../gnome-dictionary/libgdict/gdict-source-chooser.c:299
 msgid "Reload the list of available sources"
@@ -1525,7 +1549,7 @@ msgstr "ಒಂದೇ ಬಗೆಯ ಪದಗಳ ಪಟ್ಟಿಯನ್ನು �
 
 #: ../gnome-dictionary/libgdict/gdict-speller.c:378
 msgid "The GdictContext object used to get the word definition"
-msgstr ""
+msgstr "ಪದದ ವಿವರಣೆಯನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ಬಳಸಲಾದ GdictContext ವಸ್ತು"
 
 #: ../gnome-dictionary/libgdict/gdict-speller.c:385
 msgid "The database used to query the GdictContext"
@@ -1545,7 +1569,7 @@ msgstr "ಲಭ್ಯವಿರುವ ತಂತ್ರಗಳ ಪಟ್ಟಿಯನ�
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to set"
-msgstr ""
+msgstr "ಹೊಂದಿಸಬೇಕಿರುವ GDict ದೋಷ ನಿವಾರಣಾ ಗುರುತುಗಳು"
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:97
 #: ../gnome-dictionary/libgdict/gdict-utils.c:99
@@ -1554,7 +1578,7 @@ msgstr "FLAGS"
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:99
 msgid "GDict debugging flags to unset"
-msgstr ""
+msgstr "ರದ್ದುಗೊಳಿಸಲಾದ GDict ದೋಷ ನಿವಾರಣಾ ಗುರುತುಗಳು"
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:157
 msgid "GDict Options"
@@ -1718,7 +1742,7 @@ msgstr "ಶಬ್ಧಕೋಶದ ವಿಂಡೋವನ್ನು ನೋಡಲು 
 
 #: ../gnome-dictionary/src/gdict-applet.c:535
 msgid "Toggle dictionary window"
-msgstr ""
+msgstr "ಶಬ್ಧಕೋಶ ವಿಂಡೋವನ್ನು ಟಾಗಲ್ ಮಾಡು"
 
 #: ../gnome-dictionary/src/gdict-applet.c:536
 msgid "Show or hide the definition window"
@@ -1880,7 +1904,7 @@ msgstr "ಹೊಸ(_N)"
 
 #: ../gnome-dictionary/src/gdict-window.c:1188
 msgid "New look up"
-msgstr ""
+msgstr "ಹೊಸ ಹುಡುಕಾಟ"
 
 #: ../gnome-dictionary/src/gdict-window.c:1189
 msgid "_Save a Copy..."
@@ -2005,7 +2029,7 @@ msgstr "ನೋಡಲು ಪದದ ಮೇಲೆ ಎರಡು ಬಾರಿ ಕ್�
 #. strat-chooser
 #: ../gnome-dictionary/src/gdict-window.c:1459
 msgid "Double-click on the matching strategy to use"
-msgstr ""
+msgstr "ಬಳಸಬೇಕಿರುವ ತಂತ್ರಕ್ಕೆ ತಾಳೆಯಾಗುವುದರ ಮೇಲೆ ಎರಡು-ಬಾರಿ ಕ್ಲಿಕ್ಕಿಸಿ"
 
 #. source-chooser
 #: ../gnome-dictionary/src/gdict-window.c:1464
@@ -2019,7 +2043,7 @@ msgstr "ದತ್ತಸಂಚಯದ ಬಳಕೆಗಾಗಿ ಅದರ ಮೇಲ
 
 #: ../gnome-dictionary/src/gdict-window.c:1761
 msgid "Look _up:"
-msgstr ""
+msgstr "ಹುಡುಕಾಟ(_u):"
 
 #: ../gnome-dictionary/src/gdict-window.c:1835
 msgid "Similar words"
@@ -2047,7 +2071,7 @@ msgstr "ಯಾವುದೂ ಇಲ್ಲ"
 
 #: ../gnome-screenshot/gnome-screenshot.c:243
 msgid "Drop shadow"
-msgstr ""
+msgstr "ಬೀಳಿಕೆಯ ನೆರಳು"
 
 #: ../gnome-screenshot/gnome-screenshot.c:244
 msgid "Border"
@@ -2198,7 +2222,7 @@ msgstr "ತೆರೆಯ ಒಂದು ಚಿತ್ರವನ್ನು ತೆಗೆ
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
-msgstr ""
+msgstr "ಪರಸ್ಪರ ಒಂದಕ್ಕೊಂದು ಘರ್ಷಿಸುವ ಆಯ್ಕೆಗಳು: --window ಹಾಗು --area ಅನ್ನು ಒಟ್ಟಿಗೆ ಬಳಸುವಂತಿಲ್ಲ.\n"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
 msgid "Save images of your desktop or individual windows"
@@ -2229,6 +2253,8 @@ msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr ""
+"ಅಂಚಿನ ಹೊರಬದಿಗೆ ಸೇರಿಸಬೇಕಿರುವ ಪರಿಣಾಮ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ \"shadow\"(ನೆರಳು), "
+"\"none\"(ಯಾವುದೂ ಇಲ್ಲ), ಹಾಗು \"border\"(ಅಂಚು)."
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
 msgid ""
@@ -2279,6 +2305,8 @@ msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
 msgstr ""
+"ತೆರೆಚಿತ್ರ(ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌) ಪ್ರೊಗ್ರಾಮಿಗಾಗಿನ UI ವಿವರಣಾ ಕಡತವು ಕಾಣಿಸುತ್ತಿಲ್ಲ.\n"
+"ದಯವಿಟ್ಟು ನಿಮ್ಮ gnome-utils ನ ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪರಿಶೀಲಿಸಿ"
 
 #: ../gnome-screenshot/screenshot-dialog.c:260
 msgid "Select a folder"
@@ -2297,7 +2325,7 @@ msgstr ""
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr ""
+msgstr "ಚೈಲ್ಡ್‌ ಉಳಿಸುವ ಪ್ರಕ್ರಿಯೆಯು ಅನಿರೀಕ್ಷಿತವಾಗಿ ನಿರ್ಗಮಿಸಿದೆ. ತೆರೆಚಿತ್ರವನ್ನು ಡಿಸ್ಕಿಗೆ ಬರೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ../gnome-screenshot/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
@@ -2336,11 +2364,11 @@ msgstr "ಹೆಸರು ಅಥವ ವಿಷಯಗಳ ಆಧಾರದ ಮೇಲ�
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search for Files..."
-msgstr "ಕಡತಗಳಿಗಾಗಿ ಹುಡುಕಲಾಗುತ್ತಿದೆ..."
+msgstr "ಕಡತಗಳಿಗಾಗಿ ಹುಡುಕು..."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:1
 msgid "Default Window Height"
-msgstr "ವಿಂಡೋವಿನ ಡೀಫಾಲ್ಟ್ ಉದ್ದ"
+msgstr "ವಿಂಡೋವಿನ ಪೂರ್ವನಿಯೋಜಿತ ಉದ್ದ"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:2
 msgid "Default Window Maximized"
@@ -2348,7 +2376,7 @@ msgstr "ಪೂರ್ವನಿಯೋಜಿತ ವಿಂಡೋವನ್ನು ಹ�
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:3
 msgid "Default Window Width"
-msgstr "ವಿಂಡೋವಿನ ಡೀಫಾಲ್ಟ್ ಅಗಲ"
+msgstr "ವಿಂಡೋವಿನ ಪೂರ್ವನಿಯೋಜಿತ ಅಗಲ"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:4
 msgid "Disable Quick Search"
@@ -2360,33 +2388,33 @@ msgstr "ಕ್ಷಿಪ್ರ ಹುಡುಕು ಎರಡನೆಯ ಶೋಧನ
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:6
 msgid "Quick Search Excluded Paths"
-msgstr ""
+msgstr "ಕ್ಷಿಪ್ರ ಹುಡುಕುವಿಕೆಯಿಂದ ಹೊರತಾಗಿಸಬೇಕಾದ ಮಾರ್ಗಗಳು"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:7
 msgid "Quick Search Second Scan Excluded Paths"
-msgstr ""
+msgstr "ಕ್ಷಿಪ್ರ ಹುಡುಕುವಿಕೆಯ ಎರಡನೆ ಬಾರಿ ಶೋಧಿಸುವಿಕೆಯಿಂದ ಹೊರತಾಗಿಸಬೇಕಾದ ಮಾರ್ಗಗಳು"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:8
 msgid "Search Result Columns Order"
-msgstr ""
+msgstr "ಫಲಿತಾಂಶದ ಲಂಬಸಾಲುಗಳ ಕ್ರಮವನ್ನು ಹುಡುಕು"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:11
 msgid "Select the search option \"Contains the text\""
-msgstr ""
+msgstr "\"ಈ ಪಠ್ಯವನ್ನು ಹೊಂದಿರುವ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:14
 msgid "Select the search option \"Date modified less than\""
-msgstr ""
+msgstr "\"ಈ ದಿನಾಂಕಕ್ಕಿಂತ ಮೊದಲು ಮಾರ್ಪಡಿಸಲಾಗಿದ್ದು\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:17
 msgid "Select the search option \"Date modified more than\""
-msgstr ""
+msgstr "\"ಈ ದಿನಾಂಕಕ್ಕಿಂತ ನಂತರ ಮಾರ್ಪಡಿಸಲಾಗಿದ್ದು\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -2416,25 +2444,25 @@ msgstr "\"ಹೆಸರು ಇದನ್ನು ಹೊಂದಿಲ್ಲ\" ಎನ�
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:32
 msgid "Select the search option \"Name matches regular expression\""
-msgstr ""
+msgstr "ಹುಡುಕು ಆಯ್ಕೆ \"ಸಾಮಾನ್ಯ ಗಣಿತೋಕ್ತಿಗೆ ತಾಳೆಯಾಗುವ ಹೆಸರು\" ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:35
 msgid "Select the search option \"Owned by group\""
-msgstr "\"ಸಮೂಹವು ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
+msgstr "\"ಸಮೂಹದಿಂದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:38
 msgid "Select the search option \"Owned by user\""
-msgstr "\"ಬಳಕೆದಾರರು ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
+msgstr "\"ಬಳಕೆದಾರಿಂದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:41
 msgid "Select the search option \"Owner is unrecognized\""
-msgstr "\"ಮಾಲಿಕನನ್ನು ಗುರುತಿಸಲಾಗಿಲ್ಲ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
+msgstr "\"ಗುರುತಿಸಲಾಗದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -2446,13 +2474,13 @@ msgstr "\"ಅಡಗಿಸಲಾದ ಕಡತಗಳು ಹಾಗು ಕಡತಕ�
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:47
 msgid "Select the search option \"Size at least\""
-msgstr ""
+msgstr "\"ಕನಿಷ್ಟ ಗಾತ್ರ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:50
 msgid "Select the search option \"Size at most\""
-msgstr ""
+msgstr "\"ಗರಿಷ್ಟ ಗಾತ್ರ\" ಎನ್ನುವ ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:51
 msgid "Show Additional Options"
@@ -2463,6 +2491,8 @@ msgid ""
 "This key defines the order of the columns in the search results. This key "
 "should not be modified by the user."
 msgstr ""
+"ಹುಡುಕು ಫಲಿತಾಂಶಗಳಲ್ಲಿನ ಲಂಬಸಾಲುಗಳ ಕ್ರಮವನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ. ಈ ಕೀಲಿಯನ್ನು "
+"ಬಳಕೆದಾರರು ಮಾರ್ಪಡಿಸಬಾರದು."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:53
 msgid ""
@@ -2470,6 +2500,9 @@ msgid ""
 "The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
 "media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
 msgstr ""
+"ಕ್ಷಿಪ್ರ ಹುಡುಕಾಟದಿಂದ ಹುಡುಕು ಉಪಕರಣವು ಹೊರತಾಗಿಸಬೇಕಿರುವ ಮಾರ್ಗವನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ. "
+"'*' ಹಾಗು '?' ನಂತಹ ವೈಲ್ಡ್‌ಕಾರ್ಡುಗಳಿಗೆ ಇಲ್ಲಿ ಬೆಂಬಲವಿದೆ. ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯಗಳು /mnt/*, /"
+"media/*, /dev/*, /tmp/*, /proc/*, and /var/* ಆಗಿರುತ್ತವೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:54
 msgid ""
@@ -2479,86 +2512,110 @@ msgid ""
 "not been indexed. The wildcards '*' and '?' are supported. The default value "
 "is /."
 msgstr ""
+"ಕ್ಷಿಪ್ರ ಹುಡುಕಾಟವನ್ನು ನಿರ್ವಹಿಸುವಾಗ ಹುಡುಕು ಉಪಕರಣವು ಎರಡನೆ ಬಾರಿ ಶೋಧಿಸುವಿಕೆಯಿಂದ ಹೊರತಾಗಿಸಬೇಕಿರುವ "
+"ಮಾರ್ಗವನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ. ಎರಡನೆ ಬಾರಿಯು ಶೋಧನೆಯು ಕಡತಗಳಿಗಾಗಿ ಹುಡುಕಲು ಹುಡುಕು ಆಜ್ಞೆಯನ್ನು ಬಳಸುತ್ತದೆ. ಎರಡನೇ ಬಾರಿ ಶೋಧಿಸುವ ಉದ್ದೇಶವೇನೆಂದರೆ ಸೂಚಿಯಲ್ಲಿ ಸೇರಿಸದೆ ಇರುವ ಕಡತಗಳನ್ನೂ ಸಹ ಸೇರಿಸುವುದಾಗಿರುತ್ತದೆ. '*' ಹಾಗು '?' ನಂತಹ ವೈಲ್ಡ್‌ಕಾರ್ಡುಗಳಿಗೆ ಇಲ್ಲಿ ಬೆಂಬಲವಿದೆ. ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯವು / ಆಗಿರುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:55
 msgid ""
 "This key defines the window height, and it's used to remember the size of "
 "the search tool between sessions. Setting it to -1 will make the search tool "
 "use the default height."
-msgstr ""
+msgstr "ಈ ಕೀಲಿಯು ವಿಂಡೋದ ಎತ್ತರವನ್ನು ಸೂಚಿಸುತ್ತದೆ, ಹಾಗು ಅಧಿವೇಶನಗಳ ನಡುವೆ ಹುಡುಕು ಉಪಕರಣದ ಗಾತ್ರವನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಇದನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಇದನ್ನು -1 ಗೆ ಬದಲಾಯಿಸಿದಲ್ಲಿ ಉಪಕರಣವು ಪೂರ್ವನಿಯೋಜಿತ ಎತ್ತರವನ್ನು ಬಳಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:56
 msgid ""
 "This key defines the window width, and it's used to remember the size of the "
 "search tool between sessions. Setting it to -1 will make the search tool use "
 "the default width."
-msgstr ""
+msgstr "ಈ ಕೀಲಿಯು ವಿಂಡೋದ ಅಗಲವನ್ನು ಸೂಚಿಸುತ್ತದೆ, ಹಾಗು ಅಧಿವೇಶನಗಳ ನಡುವೆ ಹುಡುಕು ಉಪಕರಣದ ಗಾತ್ರವನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು ಇದನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಇದನ್ನು -1 ಗೆ ಬದಲಾಯಿಸಿದಲ್ಲಿ ಉಪಕರಣವು ಪೂರ್ವನಿಯೋಜಿತ ಅಗಲವನ್ನು ಬಳಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:57
 msgid ""
 "This key determines if the \"Contains the text\" search option is selected "
 "when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಈ ಪಠ್ಯವನ್ನು ಹೊಂದಿರುವ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:58
 msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಈ ದಿನಾಂಕಕ್ಕಿಂತ ಮೊದಲು ಮಾರ್ಪಡಿಸಲಾಗಿದ್ದು\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:59
 msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಈ ದಿನಾಂಕಕ್ಕಿಂತ ನಂತರ ಮಾರ್ಪಡಿಸಲಾಗಿದ್ದು\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:60
 msgid ""
 "This key determines if the \"File is empty\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಕಡತವು ಖಾಲಿ ಇದೆ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:61
 msgid ""
 "This key determines if the \"Follow symbolic links\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಸಾಂಕೇತಿಕ ಕೊಂಡಿಗಳನ್ನು ಅನುಸರಿಸು\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:62
 msgid ""
 "This key determines if the \"Include other filesystems\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಇತರೆ ಕಡತವ್ಯವಸ್ಥೆಗಳನ್ನು ಒಳಗೊಳ್ಳಿಸು\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:63
 msgid ""
 "This key determines if the \"Name does not contain\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಹೆಸರು ಇದನ್ನು ಹೊಂದಿಲ್ಲ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:64
 msgid ""
 "This key determines if the \"Name matches regular expression\" search option "
 "is selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಸಾಮಾನ್ಯ ಗಣಿತೋಕ್ತಿಗೆ ತಾಳೆಯಾಗುವ ಹೆಸರು\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:65
 msgid ""
 "This key determines if the \"Owned by group\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಸಮೂಹದಿಂದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:66
 msgid ""
 "This key determines if the \"Owned by user\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಬಳಕೆದಾರರಿಂದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:67
 msgid ""
 "This key determines if the \"Owner is unrecognized\" search option is "
 "selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಗುರುತಿಸಲಾಗದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #. Translators: The quoted text is the label of the additional
 #. options expander that is translated elsewhere.
@@ -2567,40 +2624,48 @@ msgid ""
 "This key determines if the \"Select more options\" section is expanded when "
 "the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳನ್ನು ಆರಿಸು\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:71
 msgid ""
 "This key determines if the \"Show hidden files and folders\" search option "
 "is selected when the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಅಡಗಿಸಲಾದ ಕಡತಗಳು ಹಾಗು ಕಡತಕೋಶಗಳನ್ನು ತೋರಿಸು\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:72
 msgid ""
 "This key determines if the \"Size at least\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಕನಿಷ್ಟ ಗಾತ್ರ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:73
 msgid ""
 "This key determines if the \"Size at most\" search option is selected when "
 "the search tool is started."
 msgstr ""
+"ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಿದಾಗ \"ಗರಿಷ್ಟ ಗಾತ್ರ\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು "
+"ಆರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:74
 msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
-msgstr ""
+msgstr "ಒಂದು ಕ್ಷಿಪ್ರವಾದ ಹುಡುಕಾಟವನ್ನು ನಿರ್ವಹಿಸಿದ ನಂತರ ಹುಡುಕು ಆಜ್ಞೆಯನ್ನು ಬಳಸದಂತೆ ಹುಡುಕು ಉಪಕರಣವನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ ಎನ್ನುವುದನ್ನು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:75
 msgid ""
 "This key determines if the search tool disables the use of the locate "
 "command when performing simple file name searches."
-msgstr ""
+msgstr "ಸರಳವಾದ ಕಡತದ ಹೆಸರಿನ ಹುಡುಕಾಟಗಳನ್ನು ನಿರ್ವಹಿಸಿದ ನಂತರ ಪತ್ತೆ ಮಾಡು ಆಜ್ಞೆಯನ್ನು ಬಳಸದಂತೆ ಹುಡುಕು ಉಪಕರಣವನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ ಎನ್ನುವುದನ್ನು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
 msgid "This key determines if the search tool window starts in a maximized state."
-msgstr ""
+msgstr "ಹುಡುಕು ಉಪಕರಣ ವಿಂಡೋವು ಒಂದು ಹಿಗ್ಗಿಸಲಾದ ಸ್ಥಿತಿಯಲ್ಲಿ ಆರಂಭಗೊಳ್ಳುತ್ತದೆಯೆ ಎಂದು ಈ ಕೀಲಿಯು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:186
 msgid "Could not open help document."
@@ -2852,7 +2917,7 @@ msgstr "ಈ ಪಠ್ಯವನ್ನು ಹೊಂದಿದೆ(_t)"
 
 #: ../gsearchtool/gsearchtool.c:84
 msgid "_Date modified less than"
-msgstr ""
+msgstr "ಈ ದಿನಾಂಕಕ್ಕಿಂತ ಮೊದಲು ಮಾರ್ಪಡಿಸಲಾಗಿದ್ದು(_D)"
 
 #: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
 msgid "days"
@@ -2860,11 +2925,11 @@ msgstr "ದಿನಗಳು"
 
 #: ../gsearchtool/gsearchtool.c:85
 msgid "Date modified more than"
-msgstr ""
+msgstr "ಈ ದಿನಾಂಕಕ್ಕಿಂತ ನಂತರ ಮಾರ್ಪಡಿಸಲಾಗಿದ್ದು"
 
 #: ../gsearchtool/gsearchtool.c:87
 msgid "S_ize at least"
-msgstr ""
+msgstr "ಕನಿಷ್ಟ ಗಾತ್ರ(_i)"
 
 #: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
 msgid "kilobytes"
@@ -2872,7 +2937,7 @@ msgstr "ಕಿಲೋಬೈಟ್‌ಗಳು"
 
 #: ../gsearchtool/gsearchtool.c:88
 msgid "Si_ze at most"
-msgstr ""
+msgstr "ಗರಿಷ್ಟ ಗಾತ್ರ(_z)"
 
 #: ../gsearchtool/gsearchtool.c:89
 msgid "File is empty"
@@ -2888,7 +2953,7 @@ msgstr "ಸಮೂಹವು ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದ�
 
 #: ../gsearchtool/gsearchtool.c:93
 msgid "Owner is unrecognized"
-msgstr "ಮಾಲಿಕನನ್ನು ಗುರುತಿಸಲಾಗಿಲ್ಲ"
+msgstr "ಗುರುತಿಸಲಾಗದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿರುವ"
 
 #: ../gsearchtool/gsearchtool.c:95
 msgid "Na_me does not contain"
@@ -2896,7 +2961,7 @@ msgstr "ಹೆಸರು ಇದನ್ನು ಹೊಂದಿಲ್ಲ(_m)"
 
 #: ../gsearchtool/gsearchtool.c:96
 msgid "Name matches regular e_xpression"
-msgstr ""
+msgstr "ಸಾಮಾನ್ಯ ಗಣಿತೋಕ್ತಿಗೆ ತಾಳೆಯಾಗುವ ಹೆಸರು(_x)"
 
 #: ../gsearchtool/gsearchtool.c:98
 msgid "Show hidden and backup files"
@@ -2908,7 +2973,7 @@ msgstr "ಸಾಂಕೇತಿಕ ಕೊಂಡಿಗಳನ್ನು ಅನುಸ�
 
 #: ../gsearchtool/gsearchtool.c:100
 msgid "Include other filesystems"
-msgstr "ಇತರೆ ಕಡತ ವ್ಯವಸ್ಥೆಯನ್ನು ಒಳಗೊಳ್ಳಿಸು"
+msgstr "ಇತರೆ ಕಡತವ್ಯವಸ್ಥೆಗಳನ್ನು ಒಳಗೊಳ್ಳಿಸು"
 
 #: ../gsearchtool/gsearchtool.c:158 ../gsearchtool/gsearchtool.c:163
 #: ../gsearchtool/gsearchtool.c:172
@@ -2957,12 +3022,12 @@ msgstr "ಫಲಿತಾಂಶಗಳನ್ನು ಹೀಗೆ ಉಳಿಸು(_S)
 
 #: ../gsearchtool/gsearchtool.c:390
 msgid "A locate database has probably not been created."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಹುಡುಕುವಿಕೆಯನ್ನು ಬಹುಷಃ ರಚಿಸಲಾಗಿಲ್ಲ."
 
 #: ../gsearchtool/gsearchtool.c:492
 #, c-format
 msgid "Character set conversion failed for \"%s\""
-msgstr ""
+msgstr "\"%s\" ಗಾಗಿನ ಅಕ್ಷರ ಸೆಟ್ ಪರಿವರ್ತನೆಯು ವಿಫಲಗೊಂಡಿದೆ"
 
 #: ../gsearchtool/gsearchtool.c:516
 msgid "Searching..."
@@ -3001,15 +3066,15 @@ msgstr[1] "%d ಕಡತಗಳು ಕಂಡು ಬಂದಿದೆ"
 
 #: ../gsearchtool/gsearchtool.c:1133
 msgid "Entry changed called for a non entry option!"
-msgstr ""
+msgstr "ನಮೂದು ಅಲ್ಲದ ಆಯ್ಕೆಗಾಗಿನ ನಮೂದಿನ ಬದಲಾವಣೆಗಾಗಿ ಕೋರಲಾಗಿದೆ!"
 
 #: ../gsearchtool/gsearchtool.c:1384
 msgid "Set the text of \"Name contains\" search option"
-msgstr ""
+msgstr "\"ಹೆಸರು ಇದನ್ನು ಹೊಂದಿದೆ\" ಹುಡುಕು ಆಯ್ಕೆಯ ಪಠ್ಯವನ್ನು ಸಿದ್ದಗೊಳಿಸು"
 
 #: ../gsearchtool/gsearchtool.c:1385
 msgid "Set the text of \"Look in folder\" search option"
-msgstr ""
+msgstr "\"ಕಡತಕೋಶದಲ್ಲಿ ನೋಡು\" ಹುಡುಕು ಆಯ್ಕೆಯ ಪಠ್ಯವನ್ನು ಸಿದ್ದಗೊಳಿಸು"
 
 #: ../gsearchtool/gsearchtool.c:1386
 msgid "Sort files by one of the following: name, folder, size, type, or date"
@@ -3033,11 +3098,11 @@ msgstr "\"%s\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ
 #: ../gsearchtool/gsearchtool.c:1397
 #, c-format
 msgid "Select and set the \"%s\" search option"
-msgstr ""
+msgstr "\"%s\" ಹುಡುಕು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ ಹಾಗು ಹೊಂದಿಸಿ"
 
 #: ../gsearchtool/gsearchtool.c:1504
 msgid "Invalid option passed to sortby command line argument."
-msgstr ""
+msgstr "sortby ಆಜ್ಞಾಸಾಲಿನ ಆರ್ಗುಮೆಂಟಿಗೆ ಅಮಾನ್ಯವಾದ ಆಯ್ಕೆಯನ್ನು ರವಾನಿಸಲಾಗಿದೆ."
 
 #: ../gsearchtool/gsearchtool.c:1802
 msgid ""
@@ -3072,7 +3137,7 @@ msgstr "ತಕ್ಷಣದ ಹುಡುಕನ್ನು ಅಶಕ್ತಗೊಳ�
 #: ../gsearchtool/gsearchtool.c:1910
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
-msgstr ""
+msgstr "ಚೈಲ್ಡ್‌ %d ನ ಪ್ರಕ್ರಿಯೆಯ ಗುಂಪು id ಅನ್ನು ಸಿದ್ಧಗೊಳಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ: %s.\n"
 
 #: ../gsearchtool/gsearchtool.c:1935
 msgid "Error parsing the search command."
@@ -3151,7 +3216,7 @@ msgstr "ಇದನ್ನು ಹೊಂದಿರುವ ಹೆಸರು(_N):"
 
 #: ../gsearchtool/gsearchtool.c:2946 ../gsearchtool/gsearchtool.c:2947
 msgid "Enter a filename or partial filename with or without wildcards."
-msgstr ""
+msgstr "ವೈಲ್ಡ್‌ಕಾರ್ಡುಗಳೊಂದಿಗೆ ಅಥವ ವೈಲ್ಡ್‌ಕಾರ್ಡುಗಳಿಲ್ಲದೆ ಒಂದು ಕಡತದ ಹೆಸರು ಅಥವ ಆಂಶಿಕ ಕಡತದ ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
 
 #: ../gsearchtool/gsearchtool.c:2947
 msgid "Name contains"
@@ -3179,7 +3244,7 @@ msgstr "ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳನ್ನು ಆರಿಸ�
 
 #: ../gsearchtool/gsearchtool.c:2984
 msgid "Select more options"
-msgstr "ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳನ್ನು ಆರಿಸಿ"
+msgstr "ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳನ್ನು ಆರಿಸು"
 
 #: ../gsearchtool/gsearchtool.c:2984
 msgid "Click to expand or collapse the list of available options."
@@ -3253,7 +3318,7 @@ msgstr ""
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
-msgstr ""
+msgstr "ಮುಖ್ಯ ವೃಕ್ಷ ನೋಟದಲ್ಲಿ ದಾಖಲೆಯನ್ನು ತೋರಿಸಲು ಬಳಸಲಾಗುವ ನಿಗದಿತ-ಅಗಲದ ಅಕ್ಷರಶೈಲಿಯ ಗಾತ್ರವನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿಯ ಗಾತ್ರದಿಂದ ಪೂರ್ವನಿಯೋಜಿತವನ್ನು ತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ."
 
 #: ../logview/data/gnome-system-log.schemas.in.h:9
 msgid "Specifies the width of the log viewer main window in pixels."
@@ -3328,7 +3393,7 @@ msgstr "ಹುಡುಕು ವಾಕ್ಯವನ್ನು ಅಳಿಸಿ"
 
 #: ../logview/logview-log.c:595
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr ""
+msgstr "ಸಂಕುಚನಗೊಳಿಸಲಾದ GZipped ದಾಖಲೆಯಿಂದ ಅಂಶಗಳನ್ನು ಹೊರತೆಗೆಯುವಲ್ಲಿ ದೋಷ. ಬಹುಷಃ ಕಡತವು ಹಾಳಾಗಿರಬೇಕು."
 
 #: ../logview/logview-log.c:642
 msgid "You don't have enough permissions to read the file."
@@ -3340,7 +3405,7 @@ msgstr "ಕಡತವು ಒಂದು ಸಾಮಾನ್ಯವಾದ ಕಡತವ
 
 #: ../logview/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆಯ ದಾಖಲೆಯ ಈ ಆವೃತ್ತಿಯು GZipped ದಾಖಲೆಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ../logview/logview-loglist.c:311
 msgid "Loading..."
