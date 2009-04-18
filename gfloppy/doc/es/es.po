@@ -1,0 +1,573 @@
+# translation of gfloppy.HEAD.po to Español
+# Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+# spanish translation for gfloppy manual
+# tradución al español del manual de gfloppy
+msgid ""
+msgstr ""
+"Project-Id-Version: gfloppy.HEAD\n"
+"POT-Creation-Date: 2007-07-24 03:36+0100\n"
+"PO-Revision-Date: 2008-03-09 14:28+0100\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gfloppy.xml:197(None)
+msgid "@@image: 'figures/main.png'; md5=f89c942f67c8073988ba1a7a818aad69"
+msgstr "@@image: 'figures/main.png'; md5=f89c942f67c8073988ba1a7a818aad69"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gfloppy.xml:200(None)
+msgid "@@image: 'figures/main.eps'; md5=THIS FILE DOESN'T EXIST"
+msgstr "@@image: 'figures/main.eps'; md5=THIS FILE DOESN'T EXIST"
+
+#: C/gfloppy.xml:15(title)
+msgid "Floppy Formatter Manual"
+msgstr "Manual del Formateador de disquetes"
+
+#: C/gfloppy.xml:17(para)
+msgid ""
+"Floppy Formatter, also known as Gfloppy, formats floppy disks for use in "
+"Linux."
+msgstr ""
+"Formateador de disquetes, también conocido como Gfloppy, formatea disquetes "
+"para su uso en Linux."
+
+#: C/gfloppy.xml:20(year) C/gfloppy.xml:127(date)
+msgid "2000"
+msgstr "2000"
+
+#: C/gfloppy.xml:21(holder) C/gfloppy.xml:129(para)
+msgid "Kenny Graunke"
+msgstr "Kenny Graunke"
+
+#: C/gfloppy.xml:24(year)
+msgid "2002"
+msgstr "2002"
+
+#: C/gfloppy.xml:25(holder)
+msgid "John Fleck"
+msgstr "John Fleck"
+
+#: C/gfloppy.xml:28(year)
+msgid "2003"
+msgstr "2003"
+
+#: C/gfloppy.xml:29(holder)
+msgid "Baris Cicek"
+msgstr "Baris Cicek"
+
+#: C/gfloppy.xml:41(publishername) C/gfloppy.xml:51(orgname)
+#: C/gfloppy.xml:60(orgname) C/gfloppy.xml:68(orgname) C/gfloppy.xml:109(para)
+#: C/gfloppy.xml:121(para) C/gfloppy.xml:132(para)
+msgid "GNOME Documentation Project"
+msgstr "Proyecto de documentación de GNOME"
+
+#: C/gfloppy.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Se concede permiso para copiar, distribuir o modificar este documento según "
+"las condiciones de la GNU Free Documentation License (GFDL), versión 1.1 o "
+"cualquier versión posterior publicada por la Free Software Foundation, sin "
+"Secciones invariantes, Textos de portada y Textos de contraportada. "
+"Encontrará una copia de la GFDL en este <ulink type=\"help\" url=\"ghelp:fdl"
+"\">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual."
+
+#: C/gfloppy.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Este manual forma parte de una colección de documentos de GNOME distribuidos "
+"según la GFDL. Si desea distribuir este manual de forma independiente de la "
+"colección, puede hacerlo agregando una copia de la licencia al documento, "
+"según se describe en la sección 6 de la misma."
+
+#: C/gfloppy.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Muchos de los nombres utilizados por las empresas para distinguir sus "
+"productos y servicios se consideran marcas comerciales. Cuando estos nombres "
+"aparezcan en la documentación de GNOME, y siempre que se haya informado a "
+"los miembros del Proyecto de documentación de GNOME de dichas marcas "
+"comerciales, los nombres aparecerán en mayúsculas o con las iniciales en "
+"mayúsculas."
+
+#: C/gfloppy.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"EL DOCUMENTO SE OFRECE «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O "
+"IMPLÍCITA, INCLUYENDO, PERO SIN LIMITARSE A ELLA, LA GARANTÍA DE QUE EL "
+"DOCUMENTO O LA VERSIÓN MODIFICADA DEL MISMO ESTÉ LIBRE DE DEFECTOS, GARANTÍA "
+"DE COMERCIALIZACIÓN, APTITUD PARA UN USO EN PARTICULAR O INCUMPLIMIENTO. "
+"TODOS LOS RIESGOS RELATIVOS A LA CALIDAD, EXACTITUD O RENDIMIENTO DEL "
+"DOCUMENTO O LA VERSIÓN MODIFICADA DEL MISMO SON ASUMIDOS POR VD. EN CASO DE "
+"QUE EL DOCUMENTO O LA VERSIÓN MODIFICADA SEAN DEFECTUOSOS, VD. (NO EL "
+"ESCRITOR ORIGINAL NI EL AUTOR NI NINGUNO DE LOS COLABORADORES) ASUMIRÁ EL "
+"COSTE DE CUALQUIER MANTENIMIENTO, REPARACIÓN O CORRECCIÓN QUE SEAN "
+"NECESARIOS. ESTA RENUNCIA DE GARANTÍA CONSTITUYE UNA PARTE ESENCIAL DE ESTA "
+"LICENCIA NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DEL "
+"MISMO, SALVO EN LAS CONDICIONES ESPECIFICADAS EN ESTA RENUNCIA; Y "
+
+#: C/gfloppy.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"BAJO NINGUNA CIRCUNSTANCIA NI SUPUESTO LEGAL, YA SEA POR AGRAVIO (INCLUIDA "
+"LA NEGLIGENCIA), CONTRATO U OTROS CASOS, SERÁN RESPONSABLES EL AUTOR, EL "
+"ESCRITOR ORIGINAL, CUALQUIERA DE LOS COLABORADORES O DISTRIBUIDORES DEL "
+"DOCUMENTO O UNA VERSIÓN MODIFICADA DEL MISMO NI CUALQUIER PROVEEDOR DE TALES "
+"PARTES ANTE UN TERCERO, POR CUALQUIER PERJUICIO DIRECTO, INDIRECTO, "
+"ESPECIAL, ACCIDENTAL O CONSECUTIVO DE CUALQUIER TIPO, INCLUYENDO SIN "
+"LIMITACIÓN LOS DAÑOS POR PÉRDIDA DE CLIENTES, INTERRUPCIONES DEL TRABAJO, "
+"FALLO DE SISTEMAS O AL FUNCIONAMIENTO, O CUALQUIER OTRO DAÑO O PÉRDIDA "
+"CAUSADA O RELACIONADA CON EL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS "
+"DEL MISMO, AUN CUANDO SE HAYA INFORMADO DE LA POSIBILIDAD DE DICHOS DAÑOS."
+
+#: C/gfloppy.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE OFRECEN SEGÚN LAS "
+"CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE DE GNU (GFDL) "
+"Y TENIENDO EN CUENTA QUE: <placeholder-1/>"
+
+#: C/gfloppy.xml:48(firstname)
+msgid "Baris"
+msgstr "Baris"
+
+#: C/gfloppy.xml:49(surname)
+msgid "Cicek"
+msgstr "Cicek"
+
+#: C/gfloppy.xml:52(email)
+msgid "bcicek@phreaker.net"
+msgstr "bcicek@phreaker.net"
+
+#: C/gfloppy.xml:57(firstname)
+msgid "John"
+msgstr "John"
+
+#: C/gfloppy.xml:58(surname)
+msgid "Fleck"
+msgstr "Fleck"
+
+#: C/gfloppy.xml:61(email)
+msgid "jfleck@inkstain.net"
+msgstr "jfleck@inkstain.net"
+
+#: C/gfloppy.xml:65(firstname)
+msgid "Kenny"
+msgstr "Kenny"
+
+#: C/gfloppy.xml:66(surname)
+msgid "Graunke"
+msgstr "Graunke"
+
+#: C/gfloppy.xml:103(revnumber)
+msgid "Gfloppy Manual V2.1"
+msgstr "Manual del Formateador de disquetes V2.1"
+
+#: C/gfloppy.xml:104(date)
+msgid "January 2003"
+msgstr "Enero de 2003"
+
+#: C/gfloppy.xml:106(para)
+msgid "Baris Cicek <email>bcicek@phreaker.net</email>"
+msgstr "Baris Cicek <email>bcicek@phreaker.net</email>"
+
+#: C/gfloppy.xml:114(revnumber)
+msgid "Gfloppy Manual V4.0"
+msgstr "Manual del Formateador de disquetes V4.0"
+
+#: C/gfloppy.xml:115(date)
+msgid "June 2002"
+msgstr "Junio de 2002"
+
+#: C/gfloppy.xml:118(para)
+msgid "John Fleck <email>jfleck@inkstain.net</email>"
+msgstr "John Fleck <email>jfleck@inkstain.net</email>"
+
+#: C/gfloppy.xml:126(revnumber)
+msgid "Gfloppy Manual"
+msgstr "Manual del Formateador de disquetes"
+
+#: C/gfloppy.xml:137(releaseinfo)
+msgid "This manual describes version 2.4 of Gfloppy Manual"
+msgstr "Este manual describe la versión 2.4 del manual del Formateador de disquetes"
+
+#: C/gfloppy.xml:140(title)
+msgid "Feedback"
+msgstr "Comentarios"
+
+#: C/gfloppy.xml:141(para)
+msgid ""
+"To report a bug or make a suggestion regarding the Gfloppy application or "
+"this manual, follow the directions in the <ulink url=\"ghelp:gnome-feedback"
+"\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Para informar de un fallo, o hacer alguna sugerencia concerniente a la "
+"aplicación Formateador de disquetes o sobre este manual, siga las "
+"indicaciones en la <ulink url=\"ghelp:gnome-feedback\" type=\"help\">página "
+"de comentarios de GNOME</ulink>."
+
+#: C/gfloppy.xml:160(title)
+msgid "Introduction"
+msgstr "Introducción"
+
+#: C/gfloppy.xml:162(para)
+msgid ""
+"<application>GFloppy</application> formats floppy disks for Linux. New "
+"floppy disks might need to be formatted before they can be used."
+msgstr ""
+"El <application>Formateador de disquetes</application> formatea disquetes "
+"para Linux. Los disquetes nuevos puede que necesiten ser formateados antes "
+"de que puedan ser usados."
+
+#: C/gfloppy.xml:167(para)
+msgid ""
+"To run <application>GFloppy</application>, select <guimenuitem>Floppy "
+"Formatter</guimenuitem> from the <guisubmenu>System Tools</guisubmenu> "
+"submenu of the <guimenu>Main Menu</guimenu>, or type <command>gfloppy</"
+"command> on the command line."
+msgstr ""
+"Para ejecutar <application>Formateador de disquetes</application>, "
+"seleccione <application>Formateador de disquetes</application> del submenú "
+"<guisubmenu>Herramientas del sistema</guisubmenu> del <guimenu>Menú "
+"principal</guimenu>, o escriba <command>gfloppy</command> en la línea de "
+"comandos."
+
+#: C/gfloppy.xml:176(para)
+msgid "This document describes version 2.4 of <application>GFloppy</application>."
+msgstr ""
+"Este documento describe la versión 2.4 del <application>Formateador de "
+"disquetes</application>."
+
+#: C/gfloppy.xml:187(title)
+msgid "Use of GFloppy"
+msgstr "Uso del Formateador de disquetes"
+
+#: C/gfloppy.xml:192(title)
+msgid "Gfloppy Main Window"
+msgstr "Ventana principal del Formateador de disquetes"
+
+#: C/gfloppy.xml:194(screeninfo) C/gfloppy.xml:203(phrase)
+#: C/gfloppy.xml:205(para)
+msgid "GFloppy Main Window"
+msgstr "Ventana principal del Formateador de disquetes"
+
+#: C/gfloppy.xml:188(para)
+msgid ""
+"When you start <application>GFloppy</application>, the <interface>Main "
+"window</interface> opens, shown in <xref linkend=\"gfloppymainwindow\"/>. "
+"<placeholder-1/>"
+msgstr ""
+"Cuando inicie el <application>Formateador de disquetes</application>, se "
+"abrirá la <interface>ventana principal</interface> mostrada en <xref linkend="
+"\"gfloppymainwindow\"/>. <placeholder-1/>"
+
+#: C/gfloppy.xml:212(para)
+msgid "Insert a floppy disk that is not write-protected."
+msgstr "Introduzca un disquete que no esté protegido contra escritura."
+
+#: C/gfloppy.xml:217(title)
+msgid "Warning"
+msgstr "Advertencia"
+
+#: C/gfloppy.xml:218(para)
+msgid ""
+"GFloppy will destroy all files on your floppy disk. Do not format floppies "
+"containing files you wish to keep."
+msgstr ""
+"El Formateador de disquetes destruirá todos los archivos en su disquete. No "
+"formatee disquetes que contengan archivos que desea conservar."
+
+#: C/gfloppy.xml:223(para)
+msgid ""
+"GFloppy needs to know the density of your floppy disk, the amount of data it "
+"can hold. Most disks today are High Density, 1.44MB 3.5\"."
+msgstr ""
+"El Formateador de archivos necesita saber la densidad de su disquete, la "
+"cantidad de datos que puede almacenar. La mayoría de los disquetes de hoy "
+"día son de alta densidad, 1.44 MiB 3.5\"."
+
+#: C/gfloppy.xml:228(para)
+msgid ""
+"Select your file system type. If you need to use your floppy under DOS or "
+"Windows, choose <guibutton>DOS (FAT)</guibutton>. Otherwise, choose "
+"<guibutton>Linux Native (ext2)</guibutton>. Linux Native cannot be read on "
+"most non-Linux machines."
+msgstr ""
+"Seleccione el tipo de su sistema de archivos. Si necesita usar su disquete "
+"bajo DOS o Windows, elija <guibutton>DOS (FAT)</guibutton>. De otra manera "
+"elija <guibutton>Linux nativo (ext2)</guibutton>. Linux nativo no se puede "
+"leer en la mayoría de máquinas que no sean Linux."
+
+#: C/gfloppy.xml:234(para)
+msgid ""
+"You can also give <guibutton>Volume name</guibutton> to your newly formatted "
+"floppies. To do this type your label in the text box under "
+"<guibutton>Filesystem Settings</guibutton>."
+msgstr ""
+"También puede dar un <guibutton>Nombre del volumen</guibutton> a sus discos "
+"recién formateados. Para hacer esto, escriba su etiqueta en la caja de texto "
+"bajo <guibutton>Tipo del sistema de archivos</guibutton>."
+
+#: C/gfloppy.xml:243(guibutton)
+msgid "Quick"
+msgstr "Rápido"
+
+#: C/gfloppy.xml:245(para)
+msgid ""
+"Quick format is fastest but does not check your floppy for bad \"blocks\". "
+"It just deletes the file table so your data is theoretically recoverable."
+msgstr ""
+"El formateo rápido es el más rápido pero no comprueba los «bloques» dañados "
+"de su disquete. Sólo borra la tabla de archivos de tal forma que sus datos "
+"son teóricamente recuperables."
+
+#: C/gfloppy.xml:251(guibutton)
+msgid "Standard"
+msgstr "Estándar"
+
+#: C/gfloppy.xml:253(para)
+msgid ""
+"Standard format is a low-level format, but it does not check bad blocks. "
+"Thus if you have a faulty floppy it will fail to format."
+msgstr ""
+"El formateo estándar es un formateo a bajo nivel, pero no comprueba los "
+"bloques dañados. De tal forma que si tiene un disquete dañado el formateo "
+"fallará."
+
+#: C/gfloppy.xml:259(guibutton)
+msgid "Thorough"
+msgstr "Completo"
+
+#: C/gfloppy.xml:261(para)
+msgid "Thorough format checks floppy for bad blocks and low-level format it."
+msgstr ""
+"El formateo completo comprueba los bloques dañados del disquete y lo "
+"formatea a bajo nivel."
+
+#: C/gfloppy.xml:240(para)
+msgid "Finally, you should select the mode of your formatting. <placeholder-1/>"
+msgstr "Finalmente debería seleccionar el modo de formateo. <placeholder-1/>"
+
+#. <para>
+#.     Quick format is faster but does not check your floppy disk for bad
+#.     "blocks". The slower regular format is useful if you have not formatted your
+#.     floppy before, or if you suspect your disk might be bad.
+#.    </para>
+#: C/gfloppy.xml:275(para)
+msgid ""
+"Click on the <guibutton>Format</guibutton> button to start formatting your "
+"floppy disk, as shown in these figures."
+msgstr ""
+"Pulse en el botón <guibutton>Formatear</guibutton> para comenzar a formatear "
+"su disquete, como se muestra en estas figuras."
+
+#: C/gfloppy.xml:280(para)
+msgid ""
+"You will see a series of dialogs informing you that <application>Gfloppy</"
+"application> is formatting, verifying and making a filesystem on your disk."
+msgstr ""
+"Verá una serie de diálogos informándole de que el <application>Formateador "
+"de disquetes</application> está formateando, verificando y creando el "
+"sistema de archivos en su disco."
+
+#: C/gfloppy.xml:284(para)
+msgid ""
+"Unless you select <guibutton>Quick Format</guibutton> or "
+"<guibutton>Standard</guibutton>, <application>GFloppy</application> checks "
+"for bad \"blocks\" on your floppy. If <application>Gfloppy</application> "
+"finds any, your floppy is wearing out."
+msgstr ""
+"A no ser que seleccione <guibutton>Formateo rápido</guibutton> o "
+"<guibutton>Formateo estándar</guibutton>, <application>Formateador de "
+"disquetes</application> comprobará los «bloques» defectuosos de su disquete. "
+"Si <application>Formateador de disquetes</application> encuentra alguno su "
+"disquete es inservible."
+
+#: C/gfloppy.xml:292(para)
+msgid ""
+"<application>GFloppy</application> will let you know if it was successful "
+"and it will return you to the main window."
+msgstr ""
+"El <application>Formateador de disquetes</application> le permitirá saber si "
+"la operación se realizó con éxito y le devolverá a la ventana principal."
+
+#: C/gfloppy.xml:300(title)
+msgid "Troubleshooting"
+msgstr "Resolución de problemas"
+
+#: C/gfloppy.xml:301(para)
+msgid ""
+"When no floppy disk is inserted, GFloppy displays a dialog informing you "
+"that there's no media to be formated."
+msgstr ""
+"Cuando no hay un disquete introducido, el Formateador de disquetes muestra "
+"un diálogo informándole de que no hay ningún medio para formatear."
+
+#: C/gfloppy.xml:305(para)
+msgid ""
+"If your disk is write protected, GFloppy will warn you as well. To un-write "
+"protect your floppy, eject it and turn it over. Standard 3.5 inch floppies "
+"have a small black tab in the upper-left corner. Slide it down so it covers "
+"the hole. If the floppy does not have a black tab, it is permanently write "
+"protected."
+msgstr ""
+"Si su disco está protegido contra escritura, el Formateador de disquetes "
+"también le avisará de ello. Para desproteger su disquete, sáquelo y délo la "
+"vuelta. Los disquetes estándar de 3.5 pulgadas tienen un pequeño deslizador "
+"negro en la esquina superior izquierda. Deslícela hacia abajo de tal forma "
+"que cubra el agujero. Si el disquete no tiene el deslizador negro estará "
+"permanentemente protegido contra escritura."
+
+#: C/gfloppy.xml:368(title)
+msgid "Known Bugs and Limitations"
+msgstr "Errores conocidos y limitaciones"
+
+#: C/gfloppy.xml:369(para)
+msgid "GFloppy only works on Linux."
+msgstr "El Formateador de disquetes sólo funciona en Linux."
+
+#: C/gfloppy.xml:377(title)
+msgid "Authors"
+msgstr "Autores"
+
+#: C/gfloppy.xml:378(para)
+msgid ""
+"<application>GFloppy</application> was written by Jonathan Blandford "
+"(<email>jrb@redhat.com</email>). Please send all comments, suggestions, and "
+"bug reports to the <ulink url=\"http://bugzilla.gnome.org\" type=\"http\"> "
+"GNOME bug tracking database</ulink>. If you are using GNOME 1.1 or later, "
+"you can also use <application>Bug Report Tool</application> (<command>bug-"
+"buddy</command>), available in the <guisubmenu>Programming</guisubmenu> "
+"submenu of <guimenu>Main Menu</guimenu>, for submitting bug reports."
+msgstr ""
+"Jonathan Blandford (<email>jrb@redhat.com</email>) escribió el "
+"<application>Formateador de disquetes</application>. Por favor, envíe todos "
+"los comentarios, sugerencias e informes de error a la<ulink url=\"http://"
+"bugzilla.gnome.org\" type=\"http\">base de datos de seguimiento de errores "
+"de GNOME</ulink>. Si está usando GNOME 1.1 o posterior también puede usar la "
+"<application>Herramienta de informe de errores</application> (<command>bug-"
+"buddy</command>), disponible en el submenú <guisubmenu>Programación</"
+"guisubmenu> del <guimenu>Menú principal</guimenu> para enviar informes de "
+"error."
+
+#: C/gfloppy.xml:389(para)
+msgid ""
+"This manual was written by Baris Cicek (<email>bcicek@phreaker.net</email>). "
+"Please send all comments and suggestions regarding this manual to the <ulink "
+"type=\"http\" url=\"http://developer.gnome.org/projects/gdp/\">GNOME "
+"Documentation Project</ulink> by sending an email to <email>docs@gnome.org</"
+"email>. You can also add your comments online by using the <ulink type=\"http"
+"\" url=\"http://developer.gnome.org/projects/gdp/doctable/\">GNOME "
+"Documentation Status Table</ulink>."
+msgstr ""
+"Este manual lo escribió Baris Cicek (<email>bcicek@phreaker.net</email>). "
+"Por favor, envíe todos los comentarios, sugerencias e informes de error a "
+"<ulink type=\"http\" url=\"http://developer.gnome.org/projects/gdp/"
+"\">Proyecto de documentación de GNOME</ulink> enviando un correo electrónico "
+"a <email>docs@gnome.org</email>. También puede añadir sus comentarios en "
+"línea usando la <ulink type=\"http\" url=\"http://developer.gnome.org/"
+"projects/gdp/doctable/\">Tabla de estado de la documentación de GNOME</"
+"ulink>."
+
+#: C/gfloppy.xml:416(title)
+msgid "License"
+msgstr "Licencia"
+
+#: C/gfloppy.xml:417(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink url=\"ghelp:gpl\"><citetitle>GNU General "
+"Public License</citetitle></ulink> as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"Este programa se distribuye bajo los términos de la Licencia Pública General "
+"GNU tal como la publica la <ulink url=\"ghelp:gpl\"><citetitle>Free Software "
+"Foundation</citetitle></ulink>; tanto en la versión 2 de la Licencia, o (a "
+"su opción) cualquier otra versión posterior."
+
+#: C/gfloppy.xml:424(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <ulink url=\"ghelp:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> for more "
+"details."
+msgstr ""
+"Este programa se distribuye con la esperanza de que le sea útil, pero SIN "
+"NINGUNA GARANTÍA; sin incluso la garantía implícita de MERCANTILIDAD o "
+"IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Vea la <ulink url=\"ghelp:gpl"
+"\"><citetitle>Licencia Pública General GNU</citetitle></ulink> para más "
+"detalles."
+
+#: C/gfloppy.xml:431(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Una copia de la <citetitle>Licencia Pública General GNU</citetitle> está "
+"incluida en el apéndice de la <citetitle>Guía de usuario de GNOME</"
+"citetitle>. También puede obtener una copia de la <citetitle>Licencia "
+"Pública General GNU</citetitle> de la Free Software Foundation visitando "
+"<ulink url=\"http://www.fsf.org\" type=\"http\">su página web</ulink> o "
+"escribiendo a la <address>Free Software Foundation, Inc. <street>59 Temple Place</"
+"street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-"
+"1307</postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gfloppy.xml:0(None)
+msgid "translator-credits"
+msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2008."
+
