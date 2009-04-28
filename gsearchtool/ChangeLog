@@ -1,3 +1,8 @@
+2009-04-26  Dennis Cranston  <dennis_cranston@yahoo.com>
+
+	* gsearchtool-support.c (compare_regex):  Fix memory leak.
+	Bug 579461.
+
 2009-02-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* gsearchtool.h: get rid of deprecated GTK_CHECK_* macros.
