@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&component=general\n"
-"POT-Creation-Date: 2009-03-17 07:05+0000\n"
-"PO-Revision-Date: 2009-04-12 16:43+0200\n"
+"POT-Creation-Date: 2009-04-29 15:29+0000\n"
+"PO-Revision-Date: 2009-05-03 23:22+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -2286,7 +2286,7 @@ msgstr ""
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
 msgid "Save images of your desktop or individual windows"
-msgstr "Guarda imágenes de su escritorio o ventanas individuales"
+msgstr "Guarde imágenes de su escritorio o ventanas individuales"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
@@ -2871,24 +2871,24 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:640
+#: ../gsearchtool/gsearchtool-support.c:642
 msgid "today at %-I:%M %p"
 msgstr "hoy a las %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:642
+#: ../gsearchtool/gsearchtool-support.c:644
 msgid "yesterday at %-I:%M %p"
 msgstr "ayer a las %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:644
 #: ../gsearchtool/gsearchtool-support.c:646
+#: ../gsearchtool/gsearchtool-support.c:648
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %-d de %B de %Y, a las %-I:%M:%S %p"
 
-#: ../gsearchtool/gsearchtool-support.c:825
+#: ../gsearchtool/gsearchtool-support.c:827
 msgid "link (broken)"
 msgstr "enlace (roto)"
 
-#: ../gsearchtool/gsearchtool-support.c:829
+#: ../gsearchtool/gsearchtool-support.c:831
 #, c-format
 msgid "link to %s"
 msgstr "enlace a %s"
@@ -2899,12 +2899,12 @@ msgstr "enlace a %s"
 #. * make some or all of them match.
 #.
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1525
+#: ../gsearchtool/gsearchtool-support.c:1527
 msgid " (copy)"
 msgstr " (copia)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1527
+#: ../gsearchtool/gsearchtool-support.c:1529
 msgid " (another copy)"
 msgstr " (otra copia)"
 
@@ -2912,36 +2912,36 @@ msgstr " (otra copia)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1530
 #: ../gsearchtool/gsearchtool-support.c:1532
 #: ../gsearchtool/gsearchtool-support.c:1534
-#: ../gsearchtool/gsearchtool-support.c:1544
+#: ../gsearchtool/gsearchtool-support.c:1536
+#: ../gsearchtool/gsearchtool-support.c:1546
 msgid "th copy)"
 msgstr "ª copia)"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1539
 msgid "st copy)"
 msgstr "ª copia)"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1539
+#: ../gsearchtool/gsearchtool-support.c:1541
 msgid "nd copy)"
 msgstr "ª copia)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1541
+#: ../gsearchtool/gsearchtool-support.c:1543
 msgid "rd copy)"
 msgstr "ª copia)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1558
+#: ../gsearchtool/gsearchtool-support.c:1560
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (copia)%s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1560
+#: ../gsearchtool/gsearchtool-support.c:1562
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (otra copia)%s"
@@ -2950,43 +2950,43 @@ msgstr "%s (otra copia)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1563
 #: ../gsearchtool/gsearchtool-support.c:1565
 #: ../gsearchtool/gsearchtool-support.c:1567
-#: ../gsearchtool/gsearchtool-support.c:1576
+#: ../gsearchtool/gsearchtool-support.c:1569
+#: ../gsearchtool/gsearchtool-support.c:1578
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%dª copia)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1570
+#: ../gsearchtool/gsearchtool-support.c:1572
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%dª copia)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1572
+#: ../gsearchtool/gsearchtool-support.c:1574
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%dª copia)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1574
+#: ../gsearchtool/gsearchtool-support.c:1576
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%dª copia)%s"
 
-#: ../gsearchtool/gsearchtool-support.c:1621
+#: ../gsearchtool/gsearchtool-support.c:1623
 msgid " (invalid Unicode)"
 msgstr " (Unicode inválido)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1710
+#: ../gsearchtool/gsearchtool-support.c:1712
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1718
+#: ../gsearchtool/gsearchtool-support.c:1720
 #, c-format
 msgid " (%d"
 msgstr " (%d"
@@ -3518,7 +3518,7 @@ msgstr "[ARCHIVO DE SUCESOS…]"
 msgid " - Browse and monitor logs"
 msgstr " - Vea y monitorice los sucesos"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:103
 msgid "Log Viewer"
 msgstr "Visor de sucesos"
 
@@ -3633,15 +3633,15 @@ msgstr "Panel _lateral"
 msgid "Show Side Pane"
 msgstr "Muestra el panel lateral"
 
-#: ../logview/logview-window.c:1165
+#: ../logview/logview-window.c:1168
 msgid "Close"
 msgstr "Cerrar"
 
-#: ../logview/logview-window.c:1205
+#: ../logview/logview-window.c:1208
 msgid "Version: "
 msgstr "Versión: "
 
-#: ../logview/logview-window.c:1305
+#: ../logview/logview-window.c:1308
 msgid "Could not open the following files:"
 msgstr "No se pudieron abrir los siguientes archivos:"
 
