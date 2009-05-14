@@ -1,4 +1,4 @@
-# translation of gnome-utils.HEAD.te.po to Telugu
+# translation of gnome-utils.gnome-2-26.te.po to Telugu
 # Telugu translation of gnome-utils.
 # Copyright (C) 2007 Swecha Telugu Localisation Team <localisation@swecha.org>
 # This file is distributed under the same license as the gnome-utils package.
@@ -8,16 +8,17 @@
 # Krishna Babu K <kkrothap@redhat.com>, 2007, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils.HEAD.te\n"
+"Project-Id-Version: gnome-utils.gnome-2-26.te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-utils&component=general\n"
-"POT-Creation-Date: 2009-02-27 13:40+0000\n"
-"PO-Revision-Date: 2009-03-11 13:29+0530\n"
+"POT-Creation-Date: 2009-04-14 11:19+0000\n"
+"PO-Revision-Date: 2009-05-14 20:08+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
@@ -143,20 +144,18 @@ msgid "_View"
 msgstr "దర్శనం(_V)"
 
 #: ../baobab/data/baobab.schemas.in.h:1
-#, fuzzy
 #| msgid "A list of partitions to be excluded from scanning."
 msgid "A list of uri for partitions to be excluded from scanning."
-msgstr "సంశోధన నుండి జాబితా యొక్క విభజనలు బహిష్కరించబడును."
+msgstr "స్కానింగ్ నుండి విభజనల కొరకు uri జాబితా చేరకుండా చేయాలి."
 
 #: ../baobab/data/baobab.schemas.in.h:2
 msgid "Enable monitoring of home directory"
 msgstr "నివాస వివరణము యొక్క భోధన ఉపయోగించుము"
 
 #: ../baobab/data/baobab.schemas.in.h:3
-#, fuzzy
 #| msgid "Exluded partitions"
 msgid "Exluded partitions uris"
-msgstr "విభజనలు బహిష్కరించబడినది"
+msgstr "బహిష్కరించబడిన విభజనల uriలు"
 
 #: ../baobab/data/baobab.schemas.in.h:4
 msgid "Status Bar is Visible"
@@ -164,7 +163,7 @@ msgstr "సుస్థితి పట్టీ ప్రత్యక్షమ�
 
 #: ../baobab/data/baobab.schemas.in.h:5
 msgid "Subfolders tooltips visible"
-msgstr ""
+msgstr "ఉపసంచయాల సాధనచిట్కాలు కనిపించాలి"
 
 #: ../baobab/data/baobab.schemas.in.h:6
 msgid "Toolbar is Visible"
@@ -180,7 +179,7 @@ msgstr "సుస్థితి పట్టీ మూల గవాక్షమ
 
 #: ../baobab/data/baobab.schemas.in.h:9
 msgid "Whether the subfolders tooltips of the selected folder are drawn."
-msgstr ""
+msgstr "ఎంపికచేసిన సంచయంయొక్క వుపసంయాల సాధనచిట్కాలు వుంచబడాలా."
 
 #: ../baobab/data/baobab.schemas.in.h:10
 msgid "Whether the toolbar should be visible in main window."
@@ -217,20 +216,18 @@ msgstr[0] "% 5d అంశం"
 msgstr[1] "% 5d అంశాలు"
 
 #: ../baobab/src/baobab.c:737
-#, fuzzy
 #| msgid "Could not initialize GNOME VFS monitoring"
 msgid "Could not initialize monitoring"
-msgstr "గ్నోమ్ VFS భోధపడుటను సంసిద్దపరచలేము"
+msgstr "పర్యవేక్షణను సిద్దపరచలేక పోయింది"
 
 #: ../baobab/src/baobab.c:738
 msgid "Changes to your home folder will not be monitored."
 msgstr "మీ నివాస సంచయమునకు మార్పులు భోధపడుతుందా."
 
 #: ../baobab/src/baobab.c:783
-#, fuzzy
 #| msgid "Look in folder"
 msgid "Move to parent folder"
-msgstr "సంచయం లో చూడుము"
+msgstr "మాత్రుక సంచయమునకు కదుల్చుము"
 
 #: ../baobab/src/baobab.c:787
 msgid "Zoom in"
@@ -241,60 +238,54 @@ msgid "Zoom out"
 msgstr "జూమ్ బయటకి"
 
 #: ../baobab/src/baobab.c:795
-#, fuzzy
 #| msgid "Save Snapshot"
 msgid "Save snapshot"
-msgstr "తటాలున ఛాయాచిత్రమును దాచుము "
+msgstr "స్నాప్‌షాట్‌ను దాయుము"
 
 #: ../baobab/src/baobab.c:843
 msgid "View as Rings Chart"
-msgstr ""
+msgstr "రింగుల చార్టువలె దర్శించు"
 
 #: ../baobab/src/baobab.c:845
 msgid "View as Treemap Chart"
-msgstr ""
+msgstr "ట్రీమాప్ చార్టువలె దర్శించు"
 
 #: ../baobab/src/baobab.c:917
 msgid "Cannot check an excluded folder!"
-msgstr ""
+msgstr "బహిష్కరించిన సంచయంను పరిశీలించలేదు!"
 
 #: ../baobab/src/baobab.c:968
-#, fuzzy
 #| msgid "You did not select a document name."
 msgid "Could not detect any mount point."
-msgstr "మీరు పత్ర నామమును ఎంచుకొనలేదు."
+msgstr "ఏ మరల్పు బిందువును గుర్తించలేక పోయింది."
 
 #: ../baobab/src/baobab.c:971
 msgid "Without mount points disk usage cannot be analyzed."
-msgstr ""
+msgstr "మరల్పు బిందువులు లేకుండా డిస్కు వినియోగము విశ్లేషించలేము."
 
 #: ../baobab/src/baobab-chart.c:202
 msgid "Maximum depth"
 msgstr "అత్యధిక లోతు"
 
 #: ../baobab/src/baobab-chart.c:203
-#, fuzzy
 #| msgid "The maximum depth drawn in the rings chart from the root"
 msgid "The maximum depth drawn in the chart from the root"
-msgstr "మూలం నుండి రింగ్స్ పత్రమునకు చిత్రించబడిన అత్యధిక లోతు"
+msgstr "చార్టునందు రూట్‌నుండి గీయగల గరిష్ట లోతు"
 
 #: ../baobab/src/baobab-chart.c:212
-#, fuzzy
 #| msgid "Rings chart model"
 msgid "Chart model"
-msgstr "రింగ్స్ పత్ర నమూనా"
+msgstr "చార్టు నమూనా"
 
 #: ../baobab/src/baobab-chart.c:213
-#, fuzzy
 #| msgid "Set the model of the rings chart"
 msgid "Set the model of the chart"
-msgstr "రింగ్స్ పత్రం యొక్క నమూనాను అమర్చుము"
+msgstr "చార్టు యొక్క రీతిని అమర్చుము"
 
 #: ../baobab/src/baobab-chart.c:220
-#, fuzzy
 #| msgid "Rings chart root node"
 msgid "Chart root node"
-msgstr "రింగ్స్ పత్ర మూల కణుపు"
+msgstr "చార్టు రూట్ నోడు"
 
 #: ../baobab/src/baobab-chart.c:221
 msgid "Set the root node from the model"
@@ -313,34 +304,34 @@ msgstr "తటాలున ఛాయాచిత్రమును దాచు�
 msgid "_Image type:"
 msgstr "ప్రతిరూప రకము(_I):"
 
-#: ../baobab/src/baobab-prefs.c:171
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "సంశోధన"
 
-#: ../baobab/src/baobab-prefs.c:178
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "పరికరం"
 
-#: ../baobab/src/baobab-prefs.c:186
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr "పోగు పాలు"
 
-#: ../baobab/src/baobab-prefs.c:194
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr "దస్త్ర వ్యవస్థ పద్దతి"
 
-#: ../baobab/src/baobab-prefs.c:202
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr "మొత్తం పరిమాణం"
 
-#: ../baobab/src/baobab-prefs.c:211
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr "లభ్యత"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:77
 #, c-format
 msgid "Cannot scan location \"%s\""
-msgstr ""
+msgstr "స్థానమును స్కాను చేయలేము \"%s\""
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:176
 msgid "Custom Location"
@@ -371,10 +362,9 @@ msgid "Secure WebDAV (HTTPS)"
 msgstr "రక్షిత మహాతల డి ఎ వి (HTTP)"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:250
-#, fuzzy
 #| msgid "You must enter a name for the server"
 msgid "Cannot Connect to Server. You must enter a name for the server."
-msgstr "సేవిక కొరకు నామమును  ప్రవేశపెట్ట వలయును"
+msgstr "సేవికకు అనుసంధానము కాలేము. మీరు సేవిక కొరకు వొక నామమును ప్రవేశపెట్టాలి."
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:253
 msgid "Please enter a name and try again."
@@ -385,22 +375,19 @@ msgid "_Location (URI):"
 msgstr "స్థానము (URI)(_L):"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:466
-#, fuzzy
 #| msgid "S_erver:"
 msgid "_Server:"
-msgstr "సేవిక(_S):"
+msgstr "సేవిక (_S):"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:485
-#, fuzzy
 #| msgid "Optional Information"
 msgid "Optional information:"
 msgstr "ఇచ్ఛాపూర్వకమైన సమాచారం:"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:497
-#, fuzzy
 #| msgid "Sh_are:"
 msgid "_Share:"
-msgstr "పంపకం(_S):"
+msgstr "భాగస్వామ్యం (_S):"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:518
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
@@ -412,16 +399,14 @@ msgid "_Folder:"
 msgstr "సంచయము(_F):"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:558
-#, fuzzy
 #| msgid "_User name:"
 msgid "_User Name:"
 msgstr "వినియోగదారుని నామం(_U):"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:579
-#, fuzzy
 #| msgid "_Domain name:"
 msgid "_Domain Name:"
-msgstr "డొమైన్ నామం(_N):"
+msgstr "డొమైన్ నామం(_D):"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:646
 msgid "Connect to Server"
@@ -504,10 +489,9 @@ msgid "Could not move \"%s\" to the Trash"
 msgstr "\"%s\" ను చెత్తకుండి కి స్థానాన్ని మార్చలేము"
 
 #: ../baobab/src/baobab-utils.c:506
-#, fuzzy
 #| msgid "Could not move \"%s\" to the Trash"
 msgid "Could not move file to the Trash"
-msgstr "\"%s\" ను చెత్తకుండి కి స్థానాన్ని మార్చలేము"
+msgstr "దస్త్రమును చెత్తకుండికి కదల్చలేము"
 
 #: ../baobab/src/baobab-utils.c:508
 #, c-format
@@ -1612,7 +1596,7 @@ msgstr "లభించిన ఎత్తుగడల యొక్క జాబ
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to set"
-msgstr ""
+msgstr "అమర్చుటకు GDict డీబగ్గింగ్ ఫ్లాగ్స్"
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:97
 #: ../gnome-dictionary/libgdict/gdict-utils.c:99
@@ -1621,7 +1605,7 @@ msgstr "ఫ్లాగ్"
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:99
 msgid "GDict debugging flags to unset"
-msgstr ""
+msgstr "అమర్పు తీసివేయుటకు GDict డీబగ్గింగ్ ఫ్లాగ్స్"
 
 #: ../gnome-dictionary/libgdict/gdict-utils.c:157
 msgid "GDict Options"
@@ -2104,98 +2088,99 @@ msgstr "లభ్యత కల ఎత్తుగడలు"
 msgid "Dictionary sources"
 msgstr "నిఘంటువు వనరులు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:130
+#: ../gnome-screenshot/gnome-screenshot.c:131
 msgid "Error loading the help page"
 msgstr "సహాయ పుటను నింపుటలో దోషము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:239
+#: ../gnome-screenshot/gnome-screenshot.c:242
 msgid "None"
 msgstr "ఏమి లేదు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:240
+#: ../gnome-screenshot/gnome-screenshot.c:243
 msgid "Drop shadow"
 msgstr "పడవేయు ఛాయ"
 
-#: ../gnome-screenshot/gnome-screenshot.c:241
+#: ../gnome-screenshot/gnome-screenshot.c:244
 msgid "Border"
 msgstr "సరిహద్దు"
 
 #. * Include pointer *
-#: ../gnome-screenshot/gnome-screenshot.c:344
-#, fuzzy
+#: ../gnome-screenshot/gnome-screenshot.c:347
 #| msgid "Include Border"
 msgid "Include _pointer"
-msgstr "సరిహద్దు కలుపుము"
+msgstr "సూచకిని చేర్చుము (_p)"
 
 #. * Include window border *
-#: ../gnome-screenshot/gnome-screenshot.c:353
+#: ../gnome-screenshot/gnome-screenshot.c:356
 msgid "Include the window _border"
 msgstr "గవాక్ష సరిహాద్దును కలుపుము(_b)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:368
+#: ../gnome-screenshot/gnome-screenshot.c:371
 msgid "Apply _effect:"
 msgstr "పర్యవసానంను అనుసంధించు(_e):"
 
-#: ../gnome-screenshot/gnome-screenshot.c:430
+#: ../gnome-screenshot/gnome-screenshot.c:433
 msgid "Grab the whole _desktop"
 msgstr "రంగస్థలం మొత్తాన్ని లాక్కొను(_d)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:442
+#: ../gnome-screenshot/gnome-screenshot.c:445
 msgid "Grab the current _window"
 msgstr "గవాక్షము మొత్తాన్ని లాక్కొను(_w)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:454
+#: ../gnome-screenshot/gnome-screenshot.c:457
 msgid "Grab a selected _area"
-msgstr ""
+msgstr "ఎంపికచేసిన ప్రాంతమును లాక్కొనుము (_a)"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:471
+#: ../gnome-screenshot/gnome-screenshot.c:474
 msgid "Grab _after a delay of"
 msgstr "కొంత ఆలస్యము తర్వాత లాక్కొను(_a)"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:491
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:494
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "seconds"
 msgstr "క్షణాలు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:507
-#: ../gnome-screenshot/gnome-screenshot.c:517
+#: ../gnome-screenshot/gnome-screenshot.c:510
+#: ../gnome-screenshot/gnome-screenshot.c:520
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Take Screenshot"
 msgstr "తెర ఛాయాచిత్రం తీసుకొను"
 
-#: ../gnome-screenshot/gnome-screenshot.c:518
+#: ../gnome-screenshot/gnome-screenshot.c:521
 msgid "Effects"
 msgstr "పర్యవసానాలు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:524
+#: ../gnome-screenshot/gnome-screenshot.c:527
 msgid "Take _Screenshot"
 msgstr "తెర ఛాయాచిత్రం తీసుకొను(_S)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:650
-#, fuzzy
+#: ../gnome-screenshot/gnome-screenshot.c:653
 #| msgid "Error while matching"
 msgid "Error while saving screenshot"
-msgstr "ఉపమించుతున్నపుడు దోషము"
+msgstr "స్క్రీన్‌షాట్‌ను దాయుచున్నప్పుడు దోషము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:654
+#: ../gnome-screenshot/gnome-screenshot.c:657
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
 msgstr ""
+"స్క్రీన్‌షాట్‌ను %sకు దాయుట అసాధ్యము.\n"
+" దోషము %s.\n"
+" దయచేసి వేరొక స్థానమును యెంచుకొని తిరిగిప్రయత్నించండి."
 
-#: ../gnome-screenshot/gnome-screenshot.c:801
+#: ../gnome-screenshot/gnome-screenshot.c:804
 msgid "Unable to take a screenshot of the current window"
 msgstr "ప్రస్తుత గవాక్షం యొక్క తెర ఛాయాచిత్రంను తీసుకొనలేకపొతున్నాము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:849
+#: ../gnome-screenshot/gnome-screenshot.c:852
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "తెర ఛాయాచిత్రం -%s.png"
@@ -2203,14 +2188,14 @@ msgstr "తెర ఛాయాచిత్రం -%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:856
+#: ../gnome-screenshot/gnome-screenshot.c:859
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "తెర ఛాయాచిత్రం-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:866
+#: ../gnome-screenshot/gnome-screenshot.c:869
 #: ../gnome-screenshot/screenshot-dialog.c:356
 #: ../gnome-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
@@ -2219,57 +2204,55 @@ msgstr "తెర ఛాయాచిత్రం.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:873
+#: ../gnome-screenshot/gnome-screenshot.c:876
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "తెర ఛాయాచిత్రం-%d.png"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1239
+#: ../gnome-screenshot/gnome-screenshot.c:1242
 msgid "Grab a window instead of the entire screen"
 msgstr "యావత్తు తెరకు బదులు గవాక్షంను లాక్కొను"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1240
-#, fuzzy
+#: ../gnome-screenshot/gnome-screenshot.c:1243
 #| msgid "Grab a window instead of the entire screen"
 msgid "Grab an area of the screen instead of the entire screen"
-msgstr "యావత్తు తెరకు బదులు గవాక్షంను లాక్కొను"
+msgstr "మొత్తము తెరకు బదులుగా తెరనందలి వొక ప్రాంతమును లాగుము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1241
+#: ../gnome-screenshot/gnome-screenshot.c:1244
 msgid "Include the window border with the screenshot"
 msgstr "తెర ఛాయాచిత్రంతో గవాక్ష సరిహద్దు కలుపుము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1242
-#, fuzzy
+#: ../gnome-screenshot/gnome-screenshot.c:1245
 #| msgid "Include the window border with the screenshot"
 msgid "Remove the window border from the screenshot"
-msgstr "తెర ఛాయాచిత్రంతో గవాక్ష సరిహద్దు కలుపుము"
+msgstr "తెరపట్టునుండి విండో హద్దును తొలగించుము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "నిర్థేశితమైన ఆలస్యము తరువాత తెర ఛాయాచిత్రం తీసుకొను [క్షణాలలో]"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "సరిహద్దుకు చేర్చుటకు పర్యవసానము (ఛాయ, సరిహద్దు లేదా ఏమీలేదు)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "effect"
 msgstr "పర్యవసానము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1245
+#: ../gnome-screenshot/gnome-screenshot.c:1248
 msgid "Interactively set options"
 msgstr "అనుకూలరీతిలో అమర్చిన ఇచ్ఛాపూర్వకాలు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1256
+#: ../gnome-screenshot/gnome-screenshot.c:1259
 msgid "Take a picture of the screen"
 msgstr "తెర యొక్క ప్రతిరూపాన్ని తీసుకొను"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1274
+#: ../gnome-screenshot/gnome-screenshot.c:1277
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
-msgstr ""
+msgstr "విభేదించుచున్న ఐచ్చికములు: --window మరియు --area వొకేసారి వుపయోగించకూడదు.\n"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
 msgid "Save images of your desktop or individual windows"
@@ -2277,7 +2260,7 @@ msgstr "మీ యొక్క రంగస్థలం లేదా వ్య�
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
-msgstr ""
+msgstr "క్లిప్‌బోర్డునకు నకలుతీయుము (_o)"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:3
 msgid "Save Screenshot"
@@ -2304,40 +2287,38 @@ msgstr ""
 "\"సరిహద్దు\"."
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
-#, fuzzy
 #| msgid ""
 #| "The port number to connect to. The default port is 2628. This key is "
 #| "deprecated and no longer in use."
 msgid ""
 "Grab just the current window, rather than the whole desktop. This key has "
 "been deprecated and it is no longer in use."
-msgstr "అనుసంధానించుటకు పోర్ట సంఖ్య.అప్రమేయ పోర్టు 2628.ఈ మీట నివారించబడింది మరియు ఉపయోగంలోలేదు."
+msgstr ""
+"మొత్త డెస్కుటాపునకు బదులుగా ప్రస్తుత విండోను లాగుము. ఈ కీ తీసివేయబడింది "
+"యిది యికపై వుపయోగంలో వుండదు."
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:4
 msgid "Include Border"
 msgstr "సరిహద్దు కలుపుము"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:5
-#, fuzzy
 #| msgid "Include Border"
 msgid "Include Pointer"
-msgstr "సరిహద్దు కలుపుము"
+msgstr "సూచకిని చేర్చుము"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:6
-#, fuzzy
 #| msgid "Include the window border with the screenshot"
 msgid "Include the pointer in the screenshot"
-msgstr "తెర ఛాయాచిత్రంతో గవాక్ష సరిహద్దు కలుపుము"
+msgstr "తెరపట్టునందు సూచకిని చేర్చుము"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:7
 msgid "Include the window manager border along with the screenshot"
 msgstr "తెర ఛాయచిత్రంతో గవాక్ష అభికర్త సరిహద్దును కూడా కలుపుము"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:8
-#, fuzzy
 #| msgid "Screenshot directory"
 msgid "Screenshot delay"
-msgstr "తెర ఛాయచిత్రం వివరము"
+msgstr "తెరపట్టు(స్క్రీన్‌షాట్) ఆలస్యము"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:9
 msgid "Screenshot directory"
@@ -2349,14 +2330,13 @@ msgstr "చివరి తెర ఛాయచిత్రంలో దాచబ
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:11
 msgid "The number of seconds to wait before taking the screenshot."
-msgstr ""
+msgstr "తెరపట్టు(స్క్రీన్‌షాట్) తీసుకొనుటకు ముందుగా వేచివుండవలసిన సమయం సెకనులలో."
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:12
 msgid "Window-specific screenshot (deprecated)"
-msgstr ""
+msgstr "విండో-ప్రత్యేకమైన స్క్రీన్‌షాట్ (తీసివేయబడిన)"
 
 #: ../gnome-screenshot/screenshot-dialog.c:239
-#, fuzzy
 #| msgid ""
 #| "Glade file for the screenshot program is missing.\n"
 #| "Please check your installation of gnome-utils"
@@ -2364,8 +2344,8 @@ msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
 msgstr ""
-"చాయాచిత్ర ప్రోగ్రామ్ కు గ్లేడ్ దస్త్రం తప్పిపోయింది.\n"
-"మీ యొక్క gnome-utils సంస్థాపనను దయచేసి పరిశీలించండి."
+"తెరపట్టు(స్క్రీన్‌షాట్) ప్రోగ్రామునకు UI నిర్వచన దస్త్రము పోయినది.\n"
+"దయచేసి మీ gnome-utils సంస్థాపనను సరిచూసుకొనండి"
 
 #: ../gnome-screenshot/screenshot-dialog.c:260
 msgid "Select a folder"
@@ -2400,7 +2380,7 @@ msgid "File already exists"
 msgstr "దస్త్రం ఇదివరకే కలిగివుంది"
 
 #: ../gnome-screenshot/screenshot-xfer.c:77
-#, fuzzy, c-format
+#, c-format
 #| msgid "The file \"%s\" already exists.  Would you like to replace it?"
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "దస్త్రం \"%s\" ఇదివరకే కలిగివుంది. నీవు దాన్నిపునఃస్థాపించుటకు ఇష్టపడుతున్నావా?"
@@ -2411,16 +2391,14 @@ msgid "_Replace"
 msgstr "పునఃస్థాపించు(_R)"
 
 #: ../gnome-screenshot/screenshot-xfer.c:122
-#, fuzzy
 #| msgid "Scanning..."
 msgid "Saving file..."
-msgstr "సంశోధించుచున్నది..."
+msgstr "దస్త్రాన్ని దాయుచున్నది..."
 
 #: ../gnome-screenshot/screenshot-xfer.c:294
-#, fuzzy
 #| msgid "Unable to save source file"
 msgid "Can't access source file"
-msgstr "వనరు దస్త్రం ను దాచుటకు వీలుకాదు"
+msgstr "మూలపు దస్త్రాన్ని యాక్సిస్ చేయలేదు"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Locate documents and folders on this computer by name or content"
@@ -3338,10 +3316,9 @@ msgid "- the GNOME Search Tool"
 msgstr "- GNOME శోధన సాధనం"
 
 #: ../logview/data/gnome-system-log.desktop.in.in.h:1
-#, fuzzy
 #| msgid "Log Viewer"
 msgid "Log File Viewer"
-msgstr "Log దర్శకి"
+msgstr "లాగ్ దస్త్రపు దర్శిని"
 
 #: ../logview/data/gnome-system-log.desktop.in.in.h:2
 msgid "View or monitor system log files"
@@ -3406,6 +3383,9 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"లాగ్ దర్శని అనునది ఉచిత సాఫ్టువేరు; మీరు దానిని ఉచిత సాఫ్టువేరు సంస్థ ద్వారా "
+"ప్రచురించబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు వర్షన్ 2, లేదా (మీ ఐచ్చికము వద్ద) "
+"దాని తర్వాతి వర్షన్‌కు లోబడి పునఃపంపిణి చేయవచ్చును మరియు/లేదా సవరించవచ్చును;"
 
 #: ../logview/logview-about.h:53
 msgid ""
@@ -3414,6 +3394,9 @@ msgid ""
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
 msgstr ""
+"లాగ్ దర్శని అనునది అది వుపయోగపడుతుంది అనే వుద్దేశ్యముతో పంపిణి చేయబడింది, అయితే "
+"ఎటువంటి హామి లేదు; కనీసం వ్యాపారపరంగా లేదా ఫలానా ప్రయోజనం కొరకు ప్రత్యేకించి అనికూడా "
+"లేదు.  మరింత సమాచారము కొరకు GNU జనరల్ పబ్లిక్ లైసెన్సును చూడండి."
 
 #: ../logview/logview-about.h:57
 msgid ""
@@ -3421,67 +3404,64 @@ msgid ""
 "the Log Viewer; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr ""
+"లాగ్ దర్శనితో మీరు వొక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలును కూడా పొందివుంటారు; పొందకపోతే, "
+"Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
+"USAకు వ్రాయండి."
 
-#: ../logview/logview-app.c:179
+#: ../logview/logview-app.c:375
 #, c-format
 msgid "Impossible to open the file %s"
-msgstr ""
+msgstr "దస్త్రము %sను తెరువుట అసాధ్యము"
 
 #: ../logview/logview-findbar.c:169
-#, fuzzy
 #| msgid "F_ind:"
 msgid "_Find:"
 msgstr "కనుగొనుము (_F):"
 
 #: ../logview/logview-findbar.c:184
-#, fuzzy
 #| msgid "Find Pre_vious"
 msgid "Find Previous"
-msgstr "ముందుది వెతుకు"
+msgstr "ముందుది కనుగొనుము"
 
 #: ../logview/logview-findbar.c:187
 msgid "Find previous occurrence of the search string"
 msgstr "వెతుకుమాట యొక్క సంభవించునది ముందుది వెతుకు"
 
 #: ../logview/logview-findbar.c:192
-#, fuzzy
 #| msgid "Find Ne_xt"
 msgid "Find Next"
-msgstr "తరువాత వెతుకు"
+msgstr "తరువాతది కనుగొనుము"
 
 #: ../logview/logview-findbar.c:195
 msgid "Find next occurrence of the search string"
 msgstr "వెతుకుమాట యొక్క సంభవించునది తరువాత వెతుకు"
 
 #: ../logview/logview-findbar.c:202
-#, fuzzy
 #| msgid "Select the \"%s\" search option"
 msgid "Clear the search string"
-msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం ఎంచుకొను"
+msgstr "శోధన పదబందం(స్ట్రింగు)ను శుభ్రముచేయుము"
 
 #: ../logview/logview-log.c:595
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr ""
+msgstr "GZipped లాగ్‌ను విడమర్చుతుంటే(అన్‌కంప్రెస్) దోషము. బహుశా దస్త్రము పాడైవుంటుంది."
 
 #: ../logview/logview-log.c:642
-#, fuzzy
 #| msgid "You may not have write permissions to the document."
 msgid "You don't have enough permissions to read the file."
-msgstr "మీకు పత్రమునకు వ్రాయుటకు అనుమతులు లేవు."
+msgstr "దస్త్రమును చదువుటకు మీరు తగినన్ని అనుమతులు కలిగిలేరు."
 
 #: ../logview/logview-log.c:657
 msgid "The file is not a regular file or is not a text file."
-msgstr ""
+msgstr "దస్త్రము సాదారణ దస్త్రముకాదు లేదా టెక్స్ట్ దస్త్రముకాదు."
 
 #: ../logview/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
-msgstr ""
+msgstr "సిస్టమ్ లాగ్‌యొక్క ఈ వర్షన్ GZipped లాగ్‌లను మద్దతించదు."
 
 #: ../logview/logview-loglist.c:311
-#, fuzzy
 #| msgid "Scanning..."
 msgid "Loading..."
-msgstr "లోడవుతున్నది..."
+msgstr "లోడవుచున్నది..."
 
 #: ../logview/logview-main.c:62
 msgid "Show the application's version"
@@ -3489,13 +3469,13 @@ msgstr "కార్యక్షేత్రముల వివరణము చ�
 
 #: ../logview/logview-main.c:64
 msgid "[LOGFILE...]"
-msgstr ""
+msgstr "[LOGFILE...]"
 
 #: ../logview/logview-main.c:68
 msgid " - Browse and monitor logs"
 msgstr "-అన్వేషణ మరియు దర్శిని logs"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:103
 msgid "Log Viewer"
 msgstr "Log దర్శకి"
 
@@ -3518,10 +3498,10 @@ msgid "Open Log"
 msgstr "log తెరువుము"
 
 #: ../logview/logview-window.c:376
-#, fuzzy, c-format
+#, c-format
 #| msgid "There was an error displaying help."
 msgid "There was an error displaying help: %s"
-msgstr "సహాయం ప్రదర్శించుటలో అక్కడ ఒక దోషం ఉంది: %s"
+msgstr "సహాయమును ప్రదర్శించుటలో అక్కడ వొక దోషమువుంది: %s"
 
 #: ../logview/logview-window.c:492
 msgid "Wrapped"
@@ -3568,16 +3548,14 @@ msgid "Select the entire log"
 msgstr "మొత్తం log ను ఎంచుకొను"
 
 #: ../logview/logview-window.c:653
-#, fuzzy
 #| msgid "_Print..."
 msgid "_Find..."
-msgstr "_వెతుకు..."
+msgstr "కనుగొనుము (_F)..."
 
 #: ../logview/logview-window.c:653
-#, fuzzy
 #| msgid "Find a word or phrase in the document"
 msgid "Find a word or phrase in the log"
-msgstr "పత్రములో పదము లేదా పద సముదాయమును వెతుకుము"
+msgstr "లాగ్‌నందు పదమును లేదా మాట(ఫ్రేజ్)ను కనుగొనుము"
 
 #: ../logview/logview-window.c:656
 msgid "Bigger text size"
@@ -3615,19 +3593,17 @@ msgstr "పక్క ప్యాన్(_P)"
 msgid "Show Side Pane"
 msgstr "పక్క ప్యాన్ చూపుము"
 
-#: ../logview/logview-window.c:1165
-#, fuzzy
+#: ../logview/logview-window.c:1168
 #| msgid "_Close"
 msgid "Close"
 msgstr "మూయుము"
 
-#: ../logview/logview-window.c:1205
+#: ../logview/logview-window.c:1208
 msgid "Version: "
 msgstr "వివరణము:"
 
-#: ../logview/logview-window.c:1305
-#, fuzzy
+#: ../logview/logview-window.c:1308
 #| msgid "Could not open folder \"%s\""
 msgid "Could not open the following files:"
-msgstr "\"%s\" సంచయమును తెరువలేము"
+msgstr "ఈ క్రింది దస్త్రములను తెరువలేక పోయింది:"
 
