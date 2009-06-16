@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-utils&component=general\n"
-"POT-Creation-Date: 2009-02-27 13:40+0000\n"
-"PO-Revision-Date: 2009-03-03 15:45+0530\n"
+"POT-Creation-Date: 2009-04-14 11:19+0000\n"
+"PO-Revision-Date: 2009-06-16 11:57+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
-"Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
+"Language-Team: Bengali INDIA <discuss@lists.ankur.org.in>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -294,27 +294,27 @@ msgstr "স্ন্যাপ-শট সংরক্ষণ করুন"
 msgid "_Image type:"
 msgstr "ছবির ধরন: (_I)"
 
-#: ../baobab/src/baobab-prefs.c:171
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "স্ক্যান করুন"
 
-#: ../baobab/src/baobab-prefs.c:178
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "ডিভাইস"
 
-#: ../baobab/src/baobab-prefs.c:186
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr "মাউন্ট-পয়েন্ট"
 
-#: ../baobab/src/baobab-prefs.c:194
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr "ফাইল-সিস্টেমের প্রকৃতি"
 
-#: ../baobab/src/baobab-prefs.c:202
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr "সর্বমোট মাপ"
 
-#: ../baobab/src/baobab-prefs.c:211
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr "উপলব্ধ"
 
@@ -1392,7 +1392,7 @@ msgstr "সকেট নির্মাণ করতে ব্যর্থ"
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1962
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
-msgstr ""
+msgstr "চ্যানেকটিকে নন-ব্লকিং রূপে ধার্য করতে ব্যর্থ: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1977
 #, c-format
@@ -2094,88 +2094,84 @@ msgstr "উপলব্ধ নীতি"
 msgid "Dictionary sources"
 msgstr "অভিধানের উৎস"
 
-#: ../gnome-screenshot/gnome-screenshot.c:130
+#: ../gnome-screenshot/gnome-screenshot.c:131
 msgid "Error loading the help page"
 msgstr "সহায়িকা লোড করতে সমস্যা"
 
-#: ../gnome-screenshot/gnome-screenshot.c:239
+#: ../gnome-screenshot/gnome-screenshot.c:242
 msgid "None"
 msgstr "শূণ্য"
 
-#: ../gnome-screenshot/gnome-screenshot.c:240
+#: ../gnome-screenshot/gnome-screenshot.c:243
 msgid "Drop shadow"
 msgstr "ছায়া প্রয়োগ করা হবে"
 
-#: ../gnome-screenshot/gnome-screenshot.c:241
+#: ../gnome-screenshot/gnome-screenshot.c:244
 msgid "Border"
 msgstr "প্রান্তরেখা"
 
 #. * Include pointer *
-#: ../gnome-screenshot/gnome-screenshot.c:344
+#: ../gnome-screenshot/gnome-screenshot.c:347
 msgid "Include _pointer"
 msgstr "পয়েন্টার অন্তর্ভুক্ত করা হবে (_p)"
 
 #. * Include window border *
-#: ../gnome-screenshot/gnome-screenshot.c:353
+#: ../gnome-screenshot/gnome-screenshot.c:356
 msgid "Include the window _border"
 msgstr "উইন্ডোর প্রান্তরেখা অন্তর্ভুক্ত করা হবে (_b)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:368
+#: ../gnome-screenshot/gnome-screenshot.c:371
 msgid "Apply _effect:"
 msgstr "ইফেক্ট প্রয়োগ করা হবে: (_e)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:430
+#: ../gnome-screenshot/gnome-screenshot.c:433
 msgid "Grab the whole _desktop"
 msgstr "সম্পূর্ণ ডেস্কটপের ছবি গ্রহণ করা হবে (_d)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:442
+#: ../gnome-screenshot/gnome-screenshot.c:445
 msgid "Grab the current _window"
 msgstr "বর্তমান উইন্ডোর ছবি গ্রহণ করা হবে (_w)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:454
+#: ../gnome-screenshot/gnome-screenshot.c:457
 msgid "Grab a selected _area"
 msgstr "নির্বাচিত অংশ গ্রহণ করা হবে (_a)"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:471
+#: ../gnome-screenshot/gnome-screenshot.c:474
 msgid "Grab _after a delay of"
 msgstr "ছবি গ্রহণ করার পূর্বে (_a)"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:491
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:494
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "seconds"
 msgstr "সেকেন্ড অপেক্ষা করা হবে "
 
-#: ../gnome-screenshot/gnome-screenshot.c:507
-#: ../gnome-screenshot/gnome-screenshot.c:517
+#: ../gnome-screenshot/gnome-screenshot.c:510
+#: ../gnome-screenshot/gnome-screenshot.c:520
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Take Screenshot"
 msgstr "পর্দার ছবি নিন"
 
-#: ../gnome-screenshot/gnome-screenshot.c:518
+#: ../gnome-screenshot/gnome-screenshot.c:521
 msgid "Effects"
 msgstr "ইফেক্ট"
 
-#: ../gnome-screenshot/gnome-screenshot.c:524
+#: ../gnome-screenshot/gnome-screenshot.c:527
 msgid "Take _Screenshot"
 msgstr "পর্দার ছবি নিন (_S)"
 
 # msgstr "সমস্যাযুক্ত ব্লক খোঁজা হচ্ছে...(এতে কিছুটা সময় লাগতে পারে)"
-#: ../gnome-screenshot/gnome-screenshot.c:650
+#: ../gnome-screenshot/gnome-screenshot.c:653
 msgid "Error while saving screenshot"
 msgstr "পর্দার ছবি সংরক্ষণ করতে সমস্যা"
 
-#: ../gnome-screenshot/gnome-screenshot.c:654
+#: ../gnome-screenshot/gnome-screenshot.c:657
 #, c-format
-#| msgid ""
-#| "Impossible to save the screenshot to %s.\n"
-#| " Error was %s\n"
-#| ". Please choose another location and retry."
 msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
@@ -2185,11 +2181,11 @@ msgstr ""
 " উৎপন্ন ত্রুটি %s\n"
 " অনুগ্রহ করে ভিন্ন অবস্থান নির্বাচন করে পুনরায় প্রচেষ্টা করুন।"
 
-#: ../gnome-screenshot/gnome-screenshot.c:801
+#: ../gnome-screenshot/gnome-screenshot.c:804
 msgid "Unable to take a screenshot of the current window"
 msgstr "বর্তমান উইন্ডোর ছবি তুলতে ব্যর্থ।"
 
-#: ../gnome-screenshot/gnome-screenshot.c:849
+#: ../gnome-screenshot/gnome-screenshot.c:852
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "Screenshot-%s.png"
@@ -2197,14 +2193,14 @@ msgstr "Screenshot-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:856
+#: ../gnome-screenshot/gnome-screenshot.c:859
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "Screenshot-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:866
+#: ../gnome-screenshot/gnome-screenshot.c:869
 #: ../gnome-screenshot/screenshot-dialog.c:356
 #: ../gnome-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
@@ -2213,50 +2209,48 @@ msgstr "Screenshot.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:873
+#: ../gnome-screenshot/gnome-screenshot.c:876
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "Screenshot-%d.png"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1239
+#: ../gnome-screenshot/gnome-screenshot.c:1242
 msgid "Grab a window instead of the entire screen"
 msgstr "সম্পর্ণ পর্দার পরিবর্তে শুধুমাত্র একটি উইন্ডোর ছবি নেওয়া হবে"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1240
-#| msgid "Grab a window instead of the entire screen"
+#: ../gnome-screenshot/gnome-screenshot.c:1243
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "সম্পর্ণ পর্দার পরিবর্তে, পর্দার একটি অংশের ছবি নেওয়া হবে"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1241
+#: ../gnome-screenshot/gnome-screenshot.c:1244
 msgid "Include the window border with the screenshot"
 msgstr "পর্দার ছবিতে উইন্ডোর প্রান্তরেখা অন্তর্ভুক্ত করা হবে"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1242
-#| msgid "Include the window border with the screenshot"
+#: ../gnome-screenshot/gnome-screenshot.c:1245
 msgid "Remove the window border from the screenshot"
 msgstr "পর্দার ছবিতে উইন্ডোর প্রান্তরেখা অন্তর্ভুক্ত করা হবে না"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "সনির্দিষ্ট সময় [সেকেন্ডে ব্যক্ত] অতিক্রান্ত হওয়ার পরে ছবি নেওয়া হবে"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "প্রান্তরেখার জন্য প্রয়োগের উদ্দেশ্যে ইফেক্ট (ছায়া, প্রান্তরেখা অথবা শূণ্য)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "effect"
 msgstr "ইফেক্ট"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1245
+#: ../gnome-screenshot/gnome-screenshot.c:1248
 msgid "Interactively set options"
 msgstr "ইন্টারেক্টিভ ভাবে বিকল্পের মান ধার্য করা হবে"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1256
+#: ../gnome-screenshot/gnome-screenshot.c:1259
 msgid "Take a picture of the screen"
 msgstr "সম্পূর্ণ পর্দার একটি ছবি নিন"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1274
+#: ../gnome-screenshot/gnome-screenshot.c:1277
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -2296,11 +2290,12 @@ msgstr ""
 "\"none(শূণ্য)\" এবং \"black-line(কালো-রেখা)\"।"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
-#| msgid "Grab just the current window, rather than the whole desktop."
 msgid ""
 "Grab just the current window, rather than the whole desktop. This key has "
 "been deprecated and it is no longer in use."
-msgstr "সম্পূর্ণ ডেস্কটপের পরিবর্তে, শুধুমাত্র বর্তমান উইন্ডোর ছবি গ্রহণ করা হবে। এই কি অবচিত হয়েছে এবং বর্তমানে ব্যবহার করা হয় না।"
+msgstr ""
+"সম্পূর্ণ ডেস্কটপের পরিবর্তে, শুধুমাত্র বর্তমান উইন্ডোর ছবি গ্রহণ করা হবে। এই কি অবচিত "
+"হয়েছে এবং বর্তমানে ব্যবহার করা হয় না।"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:4
 msgid "Include Border"
@@ -2335,7 +2330,6 @@ msgid "The number of seconds to wait before taking the screenshot."
 msgstr "পর্দার ছবি তোলার পূর্বে অপেক্ষার কাল, সেকেন্ড অনুযায়ী ধার্য।"
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:12
-#| msgid "Window-specific screenshot"
 msgid "Window-specific screenshot (deprecated)"
 msgstr "উইন্ডোর ক্ষেত্রে নির্দিষ্ট পর্দার ছবি (অবচিত)"
 
@@ -3330,7 +3324,6 @@ msgid "- the GNOME Search Tool"
 msgstr "- GNOME অনুসন্ধান ব্যবস্থা"
 
 #: ../logview/data/gnome-system-log.desktop.in.in.h:1
-#| msgid "Log Viewer"
 msgid "Log File Viewer"
 msgstr "লগ ফাইল প্রদর্শন ব্যবস্থা"
 
@@ -3396,7 +3389,10 @@ msgid ""
 "the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Log Viewer একটি মুক্ত সফ্টওয়্যার; Free Software Foundation দ্বারা প্রকাশিত GNU General Public License-র শর্তানুযায়ী এটি বিতরণ ও পরিবর্তন করা যাবে; লাইসেন্সের সংস্করণ ২ অথবা (আপনার সুবিধানুযায়ী) ঊর্ধ্বতন কোনো সংস্করণের অধীন।"
+msgstr ""
+"Log Viewer একটি মুক্ত সফ্টওয়্যার; Free Software Foundation দ্বারা প্রকাশিত GNU "
+"General Public License-র শর্তানুযায়ী এটি বিতরণ ও পরিবর্তন করা যাবে; লাইসেন্সের "
+"সংস্করণ ২ অথবা (আপনার সুবিধানুযায়ী) ঊর্ধ্বতন কোনো সংস্করণের অধীন।"
 
 #: ../logview/logview-about.h:53
 msgid ""
@@ -3404,28 +3400,32 @@ msgid ""
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
-msgstr "Log Viewer বিতরণ করার মূল উদ্দেশ্য যে ব্যবহারকারীরা এর দ্বারা উপকৃত হবেন, কিন্তু এটির জন্য কোনো সুস্পষ্ট ওয়ারেন্টি উপস্থিত নেই; বাণিজ্যিক ও কোনো সুনির্দিষ্ট কর্ম সাধনের জন্য অন্তর্নিহীত ওয়ারেন্টিও অনুপস্থিত। অধিক জানতে GNU General Public License পড়ুন।"
+msgstr ""
+"Log Viewer বিতরণ করার মূল উদ্দেশ্য যে ব্যবহারকারীরা এর দ্বারা উপকৃত হবেন, কিন্তু "
+"এটির জন্য কোনো সুস্পষ্ট ওয়ারেন্টি উপস্থিত নেই; বাণিজ্যিক ও কোনো সুনির্দিষ্ট কর্ম সাধনের "
+"জন্য অন্তর্নিহীত ওয়ারেন্টিও অনুপস্থিত। অধিক জানতে GNU General Public License পড়ুন।"
 
 #: ../logview/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "the Log Viewer; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
-msgstr "Log Viewer-র সাথে GNU General Public License-র একটি প্রতিলিপি উপলব্ধ হওয়া উচিত; না থাকলে নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"Log Viewer-র সাথে GNU General Public License-র একটি প্রতিলিপি উপলব্ধ হওয়া "
+"উচিত; না থাকলে নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, "
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../logview/logview-app.c:179
+#: ../logview/logview-app.c:375
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "%s ফাইল প্রদর্শন করা সম্ভব নয়"
 
 # msgstr "পংক্তিটি খঁুজে পাওয়া যায়নি"
 #: ../logview/logview-findbar.c:169
-#| msgid "F_ind:"
 msgid "_Find:"
 msgstr "অনুসন্ধান: (_F)"
 
 #: ../logview/logview-findbar.c:184
-#| msgid "Find Pre_vious"
 msgid "Find Previous"
 msgstr "পূর্ববর্তী উপস্থিতি অনুসন্ধান"
 
@@ -3435,7 +3435,6 @@ msgstr "অনুসন্ধান করা পংক্তির পূর্
 
 # msgstr "পংক্তিটি খঁুজে পাওয়া যায়নি"
 #: ../logview/logview-findbar.c:192
-#| msgid "Find Ne_xt"
 msgid "Find Next"
 msgstr "পরবর্তী উপস্থিতি অনুসন্ধান"
 
@@ -3444,7 +3443,6 @@ msgid "Find next occurrence of the search string"
 msgstr "অনুসন্ধান করা পংক্তির পরবর্তী উপস্থিতি সনাক্ত করুন"
 
 #: ../logview/logview-findbar.c:202
-#| msgid "Select the \"%s\" search option"
 msgid "Clear the search string"
 msgstr "অনুসন্ধানের পংক্তির লেখার ক্ষেত্র থেকে তথ্য মুছে ফেলুন"
 
@@ -3453,7 +3451,6 @@ msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr "GZip করা লগ ফাইল আন-কম্প্রেস করতে ত্রুটি দেখা দিয়েছে। সম্ভবত ফাইলটি ত্রুটিপূর্ণ।"
 
 #: ../logview/logview-log.c:642
-#| msgid "You may not have write permissions to the document."
 msgid "You don't have enough permissions to read the file."
 msgstr "ফাইলটি পড়ার জন্য প্রয়োজনীয় অধিকার, আপনার নেই।"
 
@@ -3466,7 +3463,6 @@ msgid "This version of System Log does not support GZipped logs."
 msgstr "System Log-র বর্তমান সংস্করণ দ্বারা GZip করা লগ ফাইল সমর্থিত হয় না।"
 
 #: ../logview/logview-loglist.c:311
-#| msgid "Scanning..."
 msgid "Loading..."
 msgstr "লোড করা হচ্ছে..."
 
@@ -3482,7 +3478,7 @@ msgstr "[LOGFILE...]"
 msgid " - Browse and monitor logs"
 msgstr " - লগ ব্রাউজ ও পর্যবেক্ষণ করুন"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:103
 msgid "Log Viewer"
 msgstr "Log Viewer"
 
@@ -3507,7 +3503,6 @@ msgstr "লগ খুলুন"
 # msgstr "'%s' ফাইলটিতে কিছু লেখা নেই"
 #: ../logview/logview-window.c:376
 #, c-format
-#| msgid "There was an error displaying help."
 msgid "There was an error displaying help: %s"
 msgstr "সাহায্য প্রদর্শন করতে সমস্যা: %s"
 
@@ -3556,12 +3551,10 @@ msgid "Select the entire log"
 msgstr "সম্পূর্ণ লগ নির্বাচন করুন"
 
 #: ../logview/logview-window.c:653
-#| msgid "_Print..."
 msgid "_Find..."
 msgstr "অনুসন্ধান...(_F)"
 
 #: ../logview/logview-window.c:653
-#| msgid "Find a word or phrase in the document"
 msgid "Find a word or phrase in the log"
 msgstr "লগের মধ্যে একটি শব্দ অথবা পংক্তি সন্ধান করুন"
 
@@ -3601,17 +3594,15 @@ msgstr "পার্শ্ববর্তী পেইন (_P)"
 msgid "Show Side Pane"
 msgstr "পার্শ্ববর্তী পেইন প্রদর্শন করা হবে"
 
-#: ../logview/logview-window.c:1165
-#| msgid "_Close"
+#: ../logview/logview-window.c:1168
 msgid "Close"
 msgstr "বন্ধ করুন"
 
-#: ../logview/logview-window.c:1205
+#: ../logview/logview-window.c:1208
 msgid "Version: "
 msgstr "সংস্করণ : "
 
-#: ../logview/logview-window.c:1305
-#| msgid "Could not open folder \"%s\""
+#: ../logview/logview-window.c:1308
 msgid "Could not open the following files:"
 msgstr "নিম্নলিখিত ফাইল খুলতে ব্যর্থ:"
 
