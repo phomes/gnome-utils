@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-15 22:06+0100\n"
-"PO-Revision-Date: 2009-03-05 21:09+0100\n"
+"POT-Creation-Date: 2009-08-28 12:16+0200\n"
+"PO-Revision-Date: 2009-08-28 12:15+0200\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -196,7 +196,7 @@ msgstr "S'està escanejant..."
 msgid "Calculating percentage bars..."
 msgstr "S'estan calculant les barres de percentatge..."
 
-#: ../baobab/src/baobab.c:193 ../baobab/src/baobab.c:998
+#: ../baobab/src/baobab.c:193 ../baobab/src/baobab.c:994
 #: ../baobab/src/callbacks.c:306
 msgid "Ready"
 msgstr "A punt"
@@ -248,15 +248,11 @@ msgstr "Visualitza en un diagrama d'anells"
 msgid "View as Treemap Chart"
 msgstr "Visualitza en un diagrama de mapa d'arbre"
 
-#: ../baobab/src/baobab.c:917
-msgid "Cannot check an excluded folder!"
-msgstr "No es pot comprovar una carpeta exclosa."
-
-#: ../baobab/src/baobab.c:968
+#: ../baobab/src/baobab.c:964
 msgid "Could not detect any mount point."
 msgstr "No s'ha pogut detectar cap punt de muntatge."
 
-#: ../baobab/src/baobab.c:971
+#: ../baobab/src/baobab.c:967
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr ""
 "No es pot analitzar la utilització del disc sense els punts de muntatge."
@@ -327,85 +323,85 @@ msgstr "Disponible"
 msgid "Cannot scan location \"%s\""
 msgstr "No es pot escanejar la ubicació «%s»"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:176
+#: ../baobab/src/baobab-remote-connect-dialog.c:175
 msgid "Custom Location"
 msgstr "Ubicació personalitzada"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:178
+#: ../baobab/src/baobab-remote-connect-dialog.c:177
 msgid "SSH"
 msgstr "SSH"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:181
+#: ../baobab/src/baobab-remote-connect-dialog.c:180
 msgid "Public FTP"
 msgstr "FTP públic"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:183
+#: ../baobab/src/baobab-remote-connect-dialog.c:182
 msgid "FTP (with login)"
-msgstr "FTP (sense identificació)"
+msgstr "FTP (amb autenticació)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:186
+#: ../baobab/src/baobab-remote-connect-dialog.c:185
 msgid "Windows share"
 msgstr "Compartit del Windows"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:188
+#: ../baobab/src/baobab-remote-connect-dialog.c:187
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:190
+#: ../baobab/src/baobab-remote-connect-dialog.c:189
 msgid "Secure WebDAV (HTTPS)"
 msgstr "WebDAV segur (HTTPS)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:250
+#: ../baobab/src/baobab-remote-connect-dialog.c:249
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
 "No es pot connectar al servidor. Heu d'introduir un nom per al servidor."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:253
+#: ../baobab/src/baobab-remote-connect-dialog.c:252
 msgid "Please enter a name and try again."
 msgstr "Introduïu un nom i torneu-ho a provar."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:444
+#: ../baobab/src/baobab-remote-connect-dialog.c:443
 msgid "_Location (URI):"
 msgstr "_Ubicació (URI):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:466
+#: ../baobab/src/baobab-remote-connect-dialog.c:465
 msgid "_Server:"
 msgstr "_Servidor:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:485
+#: ../baobab/src/baobab-remote-connect-dialog.c:484
 msgid "Optional information:"
 msgstr "Informació opcional:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:497
+#: ../baobab/src/baobab-remote-connect-dialog.c:496
 msgid "_Share:"
 msgstr "_Compartit:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:518
+#: ../baobab/src/baobab-remote-connect-dialog.c:517
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
 msgid "_Port:"
 msgstr "_Port:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:538
+#: ../baobab/src/baobab-remote-connect-dialog.c:537
 msgid "_Folder:"
 msgstr "C_arpeta:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:558
+#: ../baobab/src/baobab-remote-connect-dialog.c:557
 msgid "_User Name:"
 msgstr "_Nom d'usuari:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:579
+#: ../baobab/src/baobab-remote-connect-dialog.c:578
 msgid "_Domain Name:"
 msgstr "Nom del _domini:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:646
+#: ../baobab/src/baobab-remote-connect-dialog.c:645
 msgid "Connect to Server"
 msgstr "Connecta al servidor"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:663
+#: ../baobab/src/baobab-remote-connect-dialog.c:662
 msgid "Service _type:"
 msgstr "_Tipus de servei:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:782
+#: ../baobab/src/baobab-remote-connect-dialog.c:781
 msgid "_Scan"
 msgstr "_Escaneja"
 
@@ -434,63 +430,67 @@ msgstr "Seleccioneu una carpeta"
 msgid "_Show hidden folders"
 msgstr "_Mostra les carpetes ocultes"
 
-#: ../baobab/src/baobab-utils.c:304
+#: ../baobab/src/baobab-utils.c:292
+msgid "Cannot check an excluded folder!"
+msgstr "No es pot comprovar una carpeta exclosa."
+
+#: ../baobab/src/baobab-utils.c:316
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "«%s» no és una carpeta vàlida"
 
-#: ../baobab/src/baobab-utils.c:307
+#: ../baobab/src/baobab-utils.c:319
 msgid "Could not analyze disk usage."
 msgstr "No s'ha pogut analitzar l'ús del disc."
 
-#: ../baobab/src/baobab-utils.c:348
+#: ../baobab/src/baobab-utils.c:360
 msgid "_Open Folder"
 msgstr "O_bre la carpeta"
 
-#: ../baobab/src/baobab-utils.c:354 ../gsearchtool/gsearchtool.c:183
+#: ../baobab/src/baobab-utils.c:366 ../gsearchtool/gsearchtool.c:183
 msgid "Mo_ve to Trash"
 msgstr "Mo_u a la paperera"
 
-#: ../baobab/src/baobab-utils.c:380
+#: ../baobab/src/baobab-utils.c:392
 msgid "Total filesystem capacity:"
 msgstr "Capacitat total del sistema de fitxers:"
 
-#: ../baobab/src/baobab-utils.c:381
+#: ../baobab/src/baobab-utils.c:393
 msgid "used:"
 msgstr "utilitzat:"
 
-#: ../baobab/src/baobab-utils.c:382
+#: ../baobab/src/baobab-utils.c:394
 msgid "available:"
 msgstr "disponible:"
 
-#: ../baobab/src/baobab-utils.c:426
+#: ../baobab/src/baobab-utils.c:438
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "No s'ha pogut obrir la carpeta «%s»"
 
-#: ../baobab/src/baobab-utils.c:429
+#: ../baobab/src/baobab-utils.c:441
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "No hi ha cap visualitzador instal·lat capaç de mostrar la carpeta."
 
-#: ../baobab/src/baobab-utils.c:498
+#: ../baobab/src/baobab-utils.c:510
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "No s'ha pogut moure «%s» a la paperera"
 
-#: ../baobab/src/baobab-utils.c:506
+#: ../baobab/src/baobab-utils.c:518
 msgid "Could not move file to the Trash"
 msgstr "No s'ha pogut moure el fitxer a la paperera"
 
-#: ../baobab/src/baobab-utils.c:508
+#: ../baobab/src/baobab-utils.c:520
 #, c-format
 msgid "Details: %s"
 msgstr "Detalls: %s"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:539
 msgid "Rescan your home folder?"
 msgstr "Voleu tornar a escanejar el directori d'usuari?"
 
-#: ../baobab/src/baobab-utils.c:528
+#: ../baobab/src/baobab-utils.c:540
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
@@ -498,11 +498,11 @@ msgstr ""
 "El contingut del vostre directori d'usuari ha canviat. Seleccioneu tornar a "
 "escanejar per a actualitzar els detalls d'ús."
 
-#: ../baobab/src/baobab-utils.c:529
+#: ../baobab/src/baobab-utils.c:541
 msgid "_Rescan"
 msgstr "_Torna a escanejar"
 
-#: ../baobab/src/baobab-utils.c:569
+#: ../baobab/src/baobab-utils.c:581
 msgid "There was an error displaying help."
 msgstr "S'ha produït un error en mostrar l'ajuda."
 
@@ -1539,7 +1539,7 @@ msgstr "L'objecte GdictContext lligat a aquesta font"
 #: ../gnome-dictionary/libgdict/gdict-source.c:413
 #, c-format
 msgid "Invalid transport type '%d'"
-msgstr "El tipus de translport «%d» no és vàlid"
+msgstr "El tipus de transport «%d» no és vàlid"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:441
 #, c-format
@@ -1835,7 +1835,7 @@ msgstr "No s'ha pogut trobar el diccionari font"
 #: ../gnome-dictionary/src/gdict-window.c:537
 #, c-format
 msgid "No context available for source '%s'"
-msgstr "No hi ha cap context disponibles per a la font «%s»"
+msgstr "No hi ha cap context disponible per a la font «%s»"
 
 #: ../gnome-dictionary/src/gdict-applet.c:926
 #: ../gnome-dictionary/src/gdict-window.c:541
@@ -2061,12 +2061,12 @@ msgstr "S'ha seleccionat la font de diccionari «%s»"
 #: ../gnome-dictionary/src/gdict-window.c:1391
 #, c-format
 msgid "Strategy `%s' selected"
-msgstr "S'ha selecionat l'estratègia «%s»"
+msgstr "S'ha seleccionat l'estratègia «%s»"
 
 #: ../gnome-dictionary/src/gdict-window.c:1411
 #, c-format
 msgid "Database `%s' selected"
-msgstr "S'ha selecionat la base de dades «%s»"
+msgstr "S'ha seleccionat la base de dades «%s»"
 
 #: ../gnome-dictionary/src/gdict-window.c:1431
 #, c-format
@@ -2864,24 +2864,24 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:640
+#: ../gsearchtool/gsearchtool-support.c:642
 msgid "today at %-I:%M %p"
 msgstr "avui a les %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:642
+#: ../gsearchtool/gsearchtool-support.c:644
 msgid "yesterday at %-I:%M %p"
 msgstr "ahir a les %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:644
 #: ../gsearchtool/gsearchtool-support.c:646
+#: ../gsearchtool/gsearchtool-support.c:648
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %B %-d %Y a les %-I:%M:%S %p"
 
-#: ../gsearchtool/gsearchtool-support.c:825
+#: ../gsearchtool/gsearchtool-support.c:827
 msgid "link (broken)"
 msgstr "enllaç (trencat)"
 
-#: ../gsearchtool/gsearchtool-support.c:829
+#: ../gsearchtool/gsearchtool-support.c:831
 #, c-format
 msgid "link to %s"
 msgstr "enllaç a %s"
@@ -2892,12 +2892,12 @@ msgstr "enllaç a %s"
 #. * make some or all of them match.
 #.
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1525
+#: ../gsearchtool/gsearchtool-support.c:1527
 msgid " (copy)"
 msgstr " (còpia)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1527
+#: ../gsearchtool/gsearchtool-support.c:1529
 msgid " (another copy)"
 msgstr " (una altra còpia)"
 
@@ -2905,36 +2905,36 @@ msgstr " (una altra còpia)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1530
 #: ../gsearchtool/gsearchtool-support.c:1532
 #: ../gsearchtool/gsearchtool-support.c:1534
-#: ../gsearchtool/gsearchtool-support.c:1544
+#: ../gsearchtool/gsearchtool-support.c:1536
+#: ../gsearchtool/gsearchtool-support.c:1546
 msgid "th copy)"
 msgstr "a còpia)"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1539
 msgid "st copy)"
 msgstr "a còpia)"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1539
+#: ../gsearchtool/gsearchtool-support.c:1541
 msgid "nd copy)"
 msgstr "a còpia)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1541
+#: ../gsearchtool/gsearchtool-support.c:1543
 msgid "rd copy)"
 msgstr "a còpia)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1558
+#: ../gsearchtool/gsearchtool-support.c:1560
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (còpia)%s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1560
+#: ../gsearchtool/gsearchtool-support.c:1562
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (una altra còpia)%s"
@@ -2943,43 +2943,43 @@ msgstr "%s (una altra còpia)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1563
 #: ../gsearchtool/gsearchtool-support.c:1565
 #: ../gsearchtool/gsearchtool-support.c:1567
-#: ../gsearchtool/gsearchtool-support.c:1576
+#: ../gsearchtool/gsearchtool-support.c:1569
+#: ../gsearchtool/gsearchtool-support.c:1578
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%da còpia)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1570
+#: ../gsearchtool/gsearchtool-support.c:1572
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%da còpia)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1572
+#: ../gsearchtool/gsearchtool-support.c:1574
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%da còpia)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1574
+#: ../gsearchtool/gsearchtool-support.c:1576
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%da còpia)%s"
 
-#: ../gsearchtool/gsearchtool-support.c:1621
+#: ../gsearchtool/gsearchtool-support.c:1623
 msgid " (invalid Unicode)"
 msgstr " (Unicode no vàlid)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1710
+#: ../gsearchtool/gsearchtool-support.c:1712
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1718
+#: ../gsearchtool/gsearchtool-support.c:1720
 #, c-format
 msgid " (%d"
 msgstr " (%d"
@@ -3173,7 +3173,8 @@ msgstr "Selecciona i estableix l'opció de cerca «%s»"
 
 #: ../gsearchtool/gsearchtool.c:1504
 msgid "Invalid option passed to sortby command line argument."
-msgstr "S'ha passat una opció no vàlida a la línia d'ordres de sortby."
+msgstr ""
+"S'ha passat una opció no vàlida a l'argument de la línia d'ordres «sortby»."
 
 #: ../gsearchtool/gsearchtool.c:1802
 msgid ""
@@ -3510,7 +3511,7 @@ msgstr "[FITXER DE REGISTRE...]"
 msgid " - Browse and monitor logs"
 msgstr " - Navega i fes un seguiment dels registres"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:103
 msgid "Log Viewer"
 msgstr "Visualitzador de registres del sistema"
 
@@ -3626,15 +3627,15 @@ msgstr "_Subfinestra lateral"
 msgid "Show Side Pane"
 msgstr "Mostra la subfinestra lateral"
 
-#: ../logview/logview-window.c:1165
+#: ../logview/logview-window.c:1168
 msgid "Close"
 msgstr "Tanca"
 
-#: ../logview/logview-window.c:1205
+#: ../logview/logview-window.c:1208
 msgid "Version: "
 msgstr "Versió: "
 
-#: ../logview/logview-window.c:1305
+#: ../logview/logview-window.c:1308
 msgid "Could not open the following files:"
 msgstr "No s'han pogut obrir els fitxers següents:"
 
