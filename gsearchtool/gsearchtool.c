@@ -2978,7 +2978,7 @@ main (int argc,
 	g_option_context_parse (context, &argc, &argv, &error);
 
 	if (error) {
-		g_printerr (_("Failed to parse command line arguments: %s\n"), error->message);
+		g_printerr ("%s\n", error->message);
 		return (-1);
 	}
 	
