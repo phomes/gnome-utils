@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils 2.27.x\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-01 13:30+0200\n"
-"PO-Revision-Date: 2009-09-01 13:32+0200\n"
+"Project-Id-Version: gnome-utils 2.28.x\n"
+"Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: 2009-10-11 21:59+0200\n"
+"PO-Revision-Date: 2009-10-11 22:00+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian/Bokmaal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -875,22 +875,22 @@ msgstr "Statuskode som returneres av ordboktjeneren."
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "Ingen tilkobling til ordboktjener på «%s:%d»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1054
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1060
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr "Oppslag feilet for vertsnavn «%s»: ingen passende ressurser ble funnet"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1085
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1091
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "Oppslag feilet for vert «%s» : %s"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1119
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1125
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr "Oppslag feilet for vert «%s»: vert ikke funnet"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1171
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1177
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
@@ -899,7 +899,7 @@ msgstr ""
 "Kan ikke koble til ordboktjener på «%s:%d». Tjeneren svarte med kode %d "
 "(tjener nede)"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1190
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -908,47 +908,47 @@ msgstr ""
 "Forstår ikke svar fra ordboktjener:\n"
 " «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1219
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1225
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "Ingen definisjoner funnet for «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1234
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1240
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "Ugyldig database «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1249
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1255
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "Ugyldig strategi «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1264
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1270
 #, c-format
 msgid "Bad command '%s'"
 msgstr "Ugyldig kommando «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1279
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1285
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "Ugyldige parametere for kommando «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1294
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1300
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr "Ingen databaser funnet på ordboktjener «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1309
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1315
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "Ingen strategier funnet på ordboktjener «%s»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1742
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1748
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Tilkobling feilet for ordboktjener «%s:%d»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1781
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1787
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -957,28 +957,28 @@ msgstr ""
 "Feil under lesing av svar fra tjener:\n"
 "%s"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1851
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1860
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "Tidsavbrudd for tilkobling til ordboktjener på «%s:%d»"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1885
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1894
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Ingen vertsnavn definert for ordboktjener"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1921
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1936
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1930
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1945
 #, c-format
 msgid "Unable to create socket"
 msgstr "Kunne ikke opprette plugg"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1962
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1971
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Kunne ikke sette kanal som ikke-blokkerende: %s"
 
-#: ../gnome-dictionary/libgdict/gdict-client-context.c:1977
+#: ../gnome-dictionary/libgdict/gdict-client-context.c:1986
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "Kan ikke koble til ordboktjener «%s:%d»"
@@ -2697,7 +2697,7 @@ msgid "Searching..."
 msgstr "Søker..."
 
 #: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
-#: ../gsearchtool/gsearchtool.c:2980
+#: ../gsearchtool/gsearchtool.c:2987
 msgid "Search for Files"
 msgstr "Søk etter filer"
 
@@ -2931,7 +2931,7 @@ msgstr "Klikk for å utføre et søk."
 msgid "Click to stop a search."
 msgstr "Klikk for å stoppe et søk."
 
-#: ../gsearchtool/gsearchtool.c:2971
+#: ../gsearchtool/gsearchtool.c:2972
 msgid "- the GNOME Search Tool"
 msgstr "- GNOME-søkeverktøyet"
 
