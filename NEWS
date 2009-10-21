@@ -1,4 +1,48 @@
-====================================================================
+=====================================================================
+GNOME Utilities 2.28.1 (21st October 2009) - "Got Some"
+
+    * Bugfix release of the 2.28 cycle
+    
+Cosimo Cecchi (3):
+      Always sanitize the stored fontsize from GConf (#597554).
+      Make sure we don't double-free the old name (#595352).
+      Make sure to return if we have an error or no new lines (#588577).
+
+Dennis Cranston (3):
+      [gsearchtool] Bug 595371
+      [gsearchtool] Properly handle invalid command line args
+      [gsearchtool] Remove new string from previous commit
+
+Emmanuele Bassi (3):
+      Post-release bump to 2.28.1
+      Remove executable bit from en_GB.po
+      Fuzzy broken translations
+
+Gabor Kelemen (1):
+      Updated Hungarian translation
+
+Joan Duran (1):
+      Updated Catalan translation
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Leonid Kanter (1):
+      Updated Russian translation by Victor Anisimov <vicanis@gmail.com>
+
+Manoj Kumar Giri (1):
+      Upadated Oriya Translation
+
+Mario Blättermann (1):
+      Updated German translation
+
+Takayuki KUSANO (1):
+      Updated Japanese translation
+
+Yaron Shahrabani (1):
+      Updated Hebrew translation
+
+===================================================================
 GNOME Utilities 2.28.0 (21st September 2009) - "The Queen's Approach"
 
     * First stable release of the 2.28 cycle
