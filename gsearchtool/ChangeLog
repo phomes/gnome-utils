@@ -1,3 +1,10 @@
+2009-10-21 Dennis Cranston <dennis_cranston@yahoo.com>
+
+	* gsearchtool.c, gsearchtool-callbacks.[ch]: Backport the
+	  "--version" command line argument fix without introducing
+	  a new string.  
+	* gsearchtool-support.c: Fix compiler warning.
+ 
 2009-09-30  Dennis Cranston  <dennis_cranston@yahoo.com>
 
 	*  gsearchtool.c:  Remove new string from previous commit.
