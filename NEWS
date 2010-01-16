@@ -1,4 +1,46 @@
 =====================================================================
+GNOME Utilities 2.28.1 (16th January 2010) - "Quid"
+
+    * Bugfix release of the 2.28 cycle
+
+Baobab
+
+    * callback objects are now GtkActions (bgo#589611) (Cosimo Cecchi)
+    * Allow user to drag a folder directly over the rings-chart or treemap to
+      get it scanned (bgo#594539) (h2g2bob)
+    * Limits treemap zooming to the actual depth of folders shown (bgo#554126)
+      (Eduardo Lima Mitev)
+    * Wrong format in a translatable string (bgo#508483) (Fabio Marzocca)
+    * Adds a check to avoid traversing the tree model if it's empty
+      (bgo#601147) (Alexander Korolkov)
+
+Dictionary
+
+    * Use gtk_widget_is_toplevel() instead of GTK_WIDGET_TOPLEVEL() (Vincent
+      Untz)
+
+Updated Translations
+
+    * ca (Joan Duran)
+    * cs (Adrian Guniš)
+    * da (Anders Jenbo)
+    * de (Mario Blättermann)
+    * en_GB (Bruce Cowan)
+    * es (Jorge González)
+    * et (Ivar Smolin)
+    * fr (Claude Paroz)
+    * hu (Gabor Kelemen)
+    * it (Andrea Zagli)
+    * ja (Takayuki KUSANO)
+    * lt (Žygimantas Beručka)
+    * nds (Nils-Christoph Fiedler)
+    * or (Manoj Kumar Giri)
+    * pt_BR (Krix Apolinário)
+    * ro (Lucian Adrian Grijincu)
+    * sl (Matej Urbančič)
+    * sv (Daniel Nylander)
+
+=====================================================================
 GNOME Utilities 2.28.1 (21st October 2009) - "Got Some"
 
     * Bugfix release of the 2.28 cycle
