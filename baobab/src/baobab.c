@@ -669,22 +669,18 @@ static void
 store_excluded_locations (void)
 {
 	GSList *l;
-	GSList *uri_list = NULL;
+	GPtrArray *array;
+
+	array = g_ptr_array_new_with_free_func (g_free);
 
 	for (l = baobab.excluded_locations; l != NULL; l = l->next) {
-		GSList *uri_list = NULL;
-
-		uri_list = g_slist_prepend (uri_list, g_file_get_uri(l->data));
+		g_ptr_array_add (array, g_file_get_uri (l->data));
 	}
 
-	gconf_client_set_list (baobab.gconf_client,
-			       PROPS_SCAN_KEY,
-			       GCONF_VALUE_STRING, 
-			       uri_list,
-			       NULL);
+	g_settings_set_strv (baobab.settings_properties, "skip_scan_uri_list",
+			     (const gchar * const *) array->pdata, array->len);
 
-	g_slist_foreach (uri_list, (GFunc) g_free, NULL);
-	g_slist_free (uri_list);
+	g_ptr_array_free (array, TRUE);
 }
 
 static void
@@ -693,7 +689,7 @@ sanity_check_excluded_locations (void)
 	GFile *root;
 	GSList *l;
 
-	/* Verify if gconf wrongly contains root dir exclusion, and remove it from gconf. */
+	/* Verify if setting wrongly contains root dir exclusion, and remove it if needed. */
 	root = g_file_new_for_uri ("file:///");
 
 	for (l = baobab.excluded_locations; l != NULL; l = l->next) {
