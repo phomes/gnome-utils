@@ -484,16 +484,17 @@ pop_iter_from_stack (void)
 }
 
 void
-baobab_set_excluded_locations (GSList *excluded_uris)
+baobab_set_excluded_locations (gchar * const *excluded_uris,
+			       gsize          size)
 {
-	GSList *l;
+	int i;
 
 	g_slist_foreach (baobab.excluded_locations, (GFunc) g_object_unref, NULL);
 	g_slist_free (baobab.excluded_locations);
 	baobab.excluded_locations = NULL;
-	for (l = excluded_uris; l != NULL; l = l->next) {
+	for (i = 0; i < size; i++) {
 		baobab.excluded_locations = g_slist_prepend (baobab.excluded_locations,
-						g_file_new_for_uri (l->data));
+							     g_file_new_for_uri (excluded_uris[i]));
 	}
 }
 
@@ -646,6 +647,25 @@ baobab_settings_home_monitor_changed (GSettings   *settings,
 }
 
 static void
+baobab_settings_skip_scan_uri_changed (GSettings   *settings,
+				       const gchar *key,
+				       gpointer     user_data)
+{
+	gchar **skip_uris;
+	gsize   skip_uris_size;
+
+	skip_uris = g_settings_get_strv (settings, key, &skip_uris_size);
+	baobab_set_excluded_locations (skip_uris, skip_uris_size);
+	g_strfreev (skip_uris);
+
+	baobab_get_filesystem (&g_fs);
+	set_label_scan (&g_fs);
+	show_label ();
+	gtk_tree_store_clear (baobab.model);
+	first_row ();
+}
+
+static void
 store_excluded_locations (void)
 {
 	GSList *l;
@@ -765,8 +785,9 @@ monitor_home_dir (void)
 static void
 baobab_init (void)
 {
-	GSList *uri_list;
-	GError *error = NULL;
+	gchar  **skip_uris;
+	gsize    skip_uris_size;
+	GError  *error = NULL;
 
 	/* Load the UI */
 	baobab.main_ui = gtk_builder_new ();
@@ -792,22 +813,8 @@ baobab_init (void)
 	baobab.gconf_client = gconf_client_get_default ();
 	gconf_client_add_dir (baobab.gconf_client, BAOBAB_KEY_DIR,
 			      GCONF_CLIENT_PRELOAD_NONE, NULL);
-	gconf_client_notify_add (baobab.gconf_client, PROPS_SCAN_KEY, props_notify,
-				 NULL, NULL, NULL);
 	gconf_client_notify_add (baobab.gconf_client, SYSTEM_TOOLBAR_STYLE, baobab_toolbar_style,
 				 NULL, NULL, NULL);				 
-
-	uri_list = gconf_client_get_list (baobab.gconf_client,
-						      PROPS_SCAN_KEY,
-						      GCONF_VALUE_STRING,
-						      NULL);
-
-	baobab_set_excluded_locations (uri_list);
-
-	g_slist_foreach (uri_list, (GFunc) g_free, NULL);
-	g_slist_free (uri_list);
-
-	sanity_check_excluded_locations ();
 
 	baobab_create_toolbar ();
 
@@ -841,7 +848,16 @@ baobab_init (void)
 	g_signal_connect (baobab.settings_properties, "changed::" PROPS_ENABLE_HOME_MONITOR,
 			  (GCallback) baobab_settings_home_monitor_changed, NULL);
 
+	skip_uris = g_settings_get_strv (baobab.settings_properties, "skip_scan_uri_list",
+					 &skip_uris_size);
+	baobab_set_excluded_locations (skip_uris, skip_uris_size);
+	g_strfreev (skip_uris);
+	g_signal_connect (baobab.settings_properties, "changed::" "skip_scan_uri_list",
+			  (GCallback) baobab_settings_skip_scan_uri_changed, NULL);
+
 	monitor_home_dir ();
+
+	sanity_check_excluded_locations ();
 }
 
 static void
