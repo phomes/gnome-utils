@@ -42,7 +42,7 @@ static void fill_props_model (GtkWidget *);
 static void check_toggled (GtkCellRendererToggle * cell,
 			   gchar * path_str, gpointer data);
 
-static void update_skip_scan_uri (GSettings *);
+static void update_skip_scan_uri (GSettings *, const gchar *, gpointer);
 static void save_skip_can_uri (GSettings *);
 static gboolean set_skip_uri (GtkTreeModel * model, GtkTreePath * path,
 			      GtkTreeIter * iter, gpointer data);
@@ -97,7 +97,10 @@ create_props (void)
 	fill_props_model (dlg);
 	check_enablehome = GTK_WIDGET (gtk_builder_get_object (builder, "check_enable_home"));
 
-	update_skip_scan_uri (baobab.settings_properties);
+	update_skip_scan_uri (baobab.settings_properties, PROPS_SCAN_KEY, NULL);
+	g_signal_connect (baobab.settings_properties, "changed::" PROPS_SCAN_KEY,
+			  (GCallback) update_skip_scan_uri, NULL);
+
 	g_settings_bind (baobab.settings_properties, "enable_home_monitor",
 			 check_enablehome, "active",
 			 G_SETTINGS_BIND_DEFAULT);
@@ -277,13 +280,14 @@ fill_props_model (GtkWidget *dlg)
 	g_free (mountentry_tofree);
 }
 
-void
-update_skip_scan_uri (GSettings *settings_properties)
+static void
+update_skip_scan_uri (GSettings   *settings,
+		      const gchar *key,
+		      gpointer     user_data)
 {
 	gchar **skip_uris;
 
-	skip_uris = g_settings_get_strv (settings_properties, PROPS_SCAN_KEY,
-					 NULL);
+	skip_uris = g_settings_get_strv (settings, key, NULL);
 	gtk_tree_model_foreach (GTK_TREE_MODEL (model_props),
 				set_model_checks, skip_uris);
 	g_strfreev (skip_uris);
