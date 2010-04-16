@@ -105,6 +105,7 @@ create_props (void)
 {
 	GtkWidget *dlg, *check_enablehome;
 	GtkBuilder *builder;
+	GSettings *settings_properties;
 	GError *error = NULL;
 
 	props_changed = FALSE;
@@ -132,8 +133,12 @@ create_props (void)
 	read_gconf ();
 
 	check_enablehome = GTK_WIDGET (gtk_builder_get_object (builder, "check_enable_home"));
-	gtk_toggle_button_set_active ((GtkToggleButton *) check_enablehome,
-				      baobab.bbEnableHomeMonitor);
+
+	settings_properties = g_settings_new ("org.gnome.baobab.properties");
+	g_settings_bind (settings_properties, "enable_home_monitor",
+			 check_enablehome, "active",
+			 G_SETTINGS_BIND_DEFAULT);
+	g_object_unref (settings_properties);
 
 	g_signal_connect_after ((GtkToggleButton *) check_enablehome,
 				"toggled", G_CALLBACK (enable_home_cb),
@@ -410,8 +415,4 @@ void
 enable_home_cb (GtkToggleButton *togglebutton, gpointer user_data)
 {
 	baobab.bbEnableHomeMonitor = gtk_toggle_button_get_active (togglebutton);
-
-	gconf_client_set_bool (baobab.gconf_client, PROPS_ENABLE_HOME_MONITOR,
-			       baobab.bbEnableHomeMonitor, NULL);
-
 }
