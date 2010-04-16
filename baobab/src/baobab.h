@@ -41,7 +41,7 @@ struct BaobabSearchOpt;
 
 #define BAOBAB_KEY_DIR "/apps/baobab"
 #define BAOBAB_TOOLBAR_VISIBLE_KEY	"toolbar_visible"
-#define BAOBAB_STATUSBAR_VISIBLE_KEY	BAOBAB_KEY_DIR "/ui/statusbar_visible"
+#define BAOBAB_STATUSBAR_VISIBLE_KEY	"statusbar_visible"
 #define BAOBAB_SUBFLSTIPS_VISIBLE_KEY   BAOBAB_KEY_DIR "/ui/baobab_subfoldertips_visible"
 #define PROPS_SCAN_KEY			BAOBAB_KEY_DIR "/properties/skip_scan_uri_list"
 #define PROPS_ENABLE_HOME_MONITOR	BAOBAB_KEY_DIR "/properties/enable_home_monitor"
@@ -118,7 +118,6 @@ void fill_model (struct chan_data *);
 void first_row (void);
 gboolean baobab_is_excluded_location (GFile *);
 void baobab_set_excluded_locations (GSList *);
-void set_statusbar_visible (gboolean visible);
 void set_statusbar (const gchar *);
 
 #endif /* __BAOBAB_H_ */

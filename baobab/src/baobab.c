@@ -516,21 +516,6 @@ baobab_is_excluded_location (GFile *file)
 }
 
 void
-set_statusbar_visible (gboolean visible)
-{
-	GtkToggleAction *action;
-
-	if (visible)
-		gtk_widget_show (baobab.statusbar);
-	else
-		gtk_widget_hide (baobab.statusbar);
-
-	/* make sure the check menu item is consistent */
-	action = GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_sb"));
-	gtk_toggle_action_set_active (action, visible);
-}
-
-void
 set_statusbar (const gchar *text)
 {
 	gtk_statusbar_pop (GTK_STATUSBAR (baobab.statusbar), 1);
@@ -639,11 +624,6 @@ baobab_create_statusbar (void)
 		g_printerr ("Could not build statusbar\n");
 		return;
 	}
-
-	visible = gconf_client_get_bool (baobab.gconf_client,
-					 BAOBAB_STATUSBAR_VISIBLE_KEY,
-					 NULL);
-	set_statusbar_visible (visible);
 }
 
 static void
@@ -809,8 +789,6 @@ baobab_init (void)
 				 NULL, NULL, NULL);
 	gconf_client_notify_add (baobab.gconf_client, SYSTEM_TOOLBAR_STYLE, baobab_toolbar_style,
 				 NULL, NULL, NULL);				 
-	gconf_client_notify_add (baobab.gconf_client, BAOBAB_SUBFLSTIPS_VISIBLE_KEY, baobab_subfolderstips_toggled,
-				 NULL, NULL, NULL);
 
 	uri_list = gconf_client_get_list (baobab.gconf_client,
 						      PROPS_SCAN_KEY,
@@ -844,6 +822,13 @@ baobab_init (void)
 			 G_SETTINGS_BIND_DEFAULT);
 	g_settings_bind (baobab.settings_ui, BAOBAB_TOOLBAR_VISIBLE_KEY,
 			 GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_tb")), "active",
+			 G_SETTINGS_BIND_DEFAULT);
+
+	g_settings_bind (baobab.settings_ui, BAOBAB_STATUSBAR_VISIBLE_KEY,
+			 baobab.statusbar, "visible",
+			 G_SETTINGS_BIND_DEFAULT);
+	g_settings_bind (baobab.settings_ui, BAOBAB_STATUSBAR_VISIBLE_KEY,
+			 GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_sb")), "active",
 			 G_SETTINGS_BIND_DEFAULT);
 }
 

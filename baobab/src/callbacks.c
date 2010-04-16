@@ -27,7 +27,6 @@
 #include <string.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
-#include <gconf/gconf-client.h>
 #include <gio/gio.h>
 
 #include "baobab.h"
@@ -266,21 +265,6 @@ on_ck_allocated_activate (GtkToggleAction *action,
 				show_bars, NULL);
 	baobab_set_busy (FALSE);
 	set_statusbar (_("Ready"));
-}
-
-void
-on_view_sb_activate (GtkToggleAction *action,
-                     gpointer         user_data) 
-{
-	gboolean visible;
-
-	visible = gtk_toggle_action_get_active (action);
-	set_statusbar_visible (visible);
-
-	gconf_client_set_bool (baobab.gconf_client,
-			       BAOBAB_STATUSBAR_VISIBLE_KEY,
-			       visible,
-			       NULL);
 }
 
 void
