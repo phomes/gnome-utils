@@ -45,7 +45,7 @@ static void fill_props_model (GtkWidget *);
 static void check_toggled (GtkCellRendererToggle * cell,
 			   gchar * path_str, gpointer data);
 
-static void read_gconf (void);
+static void update_skip_scan_uri (GSettings *);
 static void save_gconf (void);
 static gboolean set_gconf_list (GtkTreeModel * model, GtkTreePath * path,
 				GtkTreeIter * iter, gpointer data);
@@ -104,11 +104,10 @@ create_props (void)
 
 	tree_props = (GtkTreeView *) create_tree_props (builder);
 	fill_props_model (dlg);
-	read_gconf ();
-
 	check_enablehome = GTK_WIDGET (gtk_builder_get_object (builder, "check_enable_home"));
 
 	settings_properties = g_settings_new ("org.gnome.baobab.properties");
+	update_skip_scan_uri (settings_properties);
 	g_settings_bind (settings_properties, "enable_home_monitor",
 			 check_enablehome, "active",
 			 G_SETTINGS_BIND_DEFAULT);
@@ -289,21 +288,15 @@ fill_props_model (GtkWidget *dlg)
 }
 
 void
-read_gconf (void)
+update_skip_scan_uri (GSettings *settings_properties)
 {
-	GSList *l;
+	gchar **skip_uris;
 
-	l = gconf_client_get_list (baobab.gconf_client, PROPS_SCAN_KEY,
-				   GCONF_VALUE_STRING, NULL);
-
-	if (!l)
-		return;
-
+	skip_uris = g_settings_get_strv (settings_properties, "skip_scan_uri_list",
+					 NULL);
 	gtk_tree_model_foreach (GTK_TREE_MODEL (model_props),
-				set_model_checks, l);
-
-	g_slist_foreach (l, (GFunc) g_free, NULL);
-	g_slist_free (l);
+				set_model_checks, skip_uris);
+	g_strfreev (skip_uris);
 }
 
 void
@@ -366,16 +359,33 @@ gboolean
 set_model_checks (GtkTreeModel *model,
 		  GtkTreePath *path,
 		  GtkTreeIter *iter,
-		  gpointer list)
+		  gpointer     user_data)
 {
-	gchar *mount;
+	gchar    **skip_uris = user_data;
+	gchar     *mount;
+	gchar     *str_mount, *str_uri;
+	gboolean   found;
+	int        i;
 
 	gtk_tree_model_get (model, iter, COL_MOUNT, &mount, -1);
+	str_mount = g_uri_unescape_string (mount, NULL);
 
-	if (g_slist_find_custom (list, mount, list_find) != NULL)
-		gtk_list_store_set ((GtkListStore *) model, iter,
-				    COL_CHECK, FALSE, -1);
+	found = FALSE;
 
+	for (i = 0; skip_uris[i] != NULL; i++) {
+		str_uri = g_uri_unescape_string (skip_uris[i], NULL);
+		if (g_str_equal (str_mount, str_uri))
+			found = TRUE;
+		g_free (str_uri);
+
+		if (found)
+			break;
+	}
+
+	gtk_list_store_set ((GtkListStore *) model, iter,
+			    COL_CHECK, !found, -1);
+
+	g_free (str_mount);
 	g_free (mount);
 
 	return FALSE;
