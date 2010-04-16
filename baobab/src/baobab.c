@@ -555,9 +555,11 @@ baobab_toolbar_style (GConfClient *client,
 {
 	gchar *toolbar_setting;
 
-	toolbar_setting = baobab_gconf_get_string_with_default (baobab.gconf_client,
-								SYSTEM_TOOLBAR_STYLE,
-								"both");
+	toolbar_setting = gconf_client_get_string (baobab.gconf_client,
+						   SYSTEM_TOOLBAR_STYLE,
+						   NULL);
+	if (!toolbar_setting)
+		toolbar_setting = g_strdup ("both");
 
 	if (!strcmp(toolbar_setting, "icons")) {
 		gtk_toolbar_set_style (GTK_TOOLBAR(baobab.toolbar),
