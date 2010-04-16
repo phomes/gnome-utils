@@ -24,13 +24,18 @@
 #ifndef __BAOBAB_H__
 #define __BAOBAB_H__
 
+#if 0
+#define DESKTOP_SCHEMAS_PORTED
+#endif
 
 #include <time.h>
 #include <sys/types.h>
 #include <glib.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
+#ifndef DESKTOP_SCHEMAS_PORTED
 #include <gconf/gconf-client.h>
+#endif
 
 typedef struct _baobab_application baobab_application;
 typedef struct _baobab_fs baobab_fs;
@@ -47,7 +52,13 @@ struct BaobabSearchOpt;
 #define BAOBAB_SUBFLSTIPS_VISIBLE_KEY   "baobab_subfoldertips_visible"
 #define PROPS_SCAN_KEY			"skip_scan_uri_list"
 #define PROPS_ENABLE_HOME_MONITOR	"enable_home_monitor"
+
+#ifdef DESKTOP_SCHEMAS_PORTED
+#define DESKTOP_INTERFACE_SCHEMA	"org.gnome.Desktop.Interface"
+#define SYSTEM_TOOLBAR_STYLE		"toolbar_style"
+#else
 #define SYSTEM_TOOLBAR_STYLE		"/desktop/gnome/interface/toolbar_style"
+#endif
 
 typedef struct _ContextMenu ContextMenu;
 
@@ -84,7 +95,9 @@ struct _baobab_application {
 
 	char *selected_path;
 
+#ifndef DESKTOP_SCHEMAS_PORTED
 	GConfClient *gconf_client;
+#endif
 	GSettings *settings_properties;
 	GSettings *settings_ui;
 	gint model_max_depth;

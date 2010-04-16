@@ -25,7 +25,9 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <gio/gio.h>
+#ifndef DESKTOP_SCHEMAS_PORTED
 #include <gconf/gconf-client.h>
+#endif
 #include <glibtop.h>
 
 #include "baobab.h"
@@ -547,6 +549,36 @@ toolbar_reconfigured_cb (GtkToolItem  *item,
 	gedit_spinner_set_size (spinner, size);
 }
 
+#ifdef DESKTOP_SCHEMAS_PORTED
+static gboolean
+baobab_get_mapping_toolbar_style (GValue   *value,
+				  GVariant *variant,
+				  gpointer  user_data)
+{
+	const gchar *setting = NULL;
+	GtkToolbarStyle style;
+
+	setting = g_variant_get_string (variant, NULL);
+	if (!setting)
+		setting = "both";
+
+	if (!strcmp (setting, "icons"))
+		style = GTK_TOOLBAR_ICONS;
+	else if (!strcmp (setting, "both"))
+		style = GTK_TOOLBAR_BOTH;
+	else if (!strcmp (setting, "both-horiz"))
+		style = GTK_TOOLBAR_BOTH_HORIZ;
+	else if (!strcmp (setting, "text"))
+		style = GTK_TOOLBAR_TEXT;
+	else
+		return FALSE;
+
+	g_value_set_enum (value, style);
+
+	return TRUE;
+}
+
+#else
 static void
 baobab_toolbar_style (GConfClient *client,
 	      	      guint cnxn_id,
@@ -580,6 +612,7 @@ baobab_toolbar_style (GConfClient *client,
 
 	g_free (toolbar_setting);
 }
+#endif
 
 static void
 baobab_create_toolbar (void)
@@ -613,7 +646,9 @@ baobab_create_toolbar (void)
 	g_signal_connect (item, "toolbar-reconfigured",
 			  G_CALLBACK (toolbar_reconfigured_cb), baobab.spinner);
 	toolbar_reconfigured_cb (item, GEDIT_SPINNER (baobab.spinner));
+#ifndef DESKTOP_SCHEMAS_PORTED
 	baobab_toolbar_style (NULL, 0, NULL, NULL);
+#endif
 }
 
 static void
@@ -783,6 +818,9 @@ monitor_home_dir (void)
 static void
 baobab_init (void)
 {
+#ifdef DESKTOP_SCHEMAS_PORTED
+	GSettings *settings;
+#endif
 	gchar  **skip_uris;
 	gsize    skip_uris_size;
 	GError  *error = NULL;
@@ -807,10 +845,12 @@ baobab_init (void)
 	baobab.show_allocated = TRUE;
 	baobab.is_local = TRUE;
 
+#ifndef DESKTOP_SCHEMAS_PORTED
 	/* GConf */
 	baobab.gconf_client = gconf_client_get_default ();
 	gconf_client_notify_add (baobab.gconf_client, SYSTEM_TOOLBAR_STYLE, baobab_toolbar_style,
 				 NULL, NULL, NULL);				 
+#endif
 
 	baobab_create_toolbar ();
 
@@ -851,6 +891,16 @@ baobab_init (void)
 	g_signal_connect (baobab.settings_properties, "changed::" PROPS_SCAN_KEY,
 			  (GCallback) baobab_settings_skip_scan_uri_changed, NULL);
 
+#ifdef DESKTOP_SCHEMAS_PORTED
+	settings = g_settings_new (DESKTOP_INTERFACE_SCHEMA);
+	g_settings_bind_with_mapping (settings, SYSTEM_TOOLBAR_STYLE,
+				      baobab.toolbar, "toolbar-style",
+				      G_SETTINGS_BIND_GET,
+				      baobab_get_mapping_toolbar_style, NULL,
+				      NULL, NULL);
+	g_object_unref (settings);
+#endif
+
 	monitor_home_dir ();
 
 	sanity_check_excluded_locations ();
@@ -874,8 +924,10 @@ baobab_shutdown (void)
 	g_slist_foreach (baobab.excluded_locations, (GFunc) g_object_unref, NULL);
 	g_slist_free (baobab.excluded_locations);
 
+#ifndef DESKTOP_SCHEMAS_PORTED
 	if (baobab.gconf_client)
 		g_object_unref (baobab.gconf_client);
+#endif
 	if (baobab.settings_properties)
 		g_object_unref (baobab.settings_properties);
 	if (baobab.settings_ui)
