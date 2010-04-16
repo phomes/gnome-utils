@@ -65,11 +65,7 @@ filechooser_response_cb (GtkDialog *dialog,
 			break;
 		case GTK_RESPONSE_CLOSE:
 			if (props_changed) { 
-				GSettings *settings_properties;
-
-				settings_properties = g_settings_new (BAOBAB_SCHEMA_PROPERTIES);
-				save_skip_can_uri (settings_properties);
-				g_object_unref (settings_properties);
+				save_skip_can_uri (baobab.settings_properties);
 			}
 		default:
 			gtk_widget_destroy (GTK_WIDGET (dialog));
@@ -82,7 +78,6 @@ create_props (void)
 {
 	GtkWidget *dlg, *check_enablehome;
 	GtkBuilder *builder;
-	GSettings *settings_properties;
 	GError *error = NULL;
 
 	props_changed = FALSE;
@@ -109,12 +104,10 @@ create_props (void)
 	fill_props_model (dlg);
 	check_enablehome = GTK_WIDGET (gtk_builder_get_object (builder, "check_enable_home"));
 
-	settings_properties = g_settings_new (BAOBAB_SCHEMA_PROPERTIES);
-	update_skip_scan_uri (settings_properties);
-	g_settings_bind (settings_properties, "enable_home_monitor",
+	update_skip_scan_uri (baobab.settings_properties);
+	g_settings_bind (baobab.settings_properties, "enable_home_monitor",
 			 check_enablehome, "active",
 			 G_SETTINGS_BIND_DEFAULT);
-	g_object_unref (settings_properties);
 
 	g_signal_connect (dlg, "response",
 		    	  G_CALLBACK (filechooser_response_cb),
