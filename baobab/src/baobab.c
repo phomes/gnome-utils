@@ -819,8 +819,8 @@ baobab_init (void)
 	monitor_volume ();
 
 	/* GSettings */
-	baobab.settings_ui = g_settings_new ("org.gnome.baobab.ui");
-	baobab.settings_properties = g_settings_new ("org.gnome.baobab.properties");
+	baobab.settings_ui = g_settings_new (BAOBAB_SCHEMA_UI);
+	baobab.settings_properties = g_settings_new (BAOBAB_SCHEMA_PROPERTIES);
 
 	g_settings_bind (baobab.settings_ui, BAOBAB_TOOLBAR_VISIBLE_KEY,
 			 baobab.toolbar, "visible",

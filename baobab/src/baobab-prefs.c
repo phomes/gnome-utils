@@ -67,7 +67,7 @@ filechooser_response_cb (GtkDialog *dialog,
 			if (props_changed) { 
 				GSettings *settings_properties;
 
-				settings_properties = g_settings_new ("org.gnome.baobab.properties");
+				settings_properties = g_settings_new (BAOBAB_SCHEMA_PROPERTIES);
 				save_skip_can_uri (settings_properties);
 				g_object_unref (settings_properties);
 			}
@@ -109,7 +109,7 @@ create_props (void)
 	fill_props_model (dlg);
 	check_enablehome = GTK_WIDGET (gtk_builder_get_object (builder, "check_enable_home"));
 
-	settings_properties = g_settings_new ("org.gnome.baobab.properties");
+	settings_properties = g_settings_new (BAOBAB_SCHEMA_PROPERTIES);
 	update_skip_scan_uri (settings_properties);
 	g_settings_bind (settings_properties, "enable_home_monitor",
 			 check_enablehome, "active",

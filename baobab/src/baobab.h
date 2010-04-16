@@ -39,6 +39,9 @@ struct BaobabSearchOpt;
 #define BAOBAB_UI_FILE PKGDATADIR "/baobab-main-window.ui"
 #define BAOBAB_DIALOG_SCAN_UI_FILE PKGDATADIR "/baobab-dialog-scan-props.ui"
 
+#define BAOBAB_SCHEMA			"org.gnome.baobab"
+#define BAOBAB_SCHEMA_PROPERTIES	BAOBAB_SCHEMA ".properties"
+#define BAOBAB_SCHEMA_UI		BAOBAB_SCHEMA ".ui"
 #define BAOBAB_TOOLBAR_VISIBLE_KEY	"toolbar_visible"
 #define BAOBAB_STATUSBAR_VISIBLE_KEY	"statusbar_visible"
 #define BAOBAB_SUBFLSTIPS_VISIBLE_KEY   "baobab_subfoldertips_visible"
