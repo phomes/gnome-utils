@@ -677,7 +677,7 @@ store_excluded_locations (void)
 		g_ptr_array_add (array, g_file_get_uri (l->data));
 	}
 
-	g_settings_set_strv (baobab.settings_properties, "skip_scan_uri_list",
+	g_settings_set_strv (baobab.settings_properties, PROPS_SCAN_KEY,
 			     (const gchar * const *) array->pdata, array->len);
 
 	g_ptr_array_free (array, TRUE);
@@ -807,8 +807,6 @@ baobab_init (void)
 
 	/* GConf */
 	baobab.gconf_client = gconf_client_get_default ();
-	gconf_client_add_dir (baobab.gconf_client, BAOBAB_KEY_DIR,
-			      GCONF_CLIENT_PRELOAD_NONE, NULL);
 	gconf_client_notify_add (baobab.gconf_client, SYSTEM_TOOLBAR_STYLE, baobab_toolbar_style,
 				 NULL, NULL, NULL);				 
 
@@ -844,11 +842,11 @@ baobab_init (void)
 	g_signal_connect (baobab.settings_properties, "changed::" PROPS_ENABLE_HOME_MONITOR,
 			  (GCallback) baobab_settings_home_monitor_changed, NULL);
 
-	skip_uris = g_settings_get_strv (baobab.settings_properties, "skip_scan_uri_list",
+	skip_uris = g_settings_get_strv (baobab.settings_properties, PROPS_SCAN_KEY,
 					 &skip_uris_size);
 	baobab_set_excluded_locations (skip_uris, skip_uris_size);
 	g_strfreev (skip_uris);
-	g_signal_connect (baobab.settings_properties, "changed::" "skip_scan_uri_list",
+	g_signal_connect (baobab.settings_properties, "changed::" PROPS_SCAN_KEY,
 			  (GCallback) baobab_settings_skip_scan_uri_changed, NULL);
 
 	monitor_home_dir ();

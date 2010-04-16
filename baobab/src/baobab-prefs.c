@@ -295,7 +295,7 @@ update_skip_scan_uri (GSettings *settings_properties)
 {
 	gchar **skip_uris;
 
-	skip_uris = g_settings_get_strv (settings_properties, "skip_scan_uri_list",
+	skip_uris = g_settings_get_strv (settings_properties, PROPS_SCAN_KEY,
 					 NULL);
 	gtk_tree_model_foreach (GTK_TREE_MODEL (model_props),
 				set_model_checks, skip_uris);
@@ -311,7 +311,7 @@ save_skip_can_uri (GSettings *settings_properties)
 	gtk_tree_model_foreach (GTK_TREE_MODEL (model_props),
 				set_skip_uri, array);
 
-	g_settings_set_strv (settings_properties, "skip_scan_uri_list",
+	g_settings_set_strv (settings_properties, PROPS_SCAN_KEY,
 			     (const gchar * const *) array->pdata, array->len);
 
 	g_ptr_array_free (array, TRUE);

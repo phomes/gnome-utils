@@ -39,11 +39,10 @@ struct BaobabSearchOpt;
 #define BAOBAB_UI_FILE PKGDATADIR "/baobab-main-window.ui"
 #define BAOBAB_DIALOG_SCAN_UI_FILE PKGDATADIR "/baobab-dialog-scan-props.ui"
 
-#define BAOBAB_KEY_DIR "/apps/baobab"
 #define BAOBAB_TOOLBAR_VISIBLE_KEY	"toolbar_visible"
 #define BAOBAB_STATUSBAR_VISIBLE_KEY	"statusbar_visible"
 #define BAOBAB_SUBFLSTIPS_VISIBLE_KEY   "baobab_subfoldertips_visible"
-#define PROPS_SCAN_KEY			BAOBAB_KEY_DIR "/properties/skip_scan_uri_list"
+#define PROPS_SCAN_KEY			"skip_scan_uri_list"
 #define PROPS_ENABLE_HOME_MONITOR	"enable_home_monitor"
 #define SYSTEM_TOOLBAR_STYLE		"/desktop/gnome/interface/toolbar_style"
 
