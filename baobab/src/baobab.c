@@ -952,6 +952,7 @@ initialize_charts (void)
 	GtkWidget *hpaned_main;
 	GtkWidget *chart_frame;
 	GtkWidget *hbox1;
+	gboolean   visible;
 
 	chart_frame = gtk_frame_new (NULL);
 	gtk_frame_set_label_align (GTK_FRAME (chart_frame), 0.0, 0.0);
@@ -1012,10 +1013,9 @@ initialize_charts (void)
 					     COL_H_PERC,
 					     COL_H_ELEMENTS,
 					     NULL);
-	baobab_ringschart_set_subfoldertips_enabled (baobab.rings_chart,
-						     gconf_client_get_bool (baobab.gconf_client,
-									    BAOBAB_SUBFLSTIPS_VISIBLE_KEY,
-									    NULL));
+	visible = g_settings_get_boolean (baobab.settings_ui,
+					  "baobab_subfoldertips_visible");
+	baobab_ringschart_set_subfoldertips_enabled (baobab.rings_chart, visible);
 	baobab_chart_set_max_depth (baobab.rings_chart, 1);
 	g_signal_connect (baobab.rings_chart, "item_activated",
 					G_CALLBACK (on_chart_item_activated), NULL);
