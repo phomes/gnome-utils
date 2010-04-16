@@ -16,6 +16,12 @@ schemas_in_files = baobab.schemas.in
 schemas_DATA 	 = $(schemas_in_files:.schemas.in=.schemas)
 @INTLTOOL_SCHEMAS_RULE@
 
+gsettingsschema_DATA = org.gnome.baobab.gschema
+org.gnome.baobab.gschema: baobab.schemas
+	gsettings-schema-convert --force --gconf --xml --schema-id $(@:.gschema=) $< -o $@
+install-data-hook:
+	$(gsettingsupdateschemacache) $(gsettingsschemadir)
+
 man_MANS = baobab.1
 
 if GCONF_SCHEMAS_INSTALL
@@ -36,4 +42,5 @@ EXTRA_DIST = 				\
 CLEANFILES =	 			\
 	$(baobabapp_in_files)		\
 	$(baobabapp_DATA)		\
-	$(schemas_DATA)
+	$(schemas_DATA)			\
+	$(gsettingsschema_DATA)

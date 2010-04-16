@@ -142,6 +142,11 @@ AS_IF([test "x$GCONFTOOL" = "xno"],
 
 AM_GCONF_SOURCE_2
 
+AC_SUBST(gsettingsschemadir,
+         `pkg-config --variable gsettingsschemadir gio-2.0`)
+AC_SUBST(gsettingsupdateschemacache,
+         `pkg-config --variable gsettingsupdateschemacache gio-2.0`)
+
 AC_ARG_ENABLE([gdict-applet],
                [AC_HELP_STRING([--enable-gdict-applet=@<:@yes/no@:>@],
                                [Whether to build the Dictionary gnome-panel applet])],
