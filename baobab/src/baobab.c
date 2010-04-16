@@ -516,21 +516,6 @@ baobab_is_excluded_location (GFile *file)
 }
 
 void
-set_toolbar_visible (gboolean visible)
-{
-	GtkToggleAction *action;
-
-	if (visible)
-		gtk_widget_show (baobab.toolbar);
-	else
-		gtk_widget_hide (baobab.toolbar);
-
-	/* make sure the check menu item is consistent */
-	action = GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_tb"));
-	gtk_toggle_action_set_active (action, visible);
-}
-
-void
 set_statusbar_visible (gboolean visible)
 {
 	GtkToggleAction *action;
@@ -641,12 +626,6 @@ baobab_create_toolbar (void)
 			  G_CALLBACK (toolbar_reconfigured_cb), baobab.spinner);
 	toolbar_reconfigured_cb (item, GEDIT_SPINNER (baobab.spinner));
 	baobab_toolbar_style (NULL, 0, NULL, NULL);
-
-	visible = gconf_client_get_bool (baobab.gconf_client,
-					 BAOBAB_TOOLBAR_VISIBLE_KEY,
-					 NULL);
-
-	set_toolbar_visible (visible);
 }
 
 static void
@@ -856,6 +835,13 @@ baobab_init (void)
 							    NULL);
 
 	monitor_home_dir ();
+
+	/* GSettings */
+	baobab.settings_ui = g_settings_new ("org.gnome.baobab.ui");
+
+	g_settings_bind (baobab.settings_ui, "toolbar_visible",
+			 baobab.toolbar, "visible",
+			 G_SETTINGS_BIND_DEFAULT);
 }
 
 static void
@@ -878,6 +864,8 @@ baobab_shutdown (void)
 
 	if (baobab.gconf_client)
 		g_object_unref (baobab.gconf_client);
+	if (baobab.settings_ui)
+		g_object_unref (baobab.settings_ui);
 }
 
 static void

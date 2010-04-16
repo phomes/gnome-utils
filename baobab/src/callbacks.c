@@ -275,7 +275,6 @@ on_view_tb_activate (GtkToggleAction *action,
 	gboolean visible;
 
 	visible = gtk_toggle_action_get_active (action);
-	set_toolbar_visible (visible);
 
 	gconf_client_set_bool (baobab.gconf_client,
 			       BAOBAB_TOOLBAR_VISIBLE_KEY,
