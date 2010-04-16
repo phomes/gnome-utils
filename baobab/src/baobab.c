@@ -842,6 +842,9 @@ baobab_init (void)
 	g_settings_bind (baobab.settings_ui, "toolbar_visible",
 			 baobab.toolbar, "visible",
 			 G_SETTINGS_BIND_DEFAULT);
+	g_settings_bind (baobab.settings_ui, "toolbar_visible",
+			 GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_tb")), "active",
+			 G_SETTINGS_BIND_DEFAULT);
 }
 
 static void

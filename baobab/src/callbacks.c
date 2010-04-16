@@ -269,20 +269,6 @@ on_ck_allocated_activate (GtkToggleAction *action,
 }
 
 void
-on_view_tb_activate (GtkToggleAction *action,
-                     gpointer         user_data) 
-{
-	gboolean visible;
-
-	visible = gtk_toggle_action_get_active (action);
-
-	gconf_client_set_bool (baobab.gconf_client,
-			       BAOBAB_TOOLBAR_VISIBLE_KEY,
-			       visible,
-			       NULL);
-}
-
-void
 on_view_sb_activate (GtkToggleAction *action,
                      gpointer         user_data) 
 {
