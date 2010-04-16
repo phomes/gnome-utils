@@ -839,10 +839,10 @@ baobab_init (void)
 	/* GSettings */
 	baobab.settings_ui = g_settings_new ("org.gnome.baobab.ui");
 
-	g_settings_bind (baobab.settings_ui, "toolbar_visible",
+	g_settings_bind (baobab.settings_ui, BAOBAB_TOOLBAR_VISIBLE_KEY,
 			 baobab.toolbar, "visible",
 			 G_SETTINGS_BIND_DEFAULT);
-	g_settings_bind (baobab.settings_ui, "toolbar_visible",
+	g_settings_bind (baobab.settings_ui, BAOBAB_TOOLBAR_VISIBLE_KEY,
 			 GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_tb")), "active",
 			 G_SETTINGS_BIND_DEFAULT);
 }
