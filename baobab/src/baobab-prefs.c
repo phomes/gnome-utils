@@ -34,8 +34,6 @@
 #include "baobab-prefs.h"
 
 
-static gboolean props_changed;
-
 static GtkTreeView *tree_props;
 static GtkListStore *model_props;
 static GtkListStore *create_props_model (void);
@@ -64,9 +62,6 @@ filechooser_response_cb (GtkDialog *dialog,
 			                     "baobab.xml", "baobab-preferences");
 			break;
 		case GTK_RESPONSE_CLOSE:
-			if (props_changed) { 
-				save_skip_can_uri (baobab.settings_properties);
-			}
 		default:
 			gtk_widget_destroy (GTK_WIDGET (dialog));
 			break;
@@ -79,8 +74,6 @@ create_props (void)
 	GtkWidget *dlg, *check_enablehome;
 	GtkBuilder *builder;
 	GError *error = NULL;
-
-	props_changed = FALSE;
 
 	/* UI stuff */
 	builder = gtk_builder_new ();
@@ -224,10 +217,11 @@ check_toggled (GtkCellRendererToggle *cell,
 		goto clean_up;
 
 	/* set new value */
-	props_changed = TRUE;
 	toggle ^= 1;
 	gtk_list_store_set (GTK_LIST_STORE (model_props), &iter, COL_CHECK,
 			    toggle, -1);
+
+	save_skip_can_uri (baobab.settings_properties);
 
  clean_up:
 	g_free (mountpoint);
