@@ -44,7 +44,7 @@ struct BaobabSearchOpt;
 #define BAOBAB_STATUSBAR_VISIBLE_KEY	"statusbar_visible"
 #define BAOBAB_SUBFLSTIPS_VISIBLE_KEY   "baobab_subfoldertips_visible"
 #define PROPS_SCAN_KEY			BAOBAB_KEY_DIR "/properties/skip_scan_uri_list"
-#define PROPS_ENABLE_HOME_MONITOR	BAOBAB_KEY_DIR "/properties/enable_home_monitor"
+#define PROPS_ENABLE_HOME_MONITOR	"enable_home_monitor"
 #define SYSTEM_TOOLBAR_STYLE		"/desktop/gnome/interface/toolbar_style"
 
 typedef struct _ContextMenu ContextMenu;
@@ -83,6 +83,7 @@ struct _baobab_application {
 	char *selected_path;
 
 	GConfClient *gconf_client;
+	GSettings *settings_properties;
 	GSettings *settings_ui;
 	gint model_max_depth;
 };

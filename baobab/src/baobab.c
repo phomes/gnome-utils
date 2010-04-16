@@ -638,6 +638,14 @@ baobab_settings_subfoldertips_changed (GSettings   *settings,
 }
 
 static void
+baobab_settings_home_monitor_changed (GSettings   *settings,
+				      const gchar *key,
+				      gpointer     user_data)
+{
+	baobab.bbEnableHomeMonitor = g_settings_get_boolean (settings, key);
+}
+
+static void
 store_excluded_locations (void)
 {
 	GSList *l;
@@ -807,14 +815,9 @@ baobab_init (void)
 
 	monitor_volume ();
 
-	baobab.bbEnableHomeMonitor = gconf_client_get_bool (baobab.gconf_client,
-							    PROPS_ENABLE_HOME_MONITOR,
-							    NULL);
-
-	monitor_home_dir ();
-
 	/* GSettings */
 	baobab.settings_ui = g_settings_new ("org.gnome.baobab.ui");
+	baobab.settings_properties = g_settings_new ("org.gnome.baobab.properties");
 
 	g_settings_bind (baobab.settings_ui, BAOBAB_TOOLBAR_VISIBLE_KEY,
 			 baobab.toolbar, "visible",
@@ -832,6 +835,13 @@ baobab_init (void)
 
 	g_signal_connect (baobab.settings_ui, "changed::" BAOBAB_SUBFLSTIPS_VISIBLE_KEY,
 			  (GCallback) baobab_settings_subfoldertips_changed, NULL);
+
+	baobab.bbEnableHomeMonitor = g_settings_get_boolean (baobab.settings_properties,
+							     PROPS_ENABLE_HOME_MONITOR);
+	g_signal_connect (baobab.settings_properties, "changed::" PROPS_ENABLE_HOME_MONITOR,
+			  (GCallback) baobab_settings_home_monitor_changed, NULL);
+
+	monitor_home_dir ();
 }
 
 static void
@@ -854,6 +864,8 @@ baobab_shutdown (void)
 
 	if (baobab.gconf_client)
 		g_object_unref (baobab.gconf_client);
+	if (baobab.settings_properties)
+		g_object_unref (baobab.settings_properties);
 	if (baobab.settings_ui)
 		g_object_unref (baobab.settings_ui);
 }
