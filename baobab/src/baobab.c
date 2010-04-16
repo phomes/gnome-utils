@@ -627,15 +627,14 @@ baobab_create_statusbar (void)
 }
 
 static void
-baobab_subfolderstips_toggled (GConfClient *client,
-			       guint cnxn_id,
-			       GConfEntry *entry,
-			       gpointer user_data)
+baobab_settings_subfoldertips_changed (GSettings   *settings,
+				       const gchar *key,
+				       gpointer     user_data)
 {
-	baobab_ringschart_set_subfoldertips_enabled (baobab.rings_chart,
-						     gconf_client_get_bool (baobab.gconf_client,
-									    BAOBAB_SUBFLSTIPS_VISIBLE_KEY,
-									    NULL));
+	gboolean visible;
+
+	visible = g_settings_get_boolean (settings, key);
+	baobab_ringschart_set_subfoldertips_enabled (baobab.rings_chart, visible);
 }
 
 static void
@@ -830,6 +829,9 @@ baobab_init (void)
 	g_settings_bind (baobab.settings_ui, BAOBAB_STATUSBAR_VISIBLE_KEY,
 			 GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_sb")), "active",
 			 G_SETTINGS_BIND_DEFAULT);
+
+	g_signal_connect (baobab.settings_ui, "changed::" BAOBAB_SUBFLSTIPS_VISIBLE_KEY,
+			  (GCallback) baobab_settings_subfoldertips_changed, NULL);
 }
 
 static void
@@ -1014,7 +1016,7 @@ initialize_charts (void)
 					     COL_H_ELEMENTS,
 					     NULL);
 	visible = g_settings_get_boolean (baobab.settings_ui,
-					  "baobab_subfoldertips_visible");
+					  BAOBAB_SUBFLSTIPS_VISIBLE_KEY);
 	baobab_ringschart_set_subfoldertips_enabled (baobab.rings_chart, visible);
 	baobab_chart_set_max_depth (baobab.rings_chart, 1);
 	g_signal_connect (baobab.rings_chart, "item_activated",
