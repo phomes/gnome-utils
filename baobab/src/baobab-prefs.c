@@ -27,7 +27,6 @@
 #include <sys/stat.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
-#include <gconf/gconf-client.h>
 #include <glibtop/mountlist.h>
 #include <glibtop/fsusage.h>
 #include "baobab.h"
@@ -46,9 +45,9 @@ static void check_toggled (GtkCellRendererToggle * cell,
 			   gchar * path_str, gpointer data);
 
 static void update_skip_scan_uri (GSettings *);
-static void save_gconf (void);
-static gboolean set_gconf_list (GtkTreeModel * model, GtkTreePath * path,
-				GtkTreeIter * iter, gpointer data);
+static void save_skip_can_uri (GSettings *);
+static gboolean set_skip_uri (GtkTreeModel * model, GtkTreePath * path,
+			      GtkTreeIter * iter, gpointer data);
 
 static gboolean set_model_checks (GtkTreeModel * model, GtkTreePath * path,
 				  GtkTreeIter * iter, gpointer data);
@@ -66,7 +65,11 @@ filechooser_response_cb (GtkDialog *dialog,
 			break;
 		case GTK_RESPONSE_CLOSE:
 			if (props_changed) { 
-				save_gconf (); 
+				GSettings *settings_properties;
+
+				settings_properties = g_settings_new ("org.gnome.baobab.properties");
+				save_skip_can_uri (settings_properties);
+				g_object_unref (settings_properties);
 			}
 		default:
 			gtk_widget_destroy (GTK_WIDGET (dialog));
@@ -300,28 +303,27 @@ update_skip_scan_uri (GSettings *settings_properties)
 }
 
 void
-save_gconf (void)
+save_skip_can_uri (GSettings *settings_properties)
 {
-	GSList *l = NULL;
+	GPtrArray *array;
 
-	l = g_slist_append (l, "START");
+	array = g_ptr_array_new_with_free_func (g_free);
 	gtk_tree_model_foreach (GTK_TREE_MODEL (model_props),
-				set_gconf_list, l);
-	l = g_slist_remove (l, "START");
-	gconf_client_set_list (baobab.gconf_client,
-			       PROPS_SCAN_KEY, GCONF_VALUE_STRING,
-			       l, NULL);
+				set_skip_uri, array);
 
-	g_slist_foreach (l, (GFunc) g_free, NULL);
-	g_slist_free (l);
+	g_settings_set_strv (settings_properties, "skip_scan_uri_list",
+			     (const gchar * const *) array->pdata, array->len);
+
+	g_ptr_array_free (array, TRUE);
 }
 
 gboolean
-set_gconf_list (GtkTreeModel *model,
-		GtkTreePath *path,
-		GtkTreeIter *iter,
-		gpointer list)
+set_skip_uri (GtkTreeModel *model,
+	      GtkTreePath *path,
+	      GtkTreeIter *iter,
+	      gpointer     user_data)
 {
+	GPtrArray *array = user_data;
 	gchar *mount;
 	gboolean check;
 
@@ -329,12 +331,11 @@ set_gconf_list (GtkTreeModel *model,
 			    &check, -1);
 
 	/* add only un-checked mount points */
-	if (!check) {
-		list = g_slist_last (list);
-		list = g_slist_append (list, mount);
-	}
+	if (!check)
+		g_ptr_array_add (array, mount);
+	else
+		g_free (mount);
 
-	/* g_free(mount); //freed in save_gconf() */
 	return FALSE;
 }
 
