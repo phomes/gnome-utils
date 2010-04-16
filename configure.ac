@@ -70,6 +70,7 @@ dnl pkg-config check
 
 GLIB_REQUIRED=2.20.0
 GIO_REQUIRED=2.25.0
+GCONF_REQUIRED=2.31.1
 GTK_REQUIRED=2.18.0
 GIO_UNIX_REQUIRED=2.18.0
 LIBPANEL_APPLET_REQUIRED=2.13.4
@@ -77,9 +78,9 @@ LIBGTOP_REQUIRED=2.12.0
 LIBCANBERRA_GTK_REQUIRED=0.4
 
 # common checks
-PKG_CHECK_MODULES(GNOME_UTILS, glib-2.0 >= $GLIB_REQUIRED dnl
-                               gio-2.0 >= $GIO_REQUIRED   dnl
-                               gconf-2.0                  dnl
+PKG_CHECK_MODULES(GNOME_UTILS, glib-2.0 >= $GLIB_REQUIRED   dnl
+                               gio-2.0 >= $GIO_REQUIRED     dnl
+                               gconf-2.0 >= $GCONF_REQUIRED dnl
                                gtk+-2.0 >= $GTK_REQUIRED)
 AC_SUBST(GNOME_UTILS_CFLAGS)
 AC_SUBST(GNOME_UTILS_LIBS)
