@@ -19,8 +19,9 @@ schemas_DATA 	 = $(schemas_in_files:.schemas.in=.schemas)
 gsettingsschema_DATA = org.gnome.baobab.gschema
 org.gnome.baobab.gschema: baobab.schemas
 	gsettings-schema-convert --force --gconf --xml --schema-id $(@:.gschema=) $< -o $@
+# --allow-any-name should be removed once the move from gconf is complete
 install-data-hook:
-	$(gsettingsupdateschemacache) $(gsettingsschemadir)
+	$(gsettingsupdateschemacache) --allow-any-name $(gsettingsschemadir)
 
 man_MANS = baobab.1
 
