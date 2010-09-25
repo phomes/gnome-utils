@@ -1,4 +1,4 @@
-# translation of gnome-utils.HEAD.po to Español
+# translation of gnome-utils.gnome-2-26.es.po to Español
 # Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
 # QA - Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002.
 # Pablo Gonzalo del Campo <pablodc@bigfoot.com>,2002-2003.
@@ -9,21 +9,22 @@
 # Miguel de Icaza <miguel@metropolis.nuclecu.unam.mx> 1998.
 # Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999.
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
-# Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+# Jorge González <jorgegonz@svn.gnome.org>, 2007, 2009, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils.HEAD\n"
+"Project-Id-Version: gnome-utils.gnome-2-26\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&component=general\n"
-"POT-Creation-Date: 2009-04-29 15:29+0000\n"
-"PO-Revision-Date: 2009-05-03 23:22+0200\n"
+"POT-Creation-Date: 2010-09-22 08:46+0000\n"
+"PO-Revision-Date: 2010-09-23 09:02+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
 msgid "Check folder sizes and available disk space"
@@ -205,7 +206,7 @@ msgstr "Inspeccionando…"
 msgid "Calculating percentage bars..."
 msgstr "Calculando barras de porcentajes…"
 
-#: ../baobab/src/baobab.c:193 ../baobab/src/baobab.c:998
+#: ../baobab/src/baobab.c:193 ../baobab/src/baobab.c:994
 #: ../baobab/src/callbacks.c:306
 msgid "Ready"
 msgstr "Preparado"
@@ -257,15 +258,11 @@ msgstr "Ver como gráfico de anillo"
 msgid "View as Treemap Chart"
 msgstr "Ver como gráfico de árbol"
 
-#: ../baobab/src/baobab.c:917
-msgid "Cannot check an excluded folder!"
-msgstr "No se puede comprobar la carpeta excluida."
-
-#: ../baobab/src/baobab.c:968
+#: ../baobab/src/baobab.c:964
 msgid "Could not detect any mount point."
 msgstr "No se pudo detectar ningún punto de montaje."
 
-#: ../baobab/src/baobab.c:971
+#: ../baobab/src/baobab.c:967
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "El uso del disco no se puede analizar sin puntos de montaje."
 
@@ -335,86 +332,86 @@ msgstr "Disponible"
 msgid "Cannot scan location \"%s\""
 msgstr "No se puede analizar la ubicación «%s»"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:176
+#: ../baobab/src/baobab-remote-connect-dialog.c:175
 msgid "Custom Location"
 msgstr "Lugar personalizado"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:178
+#: ../baobab/src/baobab-remote-connect-dialog.c:177
 msgid "SSH"
 msgstr "SSH"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:181
+#: ../baobab/src/baobab-remote-connect-dialog.c:180
 msgid "Public FTP"
 msgstr "FTP público"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:183
+#: ../baobab/src/baobab-remote-connect-dialog.c:182
 msgid "FTP (with login)"
 msgstr "FTP (con entrada)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:186
+#: ../baobab/src/baobab-remote-connect-dialog.c:185
 msgid "Windows share"
 msgstr "Compartición Windows"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:188
+#: ../baobab/src/baobab-remote-connect-dialog.c:187
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:190
+#: ../baobab/src/baobab-remote-connect-dialog.c:189
 msgid "Secure WebDAV (HTTPS)"
 msgstr "WebDAV seguro (HTTPS)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:250
+#: ../baobab/src/baobab-remote-connect-dialog.c:249
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
 "No se puede conectar con el servidor. Debe introducir un nombre para el "
 "servidor."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:253
+#: ../baobab/src/baobab-remote-connect-dialog.c:252
 msgid "Please enter a name and try again."
 msgstr "Introduzca un nombre e inténtelo de nuevo."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:444
+#: ../baobab/src/baobab-remote-connect-dialog.c:443
 msgid "_Location (URI):"
 msgstr "_Lugar (URI):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:466
+#: ../baobab/src/baobab-remote-connect-dialog.c:465
 msgid "_Server:"
 msgstr "_Servidor:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:485
+#: ../baobab/src/baobab-remote-connect-dialog.c:484
 msgid "Optional information:"
 msgstr "Información opcional:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:497
+#: ../baobab/src/baobab-remote-connect-dialog.c:496
 msgid "_Share:"
 msgstr "_Compartición:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:518
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
+#: ../baobab/src/baobab-remote-connect-dialog.c:517
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:8
 msgid "_Port:"
 msgstr "_Puerto:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:538
+#: ../baobab/src/baobab-remote-connect-dialog.c:537
 msgid "_Folder:"
 msgstr "_Carpeta:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:558
+#: ../baobab/src/baobab-remote-connect-dialog.c:557
 msgid "_User Name:"
 msgstr "_Usuario:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:579
+#: ../baobab/src/baobab-remote-connect-dialog.c:578
 msgid "_Domain Name:"
 msgstr "Nombre del _dominio:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:646
+#: ../baobab/src/baobab-remote-connect-dialog.c:645
 msgid "Connect to Server"
 msgstr "Conectar con el servidor"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:663
+#: ../baobab/src/baobab-remote-connect-dialog.c:662
 msgid "Service _type:"
 msgstr "_Tipo de servicio:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:782
+#: ../baobab/src/baobab-remote-connect-dialog.c:781
 msgid "_Scan"
 msgstr "In_speccionar"
 
@@ -443,63 +440,67 @@ msgstr "Seleccione la carpeta"
 msgid "_Show hidden folders"
 msgstr "_Mostrar carpetas ocultas"
 
-#: ../baobab/src/baobab-utils.c:304
+#: ../baobab/src/baobab-utils.c:292
+msgid "Cannot check an excluded folder!"
+msgstr "No se puede comprobar la carpeta excluida."
+
+#: ../baobab/src/baobab-utils.c:316
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "«%s» no es una carpeta válida"
 
-#: ../baobab/src/baobab-utils.c:307
+#: ../baobab/src/baobab-utils.c:319
 msgid "Could not analyze disk usage."
 msgstr "No se pudo analizar el uso del disco."
 
-#: ../baobab/src/baobab-utils.c:348
+#: ../baobab/src/baobab-utils.c:360
 msgid "_Open Folder"
 msgstr "_Abrir carpeta"
 
-#: ../baobab/src/baobab-utils.c:354 ../gsearchtool/gsearchtool.c:183
+#: ../baobab/src/baobab-utils.c:366 ../gsearchtool/gsearchtool.c:183
 msgid "Mo_ve to Trash"
 msgstr "Mo_ver a la papelera"
 
-#: ../baobab/src/baobab-utils.c:380
+#: ../baobab/src/baobab-utils.c:392
 msgid "Total filesystem capacity:"
 msgstr "Capacidad total del sistema de archivos:"
 
-#: ../baobab/src/baobab-utils.c:381
+#: ../baobab/src/baobab-utils.c:393
 msgid "used:"
 msgstr "Usado:"
 
-#: ../baobab/src/baobab-utils.c:382
+#: ../baobab/src/baobab-utils.c:394
 msgid "available:"
 msgstr "Disponible:"
 
-#: ../baobab/src/baobab-utils.c:426
+#: ../baobab/src/baobab-utils.c:438
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "No se ha podido abrir la carpeta «%s»"
 
-#: ../baobab/src/baobab-utils.c:429
+#: ../baobab/src/baobab-utils.c:441
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "No hay instalado ningún visor capaz de mostrar la carpeta."
 
-#: ../baobab/src/baobab-utils.c:498
+#: ../baobab/src/baobab-utils.c:510
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "No se ha podido mover «%s» a la papelera"
 
-#: ../baobab/src/baobab-utils.c:506
+#: ../baobab/src/baobab-utils.c:518
 msgid "Could not move file to the Trash"
 msgstr "No se pudo mover el archivo a la papelera"
 
-#: ../baobab/src/baobab-utils.c:508
+#: ../baobab/src/baobab-utils.c:520
 #, c-format
 msgid "Details: %s"
 msgstr "Detalles: %s"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:539
 msgid "Rescan your home folder?"
 msgstr "¿Quiere volver a inspeccionar su carpeta personal?"
 
-#: ../baobab/src/baobab-utils.c:528
+#: ../baobab/src/baobab-utils.c:540
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
@@ -507,11 +508,11 @@ msgstr ""
 "El contenido de su carpeta personal ha cambiado. Seleccione volver a "
 "inspeccionar para actualizar los detalles de uso de disco."
 
-#: ../baobab/src/baobab-utils.c:529
+#: ../baobab/src/baobab-utils.c:541
 msgid "_Rescan"
 msgstr "_Volver a inspeccionar"
 
-#: ../baobab/src/baobab-utils.c:569
+#: ../baobab/src/baobab-utils.c:581
 msgid "There was an error displaying help."
 msgstr "Hubo un error al mostrar la ayuda."
 
@@ -1227,46 +1228,48 @@ msgstr "Indica si la barra de estado debe ser visible"
 msgid "Dictionaries"
 msgstr "Diccionarios"
 
-#. Transport methods
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:3
-msgid "Dictionary Server"
-msgstr "Servidor de diccionario"
-
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:4
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:2
 msgid "H_ostname:"
 msgstr "_Servidor:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:3
 msgid "Print"
 msgstr "Imprimir"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:6
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:4
 msgid "Source"
 msgstr "Fuente"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:7
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
 msgid "Source Name"
 msgstr "Nombre de la fuente"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:8
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:6
 msgid "Strategies"
 msgstr "Estrategias"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:9
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:7
 msgid "_Description:"
 msgstr "_Descripción:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:11
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:9
 msgid "_Print font:"
 msgstr "Tipografía de _impresión:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:12
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
 msgid "_Select a dictionary source for looking up words:"
 msgstr "_Seleccione una fuente de diccionarios para buscar palabras:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:11
 msgid "_Transport:"
 msgstr "_Transporte:"
+
+#. Transport methods
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
+#| msgid "Dictionary Server"
+msgctxt "yes"
+msgid "Dictionary Server"
+msgstr "Servidor de diccionario"
 
 #: ../gnome-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
