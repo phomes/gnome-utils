@@ -9,13 +9,13 @@
 # Tõivo Leedjärv <toivo linux ee>, 2002.
 # Ivar Smolin <okul linux ee>, 2005-2009.
 # Priit Laes <amd store20 com>, 2005.
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils MASTER\n"
+"Project-Id-Version: gnome-utils 2.32\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&component=general\n"
-"POT-Creation-Date: 2010-05-03 16:05+0000\n"
+"POT-Creation-Date: 2010-09-27 23:11+0000\n"
 "PO-Revision-Date: 2010-08-26 21:30+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
@@ -146,6 +146,15 @@ msgstr "Kas peaakna tööriistariba peab nähtaval olema või mitte."
 
 msgid "Scanning..."
 msgstr "Läbivaatus..."
+
+msgid "Total filesystem capacity:"
+msgstr "Failisüsteemi kogumahtuvus:"
+
+msgid "used:"
+msgstr "kasutusel:"
+
+msgid "available:"
+msgstr "vaba:"
 
 #. set statusbar, percentage and allocated/normal size
 msgid "Calculating percentage bars..."
@@ -365,15 +374,6 @@ msgstr "_Ava kataloog"
 
 msgid "Mo_ve to Trash"
 msgstr "Tõsta _prügikasti"
-
-msgid "Total filesystem capacity:"
-msgstr "Failisüsteemi kogumahtuvus:"
-
-msgid "used:"
-msgstr "kasutusel:"
-
-msgid "available:"
-msgstr "vaba:"
 
 #, c-format
 msgid "Could not open folder \"%s\""
