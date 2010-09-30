@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-28 12:16+0200\n"
-"PO-Revision-Date: 2009-08-28 12:15+0200\n"
+"POT-Creation-Date: 2010-09-30 23:11+0200\n"
+"PO-Revision-Date: 2010-09-30 23:11+0200\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -377,7 +377,7 @@ msgid "_Share:"
 msgstr "_Compartit:"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:517
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:8
 msgid "_Port:"
 msgstr "_Port:"
 
@@ -1220,46 +1220,47 @@ msgstr "Si la barra d'estat ha de ser visible"
 msgid "Dictionaries"
 msgstr "Diccionaris"
 
-#. Transport methods
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:3
-msgid "Dictionary Server"
-msgstr "Servidor de diccionari"
-
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:4
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:2
 msgid "H_ostname:"
 msgstr "_Ordinador:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:3
 msgid "Print"
 msgstr "Imprimeix"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:6
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:4
 msgid "Source"
 msgstr "Font"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:7
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
 msgid "Source Name"
 msgstr "Nom de la font"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:8
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:6
 msgid "Strategies"
 msgstr "Estratègies"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:9
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:7
 msgid "_Description:"
 msgstr "_Descripció:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:11
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:9
 msgid "_Print font:"
 msgstr "Ti_pus de lletra per imprimir:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:12
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
 msgid "_Select a dictionary source for looking up words:"
 msgstr "_Seleccioneu una font de diccionari on cercar paraules:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:11
 msgid "_Transport:"
 msgstr "_Transport:"
+
+#. Transport methods
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
+msgctxt "yes"
+msgid "Dictionary Server"
+msgstr "Servidor de diccionari"
 
 #: ../gnome-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
