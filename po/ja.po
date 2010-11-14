@@ -8,17 +8,19 @@
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
 # KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
-# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
+# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
+# Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&component=general\n"
-"POT-Creation-Date: 2010-09-23 12:21+0000\n"
-"PO-Revision-Date: 2010-08-12 15:03+0900\n"
-"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"POT-Creation-Date: 2010-10-29 00:34+0000\n"
+"PO-Revision-Date: 2010-11-14 13:00+0900\n"
+"Last-Translator: Yasumichi Akahoshi <yasumichi@vinelinux.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -173,11 +175,11 @@ msgstr "ツールバーの表示可否"
 
 #: ../baobab/data/baobab.schemas.in.h:7
 msgid "Whether any change to the home directory should be monitored."
-msgstr "ホーム・フォルダの変更を監視するかどうかです。"
+msgstr "ホーム・フォルダの変更を監視するかどうかを設定します。"
 
 #: ../baobab/data/baobab.schemas.in.h:8
 msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr "メイン・ウィンドウの下にステータスバーを表示するかどうかです。"
+msgstr "メイン・ウィンドウの下にステータスバーを表示するかどうかを設定します。"
 
 #: ../baobab/data/baobab.schemas.in.h:9
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
@@ -186,7 +188,7 @@ msgstr ""
 
 #: ../baobab/data/baobab.schemas.in.h:10
 msgid "Whether the toolbar should be visible in main window."
-msgstr "メイン・ウィンドウにツールバーを表示するかどうかです。"
+msgstr "メイン・ウィンドウにツールバーを表示するかどうか設定します。"
 
 #: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
 msgid "Scanning..."
@@ -1899,8 +1901,8 @@ msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr ""
-"画像の境界の外側に適用する効果です。選択可能な値: \"shadow\"、\"none\"、"
-"\"border\""
+"画像の境界の外側に適用する効果です。選択可能な値: \"shadow\"、\"none"
+"\"、\"border\""
 
 #: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
 msgid ""
@@ -2063,13 +2065,13 @@ msgstr "検索オプション \"次の文字列を含む\" の選択可否"
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:15
 msgid "Select the search option \"Date modified less than\""
-msgstr "検索オプション \"次の日数より前に変更した\" の選択可否"
+msgstr "検索オプション \"次の日数以内に変更した\" の選択可否"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:18
 msgid "Select the search option \"Date modified more than\""
-msgstr "検索オプション \"次の日数より後に変更した\" の選択可否"
+msgstr "検索オプション \"次の日数より以前に変更した\" の選択可否"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -2129,13 +2131,13 @@ msgstr "検索オプション \"隠しファイル/フォルダを表示する\"
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:48
 msgid "Select the search option \"Size at least\""
-msgstr "検索オプション \"次のサイズよりも小さい\" の選択可否"
+msgstr "検索オプション \"最小サイズ\" の選択可否"
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:51
 msgid "Select the search option \"Size at most\""
-msgstr "検索オプション \"次のサイズよりも大きい\" の選択可否"
+msgstr "検索オプション \"最大サイズ\" の選択可否"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:52
 msgid "Show Additional Options"
@@ -2208,16 +2210,16 @@ msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"検索オプション \"次の日数より前に変更した\" を有効にして、検索ツールを起動す"
-"るかどうかを選択します。"
+"検索オプション \"次の日数以内に変更した\" を有効にして、検索ツールを起動する"
+"かどうかを選択します。"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:61
 msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"検索オプション \"次の日数より後に変更した\" を有効にして、検索ツールを起動す"
-"るかどうかを選択します。"
+"検索オプション \"次の日数より以前に変更した\" を有効にして、検索ツールを起動"
+"するかどうかを選択します。"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:62
 msgid ""
@@ -2306,16 +2308,16 @@ msgid ""
 "This key determines if the \"Size at least\" search option is selected when "
 "the search tool is started."
 msgstr ""
-"検索オプション \"次のサイズよりも小さい\" を有効にして、検索ツールを起動する"
-"かどうかを選択します。"
+"検索オプション \"最小サイズ\" を有効にして、検索ツールを起動するかどうかを選"
+"択します。"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:75
 msgid ""
 "This key determines if the \"Size at most\" search option is selected when "
 "the search tool is started."
 msgstr ""
-"検索オプション \"次のサイズよりも大きい\" を有効にして、検索ツールを起動する"
-"かどうかを選択します。"
+"検索オプション \"最大サイズ\" を有効にして、検索ツールを起動するかどうかを選"
+"択します。"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
 msgid ""
@@ -2614,7 +2616,7 @@ msgstr "次の文字列を含む(_T)"
 
 #: ../gsearchtool/gsearchtool.c:82
 msgid "_Date modified less than"
-msgstr "次の日数より前に変更した(_D)"
+msgstr "次の日数以内に変更した(_D)"
 
 #: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
 msgid "days"
@@ -2622,11 +2624,11 @@ msgstr "日"
 
 #: ../gsearchtool/gsearchtool.c:83
 msgid "Date modified more than"
-msgstr "次の日数より後に変更した"
+msgstr "次の日数より以前に変更した"
 
 #: ../gsearchtool/gsearchtool.c:85
 msgid "S_ize at least"
-msgstr "次のサイズよりも小さい(_I)"
+msgstr "最小サイズ(_I)"
 
 #: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
 msgid "kilobytes"
@@ -2634,7 +2636,7 @@ msgstr "Kバイト"
 
 #: ../gsearchtool/gsearchtool.c:86
 msgid "Si_ze at most"
-msgstr "次のサイズよりも大きい(_Z)"
+msgstr "最大サイズ(_Z)"
 
 #: ../gsearchtool/gsearchtool.c:87
 msgid "File is empty"
@@ -2662,7 +2664,7 @@ msgstr "名前が次の正規表現に一致する(_X)"
 
 #: ../gsearchtool/gsearchtool.c:96
 msgid "Show hidden and backup files"
-msgstr "隠しファイル/フォルダを表示する"
+msgstr "隠しファイルとバックアップファイルを表示する"
 
 #: ../gsearchtool/gsearchtool.c:97
 msgid "Follow symbolic links"
@@ -2866,11 +2868,11 @@ msgstr "削除する検索条件 \"%s\" をクリックしてください"
 
 #: ../gsearchtool/gsearchtool.c:2146
 msgid "A_vailable options:"
-msgstr "適用する検索条件(_V):"
+msgstr "利用可能な検索条件(_V):"
 
 #: ../gsearchtool/gsearchtool.c:2175
 msgid "Available options"
-msgstr "適用する検索条件"
+msgstr "利用可能な検索条件"
 
 #: ../gsearchtool/gsearchtool.c:2176
 msgid "Select a search option from the drop-down list."
@@ -3362,3 +3364,15 @@ msgstr "バージョン: "
 #: ../logview/logview-window.c:1488
 msgid "Could not open the following files:"
 msgstr "次のファイルを開けませんでした:"
+
+#~ msgid "Active Chart"
+#~ msgstr "アクティブなチャート"
+
+#~ msgid "Monitor Home"
+#~ msgstr "ホームの監視"
+
+#~ msgid "Which type of chart should be displayed."
+#~ msgstr "表示すべきチャートの種類を設定します。"
+
+#~ msgid "Open Containing _Folder"
+#~ msgstr "親フォルダを開く(_F)"
