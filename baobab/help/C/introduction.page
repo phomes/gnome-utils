@@ -1,0 +1,33 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="introduction">
+
+  <info>
+    <link type="guide" xref="index"  group="#first"/>
+    <revision version="0.1" date="2011-08-29" status="stub"/>
+
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email>yrazes@gmail.com</email>
+      <years>2011</years>
+    </credit>
+
+    <desc>Introduction to the <app>Disk Usage Analyzer.</app></desc>
+  </info>
+
+  <title>Introduction</title>
+
+  <comment>
+    <cite date="2011-08-29" href="mailto:yrazes@gmail.com">Julita Inca</cite>
+    <p>This assumes the reader knows how to start Disk Usage Manager. By the end of this page,
+    the reader will be able to know at least the principle features Disk Usage Manager offers.</p>
+  </comment>
+
+<p><app>Disk Usage Analyzer</app> is a graphical analyzer application for the GNOME Desktop. It analyzes the usage and capacity of the whole filesystem or any specific folder (local or remote), and also auto-detects in real-time changes made to your home directory as far as any mounted/unmounted device.</p> 
+
+<p>By default, <app>Disk Usage Analyzer</app> shows the <link xref="scan-file-system">Scan file system</link> with the <gui>Total file system capacity</gui> and the <gui>Total file system usage</gui>. All of these, in a view as a Treemap.</p> 
+<p>You can analyze other folders by doing <link xref="scan-home">Scan Home Folder</link>, <link xref="scan-folder">Scan a folder</link> or <link xref="scan-remote">Scan a remote folder</link>.
+And also change the default view chart into a <link xref="view-ring">View as a ring</link>.</p>
+
+</page>

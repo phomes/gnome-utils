@@ -1,0 +1,49 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="guide" style="task"
+      id="index">
+  <info>
+    <revision version="0.1" date="2011-08-31" status="stub"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email>yrazes@gmail.com</email>
+      <years>2011</years>
+    </credit>
+
+    <desc>Disk Usage Analyzer lets you scan capacity and usage of local and remote folders, in real time.</desc>
+  </info>
+
+   <title>
+    <media type="image" mime="image/png" src="figures/disk-usage-analyzer.png" width="40" height="40">
+       Disk Usage Analyzer logo
+
+    </media>
+       Disk Usage Analyzer
+  </title>
+
+
+  <comment>
+    <cite date="2011-08-31" href="mailto:yrazes@gmail.com">Julita Inca</cite>
+    <p>This assumes the reader knows how to starts Disk Usage Analyzer. By the end of this page,
+    the reader will be able to check what are the possibilities to scan folders and the way it is presented.</p>
+  </comment>
+
+<links type="topic" style="mouseovers"
+       groups="introduction scan-file-system  scan-home  
+               scan-folder  scan-remote">
+  <e:mouseover src="figures/scan-file-system"/>
+  <e:mouseover match="scan-file-system" src="figures/scan-file-system"/>
+  <e:mouseover match="scan-home" src="figures/scan-home"/>
+  <e:mouseover match="scan-folder" src="figures/scan-folder"/>
+  <e:mouseover match="scan-remote" src="figures/scan-remote"/>
+</links>
+
+  <section id="advanced" style="2column">
+    <title>Settings</title>
+  </section>
+
+  <section id="problems">
+    <title>Common problems and questions</title>
+  </section>
+</page>
