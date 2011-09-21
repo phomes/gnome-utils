@@ -2,7 +2,7 @@
       type="topic" style="task"
       id="scan-file-system">
   <info>
-    <link type="guide" xref="index"/>
+    <link type="guide" xref="index#scan"/>
     <revision version="0.1" date="2011-08-31" status="stub"/>
 
     <credit type="author copyright">
@@ -11,7 +11,7 @@
       <years>2011</years>
     </credit>
 
-    <desc>It scan the full sile sytem.</desc>
+    <desc>Scan folders like <gui>'/etc'</gui> which contains system configuration, <gui>'/var'</gui> which are queue for printing, <gui>'/lib'</gui> which contains library folders and all the folders your hard disk has.</desc>
   </info>
 
   <title>Scan Filesystem</title>
@@ -22,11 +22,16 @@
     the reader will be able to scan a full file system.</p>
   </comment>
 
-<p>Maybe you got a warning message saying “Low Disk Space” and you want to know which are the folders that are taking up the most space in your hard disk; you can decide what applications could you uninstall, or delete or move folders. Or maybe you are not allowed to download a heavy program and you don't know which folder is causing this problem.</p>
-<p>Either of the situation is, you can scan the full filesystem to find out which are the capacity and usage of every single folder by doing:</p>
+<p>Maybe you got a warning message saying “Low Disk Space” while you are trying to download an application or while you trying to create, or copy a folder, and you don't know which are the folders or programs that are taking up most space in your hard disk, you can use Scan File system. It provides you a visual representation of the capacity and usage of every single folder your hard disk has.</p>
+
+<p>To scan filesystem, do one of these alternatives:</p>
 <list>
-<item><p>Select from the menu, <guiseq><gui>Analyzer</gui><gui>Scan Filesystem</gui></guiseq> </p></item>
+<item><p>Click Scan Filesystem. (Second button that has the form of the disk icon, next to the Scan Home).</p></item>
+<item><p>Select from the menu,<guiseq><gui>Analyzer</gui><gui>Scan Filesystem</gui></guiseq>.</p></item>
+<item><p>Press <key>CTRL</key> + <key>F</key>.</p></item>
 </list>
-<p>When the scanning process ends up, you will get the full tree of your filesystem.  <media type="image" src="figures/scan-file-system.png" width="532" height="335"/></p>
+<p>As soon as you get the results, you can decide what applications could be uninstalled, or what folders can be deleted or moved.</p>
+<note style="tip"><p>Click <gui>Stop Scanning</gui> to cancel the process.</p></note>
+<p><media type="image" src="figures/scan-file-system.png" width="532" height="335"/></p>
 
 </page>

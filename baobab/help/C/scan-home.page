@@ -2,7 +2,7 @@
       type="topic" style="task"
       id="scan-home">
   <info>
-    <link type="guide" xref="index"/>
+    <link type="guide" xref="index#scan" group="#first"/>
     <revision version="0.1" date="2011-08-31" status="stub"/>
 
     <credit type="author copyright">
@@ -11,22 +11,34 @@
       <years>2011</years>
     </credit>
 
-    <desc></desc>
+    <desc>Scan your Home folder which contains <gui>Desktop</gui>, <gui>Documents</gui>, <gui>Downloads</gui>, <gui>Videos</gui>, <gui>Pictures</gui> and <gui>Music</gui> the users file.</desc>
   </info>
 
   <title>Scan Home Folder</title>
 
   <comment>
     <cite date="2011-08-31" href="mailto:yrazes@gmail.com">Julita Inca</cite>
-    <p>This assumes the reader knows how to.... By the end of this page,
-    the reader will be able to....</p>
+    <p>This assumes the reader knows how to know about the tree filesystem in Linux. By the end of this page,
+    the reader will be able to use the scan home in order to organize better his or her folders.</p>
   </comment>
 
- <p>Maybe you got a warning message saying “Low Disk Space” and you want to know which are the folders that are taking up the most space in your hard disk; you can decide what applications could you uninstall, or delete or move folders. Or maybe you are not allowed to download a heavy program and you don't know which folder is causing this problem.</p>
-<p>Either of the situation is, you can scan the full filesystem to find out which are the capacity and usage of every single folder by doing:</p>
-<list>
-<item><p>Select from the menu, <guiseq><gui>Analyzer</gui><gui>Scan Home</gui></guiseq> </p></item>
-</list>
-<p>When the scanning process ends up, you will get the full tree of your home folder.  <media type="image" src="figures/scan-file-system.png" width="532" height="335"/></p>
+  <p>One of the partitioned part in our disk that has a lot of movements, is the home folder. 
+     Most of the Linux beginners do not realize that the documents are saving by default inside 
+     <gui>Home</gui>. This is because basic configuration set our user and others in Home folder,
+     and User folder contains <gui>Desktop</gui>, <gui>Documents</gui>, <gui>Downloads</gui>, 
+     <gui>Videos</gui>, <gui>Pictures</gui> and <gui>Music</gui>. 
+     So, probably this is the first folder we know is getting full in our disk. 
+     To scan Home folder:</p>
+ 
+ <list>
+  <item><p>Select from the menu, <guiseq><gui>Analyzer</gui><gui>Scan Home</gui></guiseq> </p></item>
+  <item><p>Click <gui>Scan Home</gui>.</p></item>
+  <item><p>Press <key>CTRL</key> + <key>S</key>.</p></item>
+ </list>
 
+  <p>Click <gui>Stop Scanning</gui> (a circle red icon) to cancel this process; or <gui>Refresh</gui> if you have a new folder in home while you are scanning (it can be a completed <gui>Download</gui>).</p>
+
+<p>As soon as you get the results, you can decide which applications could be uninstalled, or what folders can be <link href="ghelp:gnome-help/#files-delete">deleted</link> or <link href="ghelp:gnome-help/#files-copy">copy it</link> in other place.</p>
+
+<note style="important"><p>If you organized and deleted and still don't have any space in your <gui>Home folder</gui>, you can do a <link href="ghelp:gnome-help/#backup-how">backup</link> of your information. If you need another disk, you have to ask a specialist to do that.</p></note>
 </page>

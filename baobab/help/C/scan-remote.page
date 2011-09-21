@@ -2,7 +2,7 @@
       type="topic" style="task"
       id="scan-remote">
   <info>
-    <link type="guide" xref="index"/>
+    <link type="guide" xref="index#scan"/>
     <revision version="0.1" date="2011-08-31" status="stub"/>
 
     <credit type="author copyright">
@@ -11,7 +11,7 @@
       <years>2011</years>
     </credit>
 
-    <desc></desc>
+    <desc>Scan folders from wherever you are.</desc>
   </info>
 
   <title>Scan Remote Folder</title>
@@ -22,12 +22,27 @@
     the reader will be able to....</p>
   </comment>
 
-  <p>Short introductory text...</p>
+  <p>If you need to scan a remote folder, click <gui>Scan Remote Folder</gui>
+  or select from the menu <guiseq><gui>Analyzer</gui><gui>Scan Remote Folder</gui></guiseq>.
+  <app>Disk Usage Analyzer</app> can connect to a server specifying the protocol explicitly:</p> 
 
-  <steps>
-    <item><p>First step...</p></item>
-    <item><p>Second step...</p></item>
-    <item><p>Third step...</p></item>
-  </steps>
+ <list>
 
+  <item><p>SSH: <link xref="ssh"><gui>Secure Shell</gui></link> is a protocol for secure remote login and other
+   secure network services over an insecure network.</p></item>
+
+  <item><p>FTP (with login): <link xref="ftp-login"><gui>File Transfer Protocol</gui></link> is a protocol for 
+   sharing files (computer programs and/or data). 'With login' means that it can
+   shield a user from variations in file storage systems among hosts, and transfer
+   data reliably and efficiently.</p></item>
+
+  <item><p><link xref="ftp"><gui>Public FTP</gui></link> is a protocol for sharing files and the 'Public'
+   feature means that it is not necessary to login with a user name and password,
+   instead of that the server creates an anonymus user to do the connection.</p></item>
+
+  <item><p><link xref="windows-share"><gui>Windows share</gui></link>  </p></item>
+  <item><p><link xref="web-dav"><gui>WebDAV (HTTP)</gui></link></p></item>
+  <item><p><link xref="secure-web"><gui>Secure WebDAV (HTTPS)</gui></link></p></item>
+  <item><p><link xref="custom-location"><gui>Custom Location</gui></link></p></item>
+</list>
 </page>

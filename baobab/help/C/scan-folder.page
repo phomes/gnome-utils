@@ -1,9 +1,11 @@
 <page xmlns="http://projectmallard.org/1.0/"
       type="topic" style="task"
       id="scan-folder">
+
   <info>
-    <link type="guide" xref="index"/>
+    <link type="guide" xref="index#scan"/>
     <revision version="0.1" date="2011-08-31" status="stub"/>
+
 
     <credit type="author copyright">
       <name>Julita Inca</name>
@@ -11,23 +13,32 @@
       <years>2011</years>
     </credit>
 
-    <desc></desc>
+    <desc>Customize scanning in home folder, on external devices, on folder servers, and across your computer's file system.</desc>
   </info>
 
   <title>Scan Folder</title>
 
   <comment>
     <cite date="2011-08-31" href="mailto:yrazes@gmail.com">Julita Inca</cite>
-    <p>This assumes the reader knows how to.... By the end of this page,
-    the reader will be able to....</p>
+    <p>This assumes the reader knows how to use the nautilus to browse folders. By the end of this page,
+    the reader will be able to scan any folder inside your home, on external devices or across the computer.</p>
   </comment>
 
-  <p>Short introductory text...</p>
+  <p>If you have many folders inside one, and maybe you want to reorganize all the structure 
+ of this folder because it is too big or quite older, or maybe you are doing some maintainer job to make 
+ your system run smoothly; you probably need to know what are the heaviest folders that the folder has 
+ (folder in your home folder, on external devices, on folder servers, and across your computer's file system).</p>
 
-  <steps>
-    <item><p>First step...</p></item>
-    <item><p>Second step...</p></item>
-    <item><p>Third step...</p></item>
-  </steps>
+<p>You can scan a folder by doing one of these alternatives:</p>
+
+  <list>
+    <item><p>Click <gui>Scan a Folder</gui>.</p></item>
+    <item><p>Select from the menu, <guiseq><gui>Analyzer</gui><gui>Scan Folder</gui></guiseq>.</p></item>
+    <item><p>Press <key>CTRL</key> + <key>O</key>.</p></item>
+  </list>
+
+<p>Then, select the folder you want to scan by clicking on it once, and click <gui>Open</gui> to start the scanning process. </p>
+
+<note style="tip"><p>If you add or remove a folder inside the folder you are scanning, you can click <gui>Refresh</gui> to update the process anytime or you can cancel it by clicking <gui>Stop Scanning</gui> (a red circle icon).</p></note>
 
 </page>
