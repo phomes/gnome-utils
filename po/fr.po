@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&component=general\n"
-"POT-Creation-Date: 2009-02-28 23:10+0000\n"
+"POT-Creation-Date: 2010-11-07 12:02+0000\n"
 "PO-Revision-Date: 2009-03-01 22:26+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -209,7 +209,7 @@ msgstr "Analyse en cours..."
 msgid "Calculating percentage bars..."
 msgstr "Calcul des barres de pourcentage..."
 
-#: ../baobab/src/baobab.c:193 ../baobab/src/baobab.c:998
+#: ../baobab/src/baobab.c:193 ../baobab/src/baobab.c:994
 #: ../baobab/src/callbacks.c:306
 msgid "Ready"
 msgstr "Prêt"
@@ -262,15 +262,11 @@ msgstr "Affichage par diagramme en anneaux"
 msgid "View as Treemap Chart"
 msgstr "Affichage par carte arborescente"
 
-#: ../baobab/src/baobab.c:917
-msgid "Cannot check an excluded folder!"
-msgstr "Impossible de vérifier un dossier exclu !"
-
-#: ../baobab/src/baobab.c:968
+#: ../baobab/src/baobab.c:964
 msgid "Could not detect any mount point."
 msgstr "Impossible de détecter un point de montage."
 
-#: ../baobab/src/baobab.c:971
+#: ../baobab/src/baobab.c:967
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr ""
 "Il n'est pas possible d'analyser l'utilisation des disques sans point de "
@@ -313,27 +309,27 @@ msgstr "Enregistrer la capture d'écran"
 msgid "_Image type:"
 msgstr "Type d'_image :"
 
-#: ../baobab/src/baobab-prefs.c:171
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "Analyser"
 
-#: ../baobab/src/baobab-prefs.c:178
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "Périphérique"
 
-#: ../baobab/src/baobab-prefs.c:186
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr "Point de montage"
 
-#: ../baobab/src/baobab-prefs.c:194
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr "Type de système de fichiers"
 
-#: ../baobab/src/baobab-prefs.c:202
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr "Taille totale"
 
-#: ../baobab/src/baobab-prefs.c:211
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr "Disponible"
 
@@ -342,85 +338,85 @@ msgstr "Disponible"
 msgid "Cannot scan location \"%s\""
 msgstr "Impossible d'analyser l'emplacement « %s »"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:176
+#: ../baobab/src/baobab-remote-connect-dialog.c:175
 msgid "Custom Location"
 msgstr "Emplacement personnalisé"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:178
+#: ../baobab/src/baobab-remote-connect-dialog.c:177
 msgid "SSH"
 msgstr "SSH"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:181
+#: ../baobab/src/baobab-remote-connect-dialog.c:180
 msgid "Public FTP"
 msgstr "FTP public"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:183
+#: ../baobab/src/baobab-remote-connect-dialog.c:182
 msgid "FTP (with login)"
 msgstr "FTP (avec identification)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:186
+#: ../baobab/src/baobab-remote-connect-dialog.c:185
 msgid "Windows share"
 msgstr "Partage Windows"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:188
+#: ../baobab/src/baobab-remote-connect-dialog.c:187
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:190
+#: ../baobab/src/baobab-remote-connect-dialog.c:189
 msgid "Secure WebDAV (HTTPS)"
 msgstr "WebDAV sécurisé (HTTPS)"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:250
+#: ../baobab/src/baobab-remote-connect-dialog.c:249
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
 "Impossible de se connecter au serveur. Vous devez saisir un nom de serveur."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:253
+#: ../baobab/src/baobab-remote-connect-dialog.c:252
 msgid "Please enter a name and try again."
 msgstr "Saisissez un nom et essayez à nouveau."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:444
+#: ../baobab/src/baobab-remote-connect-dialog.c:443
 msgid "_Location (URI):"
 msgstr "_Emplacement (URI) :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:466
+#: ../baobab/src/baobab-remote-connect-dialog.c:465
 msgid "_Server:"
 msgstr "_Serveur :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:485
+#: ../baobab/src/baobab-remote-connect-dialog.c:484
 msgid "Optional information:"
 msgstr "Informations facultatives :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:497
+#: ../baobab/src/baobab-remote-connect-dialog.c:496
 msgid "_Share:"
 msgstr "Parta_ge :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:518
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
+#: ../baobab/src/baobab-remote-connect-dialog.c:517
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:8
 msgid "_Port:"
 msgstr "_Port :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:538
+#: ../baobab/src/baobab-remote-connect-dialog.c:537
 msgid "_Folder:"
 msgstr "_Dossier :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:558
+#: ../baobab/src/baobab-remote-connect-dialog.c:557
 msgid "_User Name:"
 msgstr "Nom d'_utilisateur :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:579
+#: ../baobab/src/baobab-remote-connect-dialog.c:578
 msgid "_Domain Name:"
 msgstr "Nom de _domaine :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:646
+#: ../baobab/src/baobab-remote-connect-dialog.c:645
 msgid "Connect to Server"
 msgstr "Connexion au serveur"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:663
+#: ../baobab/src/baobab-remote-connect-dialog.c:662
 msgid "Service _type:"
 msgstr "_Type de service :"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:782
+#: ../baobab/src/baobab-remote-connect-dialog.c:781
 msgid "_Scan"
 msgstr "Analy_ser"
 
@@ -449,63 +445,67 @@ msgstr "Sélectionner un dossier"
 msgid "_Show hidden folders"
 msgstr "_Afficher les dossiers cachés"
 
-#: ../baobab/src/baobab-utils.c:304
+#: ../baobab/src/baobab-utils.c:292
+msgid "Cannot check an excluded folder!"
+msgstr "Impossible de vérifier un dossier exclu !"
+
+#: ../baobab/src/baobab-utils.c:316
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "« %s » n'est pas un dossier valide"
 
-#: ../baobab/src/baobab-utils.c:307
+#: ../baobab/src/baobab-utils.c:319
 msgid "Could not analyze disk usage."
 msgstr "Impossible d'analyser l'utilisation du disque."
 
-#: ../baobab/src/baobab-utils.c:348
+#: ../baobab/src/baobab-utils.c:360
 msgid "_Open Folder"
 msgstr "_Ouvrir le dossier"
 
-#: ../baobab/src/baobab-utils.c:354 ../gsearchtool/gsearchtool.c:183
+#: ../baobab/src/baobab-utils.c:366 ../gsearchtool/gsearchtool.c:183
 msgid "Mo_ve to Trash"
 msgstr "_Mettre à la corbeille"
 
-#: ../baobab/src/baobab-utils.c:380
+#: ../baobab/src/baobab-utils.c:392
 msgid "Total filesystem capacity:"
 msgstr "Capacité totale du système de fichiers :"
 
-#: ../baobab/src/baobab-utils.c:381
+#: ../baobab/src/baobab-utils.c:393
 msgid "used:"
 msgstr "utilisé :"
 
-#: ../baobab/src/baobab-utils.c:382
+#: ../baobab/src/baobab-utils.c:394
 msgid "available:"
 msgstr "disponible :"
 
-#: ../baobab/src/baobab-utils.c:426
+#: ../baobab/src/baobab-utils.c:438
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Impossible d'ouvrir le dossier « %s »"
 
-#: ../baobab/src/baobab-utils.c:429
+#: ../baobab/src/baobab-utils.c:441
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "Il n'y a pas de visionneur installé capable d'afficher le dossier."
 
-#: ../baobab/src/baobab-utils.c:498
+#: ../baobab/src/baobab-utils.c:510
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "Impossible de mettre « %s » à la corbeille"
 
-#: ../baobab/src/baobab-utils.c:506
+#: ../baobab/src/baobab-utils.c:518
 msgid "Could not move file to the Trash"
 msgstr "Impossible de mettre le fichier à la corbeille"
 
-#: ../baobab/src/baobab-utils.c:508
+#: ../baobab/src/baobab-utils.c:520
 #, c-format
 msgid "Details: %s"
 msgstr "Détails : %s"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:539
 msgid "Rescan your home folder?"
 msgstr "Voulez-vous analyser à nouveau votre dossier personnel ?"
 
-#: ../baobab/src/baobab-utils.c:528
+#: ../baobab/src/baobab-utils.c:540
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
@@ -513,11 +513,11 @@ msgstr ""
 "Le contenu de votre dossier personnel a changé. Sélectionnez « Analyser à "
 "nouveau » pour mettre à jour le détail de l'utilisation des disques."
 
-#: ../baobab/src/baobab-utils.c:529
+#: ../baobab/src/baobab-utils.c:541
 msgid "_Rescan"
 msgstr "Analyse_r à nouveau"
 
-#: ../baobab/src/baobab-utils.c:569
+#: ../baobab/src/baobab-utils.c:581
 msgid "There was an error displaying help."
 msgstr "Une erreur est survenue durant l'affichage de l'aide."
 
@@ -1245,46 +1245,47 @@ msgstr "Indique si la barre d'état doit être visible"
 msgid "Dictionaries"
 msgstr "Dictionnaires"
 
-#. Transport methods
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:3
-msgid "Dictionary Server"
-msgstr "Serveur de dictionnaires"
-
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:4
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:2
 msgid "H_ostname:"
 msgstr "Nom d'_hôte :"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:3
 msgid "Print"
 msgstr "Imprimer"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:6
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:4
 msgid "Source"
 msgstr "Source"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:7
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:5
 msgid "Source Name"
 msgstr "Nom de la source"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:8
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:6
 msgid "Strategies"
 msgstr "Stratégies"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:9
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:7
 msgid "_Description:"
 msgstr "_Description :"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:11
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:9
 msgid "_Print font:"
 msgstr "_Police d'impression :"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:12
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:10
 msgid "_Select a dictionary source for looking up words:"
 msgstr "_Sélectionnez une source de dictionnaires pour rechercher des mots :"
 
-#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:11
 msgid "_Transport:"
 msgstr "_Transport :"
+
+#. Transport methods
+#: ../gnome-dictionary/data/gnome-dictionary-preferences.glade.h:13
+msgctxt "yes"
+msgid "Dictionary Server"
+msgstr "Serveur de dictionnaires"
 
 #: ../gnome-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -2139,82 +2140,82 @@ msgstr "Stratégies disponibles"
 msgid "Dictionary sources"
 msgstr "Sources de dictionnaires"
 
-#: ../gnome-screenshot/gnome-screenshot.c:130
+#: ../gnome-screenshot/gnome-screenshot.c:131
 msgid "Error loading the help page"
 msgstr "Erreur lors du chargement de la page d'aide"
 
-#: ../gnome-screenshot/gnome-screenshot.c:239
+#: ../gnome-screenshot/gnome-screenshot.c:242
 msgid "None"
 msgstr "Aucun"
 
-#: ../gnome-screenshot/gnome-screenshot.c:240
+#: ../gnome-screenshot/gnome-screenshot.c:243
 msgid "Drop shadow"
 msgstr "Ombre portée"
 
-#: ../gnome-screenshot/gnome-screenshot.c:241
+#: ../gnome-screenshot/gnome-screenshot.c:244
 msgid "Border"
 msgstr "Bordure"
 
 #. * Include pointer *
-#: ../gnome-screenshot/gnome-screenshot.c:344
+#: ../gnome-screenshot/gnome-screenshot.c:347
 msgid "Include _pointer"
 msgstr "Inclure le _pointeur"
 
 #. * Include window border *
-#: ../gnome-screenshot/gnome-screenshot.c:353
+#: ../gnome-screenshot/gnome-screenshot.c:356
 msgid "Include the window _border"
 msgstr "_Inclure la bordure de la fenêtre"
 
-#: ../gnome-screenshot/gnome-screenshot.c:368
+#: ../gnome-screenshot/gnome-screenshot.c:371
 msgid "Apply _effect:"
 msgstr "Appliquer l'_effet :"
 
-#: ../gnome-screenshot/gnome-screenshot.c:430
+#: ../gnome-screenshot/gnome-screenshot.c:433
 msgid "Grab the whole _desktop"
 msgstr "Capturer l'ensemble du _bureau"
 
-#: ../gnome-screenshot/gnome-screenshot.c:442
+#: ../gnome-screenshot/gnome-screenshot.c:445
 msgid "Grab the current _window"
 msgstr "Capturer la _fenêtre actuelle"
 
-#: ../gnome-screenshot/gnome-screenshot.c:454
+#: ../gnome-screenshot/gnome-screenshot.c:457
 msgid "Grab a selected _area"
 msgstr "Capturer une _zone sélectionnée"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:471
+#: ../gnome-screenshot/gnome-screenshot.c:474
 msgid "Grab _after a delay of"
 msgstr "Capturer _après un délai de"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:491
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:494
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "seconds"
 msgstr "secondes"
 
-#: ../gnome-screenshot/gnome-screenshot.c:507
-#: ../gnome-screenshot/gnome-screenshot.c:517
+#: ../gnome-screenshot/gnome-screenshot.c:510
+#: ../gnome-screenshot/gnome-screenshot.c:520
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Take Screenshot"
 msgstr "Capture d'écran"
 
-#: ../gnome-screenshot/gnome-screenshot.c:518
+#: ../gnome-screenshot/gnome-screenshot.c:521
 msgid "Effects"
 msgstr "Effets"
 
-#: ../gnome-screenshot/gnome-screenshot.c:524
+#: ../gnome-screenshot/gnome-screenshot.c:527
 msgid "Take _Screenshot"
 msgstr "Prendre une _capture d'écran"
 
-#: ../gnome-screenshot/gnome-screenshot.c:650
+#: ../gnome-screenshot/gnome-screenshot.c:653
 msgid "Error while saving screenshot"
 msgstr "Erreur lors de l'enregistrement de la capture d'écran"
 
-#: ../gnome-screenshot/gnome-screenshot.c:654
+#: ../gnome-screenshot/gnome-screenshot.c:657
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -2225,11 +2226,11 @@ msgstr ""
 " L'erreur est %s.\n"
 " Veuillez choisir un autre emplacement et réessayez."
 
-#: ../gnome-screenshot/gnome-screenshot.c:801
+#: ../gnome-screenshot/gnome-screenshot.c:804
 msgid "Unable to take a screenshot of the current window"
 msgstr "Impossible de prendre une capture d'écran de la fenêtre actuelle"
 
-#: ../gnome-screenshot/gnome-screenshot.c:849
+#: ../gnome-screenshot/gnome-screenshot.c:852
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "Capture-%s.png"
@@ -2237,14 +2238,14 @@ msgstr "Capture-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:856
+#: ../gnome-screenshot/gnome-screenshot.c:859
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "Capture-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:866
+#: ../gnome-screenshot/gnome-screenshot.c:869
 #: ../gnome-screenshot/screenshot-dialog.c:356
 #: ../gnome-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
@@ -2253,48 +2254,48 @@ msgstr "Capture.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:873
+#: ../gnome-screenshot/gnome-screenshot.c:876
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "Capture-%d.png"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1239
+#: ../gnome-screenshot/gnome-screenshot.c:1242
 msgid "Grab a window instead of the entire screen"
 msgstr "Capturer une fenêtre plutôt que l'écran complet"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1240
+#: ../gnome-screenshot/gnome-screenshot.c:1243
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Capturer une zone de l'écran plutôt que l'écran complet"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1241
+#: ../gnome-screenshot/gnome-screenshot.c:1244
 msgid "Include the window border with the screenshot"
 msgstr "Inclure la bordure de la fenêtre dans la capture d'écran"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1242
+#: ../gnome-screenshot/gnome-screenshot.c:1245
 msgid "Remove the window border from the screenshot"
 msgstr "Enlever la bordure de la fenêtre dans la capture d'écran"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1243
+#: ../gnome-screenshot/gnome-screenshot.c:1246
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Effectue une capture d'écran après le délai indiqué [en secondes]"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Effet à appliquer à la bordure (ombre, bordure ou aucun)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1244
+#: ../gnome-screenshot/gnome-screenshot.c:1247
 msgid "effect"
 msgstr "effet"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1245
+#: ../gnome-screenshot/gnome-screenshot.c:1248
 msgid "Interactively set options"
 msgstr "Options définies de manière interactive"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1256
+#: ../gnome-screenshot/gnome-screenshot.c:1259
 msgid "Take a picture of the screen"
 msgstr "Effectue une capture d'écran"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1274
+#: ../gnome-screenshot/gnome-screenshot.c:1277
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -2901,24 +2902,24 @@ msgstr ""
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:640
+#: ../gsearchtool/gsearchtool-support.c:642
 msgid "today at %-I:%M %p"
 msgstr "aujourd'hui à %-H:%M"
 
-#: ../gsearchtool/gsearchtool-support.c:642
+#: ../gsearchtool/gsearchtool-support.c:644
 msgid "yesterday at %-I:%M %p"
 msgstr "hier à %-H:%M"
 
-#: ../gsearchtool/gsearchtool-support.c:644
 #: ../gsearchtool/gsearchtool-support.c:646
+#: ../gsearchtool/gsearchtool-support.c:648
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A %-d %B %Y à %-H:%M:%S"
 
-#: ../gsearchtool/gsearchtool-support.c:825
+#: ../gsearchtool/gsearchtool-support.c:827
 msgid "link (broken)"
 msgstr "lien (cassé)"
 
-#: ../gsearchtool/gsearchtool-support.c:829
+#: ../gsearchtool/gsearchtool-support.c:831
 #, c-format
 msgid "link to %s"
 msgstr "lien vers %s"
@@ -2929,12 +2930,12 @@ msgstr "lien vers %s"
 #. * make some or all of them match.
 #.
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1525
+#: ../gsearchtool/gsearchtool-support.c:1527
 msgid " (copy)"
 msgstr " (copie)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1527
+#: ../gsearchtool/gsearchtool-support.c:1529
 msgid " (another copy)"
 msgstr " (autre copie)"
 
@@ -2942,36 +2943,36 @@ msgstr " (autre copie)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1530
 #: ../gsearchtool/gsearchtool-support.c:1532
 #: ../gsearchtool/gsearchtool-support.c:1534
-#: ../gsearchtool/gsearchtool-support.c:1544
+#: ../gsearchtool/gsearchtool-support.c:1536
+#: ../gsearchtool/gsearchtool-support.c:1546
 msgid "th copy)"
 msgstr "e copie)"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1539
 msgid "st copy)"
 msgstr "re copy)"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1539
+#: ../gsearchtool/gsearchtool-support.c:1541
 msgid "nd copy)"
 msgstr "e copy)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1541
+#: ../gsearchtool/gsearchtool-support.c:1543
 msgid "rd copy)"
 msgstr "e copie)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1558
+#: ../gsearchtool/gsearchtool-support.c:1560
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (copie)%s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1560
+#: ../gsearchtool/gsearchtool-support.c:1562
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (autre copie)%s"
@@ -2980,43 +2981,43 @@ msgstr "%s (autre copie)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1563
 #: ../gsearchtool/gsearchtool-support.c:1565
 #: ../gsearchtool/gsearchtool-support.c:1567
-#: ../gsearchtool/gsearchtool-support.c:1576
+#: ../gsearchtool/gsearchtool-support.c:1569
+#: ../gsearchtool/gsearchtool-support.c:1578
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%de copie)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1570
+#: ../gsearchtool/gsearchtool-support.c:1572
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%dre copie)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1572
+#: ../gsearchtool/gsearchtool-support.c:1574
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%de copie)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1574
+#: ../gsearchtool/gsearchtool-support.c:1576
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%de copie)%s"
 
-#: ../gsearchtool/gsearchtool-support.c:1621
+#: ../gsearchtool/gsearchtool-support.c:1623
 msgid " (invalid Unicode)"
 msgstr " (Unicode non valide)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1710
+#: ../gsearchtool/gsearchtool-support.c:1712
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1718
+#: ../gsearchtool/gsearchtool-support.c:1720
 #, c-format
 msgid " (%d"
 msgstr " (%d"
@@ -3489,7 +3490,7 @@ msgstr ""
 "écrivez à l nFree Software Foundation, Inc., 51 Franklin Street, Fifth "
 "Floor, Boston, MA 02110-1301, États-Unis."
 
-#: ../logview/logview-app.c:179
+#: ../logview/logview-app.c:375
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "Impossible d'ouvrir le fichier %s"
@@ -3521,7 +3522,8 @@ msgstr "Efface la chaîne recherchée"
 #: ../logview/logview-log.c:595
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr ""
-"Erreur lors de la décompression du journal. Le fichier est peut-être corrompu."
+"Erreur lors de la décompression du journal. Le fichier est peut-être "
+"corrompu."
 
 #: ../logview/logview-log.c:642
 msgid "You don't have enough permissions to read the file."
@@ -3553,7 +3555,7 @@ msgstr "[JOURNAL...]"
 msgid " - Browse and monitor logs"
 msgstr " - Parcourt et surveille les journaux"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:103
 msgid "Log Viewer"
 msgstr "Visionneur de journaux système"
 
@@ -3669,14 +3671,14 @@ msgstr "Panneau _latéral"
 msgid "Show Side Pane"
 msgstr "Affiche le panneau latéral"
 
-#: ../logview/logview-window.c:1165
+#: ../logview/logview-window.c:1168
 msgid "Close"
 msgstr "Fermer"
 
-#: ../logview/logview-window.c:1205
+#: ../logview/logview-window.c:1208
 msgid "Version: "
 msgstr "Version : "
 
-#: ../logview/logview-window.c:1305
+#: ../logview/logview-window.c:1308
 msgid "Could not open the following files:"
 msgstr "Impossible d'ouvrir les fichiers suivants :"
