@@ -11,18 +11,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=gnome-utils&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-30 00:05+0000\n"
-"PO-Revision-Date: 2011-09-07 11:37+0300\n"
-"Last-Translator: Rūdofls Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"utils&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-09-26 16:31+0000\n"
+"PO-Revision-Date: 2011-10-04 14:35+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
+"Language: lv\n"
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
 msgid "Check folder sizes and available disk space"
@@ -935,7 +936,6 @@ msgid "Name"
 msgstr "Nosaukums"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:247
-#| msgid "The display name of this dictonary source"
 msgid "The display name of this dictionary source"
 msgstr "Dotā vārdnīcas avota attēlotais nosaukums"
 
@@ -956,7 +956,6 @@ msgid "Database"
 msgstr "Datubāze"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:275
-#| msgid "The default database of this dictonary source"
 msgid "The default database of this dictionary source"
 msgstr "Dotā vārdnīcas avota noklusētā datubāze"
 
@@ -967,7 +966,6 @@ msgid "Strategy"
 msgstr "Stratēģija"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:289
-#| msgid "The default strategy of this dictonary source"
 msgid "The default strategy of this dictionary source"
 msgstr "Dotā vārdnīcas avota noklusētā stratēģija"
 
@@ -1521,7 +1519,7 @@ msgstr "Uzņemt ar _aizturi"
 #. * delay of <spin button> seconds".
 #.
 #: ../gnome-screenshot/gnome-screenshot.c:502
-#: ../gnome-screenshot/gnome-screenshot.c:1381
+#: ../gnome-screenshot/gnome-screenshot.c:1379
 msgid "seconds"
 msgstr "sekundes"
 
@@ -1557,20 +1555,13 @@ msgstr ""
 msgid "Screenshot taken"
 msgstr "Ekrānuzņēmums uzņemts"
 
-#: ../gnome-screenshot/gnome-screenshot.c:905
+#: ../gnome-screenshot/gnome-screenshot.c:906
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nevar uzņemt aktīvā loga ekrānuzņēmumu"
 
-#. Translators: This is a strftime format string.
-#. * It is used to display the time in 24-hours format (eg, like
-#. * in France: 20:10).
-#: ../gnome-screenshot/gnome-screenshot.c:1008
-msgid "%Y-%m-%d %H:%M:%S"
-msgstr "%d.%m.%Y %H:%M:%S"
-
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:1015
+#: ../gnome-screenshot/gnome-screenshot.c:1013
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Ekrānuzņēmums %s.png"
@@ -1578,52 +1569,52 @@ msgstr "Ekrānuzņēmums %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:1022
+#: ../gnome-screenshot/gnome-screenshot.c:1020
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Ekrānuzņēmums %s – %d.png"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1376
+#: ../gnome-screenshot/gnome-screenshot.c:1374
 msgid "Send the grab directly to the clipboard"
 msgstr "Sūtīt notverto tieši uz starpliktuvi"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1377
+#: ../gnome-screenshot/gnome-screenshot.c:1375
 msgid "Grab a window instead of the entire screen"
 msgstr "Uzņemt logu nevis visu ekrānu"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1378
+#: ../gnome-screenshot/gnome-screenshot.c:1376
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Uzņemt daļu no loga visa ekrāna vietā"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1379
+#: ../gnome-screenshot/gnome-screenshot.c:1377
 msgid "Include the window border with the screenshot"
 msgstr "Iekļaut loga rāmi ekrānuzņēmumā"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1380
+#: ../gnome-screenshot/gnome-screenshot.c:1378
 msgid "Remove the window border from the screenshot"
 msgstr "Aizvākt loga rāmi no ekrānuzņēmuma"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1381
+#: ../gnome-screenshot/gnome-screenshot.c:1379
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Uzņemt ekrānuzņēmumu ar norādīto aizturi [sekundēs]"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1382
+#: ../gnome-screenshot/gnome-screenshot.c:1380
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Efekti, ko pievienot rāmim (ēna, rāmis, nekas)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1382
+#: ../gnome-screenshot/gnome-screenshot.c:1380
 msgid "effect"
 msgstr "efekts"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1383
+#: ../gnome-screenshot/gnome-screenshot.c:1381
 msgid "Interactively set options"
 msgstr "Interaktivitātes iestatīšanas iespējas"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1394
+#: ../gnome-screenshot/gnome-screenshot.c:1392
 msgid "Take a picture of the screen"
 msgstr "Uzņemt ekrāna attēlu"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1412
+#: ../gnome-screenshot/gnome-screenshot.c:1410
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -1764,7 +1755,7 @@ msgid "Unknown error saving screenshot to disk"
 msgstr "Nezināma kļūda, saglabājot ekrānuzņēmumu diskā"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../gnome-screenshot/screenshot-utils.c:919
+#: ../gnome-screenshot/screenshot-utils.c:940
 msgid "Untitled Window"
 msgstr "Nenosaukts logs"
 
@@ -2281,7 +2272,7 @@ msgstr "vakar %-H:%M"
 #: ../gsearchtool/gsearchtool-support.c:700
 #: ../gsearchtool/gsearchtool-support.c:702
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %-d %B %Y, %-H:%M:%S"
+msgstr "%A, %-d. %B %Y., %-H:%M:%S"
 
 #: ../gsearchtool/gsearchtool-support.c:889
 msgid "link (broken)"
@@ -3279,6 +3270,9 @@ msgstr "Fontu pārlūks"
 #: ../font-viewer/gnome-font-viewer.desktop.in.in.h:2
 msgid "Preview fonts"
 msgstr "Priekšskatīt fontus"
+
+#~ msgid "%Y-%m-%d %H:%M:%S"
+#~ msgstr "%d.%m.%Y %H:%M:%S"
 
 #~ msgid "Dictionary Look up"
 #~ msgstr "Meklēšana vārdnīcā"
