@@ -1,20 +1,18 @@
 # translation of te.po to Telugu
 # Telugu translation of gnome-utils.
-# Copyright (C) 2007 Swecha Telugu Localisation Team <localisation@swecha.org>
+# Copyright (C) 2011 Swecha Telugu Localisation Team <localization@swecha.net>.
 # This file is distributed under the same license as the gnome-utils package.
 #
 #
-# Pramod <pramodfsf@gmail.com>, 2007.
-# Krishna Babu K <kkrothap@redhat.com>, 2007, 2009, 2010.
+# A Mohan Vamsee <mohan.arza@ymail.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"utils&component=general\n"
-"POT-Creation-Date: 2010-07-16 15:21+0000\n"
+"utils&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-10-08 20:07+0000\n"
 "PO-Revision-Date: 2010-07-19 16:39+0530\n"
-"Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
-"Language-Team: Telugu <en@li.org>\n"
+	"Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,17 +32,57 @@ msgstr "ఖని ఖాళీ లభ్యత మరియు సంచయమ�
 msgid "Disk Usage Analyzer"
 msgstr "ఖని వినిమయ విశ్లేషకి"
 
-#: ../baobab/data/baobab-dialog-scan-props.ui.h:1
+#: ../baobab/data/baobab-preferences-dialog.ui.h:1
 msgid "Disk Usage Analyzer Preferences"
 msgstr "ఖని వినిమయ విశ్లేషకి అభీష్టాలు"
 
-#: ../baobab/data/baobab-dialog-scan-props.ui.h:2
+#: ../baobab/data/baobab-preferences-dialog.ui.h:2
 msgid "Select _devices to include in filesystem scan:"
 msgstr "దస్త్ర వ్యవస్థ సంశోధనలో పరికరము ఎంచుకొనుటకు  చేర్చుము(_d):"
 
-#: ../baobab/data/baobab-dialog-scan-props.ui.h:3
+#: ../baobab/data/baobab-preferences-dialog.ui.h:3
 msgid "_Monitor changes to your home folder"
 msgstr "దర్శిని మీ నివాస సంచయమునకు మారుతుంది (_M)"
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:1
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "స్కానింగ్ నుండి విభజనల కొరకు uri జాబితా చేరకుండా చేయాలి."
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:2
+msgid "Active Chart"
+msgstr "క్రియాశీల పత్రం"
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:3
+msgid "Excluded partitions URIs"
+msgstr "బహిష్కరించబడిన విభజనల uriలు"
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:4
+msgid "Monitor Home"
+msgstr "దర్శిని నివాసం"
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:5
+msgid "Statusbar is Visible"
+msgstr "సుస్థితి పట్టీ ప్రత్యక్షమైనది"
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:6
+msgid "Toolbar is Visible"
+msgstr "పనిముట్ల పట్టా ప్రత్యక్షమైనది"
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:7
+msgid "Whether any change to the home directory should be monitored."
+msgstr "నివాస వివరణమునకు ఏదైనా మార్పు భోధపడుతుందా."
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:8
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "సుస్థితి పట్టీ మూల గవాక్షము యొక్క క్రిందవైపు లో ప్రత్యక్షము అవుతుందా."
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:9
+msgid "Whether the toolbar should be visible in main window."
+msgstr "పనిముట్ల పట్టీ మూల గవాక్షములో ప్రత్యక్షము అవుతుందా."
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:10
+msgid "Which type of chart should be displayed."
+msgstr "ఏ రకపు పత్రమును చుపించవలెను"
 
 #: ../baobab/data/baobab-main-window.ui.h:1
 msgid "All_ocated Space"
@@ -120,12 +158,12 @@ msgstr "అన్నింటిని ముకుళించు(_C)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:20
-#: ../gnome-dictionary/src/gdict-window.c:1234 ../logview/logview-window.c:866
+#: ../gnome-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:844
 msgid "_Contents"
 msgstr "సారాలు(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:21
-#: ../gnome-dictionary/src/gdict-window.c:1181 ../logview/logview-window.c:837
+#: ../gnome-dictionary/src/gdict-window.c:1281 ../logview/logview-window.c:815
 msgid "_Edit"
 msgstr "సరిచేయు(_E)"
 
@@ -134,8 +172,7 @@ msgid "_Expand All"
 msgstr "అన్నింటిని పొడగింపు(_E)"
 
 #: ../baobab/data/baobab-main-window.ui.h:23
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:3
-#: ../gnome-dictionary/src/gdict-window.c:1184 ../logview/logview-window.c:840
+#: ../gnome-dictionary/src/gdict-window.c:1284 ../logview/logview-window.c:818
 msgid "_Help"
 msgstr "సహాయము(_H)"
 
@@ -144,198 +181,165 @@ msgid "_Toolbar"
 msgstr "పనిముట్ల పట్టా(_T)"
 
 #: ../baobab/data/baobab-main-window.ui.h:25
-#: ../gnome-dictionary/src/gdict-window.c:1182 ../logview/logview-window.c:838
+#: ../gnome-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:816
 msgid "_View"
 msgstr "దర్శనం(_V)"
 
-#: ../baobab/data/baobab.schemas.in.h:1
-#, fuzzy
-msgid "A list of URIs for partitions to be excluded from scanning."
-msgstr "స్కానింగ్ నుండి విభజనల కొరకు uri జాబితా చేరకుండా చేయాలి."
-
-#: ../baobab/data/baobab.schemas.in.h:2
-msgid "Enable monitoring of home directory"
-msgstr "నివాస వివరణము యొక్క భోధన ఉపయోగించుము"
-
-#: ../baobab/data/baobab.schemas.in.h:3
-#, fuzzy
-msgid "Excluded partitions URIs"
-msgstr "బహిష్కరించబడిన విభజనల uriలు"
-
-#: ../baobab/data/baobab.schemas.in.h:4
-msgid "Status Bar is Visible"
-msgstr "సుస్థితి పట్టీ ప్రత్యక్షమైనది"
-
-#: ../baobab/data/baobab.schemas.in.h:5
-msgid "Subfolders tooltips visible"
-msgstr "ఉపసంచయాల సాధనచిట్కాలు కనిపించాలి"
-
-#: ../baobab/data/baobab.schemas.in.h:6
-msgid "Toolbar is Visible"
-msgstr "పనిముట్ల పట్టా ప్రత్యక్షమైనది"
-
-#: ../baobab/data/baobab.schemas.in.h:7
-msgid "Whether any change to the home directory should be monitored."
-msgstr "నివాస వివరణమునకు ఏదైనా మార్పు భోధపడుతుందా."
-
-#: ../baobab/data/baobab.schemas.in.h:8
-msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr "సుస్థితి పట్టీ మూల గవాక్షము యొక్క క్రిందవైపు లో ప్రత్యక్షము అవుతుందా."
-
-#: ../baobab/data/baobab.schemas.in.h:9
-#, fuzzy
-msgid "Whether the subfolder tooltips of the selected folder are drawn."
-msgstr "ఎంపికచేసిన సంచయంయొక్క వుపసంయాల సాధనచిట్కాలు వుంచబడాలా."
-
-#: ../baobab/data/baobab.schemas.in.h:10
-msgid "Whether the toolbar should be visible in main window."
-msgstr "పనిముట్ల పట్టీ మూల గవాక్షములో ప్రత్యక్షము అవుతుందా."
-
-#: ../baobab/src/baobab.c:141 ../baobab/src/baobab.c:328
+#: ../baobab/src/baobab.c:136 ../baobab/src/baobab.c:388
 msgid "Scanning..."
 msgstr "సంశోధించుచున్నది..."
 
+#: ../baobab/src/baobab.c:182
+msgid "Total filesystem capacity:"
+msgstr "మొత్తం దస్త్ర వ్యవస్థ సామర్థ్యము:"
+
+#: ../baobab/src/baobab.c:183
+msgid "used:"
+msgstr "వాడబడిన:"
+
+#: ../baobab/src/baobab.c:184
+msgid "available:"
+msgstr "లభించు:"
+
 #. set statusbar, percentage and allocated/normal size
-#: ../baobab/src/baobab.c:211 ../baobab/src/baobab.c:270
-#: ../baobab/src/callbacks.c:264
+#: ../baobab/src/baobab.c:273 ../baobab/src/baobab.c:330
+#: ../baobab/src/callbacks.c:265
 msgid "Calculating percentage bars..."
 msgstr "శాతం పట్టీలను గణించుచున్నది..."
 
-#: ../baobab/src/baobab.c:222 ../baobab/src/baobab.c:1171
-#: ../baobab/src/callbacks.c:268
+#: ../baobab/src/baobab.c:284 ../baobab/src/baobab.c:1325
+#: ../baobab/src/callbacks.c:269
 msgid "Ready"
 msgstr "సిద్దము"
 
-#: ../baobab/src/baobab.c:364
+#: ../baobab/src/baobab.c:421
 msgid "Total filesystem capacity"
 msgstr "మొత్తం దస్త్ర వ్యవస్థ సామర్థ్యము"
 
-#: ../baobab/src/baobab.c:386
+#: ../baobab/src/baobab.c:443
 msgid "Total filesystem usage"
 msgstr "మొత్తం దస్త్ర వ్యవస్థ వినిమయం"
 
-#: ../baobab/src/baobab.c:427
+#: ../baobab/src/baobab.c:484
 msgid "contains hardlinks for:"
 msgstr "ప్రధాన జోడిల కొరకు కలిగివున్నది:"
 
-#: ../baobab/src/baobab.c:436
-#, fuzzy, c-format
+#: ../baobab/src/baobab.c:493
 msgid "%5d item"
 msgid_plural "%5d items"
 msgstr[0] "% 5d అంశం"
 msgstr[1] "% 5d అంశాలు"
 
-#: ../baobab/src/baobab.c:787
+#: ../baobab/src/baobab.c:620
 msgid "Could not initialize monitoring"
 msgstr "పర్యవేక్షణను సిద్దపరచలేక పోయింది"
 
-#: ../baobab/src/baobab.c:788
+#: ../baobab/src/baobab.c:621
 msgid "Changes to your home folder will not be monitored."
 msgstr "మీ నివాస సంచయమునకు మార్పులు భోధపడుతుందా."
 
-#: ../baobab/src/baobab.c:895
+#: ../baobab/src/baobab.c:945
 msgid "Move to parent folder"
 msgstr "మాత్రుక సంచయమునకు కదుల్చుము"
 
-#: ../baobab/src/baobab.c:899
+#: ../baobab/src/baobab.c:949
 msgid "Zoom in"
 msgstr "జూమ్ లోపలికి"
 
-#: ../baobab/src/baobab.c:903
+#: ../baobab/src/baobab.c:953
 msgid "Zoom out"
 msgstr "జూమ్ బయటకి"
 
-#: ../baobab/src/baobab.c:907
-#, fuzzy
+#: ../baobab/src/baobab.c:957
 msgid "Save screenshot"
 msgstr "తెర ఛాయచిత్రం దాచుము"
 
-#: ../baobab/src/baobab.c:993
+#: ../baobab/src/baobab.c:1143
 msgid "View as Rings Chart"
 msgstr "రింగుల చార్టువలె దర్శించు"
 
-#: ../baobab/src/baobab.c:995
+#: ../baobab/src/baobab.c:1145
 msgid "View as Treemap Chart"
 msgstr "ట్రీమాప్ చార్టువలె దర్శించు"
 
-#: ../baobab/src/baobab.c:1094
+#: ../baobab/src/baobab.c:1250
 msgid "Show version"
 msgstr "వర్షన్ చూపుము"
 
-#: ../baobab/src/baobab.c:1095
+#: ../baobab/src/baobab.c:1251
 msgid "[DIRECTORY]"
 msgstr "[DIRECTORY]"
 
-#: ../baobab/src/baobab.c:1125
+#: ../baobab/src/baobab.c:1281
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "చాలా యెక్కువ ఆర్గుమెంట్లు. వొక డెరెక్టరీ మాత్రమే తెలుపగలము."
 
-#: ../baobab/src/baobab.c:1143
+#: ../baobab/src/baobab.c:1298
 msgid "Could not detect any mount point."
 msgstr "ఏ మరల్పు బిందువును గుర్తించలేక పోయింది."
 
-#: ../baobab/src/baobab.c:1146
+#: ../baobab/src/baobab.c:1300
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "మరల్పు బిందువులు లేకుండా డిస్కు వినియోగము విశ్లేషించలేము."
 
-#: ../baobab/src/baobab-chart.c:206
+#: ../baobab/src/baobab-chart.c:205
 msgid "Maximum depth"
 msgstr "అత్యధిక లోతు"
 
-#: ../baobab/src/baobab-chart.c:207
+#: ../baobab/src/baobab-chart.c:206
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "చార్టునందు రూట్‌నుండి గీయగల గరిష్ట లోతు"
 
-#: ../baobab/src/baobab-chart.c:216
+#: ../baobab/src/baobab-chart.c:215
 msgid "Chart model"
 msgstr "చార్టు నమూనా"
 
-#: ../baobab/src/baobab-chart.c:217
+#: ../baobab/src/baobab-chart.c:216
 msgid "Set the model of the chart"
 msgstr "చార్టు యొక్క రీతిని అమర్చుము"
 
-#: ../baobab/src/baobab-chart.c:224
+#: ../baobab/src/baobab-chart.c:223
 msgid "Chart root node"
 msgstr "చార్టు రూట్ నోడు"
 
-#: ../baobab/src/baobab-chart.c:225
+#: ../baobab/src/baobab-chart.c:224
 msgid "Set the root node from the model"
 msgstr "నమూనా నుండి మూల కణుపు అమర్చుము"
 
-#: ../baobab/src/baobab-chart.c:1707
+#: ../baobab/src/baobab-chart.c:1690
 msgid "Cannot create pixbuf image!"
 msgstr "పిక్స్ బఫ్ ప్రతిరూపంను సృష్టించలేవు!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1717
+#: ../baobab/src/baobab-chart.c:1700
 msgid "Save Snapshot"
 msgstr "తటాలున ఛాయాచిత్రమును దాచుము "
 
-#: ../baobab/src/baobab-chart.c:1746
+#: ../baobab/src/baobab-chart.c:1727
 msgid "_Image type:"
 msgstr "ప్రతిరూప రకము(_I):"
 
-#: ../baobab/src/baobab-prefs.c:181
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "సంశోధన"
 
-#: ../baobab/src/baobab-prefs.c:188
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "పరికరం"
 
-#: ../baobab/src/baobab-prefs.c:196
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr "పోగు పాలు"
 
-#: ../baobab/src/baobab-prefs.c:204
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr "దస్త్ర వ్యవస్థ పద్దతి"
 
-#: ../baobab/src/baobab-prefs.c:212
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr "మొత్తం పరిమాణం"
 
-#: ../baobab/src/baobab-prefs.c:221
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr "లభ్యత"
 
@@ -380,66 +384,66 @@ msgstr "సేవికకు అనుసంధానము కాలేము.
 msgid "Please enter a name and try again."
 msgstr "దయచేసి నామమును ప్రవేశపెట్టి మరలా ప్రయత్నించు."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:443
+#: ../baobab/src/baobab-remote-connect-dialog.c:441
 msgid "_Location (URI):"
 msgstr "స్థానము (URI)(_L):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:465
+#: ../baobab/src/baobab-remote-connect-dialog.c:463
 msgid "_Server:"
 msgstr "సేవిక (_S):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:484
+#: ../baobab/src/baobab-remote-connect-dialog.c:482
 msgid "Optional information:"
 msgstr "ఇచ్ఛాపూర్వకమైన సమాచారం:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:496
+#: ../baobab/src/baobab-remote-connect-dialog.c:494
 msgid "_Share:"
 msgstr "భాగస్వామ్యం (_S):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:517
+#: ../baobab/src/baobab-remote-connect-dialog.c:515
 #: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:7
 msgid "_Port:"
 msgstr "పోర్టు(_P):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:537
+#: ../baobab/src/baobab-remote-connect-dialog.c:535
 msgid "_Folder:"
 msgstr "సంచయము(_F):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:557
+#: ../baobab/src/baobab-remote-connect-dialog.c:555
 msgid "_User Name:"
 msgstr "వినియోగదారుని నామం(_U):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:578
+#: ../baobab/src/baobab-remote-connect-dialog.c:576
 msgid "_Domain Name:"
 msgstr "డొమైన్ నామం(_D):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:645
+#: ../baobab/src/baobab-remote-connect-dialog.c:643
 msgid "Connect to Server"
 msgstr "%s సేవికకు కనెక్టుచేయి "
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:662
+#: ../baobab/src/baobab-remote-connect-dialog.c:659
 msgid "Service _type:"
 msgstr "సేవా పద్దతి(_t):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:781
+#: ../baobab/src/baobab-remote-connect-dialog.c:778
 msgid "_Scan"
 msgstr "సంశోధించు(_S)"
 
-#: ../baobab/src/baobab-treeview.c:86
+#: ../baobab/src/baobab-treeview.c:82
 msgid "Rescan your home folder?"
 msgstr "మీ నివాస సంచయంను మరలా సంశోధించుము?"
 
-#: ../baobab/src/baobab-treeview.c:87
+#: ../baobab/src/baobab-treeview.c:83
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
 msgstr "మీ యొక్క నివాస సంచయ సారము మార్చబడినది. ఖని వినిమయ వివరములు మరలా సంశోధన ఎంచుకొనుము."
 
-#: ../baobab/src/baobab-treeview.c:88
+#: ../baobab/src/baobab-treeview.c:84
 msgid "_Rescan"
 msgstr "మరలా సంశోధించు(_R)"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2406
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2393
 msgid "Folder"
 msgstr "సంచయము"
 
@@ -447,7 +451,7 @@ msgstr "సంచయము"
 msgid "Usage"
 msgstr "వినిమయం"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2419
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2406
 msgid "Size"
 msgstr "పరిమాణం"
 
@@ -455,77 +459,65 @@ msgstr "పరిమాణం"
 msgid "Contents"
 msgstr "సారములు"
 
-#: ../baobab/src/baobab-utils.c:110
+#: ../baobab/src/baobab-utils.c:72
 msgid "Select Folder"
 msgstr "సంచయమును ఎంచుకొను"
 
 #. add extra widget
-#: ../baobab/src/baobab-utils.c:122
+#: ../baobab/src/baobab-utils.c:84
 msgid "_Show hidden folders"
 msgstr "దాచబడిన సంచయములను చూపుము(_S)"
 
-#: ../baobab/src/baobab-utils.c:301
+#: ../baobab/src/baobab-utils.c:263
 msgid "Cannot check an excluded folder!"
 msgstr "బహిష్కరించిన సంచయంను పరిశీలించలేదు!"
 
-#: ../baobab/src/baobab-utils.c:325
+#: ../baobab/src/baobab-utils.c:287
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "\"%s\"  సంచయము వర్తించదు"
 
-#: ../baobab/src/baobab-utils.c:328
+#: ../baobab/src/baobab-utils.c:290
 msgid "Could not analyze disk usage."
 msgstr "ఖని వినిమయమును విశ్లేషించలేము."
 
-#: ../baobab/src/baobab-utils.c:369
+#: ../baobab/src/baobab-utils.c:326
 msgid "_Open Folder"
 msgstr "సంచయము తెరువుము(_O)"
 
-#: ../baobab/src/baobab-utils.c:375
-#: ../gsearchtool/gsearchtool-callbacks.c:1203
+#: ../baobab/src/baobab-utils.c:332
+#: ../gsearchtool/gsearchtool-callbacks.c:1173
 msgid "Mo_ve to Trash"
 msgstr "చెత్తకుండి కి స్థానాన్ని మార్చుము(_v)"
 
-#: ../baobab/src/baobab-utils.c:401
-msgid "Total filesystem capacity:"
-msgstr "మొత్తం దస్త్ర వ్యవస్థ సామర్థ్యము:"
-
-#: ../baobab/src/baobab-utils.c:402
-msgid "used:"
-msgstr "వాడబడిన:"
-
-#: ../baobab/src/baobab-utils.c:403
-msgid "available:"
-msgstr "లభించు:"
-
-#: ../baobab/src/baobab-utils.c:447
+#: ../baobab/src/baobab-utils.c:362
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "\"%s\" సంచయమును తెరువలేము"
 
-#: ../baobab/src/baobab-utils.c:450
+#: ../baobab/src/baobab-utils.c:365
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "సంచయము ప్రదర్శించుట యొక్క తగినటువంటి నెలకొల్పు దర్శిని కలిగిలేదు."
 
-#: ../baobab/src/baobab-utils.c:519
+#: ../baobab/src/baobab-utils.c:433
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "\"%s\" ను చెత్తకుండి కి స్థానాన్ని మార్చలేము"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:441
 msgid "Could not move file to the Trash"
 msgstr "దస్త్రమును చెత్తకుండికి కదల్చలేము"
 
-#: ../baobab/src/baobab-utils.c:529
+#: ../baobab/src/baobab-utils.c:443
 #, c-format
 msgid "Details: %s"
 msgstr ": %s"
 
-#: ../baobab/src/baobab-utils.c:576
+#: ../baobab/src/baobab-utils.c:479
 msgid "There was an error displaying help."
 msgstr "సహాయము ప్రదర్శించుటలో ఒక దోషము కలదు."
 
-#: ../baobab/src/callbacks.c:78 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -536,7 +528,7 @@ msgstr ""
 "లైసెన్సు వర్షన్ 2, లేదా (మీ ఐచ్చికము వద్ద) దాని తర్వాతి వర్షన్‌కు లోబడి పునఃపంపిణి చేయవచ్చును మరియు/లేదా "
 "సవరించవచ్చును;"
 
-#: ../baobab/src/callbacks.c:83 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -547,7 +539,7 @@ msgstr ""
 "వ్యాపారపరంగా లేదా ఫలానా ప్రయోజనం కొరకు ప్రత్యేకించి అనికూడా లేదు.  మరింత సమాచారము కొరకు GNU జనరల్ "
 "పబ్లిక్ లైసెన్సును చూడండి."
 
-#: ../baobab/src/callbacks.c:88 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program; if not, write to the Free Software Foundation, Inc., 51 "
@@ -569,16 +561,16 @@ msgstr "ఖని వినిమయ విశ్లేషణకు ఒక చ�
 #: ../baobab/src/callbacks.c:110 ../gnome-dictionary/src/gdict-about.c:55
 #: ../logview/logview-about.h:63
 msgid "translator-credits"
-msgstr ""
+msgstr "అనుచదించునది-పరపతులు"
 "Pramod <pramodfsf@gmail.com>\n"
 "Krishna Babu K <kkrothap@redhat.com>"
 
-#: ../baobab/src/callbacks.c:207 ../gsearchtool/gsearchtool-callbacks.c:504
-#: ../gsearchtool/gsearchtool-callbacks.c:843
+#: ../baobab/src/callbacks.c:208 ../gsearchtool/gsearchtool-callbacks.c:488
+#: ../gsearchtool/gsearchtool-callbacks.c:811
 msgid "The document does not exist."
 msgstr "పత్రం కలిగిలేదు."
 
-#: ../baobab/src/callbacks.c:318
+#: ../baobab/src/callbacks.c:289
 msgid "The folder does not exist."
 msgstr "సంచయము కలిగిలేదు."
 
@@ -586,103 +578,35 @@ msgstr "సంచయము కలిగిలేదు."
 msgid "Default Dictionary Server"
 msgstr "సేవిక అప్రమేయ నిఘంటువు"
 
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.server.in.in.h:1
-msgid "Dictionary Look up"
-msgstr "నిఘంటువు వెతుకుట"
-
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.server.in.in.h:2
-msgid "Look up words in a dictionary"
-msgstr "నిఘంటువులో పదములు వెతుకుట"
-
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:1
-msgid "Cl_ear"
-msgstr "తీసివేయు(_e)"
-
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:2
-#: ../gnome-dictionary/src/gdict-window.c:1236 ../logview/logview-window.c:868
-msgid "_About"
-msgstr "గురించి(_A)"
-
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:4
-msgid "_Look Up Selected Text"
-msgstr "‌ఎంచుకున్న పాఠం వెతుకుము(_L)"
-
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:5
-#: ../gnome-dictionary/src/gdict-window.c:1210
-msgid "_Preferences"
-msgstr "అభీష్టాలు(_P)"
-
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:6
-msgid "_Print"
-msgstr "ముద్రించు(_P)"
-
-#: ../gnome-dictionary/data/GNOME_DictionaryApplet.xml.h:7
-msgid "_Save"
-msgstr "దాచు(_S)"
-
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:1
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr "లైను వెలుపల నిఘంటువులో పదము నిర్వచనములను మరియు వర్ణక్రమములను తనిఖీచేయుము"
 
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:2
-#: ../gnome-dictionary/src/gdict-about.c:78
-#: ../gnome-dictionary/src/gdict-app.c:385
-#: ../gnome-dictionary/src/gdict-window.c:608
-#: ../gnome-dictionary/src/gdict-window.c:1956
+#: ../gnome-dictionary/src/gdict-about.c:62
+#: ../gnome-dictionary/src/gdict-app.c:233
+#: ../gnome-dictionary/src/gdict-window.c:601
+#: ../gnome-dictionary/src/gdict-window.c:1894
 msgid "Dictionary"
 msgstr "నిఘంటువు"
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:1
-msgid "Dictionary server (Deprecated)"
-msgstr "సేవిక నిఘంటువు (నివారింపమనెను)"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:2
-msgid "Port used to connect to server (Deprecated)"
-msgstr "సేవిక బంధం కు పోర్టును వాడుదురు (నివారింపమనెను)"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:3
-msgid ""
-"Specify whether to use smart lookup. This key is dependant on whether the "
-"dictionary server supports this option. The default is TRUE. This key is "
-"deprecated and no longer in use."
-msgstr ""
-"తెలివిగా వెతుకుట ను ఉపయోగించాలేమో తెలియజేస్తుంది.నిఘంటువు సేవిక ఈ ఐచ్చికానికి మద్దతిస్తుందో లేదో దాని మీద ఈ "
-"మీట ఆధారపడి ఉంటుంది.అప్రమేయంగా TRUE. ఈ మీట నివారింపబడింది మరియు ఉపయోగంలో లేదు."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:4
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:1
 msgid "The default database to use"
 msgstr "అప్రమేయ దత్తాంశ స్థానం వాడుటకొరకు"
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:5
-msgid "The default height of the application window"
-msgstr "కార్యక్షేత్ర గవాక్షం యొక్క అప్రమేయ ఎత్తు"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:6
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:2
 msgid "The default search strategy to use"
 msgstr "అప్రమేయ ప్యూహరచన వెతుకుటను వాడుము"
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:7
-msgid "The default width of the application window"
-msgstr "కార్యక్షేత్ర గవాక్షం యొక్క అప్రమేయ పొడవు"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:8
-msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers. This key is deprecated and "
-"no longer in use."
-msgstr ""
-"అనుసంధానించుటకు నిఘంటువు సేవిక.అప్రమేయ సేవిక dict.org.ఇతర సేవకల పై వివరములు కొరకు http://"
-"www.dict.org ను చూడండి.ఈ మీట నివారించబడింది మరియు ఉపయోగంలోలేదు."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:9
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:3
 msgid "The font to be used when printing"
 msgstr "ముద్రించునపుడు ఈ శైలిని వాడుదురు"
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:10
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:4
 msgid "The font to be used when printing a definition."
 msgstr "నిర్వచనమును ముద్రించునపుడు ఈ శైలిని వాడుదురు."
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:11
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:5
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
@@ -691,7 +615,7 @@ msgstr ""
 "నిఘంటువు వనరు లో వాడుటకు అప్రమేయ స్వతంత్ర దత్తాంశస్థానం లేదా మెటా-దత్తాంశస్థానం యొక్క నామము."
 "ఆశ్చర్యార్ధంకం (\"!\") అర్ధం నిఘంటువు వనరు లో ఇవ్వబడినటువంటి అన్ని దత్తాంశస్థానములు శోధించబడాలి."
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:12
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:6
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
@@ -699,112 +623,14 @@ msgstr ""
 "నిఘంటువు వనరులో ఉపయోగించుటకు అప్రమేయ శోధనా ఎత్తుగడ నామము, అందుబాటులో ఉంటే. అప్రమేయ ఎత్తుగడ "
 "'ఖచ్చితం', అంటే ఖచ్చితమైన పదాలను సరిపోల్చాలి."
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:13
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:7
 msgid "The name of the dictionary source used"
 msgstr "నిఘంటువు వనరు యొక్క నామము వాడబడినది "
 
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:14
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "పదముల యొక్క నిర్వచనములు వెలికితీయుటకు నిఘంటువు వనరు యొక్క నామము వాడబడినది."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:15
-msgid "The page of the sidebar to show"
-msgstr "పుట యొక్క ప్రక్క నిర్థేశి చూపుటకు"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:16
-msgid ""
-"The port number to connect to. The default port is 2628. This key is "
-"deprecated and no longer in use."
-msgstr "అనుసంధానించుటకు పోర్ట సంఖ్య.అప్రమేయ పోర్టు 2628.ఈ మీట నివారించబడింది మరియు ఉపయోగంలోలేదు."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:17
-msgid "The width of the sidebar"
-msgstr "ప్రక్క నిర్థేశి  యొక్క పొడవు"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:18
-msgid ""
-"This key defines the width of the sidebar and it's used to remember the "
-"setting across sessions."
-msgstr ""
-"ఈ మీట ప్రక్కపట్టీ యొక్క వెడల్పు నిర్వచింస్తుంది మరియు ఇది సెషన్లన్నిటి అమరికలను గుర్తుంచకొనుటకు "
-"ఉపయోగించబడుతుంది."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:19
-msgid ""
-"This key defines the window height and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary "
-"window use a height based on the font size."
-msgstr ""
-"ఈ మీట గవాక్షం ఎత్తును నిర్వచిస్తుంది మరియు నిఘంటువు గవాక్ష పరిమాణంను అన్ని సెషన్లనందు "
-"గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.దీనిని -1 కు అమర్చుట ద్వారా నిఘంటువు గవాక్షం ఫాంటు పరిమాణం "
-"ను ఆధారంచేసుకొని ఎత్తును ఉపయోగించునట్లు చేస్తుంది."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:20
-msgid ""
-"This key defines the window width and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary "
-"window use a width based on the font size."
-msgstr ""
-"ఈ మీట గవాక్షం వెడల్పును నిర్వచిస్తుంది మరియు నిఘంటువు గవాక్ష పరిమాణంను అన్ని సెషన్లనందు "
-"గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.దీనిని -1 కు అమర్చుట ద్వారా నిఘంటువు గవాక్షం ఫాంటు పరిమాణం "
-"ను ఆధారంచేసుకొని వెడల్పును ఉపయోగించునట్లు చేస్తుంది."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:21
-msgid ""
-"This key defines whether the sidebar should be visible and it's used to "
-"remember the state of the sidebar across sessions. Setting it to TRUE will "
-"make the sidebar always be displayed."
-msgstr ""
-"ఈ మీట ప్రక్కపట్టీ కనిపించాలేమో తెలుపుతుంది మరియు ఇది అన్ని సెషన్లందు ప్రక్కపట్టీ యెక్క స్థితి "
-"గుర్తుంచుకొనుటకు ఉపయోగపడుతుంది.దీనిని TRUE గా అమర్చుట ద్వారా ప్రక్కపట్టీ ఎల్లప్పుడూ "
-"ప్రదర్శితమగునట్లు చేస్తుంది."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:22
-msgid ""
-"This key defines whether the statusbar should be visible and it's used to "
-"remember the state of the statusbar across sessions. Setting it to TRUE will "
-"make the statusbar always be displayed."
-msgstr ""
-"ఈ మీట సుస్థితిపట్టీ కనిపించాలేమో తెలుపుతుంది మరియు ఇది అన్ని సెషన్లందు సుస్థితిపట్టీ యెక్క స్థితి "
-"గుర్తుంచుకొనుటకు ఉపయోగపడుతుంది.దీనిని TRUE గా అమర్చుట ద్వారా సుస్థితిపట్టీ ఎల్లప్పుడూ "
-"ప్రదర్శితమగునట్లు చేస్తుంది."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:23
-msgid ""
-"This key defines whether the window should be maximized and it's used to "
-"remember the state of the dictionary window across sessions. Setting it to "
-"TRUE will make the window always appear as maximized."
-msgstr ""
-"ఈ మీట గవాక్షం పెద్దదిగా కనిపించాలేమో తెలుపుతుంది మరియు ఇది అన్ని సెషన్లందు నిఘంటువు గవాక్షం యెక్క స్థితి "
-"గుర్తుంచుకొనుటకు ఉపయోగపడుతుంది.దీనిని TRUE గా అమర్చుట ద్వారా గవాక్షం ఎల్లప్పుడూ "
-"పెద్దదిగాఉండునట్లు చేస్తుంది."
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:24
-msgid ""
-"This key defines which page of the sidebar should be displayed and it's used "
-"to remember the setting across sessions.. It can be \"speller\" or "
-"\"databases\"."
-msgstr ""
-"ఈ మీట ఏ పుటయొక్క ప్రక్కపట్టీ ప్రదర్శితమవ్వాలో నిర్వచిస్తుంది మరియు ఇది అమరికలను అన్ని సెషన్లందు "
-"గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.. ఇది \"speller\" లేదా \"databases\" అవ్వగలదు."
-"\"spell"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:25
-msgid "Use smart lookup (Deprecated)"
-msgstr "వినియోగదారు తెలివైన వెతుకుట (నివారింపమనెను)"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:26
-msgid "Whether the application window should be maximized"
-msgstr "కార్యక్షేత్ర గవాక్షము పెద్దదిచేయబడుతుందా లేదా"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:27
-msgid "Whether the sidebar should be visible"
-msgstr "ప్రక్క పట్టీ కనబడుతుందా లేదా"
-
-#: ../gnome-dictionary/data/gnome-dictionary.schemas.in.h:28
-msgid "Whether the statusbar should be visible"
-msgstr "సుస్థితి పట్టీ కనబడుతుందా లేదా"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:1
 msgid "Print"
@@ -1008,54 +834,54 @@ msgstr "స్థానికము మాత్రమే"
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "సందర్భము స్థానిక నిఘంటువులు మాత్రమే వాడుతుందా లేక లేదా"
 
-#: ../gnome-dictionary/libgdict/gdict-database-chooser.c:382
+#: ../gnome-dictionary/libgdict/gdict-database-chooser.c:378
 msgid "Reload the list of available databases"
 msgstr "జాబితా యొక్క లభించుదత్తాంశ స్థానములు మరలానింపుము"
 
-#: ../gnome-dictionary/libgdict/gdict-database-chooser.c:394
+#: ../gnome-dictionary/libgdict/gdict-database-chooser.c:390
 msgid "Clear the list of available databases"
 msgstr "జాబితా యొక్క లభించు దత్తాంశ స్థానములను శుభ్రపరచు"
 
-#: ../gnome-dictionary/libgdict/gdict-database-chooser.c:841
-#: ../gnome-dictionary/libgdict/gdict-speller.c:779
-#: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:789
+#: ../gnome-dictionary/libgdict/gdict-database-chooser.c:837
+#: ../gnome-dictionary/libgdict/gdict-speller.c:778
+#: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:785
 msgid "Error while matching"
 msgstr "ఉపమించుతున్నపుడు దోషము"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1134
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1228
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1262
-#: ../logview/logview-window.c:513
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1127
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1221
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1255
+#: ../logview/logview-window.c:486
 msgid "Not found"
 msgstr "లభించలేదు"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1323
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1316
 msgid "F_ind:"
 msgstr "వెతుకు(_i):"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1336
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1329
 msgid "_Previous"
 msgstr "ముందుది(_P)"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1344
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1337
 msgid "_Next"
 msgstr "తరువాతది(_N)"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2519
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2512
 msgid "Error while looking up definition"
 msgstr "నిర్వచనం చూస్తున్నపుడు దోషము ఏర్పడింది"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2561
-#: ../gnome-dictionary/libgdict/gdict-speller.c:737
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2554
+#: ../gnome-dictionary/libgdict/gdict-speller.c:736
 msgid "Another search is in progress"
 msgstr "వేరోక వెతుకుట పురోగమనములో ఉన్నది"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2562
-#: ../gnome-dictionary/libgdict/gdict-speller.c:738
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2555
+#: ../gnome-dictionary/libgdict/gdict-speller.c:737
 msgid "Please wait until the current search ends."
 msgstr "ప్రస్తుతం వెతుకుట పూర్తయ్యేవరకు దయచేసి ఆగుము."
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2601
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2594
 msgid "Error while retrieving the definition"
 msgstr "నిర్వచనం ను వెలికితీస్తున్నపుడు దోషం ఏర్పడింది"
 
@@ -1068,12 +894,12 @@ msgid "The filename used by this dictionary source"
 msgstr "ఈ నిఘంటువు వనరు ద్వారా ఈ దస్త్ర నామము వాడుదురు"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2382
+#: ../gsearchtool/gsearchtool.c:2369
 msgid "Name"
 msgstr "నామము"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:247
-msgid "The display name of this dictonary source"
+msgid "The display name of this dictionary source"
 msgstr "ఈ నిఘంటువు వనరు యొక్క ప్రదర్శన నామము"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:260
@@ -1085,21 +911,21 @@ msgid "The description of this dictionary source"
 msgstr "ఈ నిఘంటువు వనరు యొక్క వివరణ"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:274
-#: ../gnome-dictionary/libgdict/gdict-speller.c:384
+#: ../gnome-dictionary/libgdict/gdict-speller.c:383
 msgid "Database"
 msgstr "దత్తాంశ స్థానము"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:275
-msgid "The default database of this dictonary source"
+msgid "The default database of this dictionary source"
 msgstr "ఈ నిఘంటువు వనరు యొక్క అప్రమేయ దత్తాంశ స్థానము"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:288
-#: ../gnome-dictionary/libgdict/gdict-speller.c:391
+#: ../gnome-dictionary/libgdict/gdict-speller.c:390
 msgid "Strategy"
 msgstr "ఎత్తుగడ"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:289
-msgid "The default strategy of this dictonary source"
+msgid "The default strategy of this dictionary source"
 msgstr "ఈ నిఘంటువు వనరు యొక్క అప్రమేయ ఎత్తుగడ"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:302
@@ -1111,7 +937,7 @@ msgid "The transport mechanism used by this dictionary source"
 msgstr "ఈ నిఘంటువు వనరు ద్వారా బదిలి యంత్రము వాడబడినది"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:317
-#: ../gnome-dictionary/libgdict/gdict-speller.c:377
+#: ../gnome-dictionary/libgdict/gdict-speller.c:376
 msgid "Context"
 msgstr "సంధర్భము"
 
@@ -1153,7 +979,7 @@ msgstr "నిఘంటువు వనరు నామమును కలిగ
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "నిఘంటువు వనరు '%s' నిస్సారమైన బదిలి కలిగినది '%s"
 
-#: ../gnome-dictionary/libgdict/gdict-source-chooser.c:299
+#: ../gnome-dictionary/libgdict/gdict-source-chooser.c:295
 msgid "Reload the list of available sources"
 msgstr "అందుబాటులో ఉన్న వనరుల యొక్క జాబితాను మరలానింపుము"
 
@@ -1173,27 +999,27 @@ msgstr "వనరులు"
 msgid "Dictionary sources found"
 msgstr "నిఘంటువు వనరులు లభించలేదు"
 
-#: ../gnome-dictionary/libgdict/gdict-speller.c:354
+#: ../gnome-dictionary/libgdict/gdict-speller.c:353
 msgid "Clear the list of similar words"
 msgstr "జాబితా యొక్క పోలిక కల్గిన పదాలు శుభ్రపరచు"
 
-#: ../gnome-dictionary/libgdict/gdict-speller.c:378
+#: ../gnome-dictionary/libgdict/gdict-speller.c:377
 msgid "The GdictContext object used to get the word definition"
 msgstr "పద నిర్వచనమును పొందుటకు Gdict సంధర్భ తాత్పర్యమును వాడుదురు"
 
-#: ../gnome-dictionary/libgdict/gdict-speller.c:385
+#: ../gnome-dictionary/libgdict/gdict-speller.c:384
 msgid "The database used to query the GdictContext"
 msgstr "Gdict సంధర్భమును ప్రశ్నించుటకు దత్తాంశస్థానమును వాడుదురు"
 
-#: ../gnome-dictionary/libgdict/gdict-speller.c:392
+#: ../gnome-dictionary/libgdict/gdict-speller.c:391
 msgid "The strategy used to query the GdictContext"
 msgstr "Gdict సంధర్భమును ప్రశ్నించుటకు ఎత్తుగడ వాడుదురు"
 
-#: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:365
+#: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:361
 msgid "Reload the list of available strategies"
 msgstr "లభించిన ఎత్తుగడల యొక్క జాబితాలను మరలానింపుము"
 
-#: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:377
+#: ../gnome-dictionary/libgdict/gdict-strategy-chooser.c:373
 msgid "Clear the list of available strategies"
 msgstr "లభించిన ఎత్తుగడల యొక్క జాబితాను శుభ్రపరచుము"
 
@@ -1219,554 +1045,424 @@ msgid "Show GDict Options"
 msgstr "GDict ఇఛ్ఛాపూర్వకాలు ను చూపుము"
 
 #: ../gnome-dictionary/src/gdict-about.c:57
-#: ../gnome-dictionary/src/gdict-applet.c:592
 msgid "Look up words in dictionaries"
 msgstr "నిఘంటువులలో పదాలకొరకు చూడుము"
 
-#. Translators: the first is the word found, the second is the
-#. * database name and the last is the definition's text; please
-#. * keep the new lines.
-#: ../gnome-dictionary/src/gdict-app.c:217
-#, c-format
-msgid ""
-"Definition for '%s'\n"
-"  From '%s':\n"
-"\n"
-"%s\n"
-msgstr ""
-"నిర్వచనం కొరకు '%s'\n"
-"నుండి '%s':\n"
-"\n"
-"%s\n"
-
-#: ../gnome-dictionary/src/gdict-app.c:231
-#, c-format
-msgid "Error: %s\n"
-msgstr "దోషం:%s\n"
-
-#: ../gnome-dictionary/src/gdict-app.c:257
-#, c-format
-msgid "See gnome-dictionary --help for usage\n"
-msgstr "గ్నోమ్-నిఘంటువు --సహాయము వాడుట కొరకు చూడుము\n"
-
-#: ../gnome-dictionary/src/gdict-app.c:270
-msgid "Unable to find a suitable dictionary source"
-msgstr "పొందిక కల్గిన నిఘంటువు వనరు ను వెతకలేక పోయింది"
-
-#: ../gnome-dictionary/src/gdict-app.c:304
-#, c-format
-msgid ""
-"Error while looking up the definition of \"%s\":\n"
-"%s"
-msgstr ""
-" \"%s\" యొక్క నిర్వచనం చూస్తున్నపుడు దోషము ఏర్పడింది:\n"
-"%s"
-
-#: ../gnome-dictionary/src/gdict-app.c:337
-#: ../gnome-dictionary/src/gdict-app.c:351
+#: ../gnome-dictionary/src/gdict-app.c:62
+#: ../gnome-dictionary/src/gdict-app.c:91
 msgid "Words to look up"
 msgstr "పదాలు చూచుటకై"
 
-#: ../gnome-dictionary/src/gdict-app.c:337
-#: ../gnome-dictionary/src/gdict-app.c:339
-#: ../gnome-dictionary/src/gdict-app.c:351
-msgid "word"
-msgstr "పదము"
+#: ../gnome-dictionary/src/gdict-app.c:62
+#: ../gnome-dictionary/src/gdict-app.c:68
+msgid "WORD"
+msgstr "WORD"
 
-#: ../gnome-dictionary/src/gdict-app.c:339
+#: ../gnome-dictionary/src/gdict-app.c:68
 msgid "Words to match"
 msgstr "పదములు జతచేయుటకు"
 
-#: ../gnome-dictionary/src/gdict-app.c:341
+#: ../gnome-dictionary/src/gdict-app.c:74
 msgid "Dictionary source to use"
 msgstr "నిఘంటువు వనరు వాడుటకు"
 
-#: ../gnome-dictionary/src/gdict-app.c:341
-msgid "source"
-msgstr "వనరు"
+#: ../gnome-dictionary/src/gdict-app.c:74
+#: ../gnome-dictionary/src/gdict-app.c:80
+#: ../gnome-dictionary/src/gdict-app.c:86
+msgid "NAME"
+msgstr "NAME"
 
-#: ../gnome-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "లభ్యత కల్గిన నిఘంటువు వనరులను చూపుము"
-
-#: ../gnome-dictionary/src/gdict-app.c:345
-msgid "Print result to the console"
-msgstr "ఊరడించు ఫలితమును ముద్రించు"
-
-#: ../gnome-dictionary/src/gdict-app.c:347
+#: ../gnome-dictionary/src/gdict-app.c:80
 msgid "Database to use"
 msgstr "దత్తాంశస్థానము వాడుటకు"
 
-#: ../gnome-dictionary/src/gdict-app.c:347
-msgid "db"
-msgstr "db"
-
-#: ../gnome-dictionary/src/gdict-app.c:349
+#: ../gnome-dictionary/src/gdict-app.c:86
 msgid "Strategy to use"
 msgstr "ఎత్తుగడ వాడుటకు"
 
-#: ../gnome-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "మొదలుపెట్టు"
+#: ../gnome-dictionary/src/gdict-app.c:91
+msgid "WORDS"
+msgstr "WORDS"
 
 #. create the new option context
-#: ../gnome-dictionary/src/gdict-app.c:367
+#: ../gnome-dictionary/src/gdict-app.c:143
 msgid " - Look up words in dictionaries"
 msgstr "-నిఘంటువులో పదాలు చూచుటకై"
 
-#: ../gnome-dictionary/src/gdict-applet.c:206
-#: ../gnome-dictionary/src/gdict-window.c:837
-msgid "Save a Copy"
-msgstr "నకలును దాచుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:216
-#: ../gnome-dictionary/src/gdict-window.c:847
-msgid "Untitled document"
-msgstr "పత్రము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:237
-#: ../gnome-dictionary/src/gdict-window.c:868
-#, c-format
-msgid "Error while writing to '%s'"
-msgstr "'%s' కు వ్రాయునప్పుడు దోషము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:362
-msgid "Clear the definitions found"
-msgstr "లభించిన నిర్వచనములు శుభ్రపరచుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:364
-msgid "Clear definition"
-msgstr "నిర్వచనము శుభ్రపరచు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:365
-msgid "Clear the text of the definition"
-msgstr "నిర్వచనము యొక్క పాఠంను శుభ్రపరచుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:372
-msgid "Print the definitions found"
-msgstr "లభించిన నిర్వచనములను ముద్రించుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:374
-msgid "Print definition"
-msgstr "నిర్వచనము ముద్రించు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:375
-msgid "Print the text of the definition"
-msgstr "నిర్వచనం యొక్క పాఠంను ముద్రించు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:382
-msgid "Save the definitions found"
-msgstr "లభించిన నిర్వచనములు దాచుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:384
-msgid "Save definition"
-msgstr "నిర్వచనం దాయు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:385
-msgid "Save the text of the definition to a file"
-msgstr "దస్త్రం నకు పాఠం యొక్క నిర్వచనంను దాచుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:534
-msgid "Click to view the dictionary window"
-msgstr "నిఘంటువు గవాక్షంను దర్శించుటకు క్లిక్ చేయుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:536
-msgid "Toggle dictionary window"
-msgstr "మార్పు నిఘంటువు గవాక్షము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:537
-msgid "Show or hide the definition window"
-msgstr "నిర్వచనము గవాక్షమును చూపుము లేదా దాచుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:589
-msgid "Type the word you want to look up"
-msgstr "నీవు చూచుటకు కావలసిన పదమును టైప్ చేయుము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:591
-msgid "Dictionary entry"
-msgstr "నిఘంటువు చేర్పు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:725
-#: ../gnome-dictionary/src/gdict-window.c:1001
-msgid "Dictionary Preferences"
-msgstr "నిఘంటువు అభీష్టాలు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:751
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:504
-#: ../gnome-dictionary/src/gdict-source-dialog.c:494
-#: ../gnome-dictionary/src/gdict-window.c:1145
-#, c-format
-msgid "There was an error while displaying help"
-msgstr "సహాయమును ప్రదర్శించుతున్నపుడు అక్కడ దోషము ఏర్పడింది"
-
-#: ../gnome-dictionary/src/gdict-applet.c:905
-#: ../gnome-dictionary/src/gdict-window.c:517
-#, c-format
-msgid "No dictionary source available with name '%s'"
-msgstr "'%s' నామముతో ఎటువంటి నిఘంటువు వనరు లభించలేదు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:909
-#: ../gnome-dictionary/src/gdict-window.c:521
-msgid "Unable to find dictionary source"
-msgstr "నిఘంటువు వనరును వెతకలేక పోయింది"
-
-#: ../gnome-dictionary/src/gdict-applet.c:925
-#: ../gnome-dictionary/src/gdict-window.c:537
-#, c-format
-msgid "No context available for source '%s'"
-msgstr "'%s' వనరు కొరకు ఎటువంటి సంధర్భము లభించలేదు"
-
-#: ../gnome-dictionary/src/gdict-applet.c:929
-#: ../gnome-dictionary/src/gdict-window.c:541
-msgid "Unable to create a context"
-msgstr "సంధర్భమును సృష్టించలేము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1194
-#: ../gnome-dictionary/src/gdict-window.c:2087
-msgid "Unable to connect to GConf"
-msgstr "GConf కు అనుసంధాన పరచలేము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1207
-#: ../gnome-dictionary/src/gdict-window.c:2100
-msgid "Unable to get notification for preferences"
-msgstr "అభీష్టాల కొరకు తాఖీదు ఇచ్చుటను పొందలేము"
-
-#: ../gnome-dictionary/src/gdict-applet.c:1221
-#: ../gnome-dictionary/src/gdict-window.c:2113
-msgid "Unable to get notification for the document font"
-msgstr "పత్ర అక్షర శైలి కొరకు తాఖీదు ఇచ్చుటను పొందలేము"
-
-#: ../gnome-dictionary/src/gdict-common.c:79
-#, c-format
-msgid "Unable to rename file '%s' to '%s': %s"
-msgstr "'%s'  కు '%s' దస్త్ర నామమును తిరగ రాయలేము: %s"
-
-#: ../gnome-dictionary/src/gdict-common.c:103
-#: ../gnome-dictionary/src/gdict-common.c:126
-#, c-format
-msgid "Unable to create the data directory '%s': %s"
-msgstr "'%s' దత్తాంశ వివరణమును సృష్టించుటకు వీలుకాదు: %s"
-
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:244
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:241
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:430
 msgid "Edit Dictionary Source"
 msgstr "నిఘంటువు వనరును సరిచేయు"
 
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:308
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:305
 msgid "Add Dictionary Source"
 msgstr "నిఘంటువు వనరును చేర్చు"
 
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:354
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:350
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "\"%s\" తొలగించు?"
 
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:356
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:352
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "జాబితా నుండి నిఘంటువు వనరు శాశ్వతంగా తొలగించబడుతుంది"
 
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:386
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:382
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "'%s' వనరును తొలగించలేము"
 
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:667
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:496
+#: ../gnome-dictionary/src/gdict-source-dialog.c:479
+#: ../gnome-dictionary/src/gdict-window.c:1245
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "సహాయమును ప్రదర్శించుతున్నపుడు అక్కడ దోషము ఏర్పడింది"
+
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:643
 msgid "Add a new dictionary source"
 msgstr "కొత్త నిఘంటువు వనరును చేర్చుము"
 
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:673
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:649
 msgid "Remove the currently selected dictionary source"
 msgstr "ప్రస్తుతము ఎంచుకొనబడిన నిఘంటువు వనరును తొలగించు"
 
-#: ../gnome-dictionary/src/gdict-pref-dialog.c:686
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:655
+msgid "Edit the currently selected dictionary source"
+msgstr "ప్రస్తుతము ఎంచుకొనబడిన నిఘంటువు వనరును సరిచేయుము"
+
+#: ../gnome-dictionary/src/gdict-pref-dialog.c:663
 msgid "Set the font used for printing the definitions"
 msgstr "నిర్వచనములను ముద్రించుట కొరకు వాడబడు అక్షర శైలిని అమర్చుము"
 
-#: ../gnome-dictionary/src/gdict-print.c:249
-#: ../gnome-dictionary/src/gdict-print.c:313
+#: ../gnome-dictionary/src/gdict-print.c:241
+#: ../gnome-dictionary/src/gdict-print.c:305
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "ఉపదర్శనం %s ను ప్రదర్శింపలేకపోయింది:"
 
-#: ../gnome-dictionary/src/gdict-source-dialog.c:356
-#: ../gnome-dictionary/src/gdict-source-dialog.c:449
+#: ../gnome-dictionary/src/gdict-source-dialog.c:341
+#: ../gnome-dictionary/src/gdict-source-dialog.c:434
 msgid "Unable to create a source file"
 msgstr "వనరు దస్త్రం ను సృష్టించుటకు వీలుకాదు"
 
-#: ../gnome-dictionary/src/gdict-source-dialog.c:374
-#: ../gnome-dictionary/src/gdict-source-dialog.c:467
+#: ../gnome-dictionary/src/gdict-source-dialog.c:359
+#: ../gnome-dictionary/src/gdict-source-dialog.c:452
 msgid "Unable to save source file"
 msgstr "వనరు దస్త్రం ను దాచుటకు వీలుకాదు"
 
-#: ../gnome-dictionary/src/gdict-window.c:316
+#: ../gnome-dictionary/src/gdict-window.c:311
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "'%s' కొరకు వెతుకుచున్నది..."
 
-#: ../gnome-dictionary/src/gdict-window.c:348
-#: ../gnome-dictionary/src/gdict-window.c:407
+#: ../gnome-dictionary/src/gdict-window.c:343
+#: ../gnome-dictionary/src/gdict-window.c:400
 msgid "No definitions found"
 msgstr "ఎటువంటి నిర్వచనములు లభించలేదు"
 
-#: ../gnome-dictionary/src/gdict-window.c:350
+#: ../gnome-dictionary/src/gdict-window.c:345
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "నిర్వచనము లభించినది"
 msgstr[1] "%d నిర్వచనములు లభించినది"
 
-#: ../gnome-dictionary/src/gdict-window.c:606
+#: ../gnome-dictionary/src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "'%s' నామముతో ఎటువంటి నిఘంటువు వనరు లభించలేదు"
+
+#: ../gnome-dictionary/src/gdict-window.c:520
+msgid "Unable to find dictionary source"
+msgstr "నిఘంటువు వనరును వెతకలేక పోయింది"
+
+#: ../gnome-dictionary/src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "'%s' వనరు కొరకు ఎటువంటి సంధర్భము లభించలేదు"
+
+#: ../gnome-dictionary/src/gdict-window.c:540
+msgid "Unable to create a context"
+msgstr "సంధర్భమును సృష్టించలేము"
+
+#: ../gnome-dictionary/src/gdict-window.c:599
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s -నిఘంటువు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1180 ../logview/logview-window.c:836
+#: ../gnome-dictionary/src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr "నకలును దాచుము"
+
+#: ../gnome-dictionary/src/gdict-window.c:972
+msgid "Untitled document"
+msgstr "పత్రము"
+
+#: ../gnome-dictionary/src/gdict-window.c:993
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "'%s' కు వ్రాయునప్పుడు దోషము"
+
+#: ../gnome-dictionary/src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr "నిఘంటువు అభీష్టాలు"
+
+#: ../gnome-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:814
 msgid "_File"
 msgstr "దస్త్రం(_F)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1183
+#: ../gnome-dictionary/src/gdict-window.c:1283
 msgid "_Go"
 msgstr "వెళ్ళు(_G)"
 
 #. File menu
-#: ../gnome-dictionary/src/gdict-window.c:1187
+#: ../gnome-dictionary/src/gdict-window.c:1287
 msgid "_New"
 msgstr "కొత్త(_N)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1188
+#: ../gnome-dictionary/src/gdict-window.c:1288
 msgid "New look up"
 msgstr "కొత్తగా చూచుటకు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1189
+#: ../gnome-dictionary/src/gdict-window.c:1289
 msgid "_Save a Copy..."
 msgstr "నకలు దాచుము(_S)..."
 
-#: ../gnome-dictionary/src/gdict-window.c:1191
+#: ../gnome-dictionary/src/gdict-window.c:1291
 msgid "P_review..."
 msgstr "ఉపదర్శనం(_r)..."
 
-#: ../gnome-dictionary/src/gdict-window.c:1192
+#: ../gnome-dictionary/src/gdict-window.c:1292
 msgid "Preview this document"
 msgstr "ఈ పత్రమును ఉపదర్శనం చేయుము"
 
-#: ../gnome-dictionary/src/gdict-window.c:1193
+#: ../gnome-dictionary/src/gdict-window.c:1293
 msgid "_Print..."
 msgstr "ముద్రించు(_P)..."
 
-#: ../gnome-dictionary/src/gdict-window.c:1194
+#: ../gnome-dictionary/src/gdict-window.c:1294
 msgid "Print this document"
 msgstr "ఈ పత్రమును ముద్రించు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1201 ../logview/logview-window.c:851
+#: ../gnome-dictionary/src/gdict-window.c:1301 ../logview/logview-window.c:829
 msgid "Select _All"
 msgstr "అన్నింటిని ఎంచుకొను(_A)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1204
+#: ../gnome-dictionary/src/gdict-window.c:1304
 msgid "Find a word or phrase in the document"
 msgstr "పత్రములో పదము లేదా పద సముదాయమును వెతుకుము"
 
-#: ../gnome-dictionary/src/gdict-window.c:1206
+#: ../gnome-dictionary/src/gdict-window.c:1306
 msgid "Find Ne_xt"
 msgstr "తర్వాతది వెతుకు(_x)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1208
+#: ../gnome-dictionary/src/gdict-window.c:1308
 msgid "Find Pre_vious"
 msgstr "ముందుది వెతుకు(_v)"
 
+#: ../gnome-dictionary/src/gdict-window.c:1310
+msgid "_Preferences"
+msgstr "అభీష్టాలు(_P)"
+
 #. Go menu
-#: ../gnome-dictionary/src/gdict-window.c:1214
+#: ../gnome-dictionary/src/gdict-window.c:1314
 msgid "_Previous Definition"
 msgstr "ముందు నిర్వచనం(_P)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1215
+#: ../gnome-dictionary/src/gdict-window.c:1315
 msgid "Go to the previous definition"
 msgstr "ముందు నిర్వచనం నకు వెళ్ళుము"
 
-#: ../gnome-dictionary/src/gdict-window.c:1216
+#: ../gnome-dictionary/src/gdict-window.c:1316
 msgid "_Next Definition"
 msgstr "తర్వాతి నిర్వచనం(_N)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1217
+#: ../gnome-dictionary/src/gdict-window.c:1317
 msgid "Go to the next definition"
 msgstr "తర్వాతి నిర్వచనం నకు వెళ్ళుము"
 
-#: ../gnome-dictionary/src/gdict-window.c:1218
+#: ../gnome-dictionary/src/gdict-window.c:1318
 msgid "_First Definition"
 msgstr "మొదటి నిర్వచనం(_F)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1219
+#: ../gnome-dictionary/src/gdict-window.c:1319
 msgid "Go to the first definition"
 msgstr "మొదటి నిర్వచనంకు వెళ్ళు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1220
+#: ../gnome-dictionary/src/gdict-window.c:1320
 msgid "_Last Definition"
 msgstr "చివరి నిర్వచనం(_L)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1221
+#: ../gnome-dictionary/src/gdict-window.c:1321
 msgid "Go to the last definition"
 msgstr "చివరి నిర్వచనం కు వెళ్ళు"
 
 #. View menu
-#: ../gnome-dictionary/src/gdict-window.c:1224
+#: ../gnome-dictionary/src/gdict-window.c:1324
 msgid "Similar _Words"
 msgstr "పోలిక గల్గిన పదములు(_W)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1226
+#: ../gnome-dictionary/src/gdict-window.c:1326
 msgid "Dictionary Sources"
 msgstr "నిఘంటువు వనరులు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1228
+#: ../gnome-dictionary/src/gdict-window.c:1328
 msgid "Available _Databases"
 msgstr "లభించు దత్తాంశ స్థానములు(_D)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1230
+#: ../gnome-dictionary/src/gdict-window.c:1330
 msgid "Available St_rategies"
 msgstr "లభించు ఎత్తుగడలు(_r)"
 
+#: ../gnome-dictionary/src/gdict-window.c:1336 ../logview/logview-window.c:846
+msgid "_About"
+msgstr "గురించి(_A)"
+
 #. View menu
-#: ../gnome-dictionary/src/gdict-window.c:1247
+#: ../gnome-dictionary/src/gdict-window.c:1347
 msgid "_Sidebar"
 msgstr "పక్క పట్టీ(_S)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1249
+#: ../gnome-dictionary/src/gdict-window.c:1349
 msgid "S_tatusbar"
 msgstr "సుస్థితి పట్టీ(_t)"
 
-#: ../gnome-dictionary/src/gdict-window.c:1370
+#: ../gnome-dictionary/src/gdict-window.c:1414
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "నిఘంటువు వనరు `%s' ఎంపికచేయబడింది"
 
-#: ../gnome-dictionary/src/gdict-window.c:1391
+#: ../gnome-dictionary/src/gdict-window.c:1435
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "ఎత్తుగడ `%s' ఎంచుకొనబడినది"
 
-#: ../gnome-dictionary/src/gdict-window.c:1411
+#: ../gnome-dictionary/src/gdict-window.c:1455
 #, c-format
 msgid "Database `%s' selected"
 msgstr "దత్తాంశ స్థానము `%s' ఎంచుకొనబడినది"
 
-#: ../gnome-dictionary/src/gdict-window.c:1431
+#: ../gnome-dictionary/src/gdict-window.c:1475
 #, c-format
 msgid "Word `%s' selected"
 msgstr "పదము `%s' ఎంచుకొనబడినది"
 
 #. speller
-#: ../gnome-dictionary/src/gdict-window.c:1453
+#: ../gnome-dictionary/src/gdict-window.c:1500
 msgid "Double-click on the word to look up"
 msgstr "ఏ పదముకై వెతుకుతున్నావో దానిపై రెండుసార్లు నొక్కుము"
 
 #. strat-chooser
-#: ../gnome-dictionary/src/gdict-window.c:1459
+#: ../gnome-dictionary/src/gdict-window.c:1506
 msgid "Double-click on the matching strategy to use"
 msgstr "ఉపమించు ఎత్తుగడను వాడుటకు దానిపై రెండుసార్లు నొక్కుము"
 
 #. source-chooser
-#: ../gnome-dictionary/src/gdict-window.c:1464
+#: ../gnome-dictionary/src/gdict-window.c:1511
 msgid "Double-click on the source to use"
 msgstr "ఉపయోగించుటకు వనరు పైన రెండుసార్లు నొక్కండి"
 
 #. db-chooser
-#: ../gnome-dictionary/src/gdict-window.c:1473
+#: ../gnome-dictionary/src/gdict-window.c:1520
 msgid "Double-click on the database to use"
 msgstr "దత్తాంశ స్థానమును వాడుటకు దానిపై రెండుసార్లు నొక్కుము"
 
-#: ../gnome-dictionary/src/gdict-window.c:1764
+#: ../gnome-dictionary/src/gdict-window.c:1700
 msgid "Look _up:"
 msgstr "వెతుకు(_u):"
 
-#: ../gnome-dictionary/src/gdict-window.c:1838
+#: ../gnome-dictionary/src/gdict-window.c:1775
 msgid "Similar words"
 msgstr "పోలిక కల్గిన పదములు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1851
+#: ../gnome-dictionary/src/gdict-window.c:1788
 msgid "Available dictionaries"
 msgstr "లభ్యత కల నిఘంటువులు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1864
+#: ../gnome-dictionary/src/gdict-window.c:1806
 msgid "Available strategies"
 msgstr "లభ్యత కల ఎత్తుగడలు"
 
-#: ../gnome-dictionary/src/gdict-window.c:1875
+#: ../gnome-dictionary/src/gdict-window.c:1822
 msgid "Dictionary sources"
 msgstr "నిఘంటువు వనరులు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:133
+#: ../gnome-screenshot/gnome-screenshot.c:137
 msgid "Error loading the help page"
 msgstr "సహాయ పుటను నింపుటలో దోషము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:245
+#: ../gnome-screenshot/gnome-screenshot.c:249
 msgid "None"
 msgstr "ఏమి లేదు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:246
+#: ../gnome-screenshot/gnome-screenshot.c:250
 msgid "Drop shadow"
 msgstr "పడవేయు ఛాయ"
 
-#: ../gnome-screenshot/gnome-screenshot.c:247
+#: ../gnome-screenshot/gnome-screenshot.c:251
 msgid "Border"
 msgstr "సరిహద్దు"
 
 #. * Include pointer *
-#: ../gnome-screenshot/gnome-screenshot.c:351
+#: ../gnome-screenshot/gnome-screenshot.c:355
 msgid "Include _pointer"
 msgstr "సూచకిని చేర్చుము (_p)"
 
 #. * Include window border *
-#: ../gnome-screenshot/gnome-screenshot.c:360
+#: ../gnome-screenshot/gnome-screenshot.c:364
 msgid "Include the window _border"
 msgstr "గవాక్ష సరిహాద్దును కలుపుము(_b)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:375
+#: ../gnome-screenshot/gnome-screenshot.c:379
 msgid "Apply _effect:"
 msgstr "పర్యవసానంను అనుసంధించు(_e):"
 
-#: ../gnome-screenshot/gnome-screenshot.c:437
+#: ../gnome-screenshot/gnome-screenshot.c:441
 msgid "Grab the whole _desktop"
 msgstr "రంగస్థలం మొత్తాన్ని లాక్కొను(_d)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:449
+#: ../gnome-screenshot/gnome-screenshot.c:453
 msgid "Grab the current _window"
 msgstr "గవాక్షము మొత్తాన్ని లాక్కొను(_w)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:461
+#: ../gnome-screenshot/gnome-screenshot.c:465
 msgid "Select _area to grab"
 msgstr "లాగుటకు ప్రాంతమును యెంపికచేయుము (_a)"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:478
+#: ../gnome-screenshot/gnome-screenshot.c:482
 msgid "Grab _after a delay of"
 msgstr "కొంత ఆలస్యము తర్వాత లాక్కొను(_a)"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #.
-#: ../gnome-screenshot/gnome-screenshot.c:498
-#: ../gnome-screenshot/gnome-screenshot.c:1291
+#: ../gnome-screenshot/gnome-screenshot.c:502
+#: ../gnome-screenshot/gnome-screenshot.c:1379
 msgid "seconds"
 msgstr "క్షణాలు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:516
-#: ../gnome-screenshot/gnome-screenshot.c:524
-#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
+#: ../gnome-screenshot/gnome-screenshot.c:520
+#: ../gnome-screenshot/gnome-screenshot.c:528
 msgid "Take Screenshot"
 msgstr "తెర ఛాయాచిత్రం తీసుకొను"
 
-#: ../gnome-screenshot/gnome-screenshot.c:525
+#: ../gnome-screenshot/gnome-screenshot.c:529
 msgid "Effects"
 msgstr "పర్యవసానాలు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:531
+#: ../gnome-screenshot/gnome-screenshot.c:534
 msgid "Take _Screenshot"
 msgstr "తెర ఛాయాచిత్రం తీసుకొను(_S)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:657
+#: ../gnome-screenshot/gnome-screenshot.c:640
 msgid "Error while saving screenshot"
 msgstr "స్క్రీన్‌షాట్‌ను దాయుచున్నప్పుడు దోషము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:661
+#: ../gnome-screenshot/gnome-screenshot.c:644
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1777,80 +1473,68 @@ msgstr ""
 " దోషము %s.\n"
 " దయచేసి వేరొక స్థానమును యెంచుకొని తిరిగిప్రయత్నించండి."
 
-#: ../gnome-screenshot/gnome-screenshot.c:793
+#: ../gnome-screenshot/gnome-screenshot.c:798
 msgid "Screenshot taken"
 msgstr "తెరపట్టు(స్క్రీన్‌షాట్) తీసుకొనబడింది"
 
-#: ../gnome-screenshot/gnome-screenshot.c:847
+#: ../gnome-screenshot/gnome-screenshot.c:906
 msgid "Unable to take a screenshot of the current window"
 msgstr "ప్రస్తుత గవాక్షం యొక్క తెర ఛాయాచిత్రంను తీసుకొనలేకపొతున్నాము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:897
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "తెర ఛాయాచిత్రం -%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:904
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "తెర ఛాయాచిత్రం-%s-%d.png"
-
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:914
-#: ../gnome-screenshot/screenshot-dialog.c:356
-#: ../gnome-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "తెర ఛాయాచిత్రం.png"
+#: ../gnome-screenshot/gnome-screenshot.c:1013
+msgid "Screenshot at %s.png"
+msgstr "%s.png చోట  తెర ఛాయాచిత్రం"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:921
-#, c-format
-msgid "Screenshot-%d.png"
-msgstr "తెర ఛాయాచిత్రం-%d.png"
+#: ../gnome-screenshot/gnome-screenshot.c:1020
+msgid "Screenshot at %s - %d.png"
+msgstr "%s-%d.png చోట తెర ఛాయాచిత్రం"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1287
+#: ../gnome-screenshot/gnome-screenshot.c:1374
+msgid "Send the grab directly to the clipboard"
+msgstr "గ్రాబ్ ను సూటిగా క్లిప్ బోర్డునకు పంపించుము"
+
+#: ../gnome-screenshot/gnome-screenshot.c:1375
 msgid "Grab a window instead of the entire screen"
 msgstr "యావత్తు తెరకు బదులు గవాక్షంను లాక్కొను"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1288
+#: ../gnome-screenshot/gnome-screenshot.c:1376
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "మొత్తము తెరకు బదులుగా తెరనందలి వొక ప్రాంతమును లాగుము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1289
+#: ../gnome-screenshot/gnome-screenshot.c:1377
 msgid "Include the window border with the screenshot"
 msgstr "తెర ఛాయాచిత్రంతో గవాక్ష సరిహద్దు కలుపుము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1290
+#: ../gnome-screenshot/gnome-screenshot.c:1378
 msgid "Remove the window border from the screenshot"
 msgstr "తెరపట్టునుండి విండో హద్దును తొలగించుము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1291
+#: ../gnome-screenshot/gnome-screenshot.c:1379
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "నిర్థేశితమైన ఆలస్యము తరువాత తెర ఛాయాచిత్రం తీసుకొను [క్షణాలలో]"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1292
+#: ../gnome-screenshot/gnome-screenshot.c:1380
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "సరిహద్దుకు చేర్చుటకు పర్యవసానము (ఛాయ, సరిహద్దు లేదా ఏమీలేదు)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1292
+#: ../gnome-screenshot/gnome-screenshot.c:1380
 msgid "effect"
 msgstr "పర్యవసానము"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1293
+#: ../gnome-screenshot/gnome-screenshot.c:1381
 msgid "Interactively set options"
 msgstr "అనుకూలరీతిలో అమర్చిన ఇచ్ఛాపూర్వకాలు"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1304
+#: ../gnome-screenshot/gnome-screenshot.c:1392
 msgid "Take a picture of the screen"
 msgstr "తెర యొక్క ప్రతిరూపాన్ని తీసుకొను"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1322
+#: ../gnome-screenshot/gnome-screenshot.c:1410
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -1860,6 +1544,10 @@ msgstr "విభేదించుచున్న ఐచ్చికముల�
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
 msgid "Save images of your desktop or individual windows"
 msgstr "మీ యొక్క రంగస్థలం లేదా వ్యక్తిగత గవాక్షాల ప్రతిరూపాలను దాచుము"
+
+#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
+msgid "Screenshot"
+msgstr "తెర ఛాయాచిత్రం"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:1
 msgid "*"
@@ -1882,11 +1570,11 @@ msgstr "సంచయంలో దాచుము(_f):"
 msgid "_Name:"
 msgstr "నామము(_N):"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:1
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:1
 msgid "Border Effect"
 msgstr "సరిహద్దు పర్యవసానము"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:2
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:2
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
@@ -1894,50 +1582,58 @@ msgstr ""
 "బయటఉన్న సరిహద్దుకు కలుపవలిసిన పర్యావసానం.సాధ్యమగు విలువలు \"గవాక్షం\", \"ఏదీకాదు\", మరియు "
 "\"సరిహద్దు\"."
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:3
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:3
 msgid ""
 "Grab just the current window, rather than the whole desktop. This key has "
 "been deprecated and it is no longer in use."
 msgstr ""
 "మొత్త డెస్కుటాపునకు బదులుగా ప్రస్తుత విండోను లాగుము. ఈ కీ తీసివేయబడింది యిది యికపై వుపయోగంలో వుండదు."
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:4
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:4
 msgid "Include Border"
 msgstr "సరిహద్దు కలుపుము"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:5
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:5
+msgid "Include ICC Profile"
+msgstr "ICC స్థూలవివరమును చేర్చుము"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:6
 msgid "Include Pointer"
 msgstr "సూచకిని చేర్చుము"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:6
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:7
+msgid "Include the ICC profile of the target in the screenshot file"
+msgstr "తెరపట్టునందు గమ్యం యొక్క ICC స్థూలవివరమును చేర్చుము"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr "తెరపట్టునందు సూచకిని చేర్చుము"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:7
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:9
 msgid "Include the window manager border along with the screenshot"
 msgstr "తెర ఛాయచిత్రంతో గవాక్ష అభికర్త సరిహద్దును కూడా కలుపుము"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:8
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:10
 msgid "Screenshot delay"
 msgstr "తెరపట్టు(స్క్రీన్‌షాట్) ఆలస్యము"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:9
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:11
 msgid "Screenshot directory"
 msgstr "తెర ఛాయచిత్రం వివరము"
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:10
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:12
 msgid "The directory the last screenshot was saved in."
 msgstr "చివరి తెర ఛాయచిత్రంలో దాచబడిఉన్న వివరము."
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:11
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:13
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "తెరపట్టు(స్క్రీన్‌షాట్) తీసుకొనుటకు ముందుగా వేచివుండవలసిన సమయం సెకనులలో."
 
-#: ../gnome-screenshot/gnome-screenshot.schemas.in.h:12
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:14
 msgid "Window-specific screenshot (deprecated)"
 msgstr "విండో-ప్రత్యేకమైన స్క్రీన్‌షాట్ (తీసివేయబడిన)"
 
-#: ../gnome-screenshot/screenshot-dialog.c:239
+#: ../gnome-screenshot/screenshot-dialog.c:215
 msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
@@ -1945,11 +1641,16 @@ msgstr ""
 "తెరపట్టు(స్క్రీన్‌షాట్) ప్రోగ్రామునకు UI నిర్వచన దస్త్రము పోయినది.\n"
 "దయచేసి మీ gnome-utils సంస్థాపనను సరిచూసుకొనండి"
 
-#: ../gnome-screenshot/screenshot-dialog.c:260
+#: ../gnome-screenshot/screenshot-dialog.c:236
 msgid "Select a folder"
 msgstr "సంచయమును ఎంచుకొను"
 
-#: ../gnome-screenshot/screenshot-save.c:57
+#: ../gnome-screenshot/screenshot-dialog.c:354
+#: ../gnome-screenshot/screenshot-save.c:206
+msgid "Screenshot.png"
+msgstr "తెర ఛాయాచిత్రం.png"
+
+#: ../gnome-screenshot/screenshot-save.c:65
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
@@ -1958,43 +1659,21 @@ msgstr ""
 "తాత్కాలిక సంచయములను శుభ్రపరచుటకు వీలుకాదు:\n"
 "%s"
 
-#: ../gnome-screenshot/screenshot-save.c:95
+#: ../gnome-screenshot/screenshot-save.c:104
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr ""
 "శిశువును భద్రపరచు క్రమణం అనుకోకుండా ప్రభావితం అయినది. మేము ఛాయాచిత్రంను డిస్కునకు వ్రాయలేము."
 
-#: ../gnome-screenshot/screenshot-save.c:223
+#: ../gnome-screenshot/screenshot-save.c:246
 msgid "Unknown error saving screenshot to disk"
 msgstr "తెర ఛాయచిత్రం ను ఖనికి దాచుటలో తెలియని దోషము"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../gnome-screenshot/screenshot-utils.c:828
+#: ../gnome-screenshot/screenshot-utils.c:940
 msgid "Untitled Window"
 msgstr "శీర్షికలేని గవాక్షము"
-
-#: ../gnome-screenshot/screenshot-xfer.c:74
-msgid "File already exists"
-msgstr "దస్త్రం ఇదివరకే కలిగివుంది"
-
-#: ../gnome-screenshot/screenshot-xfer.c:77
-#, c-format
-msgid "The file \"%s\" already exists. Would you like to replace it?"
-msgstr "దస్త్రం \"%s\" ఇదివరకే కలిగివుంది. నీవు దాన్నిపునఃస్థాపించుటకు ఇష్టపడుతున్నావా?"
-
-#: ../gnome-screenshot/screenshot-xfer.c:84
-#: ../gsearchtool/gsearchtool-callbacks.c:1722
-msgid "_Replace"
-msgstr "పునఃస్థాపించు(_R)"
-
-#: ../gnome-screenshot/screenshot-xfer.c:122
-msgid "Saving file..."
-msgstr "దస్త్రాన్ని దాయుచున్నది..."
-
-#: ../gnome-screenshot/screenshot-xfer.c:294
-msgid "Can't access source file"
-msgstr "మూలపు దస్త్రాన్ని యాక్సిస్ చేయలేదు"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Locate documents and folders on this computer by name or content"
@@ -2327,138 +2006,142 @@ msgstr "శోధన సాధనం గవాక్షం పెద్దదై
 msgid "Could not open help document."
 msgstr "సహాయ పత్రమును తెరుచుటకు వీలుకాదు"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:345
+#: ../gsearchtool/gsearchtool-callbacks.c:341
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "మీరు %d పత్రమును తెరుచుటకు నిశ్చయమై ఉన్నారా?"
 msgstr[1] "మీరు %d పత్రములను తెరుచుటకు నిశ్చయమై ఉన్నారా?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:350
-#: ../gsearchtool/gsearchtool-callbacks.c:547
+#: ../gsearchtool/gsearchtool-callbacks.c:346
+#: ../gsearchtool/gsearchtool-callbacks.c:531
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "ఇది %d ప్రత్యక గవాక్షమును తెరుస్తుంది."
 msgstr[1] "ఇది %d ప్రత్యక గవాక్షంలను తెరుస్తుంది."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:390
+#: ../gsearchtool/gsearchtool-callbacks.c:382
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "\"%s\" పత్రమును తెరుచుటకు వీలుకాదు."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:419
+#: ../gsearchtool/gsearchtool-callbacks.c:407
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "\"%s\" సంచయమును తెరుచుటకు వీలుకాదు."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:427
+#: ../gsearchtool/gsearchtool-callbacks.c:415
 msgid "The nautilus file manager is not running."
 msgstr "నాటిలస్ దస్త్ర అభికర్త నడుచుటలేదు."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:519
+#: ../gsearchtool/gsearchtool-callbacks.c:503
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "సామర్థ్యముగల పత్రమును ప్రదర్శించుటకు నెలకొల్పబడిన దర్శిని లేదు."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:542
+#: ../gsearchtool/gsearchtool-callbacks.c:526
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "మీరు %d సంచయమును తెరుచుటకు నిశ్చయమై ఉన్నారా?"
 msgstr[1] "మీరు %d సంచయములను తెరుచుటకు నిశ్చయమై ఉన్నారా?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:695
+#: ../gsearchtool/gsearchtool-callbacks.c:675
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "\"%s\" ను చెత్తకుండి కి కదిపించలేము."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:726
+#: ../gsearchtool/gsearchtool-callbacks.c:702
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "\"%s\" ను నీవు శాశ్వతంగా తొలగించదలచుకున్నావా?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:729
+#: ../gsearchtool/gsearchtool-callbacks.c:705
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "చెత్తకుండి లభించలేదు. \"%s\" ను చెత్తకుండికి కదిపించలేము."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:768
+#: ../gsearchtool/gsearchtool-callbacks.c:740
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "\"%s\" ను తొలగించలేము."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:879
+#: ../gsearchtool/gsearchtool-callbacks.c:847
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "\"%s\" తొలగించుటకు విఫలమైనది : %s."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:891
+#: ../gsearchtool/gsearchtool-callbacks.c:859
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "\"%s\"ను కదిపించుట విఫలమైనది: %s."
 
 #. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1019
-#: ../gsearchtool/gsearchtool-callbacks.c:1049
+#: ../gsearchtool/gsearchtool-callbacks.c:987
+#: ../gsearchtool/gsearchtool-callbacks.c:1017
 msgid "_Open"
 msgstr "తెరచు(_O)"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1074
+#: ../gsearchtool/gsearchtool-callbacks.c:1042
 #, c-format
 msgid "_Open with %s"
 msgstr "%s తో తెరువుము (_O)"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1108
+#: ../gsearchtool/gsearchtool-callbacks.c:1077
 #, c-format
 msgid "Open with %s"
 msgstr "%s తో తెరువుము"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1140
+#: ../gsearchtool/gsearchtool-callbacks.c:1110
 msgid "Open Wit_h"
 msgstr "దీనితో తెరువుము (_h)"
 
-#. Popup menu item: Open Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1185
-msgid "Open _Folder"
-msgstr "ఫోల్డర్ తెరువుము (_F)"
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/gsearchtool-callbacks.c:1155
+msgid "Open Containing _Folder"
+msgstr "పొందివున్న ఫోల్డరని తెరువుము (_F)"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1225
+#: ../gsearchtool/gsearchtool-callbacks.c:1195
 msgid "_Save Results As..."
 msgstr "లా ఫలితములు దాచు(_S)..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1607
+#: ../gsearchtool/gsearchtool-callbacks.c:1577
 msgid "Save Search Results As..."
 msgstr "వెతుకు ఫలితాలను లా దాచు..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1638
+#: ../gsearchtool/gsearchtool-callbacks.c:1608
 msgid "Could not save document."
 msgstr "పత్రమును దాచుటకు వీలుకాదు."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1639
+#: ../gsearchtool/gsearchtool-callbacks.c:1609
 msgid "You did not select a document name."
 msgstr "మీరు పత్ర నామమును ఎంచుకొనలేదు."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1669
+#: ../gsearchtool/gsearchtool-callbacks.c:1635
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "\"%s\" పత్రంకు \"%s\" ను దాచలేము."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1703
+#: ../gsearchtool/gsearchtool-callbacks.c:1665
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "పత్రం \"%s\" ఇదివరకే కలిగివున్నది. మీరు దాన్ని పునఃస్థాపించుటకు ఇష్టపడుతున్నారా?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
+#: ../gsearchtool/gsearchtool-callbacks.c:1669
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "మీరు కలిగివున్న దస్త్రంను పునఃస్థాపించినట్టయితే, దాని సారములు చెరిపిరాయబడును."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1772
+#: ../gsearchtool/gsearchtool-callbacks.c:1680
+msgid "_Replace"
+msgstr "పునఃస్థాపించు(_R)"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1730
 msgid "The document name you selected is a folder."
 msgstr "మీరు ఎంచుకున్న పత్ర నామము సంచయం"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1810
+#: ../gsearchtool/gsearchtool-callbacks.c:1768
 msgid "You may not have write permissions to the document."
 msgstr "మీకు పత్రమునకు వ్రాయుటకు అనుమతులు లేవు."
 
@@ -2504,12 +2187,12 @@ msgstr "%s కు జోడి"
 #. * make some or all of them match.
 #.
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1490
+#: ../gsearchtool/gsearchtool-support.c:1497
 msgid " (copy)"
 msgstr "(నకలు)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1492
+#: ../gsearchtool/gsearchtool-support.c:1499
 msgid " (another copy)"
 msgstr "(వేరొక నకలు)"
 
@@ -2517,36 +2200,36 @@ msgstr "(వేరొక నకలు)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1495
-#: ../gsearchtool/gsearchtool-support.c:1497
-#: ../gsearchtool/gsearchtool-support.c:1499
-#: ../gsearchtool/gsearchtool-support.c:1509
+#: ../gsearchtool/gsearchtool-support.c:1502
+#: ../gsearchtool/gsearchtool-support.c:1504
+#: ../gsearchtool/gsearchtool-support.c:1506
+#: ../gsearchtool/gsearchtool-support.c:1516
 msgid "th copy)"
 msgstr "th నకలు)"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1502
+#: ../gsearchtool/gsearchtool-support.c:1509
 msgid "st copy)"
 msgstr "st నకలు)"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1504
+#: ../gsearchtool/gsearchtool-support.c:1511
 msgid "nd copy)"
 msgstr "nd నకలు)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1506
+#: ../gsearchtool/gsearchtool-support.c:1513
 msgid "rd copy)"
 msgstr "rd నకలు)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1523
+#: ../gsearchtool/gsearchtool-support.c:1530
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (నకలు)%s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1525
+#: ../gsearchtool/gsearchtool-support.c:1532
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (వేరొక నకలు)%s"
@@ -2555,233 +2238,232 @@ msgstr "%s (వేరొక నకలు)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1528
-#: ../gsearchtool/gsearchtool-support.c:1530
-#: ../gsearchtool/gsearchtool-support.c:1532
-#: ../gsearchtool/gsearchtool-support.c:1541
+#: ../gsearchtool/gsearchtool-support.c:1535
+#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1539
+#: ../gsearchtool/gsearchtool-support.c:1548
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%dth నకలు)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1535
+#: ../gsearchtool/gsearchtool-support.c:1542
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%dst నకలు)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1544
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%dnd నకలు)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1539
+#: ../gsearchtool/gsearchtool-support.c:1546
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%drd నకలు)%s"
 
-#: ../gsearchtool/gsearchtool-support.c:1586
+#: ../gsearchtool/gsearchtool-support.c:1593
 msgid " (invalid Unicode)"
 msgstr "(నిస్సారమైన యునికోడ్)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1675
+#: ../gsearchtool/gsearchtool-support.c:1682
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1683
+#: ../gsearchtool/gsearchtool-support.c:1690
 #, c-format
 msgid " (%d"
 msgstr " (%d"
 
-#: ../gsearchtool/gsearchtool.c:80
+#: ../gsearchtool/gsearchtool.c:81
 msgid "Contains the _text"
 msgstr "పాఠమును కలిగివున్నది(_t)"
 
-#: ../gsearchtool/gsearchtool.c:82
+#: ../gsearchtool/gsearchtool.c:83
 msgid "_Date modified less than"
 msgstr "తేది కంటే తక్కువ మార్చబడినది(_D)"
 
-#: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
+#: ../gsearchtool/gsearchtool.c:83 ../gsearchtool/gsearchtool.c:84
 msgid "days"
 msgstr "రోజులు"
 
-#: ../gsearchtool/gsearchtool.c:83
+#: ../gsearchtool/gsearchtool.c:84
 msgid "Date modified more than"
 msgstr "తేది కంటే ఎక్కువ మార్చబడినది"
 
-#: ../gsearchtool/gsearchtool.c:85
+#: ../gsearchtool/gsearchtool.c:86
 msgid "S_ize at least"
 msgstr "తక్కువ పరిమాణం వద్ద(_i)"
 
-#: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
+#: ../gsearchtool/gsearchtool.c:86 ../gsearchtool/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "కిలోబైట్స్"
 
-#: ../gsearchtool/gsearchtool.c:86
+#: ../gsearchtool/gsearchtool.c:87
 msgid "Si_ze at most"
 msgstr "చాలా పరిమాణం వద్ద(_z)"
 
-#: ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:88
 msgid "File is empty"
 msgstr "దస్త్రం ఖాళీగావుంది"
 
-#: ../gsearchtool/gsearchtool.c:89
+#: ../gsearchtool/gsearchtool.c:90
 msgid "Owned by _user"
 msgstr "వినియోగదారు ద్వారా స్వకీయమైన(_u)"
 
-#: ../gsearchtool/gsearchtool.c:90
+#: ../gsearchtool/gsearchtool.c:91
 msgid "Owned by _group"
 msgstr "సముదాయం ద్వారా స్వకీయమైన(_g)"
 
-#: ../gsearchtool/gsearchtool.c:91
+#: ../gsearchtool/gsearchtool.c:92
 msgid "Owner is unrecognized"
 msgstr "యజమాని గుర్తింపులేనివాడు"
 
-#: ../gsearchtool/gsearchtool.c:93
+#: ../gsearchtool/gsearchtool.c:94
 msgid "Na_me does not contain"
 msgstr "నామము కలిగి లేదు(_m)"
 
-#: ../gsearchtool/gsearchtool.c:94
+#: ../gsearchtool/gsearchtool.c:95
 msgid "Name matches regular e_xpression"
 msgstr "సాధారణ వ్యక్తీకరణ నామము ఉపమించదు(_x)"
 
-#: ../gsearchtool/gsearchtool.c:96
+#: ../gsearchtool/gsearchtool.c:97
 msgid "Show hidden and backup files"
 msgstr "దాచబడిన మరియు భద్రపరచు దస్త్రములు చూపుము"
 
-#: ../gsearchtool/gsearchtool.c:97
+#: ../gsearchtool/gsearchtool.c:98
 msgid "Follow symbolic links"
 msgstr "చిహ్న పూరితజోడిలను అనుసరించు"
 
-#: ../gsearchtool/gsearchtool.c:98
+#: ../gsearchtool/gsearchtool.c:99
 msgid "Exclude other filesystems"
 msgstr "ఇతర దస్త్రవ్యవస్థలను తీసివేయి"
 
-#: ../gsearchtool/gsearchtool.c:156
-#, fuzzy
+#: ../gsearchtool/gsearchtool.c:157
 msgid "Show version of the application"
-msgstr "కార్యక్షేత్రముల వివరణము చూపుము"
+msgstr "కార్యక్షేత్రముల వివరణమును చూపుము"
 
-#: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
-#: ../gsearchtool/gsearchtool.c:171
+#: ../gsearchtool/gsearchtool.c:158 ../gsearchtool/gsearchtool.c:163
+#: ../gsearchtool/gsearchtool.c:172
 msgid "STRING"
 msgstr "స్ట్రింగ్"
 
-#: ../gsearchtool/gsearchtool.c:158
+#: ../gsearchtool/gsearchtool.c:159
 msgid "PATH"
 msgstr "త్రోవ"
 
-#: ../gsearchtool/gsearchtool.c:159
+#: ../gsearchtool/gsearchtool.c:160
 msgid "VALUE"
 msgstr "విలువ"
 
-#: ../gsearchtool/gsearchtool.c:163 ../gsearchtool/gsearchtool.c:164
+#: ../gsearchtool/gsearchtool.c:164 ../gsearchtool/gsearchtool.c:165
 msgid "DAYS"
 msgstr "రోజులు"
 
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
+#: ../gsearchtool/gsearchtool.c:166 ../gsearchtool/gsearchtool.c:167
 msgid "KILOBYTES"
 msgstr "కిలోబైట్సు"
 
-#: ../gsearchtool/gsearchtool.c:168
+#: ../gsearchtool/gsearchtool.c:169
 msgid "USER"
 msgstr "వినియోగదారి"
 
-#: ../gsearchtool/gsearchtool.c:169
+#: ../gsearchtool/gsearchtool.c:170
 msgid "GROUP"
 msgstr "సమూహం"
 
-#: ../gsearchtool/gsearchtool.c:172
+#: ../gsearchtool/gsearchtool.c:173
 msgid "PATTERN"
 msgstr "క్రమము"
 
-#: ../gsearchtool/gsearchtool.c:383
+#: ../gsearchtool/gsearchtool.c:384
 msgid "A locate database has probably not been created."
 msgstr "గుర్తించు దత్తాంశస్థానము బహుశా సృష్టించబడిఉండక పోవచ్చు"
 
-#: ../gsearchtool/gsearchtool.c:485
+#: ../gsearchtool/gsearchtool.c:486
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "\"%s\" కొరకు అక్షర పరివర్తనం అమర్చు"
 
-#: ../gsearchtool/gsearchtool.c:509
+#: ../gsearchtool/gsearchtool.c:506
 msgid "Searching..."
 msgstr "వెతుకుచున్నది..."
 
-#: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
-#: ../gsearchtool/gsearchtool.c:2988
+#: ../gsearchtool/gsearchtool.c:506 ../gsearchtool/gsearchtool.c:1016
+#: ../gsearchtool/gsearchtool.c:2976
 msgid "Search for Files"
 msgstr "దస్త్రముల కొరకు వెతుకు"
 
-#: ../gsearchtool/gsearchtool.c:961 ../gsearchtool/gsearchtool.c:990
+#: ../gsearchtool/gsearchtool.c:962 ../gsearchtool/gsearchtool.c:991
 msgid "No files found"
 msgstr "ఎటువంటి దస్త్రములు దొరకలేదు"
 
-#: ../gsearchtool/gsearchtool.c:983
+#: ../gsearchtool/gsearchtool.c:984
 msgid "(stopped)"
 msgstr "(ఆపబడినది)"
 
-#: ../gsearchtool/gsearchtool.c:989
+#: ../gsearchtool/gsearchtool.c:990
 msgid "No Files Found"
 msgstr "ఎటువంటి దస్త్రములు దొరకలేదు"
 
-#: ../gsearchtool/gsearchtool.c:994
+#: ../gsearchtool/gsearchtool.c:995
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
 msgstr[0] "%'d దస్త్రం కనుగొనబడింది"
 msgstr[1] "%d దస్త్రాలు కనుగొనబడినవి"
 
-#: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
+#: ../gsearchtool/gsearchtool.c:999 ../gsearchtool/gsearchtool.c:1037
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] "%'d దస్త్రం కనుగొనబడింది"
 msgstr[1] "%'d దస్త్రాలు కనుగొనబడినవి"
 
-#: ../gsearchtool/gsearchtool.c:1127
+#: ../gsearchtool/gsearchtool.c:1128
 msgid "Entry changed called for a non entry option!"
 msgstr "ప్రవేశ పెట్టని ఇఛ్ఛాపూర్వకం కొరకు ప్రవేశము మార్చి పిలవబడినది!"
 
-#: ../gsearchtool/gsearchtool.c:1287
+#: ../gsearchtool/gsearchtool.c:1288
 msgid "Set the text of \"Name contains\" search option"
 msgstr "పాఠం అమర్చుట యొక్క \"నామము కలిగివున్నది\" ఇఛ్ఛాపూర్వకం వెతుకు"
 
-#: ../gsearchtool/gsearchtool.c:1288
+#: ../gsearchtool/gsearchtool.c:1289
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "పాఠం అమర్చుట యొక్క \"సంచయములో చూడుము\"ఇఛ్ఛాపూర్వకం  వెతుకు"
 
-#: ../gsearchtool/gsearchtool.c:1289
+#: ../gsearchtool/gsearchtool.c:1290
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 "క్రింది ఇవ్వబడిన ఒక దాని ద్వారా దస్త్రములు చక్కదిద్దు: నామము, సంచయము, పరిమాణం, రకము, లేదా తేది"
 
-#: ../gsearchtool/gsearchtool.c:1290
+#: ../gsearchtool/gsearchtool.c:1291
 msgid "Set sort order to descending, the default is ascending"
 msgstr "చక్కదిద్దు క్రమంను అవరోహణ క్రమములో అమర్చు, అప్రమేయము ఆరోహణ"
 
-#: ../gsearchtool/gsearchtool.c:1291
+#: ../gsearchtool/gsearchtool.c:1292
 msgid "Automatically start a search"
 msgstr "వెతుకుటను స్వయంచాలకంగా మొదలుపెట్టు"
 
-#: ../gsearchtool/gsearchtool.c:1297
+#: ../gsearchtool/gsearchtool.c:1298
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం ఎంచుకొను"
 
-#: ../gsearchtool/gsearchtool.c:1300
+#: ../gsearchtool/gsearchtool.c:1301
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం ఎంచుకొనుము మరియు అమర్చుము"
 
-#: ../gsearchtool/gsearchtool.c:1407
+#: ../gsearchtool/gsearchtool.c:1408
 msgid "Invalid option passed to sortby command line argument."
 msgstr "చక్కదిద్దు ఆదేశ వాక్య క్రమానుగత సంకేతం కు నిస్సారమైన ఇఛ్ఛాపూర్వకం పంపబడినది."
 
-#: ../gsearchtool/gsearchtool.c:1701
+#: ../gsearchtool/gsearchtool.c:1702
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -2789,17 +2471,17 @@ msgstr ""
 "\n"
 "... ప్రదర్శించుటకు చాలా దోషములు ..."
 
-#: ../gsearchtool/gsearchtool.c:1715
+#: ../gsearchtool/gsearchtool.c:1716
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr "వెతికిన ఫలితం నిస్సారమై ఉండవచ్చు.  చేస్తున్నపుడు అక్కడ దోషములు ఏర్పడినవి వెతుకు."
 
-#: ../gsearchtool/gsearchtool.c:1727 ../gsearchtool/gsearchtool.c:1771
+#: ../gsearchtool/gsearchtool.c:1725 ../gsearchtool/gsearchtool.c:1766
 msgid "Show more _details"
 msgstr "చాలా వివరింపులు చూపుము(_d)"
 
-#: ../gsearchtool/gsearchtool.c:1757
+#: ../gsearchtool/gsearchtool.c:1755
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -2807,151 +2489,150 @@ msgstr ""
 "శోధించ ఫలితాలు తారీఖు మించిపోయినవి లేదా విలువైనవికావు.  మీరు త్వరిత శోధన ప్రయోజనాన్ని అచేతనం "
 "చేయాలనుకుంటున్నారా?"
 
-#: ../gsearchtool/gsearchtool.c:1782
+#: ../gsearchtool/gsearchtool.c:1777
 msgid "Disable _Quick Search"
 msgstr "తొందరగా వెతుకుట నిరుపయోగము(_Q)"
 
-#: ../gsearchtool/gsearchtool.c:1809
+#: ../gsearchtool/gsearchtool.c:1804
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "%d కు పురోగమన సముదాయ id యొక్క శిశువు అమర్చునపుడు విఫలమైంది: %s.\n"
 
-#: ../gsearchtool/gsearchtool.c:1834
+#: ../gsearchtool/gsearchtool.c:1829
 msgid "Error parsing the search command."
 msgstr "వెతుకు ఆదేశంకు పార్సింగ్ దోషము. "
 
-#: ../gsearchtool/gsearchtool.c:1867
+#: ../gsearchtool/gsearchtool.c:1858
 msgid "Error running the search command."
 msgstr "వెతుకు ఆదేశం నడుపుతున్నపుడు దోషము."
 
-#: ../gsearchtool/gsearchtool.c:1987
+#: ../gsearchtool/gsearchtool.c:1974
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం కొరకు పాఠం విలువను చేర్చుము."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:1992
+#: ../gsearchtool/gsearchtool.c:1979
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\" లో %s"
 
-#: ../gsearchtool/gsearchtool.c:1994
+#: ../gsearchtool/gsearchtool.c:1981
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం కొరకు %s లో విలువను చేర్చుము."
 
-#: ../gsearchtool/gsearchtool.c:2052
+#: ../gsearchtool/gsearchtool.c:2039
 #, c-format
 msgid "Remove \"%s\""
 msgstr "\"%s\" తొలగించు"
 
-#: ../gsearchtool/gsearchtool.c:2053
+#: ../gsearchtool/gsearchtool.c:2040
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం తొలగించుటకు నొక్కుము."
 
-#: ../gsearchtool/gsearchtool.c:2146
+#: ../gsearchtool/gsearchtool.c:2133
 msgid "A_vailable options:"
 msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకాలు(_v):"
 
-#: ../gsearchtool/gsearchtool.c:2175
+#: ../gsearchtool/gsearchtool.c:2162
 msgid "Available options"
 msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకాలు"
 
-#: ../gsearchtool/gsearchtool.c:2176
+#: ../gsearchtool/gsearchtool.c:2163
 msgid "Select a search option from the drop-down list."
 msgstr "కిందికి లాగు జాబితా నుండి వెతుకు ఇఛ్ఛాపూర్వకంను ఎంచుకొను"
 
-#: ../gsearchtool/gsearchtool.c:2188
+#: ../gsearchtool/gsearchtool.c:2175
 msgid "Add search option"
 msgstr "వెతుకు ఇఛ్ఛాపూర్వకం చేర్చుము"
 
-#: ../gsearchtool/gsearchtool.c:2189
+#: ../gsearchtool/gsearchtool.c:2176
 msgid "Click to add the selected available search option."
 msgstr "ఎంచుకొనబడిన లభ్యత కల్గిన వెతుకు ఇఛ్ఛాపూర్వకంను చేర్చుటకు నొక్కుము. "
 
-#: ../gsearchtool/gsearchtool.c:2278
+#: ../gsearchtool/gsearchtool.c:2265
 msgid "S_earch results:"
 msgstr "వెతికిన ఫలితాలు(_e):"
 
-#: ../gsearchtool/gsearchtool.c:2322
+#: ../gsearchtool/gsearchtool.c:2309
 msgid "List View"
 msgstr "జాబితా దర్శనం"
 
-#: ../gsearchtool/gsearchtool.c:2431
+#: ../gsearchtool/gsearchtool.c:2418
 msgid "Type"
 msgstr "విధం, రకము"
 
-#: ../gsearchtool/gsearchtool.c:2443
+#: ../gsearchtool/gsearchtool.c:2430
 msgid "Date Modified"
 msgstr "తేది మార్చబడినది"
 
-#: ../gsearchtool/gsearchtool.c:2759
+#: ../gsearchtool/gsearchtool.c:2746
 msgid "_Name contains:"
 msgstr "నామము కలిగివున్నది(_N):"
 
-#: ../gsearchtool/gsearchtool.c:2773 ../gsearchtool/gsearchtool.c:2774
+#: ../gsearchtool/gsearchtool.c:2760 ../gsearchtool/gsearchtool.c:2761
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "wildcards తోగాని లేకుండాగాని దస్త్రనామాన్ని లేదా పాక్షిక దస్త్రనామాన్ని ప్రవేశపెట్టండి."
 
-#: ../gsearchtool/gsearchtool.c:2774
+#: ../gsearchtool/gsearchtool.c:2761
 msgid "Name contains"
 msgstr "నామము కలిగివున్నది"
 
-#: ../gsearchtool/gsearchtool.c:2780
+#: ../gsearchtool/gsearchtool.c:2767
 msgid "_Look in folder:"
 msgstr "సంచయములో చూడుము(_L):"
 
-#: ../gsearchtool/gsearchtool.c:2786
+#: ../gsearchtool/gsearchtool.c:2773
 msgid "Browse"
 msgstr "అన్వేషించు"
 
-#: ../gsearchtool/gsearchtool.c:2795
+#: ../gsearchtool/gsearchtool.c:2782
 msgid "Look in folder"
 msgstr "సంచయం లో చూడుము"
 
-#: ../gsearchtool/gsearchtool.c:2795
+#: ../gsearchtool/gsearchtool.c:2782
 msgid "Select the folder or device from which you want to begin the search."
 msgstr ""
 "దేనినుండైతే మీరు శోధన ప్రారంభించాలని అనుకుంటున్నారో ఆ దస్త్రాన్ని కాని లేదా పరికరాన్ని కాని ఎంపకచేసుకొనండి."
 
-#: ../gsearchtool/gsearchtool.c:2813
+#: ../gsearchtool/gsearchtool.c:2800
 msgid "Select more _options"
 msgstr "చాలా ఇఛ్ఛాపూర్వకాలు ఎంచుకొను(_o)"
 
-#: ../gsearchtool/gsearchtool.c:2822
+#: ../gsearchtool/gsearchtool.c:2809
 msgid "Select more options"
 msgstr "చాలా ఇఛ్ఛాపూర్వకాలు"
 
-#: ../gsearchtool/gsearchtool.c:2822
+#: ../gsearchtool/gsearchtool.c:2809
 msgid "Click to expand or collapse the list of available options."
 msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకముల యొక్క జాబితాను పొడగించుటకు లేదా  నాశనము చేయుటకు నొక్కుము."
 
-#: ../gsearchtool/gsearchtool.c:2846
+#: ../gsearchtool/gsearchtool.c:2833
 msgid "Click to display the help manual."
 msgstr "సహాయ నిర్థేశికత ప్రదర్శించుటకు నొక్కుము"
 
-#: ../gsearchtool/gsearchtool.c:2854
+#: ../gsearchtool/gsearchtool.c:2841
 msgid "Click to close \"Search for Files\"."
 msgstr "మూయుటకు నొక్కుము \"దస్త్రముల కొరకు వెతుకు\"."
 
-#: ../gsearchtool/gsearchtool.c:2880
+#: ../gsearchtool/gsearchtool.c:2867
 msgid "Click to perform a search."
 msgstr "వెతుకుటను నెరవేర్చుటకు నొక్కుము"
 
-#: ../gsearchtool/gsearchtool.c:2881
+#: ../gsearchtool/gsearchtool.c:2868
 msgid "Click to stop a search."
 msgstr "వెతుకుటను ఆపివేయుటకు నొక్కుము"
 
-#: ../gsearchtool/gsearchtool.c:2973
+#: ../gsearchtool/gsearchtool.c:2961
 msgid "- the GNOME Search Tool"
 msgstr "- GNOME శోధన సాధనం"
 
-#: ../gsearchtool/gsearchtool.c:2982
-#, fuzzy, c-format
+#: ../gsearchtool/gsearchtool.c:2970
 msgid "Failed to parse command line arguments: %s\n"
-msgstr "చక్కదిద్దు ఆదేశ వాక్య క్రమానుగత సంకేతం కు నిస్సారమైన ఇఛ్ఛాపూర్వకం పంపబడినది."
+msgstr "చక్కదిద్దు ఆదేశ వాక్య క్రమానుగత సంకేతం కు నిస్సారమైన ఇఛ్ఛాపూర్వకం పంపబడినది:%s\n"
 
 #: ../libeggsmclient/eggdesktopfile.c:165
 #, c-format
@@ -3024,23 +2705,31 @@ msgstr "లాగ్ దస్త్రపు దర్శిని"
 msgid "View or monitor system log files"
 msgstr "దర్శించు లేదా దర్శిని వ్యవస్థ log దస్త్రములు"
 
-#: ../logview/data/gnome-system-log.schemas.in.h:1
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:1
 msgid "Height of the main window in pixels"
 msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క ఎత్తు"
 
-#: ../logview/data/gnome-system-log.schemas.in.h:2
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "భద్రపరిచిన వడపోతలు యొక్క జాబిత"
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "భద్రపరిచిన క్రమబద్ద వ్యక్తీకరణ వడపోతలు యొక్క జాబిత"
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:4
 msgid "Log file to open up on startup"
 msgstr "మొదలు పెట్టినపుడు log దస్త్రం ను తెరుచుటకు"
 
-#: ../logview/data/gnome-system-log.schemas.in.h:3
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:5
 msgid "Log files to open up on startup"
 msgstr "మొదలు పెట్టినపుడు log దస్త్రాల ను తెరుచుటకు"
 
-#: ../logview/data/gnome-system-log.schemas.in.h:4
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:6
 msgid "Size of the font used to display the log"
 msgstr "అక్షరశైలి యొక్క పరిమాణము log ను దర్శించుటకు వాడబడినది"
 
-#: ../logview/data/gnome-system-log.schemas.in.h:5
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:7
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
@@ -3048,11 +2737,11 @@ msgstr ""
 "ప్రారంభం నందు తెరువుటకు లాగ్ దస్త్రముల జాబితాను తెలియపరచండి.అప్రమేయ జాబితా /etc/syslog.conf "
 "చదువుట ద్వారా సృష్టించబడుతుంది."
 
-#: ../logview/data/gnome-system-log.schemas.in.h:6
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:8
 msgid "Specifies the height of the log viewer main window in pixels."
 msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క ఎత్తును నిర్థేశిస్తుంది."
 
-#: ../logview/data/gnome-system-log.schemas.in.h:7
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:9
 msgid ""
 "Specifies the log file displayed at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
@@ -3060,7 +2749,7 @@ msgstr ""
 "ప్రారంభంనందు ప్రదర్శితమయ్యే లాగ్ దస్త్రాన్ని తెలియజేస్తుంది.అప్రమేయమనునది మీ ఆపరేటింగ్ సిస్టమ్ పై ఆధారపడి, /"
 "var/adm/messages కాని లేదా /var/log/messages కాని అవుతుంది."
 
-#: ../logview/data/gnome-system-log.schemas.in.h:8
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:10
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
@@ -3068,99 +2757,97 @@ msgstr ""
 "లాగ్ ను ప్రధాన ట్రీ దర్శిని లో ప్రదర్శించుటకు ఉపయోగించు నిర్దేశిత-వెడల్పు ఫాంటు యొక్క పరిమాణంను "
 "తెలియజేస్తుంది.అప్రమేయం అప్రమేయ టెర్మినల్ ఫాంటు పరిమాణంనుండి తీసుకోబడుతుంది."
 
-#: ../logview/data/gnome-system-log.schemas.in.h:9
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:11
 msgid "Specifies the width of the log viewer main window in pixels."
 msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క పొడవును నిర్థేశిస్తుంది."
 
-#: ../logview/data/gnome-system-log.schemas.in.h:10
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:12
 msgid "Width of the main window in pixels"
 msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క పొడవు"
 
 #: ../logview/data/logview-filter.ui.h:1
 msgid "Background:"
-msgstr ""
+msgstr "పూర్వరంగం"
 
 #: ../logview/data/logview-filter.ui.h:2
-#, fuzzy
 msgid "Effect:"
-msgstr "పర్యవసానాలు"
+msgstr "పర్యవసానం:"
 
 #: ../logview/data/logview-filter.ui.h:3
 msgid "Foreground:"
-msgstr ""
+msgstr "దృశ్యరంగం"
 
 #: ../logview/data/logview-filter.ui.h:4
 msgid "Hide"
-msgstr ""
+msgstr "దాచుట"
 
 #: ../logview/data/logview-filter.ui.h:5
 msgid "Highlight"
-msgstr ""
+msgstr "ఉద్దేపించు"
 
 #: ../logview/data/logview-filter.ui.h:7
-#, fuzzy
 msgid "_Regular Expression:"
 msgstr "సాధారణ సమీకరణం ఖాళీగా వుంది!"
 
-#: ../logview/logview-app.c:375
+#: ../logview/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "దస్త్రము %sను తెరువుట అసాధ్యము"
 
-#: ../logview/logview-filter-manager.c:90
+#: ../logview/logview-filter-manager.c:94
 msgid "Filter name is empty!"
 msgstr "వడపోత నామము ఖాళీగావుంది!"
 
-#: ../logview/logview-filter-manager.c:103
+#: ../logview/logview-filter-manager.c:107
 msgid "Filter name may not contain the ':' character"
 msgstr "వడపోత నామము ':' అక్షరమును కలిగివుండక పోవచ్చును"
 
-#: ../logview/logview-filter-manager.c:126
+#: ../logview/logview-filter-manager.c:130
 msgid "Regular expression is empty!"
 msgstr "సాధారణ సమీకరణం ఖాళీగా వుంది!"
 
-#: ../logview/logview-filter-manager.c:142
+#: ../logview/logview-filter-manager.c:146
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr "సాధారణ సమీకరణం చెల్లనిది: %s"
 
-#: ../logview/logview-filter-manager.c:238
+#: ../logview/logview-filter-manager.c:242
 msgid "Please specify either foreground or background color!"
 msgstr "దయచేసి ఫోర్‌గ్రౌండ్ లేదా బ్యాక్‌గ్రౌండ్ రంగును తెలుపండి!"
 
-#: ../logview/logview-filter-manager.c:293
+#: ../logview/logview-filter-manager.c:296
 msgid "Edit filter"
 msgstr "వడపోతను సరికూర్చుము"
 
-#: ../logview/logview-filter-manager.c:293
+#: ../logview/logview-filter-manager.c:296
 msgid "Add new filter"
 msgstr "కొత్త వడపోతను జతచేయి"
 
-#: ../logview/logview-filter-manager.c:503
+#: ../logview/logview-filter-manager.c:506
 msgid "Filters"
 msgstr "వడపోతలు"
 
-#: ../logview/logview-findbar.c:169
+#: ../logview/logview-findbar.c:173
 msgid "_Find:"
 msgstr "కనుగొనుము (_F):"
 
-#: ../logview/logview-findbar.c:184
+#: ../logview/logview-findbar.c:188
 msgid "Find Previous"
 msgstr "ముందుది కనుగొనుము"
 
-#: ../logview/logview-findbar.c:187
+#: ../logview/logview-findbar.c:191
 msgid "Find previous occurrence of the search string"
 msgstr "వెతుకుమాట యొక్క సంభవించునది ముందుది వెతుకు"
 
-#: ../logview/logview-findbar.c:192
+#: ../logview/logview-findbar.c:196
 msgid "Find Next"
 msgstr "తరువాతది కనుగొనుము"
 
-#: ../logview/logview-findbar.c:195
+#: ../logview/logview-findbar.c:199
 msgid "Find next occurrence of the search string"
 msgstr "వెతుకుమాట యొక్క సంభవించునది తరువాత వెతుకు"
 
-#: ../logview/logview-findbar.c:202
+#: ../logview/logview-findbar.c:206
 msgid "Clear the search string"
 msgstr "శోధన పదబందం(స్ట్రింగు)ను శుభ్రముచేయుము"
 
@@ -3180,169 +2867,504 @@ msgstr "దస్త్రము సాదారణ దస్త్రముక�
 msgid "This version of System Log does not support GZipped logs."
 msgstr "సిస్టమ్ లాగ్‌యొక్క ఈ వర్షన్ GZipped లాగ్‌లను మద్దతించదు."
 
-#: ../logview/logview-loglist.c:311
+#: ../logview/logview-loglist.c:315
 msgid "Loading..."
 msgstr "లోడవుచున్నది..."
 
-#: ../logview/logview-main.c:62
+#: ../logview/logview-main.c:61
 msgid "Show the application's version"
 msgstr "కార్యక్షేత్రముల వివరణము చూపుము"
 
-#: ../logview/logview-main.c:64
+#: ../logview/logview-main.c:63
 msgid "[LOGFILE...]"
 msgstr "[LOGFILE...]"
 
-#: ../logview/logview-main.c:68
+#: ../logview/logview-main.c:67
 msgid " - Browse and monitor logs"
 msgstr "-అన్వేషణ మరియు దర్శిని logs"
 
-#: ../logview/logview-main.c:103
+#: ../logview/logview-main.c:102
 msgid "Log Viewer"
 msgstr "Log దర్శకి"
 
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:788
+#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
 msgid "System Log Viewer"
 msgstr "వ్యవస్థ Log దర్శకి"
 
-#: ../logview/logview-window.c:210
+#: ../logview/logview-window.c:211
 #, c-format
 msgid "last update: %s"
 msgstr "చివరి తాజాపరచు: %s"
 
-#: ../logview/logview-window.c:213
+#: ../logview/logview-window.c:214
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d లైనులు (%s) - %s"
 
-#: ../logview/logview-window.c:343
+#: ../logview/logview-window.c:318
 msgid "Open Log"
 msgstr "log తెరువుము"
 
-#: ../logview/logview-window.c:382
+#: ../logview/logview-window.c:357
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "సహాయమును ప్రదర్శించుటలో అక్కడ వొక దోషమువుంది: %s"
 
-#: ../logview/logview-window.c:498
+#: ../logview/logview-window.c:471
 msgid "Wrapped"
 msgstr "పొట్లం కట్టబడిన"
 
-#: ../logview/logview-window.c:793
+#: ../logview/logview-window.c:765
 msgid "A system log viewer for GNOME."
 msgstr "వ్యవస్థ Log దర్శకి గ్నోమ్ కొరకు."
 
-#: ../logview/logview-window.c:839
+#: ../logview/logview-window.c:817
 msgid "_Filters"
 msgstr "వడపోతలు (_F)"
 
-#: ../logview/logview-window.c:842
+#: ../logview/logview-window.c:820
 msgid "_Open..."
 msgstr "తెరచు(_O)..."
 
-#: ../logview/logview-window.c:842
+#: ../logview/logview-window.c:820
 msgid "Open a log from file"
 msgstr "దస్త్రం నుండి log తెరువుము"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:822
 msgid "_Close"
 msgstr "మూసివేయు(_C)"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:822
 msgid "Close this log"
 msgstr "ఈ log మూసివేయు"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:824
 msgid "_Quit"
 msgstr "త్యజించు(_Q)"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:824
 msgid "Quit the log viewer"
 msgstr "log దర్శకిని త్యజించు"
 
-#: ../logview/logview-window.c:849
+#: ../logview/logview-window.c:827
 msgid "_Copy"
 msgstr "నకలుతీయు(_C)"
 
-#: ../logview/logview-window.c:849
+#: ../logview/logview-window.c:827
 msgid "Copy the selection"
 msgstr "ఎంపికను నకలుతీయు"
 
-#: ../logview/logview-window.c:851
+#: ../logview/logview-window.c:829
 msgid "Select the entire log"
 msgstr "మొత్తం log ను ఎంచుకొను"
 
-#: ../logview/logview-window.c:853
+#: ../logview/logview-window.c:831
 msgid "_Find..."
 msgstr "కనుగొనుము (_F)..."
 
-#: ../logview/logview-window.c:853
+#: ../logview/logview-window.c:831
 msgid "Find a word or phrase in the log"
 msgstr "లాగ్‌నందు పదమును లేదా మాట(ఫ్రేజ్)ను కనుగొనుము"
 
-#: ../logview/logview-window.c:856
+#: ../logview/logview-window.c:834
 msgid "Bigger text size"
 msgstr "పెద్దదైన పాఠం పరిమాణం"
 
-#: ../logview/logview-window.c:858
+#: ../logview/logview-window.c:836
 msgid "Smaller text size"
 msgstr "చిన్నదైన పాఠం పరిమాణం"
 
-#: ../logview/logview-window.c:860
+#: ../logview/logview-window.c:838
 msgid "Normal text size"
 msgstr "సాధారణమైన పాఠం పరిమాణం"
 
-#: ../logview/logview-window.c:863
+#: ../logview/logview-window.c:841
 msgid "Manage Filters"
 msgstr "వడపోతలను నిర్వహించుము"
 
-#: ../logview/logview-window.c:863
+#: ../logview/logview-window.c:841
 msgid "Manage filters"
 msgstr "వడపోతలను నిర్వహించుము"
 
-#: ../logview/logview-window.c:866
+#: ../logview/logview-window.c:844
 msgid "Open the help contents for the log viewer"
 msgstr "log దర్శకి కొరకు సహాయ సారములను తెరువుము"
 
-#: ../logview/logview-window.c:868
+#: ../logview/logview-window.c:846
 msgid "Show the about dialog for the log viewer"
 msgstr " log దర్శకి కొరకు గురించి వివరణ చూపుము"
 
-#: ../logview/logview-window.c:873
+#: ../logview/logview-window.c:851
 msgid "_Statusbar"
 msgstr "సుస్థితి పట్టీ(_S)"
 
-#: ../logview/logview-window.c:873
+#: ../logview/logview-window.c:851
 msgid "Show Status Bar"
 msgstr "సుస్థితి పట్టీ చూపుము"
 
-#: ../logview/logview-window.c:875
+#: ../logview/logview-window.c:853
 msgid "Side _Pane"
 msgstr "పక్క ప్యాన్(_P)"
 
-#: ../logview/logview-window.c:875
+#: ../logview/logview-window.c:853
 msgid "Show Side Pane"
 msgstr "పక్క ప్యాన్ చూపుము"
 
-#: ../logview/logview-window.c:877
+#: ../logview/logview-window.c:855
 msgid "Show matches only"
 msgstr "పోలికలను మాత్రమే చూపుము"
 
-#: ../logview/logview-window.c:877
+#: ../logview/logview-window.c:855
 msgid "Only show lines that match one of the given filters"
 msgstr "ఇచ్చిన వడపోతలలో వొక దానిని పోలు పంక్తులను మాత్రమే చూపుము"
 
-#: ../logview/logview-window.c:1014
+#: ../logview/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "స్వయంగా జరుగుట(_A)"
+
+#: ../logview/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "క్రొత్త వరుసలు రూపొందినప్పుడు స్వయంగా క్రిందకి జరుగము"
+
+#: ../logview/logview-window.c:971
 #, c-format
 msgid "Can't read from \"%s\""
-msgstr ""
+msgstr "\"%s\" నుండి చదవలేకపోతుం ది"
 
-#: ../logview/logview-window.c:1436
+#: ../logview/logview-window.c:1393
 msgid "Version: "
 msgstr "వివరణము:"
 
-#: ../logview/logview-window.c:1543
+#: ../logview/logview-window.c:1500
 msgid "Could not open the following files:"
 msgstr "ఈ క్రింది దస్త్రములను తెరువలేక పోయింది:"
+
+#: ../font-viewer/font-thumbnailer.c:267
+msgid "Text to thumbnail (default: Aa)"
+msgstr "చిరుచిత్రమునకు పాఠ్యము (అప్రమేయం: Aa)"
+
+#: ../font-viewer/font-thumbnailer.c:267
+msgid "TEXT"
+msgstr "TEXT"
+
+#: ../font-viewer/font-thumbnailer.c:269
+msgid "Font size (default: 64)"
+msgstr " అక్షరశైలి పరిమానము (అప్రమేయం: 64)"
+
+#: ../font-viewer/font-thumbnailer.c:269
+msgid "SIZE"
+msgstr "SIZE"
+
+#: ../font-viewer/font-thumbnailer.c:271
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FONT-FILE OUTPUT-FILE"
+
+#: ../font-viewer/font-view.c:289
+msgid "Name:"
+msgstr "నామము:"
+
+#: ../font-viewer/font-view.c:292
+msgid "Style:"
+msgstr "శైలి:"
+
+#: ../font-viewer/font-view.c:304
+msgid "Type:"
+msgstr "రకము:"
+
+#: ../font-viewer/font-view.c:308
+msgid "Size:"
+msgstr "పరిమాణం:"
+
+#: ../font-viewer/font-view.c:352 ../font-viewer/font-view.c:365
+msgid "Version:"
+msgstr "వివరణము:"
+
+#: ../font-viewer/font-view.c:356 ../font-viewer/font-view.c:367
+msgid "Copyright:"
+msgstr "నకలుహక్కు"
+
+#: ../font-viewer/font-view.c:360
+msgid "Description:"
+msgstr "వివరణ:"
+
+#: ../font-viewer/font-view.c:428
+msgid "Installed"
+msgstr "నెలకొల్పించెను"
+
+#: ../font-viewer/font-view.c:430
+msgid "Install Failed"
+msgstr "నెలకొల్పడం విఫలమైనది"
+
+#: ../font-viewer/font-view.c:502
+#, c-format
+msgid "Usage: %s fontfile\n"
+msgstr "ఉపయోగము: %s అక్షరశైలిదస్త్రం\n"
+
+#: ../font-viewer/font-view.c:572
+msgid "I_nstall Font"
+msgstr "అక్షరశైలిని నెలకొల్పడం(_n)"
+
+#: ../font-viewer/gnome-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "అక్షరశైలి దర్శకి"
+
+#: ../font-viewer/gnome-font-viewer.desktop.in.in.h:2
+msgid "Preview fonts"
+msgstr "అక్షరశైలిలను ఉపదర్శనం చేయుము"
+
+#~ msgid "Enable monitoring of home directory"
+#~ msgstr "నివాస వివరణము యొక్క భోధన ఉపయోగించుము"
+
+#~ msgid "Subfolders tooltips visible"
+#~ msgstr "ఉపసంచయాల సాధనచిట్కాలు కనిపించాలి"
+
+#~ msgid "Whether the subfolder tooltips of the selected folder are drawn."
+#~ msgstr "ఎంపికచేసిన సంచయంయొక్క వుపసంయాల సాధనచిట్కాలు వుంచబడాలా."
+
+#~ msgid "Dictionary Look up"
+#~ msgstr "నిఘంటువు వెతుకుట"
+
+#~ msgid "Look up words in a dictionary"
+#~ msgstr "నిఘంటువులో పదములు వెతుకుట"
+
+#~ msgid "Cl_ear"
+#~ msgstr "తీసివేయు(_e)"
+
+#~ msgid "_Look Up Selected Text"
+#~ msgstr "‌ఎంచుకున్న పాఠం వెతుకుము(_L)"
+
+#~ msgid "_Print"
+#~ msgstr "ముద్రించు(_P)"
+
+#~ msgid "_Save"
+#~ msgstr "దాచు(_S)"
+
+#~ msgid "Dictionary server (Deprecated)"
+#~ msgstr "సేవిక నిఘంటువు (నివారింపమనెను)"
+
+#~ msgid "Port used to connect to server (Deprecated)"
+#~ msgstr "సేవిక బంధం కు పోర్టును వాడుదురు (నివారింపమనెను)"
+
+#~ msgid ""
+#~ "Specify whether to use smart lookup. This key is dependant on whether the "
+#~ "dictionary server supports this option. The default is TRUE. This key is "
+#~ "deprecated and no longer in use."
+#~ msgstr ""
+#~ "తెలివిగా వెతుకుట ను ఉపయోగించాలేమో తెలియజేస్తుంది.నిఘంటువు సేవిక ఈ ఐచ్చికానికి మద్దతిస్తుందో లేదో దాని మీద "
+#~ "ఈ మీట ఆధారపడి ఉంటుంది.అప్రమేయంగా TRUE. ఈ మీట నివారింపబడింది మరియు ఉపయోగంలో లేదు."
+
+#~ msgid "The default height of the application window"
+#~ msgstr "కార్యక్షేత్ర గవాక్షం యొక్క అప్రమేయ ఎత్తు"
+
+#~ msgid "The default width of the application window"
+#~ msgstr "కార్యక్షేత్ర గవాక్షం యొక్క అప్రమేయ పొడవు"
+
+#~ msgid ""
+#~ "The dictionary server to connect to. The default server is dict.org. See "
+#~ "http://www.dict.org for details on other servers. This key is deprecated "
+#~ "and no longer in use."
+#~ msgstr ""
+#~ "అనుసంధానించుటకు నిఘంటువు సేవిక.అప్రమేయ సేవిక dict.org.ఇతర సేవకల పై వివరములు కొరకు "
+#~ "http://www.dict.org ను చూడండి.ఈ మీట నివారించబడింది మరియు ఉపయోగంలోలేదు."
+
+#~ msgid "The page of the sidebar to show"
+#~ msgstr "పుట యొక్క ప్రక్క నిర్థేశి చూపుటకు"
+
+#~ msgid ""
+#~ "The port number to connect to. The default port is 2628. This key is "
+#~ "deprecated and no longer in use."
+#~ msgstr ""
+#~ "అనుసంధానించుటకు పోర్ట సంఖ్య.అప్రమేయ పోర్టు 2628.ఈ మీట నివారించబడింది మరియు ఉపయోగంలోలేదు."
+
+#~ msgid "The width of the sidebar"
+#~ msgstr "ప్రక్క నిర్థేశి  యొక్క పొడవు"
+
+#~ msgid ""
+#~ "This key defines the width of the sidebar and it's used to remember the "
+#~ "setting across sessions."
+#~ msgstr ""
+#~ "ఈ మీట ప్రక్కపట్టీ యొక్క వెడల్పు నిర్వచింస్తుంది మరియు ఇది సెషన్లన్నిటి అమరికలను గుర్తుంచకొనుటకు "
+#~ "ఉపయోగించబడుతుంది."
+
+#~ msgid ""
+#~ "This key defines the window height and it's used to remember the size of "
+#~ "the dictionary window across sessions. Setting it to -1 will make the "
+#~ "dictionary window use a height based on the font size."
+#~ msgstr ""
+#~ "ఈ మీట గవాక్షం ఎత్తును నిర్వచిస్తుంది మరియు నిఘంటువు గవాక్ష పరిమాణంను అన్ని సెషన్లనందు "
+#~ "గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.దీనిని -1 కు అమర్చుట ద్వారా నిఘంటువు గవాక్షం ఫాంటు "
+#~ "పరిమాణం ను ఆధారంచేసుకొని ఎత్తును ఉపయోగించునట్లు చేస్తుంది."
+
+#~ msgid ""
+#~ "This key defines the window width and it's used to remember the size of "
+#~ "the dictionary window across sessions. Setting it to -1 will make the "
+#~ "dictionary window use a width based on the font size."
+#~ msgstr ""
+#~ "ఈ మీట గవాక్షం వెడల్పును నిర్వచిస్తుంది మరియు నిఘంటువు గవాక్ష పరిమాణంను అన్ని సెషన్లనందు "
+#~ "గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.దీనిని -1 కు అమర్చుట ద్వారా నిఘంటువు గవాక్షం ఫాంటు "
+#~ "పరిమాణం ను ఆధారంచేసుకొని వెడల్పును ఉపయోగించునట్లు చేస్తుంది."
+
+#~ msgid ""
+#~ "This key defines whether the sidebar should be visible and it's used to "
+#~ "remember the state of the sidebar across sessions. Setting it to TRUE "
+#~ "will make the sidebar always be displayed."
+#~ msgstr ""
+#~ "ఈ మీట ప్రక్కపట్టీ కనిపించాలేమో తెలుపుతుంది మరియు ఇది అన్ని సెషన్లందు ప్రక్కపట్టీ యెక్క స్థితి "
+#~ "గుర్తుంచుకొనుటకు ఉపయోగపడుతుంది.దీనిని TRUE గా అమర్చుట ద్వారా ప్రక్కపట్టీ ఎల్లప్పుడూ "
+#~ "ప్రదర్శితమగునట్లు చేస్తుంది."
+
+#~ msgid ""
+#~ "This key defines whether the statusbar should be visible and it's used to "
+#~ "remember the state of the statusbar across sessions. Setting it to TRUE "
+#~ "will make the statusbar always be displayed."
+#~ msgstr ""
+#~ "ఈ మీట సుస్థితిపట్టీ కనిపించాలేమో తెలుపుతుంది మరియు ఇది అన్ని సెషన్లందు సుస్థితిపట్టీ యెక్క స్థితి "
+#~ "గుర్తుంచుకొనుటకు ఉపయోగపడుతుంది.దీనిని TRUE గా అమర్చుట ద్వారా సుస్థితిపట్టీ ఎల్లప్పుడూ "
+#~ "ప్రదర్శితమగునట్లు చేస్తుంది."
+
+#~ msgid ""
+#~ "This key defines whether the window should be maximized and it's used to "
+#~ "remember the state of the dictionary window across sessions. Setting it "
+#~ "to TRUE will make the window always appear as maximized."
+#~ msgstr ""
+#~ "ఈ మీట గవాక్షం పెద్దదిగా కనిపించాలేమో తెలుపుతుంది మరియు ఇది అన్ని సెషన్లందు నిఘంటువు గవాక్షం యెక్క "
+#~ "స్థితి గుర్తుంచుకొనుటకు ఉపయోగపడుతుంది.దీనిని TRUE గా అమర్చుట ద్వారా గవాక్షం ఎల్లప్పుడూ "
+#~ "పెద్దదిగాఉండునట్లు చేస్తుంది."
+
+#~ msgid ""
+#~ "This key defines which page of the sidebar should be displayed and it's "
+#~ "used to remember the setting across sessions.. It can be \"speller\" or "
+#~ "\"databases\"."
+#~ msgstr ""
+#~ "ఈ మీట ఏ పుటయొక్క ప్రక్కపట్టీ ప్రదర్శితమవ్వాలో నిర్వచిస్తుంది మరియు ఇది అమరికలను అన్ని సెషన్లందు "
+#~ "గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.. ఇది \"speller\" లేదా \"databases\" అవ్వగలదు."
+#~ "\"spell"
+
+#~ msgid "Use smart lookup (Deprecated)"
+#~ msgstr "వినియోగదారు తెలివైన వెతుకుట (నివారింపమనెను)"
+
+#~ msgid "Whether the application window should be maximized"
+#~ msgstr "కార్యక్షేత్ర గవాక్షము పెద్దదిచేయబడుతుందా లేదా"
+
+#~ msgid "Whether the statusbar should be visible"
+#~ msgstr "సుస్థితి పట్టీ కనబడుతుందా లేదా"
+
+#~ msgid ""
+#~ "Definition for '%s'\n"
+#~ "  From '%s':\n"
+#~ "\n"
+#~ "%s\n"
+#~ msgstr ""
+#~ "నిర్వచనం కొరకు '%s'\n"
+#~ "నుండి '%s':\n"
+#~ "\n"
+#~ "%s\n"
+
+#~ msgid "Error: %s\n"
+#~ msgstr "దోషం:%s\n"
+
+#~ msgid "See gnome-dictionary --help for usage\n"
+#~ msgstr "గ్నోమ్-నిఘంటువు --సహాయము వాడుట కొరకు చూడుము\n"
+
+#~ msgid "Unable to find a suitable dictionary source"
+#~ msgstr "పొందిక కల్గిన నిఘంటువు వనరు ను వెతకలేక పోయింది"
+
+#~ msgid ""
+#~ "Error while looking up the definition of \"%s\":\n"
+#~ "%s"
+#~ msgstr ""
+#~ " \"%s\" యొక్క నిర్వచనం చూస్తున్నపుడు దోషము ఏర్పడింది:\n"
+#~ "%s"
+
+#~ msgid "word"
+#~ msgstr "పదము"
+
+#~ msgid "source"
+#~ msgstr "వనరు"
+
+#~ msgid "Show available dictionary sources"
+#~ msgstr "లభ్యత కల్గిన నిఘంటువు వనరులను చూపుము"
+
+#~ msgid "Print result to the console"
+#~ msgstr "ఊరడించు ఫలితమును ముద్రించు"
+
+#~ msgid "db"
+#~ msgstr "db"
+
+#~ msgid "strat"
+#~ msgstr "మొదలుపెట్టు"
+
+#~ msgid "Clear the definitions found"
+#~ msgstr "లభించిన నిర్వచనములు శుభ్రపరచుము"
+
+#~ msgid "Clear definition"
+#~ msgstr "నిర్వచనము శుభ్రపరచు"
+
+#~ msgid "Clear the text of the definition"
+#~ msgstr "నిర్వచనము యొక్క పాఠంను శుభ్రపరచుము"
+
+#~ msgid "Print the definitions found"
+#~ msgstr "లభించిన నిర్వచనములను ముద్రించుము"
+
+#~ msgid "Print definition"
+#~ msgstr "నిర్వచనము ముద్రించు"
+
+#~ msgid "Print the text of the definition"
+#~ msgstr "నిర్వచనం యొక్క పాఠంను ముద్రించు"
+
+#~ msgid "Save the definitions found"
+#~ msgstr "లభించిన నిర్వచనములు దాచుము"
+
+#~ msgid "Save definition"
+#~ msgstr "నిర్వచనం దాయు"
+
+#~ msgid "Save the text of the definition to a file"
+#~ msgstr "దస్త్రం నకు పాఠం యొక్క నిర్వచనంను దాచుము"
+
+#~ msgid "Click to view the dictionary window"
+#~ msgstr "నిఘంటువు గవాక్షంను దర్శించుటకు క్లిక్ చేయుము"
+
+#~ msgid "Toggle dictionary window"
+#~ msgstr "మార్పు నిఘంటువు గవాక్షము"
+
+#~ msgid "Show or hide the definition window"
+#~ msgstr "నిర్వచనము గవాక్షమును చూపుము లేదా దాచుము"
+
+#~ msgid "Type the word you want to look up"
+#~ msgstr "నీవు చూచుటకు కావలసిన పదమును టైప్ చేయుము"
+
+#~ msgid "Dictionary entry"
+#~ msgstr "నిఘంటువు చేర్పు"
+
+#~ msgid "Unable to connect to GConf"
+#~ msgstr "GConf కు అనుసంధాన పరచలేము"
+
+#~ msgid "Unable to get notification for preferences"
+#~ msgstr "అభీష్టాల కొరకు తాఖీదు ఇచ్చుటను పొందలేము"
+
+#~ msgid "Unable to get notification for the document font"
+#~ msgstr "పత్ర అక్షర శైలి కొరకు తాఖీదు ఇచ్చుటను పొందలేము"
+
+#~ msgid "Unable to rename file '%s' to '%s': %s"
+#~ msgstr "'%s'  కు '%s' దస్త్ర నామమును తిరగ రాయలేము: %s"
+
+#~ msgid "Unable to create the data directory '%s': %s"
+#~ msgstr "'%s' దత్తాంశ వివరణమును సృష్టించుటకు వీలుకాదు: %s"
+
+#~ msgid "Screenshot-%d.png"
+#~ msgstr "తెర ఛాయాచిత్రం-%d.png"
+
+#~ msgid "File already exists"
+#~ msgstr "దస్త్రం ఇదివరకే కలిగివుంది"
+
+#~ msgid "The file \"%s\" already exists. Would you like to replace it?"
+#~ msgstr "దస్త్రం \"%s\" ఇదివరకే కలిగివుంది. నీవు దాన్నిపునఃస్థాపించుటకు ఇష్టపడుతున్నావా?"
+
+#~ msgid "Saving file..."
+#~ msgstr "దస్త్రాన్ని దాయుచున్నది..."
+
+#~ msgid "Can't access source file"
+#~ msgstr "మూలపు దస్త్రాన్ని యాక్సిస్ చేయలేదు"
 
 #~ msgid "Save snapshot"
 #~ msgstr "స్నాప్‌షాట్‌ను దాయుము"
