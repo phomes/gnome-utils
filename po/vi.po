@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-10-08 20:07+0000\n"
-"PO-Revision-Date: 2011-04-14 18:42+0700\n"
+"PO-Revision-Date: 2011-10-19 19:45+1100\n"
 "Last-Translator: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -902,7 +902,6 @@ msgid "Name"
 msgstr "Tên"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:247
-#, fuzzy
 #| msgid "The display name of this dictonary source"
 msgid "The display name of this dictionary source"
 msgstr "Tên hiển thị của nguồn từ điển này"
@@ -921,7 +920,6 @@ msgid "Database"
 msgstr "Cơ sở dữ liệu"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:275
-#, fuzzy
 #| msgid "The default database of this dictonary source"
 msgid "The default database of this dictionary source"
 msgstr "Cơ sở dữ liệu mặc định của nguồn từ điển này"
@@ -932,7 +930,6 @@ msgid "Strategy"
 msgstr "Chiến lược"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:289
-#, fuzzy
 #| msgid "The default strategy of this dictonary source"
 msgid "The default strategy of this dictionary source"
 msgstr "Chiến lược mặc định của nguồn từ điển này"
@@ -1492,25 +1489,24 @@ msgstr "Không thể chụp hình cửa sổ hiện thời"
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
 #: ../gnome-screenshot/gnome-screenshot.c:1013
-#, fuzzy, c-format
+#, c-format
 #| msgid "Screenshot-%s.png"
 msgid "Screenshot at %s.png"
-msgstr "Hình-chụp-%s.png"
+msgstr "Hình chụp lúc %s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
 #: ../gnome-screenshot/gnome-screenshot.c:1020
-#, fuzzy, c-format
+#, c-format
 #| msgid "Screenshot-%s-%d.png"
 msgid "Screenshot at %s - %d.png"
-msgstr "Hình-chụp-%s-%d.png"
+msgstr "Hình chụp lúc %s - %d.png"
 
 #: ../gnome-screenshot/gnome-screenshot.c:1374
-#, fuzzy
 #| msgid "Set the model of the chart"
 msgid "Send the grab directly to the clipboard"
-msgstr "Chọn kiểu biểu đồ"
+msgstr "Gửi hình chụp thẳng vào bảng tạm"
 
 #: ../gnome-screenshot/gnome-screenshot.c:1375
 msgid "Grab a window instead of the entire screen"
@@ -1561,10 +1557,9 @@ msgid "Save images of your desktop or individual windows"
 msgstr "Lưu ảnh của màn hình nền hay cửa sổ riêng"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
-#, fuzzy
 #| msgid "Screenshot.png"
 msgid "Screenshot"
-msgstr "Hình-chụp.png"
+msgstr "Chụp hình"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:1
 msgid "*"
