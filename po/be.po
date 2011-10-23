@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"utils&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-07-19 20:02+0000\n"
-"PO-Revision-Date: 2011-09-11 22:13+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-24 01:31+0300\n"
+"PO-Revision-Date: 2011-10-24 01:32+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
 msgid "Check folder sizes and available disk space"
@@ -38,6 +38,14 @@ msgstr "_Выберыце прыстасаванні для даследаван
 msgid "_Monitor changes to your home folder"
 msgstr "_Сачыць за зменамі ў хатняй папцы"
 
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:1
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr ""
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:2
+msgid "Active Chart"
+msgstr ""
+
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
 msgstr ""
@@ -48,6 +56,27 @@ msgstr ""
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:5
 msgid "Statusbar is Visible"
+msgstr ""
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:6
+msgid "Toolbar is Visible"
+msgstr ""
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:7
+#, fuzzy
+msgid "Whether any change to the home directory should be monitored."
+msgstr "Змены ў хатняй папцы не будуць адсочвацца."
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:8
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr ""
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:9
+msgid "Whether the toolbar should be visible in main window."
+msgstr ""
+
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:10
+msgid "Which type of chart should be displayed."
 msgstr ""
 
 #: ../baobab/data/baobab-main-window.ui.h:1
@@ -248,7 +277,9 @@ msgstr "Не ўдалося апазнаць ні аднаго пункта ма
 
 #: ../baobab/src/baobab.c:1300
 msgid "Without mount points disk usage cannot be analyzed."
-msgstr "Без пунктаў мацавання немагчыма прааналізаваць выкарыстанне дыскавай прасторы."
+msgstr ""
+"Без пунктаў мацавання немагчыма прааналізаваць выкарыстанне дыскавай "
+"прасторы."
 
 #: ../baobab/src/baobab-chart.c:205
 msgid "Maximum depth"
@@ -406,7 +437,8 @@ msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
 msgstr ""
-"Змесціва хатняй папкі было зменена. Каб абнавіць інфармацыю аб выкарыстанні дыскавай прасторы, перачытайце яе."
+"Змесціва хатняй папкі было зменена. Каб абнавіць інфармацыю аб выкарыстанні "
+"дыскавай прасторы, перачытайце яе."
 
 #: ../baobab/src/baobab-treeview.c:84
 msgid "_Rescan"
@@ -493,7 +525,9 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"Гэта праграма з'яўляецца свабодным апраграмаваннем. Вы можаце распаўсюджваць яе згодна з умовамі Агульнай Грамадскай Ліцэнзіі GNU (GPL), апублікаванай Фондам свабоднага апраграмавання, версіі 2 ці любой пазнейшай."
+"Гэта праграма з'яўляецца свабодным апраграмаваннем. Вы можаце распаўсюджваць "
+"яе згодна з умовамі Агульнай Грамадскай Ліцэнзіі GNU (GPL), апублікаванай "
+"Фондам свабоднага апраграмавання, версіі 2 ці любой пазнейшай."
 
 #: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
 msgid ""
@@ -502,7 +536,10 @@ msgid ""
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
 msgstr ""
-"Гэта праграма распаўсюджваецца з надзеяй, што яна будзе карыснай, але без ніякіх гарантый, у тым ліку камерцыйнай вартасці праграмы і наогул яе карысці. Падрабязней глядзіце ў тэксце Агульнай Грамадскай Ліцэнзіі GNU (GPL)."
+"Гэта праграма распаўсюджваецца з надзеяй, што яна будзе карыснай, але без "
+"ніякіх гарантый, у тым ліку камерцыйнай вартасці праграмы і наогул яе "
+"карысці. Падрабязней глядзіце ў тэксце Агульнай Грамадскай Ліцэнзіі GNU "
+"(GPL)."
 
 #: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
 msgid ""
@@ -510,7 +547,10 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr ""
-"Вы павінны былі атрымаць копію Агульнай Грамадскай Ліцэнзіі GNU (GPL) разам з гэтай праграмай. Калі вы не атрымалі яе, паведаміце пра гэта Фонду свабоднага апраграмавання на адрас: the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+"Вы павінны былі атрымаць копію Агульнай Грамадскай Ліцэнзіі GNU (GPL) разам "
+"з гэтай праграмай. Калі вы не атрымалі яе, паведаміце пра гэта Фонду "
+"свабоднага апраграмавання на адрас: the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 
 #: ../baobab/src/callbacks.c:101
 msgid "Baobab"
@@ -562,6 +602,15 @@ msgstr ""
 msgid "The default search strategy to use"
 msgstr ""
 
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The font to be used when printing"
+msgstr ""
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:4
+#, fuzzy
+msgid "The font to be used when printing a definition."
+msgstr "Прызначыць шрыфт для друку азначэнняў"
+
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:5
 msgid ""
 "The name of the default individual database or meta-database to use on a "
@@ -569,9 +618,21 @@ msgid ""
 "present in a dictionary source should be searched"
 msgstr ""
 
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:7
 msgid "The name of the dictionary source used"
 msgstr ""
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:8
+#, fuzzy
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr "Назва сервера слоўнікаў для злучэння"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:1
 msgid "Print"
@@ -744,7 +805,9 @@ msgstr ""
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1860
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "Тэрмін чакання актыўнасці для злучэння з серверам слоўнікаў \"%s:%d\" вычарпаны"
+msgstr ""
+"Тэрмін чакання актыўнасці для злучэння з серверам слоўнікаў \"%s:%d\" "
+"вычарпаны"
 
 #: ../gnome-dictionary/libgdict/gdict-client-context.c:1894
 #, c-format
@@ -789,40 +852,40 @@ msgstr "Ачысціць спіс наяўных базаў даных"
 msgid "Error while matching"
 msgstr "Памылка падчас пошуку адпаведнікаў"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1120
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1214
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1248
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1127
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1221
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1255
 #: ../logview/logview-window.c:486
 msgid "Not found"
 msgstr "Не знойдзена"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1309
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1316
 msgid "F_ind:"
 msgstr "_Шукаць:"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1322
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1329
 msgid "_Previous"
 msgstr "На_зад"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:1330
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:1337
 msgid "_Next"
 msgstr "На_перад"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2505
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2512
 msgid "Error while looking up definition"
 msgstr "Памылка падчас пошуку азначэння"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2547
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2554
 #: ../gnome-dictionary/libgdict/gdict-speller.c:736
 msgid "Another search is in progress"
 msgstr "Ужо працуе іншы пошук"
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2548
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2555
 #: ../gnome-dictionary/libgdict/gdict-speller.c:737
 msgid "Please wait until the current search ends."
 msgstr "Пачакайце заканчэння актыўнага пошуку."
 
-#: ../gnome-dictionary/libgdict/gdict-defbox.c:2587
+#: ../gnome-dictionary/libgdict/gdict-defbox.c:2594
 msgid "Error while retrieving the definition"
 msgstr "Памылка падчас атрымання азначэння"
 
@@ -902,14 +965,16 @@ msgstr "У азначэнні крыніцы слоўнікаў не знойд�
 #: ../gnome-dictionary/libgdict/gdict-source.c:530
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "Не ўдалося атрымаць значэнне ключа \"%s\" з азначэння крыніцы слоўнікаў: %s"
+msgstr ""
+"Не ўдалося атрымаць значэнне ключа \"%s\" з азначэння крыніцы слоўнікаў: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:555
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
-"Не ўдалося атрымаць значэнне ключа \"%s\" з файла азначэння крыніцы слоўнікаў: %s"
+"Не ўдалося атрымаць значэнне ключа \"%s\" з файла азначэння крыніцы "
+"слоўнікаў: %s"
 
 #: ../gnome-dictionary/libgdict/gdict-source.c:741
 #, c-format
@@ -947,7 +1012,8 @@ msgstr "Ачысціць спіс падобных слоў"
 
 #: ../gnome-dictionary/libgdict/gdict-speller.c:377
 msgid "The GdictContext object used to get the word definition"
-msgstr "Аб'ект GdictContext, які выкарыстоўваецца для атрымання азначэнняў слоў"
+msgstr ""
+"Аб'ект GdictContext, які выкарыстоўваецца для атрымання азначэнняў слоў"
 
 #: ../gnome-dictionary/libgdict/gdict-speller.c:384
 msgid "The database used to query the GdictContext"
@@ -1331,81 +1397,11 @@ msgstr "Наяўныя стратэгіі пошуку"
 msgid "Dictionary sources"
 msgstr "Крыніцы слоўнікаў"
 
-#: ../gnome-screenshot/gnome-screenshot.c:137
-msgid "Error loading the help page"
-msgstr "Памылка адкрыцця даведніка"
-
-#: ../gnome-screenshot/gnome-screenshot.c:249
-msgid "None"
-msgstr "Няма"
-
-#: ../gnome-screenshot/gnome-screenshot.c:250
-msgid "Drop shadow"
-msgstr "Кінуць цень"
-
-#: ../gnome-screenshot/gnome-screenshot.c:251
-msgid "Border"
-msgstr "Аблямоўка"
-
-#. * Include pointer *
-#: ../gnome-screenshot/gnome-screenshot.c:355
-msgid "Include _pointer"
-msgstr "_Улучыць паказальнік мышы"
-
-#. * Include window border *
-#: ../gnome-screenshot/gnome-screenshot.c:364
-msgid "Include the window _border"
-msgstr "Улучыць _аблямоўку акна"
-
-#: ../gnome-screenshot/gnome-screenshot.c:379
-msgid "Apply _effect:"
-msgstr "Ужыць спецыяльны _эфект:"
-
-#: ../gnome-screenshot/gnome-screenshot.c:441
-msgid "Grab the whole _desktop"
-msgstr "Зняць увесь _стол"
-
-#: ../gnome-screenshot/gnome-screenshot.c:453
-msgid "Grab the current _window"
-msgstr "Зняць актыўнае _акно"
-
-#: ../gnome-screenshot/gnome-screenshot.c:465
-msgid "Select _area to grab"
-msgstr "Вылучыць _абшар для здымка"
-
-#. translators: this is the first part of the "grab after a
-#. * delay of <spin button> seconds".
-#.
-#: ../gnome-screenshot/gnome-screenshot.c:482
-msgid "Grab _after a delay of"
-msgstr "З_няць з затрымкай у"
-
-#. translators: this is the last part of the "grab after a
-#. * delay of <spin button> seconds".
-#.
-#: ../gnome-screenshot/gnome-screenshot.c:502
-#: ../gnome-screenshot/gnome-screenshot.c:1381
-msgid "seconds"
-msgstr "секунд"
-
-#: ../gnome-screenshot/gnome-screenshot.c:520
-#: ../gnome-screenshot/gnome-screenshot.c:528
-msgid "Take Screenshot"
-msgstr "Экранны здымак"
-
-#: ../gnome-screenshot/gnome-screenshot.c:529
-msgid "Effects"
-msgstr "Спецыяльныя эфекты"
-
-#: ../gnome-screenshot/gnome-screenshot.c:534
-msgid "Take _Screenshot"
-msgstr "Зрабіць _экранны здымак"
-
-#: ../gnome-screenshot/gnome-screenshot.c:640
+#: ../gnome-screenshot/gnome-screenshot.c:143
 msgid "Error while saving screenshot"
 msgstr "Памылка падчас захавання экраннага здымка"
 
-#: ../gnome-screenshot/gnome-screenshot.c:644
+#: ../gnome-screenshot/gnome-screenshot.c:147
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1416,83 +1412,61 @@ msgstr ""
 " Памылка: %s.\n"
 " Выберыце іншае месца для файла і паўтарыце спробу."
 
-#: ../gnome-screenshot/gnome-screenshot.c:798
+#: ../gnome-screenshot/gnome-screenshot.c:336
 msgid "Screenshot taken"
 msgstr "Экранны здымак зроблены"
 
-#: ../gnome-screenshot/gnome-screenshot.c:905
+#: ../gnome-screenshot/gnome-screenshot.c:495
 msgid "Unable to take a screenshot of the current window"
 msgstr "Не ўдалося зрабіць здымак актыўнага акна"
 
-#. Translators: This is a strftime format string.
-#. * It is used to display the time in 24-hours format (eg, like
-#. * in France: 20:10).
-#: ../gnome-screenshot/gnome-screenshot.c:1008
-msgid "%Y-%m-%d %H:%M:%S"
-msgstr "%d/%m/%Y %H:%M:%S"
-
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:1015
-#, c-format
-msgid "Screenshot at %s.png"
-msgstr "Экранны здымак (%s).png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:1022
-#, c-format
-msgid "Screenshot at %s - %d.png"
-msgstr "Экранны здымак - %2$d (%1$s).png"
-
-#: ../gnome-screenshot/gnome-screenshot.c:1376
+#: ../gnome-screenshot/gnome-screenshot.c:662
 msgid "Send the grab directly to the clipboard"
 msgstr "Скапіраваць здымак у буфер абмену"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1377
+#: ../gnome-screenshot/gnome-screenshot.c:663
 msgid "Grab a window instead of the entire screen"
 msgstr "Зняць акно замест усяго экрана"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1378
+#: ../gnome-screenshot/gnome-screenshot.c:664
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Зняць пэўны абшар замест усяго экрана"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1379
+#: ../gnome-screenshot/gnome-screenshot.c:665
 msgid "Include the window border with the screenshot"
 msgstr "Улучыць у здымак аблямоўку акна"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1380
+#: ../gnome-screenshot/gnome-screenshot.c:666
 msgid "Remove the window border from the screenshot"
 msgstr "Выдаліць са здымка аблямоўку акна"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1381
+#: ../gnome-screenshot/gnome-screenshot.c:667
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Зрабіць экранны здымак пасля затрымкі [у секундах]"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1382
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#.
+#: ../gnome-screenshot/gnome-screenshot.c:667
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:423
+msgid "seconds"
+msgstr "секунд"
+
+#: ../gnome-screenshot/gnome-screenshot.c:668
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Спецыяльны эфект для аблямоўкі (shadow, border ці none)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1382
+#: ../gnome-screenshot/gnome-screenshot.c:668
 msgid "effect"
 msgstr "спецэфект"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1383
+#: ../gnome-screenshot/gnome-screenshot.c:669
 msgid "Interactively set options"
 msgstr "Інтэрактыўная настройка опцый"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1394
+#: ../gnome-screenshot/gnome-screenshot.c:680
 msgid "Take a picture of the screen"
 msgstr "Экранныя здымкі"
-
-#: ../gnome-screenshot/gnome-screenshot.c:1412
-#, c-format
-msgid ""
-"Conflicting options: --window and --area should not be used at the same "
-"time.\n"
-msgstr ""
-"Канфліктныя опцыі: нельга адначасова ўжыць --window і --area.\n"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
 msgid "Save images of your desktop or individual windows"
@@ -1501,6 +1475,16 @@ msgstr "Захаванне здымкаў стала ці асобных вок�
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Screenshot"
 msgstr "Экранны здымак"
+
+#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:3
+#, fuzzy
+msgid "Take a screenshot of the current window"
+msgstr "Не ўдалося зрабіць здымак актыўнага акна"
+
+#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:4
+#, fuzzy
+msgid "Take a screenshot of the whole screen"
+msgstr "Экранныя здымкі"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:1
 msgid "*"
@@ -1523,15 +1507,88 @@ msgstr "_Захаваць у папцы:"
 msgid "_Name:"
 msgstr "_Назва:"
 
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:1
+#, fuzzy
+msgid "Border Effect"
+msgstr "Аблямоўка"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:2
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr ""
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:3
+msgid ""
+"Grab just the current window, rather than the whole desktop. This key has "
+"been deprecated and it is no longer in use."
+msgstr ""
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:4
+#, fuzzy
+msgid "Include Border"
+msgstr "Улучыць паказальнік мышы"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:5
+#, fuzzy
+msgid "Include ICC Profile"
+msgstr "Улучыць паказальнік мышы"
+
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:6
 msgid "Include Pointer"
 msgstr "Улучыць паказальнік мышы"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:7
+#, fuzzy
+msgid "Include the ICC profile of the target in the screenshot file"
+msgstr "Улучыць у здымак аблямоўку акна"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:8
+#, fuzzy
+msgid "Include the pointer in the screenshot"
+msgstr "Улучыць у здымак аблямоўку акна"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:9
+#, fuzzy
+msgid "Include the window manager border along with the screenshot"
+msgstr "Улучыць у здымак аблямоўку акна"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:10
+#, fuzzy
+msgid "Screenshot delay"
+msgstr "Каталог для экранных здымкаў"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:11
 msgid "Screenshot directory"
 msgstr "Каталог для экранных здымкаў"
 
-#: ../gnome-screenshot/screenshot-dialog.c:215
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:12
+msgid "The directory the last screenshot was saved in."
+msgstr ""
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:13
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr ""
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:14
+msgid "Window-specific screenshot (deprecated)"
+msgstr ""
+
+#: ../gnome-screenshot/screenshot-config.c:78
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr "Канфліктныя опцыі: нельга адначасова ўжыць --window і --area.\n"
+
+#: ../gnome-screenshot/screenshot-config.c:85
+#, fuzzy, c-format
+msgid ""
+"Conflicting options: --area and --delay should not be used at the same "
+"time.\n"
+msgstr "Канфліктныя опцыі: нельга адначасова ўжыць --window і --area.\n"
+
+#: ../gnome-screenshot/screenshot-dialog.c:193
 msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
@@ -1539,39 +1596,90 @@ msgstr ""
 "Файл апісання графічнага інтэрфейсу праграмы gnome-screenshot адсутнічае.\n"
 "Праверце правільнасць усталёўкі пакунка gnome-utils"
 
-#: ../gnome-screenshot/screenshot-dialog.c:236
+#: ../gnome-screenshot/screenshot-dialog.c:214
 msgid "Select a folder"
 msgstr "Выбраць папку"
 
-#: ../gnome-screenshot/screenshot-dialog.c:351
-#: ../gnome-screenshot/screenshot-save.c:206
+#: ../gnome-screenshot/screenshot-dialog.c:323
 msgid "Screenshot.png"
 msgstr "Экранны_здымак.png"
 
-#: ../gnome-screenshot/screenshot-save.c:65
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../gnome-screenshot/screenshot-filename-builder.c:119
 #, c-format
-msgid ""
-"Unable to clear the temporary folder:\n"
-"%s"
-msgstr ""
-"Не ўдалося ачысціць часовую папку:\n"
-"%s"
+msgid "Screenshot at %s.png"
+msgstr "Экранны здымак (%s).png"
 
-#: ../gnome-screenshot/screenshot-save.c:104
-msgid ""
-"The child save process unexpectedly exited.  We are unable to write the "
-"screenshot to disk."
-msgstr ""
-"Працэс-нашчадак, прызначаны для захавання здымка, скончыў працу. Не ўдалося запісаць экранны здымак на дыску."
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../gnome-screenshot/screenshot-filename-builder.c:126
+#, c-format
+msgid "Screenshot at %s - %d.png"
+msgstr "Экранны здымак - %2$d (%1$s).png"
 
-#: ../gnome-screenshot/screenshot-save.c:246
-msgid "Unknown error saving screenshot to disk"
-msgstr "Невядомая памылка пры захаванні экраннага здымка на дыску"
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:165
+msgid "None"
+msgstr "Няма"
 
-#. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../gnome-screenshot/screenshot-utils.c:919
-msgid "Untitled Window"
-msgstr "Акно без назвы"
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:166
+msgid "Drop shadow"
+msgstr "Кінуць цень"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:167
+msgid "Border"
+msgstr "Аблямоўка"
+
+#. * Include pointer *
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:271
+msgid "Include _pointer"
+msgstr "_Улучыць паказальнік мышы"
+
+#. * Include window border *
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:281
+msgid "Include the window _border"
+msgstr "Улучыць _аблямоўку акна"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:298
+msgid "Apply _effect:"
+msgstr "Ужыць спецыяльны _эфект:"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:360
+msgid "Grab the whole _desktop"
+msgstr "Зняць увесь _стол"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:374
+msgid "Grab the current _window"
+msgstr "Зняць актыўнае _акно"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:386
+msgid "Select _area to grab"
+msgstr "Вылучыць _абшар для здымка"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#.
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:403
+msgid "Grab _after a delay of"
+msgstr "З_няць з затрымкай у"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:441
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:449
+msgid "Take Screenshot"
+msgstr "Экранны здымак"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:450
+msgid "Effects"
+msgstr "Спецыяльныя эфекты"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:455
+msgid "Take _Screenshot"
+msgstr "Зрабіць _экранны здымак"
+
+#: ../gnome-screenshot/screenshot-utils.c:702
+msgid "Error loading the help page"
+msgstr "Памылка адкрыцця даведніка"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:1
 msgid "Locate documents and folders on this computer by name or content"
@@ -2295,7 +2403,9 @@ msgstr "Прызначыць тэкставае значэнне опцыі по
 
 #: ../gsearchtool/gsearchtool.c:1290
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Сартаваць файлы паводле аднаго з крытэрыяў: name (назвы), folder (папка) , size (памер), type (тып) ці date (дата)"
+msgstr ""
+"Сартаваць файлы паводле аднаго з крытэрыяў: name (назвы), folder (папка) , "
+"size (памер), type (тып) ці date (дата)"
 
 #: ../gsearchtool/gsearchtool.c:1291
 msgid "Set sort order to descending, the default is ascending"
@@ -2332,7 +2442,8 @@ msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr ""
-"Вынікі пошуку могуць быць памылковыя. Падчас выканання гэтага пошуку ўзніклі памылкі."
+"Вынікі пошуку могуць быць памылковыя. Падчас выканання гэтага пошуку ўзніклі "
+"памылкі."
 
 #: ../gsearchtool/gsearchtool.c:1725 ../gsearchtool/gsearchtool.c:1766
 msgid "Show more _details"
@@ -2343,7 +2454,8 @@ msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
 msgstr ""
-"Вынікі пошуку могуць быць састарэлымі або хібнымі. Ці трэба выключыць функцыю хуткага пошуку?"
+"Вынікі пошуку могуць быць састарэлымі або хібнымі. Ці трэба выключыць "
+"функцыю хуткага пошуку?"
 
 #: ../gsearchtool/gsearchtool.c:1777
 msgid "Disable _Quick Search"
@@ -2352,7 +2464,8 @@ msgstr "Выключыць _хуткі пошук"
 #: ../gsearchtool/gsearchtool.c:1804
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "Не ўдалося прызначыць ідэнтыфікатар групы працэсаў для нашчадка %d: %s.\n"
+msgstr ""
+"Не ўдалося прызначыць ідэнтыфікатар групы працэсаў для нашчадка %d: %s.\n"
 
 #: ../gsearchtool/gsearchtool.c:1829
 msgid "Error parsing the search command."
@@ -2518,7 +2631,8 @@ msgstr "Невядомая опцыя запуску: %d"
 #: ../libeggsmclient/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Немагчыма перадаць URI-адрасы дакументаў desktop-элементу з \"Type=Link\""
+msgstr ""
+"Немагчыма перадаць URI-адрасы дакументаў desktop-элементу з \"Type=Link\""
 
 #: ../libeggsmclient/eggdesktopfile.c:1392
 #, c-format
@@ -2531,7 +2645,7 @@ msgstr "Выключыць злучэнне з кіраўніком сеанса
 
 #: ../libeggsmclient/eggsmclient.c:228
 msgid "Specify file containing saved configuration"
-msgstr "Вызначыце файл, які змяшчае захаваныя настройкі"
+msgstr "Вызначыць файл, які змяшчае захаваныя настройкі"
 
 #: ../libeggsmclient/eggsmclient.c:228
 msgid "FILE"
@@ -2539,7 +2653,7 @@ msgstr "ФАЙЛ"
 
 #: ../libeggsmclient/eggsmclient.c:231
 msgid "Specify session management ID"
-msgstr "Вызначыце ідэнтыфікатар для кіравання сеансам"
+msgstr "Вызначыць ідэнтыфікатар для кіравання сеансам"
 
 #: ../libeggsmclient/eggsmclient.c:231
 msgid "ID"
@@ -2561,6 +2675,18 @@ msgstr "Праглядальнік журнальных файлаў"
 msgid "View or monitor system log files"
 msgstr "Прагляд і назіранне за сістэмнымі журнальнымі файламі"
 
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
 #: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:4
 msgid "Log file to open up on startup"
 msgstr ""
@@ -2569,16 +2695,39 @@ msgstr ""
 msgid "Log files to open up on startup"
 msgstr ""
 
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+#, fuzzy
+msgid "Size of the font used to display the log"
+msgstr "Прызначыць шрыфт для друку азначэнняў"
+
 #: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:7
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
 msgstr ""
 
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+
 #: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:9
 msgid ""
 "Specifies the log file displayed at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
 msgstr ""
 
 #: ../logview/data/logview-filter.ui.h:1
@@ -2681,7 +2830,9 @@ msgstr "Гэты файл не з'яўляецца звычайным тэкст
 
 #: ../logview/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
-msgstr "Гэта версія праглядальніка сістэмных журналаў не падтрымлівае журналы ў фармаце gzip."
+msgstr ""
+"Гэта версія праглядальніка сістэмных журналаў не падтрымлівае журналы ў "
+"фармаце gzip."
 
 #: ../logview/logview-loglist.c:315
 msgid "Loading..."
@@ -2724,8 +2875,7 @@ msgstr "Адкрыццё журнала"
 #: ../logview/logview-window.c:357
 #, c-format
 msgid "There was an error displaying help: %s"
-msgstr ""
-"Узнікла памылка паказу даведкі: %s"
+msgstr "Узнікла памылка паказу даведкі: %s"
 
 #: ../logview/logview-window.c:471
 msgid "Wrapped"
