@@ -8,22 +8,23 @@
 # Lauris Kaplinski <lauris ariman ee>, 1999.
 # Tõivo Leedjärv <toivo linux ee>, 2002.
 # Ivar Smolin <okul linux ee>, 2005–2011.
-# Priit Laes <amd store20 com>, 2005.
+# Priit Laes <plaes plaes org>, 2005.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-18 17:46+0000\n"
-"PO-Revision-Date: 2011-03-21 10:50+0200\n"
-"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
-"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"POT-Creation-Date: 2011-10-23 22:32+0000\n"
+"PO-Revision-Date: 2011-11-15 20:50+0200\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 msgid "Check folder sizes and available disk space"
 msgstr "Kaustade suuruse ja saadaoleva kettaruumi kontroll"
@@ -438,8 +439,9 @@ msgid "translator-credits"
 msgstr ""
 "Lauris Kaplinski <lauris ariman ee>, 1999.\n"
 "Tõivo Leedjärv <toivo linux ee>, 2002.\n"
+"Priit Laes <plaes plaes org>, 2005.\n"
 "Ivar Smolin <okul linux ee>, 2005–2011.\n"
-"Priit Laes <amd store20 com>, 2005."
+"Mattias Põldaru <mahfiaz gmail com>, 2011."
 
 msgid "The document does not exist."
 msgstr "Dokumenti pole olemas."
@@ -449,30 +451,6 @@ msgstr "Kataloogi pole olemas."
 
 msgid "Default Dictionary Server"
 msgstr "Vaikimisi sõnaraamatuserver"
-
-msgid "Dictionary Look up"
-msgstr "Otsing sõnaraamatust"
-
-msgid "Look up words in a dictionary"
-msgstr "Sõna otsimine sõnaraamatust"
-
-msgid "Cl_ear"
-msgstr "_Puhasta"
-
-msgid "_About"
-msgstr "_Programmist lähemalt"
-
-msgid "_Look Up Selected Text"
-msgstr "_Otsi valitud teksti"
-
-msgid "_Preferences"
-msgstr "_Eelistused"
-
-msgid "_Print"
-msgstr "_Prindi"
-
-msgid "_Save"
-msgstr "_Salvesta"
 
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr "Sõnade definitsioonide ja kirjaviiside otsimine onlain-sõnaraamatust"
@@ -717,7 +695,7 @@ msgstr "Selle sõnaraamatuallika poolt kasutatav failinimi"
 msgid "Name"
 msgstr "Nimi"
 
-msgid "The display name of this dictonary source"
+msgid "The display name of this dictionary source"
 msgstr "Selle sõnaraamatuallika ekraaninimi"
 
 msgid "Description"
@@ -729,13 +707,13 @@ msgstr "Sõnaraamatuallika kirjeldus"
 msgid "Database"
 msgstr "Andmebaas"
 
-msgid "The default database of this dictonary source"
+msgid "The default database of this dictionary source"
 msgstr "Selle sõnaraamatuallika vaikimisi andmebaas"
 
 msgid "Strategy"
 msgstr "Strateegia"
 
-msgid "The default strategy of this dictonary source"
+msgid "The default strategy of this dictionary source"
 msgstr "Selle sõnaraamatuallika vaikimisi strateegia"
 
 msgid "Transport"
@@ -854,88 +832,6 @@ msgstr "SÕNAD"
 msgid " - Look up words in dictionaries"
 msgstr " - Sõnade otsimine sõnaraamatust"
 
-msgid "Save a Copy"
-msgstr "Koopia salvestamine"
-
-msgid "Untitled document"
-msgstr "Pealkirjata dokument"
-
-#, c-format
-msgid "Error while writing to '%s'"
-msgstr "Viga '%s' kirjutamisel"
-
-msgid "Clear the definitions found"
-msgstr "Leitud definitsioonidest puhastamine"
-
-msgid "Clear definition"
-msgstr "Puhasta definitsioon"
-
-msgid "Clear the text of the definition"
-msgstr "Definitsiooniteksti puhastamine"
-
-msgid "Print the definitions found"
-msgstr "Leitud definitsioonide printimine"
-
-msgid "Print definition"
-msgstr "Prindi definitsioon"
-
-msgid "Print the text of the definition"
-msgstr "Definitsiooni teksti printimine"
-
-msgid "Save the definitions found"
-msgstr "Leitud definitsioonide salvestamine"
-
-msgid "Save definition"
-msgstr "Definitsiooni salvestamine"
-
-msgid "Save the text of the definition to a file"
-msgstr "Definitsiooniteksti salvestamine faili"
-
-msgid "Click to view the dictionary window"
-msgstr "Klõpsa sõnaraamatuakna näitamiseks"
-
-msgid "Toggle dictionary window"
-msgstr "Sõnaraamatuakna sisse- ja väljalülitamine"
-
-msgid "Show or hide the definition window"
-msgstr "Definitsiooniakna näitamine või peitmine"
-
-msgid "Type the word you want to look up"
-msgstr "Sisesta sõna, mida soovid otsida"
-
-msgid "Dictionary entry"
-msgstr "Sõnaraamatukirje"
-
-msgid "Dictionary Preferences"
-msgstr "Sõnaraamatu eelistused"
-
-#, c-format
-msgid "There was an error while displaying help"
-msgstr "Abiteabe kuvamisel tekkis viga"
-
-#, c-format
-msgid "No dictionary source available with name '%s'"
-msgstr "Sõnaraamatuallikat nimega '%s' pole saadaval"
-
-msgid "Unable to find dictionary source"
-msgstr "Sõnaraamatuallikat pole võimalik leida"
-
-#, c-format
-msgid "No context available for source '%s'"
-msgstr "Allikas '%s' jaoks pole konteksti saadaval"
-
-msgid "Unable to create a context"
-msgstr "Konteksti pole võimalik luua"
-
-msgid "Unable to connect to GConf"
-msgstr "GConf'iga pole võimalik ühenduda"
-
-msgid "Unable to get notification for preferences"
-msgstr "Eelistuste kohta pole võimalik teavitust hankida"
-
-msgid "Unable to get notification for the document font"
-msgstr "Dokumendi kirjatüübi kohta pole võimalik teavitust hankida"
-
 msgid "Edit Dictionary Source"
 msgstr "Sõnaraamatuallika redigeerimine"
 
@@ -952,6 +848,10 @@ msgstr "Sõnaraamatuallikas eemaldatakse sellest loetelust jäädavalt."
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "Allikat %s pole võimalik eemaldada"
+
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "Abiteabe kuvamisel tekkis viga"
 
 msgid "Add a new dictionary source"
 msgstr "Uue sõnaraamatuallika lisamine"
@@ -989,8 +889,35 @@ msgstr[0] "Leiti üks definitsioon"
 msgstr[1] "Leiti %d definitsiooni"
 
 #, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "Sõnaraamatuallikat nimega '%s' pole saadaval"
+
+msgid "Unable to find dictionary source"
+msgstr "Sõnaraamatuallikat pole võimalik leida"
+
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "Allikas '%s' jaoks pole konteksti saadaval"
+
+msgid "Unable to create a context"
+msgstr "Konteksti pole võimalik luua"
+
+#, c-format
 msgid "%s - Dictionary"
 msgstr "%s - sõnaraamat"
+
+msgid "Save a Copy"
+msgstr "Koopia salvestamine"
+
+msgid "Untitled document"
+msgstr "Pealkirjata dokument"
+
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "Viga '%s' kirjutamisel"
+
+msgid "Dictionary Preferences"
+msgstr "Sõnaraamatu eelistused"
 
 msgid "_File"
 msgstr "_Fail"
@@ -1032,6 +959,9 @@ msgstr "Otsi _järgmist"
 msgid "Find Pre_vious"
 msgstr "Otsi ee_lmist"
 
+msgid "_Preferences"
+msgstr "_Eelistused"
+
 #. Go menu
 msgid "_Previous Definition"
 msgstr "_Eelmine definitsioon"
@@ -1069,6 +999,9 @@ msgstr "Saadaolevad _andmebaasid"
 
 msgid "Available St_rategies"
 msgstr "Saadaolevad st_rateegiad"
+
+msgid "_About"
+msgstr "_Programmist lähemalt"
 
 #. View menu
 msgid "_Sidebar"
@@ -1124,59 +1057,6 @@ msgstr "Saadaolevad strateegiad"
 msgid "Dictionary sources"
 msgstr "Sõnaraamatuallikad"
 
-msgid "Error loading the help page"
-msgstr "Viga abiteabe lehe laadimisel"
-
-msgid "None"
-msgstr "Puudub"
-
-msgid "Drop shadow"
-msgstr "Vari"
-
-msgid "Border"
-msgstr "Ääris"
-
-#. * Include pointer *
-msgid "Include _pointer"
-msgstr "Kaastatakse ka ku_rsor"
-
-#. * Include window border *
-msgid "Include the window _border"
-msgstr "Kaasatakse ka akna ää_ris"
-
-msgid "Apply _effect:"
-msgstr "Rakendatav _efekt:"
-
-msgid "Grab the whole _desktop"
-msgstr "Võetakse kogu _töölaud"
-
-msgid "Grab the current _window"
-msgstr "Võ_etakse käesolev aken"
-
-msgid "Select _area to grab"
-msgstr "Vali tõmmise _piirid"
-
-#. translators: this is the first part of the "grab after a
-#. * delay of <spin button> seconds".
-#.
-msgid "Grab _after a delay of"
-msgstr "Tõmmise võtmine pärast _viivitust"
-
-#. translators: this is the last part of the "grab after a
-#. * delay of <spin button> seconds".
-#.
-msgid "seconds"
-msgstr "sekundit"
-
-msgid "Take Screenshot"
-msgstr "Kuvatõmmise salvestamine"
-
-msgid "Effects"
-msgstr "Efektid"
-
-msgid "Take _Screenshot"
-msgstr "Võta _kuvatõmmis"
-
 msgid "Error while saving screenshot"
 msgstr "Viga kuvatõmmise salvestamisel"
 
@@ -1196,28 +1076,8 @@ msgstr "Kuvatõmmis on tehtud"
 msgid "Unable to take a screenshot of the current window"
 msgstr "Käesolevast aknast pole võimalik kuvatõmmist võtta"
 
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "Kuvatõmmis-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "Kuvatõmmis-%s-%d.png"
-
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-msgid "Screenshot.png"
-msgstr "Kuvatõmmis.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#, c-format
-msgid "Screenshot-%d.png"
-msgstr "Kuvatõmmis-%d.png"
+msgid "Send the grab directly to the clipboard"
+msgstr "Pildi saatmine otse lõikepuhvrisse"
 
 msgid "Grab a window instead of the entire screen"
 msgstr "Tõmmise tegemine aknast, mitte tervest ekraanist"
@@ -1234,6 +1094,12 @@ msgstr "Kuvatõmmise võtmine ilma akna ääriseta"
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Kuvatõmmise võtmine pärast määratud viivitust [sekundites]"
 
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#.
+msgid "seconds"
+msgstr "sekundit"
+
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Äärisele lisatav efekt (vari, ääris või mitte midagi)"
 
@@ -1246,15 +1112,17 @@ msgstr "Valikute interaktiivne seadmine"
 msgid "Take a picture of the screen"
 msgstr "Ekraanilt kuvatõmmise võtmine "
 
-#, c-format
-msgid ""
-"Conflicting options: --window and --area should not be used at the same "
-"time.\n"
-msgstr ""
-"Vastuolulised võtmed: --window ja --area ei tohi korraga kasutusel olla.\n"
-
 msgid "Save images of your desktop or individual windows"
 msgstr "Töölauast või üksikutest akendest pildi salvestamine"
+
+msgid "Screenshot"
+msgstr "Kuvatõmmis"
+
+msgid "Take a screenshot of the current window"
+msgstr "Kuvatõmmise võtmine käesolevast aknast"
+
+msgid "Take a screenshot of the whole screen"
+msgstr "Kuvatõmmise võtmine kogu ekraanist"
 
 msgid "*"
 msgstr "*"
@@ -1321,6 +1189,20 @@ msgstr "Viivituse kestus (sekundites) enne kuvatõmmise võtmist."
 msgid "Window-specific screenshot (deprecated)"
 msgstr "Aknaspetsiifiline kuvatõmmis (aegunud)"
 
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr ""
+"Vastuolulised võtmed: --window ja --area ei tohi korraga kasutusel olla.\n"
+
+#, c-format
+msgid ""
+"Conflicting options: --area and --delay should not be used at the same "
+"time.\n"
+msgstr ""
+"Vastuolulised võtmed: --area ja --delay ei tohi korraga kasutusel olla.\n"
+
 msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
@@ -1331,43 +1213,68 @@ msgstr ""
 msgid "Select a folder"
 msgstr "Kataloogi valimine"
 
+msgid "Screenshot.png"
+msgstr "Kuvatõmmis.png"
+
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
 #, c-format
-msgid ""
-"Unable to clear the temporary folder:\n"
-"%s"
-msgstr ""
-"Ajutist kataloogi pole võimalik puhastada:\n"
-"%s"
+msgid "Screenshot at %s.png"
+msgstr "Kuvatõmmis-%s.png"
 
-msgid ""
-"The child save process unexpectedly exited.  We are unable to write the "
-"screenshot to disk."
-msgstr ""
-"Alamprotsess lõpetas ootamatult, seetõttu pole võimalik kuvatõmmist kettale "
-"salvestada."
-
-msgid "Unknown error saving screenshot to disk"
-msgstr "Kuvatõmmise salvestamisel tekkis tundmatu viga"
-
-#. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-msgid "Untitled Window"
-msgstr "Pealkirjata aken"
-
-msgid "File already exists"
-msgstr "Fail on juba olemas"
-
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
 #, c-format
-msgid "The file \"%s\" already exists. Would you like to replace it?"
-msgstr "Fail \"%s\" on juba olemas. Kas sa soovid seda üle kirjutada?"
+msgid "Screenshot at %s - %d.png"
+msgstr "Kuvatõmmis-%s-%d.png"
 
-msgid "_Replace"
-msgstr "_Kirjuta üle"
+msgid "None"
+msgstr "Puudub"
 
-msgid "Saving file..."
-msgstr "Faili salvestamine..."
+msgid "Drop shadow"
+msgstr "Vari"
 
-msgid "Can't access source file"
-msgstr "Lähtefailile pole võimalik ligi pääseda"
+msgid "Border"
+msgstr "Ääris"
+
+#. * Include pointer *
+msgid "Include _pointer"
+msgstr "Kaastatakse ka ku_rsor"
+
+#. * Include window border *
+msgid "Include the window _border"
+msgstr "Kaasatakse ka akna ää_ris"
+
+msgid "Apply _effect:"
+msgstr "Rakendatav _efekt:"
+
+msgid "Grab the whole _desktop"
+msgstr "Võetakse kogu _töölaud"
+
+msgid "Grab the current _window"
+msgstr "Võ_etakse käesolev aken"
+
+msgid "Select _area to grab"
+msgstr "Vali tõmmise _piirid"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#.
+msgid "Grab _after a delay of"
+msgstr "Tõmmise võtmine pärast _viivitust"
+
+msgid "Take Screenshot"
+msgstr "Kuvatõmmise salvestamine"
+
+msgid "Effects"
+msgstr "Efektid"
+
+msgid "Take _Screenshot"
+msgstr "Võta _kuvatõmmis"
+
+msgid "Error loading the help page"
+msgstr "Viga abiteabe lehe laadimisel"
 
 msgid "Locate documents and folders on this computer by name or content"
 msgstr ""
@@ -1747,6 +1654,9 @@ msgstr "Dokument \"%s\" on juba olemas.  Kas sa soovid seda üle kirjutada?"
 
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "Olemasolevat faili üle kirjutades kirjutatakse üle ka faili sisu."
+
+msgid "_Replace"
+msgstr "_Kirjuta üle"
 
 msgid "The document name you selected is a folder."
 msgstr "Sinu poolt valitud dokumendinimi on kataloog."
@@ -2499,6 +2409,110 @@ msgstr "Kirjatüüpide näitaja"
 
 msgid "Preview fonts"
 msgstr "Kirjatüüpide vaatlemine"
+
+#~ msgid "Dictionary Look up"
+#~ msgstr "Otsing sõnaraamatust"
+
+#~ msgid "Look up words in a dictionary"
+#~ msgstr "Sõna otsimine sõnaraamatust"
+
+#~ msgid "Cl_ear"
+#~ msgstr "_Puhasta"
+
+#~ msgid "_Look Up Selected Text"
+#~ msgstr "_Otsi valitud teksti"
+
+#~ msgid "_Print"
+#~ msgstr "_Prindi"
+
+#~ msgid "_Save"
+#~ msgstr "_Salvesta"
+
+#~ msgid "Clear the definitions found"
+#~ msgstr "Leitud definitsioonidest puhastamine"
+
+#~ msgid "Clear definition"
+#~ msgstr "Puhasta definitsioon"
+
+#~ msgid "Clear the text of the definition"
+#~ msgstr "Definitsiooniteksti puhastamine"
+
+#~ msgid "Print the definitions found"
+#~ msgstr "Leitud definitsioonide printimine"
+
+#~ msgid "Print definition"
+#~ msgstr "Prindi definitsioon"
+
+#~ msgid "Print the text of the definition"
+#~ msgstr "Definitsiooni teksti printimine"
+
+#~ msgid "Save the definitions found"
+#~ msgstr "Leitud definitsioonide salvestamine"
+
+#~ msgid "Save definition"
+#~ msgstr "Definitsiooni salvestamine"
+
+#~ msgid "Save the text of the definition to a file"
+#~ msgstr "Definitsiooniteksti salvestamine faili"
+
+#~ msgid "Click to view the dictionary window"
+#~ msgstr "Klõpsa sõnaraamatuakna näitamiseks"
+
+#~ msgid "Toggle dictionary window"
+#~ msgstr "Sõnaraamatuakna sisse- ja väljalülitamine"
+
+#~ msgid "Show or hide the definition window"
+#~ msgstr "Definitsiooniakna näitamine või peitmine"
+
+#~ msgid "Type the word you want to look up"
+#~ msgstr "Sisesta sõna, mida soovid otsida"
+
+#~ msgid "Dictionary entry"
+#~ msgstr "Sõnaraamatukirje"
+
+#~ msgid "Unable to connect to GConf"
+#~ msgstr "GConf'iga pole võimalik ühenduda"
+
+#~ msgid "Unable to get notification for preferences"
+#~ msgstr "Eelistuste kohta pole võimalik teavitust hankida"
+
+#~ msgid "Unable to get notification for the document font"
+#~ msgstr "Dokumendi kirjatüübi kohta pole võimalik teavitust hankida"
+
+#~ msgid "Screenshot-%d.png"
+#~ msgstr "Kuvatõmmis-%d.png"
+
+#~ msgid ""
+#~ "Unable to clear the temporary folder:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Ajutist kataloogi pole võimalik puhastada:\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The child save process unexpectedly exited.  We are unable to write the "
+#~ "screenshot to disk."
+#~ msgstr ""
+#~ "Alamprotsess lõpetas ootamatult, seetõttu pole võimalik kuvatõmmist "
+#~ "kettale salvestada."
+
+#~ msgid "Unknown error saving screenshot to disk"
+#~ msgstr "Kuvatõmmise salvestamisel tekkis tundmatu viga"
+
+#~ msgid "Untitled Window"
+#~ msgstr "Pealkirjata aken"
+
+#~ msgid "File already exists"
+#~ msgstr "Fail on juba olemas"
+
+#~ msgid "The file \"%s\" already exists. Would you like to replace it?"
+#~ msgstr "Fail \"%s\" on juba olemas. Kas sa soovid seda üle kirjutada?"
+
+#~ msgid "Saving file..."
+#~ msgstr "Faili salvestamine..."
+
+#~ msgid "Can't access source file"
+#~ msgstr "Lähtefailile pole võimalik ligi pääseda"
 
 #~ msgid "Dictionary server (Deprecated)"
 #~ msgstr "Sõnaraamatuserver (aegunud)"
