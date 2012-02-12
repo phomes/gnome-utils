@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-24 01:31+0300\n"
-"PO-Revision-Date: 2011-10-24 01:32+0300\n"
+"POT-Creation-Date: 2012-02-12 20:33+0300\n"
+"PO-Revision-Date: 2012-02-12 20:34+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
@@ -18,13 +18,13 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
-msgid "Check folder sizes and available disk space"
-msgstr "Праверка памеру папак і выкарыстання дыскавай прасторы"
-
-#: ../baobab/data/baobab.desktop.in.in.h:2
-#: ../baobab/data/baobab-main-window.ui.h:2
+#: ../baobab/data/baobab-main-window.ui.h:15
 msgid "Disk Usage Analyzer"
 msgstr "Аналіз дыскавай прасторы"
+
+#: ../baobab/data/baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Праверка памеру папак і выкарыстання дыскавай прасторы"
 
 #: ../baobab/data/baobab-preferences-dialog.ui.h:1
 msgid "Disk Usage Analyzer Preferences"
@@ -39,40 +39,40 @@ msgid "_Monitor changes to your home folder"
 msgstr "_Сачыць за зменамі ў хатняй папцы"
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:1
-msgid "A list of URIs for partitions to be excluded from scanning."
+msgid "Monitor Home"
 msgstr ""
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:2
-msgid "Active Chart"
-msgstr ""
+#, fuzzy
+msgid "Whether any change to the home directory should be monitored."
+msgstr "Змены ў хатняй папцы не будуць адсочвацца."
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
 msgstr ""
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:4
-msgid "Monitor Home"
+msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr ""
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:5
-msgid "Statusbar is Visible"
-msgstr ""
-
-#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:6
 msgid "Toolbar is Visible"
 msgstr ""
 
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:6
+msgid "Whether the toolbar should be visible in main window."
+msgstr ""
+
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:7
-#, fuzzy
-msgid "Whether any change to the home directory should be monitored."
-msgstr "Змены ў хатняй папцы не будуць адсочвацца."
+msgid "Statusbar is Visible"
+msgstr ""
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:8
 msgid "Whether the status bar at the bottom of main window should be visible."
 msgstr ""
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:9
-msgid "Whether the toolbar should be visible in main window."
+msgid "Active Chart"
 msgstr ""
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:10
@@ -80,105 +80,105 @@ msgid "Which type of chart should be displayed."
 msgstr ""
 
 #: ../baobab/data/baobab-main-window.ui.h:1
-msgid "All_ocated Space"
-msgstr "_Выдзеленая прастора"
-
-#: ../baobab/data/baobab-main-window.ui.h:3
-msgid "Refresh"
-msgstr "Абнавіць"
-
-#: ../baobab/data/baobab-main-window.ui.h:4
-msgid "S_can Remote Folder..."
-msgstr "Даследаваць _аддаленую папку..."
-
-#: ../baobab/data/baobab-main-window.ui.h:5
-msgid "Scan F_older..."
-msgstr "_Даследаваць папку..."
-
-#: ../baobab/data/baobab-main-window.ui.h:6
-msgid "Scan Filesystem"
-msgstr "Даследаваць файлавую сістэму"
-
-#: ../baobab/data/baobab-main-window.ui.h:7
-msgid "Scan Folder"
-msgstr "Даследаваць папку"
-
-#: ../baobab/data/baobab-main-window.ui.h:8
-msgid "Scan Home"
-msgstr "Даследаваць хатнюю папку"
-
-#: ../baobab/data/baobab-main-window.ui.h:9
-msgid "Scan Remote Folder"
-msgstr "Даследаваць аддаленую папку"
-
-#: ../baobab/data/baobab-main-window.ui.h:10
-msgid "Scan _Filesystem"
-msgstr "_Даследаваць файлавую сістэму"
-
-#: ../baobab/data/baobab-main-window.ui.h:11
-msgid "Scan _Home Folder"
-msgstr "Даследаваць _хатнюю папку"
-
-#: ../baobab/data/baobab-main-window.ui.h:12
-msgid "Scan a folder"
-msgstr "Даследаваць папку"
-
-#: ../baobab/data/baobab-main-window.ui.h:13
-msgid "Scan a remote folder"
-msgstr "Даследаваць аддаленую папку"
-
-#: ../baobab/data/baobab-main-window.ui.h:14
-msgid "Scan filesystem"
-msgstr "Даследаваць файлавую сістэму"
-
-#: ../baobab/data/baobab-main-window.ui.h:15
-msgid "Scan home folder"
-msgstr "Даследаваць хатнюю папку"
-
-#: ../baobab/data/baobab-main-window.ui.h:16
-msgid "St_atusbar"
-msgstr "_Стужка стану"
-
-#: ../baobab/data/baobab-main-window.ui.h:17
-msgid "Stop scanning"
-msgstr "Спыніць даследаванне"
-
-#: ../baobab/data/baobab-main-window.ui.h:18
 msgid "_Analyzer"
 msgstr "_Аналізатар"
 
-#: ../baobab/data/baobab-main-window.ui.h:19
-msgid "_Collapse All"
-msgstr "_Згарнуць усё"
+#: ../baobab/data/baobab-main-window.ui.h:2
+msgid "Scan _Home Folder"
+msgstr "Даследаваць _хатнюю папку"
 
-#. Help menu
-#: ../baobab/data/baobab-main-window.ui.h:20
-#: ../gnome-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:844
-msgid "_Contents"
-msgstr "_Змест"
+#: ../baobab/data/baobab-main-window.ui.h:3
+msgid "Scan _Filesystem"
+msgstr "_Даследаваць файлавую сістэму"
 
-#: ../baobab/data/baobab-main-window.ui.h:21
+#: ../baobab/data/baobab-main-window.ui.h:4
+msgid "Scan F_older..."
+msgstr "_Даследаваць папку..."
+
+#: ../baobab/data/baobab-main-window.ui.h:5
+msgid "S_can Remote Folder..."
+msgstr "Даследаваць _аддаленую папку..."
+
+#: ../baobab/data/baobab-main-window.ui.h:6
 #: ../gnome-dictionary/src/gdict-window.c:1281 ../logview/logview-window.c:815
 msgid "_Edit"
 msgstr "_Праўка"
 
-#: ../baobab/data/baobab-main-window.ui.h:22
+#: ../baobab/data/baobab-main-window.ui.h:7
 msgid "_Expand All"
 msgstr "_Разгарнуць усё"
 
-#: ../baobab/data/baobab-main-window.ui.h:23
+#: ../baobab/data/baobab-main-window.ui.h:8
+msgid "_Collapse All"
+msgstr "_Згарнуць усё"
+
+#: ../baobab/data/baobab-main-window.ui.h:9
+#: ../gnome-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:816
+msgid "_View"
+msgstr "_Від"
+
+#: ../baobab/data/baobab-main-window.ui.h:10
+msgid "_Toolbar"
+msgstr "_Паліца прылад"
+
+#: ../baobab/data/baobab-main-window.ui.h:11
+msgid "St_atusbar"
+msgstr "_Стужка стану"
+
+#: ../baobab/data/baobab-main-window.ui.h:12
+msgid "All_ocated Space"
+msgstr "_Выдзеленая прастора"
+
+#: ../baobab/data/baobab-main-window.ui.h:13
 #: ../gnome-dictionary/src/gdict-window.c:1284 ../logview/logview-window.c:818
 msgid "_Help"
 msgstr "_Дапамога"
 
+#. Help menu
+#: ../baobab/data/baobab-main-window.ui.h:14
+#: ../gnome-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:844
+msgid "_Contents"
+msgstr "_Змест"
+
+#: ../baobab/data/baobab-main-window.ui.h:16
+msgid "Scan home folder"
+msgstr "Даследаваць хатнюю папку"
+
+#: ../baobab/data/baobab-main-window.ui.h:17
+msgid "Scan Home"
+msgstr "Даследаваць хатнюю папку"
+
+#: ../baobab/data/baobab-main-window.ui.h:18
+msgid "Scan filesystem"
+msgstr "Даследаваць файлавую сістэму"
+
+#: ../baobab/data/baobab-main-window.ui.h:19
+msgid "Scan Filesystem"
+msgstr "Даследаваць файлавую сістэму"
+
+#: ../baobab/data/baobab-main-window.ui.h:20
+msgid "Scan a folder"
+msgstr "Даследаваць папку"
+
+#: ../baobab/data/baobab-main-window.ui.h:21
+msgid "Scan Folder"
+msgstr "Даследаваць папку"
+
+#: ../baobab/data/baobab-main-window.ui.h:22
+msgid "Scan a remote folder"
+msgstr "Даследаваць аддаленую папку"
+
+#: ../baobab/data/baobab-main-window.ui.h:23
+msgid "Scan Remote Folder"
+msgstr "Даследаваць аддаленую папку"
+
 #: ../baobab/data/baobab-main-window.ui.h:24
-msgid "_Toolbar"
-msgstr "_Паліца прылад"
+msgid "Stop scanning"
+msgstr "Спыніць даследаванне"
 
 #: ../baobab/data/baobab-main-window.ui.h:25
-#: ../gnome-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:816
-msgid "_View"
-msgstr "_Від"
+msgid "Refresh"
+msgstr "Абнавіць"
 
 #: ../baobab/src/baobab.c:136 ../baobab/src/baobab.c:388
 msgid "Scanning..."
@@ -400,7 +400,7 @@ msgid "_Share:"
 msgstr "Супольны р_эсурс:"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:515
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:7
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "П_орт:"
 
@@ -583,10 +583,6 @@ msgid "Default Dictionary Server"
 msgstr "Прадвызначаны сервер слоўнікаў"
 
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:1
-msgid "Check word definitions and spellings in an online dictionary"
-msgstr "Пошук азначэнняў слоў і іх правапісу ў сеціўным слоўніку"
-
-#: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:2
 #: ../gnome-dictionary/src/gdict-about.c:62
 #: ../gnome-dictionary/src/gdict-app.c:233
 #: ../gnome-dictionary/src/gdict-window.c:601
@@ -594,35 +590,39 @@ msgstr "Пошук азначэнняў слоў і іх правапісу ў �
 msgid "Dictionary"
 msgstr "Слоўнік"
 
+#: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Пошук азначэнняў слоў і іх правапісу ў сеціўным слоўніку"
+
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:1
 msgid "The default database to use"
 msgstr ""
 
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:2
-msgid "The default search strategy to use"
-msgstr ""
-
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:3
-msgid "The font to be used when printing"
-msgstr ""
-
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:4
-#, fuzzy
-msgid "The font to be used when printing a definition."
-msgstr "Прызначыць шрыфт для друку азначэнняў"
-
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:5
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:6
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The default search strategy to use"
+msgstr ""
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
 msgstr ""
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:5
+msgid "The font to be used when printing"
+msgstr ""
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "The font to be used when printing a definition."
+msgstr "Прызначыць шрыфт для друку азначэнняў"
 
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:7
 msgid "The name of the dictionary source used"
@@ -635,11 +635,11 @@ msgid ""
 msgstr "Назва сервера слоўнікаў для злучэння"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:1
-msgid "Print"
-msgstr "Друк"
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Выберыце крыніцу слоўнікаў для пошуку слоў:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:2
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:3
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:6
 msgid "Source"
 msgstr "Крыніца"
 
@@ -648,32 +648,32 @@ msgid "_Print font:"
 msgstr "_Шрыфт для друку:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:4
-msgid "_Select a dictionary source for looking up words:"
-msgstr "_Выберыце крыніцу слоўнікаў для пошуку слоў:"
+msgid "Print"
+msgstr "Друк"
 
 #: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:1
-msgid "Dictionaries"
-msgstr "Слоўнікі"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:2
-msgid "H_ostname:"
-msgstr "_Назва машыны:"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:4
-msgid "Source Name"
-msgstr "Назва крыніцы"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:5
-msgid "Strategies"
-msgstr "Стратэгіі"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:6
 msgid "_Description:"
 msgstr "_Апісанне:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:8
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:2
 msgid "_Transport:"
 msgstr "_Транспарт:"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "_Назва машыны:"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "Назва крыніцы"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "Слоўнікі"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "Стратэгіі"
 
 #: ../gnome-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -1469,109 +1469,106 @@ msgid "Take a picture of the screen"
 msgstr "Экранныя здымкі"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
-msgid "Save images of your desktop or individual windows"
-msgstr "Захаванне здымкаў стала ці асобных вокнаў"
-
-#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Screenshot"
 msgstr "Экранны здымак"
 
+#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
+msgid "Save images of your desktop or individual windows"
+msgstr "Захаванне здымкаў стала ці асобных вокнаў"
+
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:3
-#, fuzzy
-msgid "Take a screenshot of the current window"
-msgstr "Не ўдалося зрабіць здымак актыўнага акна"
+msgid "Take a screenshot of the whole screen"
+msgstr "Здымак усяго экрана"
 
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:4
-#, fuzzy
-msgid "Take a screenshot of the whole screen"
-msgstr "Экранныя здымкі"
+msgid "Take a screenshot of the current window"
+msgstr "Здымак актыўнага акна"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:1
-msgid "*"
-msgstr "*"
+msgid "Save Screenshot"
+msgstr "Захаванне экраннага здымка"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
 msgstr "_Скапіраваць у буфер абмену"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:3
-msgid "Save Screenshot"
-msgstr "Захаванне экраннага здымка"
+#: ../logview/data/logview-filter.ui.h:1
+msgid "_Name:"
+msgstr "_Назва:"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:4
 msgid "Save in _folder:"
 msgstr "_Захаваць у папцы:"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:5
-#: ../logview/data/logview-filter.ui.h:6
-msgid "_Name:"
-msgstr "_Назва:"
+msgid "*"
+msgstr "*"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:1
-#, fuzzy
-msgid "Border Effect"
-msgstr "Аблямоўка"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:2
-msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"border\"."
+msgid "Window-specific screenshot (deprecated)"
 msgstr ""
 
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:3
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:2
 msgid ""
 "Grab just the current window, rather than the whole desktop. This key has "
 "been deprecated and it is no longer in use."
 msgstr ""
 
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:3
+msgid "Screenshot delay"
+msgstr "Затрымка для здымкі"
+
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:4
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr ""
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:5
+msgid "Screenshot directory"
+msgstr "Каталог для экранных здымкаў"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:6
+msgid "The directory the last screenshot was saved in."
+msgstr ""
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:7
 #, fuzzy
 msgid "Include Border"
 msgstr "Улучыць паказальнік мышы"
 
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:5
-#, fuzzy
-msgid "Include ICC Profile"
-msgstr "Улучыць паказальнік мышы"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:6
-msgid "Include Pointer"
-msgstr "Улучыць паказальнік мышы"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:7
-#, fuzzy
-msgid "Include the ICC profile of the target in the screenshot file"
-msgstr "Улучыць у здымак аблямоўку акна"
-
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:8
-#, fuzzy
-msgid "Include the pointer in the screenshot"
-msgstr "Улучыць у здымак аблямоўку акна"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:9
 #, fuzzy
 msgid "Include the window manager border along with the screenshot"
 msgstr "Улучыць у здымак аблямоўку акна"
 
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:9
+msgid "Include Pointer"
+msgstr "Улучыць паказальнік мышы"
+
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:10
 #, fuzzy
-msgid "Screenshot delay"
-msgstr "Каталог для экранных здымкаў"
+msgid "Include the pointer in the screenshot"
+msgstr "Улучыць у здымак аблямоўку акна"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:11
-msgid "Screenshot directory"
-msgstr "Каталог для экранных здымкаў"
+#, fuzzy
+msgid "Include ICC Profile"
+msgstr "Улучыць паказальнік мышы"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:12
-msgid "The directory the last screenshot was saved in."
-msgstr ""
+#, fuzzy
+msgid "Include the ICC profile of the target in the screenshot file"
+msgstr "Улучыць у здымак аблямоўку акна"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:13
-msgid "The number of seconds to wait before taking the screenshot."
-msgstr ""
+#, fuzzy
+msgid "Border Effect"
+msgstr "Аблямоўка"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:14
-msgid "Window-specific screenshot (deprecated)"
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
 msgstr ""
 
 #: ../gnome-screenshot/screenshot-config.c:78
@@ -1594,7 +1591,7 @@ msgid ""
 "Please check your installation of gnome-utils"
 msgstr ""
 "Файл апісання графічнага інтэрфейсу праграмы gnome-screenshot адсутнічае.\n"
-"Праверце правільнасць усталёўкі пакунка gnome-utils"
+"Праверце правільнасць усталявання пакунка gnome-utils"
 
 #: ../gnome-screenshot/screenshot-dialog.c:214
 msgid "Select a folder"
@@ -1682,155 +1679,229 @@ msgid "Error loading the help page"
 msgstr "Памылка адкрыцця даведніка"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:1
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "Пошук дакументаў і папак гэтага камп'ютара паводле назваў і змесціва"
-
-#: ../gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Search for Files..."
 msgstr "Пошук файлаў..."
 
+#: ../gsearchtool/gnome-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Пошук дакументаў і папак гэтага камп'ютара паводле назваў і змесціва"
+
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:1
-msgid "Default Window Height"
+msgid "Show Additional Options"
 msgstr ""
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:2
-msgid "Default Window Maximized"
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:3
-msgid "Default Window Width"
-msgstr ""
-
+#. Translators: The quoted text is the label of the additional
+#. options expander that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:4
-msgid "Disable Quick Search"
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:5
-msgid "Disable Quick Search Second Scan"
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:6
-msgid "Look in Folder"
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:7
-msgid "Quick Search Excluded Paths"
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:8
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:9
-msgid "Search Result Columns Order"
+msgid ""
+"This key determines if the \"Select more options\" section is expanded when "
+"the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:12
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:7
 msgid "Select the search option \"Contains the text\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:8
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr ""
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:11
+msgid "Select the search option \"Date modified less than\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:12
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:15
-msgid "Select the search option \"Date modified less than\""
-msgstr ""
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:18
 msgid "Select the search option \"Date modified more than\""
 msgstr ""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:21
-msgid "Select the search option \"Exclude other filesystems\""
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:16
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:19
+msgid "Select the search option \"Size at least\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:20
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr ""
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:23
+msgid "Select the search option \"Size at most\""
+msgstr ""
+
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:24
-msgid "Select the search option \"File is empty\""
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:27
-msgid "Select the search option \"Follow symbolic links\""
+msgid "Select the search option \"File is empty\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:28
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:30
-msgid "Select the search option \"Name does not contain\""
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:31
+msgid "Select the search option \"Owned by user\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:32
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:33
-msgid "Select the search option \"Name matches regular expression\""
-msgstr ""
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:36
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:35
 msgid "Select the search option \"Owned by group\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:36
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when "
+"the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:39
-msgid "Select the search option \"Owned by user\""
-msgstr ""
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:42
 msgid "Select the search option \"Owner is unrecognized\""
 msgstr ""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:45
-msgid "Select the search option \"Show hidden files and folders\""
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:40
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:43
+msgid "Select the search option \"Name does not contain\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:44
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr ""
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:47
+msgid "Select the search option \"Name matches regular expression\""
+msgstr ""
+
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:48
-msgid "Select the search option \"Size at least\""
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option "
+"is selected when the search tool is started."
 msgstr ""
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:51
-msgid "Select the search option \"Size at most\""
+msgid "Select the search option \"Show hidden files and folders\""
 msgstr ""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:52
-msgid "Show Additional Options"
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:53
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:54
 msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
 msgstr ""
 
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:55
+msgid "Select the search option \"Follow symbolic links\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:56
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr ""
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:59
+msgid "Select the search option \"Exclude other filesystems\""
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:60
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:61
+msgid "Disable Quick Search"
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:62
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:63
+msgid "Quick Search Excluded Paths"
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:64
 msgid ""
 "This key defines the paths the search tool will exclude from a quick search. "
 "The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
 "media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
 msgstr ""
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:56
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:65
+msgid "Disable Quick Search Second Scan"
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:66
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:67
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:68
 msgid ""
 "This key defines the paths the search tool will exclude from a second scan "
 "when performing a quick search. The second scan uses the find command to "
@@ -1839,127 +1910,53 @@ msgid ""
 "is /."
 msgstr ""
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:57
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool "
-"use the default height."
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:69
+msgid "Search Result Columns Order"
 msgstr ""
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:58
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:70
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:71
+msgid "Default Window Width"
+msgstr ""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:72
 msgid ""
 "This key defines the window width, and it's used to remember the size of the "
 "search tool between sessions. Setting it to -1 will make the search tool use "
 "the default width."
 msgstr ""
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:59
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:60
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:61
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:62
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:63
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:64
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:65
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:66
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option "
-"is selected when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:67
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when "
-"the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:68
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:69
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr ""
-
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:72
-msgid ""
-"This key determines if the \"Select more options\" section is expanded when "
-"the search tool is started."
-msgstr ""
-
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:73
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
+msgid "Default Window Height"
 msgstr ""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:74
 msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool "
+"use the default height."
 msgstr ""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:75
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
+msgid "Default Window Maximized"
 msgstr ""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
 msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
+"This key determines if the search tool window starts in a maximized state."
 msgstr ""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:77
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
+msgid "Look in Folder"
 msgstr ""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:78
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
+msgid "This key defines the default value of the \"Look in Folder\" widget."
 msgstr ""
 
 #: ../gsearchtool/gsearchtool-callbacks.c:194
@@ -2676,83 +2673,83 @@ msgid "View or monitor system log files"
 msgstr "Прагляд і назіранне за сістэмнымі журнальнымі файламі"
 
 #: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:1
-msgid "Height of the main window in pixels"
-msgstr ""
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:2
-msgid "List of saved filters"
-msgstr ""
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:3
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:4
 msgid "Log file to open up on startup"
 msgstr ""
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:5
-msgid "Log files to open up on startup"
-msgstr ""
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:6
-#, fuzzy
-msgid "Size of the font used to display the log"
-msgstr "Прызначыць шрыфт для друку азначэнняў"
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:7
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr ""
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:8
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr ""
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:2
 msgid ""
 "Specifies the log file displayed at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
 msgstr ""
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+#, fuzzy
+msgid "Size of the font used to display the log"
+msgstr "Прызначыць шрыфт для друку азначэнняў"
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:4
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
 msgstr ""
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:11
-msgid "Specifies the width of the log viewer main window in pixels."
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
 msgstr ""
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:7
 msgid "Width of the main window in pixels"
 msgstr ""
 
-#: ../logview/data/logview-filter.ui.h:1
-msgid "Background:"
-msgstr "Фон:"
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
 
 #: ../logview/data/logview-filter.ui.h:2
-msgid "Effect:"
-msgstr "Эфекты:"
+msgid "_Regular Expression:"
+msgstr "_Рэгулярны выраз:"
 
 #: ../logview/data/logview-filter.ui.h:3
-msgid "Foreground:"
-msgstr "Пярэдні план:"
+msgid "Highlight"
+msgstr "Падсветка"
 
 #: ../logview/data/logview-filter.ui.h:4
 msgid "Hide"
 msgstr "Схаваць"
 
 #: ../logview/data/logview-filter.ui.h:5
-msgid "Highlight"
-msgstr "Падсветка"
+msgid "Foreground:"
+msgstr "Пярэдні план:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "Фон:"
 
 #: ../logview/data/logview-filter.ui.h:7
-msgid "_Regular Expression:"
-msgstr "_Рэгулярны выраз:"
+msgid "Effect:"
+msgstr "Эфекты:"
 
 #: ../logview/logview-app.c:377
 #, c-format
@@ -3060,7 +3057,7 @@ msgstr "Усталяваны"
 
 #: ../font-viewer/font-view.c:430
 msgid "Install Failed"
-msgstr "Няўдалая ўсталёўка"
+msgstr "Няўдалае ўсталяванне"
 
 #: ../font-viewer/font-view.c:502
 #, c-format
