@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=baobab&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-06 23:37+0000\n"
-"PO-Revision-Date: 2012-04-08 13:01+0200\n"
+"POT-Creation-Date: 2012-04-10 21:24+0000\n"
+"PO-Revision-Date: 2012-04-16 16:16+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-window.vala:149
+#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-window.vala:152
 msgid "Disk Usage Analyzer"
 msgstr "Analizador de uso de disco"
 
@@ -104,32 +104,32 @@ msgstr "Nodo raíz del gráfico"
 msgid "Set the root node from the model"
 msgstr "Establecer el nodo raíz del modelo"
 
-#: ../src/baobab-chart.c:906
+#: ../src/baobab-chart.c:908
 msgid "Move to parent folder"
 msgstr "Mover a la carpeta superior"
 
-#: ../src/baobab-chart.c:910
+#: ../src/baobab-chart.c:912
 msgid "Zoom in"
 msgstr "Ampliar"
 
-#: ../src/baobab-chart.c:914
+#: ../src/baobab-chart.c:916
 msgid "Zoom out"
 msgstr "Reducir"
 
-#: ../src/baobab-chart.c:918
+#: ../src/baobab-chart.c:920
 msgid "Save screenshot"
 msgstr "Guardar la captura de pantalla"
 
-#: ../src/baobab-chart.c:1807
+#: ../src/baobab-chart.c:1809
 msgid "Cannot create pixbuf image!"
 msgstr "No se puede crear la imagen pixbuf"
 
 #. Popup the File chooser dialog
-#: ../src/baobab-chart.c:1815
+#: ../src/baobab-chart.c:1817
 msgid "Save Snapshot"
 msgstr "Guardar captura"
 
-#: ../src/baobab-chart.c:1842
+#: ../src/baobab-chart.c:1844
 msgid "_Image type:"
 msgstr "Tipo de _imagen:"
 
@@ -138,20 +138,20 @@ msgstr "Tipo de _imagen:"
 msgid "Main volume"
 msgstr "Volumen principal"
 
-#: ../src/baobab-location.vala:78
+#: ../src/baobab-location.vala:80
 #| msgid "Scan home folder"
 msgid "Home folder"
 msgstr "Carpeta personal"
 
-#: ../src/baobab-location-widget.vala:80
+#: ../src/baobab-location-widget.vala:85
 msgid "Usage unknown"
 msgstr "Uso desconocido"
 
-#: ../src/baobab-location-widget.vala:85
+#: ../src/baobab-location-widget.vala:90
 msgid "Scan"
 msgstr "Analizar"
 
-#: ../src/baobab-location-widget.vala:85
+#: ../src/baobab-location-widget.vala:90
 msgid "Mount and scan"
 msgstr "Montar y analizar"
 
@@ -177,7 +177,7 @@ msgstr "Analizar carpeta remota"
 msgid "Show all locations"
 msgstr "Mostrar todas las ubicaciones"
 
-#: ../src/baobab-main-window.ui.h:6 ../src/baobab-window.vala:467
+#: ../src/baobab-main-window.ui.h:6 ../src/baobab-window.vala:471
 msgid "All locations"
 msgstr "Todas las ubicaciones"
 
@@ -195,36 +195,40 @@ msgid "label"
 msgstr "etiqueta"
 
 #: ../src/baobab-main-window.ui.h:10
+msgid "Close"
+msgstr "Cerrar"
+
+#: ../src/baobab-main-window.ui.h:11
 msgid "Folder"
 msgstr "Carpeta"
 
-#: ../src/baobab-main-window.ui.h:11
+#: ../src/baobab-main-window.ui.h:12
 msgid "Usage"
 msgstr "Uso"
 
-#: ../src/baobab-main-window.ui.h:12
+#: ../src/baobab-main-window.ui.h:13
 msgid "Size"
 msgstr "Tamaño"
 
-#: ../src/baobab-main-window.ui.h:13
+#: ../src/baobab-main-window.ui.h:14
 msgid "Contents"
 msgstr "Contenido"
 
-#: ../src/baobab-main-window.ui.h:14
+#: ../src/baobab-main-window.ui.h:15
 #| msgid "View as Rings Chart"
 msgid "Rings Chart"
 msgstr "Gráfico de anillos"
 
-#: ../src/baobab-main-window.ui.h:15
+#: ../src/baobab-main-window.ui.h:16
 #| msgid "View as Treemap Chart"
 msgid "Treemap Chart"
 msgstr "Gráfico de árbol"
 
-#: ../src/baobab-main-window.ui.h:16
+#: ../src/baobab-main-window.ui.h:17
 msgid "_Open Folder"
 msgstr "_Abrir carpeta"
 
-#: ../src/baobab-main-window.ui.h:17
+#: ../src/baobab-main-window.ui.h:18
 msgid "Mo_ve to Trash"
 msgstr "Mo_ver a la papelera"
 
@@ -253,7 +257,7 @@ msgstr "_Detener"
 #: ../src/baobab-menu.ui.h:6
 #| msgid "Ready"
 msgid "_Reload"
-msgstr "Re_cargar"
+msgstr "_Recargar"
 
 #: ../src/baobab-menu.ui.h:7
 msgid "_Help"
@@ -294,19 +298,19 @@ msgstr "_Expandir todo"
 msgid "_Collapse All"
 msgstr "_Contraer todo"
 
-#: ../src/baobab-window.vala:198
+#: ../src/baobab-window.vala:202
 msgid "Select Folder"
 msgstr "Seleccione la carpeta"
 
-#: ../src/baobab-window.vala:276
+#: ../src/baobab-window.vala:280
 msgid "Baobab"
 msgstr "Baobab"
 
-#: ../src/baobab-window.vala:279
+#: ../src/baobab-window.vala:283
 msgid "A graphical tool to analyze disk usage."
 msgstr "Una herramienta gráfica para analizar el uso del disco."
 
-#: ../src/baobab-window.vala:284
+#: ../src/baobab-window.vala:288
 msgid "translator-credits"
 msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2012\n"
@@ -319,30 +323,29 @@ msgstr ""
 "Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999\n"
 "Miguel de Icaza <miguel@metropolis.nuclecu.unam.mx> 1998"
 
-#: ../src/baobab-window.vala:345
+#: ../src/baobab-window.vala:349
 #| msgid "Could not analyze disk usage."
 msgid "Could not analyze volume."
 msgstr "No se pudo analizar el volumen."
 
-#: ../src/baobab-window.vala:459
+#: ../src/baobab-window.vala:463
 msgid "Cancel scan"
 msgstr "Cancelar análisis"
 
 #. || is_virtual_filesystem ()
-#: ../src/baobab-window.vala:490
+#: ../src/baobab-window.vala:494
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "«%s» no es una carpeta válida"
 
-#: ../src/baobab-window.vala:491
+#: ../src/baobab-window.vala:495
 msgid "Could not analyze disk usage."
 msgstr "No se pudo analizar el uso del disco."
 
-#: ../src/baobab-window.vala:549
+#: ../src/baobab-window.vala:553
 #, c-format
 msgid "Could not scan folder \"%s\" or some of the folders it contains."
-msgstr ""
-"No se pudo analizar la carpeta «%s» o alguna de las carpetas que contiene."
+msgstr "No se pudo analizar la carpeta «%s» o alguna de sus subcarpetas."
 
 #~ msgid "Disk Usage Analyzer Preferences"
 #~ msgstr "Preferencias del analizador de uso de disco"
