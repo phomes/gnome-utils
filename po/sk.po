@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "utils&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-09-17 03:52+0000\n"
-"PO-Revision-Date: 2011-09-19 12:26+0200\n"
+"POT-Creation-Date: 2012-02-12 17:35+0000\n"
+"PO-Revision-Date: 2011-10-08 13:29+0100\n"
 "Last-Translator: Pavol Klačanský <pavol@klacansky.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,13 +22,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 
 #: ../baobab/data/baobab.desktop.in.in.h:1
-msgid "Check folder sizes and available disk space"
-msgstr "Skontrolujte veľkosti priečinkov a dostupné miesto na disku"
-
-#: ../baobab/data/baobab.desktop.in.in.h:2
-#: ../baobab/data/baobab-main-window.ui.h:2
+#: ../baobab/data/baobab-main-window.ui.h:15
 msgid "Disk Usage Analyzer"
 msgstr "Analyzátor využitia disku"
+
+#: ../baobab/data/baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Skontrolujte veľkosti priečinkov a dostupné miesto na disku"
 
 #: ../baobab/data/baobab-preferences-dialog.ui.h:1
 msgid "Disk Usage Analyzer Preferences"
@@ -44,146 +44,146 @@ msgid "_Monitor changes to your home folder"
 msgstr "_Sledovať zmeny vo vašom domovskom priečinku"
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:1
-msgid "A list of URIs for partitions to be excluded from scanning."
-msgstr "Zoznam URI pre oddiely, ktoré budú vynechané z prehľadávania."
+msgid "Monitor Home"
+msgstr "Sledovať domovský priečinok"
 
+# * https://bugzilla.gnome.org/show_bug.cgi?id=617554
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:2
-msgid "Active Chart"
-msgstr "Aktívny graf"
+msgid "Whether any change to the home directory should be monitored."
+msgstr "Či majú byť sledované akékoľvek zmeny v domovskom priečinku."
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
 msgstr "URI vynechaných oddielov"
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:4
-msgid "Monitor Home"
-msgstr "Sledovať domovský priečinok"
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Zoznam URI pre oddiely, ktoré budú vynechané z prehľadávania."
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:5
-msgid "Statusbar is Visible"
-msgstr "Stavová lišta je viditeľná"
-
-#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:6
 msgid "Toolbar is Visible"
 msgstr "Lišta nástrojov je viditeľná"
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=617554
+#: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:6
+msgid "Whether the toolbar should be visible in main window."
+msgstr "Či má byť lišta nástrojov viditeľná v hlavnom okne."
+
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:7
-msgid "Whether any change to the home directory should be monitored."
-msgstr "Či majú byť sledované akékoľvek zmeny v domovskom priečinku."
+msgid "Statusbar is Visible"
+msgstr "Stavová lišta je viditeľná"
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:8
 msgid "Whether the status bar at the bottom of main window should be visible."
 msgstr "Či má byť stavová lišta viditeľná v dolnej časti hlavného okna."
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:9
-msgid "Whether the toolbar should be visible in main window."
-msgstr "Či má byť lišta nástrojov viditeľná v hlavnom okne."
+msgid "Active Chart"
+msgstr "Aktívny graf"
 
 #: ../baobab/data/org.gnome.baobab.gschema.xml.in.h:10
 msgid "Which type of chart should be displayed."
 msgstr "Ktorý typ grafu má byť zobrazený."
 
 #: ../baobab/data/baobab-main-window.ui.h:1
-msgid "All_ocated Space"
-msgstr "Využité miest_o"
-
-#: ../baobab/data/baobab-main-window.ui.h:3
-msgid "Refresh"
-msgstr "Obnoviť"
-
-#: ../baobab/data/baobab-main-window.ui.h:4
-msgid "S_can Remote Folder..."
-msgstr "Prehľadať _vzdialený priečinok..."
-
-#: ../baobab/data/baobab-main-window.ui.h:5
-msgid "Scan F_older..."
-msgstr "Prehľadať _priečinok..."
-
-#: ../baobab/data/baobab-main-window.ui.h:6
-msgid "Scan Filesystem"
-msgstr "Prehľadať súborový systém"
-
-#: ../baobab/data/baobab-main-window.ui.h:7
-msgid "Scan Folder"
-msgstr "Prehľadať priečinok"
-
-#: ../baobab/data/baobab-main-window.ui.h:8
-msgid "Scan Home"
-msgstr "Prehľadať domovský priečinok"
-
-#: ../baobab/data/baobab-main-window.ui.h:9
-msgid "Scan Remote Folder"
-msgstr "Prehľadať vzdialený priečinok"
-
-#: ../baobab/data/baobab-main-window.ui.h:10
-msgid "Scan _Filesystem"
-msgstr "Prehľadať _súborový systém"
-
-#: ../baobab/data/baobab-main-window.ui.h:11
-msgid "Scan _Home Folder"
-msgstr "Prehľadať _domovský priečinok"
-
-#: ../baobab/data/baobab-main-window.ui.h:12
-msgid "Scan a folder"
-msgstr "Prehľadať priečinok"
-
-#: ../baobab/data/baobab-main-window.ui.h:13
-msgid "Scan a remote folder"
-msgstr "Prehľadať vzdialený priečinok"
-
-#: ../baobab/data/baobab-main-window.ui.h:14
-msgid "Scan filesystem"
-msgstr "Prehľadať súborový systém"
-
-#: ../baobab/data/baobab-main-window.ui.h:15
-msgid "Scan home folder"
-msgstr "Prehľadať domovský priečinok"
-
-#: ../baobab/data/baobab-main-window.ui.h:16
-msgid "St_atusbar"
-msgstr "_Stavová lišta"
-
-#: ../baobab/data/baobab-main-window.ui.h:17
-msgid "Stop scanning"
-msgstr "Zastaviť prehľadávanie"
-
-#: ../baobab/data/baobab-main-window.ui.h:18
 msgid "_Analyzer"
 msgstr "_Analyzátor"
 
-#: ../baobab/data/baobab-main-window.ui.h:19
-msgid "_Collapse All"
-msgstr "_Zabaliť všetky"
+#: ../baobab/data/baobab-main-window.ui.h:2
+msgid "Scan _Home Folder"
+msgstr "Prehľadať _domovský priečinok"
 
-#. Help menu
-#: ../baobab/data/baobab-main-window.ui.h:20
-#: ../gnome-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:844
-msgid "_Contents"
-msgstr "Ob_sah"
+#: ../baobab/data/baobab-main-window.ui.h:3
+msgid "Scan _Filesystem"
+msgstr "Prehľadať _súborový systém"
 
-#: ../baobab/data/baobab-main-window.ui.h:21
+#: ../baobab/data/baobab-main-window.ui.h:4
+msgid "Scan F_older..."
+msgstr "Prehľadať _priečinok..."
+
+#: ../baobab/data/baobab-main-window.ui.h:5
+msgid "S_can Remote Folder..."
+msgstr "Prehľadať _vzdialený priečinok..."
+
+#: ../baobab/data/baobab-main-window.ui.h:6
 #: ../gnome-dictionary/src/gdict-window.c:1281 ../logview/logview-window.c:815
 msgid "_Edit"
 msgstr "_Upraviť"
 
-#: ../baobab/data/baobab-main-window.ui.h:22
+#: ../baobab/data/baobab-main-window.ui.h:7
 msgid "_Expand All"
 msgstr "_Rozbaliť všetky"
 
-#: ../baobab/data/baobab-main-window.ui.h:23
+#: ../baobab/data/baobab-main-window.ui.h:8
+msgid "_Collapse All"
+msgstr "_Zabaliť všetky"
+
+#: ../baobab/data/baobab-main-window.ui.h:9
+#: ../gnome-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:816
+msgid "_View"
+msgstr "_Zobraziť"
+
+#: ../baobab/data/baobab-main-window.ui.h:10
+msgid "_Toolbar"
+msgstr "Lišta nás_trojov"
+
+#: ../baobab/data/baobab-main-window.ui.h:11
+msgid "St_atusbar"
+msgstr "_Stavová lišta"
+
+#: ../baobab/data/baobab-main-window.ui.h:12
+msgid "All_ocated Space"
+msgstr "Využité miest_o"
+
+#: ../baobab/data/baobab-main-window.ui.h:13
 #: ../gnome-dictionary/src/gdict-window.c:1284 ../logview/logview-window.c:818
 msgid "_Help"
 msgstr "_Pomocník"
 
+#. Help menu
+#: ../baobab/data/baobab-main-window.ui.h:14
+#: ../gnome-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:844
+msgid "_Contents"
+msgstr "Ob_sah"
+
+#: ../baobab/data/baobab-main-window.ui.h:16
+msgid "Scan home folder"
+msgstr "Prehľadať domovský priečinok"
+
+#: ../baobab/data/baobab-main-window.ui.h:17
+msgid "Scan Home"
+msgstr "Prehľadať domovský priečinok"
+
+#: ../baobab/data/baobab-main-window.ui.h:18
+msgid "Scan filesystem"
+msgstr "Prehľadať súborový systém"
+
+#: ../baobab/data/baobab-main-window.ui.h:19
+msgid "Scan Filesystem"
+msgstr "Prehľadať súborový systém"
+
+#: ../baobab/data/baobab-main-window.ui.h:20
+msgid "Scan a folder"
+msgstr "Prehľadať priečinok"
+
+#: ../baobab/data/baobab-main-window.ui.h:21
+msgid "Scan Folder"
+msgstr "Prehľadať priečinok"
+
+#: ../baobab/data/baobab-main-window.ui.h:22
+msgid "Scan a remote folder"
+msgstr "Prehľadať vzdialený priečinok"
+
+#: ../baobab/data/baobab-main-window.ui.h:23
+msgid "Scan Remote Folder"
+msgstr "Prehľadať vzdialený priečinok"
+
 #: ../baobab/data/baobab-main-window.ui.h:24
-msgid "_Toolbar"
-msgstr "Lišta nás_trojov"
+msgid "Stop scanning"
+msgstr "Zastaviť prehľadávanie"
 
 #: ../baobab/data/baobab-main-window.ui.h:25
-#: ../gnome-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:816
-msgid "_View"
-msgstr "_Zobraziť"
+msgid "Refresh"
+msgstr "Obnoviť"
 
 #: ../baobab/src/baobab.c:136 ../baobab/src/baobab.c:388
 msgid "Scanning..."
@@ -403,7 +403,7 @@ msgid "_Share:"
 msgstr "_Zdieľanie:"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:515
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:7
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "_Port:"
 
@@ -586,10 +586,6 @@ msgid "Default Dictionary Server"
 msgstr "Predvolený server slovníka"
 
 #: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:1
-msgid "Check word definitions and spellings in an online dictionary"
-msgstr "Skontrolujte vysvetlenia alebo pravopis slov v online slovníku"
-
-#: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:2
 #: ../gnome-dictionary/src/gdict-about.c:62
 #: ../gnome-dictionary/src/gdict-app.c:233
 #: ../gnome-dictionary/src/gdict-window.c:601
@@ -597,23 +593,15 @@ msgstr "Skontrolujte vysvetlenia alebo pravopis slov v online slovníku"
 msgid "Dictionary"
 msgstr "Slovník"
 
+#: ../gnome-dictionary/data/gnome-dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Skontrolujte vysvetlenia alebo pravopis slov v online slovníku"
+
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:1
 msgid "The default database to use"
 msgstr "Predvolená databáza, ktorú použiť"
 
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:2
-msgid "The default search strategy to use"
-msgstr "Predvolený postup vyhľadávania, ktorý použiť"
-
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:3
-msgid "The font to be used when printing"
-msgstr "Písmo, ktoré bude použité pri tlačení"
-
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:4
-msgid "The font to be used when printing a definition."
-msgstr "Písmo, ktoré bude použité pri tlačení vysvetlenia."
-
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:5
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
@@ -622,7 +610,11 @@ msgstr ""
 "Názov databázy, ktorá sa má na serveri použiť. Výkričník (\"!\") znamená, že "
 "má gnome-dictionary hľadať vo všetkých databázach na danom serveri."
 
-#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:6
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The default search strategy to use"
+msgstr "Predvolený postup vyhľadávania, ktorý použiť"
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
@@ -630,6 +622,14 @@ msgstr ""
 "Názov predvoleného postupu vyhľadávania, ktorý sa použije na zdroj slovníka, "
 "ak je dostupný. Predvolený postup je 'exact', a tak hľadá presne "
 "zodpovedajúce slová."
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:5
+msgid "The font to be used when printing"
+msgstr "Písmo, ktoré bude použité pri tlačení"
+
+#: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid "The font to be used when printing a definition."
+msgstr "Písmo, ktoré bude použité pri tlačení vysvetlenia."
 
 #: ../gnome-dictionary/data/org.gnome.dictionary.gschema.xml.in.in.h:7
 msgid "The name of the dictionary source used"
@@ -641,11 +641,11 @@ msgid ""
 msgstr "Názov zdroja slovníka používaného na získavanie vysvetlení slov."
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:1
-msgid "Print"
-msgstr "Tlač"
+msgid "_Select a dictionary source for looking up words:"
+msgstr "Vy_berte predvolený zdroj slovníka na hľadanie slov:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:2
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:3
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:6
 msgid "Source"
 msgstr "Zdroj"
 
@@ -654,32 +654,32 @@ msgid "_Print font:"
 msgstr "Pí_smo tlače:"
 
 #: ../gnome-dictionary/data/gnome-dictionary-preferences.ui.h:4
-msgid "_Select a dictionary source for looking up words:"
-msgstr "Vy_berte predvolený zdroj slovníka na hľadanie slov:"
+msgid "Print"
+msgstr "Tlač"
 
 #: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:1
-msgid "Dictionaries"
-msgstr "Slovníky"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:2
-msgid "H_ostname:"
-msgstr "Názov _hostiteľa:"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:4
-msgid "Source Name"
-msgstr "Názov zdroja"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:5
-msgid "Strategies"
-msgstr "Postupy"
-
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:6
 msgid "_Description:"
 msgstr "P_opis:"
 
-#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:8
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:2
 msgid "_Transport:"
 msgstr "_Transport:"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "Názov _hostiteľa:"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "Názov zdroja"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "Slovníky"
+
+#: ../gnome-dictionary/data/gnome-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "Postupy"
 
 #: ../gnome-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -1397,82 +1397,11 @@ msgstr "Dostupné postupy"
 msgid "Dictionary sources"
 msgstr "Zdroje slovníkov"
 
-#: ../gnome-screenshot/gnome-screenshot.c:137
-msgid "Error loading the help page"
-msgstr "Chyba pri načítavaní pomocníka"
-
-# ide o efekt
-#: ../gnome-screenshot/gnome-screenshot.c:249
-msgid "None"
-msgstr "Žiadny"
-
-#: ../gnome-screenshot/gnome-screenshot.c:250
-msgid "Drop shadow"
-msgstr "Vrhnutý tieň"
-
-#: ../gnome-screenshot/gnome-screenshot.c:251
-msgid "Border"
-msgstr "Okraj"
-
-#. * Include pointer *
-#: ../gnome-screenshot/gnome-screenshot.c:355
-msgid "Include _pointer"
-msgstr "Zahrnúť k_urzor"
-
-#. * Include window border *
-#: ../gnome-screenshot/gnome-screenshot.c:364
-msgid "Include the window _border"
-msgstr "Zahrnúť ok_raj okna"
-
-#: ../gnome-screenshot/gnome-screenshot.c:379
-msgid "Apply _effect:"
-msgstr "Použiť _efekt:"
-
-#: ../gnome-screenshot/gnome-screenshot.c:441
-msgid "Grab the whole _desktop"
-msgstr "Zachytiť celú pracovnú p_lochu"
-
-#: ../gnome-screenshot/gnome-screenshot.c:453
-msgid "Grab the current _window"
-msgstr "Zachytiť aktuálne o_kno"
-
-#: ../gnome-screenshot/gnome-screenshot.c:465
-msgid "Select _area to grab"
-msgstr "Označiť obl_asť na zachytenie"
-
-#. translators: this is the first part of the "grab after a
-#. * delay of <spin button> seconds".
-#.
-#: ../gnome-screenshot/gnome-screenshot.c:482
-msgid "Grab _after a delay of"
-msgstr "Zachytiť s _oneskorením"
-
-#. translators: this is the last part of the "grab after a
-#. * delay of <spin button> seconds".
-#.
-#: ../gnome-screenshot/gnome-screenshot.c:502
-#: ../gnome-screenshot/gnome-screenshot.c:1379
-msgid "seconds"
-msgstr "sekúnd"
-
-#: ../gnome-screenshot/gnome-screenshot.c:520
-#: ../gnome-screenshot/gnome-screenshot.c:528
-msgid "Take Screenshot"
-msgstr "Urobiť snímku obrazovky"
-
-#: ../gnome-screenshot/gnome-screenshot.c:529
-msgid "Effects"
-msgstr "Efekty"
-
-#: ../gnome-screenshot/gnome-screenshot.c:534
-msgid "Take _Screenshot"
-msgstr "Urobiť _snímku obrazovky"
-
-#: ../gnome-screenshot/gnome-screenshot.c:640
+#: ../gnome-screenshot/gnome-screenshot.c:143
 msgid "Error while saving screenshot"
 msgstr "Chyba počas ukladania snímky obrazovky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:644
+#: ../gnome-screenshot/gnome-screenshot.c:147
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1483,120 +1412,106 @@ msgstr ""
 " Chyba bola %s.\n"
 " Prosím, zopakujte to s iným umiestením."
 
-#: ../gnome-screenshot/gnome-screenshot.c:798
+#: ../gnome-screenshot/gnome-screenshot.c:336
 msgid "Screenshot taken"
 msgstr "Zachytená snímka obrazovky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:906
+#: ../gnome-screenshot/gnome-screenshot.c:495
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nepodarilo sa zachytiť snímku aktuálneho okna"
 
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: ../gnome-screenshot/gnome-screenshot.c:1013
-#, c-format
-msgid "Screenshot at %s.png"
-msgstr "Obrazovka z %s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: ../gnome-screenshot/gnome-screenshot.c:1020
-#, c-format
-msgid "Screenshot at %s - %d.png"
-msgstr "Obrazovka z %s - %d.png"
-
-#: ../gnome-screenshot/gnome-screenshot.c:1374
+#: ../gnome-screenshot/gnome-screenshot.c:662
 msgid "Send the grab directly to the clipboard"
 msgstr "Odoslať zachytenie priamo do schránky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1375
+#: ../gnome-screenshot/gnome-screenshot.c:663
 msgid "Grab a window instead of the entire screen"
 msgstr "Zachytiť okno namiesto celej obrazovky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1376
+#: ../gnome-screenshot/gnome-screenshot.c:664
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Zachytiť oblasť obrazovky namiesto celej obrazovky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1377
+#: ../gnome-screenshot/gnome-screenshot.c:665
 msgid "Include the window border with the screenshot"
 msgstr "Zahrnúť okraj okna do snímky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1378
+#: ../gnome-screenshot/gnome-screenshot.c:666
 msgid "Remove the window border from the screenshot"
 msgstr "Odstrániť okraj okna zo snímky obrazovky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1379
+#: ../gnome-screenshot/gnome-screenshot.c:667
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Zachytiť snímku obrazovky s určeným oneskorením [v sekundách]"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1380
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#.
+#: ../gnome-screenshot/gnome-screenshot.c:667
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:423
+msgid "seconds"
+msgstr "sekúnd"
+
+#: ../gnome-screenshot/gnome-screenshot.c:668
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 "Efekt, ktorý sa má pridať k okraju (shadow - tieň, border - okraj alebo none "
 "- žiadny)"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1380
+#: ../gnome-screenshot/gnome-screenshot.c:668
 msgid "effect"
 msgstr "efekt"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1381
+#: ../gnome-screenshot/gnome-screenshot.c:669
 msgid "Interactively set options"
 msgstr "Interaktívne nastaviť možnosti"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1392
+#: ../gnome-screenshot/gnome-screenshot.c:680
 msgid "Take a picture of the screen"
 msgstr "Zachytiť snímku obrazovky"
 
-#: ../gnome-screenshot/gnome-screenshot.c:1410
-#, c-format
-msgid ""
-"Conflicting options: --window and --area should not be used at the same "
-"time.\n"
-msgstr "Konfliktné voľby: --window a --area by nemali byť používané spolu.\n"
-
 #: ../gnome-screenshot/gnome-screenshot.desktop.in.h:1
-msgid "Save images of your desktop or individual windows"
-msgstr "Uložte obrázky vašej pracovnej plochy alebo samostatných okien"
-
-#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
 msgid "Screenshot"
 msgstr "Snímka obrazovky"
 
+#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:2
+msgid "Save images of your desktop or individual windows"
+msgstr "Uložte obrázky vašej pracovnej plochy alebo samostatných okien"
+
+#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:3
+msgid "Take a screenshot of the whole screen"
+msgstr "Zachytiť snímku celej obrazovky"
+
+#: ../gnome-screenshot/gnome-screenshot.desktop.in.h:4
+msgid "Take a screenshot of the current window"
+msgstr "Zachytiť snímku aktuálneho okna"
+
 #: ../gnome-screenshot/gnome-screenshot.ui.h:1
-msgid "*"
-msgstr "*"
+msgid "Save Screenshot"
+msgstr "Uložiť snímku obrazovky"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
 msgstr "K_opírovať do schránky"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:3
-msgid "Save Screenshot"
-msgstr "Uložiť snímku obrazovky"
+#: ../logview/data/logview-filter.ui.h:1
+msgid "_Name:"
+msgstr "_Názov:"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:4
 msgid "Save in _folder:"
 msgstr "Uložiť _do priečinka:"
 
 #: ../gnome-screenshot/gnome-screenshot.ui.h:5
-#: ../logview/data/logview-filter.ui.h:6
-msgid "_Name:"
-msgstr "_Názov:"
+msgid "*"
+msgstr "*"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:1
-msgid "Border Effect"
-msgstr "Efekty okraja"
+msgid "Window-specific screenshot (deprecated)"
+msgstr "Snímok obrazovky špecifický pre dané okno (zastaralé)"
 
 #: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:2
-msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"border\"."
-msgstr ""
-"Efekt, ktorý sa má pridať okolo okraja. Možné hodnoty sú \"shadow\", \"none"
-"\" a \"border\"."
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:3
 msgid ""
 "Grab just the current window, rather than the whole desktop. This key has "
 "been deprecated and it is no longer in use."
@@ -1604,51 +1519,73 @@ msgstr ""
 "Zachytiť len aktuálne okno namiesto celej plochy. Tento kľúč je zastaralý a "
 "viac sa už nepoužíva."
 
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:4
-msgid "Include Border"
-msgstr "Vrátane okraja"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:5
-msgid "Include ICC Profile"
-msgstr "Zahrnúť ICC profil"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:6
-msgid "Include Pointer"
-msgstr "Zahrnúť kurzor"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:7
-msgid "Include the ICC profile of the target in the screenshot file"
-msgstr "Zahrnúť ICC profil cieľa do snímky obrazovky"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:8
-msgid "Include the pointer in the screenshot"
-msgstr "Zahrnúť kurzor do snímky obrazovky"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:9
-msgid "Include the window manager border along with the screenshot"
-msgstr "Zahrnúť okraj správcu okien do snímky"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:10
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:3
 msgid "Screenshot delay"
 msgstr "Oneskorenie snímky obrazovky"
 
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:11
-msgid "Screenshot directory"
-msgstr "Adresár snímok obrazoviek"
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:12
-msgid "The directory the last screenshot was saved in."
-msgstr "Adresár naposledy použitý pri zachytávaní snímky obrazovky."
-
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:13
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:4
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "Počet sekúnd, ktoré počkať pred zosnímaním obrazovky."
 
-#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:14
-msgid "Window-specific screenshot (deprecated)"
-msgstr "Snímok obrazovky špecifický pre dané okno (zastaralé)"
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:5
+msgid "Screenshot directory"
+msgstr "Adresár snímok obrazoviek"
 
-#: ../gnome-screenshot/screenshot-dialog.c:215
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:6
+msgid "The directory the last screenshot was saved in."
+msgstr "Adresár naposledy použitý pri zachytávaní snímky obrazovky."
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:7
+msgid "Include Border"
+msgstr "Vrátane okraja"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:8
+msgid "Include the window manager border along with the screenshot"
+msgstr "Zahrnúť okraj správcu okien do snímky"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:9
+msgid "Include Pointer"
+msgstr "Zahrnúť kurzor"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:10
+msgid "Include the pointer in the screenshot"
+msgstr "Zahrnúť kurzor do snímky obrazovky"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:11
+msgid "Include ICC Profile"
+msgstr "Zahrnúť ICC profil"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:12
+msgid "Include the ICC profile of the target in the screenshot file"
+msgstr "Zahrnúť ICC profil cieľa do snímky obrazovky"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:13
+msgid "Border Effect"
+msgstr "Efekty okraja"
+
+#: ../gnome-screenshot/org.gnome.gnome-screenshot.gschema.xml.in.h:14
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr ""
+"Efekt, ktorý sa má pridať okolo okraja. Možné hodnoty sú \"shadow\", \"none"
+"\" a \"border\"."
+
+#: ../gnome-screenshot/screenshot-config.c:78
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr "Konfliktné voľby: --window a --area by nemali byť používané spolu.\n"
+
+#: ../gnome-screenshot/screenshot-config.c:85
+#, c-format
+msgid ""
+"Conflicting options: --area and --delay should not be used at the same "
+"time.\n"
+msgstr "Konfliktné voľby: --area a --delay by nemali byť používané spolu.\n"
+
+#: ../gnome-screenshot/screenshot-dialog.c:193
 msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of gnome-utils"
@@ -1657,187 +1594,328 @@ msgstr ""
 "chýba.\n"
 "Skontrolujte, prosím, vašu instaláciu gnome-utils"
 
-#: ../gnome-screenshot/screenshot-dialog.c:236
+#: ../gnome-screenshot/screenshot-dialog.c:214
 msgid "Select a folder"
 msgstr "Vyberte priečinok"
 
-#: ../gnome-screenshot/screenshot-dialog.c:354
-#: ../gnome-screenshot/screenshot-save.c:206
+#: ../gnome-screenshot/screenshot-dialog.c:323
 msgid "Screenshot.png"
 msgstr "Obrazovka.png"
 
-#: ../gnome-screenshot/screenshot-save.c:65
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../gnome-screenshot/screenshot-filename-builder.c:119
 #, c-format
-msgid ""
-"Unable to clear the temporary folder:\n"
-"%s"
-msgstr ""
-"Nepodarilo sa vymazať dočasný priečinok:\n"
-"%s"
+msgid "Screenshot at %s.png"
+msgstr "Obrazovka z %s.png"
 
-#: ../gnome-screenshot/screenshot-save.c:104
-msgid ""
-"The child save process unexpectedly exited.  We are unable to write the "
-"screenshot to disk."
-msgstr ""
-"Proces na ukladanie neočakávane skončil.  Nepodarilo sa uložiť snímku "
-"obrazovky na disk."
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../gnome-screenshot/screenshot-filename-builder.c:126
+#, c-format
+msgid "Screenshot at %s - %d.png"
+msgstr "Obrazovka z %s - %d.png"
 
-#: ../gnome-screenshot/screenshot-save.c:246
-msgid "Unknown error saving screenshot to disk"
-msgstr "Pri ukladaní snímky obrazovky nastala neznáma chyba"
+# ide o efekt
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:165
+msgid "None"
+msgstr "Žiadny"
 
-#. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../gnome-screenshot/screenshot-utils.c:921
-msgid "Untitled Window"
-msgstr "Nepomenované okno"
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:166
+msgid "Drop shadow"
+msgstr "Vrhnutý tieň"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:167
+msgid "Border"
+msgstr "Okraj"
+
+#. * Include pointer *
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:271
+msgid "Include _pointer"
+msgstr "Zahrnúť k_urzor"
+
+#. * Include window border *
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:281
+msgid "Include the window _border"
+msgstr "Zahrnúť ok_raj okna"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:298
+msgid "Apply _effect:"
+msgstr "Použiť _efekt:"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:360
+msgid "Grab the whole _desktop"
+msgstr "Zachytiť celú pracovnú p_lochu"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:374
+msgid "Grab the current _window"
+msgstr "Zachytiť aktuálne o_kno"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:386
+msgid "Select _area to grab"
+msgstr "Označiť obl_asť na zachytenie"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#.
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:403
+msgid "Grab _after a delay of"
+msgstr "Zachytiť s _oneskorením"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:441
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:449
+msgid "Take Screenshot"
+msgstr "Urobiť snímku obrazovky"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:450
+msgid "Effects"
+msgstr "Efekty"
+
+#: ../gnome-screenshot/screenshot-interactive-dialog.c:455
+msgid "Take _Screenshot"
+msgstr "Urobiť _snímku obrazovky"
+
+#: ../gnome-screenshot/screenshot-utils.c:702
+msgid "Error loading the help page"
+msgstr "Chyba pri načítavaní pomocníka"
 
 #: ../gsearchtool/gnome-search-tool.desktop.in.h:1
+msgid "Search for Files..."
+msgstr "Hľadať súbory..."
+
+#: ../gsearchtool/gnome-search-tool.desktop.in.h:2
 msgid "Locate documents and folders on this computer by name or content"
 msgstr ""
 "Vyhľadajte dokumenty a priečinky na tomto počítači podľa názvu alebo obsahu"
 
-#: ../gsearchtool/gnome-search-tool.desktop.in.h:2
-msgid "Search for Files..."
-msgstr "Hľadať súbory..."
-
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:1
-msgid "Default Window Height"
-msgstr "Predvolená šírka okna"
+msgid "Show Additional Options"
+msgstr "Zobraziť ďalšie možnosti"
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:2
-msgid "Default Window Maximized"
-msgstr "Predvolené maximalizované okno"
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:3
-msgid "Default Window Width"
-msgstr "Predvolená šírka okna"
-
+#. Translators: The quoted text is the label of the additional
+#. options expander that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:4
-msgid "Disable Quick Search"
-msgstr "Zakázať rýchle hľadanie"
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:5
-msgid "Disable Quick Search Second Scan"
-msgstr "Zakázať druhý cyklus rýchleho hľadania"
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:6
-msgid "Look in Folder"
-msgstr "Hľadať v priečinku"
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:7
-msgid "Quick Search Excluded Paths"
-msgstr "Cesty vynechané z rýchleho hľadania"
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:8
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Cesty vynechané z druhého cyklu rýchleho hľadania"
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:9
-msgid "Search Result Columns Order"
-msgstr "Poradie stĺpcov výsledkov hľadania"
+msgid ""
+"This key determines if the \"Select more options\" section is expanded when "
+"the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Vybrať ďalšie možnosti\" "
+"rozbalená pri spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:12
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:7
 msgid "Select the search option \"Contains the text\""
 msgstr "Vyberte možnosť \"Obsahuje text\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:8
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Obsahuje text\" vybratá pri "
+"spustení nástroja na hľadanie."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:11
+msgid "Select the search option \"Date modified less than\""
+msgstr "Vyberte možnosť \"Čas zmeny menej než\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:12
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Čas zmeny menej ako\" vybratá "
+"pri spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:15
-msgid "Select the search option \"Date modified less than\""
-msgstr "Vyberte možnosť \"Čas zmeny menej než\""
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:18
 msgid "Select the search option \"Date modified more than\""
 msgstr "Vyberte možnosť \"Čas zmeny viac ako\""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:21
-msgid "Select the search option \"Exclude other filesystems\""
-msgstr "Vyberte možnosť hľadania \"Vynechať iné súborové systémy\""
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:16
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Čas zmeny viac ako\" vybratá pri "
+"spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:19
+msgid "Select the search option \"Size at least\""
+msgstr "Vyberte možnosť \"Veľkosť aspoň\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:20
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Veľkosť aspoň\" vybratá pri "
+"spustení nástroja na hľadanie."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:23
+msgid "Select the search option \"Size at most\""
+msgstr "Vyberte možnosť \"Veľkosť najviac\""
+
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:24
-msgid "Select the search option \"File is empty\""
-msgstr "Vyberte možnosť \"Súbor je prázdny\""
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Veľkosť najviac\" vybratá pri "
+"spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:27
-msgid "Select the search option \"Follow symbolic links\""
-msgstr "Vyberte možnosť \"Nasledovať symbolické odkazy\""
+msgid "Select the search option \"File is empty\""
+msgstr "Vyberte možnosť \"Súbor je prázdny\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:28
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Súbor je prázdny\" vybratá pri "
+"spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:30
-msgid "Select the search option \"Name does not contain\""
-msgstr "Vyberte možnosť \"Názov nesmie obsahovať\""
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:31
+msgid "Select the search option \"Owned by user\""
+msgstr "Vyberte možnosť \"Vlastní používateľ\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:32
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Vlastní používateľ\" vybratá pri "
+"spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:33
-msgid "Select the search option \"Name matches regular expression\""
-msgstr "Vyberte možnosť \"Názov vyhovuje regulárnemu výrazu\""
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:36
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:35
 msgid "Select the search option \"Owned by group\""
 msgstr "Vyberte možnosť \"Vlastní skupina\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:36
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when "
+"the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Vlastní skupina\" vybratá pri "
+"spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:39
-msgid "Select the search option \"Owned by user\""
-msgstr "Vyberte možnosť \"Vlastní používateľ\""
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:42
 msgid "Select the search option \"Owner is unrecognized\""
 msgstr "Vyberte možnosť \"Nerozpoznaný vlastník\""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:45
-msgid "Select the search option \"Show hidden files and folders\""
-msgstr "Vyberte možnosť \"Zobraziť skryté súbory a priečinky\""
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:40
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Nerozpoznaný vlastník\" vybratá "
+"pri spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:43
+msgid "Select the search option \"Name does not contain\""
+msgstr "Vyberte možnosť \"Názov nesmie obsahovať\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:44
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Názov nesmie obsahovať\" vybratá "
+"pri spustení nástroja na hľadanie."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:47
+msgid "Select the search option \"Name matches regular expression\""
+msgstr "Vyberte možnosť \"Názov vyhovuje regulárnemu výrazu\""
+
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:48
-msgid "Select the search option \"Size at least\""
-msgstr "Vyberte možnosť \"Veľkosť aspoň\""
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option "
+"is selected when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Názov vyhovuje regulárnemu výrazu"
+"\" vybratá pri spustení nástroja na hľadanie."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:51
-msgid "Select the search option \"Size at most\""
-msgstr "Vyberte možnosť \"Veľkosť najviac\""
+msgid "Select the search option \"Show hidden files and folders\""
+msgstr "Vyberte možnosť \"Zobraziť skryté súbory a priečinky\""
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:52
-msgid "Show Additional Options"
-msgstr "Zobraziť ďalšie možnosti"
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:53
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "Tento kľúč definuje predvolenú hodnotu prvku \"Hľadať v priečinku\"."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:54
 msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
 msgstr ""
-"Tento kľúč určuje poradie stĺpcov vo výsledkoch hľadania. Tento kľúč by "
-"používatelia nemali meniť."
+"Tento kľúč určuje, či je možnosť hľadania \"Zobraziť skryté súbory a "
+"priečinky\" vybratá pri spustení nástroja na hľadanie."
 
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:55
+msgid "Select the search option \"Follow symbolic links\""
+msgstr "Vyberte možnosť \"Nasledovať symbolické odkazy\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:56
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Nasledovať symbolické odkazy\" "
+"vybratá pri spustení nástroja na hľadanie."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:59
+msgid "Select the search option \"Exclude other filesystems\""
+msgstr "Vyberte možnosť hľadania \"Vynechať iné súborové systémy\""
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:60
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr ""
+"Tento kľúč určuje, či je možnosť hľadania \"Vynechať iné súborové systémy\" "
+"vybratá pri spustení nástroja na hľadanie."
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:61
+msgid "Disable Quick Search"
+msgstr "Zakázať rýchle hľadanie"
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:62
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr ""
+"Tento kľúč určuje, či nástroj na hľadanie zakáže použitie príkazu locate pri "
+"jednoduchom hľadaní mien súborov."
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:63
+msgid "Quick Search Excluded Paths"
+msgstr "Cesty vynechané z rýchleho hľadania"
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:64
 msgid ""
 "This key defines the paths the search tool will exclude from a quick search. "
 "The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
@@ -1847,7 +1925,23 @@ msgstr ""
 "hľadania. Sú podporované zástupné znaky '*' a '?'. Predvolené hodnoty sú /"
 "mnt/*, /media/*, /dev/*, /tmp/*, /proc/* a /var/*."
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:56
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:65
+msgid "Disable Quick Search Second Scan"
+msgstr "Zakázať druhý cyklus rýchleho hľadania"
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:66
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr ""
+"Tento kľúč určuje, či nástroj na hľadanie zakáže použitie príkazu find po "
+"vykonaní rýchleho hľadania."
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:67
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Cesty vynechané z druhého cyklu rýchleho hľadania"
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:68
 msgid ""
 "This key defines the paths the search tool will exclude from a second scan "
 "when performing a quick search. The second scan uses the find command to "
@@ -1860,17 +1954,23 @@ msgstr ""
 "Účel druhého cyklu je nájsť súbory, ktoré neboli indexované. Sú podporované "
 "zástupné znaky '*' a '?'. Predvolená hodnota je /."
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:57
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool "
-"use the default height."
-msgstr ""
-"Tento kľúč definuje výšku okna a je použitý na zapamätanie veľkosti nástroja "
-"na hľadanie medzi reláciami. Nastavenie na -1 spôsobí, že nástroj na "
-"hľadanie použije predvolenú výšku."
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:69
+msgid "Search Result Columns Order"
+msgstr "Poradie stĺpcov výsledkov hľadania"
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:58
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:70
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr ""
+"Tento kľúč určuje poradie stĺpcov vo výsledkoch hľadania. Tento kľúč by "
+"používatelia nemali meniť."
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:71
+msgid "Default Window Width"
+msgstr "Predvolená šírka okna"
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:72
 msgid ""
 "This key defines the window width, and it's used to remember the size of the "
 "search tool between sessions. Setting it to -1 will make the search tool use "
@@ -1880,150 +1980,38 @@ msgstr ""
 "na hľadanie medzi reláciami. Nastavenie na -1 spôsobí, že nástroj na "
 "hľadanie použije predvolenú šírku."
 
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:59
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Obsahuje text\" vybratá pri "
-"spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:60
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Čas zmeny menej ako\" vybratá "
-"pri spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:61
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Čas zmeny viac ako\" vybratá pri "
-"spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:62
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Vynechať iné súborové systémy\" "
-"vybratá pri spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:63
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Súbor je prázdny\" vybratá pri "
-"spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:64
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Nasledovať symbolické odkazy\" "
-"vybratá pri spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:65
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Názov nesmie obsahovať\" vybratá "
-"pri spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:66
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option "
-"is selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Názov vyhovuje regulárnemu výrazu"
-"\" vybratá pri spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:67
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Vlastní skupina\" vybratá pri "
-"spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:68
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Vlastní používateľ\" vybratá pri "
-"spustení nástroja na hľadanie."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:69
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Nerozpoznaný vlastník\" vybratá "
-"pri spustení nástroja na hľadanie."
-
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:72
-msgid ""
-"This key determines if the \"Select more options\" section is expanded when "
-"the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Vybrať ďalšie možnosti\" "
-"rozbalená pri spustení nástroja na hľadanie."
-
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:73
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Zobraziť skryté súbory a "
-"priečinky\" vybratá pri spustení nástroja na hľadanie."
+msgid "Default Window Height"
+msgstr "Predvolená šírka okna"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:74
 msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool "
+"use the default height."
 msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Veľkosť aspoň\" vybratá pri "
-"spustení nástroja na hľadanie."
+"Tento kľúč definuje výšku okna a je použitý na zapamätanie veľkosti nástroja "
+"na hľadanie medzi reláciami. Nastavenie na -1 spôsobí, že nástroj na "
+"hľadanie použije predvolenú výšku."
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:75
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Tento kľúč určuje, či je možnosť hľadania \"Veľkosť najviac\" vybratá pri "
-"spustení nástroja na hľadanie."
+msgid "Default Window Maximized"
+msgstr "Predvolené maximalizované okno"
 
 #: ../gsearchtool/gnome-search-tool.schemas.in.h:76
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr ""
-"Tento kľúč určuje, či nástroj na hľadanie zakáže použitie príkazu find po "
-"vykonaní rýchleho hľadania."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:77
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr ""
-"Tento kľúč určuje, či nástroj na hľadanie zakáže použitie príkazu locate pri "
-"jednoduchom hľadaní mien súborov."
-
-#: ../gsearchtool/gnome-search-tool.schemas.in.h:78
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
 msgstr ""
 "Tento kľúč určuje, či sa okno nástroja na hľadanie spustí v maximalizovanom "
 "stave."
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:77
+msgid "Look in Folder"
+msgstr "Hľadať v priečinku"
+
+#: ../gsearchtool/gnome-search-tool.schemas.in.h:78
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "Tento kľúč definuje predvolenú hodnotu prvku \"Hľadať v priečinku\"."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:194
 msgid "Could not open help document."
@@ -2736,42 +2724,10 @@ msgid "View or monitor system log files"
 msgstr "Zobrazte alebo sledujte súbory systémových záznamov"
 
 #: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:1
-msgid "Height of the main window in pixels"
-msgstr "Výška hlavného okna v bodoch"
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:2
-msgid "List of saved filters"
-msgstr "Zoznam uložených filtrov"
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:3
-msgid "List of saved regexp filters"
-msgstr "Zoznam uložených regulárnych výrazov na filtrovanie"
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:4
 msgid "Log file to open up on startup"
 msgstr "Súbor so záznamom, ktorý sa má pri spustení otvoriť"
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:5
-msgid "Log files to open up on startup"
-msgstr "Súbory so záznamami, ktoré sa majú pri spustení otvoriť"
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:6
-msgid "Size of the font used to display the log"
-msgstr "Veľkosť písma použitého na zobrazenie záznamov"
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:7
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr ""
-"Určuje zoznam záznamových súborov, ktoré sa majú otvoriť pri spustení. "
-"Predvolený zoznam je vytvorený zo súboru /etc/syslog.conf."
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:8
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "Určuje výšku hlavného okna prehliadača záznamov v bodoch."
-
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:2
 msgid ""
 "Specifies the log file displayed at startup. The default is either /var/adm/"
 "messages or /var/log/messages, depending on your operating system."
@@ -2779,7 +2735,11 @@ msgstr ""
 "Určuje súbor so záznamom otvorený po spustení. Predvolene je to /var/adm/"
 "messages alebo /var/log/messages v závislosti na vašom systéme."
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "Veľkosť písma použitého na zobrazenie záznamov"
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:4
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
@@ -2788,37 +2748,65 @@ msgstr ""
 "záznamov v hlavnom stromovom zobrazení. Predvolene sa použije veľkosť písma "
 "v termináli."
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:11
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "Určuje šírku hlavného okna prehliadača záznamov v bodoch."
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "Výška hlavného okna v bodoch"
 
-#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Určuje výšku hlavného okna prehliadača záznamov v bodoch."
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:7
 msgid "Width of the main window in pixels"
 msgstr "Šírka hlavného okna v bodoch"
 
-#: ../logview/data/logview-filter.ui.h:1
-msgid "Background:"
-msgstr "Pozadie:"
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Určuje šírku hlavného okna prehliadača záznamov v bodoch."
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "Súbory so záznamami, ktoré sa majú pri spustení otvoriť"
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Určuje zoznam záznamových súborov, ktoré sa majú otvoriť pri spustení. "
+"Predvolený zoznam je vytvorený zo súboru /etc/syslog.conf."
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr "Zoznam uložených filtrov"
+
+#: ../logview/data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr "Zoznam uložených regulárnych výrazov na filtrovanie"
 
 #: ../logview/data/logview-filter.ui.h:2
-msgid "Effect:"
-msgstr "Efekt:"
+msgid "_Regular Expression:"
+msgstr "_Regulárny výraz:"
 
 #: ../logview/data/logview-filter.ui.h:3
-msgid "Foreground:"
-msgstr "Popredie:"
+msgid "Highlight"
+msgstr "Zvýrazniť"
 
 #: ../logview/data/logview-filter.ui.h:4
 msgid "Hide"
 msgstr "Skryť"
 
 #: ../logview/data/logview-filter.ui.h:5
-msgid "Highlight"
-msgstr "Zvýrazniť"
+msgid "Foreground:"
+msgstr "Popredie:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "Pozadie:"
 
 #: ../logview/data/logview-filter.ui.h:7
-msgid "_Regular Expression:"
-msgstr "_Regulárny výraz:"
+msgid "Effect:"
+msgstr "Efekt:"
 
 #: ../logview/logview-app.c:377
 #, c-format
@@ -3144,6 +3132,26 @@ msgstr "Prehliadač písiem"
 #: ../font-viewer/gnome-font-viewer.desktop.in.in.h:2
 msgid "Preview fonts"
 msgstr "Náhľady písiem"
+
+#~ msgid ""
+#~ "Unable to clear the temporary folder:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Nepodarilo sa vymazať dočasný priečinok:\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The child save process unexpectedly exited.  We are unable to write the "
+#~ "screenshot to disk."
+#~ msgstr ""
+#~ "Proces na ukladanie neočakávane skončil.  Nepodarilo sa uložiť snímku "
+#~ "obrazovky na disk."
+
+#~ msgid "Unknown error saving screenshot to disk"
+#~ msgstr "Pri ukladaní snímky obrazovky nastala neznáma chyba"
+
+#~ msgid "Untitled Window"
+#~ msgstr "Nepomenované okno"
 
 #~ msgid "%Y-%m-%d %H:%M:%S"
 #~ msgstr "%H:%M:%S, %d. %m. %Y"
